@@ -530,20 +530,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy23
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy23.dsc' curl_7.26.0-1+wheezy23.dsc 2693 SHA256:3c3d60e7256a08d7de3d60fa218e85bccb22370ce97b70566853a7d81d16c01b
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy23.debian.tar.gz' curl_7.26.0-1+wheezy23.debian.tar.gz 70073 SHA256:c14372e76f82d3b44b91a2a924a2909d00e4aba228b03382befecd9f89c33152
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy23/
 
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy23/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy23/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy23/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -4131,20 +4124,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u8/
 
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/ (for browsing the source)
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
