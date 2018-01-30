@@ -361,12 +361,13 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:latest`
 
 ```console
-$ docker pull nats-streaming@sha256:632aaff82b2a3b87443df73404f9874bde969bcf523531d501a8aab481352847
+$ docker pull nats-streaming@sha256:4669969b2d0ae4054dcb68ecf71b2f3716d9dce9801e3a68729f81781918b34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v7
 	-	windows version 10.0.14393.2007; amd64
 
 ### `nats-streaming:latest` - linux; amd64
@@ -398,6 +399,37 @@ CMD ["-m" "8222"]
 	-	`sha256:025972d7004bac537ef4df931d06be2af2c8d86217b499e00054a88f4093855f`  
 		Last Modified: Mon, 29 Jan 2018 22:55:56 GMT  
 		Size: 3.4 MB (3409973 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `nats-streaming:latest` - linux; arm variant v7
+
+```console
+$ docker pull nats-streaming@sha256:920a5dbb8e60dfd5bf0092b01cd25e2bf5b0a36369e61fde95ba1c8b6baf7606
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 MB (3188288 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2422cb256d3446eb2c562ad21070833ed4f7ea88b54f119eed57ee4cbfe5e88d`
+-	Entrypoint: `["\/nats-streaming-server"]`
+-	Default Command: `["-m","8222"]`
+
+```dockerfile
+# Tue, 30 Jan 2018 00:27:31 GMT
+COPY file:77299fb658da8c200c8f6ec0e1e528411f3d97033c009d7e41ee3174c98bc2fd in /nats-streaming-server 
+# Tue, 30 Jan 2018 00:27:32 GMT
+EXPOSE 4222/tcp 8222/tcp
+# Tue, 30 Jan 2018 00:27:32 GMT
+ENTRYPOINT ["/nats-streaming-server"]
+# Tue, 30 Jan 2018 00:27:32 GMT
+CMD ["-m" "8222"]
+```
+
+-	Layers:
+	-	`sha256:ad775e7b077a28fa0be5ca43e491931638f5457237fe2239b07526353e71e010`  
+		Last Modified: Tue, 30 Jan 2018 00:27:46 GMT  
+		Size: 3.2 MB (3188288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats-streaming:latest` - windows version 10.0.14393.2007; amd64
