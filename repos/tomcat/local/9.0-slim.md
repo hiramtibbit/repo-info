@@ -1,10 +1,10 @@
-# `tomcat:9.0.2-jre9-slim`
+# `tomcat:9.0.4-jre9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e90afe78bae57f544767edf9be07e5a5c11597647230985b8b05b4d1c10b5441`
-- Created: `2018-01-18T23:33:22.057716354Z`
-- Virtual Size: ~ 328.15 Mb  
+- Image ID: `sha256:4dc9adb43d04e7bed0f065971f8ef2c96987fa901f79a194976df90836625c30`
+- Created: `2018-01-23T22:24:16.175147664Z`
+- Virtual Size: ~ 328.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.2`
-  - `TOMCAT_SHA1=b59e1d658a4edbca7a81d12fd6f20203a4da9743`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.2/bin/apache-tomcat-9.0.2.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.4`
+  - `TOMCAT_SHA1=7f2f7908ee7a1b097fca50690786ed5bf386b24c`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -789,42 +789,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-6=6.4.0-11`
+### `dpkg` source package: `gcc-7=7.2.0-20`
 
 Binary Packages:
 
-- `gcc-6-base:amd64=6.4.0-11`
-
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
-
-- `Artistic`
-- `GFDL-1.2`
-- `GPL`
-- `GPL-2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-11
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.dsc' gcc-6_6.4.0-11.dsc 24919 SHA256:a2c02831860d24fc6a2633743579d7d685bf5abc58ce9849c0af9901aa936a72
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.diff.gz' gcc-6_6.4.0-11.diff.gz 1776760 SHA256:783228233bafe64f29746d602dcc5e7da3c89258dc70018d47b1212f0b38a820
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-11/ (for browsing the source)
-- https://sources.debian.net/src/gcc-6/6.4.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-6/6.4.0-11/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gcc-7=7.2.0-19`
-
-Binary Packages:
-
-- `gcc-7-base:amd64=7.2.0-19`
-- `libgcc1:amd64=1:7.2.0-19`
-- `libstdc++6:amd64=7.2.0-19`
+- `gcc-7-base:amd64=7.2.0-20`
+- `libgcc1:amd64=1:7.2.0-20`
+- `libstdc++6:amd64=7.2.0-20`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -838,17 +809,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-19
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-19.dsc' gcc-7_7.2.0-19.dsc 33199 SHA256:f5f183b6b1ed0b829710f7b61d6dd5d36e33323b471ccb8bc64c9aac6935f1cc
+$ apt-get source -qq --print-uris gcc-7=7.2.0-20
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-20.dsc' gcc-7_7.2.0-20.dsc 33202 SHA256:c698cace7da07983bd7c5b0f5ed75533e5bf3538922de198e3c4c5879cc0cf6b
 'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-19.diff.gz' gcc-7_7.2.0-19.diff.gz 2947745 SHA256:b4e8aae63ce90416328ba8b539ed5797a21dcaff0c80ada4bfd97c7818654755
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-20.diff.gz' gcc-7_7.2.0-20.diff.gz 2944445 SHA256:14853e9fd393a02f1d2e8571b7df0f62ad6b965b89bdeb5179778ff0935f811b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-7/7.2.0-19/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-19/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-19/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-7/7.2.0-20/ (for browsing the source)
+- https://sources.debian.net/src/gcc-7/7.2.0-20/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-7/7.2.0-20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.25-3`
 
@@ -2328,7 +2299,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libsystemd0:amd64=236-3`
+- `libsystemd0:amd64=236-3+b1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`)
 

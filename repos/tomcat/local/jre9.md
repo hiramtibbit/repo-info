@@ -1,10 +1,10 @@
-# `tomcat:8.5.24-jre9`
+# `tomcat:8.5.27-jre9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:02fda905c855c3e11ba230d47f334eb8f4cf173816d3e3fd738a246e0d25fa61`
-- Created: `2018-01-18T23:00:08.415203927Z`
-- Virtual Size: ~ 714.36 Mb  
+- Image ID: `sha256:4a43699698ed831583861e40934c6feed6561f68836066590b258703df8bc8ec`
+- Created: `2018-01-23T21:21:11.949922664Z`
+- Virtual Size: ~ 714.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.24`
-  - `TOMCAT_SHA1=9e26ba61c5665aafc849073edeb769be555283cd`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.27`
+  - `TOMCAT_SHA1=dc63fe7cefd5eb4f746d17b68578acc92e8af576`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -710,20 +710,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.57.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.dsc' curl_7.57.0-1.dsc 2721 SHA256:d07a5a7401d8634f1335ae474114ee0e90f347fc83e3094e09ad6dadf025214f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0.orig.tar.gz' curl_7.57.0.orig.tar.gz 3828358 SHA256:7ce35f207562674e71dbada6891b37e3f043c1e7a82915cb9c2a17ad3a9d659b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.debian.tar.xz' curl_7.57.0-1.debian.tar.xz 27692 SHA256:b4ff36450ce1fa1fbfc65202aa6cd6df1c59bf4db3d202ecefab38f0d81bd713
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.57.0-1/
 
-- https://sources.debian.net/src/curl/7.57.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.57.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.57.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1215,35 +1208,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-5/5.5.0-5/ (for browsing the source)
 - https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gcc-6=6.4.0-11`
-
-Binary Packages:
-
-- `gcc-6-base:amd64=6.4.0-11`
-
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
-
-- `Artistic`
-- `GFDL-1.2`
-- `GPL`
-- `GPL-2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-11
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.dsc' gcc-6_6.4.0-11.dsc 24919 SHA256:a2c02831860d24fc6a2633743579d7d685bf5abc58ce9849c0af9901aa936a72
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.diff.gz' gcc-6_6.4.0-11.diff.gz 1776760 SHA256:783228233bafe64f29746d602dcc5e7da3c89258dc70018d47b1212f0b38a820
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-11/ (for browsing the source)
-- https://sources.debian.net/src/gcc-6/6.4.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-6/6.4.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-7=7.2.0-19`
 
@@ -4983,24 +4947,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.14.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.19.2-2`
+### `dpkg` source package: `wget=1.19.3-2`
 
 Binary Packages:
 
-- `wget=1.19.2-2`
+- `wget=1.19.3-2`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.19.3-2
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3-2.dsc' wget_1.19.3-2.dsc 2173 SHA256:7888095b2e0f1f48542a9656b7176556135fd195b2b464ea0e0a9fcb2b3e4649
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3.orig.tar.gz' wget_1.19.3.orig.tar.gz 4311432 SHA256:9801174275b4a47f85f5a3c2a99a84436cfe90815eafb5ee26c6100499528c76
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3.orig.tar.gz.asc' wget_1.19.3.orig.tar.gz.asc 1241 SHA256:84e481fb6d8a5d7b97e05f261c12d6c40cfa438e4fa6e49e6b5d8fade25b162e
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3-2.debian.tar.xz' wget_1.19.3-2.debian.tar.xz 64740 SHA256:ec11322fa8b4c08d0522ca153feb18275b482ed559169b85d65d8b0498406c82
+```
 
-- http://snapshot.debian.org/package/wget/1.19.2-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.19.3-2/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.19.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.19.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11-utils=7.7+3`
 

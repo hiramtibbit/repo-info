@@ -1,10 +1,10 @@
-# `tomcat:8.5.24-jre9-slim`
+# `tomcat:8.5.27-jre9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:caaadda3b62c3ec14d52e42926e192095f3a1406371fa17e126886446eb63aff`
-- Created: `2018-01-18T23:09:27.382496525Z`
-- Virtual Size: ~ 328.21 Mb  
+- Image ID: `sha256:22477ebb2454a2613f52a3e2afe1108804d1436c7e7812aa18578506c81bbeee`
+- Created: `2018-01-23T21:35:52.370414694Z`
+- Virtual Size: ~ 328.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.24`
-  - `TOMCAT_SHA1=9e26ba61c5665aafc849073edeb769be555283cd`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.27`
+  - `TOMCAT_SHA1=dc63fe7cefd5eb4f746d17b68578acc92e8af576`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -788,35 +788,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-5/5.5.0-5/ (for browsing the source)
 - https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gcc-6=6.4.0-11`
-
-Binary Packages:
-
-- `gcc-6-base:amd64=6.4.0-11`
-
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
-
-- `Artistic`
-- `GFDL-1.2`
-- `GPL`
-- `GPL-2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-11
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.dsc' gcc-6_6.4.0-11.dsc 24919 SHA256:a2c02831860d24fc6a2633743579d7d685bf5abc58ce9849c0af9901aa936a72
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.diff.gz' gcc-6_6.4.0-11.diff.gz 1776760 SHA256:783228233bafe64f29746d602dcc5e7da3c89258dc70018d47b1212f0b38a820
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-11/ (for browsing the source)
-- https://sources.debian.net/src/gcc-6/6.4.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-6/6.4.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-7=7.2.0-19`
 
@@ -2328,7 +2299,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libsystemd0:amd64=236-3`
+- `libsystemd0:amd64=236-3+b1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`)
 
