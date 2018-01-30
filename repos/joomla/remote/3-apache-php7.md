@@ -1,7 +1,7 @@
 ## `joomla:3-apache-php7`
 
 ```console
-$ docker pull joomla@sha256:4506100c57563dace85302e36caad2db2350c2856ff83337127200c27adbc92c
+$ docker pull joomla@sha256:9f6624f51b6e325e6fd9b1038fbfe12d55abf201ceec28398b4e28c7f65393f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull joomla@sha256:4506100c57563dace85302e36caad2db2350c2856ff833371272
 ### `joomla:3-apache-php7` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:6e64e80359b9386327f838a451cad14b96271ed68dd735f90c180d8384046467
+$ docker pull joomla@sha256:9992b15919a46e804608d0f2cdd541e3204df56ce4ceae29fb8615d1c8faa085
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.1 MB (176052887 bytes)**  
+-	Total Size: **176.1 MB (176063114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30c935a1028e2e45c7cd42a0d5c086ca40f5f9fec19781731ff9a3cbd96a38f1`
+-	Image ID: `sha256:027544b5f69d5c306c26bf8efc282f6ea0c929c69ec9095f232d4950452108a5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -87,35 +87,35 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Tue, 09 Jan 2018 01:57:42 GMT
 CMD ["apache2-foreground"]
-# Tue, 09 Jan 2018 05:12:08 GMT
-MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Tue, 09 Jan 2018 05:12:08 GMT
+# Tue, 30 Jan 2018 19:11:41 GMT
+LABEL maintainer=Michael Babker <michael.babker@joomla.org> (@mbabker)
+# Tue, 30 Jan 2018 19:11:41 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Tue, 09 Jan 2018 05:12:09 GMT
+# Tue, 30 Jan 2018 19:11:42 GMT
 RUN a2enmod rewrite
-# Tue, 09 Jan 2018 05:12:36 GMT
+# Tue, 30 Jan 2018 19:12:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libmcrypt-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Tue, 09 Jan 2018 05:12:49 GMT
+# Tue, 30 Jan 2018 19:12:13 GMT
 RUN docker-php-ext-install mysqli
-# Tue, 09 Jan 2018 05:12:56 GMT
+# Tue, 30 Jan 2018 19:12:18 GMT
 RUN docker-php-ext-install mcrypt
-# Tue, 09 Jan 2018 05:13:16 GMT
+# Tue, 30 Jan 2018 19:12:36 GMT
 RUN docker-php-ext-install zip
-# Tue, 09 Jan 2018 05:22:48 GMT
+# Tue, 30 Jan 2018 19:12:37 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Jan 2018 05:22:49 GMT
-ENV JOOMLA_VERSION=3.8.2
-# Tue, 09 Jan 2018 05:22:49 GMT
-ENV JOOMLA_SHA1=e68745d55cc5b1a7bb46f72f4296c6550e088543
-# Tue, 09 Jan 2018 05:22:56 GMT
+# Tue, 30 Jan 2018 19:12:37 GMT
+ENV JOOMLA_VERSION=3.8.4
+# Tue, 30 Jan 2018 19:12:37 GMT
+ENV JOOMLA_SHA1=3d8a321e626cdf3823fc6bd62aee222fd12c19ec
+# Tue, 30 Jan 2018 19:12:42 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Tue, 09 Jan 2018 05:22:56 GMT
+# Tue, 30 Jan 2018 19:12:43 GMT
 COPY file:c1e8bebe69e832de6ba85a02864e7d24ff9e6b5232ea62a31e27a5769c662116 in /entrypoint.sh 
-# Tue, 09 Jan 2018 05:22:57 GMT
+# Tue, 30 Jan 2018 19:12:43 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php 
-# Tue, 09 Jan 2018 05:22:57 GMT
+# Tue, 30 Jan 2018 19:12:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Jan 2018 05:22:57 GMT
+# Tue, 30 Jan 2018 19:12:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -176,35 +176,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 09 Jan 2018 03:41:22 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63feffb692433c10feaeadf13ee0a407d0bc37382b978915d07e7da394de2898`  
-		Last Modified: Tue, 09 Jan 2018 05:44:10 GMT  
-		Size: 311.0 B  
+	-	`sha256:3e651a45f932e78aca3d817644219d596e683c1903648f43ff8f8aeca48b8324`  
+		Last Modified: Tue, 30 Jan 2018 19:17:52 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed5b763c681f0dd87b6a90bb402d813aefe4080dd0d7532842114bf5be2ff537`  
-		Last Modified: Tue, 09 Jan 2018 05:44:11 GMT  
-		Size: 3.0 MB (2996180 bytes)  
+	-	`sha256:50193d6285b32b12305a17a88c7cf888bc709b3cd37b5aa344e59097a76700c8`  
+		Last Modified: Tue, 30 Jan 2018 19:17:53 GMT  
+		Size: 3.0 MB (2996174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af897f4f3d98ce57ee4f54e71f4bbb0baa5a326d2c76b8dad85b3d1e16169563`  
-		Last Modified: Tue, 09 Jan 2018 05:44:10 GMT  
-		Size: 56.4 KB (56414 bytes)  
+	-	`sha256:98d1d4ae7a3ae084d84e22ed29c8733cfb5d1b3d95a852893a03c316618dab77`  
+		Last Modified: Tue, 30 Jan 2018 19:17:55 GMT  
+		Size: 56.4 KB (56405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8de2c0d24bb97e7e7b6bd0a6b2fa8e183a086bf0a6df8ecb04026bb49d13ed24`  
-		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
-		Size: 18.3 KB (18294 bytes)  
+	-	`sha256:50ae97b71150a712dc2fb8f7060852157fa7aa243e6cd144d42b42c856a8ba15`  
+		Last Modified: Tue, 30 Jan 2018 19:17:49 GMT  
+		Size: 18.3 KB (18288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9214569b8f6195d9bdc75fc60801d713b3664cb7e8ad3e44e71c5d3f968512d2`  
-		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
-		Size: 72.8 KB (72761 bytes)  
+	-	`sha256:2a9f06ea386d2ad3cb13340d0973320f0ce17d9a16a782ba45546c887ac4ad2e`  
+		Last Modified: Tue, 30 Jan 2018 19:17:49 GMT  
+		Size: 72.8 KB (72769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab69bc62b78fed4b3afc7f64481ec3cccbaa0482a5bcbf00c5893314dd923419`  
-		Last Modified: Tue, 09 Jan 2018 05:44:16 GMT  
-		Size: 9.4 MB (9433102 bytes)  
+	-	`sha256:c03d465a32bb229d00789d1c92ba23bae939e7fb42f3eee9ae99b39f6fcaeb9d`  
+		Last Modified: Tue, 30 Jan 2018 19:17:52 GMT  
+		Size: 9.4 MB (9443340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6d7b158f20f4fe9c6313fefef684c899b5f09d8907112c8cd4514700e7b9621`  
-		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
+	-	`sha256:3ea088825d27d52153fdba275df594dccdae0290e3d23ae46d85ede667a17ed9`  
+		Last Modified: Tue, 30 Jan 2018 19:17:51 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:720db54ba4e734de7df29327e0379b82b421e88397f48438090481cd79c4116a`  
-		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
+	-	`sha256:55bbe237312872a04f0a4071a55dcacf2ed317735d6278b91d813ebb193aa272`  
+		Last Modified: Tue, 30 Jan 2018 19:17:49 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
