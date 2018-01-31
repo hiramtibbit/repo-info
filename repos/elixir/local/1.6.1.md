@@ -1,10 +1,10 @@
-# `elixir:1.6.0`
+# `elixir:1.6.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b5760df0322fc987bc65c0e26012fee18567355555ffec8e9ed2568e11a92a9`
-- Created: `2018-01-17T23:32:24.648701313Z`
-- Virtual Size: ~ 890.18 Mb  
+- Image ID: `sha256:1fd3332a6393f092a8c40b608709399384f332b299a8ba8643bacb3c767b6efd`
+- Created: `2018-01-29T23:32:30.754632992Z`
+- Virtual Size: ~ 890.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=20.2.2`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.7`
-  - `ELIXIR_VERSION=v1.6.0`
+  - `REBAR3_VERSION=3.5.0`
+  - `ELIXIR_VERSION=v1.6.1`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
