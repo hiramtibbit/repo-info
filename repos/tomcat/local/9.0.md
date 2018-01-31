@@ -1187,20 +1187,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.5.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.dsc' gcc-5_5.5.0-5.dsc 17722 SHA256:b2202e878ccd69bf295068f6771660df8fe67ab4ff2c6ce9f89e40090b19008b
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0.orig.tar.gz' gcc-5_5.5.0.orig.tar.gz 72120294 SHA256:834591d3a9d454f3bb3d30483e36d5089fb055fdda0c3d623a7cad1a3f40124a
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.diff.gz' gcc-5_5.5.0-5.diff.gz 1606616 SHA256:b472ea987a03a01f3080c7c75927d2aad3ed5b633d3bcc9508ef3eef85fb92b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-5/5.5.0-5/
 
-- https://sources.debian.net/src/gcc-5/5.5.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-7=7.2.0-20`
 
@@ -4951,21 +4944,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.3-2
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3-2.dsc' wget_1.19.3-2.dsc 2173 SHA256:7888095b2e0f1f48542a9656b7176556135fd195b2b464ea0e0a9fcb2b3e4649
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3.orig.tar.gz' wget_1.19.3.orig.tar.gz 4311432 SHA256:9801174275b4a47f85f5a3c2a99a84436cfe90815eafb5ee26c6100499528c76
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3.orig.tar.gz.asc' wget_1.19.3.orig.tar.gz.asc 1241 SHA256:84e481fb6d8a5d7b97e05f261c12d6c40cfa438e4fa6e49e6b5d8fade25b162e
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.3-2.debian.tar.xz' wget_1.19.3-2.debian.tar.xz 64740 SHA256:ec11322fa8b4c08d0522ca153feb18275b482ed559169b85d65d8b0498406c82
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.19.3-2/
 
-- https://sources.debian.net/src/wget/1.19.3-2/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.19.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.19.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11-utils=7.7+3`
 
