@@ -719,20 +719,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris d-conf=0.26.1-2
-'http://deb.debian.org/debian/pool/main/d/d-conf/d-conf_0.26.1-2.dsc' d-conf_0.26.1-2.dsc 2522 SHA256:c63c96ddda88eba50dead09a73ef0f2e063913381217514e84faddf2fd5ad761
-'http://deb.debian.org/debian/pool/main/d/d-conf/d-conf_0.26.1.orig.tar.xz' d-conf_0.26.1.orig.tar.xz 218516 SHA256:d583b1f7fc93b879e2956acc6a26ea05a445a0002158aeef80c8e378e1414535
-'http://deb.debian.org/debian/pool/main/d/d-conf/d-conf_0.26.1-2.debian.tar.xz' d-conf_0.26.1-2.debian.tar.xz 8916 SHA256:2cddd6b8616444f46f2121ab64c38c43bb468994d2efaf8d40538986d03b45d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/d-conf/0.26.1-2/
 
-- https://sources.debian.net/src/d-conf/0.26.1-2/ (for browsing the source)
-- https://sources.debian.net/src/d-conf/0.26.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/d-conf/0.26.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.5`
 
@@ -1155,20 +1148,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.5.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.dsc' gcc-5_5.5.0-5.dsc 17722 SHA256:b2202e878ccd69bf295068f6771660df8fe67ab4ff2c6ce9f89e40090b19008b
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0.orig.tar.gz' gcc-5_5.5.0.orig.tar.gz 72120294 SHA256:834591d3a9d454f3bb3d30483e36d5089fb055fdda0c3d623a7cad1a3f40124a
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.diff.gz' gcc-5_5.5.0-5.diff.gz 1606616 SHA256:b472ea987a03a01f3080c7c75927d2aad3ed5b633d3bcc9508ef3eef85fb92b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-5/5.5.0-5/
 
-- https://sources.debian.net/src/gcc-5/5.5.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-6=6.4.0-11`
 
@@ -1532,20 +1518,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpm2/copyright`)
 - `GPL-3`
 - `GPL-3.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gpm=1.20.7-4
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-4.dsc' gpm_1.20.7-4.dsc 2014 SHA256:c869bdc38a2d958b45bc974a97c581091443a9657ae4f1b2cf18e8954d4d2328
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7.orig.tar.gz' gpm_1.20.7.orig.tar.gz 855027 SHA256:c7e4661c24e05ae13547176b649bac8e3a0db2575f7dd57559f9e0b509f90f49
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-4.debian.tar.xz' gpm_1.20.7-4.debian.tar.xz 82724 SHA256:572298fb99b2905e23e3a55678b0f03b9991505703f3a32b0ad0a8aefff25a3b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gpm/1.20.7-4/
 
-- https://sources.debian.net/src/gpm/1.20.7-4/ (for browsing the source)
-- https://sources.debian.net/src/gpm/1.20.7-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gpm/1.20.7-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
 
@@ -4119,20 +4098,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.34.1-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34.1-1.dsc' nss_3.34.1-1.dsc 2237 SHA256:1030209da537cd345e82548d299ea60c74a1cef7fd27debcf001c3a2eca9ba39
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34.1.orig.tar.gz' nss_3.34.1.orig.tar.gz 9562876 SHA256:a3c15d367caf784f33d96dbafbdffc16a8e42fb8c8aedfce97bf92a9f918dda0
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34.1-1.debian.tar.xz' nss_3.34.1-1.debian.tar.xz 24800 SHA256:8295b53e591831fbfe6017048c0840abc586eeddb3d52d15adf0796d67ea01c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.34.1-1/
 
-- https://sources.debian.net/src/nss/2:3.34.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.34.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.34.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10~32-1`
 
