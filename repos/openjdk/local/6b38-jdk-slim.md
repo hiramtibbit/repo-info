@@ -1395,20 +1395,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u8
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.dsc' krb5_1.10.1+dfsg-5+deb7u8.dsc 2952 SHA256:8e62fc793f716322edfefd5c70bb178bb0281117b5d864b9c4ce67640f51dcdd
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz 157896 SHA256:2ed13be10008d2258e47daa2fe8a8bba47c83d0b2370f719ebd69b4eae3bb18a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.10.1+dfsg-5+deb7u8/
 
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.10.1+dfsg-5+deb7u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 

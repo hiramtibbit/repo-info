@@ -794,20 +794,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.5.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.dsc' gcc-5_5.5.0-5.dsc 17722 SHA256:b2202e878ccd69bf295068f6771660df8fe67ab4ff2c6ce9f89e40090b19008b
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0.orig.tar.gz' gcc-5_5.5.0.orig.tar.gz 72120294 SHA256:834591d3a9d454f3bb3d30483e36d5089fb055fdda0c3d623a7cad1a3f40124a
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.5.0-5.diff.gz' gcc-5_5.5.0-5.diff.gz 1606616 SHA256:b472ea987a03a01f3080c7c75927d2aad3ed5b633d3bcc9508ef3eef85fb92b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-5/5.5.0-5/
 
-- https://sources.debian.net/src/gcc-5/5.5.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-5/5.5.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-5/5.5.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-6=6.4.0-11`
 
