@@ -1,16 +1,16 @@
-# `node:9.4.0-stretch`
+# `node:9.5.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:832a294fe80cdd6e59398dacb052ba5772f2f1cbcfafa62e92041ee64f16ac93`
-- Created: `2018-01-11T00:48:03.797305828Z`
-- Virtual Size: ~ 891.19 Mb  
+- Image ID: `sha256:14b368148059c30fdf7f22dd511e7c2d41522b6b9c7d7b762b96eb2409152a28`
+- Created: `2018-02-01T18:37:39.542236116Z`
+- Virtual Size: ~ 891.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.4.0`
+  - `NODE_VERSION=9.5.0`
   - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
