@@ -1,10 +1,10 @@
-# `rabbitmq:3.7.2-management`
+# `rabbitmq:3.7.3-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6cb6e2f951a8f01a9708e97d8d91c1559bb89a703fe1d2e42ccf2699a7fa21fe`
-- Created: `2017-12-23T15:42:41.734142399Z`
-- Virtual Size: ~ 150.94 Mb  
+- Image ID: `sha256:a15563f1e21c0ba03ac62a4a2f4be825597378bcd8fcbc9b4e5fbee7f9b8d799`
+- Created: `2018-02-01T01:43:41.26432262Z`
+- Virtual Size: ~ 150.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.7.2`
-  - `RABBITMQ_GITHUB_TAG=v3.7.2`
-  - `RABBITMQ_DEBIAN_VERSION=3.7.2-1`
+  - `RABBITMQ_VERSION=3.7.3`
+  - `RABBITMQ_GITHUB_TAG=v3.7.3`
+  - `RABBITMQ_DEBIAN_VERSION=3.7.3-1`
   - `LANG=C.UTF-8`
   - `HOME=/var/lib/rabbitmq`
 
@@ -1812,11 +1812,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rabbitmq-server=3.7.2-1`
+### `dpkg` source package: `rabbitmq-server=3.7.3-1`
 
 Binary Packages:
 
-- `rabbitmq-server=3.7.2-1`
+- `rabbitmq-server=3.7.3-1`
 
 Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 
