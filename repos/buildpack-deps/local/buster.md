@@ -597,20 +597,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.57.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.dsc' curl_7.57.0-1.dsc 2721 SHA256:d07a5a7401d8634f1335ae474114ee0e90f347fc83e3094e09ad6dadf025214f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0.orig.tar.gz' curl_7.57.0.orig.tar.gz 3828358 SHA256:7ce35f207562674e71dbada6891b37e3f043c1e7a82915cb9c2a17ad3a9d659b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.debian.tar.xz' curl_7.57.0-1.debian.tar.xz 27692 SHA256:b4ff36450ce1fa1fbfc65202aa6cd6df1c59bf4db3d202ecefab38f0d81bd713
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.57.0-1/
 
-- https://sources.debian.net/src/curl/7.57.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.57.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.57.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -650,20 +643,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.5
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.5.dsc' dash_0.5.8-2.5.dsc 1807 SHA256:42e77c37a5a4db1cc8274c3183d83e7173883cc611339815d92358562b74d066
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.5.diff.gz' dash_0.5.8-2.5.diff.gz 44513 SHA256:53f55bbcb327b0e2dd687c44bf0610f5e304dd00733c81c101be46e0adf8ec89
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.8-2.5/
 
-- https://sources.debian.net/src/dash/0.5.8-2.5/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.8-2.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.8-2.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.1`
 
@@ -1348,20 +1334,13 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris geoip=1.6.11-3
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11-3.dsc' geoip_1.6.11-3.dsc 1860 SHA256:a7ba2d089173c9774b61a598367e8944fec78200399e84e2e4b11ec5cc793016
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11.orig.tar.gz' geoip_1.6.11.orig.tar.gz 161934 SHA256:8859cb7c9cb63e77f4aedb40a4622024359b956b251aba46b255acbe190c34e0
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11-3.debian.tar.xz' geoip_1.6.11-3.debian.tar.xz 22320 SHA256:c3a704cbeb83c9df2006b404de91d3a0e45d3a99c36a9f530c33747c4c59b7c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/geoip/1.6.11-3/
 
-- https://sources.debian.net/src/geoip/1.6.11-3/ (for browsing the source)
-- https://sources.debian.net/src/geoip/1.6.11-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/geoip/1.6.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.15.1-1`
 
@@ -2993,21 +2972,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-3
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-3.dsc' libtasn1-6_4.12-3.dsc 2574 SHA256:e281b1f2e1181551e8a693ecf924ddb4a784a475a9fd1d444f8b80042bb45ff5
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz.asc' libtasn1-6_4.12.orig.tar.gz.asc 488 SHA256:469560e75534a5842916669930bcd97cec0400f49b5358fd962fa1c32475fe61
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-3.debian.tar.xz' libtasn1-6_4.12-3.debian.tar.xz 63976 SHA256:89ce2fb121bdb5f9b40745184da58470948e31033bae849e0f24c11257ee3bba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.12-3/
 
-- https://sources.debian.net/src/libtasn1-6/4.12-3/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.12-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.27-1`
 
