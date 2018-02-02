@@ -63,19 +63,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.116
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.116.dsc' adduser_3.116.dsc 1740 SHA256:50e4154d3101101a890864185a09478c182155dc13f73dbb465c4279213bfafa
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.116.tar.xz' adduser_3.116.tar.xz 212012 SHA256:72d811ad3ba17d2794b14d19acd1d6b57f9dd31d9250d51e786895dee2daeac0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.116/
 
-- https://sources.debian.net/src/adduser/3.116/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.116/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.116/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `adwaita-icon-theme=3.26.1-1`
 
