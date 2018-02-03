@@ -63,13 +63,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~alpha5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~alpha5.dsc' apt_1.6~alpha5.dsc 2739 SHA256:b3bd9ea91e6ceb9bfac48fcd9d8381a69a331d88a0d0cc0fde34303dd33dfc99
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~alpha5.tar.xz' apt_1.6~alpha5.tar.xz 2095168 SHA256:1fb2f427602eabeb10aa7eb53373e9525627907590fa58260b94bd9a7a18e27b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6~alpha5/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -496,14 +496,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu3.dsc' gnutls28_3.5.8-6ubuntu3.dsc 3139 SHA256:dc4d0c9900bac7573a55d6c630bbabcff406fb81e700ba4e35612084fb1bd33e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu3.debian.tar.xz' gnutls28_3.5.8-6ubuntu3.debian.tar.xz 110040 SHA256:b6e3ef685c24c23bc45e4e08883763f0fdd889a49f5c899d4a6a9f3911ec11f4
-```
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -794,14 +789,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.7-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.7-2.dsc' libsemanage_2.7-2.dsc 2456 SHA256:7054ef9c206cac2e698627040df04dd159ff7aa982348e25c315dd817fb8926b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.7.orig.tar.gz' libsemanage_2.7.orig.tar.gz 153465 SHA256:07e9477714ce6a4557a1fe924ea4cb06501b62d0fa0e3c0dc32a2cf47cb8d476
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.7-2.debian.tar.xz' libsemanage_2.7-2.debian.tar.xz 16968 SHA256:6679667dc2ceafbe214eddfe84c3f6a18d457a4c78d6ae63165bc65e71b174e7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsemanage/2.7-2/
+
 
 ### `dpkg` source package: `libsepol=2.7-1`
 
@@ -919,14 +913,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.0+20160625-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160625-1ubuntu1.dsc' ncurses_6.0+20160625-1ubuntu1.dsc 4448 SHA256:8d60a8e3edaf5911d654e9bbc435647571cb398beb9030e9addbf093f9701d32
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160625.orig.tar.gz' ncurses_6.0+20160625.orig.tar.gz 3167182 SHA256:aaccc026de6f2f112dd56085ec7f38923429edc91a010ae1c8e68b5c53c60acd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160625-1ubuntu1.debian.tar.xz' ncurses_6.0+20160625-1ubuntu1.debian.tar.xz 54936 SHA256:85bc1d5ff61390da5ebaf7d4674494ccaaa9d3ad0fa93b6b77f45cc75a2ba8ca
-```
 
 ### `dpkg` source package: `nettle=3.3-2`
 
@@ -1080,15 +1069,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-3.dsc' perl_5.26.1-3.dsc 2658 SHA256:0c9f3a0a59fa8b5977f1896b41e9d066a858dc4afd27d8f6a1266734bb82b11f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-3.debian.tar.xz' perl_5.26.1-3.debian.tar.xz 160252 SHA256:a410c3c5ae9350fd84ebed50f0a7de3b2f2c3c9ba409a77713480ee124f2ed05
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.26.1-3/
+
 
 ### `dpkg` source package: `pinentry=1.0.0-3`
 
@@ -1129,14 +1116,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.dsc' procps_3.3.12-1ubuntu2.dsc 2243 SHA256:c8e72f65fdcadb40b13f35ce322b820eb3fec082fef153387cae78a33d8f144b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.debian.tar.xz' procps_3.3.12-1ubuntu2.debian.tar.xz 30724 SHA256:1b40d1519e0dd9965aa3faed306dfdb44a113e39a14a404ba5fd28ff3d6e42b8
-```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
@@ -1150,14 +1132,9 @@ Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_7.0-0ubuntu2.dsc' readline_7.0-0ubuntu2.dsc 2533 SHA256:80cf79ab8bd7a3847d505b6efc4c97d6f3e4dcc4247c54ecc2d8cec8b2e6d7c6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_7.0-0ubuntu2.debian.tar.xz' readline_7.0-0ubuntu2.debian.tar.xz 28524 SHA256:61334a69abb593401d775386f7616df20e7aaf8c571e91d5158c71546123ffa7
-```
 
 ### `dpkg` source package: `sed=4.4-1`
 
@@ -1226,15 +1203,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.21.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.21.0-1.dsc' sqlite3_3.21.0-1.dsc 2476 SHA256:19ab7a8e3dc0059c621894a761755ff87e1f66143d6bec184d68b755b2e02f56
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.21.0.orig-www.tar.xz' sqlite3_3.21.0.orig-www.tar.xz 3530516 SHA256:eac3a25b1ed0b547c1c31ddf2afec2415a96d6fe3bab0852fe53e80b084cf6ff
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.21.0.orig.tar.xz' sqlite3_3.21.0.orig.tar.xz 5936216 SHA256:450aa7efeb8b039d8591a5c7ff472c821421150eb13bffc6f7a14f5a970a0207
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.21.0-1.debian.tar.xz' sqlite3_3.21.0-1.debian.tar.xz 17284 SHA256:0a44d76d4b06a75a733df6f2df319e5acf80f67551bd8b5a8eab266434e6fbe6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.21.0-1/
+
 
 ### `dpkg` source package: `systemd=235-3ubuntu3`
 
