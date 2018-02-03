@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.116
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.116.dsc' adduser_3.116.dsc 1740 SHA256:50e4154d3101101a890864185a09478c182155dc13f73dbb465c4279213bfafa
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.116.tar.xz' adduser_3.116.tar.xz 212012 SHA256:72d811ad3ba17d2794b14d19acd1d6b57f9dd31d9250d51e786895dee2daeac0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.116/
 
-- https://sources.debian.net/src/adduser/3.116/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.116/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.116/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `adwaita-icon-theme=3.26.1-2`
 
@@ -345,20 +339,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.8.1-2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.1-2.dsc' audit_2.8.1-2.dsc 2471 SHA256:0e7e05121cb3e9c5603e81552ca64e0ec4e673f0b7a0e094b7596d00a132d19c
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.1.orig.tar.gz' audit_2.8.1.orig.tar.gz 1120440 SHA256:1becde92ff6e81798fa8878820ab2497d867036a6596f55109504b37c8b33b6c
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.1-2.debian.tar.xz' audit_2.8.1-2.debian.tar.xz 19156 SHA256:3fc33cad8b541dcc031b3f70f4e6a7d2722ecd87a97272b8477e403849bf3211
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:2.8.1-2/
 
-- https://sources.debian.net/src/audit/1:2.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:2.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:2.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.7-3`
 
@@ -550,20 +537,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.15.8-3
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.8-3.dsc' cairo_1.15.8-3.dsc 2852 SHA256:c8565598d33dd48a9aad77314dcae1654d729e2d825238e42dfc6fa1b523a9e0
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.8.orig.tar.xz' cairo_1.15.8.orig.tar.xz 41841808 SHA256:3224260a4f8e22e7ea95faf706ae111b974833dd74185be1db5ebc7618a98464
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.8-3.debian.tar.xz' cairo_1.15.8-3.debian.tar.xz 29304 SHA256:8383c05d7a15bc62456107a997a9e365ea8e73ea2499702f085faa711db1878d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cairo/1.15.8-3/
 
-- https://sources.debian.net/src/cairo/1.15.8-3/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.15.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.15.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.236`
 
@@ -1999,20 +1979,13 @@ Licenses: (parsed from: `/usr/share/doc/libip4tc0/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.6.1-2
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.1-2.dsc' iptables_1.6.1-2.dsc 2815 SHA256:c6527164f2b314eccbc10c64f48fb3cdc28467f0cb7217e3c70a54706d90a6b0
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.1.orig.tar.bz2' iptables_1.6.1.orig.tar.bz2 620890 SHA256:0fc2d7bd5d7be11311726466789d4c65fb4c8e096c9182b56ce97440864f0cf5
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.1-2.debian.tar.xz' iptables_1.6.1-2.debian.tar.xz 62500 SHA256:446b007c39bb65daac904808966863fe6d6ce6e4f46fe77b47d1eab65265541a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.6.1-2/
 
-- https://sources.debian.net/src/iptables/1.6.1-2/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.6.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.33.3-15`
 
