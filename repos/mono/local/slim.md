@@ -1,16 +1,16 @@
-# `mono:5.4.1.6-slim`
+# `mono:5.8.0.108-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ace2bca06816e031c70e1c36b871760a95ae6b42a8c1fde71321a62e870890fb`
-- Created: `2017-12-12T05:02:31.019862237Z`
+- Image ID: `sha256:a177afcf138e9f920f2d1cddf31383c03d096c04913c0e825a14ef7870afa71f`
+- Created: `2018-02-03T00:35:25.804510902Z`
 - Virtual Size: ~ 170.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MONO_VERSION=5.4.1.6`
+  - `MONO_VERSION=5.8.0.108`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -218,14 +218,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/4.3-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u14`
+### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u15`
 
 Binary Packages:
 
-- `libdns-export100=1:9.9.5.dfsg-9+deb8u14`
-- `libirs-export91=1:9.9.5.dfsg-9+deb8u14`
-- `libisc-export95=1:9.9.5.dfsg-9+deb8u14`
-- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u14`
+- `libdns-export100=1:9.9.5.dfsg-9+deb8u15`
+- `libirs-export91=1:9.9.5.dfsg-9+deb8u15`
+- `libisc-export95=1:9.9.5.dfsg-9+deb8u15`
+- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -234,17 +234,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u14
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.dsc' bind9_9.9.5.dfsg-9+deb8u14.dsc 3595 SHA256:a11c0a3a8bd41a82fcf31495343925cd7261399ffbe9614804b1f8e906f57037
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.diff.gz' bind9_9.9.5.dfsg-9+deb8u14.diff.gz 137337 SHA256:bb74d47b8297b4b35a6b22673c48be40d79186298d6efd174af54445faaed3d9
+$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u15
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.dsc' bind9_9.9.5.dfsg-9+deb8u15.dsc 3620 SHA256:1e90d3bdd8394b9f96aa494a0f5146ab52bc8a6c712cda9508f881dd9a0b28c1
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.diff.gz' bind9_9.9.5.dfsg-9+deb8u15.diff.gz 138089 SHA256:0e189a414fe9e73617e6ecdb20b4517d718c23e565cead79146e3c95aa886135
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u14/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binfmt-support=2.1.5-1`
 
@@ -2222,25 +2222,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mono=5.4.1.6-0xamarin1+debian8b1`
+### `dpkg` source package: `mono=5.4.1.7-0xamarin5+debian8b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-btls-interface4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-corlib4.5-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-i18n-west4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-i18n4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-security4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-system-configuration4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-system-security4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-system-xml4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `libmono-system4.0-cil=5.4.1.6-0xamarin1+debian8b1`
-- `mono-4.0-gac=5.4.1.6-0xamarin1+debian8b1`
-- `mono-gac=5.4.1.6-0xamarin1+debian8b1`
-- `mono-runtime=5.4.1.6-0xamarin1+debian8b1`
-- `mono-runtime-common=5.4.1.6-0xamarin1+debian8b1`
-- `mono-runtime-sgen=5.4.1.6-0xamarin1+debian8b1`
+- `ca-certificates-mono=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-btls-interface4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-corlib4.5-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-i18n-west4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-i18n4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-security4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-system-configuration4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-system-security4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-system-xml4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `libmono-system4.0-cil=5.4.1.7-0xamarin5+debian8b1`
+- `mono-4.0-gac=5.4.1.7-0xamarin5+debian8b1`
+- `mono-gac=5.4.1.7-0xamarin5+debian8b1`
+- `mono-runtime=5.4.1.7-0xamarin5+debian8b1`
+- `mono-runtime-common=5.4.1.7-0xamarin5+debian8b1`
+- `mono-runtime-sgen=5.4.1.7-0xamarin5+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
 
@@ -2264,10 +2264,10 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mono=5.4.1.6-0xamarin1+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.6-0xamarin1+debian8b1.dsc' mono_5.4.1.6-0xamarin1+debian8b1.dsc 19091 SHA256:1b87ac7b0ec5900e22931bae9f2c71ab6a3a1f07d3b2ec9c4214368d25e3e913
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.6.orig.tar.bz2' mono_5.4.1.6.orig.tar.bz2 204934321 SHA256:bdfda0fe9ad5ce20bb2cf9e9bf28fed40f324141297479824e1f65d97da565df
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.6-0xamarin1+debian8b1.debian.tar.xz' mono_5.4.1.6-0xamarin1+debian8b1.debian.tar.xz 148848 SHA256:28957c1e6171378a7c28b19843514d9ca4e8b463e4a36333258934b5859140a1
+$ apt-get source -qq --print-uris mono=5.4.1.7-0xamarin5+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7-0xamarin5+debian8b1.dsc' mono_5.4.1.7-0xamarin5+debian8b1.dsc 19091 SHA256:73bb9286d2f4f1450bac05226c3e40bb463a85d54a6e7c8a7851a043832d6091
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7.orig.tar.bz2' mono_5.4.1.7.orig.tar.bz2 204987567 SHA256:543d9ec2ccebad9bb8425b22e10271f13d9512487c0e1578eeccdb1b8dc6a055
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7-0xamarin5+debian8b1.debian.tar.xz' mono_5.4.1.7-0xamarin5+debian8b1.debian.tar.xz 148672 SHA256:b22506d42aac777697573c63d1068f0615fc51ac49636809926e27e8d280cefd
 ```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
