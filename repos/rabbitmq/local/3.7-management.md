@@ -600,10 +600,6 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/erlang/1:20.1.7+dfsg-1/
-
 
 ### `dpkg` source package: `expat=2.2.0-2+deb9u1`
 
