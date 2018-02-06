@@ -20,6 +20,15 @@
 -	[`nextcloud:12.0-fpm`](#nextcloud120-fpm)
 -	[`nextcloud:12-apache`](#nextcloud12-apache)
 -	[`nextcloud:12-fpm`](#nextcloud12-fpm)
+-	[`nextcloud:13`](#nextcloud13)
+-	[`nextcloud:13.0`](#nextcloud130)
+-	[`nextcloud:13.0.0`](#nextcloud1300)
+-	[`nextcloud:13.0.0-apache`](#nextcloud1300-apache)
+-	[`nextcloud:13.0.0-fpm`](#nextcloud1300-fpm)
+-	[`nextcloud:13.0-apache`](#nextcloud130-apache)
+-	[`nextcloud:13.0-fpm`](#nextcloud130-fpm)
+-	[`nextcloud:13-apache`](#nextcloud13-apache)
+-	[`nextcloud:13-fpm`](#nextcloud13-fpm)
 -	[`nextcloud:apache`](#nextcloudapache)
 -	[`nextcloud:fpm`](#nextcloudfpm)
 -	[`nextcloud:latest`](#nextcloudlatest)
@@ -21017,6 +21026,42 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 06 Feb 2018 00:15:15 GMT  
 		Size: 785.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:13`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.0`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.0-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.0-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13-fpm`
+
+**does not exist** (yet?)
 
 ## `nextcloud:apache`
 
