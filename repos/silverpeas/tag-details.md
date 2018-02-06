@@ -2,30 +2,30 @@
 
 # Tags of `silverpeas`
 
--	[`silverpeas:6.0-beta1`](#silverpeas60-beta1)
+-	[`silverpeas:6.0`](#silverpeas60)
 -	[`silverpeas:latest`](#silverpeaslatest)
 
-## `silverpeas:6.0-beta1`
+## `silverpeas:6.0`
 
 ```console
-$ docker pull silverpeas@sha256:c50f30dda7d82c23cd53f3c93739207a0745e389b64666f4ef1c3b8cf7e477f4
+$ docker pull silverpeas@sha256:7223cef9480bf1a7ba058dbadd27139c0f530ce3bc712d0d3c7dff24133054d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
-### `silverpeas:6.0-beta1` - linux; amd64
+### `silverpeas:6.0` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:bae1740ee6fb02a31555c71cb0d14b33f9b542d0031480baf12e18bd1013312e
+$ docker pull silverpeas@sha256:017fca3933b6b33da2c48aa109e86b8072e440bda828be5b925f601c78e972cd
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **962.0 MB (961994199 bytes)**  
+-	Total Size: **987.2 MB (987160187 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0cc3958485b327c8bd3fb8ee6d762eccd8b64da3071aa44b3c3094b8d8cf75e7`
+-	Image ID: `sha256:c0b8ee914929970ab950410a1bf1206ff5124406e6ba999ec1f25d05991435d1`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
@@ -68,31 +68,31 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV SILVERPEAS_HOME=/opt/silverpeas
 # Fri, 26 Jan 2018 00:09:03 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Fri, 26 Jan 2018 00:09:03 GMT
-ENV SILVERPEAS_VERSION=6.0-beta1
-# Fri, 26 Jan 2018 00:09:04 GMT
+# Mon, 05 Feb 2018 23:47:06 GMT
+ENV SILVERPEAS_VERSION=6.0
+# Mon, 05 Feb 2018 23:47:06 GMT
 ENV WILDFLY_VERSION=10.1.0
-# Fri, 26 Jan 2018 00:09:04 GMT
-LABEL name=Silverpeas 6 description=Image to install and to run Silverpeas 6 vendor=Silverpeas version=6.0-beta1 build=1
-# Fri, 26 Jan 2018 00:09:25 GMT
+# Mon, 05 Feb 2018 23:47:07 GMT
+LABEL name=Silverpeas 6 description=Image to install and to run Silverpeas 6 vendor=Silverpeas version=6.0 build=1
+# Mon, 05 Feb 2018 23:47:30 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc http://download.jboss.org/wildfly/${WILDFLY_VERSION}.Final/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Fri, 26 Jan 2018 00:22:39 GMT
+# Mon, 05 Feb 2018 23:47:30 GMT
 COPY file:7acc9852c7701a8ead9e5fcf67506fb9ceaa5e6217c62d6e9ec23a111f2c5ba1 in /root/.m2/ 
-# Fri, 26 Jan 2018 00:22:40 GMT
+# Mon, 05 Feb 2018 23:47:30 GMT
 WORKDIR /opt/silverpeas/bin
-# Fri, 26 Jan 2018 00:22:40 GMT
+# Mon, 05 Feb 2018 23:47:31 GMT
 COPY file:b415fb4bfb5d5668057310fcef877a1a88be66b493d3770d113ab7326856a7da in /opt/ 
-# Fri, 26 Jan 2018 00:22:40 GMT
+# Mon, 05 Feb 2018 23:47:31 GMT
 COPY file:f79ce1fdaf6c3f3f07123c625be5f84429c455b2eac9b963766454fbd769afe6 in /opt/silverpeas/configuration/silverpeas/ 
-# Fri, 26 Jan 2018 00:26:15 GMT
+# Mon, 05 Feb 2018 23:50:42 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ./silverpeas assemble   && rm ../log/build-*   && touch .install
-# Fri, 26 Jan 2018 00:31:07 GMT
+# Mon, 05 Feb 2018 23:50:44 GMT
 EXPOSE 8000/tcp 9990/tcp
-# Fri, 26 Jan 2018 00:31:08 GMT
+# Mon, 05 Feb 2018 23:50:45 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/xmlcomponents/workflows]
-# Fri, 26 Jan 2018 00:31:09 GMT
+# Mon, 05 Feb 2018 23:50:45 GMT
 CMD ["/opt/run.sh"]
 ```
 
@@ -133,25 +133,25 @@ CMD ["/opt/run.sh"]
 		Last Modified: Fri, 26 Jan 2018 00:31:37 GMT  
 		Size: 845.4 KB (845410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:811198d548e9226552d078d6631d943a152b70aaa6db868cbdfe4edb4e92668a`  
-		Last Modified: Fri, 26 Jan 2018 00:31:41 GMT  
-		Size: 139.2 MB (139211148 bytes)  
+	-	`sha256:cc236d1c5d95debaa18e9f25638f2243ccc18acb7fd3d2a69a2288bccb6cda5a`  
+		Last Modified: Mon, 05 Feb 2018 23:51:24 GMT  
+		Size: 144.3 MB (144294039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6894d2734ca543df8aa468a05abd61a63f152414ed2d99f92f672ec621217ff`  
-		Last Modified: Fri, 26 Jan 2018 00:31:28 GMT  
-		Size: 406.0 B  
+	-	`sha256:91a14277cb8fd1a879ca69c212d484450de2a208898bbcfb5ea3c910e6dee67e`  
+		Last Modified: Mon, 05 Feb 2018 23:51:15 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44733292aeb1ca2c44f2b3d9ad7d61788efbd6718040472a960eb124b384c83d`  
-		Last Modified: Fri, 26 Jan 2018 00:31:28 GMT  
+	-	`sha256:6ef6186ed51beaa11b3a8b0390ee6111605cd9874426ac2eb81fc97e7f0c0a05`  
+		Last Modified: Mon, 05 Feb 2018 23:51:15 GMT  
 		Size: 809.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e318d47a79b2317b6bf69e113892295e16fd01e25b5b73061d001529ccc1505`  
-		Last Modified: Fri, 26 Jan 2018 00:31:29 GMT  
-		Size: 385.0 B  
+	-	`sha256:19e9ad0115d8f3ae51bc66723a6092da97092b8f0f5aa22190993f4868812e9c`  
+		Last Modified: Mon, 05 Feb 2018 23:51:15 GMT  
+		Size: 383.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ca7d68f83128902fc4805dbac93cf2eacc017970c6ad3ef2d3bf1279cdbe67`  
-		Last Modified: Fri, 26 Jan 2018 00:32:02 GMT  
-		Size: 567.9 MB (567928557 bytes)  
+	-	`sha256:52ee68a0effc7677bc6b0ff5d4f8254343d1e435bd214131925f82c9853c2fae`  
+		Last Modified: Mon, 05 Feb 2018 23:51:49 GMT  
+		Size: 588.0 MB (588011659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `silverpeas:latest`
