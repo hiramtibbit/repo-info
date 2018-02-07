@@ -1458,21 +1458,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-1.dsc' gnupg2_2.2.4-1.dsc 3701 SHA256:b660f8e7e91d93131ad35834726d1835570b1c8ad5e1e197dfb22e6f225c4db7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA256:30dd26e12b451e8f6799ba3a81449ed18db3d3e747820b237a39745ab264c899
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-1.debian.tar.bz2' gnupg2_2.2.4-1.debian.tar.bz2 68507 SHA256:9518577bd2c8e59251b59c2e3a96c9eb2efa6295e74529c66aeafdf1d7e5315b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.4-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.4-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.16-1`
 
