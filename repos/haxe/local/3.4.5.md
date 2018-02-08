@@ -1,17 +1,18 @@
-# `haxe:3.4.4-stretch`
+# `haxe:3.4.5-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:55883ad13929e0e26842bb9def815bf7b6d732fc65bee66e75259649c94a9b8f`
-- Created: `2017-12-28T19:14:00.360112753Z`
-- Virtual Size: ~ 309.04 Mb  
+- Image ID: `sha256:3235016ac91502aba984b330ec44a471731e4de356e8fa6a0083c9cfae173808`
+- Created: `2018-02-06T18:13:04.224087977Z`
+- Virtual Size: ~ 307.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["haxe"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NEKO_VERSION=2.2.0`
-  - `HAXE_VERSION=3.4.4`
+  - `HAXE_VERSION=3.4.5`
+  - `HAXE_STD_PATH=/usr/local/share/haxe/std`
 
 ## `dpkg` (`.deb`-based packages)
 
