@@ -36,7 +36,7 @@
 ## `nextcloud:11`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -406,14 +406,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -482,23 +482,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -559,38 +559,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -659,23 +659,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -736,38 +736,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -812,47 +812,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -893,45 +893,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11` - linux; ppc64le
@@ -1291,7 +1291,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11.0`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1661,14 +1661,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11.0` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1737,23 +1737,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1814,38 +1814,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1914,23 +1914,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1991,38 +1991,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2067,47 +2067,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2148,45 +2148,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0` - linux; ppc64le
@@ -2546,7 +2546,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11.0.7`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2916,14 +2916,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11.0.7` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2992,23 +2992,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3069,38 +3069,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3169,23 +3169,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3246,38 +3246,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3322,47 +3322,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3403,45 +3403,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7` - linux; ppc64le
@@ -3801,7 +3801,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11.0.7-apache`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4171,14 +4171,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11.0.7-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4247,23 +4247,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4324,38 +4324,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4424,23 +4424,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4501,38 +4501,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7-apache` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4577,47 +4577,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4658,45 +4658,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7-apache` - linux; ppc64le
@@ -5056,7 +5056,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11.0.7-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:6d07168dc8092768aecffe57147afeb32361514b014102cc318a93e5f0903cf0
+$ docker pull nextcloud@sha256:d7a2509a3dea58c0d6390e1975fa2401d319a6e0b706dcc00ec7437e2c7f9aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5350,14 +5350,14 @@ CMD ["php-fpm"]
 ### `nextcloud:11.0.7-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:2df3cb1c35164816e10a8399c6e499a1f01be421f9f3802037b0c3169de4eeb9
+$ docker pull nextcloud@sha256:1aae757e8db6346c81935fd07446d098010bd4befe90b998500031332319586e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.3 MB (201345769 bytes)**  
+-	Total Size: **201.8 MB (201812901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60b162f4f72f4cb52c77914dbf5341dfb4112f6c2af0e1a4173828e13f40cc38`
+-	Image ID: `sha256:36fc86c6f8637790eabda3052e7e7be3c64ab27c9ac6901a80a916c48d36b70c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -5410,21 +5410,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:57:47 GMT
+# Thu, 08 Feb 2018 04:20:45 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:58:07 GMT
+# Thu, 08 Feb 2018 04:21:06 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:58:15 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:58:20 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 CMD ["php-fpm"]
 ```
 
@@ -5469,34 +5469,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:236b78d09f06da43f230df61ceef0fd0229523ac79f1e72ef8809cec7bf6f528`  
-		Last Modified: Wed, 07 Feb 2018 14:04:29 GMT  
-		Size: 47.8 MB (47753573 bytes)  
+	-	`sha256:f4045fcb06744de5f4d08bc7316617430002a93adc78f561197718640f88128a`  
+		Last Modified: Thu, 08 Feb 2018 04:25:36 GMT  
+		Size: 47.8 MB (47753567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b64038df57e802a9542706246a91176df528ac6182fb0f6b0d7f3575ed75f20`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:d0caec766057e7fabc11e900e6a32d3f6396e6d55a27997d156c068b870632ea`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9826d3119557ebf41bdab992673979529e2aec92aedde36c4dc369397e2fe46d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:0c393ac663aa47874b87c56a07335258a7d8c5f061cc61f50e2f9d110648b98c`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:b81f8a13981e658b1a446eb2cab15fdc47c799da0aa5bb2271ef87371e6dc47f
+$ docker pull nextcloud@sha256:24967aa74e45988a81b4cfbc479176430496888bc8d613b81a6fa3db89c8f7f0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.4 MB (204446653 bytes)**  
+-	Total Size: **205.0 MB (204958872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144bbea08d869f8cded62dba5ea5bfe860d608a24ce58a627a185121c35bb58d`
+-	Image ID: `sha256:49dcd04e69ecf1467422449acf3c4df43323b9f3cc6ff6bb0c83705a15683152`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -5549,21 +5549,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:19:29 GMT
+# Thu, 08 Feb 2018 04:14:19 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:19:58 GMT
+# Thu, 08 Feb 2018 04:14:45 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:20:06 GMT
+# Thu, 08 Feb 2018 04:14:46 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:20:07 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:49 GMT
 CMD ["php-fpm"]
 ```
 
@@ -5608,21 +5608,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b04f10dc18bd57afcd33e748eb84cca2bddba4967f800fead38390685ef02ec`  
-		Last Modified: Wed, 07 Feb 2018 05:28:39 GMT  
+	-	`sha256:506f0565f666c1c667a54a303f460f859c055513f6e19c3a8ab6d4068e892e5e`  
+		Last Modified: Thu, 08 Feb 2018 04:20:24 GMT  
 		Size: 47.8 MB (47753675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f74a27429b5523154a6f9f2cac8f35b0fb8e103f4853aba6a342d5e020ec2810`  
-		Last Modified: Wed, 07 Feb 2018 05:28:19 GMT  
-		Size: 999.0 B  
+	-	`sha256:a586429e8a1df2d075f5c2c51b1f1b2494d2dae6f4aa12b7b5b35f07f8493f34`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75818ccedaff0dc97a1978119e8beec6e6162d77063531e4308f1990ecc3feda`  
-		Last Modified: Wed, 07 Feb 2018 05:28:18 GMT  
-		Size: 789.0 B  
+	-	`sha256:2400e8fade813ecb751955b2a27a2d74577052bca0fec2b2075b390f18099c65`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 785.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0.7-fpm` - linux; 386
@@ -6045,7 +6045,7 @@ CMD ["php-fpm"]
 ## `nextcloud:11.0-apache`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6415,14 +6415,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11.0-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -6491,23 +6491,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -6568,38 +6568,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -6668,23 +6668,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -6745,38 +6745,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0-apache` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -6821,47 +6821,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -6902,45 +6902,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0-apache` - linux; ppc64le
@@ -7300,7 +7300,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11.0-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:6d07168dc8092768aecffe57147afeb32361514b014102cc318a93e5f0903cf0
+$ docker pull nextcloud@sha256:d7a2509a3dea58c0d6390e1975fa2401d319a6e0b706dcc00ec7437e2c7f9aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7594,14 +7594,14 @@ CMD ["php-fpm"]
 ### `nextcloud:11.0-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:2df3cb1c35164816e10a8399c6e499a1f01be421f9f3802037b0c3169de4eeb9
+$ docker pull nextcloud@sha256:1aae757e8db6346c81935fd07446d098010bd4befe90b998500031332319586e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.3 MB (201345769 bytes)**  
+-	Total Size: **201.8 MB (201812901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60b162f4f72f4cb52c77914dbf5341dfb4112f6c2af0e1a4173828e13f40cc38`
+-	Image ID: `sha256:36fc86c6f8637790eabda3052e7e7be3c64ab27c9ac6901a80a916c48d36b70c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -7654,21 +7654,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:57:47 GMT
+# Thu, 08 Feb 2018 04:20:45 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:58:07 GMT
+# Thu, 08 Feb 2018 04:21:06 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:58:15 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:58:20 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 CMD ["php-fpm"]
 ```
 
@@ -7713,34 +7713,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:236b78d09f06da43f230df61ceef0fd0229523ac79f1e72ef8809cec7bf6f528`  
-		Last Modified: Wed, 07 Feb 2018 14:04:29 GMT  
-		Size: 47.8 MB (47753573 bytes)  
+	-	`sha256:f4045fcb06744de5f4d08bc7316617430002a93adc78f561197718640f88128a`  
+		Last Modified: Thu, 08 Feb 2018 04:25:36 GMT  
+		Size: 47.8 MB (47753567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b64038df57e802a9542706246a91176df528ac6182fb0f6b0d7f3575ed75f20`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:d0caec766057e7fabc11e900e6a32d3f6396e6d55a27997d156c068b870632ea`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9826d3119557ebf41bdab992673979529e2aec92aedde36c4dc369397e2fe46d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:0c393ac663aa47874b87c56a07335258a7d8c5f061cc61f50e2f9d110648b98c`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:b81f8a13981e658b1a446eb2cab15fdc47c799da0aa5bb2271ef87371e6dc47f
+$ docker pull nextcloud@sha256:24967aa74e45988a81b4cfbc479176430496888bc8d613b81a6fa3db89c8f7f0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.4 MB (204446653 bytes)**  
+-	Total Size: **205.0 MB (204958872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144bbea08d869f8cded62dba5ea5bfe860d608a24ce58a627a185121c35bb58d`
+-	Image ID: `sha256:49dcd04e69ecf1467422449acf3c4df43323b9f3cc6ff6bb0c83705a15683152`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -7793,21 +7793,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:19:29 GMT
+# Thu, 08 Feb 2018 04:14:19 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:19:58 GMT
+# Thu, 08 Feb 2018 04:14:45 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:20:06 GMT
+# Thu, 08 Feb 2018 04:14:46 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:20:07 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:49 GMT
 CMD ["php-fpm"]
 ```
 
@@ -7852,21 +7852,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b04f10dc18bd57afcd33e748eb84cca2bddba4967f800fead38390685ef02ec`  
-		Last Modified: Wed, 07 Feb 2018 05:28:39 GMT  
+	-	`sha256:506f0565f666c1c667a54a303f460f859c055513f6e19c3a8ab6d4068e892e5e`  
+		Last Modified: Thu, 08 Feb 2018 04:20:24 GMT  
 		Size: 47.8 MB (47753675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f74a27429b5523154a6f9f2cac8f35b0fb8e103f4853aba6a342d5e020ec2810`  
-		Last Modified: Wed, 07 Feb 2018 05:28:19 GMT  
-		Size: 999.0 B  
+	-	`sha256:a586429e8a1df2d075f5c2c51b1f1b2494d2dae6f4aa12b7b5b35f07f8493f34`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75818ccedaff0dc97a1978119e8beec6e6162d77063531e4308f1990ecc3feda`  
-		Last Modified: Wed, 07 Feb 2018 05:28:18 GMT  
-		Size: 789.0 B  
+	-	`sha256:2400e8fade813ecb751955b2a27a2d74577052bca0fec2b2075b390f18099c65`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 785.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11.0-fpm` - linux; 386
@@ -8289,7 +8289,7 @@ CMD ["php-fpm"]
 ## `nextcloud:11-apache`
 
 ```console
-$ docker pull nextcloud@sha256:0ec6115278ae41c63f1905f1d4416ef5c04a722aff784c2a0ea7f09fa3f3be57
+$ docker pull nextcloud@sha256:8481c91031bbb0944120930be2cb3b683de50f4828f3ff00e87a529a63cf214c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8659,14 +8659,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:11-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:48714435314236d5828e4c39ae69b46421d177419f0aa8e105cb3c64fd9d69c9
+$ docker pull nextcloud@sha256:314ac44cf7beaf92915e4f63d3e6cd10421b2e1f4d5a3202cfe14c897091dce6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.6 MB (205632828 bytes)**  
+-	Total Size: **206.1 MB (206099927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02568deafa418564ba6f71a7075f2a06234bf2bd0085b8a21b9435532bc3cc47`
+-	Image ID: `sha256:550a213c25a013c14ff6ed284f33d45a260223705aa147aee2d4864a8f9a8a21`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -8735,23 +8735,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:52 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:51:17 GMT
+# Thu, 08 Feb 2018 04:14:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:51:19 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:51:21 GMT
+# Thu, 08 Feb 2018 04:14:15 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:51:22 GMT
+# Thu, 08 Feb 2018 04:14:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -8812,38 +8812,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4849bdfc0cfe5e37e1e2f67e55bb5bd2837843e3848a16eab7baf6541b2ae73`  
-		Last Modified: Wed, 07 Feb 2018 14:03:00 GMT  
-		Size: 47.8 MB (47753567 bytes)  
+	-	`sha256:39c3963f4fb9a7373d92fea8c895038132a2bfb206a29b746de597b9a8e5cbc2`  
+		Last Modified: Thu, 08 Feb 2018 04:24:36 GMT  
+		Size: 47.8 MB (47753573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b07c062f610ddb61684e44b691bff8f4c5024e52dbb6d7ece87ed9471c90ab3`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
+	-	`sha256:008d194e061621422c141013fa7d0dcb503b11d1d6542d5c1aa6d5d3953655bb`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84b6e2cb0b5972e157c8381f941d49b30e91d9eb220f265a8c221ae382299b44`  
-		Last Modified: Wed, 07 Feb 2018 14:02:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:93415fa3ae7f597705594e4eb6cdd92d2ef4232f07abf530dc61c1f1a00f8621`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:dd8281c62550fe65af301bebd4989f619a359d9145232c5fb90f6b015b0eb44c
+$ docker pull nextcloud@sha256:b14e9b81274bbd10ca78b3320eb49a69ef19c94eb9367aa350d0cfd8af01520b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.8 MB (208845277 bytes)**  
+-	Total Size: **209.4 MB (209357589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d98eb30a0468a32212844b29642c30701bc682688641f9cb12bf0b388ef353a7`
+-	Image ID: `sha256:ef31e5fc4ae501fc508cd8b23a2172b4acbd6c4b53d2ea5f5f7131cc80bafcba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -8912,23 +8912,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:09:52 GMT
+# Thu, 08 Feb 2018 04:05:09 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:10:27 GMT
+# Thu, 08 Feb 2018 04:05:38 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:10:29 GMT
+# Thu, 08 Feb 2018 04:05:40 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:10:30 GMT
+# Thu, 08 Feb 2018 04:05:42 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:10:31 GMT
+# Thu, 08 Feb 2018 04:05:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:10:32 GMT
+# Thu, 08 Feb 2018 04:05:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -8989,38 +8989,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4174effb70a4a1fbbd6fe4f5a0fa25cf489442f95f75b5f8083eb8722f985128`  
-		Last Modified: Wed, 07 Feb 2018 05:26:36 GMT  
-		Size: 47.8 MB (47753676 bytes)  
+	-	`sha256:a298eddee429ab33aad3cc9c408bd7c69238d834038c9cc51c43ce11ecf4df1d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:48 GMT  
+		Size: 47.8 MB (47753707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6fa3f4db4746089e554e831ee58ff5311083927bdb8b4c5c579e7018f895aa7`  
-		Last Modified: Wed, 07 Feb 2018 05:26:16 GMT  
+	-	`sha256:42ce1c7f9252f391e9018b962121d393090cc2790cab4e5e81ae936ee985f8a8`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81519a93f97c2f335a78fcdcfc66fb5703a9ca54e49822a8879c80b5206de69`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
+	-	`sha256:f72b38ac6918eca9976aa56d37819ca2e0ed529cc43e9142bb55e024a59b399a`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11-apache` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:d78808c0d755666de72cc07da9ac6a9fe31dae5789ca658ecaae21a430e64803
+$ docker pull nextcloud@sha256:27c610444f41adb3ee43a0a8d4d7b366eea69ded1622a4bad2b87d961a3f0610
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233019811 bytes)**  
+-	Total Size: **233.6 MB (233583333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74e06de0d4a470e127ef672535b803b63bf18a1d862a48114d537442d4e2fd46`
+-	Image ID: `sha256:c017e2173dbd571a6aa1d4192e883f0c9236349e3181c0c73484501f80791deb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -9065,47 +9065,47 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 09 Jan 2018 14:44:03 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_VERSION=7.1.13
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror
-# Tue, 09 Jan 2018 14:44:04 GMT
-ENV PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10 PHP_MD5=
-# Tue, 09 Jan 2018 14:44:45 GMT
+# Wed, 07 Feb 2018 19:17:31 GMT
+ENV PHP_VERSION=7.1.14
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror
+# Wed, 07 Feb 2018 19:17:32 GMT
+ENV PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779 PHP_MD5=
+# Wed, 07 Feb 2018 19:18:09 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Tue, 09 Jan 2018 14:44:53 GMT
+# Wed, 07 Feb 2018 19:25:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:49:41 GMT
+# Wed, 07 Feb 2018 19:30:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:03 GMT
+# Wed, 07 Feb 2018 19:41:48 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 14:55:04 GMT
+# Wed, 07 Feb 2018 19:41:49 GMT
 EXPOSE 80/tcp
-# Tue, 09 Jan 2018 14:55:05 GMT
+# Wed, 07 Feb 2018 19:41:50 GMT
 CMD ["apache2-foreground"]
-# Tue, 06 Feb 2018 09:58:50 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Tue, 06 Feb 2018 09:58:51 GMT
+# Thu, 08 Feb 2018 01:48:35 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 01:52:18 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 RUN a2enmod rewrite
-# Tue, 06 Feb 2018 09:58:52 GMT
+# Thu, 08 Feb 2018 01:52:20 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Tue, 06 Feb 2018 09:59:12 GMT
+# Thu, 08 Feb 2018 01:52:43 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:44 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Tue, 06 Feb 2018 09:59:13 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Feb 2018 09:59:14 GMT
+# Thu, 08 Feb 2018 01:52:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -9146,45 +9146,45 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 15:06:29 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0919698e5dbc4031da03dfab8e3bd86984dac987f513c1a4d5474e0ec70c105e`  
-		Last Modified: Tue, 09 Jan 2018 22:27:16 GMT  
-		Size: 12.5 MB (12547489 bytes)  
+	-	`sha256:d30fb7509953fd9e2faed333d87f307dd862fcb91d08256c5691739c45cfa1f8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:46 GMT  
+		Size: 12.6 MB (12550856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ec6e83a31753b3285758e0a715e4b41fbfa931eade4a0e69ee37a3dd99f840`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 502.0 B  
+	-	`sha256:8e393a6edc562f68910e519b23b3f0e287b9273ad68d1e6c1de0b821ce47c8b1`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 503.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:459a0add8a06f4f12f28007f31032c2938627b2a1fb5a48658bba37bb072b4bd`  
-		Last Modified: Tue, 09 Jan 2018 22:27:20 GMT  
-		Size: 14.7 MB (14657175 bytes)  
+	-	`sha256:d8270011ee0db559687d98ed4c711267bd9486573bf5d1dbcbc25c3f107bd58f`  
+		Last Modified: Wed, 07 Feb 2018 23:23:51 GMT  
+		Size: 16.2 MB (16181545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f0c691b41115790f5e82e7fbabae70a979eabd3460838f1579d6ca90e6ce9b`  
-		Last Modified: Tue, 09 Jan 2018 22:27:14 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:3c700decae0aa85e4bb8327667db7f920b50653f3ee3d8c0811b5c869501bdac`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb9a3b1f21b40df00cccfcf3226b759cc8697111bc22c64161f1be29e4e650ba`  
-		Last Modified: Tue, 09 Jan 2018 22:27:13 GMT  
-		Size: 905.0 B  
+	-	`sha256:938f4c92fff0a290124d59c4e40f8850923aa91c78bf8a78fac976fe75bab0b8`  
+		Last Modified: Wed, 07 Feb 2018 23:23:44 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea82bc087cab8c4b649aa59bd0ef2bbaec6cc29653c12a001d914243821ade72`  
-		Last Modified: Tue, 06 Feb 2018 10:49:45 GMT  
-		Size: 19.1 MB (19075510 bytes)  
+	-	`sha256:63a2a817dc9b71b3db9fed6ab37665b2ab35211890591c09650c32c9b9d94107`  
+		Last Modified: Thu, 08 Feb 2018 04:05:35 GMT  
+		Size: 18.1 MB (18111293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69221001cc6e0fbd6df51ca7260fccea2cbcba6f802039e60271c4700b84d3e3`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 314.0 B  
+	-	`sha256:d641862fc97cd0f7e16ebb2a9f3bef408ac0c4674e51e1fa5c64fdc432bf341c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85727d56f19916beecb4f805f864626d39e39ce6aed3b6075c1edde60c22e992`  
-		Last Modified: Tue, 06 Feb 2018 10:50:08 GMT  
-		Size: 47.8 MB (47753691 bytes)  
+	-	`sha256:565d2bb126f2e3a560842773a46fdb4b6747db8936a264278458cc876d3c12b2`  
+		Last Modified: Thu, 08 Feb 2018 04:05:56 GMT  
+		Size: 47.8 MB (47753688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d7d5bca30912d82164b0164db9d1d05df1763a9a3d8735f8ed1239f9d78b0f`  
-		Last Modified: Tue, 06 Feb 2018 10:49:39 GMT  
+	-	`sha256:23cdcc3b8849998ab68877dd2e91aa50d8b3ba4e84300d3645f6fd88789ec00d`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b8a23b3c58774bb239c04668c2fd126b0802f7ded486b36154d9383be9584e`  
-		Last Modified: Tue, 06 Feb 2018 10:49:40 GMT  
-		Size: 853.0 B  
+	-	`sha256:df59078199f01a5067f92ff53293f08b7f40d199a855323f2273c8bb97b4e12c`  
+		Last Modified: Thu, 08 Feb 2018 04:05:28 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11-apache` - linux; ppc64le
@@ -9544,7 +9544,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:11-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:6d07168dc8092768aecffe57147afeb32361514b014102cc318a93e5f0903cf0
+$ docker pull nextcloud@sha256:d7a2509a3dea58c0d6390e1975fa2401d319a6e0b706dcc00ec7437e2c7f9aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9838,14 +9838,14 @@ CMD ["php-fpm"]
 ### `nextcloud:11-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:2df3cb1c35164816e10a8399c6e499a1f01be421f9f3802037b0c3169de4eeb9
+$ docker pull nextcloud@sha256:1aae757e8db6346c81935fd07446d098010bd4befe90b998500031332319586e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.3 MB (201345769 bytes)**  
+-	Total Size: **201.8 MB (201812901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60b162f4f72f4cb52c77914dbf5341dfb4112f6c2af0e1a4173828e13f40cc38`
+-	Image ID: `sha256:36fc86c6f8637790eabda3052e7e7be3c64ab27c9ac6901a80a916c48d36b70c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -9898,21 +9898,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:57:47 GMT
+# Thu, 08 Feb 2018 04:20:45 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 13:58:07 GMT
+# Thu, 08 Feb 2018 04:21:06 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:58:15 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:58:20 GMT
+# Thu, 08 Feb 2018 04:21:08 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:58:21 GMT
+# Thu, 08 Feb 2018 04:21:09 GMT
 CMD ["php-fpm"]
 ```
 
@@ -9957,34 +9957,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:236b78d09f06da43f230df61ceef0fd0229523ac79f1e72ef8809cec7bf6f528`  
-		Last Modified: Wed, 07 Feb 2018 14:04:29 GMT  
-		Size: 47.8 MB (47753573 bytes)  
+	-	`sha256:f4045fcb06744de5f4d08bc7316617430002a93adc78f561197718640f88128a`  
+		Last Modified: Thu, 08 Feb 2018 04:25:36 GMT  
+		Size: 47.8 MB (47753567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b64038df57e802a9542706246a91176df528ac6182fb0f6b0d7f3575ed75f20`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:d0caec766057e7fabc11e900e6a32d3f6396e6d55a27997d156c068b870632ea`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9826d3119557ebf41bdab992673979529e2aec92aedde36c4dc369397e2fe46d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:11 GMT  
+	-	`sha256:0c393ac663aa47874b87c56a07335258a7d8c5f061cc61f50e2f9d110648b98c`  
+		Last Modified: Thu, 08 Feb 2018 04:25:21 GMT  
 		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:b81f8a13981e658b1a446eb2cab15fdc47c799da0aa5bb2271ef87371e6dc47f
+$ docker pull nextcloud@sha256:24967aa74e45988a81b4cfbc479176430496888bc8d613b81a6fa3db89c8f7f0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.4 MB (204446653 bytes)**  
+-	Total Size: **205.0 MB (204958872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144bbea08d869f8cded62dba5ea5bfe860d608a24ce58a627a185121c35bb58d`
+-	Image ID: `sha256:49dcd04e69ecf1467422449acf3c4df43323b9f3cc6ff6bb0c83705a15683152`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -10037,21 +10037,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:19:29 GMT
+# Thu, 08 Feb 2018 04:14:19 GMT
 ENV NEXTCLOUD_VERSION=11.0.7
-# Wed, 07 Feb 2018 05:19:58 GMT
+# Thu, 08 Feb 2018 04:14:45 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:20:06 GMT
+# Thu, 08 Feb 2018 04:14:46 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:20:07 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:20:17 GMT
+# Thu, 08 Feb 2018 04:14:49 GMT
 CMD ["php-fpm"]
 ```
 
@@ -10096,21 +10096,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b04f10dc18bd57afcd33e748eb84cca2bddba4967f800fead38390685ef02ec`  
-		Last Modified: Wed, 07 Feb 2018 05:28:39 GMT  
+	-	`sha256:506f0565f666c1c667a54a303f460f859c055513f6e19c3a8ab6d4068e892e5e`  
+		Last Modified: Thu, 08 Feb 2018 04:20:24 GMT  
 		Size: 47.8 MB (47753675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f74a27429b5523154a6f9f2cac8f35b0fb8e103f4853aba6a342d5e020ec2810`  
-		Last Modified: Wed, 07 Feb 2018 05:28:19 GMT  
-		Size: 999.0 B  
+	-	`sha256:a586429e8a1df2d075f5c2c51b1f1b2494d2dae6f4aa12b7b5b35f07f8493f34`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75818ccedaff0dc97a1978119e8beec6e6162d77063531e4308f1990ecc3feda`  
-		Last Modified: Wed, 07 Feb 2018 05:28:18 GMT  
-		Size: 789.0 B  
+	-	`sha256:2400e8fade813ecb751955b2a27a2d74577052bca0fec2b2075b390f18099c65`  
+		Last Modified: Thu, 08 Feb 2018 04:20:06 GMT  
+		Size: 785.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:11-fpm` - linux; 386
@@ -10533,7 +10533,7 @@ CMD ["php-fpm"]
 ## `nextcloud:12`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10903,14 +10903,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -10979,23 +10979,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -11056,38 +11056,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -11156,23 +11156,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -11233,25 +11233,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12` - linux; 386
@@ -11788,7 +11788,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12.0`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12158,14 +12158,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12.0` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -12234,23 +12234,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -12311,38 +12311,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -12411,23 +12411,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -12488,25 +12488,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0` - linux; 386
@@ -13043,7 +13043,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12.0.5`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13413,14 +13413,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12.0.5` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -13489,23 +13489,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -13566,38 +13566,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -13666,23 +13666,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -13743,25 +13743,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5` - linux; 386
@@ -14298,7 +14298,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12.0.5-apache`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14668,14 +14668,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12.0.5-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -14744,23 +14744,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -14821,38 +14821,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -14921,23 +14921,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -14998,25 +14998,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5-apache` - linux; 386
@@ -15553,7 +15553,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12.0.5-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:d2365e884ddf45b2cde23bbb6fb0086b834d72b361aafd53070627f1fa6546c9
+$ docker pull nextcloud@sha256:3f7970523a14d67c00caccbc62d1d006feee75d0ca7bc90d0bb876c0f7d70730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15847,14 +15847,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12.0.5-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:4f311f4242367ca22111625a167b5b10fa279f60134a407b3d6576206ea7904f
+$ docker pull nextcloud@sha256:67ea9bdc3e3a56ffbf883ef488ffb1f079079c726c6c090d9e81b75ea9e4f571
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202121084 bytes)**  
+-	Total Size: **202.6 MB (202588237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2500f83d57bdefde7594561c4cd396e732785a568d6e0543b5d0a995e0649f3`
+-	Image ID: `sha256:bb98caaec814edd8b693cb6856505d2984d3763b390ebd0714312a0d5d6b67d5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -15907,21 +15907,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:59:48 GMT
+# Thu, 08 Feb 2018 04:22:06 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 14:00:10 GMT
+# Thu, 08 Feb 2018 04:22:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:00:11 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:00:12 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:00:17 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:00:18 GMT
+# Thu, 08 Feb 2018 04:22:31 GMT
 CMD ["php-fpm"]
 ```
 
@@ -15966,34 +15966,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e52c662ebb4ebfbc36fed688cfeb83fed9eefec3284495e01ab5cf325ec8546`  
-		Last Modified: Wed, 07 Feb 2018 14:06:07 GMT  
-		Size: 48.5 MB (48528890 bytes)  
+	-	`sha256:c94066f288c7e0fd6c1fa79f1809cd1eac45f8efcab5ad4f48e13858ceb7a39c`  
+		Last Modified: Thu, 08 Feb 2018 04:27:19 GMT  
+		Size: 48.5 MB (48528902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2deaaae45b4c9b72899f0eefe4d54c8577c5ba9febc2405c0bb1fd12d7cc8a9c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 998.0 B  
+	-	`sha256:1f8703719ceda92ea893ae7774b7db6f62c7e0a4ac9db1a5a16917e00979e016`  
+		Last Modified: Thu, 08 Feb 2018 04:27:03 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ce79fe52667d8e1b1ca1e19896c20a5f871aaac5d2886adc4a3fe245b2f37c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 786.0 B  
+	-	`sha256:63663c2e5e4abcbecf4be01d03ff11497a63b6ad70ecb51e28583889bf526462`  
+		Last Modified: Thu, 08 Feb 2018 04:27:04 GMT  
+		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:8a07736e92540f6e8709a55e698929634bba6d1fa8d2aedea4363365230b8d37
+$ docker pull nextcloud@sha256:786ace063d88cefb3b4aaad5f0abf83268eeb36b9d3a1a66de4b3f54a2a3ad91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.2 MB (205221897 bytes)**  
+-	Total Size: **205.7 MB (205734160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a130e8fa884d133b2d552de7f91eab69c3cf73cbedf22874107faf71ae8aa56`
+-	Image ID: `sha256:4ae75cfa226f5ddf979cae3a676750eac1cc2660d1fee480b3aa09cad3977c20`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -16046,21 +16046,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:21:53 GMT
+# Thu, 08 Feb 2018 04:16:00 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:22:32 GMT
+# Thu, 08 Feb 2018 04:16:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:22:40 GMT
+# Thu, 08 Feb 2018 04:16:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:31 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:22:51 GMT
+# Thu, 08 Feb 2018 04:16:33 GMT
 CMD ["php-fpm"]
 ```
 
@@ -16105,21 +16105,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8efd43ce0e5df31d164e080c4c83cf706c2b465aedc6d9400860dda5b0e723c`  
-		Last Modified: Wed, 07 Feb 2018 05:32:12 GMT  
-		Size: 48.5 MB (48528919 bytes)  
+	-	`sha256:aab10cc95dd5baf89a967def8b4cc019a6ec8793a2993331c638bd5b8322d1d1`  
+		Last Modified: Thu, 08 Feb 2018 04:23:00 GMT  
+		Size: 48.5 MB (48528962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:845ec52554ab0cb0b4862e709bb82a967c3c229e95faaeaa6199c6c6b77ca63c`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
+	-	`sha256:9c3afb5dab8066682639d5cec6931338758643ffc6fccf422a3744b297d33f77`  
+		Last Modified: Thu, 08 Feb 2018 04:22:43 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab35d210ca8cbe0e6cbd7ee3dac4ddc36a50ac45b33672479a38946ee001255f`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
-		Size: 790.0 B  
+	-	`sha256:9ae322316852667b844949fdf68d77a41a30f3f7d1968ae6255cfacc3a536630`  
+		Last Modified: Thu, 08 Feb 2018 04:22:42 GMT  
+		Size: 786.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0.5-fpm` - linux; 386
@@ -16542,7 +16542,7 @@ CMD ["php-fpm"]
 ## `nextcloud:12.0-apache`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16912,14 +16912,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12.0-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -16988,23 +16988,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -17065,38 +17065,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -17165,23 +17165,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -17242,25 +17242,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0-apache` - linux; 386
@@ -17797,7 +17797,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12.0-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:d2365e884ddf45b2cde23bbb6fb0086b834d72b361aafd53070627f1fa6546c9
+$ docker pull nextcloud@sha256:3f7970523a14d67c00caccbc62d1d006feee75d0ca7bc90d0bb876c0f7d70730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18091,14 +18091,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12.0-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:4f311f4242367ca22111625a167b5b10fa279f60134a407b3d6576206ea7904f
+$ docker pull nextcloud@sha256:67ea9bdc3e3a56ffbf883ef488ffb1f079079c726c6c090d9e81b75ea9e4f571
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202121084 bytes)**  
+-	Total Size: **202.6 MB (202588237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2500f83d57bdefde7594561c4cd396e732785a568d6e0543b5d0a995e0649f3`
+-	Image ID: `sha256:bb98caaec814edd8b693cb6856505d2984d3763b390ebd0714312a0d5d6b67d5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -18151,21 +18151,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:59:48 GMT
+# Thu, 08 Feb 2018 04:22:06 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 14:00:10 GMT
+# Thu, 08 Feb 2018 04:22:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:00:11 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:00:12 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:00:17 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:00:18 GMT
+# Thu, 08 Feb 2018 04:22:31 GMT
 CMD ["php-fpm"]
 ```
 
@@ -18210,34 +18210,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e52c662ebb4ebfbc36fed688cfeb83fed9eefec3284495e01ab5cf325ec8546`  
-		Last Modified: Wed, 07 Feb 2018 14:06:07 GMT  
-		Size: 48.5 MB (48528890 bytes)  
+	-	`sha256:c94066f288c7e0fd6c1fa79f1809cd1eac45f8efcab5ad4f48e13858ceb7a39c`  
+		Last Modified: Thu, 08 Feb 2018 04:27:19 GMT  
+		Size: 48.5 MB (48528902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2deaaae45b4c9b72899f0eefe4d54c8577c5ba9febc2405c0bb1fd12d7cc8a9c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 998.0 B  
+	-	`sha256:1f8703719ceda92ea893ae7774b7db6f62c7e0a4ac9db1a5a16917e00979e016`  
+		Last Modified: Thu, 08 Feb 2018 04:27:03 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ce79fe52667d8e1b1ca1e19896c20a5f871aaac5d2886adc4a3fe245b2f37c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 786.0 B  
+	-	`sha256:63663c2e5e4abcbecf4be01d03ff11497a63b6ad70ecb51e28583889bf526462`  
+		Last Modified: Thu, 08 Feb 2018 04:27:04 GMT  
+		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:8a07736e92540f6e8709a55e698929634bba6d1fa8d2aedea4363365230b8d37
+$ docker pull nextcloud@sha256:786ace063d88cefb3b4aaad5f0abf83268eeb36b9d3a1a66de4b3f54a2a3ad91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.2 MB (205221897 bytes)**  
+-	Total Size: **205.7 MB (205734160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a130e8fa884d133b2d552de7f91eab69c3cf73cbedf22874107faf71ae8aa56`
+-	Image ID: `sha256:4ae75cfa226f5ddf979cae3a676750eac1cc2660d1fee480b3aa09cad3977c20`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -18290,21 +18290,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:21:53 GMT
+# Thu, 08 Feb 2018 04:16:00 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:22:32 GMT
+# Thu, 08 Feb 2018 04:16:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:22:40 GMT
+# Thu, 08 Feb 2018 04:16:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:31 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:22:51 GMT
+# Thu, 08 Feb 2018 04:16:33 GMT
 CMD ["php-fpm"]
 ```
 
@@ -18349,21 +18349,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8efd43ce0e5df31d164e080c4c83cf706c2b465aedc6d9400860dda5b0e723c`  
-		Last Modified: Wed, 07 Feb 2018 05:32:12 GMT  
-		Size: 48.5 MB (48528919 bytes)  
+	-	`sha256:aab10cc95dd5baf89a967def8b4cc019a6ec8793a2993331c638bd5b8322d1d1`  
+		Last Modified: Thu, 08 Feb 2018 04:23:00 GMT  
+		Size: 48.5 MB (48528962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:845ec52554ab0cb0b4862e709bb82a967c3c229e95faaeaa6199c6c6b77ca63c`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
+	-	`sha256:9c3afb5dab8066682639d5cec6931338758643ffc6fccf422a3744b297d33f77`  
+		Last Modified: Thu, 08 Feb 2018 04:22:43 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab35d210ca8cbe0e6cbd7ee3dac4ddc36a50ac45b33672479a38946ee001255f`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
-		Size: 790.0 B  
+	-	`sha256:9ae322316852667b844949fdf68d77a41a30f3f7d1968ae6255cfacc3a536630`  
+		Last Modified: Thu, 08 Feb 2018 04:22:42 GMT  
+		Size: 786.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12.0-fpm` - linux; 386
@@ -18786,7 +18786,7 @@ CMD ["php-fpm"]
 ## `nextcloud:12-apache`
 
 ```console
-$ docker pull nextcloud@sha256:fcde08155f18353833070bcce412c0ee1f9fe915166fc1124f6781348af5c0d0
+$ docker pull nextcloud@sha256:82b10c7db0bae3a7fb209ed1427359d48ff0aef6c17a17f91dc644266a0285ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19156,14 +19156,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:12-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:d1133806bd8765ebd45a67915c174901b9c6b7417f51a4f1bab92985e90039d2
+$ docker pull nextcloud@sha256:de333146d9d3ddea506fc7b335ce493136d0a49685c45aad07b38238f7b66e34
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.4 MB (206408170 bytes)**  
+-	Total Size: **206.9 MB (206875261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e61e135ad707f95b731f820bd40b495fd4f5256c6676d6fa6fa9066f15063e73`
+-	Image ID: `sha256:e6280b632eadaa8a81302e99f6eac4a6b402709d5366a2c4d37a3fbb5928b40a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -19232,23 +19232,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 13:58:51 GMT
+# Thu, 08 Feb 2018 04:21:32 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 13:59:15 GMT
+# Thu, 08 Feb 2018 04:21:53 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 13:59:18 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:55 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 13:59:24 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 13:59:25 GMT
+# Thu, 08 Feb 2018 04:21:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -19309,38 +19309,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5774bb7fb8f82d84082175dfdf6ee6c976e0d3fa2bfca08bf3582ebf83fb2825`  
-		Last Modified: Wed, 07 Feb 2018 14:05:08 GMT  
+	-	`sha256:46612357a2e4a644d8a117ce265e33d80a7f71d5918df8edbcf48048398f85b0`  
+		Last Modified: Thu, 08 Feb 2018 04:26:16 GMT  
 		Size: 48.5 MB (48528908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766b61f9be51e4dd53819c7ef2848b2d000de08404b746dc35527e1c0a36e37b`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 998.0 B  
+	-	`sha256:53934b595a296a5ef2c619c48bd42ac53ef67a0c20f9e6cefc63f82199b42acd`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869a94934f7e6748c120a77dedf7e9f6a894017c60828e38fa0d3a8753752d3d`  
-		Last Modified: Wed, 07 Feb 2018 14:04:51 GMT  
-		Size: 853.0 B  
+	-	`sha256:77ff68afe48f9090a7bb8a0375ca4e2cf6c69ddd84c82c5db8c9a8fa20a3c83f`  
+		Last Modified: Thu, 08 Feb 2018 04:25:59 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5e312ace0e7cc2fd09e88122badbdb54e175681c3b379d5b78d56effb1449f50
+$ docker pull nextcloud@sha256:5b25b1a9e3010a24e3c868470415a7613d58572a7825d11336c8908588e232fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.6 MB (209620581 bytes)**  
+-	Total Size: **210.1 MB (210132861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb2ecf938118f514d4dd51b6e82a3b11331f3b67e7fcc5353710cf1f135e3282`
+-	Image ID: `sha256:c7d655cd32dd9daf0a65401852c5c2b7f84b01e8c24fbfca89d7610818610373`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -19409,23 +19409,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:20:49 GMT
+# Thu, 08 Feb 2018 04:15:13 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:21:19 GMT
+# Thu, 08 Feb 2018 04:15:41 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:21:20 GMT
+# Thu, 08 Feb 2018 04:15:43 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:21:22 GMT
+# Thu, 08 Feb 2018 04:15:44 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:21:31 GMT
+# Thu, 08 Feb 2018 04:15:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:21:32 GMT
+# Thu, 08 Feb 2018 04:15:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -19486,25 +19486,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849758fef6def5cecd04d26ab1d585e19107563ae17cb78cc87e9c8eb145f6dc`  
-		Last Modified: Wed, 07 Feb 2018 05:29:58 GMT  
-		Size: 48.5 MB (48528980 bytes)  
+	-	`sha256:3db34bd5eef629bb45aeeb9523c364fe73c6e244ba5e8ce04c2d5e1e613c7894`  
+		Last Modified: Thu, 08 Feb 2018 04:21:23 GMT  
+		Size: 48.5 MB (48528981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fc4bbf7252e878eb346a9acb101056c7ca00431fb1f45cbe73c46e1350e9401`  
-		Last Modified: Wed, 07 Feb 2018 05:29:38 GMT  
+	-	`sha256:72281abc98f6d8aff2830d5d25217578c3c58856bb1427e141917f9f3fda675c`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0f5d334c9343675f3319dfe7593e419f870f83ecd210e4aaa4714a7d7af1ef`  
-		Last Modified: Wed, 07 Feb 2018 05:29:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:cd2bccb49c3ee80e0b0e1aa7ff0090e50910c4dce4884de15dabc1c36045abf7`  
+		Last Modified: Thu, 08 Feb 2018 04:21:04 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-apache` - linux; 386
@@ -20041,7 +20041,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:12-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:d2365e884ddf45b2cde23bbb6fb0086b834d72b361aafd53070627f1fa6546c9
+$ docker pull nextcloud@sha256:3f7970523a14d67c00caccbc62d1d006feee75d0ca7bc90d0bb876c0f7d70730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20335,14 +20335,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:4f311f4242367ca22111625a167b5b10fa279f60134a407b3d6576206ea7904f
+$ docker pull nextcloud@sha256:67ea9bdc3e3a56ffbf883ef488ffb1f079079c726c6c090d9e81b75ea9e4f571
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.1 MB (202121084 bytes)**  
+-	Total Size: **202.6 MB (202588237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2500f83d57bdefde7594561c4cd396e732785a568d6e0543b5d0a995e0649f3`
+-	Image ID: `sha256:bb98caaec814edd8b693cb6856505d2984d3763b390ebd0714312a0d5d6b67d5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -20395,21 +20395,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:59:48 GMT
+# Thu, 08 Feb 2018 04:22:06 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 14:00:10 GMT
+# Thu, 08 Feb 2018 04:22:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:00:11 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:00:12 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:00:17 GMT
+# Thu, 08 Feb 2018 04:22:30 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:00:18 GMT
+# Thu, 08 Feb 2018 04:22:31 GMT
 CMD ["php-fpm"]
 ```
 
@@ -20454,34 +20454,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e52c662ebb4ebfbc36fed688cfeb83fed9eefec3284495e01ab5cf325ec8546`  
-		Last Modified: Wed, 07 Feb 2018 14:06:07 GMT  
-		Size: 48.5 MB (48528890 bytes)  
+	-	`sha256:c94066f288c7e0fd6c1fa79f1809cd1eac45f8efcab5ad4f48e13858ceb7a39c`  
+		Last Modified: Thu, 08 Feb 2018 04:27:19 GMT  
+		Size: 48.5 MB (48528902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2deaaae45b4c9b72899f0eefe4d54c8577c5ba9febc2405c0bb1fd12d7cc8a9c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 998.0 B  
+	-	`sha256:1f8703719ceda92ea893ae7774b7db6f62c7e0a4ac9db1a5a16917e00979e016`  
+		Last Modified: Thu, 08 Feb 2018 04:27:03 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ce79fe52667d8e1b1ca1e19896c20a5f871aaac5d2886adc4a3fe245b2f37c`  
-		Last Modified: Wed, 07 Feb 2018 14:05:52 GMT  
-		Size: 786.0 B  
+	-	`sha256:63663c2e5e4abcbecf4be01d03ff11497a63b6ad70ecb51e28583889bf526462`  
+		Last Modified: Thu, 08 Feb 2018 04:27:04 GMT  
+		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:8a07736e92540f6e8709a55e698929634bba6d1fa8d2aedea4363365230b8d37
+$ docker pull nextcloud@sha256:786ace063d88cefb3b4aaad5f0abf83268eeb36b9d3a1a66de4b3f54a2a3ad91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.2 MB (205221897 bytes)**  
+-	Total Size: **205.7 MB (205734160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a130e8fa884d133b2d552de7f91eab69c3cf73cbedf22874107faf71ae8aa56`
+-	Image ID: `sha256:4ae75cfa226f5ddf979cae3a676750eac1cc2660d1fee480b3aa09cad3977c20`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -20534,21 +20534,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:21:53 GMT
+# Thu, 08 Feb 2018 04:16:00 GMT
 ENV NEXTCLOUD_VERSION=12.0.5
-# Wed, 07 Feb 2018 05:22:32 GMT
+# Thu, 08 Feb 2018 04:16:28 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:22:40 GMT
+# Thu, 08 Feb 2018 04:16:30 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:31 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:22:42 GMT
+# Thu, 08 Feb 2018 04:16:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:22:51 GMT
+# Thu, 08 Feb 2018 04:16:33 GMT
 CMD ["php-fpm"]
 ```
 
@@ -20593,21 +20593,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8efd43ce0e5df31d164e080c4c83cf706c2b465aedc6d9400860dda5b0e723c`  
-		Last Modified: Wed, 07 Feb 2018 05:32:12 GMT  
-		Size: 48.5 MB (48528919 bytes)  
+	-	`sha256:aab10cc95dd5baf89a967def8b4cc019a6ec8793a2993331c638bd5b8322d1d1`  
+		Last Modified: Thu, 08 Feb 2018 04:23:00 GMT  
+		Size: 48.5 MB (48528962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:845ec52554ab0cb0b4862e709bb82a967c3c229e95faaeaa6199c6c6b77ca63c`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
+	-	`sha256:9c3afb5dab8066682639d5cec6931338758643ffc6fccf422a3744b297d33f77`  
+		Last Modified: Thu, 08 Feb 2018 04:22:43 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab35d210ca8cbe0e6cbd7ee3dac4ddc36a50ac45b33672479a38946ee001255f`  
-		Last Modified: Wed, 07 Feb 2018 05:31:53 GMT  
-		Size: 790.0 B  
+	-	`sha256:9ae322316852667b844949fdf68d77a41a30f3f7d1968ae6255cfacc3a536630`  
+		Last Modified: Thu, 08 Feb 2018 04:22:42 GMT  
+		Size: 786.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-fpm` - linux; 386
@@ -21030,7 +21030,7 @@ CMD ["php-fpm"]
 ## `nextcloud:13`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21400,14 +21400,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -21476,23 +21476,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -21553,38 +21553,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -21653,23 +21653,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -21730,25 +21730,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13` - linux; 386
@@ -22285,7 +22285,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13.0`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22655,14 +22655,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13.0` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -22731,23 +22731,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -22808,38 +22808,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -22908,23 +22908,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -22985,25 +22985,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0` - linux; 386
@@ -23540,7 +23540,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13.0.0`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23910,14 +23910,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13.0.0` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -23986,23 +23986,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -24063,38 +24063,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -24163,23 +24163,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -24240,25 +24240,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0` - linux; 386
@@ -24795,7 +24795,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13.0.0-apache`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25165,14 +25165,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13.0.0-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -25241,23 +25241,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -25318,38 +25318,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -25418,23 +25418,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -25495,25 +25495,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0-apache` - linux; 386
@@ -26050,7 +26050,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13.0.0-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:42f6613d900aeea8fa7c3303406356a8b32d29467402ddff25e70419dd1ddc7f
+$ docker pull nextcloud@sha256:ede9fd65f9aa5a8ed4de4165a52b1b6faf462b4bfff44aa94eacf2df1e754e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26344,14 +26344,14 @@ CMD ["php-fpm"]
 ### `nextcloud:13.0.0-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:68273e381e3aad6a609ec47daad027f09a4b13bb11acc73c34ae73a9c50e3604
+$ docker pull nextcloud@sha256:da694dd20b966de9b2e5ea167387055c4d947053012803530139e46cb8413b92
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201418127 bytes)**  
+-	Total Size: **201.9 MB (201885259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75ba3ec2a8207a6efbe0362dc3709fb5051a7c48d4cdcdcf8eb760eb82826c70`
+-	Image ID: `sha256:5c3cc98f12a22aa2e446abff11e0a86b583d925567ee1fc19c643c1ce9045101`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -26404,21 +26404,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 14:01:27 GMT
+# Thu, 08 Feb 2018 04:23:14 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:01:49 GMT
+# Thu, 08 Feb 2018 04:23:35 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:55 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -26463,34 +26463,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c12fa736f6482b9a7a70f53d5ab6cdc90833db3d1a23d8d9543980191be6d3a`  
-		Last Modified: Wed, 07 Feb 2018 14:08:00 GMT  
-		Size: 47.8 MB (47825931 bytes)  
+	-	`sha256:4f071abf7b3ad814e38054c97a6b1555e8809d318881998a2ac2fb2f8f29a441`  
+		Last Modified: Thu, 08 Feb 2018 04:29:37 GMT  
+		Size: 47.8 MB (47825926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:395e90783e67f532489a1e8316a46865f178a03444398ba4825fcd39bcc61408`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
+	-	`sha256:e836d4edac159cd47909a9c33a8ffdc9fdec9c9dbf8f8a0e6a002d2e3cc9620b`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcbf82edea6d2e8f67b1ebdaa52e15f16618d242215cbc05344e1d7304f0878`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
-		Size: 788.0 B  
+	-	`sha256:9268916d2b302b9cc7e4e716636299fabec696734f1abcc19815d0baa5bb9b74`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
+		Size: 787.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:037a52e77b146678eff905c8bf9ef77c025f7531271dd6007c41f7d2c6345cdd
+$ docker pull nextcloud@sha256:592fb005522571238709a4815d258624d2be9fbe81da04af08b68384c6988281
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.5 MB (204518908 bytes)**  
+-	Total Size: **205.0 MB (205031112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb38207cf221ae4cf32a3b89405f5ae4fd925d1c01e489d4dbb96b485a52b65b`
+-	Image ID: `sha256:ac6fc8762da2d1f5733d74e17a81b6a47da83e6b467a7b6019399a65dcc5486d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -26543,21 +26543,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:24:41 GMT
+# Thu, 08 Feb 2018 04:17:34 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:25:18 GMT
+# Thu, 08 Feb 2018 04:18:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:25:20 GMT
+# Thu, 08 Feb 2018 04:18:03 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:25:29 GMT
+# Thu, 08 Feb 2018 04:18:04 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:06 GMT
 CMD ["php-fpm"]
 ```
 
@@ -26602,21 +26602,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f7978ff0a4baad27e9dd0ff7763b03cab11b69f802974ae04c0a6fb4e3adeac`  
-		Last Modified: Wed, 07 Feb 2018 05:36:13 GMT  
-		Size: 47.8 MB (47825934 bytes)  
+	-	`sha256:b42fc04e19ecca15053fe104ca70bc0ac0dddcf60b232f42b47d55d30dd07127`  
+		Last Modified: Thu, 08 Feb 2018 04:26:23 GMT  
+		Size: 47.8 MB (47825916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36e0105ea26dc3a4c4f7981aa8098f7c0cbd1c855f8b81a54694a528da104dbf`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
+	-	`sha256:3089b94003b539c8c86574a72552139f5edacec08188fe92b3e65bd5cad2c907`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb1548496aad2fa16045f38140c6265923d01430fd243d1bbba467d1e26b1055`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
-		Size: 786.0 B  
+	-	`sha256:3657582e2932415c98165a6c3d5cb24c0e5d8af8cddb5b19453ef5e968140538`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
+		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0.0-fpm` - linux; 386
@@ -27039,7 +27039,7 @@ CMD ["php-fpm"]
 ## `nextcloud:13.0-apache`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27409,14 +27409,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13.0-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -27485,23 +27485,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -27562,38 +27562,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -27662,23 +27662,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -27739,25 +27739,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0-apache` - linux; 386
@@ -28294,7 +28294,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13.0-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:42f6613d900aeea8fa7c3303406356a8b32d29467402ddff25e70419dd1ddc7f
+$ docker pull nextcloud@sha256:ede9fd65f9aa5a8ed4de4165a52b1b6faf462b4bfff44aa94eacf2df1e754e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28588,14 +28588,14 @@ CMD ["php-fpm"]
 ### `nextcloud:13.0-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:68273e381e3aad6a609ec47daad027f09a4b13bb11acc73c34ae73a9c50e3604
+$ docker pull nextcloud@sha256:da694dd20b966de9b2e5ea167387055c4d947053012803530139e46cb8413b92
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201418127 bytes)**  
+-	Total Size: **201.9 MB (201885259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75ba3ec2a8207a6efbe0362dc3709fb5051a7c48d4cdcdcf8eb760eb82826c70`
+-	Image ID: `sha256:5c3cc98f12a22aa2e446abff11e0a86b583d925567ee1fc19c643c1ce9045101`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -28648,21 +28648,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 14:01:27 GMT
+# Thu, 08 Feb 2018 04:23:14 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:01:49 GMT
+# Thu, 08 Feb 2018 04:23:35 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:55 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -28707,34 +28707,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c12fa736f6482b9a7a70f53d5ab6cdc90833db3d1a23d8d9543980191be6d3a`  
-		Last Modified: Wed, 07 Feb 2018 14:08:00 GMT  
-		Size: 47.8 MB (47825931 bytes)  
+	-	`sha256:4f071abf7b3ad814e38054c97a6b1555e8809d318881998a2ac2fb2f8f29a441`  
+		Last Modified: Thu, 08 Feb 2018 04:29:37 GMT  
+		Size: 47.8 MB (47825926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:395e90783e67f532489a1e8316a46865f178a03444398ba4825fcd39bcc61408`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
+	-	`sha256:e836d4edac159cd47909a9c33a8ffdc9fdec9c9dbf8f8a0e6a002d2e3cc9620b`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcbf82edea6d2e8f67b1ebdaa52e15f16618d242215cbc05344e1d7304f0878`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
-		Size: 788.0 B  
+	-	`sha256:9268916d2b302b9cc7e4e716636299fabec696734f1abcc19815d0baa5bb9b74`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
+		Size: 787.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:037a52e77b146678eff905c8bf9ef77c025f7531271dd6007c41f7d2c6345cdd
+$ docker pull nextcloud@sha256:592fb005522571238709a4815d258624d2be9fbe81da04af08b68384c6988281
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.5 MB (204518908 bytes)**  
+-	Total Size: **205.0 MB (205031112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb38207cf221ae4cf32a3b89405f5ae4fd925d1c01e489d4dbb96b485a52b65b`
+-	Image ID: `sha256:ac6fc8762da2d1f5733d74e17a81b6a47da83e6b467a7b6019399a65dcc5486d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -28787,21 +28787,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:24:41 GMT
+# Thu, 08 Feb 2018 04:17:34 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:25:18 GMT
+# Thu, 08 Feb 2018 04:18:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:25:20 GMT
+# Thu, 08 Feb 2018 04:18:03 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:25:29 GMT
+# Thu, 08 Feb 2018 04:18:04 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:06 GMT
 CMD ["php-fpm"]
 ```
 
@@ -28846,21 +28846,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f7978ff0a4baad27e9dd0ff7763b03cab11b69f802974ae04c0a6fb4e3adeac`  
-		Last Modified: Wed, 07 Feb 2018 05:36:13 GMT  
-		Size: 47.8 MB (47825934 bytes)  
+	-	`sha256:b42fc04e19ecca15053fe104ca70bc0ac0dddcf60b232f42b47d55d30dd07127`  
+		Last Modified: Thu, 08 Feb 2018 04:26:23 GMT  
+		Size: 47.8 MB (47825916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36e0105ea26dc3a4c4f7981aa8098f7c0cbd1c855f8b81a54694a528da104dbf`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
+	-	`sha256:3089b94003b539c8c86574a72552139f5edacec08188fe92b3e65bd5cad2c907`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb1548496aad2fa16045f38140c6265923d01430fd243d1bbba467d1e26b1055`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
-		Size: 786.0 B  
+	-	`sha256:3657582e2932415c98165a6c3d5cb24c0e5d8af8cddb5b19453ef5e968140538`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
+		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13.0-fpm` - linux; 386
@@ -29283,7 +29283,7 @@ CMD ["php-fpm"]
 ## `nextcloud:13-apache`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29653,14 +29653,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:13-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -29729,23 +29729,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -29806,38 +29806,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -29906,23 +29906,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -29983,25 +29983,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13-apache` - linux; 386
@@ -30538,7 +30538,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:13-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:42f6613d900aeea8fa7c3303406356a8b32d29467402ddff25e70419dd1ddc7f
+$ docker pull nextcloud@sha256:ede9fd65f9aa5a8ed4de4165a52b1b6faf462b4bfff44aa94eacf2df1e754e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30832,14 +30832,14 @@ CMD ["php-fpm"]
 ### `nextcloud:13-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:68273e381e3aad6a609ec47daad027f09a4b13bb11acc73c34ae73a9c50e3604
+$ docker pull nextcloud@sha256:da694dd20b966de9b2e5ea167387055c4d947053012803530139e46cb8413b92
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201418127 bytes)**  
+-	Total Size: **201.9 MB (201885259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75ba3ec2a8207a6efbe0362dc3709fb5051a7c48d4cdcdcf8eb760eb82826c70`
+-	Image ID: `sha256:5c3cc98f12a22aa2e446abff11e0a86b583d925567ee1fc19c643c1ce9045101`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -30892,21 +30892,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 14:01:27 GMT
+# Thu, 08 Feb 2018 04:23:14 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:01:49 GMT
+# Thu, 08 Feb 2018 04:23:35 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:55 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -30951,34 +30951,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c12fa736f6482b9a7a70f53d5ab6cdc90833db3d1a23d8d9543980191be6d3a`  
-		Last Modified: Wed, 07 Feb 2018 14:08:00 GMT  
-		Size: 47.8 MB (47825931 bytes)  
+	-	`sha256:4f071abf7b3ad814e38054c97a6b1555e8809d318881998a2ac2fb2f8f29a441`  
+		Last Modified: Thu, 08 Feb 2018 04:29:37 GMT  
+		Size: 47.8 MB (47825926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:395e90783e67f532489a1e8316a46865f178a03444398ba4825fcd39bcc61408`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
+	-	`sha256:e836d4edac159cd47909a9c33a8ffdc9fdec9c9dbf8f8a0e6a002d2e3cc9620b`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcbf82edea6d2e8f67b1ebdaa52e15f16618d242215cbc05344e1d7304f0878`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
-		Size: 788.0 B  
+	-	`sha256:9268916d2b302b9cc7e4e716636299fabec696734f1abcc19815d0baa5bb9b74`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
+		Size: 787.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:037a52e77b146678eff905c8bf9ef77c025f7531271dd6007c41f7d2c6345cdd
+$ docker pull nextcloud@sha256:592fb005522571238709a4815d258624d2be9fbe81da04af08b68384c6988281
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.5 MB (204518908 bytes)**  
+-	Total Size: **205.0 MB (205031112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb38207cf221ae4cf32a3b89405f5ae4fd925d1c01e489d4dbb96b485a52b65b`
+-	Image ID: `sha256:ac6fc8762da2d1f5733d74e17a81b6a47da83e6b467a7b6019399a65dcc5486d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -31031,21 +31031,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:24:41 GMT
+# Thu, 08 Feb 2018 04:17:34 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:25:18 GMT
+# Thu, 08 Feb 2018 04:18:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:25:20 GMT
+# Thu, 08 Feb 2018 04:18:03 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:25:29 GMT
+# Thu, 08 Feb 2018 04:18:04 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:06 GMT
 CMD ["php-fpm"]
 ```
 
@@ -31090,21 +31090,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f7978ff0a4baad27e9dd0ff7763b03cab11b69f802974ae04c0a6fb4e3adeac`  
-		Last Modified: Wed, 07 Feb 2018 05:36:13 GMT  
-		Size: 47.8 MB (47825934 bytes)  
+	-	`sha256:b42fc04e19ecca15053fe104ca70bc0ac0dddcf60b232f42b47d55d30dd07127`  
+		Last Modified: Thu, 08 Feb 2018 04:26:23 GMT  
+		Size: 47.8 MB (47825916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36e0105ea26dc3a4c4f7981aa8098f7c0cbd1c855f8b81a54694a528da104dbf`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
+	-	`sha256:3089b94003b539c8c86574a72552139f5edacec08188fe92b3e65bd5cad2c907`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb1548496aad2fa16045f38140c6265923d01430fd243d1bbba467d1e26b1055`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
-		Size: 786.0 B  
+	-	`sha256:3657582e2932415c98165a6c3d5cb24c0e5d8af8cddb5b19453ef5e968140538`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
+		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:13-fpm` - linux; 386
@@ -31527,7 +31527,7 @@ CMD ["php-fpm"]
 ## `nextcloud:apache`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31897,14 +31897,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -31973,23 +31973,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -32050,38 +32050,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -32150,23 +32150,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -32227,25 +32227,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:apache` - linux; 386
@@ -32782,7 +32782,7 @@ CMD ["apache2-foreground"]
 ## `nextcloud:fpm`
 
 ```console
-$ docker pull nextcloud@sha256:42f6613d900aeea8fa7c3303406356a8b32d29467402ddff25e70419dd1ddc7f
+$ docker pull nextcloud@sha256:ede9fd65f9aa5a8ed4de4165a52b1b6faf462b4bfff44aa94eacf2df1e754e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33076,14 +33076,14 @@ CMD ["php-fpm"]
 ### `nextcloud:fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:68273e381e3aad6a609ec47daad027f09a4b13bb11acc73c34ae73a9c50e3604
+$ docker pull nextcloud@sha256:da694dd20b966de9b2e5ea167387055c4d947053012803530139e46cb8413b92
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.4 MB (201418127 bytes)**  
+-	Total Size: **201.9 MB (201885259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75ba3ec2a8207a6efbe0362dc3709fb5051a7c48d4cdcdcf8eb760eb82826c70`
+-	Image ID: `sha256:5c3cc98f12a22aa2e446abff11e0a86b583d925567ee1fc19c643c1ce9045101`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -33136,21 +33136,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 13:14:31 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 13:57:44 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:57:46 GMT
+# Thu, 08 Feb 2018 04:20:44 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:20:45 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 14:01:27 GMT
+# Thu, 08 Feb 2018 04:23:14 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:01:49 GMT
+# Thu, 08 Feb 2018 04:23:35 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:55 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:37 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:02:02 GMT
+# Thu, 08 Feb 2018 04:23:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -33195,34 +33195,34 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 13:26:05 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:218ea0746ebd1c75f3377c4942f5b59937ddadd613e4a1f064206ba90a314efb`  
-		Last Modified: Wed, 07 Feb 2018 14:04:15 GMT  
-		Size: 16.7 MB (16748278 bytes)  
+	-	`sha256:b85a866fab0551bfaa909016e5053a8cc4146866bacd36d631e9551ec7b17a4d`  
+		Last Modified: Thu, 08 Feb 2018 04:25:25 GMT  
+		Size: 17.2 MB (17215416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c12fa736f6482b9a7a70f53d5ab6cdc90833db3d1a23d8d9543980191be6d3a`  
-		Last Modified: Wed, 07 Feb 2018 14:08:00 GMT  
-		Size: 47.8 MB (47825931 bytes)  
+	-	`sha256:4f071abf7b3ad814e38054c97a6b1555e8809d318881998a2ac2fb2f8f29a441`  
+		Last Modified: Thu, 08 Feb 2018 04:29:37 GMT  
+		Size: 47.8 MB (47825926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:395e90783e67f532489a1e8316a46865f178a03444398ba4825fcd39bcc61408`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
+	-	`sha256:e836d4edac159cd47909a9c33a8ffdc9fdec9c9dbf8f8a0e6a002d2e3cc9620b`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcbf82edea6d2e8f67b1ebdaa52e15f16618d242215cbc05344e1d7304f0878`  
-		Last Modified: Wed, 07 Feb 2018 14:07:44 GMT  
-		Size: 788.0 B  
+	-	`sha256:9268916d2b302b9cc7e4e716636299fabec696734f1abcc19815d0baa5bb9b74`  
+		Last Modified: Thu, 08 Feb 2018 04:29:21 GMT  
+		Size: 787.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:037a52e77b146678eff905c8bf9ef77c025f7531271dd6007c41f7d2c6345cdd
+$ docker pull nextcloud@sha256:592fb005522571238709a4815d258624d2be9fbe81da04af08b68384c6988281
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.5 MB (204518908 bytes)**  
+-	Total Size: **205.0 MB (205031112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb38207cf221ae4cf32a3b89405f5ae4fd925d1c01e489d4dbb96b485a52b65b`
+-	Image ID: `sha256:ac6fc8762da2d1f5733d74e17a81b6a47da83e6b467a7b6019399a65dcc5486d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -33275,21 +33275,21 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 07 Feb 2018 04:15:28 GMT
 CMD ["php-fpm"]
-# Wed, 07 Feb 2018 05:19:27 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:19:28 GMT
+# Thu, 08 Feb 2018 04:14:17 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:14:18 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:24:41 GMT
+# Thu, 08 Feb 2018 04:17:34 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:25:18 GMT
+# Thu, 08 Feb 2018 04:18:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:25:20 GMT
+# Thu, 08 Feb 2018 04:18:03 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:25:29 GMT
+# Thu, 08 Feb 2018 04:18:04 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:25:30 GMT
+# Thu, 08 Feb 2018 04:18:06 GMT
 CMD ["php-fpm"]
 ```
 
@@ -33334,21 +33334,21 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 07 Feb 2018 04:43:18 GMT  
 		Size: 7.7 KB (7683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411ea3cb0a9b8dbb8345b273105d17c2e90d90db21e7649c4db01cbdc4392e21`  
-		Last Modified: Wed, 07 Feb 2018 05:28:26 GMT  
-		Size: 17.3 MB (17295688 bytes)  
+	-	`sha256:53f6848ab02a76c242854f4340e00b50c5553ca8fa6013c593371c58e9c066cb`  
+		Last Modified: Thu, 08 Feb 2018 04:20:13 GMT  
+		Size: 17.8 MB (17807912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f7978ff0a4baad27e9dd0ff7763b03cab11b69f802974ae04c0a6fb4e3adeac`  
-		Last Modified: Wed, 07 Feb 2018 05:36:13 GMT  
-		Size: 47.8 MB (47825934 bytes)  
+	-	`sha256:b42fc04e19ecca15053fe104ca70bc0ac0dddcf60b232f42b47d55d30dd07127`  
+		Last Modified: Thu, 08 Feb 2018 04:26:23 GMT  
+		Size: 47.8 MB (47825916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36e0105ea26dc3a4c4f7981aa8098f7c0cbd1c855f8b81a54694a528da104dbf`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
+	-	`sha256:3089b94003b539c8c86574a72552139f5edacec08188fe92b3e65bd5cad2c907`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb1548496aad2fa16045f38140c6265923d01430fd243d1bbba467d1e26b1055`  
-		Last Modified: Wed, 07 Feb 2018 05:35:54 GMT  
-		Size: 786.0 B  
+	-	`sha256:3657582e2932415c98165a6c3d5cb24c0e5d8af8cddb5b19453ef5e968140538`  
+		Last Modified: Thu, 08 Feb 2018 04:26:05 GMT  
+		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:fpm` - linux; 386
@@ -33771,7 +33771,7 @@ CMD ["php-fpm"]
 ## `nextcloud:latest`
 
 ```console
-$ docker pull nextcloud@sha256:27d4f3493665243fec52113f9ed108dfbef0787c627a7e45de498d9aaec9f681
+$ docker pull nextcloud@sha256:36293ea2965d3ccaffcb621e7ad3e3aaba73693a192b518d2283c41a7f5f239c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34141,14 +34141,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:latest` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:74cad1ebfd0b387f89661bc15b0c7c8825d63e7c0447d74e6dec22cdd40e46c5
+$ docker pull nextcloud@sha256:d1f5a2634bc5b3bc0d7e0e4fd76180f7684ef397677a064f567731e4a0e12d9f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.7 MB (205705206 bytes)**  
+-	Total Size: **206.2 MB (206172288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24cfb4fe32cada37e72b82c0e4653def7d2781c8458a43760d5f03b48113b6f3`
+-	Image ID: `sha256:bdef7ef693e5a68bb294cdaf80d8a1a42bf672de00bb4198116a1ef743395e24`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -34217,23 +34217,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 13:10:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 13:50:49 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 13:50:53 GMT
+# Thu, 08 Feb 2018 04:13:50 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:13:50 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 13:50:54 GMT
+# Thu, 08 Feb 2018 04:13:51 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 14:00:35 GMT
+# Thu, 08 Feb 2018 04:22:40 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 14:00:57 GMT
+# Thu, 08 Feb 2018 04:23:01 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 14:01:04 GMT
+# Thu, 08 Feb 2018 04:23:02 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 14:01:05 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 14:01:10 GMT
+# Thu, 08 Feb 2018 04:23:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -34294,38 +34294,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 13:25:32 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8bbfe891ae7ca728e2bf4cabe81d2f0faeccf023f3f840a9a4b43bf85eb1630`  
-		Last Modified: Wed, 07 Feb 2018 14:02:47 GMT  
-		Size: 16.8 MB (16767616 bytes)  
+	-	`sha256:57a18191d1a9cbd28e54e58700dd78a9a0f32fab77381474b9d70b52daa167ca`  
+		Last Modified: Thu, 08 Feb 2018 04:24:23 GMT  
+		Size: 17.2 MB (17234709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08475f10d6c155ea924ab5af88b970e211e7169102ccc1d0decd336b3aa72ad8`  
-		Last Modified: Wed, 07 Feb 2018 14:02:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:9c7a0dc77ea7e75b62818ad3c357f97929618d4fe1e633e9d2b7318f1413edcd`  
+		Last Modified: Thu, 08 Feb 2018 04:24:18 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af76f0fd1a478f58b8f7dc55f978207a995fd4f85b04dc61feeb7a7e6de74416`  
-		Last Modified: Wed, 07 Feb 2018 14:06:47 GMT  
-		Size: 47.8 MB (47825945 bytes)  
+	-	`sha256:a193d49edf8fe059258f61340ff6dd0192cc1c8a117fe76cdd1bc59b444dce5a`  
+		Last Modified: Thu, 08 Feb 2018 04:28:10 GMT  
+		Size: 47.8 MB (47825935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3543f66fd1e2bd540d355e37b2a5557a6f37bf521585bb6eff4b4acbc213a`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 998.0 B  
+	-	`sha256:021e964be260a1826d0fd666361bdf40520e4a546aff99c817a1c72a1cb6f796`  
+		Last Modified: Thu, 08 Feb 2018 04:27:54 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f4b58964debfb82315d42905a50e9ccc64ac5328cc6cc67b56e6ac3db889b43`  
-		Last Modified: Wed, 07 Feb 2018 14:06:31 GMT  
-		Size: 852.0 B  
+	-	`sha256:6a50e948c200e71a8b34416d34148a05ee1f0be18a0632a6c51b8293fe3da5ea`  
+		Last Modified: Thu, 08 Feb 2018 04:27:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:2f758fc1a39605083512e34a8cfe134be4969536bd86633157d070aacc452c8f
+$ docker pull nextcloud@sha256:80b14e981df544cc14db7a98e136389001ef8c76f407455a9730a1d260ffd3a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208917512 bytes)**  
+-	Total Size: **209.4 MB (209429771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:305b8784e9f6b82f79f8c0e71622da69016105f183518a68dedd34c3632e32b5`
+-	Image ID: `sha256:9228983fd28a325ccace704d1c6a912c37ed9ce3bbd9e1ccb36e82721d82dcf1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -34394,23 +34394,23 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 07 Feb 2018 04:07:35 GMT
 CMD ["apache2-foreground"]
-# Wed, 07 Feb 2018 05:09:48 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
-# Wed, 07 Feb 2018 05:09:49 GMT
+# Thu, 08 Feb 2018 04:05:06 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     mkdir -p /var/spool/cron/crontabs;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data;         savedAptMark="$(apt-mark showmanual)";         apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng12-dev         libpq-dev         libxml2-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install gd exif intl mbstring mcrypt ldap mysqli opcache pdo_mysql pdo_pgsql pgsql zip pcntl;     pecl install APCu-5.1.9;     pecl install memcached-3.0.4;     pecl install redis-3.1.6;     docker-php-ext-enable apcu redis memcached;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;         {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         chown -R www-data:root /var/www/html;     chmod -R g=u /var/www/html
+# Thu, 08 Feb 2018 04:05:06 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Feb 2018 05:09:51 GMT
+# Thu, 08 Feb 2018 04:05:08 GMT
 RUN a2enmod rewrite
-# Wed, 07 Feb 2018 05:23:22 GMT
+# Thu, 08 Feb 2018 04:16:47 GMT
 ENV NEXTCLOUD_VERSION=13.0.0
-# Wed, 07 Feb 2018 05:23:58 GMT
+# Thu, 08 Feb 2018 04:17:13 GMT
 RUN set -ex;     curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     rm nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ
-# Wed, 07 Feb 2018 05:24:09 GMT
+# Thu, 08 Feb 2018 04:17:15 GMT
 COPY multi:b680850547a7d6e3b427bb289061cea91ea149b388bd13c63f961d11b2eda4c9 in / 
-# Wed, 07 Feb 2018 05:24:10 GMT
+# Thu, 08 Feb 2018 04:17:16 GMT
 COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Wed, 07 Feb 2018 05:24:19 GMT
+# Thu, 08 Feb 2018 04:17:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 07 Feb 2018 05:24:20 GMT
+# Thu, 08 Feb 2018 04:17:18 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -34471,25 +34471,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Feb 2018 04:42:21 GMT  
 		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:539968d20991811e1ed863759818d295961c216c1c4644f7315db6ec7b5711b9`  
-		Last Modified: Wed, 07 Feb 2018 05:26:22 GMT  
-		Size: 17.3 MB (17315220 bytes)  
+	-	`sha256:a8e4ac67c035ea38147cf2e6d2ba9ad1cf568b4cd35047670f49538659b1b324`  
+		Last Modified: Thu, 08 Feb 2018 04:18:38 GMT  
+		Size: 17.8 MB (17827502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6041520ba2d97ba37ef8eb2a2dcd86ac0255df92e5fb5944f1c0604d0d9b164e`  
-		Last Modified: Wed, 07 Feb 2018 05:26:17 GMT  
-		Size: 318.0 B  
+	-	`sha256:ac4e85609ab8106bd6f6296f2446a2c28a836640294ad50248522c229e662c8d`  
+		Last Modified: Thu, 08 Feb 2018 04:18:31 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02fcb1d76b766ce1bd0353ba37e8f96facbc7087cebb5a7b6d9ca0b6f315ca96`  
-		Last Modified: Wed, 07 Feb 2018 05:33:23 GMT  
-		Size: 47.8 MB (47825915 bytes)  
+	-	`sha256:7b8745817c457089469ca21bc175312004b3d4e2423ffee0757c7f65951692f9`  
+		Last Modified: Thu, 08 Feb 2018 04:24:04 GMT  
+		Size: 47.8 MB (47825888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3144ebc4be48a9fe36cd0c5e46e01f3325fb369f555d6ced026ef1ed36adfd2b`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
+	-	`sha256:7c657d4eb9b5017724959fdaba6499634774bc140454e7a9cff02ed8e60ade48`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
 		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5166c22df1af3124dfe3ce13bb055291ac23489f9d4c4d953c4aba7537cdb46`  
-		Last Modified: Wed, 07 Feb 2018 05:33:05 GMT  
-		Size: 849.0 B  
+	-	`sha256:43cf6e56e2f631b39a48fcd312744587168a04296cacdfc63455d34cc556238a`  
+		Last Modified: Thu, 08 Feb 2018 04:23:46 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:latest` - linux; 386
