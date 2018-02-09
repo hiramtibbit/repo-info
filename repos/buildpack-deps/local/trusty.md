@@ -4222,14 +4222,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.20-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc 3452 SHA256:cc84750137f915e72c2df2d1618d2b7b76d5c02a5e353a02f994820485ac3a5d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20.orig.tar.gz' postgresql-9.3_9.3.20.orig.tar.gz 22456142 SHA256:df566b52d8c40ec38458526beced7f5e08ee394d34f5738ee6b17aef43484262
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz 33655 SHA256:7be95e972c6db6ee6084177667b734898bb308ff0944339628a07bfdc94cd5b4
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -4640,14 +4635,9 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=204-5ubuntu20.25
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.25.dsc' systemd_204-5ubuntu20.25.dsc 3660 SHA256:690adb730da9d61e25f5756df55bad9786392812f1523aa790fbb9148f0fc24b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.25.debian.tar.xz' systemd_204-5ubuntu20.25.debian.tar.xz 144408 SHA256:a3c88344900e1e5ac99e5c1324af970ed34081bf2ea7f38a17d99c1bad026cbc
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
