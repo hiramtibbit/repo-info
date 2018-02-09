@@ -3738,20 +3738,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Perl / BSD`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.1=9.1.24lts2-0+deb7u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u1.dsc' postgresql-9.1_9.1.24lts2-0+deb7u1.dsc 3381 SHA256:b0bc4cd80af2d4b83aa19388fc144413e5d2fa1ba957a2a8832d5e8045001884
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2.orig.tar.bz2' postgresql-9.1_9.1.24lts2.orig.tar.bz2 15809167 SHA256:b1db8299cfccb31d0d0396b9a00afd9610fdab8768d45f4749fd2faf60b3931f
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u1.debian.tar.gz' postgresql-9.1_9.1.24lts2-0+deb7u1.debian.tar.gz 46730 SHA256:1a1692dd66ca7639c279f8d60b226292540f4f855e9773627b9dea7f58ec593f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.1/9.1.24lts2-0+deb7u1/
 
-- https://sources.debian.net/src/postgresql-9.1/9.1.24lts2-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.1/9.1.24lts2-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.1/9.1.24lts2-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=1:3.3.3-3`
 
