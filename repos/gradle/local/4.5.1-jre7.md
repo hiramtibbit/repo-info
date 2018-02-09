@@ -1,9 +1,9 @@
-# `gradle:4.5.0-jre7`
+# `gradle:4.5.1-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb191135d7830699b533d84c7ac8daa6ed40549024f3c5344a07a247a2bf18be`
-- Created: `2018-01-26T18:16:59.60580415Z`
+- Image ID: `sha256:820acbf27a2f0c8cceb1b532a53077c38a32c0c53fdf759b1a316121e0794b3f`
+- Created: `2018-02-07T22:04:25.019751125Z`
 - Virtual Size: ~ 510.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=7u151`
   - `JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.5`
+  - `GRADLE_VERSION=4.5.1`
 
 ## `dpkg` (`.deb`-based packages)
 
