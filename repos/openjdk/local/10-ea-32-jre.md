@@ -1576,20 +1576,13 @@ Licenses: (parsed from: `/usr/share/doc/gsettings-desktop-schemas/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gsettings-desktop-schemas=3.24.1-2
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.1-2.dsc' gsettings-desktop-schemas_3.24.1-2.dsc 2554 SHA256:dec49b24dd9d798496d69a8300ef49e1731761bfdd3620830ff4a327bbc27d7b
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.1.orig.tar.xz' gsettings-desktop-schemas_3.24.1.orig.tar.xz 638780 SHA256:76a3fa309f9de6074d66848987214f0b128124ba7184c958c15ac78a8ac7eea7
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.1-2.debian.tar.xz' gsettings-desktop-schemas_3.24.1-2.debian.tar.xz 4640 SHA256:e00f6c97b564302231ac5e121c87b3891033f24214549cc7882b445b22edc13c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gsettings-desktop-schemas/3.24.1-2/
 
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gsettings-desktop-schemas/3.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gtk+2.0=2.24.31-5`
 
@@ -4724,20 +4717,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=236-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.dsc' systemd_236-3.dsc 4835 SHA256:a6f4b547c618a8a8f0ee0e2136c42e13ffd2dc31caf0ff380073e5a9fe492aa4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236.orig.tar.gz' systemd_236.orig.tar.gz 6759035 SHA256:0cadccfa7109232ec2a469d41ca595d5595b83b648b534ea669c15dbca904c43
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.debian.tar.xz' systemd_236-3.debian.tar.xz 134772 SHA256:b9274d74bf81465747e54752242ea3d7256cb2ba90c8a61be214038ee22fdb0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/236-3/
 
-- https://sources.debian.net/src/systemd/236-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/236-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/236-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
