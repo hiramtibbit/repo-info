@@ -2261,14 +2261,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mono=5.4.1.7-0xamarin5+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7-0xamarin5+debian8b1.dsc' mono_5.4.1.7-0xamarin5+debian8b1.dsc 19091 SHA256:73bb9286d2f4f1450bac05226c3e40bb463a85d54a6e7c8a7851a043832d6091
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7.orig.tar.bz2' mono_5.4.1.7.orig.tar.bz2 204987567 SHA256:543d9ec2ccebad9bb8425b22e10271f13d9512487c0e1578eeccdb1b8dc6a055
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.4.1.7-0xamarin5+debian8b1.debian.tar.xz' mono_5.4.1.7-0xamarin5+debian8b1.debian.tar.xz 148672 SHA256:b22506d42aac777697573c63d1068f0615fc51ac49636809926e27e8d280cefd
-```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
 
