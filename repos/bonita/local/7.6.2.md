@@ -1,19 +1,19 @@
-# `bonita:7.6.1`
+# `bonita:7.6.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5b09ee38b710fd21cdd65a8166ef494f70483c72668efa770a2587f96ac74fc`
-- Created: `2018-01-25T22:33:55.047036405Z`
+- Image ID: `sha256:a94df180826287a2d9781f235d2230e9120c4e97754f229e83d18d2031709acc`
+- Created: `2018-02-06T17:54:12.326298579Z`
 - Virtual Size: ~ 425.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.6.1`
+  - `BONITA_VERSION=7.6.2`
   - `TOMCAT_VERSION=8.5.23`
-  - `BONITA_SHA256=a35359dbaf4ea4bebeb520a22d733d93625281080f4cbad581b0ff7581b94785`
-  - `BONITA_URL=https://download.forge.ow2.org/bonita/BonitaCommunity-7.6.1-Tomcat-8.5.23.zip`
+  - `BONITA_SHA256=6719983159afcb9324673fe426e53f5f45092dff68fc77930dd226e7528fe3cf`
+  - `BONITA_URL=https://download.forge.ow2.org/bonita/BonitaCommunity-7.6.2-Tomcat-8.5.23.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -69,14 +69,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
-```
 
 ### `dpkg` source package: `apt=1.2.24`
 
@@ -2544,14 +2539,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.dsc' systemd_229-4ubuntu21.dsc 3838 SHA256:cad6080ce64048b404962d550b8af7ae41fa47a2362814a3e05cb21ef0b679f6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.debian.tar.xz' systemd_229-4ubuntu21.debian.tar.xz 252804 SHA256:57752270ac035d2d24096cea3478128352da520f160ca4a68ca8986caceb665e
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
