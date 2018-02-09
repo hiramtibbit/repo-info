@@ -1,10 +1,10 @@
-# `xwiki:8`
+# `xwiki:10-postgres-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ea39c772cc9298218b35a89b7878d835443ea0cf3c0aa83f4d2229da906cc17`
-- Created: `2018-01-24T03:21:54.243347319Z`
-- Virtual Size: ~ 1.31 Gb  
+- Image ID: `sha256:e204610fc3e9d038e6906913cc43bcf6a73c3b70510de1ba1e8037176fba0a36`
+- Created: `2018-02-05T21:42:26.134581973Z`
+- Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA1=dc63fe7cefd5eb4f746d17b68578acc92e8af576`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc`
-  - `XWIKI_VERSION=8.4.5`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.5`
-  - `XWIKI_DOWNLOAD_SHA256=52ed122c44984748a729a784c94cb70ccf0d2fa34c2340d0fd45c75deb3b0bc9`
+  - `XWIKI_VERSION=10.0`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.0`
+  - `XWIKI_DOWNLOAD_SHA256=20860efc7c8e7263eb4eb663f36754deb683b73432583a3e65393c447a1d4ebf`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3457,6 +3457,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpagemaker/0.0.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpagemaker/0.0.3-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libpgjava=9.4.1212-1`
+
+Binary Packages:
+
+- `libpostgresql-jdbc-java=9.4.1212-1`
+
+Licenses: (parsed from: `/usr/share/doc/libpostgresql-jdbc-java/copyright`)
+
+- `BSD-3-clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libpgjava=9.4.1212-1
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.4.1212-1.dsc' libpgjava_9.4.1212-1.dsc 2367 SHA256:c6a0187edadba3236f5b2a69026ab7fd5965d27644a34f1f4252f4174c48119a
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.4.1212.orig.tar.xz' libpgjava_9.4.1212.orig.tar.xz 490036 SHA256:f8007c8dcef6cc914751a9eb5b08e5e04d643e0cdb2b0b8fd2b5aa23ef3a0fa1
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.4.1212-1.debian.tar.xz' libpgjava_9.4.1212-1.debian.tar.xz 8636 SHA256:19f30a1665f508547e9b02f2351152273b54f1674785e4d81addbd5bcd31f6f5
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpgjava/9.4.1212-1/ (for browsing the source)
+- https://sources.debian.net/src/libpgjava/9.4.1212-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpgjava/9.4.1212-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libpng1.6=1.6.28-1`
 
 Binary Packages:
@@ -4949,31 +4974,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpdecimal/2.4.2-1/ (for browsing the source)
 - https://sources.debian.net/src/mpdecimal/2.4.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpdecimal/2.4.2-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `mysql-connector-java=5.1.42-1`
-
-Binary Packages:
-
-- `libmysql-java=5.1.42-1`
-
-Licenses: (parsed from: `/usr/share/doc/libmysql-java/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mysql-connector-java=5.1.42-1
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.42-1.dsc' mysql-connector-java_5.1.42-1.dsc 2234 SHA256:f74af955ba01c0e3229a5fa5d0e13fea22a4b4d060504f5b09d2bc271bb82308
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.42.orig.tar.xz' mysql-connector-java_5.1.42.orig.tar.xz 1003108 SHA256:5fd905d915dd4c9624f424f42501152a19ce60ef028945fc4afc242cd2403006
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.42-1.debian.tar.xz' mysql-connector-java_5.1.42-1.debian.tar.xz 10548 SHA256:0c008d72bf5c1c17a4b434163e61c082bfd9e67009a644fe96cda7a1b8885279
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mysql-connector-java/5.1.42-1/ (for browsing the source)
-- https://sources.debian.net/src/mysql-connector-java/5.1.42-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-connector-java/5.1.42-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mythes=2:1.2.4-3`
 

@@ -1,9 +1,9 @@
-# `xwiki:9-postgres-tomcat`
+# `xwiki:10-postgres-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eec4f974ae23afeb96d44301171e450a544d93939e61353e2edd2c6c44ca2358`
-- Created: `2018-01-24T04:11:35.672166104Z`
+- Image ID: `sha256:e204610fc3e9d038e6906913cc43bcf6a73c3b70510de1ba1e8037176fba0a36`
+- Created: `2018-02-05T21:42:26.134581973Z`
 - Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA1=dc63fe7cefd5eb4f746d17b68578acc92e8af576`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.tar.gz.asc`
-  - `XWIKI_VERSION=9.11.1`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.11.1`
-  - `XWIKI_DOWNLOAD_SHA256=61f343511e461321cf32148f10340eb64b9c90688096a55754f76c2d3be8c935`
+  - `XWIKI_VERSION=10.0`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.0`
+  - `XWIKI_DOWNLOAD_SHA256=20860efc7c8e7263eb4eb663f36754deb683b73432583a3e65393c447a1d4ebf`
 
 ## `dpkg` (`.deb`-based packages)
 
