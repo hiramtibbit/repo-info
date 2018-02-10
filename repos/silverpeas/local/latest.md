@@ -1,10 +1,10 @@
-# `silverpeas:6.0-beta1`
+# `silverpeas:6.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0cc3958485b327c8bd3fb8ee6d762eccd8b64da3071aa44b3c3094b8d8cf75e7`
-- Created: `2018-01-26T00:31:09.376680652Z`
-- Virtual Size: ~ 1.47 Gb  
+- Image ID: `sha256:c0b8ee914929970ab950410a1bf1206ff5124406e6ba999ec1f25d05991435d1`
+- Created: `2018-02-05T23:50:45.951517923Z`
+- Virtual Size: ~ 1.50 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/run.sh"]`
@@ -17,7 +17,7 @@
   - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.0-beta1`
+  - `SILVERPEAS_VERSION=6.0`
   - `WILDFLY_VERSION=10.1.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -94,14 +94,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
-```
 
 ### `dpkg` source package: `apt=1.2.24`
 
@@ -4430,14 +4425,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.dsc' systemd_229-4ubuntu21.dsc 3838 SHA256:cad6080ce64048b404962d550b8af7ae41fa47a2362814a3e05cb21ef0b679f6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.debian.tar.xz' systemd_229-4ubuntu21.debian.tar.xz 252804 SHA256:57752270ac035d2d24096cea3478128352da520f160ca4a68ca8986caceb665e
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
