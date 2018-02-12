@@ -3984,13 +3984,9 @@ Licenses: (parsed from: `/usr/share/doc/resolvconf/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.dsc' resolvconf_1.69ubuntu1.3.dsc 1780 SHA256:e092233473f92df83c19c85d86999e7eee3f0f5a94e56793578a2e053bb8e402
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.tar.xz' resolvconf_1.69ubuntu1.3.tar.xz 73196 SHA256:608101093f01767a342c5caa2ac4968762d7b92d52c0d0e939384d2122f329c3
-```
 
 ### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
 

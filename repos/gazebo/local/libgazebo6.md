@@ -90,9 +90,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6~14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.1.dsc' apparmor_2.10.95-0ubuntu2.6~14.04.1.dsc 3147 SHA256:343390ee8df8d804ef9f7d91ff0201d6c2e199fb1aeb129b5257ce9cf7dea49b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.1.debian.tar.gz' apparmor_2.10.95-0ubuntu2.6~14.04.1.debian.tar.gz 184554 SHA256:c071246b2afd5248559f598eb8d52554e09de5a2fd99e49612a84c0ac2d34920
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.1.dsc' apparmor_2.10.95-0ubuntu2.6~14.04.1.dsc 3147 SHA256:343390ee8df8d804ef9f7d91ff0201d6c2e199fb1aeb129b5257ce9cf7dea49b
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.1.debian.tar.gz' apparmor_2.10.95-0ubuntu2.6~14.04.1.debian.tar.gz 184554 SHA256:c071246b2afd5248559f598eb8d52554e09de5a2fd99e49612a84c0ac2d34920
 ```
 
 ### `dpkg` source package: `apt=1.0.1ubuntu2.17`
@@ -5693,14 +5693,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.20-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc 3452 SHA256:cc84750137f915e72c2df2d1618d2b7b76d5c02a5e353a02f994820485ac3a5d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20.orig.tar.gz' postgresql-9.3_9.3.20.orig.tar.gz 22456142 SHA256:df566b52d8c40ec38458526beced7f5e08ee394d34f5738ee6b17aef43484262
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz 33655 SHA256:7be95e972c6db6ee6084177667b734898bb308ff0944339628a07bfdc94cd5b4
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -6012,13 +6007,9 @@ Licenses: (parsed from: `/usr/share/doc/resolvconf/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.dsc' resolvconf_1.69ubuntu1.3.dsc 1780 SHA256:e092233473f92df83c19c85d86999e7eee3f0f5a94e56793578a2e053bb8e402
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.tar.xz' resolvconf_1.69ubuntu1.3.tar.xz 73196 SHA256:608101093f01767a342c5caa2ac4968762d7b92d52c0d0e939384d2122f329c3
-```
 
 ### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
 

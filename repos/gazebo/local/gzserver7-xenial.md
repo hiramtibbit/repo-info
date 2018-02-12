@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ec8107bc650e37a9f383bf4619a9e47fc520985293d8ea2474f3486565bd23c`
-- Created: `2018-01-25T20:05:59.186448979Z`
-- Virtual Size: ~ 571.94 Mb  
+- Image ID: `sha256:d0d5ce1a1da0999fb86d459cd7224c1180013e036214b5f6b6e52f8a11465164`
+- Created: `2018-02-10T01:17:13.914115901Z`
+- Virtual Size: ~ 574.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -66,14 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
-```
 
 ### `dpkg` source package: `apt=1.2.24`
 
@@ -470,12 +465,12 @@ $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.5`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.6`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.5`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.5`
+- `libcurl3:amd64=7.47.0-1ubuntu2.6`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -486,9 +481,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.dsc' curl_7.47.0-1ubuntu2.6.dsc 2713 SHA256:6f0c754431a0d59684e149ebb69a174d7ba37f4caa424845164baf14a899c035
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.debian.tar.xz' curl_7.47.0-1ubuntu2.6.debian.tar.xz 47148 SHA256:9b5f48817215f5cf95e7b96f2aa71a6acbb1f956f13eb500e66b57de230821fb
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -921,14 +921,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.9.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.10.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.9.0-1~xenial`
-- `gazebo7-common=7.9.0-1~xenial`
-- `gazebo7-plugin-base=7.9.0-1~xenial`
-- `libgazebo7:amd64=7.9.0-1~xenial`
+- `gazebo7=7.10.0-1~xenial`
+- `gazebo7-common=7.10.0-1~xenial`
+- `gazebo7-plugin-base=7.10.0-1~xenial`
+- `libgazebo7:amd64=7.10.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`)
 
@@ -948,15 +948,15 @@ Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gaze
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.5`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.6`
 
 Binary Packages:
 
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.5`
-- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.5`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.5`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.5`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.5`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.6`
+- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.6`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.6`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.6`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -966,9 +966,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.6.dsc' gcc-5_5.4.0-6ubuntu1~16.04.6.dsc 28664 SHA256:8489a40e62414ea9b2c7008dae90cca6ba7c87aaa602b80cadcc80ab7552bb1f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.6.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.6.diff.gz 1464103 SHA256:56173e9d7110ead011df0a312414dc7321e66460abdcf032cc0826d6cb09229f
+```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
 
@@ -2416,11 +2421,11 @@ $ apt-get source -qq --print-uris libtar=1.2.20-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/libt/libtar/libtar_1.2.20-4.debian.tar.xz' libtar_1.2.20-4.debian.tar.xz 10164 SHA256:8b083e28886f43ff95571508c3805c98b58f70777eecdefd1c18768ab4b37e81
 ```
 
-### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.2`
+### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.3`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.2`
+- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -2429,9 +2434,14 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.dsc' libtasn1-6_4.7-3ubuntu0.16.04.3.dsc 2495 SHA256:53a43e4795381eca289ba755fc806822373f31f2bbc6f12ae7f6d32c2e7c710a
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz 60468 SHA256:aeed7264d288f57c858fb247f94920c1157a840c03fd27c7eaa3d6a6e36a66d7
+```
 
 ### `dpkg` source package: `libtheora=1.1.1+dfsg.1-8`
 
@@ -3645,11 +3655,11 @@ $ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.6
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.6.debian.tar.xz' poppler_0.41.0-0ubuntu1.6.debian.tar.xz 44340 SHA256:b737886ddeae499afbc71545d26b1989e3f9d2e4918468a4344e6fe00ef5baa5
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.10-0ubuntu0.16.04`
+### `dpkg` source package: `postgresql-9.5=9.5.11-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `libpq5:amd64=9.5.10-0ubuntu0.16.04`
+- `libpq5:amd64=9.5.11-0ubuntu0.16.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -3663,10 +3673,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.10-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.10-0ubuntu0.16.04.dsc 3653 SHA256:427b32e356ac50c7fe0f9693ea3c21d74e81ed9e37618677b9b703936a471317
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10.orig.tar.gz' postgresql-9.5_9.5.10.orig.tar.gz 24425387 SHA256:72dfef486c5a411380ef66bb77a8d045193f695b39e8c8700bd8fc7946e23b0a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.10-0ubuntu0.16.04.debian.tar.xz 23068 SHA256:ded9a14f0b518d30fbe7dd6d84e5c97fa306d0d6414e187cf8e310b0df12faef
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.11-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.11-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.11-0ubuntu0.16.04.dsc 3651 SHA256:e471bc820d6428a0923ea8d6a0c208d9de9c6c25d6fb97e9588897189150df16
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.11.orig.tar.gz' postgresql-9.5_9.5.11.orig.tar.gz 24258303 SHA256:3ca83d65067e347cd59642260027cf8a4eda26bc3507cbca1815780d3e9a3911
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.11-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.11-0ubuntu0.16.04.debian.tar.xz 23184 SHA256:32672fd676560418457e422b8b056ca10113cb5a0d9b90711fe358bd0d98a3cb
 ```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
@@ -3911,11 +3921,11 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat4/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `sdformat5=5.3.0-1~xenial`
+### `dpkg` source package: `sdformat6=6.0.0-1~xenial`
 
 Binary Packages:
 
-- `sdformat-sdf=5.3.0-1~xenial`
+- `sdformat-sdf=6.0.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -3923,9 +3933,13 @@ Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sdformat6=6.0.0-1~xenial
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.dsc' sdformat6_6.0.0-1~xenial.dsc 1111 SHA256:194f94a6313f11085080ae5a163184287acc1d28a9bf2e6c57ab51f351210e64
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.tar.xz' sdformat6_6.0.0-1~xenial.tar.xz 421848 SHA256:752976d9c0958fbe9aaedca4e8dc200a5f7359447839defb85db0feeef0f1d70
+```
 
 ### `dpkg` source package: `sed=4.2.2-7`
 

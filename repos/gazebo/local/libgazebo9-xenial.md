@@ -86,14 +86,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
-```
 
 ### `dpkg` source package: `apt=1.2.24`
 
@@ -5467,14 +5462,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.10-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.10-0ubuntu0.16.04.dsc 3653 SHA256:427b32e356ac50c7fe0f9693ea3c21d74e81ed9e37618677b9b703936a471317
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10.orig.tar.gz' postgresql-9.5_9.5.10.orig.tar.gz 24425387 SHA256:72dfef486c5a411380ef66bb77a8d045193f695b39e8c8700bd8fc7946e23b0a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.10-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.10-0ubuntu0.16.04.debian.tar.xz 23068 SHA256:ded9a14f0b518d30fbe7dd6d84e5c97fa306d0d6414e187cf8e310b0df12faef
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 
