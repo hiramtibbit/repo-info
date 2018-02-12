@@ -1,9 +1,9 @@
-# `bash:4.4.18`
+# `bash:4.4.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:16c7ca5e72839f912fce892e217ed84b0333732d8e0092e8bc99c4c1f7ac4b93`
-- Created: `2018-02-01T01:30:39.548622511Z`
+- Image ID: `sha256:59507b30b48ad1faa1fa804b635b1fe0d17c60315722d622d1ed89ca1481192b`
+- Created: `2018-02-09T00:41:45.742927737Z`
 - Virtual Size: ~ 12.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,4 +14,4 @@
   - `_BASH_GPG_KEY=7C0135FB088AAF6C66C650B9BB5869F064EA74AB`
   - `_BASH_VERSION=4.4`
   - `_BASH_PATCH_LEVEL=18`
-  - `_BASH_LATEST_PATCH=18`
+  - `_BASH_LATEST_PATCH=19`
