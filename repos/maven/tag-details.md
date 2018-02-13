@@ -28,6 +28,8 @@
 -	[`maven:3.5-ibmjava-9`](#maven35-ibmjava-9)
 -	[`maven:3.5-ibmjava-9-alpine`](#maven35-ibmjava-9-alpine)
 -	[`maven:3.5-ibmjava-alpine`](#maven35-ibmjava-alpine)
+-	[`maven:3.5-jdk-10`](#maven35-jdk-10)
+-	[`maven:3.5-jdk-10-slim`](#maven35-jdk-10-slim)
 -	[`maven:3.5-jdk-7`](#maven35-jdk-7)
 -	[`maven:3.5-jdk-7-alpine`](#maven35-jdk-7-alpine)
 -	[`maven:3.5-jdk-7-slim`](#maven35-jdk-7-slim)
@@ -42,6 +44,8 @@
 -	[`maven:3-ibmjava-8-alpine`](#maven3-ibmjava-8-alpine)
 -	[`maven:3-ibmjava-9`](#maven3-ibmjava-9)
 -	[`maven:3-ibmjava-9-alpine`](#maven3-ibmjava-9-alpine)
+-	[`maven:3-jdk-10`](#maven3-jdk-10)
+-	[`maven:3-jdk-10-slim`](#maven3-jdk-10-slim)
 -	[`maven:3-jdk-7`](#maven3-jdk-7)
 -	[`maven:3-jdk-7-alpine`](#maven3-jdk-7-alpine)
 -	[`maven:3-jdk-7-slim`](#maven3-jdk-7-slim)
@@ -13418,6 +13422,14 @@ CMD ["mvn"]
 		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `maven:3.5-jdk-10`
+
+**does not exist** (yet?)
+
+## `maven:3.5-jdk-10-slim`
+
+**does not exist** (yet?)
+
 ## `maven:3.5-jdk-7`
 
 ```console
@@ -21624,6 +21636,14 @@ CMD ["mvn"]
 		Last Modified: Wed, 10 Jan 2018 06:20:39 GMT  
 		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `maven:3-jdk-10`
+
+**does not exist** (yet?)
+
+## `maven:3-jdk-10-slim`
+
+**does not exist** (yet?)
 
 ## `maven:3-jdk-7`
 
