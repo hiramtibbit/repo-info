@@ -68,6 +68,30 @@
 -	[`haxe:3.4-onbuild`](#haxe34-onbuild)
 -	[`haxe:3.4-stretch`](#haxe34-stretch)
 -	[`haxe:3.4-windowsservercore`](#haxe34-windowsservercore)
+-	[`haxe:4.0`](#haxe40)
+-	[`haxe:4.0.0`](#haxe400)
+-	[`haxe:4.0.0-alpine`](#haxe400-alpine)
+-	[`haxe:4.0.0-alpine3.6`](#haxe400-alpine36)
+-	[`haxe:4.0.0-alpine3.7`](#haxe400-alpine37)
+-	[`haxe:4.0.0-jessie`](#haxe400-jessie)
+-	[`haxe:4.0.0-onbuild`](#haxe400-onbuild)
+-	[`haxe:4.0.0-preview.2`](#haxe400-preview2)
+-	[`haxe:4.0.0-preview.2-alpine`](#haxe400-preview2-alpine)
+-	[`haxe:4.0.0-preview.2-alpine3.6`](#haxe400-preview2-alpine36)
+-	[`haxe:4.0.0-preview.2-alpine3.7`](#haxe400-preview2-alpine37)
+-	[`haxe:4.0.0-preview.2-jessie`](#haxe400-preview2-jessie)
+-	[`haxe:4.0.0-preview.2-onbuild`](#haxe400-preview2-onbuild)
+-	[`haxe:4.0.0-preview.2-stretch`](#haxe400-preview2-stretch)
+-	[`haxe:4.0.0-preview.2-windowsservercore`](#haxe400-preview2-windowsservercore)
+-	[`haxe:4.0.0-stretch`](#haxe400-stretch)
+-	[`haxe:4.0.0-windowsservercore`](#haxe400-windowsservercore)
+-	[`haxe:4.0-alpine`](#haxe40-alpine)
+-	[`haxe:4.0-alpine3.6`](#haxe40-alpine36)
+-	[`haxe:4.0-alpine3.7`](#haxe40-alpine37)
+-	[`haxe:4.0-jessie`](#haxe40-jessie)
+-	[`haxe:4.0-onbuild`](#haxe40-onbuild)
+-	[`haxe:4.0-stretch`](#haxe40-stretch)
+-	[`haxe:4.0-windowsservercore`](#haxe40-windowsservercore)
 -	[`haxe:latest`](#haxelatest)
 
 ## `haxe:3.1`
@@ -5652,6 +5676,102 @@ CMD ["haxe"]
 		Last Modified: Wed, 07 Feb 2018 09:23:53 GMT  
 		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:4.0`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-alpine3.6`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-alpine3.7`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-jessie`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-onbuild`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-alpine`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-alpine3.6`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-alpine3.7`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-jessie`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-onbuild`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-stretch`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-preview.2-windowsservercore`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-stretch`
+
+**does not exist** (yet?)
+
+## `haxe:4.0.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-alpine`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-alpine3.6`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-alpine3.7`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-jessie`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-onbuild`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-stretch`
+
+**does not exist** (yet?)
+
+## `haxe:4.0-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `haxe:latest`
 
