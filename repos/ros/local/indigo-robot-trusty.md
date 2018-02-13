@@ -4690,14 +4690,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.20-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.20-0ubuntu0.14.04.dsc 3452 SHA256:cc84750137f915e72c2df2d1618d2b7b76d5c02a5e353a02f994820485ac3a5d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20.orig.tar.gz' postgresql-9.3_9.3.20.orig.tar.gz 22456142 SHA256:df566b52d8c40ec38458526beced7f5e08ee394d34f5738ee6b17aef43484262
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.20-0ubuntu0.14.04.debian.tar.gz 33655 SHA256:7be95e972c6db6ee6084177667b734898bb308ff0944339628a07bfdc94cd5b4
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -5289,13 +5284,9 @@ Licenses: (parsed from: `/usr/share/doc/resolvconf/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.dsc' resolvconf_1.69ubuntu1.3.dsc 1780 SHA256:e092233473f92df83c19c85d86999e7eee3f0f5a94e56793578a2e053bb8e402
-'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.3.tar.xz' resolvconf_1.69ubuntu1.3.tar.xz 73196 SHA256:608101093f01767a342c5caa2ac4968762d7b92d52c0d0e939384d2122f329c3
-```
 
 ### `dpkg` source package: `ros-indigo-actionlib-msgs=1.11.9-0trusty-20170313-063739-0700`
 
