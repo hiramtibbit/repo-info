@@ -616,21 +616,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.6-4
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-4.dsc' cups_2.2.6-4.dsc 3372 SHA256:fba2031161ca8fb7eec37061b16830f89e8d7b43da7820972d8160c0051d0270
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz' cups_2.2.6.orig.tar.gz 10315433 SHA256:40385778c2b3bdf55030d1c999734e22774c79e3425d91339ce677825620169b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz.asc' cups_2.2.6.orig.tar.gz.asc 850 SHA256:1f6cccf87c20951f4181efab9d3767c4747cf5127744aa918156afb9cd0b8ca7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-4.debian.tar.xz' cups_2.2.6-4.debian.tar.xz 350308 SHA256:c233014158e443a5a449a658243bd204c9207b748187f88d09a1668f3d7f140e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.6-4/
 
-- https://sources.debian.net/src/cups/2.2.6-4/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.6-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.6-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `d-conf=0.26.1-2`
 
