@@ -313,13 +313,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.4ubuntu1.dsc' dpkg_1.19.0.4ubuntu1.dsc 2052 SHA256:26725402d902306aa6839b8cea38eaa13348079087cce88b7e3235fc3fe2c02e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.4ubuntu1.tar.xz' dpkg_1.19.0.4ubuntu1.tar.xz 4571364 SHA256:84f615657e1721cd274bfa8090cebe62fef6489b1bd9263b524dbaede0bd3014
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.8-1ubuntu1`
 
@@ -376,14 +372,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-18ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-18ubuntu2.dsc' gcc-7_7.2.0-18ubuntu2.dsc 37381 SHA256:9523ca941bdc81fd43393a9fce0c0232ff775ec7cc12656f71dad0a5a2c0fb50
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-18ubuntu2.diff.gz' gcc-7_7.2.0-18ubuntu2.diff.gz 2782331 SHA256:4a5b56ff868a3ec279937733d6f93d039a0b871bc5eb2338b729a05a90a12d77
-```
 
 ### `dpkg` source package: `glibc=2.26-0ubuntu2`
 
@@ -744,14 +735,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.7-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7-2.dsc' libselinux_2.7-2.dsc 2369 SHA256:09e23dce37d309751db1b5a411a330c6fac9f392a67e56ce943bad88757af1df
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7.orig.tar.gz' libselinux_2.7.orig.tar.gz 187574 SHA256:d0fec0769b3ad60aa7baf9b9a4b7a056827769dc2dadda0dc0eb59b3d1c18c57
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7-2.debian.tar.xz' libselinux_2.7-2.debian.tar.xz 23044 SHA256:acd5c8f6607a5b10aeaa705214ea4924939cbe2de7cce174eccf5973c6f92771
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/2.7-2/
+
 
 ### `dpkg` source package: `libsemanage=2.7-2`
 
@@ -998,14 +988,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-8.dsc' pcre3_8.39-8.dsc 2224 SHA256:df5cb56bc8ec81483f6b32eb5560fc58ceb489b9b4f04c86a16d828b4d96ae54
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-8.debian.tar.gz' pcre3_8.39-8.debian.tar.gz 26254 SHA256:fc29d4e5b4fc1bd763613afe9f314dad50c57ad930bee616208d016f9699d243
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pcre3/2:8.39-8/
+
 
 ### `dpkg` source package: `perl=5.26.1-3`
 
@@ -1066,14 +1055,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.0.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-3.dsc' pinentry_1.0.0-3.dsc 2608 SHA256:c296bb85066d7a4b0ba33f9fc344b2cf86426d93ad2ff0b2df52c76cef1ca610
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0.orig.tar.bz2' pinentry_1.0.0.orig.tar.bz2 436930 SHA256:1672c2edc1feb036075b187c0773787b2afd0544f55025c645a71b4c2f79275a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-3.debian.tar.xz' pinentry_1.0.0-3.debian.tar.xz 30148 SHA256:da66b517e0f2d2d6dcad80db7b53dfa052b6771ce598443c61529b7bf4143cde
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pinentry/1.0.0-3/
+
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
