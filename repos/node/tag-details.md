@@ -93,6 +93,10 @@
 -	[`node:carbon-slim`](#nodecarbon-slim)
 -	[`node:carbon-stretch`](#nodecarbon-stretch)
 -	[`node:carbon-wheezy`](#nodecarbon-wheezy)
+-	[`node:chakracore`](#nodechakracore)
+-	[`node:chakracore-8`](#nodechakracore-8)
+-	[`node:chakracore-8.9`](#nodechakracore-89)
+-	[`node:chakracore-8.9.4`](#nodechakracore-894)
 -	[`node:latest`](#nodelatest)
 -	[`node:onbuild`](#nodeonbuild)
 -	[`node:slim`](#nodeslim)
@@ -31740,6 +31744,22 @@ CMD ["node"]
 		Last Modified: Wed, 03 Jan 2018 20:04:14 GMT  
 		Size: 1.0 MB (1010346 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:chakracore`
+
+**does not exist** (yet?)
+
+## `node:chakracore-8`
+
+**does not exist** (yet?)
+
+## `node:chakracore-8.9`
+
+**does not exist** (yet?)
+
+## `node:chakracore-8.9.4`
+
+**does not exist** (yet?)
 
 ## `node:latest`
 
