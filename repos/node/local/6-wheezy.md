@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:afa08e5f6d924d44a074015a2b83ee998abb9e40b7c4c1b5ac0c485ac21db628`
-- Created: `2018-01-03T19:59:22.593405015Z`
+- Image ID: `sha256:e7da1723b8e9619d7481eb672313c0adeced355f2a6ebeee75abadd709886cc2`
+- Created: `2018-02-14T03:05:27.129593319Z`
 - Virtual Size: ~ 516.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2337,20 +2337,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.36.1-2+deb7u2
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u2.dsc' librsvg_2.36.1-2+deb7u2.dsc 2768 SHA256:9e71dc19bfbebb7de460af97c16daa6a2bf9a27227bce9a251814209861448e5
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1.orig.tar.xz' librsvg_2.36.1.orig.tar.xz 506184 SHA256:786b95e1a091375c5ef2997a21c69ff24d7077afeff18197355f54d9dcbcd8c5
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u2.debian.tar.gz' librsvg_2.36.1-2+deb7u2.debian.tar.gz 23005 SHA256:fb8ceddfd8cef8bd2c05bb69cc041a924d335b25454fc9adf83b51046b0a6a20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.36.1-2+deb7u2/
 
-- https://sources.debian.net/src/librsvg/2.36.1-2+deb7u2/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.36.1-2+deb7u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.36.1-2+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.1.9-5`
 
