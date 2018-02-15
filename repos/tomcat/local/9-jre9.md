@@ -1,10 +1,10 @@
-# `tomcat:9.0.4-jre9`
+# `tomcat:9.0.5-jre9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a93d818a4e7e9ae47bd45fa9960b643a9ac8e724a1a6cbd5e1757eb17940d261`
-- Created: `2018-01-23T22:01:44.689961681Z`
-- Virtual Size: ~ 714.34 Mb  
+- Image ID: `sha256:ce49da2b3bdb3e550c0c22617f0964d229138ced58b12e3a4279d7410bccddef`
+- Created: `2018-02-13T00:58:50.775090018Z`
+- Virtual Size: ~ 714.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.4`
-  - `TOMCAT_SHA1=7f2f7908ee7a1b097fca50690786ed5bf386b24c`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.5`
+  - `TOMCAT_SHA1=88bb9715527d8d3aeacf3f1c06b3acc279c7f5a1`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.5/bin/apache-tomcat-9.0.5.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1182,15 +1182,44 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/gcc-5/5.5.0-5/
 
 
-### `dpkg` source package: `gcc-7=7.2.0-20`
+### `dpkg` source package: `gcc-6=6.4.0-11`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.2.0-20`
-- `libgcc1:amd64=1:7.2.0-20`
-- `libstdc++6:amd64=7.2.0-20`
+- `gcc-6-base:amd64=6.4.0-11`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
+
+- `Artistic`
+- `GFDL-1.2`
+- `GPL`
+- `GPL-2`
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gcc-6=6.4.0-11
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.dsc' gcc-6_6.4.0-11.dsc 24919 SHA256:a2c02831860d24fc6a2633743579d7d685bf5abc58ce9849c0af9901aa936a72
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-11.diff.gz' gcc-6_6.4.0-11.diff.gz 1776760 SHA256:783228233bafe64f29746d602dcc5e7da3c89258dc70018d47b1212f0b38a820
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gcc-6/6.4.0-11/ (for browsing the source)
+- https://sources.debian.net/src/gcc-6/6.4.0-11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-6/6.4.0-11/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gcc-8=8-20180207-2`
+
+Binary Packages:
+
+- `gcc-8-base:amd64=8-20180207-2`
+- `libgcc1:amd64=1:8-20180207-2`
+- `libstdc++6:amd64=8-20180207-2`
+
+Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1202,17 +1231,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-20
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-20.dsc' gcc-7_7.2.0-20.dsc 33202 SHA256:c698cace7da07983bd7c5b0f5ed75533e5bf3538922de198e3c4c5879cc0cf6b
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-20.diff.gz' gcc-7_7.2.0-20.diff.gz 2944445 SHA256:14853e9fd393a02f1d2e8571b7df0f62ad6b965b89bdeb5179778ff0935f811b
+$ apt-get source -qq --print-uris gcc-8=8-20180207-2
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.dsc' gcc-8_8-20180207-2.dsc 32286 SHA256:01cec1c9c93eb9bee7e95abb898819c4ea73282ff476d8ad50135d492039cfbd
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207.orig.tar.gz' gcc-8_8-20180207.orig.tar.gz 68861430 SHA256:76ba2cbcb59b47bbd8f99be165c1c277ad4b17710a3ad7e05b1fb0862e65d4bb
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.diff.gz' gcc-8_8-20180207-2.diff.gz 600053 SHA256:13db91cc266dfb20e4833311fdf8ff37b190d895cc12f242b82abf2f0e0a978d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-7/7.2.0-20/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-20/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-8/8-20180207-2/ (for browsing the source)
+- https://sources.debian.net/src/gcc-8/8-20180207-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-8/8-20180207-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
@@ -1348,12 +1377,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.25-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.25-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.26-4`
+### `dpkg` source package: `glibc=2.26-6`
 
 Binary Packages:
 
-- `libc-bin=2.26-4`
-- `libc6:amd64=2.26-4`
+- `libc-bin=2.26-6`
+- `libc6:amd64=2.26-6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1363,17 +1392,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.26-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.26-4.dsc' glibc_2.26-4.dsc 8799 SHA256:4b551de8b7ecc553a6464e022c63b8118d8879a16305ba562dc5153dad2f148c
+$ apt-get source -qq --print-uris glibc=2.26-6
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.26-6.dsc' glibc_2.26-6.dsc 8837 SHA256:c6030c9c664ae69f5919db52d138f334b6b876eccb2dc8ae564658ab4839ed2a
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.26.orig.tar.xz' glibc_2.26.orig.tar.xz 15270760 SHA256:38afc835050aa0850fbe15b10a7b18b7c1c70dc5a2fdf980762f3ad49e771870
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.26-4.debian.tar.xz' glibc_2.26-4.debian.tar.xz 1085352 SHA256:3e3385262c977489a5bd4f141233afb5d8bd06b9efcf07bb5547b7ffb5350b2d
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.26-6.debian.tar.xz' glibc_2.26-6.debian.tar.xz 1095568 SHA256:8a0dfd5f6a1e25ecd143c74abecb4604c089f1ca4aac7efaf2988d7945eef9ec
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.26-4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.26-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.26-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.26-6/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.26-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.26-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1.1`
 
@@ -1428,21 +1457,21 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.4-1`
+### `dpkg` source package: `gnupg2=2.2.4-3`
 
 Binary Packages:
 
-- `dirmngr=2.2.4-1`
-- `gnupg=2.2.4-1`
-- `gnupg-l10n=2.2.4-1`
-- `gnupg-utils=2.2.4-1`
-- `gpg=2.2.4-1`
-- `gpg-agent=2.2.4-1`
-- `gpg-wks-client=2.2.4-1`
-- `gpg-wks-server=2.2.4-1`
-- `gpgconf=2.2.4-1`
-- `gpgsm=2.2.4-1`
-- `gpgv=2.2.4-1`
+- `dirmngr=2.2.4-3`
+- `gnupg=2.2.4-3`
+- `gnupg-l10n=2.2.4-3`
+- `gnupg-utils=2.2.4-3`
+- `gpg=2.2.4-3`
+- `gpg-agent=2.2.4-3`
+- `gpg-wks-client=2.2.4-3`
+- `gpg-wks-server=2.2.4-3`
+- `gpgconf=2.2.4-3`
+- `gpgsm=2.2.4-3`
+- `gpgv=2.2.4-3`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1458,13 +1487,20 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.4-3
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.dsc' gnupg2_2.2.4-3.dsc 2885 SHA256:e8fb508a526d1c0ba88c29975ec09fd7b28708f1af93def38bf3caba21b7589c
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.debian.tar.bz2' gnupg2_2.2.4-3.debian.tar.bz2 71771 SHA256:aff6757f4ebd3dcb5d18d1762818af0ad101b8ed1e4ffcb694de627d830ae90a
+```
 
-- http://snapshot.debian.org/package/gnupg2/2.2.4-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnupg2/2.2.4-3/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.4-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.16-1`
 
@@ -4323,7 +4359,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `perl-base=5.26.1-4`
+- `perl-base=5.26.1-4+b1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -4839,11 +4875,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.30.2-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.30.2-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.30.2-0.3`
+### `dpkg` source package: `util-linux=2.31.1-0.1`
 
 Binary Packages:
 
-- `libuuid1:amd64=2.30.2-0.3`
+- `libuuid1:amd64=2.31.1-0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 
@@ -4864,20 +4900,13 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.30.2-0.3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.dsc' util-linux_2.30.2-0.3.dsc 3640 SHA256:605b70379440e144fbad2e4496662e0bd2e9210ba27d7f5cddddb2a36d0f3953
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2.orig.tar.xz' util-linux_2.30.2.orig.tar.xz 4442624 SHA256:7b5be5489e9b5b7177832836467aba1c87bf0e9bcbcb5a6f35d76cd4782589dc
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.debian.tar.xz' util-linux_2.30.2-0.3.debian.tar.xz 79396 SHA256:ce66166c377c0a2ed5a32f0b51b91f43bfdd11f5d6ff51572fc667ef0961e5f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.31.1-0.1/
 
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.30.2-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wayland=1.14.0-1`
 
@@ -4905,24 +4934,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.14.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.19.3-2`
+### `dpkg` source package: `wget=1.19.4-1`
 
 Binary Packages:
 
-- `wget=1.19.3-2`
+- `wget=1.19.4-1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.19.4-1
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.dsc' wget_1.19.4-1.dsc 2158 SHA256:14616d5aeaf1d8262b56edb6aa4541b0f0d85cf0de708d777f049adf4ad844a5
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz' wget_1.19.4.orig.tar.gz 4310657 SHA256:93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz.asc' wget_1.19.4.orig.tar.gz.asc 1241 SHA256:ee273f3a27adb2d2dc02ba346759ce95cb74ded959853a8a9c9be5ae44d10fcb
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.debian.tar.xz' wget_1.19.4-1.debian.tar.xz 60172 SHA256:829c85dc5cd545e5f260c1715bffd9999f420dd8bb5b00def30acc068c1bf00a
+```
 
-- http://snapshot.debian.org/package/wget/1.19.3-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.19.4-1/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.19.4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.19.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11-utils=7.7+3`
 
