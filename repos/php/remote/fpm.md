@@ -1,7 +1,7 @@
 ## `php:fpm`
 
 ```console
-$ docker pull php@sha256:b867e9a542d83dc3fe3b5f2d7b2246288ae0e02445512e000e88d1cf84092541
+$ docker pull php@sha256:d1edae9ee662b51ef38db721c845ae3876e32f4c8b34df4e875d75e6de32add2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -230,108 +230,108 @@ CMD ["php-fpm"]
 ### `php:fpm` - linux; arm variant v7
 
 ```console
-$ docker pull php@sha256:a1cc6915c4eaeea2272fba1bd67971768fe59ae04c42501d77e025685707d1d4
+$ docker pull php@sha256:c06b006e89822f142054c4711017f58f2b38451175e1279fd189a03409839603
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.9 MB (111901829 bytes)**  
+-	Total Size: **111.6 MB (111583519 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b32d58b41b2e7a7c5267478dc0d180c84972dbc85ac5ea4cb859bd5910e54660`
+-	Image ID: `sha256:d230650609614dafd69eae75cb7d9f692334d354ecefa50f07d81d446e30abf5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 13:33:42 GMT
-ADD file:cfde12259adb7102e76690e986f1b9b07967a8984c85d0cead09969f5de8b8cc in / 
-# Tue, 12 Dec 2017 13:33:42 GMT
+# Thu, 15 Feb 2018 13:31:27 GMT
+ADD file:46d299c1b94cf1c7078a9ae99d4614ead151ede9dfedcf4c70385710c07610bc in / 
+# Thu, 15 Feb 2018 13:31:27 GMT
 CMD ["bash"]
-# Wed, 20 Dec 2017 12:48:28 GMT
+# Thu, 15 Feb 2018 14:42:58 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Wed, 20 Dec 2017 12:48:29 GMT
+# Thu, 15 Feb 2018 14:42:58 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 04 Jan 2018 12:48:53 GMT
+# Thu, 15 Feb 2018 14:43:22 GMT
 RUN apt-get update && apt-get install -y 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Thu, 04 Jan 2018 12:48:54 GMT
+# Thu, 15 Feb 2018 14:43:22 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 04 Jan 2018 12:48:55 GMT
+# Thu, 15 Feb 2018 14:43:23 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Thu, 04 Jan 2018 12:55:35 GMT
+# Thu, 15 Feb 2018 14:53:01 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Thu, 04 Jan 2018 12:55:36 GMT
+# Thu, 15 Feb 2018 14:53:01 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Thu, 04 Jan 2018 12:55:36 GMT
+# Thu, 15 Feb 2018 14:53:01 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Thu, 04 Jan 2018 12:55:36 GMT
+# Thu, 15 Feb 2018 14:53:02 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Thu, 04 Jan 2018 12:55:36 GMT
+# Thu, 15 Feb 2018 14:53:02 GMT
 ENV GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F
-# Wed, 07 Feb 2018 12:55:04 GMT
+# Thu, 15 Feb 2018 14:53:03 GMT
 ENV PHP_VERSION=7.2.2
-# Wed, 07 Feb 2018 12:55:04 GMT
+# Thu, 15 Feb 2018 14:53:03 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.2.2.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.2.2.tar.xz.asc/from/this/mirror
-# Wed, 07 Feb 2018 12:55:05 GMT
+# Thu, 15 Feb 2018 14:53:03 GMT
 ENV PHP_SHA256=47d7607d38a1d565fc43ea942c92229a7cd165f156737f210937e375b243cb11 PHP_MD5=
-# Wed, 07 Feb 2018 12:55:47 GMT
+# Thu, 15 Feb 2018 14:53:15 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Wed, 07 Feb 2018 12:55:47 GMT
+# Thu, 15 Feb 2018 14:53:15 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Wed, 07 Feb 2018 12:58:49 GMT
+# Thu, 15 Feb 2018 14:56:22 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-0-dev 		libcurl4-openssl-dev 		libedit-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Wed, 07 Feb 2018 12:58:50 GMT
+# Thu, 15 Feb 2018 14:56:23 GMT
 COPY multi:f9544e5c6b9d1d1292fca43464fe1e77b631547ac2baa8503de318853c0536d0 in /usr/local/bin/ 
-# Wed, 07 Feb 2018 12:58:50 GMT
+# Thu, 15 Feb 2018 14:56:23 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 07 Feb 2018 12:58:51 GMT
+# Thu, 15 Feb 2018 14:56:24 GMT
 WORKDIR /var/www/html
-# Wed, 07 Feb 2018 12:58:51 GMT
+# Thu, 15 Feb 2018 14:56:25 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 07 Feb 2018 12:58:52 GMT
+# Thu, 15 Feb 2018 14:56:25 GMT
 EXPOSE 9000/tcp
-# Wed, 07 Feb 2018 12:58:52 GMT
+# Thu, 15 Feb 2018 14:56:25 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:cd8b673adb84fd5eae3444d0475addad7e8908a8332704c4407baa97e9b0b284`  
-		Last Modified: Tue, 12 Dec 2017 13:45:48 GMT  
-		Size: 19.3 MB (19271028 bytes)  
+	-	`sha256:235baf89a76b73bd04542508f7769803ecd00e0b8c71046ada69fb9d17f02496`  
+		Last Modified: Thu, 15 Feb 2018 13:41:58 GMT  
+		Size: 19.3 MB (19286085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:477433fde3a8ac52d95956a634c8c5402551ecb3581f8844b5f73b29d062fe10`  
-		Last Modified: Wed, 20 Dec 2017 13:49:50 GMT  
-		Size: 226.0 B  
+	-	`sha256:32d136c39921eb19eb0f3654d62f16a1ede52d4d279942e062f150e240d91cee`  
+		Last Modified: Thu, 15 Feb 2018 15:52:43 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7db832138da4f55b7c04ce44fa591f1fcaa59e6577395c9292a211886fadc88`  
-		Last Modified: Thu, 04 Jan 2018 13:49:45 GMT  
-		Size: 53.6 MB (53595657 bytes)  
+	-	`sha256:ba0ae74bb2646cc6d2c0452657333b9f77c59761920733d1fda9f0e15586ec3d`  
+		Last Modified: Thu, 15 Feb 2018 15:52:59 GMT  
+		Size: 53.6 MB (53595806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ba11b6ee86cb1b9075da9437055b3cd5561272ccc9b8d0f0cb738fc2e2cf02`  
-		Last Modified: Thu, 04 Jan 2018 13:49:28 GMT  
+	-	`sha256:c98586f46576a14c4b856e0fd5686b2c143d3dbcdf2ccc790edf458cb098418f`  
+		Last Modified: Thu, 15 Feb 2018 15:52:41 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:859f69a33921ca63fc172e56fece09f34afabcf139bb143b82e4c01c0bf0fcd1`  
-		Last Modified: Wed, 07 Feb 2018 13:22:29 GMT  
-		Size: 12.3 MB (12347596 bytes)  
+	-	`sha256:21eca25d9803f66cd2df9e8e8eb7f29fe41467c1935a19f35ac666b21aab622d`  
+		Last Modified: Thu, 15 Feb 2018 15:58:02 GMT  
+		Size: 12.3 MB (12347544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc703e9d7a2627ff80d24eeaa9b27700d0a91dc88691d3f46b4ba4f1a724c987`  
-		Last Modified: Wed, 07 Feb 2018 13:22:27 GMT  
-		Size: 500.0 B  
+	-	`sha256:ed54ccf7d6f0eecf3b0f0e2b561fafbdb329fc4997cc6e0afa7ed8423eb9427f`  
+		Last Modified: Thu, 15 Feb 2018 15:57:59 GMT  
+		Size: 498.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088c5a627277b7a1e8d9c16a6a5dbf7a9befdc3b78c7560150d130c565540b3d`  
-		Last Modified: Wed, 07 Feb 2018 13:22:33 GMT  
-		Size: 26.7 MB (26676555 bytes)  
+	-	`sha256:9b83643241d1ff1dd98c120e5e46ae5fb2ca85a8d99f753e2400c78bbcf51f8f`  
+		Last Modified: Thu, 15 Feb 2018 15:58:07 GMT  
+		Size: 26.3 MB (26343099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bfaf3439451da19c8e3ea34bffa6db464c2a74cbf16037014d57c7325019957`  
-		Last Modified: Wed, 07 Feb 2018 13:22:26 GMT  
-		Size: 2.2 KB (2183 bytes)  
+	-	`sha256:a9cfa39eb9a0885de8ef4877b767926fc4f3caa2b5e0d5c05cab7132113a8d2b`  
+		Last Modified: Thu, 15 Feb 2018 15:57:59 GMT  
+		Size: 2.2 KB (2180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49a1fbd70bd11a3913b4d61e45ae8a5a073ccbe719586de5541ecc172ab62764`  
-		Last Modified: Wed, 07 Feb 2018 13:22:27 GMT  
+	-	`sha256:6dda355813695fb5378a1000413f4419d3223e2659610e9b2846e6022e7db524`  
+		Last Modified: Thu, 15 Feb 2018 15:57:59 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:320081fdc2fbe5c249312bf6ce8bc10a2f9a25252aa92e13f87883e7245ced16`  
-		Last Modified: Wed, 07 Feb 2018 13:22:26 GMT  
-		Size: 7.7 KB (7711 bytes)  
+	-	`sha256:40a0672500b2a9cf3523ee98961e4dd965b080235315cd9c6bdc24b35936afdc`  
+		Last Modified: Thu, 15 Feb 2018 15:57:59 GMT  
+		Size: 7.7 KB (7709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm` - linux; arm64 variant v8
