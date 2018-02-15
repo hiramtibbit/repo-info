@@ -1,7 +1,7 @@
 ## `buildpack-deps:jessie-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:b2edfe07e8f8373b8a0a1e9113dd0e503040cdb8ebf1493d4e6ea3e0e1ac74f0
+$ docker pull buildpack-deps@sha256:33505f723810b71c02beaa0404a167f7630eb00f04d347127c3b7b03a9e24bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -221,33 +221,33 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:jessie-curl` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:6011c035a7a7183a6efa2143b5b3f21db9c99184e3beeecefc33ee354a8c933b
+$ docker pull buildpack-deps@sha256:4830a3dd8d91e2afba780e3209c2a3e31985e05684fa7df5504668a0ad47e22b
 ```
 
--	Docker Version: 17.06.1-ce
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.3 MB (72262241 bytes)**  
+-	Total Size: **72.3 MB (72266907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:496dd6b7d41c8732bb720ab5d965fb55231cfe4374666fc18ce5b8b98f5bf37c`
+-	Image ID: `sha256:bbff54d6e8760ff4d981b6f6cd480b1df1df2a279781ba46d6360214bedd29a8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 06:22:40 GMT
-ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
-# Tue, 12 Dec 2017 06:22:40 GMT
+# Thu, 15 Feb 2018 06:22:37 GMT
+ADD file:aa3302b8380a38a7e51533d16a139a3cc5604bde2e860a555777b2f2d1fc1fec in / 
+# Thu, 15 Feb 2018 06:22:37 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 06:53:37 GMT
+# Thu, 15 Feb 2018 06:50:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 06:53:37 GMT
+# Thu, 15 Feb 2018 06:50:28 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
-		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
-		Size: 52.8 MB (52790322 bytes)  
+	-	`sha256:9c41e82a505c62c52ff8e8d0b157b438dad9642bc97d4389c8156b3dd4ae3b9e`  
+		Last Modified: Thu, 15 Feb 2018 00:56:06 GMT  
+		Size: 52.8 MB (52794833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a54c25ad661f258cad7c32f6c27f8a2ff7d463df9cbd8752d4ec4b8b2d8bfd`  
-		Last Modified: Tue, 12 Dec 2017 07:02:50 GMT  
-		Size: 19.5 MB (19471919 bytes)  
+	-	`sha256:efefd31a422fb0b403b87e38d05eaff8c9155ca71c8861f706f26301e8a74ce8`  
+		Last Modified: Thu, 15 Feb 2018 06:58:44 GMT  
+		Size: 19.5 MB (19472074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
