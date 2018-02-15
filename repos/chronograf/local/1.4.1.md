@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbcaf14f70ed2dc9062a1fd7cd2bb87625a85715b0fab49a7e0109a89df0c753`
-- Created: `2018-01-11T19:27:57.15988578Z`
-- Virtual Size: ~ 104.19 Mb  
+- Image ID: `sha256:2ff8338b5ae0a9a9801d4dd470a472f6468666d83dbad269541d8c736b2d6fc5`
+- Created: `2018-02-14T21:24:03.845640532Z`
+- Virtual Size: ~ 141.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.4.0.1`
+  - `CHRONOGRAF_VERSION=1.4.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -294,11 +294,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.227/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.227/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `chronograf=1.4.0.1-1`
+### `dpkg` source package: `chronograf=1.4.1.2-1`
 
 Binary Packages:
 
-- `chronograf=1.4.0.1-1`
+- `chronograf=1.4.1.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -333,12 +333,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u3`
+### `dpkg` source package: `curl=7.52.1-5+deb9u4`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u3`
-- `libcurl3:amd64=7.52.1-5+deb9u3`
+- `curl=7.52.1-5+deb9u4`
+- `libcurl3:amd64=7.52.1-5+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -352,17 +352,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u3.dsc' curl_7.52.1-5+deb9u3.dsc 2448 SHA256:7a056c950e8e1bc29c1c4274c5eb15e8e1f5aa11fb19f592f85c1abf231701bd
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u3.debian.tar.xz' curl_7.52.1-5+deb9u3.debian.tar.xz 36636 SHA256:8d87edf83116efb052fd66ebafd233499774ab7b6934da6197fbae0c65e12881
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u4
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u4.dsc' curl_7.52.1-5+deb9u4.dsc 2793 SHA256:45d618d610b7c80aca3c86d72f68cfe142b77ce260a1b38c8a1a11ceefe8ce9c
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u4.debian.tar.xz' curl_7.52.1-5+deb9u4.debian.tar.xz 38628 SHA256:50bbcad2b04c6d45a97b85fc78822ad8cf8e3cc0c7d470fa92080e00b59791e1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
