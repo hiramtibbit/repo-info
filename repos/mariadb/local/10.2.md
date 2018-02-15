@@ -1,10 +1,10 @@
-# `mariadb:10.2.12`
+# `mariadb:10.2.13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f76b7e73b0067f1428af74997b679b678b014cbff5c19ab3b1919cb85cde836`
-- Created: `2018-01-04T21:55:13.175413074Z`
-- Virtual Size: ~ 395.95 Mb  
+- Image ID: `sha256:58eaa7e4afb7eb18a5cf5cc906256285bd30fb195c7c735cf0ca7c0254ddcb0b`
+- Created: `2018-02-13T23:11:11.281891428Z`
+- Virtual Size: ~ 395.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.12+maria~jessie`
+  - `MARIADB_VERSION=10.2.13+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -353,10 +353,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u8`
 - `libcurl3-gnutls:amd64=7.38.0-4+deb8u8`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -377,6 +376,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.38.0-4+deb8u8/ (for browsing the source)
 - https://sources.debian.net/src/curl/7.38.0-4+deb8u8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.38.0-4+deb8u8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `curl=7.38.0-4+deb8u9`
+
+Binary Packages:
+
+- `libcurl3:amd64=7.38.0-4+deb8u9`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u9
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.dsc' curl_7.38.0-4+deb8u9.dsc 2669 SHA256:3d5ec4e24e0231cebba82f605e713bf13790b49427902e4dd4f7fc8aa4130d33
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.debian.tar.xz' curl_7.38.0-4+deb8u9.debian.tar.xz 45284 SHA256:60bd8df25ebcbd391b6a1de9692b262fecde1ecf598c9017d2a805b1043d12e4
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -640,11 +667,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.4.2-9/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `galera-3=25.3.22-jessie`
+### `dpkg` source package: `galera-3=25.3.23-jessie`
 
 Binary Packages:
 
-- `galera-3=25.3.22-jessie`
+- `galera-3=25.3.23-jessie`
 
 Licenses: (parsed from: `/usr/share/doc/galera-3/copyright`)
 
@@ -2587,19 +2614,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lvm2/2.02.111-2.2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.2=10.2.12+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.13+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.12+maria~jessie`
-- `libmysqlclient18=10.2.12+maria~jessie`
-- `mariadb-client-10.2=10.2.12+maria~jessie`
-- `mariadb-client-core-10.2=10.2.12+maria~jessie`
-- `mariadb-common=10.2.12+maria~jessie`
-- `mariadb-server=10.2.12+maria~jessie`
-- `mariadb-server-10.2=10.2.12+maria~jessie`
-- `mariadb-server-core-10.2=10.2.12+maria~jessie`
-- `mysql-common=10.2.12+maria~jessie`
+- `libmariadb3=10.2.13+maria~jessie`
+- `libmysqlclient18=10.2.13+maria~jessie`
+- `mariadb-client-10.2=10.2.13+maria~jessie`
+- `mariadb-client-core-10.2=10.2.13+maria~jessie`
+- `mariadb-common=10.2.13+maria~jessie`
+- `mariadb-server=10.2.13+maria~jessie`
+- `mariadb-server-10.2=10.2.13+maria~jessie`
+- `mariadb-server-core-10.2=10.2.13+maria~jessie`
+- `mysql-common=10.2.13+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
