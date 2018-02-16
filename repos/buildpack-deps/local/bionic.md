@@ -1669,14 +1669,13 @@ Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdatrie=0.2.10-6
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdatrie/libdatrie_0.2.10-6.dsc' libdatrie_0.2.10-6.dsc 2285 SHA256:a7aa81f1f45520f3c009502381553799a7adaa4e528023fd35ffcc38ff54babb
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdatrie/libdatrie_0.2.10.orig.tar.xz' libdatrie_0.2.10.orig.tar.xz 294380 SHA256:180eff7b0309ca19a02d5864e744185d715f021398a096fec6cf960f8ebfaa2b
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdatrie/libdatrie_0.2.10-6.debian.tar.xz' libdatrie_0.2.10-6.debian.tar.xz 8488 SHA256:fc8080def08c6314bc70a014ec527e660ed4c13a140da58e1f493a183a03ea78
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libdatrie/0.2.10-6/
+
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -1861,14 +1860,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.0.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.dsc' libidn2_2.0.4-1.dsc 2405 SHA256:1a3f798c046e5d190b5895662bb73888688ca4617ad622c9ea91b72fb6fca8b7
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4.orig.tar.gz' libidn2_2.0.4.orig.tar.gz 2008524 SHA256:644b6b03b285fb0ace02d241d59483d98bc462729d8bb3608d5cad5532f3d2f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.debian.tar.xz' libidn2_2.0.4-1.debian.tar.xz 10284628 SHA256:179d3c8e13f450ccd4d70db4b8acd9f80c5ab08c0202ef757e6e3ab0d61a0e5a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libidn2/2.0.4-1/
+
 
 ### `dpkg` source package: `libidn=1.33-2.1`
 
@@ -2778,14 +2776,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.20-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-1ubuntu1.dsc' mysql-5.7_5.7.20-1ubuntu1.dsc 3345 SHA256:1aa6a38da762e1c333f2d88b06016b415c1a6f3357835742bb7ccd0c8066ff38
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-1ubuntu1.debian.tar.xz' mysql-5.7_5.7.20-1ubuntu1.debian.tar.xz 154588 SHA256:1cb805345cd071cf0d6f69764a8d24b6a5f7e3e760acce888af94f3106b17b64
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.3`
 
@@ -3057,14 +3050,9 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.5-1build1.dsc' patch_2.7.5-1build1.dsc 1801 SHA256:b79f71ece24112fd5087c8e3fdcda5af20fe0c74699fe3489d488377454200fc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.5.orig.tar.xz' patch_2.7.5.orig.tar.xz 727704 SHA256:fd95153655d6b95567e623843a0e77b81612d502ecf78a489a4aed7867caa299
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.5-1build1.debian.tar.xz' patch_2.7.5-1build1.debian.tar.xz 8204 SHA256:f32b8ceba4957a011f24e25354c7895bd822c8811e0af862713338e99d07c66a
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-8`
 
@@ -3638,14 +3626,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-3.dsc' tiff_4.0.9-3.dsc 2184 SHA256:c0c57fa7f155918e117a3e6b79e581279d16d19fabc4ed49fa79433b691ddd3a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-3.debian.tar.xz' tiff_4.0.9-3.debian.tar.xz 18528 SHA256:c413f5b2423b95d8b068adca695f0ddaea5219088a1d38de4800b379bc20ca73
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.9-3/
+
 
 ### `dpkg` source package: `ubuntu-keyring=2016.10.27`
 

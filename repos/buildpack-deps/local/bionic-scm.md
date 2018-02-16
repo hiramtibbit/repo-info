@@ -1015,14 +1015,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.0.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.dsc' libidn2_2.0.4-1.dsc 2405 SHA256:1a3f798c046e5d190b5895662bb73888688ca4617ad622c9ea91b72fb6fca8b7
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4.orig.tar.gz' libidn2_2.0.4.orig.tar.gz 2008524 SHA256:644b6b03b285fb0ace02d241d59483d98bc462729d8bb3608d5cad5532f3d2f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.debian.tar.xz' libidn2_2.0.4-1.debian.tar.xz 10284628 SHA256:179d3c8e13f450ccd4d70db4b8acd9f80c5ab08c0202ef757e6e3ab0d61a0e5a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libidn2/2.0.4-1/
+
 
 ### `dpkg` source package: `libidn=1.33-2.1`
 
