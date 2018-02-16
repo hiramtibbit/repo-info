@@ -7,7 +7,7 @@
 -	[`fsharp:4.0.1`](#fsharp401)
 -	[`fsharp:4.0.1.1`](#fsharp4011)
 -	[`fsharp:4.1`](#fsharp41)
--	[`fsharp:4.1.29`](#fsharp4129)
+-	[`fsharp:4.1.34`](#fsharp4134)
 -	[`fsharp:latest`](#fsharplatest)
 
 ## `fsharp:4`
@@ -446,7 +446,7 @@ CMD ["fsharpi"]
 		Size: 142.3 MB (142310673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `fsharp:4.1.29`
+## `fsharp:4.1.34`
 
 ```console
 $ docker pull fsharp@sha256:45c42d85048ec58504f6a34ab342f0432450151ca9f7ef017db63423f689d79f
@@ -456,7 +456,7 @@ $ docker pull fsharp@sha256:45c42d85048ec58504f6a34ab342f0432450151ca9f7ef017db6
 -	Platforms:
 	-	linux; amd64
 
-### `fsharp:4.1.29` - linux; amd64
+### `fsharp:4.1.34` - linux; amd64
 
 ```console
 $ docker pull fsharp@sha256:be16ac48b32a9421a72e563d50ff26015d1edccea3fe4d00994740e42c852ee1
