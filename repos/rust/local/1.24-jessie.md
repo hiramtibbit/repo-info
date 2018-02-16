@@ -1,10 +1,10 @@
-# `rust:1.23.0-jessie`
+# `rust:1.24.0-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13b100402c3b158e162487b17df82aeef19abbbdd3d6e1ca2098fcca18dab3a1`
-- Created: `2018-01-04T19:23:30.290197411Z`
-- Virtual Size: ~ 1.23 Gb  
+- Image ID: `sha256:0c63959411bf0c65b23484240e6d279b54be35142e2d5c9c42ba25ca1dee5bfe`
+- Created: `2018-02-15T23:55:38.755301739Z`
+- Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
