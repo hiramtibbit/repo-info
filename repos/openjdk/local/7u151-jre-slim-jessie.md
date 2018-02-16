@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:593406fffdd1e2cc5660cba60e451ea6ae11f7fcc2c004b1d220fb993c191b35`
-- Created: `2017-12-12T05:32:34.338543756Z`
-- Virtual Size: ~ 239.85 Mb  
+- Image ID: `sha256:01b055029f2b0a857d06cce400a806460d25eac917f52753003cb3db5de3c119`
+- Created: `2018-02-15T11:21:01.140298414Z`
+- Virtual Size: ~ 239.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -250,14 +250,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/4.3-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u14`
+### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u15`
 
 Binary Packages:
 
-- `libdns-export100=1:9.9.5.dfsg-9+deb8u14`
-- `libirs-export91=1:9.9.5.dfsg-9+deb8u14`
-- `libisc-export95=1:9.9.5.dfsg-9+deb8u14`
-- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u14`
+- `libdns-export100=1:9.9.5.dfsg-9+deb8u15`
+- `libirs-export91=1:9.9.5.dfsg-9+deb8u15`
+- `libisc-export95=1:9.9.5.dfsg-9+deb8u15`
+- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -266,17 +266,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u14
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.dsc' bind9_9.9.5.dfsg-9+deb8u14.dsc 3595 SHA256:a11c0a3a8bd41a82fcf31495343925cd7261399ffbe9614804b1f8e906f57037
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.diff.gz' bind9_9.9.5.dfsg-9+deb8u14.diff.gz 137337 SHA256:bb74d47b8297b4b35a6b22673c48be40d79186298d6efd174af54445faaed3d9
+$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u15
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.dsc' bind9_9.9.5.dfsg-9+deb8u15.dsc 3620 SHA256:1e90d3bdd8394b9f96aa494a0f5146ab52bc8a6c712cda9508f881dd9a0b28c1
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
+'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.diff.gz' bind9_9.9.5.dfsg-9+deb8u15.diff.gz 138089 SHA256:0e189a414fe9e73617e6ecdb20b4517d718c23e565cead79146e3c95aa886135
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u14/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-7`
 
@@ -2932,11 +2932,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxi/2:1.7.4-1+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxi/2:1.7.4-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u5`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u6`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2945,17 +2945,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u5
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.dsc' libxml2_2.9.1+dfsg1-5+deb8u5.dsc 2760 SHA256:6fe2c4e997f1ed1520cbba4474513880a1e7450de57a0c86f73c4023396609fb
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz 70784 SHA256:01247e1947e2b52c4ef0e227fdd501038aa0840b8c889c26b6503a2dcd85a5d3
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u6
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.dsc' libxml2_2.9.1+dfsg1-5+deb8u6.dsc 2760 SHA256:d887a48f96f3953cd0ecd9e2c8b77334c9619367dc16ca658586098a0c68f8fe
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz 71152 SHA256:b6f36d51b2ff810fcc29f149ba21c69656c5dea164afc93eb48ff0daf8bc568a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxtst=2:1.2.2-1+deb8u1`
 
@@ -3599,11 +3599,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.2.2-4+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.2.2-4+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+deb8u1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -3612,16 +3612,16 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+deb8u1
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.dsc' sensible-utils_0.0.9+deb8u1.dsc 1590 SHA256:1d1d3d7e71c53cceb922dc33db5064cb5be76450a2918f8e3f998824237f09b0
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.tar.xz' sensible-utils_0.0.9+deb8u1.tar.xz 53544 SHA256:f4b505ecc1c5015df2e5d3595da12cceca54be8729270b054179d31d8d661ab9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.9/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sgml-base=1.26+nmu4`
 
@@ -3891,12 +3891,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017c-0+deb8u1`
+### `dpkg` source package: `tzdata=2018c-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017c-0+deb8u1`
-- `tzdata-java=2017c-0+deb8u1`
+- `tzdata=2018c-0+deb8u1`
+- `tzdata-java=2018c-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3905,17 +3905,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.dsc' tzdata_2017c-0+deb8u1.dsc 1985 SHA256:29cb60792063531d186f5a9d66031ec19f6267d7d668b1fb75858a247d86df12
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.debian.tar.xz' tzdata_2017c-0+deb8u1.debian.tar.xz 102884 SHA256:c6d233ce05f48162aafc683f506ff0024da1fc58185cca13c9d6b4e5350aa457
+$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
