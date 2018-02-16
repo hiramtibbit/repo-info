@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a177afcf138e9f920f2d1cddf31383c03d096c04913c0e825a14ef7870afa71f`
-- Created: `2018-02-03T00:35:25.804510902Z`
-- Virtual Size: ~ 170.24 Mb  
+- Image ID: `sha256:750609e2af595e1874bb31f6ca8ba1cf93c791d8ccccdc5c485ddecaa6a0b70c`
+- Created: `2018-02-15T06:11:21.778378903Z`
+- Virtual Size: ~ 170.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2222,25 +2222,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mono=5.4.1.7-0xamarin5+debian8b1`
+### `dpkg` source package: `mono=5.8.0.108-0xamarin1+debian8b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-btls-interface4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-corlib4.5-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-i18n-west4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-i18n4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-security4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-system-configuration4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-system-security4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-system-xml4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `libmono-system4.0-cil=5.4.1.7-0xamarin5+debian8b1`
-- `mono-4.0-gac=5.4.1.7-0xamarin5+debian8b1`
-- `mono-gac=5.4.1.7-0xamarin5+debian8b1`
-- `mono-runtime=5.4.1.7-0xamarin5+debian8b1`
-- `mono-runtime-common=5.4.1.7-0xamarin5+debian8b1`
-- `mono-runtime-sgen=5.4.1.7-0xamarin5+debian8b1`
+- `ca-certificates-mono=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-btls-interface4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-corlib4.5-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-i18n-west4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-i18n4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-security4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-system-configuration4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-system-security4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-system-xml4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `libmono-system4.0-cil=5.8.0.108-0xamarin1+debian8b1`
+- `mono-4.0-gac=5.8.0.108-0xamarin1+debian8b1`
+- `mono-gac=5.8.0.108-0xamarin1+debian8b1`
+- `mono-runtime=5.8.0.108-0xamarin1+debian8b1`
+- `mono-runtime-common=5.8.0.108-0xamarin1+debian8b1`
+- `mono-runtime-sgen=5.8.0.108-0xamarin1+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
 
@@ -2261,9 +2261,14 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mono=5.8.0.108-0xamarin1+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.108-0xamarin1+debian8b1.dsc' mono_5.8.0.108-0xamarin1+debian8b1.dsc 19105 SHA256:15914d58d5111837a60c0ec21fe120aba35c3bd70b4f0a0bba3345dd9c672a1c
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.108.orig.tar.bz2' mono_5.8.0.108.orig.tar.bz2 204090092 SHA256:ecd7c55c2f62caa65fb360ace74a45ee44bbe2de046566d90594ba66c082f39c
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.108-0xamarin1+debian8b1.debian.tar.xz' mono_5.8.0.108-0xamarin1+debian8b1.debian.tar.xz 150764 SHA256:d74bf2c640bfb79ee8fdd0e7a49a2c07e5fec43aff5d5b57f2416ec37926996a
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
 
@@ -2552,11 +2557,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.2.2-4+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.2.2-4+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+deb8u1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -2565,16 +2570,16 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+deb8u1
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.dsc' sensible-utils_0.0.9+deb8u1.dsc 1590 SHA256:1d1d3d7e71c53cceb922dc33db5064cb5be76450a2918f8e3f998824237f09b0
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.tar.xz' sensible-utils_0.0.9+deb8u1.tar.xz 53544 SHA256:f4b505ecc1c5015df2e5d3595da12cceca54be8729270b054179d31d8d661ab9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.9/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.2-3+deb8u4`
 
@@ -2741,11 +2746,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017c-0+deb8u1`
+### `dpkg` source package: `tzdata=2018c-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017c-0+deb8u1`
+- `tzdata=2018c-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2754,17 +2759,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.dsc' tzdata_2017c-0+deb8u1.dsc 1985 SHA256:29cb60792063531d186f5a9d66031ec19f6267d7d668b1fb75858a247d86df12
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.debian.tar.xz' tzdata_2017c-0+deb8u1.debian.tar.xz 102884 SHA256:c6d233ce05f48162aafc683f506ff0024da1fc58185cca13c9d6b4e5350aa457
+$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
