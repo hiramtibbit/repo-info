@@ -125,13 +125,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.24
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.dsc' apt_1.2.24.dsc 2392 SHA256:0032051ffe7a495c6c7fed449c3f465d0cb05aaeb53667ec7834c7566cef1ccd
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.tar.xz' apt_1.2.24.tar.xz 2059044 SHA256:fa1311a9ce00e72379a0a3bc6d240ba30c0968cfbbb3472859e50b99e24e9598
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -3126,14 +3122,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.11.8-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.8-1.dsc' python-rosdep_0.11.8-1.dsc 900 SHA256:38c7010311aeb8ff47db5b6c0078014db2da9fea2d9517aa6d893866081d9a5c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.8.orig.tar.gz' python-rosdep_0.11.8.orig.tar.gz 79644 SHA256:2cdf1049382d38056b4586d7056ad40c3e7b8754f6636df8f4572f72355bfaf8
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.8-1.debian.tar.gz' python-rosdep_0.11.8-1.debian.tar.gz 1061 SHA256:d6d10835344d2d1860781b7da6776c8481b15835e8c9af5dca126441a89aaec3
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.6-1`
 
@@ -4754,14 +4745,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.dsc' util-linux_2.27.1-6ubuntu3.3.dsc 3942 SHA256:31d135f83fbf7ea5eba164e32b43fca6489504e2c37363414c90e80ce3af375b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
-```
 
 ### `dpkg` source package: `xdg-user-dirs=0.15-2ubuntu6`
 
