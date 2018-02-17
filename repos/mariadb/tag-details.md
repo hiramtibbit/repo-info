@@ -19,7 +19,7 @@
 ## `mariadb:10`
 
 ```console
-$ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721ecb8e9549c17c
+$ docker pull mariadb@sha256:d5f0bc88ba397233677ff75b7b1de693d5e84527ecf2b4f59adebf8d0bcac3c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29,110 +29,110 @@ $ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721
 ### `mariadb:10` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:fb88246764ad044d93fdc9a68afa35d3902bdda1b049626b5a870d346a587f2e
+$ docker pull mariadb@sha256:02df012048c820331f2aed41acae569cb674ccd86b38cd54543c74e31a73ae55
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135271871 bytes)**  
+-	Total Size: **135.3 MB (135280463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58eaa7e4afb7eb18a5cf5cc906256285bd30fb195c7c735cf0ca7c0254ddcb0b`
+-	Image ID: `sha256:e1dd445713ae794c0ae6261e947fff413cae4f4dfb2061a13f85f9faab8aceda`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:18:44 GMT
+# Sat, 17 Feb 2018 08:07:31 GMT
 ENV MARIADB_MAJOR=10.2
-# Tue, 13 Feb 2018 23:10:25 GMT
+# Sat, 17 Feb 2018 08:07:32 GMT
 ENV MARIADB_VERSION=10.2.13+maria~jessie
-# Tue, 13 Feb 2018 23:10:26 GMT
+# Sat, 17 Feb 2018 08:07:33 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 13 Feb 2018 23:11:08 GMT
+# Sat, 17 Feb 2018 08:08:06 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 EXPOSE 3306/tcp
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:18 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31855fac2bb2d4a625a4bfc0d6115d4a28486174e2e1371f901fc89cc1845f3`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 327.0 B  
+	-	`sha256:bd51d7af15515b05689ec1b8b073dceb6752985536a36479e61769eb60d67ba3`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 323.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfd31f5b971206243e5d7cc8115bd96224deee51bf01906a138ae4aaeae24d46`  
-		Last Modified: Tue, 13 Feb 2018 23:23:05 GMT  
-		Size: 75.0 MB (74988759 bytes)  
+	-	`sha256:6cf37448a3b37324f662da5c60ce3281197d712885ba5e7242f0ebf668879dd9`  
+		Last Modified: Sat, 17 Feb 2018 08:18:14 GMT  
+		Size: 75.0 MB (74988680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8766af62104f125e9c0cd91a06c807d1d2ca2266bb4234643a736fc9c9873ee`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:0519e00d29e56969f610d90d7b5fde6da6ae9d2572bb01d1397accd83c1add69`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 2.6 KB (2551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ed3745475095f718707449366dcd938c0232678f7ad60c5598268a2f1966f93`  
-		Last Modified: Tue, 13 Feb 2018 23:22:54 GMT  
+	-	`sha256:8f83e3487101572893bca29a89bd868abaa9004f37e1db10f99cdc9220890d1f`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:8f9fd1733b2cc9378c770f4f06bdf5492bbfc77c55dfc293035f10c7569c189e
+$ docker pull mariadb@sha256:14ff7714e0aa3d01d2de153a5378f5bf03008de1c007af5bf8730a7455e973d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -142,110 +142,110 @@ $ docker pull mariadb@sha256:8f9fd1733b2cc9378c770f4f06bdf5492bbfc77c55dfc293035
 ### `mariadb:10.0` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:5cf14d686c5a7289e520a5b17a3c41db09304bf09f3e539fe981e03c030061a9
+$ docker pull mariadb@sha256:f59979797037800479fc1da1a439b66c3a73a243c34028d27b7bb9ea7c34a371
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.6 MB (119569893 bytes)**  
+-	Total Size: **119.6 MB (119578562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf535b78f290e4d3cf1cb7e563740ef8b2903cbbf39d5c317e91bd2a4ea7b3af`
+-	Image ID: `sha256:3952d919d5a449a0d52444c2d17b8b47187c144b6074ff1f8d2806327fe98bf0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:21:35 GMT
+# Sat, 17 Feb 2018 08:10:09 GMT
 ENV MARIADB_MAJOR=10.0
-# Thu, 01 Feb 2018 01:36:47 GMT
+# Sat, 17 Feb 2018 08:10:09 GMT
 ENV MARIADB_VERSION=10.0.34+maria-1~jessie
-# Thu, 01 Feb 2018 01:36:47 GMT
+# Sat, 17 Feb 2018 08:10:10 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:10:55 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:16:22 GMT
 VOLUME [/var/lib/mysql]
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:16:23 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Thu, 01 Feb 2018 01:37:34 GMT
+# Sat, 17 Feb 2018 08:16:23 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 01 Feb 2018 01:37:34 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 01 Feb 2018 01:37:35 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 EXPOSE 3306/tcp
-# Thu, 01 Feb 2018 01:37:35 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d0e388f7aff74a294a43c2c2cca3cd4b39bca1d389aec0e2629c093d088704c`  
-		Last Modified: Thu, 01 Feb 2018 01:38:03 GMT  
-		Size: 325.0 B  
+	-	`sha256:9d0d7653103e71d081a9a3391ad4a35bae3570cf25aab2bf5adc68a83aae78e0`  
+		Last Modified: Sat, 17 Feb 2018 08:20:19 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a3d98c9df3b5c0a94dc537591973c70970966ab4ba16dd025b54ea6fd2caa56`  
-		Last Modified: Thu, 01 Feb 2018 01:38:13 GMT  
-		Size: 59.3 MB (59286783 bytes)  
+	-	`sha256:b3c1af410eaf0e0c66d1529b549797de439ef2bcdd5d29dee379eed0f25f4dfb`  
+		Last Modified: Sat, 17 Feb 2018 08:20:32 GMT  
+		Size: 59.3 MB (59286775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b10a687ba15a7ffd7f61606e45a4500d9c709f1c171fa9138eee11f2e0414fd7`  
-		Last Modified: Thu, 01 Feb 2018 01:38:04 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:39c75bcc7027af33a9eec1a17d534edfc02dbc8edd121a8357359cd897876925`  
+		Last Modified: Sat, 17 Feb 2018 08:20:19 GMT  
+		Size: 2.6 KB (2554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea08ad21cb1221991d39020e0623b090552260cc9f7162aa8115dddb47f01594`  
-		Last Modified: Thu, 01 Feb 2018 01:38:04 GMT  
+	-	`sha256:921e863b12a1f6531565e12d36019294637701faa46e61fbfaa593207c9e7bac`  
+		Last Modified: Sat, 17 Feb 2018 08:20:18 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.0.34`
 
 ```console
-$ docker pull mariadb@sha256:8f9fd1733b2cc9378c770f4f06bdf5492bbfc77c55dfc293035f10c7569c189e
+$ docker pull mariadb@sha256:14ff7714e0aa3d01d2de153a5378f5bf03008de1c007af5bf8730a7455e973d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -255,110 +255,110 @@ $ docker pull mariadb@sha256:8f9fd1733b2cc9378c770f4f06bdf5492bbfc77c55dfc293035
 ### `mariadb:10.0.34` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:5cf14d686c5a7289e520a5b17a3c41db09304bf09f3e539fe981e03c030061a9
+$ docker pull mariadb@sha256:f59979797037800479fc1da1a439b66c3a73a243c34028d27b7bb9ea7c34a371
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.6 MB (119569893 bytes)**  
+-	Total Size: **119.6 MB (119578562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf535b78f290e4d3cf1cb7e563740ef8b2903cbbf39d5c317e91bd2a4ea7b3af`
+-	Image ID: `sha256:3952d919d5a449a0d52444c2d17b8b47187c144b6074ff1f8d2806327fe98bf0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:21:35 GMT
+# Sat, 17 Feb 2018 08:10:09 GMT
 ENV MARIADB_MAJOR=10.0
-# Thu, 01 Feb 2018 01:36:47 GMT
+# Sat, 17 Feb 2018 08:10:09 GMT
 ENV MARIADB_VERSION=10.0.34+maria-1~jessie
-# Thu, 01 Feb 2018 01:36:47 GMT
+# Sat, 17 Feb 2018 08:10:10 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:10:55 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:16:22 GMT
 VOLUME [/var/lib/mysql]
-# Thu, 01 Feb 2018 01:37:33 GMT
+# Sat, 17 Feb 2018 08:16:23 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Thu, 01 Feb 2018 01:37:34 GMT
+# Sat, 17 Feb 2018 08:16:23 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 01 Feb 2018 01:37:34 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 01 Feb 2018 01:37:35 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 EXPOSE 3306/tcp
-# Thu, 01 Feb 2018 01:37:35 GMT
+# Sat, 17 Feb 2018 08:16:24 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d0e388f7aff74a294a43c2c2cca3cd4b39bca1d389aec0e2629c093d088704c`  
-		Last Modified: Thu, 01 Feb 2018 01:38:03 GMT  
-		Size: 325.0 B  
+	-	`sha256:9d0d7653103e71d081a9a3391ad4a35bae3570cf25aab2bf5adc68a83aae78e0`  
+		Last Modified: Sat, 17 Feb 2018 08:20:19 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a3d98c9df3b5c0a94dc537591973c70970966ab4ba16dd025b54ea6fd2caa56`  
-		Last Modified: Thu, 01 Feb 2018 01:38:13 GMT  
-		Size: 59.3 MB (59286783 bytes)  
+	-	`sha256:b3c1af410eaf0e0c66d1529b549797de439ef2bcdd5d29dee379eed0f25f4dfb`  
+		Last Modified: Sat, 17 Feb 2018 08:20:32 GMT  
+		Size: 59.3 MB (59286775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b10a687ba15a7ffd7f61606e45a4500d9c709f1c171fa9138eee11f2e0414fd7`  
-		Last Modified: Thu, 01 Feb 2018 01:38:04 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:39c75bcc7027af33a9eec1a17d534edfc02dbc8edd121a8357359cd897876925`  
+		Last Modified: Sat, 17 Feb 2018 08:20:19 GMT  
+		Size: 2.6 KB (2554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea08ad21cb1221991d39020e0623b090552260cc9f7162aa8115dddb47f01594`  
-		Last Modified: Thu, 01 Feb 2018 01:38:04 GMT  
+	-	`sha256:921e863b12a1f6531565e12d36019294637701faa46e61fbfaa593207c9e7bac`  
+		Last Modified: Sat, 17 Feb 2018 08:20:18 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.1`
 
 ```console
-$ docker pull mariadb@sha256:9e7a5a50c3e18313ecadf667889ac6a6455fd2d8937eb2f0ad478d8eed989eeb
+$ docker pull mariadb@sha256:5bd6b15a15966dbafc3e6fddbdbe6e804a282b5d7e8643adda3ec9df828d2349
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -368,110 +368,110 @@ $ docker pull mariadb@sha256:9e7a5a50c3e18313ecadf667889ac6a6455fd2d8937eb2f0ad4
 ### `mariadb:10.1` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:0e1ea57b5799f29e847ecc4d818c2cf099d624005b83a8c19ec2061dc363da31
+$ docker pull mariadb@sha256:ef9b9feeec2e4f901d4c9eb4feec5c277e8a5f553e6112bb904b5e8efcfcfb63
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.2 MB (135198705 bytes)**  
+-	Total Size: **135.2 MB (135207478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1552d2bcaacb865572c060b0ade33b7798eb7415514b032546eec4e519e23b5`
+-	Image ID: `sha256:3d79d0d48b9c887f481e41dfafaf1ff570b108fdcdf9a89b0856abbc7698763a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:19:29 GMT
+# Sat, 17 Feb 2018 08:08:44 GMT
 ENV MARIADB_MAJOR=10.1
-# Wed, 07 Feb 2018 03:10:32 GMT
+# Sat, 17 Feb 2018 08:08:44 GMT
 ENV MARIADB_VERSION=10.1.31+maria-1~jessie
-# Wed, 07 Feb 2018 03:10:33 GMT
+# Sat, 17 Feb 2018 08:08:45 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Wed, 07 Feb 2018 03:11:29 GMT
+# Sat, 17 Feb 2018 08:09:29 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 07 Feb 2018 03:11:34 GMT
+# Sat, 17 Feb 2018 08:09:39 GMT
 VOLUME [/var/lib/mysql]
-# Wed, 07 Feb 2018 03:11:35 GMT
+# Sat, 17 Feb 2018 08:09:39 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Wed, 07 Feb 2018 03:11:35 GMT
+# Sat, 17 Feb 2018 08:09:40 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 07 Feb 2018 03:11:46 GMT
+# Sat, 17 Feb 2018 08:09:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Feb 2018 03:11:46 GMT
+# Sat, 17 Feb 2018 08:09:41 GMT
 EXPOSE 3306/tcp
-# Wed, 07 Feb 2018 03:11:47 GMT
+# Sat, 17 Feb 2018 08:09:41 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1b4f8d30729a62d73613272ef9eec99d974a8e52d9175a63b90638410951e6`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
-		Size: 324.0 B  
+	-	`sha256:8152161586c1dbc4cab3cb173f5eea6ac9ce3bd6c85f6846cb98f26b31015be2`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90ee6c1e9d4b7a87692b75c2c6281638837776c921de25d76cde1b470b2f2efa`  
-		Last Modified: Wed, 07 Feb 2018 03:12:34 GMT  
-		Size: 74.9 MB (74915597 bytes)  
+	-	`sha256:84bd6b8b73d6c18e55bc9b57606174134a91afb5330d3d55611769c605f3faea`  
+		Last Modified: Sat, 17 Feb 2018 08:19:37 GMT  
+		Size: 74.9 MB (74915694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6affe0f3b6ae1fd6dbc86757a932e58b26d9bbf354be791565ffc0d39ca77426`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
-		Size: 2.6 KB (2552 bytes)  
+	-	`sha256:b3fb3c647099b09095bb3c2c5a860eebdd88ef777834324ba06d4b4e2015908a`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
+		Size: 2.6 KB (2553 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e078bba82234fa6818a205c838739a6c5f6d737655dc233d4ddb804ab361de64`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
+	-	`sha256:f79cc28dda7ab6b5974f767b86dde6109a65f912da1707f93d85c71b79bba5ba`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.1.31`
 
 ```console
-$ docker pull mariadb@sha256:9e7a5a50c3e18313ecadf667889ac6a6455fd2d8937eb2f0ad478d8eed989eeb
+$ docker pull mariadb@sha256:5bd6b15a15966dbafc3e6fddbdbe6e804a282b5d7e8643adda3ec9df828d2349
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -481,110 +481,110 @@ $ docker pull mariadb@sha256:9e7a5a50c3e18313ecadf667889ac6a6455fd2d8937eb2f0ad4
 ### `mariadb:10.1.31` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:0e1ea57b5799f29e847ecc4d818c2cf099d624005b83a8c19ec2061dc363da31
+$ docker pull mariadb@sha256:ef9b9feeec2e4f901d4c9eb4feec5c277e8a5f553e6112bb904b5e8efcfcfb63
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.2 MB (135198705 bytes)**  
+-	Total Size: **135.2 MB (135207478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1552d2bcaacb865572c060b0ade33b7798eb7415514b032546eec4e519e23b5`
+-	Image ID: `sha256:3d79d0d48b9c887f481e41dfafaf1ff570b108fdcdf9a89b0856abbc7698763a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:19:29 GMT
+# Sat, 17 Feb 2018 08:08:44 GMT
 ENV MARIADB_MAJOR=10.1
-# Wed, 07 Feb 2018 03:10:32 GMT
+# Sat, 17 Feb 2018 08:08:44 GMT
 ENV MARIADB_VERSION=10.1.31+maria-1~jessie
-# Wed, 07 Feb 2018 03:10:33 GMT
+# Sat, 17 Feb 2018 08:08:45 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Wed, 07 Feb 2018 03:11:29 GMT
+# Sat, 17 Feb 2018 08:09:29 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 07 Feb 2018 03:11:34 GMT
+# Sat, 17 Feb 2018 08:09:39 GMT
 VOLUME [/var/lib/mysql]
-# Wed, 07 Feb 2018 03:11:35 GMT
+# Sat, 17 Feb 2018 08:09:39 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Wed, 07 Feb 2018 03:11:35 GMT
+# Sat, 17 Feb 2018 08:09:40 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 07 Feb 2018 03:11:46 GMT
+# Sat, 17 Feb 2018 08:09:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Feb 2018 03:11:46 GMT
+# Sat, 17 Feb 2018 08:09:41 GMT
 EXPOSE 3306/tcp
-# Wed, 07 Feb 2018 03:11:47 GMT
+# Sat, 17 Feb 2018 08:09:41 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1b4f8d30729a62d73613272ef9eec99d974a8e52d9175a63b90638410951e6`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
-		Size: 324.0 B  
+	-	`sha256:8152161586c1dbc4cab3cb173f5eea6ac9ce3bd6c85f6846cb98f26b31015be2`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90ee6c1e9d4b7a87692b75c2c6281638837776c921de25d76cde1b470b2f2efa`  
-		Last Modified: Wed, 07 Feb 2018 03:12:34 GMT  
-		Size: 74.9 MB (74915597 bytes)  
+	-	`sha256:84bd6b8b73d6c18e55bc9b57606174134a91afb5330d3d55611769c605f3faea`  
+		Last Modified: Sat, 17 Feb 2018 08:19:37 GMT  
+		Size: 74.9 MB (74915694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6affe0f3b6ae1fd6dbc86757a932e58b26d9bbf354be791565ffc0d39ca77426`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
-		Size: 2.6 KB (2552 bytes)  
+	-	`sha256:b3fb3c647099b09095bb3c2c5a860eebdd88ef777834324ba06d4b4e2015908a`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
+		Size: 2.6 KB (2553 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e078bba82234fa6818a205c838739a6c5f6d737655dc233d4ddb804ab361de64`  
-		Last Modified: Wed, 07 Feb 2018 03:12:20 GMT  
+	-	`sha256:f79cc28dda7ab6b5974f767b86dde6109a65f912da1707f93d85c71b79bba5ba`  
+		Last Modified: Sat, 17 Feb 2018 08:19:20 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.2`
 
 ```console
-$ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721ecb8e9549c17c
+$ docker pull mariadb@sha256:d5f0bc88ba397233677ff75b7b1de693d5e84527ecf2b4f59adebf8d0bcac3c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -594,110 +594,110 @@ $ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721
 ### `mariadb:10.2` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:fb88246764ad044d93fdc9a68afa35d3902bdda1b049626b5a870d346a587f2e
+$ docker pull mariadb@sha256:02df012048c820331f2aed41acae569cb674ccd86b38cd54543c74e31a73ae55
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135271871 bytes)**  
+-	Total Size: **135.3 MB (135280463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58eaa7e4afb7eb18a5cf5cc906256285bd30fb195c7c735cf0ca7c0254ddcb0b`
+-	Image ID: `sha256:e1dd445713ae794c0ae6261e947fff413cae4f4dfb2061a13f85f9faab8aceda`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:18:44 GMT
+# Sat, 17 Feb 2018 08:07:31 GMT
 ENV MARIADB_MAJOR=10.2
-# Tue, 13 Feb 2018 23:10:25 GMT
+# Sat, 17 Feb 2018 08:07:32 GMT
 ENV MARIADB_VERSION=10.2.13+maria~jessie
-# Tue, 13 Feb 2018 23:10:26 GMT
+# Sat, 17 Feb 2018 08:07:33 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 13 Feb 2018 23:11:08 GMT
+# Sat, 17 Feb 2018 08:08:06 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 EXPOSE 3306/tcp
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:18 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31855fac2bb2d4a625a4bfc0d6115d4a28486174e2e1371f901fc89cc1845f3`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 327.0 B  
+	-	`sha256:bd51d7af15515b05689ec1b8b073dceb6752985536a36479e61769eb60d67ba3`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 323.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfd31f5b971206243e5d7cc8115bd96224deee51bf01906a138ae4aaeae24d46`  
-		Last Modified: Tue, 13 Feb 2018 23:23:05 GMT  
-		Size: 75.0 MB (74988759 bytes)  
+	-	`sha256:6cf37448a3b37324f662da5c60ce3281197d712885ba5e7242f0ebf668879dd9`  
+		Last Modified: Sat, 17 Feb 2018 08:18:14 GMT  
+		Size: 75.0 MB (74988680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8766af62104f125e9c0cd91a06c807d1d2ca2266bb4234643a736fc9c9873ee`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:0519e00d29e56969f610d90d7b5fde6da6ae9d2572bb01d1397accd83c1add69`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 2.6 KB (2551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ed3745475095f718707449366dcd938c0232678f7ad60c5598268a2f1966f93`  
-		Last Modified: Tue, 13 Feb 2018 23:22:54 GMT  
+	-	`sha256:8f83e3487101572893bca29a89bd868abaa9004f37e1db10f99cdc9220890d1f`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.2.13`
 
 ```console
-$ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721ecb8e9549c17c
+$ docker pull mariadb@sha256:d5f0bc88ba397233677ff75b7b1de693d5e84527ecf2b4f59adebf8d0bcac3c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -707,110 +707,110 @@ $ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721
 ### `mariadb:10.2.13` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:fb88246764ad044d93fdc9a68afa35d3902bdda1b049626b5a870d346a587f2e
+$ docker pull mariadb@sha256:02df012048c820331f2aed41acae569cb674ccd86b38cd54543c74e31a73ae55
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135271871 bytes)**  
+-	Total Size: **135.3 MB (135280463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58eaa7e4afb7eb18a5cf5cc906256285bd30fb195c7c735cf0ca7c0254ddcb0b`
+-	Image ID: `sha256:e1dd445713ae794c0ae6261e947fff413cae4f4dfb2061a13f85f9faab8aceda`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:18:44 GMT
+# Sat, 17 Feb 2018 08:07:31 GMT
 ENV MARIADB_MAJOR=10.2
-# Tue, 13 Feb 2018 23:10:25 GMT
+# Sat, 17 Feb 2018 08:07:32 GMT
 ENV MARIADB_VERSION=10.2.13+maria~jessie
-# Tue, 13 Feb 2018 23:10:26 GMT
+# Sat, 17 Feb 2018 08:07:33 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 13 Feb 2018 23:11:08 GMT
+# Sat, 17 Feb 2018 08:08:06 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 EXPOSE 3306/tcp
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:18 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31855fac2bb2d4a625a4bfc0d6115d4a28486174e2e1371f901fc89cc1845f3`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 327.0 B  
+	-	`sha256:bd51d7af15515b05689ec1b8b073dceb6752985536a36479e61769eb60d67ba3`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 323.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfd31f5b971206243e5d7cc8115bd96224deee51bf01906a138ae4aaeae24d46`  
-		Last Modified: Tue, 13 Feb 2018 23:23:05 GMT  
-		Size: 75.0 MB (74988759 bytes)  
+	-	`sha256:6cf37448a3b37324f662da5c60ce3281197d712885ba5e7242f0ebf668879dd9`  
+		Last Modified: Sat, 17 Feb 2018 08:18:14 GMT  
+		Size: 75.0 MB (74988680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8766af62104f125e9c0cd91a06c807d1d2ca2266bb4234643a736fc9c9873ee`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:0519e00d29e56969f610d90d7b5fde6da6ae9d2572bb01d1397accd83c1add69`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 2.6 KB (2551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ed3745475095f718707449366dcd938c0232678f7ad60c5598268a2f1966f93`  
-		Last Modified: Tue, 13 Feb 2018 23:22:54 GMT  
+	-	`sha256:8f83e3487101572893bca29a89bd868abaa9004f37e1db10f99cdc9220890d1f`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.3`
 
 ```console
-$ docker pull mariadb@sha256:788bccb79bb0da10a5ba021a004be9d8274702debb3ce9b27e24c507249ba4a5
+$ docker pull mariadb@sha256:888b9d0f411090bf9a3e7c1c652cb9d905f362704c9eb2721bfc74a9598df219
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -820,110 +820,110 @@ $ docker pull mariadb@sha256:788bccb79bb0da10a5ba021a004be9d8274702debb3ce9b27e2
 ### `mariadb:10.3` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:c280f1ab991c6a50983987b81d26a62c69da7804bff324bd4ad4e2fa0cc56656
+$ docker pull mariadb@sha256:6a6c3696a54908c9f9f295bac1b69d9b6c06ef9e934a63e4232b975fb1067d15
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.8 MB (135848593 bytes)**  
+-	Total Size: **135.9 MB (135857635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724e870c7a4608e9b11c286cf003aede2562cb3ff07b4e890e9c4a1547f1ed8`
+-	Image ID: `sha256:32414f7e3afd3d3071d1a8589db830b3103c4ce11389d7749e246589ca372962`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 ENV MARIADB_MAJOR=10.3
-# Thu, 18 Jan 2018 23:01:21 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 ENV MARIADB_VERSION=10.3.4+maria~jessie
-# Thu, 18 Jan 2018 23:01:22 GMT
+# Sat, 17 Feb 2018 08:04:35 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Thu, 18 Jan 2018 23:01:56 GMT
+# Sat, 17 Feb 2018 08:05:11 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Thu, 18 Jan 2018 23:01:57 GMT
+# Sat, 17 Feb 2018 08:07:00 GMT
 VOLUME [/var/lib/mysql]
-# Thu, 18 Jan 2018 23:01:57 GMT
+# Sat, 17 Feb 2018 08:07:00 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:01 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:02 GMT
 EXPOSE 3306/tcp
-# Thu, 18 Jan 2018 23:01:59 GMT
+# Sat, 17 Feb 2018 08:07:02 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbf7a98847fe053d05d413216c6e94087aac6251a425503a162d4a60db94b9b3`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
-		Size: 327.0 B  
+	-	`sha256:f2fb24596a53f95c366c705270314cca40359feccde6ecf95a89a514b6cb4746`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956bbdc628d7f2b4c3905d135369180afecad24b93826a4ae5cb6bc8af186155`  
-		Last Modified: Thu, 18 Jan 2018 23:09:35 GMT  
-		Size: 75.6 MB (75565482 bytes)  
+	-	`sha256:0e89e32af98f9e0abef16c4609404eb93e30265a2aee8ded42e48c7b74283c57`  
+		Last Modified: Sat, 17 Feb 2018 08:17:18 GMT  
+		Size: 75.6 MB (75565851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1426f2a874f31cf211298b31fe7d0178bdf5bc85ee6d89d1c416017b895574af`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
-		Size: 2.6 KB (2552 bytes)  
+	-	`sha256:a31ef103d8feab03316cd53a9dd3d3cb626b53b517ab7664141dfafc4628bebe`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 2.6 KB (2554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba58eec9d09c63372713a5afb76bd999cf1589f98f249a7c91e82226c7cab9d7`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
+	-	`sha256:d117301c14f00d8e411876fcbce22124cb8a2c0084282ce3c91b7352485e2f52`  
+		Last Modified: Sat, 17 Feb 2018 08:17:01 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.3.4`
 
 ```console
-$ docker pull mariadb@sha256:788bccb79bb0da10a5ba021a004be9d8274702debb3ce9b27e24c507249ba4a5
+$ docker pull mariadb@sha256:888b9d0f411090bf9a3e7c1c652cb9d905f362704c9eb2721bfc74a9598df219
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -933,103 +933,103 @@ $ docker pull mariadb@sha256:788bccb79bb0da10a5ba021a004be9d8274702debb3ce9b27e2
 ### `mariadb:10.3.4` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:c280f1ab991c6a50983987b81d26a62c69da7804bff324bd4ad4e2fa0cc56656
+$ docker pull mariadb@sha256:6a6c3696a54908c9f9f295bac1b69d9b6c06ef9e934a63e4232b975fb1067d15
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.8 MB (135848593 bytes)**  
+-	Total Size: **135.9 MB (135857635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724e870c7a4608e9b11c286cf003aede2562cb3ff07b4e890e9c4a1547f1ed8`
+-	Image ID: `sha256:32414f7e3afd3d3071d1a8589db830b3103c4ce11389d7749e246589ca372962`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 ENV MARIADB_MAJOR=10.3
-# Thu, 18 Jan 2018 23:01:21 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 ENV MARIADB_VERSION=10.3.4+maria~jessie
-# Thu, 18 Jan 2018 23:01:22 GMT
+# Sat, 17 Feb 2018 08:04:35 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Thu, 18 Jan 2018 23:01:56 GMT
+# Sat, 17 Feb 2018 08:05:11 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Thu, 18 Jan 2018 23:01:57 GMT
+# Sat, 17 Feb 2018 08:07:00 GMT
 VOLUME [/var/lib/mysql]
-# Thu, 18 Jan 2018 23:01:57 GMT
+# Sat, 17 Feb 2018 08:07:00 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:01 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 18 Jan 2018 23:01:58 GMT
+# Sat, 17 Feb 2018 08:07:02 GMT
 EXPOSE 3306/tcp
-# Thu, 18 Jan 2018 23:01:59 GMT
+# Sat, 17 Feb 2018 08:07:02 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbf7a98847fe053d05d413216c6e94087aac6251a425503a162d4a60db94b9b3`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
-		Size: 327.0 B  
+	-	`sha256:f2fb24596a53f95c366c705270314cca40359feccde6ecf95a89a514b6cb4746`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956bbdc628d7f2b4c3905d135369180afecad24b93826a4ae5cb6bc8af186155`  
-		Last Modified: Thu, 18 Jan 2018 23:09:35 GMT  
-		Size: 75.6 MB (75565482 bytes)  
+	-	`sha256:0e89e32af98f9e0abef16c4609404eb93e30265a2aee8ded42e48c7b74283c57`  
+		Last Modified: Sat, 17 Feb 2018 08:17:18 GMT  
+		Size: 75.6 MB (75565851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1426f2a874f31cf211298b31fe7d0178bdf5bc85ee6d89d1c416017b895574af`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
-		Size: 2.6 KB (2552 bytes)  
+	-	`sha256:a31ef103d8feab03316cd53a9dd3d3cb626b53b517ab7664141dfafc4628bebe`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 2.6 KB (2554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba58eec9d09c63372713a5afb76bd999cf1589f98f249a7c91e82226c7cab9d7`  
-		Last Modified: Thu, 18 Jan 2018 23:09:23 GMT  
+	-	`sha256:d117301c14f00d8e411876fcbce22124cb8a2c0084282ce3c91b7352485e2f52`  
+		Last Modified: Sat, 17 Feb 2018 08:17:01 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1375,7 +1375,7 @@ CMD ["mysqld"]
 ## `mariadb:latest`
 
 ```console
-$ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721ecb8e9549c17c
+$ docker pull mariadb@sha256:d5f0bc88ba397233677ff75b7b1de693d5e84527ecf2b4f59adebf8d0bcac3c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1385,102 +1385,102 @@ $ docker pull mariadb@sha256:138e843d467a5be28b2681d76ae4acf2714c18651f04ad9c721
 ### `mariadb:latest` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:fb88246764ad044d93fdc9a68afa35d3902bdda1b049626b5a870d346a587f2e
+$ docker pull mariadb@sha256:02df012048c820331f2aed41acae569cb674ccd86b38cd54543c74e31a73ae55
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135271871 bytes)**  
+-	Total Size: **135.3 MB (135280463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58eaa7e4afb7eb18a5cf5cc906256285bd30fb195c7c735cf0ca7c0254ddcb0b`
+-	Image ID: `sha256:e1dd445713ae794c0ae6261e947fff413cae4f4dfb2061a13f85f9faab8aceda`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Tue, 12 Dec 2017 01:41:12 GMT
-ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
-# Tue, 12 Dec 2017 01:41:12 GMT
+# Thu, 15 Feb 2018 01:42:14 GMT
+ADD file:f1509ab9c2cd3810736e26739fa0f78ee1ba942e14498ba5f266d8a78e664acc in / 
+# Thu, 15 Feb 2018 01:42:14 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 06:37:39 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Tue, 12 Dec 2017 02:17:16 GMT
+# Sat, 17 Feb 2018 08:03:50 GMT
 ENV GOSU_VERSION=1.10
-# Tue, 12 Dec 2017 02:17:36 GMT
+# Sat, 17 Feb 2018 08:04:11 GMT
 RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 12 Dec 2017 02:17:37 GMT
+# Sat, 17 Feb 2018 08:04:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Dec 2017 02:17:53 GMT
+# Sat, 17 Feb 2018 08:04:29 GMT
 ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
-# Tue, 12 Dec 2017 02:17:56 GMT
+# Sat, 17 Feb 2018 08:04:33 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 12 Dec 2017 02:17:57 GMT
+# Sat, 17 Feb 2018 08:04:34 GMT
 RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.d/percona.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona
-# Tue, 12 Dec 2017 02:18:44 GMT
+# Sat, 17 Feb 2018 08:07:31 GMT
 ENV MARIADB_MAJOR=10.2
-# Tue, 13 Feb 2018 23:10:25 GMT
+# Sat, 17 Feb 2018 08:07:32 GMT
 ENV MARIADB_VERSION=10.2.13+maria~jessie
-# Tue, 13 Feb 2018 23:10:26 GMT
+# Sat, 17 Feb 2018 08:07:33 GMT
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Tue, 13 Feb 2018 23:11:08 GMT
+# Sat, 17 Feb 2018 08:08:06 GMT
 RUN { 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		percona-xtrabackup-24 		socat 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Feb 2018 23:11:09 GMT
+# Sat, 17 Feb 2018 08:08:16 GMT
 COPY file:d559178e6a2929e36791c6a1fa232dc4ac4298ecc446d38972ee1d2a58e30621 in /usr/local/bin/ 
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 13 Feb 2018 23:11:10 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:17 GMT
 EXPOSE 3306/tcp
-# Tue, 13 Feb 2018 23:11:11 GMT
+# Sat, 17 Feb 2018 08:08:18 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
-		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
-		Size: 52.6 MB (52599697 bytes)  
+	-	`sha256:4176fe04cefee66d80f83003fd4166373f83cb552d1d01bb3b29a0ac45a48c50`  
+		Last Modified: Thu, 15 Feb 2018 02:17:07 GMT  
+		Size: 52.6 MB (52608285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78032de49d65ab1151d278821068401fa7a8964c16b2f4441a3ef9ac8dd02229`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 2.1 KB (2087 bytes)  
+	-	`sha256:d1e86691d483c1c6ea1e788bfe7aecb06e79886ec5fffdcfffd7b9f3505100e3`  
+		Last Modified: Sat, 17 Feb 2018 06:55:39 GMT  
+		Size: 2.1 KB (2090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84229c396ea320d420a6f62727847e96ab22a15e4852ce706d0319f3e5cac841`  
-		Last Modified: Tue, 12 Dec 2017 02:23:48 GMT  
-		Size: 985.2 KB (985203 bytes)  
+	-	`sha256:c3f621b14a80a5dcd54f7fa61d5cb63b7ef5c3c8f14371c8e7f9fc22eb0ca2e8`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 985.2 KB (985222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c992bbf20f4e9d9b0a9fb2e83b7c1cba1f7738ec9e37821d293309757b7500a6`  
-		Last Modified: Tue, 12 Dec 2017 02:23:46 GMT  
-		Size: 113.0 B  
+	-	`sha256:7b3f1b17db07aae783db4b7ec507e010b8e52c0afce24137b4015a26bd0461f6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:380e932be3aa8c371c88bb24169187740051fde8a1d7111f76ab5ad8d55782ab`  
-		Last Modified: Tue, 12 Dec 2017 02:23:47 GMT  
-		Size: 6.7 MB (6671865 bytes)  
+	-	`sha256:add1151625d93421acaf319f3de3d5b3e10dcaa52b1a12b8ddeb818d59d39b29`  
+		Last Modified: Sat, 17 Feb 2018 08:17:04 GMT  
+		Size: 6.7 MB (6671930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8003c6d68fcd42db3055c912e004e8aa29ba57f59b1b53fcfdb2a670a80ef3ee`  
-		Last Modified: Tue, 12 Dec 2017 02:23:45 GMT  
-		Size: 20.8 KB (20830 bytes)  
+	-	`sha256:d40e879009a8651bc9035c7b885006e25bbb64ad2f2b8429fab484405151642e`  
+		Last Modified: Sat, 17 Feb 2018 08:17:02 GMT  
+		Size: 20.8 KB (20831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:603f60c361606d648ea92417237458203b403e45c9e31504558b2fe2b604a593`  
-		Last Modified: Tue, 12 Dec 2017 02:23:44 GMT  
-		Size: 316.0 B  
+	-	`sha256:0f888e49f29bcb507349d1f830503a9f05a7d1e08bcd8a077a314bff79c341e6`  
+		Last Modified: Sat, 17 Feb 2018 08:17:00 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31855fac2bb2d4a625a4bfc0d6115d4a28486174e2e1371f901fc89cc1845f3`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 327.0 B  
+	-	`sha256:bd51d7af15515b05689ec1b8b073dceb6752985536a36479e61769eb60d67ba3`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 323.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfd31f5b971206243e5d7cc8115bd96224deee51bf01906a138ae4aaeae24d46`  
-		Last Modified: Tue, 13 Feb 2018 23:23:05 GMT  
-		Size: 75.0 MB (74988759 bytes)  
+	-	`sha256:6cf37448a3b37324f662da5c60ce3281197d712885ba5e7242f0ebf668879dd9`  
+		Last Modified: Sat, 17 Feb 2018 08:18:14 GMT  
+		Size: 75.0 MB (74988680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8766af62104f125e9c0cd91a06c807d1d2ca2266bb4234643a736fc9c9873ee`  
-		Last Modified: Tue, 13 Feb 2018 23:22:53 GMT  
-		Size: 2.6 KB (2553 bytes)  
+	-	`sha256:0519e00d29e56969f610d90d7b5fde6da6ae9d2572bb01d1397accd83c1add69`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
+		Size: 2.6 KB (2551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ed3745475095f718707449366dcd938c0232678f7ad60c5598268a2f1966f93`  
-		Last Modified: Tue, 13 Feb 2018 23:22:54 GMT  
+	-	`sha256:8f83e3487101572893bca29a89bd868abaa9004f37e1db10f99cdc9220890d1f`  
+		Last Modified: Sat, 17 Feb 2018 08:17:57 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
