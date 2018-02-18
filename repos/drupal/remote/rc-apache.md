@@ -1,7 +1,7 @@
 ## `drupal:rc-apache`
 
 ```console
-$ docker pull drupal@sha256:2b54776e8497cf987d9d111eaf998296733d1d99de83eb73b08bd0e831ab0ccd
+$ docker pull drupal@sha256:6c539546785780ceeccd740e63b20ae07793a63fec328f77a592e5bd8af5be3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -511,14 +511,14 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 ### `drupal:rc-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull drupal@sha256:ec0d0777b9a18c78ba63b07da9dc27a02299f38a87da19f63d42395654e5c273
+$ docker pull drupal@sha256:6b680970261feda7ac3c6a2cae6171d22e4b4581f2b7e3800699077b2a3232e5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.8 MB (138770564 bytes)**  
+-	Total Size: **138.0 MB (138045494 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77b4ffc240a5b31cddd5a82aa18dc897a1796ebec8d4b4b753e746827bf1c4f9`
+-	Image ID: `sha256:c4f43e90b8b4a081e2436719e824e4da7abe0ca91e7fe5d2f66697389295889b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -587,19 +587,17 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Thu, 15 Feb 2018 23:50:53 GMT
 CMD ["apache2-foreground"]
-# Fri, 16 Feb 2018 13:06:32 GMT
-RUN a2enmod rewrite
-# Fri, 16 Feb 2018 13:08:34 GMT
-RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng-dev 		libpq-dev 	' 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd 		--with-jpeg-dir=/usr 		--with-png-dir=/usr 	&& docker-php-ext-install -j "$(nproc)" gd mbstring opcache pdo pdo_mysql pdo_pgsql zip 	&& apt-mark manual 		libjpeg62-turbo 		libpq5 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 16 Feb 2018 13:08:36 GMT
+# Sun, 18 Feb 2018 16:25:45 GMT
+RUN set -ex; 		if command -v a2enmod; then 		a2enmod rewrite; 	fi; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 		libpq-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Sun, 18 Feb 2018 16:25:46 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 16 Feb 2018 13:08:37 GMT
+# Sun, 18 Feb 2018 16:25:47 GMT
 WORKDIR /var/www/html
-# Fri, 16 Feb 2018 13:08:37 GMT
+# Sun, 18 Feb 2018 16:25:47 GMT
 ENV DRUPAL_VERSION=8.5.0-beta1
-# Fri, 16 Feb 2018 13:08:38 GMT
+# Sun, 18 Feb 2018 16:25:48 GMT
 ENV DRUPAL_MD5=981177d250839fdf325001c12b4e20ba
-# Fri, 16 Feb 2018 13:08:49 GMT
+# Sun, 18 Feb 2018 16:25:59 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -660,21 +658,17 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Fri, 16 Feb 2018 02:13:20 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fdc779d75c94c981e28bac321c3fcb13fe770d482a56e67891d2b587e7bfa4f`  
-		Last Modified: Fri, 16 Feb 2018 13:23:37 GMT  
-		Size: 315.0 B  
+	-	`sha256:c6d08b8b6d719daec714d04031382440f94d023661993eb1e8377ef19acec6a9`  
+		Last Modified: Sun, 18 Feb 2018 16:49:08 GMT  
+		Size: 1.1 MB (1108051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60d92ba767ee85aed20bf549f5e26805000d3b24bd2d1a9c63d57a39ea0512a3`  
-		Last Modified: Fri, 16 Feb 2018 13:23:38 GMT  
-		Size: 1.8 MB (1832821 bytes)  
+	-	`sha256:49701b8a74cb30968d676290a64571670e8e59b96b33d1b0da7c56836889e2ac`  
+		Last Modified: Sun, 18 Feb 2018 16:41:11 GMT  
+		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b20759380a343a5153a5da39acf9c27958a002ff879f409c3eede10180aa53c1`  
-		Last Modified: Fri, 16 Feb 2018 13:23:37 GMT  
-		Size: 352.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beb52756f37531dd5dc9231c383a5bc08fb1105e16cd87b4eebad914bd0cdd9e`  
-		Last Modified: Fri, 16 Feb 2018 13:23:46 GMT  
-		Size: 15.7 MB (15689385 bytes)  
+	-	`sha256:185043c64de174205aab1ead3936ff12a1187c9ce7e78e04b313591af3a60646`  
+		Last Modified: Sun, 18 Feb 2018 16:41:21 GMT  
+		Size: 15.7 MB (15689398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `drupal:rc-apache` - linux; 386
