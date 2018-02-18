@@ -1,7 +1,7 @@
 ## `ruby:2-stretch`
 
 ```console
-$ docker pull ruby@sha256:507ce77c6279cf77a768d614b243cec1206b02376fc381fa8ed2dd824c4e4de3
+$ docker pull ruby@sha256:2a8924485b980a17de913e4053549afd325e5ce3213b730b167a47b27d437a32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -533,14 +533,14 @@ CMD ["irb"]
 ### `ruby:2-stretch` - linux; s390x
 
 ```console
-$ docker pull ruby@sha256:a750fbfcab6d75ee9b9f2e367b5384575a47213ffd86e7cbb98ae224d1c220be
+$ docker pull ruby@sha256:9a7611d283d9f7034cb83630273b5667c1050f8eafbf8394fb571b4d20e28b89
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **337.5 MB (337464166 bytes)**  
+-	Total Size: **337.5 MB (337469909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89af151fdb82c5479904200019621133d79b8c18d5b75a39368c695d5ac90579`
+-	Image ID: `sha256:605c20d94f9f80b65d43b50a399c480218feeee2bce37d64dfa03e5b41877aa4`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -564,21 +564,21 @@ ENV RUBY_MAJOR=2.5
 ENV RUBY_VERSION=2.5.0
 # Thu, 15 Feb 2018 08:34:07 GMT
 ENV RUBY_DOWNLOAD_SHA256=1da0afed833a0dab94075221a615c14487b05d0c407f991c8080d576d985b49b
-# Thu, 15 Feb 2018 08:34:07 GMT
-ENV RUBYGEMS_VERSION=2.7.5
-# Thu, 15 Feb 2018 08:34:07 GMT
+# Sun, 18 Feb 2018 09:29:37 GMT
+ENV RUBYGEMS_VERSION=2.7.6
+# Sun, 18 Feb 2018 09:29:38 GMT
 ENV BUNDLER_VERSION=1.16.1
-# Thu, 15 Feb 2018 08:36:00 GMT
+# Sun, 18 Feb 2018 09:31:16 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Thu, 15 Feb 2018 08:36:01 GMT
+# Sun, 18 Feb 2018 09:31:16 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 15 Feb 2018 08:36:01 GMT
+# Sun, 18 Feb 2018 09:31:16 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 15 Feb 2018 08:36:01 GMT
+# Sun, 18 Feb 2018 09:31:16 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 15 Feb 2018 08:36:01 GMT
+# Sun, 18 Feb 2018 09:31:17 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 15 Feb 2018 08:36:03 GMT
+# Sun, 18 Feb 2018 09:31:17 GMT
 CMD ["irb"]
 ```
 
@@ -607,11 +607,11 @@ CMD ["irb"]
 		Last Modified: Thu, 15 Feb 2018 09:09:07 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d45755af0c54dc4d79ac7d9c4aa983f1f8b05368f5508fdaaead76bed3d824dc`  
-		Last Modified: Thu, 15 Feb 2018 09:09:12 GMT  
-		Size: 21.8 MB (21835837 bytes)  
+	-	`sha256:23a6eea6ea2aeb497af617a5ca82b6ce60c09b753b80d017fd8b6fa5d3004304`  
+		Last Modified: Sun, 18 Feb 2018 10:09:00 GMT  
+		Size: 21.8 MB (21841580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2535693f381e3c8d5277e9ef657e0fda7461f6a3e4b2ed0895417268c957e02e`  
-		Last Modified: Thu, 15 Feb 2018 09:09:07 GMT  
+	-	`sha256:01fbe8e328c5eef70cea6775a1e26d0d68e27922d725e8f5cd2c55a552bdc24d`  
+		Last Modified: Sun, 18 Feb 2018 10:08:58 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
