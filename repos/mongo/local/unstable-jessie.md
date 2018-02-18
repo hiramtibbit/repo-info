@@ -1,10 +1,10 @@
-# `mongo:3.7.1-jessie`
+# `mongo:3.7.2-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b616bd2250f66a81afb4fc67839685c3493bc9348d720e2a3596c6312a27a2de`
-- Created: `2018-01-17T18:16:13.403275405Z`
-- Virtual Size: ~ 366.01 Mb  
+- Image ID: `sha256:ccc56d61ab89b0df50f44d7a301bf22511cf02dfe462d37738357e61450227af`
+- Created: `2018-02-18T02:37:23.798934827Z`
+- Virtual Size: ~ 373.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,4 +17,4 @@
   - `MONGO_PACKAGE=mongodb-org-unstable`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.7`
-  - `MONGO_VERSION=3.7.1`
+  - `MONGO_VERSION=3.7.2`
