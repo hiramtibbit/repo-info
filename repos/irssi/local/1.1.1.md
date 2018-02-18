@@ -1,10 +1,10 @@
-# `irssi:1.1.0`
+# `irssi:1.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c02fcda1a92cb211d7774f7ea09eda224bda5b7ce6f3792bb8a202008a85f93`
-- Created: `2018-01-17T18:12:22.807299423Z`
-- Virtual Size: ~ 257.50 Mb  
+- Image ID: `sha256:ff30c7ba13385399a62eb373ace969513ccc6f408ca6f81af5046bd60d17d9e9`
+- Created: `2018-02-18T03:30:42.476116812Z`
+- Virtual Size: ~ 259.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.1.0`
+  - `IRSSI_VERSION=1.1.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -605,13 +605,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-4.8/4.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-4.9=4.9.2-10`
+### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u1`
 
 Binary Packages:
 
-- `gcc-4.9-base:amd64=4.9.2-10`
-- `libgcc1:amd64=1:4.9.2-10`
-- `libstdc++6:amd64=4.9.2-10`
+- `gcc-4.9-base:amd64=4.9.2-10+deb8u1`
+- `libgcc1:amd64=1:4.9.2-10+deb8u1`
+- `libstdc++6:amd64=4.9.2-10+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -624,17 +624,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u1
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.dsc' gcc-4.9_4.9.2-10+deb8u1.dsc 19264 SHA256:6b8b3822063411e6d31bad8581ccebbd09dd1f537b4a949dbee7520b73dcd3bc
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.diff.gz' gcc-4.9_4.9.2-10+deb8u1.diff.gz 875721 SHA256:c46cb11de5e54f61cb356ea24c72603a66aef2add62fc58df68ba813edffb6b2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.8.3-13.1`
 
@@ -1231,11 +1231,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libdatetime-perl/2:1.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libdatetime-perl/2:1.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libdatetime-timezone-perl=1:1.75-2+2017c`
+### `dpkg` source package: `libdatetime-timezone-perl=1:1.75-2+2018b`
 
 Binary Packages:
 
-- `libdatetime-timezone-perl=1:1.75-2+2017c`
+- `libdatetime-timezone-perl=1:1.75-2+2018b`
 
 Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 
@@ -1246,17 +1246,17 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:1.75-2+2017c
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2017c.dsc' libdatetime-timezone-perl_1.75-2+2017c.dsc 2628 SHA256:c6295729e4e50e6150c059cd49be97bcb657f747ecf338c3b63288cb7918563c
+$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:1.75-2+2018b
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2018b.dsc' libdatetime-timezone-perl_1.75-2+2018b.dsc 2628 SHA256:21aa80527a188c99e75363d64918c1959e91950c3c7eab47c7c038479456636e
 'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75.orig.tar.gz' libdatetime-timezone-perl_1.75.orig.tar.gz 888615 SHA256:8ea1282f1ab348766e9a81b46dac6e764375e319f442c24e030d14beb03a6e73
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2017c.debian.tar.xz' libdatetime-timezone-perl_1.75-2+2017c.debian.tar.xz 225872 SHA256:a4ce7df036ddf1b06d04dcc7ae31af69df4877dd77ab216cf8a9aaeab896778e
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2018b.debian.tar.xz' libdatetime-timezone-perl_1.75-2+2018b.debian.tar.xz 238168 SHA256:63a9c1f56e892b504f75b974fef07e123f1fc8145d572eab8b32de458f44d626
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2017c/ (for browsing the source)
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2017c/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:1.75-2+2017c/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2018b/ (for browsing the source)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2018b/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:1.75-2+2018b/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libencode-locale-perl=1.03-1`
 
@@ -2983,11 +2983,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.2.2-4+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.2.2-4+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+deb8u1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -2996,16 +2996,16 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+deb8u1
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.dsc' sensible-utils_0.0.9+deb8u1.dsc 1590 SHA256:1d1d3d7e71c53cceb922dc33db5064cb5be76450a2918f8e3f998824237f09b0
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.tar.xz' sensible-utils_0.0.9+deb8u1.tar.xz 53544 SHA256:f4b505ecc1c5015df2e5d3595da12cceca54be8729270b054179d31d8d661ab9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.9/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.2-3+deb8u4`
 
@@ -3172,11 +3172,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017c-0+deb8u1`
+### `dpkg` source package: `tzdata=2018c-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017c-0+deb8u1`
+- `tzdata=2018c-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3185,17 +3185,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.dsc' tzdata_2017c-0+deb8u1.dsc 1985 SHA256:29cb60792063531d186f5a9d66031ec19f6267d7d668b1fb75858a247d86df12
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.debian.tar.xz' tzdata_2017c-0+deb8u1.debian.tar.xz 102884 SHA256:c6d233ce05f48162aafc683f506ff0024da1fc58185cca13c9d6b4e5350aa457
+$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
