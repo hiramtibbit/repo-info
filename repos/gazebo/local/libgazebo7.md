@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ab4c5e632cb674f9d6459e796ff58989839a6543a66ce780facc7e53406c7d2`
-- Created: `2018-02-10T01:19:27.910637877Z`
+- Image ID: `sha256:a41fb9aacd6fa8ac79d427c64529a5213cafa9a9f55691e04732cc8ea642663e`
+- Created: `2018-02-17T04:34:05.546074328Z`
 - Virtual Size: ~ 1.42 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1190,15 +1190,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.10.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.11.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.10.0-1~xenial`
-- `gazebo7-common=7.10.0-1~xenial`
-- `gazebo7-plugin-base=7.10.0-1~xenial`
-- `libgazebo7:amd64=7.10.0-1~xenial`
-- `libgazebo7-dev:amd64=7.10.0-1~xenial`
+- `gazebo7=7.11.0-1~xenial`
+- `gazebo7-common=7.11.0-1~xenial`
+- `gazebo7-plugin-base=7.11.0-1~xenial`
+- `libgazebo7:amd64=7.11.0-1~xenial`
+- `libgazebo7-dev:amd64=7.11.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`, `/usr/share/doc/libgazebo7-dev/copyright`)
 
@@ -3267,12 +3267,12 @@ $ apt-get source -qq --print-uris libvisual=0.4.0-8
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvisual/libvisual_0.4.0-8.debian.tar.xz' libvisual_0.4.0-8.debian.tar.xz 15780 SHA256:cf130773c656f7e7be637b7f06cb1d4f6f29f7754e39ba34c1e0c4168963f143
 ```
 
-### `dpkg` source package: `libvorbis=1.3.5-3`
+### `dpkg` source package: `libvorbis=1.3.5-3ubuntu0.1`
 
 Binary Packages:
 
-- `libvorbis0a:amd64=1.3.5-3`
-- `libvorbisenc2:amd64=1.3.5-3`
+- `libvorbis0a:amd64=1.3.5-3ubuntu0.1`
+- `libvorbisenc2:amd64=1.3.5-3ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3281,10 +3281,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libvorbis=1.3.5-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3.dsc' libvorbis_1.3.5-3.dsc 2280 SHA256:08d23925f4c1ff6a49d05bcbecdce3bd2793f20bcc804671d1b0a9d7e793334f
+$ apt-get source -qq --print-uris libvorbis=1.3.5-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3ubuntu0.1.dsc' libvorbis_1.3.5-3ubuntu0.1.dsc 2393 SHA256:2485a99f1b41b3ad2c8ab121984d86b7189a023fcec79ff8d91a3a18c3f1d469
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5.orig.tar.gz' libvorbis_1.3.5.orig.tar.gz 1638779 SHA256:6efbcecdd3e5dfbf090341b485da9d176eb250d893e3eb378c428a2db38301ce
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3.debian.tar.xz' libvorbis_1.3.5-3.debian.tar.xz 10348 SHA256:5416cb10a6fcf94b2529a8bc0a7d3a14cc383e812935a86cebefc93914d3a48f
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3ubuntu0.1.debian.tar.xz' libvorbis_1.3.5-3ubuntu0.1.debian.tar.xz 11528 SHA256:441413f49a5fe295dcc5f0950d6cf5ed4800b4c8e7583ef02cc768a92fa296b8
 ```
 
 ### `dpkg` source package: `libvpx=1.5.0-2ubuntu1`
@@ -3968,27 +3968,32 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.4`
+### `dpkg` source package: `mesa=17.2.8-0ubuntu0~16.04.1`
 
 Binary Packages:
 
-- `libegl1-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
-- `libgbm1:amd64=17.2.4-0ubuntu1~16.04.4`
-- `libgl1-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.4`
-- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.4`
-- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.4`
-- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
-- `mesa-common-dev:amd64=17.2.4-0ubuntu1~16.04.4`
-- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libegl1-mesa:amd64=17.2.8-0ubuntu0~16.04.1`
+- `libgbm1:amd64=17.2.8-0ubuntu0~16.04.1`
+- `libgl1-mesa-dev:amd64=17.2.8-0ubuntu0~16.04.1`
+- `libgl1-mesa-dri:amd64=17.2.8-0ubuntu0~16.04.1`
+- `libgl1-mesa-glx:amd64=17.2.8-0ubuntu0~16.04.1`
+- `libglapi-mesa:amd64=17.2.8-0ubuntu0~16.04.1`
+- `mesa-common-dev:amd64=17.2.8-0ubuntu0~16.04.1`
+- `mesa-va-drivers:amd64=17.2.8-0ubuntu0~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dev/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/mesa-common-dev/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=17.2.8-0ubuntu0~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.dsc' mesa_17.2.8-0ubuntu0~16.04.1.dsc 5009 SHA256:3096a4d322989de390968fbbf2614a1be320b80c5a5329ab1dc9e31bb20936bf
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8.orig.tar.gz' mesa_17.2.8.orig.tar.gz 17755568 SHA256:c715c3a3d6fe26a69c096f573ec416e038a548f0405e3befedd5136517527a84
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.diff.gz' mesa_17.2.8-0ubuntu0~16.04.1.diff.gz 152309 SHA256:8ebdfc10cfb16c51048a29c65a64d77b942e1fd71f04e72e92f99ce806b3a553
+```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -5672,12 +5677,10 @@ Binary Packages:
 - `libfdisk1:amd64=2.27.1-6ubuntu3.3`
 - `libmount1:amd64=2.27.1-6ubuntu3.3`
 - `libsmartcols1:amd64=2.27.1-6ubuntu3.3`
-- `libuuid1:amd64=2.27.1-6ubuntu3.3`
 - `mount=2.27.1-6ubuntu3.3`
 - `util-linux=2.27.1-6ubuntu3.3`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.3`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -5700,11 +5703,46 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `wavpack=4.75.2-2`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.4`
 
 Binary Packages:
 
-- `libwavpack1:amd64=4.75.2-2`
+- `libuuid1:amd64=2.27.1-6ubuntu3.4`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.4`
+
+Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.dsc' util-linux_2.27.1-6ubuntu3.4.dsc 3862 SHA256:1963b4b9acfcd40246184a00944b36786ce39f8032ff8050deaf500dd5e98425
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.debian.tar.xz' util-linux_2.27.1-6ubuntu3.4.debian.tar.xz 84172 SHA256:f8d5c6e500357de7a1809aaf644949eacab67b16d3cbb057ae3e011b1455c73b
+```
+
+### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.1`
+
+Binary Packages:
+
+- `libwavpack1:amd64=4.75.2-2ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5713,10 +5751,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wavpack=4.75.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2.dsc' wavpack_4.75.2-2.dsc 2117 SHA256:a77fcaeb85f161fcab319888af8cb7abeb0d87f1a4da0bebb849f29bfbbf8375
+$ apt-get source -qq --print-uris wavpack=4.75.2-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.1.dsc' wavpack_4.75.2-2ubuntu0.1.dsc 2230 SHA256:683b2cecf8a60f84ac3088c07dea0cf755975358821c63368e4f03d4d48b385c
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2.orig.tar.bz2' wavpack_4.75.2.orig.tar.bz2 439798 SHA256:7d31b34166c33c3109b45c6e4579b472fd05e3ee8ec6d728352961c5cdd1d6b0
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2.debian.tar.xz' wavpack_4.75.2-2.debian.tar.xz 5812 SHA256:d96c3ae7e4715e1743bc6b83f432c954a3512973609b0df717731ba706ffc4a8
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.1.debian.tar.xz' wavpack_4.75.2-2ubuntu0.1.debian.tar.xz 6372 SHA256:a9c25c003ef321523a66b6c467a419bf9db772886654110ad94763ed039991a1
 ```
 
 ### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.2`
