@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc189d65dd082c9976fa8257f3b048f02b4f02d5ea581f0de8d507378b2370d5`
-- Created: `2018-01-04T00:07:20.912383466Z`
-- Virtual Size: ~ 395.06 Mb  
+- Image ID: `sha256:301e74b8267431a8a20526563ca2473884779fa1c1d2210bb0fde6e0e1159fd4`
+- Created: `2018-02-17T06:39:24.839957009Z`
+- Virtual Size: ~ 395.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -350,12 +350,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u8`
+### `dpkg` source package: `curl=7.38.0-4+deb8u9`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u8`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u8`
+- `libcurl3:amd64=7.38.0-4+deb8u9`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u9`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -367,17 +367,17 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u8
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u8.dsc' curl_7.38.0-4+deb8u8.dsc 2324 SHA256:d160ead196ea8eefe7f465599f6328a4b90b4d09e934d03f54f5588c0ce45fd8
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u8.debian.tar.xz' curl_7.38.0-4+deb8u8.debian.tar.xz 43632 SHA256:ec846b7e120206cc60f906ed0d846e94bdeb5eada86ed091749208f87d1f20c6
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u9
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.dsc' curl_7.38.0-4+deb8u9.dsc 2669 SHA256:3d5ec4e24e0231cebba82f605e713bf13790b49427902e4dd4f7fc8aa4130d33
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.debian.tar.xz' curl_7.38.0-4+deb8u9.debian.tar.xz 45284 SHA256:60bd8df25ebcbd391b6a1de9692b262fecde1ecf598c9017d2a805b1043d12e4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2480,11 +2480,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mecab/0.996-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mecab/0.996-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.58-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.59-0+deb8u1`
 
 Binary Packages:
 
-- `mysql-common=5.5.58-0+deb8u1`
+- `mysql-common=5.5.59-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
 
@@ -2505,17 +2505,17 @@ Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0+deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.dsc' mysql-5.5_5.5.58-0+deb8u1.dsc 3262 SHA256:5759120be94cf618f8a04595f4c3f82b3d9933c403be6b8b6f567580933f0bd0
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz 232788 SHA256:f1cb1bc0763628a0c076520677a5cac658b8b0b7811d0af1d99433b12a272062
+$ apt-get source -qq --print-uris mysql-5.5=5.5.59-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59-0+deb8u1.dsc' mysql-5.5_5.5.59-0+deb8u1.dsc 3262 SHA256:ad390443c2763b522c8100152d634cfa66489a50a8f0aa3f08c837c566c658ee
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59.orig.tar.gz' mysql-5.5_5.5.59.orig.tar.gz 21050313 SHA256:ee920177c9dec770c30b673a21143d5e92a67e8207f9b720d41d51cda05d8513
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.59-0+deb8u1.debian.tar.xz 232832 SHA256:3e62b063a41ba537e6572d3bfc0f56f86c5c4a1b2e6dbedb070ac97a19dc2466
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mysql-5.5/5.5.59-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.59-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.59-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
 
@@ -3010,11 +3010,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.2.2-4+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.2.2-4+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+deb8u1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -3023,16 +3023,16 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+deb8u1
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.dsc' sensible-utils_0.0.9+deb8u1.dsc 1590 SHA256:1d1d3d7e71c53cceb922dc33db5064cb5be76450a2918f8e3f998824237f09b0
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1.tar.xz' sensible-utils_0.0.9+deb8u1.tar.xz 53544 SHA256:f4b505ecc1c5015df2e5d3595da12cceca54be8729270b054179d31d8d661ab9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.9/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.2-3+deb8u4`
 
@@ -3225,11 +3225,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017c-0+deb8u1`
+### `dpkg` source package: `tzdata=2018c-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017c-0+deb8u1`
+- `tzdata=2018c-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3238,17 +3238,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.dsc' tzdata_2017c-0+deb8u1.dsc 1985 SHA256:29cb60792063531d186f5a9d66031ec19f6267d7d668b1fb75858a247d86df12
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb8u1.debian.tar.xz' tzdata_2017c-0+deb8u1.debian.tar.xz 102884 SHA256:c6d233ce05f48162aafc683f506ff0024da1fc58185cca13c9d6b4e5350aa457
+$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
