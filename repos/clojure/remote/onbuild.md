@@ -1,7 +1,7 @@
 ## `clojure:onbuild`
 
 ```console
-$ docker pull clojure@sha256:f8b2f3bedcd985ed1c5291104c56c0ff456e054673ba66b9e93acbd44b9683b9
+$ docker pull clojure@sha256:7cad0495de65fdec7ee21ef0f0ca0776d7cb6c0854c09d09c6042db8b1d0ebf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -389,14 +389,14 @@ CMD ["lein" "run"]
 ### `clojure:onbuild` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:665e246753ef00b87a1c065d9ade44a4cbad14bf2ea33873c83e586924485df8
+$ docker pull clojure@sha256:ed4ac20056ccab87bf9bdd3fa218d3f1f06818cf5fd772d1e927f5c7ebf27f6c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289737556 bytes)**  
+-	Total Size: **290.3 MB (290338393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c41c42a675d1d9daaada1e5305e471ea471be3c9835bee5a86949e429adc2b70`
+-	Image ID: `sha256:183a7330c75a8286a62a751046c1545b269a94e68301593ccef1582dea1715ae`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -444,19 +444,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Fri, 16 Feb 2018 11:02:19 GMT
 ENV LEIN_ROOT=1
-# Fri, 16 Feb 2018 11:02:30 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Fri, 16 Feb 2018 11:02:56 GMT
+# Tue, 20 Feb 2018 17:22:56 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 17:23:13 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Fri, 16 Feb 2018 11:02:57 GMT
+# Tue, 20 Feb 2018 17:23:14 GMT
 WORKDIR /usr/src/app
-# Fri, 16 Feb 2018 11:02:58 GMT
+# Tue, 20 Feb 2018 17:23:14 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Fri, 16 Feb 2018 11:02:58 GMT
+# Tue, 20 Feb 2018 17:23:15 GMT
 ONBUILD RUN lein deps
-# Fri, 16 Feb 2018 11:02:59 GMT
+# Tue, 20 Feb 2018 17:23:15 GMT
 ONBUILD COPY . /usr/src/app
-# Fri, 16 Feb 2018 11:02:59 GMT
+# Tue, 20 Feb 2018 17:23:16 GMT
 CMD ["lein" "run"]
 ```
 
@@ -501,12 +501,12 @@ CMD ["lein" "run"]
 		Last Modified: Fri, 16 Feb 2018 11:05:33 GMT  
 		Size: 12.1 MB (12137677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ffccb3b6582f5a13e7004795ff8ea6e420db066caa7e1311ff20d5f7b22ea6b`  
-		Last Modified: Fri, 16 Feb 2018 11:05:32 GMT  
-		Size: 3.3 MB (3341030 bytes)  
+	-	`sha256:3d1f5bbd666066ec99f7d47b8c333ff268d9b89330dfc85e20eb89017958e857`  
+		Last Modified: Tue, 20 Feb 2018 17:23:55 GMT  
+		Size: 3.9 MB (3941867 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0348cd4cccbc21db078a1dfc8fa682a652c3c14cf79a36798fb18a92a727d112`  
-		Last Modified: Fri, 16 Feb 2018 11:06:25 GMT  
+	-	`sha256:020d8c7e505ffce5914edc5a3bcf5106c1b68969be60956e9f6e8f86fe5b2662`  
+		Last Modified: Tue, 20 Feb 2018 17:24:43 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
