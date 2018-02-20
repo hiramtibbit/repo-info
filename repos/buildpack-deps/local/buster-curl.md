@@ -271,19 +271,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.240
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.240.dsc' cdebconf_0.240.dsc 2676 SHA256:821aa0a06f28e382140fd0bdd45b28ac13b66828a6d605a60ea09931dd803226
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.240.tar.xz' cdebconf_0.240.tar.xz 274216 SHA256:b3c8ee4e2aa895951c9c9046fcacb42d20ae4cde4e1987ce3c8b78e404d21383
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.240/
 
-- https://sources.debian.net/src/cdebconf/0.240/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.240/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.240/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.28-1`
 
@@ -1640,20 +1634,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.29.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.29.0-1.dsc' nghttp2_1.29.0-1.dsc 2311 SHA256:f061c967541be06b393aea659faa102af988958cf3fc78b45412e9e05104241b
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.29.0.orig.tar.bz2' nghttp2_1.29.0.orig.tar.bz2 1838736 SHA256:b3ced8492dfa65773d566249ffaefa5d4b5a352c01e2fea1e7df615544fd970f
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.29.0-1.debian.tar.xz' nghttp2_1.29.0-1.debian.tar.xz 12412 SHA256:4b5cbb93ac2f79a49e20b4a214928c7ad860946a08c97aceb9a63d2de4fa4c42
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.29.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.29.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.29.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.29.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-3`
 
@@ -2193,20 +2180,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.30.2-0.3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.dsc' util-linux_2.30.2-0.3.dsc 3640 SHA256:605b70379440e144fbad2e4496662e0bd2e9210ba27d7f5cddddb2a36d0f3953
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2.orig.tar.xz' util-linux_2.30.2.orig.tar.xz 4442624 SHA256:7b5be5489e9b5b7177832836467aba1c87bf0e9bcbcb5a6f35d76cd4782589dc
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.debian.tar.xz' util-linux_2.30.2-0.3.debian.tar.xz 79396 SHA256:ce66166c377c0a2ed5a32f0b51b91f43bfdd11f5d6ff51572fc667ef0961e5f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.30.2-0.3/
 
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.30.2-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
