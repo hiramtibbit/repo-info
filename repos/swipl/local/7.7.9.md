@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6d73a81d9fc6e174881c57ebca89066610a172bdd008348df17926b63b92415`
-- Created: `2018-02-14T22:21:16.210294431Z`
-- Virtual Size: ~ 149.79 Mb  
+- Image ID: `sha256:3a49bbd51cc1ffd9d00b02f6918579f0b13871b01a27125ef05def8691f0640a`
+- Created: `2018-02-16T22:36:55.586719848Z`
+- Virtual Size: ~ 147.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -1427,11 +1427,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libssh2/1.7.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libssh2/1.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libtasn1-6=4.10-1.1`
+### `dpkg` source package: `libtasn1-6=4.10-1.1+deb9u1`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.10-1.1`
+- `libtasn1-6:amd64=4.10-1.1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1443,17 +1443,17 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=4.10-1.1
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.dsc' libtasn1-6_4.10-1.1.dsc 2586 SHA256:1ace0b64d79a7c79d00d9f7719ce56c5274fbfd253681f01b303badb09242c1b
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.debian.tar.xz' libtasn1-6_4.10-1.1.debian.tar.xz 58400 SHA256:275f7e74697ca1ef085dab5e41fe82d0c9ee898d4f6f4cd2873b09099850e939
+$ apt-get source -qq --print-uris libtasn1-6=4.10-1.1+deb9u1
+'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.dsc' libtasn1-6_4.10-1.1+deb9u1.dsc 2614 SHA256:e9095d4d79e1015c2c2d3e8868d3c50f3b43510387a9ec9191d83ff57024fb39
+'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
+'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz' libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz 59716 SHA256:fed5f50904fbfecc50d253aa4bc62221849e363430f71125039ada1512807937
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.10-1.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libtasn1-6/4.10-1.1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libtasn1-6/4.10-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtasn1-6/4.10-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtool=2.4.6-2`
 
@@ -2240,11 +2240,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+deb9u1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -2253,16 +2253,16 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+deb9u1
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.dsc' sensible-utils_0.0.9+deb9u1.dsc 1590 SHA256:93641a0b5bb3b24b6f01daaf6d99cc1221678b150f19fc8a5c603cacdaecd6e2
+'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.tar.xz' sensible-utils_0.0.9+deb9u1.tar.xz 53564 SHA256:103a4666ddad53452b849d20c2509a6356d9aa6a60c515df9983bd0ca897a3db
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.9/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.9+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.9+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `serd=0.26.0~dfsg0-1`
 
@@ -2482,11 +2482,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017c-0+deb9u1`
+### `dpkg` source package: `tzdata=2018c-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2017c-0+deb9u1`
+- `tzdata=2018c-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2495,18 +2495,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb9u1.dsc' tzdata_2017c-0+deb9u1.dsc 2274 SHA256:1172c3cd89c5c9f93f3ba8bda083d7fb59282dcc55311703f15fb3d7b1835216
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb9u1.debian.tar.xz' tzdata_2017c-0+deb9u1.debian.tar.xz 101196 SHA256:5e02b85631b57e3a01a61475d947c0c314020cd560bb2a188b9340ea514f6067
+$ apt-get source -qq --print-uris tzdata=2018c-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb9u1.dsc' tzdata_2018c-0+deb9u1.dsc 2270 SHA256:909c9190061eccb116ff99f9d86cb4258a5cf51fc2412e4f96722f65ad674de2
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz.asc' tzdata_2018c.orig.tar.gz.asc 819 SHA256:caa609d2c8141a6ab50285457348cde54155813c17028f319bfc8b4d6a9bb818
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb9u1.debian.tar.xz' tzdata_2018c-0+deb9u1.debian.tar.xz 101348 SHA256:42da58b80bd8f190fd099ced6bd70d741c1c070aedc9cfe4ea35b9ed4a783925
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018c-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018c-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unixodbc=2.3.4-1`
 
