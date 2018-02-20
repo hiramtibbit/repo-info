@@ -22,7 +22,7 @@
 ## `clojure:alpine`
 
 ```console
-$ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee43ef9c0ce55df4
+$ docker pull clojure@sha256:3b5da05c4013b58fa4c361096da32dc0aeccad228450d134b9ef0a5e59726fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -32,14 +32,14 @@ $ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee4
 ### `clojure:alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:60935fb5f360ef7de97ec859566f64c53f846573e629ff1526551e99e605f95f
+$ docker pull clojure@sha256:599d87b88690d44b9b8f963c7f3fbdc308b5e81d1ebcde55607c15361fa29f47
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446283 bytes)**  
+-	Total Size: **97.0 MB (97047077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:050d6865cf13c7d1cfbd6f60039bf8898d700d083692e51748b297ffd8864879`
+-	Image ID: `sha256:5388ee6bdceb359ebdf86ab1b7d451dc1b332f7f635eee624ec717cb7c7110d3`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -77,8 +77,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -102,15 +102,15 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b805866872c74d
+$ docker pull clojure@sha256:42e8379be5dfcea25f9adcae810bf3c0abe5cf287de77f2d05b817a68ce074f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -120,14 +120,14 @@ $ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b
 ### `clojure:alpine-onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:02cd21ca7300862d395eeebd4793ecbf6fa29cdc1f40dc03b869131d26bef6d8
+$ docker pull clojure@sha256:02e4be8d87505e9b14aaab892d3b8be6c0f34944c2e3b0b380888c3901f9e1ee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446409 bytes)**  
+-	Total Size: **97.0 MB (97047204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c7ba527d7d85a71fe6985e49cfc65d8fc2729b686b8f3d5cdd7f4817f2f70f3`
+-	Image ID: `sha256:4b969ce6ff8e456653d09a74850c32487077a49f3e74e784f48fb200b6b4ef50`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -165,19 +165,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:26 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:26 GMT
 WORKDIR /usr/src/app
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD RUN lein deps
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 CMD ["lein" "run"]
 ```
 
@@ -202,13 +202,13 @@ CMD ["lein" "run"]
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81061c058278371e527a006819972b9f4d6efb3d1a56e32275e50aeb8eefad87`  
-		Last Modified: Wed, 10 Jan 2018 08:06:22 GMT  
-		Size: 126.0 B  
+	-	`sha256:24eaa6edb064b4876049827e525b25e332575049afa6c4fa4171e69344ac7eb4`  
+		Last Modified: Tue, 20 Feb 2018 05:30:48 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:boot`
@@ -1934,7 +1934,7 @@ RUN boot
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c2b2cb03ce12d6
+$ docker pull clojure@sha256:fd45324a4b77edeae70434e64efb8032c0c2ec45d1e487f4f51d9d2f3675e107
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1950,14 +1950,14 @@ $ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c
 ### `clojure:latest` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:3d9b7cf59ce2b1a24e72547269b1202b005f97098f5ad0e3ee6f1d967e1e9248
+$ docker pull clojure@sha256:2711f03e69a33e17bc4755172f5aa8741014da2f08f932658862230219ae9174
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148846 bytes)**  
+-	Total Size: **310.7 MB (310749706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0529380d135ab9e9c76385b26662fec7aafa7c015884bed5460ad55d9099e4f`
+-	Image ID: `sha256:e467c7ccfa79ec35b526d8af79010e07dd9147164e648d576705dcf12106ba0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2005,8 +2005,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -2050,9 +2050,9 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:latest` - linux; arm variant v5
@@ -2706,7 +2706,7 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 ## `clojure:lein`
 
 ```console
-$ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c2b2cb03ce12d6
+$ docker pull clojure@sha256:fd45324a4b77edeae70434e64efb8032c0c2ec45d1e487f4f51d9d2f3675e107
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2722,14 +2722,14 @@ $ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c
 ### `clojure:lein` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:3d9b7cf59ce2b1a24e72547269b1202b005f97098f5ad0e3ee6f1d967e1e9248
+$ docker pull clojure@sha256:2711f03e69a33e17bc4755172f5aa8741014da2f08f932658862230219ae9174
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148846 bytes)**  
+-	Total Size: **310.7 MB (310749706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0529380d135ab9e9c76385b26662fec7aafa7c015884bed5460ad55d9099e4f`
+-	Image ID: `sha256:e467c7ccfa79ec35b526d8af79010e07dd9147164e648d576705dcf12106ba0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2777,8 +2777,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -2822,9 +2822,9 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:lein` - linux; arm variant v5
@@ -3478,7 +3478,7 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 ## `clojure:lein-2.8.1`
 
 ```console
-$ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c2b2cb03ce12d6
+$ docker pull clojure@sha256:fd45324a4b77edeae70434e64efb8032c0c2ec45d1e487f4f51d9d2f3675e107
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3494,14 +3494,14 @@ $ docker pull clojure@sha256:46f18044e5eab28bbef3c8837f64faac155307035cd55f7c21c
 ### `clojure:lein-2.8.1` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:3d9b7cf59ce2b1a24e72547269b1202b005f97098f5ad0e3ee6f1d967e1e9248
+$ docker pull clojure@sha256:2711f03e69a33e17bc4755172f5aa8741014da2f08f932658862230219ae9174
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148846 bytes)**  
+-	Total Size: **310.7 MB (310749706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0529380d135ab9e9c76385b26662fec7aafa7c015884bed5460ad55d9099e4f`
+-	Image ID: `sha256:e467c7ccfa79ec35b526d8af79010e07dd9147164e648d576705dcf12106ba0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -3549,8 +3549,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -3594,9 +3594,9 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:lein-2.8.1` - linux; arm variant v5
@@ -4250,7 +4250,7 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 ## `clojure:lein-2.8.1-alpine`
 
 ```console
-$ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee43ef9c0ce55df4
+$ docker pull clojure@sha256:3b5da05c4013b58fa4c361096da32dc0aeccad228450d134b9ef0a5e59726fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4260,14 +4260,14 @@ $ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee4
 ### `clojure:lein-2.8.1-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:60935fb5f360ef7de97ec859566f64c53f846573e629ff1526551e99e605f95f
+$ docker pull clojure@sha256:599d87b88690d44b9b8f963c7f3fbdc308b5e81d1ebcde55607c15361fa29f47
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446283 bytes)**  
+-	Total Size: **97.0 MB (97047077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:050d6865cf13c7d1cfbd6f60039bf8898d700d083692e51748b297ffd8864879`
+-	Image ID: `sha256:5388ee6bdceb359ebdf86ab1b7d451dc1b332f7f635eee624ec717cb7c7110d3`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -4305,8 +4305,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -4330,15 +4330,15 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:lein-2.8.1-alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b805866872c74d
+$ docker pull clojure@sha256:42e8379be5dfcea25f9adcae810bf3c0abe5cf287de77f2d05b817a68ce074f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4348,14 +4348,14 @@ $ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b
 ### `clojure:lein-2.8.1-alpine-onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:02cd21ca7300862d395eeebd4793ecbf6fa29cdc1f40dc03b869131d26bef6d8
+$ docker pull clojure@sha256:02e4be8d87505e9b14aaab892d3b8be6c0f34944c2e3b0b380888c3901f9e1ee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446409 bytes)**  
+-	Total Size: **97.0 MB (97047204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c7ba527d7d85a71fe6985e49cfc65d8fc2729b686b8f3d5cdd7f4817f2f70f3`
+-	Image ID: `sha256:4b969ce6ff8e456653d09a74850c32487077a49f3e74e784f48fb200b6b4ef50`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -4393,19 +4393,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:26 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:26 GMT
 WORKDIR /usr/src/app
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD RUN lein deps
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 CMD ["lein" "run"]
 ```
 
@@ -4430,19 +4430,19 @@ CMD ["lein" "run"]
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81061c058278371e527a006819972b9f4d6efb3d1a56e32275e50aeb8eefad87`  
-		Last Modified: Wed, 10 Jan 2018 08:06:22 GMT  
-		Size: 126.0 B  
+	-	`sha256:24eaa6edb064b4876049827e525b25e332575049afa6c4fa4171e69344ac7eb4`  
+		Last Modified: Tue, 20 Feb 2018 05:30:48 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:lein-2.8.1-onbuild`
 
 ```console
-$ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893956622fed999b
+$ docker pull clojure@sha256:3ed3b7414378d805b7191696a5678675a21350287ba34517a394d5f694ebccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4458,14 +4458,14 @@ $ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893
 ### `clojure:lein-2.8.1-onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:35a596261967650638b697add5898430ab1de619ea0b5754ad484677ae5ba53a
+$ docker pull clojure@sha256:e04b6722500b8cd85469aa774093e381125aa9d328f3139e25844aca3cf67bde
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148977 bytes)**  
+-	Total Size: **310.7 MB (310749838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a237d19764ab97ee00125eada60cd02771ebb9117fd83bf77b27d6bd39ed759e`
+-	Image ID: `sha256:af866e209fcc5e9d037c348f72997340fd78c865b2f34075f179b009d58c3371`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -4513,19 +4513,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2018 17:15:52 GMT
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:47 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 WORKDIR /usr/src/app
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD RUN lein deps
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 CMD ["lein" "run"]
 ```
 
@@ -4570,13 +4570,13 @@ CMD ["lein" "run"]
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bad759d90f95f6f37bfcda5867155a5076c1de69bea6040a40f693c762f85f9`  
-		Last Modified: Thu, 15 Feb 2018 17:19:35 GMT  
-		Size: 131.0 B  
+	-	`sha256:7b80d384cc7ff499ea619af047b031a43de7a36a7a02844767d7472e31948152`  
+		Last Modified: Tue, 20 Feb 2018 05:29:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:lein-2.8.1-onbuild` - linux; arm variant v5
@@ -5326,7 +5326,7 @@ CMD ["lein" "run"]
 ## `clojure:lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee43ef9c0ce55df4
+$ docker pull clojure@sha256:3b5da05c4013b58fa4c361096da32dc0aeccad228450d134b9ef0a5e59726fbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5336,14 +5336,14 @@ $ docker pull clojure@sha256:a2cf407cd00de1e194c9e9ade93e8e8352ccb3f90c2d4d15ee4
 ### `clojure:lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:60935fb5f360ef7de97ec859566f64c53f846573e629ff1526551e99e605f95f
+$ docker pull clojure@sha256:599d87b88690d44b9b8f963c7f3fbdc308b5e81d1ebcde55607c15361fa29f47
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446283 bytes)**  
+-	Total Size: **97.0 MB (97047077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:050d6865cf13c7d1cfbd6f60039bf8898d700d083692e51748b297ffd8864879`
+-	Image ID: `sha256:5388ee6bdceb359ebdf86ab1b7d451dc1b332f7f635eee624ec717cb7c7110d3`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -5381,8 +5381,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -5406,15 +5406,15 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:lein-alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b805866872c74d
+$ docker pull clojure@sha256:42e8379be5dfcea25f9adcae810bf3c0abe5cf287de77f2d05b817a68ce074f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5424,14 +5424,14 @@ $ docker pull clojure@sha256:d3c304f3201f965d79ee43607b2729066d02823d18f9ce99a7b
 ### `clojure:lein-alpine-onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:02cd21ca7300862d395eeebd4793ecbf6fa29cdc1f40dc03b869131d26bef6d8
+$ docker pull clojure@sha256:02e4be8d87505e9b14aaab892d3b8be6c0f34944c2e3b0b380888c3901f9e1ee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.4 MB (96446409 bytes)**  
+-	Total Size: **97.0 MB (97047204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c7ba527d7d85a71fe6985e49cfc65d8fc2729b686b8f3d5cdd7f4817f2f70f3`
+-	Image ID: `sha256:4b969ce6ff8e456653d09a74850c32487077a49f3e74e784f48fb200b6b4ef50`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -5469,19 +5469,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Wed, 10 Jan 2018 08:01:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jan 2018 08:02:00 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:12 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:27:26 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:26 GMT
 WORKDIR /usr/src/app
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Wed, 10 Jan 2018 08:02:24 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD RUN lein deps
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 10 Jan 2018 08:02:25 GMT
+# Tue, 20 Feb 2018 05:27:27 GMT
 CMD ["lein" "run"]
 ```
 
@@ -5506,19 +5506,19 @@ CMD ["lein" "run"]
 		Last Modified: Wed, 10 Jan 2018 08:05:35 GMT  
 		Size: 12.1 MB (12137473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:613df2c6e57e21af5e61640839e95c1a044d64bd2df723fd2eef07f0c100ba12`  
-		Last Modified: Wed, 10 Jan 2018 08:05:30 GMT  
-		Size: 3.3 MB (3340997 bytes)  
+	-	`sha256:086c72b2f2228a6d4552b805d939425b196c047bdd5bde395ec80f1318244d8b`  
+		Last Modified: Tue, 20 Feb 2018 05:29:56 GMT  
+		Size: 3.9 MB (3941791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81061c058278371e527a006819972b9f4d6efb3d1a56e32275e50aeb8eefad87`  
-		Last Modified: Wed, 10 Jan 2018 08:06:22 GMT  
-		Size: 126.0 B  
+	-	`sha256:24eaa6edb064b4876049827e525b25e332575049afa6c4fa4171e69344ac7eb4`  
+		Last Modified: Tue, 20 Feb 2018 05:30:48 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:lein-onbuild`
 
 ```console
-$ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893956622fed999b
+$ docker pull clojure@sha256:3ed3b7414378d805b7191696a5678675a21350287ba34517a394d5f694ebccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5534,14 +5534,14 @@ $ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893
 ### `clojure:lein-onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:35a596261967650638b697add5898430ab1de619ea0b5754ad484677ae5ba53a
+$ docker pull clojure@sha256:e04b6722500b8cd85469aa774093e381125aa9d328f3139e25844aca3cf67bde
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148977 bytes)**  
+-	Total Size: **310.7 MB (310749838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a237d19764ab97ee00125eada60cd02771ebb9117fd83bf77b27d6bd39ed759e`
+-	Image ID: `sha256:af866e209fcc5e9d037c348f72997340fd78c865b2f34075f179b009d58c3371`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -5589,19 +5589,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2018 17:15:52 GMT
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:47 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 WORKDIR /usr/src/app
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD RUN lein deps
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 CMD ["lein" "run"]
 ```
 
@@ -5646,13 +5646,13 @@ CMD ["lein" "run"]
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bad759d90f95f6f37bfcda5867155a5076c1de69bea6040a40f693c762f85f9`  
-		Last Modified: Thu, 15 Feb 2018 17:19:35 GMT  
-		Size: 131.0 B  
+	-	`sha256:7b80d384cc7ff499ea619af047b031a43de7a36a7a02844767d7472e31948152`  
+		Last Modified: Tue, 20 Feb 2018 05:29:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:lein-onbuild` - linux; arm variant v5
@@ -6402,7 +6402,7 @@ CMD ["lein" "run"]
 ## `clojure:onbuild`
 
 ```console
-$ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893956622fed999b
+$ docker pull clojure@sha256:3ed3b7414378d805b7191696a5678675a21350287ba34517a394d5f694ebccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6418,14 +6418,14 @@ $ docker pull clojure@sha256:1e54b1205c67e32da5cb36c6a0b7c61957ca1da39ea8cd31893
 ### `clojure:onbuild` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:35a596261967650638b697add5898430ab1de619ea0b5754ad484677ae5ba53a
+$ docker pull clojure@sha256:e04b6722500b8cd85469aa774093e381125aa9d328f3139e25844aca3cf67bde
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310148977 bytes)**  
+-	Total Size: **310.7 MB (310749838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a237d19764ab97ee00125eada60cd02771ebb9117fd83bf77b27d6bd39ed759e`
+-	Image ID: `sha256:af866e209fcc5e9d037c348f72997340fd78c865b2f34075f179b009d58c3371`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -6473,19 +6473,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/techno
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Thu, 15 Feb 2018 17:15:02 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2018 17:15:16 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2018 17:15:52 GMT
+# Tue, 20 Feb 2018 05:26:32 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 20 Feb 2018 05:26:47 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 WORKDIR /usr/src/app
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:47 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 15 Feb 2018 17:15:53 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD RUN lein deps
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 15 Feb 2018 17:15:54 GMT
+# Tue, 20 Feb 2018 05:26:48 GMT
 CMD ["lein" "run"]
 ```
 
@@ -6530,13 +6530,13 @@ CMD ["lein" "run"]
 		Last Modified: Thu, 15 Feb 2018 17:18:38 GMT  
 		Size: 12.1 MB (12137673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1b0fa2ddd76aee453748e3cb1cae43acb836395333a2f9cf49b5f791d1972e`  
-		Last Modified: Thu, 15 Feb 2018 17:18:37 GMT  
-		Size: 3.3 MB (3340981 bytes)  
+	-	`sha256:ea2df08a61d44a489db8e67340af947a1b5a31cb35db3b9547671ec207ff8217`  
+		Last Modified: Tue, 20 Feb 2018 05:28:17 GMT  
+		Size: 3.9 MB (3941841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bad759d90f95f6f37bfcda5867155a5076c1de69bea6040a40f693c762f85f9`  
-		Last Modified: Thu, 15 Feb 2018 17:19:35 GMT  
-		Size: 131.0 B  
+	-	`sha256:7b80d384cc7ff499ea619af047b031a43de7a36a7a02844767d7472e31948152`  
+		Last Modified: Tue, 20 Feb 2018 05:29:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:onbuild` - linux; arm variant v5
