@@ -4,6 +4,8 @@
 
 -	[`thrift:0.10`](#thrift010)
 -	[`thrift:0.10.0`](#thrift0100)
+-	[`thrift:0.11`](#thrift011)
+-	[`thrift:0.11.0`](#thrift0110)
 -	[`thrift:0.9`](#thrift09)
 -	[`thrift:0.9.3`](#thrift093)
 -	[`thrift:latest`](#thriftlatest)
@@ -103,6 +105,14 @@ CMD ["thrift"]
 		Last Modified: Thu, 15 Feb 2018 03:15:37 GMT  
 		Size: 13.2 MB (13153858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `thrift:0.11`
+
+**does not exist** (yet?)
+
+## `thrift:0.11.0`
+
+**does not exist** (yet?)
 
 ## `thrift:0.9`
 
