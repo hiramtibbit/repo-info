@@ -1241,20 +1241,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180207-2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.dsc' gcc-8_8-20180207-2.dsc 32286 SHA256:01cec1c9c93eb9bee7e95abb898819c4ea73282ff476d8ad50135d492039cfbd
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207.orig.tar.gz' gcc-8_8-20180207.orig.tar.gz 68861430 SHA256:76ba2cbcb59b47bbd8f99be165c1c277ad4b17710a3ad7e05b1fb0862e65d4bb
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.diff.gz' gcc-8_8-20180207-2.diff.gz 600053 SHA256:13db91cc266dfb20e4833311fdf8ff37b190d895cc12f242b82abf2f0e0a978d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
 
-- https://sources.debian.net/src/gcc-8/8-20180207-2/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180207-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180207-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
@@ -2322,20 +2315,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.89-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.dsc' libdrm_2.4.89-1.dsc 3040 SHA256:22b0c6f98d04916874e6addde08c68d04f33215bbf097bdfd7fc182b1058cd19
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89.orig.tar.gz' libdrm_2.4.89.orig.tar.gz 1094470 SHA256:c376b9ba0974700632939139397a12d4e3c93c31835a27dda855159441713e70
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.diff.gz' libdrm_2.4.89-1.diff.gz 50186 SHA256:06b33b2dbf3c870ec35ebebd48cc061d4b3cd9ff365357eea20dd1ea9184a069
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.89-1/
 
-- https://sources.debian.net/src/libdrm/2.4.89-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.89-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.89-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
