@@ -228,20 +228,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-4.dsc' binutils_2.30-4.dsc 11242 SHA256:2224325f2fd8285a76b692e602a55e53eb9fecb4136dac184fe87bcc61b21d5b
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20144632 SHA256:f68a56df7d3cc66d5e6e24ad733a1f3d6188caeba570e4a1c515cfd2de2e11d5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-4.debian.tar.xz' binutils_2.30-4.debian.tar.xz 210520 SHA256:b401351327df799ad80705e9f831e4e1e8c5e9d4415431d2059bd9f71da65d1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.30-4/
 
-- https://sources.debian.net/src/binutils/2.30-4/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.30-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.30-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
 
@@ -1830,10 +1823,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libdatrie=0.2.10-7
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-7.dsc' libdatrie_0.2.10-7.dsc 2256 SHA256:63ad3d2782cfcca0d34055a152908ad65c6b2fc84d3079b79cf90ac4924a77fb
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10.orig.tar.xz' libdatrie_0.2.10.orig.tar.xz 294380 SHA256:180eff7b0309ca19a02d5864e744185d715f021398a096fec6cf960f8ebfaa2b
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-7.debian.tar.xz' libdatrie_0.2.10-7.debian.tar.xz 8576 SHA256:0c1496995d89daacad655618e6fff5402cb6935bb5b386c54bf4dcd1cf1b8f85
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-7.dsc' libdatrie_0.2.10-7.dsc 2256 SHA256:63ad3d2782cfcca0d34055a152908ad65c6b2fc84d3079b79cf90ac4924a77fb
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10.orig.tar.xz' libdatrie_0.2.10.orig.tar.xz 294380 SHA256:180eff7b0309ca19a02d5864e744185d715f021398a096fec6cf960f8ebfaa2b
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-7.debian.tar.xz' libdatrie_0.2.10-7.debian.tar.xz 8576 SHA256:0c1496995d89daacad655618e6fff5402cb6935bb5b386c54bf4dcd1cf1b8f85
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libdatrie/0.2.10-7/ (for browsing the source)
+- https://sources.debian.net/src/libdatrie/0.2.10-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatrie/0.2.10-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-8`
 
@@ -3156,10 +3155,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris patch=2.7.6-1
-'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6-1.dsc' patch_2.7.6-1.dsc 1810 SHA256:6927ed1fdd0499d397d0df26575f32eafe7d01a0806dc28dc6a3393c0ad6305f
-'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6-1.debian.tar.xz' patch_2.7.6-1.debian.tar.xz 7948 SHA256:31499b753c63876b951f7f2b3f1142817233e8e7691704d5907116ad1489cef1
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-1.dsc' patch_2.7.6-1.dsc 1810 SHA256:6927ed1fdd0499d397d0df26575f32eafe7d01a0806dc28dc6a3393c0ad6305f
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-1.debian.tar.xz' patch_2.7.6-1.debian.tar.xz 7948 SHA256:31499b753c63876b951f7f2b3f1142817233e8e7691704d5907116ad1489cef1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/patch/2.7.6-1/ (for browsing the source)
+- https://sources.debian.net/src/patch/2.7.6-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/patch/2.7.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -3633,20 +3638,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=236-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.dsc' systemd_236-3.dsc 4835 SHA256:a6f4b547c618a8a8f0ee0e2136c42e13ffd2dc31caf0ff380073e5a9fe492aa4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236.orig.tar.gz' systemd_236.orig.tar.gz 6759035 SHA256:0cadccfa7109232ec2a469d41ca595d5595b83b648b534ea669c15dbca904c43
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.debian.tar.xz' systemd_236-3.debian.tar.xz 134772 SHA256:b9274d74bf81465747e54752242ea3d7256cb2ba90c8a61be214038ee22fdb0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/236-3/
 
-- https://sources.debian.net/src/systemd/236-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/236-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/236-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
@@ -3911,16 +3909,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.30.2-0.3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.dsc' util-linux_2.30.2-0.3.dsc 3640 SHA256:605b70379440e144fbad2e4496662e0bd2e9210ba27d7f5cddddb2a36d0f3953
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2.orig.tar.xz' util-linux_2.30.2.orig.tar.xz 4442624 SHA256:7b5be5489e9b5b7177832836467aba1c87bf0e9bcbcb5a6f35d76cd4782589dc
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.debian.tar.xz' util-linux_2.30.2-0.3.debian.tar.xz 79396 SHA256:ce66166c377c0a2ed5a32f0b51b91f43bfdd11f5d6ff51572fc667ef0961e5f8
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.dsc' util-linux_2.30.2-0.3.dsc 3640 SHA256:605b70379440e144fbad2e4496662e0bd2e9210ba27d7f5cddddb2a36d0f3953
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.30.2.orig.tar.xz' util-linux_2.30.2.orig.tar.xz 4442624 SHA256:7b5be5489e9b5b7177832836467aba1c87bf0e9bcbcb5a6f35d76cd4782589dc
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.30.2-0.3.debian.tar.xz' util-linux_2.30.2-0.3.debian.tar.xz 79396 SHA256:ce66166c377c0a2ed5a32f0b51b91f43bfdd11f5d6ff51572fc667ef0961e5f8
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.30.2-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.30.2-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:8.0.1453-1`
 
