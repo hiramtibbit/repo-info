@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97bbc8c765d940bc5001c362283340d51911a8594b49f9be7211242aba5dfde3`
-- Created: `2018-01-26T01:41:50.038310509Z`
-- Virtual Size: ~ 413.11 Mb  
+- Image ID: `sha256:6171b76b7d75356f23df38f792adfeb12c21944a974bf15225df367dceec4ca7`
+- Created: `2018-02-20T23:37:23.022603764Z`
+- Virtual Size: ~ 414.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp7`
+  - `JAVA_VERSION=1.8.0_sr5fp10`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
@@ -283,12 +283,12 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.5`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.6`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.5`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.5`
+- `curl=7.47.0-1ubuntu2.6`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -299,9 +299,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.dsc' curl_7.47.0-1ubuntu2.6.dsc 2713 SHA256:6f0c754431a0d59684e149ebb69a174d7ba37f4caa424845164baf14a899c035
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.debian.tar.xz' curl_7.47.0-1ubuntu2.6.debian.tar.xz 47148 SHA256:9b5f48817215f5cf95e7b96f2aa71a6acbb1f956f13eb500e66b57de230821fb
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
