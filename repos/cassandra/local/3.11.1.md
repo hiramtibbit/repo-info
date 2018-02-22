@@ -400,14 +400,9 @@ Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/ca
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cassandra=3.11.1
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.dsc' cassandra_3.11.1.dsc 2022 SHA256:c57fbb51f8cf3274914b56195c345198f4f205b6ad207a577872d6bb8aa4f55c
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.orig.tar.gz' cassandra_3.11.1.orig.tar.gz 36135685 SHA256:84a5b50a4da6e2532b2f9cca3bfb1246ec5e466e666065d0f785ba5c724b3424
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.diff.gz' cassandra_3.11.1.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
-```
 
 ### `dpkg` source package: `cdebconf=0.227`
 
