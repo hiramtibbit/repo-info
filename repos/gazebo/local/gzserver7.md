@@ -452,14 +452,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
-```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.6`
 
@@ -962,14 +957,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.6.dsc' gcc-5_5.4.0-6ubuntu1~16.04.6.dsc 28664 SHA256:8489a40e62414ea9b2c7008dae90cca6ba7c87aaa602b80cadcc80ab7552bb1f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.6.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.6.diff.gz 1464103 SHA256:56173e9d7110ead011df0a312414dc7321e66460abdcf032cc0826d6cb09229f
-```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
 

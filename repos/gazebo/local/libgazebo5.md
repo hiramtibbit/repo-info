@@ -843,14 +843,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2`
 - `LGPL-2 with exceptions`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.dsc' cups_1.7.2-0ubuntu1.8.dsc 2885 SHA256:83a6c7b683e229972065f0dc27f85bdecdd751c13615699c1d6e7d182752f462
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2.orig.tar.bz2' cups_1.7.2.orig.tar.bz2 8754601 SHA256:315cdff436924c4efe04cb110b145fb1a6e038e2eed8445359052f86e9e95676
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.debian.tar.gz' cups_1.7.2-0ubuntu1.8.debian.tar.gz 449848 SHA256:252d623db5fed3a3ee38da07d8562995bf0ff33360e290ae7652a2f6ef6cffea
-```
 
 ### `dpkg` source package: `curl=7.35.0-1ubuntu2.13`
 
@@ -1493,14 +1488,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.8/copyright`, `/usr/share/doc/g++-
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-4.8=4.8.4-2ubuntu1~14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc' gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc 13623 SHA256:9601f648504e37d678225d93cec1d6c213e57e1eadafbd979bc3691051832294
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4.orig.tar.gz' gcc-4.8_4.8.4.orig.tar.gz 66451474 SHA256:0a714dd7a8415cb134c79784ff8b0a30da6d76afb998c21f6e95e1060d65466c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz' gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz 1105598 SHA256:7d06787a3af90bdb7f417c47ed5da43d0aa265d1d49ca0a3bebf9bab8bada02f
-```
 
 ### `dpkg` source package: `gcc-defaults=1.124ubuntu6`
 

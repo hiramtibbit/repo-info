@@ -480,14 +480,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2`
 - `LGPL-2 with exceptions`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.dsc' cups_1.7.2-0ubuntu1.8.dsc 2885 SHA256:83a6c7b683e229972065f0dc27f85bdecdd751c13615699c1d6e7d182752f462
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2.orig.tar.bz2' cups_1.7.2.orig.tar.bz2 8754601 SHA256:315cdff436924c4efe04cb110b145fb1a6e038e2eed8445359052f86e9e95676
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.debian.tar.gz' cups_1.7.2-0ubuntu1.8.debian.tar.gz 449848 SHA256:252d623db5fed3a3ee38da07d8562995bf0ff33360e290ae7652a2f6ef6cffea
-```
 
 ### `dpkg` source package: `curl=7.35.0-1ubuntu2.13`
 
