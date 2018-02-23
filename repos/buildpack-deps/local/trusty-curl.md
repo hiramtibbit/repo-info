@@ -699,14 +699,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.8-base/copyright`, `/usr/share/doc
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-4.8=4.8.4-2ubuntu1~14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc' gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc 13623 SHA256:9601f648504e37d678225d93cec1d6c213e57e1eadafbd979bc3691051832294
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4.orig.tar.gz' gcc-4.8_4.8.4.orig.tar.gz 66451474 SHA256:0a714dd7a8415cb134c79784ff8b0a30da6d76afb998c21f6e95e1060d65466c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz' gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz 1105598 SHA256:7d06787a3af90bdb7f417c47ed5da43d0aa265d1d49ca0a3bebf9bab8bada02f
-```
 
 ### `dpkg` source package: `gccgo-4.9=4.9.3-0ubuntu4`
 
