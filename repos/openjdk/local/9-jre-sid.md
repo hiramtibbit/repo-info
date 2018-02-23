@@ -1899,10 +1899,6 @@ Licenses: (parsed from: `/usr/share/doc/libatk-wrapper-java/copyright`, `/usr/sh
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/java-atk-wrapper/0.33.3-15/
-
 
 ### `dpkg` source package: `java-common=0.59`
 
@@ -2315,20 +2311,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.89-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.dsc' libdrm_2.4.89-1.dsc 3040 SHA256:22b0c6f98d04916874e6addde08c68d04f33215bbf097bdfd7fc182b1058cd19
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89.orig.tar.gz' libdrm_2.4.89.orig.tar.gz 1094470 SHA256:c376b9ba0974700632939139397a12d4e3c93c31835a27dda855159441713e70
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.diff.gz' libdrm_2.4.89-1.diff.gz 50186 SHA256:06b33b2dbf3c870ec35ebebd48cc061d4b3cd9ff365357eea20dd1ea9184a069
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.89-1/
 
-- https://sources.debian.net/src/libdrm/2.4.89-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.89-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.89-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -4951,10 +4940,6 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/util-linux/2.31.1-0.1/
 
 
 ### `dpkg` source package: `wayland=1.14.0-1`

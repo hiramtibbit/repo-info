@@ -268,10 +268,6 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/bash/4.4.18-1/
-
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -916,10 +912,6 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gnutls28/3.5.17-1/
 
 
 ### `dpkg` source package: `grep=3.1-2`
