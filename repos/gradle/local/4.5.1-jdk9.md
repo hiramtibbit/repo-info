@@ -1282,20 +1282,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm5/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.14.1-3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-3.dsc' gdbm_1.14.1-3.dsc 2122 SHA256:f74a56e78dbc6308118e272a53bbb5acc5ec1c527510a41c6c9e9ec5f8361083
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-3.debian.tar.xz' gdbm_1.14.1-3.debian.tar.xz 25932 SHA256:5d499c3cc64c85636f5cf3cdba6a2dea17d86a6527b23ebf374e29603f79db49
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.14.1-3/
 
-- https://sources.debian.net/src/gdbm/1.14.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.14.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.14.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2437,20 +2430,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.89-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.dsc' libdrm_2.4.89-1.dsc 3040 SHA256:22b0c6f98d04916874e6addde08c68d04f33215bbf097bdfd7fc182b1058cd19
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89.orig.tar.gz' libdrm_2.4.89.orig.tar.gz 1094470 SHA256:c376b9ba0974700632939139397a12d4e3c93c31835a27dda855159441713e70
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.89-1.diff.gz' libdrm_2.4.89-1.diff.gz 50186 SHA256:06b33b2dbf3c870ec35ebebd48cc061d4b3cd9ff365357eea20dd1ea9184a069
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.89-1/
 
-- https://sources.debian.net/src/libdrm/2.4.89-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.89-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.89-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
