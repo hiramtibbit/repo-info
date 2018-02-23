@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f1428bd1cbd410007234e6d578ac4afb695642df27b9b184501fc341835e5ea`
-- Created: `2018-02-17T00:14:48.849739038Z`
-- Virtual Size: ~ 389.28 Mb  
+- Image ID: `sha256:a827a30f28343970c2efa8d775fcb6103f7945aca0cd937eb9c295011d53957b`
+- Created: `2018-02-20T22:04:41.192187765Z`
+- Virtual Size: ~ 390.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp7`
+  - `JAVA_VERSION=1.8.0_sr5fp10`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `LIBERTY_VERSION=17.0.0_04`
   - `LOG_DIR=/logs`
@@ -142,13 +142,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.dsc' base-files_9.4ubuntu4.5.dsc 1539 SHA256:168184a051640e38ec02ff4fa7033f724f27be48e3eb92c04fa24b6cdb520fdd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.tar.xz' base-files_9.4ubuntu4.5.tar.xz 62980 SHA256:4cbd2cdb0373df23a31f6daa065f348c18b9e95c76eb4fc469f4df3ab8e46738
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
