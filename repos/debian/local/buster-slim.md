@@ -644,21 +644,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.17-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17-1.dsc' gnutls28_3.5.17-1.dsc 3322 SHA256:c9e4b785f2c9fbf5f234148e5ba69928e40d72dcfbac0150206d7f6593ee864b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17.orig.tar.xz' gnutls28_3.5.17.orig.tar.xz 7261864 SHA256:86b142afef587c118d63f72ccf307f3321dbc40357aae528202b65d913d20919
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17.orig.tar.xz.asc' gnutls28_3.5.17.orig.tar.xz.asc 534 SHA256:9c1bc205776f8d26d6b60a7fe85ef8b83467712ccc52c3a8b8bc2184f9869736
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17-1.debian.tar.xz' gnutls28_3.5.17-1.debian.tar.xz 105808 SHA256:269855505067a3fd669a6a36234bcff1fac0574d11cfb19c4e7457c9a8d7947f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.17-1/
 
-- https://sources.debian.net/src/gnutls28/3.5.17-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -1386,20 +1378,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=236-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.dsc' systemd_236-3.dsc 4835 SHA256:a6f4b547c618a8a8f0ee0e2136c42e13ffd2dc31caf0ff380073e5a9fe492aa4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236.orig.tar.gz' systemd_236.orig.tar.gz 6759035 SHA256:0cadccfa7109232ec2a469d41ca595d5595b83b648b534ea669c15dbca904c43
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_236-3.debian.tar.xz' systemd_236-3.debian.tar.xz 134772 SHA256:b9274d74bf81465747e54752242ea3d7256cb2ba90c8a61be214038ee22fdb0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/236-3/
 
-- https://sources.debian.net/src/systemd/236-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/236-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/236-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
