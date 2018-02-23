@@ -1,9 +1,9 @@
-# `elasticsearch:5.6.7`
+# `elasticsearch:5.6.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb0029f9390c840b4ed84ca7bcd7ee8f3f5df56203c2bb8fe13e86be9823e15b`
-- Created: `2018-02-15T17:21:16.348757926Z`
+- Image ID: `sha256:076072f2be38b815aa5ec147cee9894b6b2bbd4e2cdbbf16cf9804b2cba8a09d`
+- Created: `2018-02-22T18:47:13.895650412Z`
 - Virtual Size: ~ 580.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,5 +17,5 @@
   - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GOSU_VERSION=1.10`
-  - `ELASTICSEARCH_VERSION=5.6.7`
-  - `ELASTICSEARCH_DEB_VERSION=5.6.7`
+  - `ELASTICSEARCH_VERSION=5.6.8`
+  - `ELASTICSEARCH_DEB_VERSION=5.6.8`
