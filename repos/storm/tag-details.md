@@ -7,7 +7,7 @@
 -	[`storm:1.1`](#storm11)
 -	[`storm:1.1.2`](#storm112)
 -	[`storm:1.2`](#storm12)
--	[`storm:1.2.0`](#storm120)
+-	[`storm:1.2.1`](#storm121)
 -	[`storm:latest`](#stormlatest)
 
 ## `storm:1.0`
@@ -394,7 +394,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 
 **does not exist** (yet?)
 
-## `storm:1.2.0`
+## `storm:1.2.1`
 
 **does not exist** (yet?)
 
