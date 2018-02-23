@@ -899,14 +899,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
-```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.5`
 
@@ -4300,14 +4295,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-112.135
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-112.135.dsc' linux_4.4.0-112.135.dsc 9712 SHA256:9804c7bd06a1ef07ff9094979d44e8fa7a25e539d5d9088f44ce6fff43d6cc15
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-112.135.diff.gz' linux_4.4.0-112.135.diff.gz 13880183 SHA256:b5b6adc87ea98ffa48d31aee2ee5ec301a01c2b4fa64fa20d1564a4e95bdd6ad
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -5453,14 +5443,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.7.dsc' pulseaudio_8.0-0ubuntu3.7.dsc 3632 SHA256:b3dc99b89eb406dabe1a40027cd1a0a8d686dee6001b84fe2dbc28ffe7a8bafb
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.7.debian.tar.xz' pulseaudio_8.0-0ubuntu3.7.debian.tar.xz 149720 SHA256:51bf6a9ea2fbe7893d7a8932850ee4e29d7d40dd1d15e9c11961ca6d2b4f1c2e
-```
 
 ### `dpkg` source package: `pyparsing=2.0.3+dfsg1-1ubuntu0.1`
 
