@@ -1,16 +1,16 @@
-# `node:9.5.0-onbuild`
+# `node:9.6.1-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:02b332ff78a9a372c0667f76da0a032304f14d2cc1968de9b88be10c88300049`
-- Created: `2018-02-17T15:37:15.7500252Z`
-- Virtual Size: ~ 676.36 Mb  
+- Image ID: `sha256:093c2e566bf3c1a962dcd8ac4be8a6fedeb896b30feb5b1b625d876fcdd08980`
+- Created: `2018-02-23T18:40:18.810650647Z`
+- Virtual Size: ~ 676.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.5.0`
+  - `NODE_VERSION=9.6.1`
   - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
