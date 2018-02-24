@@ -1429,20 +1429,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.dsc' gnupg2_2.2.4-3.dsc 2885 SHA256:e8fb508a526d1c0ba88c29975ec09fd7b28708f1af93def38bf3caba21b7589c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.debian.tar.bz2' gnupg2_2.2.4-3.debian.tar.bz2 71771 SHA256:aff6757f4ebd3dcb5d18d1762818af0ad101b8ed1e4ffcb694de627d830ae90a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.4-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.4-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.17-1`
 
@@ -4372,20 +4365,13 @@ Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 - `CC0`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris publicsuffix=20180125.0922-1
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180125.0922-1.dsc' publicsuffix_20180125.0922-1.dsc 1948 SHA256:513a184352957149d0ad14d12f86150d43324fb75e72756618867768c2f1306d
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180125.0922.orig.tar.gz' publicsuffix_20180125.0922.orig.tar.gz 83723 SHA256:d65d8a621942f3888c21511497da64f6c9f1e90f7faeba2e480d53c542793c6c
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180125.0922-1.debian.tar.xz' publicsuffix_20180125.0922-1.debian.tar.xz 15316 SHA256:f663c07f41a98e40ebcf73feace0ebae089fd26ffab171d4440350837f657de5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/publicsuffix/20180125.0922-1/
 
-- https://sources.debian.net/src/publicsuffix/20180125.0922-1/ (for browsing the source)
-- https://sources.debian.net/src/publicsuffix/20180125.0922-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/publicsuffix/20180125.0922-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
