@@ -1039,20 +1039,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180207-2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.dsc' gcc-8_8-20180207-2.dsc 32286 SHA256:01cec1c9c93eb9bee7e95abb898819c4ea73282ff476d8ad50135d492039cfbd
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207.orig.tar.gz' gcc-8_8-20180207.orig.tar.gz 68861430 SHA256:76ba2cbcb59b47bbd8f99be165c1c277ad4b17710a3ad7e05b1fb0862e65d4bb
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180207-2.diff.gz' gcc-8_8-20180207-2.diff.gz 600053 SHA256:13db91cc266dfb20e4833311fdf8ff37b190d895cc12f242b82abf2f0e0a978d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
 
-- https://sources.debian.net/src/gcc-8/8-20180207-2/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180207-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180207-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -1263,21 +1256,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.17-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17-1.dsc' gnutls28_3.5.17-1.dsc 3322 SHA256:c9e4b785f2c9fbf5f234148e5ba69928e40d72dcfbac0150206d7f6593ee864b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17.orig.tar.xz' gnutls28_3.5.17.orig.tar.xz 7261864 SHA256:86b142afef587c118d63f72ccf307f3321dbc40357aae528202b65d913d20919
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17.orig.tar.xz.asc' gnutls28_3.5.17.orig.tar.xz.asc 534 SHA256:9c1bc205776f8d26d6b60a7fe85ef8b83467712ccc52c3a8b8bc2184f9869736
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.17-1.debian.tar.xz' gnutls28_3.5.17-1.debian.tar.xz 105808 SHA256:269855505067a3fd669a6a36234bcff1fac0574d11cfb19c4e7457c9a8d7947f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.17-1/
 
-- https://sources.debian.net/src/gnutls28/3.5.17-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
 
@@ -1508,20 +1493,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.14.1-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.14.1-2.dsc' iproute2_4.14.1-2.dsc 1846 SHA256:a1e27c0d7b9ff23e17cb39594dadbdd3f1babcfbdc884dfeae8369ddbbda1c66
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.14.1.orig.tar.xz' iproute2_4.14.1.orig.tar.xz 636876 SHA256:d43ac068afcc350a448f4581b6e292331ef7e4e7aa746e34981582d5fdb10067
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.14.1-2.debian.tar.xz' iproute2_4.14.1-2.debian.tar.xz 137800 SHA256:305bd36c84298fbfe65e903f11267a637551f50d3022e7ccd4f92bf23ff44678
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.14.1-2/
 
-- https://sources.debian.net/src/iproute2/4.14.1-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.14.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.14.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -2858,11 +2836,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ncurses=6.1-1
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.1-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=5.4`
 
@@ -3833,19 +3817,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0036
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0036.dsc' ucf_3.0036.dsc 1343 SHA256:e67a8a3012ac357c7759dabd93d258422b1003bad8c3f17f25fc2a289eeda3bb
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0036.tar.xz' ucf_3.0036.tar.xz 65020 SHA256:34aa44416106f1205376918386b2896edf21dd42b633133b5f8fedecae17fca8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0036/
 
-- https://sources.debian.net/src/ucf/3.0036/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0036/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0036/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-21`
 
