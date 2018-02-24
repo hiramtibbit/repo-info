@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:815f062edcbbf2184aa649852d654ce96872ef7611648d125a222cafaf786cde`
-- Created: `2018-02-18T03:56:12.17050176Z`
+- Image ID: `sha256:f1535e07906ae38246a0055f97a9063402ca9d41b9bcd8c59ce4bb6570c9ebb9`
+- Created: `2018-02-23T19:29:27.615962501Z`
 - Virtual Size: ~ 268.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,7 +26,7 @@
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85.tar.gz.asc`
   - `GOSU_VERSION=1.10`
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
-  - `TINI_VERSION=0.16.1`
+  - `TINI_VERSION=0.17.0`
   - `TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5`
   - `CONVERTIGO_VERSION=7.5.0`
   - `CONVERTIGO_REVISION=44235`
