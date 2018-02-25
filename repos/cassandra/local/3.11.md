@@ -1,10 +1,10 @@
-# `cassandra:3.11.1`
+# `cassandra:3.11.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:388c303fcc6dc6e593303f5f54a3432b3dfdf378cd146afc5f3938385fcbd8c6`
-- Created: `2018-02-18T02:58:06.590107425Z`
-- Virtual Size: ~ 322.88 Mb  
+- Image ID: `sha256:0fb9df189322acc54a02fe93cfa15d928e4c46698ec4fc4974b7937c29a9402d`
+- Created: `2018-02-22T19:48:09.650949267Z`
+- Virtual Size: ~ 323.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA`
-  - `CASSANDRA_VERSION=3.11.1`
+  - `CASSANDRA_VERSION=3.11.2`
   - `CASSANDRA_CONFIG=/etc/cassandra`
 
 ## `dpkg` (`.deb`-based packages)
@@ -389,20 +389,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ca-certificates/20161130+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ca-certificates/20161130+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cassandra=3.11.1`
+### `dpkg` source package: `cassandra=3.11.2`
 
 Binary Packages:
 
-- `cassandra=3.11.1`
-- `cassandra-tools=3.11.1`
+- `cassandra=3.11.2`
+- `cassandra-tools=3.11.2`
 
 Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/cassandra-tools/copyright`)
 
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cassandra=3.11.2
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.dsc' cassandra_3.11.2.dsc 2022 SHA256:7629bb4c78ec0c1d6f712d316baa4d5b491238551952e0e833a0d44c68da758d
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.orig.tar.gz' cassandra_3.11.2.orig.tar.gz 36441459 SHA256:48119b6309b8fbd7ee020d13c7a646889d85c11d02fd84f82d1084c54a58a8d1
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.diff.gz' cassandra_3.11.2.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
+```
 
 ### `dpkg` source package: `cdebconf=0.227`
 
