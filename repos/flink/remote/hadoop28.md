@@ -1,7 +1,7 @@
 ## `flink:hadoop28`
 
 ```console
-$ docker pull flink@sha256:ed951a68097a9bd0bc2735b5f3162da994d965a46d78a65a535bc2eb95ed3786
+$ docker pull flink@sha256:aa3fb674a1ff174984be767324404c82bea9e66b302b2c35c82ba741c988c4a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull flink@sha256:ed951a68097a9bd0bc2735b5f3162da994d965a46d78a65a535bc
 ### `flink:hadoop28` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8b80917f7b43d5ddbfffb44f4bcd0411595cb2a68c24e2d174dce397dc20fda5
+$ docker pull flink@sha256:5cfe92570bb33adceb27757f7b50ae8996e7e3419cdab4afc89d3914701b01bf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **451.7 MB (451722004 bytes)**  
+-	Total Size: **454.8 MB (454814557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8f1d6f8af781330f4adb722c5c6bfd6a50b0e474833b45bc54f723a263779f7`
+-	Image ID: `sha256:76dc236ecaafa6db71b8f40ac445c1afc72149bb2ac77f027cb9a5cd96c9edbe`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -57,31 +57,31 @@ RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5;   rm -rf /var/
 ENV GOSU_VERSION=1.7
 # Thu, 15 Feb 2018 17:40:48 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 15 Feb 2018 18:20:23 GMT
-ENV FLINK_VERSION=1.4.0 HADOOP_VERSION=28 SCALA_VERSION=2.11
-# Thu, 15 Feb 2018 18:20:23 GMT
+# Mon, 26 Feb 2018 20:26:14 GMT
+ENV FLINK_VERSION=1.4.1 HADOOP_VERSION=28 SCALA_VERSION=2.11
+# Mon, 26 Feb 2018 20:26:14 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 15 Feb 2018 18:20:23 GMT
+# Mon, 26 Feb 2018 20:26:14 GMT
 ENV PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 15 Feb 2018 18:20:24 GMT
+# Mon, 26 Feb 2018 20:26:15 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 15 Feb 2018 18:20:24 GMT
+# Mon, 26 Feb 2018 20:26:15 GMT
 WORKDIR /opt/flink
-# Thu, 15 Feb 2018 18:20:25 GMT
-ENV FLINK_URL_FILE_PATH=flink/flink-1.4.0/flink-1.4.0-bin-hadoop28-scala_2.11.tgz
-# Thu, 15 Feb 2018 18:20:25 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.4.0/flink-1.4.0-bin-hadoop28-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.4.0/flink-1.4.0-bin-hadoop28-scala_2.11.tgz.asc
-# Thu, 15 Feb 2018 18:20:25 GMT
-COPY file:1b3d6b0de4c8f155f3f310dea96670e1f8dcff77569e00e42b8942faa95df302 in /KEYS 
-# Thu, 15 Feb 2018 18:20:37 GMT
+# Mon, 26 Feb 2018 20:26:15 GMT
+ENV FLINK_URL_FILE_PATH=flink/flink-1.4.1/flink-1.4.1-bin-hadoop28-scala_2.11.tgz
+# Mon, 26 Feb 2018 20:26:16 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.4.1/flink-1.4.1-bin-hadoop28-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.4.1/flink-1.4.1-bin-hadoop28-scala_2.11.tgz.asc
+# Mon, 26 Feb 2018 20:26:16 GMT
+COPY file:42c680244e9d49698acb6b9bd45ea05a87d29749958efea8ddc3c5fe3170b7a1 in /KEYS 
+# Mon, 26 Feb 2018 20:26:38 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 15 Feb 2018 18:20:49 GMT
+# Mon, 26 Feb 2018 20:26:38 GMT
 COPY file:dd3a2212d5f0bbe552ac5e863e5fb1df12bcbb32cff887e6f4f3c81e2372b6c1 in / 
-# Thu, 15 Feb 2018 18:20:49 GMT
+# Mon, 26 Feb 2018 20:26:39 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 15 Feb 2018 18:20:50 GMT
+# Mon, 26 Feb 2018 20:26:39 GMT
 EXPOSE 6123/tcp 8081/tcp
-# Thu, 15 Feb 2018 18:20:50 GMT
+# Mon, 26 Feb 2018 20:26:39 GMT
 CMD ["help"]
 ```
 
@@ -126,23 +126,23 @@ CMD ["help"]
 		Last Modified: Thu, 15 Feb 2018 18:21:29 GMT  
 		Size: 819.2 KB (819181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b445df43eb802ac17b9a9ed8ceeb650c24f0fbc11316e30548987813dfa2f642`  
-		Last Modified: Thu, 15 Feb 2018 18:39:40 GMT  
-		Size: 4.6 KB (4642 bytes)  
+	-	`sha256:a7a3a5d6797a654d5c56dc016409d852d6678362feb05e173199427d8b14dd25`  
+		Last Modified: Mon, 26 Feb 2018 20:35:48 GMT  
+		Size: 4.6 KB (4648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6de11424004f278ba75b6b766d89dd0f18286f66d65dae26e4795d9aba960ed`  
-		Last Modified: Thu, 15 Feb 2018 18:39:40 GMT  
+	-	`sha256:8a17190e378ed99739716d2d02cea1981efc9fbe0f0d8dbb4eddc962491db68a`  
+		Last Modified: Mon, 26 Feb 2018 20:35:47 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d6da3a317c3776a4130fdfbc5810bd459cf17f3525fc8d1c5a573a38bf21d3b`  
-		Last Modified: Thu, 15 Feb 2018 18:39:40 GMT  
-		Size: 54.7 KB (54701 bytes)  
+	-	`sha256:dc68e32b236d7a42f6dfda8bf4128d91512e82fa21ddff7569f4db9bf7fbc3d6`  
+		Last Modified: Mon, 26 Feb 2018 20:35:48 GMT  
+		Size: 57.0 KB (57016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:463abd429c2af6a77c4beae988a7a7758589a9b58ade5286870838c332dd4e47`  
-		Last Modified: Thu, 15 Feb 2018 18:39:55 GMT  
-		Size: 223.3 MB (223266281 bytes)  
+	-	`sha256:6680c1f984d7a486af49525c13370036d6ad5d7e479ec22267d9c800117b6853`  
+		Last Modified: Mon, 26 Feb 2018 20:36:05 GMT  
+		Size: 226.4 MB (226356514 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3192088b59c078e8e42a9c028a312cb96e90f18a3966fff7bf9684987a6c0756`  
-		Last Modified: Thu, 15 Feb 2018 18:39:40 GMT  
-		Size: 1.1 KB (1118 bytes)  
+	-	`sha256:773448153b51d1c416153d699664de9aa93a5453b5f051b8314bfbc0d9f50731`  
+		Last Modified: Mon, 26 Feb 2018 20:35:47 GMT  
+		Size: 1.1 KB (1117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
