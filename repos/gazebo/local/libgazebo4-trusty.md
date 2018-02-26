@@ -1425,14 +1425,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.8/copyright`, `/usr/share/doc/g++-
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-4.8=4.8.4-2ubuntu1~14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc' gcc-4.8_4.8.4-2ubuntu1~14.04.3.dsc 13623 SHA256:9601f648504e37d678225d93cec1d6c213e57e1eadafbd979bc3691051832294
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4.orig.tar.gz' gcc-4.8_4.8.4.orig.tar.gz 66451474 SHA256:0a714dd7a8415cb134c79784ff8b0a30da6d76afb998c21f6e95e1060d65466c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz' gcc-4.8_4.8.4-2ubuntu1~14.04.3.diff.gz 1105598 SHA256:7d06787a3af90bdb7f417c47ed5da43d0aa265d1d49ca0a3bebf9bab8bada02f
-```
 
 ### `dpkg` source package: `gcc-defaults=1.124ubuntu6`
 
@@ -4418,14 +4413,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-141.190
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-141.190.dsc' linux_3.13.0-141.190.dsc 8127 SHA256:e9c0fbfc0d963b383b78b873af4d4134e6a4c0ed91e84f741f0518ed58e385dc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-141.190.diff.gz' linux_3.13.0-141.190.diff.gz 9580743 SHA256:196ef5381ee36f850cc7da74f25e8f56eec6f3e5f5f83afca3fd27d36063717c
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
