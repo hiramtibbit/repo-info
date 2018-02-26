@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:741b1a3e2152321722ae3fa84180f4793dc97781283b60ad4c89ed11d6102d50`
-- Created: `2018-02-17T16:24:46.617130263Z`
-- Virtual Size: ~ 454.37 Mb  
+- Image ID: `sha256:e231f64f81a6070fcff499180181ee0d07fe10d2a5ca83a4e831d9f8d24063b6`
+- Created: `2018-02-23T00:53:13.347540874Z`
+- Virtual Size: ~ 453.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.33`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.33.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.33.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=9004995fdf55f111cd9020e8b8aff975df3d8d4191776c601a46988c375f3553`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.14`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.14.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.14.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779`
   - `PHP_MD5=`
   - `PIWIK_VERSION=3.3.0`
 
@@ -782,9 +782,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libfreetype6:amd64=2.5.2-3+deb8u2`
-- `libfreetype6-dev=2.5.2-3+deb8u2`
 
-Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
 - `BSD-2-Clause`
 - `BSD-3-Clause`
@@ -934,40 +933,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-13.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `geoip-database=20150317-1`
-
-Binary Packages:
-
-- `geoip-database=20150317-1`
-
-Licenses: (parsed from: `/usr/share/doc/geoip-database/copyright`)
-
-- `LGPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris geoip-database=20150317-1
-'http://deb.debian.org/debian/pool/main/g/geoip-database/geoip-database_20150317-1.dsc' geoip-database_20150317-1.dsc 1905 SHA256:4f00c565093b815a41e2a738afb89163e5cd60f56081e646b61c5c408ec8e635
-'http://deb.debian.org/debian/pool/main/g/geoip-database/geoip-database_20150317.orig.tar.xz' geoip-database_20150317.orig.tar.xz 23155288 SHA256:c939d713b2ae8701e451caf2e90b4e83578cb31c1723bc1083ea823a90e8f92e
-'http://deb.debian.org/debian/pool/main/g/geoip-database/geoip-database_20150317-1.debian.tar.xz' geoip-database_20150317-1.debian.tar.xz 3936 SHA256:c4567f1ab2b5df52fac146a1840966764126eca9f47646e311eca9cdd532ff8f
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/geoip-database/20150317-1/ (for browsing the source)
-- https://sources.debian.net/src/geoip-database/20150317-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/geoip-database/20150317-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `geoip=1.6.2-4`
 
 Binary Packages:
 
-- `geoip-bin=1.6.2-4`
-- `libgeoip-dev=1.6.2-4`
 - `libgeoip1:amd64=1.6.2-4`
 
-Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/libgeoip-dev/copyright`, `/usr/share/doc/libgeoip1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgeoip1/copyright`)
 
 - `LGPL-2`
 
@@ -1616,11 +1588,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
 - `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
 
-Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 - `BSD-3`
 - `BSD-BY-LC-NE`
@@ -1673,9 +1643,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
-- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
@@ -2305,7 +2274,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.40+dfsg-1+deb8u3`
-- `libldap2-dev:amd64=2.4.40+dfsg-1+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2875,31 +2843,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-16+deb8u3`
-
-Binary Packages:
-
-- `unzip=6.0-16+deb8u3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris unzip=6.0-16+deb8u3
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.dsc' unzip_6.0-16+deb8u3.dsc 1339 SHA256:b1a3191a99f7c245d8e29ee0866d5c2b8e9deb191095ae8312dd59a95e616b79
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.debian.tar.xz' unzip_6.0-16+deb8u3.debian.tar.xz 16120 SHA256:8e50ca0ac7d8e00d595a329c91dec7a7e1a1b998857f54062cd26b88c2e3d3b8
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/unzip/6.0-16+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-16+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-16+deb8u3/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `ustr=1.0.4-3`
 
 Binary Packages:
@@ -3016,37 +2959,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.1.1alpha+20120614-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zip=3.0-8`
-
-Binary Packages:
-
-- `zip=3.0-8`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris zip=3.0-8
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-8.dsc' zip_3.0-8.dsc 1296 SHA256:ee914fb5ddd4dddaf50beddc87d108475ab2e5c1dd0c8cb068c130d4c164c397
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0.orig.tar.gz' zip_3.0.orig.tar.gz 1118845 SHA256:f0e8bb1f9b7eb0b01285495a2699df3a4b766784c1765a8f1aeedf63c0806369
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-8.debian.tar.gz' zip_3.0-8.debian.tar.gz 7442 SHA256:23673bd6496ca4d8673f807268c51e33e29c7783aa5b758885dd5c06478ef09b
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/zip/3.0-8/ (for browsing the source)
-- https://sources.debian.net/src/zip/3.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zip/3.0-8/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `zlib=1:1.2.8.dfsg-2`
 
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
-- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
