@@ -79,15 +79,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.6.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-1.dsc' apr_1.6.3-1.dsc 2319 SHA256:4053fe879e73b58b85b9faef47f88f3f2f5b416ea57df2eb9617e6313e16b33d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2' apr_1.6.3.orig.tar.bz2 854100 SHA256:131f06d16d7aabd097fa992a33eec2b6af3962f93e6d570a9bd4d85e95993172
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2.asc' apr_1.6.3.orig.tar.bz2.asc 801 SHA256:33db39162f7ca9acdccaa4f19630a67045542791b262116d3512c8b5d7c3fca1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-1.debian.tar.xz' apr_1.6.3-1.debian.tar.xz 212956 SHA256:81c13e7277db373f6b72279caa576c9cd91a9902c8798d628e2c2d504962eb8e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apr/1.6.3-1/
+
 
 ### `dpkg` source package: `apt=1.6~alpha5`
 
@@ -216,13 +214,13 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20171216.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20171216.1.dsc' autotools-dev_20171216.1.dsc 1655 SHA256:79c644f3d06efd476083f8c68b2b23f4fd1c12b85d8816d6d029683e12ed93d3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20171216.1.tar.xz' autotools-dev_20171216.1.tar.xz 67188 SHA256:c5327639b386eceeb84709b826e625d80c0a7255f9344ff39104297f21d6ecd3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/autotools-dev/20171216.1/
+
 
 ### `dpkg` source package: `base-files=10ubuntu1`
 
@@ -1017,14 +1015,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.54.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1-1ubuntu1.dsc' glib2.0_2.54.1-1ubuntu1.dsc 2734 SHA256:0053fec2863f7dd59081a389ce781347e2c03375342b1890e1219197558aa221
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1.orig.tar.xz' glib2.0_2.54.1.orig.tar.xz 7829104 SHA256:50c01b1419324f10fbf9b9709ec2164b18586968bdce7540583bf32302cf47a3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1-1ubuntu1.debian.tar.xz' glib2.0_2.54.1-1ubuntu1.debian.tar.xz 75252 SHA256:aab799877787337ea87e03cb713f6c2a9dcef11aac9bf481ac9384a63cedcf11
-```
 
 ### `dpkg` source package: `glibc=2.26-0ubuntu2`
 
@@ -3546,14 +3539,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=235-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.dsc' systemd_235-3ubuntu3.dsc 4116 SHA256:619165839b2f1413a1227904efb1017752f63218eab13952700acc13c97f6e3f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235.orig.tar.gz' systemd_235.orig.tar.gz 6586406 SHA256:25811f96f5a027bf2a4c9383495cf5b623e385d84da31e473cf375932b3e9c52
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.debian.tar.xz' systemd_235-3ubuntu3.debian.tar.xz 154504 SHA256:b0e9d7201ab72cecfb8450e3799050571d165b48dd2ff381125c6cc14fa5fec3
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

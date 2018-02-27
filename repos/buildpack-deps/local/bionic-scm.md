@@ -79,15 +79,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.6.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-1.dsc' apr_1.6.3-1.dsc 2319 SHA256:4053fe879e73b58b85b9faef47f88f3f2f5b416ea57df2eb9617e6313e16b33d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2' apr_1.6.3.orig.tar.bz2 854100 SHA256:131f06d16d7aabd097fa992a33eec2b6af3962f93e6d570a9bd4d85e95993172
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3.orig.tar.bz2.asc' apr_1.6.3.orig.tar.bz2.asc 801 SHA256:33db39162f7ca9acdccaa4f19630a67045542791b262116d3512c8b5d7c3fca1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-1.debian.tar.xz' apr_1.6.3-1.debian.tar.xz 212956 SHA256:81c13e7277db373f6b72279caa576c9cd91a9902c8798d628e2c2d504962eb8e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apr/1.6.3-1/
+
 
 ### `dpkg` source package: `apt=1.6~alpha5`
 
@@ -1847,14 +1845,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=235-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.dsc' systemd_235-3ubuntu3.dsc 4116 SHA256:619165839b2f1413a1227904efb1017752f63218eab13952700acc13c97f6e3f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235.orig.tar.gz' systemd_235.orig.tar.gz 6586406 SHA256:25811f96f5a027bf2a4c9383495cf5b623e385d84da31e473cf375932b3e9c52
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.debian.tar.xz' systemd_235-3ubuntu3.debian.tar.xz 154504 SHA256:b0e9d7201ab72cecfb8450e3799050571d165b48dd2ff381125c6cc14fa5fec3
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
