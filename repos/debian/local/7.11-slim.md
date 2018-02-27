@@ -1180,20 +1180,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-0+deb7u1
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.dsc' tzdata_2017c-0+deb7u1.dsc 1966 SHA256:8d1398642a537a57ec210bcd39956458b9ff6b148f73a3a28597d042961ff95a
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.debian.tar.xz' tzdata_2017c-0+deb7u1.debian.tar.xz 102100 SHA256:5da97af6fa8054321d817dacd9ea43bef9b0f343b296554feff1d81b38b181a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-0+deb7u1/
 
-- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
