@@ -145,21 +145,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.12-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-2.dsc' apparmor_2.12-2.dsc 3274 SHA256:b959164199a9c3de86434f8c004f7f9d7c3fadb1542d7388247289daafced96e
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz' apparmor_2.12.orig.tar.gz 7258450 SHA256:8a2b0cd083faa4d0640f579024be3a629faa7db3b99540798a1a050e2eaba056
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz.asc' apparmor_2.12.orig.tar.gz.asc 837 SHA256:ea904e33c3b2ec109ea2ebf4c0cf29e9d4f68836328e901c9777a55b50084e63
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-2.debian.tar.xz' apparmor_2.12-2.debian.tar.xz 85080 SHA256:70a7c3705f1cb53f8b8616cdcd9182c76804a4ded7a8e76843e53c5c05edcd09
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.12-2/
 
-- https://sources.debian.net/src/apparmor/2.12-2/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.12-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.6~alpha7`
 
@@ -173,19 +165,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~alpha7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~alpha7.dsc' apt_1.6~alpha7.dsc 2733 SHA256:4263057a9cb1379191da24ac1bf888e2a5569fd066e4250deacfd4f46b462d75
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~alpha7.tar.xz' apt_1.6~alpha7.tar.xz 2116452 SHA256:5db7bffbbb454211bb8ffa011ba8502a2f0d5e16dd7dc5933aab838831bcd166
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6~alpha7/
 
-- https://sources.debian.net/src/apt/1.6~alpha7/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6~alpha7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6~alpha7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20161029-1.1`
 
@@ -1211,10 +1197,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
 
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
