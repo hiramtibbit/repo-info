@@ -1,10 +1,10 @@
-# `flink:1.4.0-hadoop27-scala_2.11`
+# `flink:1.4.1-hadoop27-scala_2.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4117d8cb6aae506c3ac7e17c2bfdb56578a89525c900b62b92db4471f4326e11`
-- Created: `2018-02-15T18:19:45.675293965Z`
-- Virtual Size: ~ 794.66 Mb  
+- Image ID: `sha256:3a022d9ee99b2a4e434d28b559d99af6d05abe15dd2f68a1c1afc23d44c077f0`
+- Created: `2018-02-26T20:25:00.844408016Z`
+- Virtual Size: ~ 797.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GOSU_VERSION=1.7`
-  - `FLINK_VERSION=1.4.0`
+  - `FLINK_VERSION=1.4.1`
   - `HADOOP_VERSION=27`
   - `SCALA_VERSION=2.11`
   - `FLINK_HOME=/opt/flink`
-  - `FLINK_URL_FILE_PATH=flink/flink-1.4.0/flink-1.4.0-bin-hadoop27-scala_2.11.tgz`
-  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.4.0/flink-1.4.0-bin-hadoop27-scala_2.11.tgz`
-  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.4.0/flink-1.4.0-bin-hadoop27-scala_2.11.tgz.asc`
+  - `FLINK_URL_FILE_PATH=flink/flink-1.4.1/flink-1.4.1-bin-hadoop27-scala_2.11.tgz`
+  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.4.1/flink-1.4.1-bin-hadoop27-scala_2.11.tgz`
+  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.4.1/flink-1.4.1-bin-hadoop27-scala_2.11.tgz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
