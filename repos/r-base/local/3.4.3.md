@@ -999,20 +999,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-3.dsc' gcc-7_7.3.0-3.dsc 25540 SHA256:90bb1e4c740b740b5e600258408919a3e8a9beed1b92fbee27c5eb0d6a173e86
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-3.diff.gz' gcc-7_7.3.0-3.diff.gz 701162 SHA256:5890c67594798fb1a842e7461a6d1b80b439f71369d21f5d6ca26ff72712757e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.3.0-3/
 
-- https://sources.debian.net/src/gcc-7/7.3.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8-20180207-2`
 
@@ -1086,20 +1079,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm5/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.14.1-3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-3.dsc' gdbm_1.14.1-3.dsc 2122 SHA256:f74a56e78dbc6308118e272a53bbb5acc5ec1c527510a41c6c9e9ec5f8361083
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-3.debian.tar.xz' gdbm_1.14.1-3.debian.tar.xz 25932 SHA256:5d499c3cc64c85636f5cf3cdba6a2dea17d86a6527b23ebf374e29603f79db49
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.14.1-3/
 
-- https://sources.debian.net/src/gdbm/1.14.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.14.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.14.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.3-2`
 
@@ -2079,16 +2065,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpsl=0.19.1-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.dsc' libpsl_0.19.1-4.dsc 2205 SHA256:c782695b32092fbe38f5e11228e0efcd41c0260ac5b5a503fe0b59ba40b86e7e
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.debian.tar.xz' libpsl_0.19.1-4.debian.tar.xz 9444 SHA256:f289b1ef5e33dc96c64edb384f597f7ddd74f1f0e7e8091155c62bd451ea1fc2
+'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.dsc' libpsl_0.19.1-4.dsc 2205 SHA256:c782695b32092fbe38f5e11228e0efcd41c0260ac5b5a503fe0b59ba40b86e7e
+'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
+'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.debian.tar.xz' libpsl_0.19.1-4.debian.tar.xz 9444 SHA256:f289b1ef5e33dc96c64edb384f597f7ddd74f1f0e7e8091155c62bd451ea1fc2
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libpsl/0.19.1-4/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1`
 
@@ -3355,20 +3335,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-48-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-48-1.dsc' r-cran-mass_7.3-48-1.dsc 1729 SHA256:439f79a615ed685aeb73d901ff45c7f29463bc7516fb7e0544bbd730d6739fbc
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-48.orig.tar.gz' r-cran-mass_7.3-48.orig.tar.gz 487738 SHA256:295c94928e23e85fc0b8abf201afe6b1ea552557e5872c787068556f4426fea9
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-48-1.diff.gz' r-cran-mass_7.3-48-1.diff.gz 6047 SHA256:bdbdee3a6e6db454afe1eca9a2f9fbcf2835d6140e3510e713c293bd32b590cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-mass/7.3-48-1/
 
-- https://sources.debian.net/src/r-cran-mass/7.3-48-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-48-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-48-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-12-2`
 
@@ -3488,20 +3461,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-rpart/copyright`)
 - `GPL-2`
 - `GPL-2 | license included below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rpart=4.1-12-1
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-12-1.dsc' rpart_4.1-12-1.dsc 1653 SHA256:ea5adb1c04a34e30b9d29849abee69cf9ee842bd689bd0ad5a506504d0d47774
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-12.orig.tar.gz' rpart_4.1-12.orig.tar.gz 817720 SHA256:d81be74adbf2df2a17dd638761957884b851638fbe4dacc7821a834af800f79c
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-12-1.diff.gz' rpart_4.1-12-1.diff.gz 4105 SHA256:e2d19495e8f3f9374ae523f9e24ec9865484826427c97e25e58db43a142f285b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rpart/4.1-12-1/
 
-- https://sources.debian.net/src/rpart/4.1-12-1/ (for browsing the source)
-- https://sources.debian.net/src/rpart/4.1-12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rpart/4.1-12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -3691,20 +3657,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.8+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg-2.dsc' tcl8.6_8.6.8+dfsg-2.dsc 1998 SHA256:a5365c2ddf21b1a2cd68a5d75a1b847afbd33291026a67898e6a518be9c7563a
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg.orig.tar.gz' tcl8.6_8.6.8+dfsg.orig.tar.gz 5886744 SHA256:e67d9dda22565804ce91d3c34c46f39d972caa1366fb6d34fa6eb4cadf1cbb1e
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg-2.debian.tar.xz' tcl8.6_8.6.8+dfsg-2.debian.tar.xz 15096 SHA256:daba4866e7a69f7e17d180eec9993140a08f51fe1559593209091e31725fb667
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tcl8.6/8.6.8+dfsg-2/
 
-- https://sources.debian.net/src/tcl8.6/8.6.8+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.8+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.8+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20160520-1`
 
@@ -3766,20 +3725,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tk8.6=8.6.8-2
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8-2.dsc' tk8.6_8.6.8-2.dsc 2040 SHA256:e70dea97ca0b5cb09c76afa646c04d8925989e659870ebbd1bc3f4714d2384a8
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8.orig.tar.gz' tk8.6_8.6.8.orig.tar.gz 4319854 SHA256:49e7bca08dde95195a27f594f7c850b088be357a7c7096e44e1158c7a5fd7b33
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8-2.debian.tar.xz' tk8.6_8.6.8-2.debian.tar.xz 11200 SHA256:2f92341b76a26ff551c9ce3b2091ad26222f2bf68ba813acaace3f977f6b59a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tk8.6/8.6.8-2/
 
-- https://sources.debian.net/src/tk8.6/8.6.8-2/ (for browsing the source)
-- https://sources.debian.net/src/tk8.6/8.6.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tk8.6/8.6.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018c-1`
 
