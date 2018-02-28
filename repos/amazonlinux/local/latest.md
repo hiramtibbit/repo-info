@@ -1,10 +1,10 @@
-# `amazonlinux:2017.09.0.20170930`
+# `amazonlinux:2017.09.1.20180222`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6133b2c7d7c2fb402770857b7ebaa1eff3613c21cc257aac42a8de49e3c7f74e`
-- Created: `2017-11-03T22:51:28.633437568Z`
-- Virtual Size: ~ 164.84 Mb  
+- Image ID: `sha256:3faa54d46dec29c12dbcdf92205f122addc98556aae03ee57206a19e09b8dd0b`
+- Created: `2018-02-26T20:02:55.367520849Z`
+- Virtual Size: ~ 164.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
