@@ -7,6 +7,15 @@
 -	[`lightstreamer:6.0.3`](#lightstreamer603)
 -	[`lightstreamer:6.1`](#lightstreamer61)
 -	[`lightstreamer:6.1.0`](#lightstreamer610)
+-	[`lightstreamer:7`](#lightstreamer7)
+-	[`lightstreamer:7.0`](#lightstreamer70)
+-	[`lightstreamer:7.0.0`](#lightstreamer700)
+-	[`lightstreamer:7.0.0-alpine`](#lightstreamer700-alpine)
+-	[`lightstreamer:7.0.0-jre8`](#lightstreamer700-jre8)
+-	[`lightstreamer:7.0.0-jre8-alpine`](#lightstreamer700-jre8-alpine)
+-	[`lightstreamer:7.0-alpine`](#lightstreamer70-alpine)
+-	[`lightstreamer:7.0-jre8`](#lightstreamer70-jre8)
+-	[`lightstreamer:7.0-jre8-alpine`](#lightstreamer70-jre8-alpine)
 -	[`lightstreamer:latest`](#lightstreamerlatest)
 
 ## `lightstreamer:6`
@@ -608,6 +617,42 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Thu, 15 Feb 2018 17:26:52 GMT  
 		Size: 36.6 MB (36551888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `lightstreamer:7`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0.0`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0.0-jre8`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0.0-jre8-alpine`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0-alpine`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0-jre8`
+
+**does not exist** (yet?)
+
+## `lightstreamer:7.0-jre8-alpine`
+
+**does not exist** (yet?)
 
 ## `lightstreamer:latest`
 
