@@ -3031,7 +3031,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.2.9-passenger`
 
 ```console
-$ docker pull redmine@sha256:15bb7417c9f5cdb603741571e73f66728cccd270a47b3b4653c53a108f53768b
+$ docker pull redmine@sha256:682ad7a9e3f651153b17cde2bde32b5d964b1a74adde26c5117df3f655f369d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3041,14 +3041,14 @@ $ docker pull redmine@sha256:15bb7417c9f5cdb603741571e73f66728cccd270a47b3b4653c
 ### `redmine:3.2.9-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:cbcca84951dc7d131ee00c744ce95a33cf7714fa97406916fed309a0483f79aa
+$ docker pull redmine@sha256:3d07c10c509b3bc28c1924bac84e32414fc9a1c8d90dac87b91f11aa9705b8c6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269849005 bytes)**  
+-	Total Size: **269.9 MB (269857447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:190753ed6038c8674a827213b0169d93fd1e9b0526af2f2f06b87626e47ce51f`
+-	Image ID: `sha256:a19fa27131275ac5a60767e358e38604247d74a3f8374a8bd55b10063e5b2549`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -3119,13 +3119,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 04:33:07 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 04:33:41 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 04:34:33 GMT
+# Fri, 02 Mar 2018 21:58:58 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:59:25 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 04:34:37 GMT
+# Fri, 02 Mar 2018 21:59:26 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 04:34:50 GMT
+# Fri, 02 Mar 2018 21:59:27 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -3186,19 +3186,19 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 04:52:52 GMT  
 		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9a9ddc4c3cc8bf265b34224e4f490e456244dad5546dee40a87e99cb29d2f2b`  
-		Last Modified: Sun, 18 Feb 2018 04:53:55 GMT  
-		Size: 14.5 MB (14483695 bytes)  
+	-	`sha256:868316423f8e02fdec49982884d5395df7da070a952c4caa6dd9586d4a0214f4`  
+		Last Modified: Fri, 02 Mar 2018 22:01:45 GMT  
+		Size: 14.5 MB (14492397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa9c60ad9f18559b5d5d125e2583d58106ec21636a1948c3f1e3c5897c71fe67`  
-		Last Modified: Sun, 18 Feb 2018 04:53:50 GMT  
-		Size: 4.4 MB (4354992 bytes)  
+	-	`sha256:b094ec5aa52988098e978063a79eaf68d36c1baae4d66d8a0af81dab70e92c71`  
+		Last Modified: Fri, 02 Mar 2018 22:01:42 GMT  
+		Size: 4.4 MB (4354732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3.2-passenger`
 
 ```console
-$ docker pull redmine@sha256:15bb7417c9f5cdb603741571e73f66728cccd270a47b3b4653c53a108f53768b
+$ docker pull redmine@sha256:682ad7a9e3f651153b17cde2bde32b5d964b1a74adde26c5117df3f655f369d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3208,14 +3208,14 @@ $ docker pull redmine@sha256:15bb7417c9f5cdb603741571e73f66728cccd270a47b3b4653c
 ### `redmine:3.2-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:cbcca84951dc7d131ee00c744ce95a33cf7714fa97406916fed309a0483f79aa
+$ docker pull redmine@sha256:3d07c10c509b3bc28c1924bac84e32414fc9a1c8d90dac87b91f11aa9705b8c6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269849005 bytes)**  
+-	Total Size: **269.9 MB (269857447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:190753ed6038c8674a827213b0169d93fd1e9b0526af2f2f06b87626e47ce51f`
+-	Image ID: `sha256:a19fa27131275ac5a60767e358e38604247d74a3f8374a8bd55b10063e5b2549`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -3286,13 +3286,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 04:33:07 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 04:33:41 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 04:34:33 GMT
+# Fri, 02 Mar 2018 21:58:58 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:59:25 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 04:34:37 GMT
+# Fri, 02 Mar 2018 21:59:26 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 04:34:50 GMT
+# Fri, 02 Mar 2018 21:59:27 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -3353,13 +3353,13 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 04:52:52 GMT  
 		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9a9ddc4c3cc8bf265b34224e4f490e456244dad5546dee40a87e99cb29d2f2b`  
-		Last Modified: Sun, 18 Feb 2018 04:53:55 GMT  
-		Size: 14.5 MB (14483695 bytes)  
+	-	`sha256:868316423f8e02fdec49982884d5395df7da070a952c4caa6dd9586d4a0214f4`  
+		Last Modified: Fri, 02 Mar 2018 22:01:45 GMT  
+		Size: 14.5 MB (14492397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa9c60ad9f18559b5d5d125e2583d58106ec21636a1948c3f1e3c5897c71fe67`  
-		Last Modified: Sun, 18 Feb 2018 04:53:50 GMT  
-		Size: 4.4 MB (4354992 bytes)  
+	-	`sha256:b094ec5aa52988098e978063a79eaf68d36c1baae4d66d8a0af81dab70e92c71`  
+		Last Modified: Fri, 02 Mar 2018 22:01:42 GMT  
+		Size: 4.4 MB (4354732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3.3`
@@ -5371,7 +5371,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.3.6-passenger`
 
 ```console
-$ docker pull redmine@sha256:b622dffafbef51a62859b78b09d86da44c554476cadaa1da5baf038c2c5d3114
+$ docker pull redmine@sha256:9352de6c4906498355aca620ad6ef4c7c802c9785d8d8381f24649230e6acac7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5381,14 +5381,14 @@ $ docker pull redmine@sha256:b622dffafbef51a62859b78b09d86da44c554476cadaa1da5ba
 ### `redmine:3.3.6-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:ea78b2701e91acea6a612c125192e7a62356b91385065a1abb9115326a38edea
+$ docker pull redmine@sha256:473b230e66bb704cc1afc1d1345e1a55e1ab8d2e7a53f35deee42d2f12753a6b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269892574 bytes)**  
+-	Total Size: **269.9 MB (269901785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b4db48ed299a5ff8f9f219669a1bc5c8bd210af8d80e9119ae35e9b01ff9925`
+-	Image ID: `sha256:59a5f8a538813ccd2a1a451600d0adf7df53f83c96a9f1d494e122113b477ea3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -5459,13 +5459,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 04:17:21 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 04:28:58 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 04:29:19 GMT
+# Fri, 02 Mar 2018 21:58:11 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:58:41 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 04:29:28 GMT
+# Fri, 02 Mar 2018 21:58:42 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 04:29:40 GMT
+# Fri, 02 Mar 2018 21:58:43 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -5526,19 +5526,19 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 04:35:20 GMT  
 		Size: 1.8 KB (1794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13d23bb2c9345875058255c2f2228a6eb0508177a8668485617deecf58e9e9d0`  
-		Last Modified: Sun, 18 Feb 2018 04:52:07 GMT  
-		Size: 14.5 MB (14482885 bytes)  
+	-	`sha256:25a75d7e76bb00b88aeff3f25588820c1cb26b89c51c836abd6dd67a5916c131`  
+		Last Modified: Fri, 02 Mar 2018 22:01:05 GMT  
+		Size: 14.5 MB (14492353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b48c3d0c56ba5a8453b2540e8ac982f5ce8051db1e74720e34de76642ef813c9`  
-		Last Modified: Sun, 18 Feb 2018 04:52:00 GMT  
-		Size: 4.4 MB (4354976 bytes)  
+	-	`sha256:639344e4cb7cd997eb26b4c7da34d1b17f40b8ccd70c025ad89f0cb96973cb09`  
+		Last Modified: Fri, 02 Mar 2018 22:01:03 GMT  
+		Size: 4.4 MB (4354719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3.3-passenger`
 
 ```console
-$ docker pull redmine@sha256:b622dffafbef51a62859b78b09d86da44c554476cadaa1da5baf038c2c5d3114
+$ docker pull redmine@sha256:9352de6c4906498355aca620ad6ef4c7c802c9785d8d8381f24649230e6acac7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5548,14 +5548,14 @@ $ docker pull redmine@sha256:b622dffafbef51a62859b78b09d86da44c554476cadaa1da5ba
 ### `redmine:3.3-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:ea78b2701e91acea6a612c125192e7a62356b91385065a1abb9115326a38edea
+$ docker pull redmine@sha256:473b230e66bb704cc1afc1d1345e1a55e1ab8d2e7a53f35deee42d2f12753a6b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269892574 bytes)**  
+-	Total Size: **269.9 MB (269901785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b4db48ed299a5ff8f9f219669a1bc5c8bd210af8d80e9119ae35e9b01ff9925`
+-	Image ID: `sha256:59a5f8a538813ccd2a1a451600d0adf7df53f83c96a9f1d494e122113b477ea3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -5626,13 +5626,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 04:17:21 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 04:28:58 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 04:29:19 GMT
+# Fri, 02 Mar 2018 21:58:11 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:58:41 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 04:29:28 GMT
+# Fri, 02 Mar 2018 21:58:42 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 04:29:40 GMT
+# Fri, 02 Mar 2018 21:58:43 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -5693,13 +5693,13 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 04:35:20 GMT  
 		Size: 1.8 KB (1794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13d23bb2c9345875058255c2f2228a6eb0508177a8668485617deecf58e9e9d0`  
-		Last Modified: Sun, 18 Feb 2018 04:52:07 GMT  
-		Size: 14.5 MB (14482885 bytes)  
+	-	`sha256:25a75d7e76bb00b88aeff3f25588820c1cb26b89c51c836abd6dd67a5916c131`  
+		Last Modified: Fri, 02 Mar 2018 22:01:05 GMT  
+		Size: 14.5 MB (14492353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b48c3d0c56ba5a8453b2540e8ac982f5ce8051db1e74720e34de76642ef813c9`  
-		Last Modified: Sun, 18 Feb 2018 04:52:00 GMT  
-		Size: 4.4 MB (4354976 bytes)  
+	-	`sha256:639344e4cb7cd997eb26b4c7da34d1b17f40b8ccd70c025ad89f0cb96973cb09`  
+		Last Modified: Fri, 02 Mar 2018 22:01:03 GMT  
+		Size: 4.4 MB (4354719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3.4`
@@ -7711,7 +7711,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4.4-passenger`
 
 ```console
-$ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad911f90a35762a4
+$ docker pull redmine@sha256:8e63577763fe219c51a7864047f87649b4501bb88bf7b330c0e7dd5adbc1e162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7721,14 +7721,14 @@ $ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad9
 ### `redmine:3.4.4-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:14697081c450b3e3b3af1e750392d043154cec19a27fd0486546d0360bbbc839
+$ docker pull redmine@sha256:daa3503816638a1700b5b1a6c4ff9f1b0af44ba9fa1d36d9127d9d58e35a2f43
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.3 MB (279258083 bytes)**  
+-	Total Size: **279.3 MB (279265859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a584e5049a8066ba326c44ff2d6037813e33bfab7707c567078326cefcd4d95c`
+-	Image ID: `sha256:07ef5d71a6d6abde9c251dc77836e5f20b245f2e87f10035615b9510d63f09d9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -7799,13 +7799,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 05:03:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 05:18:02 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 05:18:21 GMT
+# Fri, 02 Mar 2018 21:57:16 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:57:50 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -7866,19 +7866,19 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 05:18:46 GMT  
 		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62703508501d32db02e7e141842db21ad3671f1c837ff013fa09c3f84cb4863d`  
-		Last Modified: Sun, 18 Feb 2018 05:20:16 GMT  
-		Size: 14.5 MB (14484009 bytes)  
+	-	`sha256:050fa1c498a9d3b77fe50ad020207839bfec9d394dbdcd1e29a19f506bdda3c0`  
+		Last Modified: Fri, 02 Mar 2018 21:59:54 GMT  
+		Size: 14.5 MB (14492033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa761fb57ee2b8e4bdd2370e71270247c374362ae5e9f02663ad11722944549`  
-		Last Modified: Sun, 18 Feb 2018 05:20:14 GMT  
-		Size: 4.4 MB (4354987 bytes)  
+	-	`sha256:a33240ba401f849c34b6fa458e212e8d62082a5d659cae3b0ca9c377fa0dc6a2`  
+		Last Modified: Fri, 02 Mar 2018 21:59:53 GMT  
+		Size: 4.4 MB (4354739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3.4-passenger`
 
 ```console
-$ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad911f90a35762a4
+$ docker pull redmine@sha256:8e63577763fe219c51a7864047f87649b4501bb88bf7b330c0e7dd5adbc1e162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7888,14 +7888,14 @@ $ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad9
 ### `redmine:3.4-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:14697081c450b3e3b3af1e750392d043154cec19a27fd0486546d0360bbbc839
+$ docker pull redmine@sha256:daa3503816638a1700b5b1a6c4ff9f1b0af44ba9fa1d36d9127d9d58e35a2f43
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.3 MB (279258083 bytes)**  
+-	Total Size: **279.3 MB (279265859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a584e5049a8066ba326c44ff2d6037813e33bfab7707c567078326cefcd4d95c`
+-	Image ID: `sha256:07ef5d71a6d6abde9c251dc77836e5f20b245f2e87f10035615b9510d63f09d9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -7966,13 +7966,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 05:03:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 05:18:02 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 05:18:21 GMT
+# Fri, 02 Mar 2018 21:57:16 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:57:50 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -8033,19 +8033,19 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 05:18:46 GMT  
 		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62703508501d32db02e7e141842db21ad3671f1c837ff013fa09c3f84cb4863d`  
-		Last Modified: Sun, 18 Feb 2018 05:20:16 GMT  
-		Size: 14.5 MB (14484009 bytes)  
+	-	`sha256:050fa1c498a9d3b77fe50ad020207839bfec9d394dbdcd1e29a19f506bdda3c0`  
+		Last Modified: Fri, 02 Mar 2018 21:59:54 GMT  
+		Size: 14.5 MB (14492033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa761fb57ee2b8e4bdd2370e71270247c374362ae5e9f02663ad11722944549`  
-		Last Modified: Sun, 18 Feb 2018 05:20:14 GMT  
-		Size: 4.4 MB (4354987 bytes)  
+	-	`sha256:a33240ba401f849c34b6fa458e212e8d62082a5d659cae3b0ca9c377fa0dc6a2`  
+		Last Modified: Fri, 02 Mar 2018 21:59:53 GMT  
+		Size: 4.4 MB (4354739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:3-passenger`
 
 ```console
-$ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad911f90a35762a4
+$ docker pull redmine@sha256:8e63577763fe219c51a7864047f87649b4501bb88bf7b330c0e7dd5adbc1e162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8055,14 +8055,14 @@ $ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad9
 ### `redmine:3-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:14697081c450b3e3b3af1e750392d043154cec19a27fd0486546d0360bbbc839
+$ docker pull redmine@sha256:daa3503816638a1700b5b1a6c4ff9f1b0af44ba9fa1d36d9127d9d58e35a2f43
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.3 MB (279258083 bytes)**  
+-	Total Size: **279.3 MB (279265859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a584e5049a8066ba326c44ff2d6037813e33bfab7707c567078326cefcd4d95c`
+-	Image ID: `sha256:07ef5d71a6d6abde9c251dc77836e5f20b245f2e87f10035615b9510d63f09d9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -8133,13 +8133,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 05:03:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 05:18:02 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 05:18:21 GMT
+# Fri, 02 Mar 2018 21:57:16 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:57:50 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -8200,13 +8200,13 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 05:18:46 GMT  
 		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62703508501d32db02e7e141842db21ad3671f1c837ff013fa09c3f84cb4863d`  
-		Last Modified: Sun, 18 Feb 2018 05:20:16 GMT  
-		Size: 14.5 MB (14484009 bytes)  
+	-	`sha256:050fa1c498a9d3b77fe50ad020207839bfec9d394dbdcd1e29a19f506bdda3c0`  
+		Last Modified: Fri, 02 Mar 2018 21:59:54 GMT  
+		Size: 14.5 MB (14492033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa761fb57ee2b8e4bdd2370e71270247c374362ae5e9f02663ad11722944549`  
-		Last Modified: Sun, 18 Feb 2018 05:20:14 GMT  
-		Size: 4.4 MB (4354987 bytes)  
+	-	`sha256:a33240ba401f849c34b6fa458e212e8d62082a5d659cae3b0ca9c377fa0dc6a2`  
+		Last Modified: Fri, 02 Mar 2018 21:59:53 GMT  
+		Size: 4.4 MB (4354739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redmine:latest`
@@ -9215,7 +9215,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad911f90a35762a4
+$ docker pull redmine@sha256:8e63577763fe219c51a7864047f87649b4501bb88bf7b330c0e7dd5adbc1e162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9225,14 +9225,14 @@ $ docker pull redmine@sha256:2cbf4c9f29a8ea71997474008ad7d9d64d03bb1289ca9229ad9
 ### `redmine:passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:14697081c450b3e3b3af1e750392d043154cec19a27fd0486546d0360bbbc839
+$ docker pull redmine@sha256:daa3503816638a1700b5b1a6c4ff9f1b0af44ba9fa1d36d9127d9d58e35a2f43
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.3 MB (279258083 bytes)**  
+-	Total Size: **279.3 MB (279265859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a584e5049a8066ba326c44ff2d6037813e33bfab7707c567078326cefcd4d95c`
+-	Image ID: `sha256:07ef5d71a6d6abde9c251dc77836e5f20b245f2e87f10035615b9510d63f09d9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -9303,13 +9303,13 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 3000/tcp
 # Sun, 18 Feb 2018 05:03:01 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Sun, 18 Feb 2018 05:18:02 GMT
-ENV PASSENGER_VERSION=5.2.0
-# Sun, 18 Feb 2018 05:18:21 GMT
+# Fri, 02 Mar 2018 21:57:16 GMT
+ENV PASSENGER_VERSION=5.2.1
+# Fri, 02 Mar 2018 21:57:50 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Sun, 18 Feb 2018 05:18:23 GMT
+# Fri, 02 Mar 2018 21:57:51 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -9370,11 +9370,11 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 18 Feb 2018 05:18:46 GMT  
 		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62703508501d32db02e7e141842db21ad3671f1c837ff013fa09c3f84cb4863d`  
-		Last Modified: Sun, 18 Feb 2018 05:20:16 GMT  
-		Size: 14.5 MB (14484009 bytes)  
+	-	`sha256:050fa1c498a9d3b77fe50ad020207839bfec9d394dbdcd1e29a19f506bdda3c0`  
+		Last Modified: Fri, 02 Mar 2018 21:59:54 GMT  
+		Size: 14.5 MB (14492033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa761fb57ee2b8e4bdd2370e71270247c374362ae5e9f02663ad11722944549`  
-		Last Modified: Sun, 18 Feb 2018 05:20:14 GMT  
-		Size: 4.4 MB (4354987 bytes)  
+	-	`sha256:a33240ba401f849c34b6fa458e212e8d62082a5d659cae3b0ca9c377fa0dc6a2`  
+		Last Modified: Fri, 02 Mar 2018 21:59:53 GMT  
+		Size: 4.4 MB (4354739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
