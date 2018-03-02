@@ -683,20 +683,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.dsc' gnupg2_2.2.4-3.dsc 2885 SHA256:e8fb508a526d1c0ba88c29975ec09fd7b28708f1af93def38bf3caba21b7589c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.debian.tar.bz2' gnupg2_2.2.4-3.debian.tar.bz2 71771 SHA256:aff6757f4ebd3dcb5d18d1762818af0ad101b8ed1e4ffcb694de627d830ae90a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.4-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.4-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.17-1`
 
@@ -1604,21 +1597,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-4.dsc' perl_5.26.1-4.dsc 2658 SHA256:5fdc9194b269fae0a6bc83c96eb903c9dca0b963c3fda64d34af62b3b9c3e2d3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-4.debian.tar.xz' perl_5.26.1-4.debian.tar.xz 160776 SHA256:f255b1870616cd98e726dabc4aadc830f4b42cbccb1403139718b2f54d5fac04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.1-4/
 
-- https://sources.debian.net/src/perl/5.26.1-4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
