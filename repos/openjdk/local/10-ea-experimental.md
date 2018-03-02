@@ -918,19 +918,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.65
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.dsc' debconf_1.5.65.dsc 2072 SHA256:22264a2eac5f08278151db18270ab9d62e81c0a5517799f9934f34bc3a7f7162
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.tar.xz' debconf_1.5.65.tar.xz 571760 SHA256:4e20e7469819e399629811b7fcc9b867f9ee7ea4d8a2a04d18b30e3a1a7cf8df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.65/
 
-- https://sources.debian.net/src/debconf/1.5.65/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.65/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.65/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -1383,20 +1377,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.16.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1-1.dsc' git_2.16.1-1.dsc 2854 SHA256:1f76116de19c88d1625e9512103a54680b6aaccf70004b1e8bddd13ac1080d39
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1.orig.tar.xz' git_2.16.1.orig.tar.xz 4961656 SHA256:cfad4337f2fdbfc1e2c8abce5e17e1dd4e1718a34ac2cbe3238fbe2426f2ea19
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1-1.debian.tar.xz' git_2.16.1-1.debian.tar.xz 560712 SHA256:aab6d7e14da00ec21693b2cc38dd1d4b8cbc187f9c17f996f5d0e8dd4efdaed0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.16.1-1/
 
-- https://sources.debian.net/src/git/1:2.16.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.16.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.16.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib-networking=2.54.1-2`
 
@@ -1590,6 +1577,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.5.17-1/
 
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
@@ -5096,20 +5087,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237-3.dsc' systemd_237-3.dsc 4846 SHA256:f5c745d185aba0f1af3a65186d75eafd0f8bead91af3056ed4ecf95a37a0ef4f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237-3.debian.tar.xz' systemd_237-3.debian.tar.xz 134712 SHA256:b509fd6228ef8864653db573ccbe0094ea99e4a07295bbdf7c5fc8b505ba38c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/237-3/
 
-- https://sources.debian.net/src/systemd/237-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/237-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/237-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
