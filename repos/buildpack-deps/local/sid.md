@@ -766,19 +766,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.65
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.dsc' debconf_1.5.65.dsc 2072 SHA256:22264a2eac5f08278151db18270ab9d62e81c0a5517799f9934f34bc3a7f7162
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.tar.xz' debconf_1.5.65.tar.xz 571760 SHA256:4e20e7469819e399629811b7fcc9b867f9ee7ea4d8a2a04d18b30e3a1a7cf8df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.65/
 
-- https://sources.debian.net/src/debconf/1.5.65/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.65/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.65/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -1414,20 +1408,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.16.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1-1.dsc' git_2.16.1-1.dsc 2854 SHA256:1f76116de19c88d1625e9512103a54680b6aaccf70004b1e8bddd13ac1080d39
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1.orig.tar.xz' git_2.16.1.orig.tar.xz 4961656 SHA256:cfad4337f2fdbfc1e2c8abce5e17e1dd4e1718a34ac2cbe3238fbe2426f2ea19
-'http://deb.debian.org/debian/pool/main/g/git/git_2.16.1-1.debian.tar.xz' git_2.16.1-1.debian.tar.xz 560712 SHA256:aab6d7e14da00ec21693b2cc38dd1d4b8cbc187f9c17f996f5d0e8dd4efdaed0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.16.1-1/
 
-- https://sources.debian.net/src/git/1:2.16.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.16.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.16.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.3-2`
 
@@ -4778,20 +4765,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.2-1.dsc' postgresql-10_10.2-1.dsc 3474 SHA256:b91226ffd94639ba013cf46fa7d205b1d30c103066da8100c9db8018bf10227f
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.2.orig.tar.bz2' postgresql-10_10.2.orig.tar.bz2 19901836 SHA256:fe32009b62ddb97f7f014307ce9d0edb6972f5a698e63cb531088e147d145bad
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.2-1.debian.tar.xz' postgresql-10_10.2-1.debian.tar.xz 21944 SHA256:ea39edbbdc16ec8053f6a378b56e7137ebdd332bd6575d009323ed498991d48d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-10/10.2-1/
 
-- https://sources.debian.net/src/postgresql-10/10.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-10/10.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-10/10.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.12-4`
 

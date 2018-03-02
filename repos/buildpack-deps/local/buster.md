@@ -73,21 +73,13 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-1.dsc' apr-util_1.6.1-1.dsc 2865 SHA256:4c9f454e9750b5acda7e8959700b725a0f6256d7da0cb54ae6d5a4b61aac8deb
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2.asc' apr-util_1.6.1.orig.tar.bz2.asc 801 SHA256:47837b605290c0d7659b73734e4a9d5e6c0c24c13185cd4d91837afe63c07ca4
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-1.debian.tar.xz' apr-util_1.6.1-1.debian.tar.xz 210872 SHA256:5d0446d5832a62d6428ff408c571ff693f2aba604b2606c8f2463b2a6d8ae217
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr-util/1.6.1-1/
 
-- https://sources.debian.net/src/apr-util/1.6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.6.3-1`
 
@@ -303,19 +295,13 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20171216.1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20171216.1.dsc' autotools-dev_20171216.1.dsc 1655 SHA256:79c644f3d06efd476083f8c68b2b23f4fd1c12b85d8816d6d029683e12ed93d3
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20171216.1.tar.xz' autotools-dev_20171216.1.tar.xz 67188 SHA256:c5327639b386eceeb84709b826e625d80c0a7255f9344ff39104297f21d6ecd3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autotools-dev/20171216.1/
 
-- https://sources.debian.net/src/autotools-dev/20171216.1/ (for browsing the source)
-- https://sources.debian.net/src/autotools-dev/20171216.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autotools-dev/20171216.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.7-3`
 
@@ -976,21 +962,9 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.9-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9-1.dsc' e2fsprogs_1.43.9-1.dsc 2616 SHA256:a4601c5bfcc9604a868e4d88ba3a47ed9dc64d7aa8753a47610144e3f5f252aa
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9.orig.tar.gz' e2fsprogs_1.43.9.orig.tar.gz 7485521 SHA256:5be0ffc01b9720a3f3ccfc86396016baf1334b98751fefa09e0c63eaffdc3897
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9.orig.tar.gz.asc' e2fsprogs_1.43.9.orig.tar.gz.asc 488 SHA256:b600c45ad079d3fa91fbfff4af7b8bfe35d7d57e384d6e2741877fb82ae60672
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9-1.debian.tar.xz' e2fsprogs_1.43.9-1.debian.tar.xz 76060 SHA256:d110cda310b3574287443e63648901e1cd281b21464a76d3869a416c80e2c7ba
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/e2fsprogs/1.43.9-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.43.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.43.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -1612,20 +1586,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.dsc' gnupg2_2.2.4-3.dsc 2885 SHA256:e8fb508a526d1c0ba88c29975ec09fd7b28708f1af93def38bf3caba21b7589c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.4-3.debian.tar.bz2' gnupg2_2.2.4-3.debian.tar.bz2 71771 SHA256:aff6757f4ebd3dcb5d18d1762818af0ad101b8ed1e4ffcb694de627d830ae90a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.4-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.4-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.17-1`
 
@@ -2877,20 +2844,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.19.1-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.dsc' libpsl_0.19.1-4.dsc 2205 SHA256:c782695b32092fbe38f5e11228e0efcd41c0260ac5b5a503fe0b59ba40b86e7e
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.debian.tar.xz' libpsl_0.19.1-4.debian.tar.xz 9444 SHA256:f289b1ef5e33dc96c64edb384f597f7ddd74f1f0e7e8091155c62bd451ea1fc2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.19.1-4/
 
-- https://sources.debian.net/src/libpsl/0.19.1-4/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -3270,20 +3230,13 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.6.0-4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.0-4.dsc' libwebp_0.6.0-4.dsc 2014 SHA256:74a2c81782e16ffbe7ce4656bc2af013c44aff62d752f154e1cc35e5d3ae3234
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.0.orig.tar.gz' libwebp_0.6.0.orig.tar.gz 1302881 SHA256:c928119229d4f8f35e20113ffb61f281eda267634a8dc2285af4b0ee27cf2b40
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.0-4.debian.tar.xz' libwebp_0.6.0-4.debian.tar.xz 6228 SHA256:13e9434d5f83df4440b451422e2b0c8b3e94c7935be49ead4d71462fa64d961e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwebp/0.6.0-4/
 
-- https://sources.debian.net/src/libwebp/0.6.0-4/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/0.6.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/0.6.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwmf=0.2.8.4-12`
 
@@ -4672,21 +4625,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-4.dsc' perl_5.26.1-4.dsc 2658 SHA256:5fdc9194b269fae0a6bc83c96eb903c9dca0b963c3fda64d34af62b3b9c3e2d3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-4.debian.tar.xz' perl_5.26.1-4.debian.tar.xz 160776 SHA256:f255b1870616cd98e726dabc4aadc830f4b42cbccb1403139718b2f54d5fac04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.1-4/
 
-- https://sources.debian.net/src/perl/5.26.1-4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -5216,10 +5161,6 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/236-3/
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
