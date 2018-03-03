@@ -1,10 +1,10 @@
-# `groovy:2.4.13-jre8`
+# `groovy:2.4.14-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a4a7cbb61409bda72c4e3097b11d98297b96be9461da151ae1727d407631eca`
-- Created: `2018-02-15T17:49:39.640521245Z`
-- Virtual Size: ~ 578.99 Mb  
+- Image ID: `sha256:87ab2a37798961db077165dc3c91e10d2a4106d688e6c214e62cf0110397cd85`
+- Created: `2018-03-03T01:35:14.851643246Z`
+- Virtual Size: ~ 579.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -16,7 +16,7 @@
   - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.13`
+  - `GROOVY_VERSION=2.4.14`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `groovy:2.4.13-jdk8`
+# `groovy:2.4.14-jdk8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:db0512c019b101505013c0ec0dfcbf4a684560a030ae4cc4eadfddd79c6e1857`
-- Created: `2018-02-15T17:49:08.694937859Z`
-- Virtual Size: ~ 778.50 Mb  
+- Image ID: `sha256:89221fd29b7badd4861251d9a691362eb585068a9fa1293c4945ece4fe37a3da`
+- Created: `2018-03-03T01:34:43.975153793Z`
+- Virtual Size: ~ 779.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -16,7 +16,7 @@
   - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.13`
+  - `GROOVY_VERSION=2.4.14`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5000,6 +5000,10 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-3/
 
 
 ### `dpkg` source package: `sgml-base=1.29`

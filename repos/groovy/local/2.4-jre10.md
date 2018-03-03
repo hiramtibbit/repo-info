@@ -1,10 +1,10 @@
-# `groovy:2.4.13-jre10`
+# `groovy:2.4.14-jre10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f98d035d5c4f4ac45832736bc79596a9d92a48c5a0b04adff53e7360bc88519`
-- Created: `2018-02-15T17:52:10.478200013Z`
-- Virtual Size: ~ 697.39 Mb  
+- Image ID: `sha256:e4205a7d021074ebfe2bf516c0eb60a2c9b188e0026e82d122caca76a02109f6`
+- Created: `2018-03-03T01:38:55.612763434Z`
+- Virtual Size: ~ 698.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10-ea+32`
   - `JAVA_DEBIAN_VERSION=10~32-1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.13`
+  - `GROOVY_VERSION=2.4.14`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -813,21 +813,13 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-us
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.4-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4-1.dsc' dbus_1.12.4-1.dsc 3669 SHA256:0d1d346301cac23f26ba5fe6d733fcbd97f7afbd162418be5f4f9fe850677afd
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4.orig.tar.gz' dbus_1.12.4.orig.tar.gz 2067402 SHA256:f9756b68ec68065ae2dafcf1191ee40b4cb06e9534a01f6a74d5a4d7894221c7
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4.orig.tar.gz.asc' dbus_1.12.4.orig.tar.gz.asc 833 SHA256:d777b1f1dff2963562bcd192535d356a97c245e188bb3984cb6dea69d046b86b
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4-1.debian.tar.xz' dbus_1.12.4-1.debian.tar.xz 59908 SHA256:62b7027790c6a3dfa4909f677b7dc503e1fb9016dee2d8a2238d7fd04520a96a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.4-1/
 
-- https://sources.debian.net/src/dbus/1.12.4-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dconf=0.26.1-3`
 
@@ -867,19 +859,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.65
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.dsc' debconf_1.5.65.dsc 2072 SHA256:22264a2eac5f08278151db18270ab9d62e81c0a5517799f9934f34bc3a7f7162
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.tar.xz' debconf_1.5.65.tar.xz 571760 SHA256:4e20e7469819e399629811b7fcc9b867f9ee7ea4d8a2a04d18b30e3a1a7cf8df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.65/
 
-- https://sources.debian.net/src/debconf/1.5.65/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.65/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.65/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -1393,11 +1379,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.4-3`
+### `dpkg` source package: `gnupg2=2.2.5-1`
 
 Binary Packages:
 
-- `gpgv=2.2.4-3`
+- `gpgv=2.2.5-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1413,13 +1399,21 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.5-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5-1.dsc' gnupg2_2.2.5-1.dsc 3129 SHA256:b2be9d0e45ea8d69ac44e4933d64b6254347fd80d6b53b502b39868e42a334c7
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5.orig.tar.bz2' gnupg2_2.2.5.orig.tar.bz2 6584756 SHA256:3fa189a32d4fb62147874eb1389047c267d9ba088f57ab521cb0df46f08aef57
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5.orig.tar.bz2.asc' gnupg2_2.2.5.orig.tar.bz2.asc 534 SHA256:4ca4c01f569155cc87ae4ad391cb5f0144637b5716d883fb137c4d4f07909471
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5-1.debian.tar.bz2' gnupg2_2.2.5-1.debian.tar.bz2 65573 SHA256:092122129bee360920fcc6c823668dadbf63001e28d4dbece0442e256c94fd6f
+```
 
-- http://snapshot.debian.org/package/gnupg2/2.2.4-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnupg2/2.2.5-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.5-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.17-1`
 
@@ -4568,20 +4562,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237-3.dsc' systemd_237-3.dsc 4846 SHA256:f5c745d185aba0f1af3a65186d75eafd0f8bead91af3056ed4ecf95a37a0ef4f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_237-3.debian.tar.xz' systemd_237-3.debian.tar.xz 134712 SHA256:b509fd6228ef8864653db573ccbe0094ea99e4a07295bbdf7c5fc8b505ba38c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/237-3/
 
-- https://sources.debian.net/src/systemd/237-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/237-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/237-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
