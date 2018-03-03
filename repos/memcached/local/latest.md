@@ -1,18 +1,18 @@
-# `memcached:1.5.5`
+# `memcached:1.5.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a7e8440a999a786c6b7c5f3ef8fb5bc621cbcca373c1fa137bf81bf8eecaaa0`
-- Created: `2018-02-17T08:37:43.023055591Z`
-- Virtual Size: ~ 58.64 Mb  
+- Image ID: `sha256:e4aa3d5e67a3a5072cf1898150e573e03784abd405af599d531ffaee53830c41`
+- Created: `2018-03-03T01:15:35.412741897Z`
+- Virtual Size: ~ 60.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.5.5`
-  - `MEMCACHED_SHA1=975a5ba57bfc8331bbc3d8f92da969f35a7acf1b`
+  - `MEMCACHED_VERSION=1.5.6`
+  - `MEMCACHED_SHA1=ca35929e74b132c2495a6957cfdc80556337fb90`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -553,13 +553,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.6.0+git+20161106-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-6=6.3.0-18`
+### `dpkg` source package: `gcc-6=6.3.0-18+deb9u1`
 
 Binary Packages:
 
-- `gcc-6-base:amd64=6.3.0-18`
-- `libgcc1:amd64=1:6.3.0-18`
-- `libstdc++6:amd64=6.3.0-18`
+- `gcc-6-base:amd64=6.3.0-18+deb9u1`
+- `libgcc1:amd64=1:6.3.0-18+deb9u1`
+- `libstdc++6:amd64=6.3.0-18+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -572,17 +572,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-18
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.dsc' gcc-6_6.3.0-18.dsc 27145 SHA256:faa23e7b7ce387d19532df421d8538218f973075c3b92b37f95811d7677ae80e
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.diff.gz' gcc-6_6.3.0-18.diff.gz 2045830 SHA256:7e76d64b79c0b6bed356ae752a2017746d4b069bc78624da0c94b8169f1f51cc
+$ apt-get source -qq --print-uris gcc-6=6.3.0-18+deb9u1
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.dsc' gcc-6_6.3.0-18+deb9u1.dsc 27148 SHA256:8145f139255d35dac4c922321cb98ba11a73296a886a76563a5eef309e1d5bec
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.diff.gz' gcc-6_6.3.0-18+deb9u1.diff.gz 2075943 SHA256:8c705553bf211e064f3270e51e81a6b2a0bf122f39f7c98ce7f2fbdfd9fa9564
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-6/6.3.0-18/ (for browsing the source)
-- https://sources.debian.net/src/gcc-6/6.3.0-18/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-6/6.3.0-18/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-6/6.3.0-18+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-6/6.3.0-18+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-6/6.3.0-18+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.24-11+deb9u1`
 
