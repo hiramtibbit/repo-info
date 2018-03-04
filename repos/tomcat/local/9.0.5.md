@@ -4924,19 +4924,13 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.14.0-1
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.14.0-1.dsc' wayland_1.14.0-1.dsc 2137 SHA256:813d6a76c349e7d8c433796780a2f3f40f497f156c12c75abf7229a1cad01ce6
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.14.0-1.tar.gz' wayland_1.14.0-1.tar.gz 301058 SHA256:6f9c271be148497e8baff515d7112d4584ed38f01812687fb4f830b8ee69019a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wayland/1.14.0-1/
 
-- https://sources.debian.net/src/wayland/1.14.0-1/ (for browsing the source)
-- https://sources.debian.net/src/wayland/1.14.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wayland/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
