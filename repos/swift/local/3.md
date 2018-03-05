@@ -1099,14 +1099,9 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.3.3-5ubuntu12.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.7.dsc' isc-dhcp_4.3.3-5ubuntu12.7.dsc 2441 SHA256:0a412a39a9132ace653b8178805b9566aea9c7ec5937f0066b33a9b068149761
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3.orig.tar.gz' isc-dhcp_4.3.3.orig.tar.gz 1094938 SHA256:13d2bbc4536dfb2cd8f0fb0ac33a4bc7acec7ac013eb82ff44597de191b97dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.7.debian.tar.xz' isc-dhcp_4.3.3-5ubuntu12.7.debian.tar.xz 112096 SHA256:eef354b6690180e61f19796dfd04d1abdfbfd5c39e1f3501974b0384a95cfd9d
-```
 
 ### `dpkg` source package: `isl=0.16.1-1`
 
