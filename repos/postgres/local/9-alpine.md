@@ -1,10 +1,10 @@
-# `postgres:9.6.7-alpine`
+# `postgres:9.6.8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:613fcd71a3c8242c70e8eac911e9cfab7828d086cb03fcce0de4f356db691f58`
-- Created: `2018-02-09T00:02:11.847163945Z`
-- Virtual Size: ~ 37.86 Mb  
+- Image ID: `sha256:b27674feae2a60aa84cc7ddfd13d666dc3b8089cca7177f93394dea006d7787f`
+- Created: `2018-03-02T22:11:40.791114111Z`
+- Virtual Size: ~ 37.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,6 +13,6 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=9.6`
-  - `PG_VERSION=9.6.7`
-  - `PG_SHA256=2ebe3df3c1d1eab78023bdc3ffa55a154aa84300416b075ef996598d78a624c6`
+  - `PG_VERSION=9.6.8`
+  - `PG_SHA256=eafdb3b912e9ec34bdd28b651d00226a6253ba65036cb9a41cad2d9e82e3eb70`
   - `PGDATA=/var/lib/postgresql/data`
