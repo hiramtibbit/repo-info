@@ -703,14 +703,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu3.dsc' libseccomp_2.3.1-2.1ubuntu3.dsc 2248 SHA256:ddc380e7904869ec534851d4f14e2627be77d9230882a09832f9a59e74d08ddf
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu3.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu3.debian.tar.xz 17312 SHA256:67e68066e9b3971fbf063cbafe3a339c50086253e8f5d87e7b9ed9c65d09e35c
-```
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
