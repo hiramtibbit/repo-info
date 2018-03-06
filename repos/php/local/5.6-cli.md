@@ -1,9 +1,9 @@
-# `php:5.6.33-cli-jessie`
+# `php:5.6.34-cli-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a256f96528caa278cd9f057a057e0ed90b0cfe10ba18b1927ab586211a3b22b4`
-- Created: `2018-02-17T02:53:21.418653795Z`
+- Image ID: `sha256:3265278bdc21b115ef09cb8ee34067ffa37fc17039977b48f7cc740a70dce108`
+- Created: `2018-03-05T23:22:56.698238231Z`
 - Virtual Size: ~ 355.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.33`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.33.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.33.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=9004995fdf55f111cd9020e8b8aff975df3d8d4191776c601a46988c375f3553`
+  - `PHP_VERSION=5.6.34`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.34.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.34.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=21453be3a045204cd2717543ef42771324f411f40962ecda4fe841930a933128`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
