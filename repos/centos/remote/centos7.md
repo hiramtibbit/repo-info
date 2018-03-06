@@ -1,7 +1,7 @@
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:5bfbcce576f4c0694e2b81df4ded44107d80b02689cbe29a6d01f990c11ec0d2
+$ docker pull centos@sha256:dcbc4e5e7052ea2306eed59563da1fec09196f2ecacbe042acbdcd2b44b05270
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -70,29 +70,29 @@ CMD ["/bin/bash"]
 ### `centos:centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull centos@sha256:77b9ced9d4996732f57d098d172d14cad943eac7a9594b091997e07d6a8469b7
+$ docker pull centos@sha256:e71c641f70e51f2179669d076acf5bfc683cb590e3acd01446a4bd385e9a135e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.5 MB (73473778 bytes)**  
+-	Total Size: **73.4 MB (73354917 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:252f40a2e842ec04ef908b188c1b4ab6c688c2832b5dacf11b7f39e4d22e9650`
+-	Image ID: `sha256:a96d5dff088e7b75c4b8fb2e849c6f6fbb2323f6d1109dca4fefdfb9d99b5920`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 08 Jan 2018 20:32:08 GMT
-ADD file:b68d3a68915b721c6469f363505f8af9ae52080fca627b4cf6bf0cd16aaefcf0 in / 
-# Mon, 08 Jan 2018 20:32:09 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180107
-# Mon, 08 Jan 2018 20:32:09 GMT
+# Tue, 06 Mar 2018 20:32:07 GMT
+ADD file:2d66aa20c88dd89aefd094dc183381839eb19c3ee9fbdf843b00b68915b225fa in / 
+# Tue, 06 Mar 2018 20:32:08 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180302
+# Tue, 06 Mar 2018 20:32:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:40c388956b41d956ab7fbccfce5f9b8a5a376801060b542cbcd3b5c19d69464e`  
-		Last Modified: Mon, 08 Jan 2018 00:49:55 GMT  
-		Size: 73.5 MB (73473778 bytes)  
+	-	`sha256:9cc3ac5ecc9b2fb389ba58293467f8beae2b7db88c139ae01fad3db82077725c`  
+		Last Modified: Tue, 06 Mar 2018 20:32:57 GMT  
+		Size: 73.4 MB (73354917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:centos7` - linux; ppc64le
