@@ -1906,20 +1906,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.30.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0-1.dsc' nghttp2_1.30.0-1.dsc 2254 SHA256:ccb37154c9b4da51ab965bd639647a85633e2f424bf6e76ce579d1cc55960374
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0.orig.tar.bz2' nghttp2_1.30.0.orig.tar.bz2 1839714 SHA256:f66918dd03773f4847da1d069295c758ce478cbd1fe58298a37d65e1dce056d8
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0-1.debian.tar.xz' nghttp2_1.30.0-1.debian.tar.xz 12352 SHA256:f28e53cdc9385247c825fd8bfc0703aef0b67d2ff43352d9583c3ce5c5c31eac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.30.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-3`
 
@@ -2510,20 +2503,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-3
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.dsc' subversion_1.9.7-3.dsc 3037 SHA256:e9aea254aab1cfc8eec2156f5a3b37e47c90606e6b02f7d896faed6004d08f86
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.debian.tar.xz' subversion_1.9.7-3.debian.tar.xz 2264408 SHA256:eee444a4701d8d5538c5b49584e1671e5a9930f1fa54714ade1b0798c83c8faa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.9.7-3/
 
-- https://sources.debian.net/src/subversion/1.9.7-3/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.9.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.9.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=237-2`
 

@@ -367,14 +367,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.15.8-3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8-3.dsc' cairo_1.15.8-3.dsc 2852 SHA256:c8565598d33dd48a9aad77314dcae1654d729e2d825238e42dfc6fa1b523a9e0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8.orig.tar.xz' cairo_1.15.8.orig.tar.xz 41841808 SHA256:3224260a4f8e22e7ea95faf706ae111b974833dd74185be1db5ebc7618a98464
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8-3.debian.tar.xz' cairo_1.15.8-3.debian.tar.xz 29304 SHA256:8383c05d7a15bc62456107a997a9e365ea8e73ea2499702f085faa711db1878d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.15.8-3/
+
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -2046,6 +2045,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.40.18-2/
+
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu3`
 
@@ -2075,6 +2078,10 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/2.7-2/
 
 
 ### `dpkg` source package: `libsemanage=2.7-2`
@@ -3485,6 +3492,10 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.21.0-1/
 
 
 ### `dpkg` source package: `subversion=1.9.7-3ubuntu1`
