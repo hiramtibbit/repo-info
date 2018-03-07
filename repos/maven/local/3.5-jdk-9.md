@@ -867,21 +867,13 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-us
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.4-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4-1.dsc' dbus_1.12.4-1.dsc 3669 SHA256:0d1d346301cac23f26ba5fe6d733fcbd97f7afbd162418be5f4f9fe850677afd
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4.orig.tar.gz' dbus_1.12.4.orig.tar.gz 2067402 SHA256:f9756b68ec68065ae2dafcf1191ee40b4cb06e9534a01f6a74d5a4d7894221c7
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4.orig.tar.gz.asc' dbus_1.12.4.orig.tar.gz.asc 833 SHA256:d777b1f1dff2963562bcd192535d356a97c245e188bb3984cb6dea69d046b86b
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.4-1.debian.tar.xz' dbus_1.12.4-1.debian.tar.xz 59908 SHA256:62b7027790c6a3dfa4909f677b7dc503e1fb9016dee2d8a2238d7fd04520a96a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.4-1/
 
-- https://sources.debian.net/src/dbus/1.12.4-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dconf=0.26.1-3`
 
@@ -4239,20 +4231,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.30.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0-1.dsc' nghttp2_1.30.0-1.dsc 2254 SHA256:ccb37154c9b4da51ab965bd639647a85633e2f424bf6e76ce579d1cc55960374
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0.orig.tar.bz2' nghttp2_1.30.0.orig.tar.bz2 1839714 SHA256:f66918dd03773f4847da1d069295c758ce478cbd1fe58298a37d65e1dce056d8
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.30.0-1.debian.tar.xz' nghttp2_1.30.0-1.debian.tar.xz 12352 SHA256:f28e53cdc9385247c825fd8bfc0703aef0b67d2ff43352d9583c3ce5c5c31eac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.30.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-3`
 
@@ -5031,20 +5016,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-3
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.dsc' subversion_1.9.7-3.dsc 3037 SHA256:e9aea254aab1cfc8eec2156f5a3b37e47c90606e6b02f7d896faed6004d08f86
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.debian.tar.xz' subversion_1.9.7-3.debian.tar.xz 2264408 SHA256:eee444a4701d8d5538c5b49584e1671e5a9930f1fa54714ade1b0798c83c8faa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.9.7-3/
 
-- https://sources.debian.net/src/subversion/1.9.7-3/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.9.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.9.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=237-2`
 
@@ -5296,19 +5274,13 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.14.0-1
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.14.0-1.dsc' wayland_1.14.0-1.dsc 2137 SHA256:813d6a76c349e7d8c433796780a2f3f40f497f156c12c75abf7229a1cad01ce6
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.14.0-1.tar.gz' wayland_1.14.0-1.tar.gz 301058 SHA256:6f9c271be148497e8baff515d7112d4584ed38f01812687fb4f830b8ee69019a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wayland/1.14.0-1/
 
-- https://sources.debian.net/src/wayland/1.14.0-1/ (for browsing the source)
-- https://sources.debian.net/src/wayland/1.14.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wayland/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
