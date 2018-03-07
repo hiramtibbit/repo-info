@@ -1,7 +1,7 @@
 ## `mongo-express:latest`
 
 ```console
-$ docker pull mongo-express@sha256:ef1dc2c49eeba9ae1d4ed629d32b274cfc434e996e6afaf1db80124536d72cfa
+$ docker pull mongo-express@sha256:fd840ec37136435c9ace29a2da06900eb73b1a24f3d97d5565036fda156f0020
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull mongo-express@sha256:ef1dc2c49eeba9ae1d4ed629d32b274cfc434e996e6af
 ### `mongo-express:latest` - linux; amd64
 
 ```console
-$ docker pull mongo-express@sha256:f49c80f2721f50ad4299136ba40d27dca090391319009dc05b33f4b59049455e
+$ docker pull mongo-express@sha256:41b4fadd9dadfc279278618a21e8de70ff5ec834ae20e9fc8422fdb99b005499
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.4 MB (101375731 bytes)**  
+-	Total Size: **101.4 MB (101391200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b24e5d85307ef5bb7082e27a28dc19ca553a0bf023d10fccbe9be08e7411048`
+-	Image ID: `sha256:0840d158cdadf4b1fec8e01e6acfdce98e17b80f1235c71a785d88d5e23d1512`
 -	Default Command: `["tini","--","node","app"]`
 
 ```dockerfile
@@ -52,15 +52,15 @@ RUN set -x 	&& apt-get update && apt-get install -y ca-certificates curl 		--no-
 EXPOSE 8081/tcp
 # Fri, 23 Feb 2018 01:52:17 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 23 Feb 2018 01:52:17 GMT
-ENV MONGO_EXPRESS=0.44.0
-# Fri, 23 Feb 2018 01:52:29 GMT
+# Wed, 07 Mar 2018 06:42:38 GMT
+ENV MONGO_EXPRESS=0.45.0
+# Wed, 07 Mar 2018 06:42:51 GMT
 RUN npm install mongo-express@$MONGO_EXPRESS
-# Fri, 23 Feb 2018 01:52:30 GMT
+# Wed, 07 Mar 2018 06:42:51 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 23 Feb 2018 01:52:31 GMT
+# Wed, 07 Mar 2018 06:42:52 GMT
 RUN cp config.default.js config.js
-# Fri, 23 Feb 2018 01:52:31 GMT
+# Wed, 07 Mar 2018 06:42:53 GMT
 CMD ["tini" "--" "node" "app"]
 ```
 
@@ -93,11 +93,11 @@ CMD ["tini" "--" "node" "app"]
 		Last Modified: Fri, 23 Feb 2018 01:52:54 GMT  
 		Size: 534.2 KB (534187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c3000d099acd2bc7a8201bb8e449a343df2cfb2a020cee614c9f8e9785dd87`  
-		Last Modified: Fri, 23 Feb 2018 01:52:54 GMT  
-		Size: 9.0 MB (9022220 bytes)  
+	-	`sha256:cd86317f7c3df54695735435a87e6c011df2e4912112dde793fd5af0459771b3`  
+		Last Modified: Wed, 07 Mar 2018 06:44:24 GMT  
+		Size: 9.0 MB (9037690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0469dffac9aafd6f240ebeac8f4d686a6d0d054c4b515e3884b11ff49c650a0`  
-		Last Modified: Fri, 23 Feb 2018 01:52:52 GMT  
-		Size: 2.8 KB (2758 bytes)  
+	-	`sha256:2a4de50435a11bf4aeb9207b94d85c9bd050a88b93e1dfc9c34aa6cedb815354`  
+		Last Modified: Wed, 07 Mar 2018 06:44:22 GMT  
+		Size: 2.8 KB (2757 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
