@@ -81,10 +81,6 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/1.6~alpha7/
-
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -603,19 +599,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.65
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.dsc' debconf_1.5.65.dsc 2072 SHA256:22264a2eac5f08278151db18270ab9d62e81c0a5517799f9934f34bc3a7f7162
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.65.tar.xz' debconf_1.5.65.tar.xz 571760 SHA256:4e20e7469819e399629811b7fcc9b867f9ee7ea4d8a2a04d18b30e3a1a7cf8df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.65/
 
-- https://sources.debian.net/src/debconf/1.5.65/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.65/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.65/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -3938,20 +3928,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xdg-utils=1.1.2-1
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.2-1.dsc' xdg-utils_1.1.2-1.dsc 2067 SHA256:8af1f4318c2aff472f66898090ce41adcadcd322d5959860ef327a169d6550da
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.2.orig.tar.gz' xdg-utils_1.1.2.orig.tar.gz 296735 SHA256:951952e2c6bb21214e0bb54e0dffa057d30f5563300225c24c16fba846258bcc
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.2-1.debian.tar.xz' xdg-utils_1.1.2-1.debian.tar.xz 9320 SHA256:6400b5c6282f75bda25a1ecdb84efeebb3e34bd9413af6e4baf4a430d0d6658a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xdg-utils/1.1.2-1/
 
-- https://sources.debian.net/src/xdg-utils/1.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/xdg-utils/1.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xdg-utils/1.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xft=2.3.2-1`
 
