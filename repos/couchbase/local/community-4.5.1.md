@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:05462f9efb47be8bedc21e2ed4be1032656b7fe6249e9e0aebcaa4b6b6866883`
-- Created: `2018-02-19T21:40:21.134912705Z`
-- Virtual Size: ~ 594.90 Mb  
+- Image ID: `sha256:128fe1da8795654993c98222f4a4deca9ae6e7e85e559664ccb9da88c6d618cb`
+- Created: `2018-03-06T23:43:28.792358336Z`
+- Virtual Size: ~ 595.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -694,12 +694,12 @@ $ apt-get source -qq --print-uris fribidi=0.19.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_0.19.6-1.debian.tar.gz' fribidi_0.19.6-1.debian.tar.gz 7679 SHA256:a9e91880a3176b52d4e7cabf628e5df3820d8f07b0c2731761d74c04711ddf39
 ```
 
-### `dpkg` source package: `gcc-4.8=4.8.4-2ubuntu1~14.04.3`
+### `dpkg` source package: `gcc-4.8=4.8.4-2ubuntu1~14.04.4`
 
 Binary Packages:
 
-- `gcc-4.8-base:amd64=4.8.4-2ubuntu1~14.04.3`
-- `libstdc++6:amd64=4.8.4-2ubuntu1~14.04.3`
+- `gcc-4.8-base:amd64=4.8.4-2ubuntu1~14.04.4`
+- `libstdc++6:amd64=4.8.4-2ubuntu1~14.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-4.8-base/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -709,9 +709,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.8-base/copyright`, `/usr/share/doc
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-4.8=4.8.4-2ubuntu1~14.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.4.dsc' gcc-4.8_4.8.4-2ubuntu1~14.04.4.dsc 13623 SHA256:1bf6664cbe277c0aa903cb32e32a9e8d72a4b10afaa7eeac2abb8ab7647768f1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4.orig.tar.gz' gcc-4.8_4.8.4.orig.tar.gz 66451474 SHA256:0a714dd7a8415cb134c79784ff8b0a30da6d76afb998c21f6e95e1060d65466c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-2ubuntu1~14.04.4.diff.gz' gcc-4.8_4.8.4-2ubuntu1~14.04.4.diff.gz 1132268 SHA256:105226398bd2860c62be6cfa1c2383ea523b0d1d396270f82c36a685a38b4396
+```
 
 ### `dpkg` source package: `gccgo-4.9=4.9.3-0ubuntu4`
 
@@ -970,20 +975,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.10`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.12`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.10`
-- `isc-dhcp-common=4.2.4-7ubuntu12.10`
+- `isc-dhcp-client=4.2.4-7ubuntu12.12`
+- `isc-dhcp-common=4.2.4-7ubuntu12.12`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.12
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -1497,11 +1507,11 @@ $ apt-get source -qq --print-uris libsepol=2.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.2-1ubuntu0.1.debian.tar.xz' libsepol_2.2-1ubuntu0.1.debian.tar.xz 12992 SHA256:5a901f01f3f03b110bee09ca0813f5e3afc308744778604004166869b08c5cc7
 ```
 
-### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.5`
+### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.6`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=3.4-3ubuntu0.5`
+- `libtasn1-6:amd64=3.4-3ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1510,9 +1520,14 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.6.dsc' libtasn1-6_3.4-3ubuntu0.6.dsc 2475 SHA256:44e853613e49d71866684eebd2e50963266887cd4efe3d1e8dec09c2d0af5533
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.6.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.6.debian.tar.gz 69281 SHA256:6af2857a8a76846ab490a450f47c3c5ba86b1530064e96b1ea881c960b6ffd45
+```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
@@ -2397,20 +2412,24 @@ $ apt-get source -qq --print-uris readline6=6.3-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline6/readline6_6.3-4ubuntu2.debian.tar.gz' readline6_6.3-4ubuntu2.debian.tar.gz 34930 SHA256:6c09f0f7fab4c4054931125a00d7ce44eac3477a9b59ecafb61adc02f7d6a2f7
 ```
 
-### `dpkg` source package: `resolvconf=1.69ubuntu1.3`
+### `dpkg` source package: `resolvconf=1.69ubuntu1.4`
 
 Binary Packages:
 
-- `resolvconf=1.69ubuntu1.3`
+- `resolvconf=1.69ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/resolvconf/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.4.dsc' resolvconf_1.69ubuntu1.4.dsc 1780 SHA256:6ad43579ef4186eae183a8b04478089761a89d1d6c01987af9bd29990608b46b
+'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.4.tar.xz' resolvconf_1.69ubuntu1.4.tar.xz 73248 SHA256:adb1db828ac022ca8c25ae7d2b3a07b02a48622aec0305a56f8e2e64c6935342
+```
 
 ### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
 
@@ -2474,11 +2493,11 @@ $ apt-get source -qq --print-uris sed=4.2.2-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2-4ubuntu1.debian.tar.gz' sed_4.2.2-4ubuntu1.debian.tar.gz 67028 SHA256:1bff5feacc7618a0b13008b0252d2af04039caa0f572a705e05ce58c8ddda4f7
 ```
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
@@ -2487,9 +2506,9 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+$ apt-get source -qq --print-uris sensible-utils=0.0.9ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9ubuntu0.14.04.1.dsc' sensible-utils_0.0.9ubuntu0.14.04.1.dsc 1509 SHA256:b80e81ef460eb683e34fc9e304111d2c2247ba66476f639ec0a365ae98299187
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9ubuntu0.14.04.1.tar.gz' sensible-utils_0.0.9ubuntu0.14.04.1.tar.gz 74958 SHA256:44d44e81fd99544380c5e7cfcebcd5a0bcbd005b122fe7bb08056f7695eecba5
 ```
 
 ### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.5`
@@ -2593,12 +2612,12 @@ $ apt-get source -qq --print-uris sysstat=10.2.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_10.2.0-1.debian.tar.bz2' sysstat_10.2.0-1.debian.tar.bz2 33318 SHA256:d8cc68838b77b2bc317dc91adb49ea934440e5d6a5e5400cc7da8d78c4222708
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.25`
+### `dpkg` source package: `systemd=204-5ubuntu20.26`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.25`
-- `udev=204-5ubuntu20.25`
+- `libudev1:amd64=204-5ubuntu20.26`
+- `udev=204-5ubuntu20.26`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2609,9 +2628,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.26
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.dsc' systemd_204-5ubuntu20.26.dsc 3679 SHA256:31e3b27daad2be2c75303286884bf6145fd415eb5f1ad8b2ee55a92ea51db290
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.debian.tar.gz' systemd_204-5ubuntu20.26.debian.tar.gz 178668 SHA256:c4701243763f607d7e9bc46ea56398512930ea964461118c04251d793ca01133
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
