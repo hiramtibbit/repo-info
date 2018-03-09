@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:779a0f450083a4efafcc6e7592b66ee2a245b2aa6d7035dc903a0019154c3826`
-- Created: `2018-03-06T01:08:54.243639129Z`
-- Virtual Size: ~ 749.29 Mb  
+- Image ID: `sha256:598368751f6a6c6b78ce9a1a60878d6c32d3ae8dbca0408c157f1c4def55e219`
+- Created: `2018-03-07T21:32:52.022665244Z`
+- Virtual Size: ~ 749.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.9.4`
-  - `YARN_VERSION=1.3.2`
+  - `NODE_VERSION=8.10.0`
+  - `YARN_VERSION=1.5.1`
   - `RC_VERSION=0.62.1`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
