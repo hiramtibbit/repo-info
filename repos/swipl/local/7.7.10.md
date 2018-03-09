@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a49bbd51cc1ffd9d00b02f6918579f0b13871b01a27125ef05def8691f0640a`
-- Created: `2018-02-16T22:36:55.586719848Z`
-- Virtual Size: ~ 147.39 Mb  
+- Image ID: `sha256:f20ddc0d9db850f5ad1c329202d1d506fa5ab352ab66e5a5a83a9856b3ea08d9`
+- Created: `2018-03-08T18:59:14.343652063Z`
+- Virtual Size: ~ 149.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -636,13 +636,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/freetds/0.91-6.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/freetds/0.91-6.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-6=6.3.0-18`
+### `dpkg` source package: `gcc-6=6.3.0-18+deb9u1`
 
 Binary Packages:
 
-- `gcc-6-base:amd64=6.3.0-18`
-- `libgcc1:amd64=1:6.3.0-18`
-- `libstdc++6:amd64=6.3.0-18`
+- `gcc-6-base:amd64=6.3.0-18+deb9u1`
+- `libgcc1:amd64=1:6.3.0-18+deb9u1`
+- `libstdc++6:amd64=6.3.0-18+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -655,17 +655,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-18
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.dsc' gcc-6_6.3.0-18.dsc 27145 SHA256:faa23e7b7ce387d19532df421d8538218f973075c3b92b37f95811d7677ae80e
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.diff.gz' gcc-6_6.3.0-18.diff.gz 2045830 SHA256:7e76d64b79c0b6bed356ae752a2017746d4b069bc78624da0c94b8169f1f51cc
+$ apt-get source -qq --print-uris gcc-6=6.3.0-18+deb9u1
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.dsc' gcc-6_6.3.0-18+deb9u1.dsc 27148 SHA256:8145f139255d35dac4c922321cb98ba11a73296a886a76563a5eef309e1d5bec
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
+'http://security.debian.org/pool/updates/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.diff.gz' gcc-6_6.3.0-18+deb9u1.diff.gz 2075943 SHA256:8c705553bf211e064f3270e51e81a6b2a0bf122f39f7c98ce7f2fbdfd9fa9564
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-6/6.3.0-18/ (for browsing the source)
-- https://sources.debian.net/src/gcc-6/6.3.0-18/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-6/6.3.0-18/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-6/6.3.0-18+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-6/6.3.0-18+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-6/6.3.0-18+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `geos=3.5.1-3`
 
