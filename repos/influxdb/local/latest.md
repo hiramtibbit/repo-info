@@ -1,17 +1,17 @@
-# `influxdb:1.4`
+# `influxdb:1.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d13dea420db6faab613c88f9206de6825faf98d76c50da836c33874f559b8d62`
-- Created: `2018-03-01T20:57:42.629982761Z`
-- Virtual Size: ~ 198.69 Mb  
+- Image ID: `sha256:a247658a418540bbe7377d71927d31fe10a248bbb58fda613ffba85c666ecaac`
+- Created: `2018-03-07T22:11:55.26803491Z`
+- Virtual Size: ~ 204.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=1.4.3`
+  - `INFLUXDB_VERSION=1.5.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -902,11 +902,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/inetutils/2:1.9.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/inetutils/2:1.9.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `influxdb=1.4.3-1`
+### `dpkg` source package: `influxdb=1.5.0-1`
 
 Binary Packages:
 
-- `influxdb=1.4.3-1`
+- `influxdb=1.5.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
