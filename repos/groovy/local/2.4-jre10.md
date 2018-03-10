@@ -1534,20 +1534,13 @@ Licenses: (parsed from: `/usr/share/doc/gsettings-desktop-schemas/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gsettings-desktop-schemas=3.27.90-1
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.27.90-1.dsc' gsettings-desktop-schemas_3.27.90-1.dsc 2512 SHA256:4feca2f08d594d2416be838379ed53f4bf3a704049145496f9238aa804d8ed11
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.27.90.orig.tar.xz' gsettings-desktop-schemas_3.27.90.orig.tar.xz 637552 SHA256:7a9fed43c4377b6e55da62b2713b3df75f0809679bf8293451a2f420675c7fbf
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.27.90-1.debian.tar.xz' gsettings-desktop-schemas_3.27.90-1.debian.tar.xz 4660 SHA256:2692a861dd27bbbeb05acb4d98b3ca768402469dbfabd54f2e66e244e6120ebb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gsettings-desktop-schemas/3.27.90-1/
 
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.27.90-1/ (for browsing the source)
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.27.90-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gsettings-desktop-schemas/3.27.90-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gtk+2.0=2.24.32-1`
 
