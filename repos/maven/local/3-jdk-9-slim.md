@@ -1,10 +1,10 @@
-# `maven:3.5-jdk-9-slim`
+# `maven:3.5.3-jdk-9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8dbc5e692fb6307de9fc077e19765dacb51f7a4da126ec81b53133447cb628e`
-- Created: `2018-02-15T18:43:50.681964213Z`
-- Virtual Size: ~ 392.45 Mb  
+- Image ID: `sha256:e322315fc656463dc5dc23909e8fc72d84eb864b39f95cb4ef09f4a60f29d919`
+- Created: `2018-03-09T19:05:31.037065064Z`
+- Virtual Size: ~ 393.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -881,20 +881,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-2
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-2.dsc' gmp_6.1.2+dfsg-2.dsc 2152 SHA256:d1e7b69c619c2d07b3eaf9f051159cde1884cf9c68109f1dee278bf7a59b632b
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg.orig.tar.xz' gmp_6.1.2+dfsg.orig.tar.xz 1804424 SHA256:18016f718f621e7641ddd4e57f8e140391c5183252e5998263ffff59198a65b7
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-2.debian.tar.xz' gmp_6.1.2+dfsg-2.debian.tar.xz 20744 SHA256:33cf6cc65827c9df744e4e07b216ca2d02eb57327a949f80a7b7dddd0485ee85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/
 
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.4-3`
 
@@ -949,6 +942,34 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/gnutls28/3.5.17-1/
 
+
+### `dpkg` source package: `gpm=1.20.7-5`
+
+Binary Packages:
+
+- `libgpm2:amd64=1.20.7-5`
+
+Licenses: (parsed from: `/usr/share/doc/libgpm2/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+- `GPL-3`
+- `GPL-3.0+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gpm=1.20.7-5
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-5.dsc' gpm_1.20.7-5.dsc 1986 SHA256:d5925ddcecd217ece2790c1c81993c6e32d86914865d90cb9bfabbe1bb6595a8
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7.orig.tar.gz' gpm_1.20.7.orig.tar.gz 855027 SHA256:c7e4661c24e05ae13547176b649bac8e3a0db2575f7dd57559f9e0b509f90f49
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-5.debian.tar.xz' gpm_1.20.7-5.debian.tar.xz 82740 SHA256:4adbf1434c4975cffe8ce7b180a1bf7047d79b0e4f0e1a8bf68297170df6fdf0
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gpm/1.20.7-5/ (for browsing the source)
+- https://sources.debian.net/src/gpm/1.20.7-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gpm/1.20.7-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -1401,11 +1422,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpng1.6/1.6.34-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpng1.6/1.6.34-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpsl=0.19.1-4`
+### `dpkg` source package: `libpsl=0.19.1-5`
 
 Binary Packages:
 
-- `libpsl5:amd64=0.19.1-4`
+- `libpsl5:amd64=0.19.1-5`
 
 Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 
@@ -1415,17 +1436,17 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpsl=0.19.1-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.dsc' libpsl_0.19.1-4.dsc 2205 SHA256:c782695b32092fbe38f5e11228e0efcd41c0260ac5b5a503fe0b59ba40b86e7e
+$ apt-get source -qq --print-uris libpsl=0.19.1-5
+'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.dsc' libpsl_0.19.1-5.dsc 1632 SHA256:ead03b445abea7be26e9257adc7550a0269d25415388fb450cbd84b529625aa9
 'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-4.debian.tar.xz' libpsl_0.19.1-4.debian.tar.xz 9444 SHA256:f289b1ef5e33dc96c64edb384f597f7ddd74f1f0e7e8091155c62bd451ea1fc2
+'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.debian.tar.xz' libpsl_0.19.1-5.debian.tar.xz 9772 SHA256:38e20b85f1c7b5f1cb09c487f1ed476a92740434e5bc0bb4df379e04cb604ad3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpsl/0.19.1-4/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpsl/0.19.1-5/ (for browsing the source)
+- https://sources.debian.net/src/libpsl/0.19.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpsl/0.19.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1`
 
@@ -1904,6 +1925,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libncurses5:amd64=6.1-1`
 - `libncursesw5:amd64=6.1-1`
 - `libtinfo5:amd64=6.1-1`
 - `ncurses-base=6.1-1`
@@ -1966,11 +1988,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.30.0-1`
+### `dpkg` source package: `nghttp2=1.31.0-1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.30.0-1`
+- `libnghttp2-14:amd64=1.31.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1982,13 +2004,20 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nghttp2=1.31.0-1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.0-1.dsc' nghttp2_1.31.0-1.dsc 2278 SHA256:7befb93634ae73822b57ec2b2bd1a2a663a59ef5add3db271af79a6837119ee6
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.0.orig.tar.bz2' nghttp2_1.31.0.orig.tar.bz2 1839359 SHA256:96e6e6471af7349ded5de10a6064bba97fd92160a01572d0bf2beba74edbf134
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.0-1.debian.tar.xz' nghttp2_1.31.0-1.debian.tar.xz 12388 SHA256:dfcd64e6b51e26c27fedcf0c4f4dd36c67690163f9ff943a3d393b656671622d
+```
 
-- http://snapshot.debian.org/package/nghttp2/1.30.0-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nghttp2/1.31.0-1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.31.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.31.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.18-1`
 
@@ -2305,24 +2334,88 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/perl/5.26.1-4/
 
 
-### `dpkg` source package: `publicsuffix=20180125.0922-1`
+### `dpkg` source package: `procps=2:3.3.12-4`
 
 Binary Packages:
 
-- `publicsuffix=20180125.0922-1`
+- `libprocps6:amd64=2:3.3.12-4`
+- `procps=2:3.3.12-4`
+
+Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+- `LGPL-2`
+- `LGPL-2.0+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.12-4
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-4.dsc' procps_3.3.12-4.dsc 2127 SHA256:0e643e0ef86d77bd0465cebb0c8f66ffaf9ade1f7a34603242bacc2a25c8b359
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-4.debian.tar.xz' procps_3.3.12-4.debian.tar.xz 27988 SHA256:1fc7c5bb257f9123e759b751d400f761b6d248bfe9be6623f01d9afd6c328440
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/procps/2:3.3.12-4/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.12-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.12-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `psmisc=23.1-1`
+
+Binary Packages:
+
+- `psmisc=23.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris psmisc=23.1-1
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1-1.dsc' psmisc_23.1-1.dsc 1693 SHA256:1a69dc469a783320ce74f7365cb4c7655f038e31d54771e8ffba623e5a735bcc
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1.orig.tar.xz' psmisc_23.1.orig.tar.xz 291480 SHA256:561c6a87c4d8eadd5b5338aed7be8620c5634f6cb6730c11383cf75c712255c0
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1-1.debian.tar.xz' psmisc_23.1-1.debian.tar.xz 6668 SHA256:b6d8f0bd163c5b1f020e44cbd04d7f0b57858667915a271876a351deb923825e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/psmisc/23.1-1/ (for browsing the source)
+- https://sources.debian.net/src/psmisc/23.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/psmisc/23.1-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `publicsuffix=20180223.1310-1`
+
+Binary Packages:
+
+- `publicsuffix=20180223.1310-1`
 
 Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 
 - `CC0`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris publicsuffix=20180223.1310-1
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180223.1310-1.dsc' publicsuffix_20180223.1310-1.dsc 1343 SHA256:9977613565fee592bc705cdd44e9778e5058bcb2decddc42c6142696a29b69c9
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180223.1310.orig.tar.gz' publicsuffix_20180223.1310.orig.tar.gz 83988 SHA256:70204865c9b59993c57bfba823ebd9d8f83db01fe914654d415ffc29ecb5667e
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180223.1310-1.debian.tar.xz' publicsuffix_20180223.1310-1.debian.tar.xz 15436 SHA256:05182da7fd7cb1f2aa9397e0230a43798dfdb082a69ba203e712080efe1fd2bd
+```
 
-- http://snapshot.debian.org/package/publicsuffix/20180125.0922-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/publicsuffix/20180223.1310-1/ (for browsing the source)
+- https://sources.debian.net/src/publicsuffix/20180223.1310-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/publicsuffix/20180223.1310-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
