@@ -1,7 +1,7 @@
 ## `ghost:alpine`
 
 ```console
-$ docker pull ghost@sha256:5e9e44651a7534b0f3fd9c41e6200c393afecf71e6e77aaae2942399f338cbd3
+$ docker pull ghost@sha256:43917550f10c94205cdddb402929d5bcb437888f310728a1f17faebd5e45993d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull ghost@sha256:5e9e44651a7534b0f3fd9c41e6200c393afecf71e6e77aaae2942
 ### `ghost:alpine` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:05e7a9feb6a7ee01cc012fdaf7eba5a93745cd9e5e51016c537b9e309fa01d39
+$ docker pull ghost@sha256:ab6291bab2b5f437ade1eee2038f0859d6a5e2d9395680f75b8d94708dae2f69
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.4 MB (136437719 bytes)**  
+-	Total Size: **136.4 MB (136443221 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52ec4264e6981476a75642acb6edd418ad8bc61bf8698fa9159cd871cbbcbf47`
+-	Image ID: `sha256:9449a67e2f3f65906334d547879c3f9bc379dc2b64173c79eea59edb155e81bc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -51,23 +51,23 @@ RUN npm install -g "ghost-cli@$GHOST_CLI_VERSION"
 ENV GHOST_INSTALL=/var/lib/ghost
 # Wed, 07 Mar 2018 21:01:49 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 07 Mar 2018 21:01:49 GMT
-ENV GHOST_VERSION=1.21.3
-# Wed, 07 Mar 2018 21:02:24 GMT
+# Mon, 12 Mar 2018 19:05:35 GMT
+ENV GHOST_VERSION=1.21.4
+# Mon, 12 Mar 2018 19:06:19 GMT
 RUN set -ex; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		"$GHOST_INSTALL/current/node_modules/knex-migrator/bin/knex-migrator" --version
-# Wed, 07 Mar 2018 21:02:25 GMT
+# Mon, 12 Mar 2018 19:06:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/ghost/current/node_modules/knex-migrator/bin
-# Wed, 07 Mar 2018 21:02:25 GMT
+# Mon, 12 Mar 2018 19:06:21 GMT
 WORKDIR /var/lib/ghost
-# Wed, 07 Mar 2018 21:02:26 GMT
+# Mon, 12 Mar 2018 19:06:21 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 07 Mar 2018 21:02:26 GMT
+# Mon, 12 Mar 2018 19:06:21 GMT
 COPY file:fe4f8ce065580d78daf2ea3ae3ab9174f3edd7740df8b95889926dc1cdfe77b0 in /usr/local/bin 
-# Wed, 07 Mar 2018 21:02:26 GMT
+# Mon, 12 Mar 2018 19:06:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Mar 2018 21:02:27 GMT
+# Mon, 12 Mar 2018 19:06:22 GMT
 EXPOSE 2368/tcp
-# Wed, 07 Mar 2018 21:02:27 GMT
+# Mon, 12 Mar 2018 19:06:22 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -96,11 +96,11 @@ CMD ["node" "current/index.js"]
 		Last Modified: Wed, 07 Mar 2018 21:26:56 GMT  
 		Size: 19.4 MB (19408507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2b2f288b5e8d45757b839132f922c218cdea688a8db60de3218f7f71774106a`  
-		Last Modified: Wed, 07 Mar 2018 21:27:26 GMT  
-		Size: 96.9 MB (96939583 bytes)  
+	-	`sha256:4195c723f0829cc88f7e7b9114c4792c53dce4a4585ce52f08e37321647a719f`  
+		Last Modified: Mon, 12 Mar 2018 19:15:18 GMT  
+		Size: 96.9 MB (96945081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e37324442e7575f67da417e8bab7ddaffb35c0516780ceb1d727662f43ed16a`  
-		Last Modified: Wed, 07 Mar 2018 21:26:35 GMT  
-		Size: 556.0 B  
+	-	`sha256:63257be772c9e69de2c3fcaab3b210bbdbcf15633b81f3babe63da2533153c5f`  
+		Last Modified: Mon, 12 Mar 2018 19:15:01 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
