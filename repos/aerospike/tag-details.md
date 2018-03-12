@@ -6,7 +6,7 @@
 -	[`aerospike:3.13.0.9`](#aerospike31309)
 -	[`aerospike:3.14.1.8`](#aerospike31418)
 -	[`aerospike:3.15.1.4`](#aerospike31514)
--	[`aerospike:3.16.0.1`](#aerospike31601)
+-	[`aerospike:3.16.0.6`](#aerospike31606)
 -	[`aerospike:latest`](#aerospikelatest)
 
 ## `aerospike:3.12.1.3`
@@ -373,96 +373,9 @@ CMD ["asd"]
 		Size: 527.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `aerospike:3.16.0.1`
+## `aerospike:3.16.0.6`
 
-```console
-$ docker pull aerospike@sha256:3b0a24a1e506c07d706b6b17026c7222a4dde4a50b7251591cc976a74b9acfe3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `aerospike:3.16.0.1` - linux; amd64
-
-```console
-$ docker pull aerospike@sha256:2e27ef1dada98ee9a012d4476a6b111cd116719265166011ad3a0c3b6fed885c
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69056583 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4250c045b98d70db4df25cefa9b704b5b4e4683926471d603eb5e914d2865b7`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["asd"]`
-
-```dockerfile
-# Tue, 06 Mar 2018 22:17:23 GMT
-ADD file:c753df38640ab6e246d9e66f0cef7156b7003976080b1e0b83e5717cd6ef1725 in / 
-# Tue, 06 Mar 2018 22:17:24 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 06 Mar 2018 22:17:24 GMT
-RUN rm -rf /var/lib/apt/lists/*
-# Tue, 06 Mar 2018 22:17:25 GMT
-RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 06 Mar 2018 22:17:26 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 06 Mar 2018 22:17:26 GMT
-CMD ["/bin/bash"]
-# Tue, 06 Mar 2018 23:32:00 GMT
-ENV AEROSPIKE_VERSION=3.16.0.1
-# Tue, 06 Mar 2018 23:32:00 GMT
-ENV AEROSPIKE_SHA256=d006d96b08c978cb283cc174c909aa19d34d1e96f874177e962d4c1d0fba388d
-# Tue, 06 Mar 2018 23:32:20 GMT
-RUN apt-get update -y   && apt-get install -y wget python python-argparse python-bcrypt python-openssl logrotate net-tools iproute2 iputils-ping gettext-base  && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && dpkg -r wget ca-certificates   && dpkg --purge wget ca-certificates   && apt-get purge -y
-# Tue, 06 Mar 2018 23:32:20 GMT
-COPY file:92f154ac5768cc66c29bd7ca3d00a0fe0ae8d08f1d309fdcda8bf66d4c73cadd in /etc/aerospike/aerospike.template.conf 
-# Tue, 06 Mar 2018 23:32:20 GMT
-COPY file:9ef3647147ab14da304c40a73aae8d3ee55f782ec9d8083bded32ac37b2c4924 in /entrypoint.sh 
-# Tue, 06 Mar 2018 23:32:21 GMT
-VOLUME [/opt/aerospike/data]
-# Tue, 06 Mar 2018 23:32:21 GMT
-EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Tue, 06 Mar 2018 23:32:21 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Mar 2018 23:32:21 GMT
-CMD ["asd"]
-```
-
--	Layers:
-	-	`sha256:22dc81ace0ea2f45ad67b790cddad29a45e206d51db0af826dc9495ba21a0b06`  
-		Last Modified: Mon, 05 Mar 2018 14:50:20 GMT  
-		Size: 43.0 MB (42963776 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a8b3c87dba3ed16956c881a26eb0c40502c176a35767627d87557d16ea1e0df`  
-		Last Modified: Tue, 06 Mar 2018 22:21:36 GMT  
-		Size: 847.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91390a1c435a20661a9e9afdaeb818638299a20d6ee1cc06bbcab8ae4d51994f`  
-		Last Modified: Tue, 06 Mar 2018 22:21:35 GMT  
-		Size: 620.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07844b14977e91f82408cbb8932c7d6141d6ca8da7d6587b4d3065750d69186f`  
-		Last Modified: Tue, 06 Mar 2018 22:21:35 GMT  
-		Size: 854.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b78396653dae2bc0d9c02c0178bd904bb12195b2b4e541a92cd8793ac7d7d689`  
-		Last Modified: Tue, 06 Mar 2018 22:21:36 GMT  
-		Size: 169.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae8c1c25c95639bf72b72df6113c224164a5f07a60e7c0417a8da219ead38a28`  
-		Last Modified: Tue, 06 Mar 2018 23:34:36 GMT  
-		Size: 26.1 MB (26088332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f3124755dd95acb5550c657568a4d8107958e4a6b23802c9e937ce5936bac4b`  
-		Last Modified: Tue, 06 Mar 2018 23:34:31 GMT  
-		Size: 1.1 KB (1109 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c79e62aabc9449e378aef8bf73853f848c2779efda48b16e07a72125a5a759fb`  
-		Last Modified: Tue, 06 Mar 2018 23:34:31 GMT  
-		Size: 876.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `aerospike:latest`
 
