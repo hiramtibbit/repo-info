@@ -1,7 +1,7 @@
 ## `owncloud:latest`
 
 ```console
-$ docker pull owncloud@sha256:a2526eaa022a9ab73b3a2068f277836271f6a8384f10c993cf514d7e900469c6
+$ docker pull owncloud@sha256:d0693946b871bee4d7c73ea15b1bad3a93644c026518a83f639ed8688dfd63f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull owncloud@sha256:a2526eaa022a9ab73b3a2068f277836271f6a8384f10c993cf
 ### `owncloud:latest` - linux; amd64
 
 ```console
-$ docker pull owncloud@sha256:d6a1e8e928a1bf7ee71ae6b35c1640dcf3639ccd179a34baf12033be556babda
+$ docker pull owncloud@sha256:1dea415377442902d82e48248029e30c7109ac3414296240fd497eb22ff16a30
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.8 MB (243838020 bytes)**  
+-	Total Size: **243.8 MB (243838012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2437441debb7afb77f724429c998a4e9c9d0a1d64c21950936817a275372f895`
+-	Image ID: `sha256:9a7c1ecb69ffc8aa932e3b031f9975b22f3ff8c771e3ef7395ca9187e278b649`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -105,15 +105,17 @@ RUN a2enmod rewrite
 RUN set -ex 	&& pecl install APCu-5.1.8 	&& pecl install memcached-3.0.3 	&& pecl install redis-3.1.2 	&& docker-php-ext-enable apcu memcached redis
 # Tue, 06 Mar 2018 05:22:44 GMT
 ENV OWNCLOUD_VERSION=10.0.7
-# Tue, 06 Mar 2018 05:22:44 GMT
+# Mon, 12 Mar 2018 18:05:47 GMT
+ENV OWNCLOUD_SHA256=7c822aa163182391ae3213a5465151d7cc7dd0990666315da0d8e118269d0fb0
+# Mon, 12 Mar 2018 18:05:47 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Mar 2018 10:09:10 GMT
-RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Tue, 06 Mar 2018 10:09:11 GMT
+# Mon, 12 Mar 2018 18:06:04 GMT
+RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
+# Mon, 12 Mar 2018 18:06:04 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /usr/local/bin/ 
-# Tue, 06 Mar 2018 10:09:11 GMT
+# Mon, 12 Mar 2018 18:06:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 06 Mar 2018 10:09:12 GMT
+# Mon, 12 Mar 2018 18:06:05 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -194,13 +196,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 06 Mar 2018 05:49:34 GMT  
 		Size: 1.3 MB (1328122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d60726fd7087764a12557cd4e81f4b0f3f1a7f0ce5a5c6cfd2d95edc028bd22c`  
-		Last Modified: Tue, 06 Mar 2018 10:09:42 GMT  
-		Size: 42.9 MB (42853251 bytes)  
+	-	`sha256:8e2377a63da049f9f1c76258375cb7532dd0931f4027b01534985bab9ab04f6f`  
+		Last Modified: Mon, 12 Mar 2018 18:08:19 GMT  
+		Size: 42.9 MB (42853240 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d799b52f072caac650fc165087d50572de143e3b731cfee79cdca6a96d4038a`  
-		Last Modified: Tue, 06 Mar 2018 10:09:36 GMT  
-		Size: 334.0 B  
+	-	`sha256:efab4b9bfa2ab6b97c7105bd8dc35bbf29b0f02a2a128bd4a230763610e85e0d`  
+		Last Modified: Mon, 12 Mar 2018 18:08:13 GMT  
+		Size: 337.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `owncloud:latest` - linux; arm variant v5
