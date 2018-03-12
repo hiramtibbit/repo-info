@@ -159,19 +159,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u3
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u3.dsc' base-files_9.9+deb9u3.dsc 1095 SHA256:ed5fb0ee3885e9f9d13969ac6aad4fecb2f8eab16c4add3cb9a60f41c0125847
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u3.tar.xz' base-files_9.9+deb9u3.tar.xz 62928 SHA256:f627d5b35399c5645576dddf6100d0fc3d80bee97bbb1388715044c0a77ddbb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u3/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -316,9 +310,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cron=3.0pl1-128
-'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-128.dsc' cron_3.0pl1-128.dsc 1911 SHA256:eb54373a81a19a2afa44457ac4a38d0e09436e8f078c68c7c6db2b6e2c6c0edf
+'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-128+deb9u1.dsc' cron_3.0pl1-128+deb9u1.dsc 1640 SHA256:d9ab12fcdeae5ef30cbcfe4a9d21a986d504b589428685760c1e97d5c519ea15
 'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1.orig.tar.gz' cron_3.0pl1.orig.tar.gz 59245 SHA256:d931e0688005dfa85cfdb60e19bf0a3848ebfa3ee3415bf2a6ea3ea9e5bcfd21
-'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-128.diff.gz' cron_3.0pl1-128.diff.gz 98918 SHA256:0380e331d1f20187df088dea7b2e1ace5948192a4f729d8c28651ab01796a8a2
+'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-128+deb9u1.diff.gz' cron_3.0pl1-128+deb9u1.diff.gz 99058 SHA256:fa55a83b1d0633b356186419fba74c0978984f66c0b99c087fcd42f5d8d37050
 ```
 
 Other potentially useful URLs:
@@ -655,9 +649,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris exim4=4.89-2+deb9u3
-'http://security.debian.org/pool/updates/main/e/exim4/exim4_4.89-2+deb9u3.dsc' exim4_4.89-2+deb9u3.dsc 2973 SHA256:3f289571d21fe4c8febd17e1c6e2e886f089e842ee2dfb090752ce4ba405b495
-'http://security.debian.org/pool/updates/main/e/exim4/exim4_4.89.orig.tar.xz' exim4_4.89.orig.tar.xz 1686652 SHA256:0c490a1ca97bbb22d6079d2896de19af48ac3af109ea5f307dbc6b49c66e9626
-'http://security.debian.org/pool/updates/main/e/exim4/exim4_4.89-2+deb9u3.debian.tar.xz' exim4_4.89-2+deb9u3.debian.tar.xz 449860 SHA256:18be4af54197b369c5c1ce19a3c0a1ad7699252d90f837e620a7c592c6842a66
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.89-2+deb9u3.dsc' exim4_4.89-2+deb9u3.dsc 2973 SHA256:3f289571d21fe4c8febd17e1c6e2e886f089e842ee2dfb090752ce4ba405b495
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.89.orig.tar.xz' exim4_4.89.orig.tar.xz 1686652 SHA256:0c490a1ca97bbb22d6079d2896de19af48ac3af109ea5f307dbc6b49c66e9626
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.89-2+deb9u3.debian.tar.xz' exim4_4.89-2+deb9u3.debian.tar.xz 449860 SHA256:18be4af54197b369c5c1ce19a3c0a1ad7699252d90f837e620a7c592c6842a66
 ```
 
 Other potentially useful URLs:
@@ -794,9 +788,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-6=6.3.0-18
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.dsc' gcc-6_6.3.0-18.dsc 27145 SHA256:faa23e7b7ce387d19532df421d8538218f973075c3b92b37f95811d7677ae80e
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.dsc' gcc-6_6.3.0-18+deb9u1.dsc 27148 SHA256:8145f139255d35dac4c922321cb98ba11a73296a886a76563a5eef309e1d5bec
 'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18.diff.gz' gcc-6_6.3.0-18.diff.gz 2045830 SHA256:7e76d64b79c0b6bed356ae752a2017746d4b069bc78624da0c94b8169f1f51cc
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-18+deb9u1.diff.gz' gcc-6_6.3.0-18+deb9u1.diff.gz 2075943 SHA256:8c705553bf211e064f3270e51e81a6b2a0bf122f39f7c98ce7f2fbdfd9fa9564
 ```
 
 Other potentially useful URLs:
@@ -1725,9 +1719,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtasn1-6=4.10-1.1+deb9u1
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.dsc' libtasn1-6_4.10-1.1+deb9u1.dsc 2614 SHA256:e9095d4d79e1015c2c2d3e8868d3c50f3b43510387a9ec9191d83ff57024fb39
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz' libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz 59716 SHA256:fed5f50904fbfecc50d253aa4bc62221849e363430f71125039ada1512807937
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.dsc' libtasn1-6_4.10-1.1+deb9u1.dsc 2614 SHA256:e9095d4d79e1015c2c2d3e8868d3c50f3b43510387a9ec9191d83ff57024fb39
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz' libtasn1-6_4.10-1.1+deb9u1.debian.tar.xz 59716 SHA256:fed5f50904fbfecc50d253aa4bc62221849e363430f71125039ada1512807937
 ```
 
 Other potentially useful URLs:
@@ -1811,9 +1805,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u2
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u2.dsc 3049 SHA256:53d34e06270572861dd0cb59f99b35caa40f85f928151827f59686fc3642d6b1
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u2.debian.tar.xz 33996 SHA256:d178b2d7c9a3bfd929762e15b8f99a139a54a9bcf988820e4f4febb051090b62
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u2.dsc 3049 SHA256:53d34e06270572861dd0cb59f99b35caa40f85f928151827f59686fc3642d6b1
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u2.debian.tar.xz 33996 SHA256:d178b2d7c9a3bfd929762e15b8f99a139a54a9bcf988820e4f4febb051090b62
 ```
 
 Other potentially useful URLs:
@@ -2828,8 +2822,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sensible-utils=0.0.9+deb9u1
-'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.dsc' sensible-utils_0.0.9+deb9u1.dsc 1590 SHA256:93641a0b5bb3b24b6f01daaf6d99cc1221678b150f19fc8a5c603cacdaecd6e2
-'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.tar.xz' sensible-utils_0.0.9+deb9u1.tar.xz 53564 SHA256:103a4666ddad53452b849d20c2509a6356d9aa6a60c515df9983bd0ca897a3db
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.dsc' sensible-utils_0.0.9+deb9u1.dsc 1590 SHA256:93641a0b5bb3b24b6f01daaf6d99cc1221678b150f19fc8a5c603cacdaecd6e2
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+deb9u1.tar.xz' sensible-utils_0.0.9+deb9u1.tar.xz 53564 SHA256:103a4666ddad53452b849d20c2509a6356d9aa6a60c515df9983bd0ca897a3db
 ```
 
 Other potentially useful URLs:
@@ -2984,20 +2978,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u1.dsc' systemd_232-25+deb9u1.dsc 4797 SHA256:624303bdd40a5cc5ffa6c2c1e4557976908a4c8b45d2f59dee1acf0965308823
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u1.debian.tar.xz' systemd_232-25+deb9u1.debian.tar.xz 205680 SHA256:5b9ef3d5f28dc8e5988eca66c2df022a1e79453f87d1d4a8693c3bf9d6786a14
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u1/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
