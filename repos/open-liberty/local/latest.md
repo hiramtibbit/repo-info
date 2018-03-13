@@ -73,14 +73,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.8.dsc' apparmor_2.10.95-0ubuntu2.8.dsc 2904 SHA256:77855717273b42c2609fa3706807f9ee945e52b426bab10d3ac343408b62ce77
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.8.debian.tar.xz' apparmor_2.10.95-0ubuntu2.8.debian.tar.xz 96704 SHA256:328dc203695b150d826c71ca324a89e042afddba53f9a84090657fac0395885c
-```
 
 ### `dpkg` source package: `apt=1.2.25`
 
@@ -700,9 +695,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
 ```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
