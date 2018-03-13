@@ -1,7 +1,7 @@
 ## `owncloud:fpm`
 
 ```console
-$ docker pull owncloud@sha256:f2e55be5e97179da6ca0a10699c61521ea4ffb24e4eb6a10ce7d73aeff999c04
+$ docker pull owncloud@sha256:c4281e41ff8c88d28f5f980158fc33a719635a7452cdc3a518531946d7f69de8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -933,14 +933,14 @@ CMD ["php-fpm"]
 ### `owncloud:fpm` - linux; s390x
 
 ```console
-$ docker pull owncloud@sha256:8abbfbbc94c00f9818239f17b34426d6805be7673bd9f57fb02c03929f2e53b2
+$ docker pull owncloud@sha256:ad0903730f7925ab97929180c967469945ce8bfa72aa0a5d12a69aec5be4ec01
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.8 MB (222824926 bytes)**  
+-	Total Size: **222.8 MB (222824957 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000825df66db6fd0d56655f81bb74b8fd4dc0094c1e60b81617213bb31d77f2d`
+-	Image ID: `sha256:830a24484c4bc4d7d726ab72ff0eed27ee4db4142986eac80e28291432a57946`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1003,15 +1003,17 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 RUN set -ex 	&& pecl install APCu-5.1.8 	&& pecl install memcached-3.0.3 	&& pecl install redis-3.1.2 	&& docker-php-ext-enable apcu memcached redis
 # Tue, 06 Mar 2018 19:35:15 GMT
 ENV OWNCLOUD_VERSION=10.0.7
-# Tue, 06 Mar 2018 19:35:16 GMT
+# Tue, 13 Mar 2018 16:02:48 GMT
+ENV OWNCLOUD_SHA256=7c822aa163182391ae3213a5465151d7cc7dd0990666315da0d8e118269d0fb0
+# Tue, 13 Mar 2018 16:02:48 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Mar 2018 19:35:57 GMT
-RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Tue, 06 Mar 2018 19:35:57 GMT
+# Tue, 13 Mar 2018 16:02:58 GMT
+RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
+# Tue, 13 Mar 2018 16:02:58 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /usr/local/bin/ 
-# Tue, 06 Mar 2018 19:35:57 GMT
+# Tue, 13 Mar 2018 16:02:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 06 Mar 2018 19:35:58 GMT
+# Tue, 13 Mar 2018 16:02:59 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1072,11 +1074,11 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 06 Mar 2018 19:38:49 GMT  
 		Size: 1.4 MB (1406290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a74793428c8ce953a094bbab56f602e1dc1b057550113d8743ca9c2e2a93f13c`  
-		Last Modified: Tue, 06 Mar 2018 19:38:56 GMT  
-		Size: 42.9 MB (42853187 bytes)  
+	-	`sha256:67cf9cf86a27e73c86189a2dc5e36757d728f825c156bf9e437f33d47680ca13`  
+		Last Modified: Tue, 13 Mar 2018 16:04:33 GMT  
+		Size: 42.9 MB (42853217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c370661a54539e4c852446b0b63fb805f7310dc504990323f84f3cebea9620`  
-		Last Modified: Tue, 06 Mar 2018 19:38:49 GMT  
-		Size: 334.0 B  
+	-	`sha256:02dfcd4486d1aaeacfa5a45ca05d7323d52f5b9420d16b3646cab45f461ecf1f`  
+		Last Modified: Tue, 13 Mar 2018 16:04:27 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
