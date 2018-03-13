@@ -831,20 +831,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-2
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-2.dsc' gmp_6.1.2+dfsg-2.dsc 2152 SHA256:d1e7b69c619c2d07b3eaf9f051159cde1884cf9c68109f1dee278bf7a59b632b
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg.orig.tar.xz' gmp_6.1.2+dfsg.orig.tar.xz 1804424 SHA256:18016f718f621e7641ddd4e57f8e140391c5183252e5998263ffff59198a65b7
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-2.debian.tar.xz' gmp_6.1.2+dfsg-2.debian.tar.xz 20744 SHA256:33cf6cc65827c9df744e4e07b216ca2d02eb57327a949f80a7b7dddd0485ee85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/
 
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.4-3`
 
@@ -2479,20 +2472,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-3
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.dsc' subversion_1.9.7-3.dsc 3037 SHA256:e9aea254aab1cfc8eec2156f5a3b37e47c90606e6b02f7d896faed6004d08f86
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-3.debian.tar.xz' subversion_1.9.7-3.debian.tar.xz 2264408 SHA256:eee444a4701d8d5538c5b49584e1671e5a9930f1fa54714ade1b0798c83c8faa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.9.7-3/
 
-- https://sources.debian.net/src/subversion/1.9.7-3/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.9.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.9.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=236-3`
 

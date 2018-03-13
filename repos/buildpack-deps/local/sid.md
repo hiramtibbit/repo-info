@@ -4546,20 +4546,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.22-6
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-6.dsc' pcre2_10.22-6.dsc 2307 SHA256:f4a9eda6eb648de417a538e8623ce76d8551d3a5af0e0a3dfdec0934edb7ed8b
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22.orig.tar.gz' pcre2_10.22.orig.tar.gz 1985688 SHA256:e44d8a6f31bb33cce01ed43743f464290f1d96f60b5fd838786e632d3624a7bd
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-6.diff.gz' pcre2_10.22-6.diff.gz 5490 SHA256:f5ff709a3a8ebc1c147980b7204f942444c3857ade9e642941362639049c9884
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.22-6/
 
-- https://sources.debian.net/src/pcre2/10.22-6/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.22-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.22-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 

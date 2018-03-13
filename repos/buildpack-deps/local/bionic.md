@@ -298,14 +298,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-5ubuntu1.dsc' binutils_2.30-5ubuntu1.dsc 11215 SHA256:fdbc2f5340f99857e2c7e03e630a21409a00c9e691b4c27f0cbcd9be95bc42f2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-5ubuntu1.debian.tar.xz' binutils_2.30-5ubuntu1.debian.tar.xz 228608 SHA256:d74d42e373e5d26af041d4750dd17e82bb0108abd2a5210febcafc8e8cb58b17
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -925,14 +920,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-5ubuntu1.dsc' gcc-7_7.3.0-5ubuntu1.dsc 28195 SHA256:f285ce9ab28177ea43c3b5e50d6270f023078f1c0613b4286ac0a66fe452fdc8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-5ubuntu1.diff.gz' gcc-7_7.3.0-5ubuntu1.diff.gz 598363 SHA256:9217185d325f2dd976138ae0d0b9c1774f33524c8caa8f4f236aabe663a7c3f6
-```
 
 ### `dpkg` source package: `gcc-8=8-20180218-1ubuntu1`
 
@@ -1289,14 +1279,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`, `/usr/share/d
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.10-8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-8.dsc' graphite2_1.3.10-8.dsc 2379 SHA256:4fdc372bd74965337a7fd3db9081caf8a349ad41317d95f8f04c257aa71918ad
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-8.debian.tar.xz' graphite2_1.3.10-8.debian.tar.xz 11792 SHA256:53ec37195cd657535514da04f2067fed0bed9bab47f4f9101c2d1eb6e3cd5277
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/graphite2/1.3.10-8/
+
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -2776,14 +2765,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.3.1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.dsc' mercurial_4.3.1-2.dsc 2225 SHA256:f3569ce442f03fa9c63746efdacf18050ede51f193c49591aa6e92906d7828e4
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1.orig.tar.gz' mercurial_4.3.1.orig.tar.gz 5475042 SHA256:2b12f02e3a452adff4ec9cf007017bab0cadb3f37eaf12f4b25a662df73618a2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.debian.tar.xz' mercurial_4.3.1-2.debian.tar.xz 54836 SHA256:6e9383eea38e11d2cb4f9365ee88da899d3de7da051d717e5b3480d5dea2d0f6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/4.3.1-2/
+
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 

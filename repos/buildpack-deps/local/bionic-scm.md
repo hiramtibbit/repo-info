@@ -1312,14 +1312,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.3.1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.dsc' mercurial_4.3.1-2.dsc 2225 SHA256:f3569ce442f03fa9c63746efdacf18050ede51f193c49591aa6e92906d7828e4
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1.orig.tar.gz' mercurial_4.3.1.orig.tar.gz 5475042 SHA256:2b12f02e3a452adff4ec9cf007017bab0cadb3f37eaf12f4b25a662df73618a2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.debian.tar.xz' mercurial_4.3.1-2.debian.tar.xz 54836 SHA256:6e9383eea38e11d2cb4f9365ee88da899d3de7da051d717e5b3480d5dea2d0f6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/4.3.1-2/
+
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
