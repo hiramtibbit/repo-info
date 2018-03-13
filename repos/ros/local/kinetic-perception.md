@@ -99,14 +99,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.8.dsc' apparmor_2.10.95-0ubuntu2.8.dsc 2904 SHA256:77855717273b42c2609fa3706807f9ee945e52b426bab10d3ac343408b62ce77
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.8.debian.tar.xz' apparmor_2.10.95-0ubuntu2.8.debian.tar.xz 96704 SHA256:328dc203695b150d826c71ca324a89e042afddba53f9a84090657fac0395885c
-```
 
 ### `dpkg` source package: `apr-util=1.5.4-1build1`
 
@@ -3571,9 +3566,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
 ```
 
 ### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.8`
@@ -7356,14 +7351,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.6-1.dsc' python-rosdistro-modules_0.6.6-1.dsc 982 SHA256:3bef90eea235ab28be0a805dd26687da1ba06843d90c5eb370cda2c3b3421733
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.6.orig.tar.gz' python-rosdistro-modules_0.6.6.orig.tar.gz 39576 SHA256:f5abd8cad42e2dd44c3c834a8dfb483d203534c7467c373a82a2e25e679a8247
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.6-1.debian.tar.xz' python-rosdistro-modules_0.6.6-1.debian.tar.xz 1120 SHA256:b908e3a81592fd918d6d6517de4bb0d98b6284a68dd9e664d05d36371961d099
-```
 
 ### `dpkg` source package: `python-rosdistro=0.6.6-100`
 
@@ -7375,14 +7365,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.6.6-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.6-100.dsc' python-rosdistro_0.6.6-100.dsc 919 SHA256:c49a31f8d12430b285033786b2a64e23a0131dcb34ad4395ecf0df35119dec03
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.6.orig.tar.gz' python-rosdistro_0.6.6.orig.tar.gz 9858 SHA256:24e214c1fcd6b0f0ca0a87912bb88869b741e32b04be769629b30d42014bee9b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.6-100.debian.tar.xz' python-rosdistro_0.6.6-100.debian.tar.xz 1100 SHA256:df059bee043cd93527f816e2d624b9eb2879f559623d5776f0cf47bf2717ab79
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
