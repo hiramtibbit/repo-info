@@ -8,40 +8,92 @@
 -	[`nextcloud:11.0.7-apache`](#nextcloud1107-apache)
 -	[`nextcloud:11.0.7-fpm`](#nextcloud1107-fpm)
 -	[`nextcloud:11.0.7-fpm-alpine`](#nextcloud1107-fpm-alpine)
+-	[`nextcloud:11.0.8-rc`](#nextcloud1108-rc)
+-	[`nextcloud:11.0.8RC1`](#nextcloud1108rc1)
+-	[`nextcloud:11.0.8RC1-apache`](#nextcloud1108rc1-apache)
+-	[`nextcloud:11.0.8RC1-fpm`](#nextcloud1108rc1-fpm)
+-	[`nextcloud:11.0.8RC1-fpm-alpine`](#nextcloud1108rc1-fpm-alpine)
+-	[`nextcloud:11.0.8-rc-apache`](#nextcloud1108-rc-apache)
+-	[`nextcloud:11.0.8-rc-fpm`](#nextcloud1108-rc-fpm)
+-	[`nextcloud:11.0.8-rc-fpm-alpine`](#nextcloud1108-rc-fpm-alpine)
 -	[`nextcloud:11.0-apache`](#nextcloud110-apache)
 -	[`nextcloud:11.0-fpm`](#nextcloud110-fpm)
 -	[`nextcloud:11.0-fpm-alpine`](#nextcloud110-fpm-alpine)
+-	[`nextcloud:11.0-rc`](#nextcloud110-rc)
+-	[`nextcloud:11.0-rc-apache`](#nextcloud110-rc-apache)
+-	[`nextcloud:11.0-rc-fpm`](#nextcloud110-rc-fpm)
+-	[`nextcloud:11.0-rc-fpm-alpine`](#nextcloud110-rc-fpm-alpine)
 -	[`nextcloud:11-apache`](#nextcloud11-apache)
 -	[`nextcloud:11-fpm`](#nextcloud11-fpm)
 -	[`nextcloud:11-fpm-alpine`](#nextcloud11-fpm-alpine)
+-	[`nextcloud:11-rc`](#nextcloud11-rc)
+-	[`nextcloud:11-rc-apache`](#nextcloud11-rc-apache)
+-	[`nextcloud:11-rc-fpm`](#nextcloud11-rc-fpm)
+-	[`nextcloud:11-rc-fpm-alpine`](#nextcloud11-rc-fpm-alpine)
 -	[`nextcloud:12`](#nextcloud12)
 -	[`nextcloud:12.0`](#nextcloud120)
 -	[`nextcloud:12.0.5`](#nextcloud1205)
 -	[`nextcloud:12.0.5-apache`](#nextcloud1205-apache)
 -	[`nextcloud:12.0.5-fpm`](#nextcloud1205-fpm)
 -	[`nextcloud:12.0.5-fpm-alpine`](#nextcloud1205-fpm-alpine)
+-	[`nextcloud:12.0.6-rc`](#nextcloud1206-rc)
+-	[`nextcloud:12.0.6RC1`](#nextcloud1206rc1)
+-	[`nextcloud:12.0.6RC1-apache`](#nextcloud1206rc1-apache)
+-	[`nextcloud:12.0.6RC1-fpm`](#nextcloud1206rc1-fpm)
+-	[`nextcloud:12.0.6RC1-fpm-alpine`](#nextcloud1206rc1-fpm-alpine)
+-	[`nextcloud:12.0.6-rc-apache`](#nextcloud1206-rc-apache)
+-	[`nextcloud:12.0.6-rc-fpm`](#nextcloud1206-rc-fpm)
+-	[`nextcloud:12.0.6-rc-fpm-alpine`](#nextcloud1206-rc-fpm-alpine)
 -	[`nextcloud:12.0-apache`](#nextcloud120-apache)
 -	[`nextcloud:12.0-fpm`](#nextcloud120-fpm)
 -	[`nextcloud:12.0-fpm-alpine`](#nextcloud120-fpm-alpine)
+-	[`nextcloud:12.0-rc`](#nextcloud120-rc)
+-	[`nextcloud:12.0-rc-apache`](#nextcloud120-rc-apache)
+-	[`nextcloud:12.0-rc-fpm`](#nextcloud120-rc-fpm)
+-	[`nextcloud:12.0-rc-fpm-alpine`](#nextcloud120-rc-fpm-alpine)
 -	[`nextcloud:12-apache`](#nextcloud12-apache)
 -	[`nextcloud:12-fpm`](#nextcloud12-fpm)
 -	[`nextcloud:12-fpm-alpine`](#nextcloud12-fpm-alpine)
+-	[`nextcloud:12-rc`](#nextcloud12-rc)
+-	[`nextcloud:12-rc-apache`](#nextcloud12-rc-apache)
+-	[`nextcloud:12-rc-fpm`](#nextcloud12-rc-fpm)
+-	[`nextcloud:12-rc-fpm-alpine`](#nextcloud12-rc-fpm-alpine)
 -	[`nextcloud:13`](#nextcloud13)
 -	[`nextcloud:13.0`](#nextcloud130)
 -	[`nextcloud:13.0.0`](#nextcloud1300)
 -	[`nextcloud:13.0.0-apache`](#nextcloud1300-apache)
 -	[`nextcloud:13.0.0-fpm`](#nextcloud1300-fpm)
 -	[`nextcloud:13.0.0-fpm-alpine`](#nextcloud1300-fpm-alpine)
+-	[`nextcloud:13.0.1-rc`](#nextcloud1301-rc)
+-	[`nextcloud:13.0.1RC1`](#nextcloud1301rc1)
+-	[`nextcloud:13.0.1RC1-apache`](#nextcloud1301rc1-apache)
+-	[`nextcloud:13.0.1RC1-fpm`](#nextcloud1301rc1-fpm)
+-	[`nextcloud:13.0.1RC1-fpm-alpine`](#nextcloud1301rc1-fpm-alpine)
+-	[`nextcloud:13.0.1-rc-apache`](#nextcloud1301-rc-apache)
+-	[`nextcloud:13.0.1-rc-fpm`](#nextcloud1301-rc-fpm)
+-	[`nextcloud:13.0.1-rc-fpm-alpine`](#nextcloud1301-rc-fpm-alpine)
 -	[`nextcloud:13.0-apache`](#nextcloud130-apache)
 -	[`nextcloud:13.0-fpm`](#nextcloud130-fpm)
 -	[`nextcloud:13.0-fpm-alpine`](#nextcloud130-fpm-alpine)
+-	[`nextcloud:13.0-rc`](#nextcloud130-rc)
+-	[`nextcloud:13.0-rc-apache`](#nextcloud130-rc-apache)
+-	[`nextcloud:13.0-rc-fpm`](#nextcloud130-rc-fpm)
+-	[`nextcloud:13.0-rc-fpm-alpine`](#nextcloud130-rc-fpm-alpine)
 -	[`nextcloud:13-apache`](#nextcloud13-apache)
 -	[`nextcloud:13-fpm`](#nextcloud13-fpm)
 -	[`nextcloud:13-fpm-alpine`](#nextcloud13-fpm-alpine)
+-	[`nextcloud:13-rc`](#nextcloud13-rc)
+-	[`nextcloud:13-rc-apache`](#nextcloud13-rc-apache)
+-	[`nextcloud:13-rc-fpm`](#nextcloud13-rc-fpm)
+-	[`nextcloud:13-rc-fpm-alpine`](#nextcloud13-rc-fpm-alpine)
 -	[`nextcloud:apache`](#nextcloudapache)
 -	[`nextcloud:fpm`](#nextcloudfpm)
 -	[`nextcloud:fpm-alpine`](#nextcloudfpm-alpine)
 -	[`nextcloud:latest`](#nextcloudlatest)
+-	[`nextcloud:rc`](#nextcloudrc)
+-	[`nextcloud:rc-apache`](#nextcloudrc-apache)
+-	[`nextcloud:rc-fpm`](#nextcloudrc-fpm)
+-	[`nextcloud:rc-fpm-alpine`](#nextcloudrc-fpm-alpine)
 
 ## `nextcloud:11`
 
@@ -6573,6 +6625,38 @@ CMD ["php-fpm"]
 		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:11.0.8-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8RC1`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8RC1-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8RC1-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8RC1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0.8-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:11.0-apache`
 
 ```console
@@ -9122,6 +9206,22 @@ CMD ["php-fpm"]
 		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:11.0-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:11.0-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:11-apache`
 
 ```console
@@ -11670,6 +11770,22 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 12 Mar 2018 23:57:06 GMT  
 		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:11-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:11-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:11-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:11-rc-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `nextcloud:12`
 
@@ -18201,6 +18317,38 @@ CMD ["php-fpm"]
 		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:12.0.6-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6RC1`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6RC1-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6RC1-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6RC1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0.6-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:12.0-apache`
 
 ```console
@@ -20750,6 +20898,22 @@ CMD ["php-fpm"]
 		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:12.0-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:12.0-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:12-apache`
 
 ```console
@@ -23298,6 +23462,22 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 13 Mar 2018 00:01:32 GMT  
 		Size: 784.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:12-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:12-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:12-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:12-rc-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `nextcloud:13`
 
@@ -29829,6 +30009,38 @@ CMD ["php-fpm"]
 		Size: 783.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:13.0.1-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1RC1`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1RC1-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1RC1-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1RC1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0.1-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:13.0-apache`
 
 ```console
@@ -32378,6 +32590,22 @@ CMD ["php-fpm"]
 		Size: 783.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:13.0-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13.0-rc-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:13-apache`
 
 ```console
@@ -34926,6 +35154,22 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 13 Mar 2018 01:30:45 GMT  
 		Size: 783.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:13-rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:13-rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:13-rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:13-rc-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `nextcloud:apache`
 
@@ -38802,3 +39046,19 @@ CMD ["apache2-foreground"]
 		Last Modified: Mon, 12 Mar 2018 23:10:46 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:rc`
+
+**does not exist** (yet?)
+
+## `nextcloud:rc-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:rc-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:rc-fpm-alpine`
+
+**does not exist** (yet?)
