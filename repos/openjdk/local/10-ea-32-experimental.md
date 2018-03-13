@@ -146,10 +146,6 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apparmor/2.12-2/
-
 
 ### `dpkg` source package: `apr-util=1.6.1-1`
 
@@ -1234,10 +1230,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
 
 
 ### `dpkg` source package: `gdbm=1.14.1-3`
@@ -3103,20 +3095,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.60.3-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.dsc' libsoup2.4_2.60.3-1.dsc 2678 SHA256:93763a70ab80cc476a5db89fcb0f7155a05f9ccf520a146b2f78a5d23100ebac
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3.orig.tar.xz' libsoup2.4_2.60.3.orig.tar.xz 1838640 SHA256:1b0dc762f23abe4e0d29b77370e539fd35f31d8e8e0318d6ddccff395be68a22
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.debian.tar.xz' libsoup2.4_2.60.3-1.debian.tar.xz 16668 SHA256:4d60ae5f30c19e374ca67c9c3f67a28bd5a1b1a8c522b61e74f4c3ff34280ea3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
 
@@ -4077,10 +4062,6 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mesa/17.3.3-1/
-
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -4537,20 +4518,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.22-6
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-6.dsc' pcre2_10.22-6.dsc 2307 SHA256:f4a9eda6eb648de417a538e8623ce76d8551d3a5af0e0a3dfdec0934edb7ed8b
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22.orig.tar.gz' pcre2_10.22.orig.tar.gz 1985688 SHA256:e44d8a6f31bb33cce01ed43743f464290f1d96f60b5fd838786e632d3624a7bd
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-6.diff.gz' pcre2_10.22-6.diff.gz 5490 SHA256:f5ff709a3a8ebc1c147980b7204f942444c3857ade9e642941362639049c9884
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.22-6/
 
-- https://sources.debian.net/src/pcre2/10.22-6/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.22-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.22-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -5259,6 +5233,10 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/wayland/1.14.0-1/
 
 
 ### `dpkg` source package: `wget=1.19.4-1`

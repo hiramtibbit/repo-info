@@ -84,10 +84,6 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apparmor/2.12-2/
-
 
 ### `dpkg` source package: `apt=1.6~alpha7`
 
@@ -505,6 +501,10 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debconf/1.5.65/
 
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`

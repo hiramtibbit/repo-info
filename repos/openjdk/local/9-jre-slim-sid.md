@@ -821,6 +821,10 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/
+
 
 ### `dpkg` source package: `gnupg2=2.2.4-3`
 
@@ -844,6 +848,10 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnupg2/2.2.4-3/
 
 
 ### `dpkg` source package: `gnutls28=3.5.17-1`
@@ -2093,6 +2101,10 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.26.1-4/
 
 
 ### `dpkg` source package: `sed=4.4-2`

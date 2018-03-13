@@ -166,6 +166,10 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6~alpha7/
+
 
 ### `dpkg` source package: `argon2=0~20161029-1.1`
 
@@ -1118,6 +1122,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
 
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
@@ -2730,20 +2738,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.60.3-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.dsc' libsoup2.4_2.60.3-1.dsc 2678 SHA256:93763a70ab80cc476a5db89fcb0f7155a05f9ccf520a146b2f78a5d23100ebac
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3.orig.tar.xz' libsoup2.4_2.60.3.orig.tar.xz 1838640 SHA256:1b0dc762f23abe4e0d29b77370e539fd35f31d8e8e0318d6ddccff395be68a22
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.debian.tar.xz' libsoup2.4_2.60.3-1.debian.tar.xz 16668 SHA256:4d60ae5f30c19e374ca67c9c3f67a28bd5a1b1a8c522b61e74f4c3ff34280ea3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.13-2`
 
