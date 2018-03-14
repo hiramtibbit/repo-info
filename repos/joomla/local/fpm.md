@@ -1,10 +1,10 @@
-# `joomla:3.8.4-fpm`
+# `joomla:3.8.6-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d51afd52a7c285161f890b435000ed791ee87dd10b502dedaa5015f67604abb8`
-- Created: `2018-03-06T06:50:54.011678008Z`
-- Virtual Size: ~ 411.65 Mb  
+- Image ID: `sha256:dd44de956e8f74687edc7d50f6ea8ab9831e506b7ead577eafb9fbc2ebdd49b4`
+- Created: `2018-03-13T19:37:34.453632127Z`
+- Virtual Size: ~ 425.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,15 +17,15 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.34`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.34.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.34.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=21453be3a045204cd2717543ef42771324f411f40962ecda4fe841930a933128`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.15`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.15.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.15.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=0e17192fb43532e4ebaa190ecec9c7e59deea7dadb7dab67b19c2081a68bd817`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.8.4`
-  - `JOOMLA_SHA1=3d8a321e626cdf3823fc6bd62aee222fd12c19ec`
+  - `JOOMLA_VERSION=3.8.6`
+  - `JOOMLA_SHA1=769d86c00b3add41b1fa6c85f3ec823a07df88d1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1533,11 +1533,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
 - `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
 
-Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 - `BSD-3`
 - `BSD-BY-LC-NE`
@@ -1589,10 +1587,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libmcrypt-dev=2.5.8-3.3`
 - `libmcrypt4=2.5.8-3.3`
 
-Licenses: (parsed from: `/usr/share/doc/libmcrypt-dev/copyright`, `/usr/share/doc/libmcrypt4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libmcrypt4/copyright`)
 
 - `LGPL-2`
 
@@ -1611,14 +1608,44 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmcrypt/2.5.8-3.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmcrypt/2.5.8-3.3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libmemcached=1.0.18-4`
+
+Binary Packages:
+
+- `libmemcached11:amd64=1.0.18-4`
+- `libmemcachedutil2:amd64=1.0.18-4`
+
+Licenses: (parsed from: `/usr/share/doc/libmemcached11/copyright`, `/usr/share/doc/libmemcachedutil2/copyright`)
+
+- `BSD-3-clause`
+- `BSD-3-clause-Sun`
+- `BSD-3-clause-TangentOrg`
+- `Bob-Jenkins`
+- `Paul-Hsieh`
+- `RSA-Data-Security`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libmemcached=1.0.18-4
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.dsc' libmemcached_1.0.18-4.dsc 2371 SHA256:75979e654b956f8f3ecb820cb626a3e3de432dc3ade588578904e8a73f44f70c
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18.orig.tar.gz' libmemcached_1.0.18.orig.tar.gz 1039649 SHA256:e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.debian.tar.xz' libmemcached_1.0.18-4.debian.tar.xz 11964 SHA256:2d1dcf6fa4e93d64490783db352bc136483dfe4ccb365ce269e4d66a89bc0cd0
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libmemcached/1.0.18-4/ (for browsing the source)
+- https://sources.debian.net/src/libmemcached/1.0.18-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libmemcached/1.0.18-4/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libpng=1.2.50-2+deb8u3`
 
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
-- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
@@ -2474,6 +2501,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.28-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `postgresql-9.4=9.4.15-0+deb8u1`
+
+Binary Packages:
+
+- `libpq5:amd64=9.4.15-0+deb8u1`
+
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
+
+- `Tcl`
+- `almost exclusively BSD`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.15-0+deb8u1
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.15-0+deb8u1.dsc' postgresql-9.4_9.4.15-0+deb8u1.dsc 3546 SHA256:f435e4079f6fe0214be82e69c1379b6534b094e3d0e8b6e551ed24f9f33ac770
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.15.orig.tar.bz2' postgresql-9.4_9.4.15.orig.tar.bz2 17921677 SHA256:12bfb3c7e8e45515ef921ad365e122682a5c4935dcc0032644433af2de31acc4
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.15-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.15-0+deb8u1.debian.tar.xz 24916 SHA256:8f6a115c7d04e2831a20c32fd5c338a07a37fe7a00de9d4f2229886b49d04989
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/postgresql-9.4/9.4.15-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.15-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.15-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
 Binary Packages:
@@ -2817,31 +2870,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-16+deb8u3`
-
-Binary Packages:
-
-- `unzip=6.0-16+deb8u3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris unzip=6.0-16+deb8u3
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.dsc' unzip_6.0-16+deb8u3.dsc 1339 SHA256:b1a3191a99f7c245d8e29ee0866d5c2b8e9deb191095ae8312dd59a95e616b79
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.debian.tar.xz' unzip_6.0-16+deb8u3.debian.tar.xz 16120 SHA256:8e50ca0ac7d8e00d595a329c91dec7a7e1a1b998857f54062cd26b88c2e3d3b8
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/unzip/6.0-16+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-16+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-16+deb8u3/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `ustr=1.0.4-3`
 
 Binary Packages:
@@ -2958,37 +2986,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.1.1alpha+20120614-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zip=3.0-8`
-
-Binary Packages:
-
-- `zip=3.0-8`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris zip=3.0-8
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-8.dsc' zip_3.0-8.dsc 1296 SHA256:ee914fb5ddd4dddaf50beddc87d108475ab2e5c1dd0c8cb068c130d4c164c397
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0.orig.tar.gz' zip_3.0.orig.tar.gz 1118845 SHA256:f0e8bb1f9b7eb0b01285495a2699df3a4b766784c1765a8f1aeedf63c0806369
-'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-8.debian.tar.gz' zip_3.0-8.debian.tar.gz 7442 SHA256:23673bd6496ca4d8673f807268c51e33e29c7783aa5b758885dd5c06478ef09b
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/zip/3.0-8/ (for browsing the source)
-- https://sources.debian.net/src/zip/3.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zip/3.0-8/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `zlib=1:1.2.8.dfsg-2`
 
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
-- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
