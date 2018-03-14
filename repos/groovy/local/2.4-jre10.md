@@ -148,10 +148,6 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apparmor/2.12-2/
-
 
 ### `dpkg` source package: `apt=1.6~alpha7`
 
@@ -167,10 +163,6 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/1.6~alpha7/
 
 
 ### `dpkg` source package: `argon2=0~20161029-1.1`
@@ -275,20 +267,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.26.1-3
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1-3.dsc' atk1.0_2.26.1-3.dsc 2687 SHA256:fee7db0505b1e3742f722b7a2b3da7ec39359d9f06c158b58eb4b0f499afe184
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1.orig.tar.xz' atk1.0_2.26.1.orig.tar.xz 711960 SHA256:ef00ff6b83851dddc8db38b4d9faeffb99572ba150b0664ee02e46f015ea97cb
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1-3.debian.tar.xz' atk1.0_2.26.1-3.debian.tar.xz 11324 SHA256:f3b032ed976f24eedb15b71dde2ded175f44cebc85821d2782edf30c72ba90f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/atk1.0/2.26.1-3/
 
-- https://sources.debian.net/src/atk1.0/2.26.1-3/ (for browsing the source)
-- https://sources.debian.net/src/atk1.0/2.26.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/atk1.0/2.26.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -434,10 +419,6 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/bash/4.4.18-1/
 
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
@@ -862,10 +843,6 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/debconf/1.5.65/
-
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -1184,10 +1161,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180207-2/
-
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
@@ -1341,10 +1314,6 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/
 
 
 ### `dpkg` source package: `gnome-icon-theme=3.12.0-2`
@@ -1536,10 +1505,6 @@ Licenses: (parsed from: `/usr/share/doc/gsettings-desktop-schemas/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gsettings-desktop-schemas/3.27.90-1/
 
 
 ### `dpkg` source package: `gtk+2.0=2.24.32-1`
@@ -1800,10 +1765,6 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iproute2/4.14.1-2/
 
 
 ### `dpkg` source package: `iptables=1.6.2-1`
@@ -2233,10 +2194,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libdrm/2.4.89-1/
 
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
@@ -2881,20 +2838,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.60.3-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.dsc' libsoup2.4_2.60.3-1.dsc 2678 SHA256:93763a70ab80cc476a5db89fcb0f7155a05f9ccf520a146b2f78a5d23100ebac
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3.orig.tar.xz' libsoup2.4_2.60.3.orig.tar.xz 1838640 SHA256:1b0dc762f23abe4e0d29b77370e539fd35f31d8e8e0318d6ddccff395be68a22
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.3-1.debian.tar.xz' libsoup2.4_2.60.3-1.debian.tar.xz 16668 SHA256:4d60ae5f30c19e374ca67c9c3f67a28bd5a1b1a8c522b61e74f4c3ff34280ea3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.60.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.60.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
 
@@ -3822,10 +3772,6 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mesa/17.3.3-1/
-
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -3936,10 +3882,6 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nghttp2/1.30.0-1/
 
 
 ### `dpkg` source package: `nspr=2:4.18-1`
@@ -4516,10 +4458,6 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/237-2/
-
 
 ### `dpkg` source package: `systemd=237-3`
 
@@ -4749,10 +4687,6 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/wayland/1.14.0-1/
 
 
 ### `dpkg` source package: `wget=1.19.4-1`
