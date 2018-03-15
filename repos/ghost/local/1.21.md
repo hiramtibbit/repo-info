@@ -1,9 +1,9 @@
-# `ghost:1.21.3`
+# `ghost:1.21.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:99b01300cdf6fc78cce57b1e84fd0f5baf0a5a04d41913d80b1d49efc595fb39`
-- Created: `2018-03-07T21:00:54.158291689Z`
+- Image ID: `sha256:007f46fa18ba340db0c87b0aa30a21353b8dc01ae913c1425e727822ddee39d0`
+- Created: `2018-03-13T21:27:50.983129417Z`
 - Virtual Size: ~ 591.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.5.2`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=1.21.3`
+  - `GHOST_VERSION=1.21.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -366,20 +366,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u9
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.dsc' curl_7.38.0-4+deb8u9.dsc 2669 SHA256:3d5ec4e24e0231cebba82f605e713bf13790b49427902e4dd4f7fc8aa4130d33
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.debian.tar.xz' curl_7.38.0-4+deb8u9.debian.tar.xz 45284 SHA256:60bd8df25ebcbd391b6a1de9692b262fecde1ecf598c9017d2a805b1043d12e4
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
