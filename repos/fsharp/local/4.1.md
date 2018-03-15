@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a0ae9a118a05dd095545f19d00b58e71c373b4173f2e09e37e63d2682e7db40`
-- Created: `2018-02-17T07:38:39.366807294Z`
-- Virtual Size: ~ 567.91 Mb  
+- Image ID: `sha256:f3e57efd21c513bf95de5ff14e984f208c40abdcc969d92b1db26d75919a4a6a`
+- Created: `2018-03-14T04:04:26.002471308Z`
+- Virtual Size: ~ 567.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
@@ -883,25 +883,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-4.8/4.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-4.9=4.9.2-10`
+### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u1`
 
 Binary Packages:
 
-- `cpp-4.9=4.9.2-10`
-- `gcc-4.9=4.9.2-10`
-- `gcc-4.9-base:amd64=4.9.2-10`
-- `libasan1:amd64=4.9.2-10`
-- `libatomic1:amd64=4.9.2-10`
-- `libcilkrts5:amd64=4.9.2-10`
-- `libgcc-4.9-dev:amd64=4.9.2-10`
-- `libgcc1:amd64=1:4.9.2-10`
-- `libgomp1:amd64=4.9.2-10`
-- `libitm1:amd64=4.9.2-10`
-- `liblsan0:amd64=4.9.2-10`
-- `libquadmath0:amd64=4.9.2-10`
-- `libstdc++6:amd64=4.9.2-10`
-- `libtsan0:amd64=4.9.2-10`
-- `libubsan0:amd64=4.9.2-10`
+- `cpp-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9-base:amd64=4.9.2-10+deb8u1`
+- `libasan1:amd64=4.9.2-10+deb8u1`
+- `libatomic1:amd64=4.9.2-10+deb8u1`
+- `libcilkrts5:amd64=4.9.2-10+deb8u1`
+- `libgcc-4.9-dev:amd64=4.9.2-10+deb8u1`
+- `libgcc1:amd64=1:4.9.2-10+deb8u1`
+- `libgomp1:amd64=4.9.2-10+deb8u1`
+- `libitm1:amd64=4.9.2-10+deb8u1`
+- `liblsan0:amd64=4.9.2-10+deb8u1`
+- `libquadmath0:amd64=4.9.2-10+deb8u1`
+- `libstdc++6:amd64=4.9.2-10+deb8u1`
+- `libtsan0:amd64=4.9.2-10+deb8u1`
+- `libubsan0:amd64=4.9.2-10+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/gcc-4.9/copyright`, `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libasan1/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-4.9-dev/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -914,17 +914,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/gcc-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u1
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.dsc' gcc-4.9_4.9.2-10+deb8u1.dsc 19264 SHA256:6b8b3822063411e6d31bad8581ccebbd09dd1f537b4a949dbee7520b73dcd3bc
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.diff.gz' gcc-4.9_4.9.2-10+deb8u1.diff.gz 875721 SHA256:c46cb11de5e54f61cb356ea24c72603a66aef2add62fc58df68ba813edffb6b2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.136`
 
