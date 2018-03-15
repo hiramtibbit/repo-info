@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:e6f729feb34682acbb5b4b90520df0a1052c7999a07e1214c367522aa6b47178
+$ docker pull buildpack-deps@sha256:f6ca86cf28d29b122971b5d4634c9bc506e37b652b2e1594e8a3c6ef6d86cbfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -207,39 +207,39 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:sid-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:f50f1a8469b0f99b5be760edb461c82a217971055a36b079233e48c36bc02dab
+$ docker pull buildpack-deps@sha256:a45295be8d93c13dff6e89bbaac0777cb6db459b83218389adad8c2fb9f08841
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.0 MB (66968697 bytes)**  
+-	Total Size: **67.0 MB (67016124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01a4d429a028f8265340ae480d10120d09d18d72564ea204261f0927b1f9d725`
+-	Image ID: `sha256:84075f647c02e08f8049cba9f299e06715d56b166c9fde914578bc8a64cc10e4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 15 Feb 2018 01:35:38 GMT
-ADD file:47880b96018a20d461394bfee9f42022392b5a715ce6caa05668c81d22bd4348 in / 
-# Thu, 15 Feb 2018 01:35:48 GMT
+# Wed, 14 Mar 2018 00:33:40 GMT
+ADD file:fd074388a1e87afa5199386a81dd5480d59e87c99744d1503003e1cf82eeeeaa in / 
+# Wed, 14 Mar 2018 00:33:42 GMT
 CMD ["bash"]
-# Thu, 15 Feb 2018 07:26:36 GMT
+# Thu, 15 Mar 2018 01:54:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Feb 2018 07:28:20 GMT
+# Thu, 15 Mar 2018 01:55:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:bb0115828b7c31e86fe8af9c575640d37b7fda139063b888abc6d9e3918927cb`  
-		Last Modified: Thu, 15 Feb 2018 01:44:12 GMT  
-		Size: 49.5 MB (49452997 bytes)  
+	-	`sha256:caeed743812fb8916f058220350e305c0e940ed0a62904c7cd30f479de34194c`  
+		Last Modified: Wed, 14 Mar 2018 00:41:02 GMT  
+		Size: 49.5 MB (49465766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19b4ca0e4957fe813d9111b3f330183b278dd8533c9283aa11d1304a4305bd6e`  
-		Last Modified: Thu, 15 Feb 2018 08:24:47 GMT  
-		Size: 8.2 MB (8210641 bytes)  
+	-	`sha256:f1aaececf1154f36498af71895dbfe2455b71b0652ce6a3048ac81822992106d`  
+		Last Modified: Thu, 15 Mar 2018 02:30:41 GMT  
+		Size: 8.2 MB (8210793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3705860163816dcaecf267ec2e4ef10cf0abefeeb33cd4678d0c86d79ac89ed4`  
-		Last Modified: Thu, 15 Feb 2018 08:24:50 GMT  
-		Size: 9.3 MB (9305059 bytes)  
+	-	`sha256:5b9a71fba1af38f62545037942242f7cc1e558fa18154f937e68d6d61ed9d625`  
+		Last Modified: Thu, 15 Mar 2018 02:30:41 GMT  
+		Size: 9.3 MB (9339565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:sid-curl` - linux; s390x
