@@ -7,8 +7,8 @@
 -	[`kapacitor:1.3.3-alpine`](#kapacitor133-alpine)
 -	[`kapacitor:1.3-alpine`](#kapacitor13-alpine)
 -	[`kapacitor:1.4`](#kapacitor14)
--	[`kapacitor:1.4.0`](#kapacitor140)
--	[`kapacitor:1.4.0-alpine`](#kapacitor140-alpine)
+-	[`kapacitor:1.4.1`](#kapacitor141)
+-	[`kapacitor:1.4.1-alpine`](#kapacitor141-alpine)
 -	[`kapacitor:1.4-alpine`](#kapacitor14-alpine)
 -	[`kapacitor:alpine`](#kapacitoralpine)
 -	[`kapacitor:latest`](#kapacitorlatest)
@@ -914,7 +914,7 @@ CMD ["kapacitord"]
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kapacitor:1.4.0`
+## `kapacitor:1.4.1`
 
 ```console
 $ docker pull kapacitor@sha256:e2f76c7b2e2b8953c0f9e851bca13da2063acac41f516f8ec33a3dea281b5cf7
@@ -926,7 +926,7 @@ $ docker pull kapacitor@sha256:e2f76c7b2e2b8953c0f9e851bca13da2063acac41f516f8ec
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `kapacitor:1.4.0` - linux; amd64
+### `kapacitor:1.4.1` - linux; amd64
 
 ```console
 $ docker pull kapacitor@sha256:e1fe8e38954dc4337dc00eae579c185fb8018d92365f955a389eb76003520a4e
@@ -1005,7 +1005,7 @@ CMD ["kapacitord"]
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `kapacitor:1.4.0` - linux; arm variant v7
+### `kapacitor:1.4.1` - linux; arm variant v7
 
 ```console
 $ docker pull kapacitor@sha256:b937136b7d3dd12389f3475f77f89a174cd306fd3b1f18b30e453b26982fea7c
@@ -1084,7 +1084,7 @@ CMD ["kapacitord"]
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `kapacitor:1.4.0` - linux; arm64 variant v8
+### `kapacitor:1.4.1` - linux; arm64 variant v8
 
 ```console
 $ docker pull kapacitor@sha256:f3daf44fe3bbbf5b83b4279346b18389893f01fd829f825d0738e409dc3e2d0f
@@ -1163,7 +1163,7 @@ CMD ["kapacitord"]
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kapacitor:1.4.0-alpine`
+## `kapacitor:1.4.1-alpine`
 
 ```console
 $ docker pull kapacitor@sha256:c5253f80a9bc355288a3f3f9fa4971c6271aeeb2d00a6238aab6ee2a84774e90
@@ -1173,7 +1173,7 @@ $ docker pull kapacitor@sha256:c5253f80a9bc355288a3f3f9fa4971c6271aeeb2d00a6238a
 -	Platforms:
 	-	linux; amd64
 
-### `kapacitor:1.4.0-alpine` - linux; amd64
+### `kapacitor:1.4.1-alpine` - linux; amd64
 
 ```console
 $ docker pull kapacitor@sha256:f8c5eec284259bc20843462e7662e1416d799d01f791c0fe474ea0abf639045e
