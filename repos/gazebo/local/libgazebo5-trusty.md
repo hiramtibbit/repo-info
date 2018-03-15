@@ -1093,13 +1093,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.17.5ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.7.dsc' dpkg_1.17.5ubuntu5.7.dsc 2215 SHA256:5337537eecf746c862c12b61508751448d727c37f83216980f5ccc27abf00b5e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.7.tar.xz' dpkg_1.17.5ubuntu5.7.tar.xz 4019728 SHA256:7b1d8a24bfba2cbc1609bc4748b80b92ec924812baad3a6027e015bca5a702a9
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.9-3ubuntu1.3`
 
