@@ -1,6 +1,6 @@
 # `lightstreamer` repo-info
 
-This directory contains additional information about the published artifacts of the `lightstreamer` official image.
+This directory contains additional information about the published artifacts of [the `lightstreamer` official image](https://hub.docker.com/_/lightstreamer/).
 
 -	[the `remote` directory](remote/):
 

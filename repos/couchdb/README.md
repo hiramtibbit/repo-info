@@ -1,6 +1,6 @@
 # `couchdb` repo-info
 
-This directory contains additional information about the published artifacts of the `couchdb` official image.
+This directory contains additional information about the published artifacts of [the `couchdb` official image](https://hub.docker.com/_/couchdb/).
 
 -	[the `remote` directory](remote/):
 

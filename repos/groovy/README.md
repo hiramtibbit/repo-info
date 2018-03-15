@@ -1,6 +1,6 @@
 # `groovy` repo-info
 
-This directory contains additional information about the published artifacts of the `groovy` official image.
+This directory contains additional information about the published artifacts of [the `groovy` official image](https://hub.docker.com/_/groovy/).
 
 -	[the `remote` directory](remote/):
 

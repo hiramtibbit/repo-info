@@ -1,6 +1,6 @@
 # `zookeeper` repo-info
 
-This directory contains additional information about the published artifacts of the `zookeeper` official image.
+This directory contains additional information about the published artifacts of [the `zookeeper` official image](https://hub.docker.com/_/zookeeper/).
 
 -	[the `remote` directory](remote/):
 

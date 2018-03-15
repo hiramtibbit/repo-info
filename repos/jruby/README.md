@@ -1,6 +1,6 @@
 # `jruby` repo-info
 
-This directory contains additional information about the published artifacts of the `jruby` official image.
+This directory contains additional information about the published artifacts of [the `jruby` official image](https://hub.docker.com/_/jruby/).
 
 -	[the `remote` directory](remote/):
 

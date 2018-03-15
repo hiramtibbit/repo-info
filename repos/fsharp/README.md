@@ -1,6 +1,6 @@
 # `fsharp` repo-info
 
-This directory contains additional information about the published artifacts of the `fsharp` official image.
+This directory contains additional information about the published artifacts of [the `fsharp` official image](https://hub.docker.com/_/fsharp/).
 
 -	[the `remote` directory](remote/):
 

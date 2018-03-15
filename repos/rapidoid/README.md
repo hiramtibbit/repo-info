@@ -1,6 +1,6 @@
 # `rapidoid` repo-info
 
-This directory contains additional information about the published artifacts of the `rapidoid` official image.
+This directory contains additional information about the published artifacts of [the `rapidoid` official image](https://hub.docker.com/_/rapidoid/).
 
 -	[the `remote` directory](remote/):
 

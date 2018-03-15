@@ -1,6 +1,6 @@
 # `opensuse` repo-info
 
-This directory contains additional information about the published artifacts of the `opensuse` official image.
+This directory contains additional information about the published artifacts of [the `opensuse` official image](https://hub.docker.com/_/opensuse/).
 
 -	[the `remote` directory](remote/):
 

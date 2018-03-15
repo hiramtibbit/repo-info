@@ -1,6 +1,6 @@
 # `nginx` repo-info
 
-This directory contains additional information about the published artifacts of the `nginx` official image.
+This directory contains additional information about the published artifacts of [the `nginx` official image](https://hub.docker.com/_/nginx/).
 
 -	[the `remote` directory](remote/):
 

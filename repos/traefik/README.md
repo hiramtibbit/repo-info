@@ -1,6 +1,6 @@
 # `traefik` repo-info
 
-This directory contains additional information about the published artifacts of the `traefik` official image.
+This directory contains additional information about the published artifacts of [the `traefik` official image](https://hub.docker.com/_/traefik/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `rethinkdb` repo-info
 
-This directory contains additional information about the published artifacts of the `rethinkdb` official image.
+This directory contains additional information about the published artifacts of [the `rethinkdb` official image](https://hub.docker.com/_/rethinkdb/).
 
 -	[the `remote` directory](remote/):
 

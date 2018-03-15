@@ -1,6 +1,6 @@
 # `redmine` repo-info
 
-This directory contains additional information about the published artifacts of the `redmine` official image.
+This directory contains additional information about the published artifacts of [the `redmine` official image](https://hub.docker.com/_/redmine/).
 
 -	[the `remote` directory](remote/):
 

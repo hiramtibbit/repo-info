@@ -1,6 +1,6 @@
 # `memcached` repo-info
 
-This directory contains additional information about the published artifacts of the `memcached` official image.
+This directory contains additional information about the published artifacts of [the `memcached` official image](https://hub.docker.com/_/memcached/).
 
 -	[the `remote` directory](remote/):
 

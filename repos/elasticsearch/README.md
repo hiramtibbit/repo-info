@@ -1,6 +1,6 @@
 # `elasticsearch` repo-info
 
-This directory contains additional information about the published artifacts of the `elasticsearch` official image.
+This directory contains additional information about the published artifacts of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch/).
 
 -	[the `remote` directory](remote/):
 

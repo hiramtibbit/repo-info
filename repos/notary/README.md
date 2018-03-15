@@ -1,6 +1,6 @@
 # `notary` repo-info
 
-This directory contains additional information about the published artifacts of the `notary` official image.
+This directory contains additional information about the published artifacts of [the `notary` official image](https://hub.docker.com/_/notary/).
 
 -	[the `remote` directory](remote/):
 

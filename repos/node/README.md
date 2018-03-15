@@ -1,6 +1,6 @@
 # `node` repo-info
 
-This directory contains additional information about the published artifacts of the `node` official image.
+This directory contains additional information about the published artifacts of [the `node` official image](https://hub.docker.com/_/node/).
 
 -	[the `remote` directory](remote/):
 

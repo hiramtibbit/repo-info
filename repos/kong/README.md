@@ -1,6 +1,6 @@
 # `kong` repo-info
 
-This directory contains additional information about the published artifacts of the `kong` official image.
+This directory contains additional information about the published artifacts of [the `kong` official image](https://hub.docker.com/_/kong/).
 
 -	[the `remote` directory](remote/):
 

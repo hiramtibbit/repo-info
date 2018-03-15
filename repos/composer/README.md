@@ -1,6 +1,6 @@
 # `composer` repo-info
 
-This directory contains additional information about the published artifacts of the `composer` official image.
+This directory contains additional information about the published artifacts of [the `composer` official image](https://hub.docker.com/_/composer/).
 
 -	[the `remote` directory](remote/):
 

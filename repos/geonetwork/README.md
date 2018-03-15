@@ -1,6 +1,6 @@
 # `geonetwork` repo-info
 
-This directory contains additional information about the published artifacts of the `geonetwork` official image.
+This directory contains additional information about the published artifacts of [the `geonetwork` official image](https://hub.docker.com/_/geonetwork/).
 
 -	[the `remote` directory](remote/):
 

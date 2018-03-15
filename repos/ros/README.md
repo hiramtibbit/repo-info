@@ -1,6 +1,6 @@
 # `ros` repo-info
 
-This directory contains additional information about the published artifacts of the `ros` official image.
+This directory contains additional information about the published artifacts of [the `ros` official image](https://hub.docker.com/_/ros/).
 
 -	[the `remote` directory](remote/):
 

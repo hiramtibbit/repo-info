@@ -1,6 +1,6 @@
 # `silverpeas` repo-info
 
-This directory contains additional information about the published artifacts of the `silverpeas` official image.
+This directory contains additional information about the published artifacts of [the `silverpeas` official image](https://hub.docker.com/_/silverpeas/).
 
 -	[the `remote` directory](remote/):
 

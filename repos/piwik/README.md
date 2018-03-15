@@ -1,6 +1,6 @@
 # `piwik` repo-info
 
-This directory contains additional information about the published artifacts of the `piwik` official image.
+This directory contains additional information about the published artifacts of [the `piwik` official image](https://hub.docker.com/_/piwik/).
 
 -	[the `remote` directory](remote/):
 

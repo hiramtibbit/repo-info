@@ -1,6 +1,6 @@
 # `registry` repo-info
 
-This directory contains additional information about the published artifacts of the `registry` official image.
+This directory contains additional information about the published artifacts of [the `registry` official image](https://hub.docker.com/_/registry/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `flink` repo-info
 
-This directory contains additional information about the published artifacts of the `flink` official image.
+This directory contains additional information about the published artifacts of [the `flink` official image](https://hub.docker.com/_/flink/).
 
 -	[the `remote` directory](remote/):
 

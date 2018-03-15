@@ -1,6 +1,6 @@
 # `hello-seattle` repo-info
 
-This directory contains additional information about the published artifacts of the `hello-seattle` official image.
+This directory contains additional information about the published artifacts of [the `hello-seattle` official image](https://hub.docker.com/_/hello-seattle/).
 
 -	[the `remote` directory](remote/):
 

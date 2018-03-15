@@ -1,6 +1,6 @@
 # `euleros` repo-info
 
-This directory contains additional information about the published artifacts of the `euleros` official image.
+This directory contains additional information about the published artifacts of [the `euleros` official image](https://hub.docker.com/_/euleros/).
 
 -	[the `remote` directory](remote/):
 

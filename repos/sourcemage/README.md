@@ -1,6 +1,6 @@
 # `sourcemage` repo-info
 
-This directory contains additional information about the published artifacts of the `sourcemage` official image.
+This directory contains additional information about the published artifacts of [the `sourcemage` official image](https://hub.docker.com/_/sourcemage/).
 
 -	[the `remote` directory](remote/):
 

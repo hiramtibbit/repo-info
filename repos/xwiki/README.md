@@ -1,6 +1,6 @@
 # `xwiki` repo-info
 
-This directory contains additional information about the published artifacts of the `xwiki` official image.
+This directory contains additional information about the published artifacts of [the `xwiki` official image](https://hub.docker.com/_/xwiki/).
 
 -	[the `remote` directory](remote/):
 

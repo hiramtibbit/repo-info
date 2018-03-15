@@ -1,6 +1,6 @@
 # `crux` repo-info
 
-This directory contains additional information about the published artifacts of the `crux` official image.
+This directory contains additional information about the published artifacts of [the `crux` official image](https://hub.docker.com/_/crux/).
 
 -	[the `remote` directory](remote/):
 

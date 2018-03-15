@@ -1,6 +1,6 @@
 # `swift` repo-info
 
-This directory contains additional information about the published artifacts of the `swift` official image.
+This directory contains additional information about the published artifacts of [the `swift` official image](https://hub.docker.com/_/swift/).
 
 -	[the `remote` directory](remote/):
 

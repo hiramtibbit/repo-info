@@ -1,6 +1,6 @@
 # `mongo` repo-info
 
-This directory contains additional information about the published artifacts of the `mongo` official image.
+This directory contains additional information about the published artifacts of [the `mongo` official image](https://hub.docker.com/_/mongo/).
 
 -	[the `remote` directory](remote/):
 

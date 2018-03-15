@@ -1,6 +1,6 @@
 # `vault` repo-info
 
-This directory contains additional information about the published artifacts of the `vault` official image.
+This directory contains additional information about the published artifacts of [the `vault` official image](https://hub.docker.com/_/vault/).
 
 -	[the `remote` directory](remote/):
 

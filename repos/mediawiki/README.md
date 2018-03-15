@@ -1,6 +1,6 @@
 # `mediawiki` repo-info
 
-This directory contains additional information about the published artifacts of the `mediawiki` official image.
+This directory contains additional information about the published artifacts of [the `mediawiki` official image](https://hub.docker.com/_/mediawiki/).
 
 -	[the `remote` directory](remote/):
 

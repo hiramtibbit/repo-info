@@ -1,6 +1,6 @@
 # `erlang` repo-info
 
-This directory contains additional information about the published artifacts of the `erlang` official image.
+This directory contains additional information about the published artifacts of [the `erlang` official image](https://hub.docker.com/_/erlang/).
 
 -	[the `remote` directory](remote/):
 

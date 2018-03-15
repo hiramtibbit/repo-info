@@ -1,6 +1,6 @@
 # `spiped` repo-info
 
-This directory contains additional information about the published artifacts of the `spiped` official image.
+This directory contains additional information about the published artifacts of [the `spiped` official image](https://hub.docker.com/_/spiped/).
 
 -	[the `remote` directory](remote/):
 

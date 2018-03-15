@@ -1,6 +1,6 @@
 # `golang` repo-info
 
-This directory contains additional information about the published artifacts of the `golang` official image.
+This directory contains additional information about the published artifacts of [the `golang` official image](https://hub.docker.com/_/golang/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `httpd` repo-info
 
-This directory contains additional information about the published artifacts of the `httpd` official image.
+This directory contains additional information about the published artifacts of [the `httpd` official image](https://hub.docker.com/_/httpd/).
 
 -	[the `remote` directory](remote/):
 

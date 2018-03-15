@@ -1,6 +1,6 @@
 # `neurodebian` repo-info
 
-This directory contains additional information about the published artifacts of the `neurodebian` official image.
+This directory contains additional information about the published artifacts of [the `neurodebian` official image](https://hub.docker.com/_/neurodebian/).
 
 -	[the `remote` directory](remote/):
 

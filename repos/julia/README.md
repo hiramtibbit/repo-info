@@ -1,6 +1,6 @@
 # `julia` repo-info
 
-This directory contains additional information about the published artifacts of the `julia` official image.
+This directory contains additional information about the published artifacts of [the `julia` official image](https://hub.docker.com/_/julia/).
 
 -	[the `remote` directory](remote/):
 

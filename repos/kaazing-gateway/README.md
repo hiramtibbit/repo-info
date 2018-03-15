@@ -1,6 +1,6 @@
 # `kaazing-gateway` repo-info
 
-This directory contains additional information about the published artifacts of the `kaazing-gateway` official image.
+This directory contains additional information about the published artifacts of [the `kaazing-gateway` official image](https://hub.docker.com/_/kaazing-gateway/).
 
 -	[the `remote` directory](remote/):
 

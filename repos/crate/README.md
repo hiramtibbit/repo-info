@@ -1,6 +1,6 @@
 # `crate` repo-info
 
-This directory contains additional information about the published artifacts of the `crate` official image.
+This directory contains additional information about the published artifacts of [the `crate` official image](https://hub.docker.com/_/crate/).
 
 -	[the `remote` directory](remote/):
 

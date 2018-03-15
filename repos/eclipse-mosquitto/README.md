@@ -1,6 +1,6 @@
 # `eclipse-mosquitto` repo-info
 
-This directory contains additional information about the published artifacts of the `eclipse-mosquitto` official image.
+This directory contains additional information about the published artifacts of [the `eclipse-mosquitto` official image](https://hub.docker.com/_/eclipse-mosquitto/).
 
 -	[the `remote` directory](remote/):
 

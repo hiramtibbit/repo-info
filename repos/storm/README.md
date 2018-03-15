@@ -1,6 +1,6 @@
 # `storm` repo-info
 
-This directory contains additional information about the published artifacts of the `storm` official image.
+This directory contains additional information about the published artifacts of [the `storm` official image](https://hub.docker.com/_/storm/).
 
 -	[the `remote` directory](remote/):
 

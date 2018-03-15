@@ -1,6 +1,6 @@
 # `elixir` repo-info
 
-This directory contains additional information about the published artifacts of the `elixir` official image.
+This directory contains additional information about the published artifacts of [the `elixir` official image](https://hub.docker.com/_/elixir/).
 
 -	[the `remote` directory](remote/):
 

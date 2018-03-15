@@ -1,6 +1,6 @@
 # `wordpress` repo-info
 
-This directory contains additional information about the published artifacts of the `wordpress` official image.
+This directory contains additional information about the published artifacts of [the `wordpress` official image](https://hub.docker.com/_/wordpress/).
 
 -	[the `remote` directory](remote/):
 

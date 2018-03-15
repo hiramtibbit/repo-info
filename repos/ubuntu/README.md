@@ -1,6 +1,6 @@
 # `ubuntu` repo-info
 
-This directory contains additional information about the published artifacts of the `ubuntu` official image.
+This directory contains additional information about the published artifacts of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu/).
 
 -	[the `remote` directory](remote/):
 

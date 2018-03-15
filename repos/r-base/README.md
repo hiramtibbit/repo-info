@@ -1,6 +1,6 @@
 # `r-base` repo-info
 
-This directory contains additional information about the published artifacts of the `r-base` official image.
+This directory contains additional information about the published artifacts of [the `r-base` official image](https://hub.docker.com/_/r-base/).
 
 -	[the `remote` directory](remote/):
 

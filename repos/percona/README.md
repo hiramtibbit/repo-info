@@ -1,6 +1,6 @@
 # `percona` repo-info
 
-This directory contains additional information about the published artifacts of the `percona` official image.
+This directory contains additional information about the published artifacts of [the `percona` official image](https://hub.docker.com/_/percona/).
 
 -	[the `remote` directory](remote/):
 

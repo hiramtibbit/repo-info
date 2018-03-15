@@ -1,6 +1,6 @@
 # `openjdk` repo-info
 
-This directory contains additional information about the published artifacts of the `openjdk` official image.
+This directory contains additional information about the published artifacts of [the `openjdk` official image](https://hub.docker.com/_/openjdk/).
 
 -	[the `remote` directory](remote/):
 

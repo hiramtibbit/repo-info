@@ -1,6 +1,6 @@
 # `mongo-express` repo-info
 
-This directory contains additional information about the published artifacts of the `mongo-express` official image.
+This directory contains additional information about the published artifacts of [the `mongo-express` official image](https://hub.docker.com/_/mongo-express/).
 
 -	[the `remote` directory](remote/):
 

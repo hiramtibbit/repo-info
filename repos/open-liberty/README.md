@@ -1,6 +1,6 @@
 # `open-liberty` repo-info
 
-This directory contains additional information about the published artifacts of the `open-liberty` official image.
+This directory contains additional information about the published artifacts of [the `open-liberty` official image](https://hub.docker.com/_/open-liberty/).
 
 -	[the `remote` directory](remote/):
 

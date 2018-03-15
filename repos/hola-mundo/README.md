@@ -1,6 +1,6 @@
 # `hola-mundo` repo-info
 
-This directory contains additional information about the published artifacts of the `hola-mundo` official image.
+This directory contains additional information about the published artifacts of [the `hola-mundo` official image](https://hub.docker.com/_/hola-mundo/).
 
 -	[the `remote` directory](remote/):
 

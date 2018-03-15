@@ -1,6 +1,6 @@
 # `drupal` repo-info
 
-This directory contains additional information about the published artifacts of the `drupal` official image.
+This directory contains additional information about the published artifacts of [the `drupal` official image](https://hub.docker.com/_/drupal/).
 
 -	[the `remote` directory](remote/):
 

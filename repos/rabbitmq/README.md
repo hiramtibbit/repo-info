@@ -1,6 +1,6 @@
 # `rabbitmq` repo-info
 
-This directory contains additional information about the published artifacts of the `rabbitmq` official image.
+This directory contains additional information about the published artifacts of [the `rabbitmq` official image](https://hub.docker.com/_/rabbitmq/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `znc` repo-info
 
-This directory contains additional information about the published artifacts of the `znc` official image.
+This directory contains additional information about the published artifacts of [the `znc` official image](https://hub.docker.com/_/znc/).
 
 -	[the `remote` directory](remote/):
 

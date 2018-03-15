@@ -1,6 +1,6 @@
 # `nuxeo` repo-info
 
-This directory contains additional information about the published artifacts of the `nuxeo` official image.
+This directory contains additional information about the published artifacts of [the `nuxeo` official image](https://hub.docker.com/_/nuxeo/).
 
 -	[the `remote` directory](remote/):
 

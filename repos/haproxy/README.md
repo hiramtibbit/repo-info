@@ -1,6 +1,6 @@
 # `haproxy` repo-info
 
-This directory contains additional information about the published artifacts of the `haproxy` official image.
+This directory contains additional information about the published artifacts of [the `haproxy` official image](https://hub.docker.com/_/haproxy/).
 
 -	[the `remote` directory](remote/):
 

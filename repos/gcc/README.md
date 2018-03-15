@@ -1,6 +1,6 @@
 # `gcc` repo-info
 
-This directory contains additional information about the published artifacts of the `gcc` official image.
+This directory contains additional information about the published artifacts of [the `gcc` official image](https://hub.docker.com/_/gcc/).
 
 -	[the `remote` directory](remote/):
 

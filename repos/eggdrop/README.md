@@ -1,6 +1,6 @@
 # `eggdrop` repo-info
 
-This directory contains additional information about the published artifacts of the `eggdrop` official image.
+This directory contains additional information about the published artifacts of [the `eggdrop` official image](https://hub.docker.com/_/eggdrop/).
 
 -	[the `remote` directory](remote/):
 

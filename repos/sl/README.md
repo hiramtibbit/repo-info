@@ -1,6 +1,6 @@
 # `sl` repo-info
 
-This directory contains additional information about the published artifacts of the `sl` official image.
+This directory contains additional information about the published artifacts of [the `sl` official image](https://hub.docker.com/_/sl/).
 
 -	[the `remote` directory](remote/):
 

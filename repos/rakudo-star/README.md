@@ -1,6 +1,6 @@
 # `rakudo-star` repo-info
 
-This directory contains additional information about the published artifacts of the `rakudo-star` official image.
+This directory contains additional information about the published artifacts of [the `rakudo-star` official image](https://hub.docker.com/_/rakudo-star/).
 
 -	[the `remote` directory](remote/):
 

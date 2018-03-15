@@ -1,6 +1,6 @@
 # `centos` repo-info
 
-This directory contains additional information about the published artifacts of the `centos` official image.
+This directory contains additional information about the published artifacts of [the `centos` official image](https://hub.docker.com/_/centos/).
 
 -	[the `remote` directory](remote/):
 

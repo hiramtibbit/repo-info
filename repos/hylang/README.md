@@ -1,6 +1,6 @@
 # `hylang` repo-info
 
-This directory contains additional information about the published artifacts of the `hylang` official image.
+This directory contains additional information about the published artifacts of [the `hylang` official image](https://hub.docker.com/_/hylang/).
 
 -	[the `remote` directory](remote/):
 

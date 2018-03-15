@@ -1,6 +1,6 @@
 # `postgres` repo-info
 
-This directory contains additional information about the published artifacts of the `postgres` official image.
+This directory contains additional information about the published artifacts of [the `postgres` official image](https://hub.docker.com/_/postgres/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `adminer` repo-info
 
-This directory contains additional information about the published artifacts of the `adminer` official image.
+This directory contains additional information about the published artifacts of [the `adminer` official image](https://hub.docker.com/_/adminer/).
 
 -	[the `remote` directory](remote/):
 

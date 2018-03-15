@@ -1,6 +1,6 @@
 # `php-zendserver` repo-info
 
-This directory contains additional information about the published artifacts of the `php-zendserver` official image.
+This directory contains additional information about the published artifacts of [the `php-zendserver` official image](https://hub.docker.com/_/php-zendserver/).
 
 -	[the `remote` directory](remote/):
 

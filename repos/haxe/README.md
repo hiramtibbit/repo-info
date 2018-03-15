@@ -1,6 +1,6 @@
 # `haxe` repo-info
 
-This directory contains additional information about the published artifacts of the `haxe` official image.
+This directory contains additional information about the published artifacts of [the `haxe` official image](https://hub.docker.com/_/haxe/).
 
 -	[the `remote` directory](remote/):
 

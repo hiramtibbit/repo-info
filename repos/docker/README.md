@@ -1,6 +1,6 @@
 # `docker` repo-info
 
-This directory contains additional information about the published artifacts of the `docker` official image.
+This directory contains additional information about the published artifacts of [the `docker` official image](https://hub.docker.com/_/docker/).
 
 -	[the `remote` directory](remote/):
 

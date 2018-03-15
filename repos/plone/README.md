@@ -1,6 +1,6 @@
 # `plone` repo-info
 
-This directory contains additional information about the published artifacts of the `plone` official image.
+This directory contains additional information about the published artifacts of [the `plone` official image](https://hub.docker.com/_/plone/).
 
 -	[the `remote` directory](remote/):
 

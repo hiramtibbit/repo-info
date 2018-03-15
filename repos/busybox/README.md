@@ -1,6 +1,6 @@
 # `busybox` repo-info
 
-This directory contains additional information about the published artifacts of the `busybox` official image.
+This directory contains additional information about the published artifacts of [the `busybox` official image](https://hub.docker.com/_/busybox/).
 
 -	[the `remote` directory](remote/):
 

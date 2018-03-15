@@ -1,6 +1,6 @@
 # `mariadb` repo-info
 
-This directory contains additional information about the published artifacts of the `mariadb` official image.
+This directory contains additional information about the published artifacts of [the `mariadb` official image](https://hub.docker.com/_/mariadb/).
 
 -	[the `remote` directory](remote/):
 

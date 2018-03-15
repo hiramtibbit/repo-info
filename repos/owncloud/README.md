@@ -1,6 +1,6 @@
 # `owncloud` repo-info
 
-This directory contains additional information about the published artifacts of the `owncloud` official image.
+This directory contains additional information about the published artifacts of [the `owncloud` official image](https://hub.docker.com/_/owncloud/).
 
 -	[the `remote` directory](remote/):
 

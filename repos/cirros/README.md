@@ -1,6 +1,6 @@
 # `cirros` repo-info
 
-This directory contains additional information about the published artifacts of the `cirros` official image.
+This directory contains additional information about the published artifacts of [the `cirros` official image](https://hub.docker.com/_/cirros/).
 
 -	[the `remote` directory](remote/):
 

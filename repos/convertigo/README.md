@@ -1,6 +1,6 @@
 # `convertigo` repo-info
 
-This directory contains additional information about the published artifacts of the `convertigo` official image.
+This directory contains additional information about the published artifacts of [the `convertigo` official image](https://hub.docker.com/_/convertigo/).
 
 -	[the `remote` directory](remote/):
 

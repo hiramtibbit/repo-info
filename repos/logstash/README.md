@@ -1,6 +1,6 @@
 # `logstash` repo-info
 
-This directory contains additional information about the published artifacts of the `logstash` official image.
+This directory contains additional information about the published artifacts of [the `logstash` official image](https://hub.docker.com/_/logstash/).
 
 -	[the `remote` directory](remote/):
 

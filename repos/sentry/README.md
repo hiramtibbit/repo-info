@@ -1,6 +1,6 @@
 # `sentry` repo-info
 
-This directory contains additional information about the published artifacts of the `sentry` official image.
+This directory contains additional information about the published artifacts of [the `sentry` official image](https://hub.docker.com/_/sentry/).
 
 -	[the `remote` directory](remote/):
 

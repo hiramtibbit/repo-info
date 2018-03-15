@@ -1,6 +1,6 @@
 # `neo4j` repo-info
 
-This directory contains additional information about the published artifacts of the `neo4j` official image.
+This directory contains additional information about the published artifacts of [the `neo4j` official image](https://hub.docker.com/_/neo4j/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `aerospike` repo-info
 
-This directory contains additional information about the published artifacts of the `aerospike` official image.
+This directory contains additional information about the published artifacts of [the `aerospike` official image](https://hub.docker.com/_/aerospike/).
 
 -	[the `remote` directory](remote/):
 

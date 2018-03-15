@@ -1,6 +1,6 @@
 # `clefos` repo-info
 
-This directory contains additional information about the published artifacts of the `clefos` official image.
+This directory contains additional information about the published artifacts of [the `clefos` official image](https://hub.docker.com/_/clefos/).
 
 -	[the `remote` directory](remote/):
 

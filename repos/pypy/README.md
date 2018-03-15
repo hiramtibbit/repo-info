@@ -1,6 +1,6 @@
 # `pypy` repo-info
 
-This directory contains additional information about the published artifacts of the `pypy` official image.
+This directory contains additional information about the published artifacts of [the `pypy` official image](https://hub.docker.com/_/pypy/).
 
 -	[the `remote` directory](remote/):
 

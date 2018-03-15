@@ -1,6 +1,6 @@
 # `couchbase` repo-info
 
-This directory contains additional information about the published artifacts of the `couchbase` official image.
+This directory contains additional information about the published artifacts of [the `couchbase` official image](https://hub.docker.com/_/couchbase/).
 
 -	[the `remote` directory](remote/):
 

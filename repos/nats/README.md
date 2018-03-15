@@ -1,6 +1,6 @@
 # `nats` repo-info
 
-This directory contains additional information about the published artifacts of the `nats` official image.
+This directory contains additional information about the published artifacts of [the `nats` official image](https://hub.docker.com/_/nats/).
 
 -	[the `remote` directory](remote/):
 

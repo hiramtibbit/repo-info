@@ -1,6 +1,6 @@
 # `swarm` repo-info
 
-This directory contains additional information about the published artifacts of the `swarm` official image.
+This directory contains additional information about the published artifacts of [the `swarm` official image](https://hub.docker.com/_/swarm/).
 
 -	[the `remote` directory](remote/):
 

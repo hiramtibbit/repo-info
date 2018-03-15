@@ -1,6 +1,6 @@
 # `buildpack-deps` repo-info
 
-This directory contains additional information about the published artifacts of the `buildpack-deps` official image.
+This directory contains additional information about the published artifacts of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps/).
 
 -	[the `remote` directory](remote/):
 

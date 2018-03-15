@@ -1,6 +1,6 @@
 # `clojure` repo-info
 
-This directory contains additional information about the published artifacts of the `clojure` official image.
+This directory contains additional information about the published artifacts of [the `clojure` official image](https://hub.docker.com/_/clojure/).
 
 -	[the `remote` directory](remote/):
 

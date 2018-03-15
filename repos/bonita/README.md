@@ -1,6 +1,6 @@
 # `bonita` repo-info
 
-This directory contains additional information about the published artifacts of the `bonita` official image.
+This directory contains additional information about the published artifacts of [the `bonita` official image](https://hub.docker.com/_/bonita/).
 
 -	[the `remote` directory](remote/):
 

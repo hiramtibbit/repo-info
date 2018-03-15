@@ -1,6 +1,6 @@
 # `php` repo-info
 
-This directory contains additional information about the published artifacts of the `php` official image.
+This directory contains additional information about the published artifacts of [the `php` official image](https://hub.docker.com/_/php/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `kapacitor` repo-info
 
-This directory contains additional information about the published artifacts of the `kapacitor` official image.
+This directory contains additional information about the published artifacts of [the `kapacitor` official image](https://hub.docker.com/_/kapacitor/).
 
 -	[the `remote` directory](remote/):
 

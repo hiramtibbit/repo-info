@@ -1,6 +1,6 @@
 # `jenkins` repo-info
 
-This directory contains additional information about the published artifacts of the `jenkins` official image.
+This directory contains additional information about the published artifacts of [the `jenkins` official image](https://hub.docker.com/_/jenkins/).
 
 -	[the `remote` directory](remote/):
 

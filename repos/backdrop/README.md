@@ -1,6 +1,6 @@
 # `backdrop` repo-info
 
-This directory contains additional information about the published artifacts of the `backdrop` official image.
+This directory contains additional information about the published artifacts of [the `backdrop` official image](https://hub.docker.com/_/backdrop/).
 
 -	[the `remote` directory](remote/):
 

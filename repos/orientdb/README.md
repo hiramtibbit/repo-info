@@ -1,6 +1,6 @@
 # `orientdb` repo-info
 
-This directory contains additional information about the published artifacts of the `orientdb` official image.
+This directory contains additional information about the published artifacts of [the `orientdb` official image](https://hub.docker.com/_/orientdb/).
 
 -	[the `remote` directory](remote/):
 

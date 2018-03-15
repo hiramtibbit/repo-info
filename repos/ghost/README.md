@@ -1,6 +1,6 @@
 # `ghost` repo-info
 
-This directory contains additional information about the published artifacts of the `ghost` official image.
+This directory contains additional information about the published artifacts of [the `ghost` official image](https://hub.docker.com/_/ghost/).
 
 -	[the `remote` directory](remote/):
 

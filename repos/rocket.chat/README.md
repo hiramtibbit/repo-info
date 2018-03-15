@@ -1,6 +1,6 @@
 # `rocket.chat` repo-info
 
-This directory contains additional information about the published artifacts of the `rocket.chat` official image.
+This directory contains additional information about the published artifacts of [the `rocket.chat` official image](https://hub.docker.com/_/rocket.chat/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `hello-world` repo-info
 
-This directory contains additional information about the published artifacts of the `hello-world` official image.
+This directory contains additional information about the published artifacts of [the `hello-world` official image](https://hub.docker.com/_/hello-world/).
 
 -	[the `remote` directory](remote/):
 

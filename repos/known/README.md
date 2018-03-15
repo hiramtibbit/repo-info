@@ -1,6 +1,6 @@
 # `known` repo-info
 
-This directory contains additional information about the published artifacts of the `known` official image.
+This directory contains additional information about the published artifacts of [the `known` official image](https://hub.docker.com/_/known/).
 
 -	[the `remote` directory](remote/):
 

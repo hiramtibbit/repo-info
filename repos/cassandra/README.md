@@ -1,6 +1,6 @@
 # `cassandra` repo-info
 
-This directory contains additional information about the published artifacts of the `cassandra` official image.
+This directory contains additional information about the published artifacts of [the `cassandra` official image](https://hub.docker.com/_/cassandra/).
 
 -	[the `remote` directory](remote/):
 

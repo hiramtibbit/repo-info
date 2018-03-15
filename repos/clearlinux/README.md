@@ -1,6 +1,6 @@
 # `clearlinux` repo-info
 
-This directory contains additional information about the published artifacts of the `clearlinux` official image.
+This directory contains additional information about the published artifacts of [the `clearlinux` official image](https://hub.docker.com/_/clearlinux/).
 
 -	[the `remote` directory](remote/):
 

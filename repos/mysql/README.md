@@ -1,6 +1,6 @@
 # `mysql` repo-info
 
-This directory contains additional information about the published artifacts of the `mysql` official image.
+This directory contains additional information about the published artifacts of [the `mysql` official image](https://hub.docker.com/_/mysql/).
 
 -	[the `remote` directory](remote/):
 

@@ -1,6 +1,6 @@
 # `mageia` repo-info
 
-This directory contains additional information about the published artifacts of the `mageia` official image.
+This directory contains additional information about the published artifacts of [the `mageia` official image](https://hub.docker.com/_/mageia/).
 
 -	[the `remote` directory](remote/):
 

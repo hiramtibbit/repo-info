@@ -1,6 +1,6 @@
 # `arangodb` repo-info
 
-This directory contains additional information about the published artifacts of the `arangodb` official image.
+This directory contains additional information about the published artifacts of [the `arangodb` official image](https://hub.docker.com/_/arangodb/).
 
 -	[the `remote` directory](remote/):
 

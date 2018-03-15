@@ -1,6 +1,6 @@
 # `nextcloud` repo-info
 
-This directory contains additional information about the published artifacts of the `nextcloud` official image.
+This directory contains additional information about the published artifacts of [the `nextcloud` official image](https://hub.docker.com/_/nextcloud/).
 
 -	[the `remote` directory](remote/):
 

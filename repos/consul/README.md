@@ -1,6 +1,6 @@
 # `consul` repo-info
 
-This directory contains additional information about the published artifacts of the `consul` official image.
+This directory contains additional information about the published artifacts of [the `consul` official image](https://hub.docker.com/_/consul/).
 
 -	[the `remote` directory](remote/):
 
