@@ -949,14 +949,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180218-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180218-1ubuntu1.dsc' gcc-8_8-20180218-1ubuntu1.dsc 36246 SHA256:1174c47d8a3d81ae5183930c453b57a016b538e9b7566cb881a781ac89b30a62
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180218.orig.tar.gz' gcc-8_8-20180218.orig.tar.gz 70177617 SHA256:d4bdaf32c059362049eb368ccf6a21e564155435ba100e8981722c587aa2f68a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180218-1ubuntu1.diff.gz' gcc-8_8-20180218-1ubuntu1.diff.gz 459783 SHA256:8a73aa22c978a57463d1f1d80d9682be5d1073028acfd3fce0da01a18254e34f
-```
 
 ### `dpkg` source package: `gcc-defaults=1.173ubuntu1`
 
@@ -992,14 +987,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.14.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-4.dsc' gdbm_1.14.1-4.dsc 2120 SHA256:8ebe42a18e901c0eaacf39fc41e36e3277995f1965b7458b32261d52fcbcd05c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-4.debian.tar.xz' gdbm_1.14.1-4.debian.tar.xz 25968 SHA256:622d4bcb88f81a633b3ee03779921758ef78fc8fee23f4264f68aa61d1106a50
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdbm/1.14.1-4/
+
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
@@ -2626,14 +2620,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-10.11
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-10.11.dsc' linux_4.15.0-10.11.dsc 6228 SHA256:48b9ab0df0558fd08d8148d16cd95a124481d4158da57aeb3424955e6462e21f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-10.11.diff.gz' linux_4.15.0-10.11.diff.gz 6943721 SHA256:3e94ebcbe2f2b4d9b5a338bc014e983331de3ade67d2974747bc0bb805cadb4f
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -3484,14 +3473,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.4-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4-4.dsc' python3-stdlib-extensions_3.6.4-4.dsc 2413 SHA256:0d563401f391c059466124cc22ff9e7ff5b68361fb0a6494a086153a4a57cd37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4.orig.tar.xz' python3-stdlib-extensions_3.6.4.orig.tar.xz 1034852 SHA256:27eb6d07b2cbc0b469da02f5353e2bb55a1c4298eb96bdeb9c8275d81a2348ac
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4-4.debian.tar.xz' python3-stdlib-extensions_3.6.4-4.debian.tar.xz 20504 SHA256:86318f697e2b64d85960a5c6dd108bd0faaed9a1bec18a7e5205b141054fb2ef
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.4-4/
+
 
 ### `dpkg` source package: `python3.6=3.6.4-4`
 
@@ -3522,14 +3510,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.4-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.4-4.dsc' python3.6_3.6.4-4.dsc 3401 SHA256:d08408b70481ff5c209f1d1ce35a21de562e270d0026a570655d26fc96a8b419
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.4.orig.tar.xz' python3.6_3.6.4.orig.tar.xz 16992824 SHA256:159b932bf56aeaa76fd66e7420522d8c8853d486b8567c459b84fe2ed13bcaba
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.4-4.debian.tar.xz' python3.6_3.6.4-4.debian.tar.xz 297204 SHA256:709e36e8cf04dfbcd50121fe8aa6dc3475ece84f60a32a7567fd341c31abaa67
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.6/3.6.4-4/
+
 
 ### `dpkg` source package: `readline=7.0-3`
 

@@ -612,14 +612,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.14.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-4.dsc' gdbm_1.14.1-4.dsc 2120 SHA256:8ebe42a18e901c0eaacf39fc41e36e3277995f1965b7458b32261d52fcbcd05c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-4.debian.tar.xz' gdbm_1.14.1-4.debian.tar.xz 25968 SHA256:622d4bcb88f81a633b3ee03779921758ef78fc8fee23f4264f68aa61d1106a50
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdbm/1.14.1-4/
+
 
 ### `dpkg` source package: `git=1:2.15.1-1ubuntu2`
 

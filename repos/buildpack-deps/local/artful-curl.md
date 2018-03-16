@@ -261,14 +261,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.3.dsc' curl_7.55.1-1ubuntu2.3.dsc 2780 SHA256:fb953c2b4118017bebd8b4a000d624b36a8545af3163446169af53c56b8812cb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.3.debian.tar.xz' curl_7.55.1-1ubuntu2.3.debian.tar.xz 37768 SHA256:03283a12a4125924ce205920cd88ed3525d590a78f90f5eea10fde7897634b4d
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 

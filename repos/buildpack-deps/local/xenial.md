@@ -568,14 +568,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.dsc' curl_7.47.0-1ubuntu2.6.dsc 2713 SHA256:6f0c754431a0d59684e149ebb69a174d7ba37f4caa424845164baf14a899c035
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.debian.tar.xz' curl_7.47.0-1ubuntu2.6.debian.tar.xz 47148 SHA256:9b5f48817215f5cf95e7b96f2aa71a6acbb1f956f13eb500e66b57de230821fb
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -779,13 +774,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.3.dsc' dpkg_1.18.4ubuntu1.3.dsc 1510 SHA256:b7ed29cd148b3bb644cdad8946a396d0ef73ef3457c6e4f15fce2d3659877b82
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.3.tar.xz' dpkg_1.18.4ubuntu1.3.tar.xz 4297164 SHA256:1a5b94b074c15b7dfe392da27ea80b9e7174f38dc3afdc46a80bb35fd68bdcac
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
