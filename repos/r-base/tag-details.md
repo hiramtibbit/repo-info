@@ -84,7 +84,7 @@ CMD ["R"]
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:70f2a5571dfdb64a9fffd45f48638217dd1856671901f87acd68367cb0cf8ee5
+$ docker pull r-base@sha256:a0c65d74f5a1d9c38bbe900dc62830d57cc5440e313d275126ee91e4a4be129d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -94,14 +94,14 @@ $ docker pull r-base@sha256:70f2a5571dfdb64a9fffd45f48638217dd1856671901f87acd68
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:12de3102306f79563b15ffb7e9fd2692db362a5e82d95260d6636a2021588677
+$ docker pull r-base@sha256:133aa72230a955c644d776b5ab8351dd59ea4eab4e56e50757ce8b1918e79006
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280220111 bytes)**  
+-	Total Size: **280.2 MB (280203911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1e1c25485af52c7784dc5aaea544af4c353bb678db3ec9db95d77837deea077`
+-	Image ID: `sha256:f7c545621aa1dd2eb9897f70225a73e7758e21270adfb9265acf5cff50dc641b`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -123,11 +123,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Wed, 14 Mar 2018 23:59:21 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list 	&& echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Wed, 14 Mar 2018 23:59:21 GMT
-ENV R_BASE_VERSION=3.4.3
-# Thu, 15 Mar 2018 00:01:23 GMT
-RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}* 		r-base-dev=${R_BASE_VERSION}* 		r-recommended=${R_BASE_VERSION}*         && echo 'options(repos = c(CRAN = "https://cran.rstudio.com/"), download.file.method = "libcurl")' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 00:01:24 GMT
+# Fri, 16 Mar 2018 18:20:36 GMT
+ENV R_BASE_VERSION=3.4.4
+# Fri, 16 Mar 2018 18:22:22 GMT
+RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}* 		r-base-dev=${R_BASE_VERSION}* 		r-recommended=${R_BASE_VERSION}*         && echo 'options(repos = c(CRAN = "https://cloud.r-project.org/"), download.file.method = "libcurl")' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 16 Mar 2018 18:22:23 GMT
 CMD ["R"]
 ```
 
@@ -152,7 +152,7 @@ CMD ["R"]
 		Last Modified: Thu, 15 Mar 2018 00:13:55 GMT  
 		Size: 295.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23cbde34b18b46d407a5682c5bce1e299481c17b3d147e187a6adba834772de3`  
-		Last Modified: Thu, 15 Mar 2018 00:14:22 GMT  
-		Size: 207.2 MB (207238871 bytes)  
+	-	`sha256:08a297c4fb9ce01a25578cd090ccb443ac21268ca34c7a8985121f001c8bf7c4`  
+		Last Modified: Fri, 16 Mar 2018 18:35:26 GMT  
+		Size: 207.2 MB (207222671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
