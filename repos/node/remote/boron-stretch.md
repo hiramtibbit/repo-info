@@ -1,7 +1,7 @@
 ## `node:boron-stretch`
 
 ```console
-$ docker pull node@sha256:bd6dc9419ab7f515375032cd18a22933a445ad38e9dc0e36e786baf97d78bd79
+$ docker pull node@sha256:249197c19921d9f3ea9e7f0f242f54439247c3d3e98d64f7a9dcc4ce91217160
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull node@sha256:bd6dc9419ab7f515375032cd18a22933a445ad38e9dc0e36e786ba
 ### `node:boron-stretch` - linux; amd64
 
 ```console
-$ docker pull node@sha256:7f821402708c819c659ddc70ea0d81a12f13980cc9cfcd5295c54a878941abf3
+$ docker pull node@sha256:62b8b927161b8218e6d5c077669384bbeb886f5182daa69587b541f55d55cfeb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **339.4 MB (339414803 bytes)**  
+-	Total Size: **339.4 MB (339414863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64282bb7d1c95d8df6a6eed485a6d4f6a7f94fde6980a76334f617759a009cba`
+-	Image ID: `sha256:68d899192c5b1a4ad22215feee7f02284a9e6917a1c68afee5b0de83b073df7e`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -49,9 +49,9 @@ ENV NODE_VERSION=6.13.1
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 # Thu, 15 Mar 2018 05:09:57 GMT
 ENV YARN_VERSION=1.5.1
-# Thu, 15 Mar 2018 05:10:02 GMT
-RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 15 Mar 2018 05:10:02 GMT
+# Fri, 16 Mar 2018 10:25:29 GMT
+RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION /opt/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
+# Fri, 16 Mar 2018 10:25:29 GMT
 CMD ["node"]
 ```
 
@@ -88,9 +88,9 @@ CMD ["node"]
 		Last Modified: Thu, 15 Mar 2018 05:30:39 GMT  
 		Size: 14.5 MB (14474183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95b85efe5440df7df18243d1e4d38768b12c799dfba33e37f9b6242baeba7621`  
-		Last Modified: Thu, 15 Mar 2018 05:30:37 GMT  
-		Size: 1.1 MB (1062975 bytes)  
+	-	`sha256:04042759de2c1875d26353de87eb72f63d5c9e5cd2235c9e6d70562a02c67a79`  
+		Last Modified: Fri, 16 Mar 2018 11:24:31 GMT  
+		Size: 1.1 MB (1063035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:boron-stretch` - linux; arm variant v7
