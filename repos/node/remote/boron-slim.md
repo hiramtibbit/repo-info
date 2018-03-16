@@ -1,7 +1,7 @@
 ## `node:boron-slim`
 
 ```console
-$ docker pull node@sha256:9f746cb1184c5677d3b2c50559a33f770287f2c3b99f6679d56bbf4e7574d411
+$ docker pull node@sha256:fa5674027381e9b2a4873218447b59b7ffc8bef058d5df4e230c70c5bae553f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -80,14 +80,14 @@ CMD ["node"]
 ### `node:boron-slim` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:b17430df8bada2466015562700588b555364d90064e290375b1a63a22aa9a2c2
+$ docker pull node@sha256:20f595f4ba24cf2bbe58ce8ed8c8ea507213d1b5f9b73c5fef757708988efa42
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.1 MB (82086219 bytes)**  
+-	Total Size: **82.1 MB (82086297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aad374664f3378c1d2b08f756a49fc8375b52df9435fdcaad657a11121c51b54`
+-	Image ID: `sha256:e191d862e0f27e3dae523a12bd4458fd91bcbdbb4a37583de0ad37dffb69c9b4`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -109,9 +109,9 @@ ENV NODE_VERSION=6.13.1
 RUN buildDeps='xz-utils'     && ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64';;       ppc64el) ARCH='ppc64le';;       s390x) ARCH='s390x';;       arm64) ARCH='arm64';;       armhf) ARCH='armv7l';;       i386) ARCH='x86';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 # Wed, 14 Mar 2018 16:39:39 GMT
 ENV YARN_VERSION=1.5.1
-# Wed, 14 Mar 2018 16:39:43 GMT
-RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 14 Mar 2018 16:39:43 GMT
+# Fri, 16 Mar 2018 04:58:05 GMT
+RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION /opt/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
+# Fri, 16 Mar 2018 04:58:05 GMT
 CMD ["node"]
 ```
 
@@ -136,9 +136,9 @@ CMD ["node"]
 		Last Modified: Wed, 14 Mar 2018 16:52:00 GMT  
 		Size: 13.9 MB (13936158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8107d321e01f1a44d53620c6a758f38177f8566ded998a2e53125bc038126bd6`  
-		Last Modified: Wed, 14 Mar 2018 16:51:55 GMT  
-		Size: 1.1 MB (1061028 bytes)  
+	-	`sha256:64471d449828abfa2a384ff8e1ee9f87e1df4e359b281fb2a350435aab1c1f08`  
+		Last Modified: Fri, 16 Mar 2018 05:08:30 GMT  
+		Size: 1.1 MB (1061106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:boron-slim` - linux; arm64 variant v8
