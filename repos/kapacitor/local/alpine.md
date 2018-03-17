@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07146422cacb2748fb11e168b0d6856bb2e507e7c8526b3db81543a45c54833d`
-- Created: `2018-02-14T21:12:05.626780274Z`
-- Virtual Size: ~ 64.14 Mb  
+- Image ID: `sha256:b26167a06d5ed574d3663cd089631c796877f09c7908852692eb1e6638bd2120`
+- Created: `2018-03-16T13:12:07.519878502Z`
+- Virtual Size: ~ 64.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.4.0`
+  - `KAPACITOR_VERSION=1.4.1`
