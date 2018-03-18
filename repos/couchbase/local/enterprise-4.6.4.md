@@ -986,9 +986,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.12
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
 ```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
