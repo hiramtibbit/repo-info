@@ -1951,20 +1951,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9.0.1+11-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.dsc' openjdk-9_9.0.1+11-1.dsc 4496 SHA256:4b6358affae6b962913806012c8b83433d5d695fc147db6bb9753db46edf6511
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11.orig.tar.gz' openjdk-9_9.0.1+11.orig.tar.gz 74610589 SHA256:f0ad0f2fc4066ff24fd9b116564f17253841ec1ce64f0130bf4e139a4b339943
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.debian.tar.xz' openjdk-9_9.0.1+11-1.debian.tar.xz 174456 SHA256:34abc8a0e7ed205454fd9ce4716ea4e36643f5cf843ef31a73dcb8943f7277fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-9/9.0.1+11-1/
 
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9.0.1+11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0g-2`
 
@@ -2221,21 +2214,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.dsc' sqlite3_3.22.0-1.dsc 2397 SHA256:6a5c95a5062c19abcfb0492b32b4e4f20634a59fb077da2415ab16e1afdc4ff6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 

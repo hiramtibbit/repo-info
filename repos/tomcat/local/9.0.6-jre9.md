@@ -682,20 +682,13 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.0.1-1
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.1-1.dsc' cryptsetup_2.0.1-1.dsc 2746 SHA256:d81fb754191fcceb73f9441a1267aa754a5fe3ca66354632712789725b28bec0
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.1.orig.tar.gz' cryptsetup_2.0.1.orig.tar.gz 10097110 SHA256:bf0674fb65d60235fb01914145bcd6b7da89aaa32f2295aa047f1f63f5290123
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.1-1.debian.tar.xz' cryptsetup_2.0.1-1.debian.tar.xz 96832 SHA256:0db8a5ca4ded29e66e126cef43311cae55dfd120e49c59ef20b4b2efe866008c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cryptsetup/2:2.0.1-1/
 
-- https://sources.debian.net/src/cryptsetup/2:2.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/cryptsetup/2:2.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cryptsetup/2:2.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.6-5`
 
@@ -1320,20 +1313,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.54.1-2
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.1-2.dsc' glib-networking_2.54.1-2.dsc 2475 SHA256:8b7950cdd64be071876e3adfd3877ff6f62c8fb7e0ece3f6de2a75409a861304
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.1.orig.tar.xz' glib-networking_2.54.1.orig.tar.xz 441232 SHA256:eaa787b653015a0de31c928e9a17eb57b4ce23c8cf6f277afaec0d685335012f
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.1-2.debian.tar.xz' glib-networking_2.54.1-2.debian.tar.xz 7348 SHA256:51601f84209d22ae5b246187479891555fdd36cf67ba7e3fa7bb6239c91e6967
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.54.1-2/
 
-- https://sources.debian.net/src/glib-networking/2.54.1-2/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.54.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.54.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.3-2`
 
@@ -1345,20 +1331,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.54.3-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.54.3-2.dsc' glib2.0_2.54.3-2.dsc 3254 SHA256:bb1268cc26c541c354acd89319983fad6c35e137463cb01a7ce1f8dca7a25580
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.54.3.orig.tar.xz' glib2.0_2.54.3.orig.tar.xz 7836536 SHA256:963fdc6685dc3da8e5381dfb9f15ca4b5709b28be84d9d05a9bb8e446abac0a8
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.54.3-2.debian.tar.xz' glib2.0_2.54.3-2.debian.tar.xz 74640 SHA256:1f7e90ae1541628d5cec3c18865ef6d26c6610e94e2f8962f42d2e44b04efe96
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.54.3-2/
 
-- https://sources.debian.net/src/glib2.0/2.54.3-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.54.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.54.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-2`
 
@@ -1425,20 +1404,13 @@ Licenses: (parsed from: `/usr/share/doc/gnome-icon-theme/copyright`)
 
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnome-icon-theme=3.12.0-2
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0-2.dsc' gnome-icon-theme_3.12.0-2.dsc 1954 SHA256:2f86d5d7724a7728c482920fa5406c23f644b1d7b5769282989f0ce926dfc42a
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0.orig.tar.xz' gnome-icon-theme_3.12.0.orig.tar.xz 17742624 SHA256:359e720b9202d3aba8d477752c4cd11eced368182281d51ffd64c8572b4e503a
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0-2.debian.tar.xz' gnome-icon-theme_3.12.0-2.debian.tar.xz 17824 SHA256:a9e2504cb933329efe2604e46aa81f16099e9774fc37e56c34f854442bc44627
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/
 
-- https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.5-1`
 
@@ -4161,20 +4133,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9.0.1+11-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.dsc' openjdk-9_9.0.1+11-1.dsc 4496 SHA256:4b6358affae6b962913806012c8b83433d5d695fc147db6bb9753db46edf6511
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11.orig.tar.gz' openjdk-9_9.0.1+11.orig.tar.gz 74610589 SHA256:f0ad0f2fc4066ff24fd9b116564f17253841ec1ce64f0130bf4e139a4b339943
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.debian.tar.xz' openjdk-9_9.0.1+11-1.debian.tar.xz 174456 SHA256:34abc8a0e7ed205454fd9ce4716ea4e36643f5cf843ef31a73dcb8943f7277fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-9/9.0.1+11-1/
 
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9.0.1+11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -4703,21 +4668,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.dsc' sqlite3_3.22.0-1.dsc 2397 SHA256:6a5c95a5062c19abcfb0492b32b4e4f20634a59fb077da2415ab16e1afdc4ff6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 
