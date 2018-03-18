@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bc6e0f3b5c077bf21134bb8cc93f15bd0eceebd9a32a57ca0b9f5eac76f66f4`
-- Created: `2018-02-17T20:56:42.0198637Z`
-- Virtual Size: ~ 698.40 Mb  
+- Image ID: `sha256:d3422051ccf97f1f85a0c794b54631d0e9c675faba327aeec78d001c91f713f8`
+- Created: `2018-03-15T23:13:09.479627045Z`
+- Virtual Size: ~ 694.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -1190,27 +1190,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-4.8/4.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-4.9=4.9.2-10`
+### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u1`
 
 Binary Packages:
 
-- `cpp-4.9=4.9.2-10`
-- `g++-4.9=4.9.2-10`
-- `gcc-4.9=4.9.2-10`
-- `gcc-4.9-base:amd64=4.9.2-10`
-- `libasan1:amd64=4.9.2-10`
-- `libatomic1:amd64=4.9.2-10`
-- `libcilkrts5:amd64=4.9.2-10`
-- `libgcc-4.9-dev:amd64=4.9.2-10`
-- `libgcc1:amd64=1:4.9.2-10`
-- `libgomp1:amd64=4.9.2-10`
-- `libitm1:amd64=4.9.2-10`
-- `liblsan0:amd64=4.9.2-10`
-- `libquadmath0:amd64=4.9.2-10`
-- `libstdc++-4.9-dev:amd64=4.9.2-10`
-- `libstdc++6:amd64=4.9.2-10`
-- `libtsan0:amd64=4.9.2-10`
-- `libubsan0:amd64=4.9.2-10`
+- `cpp-4.9=4.9.2-10+deb8u1`
+- `g++-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9-base:amd64=4.9.2-10+deb8u1`
+- `libasan1:amd64=4.9.2-10+deb8u1`
+- `libatomic1:amd64=4.9.2-10+deb8u1`
+- `libcilkrts5:amd64=4.9.2-10+deb8u1`
+- `libgcc-4.9-dev:amd64=4.9.2-10+deb8u1`
+- `libgcc1:amd64=1:4.9.2-10+deb8u1`
+- `libgomp1:amd64=4.9.2-10+deb8u1`
+- `libitm1:amd64=4.9.2-10+deb8u1`
+- `liblsan0:amd64=4.9.2-10+deb8u1`
+- `libquadmath0:amd64=4.9.2-10+deb8u1`
+- `libstdc++-4.9-dev:amd64=4.9.2-10+deb8u1`
+- `libstdc++6:amd64=4.9.2-10+deb8u1`
+- `libtsan0:amd64=4.9.2-10+deb8u1`
+- `libubsan0:amd64=4.9.2-10+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/g++-4.9/copyright`, `/usr/share/doc/gcc-4.9/copyright`, `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libasan1/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-4.9-dev/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-4.9-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1223,17 +1223,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/g++-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u1
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.dsc' gcc-4.9_4.9.2-10+deb8u1.dsc 19264 SHA256:6b8b3822063411e6d31bad8581ccebbd09dd1f537b4a949dbee7520b73dcd3bc
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.diff.gz' gcc-4.9_4.9.2-10+deb8u1.diff.gz 875721 SHA256:c46cb11de5e54f61cb356ea24c72603a66aef2add62fc58df68ba813edffb6b2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.136`
 
@@ -3137,11 +3137,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libvpx=1.3.0-3`
+### `dpkg` source package: `libvpx=1.3.0-3+deb8u1`
 
 Binary Packages:
 
-- `libvpx1:amd64=1.3.0-3`
+- `libvpx1:amd64=1.3.0-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 
@@ -3151,17 +3151,17 @@ Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libvpx=1.3.0-3
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.dsc' libvpx_1.3.0-3.dsc 2129 SHA256:aa468780484234775c62ed22a9e2140f343d7ec4d855dd80d6a6f4625e737431
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.debian.tar.xz' libvpx_1.3.0-3.debian.tar.xz 11248 SHA256:9fe4ff76aeb929f5b6efd999d3e19d7ec5186c13763e05001a552aa4a3b3fce0
+$ apt-get source -qq --print-uris libvpx=1.3.0-3+deb8u1
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u1.dsc' libvpx_1.3.0-3+deb8u1.dsc 2041 SHA256:3be7aa50864cf3eec2080c4a5f04c5e1b81a6679a67aa2d618f356638db6e29f
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u1.debian.tar.xz' libvpx_1.3.0-3+deb8u1.debian.tar.xz 11932 SHA256:fa70b270e8a441af20cef699094d221b2cf0896061e498ca8422d5bbe5071a91
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libvpx/1.3.0-3/ (for browsing the source)
-- https://sources.debian.net/src/libvpx/1.3.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libvpx/1.3.0-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=0.4.1-1.2`
 
