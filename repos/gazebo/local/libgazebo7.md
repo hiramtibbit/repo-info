@@ -677,14 +677,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.dsc' curl_7.47.0-1ubuntu2.6.dsc 2713 SHA256:6f0c754431a0d59684e149ebb69a174d7ba37f4caa424845164baf14a899c035
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.6.debian.tar.xz' curl_7.47.0-1ubuntu2.6.debian.tar.xz 47148 SHA256:9b5f48817215f5cf95e7b96f2aa71a6acbb1f956f13eb500e66b57de230821fb
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -1931,9 +1926,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris isc-dhcp=4.3.3-5ubuntu12.9
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.9.dsc' isc-dhcp_4.3.3-5ubuntu12.9.dsc 2771 SHA256:d02da6ebd2104d06fdd0fac10ea9c8979b48366dc1b3355c914933794fb5bc9b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3.orig.tar.gz' isc-dhcp_4.3.3.orig.tar.gz 1094938 SHA256:13d2bbc4536dfb2cd8f0fb0ac33a4bc7acec7ac013eb82ff44597de191b97dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.9.debian.tar.xz' isc-dhcp_4.3.3-5ubuntu12.9.debian.tar.xz 115960 SHA256:45c8915319b0ab74b796b799c2766aa97889533119ac313b3b768a7e1d15497a
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.9.dsc' isc-dhcp_4.3.3-5ubuntu12.9.dsc 2771 SHA256:d02da6ebd2104d06fdd0fac10ea9c8979b48366dc1b3355c914933794fb5bc9b
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3.orig.tar.gz' isc-dhcp_4.3.3.orig.tar.gz 1094938 SHA256:13d2bbc4536dfb2cd8f0fb0ac33a4bc7acec7ac013eb82ff44597de191b97dcb
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.9.debian.tar.xz' isc-dhcp_4.3.3-5ubuntu12.9.debian.tar.xz 115960 SHA256:45c8915319b0ab74b796b799c2766aa97889533119ac313b3b768a7e1d15497a
 ```
 
 ### `dpkg` source package: `isl=0.16.1-1`
