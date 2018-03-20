@@ -1,7 +1,7 @@
 ## `python:2-jessie`
 
 ```console
-$ docker pull python@sha256:fda67d99108117bb5ae029739ea45847e11c9d537a817d7c10f8353011a60785
+$ docker pull python@sha256:aa0e05652c1c12754447b84dd4ee4dacd1c7a98d4ab34b536f01fd5b338fd030
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -509,14 +509,14 @@ CMD ["python2"]
 ### `python:2-jessie` - linux; s390x
 
 ```console
-$ docker pull python@sha256:fb76d53b6d70b02ace2fb2a481f38adf1a7caa353992e1e558085c08d2005dc1
+$ docker pull python@sha256:d2c5ebe3ac816bded1fa4085ed86a0575eb8184e259b0b6c664f28ad1a529872
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.8 MB (255779032 bytes)**  
+-	Total Size: **256.1 MB (256122360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:125c76be44bf0ece26a8d4a7018d51aae2b5c6afac909bce7832e76df923617f`
+-	Image ID: `sha256:410264865c99c33b4fac22741eb0ee396397ab3aa4b33ae0ea3e2d06a0babbab`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -544,13 +544,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.14
 # Wed, 14 Mar 2018 07:27:45 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 14 Mar 2018 07:27:46 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Mar 2018 07:27:50 GMT
+# Tue, 20 Mar 2018 13:56:58 GMT
+ENV PYTHON_PIP_VERSION=9.0.2
+# Tue, 20 Mar 2018 13:57:03 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 14 Mar 2018 07:27:51 GMT
+# Tue, 20 Mar 2018 13:57:05 GMT
 RUN pip install --no-cache-dir virtualenv
-# Wed, 14 Mar 2018 07:27:52 GMT
+# Tue, 20 Mar 2018 13:57:05 GMT
 CMD ["python2"]
 ```
 
@@ -579,11 +579,11 @@ CMD ["python2"]
 		Last Modified: Wed, 14 Mar 2018 07:32:39 GMT  
 		Size: 15.7 MB (15721615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:429b83d5b5d9832b9316f0f44565f118795852648b4c88a21b37db37984509ed`  
-		Last Modified: Wed, 14 Mar 2018 07:32:36 GMT  
-		Size: 1.7 MB (1668628 bytes)  
+	-	`sha256:a2eccb4fd56569abed559b226c6d39d15e1008e09574a51a04dd28046e8beec7`  
+		Last Modified: Tue, 20 Mar 2018 14:03:59 GMT  
+		Size: 1.9 MB (1885407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3935069d17f77fcee42bcaa9b222140b5c14d26d3c1f60e204a079922d5f5c19`  
-		Last Modified: Wed, 14 Mar 2018 07:32:36 GMT  
-		Size: 3.3 MB (3330711 bytes)  
+	-	`sha256:60830a5a2b98fbba712632b1c2f0da22740f8ba76fb11e96a43c4d3d9accc91e`  
+		Last Modified: Tue, 20 Mar 2018 14:03:59 GMT  
+		Size: 3.5 MB (3457260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
