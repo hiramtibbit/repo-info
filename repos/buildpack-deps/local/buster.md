@@ -1160,20 +1160,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-5.dsc' gcc-7_7.3.0-5.dsc 25540 SHA256:aa90da7cd850ac8204acbae03402ec87d9ba1a2654c899d9f2b6dfbfe2969750
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-5.diff.gz' gcc-7_7.3.0-5.diff.gz 738494 SHA256:c345b81082c0eca6fe7b8cb5662d08ed4d6cc9d8f1dae6a5b6c7ac27155c75bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.3.0-5/
 
-- https://sources.debian.net/src/gcc-7/7.3.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8-20180218-1`
 
@@ -1200,20 +1193,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180218-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218-1.dsc' gcc-8_8-20180218-1.dsc 32319 SHA256:ded28547c36b5e3b3b98934b892227d14c2337dc97d8ff6c983b5d3f5e6d469d
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218.orig.tar.gz' gcc-8_8-20180218.orig.tar.gz 68957358 SHA256:b70096c2fe56cae04036ef2d25b6adb9b85b6fc7574baf9029247b6be410a226
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218-1.diff.gz' gcc-8_8-20180218-1.diff.gz 599668 SHA256:5896f135bc8fbb17db2b832bfe70ac2e68107c0a3abb2ec68c1157fba6c49282
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180218-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180218-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180218-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180218-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -1255,20 +1241,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.14.1-4
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-4.dsc' gdbm_1.14.1-4.dsc 2120 SHA256:8ebe42a18e901c0eaacf39fc41e36e3277995f1965b7458b32261d52fcbcd05c
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-4.debian.tar.xz' gdbm_1.14.1-4.debian.tar.xz 25968 SHA256:622d4bcb88f81a633b3ee03779921758ef78fc8fee23f4264f68aa61d1106a50
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.14.1-4/
 
-- https://sources.debian.net/src/gdbm/1.14.1-4/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.14.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.14.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
@@ -1887,20 +1866,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.15.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.dsc' iproute2_4.15.0-2.dsc 1846 SHA256:d2c567566c137c37ac90690488ac1a19f8e4a149e9821d984db01657dd9f5c65
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0.orig.tar.xz' iproute2_4.15.0.orig.tar.xz 648836 SHA256:48d4616a99d7b609b7b795c0ae8ec57099fb0271ed89253e8772c02327798355
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.debian.tar.xz' iproute2_4.15.0-2.debian.tar.xz 137036 SHA256:8b57941a6a28e67885b94ec2601d00c3b97ed6eaa85956db6c63508abeeb4e7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.15.0-2/
 
-- https://sources.debian.net/src/iproute2/4.15.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.15.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -4427,20 +4399,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-6.dsc' python2.7_2.7.14-6.dsc 3357 SHA256:55e52b6c7c7a2f3771f3515644337ccf8c76f058b4cb867a16776927513c5242
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-6.diff.gz' python2.7_2.7.14-6.diff.gz 436517 SHA256:ee92259f95450be349509f0d2b11a6997d430bfe47c26395f7c16f2e8d2cb011
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.14-6/
 
-- https://sources.debian.net/src/python2.7/2.7.14-6/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.14-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.14-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.6.4-1`
 
@@ -4479,20 +4444,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.4-4
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4-4.dsc' python3-stdlib-extensions_3.6.4-4.dsc 2413 SHA256:0d563401f391c059466124cc22ff9e7ff5b68361fb0a6494a086153a4a57cd37
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4.orig.tar.xz' python3-stdlib-extensions_3.6.4.orig.tar.xz 1034852 SHA256:27eb6d07b2cbc0b469da02f5353e2bb55a1c4298eb96bdeb9c8275d81a2348ac
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.4-4.debian.tar.xz' python3-stdlib-extensions_3.6.4-4.debian.tar.xz 20504 SHA256:86318f697e2b64d85960a5c6dd108bd0faaed9a1bec18a7e5205b141054fb2ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.4-4/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.4-4/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.6=3.6.4-4`
 
@@ -4523,20 +4481,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.4-4
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4-4.dsc' python3.6_3.6.4-4.dsc 3401 SHA256:d08408b70481ff5c209f1d1ce35a21de562e270d0026a570655d26fc96a8b419
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4.orig.tar.xz' python3.6_3.6.4.orig.tar.xz 16992824 SHA256:159b932bf56aeaa76fd66e7420522d8c8853d486b8567c459b84fe2ed13bcaba
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4-4.debian.tar.xz' python3.6_3.6.4-4.debian.tar.xz 297204 SHA256:709e36e8cf04dfbcd50121fe8aa6dc3475ece84f60a32a7567fd341c31abaa67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.6/3.6.4-4/
 
-- https://sources.debian.net/src/python3.6/3.6.4-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -4631,19 +4582,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.11
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.11.dsc' sensible-utils_0.0.11.dsc 1671 SHA256:00bd8cde4229752593ee06f562f8cd8d91ed3a138b2339417ccd6539e542a5c5
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.11.tar.xz' sensible-utils_0.0.11.tar.xz 61448 SHA256:f1702bc0c129cfe18fb9ae8c0c7b7aedb5b2e6c0467ab3e1da18a8bbb21fe131
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sensible-utils/0.0.11/
 
-- https://sources.debian.net/src/sensible-utils/0.0.11/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `serf=1.3.9-4`
 
@@ -4729,21 +4674,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.dsc' sqlite3_3.22.0-1.dsc 2397 SHA256:6a5c95a5062c19abcfb0492b32b4e4f20634a59fb077da2415ab16e1afdc4ff6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.9.7-4`
 

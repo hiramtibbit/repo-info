@@ -1562,14 +1562,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu4.dsc' pam_1.1.8-3.2ubuntu4.dsc 2595 SHA256:9683ce5f9b7c28c0f58ce16c8a6d1dad4979eed84a47578782569cf2c713c8ad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu4.diff.gz' pam_1.1.8-3.2ubuntu4.diff.gz 196909 SHA256:0dded4b7ff4af647b8b55064e89e2b3a043031d29dffb460d8c0abc314dce20b
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -1737,14 +1732,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-6.dsc' python2.7_2.7.14-6.dsc 3357 SHA256:55e52b6c7c7a2f3771f3515644337ccf8c76f058b4cb867a16776927513c5242
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-6.diff.gz' python2.7_2.7.14-6.diff.gz 436517 SHA256:ee92259f95450be349509f0d2b11a6997d430bfe47c26395f7c16f2e8d2cb011
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.14-6/
+
 
 ### `dpkg` source package: `readline=7.0-3`
 

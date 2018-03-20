@@ -645,20 +645,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180218-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218-1.dsc' gcc-8_8-20180218-1.dsc 32319 SHA256:ded28547c36b5e3b3b98934b892227d14c2337dc97d8ff6c983b5d3f5e6d469d
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218.orig.tar.gz' gcc-8_8-20180218.orig.tar.gz 68957358 SHA256:b70096c2fe56cae04036ef2d25b6adb9b85b6fc7574baf9029247b6be410a226
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180218-1.diff.gz' gcc-8_8-20180218-1.diff.gz 599668 SHA256:5896f135bc8fbb17db2b832bfe70ac2e68107c0a3abb2ec68c1157fba6c49282
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180218-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180218-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180218-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180218-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-1`
 
@@ -930,20 +923,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.15.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.dsc' iproute2_4.15.0-2.dsc 1846 SHA256:d2c567566c137c37ac90690488ac1a19f8e4a149e9821d984db01657dd9f5c65
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0.orig.tar.xz' iproute2_4.15.0.orig.tar.xz 648836 SHA256:48d4616a99d7b609b7b795c0ae8ec57099fb0271ed89253e8772c02327798355
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.debian.tar.xz' iproute2_4.15.0-2.debian.tar.xz 137036 SHA256:8b57941a6a28e67885b94ec2601d00c3b97ed6eaa85956db6c63508abeeb4e7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.15.0-2/
 
-- https://sources.debian.net/src/iproute2/4.15.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.15.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2`
 
@@ -2035,21 +2021,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.dsc' sqlite3_3.22.0-1.dsc 2397 SHA256:6a5c95a5062c19abcfb0492b32b4e4f20634a59fb077da2415ab16e1afdc4ff6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=237-4`
 
