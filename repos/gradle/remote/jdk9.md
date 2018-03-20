@@ -1,7 +1,7 @@
 ## `gradle:jdk9`
 
 ```console
-$ docker pull gradle@sha256:fc666d517a79b2b4ca7c00c18102a6d97ff08d2f9ae2247fd36b83fbdf019169
+$ docker pull gradle@sha256:2e0e8c78190fb3e15b561aed47a49d2bb9ea89ad2a12e74b33f166bfae8b0d3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gradle@sha256:fc666d517a79b2b4ca7c00c18102a6d97ff08d2f9ae2247fd36b
 ### `gradle:jdk9` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:9d4735c3bed930c26e821af559349df964eef97a7d74460c704c64e9332ee66a
+$ docker pull gradle@sha256:76669a51069d8b65adb9e4482738371c82ad574bc02e35d2e392f303bfc559ea
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **490.5 MB (490462392 bytes)**  
+-	Total Size: **475.3 MB (475281521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d82d89432028f973c148fa6b061cea69940526f0be41a783a9fbd1bf8ba32664`
+-	Image ID: `sha256:c7d31b9ab12616e34166f76b7b1c20c09e55f466cefae158597610849c729de4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -42,34 +42,34 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Wed, 14 Mar 2018 10:31:03 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 14 Mar 2018 10:31:03 GMT
-ENV JAVA_VERSION=9.0.1+11
-# Wed, 14 Mar 2018 10:31:04 GMT
-ENV JAVA_DEBIAN_VERSION=9.0.1+11-1
-# Wed, 14 Mar 2018 10:32:07 GMT
+# Mon, 19 Mar 2018 20:54:35 GMT
+ENV JAVA_VERSION=9.0.4+12
+# Mon, 19 Mar 2018 20:54:35 GMT
+ENV JAVA_DEBIAN_VERSION=9.0.4+12-2
+# Mon, 19 Mar 2018 20:55:36 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 14 Mar 2018 10:32:07 GMT
+# Mon, 19 Mar 2018 20:55:37 GMT
 CMD ["jshell"]
-# Thu, 15 Mar 2018 09:00:05 GMT
+# Tue, 20 Mar 2018 03:31:38 GMT
 CMD ["gradle"]
-# Thu, 15 Mar 2018 09:00:05 GMT
+# Tue, 20 Mar 2018 03:31:38 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Thu, 15 Mar 2018 09:00:06 GMT
+# Tue, 20 Mar 2018 03:31:39 GMT
 ENV GRADLE_VERSION=4.6
-# Thu, 15 Mar 2018 09:00:06 GMT
+# Tue, 20 Mar 2018 03:31:39 GMT
 COPY file:e08b5c84a9d5a31f261ecabb5457633b5bf067646b5794580a81902b3318127f in /etc/ssl/certs/java/cacerts 
-# Thu, 15 Mar 2018 09:00:06 GMT
+# Tue, 20 Mar 2018 03:31:39 GMT
 ARG GRADLE_DOWNLOAD_SHA256=98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915
-# Thu, 15 Mar 2018 09:00:11 GMT
+# Tue, 20 Mar 2018 03:31:44 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915
 RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle 		&& echo "Symlinking root Gradle cache to gradle Gradle cache" 	&& ln -s /home/gradle/.gradle /root/.gradle
-# Thu, 15 Mar 2018 09:00:12 GMT
+# Tue, 20 Mar 2018 03:31:44 GMT
 USER [gradle]
-# Thu, 15 Mar 2018 09:00:12 GMT
+# Tue, 20 Mar 2018 03:31:45 GMT
 VOLUME [/home/gradle/.gradle]
-# Thu, 15 Mar 2018 09:00:12 GMT
+# Tue, 20 Mar 2018 03:31:45 GMT
 WORKDIR /home/gradle
-# Thu, 15 Mar 2018 09:00:17 GMT
+# Tue, 20 Mar 2018 03:31:49 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915
 RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
 ```
@@ -103,19 +103,19 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Wed, 14 Mar 2018 12:33:38 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f69546b248c577a255d0b1fba00d780ca0a545a293b2d83ff10ce8ea63b4f9c1`  
-		Last Modified: Wed, 14 Mar 2018 12:34:24 GMT  
-		Size: 300.3 MB (300327089 bytes)  
+	-	`sha256:ee15f2f09b63a01d5fb41dd212d7f28111276ebae91b8a82f79c48d0236845f5`  
+		Last Modified: Mon, 19 Mar 2018 22:55:10 GMT  
+		Size: 285.1 MB (285146208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e59dff18692b8c3bfba010d5487eafef13e2d047613cede2d899e1c2b18dfc`  
-		Last Modified: Thu, 15 Mar 2018 09:09:00 GMT  
-		Size: 76.1 KB (76071 bytes)  
+	-	`sha256:fa31bd01c22c9f6867812d22e9d2da92ce4fa4871b2d0a37a50947930dd0e771`  
+		Last Modified: Tue, 20 Mar 2018 03:38:58 GMT  
+		Size: 76.1 KB (76072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:610cb8f171ffa6dff34cc2034865f47ffa661be006bba15d1ae80a41538845b0`  
-		Last Modified: Thu, 15 Mar 2018 09:09:05 GMT  
-		Size: 74.2 MB (74162711 bytes)  
+	-	`sha256:9991eca4e9a3543eaf3fb46d946ea168c5fa44aa493e3c6b4f90a1b40708ee1c`  
+		Last Modified: Tue, 20 Mar 2018 03:39:04 GMT  
+		Size: 74.2 MB (74162720 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53b29999ab48a4c8fb2dfa9039f3d11fa8fa276b662b300c1b7bc1584f8145d`  
-		Last Modified: Thu, 15 Mar 2018 09:09:01 GMT  
+	-	`sha256:1c11de2145da11cb86ef37a92ea49a08dd74a946bcbdc4bdde29d4758784d8aa`  
+		Last Modified: Tue, 20 Mar 2018 03:38:58 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
