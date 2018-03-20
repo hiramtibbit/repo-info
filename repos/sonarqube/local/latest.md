@@ -3282,20 +3282,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libvorbis=1.3.5-4+deb9u1
-'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5-4+deb9u1.dsc' libvorbis_1.3.5-4+deb9u1.dsc 2411 SHA256:c865b4a072463e3687d201867136c10566a9133faed46b170b2e0da31e3848fb
-'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5.orig.tar.gz' libvorbis_1.3.5.orig.tar.gz 1638779 SHA256:6efbcecdd3e5dfbf090341b485da9d176eb250d893e3eb378c428a2db38301ce
-'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5-4+deb9u1.debian.tar.xz' libvorbis_1.3.5-4+deb9u1.debian.tar.xz 10748 SHA256:d3555b4ee15ae44b5d7ebc4eab4dd255c77d500069897d406fd654b40adaf601
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libvorbis/1.3.5-4+deb9u1/
 
-- https://sources.debian.net/src/libvorbis/1.3.5-4+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/libvorbis/1.3.5-4+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libvorbis/1.3.5-4+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.4-3`
 
