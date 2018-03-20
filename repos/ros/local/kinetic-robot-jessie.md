@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3ca8d5e45c2bf444e5fef43281690c23a0ada4c6031a4d08956c4c51e9385ad`
-- Created: `2018-02-16T20:28:53.162599437Z`
+- Image ID: `sha256:1ccea59babad9c0df1dadcc507b35bc52467488f7eec3ef61c1c57e860cd7645`
+- Created: `2018-03-14T21:36:00.492072884Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1108,16 +1108,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.7.5-11+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u9`
+### `dpkg` source package: `curl=7.38.0-4+deb8u10`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u9`
-- `libcurl3:amd64=7.38.0-4+deb8u9`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u9`
-- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u9`
+- `curl=7.38.0-4+deb8u10`
+- `libcurl3:amd64=7.38.0-4+deb8u10`
+- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u10`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1127,17 +1126,38 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u9
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.dsc' curl_7.38.0-4+deb8u9.dsc 2669 SHA256:3d5ec4e24e0231cebba82f605e713bf13790b49427902e4dd4f7fc8aa4130d33
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u10
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.dsc' curl_7.38.0-4+deb8u10.dsc 2673 SHA256:8c63e3d24209e7eee792a8bc80a540dcfadf881452e43e8c500dcac192c3a73c
 'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u9.debian.tar.xz' curl_7.38.0-4+deb8u9.debian.tar.xz 45284 SHA256:60bd8df25ebcbd391b6a1de9692b262fecde1ecf598c9017d2a805b1043d12e4
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.debian.tar.xz' curl_7.38.0-4+deb8u10.debian.tar.xz 47208 SHA256:917f9e86ed29504a962e5b982a455cfbd272a5e38a6ee050dfa343a2790fe746
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u10/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `curl=7.38.0-4+deb8u9`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u9`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1823,26 +1843,26 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-4.8/4.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-4.9=4.9.2-10`
+### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u1`
 
 Binary Packages:
 
-- `cpp-4.9=4.9.2-10`
-- `gcc-4.9=4.9.2-10`
-- `gcc-4.9-base:amd64=4.9.2-10`
-- `libasan1:amd64=4.9.2-10`
-- `libatomic1:amd64=4.9.2-10`
-- `libcilkrts5:amd64=4.9.2-10`
-- `libgcc-4.9-dev:amd64=4.9.2-10`
-- `libgcc1:amd64=1:4.9.2-10`
-- `libgfortran3:amd64=4.9.2-10`
-- `libgomp1:amd64=4.9.2-10`
-- `libitm1:amd64=4.9.2-10`
-- `liblsan0:amd64=4.9.2-10`
-- `libquadmath0:amd64=4.9.2-10`
-- `libstdc++6:amd64=4.9.2-10`
-- `libtsan0:amd64=4.9.2-10`
-- `libubsan0:amd64=4.9.2-10`
+- `cpp-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9=4.9.2-10+deb8u1`
+- `gcc-4.9-base:amd64=4.9.2-10+deb8u1`
+- `libasan1:amd64=4.9.2-10+deb8u1`
+- `libatomic1:amd64=4.9.2-10+deb8u1`
+- `libcilkrts5:amd64=4.9.2-10+deb8u1`
+- `libgcc-4.9-dev:amd64=4.9.2-10+deb8u1`
+- `libgcc1:amd64=1:4.9.2-10+deb8u1`
+- `libgfortran3:amd64=4.9.2-10+deb8u1`
+- `libgomp1:amd64=4.9.2-10+deb8u1`
+- `libitm1:amd64=4.9.2-10+deb8u1`
+- `liblsan0:amd64=4.9.2-10+deb8u1`
+- `libquadmath0:amd64=4.9.2-10+deb8u1`
+- `libstdc++6:amd64=4.9.2-10+deb8u1`
+- `libtsan0:amd64=4.9.2-10+deb8u1`
+- `libubsan0:amd64=4.9.2-10+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/gcc-4.9/copyright`, `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libasan1/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-4.9-dev/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1855,17 +1875,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/gcc-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u1
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.dsc' gcc-4.9_4.9.2-10+deb8u1.dsc 19264 SHA256:6b8b3822063411e6d31bad8581ccebbd09dd1f537b4a949dbee7520b73dcd3bc
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://security.debian.org/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.diff.gz' gcc-4.9_4.9.2-10+deb8u1.diff.gz 875721 SHA256:c46cb11de5e54f61cb356ea24c72603a66aef2add62fc58df68ba813edffb6b2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.136`
 
@@ -4302,11 +4322,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libvorbis/1.3.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libvorbis/1.3.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libvpx=1.3.0-3`
+### `dpkg` source package: `libvpx=1.3.0-3+deb8u1`
 
 Binary Packages:
 
-- `libvpx1:amd64=1.3.0-3`
+- `libvpx1:amd64=1.3.0-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 
@@ -4316,17 +4336,17 @@ Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libvpx=1.3.0-3
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.dsc' libvpx_1.3.0-3.dsc 2129 SHA256:aa468780484234775c62ed22a9e2140f343d7ec4d855dd80d6a6f4625e737431
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.debian.tar.xz' libvpx_1.3.0-3.debian.tar.xz 11248 SHA256:9fe4ff76aeb929f5b6efd999d3e19d7ec5186c13763e05001a552aa4a3b3fce0
+$ apt-get source -qq --print-uris libvpx=1.3.0-3+deb8u1
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u1.dsc' libvpx_1.3.0-3+deb8u1.dsc 2041 SHA256:3be7aa50864cf3eec2080c4a5f04c5e1b81a6679a67aa2d618f356638db6e29f
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
+'http://security.debian.org/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u1.debian.tar.xz' libvpx_1.3.0-3+deb8u1.debian.tar.xz 11932 SHA256:fa70b270e8a441af20cef699094d221b2cf0896061e498ca8422d5bbe5071a91
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libvpx/1.3.0-3/ (for browsing the source)
-- https://sources.debian.net/src/libvpx/1.3.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libvpx/1.3.0-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.2-3+deb8u1`
 
@@ -6493,33 +6513,43 @@ $ apt-get source -qq --print-uris python-rosdep=0.12.1-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.1-1.debian.tar.xz' python-rosdep_0.12.1-1.debian.tar.xz 1120 SHA256:0992e19a70d01a2ea098c05fca48a5366db4e71d03263c67703d8bb4727ef9e3
 ```
 
-### `dpkg` source package: `python-rosdistro-modules=0.6.6-1`
+### `dpkg` source package: `python-rosdistro-modules=0.6.8-1`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.6.6-1`
+- `python-rosdistro-modules=0.6.8-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.8-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.8-1.dsc' python-rosdistro-modules_0.6.8-1.dsc 982 SHA256:9ca06a297acbffdb1459905bc03d67a9e3948f34d19905b4f4bfc561d8de13f4
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.8.orig.tar.gz' python-rosdistro-modules_0.6.8.orig.tar.gz 40426 SHA256:a32dfe124ec5f72d0851acef38278518c7ac2542df05c851d074babdca848a2e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.8-1.debian.tar.xz' python-rosdistro-modules_0.6.8-1.debian.tar.xz 1120 SHA256:12ae8611af3d83ddfc513a0b3f64a1ecf91e4da5c0d17dd9b727f0c2707c6958
+```
 
-### `dpkg` source package: `python-rosdistro=0.6.6-100`
+### `dpkg` source package: `python-rosdistro=0.6.8-100`
 
 Binary Packages:
 
-- `python-rosdistro=0.6.6-100`
+- `python-rosdistro=0.6.8-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro=0.6.8-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.8-100.dsc' python-rosdistro_0.6.8-100.dsc 919 SHA256:81b19e25d7781b7b668df6a2db757fc3de4f14beb59cd46a45df89797e96a1b5
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.8.orig.tar.gz' python-rosdistro_0.6.8.orig.tar.gz 9856 SHA256:3879fb3730f3cdcd2b8f111e67494b092211bbace1b71ef1e258ccf3999d4129
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.8-100.debian.tar.xz' python-rosdistro_0.6.8-100.debian.tar.xz 1104 SHA256:83245690c165cf9944c135fac80c1f4bf31d0201e3d99e28a3cac05fac821158
+```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 

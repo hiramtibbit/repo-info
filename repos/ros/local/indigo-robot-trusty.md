@@ -859,14 +859,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.14
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.14.dsc' curl_7.35.0-1ubuntu2.14.dsc 2739 SHA256:683e5421c3757700424d19851bb2e1834e9035fbd082f70f9dc29d1e2d096cbd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.14.debian.tar.gz' curl_7.35.0-1ubuntu2.14.debian.tar.gz 70063 SHA256:b24f15684ad1c44e4485b58da1fa8ade7d7a61d3d855673a03907c6658b9f994
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1055,13 +1050,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.17.5ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.7.dsc' dpkg_1.17.5ubuntu5.7.dsc 2215 SHA256:5337537eecf746c862c12b61508751448d727c37f83216980f5ccc27abf00b5e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.7.tar.xz' dpkg_1.17.5ubuntu5.7.tar.xz 4019728 SHA256:7b1d8a24bfba2cbc1609bc4748b80b92ec924812baad3a6027e015bca5a702a9
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.9-3ubuntu1.3`
 
@@ -2050,9 +2041,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.12
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
 ```
 
 ### `dpkg` source package: `isl=0.12.2-1`
