@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb6fad8e69a3e2e7c6a493a2fa8c882db74d59f5541f5eca863414d723644dc6`
-- Created: `2018-03-13T01:33:36.412879653Z`
-- Virtual Size: ~ 749.31 Mb  
+- Image ID: `sha256:c83e802e871f6955ce86637d603bde47c095c3965f5168ea48274b415619fb37`
+- Created: `2018-03-16T02:23:59.915253752Z`
+- Virtual Size: ~ 749.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.10.0`
-  - `YARN_VERSION=1.5.1`
+  - `NODE_VERSION=8.9.4`
+  - `YARN_VERSION=1.3.2`
   - `RC_VERSION=0.62.2`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
@@ -368,10 +368,6 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
