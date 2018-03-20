@@ -8,7 +8,7 @@
 ## `kaazing-gateway:5.6.0`
 
 ```console
-$ docker pull kaazing-gateway@sha256:df69e8104d2dd21456a5e519a34f7990a39d2cfe247057743a5f5118facb358f
+$ docker pull kaazing-gateway@sha256:169eb42e07c52e82acd3c03b938b23220260b5e1ee670b8904c22ec1d316d4c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull kaazing-gateway@sha256:df69e8104d2dd21456a5e519a34f7990a39d2cfe247
 ### `kaazing-gateway:5.6.0` - linux; amd64
 
 ```console
-$ docker pull kaazing-gateway@sha256:09ed2494647f501b3fc352b6ceb38ab8c9cb2e48aa4451bfeaafd11da2322c58
+$ docker pull kaazing-gateway@sha256:2c457a9e014dd04d651f8d940a264d95068a0263dd025868bc6b144c1aa3ae3e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.2 MB (244228224 bytes)**  
+-	Total Size: **234.0 MB (234047905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21b6c82cc9e4e6c4cea0b549a5004722b928c868fa8bd0d42a1a66a59910ee6a`
+-	Image ID: `sha256:261d3b8e283e8cae783b10c4f0115bf7dd0ba670af9df1b77898fba063450d1d`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
@@ -47,35 +47,35 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Wed, 14 Mar 2018 10:50:24 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Wed, 14 Mar 2018 10:50:24 GMT
-ENV JAVA_VERSION=8u151
-# Wed, 14 Mar 2018 10:50:24 GMT
-ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
-# Wed, 14 Mar 2018 10:50:24 GMT
+# Mon, 19 Mar 2018 21:11:11 GMT
+ENV JAVA_VERSION=8u162
+# Mon, 19 Mar 2018 21:11:11 GMT
+ENV JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1
+# Mon, 19 Mar 2018 21:11:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Wed, 14 Mar 2018 10:51:03 GMT
+# Mon, 19 Mar 2018 21:11:50 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 14 Mar 2018 10:51:05 GMT
+# Mon, 19 Mar 2018 21:11:52 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 15 Mar 2018 13:17:17 GMT
+# Tue, 20 Mar 2018 17:00:02 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Thu, 15 Mar 2018 13:17:21 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Thu, 15 Mar 2018 13:17:21 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 ENV KAAZING_GATEWAY_VERSION=5.6.0
-# Thu, 15 Mar 2018 13:17:22 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.6.0/gateway.distribution-5.6.0.tar.gz
-# Thu, 15 Mar 2018 13:17:22 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 WORKDIR /kaazing-gateway
-# Thu, 15 Mar 2018 13:17:25 GMT
+# Tue, 20 Mar 2018 17:00:28 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Thu, 15 Mar 2018 13:17:25 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 EXPOSE 8000/tcp
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 CMD ["gateway.start"]
 ```
 
@@ -104,31 +104,31 @@ CMD ["gateway.start"]
 		Last Modified: Wed, 14 Mar 2018 12:45:45 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a5e00634c6d349291ce4c60f78676eae209b9d94ad7dea95e4ed9019702280`  
-		Last Modified: Wed, 14 Mar 2018 12:46:22 GMT  
-		Size: 165.4 MB (165394600 bytes)  
+	-	`sha256:8dbabc90b2b88af86284508836e854ab5ea90ac04c5fb5f0cf32caca8245d7de`  
+		Last Modified: Mon, 19 Mar 2018 23:29:49 GMT  
+		Size: 155.2 MB (155214277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8baa304f616f0d2585dbce1c8221d560ec8668f0d2a0dcf5efec40e905d53180`  
-		Last Modified: Wed, 14 Mar 2018 12:45:45 GMT  
-		Size: 272.1 KB (272066 bytes)  
+	-	`sha256:982930be204d019954bbd61d64a6c48bc498d0577b503edb7d976fa51225f45f`  
+		Last Modified: Mon, 19 Mar 2018 23:29:17 GMT  
+		Size: 272.1 KB (272080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b271a229e8ada3128074f97e36e7d6fd2d262e52b5e59689e2a98e7e698e151`  
-		Last Modified: Thu, 15 Mar 2018 13:17:47 GMT  
-		Size: 3.3 KB (3282 bytes)  
+	-	`sha256:bea460942d266b4c576f064282edfaf3a9160ebac318f04cb8acf6767cf26b7e`  
+		Last Modified: Tue, 20 Mar 2018 17:00:52 GMT  
+		Size: 3.3 KB (3276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80f0b5940eecf101f4bcd1f61e602661463adaa272a9a3b0dd622f468656ebd6`  
-		Last Modified: Thu, 15 Mar 2018 13:17:48 GMT  
+	-	`sha256:9a81ee13982ee131cec09bf408bc440bae9a0bda58a69a6238d1794832514a43`  
+		Last Modified: Tue, 20 Mar 2018 17:00:52 GMT  
 		Size: 104.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:535fad0bfce257f6bfa9e0c079097d6240459e65acf092838b73ee6e0f5de89d`  
-		Last Modified: Thu, 15 Mar 2018 13:17:49 GMT  
-		Size: 17.1 MB (17126829 bytes)  
+	-	`sha256:e9ca01bb73e379205f866b454e9c0103f91ff2cae3f4b396c628c370d20dd55f`  
+		Last Modified: Tue, 20 Mar 2018 17:00:53 GMT  
+		Size: 17.1 MB (17126825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:df69e8104d2dd21456a5e519a34f7990a39d2cfe247057743a5f5118facb358f
+$ docker pull kaazing-gateway@sha256:169eb42e07c52e82acd3c03b938b23220260b5e1ee670b8904c22ec1d316d4c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -138,14 +138,14 @@ $ docker pull kaazing-gateway@sha256:df69e8104d2dd21456a5e519a34f7990a39d2cfe247
 ### `kaazing-gateway:latest` - linux; amd64
 
 ```console
-$ docker pull kaazing-gateway@sha256:09ed2494647f501b3fc352b6ceb38ab8c9cb2e48aa4451bfeaafd11da2322c58
+$ docker pull kaazing-gateway@sha256:2c457a9e014dd04d651f8d940a264d95068a0263dd025868bc6b144c1aa3ae3e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.2 MB (244228224 bytes)**  
+-	Total Size: **234.0 MB (234047905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21b6c82cc9e4e6c4cea0b549a5004722b928c868fa8bd0d42a1a66a59910ee6a`
+-	Image ID: `sha256:261d3b8e283e8cae783b10c4f0115bf7dd0ba670af9df1b77898fba063450d1d`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
@@ -167,35 +167,35 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Wed, 14 Mar 2018 10:50:24 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Wed, 14 Mar 2018 10:50:24 GMT
-ENV JAVA_VERSION=8u151
-# Wed, 14 Mar 2018 10:50:24 GMT
-ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
-# Wed, 14 Mar 2018 10:50:24 GMT
+# Mon, 19 Mar 2018 21:11:11 GMT
+ENV JAVA_VERSION=8u162
+# Mon, 19 Mar 2018 21:11:11 GMT
+ENV JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1
+# Mon, 19 Mar 2018 21:11:11 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Wed, 14 Mar 2018 10:51:03 GMT
+# Mon, 19 Mar 2018 21:11:50 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 14 Mar 2018 10:51:05 GMT
+# Mon, 19 Mar 2018 21:11:52 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 15 Mar 2018 13:17:17 GMT
+# Tue, 20 Mar 2018 17:00:02 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Thu, 15 Mar 2018 13:17:21 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Thu, 15 Mar 2018 13:17:21 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 ENV KAAZING_GATEWAY_VERSION=5.6.0
-# Thu, 15 Mar 2018 13:17:22 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.6.0/gateway.distribution-5.6.0.tar.gz
-# Thu, 15 Mar 2018 13:17:22 GMT
+# Tue, 20 Mar 2018 17:00:25 GMT
 WORKDIR /kaazing-gateway
-# Thu, 15 Mar 2018 13:17:25 GMT
+# Tue, 20 Mar 2018 17:00:28 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Thu, 15 Mar 2018 13:17:25 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 EXPOSE 8000/tcp
-# Thu, 15 Mar 2018 13:17:26 GMT
+# Tue, 20 Mar 2018 17:00:29 GMT
 CMD ["gateway.start"]
 ```
 
@@ -224,23 +224,23 @@ CMD ["gateway.start"]
 		Last Modified: Wed, 14 Mar 2018 12:45:45 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a5e00634c6d349291ce4c60f78676eae209b9d94ad7dea95e4ed9019702280`  
-		Last Modified: Wed, 14 Mar 2018 12:46:22 GMT  
-		Size: 165.4 MB (165394600 bytes)  
+	-	`sha256:8dbabc90b2b88af86284508836e854ab5ea90ac04c5fb5f0cf32caca8245d7de`  
+		Last Modified: Mon, 19 Mar 2018 23:29:49 GMT  
+		Size: 155.2 MB (155214277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8baa304f616f0d2585dbce1c8221d560ec8668f0d2a0dcf5efec40e905d53180`  
-		Last Modified: Wed, 14 Mar 2018 12:45:45 GMT  
-		Size: 272.1 KB (272066 bytes)  
+	-	`sha256:982930be204d019954bbd61d64a6c48bc498d0577b503edb7d976fa51225f45f`  
+		Last Modified: Mon, 19 Mar 2018 23:29:17 GMT  
+		Size: 272.1 KB (272080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b271a229e8ada3128074f97e36e7d6fd2d262e52b5e59689e2a98e7e698e151`  
-		Last Modified: Thu, 15 Mar 2018 13:17:47 GMT  
-		Size: 3.3 KB (3282 bytes)  
+	-	`sha256:bea460942d266b4c576f064282edfaf3a9160ebac318f04cb8acf6767cf26b7e`  
+		Last Modified: Tue, 20 Mar 2018 17:00:52 GMT  
+		Size: 3.3 KB (3276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80f0b5940eecf101f4bcd1f61e602661463adaa272a9a3b0dd622f468656ebd6`  
-		Last Modified: Thu, 15 Mar 2018 13:17:48 GMT  
+	-	`sha256:9a81ee13982ee131cec09bf408bc440bae9a0bda58a69a6238d1794832514a43`  
+		Last Modified: Tue, 20 Mar 2018 17:00:52 GMT  
 		Size: 104.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:535fad0bfce257f6bfa9e0c079097d6240459e65acf092838b73ee6e0f5de89d`  
-		Last Modified: Thu, 15 Mar 2018 13:17:49 GMT  
-		Size: 17.1 MB (17126829 bytes)  
+	-	`sha256:e9ca01bb73e379205f866b454e9c0103f91ff2cae3f4b396c628c370d20dd55f`  
+		Last Modified: Tue, 20 Mar 2018 17:00:53 GMT  
+		Size: 17.1 MB (17126825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
