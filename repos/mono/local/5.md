@@ -1,16 +1,16 @@
-# `mono:5.8.0.127`
+# `mono:5.10.0.160`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f90d81585b35567261136b5f2e96fe9b8da4e5468974c32ccba0207aa2e0ac6`
-- Created: `2018-03-14T07:33:45.000040365Z`
-- Virtual Size: ~ 564.95 Mb  
+- Image ID: `sha256:9d9455048366c59318b56541a60b9cbb75a1b486fd2e6c2fa0b9f9bc6c236bb6`
+- Created: `2018-03-20T10:12:49.612774145Z`
+- Virtual Size: ~ 564.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MONO_VERSION=5.8.0.127`
+  - `MONO_VERSION=5.10.0.160`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -487,12 +487,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u9`
+### `dpkg` source package: `curl=7.38.0-4+deb8u10`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u9`
-- `libcurl3:amd64=7.38.0-4+deb8u9`
+- `curl=7.38.0-4+deb8u10`
+- `libcurl3:amd64=7.38.0-4+deb8u10`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -501,13 +501,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u10
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.dsc' curl_7.38.0-4+deb8u10.dsc 2673 SHA256:8c63e3d24209e7eee792a8bc80a540dcfadf881452e43e8c500dcac192c3a73c
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.debian.tar.xz' curl_7.38.0-4+deb8u10.debian.tar.xz 47208 SHA256:917f9e86ed29504a962e5b982a455cfbd272a5e38a6ee050dfa343a2790fe746
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -881,12 +888,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/freetype/2.5.2-3+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `fsharp=4.1.25-0xamarin4+debian8b1`
+### `dpkg` source package: `fsharp=4.1.33-0xamarin3+debian8b1`
 
 Binary Packages:
 
-- `fsharp=4.1.25-0xamarin4+debian8b1`
-- `libfsharp-core4.3-cil=4.1.25-0xamarin4+debian8b1`
+- `fsharp=4.1.33-0xamarin3+debian8b1`
+- `libfsharp-core4.3-cil=4.1.33-0xamarin3+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/fsharp/copyright`, `/usr/share/doc/libfsharp-core4.3-cil/copyright`)
 
@@ -895,10 +902,10 @@ Licenses: (parsed from: `/usr/share/doc/fsharp/copyright`, `/usr/share/doc/libfs
 Source:
 
 ```console
-$ apt-get source -qq --print-uris fsharp=4.1.25-0xamarin4+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.25-0xamarin4+debian8b1.dsc' fsharp_4.1.25-0xamarin4+debian8b1.dsc 1371 SHA256:81240d4f450393c428ef9bc14880dc0224d4881778ea86802b71e873c9de5578
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.25.orig.tar.gz' fsharp_4.1.25.orig.tar.gz 43810253 SHA256:068f9e9a010d07e2f73be15ceb97f93b51dc644fd462b6fc979830d6318df666
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.25-0xamarin4+debian8b1.debian.tar.xz' fsharp_4.1.25-0xamarin4+debian8b1.debian.tar.xz 37624 SHA256:a17ec41d47e20065810c3aaa3ccc1033443cd966567e943d5c4c1b711440347c
+$ apt-get source -qq --print-uris fsharp=4.1.33-0xamarin3+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33-0xamarin3+debian8b1.dsc' fsharp_4.1.33-0xamarin3+debian8b1.dsc 1371 SHA256:f2c5eafbf3ae4c61fbfaeadc9a57a1c7812f98443d11517c7fcb288834293077
+'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33.orig.tar.gz' fsharp_4.1.33.orig.tar.gz 43431692 SHA256:6e4d75ab95cc7927a61cc974509ddb69f39b364daae8b6083b2ede9b5cb16074
+'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33-0xamarin3+debian8b1.debian.tar.xz' fsharp_4.1.33-0xamarin3+debian8b1.debian.tar.xz 36880 SHA256:b3dccbf81b05fe8031f56be77f78120e6c641e7e477c9dcf7b397f4270d0ac15
 ```
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
@@ -3061,163 +3068,163 @@ $ apt-get source -qq --print-uris mono-basic=4.6-0xamarin10+debian8b1
 'http://download.mono-project.com/repo/debian/pool/main/m/mono-basic/mono-basic_4.6-0xamarin10+debian8b1.debian.tar.xz' mono-basic_4.6-0xamarin10+debian8b1.debian.tar.xz 6892 SHA256:edb962f1eabec722642da81c3a90a761aef5760afca14d3aae684a4d86583bfe
 ```
 
-### `dpkg` source package: `mono=5.8.0.127-0xamarin5+debian8b1`
+### `dpkg` source package: `mono=5.10.0.160-0xamarin2+debian8b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-2.0-dev=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-accessibility4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-btls-interface4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-cairo4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-cecil-private-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-cil-dev=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-codecontracts4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-compilerservices-symbolwriter4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-corlib4.5-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-cscompmgd0.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-csharp4.0c-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-custommarshalers4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-data-tds4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-db2-1.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-debugger-soft4.0a-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-http4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n-cjk4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n-mideast4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n-other4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n-rare4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n-west4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n4.0-all=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-i18n4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-ldap4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-management4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-messaging-rabbitmq4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-messaging4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-build-engine4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-build-framework4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-build-tasks-v4.0-4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-build-utilities-v4.0-4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-build4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-csharp4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-visualc10.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-microsoft-web-infrastructure1.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-oracle4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-parallel4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-peapi4.0a-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-posix4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-rabbitmq4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-relaxng4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-security4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-sharpzip4.84-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-simd4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-smdiagnostics0.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-sqlite4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-componentmodel-composition4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-componentmodel-dataannotations4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-configuration-install4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-configuration4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-core4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data-datasetextensions4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data-entity4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data-linq4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data-services-client4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data-services4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-data4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-deployment4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-design4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-drawing-design4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-drawing4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-dynamic4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-enterpriseservices4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-identitymodel-selectors4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-identitymodel4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-io-compression-filesystem4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-io-compression4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-json-microsoft4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-json4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-ldap-protocols4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-ldap4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-management4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-messaging4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-net-http-formatting4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-net-http-webrequest4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-net-http4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-net4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-numerics-vectors4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-numerics4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-core2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-debugger2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-experimental2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-interfaces2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-linq2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-observable-aliases0.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-platformservices2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-providers2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-runtime-remoting2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-windows-forms2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reactive-windows-threading2.2-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-reflection-context4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-runtime-caching4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-runtime-durableinstancing4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-runtime-serialization-formatters-soap4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-runtime-serialization4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-runtime4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-security4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel-activation4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel-discovery4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel-internals0.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel-routing4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel-web4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-servicemodel4.0a-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-serviceprocess4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-threading-tasks-dataflow4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-transactions4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-abstractions4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-applicationservices4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-dynamicdata4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-extensions-design4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-extensions4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-http-selfhost4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-http-webhost4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-http4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-mobile4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-mvc3.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-razor2.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-regularexpressions4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-routing4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-services4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-webpages-deployment2.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-webpages-razor2.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web-webpages2.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-web4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-windows-forms-datavisualization4.0a-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-windows-forms4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-windows4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-workflow-activities4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-workflow-componentmodel4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-workflow-runtime4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-xaml4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-xml-linq4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-xml-serialization4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system-xml4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-system4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-tasklets4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-webbrowser4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-webmatrix-data4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-windowsbase4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmono-xbuild-tasks4.0-cil=5.8.0.127-0xamarin5+debian8b1`
-- `libmonosgen-2.0-1=5.8.0.127-0xamarin5+debian8b1`
-- `libmonosgen-2.0-dev=5.8.0.127-0xamarin5+debian8b1`
-- `mono-4.0-gac=5.8.0.127-0xamarin5+debian8b1`
-- `mono-csharp-shell=5.8.0.127-0xamarin5+debian8b1`
-- `mono-devel=5.8.0.127-0xamarin5+debian8b1`
-- `mono-gac=5.8.0.127-0xamarin5+debian8b1`
-- `mono-mcs=5.8.0.127-0xamarin5+debian8b1`
-- `mono-roslyn=5.8.0.127-0xamarin5+debian8b1`
-- `mono-runtime=5.8.0.127-0xamarin5+debian8b1`
-- `mono-runtime-common=5.8.0.127-0xamarin5+debian8b1`
-- `mono-runtime-sgen=5.8.0.127-0xamarin5+debian8b1`
-- `mono-xbuild=5.8.0.127-0xamarin5+debian8b1`
+- `ca-certificates-mono=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-2.0-dev=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-accessibility4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-btls-interface4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-cairo4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-cecil-private-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-cil-dev=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-codecontracts4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-compilerservices-symbolwriter4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-corlib4.5-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-cscompmgd0.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-csharp4.0c-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-custommarshalers4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-data-tds4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-db2-1.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-debugger-soft4.0a-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-http4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n-cjk4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n-mideast4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n-other4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n-rare4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n-west4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n4.0-all=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-i18n4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-ldap4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-management4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-messaging-rabbitmq4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-messaging4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-build-engine4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-build-framework4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-build-tasks-v4.0-4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-build-utilities-v4.0-4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-build4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-csharp4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-visualc10.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-microsoft-web-infrastructure1.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-oracle4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-parallel4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-peapi4.0a-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-posix4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-rabbitmq4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-relaxng4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-security4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-sharpzip4.84-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-simd4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-smdiagnostics0.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-sqlite4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-componentmodel-composition4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-componentmodel-dataannotations4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-configuration-install4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-configuration4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-core4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data-datasetextensions4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data-entity4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data-linq4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data-services-client4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data-services4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-data4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-deployment4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-design4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-drawing-design4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-drawing4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-dynamic4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-enterpriseservices4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-identitymodel-selectors4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-identitymodel4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-io-compression-filesystem4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-io-compression4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-json-microsoft4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-json4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-ldap-protocols4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-ldap4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-management4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-messaging4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-net-http-formatting4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-net-http-webrequest4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-net-http4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-net4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-numerics-vectors4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-numerics4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-core2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-debugger2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-experimental2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-interfaces2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-linq2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-observable-aliases0.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-platformservices2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-providers2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-runtime-remoting2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-windows-forms2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reactive-windows-threading2.2-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-reflection-context4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-runtime-caching4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-runtime-durableinstancing4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-runtime-serialization-formatters-soap4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-runtime-serialization4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-runtime4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-security4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel-activation4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel-discovery4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel-internals0.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel-routing4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel-web4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-servicemodel4.0a-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-serviceprocess4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-threading-tasks-dataflow4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-transactions4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-abstractions4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-applicationservices4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-dynamicdata4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-extensions-design4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-extensions4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-http-selfhost4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-http-webhost4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-http4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-mobile4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-mvc3.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-razor2.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-regularexpressions4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-routing4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-services4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-webpages-deployment2.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-webpages-razor2.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web-webpages2.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-web4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-windows-forms-datavisualization4.0a-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-windows-forms4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-windows4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-workflow-activities4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-workflow-componentmodel4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-workflow-runtime4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-xaml4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-xml-linq4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-xml-serialization4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system-xml4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-system4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-tasklets4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-webbrowser4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-webmatrix-data4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-windowsbase4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmono-xbuild-tasks4.0-cil=5.10.0.160-0xamarin2+debian8b1`
+- `libmonosgen-2.0-1=5.10.0.160-0xamarin2+debian8b1`
+- `libmonosgen-2.0-dev=5.10.0.160-0xamarin2+debian8b1`
+- `mono-4.0-gac=5.10.0.160-0xamarin2+debian8b1`
+- `mono-csharp-shell=5.10.0.160-0xamarin2+debian8b1`
+- `mono-devel=5.10.0.160-0xamarin2+debian8b1`
+- `mono-gac=5.10.0.160-0xamarin2+debian8b1`
+- `mono-mcs=5.10.0.160-0xamarin2+debian8b1`
+- `mono-roslyn=5.10.0.160-0xamarin2+debian8b1`
+- `mono-runtime=5.10.0.160-0xamarin2+debian8b1`
+- `mono-runtime-common=5.10.0.160-0xamarin2+debian8b1`
+- `mono-runtime-sgen=5.10.0.160-0xamarin2+debian8b1`
+- `mono-xbuild=5.10.0.160-0xamarin2+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-2.0-dev/copyright`, `/usr/share/doc/libmono-accessibility4.0-cil/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-cairo4.0-cil/copyright`, `/usr/share/doc/libmono-cecil-private-cil/copyright`, `/usr/share/doc/libmono-cil-dev/copyright`, `/usr/share/doc/libmono-codecontracts4.0-cil/copyright`, `/usr/share/doc/libmono-compilerservices-symbolwriter4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-cscompmgd0.0-cil/copyright`, `/usr/share/doc/libmono-csharp4.0c-cil/copyright`, `/usr/share/doc/libmono-custommarshalers4.0-cil/copyright`, `/usr/share/doc/libmono-data-tds4.0-cil/copyright`, `/usr/share/doc/libmono-db2-1.0-cil/copyright`, `/usr/share/doc/libmono-debugger-soft4.0a-cil/copyright`, `/usr/share/doc/libmono-http4.0-cil/copyright`, `/usr/share/doc/libmono-i18n-cjk4.0-cil/copyright`, `/usr/share/doc/libmono-i18n-mideast4.0-cil/copyright`, `/usr/share/doc/libmono-i18n-other4.0-cil/copyright`, `/usr/share/doc/libmono-i18n-rare4.0-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-all/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-ldap4.0-cil/copyright`, `/usr/share/doc/libmono-management4.0-cil/copyright`, `/usr/share/doc/libmono-messaging-rabbitmq4.0-cil/copyright`, `/usr/share/doc/libmono-messaging4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-build-engine4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-build-framework4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-build-tasks-v4.0-4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-build-utilities-v4.0-4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-build4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-csharp4.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-visualc10.0-cil/copyright`, `/usr/share/doc/libmono-microsoft-web-infrastructure1.0-cil/copyright`, `/usr/share/doc/libmono-oracle4.0-cil/copyright`, `/usr/share/doc/libmono-parallel4.0-cil/copyright`, `/usr/share/doc/libmono-peapi4.0a-cil/copyright`, `/usr/share/doc/libmono-posix4.0-cil/copyright`, `/usr/share/doc/libmono-rabbitmq4.0-cil/copyright`, `/usr/share/doc/libmono-relaxng4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-sharpzip4.84-cil/copyright`, `/usr/share/doc/libmono-simd4.0-cil/copyright`, `/usr/share/doc/libmono-smdiagnostics0.0-cil/copyright`, `/usr/share/doc/libmono-sqlite4.0-cil/copyright`, `/usr/share/doc/libmono-system-componentmodel-composition4.0-cil/copyright`, `/usr/share/doc/libmono-system-componentmodel-dataannotations4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration-install4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-core4.0-cil/copyright`, `/usr/share/doc/libmono-system-data-datasetextensions4.0-cil/copyright`, `/usr/share/doc/libmono-system-data-entity4.0-cil/copyright`, `/usr/share/doc/libmono-system-data-linq4.0-cil/copyright`, `/usr/share/doc/libmono-system-data-services-client4.0-cil/copyright`, `/usr/share/doc/libmono-system-data-services4.0-cil/copyright`, `/usr/share/doc/libmono-system-data4.0-cil/copyright`, `/usr/share/doc/libmono-system-deployment4.0-cil/copyright`, `/usr/share/doc/libmono-system-design4.0-cil/copyright`, `/usr/share/doc/libmono-system-drawing-design4.0-cil/copyright`, `/usr/share/doc/libmono-system-drawing4.0-cil/copyright`, `/usr/share/doc/libmono-system-dynamic4.0-cil/copyright`, `/usr/share/doc/libmono-system-enterpriseservices4.0-cil/copyright`, `/usr/share/doc/libmono-system-identitymodel-selectors4.0-cil/copyright`, `/usr/share/doc/libmono-system-identitymodel4.0-cil/copyright`, `/usr/share/doc/libmono-system-io-compression-filesystem4.0-cil/copyright`, `/usr/share/doc/libmono-system-io-compression4.0-cil/copyright`, `/usr/share/doc/libmono-system-json-microsoft4.0-cil/copyright`, `/usr/share/doc/libmono-system-json4.0-cil/copyright`, `/usr/share/doc/libmono-system-ldap-protocols4.0-cil/copyright`, `/usr/share/doc/libmono-system-ldap4.0-cil/copyright`, `/usr/share/doc/libmono-system-management4.0-cil/copyright`, `/usr/share/doc/libmono-system-messaging4.0-cil/copyright`, `/usr/share/doc/libmono-system-net-http-formatting4.0-cil/copyright`, `/usr/share/doc/libmono-system-net-http-webrequest4.0-cil/copyright`, `/usr/share/doc/libmono-system-net-http4.0-cil/copyright`, `/usr/share/doc/libmono-system-net4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics-vectors4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics4.0-cil/copyright`, `/usr/share/doc/libmono-system-reactive-core2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-debugger2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-experimental2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-interfaces2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-linq2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-observable-aliases0.0-cil/copyright`, `/usr/share/doc/libmono-system-reactive-platformservices2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-providers2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-runtime-remoting2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-windows-forms2.2-cil/copyright`, `/usr/share/doc/libmono-system-reactive-windows-threading2.2-cil/copyright`, `/usr/share/doc/libmono-system-reflection-context4.0-cil/copyright`, `/usr/share/doc/libmono-system-runtime-caching4.0-cil/copyright`, `/usr/share/doc/libmono-system-runtime-durableinstancing4.0-cil/copyright`, `/usr/share/doc/libmono-system-runtime-serialization-formatters-soap4.0-cil/copyright`, `/usr/share/doc/libmono-system-runtime-serialization4.0-cil/copyright`, `/usr/share/doc/libmono-system-runtime4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel-activation4.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel-discovery4.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel-internals0.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel-routing4.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel-web4.0-cil/copyright`, `/usr/share/doc/libmono-system-servicemodel4.0a-cil/copyright`, `/usr/share/doc/libmono-system-serviceprocess4.0-cil/copyright`, `/usr/share/doc/libmono-system-threading-tasks-dataflow4.0-cil/copyright`, `/usr/share/doc/libmono-system-transactions4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-abstractions4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-applicationservices4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-dynamicdata4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-extensions-design4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-extensions4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-http-selfhost4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-http-webhost4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-http4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-mobile4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-mvc3.0-cil/copyright`, `/usr/share/doc/libmono-system-web-razor2.0-cil/copyright`, `/usr/share/doc/libmono-system-web-regularexpressions4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-routing4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-services4.0-cil/copyright`, `/usr/share/doc/libmono-system-web-webpages-deployment2.0-cil/copyright`, `/usr/share/doc/libmono-system-web-webpages-razor2.0-cil/copyright`, `/usr/share/doc/libmono-system-web-webpages2.0-cil/copyright`, `/usr/share/doc/libmono-system-web4.0-cil/copyright`, `/usr/share/doc/libmono-system-windows-forms-datavisualization4.0a-cil/copyright`, `/usr/share/doc/libmono-system-windows-forms4.0-cil/copyright`, `/usr/share/doc/libmono-system-windows4.0-cil/copyright`, `/usr/share/doc/libmono-system-workflow-activities4.0-cil/copyright`, `/usr/share/doc/libmono-system-workflow-componentmodel4.0-cil/copyright`, `/usr/share/doc/libmono-system-workflow-runtime4.0-cil/copyright`, `/usr/share/doc/libmono-system-xaml4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml-linq4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml-serialization4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/libmono-tasklets4.0-cil/copyright`, `/usr/share/doc/libmono-webbrowser4.0-cil/copyright`, `/usr/share/doc/libmono-webmatrix-data4.0-cil/copyright`, `/usr/share/doc/libmono-windowsbase4.0-cil/copyright`, `/usr/share/doc/libmono-xbuild-tasks4.0-cil/copyright`, `/usr/share/doc/libmonosgen-2.0-1/copyright`, `/usr/share/doc/libmonosgen-2.0-dev/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-csharp-shell/copyright`, `/usr/share/doc/mono-devel/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-mcs/copyright`, `/usr/share/doc/mono-roslyn/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`, `/usr/share/doc/mono-xbuild/copyright`)
 
@@ -3243,10 +3250,10 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mono=5.8.0.127-0xamarin5+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.127-0xamarin5+debian8b1.dsc' mono_5.8.0.127-0xamarin5+debian8b1.dsc 19105 SHA256:fa223651e1d83816b118c787fb312e86ba567624061cb5005c58a07eba3f4dd3
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.127.orig.tar.bz2' mono_5.8.0.127.orig.tar.bz2 207075941 SHA256:23e07e90bc895539ca469f76efda5512c4a2cb3db507b28cf1697b833ccb4058
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.8.0.127-0xamarin5+debian8b1.debian.tar.xz' mono_5.8.0.127-0xamarin5+debian8b1.debian.tar.xz 151084 SHA256:f6a06e4fef5ae97273dbba18417042ed7fbf26575f87e69415cb4fc9c209bc7f
+$ apt-get source -qq --print-uris mono=5.10.0.160-0xamarin2+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160-0xamarin2+debian8b1.dsc' mono_5.10.0.160-0xamarin2+debian8b1.dsc 19120 SHA256:438126812d7d11897f3821a2fb20cfb62122813fc1de4257e85495825f357bf8
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160.orig.tar.bz2' mono_5.10.0.160.orig.tar.bz2 210503187 SHA256:167d3e1504bfb4fdbf08708f75937bf0e8421bf481de1723d9fa219dc7c8f8d8
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160-0xamarin2+debian8b1.debian.tar.xz' mono_5.10.0.160-0xamarin2+debian8b1.debian.tar.xz 151820 SHA256:07f135993d4fd8909d4ddfbb29abf1812196c66d588d4573b29052e2812a0d89
 ```
 
 ### `dpkg` source package: `msbuild=1:15.4+xamarinxplat.2017.11.27.11.23-0xamarin1+ubuntu1404b1`
