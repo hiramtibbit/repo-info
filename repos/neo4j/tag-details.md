@@ -75,11 +75,15 @@
 -	[`neo4j:3.1.6-enterprise`](#neo4j316-enterprise)
 -	[`neo4j:3.1.7`](#neo4j317)
 -	[`neo4j:3.1.7-enterprise`](#neo4j317-enterprise)
+-	[`neo4j:3.1.8`](#neo4j318)
+-	[`neo4j:3.1.8-enterprise`](#neo4j318-enterprise)
 -	[`neo4j:3.1-enterprise`](#neo4j31-enterprise)
 -	[`neo4j:3.2`](#neo4j32)
 -	[`neo4j:3.2.0`](#neo4j320)
 -	[`neo4j:3.2.0-enterprise`](#neo4j320-enterprise)
 -	[`neo4j:3.2.1`](#neo4j321)
+-	[`neo4j:3.2.10`](#neo4j3210)
+-	[`neo4j:3.2.10-enterprise`](#neo4j3210-enterprise)
 -	[`neo4j:3.2.1-enterprise`](#neo4j321-enterprise)
 -	[`neo4j:3.2.2`](#neo4j322)
 -	[`neo4j:3.2.2-enterprise`](#neo4j322-enterprise)
@@ -105,6 +109,8 @@
 -	[`neo4j:3.3.2-enterprise`](#neo4j332-enterprise)
 -	[`neo4j:3.3.3`](#neo4j333)
 -	[`neo4j:3.3.3-enterprise`](#neo4j333-enterprise)
+-	[`neo4j:3.3.4`](#neo4j334)
+-	[`neo4j:3.3.4-enterprise`](#neo4j334-enterprise)
 -	[`neo4j:3.3-enterprise`](#neo4j33-enterprise)
 -	[`neo4j:enterprise`](#neo4jenterprise)
 -	[`neo4j:latest`](#neo4jlatest)
@@ -9370,6 +9376,14 @@ CMD ["neo4j"]
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `neo4j:3.1.8`
+
+**does not exist** (yet?)
+
+## `neo4j:3.1.8-enterprise`
+
+**does not exist** (yet?)
+
 ## `neo4j:3.1-enterprise`
 
 ```console
@@ -9868,6 +9882,14 @@ CMD ["neo4j"]
 		Last Modified: Wed, 10 Jan 2018 09:38:51 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neo4j:3.2.10`
+
+**does not exist** (yet?)
+
+## `neo4j:3.2.10-enterprise`
+
+**does not exist** (yet?)
 
 ## `neo4j:3.2.1-enterprise`
 
@@ -12342,6 +12364,14 @@ CMD ["neo4j"]
 		Last Modified: Tue, 20 Feb 2018 18:43:47 GMT  
 		Size: 2.3 KB (2277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neo4j:3.3.4`
+
+**does not exist** (yet?)
+
+## `neo4j:3.3.4-enterprise`
+
+**does not exist** (yet?)
 
 ## `neo4j:3.3-enterprise`
 
