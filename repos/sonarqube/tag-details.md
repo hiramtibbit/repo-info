@@ -528,7 +528,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:cf18dd0946dab2d3efff18496fd5ee9f3e537fe3e7550c2f85b031129a3c89d3
+$ docker pull sonarqube@sha256:f80f477cfeb41499ff41f6f747aa6b35c3977d1ffc71609b25fcbf9c3d65f3ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -538,14 +538,14 @@ $ docker pull sonarqube@sha256:cf18dd0946dab2d3efff18496fd5ee9f3e537fe3e7550c2f8
 ### `sonarqube:latest` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:fc9268118139df372f067c70b196b75956d74b35ff3aba449668f3d6714644b6
+$ docker pull sonarqube@sha256:8c475954732fb75073868f837023438f98ce1c0233fee10e67177d4cc99eed57
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **450.1 MB (450085438 bytes)**  
+-	Total Size: **439.9 MB (439907352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aee9e333200f6912cbd004f05395f36772834ee6c2c43a1104f5c6d5812f312`
+-	Image ID: `sha256:454d1093bfb1d49c7cede08a4b33302540bdbc3bcf9c8eb122244155fcb9e0cd`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -569,33 +569,33 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Wed, 14 Mar 2018 11:09:02 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 14 Mar 2018 11:09:02 GMT
-ENV JAVA_VERSION=8u151
-# Wed, 14 Mar 2018 11:09:02 GMT
-ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
-# Wed, 14 Mar 2018 11:09:03 GMT
+# Mon, 19 Mar 2018 21:22:52 GMT
+ENV JAVA_VERSION=8u162
+# Mon, 19 Mar 2018 21:22:53 GMT
+ENV JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1
+# Mon, 19 Mar 2018 21:22:53 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Wed, 14 Mar 2018 11:09:51 GMT
+# Mon, 19 Mar 2018 21:23:40 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 14 Mar 2018 11:09:53 GMT
+# Mon, 19 Mar 2018 21:23:43 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 15 Mar 2018 14:01:16 GMT
+# Tue, 20 Mar 2018 02:47:52 GMT
 ENV SONAR_VERSION=7.0 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 15 Mar 2018 14:01:16 GMT
+# Tue, 20 Mar 2018 02:47:53 GMT
 EXPOSE 9000/tcp
-# Thu, 15 Mar 2018 14:01:17 GMT
+# Tue, 20 Mar 2018 02:47:54 GMT
 RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
-# Thu, 15 Mar 2018 14:01:43 GMT
+# Tue, 20 Mar 2018 02:48:20 GMT
 RUN set -x     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true
-# Thu, 15 Mar 2018 14:02:05 GMT
+# Tue, 20 Mar 2018 18:26:31 GMT
 RUN set -x     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && chown -R sonarqube:sonarqube sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 15 Mar 2018 14:02:05 GMT
+# Tue, 20 Mar 2018 18:26:32 GMT
 VOLUME [/opt/sonarqube/data]
-# Thu, 15 Mar 2018 14:02:06 GMT
+# Tue, 20 Mar 2018 18:26:32 GMT
 WORKDIR /opt/sonarqube
-# Thu, 15 Mar 2018 14:02:06 GMT
+# Tue, 20 Mar 2018 18:26:33 GMT
 COPY file:8e25c057205c3bc912a47e98b3ba17b1da8f3b9e4e383b0baf6d4b9532a0ee15 in /opt/sonarqube/bin/ 
-# Thu, 15 Mar 2018 14:02:07 GMT
+# Tue, 20 Mar 2018 18:26:33 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
@@ -628,28 +628,28 @@ ENTRYPOINT ["./bin/run.sh"]
 		Last Modified: Wed, 14 Mar 2018 12:50:06 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48010c1717c7374d2efce05bb930227117c0d9a719e7d49027771994fb917d37`  
-		Last Modified: Wed, 14 Mar 2018 12:50:43 GMT  
-		Size: 182.9 MB (182903460 bytes)  
+	-	`sha256:d9bbcf733166f991331a80e1cd55a91111c4ba96fc7ce1ecabd05b450b7da7a3`  
+		Last Modified: Mon, 19 Mar 2018 23:42:27 GMT  
+		Size: 172.7 MB (172725313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a6123cacadfb839a6fcd170146a61303ef449c002ac819acb1d7662751804f9`  
-		Last Modified: Wed, 14 Mar 2018 12:50:06 GMT  
-		Size: 272.1 KB (272086 bytes)  
+	-	`sha256:b1d3e8de8ec6d87b8485a8a3b66d63125a033cfb0711f8af24b4f600f524e276`  
+		Last Modified: Mon, 19 Mar 2018 23:41:54 GMT  
+		Size: 272.1 KB (272122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3d38a0d5a117ee0351f2a2c69ed2e1cd04cc8b7fce706733094071727f4841`  
-		Last Modified: Thu, 15 Mar 2018 14:03:25 GMT  
-		Size: 1.8 KB (1796 bytes)  
+	-	`sha256:3fd171a615f8f5a58f745b6c51891abd86c1684ec0c684aaeb21daad633e1c6c`  
+		Last Modified: Tue, 20 Mar 2018 18:35:41 GMT  
+		Size: 1.8 KB (1797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081287069db6b1a991626ed5c004f67a74bb8e80435bbd434ca557ff0ecd15d8`  
-		Last Modified: Thu, 15 Mar 2018 14:03:24 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:e40bb449aaab5f41bbf6f18bcaf966516b69cc56af3fb5a7166edfe5066f1c7e`  
+		Last Modified: Tue, 20 Mar 2018 18:35:41 GMT  
+		Size: 500.9 KB (500906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf9f3aa31da4b623878641fb60a3c2c7aa18a71ad5ffa6ce1422987bb5c1bc0`  
-		Last Modified: Thu, 15 Mar 2018 14:03:32 GMT  
-		Size: 154.9 MB (154911849 bytes)  
+	-	`sha256:8562aab31d8598240049bcee574cf9b07911f9e07fa6dd7cf212cdc3c13c1f64`  
+		Last Modified: Tue, 20 Mar 2018 18:35:50 GMT  
+		Size: 154.9 MB (154911882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a338cf1be07232d42dcd5bb76bf5e87eb7cdee0c67b162f0dd4ebaa2cd9d418`  
-		Last Modified: Thu, 15 Mar 2018 14:03:24 GMT  
+	-	`sha256:dda3fc66f7b667ebd877467cac635e486ebd3dbebbd1cf652c6e736232998dea`  
+		Last Modified: Tue, 20 Mar 2018 18:35:41 GMT  
 		Size: 482.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
