@@ -1,7 +1,7 @@
 ## `openjdk:10-slim`
 
 ```console
-$ docker pull openjdk@sha256:ac6f8d997df77227c9e2b53a196c4a084bf88fcec77b42f22f1f908de7cdf901
+$ docker pull openjdk@sha256:5f45242b98aa04180a43fdefe67d10e4514e462bd7b58e99ded64156ecc8cb95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -79,14 +79,14 @@ CMD ["jshell"]
 ### `openjdk:10-slim` - linux; arm variant v5
 
 ```console
-$ docker pull openjdk@sha256:7b96fad1555e2cd648e76ecc651520eada7367e7383953908440235fad13c97c
+$ docker pull openjdk@sha256:ef8f7ac95a4d247811b4a066bdc2e435f0ac898114ac53b7cef6778abf6e50ca
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.9 MB (243935520 bytes)**  
+-	Total Size: **244.0 MB (243953789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c16e00e61a0f76d55ec2686fe17753d2d8cae810761961a22897c2b73271765`
+-	Image ID: `sha256:2192d7018b5d7b023b62b476df99f6378d0c37424ca75e040efc888419fd5e8d`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -108,11 +108,11 @@ RUN ln -svT "/usr/lib/jvm/java-10-openjdk-$(dpkg --print-architecture)" /docker-
 ENV JAVA_HOME=/docker-java-home
 # Fri, 16 Mar 2018 08:06:12 GMT
 ENV JAVA_VERSION=10-ea+46
-# Fri, 16 Mar 2018 08:06:13 GMT
-ENV JAVA_DEBIAN_VERSION=10~46-1
-# Fri, 16 Mar 2018 08:10:16 GMT
+# Tue, 20 Mar 2018 09:57:54 GMT
+ENV JAVA_DEBIAN_VERSION=10~46-2
+# Tue, 20 Mar 2018 10:02:20 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y 		openjdk-10-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 16 Mar 2018 08:10:18 GMT
+# Tue, 20 Mar 2018 10:02:21 GMT
 CMD ["jshell"]
 ```
 
@@ -137,9 +137,9 @@ CMD ["jshell"]
 		Last Modified: Fri, 16 Mar 2018 08:13:23 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:655c655e58e5448a4d04393fcfcce2ce6f11b272df5c11e366df311b585c7016`  
-		Last Modified: Fri, 16 Mar 2018 08:18:29 GMT  
-		Size: 219.8 MB (219761568 bytes)  
+	-	`sha256:e86471e45fc10e307dedc1b4d377e122e6d28c27c6048d5dcc37f9f0124ae55b`  
+		Last Modified: Tue, 20 Mar 2018 10:20:41 GMT  
+		Size: 219.8 MB (219779837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:10-slim` - linux; arm variant v7
