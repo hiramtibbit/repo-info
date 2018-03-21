@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb39c8838fce8ec4fa308bc34ede56d2de027aac50975f92758606096590e0de`
-- Created: `2018-03-15T12:12:06.843488822Z`
-- Virtual Size: ~ 394.03 Mb  
+- Image ID: `sha256:b0ea811906d4c28dc746809df6aa7b98695c534c6e6fe524dd4f072eb5c3bf95`
+- Created: `2018-03-20T16:41:06.389423596Z`
+- Virtual Size: ~ 394.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=9.0.1+11`
-  - `JAVA_DEBIAN_VERSION=9.0.1+11-1`
+  - `JAVA_VERSION=9.0.4+12`
+  - `JAVA_DEBIAN_VERSION=9.0.4+12-2`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -70,11 +70,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.117/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.117/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apparmor=2.12-3`
+### `dpkg` source package: `apparmor=2.12-4`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.12-3`
+- `libapparmor1:amd64=2.12-4`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -87,18 +87,18 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=2.12-3
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-3.dsc' apparmor_2.12-3.dsc 3274 SHA256:8e067d3d45ef5183b44a35d462abfd52fa364fc10c843e3746c71206247ffcc3
+$ apt-get source -qq --print-uris apparmor=2.12-4
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-4.dsc' apparmor_2.12-4.dsc 3274 SHA256:e764a2385aeff03e72eac266f93d9d5c9edd675efed19ad742246e4168f1b862
 'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz' apparmor_2.12.orig.tar.gz 7258450 SHA256:8a2b0cd083faa4d0640f579024be3a629faa7db3b99540798a1a050e2eaba056
 'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz.asc' apparmor_2.12.orig.tar.gz.asc 837 SHA256:ea904e33c3b2ec109ea2ebf4c0cf29e9d4f68836328e901c9777a55b50084e63
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-3.debian.tar.xz' apparmor_2.12-3.debian.tar.xz 85604 SHA256:571bee97cba3c6e654db4ba9b23478f2b690a1aaf1af0779ec0dd0cda23d00fb
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-4.debian.tar.xz' apparmor_2.12-4.debian.tar.xz 85176 SHA256:9c12219142515ec8b314962e54498c9a4347a800a5015e4d251d18866840d905
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apparmor/2.12-3/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.12-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apparmor/2.12-4/ (for browsing the source)
+- https://sources.debian.net/src/apparmor/2.12-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apparmor/2.12-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.6~beta1`
 
@@ -1129,11 +1129,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.51/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.51/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-common=0.59`
+### `dpkg` source package: `java-common=0.62`
 
 Binary Packages:
 
-- `java-common=0.59`
+- `java-common=0.62`
 
 Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 
@@ -1143,16 +1143,16 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris java-common=0.59
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.59.dsc' java-common_0.59.dsc 2134 SHA256:44f77a693749779f3bd78bf2b2ac1a5a2a9a7278eb0a9e00190e206d3cb31537
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.59.tar.xz' java-common_0.59.tar.xz 13064 SHA256:d5737f7bacf02c81cace29176d8bddc3552b0857841aeb3435bcf52265d695ca
+$ apt-get source -qq --print-uris java-common=0.62
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.62.dsc' java-common_0.62.dsc 2134 SHA256:dbab2c67efb34e3d95bbd352d7b188fe307c529beeb9de3d8afce6f596892ed9
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.62.tar.xz' java-common_0.62.tar.xz 13360 SHA256:2bd7de208d1166e64126db450ff320a6ad17c72f4b5f4783543a01b443da820c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/java-common/0.59/ (for browsing the source)
-- https://sources.debian.net/src/java-common/0.59/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/java-common/0.59/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/java-common/0.62/ (for browsing the source)
+- https://sources.debian.net/src/java-common/0.62/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-common/0.62/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2`
 
@@ -1374,20 +1374,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.27-6
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-6.dsc' libgpg-error_1.27-6.dsc 2343 SHA256:d4cc2c1691b295f558d5b347df8a8ad2f0260cf57146180bed223b94ffacafbb
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27.orig.tar.bz2' libgpg-error_1.27.orig.tar.bz2 813060 SHA256:4f93aac6fecb7da2b92871bb9ee33032be6a87b174f54abf8ddf0911a22d29d2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-6.debian.tar.xz' libgpg-error_1.27-6.debian.tar.xz 20556 SHA256:89bc57dc3df449febf037226daf1aee830455c4efa493c0e3bdeab2a48971479
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.27-6/
 
-- https://sources.debian.net/src/libgpg-error/1.27-6/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.27-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.27-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.0.4-1.1`
 
@@ -1700,12 +1693,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libx11=2:1.6.4-3`
+### `dpkg` source package: `libx11=2:1.6.5-1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.4-3`
-- `libx11-data=2:1.6.4-3`
+- `libx11-6:amd64=2:1.6.5-1`
+- `libx11-data=2:1.6.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1714,17 +1707,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.4-3
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.4-3.dsc' libx11_1.6.4-3.dsc 2397 SHA256:4c5d6add2ba969067ca111c827ae94264e4c22776e22f318d264545dc1c6a300
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.4-3.diff.gz' libx11_1.6.4-3.diff.gz 41366 SHA256:2c936827bca63eaf5b66683bdcd0ecf013d152c35439f792475db85c5c2338fd
+$ apt-get source -qq --print-uris libx11=2:1.6.5-1
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.5-1.dsc' libx11_1.6.5-1.dsc 2378 SHA256:6568da5394e44152025ce6ee06a8e683a8f722c7a962ccb29288b700be75b684
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.5.orig.tar.gz' libx11_1.6.5.orig.tar.gz 3123307 SHA256:3abce972ba62620611fab5b404dafb852da3da54e7c287831c30863011d28fb3
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.5-1.diff.gz' libx11_1.6.5-1.diff.gz 48025 SHA256:75d40eb5c2181c5b6cdf638c621f75e107b415ccab293288a7b04c2e88be75ff
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libx11/2:1.6.4-3/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.6.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.6.4-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libx11/2:1.6.5-1/ (for browsing the source)
+- https://sources.debian.net/src/libx11/2:1.6.5-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libx11/2:1.6.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
 
@@ -2126,12 +2119,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.35-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.35-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-9=9.0.1+11-1`
+### `dpkg` source package: `openjdk-9=9.0.4+12-2`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9.0.1+11-1`
-- `openjdk-9-jre-headless:amd64=9.0.1+11-1`
+- `openjdk-9-jdk-headless:amd64=9.0.4+12-2`
+- `openjdk-9-jre-headless:amd64=9.0.4+12-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2143,17 +2136,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9.0.1+11-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.dsc' openjdk-9_9.0.1+11-1.dsc 4496 SHA256:4b6358affae6b962913806012c8b83433d5d695fc147db6bb9753db46edf6511
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11.orig.tar.gz' openjdk-9_9.0.1+11.orig.tar.gz 74610589 SHA256:f0ad0f2fc4066ff24fd9b116564f17253841ec1ce64f0130bf4e139a4b339943
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.1+11-1.debian.tar.xz' openjdk-9_9.0.1+11-1.debian.tar.xz 174456 SHA256:34abc8a0e7ed205454fd9ce4716ea4e36643f5cf843ef31a73dcb8943f7277fd
+$ apt-get source -qq --print-uris openjdk-9=9.0.4+12-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-2.dsc' openjdk-9_9.0.4+12-2.dsc 4514 SHA256:6f00d4aeacd1dd342459b200cba4d7c38dd9ace3dae6195db8eac7fed0d96280
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12.orig.tar.gz' openjdk-9_9.0.4+12.orig.tar.gz 74731050 SHA256:8d64b95249959bfe5ee9dcc1c802476ceaad5bf88041129dc072484b39f25fcc
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-2.debian.tar.xz' openjdk-9_9.0.4+12-2.debian.tar.xz 174348 SHA256:e382064cffd2626b895db5b0ea061feed294c2e9f3be620822197f1e593741cf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9.0.1+11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9.0.1+11-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-9/9.0.4+12-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-9/9.0.4+12-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -2456,24 +2449,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/psmisc/23.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/psmisc/23.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `publicsuffix=20180223.1310-1`
+### `dpkg` source package: `publicsuffix=20180312.1505-1`
 
 Binary Packages:
 
-- `publicsuffix=20180223.1310-1`
+- `publicsuffix=20180312.1505-1`
 
 Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 
 - `CC0`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris publicsuffix=20180312.1505-1
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180312.1505-1.dsc' publicsuffix_20180312.1505-1.dsc 1343 SHA256:1255ce15af797142ef18b7b8fb5acda459231d0058df56fa4ff142ffa550030d
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180312.1505.orig.tar.gz' publicsuffix_20180312.1505.orig.tar.gz 84543 SHA256:44639bdbfbb526b1d5fe5cc854a1ac7112bb3091cd2074e023b3681588f6524e
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20180312.1505-1.debian.tar.xz' publicsuffix_20180312.1505-1.debian.tar.xz 15420 SHA256:9ec4328a363aca0eb4dd92696004b8f1a44baeca5181d758db464297723f1f05
+```
 
-- http://snapshot.debian.org/package/publicsuffix/20180223.1310-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/publicsuffix/20180312.1505-1/ (for browsing the source)
+- https://sources.debian.net/src/publicsuffix/20180312.1505-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/publicsuffix/20180312.1505-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -2552,11 +2552,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.22.0-1`
+### `dpkg` source package: `sqlite3=3.22.0-2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1`
+- `libsqlite3-0:amd64=3.22.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2567,18 +2567,18 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.dsc' sqlite3_3.22.0-1.dsc 2397 SHA256:6a5c95a5062c19abcfb0492b32b4e4f20634a59fb077da2415ab16e1afdc4ff6
+$ apt-get source -qq --print-uris sqlite3=3.22.0-2
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-2.dsc' sqlite3_3.22.0-2.dsc 2397 SHA256:c949e336cf7459cd21f1c6c58ca39a254806b35f74a312ae483dd4beed79d71f
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.22.0-2.debian.tar.xz' sqlite3_3.22.0-2.debian.tar.xz 17992 SHA256:2227ca598d994ecfa71c160245c1df7be9d25dce02d4fcb1ffb7608004d67f43
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sqlite3/3.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sqlite3/3.22.0-2/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.22.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.22.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 
