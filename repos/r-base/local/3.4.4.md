@@ -858,16 +858,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.dsc' findutils_4.6.0+git+20170828-2.dsc 2221 SHA256:6997072de2f1b24457073275f7b8f15ad2f0569389dcb277ebe99dd1846e2ee9
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828.orig.tar.xz' findutils_4.6.0+git+20170828.orig.tar.xz 1865192 SHA256:8d6571ffd5105307bcb1b20c4b7d5c2d0b5152e463b082801268bd3ec9e2bbfd
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.dsc' findutils_4.6.0+git+20170828-2.dsc 2221 SHA256:6997072de2f1b24457073275f7b8f15ad2f0569389dcb277ebe99dd1846e2ee9
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828.orig.tar.xz' findutils_4.6.0+git+20170828.orig.tar.xz 1865192 SHA256:8d6571ffd5105307bcb1b20c4b7d5c2d0b5152e463b082801268bd3ec9e2bbfd
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20170828-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20170828-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20170828-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.12.6-0.1`
 
@@ -1100,10 +1094,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gdbm=1.14.1-6
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.14.1-6.dsc' gdbm_1.14.1-6.dsc 2293 SHA256:85fc353e81fc54b49d9c13c71f4247836fb1aac2693e98416a6821de8cfe7b41
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.14.1-6.debian.tar.xz' gdbm_1.14.1-6.debian.tar.xz 27492 SHA256:c9da59f11d5e40ecd877f1256c53ea4750b9d614c7885800e42d0f1885996658
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-6.dsc' gdbm_1.14.1-6.dsc 2293 SHA256:85fc353e81fc54b49d9c13c71f4247836fb1aac2693e98416a6821de8cfe7b41
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1.orig.tar.gz' gdbm_1.14.1.orig.tar.gz 894412 SHA256:cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.14.1-6.debian.tar.xz' gdbm_1.14.1-6.debian.tar.xz 27492 SHA256:c9da59f11d5e40ecd877f1256c53ea4750b9d614c7885800e42d0f1885996658
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gdbm/1.14.1-6/ (for browsing the source)
+- https://sources.debian.net/src/gdbm/1.14.1-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdbm/1.14.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.3-2`
 
@@ -1506,20 +1506,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.15.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.dsc' iproute2_4.15.0-2.dsc 1846 SHA256:d2c567566c137c37ac90690488ac1a19f8e4a149e9821d984db01657dd9f5c65
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0.orig.tar.xz' iproute2_4.15.0.orig.tar.xz 648836 SHA256:48d4616a99d7b609b7b795c0ae8ec57099fb0271ed89253e8772c02327798355
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-2.debian.tar.xz' iproute2_4.15.0-2.debian.tar.xz 137036 SHA256:8b57941a6a28e67885b94ec2601d00c3b97ed6eaa85956db6c63508abeeb4e7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.15.0-2/
 
-- https://sources.debian.net/src/iproute2/4.15.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.15.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl-0.18=0.18-4`
 
@@ -2950,10 +2943,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nlme=3.1.131.1-1
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131.1-1.dsc' nlme_3.1.131.1-1.dsc 1667 SHA256:1eb22041b6cd16b2e1913f8790457bbf53796229e4712cc9ca67ec001a2eb4ed
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131.1.orig.tar.gz' nlme_3.1.131.1.orig.tar.gz 780391 SHA256:1e3c2d147df34d83b0f3ab50ac065371035f5d676a763c45595f26058e894ef5
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131.1-1.diff.gz' nlme_3.1.131.1-1.diff.gz 7075 SHA256:e217b88d73d67b5efc93a9a0ffcd1901c4f0d2530c084d3890e00d4b97673697
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131.1-1.dsc' nlme_3.1.131.1-1.dsc 1667 SHA256:1eb22041b6cd16b2e1913f8790457bbf53796229e4712cc9ca67ec001a2eb4ed
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131.1.orig.tar.gz' nlme_3.1.131.1.orig.tar.gz 780391 SHA256:1e3c2d147df34d83b0f3ab50ac065371035f5d676a763c45595f26058e894ef5
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131.1-1.diff.gz' nlme_3.1.131.1-1.diff.gz 7075 SHA256:e217b88d73d67b5efc93a9a0ffcd1901c4f0d2530c084d3890e00d4b97673697
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nlme/3.1.131.1-1/ (for browsing the source)
+- https://sources.debian.net/src/nlme/3.1.131.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nlme/3.1.131.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -3302,10 +3301,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=3.4.4-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.4-1.dsc' r-base_3.4.4-1.dsc 2854 SHA256:688bcc88f5c335294ba323cf9c58881410cc91228b0e02b4ca8afa9581d90c6e
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.4.orig.tar.gz' r-base_3.4.4.orig.tar.gz 30474612 SHA256:b3e97d2fab7256d1c655c4075934725ba1cd7cb9237240a11bb22ccdad960337
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.4-1.debian.tar.xz' r-base_3.4.4-1.debian.tar.xz 87668 SHA256:d05dcd486ccbd61a72efb6e88ac30548813ebd8632414d7a34354e5dc0a87f99
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.4-1.dsc' r-base_3.4.4-1.dsc 2854 SHA256:688bcc88f5c335294ba323cf9c58881410cc91228b0e02b4ca8afa9581d90c6e
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.4.orig.tar.gz' r-base_3.4.4.orig.tar.gz 30474612 SHA256:b3e97d2fab7256d1c655c4075934725ba1cd7cb9237240a11bb22ccdad960337
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.4-1.debian.tar.xz' r-base_3.4.4-1.debian.tar.xz 87668 SHA256:d05dcd486ccbd61a72efb6e88ac30548813ebd8632414d7a34354e5dc0a87f99
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-base/3.4.4-1/ (for browsing the source)
+- https://sources.debian.net/src/r-base/3.4.4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-base/3.4.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
