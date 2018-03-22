@@ -7,6 +7,7 @@
 -	[`aerospike:3.14.1.8`](#aerospike31418)
 -	[`aerospike:3.15.1.4`](#aerospike31514)
 -	[`aerospike:3.16.0.6`](#aerospike31606)
+-	[`aerospike:4.0.0.4`](#aerospike4004)
 -	[`aerospike:latest`](#aerospikelatest)
 
 ## `aerospike:3.12.1.3`
@@ -463,6 +464,10 @@ CMD ["asd"]
 		Last Modified: Mon, 12 Mar 2018 22:54:20 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `aerospike:4.0.0.4`
+
+**does not exist** (yet?)
 
 ## `aerospike:latest`
 
