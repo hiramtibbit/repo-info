@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3422051ccf97f1f85a0c794b54631d0e9c675faba327aeec78d001c91f713f8`
-- Created: `2018-03-15T23:13:09.479627045Z`
-- Virtual Size: ~ 694.54 Mb  
+- Image ID: `sha256:3a7de62caf1f5e4c95e2867a4c07fffead61df3fd0572badb03a1ac34097e1e2`
+- Created: `2018-03-20T22:28:08.725457415Z`
+- Virtual Size: ~ 695.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
   - `PYTHON_VERSION=3.6.4`
-  - `PYTHON_PIP_VERSION=9.0.1`
+  - `PYTHON_PIP_VERSION=9.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -648,6 +648,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
