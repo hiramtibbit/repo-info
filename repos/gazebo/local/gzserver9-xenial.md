@@ -102,13 +102,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.25
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.25.dsc' apt_1.2.25.dsc 2392 SHA256:b47fb5c51bdcc0435e18d54f849d1ae23e28aeb4597a4e1731e9ac3283379239
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.25.tar.xz' apt_1.2.25.tar.xz 2059528 SHA256:0bedd8d2eeec9d18c01f8de98b87d4461cbe067fc7896e9a72da7dd51d1f75f4
-```
 
 ### `dpkg` source package: `armadillo=1:6.500.5+dfsg-1`
 
@@ -5041,9 +5037,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=229-4ubuntu21.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
@@ -5136,14 +5132,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.2.dsc' tiff_4.0.6-1ubuntu0.2.dsc 2385 SHA256:57efc3e8c8a0de59ee5c7c6524d9f7d0a6116cdf5b04f7c99cbae2aeda27f3ed
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.2.debian.tar.xz' tiff_4.0.6-1ubuntu0.2.debian.tar.xz 35624 SHA256:624faadcf6f66fb4c7658b94ce5cf836967387f8f9ac5d9beac1d02f04e8a0bc
-```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 

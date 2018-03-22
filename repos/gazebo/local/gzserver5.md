@@ -4512,14 +4512,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.7.dsc' tiff_4.0.3-7ubuntu0.7.dsc 2296 SHA256:4f51022c534c82275393ecc7f0752e3832f0043c045957f9a2275c8deb72389e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.7.debian.tar.gz' tiff_4.0.3-7ubuntu0.7.debian.tar.gz 61592 SHA256:877b50c3446052ba3658ebf21967401456b84fe1b0d1cec0042670bb738e74b7
-```
 
 ### `dpkg` source package: `tinyxml=2.6.2-2`
 
