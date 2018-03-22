@@ -1,7 +1,7 @@
 ## `python:3-alpine3.6`
 
 ```console
-$ docker pull python@sha256:e3e2d397b28430d93eac573faf218b4de8ad86de994eb73162bc2e09cd1b8739
+$ docker pull python@sha256:8d7026d47caa1be4fd1a4182490fb22b78903f31c76ccc87df87e8a2ff9604ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull python@sha256:e3e2d397b28430d93eac573faf218b4de8ad86de994eb73162bc
 ### `python:3-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull python@sha256:488a32bf0d311a94be2c4335dcbcb7ed2e00af00e729da616e06701db4359552
+$ docker pull python@sha256:4c6ee9adfe62b4bee1ec498f600a3c464c44bf9cb1ae206ca9298ca378f0c5cb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.7 MB (30727000 bytes)**  
+-	Total Size: **30.7 MB (30727053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2310a699504018a255871962c3798dc03a403087272ced720371c7351b7731c3`
+-	Image ID: `sha256:108bee56b54fd04ed790dd98881e622b7016c182624af6b06d44694725904be3`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -45,11 +45,11 @@ ENV PYTHON_VERSION=3.6.4
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		libressl 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		linux-headers 		make 		ncurses-dev 		libressl 		libressl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		xz-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
 # Wed, 10 Jan 2018 05:24:35 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 20 Mar 2018 08:43:10 GMT
-ENV PYTHON_PIP_VERSION=9.0.2
-# Tue, 20 Mar 2018 08:43:20 GMT
+# Thu, 22 Mar 2018 19:30:30 GMT
+ENV PYTHON_PIP_VERSION=9.0.3
+# Thu, 22 Mar 2018 19:30:40 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apk del .fetch-deps; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 20 Mar 2018 08:43:20 GMT
+# Thu, 22 Mar 2018 19:30:41 GMT
 CMD ["python3"]
 ```
 
@@ -70,9 +70,9 @@ CMD ["python3"]
 		Last Modified: Wed, 10 Jan 2018 05:48:37 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8051ae4c8ec8852921f623b01e4ee8fb00931d21a2fe0ad48d61d3ce6d29f40`  
-		Last Modified: Tue, 20 Mar 2018 09:07:00 GMT  
-		Size: 2.2 MB (2151760 bytes)  
+	-	`sha256:9eef3c7f7df1df6984b572e7e5fea5313c3b2077ed65948b9a0f3a545c8b92ba`  
+		Last Modified: Thu, 22 Mar 2018 20:13:50 GMT  
+		Size: 2.2 MB (2151813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-alpine3.6` - linux; arm variant v6
