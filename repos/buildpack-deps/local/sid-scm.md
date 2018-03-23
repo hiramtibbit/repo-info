@@ -1770,20 +1770,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.5-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5-1.dsc' mercurial_4.5-1.dsc 2219 SHA256:8a371703cbd4668aacd5f82fb48d716a6c545d0ec60439d2b01c420294270683
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5.orig.tar.gz' mercurial_4.5.orig.tar.gz 5876130 SHA256:4d9338d9f9d88dc90b836d1227a3677e3347efaf2a118cc97d7fd1f605f1f265
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5-1.debian.tar.xz' mercurial_4.5-1.debian.tar.xz 54144 SHA256:b8e37588dd80bd42bc23ff2efb4ae0d6807b841a7b7783493e234f05b09032b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.5-1/
 
-- https://sources.debian.net/src/mercurial/4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -2581,20 +2574,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-2.dsc' systemd_238-2.dsc 4846 SHA256:b747bb1cdd47b658666bbb2f4e1a2d52eda4ec37c9318894ba191a6a40222bfb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-2.debian.tar.xz' systemd_238-2.debian.tar.xz 134552 SHA256:532e24c141acffd18ff1671799b8c8919f438c3b4f80c01e6032c813fffcd0fc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-2/
 
-- https://sources.debian.net/src/systemd/238-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 

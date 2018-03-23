@@ -4045,9 +4045,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=234-2ubuntu12.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.dsc' systemd_234-2ubuntu12.1.dsc 4876 SHA256:8a948401456f5acb5c804707ba2b61be335a448b296dab540ed27d04604796bb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.debian.tar.xz' systemd_234-2ubuntu12.1.debian.tar.xz 143308 SHA256:701220661af3c102053ff14675be25d95f03860a4c5d064c6c570ec5990066a7
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.dsc' systemd_234-2ubuntu12.1.dsc 4876 SHA256:8a948401456f5acb5c804707ba2b61be335a448b296dab540ed27d04604796bb
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.debian.tar.xz' systemd_234-2ubuntu12.1.debian.tar.xz 143308 SHA256:701220661af3c102053ff14675be25d95f03860a4c5d064c6c570ec5990066a7
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`

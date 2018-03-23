@@ -590,13 +590,13 @@ Licenses: (parsed from: `/usr/share/doc/dh-python/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dh-python=2.20170125
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dh-python/dh-python_2.20170125.dsc' dh-python_2.20170125.dsc 1908 SHA256:ef4f2951cea36ae4aac29126a1017505f98b595432fb5bdac0f21b4b4d72c1b4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dh-python/dh-python_2.20170125.tar.xz' dh-python_2.20170125.tar.xz 91332 SHA256:2e09c162ee2442a03511b7ebe83896e1e3c1df79ce97a22d2f8a8b4cfec9f1e3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/dh-python/2.20170125/
+
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -958,13 +958,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.173ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.173ubuntu1.dsc' gcc-defaults_1.173ubuntu1.dsc 10984 SHA256:fc402dea274827e86981d79751ccf88c366a3d75c15d4058c417b078172ceba8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.173ubuntu1.tar.gz' gcc-defaults_1.173ubuntu1.tar.gz 204854 SHA256:abbadca469dd0b459fe8193d460bc8745f5bdf3507ec1494404e7b049798a53b
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-4`
 
@@ -1087,14 +1083,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.55.2-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.55.2-2ubuntu1.dsc' glib2.0_2.55.2-2ubuntu1.dsc 3404 SHA256:29dc295904cae391a54c8ecc1bd5c2a508013b5dace51f206834d533bfb0afe2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.55.2.orig.tar.xz' glib2.0_2.55.2.orig.tar.xz 7968728 SHA256:5a26bfa83bb412d181504a0773101093c9e538c3d0e09d30f5178885d78e72f6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.55.2-2ubuntu1.debian.tar.xz' glib2.0_2.55.2-2ubuntu1.debian.tar.xz 79232 SHA256:6510580462bcfbc1ff20f87894688cc94cb41c28eb2aa946e29cd42fc4bdc233
-```
 
 ### `dpkg` source package: `glibc=2.26-0ubuntu2.1`
 
@@ -1235,14 +1226,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.54.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-4.dsc' gobject-introspection_1.54.1-4.dsc 2878 SHA256:ec5a80c2aa20211d8f8a5f01d8a9e7f31a889502d44b8bb00aa1482e11bcc05d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1.orig.tar.xz' gobject-introspection_1.54.1.orig.tar.xz 1392504 SHA256:b88ded5e5f064ab58a93aadecd6d58db2ec9d970648534c63807d4f9a7bb877e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-4.debian.tar.xz' gobject-introspection_1.54.1-4.debian.tar.xz 20256 SHA256:02558637c7c2c6271e58b39c85d1aa51da2d01c7d01e217715e3bd5b3c92b146
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.54.1-4/
+
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
 
@@ -1435,14 +1425,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=60.2-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.2-3ubuntu1.dsc' icu_60.2-3ubuntu1.dsc 2036 SHA256:1d0f45452e326021eaf9c0b7d6ac01a8dfdaedb1d14ee47ffa26e46e62203ff8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.2.orig.tar.gz' icu_60.2.orig.tar.gz 23315541 SHA256:a8c2ddbdf2be01c7ddcfded837afe46362e1069ea6093f66816b2d1caa8272ae
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.2-3ubuntu1.debian.tar.xz' icu_60.2-3ubuntu1.debian.tar.xz 27312 SHA256:7a37a002046b14ecc44c9c26198d90a09cfe1e3d55725af2323f3ca1fb0d3df2
-```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
 
@@ -3778,14 +3763,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-4.dsc' tiff_4.0.9-4.dsc 2184 SHA256:52120121e154939321fed49a2200e477bfd421e8c94d55e9ad2d1fcafe7adc0e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-4.debian.tar.xz' tiff_4.0.9-4.debian.tar.xz 19572 SHA256:f078da1da538109c1e5403dc1f44d23c91f5a5d6ddc5ffc41ff60de006cb2b2e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.9-4/
+
 
 ### `dpkg` source package: `ubuntu-keyring=2018.02.06`
 
