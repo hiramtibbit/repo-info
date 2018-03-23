@@ -1,7 +1,7 @@
 ## `python:2-stretch`
 
 ```console
-$ docker pull python@sha256:8bd8d26f34a1accf2d718419a8001c67da09db3c006edda71f554c25860bfa82
+$ docker pull python@sha256:4271a41fb2b1f0f15ffd4cfd67565c72dc7f0a49910694e3cebd16cf73d8da9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -447,14 +447,14 @@ CMD ["python2"]
 ### `python:2-stretch` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:0aa21b7b260bb759bc35f098d9516e3f99cd17b9f06eec5a8b70bd74a44ebb62
+$ docker pull python@sha256:acac57cf74247408e5d695c9a704ccad1151fa11bb9a04f274b156c36a705dc4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **343.6 MB (343587527 bytes)**  
+-	Total Size: **344.4 MB (344360075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:682f05db6ab4795cb90209e4dbb8a275760ed604feac062d752bceec64c7df1a`
+-	Image ID: `sha256:bb7fa38fd2c97b255bccd5d52dbb8b97600dea7d86e06f0b7c4140efed780b16`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -482,13 +482,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.14
 # Thu, 15 Mar 2018 02:43:25 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Tue, 20 Mar 2018 08:10:31 GMT
-ENV PYTHON_PIP_VERSION=9.0.2
-# Tue, 20 Mar 2018 08:10:44 GMT
+# Fri, 23 Mar 2018 08:06:58 GMT
+ENV PYTHON_PIP_VERSION=9.0.3
+# Fri, 23 Mar 2018 08:07:10 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 20 Mar 2018 08:10:51 GMT
+# Fri, 23 Mar 2018 08:07:16 GMT
 RUN pip install --no-cache-dir virtualenv
-# Tue, 20 Mar 2018 08:10:52 GMT
+# Fri, 23 Mar 2018 08:07:17 GMT
 CMD ["python2"]
 ```
 
@@ -521,13 +521,13 @@ CMD ["python2"]
 		Last Modified: Thu, 15 Mar 2018 03:27:48 GMT  
 		Size: 16.3 MB (16267442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc83afa4cafeaa8c8efb2eee8195753ec70250f66669b42ee394c997e518473`  
-		Last Modified: Tue, 20 Mar 2018 08:25:04 GMT  
-		Size: 1.9 MB (1886065 bytes)  
+	-	`sha256:ba7820865eaf15c0cd5990607f69733e3d57660d0bf69e791aca59ff86359aea`  
+		Last Modified: Fri, 23 Mar 2018 08:21:38 GMT  
+		Size: 1.9 MB (1886049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fce40554c8c298457afe5fcd56c4bcbaec2979f37e028621b5f6ba79b67fb3`  
-		Last Modified: Tue, 20 Mar 2018 08:25:04 GMT  
-		Size: 3.5 MB (3457426 bytes)  
+	-	`sha256:7a7344898888c5a32177611c1dfc6d0fae8d1b6302d7e3aca5605ccaf2aa687f`  
+		Last Modified: Fri, 23 Mar 2018 08:21:38 GMT  
+		Size: 4.2 MB (4229990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-stretch` - linux; s390x
