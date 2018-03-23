@@ -3128,14 +3128,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.12.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.1-1.dsc' python-rosdep_0.12.1-1.dsc 905 SHA256:da4ddde1446447b46a344ad455ce7a98b0199ad830c8c121333296e92c491bd5
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.1.orig.tar.gz' python-rosdep_0.12.1.orig.tar.gz 80808 SHA256:78aea0636725922b8477d12585ffeb479348e9d977af4a85f3612efe3178846d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.1-1.debian.tar.xz' python-rosdep_0.12.1-1.debian.tar.xz 1120 SHA256:0992e19a70d01a2ea098c05fca48a5366db4e71d03263c67703d8bb4727ef9e3
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.6-1`
 
@@ -4573,9 +4568,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=229-4ubuntu21.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
