@@ -1,7 +1,7 @@
 ## `php:7-zts-alpine3.6`
 
 ```console
-$ docker pull php@sha256:af830cce75d017f831d8f9627f5d7fd220051a6228f00c341bc96312f7fc86bf
+$ docker pull php@sha256:bdf93a2842ac41e3ee84919b8780f45d4129c3db929f4832a9487a3f1f9d9690
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -317,14 +317,14 @@ CMD ["php" "-a"]
 ### `php:7-zts-alpine3.6` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:79d5a34dd39f1afa01ccce8ebf8e5e7894ce5d78837b36d4fadc44eb656de853
+$ docker pull php@sha256:d25a4ff1b96a8ef84b9dd9810402f0827df7f4c88b79a2181df733667d0928cb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.5 MB (28515476 bytes)**  
+-	Total Size: **28.6 MB (28618817 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:614ad4e7ae149485beb4f3eb15a192cee0f7039f41bf76f5a4c1fd5b7db7b18c`
+-	Image ID: `sha256:aae30d6e4727585ee2806ff77052cf994dfb27d0bd81f8ee7e87c80dab6c7f3b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -365,13 +365,15 @@ ENV PHP_SHA256=b3a94f1b562f413c0b96f54bc309706d83b29ac65d9b172bc7ed9fb40a5e651f 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Tue, 06 Mar 2018 10:33:35 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Tue, 06 Mar 2018 10:37:40 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libressl-dev 		libsodium-dev 		libxml2-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-sodium 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 06 Mar 2018 10:37:43 GMT
+# Fri, 23 Mar 2018 09:39:12 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libressl-dev 		libsodium-dev 		libxml2-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 23 Mar 2018 09:39:14 GMT
 COPY multi:0de99b27377ea60c319e566076843370f751e856c1e3a64b2dcd283a35066564 in /usr/local/bin/ 
-# Tue, 06 Mar 2018 10:37:45 GMT
+# Fri, 23 Mar 2018 09:39:21 GMT
+RUN docker-php-ext-enable sodium
+# Fri, 23 Mar 2018 09:39:22 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Mar 2018 10:37:46 GMT
+# Fri, 23 Mar 2018 09:39:24 GMT
 CMD ["php" "-a"]
 ```
 
@@ -404,11 +406,15 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 06 Mar 2018 11:47:48 GMT  
 		Size: 498.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4898b165e1a02bd7b2aa921cf1c8f8c3095dfee29633ec373f18890ce7fcaf7`  
-		Last Modified: Tue, 06 Mar 2018 11:47:52 GMT  
-		Size: 13.0 MB (13004532 bytes)  
+	-	`sha256:297dc196af365cb50d17d379774d2556f20d1dd3a83a3db004505a2d7e7ec419`  
+		Last Modified: Fri, 23 Mar 2018 09:54:24 GMT  
+		Size: 13.0 MB (13036768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1184849682afbbf5ea52bbdde6c7ed5a4a8401c6a6ed7e8d1c2da0cfbf06ce8d`  
-		Last Modified: Tue, 06 Mar 2018 11:47:48 GMT  
-		Size: 2.2 KB (2163 bytes)  
+	-	`sha256:b66067caecabc1e16dea3969d9ba2062566b4c4a7e44428228c78977f862228e`  
+		Last Modified: Fri, 23 Mar 2018 09:54:20 GMT  
+		Size: 2.2 KB (2167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8ae210246bc3af241ecd483d7dfe3d77ac9cc24df1d750c334b903b2a4940abe`  
+		Last Modified: Fri, 23 Mar 2018 09:54:20 GMT  
+		Size: 71.1 KB (71101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
