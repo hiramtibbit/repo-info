@@ -1193,9 +1193,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=229-4ubuntu21.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.dsc' systemd_229-4ubuntu21.1.dsc 4174 SHA256:ce591eb33dcae8dfdb155b15ac01fb948dedc325856c6895d70a2ac9f7768978
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.1.debian.tar.xz' systemd_229-4ubuntu21.1.debian.tar.xz 254808 SHA256:6b9f079facd2d5218a981c35560c56efa99f2bc70a6093bc050a65e4e61142e8
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
