@@ -1,7 +1,7 @@
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:54af6071d386f0c4e5726cf8ae9fa4ad3cde0879abcd887a23dedfeb20eca98b
+$ docker pull hylang@sha256:55d5df75fae48b1cce05661b5864ddf4763499b3fcef552c5f4fd803e5969f3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -311,14 +311,14 @@ CMD ["hy"]
 ### `hylang:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:2a339b5c0f3696981173a2b0924b8961980d00da45be701b62e291bcdd64ba86
+$ docker pull hylang@sha256:9eaba2890f0b650e6442f63eedbc6637294f0a74d8a6bb1a9cc278548c71e122
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.3 MB (253303313 bytes)**  
+-	Total Size: **253.3 MB (253317849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdfeeffc904b7451d961d9f83c9c8d0b408e9ba44488df16c8c3c20e8c97ee41`
+-	Image ID: `sha256:1790ada8000cc5f9260bd21002750a9534cdfe2370670fcbac7c1e336d872edf`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -348,19 +348,19 @@ ENV PYTHON_VERSION=3.6.4
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
 # Fri, 16 Mar 2018 11:18:20 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 20 Mar 2018 10:49:31 GMT
-ENV PYTHON_PIP_VERSION=9.0.2
-# Tue, 20 Mar 2018 10:50:01 GMT
+# Fri, 23 Mar 2018 10:45:48 GMT
+ENV PYTHON_PIP_VERSION=9.0.3
+# Fri, 23 Mar 2018 10:46:05 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 20 Mar 2018 10:50:04 GMT
+# Fri, 23 Mar 2018 10:46:06 GMT
 CMD ["python3"]
-# Tue, 20 Mar 2018 12:18:26 GMT
+# Fri, 23 Mar 2018 11:49:56 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Tue, 20 Mar 2018 12:18:26 GMT
+# Fri, 23 Mar 2018 11:49:57 GMT
 ADD dir:2acd4535b26397539b0d8acdba095106228048eab03c48a045cc3123cab3ab02 in /opt/hylang/hy 
-# Tue, 20 Mar 2018 12:18:42 GMT
+# Fri, 23 Mar 2018 11:50:12 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Tue, 20 Mar 2018 12:18:50 GMT
+# Fri, 23 Mar 2018 11:50:13 GMT
 CMD ["hy"]
 ```
 
@@ -393,17 +393,17 @@ CMD ["hy"]
 		Last Modified: Fri, 16 Mar 2018 11:54:01 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:059f309c235c4547eb13fb1309bdb20ef0286dab44270b87383e6d4dd21a2a28`  
-		Last Modified: Tue, 20 Mar 2018 11:23:26 GMT  
-		Size: 1.9 MB (1887613 bytes)  
+	-	`sha256:ad075751129643be2f8f68d8245f51f64b0b1491b49ea392e4e527c08b3bf74f`  
+		Last Modified: Fri, 23 Mar 2018 11:09:05 GMT  
+		Size: 1.9 MB (1887638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6e4d266933099271c77593b1aa9c74c8d201a23303f263b715f6b5bb611a86f`  
-		Last Modified: Tue, 20 Mar 2018 12:19:28 GMT  
-		Size: 385.5 KB (385524 bytes)  
+	-	`sha256:f35ccd5f17fa2dd94fd33eb39c8eec331364ca0e36ff6aac3604bb2ef2f1dc88`  
+		Last Modified: Fri, 23 Mar 2018 11:50:41 GMT  
+		Size: 385.5 KB (385526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05ca81bf77e657e80387a239197ca74a87d0b486cca7ec94178e88a17c7207b3`  
-		Last Modified: Tue, 20 Mar 2018 12:19:30 GMT  
-		Size: 2.6 MB (2573864 bytes)  
+	-	`sha256:8beb50a48f22ca660c8c145c72e6522eab4fb3372f67c5ba38a69b9c172fc1ea`  
+		Last Modified: Fri, 23 Mar 2018 11:50:42 GMT  
+		Size: 2.6 MB (2588373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:latest` - linux; 386
