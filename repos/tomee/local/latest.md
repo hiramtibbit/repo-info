@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:42d20d716b08240f128930fc5b185e9a3f1690bcce75628eb97763bb77ce9d93`
-- Created: `2018-03-15T15:09:10.00034189Z`
-- Virtual Size: ~ 584.36 Mb  
+- Image ID: `sha256:f859b7757567b286dcb0c06205f643c9b04213525f8bc132f1e1a8da299ee271`
+- Created: `2018-03-20T17:12:50.391162088Z`
+- Virtual Size: ~ 573.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/tomee/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u151`
-  - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
+  - `JAVA_VERSION=8u162`
+  - `JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     678F2D98F1FD9643811639FB622B8F2D043F71D8     7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF     82D8419BA697F0E7FB85916EE91287822FDB81B1     9056B710F1E332780DE7AF34CBAEBE39A46C4CA1     A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1     B7574789F5018690043E6DD9C212662E12F3E1DD     B8B301E6105DF628076BD92C5483E55897ABD9B9     BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF     C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1     D11DF12CC2CA4894BDE638B967C1227A2678363C     DBCCD103B8B24F86FFAAB025C8BB472CD297D428     F067B8140F5DD80E1D3B5D92318242FE9A0B1183     FAA603D58B1BA4EDF65896D0ED340E0E6D545F97`
 
@@ -1355,31 +1355,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/ (for browsing the source)
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gnome-icon-theme=3.12.0-2`
-
-Binary Packages:
-
-- `gnome-icon-theme=3.12.0-2`
-
-Licenses: (parsed from: `/usr/share/doc/gnome-icon-theme/copyright`)
-
-- `LGPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gnome-icon-theme=3.12.0-2
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0-2.dsc' gnome-icon-theme_3.12.0-2.dsc 1954 SHA256:2f86d5d7724a7728c482920fa5406c23f644b1d7b5769282989f0ce926dfc42a
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0.orig.tar.xz' gnome-icon-theme_3.12.0.orig.tar.xz 17742624 SHA256:359e720b9202d3aba8d477752c4cd11eced368182281d51ffd64c8572b4e503a
-'http://deb.debian.org/debian/pool/main/g/gnome-icon-theme/gnome-icon-theme_3.12.0-2.debian.tar.xz' gnome-icon-theme_3.12.0-2.debian.tar.xz 17824 SHA256:a9e2504cb933329efe2604e46aa81f16099e9774fc37e56c34f854442bc44627
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.1.18-8~deb9u1`
 
@@ -3041,24 +3016,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.6+really0.9.3-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libvorbis=1.3.5-4+deb9u1`
+### `dpkg` source package: `libvorbis=1.3.5-4+deb9u2`
 
 Binary Packages:
 
-- `libvorbis0a:amd64=1.3.5-4+deb9u1`
-- `libvorbisenc2:amd64=1.3.5-4+deb9u1`
+- `libvorbis0a:amd64=1.3.5-4+deb9u2`
+- `libvorbisenc2:amd64=1.3.5-4+deb9u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libvorbis=1.3.5-4+deb9u2
+'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5-4+deb9u2.dsc' libvorbis_1.3.5-4+deb9u2.dsc 2566 SHA256:b8480875bda11dd6e676329568b64ff81722426d9178ad28f4f1f267dbd59d96
+'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5.orig.tar.gz' libvorbis_1.3.5.orig.tar.gz 1638779 SHA256:6efbcecdd3e5dfbf090341b485da9d176eb250d893e3eb378c428a2db38301ce
+'http://security.debian.org/pool/updates/main/libv/libvorbis/libvorbis_1.3.5-4+deb9u2.debian.tar.xz' libvorbis_1.3.5-4+deb9u2.debian.tar.xz 11532 SHA256:95cabe08962ce58df7e55766be4115802097689700dc8bacfb9f22d495df6955
+```
 
-- http://snapshot.debian.org/package/libvorbis/1.3.5-4+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libvorbis/1.3.5-4+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/libvorbis/1.3.5-4+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvorbis/1.3.5-4+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.4-3`
 
@@ -4046,12 +4028,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u151-b12-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u162-b12-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u151-b12-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u151-b12-1~deb9u1`
+- `openjdk-8-jre:amd64=8u162-b12-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u162-b12-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -4063,17 +4045,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u151-b12-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.dsc' openjdk-8_8u151-b12-1~deb9u1.dsc 4492 SHA256:e70cb66087b60c312ba4698f1ebd9b0e5656ecbe34160e859c2f9f20bd500d22
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u151-b12.orig.tar.gz' openjdk-8_8u151-b12.orig.tar.gz 70121877 SHA256:3a81eb858ceadaab9a14190aae800aace0f1b5f86b2e9707b9a9e30b7aca248c
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz' openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz 252852 SHA256:0783962cae94181a9b1414cddccd5dd1a4d331c8439cf5bacdc76f3a319e658c
+$ apt-get source -qq --print-uris openjdk-8=8u162-b12-1~deb9u1
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12-1~deb9u1.dsc' openjdk-8_8u162-b12-1~deb9u1.dsc 4506 SHA256:592ed207bd94e5afb76f2603b0d24198d5d2cbc8d4dd1889cdb5993f0235d460
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12.orig.tar.xz' openjdk-8_8u162-b12.orig.tar.xz 70306424 SHA256:0b8b888af9d6706d6469b83f18f8d66fa525eab3961e6626e044cc935be8637a
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12-1~deb9u1.debian.tar.xz' openjdk-8_8u162-b12-1~deb9u1.debian.tar.xz 258136 SHA256:e39c6f920f3e87ae2486c5b604f3ea32542329c68f8410afaf788f14be081a7b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u151-b12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u162-b12-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u162-b12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u162-b12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u1`
 
