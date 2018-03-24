@@ -3840,20 +3840,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.3.6-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.3.6-1.dsc' mesa_17.3.6-1.dsc 4920 SHA256:b5b7ef26da73297b075400b5a3c307303c4c0d3b07a8e528b02b5d4fe030afad
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.3.6.orig.tar.gz' mesa_17.3.6.orig.tar.gz 18321140 SHA256:d5e10ea3f0d11b06d2b0b235bba372a04278c39bc0e712090bda1f61842db188
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.3.6-1.diff.gz' mesa_17.3.6-1.diff.gz 116347 SHA256:6f5de9cbc9b441d5c1e812f086033d2f88a9035a56064676267b69a4eb1f54d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/17.3.6-1/
 
-- https://sources.debian.net/src/mesa/17.3.6-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/17.3.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/17.3.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -4593,20 +4586,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-2.dsc' systemd_238-2.dsc 4846 SHA256:b747bb1cdd47b658666bbb2f4e1a2d52eda4ec37c9318894ba191a6a40222bfb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-2.debian.tar.xz' systemd_238-2.debian.tar.xz 134552 SHA256:532e24c141acffd18ff1671799b8c8919f438c3b4f80c01e6032c813fffcd0fc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-2/
 
-- https://sources.debian.net/src/systemd/238-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
