@@ -1,16 +1,16 @@
-# `node:9.8.0`
+# `node:chakracore-8.10.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec70562ad6f077af2a3d19b11b1e69816c3c8d78ff91f3dd1e61e4e741150554`
-- Created: `2018-03-16T17:38:54.036196769Z`
-- Virtual Size: ~ 672.87 Mb  
+- Image ID: `sha256:05d64767592ea80645afd78006f94ce331821a8b7fcc2030bbf294906d6bb002`
+- Created: `2018-03-21T23:07:42.53243473Z`
+- Virtual Size: ~ 672.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.8.0`
+  - `NODE_VERSION=8.10.0`
   - `YARN_VERSION=1.5.1`
 
 ## `dpkg` (`.deb`-based packages)
