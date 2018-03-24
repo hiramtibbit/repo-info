@@ -372,19 +372,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.241
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.241.dsc' cdebconf_0.241.dsc 2676 SHA256:af43da0d797e9c487beada81a2f3d868d31e4d7374991339e390aaebed61a0d5
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.241.tar.xz' cdebconf_0.241.tar.xz 274360 SHA256:80a472da89d2f3d8eb9cd1692d24209c2ce435591d0ab6bda9aac23e3c5e8934
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.241/
 
-- https://sources.debian.net/src/cdebconf/0.241/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.241/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.241/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.28-1`
 
@@ -784,20 +778,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180319-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180319-1.dsc' gcc-8_8-20180319-1.dsc 30628 SHA256:fd057b26be3e51ef0d8dd8accc3e1063d7a9a7323ea22e232a40554cfb487fc6
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180319.orig.tar.gz' gcc-8_8-20180319.orig.tar.gz 69086693 SHA256:e61b0603dee36091f335c22dcc6a259f2650165bf8d19b94532a8e4e0f4c7385
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180319-1.diff.gz' gcc-8_8-20180319-1.diff.gz 579169 SHA256:39bd52e243ad6c1feb0ac95aaa3b912205cb9718adc701b652cd5b89f28ccf55
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180319-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180319-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180319-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180319-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-2`
 
