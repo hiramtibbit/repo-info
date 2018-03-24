@@ -1,9 +1,9 @@
-# `httpd:2.4.32`
+# `httpd:2.4.33`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2a1033f4f86d2f563cbefc401ff1539a47d474811b0f9d0cd958cdcdca700bc`
-- Created: `2018-03-20T11:51:33.881013047Z`
+- Image ID: `sha256:805130e51ae9e737e056b75bfd797c4400a012181f1ba10fad71d69e78457f49`
+- Created: `2018-03-22T21:10:32.828185225Z`
 - Virtual Size: ~ 177.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `HTTPD_PREFIX=/usr/local/apache2`
   - `NGHTTP2_VERSION=1.18.1-1`
   - `OPENSSL_VERSION=1.0.2l-1~bpo8+1`
-  - `HTTPD_VERSION=2.4.32`
-  - `HTTPD_SHA256=6353d15c15dcf8533962dfcc8c9ef978a9227e58832484d7366e73758e62b929`
+  - `HTTPD_VERSION=2.4.33`
+  - `HTTPD_SHA256=de02511859b00d17845b9abdd1f975d5ccb5d0b280c567da5bf2ad4b70846f05`
   - `HTTPD_PATCHES=`
   - `APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/`
 
