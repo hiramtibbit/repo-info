@@ -660,21 +660,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.0-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0-1.dsc' e2fsprogs_1.44.0-1.dsc 2616 SHA256:330c31dfc8770e96dad1a018b208475ff57d35155390134d45c165e9a36ebe8e
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0.orig.tar.gz' e2fsprogs_1.44.0.orig.tar.gz 7558969 SHA256:04abf8c2c7c9a70aa3aa9757da23a929baf18423ccd06e8a0320c2effe091fd1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0.orig.tar.gz.asc' e2fsprogs_1.44.0.orig.tar.gz.asc 488 SHA256:9879ae1076a8d0fa050b1984c7209c67cca5fa559c57844a09a58dd38a56eca3
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0-1.debian.tar.xz' e2fsprogs_1.44.0-1.debian.tar.xz 76192 SHA256:d6dcd914774f22852921277589a086a6aa66305d95556b729dbf93bca6ed1794
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.0-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -2070,20 +2062,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.23-1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-1.dsc' pcsc-lite_1.8.23-1.dsc 2220 SHA256:9dd5d036154746e0b00141d716a8ca0b0e98334bbd1fa7704ead168778833936
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23.orig.tar.bz2' pcsc-lite_1.8.23.orig.tar.bz2 749922 SHA256:5a27262586eff39cfd5c19aadc8891dd71c0818d3d629539bd631b958be689c9
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-1.debian.tar.xz' pcsc-lite_1.8.23-1.debian.tar.xz 29904 SHA256:983c9b69b2e2c0f3da6952627270247e24d86c4fec9965aa802ee901e75a403d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcsc-lite/1.8.23-1/
 
-- https://sources.debian.net/src/pcsc-lite/1.8.23-1/ (for browsing the source)
-- https://sources.debian.net/src/pcsc-lite/1.8.23-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcsc-lite/1.8.23-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.26.1-5`
 
