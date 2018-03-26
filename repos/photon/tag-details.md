@@ -3,6 +3,10 @@
 # Tags of `photon`
 
 -	[`photon:1.0`](#photon10)
+-	[`photon:1.0-20180226`](#photon10-20180226)
+-	[`photon:1.0GA`](#photon10ga)
+-	[`photon:2.0`](#photon20)
+-	[`photon:2.0-20180227`](#photon20-20180227)
 -	[`photon:latest`](#photonlatest)
 
 ## `photon:1.0`
@@ -42,6 +46,22 @@ CMD ["/bin/bash"]
 		Last Modified: Wed, 13 Sep 2017 07:17:36 GMT  
 		Size: 48.9 MB (48876519 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `photon:1.0-20180226`
+
+**does not exist** (yet?)
+
+## `photon:1.0GA`
+
+**does not exist** (yet?)
+
+## `photon:2.0`
+
+**does not exist** (yet?)
+
+## `photon:2.0-20180227`
+
+**does not exist** (yet?)
 
 ## `photon:latest`
 

@@ -2,8 +2,13 @@
 
 # Tags of `vault`
 
+-	[`vault:0.10.0-beta1`](#vault0100-beta1)
 -	[`vault:0.9.6`](#vault096)
 -	[`vault:latest`](#vaultlatest)
+
+## `vault:0.10.0-beta1`
+
+**does not exist** (yet?)
 
 ## `vault:0.9.6`
 

@@ -3,9 +3,9 @@
 # Tags of `xwiki`
 
 -	[`xwiki:10`](#xwiki10)
--	[`xwiki:10.1`](#xwiki101)
--	[`xwiki:10.1-mysql-tomcat`](#xwiki101-mysql-tomcat)
--	[`xwiki:10.1-postgres-tomcat`](#xwiki101-postgres-tomcat)
+-	[`xwiki:10.2`](#xwiki102)
+-	[`xwiki:10.2-mysql-tomcat`](#xwiki102-mysql-tomcat)
+-	[`xwiki:10.2-postgres-tomcat`](#xwiki102-postgres-tomcat)
 -	[`xwiki:10-mysql-tomcat`](#xwiki10-mysql-tomcat)
 -	[`xwiki:10-postgres-tomcat`](#xwiki10-postgres-tomcat)
 -	[`xwiki:9`](#xwiki9)
@@ -228,7 +228,7 @@ CMD ["xwiki"]
 		Size: 2.0 KB (2033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.1`
+## `xwiki:10.2`
 
 ```console
 $ docker pull xwiki@sha256:282310e0724ad7426d351e3af601dbc222e879d6f46401f8edac378ab90eae43
@@ -238,7 +238,7 @@ $ docker pull xwiki@sha256:282310e0724ad7426d351e3af601dbc222e879d6f46401f8edac3
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:10.1` - linux; amd64
+### `xwiki:10.2` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:3a616c87aba2949189a01ac4faab1b4c6fe051a46015d3ed8556322014472491
@@ -427,7 +427,7 @@ CMD ["xwiki"]
 		Size: 2.0 KB (2033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.1-mysql-tomcat`
+## `xwiki:10.2-mysql-tomcat`
 
 ```console
 $ docker pull xwiki@sha256:282310e0724ad7426d351e3af601dbc222e879d6f46401f8edac378ab90eae43
@@ -437,7 +437,7 @@ $ docker pull xwiki@sha256:282310e0724ad7426d351e3af601dbc222e879d6f46401f8edac3
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:10.1-mysql-tomcat` - linux; amd64
+### `xwiki:10.2-mysql-tomcat` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:3a616c87aba2949189a01ac4faab1b4c6fe051a46015d3ed8556322014472491
@@ -626,7 +626,7 @@ CMD ["xwiki"]
 		Size: 2.0 KB (2033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.1-postgres-tomcat`
+## `xwiki:10.2-postgres-tomcat`
 
 ```console
 $ docker pull xwiki@sha256:a7868a3cd89b48586429722bef7cd90dcc5b45dfab766224d6976ffac0c692a2
@@ -636,7 +636,7 @@ $ docker pull xwiki@sha256:a7868a3cd89b48586429722bef7cd90dcc5b45dfab766224d6976
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:10.1-postgres-tomcat` - linux; amd64
+### `xwiki:10.2-postgres-tomcat` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:20734df7b3f30faf4b743204aae2b6281c1e68148a04dfb41e2f445f0943e40e
