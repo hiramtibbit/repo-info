@@ -1,3 +1,62 @@
 ## `traefik:tetedemoine-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `traefik:tetedemoine-alpine` - linux; amd64
+
+```console
+$ docker pull traefik@sha256:e717e34864b6ff5f22434d100b155fc3bd47a5e6fc6edd392bbe25d2bca77981
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.7 MB (16667455 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33c372d7df5effb257e72ab08f82970ad70f7d1b272d6ad92f2669385f8ff6e9`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Tue, 09 Jan 2018 21:10:38 GMT
+ADD file:6edc55fb54ec9fc3658c8f5176a70e792103a516154442f94fed8e0290e4960e in / 
+# Tue, 09 Jan 2018 21:10:38 GMT
+CMD ["/bin/sh"]
+# Wed, 10 Jan 2018 01:28:51 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 22:59:18 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 22:59:19 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 22:59:19 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 22:59:19 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 22:59:20 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 22:59:20 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:605ce1bd3f3164f2949a30501cc596f52a72de05da1306ab360055f0d7130c32`  
+		Last Modified: Tue, 09 Jan 2018 21:13:17 GMT  
+		Size: 2.0 MB (1991747 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e3eb27e4ab8454370b50d5b8d9c153713bebe12c43d63dac2ae368fcce7d6d4`  
+		Last Modified: Wed, 10 Jan 2018 01:30:19 GMT  
+		Size: 351.0 KB (350991 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ece697645257dfade92e271433ad112172876a550a8543a4267871f2210487af`  
+		Last Modified: Mon, 26 Mar 2018 23:01:28 GMT  
+		Size: 14.3 MB (14324379 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a05f8d828a4b3069414164b89fff09af4e6b4a1f0c561a8ac3c87ef7b3e68a2c`  
+		Last Modified: Mon, 26 Mar 2018 23:01:25 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
