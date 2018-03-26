@@ -3158,14 +3158,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libvorbis=1.3.5-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3ubuntu0.1.dsc' libvorbis_1.3.5-3ubuntu0.1.dsc 2393 SHA256:2485a99f1b41b3ad2c8ab121984d86b7189a023fcec79ff8d91a3a18c3f1d469
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5.orig.tar.gz' libvorbis_1.3.5.orig.tar.gz 1638779 SHA256:6efbcecdd3e5dfbf090341b485da9d176eb250d893e3eb378c428a2db38301ce
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.5-3ubuntu0.1.debian.tar.xz' libvorbis_1.3.5-3ubuntu0.1.debian.tar.xz 11528 SHA256:441413f49a5fe295dcc5f0950d6cf5ed4800b4c8e7583ef02cc768a92fa296b8
-```
 
 ### `dpkg` source package: `libvpx=1.5.0-2ubuntu1`
 
