@@ -3,7 +3,7 @@
 # Tags of `swipl`
 
 -	[`swipl:7.6.4`](#swipl764)
--	[`swipl:7.7.10`](#swipl7710)
+-	[`swipl:7.7.11`](#swipl7711)
 -	[`swipl:latest`](#swipllatest)
 -	[`swipl:stable`](#swiplstable)
 
@@ -61,7 +61,7 @@ CMD ["swipl"]
 		Size: 7.5 MB (7461281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `swipl:7.7.10`
+## `swipl:7.7.11`
 
 ```console
 $ docker pull swipl@sha256:33b7daed712d186abd65f95044802f4cf5d520bef2dc89b9c6fdbcd9c9114787
@@ -72,7 +72,7 @@ $ docker pull swipl@sha256:33b7daed712d186abd65f95044802f4cf5d520bef2dc89b9c6fdb
 	-	linux; amd64
 	-	linux; arm variant v7
 
-### `swipl:7.7.10` - linux; amd64
+### `swipl:7.7.11` - linux; amd64
 
 ```console
 $ docker pull swipl@sha256:71c2484cc61800ab5cbf5bb95c533f24d24ca63ab687add196c21f6b16da778b
@@ -116,7 +116,7 @@ CMD ["swipl"]
 		Size: 7.5 MB (7480184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `swipl:7.7.10` - linux; arm variant v7
+### `swipl:7.7.11` - linux; arm variant v7
 
 ```console
 $ docker pull swipl@sha256:a0bed776bf4c92b6464f48e4eb8fa35f3fc73d1e1afe4280f842fb125cc7ee96
