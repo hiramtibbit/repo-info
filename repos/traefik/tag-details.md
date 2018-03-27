@@ -634,12 +634,13 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 ## `traefik:1.6`
 
 ```console
-$ docker pull traefik@sha256:a8c669849f051f6c1d17936d0c013b23262a618914c8faa0ddff824510057650
+$ docker pull traefik@sha256:d5f9deb15d8a9ad99787689c2ffeb5a82ecabb5fe8d994f0d53df823c0f10c1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:1.6` - linux; amd64
 
@@ -677,15 +678,52 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 14.2 MB (14158062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:1.6` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:aac502ee54f7354afd89daf7f9e4f1ff49c5e9f281486e2ca560a2be2809d1c3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.7 MB (13705594 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2421ad0ef477b4aa98c7442c4ac286fdeaee9824e9af355447a70c34af5e20fc`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Tue, 24 Oct 2017 23:48:27 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Mon, 26 Mar 2018 23:48:24 GMT
+COPY file:7810abc00b21e1d90206239fb23a9f1fe6bdc46c4844607bcfdc70010bb5a03c in / 
+# Mon, 26 Mar 2018 23:48:25 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:25 GMT
+ENTRYPOINT ["/traefik"]
+# Mon, 26 Mar 2018 23:48:25 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:8996ab8c9ae2c6afe7d318a3784c7ba1b1b72d4ae14cf515d4c1490aae91cab0`  
+		Last Modified: Tue, 24 Oct 2017 23:48:35 GMT  
+		Size: 155.2 KB (155184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c180fc5960d7266dc572589225ec7bebeb129d83159b8c2fcd5639974ed8b25`  
+		Last Modified: Mon, 26 Mar 2018 23:48:55 GMT  
+		Size: 13.6 MB (13550410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:1.6.0-rc1`
 
 ```console
-$ docker pull traefik@sha256:a8c669849f051f6c1d17936d0c013b23262a618914c8faa0ddff824510057650
+$ docker pull traefik@sha256:d5f9deb15d8a9ad99787689c2ffeb5a82ecabb5fe8d994f0d53df823c0f10c1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:1.6.0-rc1` - linux; amd64
 
@@ -723,15 +761,52 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 14.2 MB (14158062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:1.6.0-rc1` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:aac502ee54f7354afd89daf7f9e4f1ff49c5e9f281486e2ca560a2be2809d1c3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.7 MB (13705594 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2421ad0ef477b4aa98c7442c4ac286fdeaee9824e9af355447a70c34af5e20fc`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Tue, 24 Oct 2017 23:48:27 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Mon, 26 Mar 2018 23:48:24 GMT
+COPY file:7810abc00b21e1d90206239fb23a9f1fe6bdc46c4844607bcfdc70010bb5a03c in / 
+# Mon, 26 Mar 2018 23:48:25 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:25 GMT
+ENTRYPOINT ["/traefik"]
+# Mon, 26 Mar 2018 23:48:25 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:8996ab8c9ae2c6afe7d318a3784c7ba1b1b72d4ae14cf515d4c1490aae91cab0`  
+		Last Modified: Tue, 24 Oct 2017 23:48:35 GMT  
+		Size: 155.2 KB (155184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c180fc5960d7266dc572589225ec7bebeb129d83159b8c2fcd5639974ed8b25`  
+		Last Modified: Mon, 26 Mar 2018 23:48:55 GMT  
+		Size: 13.6 MB (13550410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:1.6.0-rc1-alpine`
 
 ```console
-$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+$ docker pull traefik@sha256:2b4dfc07e95cfc20f80316b8afb37f0e15830aa0abe623bf6e44931732b0049d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:1.6.0-rc1-alpine` - linux; amd64
 
@@ -786,15 +861,75 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:1.6.0-rc1-alpine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:ec66237dbf466aa1f46aafc05a8a92a2d19e152f134e0c6557726c30588a0ba1
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.0 MB (16036860 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9294ea90ba9072a897db82041ea375b55705bb43e21dc712aade55b379e30637`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Mon, 26 Feb 2018 23:48:26 GMT
+ADD file:009348222efb3c4ca2e53c387fb34c488679ca07db39525a6c5cc214e46abffd in / 
+# Mon, 26 Feb 2018 23:48:27 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Mon, 26 Feb 2018 23:48:28 GMT
+CMD ["/bin/sh"]
+# Tue, 27 Feb 2018 18:02:37 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 23:48:34 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 23:48:35 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 23:48:35 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 23:48:35 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 23:48:36 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:0864efeeb5cb8dca4eb53e5d6fd38486daee80fa326fe36d1ad254f8fa6bb310`  
+		Last Modified: Sun, 23 Jul 2017 20:21:42 GMT  
+		Size: 2.0 MB (1965988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:448db471625a0828399cd99cb762a514458df032a36e5a23df975081ab87bc41`  
+		Last Modified: Mon, 26 Feb 2018 23:49:11 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dacf7725132f7dfebb9d4f9956e103b93820ea07b89ac6b4676874f2ae3b9d9d`  
+		Last Modified: Tue, 27 Feb 2018 18:02:53 GMT  
+		Size: 352.2 KB (352159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4936d757ce79119ce572d895ec06d4f253720db8dcda679556a3f26eb2ef1444`  
+		Last Modified: Mon, 26 Mar 2018 23:49:15 GMT  
+		Size: 13.7 MB (13718198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b8c914782b609f87125815ded5829d03cd309beebdf443ff8640ee20b865f90`  
+		Last Modified: Mon, 26 Mar 2018 23:49:10 GMT  
+		Size: 340.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:1.6-alpine`
 
 ```console
-$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+$ docker pull traefik@sha256:2b4dfc07e95cfc20f80316b8afb37f0e15830aa0abe623bf6e44931732b0049d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:1.6-alpine` - linux; amd64
 
@@ -847,6 +982,65 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 	-	`sha256:a05f8d828a4b3069414164b89fff09af4e6b4a1f0c561a8ac3c87ef7b3e68a2c`  
 		Last Modified: Mon, 26 Mar 2018 23:01:25 GMT  
 		Size: 338.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `traefik:1.6-alpine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:ec66237dbf466aa1f46aafc05a8a92a2d19e152f134e0c6557726c30588a0ba1
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.0 MB (16036860 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9294ea90ba9072a897db82041ea375b55705bb43e21dc712aade55b379e30637`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Mon, 26 Feb 2018 23:48:26 GMT
+ADD file:009348222efb3c4ca2e53c387fb34c488679ca07db39525a6c5cc214e46abffd in / 
+# Mon, 26 Feb 2018 23:48:27 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Mon, 26 Feb 2018 23:48:28 GMT
+CMD ["/bin/sh"]
+# Tue, 27 Feb 2018 18:02:37 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 23:48:34 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 23:48:35 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 23:48:35 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 23:48:35 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 23:48:36 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:0864efeeb5cb8dca4eb53e5d6fd38486daee80fa326fe36d1ad254f8fa6bb310`  
+		Last Modified: Sun, 23 Jul 2017 20:21:42 GMT  
+		Size: 2.0 MB (1965988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:448db471625a0828399cd99cb762a514458df032a36e5a23df975081ab87bc41`  
+		Last Modified: Mon, 26 Feb 2018 23:49:11 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dacf7725132f7dfebb9d4f9956e103b93820ea07b89ac6b4676874f2ae3b9d9d`  
+		Last Modified: Tue, 27 Feb 2018 18:02:53 GMT  
+		Size: 352.2 KB (352159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4936d757ce79119ce572d895ec06d4f253720db8dcda679556a3f26eb2ef1444`  
+		Last Modified: Mon, 26 Mar 2018 23:49:15 GMT  
+		Size: 13.7 MB (13718198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b8c914782b609f87125815ded5829d03cd309beebdf443ff8640ee20b865f90`  
+		Last Modified: Mon, 26 Mar 2018 23:49:10 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:alpine`
@@ -1458,12 +1652,13 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 ## `traefik:tetedemoine`
 
 ```console
-$ docker pull traefik@sha256:a8c669849f051f6c1d17936d0c013b23262a618914c8faa0ddff824510057650
+$ docker pull traefik@sha256:d5f9deb15d8a9ad99787689c2ffeb5a82ecabb5fe8d994f0d53df823c0f10c1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:tetedemoine` - linux; amd64
 
@@ -1501,15 +1696,52 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 14.2 MB (14158062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:tetedemoine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:aac502ee54f7354afd89daf7f9e4f1ff49c5e9f281486e2ca560a2be2809d1c3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.7 MB (13705594 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2421ad0ef477b4aa98c7442c4ac286fdeaee9824e9af355447a70c34af5e20fc`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Tue, 24 Oct 2017 23:48:27 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Mon, 26 Mar 2018 23:48:24 GMT
+COPY file:7810abc00b21e1d90206239fb23a9f1fe6bdc46c4844607bcfdc70010bb5a03c in / 
+# Mon, 26 Mar 2018 23:48:25 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:25 GMT
+ENTRYPOINT ["/traefik"]
+# Mon, 26 Mar 2018 23:48:25 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:8996ab8c9ae2c6afe7d318a3784c7ba1b1b72d4ae14cf515d4c1490aae91cab0`  
+		Last Modified: Tue, 24 Oct 2017 23:48:35 GMT  
+		Size: 155.2 KB (155184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c180fc5960d7266dc572589225ec7bebeb129d83159b8c2fcd5639974ed8b25`  
+		Last Modified: Mon, 26 Mar 2018 23:48:55 GMT  
+		Size: 13.6 MB (13550410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:tetedemoine-alpine`
 
 ```console
-$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+$ docker pull traefik@sha256:2b4dfc07e95cfc20f80316b8afb37f0e15830aa0abe623bf6e44931732b0049d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:tetedemoine-alpine` - linux; amd64
 
@@ -1562,6 +1794,65 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 	-	`sha256:a05f8d828a4b3069414164b89fff09af4e6b4a1f0c561a8ac3c87ef7b3e68a2c`  
 		Last Modified: Mon, 26 Mar 2018 23:01:25 GMT  
 		Size: 338.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `traefik:tetedemoine-alpine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:ec66237dbf466aa1f46aafc05a8a92a2d19e152f134e0c6557726c30588a0ba1
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.0 MB (16036860 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9294ea90ba9072a897db82041ea375b55705bb43e21dc712aade55b379e30637`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Mon, 26 Feb 2018 23:48:26 GMT
+ADD file:009348222efb3c4ca2e53c387fb34c488679ca07db39525a6c5cc214e46abffd in / 
+# Mon, 26 Feb 2018 23:48:27 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Mon, 26 Feb 2018 23:48:28 GMT
+CMD ["/bin/sh"]
+# Tue, 27 Feb 2018 18:02:37 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 23:48:34 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 23:48:35 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 23:48:35 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 23:48:35 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 23:48:36 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:0864efeeb5cb8dca4eb53e5d6fd38486daee80fa326fe36d1ad254f8fa6bb310`  
+		Last Modified: Sun, 23 Jul 2017 20:21:42 GMT  
+		Size: 2.0 MB (1965988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:448db471625a0828399cd99cb762a514458df032a36e5a23df975081ab87bc41`  
+		Last Modified: Mon, 26 Feb 2018 23:49:11 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dacf7725132f7dfebb9d4f9956e103b93820ea07b89ac6b4676874f2ae3b9d9d`  
+		Last Modified: Tue, 27 Feb 2018 18:02:53 GMT  
+		Size: 352.2 KB (352159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4936d757ce79119ce572d895ec06d4f253720db8dcda679556a3f26eb2ef1444`  
+		Last Modified: Mon, 26 Mar 2018 23:49:15 GMT  
+		Size: 13.7 MB (13718198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b8c914782b609f87125815ded5829d03cd309beebdf443ff8640ee20b865f90`  
+		Last Modified: Mon, 26 Mar 2018 23:49:10 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v1.5`
@@ -2173,12 +2464,13 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 ## `traefik:v1.6`
 
 ```console
-$ docker pull traefik@sha256:a8c669849f051f6c1d17936d0c013b23262a618914c8faa0ddff824510057650
+$ docker pull traefik@sha256:d5f9deb15d8a9ad99787689c2ffeb5a82ecabb5fe8d994f0d53df823c0f10c1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:v1.6` - linux; amd64
 
@@ -2216,15 +2508,52 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 14.2 MB (14158062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:v1.6` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:aac502ee54f7354afd89daf7f9e4f1ff49c5e9f281486e2ca560a2be2809d1c3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.7 MB (13705594 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2421ad0ef477b4aa98c7442c4ac286fdeaee9824e9af355447a70c34af5e20fc`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Tue, 24 Oct 2017 23:48:27 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Mon, 26 Mar 2018 23:48:24 GMT
+COPY file:7810abc00b21e1d90206239fb23a9f1fe6bdc46c4844607bcfdc70010bb5a03c in / 
+# Mon, 26 Mar 2018 23:48:25 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:25 GMT
+ENTRYPOINT ["/traefik"]
+# Mon, 26 Mar 2018 23:48:25 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:8996ab8c9ae2c6afe7d318a3784c7ba1b1b72d4ae14cf515d4c1490aae91cab0`  
+		Last Modified: Tue, 24 Oct 2017 23:48:35 GMT  
+		Size: 155.2 KB (155184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c180fc5960d7266dc572589225ec7bebeb129d83159b8c2fcd5639974ed8b25`  
+		Last Modified: Mon, 26 Mar 2018 23:48:55 GMT  
+		Size: 13.6 MB (13550410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:v1.6.0-rc1`
 
 ```console
-$ docker pull traefik@sha256:a8c669849f051f6c1d17936d0c013b23262a618914c8faa0ddff824510057650
+$ docker pull traefik@sha256:d5f9deb15d8a9ad99787689c2ffeb5a82ecabb5fe8d994f0d53df823c0f10c1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:v1.6.0-rc1` - linux; amd64
 
@@ -2262,15 +2591,52 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 14.2 MB (14158062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:v1.6.0-rc1` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:aac502ee54f7354afd89daf7f9e4f1ff49c5e9f281486e2ca560a2be2809d1c3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.7 MB (13705594 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2421ad0ef477b4aa98c7442c4ac286fdeaee9824e9af355447a70c34af5e20fc`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Tue, 24 Oct 2017 23:48:27 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Mon, 26 Mar 2018 23:48:24 GMT
+COPY file:7810abc00b21e1d90206239fb23a9f1fe6bdc46c4844607bcfdc70010bb5a03c in / 
+# Mon, 26 Mar 2018 23:48:25 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:25 GMT
+ENTRYPOINT ["/traefik"]
+# Mon, 26 Mar 2018 23:48:25 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:8996ab8c9ae2c6afe7d318a3784c7ba1b1b72d4ae14cf515d4c1490aae91cab0`  
+		Last Modified: Tue, 24 Oct 2017 23:48:35 GMT  
+		Size: 155.2 KB (155184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c180fc5960d7266dc572589225ec7bebeb129d83159b8c2fcd5639974ed8b25`  
+		Last Modified: Mon, 26 Mar 2018 23:48:55 GMT  
+		Size: 13.6 MB (13550410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:v1.6.0-rc1-alpine`
 
 ```console
-$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+$ docker pull traefik@sha256:2b4dfc07e95cfc20f80316b8afb37f0e15830aa0abe623bf6e44931732b0049d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:v1.6.0-rc1-alpine` - linux; amd64
 
@@ -2325,15 +2691,75 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `traefik:v1.6.0-rc1-alpine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:ec66237dbf466aa1f46aafc05a8a92a2d19e152f134e0c6557726c30588a0ba1
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.0 MB (16036860 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9294ea90ba9072a897db82041ea375b55705bb43e21dc712aade55b379e30637`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Mon, 26 Feb 2018 23:48:26 GMT
+ADD file:009348222efb3c4ca2e53c387fb34c488679ca07db39525a6c5cc214e46abffd in / 
+# Mon, 26 Feb 2018 23:48:27 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Mon, 26 Feb 2018 23:48:28 GMT
+CMD ["/bin/sh"]
+# Tue, 27 Feb 2018 18:02:37 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 23:48:34 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 23:48:35 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 23:48:35 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 23:48:35 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 23:48:36 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:0864efeeb5cb8dca4eb53e5d6fd38486daee80fa326fe36d1ad254f8fa6bb310`  
+		Last Modified: Sun, 23 Jul 2017 20:21:42 GMT  
+		Size: 2.0 MB (1965988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:448db471625a0828399cd99cb762a514458df032a36e5a23df975081ab87bc41`  
+		Last Modified: Mon, 26 Feb 2018 23:49:11 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dacf7725132f7dfebb9d4f9956e103b93820ea07b89ac6b4676874f2ae3b9d9d`  
+		Last Modified: Tue, 27 Feb 2018 18:02:53 GMT  
+		Size: 352.2 KB (352159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4936d757ce79119ce572d895ec06d4f253720db8dcda679556a3f26eb2ef1444`  
+		Last Modified: Mon, 26 Mar 2018 23:49:15 GMT  
+		Size: 13.7 MB (13718198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b8c914782b609f87125815ded5829d03cd309beebdf443ff8640ee20b865f90`  
+		Last Modified: Mon, 26 Mar 2018 23:49:10 GMT  
+		Size: 340.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `traefik:v1.6-alpine`
 
 ```console
-$ docker pull traefik@sha256:8faa6658d64a816ac543fb59e1602c381002a9d7461980f6331614eb9157b570
+$ docker pull traefik@sha256:2b4dfc07e95cfc20f80316b8afb37f0e15830aa0abe623bf6e44931732b0049d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `traefik:v1.6-alpine` - linux; amd64
 
@@ -2386,4 +2812,63 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 	-	`sha256:a05f8d828a4b3069414164b89fff09af4e6b4a1f0c561a8ac3c87ef7b3e68a2c`  
 		Last Modified: Mon, 26 Mar 2018 23:01:25 GMT  
 		Size: 338.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `traefik:v1.6-alpine` - linux; arm variant v6
+
+```console
+$ docker pull traefik@sha256:ec66237dbf466aa1f46aafc05a8a92a2d19e152f134e0c6557726c30588a0ba1
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.0 MB (16036860 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9294ea90ba9072a897db82041ea375b55705bb43e21dc712aade55b379e30637`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Mon, 26 Feb 2018 23:48:26 GMT
+ADD file:009348222efb3c4ca2e53c387fb34c488679ca07db39525a6c5cc214e46abffd in / 
+# Mon, 26 Feb 2018 23:48:27 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Mon, 26 Feb 2018 23:48:28 GMT
+CMD ["/bin/sh"]
+# Tue, 27 Feb 2018 18:02:37 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 26 Mar 2018 23:48:34 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.6.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 26 Mar 2018 23:48:35 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 26 Mar 2018 23:48:35 GMT
+EXPOSE 80/tcp
+# Mon, 26 Mar 2018 23:48:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 26 Mar 2018 23:48:35 GMT
+CMD ["traefik"]
+# Mon, 26 Mar 2018 23:48:36 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:0864efeeb5cb8dca4eb53e5d6fd38486daee80fa326fe36d1ad254f8fa6bb310`  
+		Last Modified: Sun, 23 Jul 2017 20:21:42 GMT  
+		Size: 2.0 MB (1965988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:448db471625a0828399cd99cb762a514458df032a36e5a23df975081ab87bc41`  
+		Last Modified: Mon, 26 Feb 2018 23:49:11 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dacf7725132f7dfebb9d4f9956e103b93820ea07b89ac6b4676874f2ae3b9d9d`  
+		Last Modified: Tue, 27 Feb 2018 18:02:53 GMT  
+		Size: 352.2 KB (352159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4936d757ce79119ce572d895ec06d4f253720db8dcda679556a3f26eb2ef1444`  
+		Last Modified: Mon, 26 Mar 2018 23:49:15 GMT  
+		Size: 13.7 MB (13718198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b8c914782b609f87125815ded5829d03cd309beebdf443ff8640ee20b865f90`  
+		Last Modified: Mon, 26 Mar 2018 23:49:10 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
