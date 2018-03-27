@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1cb02dac2a5a1dc48eb79013be881811df5d94b3d6ad6a2463d14cd491176eec`
-- Created: `2018-02-09T20:31:21.198762895Z`
-- Virtual Size: ~ 27.50 Mb  
+- Image ID: `sha256:34b55f5d3060d1d2b16a04e8763cf2a088eb63cd0491060900a4877648eaeb1e`
+- Created: `2018-03-27T03:33:38.421132976Z`
+- Virtual Size: ~ 21.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
