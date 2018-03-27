@@ -1,7 +1,7 @@
 ## `owncloud:latest`
 
 ```console
-$ docker pull owncloud@sha256:493f10e4e379d210ba69cdf4d10af17194e904547801a8ff6b844672ea6fdce4
+$ docker pull owncloud@sha256:6acfe17c6e1c5a8e39c417877e2b841b97bac07439b76cdf1bd28eb241fd4a0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -781,14 +781,14 @@ CMD ["apache2-foreground"]
 ### `owncloud:latest` - linux; 386
 
 ```console
-$ docker pull owncloud@sha256:d2f2fce18d4b90246c7652305e10d7b1e756ad42a3d1e0e206a300c539171774
+$ docker pull owncloud@sha256:4010e5a7e134ea1f9e27a9f38d9ba03139a29ba51042241dd89c2fc7ac9918f3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.8 MB (246806927 bytes)**  
+-	Total Size: **246.8 MB (246806882 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09f6ff92eed69f5a949cc499678b18847f2a99de3397d6b8571e73cbd5e6f8ce`
+-	Image ID: `sha256:05fa9c0d15a4e981e1a72874624ba9a69ce3dcd55c1f1ba6525d6b96497e47cf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -869,15 +869,17 @@ RUN a2enmod rewrite
 RUN set -ex 	&& pecl install APCu-5.1.8 	&& pecl install memcached-3.0.3 	&& pecl install redis-3.1.2 	&& docker-php-ext-enable apcu memcached redis
 # Wed, 07 Mar 2018 04:59:39 GMT
 ENV OWNCLOUD_VERSION=10.0.7
-# Wed, 07 Mar 2018 04:59:39 GMT
+# Tue, 27 Mar 2018 20:58:26 GMT
+ENV OWNCLOUD_SHA256=7c822aa163182391ae3213a5465151d7cc7dd0990666315da0d8e118269d0fb0
+# Tue, 27 Mar 2018 20:58:26 GMT
 VOLUME [/var/www/html]
-# Wed, 07 Mar 2018 04:59:55 GMT
-RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Wed, 07 Mar 2018 04:59:56 GMT
+# Tue, 27 Mar 2018 20:58:46 GMT
+RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
+# Tue, 27 Mar 2018 20:58:48 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /usr/local/bin/ 
-# Wed, 07 Mar 2018 04:59:56 GMT
+# Tue, 27 Mar 2018 20:58:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Mar 2018 04:59:57 GMT
+# Tue, 27 Mar 2018 20:58:48 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -958,12 +960,12 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 07 Mar 2018 06:00:38 GMT  
 		Size: 1.3 MB (1283115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fafe5f1448f4ec0317cc5a46fbb77e0302331215740e318c35d26a8e2d105d5`  
-		Last Modified: Wed, 07 Mar 2018 06:00:57 GMT  
-		Size: 42.9 MB (42853246 bytes)  
+	-	`sha256:faa103c3f2f8d1de5bbacacf961f901f93c031c63516f870243b05d9a941e178`  
+		Last Modified: Tue, 27 Mar 2018 21:39:10 GMT  
+		Size: 42.9 MB (42853201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aacec4aec42ce37dd5f2a5434e5b6b147ea3e6788dc461e2cf922b8c9cfe023a`  
-		Last Modified: Wed, 07 Mar 2018 06:00:36 GMT  
+	-	`sha256:9cfdf153a555f553afa8c61c780d2d36a83502a097c0b124aa121d2e16eaa836`  
+		Last Modified: Tue, 27 Mar 2018 21:38:52 GMT  
 		Size: 336.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
