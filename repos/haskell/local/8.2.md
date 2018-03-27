@@ -356,13 +356,9 @@ Licenses: (parsed from: `/usr/share/doc/cabal-install-2.0/copyright`)
 
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cabal-install-2.0=2.0.0.1+git20171204.0.e430993-5~14.04
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-2.0/cabal-install-2.0_2.0.0.1+git20171204.0.e430993-5~14.04.tar.xz' cabal-install-2.0_2.0.0.1+git20171204.0.e430993-5~14.04.tar.xz 1528556 SHA256:5544f8e598b83cce3bdfecc585ef47ac1901c915a8a0d798b135dc701646bb27
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-2.0/cabal-install-2.0_2.0.0.1+git20171204.0.e430993-5~14.04.dsc' cabal-install-2.0_2.0.0.1+git20171204.0.e430993-5~14.04.dsc 1655 SHA256:99caa350e455c7e6f598693e42c0d579605cd8fa8f384ab40f77c8f73c8f9381
-```
 
 ### `dpkg` source package: `cdebconf=0.192`
 
