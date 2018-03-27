@@ -1,7 +1,7 @@
 ## `debian:buster-slim`
 
 ```console
-$ docker pull debian@sha256:1b585e8db44d270db6f2373c254590d7281e184caeebb294ae57bab7e051e9d7
+$ docker pull debian@sha256:5e94894ec623b2ac71ed0032d79c9b512d443ab05fb4fa89179dac76898cba8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -121,27 +121,27 @@ CMD ["bash"]
 ### `debian:buster-slim` - linux; 386
 
 ```console
-$ docker pull debian@sha256:33b1ecce95cfaae26d7dad2495934dfa0e7669e1a0c6e57137e0e4da25d06924
+$ docker pull debian@sha256:74b8576114ccf5863d2835ad39c63db20550e023dfc086960152c9c32d97c28b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.3 MB (26253568 bytes)**  
+-	Total Size: **26.4 MB (26393586 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0879a978e605c034cab956946eb039ad62440c57f8e7d73357a8e55e630ea1a8`
+-	Image ID: `sha256:b8a1eff47aeb0edcffdfb59b023a3a64cf8a0a06b34a702bdd0ca060a841d8ab`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 15 Feb 2018 14:38:15 GMT
-ADD file:6d261679b6dfc01ef86059b83a1066c22a8ba0fa7d6fc7b820c0f9d9e557a375 in / 
-# Thu, 15 Feb 2018 14:38:16 GMT
+# Tue, 27 Mar 2018 13:50:32 GMT
+ADD file:8d27e23e7b41cd8f6ec91dec6172d47dbd670aeb3e0b56defcf5bafb1aa2b83e in / 
+# Tue, 27 Mar 2018 13:50:33 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:050abccc1452ecf95983b8295d39fef5e7f8b8b419b70ce0b90027ea755f60e3`  
-		Last Modified: Thu, 15 Feb 2018 00:44:05 GMT  
-		Size: 26.3 MB (26253568 bytes)  
+	-	`sha256:28792cc73b560e98a53b8b67c46c1e7401f6303acd66835bfbd9715d255f0a03`  
+		Last Modified: Thu, 15 Mar 2018 00:45:50 GMT  
+		Size: 26.4 MB (26393586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:buster-slim` - linux; ppc64le
