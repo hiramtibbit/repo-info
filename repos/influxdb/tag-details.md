@@ -28,7 +28,7 @@
 ## `influxdb:1.4`
 
 ```console
-$ docker pull influxdb@sha256:c0c4d69afe9b75926f4e5858f73b792c6d4f4f69e8f013f139792910e4498858
+$ docker pull influxdb@sha256:d1a17d40437bdc1a1559debdd3a5b7956352e7b87f205c3a468ed37c40fee57b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -119,79 +119,79 @@ CMD ["influxd"]
 ### `influxdb:1.4` - linux; arm variant v7
 
 ```console
-$ docker pull influxdb@sha256:4c482acf76477ea28d169639a850fd47b6191bb01c5019114ce3aeb70bdafeab
+$ docker pull influxdb@sha256:3e6bf76113d518c84aa0e7860d3275ee23e8a5220cee3c8fc7f5f8ade57d75cf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.5 MB (75467846 bytes)**  
+-	Total Size: **82.6 MB (82598231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:424ef1d078d0b5132cf1c4121dad1e3aa81663d8bc334f33a8a4fb7f0fef4fd4`
+-	Image ID: `sha256:9b21550a20c69ef843315ca7e78faac039ecacef320fb27518b6080136e42c07`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 12:32:32 GMT
-ADD file:a48681cb8186079633f55084b5ecf518e0c50f24cfb6eb56bd42bca88f26e28d in / 
-# Wed, 14 Mar 2018 12:32:33 GMT
+# Wed, 14 Mar 2018 19:58:54 GMT
+ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
+# Wed, 14 Mar 2018 19:58:55 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 13:19:10 GMT
+# Tue, 27 Mar 2018 00:17:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 13:19:17 GMT
+# Tue, 27 Mar 2018 00:17:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 ENV INFLUXDB_VERSION=1.4.3
-# Wed, 14 Mar 2018 16:30:38 GMT
+# Tue, 27 Mar 2018 00:47:43 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Wed, 14 Mar 2018 16:30:38 GMT
+# Tue, 27 Mar 2018 00:47:44 GMT
 COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /etc/influxdb/influxdb.conf 
-# Wed, 14 Mar 2018 16:30:39 GMT
+# Tue, 27 Mar 2018 00:47:44 GMT
 EXPOSE 8086/tcp
-# Wed, 14 Mar 2018 16:30:39 GMT
+# Tue, 27 Mar 2018 00:47:45 GMT
 VOLUME [/var/lib/influxdb]
-# Wed, 14 Mar 2018 16:30:40 GMT
+# Tue, 27 Mar 2018 00:47:45 GMT
 COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
-# Wed, 14 Mar 2018 16:30:40 GMT
+# Tue, 27 Mar 2018 00:47:46 GMT
 COPY file:44e0050f3b04248a6900eace944c581b13b4ad9af1e5cfb91d837cb5e24356e6 in /init-influxdb.sh 
-# Wed, 14 Mar 2018 16:30:41 GMT
+# Tue, 27 Mar 2018 00:47:46 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 14 Mar 2018 16:30:41 GMT
+# Tue, 27 Mar 2018 00:47:47 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:1296b637c2f207ccc536f8e55bad6857ee417d3b5ea4c82a92a8e8621a970f50`  
-		Last Modified: Wed, 14 Mar 2018 12:44:05 GMT  
-		Size: 41.9 MB (41857435 bytes)  
+	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
+		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
+		Size: 46.1 MB (46055043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2ab5e048ba56edebae7aceececc82f4b33c46e008d392e5fd1d5ad0da0959c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:15 GMT  
-		Size: 9.8 MB (9824907 bytes)  
+	-	`sha256:5f1c7131670b6803e019d84856e76920f381056ccbab209ffaa29ca99ff3477f`  
+		Last Modified: Tue, 27 Mar 2018 00:28:45 GMT  
+		Size: 7.8 MB (7817851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a6513627dbe58bc1e5151968379017a6d2b320b2ec9b35f6fd1235aeeadb3c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:13 GMT  
-		Size: 3.9 MB (3912522 bytes)  
+	-	`sha256:a2bf86e092650e0ded3a071eb8d85160cbe2ac1dc5abe2c8cf5df0197aa7d6c7`  
+		Last Modified: Tue, 27 Mar 2018 00:28:44 GMT  
+		Size: 8.8 MB (8849512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e34267f53b9fb05ddb394564eff3999d54f81c22dd05a8ccea048a90c3263f`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 2.9 KB (2915 bytes)  
+	-	`sha256:40e6b6b92a7caa4a5f2bc3058b2f5aee99d22044152118a57326e4f08c7614ad`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 3.0 KB (2966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2230087d13e7d2c7b26532911b74aa53ef6e71c168acba8c98882897e0e0b5a3`  
-		Last Modified: Wed, 14 Mar 2018 16:31:30 GMT  
-		Size: 19.9 MB (19868471 bytes)  
+	-	`sha256:9a07126883947a0a8c09156ce315b778b4099c0fd36f615c39099c2fece7c888`  
+		Last Modified: Tue, 27 Mar 2018 00:49:10 GMT  
+		Size: 19.9 MB (19871259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb2513c9c1378fe2f7ff647e4900c935ef25fa40aad8174c16296c5987ceda8`  
-		Last Modified: Wed, 14 Mar 2018 16:31:25 GMT  
-		Size: 221.0 B  
+	-	`sha256:d1b5f78c422e2f666c75d7822c322f72f5863315e3dcb0011361488e2b62ffd9`  
+		Last Modified: Tue, 27 Mar 2018 00:49:04 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7498461f5892518d134c0588de43f5ac1bc125cd1ef5ef32601bcd0c5d6ec98c`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 210.0 B  
+	-	`sha256:71c214dea146674c387edc31b7829ccfad16b8b6a2ccc61e82f8c8b6f4ac3f81`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:169cf403adbc32a2f2bb3151ac8e1fc75fbd5e769bfc525563a2a659d3c8a7fb`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
+	-	`sha256:915bb1953761011faca595e44b41f7d1fde9919ab51f5a75574dd2cc452d746e`  
+		Last Modified: Tue, 27 Mar 2018 00:49:04 GMT  
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -277,7 +277,7 @@ CMD ["influxd"]
 ## `influxdb:1.4.3`
 
 ```console
-$ docker pull influxdb@sha256:c0c4d69afe9b75926f4e5858f73b792c6d4f4f69e8f013f139792910e4498858
+$ docker pull influxdb@sha256:d1a17d40437bdc1a1559debdd3a5b7956352e7b87f205c3a468ed37c40fee57b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -368,79 +368,79 @@ CMD ["influxd"]
 ### `influxdb:1.4.3` - linux; arm variant v7
 
 ```console
-$ docker pull influxdb@sha256:4c482acf76477ea28d169639a850fd47b6191bb01c5019114ce3aeb70bdafeab
+$ docker pull influxdb@sha256:3e6bf76113d518c84aa0e7860d3275ee23e8a5220cee3c8fc7f5f8ade57d75cf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.5 MB (75467846 bytes)**  
+-	Total Size: **82.6 MB (82598231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:424ef1d078d0b5132cf1c4121dad1e3aa81663d8bc334f33a8a4fb7f0fef4fd4`
+-	Image ID: `sha256:9b21550a20c69ef843315ca7e78faac039ecacef320fb27518b6080136e42c07`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 12:32:32 GMT
-ADD file:a48681cb8186079633f55084b5ecf518e0c50f24cfb6eb56bd42bca88f26e28d in / 
-# Wed, 14 Mar 2018 12:32:33 GMT
+# Wed, 14 Mar 2018 19:58:54 GMT
+ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
+# Wed, 14 Mar 2018 19:58:55 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 13:19:10 GMT
+# Tue, 27 Mar 2018 00:17:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 13:19:17 GMT
+# Tue, 27 Mar 2018 00:17:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 ENV INFLUXDB_VERSION=1.4.3
-# Wed, 14 Mar 2018 16:30:38 GMT
+# Tue, 27 Mar 2018 00:47:43 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Wed, 14 Mar 2018 16:30:38 GMT
+# Tue, 27 Mar 2018 00:47:44 GMT
 COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /etc/influxdb/influxdb.conf 
-# Wed, 14 Mar 2018 16:30:39 GMT
+# Tue, 27 Mar 2018 00:47:44 GMT
 EXPOSE 8086/tcp
-# Wed, 14 Mar 2018 16:30:39 GMT
+# Tue, 27 Mar 2018 00:47:45 GMT
 VOLUME [/var/lib/influxdb]
-# Wed, 14 Mar 2018 16:30:40 GMT
+# Tue, 27 Mar 2018 00:47:45 GMT
 COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
-# Wed, 14 Mar 2018 16:30:40 GMT
+# Tue, 27 Mar 2018 00:47:46 GMT
 COPY file:44e0050f3b04248a6900eace944c581b13b4ad9af1e5cfb91d837cb5e24356e6 in /init-influxdb.sh 
-# Wed, 14 Mar 2018 16:30:41 GMT
+# Tue, 27 Mar 2018 00:47:46 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 14 Mar 2018 16:30:41 GMT
+# Tue, 27 Mar 2018 00:47:47 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:1296b637c2f207ccc536f8e55bad6857ee417d3b5ea4c82a92a8e8621a970f50`  
-		Last Modified: Wed, 14 Mar 2018 12:44:05 GMT  
-		Size: 41.9 MB (41857435 bytes)  
+	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
+		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
+		Size: 46.1 MB (46055043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2ab5e048ba56edebae7aceececc82f4b33c46e008d392e5fd1d5ad0da0959c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:15 GMT  
-		Size: 9.8 MB (9824907 bytes)  
+	-	`sha256:5f1c7131670b6803e019d84856e76920f381056ccbab209ffaa29ca99ff3477f`  
+		Last Modified: Tue, 27 Mar 2018 00:28:45 GMT  
+		Size: 7.8 MB (7817851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a6513627dbe58bc1e5151968379017a6d2b320b2ec9b35f6fd1235aeeadb3c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:13 GMT  
-		Size: 3.9 MB (3912522 bytes)  
+	-	`sha256:a2bf86e092650e0ded3a071eb8d85160cbe2ac1dc5abe2c8cf5df0197aa7d6c7`  
+		Last Modified: Tue, 27 Mar 2018 00:28:44 GMT  
+		Size: 8.8 MB (8849512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e34267f53b9fb05ddb394564eff3999d54f81c22dd05a8ccea048a90c3263f`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 2.9 KB (2915 bytes)  
+	-	`sha256:40e6b6b92a7caa4a5f2bc3058b2f5aee99d22044152118a57326e4f08c7614ad`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 3.0 KB (2966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2230087d13e7d2c7b26532911b74aa53ef6e71c168acba8c98882897e0e0b5a3`  
-		Last Modified: Wed, 14 Mar 2018 16:31:30 GMT  
-		Size: 19.9 MB (19868471 bytes)  
+	-	`sha256:9a07126883947a0a8c09156ce315b778b4099c0fd36f615c39099c2fece7c888`  
+		Last Modified: Tue, 27 Mar 2018 00:49:10 GMT  
+		Size: 19.9 MB (19871259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb2513c9c1378fe2f7ff647e4900c935ef25fa40aad8174c16296c5987ceda8`  
-		Last Modified: Wed, 14 Mar 2018 16:31:25 GMT  
-		Size: 221.0 B  
+	-	`sha256:d1b5f78c422e2f666c75d7822c322f72f5863315e3dcb0011361488e2b62ffd9`  
+		Last Modified: Tue, 27 Mar 2018 00:49:04 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7498461f5892518d134c0588de43f5ac1bc125cd1ef5ef32601bcd0c5d6ec98c`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 210.0 B  
+	-	`sha256:71c214dea146674c387edc31b7829ccfad16b8b6a2ccc61e82f8c8b6f4ac3f81`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:169cf403adbc32a2f2bb3151ac8e1fc75fbd5e769bfc525563a2a659d3c8a7fb`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
+	-	`sha256:915bb1953761011faca595e44b41f7d1fde9919ab51f5a75574dd2cc452d746e`  
+		Last Modified: Tue, 27 Mar 2018 00:49:04 GMT  
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -692,7 +692,7 @@ CMD ["influxd"]
 ## `influxdb:1.5`
 
 ```console
-$ docker pull influxdb@sha256:dc7f5544da3356ed5d02c1e953c1ec1d6069d6e268f46d362c7f64697a044039
+$ docker pull influxdb@sha256:2c68f3fe115952052607fe074b3e1441f93f0b78f37f4f553aa1bb2bc109e3ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -783,79 +783,79 @@ CMD ["influxd"]
 ### `influxdb:1.5` - linux; arm variant v7
 
 ```console
-$ docker pull influxdb@sha256:c54c09131e1ad6a9b0bd9195e3a04bcbb02134df96b756ec3b26435075b519c6
+$ docker pull influxdb@sha256:d4d8e67ab79e0fd0d565e1fed1e632ec4124eca65efd0962e42cf6c2774b8101
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.2 MB (77211514 bytes)**  
+-	Total Size: **84.3 MB (84341704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee3111f39d1ed82e9a81eb220f2b18b5fa0939055f1a0c5bb50035df1d353d40`
+-	Image ID: `sha256:473b2ab0feb661b5ac00b1b3c946744982e07c318d77c74c02e1d466cbffa7d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 12:32:32 GMT
-ADD file:a48681cb8186079633f55084b5ecf518e0c50f24cfb6eb56bd42bca88f26e28d in / 
-# Wed, 14 Mar 2018 12:32:33 GMT
+# Wed, 14 Mar 2018 19:58:54 GMT
+ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
+# Wed, 14 Mar 2018 19:58:55 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 13:19:10 GMT
+# Tue, 27 Mar 2018 00:17:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 13:19:17 GMT
+# Tue, 27 Mar 2018 00:17:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 22 Mar 2018 09:13:01 GMT
+# Tue, 27 Mar 2018 00:48:06 GMT
 ENV INFLUXDB_VERSION=1.5.1
-# Thu, 22 Mar 2018 09:13:05 GMT
+# Tue, 27 Mar 2018 00:48:11 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:23 GMT
 COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /etc/influxdb/influxdb.conf 
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:34 GMT
 EXPOSE 8086/tcp
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 VOLUME [/var/lib/influxdb]
-# Thu, 22 Mar 2018 09:13:07 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 COPY file:44e0050f3b04248a6900eace944c581b13b4ad9af1e5cfb91d837cb5e24356e6 in /init-influxdb.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:37 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:1296b637c2f207ccc536f8e55bad6857ee417d3b5ea4c82a92a8e8621a970f50`  
-		Last Modified: Wed, 14 Mar 2018 12:44:05 GMT  
-		Size: 41.9 MB (41857435 bytes)  
+	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
+		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
+		Size: 46.1 MB (46055043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2ab5e048ba56edebae7aceececc82f4b33c46e008d392e5fd1d5ad0da0959c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:15 GMT  
-		Size: 9.8 MB (9824907 bytes)  
+	-	`sha256:5f1c7131670b6803e019d84856e76920f381056ccbab209ffaa29ca99ff3477f`  
+		Last Modified: Tue, 27 Mar 2018 00:28:45 GMT  
+		Size: 7.8 MB (7817851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a6513627dbe58bc1e5151968379017a6d2b320b2ec9b35f6fd1235aeeadb3c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:13 GMT  
-		Size: 3.9 MB (3912522 bytes)  
+	-	`sha256:a2bf86e092650e0ded3a071eb8d85160cbe2ac1dc5abe2c8cf5df0197aa7d6c7`  
+		Last Modified: Tue, 27 Mar 2018 00:28:44 GMT  
+		Size: 8.8 MB (8849512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e34267f53b9fb05ddb394564eff3999d54f81c22dd05a8ccea048a90c3263f`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 2.9 KB (2915 bytes)  
+	-	`sha256:40e6b6b92a7caa4a5f2bc3058b2f5aee99d22044152118a57326e4f08c7614ad`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 3.0 KB (2966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d71bb903e6aa5ab5ab29424cc1e00d1d8f065cd76a9b2f0c312b542e0aa9a2c7`  
-		Last Modified: Thu, 22 Mar 2018 09:13:33 GMT  
-		Size: 21.6 MB (21612133 bytes)  
+	-	`sha256:22647fc58adbe67c935ac5ef32d7a4542fb5f0f59d48d0952c74eaf8616071b2`  
+		Last Modified: Tue, 27 Mar 2018 00:50:06 GMT  
+		Size: 21.6 MB (21614735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f674094bdeeb416b8f43aecc64131c89242323bdcdb9e0cf44f540b22c5e8c3e`  
-		Last Modified: Thu, 22 Mar 2018 09:13:27 GMT  
-		Size: 226.0 B  
+	-	`sha256:d48e9122b20ad892f955667f5a27e3702fe0d39b62e5038847564d771f4dbaaf`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea70db563a06de63c0b895d7a476ff0b7ff2ee3c0d4ca08996c89e7623c8e5a1`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
-		Size: 211.0 B  
+	-	`sha256:76bff6848ba0cc38f8f7b956adae579af9b2fe50dee522cc03c75ef893927490`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dce56703869b408b2b5a8af89b0c981267dfbde3c0d8c3b6605f36fabdb6f76f`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
+	-	`sha256:83fd01f9852d01108ef61c0c0b9ae2b11cded43824743e39151749885e8de20f`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -941,7 +941,7 @@ CMD ["influxd"]
 ## `influxdb:1.5.1`
 
 ```console
-$ docker pull influxdb@sha256:dc7f5544da3356ed5d02c1e953c1ec1d6069d6e268f46d362c7f64697a044039
+$ docker pull influxdb@sha256:2c68f3fe115952052607fe074b3e1441f93f0b78f37f4f553aa1bb2bc109e3ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1032,79 +1032,79 @@ CMD ["influxd"]
 ### `influxdb:1.5.1` - linux; arm variant v7
 
 ```console
-$ docker pull influxdb@sha256:c54c09131e1ad6a9b0bd9195e3a04bcbb02134df96b756ec3b26435075b519c6
+$ docker pull influxdb@sha256:d4d8e67ab79e0fd0d565e1fed1e632ec4124eca65efd0962e42cf6c2774b8101
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.2 MB (77211514 bytes)**  
+-	Total Size: **84.3 MB (84341704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee3111f39d1ed82e9a81eb220f2b18b5fa0939055f1a0c5bb50035df1d353d40`
+-	Image ID: `sha256:473b2ab0feb661b5ac00b1b3c946744982e07c318d77c74c02e1d466cbffa7d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 12:32:32 GMT
-ADD file:a48681cb8186079633f55084b5ecf518e0c50f24cfb6eb56bd42bca88f26e28d in / 
-# Wed, 14 Mar 2018 12:32:33 GMT
+# Wed, 14 Mar 2018 19:58:54 GMT
+ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
+# Wed, 14 Mar 2018 19:58:55 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 13:19:10 GMT
+# Tue, 27 Mar 2018 00:17:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 13:19:17 GMT
+# Tue, 27 Mar 2018 00:17:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 22 Mar 2018 09:13:01 GMT
+# Tue, 27 Mar 2018 00:48:06 GMT
 ENV INFLUXDB_VERSION=1.5.1
-# Thu, 22 Mar 2018 09:13:05 GMT
+# Tue, 27 Mar 2018 00:48:11 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:23 GMT
 COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /etc/influxdb/influxdb.conf 
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:34 GMT
 EXPOSE 8086/tcp
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 VOLUME [/var/lib/influxdb]
-# Thu, 22 Mar 2018 09:13:07 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 COPY file:44e0050f3b04248a6900eace944c581b13b4ad9af1e5cfb91d837cb5e24356e6 in /init-influxdb.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:37 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:1296b637c2f207ccc536f8e55bad6857ee417d3b5ea4c82a92a8e8621a970f50`  
-		Last Modified: Wed, 14 Mar 2018 12:44:05 GMT  
-		Size: 41.9 MB (41857435 bytes)  
+	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
+		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
+		Size: 46.1 MB (46055043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2ab5e048ba56edebae7aceececc82f4b33c46e008d392e5fd1d5ad0da0959c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:15 GMT  
-		Size: 9.8 MB (9824907 bytes)  
+	-	`sha256:5f1c7131670b6803e019d84856e76920f381056ccbab209ffaa29ca99ff3477f`  
+		Last Modified: Tue, 27 Mar 2018 00:28:45 GMT  
+		Size: 7.8 MB (7817851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a6513627dbe58bc1e5151968379017a6d2b320b2ec9b35f6fd1235aeeadb3c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:13 GMT  
-		Size: 3.9 MB (3912522 bytes)  
+	-	`sha256:a2bf86e092650e0ded3a071eb8d85160cbe2ac1dc5abe2c8cf5df0197aa7d6c7`  
+		Last Modified: Tue, 27 Mar 2018 00:28:44 GMT  
+		Size: 8.8 MB (8849512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e34267f53b9fb05ddb394564eff3999d54f81c22dd05a8ccea048a90c3263f`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 2.9 KB (2915 bytes)  
+	-	`sha256:40e6b6b92a7caa4a5f2bc3058b2f5aee99d22044152118a57326e4f08c7614ad`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 3.0 KB (2966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d71bb903e6aa5ab5ab29424cc1e00d1d8f065cd76a9b2f0c312b542e0aa9a2c7`  
-		Last Modified: Thu, 22 Mar 2018 09:13:33 GMT  
-		Size: 21.6 MB (21612133 bytes)  
+	-	`sha256:22647fc58adbe67c935ac5ef32d7a4542fb5f0f59d48d0952c74eaf8616071b2`  
+		Last Modified: Tue, 27 Mar 2018 00:50:06 GMT  
+		Size: 21.6 MB (21614735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f674094bdeeb416b8f43aecc64131c89242323bdcdb9e0cf44f540b22c5e8c3e`  
-		Last Modified: Thu, 22 Mar 2018 09:13:27 GMT  
-		Size: 226.0 B  
+	-	`sha256:d48e9122b20ad892f955667f5a27e3702fe0d39b62e5038847564d771f4dbaaf`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea70db563a06de63c0b895d7a476ff0b7ff2ee3c0d4ca08996c89e7623c8e5a1`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
-		Size: 211.0 B  
+	-	`sha256:76bff6848ba0cc38f8f7b956adae579af9b2fe50dee522cc03c75ef893927490`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dce56703869b408b2b5a8af89b0c981267dfbde3c0d8c3b6605f36fabdb6f76f`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
+	-	`sha256:83fd01f9852d01108ef61c0c0b9ae2b11cded43824743e39151749885e8de20f`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2275,7 +2275,7 @@ CMD ["influxd"]
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:dc7f5544da3356ed5d02c1e953c1ec1d6069d6e268f46d362c7f64697a044039
+$ docker pull influxdb@sha256:2c68f3fe115952052607fe074b3e1441f93f0b78f37f4f553aa1bb2bc109e3ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2366,79 +2366,79 @@ CMD ["influxd"]
 ### `influxdb:latest` - linux; arm variant v7
 
 ```console
-$ docker pull influxdb@sha256:c54c09131e1ad6a9b0bd9195e3a04bcbb02134df96b756ec3b26435075b519c6
+$ docker pull influxdb@sha256:d4d8e67ab79e0fd0d565e1fed1e632ec4124eca65efd0962e42cf6c2774b8101
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.2 MB (77211514 bytes)**  
+-	Total Size: **84.3 MB (84341704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee3111f39d1ed82e9a81eb220f2b18b5fa0939055f1a0c5bb50035df1d353d40`
+-	Image ID: `sha256:473b2ab0feb661b5ac00b1b3c946744982e07c318d77c74c02e1d466cbffa7d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 12:32:32 GMT
-ADD file:a48681cb8186079633f55084b5ecf518e0c50f24cfb6eb56bd42bca88f26e28d in / 
-# Wed, 14 Mar 2018 12:32:33 GMT
+# Wed, 14 Mar 2018 19:58:54 GMT
+ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
+# Wed, 14 Mar 2018 19:58:55 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 13:19:10 GMT
+# Tue, 27 Mar 2018 00:17:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 13:19:17 GMT
+# Tue, 27 Mar 2018 00:17:40 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 14 Mar 2018 16:30:33 GMT
+# Tue, 27 Mar 2018 00:47:38 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 22 Mar 2018 09:13:01 GMT
+# Tue, 27 Mar 2018 00:48:06 GMT
 ENV INFLUXDB_VERSION=1.5.1
-# Thu, 22 Mar 2018 09:13:05 GMT
+# Tue, 27 Mar 2018 00:48:11 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:23 GMT
 COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /etc/influxdb/influxdb.conf 
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:34 GMT
 EXPOSE 8086/tcp
-# Thu, 22 Mar 2018 09:13:06 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 VOLUME [/var/lib/influxdb]
-# Thu, 22 Mar 2018 09:13:07 GMT
+# Tue, 27 Mar 2018 00:48:35 GMT
 COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 COPY file:44e0050f3b04248a6900eace944c581b13b4ad9af1e5cfb91d837cb5e24356e6 in /init-influxdb.sh 
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 22 Mar 2018 09:13:08 GMT
+# Tue, 27 Mar 2018 00:48:37 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:1296b637c2f207ccc536f8e55bad6857ee417d3b5ea4c82a92a8e8621a970f50`  
-		Last Modified: Wed, 14 Mar 2018 12:44:05 GMT  
-		Size: 41.9 MB (41857435 bytes)  
+	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
+		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
+		Size: 46.1 MB (46055043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2ab5e048ba56edebae7aceececc82f4b33c46e008d392e5fd1d5ad0da0959c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:15 GMT  
-		Size: 9.8 MB (9824907 bytes)  
+	-	`sha256:5f1c7131670b6803e019d84856e76920f381056ccbab209ffaa29ca99ff3477f`  
+		Last Modified: Tue, 27 Mar 2018 00:28:45 GMT  
+		Size: 7.8 MB (7817851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a6513627dbe58bc1e5151968379017a6d2b320b2ec9b35f6fd1235aeeadb3c`  
-		Last Modified: Wed, 14 Mar 2018 13:30:13 GMT  
-		Size: 3.9 MB (3912522 bytes)  
+	-	`sha256:a2bf86e092650e0ded3a071eb8d85160cbe2ac1dc5abe2c8cf5df0197aa7d6c7`  
+		Last Modified: Tue, 27 Mar 2018 00:28:44 GMT  
+		Size: 8.8 MB (8849512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e34267f53b9fb05ddb394564eff3999d54f81c22dd05a8ccea048a90c3263f`  
-		Last Modified: Wed, 14 Mar 2018 16:31:24 GMT  
-		Size: 2.9 KB (2915 bytes)  
+	-	`sha256:40e6b6b92a7caa4a5f2bc3058b2f5aee99d22044152118a57326e4f08c7614ad`  
+		Last Modified: Tue, 27 Mar 2018 00:49:03 GMT  
+		Size: 3.0 KB (2966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d71bb903e6aa5ab5ab29424cc1e00d1d8f065cd76a9b2f0c312b542e0aa9a2c7`  
-		Last Modified: Thu, 22 Mar 2018 09:13:33 GMT  
-		Size: 21.6 MB (21612133 bytes)  
+	-	`sha256:22647fc58adbe67c935ac5ef32d7a4542fb5f0f59d48d0952c74eaf8616071b2`  
+		Last Modified: Tue, 27 Mar 2018 00:50:06 GMT  
+		Size: 21.6 MB (21614735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f674094bdeeb416b8f43aecc64131c89242323bdcdb9e0cf44f540b22c5e8c3e`  
-		Last Modified: Thu, 22 Mar 2018 09:13:27 GMT  
-		Size: 226.0 B  
+	-	`sha256:d48e9122b20ad892f955667f5a27e3702fe0d39b62e5038847564d771f4dbaaf`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea70db563a06de63c0b895d7a476ff0b7ff2ee3c0d4ca08996c89e7623c8e5a1`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
-		Size: 211.0 B  
+	-	`sha256:76bff6848ba0cc38f8f7b956adae579af9b2fe50dee522cc03c75ef893927490`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dce56703869b408b2b5a8af89b0c981267dfbde3c0d8c3b6605f36fabdb6f76f`  
-		Last Modified: Thu, 22 Mar 2018 09:13:26 GMT  
+	-	`sha256:83fd01f9852d01108ef61c0c0b9ae2b11cded43824743e39151749885e8de20f`  
+		Last Modified: Tue, 27 Mar 2018 00:49:59 GMT  
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
