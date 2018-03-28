@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:0a72c1a0073ffcf599e875a7cc529135a6e02d12fc97d8fd9f299e83aae959c5
+$ docker pull buildpack-deps@sha256:1f053cf836d888acc1f126d542a5cae1f43b4d6bf935fde481287ad8649be335
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -80,14 +80,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:xenial-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:4d72e4101a9cfeee86053748a5c1aec616b365f8790679d703955bb5a7b00b72
+$ docker pull buildpack-deps@sha256:fe5b6463c3b77d04561cdb21dc598438f914784b51d927a42f5c5a6b91c180e5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.3 MB (82309181 bytes)**  
+-	Total Size: **82.3 MB (82309243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e7fb6816ca937d1f1a55ca6a3b7d9608ea591fb091830d438ccdcf36d45269d`
+-	Image ID: `sha256:874e03024f36012a345a5a35e4f1f1be52c93d6dfa6c94fbd10885ceb0291d9a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -107,7 +107,7 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 07 Mar 2018 14:23:52 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 07 Mar 2018 14:24:37 GMT
+# Wed, 28 Mar 2018 20:43:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -136,9 +136,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 07 Mar 2018 14:31:37 GMT  
 		Size: 6.2 MB (6164421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d5cd089117f92e5481898451c851db123d0a84e2127deddf15ae1d32701e98`  
-		Last Modified: Wed, 07 Mar 2018 14:32:04 GMT  
-		Size: 38.1 MB (38069487 bytes)  
+	-	`sha256:ffcdef3d46210c18d70b7a519e8070860c20c199da8eb3d18ce3154d29366579`  
+		Last Modified: Wed, 28 Mar 2018 20:48:30 GMT  
+		Size: 38.1 MB (38069549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:xenial-scm` - linux; arm64 variant v8

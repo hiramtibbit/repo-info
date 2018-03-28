@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:4f72acbdc84e3db22d57e974d527a07e016f4d8592fcd364319c28d24b2e4c9a
+$ docker pull buildpack-deps@sha256:59a9b6aed539208ba3c7c2c2df523fe8dd314328e97ca5d12131c8d251758861
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -86,14 +86,14 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:xenial` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:2225efde52868177e3569a44a9cc7bce791ae7c9d45e3fb0c509b883c5fc8bb5
+$ docker pull buildpack-deps@sha256:34daade0143202da1fa8cc5b5aa33e6b7f3fe3b89bea05b4ce71ccdc2430747f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.7 MB (199657828 bytes)**  
+-	Total Size: **200.7 MB (200723738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ae31968b69436d586d6a4d44a405a64298296bb758b30dc87c00ef609a7bf0e`
+-	Image ID: `sha256:c6456500a1845800ad542e4744a45db5de6623a73f532a14b76850b14f41185f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -113,9 +113,9 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 07 Mar 2018 14:23:52 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 07 Mar 2018 14:24:37 GMT
+# Wed, 28 Mar 2018 20:43:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Mar 2018 14:26:40 GMT
+# Wed, 28 Mar 2018 20:44:43 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
@@ -144,13 +144,13 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Last Modified: Wed, 07 Mar 2018 14:31:37 GMT  
 		Size: 6.2 MB (6164421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d5cd089117f92e5481898451c851db123d0a84e2127deddf15ae1d32701e98`  
-		Last Modified: Wed, 07 Mar 2018 14:32:04 GMT  
-		Size: 38.1 MB (38069487 bytes)  
+	-	`sha256:ffcdef3d46210c18d70b7a519e8070860c20c199da8eb3d18ce3154d29366579`  
+		Last Modified: Wed, 28 Mar 2018 20:48:30 GMT  
+		Size: 38.1 MB (38069549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:046265590086a25cf385b54c41ba8fe7db812ead3aa47148d0b854271451bc6b`  
-		Last Modified: Wed, 07 Mar 2018 14:32:47 GMT  
-		Size: 117.3 MB (117348647 bytes)  
+	-	`sha256:f30f97195cfc26ee41279390e29d7d3423489dbd4ad76f54eea4b43c4d5ca798`  
+		Last Modified: Wed, 28 Mar 2018 20:49:09 GMT  
+		Size: 118.4 MB (118414495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:xenial` - linux; arm64 variant v8
