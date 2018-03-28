@@ -755,15 +755,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.9-2
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9-2.dsc' e2fsprogs_1.43.9-2.dsc 2616 SHA256:8244486a509a3b840f9020d9f87a87ee3ccdd9e59a2626b039eb2a7f1a088b28
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9.orig.tar.gz' e2fsprogs_1.43.9.orig.tar.gz 7485521 SHA256:5be0ffc01b9720a3f3ccfc86396016baf1334b98751fefa09e0c63eaffdc3897
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9.orig.tar.gz.asc' e2fsprogs_1.43.9.orig.tar.gz.asc 488 SHA256:b600c45ad079d3fa91fbfff4af7b8bfe35d7d57e384d6e2741877fb82ae60672
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.9-2.debian.tar.xz' e2fsprogs_1.43.9-2.debian.tar.xz 79632 SHA256:f2852b3680b471e6b3cd1e2a6eef6edb2362fbe0b13a703f0d784dbeae7585f1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/e2fsprogs/1.43.9-2/
+
 
 ### `dpkg` source package: `ed=1.10-2.1`
 
@@ -780,16 +778,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ed=1.10-2.1
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.10-2.1.dsc' ed_1.10-2.1.dsc 1627 SHA256:752232f5dc5aebdf05161d6fccd378263cda1be1fce4ced52b98af10c5aa9d1c
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.10.orig.tar.gz' ed_1.10.orig.tar.gz 87416 SHA256:5b837e86f6823a9c3308f3b9ad6916dbd9ab19e00119fe57db47278ddc6b2a03
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.10-2.1.diff.gz' ed_1.10-2.1.diff.gz 6800 SHA256:7f9fc5c411cf82b41826dbc3a3254e26e4fe02204c9ef1ec15df78c74b0d4f7d
+'http://http.debian.net/debian/pool/main/e/ed/ed_1.10-2.1.dsc' ed_1.10-2.1.dsc 1627 SHA256:752232f5dc5aebdf05161d6fccd378263cda1be1fce4ced52b98af10c5aa9d1c
+'http://http.debian.net/debian/pool/main/e/ed/ed_1.10.orig.tar.gz' ed_1.10.orig.tar.gz 87416 SHA256:5b837e86f6823a9c3308f3b9ad6916dbd9ab19e00119fe57db47278ddc6b2a03
+'http://http.debian.net/debian/pool/main/e/ed/ed_1.10-2.1.diff.gz' ed_1.10-2.1.diff.gz 6800 SHA256:7f9fc5c411cf82b41826dbc3a3254e26e4fe02204c9ef1ec15df78c74b0d4f7d
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/ed/1.10-2.1/ (for browsing the source)
-- https://sources.debian.net/src/ed/1.10-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ed/1.10-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -1041,20 +1033,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180312-2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180312-2.dsc' gcc-8_8-20180312-2.dsc 32328 SHA256:5133b264a4c895856d3a4717a7c90a20067627e6876f8722f8ad7119ea89a3ed
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180312.orig.tar.gz' gcc-8_8-20180312.orig.tar.gz 69059525 SHA256:6fc4fa40f5d5442b71b2cc5ce234447a06a1d9ff9f21d6c633f26d4a6c9413e1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180312-2.diff.gz' gcc-8_8-20180312-2.diff.gz 579725 SHA256:c95912967e4ac10e2a983c8f040e6517462034634a59f301fab23c731ab55e4a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180312-2/
 
-- https://sources.debian.net/src/gcc-8/8-20180312-2/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180312-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180312-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.174`
 
@@ -1117,6 +1102,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.54.3-2/
 
 
 ### `dpkg` source package: `glibc=2.27-1`
@@ -1520,10 +1509,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris isl-0.18=0.18-4
-'http://http.debian.net/debian/pool/main/i/isl-0.18/isl-0.18_0.18-4.dsc' isl-0.18_0.18-4.dsc 1878 SHA256:b93886eeda25761ecbfb4b33514b3eab9ac6a58e8be03693154f0873ae4d322b
-'http://http.debian.net/debian/pool/main/i/isl-0.18/isl-0.18_0.18.orig.tar.xz' isl-0.18_0.18.orig.tar.xz 1475708 SHA256:0f35051cc030b87c673ac1f187de40e386a1482a0cfdf2c552dd6031b307ddc4
-'http://http.debian.net/debian/pool/main/i/isl-0.18/isl-0.18_0.18-4.debian.tar.xz' isl-0.18_0.18-4.debian.tar.xz 22220 SHA256:d24372925cf8baa49d8f1d012087049bdd1394a2c525a6ce0d0f853977ae9560
+'http://deb.debian.org/debian/pool/main/i/isl-0.18/isl-0.18_0.18-4.dsc' isl-0.18_0.18-4.dsc 1878 SHA256:b93886eeda25761ecbfb4b33514b3eab9ac6a58e8be03693154f0873ae4d322b
+'http://deb.debian.org/debian/pool/main/i/isl-0.18/isl-0.18_0.18.orig.tar.xz' isl-0.18_0.18.orig.tar.xz 1475708 SHA256:0f35051cc030b87c673ac1f187de40e386a1482a0cfdf2c552dd6031b307ddc4
+'http://deb.debian.org/debian/pool/main/i/isl-0.18/isl-0.18_0.18-4.debian.tar.xz' isl-0.18_0.18-4.debian.tar.xz 22220 SHA256:d24372925cf8baa49d8f1d012087049bdd1394a2c525a6ce0d0f853977ae9560
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/isl-0.18/0.18-4/ (for browsing the source)
+- https://sources.debian.net/src/isl-0.18/0.18-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/isl-0.18/0.18-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -1875,20 +1870,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.27-6
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-6.dsc' libgpg-error_1.27-6.dsc 2343 SHA256:d4cc2c1691b295f558d5b347df8a8ad2f0260cf57146180bed223b94ffacafbb
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27.orig.tar.bz2' libgpg-error_1.27.orig.tar.bz2 813060 SHA256:4f93aac6fecb7da2b92871bb9ee33032be6a87b174f54abf8ddf0911a22d29d2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-6.debian.tar.xz' libgpg-error_1.27-6.debian.tar.xz 20556 SHA256:89bc57dc3df449febf037226daf1aee830455c4efa493c0e3bdeab2a48971479
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.27-6/
 
-- https://sources.debian.net/src/libgpg-error/1.27-6/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.27-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.27-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
