@@ -1249,14 +1249,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.10.dsc' openssl_1.0.2g-1ubuntu4.10.dsc 2439 SHA256:737010a27d67d3fe25a1c600dabb68b1e39f96953f485d3c3806ce7206e007e0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.10.debian.tar.xz' openssl_1.0.2g-1ubuntu4.10.debian.tar.xz 120020 SHA256:0dc7577fa73131647bb69a731724dd3e1e05af645e7d50acb599be614276d865
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
@@ -1291,14 +1286,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pciutils=1:3.3.1-1.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pciutils/pciutils_3.3.1-1.1ubuntu1.1.dsc' pciutils_3.3.1-1.1ubuntu1.1.dsc 2254 SHA256:0a6c59a1295f827f96e5e97d69fba323ffe5060b1435d04e008a603a24d4e97d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pciutils/pciutils_3.3.1.orig.tar.xz' pciutils_3.3.1.orig.tar.xz 299824 SHA256:514a3bdb77e4cdbe9e970e1885af46e0ba2011bf97364368c455ade0edd4e3a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pciutils/pciutils_3.3.1-1.1ubuntu1.1.debian.tar.xz' pciutils_3.3.1-1.1ubuntu1.1.debian.tar.xz 50112 SHA256:c8a8d15b74540ba30d71ae2d6da64f638456eebb297490e4b55f53e80546d604
-```
 
 ### `dpkg` source package: `pcre3=2:8.38-3.1`
 
