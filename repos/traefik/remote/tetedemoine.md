@@ -1,13 +1,50 @@
 ## `traefik:tetedemoine`
 
 ```console
-$ docker pull traefik@sha256:29ef7066ca5bf281ba276bf17b2d4c513f7a5e1a64c0b1640b9e45c53d673930
+$ docker pull traefik@sha256:3842b5c321717a715f9477d5c8c08eb9992b6d66ae7c176090dacac653761932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
+	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
+
+### `traefik:tetedemoine` - linux; amd64
+
+```console
+$ docker pull traefik@sha256:cfc502700af892d183bd5895e5325f6b92904ca1199b257b4fe2f3e0f76f406f
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **14.3 MB (14313470 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:214cf2533b3da48f70e4b6daed88c2f06cd516fdb5d005181c48ac899f696526`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Fri, 03 Nov 2017 22:11:40 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Thu, 29 Mar 2018 06:42:06 GMT
+COPY file:574ad25e76af16f7a0e193c6cad6bdb4c7c41b1431291a85d6226a47519df3bd in / 
+# Thu, 29 Mar 2018 06:42:06 GMT
+EXPOSE 80/tcp
+# Thu, 29 Mar 2018 06:42:07 GMT
+ENTRYPOINT ["/traefik"]
+# Thu, 29 Mar 2018 06:42:07 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.6.0-rc3 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:5d3835484afecc78dccfa2f7d4fcf273aacfe0c7600b957314e38488f3942045`  
+		Last Modified: Fri, 03 Nov 2017 22:12:12 GMT  
+		Size: 155.2 KB (155152 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e816e8490f0149634d00532e3e28b81a4bb40ca983025b3526d01684d1eb2a14`  
+		Last Modified: Thu, 29 Mar 2018 07:02:00 GMT  
+		Size: 14.2 MB (14158318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `traefik:tetedemoine` - linux; arm variant v6
 

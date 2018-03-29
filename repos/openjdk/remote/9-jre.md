@@ -1,7 +1,7 @@
 ## `openjdk:9-jre`
 
 ```console
-$ docker pull openjdk@sha256:d2154be66a85d8a69c6549a2f85b5035312ec8e4102fd58fed89cfa456c67d48
+$ docker pull openjdk@sha256:701c6ef11b2d05d3f54418a9b36191b0d9da1a7315b057669dc7eaadfd6243f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -226,14 +226,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:9-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:0138a3358cda3489b2b85c64438a8cd2a2784a187eff970824bed0a3c5e417e0
+$ docker pull openjdk@sha256:4d011ec913f3aa742e6a285ebf92faf8873f163e5a8ce90ceb6f6094bfea78bc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.3 MB (246296210 bytes)**  
+-	Total Size: **246.6 MB (246572352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0788cf529b6a6ffe720d7be0a52bd7f615a81639f225e71fd2ab4ce5eab3004`
+-	Image ID: `sha256:87bbd5e837aaf0431299ab234b0e23871ce1937213eb5dbc31565e4073a302da`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -257,9 +257,9 @@ RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-j
 ENV JAVA_HOME=/docker-java-home
 # Tue, 20 Mar 2018 10:24:18 GMT
 ENV JAVA_VERSION=9.0.4+12
-# Tue, 20 Mar 2018 10:24:19 GMT
-ENV JAVA_DEBIAN_VERSION=9.0.4+12-2
-# Tue, 20 Mar 2018 10:30:33 GMT
+# Thu, 29 Mar 2018 05:57:36 GMT
+ENV JAVA_DEBIAN_VERSION=9.0.4+12-3
+# Thu, 29 Mar 2018 06:02:00 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -288,9 +288,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Wed, 14 Mar 2018 21:18:51 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:020087e31fbbe58944bea29c5fb07660da4e3418a41761712183f59f96fb4dd5`  
-		Last Modified: Tue, 20 Mar 2018 11:41:34 GMT  
-		Size: 183.4 MB (183388683 bytes)  
+	-	`sha256:80887d7face79239c9bef9157a663e7286d323a82ba53cbed2ded6b4c27e46d2`  
+		Last Modified: Thu, 29 Mar 2018 06:26:13 GMT  
+		Size: 183.7 MB (183664825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:9-jre` - linux; ppc64le
