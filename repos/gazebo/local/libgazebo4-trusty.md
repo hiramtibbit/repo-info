@@ -2048,14 +2048,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=52.1-3ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.dsc' icu_52.1-3ubuntu0.7.dsc 2053 SHA256:ea4521c548893944e3f1c86ab050bc77e5c2c2a7af1ef38b7c25d01643e73fa7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.debian.tar.gz' icu_52.1-3ubuntu0.7.debian.tar.gz 46620 SHA256:51232b60b934b7baf7da21023a38f881007774e2d03f984d7efbc009c42b46bb
-```
 
 ### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
 
@@ -5206,14 +5201,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.23
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.23.dsc' openssl_1.0.1f-1ubuntu2.23.dsc 2370 SHA256:4b63e784559305b7f46d14ac680a3fc99aed2132c8f39fbe0a207477eb3844d3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.23.debian.tar.gz' openssl_1.0.1f-1ubuntu2.23.debian.tar.gz 267818 SHA256:23912788808e19d9af99f7bcf12b726de0ff9c56ed95db886720aab1a89959ba
-```
 
 ### `dpkg` source package: `opus=1.1-0ubuntu1`
 
