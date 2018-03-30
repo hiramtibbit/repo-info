@@ -1494,15 +1494,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2n-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu4.dsc' openssl1.0_1.0.2n-1ubuntu4.dsc 2377 SHA256:7758f3f9848461a0734a8c195d59a72ad8ce53a4b666625e90aa961838c7519e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz' openssl1.0_1.0.2n.orig.tar.gz 5375802 SHA256:370babb75f278c39e0c50e8c4e7493bc0f18db6867478341a832a982fd15a8fe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz.asc' openssl1.0_1.0.2n.orig.tar.gz.asc 455 SHA256:70ef16ae7776de3e69b28b47754d0a1fbed262e2a028c1fc866ad22201449c0a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu4.debian.tar.xz' openssl1.0_1.0.2n-1ubuntu4.debian.tar.xz 99712 SHA256:17afe06144507057f10a73dc549c08940aadb902a377a58dd6051d4511e7412c
-```
 
 ### `dpkg` source package: `openssl=1.1.0g-2ubuntu2`
 
@@ -1515,15 +1509,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0g-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu2.dsc' openssl_1.1.0g-2ubuntu2.dsc 2365 SHA256:8804763a6ff87712e355e743660aa9300d8c650b8ec46e8e610b86eff43af3d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz' openssl_1.1.0g.orig.tar.gz 5404748 SHA256:de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz.asc' openssl_1.1.0g.orig.tar.gz.asc 455 SHA256:2a7532e6722aab8989644049ba5c1d3a5fce417aa4b18235eec901224098bbed
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu2.debian.tar.xz' openssl_1.1.0g-2ubuntu2.debian.tar.xz 69612 SHA256:a2fd420ea74b3bb59e42f8cfeae5c8bc09ee651d51538b4627201348eadff045
-```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
@@ -1912,14 +1900,9 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-3ubuntu2.dsc' subversion_1.9.7-3ubuntu2.dsc 3094 SHA256:18773a36eda1584fb734d13d7a0522b34622ebb2955f520e34ccd55c0f94e87d
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-3ubuntu2.debian.tar.xz' subversion_1.9.7-3ubuntu2.debian.tar.xz 2270492 SHA256:6ba2bbeab461aba46a113ba374c2c55812b0b9caa99189713d1c254b97d8d3f4
-```
 
 ### `dpkg` source package: `systemd=237-3ubuntu3`
 

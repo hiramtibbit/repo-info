@@ -867,21 +867,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.0-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0-1.dsc' e2fsprogs_1.44.0-1.dsc 2616 SHA256:330c31dfc8770e96dad1a018b208475ff57d35155390134d45c165e9a36ebe8e
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0.orig.tar.gz' e2fsprogs_1.44.0.orig.tar.gz 7558969 SHA256:04abf8c2c7c9a70aa3aa9757da23a929baf18423ccd06e8a0320c2effe091fd1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0.orig.tar.gz.asc' e2fsprogs_1.44.0.orig.tar.gz.asc 488 SHA256:9879ae1076a8d0fa050b1984c7209c67cca5fa559c57844a09a58dd38a56eca3
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.0-1.debian.tar.xz' e2fsprogs_1.44.0-1.debian.tar.xz 76192 SHA256:d6dcd914774f22852921277589a086a6aa66305d95556b729dbf93bca6ed1794
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.0-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -1853,20 +1845,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl15/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.18-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.18-1.dsc' isl_0.18-1.dsc 1882 SHA256:aed8295d019805686fd795652d930b1440bc0ae3be4373332d97784645d7c583
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.18.orig.tar.xz' isl_0.18.orig.tar.xz 1475708 SHA256:0f35051cc030b87c673ac1f187de40e386a1482a0cfdf2c552dd6031b307ddc4
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.18-1.debian.tar.xz' isl_0.18-1.debian.tar.xz 21860 SHA256:eac951311a871bb6d7886c98068290f771aaf78616516855b472d2500b84f53c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.18-1/
 
-- https://sources.debian.net/src/isl/0.18-1/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2542,20 +2527,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.19.1-5
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.dsc' libpsl_0.19.1-5.dsc 1632 SHA256:ead03b445abea7be26e9257adc7550a0269d25415388fb450cbd84b529625aa9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.debian.tar.xz' libpsl_0.19.1-5.debian.tar.xz 9772 SHA256:38e20b85f1c7b5f1cb09c487f1ed476a92740434e5bc0bb4df379e04cb604ad3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.19.1-5/
 
-- https://sources.debian.net/src/libpsl/0.19.1-5/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -4003,20 +3981,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.14-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14-1.dsc' pango1.0_1.40.14-1.dsc 3227 SHA256:196da02884c501954773967c932bc31a26c215ad7f5be745153506d57c0c00fc
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14.orig.tar.xz' pango1.0_1.40.14.orig.tar.xz 858388 SHA256:90af1beaa7bf9e4c52db29ec251ec4fd0a8f2cc185d521ad1f88d01b3a6a17e3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14-1.debian.tar.xz' pango1.0_1.40.14-1.debian.tar.xz 27748 SHA256:5cf2778fbafeac5a12bfed90a0154ab002bffe338873f39cb391b91c773e40c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.40.14-1/
 
-- https://sources.debian.net/src/pango1.0/1.40.14-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.40.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.40.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-1`
 

@@ -1589,14 +1589,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-6ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6ubuntu0.2.dsc' icu_57.1-6ubuntu0.2.dsc 2204 SHA256:5dfe65bba0c3025adca401daf7e2916f6b489da4f84715077ffb909b53a909d3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6ubuntu0.2.debian.tar.xz' icu_57.1-6ubuntu0.2.debian.tar.xz 33184 SHA256:30471133aa8e74df0f5042bf097c5a24b5ca68a12e3ac0c44432856765605d52
-```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
 
@@ -3416,14 +3411,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.3.dsc' openssl_1.0.2g-1ubuntu13.3.dsc 2500 SHA256:9133d5d7ac9c09e34a5b4d4282572c552738a22bee515ad1939d9e69f0a66c02
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.3.debian.tar.xz' openssl_1.0.2g-1ubuntu13.3.debian.tar.xz 120520 SHA256:c0ed8514bb4835d6b5a5bbaa65f9e61014c5468fd1e63262a8e4f92b8418963b
-```
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
 

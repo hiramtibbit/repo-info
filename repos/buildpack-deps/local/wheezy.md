@@ -3206,20 +3206,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u6
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u6.dsc' mercurial_2.2.2-4+deb7u6.dsc 2178 SHA256:5de6e0e678d712c3281095b0d7e28ccf4123a79cc46c4b73875364e215fab724
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u6.debian.tar.gz' mercurial_2.2.2-4+deb7u6.debian.tar.gz 61608 SHA256:854c04f99eb46aa35f7d1013c199050e516e4de1956330a1698066f3bcb24845
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u6/
 
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u6/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
@@ -3506,20 +3499,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u3
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.dsc' openssl_1.0.1t-1+deb7u3.dsc 2379 SHA256:9d5033078fb978566600ae0dd365b452ff20fb126e94b0a5cf74006d3b1a672e
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.debian.tar.gz' openssl_1.0.1t-1+deb7u3.debian.tar.gz 117754 SHA256:1c3bc3ac4098755d5bebb38d3000cf958410ebccda62099a904142a60339aa49
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u3/
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
@@ -4221,20 +4207,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018c-0+deb7u1
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2018c-0+deb7u1.dsc' tzdata_2018c-0+deb7u1.dsc 1966 SHA256:836fef1d20d63081521c32c1c4f3fcddfaa20d6af11235fc844d073d40305d9f
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2018c-0+deb7u1.debian.tar.xz' tzdata_2018c-0+deb7u1.debian.tar.xz 102508 SHA256:2842d399dd56da7264f73b7756c34afffbf849f0c095b72703a3a5c0e0b1eec3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb7u1/
 
-- https://sources.debian.net/src/tzdata/2018c-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018c-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018c-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 

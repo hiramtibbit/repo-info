@@ -1212,20 +1212,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.19.1-5
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.dsc' libpsl_0.19.1-5.dsc 1632 SHA256:ead03b445abea7be26e9257adc7550a0269d25415388fb450cbd84b529625aa9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.debian.tar.xz' libpsl_0.19.1-5.debian.tar.xz 9772 SHA256:38e20b85f1c7b5f1cb09c487f1ed476a92740434e5bc0bb4df379e04cb604ad3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.19.1-5/
 
-- https://sources.debian.net/src/libpsl/0.19.1-5/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1`
 
