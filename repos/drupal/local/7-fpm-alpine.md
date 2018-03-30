@@ -1,9 +1,9 @@
-# `drupal:7.57-fpm-alpine`
+# `drupal:7.58-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e7f4dc2e2ac0d7505f7b3baf1ac426f3d8b82a8022c2ca68ccbc0eb20c053bd`
-- Created: `2018-03-06T03:14:32.983988552Z`
+- Image ID: `sha256:bb3e0307edc81275708f30f0e738e2e7f76263316959b4b7f8272bd0e8c9acef`
+- Created: `2018-03-29T03:16:35.12803871Z`
 - Virtual Size: ~ 86.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,5 +23,5 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.28.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=e738ffce2c30bc0e84be9446af86bef0a0607d321f1a3d04bbfe2402fb5f6de0`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=7.57`
-  - `DRUPAL_MD5=44dec95a0ef56c4786785f575ac59a60`
+  - `DRUPAL_VERSION=7.58`
+  - `DRUPAL_MD5=c59949bcfd0d68b4f272bc05a91d4dc6`
