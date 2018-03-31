@@ -1036,10 +1036,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180312-2/
-
 
 ### `dpkg` source package: `gcc-defaults=1.174`
 
@@ -2059,20 +2055,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.19.1-5
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.dsc' libpsl_0.19.1-5.dsc 1632 SHA256:ead03b445abea7be26e9257adc7550a0269d25415388fb450cbd84b529625aa9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1.orig.tar.gz' libpsl_0.19.1.orig.tar.gz 8578385 SHA256:e370181114b8ef9daf2bb6db49b1edb842335839c15a088e7ec0a35e04e9a227
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.19.1-5.debian.tar.xz' libpsl_0.19.1-5.debian.tar.xz 9772 SHA256:38e20b85f1c7b5f1cb09c487f1ed476a92740434e5bc0bb4df379e04cb604ad3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.19.1-5/
 
-- https://sources.debian.net/src/libpsl/0.19.1-5/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.19.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.19.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1`
 
@@ -3081,20 +3070,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.14-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14-1.dsc' pango1.0_1.40.14-1.dsc 3227 SHA256:196da02884c501954773967c932bc31a26c215ad7f5be745153506d57c0c00fc
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14.orig.tar.xz' pango1.0_1.40.14.orig.tar.xz 858388 SHA256:90af1beaa7bf9e4c52db29ec251ec4fd0a8f2cc185d521ad1f88d01b3a6a17e3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.14-1.debian.tar.xz' pango1.0_1.40.14-1.debian.tar.xz 27748 SHA256:5cf2778fbafeac5a12bfed90a0154ab002bffe338873f39cb391b91c773e40c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.40.14-1/
 
-- https://sources.debian.net/src/pango1.0/1.40.14-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.40.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.40.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-1`
 
@@ -3690,20 +3672,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.8+dfsg-3
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg-3.dsc' tcl8.6_8.6.8+dfsg-3.dsc 1998 SHA256:835f9313964feed7fdf53327f120f55a09cbaa4ec1340aa4c4ede3cda45ec51b
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg.orig.tar.gz' tcl8.6_8.6.8+dfsg.orig.tar.gz 5886744 SHA256:e67d9dda22565804ce91d3c34c46f39d972caa1366fb6d34fa6eb4cadf1cbb1e
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.8+dfsg-3.debian.tar.xz' tcl8.6_8.6.8+dfsg-3.debian.tar.xz 16008 SHA256:a1dbc70c609d317e63163b9bc713cea807f426d5f72e83517e4c25a7276ee44e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tcl8.6/8.6.8+dfsg-3/
 
-- https://sources.debian.net/src/tcl8.6/8.6.8+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20160520-1`
 
@@ -3765,20 +3740,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tk8.6=8.6.8-3
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8-3.dsc' tk8.6_8.6.8-3.dsc 2046 SHA256:1b12486c67bea9af682b6974d236d8799f11e44749911968c6a87d38141b4af3
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8.orig.tar.gz' tk8.6_8.6.8.orig.tar.gz 4319854 SHA256:49e7bca08dde95195a27f594f7c850b088be357a7c7096e44e1158c7a5fd7b33
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.8-3.debian.tar.xz' tk8.6_8.6.8-3.debian.tar.xz 11300 SHA256:dfc4d251902605c354a05334595d11420a37dd930b3cdb1f2361542cca56bc9b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tk8.6/8.6.8-3/
 
-- https://sources.debian.net/src/tk8.6/8.6.8-3/ (for browsing the source)
-- https://sources.debian.net/src/tk8.6/8.6.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tk8.6/8.6.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018c-1`
 
