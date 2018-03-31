@@ -680,21 +680,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.6-5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-5.dsc' cups_2.2.6-5.dsc 3467 SHA256:280fab9babf344fcab487875c5bc3bee7ae8cfabb84d079078000e7cce8bfb66
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz' cups_2.2.6.orig.tar.gz 10315433 SHA256:40385778c2b3bdf55030d1c999734e22774c79e3425d91339ce677825620169b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz.asc' cups_2.2.6.orig.tar.gz.asc 850 SHA256:1f6cccf87c20951f4181efab9d3767c4747cf5127744aa918156afb9cd0b8ca7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-5.debian.tar.xz' cups_2.2.6-5.debian.tar.xz 350276 SHA256:344bba53c0ae45cec8648fd10d775ab14b319ddeffcf0a3399760fcab89abd79
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.6-5/
 
-- https://sources.debian.net/src/cups/2.2.6-5/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.6-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.6-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.58.0-2`
 
@@ -1300,6 +1292,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.56.0-2/
+
 
 ### `dpkg` source package: `glibc=2.27-2`
 
@@ -1818,6 +1814,10 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/iproute2/4.15.0-2/
 
 
 ### `dpkg` source package: `iptables=1.6.2-1`
@@ -2444,6 +2444,10 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.27-6/
+
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
@@ -2659,20 +2663,13 @@ Licenses: (parsed from: `/usr/share/doc/libproxy1v5/copyright`)
 - `GPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libproxy=0.4.14-4
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14-4.dsc' libproxy_0.4.14-4.dsc 3394 SHA256:df325903c2d3afb9097c017d310699bda8f0f8234fdd506a78e8e74a697a84e9
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14.orig.tar.gz' libproxy_0.4.14.orig.tar.gz 92783 SHA256:6220a6cab837a8996116a0568324cadfd09a07ec16b930d2a330e16d5c2e1eb6
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14-4.debian.tar.xz' libproxy_0.4.14-4.debian.tar.xz 10484 SHA256:6cc5a3338ed93f9dd28411ddd6c3c540c9437a415f685f31c545f456b51921e5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libproxy/0.4.14-4/
 
-- https://sources.debian.net/src/libproxy/0.4.14-4/ (for browsing the source)
-- https://sources.debian.net/src/libproxy/0.4.14-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libproxy/0.4.14-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.19.1-5`
 
@@ -3832,6 +3829,10 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mesa/17.3.6-1/
+
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -4063,21 +4064,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2n-1
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1.dsc' openssl1.0_1.0.2n-1.dsc 2529 SHA256:5ea37de4f70ff3e187d946b9e0a7deaa5aa3b004c7c6bf94703583c228329ac0
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz' openssl1.0_1.0.2n.orig.tar.gz 5375802 SHA256:370babb75f278c39e0c50e8c4e7493bc0f18db6867478341a832a982fd15a8fe
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz.asc' openssl1.0_1.0.2n.orig.tar.gz.asc 455 SHA256:70ef16ae7776de3e69b28b47754d0a1fbed262e2a028c1fc866ad22201449c0a
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1.debian.tar.xz' openssl1.0_1.0.2n-1.debian.tar.xz 76640 SHA256:29545f35331746294d4606b299aa7635b5ace255737a8e27162538d1f5389cda
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl1.0/1.0.2n-1/
 
-- https://sources.debian.net/src/openssl1.0/1.0.2n-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl1.0/1.0.2n-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl1.0/1.0.2n-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0g-2`
 
@@ -4179,6 +4172,10 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.40.14-1/
 
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
@@ -4508,6 +4505,10 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
+
 
 ### `dpkg` source package: `systemd=238-2`
 
@@ -4626,6 +4627,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018c-1/
 
 
 ### `dpkg` source package: `ucf=3.0038`
