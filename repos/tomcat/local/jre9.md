@@ -2791,20 +2791,13 @@ Licenses: (parsed from: `/usr/share/doc/libproxy1v5/copyright`)
 - `GPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libproxy=0.4.14-4
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14-4.dsc' libproxy_0.4.14-4.dsc 3394 SHA256:df325903c2d3afb9097c017d310699bda8f0f8234fdd506a78e8e74a697a84e9
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14.orig.tar.gz' libproxy_0.4.14.orig.tar.gz 92783 SHA256:6220a6cab837a8996116a0568324cadfd09a07ec16b930d2a330e16d5c2e1eb6
-'http://deb.debian.org/debian/pool/main/libp/libproxy/libproxy_0.4.14-4.debian.tar.xz' libproxy_0.4.14-4.debian.tar.xz 10484 SHA256:6cc5a3338ed93f9dd28411ddd6c3c540c9437a415f685f31c545f456b51921e5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libproxy/0.4.14-4/
 
-- https://sources.debian.net/src/libproxy/0.4.14-4/ (for browsing the source)
-- https://sources.debian.net/src/libproxy/0.4.14-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libproxy/0.4.14-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.19.1-5`
 
