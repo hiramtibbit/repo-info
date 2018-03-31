@@ -1,16 +1,16 @@
-# `node:6.13.1`
+# `node:6.14.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:64f57f44922dffc58aa5f4cbe70769ab89d07bb4f58dff07a5d508a00ebb1f32`
-- Created: `2018-03-16T17:43:32.941515544Z`
-- Virtual Size: ~ 659.00 Mb  
+- Image ID: `sha256:0520659b023910f3bba737514b465105369310d29f7eed71d81ddf613afc51f1`
+- Created: `2018-03-29T04:35:06.719838934Z`
+- Virtual Size: ~ 658.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=6.13.1`
+  - `NODE_VERSION=6.14.0`
   - `YARN_VERSION=1.5.1`
 
 ## `dpkg` (`.deb`-based packages)

@@ -1,14 +1,14 @@
-# `node:8.10.0-alpine`
+# `node:8.11.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:adc4b0f5bc53aa7d554471c100a71a4d9fe53ee7457430f765b4a7dcf3e75c5c`
-- Created: `2018-03-16T17:41:42.678188305Z`
-- Virtual Size: ~ 68.12 Mb  
+- Image ID: `sha256:ae915a36073690e2728ab9d21400ba15bd0c50a11fb6f51cbd8210a0a78a0781`
+- Created: `2018-03-29T04:14:04.662804186Z`
+- Virtual Size: ~ 68.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.10.0`
+  - `NODE_VERSION=8.11.0`
   - `YARN_VERSION=1.5.1`
