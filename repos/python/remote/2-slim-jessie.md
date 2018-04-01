@@ -1,7 +1,7 @@
 ## `python:2-slim-jessie`
 
 ```console
-$ docker pull python@sha256:400fe9906da8f53380f5b9e450e759b7ffe25affa3dc69a5675e8e3be0c01e39
+$ docker pull python@sha256:9e24a026a55ca1d9a7284db30ed846b7190a3d7f557edf493b454bff362ed64c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -241,57 +241,57 @@ CMD ["python2"]
 ### `python:2-slim-jessie` - linux; 386
 
 ```console
-$ docker pull python@sha256:3211048ea34e96092a0599f541d9604061e10e61e8f0e1d71d371ae9d8ac57d7
+$ docker pull python@sha256:327b19471409ede852aecd9f90e101b98607eed0774c952ebdfb21b837a378ef
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.7 MB (51671296 bytes)**  
+-	Total Size: **51.2 MB (51229512 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aba12ec217290444cd390b59ec630b20d0bbb8cb48907fcddb8862cbc002429b`
+-	Image ID: `sha256:73fdec9a5f21a23de1f28d80013ed4740f1fbf7494e78d385b386d29e08948c9`
 -	Default Command: `["python2"]`
 
 ```dockerfile
-# Thu, 15 Feb 2018 15:10:21 GMT
-ADD file:d01127592c252b8d04a3bc643ddd1053a3e9cd036c81aa31b53bf3f51b542f6a in / 
-# Thu, 15 Feb 2018 15:10:21 GMT
+# Tue, 27 Mar 2018 14:24:52 GMT
+ADD file:4e79b8dd98596d0354ef30e136278a257e021a36d6d6271ec4c1dafaf07889ae in / 
+# Tue, 27 Mar 2018 14:24:53 GMT
 CMD ["bash"]
-# Mon, 19 Feb 2018 18:58:50 GMT
+# Sat, 31 Mar 2018 15:19:29 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 19 Feb 2018 18:58:50 GMT
+# Sat, 31 Mar 2018 15:19:29 GMT
 ENV LANG=C.UTF-8
-# Mon, 19 Feb 2018 21:25:22 GMT
+# Sat, 31 Mar 2018 17:34:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libreadline6 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Feb 2018 21:33:25 GMT
+# Sat, 31 Mar 2018 17:34:25 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 19 Feb 2018 21:33:25 GMT
+# Sat, 31 Mar 2018 17:34:25 GMT
 ENV PYTHON_VERSION=2.7.14
-# Mon, 19 Feb 2018 21:36:16 GMT
+# Sat, 31 Mar 2018 17:37:08 GMT
 RUN set -ex 	&& buildDeps=" 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 		$(command -v gpg > /dev/null || echo 'gnupg dirmngr') 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Tue, 27 Mar 2018 04:21:54 GMT
+# Sat, 31 Mar 2018 17:37:09 GMT
 ENV PYTHON_PIP_VERSION=9.0.3
-# Tue, 27 Mar 2018 04:22:41 GMT
+# Sat, 31 Mar 2018 17:37:50 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 27 Mar 2018 04:22:42 GMT
+# Sat, 31 Mar 2018 17:37:51 GMT
 CMD ["python2"]
 ```
 
 -	Layers:
-	-	`sha256:2c3a67c6c38b2cc7ef92c7d27dfe86398e5a7297b5b0e03d825a82312b60bf9a`  
-		Last Modified: Thu, 15 Feb 2018 00:53:43 GMT  
-		Size: 30.3 MB (30273198 bytes)  
+	-	`sha256:ec7b1998b022b3eb218010907097139cebc6fb8b1aaab342d847d1f283ef3967`  
+		Last Modified: Thu, 15 Mar 2018 01:00:27 GMT  
+		Size: 30.3 MB (30273196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb4979f2985df8e335dc2fb99edc99d50256f9efb75f2544e7fe3688b85ab7a`  
-		Last Modified: Tue, 20 Feb 2018 01:32:35 GMT  
-		Size: 4.8 MB (4809745 bytes)  
+	-	`sha256:5b3782d41a2caf00f0e68da84d4b6bf4ce5e8aa1e7fc1dd8a251c77ecd0a0132`  
+		Last Modified: Sun, 01 Apr 2018 00:35:41 GMT  
+		Size: 4.8 MB (4810035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4286023773a07f03f84741fe730e4b98f7421c9eb236cc7fb73271b0190e172`  
-		Last Modified: Tue, 20 Feb 2018 01:32:39 GMT  
-		Size: 14.4 MB (14398237 bytes)  
+	-	`sha256:037e8797f5d7827ca990f76f6f2dd9425a78850eba6767675859866ebfd53bdf`  
+		Last Modified: Sun, 01 Apr 2018 00:35:45 GMT  
+		Size: 14.0 MB (13956656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30502813f48209c20efa4fbf2c58a7cf2c2f84b427a4d3841d5da69c4f4addcb`  
-		Last Modified: Tue, 27 Mar 2018 07:03:06 GMT  
-		Size: 2.2 MB (2190116 bytes)  
+	-	`sha256:42817f021989547385508e1c6d50673b429deca03ead62ea74a94a4efdb8bbb5`  
+		Last Modified: Sun, 01 Apr 2018 00:35:41 GMT  
+		Size: 2.2 MB (2189625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-slim-jessie` - linux; ppc64le
