@@ -1042,14 +1042,9 @@ Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lshw=02.17-1.1ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.4.dsc' lshw_02.17-1.1ubuntu3.4.dsc 1781 SHA256:9f0771e08c120b9a55daf8dddc4bb9c5eb882119c7f76310bb339af2b21e5b31
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17.orig.tar.gz' lshw_02.17.orig.tar.gz 2005737 SHA256:eb9cc053fa0f1e78685cb695596e73931bfb55d2377e3bc3b8b94aff4c5a489c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.17-1.1ubuntu3.4.diff.gz' lshw_02.17-1.1ubuntu3.4.diff.gz 25500 SHA256:b9c41b879caa55021f7be398dee4ee87dd0fc536ba88da40b175e61c46000313
-```
 
 ### `dpkg` source package: `lsof=4.89+dfsg-0.1`
 
