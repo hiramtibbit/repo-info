@@ -9,10 +9,10 @@
 -	[`chronograf:1.3.10-alpine`](#chronograf1310-alpine)
 -	[`chronograf:1.3-alpine`](#chronograf13-alpine)
 -	[`chronograf:1.4`](#chronograf14)
--	[`chronograf:1.4.2`](#chronograf142)
--	[`chronograf:1.4.2.3`](#chronograf1423)
--	[`chronograf:1.4.2.3-alpine`](#chronograf1423-alpine)
--	[`chronograf:1.4.2-alpine`](#chronograf142-alpine)
+-	[`chronograf:1.4.3`](#chronograf143)
+-	[`chronograf:1.4.3.0`](#chronograf1430)
+-	[`chronograf:1.4.3.0-alpine`](#chronograf1430-alpine)
+-	[`chronograf:1.4.3-alpine`](#chronograf143-alpine)
 -	[`chronograf:1.4-alpine`](#chronograf14-alpine)
 -	[`chronograf:alpine`](#chronografalpine)
 -	[`chronograf:latest`](#chronograflatest)
@@ -1118,7 +1118,7 @@ CMD ["chronograf"]
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `chronograf:1.4.2`
+## `chronograf:1.4.3`
 
 ```console
 $ docker pull chronograf@sha256:add796bbb278a5cbcaebc6cc23b856b87eba85d323e3a6abff95e926ab32cec5
@@ -1130,7 +1130,7 @@ $ docker pull chronograf@sha256:add796bbb278a5cbcaebc6cc23b856b87eba85d323e3a6ab
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `chronograf:1.4.2` - linux; amd64
+### `chronograf:1.4.3` - linux; amd64
 
 ```console
 $ docker pull chronograf@sha256:6216bd41c1cc00ea8329d024de24984696f2fe6efeaa3ce5b80c3b80edcc478e
@@ -1197,7 +1197,7 @@ CMD ["chronograf"]
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `chronograf:1.4.2` - linux; arm variant v7
+### `chronograf:1.4.3` - linux; arm variant v7
 
 ```console
 $ docker pull chronograf@sha256:d6d9b0f088ea692007d6e4e39b92a0bdc2a79c183dbbf71cb9863470c047ba40
@@ -1264,7 +1264,7 @@ CMD ["chronograf"]
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `chronograf:1.4.2` - linux; arm64 variant v8
+### `chronograf:1.4.3` - linux; arm64 variant v8
 
 ```console
 $ docker pull chronograf@sha256:556e47daf8e833fd4bbfa808bb54c487ef2b694c1705a37a33d0457127ed8fdc
@@ -1331,7 +1331,7 @@ CMD ["chronograf"]
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `chronograf:1.4.2.3`
+## `chronograf:1.4.3.0`
 
 ```console
 $ docker pull chronograf@sha256:add796bbb278a5cbcaebc6cc23b856b87eba85d323e3a6abff95e926ab32cec5
@@ -1343,7 +1343,7 @@ $ docker pull chronograf@sha256:add796bbb278a5cbcaebc6cc23b856b87eba85d323e3a6ab
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `chronograf:1.4.2.3` - linux; amd64
+### `chronograf:1.4.3.0` - linux; amd64
 
 ```console
 $ docker pull chronograf@sha256:6216bd41c1cc00ea8329d024de24984696f2fe6efeaa3ce5b80c3b80edcc478e
@@ -1410,7 +1410,7 @@ CMD ["chronograf"]
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `chronograf:1.4.2.3` - linux; arm variant v7
+### `chronograf:1.4.3.0` - linux; arm variant v7
 
 ```console
 $ docker pull chronograf@sha256:d6d9b0f088ea692007d6e4e39b92a0bdc2a79c183dbbf71cb9863470c047ba40
@@ -1477,7 +1477,7 @@ CMD ["chronograf"]
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `chronograf:1.4.2.3` - linux; arm64 variant v8
+### `chronograf:1.4.3.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull chronograf@sha256:556e47daf8e833fd4bbfa808bb54c487ef2b694c1705a37a33d0457127ed8fdc
@@ -1544,7 +1544,7 @@ CMD ["chronograf"]
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `chronograf:1.4.2.3-alpine`
+## `chronograf:1.4.3.0-alpine`
 
 ```console
 $ docker pull chronograf@sha256:51812c47d09d76a1c78b179737f4feb113831947685921f876a4bde5b3191f7d
@@ -1554,7 +1554,7 @@ $ docker pull chronograf@sha256:51812c47d09d76a1c78b179737f4feb113831947685921f8
 -	Platforms:
 	-	linux; amd64
 
-### `chronograf:1.4.2.3-alpine` - linux; amd64
+### `chronograf:1.4.3.0-alpine` - linux; amd64
 
 ```console
 $ docker pull chronograf@sha256:37facbdd59d0f1f2b167efa2fbefbe61f1ea1e4b66011d6c16dae51826c46b14
@@ -1627,7 +1627,7 @@ CMD ["chronograf"]
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `chronograf:1.4.2-alpine`
+## `chronograf:1.4.3-alpine`
 
 ```console
 $ docker pull chronograf@sha256:51812c47d09d76a1c78b179737f4feb113831947685921f876a4bde5b3191f7d
@@ -1637,7 +1637,7 @@ $ docker pull chronograf@sha256:51812c47d09d76a1c78b179737f4feb113831947685921f8
 -	Platforms:
 	-	linux; amd64
 
-### `chronograf:1.4.2-alpine` - linux; amd64
+### `chronograf:1.4.3-alpine` - linux; amd64
 
 ```console
 $ docker pull chronograf@sha256:37facbdd59d0f1f2b167efa2fbefbe61f1ea1e4b66011d6c16dae51826c46b14

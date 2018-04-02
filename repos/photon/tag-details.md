@@ -4,9 +4,11 @@
 
 -	[`photon:1.0`](#photon10)
 -	[`photon:1.0-20180226`](#photon10-20180226)
+-	[`photon:1.0-20180302`](#photon10-20180302)
 -	[`photon:1.0GA`](#photon10ga)
 -	[`photon:2.0`](#photon20)
 -	[`photon:2.0-20180227`](#photon20-20180227)
+-	[`photon:2.0-20180302`](#photon20-20180302)
 -	[`photon:latest`](#photonlatest)
 
 ## `photon:1.0`
@@ -84,6 +86,10 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 26 Mar 2018 19:26:42 GMT  
 		Size: 49.9 MB (49901790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `photon:1.0-20180302`
+
+**does not exist** (yet?)
 
 ## `photon:1.0GA`
 
@@ -198,6 +204,10 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 26 Mar 2018 19:25:27 GMT  
 		Size: 14.1 MB (14057688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `photon:2.0-20180302`
+
+**does not exist** (yet?)
 
 ## `photon:latest`
 
