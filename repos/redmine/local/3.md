@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f557ec12662cb1b2ccbc12031ac5accac7b3562564dd1ac662c26d8a70315849`
-- Created: `2018-03-16T00:52:38.180536342Z`
-- Virtual Size: ~ 662.15 Mb  
+- Image ID: `sha256:58b5c21381816e92864a3259fe4ff20a66f535ee5aab6e62c653f49890b44d8d`
+- Created: `2018-03-29T21:28:25.024819959Z`
+- Virtual Size: ~ 662.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.4`
-  - `RUBY_VERSION=2.4.3`
-  - `RUBY_DOWNLOAD_SHA256=23677d40bf3b7621ba64593c978df40b1e026d8653c74a0599f0ead78ed92b51`
+  - `RUBY_VERSION=2.4.4`
+  - `RUBY_DOWNLOAD_SHA256=1d0034071d675193ca769f64c91827e5f54cb3a7962316a41d5217c7bc6949f0`
   - `RUBYGEMS_VERSION=2.7.6`
   - `BUNDLER_VERSION=1.16.1`
   - `GEM_HOME=/usr/local/bundle`
@@ -1421,11 +1421,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=52.1-8+deb8u6`
+### `dpkg` source package: `icu=52.1-8+deb8u7`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u6`
+- `libicu52:amd64=52.1-8+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1434,17 +1434,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u6.dsc' icu_52.1-8+deb8u6.dsc 2015 SHA256:1c77ead0935b29bb80b8f2756faf9dd7262b20aac632aef1eedd3fabf56fa6f6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u6.debian.tar.xz' icu_52.1-8+deb8u6.debian.tar.xz 38108 SHA256:fd2df1a8d55fb7e093117e5dc761bbf01521f25a8076490d05fcebd3c005e77f
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u7
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u7.dsc' icu_52.1-8+deb8u7.dsc 2015 SHA256:6962e61f1a0d2be8aba69ff118bfca747f92953fae78d37b15faa670c3ac0619
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u7.debian.tar.xz' icu_52.1-8+deb8u7.debian.tar.xz 39320 SHA256:55e88af0c29a614f150f0b39579f1f946560dd75bc2b96ded28ebd96449f2692
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/icu/52.1-8+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/52.1-8+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/52.1-8+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/icu/52.1-8+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/52.1-8+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=1.0.1-6.1`
 
@@ -3847,20 +3847,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
