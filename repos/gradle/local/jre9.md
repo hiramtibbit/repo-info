@@ -4792,20 +4792,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-3.dsc' systemd_238-3.dsc 4846 SHA256:bce6925b0f8e34625df4fc295bb851e6f8fe7d31da4fd598640efe69a9d93066
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-3.debian.tar.xz' systemd_238-3.debian.tar.xz 137192 SHA256:1512abbb4b9b72a90a609bbc8535694d84e1b4e575e5609b6a39edf4e9eb2252
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-3/
 
-- https://sources.debian.net/src/systemd/238-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
