@@ -1299,10 +1299,6 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gdbm/1.14.1-5/
-
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-2`
 
@@ -1390,10 +1386,6 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/git/1:2.16.2-1/
 
 
 ### `dpkg` source package: `glib-networking=2.56.0-1`
@@ -1956,10 +1948,6 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iproute2/4.15.0-2/
 
 
 ### `dpkg` source package: `iptables=1.6.2-1`
@@ -4422,21 +4410,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.6p1-4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1-4.dsc' openssh_7.6p1-4.dsc 3105 SHA256:3b8a02d664fab7b7d757adf4d5885697e8723a4fc8b71072787af50384d442b7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz' openssh_7.6p1.orig.tar.gz 1489788 SHA256:a323caeeddfe145baaa0db16e98d784b1fbc7dd436a6bf1f479dfd5cd1d21723
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz.asc' openssh_7.6p1.orig.tar.gz.asc 683 SHA256:14e5097d68c73d42afe6314a510e7056b1748ac1d1e19518057b270d19656ad6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1-4.debian.tar.xz' openssh_7.6p1-4.debian.tar.xz 159732 SHA256:c54489a7eec51a79581ad69eabfe6f9f0d8ddbe08d841157509e38631f8c0e0d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.6p1-4/
 
-- https://sources.debian.net/src/openssh/1:7.6p1-4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.6p1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.6p1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2n-1`
 
@@ -4848,20 +4828,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-7
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-7.dsc' python2.7_2.7.14-7.dsc 3357 SHA256:acdc5e0fcae4bb974f7524c56227c7e6ad2096b852719e66cbb67328bd644448
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-7.diff.gz' python2.7_2.7.14-7.diff.gz 449800 SHA256:91b8e665ca2c4b9a9bd4bca4fbb8082b1f2bdabe169da352c431fb3347f24a50
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.14-7/
 
-- https://sources.debian.net/src/python2.7/2.7.14-7/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.14-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.14-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -5132,20 +5105,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-3.dsc' systemd_238-3.dsc 4846 SHA256:bce6925b0f8e34625df4fc295bb851e6f8fe7d31da4fd598640efe69a9d93066
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-3.debian.tar.xz' systemd_238-3.debian.tar.xz 137192 SHA256:1512abbb4b9b72a90a609bbc8535694d84e1b4e575e5609b6a39edf4e9eb2252
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-3/
 
-- https://sources.debian.net/src/systemd/238-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 

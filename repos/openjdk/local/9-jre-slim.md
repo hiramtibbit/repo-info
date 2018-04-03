@@ -1272,10 +1272,6 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgpg-error/1.27-6/
-
 
 ### `dpkg` source package: `libidn2=2.0.4-1.1`
 
@@ -2249,10 +2245,6 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/238-2/
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
