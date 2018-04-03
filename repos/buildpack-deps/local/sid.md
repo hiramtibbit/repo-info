@@ -380,20 +380,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-7
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-7.dsc' binutils_2.30-7.dsc 10346 SHA256:be6b12d81c725f6b7ea7d9f59cb41ba93bad94d11a711ff210120b8399d7acd5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20144632 SHA256:f68a56df7d3cc66d5e6e24ad733a1f3d6188caeba570e4a1c515cfd2de2e11d5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-7.debian.tar.xz' binutils_2.30-7.debian.tar.xz 299820 SHA256:5a12abf6612720773f198ca7bab59ee183b55093252ff39d78c2530f77cdd3c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.30-7/
 
-- https://sources.debian.net/src/binutils/2.30-7/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.30-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.30-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -1098,20 +1091,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-11
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-11.dsc' gcc-7_7.3.0-11.dsc 25559 SHA256:1abf4e7b26ef12b61ad62daead380826a6a0592194bb7d2a1fa8d757b819f5c8
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-11.diff.gz' gcc-7_7.3.0-11.diff.gz 823270 SHA256:601c4defce76417745dc472d0421d19c177e3d8f414db3dbf23d678f679f8618
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.3.0-11/
 
-- https://sources.debian.net/src/gcc-7/7.3.0-11/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8-20180312-2`
 
@@ -3848,21 +3834,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.6p1-4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1-4.dsc' openssh_7.6p1-4.dsc 3105 SHA256:3b8a02d664fab7b7d757adf4d5885697e8723a4fc8b71072787af50384d442b7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz' openssh_7.6p1.orig.tar.gz 1489788 SHA256:a323caeeddfe145baaa0db16e98d784b1fbc7dd436a6bf1f479dfd5cd1d21723
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz.asc' openssh_7.6p1.orig.tar.gz.asc 683 SHA256:14e5097d68c73d42afe6314a510e7056b1748ac1d1e19518057b270d19656ad6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.6p1-4.debian.tar.xz' openssh_7.6p1-4.debian.tar.xz 159732 SHA256:c54489a7eec51a79581ad69eabfe6f9f0d8ddbe08d841157509e38631f8c0e0d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.6p1-4/
 
-- https://sources.debian.net/src/openssh/1:7.6p1-4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.6p1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.6p1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2n-1`
 
@@ -4322,20 +4300,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-7
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-7.dsc' python2.7_2.7.14-7.dsc 3357 SHA256:acdc5e0fcae4bb974f7524c56227c7e6ad2096b852719e66cbb67328bd644448
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-7.diff.gz' python2.7_2.7.14-7.diff.gz 449800 SHA256:91b8e665ca2c4b9a9bd4bca4fbb8082b1f2bdabe169da352c431fb3347f24a50
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.14-7/
 
-- https://sources.debian.net/src/python2.7/2.7.14-7/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.14-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.14-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.6.4-1`
 
