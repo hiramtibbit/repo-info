@@ -1,7 +1,7 @@
 ## `nats-streaming:windowsservercore`
 
 ```console
-$ docker pull nats-streaming@sha256:db1dccf534549c796814765189ee47b48189951e0064f0731660d874c39d3bd0
+$ docker pull nats-streaming@sha256:010b7dc45e1423854827053fdb6837b9beaf5e75f341bd0aef289fffedc774cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull nats-streaming@sha256:db1dccf534549c796814765189ee47b48189951e0064
 ### `nats-streaming:windowsservercore` - windows version 10.0.14393.2125; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:e56e74e263daefe535e4724ea9a054dd6b4c0f6c574fdb3b506ced2b2a76739a
+$ docker pull nats-streaming@sha256:ea26d3f0f1de22518a78058bdae386f04e1bc09b44fe9b10829c5ffddbe48e85
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5393038238 bytes)**  
+-	Total Size: **5.4 GB (5393055273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace5711f363bf145d4600bf0cadf5d2390cd875ee23a1bb00cda48751048f008`
+-	Image ID: `sha256:cc0ec5accf32023aa8d4e26bc4b03b2a6b6775c6769b964f71d170b15e357768`
 -	Default Command: `["nats-streaming-server","-m","8222"]`
 
 ```dockerfile
@@ -30,11 +30,11 @@ RUN Install update 10.0.14393.2125
 RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
 # Wed, 14 Mar 2018 22:22:01 GMT
 RUN cmd /S /C #(nop) WORKDIR C:\nats-streaming-server
-# Fri, 16 Mar 2018 22:22:11 GMT
-RUN cmd /S /C #(nop) COPY file:89353859e56ad4eec04e662f40cbb2c64630a73e0df63e4deb487a48c0fc0d44 in nats-streaming-server.exe 
-# Fri, 16 Mar 2018 22:22:12 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222/tcp 8222/tcp
-# Fri, 16 Mar 2018 22:22:13 GMT
+# Tue, 03 Apr 2018 19:47:36 GMT
+RUN cmd /S /C #(nop) COPY file:390610d4df3f20308cd6782a8e771d02206f78919962bc4e7c814c3ffcab202f in nats-streaming-server.exe 
+# Tue, 03 Apr 2018 19:47:38 GMT
+RUN cmd /S /C #(nop)  EXPOSE 4222/tcp 5222/tcp 8222/tcp
+# Tue, 03 Apr 2018 19:47:39 GMT
 RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ```
 
@@ -55,15 +55,15 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 		Last Modified: Wed, 14 Mar 2018 22:22:28 GMT  
 		Size: 1.4 KB (1355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43103104d0aab69c4fc22ef36ec35a2da2958ef673cd80d3f5d8996ddf83f6e1`  
-		Last Modified: Fri, 16 Mar 2018 22:22:37 GMT  
-		Size: 3.9 MB (3852445 bytes)  
+	-	`sha256:09845a90159264219889bb31241ff62ae0c5095186c449a47482357715f10536`  
+		Last Modified: Tue, 03 Apr 2018 19:48:17 GMT  
+		Size: 3.9 MB (3869503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feb0d7e32c6968bc1b18f4d2796a81456e6c2e5a72095988f4df09248a903d93`  
-		Last Modified: Fri, 16 Mar 2018 22:22:35 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:f6a0721c2d4f18e1c530a049e8224ac2ef0c5f4aeca25e861a6185f0fd46b2c6`  
+		Last Modified: Tue, 03 Apr 2018 19:48:14 GMT  
+		Size: 1.2 KB (1183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5885b750618a337cecb1bd4c7025c0f31024738f2a51f4032c8e92cb6cfa016`  
-		Last Modified: Fri, 16 Mar 2018 22:22:36 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:d91f9d34fa8c19191f360c0975d773712a6e66293fde24aed36cf93b6165ce89`  
+		Last Modified: Tue, 03 Apr 2018 19:48:14 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
