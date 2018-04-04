@@ -1,16 +1,16 @@
-# `node:9.10.0`
+# `node:9.10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:814364d36f69f25c255a244c37efbcd225dbf338f2356c4e43a4f13805875823`
-- Created: `2018-03-29T03:21:10.311171632Z`
+- Image ID: `sha256:42e85254dd8f17a23c85de881f6d76dbe71f25ee80b25ca064b4fc13b8a9333c`
+- Created: `2018-04-02T22:54:46.601491196Z`
 - Virtual Size: ~ 672.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.10.0`
+  - `NODE_VERSION=9.10.1`
   - `YARN_VERSION=1.5.1`
 
 ## `dpkg` (`.deb`-based packages)
