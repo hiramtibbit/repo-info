@@ -1,16 +1,16 @@
-# `golang:1.10.0-stretch`
+# `golang:1.10.1-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d632bbfe57672c7fd240065c134fc396485a3acf04ec8baacfe1416e0c519d46`
-- Created: `2018-03-15T04:57:34.904587353Z`
-- Virtual Size: ~ 779.48 Mb  
+- Image ID: `sha256:6fe15d4cbc64ea9bf5ff4f9c56bb70a4fca285063e0005453915e989b96d937c`
+- Created: `2018-03-30T21:37:09.915364722Z`
+- Virtual Size: ~ 779.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.10`
+  - `GOLANG_VERSION=1.10.1`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
