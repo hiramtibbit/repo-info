@@ -1,10 +1,10 @@
-# `groovy:2.4.14-jre10`
+# `groovy:2.4.15-jre10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:da4ea68f84a647d181b68615c71668341bde63cef6d942ae8ab0a035cdeef412`
-- Created: `2018-03-20T01:46:32.95414469Z`
-- Virtual Size: ~ 699.52 Mb  
+- Image ID: `sha256:d22c2f79517f8288c19692bf5351be1db8ffe43f060a9e14b1257fa73aaf2606`
+- Created: `2018-04-02T17:45:12.641425413Z`
+- Virtual Size: ~ 699.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10-ea+46`
   - `JAVA_DEBIAN_VERSION=10~46-2`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.14`
+  - `GROOVY_VERSION=2.4.15`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -573,6 +573,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cdebconf/0.241/
+
 
 ### `dpkg` source package: `colord=1.3.3-2`
 
@@ -678,10 +682,6 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cups/2.2.6-5/
 
 
 ### `dpkg` source package: `curl=7.58.0-2`
@@ -999,6 +999,10 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/
+
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -1185,10 +1189,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180310-1/
-
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-2`
 
@@ -1287,6 +1287,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.56.0-2/
 
 
 ### `dpkg` source package: `glibc=2.27-2`
@@ -2432,10 +2436,6 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgpg-error/1.27-6/
-
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
@@ -2668,10 +2668,6 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libpsl/0.19.1-5/
 
 
 ### `dpkg` source package: `librest=0.8.0-2`
@@ -4156,6 +4152,10 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.40.14-1/
+
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -4198,10 +4198,6 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/pcsc-lite/1.8.23-1/
 
 
 ### `dpkg` source package: `perl=5.26.1-5`
@@ -4484,6 +4480,10 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
+
 
 ### `dpkg` source package: `systemd=238-2`
 
@@ -4598,6 +4598,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018c-1/
 
 
 ### `dpkg` source package: `ucf=3.0038`
