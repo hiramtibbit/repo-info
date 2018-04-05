@@ -276,14 +276,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.31-4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.1.dsc' avahi_0.6.31-4ubuntu1.1.dsc 4431 SHA256:c17f79f97416f57b3b728497900ecb04f993136c8a405ebea6caaa8d910cb2ee
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31.orig.tar.gz' avahi_0.6.31.orig.tar.gz 1268686 SHA256:8372719b24e2dd75de6f59bb1315e600db4fd092805bd1201ed0cb651a2dab48
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.1.debian.tar.xz' avahi_0.6.31-4ubuntu1.1.debian.tar.xz 34848 SHA256:9cab5139830788e0e13b486796925c6123d367e912e2352884e182f9ca66a695
-```
 
 ### `dpkg` source package: `base-files=7.2ubuntu5.5`
 
@@ -3663,14 +3658,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw9/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.15.4-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4-1ubuntu0.1.dsc' libraw_0.15.4-1ubuntu0.1.dsc 2116 SHA256:5fd9a48972fc1acaeb0cb6b4c1b42dc0b7cbc16c7eb3b50c594aaca174e709f1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4.orig.tar.gz' libraw_0.15.4.orig.tar.gz 1427757 SHA256:b3fcfee33bc34ae5869a9741880e28a62f029f196cb1d1a007ab156f4a110f79
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4-1ubuntu0.1.debian.tar.gz' libraw_0.15.4-1ubuntu0.1.debian.tar.gz 12270 SHA256:a03445c6589a2ea0a52ed7bba4d01dd933f0325bb16808b1244512cfe8e051d3
-```
 
 ### `dpkg` source package: `libsdl1.2=1.2.15-8ubuntu1.1`
 

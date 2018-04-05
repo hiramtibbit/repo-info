@@ -2905,14 +2905,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 - `LibRaw`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.17.1-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.1.dsc' libraw_0.17.1-1ubuntu0.1.dsc 2278 SHA256:64c2f000dc6b963dba085135313fa2141bcee3f58d92c7c32db4157e1bfe46a6
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1.orig.tar.gz' libraw_0.17.1.orig.tar.gz 689407 SHA256:dd07861ea3b9739c61c50d5e8a5dfedd738f4765962104c120dd8ea2dc2e3491
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.1.debian.tar.xz' libraw_0.17.1-1ubuntu0.1.debian.tar.xz 28808 SHA256:09ac213c86227e44e6c0b67a5f7b017bf3e0b787cce8cdb57f0c63f61719bbbc
-```
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
@@ -3737,14 +3732,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-116.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-116.140.dsc' linux_4.4.0-116.140.dsc 9712 SHA256:95742ef1c2dd7b556167293b3c2a13ea8bdca2acb409ca0e4272c2138a7a4e02
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-116.140.diff.gz' linux_4.4.0-116.140.diff.gz 13915113 SHA256:423d3c0e3706e28a8e5b71ec7dfba4430a455dbf204d519e001e2a594ba70c9a
-```
 
 ### `dpkg` source package: `llvm-toolchain-5.0=1:5.0-3~16.04.1`
 
