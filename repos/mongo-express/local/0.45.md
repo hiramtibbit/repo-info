@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a8a7125325e3b85b6b988079eef310e7cc7106de2a3fb243e772e2e1987f70a`
-- Created: `2018-03-29T07:13:56.997714526Z`
-- Virtual Size: ~ 253.93 Mb  
+- Image ID: `sha256:8d73efbc058df4fe234cfa21243fcaf9d634ffd11db3ea70c06233973c2abb42`
+- Created: `2018-04-03T04:33:25.294060303Z`
+- Virtual Size: ~ 253.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.11.0`
+  - `NODE_VERSION=8.11.1`
   - `YARN_VERSION=1.5.1`
   - `TINI_VERSION=0.9.0`
   - `ME_CONFIG_EDITORTHEME=default`
