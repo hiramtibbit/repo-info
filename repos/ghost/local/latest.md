@@ -1,24 +1,24 @@
-# `ghost:1.22.0`
+# `ghost:1.22.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2fd6cb13169a81337115fb9b96132d8d9a25ecf36ce8e2b8c9d093c962df32c9`
-- Created: `2018-03-30T18:53:33.465613502Z`
-- Virtual Size: ~ 560.84 Mb  
+- Image ID: `sha256:7f9408f4d58847aa407cfe00cad1f9a0ac190f05cc9e5485cb199f51228d2175`
+- Created: `2018-04-04T17:52:35.324782633Z`
+- Virtual Size: ~ 560.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/ghost/current/node_modules/knex-migrator/bin`
-  - `NODE_VERSION=6.14.0`
+  - `NODE_VERSION=6.14.1`
   - `YARN_VERSION=1.5.1`
   - `GOSU_VERSION=1.10`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.6.0`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=1.22.0`
+  - `GHOST_VERSION=1.22.1`
 
 ## `dpkg` (`.deb`-based packages)
 
