@@ -1,10 +1,10 @@
-# `mariadb:10.2.13`
+# `mariadb:10.2.14`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea5e726062ce0de1dc30139ee7d8c72583ea93d721a1b56d0fffcb6dfcf087b0`
-- Created: `2018-03-14T05:26:05.22033684Z`
-- Virtual Size: ~ 395.84 Mb  
+- Image ID: `sha256:ca06ca3d8fad202d349385313610fa5c089c6471f060c68ca34075de069ab1dc`
+- Created: `2018-03-30T20:20:47.61909437Z`
+- Virtual Size: ~ 395.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.13+maria~jessie`
+  - `MARIADB_VERSION=10.2.14+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -349,14 +349,41 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `curl=7.38.0-4+deb8u10`
+
+Binary Packages:
+
+- `libcurl3:amd64=7.38.0-4+deb8u10`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u10
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.dsc' curl_7.38.0-4+deb8u10.dsc 2673 SHA256:8c63e3d24209e7eee792a8bc80a540dcfadf881452e43e8c500dcac192c3a73c
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u10.debian.tar.xz' curl_7.38.0-4+deb8u10.debian.tar.xz 47208 SHA256:917f9e86ed29504a962e5b982a455cfbd272a5e38a6ee050dfa343a2790fe746
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u10/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `curl=7.38.0-4+deb8u9`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u9`
 - `libcurl3-gnutls:amd64=7.38.0-4+deb8u9`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -365,10 +392,6 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
@@ -2580,19 +2603,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lvm2/2.02.111-2.2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.2=10.2.13+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.14+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.13+maria~jessie`
-- `libmysqlclient18=10.2.13+maria~jessie`
-- `mariadb-client-10.2=10.2.13+maria~jessie`
-- `mariadb-client-core-10.2=10.2.13+maria~jessie`
-- `mariadb-common=10.2.13+maria~jessie`
-- `mariadb-server=10.2.13+maria~jessie`
-- `mariadb-server-10.2=10.2.13+maria~jessie`
-- `mariadb-server-core-10.2=10.2.13+maria~jessie`
-- `mysql-common=10.2.13+maria~jessie`
+- `libmariadb3=10.2.14+maria~jessie`
+- `libmysqlclient18=10.2.14+maria~jessie`
+- `mariadb-client-10.2=10.2.14+maria~jessie`
+- `mariadb-client-core-10.2=10.2.14+maria~jessie`
+- `mariadb-common=10.2.14+maria~jessie`
+- `mariadb-server=10.2.14+maria~jessie`
+- `mariadb-server-10.2=10.2.14+maria~jessie`
+- `mariadb-server-core-10.2=10.2.14+maria~jessie`
+- `mysql-common=10.2.14+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2898,11 +2921,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `percona-xtrabackup-24=2.4.9-1.jessie`
+### `dpkg` source package: `percona-xtrabackup-24=2.4.10-1.jessie`
 
 Binary Packages:
 
-- `percona-xtrabackup-24=2.4.9-1.jessie`
+- `percona-xtrabackup-24=2.4.10-1.jessie`
 
 Licenses: (parsed from: `/usr/share/doc/percona-xtrabackup-24/copyright`)
 
@@ -3492,20 +3515,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018c-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.dsc' tzdata_2018c-0+deb8u1.dsc 1985 SHA256:a100e26abac274b2438b7685a0afdc0efa60f72c092e05012b7058925c1707da
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c.orig.tar.gz' tzdata_2018c.orig.tar.gz 341074 SHA256:2825c3e4b7ef520f24d393bcc02942f9762ffd3e7fc9b23850789ed8f22933f6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018c-0+deb8u1.debian.tar.xz' tzdata_2018c-0+deb8u1.debian.tar.xz 103012 SHA256:10f7d9917005ee398bd5ad789ad79fe67c3c1eb20e0b4115db3699e5afd0c534
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018c-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
