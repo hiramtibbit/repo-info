@@ -1,13 +1,13 @@
-# `nginx:1.13.10-alpine`
+# `nginx:1.13.11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:91ce6206f9d84a885c2dbe801caab429d2c7ddf43658513b4fbb3d8e82995c0f`
-- Created: `2018-03-22T00:42:01.204501201Z`
+- Image ID: `sha256:2dea9e73d89e50d0de1ccc0852dfeee8d74a1e652038e8b5db01e3e0ee7e19b0`
+- Created: `2018-04-03T18:26:59.652383199Z`
 - Virtual Size: ~ 18.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.13.10`
+  - `NGINX_VERSION=1.13.11`
