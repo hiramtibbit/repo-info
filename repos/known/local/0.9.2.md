@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:70c2f62a8345e01d43c4875f0e4c0052fd26062ca276a8e1c003b45bc19f474b`
-- Created: `2018-03-15T18:44:38.731446965Z`
-- Virtual Size: ~ 539.97 Mb  
+- Image ID: `sha256:c13ccd2d419e9790afdbca048f94dc8a3864b6b8c1346fc0c3edcd3e8c047326`
+- Created: `2018-04-05T12:35:59.656428362Z`
+- Virtual Size: ~ 543.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.34`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.34.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.34.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=21453be3a045204cd2717543ef42771324f411f40962ecda4fe841930a933128`
+  - `PHP_VERSION=5.6.35`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.35.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.35.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2`
   - `PHP_MD5=`
   - `KNOWN_VERSION=0.9.2`
 
@@ -1155,13 +1155,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=52.1-8+deb8u6`
+### `dpkg` source package: `icu=52.1-8+deb8u7`
 
 Binary Packages:
 
-- `icu-devtools=52.1-8+deb8u6`
-- `libicu-dev:amd64=52.1-8+deb8u6`
-- `libicu52:amd64=52.1-8+deb8u6`
+- `icu-devtools=52.1-8+deb8u7`
+- `libicu-dev:amd64=52.1-8+deb8u7`
+- `libicu52:amd64=52.1-8+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1170,17 +1170,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u6.dsc' icu_52.1-8+deb8u6.dsc 2015 SHA256:1c77ead0935b29bb80b8f2756faf9dd7262b20aac632aef1eedd3fabf56fa6f6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u6.debian.tar.xz' icu_52.1-8+deb8u6.debian.tar.xz 38108 SHA256:fd2df1a8d55fb7e093117e5dc761bbf01521f25a8076490d05fcebd3c005e77f
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u7
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u7.dsc' icu_52.1-8+deb8u7.dsc 2015 SHA256:6962e61f1a0d2be8aba69ff118bfca747f92953fae78d37b15faa670c3ac0619
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u7.debian.tar.xz' icu_52.1-8+deb8u7.debian.tar.xz 39320 SHA256:55e88af0c29a614f150f0b39579f1f946560dd75bc2b96ded28ebd96449f2692
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/icu/52.1-8+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/52.1-8+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/52.1-8+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/icu/52.1-8+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/52.1-8+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -2462,9 +2462,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u7`
-- `libssl-doc=1.0.1t-1+deb8u7`
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u7`
 - `openssl=1.0.1t-1+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2485,6 +2482,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u7/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
+
+Binary Packages:
+
+- `libssl-dev:amd64=1.0.1t-1+deb8u8`
+- `libssl-doc=1.0.1t-1+deb8u8`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u8`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u8
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u8.dsc' openssl_1.0.1t-1+deb8u8.dsc 2305 SHA256:e6fc30d2f34c04dd3c96e00d89b777442de79bb13d11056c8935f71667fcfcc0
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u8.debian.tar.xz' openssl_1.0.1t-1+deb8u8.debian.tar.xz 110384 SHA256:fb200537c8b7ec882145463373889b063353eddc5d4f957f4d55fabd7065c418
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
