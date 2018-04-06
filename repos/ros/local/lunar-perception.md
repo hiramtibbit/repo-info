@@ -5302,14 +5302,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-116.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-116.140.dsc' linux_4.4.0-116.140.dsc 9712 SHA256:95742ef1c2dd7b556167293b3c2a13ea8bdca2acb409ca0e4272c2138a7a4e02
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-116.140.diff.gz' linux_4.4.0-116.140.diff.gz 13915113 SHA256:423d3c0e3706e28a8e5b71ec7dfba4430a455dbf204d519e001e2a594ba70c9a
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -7058,14 +7053,9 @@ Licenses: (parsed from: `/usr/share/doc/python-crypto/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-crypto=2.6.1-6ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-crypto/python-crypto_2.6.1-6ubuntu0.16.04.2.dsc' python-crypto_2.6.1-6ubuntu0.16.04.2.dsc 2500 SHA256:48ede30f0557f674081a74c791197cb2bf8b7f627bccb87114c40aaa2b03f2da
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-crypto/python-crypto_2.6.1.orig.tar.gz' python-crypto_2.6.1.orig.tar.gz 446240 SHA256:f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-crypto/python-crypto_2.6.1-6ubuntu0.16.04.2.debian.tar.xz' python-crypto_2.6.1-6ubuntu0.16.04.2.debian.tar.xz 22708 SHA256:c68abae747cbed042062593b495b22b506560d17ced5da212c8af0ee5a046693
-```
 
 ### `dpkg` source package: `python-cryptography=1.2.3-1ubuntu0.1`
 
@@ -10412,14 +10402,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-mono/copyright`)
 - `CC-BY-SA-3.0`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-themes=14.04+16.04.20171116-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20171116-0ubuntu1.dsc' ubuntu-themes_14.04+16.04.20171116-0ubuntu1.dsc 2319 SHA256:3fd9940855cb6af5dc09533bdf74a8fd7bfaf737332f171d46570b3d3f7a94cf
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20171116.orig.tar.gz' ubuntu-themes_14.04+16.04.20171116.orig.tar.gz 12055306 SHA256:192189d6f6a9349d09718c133cfe168ce42428d07aff404c474cba9343d6b869
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20171116-0ubuntu1.diff.gz' ubuntu-themes_14.04+16.04.20171116-0ubuntu1.diff.gz 24587 SHA256:d7fa5b980fe2c74723b2f9b4dce10581dedf621e909ee024b2c0474d459356d6
-```
 
 ### `dpkg` source package: `ucf=3.0036`
 
