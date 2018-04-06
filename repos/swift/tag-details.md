@@ -8,6 +8,7 @@
 -	[`swift:4`](#swift4)
 -	[`swift:4.0`](#swift40)
 -	[`swift:4.0.3`](#swift403)
+-	[`swift:4.1`](#swift41)
 -	[`swift:latest`](#swiftlatest)
 
 ## `swift:3`
@@ -525,6 +526,10 @@ RUN swift --version
 		Last Modified: Wed, 07 Mar 2018 06:29:23 GMT  
 		Size: 170.6 MB (170637928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swift:4.1`
+
+**does not exist** (yet?)
 
 ## `swift:latest`
 
