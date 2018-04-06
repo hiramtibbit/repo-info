@@ -254,20 +254,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=4.4.18-1.1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-1.1.dsc' bash_4.4.18-1.1.dsc 1994 SHA256:7b81cdbff262db9bb6bd304bd849c84e54f3ab7aa707afbb6e93ed223db8d739
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18.orig.tar.xz' bash_4.4.18.orig.tar.xz 5036272 SHA256:704143a7170041ac9f1025455d6d23ff0f353711a3dc557b47d6e6322f24cd02
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-1.1.debian.tar.xz' bash_4.4.18-1.1.debian.tar.xz 57760 SHA256:bb2b62332aa5912e4070c44f840c3aa8236c773eba89a52367e70b95e0a717c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/4.4.18-1.1/
 
-- https://sources.debian.net/src/bash/4.4.18-1.1/ (for browsing the source)
-- https://sources.debian.net/src/bash/4.4.18-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/4.4.18-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
