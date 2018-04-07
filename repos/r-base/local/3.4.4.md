@@ -1051,10 +1051,6 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-defaults/1.174/
-
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -1096,10 +1092,6 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/glib2.0/2.54.3-2/
 
 
 ### `dpkg` source package: `glibc=2.27-1`
@@ -1866,10 +1858,6 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgpg-error/1.27-6/
 
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
@@ -3840,6 +3828,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.31.1-0.4/
 
 
 ### `dpkg` source package: `vim=2:8.0.1453-1`
