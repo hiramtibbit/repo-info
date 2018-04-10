@@ -2,19 +2,19 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf43ea170478333ca54cf4f0862f3d20240ad5c57008f85c949382bcb2462828`
-- Created: `2018-03-07T08:44:23.295618112Z`
-- Virtual Size: ~ 411.04 Mb  
+- Image ID: `sha256:613e621cd36ae2208ad8fd205c9e44ea49cc5004d041373fc903e33f8ad33301`
+- Created: `2018-04-06T21:59:28.359840259Z`
+- Virtual Size: ~ 420.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp10`
+  - `JAVA_VERSION=1.8.0_sr5fp11`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `LIBERTY_VERSION=17.0.0.4`
-  - `LIBERTY_SHA=8709c75cf905051e043b8c63e25640b464e58e39`
+  - `LIBERTY_VERSION=18.0.0.1`
+  - `LIBERTY_SHA=a059c422c6ddd53276804b8e6f2ee0b00c97e1a7`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
 
