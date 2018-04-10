@@ -1,7 +1,7 @@
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:bc494daa9d9ad7e37f93236fbd2c3f372739997c6336ef3c321e227f336e73d3
+$ docker pull centos@sha256:264de749305829658a6ba701dd8eee5d3f8e1c2e885b403c27772f455a7d0d60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -98,27 +98,27 @@ CMD ["/bin/bash"]
 ### `centos:centos7` - linux; ppc64le
 
 ```console
-$ docker pull centos@sha256:baa72b3dd87d3eb9b7b5c2c53f694bf2138310d5c6cf8e107e4f2c93112131f7
+$ docker pull centos@sha256:9110a7c594f3040bf67bef6465fe7dd23596d21a58c6bac34907bf84f8c6e1e9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.8 MB (75809171 bytes)**  
+-	Total Size: **76.3 MB (76311531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e831a7031b3ca77611a277cf98ba77695abc85178271df49bcb15a6a6e0eea52`
+-	Image ID: `sha256:086fbdad6a978a24da8c03d026ce050dbb13d380e60dea85c4abb966a2110a5b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 06 Mar 2018 18:20:26 GMT
-ADD file:78d57f0a6b24dc9e5bd921af7f2c00fc0eb8cad01b6aab72f45956c858cf7e9a in / 
-# Tue, 06 Mar 2018 18:20:29 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180302
-# Tue, 06 Mar 2018 18:20:31 GMT
+# Tue, 10 Apr 2018 02:17:14 GMT
+ADD file:8bfded3e68ff7b115d751cfd2ca761095b2fd715ca1ee22ee9bc1d068c707779 in / 
+# Tue, 10 Apr 2018 02:17:16 GMT
+LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180402
+# Tue, 10 Apr 2018 02:17:17 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fb54d88211961c2e1fcf88e35f8445f309dc52596be2115c8aaad80716f84032`  
-		Last Modified: Tue, 06 Mar 2018 18:21:01 GMT  
-		Size: 75.8 MB (75809171 bytes)  
+	-	`sha256:8c387629bebe42d42adf4a19f5f5680195708e8021c9b955f2f0a7a4da40ec87`  
+		Last Modified: Tue, 10 Apr 2018 02:17:57 GMT  
+		Size: 76.3 MB (76311531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
