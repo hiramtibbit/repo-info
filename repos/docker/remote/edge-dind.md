@@ -1,7 +1,7 @@
 ## `docker:edge-dind`
 
 ```console
-$ docker pull docker@sha256:54423c6b1bb5b1e77902532586ea4f518f8b26049b8268943da105df3c50c5c2
+$ docker pull docker@sha256:a576460ac86433859d200976a12743807cde9a1b2b0d4daa677f802de2fd1c37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull docker@sha256:54423c6b1bb5b1e77902532586ea4f518f8b26049b8268943da1
 ### `docker:edge-dind` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:44861312645ffa34fc32f5c5b1b35faef9ca7581b93bb31fe752ba8e59e9a4d4
+$ docker pull docker@sha256:a66a79a03c734a9ec0f3a43f2c7ba5379a0fce6494d308ffa90fc1dd94e50c06
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.1 MB (46127327 bytes)**  
+-	Total Size: **46.1 MB (46127427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d303f49c92a7c2e513187d46a6e7ca402fac897c095fd8f8308eb3a11b47a6a4`
+-	Image ID: `sha256:a5d94acbd847eb490dff15af12eb4bd9a7058400c21a3bb65d8f6a18a79c484d`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -57,15 +57,15 @@ RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& e
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 # Thu, 22 Mar 2018 20:40:30 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Thu, 22 Mar 2018 20:40:31 GMT
-COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
-# Thu, 22 Mar 2018 20:40:31 GMT
+# Tue, 10 Apr 2018 01:20:02 GMT
+COPY file:073876936333c71cdffdb04170009690094f01b3e9221dc545ef3c1a021a0091 in /usr/local/bin/ 
+# Tue, 10 Apr 2018 01:20:02 GMT
 VOLUME [/var/lib/docker]
-# Thu, 22 Mar 2018 20:40:31 GMT
+# Tue, 10 Apr 2018 01:20:02 GMT
 EXPOSE 2375/tcp
-# Thu, 22 Mar 2018 20:40:32 GMT
+# Tue, 10 Apr 2018 01:20:03 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Thu, 22 Mar 2018 20:40:32 GMT
+# Tue, 10 Apr 2018 01:20:03 GMT
 CMD []
 ```
 
@@ -106,9 +106,9 @@ CMD []
 		Last Modified: Thu, 22 Mar 2018 21:02:39 GMT  
 		Size: 26.3 KB (26285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28094546c2ac0ccd9148e51ac8819740c611c41a09fb08e8433e72eeb0ab028`  
-		Last Modified: Thu, 22 Mar 2018 21:02:39 GMT  
-		Size: 480.0 B  
+	-	`sha256:ba058d347646d16dd51dd8b6c405b4f667c041653ae1fd2560412b3c870617df`  
+		Last Modified: Tue, 10 Apr 2018 01:26:18 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:edge-dind` - linux; arm variant v6
