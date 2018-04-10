@@ -1,7 +1,7 @@
 ## `websphere-liberty:microProfile`
 
 ```console
-$ docker pull websphere-liberty@sha256:65c4a22158a11722180ffc953b490d173eed256b94747c303d10363eb3f19530
+$ docker pull websphere-liberty@sha256:2b91d175276d4f9b6eea040f3dfc9820d2a1e33ccc79631493ce1fced3a1a504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -425,14 +425,14 @@ COPY file:592487234213902c327fc4393ffb64101e23a5604cb12a8c7d9568e92281788d in /c
 ### `websphere-liberty:microProfile` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:b0bc796be1bad4840f3093b71c3dac43263751b0e0348acbda396401ec5d2037
+$ docker pull websphere-liberty@sha256:46b9f5da833a6c122d4d34830b129d13db4c05ef4eef353c35a86b107cac8754
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.9 MB (252873301 bytes)**  
+-	Total Size: **254.7 MB (254682270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f6c0effbac0c9cc4d43113b666d2e79633fb207b50f6e05e2872844c9c809e6`
+-	Image ID: `sha256:6a1b38578b486b56d9c41b9a375532c9335a4a7b1505ac400d2f6c35351db8c4`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -453,51 +453,51 @@ CMD ["/bin/bash"]
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 # Wed, 07 Mar 2018 14:33:39 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Wed, 07 Mar 2018 14:33:39 GMT
-ENV JAVA_VERSION=1.8.0_sr5fp10
-# Wed, 07 Mar 2018 14:34:21 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='bb6bf0f241e6827b567fc57f67ed87e2dfd8ad6e0f2f142b4a4c2f8e924d8716';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='e5825f6d151b2f4656934c249ef439d8c0269865f1e764d5f079c0cea6fb6bbc';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='57de9a2a66f5426c0e9dcb39798cf635f33631e0f74d50d8af1ad5d2e1f79256';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='47aa107a35327d84ef57bd0b6ebbdbbabb63f8fa24bc759343781b8ed4c789ad';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='ee2351e78c5b73ccf078905acc01b11eea01c78b6537836cc6d2baadaf7de769';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd /opt/ibm/java/jre/lib;     rm -rf icc;
-# Wed, 07 Mar 2018 14:34:21 GMT
+# Tue, 10 Apr 2018 17:47:41 GMT
+ENV JAVA_VERSION=1.8.0_sr5fp11
+# Tue, 10 Apr 2018 17:55:21 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='3e925759a6369ec9f15dda164a2e5ff77d5155669f244be0f82b95d2372102ed';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='03ad2e92623ea00312b37fef0b3d57886381c8cec4ce40d38a0080dace88f792';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='edd6214233c0164bc1425e9258cecc4e85fa69fefd582602ae4a445500c93340';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='51a4c97867cae68474de2921e97ae07e97662ec7f083eb206602428cd9726ac5';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='686c6875520ea85582acde780feb3a21b4919ab1081eb42518226faad5fee3ba';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
+# Tue, 10 Apr 2018 17:55:21 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 07 Mar 2018 14:56:12 GMT
+# Tue, 10 Apr 2018 19:46:17 GMT
 LABEL maintainer=Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)
-# Wed, 07 Mar 2018 14:56:42 GMT
+# Tue, 10 Apr 2018 19:49:56 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*
-# Fri, 23 Mar 2018 16:19:36 GMT
+# Tue, 10 Apr 2018 19:49:56 GMT
 ENV LIBERTY_VERSION=18.0.0_01
-# Fri, 23 Mar 2018 16:19:36 GMT
+# Tue, 10 Apr 2018 19:49:56 GMT
 ARG LIBERTY_URL
-# Fri, 23 Mar 2018 16:19:37 GMT
+# Tue, 10 Apr 2018 19:49:56 GMT
 ARG DOWNLOAD_OPTIONS=
-# Fri, 23 Mar 2018 16:19:41 GMT
+# Tue, 10 Apr 2018 19:53:08 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN LIBERTY_URL=${LIBERTY_URL:-$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml  | grep $LIBERTY_VERSION -A 6 | sed -n 's/\s*kernel:\s//p' | tr -d '\r' )}      && wget $DOWNLOAD_OPTIONS $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip
-# Fri, 23 Mar 2018 16:19:42 GMT
+# Tue, 10 Apr 2018 19:53:09 GMT
 ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 23 Mar 2018 16:19:42 GMT
+# Tue, 10 Apr 2018 19:53:09 GMT
 LABEL ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd ProductName=WebSphere Application Server Liberty ProductVersion=18.0.0.1
-# Fri, 23 Mar 2018 16:19:42 GMT
+# Tue, 10 Apr 2018 19:53:09 GMT
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
-# Fri, 23 Mar 2018 16:19:44 GMT
+# Tue, 10 Apr 2018 19:53:10 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config
-# Fri, 23 Mar 2018 16:19:47 GMT
+# Tue, 10 Apr 2018 19:53:10 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea
-# Fri, 23 Mar 2018 16:19:47 GMT
+# Tue, 10 Apr 2018 19:53:11 GMT
 COPY file:dd18e2d58f3840eaf6ab59b02d1250e6e302795adec103c5d1e172c8f709120e in /opt/ibm/docker/ 
-# Fri, 23 Mar 2018 16:19:47 GMT
+# Tue, 10 Apr 2018 19:53:11 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Fri, 23 Mar 2018 16:19:48 GMT
+# Tue, 10 Apr 2018 19:53:11 GMT
 ENTRYPOINT ["/opt/ibm/docker/docker-server"]
-# Fri, 23 Mar 2018 16:19:48 GMT
+# Tue, 10 Apr 2018 19:53:11 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Fri, 23 Mar 2018 16:19:56 GMT
+# Tue, 10 Apr 2018 19:53:24 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Fri, 23 Mar 2018 16:21:16 GMT
+# Tue, 10 Apr 2018 20:23:52 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 microProfile-1.2 microProfile-1.3 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Fri, 23 Mar 2018 16:21:17 GMT
+# Tue, 10 Apr 2018 20:23:52 GMT
 COPY file:592487234213902c327fc4393ffb64101e23a5604cb12a8c7d9568e92281788d in /config/ 
 ```
 
@@ -526,35 +526,35 @@ COPY file:592487234213902c327fc4393ffb64101e23a5604cb12a8c7d9568e92281788d in /c
 		Last Modified: Wed, 07 Mar 2018 14:36:03 GMT  
 		Size: 2.8 MB (2765866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbb925d778f022237d436876d34efd339fc021c4a3f9e08a99839e7d097010ac`  
-		Last Modified: Wed, 07 Mar 2018 14:36:14 GMT  
-		Size: 124.9 MB (124861176 bytes)  
+	-	`sha256:cf84e469c22e6180f8de59b5d7efbd766baed579cc875654c35b70e861400929`  
+		Last Modified: Tue, 10 Apr 2018 18:08:54 GMT  
+		Size: 126.7 MB (126668821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bceafee596b156abbdb7d3a4587e9a912084efe0096a070ebc8b5b6ab0f171`  
-		Last Modified: Wed, 07 Mar 2018 15:01:12 GMT  
-		Size: 428.2 KB (428249 bytes)  
+	-	`sha256:6927f5b2ed1c7b716f987a6ddb4154227a2fbc15611a780e48742ac3294e16eb`  
+		Last Modified: Tue, 10 Apr 2018 20:59:36 GMT  
+		Size: 428.3 KB (428273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de77d53e5a4506861965a36fffdc5e74a5f41cf57a1f53808b351af89c47b466`  
-		Last Modified: Fri, 23 Mar 2018 16:25:27 GMT  
-		Size: 12.0 MB (12025336 bytes)  
+	-	`sha256:c9e99ef289f05bfe82d2a3473f07b686a5216b34c51eaa92eeaa6fb0685f2eca`  
+		Last Modified: Tue, 10 Apr 2018 20:59:37 GMT  
+		Size: 12.0 MB (12025339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53b325faff06ca0a8457b4e2d45b8a13eab04fe62cd8a0ecf9075f7956864495`  
-		Last Modified: Fri, 23 Mar 2018 16:25:24 GMT  
+	-	`sha256:b542a29aef950b7b4505ed976e2291bda44f2313b36991e9799859cadc4f3161`  
+		Last Modified: Tue, 10 Apr 2018 20:59:35 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5b93ac108fba6420d2fc10e55fec85c0496fac7f9799c7d5f4f93e0d48ef4d`  
-		Last Modified: Fri, 23 Mar 2018 16:25:24 GMT  
-		Size: 604.0 B  
+	-	`sha256:a7a2abed9fccc1b3ca3d2ff05d078b8490c9d360c1f55fc40e6112aaaa04e16e`  
+		Last Modified: Tue, 10 Apr 2018 20:59:36 GMT  
+		Size: 598.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1359680eeb92b9059637b6b7c968c4837df1c8485cfd51c252ac8e8bd4589d08`  
-		Last Modified: Fri, 23 Mar 2018 16:25:24 GMT  
-		Size: 863.0 B  
+	-	`sha256:bb84a94f37fd84ecfab08321344d2a8a303fda1d219801c8b30770bf5f996edf`  
+		Last Modified: Tue, 10 Apr 2018 20:59:35 GMT  
+		Size: 865.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882f6a57e0bd3d49d1a821498aff1a4f3139ee0e953d9faa27fb48967e54f337`  
-		Last Modified: Fri, 23 Mar 2018 16:25:47 GMT  
-		Size: 70.8 MB (70751481 bytes)  
+	-	`sha256:1184fa3fd07edc528cdd6f66d1187c70916ad676663c1b22cd01e9678c19bd86`  
+		Last Modified: Tue, 10 Apr 2018 20:59:53 GMT  
+		Size: 70.8 MB (70752786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:991868c5ffa4ac80f09dc0e9b0312d7dfe6effb8c28a65561c46e22c46f6ac11`  
-		Last Modified: Fri, 23 Mar 2018 16:25:34 GMT  
-		Size: 559.0 B  
+	-	`sha256:d696e2138397d6ea73621a56fab010080b8297886538c0bec996e86797525b37`  
+		Last Modified: Tue, 10 Apr 2018 20:59:45 GMT  
+		Size: 555.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
