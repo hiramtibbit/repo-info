@@ -1,10 +1,10 @@
-# `wordpress:4.9.4-fpm-alpine`
+# `wordpress:4.9.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:816871a006868194dc8d3dce698247d5706b218f1f9ba1ed89b52f5c30733704`
-- Created: `2018-03-23T05:14:47.903802627Z`
-- Virtual Size: ~ 108.03 Mb  
+- Image ID: `sha256:55c59bc88b6079bd4a3ef04f1acad7c16adcd8a9d24fbb17d54b1dc7745113f2`
+- Created: `2018-04-10T05:17:01.57589913Z`
+- Virtual Size: ~ 107.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.3`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.3.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.3.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=b3a94f1b562f413c0b96f54bc309706d83b29ac65d9b172bc7ed9fb40a5e651f`
+  - `PHP_VERSION=7.2.4`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.4.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.4.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=7916b1bd148ddfd46d7f8f9a517d4b09cd8a8ad9248734e7c8dd91ef17057a88`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=4.9.4`
-  - `WORDPRESS_SHA1=0e630bf940fd586b10e099cd9195b3e825fb194c`
+  - `WORDPRESS_VERSION=4.9.5`
+  - `WORDPRESS_SHA1=6992f19163e21720b5693bed71ffe1ab17a4533a`
