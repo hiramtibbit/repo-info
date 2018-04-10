@@ -6849,14 +6849,9 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.12.0-1~ubuntu16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.2.dsc' wayland_1.12.0-1~ubuntu16.04.2.dsc 2530 SHA256:aa3a04b982419056632d93825f709e5b4de737a0a5a0b0646ef11ebff2580c16
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0.orig.tar.gz' wayland_1.12.0.orig.tar.gz 575381 SHA256:428537c2887b608cabde189a6450fcade8877e03b063a72c84431b5753a34aef
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.2.diff.gz' wayland_1.12.0-1~ubuntu16.04.2.diff.gz 10457 SHA256:4d21eec0366522d23b961118f404c630106dec9d0f30a656e03aa23727966e24
-```
 
 ### `dpkg` source package: `wxpython3.0=3.0.2.0+dfsg-1build1`
 
