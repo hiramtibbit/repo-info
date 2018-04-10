@@ -119,13 +119,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.dsc' base-files_10ubuntu1.dsc 1572 SHA256:df06490d19d5a5d9043aee549c01b454598df94177aa77ed1ea046b9f1cc53c2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.tar.xz' base-files_10ubuntu1.tar.xz 75028 SHA256:87c13ea0973a4ad9a3c0588b1309fb908a8ea5d735f65f392907b05343ae2467
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
@@ -156,14 +152,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=4.4.18-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.18-1ubuntu1.dsc' bash_4.4.18-1ubuntu1.dsc 2428 SHA256:9315f438c4291939f7ef73c27abac534bd9125662ca4d0e73e70125905873a55
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.18.orig.tar.xz' bash_4.4.18.orig.tar.xz 5036272 SHA256:704143a7170041ac9f1025455d6d23ff0f353711a3dc557b47d6e6322f24cd02
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.18-1ubuntu1.debian.tar.xz' bash_4.4.18-1ubuntu1.debian.tar.xz 63112 SHA256:c71e858f12271730b239481e27b3bce1357db25434f764ca65e8ca4ae03ef3dc
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -950,14 +941,9 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu2.dsc' lz4_0.0~r131-2ubuntu2.dsc 2007 SHA256:123f23834f83a4dca6d74a611cc0294491bd339d2e0be04d65783d6debbccc02
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu2.debian.tar.xz' lz4_0.0~r131-2ubuntu2.debian.tar.xz 5224 SHA256:c0afb4a440b1e7b803e2d9dcf616be539c1d16baebc681cdf837000e4c5077b7
-```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu2`
 
@@ -969,14 +955,9 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.dsc' mawk_1.3.3-17ubuntu2.dsc 1843 SHA256:d9058945d45b0e9ee5dd1c9c2e16d8f28b96d5c2e777f743594096fa2a5e277b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3.orig.tar.gz' mawk_1.3.3.orig.tar.gz 209942 SHA256:32649c46063d4ef0777a12ae6e9a26bcc920833d54e1abca7edb8d37481e7485
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
-```
 
 ### `dpkg` source package: `ncurses=6.1-1ubuntu1`
 
