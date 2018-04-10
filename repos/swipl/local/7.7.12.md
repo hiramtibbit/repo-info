@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:76f3960a1cf8da85699f90f191c8aaa575e62ce00cae71db062e654e19e44d90`
-- Created: `2018-03-27T18:01:17.70057Z`
-- Virtual Size: ~ 178.13 Mb  
+- Image ID: `sha256:0d1f00c775cdc1315c135777b0d284284830152f19a3a77b3ecf5913ae760d23`
+- Created: `2018-04-10T19:05:21.541150677Z`
+- Virtual Size: ~ 182.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -1862,7 +1862,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3+deb9u1`
 - `openssl=1.1.0f-3+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1883,6 +1882,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.0f-3+deb9u2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ossp-uuid=1.6.2-1.5`
 
