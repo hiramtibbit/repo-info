@@ -119,13 +119,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.dsc' base-files_10ubuntu1.dsc 1572 SHA256:df06490d19d5a5d9043aee549c01b454598df94177aa77ed1ea046b9f1cc53c2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.tar.xz' base-files_10ubuntu1.tar.xz 75028 SHA256:87c13ea0973a4ad9a3c0588b1309fb908a8ea5d735f65f392907b05343ae2467
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 

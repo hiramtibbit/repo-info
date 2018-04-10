@@ -232,13 +232,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.dsc' base-files_10ubuntu1.dsc 1572 SHA256:df06490d19d5a5d9043aee549c01b454598df94177aa77ed1ea046b9f1cc53c2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10ubuntu1.tar.xz' base-files_10ubuntu1.tar.xz 75028 SHA256:87c13ea0973a4ad9a3c0588b1309fb908a8ea5d735f65f392907b05343ae2467
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
@@ -703,14 +699,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.170-0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.3.dsc' elfutils_0.170-0.3.dsc 2307 SHA256:4c2da1f50e8b64366d790fe80accc455f1dab073e9e4fef23efd29b1ad724a0e
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.3.debian.tar.xz' elfutils_0.170-0.3.debian.tar.xz 37904 SHA256:9b93f7a034d7441b654d44c5bdb4c3dfa83210d605c90cf021a9c75e30ef8ad3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/elfutils/0.170-0.3/
+
 
 ### `dpkg` source package: `expat=2.2.5-3`
 
@@ -828,14 +823,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.12.6-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.12.6-0ubuntu1.dsc' fontconfig_2.12.6-0ubuntu1.dsc 2352 SHA256:3dbe2810515ea673d02ade9143efc0187e7b2c04cea567a16cbdeee2e4e0368e
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.12.6.orig.tar.bz2' fontconfig_2.12.6.orig.tar.bz2 1624683 SHA256:cf0c30807d08f6a28ab46c61b8dbd55c97d2f292cf88f3a07d3384687f31f017
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.12.6-0ubuntu1.debian.tar.xz' fontconfig_2.12.6-0ubuntu1.debian.tar.xz 28188 SHA256:6e44e884856924986ec3637cc38d0a759934d4d065ffd65fa25dd8c9d36bc844
-```
 
 ### `dpkg` source package: `fonts-dejavu=2.37-1`
 
@@ -1479,14 +1469,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-16ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-16ubuntu5.dsc' imagemagick_6.9.7.4+dfsg-16ubuntu5.dsc 5218 SHA256:76b69d6c889889947d7aad2b6dbc6faaab75d1f422edc9f4c5d63abd1d20b2d0
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-16ubuntu5.debian.tar.xz' imagemagick_6.9.7.4+dfsg-16ubuntu5.debian.tar.xz 257296 SHA256:cb36cee855f4e768a809f98019808c4bb81ef81dd9f7bfdb961f6eaeaa5a4bae
-```
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 
