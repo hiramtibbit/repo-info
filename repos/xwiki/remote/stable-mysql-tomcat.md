@@ -1,7 +1,7 @@
 ## `xwiki:stable-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:7f357fff884528375c7e38026ebf0f4563a53a67dd27e3d1b7dc9e47df45e79e
+$ docker pull xwiki@sha256:f4ddfb708736fb10df6a62feed5b7d82488768ce5dfd43c4bef3b8c0fa58643f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull xwiki@sha256:7f357fff884528375c7e38026ebf0f4563a53a67dd27e3d1b7dc9
 ### `xwiki:stable-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:dd697b7e1f6ce0621ed9b892397969c9ae1e40e203b256db337dc8ad4db99360
+$ docker pull xwiki@sha256:e3ae9f16c8ecf38e0ee8640632c38fcb6a6ba45326fa9f8d0989ddfc2f88a2c5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **619.5 MB (619537026 bytes)**  
+-	Total Size: **622.6 MB (622633745 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c93b134b7f211233f995b5599cc6035432e7db5ef5d0951dc1d067d01791af8`
+-	Image ID: `sha256:b2961594a0979650dbb091f2d5f3150c2494da1e525d59e6c9918ff59b776f5e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -63,59 +63,59 @@ WORKDIR /usr/local/tomcat
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
 # Tue, 20 Mar 2018 03:48:33 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 20 Mar 2018 03:48:33 GMT
-ENV OPENSSL_VERSION=1.1.0f-3+deb9u1
-# Tue, 20 Mar 2018 03:48:34 GMT
+# Thu, 05 Apr 2018 08:51:25 GMT
+ENV OPENSSL_VERSION=1.1.0f-3+deb9u2
+# Thu, 05 Apr 2018 08:51:33 GMT
 RUN set -ex; 	currentVersion="$(dpkg-query --show --showformat '${Version}\n' openssl)"; 	if dpkg --compare-versions "$currentVersion" '<<' "$OPENSSL_VERSION"; then 		if ! grep -q stretch /etc/apt/sources.list; then 			{ 				echo 'deb http://deb.debian.org/debian stretch main'; 				echo 'deb http://security.debian.org stretch/updates main'; 				echo 'deb http://deb.debian.org/debian stretch-updates main'; 			} > /etc/apt/sources.list.d/stretch.list; 			{ 				echo 'Package: *'; 				echo 'Pin: release n=stretch*'; 				echo 'Pin-Priority: -10'; 				echo; 				echo 'Package: openssl libssl*'; 				echo "Pin: version $OPENSSL_VERSION"; 				echo 'Pin-Priority: 990'; 			} > /etc/apt/preferences.d/stretch-openssl; 		fi; 		apt-get update; 		apt-get install -y --no-install-recommends openssl="$OPENSSL_VERSION"; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 20 Mar 2018 03:48:41 GMT
+# Thu, 05 Apr 2018 08:51:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Mar 2018 03:48:41 GMT
+# Thu, 05 Apr 2018 08:51:38 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Tue, 20 Mar 2018 04:02:18 GMT
+# Thu, 05 Apr 2018 09:19:37 GMT
 ENV TOMCAT_MAJOR=8
-# Tue, 20 Mar 2018 04:07:57 GMT
+# Thu, 05 Apr 2018 09:28:56 GMT
 ENV TOMCAT_VERSION=8.5.29
-# Tue, 20 Mar 2018 04:07:57 GMT
+# Thu, 05 Apr 2018 09:28:56 GMT
 ENV TOMCAT_SHA1=fdc2ac85282af82a494e352c35e33dcfe1dbab6b
-# Tue, 20 Mar 2018 04:07:58 GMT
+# Thu, 05 Apr 2018 09:28:57 GMT
 ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz
-# Tue, 20 Mar 2018 04:07:58 GMT
+# Thu, 05 Apr 2018 09:28:57 GMT
 ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc
-# Tue, 20 Mar 2018 04:08:41 GMT
+# Thu, 05 Apr 2018 09:34:01 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		"openjdk-${JAVA_VERSION%%[.~bu-]*}-jdk=$JAVA_DEBIAN_VERSION" 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Tue, 20 Mar 2018 04:08:43 GMT
+# Thu, 05 Apr 2018 09:34:08 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 20 Mar 2018 04:08:44 GMT
+# Thu, 05 Apr 2018 09:34:08 GMT
 EXPOSE 8080/tcp
-# Tue, 20 Mar 2018 04:08:44 GMT
+# Thu, 05 Apr 2018 09:34:08 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 20 Mar 2018 10:29:28 GMT
+# Tue, 10 Apr 2018 11:34:15 GMT
 MAINTAINER Vincent Massol <vincent@massol.net>
-# Tue, 20 Mar 2018 10:30:08 GMT
+# Tue, 10 Apr 2018 11:35:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libmysql-java &&   rm -rf /var/lib/apt/lists/*
-# Mon, 26 Mar 2018 20:25:00 GMT
+# Tue, 10 Apr 2018 11:55:46 GMT
 ENV XWIKI_VERSION=10.2
-# Mon, 26 Mar 2018 20:25:01 GMT
+# Tue, 10 Apr 2018 11:55:46 GMT
 ENV XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.2
-# Mon, 26 Mar 2018 20:25:01 GMT
+# Tue, 10 Apr 2018 11:55:47 GMT
 ENV XWIKI_DOWNLOAD_SHA256=df0a7437adec83ba5830467d0fabe45ba44f91b29e17df116ebe388519fd3857
-# Mon, 26 Mar 2018 20:25:38 GMT
+# Tue, 10 Apr 2018 11:56:24 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Mon, 26 Mar 2018 20:25:39 GMT
+# Tue, 10 Apr 2018 11:56:25 GMT
 RUN cp /usr/share/java/mysql-connector-java-*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Mon, 26 Mar 2018 20:25:40 GMT
+# Tue, 10 Apr 2018 11:56:26 GMT
 COPY file:725119cd89de5ce41030b7f52a3c80dcbddb95f2e35da254ae1eb2bb48447b8d in /usr/local/tomcat/bin/ 
-# Mon, 26 Mar 2018 20:25:40 GMT
+# Tue, 10 Apr 2018 11:56:26 GMT
 COPY file:1d433c8d1a99df71172f6981bdb6f13380e4d62f4dab4246798f9a5203553ca6 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Mon, 26 Mar 2018 20:25:41 GMT
+# Tue, 10 Apr 2018 11:56:27 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Mon, 26 Mar 2018 20:25:42 GMT
+# Tue, 10 Apr 2018 11:56:28 GMT
 COPY file:dc07a9b011afbdcb69bdb6399622bcbda4a83ee2659d03ada62cfd702e1e4dcd in /usr/local/bin/docker-entrypoint.sh 
-# Mon, 26 Mar 2018 20:25:42 GMT
+# Tue, 10 Apr 2018 11:56:28 GMT
 VOLUME [/usr/local/xwiki]
-# Mon, 26 Mar 2018 20:25:43 GMT
+# Tue, 10 Apr 2018 11:56:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 26 Mar 2018 20:25:43 GMT
+# Tue, 10 Apr 2018 11:56:29 GMT
 CMD ["xwiki"]
 ```
 
@@ -156,43 +156,47 @@ CMD ["xwiki"]
 		Last Modified: Tue, 20 Mar 2018 04:32:14 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebc6831d2466cdd1a4cef5b376bb153895869c1c64e65b2cacb271fa3271d6a5`  
-		Last Modified: Tue, 20 Mar 2018 04:32:15 GMT  
-		Size: 545.0 KB (544974 bytes)  
+	-	`sha256:b71ce0f0260c722f0b968608546a50fdf209361b2434bd094099997e212b2ea7`  
+		Last Modified: Thu, 05 Apr 2018 10:21:16 GMT  
+		Size: 1.2 MB (1202160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1d0586dfcce5803a9e9ea369a473ceef82093710d96be40e23ca95f05f447b7`  
-		Last Modified: Tue, 20 Mar 2018 04:35:53 GMT  
-		Size: 10.5 MB (10528292 bytes)  
+	-	`sha256:b18814a5c704240b20684dde660e488a35874d1383425dce11708ebfd9cb76b1`  
+		Last Modified: Thu, 05 Apr 2018 10:21:16 GMT  
+		Size: 545.2 KB (545177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f84378b2ff187291754d2cc312c916eb9e2d66344afa449eb167a81b35eceea1`  
-		Last Modified: Tue, 20 Mar 2018 04:35:51 GMT  
-		Size: 129.0 B  
+	-	`sha256:e3fbb69d77972cf453d9039be9e2155b57c3284399a016a3785efb87c811945d`  
+		Last Modified: Thu, 05 Apr 2018 10:25:22 GMT  
+		Size: 12.4 MB (12422264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9195ff0a7169dec0349361e4f1eb9a04191d2c1e4f922474b3ab7ea0c6363195`  
-		Last Modified: Tue, 20 Mar 2018 11:04:47 GMT  
-		Size: 162.0 MB (162020514 bytes)  
+	-	`sha256:f2a4b7aaa851e60bc32f5aace783c602734c2e4874a5169b7fbd9316c0e606d7`  
+		Last Modified: Thu, 05 Apr 2018 10:25:20 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61585db4de52d15ce2c563779e7b7ec2d42e7f7701797693c5a80502b1c2ff02`  
-		Last Modified: Mon, 26 Mar 2018 20:50:16 GMT  
-		Size: 228.6 MB (228564193 bytes)  
+	-	`sha256:5ddc70b79498a2a9af814b6e34d6cd747197ff7bef69b4ea2e628481a216f1cd`  
+		Last Modified: Tue, 10 Apr 2018 12:16:23 GMT  
+		Size: 162.0 MB (162020764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf30e6043b8e41cad7bf79719a7abf41d1fbb4a4059afd0fd4b2c1873a5eaab6`  
-		Last Modified: Mon, 26 Mar 2018 20:49:56 GMT  
-		Size: 952.1 KB (952116 bytes)  
+	-	`sha256:1ecb9b3b6894c855af88800b0b105e84c5ee9bbc861bb01b76c91fc6164784e7`  
+		Last Modified: Tue, 10 Apr 2018 13:00:28 GMT  
+		Size: 228.6 MB (228564328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c664e29ddf5cd8a1707910f35c175505dc14b53e2c532d786b56421df166cd29`  
-		Last Modified: Mon, 26 Mar 2018 20:49:54 GMT  
+	-	`sha256:a58201811bcb486ab7b09ea77ccfe1fab8166a6f24d3d0de6853cd69efe15fa7`  
+		Last Modified: Tue, 10 Apr 2018 13:00:04 GMT  
+		Size: 952.1 KB (952118 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ccc502756ae40957b58a6a6183e09122b19b91806b79224d972c16122afcd8db`  
+		Last Modified: Tue, 10 Apr 2018 13:00:03 GMT  
 		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4482cc3a6ff1353eef36975922511def67bff9b30d84951e0e607ac8ee455f44`  
-		Last Modified: Mon, 26 Mar 2018 20:49:54 GMT  
+	-	`sha256:fea4444c586b671d7fc7fcffeac918684448e594245ffce2382e7f07158066cb`  
+		Last Modified: Tue, 10 Apr 2018 13:00:03 GMT  
 		Size: 2.3 KB (2315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f7bc891fb2afa86a80a6a6ba065baeca136883222ea8d053156241cbbeb13ce`  
-		Last Modified: Mon, 26 Mar 2018 20:49:55 GMT  
-		Size: 3.6 KB (3611 bytes)  
+	-	`sha256:bad297b7e77a4012e7f4aa2b70d9aa9b3c3a91c4ca70ed2dbb1012e4b450b61a`  
+		Last Modified: Tue, 10 Apr 2018 13:00:03 GMT  
+		Size: 3.6 KB (3612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b5360ab6868856b88e28748591f0b6f546b8d24e7b2232f1d48cca76ece42ce`  
-		Last Modified: Mon, 26 Mar 2018 20:49:54 GMT  
-		Size: 2.4 KB (2358 bytes)  
+	-	`sha256:f494d64a9458bfcd28f9a39d00b0f888c54f5c3be4a659aae3c14c0c52a9d002`  
+		Last Modified: Tue, 10 Apr 2018 13:00:03 GMT  
+		Size: 2.4 KB (2353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
