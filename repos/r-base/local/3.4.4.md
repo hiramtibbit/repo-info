@@ -205,20 +205,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=4.4.18-1.1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-1.1.dsc' bash_4.4.18-1.1.dsc 1994 SHA256:7b81cdbff262db9bb6bd304bd849c84e54f3ab7aa707afbb6e93ed223db8d739
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18.orig.tar.xz' bash_4.4.18.orig.tar.xz 5036272 SHA256:704143a7170041ac9f1025455d6d23ff0f353711a3dc557b47d6e6322f24cd02
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-1.1.debian.tar.xz' bash_4.4.18-1.1.debian.tar.xz 57760 SHA256:bb2b62332aa5912e4070c44f840c3aa8236c773eba89a52367e70b95e0a717c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/4.4.18-1.1/
 
-- https://sources.debian.net/src/bash/4.4.18-1.1/ (for browsing the source)
-- https://sources.debian.net/src/bash/4.4.18-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/4.4.18-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.30-7`
 
@@ -235,20 +228,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-7
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-7.dsc' binutils_2.30-7.dsc 10346 SHA256:be6b12d81c725f6b7ea7d9f59cb41ba93bad94d11a711ff210120b8399d7acd5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20144632 SHA256:f68a56df7d3cc66d5e6e24ad733a1f3d6188caeba570e4a1c515cfd2de2e11d5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-7.debian.tar.xz' binutils_2.30-7.debian.tar.xz 299820 SHA256:5a12abf6612720773f198ca7bab59ee183b55093252ff39d78c2530f77cdd3c6
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/binutils/2.30-7/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.30-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.30-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
 
@@ -437,16 +419,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cluster=2.0.6-2
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6-2.dsc' cluster_2.0.6-2.dsc 1635 SHA256:957569bb46a87a2a34a87f1924ff27264b35053357d6fcc91d0dc7ff6a9c9828
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6.orig.tar.gz' cluster_2.0.6.orig.tar.gz 319245 SHA256:f424b87f10595ed358b1ac80471b520ab9c767a4d203663c25b177c8ce5f8ffc
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6-2.diff.gz' cluster_2.0.6-2.diff.gz 3506 SHA256:c07da13c61e691e51772def710f366fc1ad889fea79186ea473e4f691e4e0571
+'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-2.dsc' cluster_2.0.6-2.dsc 1635 SHA256:957569bb46a87a2a34a87f1924ff27264b35053357d6fcc91d0dc7ff6a9c9828
+'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6.orig.tar.gz' cluster_2.0.6.orig.tar.gz 319245 SHA256:f424b87f10595ed358b1ac80471b520ab9c767a4d203663c25b177c8ce5f8ffc
+'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-2.diff.gz' cluster_2.0.6-2.diff.gz 3506 SHA256:c07da13c61e691e51772def710f366fc1ad889fea79186ea473e4f691e4e0571
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/cluster/2.0.6-2/ (for browsing the source)
-- https://sources.debian.net/src/cluster/2.0.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cluster/2.0.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `codetools=0.2-15-1.1`
 
@@ -987,20 +963,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-11
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-11.dsc' gcc-7_7.3.0-11.dsc 25559 SHA256:1abf4e7b26ef12b61ad62daead380826a6a0592194bb7d2a1fa8d757b819f5c8
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-11.diff.gz' gcc-7_7.3.0-11.diff.gz 823270 SHA256:601c4defce76417745dc472d0421d19c177e3d8f414db3dbf23d678f679f8618
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.3.0-11/
 
-- https://sources.debian.net/src/gcc-7/7.3.0-11/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8-20180312-2`
 
@@ -1093,6 +1062,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.54.3-2/
+
 
 ### `dpkg` source package: `glibc=2.27-1`
 
@@ -1165,10 +1138,6 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-2/
 
 
 ### `dpkg` source package: `gnupg2=2.2.5-1`
@@ -1858,6 +1827,10 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.27-6/
 
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
@@ -2995,17 +2968,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris p11-kit=0.23.9-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.9-2.dsc' p11-kit_0.23.9-2.dsc 2458 SHA256:e4c271a89abf52a95d23cca02bd6fb6ea5d5611b139ac63b0db728e7d9895449
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz' p11-kit_0.23.9.orig.tar.gz 1091561 SHA256:e1c1649c335107a8d33cf3762eb7f57b2d0681f0c7d8353627293a58d6b4db63
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz.asc' p11-kit_0.23.9.orig.tar.gz.asc 900 SHA256:334562f6a37f96339173a33a90b246466e0b2673e03658b205d75ebbb63bad10
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.9-2.debian.tar.xz' p11-kit_0.23.9-2.debian.tar.xz 21704 SHA256:fa6af69f96f6ccdce95d61e39662a38768b05f8872b2b2008d56cc4fff0ed3fd
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.9-2.dsc' p11-kit_0.23.9-2.dsc 2458 SHA256:e4c271a89abf52a95d23cca02bd6fb6ea5d5611b139ac63b0db728e7d9895449
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz' p11-kit_0.23.9.orig.tar.gz 1091561 SHA256:e1c1649c335107a8d33cf3762eb7f57b2d0681f0c7d8353627293a58d6b4db63
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz.asc' p11-kit_0.23.9.orig.tar.gz.asc 900 SHA256:334562f6a37f96339173a33a90b246466e0b2673e03658b205d75ebbb63bad10
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.9-2.debian.tar.xz' p11-kit_0.23.9-2.debian.tar.xz 21704 SHA256:fa6af69f96f6ccdce95d61e39662a38768b05f8872b2b2008d56cc4fff0ed3fd
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/p11-kit/0.23.9-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.7`
 
@@ -3066,20 +3033,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.6-1
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-1.dsc' patch_2.7.6-1.dsc 1810 SHA256:6927ed1fdd0499d397d0df26575f32eafe7d01a0806dc28dc6a3393c0ad6305f
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-1.debian.tar.xz' patch_2.7.6-1.debian.tar.xz 7948 SHA256:31499b753c63876b951f7f2b3f1142817233e8e7691704d5907116ad1489cef1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/patch/2.7.6-1/
 
-- https://sources.debian.net/src/patch/2.7.6-1/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.7.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.7.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -3397,16 +3357,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.2-12-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-12-1.dsc' rmatrix_1.2-12-1.dsc 1674 SHA256:204b3c0f687cfa6e9fe50739266821dc186bbc5f98353ccf1eaff3b27fc652cc
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-12.orig.tar.gz' rmatrix_1.2-12.orig.tar.gz 1821419 SHA256:16e51aef69dca94dc4fcba8aa35a0039d9d0e6abd9cc017c095e954e1e2ca4f2
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-12-1.diff.gz' rmatrix_1.2-12-1.diff.gz 5401 SHA256:539276927ca21b5b81d0ed7a478f79f08251b80a8b6ba0c3c7efdce5afbdb03e
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-12-1.dsc' rmatrix_1.2-12-1.dsc 1674 SHA256:204b3c0f687cfa6e9fe50739266821dc186bbc5f98353ccf1eaff3b27fc652cc
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-12.orig.tar.gz' rmatrix_1.2-12.orig.tar.gz 1821419 SHA256:16e51aef69dca94dc4fcba8aa35a0039d9d0e6abd9cc017c095e954e1e2ca4f2
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-12-1.diff.gz' rmatrix_1.2-12-1.diff.gz 5401 SHA256:539276927ca21b5b81d0ed7a478f79f08251b80a8b6ba0c3c7efdce5afbdb03e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/rmatrix/1.2-12-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.2-12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.2-12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1-13-1`
 
