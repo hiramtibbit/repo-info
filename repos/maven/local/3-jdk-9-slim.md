@@ -365,6 +365,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cdebconf/0.241/
+
 
 ### `dpkg` source package: `coreutils=8.28-1`
 
@@ -844,6 +848,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8-20180310-1/
 
 
 ### `dpkg` source package: `glibc=2.27-2`
@@ -1347,6 +1355,10 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.27-6/
 
 
 ### `dpkg` source package: `libidn2=2.0.4-1.1`
@@ -2071,20 +2083,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.35-2.dsc' nss_3.35-2.dsc 2223 SHA256:03728e8f004d8fde50139faf4fd6fc2007f4f1a4561b7ac17846a3d11e83522e
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.35-2.debian.tar.xz' nss_3.35-2.debian.tar.xz 24976 SHA256:da4774dd3a581d183a56a030da14c1c29e6fe6036c53cc5cce509d01958f067d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.35-2/
 
-- https://sources.debian.net/src/nss/2:3.35-2/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.35-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.35-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-9=9.0.4+12-4`
 
@@ -2635,6 +2640,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018c-1/
 
 
 ### `dpkg` source package: `unzip=6.0-21`
