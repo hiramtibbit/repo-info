@@ -2689,20 +2689,13 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler46/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.26.5-2+deb8u3
-'http://security.debian.org/pool/updates/main/p/poppler/poppler_0.26.5-2+deb8u3.dsc' poppler_0.26.5-2+deb8u3.dsc 3302 SHA256:73d2dd9063e59261be16ac1029d13b89894155666567c03322f0ad1e76365625
-'http://security.debian.org/pool/updates/main/p/poppler/poppler_0.26.5.orig.tar.xz' poppler_0.26.5.orig.tar.xz 1595232 SHA256:de7de5fa337431e5d1f372e8577b3707322f1dbc1dc28a70f2927476f134d1ee
-'http://security.debian.org/pool/updates/main/p/poppler/poppler_0.26.5-2+deb8u3.debian.tar.xz' poppler_0.26.5-2+deb8u3.debian.tar.xz 38192 SHA256:b6ae46006dd7757af1fe9b71ec26f3849a8d1653fb9b95f65e194972f640c98d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/poppler/0.26.5-2+deb8u3/
 
-- https://sources.debian.net/src/poppler/0.26.5-2+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/poppler/0.26.5-2+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/poppler/0.26.5-2+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `popt=1.16-10`
 
