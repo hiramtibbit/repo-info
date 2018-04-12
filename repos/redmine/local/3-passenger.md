@@ -1,10 +1,10 @@
-# `redmine:3.4.4-passenger`
+# `redmine:3.4.5-passenger`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6b901f429848b9493be7589e05c084cda6628f2119fad58140660b64df03a2f`
-- Created: `2018-03-31T07:06:19.474605354Z`
-- Virtual Size: ~ 724.43 Mb  
+- Image ID: `sha256:270be00ebce2b5d7935d81fd2073af1a80bd80693485e4a7be59e2932f23d70a`
+- Created: `2018-04-11T18:17:44.345810124Z`
+- Virtual Size: ~ 724.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -24,9 +24,9 @@
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=v0.16.1`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.4.4`
-  - `REDMINE_DOWNLOAD_MD5=8152aa9fd2d5d01cf50ad898090b1d78`
-  - `PASSENGER_VERSION=5.2.2`
+  - `REDMINE_VERSION=3.4.5`
+  - `REDMINE_DOWNLOAD_MD5=1c61ccbf3f597ebceefb05b60cc1947b`
+  - `PASSENGER_VERSION=5.2.3`
 
 ## `dpkg` (`.deb`-based packages)
 
