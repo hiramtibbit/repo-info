@@ -5331,14 +5331,9 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.1-4ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.1-4ubuntu2.3.dsc' patch_2.7.1-4ubuntu2.3.dsc 1875 SHA256:3cb5ef3a6d802d0f4abbc2318403b882cb2a73a9d2157e97454201d31f2184f1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.1.orig.tar.bz2' patch_2.7.1.orig.tar.bz2 800515 SHA256:aae676de9e95051f425af4507fcc9a019941a2a1f78405e7dbd40bccf786aa11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.1-4ubuntu2.3.debian.tar.gz' patch_2.7.1-4ubuntu2.3.debian.tar.gz 26470 SHA256:2398cee37ab0d82ebcbd6ba670f9d6e1c161366d8508bc179133ac7e988944d5
-```
 
 ### `dpkg` source package: `pciutils=1:3.2.1-1ubuntu5.1`
 
