@@ -2,6 +2,18 @@
 
 # Tags of `buildpack-deps`
 
+-	[`buildpack-deps:14.04`](#buildpack-deps1404)
+-	[`buildpack-deps:14.04-curl`](#buildpack-deps1404-curl)
+-	[`buildpack-deps:14.04-scm`](#buildpack-deps1404-scm)
+-	[`buildpack-deps:16.04`](#buildpack-deps1604)
+-	[`buildpack-deps:16.04-curl`](#buildpack-deps1604-curl)
+-	[`buildpack-deps:16.04-scm`](#buildpack-deps1604-scm)
+-	[`buildpack-deps:17.10`](#buildpack-deps1710)
+-	[`buildpack-deps:17.10-curl`](#buildpack-deps1710-curl)
+-	[`buildpack-deps:17.10-scm`](#buildpack-deps1710-scm)
+-	[`buildpack-deps:18.04`](#buildpack-deps1804)
+-	[`buildpack-deps:18.04-curl`](#buildpack-deps1804-curl)
+-	[`buildpack-deps:18.04-scm`](#buildpack-deps1804-scm)
 -	[`buildpack-deps:artful`](#buildpack-depsartful)
 -	[`buildpack-deps:artful-curl`](#buildpack-depsartful-curl)
 -	[`buildpack-deps:artful-scm`](#buildpack-depsartful-scm)
@@ -16,22 +28,85 @@
 -	[`buildpack-deps:jessie-curl`](#buildpack-depsjessie-curl)
 -	[`buildpack-deps:jessie-scm`](#buildpack-depsjessie-scm)
 -	[`buildpack-deps:latest`](#buildpack-depslatest)
+-	[`buildpack-deps:oldoldstable`](#buildpack-depsoldoldstable)
+-	[`buildpack-deps:oldoldstable-curl`](#buildpack-depsoldoldstable-curl)
+-	[`buildpack-deps:oldoldstable-scm`](#buildpack-depsoldoldstable-scm)
+-	[`buildpack-deps:oldstable`](#buildpack-depsoldstable)
+-	[`buildpack-deps:oldstable-curl`](#buildpack-depsoldstable-curl)
+-	[`buildpack-deps:oldstable-scm`](#buildpack-depsoldstable-scm)
 -	[`buildpack-deps:scm`](#buildpack-depsscm)
 -	[`buildpack-deps:sid`](#buildpack-depssid)
 -	[`buildpack-deps:sid-curl`](#buildpack-depssid-curl)
 -	[`buildpack-deps:sid-scm`](#buildpack-depssid-scm)
+-	[`buildpack-deps:stable`](#buildpack-depsstable)
+-	[`buildpack-deps:stable-curl`](#buildpack-depsstable-curl)
+-	[`buildpack-deps:stable-scm`](#buildpack-depsstable-scm)
 -	[`buildpack-deps:stretch`](#buildpack-depsstretch)
 -	[`buildpack-deps:stretch-curl`](#buildpack-depsstretch-curl)
 -	[`buildpack-deps:stretch-scm`](#buildpack-depsstretch-scm)
+-	[`buildpack-deps:testing`](#buildpack-depstesting)
+-	[`buildpack-deps:testing-curl`](#buildpack-depstesting-curl)
+-	[`buildpack-deps:testing-scm`](#buildpack-depstesting-scm)
 -	[`buildpack-deps:trusty`](#buildpack-depstrusty)
 -	[`buildpack-deps:trusty-curl`](#buildpack-depstrusty-curl)
 -	[`buildpack-deps:trusty-scm`](#buildpack-depstrusty-scm)
+-	[`buildpack-deps:unstable`](#buildpack-depsunstable)
+-	[`buildpack-deps:unstable-curl`](#buildpack-depsunstable-curl)
+-	[`buildpack-deps:unstable-scm`](#buildpack-depsunstable-scm)
 -	[`buildpack-deps:wheezy`](#buildpack-depswheezy)
 -	[`buildpack-deps:wheezy-curl`](#buildpack-depswheezy-curl)
 -	[`buildpack-deps:wheezy-scm`](#buildpack-depswheezy-scm)
 -	[`buildpack-deps:xenial`](#buildpack-depsxenial)
 -	[`buildpack-deps:xenial-curl`](#buildpack-depsxenial-curl)
 -	[`buildpack-deps:xenial-scm`](#buildpack-depsxenial-scm)
+
+## `buildpack-deps:14.04`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:14.04-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:14.04-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:16.04`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:16.04-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:16.04-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:17.10`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:17.10-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:17.10-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:18.04`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:18.04-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:18.04-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:artful`
 
@@ -4935,6 +5010,30 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 205.2 MB (205171037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `buildpack-deps:oldoldstable`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oldoldstable-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oldoldstable-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oldstable`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oldstable-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oldstable-scm`
+
+**does not exist** (yet?)
+
 ## `buildpack-deps:scm`
 
 ```console
@@ -6231,6 +6330,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Size: 49.1 MB (49125842 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `buildpack-deps:stable`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:stable-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:stable-scm`
+
+**does not exist** (yet?)
+
 ## `buildpack-deps:stretch`
 
 ```console
@@ -7202,6 +7313,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 14 Mar 2018 06:01:07 GMT  
 		Size: 50.4 MB (50447603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:testing`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:testing-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:testing-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:trusty`
 
@@ -8204,6 +8327,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 07 Mar 2018 05:03:14 GMT  
 		Size: 32.0 MB (31988676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:unstable`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:unstable-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:unstable-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:wheezy`
 
