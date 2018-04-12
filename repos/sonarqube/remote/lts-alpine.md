@@ -1,7 +1,7 @@
 ## `sonarqube:lts-alpine`
 
 ```console
-$ docker pull sonarqube@sha256:d1ed521301eaf4728a1f5746554fc44e8604af16ce2079b3484a3eded1f5d13e
+$ docker pull sonarqube@sha256:b9e22c5a3bdc5f67e45ebad303a3efd68afd1fc05c3877aa5dd91c2c07bb005d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull sonarqube@sha256:d1ed521301eaf4728a1f5746554fc44e8604af16ce2079b34
 ### `sonarqube:lts-alpine` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:90eb6762d68c6067e9b10b028b10217cc0775b3539f95db45266a85a7f07874d
+$ docker pull sonarqube@sha256:69b0dd106b1415e9b56601caf31fc75d2bbeed8abc73b5b15b61b097e578129d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.1 MB (238129589 bytes)**  
+-	Total Size: **238.1 MB (238130864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dc1056554c377fb93103b472f5cb2aaabbd67cbdae5b746a9c60a67de396ca0`
+-	Image ID: `sha256:b7e7deab89366c944412839ce9e8aba030e1a8c200a85537722fefd802922ae0`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -40,21 +40,21 @@ ENV JAVA_VERSION=8u151
 ENV JAVA_ALPINE_VERSION=8.151.12-r0
 # Wed, 10 Jan 2018 04:51:20 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 16 Mar 2018 09:22:11 GMT
-ENV SONAR_VERSION=6.7.2 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Fri, 16 Mar 2018 09:22:11 GMT
+# Thu, 12 Apr 2018 00:04:34 GMT
+ENV SONAR_VERSION=6.7.3 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
+# Thu, 12 Apr 2018 00:04:35 GMT
 EXPOSE 9000/tcp
-# Fri, 16 Mar 2018 09:22:12 GMT
+# Thu, 12 Apr 2018 00:04:36 GMT
 RUN addgroup -S sonarqube && adduser -S -G sonarqube sonarqube
-# Fri, 16 Mar 2018 09:22:35 GMT
+# Thu, 12 Apr 2018 00:05:02 GMT
 RUN set -x     && apk add --no-cache gnupg unzip     && apk add --no-cache libressl wget     && apk add --no-cache su-exec     && apk add --no-cache bash     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && mkdir /opt     && cd /opt     && wget -O sonarqube.zip --no-verbose https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && wget -O sonarqube.zip.asc --no-verbose https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && chown -R sonarqube:sonarqube sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Fri, 16 Mar 2018 09:22:35 GMT
+# Thu, 12 Apr 2018 00:05:03 GMT
 VOLUME [/opt/sonarqube/data]
-# Fri, 16 Mar 2018 09:22:36 GMT
+# Thu, 12 Apr 2018 00:05:03 GMT
 WORKDIR /opt/sonarqube
-# Fri, 16 Mar 2018 09:22:36 GMT
+# Thu, 12 Apr 2018 00:05:04 GMT
 COPY file:b692f3c4a910c6cabb33643ad789b4e104de43e0b26bf76e018578d0a457f0b3 in /opt/sonarqube/bin/ 
-# Fri, 16 Mar 2018 09:22:36 GMT
+# Thu, 12 Apr 2018 00:05:04 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
@@ -71,15 +71,15 @@ ENTRYPOINT ["./bin/run.sh"]
 		Last Modified: Wed, 10 Jan 2018 04:56:54 GMT  
 		Size: 70.2 MB (70227764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15f6d104aedb8513799eadc9c5ab011717e6e4a15f222dcecc960ff8f75c1090`  
-		Last Modified: Fri, 16 Mar 2018 09:33:49 GMT  
+	-	`sha256:213d57f165caad254b32eac06eb97250e432d01810249a9eb368f1627ecc999d`  
+		Last Modified: Thu, 12 Apr 2018 00:18:10 GMT  
 		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a31a4d2b454a4596380e97cc5126bf29d7b778358483dfc64e5aab23ddc0d3f`  
-		Last Modified: Fri, 16 Mar 2018 09:33:59 GMT  
-		Size: 165.8 MB (165834314 bytes)  
+	-	`sha256:3b5a13537169d03f6f48f43b6ac3d5749c90ebd13a3491fc9c924b440b430ac6`  
+		Last Modified: Thu, 12 Apr 2018 00:18:27 GMT  
+		Size: 165.8 MB (165835590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14d1b41ac02dbc2ccf0f4271e00484c15f961f089109b0adb3798f4ff783fea8`  
-		Last Modified: Fri, 16 Mar 2018 09:33:49 GMT  
-		Size: 480.0 B  
+	-	`sha256:e3ee73790b660f71816e8f9e441181a18f8163c744405e55df8502fdb17f66b0`  
+		Last Modified: Thu, 12 Apr 2018 00:18:10 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
