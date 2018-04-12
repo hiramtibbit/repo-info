@@ -1,15 +1,15 @@
-# `docker:18.03.0-ce-dind`
+# `docker:18.04.0-ce-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d303f49c92a7c2e513187d46a6e7ca402fac897c095fd8f8308eb3a11b47a6a4`
-- Created: `2018-03-22T20:40:32.465431519Z`
-- Virtual Size: ~ 146.71 Mb  
+- Image ID: `sha256:6fc95ba0a7762a13d4db830df765c534ece1963f11093dfb8940f525b63084c3`
+- Created: `2018-04-12T00:35:18.360406433Z`
+- Virtual Size: ~ 146.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=18.03.0-ce`
+  - `DOCKER_CHANNEL=edge`
+  - `DOCKER_VERSION=18.04.0-ce`
   - `DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034`
