@@ -11,7 +11,7 @@
 ## `hola-mundo:latest`
 
 ```console
-$ docker pull hola-mundo@sha256:342bcc5e512b54abf4d11f53669f742884d33906d8aaa8a10f47ca8eed534fc2
+$ docker pull hola-mundo@sha256:d23829d78e3f9c3f5895eeb5b7c94d07614f53f87b101ef04c7b3b2f0ec7651d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,8 +23,8 @@ $ docker pull hola-mundo@sha256:342bcc5e512b54abf4d11f53669f742884d33906d8aaa8a1
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.14393.2125; amd64
-	-	windows version 10.0.16299.309; amd64
+	-	windows version 10.0.14393.2189; amd64
+	-	windows version 10.0.16299.371; amd64
 
 ### `hola-mundo:latest` - linux; amd64
 
@@ -208,27 +208,27 @@ CMD ["/hello"]
 		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hola-mundo:latest` - windows version 10.0.14393.2125; amd64
+### `hola-mundo:latest` - windows version 10.0.14393.2189; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:94ed7b4663c11dfae0171c328b3bcf503510fb0ed9045b374de3dd3bea2734cb
+$ docker pull hola-mundo@sha256:9db5b54bbfc1afcd574975270411fb392fda0a6e181b1ac29be8eedd10d6d52c
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.7 MB (408696944 bytes)**  
+-	Total Size: **407.9 MB (407946181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c207313f35143efae80e80bad41a0ed6855afaa078333819c79b1ed86811afd`
+-	Image ID: `sha256:9167234fe8386d79a64133918109e1f8f376a90cc7d62a785b20b830b67e2838`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Tue, 13 Mar 2018 00:52:57 GMT
-RUN Install update 10.0.14393.2125
-# Wed, 14 Mar 2018 10:46:52 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:53 GMT
+# Fri, 06 Apr 2018 21:37:58 GMT
+RUN Install update 10.0.14393.2189
+# Thu, 12 Apr 2018 09:50:11 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:16 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -237,40 +237,40 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5b557cd80a9856d964887c4ea407b85fca10ce6aaa539984be9dd3570c60fd66`  
-		Last Modified: Tue, 13 Mar 2018 00:52:57 GMT  
-		Size: 156.0 MB (156003306 bytes)  
+	-	`sha256:83eec61707e8c8a926a02da0ac7156cf6b64d3630672a6790004f10b87ae805b`  
+		Last Modified: Fri, 06 Apr 2018 21:37:58 GMT  
+		Size: 155.3 MB (155252511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e900ef789fc0cf2fc07f4a43466617fbfb7036ca258766be0c2ef632ae5b58b1`  
-		Last Modified: Wed, 14 Mar 2018 10:47:09 GMT  
-		Size: 1.7 KB (1683 bytes)  
+	-	`sha256:4db5cec3236d8b6a5e136610d8b7bef330ddd79ffb5041a5868ddc7d162effab`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4dad529587c26cb4ccc527c1dd0461d9ad10f2138876eeb24382aeafb474cfd`  
-		Last Modified: Wed, 14 Mar 2018 10:47:08 GMT  
-		Size: 953.0 B  
+	-	`sha256:f2d41f9201a498ccc86a91f9e83f8efe900fd336715f2014edbb9369f2d7961f`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 973.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hola-mundo:latest` - windows version 10.0.16299.309; amd64
+### `hola-mundo:latest` - windows version 10.0.16299.371; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:9c22078ccbcce2d1909eb5ca613b17ef264f6d88e582d0fc13a2e8f5b7125c4e
+$ docker pull hola-mundo@sha256:f5ffa37911157fa3900c08522093eee8605868725b25b13a28b67020d46e3610
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127288387 bytes)**  
+-	Total Size: **128.5 MB (128507067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f0872a9cc90f3cb155d9706ab1cedf5faf09acd9547ccebc718970462e67e7d`
+-	Image ID: `sha256:6aa6d9f07433452e7de9240fcc31bf7a09720493e013d359b2e1a6dedeac8d6c`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 09:50:38 GMT
 RUN Apply image 10.0.16299.15
-# Mon, 05 Mar 2018 01:53:57 GMT
-RUN Install update 10.0.16299.309
-# Wed, 14 Mar 2018 10:46:58 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:59 GMT
+# Mon, 02 Apr 2018 17:06:42 GMT
+RUN Install update 10.0.16299.371
+# Thu, 12 Apr 2018 09:50:50 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:54 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -279,17 +279,17 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ebc0041967d6ebf38de2a33ade241e7e7541b04ce12c5455452272e3bcaa08f`  
-		Last Modified: Tue, 13 Mar 2018 01:07:25 GMT  
-		Size: 46.2 MB (46246002 bytes)  
+	-	`sha256:09d5497005b498201371f0568d85a140f5349d3ea1ce7e336f5c5ccbad8195f0`  
+		Last Modified: Tue, 10 Apr 2018 16:33:37 GMT  
+		Size: 47.5 MB (47464738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c532292a59e2b81cf016231a3bd279259a9b8862bcfe123c13eb314baf341188`  
-		Last Modified: Wed, 14 Mar 2018 10:47:17 GMT  
-		Size: 1.7 KB (1699 bytes)  
+	-	`sha256:e517ab9e1093e38579cf2fc4639307cc87338fb354d7e1b11a614ea327ea9614`  
+		Last Modified: Thu, 12 Apr 2018 09:51:35 GMT  
+		Size: 1.6 KB (1627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c6786322f984b734333294707db3939c52ed25d8151695d1fdc78e920a0e96b`  
-		Last Modified: Wed, 14 Mar 2018 10:47:23 GMT  
-		Size: 947.0 B  
+	-	`sha256:74cd9368602a642577a686520f9388359f1467039c64548b688436e61ee5bbfd`  
+		Last Modified: Thu, 12 Apr 2018 09:51:34 GMT  
+		Size: 963.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `hola-mundo:linux`
@@ -493,35 +493,35 @@ CMD ["/hello"]
 ## `hola-mundo:nanoserver`
 
 ```console
-$ docker pull hola-mundo@sha256:56e0b1d834616a0ed6016e60c573b8033f784f33e56c639c9cea00102488e3f8
+$ docker pull hola-mundo@sha256:460edf0275a45fe5e74906ed7372b68f51729099d58754ba935d5659747d62bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2125; amd64
-	-	windows version 10.0.16299.309; amd64
+	-	windows version 10.0.14393.2189; amd64
+	-	windows version 10.0.16299.371; amd64
 
-### `hola-mundo:nanoserver` - windows version 10.0.14393.2125; amd64
+### `hola-mundo:nanoserver` - windows version 10.0.14393.2189; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:94ed7b4663c11dfae0171c328b3bcf503510fb0ed9045b374de3dd3bea2734cb
+$ docker pull hola-mundo@sha256:9db5b54bbfc1afcd574975270411fb392fda0a6e181b1ac29be8eedd10d6d52c
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.7 MB (408696944 bytes)**  
+-	Total Size: **407.9 MB (407946181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c207313f35143efae80e80bad41a0ed6855afaa078333819c79b1ed86811afd`
+-	Image ID: `sha256:9167234fe8386d79a64133918109e1f8f376a90cc7d62a785b20b830b67e2838`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Tue, 13 Mar 2018 00:52:57 GMT
-RUN Install update 10.0.14393.2125
-# Wed, 14 Mar 2018 10:46:52 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:53 GMT
+# Fri, 06 Apr 2018 21:37:58 GMT
+RUN Install update 10.0.14393.2189
+# Thu, 12 Apr 2018 09:50:11 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:16 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -530,40 +530,40 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5b557cd80a9856d964887c4ea407b85fca10ce6aaa539984be9dd3570c60fd66`  
-		Last Modified: Tue, 13 Mar 2018 00:52:57 GMT  
-		Size: 156.0 MB (156003306 bytes)  
+	-	`sha256:83eec61707e8c8a926a02da0ac7156cf6b64d3630672a6790004f10b87ae805b`  
+		Last Modified: Fri, 06 Apr 2018 21:37:58 GMT  
+		Size: 155.3 MB (155252511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e900ef789fc0cf2fc07f4a43466617fbfb7036ca258766be0c2ef632ae5b58b1`  
-		Last Modified: Wed, 14 Mar 2018 10:47:09 GMT  
-		Size: 1.7 KB (1683 bytes)  
+	-	`sha256:4db5cec3236d8b6a5e136610d8b7bef330ddd79ffb5041a5868ddc7d162effab`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4dad529587c26cb4ccc527c1dd0461d9ad10f2138876eeb24382aeafb474cfd`  
-		Last Modified: Wed, 14 Mar 2018 10:47:08 GMT  
-		Size: 953.0 B  
+	-	`sha256:f2d41f9201a498ccc86a91f9e83f8efe900fd336715f2014edbb9369f2d7961f`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 973.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hola-mundo:nanoserver` - windows version 10.0.16299.309; amd64
+### `hola-mundo:nanoserver` - windows version 10.0.16299.371; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:9c22078ccbcce2d1909eb5ca613b17ef264f6d88e582d0fc13a2e8f5b7125c4e
+$ docker pull hola-mundo@sha256:f5ffa37911157fa3900c08522093eee8605868725b25b13a28b67020d46e3610
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127288387 bytes)**  
+-	Total Size: **128.5 MB (128507067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f0872a9cc90f3cb155d9706ab1cedf5faf09acd9547ccebc718970462e67e7d`
+-	Image ID: `sha256:6aa6d9f07433452e7de9240fcc31bf7a09720493e013d359b2e1a6dedeac8d6c`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 09:50:38 GMT
 RUN Apply image 10.0.16299.15
-# Mon, 05 Mar 2018 01:53:57 GMT
-RUN Install update 10.0.16299.309
-# Wed, 14 Mar 2018 10:46:58 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:59 GMT
+# Mon, 02 Apr 2018 17:06:42 GMT
+RUN Install update 10.0.16299.371
+# Thu, 12 Apr 2018 09:50:50 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:54 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -572,50 +572,50 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ebc0041967d6ebf38de2a33ade241e7e7541b04ce12c5455452272e3bcaa08f`  
-		Last Modified: Tue, 13 Mar 2018 01:07:25 GMT  
-		Size: 46.2 MB (46246002 bytes)  
+	-	`sha256:09d5497005b498201371f0568d85a140f5349d3ea1ce7e336f5c5ccbad8195f0`  
+		Last Modified: Tue, 10 Apr 2018 16:33:37 GMT  
+		Size: 47.5 MB (47464738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c532292a59e2b81cf016231a3bd279259a9b8862bcfe123c13eb314baf341188`  
-		Last Modified: Wed, 14 Mar 2018 10:47:17 GMT  
-		Size: 1.7 KB (1699 bytes)  
+	-	`sha256:e517ab9e1093e38579cf2fc4639307cc87338fb354d7e1b11a614ea327ea9614`  
+		Last Modified: Thu, 12 Apr 2018 09:51:35 GMT  
+		Size: 1.6 KB (1627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c6786322f984b734333294707db3939c52ed25d8151695d1fdc78e920a0e96b`  
-		Last Modified: Wed, 14 Mar 2018 10:47:23 GMT  
-		Size: 947.0 B  
+	-	`sha256:74cd9368602a642577a686520f9388359f1467039c64548b688436e61ee5bbfd`  
+		Last Modified: Thu, 12 Apr 2018 09:51:34 GMT  
+		Size: 963.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `hola-mundo:nanoserver-1709`
 
 ```console
-$ docker pull hola-mundo@sha256:047c37fa47207829a82d6c38582d8196c0ea887d0b4384008ff4e188abad0800
+$ docker pull hola-mundo@sha256:854492978c007f63e6f1e87ac98e788659998a50d21576306454a7b4be4cb4e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.309; amd64
+	-	windows version 10.0.16299.371; amd64
 
-### `hola-mundo:nanoserver-1709` - windows version 10.0.16299.309; amd64
+### `hola-mundo:nanoserver-1709` - windows version 10.0.16299.371; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:9c22078ccbcce2d1909eb5ca613b17ef264f6d88e582d0fc13a2e8f5b7125c4e
+$ docker pull hola-mundo@sha256:f5ffa37911157fa3900c08522093eee8605868725b25b13a28b67020d46e3610
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127288387 bytes)**  
+-	Total Size: **128.5 MB (128507067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f0872a9cc90f3cb155d9706ab1cedf5faf09acd9547ccebc718970462e67e7d`
+-	Image ID: `sha256:6aa6d9f07433452e7de9240fcc31bf7a09720493e013d359b2e1a6dedeac8d6c`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 09:50:38 GMT
 RUN Apply image 10.0.16299.15
-# Mon, 05 Mar 2018 01:53:57 GMT
-RUN Install update 10.0.16299.309
-# Wed, 14 Mar 2018 10:46:58 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:59 GMT
+# Mon, 02 Apr 2018 17:06:42 GMT
+RUN Install update 10.0.16299.371
+# Thu, 12 Apr 2018 09:50:50 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:54 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -624,50 +624,50 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ebc0041967d6ebf38de2a33ade241e7e7541b04ce12c5455452272e3bcaa08f`  
-		Last Modified: Tue, 13 Mar 2018 01:07:25 GMT  
-		Size: 46.2 MB (46246002 bytes)  
+	-	`sha256:09d5497005b498201371f0568d85a140f5349d3ea1ce7e336f5c5ccbad8195f0`  
+		Last Modified: Tue, 10 Apr 2018 16:33:37 GMT  
+		Size: 47.5 MB (47464738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c532292a59e2b81cf016231a3bd279259a9b8862bcfe123c13eb314baf341188`  
-		Last Modified: Wed, 14 Mar 2018 10:47:17 GMT  
-		Size: 1.7 KB (1699 bytes)  
+	-	`sha256:e517ab9e1093e38579cf2fc4639307cc87338fb354d7e1b11a614ea327ea9614`  
+		Last Modified: Thu, 12 Apr 2018 09:51:35 GMT  
+		Size: 1.6 KB (1627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c6786322f984b734333294707db3939c52ed25d8151695d1fdc78e920a0e96b`  
-		Last Modified: Wed, 14 Mar 2018 10:47:23 GMT  
-		Size: 947.0 B  
+	-	`sha256:74cd9368602a642577a686520f9388359f1467039c64548b688436e61ee5bbfd`  
+		Last Modified: Thu, 12 Apr 2018 09:51:34 GMT  
+		Size: 963.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `hola-mundo:nanoserver-sac2016`
 
 ```console
-$ docker pull hola-mundo@sha256:da109db55e9d6a44ce0f9558423cc5e4b85e6d8a3dc0e8575efe8a96b68a1190
+$ docker pull hola-mundo@sha256:73727ebeab97d4e67d35a67d510b3a3062317abf09ff69814591ec34e2579a35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2125; amd64
+	-	windows version 10.0.14393.2189; amd64
 
-### `hola-mundo:nanoserver-sac2016` - windows version 10.0.14393.2125; amd64
+### `hola-mundo:nanoserver-sac2016` - windows version 10.0.14393.2189; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:94ed7b4663c11dfae0171c328b3bcf503510fb0ed9045b374de3dd3bea2734cb
+$ docker pull hola-mundo@sha256:9db5b54bbfc1afcd574975270411fb392fda0a6e181b1ac29be8eedd10d6d52c
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.7 MB (408696944 bytes)**  
+-	Total Size: **407.9 MB (407946181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c207313f35143efae80e80bad41a0ed6855afaa078333819c79b1ed86811afd`
+-	Image ID: `sha256:9167234fe8386d79a64133918109e1f8f376a90cc7d62a785b20b830b67e2838`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Tue, 13 Mar 2018 00:52:57 GMT
-RUN Install update 10.0.14393.2125
-# Wed, 14 Mar 2018 10:46:52 GMT
-RUN cmd /S /C #(nop) COPY file:eaff51099b4f6a2fcf020c7b16acf09ef8f3c2802c4417b65b14efe9b0540dd8 in C: 
-# Wed, 14 Mar 2018 10:46:53 GMT
+# Fri, 06 Apr 2018 21:37:58 GMT
+RUN Install update 10.0.14393.2189
+# Thu, 12 Apr 2018 09:50:11 GMT
+RUN cmd /S /C #(nop) COPY file:30c2f29ade1ee7efbfd09310655094eb71bc50476bba2ddd6f836c126778822b in C: 
+# Thu, 12 Apr 2018 09:50:16 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -676,15 +676,15 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5b557cd80a9856d964887c4ea407b85fca10ce6aaa539984be9dd3570c60fd66`  
-		Last Modified: Tue, 13 Mar 2018 00:52:57 GMT  
-		Size: 156.0 MB (156003306 bytes)  
+	-	`sha256:83eec61707e8c8a926a02da0ac7156cf6b64d3630672a6790004f10b87ae805b`  
+		Last Modified: Fri, 06 Apr 2018 21:37:58 GMT  
+		Size: 155.3 MB (155252511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e900ef789fc0cf2fc07f4a43466617fbfb7036ca258766be0c2ef632ae5b58b1`  
-		Last Modified: Wed, 14 Mar 2018 10:47:09 GMT  
-		Size: 1.7 KB (1683 bytes)  
+	-	`sha256:4db5cec3236d8b6a5e136610d8b7bef330ddd79ffb5041a5868ddc7d162effab`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4dad529587c26cb4ccc527c1dd0461d9ad10f2138876eeb24382aeafb474cfd`  
-		Last Modified: Wed, 14 Mar 2018 10:47:08 GMT  
-		Size: 953.0 B  
+	-	`sha256:f2d41f9201a498ccc86a91f9e83f8efe900fd336715f2014edbb9369f2d7961f`  
+		Last Modified: Thu, 12 Apr 2018 09:51:27 GMT  
+		Size: 973.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
