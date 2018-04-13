@@ -1,10 +1,10 @@
-# `rocket.chat:0.62.2`
+# `rocket.chat:0.63.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c83e802e871f6955ce86637d603bde47c095c3965f5168ea48274b415619fb37`
-- Created: `2018-03-16T02:23:59.915253752Z`
-- Virtual Size: ~ 749.33 Mb  
+- Image ID: `sha256:f0b728e9e2138383f010b038d0a34a7f367a0ae589806f2bca3c3f6cdf0b15a0`
+- Created: `2018-04-11T18:36:41.644660479Z`
+- Virtual Size: ~ 754.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=8.9.4`
   - `YARN_VERSION=1.3.2`
-  - `RC_VERSION=0.62.2`
+  - `RC_VERSION=0.63.1`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
@@ -2179,6 +2179,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/
 
 
 ### `dpkg` source package: `ustr=1.0.4-3`
