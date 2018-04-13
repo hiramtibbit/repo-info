@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:1c7d5a8eae0e5717cbb0e1d40d7a9589889cbc563d1ac96ac282f09ab9bc324a
+$ docker pull buildpack-deps@sha256:33f9c3bc33639f9b839959cfb6c7ff0081b289e0fdc04c951fa4b623423e45ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -190,14 +190,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:xenial-curl` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:91157b6f341052507fa3633121be8d69440393eed3f09e5b1f71aa5a5d04318d
+$ docker pull buildpack-deps@sha256:7cf584c58bbaf13775442fa6577a05c3141500057e17e3ee8bb568d8be355448
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.7 MB (50738773 bytes)**  
+-	Total Size: **50.7 MB (50738968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9830bafad58cc570d7b7aa7c76cf2a40a7b1dc013c14f0c45181427877740b8e`
+-	Image ID: `sha256:24e316f5ec6102f25a2c64149753fa0e0773309171f0b84512695e777c322b1f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -213,9 +213,9 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Thu, 08 Mar 2018 04:36:43 GMT
 CMD ["/bin/bash"]
-# Thu, 08 Mar 2018 11:10:35 GMT
+# Fri, 13 Apr 2018 22:20:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 08 Mar 2018 11:10:36 GMT
+# Fri, 13 Apr 2018 22:20:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -240,9 +240,9 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Thu, 08 Mar 2018 05:31:52 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cebcc1a9db391cec888b71d7d0504061ca40df4d60f73a3192ae37e1cf161897`  
-		Last Modified: Thu, 08 Mar 2018 13:14:25 GMT  
-		Size: 7.5 MB (7457612 bytes)  
+	-	`sha256:d3cc8e850de25c0f51f9e262a1be882d329d28a27d83c34c72e84a456ba503d4`  
+		Last Modified: Fri, 13 Apr 2018 22:36:31 GMT  
+		Size: 7.5 MB (7457807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:xenial-curl` - linux; ppc64le
