@@ -1,7 +1,7 @@
 ## `hello-seattle:latest`
 
 ```console
-$ docker pull hello-seattle@sha256:d750d1722c0791546d52b7a8eecf343e2786b9783a680aefff456a8799e61d2c
+$ docker pull hello-seattle@sha256:93cdcb901826410633ef2a18052b6a1ffc72f14a3323ddc94023ff58f4171d49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -123,27 +123,27 @@ CMD ["/hello"]
 ### `hello-seattle:latest` - linux; 386
 
 ```console
-$ docker pull hello-seattle@sha256:f9ec1f6ab501490e3a2eab74e0af6eef48aecbd9bd7c6814750634567738fe42
+$ docker pull hello-seattle@sha256:2179f14653fcbbe6140ab12614a625b1d476700e33880e327de9a7f05f040c2b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.1 KB (312094 bytes)**  
+-	Total Size: **312.1 KB (312108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abac3a9df8220065cf0b2cc8246fc5dcdc65e54e42dd897dd0a2023ef9ab9783`
+-	Image ID: `sha256:b00f0eb7e2539c04e49ddbe55e9c81d3d154c31bc720a357ec24b550d2d435c7`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Tue, 21 Nov 2017 09:36:38 GMT
-COPY file:6d9a4cc9ccfa1768de8dea5c683b8d6707d2cb450634f77f1abbb5cb610938c6 in / 
-# Tue, 21 Nov 2017 09:36:38 GMT
+# Fri, 13 Apr 2018 20:24:47 GMT
+COPY file:afeacb8b1ef30a474c65c552e65bd559d4f268c6cd404967dbee37bc5e495c7e in / 
+# Fri, 13 Apr 2018 20:24:47 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:6b7cce5abd9917ed626cefd5ef11d581072f2fcf20b9214544a1483d1094eee1`  
-		Last Modified: Tue, 21 Nov 2017 09:36:55 GMT  
-		Size: 312.1 KB (312094 bytes)  
+	-	`sha256:4960896d07a74aaf97bc092bac1c46e9e73b69b236852bb2e7a1dcd6b1547b32`  
+		Last Modified: Fri, 13 Apr 2018 20:24:53 GMT  
+		Size: 312.1 KB (312108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-seattle:latest` - linux; ppc64le
