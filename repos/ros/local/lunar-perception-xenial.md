@@ -1425,14 +1425,9 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ffmpeg=7:2.8.11-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.11-0ubuntu0.16.04.1.dsc' ffmpeg_2.8.11-0ubuntu0.16.04.1.dsc 4531 SHA256:6b6152b95427ab1e2e7fb0015df71f0e565f5feb215f7b060fbe130ef2961890
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.11.orig.tar.xz' ffmpeg_2.8.11.orig.tar.xz 7214980 SHA256:38aa3aec93c480b34d33f3648aff9278581d151488b521995c084258613e1fe6
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.11-0ubuntu0.16.04.1.debian.tar.xz' ffmpeg_2.8.11-0ubuntu0.16.04.1.debian.tar.xz 43952 SHA256:50a7fc2738e3605eff714d63e6a8c0bc2bad290d02c39f1eb967f7af451918b9
-```
 
 ### `dpkg` source package: `file=1:5.25-2ubuntu1`
 
