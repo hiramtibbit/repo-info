@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b6311badb97c9618ab6a427a5f65198bd575291f8f3dcc1005c52e43fad8801`
-- Created: `2018-03-29T03:01:40.592056352Z`
-- Virtual Size: ~ 287.91 Mb  
+- Image ID: `sha256:f30e16b12de2989a0b34fca471e65eeeb77b0bc3effd0809cfcf2262c0d59140`
+- Created: `2018-04-12T20:00:27.208623104Z`
+- Virtual Size: ~ 287.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
   - `DEB_PACKAGE_VERSION=1`
-  - `ARANGO_VERSION=3.3.5`
+  - `ARANGO_VERSION=3.3.7`
   - `ARANGO_URL=https://download.arangodb.com/arangodb33/Debian_9.0`
-  - `ARANGO_PACKAGE=arangodb3-3.3.5-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.5-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.5-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3-3.3.7-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.7-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.7-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -97,11 +97,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `arangodb3=3.3.5`
+### `dpkg` source package: `arangodb3=3.3.7`
 
 Binary Packages:
 
-- `arangodb3=3.3.5`
+- `arangodb3=3.3.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1753,11 +1753,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2l-2+deb9u2`
+### `dpkg` source package: `openssl1.0=1.0.2l-2+deb9u3`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2l-2+deb9u2`
+- `libssl1.0.2:amd64=1.0.2l-2+deb9u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1766,24 +1766,24 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2l-2+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u2.dsc' openssl1.0_1.0.2l-2+deb9u2.dsc 2301 SHA256:8e2a5b1fd3d8ea79725be9c82a302655a60b99194b28fc212bc8d01ee8995ce1
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u2.debian.tar.xz' openssl1.0_1.0.2l-2+deb9u2.debian.tar.xz 80440 SHA256:e9a3860447e58bfc770d5832a5e5a50d25a6bcaff3f3838a056887e3a612be77
+$ apt-get source -qq --print-uris openssl1.0=1.0.2l-2+deb9u3
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u3.dsc' openssl1.0_1.0.2l-2+deb9u3.dsc 2334 SHA256:4ce97a52d5bc823460b8ff141892cb2992023b78b241222edc972f9f1b68a034
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u3.debian.tar.xz' openssl1.0_1.0.2l-2+deb9u3.debian.tar.xz 82444 SHA256:ad0dc072f5a9c7b05f143894b6592a328ce0789c0e4fb2debd1eef52182409e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl1.0/1.0.2l-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2l-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3+deb9u1`
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3+deb9u1`
-- `openssl=1.1.0f-3+deb9u1`
+- `libssl1.1:amd64=1.1.0f-3+deb9u2`
+- `openssl=1.1.0f-3+deb9u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1792,17 +1792,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
