@@ -4,6 +4,7 @@
 
 -	[`couchbase:4.6.4`](#couchbase464)
 -	[`couchbase:5.1.0`](#couchbase510)
+-	[`couchbase:5.5.0-beta`](#couchbase550-beta)
 -	[`couchbase:community`](#couchbasecommunity)
 -	[`couchbase:community-4.5.1`](#couchbasecommunity-451)
 -	[`couchbase:community-5.0.1`](#couchbasecommunity-501)
@@ -291,6 +292,10 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Thu, 12 Apr 2018 22:28:16 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchbase:5.5.0-beta`
+
+**does not exist** (yet?)
 
 ## `couchbase:community`
 
