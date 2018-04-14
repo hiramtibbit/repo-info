@@ -488,19 +488,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20170930
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170930.dsc' ca-certificates-java_20170930.dsc 1813 SHA256:737af3f4b8aee01a8c21414441f0bac0a77ecbb71c4cb1ef0722c9166e45402d
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170930.tar.xz' ca-certificates-java_20170930.tar.xz 16324 SHA256:369855f552500446e9dfcf5e5ae7e1225315cdf5a9880944ca03865f2d880e91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates-java/20170930/
 
-- https://sources.debian.net/src/ca-certificates-java/20170930/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates-java/20170930/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates-java/20170930/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20170717`
 
@@ -674,21 +668,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.7-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-2.dsc' cups_2.2.7-2.dsc 3467 SHA256:d548e9668d9ce3854787da3009761bfa76b3e3c484111707d58d8c71b856bb98
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-2.debian.tar.xz' cups_2.2.7-2.debian.tar.xz 350040 SHA256:9cc7d59971c1ec8ef918779177f342bfd803c785cb9c759dff0767e5fdb22a2c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.7-2/
 
-- https://sources.debian.net/src/cups/2.2.7-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.58.0-2`
 
@@ -2862,20 +2848,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.62.0-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.62.0-1.dsc' libsoup2.4_2.62.0-1.dsc 2710 SHA256:bbbf3700ab5f7634aed871ed6e543284a9391cc8db9e871bf56eab670a9f0f13
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.62.0.orig.tar.xz' libsoup2.4_2.62.0.orig.tar.xz 1838052 SHA256:ab7c7ae8d19d0a27ab3b6ae21599cec8c7f7b773b3f2b1090c5daf178373aaac
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.62.0-1.debian.tar.xz' libsoup2.4_2.62.0-1.debian.tar.xz 18528 SHA256:4b533563a3c8df5534980a82060bcdb084b972e06361ade7b68ea94ffdd1b6f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.62.0-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.62.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.62.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.62.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
 
@@ -4303,20 +4282,13 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.13-1
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.13-1.dsc' procps_3.3.13-1.dsc 2104 SHA256:9f3d3c60a3a0b15a578b4cedcb10960fdb0c2d660ae7b916e13d86bbf1cd1e2c
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.13.orig.tar.xz' procps_3.3.13.orig.tar.xz 900508 SHA256:62c05f1fcd165c65dffe0034a5e89a54fb2341bee3d637b15f839cb9f5562ab1
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.13-1.debian.tar.xz' procps_3.3.13-1.debian.tar.xz 27484 SHA256:f9b58ff7af092c5ca7d659b62386ae2e8b601ef5f2a77ce734bc1d0e57f0a8d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:3.3.13-1/
 
-- https://sources.debian.net/src/procps/2:3.3.13-1/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `psmisc=23.1-1`
 
@@ -4512,21 +4484,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.23.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.0-1.dsc' sqlite3_3.23.0-1.dsc 2397 SHA256:628afe17e6ad3734263c303da3f5ab8e722fc8b31dde094c315d682c694ab0ce
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.0.orig-www.tar.xz' sqlite3_3.23.0.orig-www.tar.xz 5273848 SHA256:febbdb9d41a9edb7e31729f6acae62b4a976d963550d4434fe8afbb6d1837717
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.0.orig.tar.xz' sqlite3_3.23.0.orig.tar.xz 6092376 SHA256:6861206aac0b69af2afef8cc975d8db69b1715919b623c74e6b72bae9f6f0702
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.0-1.debian.tar.xz' sqlite3_3.23.0-1.debian.tar.xz 17416 SHA256:da42c145c993d59fccef08e16dae3ab83e30b314478329f4778f747e632dab31
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.23.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.23.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.23.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.23.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 
