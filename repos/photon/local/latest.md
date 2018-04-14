@@ -1,10 +1,10 @@
-# `photon:2.0-20180302`
+# `photon:2.0-20180409`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fae43774d4149ee29f274212dd6935fb365d2e05be29e1d6eef215a052e30f9`
-- Created: `2018-04-02T22:12:26.464931648Z`
-- Virtual Size: ~ 32.13 Mb  
+- Image ID: `sha256:8ae11d8476f789740de2024069d37768be6b17333cb2cd2c5cfdb5492a2db5ef`
+- Created: `2018-04-12T20:16:04.004019034Z`
+- Virtual Size: ~ 32.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
