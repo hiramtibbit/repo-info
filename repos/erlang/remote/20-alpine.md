@@ -1,7 +1,7 @@
 ## `erlang:20-alpine`
 
 ```console
-$ docker pull erlang@sha256:44e4b6f36f4bfc7818b055658757e98ac56d21910552cf0dd6f8d0bd575a9535
+$ docker pull erlang@sha256:0100d872f0376707e77e11ed0f7b50cf7f23b55e8144afde27fbe7368a945bd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -93,14 +93,14 @@ CMD ["erl"]
 ### `erlang:20-alpine` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:01a875268ab315dc5c1c393cd26de24377df2472b9c7c45c0821ce105737ef6a
+$ docker pull erlang@sha256:601f2608e59c1b7102b99ca5c06e7cdf684f6329a31a6a3b591d730f0eb6e865
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.5 MB (46539794 bytes)**  
+-	Total Size: **46.5 MB (46540412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82c184ab714eb457922278ec80d9a83031aa551c83959b35a53a6d18a6122a1e`
+-	Image ID: `sha256:6b4b57d264a3efd6b0c7feed14b2e60be8f480b75a0b7b1134e68975cc87e68d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -110,11 +110,11 @@ ADD file:614c07101e677db9a4118a71c852a2be45a337d94c5bedfb48ae8c4cad21d625 in /
 COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
 # Fri, 01 Dec 2017 18:46:48 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Mar 2018 00:46:37 GMT
+# Sat, 14 Apr 2018 03:52:16 GMT
 ENV OTP_VERSION=20.3.2
-# Wed, 28 Mar 2018 00:56:02 GMT
+# Sat, 14 Apr 2018 04:01:10 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="9809be52baa23d6fd18ee70b9a9b7c548e44f586db2f46ff5bfe66719cfab10a" 	&& apk add --no-cache --virtual .fetch-deps 		curl 		ca-certificates 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& apk add --no-cache --virtual .build-deps 		dpkg-dev dpkg 		gcc 		g++ 		libc-dev 		linux-headers 		make 		autoconf 		ncurses-dev 		openssl-dev 		unixodbc-dev 		lksctp-tools-dev 		tar 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(getconf _NPROCESSORS_ONLN) 	  && make install ) 	&& rm -rf $ERL_TOP 	&& find /usr/local -regex '/usr/local/lib/erlang/\(lib/\|erts-\).*/\(man\|doc\|obj\|c_src\|emacs\|info\|examples\)' | xargs rm -rf 	&& find /usr/local -name src | xargs -r find | grep -v '\.hrl$' | xargs rm -v || true 	&& find /usr/local -name src | xargs -r find | xargs rmdir -vp || true 	&& scanelf --nobanner -E ET_EXEC -BF '%F' --recursive /usr/local | xargs -r strip --strip-all 	&& scanelf --nobanner -E ET_DYN -BF '%F' --recursive /usr/local | xargs -r strip --strip-unneeded 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --virtual .erlang-rundeps $runDeps lksctp-tools 	&& apk del .fetch-deps .build-deps
-# Wed, 28 Mar 2018 00:56:02 GMT
+# Sat, 14 Apr 2018 04:01:11 GMT
 CMD ["erl"]
 ```
 
@@ -127,9 +127,9 @@ CMD ["erl"]
 		Last Modified: Fri, 01 Dec 2017 18:47:24 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1edacb7cfa34011b8b68d1d87ac2c59295515fce61d785997e571756f0ed22d0`  
-		Last Modified: Wed, 28 Mar 2018 02:44:30 GMT  
-		Size: 44.4 MB (44413402 bytes)  
+	-	`sha256:ddba6fe669133c78f85a9397eb5066449e6ffe5e7a915ac62e42f1f95cad4946`  
+		Last Modified: Sat, 14 Apr 2018 04:54:57 GMT  
+		Size: 44.4 MB (44414020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20-alpine` - linux; ppc64le
