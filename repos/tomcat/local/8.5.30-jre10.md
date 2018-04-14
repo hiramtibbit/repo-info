@@ -1,10 +1,10 @@
-# `tomcat:8.5.30-jre9`
+# `tomcat:8.5.30-jre10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:333b4533cc5aa70aa01dc4268c4dc7286391ac73cf497798d2e58257b826ea74`
-- Created: `2018-04-11T20:53:12.605451649Z`
-- Virtual Size: ~ 684.71 Mb  
+- Image ID: `sha256:1f9b5b27a5b7e0fd44a14461c6a7a0f02419ade947ccf08c2891cf73db91107b`
+- Created: `2018-04-11T21:11:03.12856695Z`
+- Virtual Size: ~ 684.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=9.0.4+12`
-  - `JAVA_DEBIAN_VERSION=9.0.4+12-4`
+  - `JAVA_VERSION=10-ea+46`
+  - `JAVA_DEBIAN_VERSION=10~46-4`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -4118,14 +4118,14 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/nss/2:3.35-2/
 
 
-### `dpkg` source package: `openjdk-9=9.0.4+12-4`
+### `dpkg` source package: `openjdk-10=10~46-4`
 
 Binary Packages:
 
-- `openjdk-9-jre:amd64=9.0.4+12-4`
-- `openjdk-9-jre-headless:amd64=9.0.4+12-4`
+- `openjdk-10-jre:amd64=10~46-4`
+- `openjdk-10-jre-headless:amd64=10~46-4`
 
-Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre/copyright`, `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
 - `Apache-2.0`
 - `GPL-2`
@@ -4135,17 +4135,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9.0.4+12-4
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.dsc' openjdk-9_9.0.4+12-4.dsc 4537 SHA256:48acf924cc36c0ae418dac6233b3c8684afbf448f8a89e701b268948797505db
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12.orig.tar.gz' openjdk-9_9.0.4+12.orig.tar.gz 74731050 SHA256:8d64b95249959bfe5ee9dcc1c802476ceaad5bf88041129dc072484b39f25fcc
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.debian.tar.xz' openjdk-9_9.0.4+12-4.debian.tar.xz 175244 SHA256:1219f9a6c693a3fa349276a3ba7009d9889a6eb506fe8043715a8ccd08e65b12
+$ apt-get source -qq --print-uris openjdk-10=10~46-4
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-4.dsc' openjdk-10_10~46-4.dsc 4515 SHA256:0ef2c14c1d7ef8001d26ad27ab964463ce0bca6a528a0a5d791098e54856b3c8
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46.orig.tar.xz' openjdk-10_10~46.orig.tar.xz 73871700 SHA256:b5aa0739753ea1357341e31783efc2ab1398e602b8c964ce537e78231ca45eb1
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-4.debian.tar.xz' openjdk-10_10~46-4.debian.tar.xz 167992 SHA256:40a5d78dfd5568888e8e311c5a3a5c3e9c62db907b8fb983f6b07825d43b04e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-10/10~46-4/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10~46-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10~46-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 

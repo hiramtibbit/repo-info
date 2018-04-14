@@ -1,10 +1,10 @@
-# `tomcat:8.5.29-jre9-slim`
+# `tomcat:8.5.30-jre9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:778039bdec31e7ed73c3d9f50fb03e3333f2267514310491f2a1806a96f2e021`
-- Created: `2018-03-28T19:25:15.020909978Z`
-- Virtual Size: ~ 309.22 Mb  
+- Image ID: `sha256:066ecdb415a85e8f8dfbc35e5f0dde8caa2f686ff8b69e27d89761ba43de9ac5`
+- Created: `2018-04-11T21:09:10.992469419Z`
+- Virtual Size: ~ 321.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,17 +13,17 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=9.0.4+12`
-  - `JAVA_DEBIAN_VERSION=9.0.4+12-3`
+  - `JAVA_DEBIAN_VERSION=9.0.4+12-4`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
+  - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.29`
-  - `TOMCAT_SHA1=fdc2ac85282af82a494e352c35e33dcfe1dbab6b`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.30`
+  - `TOMCAT_SHA512=f7e84fed604dc183dc1bdad07f3b025547d95d024ccfb05da68f5f45256f3082af6ba28c7f0148ae4ee43637248a0074c92bb12198ab58331d0c4f04906b86b6`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.30/bin/apache-tomcat-8.5.30.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -315,25 +315,19 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20170930
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170930.dsc' ca-certificates-java_20170930.dsc 1813 SHA256:737af3f4b8aee01a8c21414441f0bac0a77ecbb71c4cb1ef0722c9166e45402d
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170930.tar.xz' ca-certificates-java_20170930.tar.xz 16324 SHA256:369855f552500446e9dfcf5e5ae7e1225315cdf5a9880944ca03865f2d880e91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates-java/20170930/
 
-- https://sources.debian.net/src/ca-certificates-java/20170930/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates-java/20170930/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates-java/20170930/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20170717`
+### `dpkg` source package: `ca-certificates=20180409`
 
 Binary Packages:
 
-- `ca-certificates=20170717`
+- `ca-certificates=20180409`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -344,16 +338,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20170717
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.dsc' ca-certificates_20170717.dsc 1506 SHA256:da6268ff88e05c85c23c62add13d3d127087467d0c7e83974ca28db5543a252a
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz' ca-certificates_20170717.tar.xz 293028 SHA256:e487639b641fa75445174734dd6e9d600373e3248b3d86a7e3c6d0f6977decd2
+$ apt-get source -qq --print-uris ca-certificates=20180409
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20180409.dsc' ca-certificates_20180409.dsc 1420 SHA256:cd1f6540d0dab28f897e0e0cb2191130cdbf897f8ce3f52c8e483b2ed1555d30
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20180409.tar.xz' ca-certificates_20180409.tar.xz 246908 SHA256:7af6f5bfc619fd29cbf0258c1d95107c38ce840ad6274e343e1e0d971fc72b51
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20170717/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20170717/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20170717/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20180409/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20180409/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20180409/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.241`
 
@@ -399,11 +393,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.28-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.2.7-1`
+### `dpkg` source package: `cups=2.2.7-2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.7-1`
+- `libcups2:amd64=2.2.7-2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -419,7 +413,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/cups/2.2.7-1/
+- http://snapshot.debian.org/package/cups/2.2.7-2/
 
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
@@ -738,13 +732,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/freetype/2.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/freetype/2.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-8=8-20180321-1`
+### `dpkg` source package: `gcc-8=8-20180402-1`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8-20180321-1`
-- `libgcc1:amd64=1:8-20180321-1`
-- `libstdc++6:amd64=8-20180321-1`
+- `gcc-8-base:amd64=8-20180402-1`
+- `libgcc1:amd64=1:8-20180402-1`
+- `libstdc++6:amd64=8-20180402-1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -755,22 +749,28 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gcc-8=8-20180402-1
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402-1.dsc' gcc-8_8-20180402-1.dsc 32339 SHA256:33c0d76a5d23a3a8cf8fd6870d1e2272100b2e44cc1d52977971cd5e150a918d
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402.orig.tar.gz' gcc-8_8-20180402.orig.tar.gz 69143304 SHA256:8ad43abaadb0f5549ef074e1856689b006c1b4bc99525eb82161c7d342cebeb7
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402-1.diff.gz' gcc-8_8-20180402-1.diff.gz 580782 SHA256:17c697a4fa356c4ce2fd73542a6359f0dc6c2b601d8652d3c28249e71d7de7f6
+```
 
-- http://snapshot.debian.org/package/gcc-8/8-20180321-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gcc-8/8-20180402-1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-8/8-20180402-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-8/8-20180402-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-2`
 
 Binary Packages:
 
 - `libc-bin=2.27-2`
-- `libc6:amd64=2.27-2`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -789,6 +789,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.27-2/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.27-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.27-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.27-3`
+
+Binary Packages:
+
+- `libc6:amd64=2.27-3`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.27-3
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27-3.dsc' glibc_2.27-3.dsc 8871 SHA256:08a5adc45b610e50db11f9b03f62011a18ee54978542edb31d44d3273453e1ab
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA256:0e9826488e3ffedb4d14a426d741b7b1cf15f6973ab30762af9a188ad47633ed
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27-3.debian.tar.xz' glibc_2.27-3.debian.tar.xz 970476 SHA256:a01f1287bcb70173e1afc8aef45c6372c5db259f772179dfe0f4bc6a7bb6fc3a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.27-3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.27-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.27-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-3`
 
@@ -989,24 +1015,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.51/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.51/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-common=0.62`
+### `dpkg` source package: `java-common=0.63`
 
 Binary Packages:
 
-- `java-common=0.62`
+- `java-common=0.63`
 
 Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris java-common=0.63
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.63.dsc' java-common_0.63.dsc 2138 SHA256:2058be73966e06acd5e987cc8f3e294a96f9225433c0c08d42ae43e474bc57dd
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.63.tar.xz' java-common_0.63.tar.xz 13340 SHA256:7de62a4be6f6bb1ccbbf136af07e4e673404deb73874136ed43ea087bf80ea48
+```
 
-- http://snapshot.debian.org/package/java-common/0.62/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/java-common/0.63/ (for browsing the source)
+- https://sources.debian.net/src/java-common/0.63/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-common/0.63/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2`
 
@@ -1882,11 +1914,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/nss/2:3.35-2/
 
 
-### `dpkg` source package: `openjdk-9=9.0.4+12-3`
+### `dpkg` source package: `openjdk-9=9.0.4+12-4`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9.0.4+12-3`
+- `openjdk-9-jre-headless:amd64=9.0.4+12-4`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -1895,13 +1927,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-9=9.0.4+12-4
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.dsc' openjdk-9_9.0.4+12-4.dsc 4537 SHA256:48acf924cc36c0ae418dac6233b3c8684afbf448f8a89e701b268948797505db
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12.orig.tar.gz' openjdk-9_9.0.4+12.orig.tar.gz 74731050 SHA256:8d64b95249959bfe5ee9dcc1c802476ceaad5bf88041129dc072484b39f25fcc
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.debian.tar.xz' openjdk-9_9.0.4+12-4.debian.tar.xz 175244 SHA256:1219f9a6c693a3fa349276a3ba7009d9889a6eb506fe8043715a8ccd08e65b12
+```
 
-- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-2`
 
@@ -2146,11 +2185,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.22.0-2`
+### `dpkg` source package: `sqlite3=3.23.0-1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-2`
+- `libsqlite3-0:amd64=3.23.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2163,7 +2202,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/sqlite3/3.22.0-2/
+- http://snapshot.debian.org/package/sqlite3/3.23.0-1/
 
 
 ### `dpkg` source package: `systemd=238-2`
@@ -2190,11 +2229,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/systemd/238-2/
 
 
-### `dpkg` source package: `systemd=238-3`
+### `dpkg` source package: `systemd=238-4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=238-3`
+- `libsystemd0:amd64=238-4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`)
 
@@ -2206,13 +2245,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=238-4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.dsc' systemd_238-4.dsc 4846 SHA256:ce4d11ac2f1a1d4c0e06f031420bea2338eb39182a6cec78d90e53a6f599e792
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.debian.tar.xz' systemd_238-4.debian.tar.xz 139840 SHA256:fd0353528020e4739b68fd7f68aca88df9fcd78cc78cd10e3d187b745a514846
+```
 
-- http://snapshot.debian.org/package/systemd/238-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/238-4/ (for browsing the source)
+- https://sources.debian.net/src/systemd/238-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/238-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 

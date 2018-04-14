@@ -1,10 +1,10 @@
-# `tomcat:8.5.30-jre9-slim`
+# `tomcat:8.5.30-jre10-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:066ecdb415a85e8f8dfbc35e5f0dde8caa2f686ff8b69e27d89761ba43de9ac5`
-- Created: `2018-04-11T21:09:10.992469419Z`
-- Virtual Size: ~ 321.08 Mb  
+- Image ID: `sha256:f353274c6621b5dcc75208e3c601ba0cc2214029e7552cf591ba2fd6c3cd9d09`
+- Created: `2018-04-11T21:13:19.529078479Z`
+- Virtual Size: ~ 320.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=9.0.4+12`
-  - `JAVA_DEBIAN_VERSION=9.0.4+12-4`
+  - `JAVA_VERSION=10-ea+46`
+  - `JAVA_DEBIAN_VERSION=10~46-4`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -646,33 +646,6 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/e2fsprogs/1.44.0-1/
 
-
-### `dpkg` source package: `elfutils=0.170-0.3`
-
-Binary Packages:
-
-- `libelf1:amd64=0.170-0.3`
-
-Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
-
-- `GPL-2`
-- `GPL-3`
-- `LGPL-`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris elfutils=0.170-0.3
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.3.dsc' elfutils_0.170-0.3.dsc 2307 SHA256:4c2da1f50e8b64366d790fe80accc455f1dab073e9e4fef23efd29b1ad724a0e
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.3.debian.tar.xz' elfutils_0.170-0.3.debian.tar.xz 37904 SHA256:9b93f7a034d7441b654d44c5bdb4c3dfa83210d605c90cf021a9c75e30ef8ad3
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/elfutils/0.170-0.3/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.170-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.170-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20171230-2`
 
@@ -1914,13 +1887,13 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/nss/2:3.35-2/
 
 
-### `dpkg` source package: `openjdk-9=9.0.4+12-4`
+### `dpkg` source package: `openjdk-10=10~46-4`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9.0.4+12-4`
+- `openjdk-10-jre-headless:amd64=10~46-4`
 
-Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
 - `Apache-2.0`
 - `GPL-2`
@@ -1930,17 +1903,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9.0.4+12-4
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.dsc' openjdk-9_9.0.4+12-4.dsc 4537 SHA256:48acf924cc36c0ae418dac6233b3c8684afbf448f8a89e701b268948797505db
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12.orig.tar.gz' openjdk-9_9.0.4+12.orig.tar.gz 74731050 SHA256:8d64b95249959bfe5ee9dcc1c802476ceaad5bf88041129dc072484b39f25fcc
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9.0.4+12-4.debian.tar.xz' openjdk-9_9.0.4+12-4.debian.tar.xz 175244 SHA256:1219f9a6c693a3fa349276a3ba7009d9889a6eb506fe8043715a8ccd08e65b12
+$ apt-get source -qq --print-uris openjdk-10=10~46-4
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-4.dsc' openjdk-10_10~46-4.dsc 4515 SHA256:0ef2c14c1d7ef8001d26ad27ab964463ce0bca6a528a0a5d791098e54856b3c8
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46.orig.tar.xz' openjdk-10_10~46.orig.tar.xz 73871700 SHA256:b5aa0739753ea1357341e31783efc2ab1398e602b8c964ce537e78231ca45eb1
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-4.debian.tar.xz' openjdk-10_10~46-4.debian.tar.xz 167992 SHA256:40a5d78dfd5568888e8e311c5a3a5c3e9c62db907b8fb983f6b07825d43b04e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9.0.4+12-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-10/10~46-4/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10~46-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10~46-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-2`
 
