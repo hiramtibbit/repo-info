@@ -18,7 +18,7 @@
 ## `rust:1`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -205,14 +205,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -220,17 +220,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -239,31 +239,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -450,14 +450,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -465,17 +465,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -484,31 +484,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25.0`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -695,14 +695,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25.0` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -710,17 +710,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -729,31 +729,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25.0-jessie`
 
 ```console
-$ docker pull rust@sha256:5f17b1a56e7765077ba8ef821177e84e7e72fcf3c1b05fcaaa9ee9fc8e09254f
+$ docker pull rust@sha256:41900727eb17566e5f615641f95e1bdcd463bbc3733a298d9763f2b1b8b23e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -928,14 +928,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25.0-jessie` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be877386f831
+$ docker pull rust@sha256:ed270a3b1a9325695f7f07804d5a391a479479c814e28a62c43aabe60fbd8de1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **417.5 MB (417526778 bytes)**  
+-	Total Size: **417.5 MB (417529680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14588fbaee658951a0256f9d907c24d8121bbda47fe7368fb1b312d72989fdb7`
+-	Image ID: `sha256:05982c991839122034c660be6555869d912ab111f48aab5b1bfd44fa45d46ecd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -943,17 +943,17 @@ $ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be
 ADD file:8683f1cd44868aa69e4e8fce74caa88badfe317f49380ffa594640a48e4a5f1a in / 
 # Tue, 27 Mar 2018 14:05:27 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 08:21:19 GMT
+# Fri, 13 Apr 2018 22:08:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:21:20 GMT
+# Fri, 13 Apr 2018 22:08:10 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 08:30:03 GMT
+# Fri, 13 Apr 2018 22:09:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:36:43 GMT
+# Fri, 13 Apr 2018 22:11:03 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 02:03:04 GMT
+# Sat, 14 Apr 2018 03:28:57 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 02:03:32 GMT
+# Sat, 14 Apr 2018 03:29:22 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -962,27 +962,27 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:00:02 GMT  
 		Size: 52.8 MB (52787625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d5d77f811a271da3f9df5770ed8617174b9788c50375e9cb4e7d8e3821c6fa7`  
-		Last Modified: Wed, 28 Mar 2018 10:43:57 GMT  
-		Size: 21.6 MB (21596673 bytes)  
+	-	`sha256:999887f7abea7a24e20fa216412c9f2b4a39d253e61385df57c922ba2a6550d5`  
+		Last Modified: Fri, 13 Apr 2018 22:28:37 GMT  
+		Size: 21.6 MB (21597462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27fee22f57ae29901cd76827332d72383fc80f6f9993f216dd67d1ca4719b95e`  
-		Last Modified: Wed, 28 Mar 2018 10:48:51 GMT  
-		Size: 43.9 MB (43918163 bytes)  
+	-	`sha256:d5616688b0911eb981e4ba09cf2c6fad5129d8bf23f46055a8453f839706245d`  
+		Last Modified: Fri, 13 Apr 2018 22:29:01 GMT  
+		Size: 43.9 MB (43918705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7382b8856293e5e1ec86957aa9ba06820f0ddcf9411ef40309cfb813619bed1`  
-		Last Modified: Wed, 28 Mar 2018 10:59:00 GMT  
-		Size: 135.2 MB (135155185 bytes)  
+	-	`sha256:72558a79a69877499d6d7f2d9a2e484c811e0fb3a8f4a1c9ea23b7a1dfac8650`  
+		Last Modified: Fri, 13 Apr 2018 22:29:43 GMT  
+		Size: 135.2 MB (135156265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:382dd95c67adaafef5539fd40ea65a6a125e3efaa79f64a3069e7a90e947d716`  
-		Last Modified: Thu, 05 Apr 2018 03:09:18 GMT  
-		Size: 164.1 MB (164069132 bytes)  
+	-	`sha256:64124c26302d46de5fc027005f1fcaec8de9f2958cf0f00a37da1a1cfa13eeaa`  
+		Last Modified: Sat, 14 Apr 2018 03:31:29 GMT  
+		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25.0-stretch`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1169,14 +1169,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25.0-stretch` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1184,17 +1184,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -1203,31 +1203,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25-jessie`
 
 ```console
-$ docker pull rust@sha256:5f17b1a56e7765077ba8ef821177e84e7e72fcf3c1b05fcaaa9ee9fc8e09254f
+$ docker pull rust@sha256:41900727eb17566e5f615641f95e1bdcd463bbc3733a298d9763f2b1b8b23e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1402,14 +1402,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25-jessie` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be877386f831
+$ docker pull rust@sha256:ed270a3b1a9325695f7f07804d5a391a479479c814e28a62c43aabe60fbd8de1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **417.5 MB (417526778 bytes)**  
+-	Total Size: **417.5 MB (417529680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14588fbaee658951a0256f9d907c24d8121bbda47fe7368fb1b312d72989fdb7`
+-	Image ID: `sha256:05982c991839122034c660be6555869d912ab111f48aab5b1bfd44fa45d46ecd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1417,17 +1417,17 @@ $ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be
 ADD file:8683f1cd44868aa69e4e8fce74caa88badfe317f49380ffa594640a48e4a5f1a in / 
 # Tue, 27 Mar 2018 14:05:27 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 08:21:19 GMT
+# Fri, 13 Apr 2018 22:08:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:21:20 GMT
+# Fri, 13 Apr 2018 22:08:10 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 08:30:03 GMT
+# Fri, 13 Apr 2018 22:09:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:36:43 GMT
+# Fri, 13 Apr 2018 22:11:03 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 02:03:04 GMT
+# Sat, 14 Apr 2018 03:28:57 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 02:03:32 GMT
+# Sat, 14 Apr 2018 03:29:22 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -1436,27 +1436,27 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:00:02 GMT  
 		Size: 52.8 MB (52787625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d5d77f811a271da3f9df5770ed8617174b9788c50375e9cb4e7d8e3821c6fa7`  
-		Last Modified: Wed, 28 Mar 2018 10:43:57 GMT  
-		Size: 21.6 MB (21596673 bytes)  
+	-	`sha256:999887f7abea7a24e20fa216412c9f2b4a39d253e61385df57c922ba2a6550d5`  
+		Last Modified: Fri, 13 Apr 2018 22:28:37 GMT  
+		Size: 21.6 MB (21597462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27fee22f57ae29901cd76827332d72383fc80f6f9993f216dd67d1ca4719b95e`  
-		Last Modified: Wed, 28 Mar 2018 10:48:51 GMT  
-		Size: 43.9 MB (43918163 bytes)  
+	-	`sha256:d5616688b0911eb981e4ba09cf2c6fad5129d8bf23f46055a8453f839706245d`  
+		Last Modified: Fri, 13 Apr 2018 22:29:01 GMT  
+		Size: 43.9 MB (43918705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7382b8856293e5e1ec86957aa9ba06820f0ddcf9411ef40309cfb813619bed1`  
-		Last Modified: Wed, 28 Mar 2018 10:59:00 GMT  
-		Size: 135.2 MB (135155185 bytes)  
+	-	`sha256:72558a79a69877499d6d7f2d9a2e484c811e0fb3a8f4a1c9ea23b7a1dfac8650`  
+		Last Modified: Fri, 13 Apr 2018 22:29:43 GMT  
+		Size: 135.2 MB (135156265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:382dd95c67adaafef5539fd40ea65a6a125e3efaa79f64a3069e7a90e947d716`  
-		Last Modified: Thu, 05 Apr 2018 03:09:18 GMT  
-		Size: 164.1 MB (164069132 bytes)  
+	-	`sha256:64124c26302d46de5fc027005f1fcaec8de9f2958cf0f00a37da1a1cfa13eeaa`  
+		Last Modified: Sat, 14 Apr 2018 03:31:29 GMT  
+		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1.25-stretch`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1643,14 +1643,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1.25-stretch` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1658,17 +1658,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -1677,31 +1677,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1-jessie`
 
 ```console
-$ docker pull rust@sha256:5f17b1a56e7765077ba8ef821177e84e7e72fcf3c1b05fcaaa9ee9fc8e09254f
+$ docker pull rust@sha256:41900727eb17566e5f615641f95e1bdcd463bbc3733a298d9763f2b1b8b23e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1876,14 +1876,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1-jessie` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be877386f831
+$ docker pull rust@sha256:ed270a3b1a9325695f7f07804d5a391a479479c814e28a62c43aabe60fbd8de1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **417.5 MB (417526778 bytes)**  
+-	Total Size: **417.5 MB (417529680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14588fbaee658951a0256f9d907c24d8121bbda47fe7368fb1b312d72989fdb7`
+-	Image ID: `sha256:05982c991839122034c660be6555869d912ab111f48aab5b1bfd44fa45d46ecd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1891,17 +1891,17 @@ $ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be
 ADD file:8683f1cd44868aa69e4e8fce74caa88badfe317f49380ffa594640a48e4a5f1a in / 
 # Tue, 27 Mar 2018 14:05:27 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 08:21:19 GMT
+# Fri, 13 Apr 2018 22:08:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:21:20 GMT
+# Fri, 13 Apr 2018 22:08:10 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 08:30:03 GMT
+# Fri, 13 Apr 2018 22:09:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:36:43 GMT
+# Fri, 13 Apr 2018 22:11:03 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 02:03:04 GMT
+# Sat, 14 Apr 2018 03:28:57 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 02:03:32 GMT
+# Sat, 14 Apr 2018 03:29:22 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -1910,27 +1910,27 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:00:02 GMT  
 		Size: 52.8 MB (52787625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d5d77f811a271da3f9df5770ed8617174b9788c50375e9cb4e7d8e3821c6fa7`  
-		Last Modified: Wed, 28 Mar 2018 10:43:57 GMT  
-		Size: 21.6 MB (21596673 bytes)  
+	-	`sha256:999887f7abea7a24e20fa216412c9f2b4a39d253e61385df57c922ba2a6550d5`  
+		Last Modified: Fri, 13 Apr 2018 22:28:37 GMT  
+		Size: 21.6 MB (21597462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27fee22f57ae29901cd76827332d72383fc80f6f9993f216dd67d1ca4719b95e`  
-		Last Modified: Wed, 28 Mar 2018 10:48:51 GMT  
-		Size: 43.9 MB (43918163 bytes)  
+	-	`sha256:d5616688b0911eb981e4ba09cf2c6fad5129d8bf23f46055a8453f839706245d`  
+		Last Modified: Fri, 13 Apr 2018 22:29:01 GMT  
+		Size: 43.9 MB (43918705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7382b8856293e5e1ec86957aa9ba06820f0ddcf9411ef40309cfb813619bed1`  
-		Last Modified: Wed, 28 Mar 2018 10:59:00 GMT  
-		Size: 135.2 MB (135155185 bytes)  
+	-	`sha256:72558a79a69877499d6d7f2d9a2e484c811e0fb3a8f4a1c9ea23b7a1dfac8650`  
+		Last Modified: Fri, 13 Apr 2018 22:29:43 GMT  
+		Size: 135.2 MB (135156265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:382dd95c67adaafef5539fd40ea65a6a125e3efaa79f64a3069e7a90e947d716`  
-		Last Modified: Thu, 05 Apr 2018 03:09:18 GMT  
-		Size: 164.1 MB (164069132 bytes)  
+	-	`sha256:64124c26302d46de5fc027005f1fcaec8de9f2958cf0f00a37da1a1cfa13eeaa`  
+		Last Modified: Sat, 14 Apr 2018 03:31:29 GMT  
+		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:1-stretch`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2117,14 +2117,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:1-stretch` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2132,17 +2132,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -2151,31 +2151,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:jessie`
 
 ```console
-$ docker pull rust@sha256:5f17b1a56e7765077ba8ef821177e84e7e72fcf3c1b05fcaaa9ee9fc8e09254f
+$ docker pull rust@sha256:41900727eb17566e5f615641f95e1bdcd463bbc3733a298d9763f2b1b8b23e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2350,14 +2350,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:jessie` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be877386f831
+$ docker pull rust@sha256:ed270a3b1a9325695f7f07804d5a391a479479c814e28a62c43aabe60fbd8de1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **417.5 MB (417526778 bytes)**  
+-	Total Size: **417.5 MB (417529680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14588fbaee658951a0256f9d907c24d8121bbda47fe7368fb1b312d72989fdb7`
+-	Image ID: `sha256:05982c991839122034c660be6555869d912ab111f48aab5b1bfd44fa45d46ecd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2365,17 +2365,17 @@ $ docker pull rust@sha256:5daf41e65a7916e0c42c19407c242b0a61e79827bb06bedc5c03be
 ADD file:8683f1cd44868aa69e4e8fce74caa88badfe317f49380ffa594640a48e4a5f1a in / 
 # Tue, 27 Mar 2018 14:05:27 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 08:21:19 GMT
+# Fri, 13 Apr 2018 22:08:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:21:20 GMT
+# Fri, 13 Apr 2018 22:08:10 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 08:30:03 GMT
+# Fri, 13 Apr 2018 22:09:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 08:36:43 GMT
+# Fri, 13 Apr 2018 22:11:03 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 02:03:04 GMT
+# Sat, 14 Apr 2018 03:28:57 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 02:03:32 GMT
+# Sat, 14 Apr 2018 03:29:22 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -2384,27 +2384,27 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:00:02 GMT  
 		Size: 52.8 MB (52787625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d5d77f811a271da3f9df5770ed8617174b9788c50375e9cb4e7d8e3821c6fa7`  
-		Last Modified: Wed, 28 Mar 2018 10:43:57 GMT  
-		Size: 21.6 MB (21596673 bytes)  
+	-	`sha256:999887f7abea7a24e20fa216412c9f2b4a39d253e61385df57c922ba2a6550d5`  
+		Last Modified: Fri, 13 Apr 2018 22:28:37 GMT  
+		Size: 21.6 MB (21597462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27fee22f57ae29901cd76827332d72383fc80f6f9993f216dd67d1ca4719b95e`  
-		Last Modified: Wed, 28 Mar 2018 10:48:51 GMT  
-		Size: 43.9 MB (43918163 bytes)  
+	-	`sha256:d5616688b0911eb981e4ba09cf2c6fad5129d8bf23f46055a8453f839706245d`  
+		Last Modified: Fri, 13 Apr 2018 22:29:01 GMT  
+		Size: 43.9 MB (43918705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7382b8856293e5e1ec86957aa9ba06820f0ddcf9411ef40309cfb813619bed1`  
-		Last Modified: Wed, 28 Mar 2018 10:59:00 GMT  
-		Size: 135.2 MB (135155185 bytes)  
+	-	`sha256:72558a79a69877499d6d7f2d9a2e484c811e0fb3a8f4a1c9ea23b7a1dfac8650`  
+		Last Modified: Fri, 13 Apr 2018 22:29:43 GMT  
+		Size: 135.2 MB (135156265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:382dd95c67adaafef5539fd40ea65a6a125e3efaa79f64a3069e7a90e947d716`  
-		Last Modified: Thu, 05 Apr 2018 03:09:18 GMT  
-		Size: 164.1 MB (164069132 bytes)  
+	-	`sha256:64124c26302d46de5fc027005f1fcaec8de9f2958cf0f00a37da1a1cfa13eeaa`  
+		Last Modified: Sat, 14 Apr 2018 03:31:29 GMT  
+		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:latest`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2591,14 +2591,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:latest` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2606,17 +2606,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -2625,31 +2625,31 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rust:stretch`
 
 ```console
-$ docker pull rust@sha256:cc91338fc380874d30be7ce407d5ef05661dafe8d1f678425b74e8370dbcb30f
+$ docker pull rust@sha256:3c7c72b43f647ffcb7fca63a0229192547107b6c5ac27ba8dd13baef35655d91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2836,14 +2836,14 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 ### `rust:stretch` - linux; 386
 
 ```console
-$ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad317fff42c6
+$ docker pull rust@sha256:d4e1a22df25f61dba04ea6611594f54ade9783c09fa12bc4827d3d36ace9a520
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.4 MB (495384090 bytes)**  
+-	Total Size: **495.4 MB (495384485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb0776410b9a41ea148bf2ad9734e3f3fbb79522101cc1e9fa580df14f3ef9c`
+-	Image ID: `sha256:2de33af7d0ff2add225744bf1b174410d5d2a69d55d06d9cc69c49f6521036e8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -2851,17 +2851,17 @@ $ docker pull rust@sha256:5c410b19b9aede3977168cc60ec07352c62191a3da0679f39f28ad
 ADD file:3a8e11cd900f3ac48c7d30158b5a85e65d78680861eb910888c20ef4ae42756f in / 
 # Tue, 27 Mar 2018 15:59:33 GMT
 CMD ["bash"]
-# Wed, 28 Mar 2018 09:21:18 GMT
+# Fri, 13 Apr 2018 22:13:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:21:24 GMT
+# Fri, 13 Apr 2018 22:13:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 28 Mar 2018 09:30:43 GMT
+# Fri, 13 Apr 2018 22:14:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 28 Mar 2018 09:43:56 GMT
+# Fri, 13 Apr 2018 22:15:24 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 05 Apr 2018 01:49:07 GMT
+# Sat, 14 Apr 2018 03:28:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Apr 2018 01:49:41 GMT
+# Sat, 14 Apr 2018 03:28:52 GMT
 RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='c9837990bce0faab4f6f52604311a19bb8d2cde989bea6a7b605c8e526db6f02' ;; 		armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='297661e121048db3906f8c964999f765b4f6848632c0c2cfb6a1e93d99440732' ;; 		arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='a68ac2d400409f485cb22756f0b3217b95449884e1ea6fd9b70522b3c0a929b2' ;; 		i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='27e6109c7b537b92a6c2d45ac941d959606ca26ec501d86085d651892a55d849' ;; 		*) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; 	esac;         url="https://static.rust-lang.org/rustup/archive/1.11.0/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --default-toolchain 1.25.0;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
@@ -2870,23 +2870,23 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Thu, 15 Mar 2018 01:29:27 GMT  
 		Size: 45.8 MB (45843420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccedf06195c2218190a73a69ea8e401fa5ac51b04a5b9935d94aeadee71ab0e7`  
-		Last Modified: Wed, 28 Mar 2018 11:30:49 GMT  
-		Size: 11.2 MB (11151280 bytes)  
+	-	`sha256:4af42cc296b8123184d1dd96e7066479319ac82b0deeef7c39eeb72cd9acf7eb`  
+		Last Modified: Fri, 13 Apr 2018 22:31:55 GMT  
+		Size: 11.2 MB (11151403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dd95505cc0406437d77f89d014d8dac0994dd6010617639963daa11a551f5b`  
-		Last Modified: Wed, 28 Mar 2018 11:30:47 GMT  
-		Size: 4.6 MB (4554727 bytes)  
+	-	`sha256:4cdce8568bfceab7fd8a5b9e3ed360d35113c4029501d684938ed686c50824f3`  
+		Last Modified: Fri, 13 Apr 2018 22:31:53 GMT  
+		Size: 4.6 MB (4554687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdbf93f54b8200acdcdfa6872b18096425d61aefa305c7777a8bbd6a36e24f49`  
-		Last Modified: Wed, 28 Mar 2018 11:43:40 GMT  
-		Size: 51.6 MB (51554292 bytes)  
+	-	`sha256:144ab27aa9f62df613b67603bb22e2ee0753d87a202961681483ecaa2ed4614e`  
+		Last Modified: Fri, 13 Apr 2018 22:32:33 GMT  
+		Size: 51.6 MB (51553527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b44eebbfe34791cebf1e161caf92c376e2eb83e52e217c04a90cb07666abc41`  
-		Last Modified: Wed, 28 Mar 2018 11:58:50 GMT  
-		Size: 218.2 MB (218211199 bytes)  
+	-	`sha256:3fc5c29ba40aaea92a8b0df017ed89cffbf2a0cf80cfd95b74118bdb578a55a4`  
+		Last Modified: Fri, 13 Apr 2018 22:33:42 GMT  
+		Size: 218.2 MB (218211846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:962e271e9a60732ca3399edda675e7719ab0080a88af3993fdc205d1f8e2b9da`  
-		Last Modified: Thu, 05 Apr 2018 02:16:39 GMT  
-		Size: 164.1 MB (164069172 bytes)  
+	-	`sha256:d4ab13749c6549bf70b0b15fb8f95234a336d2d2f01645af7d2b5fcc2a931220`  
+		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
+		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
