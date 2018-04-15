@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:128fe1da8795654993c98222f4a4deca9ae6e7e85e559664ccb9da88c6d618cb`
-- Created: `2018-03-06T23:43:28.792358336Z`
-- Virtual Size: ~ 595.31 Mb  
+- Image ID: `sha256:a85a192799892385ba9d5d08b9fb4e97521c35ae844d95f83198c4ca8be103d6`
+- Created: `2018-04-12T22:13:54.735612692Z`
+- Virtual Size: ~ 595.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -515,19 +515,23 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-1.debian.tar.gz' diffutils_3.3-1.debian.tar.gz 10584 SHA256:23765ea43cd1b4e5e504ce0984a16e27d5c01e9272cba489ebbebd217f227fc7
 ```
 
-### `dpkg` source package: `dpkg=1.17.5ubuntu5.7`
+### `dpkg` source package: `dpkg=1.17.5ubuntu5.8`
 
 Binary Packages:
 
-- `dpkg=1.17.5ubuntu5.7`
+- `dpkg=1.17.5ubuntu5.8`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.17.5ubuntu5.8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.8.dsc' dpkg_1.17.5ubuntu5.8.dsc 2086 SHA256:76c118e3159a3e3af5ad7856435f92f5557219f5832f379b3785131f2476f64c
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.8.tar.xz' dpkg_1.17.5ubuntu5.8.tar.xz 3843920 SHA256:7376d7477ae37592a75fb99f739d6ad6d48df8d957734ad68c0edf04c6dc4992
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.9-3ubuntu1.3`
 
@@ -971,12 +975,12 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.12`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.13`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.12`
-- `isc-dhcp-common=4.2.4-7ubuntu12.12`
+- `isc-dhcp-client=4.2.4-7ubuntu12.13`
+- `isc-dhcp-common=4.2.4-7ubuntu12.13`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
@@ -985,10 +989,10 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.12
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.13
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.13.dsc' isc-dhcp_4.2.4-7ubuntu12.13.dsc 2898 SHA256:71b9f7bb2334f51366ec460756e51b808c28e22fd66da3f03653033e82dd480e
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.13.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.13.debian.tar.xz 114312 SHA256:091b8b2c40cc9ad9feed94ef8e6699e2182e91c7873a753bec63a8d8724bf4a9
 ```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
@@ -2045,20 +2049,25 @@ $ apt-get source -qq --print-uris numactl=2.0.9~rc5-1ubuntu3.14.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.9~rc5-1ubuntu3.14.04.2.diff.gz' numactl_2.0.9~rc5-1ubuntu3.14.04.2.diff.gz 8083 SHA256:1ba4e5dbe09c2778c24d66702c25740a5b7ca0a5a724b3ab1164de0efd1f7b28
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.23`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.24`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.23`
-- `openssl=1.0.1f-1ubuntu2.23`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.24`
+- `openssl=1.0.1f-1ubuntu2.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.dsc' openssl_1.0.1f-1ubuntu2.24.dsc 2352 SHA256:2ba8f937da47a6ee2098ca8e7d440b35dc9044765bc39971c68489d7ce0a012c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.debian.tar.gz' openssl_1.0.1f-1ubuntu2.24.debian.tar.gz 270246 SHA256:59cfb19bdf629412972dd7102782882d54e4581feb25fa70beabe532ab79449b
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
