@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b40269d4aa870f8c4d0256fbcce713de9a11a50dca9c5b85bbede2432d1fc998`
-- Created: `2018-03-07T01:06:00.515021723Z`
-- Virtual Size: ~ 563.54 Mb  
+- Image ID: `sha256:9568b8575b2f084a16281c39eefcce01585ff834db49190e2518e64117ae12e5`
+- Created: `2018-04-12T23:35:01.787149625Z`
+- Virtual Size: ~ 563.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -161,13 +161,13 @@ $ apt-get source -qq --print-uris audit=1:2.3.2-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.3.2-2ubuntu1.debian.tar.gz' audit_2.3.2-2ubuntu1.debian.tar.gz 14702 SHA256:9aa22280f6248f0f750a6aea84624907d796872ecdca17936cd48888a50a4104
 ```
 
-### `dpkg` source package: `avahi=0.6.31-4ubuntu1.1`
+### `dpkg` source package: `avahi=0.6.31-4ubuntu1.2`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.6.31-4ubuntu1.1`
-- `libavahi-common-data:amd64=0.6.31-4ubuntu1.1`
-- `libavahi-common3:amd64=0.6.31-4ubuntu1.1`
+- `libavahi-client3:amd64=0.6.31-4ubuntu1.2`
+- `libavahi-common-data:amd64=0.6.31-4ubuntu1.2`
+- `libavahi-common3:amd64=0.6.31-4ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -175,9 +175,14 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris avahi=0.6.31-4ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.2.dsc' avahi_0.6.31-4ubuntu1.2.dsc 4083 SHA256:a9e5a2db000fcb5a618c8d32e0d4da8a220fa50445e6e758cb1f1d038e46f969
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31.orig.tar.gz' avahi_0.6.31.orig.tar.gz 1268686 SHA256:8372719b24e2dd75de6f59bb1315e600db4fd092805bd1201ed0cb651a2dab48
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.2.debian.tar.xz' avahi_0.6.31-4ubuntu1.2.debian.tar.xz 36404 SHA256:d41048ef6ea77b1a3062b77d37a6ec87b694cf5c9d5ac5c5a205c30afa2ee629
+```
 
 ### `dpkg` source package: `base-files=7.2ubuntu5.5`
 
@@ -511,11 +516,11 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.9
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.9.debian.tar.xz' cups_1.7.2-0ubuntu1.9.debian.tar.xz 292708 SHA256:9ca8fb6e6ecf0c3c915d8485e4b4424ad012e7b45ea163e660ca015e20bbb2e9
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.14`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.15`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.35.0-1ubuntu2.14`
+- `libcurl3:amd64=7.35.0-1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 
@@ -524,9 +529,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.15.dsc' curl_7.35.0-1ubuntu2.15.dsc 2723 SHA256:e2addb2e6c3f5de8fb7c2dce206fe5321c1c91c0b5e226a97c2c81acceabc063
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.15.debian.tar.gz' curl_7.35.0-1ubuntu2.15.debian.tar.gz 75414 SHA256:eb53049afa4ea3864c10e651b5a2c12b52fedd4b75b19607bdb247c111839aa6
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -709,19 +719,23 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-1.debian.tar.gz' diffutils_3.3-1.debian.tar.gz 10584 SHA256:23765ea43cd1b4e5e504ce0984a16e27d5c01e9272cba489ebbebd217f227fc7
 ```
 
-### `dpkg` source package: `dpkg=1.17.5ubuntu5.7`
+### `dpkg` source package: `dpkg=1.17.5ubuntu5.8`
 
 Binary Packages:
 
-- `dpkg=1.17.5ubuntu5.7`
+- `dpkg=1.17.5ubuntu5.8`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.17.5ubuntu5.8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.8.dsc' dpkg_1.17.5ubuntu5.8.dsc 2086 SHA256:76c118e3159a3e3af5ad7856435f92f5557219f5832f379b3785131f2476f64c
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.8.tar.xz' dpkg_1.17.5ubuntu5.8.tar.xz 3843920 SHA256:7376d7477ae37592a75fb99f739d6ad6d48df8d957734ad68c0edf04c6dc4992
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.9-3ubuntu1.3`
 
@@ -1281,19 +1295,24 @@ $ apt-get source -qq --print-uris hostname=3.15ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.15ubuntu1.tar.gz' hostname_3.15ubuntu1.tar.gz 13879 SHA256:d85728816111a3eeac24d7e8428a5e907dd4b170544017386111148e86b35ef6
 ```
 
-### `dpkg` source package: `icu=52.1-3ubuntu0.7`
+### `dpkg` source package: `icu=52.1-3ubuntu0.8`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-3ubuntu0.7`
+- `libicu52:amd64=52.1-3ubuntu0.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=52.1-3ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.8.dsc' icu_52.1-3ubuntu0.8.dsc 2037 SHA256:5e043292415cd5c6770a077d1c18a524a3f27504e309f4b0197730dbe4eca2b4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.8.debian.tar.gz' icu_52.1-3ubuntu0.8.debian.tar.gz 49508 SHA256:134092ec928ba1724f6b3b2e8532c41e56b59605956733169185d0dd049a2de2
+```
 
 ### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
 
@@ -1426,12 +1445,12 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.12`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.13`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.12`
-- `isc-dhcp-common=4.2.4-7ubuntu12.12`
+- `isc-dhcp-client=4.2.4-7ubuntu12.13`
+- `isc-dhcp-common=4.2.4-7ubuntu12.13`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
@@ -1440,10 +1459,10 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.12
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.dsc' isc-dhcp_4.2.4-7ubuntu12.12.dsc 2771 SHA256:919962b38948b2e4d8c23aae6f0b9e14f7cce829c22afcf2ecd59a84934891f3
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://security.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.12.debian.tar.gz 142320 SHA256:8b0b51908e304c17621cbbd2dfac84ca8438bee131922f9a86d488e389b78345
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.13
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.13.dsc' isc-dhcp_4.2.4-7ubuntu12.13.dsc 2898 SHA256:71b9f7bb2334f51366ec460756e51b808c28e22fd66da3f03653033e82dd480e
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.13.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.13.debian.tar.xz 114312 SHA256:091b8b2c40cc9ad9feed94ef8e6699e2182e91c7873a753bec63a8d8724bf4a9
 ```
 
 ### `dpkg` source package: `jasper=1.900.1-14ubuntu3.4`
@@ -2292,11 +2311,11 @@ $ apt-get source -qq --print-uris libpod-latex-perl=0.61-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61-1.debian.tar.gz' libpod-latex-perl_0.61-1.debian.tar.gz 1733 SHA256:df7afa5f5bfc0c54a72a4641ae915e5c13106a741535f4028555921f01ca42b3
 ```
 
-### `dpkg` source package: `libraw=0.15.4-1ubuntu0.1`
+### `dpkg` source package: `libraw=0.15.4-1ubuntu0.2`
 
 Binary Packages:
 
-- `libraw9:amd64=0.15.4-1ubuntu0.1`
+- `libraw9:amd64=0.15.4-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libraw9/copyright`)
 
@@ -2306,9 +2325,14 @@ Licenses: (parsed from: `/usr/share/doc/libraw9/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libraw=0.15.4-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4-1ubuntu0.2.dsc' libraw_0.15.4-1ubuntu0.2.dsc 2098 SHA256:92400842238cb03190b14a0a70818a9397f7344ebed9b337887edc2a346cf315
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4.orig.tar.gz' libraw_0.15.4.orig.tar.gz 1427757 SHA256:b3fcfee33bc34ae5869a9741880e28a62f029f196cb1d1a007ab156f4a110f79
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.15.4-1ubuntu0.2.debian.tar.gz' libraw_0.15.4-1ubuntu0.2.debian.tar.gz 17698 SHA256:c086318a3c47cae1fdc5c8368a1f2b05a0ebcf0886e30e4f915601e552df83c7
+```
 
 ### `dpkg` source package: `libsdl1.2=1.2.15-8ubuntu1.1`
 
@@ -2629,20 +2653,25 @@ $ apt-get source -qq --print-uris libva=1.3.0-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva_1.3.0-2.debian.tar.xz' libva_1.3.0-2.debian.tar.xz 8368 SHA256:0cfa6f2fd8627e1beac3f09df5265b77353b212f6839563cc9cbe924ae08f55f
 ```
 
-### `dpkg` source package: `libvorbis=1.3.2-1.3ubuntu1.1`
+### `dpkg` source package: `libvorbis=1.3.2-1.3ubuntu1.2`
 
 Binary Packages:
 
-- `libvorbis0a:amd64=1.3.2-1.3ubuntu1.1`
-- `libvorbisenc2:amd64=1.3.2-1.3ubuntu1.1`
+- `libvorbis0a:amd64=1.3.2-1.3ubuntu1.2`
+- `libvorbisenc2:amd64=1.3.2-1.3ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libvorbis=1.3.2-1.3ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.2-1.3ubuntu1.2.dsc' libvorbis_1.3.2-1.3ubuntu1.2.dsc 2140 SHA256:0d51217e83a256955d5fcf7c6b213aeddb4dabc7a3cc46b50a332a0e184b5cb6
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.2.orig.tar.gz' libvorbis_1.3.2.orig.tar.gz 1483719 SHA256:eeb4dcada143846dfba760d982954a02f82e08845cbc33871f5dac547b8b6124
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.2-1.3ubuntu1.2.diff.gz' libvorbis_1.3.2-1.3ubuntu1.2.diff.gz 9162 SHA256:0a63915674067c537d8a8935c14c19d69e1261e7e29e65ff449a3dd46110fdc6
+```
 
 ### `dpkg` source package: `libvpx=1.3.0-2`
 
@@ -3551,20 +3580,25 @@ $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.23`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.24`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.23`
-- `openssl=1.0.1f-1ubuntu2.23`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.24`
+- `openssl=1.0.1f-1ubuntu2.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.dsc' openssl_1.0.1f-1ubuntu2.24.dsc 2352 SHA256:2ba8f937da47a6ee2098ca8e7d440b35dc9044765bc39971c68489d7ce0a012c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.debian.tar.gz' openssl_1.0.1f-1ubuntu2.24.debian.tar.gz 270246 SHA256:59cfb19bdf629412972dd7102782882d54e4581feb25fa70beabe532ab79449b
+```
 
 ### `dpkg` source package: `opus=1.1-0ubuntu1`
 
@@ -4401,19 +4435,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-25
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-25.debian.tar.xz' tcp-wrappers_7.6.q-25.debian.tar.xz 35504 SHA256:fb7bb73c586a0c00c76c730ab93ffd73c300e8c4fd83df76222e305a2466c7bb
 ```
 
-### `dpkg` source package: `tiff=4.0.3-7ubuntu0.7`
+### `dpkg` source package: `tiff=4.0.3-7ubuntu0.9`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-7ubuntu0.7`
+- `libtiff5:amd64=4.0.3-7ubuntu0.9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.9.dsc' tiff_4.0.3-7ubuntu0.9.dsc 2278 SHA256:ab3a36fd876df9933ac15bd0977821998f9916a0edb1766c52ff3aec58563e11
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.9.debian.tar.gz' tiff_4.0.3-7ubuntu0.9.debian.tar.gz 87723 SHA256:ef2110514da52940e92c41934b3764c8c3663755db213d87604796684ec6fb87
+```
 
 ### `dpkg` source package: `tinyxml=2.6.2-2`
 
