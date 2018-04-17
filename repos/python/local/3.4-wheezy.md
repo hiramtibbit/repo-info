@@ -3673,20 +3673,13 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u5
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.dsc' perl_5.14.2-21+deb7u5.dsc 2394 SHA256:cf6791573081a2095bdf78abb47eb35439efb90e8b529dc71deb04430b798e87
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.debian.tar.gz' perl_5.14.2-21+deb7u5.debian.tar.gz 194825 SHA256:bc1957c557e945349bfbc59ccfb994502c340e448ca33d8f197b8567ea6a9d11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.14.2-21+deb7u5/
 
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.14.2-21+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.26.0-4+deb7u2`
 
@@ -4207,20 +4200,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u9
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u9.dsc' tiff3_3.9.6-11+deb7u9.dsc 1960 SHA256:fef12f96b40b069d1623c2778f351558d6b8f4a9cdbe3ebaf45846b9a6162c6a
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u9.debian.tar.gz' tiff3_3.9.6-11+deb7u9.debian.tar.gz 50583 SHA256:4853601d6462194b198e707e7384602c1d8747ae603b6d913a4f9228af22980f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u9/
 
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u9/ (for browsing the source)
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.5=8.5.11-2`
 
