@@ -6,13 +6,25 @@
 -	[`rust:1.25`](#rust125)
 -	[`rust:1.25.0`](#rust1250)
 -	[`rust:1.25.0-jessie`](#rust1250-jessie)
+-	[`rust:1.25.0-slim`](#rust1250-slim)
+-	[`rust:1.25.0-slim-jessie`](#rust1250-slim-jessie)
+-	[`rust:1.25.0-slim-stretch`](#rust1250-slim-stretch)
 -	[`rust:1.25.0-stretch`](#rust1250-stretch)
 -	[`rust:1.25-jessie`](#rust125-jessie)
+-	[`rust:1.25-slim`](#rust125-slim)
+-	[`rust:1.25-slim-jessie`](#rust125-slim-jessie)
+-	[`rust:1.25-slim-stretch`](#rust125-slim-stretch)
 -	[`rust:1.25-stretch`](#rust125-stretch)
 -	[`rust:1-jessie`](#rust1-jessie)
+-	[`rust:1-slim`](#rust1-slim)
+-	[`rust:1-slim-jessie`](#rust1-slim-jessie)
+-	[`rust:1-slim-stretch`](#rust1-slim-stretch)
 -	[`rust:1-stretch`](#rust1-stretch)
 -	[`rust:jessie`](#rustjessie)
 -	[`rust:latest`](#rustlatest)
+-	[`rust:slim`](#rustslim)
+-	[`rust:slim-jessie`](#rustslim-jessie)
+-	[`rust:slim-stretch`](#rustslim-stretch)
 -	[`rust:stretch`](#ruststretch)
 
 ## `rust:1`
@@ -979,6 +991,18 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `rust:1.25.0-slim`
+
+**does not exist** (yet?)
+
+## `rust:1.25.0-slim-jessie`
+
+**does not exist** (yet?)
+
+## `rust:1.25.0-slim-stretch`
+
+**does not exist** (yet?)
+
 ## `rust:1.25.0-stretch`
 
 ```console
@@ -1453,6 +1477,18 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `rust:1.25-slim`
+
+**does not exist** (yet?)
+
+## `rust:1.25-slim-jessie`
+
+**does not exist** (yet?)
+
+## `rust:1.25-slim-stretch`
+
+**does not exist** (yet?)
+
 ## `rust:1.25-stretch`
 
 ```console
@@ -1926,6 +1962,18 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Sat, 14 Apr 2018 03:31:29 GMT  
 		Size: 164.1 MB (164069623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rust:1-slim`
+
+**does not exist** (yet?)
+
+## `rust:1-slim-jessie`
+
+**does not exist** (yet?)
+
+## `rust:1-slim-stretch`
+
+**does not exist** (yet?)
 
 ## `rust:1-stretch`
 
@@ -2645,6 +2693,18 @@ RUN set -eux;         dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch
 		Last Modified: Sat, 14 Apr 2018 03:30:17 GMT  
 		Size: 164.1 MB (164069602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rust:slim`
+
+**does not exist** (yet?)
+
+## `rust:slim-jessie`
+
+**does not exist** (yet?)
+
+## `rust:slim-stretch`
+
+**does not exist** (yet?)
 
 ## `rust:stretch`
 
