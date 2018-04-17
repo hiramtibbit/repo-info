@@ -103,13 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~beta1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~beta1.dsc' apt_1.6~beta1.dsc 2739 SHA256:d04083ba5865e71dd20f017d9d18db6b28cbefe6fe15f94001224073c38e0d61
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~beta1.tar.xz' apt_1.6~beta1.tar.xz 2125780 SHA256:f4ad7c5d04bb1a8da85a2b5f4c95e700f1dee333e0c893991a2226cb031246b7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6~beta1/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -365,13 +365,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20170717
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717.dsc' ca-certificates_20170717.dsc 1506 SHA256:da6268ff88e05c85c23c62add13d3d127087467d0c7e83974ca28db5543a252a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz' ca-certificates_20170717.tar.xz 293028 SHA256:e487639b641fa75445174734dd6e9d600373e3248b3d86a7e3c6d0f6977decd2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ca-certificates/20170717/
+
 
 ### `dpkg` source package: `cairo=1.15.10-2`
 
@@ -906,14 +906,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180408-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408-0ubuntu1.dsc' gcc-8_8-20180408-0ubuntu1.dsc 36299 SHA256:21143c63eb52f44609d0434f737668ae354d00bdb16913fc6db9f62a94c51c0e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408.orig.tar.gz' gcc-8_8-20180408.orig.tar.gz 70408189 SHA256:8c50287df3e8c3743dbf81d20b1a687aca537829b46a237edcbefe00793862d1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408-0ubuntu1.diff.gz' gcc-8_8-20180408-0ubuntu1.diff.gz 439124 SHA256:7eb64d0e5867efee4aec704ec7850490d532e6fab617e145ac738cf79c78b983
-```
 
 ### `dpkg` source package: `gcc-defaults=1.176ubuntu2`
 
@@ -2596,14 +2591,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-13.14
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-13.14.dsc' linux_4.15.0-13.14.dsc 5907 SHA256:3031d7c60a58419f0b7caaa5bc8e5a7d62b8e56bcfd4dedc9fea526f296eb96a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-13.14.diff.gz' linux_4.15.0-13.14.diff.gz 6682718 SHA256:2e9ff90f3b5255dd192dbeaad00256250640b8811502235cad38fc589ba0a93b
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -3416,14 +3406,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-8.dsc' python2.7_2.7.14-8.dsc 3357 SHA256:5f50f49e5eb27dcf1aeb6e99f4ad0ad447ca6cd0d8db92f415218106d01ca0c5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-8.diff.gz' python2.7_2.7.14-8.diff.gz 480527 SHA256:9526b2a02f6fed012c291a8c71848d49c1b0618852d6c70f84f6724af4ccd85f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.14-8/
+
 
 ### `dpkg` source package: `python3-defaults=3.6.5-2`
 
@@ -3782,14 +3771,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-4ubuntu1.dsc' tiff_4.0.9-4ubuntu1.dsc 2259 SHA256:6de17042b2622509da0f5999f8e8c0b2bbacd788e2280d41d1e1974ff6ec81f8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-4ubuntu1.debian.tar.xz' tiff_4.0.9-4ubuntu1.debian.tar.xz 21024 SHA256:30c3d7530c757fb828bbfc92b8c1958a5b1f020b81b8924a7fef6da0d94e40d3
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.02.28`
 
