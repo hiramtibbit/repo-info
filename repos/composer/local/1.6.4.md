@@ -1,10 +1,10 @@
-# `composer:1.6.3`
+# `composer:1.6.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5489f8526e8b82fb2f62cdb6c0aecfa73fbe454b41667e53e35c1931a29ebbfa`
-- Created: `2018-04-06T06:11:09.01371122Z`
-- Virtual Size: ~ 147.22 Mb  
+- Image ID: `sha256:23d814c7ae43a476e36e25d7c020797861a259107cb587c5c2f2ede86ccad577`
+- Created: `2018-04-17T21:31:07.732380747Z`
+- Virtual Size: ~ 142.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -24,4 +24,4 @@
   - `PHP_MD5=`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=1.6.3`
+  - `COMPOSER_VERSION=1.6.4`
