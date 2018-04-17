@@ -63,13 +63,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~beta1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~beta1.dsc' apt_1.6~beta1.dsc 2739 SHA256:d04083ba5865e71dd20f017d9d18db6b28cbefe6fe15f94001224073c38e0d61
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6~beta1.tar.xz' apt_1.6~beta1.tar.xz 2125780 SHA256:f4ad7c5d04bb1a8da85a2b5f4c95e700f1dee333e0c893991a2226cb031246b7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6~beta1/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -404,14 +404,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180408-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408-0ubuntu1.dsc' gcc-8_8-20180408-0ubuntu1.dsc 36299 SHA256:21143c63eb52f44609d0434f737668ae354d00bdb16913fc6db9f62a94c51c0e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408.orig.tar.gz' gcc-8_8-20180408.orig.tar.gz 70408189 SHA256:8c50287df3e8c3743dbf81d20b1a687aca537829b46a237edcbefe00793862d1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180408-0ubuntu1.diff.gz' gcc-8_8-20180408-0ubuntu1.diff.gz 439124 SHA256:7eb64d0e5867efee4aec704ec7850490d532e6fab617e145ac738cf79c78b983
-```
 
 ### `dpkg` source package: `glibc=2.27-0ubuntu3`
 
@@ -1162,14 +1157,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu7.dsc' systemd_237-3ubuntu7.dsc 4934 SHA256:ac900e54cbd69fe71ac6914d0084541a9cd82b3fa537750c4ea1d7ac9014c582
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu7.debian.tar.xz' systemd_237-3ubuntu7.debian.tar.xz 165540 SHA256:bcae80c6f33abdd541538560acafd71b64f71bdbf4c0802602937bbb18ec3bed
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
