@@ -112,19 +112,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~beta1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~beta1.dsc' apt_1.6~beta1.dsc 2739 SHA256:d04083ba5865e71dd20f017d9d18db6b28cbefe6fe15f94001224073c38e0d61
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~beta1.tar.xz' apt_1.6~beta1.tar.xz 2125780 SHA256:f4ad7c5d04bb1a8da85a2b5f4c95e700f1dee333e0c893991a2226cb031246b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6~beta1/
 
-- https://sources.debian.net/src/apt/1.6~beta1/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6~beta1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6~beta1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -717,20 +711,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.170-0.3
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.3.dsc' elfutils_0.170-0.3.dsc 2307 SHA256:4c2da1f50e8b64366d790fe80accc455f1dab073e9e4fef23efd29b1ad724a0e
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.3.debian.tar.xz' elfutils_0.170-0.3.debian.tar.xz 37904 SHA256:9b93f7a034d7441b654d44c5bdb4c3dfa83210d605c90cf021a9c75e30ef8ad3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.170-0.3/
 
-- https://sources.debian.net/src/elfutils/0.170-0.3/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.170-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.170-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.5-3`
 
@@ -1896,20 +1883,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.dsc' lz4_0.0~r131-2.dsc 1973 SHA256:304cf9dddee387377929adf3f2cef0ae19fb2e56b6cc9eab05798845b58bd9b6
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.debian.tar.xz' lz4_0.0~r131-2.debian.tar.xz 4936 SHA256:966df055dd8fa7f292c283452b43a5d2d2047d542fe49e97025006e69525e224
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/0.0~r131-2/
 
-- https://sources.debian.net/src/lz4/0.0~r131-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/0.0~r131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -2044,20 +2024,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.18-1
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.18-1.dsc' nspr_4.18-1.dsc 2061 SHA256:63a3147c30b2375127d18effa9d4342c3d125773e0ab9718168d75717a33e048
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.18.orig.tar.gz' nspr_4.18.orig.tar.gz 1139663 SHA256:b89657c09bf88707d06ac238b8930d3ae08de68cb3edccfdc2e3dc97f9c8fb34
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.18-1.debian.tar.xz' nspr_4.18-1.debian.tar.xz 15516 SHA256:b1809c2da989dea5a010ca826ef48a37b29b3b59d1ec7a277cb6feb9814d4277
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nspr/2:4.18-1/
 
-- https://sources.debian.net/src/nspr/2:4.18-1/ (for browsing the source)
-- https://sources.debian.net/src/nspr/2:4.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nspr/2:4.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nss=2:3.35-2`
 
@@ -2334,21 +2307,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-5.dsc' perl_5.26.1-5.dsc 2653 SHA256:e15bac1fa71fb9d4a85396c40ebc2b11ed7edfec8641a5b587d55fd65c520e8a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-5.debian.tar.xz' perl_5.26.1-5.debian.tar.xz 162384 SHA256:d9809b495e6d0ad2f9f06c3ef812d95f4a0abd93faa129373f7c851f7b2cb447
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.1-5/
 
-- https://sources.debian.net/src/perl/5.26.1-5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.13-1`
 
