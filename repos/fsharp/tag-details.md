@@ -8,7 +8,11 @@
 -	[`fsharp:4.0.1.1`](#fsharp4011)
 -	[`fsharp:4.1`](#fsharp41)
 -	[`fsharp:4.1.34`](#fsharp4134)
+-	[`fsharp:4.1.34-netcore`](#fsharp4134-netcore)
+-	[`fsharp:4.1-netcore`](#fsharp41-netcore)
+-	[`fsharp:4-netcore`](#fsharp4-netcore)
 -	[`fsharp:latest`](#fsharplatest)
+-	[`fsharp:netcore`](#fsharpnetcore)
 
 ## `fsharp:4`
 
@@ -496,6 +500,18 @@ CMD ["fsharpi"]
 		Size: 146.3 MB (146276897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `fsharp:4.1.34-netcore`
+
+**does not exist** (yet?)
+
+## `fsharp:4.1-netcore`
+
+**does not exist** (yet?)
+
+## `fsharp:4-netcore`
+
+**does not exist** (yet?)
+
 ## `fsharp:latest`
 
 ```console
@@ -545,3 +561,7 @@ CMD ["fsharpi"]
 		Last Modified: Wed, 14 Mar 2018 04:22:20 GMT  
 		Size: 146.3 MB (146276897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fsharp:netcore`
+
+**does not exist** (yet?)
