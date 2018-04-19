@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:092b3f423a513f6a8b387c5e6812bdc5b0ed1612d8aba9133b4da27f4f659987`
-- Created: `2018-04-13T00:51:07.68171463Z`
-- Virtual Size: ~ 574.05 Mb  
+- Image ID: `sha256:c9cd9e4e7cddc673bc6c0d021882cf574e190606223b78dd7280129f95944226`
+- Created: `2018-04-16T21:39:59.51195058Z`
+- Virtual Size: ~ 574.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -926,14 +926,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.11.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.12.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.11.0-1~xenial`
-- `gazebo7-common=7.11.0-1~xenial`
-- `gazebo7-plugin-base=7.11.0-1~xenial`
-- `libgazebo7:amd64=7.11.0-1~xenial`
+- `gazebo7=7.12.0-1~xenial`
+- `gazebo7-common=7.12.0-1~xenial`
+- `gazebo7-plugin-base=7.12.0-1~xenial`
+- `libgazebo7:amd64=7.12.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`)
 
@@ -3632,14 +3632,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.dsc' perl_5.22.1-9ubuntu0.2.dsc 2464 SHA256:1269621f0ad5574a2fa3a4d956b4036df134d372ab6508650dc60a3b31c2d5d2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.debian.tar.xz' perl_5.22.1-9ubuntu0.2.debian.tar.xz 148764 SHA256:f90b2dbff5a3b38c94730a9bb5d369d720b89d88cbe06f319e53683c9d9bdd50
-```
 
 ### `dpkg` source package: `poppler=0.41.0-0ubuntu1.6`
 

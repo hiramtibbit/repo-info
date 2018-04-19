@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:659841b78e0839e7bcb075b65440711ee4a3027a6f3a270d008fcfc40002de99`
-- Created: `2018-04-13T01:05:57.508438238Z`
-- Virtual Size: ~ 1.42 Gb  
+- Image ID: `sha256:db2d7f7d75daad665f855b0e29ae92b3e8e3491c633523dbf14ac826584d7286`
+- Created: `2018-04-16T21:43:30.897175021Z`
+- Virtual Size: ~ 1.43 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1199,15 +1199,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.11.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.12.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.11.0-1~xenial`
-- `gazebo7-common=7.11.0-1~xenial`
-- `gazebo7-plugin-base=7.11.0-1~xenial`
-- `libgazebo7:amd64=7.11.0-1~xenial`
-- `libgazebo7-dev:amd64=7.11.0-1~xenial`
+- `gazebo7=7.12.0-1~xenial`
+- `gazebo7-common=7.12.0-1~xenial`
+- `gazebo7-plugin-base=7.12.0-1~xenial`
+- `libgazebo7:amd64=7.12.0-1~xenial`
+- `libgazebo7-dev:amd64=7.12.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`, `/usr/share/doc/libgazebo7-dev/copyright`)
 
@@ -4647,14 +4647,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9ubuntu0.2`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.22:amd64=5.22.1-9ubuntu0.2`
-- `perl=5.22.1-9ubuntu0.2`
-- `perl-base=5.22.1-9ubuntu0.2`
-- `perl-modules-5.22=5.22.1-9ubuntu0.2`
+- `libperl5.22:amd64=5.22.1-9ubuntu0.3`
+- `perl=5.22.1-9ubuntu0.3`
+- `perl-base=5.22.1-9ubuntu0.3`
+- `perl-modules-5.22=5.22.1-9ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.22/copyright`)
 
@@ -4688,10 +4688,10 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.dsc' perl_5.22.1-9ubuntu0.2.dsc 2464 SHA256:1269621f0ad5574a2fa3a4d956b4036df134d372ab6508650dc60a3b31c2d5d2
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.dsc' perl_5.22.1-9ubuntu0.3.dsc 2448 SHA256:30830c674f0bcf58d018d6d1a326e8342fee37388f8593b376b863d4040a787a
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.debian.tar.xz' perl_5.22.1-9ubuntu0.2.debian.tar.xz 148764 SHA256:f90b2dbff5a3b38c94730a9bb5d369d720b89d88cbe06f319e53683c9d9bdd50
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
 ```
 
 ### `dpkg` source package: `pkg-config=0.29.1-0ubuntu1`
