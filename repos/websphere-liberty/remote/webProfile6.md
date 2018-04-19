@@ -1,7 +1,7 @@
 ## `websphere-liberty:webProfile6`
 
 ```console
-$ docker pull websphere-liberty@sha256:76714959b9b841d2a1b7c2af125403d601ebc19a0d3bbcc550e0f09d2f126cd2
+$ docker pull websphere-liberty@sha256:a26865be00200547ca99378bab96561bcf580d078ae48ea85ef91c01e404381c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -295,14 +295,14 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && ec
 ### `websphere-liberty:webProfile6` - linux; ppc64le
 
 ```console
-$ docker pull websphere-liberty@sha256:b6b68e082723473be772dc2e7f9d1201d6b2b779fa190b57f9856dbdd31533fe
+$ docker pull websphere-liberty@sha256:343e459837569ed2eca404f57eabec85ed197e90d317f6dbbb2135b45b85f87f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.9 MB (257900668 bytes)**  
+-	Total Size: **268.1 MB (268107631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11f0de68bc0cb39ab16325f58e1af8984a777d491937f33aec50bf6fca1a8df9`
+-	Image ID: `sha256:bf626f5a6736d6703df7b9da35a5e05aa6d2905435a7cc07e09e4bbd642c8c26`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -364,11 +364,14 @@ ENTRYPOINT ["/opt/ibm/docker/docker-server"]
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 # Tue, 10 Apr 2018 03:10:44 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 10 Apr 2018 03:13:00 GMT
-COPY file:88c06b07fb79e4006fd1fb7042780d25c5940fd4da63eb5d18144d89ae77aa37 in /config/ 
-# Tue, 10 Apr 2018 03:14:24 GMT
+# Thu, 19 Apr 2018 08:18:32 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense     collectiveMember-1.0 monitor-1.0 webCache-1.0 ldapRegistry-3.0 appSecurity-2.0 localConnector-1.0 restConnector-1.0 ssl-1.0 sessionDatabase-1.0     appSecurity-1.0 blueprint-1.0 concurrent-1.0 oauth-2.0 osgiConsole-1.0 serverStatus-1.0 wab-1.0 timedOperations-1.0     webProfile-6.0     && if [ ! -z $REPOSITORIES_PROPERTIES ] ; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
+# Thu, 19 Apr 2018 08:18:33 GMT
+COPY file:88c06b07fb79e4006fd1fb7042780d25c5940fd4da63eb5d18144d89ae77aa37 in /config/ 
+# Thu, 19 Apr 2018 08:18:47 GMT
+# ARGS: REPOSITORIES_PROPERTIES=
+RUN server start && server stop && rm -rf /output/resources/security/
 ```
 
 -	Layers:
@@ -420,13 +423,17 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && ec
 		Last Modified: Tue, 10 Apr 2018 03:21:09 GMT  
 		Size: 888.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a3638e0a459bf1a1ddd6000d8afc24f4019585b8dc14f95afdc396341d633d`  
-		Last Modified: Tue, 10 Apr 2018 03:21:59 GMT  
-		Size: 557.0 B  
+	-	`sha256:f2f3e26564b34b084095c20346e039064d017397988629a7530d66851bdfa799`  
+		Last Modified: Thu, 19 Apr 2018 08:22:59 GMT  
+		Size: 56.5 MB (56474468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc82c730d01fd620b1697c8e14665f5d3a3ab141357eac3687c52c8ff711496`  
-		Last Modified: Tue, 10 Apr 2018 03:22:10 GMT  
-		Size: 56.5 MB (56474726 bytes)  
+	-	`sha256:9e64ea6cd3f6a55e6605af09d88a1d6c2b53dcc38832293d4487be1f1038d714`  
+		Last Modified: Thu, 19 Apr 2018 08:22:51 GMT  
+		Size: 567.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d2bcf09e02d49fbba769a0f539c9bfc3d4200ea7f424758ea586fdd4ad36b57`  
+		Last Modified: Thu, 19 Apr 2018 08:22:55 GMT  
+		Size: 10.2 MB (10207211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:webProfile6` - linux; s390x
