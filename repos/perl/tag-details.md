@@ -8,12 +8,12 @@
 -	[`perl:5.22.4-threaded`](#perl5224-threaded)
 -	[`perl:5.22-threaded`](#perl522-threaded)
 -	[`perl:5.24`](#perl524)
--	[`perl:5.24.3`](#perl5243)
--	[`perl:5.24.3-threaded`](#perl5243-threaded)
+-	[`perl:5.24.4`](#perl5244)
+-	[`perl:5.24.4-threaded`](#perl5244-threaded)
 -	[`perl:5.24-threaded`](#perl524-threaded)
 -	[`perl:5.26`](#perl526)
--	[`perl:5.26.1`](#perl5261)
--	[`perl:5.26.1-threaded`](#perl5261-threaded)
+-	[`perl:5.26.2`](#perl5262)
+-	[`perl:5.26.2-threaded`](#perl5262-threaded)
 -	[`perl:5.26-threaded`](#perl526-threaded)
 -	[`perl:5-threaded`](#perl5-threaded)
 -	[`perl:latest`](#perllatest)
@@ -2629,7 +2629,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 13.2 MB (13184629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `perl:5.24.3`
+## `perl:5.24.4`
 
 ```console
 $ docker pull perl@sha256:f58e169ebf46706f31a8458fb837785bfd430c021124cc00b418ca0820c734d4
@@ -2644,7 +2644,7 @@ $ docker pull perl@sha256:f58e169ebf46706f31a8458fb837785bfd430c021124cc00b418ca
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `perl:5.24.3` - linux; amd64
+### `perl:5.24.4` - linux; amd64
 
 ```console
 $ docker pull perl@sha256:055c779acd67fa1cecf41ceaa5ae94cd95d4405da1a54133be4dbc3a59cefd0f
@@ -2714,7 +2714,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.8 MB (12785124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3` - linux; arm variant v7
+### `perl:5.24.4` - linux; arm variant v7
 
 ```console
 $ docker pull perl@sha256:6f6d2a082ee7b41632a388e506a754f168a7a8db80b67363b515252f8c8d3e6b
@@ -2784,7 +2784,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 11.9 MB (11949151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3` - linux; arm64 variant v8
+### `perl:5.24.4` - linux; arm64 variant v8
 
 ```console
 $ docker pull perl@sha256:63f8b83070a7430caefe873029aef23ddcb14b77561ddaba50b4968a74af081a
@@ -2854,7 +2854,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.6 MB (12632035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3` - linux; 386
+### `perl:5.24.4` - linux; 386
 
 ```console
 $ docker pull perl@sha256:38448bf51d4bc4fa6aaadb0693d5f1d8dcbe9fcba1ac7ba803b172929c0c9bfa
@@ -2924,7 +2924,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.2 MB (12248190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3` - linux; ppc64le
+### `perl:5.24.4` - linux; ppc64le
 
 ```console
 $ docker pull perl@sha256:98b00ca05f6226d039687a1099b35184f86d1502b37581b97dbd6adf6547b3a2
@@ -2994,7 +2994,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.7 MB (12657284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3` - linux; s390x
+### `perl:5.24.4` - linux; s390x
 
 ```console
 $ docker pull perl@sha256:fc36f010f462e1e59654681f16c27618b3070776c72609031683419eb218d8dc
@@ -3064,7 +3064,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 13.2 MB (13184629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `perl:5.24.3-threaded`
+## `perl:5.24.4-threaded`
 
 ```console
 $ docker pull perl@sha256:c41df36b0daa332361d9ab38637ac43f4915418f9f3b84c89c50a744e247453d
@@ -3079,7 +3079,7 @@ $ docker pull perl@sha256:c41df36b0daa332361d9ab38637ac43f4915418f9f3b84c89c50a7
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `perl:5.24.3-threaded` - linux; amd64
+### `perl:5.24.4-threaded` - linux; amd64
 
 ```console
 $ docker pull perl@sha256:bf3b02a4e274171dfc56aa12d4680aef0f850eea4dd60bdc0a3079ff0117c475
@@ -3149,7 +3149,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.8 MB (12825334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3-threaded` - linux; arm variant v7
+### `perl:5.24.4-threaded` - linux; arm variant v7
 
 ```console
 $ docker pull perl@sha256:c6964b10423e2404c9ca35337f161ca09457cb6c64c46000e2912a6a4b99df2a
@@ -3219,7 +3219,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.0 MB (11955873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3-threaded` - linux; arm64 variant v8
+### `perl:5.24.4-threaded` - linux; arm64 variant v8
 
 ```console
 $ docker pull perl@sha256:3883cf3eb84f1a5e38298637e9132be1d22511ed2b2633b3e667766bdfa8fe73
@@ -3289,7 +3289,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.7 MB (12659926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3-threaded` - linux; 386
+### `perl:5.24.4-threaded` - linux; 386
 
 ```console
 $ docker pull perl@sha256:d9f0de4914cf79578df444a9652a40e462c6f56ed8581f56afd28f5d5ce0c452
@@ -3359,7 +3359,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.3 MB (12336272 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3-threaded` - linux; ppc64le
+### `perl:5.24.4-threaded` - linux; ppc64le
 
 ```console
 $ docker pull perl@sha256:ee964355d4136666bee57a09265861b4def51411e6d1df438a1057ac2c08d78a
@@ -3429,7 +3429,7 @@ CMD ["perl5.24.3" "-de0"]
 		Size: 12.7 MB (12721827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.24.3-threaded` - linux; s390x
+### `perl:5.24.4-threaded` - linux; s390x
 
 ```console
 $ docker pull perl@sha256:f3195eca71467750df28309225d72be114339b8c40ec3403bd1a77e2b45dd3d1
@@ -4369,7 +4369,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.5 MB (13520150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `perl:5.26.1`
+## `perl:5.26.2`
 
 ```console
 $ docker pull perl@sha256:b8ba17d677971a7da62ea1d2cd28ef191c47649ac0440da6d23742021a0e4a91
@@ -4384,7 +4384,7 @@ $ docker pull perl@sha256:b8ba17d677971a7da62ea1d2cd28ef191c47649ac0440da6d23742
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `perl:5.26.1` - linux; amd64
+### `perl:5.26.2` - linux; amd64
 
 ```console
 $ docker pull perl@sha256:99c2fb7e35be450d5cf52122164f4c47fb20d068d6dc26b6b76ab4d4e6bce608
@@ -4454,7 +4454,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.1 MB (13112074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1` - linux; arm variant v7
+### `perl:5.26.2` - linux; arm variant v7
 
 ```console
 $ docker pull perl@sha256:5e4437624be3a19b478af36ff163d13ecfe24debe267cbac5f87827b8f1708c9
@@ -4524,7 +4524,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 12.3 MB (12284482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1` - linux; arm64 variant v8
+### `perl:5.26.2` - linux; arm64 variant v8
 
 ```console
 $ docker pull perl@sha256:6af1eac77ab212e8cdcd16a5001420905dd673fe084f4e24a2f968aa8f172825
@@ -4594,7 +4594,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.0 MB (12960253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1` - linux; 386
+### `perl:5.26.2` - linux; 386
 
 ```console
 $ docker pull perl@sha256:8a2c35b9bbaf90e7786b2ad007604afe758b4dff2f9682eed44d065ac7c10b63
@@ -4664,7 +4664,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 12.6 MB (12602865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1` - linux; ppc64le
+### `perl:5.26.2` - linux; ppc64le
 
 ```console
 $ docker pull perl@sha256:8dd46cd2342d1d311839a815c9c885301910f07b735bbc428d6b61d6691ea950
@@ -4734,7 +4734,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.0 MB (12978253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1` - linux; s390x
+### `perl:5.26.2` - linux; s390x
 
 ```console
 $ docker pull perl@sha256:fe559ce6dd6be1f4820c81361f0743568f1a9e57c35478e91ad3d8824e62d331
@@ -4804,7 +4804,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.5 MB (13520150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `perl:5.26.1-threaded`
+## `perl:5.26.2-threaded`
 
 ```console
 $ docker pull perl@sha256:54f029003ad39e036c79658f7a2f5f651a2d6e73f09278ddc40b124894c3fa5f
@@ -4819,7 +4819,7 @@ $ docker pull perl@sha256:54f029003ad39e036c79658f7a2f5f651a2d6e73f09278ddc40b12
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `perl:5.26.1-threaded` - linux; amd64
+### `perl:5.26.2-threaded` - linux; amd64
 
 ```console
 $ docker pull perl@sha256:1dbd283df0841f3f476cef0047d63a36b8770ff98c2826a36c6e79481b2dfe34
@@ -4889,7 +4889,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.2 MB (13157939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1-threaded` - linux; arm variant v7
+### `perl:5.26.2-threaded` - linux; arm variant v7
 
 ```console
 $ docker pull perl@sha256:13e4a41ad84444c37362ea29fe4d935ec8bdbf9663e9aacc89f967aea917cc7a
@@ -4959,7 +4959,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 12.3 MB (12301068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1-threaded` - linux; arm64 variant v8
+### `perl:5.26.2-threaded` - linux; arm64 variant v8
 
 ```console
 $ docker pull perl@sha256:57af9f509e06d301a9e667a8cc31339bc13c83a6d7096fed3b15f3a3315db574
@@ -5029,7 +5029,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.0 MB (12984445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1-threaded` - linux; 386
+### `perl:5.26.2-threaded` - linux; 386
 
 ```console
 $ docker pull perl@sha256:f3a7f278179621c5ccd08c91b3b7f2e76f3ea5b11550263a2e0add2cc797f0c7
@@ -5099,7 +5099,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 12.7 MB (12690329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1-threaded` - linux; ppc64le
+### `perl:5.26.2-threaded` - linux; ppc64le
 
 ```console
 $ docker pull perl@sha256:367d1a99652a91fe5e2bac8db8a28a881a2e09f1747d4dffac1f8c007357494f
@@ -5169,7 +5169,7 @@ CMD ["perl5.26.1" "-de0"]
 		Size: 13.0 MB (13043852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `perl:5.26.1-threaded` - linux; s390x
+### `perl:5.26.2-threaded` - linux; s390x
 
 ```console
 $ docker pull perl@sha256:7712d5e0a309c31d7aac074a5dd033d40b95ae6f24c007db9954026a57b6c7c0
