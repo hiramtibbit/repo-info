@@ -1,7 +1,7 @@
 ## `elasticsearch:latest`
 
 ```console
-$ docker pull elasticsearch@sha256:5f1821b5266fa8c374f2d56d3eb2a29372406905147fc8a2ed646bb1b1b60f01
+$ docker pull elasticsearch@sha256:1aefaca0ec661d813fa424df5397111da5c49af0c8e89f47efa3cd2ebe02d59d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull elasticsearch@sha256:5f1821b5266fa8c374f2d56d3eb2a29372406905147fc
 ### `elasticsearch:latest` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:9302549c9fc9e3e81d3c1cb8c2d643e7c7d6234ff91585aafc47cb76bbee7d72
+$ docker pull elasticsearch@sha256:eed01574ecf1dc1d08cf62ffa07672c2fd1938fe073adbbc5946706c3eba22be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.5 MB (252491916 bytes)**  
+-	Total Size: **252.5 MB (252493640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c0bdf761f3b2777c437ac9a0ab6201be66766558752079235dfc173d16b4026`
+-	Image ID: `sha256:6f8bf0ce76eacd07c56ac38bc3020d835e3eef751b360ef77154f34a4b79c4b8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -59,29 +59,29 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
 # Tue, 20 Mar 2018 00:24:34 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Tue, 20 Mar 2018 00:24:34 GMT
-ENV ELASTICSEARCH_VERSION=5.6.8
-# Tue, 20 Mar 2018 00:24:34 GMT
-ENV ELASTICSEARCH_DEB_VERSION=5.6.8
-# Tue, 20 Mar 2018 00:24:41 GMT
+# Thu, 19 Apr 2018 19:29:59 GMT
+ENV ELASTICSEARCH_VERSION=5.6.9
+# Thu, 19 Apr 2018 19:29:59 GMT
+ENV ELASTICSEARCH_DEB_VERSION=5.6.9
+# Thu, 19 Apr 2018 19:30:08 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Mar 2018 00:24:41 GMT
+# Thu, 19 Apr 2018 19:30:09 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Mar 2018 00:24:41 GMT
+# Thu, 19 Apr 2018 19:30:09 GMT
 WORKDIR /usr/share/elasticsearch
-# Tue, 20 Mar 2018 00:24:42 GMT
+# Thu, 19 Apr 2018 19:30:10 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Tue, 20 Mar 2018 00:24:43 GMT
+# Thu, 19 Apr 2018 19:30:10 GMT
 COPY dir:c3faa196a3b1c87063ffe0be6ee20b5f2b36a9589fd93336acab4ba1aa6f6855 in ./config 
-# Tue, 20 Mar 2018 00:24:43 GMT
+# Thu, 19 Apr 2018 19:30:11 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Tue, 20 Mar 2018 00:24:43 GMT
+# Thu, 19 Apr 2018 19:30:11 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Tue, 20 Mar 2018 00:24:44 GMT
+# Thu, 19 Apr 2018 19:30:11 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Tue, 20 Mar 2018 00:24:44 GMT
+# Thu, 19 Apr 2018 19:30:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 20 Mar 2018 00:24:44 GMT
+# Thu, 19 Apr 2018 19:30:12 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -130,19 +130,19 @@ CMD ["elasticsearch"]
 		Last Modified: Tue, 20 Mar 2018 00:26:07 GMT  
 		Size: 936.2 KB (936224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4816c5772dec603303a21a12809f4ff10c99607b1cb60f02a861f7c1989948cb`  
-		Last Modified: Tue, 20 Mar 2018 00:26:09 GMT  
-		Size: 34.1 MB (34134415 bytes)  
+	-	`sha256:510c06c17e4c0b0a77779707e6f30d2301db5f5959d187721553a0f9ac924e2b`  
+		Last Modified: Thu, 19 Apr 2018 19:31:50 GMT  
+		Size: 34.1 MB (34136132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:561a1b3c608d127355c744ddc5a31f2a23d8231e97dd3eb06cb816a47e163b0d`  
-		Last Modified: Tue, 20 Mar 2018 00:26:06 GMT  
-		Size: 222.0 B  
+	-	`sha256:9f74ca092582d0c4e5e6c8c228d82429d66b9813ff1a84d6770beb5f0418295a`  
+		Last Modified: Thu, 19 Apr 2018 19:31:47 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e070972dc6875850b062007ecebc61a2bd21421f88b921c19ac6221e1d56a080`  
-		Last Modified: Tue, 20 Mar 2018 00:26:06 GMT  
-		Size: 491.0 B  
+	-	`sha256:c9577dae2adb75210f76d1dfbee236420e3a3d8a6df0e5bdd2d10a12baa99f01`  
+		Last Modified: Thu, 19 Apr 2018 19:31:47 GMT  
+		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b83383f6b08e01a56c2df3f72f83ea656bd808de270b613e165ddebf2bbd873`  
-		Last Modified: Tue, 20 Mar 2018 00:26:06 GMT  
+	-	`sha256:b47680ce110115a13279a8b6e973d325f0aac3c1c5ea6fb13d1d4275854c427e`  
+		Last Modified: Thu, 19 Apr 2018 19:31:47 GMT  
 		Size: 507.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
