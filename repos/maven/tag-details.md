@@ -12,6 +12,8 @@
 -	[`maven:3.5.3-ibmjava-alpine`](#maven353-ibmjava-alpine)
 -	[`maven:3.5.3-jdk-10`](#maven353-jdk-10)
 -	[`maven:3.5.3-jdk-10-slim`](#maven353-jdk-10-slim)
+-	[`maven:3.5.3-jdk-11`](#maven353-jdk-11)
+-	[`maven:3.5.3-jdk-11-slim`](#maven353-jdk-11-slim)
 -	[`maven:3.5.3-jdk-7`](#maven353-jdk-7)
 -	[`maven:3.5.3-jdk-7-alpine`](#maven353-jdk-7-alpine)
 -	[`maven:3.5.3-jdk-7-slim`](#maven353-jdk-7-slim)
@@ -28,6 +30,8 @@
 -	[`maven:3.5-ibmjava-alpine`](#maven35-ibmjava-alpine)
 -	[`maven:3.5-jdk-10`](#maven35-jdk-10)
 -	[`maven:3.5-jdk-10-slim`](#maven35-jdk-10-slim)
+-	[`maven:3.5-jdk-11`](#maven35-jdk-11)
+-	[`maven:3.5-jdk-11-slim`](#maven35-jdk-11-slim)
 -	[`maven:3.5-jdk-7`](#maven35-jdk-7)
 -	[`maven:3.5-jdk-7-alpine`](#maven35-jdk-7-alpine)
 -	[`maven:3.5-jdk-7-slim`](#maven35-jdk-7-slim)
@@ -42,6 +46,8 @@
 -	[`maven:3-ibmjava-8-alpine`](#maven3-ibmjava-8-alpine)
 -	[`maven:3-jdk-10`](#maven3-jdk-10)
 -	[`maven:3-jdk-10-slim`](#maven3-jdk-10-slim)
+-	[`maven:3-jdk-11`](#maven3-jdk-11)
+-	[`maven:3-jdk-11-slim`](#maven3-jdk-11-slim)
 -	[`maven:3-jdk-7`](#maven3-jdk-7)
 -	[`maven:3-jdk-7-alpine`](#maven3-jdk-7-alpine)
 -	[`maven:3-jdk-7-slim`](#maven3-jdk-7-slim)
@@ -5943,6 +5949,14 @@ CMD ["mvn"]
 		Last Modified: Fri, 06 Apr 2018 18:47:25 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `maven:3.5.3-jdk-11`
+
+**does not exist** (yet?)
+
+## `maven:3.5.3-jdk-11-slim`
+
+**does not exist** (yet?)
 
 ## `maven:3.5.3-jdk-7`
 
@@ -15992,6 +16006,14 @@ CMD ["mvn"]
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `maven:3.5-jdk-11`
+
+**does not exist** (yet?)
+
+## `maven:3.5-jdk-11-slim`
+
+**does not exist** (yet?)
+
 ## `maven:3.5-jdk-7`
 
 ```console
@@ -25358,6 +25380,14 @@ CMD ["mvn"]
 		Last Modified: Fri, 06 Apr 2018 18:47:25 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `maven:3-jdk-11`
+
+**does not exist** (yet?)
+
+## `maven:3-jdk-11-slim`
+
+**does not exist** (yet?)
 
 ## `maven:3-jdk-7`
 
