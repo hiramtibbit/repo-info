@@ -2041,14 +2041,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.24
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.dsc' openssl_1.0.1f-1ubuntu2.24.dsc 2352 SHA256:2ba8f937da47a6ee2098ca8e7d440b35dc9044765bc39971c68489d7ce0a012c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.24.debian.tar.gz' openssl_1.0.1f-1ubuntu2.24.debian.tar.gz 270246 SHA256:59cfb19bdf629412972dd7102782882d54e4581feb25fa70beabe532ab79449b
-```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -2493,9 +2488,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=204-5ubuntu20.26
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.dsc' systemd_204-5ubuntu20.26.dsc 3679 SHA256:31e3b27daad2be2c75303286884bf6145fd415eb5f1ad8b2ee55a92ea51db290
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.debian.tar.gz' systemd_204-5ubuntu20.26.debian.tar.gz 178668 SHA256:c4701243763f607d7e9bc46ea56398512930ea964461118c04251d793ca01133
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.dsc' systemd_204-5ubuntu20.26.dsc 3679 SHA256:31e3b27daad2be2c75303286884bf6145fd415eb5f1ad8b2ee55a92ea51db290
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.debian.tar.gz' systemd_204-5ubuntu20.26.debian.tar.gz 178668 SHA256:c4701243763f607d7e9bc46ea56398512930ea964461118c04251d793ca01133
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`

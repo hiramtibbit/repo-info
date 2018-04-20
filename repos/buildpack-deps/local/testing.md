@@ -1557,20 +1557,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.7.2-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.dsc' harfbuzz_1.7.2-1.dsc 2280 SHA256:edc57d3aae36501ec509aa20df686539dcb2bf82f25ed43e86f6f9f380d947c4
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2' harfbuzz_1.7.2.orig.tar.bz2 1708416 SHA256:a790585e35c1a87f0dcc23580c84b7cc2324e6f67a2946178d278c2a36c790cb
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.debian.tar.xz' harfbuzz_1.7.2-1.debian.tar.xz 8912 SHA256:b7fe86314450d2989e63c3d48d40316d062ef4eedba634431379e5e2d28ffa98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.7.2-1/
 
-- https://sources.debian.net/src/harfbuzz/1.7.2-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.7.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
@@ -2669,21 +2662,13 @@ Licenses: (parsed from: `/usr/share/doc/libsigsegv2/copyright`)
 - `permissive-fsf`
 - `permissive-other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsigsegv=2.12-1
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.12-1.dsc' libsigsegv_2.12-1.dsc 2372 SHA256:f1a17e8431a3c1f5d8f69745dcaea78c4007bf463b19c6497fd9672e9e07e438
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.12.orig.tar.gz' libsigsegv_2.12.orig.tar.gz 451408 SHA256:3ae1af359eebaa4ffc5896a1aee3568c052c99879316a1ab57f8fe1789c390b6
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.12.orig.tar.gz.asc' libsigsegv_2.12.orig.tar.gz.asc 2442 SHA256:1861a9a182bbb7a24a18f7e43fe0fa3eb6f6fd53780b30e01990677112694dfc
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.12-1.debian.tar.xz' libsigsegv_2.12-1.debian.tar.xz 8548 SHA256:b72c81bfae92575211ceeb2eb4e90453ca4393806efc7f2804df28e7641bc810
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsigsegv/2.12-1/
 
-- https://sources.debian.net/src/libsigsegv/2.12-1/ (for browsing the source)
-- https://sources.debian.net/src/libsigsegv/2.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsigsegv/2.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsm=2:1.2.2-1`
 
@@ -3248,20 +3233,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.dsc' lz4_0.0~r131-2.dsc 1973 SHA256:304cf9dddee387377929adf3f2cef0ae19fb2e56b6cc9eab05798845b58bd9b6
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.debian.tar.xz' lz4_0.0~r131-2.debian.tar.xz 4936 SHA256:966df055dd8fa7f292c283452b43a5d2d2047d542fe49e97025006e69525e224
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/0.0~r131-2/
 
-- https://sources.debian.net/src/lz4/0.0~r131-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/0.0~r131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lzo2=2.08-1.2`
 
@@ -4029,21 +4007,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-5.dsc' perl_5.26.1-5.dsc 2653 SHA256:e15bac1fa71fb9d4a85396c40ebc2b11ed7edfec8641a5b587d55fd65c520e8a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.1-5.debian.tar.xz' perl_5.26.1-5.debian.tar.xz 162384 SHA256:d9809b495e6d0ad2f9f06c3ef812d95f4a0abd93faa129373f7c851f7b2cb447
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.1-5/
 
-- https://sources.debian.net/src/perl/5.26.1-5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -4636,20 +4606,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-4.dsc' tiff_4.0.9-4.dsc 2184 SHA256:52120121e154939321fed49a2200e477bfd421e8c94d55e9ad2d1fcafe7adc0e
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-4.debian.tar.xz' tiff_4.0.9-4.debian.tar.xz 19572 SHA256:f078da1da538109c1e5403dc1f44d23c91f5a5d6ddc5ffc41ff60de006cb2b2e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.9-4/
 
-- https://sources.debian.net/src/tiff/4.0.9-4/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018c-1`
 

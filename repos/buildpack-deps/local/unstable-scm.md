@@ -224,19 +224,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.44
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.dsc' base-passwd_3.5.44.dsc 1685 SHA256:22a5db1e9bb71fa8a4d682b3f9c01470a61b8041eb6212471181c6808b268c13
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.tar.xz' base-passwd_3.5.44.tar.xz 52644 SHA256:f17a0746024572e86e60e4614cf226a81ffe682ceaf1a1fce9dc1a8002683e90
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.5.44/
 
-- https://sources.debian.net/src/base-passwd/3.5.44/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.5.44/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.5.44/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=4.4.18-1.1`
 
@@ -1670,20 +1664,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.dsc' lz4_0.0~r131-2.dsc 1973 SHA256:304cf9dddee387377929adf3f2cef0ae19fb2e56b6cc9eab05798845b58bd9b6
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.debian.tar.xz' lz4_0.0~r131-2.debian.tar.xz 4936 SHA256:966df055dd8fa7f292c283452b43a5d2d2047d542fe49e97025006e69525e224
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/0.0~r131-2/
 
-- https://sources.debian.net/src/lz4/0.0~r131-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/0.0~r131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -2221,19 +2208,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.14-4
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.14-4.dsc' python-defaults_2.7.14-4.dsc 2610 SHA256:c84fba720932be2e1d69e3c0cc1ad430f94f9869fabcada78092eb576bec6ea1
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.14-4.tar.gz' python-defaults_2.7.14-4.tar.gz 275123 SHA256:7ac13aab5f8bb33206f832481f747e325abc03fd25661ee29117be87f3e3ec29
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-defaults/2.7.14-4/
 
-- https://sources.debian.net/src/python-defaults/2.7.14-4/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.14-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.14-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python2.7=2.7.14-7`
 
@@ -2456,20 +2437,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-4
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-4.dsc' subversion_1.9.7-4.dsc 3057 SHA256:c1349e938906ac0a6fb99a0acb0b4329193c737190f1a3ef99e3d1d08d66e620
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-4.debian.tar.xz' subversion_1.9.7-4.debian.tar.xz 2264352 SHA256:eaa27384e66ce34daa38cd630e5b392f5b60440ad717d98a3ab965da6c423850
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.9.7-4/
 
-- https://sources.debian.net/src/subversion/1.9.7-4/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.9.7-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.9.7-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 

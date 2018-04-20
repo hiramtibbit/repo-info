@@ -483,13 +483,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu1.dsc' dpkg_1.19.0.5ubuntu1.dsc 2052 SHA256:4f4e953a10d3cd7ad88bd48b3bb7960c1058b6d7947164a841d8469d75465fd0
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu1.tar.xz' dpkg_1.19.0.5ubuntu1.tar.xz 4569340 SHA256:f5d5d2a7cd6a509a71f1c2a640ef6af643ff859c981aba6ec9ead040353b673b
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.1-1`
 
@@ -646,14 +642,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.27-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-0ubuntu3.dsc' glibc_2.27-0ubuntu3.dsc 9399 SHA256:632a59016e1df98429856345517ec5009993e9e8f477bbf0ea5128ca74c0e98f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA256:0e9826488e3ffedb4d14a426d741b7b1cf15f6973ab30762af9a188ad47633ed
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-0ubuntu3.debian.tar.xz' glibc_2.27-0ubuntu3.debian.tar.xz 1005816 SHA256:433aec4b06755c3dae5cc6f4d6b9f0922411151a288e0d3fb9e62a63b618559d
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-2`
 
@@ -866,14 +857,9 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.5.9-9.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu1.dsc' keyutils_1.5.9-9.2ubuntu1.dsc 2089 SHA256:e86a8bacd32a9c510f7b9f31bf3476a7f55746e631bfbe7fe87dd0fd18e99ed7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu1.debian.tar.xz' keyutils_1.5.9-9.2ubuntu1.debian.tar.xz 18140 SHA256:f9190ac67cce32952b05b2917e8c69b74b34a475e31c98388242c3ce8b9aa500
-```
 
 ### `dpkg` source package: `krb5=1.16-2build1`
 
@@ -1678,15 +1664,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-5.dsc' perl_5.26.1-5.dsc 2653 SHA256:e15bac1fa71fb9d4a85396c40ebc2b11ed7edfec8641a5b587d55fd65c520e8a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-5.debian.tar.xz' perl_5.26.1-5.debian.tar.xz 162384 SHA256:d9809b495e6d0ad2f9f06c3ef812d95f4a0abd93faa129373f7c851f7b2cb447
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.26.1-5/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -1749,13 +1733,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.14-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.14-4.dsc' python-defaults_2.7.14-4.dsc 2610 SHA256:c84fba720932be2e1d69e3c0cc1ad430f94f9869fabcada78092eb576bec6ea1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.14-4.tar.gz' python-defaults_2.7.14-4.tar.gz 275123 SHA256:7ac13aab5f8bb33206f832481f747e325abc03fd25661ee29117be87f3e3ec29
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python-defaults/2.7.14-4/
+
 
 ### `dpkg` source package: `python2.7=2.7.14-8`
 
