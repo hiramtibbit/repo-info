@@ -1,10 +1,10 @@
-# `openjdk:10-ea-46-jre-slim-experimental`
+# `openjdk:10-ea-46-jre-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a20c0b89753cd0737968a3ab3dba061fd63d58ed5d77f6036144cdad8725ff7c`
-- Created: `2018-04-04T18:48:45.876314352Z`
-- Virtual Size: ~ 286.24 Mb  
+- Image ID: `sha256:6d75c31eb82e6a644c1c1d918d187a2b2edb86798ed59c0f543c0c877abb3290`
+- Created: `2018-04-19T23:14:25.567047443Z`
+- Virtual Size: ~ 286.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=10-ea+46`
-  - `JAVA_DEBIAN_VERSION=10~46-4`
+  - `JAVA_DEBIAN_VERSION=10~46-5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -235,19 +235,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.44
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.dsc' base-passwd_3.5.44.dsc 1685 SHA256:22a5db1e9bb71fa8a4d682b3f9c01470a61b8041eb6212471181c6808b268c13
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.tar.xz' base-passwd_3.5.44.tar.xz 52644 SHA256:f17a0746024572e86e60e4614cf226a81ffe682ceaf1a1fce9dc1a8002683e90
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.5.44/
 
-- https://sources.debian.net/src/base-passwd/3.5.44/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.5.44/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.5.44/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=4.4.18-1.1`
 
@@ -293,29 +287,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-8.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-8.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates-java=20170930`
+### `dpkg` source package: `ca-certificates-java=20180413`
 
 Binary Packages:
 
-- `ca-certificates-java=20170930`
+- `ca-certificates-java=20180413`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates-java=20180413
+'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20180413.dsc' ca-certificates-java_20180413.dsc 1805 SHA256:c252cf62714128f78bc41191607f91f8a430613e61c52cb4afc307b6af022838
+'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20180413.tar.xz' ca-certificates-java_20180413.tar.xz 16416 SHA256:ab7839a1125abec1882d6e7aac7aca3394241effc0ee24652b6f0e51e8a2ac34
+```
 
-- http://snapshot.debian.org/package/ca-certificates-java/20170930/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates-java/20180413/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates-java/20180413/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates-java/20180413/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20170717`
+### `dpkg` source package: `ca-certificates=20180409`
 
 Binary Packages:
 
-- `ca-certificates=20170717`
+- `ca-certificates=20180409`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -326,16 +326,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20170717
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.dsc' ca-certificates_20170717.dsc 1506 SHA256:da6268ff88e05c85c23c62add13d3d127087467d0c7e83974ca28db5543a252a
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz' ca-certificates_20170717.tar.xz 293028 SHA256:e487639b641fa75445174734dd6e9d600373e3248b3d86a7e3c6d0f6977decd2
+$ apt-get source -qq --print-uris ca-certificates=20180409
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20180409.dsc' ca-certificates_20180409.dsc 1420 SHA256:cd1f6540d0dab28f897e0e0cb2191130cdbf897f8ce3f52c8e483b2ed1555d30
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20180409.tar.xz' ca-certificates_20180409.tar.xz 246908 SHA256:7af6f5bfc619fd29cbf0258c1d95107c38ce840ad6274e343e1e0d971fc72b51
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20170717/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20170717/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20170717/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20180409/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20180409/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20180409/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.241`
 
@@ -381,11 +381,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.28-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.2.7-2`
+### `dpkg` source package: `cups=2.2.7-3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.7-2`
+- `libcups2:amd64=2.2.7-3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -396,13 +396,21 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris cups=2.2.7-3
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-3.dsc' cups_2.2.7-3.dsc 3467 SHA256:c9c0ee328e017eb42fa06dba2d2617fe0805678d4c6f8f938809ef7668652f52
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-3.debian.tar.xz' cups_2.2.7-3.debian.tar.xz 350356 SHA256:a6d8a3b87d7b77e464d7e686f608368e17dab2cbe8a2b9c2ab99eb16b86a3bee
+```
 
-- http://snapshot.debian.org/package/cups/2.2.7-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/cups/2.2.7-3/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.2.7-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.2.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -1721,20 +1729,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.dsc' lz4_0.0~r131-2.dsc 1973 SHA256:304cf9dddee387377929adf3f2cef0ae19fb2e56b6cc9eab05798845b58bd9b6
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.debian.tar.xz' lz4_0.0~r131-2.debian.tar.xz 4936 SHA256:966df055dd8fa7f292c283452b43a5d2d2047d542fe49e97025006e69525e224
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/0.0~r131-2/
 
-- https://sources.debian.net/src/lz4/0.0~r131-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/0.0~r131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -1827,47 +1828,61 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nspr=2:4.18-1`
+### `dpkg` source package: `nspr=2:4.19-1`
 
 Binary Packages:
 
-- `libnspr4:amd64=2:4.18-1`
+- `libnspr4:amd64=2:4.19-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nspr=2:4.19-1
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19-1.dsc' nspr_4.19-1.dsc 2061 SHA256:5a737b00e19488384e75c18fd59456a2327d1d2e30c648c0fd24f0532961757e
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19.orig.tar.gz' nspr_4.19.orig.tar.gz 1139967 SHA256:2ed95917fa2277910d1d1cf36030607dccc0ba522bba08e2af13c113dcd8f729
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19-1.debian.tar.xz' nspr_4.19-1.debian.tar.xz 15320 SHA256:fdc6c83dec976487979da56d90da4dd897772df1f978e897136908ed24c4d933
+```
 
-- http://snapshot.debian.org/package/nspr/2:4.18-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nspr/2:4.19-1/ (for browsing the source)
+- https://sources.debian.net/src/nspr/2:4.19-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nspr/2:4.19-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.35-2`
+### `dpkg` source package: `nss=2:3.36.1-1`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.35-2`
+- `libnss3:amd64=2:3.36.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nss=2:3.36.1-1
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.36.1-1.dsc' nss_3.36.1-1.dsc 2213 SHA256:319e2fab6dc2c4d779fe83ef2e57867f00d0d67209e145d11570408e32690820
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.36.1.orig.tar.gz' nss_3.36.1.orig.tar.gz 23026430 SHA256:6025441d528ff6a7f1a4b673b6ee7d3540731ada3f78d5acd5c3b3736b222bff
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.36.1-1.debian.tar.xz' nss_3.36.1-1.debian.tar.xz 24896 SHA256:cdd0f619094ed6d90639bcd679697c283d106f9353f7efc50dd793f5dc7fde7c
+```
 
-- http://snapshot.debian.org/package/nss/2:3.35-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nss/2:3.36.1-1/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.36.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.36.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10~46-4`
+### `dpkg` source package: `openjdk-10=10~46-5`
 
 Binary Packages:
 
-- `openjdk-10-jre-headless:amd64=10~46-4`
+- `openjdk-10-jre-headless:amd64=10~46-5`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
@@ -1876,13 +1891,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-10=10~46-5
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-5.dsc' openjdk-10_10~46-5.dsc 4515 SHA256:e1d941e9cb3d51b100f9ea4668c3b9c91c1575c623588accd565c96663233d55
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46.orig.tar.xz' openjdk-10_10~46.orig.tar.xz 73871700 SHA256:b5aa0739753ea1357341e31783efc2ab1398e602b8c964ce537e78231ca45eb1
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10~46-5.debian.tar.xz' openjdk-10_10~46-5.debian.tar.xz 168032 SHA256:4217f46fb34f8326b28175ba7d70fd251b9defa4a4230d284f00df4d8f44d51b
+```
 
-- http://snapshot.debian.org/package/openjdk-10/10~46-4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-10/10~46-5/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10~46-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10~46-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-2`
 
@@ -2119,11 +2141,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.23.0-1`
+### `dpkg` source package: `sqlite3=3.23.1-1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.23.0-1`
+- `libsqlite3-0:amd64=3.23.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2131,13 +2153,21 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sqlite3=3.23.1-1
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.dsc' sqlite3_3.23.1-1.dsc 2397 SHA256:d7359aa47ae841a7dcff77199255017c9328c0d9fa62cb8e4bbaabc9c255682d
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig-www.tar.xz' sqlite3_3.23.1.orig-www.tar.xz 5298868 SHA256:aae9bf9b9f5ff3cb39ff971e4befa76dd4fff134c1e24059952c790d7c0e9123
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig.tar.xz' sqlite3_3.23.1.orig.tar.xz 6096480 SHA256:358f3eb72765fd5d272d89151649d39c9c9f15c92d15373517ab684d715957f7
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.debian.tar.xz' sqlite3_3.23.1-1.debian.tar.xz 17440 SHA256:a65dba708a204b2f37a348f556d7155398818a89586c92e3765ac776d184cb1c
+```
 
-- http://snapshot.debian.org/package/sqlite3/3.23.0-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sqlite3/3.23.1-1/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.23.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-2`
 
