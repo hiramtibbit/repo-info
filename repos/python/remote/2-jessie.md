@@ -1,7 +1,7 @@
 ## `python:2-jessie`
 
 ```console
-$ docker pull python@sha256:d5b19ffe827ca370a3c82b9619d7f50dfdf4dbf479d7b599073eaf4b6cdf2b7d
+$ docker pull python@sha256:f843bda86a6448cfae7f7757359bfd07fec496dab35d5cf9a8d03e4dc6db30f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull python@sha256:d5b19ffe827ca370a3c82b9619d7f50dfdf4dbf479d7b599073e
 ### `python:2-jessie` - linux; amd64
 
 ```console
-$ docker pull python@sha256:4b2c52b23c6fa5acf1fae9ed4c7a3886de40447a1b2820ebd441f259c974699b
+$ docker pull python@sha256:44d1434754649a9408b51c45b8ad8812d67db1b2f68f7c3ac73320545d93b2a6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.3 MB (270307236 bytes)**  
+-	Total Size: **270.3 MB (270300808 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2863c80c418cbd42e0a0b7d658d674a7c7e8ef3cd70ad8e6f8d7bca77b28dee3`
+-	Image ID: `sha256:63510e77ed340003e1eaf83837cf3252634a3da261f6a6fd69e9d4ff6de5d992`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -52,13 +52,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.14
 # Wed, 14 Mar 2018 18:22:56 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Thu, 22 Mar 2018 19:36:59 GMT
-ENV PYTHON_PIP_VERSION=9.0.3
-# Thu, 22 Mar 2018 19:37:06 GMT
+# Fri, 20 Apr 2018 03:54:38 GMT
+ENV PYTHON_PIP_VERSION=10.0.0
+# Fri, 20 Apr 2018 03:54:46 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 22 Mar 2018 19:37:08 GMT
+# Fri, 20 Apr 2018 03:54:48 GMT
 RUN pip install --no-cache-dir virtualenv
-# Thu, 22 Mar 2018 19:37:08 GMT
+# Fri, 20 Apr 2018 03:54:49 GMT
 CMD ["python2"]
 ```
 
@@ -87,13 +87,13 @@ CMD ["python2"]
 		Last Modified: Wed, 14 Mar 2018 18:49:02 GMT  
 		Size: 14.8 MB (14818080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a571bb44bc322567186dca776eedc12ac260103d4bfecc25983ce92e5beec405`  
-		Last Modified: Thu, 22 Mar 2018 20:28:27 GMT  
-		Size: 1.9 MB (1885469 bytes)  
+	-	`sha256:48c6584040503d493d5af8a7abc575de55a9e16e75f9365b6149338c56dcf1c9`  
+		Last Modified: Fri, 20 Apr 2018 05:23:03 GMT  
+		Size: 1.8 MB (1783959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa6d783919f64f146167400f07be0c69d0d8a5daeecafee79af6dbb13ceced1b`  
-		Last Modified: Thu, 22 Mar 2018 20:28:27 GMT  
-		Size: 4.2 MB (4229708 bytes)  
+	-	`sha256:017da20817343b6c479d1ff5a3d6e5721627df75d1224381f79b134cf934874d`  
+		Last Modified: Fri, 20 Apr 2018 05:23:02 GMT  
+		Size: 4.3 MB (4324790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-jessie` - linux; arm variant v5
