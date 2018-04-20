@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:787025b60c738ed62059d7e2c9300f82f2c6beba7bf216f7ad8d10cb7a1407b8`
-- Created: `2018-04-14T08:17:55.717348043Z`
-- Virtual Size: ~ 413.81 Mb  
+- Image ID: `sha256:0d96722f232319cf81bb9a40935cd074ecd23d03da0ac2190c6abc3dafd20c08`
+- Created: `2018-04-18T21:21:01.052276538Z`
+- Virtual Size: ~ 477.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
@@ -985,14 +985,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.11.dsc' openssl_1.0.2g-1ubuntu4.11.dsc 2421 SHA256:9e8569c20cbedfdd38fca2ff5b3a66f8eaa4d18e0c4218088200afc048b5c6df
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.11.debian.tar.xz' openssl_1.0.2g-1ubuntu4.11.debian.tar.xz 121784 SHA256:4dc945ac32a574097c6d0478defaa2394bd22ba6efa17ad26fbf419805813c95
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
