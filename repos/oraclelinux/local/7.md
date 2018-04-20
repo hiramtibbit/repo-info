@@ -1,10 +1,10 @@
-# `oraclelinux:latest`
+# `oraclelinux:7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:98426f275c589a0a6291336e39abfc9fdb5371fba2fd8c328b91129890037e1c`
-- Created: `2018-03-13T18:01:56.907608257Z`
-- Virtual Size: ~ 229.17 Mb  
+- Image ID: `sha256:af8cf7fc5b7e9e4dcee6db022f23118d98ff54bfea1458bfb2d2ad7fad61770f`
+- Created: `2018-04-18T18:40:12.935217168Z`
+- Virtual Size: ~ 233.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
