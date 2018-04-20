@@ -1,10 +1,10 @@
-# `haproxy:1.8.7`
+# `haproxy:1.8.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:07d3f0c0a87e992591d0879c98c2115ae28d7a5f67cefb5b17a10d079e669238`
-- Created: `2018-04-11T17:48:30.996343312Z`
-- Virtual Size: ~ 74.40 Mb  
+- Image ID: `sha256:2b6a4216580becae60807758c16536a01905e948979e83aa4d5bcae38d988394`
+- Created: `2018-04-20T08:10:24.148866022Z`
+- Virtual Size: ~ 74.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HAPROXY_MAJOR=1.8`
-  - `HAPROXY_VERSION=1.8.7`
-  - `HAPROXY_MD5=c60f99a989366d14bc370dc7b3b2ff87`
+  - `HAPROXY_VERSION=1.8.8`
+  - `HAPROXY_MD5=8633b6e661169d2fc6a44d82a3aceae5`
 
 ## `dpkg` (`.deb`-based packages)
 
