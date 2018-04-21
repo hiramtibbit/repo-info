@@ -1,7 +1,7 @@
 ## `python:2-slim-jessie`
 
 ```console
-$ docker pull python@sha256:9a392edea4b330099efd18023e42571f8ec59607bb9e7c1bbf6bed59e783903e
+$ docker pull python@sha256:44646bbf5b678e0735af7d1faff029c46d4de3303abf1934e20b3d18cf6492b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull python@sha256:9a392edea4b330099efd18023e42571f8ec59607bb9e7c1bbf6b
 ### `python:2-slim-jessie` - linux; amd64
 
 ```console
-$ docker pull python@sha256:f5a3e2a469959ec75397ebd46d98a73f5de1f2c071482c38c3923e7eb75eddbe
+$ docker pull python@sha256:3104be1b1932c5e5ab39000e429a05d926ad8b69d7e1597c6e374db72cdf626b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49856424 bytes)**  
+-	Total Size: **49.9 MB (49857213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e9d63c88165d745131dc45ad3b4c8373f3aa67e1c5351dc026c2665e46524d8`
+-	Image ID: `sha256:ce007f0fff835ed1c28ecb27881a626843d73d524472813b7afa16c495366055`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -44,11 +44,11 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.14
 # Wed, 14 Mar 2018 18:26:12 GMT
 RUN set -ex 	&& buildDeps=" 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 		$(command -v gpg > /dev/null || echo 'gnupg dirmngr') 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 20 Apr 2018 03:55:09 GMT
-ENV PYTHON_PIP_VERSION=10.0.0
-# Fri, 20 Apr 2018 03:55:39 GMT
+# Sat, 21 Apr 2018 03:05:30 GMT
+ENV PYTHON_PIP_VERSION=10.0.1
+# Sat, 21 Apr 2018 03:05:56 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 20 Apr 2018 03:55:39 GMT
+# Sat, 21 Apr 2018 03:05:57 GMT
 CMD ["python2"]
 ```
 
@@ -65,9 +65,9 @@ CMD ["python2"]
 		Last Modified: Wed, 14 Mar 2018 18:50:01 GMT  
 		Size: 14.9 MB (14935104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3815606fecc4b61668484dd5396f9f930c5a8cab97cbf4836b463bf505ccd8e4`  
-		Last Modified: Fri, 20 Apr 2018 05:24:09 GMT  
-		Size: 2.1 MB (2088300 bytes)  
+	-	`sha256:cdc013a89aadb961fe65cc75e0bbb74c3d46aee6c4a133ab121e0c166a6c4fb6`  
+		Last Modified: Sat, 21 Apr 2018 04:06:46 GMT  
+		Size: 2.1 MB (2089089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-slim-jessie` - linux; arm variant v5
