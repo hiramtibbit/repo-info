@@ -1,7 +1,7 @@
 ## `python:2-alpine3.6`
 
 ```console
-$ docker pull python@sha256:12bd1b8eae511b8cf200652c0f07a205409b02e06e7a918f6f015dd54217dce9
+$ docker pull python@sha256:9c8fd35b61c958e74bd0de233830d1a9fdefaa681dbcedf586a888c1eb130b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -72,14 +72,14 @@ CMD ["python2"]
 ### `python:2-alpine3.6` - linux; arm variant v6
 
 ```console
-$ docker pull python@sha256:6d7521f5ee53580910a5944a3cf13c4054bab5405b25d999d2d27f3cb52adf81
+$ docker pull python@sha256:2cd46f1bb30710e0141dab70bb70460c2d7d3a24f57219773b2943b444e8a575
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 MB (25503784 bytes)**  
+-	Total Size: **25.5 MB (25504562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9af258eedcd2900c9625f9c190ea3a7fabfa83a4ef181b8aba090b5b09684905`
+-	Image ID: `sha256:c54c73ba48ac96d33e4c9cd2bd2e80c893654e94376fd85f74882ee2e8498bfc`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -101,11 +101,11 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.14
 # Wed, 20 Dec 2017 04:53:59 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		libressl 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		gcc 		gdbm-dev 		libc-dev 		linux-headers 		make 		ncurses-dev 		libressl 		libressl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 20 Apr 2018 07:55:49 GMT
-ENV PYTHON_PIP_VERSION=10.0.0
-# Fri, 20 Apr 2018 07:56:00 GMT
+# Sat, 21 Apr 2018 07:56:32 GMT
+ENV PYTHON_PIP_VERSION=10.0.1
+# Sat, 21 Apr 2018 07:56:41 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apk del .fetch-deps; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 20 Apr 2018 07:56:01 GMT
+# Sat, 21 Apr 2018 07:56:42 GMT
 CMD ["python2"]
 ```
 
@@ -126,9 +126,9 @@ CMD ["python2"]
 		Last Modified: Wed, 20 Dec 2017 04:55:43 GMT  
 		Size: 21.1 MB (21141277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edba620b656b6fcc17ec5254a2cb52c78eea120e560b1c42c5385309ede3be33`  
-		Last Modified: Fri, 20 Apr 2018 07:56:20 GMT  
-		Size: 2.0 MB (2044199 bytes)  
+	-	`sha256:1a9db488d84b39e9fa17011a2dccdd49874e7ef8e4e9ed40956e97367019146b`  
+		Last Modified: Sat, 21 Apr 2018 07:57:02 GMT  
+		Size: 2.0 MB (2044977 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-alpine3.6` - linux; arm64 variant v8
