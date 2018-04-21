@@ -1,10 +1,10 @@
-# `joomla:3.8.6-fpm`
+# `joomla:3.8.7-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8e651e484cd86cbaeb57f3015c974d09b08fd29345a8f84f3b9d5951212d304`
-- Created: `2018-04-06T02:36:23.43791942Z`
-- Virtual Size: ~ 426.93 Mb  
+- Image ID: `sha256:e30ee2b8cc3be14476a4e84d896f6e5582ee381e657cae7682b54363aa49e47c`
+- Created: `2018-04-20T20:59:38.099663466Z`
+- Virtual Size: ~ 426.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_SHA256=a5d67e477248a3911af7ef85c8400c1ba8cd632184186fd31070b96714e669f1`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.8.6`
-  - `JOOMLA_SHA1=769d86c00b3add41b1fa6c85f3ec823a07df88d1`
+  - `JOOMLA_VERSION=3.8.7`
+  - `JOOMLA_SHA1=c917407cb9b3984b47173317a2d23cd63b74f65b`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2881,6 +2881,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/
 
 
 ### `dpkg` source package: `ustr=1.0.4-3`
