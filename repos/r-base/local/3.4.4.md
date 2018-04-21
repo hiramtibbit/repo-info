@@ -181,19 +181,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.44
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.dsc' base-passwd_3.5.44.dsc 1685 SHA256:22a5db1e9bb71fa8a4d682b3f9c01470a61b8041eb6212471181c6808b268c13
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.44.tar.xz' base-passwd_3.5.44.tar.xz 52644 SHA256:f17a0746024572e86e60e4614cf226a81ffe682ceaf1a1fce9dc1a8002683e90
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.5.44/
 
-- https://sources.debian.net/src/base-passwd/3.5.44/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.5.44/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.5.44/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=4.4.18-1.1`
 
@@ -230,6 +224,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/binutils/2.30-7/
 
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
@@ -344,14 +342,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.15.10-2
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.15.10-2.dsc' cairo_1.15.10-2.dsc 2877 SHA256:f7b2a64535e931a8953e526c3e326ef18a3d6697b43b0f57436ba4bf99a6b025
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.15.10.orig.tar.xz' cairo_1.15.10.orig.tar.xz 41881364 SHA256:62ca226134cf2f1fd114bea06f8b374eb37f35d8e22487eaa54d5e9428958392
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.15.10-2.debian.tar.xz' cairo_1.15.10-2.debian.tar.xz 29760 SHA256:8524ef23ee7c626e487d39b7c2e246084fbc2840a45d66d3fe5feb16e11fd9f5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.15.10-2/
+
 
 ### `dpkg` source package: `cdbs=0.4.156`
 
@@ -747,6 +744,10 @@ Licenses: (parsed from: `/usr/share/doc/ed/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ed/1.10-2.1/
+
 
 ### `dpkg` source package: `elfutils=0.170-0.3`
 
@@ -986,6 +987,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8-20180312-2/
 
 
 ### `dpkg` source package: `gcc-defaults=1.174`
@@ -1298,20 +1303,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.7.2-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.dsc' harfbuzz_1.7.2-1.dsc 2280 SHA256:edc57d3aae36501ec509aa20df686539dcb2bf82f25ed43e86f6f9f380d947c4
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2' harfbuzz_1.7.2.orig.tar.bz2 1708416 SHA256:a790585e35c1a87f0dcc23580c84b7cc2324e6f67a2946178d278c2a36c790cb
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.debian.tar.xz' harfbuzz_1.7.2-1.debian.tar.xz 8912 SHA256:b7fe86314450d2989e63c3d48d40316d062ef4eedba634431379e5e2d28ffa98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.7.2-1/
 
-- https://sources.debian.net/src/harfbuzz/1.7.2-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.7.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.20`
 
@@ -3617,14 +3615,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-4
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-4.dsc' tiff_4.0.9-4.dsc 2184 SHA256:52120121e154939321fed49a2200e477bfd421e8c94d55e9ad2d1fcafe7adc0e
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-4.debian.tar.xz' tiff_4.0.9-4.debian.tar.xz 19572 SHA256:f078da1da538109c1e5403dc1f44d23c91f5a5d6ddc5ffc41ff60de006cb2b2e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.9-4/
+
 
 ### `dpkg` source package: `tk8.6=8.6.8-3`
 
@@ -3746,6 +3743,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.31.1-0.4/
 
 
 ### `dpkg` source package: `vim=2:8.0.1453-1`
