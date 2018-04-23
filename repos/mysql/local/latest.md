@@ -1,10 +1,10 @@
-# `mysql:5.7.21`
+# `mysql:8.0.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5195076672a7e30525705a18f7d352c920bbd07a5ae72b30e374081fe660a011`
-- Created: `2018-03-14T07:47:53.605443279Z`
-- Virtual Size: ~ 371.42 Mb  
+- Image ID: `sha256:8d65ec712c69a27e2b9064f2fef307849775687d270e9ab5b79fd17dcd31b16e`
+- Created: `2018-04-20T08:35:37.648157738Z`
+- Virtual Size: ~ 444.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
-  - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.21-1debian9`
+  - `MYSQL_MAJOR=8.0`
+  - `MYSQL_VERSION=8.0.11-1debian9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -559,11 +559,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `gcc-6-base:amd64=6.3.0-18+deb9u1`
-- `libatomic1:amd64=6.3.0-18+deb9u1`
 - `libgcc1:amd64=1:6.3.0-18+deb9u1`
 - `libstdc++6:amd64=6.3.0-18+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1276,13 +1275,41 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `mecab-ipadic=2.7.0-20070801+main-1`
+
+Binary Packages:
+
+- `mecab-ipadic=2.7.0-20070801+main-1`
+- `mecab-ipadic-utf8=2.7.0-20070801+main-1`
+
+Licenses: (parsed from: `/usr/share/doc/mecab-ipadic/copyright`, `/usr/share/doc/mecab-ipadic-utf8/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-3-Clause with ICOT term`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mecab-ipadic=2.7.0-20070801+main-1
+'http://deb.debian.org/debian/pool/main/m/mecab-ipadic/mecab-ipadic_2.7.0-20070801+main-1.dsc' mecab-ipadic_2.7.0-20070801+main-1.dsc 1441 SHA256:fe030b0a7721c3f719b2b46d099105f434537813751c21f6e90f4bf5d1ee9d8f
+'http://deb.debian.org/debian/pool/main/m/mecab-ipadic/mecab-ipadic_2.7.0-20070801+main.orig.tar.gz' mecab-ipadic_2.7.0-20070801+main.orig.tar.gz 12208105 SHA256:b62f527d881c504576baed9c6ef6561554658b175ce6ae0096a60307e49e3523
+'http://deb.debian.org/debian/pool/main/m/mecab-ipadic/mecab-ipadic_2.7.0-20070801+main-1.debian.tar.gz' mecab-ipadic_2.7.0-20070801+main-1.debian.tar.gz 4777 SHA256:5c2a1c47aca8ff3e58fcf719f4c4a92b4a530f72ce3edb699afc3970da1a50be
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mecab-ipadic/2.7.0-20070801+main-1/ (for browsing the source)
+- https://sources.debian.net/src/mecab-ipadic/2.7.0-20070801+main-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mecab-ipadic/2.7.0-20070801+main-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `mecab=0.996-3.1`
 
 Binary Packages:
 
 - `libmecab2:amd64=0.996-3.1`
+- `mecab-utils=0.996-3.1`
 
-Licenses: (parsed from: `/usr/share/doc/libmecab2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libmecab2/copyright`, `/usr/share/doc/mecab-utils/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1305,47 +1332,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mecab/0.996-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mecab/0.996-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-community=5.7.21-1debian9`
+### `dpkg` source package: `mysql-community=8.0.11-1debian9`
 
 Binary Packages:
 
-- `mysql-client=5.7.21-1debian9`
-- `mysql-community-client=5.7.21-1debian9`
-- `mysql-community-server=5.7.21-1debian9`
-- `mysql-server=5.7.21-1debian9`
+- `mysql-community-client-core=8.0.11-1debian9`
+- `mysql-community-server-core=8.0.11-1debian9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `mysql-defaults=1.0.2`
-
-Binary Packages:
-
-- `mysql-common=5.8+1.0.2`
-
-Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.2
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.2.dsc' mysql-defaults_1.0.2.dsc 2171 SHA256:30859f6b6f589644624b04da33ab86f978df2a37ebdf09da63b8076f664ca189
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.2.tar.xz' mysql-defaults_1.0.2.tar.xz 5424 SHA256:cf5597fbb134f99222d61101d0a7115bc3cc63476f6577d840600727a7b4a38c
+$ apt-get source -qq --print-uris mysql-community=8.0.11-1debian9
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11-1debian9.dsc' mysql-community_8.0.11-1debian9.dsc 2112 SHA256:ba24903d675f6223a1dc138a820dd110d5f5405b02e12852c9dae08a2c1cf9c4
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11.orig.tar.gz' mysql-community_8.0.11.orig.tar.gz 79361578 SHA256:3bde3e30d5d4afcedfc6db9eed5c984237ac7db9480a9cc3bddc026d50700bf9
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11-1debian9.debian.tar.xz' mysql-community_8.0.11-1debian9.debian.tar.xz 18132 SHA256:f93013fa39f82f7bae933f32f173976bbe95db18e538b9c40dedfd20080dd87f
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mysql-defaults/1.0.2/ (for browsing the source)
-- https://sources.debian.net/src/mysql-defaults/1.0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-defaults/1.0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1+deb9u2`
 
@@ -1683,32 +1688,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.0.0-2/ (for browsing the source)
 - https://sources.debian.net/src/pinentry/1.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.0.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `psmisc=22.21-2.1`
-
-Binary Packages:
-
-- `psmisc=22.21-2.1+b2`
-
-Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris psmisc=22.21-2.1
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.1.dsc' psmisc_22.21-2.1.dsc 1348 SHA256:3e1e9615bbaa521b8ef054b26faded392179f1919b62dec901cf820efab65404
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21.orig.tar.gz' psmisc_22.21.orig.tar.gz 457702 SHA256:97323cad619210845b696d7d722c383852b2acb5c49b5b0852c4f29c77a8145a
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.1.debian.tar.xz' psmisc_22.21-2.1.debian.tar.xz 6824 SHA256:b4d5fd3e3c4f402c265476cf1b7ef1bf360c810ea11e74d333fade6f44b9d761
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/psmisc/22.21-2.1/ (for browsing the source)
-- https://sources.debian.net/src/psmisc/22.21-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/psmisc/22.21-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pwgen=2.07-1.1`
 
