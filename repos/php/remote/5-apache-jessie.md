@@ -1,7 +1,7 @@
 ## `php:5-apache-jessie`
 
 ```console
-$ docker pull php@sha256:14a48377c2cecaaf5daed21d328c693d07ade6d0effef5526d2340f255df178c
+$ docker pull php@sha256:272f6f764d9434d1536405ce20dc374d5207d191771e5fb4c7be84f80aa6c28e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -155,14 +155,14 @@ CMD ["apache2-foreground"]
 ### `php:5-apache-jessie` - linux; arm variant v5
 
 ```console
-$ docker pull php@sha256:b3c26989b78a5a84928e6b4fcb10f7b9ea9cae5b0d46729c1c1b2f735b84e6ca
+$ docker pull php@sha256:470ef66cb345e1b5de37ba0b14410f743248fcfd49f2a1d2a8ac1503cdc85b0c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.7 MB (139721666 bytes)**  
+-	Total Size: **139.7 MB (139721673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:574e6b006aee9bc719cf4de6510896d7c352ca54d32deb02adafc26ab30a02d6`
+-	Image ID: `sha256:1ded99ff640cd461acafe90e999e5e23a2991998ffaf83bddfda28843500db5f`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -219,17 +219,17 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 06 Apr 2018 18:59:43 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Fri, 06 Apr 2018 18:59:44 GMT
-COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Fri, 06 Apr 2018 18:59:44 GMT
+# Tue, 24 Apr 2018 08:58:02 GMT
+COPY multi:c925dfb355ea16ba0238c8b6ca78d3cd7fe815932bf707b25bbf051070430157 in /usr/local/bin/ 
+# Tue, 24 Apr 2018 08:58:02 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 06 Apr 2018 18:59:45 GMT
+# Tue, 24 Apr 2018 08:58:03 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Fri, 06 Apr 2018 18:59:45 GMT
+# Tue, 24 Apr 2018 08:58:03 GMT
 WORKDIR /var/www/html
-# Fri, 06 Apr 2018 18:59:46 GMT
+# Tue, 24 Apr 2018 08:58:03 GMT
 EXPOSE 80/tcp
-# Fri, 06 Apr 2018 18:59:46 GMT
+# Tue, 24 Apr 2018 08:58:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -282,13 +282,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 06 Apr 2018 19:16:56 GMT  
 		Size: 10.4 MB (10400604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e4fe81a6c1de0740523ced2711acf98197da720f46b42c32cbb06f136dd554d`  
-		Last Modified: Fri, 06 Apr 2018 19:16:52 GMT  
-		Size: 2.2 KB (2188 bytes)  
+	-	`sha256:099451018239d20ec27d072cf06ae0f543488688894c811bea931b0a42b2aceb`  
+		Last Modified: Tue, 24 Apr 2018 09:07:34 GMT  
+		Size: 2.2 KB (2193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf36bff765ec9ffaf54b2b2d1484178c8688895904bbf4e3065c4b6d9ad4e965`  
-		Last Modified: Fri, 06 Apr 2018 19:16:52 GMT  
-		Size: 904.0 B  
+	-	`sha256:81cd845cdd8ea6ffb45f03b417f62781fec3246bd9d669fb7e23dca65ddb42e6`  
+		Last Modified: Tue, 24 Apr 2018 09:07:34 GMT  
+		Size: 906.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-apache-jessie` - linux; arm variant v7
@@ -711,14 +711,14 @@ CMD ["apache2-foreground"]
 ### `php:5-apache-jessie` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:0d459c8c3ce69faf2c94e64064a18eb187dcc1428002fb8da13ebc175ec899e4
+$ docker pull php@sha256:4a57e4aadff1c308375f2a2c82b80ffeb4f855730274ff23f1db8cd1896d3adf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.7 MB (147651320 bytes)**  
+-	Total Size: **147.7 MB (147651329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b941753eff383989640ab9f331a9ce2aa8b9ac2dc412547e8c3f97ad77d51446`
+-	Image ID: `sha256:cab7d37e164d281d84aa6e390fac164e744c1d5609d0382688bdc9607b2c96fa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -775,17 +775,17 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 06 Apr 2018 20:20:10 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Fri, 06 Apr 2018 20:20:15 GMT
-COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Fri, 06 Apr 2018 20:20:17 GMT
+# Tue, 24 Apr 2018 09:19:31 GMT
+COPY multi:c925dfb355ea16ba0238c8b6ca78d3cd7fe815932bf707b25bbf051070430157 in /usr/local/bin/ 
+# Tue, 24 Apr 2018 09:19:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 06 Apr 2018 20:20:20 GMT
+# Tue, 24 Apr 2018 09:19:35 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Fri, 06 Apr 2018 20:20:23 GMT
+# Tue, 24 Apr 2018 09:19:37 GMT
 WORKDIR /var/www/html
-# Fri, 06 Apr 2018 20:20:25 GMT
+# Tue, 24 Apr 2018 09:19:41 GMT
 EXPOSE 80/tcp
-# Fri, 06 Apr 2018 20:20:27 GMT
+# Tue, 24 Apr 2018 09:19:44 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -838,11 +838,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 06 Apr 2018 20:59:36 GMT  
 		Size: 10.8 MB (10829752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de48a1850ffb3e4a8490fbc45ea2a268bc986c36fbb9795c82813ca1835bdddf`  
-		Last Modified: Fri, 06 Apr 2018 20:59:33 GMT  
-		Size: 2.2 KB (2190 bytes)  
+	-	`sha256:1c9b9ed172848f2fa85e2217e25482510332a6903c7139dc7ee870bd8885cc9e`  
+		Last Modified: Tue, 24 Apr 2018 09:36:47 GMT  
+		Size: 2.2 KB (2196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c01e9d62657a2e4894b88fa9f64149ced6257591601786dfa39424d9200fc33`  
-		Last Modified: Fri, 06 Apr 2018 20:59:33 GMT  
-		Size: 905.0 B  
+	-	`sha256:0bdb153f979d38fa3346907e8f25658062b97ffdbb0a979fcf3fe3d1743bfcc6`  
+		Last Modified: Tue, 24 Apr 2018 09:36:47 GMT  
+		Size: 908.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
