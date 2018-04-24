@@ -1,7 +1,7 @@
 ## `php:7-zts-stretch`
 
 ```console
-$ docker pull php@sha256:5daa61933d2b8b392a7309d6bd5d216140403c405d878759ddd111ee38237bc5
+$ docker pull php@sha256:f9d0378f09adb35780a2d4ebdc9edb826768d0a49bd7f2e2625fed3458cec3a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,14 +115,14 @@ CMD ["php" "-a"]
 ### `php:7-zts-stretch` - linux; arm variant v5
 
 ```console
-$ docker pull php@sha256:96e4cba6d6f2ec31f592ce9d625f311d7530fed4ecb7e1d834efb4b29789769d
+$ docker pull php@sha256:3fc71be9778815858a7e618cdfea31c42558993d7a24b21814bc347b6a07871d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.5 MB (116538943 bytes)**  
+-	Total Size: **116.5 MB (116538946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbb87c6ebcd435d36b69a9b471c14076fa129188a11c880d8c8acc79670b788d`
+-	Image ID: `sha256:e9dd80dc1224efea5962778e64b3bc20ec12523b2ded4ff5e6d26fdfcfe4f0fa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -163,13 +163,13 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 06 Apr 2018 18:14:19 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-0-dev 		libcurl4-openssl-dev 		libedit-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Fri, 06 Apr 2018 18:14:21 GMT
-COPY multi:0de99b27377ea60c319e566076843370f751e856c1e3a64b2dcd283a35066564 in /usr/local/bin/ 
-# Fri, 06 Apr 2018 18:14:22 GMT
+# Tue, 24 Apr 2018 08:56:29 GMT
+COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
+# Tue, 24 Apr 2018 08:56:30 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 06 Apr 2018 18:14:24 GMT
+# Tue, 24 Apr 2018 08:56:30 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 06 Apr 2018 18:14:24 GMT
+# Tue, 24 Apr 2018 08:56:30 GMT
 CMD ["php" "-a"]
 ```
 
@@ -202,13 +202,13 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 06 Apr 2018 19:11:56 GMT  
 		Size: 25.5 MB (25527892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3eca7f63dd45f16df2f55e63a3d862a12aeaec963390e846a3c907c4314b766`  
-		Last Modified: Fri, 06 Apr 2018 19:11:49 GMT  
-		Size: 2.2 KB (2180 bytes)  
+	-	`sha256:9c58b49d5658d22dc0145be10ecc84650f8d654449262ff12c7d501abe1fad68`  
+		Last Modified: Tue, 24 Apr 2018 09:01:32 GMT  
+		Size: 2.2 KB (2182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adcae8d0901b079f4cddffe216a541cf4781fe8fc34594117b07f36821fb472e`  
-		Last Modified: Fri, 06 Apr 2018 19:11:49 GMT  
-		Size: 267.0 B  
+	-	`sha256:69248cc6da7edc061d8e08011de0b5a0e0cadfc6a96b8ad5b4664659da8e5338`  
+		Last Modified: Tue, 24 Apr 2018 09:01:32 GMT  
+		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-zts-stretch` - linux; arm variant v7
@@ -511,14 +511,14 @@ CMD ["php" "-a"]
 ### `php:7-zts-stretch` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:47963e7744cbc1b8a6ab2fdc3de68ec2e55404d6562afb771fc83d6b8269ff50
+$ docker pull php@sha256:c8b6eb35a1197896083ce2348c0d7833cc1a5ed80efcbd14a3ed0a9ee0ca0a85
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.8 MB (122825699 bytes)**  
+-	Total Size: **122.8 MB (122825707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa9fff6e5644d9e60561b29a6885c496b9c7be36a3d8d7767f1c5b3a38fd957`
+-	Image ID: `sha256:4cfbf87b919fd6ff31a6225e07e4c1aefc025d4fb9cac30dbbd9c9722083d658`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -559,13 +559,13 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 06 Apr 2018 18:34:51 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-0-dev 		libcurl4-openssl-dev 		libedit-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Fri, 06 Apr 2018 18:34:55 GMT
-COPY multi:0de99b27377ea60c319e566076843370f751e856c1e3a64b2dcd283a35066564 in /usr/local/bin/ 
-# Fri, 06 Apr 2018 18:35:01 GMT
+# Tue, 24 Apr 2018 09:01:57 GMT
+COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
+# Tue, 24 Apr 2018 09:02:03 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 06 Apr 2018 18:35:03 GMT
+# Tue, 24 Apr 2018 09:02:04 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 06 Apr 2018 18:35:05 GMT
+# Tue, 24 Apr 2018 09:02:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -598,11 +598,11 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 06 Apr 2018 20:42:48 GMT  
 		Size: 25.9 MB (25872121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76f66531ce9392c9acedbd48f7f0d7de23f20e0642d70f47ef74d19ff96da9eb`  
-		Last Modified: Fri, 06 Apr 2018 20:42:39 GMT  
-		Size: 2.2 KB (2181 bytes)  
+	-	`sha256:d3f425e8586fb8a110cb2fc01303735dbe59eea6273d69117315ffcf9cde531c`  
+		Last Modified: Tue, 24 Apr 2018 09:24:36 GMT  
+		Size: 2.2 KB (2188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52955e8d91b41a01da1224558456987cead099d1d1122cafd0c93bcea58b7c5a`  
-		Last Modified: Fri, 06 Apr 2018 20:42:39 GMT  
-		Size: 267.0 B  
+	-	`sha256:35ff03c8ae0eecf57b37d59bf0bf5dcdafbb07c4cdcb2164b0ab568879d11904`  
+		Last Modified: Tue, 24 Apr 2018 09:24:36 GMT  
+		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

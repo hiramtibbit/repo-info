@@ -1,7 +1,7 @@
 ## `php:alpine3.6`
 
 ```console
-$ docker pull php@sha256:115566bba845c8c0e35a66d30582cb8aad02e51d4dce7d8f155198715db3139a
+$ docker pull php@sha256:475b460d6bc3ef9ca783d4a677fcb2e4798f88dd511077dc9230589ed8907d38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -317,14 +317,14 @@ CMD ["php" "-a"]
 ### `php:alpine3.6` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:de0e17f5373a5692b15a70bcc73921945d88b4c54439216e8875c54857f770f8
+$ docker pull php@sha256:1e1bf9a9fdebf6a50625a72225843b5dcf54a7e636ba61766d11a88274c58629
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28419096 bytes)**  
+-	Total Size: **28.4 MB (28419111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e08faff9a027c6faf119c7aa6b0aa06d75f3b69baa18907b4289fa725228c3e`
+-	Image ID: `sha256:0693cc813d72e7dd4ca64cce1eca880ef271076a78010d964ebff2b27693409b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -365,13 +365,13 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		mkdir -p /u
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 06 Apr 2018 18:57:29 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libressl-dev 		libsodium-dev 		libxml2-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Fri, 06 Apr 2018 18:57:32 GMT
-COPY multi:0de99b27377ea60c319e566076843370f751e856c1e3a64b2dcd283a35066564 in /usr/local/bin/ 
-# Fri, 06 Apr 2018 18:57:41 GMT
+# Tue, 24 Apr 2018 09:03:32 GMT
+COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
+# Tue, 24 Apr 2018 09:03:40 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 06 Apr 2018 18:57:43 GMT
+# Tue, 24 Apr 2018 09:03:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 06 Apr 2018 18:57:46 GMT
+# Tue, 24 Apr 2018 09:03:41 GMT
 CMD ["php" "-a"]
 ```
 
@@ -408,11 +408,11 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 06 Apr 2018 20:46:48 GMT  
 		Size: 12.9 MB (12903702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d41fbe5ba3f36ff37e00b65d65119b91007848bac2c97ca85640bfca26dec57`  
-		Last Modified: Fri, 06 Apr 2018 20:46:44 GMT  
-		Size: 2.2 KB (2167 bytes)  
+	-	`sha256:cc7f6215a0effe0e44601c25aed4cecfeba694ee6536b93ee423d42c37b2cc7d`  
+		Last Modified: Tue, 24 Apr 2018 09:27:10 GMT  
+		Size: 2.2 KB (2173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f09574ca1012dd5810449ffec017de5c50bc1f5f834e3b11e1ec330b86464ee0`  
-		Last Modified: Fri, 06 Apr 2018 20:46:44 GMT  
-		Size: 71.1 KB (71099 bytes)  
+	-	`sha256:d4f7814df39d964ef65d24a27e12a1fe03f4dbdf267de1d202ba7dce1b2ebc90`  
+		Last Modified: Tue, 24 Apr 2018 09:27:11 GMT  
+		Size: 71.1 KB (71108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
