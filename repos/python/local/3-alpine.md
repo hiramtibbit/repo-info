@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:107f588f89aa6ddca5b9702a300cb4be838345add7e59ac12cfaea75b8a072f8`
-- Created: `2018-04-20T03:13:31.338841747Z`
-- Virtual Size: ~ 90.35 Mb  
+- Image ID: `sha256:8eb1c554687d68eb5c553f3fb3cc341dcdf6afc513fee32eab3c530db5b50a8e`
+- Created: `2018-04-21T02:58:49.116467731Z`
+- Virtual Size: ~ 90.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -13,4 +13,4 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
   - `PYTHON_VERSION=3.6.5`
-  - `PYTHON_PIP_VERSION=10.0.0`
+  - `PYTHON_PIP_VERSION=10.0.1`
