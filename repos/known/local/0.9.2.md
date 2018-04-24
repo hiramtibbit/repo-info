@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c13ccd2d419e9790afdbca048f94dc8a3864b6b8c1346fc0c3edcd3e8c047326`
-- Created: `2018-04-05T12:35:59.656428362Z`
-- Virtual Size: ~ 543.93 Mb  
+- Image ID: `sha256:dcda68b22ff9ac5282aa92154717dff2034fcf7b6aea9637ce4a8334223b0512`
+- Created: `2018-04-24T16:25:19.504491294Z`
+- Virtual Size: ~ 543.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2305,14 +2305,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpfr4/3.1.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpfr4/3.1.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.59-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.60-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.59-0+deb8u1`
-- `mysql-client=5.5.59-0+deb8u1`
-- `mysql-client-5.5=5.5.59-0+deb8u1`
-- `mysql-common=5.5.59-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.60-0+deb8u1`
+- `mysql-client=5.5.60-0+deb8u1`
+- `mysql-client-5.5=5.5.60-0+deb8u1`
+- `mysql-common=5.5.60-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-client/copyright`, `/usr/share/doc/mysql-client-5.5/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2330,13 +2330,20 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.60-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60-0+deb8u1.dsc' mysql-5.5_5.5.60-0+deb8u1.dsc 3262 SHA256:7824cf6679015b030ac4ffedd0e84236c6e0a7b0197eabd15a7ee4e16b940d7f
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60.orig.tar.gz' mysql-5.5_5.5.60.orig.tar.gz 21025041 SHA256:a34112e1748823f6dfd0d129fe29a629cf35b8702f9dfaf1f24caf89ab523d1c
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.60-0+deb8u1.debian.tar.xz 232948 SHA256:4c3deb93fd81750b7d2c0ba0f376f72ccc61fe9552895fe5ad3940282792e63e
+```
 
-- http://snapshot.debian.org/package/mysql-5.5/5.5.59-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mysql-5.5/5.5.60-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.60-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.60-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
 
