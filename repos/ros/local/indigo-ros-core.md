@@ -3179,9 +3179,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=3.13.0-144.193
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.dsc' linux_3.13.0-144.193.dsc 8127 SHA256:fd1b32d53a57c2804c8445e8cd4e6b52c0877eb0f5f225b00e05f1b5d977a4ce
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.diff.gz' linux_3.13.0-144.193.diff.gz 9623002 SHA256:2ae2ab709403ce71f26ee2417d229bb506c6a3c04e48c864220c9295932732af
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.dsc' linux_3.13.0-144.193.dsc 8127 SHA256:fd1b32d53a57c2804c8445e8cd4e6b52c0877eb0f5f225b00e05f1b5d977a4ce
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.diff.gz' linux_3.13.0-144.193.diff.gz 9623002 SHA256:2ae2ab709403ce71f26ee2417d229bb506c6a3c04e48c864220c9295932732af
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
@@ -3587,14 +3587,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.59-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.59-0ubuntu0.14.04.1.dsc 3155 SHA256:bb16ca63616e94cce65d36e323710447e802fb8adf79e22267cad124e75af79a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59.orig.tar.gz' mysql-5.5_5.5.59.orig.tar.gz 21050313 SHA256:ee920177c9dec770c30b673a21143d5e92a67e8207f9b720d41d51cda05d8513
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.59-0ubuntu0.14.04.1.debian.tar.gz 316874 SHA256:cec7c52d3e4ea3a324837789abaf1595cec6a4850899dda71e4677ad4ed7835d
-```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
