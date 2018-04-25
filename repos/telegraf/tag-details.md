@@ -1853,7 +1853,7 @@ CMD ["telegraf"]
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:5ea36d4c7091a1b56fd7cf48f7a8ad12f36c683789315d45a6a6db321fbe59d6
+$ docker pull telegraf@sha256:6c2f18071a763ef25ec465a04098c261ac1998c53a5f47592582f1f27d30e725
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1936,14 +1936,14 @@ CMD ["telegraf"]
 ### `telegraf:latest` - linux; arm variant v7
 
 ```console
-$ docker pull telegraf@sha256:7afc544627cde30fac79e650be127fd0fa86d97901bb3356ab64d163378e625d
+$ docker pull telegraf@sha256:efd93bab4f9ddfd23b98939e7a9a06ed1db7275c2d3164e51513c74d00eaeca3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.4 MB (79440704 bytes)**  
+-	Total Size: **79.4 MB (79442797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbe9cceedbd8548f66e35ec6dc67bbf4d5cc8be6eb7ae1c735180577859fcf05`
+-	Image ID: `sha256:3c7cfd58a0bba629c7b47444977599de768a3b3ed8c16f7d71b16e653936d42f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -1960,17 +1960,17 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
 # Thu, 29 Mar 2018 02:33:19 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 19 Apr 2018 11:58:28 GMT
-ENV TELEGRAF_VERSION=1.6.0
-# Thu, 19 Apr 2018 11:58:31 GMT
+# Wed, 25 Apr 2018 12:01:45 GMT
+ENV TELEGRAF_VERSION=1.6.1
+# Wed, 25 Apr 2018 12:01:48 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Thu, 19 Apr 2018 11:58:31 GMT
+# Wed, 25 Apr 2018 12:01:48 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Thu, 19 Apr 2018 11:58:32 GMT
+# Wed, 25 Apr 2018 12:01:49 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Thu, 19 Apr 2018 11:58:36 GMT
+# Wed, 25 Apr 2018 12:01:49 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 19 Apr 2018 11:58:36 GMT
+# Wed, 25 Apr 2018 12:01:49 GMT
 CMD ["telegraf"]
 ```
 
@@ -1995,13 +1995,13 @@ CMD ["telegraf"]
 		Last Modified: Thu, 29 Mar 2018 02:33:53 GMT  
 		Size: 2.9 KB (2913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cf8752e8e9a5dcb4daaab3b842045996dbeedfabc02ae46a3312cd1f9d2ab0`  
-		Last Modified: Thu, 19 Apr 2018 11:58:59 GMT  
-		Size: 9.3 MB (9296960 bytes)  
+	-	`sha256:d8df9757b34e443cd3b3294a51ce1af83c7a76226d168f3766c14441896ea6ee`  
+		Last Modified: Wed, 25 Apr 2018 12:02:05 GMT  
+		Size: 9.3 MB (9299054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3837047b6822647db8b89f454f3523bcaf37ebf0d5e22410449c6d4625bd98e5`  
-		Last Modified: Thu, 19 Apr 2018 11:58:56 GMT  
-		Size: 186.0 B  
+	-	`sha256:1177e3e08d89bddf3fe3a95875b9139c732e7da080ff1f881c6fba63d3a86adb`  
+		Last Modified: Wed, 25 Apr 2018 12:02:02 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `telegraf:latest` - linux; arm64 variant v8
