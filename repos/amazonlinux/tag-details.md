@@ -21,6 +21,10 @@
 -	[`amazonlinux:2017.12.0.20180330`](#amazonlinux201712020180330)
 -	[`amazonlinux:2017.12.0.20180330-with-sources`](#amazonlinux201712020180330-with-sources)
 -	[`amazonlinux:2017.12-with-sources`](#amazonlinux201712-with-sources)
+-	[`amazonlinux:2018.03`](#amazonlinux201803)
+-	[`amazonlinux:2018.03.0.20180424`](#amazonlinux201803020180424)
+-	[`amazonlinux:2018.03.0.20180424-with-sources`](#amazonlinux201803020180424-with-sources)
+-	[`amazonlinux:2018.03-with-sources`](#amazonlinux201803-with-sources)
 -	[`amazonlinux:2-with-sources`](#amazonlinux2-with-sources)
 -	[`amazonlinux:latest`](#amazonlinuxlatest)
 -	[`amazonlinux:with-sources`](#amazonlinuxwith-sources)
@@ -762,6 +766,22 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 		Last Modified: Tue, 10 Apr 2018 00:22:55 GMT  
 		Size: 316.8 MB (316789105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazonlinux:2018.03`
+
+**does not exist** (yet?)
+
+## `amazonlinux:2018.03.0.20180424`
+
+**does not exist** (yet?)
+
+## `amazonlinux:2018.03.0.20180424-with-sources`
+
+**does not exist** (yet?)
+
+## `amazonlinux:2018.03-with-sources`
+
+**does not exist** (yet?)
 
 ## `amazonlinux:2-with-sources`
 
