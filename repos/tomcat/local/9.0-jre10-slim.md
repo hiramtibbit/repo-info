@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c622ab90a247595bda120b9177dc72f24a3d573c08aa67ea64c7347d6262d45d`
-- Created: `2018-04-21T04:43:59.325460274Z`
+- Image ID: `sha256:0908e9e8bbce6c3a62be856780da164047f945472d479a433d9b0d6232388820`
+- Created: `2018-04-24T19:31:05.375495084Z`
 - Virtual Size: ~ 325.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=10.0.1+10`
-  - `JAVA_DEBIAN_VERSION=10.0.1+10-2`
+  - `JAVA_DEBIAN_VERSION=10.0.1+10-3`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -1343,20 +1343,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.dsc' libseccomp_2.3.1-2.1.dsc 2048 SHA256:99cefa142517653fd580330f0b0aa2aa83b8d14b8d67e8ccbf53989e512600bc
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.debian.tar.xz' libseccomp_2.3.1-2.1.debian.tar.xz 10572 SHA256:7343368b61c76e4f275c8de51415f466fd6f46ec53d50729b40b962386cbf6ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.3.1-2.1/
 
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.3.1-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
@@ -1889,11 +1882,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.36.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.36.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10.0.1+10-2`
+### `dpkg` source package: `openjdk-10=10.0.1+10-3`
 
 Binary Packages:
 
-- `openjdk-10-jre-headless:amd64=10.0.1+10-2`
+- `openjdk-10-jre-headless:amd64=10.0.1+10-3`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
@@ -1905,17 +1898,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-10=10.0.1+10-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-2.dsc' openjdk-10_10.0.1+10-2.dsc 4543 SHA256:c618ac185ef4f0c6377ed0339bd95b2de59b1a7be0693877feb3b445ae05b747
+$ apt-get source -qq --print-uris openjdk-10=10.0.1+10-3
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-3.dsc' openjdk-10_10.0.1+10-3.dsc 4543 SHA256:1f63aceff463f2c1c53d1359c0398377dfe3d5f278f8c784ba10518d37ca0c48
 'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10.orig.tar.xz' openjdk-10_10.0.1+10.orig.tar.xz 73899476 SHA256:0301c94dba6b1d05228197664f72b76b2138d5344a725e661b3618caa07cc392
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-2.debian.tar.xz' openjdk-10_10.0.1+10-2.debian.tar.xz 168132 SHA256:4352fca6c593a70853fb68f9b2260b5f2426bce3b301b997efa094761ee2244d
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-3.debian.tar.xz' openjdk-10_10.0.1+10-3.debian.tar.xz 168428 SHA256:533b7847572cc8ab597ad834d5f2004d803d7365f2a4f90e32d7201bc01e8e57
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-10/10.0.1+10-2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-10/10.0.1+10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-10/10.0.1+10-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-10/10.0.1+10-3/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10.0.1+10-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10.0.1+10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-2`
 
