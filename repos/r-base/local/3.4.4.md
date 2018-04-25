@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6~beta1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~beta1.dsc' apt_1.6~beta1.dsc 2739 SHA256:d04083ba5865e71dd20f017d9d18db6b28cbefe6fe15f94001224073c38e0d61
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6~beta1.tar.xz' apt_1.6~beta1.tar.xz 2125780 SHA256:f4ad7c5d04bb1a8da85a2b5f4c95e700f1dee333e0c893991a2226cb031246b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6~beta1/
 
-- https://sources.debian.net/src/apt/1.6~beta1/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6~beta1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6~beta1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -805,14 +799,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.dsc' findutils_4.6.0+git+20170828-2.dsc 2221 SHA256:6997072de2f1b24457073275f7b8f15ad2f0569389dcb277ebe99dd1846e2ee9
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828.orig.tar.xz' findutils_4.6.0+git+20170828.orig.tar.xz 1865192 SHA256:8d6571ffd5105307bcb1b20c4b7d5c2d0b5152e463b082801268bd3ec9e2bbfd
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20170828-2/
+
 
 ### `dpkg` source package: `fontconfig=2.12.6-0.1`
 
@@ -3475,16 +3468,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris survival=2.41-3-2
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3-2.dsc' survival_2.41-3-2.dsc 1669 SHA256:4b389b0623e8869f671be51a695bd995f78001a84f40c6074ea99fe31dc4bb5e
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3.orig.tar.gz' survival_2.41-3.orig.tar.gz 4992943 SHA256:f3797c344de93abd2ba8c89568770a13524a8b2694144ae55adec46921c8961d
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3-2.diff.gz' survival_2.41-3-2.diff.gz 3586 SHA256:02d0ffa9b23f640c4ca57bdf75ea00eb2267a50c552eb155721cafa39c9bf7fa
+'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-2.dsc' survival_2.41-3-2.dsc 1669 SHA256:4b389b0623e8869f671be51a695bd995f78001a84f40c6074ea99fe31dc4bb5e
+'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3.orig.tar.gz' survival_2.41-3.orig.tar.gz 4992943 SHA256:f3797c344de93abd2ba8c89568770a13524a8b2694144ae55adec46921c8961d
+'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-2.diff.gz' survival_2.41-3-2.diff.gz 3586 SHA256:02d0ffa9b23f640c4ca57bdf75ea00eb2267a50c552eb155721cafa39c9bf7fa
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/survival/2.41-3-2/ (for browsing the source)
-- https://sources.debian.net/src/survival/2.41-3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/survival/2.41-3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=237-4`
 
