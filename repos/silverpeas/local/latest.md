@@ -198,14 +198,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.1.dsc' avahi_0.6.32~rc+dfsg-1ubuntu2.1.dsc 4068 SHA256:c7fdbce44abb6281ca2532b09629128021fac71147acb1ef136f4913ef2bef37
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg.orig.tar.gz' avahi_0.6.32~rc+dfsg.orig.tar.gz 665175 SHA256:84f609611323613c8635146d1a93be0914f1f7a8027d1d5e71cbbab156741dac
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.1.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.1.debian.tar.xz 33496 SHA256:6622532220f11332097b6afd09a463451ae31424f40f18bd8481ec1cfac2293a
-```
 
 ### `dpkg` source package: `base-files=9.4ubuntu4.6`
 
@@ -4124,14 +4119,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.8.dsc' pulseaudio_8.0-0ubuntu3.8.dsc 3944 SHA256:351cd7b1558296b7c7fac98b6d0dceef75151f98ca2ead99918f2741e7a3e2d6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.8.debian.tar.xz' pulseaudio_8.0-0ubuntu3.8.debian.tar.xz 149964 SHA256:93fd44caf8d5161147764f99a8cb73fcac64f6646b94a607b8bff95e84710798
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
