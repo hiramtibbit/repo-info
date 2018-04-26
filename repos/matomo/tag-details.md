@@ -11,6 +11,9 @@
 -	[`matomo:3.4-fpm`](#matomo34-fpm)
 -	[`matomo:3-apache`](#matomo3-apache)
 -	[`matomo:3-fpm`](#matomo3-fpm)
+-	[`matomo:apache`](#matomoapache)
+-	[`matomo:fpm`](#matomofpm)
+-	[`matomo:latest`](#matomolatest)
 
 ## `matomo:3`
 
@@ -10760,3 +10763,15 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 25 Apr 2018 11:47:13 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `matomo:apache`
+
+**does not exist** (yet?)
+
+## `matomo:fpm`
+
+**does not exist** (yet?)
+
+## `matomo:latest`
+
+**does not exist** (yet?)
