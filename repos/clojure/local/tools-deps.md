@@ -1,23 +1,21 @@
-# `clojure:lein-2.8.1`
+# `clojure:tools-deps-1.9.0.375`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e06006450a9fc26a3f33e9d76de020a0403bfc18553771e3d4b922135d9d4a8a`
-- Created: `2018-04-23T21:39:25.757431881Z`
-- Virtual Size: ~ 744.18 Mb  
+- Image ID: `sha256:1353a6536c895889852cd131a5ca1caac2d64979ea75e7cf4b92c2b67e45fed8`
+- Created: `2018-04-23T21:47:09.766534274Z`
+- Virtual Size: ~ 750.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=8u162`
   - `JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `LEIN_VERSION=2.8.1`
-  - `LEIN_INSTALL=/usr/local/bin/`
-  - `LEIN_ROOT=1`
+  - `CLOJURE_VERSION=1.9.0.375`
 
 ## `dpkg` (`.deb`-based packages)
 
