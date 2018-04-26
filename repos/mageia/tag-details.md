@@ -80,7 +80,7 @@ ADD file:b9efb6b472b636efc415960ab6654bb1364a16b6915b797e864c7c7a6872078f in /
 ## `mageia:6`
 
 ```console
-$ docker pull mageia@sha256:563e6d400e9d1814c1d6503c5feed229a2dcd3e71eab9f102a045abff3d6a39a
+$ docker pull mageia@sha256:e10ed0a2e872392d6ac7689c25dfc2273d7661e0d657c9846310bd7109570357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -90,35 +90,35 @@ $ docker pull mageia@sha256:563e6d400e9d1814c1d6503c5feed229a2dcd3e71eab9f102a04
 ### `mageia:6` - linux; amd64
 
 ```console
-$ docker pull mageia@sha256:5a05f9833840c8e0db5348a3ecad1165c8e07319798830d163c08843d5ad0757
+$ docker pull mageia@sha256:74a5fbd3cbf76bdf7f0b6f3e7ea469b6f34776854fcb23ee37fb84c8b8a0730c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.2 MB (85167539 bytes)**  
+-	Total Size: **113.3 MB (113255445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a5a60d2fef8988ad84efb6e5e22b9e4c26b74e814ff2a049deb8611f8f60a13`
+-	Image ID: `sha256:6d202f1dcceeab35930438bc1d03eee78483ba2aac8852a3678ae782521fe4ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 03 Nov 2017 23:19:02 GMT
 MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Tue, 20 Mar 2018 11:59:45 GMT
-ADD file:579ad59588ebbfd6e74f707ec5a331f1b73be4ad34bc80d4aaf2079e12a15bd0 in / 
-# Tue, 20 Mar 2018 11:59:46 GMT
+# Thu, 26 Apr 2018 18:42:09 GMT
+ADD file:0f240135bba9767df0c4975ddb1f49c2dd1a4fb007a813fed0400cc9a4fe99fa in / 
+# Thu, 26 Apr 2018 18:42:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:495294b0de5bc5765e2ca2488111b422c46e58613f12c43dd6e48582c839ac8f`  
-		Last Modified: Tue, 20 Mar 2018 12:04:57 GMT  
-		Size: 85.2 MB (85167539 bytes)  
+	-	`sha256:ca510177284ab5ce24150275cf7538757335e9db2f7c93c64991c9ea4606fcf7`  
+		Last Modified: Thu, 26 Apr 2018 18:43:34 GMT  
+		Size: 113.3 MB (113255445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mageia:latest`
 
 ```console
-$ docker pull mageia@sha256:563e6d400e9d1814c1d6503c5feed229a2dcd3e71eab9f102a045abff3d6a39a
+$ docker pull mageia@sha256:e10ed0a2e872392d6ac7689c25dfc2273d7661e0d657c9846310bd7109570357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,27 +128,27 @@ $ docker pull mageia@sha256:563e6d400e9d1814c1d6503c5feed229a2dcd3e71eab9f102a04
 ### `mageia:latest` - linux; amd64
 
 ```console
-$ docker pull mageia@sha256:5a05f9833840c8e0db5348a3ecad1165c8e07319798830d163c08843d5ad0757
+$ docker pull mageia@sha256:74a5fbd3cbf76bdf7f0b6f3e7ea469b6f34776854fcb23ee37fb84c8b8a0730c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.2 MB (85167539 bytes)**  
+-	Total Size: **113.3 MB (113255445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a5a60d2fef8988ad84efb6e5e22b9e4c26b74e814ff2a049deb8611f8f60a13`
+-	Image ID: `sha256:6d202f1dcceeab35930438bc1d03eee78483ba2aac8852a3678ae782521fe4ea`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 03 Nov 2017 23:19:02 GMT
 MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Tue, 20 Mar 2018 11:59:45 GMT
-ADD file:579ad59588ebbfd6e74f707ec5a331f1b73be4ad34bc80d4aaf2079e12a15bd0 in / 
-# Tue, 20 Mar 2018 11:59:46 GMT
+# Thu, 26 Apr 2018 18:42:09 GMT
+ADD file:0f240135bba9767df0c4975ddb1f49c2dd1a4fb007a813fed0400cc9a4fe99fa in / 
+# Thu, 26 Apr 2018 18:42:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:495294b0de5bc5765e2ca2488111b422c46e58613f12c43dd6e48582c839ac8f`  
-		Last Modified: Tue, 20 Mar 2018 12:04:57 GMT  
-		Size: 85.2 MB (85167539 bytes)  
+	-	`sha256:ca510177284ab5ce24150275cf7538757335e9db2f7c93c64991c9ea4606fcf7`  
+		Last Modified: Thu, 26 Apr 2018 18:43:34 GMT  
+		Size: 113.3 MB (113255445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
