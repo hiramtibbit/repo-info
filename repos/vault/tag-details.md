@@ -7,7 +7,76 @@
 
 ## `vault:0.10.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull vault@sha256:30f475b773a747ae06b414cdb1476f63c0053236a6d616a713452f3347a713f1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `vault:0.10.1` - linux; amd64
+
+```console
+$ docker pull vault@sha256:ba77730553ab0754305430a4f8f2d4ebbac5d0324577148160667c1bd54c76c2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.1 MB (24135183 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6fe535ace00bc56ec2881b22fb29c4eb930476cceed0309ba84af6b749551963`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["server","-dev"]`
+
+```dockerfile
+# Tue, 09 Jan 2018 21:10:58 GMT
+ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
+# Tue, 09 Jan 2018 21:10:58 GMT
+CMD ["/bin/sh"]
+# Fri, 27 Apr 2018 22:36:08 GMT
+ENV VAULT_VERSION=0.10.1
+# Fri, 27 Apr 2018 22:36:09 GMT
+RUN addgroup vault &&     adduser -S -G vault vault
+# Fri, 27 Apr 2018 22:36:19 GMT
+RUN set -eux;     apk add --no-cache ca-certificates gnupg openssl libcap su-exec dumb-init &&     apkArch="$(apk --print-arch)";     case "$apkArch" in         armhf) ARCH='arm' ;;         aarch64) ARCH='arm64' ;;         x86_64) ARCH='amd64' ;;         x86) ARCH='386' ;;         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;;     esac &&     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_${ARCH}.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     gpgconf --kill dirmngr &&     gpgconf --kill gpg-agent &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
+# Fri, 27 Apr 2018 22:36:20 GMT
+RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
+# Fri, 27 Apr 2018 22:36:20 GMT
+VOLUME [/vault/logs]
+# Fri, 27 Apr 2018 22:36:20 GMT
+VOLUME [/vault/file]
+# Fri, 27 Apr 2018 22:36:21 GMT
+EXPOSE 8200/tcp
+# Fri, 27 Apr 2018 22:36:21 GMT
+COPY file:71f93573d5097ef42f7373b359230a67d5c04db40151c9f350d7d9c881341c67 in /usr/local/bin/docker-entrypoint.sh 
+# Fri, 27 Apr 2018 22:36:22 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 27 Apr 2018 22:36:22 GMT
+CMD ["server" "-dev"]
+```
+
+-	Layers:
+	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
+		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
+		Size: 2.1 MB (2065537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d1f9eface7fdbf13552f927bc90086e58ac2820069dcaccc9734a97e6985b36e`  
+		Last Modified: Fri, 27 Apr 2018 22:39:45 GMT  
+		Size: 1.3 KB (1252 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e1d800ad572feed4ac882ac10c1b4c79342a166d8ef6e3c2b66aadf6eeef9a7a`  
+		Last Modified: Fri, 27 Apr 2018 22:39:49 GMT  
+		Size: 22.1 MB (22066448 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889c13b9e5d8ec3d68357f4707ff7a78427ea571d7906f98e88f4d81f6ebce4`  
+		Last Modified: Fri, 27 Apr 2018 22:39:45 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d24724ef698c1f39f13687d9dbe939c1e3c29a4023b6e490720bc3eeb7ea738`  
+		Last Modified: Fri, 27 Apr 2018 22:39:46 GMT  
+		Size: 1.8 KB (1792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:latest`
 
