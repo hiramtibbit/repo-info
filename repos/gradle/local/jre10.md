@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:99427270fb9df40a29d8cf5085139f96481d82f9f30ec44629bf6756a1d00017`
-- Created: `2018-04-23T22:03:25.021084791Z`
-- Virtual Size: ~ 730.87 Mb  
+- Image ID: `sha256:e45acc2682bb7b1e967a66d8cd593725759e496cdcd95e1cc0d12d86bfaa2198`
+- Created: `2018-04-24T20:54:34.368466508Z`
+- Virtual Size: ~ 730.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=10.0.1+10`
-  - `JAVA_DEBIAN_VERSION=10.0.1+10-2`
+  - `JAVA_DEBIAN_VERSION=10.0.1+10-3`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=4.7`
 
@@ -181,24 +181,31 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/apt/1.6~beta1/
 
 
-### `dpkg` source package: `argon2=0~20161029-1.1`
+### `dpkg` source package: `argon2=0~20161029-2`
 
 Binary Packages:
 
-- `libargon2-0:amd64=0~20161029-1.1`
+- `libargon2-0:amd64=0~20161029-2`
 
 Licenses: (parsed from: `/usr/share/doc/libargon2-0/copyright`)
 
 - `Apache-2.0`
 - `CC0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris argon2=0~20161029-2
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20161029-2.dsc' argon2_0~20161029-2.dsc 2072 SHA256:5e663a44685e269eeb7b69f8039bb949f76ef5e27e4fd44e3a6008b96448b1fb
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20161029.orig.tar.gz' argon2_0~20161029.orig.tar.gz 1506864 SHA256:fe0049728b946b58b94cc6db89b34e2d050c62325d16316a534d2bedd78cd5e7
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20161029-2.debian.tar.xz' argon2_0~20161029-2.debian.tar.xz 6428 SHA256:df66d436a3305c05e73a2dcccbe5b815db38472843a0c05c348e6eb5d389e10d
+```
 
-- http://snapshot.debian.org/package/argon2/0~20161029-1.1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/argon2/0~20161029-2/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20161029-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20161029-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-atk=2.26.2-1`
 
@@ -2241,11 +2248,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcroco/0.6.12-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcroco/0.6.12-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libdatrie=0.2.10-7`
+### `dpkg` source package: `libdatrie=0.2.11-1`
 
 Binary Packages:
 
-- `libdatrie1:amd64=0.2.10-7`
+- `libdatrie1:amd64=0.2.11-1`
 
 Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
 
@@ -2254,13 +2261,20 @@ Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libdatrie=0.2.11-1
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.11-1.dsc' libdatrie_0.2.11-1.dsc 2256 SHA256:2ba032ee0760c5ebf61708557b6097adfeade4f18747892a94e3b29977ec52d9
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.11.orig.tar.xz' libdatrie_0.2.11.orig.tar.xz 309172 SHA256:547c7bd2ab9e10ad65f3270cae8ca7027f52db9c30f7327d24354ad41a98e94b
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.11-1.debian.tar.xz' libdatrie_0.2.11-1.debian.tar.xz 8748 SHA256:be2ae09830146745aaed5c586e7cd56bb0743b1642617fe6a1b8521e7ae9bc65
+```
 
-- http://snapshot.debian.org/package/libdatrie/0.2.10-7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libdatrie/0.2.11-1/ (for browsing the source)
+- https://sources.debian.net/src/libdatrie/0.2.11-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatrie/0.2.11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdrm=2.4.91-2`
 
@@ -2419,14 +2433,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt20/1.8.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt20/1.8.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libglvnd=1.0.0+git20180308-1`
+### `dpkg` source package: `libglvnd=1.0.0+git20180308-2`
 
 Binary Packages:
 
-- `libegl1:amd64=1.0.0+git20180308-1`
-- `libgl1:amd64=1.0.0+git20180308-1`
-- `libglvnd0:amd64=1.0.0+git20180308-1`
-- `libglx0:amd64=1.0.0+git20180308-1`
+- `libegl1:amd64=1.0.0+git20180308-2`
+- `libgl1:amd64=1.0.0+git20180308-2`
+- `libglvnd0:amd64=1.0.0+git20180308-2`
+- `libglx0:amd64=1.0.0+git20180308-2`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx0/copyright`)
 
@@ -2436,13 +2450,20 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libglvnd=1.0.0+git20180308-2
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-2.dsc' libglvnd_1.0.0+git20180308-2.dsc 2439 SHA256:c52a2a71b7cf59a9fbb26c9d117a9e821a124d796d0dcdb2183c21b6d888aec6
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308.orig.tar.gz' libglvnd_1.0.0+git20180308.orig.tar.gz 781370 SHA256:448d3c904145a8095bf15bf574dba2f027ed04b15e84ec2681a485269202ab8d
+'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-2.debian.tar.xz' libglvnd_1.0.0+git20180308-2.debian.tar.xz 19448 SHA256:6ceef08fb0a7bb28f2e1486374feed65d1ae3386294244e2630b04f76f59211d
+```
 
-- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-2/ (for browsing the source)
+- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.27-6`
 
@@ -2808,20 +2829,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.dsc' libseccomp_2.3.1-2.1.dsc 2048 SHA256:99cefa142517653fd580330f0b0aa2aa83b8d14b8d67e8ccbf53989e512600bc
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.debian.tar.xz' libseccomp_2.3.1-2.1.debian.tar.xz 10572 SHA256:7343368b61c76e4f275c8de51415f466fd6f46ec53d50729b40b962386cbf6ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.3.1-2.1/
 
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.3.1-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
@@ -4076,12 +4090,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.36.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.36.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10.0.1+10-2`
+### `dpkg` source package: `openjdk-10=10.0.1+10-3`
 
 Binary Packages:
 
-- `openjdk-10-jre:amd64=10.0.1+10-2`
-- `openjdk-10-jre-headless:amd64=10.0.1+10-2`
+- `openjdk-10-jre:amd64=10.0.1+10-3`
+- `openjdk-10-jre-headless:amd64=10.0.1+10-3`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre/copyright`, `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
@@ -4090,13 +4104,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-10=10.0.1+10-3
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-3.dsc' openjdk-10_10.0.1+10-3.dsc 4543 SHA256:1f63aceff463f2c1c53d1359c0398377dfe3d5f278f8c784ba10518d37ca0c48
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10.orig.tar.xz' openjdk-10_10.0.1+10.orig.tar.xz 73899476 SHA256:0301c94dba6b1d05228197664f72b76b2138d5344a725e661b3618caa07cc392
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.1+10-3.debian.tar.xz' openjdk-10_10.0.1+10-3.debian.tar.xz 168428 SHA256:533b7847572cc8ab597ad834d5f2004d803d7365f2a4f90e32d7201bc01e8e57
+```
 
-- http://snapshot.debian.org/package/openjdk-10/10.0.1+10-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-10/10.0.1+10-3/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10.0.1+10-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10.0.1+10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
