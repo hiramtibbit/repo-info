@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d44feb699e4d536ed486f55d01037d94d1ea7074ea54f4c458f1157cac131fb`
-- Created: `2018-04-21T03:06:52.01251652Z`
+- Image ID: `sha256:76b9459fff68c3f9ca88786189936fda5d3138662e390e4f1278e6649dfb392f`
+- Created: `2018-04-27T09:44:45.059735316Z`
 - Virtual Size: ~ 539.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,6 +11,7 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
+  - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.14`
   - `PYTHON_PIP_VERSION=10.0.1`
