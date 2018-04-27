@@ -153,14 +153,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.1.dsc' avahi_0.6.32~rc+dfsg-1ubuntu2.1.dsc 4068 SHA256:c7fdbce44abb6281ca2532b09629128021fac71147acb1ef136f4913ef2bef37
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg.orig.tar.gz' avahi_0.6.32~rc+dfsg.orig.tar.gz 665175 SHA256:84f609611323613c8635146d1a93be0914f1f7a8027d1d5e71cbbab156741dac
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.1.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.1.debian.tar.xz 33496 SHA256:6622532220f11332097b6afd09a463451ae31424f40f18bd8481ec1cfac2293a
-```
 
 ### `dpkg` source package: `base-files=9.4ubuntu4.6`
 
@@ -997,13 +992,9 @@ Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ifupdown=0.8.10ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.2.dsc' ifupdown_0.8.10ubuntu1.2.dsc 1637 SHA256:82e7adb0f088a7cee8702bc59846368bb06b38cf4560a9f88b56a8fb31ee3d77
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.2.tar.xz' ifupdown_0.8.10ubuntu1.2.tar.xz 80604 SHA256:336b619ddb2752250dd8cb1b1d4ae559ed4044701e9588e8333921355f21dc45
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
