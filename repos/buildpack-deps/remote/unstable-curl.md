@@ -1,7 +1,7 @@
 ## `buildpack-deps:unstable-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:66b7c2daae57c37bfe1431d8ab81c1b9a272d00421405bef5e69b60ca42e0aed
+$ docker pull buildpack-deps@sha256:9c6399d1c6320c44c59e69d72f0fcb4f169ae39c5624fb8999e7f9192c280689
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -55,39 +55,39 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:unstable-curl` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:93c5dfe574296a8fc8c9c5e7c4eb2976faab70123ab220dc7b3560864164b44f
+$ docker pull buildpack-deps@sha256:7b6d5bd1a15f354b8f6691073a51e58329f07ba08d66e4aa3af2fdff2c2c1de5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.7 MB (62711197 bytes)**  
+-	Total Size: **62.9 MB (62941189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0494163de294bbce28b9eaee57ed26b40d4bc87cd18b5d19eef828befc7da8d`
+-	Image ID: `sha256:06151de1387f0bbe817842713f42fcbdeb505f84b213a2327a369790b35eb33a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 19:58:54 GMT
-ADD file:0c259893711fbbb74d52158310e6405ffafee1cf80df0c5023f0f262fedaae44 in / 
-# Wed, 14 Mar 2018 19:58:55 GMT
+# Sat, 28 Apr 2018 08:51:39 GMT
+ADD file:289dd78ee91d70cba0d1bc2f296c3c14565c2fc5a7545ded07d727de72e2c7af in / 
+# Sat, 28 Apr 2018 08:51:39 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 20:43:09 GMT
+# Sat, 28 Apr 2018 09:28:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 20:43:26 GMT
+# Sat, 28 Apr 2018 09:28:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:709e01ad8801f6d1fc3e64805651a95479961d03211125705eadb61df54191e9`  
-		Last Modified: Wed, 14 Mar 2018 20:10:21 GMT  
-		Size: 46.1 MB (46055043 bytes)  
+	-	`sha256:e55988127988d265ae9a533cadc5ee50c9a724a2602f8677daa3d5ca1354a4c8`  
+		Last Modified: Sat, 28 Apr 2018 08:59:59 GMT  
+		Size: 46.3 MB (46298645 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51cabfe63914ea326825c026f366ea50e79289864c2497b91e2974b96bc934f1`  
-		Last Modified: Wed, 14 Mar 2018 20:54:36 GMT  
-		Size: 7.8 MB (7806745 bytes)  
+	-	`sha256:a77d6470b972bf9064a20bcc7a75b22d6482d7756a06defc11d6ed90e8091e94`  
+		Last Modified: Sat, 28 Apr 2018 09:40:06 GMT  
+		Size: 7.8 MB (7786427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e862bd65c86e50e663d9f9f50f85f442d2c632cf810c672f7898ce71d7e69`  
-		Last Modified: Wed, 14 Mar 2018 20:54:37 GMT  
-		Size: 8.8 MB (8849409 bytes)  
+	-	`sha256:cbbe4fab820e91bcc75ac63fb3d76e1d38e5a2d6fdaafdad0f1660020749a1a5`  
+		Last Modified: Sat, 28 Apr 2018 09:40:04 GMT  
+		Size: 8.9 MB (8856117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:unstable-curl` - linux; arm variant v7
