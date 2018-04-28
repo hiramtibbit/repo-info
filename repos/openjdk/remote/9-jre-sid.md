@@ -1,7 +1,7 @@
 ## `openjdk:9-jre-sid`
 
 ```console
-$ docker pull openjdk@sha256:913dab50a96c9ad7d10dd45d8187f2d384add190c3f6255e7c5dc32ef96a5c2e
+$ docker pull openjdk@sha256:1fe39054be3f1d2dd58a6de41b082e035331dcd88556cdb4aec8548320ea71b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -367,71 +367,71 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:9-jre-sid` - linux; ppc64le
 
 ```console
-$ docker pull openjdk@sha256:593693abe3d093cf1eb8e2bca939854f9a25087e9c3e15d64cc9df96de9d870a
+$ docker pull openjdk@sha256:c9f46c41d7a7efc86f62dce706c4b8dd16597ebb4c8b104dbd5e4372a7a556bf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.8 MB (247788211 bytes)**  
+-	Total Size: **248.1 MB (248117021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d6072e76f3c78d7396ef0d973faa6397c1e19a535015b05f58494f660d83064`
+-	Image ID: `sha256:fc620e35ddfc63e8c96ef3c2039163e39a285aa71d7f54054020e7a7c91d5e9d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 00:33:40 GMT
-ADD file:fd074388a1e87afa5199386a81dd5480d59e87c99744d1503003e1cf82eeeeaa in / 
-# Wed, 14 Mar 2018 00:33:42 GMT
+# Sat, 28 Apr 2018 08:19:13 GMT
+ADD file:320268259acdc4e2a105be735ea4ee0cb1398bb05ce729d46f4a54fa3c3c84e3 in / 
+# Sat, 28 Apr 2018 08:19:15 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 01:54:25 GMT
+# Sat, 28 Apr 2018 09:59:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 01:55:32 GMT
+# Sat, 28 Apr 2018 09:59:48 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 15 Mar 2018 04:01:14 GMT
+# Sat, 28 Apr 2018 17:00:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:06:57 GMT
+# Sat, 28 Apr 2018 17:00:41 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 04:07:02 GMT
+# Sat, 28 Apr 2018 17:00:46 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 15 Mar 2018 04:07:06 GMT
+# Sat, 28 Apr 2018 17:20:34 GMT
 RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 15 Mar 2018 04:07:07 GMT
+# Sat, 28 Apr 2018 17:20:35 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 20 Mar 2018 11:20:06 GMT
+# Sat, 28 Apr 2018 17:20:36 GMT
 ENV JAVA_VERSION=9.0.4+12
-# Fri, 06 Apr 2018 18:39:58 GMT
+# Sat, 28 Apr 2018 17:20:37 GMT
 ENV JAVA_DEBIAN_VERSION=9.0.4+12-4
-# Fri, 06 Apr 2018 18:48:36 GMT
+# Sat, 28 Apr 2018 17:26:03 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:caeed743812fb8916f058220350e305c0e940ed0a62904c7cd30f479de34194c`  
-		Last Modified: Wed, 14 Mar 2018 00:41:02 GMT  
-		Size: 49.5 MB (49465766 bytes)  
+	-	`sha256:354f055c313d4d07201e01fd4de9af4aca89e3df17572870e56c5b8945e48443`  
+		Last Modified: Sat, 28 Apr 2018 08:27:42 GMT  
+		Size: 49.8 MB (49754912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1aaececf1154f36498af71895dbfe2455b71b0652ce6a3048ac81822992106d`  
-		Last Modified: Thu, 15 Mar 2018 02:30:41 GMT  
-		Size: 8.2 MB (8210793 bytes)  
+	-	`sha256:93ee43555042b4504f9abfd5ee30cca506ecd82ea7e7c0ad8585e2f9f9fe550f`  
+		Last Modified: Sat, 28 Apr 2018 10:40:34 GMT  
+		Size: 8.2 MB (8210961 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b9a71fba1af38f62545037942242f7cc1e558fa18154f937e68d6d61ed9d625`  
-		Last Modified: Thu, 15 Mar 2018 02:30:41 GMT  
-		Size: 9.3 MB (9339565 bytes)  
+	-	`sha256:437ac69577ea2b14f065cda80eaeb0984300f029adc35d3f0992d36b61dba2ce`  
+		Last Modified: Sat, 28 Apr 2018 10:40:34 GMT  
+		Size: 9.3 MB (9348582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c8042c3be66cfffb01cd7f60865d7816cd497858ae104e5fe48048b1e3a90e2`  
-		Last Modified: Thu, 15 Mar 2018 05:58:26 GMT  
-		Size: 851.5 KB (851520 bytes)  
+	-	`sha256:288c0c8401bbf8e6bb92692253b19c17c92a3a4f0bcdf000e334c05cb5ee183c`  
+		Last Modified: Sat, 28 Apr 2018 17:54:26 GMT  
+		Size: 851.9 KB (851851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:440550fe34cc35a8c2ee83f95560addb3ffe5792d725790a3d0aae92b1877002`  
-		Last Modified: Thu, 15 Mar 2018 05:58:26 GMT  
+	-	`sha256:c853bd22f44d223d088554303fd934fe17cdbce300311d7e6ab2db6d4e2a7b91`  
+		Last Modified: Sat, 28 Apr 2018 17:54:26 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ed65865c9efa444a18f963f9986529dd7b4d396bd3387448196e7fcec9a70fc`  
-		Last Modified: Thu, 15 Mar 2018 05:58:26 GMT  
+	-	`sha256:b629b1b7aa18a2af2a8e591aadf49a905fe23d3a2706fc61ceedaaa953f82d31`  
+		Last Modified: Sat, 28 Apr 2018 17:59:52 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d374df3b05aee6fc681903c6329e2e1a26fe9960aa695e0cd67fcf8a65d8aa4e`  
-		Last Modified: Fri, 06 Apr 2018 19:17:52 GMT  
-		Size: 179.9 MB (179920196 bytes)  
+	-	`sha256:808e7ad7319391bfb50ea7009027c8fe52d91bbbcafa03df04052b4238db1ee4`  
+		Last Modified: Sat, 28 Apr 2018 18:00:58 GMT  
+		Size: 180.0 MB (179950344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:9-jre-sid` - linux; s390x
