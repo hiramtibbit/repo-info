@@ -1188,20 +1188,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180402-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402-1.dsc' gcc-8_8-20180402-1.dsc 32339 SHA256:33c0d76a5d23a3a8cf8fd6870d1e2272100b2e44cc1d52977971cd5e150a918d
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402.orig.tar.gz' gcc-8_8-20180402.orig.tar.gz 69143304 SHA256:8ad43abaadb0f5549ef074e1856689b006c1b4bc99525eb82161c7d342cebeb7
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180402-1.diff.gz' gcc-8_8-20180402-1.diff.gz 580782 SHA256:17c697a4fa356c4ce2fd73542a6359f0dc6c2b601d8652d3c28249e71d7de7f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180402-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180402-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180402-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180402-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-2`
 
