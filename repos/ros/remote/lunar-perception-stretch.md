@@ -1,7 +1,7 @@
 ## `ros:lunar-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:c4546c98d612dd4c0a5f5805d98febc17eb8baafcfe50a7e31447970682415c1
+$ docker pull ros@sha256:e9a040855ce741762ea64d828a6f79ddd6e81c3813a94ef3b598fcdfce568385
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:c4546c98d612dd4c0a5f5805d98febc17eb8baafcfe50a7e3144797
 ### `ros:lunar-perception-stretch` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:1fdfbc35890692d645a4aaefba33f041f977d295a8417ce0b14f5bbdccbc5a3a
+$ docker pull ros@sha256:135d7363c2d27d1630aee5f1b27fa2ec78f5e703b65c575aa2053504dae11d83
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **925.6 MB (925562996 bytes)**  
+-	Total Size: **932.2 MB (932211529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d222ccaf4923c1f5b95d662c344e6b45ed2776756a53602e66f1ed1ee544dcd4`
+-	Image ID: `sha256:874fa63102cb737a62a0e1519bac078e7ea594db9961b0da5888c4b66a1c6bcf`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -44,18 +44,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 14 Mar 2018 21:53:47 GMT
 ENV ROS_DISTRO=lunar
-# Wed, 14 Mar 2018 21:54:47 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:54:48 GMT
+# Sat, 28 Apr 2018 02:32:06 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 02:32:07 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 14 Mar 2018 21:54:49 GMT
+# Sat, 28 Apr 2018 02:32:07 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 14 Mar 2018 21:54:49 GMT
+# Sat, 28 Apr 2018 02:32:07 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 22:08:09 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 22:15:59 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 02:37:53 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 02:53:34 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -83,21 +83,21 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     &
 		Last Modified: Wed, 14 Mar 2018 22:55:26 GMT  
 		Size: 791.2 KB (791216 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24f518309020ae8617300e7ae7d116505e57de20ab6a5d61539c693fbad62e12`  
-		Last Modified: Wed, 14 Mar 2018 22:56:29 GMT  
-		Size: 251.9 MB (251873801 bytes)  
+	-	`sha256:51f73b8c976c5f634e767317f6f2c403ad8f9f77029548a78716697106e56d05`  
+		Last Modified: Sat, 28 Apr 2018 06:02:39 GMT  
+		Size: 251.9 MB (251872970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741578f11e50550b8c3745fcb7909219c67833ee58f74186730257cc672bf9e4`  
-		Last Modified: Wed, 14 Mar 2018 22:55:26 GMT  
-		Size: 195.0 B  
+	-	`sha256:f4a1894a066765c88bb5d52aa20d590414517573f1fc5d0573143bdc35d69f6c`  
+		Last Modified: Sat, 28 Apr 2018 06:01:33 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0e3a0f72a7be4c3486ea4de910dd1382d4074dbab5d70a701fc35f43315941a`  
-		Last Modified: Wed, 14 Mar 2018 23:01:57 GMT  
-		Size: 122.2 MB (122214904 bytes)  
+	-	`sha256:8aa75ff73d6c29c1ac34c9014d84be19cd6740004b2dbdb4662a295ebc5845c7`  
+		Last Modified: Sat, 28 Apr 2018 06:03:40 GMT  
+		Size: 123.9 MB (123868988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7255059e9af2cdc5ac8440ee81b5c8d383ca3eb3ab0edbdc0e9fc006737643`  
-		Last Modified: Wed, 14 Mar 2018 23:10:54 GMT  
-		Size: 433.5 MB (433469535 bytes)  
+	-	`sha256:b29d72ba379f94ec96907ff73678d3854beea78f7ba3bae426e5ed0bf14447d9`  
+		Last Modified: Sat, 28 Apr 2018 06:30:40 GMT  
+		Size: 438.5 MB (438464816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:lunar-perception-stretch` - linux; arm64 variant v8
