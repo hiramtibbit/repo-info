@@ -1,7 +1,7 @@
 ## `buildpack-deps:bionic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7f212466fe947422b982bef8b3e80ebc2e1b59c37c5b03fbc730e29d93d8bea9
+$ docker pull buildpack-deps@sha256:6696575f43376c08c02188980059fccf9563b472863b062fee62651441fc562a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,63 +16,63 @@ $ docker pull buildpack-deps@sha256:7f212466fe947422b982bef8b3e80ebc2e1b59c37c5b
 ### `buildpack-deps:bionic-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:9c984daae07d9f7a8691743ae20180857233b39e0c0271e2c06f39fb3bff521a
+$ docker pull buildpack-deps@sha256:bb73497fdbc0ca6d6e480a883c708a6df699a4f6fb4e2833ff18db27ebe09d8e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.5 MB (39500710 bytes)**  
+-	Total Size: **39.7 MB (39726740 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc7e1781de629b60aefa4ba457c3c9cd6690d1fa8a3f2b87b5a9993a4ffbcc83`
+-	Image ID: `sha256:74c140626d618bc8841334495d4508f9deb15b67c4b1cd1f20be674e5f2b1e8b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 12 Apr 2018 18:35:22 GMT
-ADD file:8ea3d3659b2327b95fc6f8cb229245bcea4b44e77510f165c313659e6f0e6fd5 in / 
-# Thu, 12 Apr 2018 18:35:23 GMT
+# Fri, 27 Apr 2018 23:28:32 GMT
+ADD file:81813d6023adb66b80fe163bc7db464004673838d17195b9d84aade4f8961b71 in / 
+# Fri, 27 Apr 2018 23:28:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 12 Apr 2018 18:35:23 GMT
+# Fri, 27 Apr 2018 23:28:34 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 12 Apr 2018 18:35:24 GMT
+# Fri, 27 Apr 2018 23:28:35 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 12 Apr 2018 18:35:25 GMT
+# Fri, 27 Apr 2018 23:28:36 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 12 Apr 2018 18:35:25 GMT
+# Fri, 27 Apr 2018 23:28:36 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 06:14:57 GMT
+# Sat, 28 Apr 2018 15:29:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 06:15:06 GMT
+# Sat, 28 Apr 2018 15:30:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:c448d9b1e62fac680864f7063fd32e1712e6bb9845df446d8e61243498a1d3b5`  
-		Last Modified: Thu, 12 Apr 2018 19:21:09 GMT  
-		Size: 30.7 MB (30696655 bytes)  
+	-	`sha256:a48c500ed24e62926cb079df35f964c57d8bb08159b1d29c6a3b0a58dc365dc1`  
+		Last Modified: Fri, 27 Apr 2018 22:14:33 GMT  
+		Size: 31.0 MB (30957448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0277fe36251d91645bc4bc6f0752e6b79f883c3c00d856c3d465a48eeb30f370`  
-		Last Modified: Thu, 12 Apr 2018 19:21:02 GMT  
+	-	`sha256:1e1de00ff7e1fea0858b6a4b5ca208eeca970607ea9a6eb5fc972494e7a0cdde`  
+		Last Modified: Fri, 27 Apr 2018 23:32:06 GMT  
 		Size: 841.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6591defe1cd92783337ed7d0f107c61139f5f656c7dbc6084ff1a5cd3a6bad54`  
-		Last Modified: Thu, 12 Apr 2018 19:21:02 GMT  
-		Size: 411.0 B  
+	-	`sha256:0330ca45a200e1fcef05ae97f434366d262a1c50b3dc053e7928b58dd37211dd`  
+		Last Modified: Fri, 27 Apr 2018 23:32:05 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c321da2a3ae45deda6730d5adcf7a7fe31db03d3cff5c657ef11ba69cb01f02`  
-		Last Modified: Thu, 12 Apr 2018 19:21:03 GMT  
-		Size: 853.0 B  
+	-	`sha256:471db38bcfbf0f5bac78012b9d458dfd37309d5cbb99d4e95310321a60a0cfdf`  
+		Last Modified: Fri, 27 Apr 2018 23:32:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08d8a7c0ac3cea69a3bf6c23bd2db7f2d1ded30b3736bca4e114630645a74683`  
-		Last Modified: Thu, 12 Apr 2018 19:21:02 GMT  
-		Size: 163.0 B  
+	-	`sha256:0b4aba487617ca27519745ae722b8ea1917474c495b91b3c4887728a3f2ee7db`  
+		Last Modified: Fri, 27 Apr 2018 23:32:06 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32c4e94907bb2dc7317f36f2bfef4d11fe8f0bde190350a37d9101e9d1662643`  
-		Last Modified: Fri, 13 Apr 2018 08:14:40 GMT  
-		Size: 5.8 MB (5846206 bytes)  
+	-	`sha256:ca8872ce2f6ee72a768079d788ff42c7c406e55117c7204cbb5a7407ab0ef3ee`  
+		Last Modified: Sat, 28 Apr 2018 19:34:39 GMT  
+		Size: 5.8 MB (5811206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6740e0a1bc824ed5e1ca8aaf710f7e01b1b7e3aceb3e14ecb3d5b8135ef608e`  
-		Last Modified: Fri, 13 Apr 2018 08:14:39 GMT  
-		Size: 3.0 MB (2955581 bytes)  
+	-	`sha256:58a461cbbdb9f551b66a8e39c3edf2d84d2ba9b321f1c689c2d3ad95cf3e9c4a`  
+		Last Modified: Sat, 28 Apr 2018 19:34:38 GMT  
+		Size: 3.0 MB (2955822 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-curl` - linux; arm variant v7
