@@ -1,7 +1,7 @@
 ## `ros:kinetic-ros-core-jessie`
 
 ```console
-$ docker pull ros@sha256:83b10ce7037211450466cab614dc56cf768a93fbb89fa6f7c1aed0472aaf0249
+$ docker pull ros@sha256:1ff2c8ccc55fab34e11503a7dff2c249980f81a79a8f87278c194edbc4102eeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:83b10ce7037211450466cab614dc56cf768a93fbb89fa6f7c1aed04
 ### `ros:kinetic-ros-core-jessie` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:65da83462dde2e831b2a3cafca6dfa594c8d4ed680b506828a2a5b2679daef3c
+$ docker pull ros@sha256:93fb231895365a3f2ca4dd40b72e63574d4d7f6c84ffadfb046c85e105f67139
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.9 MB (290938494 bytes)**  
+-	Total Size: **291.1 MB (291121324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:940a1d0ea0e867d5a9707a79e2b242a29f031b2879e96e33163ef9e53e9bd8a7`
+-	Image ID: `sha256:db88ae67ed867d5c25b764dd03a61e9bf24e0be14a696f77f44639de70f9e019`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -44,13 +44,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 14 Mar 2018 21:18:00 GMT
 ENV ROS_DISTRO=kinetic
-# Wed, 14 Mar 2018 21:19:10 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:15:58 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:15:59 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 14 Mar 2018 21:19:12 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 CMD ["bash"]
 ```
 
@@ -79,13 +79,13 @@ CMD ["bash"]
 		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
 		Size: 791.2 KB (791204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60901d675f8203d2f195cbbc68e2030a10628a3fc772cae69e73e8883babebab`  
-		Last Modified: Wed, 14 Mar 2018 22:30:48 GMT  
-		Size: 157.3 MB (157281850 bytes)  
+	-	`sha256:437b743729225ea615cb81b663beb1f8858c0492022308f9027574eabfa15905`  
+		Last Modified: Sat, 28 Apr 2018 04:52:29 GMT  
+		Size: 157.5 MB (157464679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b42a5d65e19fdfb03685f6d8964143aec7871bd770ff6f9985cc400a8481b6d0`  
-		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
-		Size: 194.0 B  
+	-	`sha256:fe57e79791559990cd84498e5a4fc0b8adf7f7794b114450c9bdd5aac9c724b8`  
+		Last Modified: Sat, 28 Apr 2018 04:51:45 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:kinetic-ros-core-jessie` - linux; arm64 variant v8

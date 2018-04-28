@@ -1,7 +1,7 @@
 ## `ros:kinetic-robot-jessie`
 
 ```console
-$ docker pull ros@sha256:2e12914f8e54289507feb5dbc2ce226c776dfd96c301de05294e7e457b6a799b
+$ docker pull ros@sha256:dd496e388409bd9b7e0259ecbf520f1adf7333305a616924f29d51341a1e6aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:2e12914f8e54289507feb5dbc2ce226c776dfd96c301de05294e7e4
 ### `ros:kinetic-robot-jessie` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:7d6d3c0c93627c48c41f01abfd9ce86d75c71b0002e4715b4aaf097763ea2a0d
+$ docker pull ros@sha256:ec2508303dc4a886970934a4ab76f733daf8aa11108288018f6469bc20137419
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.0 MB (436966229 bytes)**  
+-	Total Size: **436.8 MB (436843005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ccea59babad9c0df1dadcc507b35bc52467488f7eec3ef61c1c57e860cd7645`
+-	Image ID: `sha256:1ec2aa140a26be1caa5b412fd287407f711876fe560d7ebfd94035d649885e42`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -44,18 +44,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 14 Mar 2018 21:18:00 GMT
 ENV ROS_DISTRO=kinetic
-# Wed, 14 Mar 2018 21:19:10 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:15:58 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:15:59 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 14 Mar 2018 21:19:12 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 21:34:36 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:36:00 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:20:29 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:21:56 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -83,21 +83,21 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && r
 		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
 		Size: 791.2 KB (791204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60901d675f8203d2f195cbbc68e2030a10628a3fc772cae69e73e8883babebab`  
-		Last Modified: Wed, 14 Mar 2018 22:30:48 GMT  
-		Size: 157.3 MB (157281850 bytes)  
+	-	`sha256:437b743729225ea615cb81b663beb1f8858c0492022308f9027574eabfa15905`  
+		Last Modified: Sat, 28 Apr 2018 04:52:29 GMT  
+		Size: 157.5 MB (157464679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b42a5d65e19fdfb03685f6d8964143aec7871bd770ff6f9985cc400a8481b6d0`  
-		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
-		Size: 194.0 B  
+	-	`sha256:fe57e79791559990cd84498e5a4fc0b8adf7f7794b114450c9bdd5aac9c724b8`  
+		Last Modified: Sat, 28 Apr 2018 04:51:45 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af47caea1f1be1964d70ffec10d6455be1ba26d30589c08625bb8a4796572372`  
-		Last Modified: Wed, 14 Mar 2018 22:37:14 GMT  
-		Size: 84.2 MB (84217036 bytes)  
+	-	`sha256:72b1ba24199b3fb82c6916883db93bc8838c36ff22b36dca1090d62b3f299f48`  
+		Last Modified: Sat, 28 Apr 2018 04:53:47 GMT  
+		Size: 84.2 MB (84210325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bc62cab8c6aefb4a1307db0c1c4e44cbaa23b8da8197195e831681e29775df6`  
-		Last Modified: Wed, 14 Mar 2018 22:41:24 GMT  
-		Size: 61.8 MB (61810699 bytes)  
+	-	`sha256:5afe7d1e33c7eddd658ff72d71fddced29e98c79ea6583d102a8cca56feb65d2`  
+		Last Modified: Sat, 28 Apr 2018 05:05:51 GMT  
+		Size: 61.5 MB (61511356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:kinetic-robot-jessie` - linux; arm64 variant v8

@@ -1,7 +1,7 @@
 ## `ros:kinetic-perception-jessie`
 
 ```console
-$ docker pull ros@sha256:8074b19b5434576e911d818f0cc9ee0d02a26d0356082474d0ec7a12c2ca2834
+$ docker pull ros@sha256:ffe7fbedad93ccc2ff59a6309cb3f628a4b514b120c10152b99a77251e490205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:8074b19b5434576e911d818f0cc9ee0d02a26d0356082474d0ec7a1
 ### `ros:kinetic-perception-jessie` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:9060059f8b5994760551db90d396b382feff11c9ce08b80eb3173e7bcf75fd50
+$ docker pull ros@sha256:c389ee567e669aca8983ea7c795798788211a0cfdeae08e4c90b88d73b96e1f7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **647.3 MB (647305271 bytes)**  
+-	Total Size: **642.3 MB (642266631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:850362b40310c9d792db79fb41b5cb5625402f62cf0d10cb178b981879f1aceb`
+-	Image ID: `sha256:15c306b8423ba168364cc7aa003fac5649790ae4ecca9f10516537c50ed5a2e9`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -44,18 +44,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 14 Mar 2018 21:18:00 GMT
 ENV ROS_DISTRO=kinetic
-# Wed, 14 Mar 2018 21:19:10 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:15:58 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:15:59 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 14 Mar 2018 21:19:11 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 14 Mar 2018 21:19:12 GMT
+# Sat, 28 Apr 2018 01:16:00 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 21:34:36 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 21:39:28 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:20:29 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 01:31:14 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -83,21 +83,21 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*    
 		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
 		Size: 791.2 KB (791204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60901d675f8203d2f195cbbc68e2030a10628a3fc772cae69e73e8883babebab`  
-		Last Modified: Wed, 14 Mar 2018 22:30:48 GMT  
-		Size: 157.3 MB (157281850 bytes)  
+	-	`sha256:437b743729225ea615cb81b663beb1f8858c0492022308f9027574eabfa15905`  
+		Last Modified: Sat, 28 Apr 2018 04:52:29 GMT  
+		Size: 157.5 MB (157464679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b42a5d65e19fdfb03685f6d8964143aec7871bd770ff6f9985cc400a8481b6d0`  
-		Last Modified: Wed, 14 Mar 2018 22:29:48 GMT  
-		Size: 194.0 B  
+	-	`sha256:fe57e79791559990cd84498e5a4fc0b8adf7f7794b114450c9bdd5aac9c724b8`  
+		Last Modified: Sat, 28 Apr 2018 04:51:45 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af47caea1f1be1964d70ffec10d6455be1ba26d30589c08625bb8a4796572372`  
-		Last Modified: Wed, 14 Mar 2018 22:37:14 GMT  
-		Size: 84.2 MB (84217036 bytes)  
+	-	`sha256:72b1ba24199b3fb82c6916883db93bc8838c36ff22b36dca1090d62b3f299f48`  
+		Last Modified: Sat, 28 Apr 2018 04:53:47 GMT  
+		Size: 84.2 MB (84210325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eff968c2547713054d08bae01fece295d24baf45911ef3ff4bdaa8daf602ed59`  
-		Last Modified: Wed, 14 Mar 2018 22:43:53 GMT  
-		Size: 272.1 MB (272149741 bytes)  
+	-	`sha256:f936210253b66dea0353d90e2bfe0c86703a3d0420ea734551ea0aeffea2e331`  
+		Last Modified: Sat, 28 Apr 2018 05:07:19 GMT  
+		Size: 266.9 MB (266934982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:kinetic-perception-jessie` - linux; arm64 variant v8
