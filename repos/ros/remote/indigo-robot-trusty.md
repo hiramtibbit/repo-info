@@ -1,7 +1,7 @@
 ## `ros:indigo-robot-trusty`
 
 ```console
-$ docker pull ros@sha256:bd5fb5137dd89f93d1df08f7f75a2cf6c74300d1d3edc3a0d33936b2a7b14c60
+$ docker pull ros@sha256:ff1dffa66da718c15b7d38f1776ee6f4c856fce6c81643b157c4e982c56956b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -127,14 +127,14 @@ RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.6-0*     && rm
 ### `ros:indigo-robot-trusty` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:f1cb0899452d89798d8b7ac9ee0999ca5d7e61c2565fd212894f0f8749994685
+$ docker pull ros@sha256:f79c163b8b534c0ae95a0968badf7097b110a4f63e7fdbd21b2e6c41d8a0149f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.8 MB (306801697 bytes)**  
+-	Total Size: **308.0 MB (308049316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3de7281c2bc49b4b103cc9eadc5e02fe909a20db131934518cf8d47eee92af95`
+-	Image ID: `sha256:ec58d700a92df2f527075df19eee7072b48d556e8ef55e46d5e9b568156485b1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -167,18 +167,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Fri, 13 Apr 2018 12:21:59 GMT
 ENV ROS_DISTRO=indigo
-# Fri, 13 Apr 2018 12:23:33 GMT
-RUN apt-get update && apt-get install -y     ros-indigo-ros-core=1.1.5-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 12:23:35 GMT
+# Sat, 28 Apr 2018 12:02:37 GMT
+RUN apt-get update && apt-get install -y     ros-indigo-ros-core=1.1.6-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 12:02:39 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 12:23:36 GMT
+# Sat, 28 Apr 2018 12:02:39 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 12:23:36 GMT
+# Sat, 28 Apr 2018 12:02:40 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 12:24:33 GMT
-RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.5-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 12:25:43 GMT
-RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.5-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 12:04:03 GMT
+RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.6-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 12:05:09 GMT
+RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.6-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -222,19 +222,19 @@ RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.5-0*     && rm
 		Last Modified: Fri, 13 Apr 2018 12:42:45 GMT  
 		Size: 818.1 KB (818122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9ae8ffec37bf3c5e2548005b6f33c89db7476734561fc3bcb0c1079a60d4362`  
-		Last Modified: Fri, 13 Apr 2018 12:43:26 GMT  
-		Size: 137.6 MB (137577238 bytes)  
+	-	`sha256:bc8f7f076ebba4c0a5cf714074adc55eab3a74c868fa598b16a45732b456c99d`  
+		Last Modified: Sat, 28 Apr 2018 12:24:52 GMT  
+		Size: 138.8 MB (138823983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b63337d5a8acda4bb1359cc1edfc2132d9d1a4cb720a58a6bd45632ced101c6b`  
-		Last Modified: Fri, 13 Apr 2018 12:42:44 GMT  
-		Size: 195.0 B  
+	-	`sha256:18f11df7c0b9ed0aa65406d73b13cbb91f15053fda51f91005ff88116170ce26`  
+		Last Modified: Sat, 28 Apr 2018 12:24:12 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08a5c952a8e4803f60de0e3770f7220a72ac94321275564ddef800f07308962c`  
-		Last Modified: Fri, 13 Apr 2018 12:43:52 GMT  
-		Size: 40.4 MB (40382140 bytes)  
+	-	`sha256:13a07bdc344edbf89c1ec9e4e1b8ea8903b54ee05c50ea6b690fd03ac66cc40b`  
+		Last Modified: Sat, 28 Apr 2018 12:25:21 GMT  
+		Size: 40.4 MB (40382789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f4f6f1f531ec57916372c26aad04477cf56bd16f68a8b59bdd2fb5f2b3f5033`  
-		Last Modified: Fri, 13 Apr 2018 12:44:16 GMT  
-		Size: 17.7 MB (17679022 bytes)  
+	-	`sha256:bd36257813ea22b215ebefe856ac37ee5f442f4856742d1f32fead74025d57e2`  
+		Last Modified: Sat, 28 Apr 2018 12:25:56 GMT  
+		Size: 17.7 MB (17679248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

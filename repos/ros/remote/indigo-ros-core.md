@@ -1,7 +1,7 @@
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull ros@sha256:ec19ba1f691ce2ee310bfbcf18b14c624076bda4e6a561a154e74e4a8b57f6fb
+$ docker pull ros@sha256:d1f7fbea23138b6c33a5b9445b9caefe50898df743c3949d38ba9368d855c524
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,14 +115,14 @@ CMD ["bash"]
 ### `ros:indigo-ros-core` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:7539321e3ede6a72cb5a64e74244ab7889387b87db4a25237c418e3a4117ceae
+$ docker pull ros@sha256:bf35babc43dee1e973bbc44f349a575403e7ed87c8b7718b7dd492c290b5873f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.7 MB (248740535 bytes)**  
+-	Total Size: **250.0 MB (249987279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a007b8dee14e912f4c8e1293188e8f8a57ed8b2c710d84cd30b61e3e53b6899`
+-	Image ID: `sha256:b2d75c5cd14a735ef7a703e49e28fc2fd25b27af7689b0213d3d130612d86990`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -155,13 +155,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Fri, 13 Apr 2018 12:21:59 GMT
 ENV ROS_DISTRO=indigo
-# Fri, 13 Apr 2018 12:23:33 GMT
-RUN apt-get update && apt-get install -y     ros-indigo-ros-core=1.1.5-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 12:23:35 GMT
+# Sat, 28 Apr 2018 12:02:37 GMT
+RUN apt-get update && apt-get install -y     ros-indigo-ros-core=1.1.6-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 28 Apr 2018 12:02:39 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 12:23:36 GMT
+# Sat, 28 Apr 2018 12:02:39 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 12:23:36 GMT
+# Sat, 28 Apr 2018 12:02:40 GMT
 CMD ["bash"]
 ```
 
@@ -206,11 +206,11 @@ CMD ["bash"]
 		Last Modified: Fri, 13 Apr 2018 12:42:45 GMT  
 		Size: 818.1 KB (818122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9ae8ffec37bf3c5e2548005b6f33c89db7476734561fc3bcb0c1079a60d4362`  
-		Last Modified: Fri, 13 Apr 2018 12:43:26 GMT  
-		Size: 137.6 MB (137577238 bytes)  
+	-	`sha256:bc8f7f076ebba4c0a5cf714074adc55eab3a74c868fa598b16a45732b456c99d`  
+		Last Modified: Sat, 28 Apr 2018 12:24:52 GMT  
+		Size: 138.8 MB (138823983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b63337d5a8acda4bb1359cc1edfc2132d9d1a4cb720a58a6bd45632ced101c6b`  
-		Last Modified: Fri, 13 Apr 2018 12:42:44 GMT  
-		Size: 195.0 B  
+	-	`sha256:18f11df7c0b9ed0aa65406d73b13cbb91f15053fda51f91005ff88116170ce26`  
+		Last Modified: Sat, 28 Apr 2018 12:24:12 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
