@@ -1,7 +1,7 @@
 ## `openjdk:9-jre`
 
 ```console
-$ docker pull openjdk@sha256:ec936ebabf59e6d79750381987514aa18a2ed493735e02b473dcc60494b6a173
+$ docker pull openjdk@sha256:913dab50a96c9ad7d10dd45d8187f2d384add190c3f6255e7c5dc32ef96a5c2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -297,71 +297,71 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:9-jre` - linux; 386
 
 ```console
-$ docker pull openjdk@sha256:2d24830ef36c1b0221b052172bff161346128707e0affacbe591b34fab93f46b
+$ docker pull openjdk@sha256:73aff880014ba8accde50f8a6ae5b9689d90fea9f4420cd8b82a5b9b315ddca6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267023146 bytes)**  
+-	Total Size: **267.3 MB (267268813 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a070b52ea0ee1d1092a131e3d6af06bf79dbe42b875db0b13034a06de233998e`
+-	Image ID: `sha256:bef0688306a18440fa3772ea55c6496f32eb9fae4cec83cd703a56d68d563c97`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 27 Mar 2018 15:19:02 GMT
-ADD file:3a6a63b0b9425f04e46cf51ded918e18b0db615ed41661ca95b309dce2bd3ad1 in / 
-# Tue, 27 Mar 2018 15:19:02 GMT
+# Sat, 28 Apr 2018 10:40:49 GMT
+ADD file:cb21908d8f286f1381ea180209120314676afa1ce4d5d480e0310fe70a4c96d4 in / 
+# Sat, 28 Apr 2018 10:40:49 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 22:11:19 GMT
+# Sat, 28 Apr 2018 12:09:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 22:11:26 GMT
+# Sat, 28 Apr 2018 12:09:31 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 14 Apr 2018 02:45:21 GMT
+# Sat, 28 Apr 2018 14:41:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 14 Apr 2018 02:51:17 GMT
+# Sat, 28 Apr 2018 14:41:33 GMT
 ENV LANG=C.UTF-8
-# Sat, 14 Apr 2018 02:51:18 GMT
+# Sat, 28 Apr 2018 14:41:33 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 14 Apr 2018 02:51:19 GMT
+# Sat, 28 Apr 2018 14:48:50 GMT
 RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 14 Apr 2018 02:51:19 GMT
+# Sat, 28 Apr 2018 14:48:50 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 14 Apr 2018 02:51:20 GMT
+# Sat, 28 Apr 2018 14:48:50 GMT
 ENV JAVA_VERSION=9.0.4+12
-# Sat, 14 Apr 2018 02:51:20 GMT
+# Sat, 28 Apr 2018 14:48:51 GMT
 ENV JAVA_DEBIAN_VERSION=9.0.4+12-4
-# Sat, 14 Apr 2018 02:52:17 GMT
+# Sat, 28 Apr 2018 14:49:56 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:e8960ddf567e95d313a33100aba08d2853543b56dc972c34d9b0560911085e99`  
-		Last Modified: Thu, 15 Mar 2018 01:13:58 GMT  
-		Size: 48.8 MB (48829003 bytes)  
+	-	`sha256:33fb16074d5de3f73c0e2941c01c03e5dc69cfb8f568b7fbc3e29926b575fef0`  
+		Last Modified: Sat, 28 Apr 2018 10:47:25 GMT  
+		Size: 49.1 MB (49090181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1849e2a92f3800668a6ffe52032b9f784151381571639c66745a3510e1a2a4`  
-		Last Modified: Fri, 13 Apr 2018 22:30:05 GMT  
-		Size: 8.6 MB (8592465 bytes)  
+	-	`sha256:1221b68ac3c47d06c1341ffe090ec03398349bceea7339f16cc35cfc2d4d3e47`  
+		Last Modified: Sat, 28 Apr 2018 12:42:56 GMT  
+		Size: 8.6 MB (8592005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08ecc172ef960d48b958d65a2fb24c557809479d8877b3346abe640dce556534`  
-		Last Modified: Fri, 13 Apr 2018 22:30:04 GMT  
-		Size: 9.4 MB (9387891 bytes)  
+	-	`sha256:7e5f5c3224bba80e122d520e5cb80f4eca7c9d3dc1118c27465db2e68af1bf5f`  
+		Last Modified: Sat, 28 Apr 2018 12:42:56 GMT  
+		Size: 9.4 MB (9388693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d22d64a65417e920753fd42873267ed1fd3448eec7176366aceffd3e2cf4673a`  
-		Last Modified: Sat, 14 Apr 2018 03:08:37 GMT  
-		Size: 864.0 KB (864007 bytes)  
+	-	`sha256:286cc07398eedf8123bb7a02b5b353a8f442ce339af60c10d1ba9a63fcc72e70`  
+		Last Modified: Sat, 28 Apr 2018 15:04:40 GMT  
+		Size: 864.8 KB (864767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c731532a71ccad9b2073ad195f6174a58f3ab11cc62129f62d0401fae7b12e91`  
-		Last Modified: Sat, 14 Apr 2018 03:13:38 GMT  
-		Size: 239.0 B  
+	-	`sha256:cf205851288de886ac5ac35ac5fa82df28cca05af8482a07669d99297064c140`  
+		Last Modified: Sat, 28 Apr 2018 15:04:39 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d226b72d1808354793a67b10053b9331d846d120e090e7ab6ab8d5da59b0585`  
-		Last Modified: Sat, 14 Apr 2018 03:13:38 GMT  
+	-	`sha256:ecf6b4f18263e270913b75757fd0996e61231caabbab01a0178e9758dc859f17`  
+		Last Modified: Sat, 28 Apr 2018 15:12:12 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a74e0194bd3aa6c2d287e4898092867061ab9d5fc4209d45d238fd47821e244d`  
-		Last Modified: Sat, 14 Apr 2018 03:14:31 GMT  
-		Size: 199.3 MB (199349410 bytes)  
+	-	`sha256:d7e5045fec782670b56414c2818434ebb114cef0adf2ae1e6f2ea73954905812`  
+		Last Modified: Sat, 28 Apr 2018 15:13:05 GMT  
+		Size: 199.3 MB (199332798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:9-jre` - linux; ppc64le
