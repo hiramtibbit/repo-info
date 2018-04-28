@@ -1372,10 +1372,6 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/glib2.0/2.56.0-5/
-
 
 ### `dpkg` source package: `glibc=2.27-2`
 
@@ -1842,10 +1838,6 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iproute2/4.15.0-2/
-
 
 ### `dpkg` source package: `iptables=1.6.2-1`
 
@@ -2251,10 +2243,6 @@ Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libdatrie/0.2.10-7/
 
 
 ### `dpkg` source package: `libdrm=2.4.91-2`
@@ -2727,10 +2715,6 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libpsl/0.19.1-5/
-
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -2824,20 +2808,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.dsc' libseccomp_2.3.1-2.1.dsc 2048 SHA256:99cefa142517653fd580330f0b0aa2aa83b8d14b8d67e8ccbf53989e512600bc
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1.debian.tar.xz' libseccomp_2.3.1-2.1.debian.tar.xz 10572 SHA256:7343368b61c76e4f275c8de51415f466fd6f46ec53d50729b40b962386cbf6ca
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.3.1-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.3.1-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
@@ -2958,10 +2931,6 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libsoup2.4/2.62.0-1/
 
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
@@ -3839,10 +3808,6 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/
-
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -3908,10 +3873,6 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mesa/17.3.7-1/
 
 
 ### `dpkg` source package: `mime-support=3.60`
@@ -4049,10 +4010,6 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nghttp2/1.31.0-1/
-
 
 ### `dpkg` source package: `nspr=2:4.18-1`
 
@@ -4184,10 +4141,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl1.0/1.0.2n-1/
 
 
 ### `dpkg` source package: `openssl=1.1.0g-2`
@@ -4471,10 +4424,6 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/procps/2:3.3.12-4/
-
 
 ### `dpkg` source package: `python-defaults=2.7.14-4`
 
@@ -4724,10 +4673,6 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sqlite3/3.22.0-1/
-
 
 ### `dpkg` source package: `subversion=1.9.7-4`
 
@@ -4872,10 +4817,6 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tiff/4.0.9-4/
 
 
 ### `dpkg` source package: `tzdata=2018c-1`
