@@ -1,17 +1,17 @@
-# `node:9.11.1-onbuild`
+# `node:chakracore-10.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed2506e2e522f6470297cadee9868eef358c1fcdee51f2642941456a857f4bfe`
-- Created: `2018-04-06T18:55:05.920393666Z`
-- Virtual Size: ~ 672.91 Mb  
+- Image ID: `sha256:b3903fc59c8914c11015ed942bc1b04f3ddba6523f57de7f3ea432d0c77f5d7d`
+- Created: `2018-04-27T23:19:22.19704815Z`
+- Virtual Size: ~ 673.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["npm","start"]`
+- Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.11.1`
-  - `YARN_VERSION=1.5.1`
+  - `NODE_VERSION=10.0.0`
+  - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
 
