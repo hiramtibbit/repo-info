@@ -1,4 +1,4 @@
-## `node:wheezy`
+## `node:10-wheezy`
 
 ```console
 $ docker pull node@sha256:eac2ac2442bb2541172ae4f4ba1b955752ae09d70f4ec5c673c5f531fb0f916f
@@ -8,7 +8,7 @@ $ docker pull node@sha256:eac2ac2442bb2541172ae4f4ba1b955752ae09d70f4ec5c673c5f5
 -	Platforms:
 	-	linux; amd64
 
-### `node:wheezy` - linux; amd64
+### `node:10-wheezy` - linux; amd64
 
 ```console
 $ docker pull node@sha256:2da3bb684c4f398ea7aecfa041abca5989e55a27da5d626e41a2534367af9ff9
