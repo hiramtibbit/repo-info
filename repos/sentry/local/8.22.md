@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5da17ae989e66c5f7c6257974548d81497cd07f5a10ff854b1cfcebe2d5eaf43`
-- Created: `2018-04-21T08:07:58.191761552Z`
-- Virtual Size: ~ 545.70 Mb  
+- Image ID: `sha256:dc994b8f8bd028f01e00c88c397c374df134b1fad73b287473af869a65bc3b08`
+- Created: `2018-04-27T21:32:10.111437545Z`
+- Virtual Size: ~ 541.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,6 +12,7 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
+  - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.14`
   - `PYTHON_PIP_VERSION=10.0.1`
@@ -2056,37 +2057,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.40+dfsg-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u7`
-
-Binary Packages:
-
-- `openssl=1.0.1t-1+deb8u7`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u7
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u7.dsc' openssl_1.0.1t-1+deb8u7.dsc 2272 SHA256:46829bc5849b471645858281ad9f8560834e143920f40a61798b268714837707
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u7.debian.tar.xz' openssl_1.0.1t-1+deb8u7.debian.tar.xz 108792 SHA256:401809f04158292ad0751b2afe764edabd099cb73cb4395284e1294182de2306
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u7/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
 
 Binary Packages:
 
 - `libssl-dev:amd64=1.0.1t-1+deb8u8`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u8`
+- `openssl=1.0.1t-1+deb8u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
