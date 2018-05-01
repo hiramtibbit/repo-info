@@ -1,7 +1,7 @@
 ## `openjdk:7u171-slim`
 
 ```console
-$ docker pull openjdk@sha256:b6cf22fe9fbe3a2b3f477ee7bd80b8889c73dbcdb00e1ac65cdabaab59eef4bf
+$ docker pull openjdk@sha256:5cf1d4d0977e850463ce6e5b5ca87f9869dff3bd09fe10f26688a84d9d0d7e40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -191,59 +191,59 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:7u171-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:cb60dd51a3c6e8395806eae5a18ff97b2cdc00286f627b31b2d9334ddc753d42
+$ docker pull openjdk@sha256:d2f5ce983c90c517c0fcc8abb81a6d0037dbdb495a15f65b6c4aa12ee9818ae5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.2 MB (121202936 bytes)**  
+-	Total Size: **120.8 MB (120757987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a91e895be1924fa259887057cd066965c15276025f3e52cb54ebc2fb58ec50fb`
+-	Image ID: `sha256:320b64b9b4faa665b8e3f6d26786e66b462cde12cc347dddd635f676780c60dc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:25:26 GMT
-ADD file:0012468f66c7e5b0efd7217a1f29f5044d4dce5a19dcd39786aa7573bc927763 in / 
-# Wed, 14 Mar 2018 17:25:26 GMT
+# Mon, 30 Apr 2018 23:23:15 GMT
+ADD file:d88886292edb80d3898ba50f464cceb9c33709b3bb124f81e910bc9c6b0e7acc in / 
+# Mon, 30 Apr 2018 23:23:18 GMT
 CMD ["bash"]
-# Wed, 14 Mar 2018 20:54:51 GMT
+# Tue, 01 May 2018 11:19:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Mar 2018 20:54:52 GMT
+# Tue, 01 May 2018 11:19:37 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Mar 2018 20:54:55 GMT
+# Tue, 01 May 2018 11:19:46 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 14 Mar 2018 20:54:58 GMT
+# Tue, 01 May 2018 11:19:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 14 Mar 2018 20:58:54 GMT
+# Tue, 01 May 2018 11:34:57 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 10 Apr 2018 04:00:17 GMT
+# Tue, 01 May 2018 11:34:58 GMT
 ENV JAVA_VERSION=7u171
-# Tue, 10 Apr 2018 04:00:36 GMT
+# Tue, 01 May 2018 11:34:59 GMT
 ENV JAVA_DEBIAN_VERSION=7u171-2.6.13-1~deb8u1
-# Tue, 10 Apr 2018 04:06:44 GMT
+# Tue, 01 May 2018 11:40:26 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:784b6f32f75d9222c618727f66027b44ffa35120fc128790dfce4d1070befc90`  
-		Last Modified: Wed, 14 Mar 2018 17:39:37 GMT  
-		Size: 27.5 MB (27488177 bytes)  
+	-	`sha256:6d46b8f3eebfe36e412a394de4bf8a598e22d1fe11cd6b35f34e770473c170ea`  
+		Last Modified: Mon, 30 Apr 2018 23:43:19 GMT  
+		Size: 27.5 MB (27494590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5e7dce196c2b3ec395266d9a54e3e86ce2370094ab2afcd4105523de42387b5`  
-		Last Modified: Tue, 10 Apr 2018 04:11:51 GMT  
-		Size: 457.9 KB (457899 bytes)  
+	-	`sha256:66c67f48d3f95f879f0a16939897151d838aeae71743f184d41d557ba719f896`  
+		Last Modified: Tue, 01 May 2018 11:59:05 GMT  
+		Size: 457.9 KB (457930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79c48cff4a86f2532c3b64dbc60b9640b85ae94744e878f345887d5dd8e54030`  
-		Last Modified: Tue, 10 Apr 2018 04:11:50 GMT  
-		Size: 248.0 B  
+	-	`sha256:75e4f5df17d67da29d0f5e8846dfb76e7f541e3c84f16d804a52313cf3f2d755`  
+		Last Modified: Tue, 01 May 2018 11:59:04 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81258555389907120383cb0bbd1face67741e609245bb613a037b0a4514a0cdb`  
-		Last Modified: Tue, 10 Apr 2018 04:11:51 GMT  
+	-	`sha256:825cf0a868d42f586b37204e4c5bbc1ab2668b7d1d01156e2be933557a5fe1fd`  
+		Last Modified: Tue, 01 May 2018 11:59:04 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77804c205ecbd4c1e7e179f071942b7ef171d1fda1768a867d310abd5b4201c`  
-		Last Modified: Tue, 10 Apr 2018 04:20:57 GMT  
-		Size: 93.3 MB (93256481 bytes)  
+	-	`sha256:d4d5e54cd0ceca17d405dc2fab23f86b26b1a956091658d496f1bfeb0d136419`  
+		Last Modified: Tue, 01 May 2018 12:01:28 GMT  
+		Size: 92.8 MB (92805089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7u171-slim` - linux; 386
