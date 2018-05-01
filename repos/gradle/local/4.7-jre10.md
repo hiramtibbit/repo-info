@@ -254,20 +254,13 @@ Licenses: (parsed from: `/usr/share/doc/at-spi2-core/copyright`, `/usr/share/doc
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-core=2.28.0-2
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.28.0-2.dsc' at-spi2-core_2.28.0-2.dsc 2590 SHA256:78ca4d16ffb2468c06652fe5e2f27d3abfbb71e83cfa84e1080e26bed35be291
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.28.0.orig.tar.xz' at-spi2-core_2.28.0.orig.tar.xz 186676 SHA256:42a2487ab11ce43c288e73b2668ef8b1ab40a0e2b4f94e80fca04ad27b6f1c87
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.28.0-2.debian.tar.xz' at-spi2-core_2.28.0-2.debian.tar.xz 7884 SHA256:e946cca2e6954c0b31bf2dc8f7e9cace1ae7adddf41d9bc13452f115027907f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-core/2.28.0-2/
 
-- https://sources.debian.net/src/at-spi2-core/2.28.0-2/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-core/2.28.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-core/2.28.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `atk1.0=2.28.1-1`
 
@@ -2181,20 +2174,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `GPL-3`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.7.7-3.1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.1.dsc' libcap-ng_0.7.7-3.1.dsc 2266 SHA256:f545d107ed3e6160b16aac09e242d1ccc054bfca76f6d70731a83c031b416f53
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7.orig.tar.gz' libcap-ng_0.7.7.orig.tar.gz 420178 SHA256:615549ce39b333f6b78baee0c0b4ef18bc726c6bf1cca123dfd89dd963f6d06b
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.1.debian.tar.xz' libcap-ng_0.7.7-3.1.debian.tar.xz 5432 SHA256:074bf729c3081af729e7e0fbbe3354ddecc16e045245e7d4f44003b9f1f1adc6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.7.7-3.1/
 
-- https://sources.debian.net/src/libcap-ng/0.7.7-3.1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.7.7-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.7.7-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.25-1.2`
 
