@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:819fbe35e27cfa4fa42f9a9f734456a19d468c71ee647d7ff96715c9a7641729`
-- Created: `2018-04-13T07:06:41.887803805Z`
-- Virtual Size: ~ 252.71 Mb  
+- Image ID: `sha256:9b7e67d4eb2e3c78077c6e94875e85bb5198b283730a63d1e4369d303dc7d912`
+- Created: `2018-04-28T18:25:41.21123023Z`
+- Virtual Size: ~ 252.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1533,20 +1533,25 @@ $ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.debian.tar.xz' openssh_7.2p2-4ubuntu2.4.debian.tar.xz 166628 SHA256:00b7e94483e369ab0e098ccada7b35473694544e4498d20ff7c2a2ae8bfe8def
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.11`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.12`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.11`
-- `openssl=1.0.2g-1ubuntu4.11`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.12`
+- `openssl=1.0.2g-1ubuntu4.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.12.dsc' openssl_1.0.2g-1ubuntu4.12.dsc 2437 SHA256:af2ceb91ea6eea7b162cdc06f9c72f46fe9c85a8796f1e8ab2e49871bb60850c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.12.debian.tar.xz' openssl_1.0.2g-1ubuntu4.12.debian.tar.xz 121964 SHA256:e37c6a20254d2f49b40e665ab5068ee86ee96638d4035c7f8234c88995b2f846
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
@@ -1571,14 +1576,14 @@ $ apt-get source -qq --print-uris p11-kit=0.23.2-5~ubuntu16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.2-5~ubuntu16.04.1.debian.tar.xz' p11-kit_0.23.2-5~ubuntu16.04.1.debian.tar.xz 15208 SHA256:8d916c95e619ba3bf98aaaaf92c6115e09c4222925be1a43e6882c77d5e5a166
 ```
 
-### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
+### `dpkg` source package: `pam=1.1.8-3.2ubuntu2.1`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.1.8-3.2ubuntu2`
-- `libpam-modules-bin=1.1.8-3.2ubuntu2`
-- `libpam-runtime=1.1.8-3.2ubuntu2`
-- `libpam0g:amd64=1.1.8-3.2ubuntu2`
+- `libpam-modules:amd64=1.1.8-3.2ubuntu2.1`
+- `libpam-modules-bin=1.1.8-3.2ubuntu2.1`
+- `libpam-runtime=1.1.8-3.2ubuntu2.1`
+- `libpam0g:amd64=1.1.8-3.2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1587,10 +1592,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.dsc' pam_1.1.8-3.2ubuntu2.dsc 2589 SHA256:b9ab28d75594ece90f12987b8926d5897fb994f1ea25a2ee03b09e2570785142
+$ apt-get source -qq --print-uris pam=1.1.8-3.2ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.1.dsc' pam_1.1.8-3.2ubuntu2.1.dsc 2249 SHA256:2fd155508c2786bb48f0e1ebe604d268f61303035c203c7a90d5f5b97e742cdc
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.diff.gz' pam_1.1.8-3.2ubuntu2.diff.gz 198851 SHA256:5b999640be4f2ffd0e200e7785d04089375635d2d0f2033b7668462f6207a35f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.1.diff.gz' pam_1.1.8-3.2ubuntu2.1.diff.gz 198992 SHA256:1e1bd29430a9734bd8e5415952c1bfc16dedc94b5d3bbc678d728daa096edb29
 ```
 
 ### `dpkg` source package: `pcre3=2:8.38-3.1`
@@ -1612,14 +1617,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9ubuntu0.2`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.22:amd64=5.22.1-9ubuntu0.2`
-- `perl=5.22.1-9ubuntu0.2`
-- `perl-base=5.22.1-9ubuntu0.2`
-- `perl-modules-5.22=5.22.1-9ubuntu0.2`
+- `libperl5.22:amd64=5.22.1-9ubuntu0.3`
+- `perl=5.22.1-9ubuntu0.3`
+- `perl-base=5.22.1-9ubuntu0.3`
+- `perl-modules-5.22=5.22.1-9ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.22/copyright`)
 
@@ -1650,9 +1655,14 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.dsc' perl_5.22.1-9ubuntu0.3.dsc 2448 SHA256:30830c674f0bcf58d018d6d1a326e8342fee37388f8593b376b863d4040a787a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
+```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 

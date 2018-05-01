@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f3c46ac4a81237c16d2ef69fbbbb0f14551113420ff4c76f6646b26ee3d6832`
-- Created: `2018-04-13T06:46:54.951532946Z`
-- Virtual Size: ~ 588.07 Mb  
+- Image ID: `sha256:4f8641551e9915a2ee806a5e3a035b94d95ad39aca7d29c9a044b8b82a79f947`
+- Created: `2018-04-28T17:42:19.55285631Z`
+- Virtual Size: ~ 588.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -107,8 +107,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.0.1ubuntu2.17
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
 ```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
@@ -3435,11 +3435,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-144.193`
+### `dpkg` source package: `linux=3.13.0-145.194`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-144.193`
+- `linux-libc-dev:amd64=3.13.0-145.194`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3448,10 +3448,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.13.0-144.193
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.dsc' linux_3.13.0-144.193.dsc 8127 SHA256:fd1b32d53a57c2804c8445e8cd4e6b52c0877eb0f5f225b00e05f1b5d977a4ce
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-144.193.diff.gz' linux_3.13.0-144.193.diff.gz 9623002 SHA256:2ae2ab709403ce71f26ee2417d229bb506c6a3c04e48c864220c9295932732af
+$ apt-get source -qq --print-uris linux=3.13.0-145.194
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-145.194.dsc' linux_3.13.0-145.194.dsc 7800 SHA256:9a0239180dc21ee1b0d4355169f464aa4a0a1b3f01fee64302bd61d7b4c8b3f9
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-145.194.diff.gz' linux_3.13.0-145.194.diff.gz 9638092 SHA256:3bf911625d1d1db120918b6cceaecad5f37e29b38cb729acc5c4baf8a7b50c97
 ```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
@@ -3747,13 +3747,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.2-1.debian.tar.gz' mpfr4_3.1.2-1.debian.tar.gz 13473 SHA256:91967c4fe85996504574e882491527d09dad835b4ba05bd4145f3ae8a3f5db0e
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.59-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.60-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.59-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.59-0ubuntu0.14.04.1`
-- `mysql-common=5.5.59-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.60-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.60-0ubuntu0.14.04.1`
+- `mysql-common=5.5.60-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3771,9 +3771,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.60-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.60-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.60-0ubuntu0.14.04.1.dsc 3155 SHA256:ded5ad7f7e4254afb6b4bfe0bf24022ffc08c1afa03411d2c6c89154f86fe116
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.60.orig.tar.gz' mysql-5.5_5.5.60.orig.tar.gz 21025041 SHA256:a34112e1748823f6dfd0d129fe29a629cf35b8702f9dfaf1f24caf89ab523d1c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.60-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.60-0ubuntu0.14.04.1.debian.tar.gz 316961 SHA256:1fe794501d77caa55796d7510a065e9924923a6ebe9f705e2ceb0b7614d1033a
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
@@ -3956,21 +3961,26 @@ $ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.10.debian.tar.gz' openssh_6.6p1-2ubuntu2.10.debian.tar.gz 198960 SHA256:1b77259775baebdc0a74e0edc7b74d3ed5d781ed0a9040b46cca55f2bc4b6b73
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.24`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.25`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1f-1ubuntu2.24`
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.24`
-- `openssl=1.0.1f-1ubuntu2.24`
+- `libssl-dev:amd64=1.0.1f-1ubuntu2.25`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.25`
+- `openssl=1.0.1f-1ubuntu2.25`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.25
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.25.dsc' openssl_1.0.1f-1ubuntu2.25.dsc 2368 SHA256:24455f2f7a8e3f5e9a5f0f301d184ba00287d82165676832d94ef1e6ea099041
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.25.debian.tar.gz' openssl_1.0.1f-1ubuntu2.25.debian.tar.gz 270953 SHA256:7c1436f7ff8e0a06527f718c5cb9ab4f51c4b78c1ddd80d4d21db0c446aa9e34
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -4078,13 +4088,13 @@ $ apt-get source -qq --print-uris pcre3=1:8.31-2ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.31-2ubuntu2.3.debian.tar.gz' pcre3_8.31-2ubuntu2.3.debian.tar.gz 32334 SHA256:abd464618602848585b85bcf6ed197839f1359e3dbe887d7d8aed856f277ed9f
 ```
 
-### `dpkg` source package: `perl=5.18.2-2ubuntu1.3`
+### `dpkg` source package: `perl=5.18.2-2ubuntu1.4`
 
 Binary Packages:
 
-- `perl=5.18.2-2ubuntu1.3`
-- `perl-base=5.18.2-2ubuntu1.3`
-- `perl-modules=5.18.2-2ubuntu1.3`
+- `perl=5.18.2-2ubuntu1.4`
+- `perl-base=5.18.2-2ubuntu1.4`
+- `perl-modules=5.18.2-2ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -4114,9 +4124,14 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.4.dsc' perl_5.18.2-2ubuntu1.4.dsc 2433 SHA256:e7c855a717a871a7ab6af9cfe7e97f17dcc6be7a5b11d33dc90b5b88341b9092
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.4.debian.tar.gz' perl_5.18.2-2ubuntu1.4.debian.tar.gz 143576 SHA256:4dc4d78b83cbbe9ba7a2a1cee643767aa8ae5c6b4a34ff04943d3cda73e69746
+```
 
 ### `dpkg` source package: `pixman=0.30.2-2ubuntu1.1`
 
@@ -4614,12 +4629,12 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.26`
+### `dpkg` source package: `systemd=204-5ubuntu20.28`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.26`
-- `udev=204-5ubuntu20.26`
+- `libudev1:amd64=204-5ubuntu20.28`
+- `udev=204-5ubuntu20.28`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -4633,10 +4648,10 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=204-5ubuntu20.26
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.dsc' systemd_204-5ubuntu20.26.dsc 3679 SHA256:31e3b27daad2be2c75303286884bf6145fd415eb5f1ad8b2ee55a92ea51db290
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.26.debian.tar.gz' systemd_204-5ubuntu20.26.debian.tar.gz 178668 SHA256:c4701243763f607d7e9bc46ea56398512930ea964461118c04251d793ca01133
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.28
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.28.dsc' systemd_204-5ubuntu20.28.dsc 3711 SHA256:342e2f8626ad5f26008e99334e5cbc88e9ad18747c42685c4ed62de07e3cb7ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.28.debian.tar.gz' systemd_204-5ubuntu20.28.debian.tar.gz 178996 SHA256:c4dc16a2b0cc71bc818118fb74adea0b92b3e1141efa12f666d941e6705b892c
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
