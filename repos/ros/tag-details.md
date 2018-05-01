@@ -2127,7 +2127,7 @@ CMD ["bash"]
 ## `ros:kinetic`
 
 ```console
-$ docker pull ros@sha256:65ce0247296f84eee1920386ca4a41ac464d4e293a2fd1781e01013985c0ec31
+$ docker pull ros@sha256:3ca1c10c802b3bb54b068ece8a4999b6388aefd7e21c970574ae6b0e9939ebfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2357,116 +2357,116 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ### `ros:kinetic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:d7b357ee4985436cdfdb417c1c9262e7808c89c3b48d9f64d2b02fe66a1dc16d
+$ docker pull ros@sha256:89c95b9f4fac10565324dc86c8386555a757b1cd15cc3c33a345b946b3592dc9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.0 MB (348022777 bytes)**  
+-	Total Size: **348.0 MB (348048555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93e4c6f33f6f65acfb680ccb1f2a430c1a02d8367592770c7729c3e18a44438d`
+-	Image ID: `sha256:ab8e7598dc15d5e6be4962d16faeeb44bb7d27153a3744202cf92b978b8bf1b1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-perception`
 
 ```console
-$ docker pull ros@sha256:0d042f08a158542d39514dfd7ec77beae24a28ed28ccd620eeac56caae2c75ae
+$ docker pull ros@sha256:0d8a8945ce6fb3828b8f65f8aa894c2010a6c8fec8fb4ea91260fe01c73f7939
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2708,122 +2708,122 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 ### `ros:kinetic-perception` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:466d7f9f5e309566ff17407998f8404f1482144e167690cdcf7c8c4ddddb3748
+$ docker pull ros@sha256:0ef4dd6ebd43a736cef4d9ccd3af0c0dede98d17c857d2e2f296a3ac25cda0c5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **669.9 MB (669927644 bytes)**  
+-	Total Size: **638.9 MB (638877793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1338f02c90d095153818f6429e3eeb44f4e175d7e13a0076659712055b55270f`
+-	Image ID: `sha256:2abe895a522e8a7b2fd45e528f65ffdfd6e46dca6f0f979b016f053f5e4b5ec1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:15:04 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:08:20 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19131715d958a0a46e543c9dc6f4b9ba9485ab32a1a2138537993376418335e6`  
-		Last Modified: Fri, 13 Apr 2018 10:59:42 GMT  
-		Size: 321.9 MB (321904867 bytes)  
+	-	`sha256:3979a12b0fda2321282b7685908c8a70e7c6c23b2ec74747e3643d7a8879e71d`  
+		Last Modified: Tue, 01 May 2018 04:26:15 GMT  
+		Size: 290.8 MB (290829238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-perception-jessie`
 
 ```console
-$ docker pull ros@sha256:ad04e0f6dc80cb47ee5cbc5b82d2de206c99d9b9b116ac677ef12ee12c6c5352
+$ docker pull ros@sha256:46a99876ba06d0ace827ca3acb29f7e2e9a17a788e786c29990c13d3b72109ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2925,98 +2925,98 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 ### `ros:kinetic-perception-jessie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:70dd85e3237a71dadf38dfbf1584442f24cdccd4f43668783b784f5ef37d4d9d
+$ docker pull ros@sha256:fb3319fd70ccbef7d0c51296256eaf21cda176e61e40063e8d73edd27f172bcf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **563.5 MB (563517812 bytes)**  
+-	Total Size: **557.8 MB (557829113 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b144d5002bb51e04135892b59338aa21f556b8ab487cfd41136bad429e5a56b`
+-	Image ID: `sha256:42a79943c0674ac386999fe672a9e0ef47dd189e0d95982615224d97c7442951`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:24:26 GMT
-ADD file:bcd41493879aaeeecb9c960b91c9954b1e0229e91b7a070cb6b2dfdadc8c52b8 in / 
-# Wed, 14 Mar 2018 17:24:27 GMT
+# Mon, 30 Apr 2018 23:21:38 GMT
+ADD file:387c83918422a6546379c4d84818ca3949fcd63aec058da562b08c947a9ed571 in / 
+# Mon, 30 Apr 2018 23:21:40 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:21:28 GMT
+# Tue, 01 May 2018 02:11:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:21:33 GMT
+# Tue, 01 May 2018 02:11:26 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:21:36 GMT
+# Tue, 01 May 2018 02:11:28 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu jessie main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:23:44 GMT
+# Tue, 01 May 2018 02:15:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:23:45 GMT
+# Tue, 01 May 2018 02:15:10 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:23:46 GMT
+# Tue, 01 May 2018 02:15:11 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 03:24:29 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 03:24:30 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 15 Mar 2018 03:34:16 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:34:20 GMT
+# Tue, 01 May 2018 02:24:22 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:24:26 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 03:34:21 GMT
+# Tue, 01 May 2018 02:24:27 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 03:34:22 GMT
+# Tue, 01 May 2018 02:24:28 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:38:09 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:55:15 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:31:11 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:51:14 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:21ccda36f02cc1214a990aa0c90bf9e705d50f6bf9844bffa71a8fbff898df30`  
-		Last Modified: Wed, 14 Mar 2018 17:37:55 GMT  
-		Size: 49.9 MB (49933463 bytes)  
+	-	`sha256:363cfded2ef3921ef972c85cafc77cf16cdcfddfd49782ad4540cb73fd5e57a2`  
+		Last Modified: Mon, 30 Apr 2018 23:41:06 GMT  
+		Size: 51.4 MB (51446854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdecaf83a2dc043ec9b4a68daabc132d1a90ff3fbf01c1a064587d30491a42c`  
-		Last Modified: Thu, 15 Mar 2018 04:39:19 GMT  
-		Size: 32.1 MB (32148326 bytes)  
+	-	`sha256:6b7a2a3cbb8c886cf7c35daf23d56278fc9499b3b84427b815e340c6887de68a`  
+		Last Modified: Tue, 01 May 2018 04:26:53 GMT  
+		Size: 30.6 MB (30605699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02dbc95a6b63d5ad91d2bfb3368793d17b23a4ec6f7fa4bfb22365afd243f38`  
-		Last Modified: Thu, 15 Mar 2018 04:38:40 GMT  
+	-	`sha256:8bcd199936fb38824d9edb1fe626cd6602c09b30bea28174aea5bef68daa118e`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
 		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09cccd7a322e3a6a5af36ddeb1f4ff18b5104fef568d75f2ca66694d9554b06c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:38 GMT  
-		Size: 225.0 B  
+	-	`sha256:896aa3393399d42c7b2513ef0a598903572e2881f613996c6b250a420ab18248`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ba11b1e2be0d06bc01dffc5a2d86b55d465b7f7d3956e16eaa93412a8fc71a`  
-		Last Modified: Thu, 15 Mar 2018 04:39:48 GMT  
-		Size: 44.2 MB (44199411 bytes)  
+	-	`sha256:92024a1019d1ee147846532d332bed467cccac21fbb32e68d24a858c64468d9e`  
+		Last Modified: Tue, 01 May 2018 04:27:04 GMT  
+		Size: 44.2 MB (44200595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b440a772bc9a8f40ae2ff52bcdfb2428df53e7c2c2f336488375db04de97b5c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:39 GMT  
-		Size: 791.2 KB (791225 bytes)  
+	-	`sha256:9dd8d64ceeefcdf37e5c25337d971162dc1d26f34b52aea871d3f04801f302ea`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
+		Size: 835.1 KB (835089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de2b847be09b30de338b3243f90b9fa8f31e42017fc6d539853e3be0d49a180`  
-		Last Modified: Thu, 15 Mar 2018 04:40:53 GMT  
-		Size: 130.6 MB (130572832 bytes)  
+	-	`sha256:e49e44792201bb6b813560c52bb75d2569453ee19650eca1c9970cc3b17a8035`  
+		Last Modified: Tue, 01 May 2018 04:27:54 GMT  
+		Size: 130.8 MB (130755608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69732b3768e76c4789f520935246c8c953f66e99c79c434b227a46575376571a`  
-		Last Modified: Thu, 15 Mar 2018 04:38:37 GMT  
-		Size: 195.0 B  
+	-	`sha256:4126f23fd7e56bb39f16154e0a83877ba1583879e414f01dbe74c40d586a1d27`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a754abaefbe8acfc7ceca96d5d5b9a80047f8119e2de54f9007399213a69e367`  
-		Last Modified: Thu, 15 Mar 2018 04:42:19 GMT  
-		Size: 69.0 MB (69047774 bytes)  
+	-	`sha256:cddf5f34b92669ab45562b8a143a62ff1852daf1351621e1d1ea56fbb3fa806b`  
+		Last Modified: Tue, 01 May 2018 04:28:44 GMT  
+		Size: 69.0 MB (69043117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5710ec9c4b66bb7a85a8a74ccb2696f3626646a8d7955632ecc9926d2096f33e`  
-		Last Modified: Thu, 15 Mar 2018 04:46:47 GMT  
-		Size: 236.8 MB (236822940 bytes)  
+	-	`sha256:a60973845366075406dcfeb715d4dc8b438b8ba7d157c72822e0d618e03ca8cb`  
+		Last Modified: Tue, 01 May 2018 04:32:31 GMT  
+		Size: 230.9 MB (230940313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:0d042f08a158542d39514dfd7ec77beae24a28ed28ccd620eeac56caae2c75ae
+$ docker pull ros@sha256:0d8a8945ce6fb3828b8f65f8aa894c2010a6c8fec8fb4ea91260fe01c73f7939
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3258,122 +3258,122 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 ### `ros:kinetic-perception-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:466d7f9f5e309566ff17407998f8404f1482144e167690cdcf7c8c4ddddb3748
+$ docker pull ros@sha256:0ef4dd6ebd43a736cef4d9ccd3af0c0dede98d17c857d2e2f296a3ac25cda0c5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **669.9 MB (669927644 bytes)**  
+-	Total Size: **638.9 MB (638877793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1338f02c90d095153818f6429e3eeb44f4e175d7e13a0076659712055b55270f`
+-	Image ID: `sha256:2abe895a522e8a7b2fd45e528f65ffdfd6e46dca6f0f979b016f053f5e4b5ec1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:15:04 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:08:20 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19131715d958a0a46e543c9dc6f4b9ba9485ab32a1a2138537993376418335e6`  
-		Last Modified: Fri, 13 Apr 2018 10:59:42 GMT  
-		Size: 321.9 MB (321904867 bytes)  
+	-	`sha256:3979a12b0fda2321282b7685908c8a70e7c6c23b2ec74747e3643d7a8879e71d`  
+		Last Modified: Tue, 01 May 2018 04:26:15 GMT  
+		Size: 290.8 MB (290829238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-robot`
 
 ```console
-$ docker pull ros@sha256:54bd309818b28f95f2df46f8dccbd0bd848809669209fe048836b667e517b432
+$ docker pull ros@sha256:76faddbbb755e4392dd4081e4115070b3a90a20bd27733b4e32de7bc5c552827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3615,122 +3615,122 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && r
 ### `ros:kinetic-robot` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:b0e6b1bb1124c51942a4902f43f793cdd83157a407e20b6db7f66ccc91cc3e8c
+$ docker pull ros@sha256:4ab543ea35ef8d478988773fe3a0e9a81d5fb101e20977a6130afbf1b1ca1d9c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.9 MB (441886328 bytes)**  
+-	Total Size: **441.9 MB (441920257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:301bf8be7452503b1e4a23cd5ae694e9814ea36ce45c6eda1690bab652d9d06e`
+-	Image ID: `sha256:b0fc39746fa0b336c4e2992ee81f6f735469c1004a4f4b6622a163f2c96d9993`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:57:23 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:56:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a16a69e58e3645757d1e39a6c3267ec5e0d456275030d6722f91a2a3d181bf8`  
-		Last Modified: Fri, 13 Apr 2018 10:56:05 GMT  
-		Size: 93.9 MB (93863551 bytes)  
+	-	`sha256:aa91dd06c82bffc284c967344bb609d266c569c0b79bae67355033f559ec1c54`  
+		Last Modified: Tue, 01 May 2018 04:22:49 GMT  
+		Size: 93.9 MB (93871702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-robot-jessie`
 
 ```console
-$ docker pull ros@sha256:422ea99f7009b3402a5937a372dc764d9b2ff9727888190bd41ca19f6b2476f2
+$ docker pull ros@sha256:cb4a9fcf382230d9ebecbd087894cd0194c27fc434a6334ab29221e44d281e0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3832,98 +3832,98 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && r
 ### `ros:kinetic-robot-jessie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:ec796ffa3b070dd3bcd47d37290e0d0c1776014625720642847698d3454df5a7
+$ docker pull ros@sha256:e6029559ede3a90cf6091f5f0e5d6b176c00e4138e20201db2e9ae07e1a7e441
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **384.1 MB (384077366 bytes)**  
+-	Total Size: **384.3 MB (384270996 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5182ad46d642c9ee5a458231eb940d0a7e121305f29e9e8f5f1093bbd2624e33`
+-	Image ID: `sha256:575980fa886343279bcabb46ec3e135f388fc7cbd7dcb8ff26793a0bf8bbf6cb`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:24:26 GMT
-ADD file:bcd41493879aaeeecb9c960b91c9954b1e0229e91b7a070cb6b2dfdadc8c52b8 in / 
-# Wed, 14 Mar 2018 17:24:27 GMT
+# Mon, 30 Apr 2018 23:21:38 GMT
+ADD file:387c83918422a6546379c4d84818ca3949fcd63aec058da562b08c947a9ed571 in / 
+# Mon, 30 Apr 2018 23:21:40 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:21:28 GMT
+# Tue, 01 May 2018 02:11:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:21:33 GMT
+# Tue, 01 May 2018 02:11:26 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:21:36 GMT
+# Tue, 01 May 2018 02:11:28 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu jessie main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:23:44 GMT
+# Tue, 01 May 2018 02:15:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:23:45 GMT
+# Tue, 01 May 2018 02:15:10 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:23:46 GMT
+# Tue, 01 May 2018 02:15:11 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 03:24:29 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 03:24:30 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 15 Mar 2018 03:34:16 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:34:20 GMT
+# Tue, 01 May 2018 02:24:22 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:24:26 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 03:34:21 GMT
+# Tue, 01 May 2018 02:24:27 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 03:34:22 GMT
+# Tue, 01 May 2018 02:24:28 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:38:09 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:42:08 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:31:11 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:38:40 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:21ccda36f02cc1214a990aa0c90bf9e705d50f6bf9844bffa71a8fbff898df30`  
-		Last Modified: Wed, 14 Mar 2018 17:37:55 GMT  
-		Size: 49.9 MB (49933463 bytes)  
+	-	`sha256:363cfded2ef3921ef972c85cafc77cf16cdcfddfd49782ad4540cb73fd5e57a2`  
+		Last Modified: Mon, 30 Apr 2018 23:41:06 GMT  
+		Size: 51.4 MB (51446854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdecaf83a2dc043ec9b4a68daabc132d1a90ff3fbf01c1a064587d30491a42c`  
-		Last Modified: Thu, 15 Mar 2018 04:39:19 GMT  
-		Size: 32.1 MB (32148326 bytes)  
+	-	`sha256:6b7a2a3cbb8c886cf7c35daf23d56278fc9499b3b84427b815e340c6887de68a`  
+		Last Modified: Tue, 01 May 2018 04:26:53 GMT  
+		Size: 30.6 MB (30605699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02dbc95a6b63d5ad91d2bfb3368793d17b23a4ec6f7fa4bfb22365afd243f38`  
-		Last Modified: Thu, 15 Mar 2018 04:38:40 GMT  
+	-	`sha256:8bcd199936fb38824d9edb1fe626cd6602c09b30bea28174aea5bef68daa118e`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
 		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09cccd7a322e3a6a5af36ddeb1f4ff18b5104fef568d75f2ca66694d9554b06c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:38 GMT  
-		Size: 225.0 B  
+	-	`sha256:896aa3393399d42c7b2513ef0a598903572e2881f613996c6b250a420ab18248`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ba11b1e2be0d06bc01dffc5a2d86b55d465b7f7d3956e16eaa93412a8fc71a`  
-		Last Modified: Thu, 15 Mar 2018 04:39:48 GMT  
-		Size: 44.2 MB (44199411 bytes)  
+	-	`sha256:92024a1019d1ee147846532d332bed467cccac21fbb32e68d24a858c64468d9e`  
+		Last Modified: Tue, 01 May 2018 04:27:04 GMT  
+		Size: 44.2 MB (44200595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b440a772bc9a8f40ae2ff52bcdfb2428df53e7c2c2f336488375db04de97b5c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:39 GMT  
-		Size: 791.2 KB (791225 bytes)  
+	-	`sha256:9dd8d64ceeefcdf37e5c25337d971162dc1d26f34b52aea871d3f04801f302ea`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
+		Size: 835.1 KB (835089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de2b847be09b30de338b3243f90b9fa8f31e42017fc6d539853e3be0d49a180`  
-		Last Modified: Thu, 15 Mar 2018 04:40:53 GMT  
-		Size: 130.6 MB (130572832 bytes)  
+	-	`sha256:e49e44792201bb6b813560c52bb75d2569453ee19650eca1c9970cc3b17a8035`  
+		Last Modified: Tue, 01 May 2018 04:27:54 GMT  
+		Size: 130.8 MB (130755608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69732b3768e76c4789f520935246c8c953f66e99c79c434b227a46575376571a`  
-		Last Modified: Thu, 15 Mar 2018 04:38:37 GMT  
-		Size: 195.0 B  
+	-	`sha256:4126f23fd7e56bb39f16154e0a83877ba1583879e414f01dbe74c40d586a1d27`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a754abaefbe8acfc7ceca96d5d5b9a80047f8119e2de54f9007399213a69e367`  
-		Last Modified: Thu, 15 Mar 2018 04:42:19 GMT  
-		Size: 69.0 MB (69047774 bytes)  
+	-	`sha256:cddf5f34b92669ab45562b8a143a62ff1852daf1351621e1d1ea56fbb3fa806b`  
+		Last Modified: Tue, 01 May 2018 04:28:44 GMT  
+		Size: 69.0 MB (69043117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9357d27c810763606254a2d8ac965daf1286b6932bbb7309b0fd04753b7f0cfc`  
-		Last Modified: Thu, 15 Mar 2018 04:43:35 GMT  
-		Size: 57.4 MB (57382494 bytes)  
+	-	`sha256:ddfde1469dea58d63f670ef36e63b83b5974e5d0b5d51a449962da364d32a33a`  
+		Last Modified: Tue, 01 May 2018 04:29:34 GMT  
+		Size: 57.4 MB (57382196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:54bd309818b28f95f2df46f8dccbd0bd848809669209fe048836b667e517b432
+$ docker pull ros@sha256:76faddbbb755e4392dd4081e4115070b3a90a20bd27733b4e32de7bc5c552827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4165,122 +4165,122 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && r
 ### `ros:kinetic-robot-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:b0e6b1bb1124c51942a4902f43f793cdd83157a407e20b6db7f66ccc91cc3e8c
+$ docker pull ros@sha256:4ab543ea35ef8d478988773fe3a0e9a81d5fb101e20977a6130afbf1b1ca1d9c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.9 MB (441886328 bytes)**  
+-	Total Size: **441.9 MB (441920257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:301bf8be7452503b1e4a23cd5ae694e9814ea36ce45c6eda1690bab652d9d06e`
+-	Image ID: `sha256:b0fc39746fa0b336c4e2992ee81f6f735469c1004a4f4b6622a163f2c96d9993`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:57:23 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:56:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a16a69e58e3645757d1e39a6c3267ec5e0d456275030d6722f91a2a3d181bf8`  
-		Last Modified: Fri, 13 Apr 2018 10:56:05 GMT  
-		Size: 93.9 MB (93863551 bytes)  
+	-	`sha256:aa91dd06c82bffc284c967344bb609d266c569c0b79bae67355033f559ec1c54`  
+		Last Modified: Tue, 01 May 2018 04:22:49 GMT  
+		Size: 93.9 MB (93871702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-base`
 
 ```console
-$ docker pull ros@sha256:65ce0247296f84eee1920386ca4a41ac464d4e293a2fd1781e01013985c0ec31
+$ docker pull ros@sha256:3ca1c10c802b3bb54b068ece8a4999b6388aefd7e21c970574ae6b0e9939ebfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4510,116 +4510,116 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ### `ros:kinetic-ros-base` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:d7b357ee4985436cdfdb417c1c9262e7808c89c3b48d9f64d2b02fe66a1dc16d
+$ docker pull ros@sha256:89c95b9f4fac10565324dc86c8386555a757b1cd15cc3c33a345b946b3592dc9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.0 MB (348022777 bytes)**  
+-	Total Size: **348.0 MB (348048555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93e4c6f33f6f65acfb680ccb1f2a430c1a02d8367592770c7729c3e18a44438d`
+-	Image ID: `sha256:ab8e7598dc15d5e6be4962d16faeeb44bb7d27153a3744202cf92b978b8bf1b1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-base-jessie`
 
 ```console
-$ docker pull ros@sha256:15c2daceee79ce284577943e2d0a50deb91834340380901010895c3c644deda3
+$ docker pull ros@sha256:4f54b03cd153a9380b6595058c5bee43e8873a2b7bcdb74258de5a9bc7c5c76c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4715,92 +4715,92 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ### `ros:kinetic-ros-base-jessie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:bdab5bb1090feabbb52b09a17c46c6ee4c4012c1d9b3703846c2bc5576da211f
+$ docker pull ros@sha256:0a49e8a8c3129024da38559549dac3e7472107f86584de45938d808ac834d59c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **326.7 MB (326694872 bytes)**  
+-	Total Size: **326.9 MB (326888800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:172c19b7b6bce803966cfe916d98121bab487fdd32436e2a863ba6b9d2fdccd4`
+-	Image ID: `sha256:d53b351cdcd5fe0680ac5c28fc53f09ef64b6d95e7ab5bd244f7f10f83d3d313`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:24:26 GMT
-ADD file:bcd41493879aaeeecb9c960b91c9954b1e0229e91b7a070cb6b2dfdadc8c52b8 in / 
-# Wed, 14 Mar 2018 17:24:27 GMT
+# Mon, 30 Apr 2018 23:21:38 GMT
+ADD file:387c83918422a6546379c4d84818ca3949fcd63aec058da562b08c947a9ed571 in / 
+# Mon, 30 Apr 2018 23:21:40 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:21:28 GMT
+# Tue, 01 May 2018 02:11:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:21:33 GMT
+# Tue, 01 May 2018 02:11:26 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:21:36 GMT
+# Tue, 01 May 2018 02:11:28 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu jessie main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:23:44 GMT
+# Tue, 01 May 2018 02:15:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:23:45 GMT
+# Tue, 01 May 2018 02:15:10 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:23:46 GMT
+# Tue, 01 May 2018 02:15:11 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 03:24:29 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 03:24:30 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 15 Mar 2018 03:34:16 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:34:20 GMT
+# Tue, 01 May 2018 02:24:22 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:24:26 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 03:34:21 GMT
+# Tue, 01 May 2018 02:24:27 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 03:34:22 GMT
+# Tue, 01 May 2018 02:24:28 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:38:09 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:31:11 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:21ccda36f02cc1214a990aa0c90bf9e705d50f6bf9844bffa71a8fbff898df30`  
-		Last Modified: Wed, 14 Mar 2018 17:37:55 GMT  
-		Size: 49.9 MB (49933463 bytes)  
+	-	`sha256:363cfded2ef3921ef972c85cafc77cf16cdcfddfd49782ad4540cb73fd5e57a2`  
+		Last Modified: Mon, 30 Apr 2018 23:41:06 GMT  
+		Size: 51.4 MB (51446854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdecaf83a2dc043ec9b4a68daabc132d1a90ff3fbf01c1a064587d30491a42c`  
-		Last Modified: Thu, 15 Mar 2018 04:39:19 GMT  
-		Size: 32.1 MB (32148326 bytes)  
+	-	`sha256:6b7a2a3cbb8c886cf7c35daf23d56278fc9499b3b84427b815e340c6887de68a`  
+		Last Modified: Tue, 01 May 2018 04:26:53 GMT  
+		Size: 30.6 MB (30605699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02dbc95a6b63d5ad91d2bfb3368793d17b23a4ec6f7fa4bfb22365afd243f38`  
-		Last Modified: Thu, 15 Mar 2018 04:38:40 GMT  
+	-	`sha256:8bcd199936fb38824d9edb1fe626cd6602c09b30bea28174aea5bef68daa118e`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
 		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09cccd7a322e3a6a5af36ddeb1f4ff18b5104fef568d75f2ca66694d9554b06c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:38 GMT  
-		Size: 225.0 B  
+	-	`sha256:896aa3393399d42c7b2513ef0a598903572e2881f613996c6b250a420ab18248`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ba11b1e2be0d06bc01dffc5a2d86b55d465b7f7d3956e16eaa93412a8fc71a`  
-		Last Modified: Thu, 15 Mar 2018 04:39:48 GMT  
-		Size: 44.2 MB (44199411 bytes)  
+	-	`sha256:92024a1019d1ee147846532d332bed467cccac21fbb32e68d24a858c64468d9e`  
+		Last Modified: Tue, 01 May 2018 04:27:04 GMT  
+		Size: 44.2 MB (44200595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b440a772bc9a8f40ae2ff52bcdfb2428df53e7c2c2f336488375db04de97b5c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:39 GMT  
-		Size: 791.2 KB (791225 bytes)  
+	-	`sha256:9dd8d64ceeefcdf37e5c25337d971162dc1d26f34b52aea871d3f04801f302ea`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
+		Size: 835.1 KB (835089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de2b847be09b30de338b3243f90b9fa8f31e42017fc6d539853e3be0d49a180`  
-		Last Modified: Thu, 15 Mar 2018 04:40:53 GMT  
-		Size: 130.6 MB (130572832 bytes)  
+	-	`sha256:e49e44792201bb6b813560c52bb75d2569453ee19650eca1c9970cc3b17a8035`  
+		Last Modified: Tue, 01 May 2018 04:27:54 GMT  
+		Size: 130.8 MB (130755608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69732b3768e76c4789f520935246c8c953f66e99c79c434b227a46575376571a`  
-		Last Modified: Thu, 15 Mar 2018 04:38:37 GMT  
-		Size: 195.0 B  
+	-	`sha256:4126f23fd7e56bb39f16154e0a83877ba1583879e414f01dbe74c40d586a1d27`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a754abaefbe8acfc7ceca96d5d5b9a80047f8119e2de54f9007399213a69e367`  
-		Last Modified: Thu, 15 Mar 2018 04:42:19 GMT  
-		Size: 69.0 MB (69047774 bytes)  
+	-	`sha256:cddf5f34b92669ab45562b8a143a62ff1852daf1351621e1d1ea56fbb3fa806b`  
+		Last Modified: Tue, 01 May 2018 04:28:44 GMT  
+		Size: 69.0 MB (69043117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-base-xenial`
 
 ```console
-$ docker pull ros@sha256:65ce0247296f84eee1920386ca4a41ac464d4e293a2fd1781e01013985c0ec31
+$ docker pull ros@sha256:3ca1c10c802b3bb54b068ece8a4999b6388aefd7e21c970574ae6b0e9939ebfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5030,116 +5030,116 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ### `ros:kinetic-ros-base-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:d7b357ee4985436cdfdb417c1c9262e7808c89c3b48d9f64d2b02fe66a1dc16d
+$ docker pull ros@sha256:89c95b9f4fac10565324dc86c8386555a757b1cd15cc3c33a345b946b3592dc9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.0 MB (348022777 bytes)**  
+-	Total Size: **348.0 MB (348048555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93e4c6f33f6f65acfb680ccb1f2a430c1a02d8367592770c7729c3e18a44438d`
+-	Image ID: `sha256:ab8e7598dc15d5e6be4962d16faeeb44bb7d27153a3744202cf92b978b8bf1b1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-core`
 
 ```console
-$ docker pull ros@sha256:20dee394b7ab22766152cd0a1fd014de19c48645621349abc2708d6517ae9dec
+$ docker pull ros@sha256:0a04c879390c70f5278c5576a4e56b8960d49f842e44b4759288f869d82e8f2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5357,110 +5357,110 @@ CMD ["bash"]
 ### `ros:kinetic-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:3df380c9e80f7656fea2d2ec76eb4fe55b93b8e9c93e14a240109b29c6bcbb31
+$ docker pull ros@sha256:0652ecdf8815c70f36813883b78db8cbaf47231575736f7c9bf93b0754b342b6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.5 MB (271477808 bytes)**  
+-	Total Size: **271.5 MB (271503637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f7e954c9049efb953817a470a062f60b3f3ad98b3c808bc6b5ef35ffbfcdb32`
+-	Image ID: `sha256:e4480a36445fbfe35a16b5f976d5fc00c07542b0890ada0554e2304e0f96492a`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-core-jessie`
 
 ```console
-$ docker pull ros@sha256:fcda6767f7b6340f10fafb98f3b0990526de96a4e99029ea63edde2b9536b460
+$ docker pull ros@sha256:6612ceea4d6901ff03dbae82a90e0ab9860f01a6e2953657ed8e53766fb35668
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5550,86 +5550,86 @@ CMD ["bash"]
 ### `ros:kinetic-ros-core-jessie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:fbae1f9f2c3dda06a9735aa69e9c3b205716b7b9e0a9ecbe15df97ef825668a6
+$ docker pull ros@sha256:654c526bac7f2cf6c5dd14b04d0b7794260864aaa5a9b30bf2f7ec229ee7fa09
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.6 MB (257647098 bytes)**  
+-	Total Size: **257.8 MB (257845683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8fe4b9af55508e6f008add79357448230aab875a490f145627f87a382527687`
+-	Image ID: `sha256:0c1f0bd372d819b12ab182fc642e444bdf014c88ada5218dde83167dd5fc5d2f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:24:26 GMT
-ADD file:bcd41493879aaeeecb9c960b91c9954b1e0229e91b7a070cb6b2dfdadc8c52b8 in / 
-# Wed, 14 Mar 2018 17:24:27 GMT
+# Mon, 30 Apr 2018 23:21:38 GMT
+ADD file:387c83918422a6546379c4d84818ca3949fcd63aec058da562b08c947a9ed571 in / 
+# Mon, 30 Apr 2018 23:21:40 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:21:28 GMT
+# Tue, 01 May 2018 02:11:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:21:33 GMT
+# Tue, 01 May 2018 02:11:26 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:21:36 GMT
+# Tue, 01 May 2018 02:11:28 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu jessie main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:23:44 GMT
+# Tue, 01 May 2018 02:15:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:23:45 GMT
+# Tue, 01 May 2018 02:15:10 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:23:46 GMT
+# Tue, 01 May 2018 02:15:11 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 03:24:29 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 03:24:30 GMT
+# Tue, 01 May 2018 02:15:57 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 15 Mar 2018 03:34:16 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:34:20 GMT
+# Tue, 01 May 2018 02:24:22 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:24:26 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 03:34:21 GMT
+# Tue, 01 May 2018 02:24:27 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 03:34:22 GMT
+# Tue, 01 May 2018 02:24:28 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:21ccda36f02cc1214a990aa0c90bf9e705d50f6bf9844bffa71a8fbff898df30`  
-		Last Modified: Wed, 14 Mar 2018 17:37:55 GMT  
-		Size: 49.9 MB (49933463 bytes)  
+	-	`sha256:363cfded2ef3921ef972c85cafc77cf16cdcfddfd49782ad4540cb73fd5e57a2`  
+		Last Modified: Mon, 30 Apr 2018 23:41:06 GMT  
+		Size: 51.4 MB (51446854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdecaf83a2dc043ec9b4a68daabc132d1a90ff3fbf01c1a064587d30491a42c`  
-		Last Modified: Thu, 15 Mar 2018 04:39:19 GMT  
-		Size: 32.1 MB (32148326 bytes)  
+	-	`sha256:6b7a2a3cbb8c886cf7c35daf23d56278fc9499b3b84427b815e340c6887de68a`  
+		Last Modified: Tue, 01 May 2018 04:26:53 GMT  
+		Size: 30.6 MB (30605699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02dbc95a6b63d5ad91d2bfb3368793d17b23a4ec6f7fa4bfb22365afd243f38`  
-		Last Modified: Thu, 15 Mar 2018 04:38:40 GMT  
+	-	`sha256:8bcd199936fb38824d9edb1fe626cd6602c09b30bea28174aea5bef68daa118e`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
 		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09cccd7a322e3a6a5af36ddeb1f4ff18b5104fef568d75f2ca66694d9554b06c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:38 GMT  
-		Size: 225.0 B  
+	-	`sha256:896aa3393399d42c7b2513ef0a598903572e2881f613996c6b250a420ab18248`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ba11b1e2be0d06bc01dffc5a2d86b55d465b7f7d3956e16eaa93412a8fc71a`  
-		Last Modified: Thu, 15 Mar 2018 04:39:48 GMT  
-		Size: 44.2 MB (44199411 bytes)  
+	-	`sha256:92024a1019d1ee147846532d332bed467cccac21fbb32e68d24a858c64468d9e`  
+		Last Modified: Tue, 01 May 2018 04:27:04 GMT  
+		Size: 44.2 MB (44200595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b440a772bc9a8f40ae2ff52bcdfb2428df53e7c2c2f336488375db04de97b5c`  
-		Last Modified: Thu, 15 Mar 2018 04:38:39 GMT  
-		Size: 791.2 KB (791225 bytes)  
+	-	`sha256:9dd8d64ceeefcdf37e5c25337d971162dc1d26f34b52aea871d3f04801f302ea`  
+		Last Modified: Tue, 01 May 2018 04:26:35 GMT  
+		Size: 835.1 KB (835089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de2b847be09b30de338b3243f90b9fa8f31e42017fc6d539853e3be0d49a180`  
-		Last Modified: Thu, 15 Mar 2018 04:40:53 GMT  
-		Size: 130.6 MB (130572832 bytes)  
+	-	`sha256:e49e44792201bb6b813560c52bb75d2569453ee19650eca1c9970cc3b17a8035`  
+		Last Modified: Tue, 01 May 2018 04:27:54 GMT  
+		Size: 130.8 MB (130755608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69732b3768e76c4789f520935246c8c953f66e99c79c434b227a46575376571a`  
-		Last Modified: Thu, 15 Mar 2018 04:38:37 GMT  
-		Size: 195.0 B  
+	-	`sha256:4126f23fd7e56bb39f16154e0a83877ba1583879e414f01dbe74c40d586a1d27`  
+		Last Modified: Tue, 01 May 2018 04:26:33 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-core-xenial`
 
 ```console
-$ docker pull ros@sha256:20dee394b7ab22766152cd0a1fd014de19c48645621349abc2708d6517ae9dec
+$ docker pull ros@sha256:0a04c879390c70f5278c5576a4e56b8960d49f842e44b4759288f869d82e8f2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5847,110 +5847,110 @@ CMD ["bash"]
 ### `ros:kinetic-ros-core-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:3df380c9e80f7656fea2d2ec76eb4fe55b93b8e9c93e14a240109b29c6bcbb31
+$ docker pull ros@sha256:0652ecdf8815c70f36813883b78db8cbaf47231575736f7c9bf93b0754b342b6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.5 MB (271477808 bytes)**  
+-	Total Size: **271.5 MB (271503637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f7e954c9049efb953817a470a062f60b3f3ad98b3c808bc6b5ef35ffbfcdb32`
+-	Image ID: `sha256:e4480a36445fbfe35a16b5f976d5fc00c07542b0890ada0554e2304e0f96492a`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:latest`
 
 ```console
-$ docker pull ros@sha256:65ce0247296f84eee1920386ca4a41ac464d4e293a2fd1781e01013985c0ec31
+$ docker pull ros@sha256:3ca1c10c802b3bb54b068ece8a4999b6388aefd7e21c970574ae6b0e9939ebfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6180,116 +6180,116 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     &
 ### `ros:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:d7b357ee4985436cdfdb417c1c9262e7808c89c3b48d9f64d2b02fe66a1dc16d
+$ docker pull ros@sha256:89c95b9f4fac10565324dc86c8386555a757b1cd15cc3c33a345b946b3592dc9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.0 MB (348022777 bytes)**  
+-	Total Size: **348.0 MB (348048555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93e4c6f33f6f65acfb680ccb1f2a430c1a02d8367592770c7729c3e18a44438d`
+-	Image ID: `sha256:ab8e7598dc15d5e6be4962d16faeeb44bb7d27153a3744202cf92b978b8bf1b1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 09:32:15 GMT
+# Tue, 01 May 2018 01:24:27 GMT
 ENV ROS_DISTRO=kinetic
-# Fri, 13 Apr 2018 09:44:01 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:44:13 GMT
+# Tue, 01 May 2018 01:36:52 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:37:08 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 09:44:14 GMT
+# Tue, 01 May 2018 01:37:16 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 09:44:15 GMT
+# Tue, 01 May 2018 01:37:33 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 09:50:11 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 01:48:51 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9db73190ac261a6852e117758f438f954f83acb53b538404a946e6b6a3ba9d0`  
-		Last Modified: Fri, 13 Apr 2018 10:52:23 GMT  
-		Size: 174.2 MB (174163521 bytes)  
+	-	`sha256:fdf20cb73de898c810a3ce03d3d4ac43ca405c527b42e21244058ec4bdbf204b`  
+		Last Modified: Tue, 01 May 2018 04:19:47 GMT  
+		Size: 174.2 MB (174167620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe090abb32faca8fa586a1855f8878352b30a20ff3b5563c87713d15ae61190`  
-		Last Modified: Fri, 13 Apr 2018 10:50:53 GMT  
-		Size: 194.0 B  
+	-	`sha256:ede09c9013f1c95beb0aee3d89bc517d63df382e40d6e2e506b200c897ebc627`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1c196da31060b08066a751fee97929120caae3c72c731cb9f7cd99404f180e`  
-		Last Modified: Fri, 13 Apr 2018 10:53:45 GMT  
-		Size: 76.5 MB (76544969 bytes)  
+	-	`sha256:31090de9e5f5a2759e0e667f1d0e72efbb5354d84bd5084b225053079926d2d7`  
+		Last Modified: Tue, 01 May 2018 04:20:58 GMT  
+		Size: 76.5 MB (76544918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar`
 
 ```console
-$ docker pull ros@sha256:d60c5b225b274a6a5a1515865499fb9edb1d7eaf53bda6fd3127052a472e70b9
+$ docker pull ros@sha256:f8080fa9f86bf9f41145a9cd77bd96fd42a88adf106fa68c8d053720ff7a8d66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6519,116 +6519,116 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ### `ros:lunar` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:299ac4d12ef2a39253cc616a4133778ff9bdadfb0382a761bf1eedd8981550e2
+$ docker pull ros@sha256:0f7b9fee47153280362bb4ace6bd74e1f1665c93dca0b781f3e23c455898a742
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.9 MB (347935625 bytes)**  
+-	Total Size: **348.0 MB (347963461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c6d023982ed6c90a9ac306011df077256405692ad0a680223467fad32d17ad`
+-	Image ID: `sha256:911262005503e580de950c25cbe41b95752296011e4448d98d3bed828f5bd96c`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-perception`
 
 ```console
-$ docker pull ros@sha256:38a12be66fc54cf469a2c1a2a95e72372df035925e78c5959d536b2580a1e6f2
+$ docker pull ros@sha256:eb0bc35d8f700135d3ad8e67f063d8a77c184cb7c4128bbe61e3596c4b6659b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6870,122 +6870,122 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ### `ros:lunar-perception` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:549e912402a8f482df019895db95899d94f9d1c49e75885bee902cb195c2c848
+$ docker pull ros@sha256:d0a57292bbb93ea1ded113e80c55fec11d991383819dca0772ed7467e2d4395e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637512658 bytes)**  
+-	Total Size: **637.6 MB (637554752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43dab6550481f82a508c01aaf85769ee92e54473c34dafc0d59ef1a8001228d7`
+-	Image ID: `sha256:9b0072f112be5eb51fe251af0608804a2640c4c7919e4ca710e747c14f90435a`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:49:52 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:29:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a34f21b072de81109194a2126d218983f6746d3800ef3cdfb89e7a439d503d`  
-		Last Modified: Fri, 13 Apr 2018 11:11:40 GMT  
-		Size: 289.6 MB (289577033 bytes)  
+	-	`sha256:d6ef85a414da412179c1de9ee6598df88056712c18c9233e1271aaebc4da5135`  
+		Last Modified: Tue, 01 May 2018 04:40:36 GMT  
+		Size: 289.6 MB (289591291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-perception-stretch`
 
 ```console
-$ docker pull ros@sha256:aa70678e2087426bbc2a1c701eb547ad3955d482dabff58d6f854ab547f010a5
+$ docker pull ros@sha256:36c8e84aea138c2c67b64b4ee3ccc5226c92bd9c9c80716faf3704e66f391aae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7087,98 +7087,98 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ### `ros:lunar-perception-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:aee5037d109f3a84cadb1e6c6cc0c01367f7853e628dec0d7d8844275a4d3f7b
+$ docker pull ros@sha256:46bd33abe2f4717e1fba6ba648cbfb6b49b3b46c709288228fdff9b017c30014
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **808.9 MB (808940333 bytes)**  
+-	Total Size: **813.6 MB (813636567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c422292a0c11b7137d3eee1880516e92f8ca50861f7da702392b3555692920a`
+-	Image ID: `sha256:e8b38e413db4441f342f3285c5722bb42480620ee78caebdbfba48919b6f5d72`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:30:57 GMT
-ADD file:2ebfda145008a73d7d0f2dc29946bfc3ad65048b3a3f0ca0283263e413b692d4 in / 
-# Wed, 14 Mar 2018 17:30:58 GMT
+# Mon, 30 Apr 2018 23:31:58 GMT
+ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
+# Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:57:07 GMT
+# Tue, 01 May 2018 03:30:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:57:15 GMT
+# Tue, 01 May 2018 03:30:39 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:57:18 GMT
+# Tue, 01 May 2018 03:30:42 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu stretch main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:59:13 GMT
+# Tue, 01 May 2018 03:35:20 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:59:15 GMT
+# Tue, 01 May 2018 03:35:21 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:59:16 GMT
+# Tue, 01 May 2018 03:35:22 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 04:00:08 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 04:00:09 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 ENV ROS_DISTRO=lunar
-# Thu, 15 Mar 2018 04:08:48 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:08:50 GMT
+# Tue, 01 May 2018 03:46:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:46:13 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 04:08:51 GMT
+# Tue, 01 May 2018 03:46:13 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 04:08:52 GMT
+# Tue, 01 May 2018 03:46:14 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 04:13:31 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:37:23 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:51:28 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 04:16:59 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:3476b6ec1aa77d47beaf22adc259097130bcc9eec853636fb1dcf4f5c2925a56`  
-		Last Modified: Wed, 14 Mar 2018 17:45:20 GMT  
-		Size: 42.9 MB (42907825 bytes)  
+	-	`sha256:142bf25d8d1b3ebc9dfbedd586e70a011594690acf48b2695bfce01e3a2cf0d5`  
+		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
+		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34b20ac93a23591cd708287109b38e6d3cfa4df28b7bc7f2d76ced9ebd071061`  
-		Last Modified: Thu, 15 Mar 2018 04:47:36 GMT  
-		Size: 6.8 MB (6794160 bytes)  
+	-	`sha256:994bacc3e1c11e50065156c511f0c11e001707e55b61e361b8dc44d236c76f24`  
+		Last Modified: Tue, 01 May 2018 04:41:15 GMT  
+		Size: 6.4 MB (6427112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937289d9f2908bdc0632e69e9656a99838c8d74800329ea978a3141e026e857f`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:663899231a010cf1e857473d7203c7e5f109b38379d2d822c31dba98a7f8af10`  
+		Last Modified: Tue, 01 May 2018 04:41:09 GMT  
+		Size: 1.4 KB (1377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f23cc8c9690e8a6fce553c81dda89cbb75cef86377245c1353396c3ebfe5de`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:6d68d9781734de3f7c1ce451752978a14ba285ad3c63d5ab58034a2008cd25ef`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6509781662d18c90e893dbae6c92b0c741d25e67e850edcfbcd16e192c34`  
-		Last Modified: Thu, 15 Mar 2018 04:48:31 GMT  
-		Size: 61.9 MB (61941449 bytes)  
+	-	`sha256:678cb4b8d2f95bf400236eedd95783c53081503a2ed2b39f51e57a6062cd18c7`  
+		Last Modified: Tue, 01 May 2018 04:42:23 GMT  
+		Size: 61.9 MB (61938600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bfb330d3be283162c5e8a7b4b4058a93e2693bd0328a6013da35fadcb9e1983`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 791.2 KB (791228 bytes)  
+	-	`sha256:0225d679802c170200a58607e1e5a805065659ce28bdec6f9cc91f1c5f6ac461`  
+		Last Modified: Tue, 01 May 2018 04:41:08 GMT  
+		Size: 835.1 KB (835084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37eec5bcf4b898d4f3d46f7ddcb29e8fc7ebb29f8b67fdbfcb6a34656213410`  
-		Last Modified: Thu, 15 Mar 2018 04:50:19 GMT  
-		Size: 206.8 MB (206804765 bytes)  
+	-	`sha256:f8018c896d8c469869af751ab6dedae7d929c8c1eecd50bd607c44492245c688`  
+		Last Modified: Tue, 01 May 2018 04:44:18 GMT  
+		Size: 206.8 MB (206795100 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afdafe432be54c7abcb6d38871e0078cabf42e6bd288741bb263b1edf9958ecc`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:ef4f80d568803a6e955c93890cfbb1629933a150a5d0a54e78f081bf2731b724`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bbd0df2dae9d9bb4b76963ccc5573cd94d60b1a02a4cb375dc2e90053f60c8d`  
-		Last Modified: Thu, 15 Mar 2018 04:52:13 GMT  
-		Size: 116.0 MB (116029340 bytes)  
+	-	`sha256:0f59bacdd92efa26460f246475e05ca8c1d323676766477354f6c57571d53fa9`  
+		Last Modified: Tue, 01 May 2018 04:45:14 GMT  
+		Size: 116.0 MB (116022523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3a9938280ed534db5b274c7f886671d7e6c09640247891fd4dd47ab4d6be44e`  
-		Last Modified: Thu, 15 Mar 2018 04:56:24 GMT  
-		Size: 373.7 MB (373669770 bytes)  
+	-	`sha256:f244582c1aa41867d976d5391b8287d6b4dbcb917782000331ad8cb2cdff0290`  
+		Last Modified: Tue, 01 May 2018 04:49:00 GMT  
+		Size: 378.5 MB (378507002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:38a12be66fc54cf469a2c1a2a95e72372df035925e78c5959d536b2580a1e6f2
+$ docker pull ros@sha256:eb0bc35d8f700135d3ad8e67f063d8a77c184cb7c4128bbe61e3596c4b6659b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7420,122 +7420,122 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     &
 ### `ros:lunar-perception-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:549e912402a8f482df019895db95899d94f9d1c49e75885bee902cb195c2c848
+$ docker pull ros@sha256:d0a57292bbb93ea1ded113e80c55fec11d991383819dca0772ed7467e2d4395e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637512658 bytes)**  
+-	Total Size: **637.6 MB (637554752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43dab6550481f82a508c01aaf85769ee92e54473c34dafc0d59ef1a8001228d7`
+-	Image ID: `sha256:9b0072f112be5eb51fe251af0608804a2640c4c7919e4ca710e747c14f90435a`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:49:52 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:29:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a34f21b072de81109194a2126d218983f6746d3800ef3cdfb89e7a439d503d`  
-		Last Modified: Fri, 13 Apr 2018 11:11:40 GMT  
-		Size: 289.6 MB (289577033 bytes)  
+	-	`sha256:d6ef85a414da412179c1de9ee6598df88056712c18c9233e1271aaebc4da5135`  
+		Last Modified: Tue, 01 May 2018 04:40:36 GMT  
+		Size: 289.6 MB (289591291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-robot`
 
 ```console
-$ docker pull ros@sha256:b1af7a4f9ef72c10903fc67cfc391d7e72f8393d4a2514de84e166d3d48baf78
+$ docker pull ros@sha256:69b2e29d5d7ec660c57522300747daea0937dddc050eea2d3317a700b3685241
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7777,122 +7777,122 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ### `ros:lunar-robot` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:74badbf5a5c31e8416291e158dc30abb77be954a0aaa73614161290cdb18905b
+$ docker pull ros@sha256:1406b2505b86dc04d203f950a67786e4ff95ca61a27c93ddcd3f818c53dae411
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.9 MB (441903353 bytes)**  
+-	Total Size: **441.9 MB (441906391 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:044998efbec888e4552df0a5a7502ffe17eb9d0be9409436406572c371f403c0`
+-	Image ID: `sha256:113e9c3ad6de7730a8cb8bf5b2270141d7d11cc32d391002104b0a50f8bcd208`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:37:22 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:12:40 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57d156e93f2c41a56bceae86d1d3c705f1ce0184b78fbda566f8e58b66fc1e0b`  
-		Last Modified: Fri, 13 Apr 2018 11:09:02 GMT  
-		Size: 94.0 MB (93967728 bytes)  
+	-	`sha256:b0e290a4f1bb794592b6e89122c4e277c35382fbe5ac2f9f64e6d3acf783fe03`  
+		Last Modified: Tue, 01 May 2018 04:37:04 GMT  
+		Size: 93.9 MB (93942930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-robot-stretch`
 
 ```console
-$ docker pull ros@sha256:7368196f77cabb3e3432b4ada921df03e0f8d3df0ca5b265ab617244d9525665
+$ docker pull ros@sha256:15c8a7c3b0f5cb7d99d658240d4f34e39aa45fc2f4cde67dfb526b3efb2924ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7994,98 +7994,98 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ### `ros:lunar-robot-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:c892f336d2befb2c08f4c28afc30b47f83b9364eb66fa2bbb01e6422632659f0
+$ docker pull ros@sha256:894f11683856b6ba206078297eb02f05e3fea4ecf06ba96e6dbaa47ac3269cf5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **492.8 MB (492775267 bytes)**  
+-	Total Size: **492.6 MB (492646713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e17200174f2df509c79b09f0f74d941dd10d6a295cd841f654bae242421276e`
+-	Image ID: `sha256:3c4aba1fb2d7e94c22fabf73e1e0a28fcb4b3c11028bb0772b9613fe1afcae30`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:30:57 GMT
-ADD file:2ebfda145008a73d7d0f2dc29946bfc3ad65048b3a3f0ca0283263e413b692d4 in / 
-# Wed, 14 Mar 2018 17:30:58 GMT
+# Mon, 30 Apr 2018 23:31:58 GMT
+ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
+# Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:57:07 GMT
+# Tue, 01 May 2018 03:30:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:57:15 GMT
+# Tue, 01 May 2018 03:30:39 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:57:18 GMT
+# Tue, 01 May 2018 03:30:42 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu stretch main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:59:13 GMT
+# Tue, 01 May 2018 03:35:20 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:59:15 GMT
+# Tue, 01 May 2018 03:35:21 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:59:16 GMT
+# Tue, 01 May 2018 03:35:22 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 04:00:08 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 04:00:09 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 ENV ROS_DISTRO=lunar
-# Thu, 15 Mar 2018 04:08:48 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:08:50 GMT
+# Tue, 01 May 2018 03:46:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:46:13 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 04:08:51 GMT
+# Tue, 01 May 2018 03:46:13 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 04:08:52 GMT
+# Tue, 01 May 2018 03:46:14 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 04:13:31 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:17:58 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:51:28 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:57:30 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:3476b6ec1aa77d47beaf22adc259097130bcc9eec853636fb1dcf4f5c2925a56`  
-		Last Modified: Wed, 14 Mar 2018 17:45:20 GMT  
-		Size: 42.9 MB (42907825 bytes)  
+	-	`sha256:142bf25d8d1b3ebc9dfbedd586e70a011594690acf48b2695bfce01e3a2cf0d5`  
+		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
+		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34b20ac93a23591cd708287109b38e6d3cfa4df28b7bc7f2d76ced9ebd071061`  
-		Last Modified: Thu, 15 Mar 2018 04:47:36 GMT  
-		Size: 6.8 MB (6794160 bytes)  
+	-	`sha256:994bacc3e1c11e50065156c511f0c11e001707e55b61e361b8dc44d236c76f24`  
+		Last Modified: Tue, 01 May 2018 04:41:15 GMT  
+		Size: 6.4 MB (6427112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937289d9f2908bdc0632e69e9656a99838c8d74800329ea978a3141e026e857f`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:663899231a010cf1e857473d7203c7e5f109b38379d2d822c31dba98a7f8af10`  
+		Last Modified: Tue, 01 May 2018 04:41:09 GMT  
+		Size: 1.4 KB (1377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f23cc8c9690e8a6fce553c81dda89cbb75cef86377245c1353396c3ebfe5de`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:6d68d9781734de3f7c1ce451752978a14ba285ad3c63d5ab58034a2008cd25ef`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6509781662d18c90e893dbae6c92b0c741d25e67e850edcfbcd16e192c34`  
-		Last Modified: Thu, 15 Mar 2018 04:48:31 GMT  
-		Size: 61.9 MB (61941449 bytes)  
+	-	`sha256:678cb4b8d2f95bf400236eedd95783c53081503a2ed2b39f51e57a6062cd18c7`  
+		Last Modified: Tue, 01 May 2018 04:42:23 GMT  
+		Size: 61.9 MB (61938600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bfb330d3be283162c5e8a7b4b4058a93e2693bd0328a6013da35fadcb9e1983`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 791.2 KB (791228 bytes)  
+	-	`sha256:0225d679802c170200a58607e1e5a805065659ce28bdec6f9cc91f1c5f6ac461`  
+		Last Modified: Tue, 01 May 2018 04:41:08 GMT  
+		Size: 835.1 KB (835084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37eec5bcf4b898d4f3d46f7ddcb29e8fc7ebb29f8b67fdbfcb6a34656213410`  
-		Last Modified: Thu, 15 Mar 2018 04:50:19 GMT  
-		Size: 206.8 MB (206804765 bytes)  
+	-	`sha256:f8018c896d8c469869af751ab6dedae7d929c8c1eecd50bd607c44492245c688`  
+		Last Modified: Tue, 01 May 2018 04:44:18 GMT  
+		Size: 206.8 MB (206795100 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afdafe432be54c7abcb6d38871e0078cabf42e6bd288741bb263b1edf9958ecc`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:ef4f80d568803a6e955c93890cfbb1629933a150a5d0a54e78f081bf2731b724`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bbd0df2dae9d9bb4b76963ccc5573cd94d60b1a02a4cb375dc2e90053f60c8d`  
-		Last Modified: Thu, 15 Mar 2018 04:52:13 GMT  
-		Size: 116.0 MB (116029340 bytes)  
+	-	`sha256:0f59bacdd92efa26460f246475e05ca8c1d323676766477354f6c57571d53fa9`  
+		Last Modified: Tue, 01 May 2018 04:45:14 GMT  
+		Size: 116.0 MB (116022523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f83199bae6252e098dfc5a4478c11fec91396e0362c952fcac2fe3ee630f232`  
-		Last Modified: Thu, 15 Mar 2018 04:53:16 GMT  
-		Size: 57.5 MB (57504704 bytes)  
+	-	`sha256:05a10db811d6be31f3fd2565254776071b854565d4874d53a986fc12b15f011f`  
+		Last Modified: Tue, 01 May 2018 04:45:50 GMT  
+		Size: 57.5 MB (57517148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-robot-xenial`
 
 ```console
-$ docker pull ros@sha256:b1af7a4f9ef72c10903fc67cfc391d7e72f8393d4a2514de84e166d3d48baf78
+$ docker pull ros@sha256:69b2e29d5d7ec660c57522300747daea0937dddc050eea2d3317a700b3685241
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8327,122 +8327,122 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm 
 ### `ros:lunar-robot-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:74badbf5a5c31e8416291e158dc30abb77be954a0aaa73614161290cdb18905b
+$ docker pull ros@sha256:1406b2505b86dc04d203f950a67786e4ff95ca61a27c93ddcd3f818c53dae411
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.9 MB (441903353 bytes)**  
+-	Total Size: **441.9 MB (441906391 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:044998efbec888e4552df0a5a7502ffe17eb9d0be9409436406572c371f403c0`
+-	Image ID: `sha256:113e9c3ad6de7730a8cb8bf5b2270141d7d11cc32d391002104b0a50f8bcd208`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:37:22 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:12:40 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57d156e93f2c41a56bceae86d1d3c705f1ce0184b78fbda566f8e58b66fc1e0b`  
-		Last Modified: Fri, 13 Apr 2018 11:09:02 GMT  
-		Size: 94.0 MB (93967728 bytes)  
+	-	`sha256:b0e290a4f1bb794592b6e89122c4e277c35382fbe5ac2f9f64e6d3acf783fe03`  
+		Last Modified: Tue, 01 May 2018 04:37:04 GMT  
+		Size: 93.9 MB (93942930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-base`
 
 ```console
-$ docker pull ros@sha256:d60c5b225b274a6a5a1515865499fb9edb1d7eaf53bda6fd3127052a472e70b9
+$ docker pull ros@sha256:f8080fa9f86bf9f41145a9cd77bd96fd42a88adf106fa68c8d053720ff7a8d66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8672,116 +8672,116 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ### `ros:lunar-ros-base` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:299ac4d12ef2a39253cc616a4133778ff9bdadfb0382a761bf1eedd8981550e2
+$ docker pull ros@sha256:0f7b9fee47153280362bb4ace6bd74e1f1665c93dca0b781f3e23c455898a742
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.9 MB (347935625 bytes)**  
+-	Total Size: **348.0 MB (347963461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c6d023982ed6c90a9ac306011df077256405692ad0a680223467fad32d17ad`
+-	Image ID: `sha256:911262005503e580de950c25cbe41b95752296011e4448d98d3bed828f5bd96c`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-base-stretch`
 
 ```console
-$ docker pull ros@sha256:d1b2b4c32f91d3d8a4265ebdacaed382426fb9dcb054d40736dc9d7b63b650f0
+$ docker pull ros@sha256:f4a4592e6693181c1c47307dd1fd35bd6e5174e1eeabc384bfbd1ee854f3e373
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8877,92 +8877,92 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ### `ros:lunar-ros-base-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:0a8f94441debc936b6276ed0a0020e7aa5ef338907223f171f71f73916047fc3
+$ docker pull ros@sha256:4d3c94bfb1fa3bb8b5e046ba2f8a4806561d8a61ef561caf4cf0e5ff1f191996
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.3 MB (435270563 bytes)**  
+-	Total Size: **435.1 MB (435129565 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d9ce02c44855bb4be6791b755eccaa51cd668983bc2e9ae7edc014c24e8f5ec`
+-	Image ID: `sha256:40b95d94a4fe9849a429cc3cc742e4f8cbff789953b9cacda1b0c3cc38391902`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:30:57 GMT
-ADD file:2ebfda145008a73d7d0f2dc29946bfc3ad65048b3a3f0ca0283263e413b692d4 in / 
-# Wed, 14 Mar 2018 17:30:58 GMT
+# Mon, 30 Apr 2018 23:31:58 GMT
+ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
+# Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:57:07 GMT
+# Tue, 01 May 2018 03:30:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:57:15 GMT
+# Tue, 01 May 2018 03:30:39 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:57:18 GMT
+# Tue, 01 May 2018 03:30:42 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu stretch main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:59:13 GMT
+# Tue, 01 May 2018 03:35:20 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:59:15 GMT
+# Tue, 01 May 2018 03:35:21 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:59:16 GMT
+# Tue, 01 May 2018 03:35:22 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 04:00:08 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 04:00:09 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 ENV ROS_DISTRO=lunar
-# Thu, 15 Mar 2018 04:08:48 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:08:50 GMT
+# Tue, 01 May 2018 03:46:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:46:13 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 04:08:51 GMT
+# Tue, 01 May 2018 03:46:13 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 04:08:52 GMT
+# Tue, 01 May 2018 03:46:14 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 04:13:31 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:51:28 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:3476b6ec1aa77d47beaf22adc259097130bcc9eec853636fb1dcf4f5c2925a56`  
-		Last Modified: Wed, 14 Mar 2018 17:45:20 GMT  
-		Size: 42.9 MB (42907825 bytes)  
+	-	`sha256:142bf25d8d1b3ebc9dfbedd586e70a011594690acf48b2695bfce01e3a2cf0d5`  
+		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
+		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34b20ac93a23591cd708287109b38e6d3cfa4df28b7bc7f2d76ced9ebd071061`  
-		Last Modified: Thu, 15 Mar 2018 04:47:36 GMT  
-		Size: 6.8 MB (6794160 bytes)  
+	-	`sha256:994bacc3e1c11e50065156c511f0c11e001707e55b61e361b8dc44d236c76f24`  
+		Last Modified: Tue, 01 May 2018 04:41:15 GMT  
+		Size: 6.4 MB (6427112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937289d9f2908bdc0632e69e9656a99838c8d74800329ea978a3141e026e857f`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:663899231a010cf1e857473d7203c7e5f109b38379d2d822c31dba98a7f8af10`  
+		Last Modified: Tue, 01 May 2018 04:41:09 GMT  
+		Size: 1.4 KB (1377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f23cc8c9690e8a6fce553c81dda89cbb75cef86377245c1353396c3ebfe5de`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:6d68d9781734de3f7c1ce451752978a14ba285ad3c63d5ab58034a2008cd25ef`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6509781662d18c90e893dbae6c92b0c741d25e67e850edcfbcd16e192c34`  
-		Last Modified: Thu, 15 Mar 2018 04:48:31 GMT  
-		Size: 61.9 MB (61941449 bytes)  
+	-	`sha256:678cb4b8d2f95bf400236eedd95783c53081503a2ed2b39f51e57a6062cd18c7`  
+		Last Modified: Tue, 01 May 2018 04:42:23 GMT  
+		Size: 61.9 MB (61938600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bfb330d3be283162c5e8a7b4b4058a93e2693bd0328a6013da35fadcb9e1983`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 791.2 KB (791228 bytes)  
+	-	`sha256:0225d679802c170200a58607e1e5a805065659ce28bdec6f9cc91f1c5f6ac461`  
+		Last Modified: Tue, 01 May 2018 04:41:08 GMT  
+		Size: 835.1 KB (835084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37eec5bcf4b898d4f3d46f7ddcb29e8fc7ebb29f8b67fdbfcb6a34656213410`  
-		Last Modified: Thu, 15 Mar 2018 04:50:19 GMT  
-		Size: 206.8 MB (206804765 bytes)  
+	-	`sha256:f8018c896d8c469869af751ab6dedae7d929c8c1eecd50bd607c44492245c688`  
+		Last Modified: Tue, 01 May 2018 04:44:18 GMT  
+		Size: 206.8 MB (206795100 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afdafe432be54c7abcb6d38871e0078cabf42e6bd288741bb263b1edf9958ecc`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:ef4f80d568803a6e955c93890cfbb1629933a150a5d0a54e78f081bf2731b724`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bbd0df2dae9d9bb4b76963ccc5573cd94d60b1a02a4cb375dc2e90053f60c8d`  
-		Last Modified: Thu, 15 Mar 2018 04:52:13 GMT  
-		Size: 116.0 MB (116029340 bytes)  
+	-	`sha256:0f59bacdd92efa26460f246475e05ca8c1d323676766477354f6c57571d53fa9`  
+		Last Modified: Tue, 01 May 2018 04:45:14 GMT  
+		Size: 116.0 MB (116022523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-base-xenial`
 
 ```console
-$ docker pull ros@sha256:d60c5b225b274a6a5a1515865499fb9edb1d7eaf53bda6fd3127052a472e70b9
+$ docker pull ros@sha256:f8080fa9f86bf9f41145a9cd77bd96fd42a88adf106fa68c8d053720ff7a8d66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9192,116 +9192,116 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && 
 ### `ros:lunar-ros-base-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:299ac4d12ef2a39253cc616a4133778ff9bdadfb0382a761bf1eedd8981550e2
+$ docker pull ros@sha256:0f7b9fee47153280362bb4ace6bd74e1f1665c93dca0b781f3e23c455898a742
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.9 MB (347935625 bytes)**  
+-	Total Size: **348.0 MB (347963461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04c6d023982ed6c90a9ac306011df077256405692ad0a680223467fad32d17ad`
+-	Image ID: `sha256:911262005503e580de950c25cbe41b95752296011e4448d98d3bed828f5bd96c`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
-# Fri, 13 Apr 2018 10:31:12 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:06:57 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c363ee2491c29b3c3972d29864db5191a76b8d9cc0535412019acb618210d20e`  
-		Last Modified: Fri, 13 Apr 2018 11:07:16 GMT  
-		Size: 76.5 MB (76463280 bytes)  
+	-	`sha256:973fc8cb4ca9d12fc8aabae8747ce1911197af7de290fe386c7de3d47da65d05`  
+		Last Modified: Tue, 01 May 2018 04:35:43 GMT  
+		Size: 76.5 MB (76463310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-core`
 
 ```console
-$ docker pull ros@sha256:3de98c8657ccda1f521a902de01932ed8b26816b4f54477fbfee5564bb5d6743
+$ docker pull ros@sha256:a580d4a666dbbeb605e4927b31b06bfd99e5e6416a9a2e71efcb98eadde02235
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9519,110 +9519,110 @@ CMD ["bash"]
 ### `ros:lunar-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:0a72a22209bf90aaefc7c79d57c9fd44b188b6a8dea74693c6cfcddc6c562f2f
+$ docker pull ros@sha256:c34f3c534626da603a4aedb738054f9c1b1a260d5252abdba36a7483700ee4b6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.5 MB (271472345 bytes)**  
+-	Total Size: **271.5 MB (271500151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9cc947c23ed064e5ec50954a55273a9a3cc30fe0eb41bc987e63e4c22f812fd`
+-	Image ID: `sha256:00f3beabbd3352eb950cd66ccd82c08ff362a84ad32bc7d9cd302c8c2b4f9003`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-core-stretch`
 
 ```console
-$ docker pull ros@sha256:dd50664addcbe1fe4e68ee2945a1847b8be8f21579de8f52b55f15b103e7960b
+$ docker pull ros@sha256:2d8321ec420d7d308be029a09d610c49e842b037ccc89c2f19a99b49d3e94c50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9712,86 +9712,86 @@ CMD ["bash"]
 ### `ros:lunar-ros-core-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:15f769c84b71d517532c4d218d49565aaf844e55191f91b098c65c2fa9a170b3
+$ docker pull ros@sha256:bee0b4e7b2ccf0f9ccc2e80e8bec9ea7b9a93cf70d2b08823e95809c4419a0c2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.2 MB (319241223 bytes)**  
+-	Total Size: **319.1 MB (319107042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6db3fd813b08bd4880ffd395bc08cc67f814b4a6c05646ef70445015f71107a`
+-	Image ID: `sha256:4b5552bf8cdb65a4245d25f47103086b24fe08888c954267191d57784f923ef9`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 14 Mar 2018 17:30:57 GMT
-ADD file:2ebfda145008a73d7d0f2dc29946bfc3ad65048b3a3f0ca0283263e413b692d4 in / 
-# Wed, 14 Mar 2018 17:30:58 GMT
+# Mon, 30 Apr 2018 23:31:58 GMT
+ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
+# Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Thu, 15 Mar 2018 03:57:07 GMT
+# Tue, 01 May 2018 03:30:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:57:15 GMT
+# Tue, 01 May 2018 03:30:39 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Thu, 15 Mar 2018 03:57:18 GMT
+# Tue, 01 May 2018 03:30:42 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu stretch main" > /etc/apt/sources.list.d/ros-latest.list
-# Thu, 15 Mar 2018 03:59:13 GMT
+# Tue, 01 May 2018 03:35:20 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 03:59:15 GMT
+# Tue, 01 May 2018 03:35:21 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Mar 2018 03:59:16 GMT
+# Tue, 01 May 2018 03:35:22 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 15 Mar 2018 04:00:08 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 RUN rosdep init     && rosdep update
-# Thu, 15 Mar 2018 04:00:09 GMT
+# Tue, 01 May 2018 03:36:07 GMT
 ENV ROS_DISTRO=lunar
-# Thu, 15 Mar 2018 04:08:48 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 15 Mar 2018 04:08:50 GMT
+# Tue, 01 May 2018 03:46:08 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 03:46:13 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Thu, 15 Mar 2018 04:08:51 GMT
+# Tue, 01 May 2018 03:46:13 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 15 Mar 2018 04:08:52 GMT
+# Tue, 01 May 2018 03:46:14 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:3476b6ec1aa77d47beaf22adc259097130bcc9eec853636fb1dcf4f5c2925a56`  
-		Last Modified: Wed, 14 Mar 2018 17:45:20 GMT  
-		Size: 42.9 MB (42907825 bytes)  
+	-	`sha256:142bf25d8d1b3ebc9dfbedd586e70a011594690acf48b2695bfce01e3a2cf0d5`  
+		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
+		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34b20ac93a23591cd708287109b38e6d3cfa4df28b7bc7f2d76ced9ebd071061`  
-		Last Modified: Thu, 15 Mar 2018 04:47:36 GMT  
-		Size: 6.8 MB (6794160 bytes)  
+	-	`sha256:994bacc3e1c11e50065156c511f0c11e001707e55b61e361b8dc44d236c76f24`  
+		Last Modified: Tue, 01 May 2018 04:41:15 GMT  
+		Size: 6.4 MB (6427112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937289d9f2908bdc0632e69e9656a99838c8d74800329ea978a3141e026e857f`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:663899231a010cf1e857473d7203c7e5f109b38379d2d822c31dba98a7f8af10`  
+		Last Modified: Tue, 01 May 2018 04:41:09 GMT  
+		Size: 1.4 KB (1377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f23cc8c9690e8a6fce553c81dda89cbb75cef86377245c1353396c3ebfe5de`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:6d68d9781734de3f7c1ce451752978a14ba285ad3c63d5ab58034a2008cd25ef`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c6509781662d18c90e893dbae6c92b0c741d25e67e850edcfbcd16e192c34`  
-		Last Modified: Thu, 15 Mar 2018 04:48:31 GMT  
-		Size: 61.9 MB (61941449 bytes)  
+	-	`sha256:678cb4b8d2f95bf400236eedd95783c53081503a2ed2b39f51e57a6062cd18c7`  
+		Last Modified: Tue, 01 May 2018 04:42:23 GMT  
+		Size: 61.9 MB (61938600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bfb330d3be283162c5e8a7b4b4058a93e2693bd0328a6013da35fadcb9e1983`  
-		Last Modified: Thu, 15 Mar 2018 04:47:28 GMT  
-		Size: 791.2 KB (791228 bytes)  
+	-	`sha256:0225d679802c170200a58607e1e5a805065659ce28bdec6f9cc91f1c5f6ac461`  
+		Last Modified: Tue, 01 May 2018 04:41:08 GMT  
+		Size: 835.1 KB (835084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37eec5bcf4b898d4f3d46f7ddcb29e8fc7ebb29f8b67fdbfcb6a34656213410`  
-		Last Modified: Thu, 15 Mar 2018 04:50:19 GMT  
-		Size: 206.8 MB (206804765 bytes)  
+	-	`sha256:f8018c896d8c469869af751ab6dedae7d929c8c1eecd50bd607c44492245c688`  
+		Last Modified: Tue, 01 May 2018 04:44:18 GMT  
+		Size: 206.8 MB (206795100 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afdafe432be54c7abcb6d38871e0078cabf42e6bd288741bb263b1edf9958ecc`  
-		Last Modified: Thu, 15 Mar 2018 04:47:26 GMT  
+	-	`sha256:ef4f80d568803a6e955c93890cfbb1629933a150a5d0a54e78f081bf2731b724`  
+		Last Modified: Tue, 01 May 2018 04:41:06 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:lunar-ros-core-xenial`
 
 ```console
-$ docker pull ros@sha256:3de98c8657ccda1f521a902de01932ed8b26816b4f54477fbfee5564bb5d6743
+$ docker pull ros@sha256:a580d4a666dbbeb605e4927b31b06bfd99e5e6416a9a2e71efcb98eadde02235
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10009,102 +10009,102 @@ CMD ["bash"]
 ### `ros:lunar-ros-core-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:0a72a22209bf90aaefc7c79d57c9fd44b188b6a8dea74693c6cfcddc6c562f2f
+$ docker pull ros@sha256:c34f3c534626da603a4aedb738054f9c1b1a260d5252abdba36a7483700ee4b6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.5 MB (271472345 bytes)**  
+-	Total Size: **271.5 MB (271500151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9cc947c23ed064e5ec50954a55273a9a3cc30fe0eb41bc987e63e4c22f812fd`
+-	Image ID: `sha256:00f3beabbd3352eb950cd66ccd82c08ff362a84ad32bc7d9cd302c8c2b4f9003`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 09:04:57 GMT
-ADD file:81451f665242c8a6b28b2dfe4726bf195a48defeed8a31c73cde9a137c6dbdf6 in / 
-# Fri, 13 Apr 2018 09:04:59 GMT
+# Tue, 01 May 2018 01:12:52 GMT
+ADD file:fef3655a03a1c7f1533148016797b982955b3d5556f32c777214b8426028509b in / 
+# Tue, 01 May 2018 01:12:56 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 13 Apr 2018 09:05:01 GMT
+# Tue, 01 May 2018 01:13:04 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:05:03 GMT
+# Tue, 01 May 2018 01:13:10 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 13 Apr 2018 09:05:04 GMT
+# Tue, 01 May 2018 01:13:15 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 13 Apr 2018 09:05:05 GMT
+# Tue, 01 May 2018 01:13:20 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Apr 2018 09:29:06 GMT
+# Tue, 01 May 2018 01:19:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:29:09 GMT
+# Tue, 01 May 2018 01:19:48 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 13 Apr 2018 09:29:11 GMT
+# Tue, 01 May 2018 01:19:59 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 13 Apr 2018 09:31:17 GMT
+# Tue, 01 May 2018 01:23:28 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 09:31:34 GMT
+# Tue, 01 May 2018 01:23:33 GMT
 ENV LANG=C.UTF-8
-# Fri, 13 Apr 2018 09:31:35 GMT
+# Tue, 01 May 2018 01:23:37 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 13 Apr 2018 09:32:14 GMT
+# Tue, 01 May 2018 01:24:25 GMT
 RUN rosdep init     && rosdep update
-# Fri, 13 Apr 2018 10:16:09 GMT
+# Tue, 01 May 2018 02:51:26 GMT
 ENV ROS_DISTRO=lunar
-# Fri, 13 Apr 2018 10:25:53 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 13 Apr 2018 10:26:13 GMT
+# Tue, 01 May 2018 02:59:44 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 May 2018 02:59:49 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 13 Apr 2018 10:26:15 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 13 Apr 2018 10:26:16 GMT
+# Tue, 01 May 2018 02:59:52 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:cb6b68344db2c1c976785fde1a3db70b465328cb22e3a2c7b2ad5830b48bca10`  
-		Last Modified: Fri, 13 Apr 2018 09:11:04 GMT  
-		Size: 39.2 MB (39218620 bytes)  
+	-	`sha256:83c016a9a148a71d05469a3994d54eb7eb9c3d40a65e07bf68788018a71d951b`  
+		Last Modified: Mon, 23 Apr 2018 14:56:07 GMT  
+		Size: 39.2 MB (39223827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525f6d0463851ac4813635bab2d79581b10cb2ed64fcdf97852bfd619c7d2db5`  
-		Last Modified: Fri, 13 Apr 2018 09:10:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:e8a1976297de94ed1f5c4c0f13b0b25199c6d6ca003ddfc3e873938aa2f8e86b`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae087ad0db3911c0a2ab5b36dfae0eb1f8a92312cf2173aefc600a3ad59d8a52`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
-		Size: 615.0 B  
+	-	`sha256:167d83417bbef32ed4713f4224bcb9f9573597ee6d91174dc7403ce457f145d2`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebcaa2457d2587ab93c88f232d0b3fc458732e08d0b1df73f0f5331a6bac780`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:e2544c5c45beca34c948aca9c981d56b587a973354727e4c97dc99d88227fb6a`  
+		Last Modified: Tue, 01 May 2018 01:17:18 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9413926d20a900e8b0abcd52734e1027ad5e9e8ecd17469fbb4b7fd174fb523`  
-		Last Modified: Fri, 13 Apr 2018 09:10:50 GMT  
+	-	`sha256:fb92ef1d410a96b276ec1425b000d80d5c1d914688aae8bce3e6f20d8a5a7a5f`  
+		Last Modified: Tue, 01 May 2018 01:17:19 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906c291d250a706379bb810d8d57cdd2c3ec43a896dd286065ebffc42eab40a7`  
-		Last Modified: Fri, 13 Apr 2018 10:51:01 GMT  
-		Size: 4.8 MB (4820106 bytes)  
+	-	`sha256:fb3a2ac905d0d30502b9bf9736c755da2e7a05465764ff1fb14a45f067faa71c`  
+		Last Modified: Tue, 01 May 2018 04:17:49 GMT  
+		Size: 4.8 MB (4819486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a048b7b24ce900dee83a56431c1bb2f0d72dc4540764ea9b5ad31072f24c266`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 13.1 KB (13081 bytes)  
+	-	`sha256:31df2d860f2dc7f931faa244a38a740a44c732fd7ab480a29daf8999b5fb7fcd`  
+		Last Modified: Tue, 01 May 2018 04:17:40 GMT  
+		Size: 13.1 KB (13082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89a64a806a61aa607638f40915ed29b4c4cd976b9d4307468ec949e03795b3d7`  
-		Last Modified: Fri, 13 Apr 2018 10:50:54 GMT  
+	-	`sha256:399a06299e2df93eba22547e7bbfaf291225cb3e1d85dcd160f7080d0d65647a`  
+		Last Modified: Tue, 01 May 2018 04:17:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f726a484c7ad4fa711d2b547a39ae90f151196d67dccd83e9edcef641ba15e51`  
-		Last Modified: Fri, 13 Apr 2018 10:51:33 GMT  
-		Size: 52.4 MB (52441545 bytes)  
+	-	`sha256:35ce03745d3f424b139a80266262e70dfefbda981c88ae34eac7b56df3120657`  
+		Last Modified: Tue, 01 May 2018 04:18:42 GMT  
+		Size: 52.4 MB (52441627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4777b4086e69ffbe4d18c226c30a815357dd7789b6ad72768388bbe8ca24c78`  
-		Last Modified: Fri, 13 Apr 2018 10:50:55 GMT  
-		Size: 818.0 KB (818025 bytes)  
+	-	`sha256:b360b2687112930e2c2a443c4f89ecbdda5be0103c5b840e39840d3aca65352a`  
+		Last Modified: Tue, 01 May 2018 04:17:41 GMT  
+		Size: 835.1 KB (835081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f086c1083bbe306d96c45ddba84a283e1ba6b4a9d1b53ba81ddedcbb071e0510`  
-		Last Modified: Fri, 13 Apr 2018 11:01:43 GMT  
-		Size: 174.2 MB (174158058 bytes)  
+	-	`sha256:94dbca386e5c6b5ffe323554a2f8bf12b018dace7d69b3b4ba8c6f9e99ac97c8`  
+		Last Modified: Tue, 01 May 2018 04:34:53 GMT  
+		Size: 174.2 MB (174164133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c5e466413796382d6e3e0b0ff46d56013472480aad296427c27f965a521fb6`  
-		Last Modified: Fri, 13 Apr 2018 11:00:33 GMT  
+	-	`sha256:a6170ad5544fce2d65ed25da27444eaad1efb07f3af011b076ca66e054d4895a`  
+		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
