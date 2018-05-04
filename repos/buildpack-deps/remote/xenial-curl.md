@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:1ba5c59d367f470c7c9928efc7256aba8e2b86c8dff315f4a0e0f0ac3509a677
+$ docker pull buildpack-deps@sha256:7f2bfb9c8d00e337aa0e3f35ebbcd85a6afb3f54480422924ce80ee5d24f61cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull buildpack-deps@sha256:1ba5c59d367f470c7c9928efc7256aba8e2b86c8dff3
 ### `buildpack-deps:xenial-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:fbbdec668144661c306608d920d50296f90761e37f892f47bae53eaf522e746c
+$ docker pull buildpack-deps@sha256:8f9c506fb08ec57c3ce2907446126bebfcd550a5cc27044e782433a89cc0badd
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50345199 bytes)**  
+-	Total Size: **50.4 MB (50353590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:813d1b95de43a98e063f21962d5ba78280bb3d5e8428024ea299baf630dc508e`
+-	Image ID: `sha256:a38267f4ebf4a195d2c872003ac4afbe9b3f3b2b388a33f4f7eb00a1faf967a2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -39,9 +39,9 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Fri, 27 Apr 2018 23:30:21 GMT
 CMD ["/bin/bash"]
-# Sat, 28 Apr 2018 18:21:12 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 18:21:13 GMT
+# Fri, 04 May 2018 18:00:02 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 04 May 2018 18:00:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -66,9 +66,9 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Fri, 27 Apr 2018 23:35:41 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd120ea1f3ff60fd097e806df431bf55c1a913e8e373ca3e5fa21bb739d8e003`  
-		Last Modified: Sat, 28 Apr 2018 21:31:02 GMT  
-		Size: 7.3 MB (7315858 bytes)  
+	-	`sha256:55129ceb7955e56157329e6657d28ea35d0ad1b4ce89b518f0f4921f7a9f1d95`  
+		Last Modified: Fri, 04 May 2018 18:30:41 GMT  
+		Size: 7.3 MB (7324249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:xenial-curl` - linux; arm variant v7
