@@ -913,20 +913,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.15.0-3
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-3.dsc' iproute2_4.15.0-3.dsc 1846 SHA256:9271f4a4ae8eb766234bdedf696ff6440a3a95d98a5abd8a26215269cc6b18b2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0.orig.tar.xz' iproute2_4.15.0.orig.tar.xz 648836 SHA256:48d4616a99d7b609b7b795c0ae8ec57099fb0271ed89253e8772c02327798355
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.15.0-3.debian.tar.xz' iproute2_4.15.0-3.debian.tar.xz 137872 SHA256:10214c59bd21a1a9e37755838a2b9c5774b7913fe06b8a146f77883bee829d6f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.15.0-3/
 
-- https://sources.debian.net/src/iproute2/4.15.0-3/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.15.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.15.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20161105-1`
 
@@ -1158,21 +1151,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.29-4
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29-4.dsc' libgpg-error_1.29-4.dsc 2060 SHA256:ef54b101d7dacc3914cc3ca9157e4d37e493e45577e9727fdf2c9108887936fc
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29.orig.tar.bz2' libgpg-error_1.29.orig.tar.bz2 894749 SHA256:ece926fa5719d17a7ad8da618712cfa2f8a796ab2f2af9d544c5bb093383b1ea
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29.orig.tar.bz2.asc' libgpg-error_1.29.orig.tar.bz2.asc 534 SHA256:7172264fb51aa8d6637718a6341121b836c8bc0c6c4439c1013ad99f880dd5b0
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29-4.debian.tar.xz' libgpg-error_1.29-4.debian.tar.xz 16132 SHA256:9e62ac1c1890ec13c4b03c10654c5e853e951378312ba8e538de8e6406fe64b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.29-4/
 
-- https://sources.debian.net/src/libgpg-error/1.29-4/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.29-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.29-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.0.4-1.1`
 
@@ -1528,20 +1513,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2.dsc' libzstd_1.3.3+dfsg-2.dsc 2155 SHA256:a36677a293b01a9132af0ebc865fad77a58fa8809d746ad1f07cef89fcf00acc
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.3+dfsg.orig.tar.xz' libzstd_1.3.3+dfsg.orig.tar.xz 1333584 SHA256:e236191547a0ab53cc52c0207ead0d51305dbe9452b5f34d4ea9eb1f51031a93
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2.debian.tar.xz' libzstd_1.3.3+dfsg-2.debian.tar.xz 10908 SHA256:c4c5f03ae27366ab4ee918c99f6bd06a224373447f1854b85deb7546fa358911
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.3.3+dfsg-2/
 
-- https://sources.debian.net/src/libzstd/1.3.3+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.3+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.3+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 
@@ -2018,20 +1996,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-3
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-3.dsc' readline_7.0-3.dsc 2538 SHA256:f27a5dc9053b88641e3effc6c03b7840cbbbd887e8dcaf05d9e336c7bc7c6a53
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-3.debian.tar.xz' readline_7.0-3.debian.tar.xz 30012 SHA256:bf166310d6ca7716f2bd0e9e06cee2458b0157f7989d028730fc305643560175
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/7.0-3/
 
-- https://sources.debian.net/src/readline/7.0-3/ (for browsing the source)
-- https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -2231,21 +2202,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-1.dsc' tzdata_2018d-1.dsc 2379 SHA256:6ca8ec6645e862fad8c618a43df52bf93106127e923f02906b25297e808ebbc5
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz.asc' tzdata_2018d.orig.tar.gz.asc 819 SHA256:5b59a168565424e6227550c85d9007101d18a9d0b018ada02ad49abf5a086405
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-1.debian.tar.xz' tzdata_2018d-1.debian.tar.xz 104124 SHA256:3dad94ca3940fb561829a1d6689436335fc18b2d8ed0e9f7def0c82288e26658
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-1/
 
-- https://sources.debian.net/src/tzdata/2018d-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.31.1-0.5`
 

@@ -730,13 +730,20 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gcc-8=8-20180414-1
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180414-1.dsc' gcc-8_8-20180414-1.dsc 32339 SHA256:f6ca1b28d06f4e14d41bf497f07bacfbbd4d8128f285c7a210a5c4eb90e318fb
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180414.orig.tar.gz' gcc-8_8-20180414.orig.tar.gz 69210032 SHA256:d5e50d1bc6103f4888df99097c115653ee6db472d19709778d8b48195bb828cc
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180414-1.diff.gz' gcc-8_8-20180414-1.diff.gz 608190 SHA256:c56e7a3c360780414507e7977d1646fac58483b9710de39db071e2c69ce41f5d
+```
 
-- http://snapshot.debian.org/package/gcc-8/8-20180414-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gcc-8/8-20180414-1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-8/8-20180414-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-8/8-20180414-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -1240,20 +1247,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `GPL-3`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.7.7-3.1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.1.dsc' libcap-ng_0.7.7-3.1.dsc 2266 SHA256:f545d107ed3e6160b16aac09e242d1ccc054bfca76f6d70731a83c031b416f53
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7.orig.tar.gz' libcap-ng_0.7.7.orig.tar.gz 420178 SHA256:615549ce39b333f6b78baee0c0b4ef18bc726c6bf1cca123dfd89dd963f6d06b
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.1.debian.tar.xz' libcap-ng_0.7.7-3.1.debian.tar.xz 5432 SHA256:074bf729c3081af729e7e0fbbe3354ddecc16e045245e7d4f44003b9f1f1adc6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.7.7-3.1/
 
-- https://sources.debian.net/src/libcap-ng/0.7.7-3.1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.7.7-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.7.7-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.25-1.2`
 
@@ -2288,21 +2288,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.2-2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-2.dsc' perl_5.26.2-2.dsc 2678 SHA256:c6bdd1aec9f33fe29585f566db8b338bc3ba15444f105edd6bfb2a835589dfed
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-2.debian.tar.xz' perl_5.26.2-2.debian.tar.xz 163548 SHA256:a6b62d29d80190dcd98c76dc0e6d65357f0d8d140a2c34af2b5c43971934e71d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.2-2/
 
-- https://sources.debian.net/src/perl/5.26.2-2/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
