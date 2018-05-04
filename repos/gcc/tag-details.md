@@ -11,6 +11,9 @@
 -	[`gcc:7`](#gcc7)
 -	[`gcc:7.3`](#gcc73)
 -	[`gcc:7.3.0`](#gcc730)
+-	[`gcc:8`](#gcc8)
+-	[`gcc:8.1`](#gcc81)
+-	[`gcc:8.1.0`](#gcc810)
 -	[`gcc:latest`](#gcclatest)
 
 ## `gcc:5`
@@ -4323,6 +4326,18 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Last Modified: Sat, 28 Apr 2018 19:42:31 GMT  
 		Size: 2.2 KB (2163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gcc:8`
+
+**does not exist** (yet?)
+
+## `gcc:8.1`
+
+**does not exist** (yet?)
+
+## `gcc:8.1.0`
+
+**does not exist** (yet?)
 
 ## `gcc:latest`
 
