@@ -1,7 +1,7 @@
 ## `teamspeak:latest`
 
 ```console
-$ docker pull teamspeak@sha256:1986f1c42f6acfdabc7fc94126c1729b8305f15be497c32c3c6013921a36590e
+$ docker pull teamspeak@sha256:996f8be621be57ee606261a7dcd2956c639d7d9b902abc1df97b8b1bf0192efc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull teamspeak@sha256:1986f1c42f6acfdabc7fc94126c1729b8305f15be497c32c3
 ### `teamspeak:latest` - linux; amd64
 
 ```console
-$ docker pull teamspeak@sha256:5b8e0fabbf77c84340a7cf692007f056733e398f2ba2204cefe0d1ee6bcb52ce
+$ docker pull teamspeak@sha256:1fd07022a45f6dc87d4de07af510527bea1ac63a8cc95fdce68486c508b18ebf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9982490 bytes)**  
+-	Total Size: **10.0 MB (9982321 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c03d0b2ea92f8cc649e16baa910671d36326979de629e06e7affcd9600cc87b`
+-	Image ID: `sha256:8254439ec71f79c2037436cbe8d669fb3ab5733daf68207ec40d4a572b30da38`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["ts3server"]`
 
@@ -33,24 +33,24 @@ RUN apk add --no-cache ca-certificates libstdc++ su-exec
 RUN set -eux;  addgroup -g 9987 ts3server;  adduser -u 9987 -Hh /var/ts3server -G ts3server -s /sbin/nologin -D ts3server;  mkdir -p /var/ts3server /var/run/ts3server;  chown ts3server:ts3server /var/ts3server /var/run/ts3server;  chmod 777 /var/ts3server /var/run/ts3server
 # Fri, 02 Feb 2018 19:14:43 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server
-# Wed, 25 Apr 2018 20:33:26 GMT
-ARG TEAMSPEAK_CHECKSUM=f264a17d4f013f3afedf0651232870f31392915c337fb21d1b81497f78cee4c7
-# Wed, 25 Apr 2018 20:33:26 GMT
-ARG TEAMSPEAK_URL=http://dl.4players.de/ts/releases/3.1.2/teamspeak3-server_linux_alpine-3.1.2.tar.bz2
-# Wed, 25 Apr 2018 20:33:35 GMT
-# ARGS: TEAMSPEAK_CHECKSUM=f264a17d4f013f3afedf0651232870f31392915c337fb21d1b81497f78cee4c7 TEAMSPEAK_URL=http://dl.4players.de/ts/releases/3.1.2/teamspeak3-server_linux_alpine-3.1.2.tar.bz2
+# Thu, 03 May 2018 23:37:44 GMT
+ARG TEAMSPEAK_CHECKSUM=283964521e2299e39378ce23d58b8b019dc124a114008f9be21d0d7c5cc15080
+# Thu, 03 May 2018 23:37:58 GMT
+ARG TEAMSPEAK_URL=http://dl.4players.de/ts/releases/3.1.3/teamspeak3-server_linux_alpine-3.1.3.tar.bz2
+# Thu, 03 May 2018 23:38:14 GMT
+# ARGS: TEAMSPEAK_CHECKSUM=283964521e2299e39378ce23d58b8b019dc124a114008f9be21d0d7c5cc15080 TEAMSPEAK_URL=http://dl.4players.de/ts/releases/3.1.3/teamspeak3-server_linux_alpine-3.1.3.tar.bz2
 RUN set -eux;  apk add --no-cache --virtual .fetch-deps tar;  wget "${TEAMSPEAK_URL}" -O server.tar.bz2;  echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -;  mkdir -p /opt/ts3server;  tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server;  rm server.tar.bz2;  apk del .fetch-deps;  mv /opt/ts3server/*.so /opt/ts3server/redist/* /usr/local/lib;  ldconfig /usr/local/lib;  chown -R ts3server:ts3server /opt/ts3server
-# Wed, 25 Apr 2018 20:33:35 GMT
+# Thu, 03 May 2018 23:38:22 GMT
 VOLUME [/var/ts3server/]
-# Wed, 25 Apr 2018 20:33:35 GMT
+# Thu, 03 May 2018 23:38:23 GMT
 WORKDIR /var/ts3server/
-# Wed, 25 Apr 2018 20:33:36 GMT
+# Thu, 03 May 2018 23:38:26 GMT
 EXPOSE 10011/tcp 30033/tcp 9987/udp
-# Wed, 25 Apr 2018 20:33:36 GMT
+# Thu, 03 May 2018 23:38:31 GMT
 COPY file:c771229cbb8d7e896bd0ac6fc9f17103075224c82e33767ec4533639c179eb28 in /opt/ts3server 
-# Wed, 25 Apr 2018 20:33:37 GMT
+# Thu, 03 May 2018 23:38:32 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Wed, 25 Apr 2018 20:33:37 GMT
+# Thu, 03 May 2018 23:38:37 GMT
 CMD ["ts3server"]
 ```
 
@@ -67,11 +67,11 @@ CMD ["ts3server"]
 		Last Modified: Fri, 02 Feb 2018 19:15:10 GMT  
 		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b3f90f0864cada0be5ee7683685933eea41828b5880767b823481c20f913cf2`  
-		Last Modified: Wed, 25 Apr 2018 20:34:03 GMT  
-		Size: 7.2 MB (7156972 bytes)  
+	-	`sha256:21a91426f4ec9ccf959f48cba061130beeaf7864765f4703bf692514503a0509`  
+		Last Modified: Thu, 03 May 2018 23:39:07 GMT  
+		Size: 7.2 MB (7156803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10b2a96fc77d781f99a19224a6e07d22413d591909b06a595eedd37c8b982d9`  
-		Last Modified: Wed, 25 Apr 2018 20:34:03 GMT  
+	-	`sha256:5b80da1d27b9b1194f35f23b4412d824c7acfa40d53f1b9f55965ec7ba29cfc3`  
+		Last Modified: Thu, 03 May 2018 23:39:05 GMT  
 		Size: 1.2 KB (1163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
