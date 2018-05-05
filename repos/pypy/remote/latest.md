@@ -1,7 +1,7 @@
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:20b66c23185a9f3cd22f00bc552f2935fa0ce36c9126b02d180e8147839dda90
+$ docker pull pypy@sha256:e8f8ee1ee9a55accda517095cd149fcb88573fca2811ddc2545237ade2568d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -161,14 +161,14 @@ CMD ["pypy3"]
 ### `pypy:latest` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:4f54c76c5069c312bdb6d679971d6e0918de9626a822277db7736a8ed3694286
+$ docker pull pypy@sha256:13bbcdea37574debdaf586333b45b11ef6b9010569db5138c3961fc4f81e9e8c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **288.0 MB (287985167 bytes)**  
+-	Total Size: **284.4 MB (284417606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f58359f96b1fbd661d97655651c6f85a9aceba11145e164e5e5b80d5e298190e`
+-	Image ID: `sha256:adab4dc6d57d30c4ffe61e29fde15784e973f74a9653d94ba833cade3ca7bfbe`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -176,29 +176,29 @@ $ docker pull pypy@sha256:4f54c76c5069c312bdb6d679971d6e0918de9626a822277db7736a
 ADD file:ce5174f2b2c155a2421fac3ff37a02d9551d5d79e31a541189bcfd2416a6903a in / 
 # Sat, 28 Apr 2018 10:39:32 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 12:05:27 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 12:05:28 GMT
+# Sat, 05 May 2018 10:58:32 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 10:58:33 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 28 Apr 2018 12:06:16 GMT
+# Sat, 05 May 2018 10:59:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 12:08:05 GMT
+# Sat, 05 May 2018 11:02:04 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 15:29:04 GMT
+# Sat, 05 May 2018 15:59:42 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 28 Apr 2018 15:29:04 GMT
+# Sat, 05 May 2018 15:59:42 GMT
 ENV LANG=C.UTF-8
-# Sat, 28 Apr 2018 15:29:37 GMT
+# Sat, 05 May 2018 16:00:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 15:29:37 GMT
+# Sat, 05 May 2018 16:00:35 GMT
 ENV PYPY_VERSION=6.0.0
-# Sat, 28 Apr 2018 15:29:37 GMT
+# Sat, 05 May 2018 16:00:35 GMT
 ENV PYTHON_PIP_VERSION=10.0.1
-# Sat, 28 Apr 2018 15:31:53 GMT
-RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='4cfffa292b9ef34bb6ba39cdbaa196c5c5cbbc5aa3faaa157cf45d7e34027048' ;; 		armel) pypyArch='linux-armel'; sha256='6a6888a55192f58594838b8b3d2e7daaad43d3bf4293afab3dd8987d0bbd1124' ;; 		i386) pypyArch='linux32'; sha256='b04eeee5160e6cb5f8962de80f077ea1dc7be34e77d74bf075519c23603f5ff9' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	rm pypy.tar.bz2; 		pypy3 --version
-# Sat, 28 Apr 2018 15:32:03 GMT
+# Sat, 05 May 2018 16:02:20 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='4cfffa292b9ef34bb6ba39cdbaa196c5c5cbbc5aa3faaa157cf45d7e34027048' ;; 		armel) pypyArch='linux-armel'; sha256='6a6888a55192f58594838b8b3d2e7daaad43d3bf4293afab3dd8987d0bbd1124' ;; 		i386) pypyArch='linux32'; sha256='b04eeee5160e6cb5f8962de80f077ea1dc7be34e77d74bf075519c23603f5ff9' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy3 --version
+# Sat, 05 May 2018 16:02:29 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
-# Sat, 28 Apr 2018 15:32:03 GMT
+# Sat, 05 May 2018 16:02:29 GMT
 CMD ["pypy3"]
 ```
 
@@ -207,27 +207,27 @@ CMD ["pypy3"]
 		Last Modified: Sat, 28 Apr 2018 10:44:20 GMT  
 		Size: 54.5 MB (54486782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:330b9c3b7ebe34e933c240e5eb7f8620732974e6e15e2c5d17cb91ca2aefffa4`  
-		Last Modified: Sat, 28 Apr 2018 12:41:22 GMT  
-		Size: 19.9 MB (19866118 bytes)  
+	-	`sha256:74787bb4bafbd442893d0704b8d5e07e27bbf70148b113435531f54354d3bad3`  
+		Last Modified: Sat, 05 May 2018 11:36:26 GMT  
+		Size: 19.9 MB (19880379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e95c26c8327697a43fa28c5661dbe845de5d6f433ed1e10ea672b26239f4b303`  
-		Last Modified: Sat, 28 Apr 2018 12:41:52 GMT  
-		Size: 43.9 MB (43918744 bytes)  
+	-	`sha256:0e8673d7460975445961bb484c8555f084db769932a45f24f5e37f907889b7c7`  
+		Last Modified: Sat, 05 May 2018 11:36:56 GMT  
+		Size: 43.9 MB (43918748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa73e6f1dcfd5115ba8ba791106f71c69c381615a3db75b9723e7a9e9a697a3`  
-		Last Modified: Sat, 28 Apr 2018 12:42:40 GMT  
-		Size: 135.1 MB (135146517 bytes)  
+	-	`sha256:102947276d2a95d145e575b11f96ea8bb672854d3e795ee6bfa9191b661e3d2f`  
+		Last Modified: Sat, 05 May 2018 11:37:44 GMT  
+		Size: 135.2 MB (135153276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba38fc6e4cb64bb66b0979b36aa63ffcdfaeb7d3d5a09cabf06a5a927a1dbdc3`  
-		Last Modified: Sat, 28 Apr 2018 15:33:19 GMT  
-		Size: 3.3 MB (3271213 bytes)  
+	-	`sha256:360c445a1133ce7bb4b899f0a9ee0d16567a84bfcf144cc7b4ce5136b9acc132`  
+		Last Modified: Sat, 05 May 2018 16:03:43 GMT  
+		Size: 3.3 MB (3271670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8d59c68412f0b5147a0bf571c2760184aadf270baa4a27c980fb637335c6f59`  
-		Last Modified: Sat, 28 Apr 2018 15:34:26 GMT  
-		Size: 26.8 MB (26783267 bytes)  
+	-	`sha256:e467f377da4bdbc72ac7860b35ee128a6a4dc9a60278afc3882eac4831a982c5`  
+		Last Modified: Sat, 05 May 2018 16:04:56 GMT  
+		Size: 23.2 MB (23194291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb38a122e4c5b5e5fa1a03bf9f7ed814f25575b759aa65e912c5452d259524ab`  
-		Last Modified: Sat, 28 Apr 2018 15:34:19 GMT  
-		Size: 4.5 MB (4512526 bytes)  
+	-	`sha256:fbe20a80ecffd678758a59db63fc2df76f6b8349a450b2933fc4958e6c3232d1`  
+		Last Modified: Sat, 05 May 2018 16:04:50 GMT  
+		Size: 4.5 MB (4512460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
