@@ -4330,20 +4330,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u162-b12-1~deb9u1
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12-1~deb9u1.dsc' openjdk-8_8u162-b12-1~deb9u1.dsc 4506 SHA256:592ed207bd94e5afb76f2603b0d24198d5d2cbc8d4dd1889cdb5993f0235d460
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12.orig.tar.xz' openjdk-8_8u162-b12.orig.tar.xz 70306424 SHA256:0b8b888af9d6706d6469b83f18f8d66fa525eab3961e6626e044cc935be8637a
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u162-b12-1~deb9u1.debian.tar.xz' openjdk-8_8u162-b12-1~deb9u1.debian.tar.xz 258136 SHA256:e39c6f920f3e87ae2486c5b604f3ea32542329c68f8410afaf788f14be081a7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-8/8u162-b12-1~deb9u1/
 
-- https://sources.debian.net/src/openjdk-8/8u162-b12-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u162-b12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u162-b12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u1`
 
