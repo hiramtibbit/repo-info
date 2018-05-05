@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5410707ab54079cef277bcad5bfc70afb1b8dab62a981c29cc4abf4f299ee912`
-- Created: `2018-04-03T02:02:30.996025559Z`
-- Virtual Size: ~ 510.27 Mb  
+- Image ID: `sha256:33d64f9fe0f49820a50ea80de40732382ec01ae92f4acf6d82b6fa336d0f14bf`
+- Created: `2018-05-05T06:45:50.531689999Z`
+- Virtual Size: ~ 510.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -79,9 +79,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apr-util=1.4.1-3+deb7u1
-'http://security.debian.org/pool/updates/main/a/apr-util/apr-util_1.4.1-3+deb7u1.dsc' apr-util_1.4.1-3+deb7u1.dsc 2667 SHA256:f1bb74e2904e8974bba44eb56cf72e20e7a1809326cf002631d5b53d2fb3fcaf
-'http://security.debian.org/pool/updates/main/a/apr-util/apr-util_1.4.1.orig.tar.gz' apr-util_1.4.1.orig.tar.gz 774770 SHA256:d636d9ef95c6e50e47fc338d532aa375edd11e5d7a3c30dee48beb38ddf4ab4c
-'http://security.debian.org/pool/updates/main/a/apr-util/apr-util_1.4.1-3+deb7u1.debian.tar.gz' apr-util_1.4.1-3+deb7u1.debian.tar.gz 19651 SHA256:4e52a031f9f2becf13495a79e3b42ec7d30b3c4d9fb06b96ba8e93e543d54365
+'http://security.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.4.1-3+deb7u1.dsc' apr-util_1.4.1-3+deb7u1.dsc 2667 SHA256:f1bb74e2904e8974bba44eb56cf72e20e7a1809326cf002631d5b53d2fb3fcaf
+'http://security.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.4.1.orig.tar.gz' apr-util_1.4.1.orig.tar.gz 774770 SHA256:d636d9ef95c6e50e47fc338d532aa375edd11e5d7a3c30dee48beb38ddf4ab4c
+'http://security.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.4.1-3+deb7u1.debian.tar.gz' apr-util_1.4.1-3+deb7u1.debian.tar.gz 19651 SHA256:4e52a031f9f2becf13495a79e3b42ec7d30b3c4d9fb06b96ba8e93e543d54365
 ```
 
 Other potentially useful URLs:
@@ -104,9 +104,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apr=1.4.6-3+deb7u2
-'http://security.debian.org/pool/updates/main/a/apr/apr_1.4.6-3+deb7u2.dsc' apr_1.4.6-3+deb7u2.dsc 2089 SHA256:6b32012539a9f7cb19628760cfa2e1d8ebbf6da357905e52ed8a7554df450997
-'http://security.debian.org/pool/updates/main/a/apr/apr_1.4.6.orig.tar.gz' apr_1.4.6.orig.tar.gz 982243 SHA256:538d593d805c36985fc6d200d31bf6c1b5f90df2a50b917902743a13bbc10e05
-'http://security.debian.org/pool/updates/main/a/apr/apr_1.4.6-3+deb7u2.debian.tar.gz' apr_1.4.6-3+deb7u2.debian.tar.gz 23767 SHA256:f52807e6833e80d5e73d05b249944af9c5d22bbd79ee2cd9468dfd4373db01ac
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.4.6-3+deb7u2.dsc' apr_1.4.6-3+deb7u2.dsc 2089 SHA256:6b32012539a9f7cb19628760cfa2e1d8ebbf6da357905e52ed8a7554df450997
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.4.6.orig.tar.gz' apr_1.4.6.orig.tar.gz 982243 SHA256:538d593d805c36985fc6d200d31bf6c1b5f90df2a50b917902743a13bbc10e05
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.4.6-3+deb7u2.debian.tar.gz' apr_1.4.6-3+deb7u2.debian.tar.gz 23767 SHA256:f52807e6833e80d5e73d05b249944af9c5d22bbd79ee2cd9468dfd4373db01ac
 ```
 
 Other potentially useful URLs:
@@ -320,9 +320,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=4.2+dfsg-0.1+deb7u4
-'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.dsc' bash_4.2+dfsg-0.1+deb7u4.dsc 2186 SHA256:3b353fe62c0931101eb11cd9263eac5d08e9d324bfada342fdd8a95373b6257f
-'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg.orig.tar.gz' bash_4.2+dfsg.orig.tar.gz 2749569 SHA256:a8cdf3d4e526d626ae42c11fde79f9f8ba323ec3b3745510410fc5f50463ccff
-'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.diff.gz' bash_4.2+dfsg-0.1+deb7u4.diff.gz 92229 SHA256:935bfaf7f9542de61fd97328006f0d59b729292bd453e36e8c9d302dc5129e11
+'http://security.debian.org/debian-security/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.dsc' bash_4.2+dfsg-0.1+deb7u4.dsc 2186 SHA256:3b353fe62c0931101eb11cd9263eac5d08e9d324bfada342fdd8a95373b6257f
+'http://security.debian.org/debian-security/pool/updates/main/b/bash/bash_4.2+dfsg.orig.tar.gz' bash_4.2+dfsg.orig.tar.gz 2749569 SHA256:a8cdf3d4e526d626ae42c11fde79f9f8ba323ec3b3745510410fc5f50463ccff
+'http://security.debian.org/debian-security/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.diff.gz' bash_4.2+dfsg-0.1+deb7u4.diff.gz 92229 SHA256:935bfaf7f9542de61fd97328006f0d59b729292bd453e36e8c9d302dc5129e11
 ```
 
 Other potentially useful URLs:
@@ -347,9 +347,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.22-8+deb7u3
-'http://security.debian.org/pool/updates/main/b/binutils/binutils_2.22-8+deb7u3.dsc' binutils_2.22-8+deb7u3.dsc 2341 SHA256:a37ff3238f66395ec06f1633fe3a1fd204981cf249337b7c17a5864b48a8de87
-'http://security.debian.org/pool/updates/main/b/binutils/binutils_2.22.orig.tar.gz' binutils_2.22.orig.tar.gz 26843686 SHA256:12c26349fc7bb738f84b9826c61e103203187ca2d46f08b82e61e21fcbc6e3e6
-'http://security.debian.org/pool/updates/main/b/binutils/binutils_2.22-8+deb7u3.diff.gz' binutils_2.22-8+deb7u3.diff.gz 174687 SHA256:e4d79d884f012c449734f6f8febcf997b12144bb9ccce5bfe22e338660177da9
+'http://security.debian.org/debian-security/pool/updates/main/b/binutils/binutils_2.22-8+deb7u3.dsc' binutils_2.22-8+deb7u3.dsc 2341 SHA256:a37ff3238f66395ec06f1633fe3a1fd204981cf249337b7c17a5864b48a8de87
+'http://security.debian.org/debian-security/pool/updates/main/b/binutils/binutils_2.22.orig.tar.gz' binutils_2.22.orig.tar.gz 26843686 SHA256:12c26349fc7bb738f84b9826c61e103203187ca2d46f08b82e61e21fcbc6e3e6
+'http://security.debian.org/debian-security/pool/updates/main/b/binutils/binutils_2.22-8+deb7u3.diff.gz' binutils_2.22-8+deb7u3.diff.gz 174687 SHA256:e4d79d884f012c449734f6f8febcf997b12144bb9ccce5bfe22e338660177da9
 ```
 
 Other potentially useful URLs:
@@ -401,9 +401,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bzr=2.6.0~bzr6526-1+deb7u1
-'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.dsc' bzr_2.6.0~bzr6526-1+deb7u1.dsc 2496 SHA256:3c6c1d75bb41892e64e8931b62af169f7d9a1489e7b2ee94364d05ce024be917
-'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
-'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz' bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz 44251 SHA256:405f7ac5596952a7f2111d1446c457ecc70f0db83c8150f3e00fdd2c4638f78e
+'http://security.debian.org/debian-security/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.dsc' bzr_2.6.0~bzr6526-1+deb7u1.dsc 2496 SHA256:3c6c1d75bb41892e64e8931b62af169f7d9a1489e7b2ee94364d05ce024be917
+'http://security.debian.org/debian-security/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
+'http://security.debian.org/debian-security/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz' bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz 44251 SHA256:405f7ac5596952a7f2111d1446c457ecc70f0db83c8150f3e00fdd2c4638f78e
 ```
 
 Other potentially useful URLs:
@@ -426,8 +426,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ca-certificates=20130119+deb7u2
-'http://security.debian.org/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.dsc' ca-certificates_20130119+deb7u2.dsc 1782 SHA256:c7ccab1d070c50ebf7ecc402a7b5ab81fcfd03bf625a10f5a12546c38ded5068
-'http://security.debian.org/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.tar.gz' ca-certificates_20130119+deb7u2.tar.gz 380743 SHA256:e6597c8e6d3fc081ef8f2c34c2f2443d36865103557ed84942561f5ebb058aed
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.dsc' ca-certificates_20130119+deb7u2.dsc 1782 SHA256:c7ccab1d070c50ebf7ecc402a7b5ab81fcfd03bf625a10f5a12546c38ded5068
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.tar.gz' ca-certificates_20130119+deb7u2.tar.gz 380743 SHA256:e6597c8e6d3fc081ef8f2c34c2f2443d36865103557ed84942561f5ebb058aed
 ```
 
 Other potentially useful URLs:
@@ -453,9 +453,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cairo=1.12.2-3+deb7u1
-'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.dsc' cairo_1.12.2-3+deb7u1.dsc 2649 SHA256:9bea0482d932c5e791e01785d67e82a9ac2210d470a7fb23ce4a4e22896c596a
-'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2.orig.tar.xz' cairo_1.12.2.orig.tar.xz 42051584 SHA256:b786bc4a70542bcb09f2d9d13e5e6a0c86408cbf6d1edde5f0de807eecf93f96
-'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.debian.tar.gz' cairo_1.12.2-3+deb7u1.debian.tar.gz 36579 SHA256:cc84faa0d160ec8d00dd42d90b1998c72f12dace179ee40c1beff4948fbe98e7
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.dsc' cairo_1.12.2-3+deb7u1.dsc 2649 SHA256:9bea0482d932c5e791e01785d67e82a9ac2210d470a7fb23ce4a4e22896c596a
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.12.2.orig.tar.xz' cairo_1.12.2.orig.tar.xz 42051584 SHA256:b786bc4a70542bcb09f2d9d13e5e6a0c86408cbf6d1edde5f0de807eecf93f96
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.debian.tar.gz' cairo_1.12.2-3+deb7u1.debian.tar.gz 36579 SHA256:cc84faa0d160ec8d00dd42d90b1998c72f12dace179ee40c1beff4948fbe98e7
 ```
 
 Other potentially useful URLs:
@@ -514,14 +514,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy24`
+### `dpkg` source package: `curl=7.26.0-1+wheezy25`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy24`
-- `libcurl3:amd64=7.26.0-1+wheezy24`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy24`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy24`
+- `curl=7.26.0-1+wheezy25`
+- `libcurl3:amd64=7.26.0-1+wheezy25`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy25`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy25`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -530,13 +530,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy25
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0-1+wheezy25.dsc' curl_7.26.0-1+wheezy25.dsc 2534 SHA256:181d73a470ed67f93874b721c438442098763af686c2ac53cb5877f744249294
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0-1+wheezy25.debian.tar.gz' curl_7.26.0-1+wheezy25.debian.tar.gz 75277 SHA256:c91ded039ee01bfc6e7834b8b07c59f53dff58c5d8b92bd56370b4e4ce540e9b
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy24/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy25/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy25/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy25/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -632,9 +639,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris db=5.1.29-5+deb7u1
-'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
-'http://security.debian.org/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
-'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
+'http://security.debian.org/debian-security/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
+'http://security.debian.org/debian-security/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
+'http://security.debian.org/debian-security/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
 ```
 
 Other potentially useful URLs:
@@ -844,9 +851,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
+'http://security.debian.org/debian-security/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
+'http://security.debian.org/debian-security/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
+'http://security.debian.org/debian-security/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
 ```
 
 Other potentially useful URLs:
@@ -895,9 +902,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.1.0-1+deb7u5
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.dsc' expat_2.1.0-1+deb7u5.dsc 2191 SHA256:440c97224d3e4f9ca10575b3562a80e2e6b7547363a4f2d30e4b0e70579d3344
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.dsc' expat_2.1.0-1+deb7u5.dsc 2191 SHA256:440c97224d3e4f9ca10575b3562a80e2e6b7547363a4f2d30e4b0e70579d3344
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
 ```
 
 Other potentially useful URLs:
@@ -922,9 +929,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris file=5.11-2+deb7u9
-'http://security.debian.org/pool/updates/main/f/file/file_5.11-2+deb7u9.dsc' file_5.11-2+deb7u9.dsc 2129 SHA256:bb06f28a1846caec61502c408339a7143e8437de01aee20d89a4ef725cfdde2b
-'http://security.debian.org/pool/updates/main/f/file/file_5.11.orig.tar.xz' file_5.11.orig.tar.xz 444104 SHA256:4a7c047666cf54dce00f2c5a32a6379f94203e5c886fc294bab449c1a1ae286b
-'http://security.debian.org/pool/updates/main/f/file/file_5.11-2+deb7u9.debian.tar.xz' file_5.11-2+deb7u9.debian.tar.xz 48560 SHA256:065ff768ddffb062d6cadfa10fb9050ac220566371dad55ecb393eb34b47eb47
+'http://security.debian.org/debian-security/pool/updates/main/f/file/file_5.11-2+deb7u9.dsc' file_5.11-2+deb7u9.dsc 2129 SHA256:bb06f28a1846caec61502c408339a7143e8437de01aee20d89a4ef725cfdde2b
+'http://security.debian.org/debian-security/pool/updates/main/f/file/file_5.11.orig.tar.xz' file_5.11.orig.tar.xz 444104 SHA256:4a7c047666cf54dce00f2c5a32a6379f94203e5c886fc294bab449c1a1ae286b
+'http://security.debian.org/debian-security/pool/updates/main/f/file/file_5.11-2+deb7u9.debian.tar.xz' file_5.11-2+deb7u9.debian.tar.xz 48560 SHA256:065ff768ddffb062d6cadfa10fb9050ac220566371dad55ecb393eb34b47eb47
 ```
 
 Other potentially useful URLs:
@@ -976,9 +983,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.9.0-7.1+deb7u1
-'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.9.0-7.1+deb7u1.dsc' fontconfig_2.9.0-7.1+deb7u1.dsc 2141 SHA256:456cb212d45760f0be87a287a312291fdf687559f2fc5fd9a05fba0ad3e49e10
-'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.9.0.orig.tar.gz' fontconfig_2.9.0.orig.tar.gz 1631768 SHA256:43245d1fb1c1679038aec9271ced5d5f7613935ed21c7c39489f2fc7c7cce531
-'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz' fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz 54842 SHA256:24ad281e5003ca7575a561e209ecb27a703de956d10dcf00038b558569032c88
+'http://security.debian.org/debian-security/pool/updates/main/f/fontconfig/fontconfig_2.9.0-7.1+deb7u1.dsc' fontconfig_2.9.0-7.1+deb7u1.dsc 2141 SHA256:456cb212d45760f0be87a287a312291fdf687559f2fc5fd9a05fba0ad3e49e10
+'http://security.debian.org/debian-security/pool/updates/main/f/fontconfig/fontconfig_2.9.0.orig.tar.gz' fontconfig_2.9.0.orig.tar.gz 1631768 SHA256:43245d1fb1c1679038aec9271ced5d5f7613935ed21c7c39489f2fc7c7cce531
+'http://security.debian.org/debian-security/pool/updates/main/f/fontconfig/fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz' fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz 54842 SHA256:24ad281e5003ca7575a561e209ecb27a703de956d10dcf00038b558569032c88
 ```
 
 Other potentially useful URLs:
@@ -1009,8 +1016,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u7
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.dsc' freetype_2.4.9-1.1+deb7u7.dsc 1823 SHA256:e08860f372af2358d611bd6e6d74b31d1f0fb84f10bb686a0129f668c9a79f91
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.tar.gz' freetype_2.4.9-1.1+deb7u7.tar.gz 1832352 SHA256:23eb1cb785aaea8f9469205141cdd99ed85c682cd6460c0303bb961774edfea3
+'http://security.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.dsc' freetype_2.4.9-1.1+deb7u7.dsc 1823 SHA256:e08860f372af2358d611bd6e6d74b31d1f0fb84f10bb686a0129f668c9a79f91
+'http://security.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.tar.gz' freetype_2.4.9-1.1+deb7u7.tar.gz 1832352 SHA256:23eb1cb785aaea8f9469205141cdd99ed85c682cd6460c0303bb961774edfea3
 ```
 
 Other potentially useful URLs:
@@ -1127,9 +1134,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u8
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u8.dsc' gdk-pixbuf_2.26.1-1+deb7u8.dsc 2713 SHA256:17f1f6069bf0b5d08b0df551b17d094193f66958c035de9bb953f9fb418bcc75
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u8.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u8.debian.tar.gz 20407 SHA256:1ed073f20864beb4c4dc6b104b1a16c9dda246bf67ce19104252e3686b9e35ea
+'http://security.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u8.dsc' gdk-pixbuf_2.26.1-1+deb7u8.dsc 2713 SHA256:17f1f6069bf0b5d08b0df551b17d094193f66958c035de9bb953f9fb418bcc75
+'http://security.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://security.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u8.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u8.debian.tar.gz 20407 SHA256:1ed073f20864beb4c4dc6b104b1a16c9dda246bf67ce19104252e3686b9e35ea
 ```
 
 Other potentially useful URLs:
@@ -1196,9 +1203,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy6
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.dsc' git_1.7.10.4-1+wheezy6.dsc 2647 SHA256:8befb631b5fd5148a7de7ff6af0cf126d151e3054275beaf2e0c684c0deae64b
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.diff.gz' git_1.7.10.4-1+wheezy6.diff.gz 524332 SHA256:983cf65f3e2aa609f54c53680f420c328b2f254a2b6227fa0677d103ff378aa6
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.dsc' git_1.7.10.4-1+wheezy6.dsc 2647 SHA256:8befb631b5fd5148a7de7ff6af0cf126d151e3054275beaf2e0c684c0deae64b
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.diff.gz' git_1.7.10.4-1+wheezy6.diff.gz 524332 SHA256:983cf65f3e2aa609f54c53680f420c328b2f254a2b6227fa0677d103ff378aa6
 ```
 
 Other potentially useful URLs:
@@ -1277,9 +1284,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u9
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.dsc' gnupg_1.4.12-7+deb7u9.dsc 2338 SHA256:8613c9a227b3181870c4573a321787638153cb95cea2e031b908df4d5d0149f8
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.dsc' gnupg_1.4.12-7+deb7u9.dsc 2338 SHA256:8613c9a227b3181870c4573a321787638153cb95cea2e031b908df4d5d0149f8
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
 ```
 
 Other potentially useful URLs:
@@ -1543,9 +1550,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u21
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u21.dsc' imagemagick_6.7.7.10-5+deb7u21.dsc 3174 SHA256:d15e6a4d34fbe08a365488e6720b72a63888a595ad5624d38c1beef5d17afb6e
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u21.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u21.debian.tar.bz2 260673 SHA256:616225a68f2767ea53a014a3fa33953bedbccae7247a7a27e67a070df561f502
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u21.dsc' imagemagick_6.7.7.10-5+deb7u21.dsc 3174 SHA256:d15e6a4d34fbe08a365488e6720b72a63888a595ad5624d38c1beef5d17afb6e
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u21.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u21.debian.tar.bz2 260673 SHA256:616225a68f2767ea53a014a3fa33953bedbccae7247a7a27e67a070df561f502
 ```
 
 Other potentially useful URLs:
@@ -1553,32 +1560,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u21/ (for browsing the source)
 - https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u21/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/imagemagick/8:6.7.7.10-5+deb7u21/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `inetutils=2:1.9-2`
-
-Binary Packages:
-
-- `inetutils-ping=2:1.9-2`
-
-Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.dsc' inetutils_1.9-2.dsc 1889 SHA256:e843a9796d9e637827b93412d9556afc0b5badca8611cb59315128a24711a39e
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.orig.tar.gz' inetutils_1.9.orig.tar.gz 2091681 SHA256:e517178ee33b8427a66ca351a0ba2694c36666aa5c88e969f75a684d85d80730
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.debian.tar.gz' inetutils_1.9-2.debian.tar.gz 82510 SHA256:a629f3ccdbbcd2d4df22af5df81ba3beb36e64cd40a3c2a79e4a302354437d58
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/inetutils/2:1.9-2/ (for browsing the source)
-- https://sources.debian.net/src/inetutils/2:1.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/inetutils/2:1.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `insserv=1.14.0-5`
 
@@ -1630,6 +1611,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/iproute/20120521-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/iproute/20120521-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `iputils=3:20101006-1`
+
+Binary Packages:
+
+- `iputils-ping=3:20101006-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris iputils=3:20101006-1
+'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20101006-1.dsc' iputils_20101006-1.dsc 1223 SHA256:2eb5138834420f137ac375f33c2aa2779f7f01a1efcb97b24ba0ea7660445173
+'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20101006.orig.tar.gz' iputils_20101006.orig.tar.gz 960627 SHA256:cc9f77ad3215f3be8a20ada0135866a0ca2b1ebc28f16db2cbac017b1c716e7f
+'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20101006-1.debian.tar.gz' iputils_20101006-1.debian.tar.gz 10500 SHA256:c3bfa98632c891e03c46bad5d57d44e22757a5867eb9f068198e446c12e43896
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/iputils/3:20101006-1/ (for browsing the source)
+- https://sources.debian.net/src/iputils/3:20101006-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/iputils/3:20101006-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `jasper=1.900.1-13+deb7u6`
 
 Binary Packages:
@@ -1645,9 +1651,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u6
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.dsc' jasper_1.900.1-13+deb7u6.dsc 2051 SHA256:5557e601b45d56b4e9a378de8ed0dbf20238a3ca6be50d410e10b537b0b7c61e
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.debian.tar.gz' jasper_1.900.1-13+deb7u6.debian.tar.gz 40166 SHA256:66218e510c7cef7b4744b66c8eed10e4842ca95119401df4109d4fbc61eb1595
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.dsc' jasper_1.900.1-13+deb7u6.dsc 2051 SHA256:5557e601b45d56b4e9a378de8ed0dbf20238a3ca6be50d410e10b537b0b7c61e
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.debian.tar.gz' jasper_1.900.1-13+deb7u6.debian.tar.gz 40166 SHA256:66218e510c7cef7b4744b66c8eed10e4842ca95119401df4109d4fbc61eb1595
 ```
 
 Other potentially useful URLs:
@@ -1762,9 +1768,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u9
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u9.dsc' krb5_1.10.1+dfsg-5+deb7u9.dsc 3103 SHA256:4d7e916ace2bac7f942b55be043b63e2b91eb8b156fb55ceb87d3fe9e2041f54
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
-'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u9.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u9.debian.tar.gz 162139 SHA256:56910ade754c60eef6b61639baed2dbceb2ed5a5d2982e2496a3b4a223cc9c4c
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u9.dsc' krb5_1.10.1+dfsg-5+deb7u9.dsc 3103 SHA256:4d7e916ace2bac7f942b55be043b63e2b91eb8b156fb55ceb87d3fe9e2041f54
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u9.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u9.debian.tar.gz 162139 SHA256:56910ade754c60eef6b61639baed2dbceb2ed5a5d2982e2496a3b4a223cc9c4c
 ```
 
 Other potentially useful URLs:
@@ -1789,9 +1795,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lcms2=2.2+git20110628-2.2+deb7u2
-'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.dsc' lcms2_2.2+git20110628-2.2+deb7u2.dsc 2018 SHA256:00d0fc32c074e6de8903195ee5b8d3fe6d1b402c88e991e7ff76254740bf8636
-'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628.orig.tar.gz' lcms2_2.2+git20110628.orig.tar.gz 4201101 SHA256:3b91fe90ef858d43524a513275af1fb43a6ea9f44221a20a00cf6818d8a60833
-'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz' lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz 7039 SHA256:bf2f7d979fb4dfb07f357e6d2ed0489107d502e5de72161a76ebe1897398b55f
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.dsc' lcms2_2.2+git20110628-2.2+deb7u2.dsc 2018 SHA256:00d0fc32c074e6de8903195ee5b8d3fe6d1b402c88e991e7ff76254740bf8636
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.2+git20110628.orig.tar.gz' lcms2_2.2+git20110628.orig.tar.gz 4201101 SHA256:3b91fe90ef858d43524a513275af1fb43a6ea9f44221a20a00cf6818d8a60833
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz' lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz 7039 SHA256:bf2f7d979fb4dfb07f357e6d2ed0489107d502e5de72161a76ebe1897398b55f
 ```
 
 Other potentially useful URLs:
@@ -1892,9 +1898,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcroco=0.6.6-2+deb7u1
-'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.dsc' libcroco_0.6.6-2+deb7u1.dsc 2346 SHA256:c62438cb7a1fcaed368b031fbb5f35e159efb5f8b004857e0faa1241b7b6a898
-'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6.orig.tar.xz' libcroco_0.6.6.orig.tar.xz 463920 SHA256:72ecace2f3d016a25f2b923c6d0cc76cced823e94171692c533f6c2088086bd9
-'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.debian.tar.gz' libcroco_0.6.6-2+deb7u1.debian.tar.gz 8224 SHA256:4375f95f208719c6795ce3fb70cb22bc5b07c2c51d19c9e50193331b66a4a621
+'http://security.debian.org/debian-security/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.dsc' libcroco_0.6.6-2+deb7u1.dsc 2346 SHA256:c62438cb7a1fcaed368b031fbb5f35e159efb5f8b004857e0faa1241b7b6a898
+'http://security.debian.org/debian-security/pool/updates/main/libc/libcroco/libcroco_0.6.6.orig.tar.xz' libcroco_0.6.6.orig.tar.xz 463920 SHA256:72ecace2f3d016a25f2b923c6d0cc76cced823e94171692c533f6c2088086bd9
+'http://security.debian.org/debian-security/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.debian.tar.gz' libcroco_0.6.6-2+deb7u1.debian.tar.gz 8224 SHA256:4375f95f208719c6795ce3fb70cb22bc5b07c2c51d19c9e50193331b66a4a621
 ```
 
 Other potentially useful URLs:
@@ -2001,9 +2007,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libevent=2.0.19-stable-3+deb7u2
-'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.19-stable-3+deb7u2.dsc' libevent_2.0.19-stable-3+deb7u2.dsc 2404 SHA256:8758b4041d7c46b42dde423c393d57c7c8b70dd99bd62db4c50d964f4b64ce06
-'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.19-stable.orig.tar.bz2' libevent_2.0.19-stable.orig.tar.bz2 684062 SHA256:f111b460429289e958cd5f3bb75d06abd920d30ad733ff00a79f5864a7ca62e9
-'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.19-stable-3+deb7u2.debian.tar.xz' libevent_2.0.19-stable-3+deb7u2.debian.tar.xz 13984 SHA256:a36c2fdbe781c053efbdc8c2e10ad4a79322889c3efac6ccfa124eebdba40c4a
+'http://security.debian.org/debian-security/pool/updates/main/libe/libevent/libevent_2.0.19-stable-3+deb7u2.dsc' libevent_2.0.19-stable-3+deb7u2.dsc 2404 SHA256:8758b4041d7c46b42dde423c393d57c7c8b70dd99bd62db4c50d964f4b64ce06
+'http://security.debian.org/debian-security/pool/updates/main/libe/libevent/libevent_2.0.19-stable.orig.tar.bz2' libevent_2.0.19-stable.orig.tar.bz2 684062 SHA256:f111b460429289e958cd5f3bb75d06abd920d30ad733ff00a79f5864a7ca62e9
+'http://security.debian.org/debian-security/pool/updates/main/libe/libevent/libevent_2.0.19-stable-3+deb7u2.debian.tar.xz' libevent_2.0.19-stable-3+deb7u2.debian.tar.xz 13984 SHA256:a36c2fdbe781c053efbdc8c2e10ad4a79322889c3efac6ccfa124eebdba40c4a
 ```
 
 Other potentially useful URLs:
@@ -2057,9 +2063,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.0.10-3+deb7u2
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.dsc' libffi_3.0.10-3+deb7u2.dsc 2258 SHA256:39b6a4d9995bb25d7df49766db41550f25b8caef49e6c45ec2b8ccf97802f89b
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.diff.gz' libffi_3.0.10-3+deb7u2.diff.gz 21140 SHA256:67d25925a375e7b8a54616801abd440d6bd42e82298932652c66aa4c3d01bfbc
+'http://security.debian.org/debian-security/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.dsc' libffi_3.0.10-3+deb7u2.dsc 2258 SHA256:39b6a4d9995bb25d7df49766db41550f25b8caef49e6c45ec2b8ccf97802f89b
+'http://security.debian.org/debian-security/pool/updates/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
+'http://security.debian.org/debian-security/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.diff.gz' libffi_3.0.10-3+deb7u2.diff.gz 21140 SHA256:67d25925a375e7b8a54616801abd440d6bd42e82298932652c66aa4c3d01bfbc
 ```
 
 Other potentially useful URLs:
@@ -2084,9 +2090,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u6
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.dsc' libgcrypt11_1.5.0-5+deb7u6.dsc 2488 SHA256:42d5191ac23cb81c2958f6e89f706c80786dfbce5e53827b979a5aa578d60f4c
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz 38896 SHA256:112613559143ec5f35f809c31e8fb3ae7f64d944df5111d172fb72fe6b159bd3
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.dsc' libgcrypt11_1.5.0-5+deb7u6.dsc 2488 SHA256:42d5191ac23cb81c2958f6e89f706c80786dfbce5e53827b979a5aa578d60f4c
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz 38896 SHA256:112613559143ec5f35f809c31e8fb3ae7f64d944df5111d172fb72fe6b159bd3
 ```
 
 Other potentially useful URLs:
@@ -2117,9 +2123,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u11
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.dsc 2429 SHA256:c90947b4e0011551f1b78936c20d1e8275ad40c15aa9389107894bbd31b93d59
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.debian.tar.gz 34744 SHA256:83cab51096b75affb5f53728987b6eaaa3c29b423f332c6297aa6b230521a0d0
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.dsc 2429 SHA256:c90947b4e0011551f1b78936c20d1e8275ad40c15aa9389107894bbd31b93d59
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u11.debian.tar.gz 34744 SHA256:83cab51096b75affb5f53728987b6eaaa3c29b423f332c6297aa6b230521a0d0
 ```
 
 Other potentially useful URLs:
@@ -2205,9 +2211,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libidn=1.25-2+deb7u3
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u3.dsc' libidn_1.25-2+deb7u3.dsc 2180 SHA256:ffacd4d38a660d0004a77b3794cfd8515de99916deb388a0c36f9dccdd9c1051
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25.orig.tar.gz' libidn_1.25.orig.tar.gz 3390531 SHA256:7fe625328a6a5d837d723c462c1788affb84d9c9fc0ae5cd0ce9ac7724c34716
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u3.debian.tar.gz' libidn_1.25-2+deb7u3.debian.tar.gz 31795 SHA256:11e7ac785ab5a807c3cee12d33f19d763fd056497c6f240235b6d4c8286ce51c
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u3.dsc' libidn_1.25-2+deb7u3.dsc 2180 SHA256:ffacd4d38a660d0004a77b3794cfd8515de99916deb388a0c36f9dccdd9c1051
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.25.orig.tar.gz' libidn_1.25.orig.tar.gz 3390531 SHA256:7fe625328a6a5d837d723c462c1788affb84d9c9fc0ae5cd0ce9ac7724c34716
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u3.debian.tar.gz' libidn_1.25-2+deb7u3.debian.tar.gz 31795 SHA256:11e7ac785ab5a807c3cee12d33f19d763fd056497c6f240235b6d4c8286ce51c
 ```
 
 Other potentially useful URLs:
@@ -2369,9 +2375,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris librsvg=2.36.1-2+deb7u3
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u3.dsc' librsvg_2.36.1-2+deb7u3.dsc 2782 SHA256:4275bd222d21a2a4ed3bf1404ae0f30374cc72b969823bcfc5959c6968747860
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1.orig.tar.xz' librsvg_2.36.1.orig.tar.xz 506184 SHA256:786b95e1a091375c5ef2997a21c69ff24d7077afeff18197355f54d9dcbcd8c5
-'http://security.debian.org/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u3.debian.tar.gz' librsvg_2.36.1-2+deb7u3.debian.tar.gz 22546 SHA256:4d5e9cd56b46328807a27003bbab4722025b997e7220cfae572bd91e34e5f87d
+'http://security.debian.org/debian-security/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u3.dsc' librsvg_2.36.1-2+deb7u3.dsc 2782 SHA256:4275bd222d21a2a4ed3bf1404ae0f30374cc72b969823bcfc5959c6968747860
+'http://security.debian.org/debian-security/pool/updates/main/libr/librsvg/librsvg_2.36.1.orig.tar.xz' librsvg_2.36.1.orig.tar.xz 506184 SHA256:786b95e1a091375c5ef2997a21c69ff24d7077afeff18197355f54d9dcbcd8c5
+'http://security.debian.org/debian-security/pool/updates/main/libr/librsvg/librsvg_2.36.1-2+deb7u3.debian.tar.gz' librsvg_2.36.1-2+deb7u3.debian.tar.gz 22546 SHA256:4d5e9cd56b46328807a27003bbab4722025b997e7220cfae572bd91e34e5f87d
 ```
 
 Other potentially useful URLs:
@@ -2556,9 +2562,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u5
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.dsc' libtasn1-3_2.13-2+deb7u5.dsc 2492 SHA256:818f02ba2b4bd3278c2819df1918af3a274ef50dc76f9f4e19f5c04aebb74da8
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.debian.tar.gz' libtasn1-3_2.13-2+deb7u5.debian.tar.gz 14449 SHA256:a73cfde650ddc086a7681cae367d082b48a9454e225753cb0893180091d2c70c
+'http://security.debian.org/debian-security/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.dsc' libtasn1-3_2.13-2+deb7u5.dsc 2492 SHA256:818f02ba2b4bd3278c2819df1918af3a274ef50dc76f9f4e19f5c04aebb74da8
+'http://security.debian.org/debian-security/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
+'http://security.debian.org/debian-security/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.debian.tar.gz' libtasn1-3_2.13-2+deb7u5.debian.tar.gz 14449 SHA256:a73cfde650ddc086a7681cae367d082b48a9454e225753cb0893180091d2c70c
 ```
 
 Other potentially useful URLs:
@@ -2795,9 +2801,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libwmf=0.2.8.4-10.3+deb7u2
-'http://security.debian.org/pool/updates/main/libw/libwmf/libwmf_0.2.8.4-10.3+deb7u2.dsc' libwmf_0.2.8.4-10.3+deb7u2.dsc 2062 SHA256:53d6d325fc4f674ecef4bed8c5a31820ce91ca5aaef005670eacf19b841b83d8
-'http://security.debian.org/pool/updates/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://security.debian.org/pool/updates/main/libw/libwmf/libwmf_0.2.8.4-10.3+deb7u2.debian.tar.gz' libwmf_0.2.8.4-10.3+deb7u2.debian.tar.gz 12198 SHA256:74f23911f75ae4912891ecf497fb03f401854ab1695912c726a75fb891205ff1
+'http://security.debian.org/debian-security/pool/updates/main/libw/libwmf/libwmf_0.2.8.4-10.3+deb7u2.dsc' libwmf_0.2.8.4-10.3+deb7u2.dsc 2062 SHA256:53d6d325fc4f674ecef4bed8c5a31820ce91ca5aaef005670eacf19b841b83d8
+'http://security.debian.org/debian-security/pool/updates/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
+'http://security.debian.org/debian-security/pool/updates/main/libw/libwmf/libwmf_0.2.8.4-10.3+deb7u2.debian.tar.gz' libwmf_0.2.8.4-10.3+deb7u2.debian.tar.gz 12198 SHA256:74f23911f75ae4912891ecf497fb03f401854ab1695912c726a75fb891205ff1
 ```
 
 Other potentially useful URLs:
@@ -2822,8 +2828,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u4
-'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.dsc' libx11_1.5.0-1+deb7u4.dsc 2271 SHA256:52168e2788e9eeca165f74ba9378d6efcec8c354f57530863ed97c6dca478d92
-'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.tar.gz' libx11_1.5.0-1+deb7u4.tar.gz 2682419 SHA256:17eb00a4ce660891caa15d5b6cec99aef6cd69cb456dc4696d96125b13a69454
+'http://security.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.dsc' libx11_1.5.0-1+deb7u4.dsc 2271 SHA256:52168e2788e9eeca165f74ba9378d6efcec8c354f57530863ed97c6dca478d92
+'http://security.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.tar.gz' libx11_1.5.0-1+deb7u4.tar.gz 2682419 SHA256:17eb00a4ce660891caa15d5b6cec99aef6cd69cb456dc4696d96125b13a69454
 ```
 
 Other potentially useful URLs:
@@ -2955,9 +2961,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy12
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy12.dsc' libxml2_2.8.0+dfsg1-7+wheezy12.dsc 2677 SHA256:9365b0a2ae68cf361b2a4e2021977128b86f1e489636754c1ae98bd90590c1f1
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy12.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy12.debian.tar.gz 77003 SHA256:8e13ab9b402e9b3492b2ac21e355c9cabe76a0ee01c534498e14bae0af812d92
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy12.dsc' libxml2_2.8.0+dfsg1-7+wheezy12.dsc 2677 SHA256:9365b0a2ae68cf361b2a4e2021977128b86f1e489636754c1ae98bd90590c1f1
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy12.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy12.debian.tar.gz 77003 SHA256:8e13ab9b402e9b3492b2ac21e355c9cabe76a0ee01c534498e14bae0af812d92
 ```
 
 Other potentially useful URLs:
@@ -2981,9 +2987,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxrender=1:0.9.7-1+deb7u3
-'http://security.debian.org/pool/updates/main/libx/libxrender/libxrender_0.9.7-1+deb7u3.dsc' libxrender_0.9.7-1+deb7u3.dsc 2295 SHA256:ebd70ff531bd0c38a99265638fe0121f33f4f3d3d822643269352b5bbf88beee
-'http://security.debian.org/pool/updates/main/libx/libxrender/libxrender_0.9.7.orig.tar.gz' libxrender_0.9.7.orig.tar.gz 357264 SHA256:89f36e896018f5b8c00768af59e052019ae79fab69a647eb1fe61b565d7dd18e
-'http://security.debian.org/pool/updates/main/libx/libxrender/libxrender_0.9.7-1+deb7u3.diff.gz' libxrender_0.9.7-1+deb7u3.diff.gz 21235 SHA256:35bc64e73c2024639ad25a0f1cc41ad2d80af7be1219eec059a2809c4ad767c2
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxrender/libxrender_0.9.7-1+deb7u3.dsc' libxrender_0.9.7-1+deb7u3.dsc 2295 SHA256:ebd70ff531bd0c38a99265638fe0121f33f4f3d3d822643269352b5bbf88beee
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxrender/libxrender_0.9.7.orig.tar.gz' libxrender_0.9.7.orig.tar.gz 357264 SHA256:89f36e896018f5b8c00768af59e052019ae79fab69a647eb1fe61b565d7dd18e
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxrender/libxrender_0.9.7-1+deb7u3.diff.gz' libxrender_0.9.7-1+deb7u3.diff.gz 21235 SHA256:35bc64e73c2024639ad25a0f1cc41ad2d80af7be1219eec059a2809c4ad767c2
 ```
 
 Other potentially useful URLs:
@@ -3007,9 +3013,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.26-14.1+deb7u3
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.dsc' libxslt_1.1.26-14.1+deb7u3.dsc 2041 SHA256:a2d01a726d36c4d94b1c44f668720a1c864e6413f8b9ee8409009ffe9af9518d
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26.orig.tar.gz' libxslt_1.1.26.orig.tar.gz 3401513 SHA256:55dd52b42861f8a02989d701ef716d6280bfa02971e967c285016f99c66e3db1
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.debian.tar.gz' libxslt_1.1.26-14.1+deb7u3.debian.tar.gz 47942 SHA256:50de22884eed3115b86d808ee3ffd2a66d2cab1c3833e45d19e14c0b4d5bec85
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.dsc' libxslt_1.1.26-14.1+deb7u3.dsc 2041 SHA256:a2d01a726d36c4d94b1c44f668720a1c864e6413f8b9ee8409009ffe9af9518d
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.26.orig.tar.gz' libxslt_1.1.26.orig.tar.gz 3401513 SHA256:55dd52b42861f8a02989d701ef716d6280bfa02971e967c285016f99c66e3db1
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.debian.tar.gz' libxslt_1.1.26-14.1+deb7u3.debian.tar.gz 47942 SHA256:50de22884eed3115b86d808ee3ffd2a66d2cab1c3833e45d19e14c0b4d5bec85
 ```
 
 Other potentially useful URLs:
@@ -3070,11 +3076,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.4-2+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.2.96-3`
+### `dpkg` source package: `linux=3.2.101-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.96-3`
+- `linux-libc-dev:amd64=3.2.101-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3083,17 +3089,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.2.96-3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.96-3.dsc' linux_3.2.96-3.dsc 103043 SHA256:558348d15224f6dd111f10da39cdbbad9a58cf3180de1033ab4d1f92f2366273
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.96.orig.tar.xz' linux_3.2.96.orig.tar.xz 66009964 SHA256:4828cc7a453a8184143bf8598ecc555554904c5ed46e403812dfd93e5f92bbe4
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.96-3.debian.tar.xz' linux_3.2.96-3.debian.tar.xz 2279980 SHA256:9e7ed1059f4e8bb909efdfdd80b52d84e40cc227ea3f33f5d049f8df559ab198
+$ apt-get source -qq --print-uris linux=3.2.101-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101-1.dsc' linux_3.2.101-1.dsc 103091 SHA256:a95cfe94bb83337484e5c556f10ac209bed8ae73949c9d7f2029eabac5d08a27
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101.orig.tar.xz' linux_3.2.101.orig.tar.xz 66037444 SHA256:30a2425507fafb374ddb579a982325a305c2160f1b389572500bab656fcf1965
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101-1.debian.tar.xz' linux_3.2.101-1.debian.tar.xz 2249512 SHA256:2fb2e71860b08e7f48fe0dbfeacd8ac2ba4e90f12d29cbef9754bc93104ef429
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.2.96-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.2.96-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.2.96-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.2.101-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.2.101-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.2.101-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3196,25 +3202,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=2.2.2-4+deb7u6`
+### `dpkg` source package: `mercurial=2.2.2-4+deb7u7`
 
 Binary Packages:
 
-- `mercurial=2.2.2-4+deb7u6`
-- `mercurial-common=2.2.2-4+deb7u6`
+- `mercurial=2.2.2-4+deb7u7`
+- `mercurial-common=2.2.2-4+deb7u7`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u7
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u7.dsc' mercurial_2.2.2-4+deb7u7.dsc 1833 SHA256:f01e53b02fcb10b57cb55e22bfb27eead48c8db3436a38cc1f7d6af5bbf50102
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u7.debian.tar.gz' mercurial_2.2.2-4+deb7u7.debian.tar.gz 68730 SHA256:641b838431390d3cdc4e3a1102ecb620534e5dde1e91ea319237765ace7e314b
+```
 
-- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u7/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
@@ -3291,13 +3304,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpfr4/3.1.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpfr4/3.1.0-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.59-0+deb7u1`
+### `dpkg` source package: `mysql-5.5=5.5.60-0+deb7u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.59-0+deb7u1`
-- `libmysqlclient18:amd64=5.5.59-0+deb7u1`
-- `mysql-common=5.5.59-0+deb7u1`
+- `libmysqlclient-dev=5.5.60-0+deb7u1`
+- `libmysqlclient18:amd64=5.5.60-0+deb7u1`
+- `mysql-common=5.5.60-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3315,13 +3328,20 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.60-0+deb7u1
+'http://security.debian.org/debian-security/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60-0+deb7u1.dsc' mysql-5.5_5.5.60-0+deb7u1.dsc 2971 SHA256:a80416a6b9bb0d53e57ad31b55bd39f13f27f46a4117e75886f7801356400870
+'http://security.debian.org/debian-security/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60.orig.tar.gz' mysql-5.5_5.5.60.orig.tar.gz 21025041 SHA256:a34112e1748823f6dfd0d129fe29a629cf35b8702f9dfaf1f24caf89ab523d1c
+'http://security.debian.org/debian-security/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.60-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.60-0+deb7u1.debian.tar.gz 380496 SHA256:64912e1c4beaa93f0a0065c97e136f1d3b9d4716529a21023bcf7e684550f7de
+```
 
-- http://snapshot.debian.org/package/mysql-5.5/5.5.59-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mysql-5.5/5.5.60-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.60-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.60-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3420,9 +3440,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openexr=1.6.1-6+deb7u1
-'http://security.debian.org/pool/updates/main/o/openexr/openexr_1.6.1-6+deb7u1.dsc' openexr_1.6.1-6+deb7u1.dsc 2288 SHA256:5f49c1d9180589acc8d87fce389a7e70cb1c43ddef812a66715861e1249d913a
-'http://security.debian.org/pool/updates/main/o/openexr/openexr_1.6.1.orig.tar.gz' openexr_1.6.1.orig.tar.gz 13632660 SHA256:c616906ab958de9c37bb86ca7547cfedbdfbad5e1ca2a4ab98983c9afa6a5950
-'http://security.debian.org/pool/updates/main/o/openexr/openexr_1.6.1-6+deb7u1.debian.tar.gz' openexr_1.6.1-6+deb7u1.debian.tar.gz 14423 SHA256:b2ddcb95827e9269acdb89f5d20ca77290d536eee8a764134adff8cb4fdbb9ab
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_1.6.1-6+deb7u1.dsc' openexr_1.6.1-6+deb7u1.dsc 2288 SHA256:5f49c1d9180589acc8d87fce389a7e70cb1c43ddef812a66715861e1249d913a
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_1.6.1.orig.tar.gz' openexr_1.6.1.orig.tar.gz 13632660 SHA256:c616906ab958de9c37bb86ca7547cfedbdfbad5e1ca2a4ab98983c9afa6a5950
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_1.6.1-6+deb7u1.debian.tar.gz' openexr_1.6.1-6+deb7u1.debian.tar.gz 14423 SHA256:b2ddcb95827e9269acdb89f5d20ca77290d536eee8a764134adff8cb4fdbb9ab
 ```
 
 Other potentially useful URLs:
@@ -3446,9 +3466,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.31-2+deb7u3
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.dsc' openldap_2.4.31-2+deb7u3.dsc 2752 SHA256:0b62e62a3a4494b75b57f304ed1fdc46d5aa58d6080759431941067b461b52df
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.diff.gz' openldap_2.4.31-2+deb7u3.diff.gz 166505 SHA256:699983d42003b2c7402703c33510007c64daafbdf90250199e56bdaf40537aaa
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.dsc' openldap_2.4.31-2+deb7u3.dsc 2752 SHA256:0b62e62a3a4494b75b57f304ed1fdc46d5aa58d6080759431941067b461b52df
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.diff.gz' openldap_2.4.31-2+deb7u3.diff.gz 166505 SHA256:699983d42003b2c7402703c33510007c64daafbdf90250199e56bdaf40537aaa
 ```
 
 Other potentially useful URLs:
@@ -3471,9 +3491,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:6.0p1-4+deb7u7
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u7.dsc' openssh_6.0p1-4+deb7u7.dsc 2159 SHA256:2d6effe41ee6b343aeaea42fc20e49523200151b6c1b8b8cf0aff746fafc5b0b
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1.orig.tar.gz' openssh_6.0p1.orig.tar.gz 1126034 SHA256:589d48e952d6c017e667873486b5df63222f9133d417d0002bd6429d9bd882de
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u7.debian.tar.gz' openssh_6.0p1-4+deb7u7.debian.tar.gz 254986 SHA256:fed630cc7406baf5062ead91e72bd609fbe28fde7e83f7746afb663ef93a1784
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u7.dsc' openssh_6.0p1-4+deb7u7.dsc 2159 SHA256:2d6effe41ee6b343aeaea42fc20e49523200151b6c1b8b8cf0aff746fafc5b0b
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.0p1.orig.tar.gz' openssh_6.0p1.orig.tar.gz 1126034 SHA256:589d48e952d6c017e667873486b5df63222f9133d417d0002bd6429d9bd882de
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u7.debian.tar.gz' openssh_6.0p1-4+deb7u7.debian.tar.gz 254986 SHA256:fed630cc7406baf5062ead91e72bd609fbe28fde7e83f7746afb663ef93a1784
 ```
 
 Other potentially useful URLs:
@@ -3482,25 +3502,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:6.0p1-4+deb7u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb7u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb7u4`
 
 Binary Packages:
 
-- `libssl-dev=1.0.1t-1+deb7u3`
-- `libssl1.0.0:amd64=1.0.1t-1+deb7u3`
-- `openssl=1.0.1t-1+deb7u3`
+- `libssl-dev=1.0.1t-1+deb7u4`
+- `libssl1.0.0:amd64=1.0.1t-1+deb7u4`
+- `openssl=1.0.1t-1+deb7u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u4
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u4.dsc' openssl_1.0.1t-1+deb7u4.dsc 1883 SHA256:b6b0e24dfce7692dcb573c6af89bd4d0768a2c782f8ad5e4094cc6276127232f
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u4.debian.tar.gz' openssl_1.0.1t-1+deb7u4.debian.tar.gz 120381 SHA256:f40e7bd1c7cd5bec0a780e570fc2235c204e9ec38ce95e538cad0d64d48fbe7f
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
@@ -3583,11 +3610,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pango1.0/1.30.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pango1.0/1.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `patch=2.6.1-3`
+### `dpkg` source package: `patch=2.6.1-3+deb7u1`
 
 Binary Packages:
 
-- `patch=2.6.1-3`
+- `patch=2.6.1-3+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
@@ -3596,17 +3623,17 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris patch=2.6.1-3
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.6.1-3.dsc' patch_2.6.1-3.dsc 1748 SHA256:b02b2062b733ab53d0822944ce1b2e21cc91cbd6536a7cbea6b5f94919ce4b95
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.6.1.orig.tar.gz' patch_2.6.1.orig.tar.gz 303692 SHA256:d1563731e9cffed11cc5f011b2b8e074c325e86a383a91889b5c5b80b09781b9
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.6.1-3.debian.tar.gz' patch_2.6.1-3.debian.tar.gz 8806 SHA256:f254f714db19a60479440a0fdab699b8085898e0759b942754228076db94e62a
+$ apt-get source -qq --print-uris patch=2.6.1-3+deb7u1
+'http://security.debian.org/debian-security/pool/updates/main/p/patch/patch_2.6.1-3+deb7u1.dsc' patch_2.6.1-3+deb7u1.dsc 1776 SHA256:c3e4af95cb2f6a6645c42cd35933fac3c30532179c5bb938afb981b785abe999
+'http://security.debian.org/debian-security/pool/updates/main/p/patch/patch_2.6.1.orig.tar.gz' patch_2.6.1.orig.tar.gz 303692 SHA256:d1563731e9cffed11cc5f011b2b8e074c325e86a383a91889b5c5b80b09781b9
+'http://security.debian.org/debian-security/pool/updates/main/p/patch/patch_2.6.1-3+deb7u1.debian.tar.gz' patch_2.6.1-3+deb7u1.debian.tar.gz 10869 SHA256:ad68e541263a76d03d1e1abdd24a408063d35667e056513922e9f7d22c79599b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/patch/2.6.1-3/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.6.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.6.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/patch/2.6.1-3+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/patch/2.6.1-3+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/patch/2.6.1-3+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=1:8.30-5`
 
@@ -3635,13 +3662,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/1:8.30-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/1:8.30-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.14.2-21+deb7u5`
+### `dpkg` source package: `perl=5.14.2-21+deb7u6`
 
 Binary Packages:
 
-- `perl=5.14.2-21+deb7u5`
-- `perl-base=5.14.2-21+deb7u5`
-- `perl-modules=5.14.2-21+deb7u5`
+- `perl=5.14.2-21+deb7u6`
+- `perl-base=5.14.2-21+deb7u6`
+- `perl-modules=5.14.2-21+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -3668,13 +3695,20 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u6
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.14.2-21+deb7u6.dsc' perl_5.14.2-21+deb7u6.dsc 2394 SHA256:36cea23c621477ae966104f7f538f8169a72d615f5dbbcae511cdb92b1a58be3
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.14.2-21+deb7u6.debian.tar.gz' perl_5.14.2-21+deb7u6.debian.tar.gz 196930 SHA256:fdc2d8cb7ce78957f71fb3f8cb06106e6199a0417dbffbcabb01c0b2d2d62a9d
+```
 
-- http://snapshot.debian.org/package/perl/5.14.2-21+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.14.2-21+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.26.0-4+deb7u2`
 
@@ -3772,9 +3806,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.1=9.1.24lts2-0+deb7u2
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u2.dsc' postgresql-9.1_9.1.24lts2-0+deb7u2.dsc 3381 SHA256:24737ee99b8d3ab6a856da553bbfdb09c4f8955bb5d668425e9309e059aa0753
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2.orig.tar.bz2' postgresql-9.1_9.1.24lts2.orig.tar.bz2 15809167 SHA256:b1db8299cfccb31d0d0396b9a00afd9610fdab8768d45f4749fd2faf60b3931f
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u2.debian.tar.gz' postgresql-9.1_9.1.24lts2-0+deb7u2.debian.tar.gz 56921 SHA256:cdeaba0681765e3c3609946a3231a3fe6de89f0a9fb2d5702e998faea854c906
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u2.dsc' postgresql-9.1_9.1.24lts2-0+deb7u2.dsc 3381 SHA256:24737ee99b8d3ab6a856da553bbfdb09c4f8955bb5d668425e9309e059aa0753
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2.orig.tar.bz2' postgresql-9.1_9.1.24lts2.orig.tar.bz2 15809167 SHA256:b1db8299cfccb31d0d0396b9a00afd9610fdab8768d45f4749fd2faf60b3931f
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u2.debian.tar.gz' postgresql-9.1_9.1.24lts2-0+deb7u2.debian.tar.gz 56921 SHA256:cdeaba0681765e3c3609946a3231a3fe6de89f0a9fb2d5702e998faea854c906
 ```
 
 Other potentially useful URLs:
@@ -3857,9 +3891,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python2.7=2.7.3-6+deb7u4
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u4.dsc' python2.7_2.7.3-6+deb7u4.dsc 2790 SHA256:ded7d4499e6e86af6c6deb3bc9558b9ba500d992018c0602a8935c1363d1d7d8
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u4.diff.gz' python2.7_2.7.3-6+deb7u4.diff.gz 541968 SHA256:058406639c18deddd6fbf78c65f9170775e634c4a10f0de80c49af42e479d333
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u4.dsc' python2.7_2.7.3-6+deb7u4.dsc 2790 SHA256:ded7d4499e6e86af6c6deb3bc9558b9ba500d992018c0602a8935c1363d1d7d8
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u4.diff.gz' python2.7_2.7.3-6+deb7u4.diff.gz 541968 SHA256:058406639c18deddd6fbf78c65f9170775e634c4a10f0de80c49af42e479d333
 ```
 
 Other potentially useful URLs:
@@ -3912,9 +3946,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1+deb7u1
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc 2231 SHA256:fda2a79452563ca827a9ed8961d06cd64c2b2987294e940474e5d87cf0fecba4
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
+'http://security.debian.org/debian-security/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc 2231 SHA256:fda2a79452563ca827a9ed8961d06cd64c2b2987294e940474e5d87cf0fecba4
+'http://security.debian.org/debian-security/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
+'http://security.debian.org/debian-security/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
 ```
 
 Other potentially useful URLs:
@@ -3962,8 +3996,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sensible-utils=0.0.7+deb7u1
-'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.7+deb7u1.dsc' sensible-utils_0.0.7+deb7u1.dsc 1570 SHA256:3b881197008e306cce5a2a77ff5921100755466796d700e64f9c5dbe410f25a4
-'http://security.debian.org/pool/updates/main/s/sensible-utils/sensible-utils_0.0.7+deb7u1.tar.gz' sensible-utils_0.0.7+deb7u1.tar.gz 74968 SHA256:727da1b74c3cb86443dffff2499f20161435cc46dc160779e88e8a911f21ca3b
+'http://security.debian.org/debian-security/pool/updates/main/s/sensible-utils/sensible-utils_0.0.7+deb7u1.dsc' sensible-utils_0.0.7+deb7u1.dsc 1570 SHA256:3b881197008e306cce5a2a77ff5921100755466796d700e64f9c5dbe410f25a4
+'http://security.debian.org/debian-security/pool/updates/main/s/sensible-utils/sensible-utils_0.0.7+deb7u1.tar.gz' sensible-utils_0.0.7+deb7u1.tar.gz 74968 SHA256:727da1b74c3cb86443dffff2499f20161435cc46dc160779e88e8a911f21ca3b
 ```
 
 Other potentially useful URLs:
@@ -3987,9 +4021,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.1.5.1-1+deb7u1
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.dsc' shadow_4.1.5.1-1+deb7u1.dsc 2213 SHA256:56a482196c5b46de55115a63d26ca509fea15b24e5edbcca764893323562d23a
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.diff.gz' shadow_4.1.5.1-1+deb7u1.diff.gz 81816 SHA256:75872dd557090197966644ae8e2855f6967d8d24ca48d0edd707f56fdfbd638f
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.dsc' shadow_4.1.5.1-1+deb7u1.dsc 2213 SHA256:56a482196c5b46de55115a63d26ca509fea15b24e5edbcca764893323562d23a
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.diff.gz' shadow_4.1.5.1-1+deb7u1.diff.gz 81816 SHA256:75872dd557090197966644ae8e2855f6967d8d24ca48d0edd707f56fdfbd638f
 ```
 
 Other potentially useful URLs:
@@ -4039,10 +4073,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.7.13-1+deb7u4
-'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.dsc' sqlite3_3.7.13-1+deb7u4.dsc 2447 SHA256:f096b6609611239f74a76e65e895325d3fc711d49925b87c9ca136919586ea15
-'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig-www.tar.gz' sqlite3_3.7.13.orig-www.tar.gz 3031341 SHA256:8ce4b88b696e30b1a02b36dc71cff83ac81e28f82a42b1a5a33bef3434ca1079
-'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig.tar.gz' sqlite3_3.7.13.orig.tar.gz 4367680 SHA256:9a9e72043cb0b5a790561c5a6829e3b2b87c5087e5b47dee74424be8cb814716
-'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.debian.tar.gz' sqlite3_3.7.13-1+deb7u4.debian.tar.gz 22519 SHA256:4a400935fb1472e25af4e9bb11f97ce4c898a72223acea5263613e70bdb78138
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.dsc' sqlite3_3.7.13-1+deb7u4.dsc 2447 SHA256:f096b6609611239f74a76e65e895325d3fc711d49925b87c9ca136919586ea15
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig-www.tar.gz' sqlite3_3.7.13.orig-www.tar.gz 3031341 SHA256:8ce4b88b696e30b1a02b36dc71cff83ac81e28f82a42b1a5a33bef3434ca1079
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig.tar.gz' sqlite3_3.7.13.orig.tar.gz 4367680 SHA256:9a9e72043cb0b5a790561c5a6829e3b2b87c5087e5b47dee74424be8cb814716
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.debian.tar.gz' sqlite3_3.7.13-1+deb7u4.debian.tar.gz 22519 SHA256:4a400935fb1472e25af4e9bb11f97ce4c898a72223acea5263613e70bdb78138
 ```
 
 Other potentially useful URLs:
@@ -4068,9 +4102,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris subversion=1.6.17dfsg-4+deb7u12
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u12.dsc' subversion_1.6.17dfsg-4+deb7u12.dsc 2942 SHA256:64a8e415aedd94ebc3041e5398051faa176cf19a8c7b5751042bc0f14c3cbae3
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg.orig.tar.gz' subversion_1.6.17dfsg.orig.tar.gz 7757112 SHA256:45a8a067b65cfe5326f9676f991d82f39d67f8309c35e58f67e689eb702679d0
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u12.diff.gz' subversion_1.6.17dfsg-4+deb7u12.diff.gz 120543 SHA256:18dd76f4e3a4e97d0aaa895ed3ca2117e1c0b05fa53db7582489a96bb6b413e9
+'http://security.debian.org/debian-security/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u12.dsc' subversion_1.6.17dfsg-4+deb7u12.dsc 2942 SHA256:64a8e415aedd94ebc3041e5398051faa176cf19a8c7b5751042bc0f14c3cbae3
+'http://security.debian.org/debian-security/pool/updates/main/s/subversion/subversion_1.6.17dfsg.orig.tar.gz' subversion_1.6.17dfsg.orig.tar.gz 7757112 SHA256:45a8a067b65cfe5326f9676f991d82f39d67f8309c35e58f67e689eb702679d0
+'http://security.debian.org/debian-security/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u12.diff.gz' subversion_1.6.17dfsg-4+deb7u12.diff.gz 120543 SHA256:18dd76f4e3a4e97d0aaa895ed3ca2117e1c0b05fa53db7582489a96bb6b413e9
 ```
 
 Other potentially useful URLs:
@@ -4122,9 +4156,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.26+dfsg-0.1+deb7u1
-'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.dsc' tar_1.26+dfsg-0.1+deb7u1.dsc 1823 SHA256:ace9b8c6105a452791fe4d1f28ded50a9a06e499bfa5f3d8c86ee17e32f9e6ed
-'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg.orig.tar.xz' tar_1.26+dfsg.orig.tar.xz 1557888 SHA256:2791c99df400cd05afb1d78f29c4a412b6f038e5f38aa4759264cb434d715df6
-'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz' tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz 33515 SHA256:49a050cb0c1ed62f6688f0e7f32f44994fab029b4195b8eaf295afd9a0013f4b
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.dsc' tar_1.26+dfsg-0.1+deb7u1.dsc 1823 SHA256:ace9b8c6105a452791fe4d1f28ded50a9a06e499bfa5f3d8c86ee17e32f9e6ed
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.26+dfsg.orig.tar.xz' tar_1.26+dfsg.orig.tar.xz 1557888 SHA256:2791c99df400cd05afb1d78f29c4a412b6f038e5f38aa4759264cb434d715df6
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz' tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz 33515 SHA256:49a050cb0c1ed62f6688f0e7f32f44994fab029b4195b8eaf295afd9a0013f4b
 ```
 
 Other potentially useful URLs:
@@ -4133,25 +4167,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.26+dfsg-0.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u9`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u10`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u9`
-- `libtiff4-dev=3.9.6-11+deb7u9`
-- `libtiffxx0c2:amd64=3.9.6-11+deb7u9`
+- `libtiff4:amd64=3.9.6-11+deb7u10`
+- `libtiff4-dev=3.9.6-11+deb7u10`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u10
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u10.dsc' tiff3_3.9.6-11+deb7u10.dsc 1619 SHA256:008d75f0e64e259bf5bff4f3869fd9a161fd40eabf08160561a8c720954be16f
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u10.debian.tar.gz' tiff3_3.9.6-11+deb7u10.debian.tar.gz 52031 SHA256:f876224e53d4b3e9f9b65921f2480af78078ca8f9dae566f06af25ea80677e3e
+```
 
-- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u10/ (for browsing the source)
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
@@ -4178,11 +4219,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ttf-dejavu/2.33-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018c-0+deb7u1`
+### `dpkg` source package: `tzdata=2018d-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2018c-0+deb7u1`
+- `tzdata=2018d-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4193,7 +4234,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/tzdata/2018c-0+deb7u1/
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/
 
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
@@ -4296,9 +4337,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris wget=1.13.4-3+deb7u5
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
 ```
 
 Other potentially useful URLs:
