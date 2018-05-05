@@ -1050,14 +1050,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `icclib`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.18~dfsg~0-0ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.7.dsc' ghostscript_9.18~dfsg~0-0ubuntu2.7.dsc 2889 SHA256:f364d62d663c0a86d43dd999e7a219cd559da971c307b4b04309176f1f6bc292
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0.orig.tar.bz2' ghostscript_9.18~dfsg~0.orig.tar.bz2 18274376 SHA256:b39e5d163e37e4c78b67380ada922c09ad65879f82e2322d1efbbf4ad1d7b814
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.7.debian.tar.xz' ghostscript_9.18~dfsg~0-0ubuntu2.7.debian.tar.xz 111812 SHA256:7472563d35647f4206457582a64045b6233dcc7abb268bd6e0473ca562fa8b83
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -4134,14 +4129,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.9.dsc' pulseaudio_8.0-0ubuntu3.9.dsc 4322 SHA256:7e9325fcce10083908a602aa814083908712eceef3d4679c7e067d5f395d3dbf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.9.debian.tar.xz' pulseaudio_8.0-0ubuntu3.9.debian.tar.xz 150772 SHA256:244e0f15b937341bcaf053008851f16e7ad87717cd8b179d2cdbd22bdb8af9bc
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
