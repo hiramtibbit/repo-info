@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:d1891a1656de6fc6a60eb9d8c8d923ec9cf4fec85e310d3eb6e48bfe9d6bb27b
+$ docker pull buildpack-deps@sha256:42f0cbc5f4e034c4ffeb47afc1d11962b0aa05a2a0dec6da942fdefeb1f261d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -177,14 +177,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:oldstable-scm` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:b3cabf51a34cf79d35b9c097993cc235de0bc66756d3dd5fd87f0ad3bc4c82eb
+$ docker pull buildpack-deps@sha256:5d0b72674a539098b1395cfe6c86877a0a066992cc57399011b4b7c655e8c5ed
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.3 MB (118271644 bytes)**  
+-	Total Size: **118.3 MB (118285909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc02c9139ef252c0e1f506f756fb0093fd026ed5a89ebf7807bf9459fadee6cd`
+-	Image ID: `sha256:98e190ee8523297c2adb2d7e7c0fbceed1ab45f2774c16882eeea3dcd7798ff1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -192,11 +192,11 @@ $ docker pull buildpack-deps@sha256:b3cabf51a34cf79d35b9c097993cc235de0bc66756d3
 ADD file:ce5174f2b2c155a2421fac3ff37a02d9551d5d79e31a541189bcfd2416a6903a in / 
 # Sat, 28 Apr 2018 10:39:32 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 12:05:27 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 12:05:28 GMT
+# Sat, 05 May 2018 10:58:32 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 10:58:33 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 28 Apr 2018 12:06:16 GMT
+# Sat, 05 May 2018 10:59:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -205,26 +205,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Sat, 28 Apr 2018 10:44:20 GMT  
 		Size: 54.5 MB (54486782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:330b9c3b7ebe34e933c240e5eb7f8620732974e6e15e2c5d17cb91ca2aefffa4`  
-		Last Modified: Sat, 28 Apr 2018 12:41:22 GMT  
-		Size: 19.9 MB (19866118 bytes)  
+	-	`sha256:74787bb4bafbd442893d0704b8d5e07e27bbf70148b113435531f54354d3bad3`  
+		Last Modified: Sat, 05 May 2018 11:36:26 GMT  
+		Size: 19.9 MB (19880379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e95c26c8327697a43fa28c5661dbe845de5d6f433ed1e10ea672b26239f4b303`  
-		Last Modified: Sat, 28 Apr 2018 12:41:52 GMT  
-		Size: 43.9 MB (43918744 bytes)  
+	-	`sha256:0e8673d7460975445961bb484c8555f084db769932a45f24f5e37f907889b7c7`  
+		Last Modified: Sat, 05 May 2018 11:36:56 GMT  
+		Size: 43.9 MB (43918748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oldstable-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:b1f7a5f115acbaeef753334b80f0899447dc9c4650b22c0d722b180b6d33518b
+$ docker pull buildpack-deps@sha256:36385aa001023022efa61af3fc68ce9b233efc1efe05579f34a5a8eef3155744
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.7 MB (113722937 bytes)**  
+-	Total Size: **113.7 MB (113739574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2b2eb76a8b3fca5496e18d17bda94f1d9c859992c5040622a12d9b7265e6825`
+-	Image ID: `sha256:2be17ad283bc30070ac651328b004509f48e8faa6a9b8939019bfba32bc05fdc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -232,11 +232,11 @@ $ docker pull buildpack-deps@sha256:b1f7a5f115acbaeef753334b80f0899447dc9c4650b2
 ADD file:6a4bd4ea54f669286e984ecf8178e1fa7c12c8b6fc0f96e4203ae7a6f99a2279 in / 
 # Sat, 28 Apr 2018 08:17:47 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 09:53:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 09:53:26 GMT
+# Sat, 05 May 2018 08:58:24 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 08:58:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 28 Apr 2018 09:55:09 GMT
+# Sat, 05 May 2018 09:02:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -245,13 +245,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Sat, 28 Apr 2018 08:24:36 GMT  
 		Size: 53.4 MB (53392811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73feb4c62e83f77f05ed3c1a72c453fce29bc8adee3ff31855937f28f0b9ad00`  
-		Last Modified: Sat, 28 Apr 2018 10:38:43 GMT  
-		Size: 17.6 MB (17571133 bytes)  
+	-	`sha256:c4330bc6a5e0bcfbe95c4a5b5982f6866f41b6cdc2d95042061dac233ebb605c`  
+		Last Modified: Sat, 05 May 2018 10:53:05 GMT  
+		Size: 17.6 MB (17586999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a9e426fcbdcb0192ea4862cc89ecfe1a4ca0be8efaf99ffb329e50214efbd39`  
-		Last Modified: Sat, 28 Apr 2018 10:39:15 GMT  
-		Size: 42.8 MB (42758993 bytes)  
+	-	`sha256:d6b80419adae67f8e9f1a9fee9a620fdcbdff5713ef2d259c091aaca6ae14914`  
+		Last Modified: Sat, 05 May 2018 10:53:52 GMT  
+		Size: 42.8 MB (42759764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oldstable-scm` - linux; s390x

@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:8b9ad912a2a8961fa06243dbf73484efb75fda7fb1bbda849a13c8c5b5c82eb1
+$ docker pull buildpack-deps@sha256:7f081119478c0db1755c52530628f61abe0ab945752856b5494d081d59f6000e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -169,14 +169,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:sid-curl` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:4396d7aabf3855325274b3d278aff94f6708ec680eb2c3951b43694b33ef6806
+$ docker pull buildpack-deps@sha256:1ed07edf730e0fc6c230865e8593593fc706ef4928c39a5f55130f234b6c0f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.1 MB (67070879 bytes)**  
+-	Total Size: **67.4 MB (67444854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f2deade6a8f9c9f438b45fd676c7c5bfe2582705f68e1213d23268c1819aa2a`
+-	Image ID: `sha256:b0550ba533c60041b7c248b4008b2a4f0f37bbdc30d4b6fb74462be7678bf77d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -184,9 +184,9 @@ $ docker pull buildpack-deps@sha256:4396d7aabf3855325274b3d278aff94f6708ec680eb2
 ADD file:cb21908d8f286f1381ea180209120314676afa1ce4d5d480e0310fe70a4c96d4 in / 
 # Sat, 28 Apr 2018 10:40:49 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 12:09:25 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 12:09:31 GMT
+# Sat, 05 May 2018 11:02:32 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 11:02:38 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -195,26 +195,26 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Sat, 28 Apr 2018 10:47:25 GMT  
 		Size: 49.1 MB (49090181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1221b68ac3c47d06c1341ffe090ec03398349bceea7339f16cc35cfc2d4d3e47`  
-		Last Modified: Sat, 28 Apr 2018 12:42:56 GMT  
-		Size: 8.6 MB (8592005 bytes)  
+	-	`sha256:10c0106e7eaef0802d668a2b79bf9f1db764acfe5d6181a1f4d15dc548ad4a5d`  
+		Last Modified: Sat, 05 May 2018 11:38:03 GMT  
+		Size: 8.6 MB (8616091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e5f5c3224bba80e122d520e5cb80f4eca7c9d3dc1118c27465db2e68af1bf5f`  
-		Last Modified: Sat, 28 Apr 2018 12:42:56 GMT  
-		Size: 9.4 MB (9388693 bytes)  
+	-	`sha256:cdc872687358d61e714f879d08e972342c93b7d91f31c13f6b15916a9a4130cc`  
+		Last Modified: Sat, 05 May 2018 11:38:03 GMT  
+		Size: 9.7 MB (9738582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:sid-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:8facb01cd6e2462fc4383d5e03d635f3b4c01204b6a918a451dd7104850ccd00
+$ docker pull buildpack-deps@sha256:38bfed2391283a7db26c2f6b7d5f9e21f5e193319b386996131400b4890e18bb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.3 MB (67314455 bytes)**  
+-	Total Size: **67.7 MB (67718693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19340e575cd949b47e569786cb3c1f3c59039df66e6bf9c5a30f0346a623f662`
+-	Image ID: `sha256:17972e1a23d084cabaeab35e233be494a8b422af14ac14eb45abef54888a001a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -222,9 +222,9 @@ $ docker pull buildpack-deps@sha256:8facb01cd6e2462fc4383d5e03d635f3b4c01204b6a9
 ADD file:320268259acdc4e2a105be735ea4ee0cb1398bb05ce729d46f4a54fa3c3c84e3 in / 
 # Sat, 28 Apr 2018 08:19:15 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 09:59:34 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 09:59:48 GMT
+# Sat, 05 May 2018 09:16:25 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:16:49 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -233,13 +233,13 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Sat, 28 Apr 2018 08:27:42 GMT  
 		Size: 49.8 MB (49754912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93ee43555042b4504f9abfd5ee30cca506ecd82ea7e7c0ad8585e2f9f9fe550f`  
-		Last Modified: Sat, 28 Apr 2018 10:40:34 GMT  
-		Size: 8.2 MB (8210961 bytes)  
+	-	`sha256:f77e4d2b61d28a226758713bae6bf933182cc9aa5eea6834696ef5865b36a2d2`  
+		Last Modified: Sat, 05 May 2018 10:56:29 GMT  
+		Size: 8.3 MB (8252158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:437ac69577ea2b14f065cda80eaeb0984300f029adc35d3f0992d36b61dba2ce`  
-		Last Modified: Sat, 28 Apr 2018 10:40:34 GMT  
-		Size: 9.3 MB (9348582 bytes)  
+	-	`sha256:ee38bf91c1472a5fafe06a2f5ba7ea5bf20d82e4c77308ccb3bb26c3068d95c5`  
+		Last Modified: Sat, 05 May 2018 10:56:40 GMT  
+		Size: 9.7 MB (9711623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:sid-curl` - linux; s390x
