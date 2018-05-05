@@ -1,4 +1,4 @@
-# `photon:2.0-20180409`
+# `photon:2.0`
 
 ## Docker Metadata
 
