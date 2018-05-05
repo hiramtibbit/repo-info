@@ -20,7 +20,7 @@
 ## `telegraf:1.4`
 
 ```console
-$ docker pull telegraf@sha256:bde5f9daa61032cfa7d68b74fd415e98ea407f8fc57b04e83955c79937d13683
+$ docker pull telegraf@sha256:05a9c5f9eda925d0d258cb260f39d982993864a47edd5aada2c0e37fcba0873f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -174,14 +174,14 @@ CMD ["telegraf"]
 ### `telegraf:1.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:e42ae79e263fbeab88b87850ae394e7fcc0aeb237d0b86a7929f12d60f1fc345
+$ docker pull telegraf@sha256:92e4e707e7f9b4c006c725b4e10e82d52f77a6733663c10c31948629f8314701
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.5 MB (80459680 bytes)**  
+-	Total Size: **80.5 MB (80486029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4882f9f9a3803bfdc65bbabf3e3d1ff0ad30a8b41ec8eb896b8dfa638c5ed79`
+-	Image ID: `sha256:65dc1c9c8842c04ecae07534a32c8390167fe3786b74a5a311828a593bfce065`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -190,25 +190,25 @@ $ docker pull telegraf@sha256:e42ae79e263fbeab88b87850ae394e7fcc0aeb237d0b86a792
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:05:17 GMT
+# Sat, 05 May 2018 21:05:38 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:05:22 GMT
+# Sat, 05 May 2018 21:05:44 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:05:23 GMT
+# Sat, 05 May 2018 21:05:45 GMT
 ENV TELEGRAF_VERSION=1.4.5
-# Tue, 01 May 2018 21:05:32 GMT
+# Sat, 05 May 2018 21:05:52 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:05:33 GMT
+# Sat, 05 May 2018 21:05:54 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:05:34 GMT
+# Sat, 05 May 2018 21:05:55 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:05:35 GMT
+# Sat, 05 May 2018 21:05:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:05:36 GMT
+# Sat, 05 May 2018 21:05:58 GMT
 CMD ["telegraf"]
 ```
 
@@ -217,35 +217,35 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:285faae9af8e1622357344799734f8e1d883f924f0cf019c7a05008a8d319ce9`  
-		Last Modified: Tue, 01 May 2018 21:07:40 GMT  
-		Size: 15.2 MB (15163871 bytes)  
+	-	`sha256:842bfe55532da4246e8ea0d12e04435f85d12773ff6c49d230611596389c30b0`  
+		Last Modified: Sat, 05 May 2018 21:07:45 GMT  
+		Size: 15.2 MB (15164350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f991353764ec447505fb0b2515f52aec6ead6407158d0caf933f7746824409d`  
-		Last Modified: Tue, 01 May 2018 21:07:26 GMT  
-		Size: 2.9 KB (2892 bytes)  
+	-	`sha256:8befbd00cca5bcf5c9e52f9c822bd8a3bad3ecccfc8952afbe922af4a2597f4e`  
+		Last Modified: Sat, 05 May 2018 21:07:38 GMT  
+		Size: 2.9 KB (2887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:951d15d9f37eabe5946e5256b832bb38674ec970023032716eac5fb4a3a1fc4d`  
-		Last Modified: Tue, 01 May 2018 21:07:34 GMT  
-		Size: 8.4 MB (8398618 bytes)  
+	-	`sha256:0d24947649bd7245f5c84f722a3dd79eed7fca799b41cc117af91c9614fbcad4`  
+		Last Modified: Sat, 05 May 2018 21:07:42 GMT  
+		Size: 8.4 MB (8398985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7704570b02a68c6c96425883ee704aafd0c581f96363623dd6ad1036eb868876`  
-		Last Modified: Tue, 01 May 2018 21:07:27 GMT  
-		Size: 185.0 B  
+	-	`sha256:72085db92b7123ed685701e49abf5c4c14bb661272791400840963a961e2d43b`  
+		Last Modified: Sat, 05 May 2018 21:07:38 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.4.5`
 
 ```console
-$ docker pull telegraf@sha256:bde5f9daa61032cfa7d68b74fd415e98ea407f8fc57b04e83955c79937d13683
+$ docker pull telegraf@sha256:05a9c5f9eda925d0d258cb260f39d982993864a47edd5aada2c0e37fcba0873f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -399,14 +399,14 @@ CMD ["telegraf"]
 ### `telegraf:1.4.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:e42ae79e263fbeab88b87850ae394e7fcc0aeb237d0b86a7929f12d60f1fc345
+$ docker pull telegraf@sha256:92e4e707e7f9b4c006c725b4e10e82d52f77a6733663c10c31948629f8314701
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.5 MB (80459680 bytes)**  
+-	Total Size: **80.5 MB (80486029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4882f9f9a3803bfdc65bbabf3e3d1ff0ad30a8b41ec8eb896b8dfa638c5ed79`
+-	Image ID: `sha256:65dc1c9c8842c04ecae07534a32c8390167fe3786b74a5a311828a593bfce065`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -415,25 +415,25 @@ $ docker pull telegraf@sha256:e42ae79e263fbeab88b87850ae394e7fcc0aeb237d0b86a792
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:05:17 GMT
+# Sat, 05 May 2018 21:05:38 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:05:22 GMT
+# Sat, 05 May 2018 21:05:44 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:05:23 GMT
+# Sat, 05 May 2018 21:05:45 GMT
 ENV TELEGRAF_VERSION=1.4.5
-# Tue, 01 May 2018 21:05:32 GMT
+# Sat, 05 May 2018 21:05:52 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:05:33 GMT
+# Sat, 05 May 2018 21:05:54 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:05:34 GMT
+# Sat, 05 May 2018 21:05:55 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:05:35 GMT
+# Sat, 05 May 2018 21:05:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:05:36 GMT
+# Sat, 05 May 2018 21:05:58 GMT
 CMD ["telegraf"]
 ```
 
@@ -442,29 +442,29 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:285faae9af8e1622357344799734f8e1d883f924f0cf019c7a05008a8d319ce9`  
-		Last Modified: Tue, 01 May 2018 21:07:40 GMT  
-		Size: 15.2 MB (15163871 bytes)  
+	-	`sha256:842bfe55532da4246e8ea0d12e04435f85d12773ff6c49d230611596389c30b0`  
+		Last Modified: Sat, 05 May 2018 21:07:45 GMT  
+		Size: 15.2 MB (15164350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f991353764ec447505fb0b2515f52aec6ead6407158d0caf933f7746824409d`  
-		Last Modified: Tue, 01 May 2018 21:07:26 GMT  
-		Size: 2.9 KB (2892 bytes)  
+	-	`sha256:8befbd00cca5bcf5c9e52f9c822bd8a3bad3ecccfc8952afbe922af4a2597f4e`  
+		Last Modified: Sat, 05 May 2018 21:07:38 GMT  
+		Size: 2.9 KB (2887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:951d15d9f37eabe5946e5256b832bb38674ec970023032716eac5fb4a3a1fc4d`  
-		Last Modified: Tue, 01 May 2018 21:07:34 GMT  
-		Size: 8.4 MB (8398618 bytes)  
+	-	`sha256:0d24947649bd7245f5c84f722a3dd79eed7fca799b41cc117af91c9614fbcad4`  
+		Last Modified: Sat, 05 May 2018 21:07:42 GMT  
+		Size: 8.4 MB (8398985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7704570b02a68c6c96425883ee704aafd0c581f96363623dd6ad1036eb868876`  
-		Last Modified: Tue, 01 May 2018 21:07:27 GMT  
-		Size: 185.0 B  
+	-	`sha256:72085db92b7123ed685701e49abf5c4c14bb661272791400840963a961e2d43b`  
+		Last Modified: Sat, 05 May 2018 21:07:38 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.4.5-alpine`
@@ -608,7 +608,7 @@ CMD ["telegraf"]
 ## `telegraf:1.5`
 
 ```console
-$ docker pull telegraf@sha256:d02777795e25e611a75e5d0b7aab82f8a46378a80031ecb9854a36c38d9ab218
+$ docker pull telegraf@sha256:384c1c802c59825eafe67a2ae46fdcd7d21a9d858c21e2c6bb43619573a5cded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -762,14 +762,14 @@ CMD ["telegraf"]
 ### `telegraf:1.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:cddfc7074ddd01247475c2f2112247ad078104ef9f7a79dd69714ebafe501fbe
+$ docker pull telegraf@sha256:c71895c7463be58cb7f359bc837c01ba6cb854906225d4142fe305659abf5f0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.8 MB (80771799 bytes)**  
+-	Total Size: **80.8 MB (80798022 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0cbf30383febec4d47ce884b2bbefcbf78001296664ff84942083905896ed02`
+-	Image ID: `sha256:999d3d51e696d1ba8b373269f0b851b961a300d6d5eae23401a5d44e6efca920`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -778,25 +778,25 @@ $ docker pull telegraf@sha256:cddfc7074ddd01247475c2f2112247ad078104ef9f7a79dd69
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:06:15 GMT
+# Sat, 05 May 2018 21:06:40 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:06:21 GMT
+# Sat, 05 May 2018 21:06:46 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:06:22 GMT
+# Sat, 05 May 2018 21:06:47 GMT
 ENV TELEGRAF_VERSION=1.5.3
-# Tue, 01 May 2018 21:06:31 GMT
+# Sat, 05 May 2018 21:06:53 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:06:32 GMT
+# Sat, 05 May 2018 21:06:54 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:06:33 GMT
+# Sat, 05 May 2018 21:06:55 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:06:35 GMT
+# Sat, 05 May 2018 21:06:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:06:36 GMT
+# Sat, 05 May 2018 21:06:57 GMT
 CMD ["telegraf"]
 ```
 
@@ -805,35 +805,35 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb4b16282e65cf278bf984ce8fc05f8450496b586764b4c8c66ec75c89aeb59`  
-		Last Modified: Tue, 01 May 2018 21:08:15 GMT  
-		Size: 15.2 MB (15163919 bytes)  
+	-	`sha256:5dd18d5ca5cf825a9c61abf780699ccc59eb91c79ed43c71c108e0e688af7b31`  
+		Last Modified: Sat, 05 May 2018 21:08:06 GMT  
+		Size: 15.2 MB (15164311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec62a63a2e1e4fc5d38b2b0ce5d1640547afb84f03233d6ab2da486d521172b3`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:a046b58699fb617e0b0e41d6dfdc9dd4863f2ad809f53c8dccce0e8c5b4830bb`  
+		Last Modified: Sat, 05 May 2018 21:08:01 GMT  
 		Size: 2.9 KB (2886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:554613e336a00ef802281051b59cfecc9a7230f0f49f83b572f6bc0f2743d510`  
-		Last Modified: Tue, 01 May 2018 21:08:10 GMT  
-		Size: 8.7 MB (8710695 bytes)  
+	-	`sha256:924dcc96e367e675db2070757ac5e9392a85512bebe7c51b589895f13b712a20`  
+		Last Modified: Sat, 05 May 2018 21:08:03 GMT  
+		Size: 8.7 MB (8711016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d4ab8ac1053e04126b654070998b1dfea6723faa3a454b59f73ad3bcd25ecea`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:ed505a4115f6ded3edcc86558f8bb26637c7c6e01bd3945e70ea0213ad95ab76`  
+		Last Modified: Sat, 05 May 2018 21:08:00 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.5.3`
 
 ```console
-$ docker pull telegraf@sha256:d02777795e25e611a75e5d0b7aab82f8a46378a80031ecb9854a36c38d9ab218
+$ docker pull telegraf@sha256:384c1c802c59825eafe67a2ae46fdcd7d21a9d858c21e2c6bb43619573a5cded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -987,14 +987,14 @@ CMD ["telegraf"]
 ### `telegraf:1.5.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:cddfc7074ddd01247475c2f2112247ad078104ef9f7a79dd69714ebafe501fbe
+$ docker pull telegraf@sha256:c71895c7463be58cb7f359bc837c01ba6cb854906225d4142fe305659abf5f0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.8 MB (80771799 bytes)**  
+-	Total Size: **80.8 MB (80798022 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0cbf30383febec4d47ce884b2bbefcbf78001296664ff84942083905896ed02`
+-	Image ID: `sha256:999d3d51e696d1ba8b373269f0b851b961a300d6d5eae23401a5d44e6efca920`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -1003,25 +1003,25 @@ $ docker pull telegraf@sha256:cddfc7074ddd01247475c2f2112247ad078104ef9f7a79dd69
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:06:15 GMT
+# Sat, 05 May 2018 21:06:40 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:06:21 GMT
+# Sat, 05 May 2018 21:06:46 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:06:22 GMT
+# Sat, 05 May 2018 21:06:47 GMT
 ENV TELEGRAF_VERSION=1.5.3
-# Tue, 01 May 2018 21:06:31 GMT
+# Sat, 05 May 2018 21:06:53 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:06:32 GMT
+# Sat, 05 May 2018 21:06:54 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:06:33 GMT
+# Sat, 05 May 2018 21:06:55 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:06:35 GMT
+# Sat, 05 May 2018 21:06:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:06:36 GMT
+# Sat, 05 May 2018 21:06:57 GMT
 CMD ["telegraf"]
 ```
 
@@ -1030,28 +1030,28 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb4b16282e65cf278bf984ce8fc05f8450496b586764b4c8c66ec75c89aeb59`  
-		Last Modified: Tue, 01 May 2018 21:08:15 GMT  
-		Size: 15.2 MB (15163919 bytes)  
+	-	`sha256:5dd18d5ca5cf825a9c61abf780699ccc59eb91c79ed43c71c108e0e688af7b31`  
+		Last Modified: Sat, 05 May 2018 21:08:06 GMT  
+		Size: 15.2 MB (15164311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec62a63a2e1e4fc5d38b2b0ce5d1640547afb84f03233d6ab2da486d521172b3`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:a046b58699fb617e0b0e41d6dfdc9dd4863f2ad809f53c8dccce0e8c5b4830bb`  
+		Last Modified: Sat, 05 May 2018 21:08:01 GMT  
 		Size: 2.9 KB (2886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:554613e336a00ef802281051b59cfecc9a7230f0f49f83b572f6bc0f2743d510`  
-		Last Modified: Tue, 01 May 2018 21:08:10 GMT  
-		Size: 8.7 MB (8710695 bytes)  
+	-	`sha256:924dcc96e367e675db2070757ac5e9392a85512bebe7c51b589895f13b712a20`  
+		Last Modified: Sat, 05 May 2018 21:08:03 GMT  
+		Size: 8.7 MB (8711016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d4ab8ac1053e04126b654070998b1dfea6723faa3a454b59f73ad3bcd25ecea`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:ed505a4115f6ded3edcc86558f8bb26637c7c6e01bd3945e70ea0213ad95ab76`  
+		Last Modified: Sat, 05 May 2018 21:08:00 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1196,7 +1196,7 @@ CMD ["telegraf"]
 ## `telegraf:1.6`
 
 ```console
-$ docker pull telegraf@sha256:146fc8b82eb299a3790f822758fcb6fbe03b021cb28f9688810ec5262ef4d9af
+$ docker pull telegraf@sha256:9ebc7d8a9370e1294f70b6ea8c83e2da115f8136ed9f78c8d68c1ff7ab417ee0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1350,14 +1350,14 @@ CMD ["telegraf"]
 ### `telegraf:1.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:fee5f43f5bffeea95baada3f0e11375ccb66e005ebbf0389b4873d7573744fa6
+$ docker pull telegraf@sha256:99876e48af1ffb43d8c0e85131827d980ea95f146fc105dec554ccb52dac8ede
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.1 MB (81135398 bytes)**  
+-	Total Size: **81.2 MB (81161628 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:158481156139d43ab6783e820a54f49277c88af2a59634dd10c7b97b579051d2`
+-	Image ID: `sha256:854ed69a4d845f660ddf8d07782d3132f906d0c95f408b8547862085357f778d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -1366,25 +1366,25 @@ $ docker pull telegraf@sha256:fee5f43f5bffeea95baada3f0e11375ccb66e005ebbf0389b4
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:06:15 GMT
+# Sat, 05 May 2018 21:06:40 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:06:21 GMT
+# Sat, 05 May 2018 21:06:46 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:06:50 GMT
+# Sat, 05 May 2018 21:07:12 GMT
 ENV TELEGRAF_VERSION=1.6.1
-# Tue, 01 May 2018 21:06:59 GMT
+# Sat, 05 May 2018 21:07:19 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:07:00 GMT
+# Sat, 05 May 2018 21:07:19 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:07:02 GMT
+# Sat, 05 May 2018 21:07:21 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:07:03 GMT
+# Sat, 05 May 2018 21:07:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:07:05 GMT
+# Sat, 05 May 2018 21:07:23 GMT
 CMD ["telegraf"]
 ```
 
@@ -1393,35 +1393,35 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb4b16282e65cf278bf984ce8fc05f8450496b586764b4c8c66ec75c89aeb59`  
-		Last Modified: Tue, 01 May 2018 21:08:15 GMT  
-		Size: 15.2 MB (15163919 bytes)  
+	-	`sha256:5dd18d5ca5cf825a9c61abf780699ccc59eb91c79ed43c71c108e0e688af7b31`  
+		Last Modified: Sat, 05 May 2018 21:08:06 GMT  
+		Size: 15.2 MB (15164311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec62a63a2e1e4fc5d38b2b0ce5d1640547afb84f03233d6ab2da486d521172b3`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:a046b58699fb617e0b0e41d6dfdc9dd4863f2ad809f53c8dccce0e8c5b4830bb`  
+		Last Modified: Sat, 05 May 2018 21:08:01 GMT  
 		Size: 2.9 KB (2886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab10b57907a41c499e2f5df8bcde13977b935972417cafe3d718fec6ce7ee137`  
-		Last Modified: Tue, 01 May 2018 21:08:42 GMT  
-		Size: 9.1 MB (9074294 bytes)  
+	-	`sha256:0faf1c1b90a1799acdeea1e9c03db973b1f64870606172cf947f047aa8f4fe07`  
+		Last Modified: Sat, 05 May 2018 21:08:26 GMT  
+		Size: 9.1 MB (9074624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fce0ba5b7c34506f90ecbd49e7f6f6046d9bbcdc238af0e6e38191465b816dc`  
-		Last Modified: Tue, 01 May 2018 21:08:37 GMT  
-		Size: 185.0 B  
+	-	`sha256:cab22c388b87b343f84415357d57d60f5e644cb9bcbb623e190959b584c13f79`  
+		Last Modified: Sat, 05 May 2018 21:08:22 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.6.1`
 
 ```console
-$ docker pull telegraf@sha256:146fc8b82eb299a3790f822758fcb6fbe03b021cb28f9688810ec5262ef4d9af
+$ docker pull telegraf@sha256:9ebc7d8a9370e1294f70b6ea8c83e2da115f8136ed9f78c8d68c1ff7ab417ee0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1575,14 +1575,14 @@ CMD ["telegraf"]
 ### `telegraf:1.6.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:fee5f43f5bffeea95baada3f0e11375ccb66e005ebbf0389b4873d7573744fa6
+$ docker pull telegraf@sha256:99876e48af1ffb43d8c0e85131827d980ea95f146fc105dec554ccb52dac8ede
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.1 MB (81135398 bytes)**  
+-	Total Size: **81.2 MB (81161628 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:158481156139d43ab6783e820a54f49277c88af2a59634dd10c7b97b579051d2`
+-	Image ID: `sha256:854ed69a4d845f660ddf8d07782d3132f906d0c95f408b8547862085357f778d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -1591,25 +1591,25 @@ $ docker pull telegraf@sha256:fee5f43f5bffeea95baada3f0e11375ccb66e005ebbf0389b4
 ADD file:245a8cfe59ea071e4e215a722e0d4b4b14fa95dd6ffd03739fe048433cfaf523 in / 
 # Mon, 30 Apr 2018 23:32:00 GMT
 CMD ["bash"]
-# Tue, 01 May 2018 08:07:41 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 08:08:02 GMT
+# Sat, 05 May 2018 09:38:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 09:39:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 01 May 2018 21:06:15 GMT
+# Sat, 05 May 2018 21:06:40 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
-# Tue, 01 May 2018 21:06:21 GMT
+# Sat, 05 May 2018 21:06:46 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 01 May 2018 21:06:50 GMT
+# Sat, 05 May 2018 21:07:12 GMT
 ENV TELEGRAF_VERSION=1.6.1
-# Tue, 01 May 2018 21:06:59 GMT
+# Sat, 05 May 2018 21:07:19 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 01 May 2018 21:07:00 GMT
+# Sat, 05 May 2018 21:07:19 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 01 May 2018 21:07:02 GMT
+# Sat, 05 May 2018 21:07:21 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 01 May 2018 21:07:03 GMT
+# Sat, 05 May 2018 21:07:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 01 May 2018 21:07:05 GMT
+# Sat, 05 May 2018 21:07:23 GMT
 CMD ["telegraf"]
 ```
 
@@ -1618,29 +1618,29 @@ CMD ["telegraf"]
 		Last Modified: Mon, 30 Apr 2018 23:52:13 GMT  
 		Size: 43.1 MB (43109349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fe3c77baf3b64937d2b7b343d9b966a08f6b90568acce53ff6effca0fd787fe`  
-		Last Modified: Tue, 01 May 2018 08:57:09 GMT  
-		Size: 9.7 MB (9697043 bytes)  
+	-	`sha256:1dd3e9bbb1f760ff8cab41817920c5822422ba1eaab36a233c8f43348791e03d`  
+		Last Modified: Sat, 05 May 2018 10:29:53 GMT  
+		Size: 9.7 MB (9722189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:769a11625fb0ec33902994bfc5463ff53a6754be4cd51b8dc5ca168a05228b09`  
-		Last Modified: Tue, 01 May 2018 08:57:06 GMT  
-		Size: 4.1 MB (4087722 bytes)  
+	-	`sha256:5534647756e8399143ad6e1639b6433b9a3364809ac4520f62199ea46e638a2e`  
+		Last Modified: Sat, 05 May 2018 10:29:50 GMT  
+		Size: 4.1 MB (4088086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb4b16282e65cf278bf984ce8fc05f8450496b586764b4c8c66ec75c89aeb59`  
-		Last Modified: Tue, 01 May 2018 21:08:15 GMT  
-		Size: 15.2 MB (15163919 bytes)  
+	-	`sha256:5dd18d5ca5cf825a9c61abf780699ccc59eb91c79ed43c71c108e0e688af7b31`  
+		Last Modified: Sat, 05 May 2018 21:08:06 GMT  
+		Size: 15.2 MB (15164311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec62a63a2e1e4fc5d38b2b0ce5d1640547afb84f03233d6ab2da486d521172b3`  
-		Last Modified: Tue, 01 May 2018 21:08:01 GMT  
+	-	`sha256:a046b58699fb617e0b0e41d6dfdc9dd4863f2ad809f53c8dccce0e8c5b4830bb`  
+		Last Modified: Sat, 05 May 2018 21:08:01 GMT  
 		Size: 2.9 KB (2886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab10b57907a41c499e2f5df8bcde13977b935972417cafe3d718fec6ce7ee137`  
-		Last Modified: Tue, 01 May 2018 21:08:42 GMT  
-		Size: 9.1 MB (9074294 bytes)  
+	-	`sha256:0faf1c1b90a1799acdeea1e9c03db973b1f64870606172cf947f047aa8f4fe07`  
+		Last Modified: Sat, 05 May 2018 21:08:26 GMT  
+		Size: 9.1 MB (9074624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fce0ba5b7c34506f90ecbd49e7f6f6046d9bbcdc238af0e6e38191465b816dc`  
-		Last Modified: Tue, 01 May 2018 21:08:37 GMT  
-		Size: 185.0 B  
+	-	`sha256:cab22c388b87b343f84415357d57d60f5e644cb9bcbb623e190959b584c13f79`  
+		Last Modified: Sat, 05 May 2018 21:08:22 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.6.1-alpine`
