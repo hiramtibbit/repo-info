@@ -1,7 +1,7 @@
 ## `buildpack-deps:artful-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:cd1a89adc6f4ec403d74e4240df9c83904ce0af0f79cd769554e0ef77067739f
+$ docker pull buildpack-deps@sha256:49e140c3c284360f99478272032cb3d7f4b6d17e6413aaee214d835e3abc3262
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -74,14 +74,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:artful-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:4cfd9ff5114602e392418f176ea4dcc7ed64a62d975ee26e6bffa2389949138f
+$ docker pull buildpack-deps@sha256:1a19e45d4ed78eb1a6a3e550206cdda16f20ddbbe00013dd9aec74d19370fdb2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.2 MB (41194996 bytes)**  
+-	Total Size: **41.2 MB (41207123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a2b3655c46c16e7c5a356f1e1ca12f64f674606132575ee8917323ec4d48f79`
+-	Image ID: `sha256:e7cee20bbc528c96f695f048bcbdafb2c8c945f16a09995bd91ecb076efc8a55`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -97,9 +97,9 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Sat, 28 Apr 2018 12:03:26 GMT
 CMD ["/bin/bash"]
-# Sat, 28 Apr 2018 12:26:00 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 12:26:07 GMT
+# Sat, 05 May 2018 11:57:52 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 11:57:57 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -124,9 +124,9 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Sat, 28 Apr 2018 12:06:06 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c1640c47a99436814b677e12d96c4bbacfa3d539cb8a4b00a1b2d2527405d9`  
-		Last Modified: Sat, 28 Apr 2018 12:57:04 GMT  
-		Size: 5.1 MB (5097547 bytes)  
+	-	`sha256:45ea9b42949fdcf7bdcec85ad2f59ca65d26b25b760c5e4a4f8c3f515ba11a9d`  
+		Last Modified: Sat, 05 May 2018 12:25:41 GMT  
+		Size: 5.1 MB (5109674 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:artful-curl` - linux; arm64 variant v8
