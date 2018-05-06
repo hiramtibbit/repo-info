@@ -1593,20 +1593,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.dsc' tzdata_2018d-0+deb8u1.dsc 2132 SHA256:868f053864e63650423613ed3601bcc836851ab7518ce350d497793145afbb00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.debian.tar.xz' tzdata_2018d-0+deb8u1.debian.tar.xz 103532 SHA256:c68b3a61899e7d89b7197800e9b166d6562070d544ece5d866e31da81b356879
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
