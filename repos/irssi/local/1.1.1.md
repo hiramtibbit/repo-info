@@ -1238,20 +1238,13 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:1.75-2+2018d
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2018d.dsc' libdatetime-timezone-perl_1.75-2+2018d.dsc 2628 SHA256:53fa283a811b680bcc2c1cfbdd71c742476f1d13e160c2e8b0ee0609f7646c40
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75.orig.tar.gz' libdatetime-timezone-perl_1.75.orig.tar.gz 888615 SHA256:8ea1282f1ab348766e9a81b46dac6e764375e319f442c24e030d14beb03a6e73
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2018d.debian.tar.xz' libdatetime-timezone-perl_1.75-2+2018d.debian.tar.xz 246600 SHA256:e6946300ab705f2748e3e17e8e71ebdebae5b7c1307000cc0a3278d02ff7515b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:1.75-2+2018d/
 
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2018d/ (for browsing the source)
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2018d/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:1.75-2+2018d/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libencode-locale-perl=1.03-1`
 
@@ -3177,20 +3170,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.dsc' tzdata_2018d-0+deb8u1.dsc 2132 SHA256:868f053864e63650423613ed3601bcc836851ab7518ce350d497793145afbb00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.debian.tar.xz' tzdata_2018d-0+deb8u1.debian.tar.xz 103532 SHA256:c68b3a61899e7d89b7197800e9b166d6562070d544ece5d866e31da81b356879
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
