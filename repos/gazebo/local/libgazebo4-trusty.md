@@ -139,8 +139,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.0.1ubuntu2.17
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
 ```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
