@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4c1a09f201c817c1f28fd750a058adeaa95e044ae16d95962663172b7f4d20a`
-- Created: `2018-05-01T12:45:44.939693955Z`
-- Virtual Size: ~ 431.67 Mb  
+- Image ID: `sha256:335d1fdcadbbd499297a787600b8444a68565bc4b3af3487dcc70ac6c588832a`
+- Created: `2018-05-04T23:56:16.194745343Z`
+- Virtual Size: ~ 428.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -301,34 +301,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/ (for browsing the source)
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/4.3-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u15`
-
-Binary Packages:
-
-- `libdns-export100=1:9.9.5.dfsg-9+deb8u15`
-- `libirs-export91=1:9.9.5.dfsg-9+deb8u15`
-- `libisc-export95=1:9.9.5.dfsg-9+deb8u15`
-- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u15`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u15
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.dsc' bind9_9.9.5.dfsg-9+deb8u15.dsc 3620 SHA256:1e90d3bdd8394b9f96aa494a0f5146ab52bc8a6c712cda9508f881dd9a0b28c1
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.diff.gz' bind9_9.9.5.dfsg-9+deb8u15.diff.gz 138089 SHA256:0e189a414fe9e73617e6ecdb20b4517d718c23e565cead79146e3c95aa886135
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-7`
 
@@ -1514,30 +1486,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/52.1-8+deb8u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/52.1-8+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ifupdown=0.7.53.1`
-
-Binary Packages:
-
-- `ifupdown=0.7.53.1`
-
-Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ifupdown=0.7.53.1
-'http://deb.debian.org/debian/pool/main/i/ifupdown/ifupdown_0.7.53.1.dsc' ifupdown_0.7.53.1.dsc 1530 SHA256:d183e1ca5e88de4e754cbd570734766d092d6cc670ae5e91e2317de41d497ceb
-'http://deb.debian.org/debian/pool/main/i/ifupdown/ifupdown_0.7.53.1.tar.xz' ifupdown_0.7.53.1.tar.xz 78432 SHA256:a97981b52d5758da42a8a2a3885a11d6e5f97eaf1a1b3c5fe36195e638ae6c03
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/ifupdown/0.7.53.1/ (for browsing the source)
-- https://sources.debian.net/src/ifupdown/0.7.53.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ifupdown/0.7.53.1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `init-system-helpers=1.22`
 
 Binary Packages:
@@ -1638,32 +1586,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/iputils/3:20121221-5/ (for browsing the source)
 - https://sources.debian.net/src/iputils/3:20121221-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/iputils/3:20121221-5/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `isc-dhcp=4.3.1-6+deb8u3`
-
-Binary Packages:
-
-- `isc-dhcp-client=4.3.1-6+deb8u3`
-- `isc-dhcp-common=4.3.1-6+deb8u3`
-
-Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
-
-- `ISC`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.3.1-6+deb8u3
-'http://security.debian.org/debian-security/pool/updates/main/i/isc-dhcp/isc-dhcp_4.3.1-6+deb8u3.dsc' isc-dhcp_4.3.1-6+deb8u3.dsc 2932 SHA256:5d7225a4ac38cdf7dd4a298e95a59207a28ce1975feb9869ff5dd0049000784c
-'http://security.debian.org/debian-security/pool/updates/main/i/isc-dhcp/isc-dhcp_4.3.1.orig.tar.gz' isc-dhcp_4.3.1.orig.tar.gz 8753867 SHA256:5204a7725f1cd48a3dcbd06a4edf51ecd1f3dfe24644e72f1bd4664e8e559619
-'http://security.debian.org/debian-security/pool/updates/main/i/isc-dhcp/isc-dhcp_4.3.1-6+deb8u3.debian.tar.xz' isc-dhcp_4.3.1-6+deb8u3.debian.tar.xz 83408 SHA256:932e7e4d99036aa0b446bac1b9c6ac7d289cbaa4300ba96ef2d3e9bd0d6020e4
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/isc-dhcp/4.3.1-6+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/isc-dhcp/4.3.1-6+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isc-dhcp/4.3.1-6+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
 
@@ -5004,20 +4926,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.dsc' tzdata_2018d-0+deb8u1.dsc 2132 SHA256:868f053864e63650423613ed3601bcc836851ab7518ce350d497793145afbb00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.debian.tar.xz' tzdata_2018d-0+deb8u1.debian.tar.xz 103532 SHA256:c68b3a61899e7d89b7197800e9b166d6562070d544ece5d866e31da81b356879
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
