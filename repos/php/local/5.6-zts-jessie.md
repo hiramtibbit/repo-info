@@ -1,10 +1,10 @@
-# `php:5.6.35-zts-jessie`
+# `php:5.6.36-zts-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe153777c6a16df9d266fbd0523c0cad988cfb5def4837385cc2513d6cee9d16`
-- Created: `2018-05-01T00:38:53.460240199Z`
-- Virtual Size: ~ 351.87 Mb  
+- Image ID: `sha256:33d99721fc1078b14bea8b592212d400d558636e7816a09f6a0c90634de72b86`
+- Created: `2018-05-05T02:17:47.739190175Z`
+- Virtual Size: ~ 351.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.35`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.35.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.35.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2`
+  - `PHP_VERSION=5.6.36`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.36.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.36.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=18f536bf548e909b4e980379d0c4e56d024b2b1eb1c9768fd169360491f1d6dd`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2689,20 +2689,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.dsc' tzdata_2018d-0+deb8u1.dsc 2132 SHA256:868f053864e63650423613ed3601bcc836851ab7518ce350d497793145afbb00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.debian.tar.xz' tzdata_2018d-0+deb8u1.debian.tar.xz 103532 SHA256:c68b3a61899e7d89b7197800e9b166d6562070d544ece5d866e31da81b356879
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 

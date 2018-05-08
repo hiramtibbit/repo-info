@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58c6f889ed32700779213f75793598405176eb31cb3eda07b45b6676b3a6170a`
-- Created: `2018-04-30T22:01:41.877733184Z`
-- Virtual Size: ~ 352.61 Mb  
+- Image ID: `sha256:3d5712054360d63764da2c6fa333bad6400c21a23acae731fa1af88ba57fa02d`
+- Created: `2018-05-05T00:37:02.008391813Z`
+- Virtual Size: ~ 352.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -2503,21 +2503,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb9u1.dsc' tzdata_2018d-0+deb9u1.dsc 2442 SHA256:6e204c7d3c545599083f7ddf771bc77ef86d3b51c625902dea4871c5d3105035
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz.asc' tzdata_2018d.orig.tar.gz.asc 819 SHA256:5b59a168565424e6227550c85d9007101d18a9d0b018ada02ad49abf5a086405
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb9u1.debian.tar.xz' tzdata_2018d-0+deb9u1.debian.tar.xz 101300 SHA256:3470407bded0facdbce6f4c2cb49106fb6fc80d0d87d5d6c4cb018420b314b12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
