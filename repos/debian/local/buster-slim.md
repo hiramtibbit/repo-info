@@ -868,21 +868,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.29-4
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29-4.dsc' libgpg-error_1.29-4.dsc 2060 SHA256:ef54b101d7dacc3914cc3ca9157e4d37e493e45577e9727fdf2c9108887936fc
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29.orig.tar.bz2' libgpg-error_1.29.orig.tar.bz2 894749 SHA256:ece926fa5719d17a7ad8da618712cfa2f8a796ab2f2af9d544c5bb093383b1ea
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29.orig.tar.bz2.asc' libgpg-error_1.29.orig.tar.bz2.asc 534 SHA256:7172264fb51aa8d6637718a6341121b836c8bc0c6c4439c1013ad99f880dd5b0
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.29-4.debian.tar.xz' libgpg-error_1.29-4.debian.tar.xz 16132 SHA256:9e62ac1c1890ec13c4b03c10654c5e853e951378312ba8e538de8e6406fe64b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.29-4/
 
-- https://sources.debian.net/src/libgpg-error/1.29-4/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.29-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.29-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.0.4-1.1`
 
