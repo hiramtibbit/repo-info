@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:11cb7a45764a9ee9d0f1c27ab707c2273fc5fad5763c112ce27d13d691387225`
-- Created: `2018-04-28T17:52:09.191151767Z`
-- Virtual Size: ~ 99.68 Mb  
+- Image ID: `sha256:2548f77cb1cc64b1a74f2ec84f5683b1e1490cb78d9eb2585d0210de38795224`
+- Created: `2018-05-04T17:53:58.541312828Z`
+- Virtual Size: ~ 99.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1272,6 +1272,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/5.9-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/5.9-10/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `netbase=5.0`
+
+Binary Packages:
+
+- `netbase=5.0`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=5.0
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.dsc' netbase_5.0.dsc 724 SHA256:a7a49618de72446682179bb70c550a0d7089c7b0db01eb83d560d3be72ca776d
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz' netbase_5.0.tar.gz 34915 SHA256:ac9424d3cb2bd3c07b6c5bc5875c434d3bc687a73cd7c54b7dc7122308afa9dc
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/netbase/5.0/ (for browsing the source)
+- https://sources.debian.net/src/netbase/5.0/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/5.0/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `openldap=2.4.31-2+deb7u3`
 
 Binary Packages:
@@ -1641,20 +1665,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb7u1
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d-0+deb7u1.dsc' tzdata_2018d-0+deb7u1.dsc 1966 SHA256:1919ed95f4a548c79692c20c9aa09624258d86f2b45f3acc41024e368a261cc2
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d-0+deb7u1.debian.tar.xz' tzdata_2018d-0+deb7u1.debian.tar.xz 102492 SHA256:c244bc5a8f01f5cdde5d4c53cabc6d1d80f9bdcf7ae33738266cf3222643f1a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 

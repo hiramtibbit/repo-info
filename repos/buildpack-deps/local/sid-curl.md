@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa73c2593148b88d1fcd11eb80cf0d2cf30cf42b57ffba202e3f7aff7b0a4fba`
-- Created: `2018-04-28T16:41:55.46827182Z`
-- Virtual Size: ~ 141.31 Mb  
+- Image ID: `sha256:ab78f086299d4cbc9fb7e7fb2043b70b6b8d5faafde9eba6d4609085d387c174`
+- Created: `2018-05-05T04:59:18.482002649Z`
+- Virtual Size: ~ 141.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1637,21 +1637,37 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ncurses/6.1-1/
+
+
+### `dpkg` source package: `netbase=5.4`
+
+Binary Packages:
+
+- `netbase=5.4`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.1-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
+$ apt-get source -qq --print-uris netbase=5.4
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.4.dsc' netbase_5.4.dsc 1326 SHA256:ebe29d45e65b661d64636cbce3840997d8079cf338efbfa347b4c73ed2831b7b
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.4.tar.xz' netbase_5.4.tar.xz 31524 SHA256:66ff73d2d162e2d49db43988d8b8cd328cf7fffca042db73397f14c71825e80d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/netbase/5.4/ (for browsing the source)
+- https://sources.debian.net/src/netbase/5.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/5.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.4-1`
 
@@ -1747,12 +1763,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.5-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.5-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1`
+### `dpkg` source package: `openldap=2.4.46+dfsg-4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1`
-- `libldap-common=2.4.45+dfsg-1`
+- `libldap-2.4-2:amd64=2.4.46+dfsg-4`
+- `libldap-common=2.4.46+dfsg-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1761,17 +1777,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg-1.dsc' openldap_2.4.45+dfsg-1.dsc 2769 SHA256:a9544b9d02dec7eb101b0eb4a71d9feaa402c9f3e12ab2398c6408c84bd93212
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg-1.debian.tar.xz' openldap_2.4.45+dfsg-1.debian.tar.xz 162956 SHA256:7edec92185c74081a1fcbe934ccba951fb4a43075061aac40168a489f7989f5e
+$ apt-get source -qq --print-uris openldap=2.4.46+dfsg-4
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-4.dsc' openldap_2.4.46+dfsg-4.dsc 2588 SHA256:5d3c4442b13f2741326e0bb6695fa7e9be28465fe00070b5eb44dcf61e8de42f
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg.orig.tar.gz' openldap_2.4.46+dfsg.orig.tar.gz 4873832 SHA256:e93cb511f6bce162c27502d0d240e6410a8f14e72c47ddddb4e69b25b7c538e4
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-4.debian.tar.xz' openldap_2.4.46+dfsg-4.debian.tar.xz 163000 SHA256:3196c8c8287eafdbccbe4262bc9f787fc26023964ed314556e02546450de3570
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openldap/2.4.45+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.45+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.45+dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openldap/2.4.46+dfsg-4/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.46+dfsg-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.46+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 
@@ -1984,12 +2000,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.1.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `readline=7.0-3`
+### `dpkg` source package: `readline=7.0-4`
 
 Binary Packages:
 
-- `libreadline7:amd64=7.0-3+b1`
-- `readline-common=7.0-3`
+- `libreadline7:amd64=7.0-4`
+- `readline-common=7.0-4`
 
 Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc/readline-common/copyright`)
 
@@ -2001,7 +2017,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/readline/7.0-3/
+- http://snapshot.debian.org/package/readline/7.0-4/
 
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
@@ -2269,21 +2285,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.4-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.dsc' wget_1.19.4-1.dsc 2158 SHA256:14616d5aeaf1d8262b56edb6aa4541b0f0d85cf0de708d777f049adf4ad844a5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz' wget_1.19.4.orig.tar.gz 4310657 SHA256:93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz.asc' wget_1.19.4.orig.tar.gz.asc 1241 SHA256:ee273f3a27adb2d2dc02ba346759ce95cb74ded959853a8a9c9be5ae44d10fcb
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.debian.tar.xz' wget_1.19.4-1.debian.tar.xz 60172 SHA256:829c85dc5cd545e5f260c1715bffd9999f420dd8bb5b00def30acc068c1bf00a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.19.4-1/
 
-- https://sources.debian.net/src/wget/1.19.4-1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.19.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.19.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 

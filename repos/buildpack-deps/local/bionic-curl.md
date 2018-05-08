@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:74c140626d618bc8841334495d4508f9deb15b67c4b1cd1f20be674e5f2b1e8b`
-- Created: `2018-04-28T15:30:04.548762793Z`
-- Virtual Size: ~ 99.90 Mb  
+- Image ID: `sha256:e882d9df98c13168b04dd18a1fc4098852d761244bd1bedf997212082a4d75ca`
+- Created: `2018-05-04T17:21:31.497421721Z`
+- Virtual Size: ~ 99.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1159,6 +1159,24 @@ $ apt-get source -qq --print-uris ncurses=6.1-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1-1ubuntu1.debian.tar.xz' ncurses_6.1-1ubuntu1.debian.tar.xz 56984 SHA256:e907a284a4ff3b4b6ee449276e114e21b7d357cb4cbb5ee0d883b6870095d56f
+```
+
+### `dpkg` source package: `netbase=5.4`
+
+Binary Packages:
+
+- `netbase=5.4`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.4.dsc' netbase_5.4.dsc 1326 SHA256:ebe29d45e65b661d64636cbce3840997d8079cf338efbfa347b4c73ed2831b7b
+'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.4.tar.xz' netbase_5.4.tar.xz 31524 SHA256:66ff73d2d162e2d49db43988d8b8cd328cf7fffca042db73397f14c71825e80d
 ```
 
 ### `dpkg` source package: `nettle=3.4-1`

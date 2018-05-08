@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4381306f4a9ee733e518e947fe19330fd92d5a61a427438275d06fc7143e3af4`
-- Created: `2018-04-28T15:56:42.424760454Z`
-- Virtual Size: ~ 636.02 Mb  
+- Image ID: `sha256:22ba25303cb1cd8f5d63b8d1ea333664b3f02a5617983ac170c95cca074bdd83`
+- Created: `2018-05-04T17:25:35.670497384Z`
+- Virtual Size: ~ 636.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -2863,12 +2863,12 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.21-1ubuntu1`
+### `dpkg` source package: `mysql-5.7=5.7.22-0ubuntu18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.21-1ubuntu1`
-- `libmysqlclient20:amd64=5.7.21-1ubuntu1`
+- `libmysqlclient-dev=5.7.22-0ubuntu18.04.1`
+- `libmysqlclient20:amd64=5.7.22-0ubuntu18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -2889,10 +2889,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.21-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-1ubuntu1.dsc' mysql-5.7_5.7.21-1ubuntu1.dsc 3345 SHA256:a5e90401ab6c73d9415cce75b41371767cfb4057f5a572e4dcb57a3b5ef4e75e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21.orig.tar.gz' mysql-5.7_5.7.21.orig.tar.gz 48931457 SHA256:ad29ecb6fb3c3571394fe231633a2d1d188d49e9eb749daa4e8799b7630daa09
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-1ubuntu1.debian.tar.xz' mysql-5.7_5.7.21-1ubuntu1.debian.tar.xz 155744 SHA256:e1884f2902a7574668d620a95bf2bae91e03cbccfe0f72d3e1e07c51cd6a1cc7
+$ apt-get source -qq --print-uris mysql-5.7=5.7.22-0ubuntu18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.22-0ubuntu18.04.1.dsc' mysql-5.7_5.7.22-0ubuntu18.04.1.dsc 3351 SHA256:9320b4c5d911781bc89f02a52f039fbb73925cf6a41509bd003e2778d1ecaf12
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.22.orig.tar.gz' mysql-5.7_5.7.22.orig.tar.gz 48985783 SHA256:5b2a61700af7c99f5630a7dfdb099af9283c3029843cddd9e123bcdbcc4aad03
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.22-0ubuntu18.04.1.debian.tar.xz' mysql-5.7_5.7.22-0ubuntu18.04.1.debian.tar.xz 155944 SHA256:0d3c2c0b72e1f51fc12c3bd90b6fdb2580947d3522791501f9411414cddcb82a
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
@@ -2940,6 +2940,24 @@ $ apt-get source -qq --print-uris ncurses=6.1-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1-1ubuntu1.debian.tar.xz' ncurses_6.1-1ubuntu1.debian.tar.xz 56984 SHA256:e907a284a4ff3b4b6ee449276e114e21b7d357cb4cbb5ee0d883b6870095d56f
+```
+
+### `dpkg` source package: `netbase=5.4`
+
+Binary Packages:
+
+- `netbase=5.4`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.4.dsc' netbase_5.4.dsc 1326 SHA256:ebe29d45e65b661d64636cbce3840997d8079cf338efbfa347b4c73ed2831b7b
+'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.4.tar.xz' netbase_5.4.tar.xz 31524 SHA256:66ff73d2d162e2d49db43988d8b8cd328cf7fffca042db73397f14c71825e80d
 ```
 
 ### `dpkg` source package: `nettle=3.4-1`
