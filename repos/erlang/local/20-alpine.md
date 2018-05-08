@@ -1,13 +1,13 @@
-# `erlang:20.3.4-alpine`
+# `erlang:20.3.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d669a431d2072e3c45257253173d6261aa4decf9be40f6786ac9d5a952039f01`
-- Created: `2018-04-24T00:02:32.045515662Z`
+- Image ID: `sha256:f7103ca53c153047dc220f1aae315fd699413b35f881df96f134cf14ca9440fd`
+- Created: `2018-05-05T07:25:01.213979499Z`
 - Virtual Size: ~ 75.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.3.4`
+  - `OTP_VERSION=20.3.5`
