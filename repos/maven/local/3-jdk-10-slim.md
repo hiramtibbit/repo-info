@@ -3679,26 +3679,13 @@ Licenses: (parsed from: `/usr/share/doc/libllvm5.0/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-5.0=1:5.0.1-4
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1-4.dsc' llvm-toolchain-5.0_5.0.1-4.dsc 6805 SHA256:aedd31cbe25f11335bff156d301b1c6be8a59cef3404dbd558552e1f929095a9
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-clang-tools-extra.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-clang-tools-extra.tar.bz2 681730 SHA256:bde17323540cd2e8356027e3acefbee7d7029b34d06bffc515d3f232aa38ad2e
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-clang.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-clang.tar.bz2 12706706 SHA256:c2320b1af6bdf48bd6945a939954866bdd63d2515cefb15ebebfe8f27e8eeace
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-compiler-rt.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-compiler-rt.tar.bz2 1986938 SHA256:48d3bd54f3b262727ac5642acf950443e7da5f8f061132bb46d9405dca131bcd
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-lld.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-lld.tar.bz2 715216 SHA256:7f8dfaeaa3a8c36395ad4ae2381db59f5dadd222aa2c2fe7712167ccad0724b8
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-lldb.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-lldb.tar.bz2 11144317 SHA256:a072286674d31ae2f6792d69c91e8861d2da4d90a4ca538781d751e0a9c42eff
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig-polly.tar.bz2' llvm-toolchain-5.0_5.0.1.orig-polly.tar.bz2 3076752 SHA256:886e1f7da9249704f31ee4e5c01afc6eecfe87d1119c73813b7b5b60629a8ed8
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1.orig.tar.bz2' llvm-toolchain-5.0_5.0.1.orig.tar.bz2 27821274 SHA256:07ac23993311f4e7c637379722338030f0f927bb7fc243551165469f3f9ff0fc
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.1-4.debian.tar.xz' llvm-toolchain-5.0_5.0.1-4.debian.tar.xz 71932 SHA256:1587bdc90b5bbb23112cc711908ac3299356feadea3f1c018109807f81cb1ab0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/llvm-toolchain-5.0/1:5.0.1-4/
 
-- https://sources.debian.net/src/llvm-toolchain-5.0/1:5.0.1-4/ (for browsing the source)
-- https://sources.debian.net/src/llvm-toolchain-5.0/1:5.0.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/llvm-toolchain-5.0/1:5.0.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -3895,21 +3882,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.1-1/
 
-- https://sources.debian.net/src/ncurses/6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.4-1`
 
