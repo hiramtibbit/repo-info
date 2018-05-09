@@ -1,7 +1,7 @@
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:9ebc7d8a9370e1294f70b6ea8c83e2da115f8136ed9f78c8d68c1ff7ab417ee0
+$ docker pull telegraf@sha256:a57f161ab5752d4dc044565c21731594caaf5a706b63a8d448c3b1267aa9247b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull telegraf@sha256:9ebc7d8a9370e1294f70b6ea8c83e2da115f8136ed9f78c8d6
 ### `telegraf:latest` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:af97d7040b83e30b132c77a8ef21c786fe787208c39a75bdfe902d00837eaeaf
+$ docker pull telegraf@sha256:510a40bbdc319b211023acd5e612b8d2221c79fe3de52be66f4b58ac2eefc133
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.9 MB (85895012 bytes)**  
+-	Total Size: **85.9 MB (85895448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8567d929c408928e81fcead69e4e836b1f1c0f476dd3a349ab4abd1e7f4ae082`
+-	Image ID: `sha256:90da729c4e729c708f9cf297b734aca942cc304859a42435d2f55d08039f31ed`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -37,17 +37,17 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps &&     rm -rf /var/lib/apt/lists/*
 # Sat, 05 May 2018 07:52:31 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Sat, 05 May 2018 07:52:42 GMT
-ENV TELEGRAF_VERSION=1.6.1
-# Sat, 05 May 2018 07:52:47 GMT
+# Wed, 09 May 2018 18:30:59 GMT
+ENV TELEGRAF_VERSION=1.6.2
+# Wed, 09 May 2018 18:31:03 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Sat, 05 May 2018 07:52:47 GMT
+# Wed, 09 May 2018 18:31:03 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Sat, 05 May 2018 07:52:48 GMT
+# Wed, 09 May 2018 18:31:03 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Sat, 05 May 2018 07:52:48 GMT
+# Wed, 09 May 2018 18:31:04 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 05 May 2018 07:52:48 GMT
+# Wed, 09 May 2018 18:31:04 GMT
 CMD ["telegraf"]
 ```
 
@@ -72,13 +72,13 @@ CMD ["telegraf"]
 		Last Modified: Sat, 05 May 2018 07:53:19 GMT  
 		Size: 2.9 KB (2887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b4229bfb119043e856c49ed943e5031bb7c8d2eda0a36a04528a1d160f7a1eb`  
-		Last Modified: Sat, 05 May 2018 07:53:37 GMT  
-		Size: 9.9 MB (9878361 bytes)  
+	-	`sha256:f4946cf6b18cf9172a48ae57d7aa25abe4e71959b9038ee2161da96ffe2b28ff`  
+		Last Modified: Wed, 09 May 2018 18:31:30 GMT  
+		Size: 9.9 MB (9878795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd926017739004bd76288c9dbab77f4bb03907d8461843f032a7f3157192cf8e`  
-		Last Modified: Sat, 05 May 2018 07:53:35 GMT  
-		Size: 184.0 B  
+	-	`sha256:6e64e1c083a852d9a6d7bde3e75efce80491197d990c6f7abdd7bba50d35c5d9`  
+		Last Modified: Wed, 09 May 2018 18:31:27 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `telegraf:latest` - linux; arm variant v7
