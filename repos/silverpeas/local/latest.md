@@ -434,14 +434,9 @@ Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups-filters=1.8.3-2ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.1.dsc' cups-filters_1.8.3-2ubuntu3.1.dsc 2376 SHA256:d74a0f3b211affbed14b6faf9e4e70a41a7bbf9ba2f4da5a439e0acc8aef2fbe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3.orig.tar.xz' cups-filters_1.8.3.orig.tar.xz 1373028 SHA256:e1e786f1fbcd3a203d87ebb4106a0ba8d579953cbe22056d12d4ee8143f5341a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.1.debian.tar.xz' cups-filters_1.8.3-2ubuntu3.1.debian.tar.xz 70652 SHA256:847528271cefc0210cae7a616067b65001a46e40e0f71bd4e8c9494b5c843878
-```
 
 ### `dpkg` source package: `cups=2.1.3-4ubuntu0.4`
 
@@ -4702,14 +4697,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.dsc' wget_1.17.1-1ubuntu1.3.dsc 1937 SHA256:20bb00897b9aab568f4e35566ac97bdf50189e2a9f680e82f06461fcd5ae340e
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.debian.tar.xz' wget_1.17.1-1ubuntu1.3.debian.tar.xz 27900 SHA256:283781ad43de4fa85c1e2266215bb563bbaab5c70e28b0f48e69cfe5f0bb663e
-```
 
 ### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.2`
 
