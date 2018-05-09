@@ -1,10 +1,10 @@
-# `tomcat:9.0.7-jre8`
+# `tomcat:9.0.8-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ddeb7fe0d2a193860171634befc5ec00f14d0b614141474a24ee957a72e46f8`
-- Created: `2018-05-05T09:07:09.791467491Z`
-- Virtual Size: ~ 546.36 Mb  
+- Image ID: `sha256:b9039d58339657cfc8ff54cd6b06c1488c980d1ea60a5799816731f4fb986c94`
+- Created: `2018-05-09T18:14:51.91456142Z`
+- Virtual Size: ~ 549.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -21,10 +21,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.7`
-  - `TOMCAT_SHA512=2050f368a32c44ed1b8bc6d2c964fb47e4f9c7ec2c4222141bd0edcd9da1708185c00eba63ccf28b1d55f452284ed0265058913d58d2f1ef10be8a6b7da1711f`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.8`
+  - `TOMCAT_SHA512=51af864fc3815bf40a200b8250f6e6aad66378f5b725199a308c0296957c58584a6358fb7df861694acea764b69ba4ce7dba0aa77792bd33ed38b66c24ff5b55`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4737,11 +4737,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.12.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.12.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.18-5+deb9u1`
+### `dpkg` source package: `wget=1.18-5+deb9u2`
 
 Binary Packages:
 
-- `wget=1.18-5+deb9u1`
+- `wget=1.18-5+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -4751,17 +4751,17 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.18-5+deb9u1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u1.dsc' wget_1.18-5+deb9u1.dsc 1930 SHA256:d73144e86cad1915bec0319d8be45bb1e10ca44b7fc97ac2f4f3452242a511dd
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5+deb9u1.debian.tar.xz' wget_1.18-5+deb9u1.debian.tar.xz 22708 SHA256:037cc58f8732ed396abb995feb5b6e685aabe7c682273fc12fc20f756228b1ea
+$ apt-get source -qq --print-uris wget=1.18-5+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u2.dsc' wget_1.18-5+deb9u2.dsc 2085 SHA256:613256e709fb78230402013e0f30c6cd9dfa441a3c705c96a6ecd419c5adde8a
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.18-5+deb9u2.debian.tar.xz' wget_1.18-5+deb9u2.debian.tar.xz 23308 SHA256:8d98535e4062442c1eb0bcdb557551ee64323f09352528f741afd20ed81b09b1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.18-5+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.18-5+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.18-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.18-5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.18-5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.18-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11-utils=7.7+3`
 

@@ -1,10 +1,10 @@
-# `tomcat:9.0.7-jre9-slim`
+# `tomcat:9.0.8-jre9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32700146e735607795af26b54315d891dec6349ba0454f48098e80fa9c8debbd`
-- Created: `2018-05-05T09:10:08.052838004Z`
-- Virtual Size: ~ 315.69 Mb  
+- Image ID: `sha256:702a94db2fd62124cd45322c75dc4973371a61c0db49b8185f659019cb4e99f7`
+- Created: `2018-05-09T18:18:44.141783028Z`
+- Virtual Size: ~ 315.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.7`
-  - `TOMCAT_SHA512=2050f368a32c44ed1b8bc6d2c964fb47e4f9c7ec2c4222141bd0edcd9da1708185c00eba63ccf28b1d55f452284ed0265058913d58d2f1ef10be8a6b7da1711f`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.8`
+  - `TOMCAT_SHA512=51af864fc3815bf40a200b8250f6e6aad66378f5b725199a308c0296957c58584a6358fb7df861694acea764b69ba4ce7dba0aa77792bd33ed38b66c24ff5b55`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1829,37 +1829,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.1+20180210-2`
-
-Binary Packages:
-
-- `libncursesw5:amd64=6.1+20180210-2`
-- `libtinfo5:amd64=6.1+20180210-2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.dsc' ncurses_6.1+20180210-2.dsc 4128 SHA256:1fad8789bf1a04a57608bd66d688a8fd8d4e01b73593ed72757172b9081c3e43
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.debian.tar.xz' ncurses_6.1+20180210-2.debian.tar.xz 59516 SHA256:abd62913546581e37149a10816acf5028bfcbe4b4d38f43f9d512c3ba7e621b7
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/ncurses/6.1+20180210-2/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1+20180210-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1+20180210-2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `ncurses=6.1-1`
 
 Binary Packages:
 
+- `libncursesw5:amd64=6.1-1`
+- `libtinfo5:amd64=6.1-1`
 - `ncurses-base=6.1-1`
 - `ncurses-bin=6.1-1`
 
@@ -1867,21 +1842,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.1-1/
 
-- https://sources.debian.net/src/ncurses/6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.4-1`
 
@@ -2122,20 +2089,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.23-2
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.dsc' pcsc-lite_1.8.23-2.dsc 2150 SHA256:7783f315243d208a07898ad3199d4e5ddde44a9c1a2801f2de6e82b434c74bcc
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23.orig.tar.bz2' pcsc-lite_1.8.23.orig.tar.bz2 749922 SHA256:5a27262586eff39cfd5c19aadc8891dd71c0818d3d629539bd631b958be689c9
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.debian.tar.xz' pcsc-lite_1.8.23-2.debian.tar.xz 30028 SHA256:36ae57b3858104532845dbaa8d0ea7cebbe9da8384f00b721fafa6b9554da3ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcsc-lite/1.8.23-2/
 
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/ (for browsing the source)
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcsc-lite/1.8.23-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.26.2-3`
 
