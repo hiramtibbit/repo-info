@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fc95ba0a7762a13d4db830df765c534ece1963f11093dfb8940f525b63084c3`
-- Created: `2018-04-12T00:35:18.360406433Z`
+- Image ID: `sha256:59bbaec1cd005cc56517a816f552c84fb13059de123330a673756e2ee125dca9`
+- Created: `2018-05-09T17:19:56.2081461Z`
 - Virtual Size: ~ 146.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,4 +12,4 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=edge`
   - `DOCKER_VERSION=18.04.0-ce`
-  - `DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034`
+  - `DIND_COMMIT=52379fa76dee07ca038624d639d9e14f4fb719ff`
