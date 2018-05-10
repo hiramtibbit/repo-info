@@ -2763,14 +2763,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 - `LibRaw`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.17.1-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.2.dsc' libraw_0.17.1-1ubuntu0.2.dsc 2260 SHA256:28605c16319d44755add94de33a6d16a8a52a50801f187333c962b6de35943eb
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1.orig.tar.gz' libraw_0.17.1.orig.tar.gz 689407 SHA256:dd07861ea3b9739c61c50d5e8a5dfedd738f4765962104c120dd8ea2dc2e3491
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.2.debian.tar.xz' libraw_0.17.1-1ubuntu0.2.debian.tar.xz 33776 SHA256:2c3d3b0f1aaacfe2bd808b24b487e46a79844ece856e9572d444c4ab9c39db17
-```
 
 ### `dpkg` source package: `libsamplerate=0.1.8-8`
 
