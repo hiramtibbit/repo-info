@@ -1,7 +1,7 @@
 ## `docker:dind`
 
 ```console
-$ docker pull docker@sha256:480f14ca1276144253371486bfb16881751fc40a56c3ac6c58b5acf84bb228b7
+$ docker pull docker@sha256:9b69676112790faa576a29a01f569854ccbe0c3303a13fd9b5fcd34f9bb1721f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -429,14 +429,14 @@ CMD []
 ### `docker:dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:e19b444de55e7be5bfe9de609922e7f67dad4f413f3da4c33d30446b61fd5dfe
+$ docker pull docker@sha256:66123f2be23e891c449d50b9e50ed45850a444a6d7c6f90c82321f5b93175846
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45489647 bytes)**  
+-	Total Size: **45.5 MB (45488486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e8b2d88a3a4092503ac569fceeddf6116b64bec9857fce8104d1e51c6094035`
+-	Image ID: `sha256:9b3c31ff13e03b55d00534d93d9494b92f47a4f67c4246c781f8ad20c9b32191`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -469,19 +469,19 @@ CMD ["sh"]
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
 # Thu, 12 Apr 2018 11:52:57 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Thu, 12 Apr 2018 11:52:58 GMT
-ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Thu, 12 Apr 2018 11:53:00 GMT
+# Thu, 10 May 2018 11:41:54 GMT
+ENV DIND_COMMIT=52379fa76dee07ca038624d639d9e14f4fb719ff
+# Thu, 10 May 2018 11:41:55 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Thu, 12 Apr 2018 11:53:00 GMT
+# Thu, 10 May 2018 11:41:55 GMT
 COPY file:073876936333c71cdffdb04170009690094f01b3e9221dc545ef3c1a021a0091 in /usr/local/bin/ 
-# Thu, 12 Apr 2018 11:53:01 GMT
+# Thu, 10 May 2018 11:41:55 GMT
 VOLUME [/var/lib/docker]
-# Thu, 12 Apr 2018 11:53:01 GMT
+# Thu, 10 May 2018 11:41:56 GMT
 EXPOSE 2375/tcp
-# Thu, 12 Apr 2018 11:53:01 GMT
+# Thu, 10 May 2018 11:41:56 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Thu, 12 Apr 2018 11:53:01 GMT
+# Thu, 10 May 2018 11:41:56 GMT
 CMD []
 ```
 
@@ -522,11 +522,11 @@ CMD []
 		Last Modified: Thu, 12 Apr 2018 11:54:31 GMT  
 		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12275e6a1cda2aebc8fc02eca543487d437098be7ff34047a78416c0488579e7`  
-		Last Modified: Thu, 12 Apr 2018 11:54:31 GMT  
-		Size: 26.3 KB (26264 bytes)  
+	-	`sha256:f4dbd335312bd3f9eaa940c0cf759888727d58c9f75e6ec7df98199d1f9ffc78`  
+		Last Modified: Thu, 10 May 2018 11:43:45 GMT  
+		Size: 25.1 KB (25098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba330475eae73587da6e28fe2e268b30d81dbec8ea1d44c50a8694101d63cc01`  
-		Last Modified: Thu, 12 Apr 2018 11:54:31 GMT  
-		Size: 574.0 B  
+	-	`sha256:e1962ccfc9d6671eadf08e6ab557238d44249cc922153c2ed6e2335534c109b4`  
+		Last Modified: Thu, 10 May 2018 11:43:45 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
