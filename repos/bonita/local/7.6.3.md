@@ -577,13 +577,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.7.dsc' distro-info-data_0.28ubuntu0.7.dsc 1761 SHA256:8666fdefa1b881e75904760a7f952d7373c797ece3b6680b9ce73cc10cf15a2e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.7.tar.xz' distro-info-data_0.28ubuntu0.7.tar.xz 6672 SHA256:94fe71ad219a2df5563d1d9da0f2ecbc5af19c7920c2b3772bd7797cbff54473
-```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.4`
 
@@ -2100,14 +2096,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u162-b12-0ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u162-b12-0ubuntu0.16.04.2.dsc' openjdk-8_8u162-b12-0ubuntu0.16.04.2.dsc 4709 SHA256:aaf20b0c95c0c40d6c2b1e8e3552a0aaa43842b29d93932094c81da319f3bb17
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u162-b12.orig.tar.xz' openjdk-8_8u162-b12.orig.tar.xz 70306424 SHA256:0b8b888af9d6706d6469b83f18f8d66fa525eab3961e6626e044cc935be8637a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u162-b12-0ubuntu0.16.04.2.debian.tar.xz' openjdk-8_8u162-b12-0ubuntu0.16.04.2.debian.tar.xz 258048 SHA256:83f0f03b19a76dc0907f76e935597e955ad7da67982107d45547a1203f9e66fc
-```
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.2`
 
