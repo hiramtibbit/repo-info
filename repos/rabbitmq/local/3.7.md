@@ -1,10 +1,10 @@
-# `rabbitmq:3.7.4`
+# `rabbitmq:3.7.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cae5b74b77de7b5b56be5ef01f5e47b83506d7358c25e92c2095ea3d68c3418a`
-- Created: `2018-05-02T03:41:51.653674304Z`
-- Virtual Size: ~ 126.90 Mb  
+- Image ID: `sha256:64e7c1bc2efacef7f0cd2dfcf86d620bd198f1d1514fcb87c01728a6cf5ec9d9`
+- Created: `2018-05-10T20:38:09.06247804Z`
+- Virtual Size: ~ 124.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.7.4`
-  - `RABBITMQ_GITHUB_TAG=v3.7.4`
-  - `RABBITMQ_DEBIAN_VERSION=3.7.4-1`
+  - `RABBITMQ_VERSION=3.7.5`
+  - `RABBITMQ_GITHUB_TAG=v3.7.5`
+  - `RABBITMQ_DEBIAN_VERSION=3.7.5-1`
   - `LANG=C.UTF-8`
   - `HOME=/var/lib/rabbitmq`
 
@@ -563,34 +563,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.43.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.43.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `erlang=1:20.3.4+dfsg-1`
+### `dpkg` source package: `erlang=1:20.3.5+dfsg-1`
 
 Binary Packages:
 
-- `erlang-asn1=1:20.3.4+dfsg-1`
-- `erlang-base-hipe=1:20.3.4+dfsg-1`
-- `erlang-corba=1:20.3.4+dfsg-1`
-- `erlang-crypto=1:20.3.4+dfsg-1`
-- `erlang-diameter=1:20.3.4+dfsg-1`
-- `erlang-edoc=1:20.3.4+dfsg-1`
-- `erlang-eldap=1:20.3.4+dfsg-1`
-- `erlang-erl-docgen=1:20.3.4+dfsg-1`
-- `erlang-eunit=1:20.3.4+dfsg-1`
-- `erlang-ic=1:20.3.4+dfsg-1`
-- `erlang-inets=1:20.3.4+dfsg-1`
-- `erlang-mnesia=1:20.3.4+dfsg-1`
-- `erlang-nox=1:20.3.4+dfsg-1`
-- `erlang-odbc=1:20.3.4+dfsg-1`
-- `erlang-os-mon=1:20.3.4+dfsg-1`
-- `erlang-parsetools=1:20.3.4+dfsg-1`
-- `erlang-public-key=1:20.3.4+dfsg-1`
-- `erlang-runtime-tools=1:20.3.4+dfsg-1`
-- `erlang-snmp=1:20.3.4+dfsg-1`
-- `erlang-ssh=1:20.3.4+dfsg-1`
-- `erlang-ssl=1:20.3.4+dfsg-1`
-- `erlang-syntax-tools=1:20.3.4+dfsg-1`
-- `erlang-tools=1:20.3.4+dfsg-1`
-- `erlang-xmerl=1:20.3.4+dfsg-1`
+- `erlang-asn1=1:20.3.5+dfsg-1`
+- `erlang-base-hipe=1:20.3.5+dfsg-1`
+- `erlang-corba=1:20.3.5+dfsg-1`
+- `erlang-crypto=1:20.3.5+dfsg-1`
+- `erlang-diameter=1:20.3.5+dfsg-1`
+- `erlang-edoc=1:20.3.5+dfsg-1`
+- `erlang-eldap=1:20.3.5+dfsg-1`
+- `erlang-erl-docgen=1:20.3.5+dfsg-1`
+- `erlang-eunit=1:20.3.5+dfsg-1`
+- `erlang-ic=1:20.3.5+dfsg-1`
+- `erlang-inets=1:20.3.5+dfsg-1`
+- `erlang-mnesia=1:20.3.5+dfsg-1`
+- `erlang-nox=1:20.3.5+dfsg-1`
+- `erlang-odbc=1:20.3.5+dfsg-1`
+- `erlang-os-mon=1:20.3.5+dfsg-1`
+- `erlang-parsetools=1:20.3.5+dfsg-1`
+- `erlang-public-key=1:20.3.5+dfsg-1`
+- `erlang-runtime-tools=1:20.3.5+dfsg-1`
+- `erlang-snmp=1:20.3.5+dfsg-1`
+- `erlang-ssh=1:20.3.5+dfsg-1`
+- `erlang-ssl=1:20.3.5+dfsg-1`
+- `erlang-syntax-tools=1:20.3.5+dfsg-1`
+- `erlang-tools=1:20.3.5+dfsg-1`
+- `erlang-xmerl=1:20.3.5+dfsg-1`
 
 Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/erlang-base-hipe/copyright`, `/usr/share/doc/erlang-corba/copyright`, `/usr/share/doc/erlang-crypto/copyright`, `/usr/share/doc/erlang-diameter/copyright`, `/usr/share/doc/erlang-edoc/copyright`, `/usr/share/doc/erlang-eldap/copyright`, `/usr/share/doc/erlang-erl-docgen/copyright`, `/usr/share/doc/erlang-eunit/copyright`, `/usr/share/doc/erlang-ic/copyright`, `/usr/share/doc/erlang-inets/copyright`, `/usr/share/doc/erlang-mnesia/copyright`, `/usr/share/doc/erlang-nox/copyright`, `/usr/share/doc/erlang-odbc/copyright`, `/usr/share/doc/erlang-os-mon/copyright`, `/usr/share/doc/erlang-parsetools/copyright`, `/usr/share/doc/erlang-public-key/copyright`, `/usr/share/doc/erlang-runtime-tools/copyright`, `/usr/share/doc/erlang-snmp/copyright`, `/usr/share/doc/erlang-ssh/copyright`, `/usr/share/doc/erlang-ssl/copyright`, `/usr/share/doc/erlang-syntax-tools/copyright`, `/usr/share/doc/erlang-tools/copyright`, `/usr/share/doc/erlang-xmerl/copyright`)
 
@@ -599,13 +599,20 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 - `MIT`
 - `RSA`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris erlang=1:20.3.5+dfsg-1
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.5+dfsg-1.dsc' erlang_20.3.5+dfsg-1.dsc 5115 SHA256:ac6b6552f349a96a95d4bb2e2646edd4f2614838ac1e742499ac6542b0737138
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.5+dfsg.orig.tar.xz' erlang_20.3.5+dfsg.orig.tar.xz 42888120 SHA256:8db5ab2e0685e3bdbb5610b8df5e6ed9cdf61730802678a06ec7f3f752e43959
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.5+dfsg-1.debian.tar.xz' erlang_20.3.5+dfsg-1.debian.tar.xz 59400 SHA256:4dc6e703247380ed0426beb5079c3a7f552cedf597ff6d65c730e29d6dc189e9
+```
 
-- http://snapshot.debian.org/package/erlang/1:20.3.4+dfsg-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/erlang/1:20.3.5+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/erlang/1:20.3.5+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/erlang/1:20.3.5+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -1359,6 +1366,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `ncurses=6.1+20180210-2`
+
+Binary Packages:
+
+- `libtinfo6:amd64=6.1+20180210-2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ncurses=6.1+20180210-2
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.dsc' ncurses_6.1+20180210-2.dsc 4128 SHA256:1fad8789bf1a04a57608bd66d688a8fd8d4e01b73593ed72757172b9081c3e43
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.debian.tar.xz' ncurses_6.1+20180210-2.debian.tar.xz 59516 SHA256:abd62913546581e37149a10816acf5028bfcbe4b4d38f43f9d512c3ba7e621b7
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.1+20180210-2/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20180210-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20180210-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `nettle=3.3-1`
 
 Binary Packages:
@@ -1695,11 +1728,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.12-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.12-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rabbitmq-server=3.7.4-1`
+### `dpkg` source package: `rabbitmq-server=3.7.5-1`
 
 Binary Packages:
 
-- `rabbitmq-server=3.7.4-1`
+- `rabbitmq-server=3.7.5-1`
 
 Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 
