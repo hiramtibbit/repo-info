@@ -1,10 +1,10 @@
-# `python:2.7.14-wheezy`
+# `python:2.7.15-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:97c84fc76b31a97036e1ef2014335814e5e176ed9d7688d34c9e598817dee676`
-- Created: `2018-05-02T00:01:42.571480528Z`
-- Virtual Size: ~ 539.09 Mb  
+- Image ID: `sha256:f80018fde67f6e5dc1d88051e115839f45372a5c95fbfbc4cf00c17d64738ffe`
+- Created: `2018-05-05T03:38:07.907381579Z`
+- Virtual Size: ~ 539.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.14`
+  - `PYTHON_VERSION=2.7.15`
   - `PYTHON_PIP_VERSION=10.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3075,11 +3075,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.4-2+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.2.96-3`
+### `dpkg` source package: `linux=3.2.101-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.96-3`
+- `linux-libc-dev:amd64=3.2.101-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3088,17 +3088,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.2.96-3
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.96-3.dsc' linux_3.2.96-3.dsc 103043 SHA256:558348d15224f6dd111f10da39cdbbad9a58cf3180de1033ab4d1f92f2366273
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.96.orig.tar.xz' linux_3.2.96.orig.tar.xz 66009964 SHA256:4828cc7a453a8184143bf8598ecc555554904c5ed46e403812dfd93e5f92bbe4
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.96-3.debian.tar.xz' linux_3.2.96-3.debian.tar.xz 2279980 SHA256:9e7ed1059f4e8bb909efdfdd80b52d84e40cc227ea3f33f5d049f8df559ab198
+$ apt-get source -qq --print-uris linux=3.2.101-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101-1.dsc' linux_3.2.101-1.dsc 103091 SHA256:a95cfe94bb83337484e5c556f10ac209bed8ae73949c9d7f2029eabac5d08a27
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101.orig.tar.xz' linux_3.2.101.orig.tar.xz 66037444 SHA256:30a2425507fafb374ddb579a982325a305c2160f1b389572500bab656fcf1965
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.2.101-1.debian.tar.xz' linux_3.2.101-1.debian.tar.xz 2249512 SHA256:2fb2e71860b08e7f48fe0dbfeacd8ac2ba4e90f12d29cbef9754bc93104ef429
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.2.96-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.2.96-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.2.96-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.2.101-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.2.101-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.2.101-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3399,6 +3399,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/neon27/0.29.6-3/ (for browsing the source)
 - https://sources.debian.net/src/neon27/0.29.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/neon27/0.29.6-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `netbase=5.0`
+
+Binary Packages:
+
+- `netbase=5.0`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=5.0
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.dsc' netbase_5.0.dsc 724 SHA256:a7a49618de72446682179bb70c550a0d7089c7b0db01eb83d560d3be72ca776d
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz' netbase_5.0.tar.gz 34915 SHA256:ac9424d3cb2bd3c07b6c5bc5875c434d3bc687a73cd7c54b7dc7122308afa9dc
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/netbase/5.0/ (for browsing the source)
+- https://sources.debian.net/src/netbase/5.0/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/5.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=1.6.1-6+deb7u1`
 
@@ -4279,20 +4303,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb7u1
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d-0+deb7u1.dsc' tzdata_2018d-0+deb7u1.dsc 1966 SHA256:1919ed95f4a548c79692c20c9aa09624258d86f2b45f3acc41024e368a261cc2
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018d-0+deb7u1.debian.tar.xz' tzdata_2018d-0+deb7u1.debian.tar.xz 102492 SHA256:c244bc5a8f01f5cdde5d4c53cabc6d1d80f9bdcf7ae33738266cf3222643f1a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
@@ -4390,20 +4407,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u5
-'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
-'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
-'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/
 
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11proto-core=7.0.23-1`
 

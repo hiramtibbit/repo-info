@@ -1,10 +1,10 @@
-# `python:2.7.14-slim-jessie`
+# `python:2.7.15-slim-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7804e68bf7278576b0c9a3ac078ec9af378b4cd5442ecb3aef6ae1700548dd1`
-- Created: `2018-05-01T23:59:07.963295539Z`
-- Virtual Size: ~ 139.25 Mb  
+- Image ID: `sha256:46ba956c59676bfb96a5677983bc147dcee747473e1087439aaf4939db3f791f`
+- Created: `2018-05-05T03:36:11.364628354Z`
+- Virtual Size: ~ 139.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.14`
+  - `PYTHON_VERSION=2.7.15`
   - `PYTHON_PIP_VERSION=10.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1291,6 +1291,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/5.9+20140913-1+deb8u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/5.9+20140913-1+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `netbase=5.3`
+
+Binary Packages:
+
+- `netbase=5.3`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=5.3
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/netbase/5.3/ (for browsing the source)
+- https://sources.debian.net/src/netbase/5.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/5.3/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
 
 Binary Packages:
@@ -1723,20 +1747,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018d-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.dsc' tzdata_2018d-0+deb8u1.dsc 2132 SHA256:868f053864e63650423613ed3601bcc836851ab7518ce350d497793145afbb00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018d-0+deb8u1.debian.tar.xz' tzdata_2018d-0+deb8u1.debian.tar.xz 103532 SHA256:c68b3a61899e7d89b7197800e9b166d6562070d544ece5d866e31da81b356879
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018d-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
