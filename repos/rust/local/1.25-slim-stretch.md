@@ -1042,20 +1042,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.88-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.dsc' linux_4.9.88-1.dsc 123355 SHA256:b58d42a6472f5c8c736aa710c1b58f34a9240bdaf60da65a7f7f4bad7f146723
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88.orig.tar.xz' linux_4.9.88.orig.tar.xz 94587676 SHA256:d1896ed62f0284e212c106e13c38f285c26b62a1f6c0b14117f0491a6acfbd0b
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.debian.tar.xz' linux_4.9.88-1.debian.tar.xz 2490868 SHA256:4e7bb04cf28bbf1d1474b8df10ac8648df542da5f4646af6f67f4aee8f5bce7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.9.88-1/
 
-- https://sources.debian.net/src/linux/4.9.88-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.88-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.88-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
