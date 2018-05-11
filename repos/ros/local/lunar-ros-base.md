@@ -1067,13 +1067,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.7.dsc' distro-info-data_0.28ubuntu0.7.dsc 1761 SHA256:8666fdefa1b881e75904760a7f952d7373c797ece3b6680b9ce73cc10cf15a2e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.7.tar.xz' distro-info-data_0.28ubuntu0.7.tar.xz 6672 SHA256:94fe71ad219a2df5563d1d9da0f2ecbc5af19c7920c2b3772bd7797cbff54473
-```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.4`
 
@@ -3702,14 +3698,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-122.146
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-122.146.dsc' linux_4.4.0-122.146.dsc 9712 SHA256:ea486b93cce00edcc4370b8ffa1d8cb87fa7a7c624859a14b225ee4c733a34e6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-122.146.diff.gz' linux_4.4.0-122.146.diff.gz 14227262 SHA256:c7c9442feadd3a9baa5f356ac5f4b729ef2a2584372034d5e272a1dec2b3a397
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -4784,14 +4775,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1-1.dsc' python-catkin-pkg-modules_0.4.1-1.dsc 991 SHA256:9d8e331d465e490e178d52f108a1687b7c5ba620e3de8c8d9533d9194bbe2396
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1.orig.tar.gz' python-catkin-pkg-modules_0.4.1.orig.tar.gz 49085 SHA256:4dc444124a02d9747bc8c07a4ecc166e72ed9457d787dbd18c3ee07e8dc6dbc4
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1-1.debian.tar.xz' python-catkin-pkg-modules_0.4.1-1.debian.tar.xz 1140 SHA256:0f99b8b7f6768e5db718a94c23e83a7b5b9b4bb8012d68c552a94c42119a1bac
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.1-100`
 
@@ -4803,14 +4789,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.1-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1-100.dsc' python-catkin-pkg_0.4.1-100.dsc 931 SHA256:a2f8c60310318ad2b385db4ad37cc3999da8313e9446fe81b180fcb67db7dc51
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1.orig.tar.gz' python-catkin-pkg_0.4.1.orig.tar.gz 10578 SHA256:78f86f6054ca75ef2e57a81b59956ea412a15a665f02809a380698e0f51937fa
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1-100.debian.tar.xz' python-catkin-pkg_0.4.1-100.debian.tar.xz 1124 SHA256:8f2e0688de1c7577d966ef4109cb49da93865228e57dcea69c8a3f9060f53e5c
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.3`
 

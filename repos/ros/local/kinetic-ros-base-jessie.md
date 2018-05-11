@@ -5819,14 +5819,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1-1.dsc' python-catkin-pkg-modules_0.4.1-1.dsc 991 SHA256:9d8e331d465e490e178d52f108a1687b7c5ba620e3de8c8d9533d9194bbe2396
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1.orig.tar.gz' python-catkin-pkg-modules_0.4.1.orig.tar.gz 49085 SHA256:4dc444124a02d9747bc8c07a4ecc166e72ed9457d787dbd18c3ee07e8dc6dbc4
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.1-1.debian.tar.xz' python-catkin-pkg-modules_0.4.1-1.debian.tar.xz 1140 SHA256:0f99b8b7f6768e5db718a94c23e83a7b5b9b4bb8012d68c552a94c42119a1bac
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.1-100`
 
@@ -5838,14 +5833,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.1-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1-100.dsc' python-catkin-pkg_0.4.1-100.dsc 931 SHA256:a2f8c60310318ad2b385db4ad37cc3999da8313e9446fe81b180fcb67db7dc51
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1.orig.tar.gz' python-catkin-pkg_0.4.1.orig.tar.gz 10578 SHA256:78f86f6054ca75ef2e57a81b59956ea412a15a665f02809a380698e0f51937fa
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.1-100.debian.tar.xz' python-catkin-pkg_0.4.1-100.debian.tar.xz 1124 SHA256:8f2e0688de1c7577d966ef4109cb49da93865228e57dcea69c8a3f9060f53e5c
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-5+deb8u1`
 
