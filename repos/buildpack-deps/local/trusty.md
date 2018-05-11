@@ -3445,14 +3445,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-145.194
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-145.194.dsc' linux_3.13.0-145.194.dsc 7800 SHA256:9a0239180dc21ee1b0d4355169f464aa4a0a1b3f01fee64302bd61d7b4c8b3f9
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-145.194.diff.gz' linux_3.13.0-145.194.diff.gz 9638092 SHA256:3bf911625d1d1db120918b6cceaecad5f37e29b38cb729acc5c4baf8a7b50c97
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -4907,14 +4902,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.dsc' wget_1.15-1ubuntu1.14.04.3.dsc 1929 SHA256:adabab3126e8fb6bb732d831b10e32791b3ff75b93fe497116b194d15937510b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.debian.tar.gz' wget_1.15-1ubuntu1.14.04.3.debian.tar.gz 31508 SHA256:c0ee9bf16959bc2f5ecfa94216ada0b0e5a34971a0501074e70e019ade6a6319
-```
 
 ### `dpkg` source package: `x11proto-core=7.0.26-1~ubuntu2`
 

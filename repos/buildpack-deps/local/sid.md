@@ -4418,20 +4418,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.3-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3-2.dsc' postgresql-10_10.3-2.dsc 3524 SHA256:1f3d0d9204d40631a5e6b775a285868cdccd4fe69deba8b8967cad7eb219ae33
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3.orig.tar.bz2' postgresql-10_10.3.orig.tar.bz2 19959653 SHA256:6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3-2.debian.tar.xz' postgresql-10_10.3-2.debian.tar.xz 23032 SHA256:e06aa0fc38f0900dff89c4a1e2a3229fa3e3df70d533e68fd02e1ff726ace9ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-10/10.3-2/
 
-- https://sources.debian.net/src/postgresql-10/10.3-2/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-10/10.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-10/10.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.14-1`
 

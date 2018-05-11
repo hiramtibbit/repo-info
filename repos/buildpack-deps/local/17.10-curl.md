@@ -1649,14 +1649,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.1-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.1.dsc' wget_1.19.1-3ubuntu1.1.dsc 1987 SHA256:ab4454ddc43064a4557622e2d65e886ea8af3a7c345d5434ed5d9050802cd1f6
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1.orig.tar.xz' wget_1.19.1.orig.tar.xz 2111756 SHA256:0c950b9671881222a4d385b013c9604e98a8025d1988529dfca0e93617744cd2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.1.debian.tar.xz' wget_1.19.1-3ubuntu1.1.debian.tar.xz 23704 SHA256:fd7fb38c8ca7c6e2153b882e755887c154272529fddd353d3347a9d553418c81
-```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
