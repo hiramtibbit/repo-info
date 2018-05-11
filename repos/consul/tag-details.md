@@ -2,87 +2,12 @@
 
 # Tags of `consul`
 
--	[`consul:1.0.7`](#consul107)
+-	[`consul:1.1.0`](#consul110)
 -	[`consul:latest`](#consullatest)
 
-## `consul:1.0.7`
+## `consul:1.1.0`
 
-```console
-$ docker pull consul@sha256:3829bd4d90fd90773f4e0d7351437789ff8bd5dd6c6f3556f18da75410e3c774
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `consul:1.0.7` - linux; amd64
-
-```console
-$ docker pull consul@sha256:80da44b6df5b460145f0ab8ed6714ebf8743f779a189c08c54b8dae01c8ed108
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.3 MB (15255286 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ef6c98b2927525fd178ace6af9aecee1782f02fb1dbd6f88d79d3d96b53538`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["agent","-dev","-client","0.0.0.0"]`
-
-```dockerfile
-# Tue, 09 Jan 2018 21:10:58 GMT
-ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
-# Tue, 09 Jan 2018 21:10:58 GMT
-CMD ["/bin/sh"]
-# Fri, 09 Feb 2018 20:07:14 GMT
-MAINTAINER Preetha Appan <preetha@hashicorp.com> (@preetapan)
-# Sat, 14 Apr 2018 12:04:30 GMT
-ENV CONSUL_VERSION=1.0.7
-# Sat, 14 Apr 2018 12:04:30 GMT
-ENV HASHICORP_RELEASES=https://releases.hashicorp.com
-# Sat, 14 Apr 2018 12:04:31 GMT
-RUN addgroup consul &&     adduser -S -G consul consul
-# Sat, 14 Apr 2018 12:04:39 GMT
-RUN apk add --no-cache ca-certificates curl dumb-init gnupg libcap openssl su-exec &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify consul_${CONSUL_VERSION}_SHA256SUMS.sig consul_${CONSUL_VERSION}_SHA256SUMS &&     grep consul_${CONSUL_VERSION}_linux_amd64.zip consul_${CONSUL_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin consul_${CONSUL_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Sat, 14 Apr 2018 12:04:40 GMT
-RUN mkdir -p /consul/data &&     mkdir -p /consul/config &&     chown -R consul:consul /consul
-# Sat, 14 Apr 2018 12:04:40 GMT
-VOLUME [/consul/data]
-# Sat, 14 Apr 2018 12:04:40 GMT
-EXPOSE 8300/tcp
-# Sat, 14 Apr 2018 12:04:41 GMT
-EXPOSE 8301/tcp 8301/udp 8302/tcp 8302/udp
-# Sat, 14 Apr 2018 12:04:41 GMT
-EXPOSE 8500/tcp 8600/tcp 8600/udp
-# Sat, 14 Apr 2018 12:04:41 GMT
-COPY file:4d7013a8316461b27eb7cb7d1002f1be6aa386a925388563c1989385ebf30c2c in /usr/local/bin/docker-entrypoint.sh 
-# Sat, 14 Apr 2018 12:04:42 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 14 Apr 2018 12:04:42 GMT
-CMD ["agent" "-dev" "-client" "0.0.0.0"]
-```
-
--	Layers:
-	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
-		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
-		Size: 2.1 MB (2065537 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa61db0fdc2d5729c0d515cac1c5995fe557f7c960733fd3619e96c0e4e39149`  
-		Last Modified: Sat, 14 Apr 2018 12:08:28 GMT  
-		Size: 1.2 KB (1250 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1387b88851e61e47c2672160244fb7d9c4db1762a4c349c49e33ff5e9a95796e`  
-		Last Modified: Sat, 14 Apr 2018 12:08:32 GMT  
-		Size: 13.2 MB (13186675 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4bbc8de366adf3d3d256a036185c9c39c229e4da7ffb8ba5a31ed1efde7e31`  
-		Last Modified: Sat, 14 Apr 2018 12:08:28 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a9d4cfd9b34410a4cc54b911d8c289da96425e2e3db0c5c081ff874b97a750f`  
-		Last Modified: Sat, 14 Apr 2018 12:08:28 GMT  
-		Size: 1.7 KB (1681 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `consul:latest`
 
