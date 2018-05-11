@@ -1,19 +1,19 @@
-# `elixir:1.6.4`
+# `elixir:1.6.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:98019a05d245820abcf86a772618198e83b4458b187f10b88b4a5b8ae02ca38f`
-- Created: `2018-05-05T16:14:16.463584712Z`
+- Image ID: `sha256:7efd155eafa8af54d7b019b293af5953f32f60fae2b5f784fd474eee29bd1da3`
+- Created: `2018-05-09T19:20:43.416337001Z`
 - Virtual Size: ~ 1.08 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.3.5`
+  - `OTP_VERSION=20.3.6`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.5.0`
-  - `ELIXIR_VERSION=v1.6.4`
+  - `REBAR3_VERSION=3.5.2`
+  - `ELIXIR_VERSION=v1.6.5`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3980,20 +3980,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.88-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.dsc' linux_4.9.88-1.dsc 123355 SHA256:b58d42a6472f5c8c736aa710c1b58f34a9240bdaf60da65a7f7f4bad7f146723
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88.orig.tar.xz' linux_4.9.88.orig.tar.xz 94587676 SHA256:d1896ed62f0284e212c106e13c38f285c26b62a1f6c0b14117f0491a6acfbd0b
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.debian.tar.xz' linux_4.9.88-1.debian.tar.xz 2490868 SHA256:4e7bb04cf28bbf1d1474b8df10ac8648df542da5f4646af6f67f4aee8f5bce7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.9.88-1/
 
-- https://sources.debian.net/src/linux/4.9.88-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.88-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.88-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
