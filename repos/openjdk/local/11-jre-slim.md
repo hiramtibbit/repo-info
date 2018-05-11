@@ -1,10 +1,10 @@
-# `openjdk:11-ea-11-jre-slim-sid`
+# `openjdk:11-ea-12-jre-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e13cc1bd4bfd7406f5f9df2eeba499d8261e400c66572e049cc562b32e36c7dd`
-- Created: `2018-05-04T23:47:00.588976401Z`
-- Virtual Size: ~ 266.49 Mb  
+- Image ID: `sha256:95882516a898c1f9ef115076b37900072ddd036bb2dce9875d2b6347a2c33cf6`
+- Created: `2018-05-09T17:38:04.099235642Z`
+- Virtual Size: ~ 268.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+11`
-  - `JAVA_DEBIAN_VERSION=11~11-2`
+  - `JAVA_VERSION=11-ea+12`
+  - `JAVA_DEBIAN_VERSION=11~12-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1869,21 +1869,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.dsc' ncurses_6.1-1.dsc 3868 SHA256:c052aab576f78e3ce097063eab060ef065bb14db3d768311c5a7b51077c026d5
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1-1.debian.tar.xz' ncurses_6.1-1.debian.tar.xz 54668 SHA256:8911403b13d6451b54a3fad70c8c6b1c3ff74c3eb7d08840a983d65f1bbc2862
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.1-1/
 
-- https://sources.debian.net/src/ncurses/6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.4-1`
 
@@ -1972,11 +1964,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.36.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.36.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~11-2`
+### `dpkg` source package: `openjdk-11=11~12-1`
 
 Binary Packages:
 
-- `openjdk-11-jre-headless:amd64=11~11-2`
+- `openjdk-11-jre-headless:amd64=11~12-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -1985,13 +1977,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-11=11~12-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~12-1.dsc' openjdk-11_11~12-1.dsc 4511 SHA256:dee149e83e0fbdb1a36d1b130d91e1a8c7b94cf9a34a47d22088003cc63c0a65
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~12.orig.tar.xz' openjdk-11_11~12.orig.tar.xz 73057696 SHA256:5fc67957569a874a281667baf4acfcab968fe79afb37bfd49d4bedf9f403666e
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~12-1.debian.tar.xz' openjdk-11_11~12-1.debian.tar.xz 166376 SHA256:e63c3eb473302eb1cd00e04ac5d4ccc04f6bab30319bf4621050f61386fab1c9
+```
 
-- http://snapshot.debian.org/package/openjdk-11/11~11-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-11/11~12-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~12-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-2`
 
@@ -2103,11 +2102,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-9/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-9/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcsc-lite=1.8.23-2`
+### `dpkg` source package: `pcsc-lite=1.8.23-3`
 
 Binary Packages:
 
-- `libpcsclite1:amd64=1.8.23-2`
+- `libpcsclite1:amd64=1.8.23-3`
 
 Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 
@@ -2120,17 +2119,17 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.23-2
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.dsc' pcsc-lite_1.8.23-2.dsc 2150 SHA256:7783f315243d208a07898ad3199d4e5ddde44a9c1a2801f2de6e82b434c74bcc
+$ apt-get source -qq --print-uris pcsc-lite=1.8.23-3
+'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-3.dsc' pcsc-lite_1.8.23-3.dsc 2150 SHA256:a2fb998a5162b1d9715cc1baf637caba369448945fb970495650817aa71dc0c7
 'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23.orig.tar.bz2' pcsc-lite_1.8.23.orig.tar.bz2 749922 SHA256:5a27262586eff39cfd5c19aadc8891dd71c0818d3d629539bd631b958be689c9
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.debian.tar.xz' pcsc-lite_1.8.23-2.debian.tar.xz 30028 SHA256:36ae57b3858104532845dbaa8d0ea7cebbe9da8384f00b721fafa6b9554da3ce
+'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-3.debian.tar.xz' pcsc-lite_1.8.23-3.debian.tar.xz 30076 SHA256:442efead4cb232267763e2d13c63fd0dda98437223b3667cc666e632596ed5c9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/ (for browsing the source)
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcsc-lite/1.8.23-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pcsc-lite/1.8.23-3/ (for browsing the source)
+- https://sources.debian.net/src/pcsc-lite/1.8.23-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcsc-lite/1.8.23-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.26.2-2`
 
