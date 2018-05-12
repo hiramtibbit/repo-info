@@ -1,16 +1,16 @@
-# `node:10.0.0`
+# `node:10.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c1272350058db55158ae07e6fb9ac0de9ce6b3e5dea8b3e1c687e8708cba4a1`
-- Created: `2018-05-05T06:46:04.633349641Z`
-- Virtual Size: ~ 674.87 Mb  
+- Image ID: `sha256:f697cb5f31f8126976469a527925b702c0b96f292e63eeccf9588a3cb4d2e747`
+- Created: `2018-05-09T19:28:54.641134283Z`
+- Virtual Size: ~ 674.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.0.0`
+  - `NODE_VERSION=10.1.0`
   - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3549,20 +3549,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.56-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56-1.dsc' linux_3.16.56-1.dsc 140649 SHA256:96b2a91cbedbc76a102f76c7862f92e0b07a3e3c0ddd9a418fd1617fb1114080
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56.orig.tar.xz' linux_3.16.56.orig.tar.xz 81885080 SHA256:e1bde0867495ce859568b2cad613203491c080c94fae05d67a03a05697f099aa
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56-1.debian.tar.xz' linux_3.16.56-1.debian.tar.xz 1161016 SHA256:f9c1c23117bef2bb1346522dfef346cad16e249b6600aa71983f4e2e8f7f5c96
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/3.16.56-1/
 
-- https://sources.debian.net/src/linux/3.16.56-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.56-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.56-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 

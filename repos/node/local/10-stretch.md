@@ -1,16 +1,16 @@
-# `node:10.0.0-stretch`
+# `node:10.1.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a68c53cc8bcc4c76b25cfbf2b9ce92f5d4bc1d7827024d129aee117a64e8f5a`
-- Created: `2018-05-05T06:46:51.723679233Z`
-- Virtual Size: ~ 893.49 Mb  
+- Image ID: `sha256:a5c90241252ed21f177759ee574c8bf88f64beca482cbb945008470c9d938408`
+- Created: `2018-05-09T19:52:28.948460111Z`
+- Virtual Size: ~ 893.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.0.0`
+  - `NODE_VERSION=10.1.0`
   - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3871,20 +3871,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.88-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.dsc' linux_4.9.88-1.dsc 123355 SHA256:b58d42a6472f5c8c736aa710c1b58f34a9240bdaf60da65a7f7f4bad7f146723
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88.orig.tar.xz' linux_4.9.88.orig.tar.xz 94587676 SHA256:d1896ed62f0284e212c106e13c38f285c26b62a1f6c0b14117f0491a6acfbd0b
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1.debian.tar.xz' linux_4.9.88-1.debian.tar.xz 2490868 SHA256:4e7bb04cf28bbf1d1474b8df10ac8648df542da5f4646af6f67f4aee8f5bce7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.9.88-1/
 
-- https://sources.debian.net/src/linux/4.9.88-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.88-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.88-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
