@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:182015fabe050fd5ca427d827ed85b6fa14fa254ad0fa4238ad802d679f0f221`
-- Created: `2018-05-05T12:10:32.695325118Z`
-- Virtual Size: ~ 81.60 Mb  
+- Image ID: `sha256:ffac342c832e170a13b95d8de4225affd271b68ef0c47a3729728ac4c8b2a212`
+- Created: `2018-05-09T16:57:18.268451084Z`
+- Virtual Size: ~ 81.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -24,5 +24,5 @@
   - `PHP_SHA256=af70a33b3f7a51510467199b39af151333fbbe4cc21923bad9c7cf64268cddb2`
   - `PHP_MD5=`
   - `ADMINER_VERSION=4.6.2`
-  - `ADMINER_DOWNLOAD_SHA256=4b8e0d184a1f0c5ec2c077fd20a06d3e27877d8a63fd4f75aaf92abb103ff458`
+  - `ADMINER_DOWNLOAD_SHA256=2b3e5e87ed1214288378fc272c1ba0497ec2f1128444e3a581eabd435f5575b9`
   - `ADMINER_SRC_DOWNLOAD_SHA256=13f26a5aeed2f734d9309a922592f2e2b35ba2ea5c1c2a2c8402ca26a8808682`
