@@ -2355,20 +2355,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.23-2
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.dsc' pcsc-lite_1.8.23-2.dsc 2150 SHA256:7783f315243d208a07898ad3199d4e5ddde44a9c1a2801f2de6e82b434c74bcc
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23.orig.tar.bz2' pcsc-lite_1.8.23.orig.tar.bz2 749922 SHA256:5a27262586eff39cfd5c19aadc8891dd71c0818d3d629539bd631b958be689c9
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.23-2.debian.tar.xz' pcsc-lite_1.8.23-2.debian.tar.xz 30028 SHA256:36ae57b3858104532845dbaa8d0ea7cebbe9da8384f00b721fafa6b9554da3ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcsc-lite/1.8.23-2/
 
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/ (for browsing the source)
-- https://sources.debian.net/src/pcsc-lite/1.8.23-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcsc-lite/1.8.23-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.26.2-2`
 

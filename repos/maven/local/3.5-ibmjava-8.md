@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9db5c0bb58ce157284010288848ff4f31624b6521ec5f21c736e8291582ef987`
-- Created: `2018-05-03T01:56:11.468298818Z`
-- Virtual Size: ~ 420.84 Mb  
+- Image ID: `sha256:07ae533c40ef0a680c84ddc176eb11da23470d8f1e39bae6a6f858e730acfe36`
+- Created: `2018-05-11T19:02:22.907671088Z`
+- Virtual Size: ~ 420.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp11`
+  - `JAVA_VERSION=1.8.0_sr5fp15`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
@@ -1671,14 +1671,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.dsc' wget_1.17.1-1ubuntu1.3.dsc 1937 SHA256:20bb00897b9aab568f4e35566ac97bdf50189e2a9f680e82f06461fcd5ae340e
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.debian.tar.xz' wget_1.17.1-1ubuntu1.3.debian.tar.xz 27900 SHA256:283781ad43de4fa85c1e2266215bb563bbaab5c70e28b0f48e69cfe5f0bb663e
-```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
