@@ -2444,14 +2444,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.3-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.3-1.pgdg90+1.dsc' postgresql-10_10.3-1.pgdg90+1.dsc 2627 SHA256:319531dac21c6fae4576f0b24ba2f8a05873451ff670563366aaec87b64ea71e
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.3.orig.tar.bz2' postgresql-10_10.3.orig.tar.bz2 19959653 SHA256:6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.3-1.pgdg90+1.debian.tar.xz' postgresql-10_10.3-1.pgdg90+1.debian.tar.xz 22856 SHA256:6ee1fe67201efec2f20c0fdb448ab41c3cf9f4063e3e15e17c0fa22a7bdfd060
-```
 
 ### `dpkg` source package: `postgresql-common=190.pgdg90+1`
 
@@ -2465,13 +2460,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=190.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_190.pgdg90+1.dsc' postgresql-common_190.pgdg90+1.dsc 1473 SHA256:a0e6129d5f2edf0f247926555a31ee8bf9717a08e74c8c646d40fde3ed68f430
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_190.pgdg90+1.tar.xz' postgresql-common_190.pgdg90+1.tar.xz 207960 SHA256:8a62a3d3499f4c18b3058e0a0abcea2266ed97f6e6daa6dba54f719c6875dad6
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
