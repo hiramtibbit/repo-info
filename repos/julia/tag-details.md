@@ -6,16 +6,20 @@
 -	[`julia:0.6`](#julia06)
 -	[`julia:0.6.2`](#julia062)
 -	[`julia:0.6.2-jessie`](#julia062-jessie)
+-	[`julia:0.6.2-stretch`](#julia062-stretch)
 -	[`julia:0.6.2-windowsservercore-1709`](#julia062-windowsservercore-1709)
 -	[`julia:0.6.2-windowsservercore-ltsc2016`](#julia062-windowsservercore-ltsc2016)
 -	[`julia:0.6-jessie`](#julia06-jessie)
+-	[`julia:0.6-stretch`](#julia06-stretch)
 -	[`julia:0.6-windowsservercore-1709`](#julia06-windowsservercore-1709)
 -	[`julia:0.6-windowsservercore-ltsc2016`](#julia06-windowsservercore-ltsc2016)
 -	[`julia:0-jessie`](#julia0-jessie)
+-	[`julia:0-stretch`](#julia0-stretch)
 -	[`julia:0-windowsservercore-1709`](#julia0-windowsservercore-1709)
 -	[`julia:0-windowsservercore-ltsc2016`](#julia0-windowsservercore-ltsc2016)
 -	[`julia:jessie`](#juliajessie)
 -	[`julia:latest`](#julialatest)
+-	[`julia:stretch`](#juliastretch)
 -	[`julia:windowsservercore-1709`](#juliawindowsservercore-1709)
 -	[`julia:windowsservercore-ltsc2016`](#juliawindowsservercore-ltsc2016)
 
@@ -1211,6 +1215,10 @@ CMD ["julia"]
 		Size: 67.1 MB (67054718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:0.6.2-stretch`
+
+**does not exist** (yet?)
+
 ## `julia:0.6.2-windowsservercore-1709`
 
 ```console
@@ -1558,6 +1566,10 @@ CMD ["julia"]
 		Size: 67.1 MB (67054718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:0.6-stretch`
+
+**does not exist** (yet?)
+
 ## `julia:0.6-windowsservercore-1709`
 
 ```console
@@ -1904,6 +1916,10 @@ CMD ["julia"]
 		Last Modified: Sat, 28 Apr 2018 12:58:01 GMT  
 		Size: 67.1 MB (67054718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `julia:0-stretch`
+
+**does not exist** (yet?)
 
 ## `julia:0-windowsservercore-1709`
 
@@ -2580,6 +2596,10 @@ CMD ["julia"]
 		Last Modified: Fri, 11 May 2018 09:20:43 GMT  
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `julia:stretch`
+
+**does not exist** (yet?)
 
 ## `julia:windowsservercore-1709`
 
