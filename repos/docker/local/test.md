@@ -1,9 +1,9 @@
-# `docker:18.05.0-ce-rc1`
+# `docker:18.05.0-ce`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bbf2a90b5de8cea9ebe5e0624ddddc7564faf32b80824736ba439802f47ea47`
-- Created: `2018-04-26T21:26:19.613904586Z`
+- Image ID: `sha256:2232c0bbbb8cc9238eefc10721db5662156a2624bc7405dc1cade624dde9aaec`
+- Created: `2018-05-10T20:21:59.275742108Z`
 - Virtual Size: ~ 133.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,5 +11,5 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=18.05.0-ce-rc1`
+  - `DOCKER_CHANNEL=edge`
+  - `DOCKER_VERSION=18.05.0-ce`
