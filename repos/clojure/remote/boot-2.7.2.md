@@ -1,7 +1,7 @@
 ## `clojure:boot-2.7.2`
 
 ```console
-$ docker pull clojure@sha256:e9f52f26114f942f00b4a5a14e5bbed96495fc784973949c01a27c79984ea342
+$ docker pull clojure@sha256:a50ace93151642e0eac115fdbf968a9c48f6df8b5b53a76b46b248bac2e66dfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -449,14 +449,14 @@ RUN boot
 ### `clojure:boot-2.7.2` - linux; 386
 
 ```console
-$ docker pull clojure@sha256:2d6bcf0c1d386142d58b4691caf4080f67aa705a250e04a796a669467ace204c
+$ docker pull clojure@sha256:c7d21d59ef221bb299c18c53029ccadf55573ba9f73bc08fd1e08caf54cda1f7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.8 MB (322807650 bytes)**  
+-	Total Size: **281.6 MB (281558173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4031b146ade9e91071f644b2b2c2d3c4cb96d7351746257df8f6a64121950afb`
+-	Image ID: `sha256:0d57bacf81667f4aa08729c045f662e562d4c370eb9fa9f395d2bd7f752f9869`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -486,25 +486,25 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Sat, 05 May 2018 13:22:01 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Sat, 05 May 2018 13:22:49 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Sat, 05 May 2018 13:22:52 GMT
+# Tue, 15 May 2018 11:39:27 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Tue, 15 May 2018 11:39:29 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 19:20:02 GMT
+# Tue, 15 May 2018 13:16:08 GMT
 LABEL maintainer=Wes Morgan <wesmorgan@icloud.com>
-# Sat, 05 May 2018 19:20:03 GMT
+# Tue, 15 May 2018 13:16:08 GMT
 ENV BOOT_VERSION=2.7.2
-# Sat, 05 May 2018 19:20:03 GMT
+# Tue, 15 May 2018 13:16:09 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Sat, 05 May 2018 19:20:03 GMT
+# Tue, 15 May 2018 13:16:09 GMT
 WORKDIR /tmp
-# Sat, 05 May 2018 19:20:05 GMT
+# Tue, 15 May 2018 13:16:10 GMT
 RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Sat, 05 May 2018 19:20:05 GMT
+# Tue, 15 May 2018 13:16:10 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 05 May 2018 19:20:05 GMT
+# Tue, 15 May 2018 13:16:10 GMT
 ENV BOOT_AS_ROOT=yes
-# Sat, 05 May 2018 19:22:20 GMT
+# Tue, 15 May 2018 13:18:06 GMT
 RUN boot
 ```
 
@@ -537,21 +537,21 @@ RUN boot
 		Last Modified: Sat, 05 May 2018 13:45:02 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c3174ac63269839002db13e440ddf1436ce7fc62eb58aab9e44ffcf73a9fe66`  
-		Last Modified: Sat, 05 May 2018 13:45:50 GMT  
-		Size: 175.3 MB (175280007 bytes)  
+	-	`sha256:b24ef60a567cb5fa284fa4b1196737fe1c18b7a7a1810511c8afd93259517990`  
+		Last Modified: Tue, 15 May 2018 12:17:31 GMT  
+		Size: 134.0 MB (134030401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff5add897047ae6f52259a825f97c864599457875e9fb49af5464b97c258b608`  
-		Last Modified: Sat, 05 May 2018 13:45:03 GMT  
-		Size: 272.1 KB (272130 bytes)  
+	-	`sha256:eccac42f1e79dbb16d86256590b009bf58506365e99cbd39583b07d5b1bb12bf`  
+		Last Modified: Tue, 15 May 2018 12:16:54 GMT  
+		Size: 272.1 KB (272147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f663032350b2793d6cd1d73cd09114edfff2ba0a5e6e3a58e518602b5e9e9d6`  
-		Last Modified: Sat, 05 May 2018 19:23:35 GMT  
-		Size: 6.9 KB (6898 bytes)  
+	-	`sha256:826657626d38d31ed53c80690f7001e2ce82a870647494ae7ff76f769e1d0853`  
+		Last Modified: Tue, 15 May 2018 13:19:26 GMT  
+		Size: 6.9 KB (6900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7260597d0ad8f930d82976591ab5498dabf67160434baeb45ea51c44127ba6`  
-		Last Modified: Sat, 05 May 2018 19:23:46 GMT  
-		Size: 33.4 MB (33410549 bytes)  
+	-	`sha256:400d09df807fdb2d8d1f855e1595e4638370727fd222fedc936a4062312999b2`  
+		Last Modified: Tue, 15 May 2018 13:19:29 GMT  
+		Size: 33.4 MB (33410659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:boot-2.7.2` - linux; ppc64le
