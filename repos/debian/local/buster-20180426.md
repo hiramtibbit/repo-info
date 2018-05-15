@@ -1675,20 +1675,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1-0.5.dsc' util-linux_2.31.1-0.5.dsc 4181 SHA256:d67c1bc851f0dd5028387671940b5904fabad2cb24e98eeb4a755fce7e82d317
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1-0.5.debian.tar.xz' util-linux_2.31.1-0.5.debian.tar.xz 87512 SHA256:a0b049065431f8c9455fbe7276b8ca7cdf020cff0329cd1f050ee1fb380432ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.31.1-0.5/
 
-- https://sources.debian.net/src/util-linux/2.31.1-0.5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.31.1-0.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.31.1-0.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
