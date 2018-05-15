@@ -38,6 +38,19 @@
 -	[`ros:lunar-ros-core`](#roslunar-ros-core)
 -	[`ros:lunar-ros-core-stretch`](#roslunar-ros-core-stretch)
 -	[`ros:lunar-ros-core-xenial`](#roslunar-ros-core-xenial)
+-	[`ros:melodic`](#rosmelodic)
+-	[`ros:melodic-perception`](#rosmelodic-perception)
+-	[`ros:melodic-perception-bionic`](#rosmelodic-perception-bionic)
+-	[`ros:melodic-perception-stretch`](#rosmelodic-perception-stretch)
+-	[`ros:melodic-robot`](#rosmelodic-robot)
+-	[`ros:melodic-robot-bionic`](#rosmelodic-robot-bionic)
+-	[`ros:melodic-robot-stretch`](#rosmelodic-robot-stretch)
+-	[`ros:melodic-ros-base`](#rosmelodic-ros-base)
+-	[`ros:melodic-ros-base-bionic`](#rosmelodic-ros-base-bionic)
+-	[`ros:melodic-ros-base-stretch`](#rosmelodic-ros-base-stretch)
+-	[`ros:melodic-ros-core`](#rosmelodic-ros-core)
+-	[`ros:melodic-ros-core-bionic`](#rosmelodic-ros-core-bionic)
+-	[`ros:melodic-ros-core-stretch`](#rosmelodic-ros-core-stretch)
 
 ## `ros:indigo`
 
@@ -10108,3 +10121,55 @@ CMD ["bash"]
 		Last Modified: Tue, 01 May 2018 04:32:45 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:melodic`
+
+**does not exist** (yet?)
+
+## `ros:melodic-perception`
+
+**does not exist** (yet?)
+
+## `ros:melodic-perception-bionic`
+
+**does not exist** (yet?)
+
+## `ros:melodic-perception-stretch`
+
+**does not exist** (yet?)
+
+## `ros:melodic-robot`
+
+**does not exist** (yet?)
+
+## `ros:melodic-robot-bionic`
+
+**does not exist** (yet?)
+
+## `ros:melodic-robot-stretch`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-base`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-base-bionic`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-base-stretch`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-core`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-core-bionic`
+
+**does not exist** (yet?)
+
+## `ros:melodic-ros-core-stretch`
+
+**does not exist** (yet?)
