@@ -4228,20 +4228,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u10
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u10.dsc' tiff3_3.9.6-11+deb7u10.dsc 1619 SHA256:008d75f0e64e259bf5bff4f3869fd9a161fd40eabf08160561a8c720954be16f
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u10.debian.tar.gz' tiff3_3.9.6-11+deb7u10.debian.tar.gz 52031 SHA256:f876224e53d4b3e9f9b65921f2480af78078ca8f9dae566f06af25ea80677e3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u10/
 
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u10/ (for browsing the source)
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.5=8.5.11-2`
 
