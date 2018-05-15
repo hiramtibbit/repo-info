@@ -3610,21 +3610,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.5.3-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5.3-1.dsc' mercurial_4.5.3-1.dsc 2659 SHA256:d398360e651fa96198f07ba34a62d8cf5366f3c0ada1855c17c0fa6fd906e622
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5.3.orig.tar.gz' mercurial_4.5.3.orig.tar.gz 5884837 SHA256:9c4cb257ef1e59e9aba693cc285a6136f7bb4e8300f598ff50ff8b6fc77808fc
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5.3.orig.tar.gz.asc' mercurial_4.5.3.orig.tar.gz.asc 833 SHA256:578a21314a0ab790777c88ae4af6bab66f8cf72e94f2d09580f9dfa3197ce326
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.5.3-1.debian.tar.xz' mercurial_4.5.3-1.debian.tar.xz 58800 SHA256:db5017c539b734342ba9a649d45e0beb51381c18d7068d8838bbda39f9758ee2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.5.3-1/
 
-- https://sources.debian.net/src/mercurial/4.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -5068,20 +5060,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1-0.5.dsc' util-linux_2.31.1-0.5.dsc 4181 SHA256:d67c1bc851f0dd5028387671940b5904fabad2cb24e98eeb4a755fce7e82d317
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.31.1-0.5.debian.tar.xz' util-linux_2.31.1-0.5.debian.tar.xz 87512 SHA256:a0b049065431f8c9455fbe7276b8ca7cdf020cff0329cd1f050ee1fb380432ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.31.1-0.5/
 
-- https://sources.debian.net/src/util-linux/2.31.1-0.5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.31.1-0.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.31.1-0.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
@@ -5094,21 +5079,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.4-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.dsc' wget_1.19.4-1.dsc 2158 SHA256:14616d5aeaf1d8262b56edb6aa4541b0f0d85cf0de708d777f049adf4ad844a5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz' wget_1.19.4.orig.tar.gz 4310657 SHA256:93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4.orig.tar.gz.asc' wget_1.19.4.orig.tar.gz.asc 1241 SHA256:ee273f3a27adb2d2dc02ba346759ce95cb74ded959853a8a9c9be5ae44d10fcb
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.4-1.debian.tar.xz' wget_1.19.4-1.debian.tar.xz 60172 SHA256:829c85dc5cd545e5f260c1715bffd9999f420dd8bb5b00def30acc068c1bf00a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.19.4-1/
 
-- https://sources.debian.net/src/wget/1.19.4-1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.19.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.19.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 
