@@ -1,7 +1,7 @@
 ## `clojure:lein-2.8.1-onbuild`
 
 ```console
-$ docker pull clojure@sha256:8769f3c88b243e455c4d0af302006eb56736d2a153f0c024ff30ceb56534aade
+$ docker pull clojure@sha256:cc442a964aecab92ae977841ee00c592434eb82cac01896a2a8ae9d8e3f2de7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -389,14 +389,14 @@ CMD ["lein" "run"]
 ### `clojure:lein-2.8.1-onbuild` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:adb2a7e0e59668879b2f9b96762464812e48319e142374816bd9aeb804216160
+$ docker pull clojure@sha256:b476d3974a608e39137e7af61d355e490f74495e18c52a128a0b2842878b58d7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.0 MB (279959365 bytes)**  
+-	Total Size: **244.3 MB (244338127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2deefb77ffa11185e423dca70ce7119e37eb1dad73a18a5e430a75702849ce27`
+-	Image ID: `sha256:f51a93138449ba894d37d96e38e448fb2053a30446938a8c864738847855e923`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -426,37 +426,37 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Sat, 05 May 2018 12:14:22 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Sat, 05 May 2018 12:20:14 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Sat, 05 May 2018 12:20:21 GMT
+# Tue, 15 May 2018 10:04:58 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Tue, 15 May 2018 10:05:07 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 21:36:50 GMT
+# Tue, 15 May 2018 14:19:33 GMT
 LABEL maintainer=Paul Lam <paul@quantisan.com>
-# Sat, 05 May 2018 21:36:51 GMT
+# Tue, 15 May 2018 14:19:34 GMT
 ENV LEIN_VERSION=2.8.1
-# Sat, 05 May 2018 21:36:52 GMT
+# Tue, 15 May 2018 14:19:35 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Sat, 05 May 2018 21:36:52 GMT
+# Tue, 15 May 2018 14:19:35 GMT
 WORKDIR /tmp
-# Sat, 05 May 2018 21:37:12 GMT
+# Tue, 15 May 2018 14:19:45 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg   && echo "Comparing lein-pkg checksum ..."   && echo "019faa5f91a463bf9742c3634ee32fb3db8c47f0 *lein-pkg" | sha1sum -c -   && mv lein-pkg $LEIN_INSTALL/lein   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2B72BF956E23DE5E830D50F6002AF007D1A7CC18   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Sat, 05 May 2018 21:37:12 GMT
+# Tue, 15 May 2018 14:19:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 05 May 2018 21:37:13 GMT
+# Tue, 15 May 2018 14:19:47 GMT
 ENV LEIN_ROOT=1
-# Sat, 05 May 2018 21:37:25 GMT
+# Tue, 15 May 2018 14:19:56 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
-# Sat, 05 May 2018 21:37:33 GMT
+# Tue, 15 May 2018 14:20:09 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Sat, 05 May 2018 21:37:34 GMT
+# Tue, 15 May 2018 14:20:10 GMT
 WORKDIR /usr/src/app
-# Sat, 05 May 2018 21:37:35 GMT
+# Tue, 15 May 2018 14:20:11 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Sat, 05 May 2018 21:37:36 GMT
+# Tue, 15 May 2018 14:20:11 GMT
 ONBUILD RUN lein deps
-# Sat, 05 May 2018 21:37:37 GMT
+# Tue, 15 May 2018 14:20:12 GMT
 ONBUILD COPY . /usr/src/app
-# Sat, 05 May 2018 21:37:37 GMT
+# Tue, 15 May 2018 14:20:13 GMT
 CMD ["lein" "run"]
 ```
 
@@ -489,25 +489,25 @@ CMD ["lein" "run"]
 		Last Modified: Sat, 05 May 2018 13:04:21 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb64e69fca916ae8398121479541033328b8e9cff6d27b0a5e30af9904396845`  
-		Last Modified: Sat, 05 May 2018 13:05:30 GMT  
-		Size: 157.8 MB (157823523 bytes)  
+	-	`sha256:040c6a364e18bde16447984bcbc76f9f04d3dc8702e9b0d0ce7dbad52323ba2e`  
+		Last Modified: Tue, 15 May 2018 11:04:39 GMT  
+		Size: 122.2 MB (122202299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ee16d66b8ef3580ce831869733ec7130a50284b3c76ecb23244ce4896d20264`  
-		Last Modified: Sat, 05 May 2018 13:04:21 GMT  
-		Size: 272.1 KB (272135 bytes)  
+	-	`sha256:bf501b32796c19d43b56ab9bb6aca3b3bdb3ef707b66ed45ad003003596b3fa7`  
+		Last Modified: Tue, 15 May 2018 11:04:00 GMT  
+		Size: 272.1 KB (272144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5c2d08853f747a8fd890a5404ca2dcd95ce091f848b349e6dfd162faca6a261`  
-		Last Modified: Sat, 05 May 2018 21:41:06 GMT  
-		Size: 12.1 MB (12137678 bytes)  
+	-	`sha256:50983dceda999490390eb6758f500ef02900b7f3b82ed428978c744a6aa2b5d9`  
+		Last Modified: Tue, 15 May 2018 14:23:01 GMT  
+		Size: 12.1 MB (12137667 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b991c153e53279abcaea6d850f785cb7eb10d975e23c845e718193bb419fe7c2`  
-		Last Modified: Sat, 05 May 2018 21:41:04 GMT  
-		Size: 3.9 MB (3941875 bytes)  
+	-	`sha256:8609a7ab2a98bce802f9a6753033caefccae6282d871dab4a56eb168a6e1430a`  
+		Last Modified: Tue, 15 May 2018 14:22:58 GMT  
+		Size: 3.9 MB (3941862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef963af114e9545b69e43eb402e6eac6bae11fc80ba9de38c63982ac1cbe7da5`  
-		Last Modified: Sat, 05 May 2018 21:41:30 GMT  
-		Size: 132.0 B  
+	-	`sha256:25c9f7814305e74cf950bbfa25e7de4276a80fc4940ace7426496530e4c9c3f9`  
+		Last Modified: Tue, 15 May 2018 14:23:30 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:lein-2.8.1-onbuild` - linux; 386
@@ -761,14 +761,14 @@ CMD ["lein" "run"]
 ### `clojure:lein-2.8.1-onbuild` - linux; s390x
 
 ```console
-$ docker pull clojure@sha256:a6e02caba6b0cc9cb1e21b356f5cb86d6460efe22fe7a7f49dfdcf197cfe62fc
+$ docker pull clojure@sha256:457be331186943cfe03d22498debb5cfa84bd214f2384a1dd7c2ce50f6528ed6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.1 MB (271055425 bytes)**  
+-	Total Size: **251.2 MB (251236419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91d4a61e8172acb50d1cdaa929a81baf302a34a3ed5306c5055459e79e76846e`
+-	Image ID: `sha256:e8b47f77c8b518c513c0e15e2fa2877f6dbf417b77b121e342b59ec559861e81`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -776,59 +776,59 @@ $ docker pull clojure@sha256:a6e02caba6b0cc9cb1e21b356f5cb86d6460efe22fe7a7f49df
 ADD file:cb13df185b5fc36710007c3b4ec6f239ac340ff9c69cbec1e38fcf974766179b in / 
 # Sat, 28 Apr 2018 11:45:04 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 13:19:43 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 13:19:49 GMT
+# Sat, 05 May 2018 12:35:52 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Sat, 05 May 2018 12:35:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 28 Apr 2018 13:20:22 GMT
+# Sat, 05 May 2018 12:36:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 14:30:48 GMT
+# Sat, 05 May 2018 13:14:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 14:30:48 GMT
+# Sat, 05 May 2018 13:14:44 GMT
 ENV LANG=C.UTF-8
-# Sat, 28 Apr 2018 14:30:49 GMT
+# Sat, 05 May 2018 13:14:44 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 28 Apr 2018 14:30:49 GMT
+# Sat, 05 May 2018 13:14:45 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 28 Apr 2018 14:30:50 GMT
+# Sat, 05 May 2018 13:14:45 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 28 Apr 2018 14:30:50 GMT
-ENV JAVA_VERSION=8u162
-# Sat, 28 Apr 2018 14:30:50 GMT
-ENV JAVA_DEBIAN_VERSION=8u162-b12-1~deb9u1
-# Sat, 28 Apr 2018 14:30:50 GMT
+# Sat, 05 May 2018 13:14:45 GMT
+ENV JAVA_VERSION=8u171
+# Sat, 05 May 2018 13:14:46 GMT
+ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
+# Sat, 05 May 2018 13:14:46 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Sat, 28 Apr 2018 14:31:22 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Sat, 28 Apr 2018 14:31:25 GMT
+# Tue, 15 May 2018 12:10:02 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Tue, 15 May 2018 12:10:05 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 28 Apr 2018 20:18:07 GMT
+# Tue, 15 May 2018 14:05:27 GMT
 LABEL maintainer=Paul Lam <paul@quantisan.com>
-# Sat, 28 Apr 2018 20:18:07 GMT
+# Tue, 15 May 2018 14:05:27 GMT
 ENV LEIN_VERSION=2.8.1
-# Sat, 28 Apr 2018 20:18:07 GMT
+# Tue, 15 May 2018 14:05:27 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Sat, 28 Apr 2018 20:18:08 GMT
+# Tue, 15 May 2018 14:05:27 GMT
 WORKDIR /tmp
-# Sat, 28 Apr 2018 20:18:13 GMT
+# Tue, 15 May 2018 14:05:33 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg   && echo "Comparing lein-pkg checksum ..."   && echo "019faa5f91a463bf9742c3634ee32fb3db8c47f0 *lein-pkg" | sha1sum -c -   && mv lein-pkg $LEIN_INSTALL/lein   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2B72BF956E23DE5E830D50F6002AF007D1A7CC18   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Sat, 28 Apr 2018 20:18:14 GMT
+# Tue, 15 May 2018 14:05:33 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 28 Apr 2018 20:18:14 GMT
+# Tue, 15 May 2018 14:05:33 GMT
 ENV LEIN_ROOT=1
-# Sat, 28 Apr 2018 20:18:35 GMT
+# Tue, 15 May 2018 14:05:53 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
-# Sat, 28 Apr 2018 20:18:52 GMT
+# Tue, 15 May 2018 14:06:01 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Sat, 28 Apr 2018 20:18:52 GMT
+# Tue, 15 May 2018 14:06:02 GMT
 WORKDIR /usr/src/app
-# Sat, 28 Apr 2018 20:18:52 GMT
+# Tue, 15 May 2018 14:06:02 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Sat, 28 Apr 2018 20:18:53 GMT
+# Tue, 15 May 2018 14:06:02 GMT
 ONBUILD RUN lein deps
-# Sat, 28 Apr 2018 20:18:53 GMT
+# Tue, 15 May 2018 14:06:02 GMT
 ONBUILD COPY . /usr/src/app
-# Sat, 28 Apr 2018 20:18:53 GMT
+# Tue, 15 May 2018 14:06:02 GMT
 CMD ["lein" "run"]
 ```
 
@@ -837,47 +837,47 @@ CMD ["lein" "run"]
 		Last Modified: Sat, 28 Apr 2018 11:50:58 GMT  
 		Size: 45.2 MB (45185265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1029d8fb29ae0fbf637f52ff30953b34e447a34365b9055b19faf7f1304d7a6`  
-		Last Modified: Sat, 28 Apr 2018 13:29:28 GMT  
-		Size: 10.3 MB (10282302 bytes)  
+	-	`sha256:c85f5ec4e23ee12af518c5fcad0035942a1f87ec2088506cee32142c1c65f61a`  
+		Last Modified: Sat, 05 May 2018 12:48:28 GMT  
+		Size: 10.3 MB (10300914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4db5fb833827f26afd173271cc60ae9e63a0188bcdfcfa887ca20ef5cba5fea5`  
-		Last Modified: Sat, 28 Apr 2018 13:29:26 GMT  
-		Size: 4.4 MB (4365988 bytes)  
+	-	`sha256:9c2eea9e27e3fa96462ebe8337d9b6cdcd7d157804dcc45590711a4a7408f64d`  
+		Last Modified: Sat, 05 May 2018 12:48:26 GMT  
+		Size: 4.4 MB (4366581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:880249d542fab8452b7a2557e8f03c0bc9d21c2cb3d863b2e3e4db454ef4f75f`  
-		Last Modified: Sat, 28 Apr 2018 13:29:36 GMT  
-		Size: 50.5 MB (50450158 bytes)  
+	-	`sha256:7a4c5cebd8cef0143ddd69b694ac843162a0cc224c2db057b0d500f4e4adbb1f`  
+		Last Modified: Sat, 05 May 2018 12:48:59 GMT  
+		Size: 50.5 MB (50450723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2f0aba92e0f80ec33924cf8df5bf4c9c862f81c44d1c3a2e8b2f5e5d23fe444`  
-		Last Modified: Sat, 28 Apr 2018 14:55:09 GMT  
-		Size: 903.1 KB (903079 bytes)  
+	-	`sha256:976f9ec742a53abba9552295f219bd97587c010f8d3fcf346a6974c7ef1283c4`  
+		Last Modified: Sat, 05 May 2018 13:29:10 GMT  
+		Size: 903.6 KB (903558 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b703017df6314f9b8493960924ee5eb2b3c9def54e5d352ed31bb87cf93ceb6d`  
-		Last Modified: Sat, 28 Apr 2018 14:55:08 GMT  
-		Size: 248.0 B  
+	-	`sha256:398863b481e7e43c589673655d90da3e0153da85e155397b7ef8a2f77b355f3a`  
+		Last Modified: Sat, 05 May 2018 13:29:10 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6204e617487fda7c8cd462d9fa5ce9b0c5eadb154902bedae113a33177b115c1`  
-		Last Modified: Sat, 28 Apr 2018 14:55:08 GMT  
+	-	`sha256:481a99122b208c2cebbb96006bc002330624d0a6e1b40acbab44fe1c89808bbe`  
+		Last Modified: Sat, 05 May 2018 13:29:10 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae059516112b02a3d2551947674db730ad93f43433d7bf7caab04ef915915fbb`  
-		Last Modified: Sat, 28 Apr 2018 14:55:29 GMT  
-		Size: 143.5 MB (143516383 bytes)  
+	-	`sha256:fe66205427238f9680710bfa83f362ea6cfdc172196de53a67618f4cc2ce3954`  
+		Last Modified: Tue, 15 May 2018 12:45:05 GMT  
+		Size: 123.7 MB (123677133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49cd51ffc9aca982374111319b6f3a0fea07bc97eadd6e9843b5160fe97fc247`  
-		Last Modified: Sat, 28 Apr 2018 14:55:08 GMT  
-		Size: 272.2 KB (272158 bytes)  
+	-	`sha256:866f4c097362721ebf7b37c15786e189aa7d6039b196f436a640b5335bc8fab5`  
+		Last Modified: Tue, 15 May 2018 12:44:43 GMT  
+		Size: 272.2 KB (272167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bffc0393ed9b73b33e537d743e24b518b1699b37a6f66e92215d9344bc28b7b`  
-		Last Modified: Sat, 28 Apr 2018 20:26:43 GMT  
-		Size: 12.1 MB (12137680 bytes)  
+	-	`sha256:69cc7d10f08e90ed3db81687553f62dbcef165588bd8820938f8455f00475ec2`  
+		Last Modified: Tue, 15 May 2018 14:10:25 GMT  
+		Size: 12.1 MB (12137677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db9130c189f0b16fbd3f7957c980e16c59c4dd1d958a9c1d531038a0767f6daa`  
-		Last Modified: Sat, 28 Apr 2018 20:26:42 GMT  
-		Size: 3.9 MB (3941900 bytes)  
+	-	`sha256:75446353efa0174d6d2e2b87c790277f7bcb83709a86c1ff2bc79d67b04ac87e`  
+		Last Modified: Tue, 15 May 2018 14:10:24 GMT  
+		Size: 3.9 MB (3941889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9216c6ca67f24f96e647f1b5e7c8bfc06c2ea0fc9690fad43f9870a5bb2cf2e`  
-		Last Modified: Sat, 28 Apr 2018 20:27:05 GMT  
-		Size: 132.0 B  
+	-	`sha256:a37a1c98141fb1defab37f3caa2f721ec91bd6fffbe2471e7283c8051d9e4c98`  
+		Last Modified: Tue, 15 May 2018 14:10:58 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
