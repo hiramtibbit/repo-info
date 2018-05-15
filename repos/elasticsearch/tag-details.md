@@ -20,7 +20,7 @@
 ## `elasticsearch:2`
 
 ```console
-$ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b23862c032e2078a4ea214da
+$ docker pull elasticsearch@sha256:bdece923a9b9900790b59e0c862738ddc693edbeaa8d9c0545cffbdfc3e403e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30,14 +30,14 @@ $ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b2386
 ### `elasticsearch:2` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:32b850da6b46ec2a7169e6a6b6cab229fa07a663b0226c8f01c5e31a1ec4d320
+$ docker pull elasticsearch@sha256:23c46d8e13c0df2308b20b008d217604589cfb6b71d4242f989f4f27b0fff5f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.9 MB (245881498 bytes)**  
+-	Total Size: **212.8 MB (212784926 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e155805209c87482d267c81fd7fcc9a29012b7478cc93edb00ab0f2beaeb761a`
+-	Image ID: `sha256:14f1ca3a6174ffe52d679841040bb686b6ca4235fb567168176e940cb0962aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -66,41 +66,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/2.x/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:20 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_DEB_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:24 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:32 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -129,47 +129,47 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95491e1e04ab509383f4607c1bf02d008eeb7d5c1d49595c7cb423f3f7298717`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 936.1 KB (936051 bytes)  
+	-	`sha256:0dd7e0fe42787d76499226868592d38011a004a2fd16a1199157b8b836b3ad82`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
+		Size: 920.4 KB (920428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ca5d90bc1c607401620ac88dc851141824a0239b41e67b2bdd8b879478ba3b`  
-		Last Modified: Sat, 05 May 2018 08:22:15 GMT  
-		Size: 27.7 MB (27682597 bytes)  
+	-	`sha256:8b72bfb273c61d7e4dfcdc9dfed17e3410cf9d658eeb198dd064ed23b5296b65`  
+		Last Modified: Tue, 15 May 2018 01:09:23 GMT  
+		Size: 27.7 MB (27667036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:752142847e8e37255894e1bc85a92214720500d0f35ef1aad9fb7cf58b7a73b5`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
+	-	`sha256:a262a117d325607bbe72fb7e11e712120777a7570ed856f9ae33e95c6f24a4fd`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eecdc430dffb5ded2b590e204ca3cf5297f8172b41dd35b9fb5f61db0df87dec`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 551.0 B  
+	-	`sha256:a550b0a4b1f4b8b7b1f0c1d8ea73bae75ef706f5f0b4a9b883d230241794ff12`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 547.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f101c8904dc0ea24ba5f873bc53394eee304445f6a795b1c1e535e78b5a35ed`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 508.0 B  
+	-	`sha256:2282af920311c5d2d73600848a6811ea725a862b9d5291e0bdd105a415509c47`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.4`
 
 ```console
-$ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b23862c032e2078a4ea214da
+$ docker pull elasticsearch@sha256:bdece923a9b9900790b59e0c862738ddc693edbeaa8d9c0545cffbdfc3e403e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -179,14 +179,14 @@ $ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b2386
 ### `elasticsearch:2.4` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:32b850da6b46ec2a7169e6a6b6cab229fa07a663b0226c8f01c5e31a1ec4d320
+$ docker pull elasticsearch@sha256:23c46d8e13c0df2308b20b008d217604589cfb6b71d4242f989f4f27b0fff5f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.9 MB (245881498 bytes)**  
+-	Total Size: **212.8 MB (212784926 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e155805209c87482d267c81fd7fcc9a29012b7478cc93edb00ab0f2beaeb761a`
+-	Image ID: `sha256:14f1ca3a6174ffe52d679841040bb686b6ca4235fb567168176e940cb0962aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -215,41 +215,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/2.x/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:20 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_DEB_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:24 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:32 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -278,47 +278,47 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95491e1e04ab509383f4607c1bf02d008eeb7d5c1d49595c7cb423f3f7298717`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 936.1 KB (936051 bytes)  
+	-	`sha256:0dd7e0fe42787d76499226868592d38011a004a2fd16a1199157b8b836b3ad82`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
+		Size: 920.4 KB (920428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ca5d90bc1c607401620ac88dc851141824a0239b41e67b2bdd8b879478ba3b`  
-		Last Modified: Sat, 05 May 2018 08:22:15 GMT  
-		Size: 27.7 MB (27682597 bytes)  
+	-	`sha256:8b72bfb273c61d7e4dfcdc9dfed17e3410cf9d658eeb198dd064ed23b5296b65`  
+		Last Modified: Tue, 15 May 2018 01:09:23 GMT  
+		Size: 27.7 MB (27667036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:752142847e8e37255894e1bc85a92214720500d0f35ef1aad9fb7cf58b7a73b5`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
+	-	`sha256:a262a117d325607bbe72fb7e11e712120777a7570ed856f9ae33e95c6f24a4fd`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eecdc430dffb5ded2b590e204ca3cf5297f8172b41dd35b9fb5f61db0df87dec`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 551.0 B  
+	-	`sha256:a550b0a4b1f4b8b7b1f0c1d8ea73bae75ef706f5f0b4a9b883d230241794ff12`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 547.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f101c8904dc0ea24ba5f873bc53394eee304445f6a795b1c1e535e78b5a35ed`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 508.0 B  
+	-	`sha256:2282af920311c5d2d73600848a6811ea725a862b9d5291e0bdd105a415509c47`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.4.6`
 
 ```console
-$ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b23862c032e2078a4ea214da
+$ docker pull elasticsearch@sha256:bdece923a9b9900790b59e0c862738ddc693edbeaa8d9c0545cffbdfc3e403e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -328,14 +328,14 @@ $ docker pull elasticsearch@sha256:670b6afb05012287bd8f938a24be013a0c9fdc63b2386
 ### `elasticsearch:2.4.6` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:32b850da6b46ec2a7169e6a6b6cab229fa07a663b0226c8f01c5e31a1ec4d320
+$ docker pull elasticsearch@sha256:23c46d8e13c0df2308b20b008d217604589cfb6b71d4242f989f4f27b0fff5f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.9 MB (245881498 bytes)**  
+-	Total Size: **212.8 MB (212784926 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e155805209c87482d267c81fd7fcc9a29012b7478cc93edb00ab0f2beaeb761a`
+-	Image ID: `sha256:14f1ca3a6174ffe52d679841040bb686b6ca4235fb567168176e940cb0962aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -364,41 +364,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/2.x/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:21:19 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:20 GMT
+# Tue, 15 May 2018 01:08:24 GMT
 ENV ELASTICSEARCH_DEB_VERSION=2.4.6
-# Sat, 05 May 2018 08:21:24 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:29 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:25 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:30 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:26 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:27 GMT
+# Tue, 15 May 2018 01:08:32 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -427,41 +427,41 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95491e1e04ab509383f4607c1bf02d008eeb7d5c1d49595c7cb423f3f7298717`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 936.1 KB (936051 bytes)  
+	-	`sha256:0dd7e0fe42787d76499226868592d38011a004a2fd16a1199157b8b836b3ad82`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
+		Size: 920.4 KB (920428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ca5d90bc1c607401620ac88dc851141824a0239b41e67b2bdd8b879478ba3b`  
-		Last Modified: Sat, 05 May 2018 08:22:15 GMT  
-		Size: 27.7 MB (27682597 bytes)  
+	-	`sha256:8b72bfb273c61d7e4dfcdc9dfed17e3410cf9d658eeb198dd064ed23b5296b65`  
+		Last Modified: Tue, 15 May 2018 01:09:23 GMT  
+		Size: 27.7 MB (27667036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:752142847e8e37255894e1bc85a92214720500d0f35ef1aad9fb7cf58b7a73b5`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
+	-	`sha256:a262a117d325607bbe72fb7e11e712120777a7570ed856f9ae33e95c6f24a4fd`  
+		Last Modified: Tue, 15 May 2018 01:09:21 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eecdc430dffb5ded2b590e204ca3cf5297f8172b41dd35b9fb5f61db0df87dec`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 551.0 B  
+	-	`sha256:a550b0a4b1f4b8b7b1f0c1d8ea73bae75ef706f5f0b4a9b883d230241794ff12`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 547.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f101c8904dc0ea24ba5f873bc53394eee304445f6a795b1c1e535e78b5a35ed`  
-		Last Modified: Sat, 05 May 2018 08:22:12 GMT  
-		Size: 508.0 B  
+	-	`sha256:2282af920311c5d2d73600848a6811ea725a862b9d5291e0bdd105a415509c47`  
+		Last Modified: Tue, 15 May 2018 01:09:20 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.4.6-alpine`
@@ -800,7 +800,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:5`
 
 ```console
-$ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d580344cfe774c140bc0
+$ docker pull elasticsearch@sha256:f1dbf2019dc9a4ca5dd458635bfb31f9a601e4905e1d6ca1d65a3958d428f497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -810,14 +810,14 @@ $ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d
 ### `elasticsearch:5` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:fc1488ad86c10a66829f49533fd865ce95d95f2f4a70657bb6457467695ead65
+$ docker pull elasticsearch@sha256:33c2632039b7acdf9b9c4a416211e078a7930d1216c82145ec392dd404ba9a7e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.3 MB (252334812 bytes)**  
+-	Total Size: **219.2 MB (219240829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ba66712c1f963f1aef3770a8c6f41b42d434add927e0445e93d36ceb64f5303`
+-	Image ID: `sha256:671bb2d7da4426b1cd33ad3ee3f33524c196244c846bbaf08a98e3f203caf975`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -846,41 +846,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_VERSION=5.6.9
-# Sat, 05 May 2018 08:20:55 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_DEB_VERSION=5.6.9
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 COPY dir:c3faa196a3b1c87063ffe0be6ee20b5f2b36a9589fd93336acab4ba1aa6f6855 in ./config 
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:11 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -909,47 +909,47 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f81b823861497088bfad2d7bcacd85da4a07c140c6f51c9ab7fb3e37059b842e`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 936.1 KB (936077 bytes)  
+	-	`sha256:4b056631b5b2dbe9537ab02b033e0cb1d96eeddd13edf0daf5e6be232f3102ed`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 920.5 KB (920462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc9db57eef97a8398b6a4f0b5e86a3a43d3a1bf4008a8bb79f4b8c76970c4554`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 34.1 MB (34135944 bytes)  
+	-	`sha256:613744e9c3178289ba3b77cc3a118bf5e173399d9c72808a2291ee13e8500d71`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 34.1 MB (34122962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9742eb9b797241580881974d2acf6bab1738484e10562f3547807c48dcfe49`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
+	-	`sha256:5844b4cdbeb10328c2c611a3e61461fa34ae0b478182901b0d641df0d44563ad`  
+		Last Modified: Tue, 15 May 2018 01:08:45 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f34196e9513ea91c6883482d303938793a5c98a20bb9909adcad89922507e3c`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 492.0 B  
+	-	`sha256:dbce0128c15e08035c1397244c3169b68f20c73b28b926c8e26e2fc6f087e138`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:633b4bd953479ad8badf84d478dbf19773bd365235704bee8a76c8a6f563cd87`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 507.0 B  
+	-	`sha256:59c423efbcf5883c0c0c79ea84ff43c83f2547d4d8e2249a7235e69d7a2b56db`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.6`
 
 ```console
-$ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d580344cfe774c140bc0
+$ docker pull elasticsearch@sha256:f1dbf2019dc9a4ca5dd458635bfb31f9a601e4905e1d6ca1d65a3958d428f497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -959,14 +959,14 @@ $ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d
 ### `elasticsearch:5.6` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:fc1488ad86c10a66829f49533fd865ce95d95f2f4a70657bb6457467695ead65
+$ docker pull elasticsearch@sha256:33c2632039b7acdf9b9c4a416211e078a7930d1216c82145ec392dd404ba9a7e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.3 MB (252334812 bytes)**  
+-	Total Size: **219.2 MB (219240829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ba66712c1f963f1aef3770a8c6f41b42d434add927e0445e93d36ceb64f5303`
+-	Image ID: `sha256:671bb2d7da4426b1cd33ad3ee3f33524c196244c846bbaf08a98e3f203caf975`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -995,41 +995,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_VERSION=5.6.9
-# Sat, 05 May 2018 08:20:55 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_DEB_VERSION=5.6.9
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 COPY dir:c3faa196a3b1c87063ffe0be6ee20b5f2b36a9589fd93336acab4ba1aa6f6855 in ./config 
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:11 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -1058,47 +1058,47 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f81b823861497088bfad2d7bcacd85da4a07c140c6f51c9ab7fb3e37059b842e`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 936.1 KB (936077 bytes)  
+	-	`sha256:4b056631b5b2dbe9537ab02b033e0cb1d96eeddd13edf0daf5e6be232f3102ed`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 920.5 KB (920462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc9db57eef97a8398b6a4f0b5e86a3a43d3a1bf4008a8bb79f4b8c76970c4554`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 34.1 MB (34135944 bytes)  
+	-	`sha256:613744e9c3178289ba3b77cc3a118bf5e173399d9c72808a2291ee13e8500d71`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 34.1 MB (34122962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9742eb9b797241580881974d2acf6bab1738484e10562f3547807c48dcfe49`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
+	-	`sha256:5844b4cdbeb10328c2c611a3e61461fa34ae0b478182901b0d641df0d44563ad`  
+		Last Modified: Tue, 15 May 2018 01:08:45 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f34196e9513ea91c6883482d303938793a5c98a20bb9909adcad89922507e3c`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 492.0 B  
+	-	`sha256:dbce0128c15e08035c1397244c3169b68f20c73b28b926c8e26e2fc6f087e138`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:633b4bd953479ad8badf84d478dbf19773bd365235704bee8a76c8a6f563cd87`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 507.0 B  
+	-	`sha256:59c423efbcf5883c0c0c79ea84ff43c83f2547d4d8e2249a7235e69d7a2b56db`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.6.9`
 
 ```console
-$ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d580344cfe774c140bc0
+$ docker pull elasticsearch@sha256:f1dbf2019dc9a4ca5dd458635bfb31f9a601e4905e1d6ca1d65a3958d428f497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1108,14 +1108,14 @@ $ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d
 ### `elasticsearch:5.6.9` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:fc1488ad86c10a66829f49533fd865ce95d95f2f4a70657bb6457467695ead65
+$ docker pull elasticsearch@sha256:33c2632039b7acdf9b9c4a416211e078a7930d1216c82145ec392dd404ba9a7e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.3 MB (252334812 bytes)**  
+-	Total Size: **219.2 MB (219240829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ba66712c1f963f1aef3770a8c6f41b42d434add927e0445e93d36ceb64f5303`
+-	Image ID: `sha256:671bb2d7da4426b1cd33ad3ee3f33524c196244c846bbaf08a98e3f203caf975`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -1144,41 +1144,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_VERSION=5.6.9
-# Sat, 05 May 2018 08:20:55 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_DEB_VERSION=5.6.9
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 COPY dir:c3faa196a3b1c87063ffe0be6ee20b5f2b36a9589fd93336acab4ba1aa6f6855 in ./config 
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:11 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -1207,41 +1207,41 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f81b823861497088bfad2d7bcacd85da4a07c140c6f51c9ab7fb3e37059b842e`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 936.1 KB (936077 bytes)  
+	-	`sha256:4b056631b5b2dbe9537ab02b033e0cb1d96eeddd13edf0daf5e6be232f3102ed`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 920.5 KB (920462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc9db57eef97a8398b6a4f0b5e86a3a43d3a1bf4008a8bb79f4b8c76970c4554`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 34.1 MB (34135944 bytes)  
+	-	`sha256:613744e9c3178289ba3b77cc3a118bf5e173399d9c72808a2291ee13e8500d71`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 34.1 MB (34122962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9742eb9b797241580881974d2acf6bab1738484e10562f3547807c48dcfe49`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
+	-	`sha256:5844b4cdbeb10328c2c611a3e61461fa34ae0b478182901b0d641df0d44563ad`  
+		Last Modified: Tue, 15 May 2018 01:08:45 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f34196e9513ea91c6883482d303938793a5c98a20bb9909adcad89922507e3c`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 492.0 B  
+	-	`sha256:dbce0128c15e08035c1397244c3169b68f20c73b28b926c8e26e2fc6f087e138`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:633b4bd953479ad8badf84d478dbf19773bd365235704bee8a76c8a6f563cd87`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 507.0 B  
+	-	`sha256:59c423efbcf5883c0c0c79ea84ff43c83f2547d4d8e2249a7235e69d7a2b56db`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.6.9-alpine`
@@ -1691,7 +1691,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:latest`
 
 ```console
-$ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d580344cfe774c140bc0
+$ docker pull elasticsearch@sha256:f1dbf2019dc9a4ca5dd458635bfb31f9a601e4905e1d6ca1d65a3958d428f497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1701,14 +1701,14 @@ $ docker pull elasticsearch@sha256:43f80d0cacbd2688cbcd8ee09edf675881b4c667d646d
 ### `elasticsearch:latest` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:fc1488ad86c10a66829f49533fd865ce95d95f2f4a70657bb6457467695ead65
+$ docker pull elasticsearch@sha256:33c2632039b7acdf9b9c4a416211e078a7930d1216c82145ec392dd404ba9a7e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.3 MB (252334812 bytes)**  
+-	Total Size: **219.2 MB (219240829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ba66712c1f963f1aef3770a8c6f41b42d434add927e0445e93d36ceb64f5303`
+-	Image ID: `sha256:671bb2d7da4426b1cd33ad3ee3f33524c196244c846bbaf08a98e3f203caf975`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -1737,41 +1737,41 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:51:35 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:52:32 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:52:34 GMT
+# Mon, 14 May 2018 22:44:43 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:44:45 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 08:20:37 GMT
+# Tue, 15 May 2018 01:07:43 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 05 May 2018 08:20:44 GMT
+# Tue, 15 May 2018 01:07:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 05 May 2018 08:20:47 GMT
+# Tue, 15 May 2018 01:07:53 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 05 May 2018 08:20:54 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_VERSION=5.6.9
-# Sat, 05 May 2018 08:20:55 GMT
+# Tue, 15 May 2018 01:08:01 GMT
 ENV ELASTICSEARCH_DEB_VERSION=5.6.9
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 RUN set -x 		&& dpkg-divert --rename /usr/lib/sysctl.d/elasticsearch.conf 		&& apt-get update 	&& apt-get install -y --no-install-recommends "elasticsearch=$ELASTICSEARCH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 05 May 2018 08:21:02 GMT
+# Tue, 15 May 2018 01:08:08 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:09 GMT
 COPY dir:c3faa196a3b1c87063ffe0be6ee20b5f2b36a9589fd93336acab4ba1aa6f6855 in ./config 
-# Sat, 05 May 2018 08:21:03 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 COPY file:251082110c6dbdf83c7e443f9451d18e88f56dde65a4e4cbf7b58db1440ef558 in / 
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 05 May 2018 08:21:04 GMT
+# Tue, 15 May 2018 01:08:11 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -1800,39 +1800,39 @@ CMD ["elasticsearch"]
 		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87c0569aaeea1b25b77653bb856a421badabc61741f46c2252b167a0add3e5e0`  
-		Last Modified: Sat, 05 May 2018 00:08:53 GMT  
-		Size: 155.2 MB (155206032 bytes)  
+	-	`sha256:ca0e3df5a1fd8d55deb4e05d5d22c6ebea2ecf9aab66b5d074a020339cf4fc28`  
+		Last Modified: Mon, 14 May 2018 23:18:26 GMT  
+		Size: 122.1 MB (122140587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece988bd327b080fa11d94c361983046c747e22f7500451439633613f9e9e536`  
-		Last Modified: Sat, 05 May 2018 00:08:20 GMT  
-		Size: 272.1 KB (272057 bytes)  
+	-	`sha256:d2cb611ced6ca04659961659e0c74ec16433c5ae37a268283d342196ee6cf5fe`  
+		Last Modified: Mon, 14 May 2018 23:17:54 GMT  
+		Size: 272.1 KB (272121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a680504084440fdf87717873fc2d836a4a58d5e817ab0b7f8b5bc9dc8117ef87`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:bb362a8a392f7e0da2db508fb611a177f46489fcc93da10cb33bec12fc102b58`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 500.9 KB (500914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adeb053d47223725cc548dd4bdaf7b860192cbe3a8c1c33a1b1c631221d87b9`  
-		Last Modified: Sat, 05 May 2018 08:21:43 GMT  
+	-	`sha256:8ce626497e0b4b074443c912e27a539ba90cc6f549cb58bf7b293d385c70875a`  
+		Last Modified: Tue, 15 May 2018 01:08:46 GMT  
 		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f81b823861497088bfad2d7bcacd85da4a07c140c6f51c9ab7fb3e37059b842e`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 936.1 KB (936077 bytes)  
+	-	`sha256:4b056631b5b2dbe9537ab02b033e0cb1d96eeddd13edf0daf5e6be232f3102ed`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 920.5 KB (920462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc9db57eef97a8398b6a4f0b5e86a3a43d3a1bf4008a8bb79f4b8c76970c4554`  
-		Last Modified: Sat, 05 May 2018 08:21:44 GMT  
-		Size: 34.1 MB (34135944 bytes)  
+	-	`sha256:613744e9c3178289ba3b77cc3a118bf5e173399d9c72808a2291ee13e8500d71`  
+		Last Modified: Tue, 15 May 2018 01:08:47 GMT  
+		Size: 34.1 MB (34122962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9742eb9b797241580881974d2acf6bab1738484e10562f3547807c48dcfe49`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
+	-	`sha256:5844b4cdbeb10328c2c611a3e61461fa34ae0b478182901b0d641df0d44563ad`  
+		Last Modified: Tue, 15 May 2018 01:08:45 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f34196e9513ea91c6883482d303938793a5c98a20bb9909adcad89922507e3c`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 492.0 B  
+	-	`sha256:dbce0128c15e08035c1397244c3169b68f20c73b28b926c8e26e2fc6f087e138`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:633b4bd953479ad8badf84d478dbf19773bd365235704bee8a76c8a6f563cd87`  
-		Last Modified: Sat, 05 May 2018 08:21:41 GMT  
-		Size: 507.0 B  
+	-	`sha256:59c423efbcf5883c0c0c79ea84ff43c83f2547d4d8e2249a7235e69d7a2b56db`  
+		Last Modified: Tue, 15 May 2018 01:08:44 GMT  
+		Size: 506.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
