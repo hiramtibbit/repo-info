@@ -1,7 +1,7 @@
 ## `openjdk:7-jdk-jessie`
 
 ```console
-$ docker pull openjdk@sha256:73f84dfa57e96a4894681dfc46e5e70933851252b2e60175751f2e8524ff8b7b
+$ docker pull openjdk@sha256:58cf6a28af88b77a34d0a95938fe27965bd8a828b1677a90e3a2fb3d9f642ce8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull openjdk@sha256:73f84dfa57e96a4894681dfc46e5e70933851252b2e60175751
 ### `openjdk:7-jdk-jessie` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:0d996c28872b2f600d22c80a81e0d65cf4a4b64a9fc4301c19f0cfef30f26609
+$ docker pull openjdk@sha256:b20210022305ce5a0ac416d3376c432c80998b1c09e97beb4350110de96ed296
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245114740 bytes)**  
+-	Total Size: **214.3 MB (214309322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9919a357388417f74cb67c9167354efd27ba6b96db20ae12fae81dcc7816dff`
+-	Image ID: `sha256:aedddc94c87d973c233933d312552dc2c46a815ca39f27437279a5fc2dc904fb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -52,8 +52,8 @@ ENV JAVA_HOME=/docker-java-home
 ENV JAVA_VERSION=7u171
 # Fri, 04 May 2018 23:56:54 GMT
 ENV JAVA_DEBIAN_VERSION=7u171-2.6.13-1~deb8u1
-# Fri, 04 May 2018 23:57:42 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:50:18 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
@@ -81,9 +81,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Sat, 05 May 2018 00:13:48 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b32d8841266aa083eb20084baacbdaf52159e7da646e79c43be98c19501dcfdc`  
-		Last Modified: Sat, 05 May 2018 00:14:08 GMT  
-		Size: 129.2 MB (129185346 bytes)  
+	-	`sha256:258daef911ea3997af80cdd0149976aad7dff53e45f22376be0f3add30234180`  
+		Last Modified: Mon, 14 May 2018 23:25:54 GMT  
+		Size: 98.4 MB (98379928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7-jdk-jessie` - linux; arm variant v5
