@@ -1,7 +1,7 @@
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:ee9b96a10db467c7ab90af42b2aec0a7694bfec716512c88bdc48866d1907ffe
+$ docker pull rapidoid@sha256:1cd8951cd18382430c6d841584bf5f7c9db281614362c6b02622ce4e5a2367cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull rapidoid@sha256:ee9b96a10db467c7ab90af42b2aec0a7694bfec716512c88bd
 ### `rapidoid:latest` - linux; amd64
 
 ```console
-$ docker pull rapidoid@sha256:60a373198f9ed21fae547ddf27b338c9287ab72a415ea152152240015cb06976
+$ docker pull rapidoid@sha256:748328f84e0195adeb7c1ff2202db5f3431c1d71cce2aa957d7ae172a4940386
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.4 MB (94385070 bytes)**  
+-	Total Size: **94.2 MB (94175210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5743bcd13291563391d1120079f1d08012f09b3a1fc670cfa5a6e3a1bcabf2a`
+-	Image ID: `sha256:fa981900adf7980bab64f263ab8d9999afc6df6cbfe9286340173142ce0f89b5`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -42,33 +42,33 @@ ENV JAVA_VERSION=8u171
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
 # Fri, 04 May 2018 23:52:57 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 04 May 2018 23:53:14 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 04 May 2018 23:53:15 GMT
+# Mon, 14 May 2018 22:45:09 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Mon, 14 May 2018 22:45:10 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 05 May 2018 09:26:58 GMT
+# Tue, 15 May 2018 02:46:28 GMT
 MAINTAINER Nikolche Mihajlovski
-# Sat, 05 May 2018 09:26:58 GMT
+# Tue, 15 May 2018 02:46:28 GMT
 ENV GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C
-# Sat, 05 May 2018 09:26:59 GMT
+# Tue, 15 May 2018 02:46:28 GMT
 ENV RAPIDOID_JAR=/opt/rapidoid.jar
-# Sat, 05 May 2018 09:26:59 GMT
+# Tue, 15 May 2018 02:46:29 GMT
 ENV RAPIDOID_TMP=/tmp/rapidoid
-# Sat, 05 May 2018 09:26:59 GMT
+# Tue, 15 May 2018 02:46:29 GMT
 WORKDIR /opt
-# Sat, 05 May 2018 09:26:59 GMT
+# Tue, 15 May 2018 02:46:29 GMT
 EXPOSE 8888/tcp
-# Sat, 05 May 2018 09:26:59 GMT
+# Tue, 15 May 2018 02:46:29 GMT
 VOLUME [/data]
-# Sat, 05 May 2018 09:27:00 GMT
+# Tue, 15 May 2018 02:46:29 GMT
 ENV RAPIDOID_VERSION=5.4.6
-# Sat, 05 May 2018 09:27:00 GMT
+# Tue, 15 May 2018 02:46:30 GMT
 ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.6/rapidoid-platform-5.4.6.jar
-# Sat, 05 May 2018 09:27:00 GMT
+# Tue, 15 May 2018 02:46:30 GMT
 COPY file:604b8053d63179f0e45204cfaceba95b6ea008beaf1c685b80fa09ca1e982e4c in /opt/ 
-# Sat, 05 May 2018 09:27:11 GMT
+# Tue, 15 May 2018 02:46:43 GMT
 RUN set -xe     && apt-get update     && apt-get install -y --no-install-recommends         ca-certificates curl dirmngr gnupg     && mkdir /platform     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -rf "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc" 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 09:27:11 GMT
+# Tue, 15 May 2018 02:46:43 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -89,19 +89,19 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Sat, 05 May 2018 00:09:26 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42342c9fe003fa782ff8f02e5f531cdd83e6674b3757d0a77d0738586c70ab6c`  
-		Last Modified: Sat, 05 May 2018 00:09:38 GMT  
-		Size: 56.1 MB (56059522 bytes)  
+	-	`sha256:9c79add3c430419f19303780eedfcbfbeb39f437589f21350c8e1d116836efd9`  
+		Last Modified: Mon, 14 May 2018 23:19:47 GMT  
+		Size: 55.9 MB (55850506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6324f0174fa1b6bca7bb6557a456d603f3bd5e34d931fbcf09bc9af9adff16f1`  
-		Last Modified: Sat, 05 May 2018 00:09:26 GMT  
-		Size: 272.1 KB (272122 bytes)  
+	-	`sha256:cea817b5afdd08568d1fb142174a3186fbd5aa4a323c2f5a5fd7e24abd6646da`  
+		Last Modified: Mon, 14 May 2018 23:19:35 GMT  
+		Size: 272.1 KB (272096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4615984669c6417a489280c3def49511dfc135374e1407d7e5abf074db18045c`  
-		Last Modified: Sat, 05 May 2018 09:27:23 GMT  
+	-	`sha256:8ff82f58f34389fef67cc0472ae8c66150dd5601a71852b83a6d29ec48d6bba3`  
+		Last Modified: Tue, 15 May 2018 02:46:55 GMT  
 		Size: 367.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989a6f650fd5db0d9811b38c80d770ce1bebbaad6bf74cc1d4923b49118b11fd`  
-		Last Modified: Sat, 05 May 2018 09:27:24 GMT  
-		Size: 15.1 MB (15101786 bytes)  
+	-	`sha256:884e43c1717bdc67dd6fb49e91d5cacc23b986940bff9cfdd1b577afa1efb4bc`  
+		Last Modified: Tue, 15 May 2018 02:46:58 GMT  
+		Size: 15.1 MB (15100968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
