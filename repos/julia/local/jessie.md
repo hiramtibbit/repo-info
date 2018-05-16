@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ed9a187f7b2124ddb4f786fc1f2773f65d9d80355942cc248083b50dcacf793`
-- Created: `2018-05-01T07:52:04.153324017Z`
-- Virtual Size: ~ 376.18 Mb  
+- Image ID: `sha256:2f97acd7f0924d234db5f5f427118f7349720630ae3bc96c1162e2af0e99fb84`
+- Created: `2018-05-14T22:21:02.419165516Z`
+- Virtual Size: ~ 376.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
