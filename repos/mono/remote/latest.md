@@ -1,13 +1,14 @@
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:a6395f69e8d4bbc2a157317c3127069a8598f804dfb5cf08c1c9085c205752d1
+$ docker pull mono@sha256:87468baca695edfff3a5208ecee04e7804aa8197266b1c1d78ea71de9d821dfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; 386
 
 ### `mono:latest` - linux; amd64
 
@@ -99,4 +100,50 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 	-	`sha256:314ac8a828b1adf0d1aa4a845c0f4a4b561b6e8633844e806e3c4acaefa55f23`  
 		Last Modified: Wed, 16 May 2018 09:04:20 GMT  
 		Size: 118.5 MB (118541167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mono:latest` - linux; 386
+
+```console
+$ docker pull mono@sha256:0ad11fac370828e6838f3cfd73ce77e37a6da5e2a66cdf29de0e22c8875a037d
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.9 MB (180877790 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73dafb904b492c63d101fdf3ba25630f5c9b6589c35c76508ebea7a8644638e5`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Sat, 28 Apr 2018 10:39:45 GMT
+ADD file:335ca08e6c562d8b16f2a4e788c5e977ba9815526d92d6d48cc3b8093824da2d in / 
+# Sat, 28 Apr 2018 10:39:45 GMT
+CMD ["bash"]
+# Wed, 16 May 2018 10:39:19 GMT
+ENV MONO_VERSION=5.12.0.226
+# Wed, 16 May 2018 10:39:28 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# Wed, 16 May 2018 10:40:25 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian stable-jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list   && apt-get update   && apt-get install -y mono-runtime   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Wed, 16 May 2018 10:43:45 GMT
+RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+```
+
+-	Layers:
+	-	`sha256:175c17a0040b2274213f9504ec9e834814804aa24e25f9537af71fccc81a017f`  
+		Last Modified: Sat, 28 Apr 2018 10:45:06 GMT  
+		Size: 30.3 MB (30278658 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d5f1f6c5f34eac7a9be9aaef69ace9fca3ac05e143c506bd5564a03f69c9bc32`  
+		Last Modified: Wed, 16 May 2018 10:49:33 GMT  
+		Size: 2.1 KB (2064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:391183880069e1514bda57196c2a3b9c435faaf05f9cf0a1e4cd47baae0a7f7d`  
+		Last Modified: Wed, 16 May 2018 10:49:44 GMT  
+		Size: 29.6 MB (29551638 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f9fc446ac902854db99c87be91f2315ba47b67be712ab76f08a83ba684743ca`  
+		Last Modified: Wed, 16 May 2018 10:51:36 GMT  
+		Size: 121.0 MB (121045430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
