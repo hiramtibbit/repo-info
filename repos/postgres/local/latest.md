@@ -1,10 +1,10 @@
-# `postgres:10.3`
+# `postgres:10.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5ed9a4ab65b9f0a5eeb1783c05d303bf6a7b9921519218c1a3a5b456a00359c`
-- Created: `2018-05-09T18:00:53.712872202Z`
-- Virtual Size: ~ 234.47 Mb  
+- Image ID: `sha256:12d8c324dfafd42bafab3da96818febe1a50644d4370e53044be0ca6c2fd27a7`
+- Created: `2018-05-14T23:28:56.61692723Z`
+- Virtual Size: ~ 235.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10.3-1.pgdg90+1`
+  - `PG_VERSION=10.4-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2419,13 +2419,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-10=10.3-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10.4-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=10.3-1.pgdg90+1`
-- `postgresql-10=10.3-1.pgdg90+1`
-- `postgresql-client-10=10.3-1.pgdg90+1`
+- `libpq5:amd64=10.4-1.pgdg90+1`
+- `postgresql-10=10.4-1.pgdg90+1`
+- `postgresql-client-10=10.4-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
@@ -2444,25 +2444,34 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-10=10.4-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-1.pgdg90+1.dsc' postgresql-10_10.4-1.pgdg90+1.dsc 2627 SHA256:27b8601893789318215e010801d8f7387451981000642cd190baef07bf46dfbe
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4.orig.tar.bz2' postgresql-10_10.4.orig.tar.bz2 20201838 SHA256:1b60812310bd5756c62d93a9f93de8c28ea63b0df254f428cd1cf1a4d9020048
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-1.pgdg90+1.debian.tar.xz' postgresql-10_10.4-1.pgdg90+1.debian.tar.xz 23808 SHA256:eb399180ac998b7df7bded4ff7771422f77a70a0d18b3b8bc04338c4f018fe4e
+```
 
-### `dpkg` source package: `postgresql-common=190.pgdg90+1`
+### `dpkg` source package: `postgresql-common=191.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client-common=190.pgdg90+1`
-- `postgresql-common=190.pgdg90+1`
+- `postgresql-client-common=191.pgdg90+1`
+- `postgresql-common=191.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-common=191.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_191.pgdg90+1.dsc' postgresql-common_191.pgdg90+1.dsc 1473 SHA256:889328f5bb70b9df48019ca9530f559415d3df2574ccf8e4747ad37c4e7e8873
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_191.pgdg90+1.tar.xz' postgresql-common_191.pgdg90+1.tar.xz 208156 SHA256:ec1701ae161201235d128bbcb28cd7971de8923bf5c84c63f3d38bf39fab57f3
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
