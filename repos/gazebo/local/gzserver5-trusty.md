@@ -503,14 +503,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.15.dsc' curl_7.35.0-1ubuntu2.15.dsc 2723 SHA256:e2addb2e6c3f5de8fb7c2dce206fe5321c1c91c0b5e226a97c2c81acceabc063
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.15.debian.tar.gz' curl_7.35.0-1ubuntu2.15.debian.tar.gz 75414 SHA256:eb53049afa4ea3864c10e651b5a2c12b52fedd4b75b19607bdb247c111839aa6
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -3847,14 +3842,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.dsc' poppler_0.24.5-2ubuntu4.9.dsc 3328 SHA256:9822978bd7ec3dc2f8a7922ff0653f472961f01bb411b8599165c3053552a929
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.debian.tar.gz' poppler_0.24.5-2ubuntu4.9.debian.tar.gz 58070 SHA256:a0044a565238817155ef2a6ad792c97fe2b31d5b4940ef6f9a55174947df858d
-```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 

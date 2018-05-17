@@ -506,14 +506,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.7.dsc' curl_7.47.0-1ubuntu2.7.dsc 2697 SHA256:3d171122a06adee08a655388c40bd892184547eca8bb0e63f0b19638a4578104
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.7.debian.tar.xz' curl_7.47.0-1ubuntu2.7.debian.tar.xz 51132 SHA256:49e561f09f1442f7cd7a986bec546978d6f3b4964d8d7ca27cad65cc180da36c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -4321,14 +4316,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.6.dsc' poppler_0.41.0-0ubuntu1.6.dsc 3356 SHA256:a049e3efce465ca0c06fc6449b03a55d7fb302015b2bdb8b277fe163fd26369e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.6.debian.tar.xz' poppler_0.41.0-0ubuntu1.6.debian.tar.xz 44340 SHA256:b737886ddeae499afbc71545d26b1989e3f9d2e4918468a4344e6fe00ef5baa5
-```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.12-0ubuntu0.16.04`
 
