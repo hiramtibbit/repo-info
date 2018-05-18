@@ -567,20 +567,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180425-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.dsc' gcc-8_8-20180425-1.dsc 32339 SHA256:459b32438ca9349d71dda805f06395d3a1914f2e260dc9f6fb8e8151e9dbb17c
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425.orig.tar.gz' gcc-8_8-20180425.orig.tar.gz 70103840 SHA256:177b28353c944a597ea2224bfb7442eb0f917c5a64cf415258c194d123dbcd89
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.diff.gz' gcc-8_8-20180425-1.diff.gz 608416 SHA256:50cfd0e488578e503c10f8061c3fe2f28be13ab4cff79e3a900b528e5c1e5c8a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180425-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180425-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180425-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180425-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-3`
 
@@ -1608,20 +1601,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.29b-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-2.dsc' tar_1.29b-2.dsc 1965 SHA256:cae92504d2622b0a3d353df387c44beb1e9040ed2d527272a226f0ba247a17f1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-2.debian.tar.xz' tar_1.29b-2.debian.tar.xz 28552 SHA256:caa4e76e821b87e842d0bfc8285abd47103d47d56e93dae0a8df4b787f7c8d72
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.29b-2/
 
-- https://sources.debian.net/src/tar/1.29b-2/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.29b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.29b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018d-1`
 
