@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:824a76bd6d9de2d97f3eea8453d795f7ccbc443c42572d981a85204c21b3f9cc`
-- Created: `2018-05-04T05:45:11.616988858Z`
-- Virtual Size: ~ 147.47 Mb  
+- Image ID: `sha256:3c00185bb6054011860ec905d3f7169091dbdf33473d1ed5edf2e72d2252fa55`
+- Created: `2018-05-16T20:14:43.22330231Z`
+- Virtual Size: ~ 147.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -333,20 +333,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.dsc' curl_7.52.1-5+deb9u5.dsc 2793 SHA256:1421d4ff45ec99acfecef621b90689e46b45b14e182d1d0ffc8ae7838ec62285
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.debian.tar.xz' curl_7.52.1-5+deb9u5.debian.tar.xz 40000 SHA256:2f0335ccf140637f0fb11b7a139e3faf8d94dab88603233d22689e4e6b6dce77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
