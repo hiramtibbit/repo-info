@@ -1,9 +1,9 @@
-# `ros:lunar-ros-base-stretch`
+# `ros:melodic-ros-base-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:294bd4c567a407d2c90504775146545cb7a829292f9976e9db901da7d875c136`
-- Created: `2018-04-29T13:15:48.455230719Z`
+- Image ID: `sha256:fed01ffa268e27c95680460bee735cd94889645bb30d629b2a32372056f3cf1f`
+- Created: `2018-05-15T17:55:35.258532802Z`
 - Virtual Size: ~ 1.36 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `LC_ALL=C.UTF-8`
-  - `ROS_DISTRO=lunar`
+  - `ROS_DISTRO=melodic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4422,11 +4422,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.82-1+deb9u3`
+### `dpkg` source package: `linux=4.9.88-1+deb9u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.82-1+deb9u3`
+- `linux-libc-dev:amd64=4.9.88-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -4439,17 +4439,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.82-1+deb9u3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82-1+deb9u3.dsc' linux_4.9.82-1+deb9u3.dsc 123228 SHA256:c01750f16da89aaf478317cffa0fe2fb7347d103cae30da35075ffb3ae82bee7
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82.orig.tar.xz' linux_4.9.82.orig.tar.xz 94581900 SHA256:0ead25b4474543a836f6d35e8e99308985729512235e1aa95b5d09471ea1b4d5
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82-1+deb9u3.debian.tar.xz' linux_4.9.82-1+deb9u3.debian.tar.xz 2464808 SHA256:9f3266093462d05fe0d41a05eb257d0d9a76b402ca33f8ab99d9a1e060b82ed1
+$ apt-get source -qq --print-uris linux=4.9.88-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1+deb9u1.dsc' linux_4.9.88-1+deb9u1.dsc 123228 SHA256:604c8de17c97b828aad1f0f1f6d72aed3d0f70a625bde59979eeb623f1b031bf
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88.orig.tar.xz' linux_4.9.88.orig.tar.xz 94587676 SHA256:d1896ed62f0284e212c106e13c38f285c26b62a1f6c0b14117f0491a6acfbd0b
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1+deb9u1.debian.tar.xz' linux_4.9.88-1+deb9u1.debian.tar.xz 2493000 SHA256:53598cf9392fc8c196b912e3be9abb480cb76b1abdcaead598c6d6fe8b7327ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.82-1+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.82-1+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.82-1+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.88-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.88-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.88-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -6422,11 +6422,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ros-lunar-actionlib-msgs=1.12.5-0stretch-20180205-143924-0800`
+### `dpkg` source package: `ros-melodic-actionlib-msgs=1.12.6-0stretch.20180508.141614`
 
 Binary Packages:
 
-- `ros-lunar-actionlib-msgs=1.12.5-0stretch-20180205-143924-0800`
+- `ros-melodic-actionlib-msgs=1.12.6-0stretch.20180508.141614`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6436,11 +6436,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-actionlib=1.11.13-0stretch-20180316-113429-0800`
+### `dpkg` source package: `ros-melodic-actionlib=1.11.13-0stretch.20180508.143554`
 
 Binary Packages:
 
-- `ros-lunar-actionlib=1.11.13-0stretch-20180316-113429-0800`
+- `ros-melodic-actionlib=1.11.13-0stretch.20180508.143554`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6450,11 +6450,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bond-core=1.8.1-0stretch-20180205-230627-0800`
+### `dpkg` source package: `ros-melodic-bond-core=1.8.2-0stretch.20180501.214133`
 
 Binary Packages:
 
-- `ros-lunar-bond-core=1.8.1-0stretch-20180205-230627-0800`
+- `ros-melodic-bond-core=1.8.2-0stretch.20180501.214133`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6464,11 +6464,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bond=1.8.1-0stretch-20180205-144059-0800`
+### `dpkg` source package: `ros-melodic-bond=1.8.2-0stretch.20180501.211507`
 
 Binary Packages:
 
-- `ros-lunar-bond=1.8.1-0stretch-20180205-144059-0800`
+- `ros-melodic-bond=1.8.2-0stretch.20180501.211507`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6478,11 +6478,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bondcpp=1.8.1-0stretch-20180205-145638-0800`
+### `dpkg` source package: `ros-melodic-bondcpp=1.8.2-0stretch.20180501.213531`
 
 Binary Packages:
 
-- `ros-lunar-bondcpp=1.8.1-0stretch-20180205-145638-0800`
+- `ros-melodic-bondcpp=1.8.2-0stretch.20180501.213531`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6492,11 +6492,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bondpy=1.8.1-0stretch-20180205-230301-0800`
+### `dpkg` source package: `ros-melodic-bondpy=1.8.2-0stretch.20180501.213659`
 
 Binary Packages:
 
-- `ros-lunar-bondpy=1.8.1-0stretch-20180205-230301-0800`
+- `ros-melodic-bondpy=1.8.2-0stretch.20180501.213659`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6506,11 +6506,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-catkin=0.7.11-0stretch-20180205-134732-0800`
+### `dpkg` source package: `ros-melodic-catkin=0.7.12-0stretch.20180501.204451`
 
 Binary Packages:
 
-- `ros-lunar-catkin=0.7.11-0stretch-20180205-134732-0800`
+- `ros-melodic-catkin=0.7.12-0stretch.20180501.204451`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6520,11 +6520,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-class-loader=0.3.9-0stretch-20180316-113249-0800`
+### `dpkg` source package: `ros-melodic-class-loader=0.4.1-0stretch.20180501.205714`
 
 Binary Packages:
 
-- `ros-lunar-class-loader=0.3.9-0stretch-20180316-113249-0800`
+- `ros-melodic-class-loader=0.4.1-0stretch.20180501.205714`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6534,11 +6534,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-cmake-modules=0.4.1-0stretch-20180205-142215-0800`
+### `dpkg` source package: `ros-melodic-cmake-modules=0.4.1-0stretch.20180501.205639`
 
 Binary Packages:
 
-- `ros-lunar-cmake-modules=0.4.1-0stretch-20180205-142215-0800`
+- `ros-melodic-cmake-modules=0.4.1-0stretch.20180501.205639`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6548,11 +6548,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-common-msgs=1.12.5-0stretch-20180205-145553-0800`
+### `dpkg` source package: `ros-melodic-common-msgs=1.12.6-0stretch.20180508.144039`
 
 Binary Packages:
 
-- `ros-lunar-common-msgs=1.12.5-0stretch-20180205-145553-0800`
+- `ros-melodic-common-msgs=1.12.6-0stretch.20180508.144039`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6562,11 +6562,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-cpp-common=0.6.9-0stretch-20180205-142504-0800`
+### `dpkg` source package: `ros-melodic-cpp-common=0.6.10-0stretch.20180501.205707`
 
 Binary Packages:
 
-- `ros-lunar-cpp-common=0.6.9-0stretch-20180205-142504-0800`
+- `ros-melodic-cpp-common=0.6.10-0stretch.20180501.205707`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6576,11 +6576,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-msgs=1.12.5-0stretch-20180205-144145-0800`
+### `dpkg` source package: `ros-melodic-diagnostic-msgs=1.12.6-0stretch.20180508.141534`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-msgs=1.12.5-0stretch-20180205-144145-0800`
+- `ros-melodic-diagnostic-msgs=1.12.6-0stretch.20180508.141534`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6590,11 +6590,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180205-151517-0800`
+### `dpkg` source package: `ros-melodic-dynamic-reconfigure=1.5.49-1stretch.20180501.221729`
 
 Binary Packages:
 
-- `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180205-151517-0800`
+- `ros-melodic-dynamic-reconfigure=1.5.49-1stretch.20180501.221729`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6604,11 +6604,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-gencpp=0.6.0-0stretch-20180205-141417-0800`
+### `dpkg` source package: `ros-melodic-gencpp=0.6.0-0stretch.20180501.205941`
 
 Binary Packages:
 
-- `ros-lunar-gencpp=0.6.0-0stretch-20180205-141417-0800`
+- `ros-melodic-gencpp=0.6.0-0stretch.20180501.205941`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6618,11 +6618,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geneus=2.2.6-0stretch-20180205-141845-0800`
+### `dpkg` source package: `ros-melodic-geneus=2.2.6-0stretch.20180501.205956`
 
 Binary Packages:
 
-- `ros-lunar-geneus=2.2.6-0stretch-20180205-141845-0800`
+- `ros-melodic-geneus=2.2.6-0stretch.20180501.205956`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6632,11 +6632,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genlisp=0.4.16-0stretch-20180205-142155-0800`
+### `dpkg` source package: `ros-melodic-genlisp=0.4.16-0stretch.20180501.210417`
 
 Binary Packages:
 
-- `ros-lunar-genlisp=0.4.16-0stretch-20180205-142155-0800`
+- `ros-melodic-genlisp=0.4.16-0stretch.20180501.210417`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6646,11 +6646,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genmsg=0.5.10-0stretch-20180205-140320-0800`
+### `dpkg` source package: `ros-melodic-genmsg=0.5.11-0stretch.20180501.205843`
 
 Binary Packages:
 
-- `ros-lunar-genmsg=0.5.10-0stretch-20180205-140320-0800`
+- `ros-melodic-genmsg=0.5.11-0stretch.20180501.205843`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6660,11 +6660,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-gennodejs=2.0.1-0stretch-20180205-141841-0800`
+### `dpkg` source package: `ros-melodic-gennodejs=2.0.1-0stretch.20180501.210517`
 
 Binary Packages:
 
-- `ros-lunar-gennodejs=2.0.1-0stretch-20180205-141841-0800`
+- `ros-melodic-gennodejs=2.0.1-0stretch.20180501.210517`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6674,11 +6674,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genpy=0.6.7-0stretch-20180205-142022-0800`
+### `dpkg` source package: `ros-melodic-genpy=0.6.7-0stretch.20180501.205953`
 
 Binary Packages:
 
-- `ros-lunar-genpy=0.6.7-0stretch-20180205-142022-0800`
+- `ros-melodic-genpy=0.6.7-0stretch.20180501.205953`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6688,11 +6688,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geometry-msgs=1.12.5-0stretch-20180205-144154-0800`
+### `dpkg` source package: `ros-melodic-geometry-msgs=1.12.6-0stretch.20180508.142248`
 
 Binary Packages:
 
-- `ros-lunar-geometry-msgs=1.12.5-0stretch-20180205-144154-0800`
+- `ros-melodic-geometry-msgs=1.12.6-0stretch.20180508.142248`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6702,11 +6702,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-filters=1.13.6-0stretch-20180205-150400-0800`
+### `dpkg` source package: `ros-melodic-message-filters=1.13.6-2stretch.20180501.215330`
 
 Binary Packages:
 
-- `ros-lunar-message-filters=1.13.6-0stretch-20180205-150400-0800`
+- `ros-melodic-message-filters=1.13.6-2stretch.20180501.215330`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6716,11 +6716,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-generation=0.4.0-0stretch-20180205-142233-0800`
+### `dpkg` source package: `ros-melodic-message-generation=0.4.0-0stretch.20180501.210808`
 
 Binary Packages:
 
-- `ros-lunar-message-generation=0.4.0-0stretch-20180205-142233-0800`
+- `ros-melodic-message-generation=0.4.0-0stretch.20180501.210808`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6730,11 +6730,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-runtime=0.4.12-0stretch-20180205-143527-0800`
+### `dpkg` source package: `ros-melodic-message-runtime=0.4.12-0stretch.20180501.210803`
 
 Binary Packages:
 
-- `ros-lunar-message-runtime=0.4.12-0stretch-20180205-143527-0800`
+- `ros-melodic-message-runtime=0.4.12-0stretch.20180501.210803`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6744,11 +6744,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-mk=1.14.2-0stretch-20180205-143747-0800`
+### `dpkg` source package: `ros-melodic-mk=1.14.4-0stretch.20180501.211338`
 
 Binary Packages:
 
-- `ros-lunar-mk=1.14.2-0stretch-20180205-143747-0800`
+- `ros-melodic-mk=1.14.4-0stretch.20180501.211338`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6758,11 +6758,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nav-msgs=1.12.5-0stretch-20180205-144530-0800`
+### `dpkg` source package: `ros-melodic-nav-msgs=1.12.6-0stretch.20180508.143146`
 
 Binary Packages:
 
-- `ros-lunar-nav-msgs=1.12.5-0stretch-20180205-144530-0800`
+- `ros-melodic-nav-msgs=1.12.6-0stretch.20180508.143146`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6772,11 +6772,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet-core=1.9.14-0stretch-20180316-132410-0800`
+### `dpkg` source package: `ros-melodic-nodelet-core=1.9.16-0stretch.20180501.222350`
 
 Binary Packages:
 
-- `ros-lunar-nodelet-core=1.9.14-0stretch-20180316-132410-0800`
+- `ros-melodic-nodelet-core=1.9.16-0stretch.20180501.222350`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6786,11 +6786,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180316-132043-0800`
+### `dpkg` source package: `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20180501.222120`
 
 Binary Packages:
 
-- `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180316-132043-0800`
+- `ros-melodic-nodelet-topic-tools=1.9.16-0stretch.20180501.222120`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6800,11 +6800,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet=1.9.14-0stretch-20180316-131501-0800`
+### `dpkg` source package: `ros-melodic-nodelet=1.9.16-0stretch.20180501.213845`
 
 Binary Packages:
 
-- `ros-lunar-nodelet=1.9.14-0stretch-20180316-131501-0800`
+- `ros-melodic-nodelet=1.9.16-0stretch.20180501.213845`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6814,11 +6814,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-pluginlib=1.11.3-0stretch-20180316-113511-0800`
+### `dpkg` source package: `ros-melodic-pluginlib=1.12.1-0stretch.20180501.212420`
 
 Binary Packages:
 
-- `ros-lunar-pluginlib=1.11.3-0stretch-20180316-113511-0800`
+- `ros-melodic-pluginlib=1.12.1-0stretch.20180501.212420`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6828,11 +6828,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-base=1.3.2-0stretch-20180404-045426-0800`
+### `dpkg` source package: `ros-melodic-ros-base=1.4.0-0stretch.20180510.181252`
 
 Binary Packages:
 
-- `ros-lunar-ros-base=1.3.2-0stretch-20180404-045426-0800`
+- `ros-melodic-ros-base=1.4.0-0stretch.20180510.181252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6842,11 +6842,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-comm=1.13.6-0stretch-20180205-151830-0800`
+### `dpkg` source package: `ros-melodic-ros-comm=1.13.6-2stretch.20180501.222918`
 
 Binary Packages:
 
-- `ros-lunar-ros-comm=1.13.6-0stretch-20180205-151830-0800`
+- `ros-melodic-ros-comm=1.13.6-2stretch.20180501.222918`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6856,11 +6856,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-core=1.3.2-0stretch-20180404-045142-0800`
+### `dpkg` source package: `ros-melodic-ros-core=1.4.0-0stretch.20180510.181156`
 
 Binary Packages:
 
-- `ros-lunar-ros-core=1.3.2-0stretch-20180404-045142-0800`
+- `ros-melodic-ros-core=1.4.0-0stretch.20180510.181156`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6870,11 +6870,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros=1.14.2-0stretch-20180205-143836-0800`
+### `dpkg` source package: `ros-melodic-ros-environment=1.2.0-0stretch.20180501.205512`
 
 Binary Packages:
 
-- `ros-lunar-ros=1.14.2-0stretch-20180205-143836-0800`
+- `ros-melodic-ros-environment=1.2.0-0stretch.20180501.205512`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6884,11 +6884,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180205-142101-0800`
+### `dpkg` source package: `ros-melodic-ros=1.14.4-0stretch.20180501.211407`
 
 Binary Packages:
 
-- `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180205-142101-0800`
+- `ros-melodic-ros=1.14.4-0stretch.20180501.211407`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6898,11 +6898,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag-storage=1.13.6-0stretch-20180205-143525-0800`
+### `dpkg` source package: `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20180501.210417`
 
 Binary Packages:
 
-- `ros-lunar-rosbag-storage=1.13.6-0stretch-20180205-143525-0800`
+- `ros-melodic-rosbag-migration-rule=1.0.0-0stretch.20180501.210417`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6912,11 +6912,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag=1.13.6-0stretch-20180205-150800-0800`
+### `dpkg` source package: `ros-melodic-rosbag-storage=1.13.6-2stretch.20180501.211044`
 
 Binary Packages:
 
-- `ros-lunar-rosbag=1.13.6-0stretch-20180205-150800-0800`
+- `ros-melodic-rosbag-storage=1.13.6-2stretch.20180501.211044`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6926,11 +6926,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbash=1.14.2-0stretch-20180205-143418-0800`
+### `dpkg` source package: `ros-melodic-rosbag=1.13.6-2stretch.20180501.215512`
 
 Binary Packages:
 
-- `ros-lunar-rosbash=1.14.2-0stretch-20180205-143418-0800`
+- `ros-melodic-rosbag=1.13.6-2stretch.20180501.215512`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6940,11 +6940,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosboost-cfg=1.14.2-0stretch-20180205-143436-0800`
+### `dpkg` source package: `ros-melodic-rosbash=1.14.4-0stretch.20180501.205958`
 
 Binary Packages:
 
-- `ros-lunar-rosboost-cfg=1.14.2-0stretch-20180205-143436-0800`
+- `ros-melodic-rosbash=1.14.4-0stretch.20180501.205958`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6954,11 +6954,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbuild=1.14.2-0stretch-20180205-143611-0800`
+### `dpkg` source package: `ros-melodic-rosboost-cfg=1.14.4-0stretch.20180501.205957`
 
 Binary Packages:
 
-- `ros-lunar-rosbuild=1.14.2-0stretch-20180205-143611-0800`
+- `ros-melodic-rosboost-cfg=1.14.4-0stretch.20180501.205957`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6968,11 +6968,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosclean=1.14.2-0stretch-20180205-143451-0800`
+### `dpkg` source package: `ros-melodic-rosbuild=1.14.4-0stretch.20180501.211056`
 
 Binary Packages:
 
-- `ros-lunar-rosclean=1.14.2-0stretch-20180205-143451-0800`
+- `ros-melodic-rosbuild=1.14.4-0stretch.20180501.211056`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6982,11 +6982,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosconsole-bridge=0.5.1-0stretch-20180205-144020-0800`
+### `dpkg` source package: `ros-melodic-rosclean=1.14.4-0stretch.20180501.210018`
 
 Binary Packages:
 
-- `ros-lunar-rosconsole-bridge=0.5.1-0stretch-20180205-144020-0800`
+- `ros-melodic-rosclean=1.14.4-0stretch.20180501.210018`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6996,11 +6996,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosconsole=1.13.6-0stretch-20180205-143743-0800`
+### `dpkg` source package: `ros-melodic-rosconsole-bridge=0.5.1-0stretch.20180501.212651`
 
 Binary Packages:
 
-- `ros-lunar-rosconsole=1.13.6-0stretch-20180205-143743-0800`
+- `ros-melodic-rosconsole-bridge=0.5.1-0stretch.20180501.212651`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7010,11 +7010,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-core=0.6.9-0stretch-20180205-143530-0800`
+### `dpkg` source package: `ros-melodic-rosconsole=1.13.6-2stretch.20180501.211808`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-core=0.6.9-0stretch-20180205-143530-0800`
+- `ros-melodic-rosconsole=1.13.6-2stretch.20180501.211808`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7024,11 +7024,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-serialization=0.6.9-0stretch-20180205-143251-0800`
+### `dpkg` source package: `ros-melodic-roscpp-core=0.6.10-0stretch.20180501.210803`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-serialization=0.6.9-0stretch-20180205-143251-0800`
+- `ros-melodic-roscpp-core=0.6.10-0stretch.20180501.210803`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7038,11 +7038,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-traits=0.6.9-0stretch-20180205-143116-0800`
+### `dpkg` source package: `ros-melodic-roscpp-serialization=0.6.10-0stretch.20180501.210444`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-traits=0.6.9-0stretch-20180205-143116-0800`
+- `ros-melodic-roscpp-serialization=0.6.10-0stretch.20180501.210444`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7052,11 +7052,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp=1.13.6-0stretch-20180205-144847-0800`
+### `dpkg` source package: `ros-melodic-roscpp-traits=0.6.10-0stretch.20180501.210303`
 
 Binary Packages:
 
-- `ros-lunar-roscpp=1.13.6-0stretch-20180205-144847-0800`
+- `ros-melodic-roscpp-traits=0.6.10-0stretch.20180501.210303`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7066,11 +7066,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscreate=1.14.2-0stretch-20180205-143504-0800`
+### `dpkg` source package: `ros-melodic-roscpp=1.13.6-2stretch.20180501.212758`
 
 Binary Packages:
 
-- `ros-lunar-roscreate=1.14.2-0stretch-20180205-143504-0800`
+- `ros-melodic-roscpp=1.13.6-2stretch.20180501.212758`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7080,11 +7080,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180205-144522-0800`
+### `dpkg` source package: `ros-melodic-roscreate=1.14.4-0stretch.20180501.210036`
 
 Binary Packages:
 
-- `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180205-144522-0800`
+- `ros-melodic-roscreate=1.14.4-0stretch.20180501.210036`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7094,11 +7094,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosgraph=1.13.6-0stretch-20180205-141418-0800`
+### `dpkg` source package: `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20180501.211628`
 
 Binary Packages:
 
-- `ros-lunar-rosgraph=1.13.6-0stretch-20180205-141418-0800`
+- `ros-melodic-rosgraph-msgs=1.11.2-0stretch.20180501.211628`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7108,11 +7108,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslang=1.14.2-0stretch-20180205-142139-0800`
+### `dpkg` source package: `ros-melodic-rosgraph=1.13.6-2stretch.20180501.205519`
 
 Binary Packages:
 
-- `ros-lunar-roslang=1.14.2-0stretch-20180205-142139-0800`
+- `ros-melodic-rosgraph=1.13.6-2stretch.20180501.205519`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7122,11 +7122,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslaunch=1.13.6-0stretch-20180205-145847-0800`
+### `dpkg` source package: `ros-melodic-roslang=1.14.4-0stretch.20180501.205915`
 
 Binary Packages:
 
-- `ros-lunar-roslaunch=1.13.6-0stretch-20180205-145847-0800`
+- `ros-melodic-roslang=1.14.4-0stretch.20180501.205915`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7136,11 +7136,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslib=1.14.2-0stretch-20180205-142614-0800`
+### `dpkg` source package: `ros-melodic-roslaunch=1.13.6-2stretch.20180501.214120`
 
 Binary Packages:
 
-- `ros-lunar-roslib=1.14.2-0stretch-20180205-142614-0800`
+- `ros-melodic-roslaunch=1.13.6-2stretch.20180501.214120`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7150,11 +7150,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslisp=1.9.21-0stretch-20180205-144849-0800`
+### `dpkg` source package: `ros-melodic-roslib=1.14.4-0stretch.20180501.210204`
 
 Binary Packages:
 
-- `ros-lunar-roslisp=1.9.21-0stretch-20180205-144849-0800`
+- `ros-melodic-roslib=1.14.4-0stretch.20180501.210204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7164,11 +7164,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslz4=1.13.6-0stretch-20180205-142951-0800`
+### `dpkg` source package: `ros-melodic-roslisp=1.9.21-0stretch.20180501.212035`
 
 Binary Packages:
 
-- `ros-lunar-roslz4=1.13.6-0stretch-20180205-142951-0800`
+- `ros-melodic-roslisp=1.9.21-0stretch.20180501.212035`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7178,11 +7178,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmake=1.14.2-0stretch-20180205-141429-0800`
+### `dpkg` source package: `ros-melodic-roslz4=1.13.6-2stretch.20180501.210705`
 
 Binary Packages:
 
-- `ros-lunar-rosmake=1.14.2-0stretch-20180205-141429-0800`
+- `ros-melodic-roslz4=1.13.6-2stretch.20180501.210705`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7192,11 +7192,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmaster=1.13.6-0stretch-20180205-141615-0800`
+### `dpkg` source package: `ros-melodic-rosmake=1.14.4-0stretch.20180501.204729`
 
 Binary Packages:
 
-- `ros-lunar-rosmaster=1.13.6-0stretch-20180205-141615-0800`
+- `ros-melodic-rosmake=1.14.4-0stretch.20180501.204729`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7206,11 +7206,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmsg=1.13.6-0stretch-20180205-151125-0800`
+### `dpkg` source package: `ros-melodic-rosmaster=1.13.6-2stretch.20180501.205811`
 
 Binary Packages:
 
-- `ros-lunar-rosmsg=1.13.6-0stretch-20180205-151125-0800`
+- `ros-melodic-rosmaster=1.13.6-2stretch.20180501.205811`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7220,11 +7220,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosnode=1.13.6-0stretch-20180205-151448-0800`
+### `dpkg` source package: `ros-melodic-rosmsg=1.13.6-2stretch.20180501.221343`
 
 Binary Packages:
 
-- `ros-lunar-rosnode=1.13.6-0stretch-20180205-151448-0800`
+- `ros-melodic-rosmsg=1.13.6-2stretch.20180501.221343`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7234,11 +7234,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosout=1.13.6-0stretch-20180205-145559-0800`
+### `dpkg` source package: `ros-melodic-rosnode=1.13.6-2stretch.20180501.221847`
 
 Binary Packages:
 
-- `ros-lunar-rosout=1.13.6-0stretch-20180205-145559-0800`
+- `ros-melodic-rosnode=1.13.6-2stretch.20180501.221847`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7248,11 +7248,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rospack=2.5.0-0stretch-20180205-142248-0800`
+### `dpkg` source package: `ros-melodic-rosout=1.13.6-2stretch.20180501.213615`
 
 Binary Packages:
 
-- `ros-lunar-rospack=2.5.0-0stretch-20180205-142248-0800`
+- `ros-melodic-rosout=1.13.6-2stretch.20180501.213615`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7262,11 +7262,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosparam=1.13.6-0stretch-20180205-141631-0800`
+### `dpkg` source package: `ros-melodic-rospack=2.5.0-0stretch.20180501.205758`
 
 Binary Packages:
 
-- `ros-lunar-rosparam=1.13.6-0stretch-20180205-141631-0800`
+- `ros-melodic-rospack=2.5.0-0stretch.20180501.205758`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7276,11 +7276,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rospy=1.13.6-0stretch-20180205-145604-0800`
+### `dpkg` source package: `ros-melodic-rosparam=1.13.6-2stretch.20180501.205830`
 
 Binary Packages:
 
-- `ros-lunar-rospy=1.13.6-0stretch-20180205-145604-0800`
+- `ros-melodic-rosparam=1.13.6-2stretch.20180501.205830`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7290,11 +7290,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosservice=1.13.6-0stretch-20180205-151416-0800`
+### `dpkg` source package: `ros-melodic-rospy=1.13.6-2stretch.20180501.213627`
 
 Binary Packages:
 
-- `ros-lunar-rosservice=1.13.6-0stretch-20180205-151416-0800`
+- `ros-melodic-rospy=1.13.6-2stretch.20180501.213627`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7304,11 +7304,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostest=1.13.6-0stretch-20180205-150131-0800`
+### `dpkg` source package: `ros-melodic-rosservice=1.13.6-2stretch.20180501.221654`
 
 Binary Packages:
 
-- `ros-lunar-rostest=1.13.6-0stretch-20180205-150131-0800`
+- `ros-melodic-rosservice=1.13.6-2stretch.20180501.221654`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7318,11 +7318,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostime=0.6.9-0stretch-20180205-142758-0800`
+### `dpkg` source package: `ros-melodic-rostest=1.13.6-2stretch.20180501.214454`
 
 Binary Packages:
 
-- `ros-lunar-rostime=0.6.9-0stretch-20180205-142758-0800`
+- `ros-melodic-rostest=1.13.6-2stretch.20180501.214454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7332,11 +7332,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostopic=1.13.6-0stretch-20180205-151130-0800`
+### `dpkg` source package: `ros-melodic-rostime=0.6.10-0stretch.20180501.205935`
 
 Binary Packages:
 
-- `ros-lunar-rostopic=1.13.6-0stretch-20180205-151130-0800`
+- `ros-melodic-rostime=0.6.10-0stretch.20180501.205935`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7346,11 +7346,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosunit=1.14.2-0stretch-20180205-142904-0800`
+### `dpkg` source package: `ros-melodic-rostopic=1.13.6-2stretch.20180501.221349`
 
 Binary Packages:
 
-- `ros-lunar-rosunit=1.14.2-0stretch-20180205-142904-0800`
+- `ros-melodic-rostopic=1.13.6-2stretch.20180501.221349`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7360,11 +7360,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roswtf=1.13.6-0stretch-20180205-151556-0800`
+### `dpkg` source package: `ros-melodic-rosunit=1.14.4-0stretch.20180501.210607`
 
 Binary Packages:
 
-- `ros-lunar-roswtf=1.13.6-0stretch-20180205-151556-0800`
+- `ros-melodic-rosunit=1.14.4-0stretch.20180501.210607`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7374,11 +7374,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-sensor-msgs=1.12.5-0stretch-20180205-144741-0800`
+### `dpkg` source package: `ros-melodic-roswtf=1.13.6-2stretch.20180501.222343`
 
 Binary Packages:
 
-- `ros-lunar-sensor-msgs=1.12.5-0stretch-20180205-144741-0800`
+- `ros-melodic-roswtf=1.13.6-2stretch.20180501.222343`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7388,11 +7388,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-shape-msgs=1.12.5-0stretch-20180205-144754-0800`
+### `dpkg` source package: `ros-melodic-sensor-msgs=1.12.6-0stretch.20180508.142840`
 
 Binary Packages:
 
-- `ros-lunar-shape-msgs=1.12.5-0stretch-20180205-144754-0800`
+- `ros-melodic-sensor-msgs=1.12.6-0stretch.20180508.142840`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7402,11 +7402,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-smclib=1.8.1-0stretch-20180205-142058-0800`
+### `dpkg` source package: `ros-melodic-shape-msgs=1.12.6-0stretch.20180508.143502`
 
 Binary Packages:
 
-- `ros-lunar-smclib=1.8.1-0stretch-20180205-142058-0800`
+- `ros-melodic-shape-msgs=1.12.6-0stretch.20180508.143502`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7416,11 +7416,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-std-msgs=0.5.11-0stretch-20180205-143704-0800`
+### `dpkg` source package: `ros-melodic-smclib=1.8.2-0stretch.20180501.205510`
 
 Binary Packages:
 
-- `ros-lunar-std-msgs=0.5.11-0stretch-20180205-143704-0800`
+- `ros-melodic-smclib=1.8.2-0stretch.20180501.205510`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7430,11 +7430,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-std-srvs=1.11.2-0stretch-20180205-143724-0800`
+### `dpkg` source package: `ros-melodic-std-msgs=0.5.11-0stretch.20180501.211122`
 
 Binary Packages:
 
-- `ros-lunar-std-srvs=1.11.2-0stretch-20180205-143724-0800`
+- `ros-melodic-std-msgs=0.5.11-0stretch.20180501.211122`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7444,11 +7444,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-stereo-msgs=1.12.5-0stretch-20180205-145331-0800`
+### `dpkg` source package: `ros-melodic-std-srvs=1.11.2-0stretch.20180501.211136`
 
 Binary Packages:
 
-- `ros-lunar-stereo-msgs=1.12.5-0stretch-20180205-145331-0800`
+- `ros-melodic-std-srvs=1.11.2-0stretch.20180501.211136`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7458,11 +7458,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-topic-tools=1.13.6-0stretch-20180205-150403-0800`
+### `dpkg` source package: `ros-melodic-stereo-msgs=1.12.6-0stretch.20180508.143227`
 
 Binary Packages:
 
-- `ros-lunar-topic-tools=1.13.6-0stretch-20180205-150403-0800`
+- `ros-melodic-stereo-msgs=1.12.6-0stretch.20180508.143227`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7472,11 +7472,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-trajectory-msgs=1.12.5-0stretch-20180205-144759-0800`
+### `dpkg` source package: `ros-melodic-topic-tools=1.13.6-2stretch.20180501.214857`
 
 Binary Packages:
 
-- `ros-lunar-trajectory-msgs=1.12.5-0stretch-20180205-144759-0800`
+- `ros-melodic-topic-tools=1.13.6-2stretch.20180501.214857`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7486,11 +7486,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-visualization-msgs=1.12.5-0stretch-20180205-144812-0800`
+### `dpkg` source package: `ros-melodic-trajectory-msgs=1.12.6-0stretch.20180508.142926`
 
 Binary Packages:
 
-- `ros-lunar-visualization-msgs=1.12.5-0stretch-20180205-144812-0800`
+- `ros-melodic-trajectory-msgs=1.12.6-0stretch.20180508.142926`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7500,11 +7500,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-xmlrpcpp=1.13.6-0stretch-20180205-143045-0800`
+### `dpkg` source package: `ros-melodic-visualization-msgs=1.12.6-0stretch.20180508.143414`
 
 Binary Packages:
 
-- `ros-lunar-xmlrpcpp=1.13.6-0stretch-20180205-143045-0800`
+- `ros-melodic-visualization-msgs=1.12.6-0stretch.20180508.143414`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-melodic-xmlrpcpp=1.13.6-2stretch.20180501.210320`
+
+Binary Packages:
+
+- `ros-melodic-xmlrpcpp=1.13.6-2stretch.20180501.210320`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
