@@ -1,16 +1,16 @@
-# `mono:5.10.0.160-slim`
+# `mono:5.12.0.226-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1c11d0fb3ae9f868204ec0e1c6e5b97e2949acdf4bcefc08e09ccd9daa3a1c8`
-- Created: `2018-04-30T00:56:47.479915867Z`
-- Virtual Size: ~ 171.57 Mb  
+- Image ID: `sha256:85ada18948377ae27c647636bca99bbb9c4b121f8589f04d61ee5fc8b6e2f9da`
+- Created: `2018-05-15T18:32:00.236293844Z`
+- Virtual Size: ~ 171.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MONO_VERSION=5.10.0.160`
+  - `MONO_VERSION=5.12.0.226`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -374,11 +374,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.192/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.192/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cli-common=0.9+xamarin3+debian8b1`
+### `dpkg` source package: `cli-common=0.9+xamarin7+debian8b1`
 
 Binary Packages:
 
-- `cli-common=0.9+xamarin3+debian8b1`
+- `cli-common=0.9+xamarin7+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/cli-common/copyright`)
 
@@ -387,9 +387,9 @@ Licenses: (parsed from: `/usr/share/doc/cli-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cli-common=0.9+xamarin3+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin3+debian8b1.dsc' cli-common_0.9+xamarin3+debian8b1.dsc 1114 SHA256:7cc5707c384318e64da407d19658a43a60d46a0bf6806b7d51a8b384f2654045
-'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin3+debian8b1.tar.gz' cli-common_0.9+xamarin3+debian8b1.tar.gz 238829 SHA256:d5fa12829d2bf6e36d289a0fe6a4e0a055ebf038925a99e530c06b86ec0fe06d
+$ apt-get source -qq --print-uris cli-common=0.9+xamarin7+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin7+debian8b1.dsc' cli-common_0.9+xamarin7+debian8b1.dsc 1114 SHA256:368ea00696d0fe506d9b7cfe5218a114db02f6378596146491feb89859ecc3ae
+'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin7+debian8b1.tar.gz' cli-common_0.9+xamarin7+debian8b1.tar.gz 245882 SHA256:ee781e4fc06c5a912c6aefd41c13d0c0b9e6bba9be503d5f4c8229bf5075abb6
 ```
 
 ### `dpkg` source package: `coreutils=8.23-4`
@@ -2222,27 +2222,28 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mono=5.10.0.160-0xamarin2+debian8b1`
+### `dpkg` source package: `mono=5.12.0.226-0xamarin3+debian8b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-btls-interface4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-corlib4.5-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-i18n-west4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-i18n4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-security4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-system-configuration4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-system-security4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-system-xml4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `libmono-system4.0-cil=5.10.0.160-0xamarin2+debian8b1`
-- `mono-4.0-gac=5.10.0.160-0xamarin2+debian8b1`
-- `mono-gac=5.10.0.160-0xamarin2+debian8b1`
-- `mono-runtime=5.10.0.160-0xamarin2+debian8b1`
-- `mono-runtime-common=5.10.0.160-0xamarin2+debian8b1`
-- `mono-runtime-sgen=5.10.0.160-0xamarin2+debian8b1`
+- `ca-certificates-mono=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-btls-interface4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-corlib4.5-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-i18n-west4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-i18n4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-security4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-system-configuration4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-system-numerics4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-system-security4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-system-xml4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `libmono-system4.0-cil=5.12.0.226-0xamarin3+debian8b1`
+- `mono-4.0-gac=5.12.0.226-0xamarin3+debian8b1`
+- `mono-gac=5.12.0.226-0xamarin3+debian8b1`
+- `mono-runtime=5.12.0.226-0xamarin3+debian8b1`
+- `mono-runtime-common=5.12.0.226-0xamarin3+debian8b1`
+- `mono-runtime-sgen=5.12.0.226-0xamarin3+debian8b1`
 
-Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
 
 - `Apache 2.0 | other`
 - `Apache-2.0`
@@ -2264,10 +2265,10 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mono=5.10.0.160-0xamarin2+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160-0xamarin2+debian8b1.dsc' mono_5.10.0.160-0xamarin2+debian8b1.dsc 19120 SHA256:438126812d7d11897f3821a2fb20cfb62122813fc1de4257e85495825f357bf8
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160.orig.tar.bz2' mono_5.10.0.160.orig.tar.bz2 210503187 SHA256:167d3e1504bfb4fdbf08708f75937bf0e8421bf481de1723d9fa219dc7c8f8d8
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.10.0.160-0xamarin2+debian8b1.debian.tar.xz' mono_5.10.0.160-0xamarin2+debian8b1.debian.tar.xz 151820 SHA256:07f135993d4fd8909d4ddfbb29abf1812196c66d588d4573b29052e2812a0d89
+$ apt-get source -qq --print-uris mono=5.12.0.226-0xamarin3+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.12.0.226-0xamarin3+debian8b1.dsc' mono_5.12.0.226-0xamarin3+debian8b1.dsc 19120 SHA256:be47b0aa8386d880b3e22fc8a63fe03ed81098e7851bbc20fc914d413b8d71f4
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.12.0.226.orig.tar.bz2' mono_5.12.0.226.orig.tar.bz2 213865436 SHA256:660a2302101835d919e0d1b886388722fe4b1943f2baa4a2bd0de392ea6aae48
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.12.0.226-0xamarin3+debian8b1.debian.tar.xz' mono_5.12.0.226-0xamarin3+debian8b1.debian.tar.xz 152828 SHA256:be2498c1234f0308a1cdd00ee76eabc6bd0cafe10ab042366a736a80c2de31e4
 ```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
