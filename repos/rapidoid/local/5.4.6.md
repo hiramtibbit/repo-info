@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5743bcd13291563391d1120079f1d08012f09b3a1fc670cfa5a6e3a1bcabf2a`
-- Created: `2018-05-05T09:27:11.925098791Z`
-- Virtual Size: ~ 228.40 Mb  
+- Image ID: `sha256:fa981900adf7980bab64f263ab8d9999afc6df6cbfe9286340173142ce0f89b5`
+- Created: `2018-05-15T02:46:43.639775372Z`
+- Virtual Size: ~ 227.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -72,35 +72,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/ (for browsing the source)
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `apparmor=2.11.0-3+deb9u2`
-
-Binary Packages:
-
-- `libapparmor1:amd64=2.11.0-3+deb9u2`
-
-Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
-
-- `BSD-3-clause`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-3+deb9u2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-3+deb9u2.dsc' apparmor_2.11.0-3+deb9u2.dsc 3126 SHA256:ba1462cce0c4dae145b40915142b01acb9bb91955a36997f1b088a6fe5dfb0bf
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-3+deb9u2.debian.tar.xz' apparmor_2.11.0-3+deb9u2.debian.tar.xz 82784 SHA256:d44188c2716a40976d1eecc50ca8a2203133ef54def2f3f74e9564bd4d2ddcce
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/apparmor/2.11.0-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.11.0-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.11.0-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.4.8`
 
@@ -457,20 +428,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.dsc' curl_7.52.1-5+deb9u5.dsc 2793 SHA256:1421d4ff45ec99acfecef621b90689e46b45b14e182d1d0ffc8ae7838ec62285
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.debian.tar.xz' curl_7.52.1-5+deb9u5.debian.tar.xz 40000 SHA256:2f0335ccf140637f0fb11b7a139e3faf8d94dab88603233d22689e4e6b6dce77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -554,10 +518,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dbus=1.10.26-0+deb9u1`
 - `libdbus-1-3:amd64=1.10.26-0+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus-1-3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `AFL-2.1`
 - `AFL-2.1,`
@@ -1192,13 +1155,12 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `krb5-locales=1.15-1+deb9u1`
 - `libgssapi-krb5-2:amd64=1.15-1+deb9u1`
 - `libk5crypto3:amd64=1.15-1+deb9u1`
 - `libkrb5-3:amd64=1.15-1+deb9u1`
 - `libkrb5support0:amd64=1.15-1+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
