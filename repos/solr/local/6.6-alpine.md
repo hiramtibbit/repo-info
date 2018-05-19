@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5926bdf0399579b2034756e2c879c16739afa70793dbd55df11357abfe2a100f`
-- Created: `2018-03-07T18:57:30.84493355Z`
-- Virtual Size: ~ 270.34 Mb  
+- Image ID: `sha256:bdb41e3a48304c72df86e0e9e1e3b79b04070a65a2289d726e81a04a78ea8b5d`
+- Created: `2018-05-16T19:58:00.55131544Z`
+- Virtual Size: ~ 271.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,3 +23,5 @@
   - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.6.3/solr-6.6.3.tgz`
   - `SOLR_SHA256=326ad83d479d78a8bd72b69110073a6012c81dcb708164ec61e2816321f777f3`
   - `SOLR_KEYS=5F55943E13D49059D3F342777186B06E1ED139E7`
+  - `GOSU_VERSION=1.10`
+  - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`

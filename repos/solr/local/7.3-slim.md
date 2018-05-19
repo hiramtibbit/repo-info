@@ -1,10 +1,10 @@
-# `solr:7.3.0-slim`
+# `solr:7.3.1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4abf2fbb06cb97a6ad1c570d0a4f966d0419fa499ca9c719e79aa14446ae67bb`
-- Created: `2018-05-15T02:49:46.607586481Z`
-- Virtual Size: ~ 483.70 Mb  
+- Image ID: `sha256:f43983c8a8fa92907a296948d58aab0b48da432f67fe8d2a9dc4c4ab544246a5`
+- Created: `2018-05-16T19:53:08.431835983Z`
+- Virtual Size: ~ 485.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,10 +19,12 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=7.3.0`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.3.0/solr-7.3.0.tgz`
-  - `SOLR_SHA256=4b9b9f5dfd4ea4b0fdf69bda9528de47903aaa9bd9c5cb405ce0ae09a8d12fe9`
-  - `SOLR_KEYS=C5DCD3AAB897097D7815BD6B069E9741F3D97FD6`
+  - `SOLR_VERSION=7.3.1`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.3.1/solr-7.3.1.tgz`
+  - `SOLR_SHA256=0cd8953cf7c85bc0d9a533429200c531822f18807f9fc9fb792c0b149dbd0c4d`
+  - `SOLR_KEYS=A72C08F85D7666C3980C35DD1A3859BBABBDB295`
+  - `GOSU_VERSION=1.10`
+  - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -295,19 +297,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20180413
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20180413.dsc' ca-certificates-java_20180413.dsc 1805 SHA256:c252cf62714128f78bc41191607f91f8a430613e61c52cb4afc307b6af022838
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20180413.tar.xz' ca-certificates-java_20180413.tar.xz 16416 SHA256:ab7839a1125abec1882d6e7aac7aca3394241effc0ee24652b6f0e51e8a2ac34
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates-java/20180413/
 
-- https://sources.debian.net/src/ca-certificates-java/20180413/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates-java/20180413/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates-java/20180413/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20180409`
 
@@ -400,21 +396,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.7-3
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-3.dsc' cups_2.2.7-3.dsc 3467 SHA256:c9c0ee328e017eb42fa06dba2d2617fe0805678d4c6f8f938809ef7668652f52
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-3.debian.tar.xz' cups_2.2.7-3.debian.tar.xz 350356 SHA256:a6d8a3b87d7b77e464d7e686f608368e17dab2cbe8a2b9c2ab99eb16b86a3bee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.7-3/
 
-- https://sources.debian.net/src/cups/2.2.7-3/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3.1`
 
@@ -785,20 +773,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180425-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.dsc' gcc-8_8-20180425-1.dsc 32339 SHA256:459b32438ca9349d71dda805f06395d3a1914f2e260dc9f6fb8e8151e9dbb17c
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425.orig.tar.gz' gcc-8_8-20180425.orig.tar.gz 70103840 SHA256:177b28353c944a597ea2224bfb7442eb0f917c5a64cf415258c194d123dbcd89
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.diff.gz' gcc-8_8-20180425-1.diff.gz 608416 SHA256:50cfd0e488578e503c10f8061c3fe2f28be13ab4cff79e3a900b528e5c1e5c8a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180425-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180425-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180425-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180425-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-3`
 
@@ -2670,20 +2651,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.29b-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-2.dsc' tar_1.29b-2.dsc 1965 SHA256:cae92504d2622b0a3d353df387c44beb1e9040ed2d527272a226f0ba247a17f1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-2.debian.tar.xz' tar_1.29b-2.debian.tar.xz 28552 SHA256:caa4e76e821b87e842d0bfc8285abd47103d47d56e93dae0a8df4b787f7c8d72
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.29b-2/
 
-- https://sources.debian.net/src/tar/1.29b-2/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.29b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.29b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018d-1`
 
