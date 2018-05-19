@@ -1,17 +1,17 @@
-# `node:8.11.1-stretch`
+# `node:8.11.2-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f985f128721402ce1977d50900980fe0d002533e921d39e72b02b3a8f184beaf`
-- Created: `2018-05-05T06:43:01.885035013Z`
-- Virtual Size: ~ 891.15 Mb  
+- Image ID: `sha256:d23bbba7d041a5bd22e10ff21cd84696d2abc4213adc7d46ddd0620e01d23762`
+- Created: `2018-05-16T19:45:04.119494489Z`
+- Virtual Size: ~ 891.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.11.1`
-  - `YARN_VERSION=1.5.1`
+  - `NODE_VERSION=8.11.2`
+  - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -678,20 +678,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.dsc' curl_7.52.1-5+deb9u5.dsc 2793 SHA256:1421d4ff45ec99acfecef621b90689e46b45b14e182d1d0ffc8ae7838ec62285
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u5.debian.tar.xz' curl_7.52.1-5+deb9u5.debian.tar.xz 40000 SHA256:2f0335ccf140637f0fb11b7a139e3faf8d94dab88603233d22689e4e6b6dce77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
