@@ -892,14 +892,9 @@ Licenses: (parsed from: `/usr/share/doc/fsharp/copyright`, `/usr/share/doc/libfs
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fsharp=4.1.33-0xamarin4+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33-0xamarin4+debian8b1.dsc' fsharp_4.1.33-0xamarin4+debian8b1.dsc 1371 SHA256:f3b453706d75fb9ae819aa8997245882ae62269388cca8c29846d42b66112def
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33.orig.tar.gz' fsharp_4.1.33.orig.tar.gz 43431692 SHA256:6e4d75ab95cc7927a61cc974509ddb69f39b364daae8b6083b2ede9b5cb16074
-'http://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33-0xamarin4+debian8b1.debian.tar.xz' fsharp_4.1.33-0xamarin4+debian8b1.debian.tar.xz 36936 SHA256:9242e697173bc3642c392a96ea2b40d6ee22d8d2b3d80d03e4c6a4ae2057aebc
-```
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
