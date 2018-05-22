@@ -1300,20 +1300,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8-20180425-1
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.dsc' gcc-8_8-20180425-1.dsc 32339 SHA256:459b32438ca9349d71dda805f06395d3a1914f2e260dc9f6fb8e8151e9dbb17c
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425.orig.tar.gz' gcc-8_8-20180425.orig.tar.gz 70103840 SHA256:177b28353c944a597ea2224bfb7442eb0f917c5a64cf415258c194d123dbcd89
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8-20180425-1.diff.gz' gcc-8_8-20180425-1.diff.gz 608416 SHA256:50cfd0e488578e503c10f8061c3fe2f28be13ab4cff79e3a900b528e5c1e5c8a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8-20180425-1/
 
-- https://sources.debian.net/src/gcc-8/8-20180425-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8-20180425-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8-20180425-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -2464,20 +2457,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.91-2
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.91-2.dsc' libdrm_2.4.91-2.dsc 3040 SHA256:e2e0b5953eec9f014d63e47234977a6b9c9213cdf964afa124d65f5cb2bd5465
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.91.orig.tar.gz' libdrm_2.4.91.orig.tar.gz 1088866 SHA256:c8ea3343d5bfc356550f0b5632403359d050fa09cf05d61e96e73adba0c407a9
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.91-2.diff.gz' libdrm_2.4.91-2.diff.gz 50222 SHA256:3e872509dd77c9316b10653394886dfaf2a31fc915a576b567af52e708b30c8c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.91-2/
 
-- https://sources.debian.net/src/libdrm/2.4.91-2/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.91-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.91-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -4340,20 +4326,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.31.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1-1.dsc' nghttp2_1.31.1-1.dsc 2254 SHA256:88c2bb294bef54ce6b5d4e936b80cb63a85b13faaaccbc96fe1b4e90f14cbdad
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1.orig.tar.bz2' nghttp2_1.31.1.orig.tar.bz2 1837769 SHA256:e5303f11493d444dde81e065bf8538578d5afb24801233e2ed088c744823bc70
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1-1.debian.tar.xz' nghttp2_1.31.1-1.debian.tar.xz 12428 SHA256:a81b82cf57b0583fb2ce158045267d7cfc8e259714b0d07d61739496e9e2ccbf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.31.1-1/
 
-- https://sources.debian.net/src/nghttp2/1.31.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.31.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.31.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-3`
 
@@ -5461,19 +5440,13 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.15.0-1
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-1.dsc' wayland_1.15.0-1.dsc 2332 SHA256:29d717515fb3e96108862129acdde4b07bcdce93a9c6f8438767efe278fca1e7
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-1.tar.gz' wayland_1.15.0-1.tar.gz 320375 SHA256:e78012162828e622b2bea8e89b8f98394e7e0cfd6580f1a27c1e1d4995a6ac41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wayland/1.15.0-1/
 
-- https://sources.debian.net/src/wayland/1.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/wayland/1.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wayland/1.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
