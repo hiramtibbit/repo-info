@@ -3911,20 +3911,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.0.3-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3-1.dsc' mesa_18.0.3-1.dsc 4887 SHA256:198fd24cededbe3d8565761ff7ed6368977875853b952fe5091d67256419fbd5
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3.orig.tar.gz' mesa_18.0.3.orig.tar.gz 19115086 SHA256:58cc5c5b1ab2a44e6e47f18ef6c29836ad06f95450adce635ce3c317507a171b
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3-1.diff.gz' mesa_18.0.3-1.diff.gz 119149 SHA256:7bffbeba05d6a3c27d7f4f06a1f0c555aa32b90affe9bad465bfd57ca3f31d54
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.0.3-1/
 
-- https://sources.debian.net/src/mesa/18.0.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.0.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.0.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-3`
 
@@ -4052,20 +4045,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.31.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1-1.dsc' nghttp2_1.31.1-1.dsc 2254 SHA256:88c2bb294bef54ce6b5d4e936b80cb63a85b13faaaccbc96fe1b4e90f14cbdad
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1.orig.tar.bz2' nghttp2_1.31.1.orig.tar.bz2 1837769 SHA256:e5303f11493d444dde81e065bf8538578d5afb24801233e2ed088c744823bc70
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.31.1-1.debian.tar.xz' nghttp2_1.31.1-1.debian.tar.xz 12428 SHA256:a81b82cf57b0583fb2ce158045267d7cfc8e259714b0d07d61739496e9e2ccbf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.31.1-1/
 
-- https://sources.debian.net/src/nghttp2/1.31.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.31.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.31.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.19-2`
 
@@ -4774,10 +4760,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tzdata/2018d-1/
-
 
 ### `dpkg` source package: `ucf=3.0038`
 
@@ -4882,19 +4864,13 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.15.0-1
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-1.dsc' wayland_1.15.0-1.dsc 2332 SHA256:29d717515fb3e96108862129acdde4b07bcdce93a9c6f8438767efe278fca1e7
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-1.tar.gz' wayland_1.15.0-1.tar.gz 320375 SHA256:e78012162828e622b2bea8e89b8f98394e7e0cfd6580f1a27c1e1d4995a6ac41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wayland/1.15.0-1/
 
-- https://sources.debian.net/src/wayland/1.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/wayland/1.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wayland/1.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
