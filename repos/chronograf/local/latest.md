@@ -1,17 +1,17 @@
-# `chronograf:1.4`
+# `chronograf:1.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d72ae84c3fa40ba24d499155a9d1ca06f3050dbc898b29b7c0df9119d3c5c05`
-- Created: `2018-05-04T03:52:55.793045235Z`
-- Virtual Size: ~ 150.36 Mb  
+- Image ID: `sha256:b2c319a46e0f5c7e57fbd494306174be28ec1a543ae64b902e56168837828b57`
+- Created: `2018-05-23T18:24:43.396138234Z`
+- Virtual Size: ~ 153.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.4.4.2`
+  - `CHRONOGRAF_VERSION=1.5.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -294,11 +294,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.227/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.227/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `chronograf=1.4.4.2-1`
+### `dpkg` source package: `chronograf=1.5.0.0-1`
 
 Binary Packages:
 
-- `chronograf=1.4.4.2-1`
+- `chronograf=1.5.0.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -333,12 +333,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u5`
+### `dpkg` source package: `curl=7.52.1-5+deb9u6`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u5`
-- `libcurl3:amd64=7.52.1-5+deb9u5`
+- `curl=7.52.1-5+deb9u6`
+- `libcurl3:amd64=7.52.1-5+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -349,13 +349,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.dsc' curl_7.52.1-5+deb9u6.dsc 2793 SHA256:463a6ac7cb310890ae03c904ec31f85616cf05bd56c74d1d9b981da38bfab616
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.debian.tar.xz' curl_7.52.1-5+deb9u6.debian.tar.xz 40420 SHA256:df3786154af6f98fa3623272a1756355218fd686603259b441b3a4ae24d7a942
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
