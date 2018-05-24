@@ -1771,13 +1771,9 @@ Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ifupdown=0.8.10ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.3.dsc' ifupdown_0.8.10ubuntu1.3.dsc 1669 SHA256:70c130cabaf5b54ba049057b50b3dbd75da6101fd8acf816f49b7187e9a836df
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.3.tar.xz' ifupdown_0.8.10ubuntu1.3.tar.xz 80428 SHA256:73ec287c6aa9f05d578c0a3b15fa185cc2fe4901611081161b0f8613c329f42d
-```
 
 ### `dpkg` source package: `ignition-math2=2.9.0-1~xenial`
 
@@ -4753,14 +4749,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.dsc' procps_3.3.10-4ubuntu2.3.dsc 2268 SHA256:8605628078cbea5f91662b60c4f35ff969b7e0e5f4aa748e3831fd1aa78372ad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.debian.tar.xz' procps_3.3.10-4ubuntu2.3.debian.tar.xz 38516 SHA256:5434d3b406c8547db8f574f20ecc5c1be6efc55ce88bba954537b144e970ab56
-```
 
 ### `dpkg` source package: `proj=4.9.2-2`
 
@@ -5126,13 +5117,9 @@ Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat6=6.0.0-1~xenial
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.dsc' sdformat6_6.0.0-1~xenial.dsc 1111 SHA256:194f94a6313f11085080ae5a163184287acc1d28a9bf2e6c57ab51f351210e64
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.tar.xz' sdformat6_6.0.0-1~xenial.tar.xz 421848 SHA256:752976d9c0958fbe9aaedca4e8dc200a5f7359447839defb85db0feeef0f1d70
-```
 
 ### `dpkg` source package: `sed=4.2.2-7`
 

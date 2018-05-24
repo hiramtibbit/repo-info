@@ -1361,13 +1361,9 @@ Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ifupdown=0.7.47.2ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.4.dsc' ifupdown_0.7.47.2ubuntu4.4.dsc 1645 SHA256:9f47a912a64fdf5e8975588c1ab6ac451daf3d28934dac4e3f9062026adfd06d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.4.tar.xz' ifupdown_0.7.47.2ubuntu4.4.tar.xz 92404 SHA256:90de068aaa673292ccf277f4cc6f49649d1f1f96b745632d2d5dbc71890e91a7
-```
 
 ### `dpkg` source package: `ilmbase=1.0.1-6ubuntu1`
 
@@ -3901,14 +3897,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=1:3.3.9-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.dsc' procps_3.3.9-1ubuntu2.2.dsc 2150 SHA256:3c6247185c4c2658865143d97e62703ee5a19fe8767f8ca459bf2f8649581ebd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.debian.tar.gz' procps_3.3.9-1ubuntu2.2.debian.tar.gz 40730 SHA256:b1a99cac5af53633118cc25a3fd6cf5ddb8dd23dbf1f15eb8cb07b7306d8448f
-```
 
 ### `dpkg` source package: `proj=4.8.0-2ubuntu2`
 
