@@ -1,7 +1,7 @@
 ## `ros:melodic-robot-bionic`
 
 ```console
-$ docker pull ros@sha256:3a7f68622b776b4339b1b2d59f79e8d542fd7b70e53166a28b4d2e2150c5fd62
+$ docker pull ros@sha256:0b2ea1675dcc721d690304b2a7b4850d8820b29fa080abb0d981cb96dc1957cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:3a7f68622b776b4339b1b2d59f79e8d542fd7b70e53166a28b4d2e2
 ### `ros:melodic-robot-bionic` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:57b67bf49f41c45a72415c5be7979f0215fa4bec7f00a860393ef26bd5c30da0
+$ docker pull ros@sha256:58e97f01f5fcf9c5aaf5d53c38cebb7fb730064324d028ba9fdc2b4f5e1c2291
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.9 MB (415923285 bytes)**  
+-	Total Size: **417.4 MB (417423142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6b7aeea1d7e06e5f278e9ce4f5803244b5e7ddf5fcb6a479a8952908970e3d0`
+-	Image ID: `sha256:84338e847dc44c4b02963860e859668084c2012d05483f64e9ec3b91e8adf5b4`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -55,18 +55,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Tue, 15 May 2018 17:24:19 GMT
 ENV ROS_DISTRO=melodic
-# Tue, 15 May 2018 17:28:25 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 17:28:26 GMT
+# Thu, 24 May 2018 21:26:28 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 24 May 2018 21:26:29 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Tue, 15 May 2018 17:28:26 GMT
+# Thu, 24 May 2018 21:26:29 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 15 May 2018 17:28:26 GMT
+# Thu, 24 May 2018 21:26:29 GMT
 CMD ["bash"]
-# Tue, 15 May 2018 17:32:36 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 17:33:52 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 24 May 2018 21:29:41 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 24 May 2018 21:30:58 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -114,21 +114,21 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && r
 		Last Modified: Tue, 15 May 2018 18:06:35 GMT  
 		Size: 848.9 KB (848891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54b3e83ca016dd6927208755632941007ba191c648b3d199b9e972d88f70efc`  
-		Last Modified: Tue, 15 May 2018 18:07:33 GMT  
-		Size: 204.3 MB (204283879 bytes)  
+	-	`sha256:9a5010f265d43daa5e2b9fbbbd090b2aa10b524945743a39cfd845a82379bd2f`  
+		Last Modified: Thu, 24 May 2018 22:02:00 GMT  
+		Size: 215.8 MB (215752594 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:292fdd215e975b674bdb8bb7a9433235a3b338be8c8c5f564f09ab3fee3c545b`  
-		Last Modified: Tue, 15 May 2018 18:06:34 GMT  
-		Size: 193.0 B  
+	-	`sha256:0876834886b1318e9ec6eea07a901cde589827dacaef6c6179af7bb73bff5ea9`  
+		Last Modified: Thu, 24 May 2018 22:01:00 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6482645a2bded6663599aad6237ef4f04ae2275fa3ba5201f3069ea33279f57`  
-		Last Modified: Tue, 15 May 2018 18:08:43 GMT  
-		Size: 78.2 MB (78158787 bytes)  
+	-	`sha256:f9f4d2a0227e9474ba6418c71791baf644b56f14e7b6ab2389c7c9b071db5331`  
+		Last Modified: Thu, 24 May 2018 22:02:53 GMT  
+		Size: 68.2 MB (68184788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4334780ad514e6c8a423a2a4a65906b238998f25c36775cf9cd7becd690b24f6`  
-		Last Modified: Tue, 15 May 2018 18:11:56 GMT  
-		Size: 37.6 MB (37581513 bytes)  
+	-	`sha256:2943948cd18793ca949de95acfc3d5c683aa3e62f34e92aef3bc2885bed82832`  
+		Last Modified: Thu, 24 May 2018 22:03:42 GMT  
+		Size: 37.6 MB (37586652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-robot-bionic` - linux; arm variant v7

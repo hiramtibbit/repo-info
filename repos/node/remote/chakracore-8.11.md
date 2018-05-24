@@ -1,7 +1,7 @@
 ## `node:chakracore-8.11`
 
 ```console
-$ docker pull node@sha256:88ec86c8cac2f6ece41d407241b0f45154aec24943d6946c697c3ac170b7919e
+$ docker pull node@sha256:1834e14978f74063852375a6c42c1c5ddfb55202cdbf6da597452dabcfbfb151
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull node@sha256:88ec86c8cac2f6ece41d407241b0f45154aec24943d6946c697c3a
 ### `node:chakracore-8.11` - linux; amd64
 
 ```console
-$ docker pull node@sha256:f0450e1a62f98d8a9e8cc7dd6be27e2a95d1ad99c39f437076e2c714fa2e4099
+$ docker pull node@sha256:b9395f8c9221a30a1e02ceb188e1546b9c5bcc1f65b6c11d82fd42ef707d540f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.5 MB (264492608 bytes)**  
+-	Total Size: **264.5 MB (264492609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94601f1d348adcde52aaf263bdba2f8d24c5e6a716e99274700cec9e4708e3ba`
+-	Image ID: `sha256:1d0165de2965c23539dcb65847263b9e564de0d22180c051dcfa33a74c710af1`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -38,13 +38,13 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 # Sat, 05 May 2018 06:47:10 GMT
 ENV NODE_VERSION=8.11.1
-# Sat, 05 May 2018 06:47:14 GMT
-RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -SLO "https://nodejs.org/download/chakracore-release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -SLO --compressed "https://nodejs.org/download/chakracore-release/v$NODE_VERSION/SHASUMS256.txt"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Sat, 05 May 2018 06:47:14 GMT
+# Thu, 24 May 2018 20:51:53 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -fsSLO --compressed "https://nodejs.org/download/chakracore-release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/download/chakracore-release/v$NODE_VERSION/SHASUMS256.txt"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
+# Thu, 24 May 2018 20:51:53 GMT
 ENV YARN_VERSION=1.6.0
-# Sat, 05 May 2018 06:47:17 GMT
-RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Sat, 05 May 2018 06:47:18 GMT
+# Thu, 24 May 2018 20:51:57 GMT
+RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
+# Thu, 24 May 2018 20:51:57 GMT
 CMD ["node"]
 ```
 
@@ -69,11 +69,11 @@ CMD ["node"]
 		Last Modified: Sat, 05 May 2018 06:47:57 GMT  
 		Size: 4.4 KB (4424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb40dca4aa72a022d047cc34fb78de47bd4ecbcb9dfc80e861440b52742fe9b`  
-		Last Modified: Sat, 05 May 2018 06:58:09 GMT  
-		Size: 17.4 MB (17355641 bytes)  
+	-	`sha256:07dafc9169324bfa4ac06de91e4b80ccd56bcef7e5003e31aefd07829547d4ef`  
+		Last Modified: Thu, 24 May 2018 21:04:53 GMT  
+		Size: 17.4 MB (17355638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0a75cb3c84d73ea3f4c840cf744c4cd525b08908219b4ff7deca35a4fab0d74`  
-		Last Modified: Sat, 05 May 2018 06:58:05 GMT  
-		Size: 954.7 KB (954741 bytes)  
+	-	`sha256:d510f66011720b58fbf16a8583762e9d4d4262d1d16b3fadeaf2f9ad5189fb6c`  
+		Last Modified: Thu, 24 May 2018 21:04:49 GMT  
+		Size: 954.7 KB (954745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
