@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12d8c324dfafd42bafab3da96818febe1a50644d4370e53044be0ca6c2fd27a7`
-- Created: `2018-05-14T23:28:56.61692723Z`
-- Virtual Size: ~ 235.33 Mb  
+- Image ID: `sha256:316536b3f5c4aa1102f4ca80282c4d65b6f8da3a267489887b9d837660c7b19b`
+- Created: `2018-05-23T21:46:50.455587416Z`
+- Virtual Size: ~ 235.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10.4-1.pgdg90+1`
+  - `PG_VERSION=10.4-2.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2419,13 +2419,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-10=10.4-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10.4-2.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=10.4-1.pgdg90+1`
-- `postgresql-10=10.4-1.pgdg90+1`
-- `postgresql-client-10=10.4-1.pgdg90+1`
+- `libpq5:amd64=10.4-2.pgdg90+1`
+- `postgresql-10=10.4-2.pgdg90+1`
+- `postgresql-client-10=10.4-2.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
@@ -2447,10 +2447,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-10=10.4-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-1.pgdg90+1.dsc' postgresql-10_10.4-1.pgdg90+1.dsc 2627 SHA256:27b8601893789318215e010801d8f7387451981000642cd190baef07bf46dfbe
+$ apt-get source -qq --print-uris postgresql-10=10.4-2.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-2.pgdg90+1.dsc' postgresql-10_10.4-2.pgdg90+1.dsc 2627 SHA256:5c99be0f0d8b4bead36a08151fb3b7f36e2ca4a3fe7965d5c677165d20d54832
 'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4.orig.tar.bz2' postgresql-10_10.4.orig.tar.bz2 20201838 SHA256:1b60812310bd5756c62d93a9f93de8c28ea63b0df254f428cd1cf1a4d9020048
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-1.pgdg90+1.debian.tar.xz' postgresql-10_10.4-1.pgdg90+1.debian.tar.xz 23808 SHA256:eb399180ac998b7df7bded4ff7771422f77a70a0d18b3b8bc04338c4f018fe4e
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.4-2.pgdg90+1.debian.tar.xz' postgresql-10_10.4-2.pgdg90+1.debian.tar.xz 23956 SHA256:61d9dc38d6cdd73e8884e4ea1a6ce382611ded6baa647083eece316e1d79e2e1
 ```
 
 ### `dpkg` source package: `postgresql-common=191.pgdg90+1`
@@ -2473,12 +2473,12 @@ $ apt-get source -qq --print-uris postgresql-common=191.pgdg90+1
 'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_191.pgdg90+1.tar.xz' postgresql-common_191.pgdg90+1.tar.xz 208156 SHA256:ec1701ae161201235d128bbcb28cd7971de8923bf5c84c63f3d38bf39fab57f3
 ```
 
-### `dpkg` source package: `procps=2:3.3.12-3`
+### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-3`
-- `procps=2:3.3.12-3`
+- `libprocps6:amd64=2:3.3.12-3+deb9u1`
+- `procps=2:3.3.12-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -2492,17 +2492,17 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.dsc' procps_3.3.12-3.dsc 2118 SHA256:5bff9bf045fb88118e5fe69df1ed1d092c49b258ebae5368222a16900288f12e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.debian.tar.xz' procps_3.3.12-3.debian.tar.xz 27260 SHA256:5907253fba4f11755b60d7d47ffd8212564d7e2c692dcfffc951e4026c465f9e
+$ apt-get source -qq --print-uris procps=2:3.3.12-3+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.dsc' procps_3.3.12-3+deb9u1.dsc 2333 SHA256:0a9977b3577de224b4db2c957d8825faca13e131bd79daace4a9f3b4cbdeb067
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.debian.tar.xz' procps_3.3.12-3+deb9u1.debian.tar.xz 33320 SHA256:2645283a93fe698eb93a560ee0fd8897ecc7a8997bb65e2e1537f91dc788e3e7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/procps/2:3.3.12-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.12-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.12-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `psmisc=22.21-2.1`
 
