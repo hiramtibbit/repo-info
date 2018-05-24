@@ -1,10 +1,10 @@
-# `mongo:3.7.9-jessie`
+# `mongo:3.7.9-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f75e6e27600d73519b2761658c0abd5f5065b45d7b2b73dc8473de1880e0263`
-- Created: `2018-05-04T23:43:44.779328928Z`
-- Virtual Size: ~ 324.70 Mb  
+- Image ID: `sha256:e3b7991cef630f68e737e55628fcaaf7cf3263f371e111bc3b319ee70588e185`
+- Created: `2018-05-23T21:39:41.892052013Z`
+- Virtual Size: ~ 364.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
