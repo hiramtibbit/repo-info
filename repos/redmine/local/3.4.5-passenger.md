@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b72e5a8f8094b39e7487af64ff5b763bdc22098347edd3ed7b4a12ed0de4229`
-- Created: `2018-05-10T20:42:51.52485816Z`
+- Image ID: `sha256:156101ac0975d8563574d824c5945dda4e863a94630c121416d61797a5f2e666`
+- Created: `2018-05-21T21:33:09.419660837Z`
 - Virtual Size: ~ 725.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,7 +26,7 @@
   - `RAILS_ENV=production`
   - `REDMINE_VERSION=3.4.5`
   - `REDMINE_DOWNLOAD_MD5=1c61ccbf3f597ebceefb05b60cc1947b`
-  - `PASSENGER_VERSION=5.3.0`
+  - `PASSENGER_VERSION=5.3.1`
 
 ## `dpkg` (`.deb`-based packages)
 
