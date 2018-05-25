@@ -3982,20 +3982,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.0.3-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3-1.dsc' mesa_18.0.3-1.dsc 4887 SHA256:198fd24cededbe3d8565761ff7ed6368977875853b952fe5091d67256419fbd5
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3.orig.tar.gz' mesa_18.0.3.orig.tar.gz 19115086 SHA256:58cc5c5b1ab2a44e6e47f18ef6c29836ad06f95450adce635ce3c317507a171b
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.0.3-1.diff.gz' mesa_18.0.3-1.diff.gz 119149 SHA256:7bffbeba05d6a3c27d7f4f06a1f0c555aa32b90affe9bad465bfd57ca3f31d54
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.0.3-1/
 
-- https://sources.debian.net/src/mesa/18.0.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.0.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.0.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-3`
 
@@ -4303,21 +4296,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0h-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0h-2.dsc' openssl_1.1.0h-2.dsc 2583 SHA256:94a913de574bd5c657119e3a06d65959f99001abc131c48a2255b2dbbd876728
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz' openssl_1.1.0h.orig.tar.gz 5422717 SHA256:5835626cde9e99656585fc7aaa2302a73a7e1340bf8c14fd635a62c66802a517
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz.asc' openssl_1.1.0h.orig.tar.gz.asc 455 SHA256:5d01aeb02958dcf6e7d4a82d2ca61e9cbe5fd3b32c2bcad150469e29fbbfdccf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0h-2.debian.tar.xz' openssl_1.1.0h-2.debian.tar.xz 56192 SHA256:da4a881887d42ef4591ef0ffdaf0a9729db8030f09e81d130982a90d514cced8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.0h-2/
 
-- https://sources.debian.net/src/openssl/1.1.0h-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0h-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0h-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.10-2`
 
