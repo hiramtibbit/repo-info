@@ -10143,7 +10143,7 @@ CMD ["bash"]
 ## `ros:melodic`
 
 ```console
-$ docker pull ros@sha256:486c6234c8519e3281ea33c4808477ee78a40a0d0d9cf400fa53dccc7ca93265
+$ docker pull ros@sha256:1279a9af17e9fad91dcde0f6780585414841ccb7d1f443a6227e04b557b15342
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10270,14 +10270,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ### `ros:melodic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:b2919ebf3f1c94189188112cd903a394cd0b0a82fbe668cca0d0b49c181dd99a
+$ docker pull ros@sha256:f46872e2c7c6a4cd2d6cf52a79b0ff955df4dc892b30856465400b371df39cd4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **332.5 MB (332493115 bytes)**  
+-	Total Size: **333.9 MB (333902303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe13ea5cfb93301cb522c7f82d4c508260a2d323beeb38031a113b5a22e12e42`
+-	Image ID: `sha256:b37417f98d377f368a74e8f07277aac34c9f2115dbd17839aed2f3494cdaeece`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -10312,16 +10312,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -10369,17 +10369,17 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic` - linux; arm64 variant v8
@@ -10500,7 +10500,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 ## `ros:melodic-perception`
 
 ```console
-$ docker pull ros@sha256:6f8485e4ded144d7e63d47bbb96c026450fe3723309b260940ef9554e129a918
+$ docker pull ros@sha256:bcdd0bf70be2bbcccf713e7bb60ef45dcc121f23e1ea8194a3d0ee9acfa5899b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10633,14 +10633,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*    
 ### `ros:melodic-perception` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:2d59b522645f1b6d194bb7c37889623824c44dcf9c93bb19edd962fa7e9e54e8
+$ docker pull ros@sha256:487499d6f4d05d6f354ad04ed39d9246e86931060335cd54715ef29951d673be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **641.2 MB (641221815 bytes)**  
+-	Total Size: **642.8 MB (642840259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8555fc06d71a9173e92da623447000cd395e6f09f77e3e83cfcef093d7b2f78`
+-	Image ID: `sha256:2c5a161e4a534e4ad6e881da946240c5b80b836362e46e20c6cf1c4929b826c6`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -10675,18 +10675,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:06:20 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:29:55 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -10734,21 +10734,21 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*    
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:acc57d74dbf866c2fdeab4d25df0e4c8e8a76684b151a0213b3d9a7f4a0d5d41`  
-		Last Modified: Wed, 16 May 2018 12:11:20 GMT  
-		Size: 308.7 MB (308728700 bytes)  
+	-	`sha256:ec14bee7782e612cfac80b9bbb9f90624b0ea6f7db28aefb325c2d1fcf8f67fd`  
+		Last Modified: Fri, 25 May 2018 12:36:34 GMT  
+		Size: 308.9 MB (308937956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-perception` - linux; arm64 variant v8
@@ -10875,7 +10875,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*    
 ## `ros:melodic-perception-bionic`
 
 ```console
-$ docker pull ros@sha256:6f8485e4ded144d7e63d47bbb96c026450fe3723309b260940ef9554e129a918
+$ docker pull ros@sha256:bcdd0bf70be2bbcccf713e7bb60ef45dcc121f23e1ea8194a3d0ee9acfa5899b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11008,14 +11008,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*    
 ### `ros:melodic-perception-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:2d59b522645f1b6d194bb7c37889623824c44dcf9c93bb19edd962fa7e9e54e8
+$ docker pull ros@sha256:487499d6f4d05d6f354ad04ed39d9246e86931060335cd54715ef29951d673be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **641.2 MB (641221815 bytes)**  
+-	Total Size: **642.8 MB (642840259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8555fc06d71a9173e92da623447000cd395e6f09f77e3e83cfcef093d7b2f78`
+-	Image ID: `sha256:2c5a161e4a534e4ad6e881da946240c5b80b836362e46e20c6cf1c4929b826c6`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -11050,18 +11050,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:06:20 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:29:55 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -11109,21 +11109,21 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*    
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:acc57d74dbf866c2fdeab4d25df0e4c8e8a76684b151a0213b3d9a7f4a0d5d41`  
-		Last Modified: Wed, 16 May 2018 12:11:20 GMT  
-		Size: 308.7 MB (308728700 bytes)  
+	-	`sha256:ec14bee7782e612cfac80b9bbb9f90624b0ea6f7db28aefb325c2d1fcf8f67fd`  
+		Last Modified: Fri, 25 May 2018 12:36:34 GMT  
+		Size: 308.9 MB (308937956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-perception-bionic` - linux; arm64 variant v8
@@ -11443,7 +11443,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-perception=1.4.0-0*    
 ## `ros:melodic-robot`
 
 ```console
-$ docker pull ros@sha256:0b2ea1675dcc721d690304b2a7b4850d8820b29fa080abb0d981cb96dc1957cb
+$ docker pull ros@sha256:2bcf53c535ab3ea59fdfb0f785a70454f8cb8915f5f2fc3a5427f40d9565a6b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11576,14 +11576,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && r
 ### `ros:melodic-robot` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:86a315ddd5a9cdfc6f1637bf24c53f2136a4d904d4b22279cc7bc5dc01018227
+$ docker pull ros@sha256:3f24a6538620ddd3ced5c530ae174f97cafcdd1970577c696124b9f1fe853278
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.7 MB (365701722 bytes)**  
+-	Total Size: **367.1 MB (367116158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d75410848013e80f4c9f246b01a084879a9afa0ccf3820cdc3aecb9f682bb3e8`
+-	Image ID: `sha256:dcc712bad262129ee6e54891ff330d9393fd4135e071455c91f9282146b67226`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -11618,18 +11618,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:03:24 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:26:07 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -11677,21 +11677,21 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && r
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da9938961a79d5a34263a41bfff12d477dde6e59202a1f46cbe1b513647fe7c4`  
-		Last Modified: Wed, 16 May 2018 12:09:28 GMT  
-		Size: 33.2 MB (33208607 bytes)  
+	-	`sha256:2a9e0ceb30682e2089e5daddb32daee700a048f85cb3d9d2e0927e89b2cc6ffa`  
+		Last Modified: Fri, 25 May 2018 12:34:22 GMT  
+		Size: 33.2 MB (33213855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-robot` - linux; arm64 variant v8
@@ -11818,7 +11818,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && r
 ## `ros:melodic-robot-bionic`
 
 ```console
-$ docker pull ros@sha256:0b2ea1675dcc721d690304b2a7b4850d8820b29fa080abb0d981cb96dc1957cb
+$ docker pull ros@sha256:2bcf53c535ab3ea59fdfb0f785a70454f8cb8915f5f2fc3a5427f40d9565a6b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11951,14 +11951,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && r
 ### `ros:melodic-robot-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:86a315ddd5a9cdfc6f1637bf24c53f2136a4d904d4b22279cc7bc5dc01018227
+$ docker pull ros@sha256:3f24a6538620ddd3ced5c530ae174f97cafcdd1970577c696124b9f1fe853278
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.7 MB (365701722 bytes)**  
+-	Total Size: **367.1 MB (367116158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d75410848013e80f4c9f246b01a084879a9afa0ccf3820cdc3aecb9f682bb3e8`
+-	Image ID: `sha256:dcc712bad262129ee6e54891ff330d9393fd4135e071455c91f9282146b67226`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -11993,18 +11993,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:03:24 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:26:07 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -12052,21 +12052,21 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && r
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da9938961a79d5a34263a41bfff12d477dde6e59202a1f46cbe1b513647fe7c4`  
-		Last Modified: Wed, 16 May 2018 12:09:28 GMT  
-		Size: 33.2 MB (33208607 bytes)  
+	-	`sha256:2a9e0ceb30682e2089e5daddb32daee700a048f85cb3d9d2e0927e89b2cc6ffa`  
+		Last Modified: Fri, 25 May 2018 12:34:22 GMT  
+		Size: 33.2 MB (33213855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-robot-bionic` - linux; arm64 variant v8
@@ -12386,7 +12386,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-robot=1.4.0-0*     && r
 ## `ros:melodic-ros-base`
 
 ```console
-$ docker pull ros@sha256:486c6234c8519e3281ea33c4808477ee78a40a0d0d9cf400fa53dccc7ca93265
+$ docker pull ros@sha256:1279a9af17e9fad91dcde0f6780585414841ccb7d1f443a6227e04b557b15342
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12513,14 +12513,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ### `ros:melodic-ros-base` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:b2919ebf3f1c94189188112cd903a394cd0b0a82fbe668cca0d0b49c181dd99a
+$ docker pull ros@sha256:f46872e2c7c6a4cd2d6cf52a79b0ff955df4dc892b30856465400b371df39cd4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **332.5 MB (332493115 bytes)**  
+-	Total Size: **333.9 MB (333902303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe13ea5cfb93301cb522c7f82d4c508260a2d323beeb38031a113b5a22e12e42`
+-	Image ID: `sha256:b37417f98d377f368a74e8f07277aac34c9f2115dbd17839aed2f3494cdaeece`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -12555,16 +12555,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -12612,17 +12612,17 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-ros-base` - linux; arm64 variant v8
@@ -12743,7 +12743,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 ## `ros:melodic-ros-base-bionic`
 
 ```console
-$ docker pull ros@sha256:486c6234c8519e3281ea33c4808477ee78a40a0d0d9cf400fa53dccc7ca93265
+$ docker pull ros@sha256:1279a9af17e9fad91dcde0f6780585414841ccb7d1f443a6227e04b557b15342
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12870,14 +12870,14 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     &
 ### `ros:melodic-ros-base-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:b2919ebf3f1c94189188112cd903a394cd0b0a82fbe668cca0d0b49c181dd99a
+$ docker pull ros@sha256:f46872e2c7c6a4cd2d6cf52a79b0ff955df4dc892b30856465400b371df39cd4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **332.5 MB (332493115 bytes)**  
+-	Total Size: **333.9 MB (333902303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe13ea5cfb93301cb522c7f82d4c508260a2d323beeb38031a113b5a22e12e42`
+-	Image ID: `sha256:b37417f98d377f368a74e8f07277aac34c9f2115dbd17839aed2f3494cdaeece`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -12912,16 +12912,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
-# Wed, 16 May 2018 12:02:29 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:25:08 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -12969,17 +12969,17 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6374bc96cf7af65367e09e5ec67a68d615afd9dc7e5a1131cc757b08c0a8c54c`  
-		Last Modified: Wed, 16 May 2018 12:08:39 GMT  
-		Size: 68.8 MB (68838844 bytes)  
+	-	`sha256:95fab2540810360b8fa43551847a14f4816b8a9d4a0e79958f8a8950a0079161`  
+		Last Modified: Fri, 25 May 2018 12:32:35 GMT  
+		Size: 60.0 MB (60001666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:melodic-ros-base-bionic` - linux; arm64 variant v8
@@ -13281,7 +13281,7 @@ RUN apt-get update && apt-get install -y     ros-melodic-ros-base=1.4.0-0*     &
 ## `ros:melodic-ros-core`
 
 ```console
-$ docker pull ros@sha256:612d5d192a86e2c9f4e907ee3fc8231910b7c05b45b6878050f898524fa24219
+$ docker pull ros@sha256:d05cb9f86a9f63165ae300c9643871597fd962465d693020be24bf8868479e0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13402,14 +13402,14 @@ CMD ["bash"]
 ### `ros:melodic-ros-core` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:aac926fe27e4edfcf57e1ca70597a941ae228111642e9011c6a9a5b31b0e68c7
+$ docker pull ros@sha256:361ba5324994f0d1cbd9b4ef33e30821f0f7ce3ed24b6d6803b0838881c7ec01
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.7 MB (263654271 bytes)**  
+-	Total Size: **273.9 MB (273900637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f216730e4b63be87aff190787df569d6033502fbe3e2a028769749ed3d1118c0`
+-	Image ID: `sha256:3a94496354f4d78bfaa494010448e0f2968b0b1b42341a0a2b4892bd8d3797bb`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -13444,13 +13444,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
 ```
 
@@ -13499,12 +13499,12 @@ CMD ["bash"]
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13620,7 +13620,7 @@ CMD ["bash"]
 ## `ros:melodic-ros-core-bionic`
 
 ```console
-$ docker pull ros@sha256:612d5d192a86e2c9f4e907ee3fc8231910b7c05b45b6878050f898524fa24219
+$ docker pull ros@sha256:d05cb9f86a9f63165ae300c9643871597fd962465d693020be24bf8868479e0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13741,14 +13741,14 @@ CMD ["bash"]
 ### `ros:melodic-ros-core-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:aac926fe27e4edfcf57e1ca70597a941ae228111642e9011c6a9a5b31b0e68c7
+$ docker pull ros@sha256:361ba5324994f0d1cbd9b4ef33e30821f0f7ce3ed24b6d6803b0838881c7ec01
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.7 MB (263654271 bytes)**  
+-	Total Size: **273.9 MB (273900637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f216730e4b63be87aff190787df569d6033502fbe3e2a028769749ed3d1118c0`
+-	Image ID: `sha256:3a94496354f4d78bfaa494010448e0f2968b0b1b42341a0a2b4892bd8d3797bb`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -13783,13 +13783,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 May 2018 11:59:39 GMT
 ENV ROS_DISTRO=melodic
-# Wed, 16 May 2018 12:01:09 GMT
-RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:42 GMT
+RUN apt-get update && apt-get install -y     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 12:23:45 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 May 2018 12:01:16 GMT
+# Fri, 25 May 2018 12:23:55 GMT
 CMD ["bash"]
 ```
 
@@ -13838,12 +13838,12 @@ CMD ["bash"]
 		Last Modified: Wed, 16 May 2018 12:06:59 GMT  
 		Size: 849.5 KB (849453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49bb54a745b84de374c0ef98a472d10fd986587c49ea138249634e5373f94b`  
-		Last Modified: Wed, 16 May 2018 12:07:53 GMT  
-		Size: 178.1 MB (178144455 bytes)  
+	-	`sha256:a7b73a800962eaa799f32d90e55a98ff0d75b6ec5f28b22a5e7a230c076eb77c`  
+		Last Modified: Fri, 25 May 2018 12:31:35 GMT  
+		Size: 188.4 MB (188390821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bffca8a9550da9941aef23e06babaf76b7da3508a18536051d500e924e7a7a`  
-		Last Modified: Wed, 16 May 2018 12:06:58 GMT  
+	-	`sha256:23fff307b7b5e5b8f708310d05f17e3b91e9e87dff16e5e389a8efdf56ecbc62`  
+		Last Modified: Fri, 25 May 2018 12:30:34 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
