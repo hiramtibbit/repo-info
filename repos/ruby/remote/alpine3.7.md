@@ -1,7 +1,7 @@
 ## `ruby:alpine3.7`
 
 ```console
-$ docker pull ruby@sha256:6fd9e32896407b7ee6f96c12243b20b4a324d49dbdeb381b09f0daa4e91735ef
+$ docker pull ruby@sha256:7b73013d463993d39205f0534c05fd19d3e79a124ee7473f27e7bc0e58000239
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -145,14 +145,14 @@ CMD ["irb"]
 ### `ruby:alpine3.7` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:3ccdd9de3e9dd8cb7dc68405364be68436e92006a779e39eece3fc314c8e4d71
+$ docker pull ruby@sha256:1732c5d2d08882bf272b787476bc4e84b9aeb510b9ba7da8c32bcb9a998d048a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.4 MB (29447054 bytes)**  
+-	Total Size: **29.4 MB (29447041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f760c1689093e32e368fef367925c544c5d626efad011915d0a3dba88a45e1a1`
+-	Image ID: `sha256:aa2ac0938ddaa677c4d26cbfd136ff223f386842cdb808fe0523216712682f4e`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -178,13 +178,13 @@ ENV BUNDLER_VERSION=1.16.2
 RUN set -ex 		&& apk add --no-cache --virtual .ruby-builddeps 		autoconf 		bison 		bzip2 		bzip2-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gdbm-dev 		glib-dev 		libc-dev 		libffi-dev 		libressl 		libressl-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		ncurses-dev 		procps 		readline-dev 		ruby 		tar 		xz 		yaml-dev 		zlib-dev 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& export ac_cv_func_isnan=yes ac_cv_func_isinf=yes 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --virtual .ruby-rundeps $runDeps 		bzip2 		ca-certificates 		libffi-dev 		libressl-dev 		procps 		yaml-dev 		zlib-dev 	&& apk del .ruby-builddeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
 # Thu, 24 May 2018 14:11:08 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 24 May 2018 14:11:08 GMT
-ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 24 May 2018 14:11:08 GMT
-ENV PATH=/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 May 2018 14:11:09 GMT
-RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 24 May 2018 14:11:09 GMT
+# Fri, 25 May 2018 13:03:04 GMT
+ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Fri, 25 May 2018 13:03:05 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 25 May 2018 13:03:05 GMT
+RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
+# Fri, 25 May 2018 13:03:06 GMT
 CMD ["irb"]
 ```
 
@@ -205,9 +205,9 @@ CMD ["irb"]
 		Last Modified: Thu, 24 May 2018 14:59:38 GMT  
 		Size: 27.3 MB (27320306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fca89e5f486d104fb020f2df099e952233fff02e058c3868dcc4790d15374a6`  
-		Last Modified: Thu, 24 May 2018 14:59:27 GMT  
-		Size: 156.0 B  
+	-	`sha256:da6459208bde79f7e345eae329bb6510c3851a06fdf6ca3f3c86c6efe8570a71`  
+		Last Modified: Fri, 25 May 2018 13:09:26 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:alpine3.7` - linux; ppc64le
