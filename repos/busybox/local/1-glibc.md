@@ -1,9 +1,9 @@
-# `busybox:1.28.3-glibc`
+# `busybox:1.28.4-glibc`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0eabbf32c42901a37e2b53d01b889a5f4eed2120341ba2610abe653b0492d8d4`
-- Created: `2018-04-05T10:42:05.56183021Z`
+- Image ID: `sha256:56cc512116c8f894f11ce1995460aef1ee0972d48bc2a3bdb1faaac7c020289c`
+- Created: `2018-05-23T21:19:42.131680838Z`
 - Virtual Size: ~ 4.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
