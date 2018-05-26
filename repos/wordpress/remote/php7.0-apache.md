@@ -1,7 +1,7 @@
 ## `wordpress:php7.0-apache`
 
 ```console
-$ docker pull wordpress@sha256:0155db4528bd51e710c8c9d874e5c576ae59671517357c7c5502a9aed40d6f79
+$ docker pull wordpress@sha256:ae8bebf4ae9606dd1ea3837cf6cfdaa38c7666137f2d4bd5ed6318b7a6651273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -196,14 +196,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:php7.0-apache` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:c8bc705d7d0f67c06ab8cb75800642eb25594928d3fa403fa9ddd6aea10e1212
+$ docker pull wordpress@sha256:36757e32b14b3c1628aca810441166ecaf16156e290f8a56390da30009b52881
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.8 MB (130809640 bytes)**  
+-	Total Size: **130.9 MB (130876407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd3ac07ddbdb303ee04062ccf4f2bd100755a63fa5c5200134e8c0e017daa880`
+-	Image ID: `sha256:b4929a44a40cc602dd2e56d681d45fd99c25812a1bc112509d5e8b54220a19b6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -272,25 +272,25 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Thu, 24 May 2018 09:13:42 GMT
 CMD ["apache2-foreground"]
-# Thu, 24 May 2018 10:58:14 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 24 May 2018 10:58:15 GMT
+# Sat, 26 May 2018 09:38:48 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache zip; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Sat, 26 May 2018 09:38:49 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 24 May 2018 10:58:16 GMT
+# Sat, 26 May 2018 09:38:50 GMT
 RUN a2enmod rewrite expires
-# Thu, 24 May 2018 10:58:16 GMT
+# Sat, 26 May 2018 09:38:50 GMT
 VOLUME [/var/www/html]
-# Thu, 24 May 2018 10:58:16 GMT
+# Sat, 26 May 2018 09:38:50 GMT
 ENV WORDPRESS_VERSION=4.9.6
-# Thu, 24 May 2018 10:58:16 GMT
+# Sat, 26 May 2018 09:38:51 GMT
 ENV WORDPRESS_SHA1=40616b40d120c97205e5852c03096115c2fca537
-# Thu, 24 May 2018 10:58:19 GMT
+# Sat, 26 May 2018 09:38:54 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Thu, 24 May 2018 10:58:20 GMT
+# Sat, 26 May 2018 09:38:54 GMT
 COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
-# Thu, 24 May 2018 10:58:20 GMT
+# Sat, 26 May 2018 09:38:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 24 May 2018 10:58:21 GMT
+# Sat, 26 May 2018 09:38:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -351,25 +351,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 24 May 2018 09:40:52 GMT  
 		Size: 906.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:718ad3f6c5e8af6cfec4981c4d9ccfa4c1b6d174ffcbf973bb261753471c9546`  
-		Last Modified: Thu, 24 May 2018 11:07:13 GMT  
-		Size: 891.2 KB (891176 bytes)  
+	-	`sha256:f2cbe9a5620ed09d4cec744dc431b6b16a1ada85a4ccfa4dea9e406eaff07c39`  
+		Last Modified: Sat, 26 May 2018 09:54:45 GMT  
+		Size: 957.9 KB (957928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8083fa47268d5f113f9dbdeddf155f9e079936b0f50325bb1ff699f95114a3c`  
-		Last Modified: Thu, 24 May 2018 11:07:13 GMT  
-		Size: 357.0 B  
+	-	`sha256:731af3cd5ed9354038ca72b31060049a810be1c3c99cd0b49d824b35898024d6`  
+		Last Modified: Sat, 26 May 2018 09:54:44 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d9901d24fd477d11b6a6bc1ce88b2b2187fea441b5584b67c8d3b0926508653`  
-		Last Modified: Thu, 24 May 2018 11:07:12 GMT  
-		Size: 345.0 B  
+	-	`sha256:a7d5c3ec32bfb6cfa8df7d229fac07c85a7bd596d8c9861b2010a9152e22243f`  
+		Last Modified: Sat, 26 May 2018 09:54:44 GMT  
+		Size: 348.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61f9254823a3f56274bac9213c5497d0637d070ea30fe979ad98d16088f24e9a`  
-		Last Modified: Thu, 24 May 2018 11:07:16 GMT  
-		Size: 8.6 MB (8600107 bytes)  
+	-	`sha256:24d6b65f4309ebed5e4298fe8018ffd65ac6e2ade362600f91ff5c777abf6e40`  
+		Last Modified: Sat, 26 May 2018 09:54:47 GMT  
+		Size: 8.6 MB (8600115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe7bff2194cdca329b209ddc0c7092d02870b910e59175351482d6326ccef95d`  
-		Last Modified: Thu, 24 May 2018 11:07:13 GMT  
-		Size: 3.4 KB (3360 bytes)  
+	-	`sha256:97b70dc31c1b6a9ddad77b7f545a3505d598032db14e8ef5755b8c027d81410d`  
+		Last Modified: Sat, 26 May 2018 09:54:44 GMT  
+		Size: 3.4 KB (3363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.0-apache` - linux; arm variant v7
