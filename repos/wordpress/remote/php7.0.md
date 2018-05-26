@@ -1,7 +1,7 @@
 ## `wordpress:php7.0`
 
 ```console
-$ docker pull wordpress@sha256:02c91d87ae6f02bc77ad8442708fb5d1759ed1af6a3ac6f7822c9f83ee2faba4
+$ docker pull wordpress@sha256:0155db4528bd51e710c8c9d874e5c576ae59671517357c7c5502a9aed40d6f79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull wordpress@sha256:02c91d87ae6f02bc77ad8442708fb5d1759ed1af6a3ac6f78
 ### `wordpress:php7.0` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:df9a1dc5c33bf4959b80321b2e81181d6cc2820db19c5ddf72382348de24f1ba
+$ docker pull wordpress@sha256:41212d552b9bb543cb7448ec35a1dd91e692433fb2465decaa6e65baa75af6f1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143236396 bytes)**  
+-	Total Size: **143.3 MB (143307252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01aea85264f4576b98552f26b24011d09368058ad62faa153b6dd3e7de34afc6`
+-	Image ID: `sha256:787771c247e1e1d45a8087c5b3b588bad3a6707c9e840c5066f6ccc2e5de4eba`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -93,25 +93,25 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Wed, 23 May 2018 23:12:21 GMT
 CMD ["apache2-foreground"]
-# Thu, 24 May 2018 02:15:38 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 24 May 2018 02:15:39 GMT
+# Fri, 25 May 2018 23:04:09 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache zip; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Fri, 25 May 2018 23:04:09 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 24 May 2018 02:15:40 GMT
+# Fri, 25 May 2018 23:04:10 GMT
 RUN a2enmod rewrite expires
-# Thu, 24 May 2018 02:15:40 GMT
+# Fri, 25 May 2018 23:04:11 GMT
 VOLUME [/var/www/html]
-# Thu, 24 May 2018 02:15:40 GMT
+# Fri, 25 May 2018 23:04:11 GMT
 ENV WORDPRESS_VERSION=4.9.6
-# Thu, 24 May 2018 02:15:40 GMT
+# Fri, 25 May 2018 23:04:11 GMT
 ENV WORDPRESS_SHA1=40616b40d120c97205e5852c03096115c2fca537
-# Thu, 24 May 2018 02:15:43 GMT
+# Fri, 25 May 2018 23:04:13 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Thu, 24 May 2018 02:15:43 GMT
+# Fri, 25 May 2018 23:04:14 GMT
 COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
-# Thu, 24 May 2018 02:15:43 GMT
+# Fri, 25 May 2018 23:04:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 24 May 2018 02:15:44 GMT
+# Fri, 25 May 2018 23:04:14 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -172,25 +172,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 24 May 2018 00:33:49 GMT  
 		Size: 902.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66b3ef810ad6a9d527650013ffa4f573a8626ada9df63facf92914f0abadf7e9`  
-		Last Modified: Thu, 24 May 2018 02:59:43 GMT  
-		Size: 927.5 KB (927517 bytes)  
+	-	`sha256:3cdf9cd6134f54054cecf027e65215475b4666af02ebbd948260087b97e85198`  
+		Last Modified: Sat, 26 May 2018 00:09:54 GMT  
+		Size: 998.4 KB (998377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08b2f02129688f4db2fe026ee16053573e61397edd4e215d706337ad56ad0420`  
-		Last Modified: Thu, 24 May 2018 02:59:43 GMT  
+	-	`sha256:1e732993680c29f5ef5ceb968d7764dbcf4562de8ccf124ef4a80a44ec558398`  
+		Last Modified: Sat, 26 May 2018 00:09:54 GMT  
 		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe2edcd40ca68bdcbc3dc80d7414f1b2337c00506b725e33c39d987ec78da244`  
-		Last Modified: Thu, 24 May 2018 02:59:43 GMT  
+	-	`sha256:740889512f79a9baa68934950219c804b389ac85b8d7eebc50922b2554264a8d`  
+		Last Modified: Sat, 26 May 2018 00:09:54 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c76ce96a8201ee604218bdf230a8006522b585c95af9f633fa3aa6a74c24107b`  
-		Last Modified: Thu, 24 May 2018 02:59:45 GMT  
-		Size: 8.6 MB (8600134 bytes)  
+	-	`sha256:f65ed55da92995b37a7b66808cbe8683ec23183a3f2287c0a3e47125340e9bfc`  
+		Last Modified: Sat, 26 May 2018 00:09:57 GMT  
+		Size: 8.6 MB (8600131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17fde3522b21dd0a738ea9a617ecc89ebea9bf0cbe4b3a648d6d715639fdaa9c`  
-		Last Modified: Thu, 24 May 2018 02:59:42 GMT  
-		Size: 3.4 KB (3360 bytes)  
+	-	`sha256:1c755ca152e6ec53362ad3e944e8f42ddddcd750eebad03d9f5e4ea126bbbf78`  
+		Last Modified: Sat, 26 May 2018 00:09:54 GMT  
+		Size: 3.4 KB (3359 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.0` - linux; arm variant v5
