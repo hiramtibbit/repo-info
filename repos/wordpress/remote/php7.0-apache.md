@@ -1,7 +1,7 @@
 ## `wordpress:php7.0-apache`
 
 ```console
-$ docker pull wordpress@sha256:ae8bebf4ae9606dd1ea3837cf6cfdaa38c7666137f2d4bd5ed6318b7a6651273
+$ docker pull wordpress@sha256:b8a66895da5154b4e98c17facc66b72da8fc3adae94dae05e6c471b8668f19d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -912,14 +912,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:php7.0-apache` - linux; ppc64le
 
 ```console
-$ docker pull wordpress@sha256:54e8e359717fb32b0fccc0d3202c54ac6e87e415741ab57f75590f0fcf5fa90b
+$ docker pull wordpress@sha256:3b81bf72d30e842e0b36410cc59edf2708cc15dcc16c0bc0ad7a89c2a0cfec27
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137880033 bytes)**  
+-	Total Size: **137.9 MB (137949488 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9729db9719cdaf4ee3e50a83fa92c72d37974813f84fccc4b37e03cadb667124`
+-	Image ID: `sha256:3228afa84bc09d05cc24934a9f51321ff75caa25e098d447c72a4b37287f7aae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -988,25 +988,25 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Thu, 24 May 2018 09:07:58 GMT
 CMD ["apache2-foreground"]
-# Thu, 24 May 2018 11:38:28 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 24 May 2018 11:38:32 GMT
+# Sat, 26 May 2018 10:24:11 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libjpeg-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache zip; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Sat, 26 May 2018 10:24:16 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 24 May 2018 11:38:35 GMT
+# Sat, 26 May 2018 10:24:19 GMT
 RUN a2enmod rewrite expires
-# Thu, 24 May 2018 11:38:35 GMT
+# Sat, 26 May 2018 10:24:20 GMT
 VOLUME [/var/www/html]
-# Thu, 24 May 2018 11:38:36 GMT
+# Sat, 26 May 2018 10:24:21 GMT
 ENV WORDPRESS_VERSION=4.9.6
-# Thu, 24 May 2018 11:38:37 GMT
+# Sat, 26 May 2018 10:24:22 GMT
 ENV WORDPRESS_SHA1=40616b40d120c97205e5852c03096115c2fca537
-# Thu, 24 May 2018 11:38:47 GMT
+# Sat, 26 May 2018 10:24:29 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Thu, 24 May 2018 11:38:49 GMT
+# Sat, 26 May 2018 10:24:30 GMT
 COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
-# Thu, 24 May 2018 11:38:50 GMT
+# Sat, 26 May 2018 10:24:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 24 May 2018 11:38:55 GMT
+# Sat, 26 May 2018 10:24:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1067,25 +1067,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 24 May 2018 10:21:47 GMT  
 		Size: 908.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:255b8ab9299edee2b65fdb1d7e98e41ba272c091f11a321ab3a00c3c35fa8fbc`  
-		Last Modified: Thu, 24 May 2018 11:51:48 GMT  
-		Size: 932.6 KB (932616 bytes)  
+	-	`sha256:4a957a53f476d2a8585a4f6e8b69c421e241d984d1a2af6d55beed3b81770a51`  
+		Last Modified: Sat, 26 May 2018 10:56:48 GMT  
+		Size: 1.0 MB (1002055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18c15ba82b27f11b02707c25fa4196d0201bb6af458c85ab6a6fd570df249355`  
-		Last Modified: Thu, 24 May 2018 11:51:48 GMT  
-		Size: 354.0 B  
+	-	`sha256:62c92e90fc05dc44063c387ab732b06167639b94e5db9ce2070f7935862b29bb`  
+		Last Modified: Sat, 26 May 2018 10:56:47 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77aa917077c49a0ae3155e2a018dde9506f32931c02a26bb81c5122178ef79bb`  
-		Last Modified: Thu, 24 May 2018 11:51:48 GMT  
-		Size: 347.0 B  
+	-	`sha256:d711956cacf3198079cb87227d91fd9083d0ac982f398cd0a28c86b544d072d8`  
+		Last Modified: Sat, 26 May 2018 10:56:48 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf222207678561bc50054ca74f249f5d38458a60e7f2cb6f864936beb2d5c49`  
-		Last Modified: Thu, 24 May 2018 11:51:50 GMT  
-		Size: 8.6 MB (8600107 bytes)  
+	-	`sha256:557ee83e161cd5e80f0c2522f2b4adc23fe6ef8198ee1c6e604d8521880ed69c`  
+		Last Modified: Sat, 26 May 2018 10:56:50 GMT  
+		Size: 8.6 MB (8600115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1f73e39201646d50311612c21d03bc8bb51c2643312a793027313db2977066f`  
-		Last Modified: Thu, 24 May 2018 11:51:48 GMT  
-		Size: 3.4 KB (3360 bytes)  
+	-	`sha256:9855cd523ef5a56589bbfaa2bc95904129926e2d3225dc38cd2a3a13477f656d`  
+		Last Modified: Sat, 26 May 2018 10:56:47 GMT  
+		Size: 3.4 KB (3363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.0-apache` - linux; s390x
