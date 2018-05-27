@@ -873,13 +873,9 @@ Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ifupdown=0.7.47.2ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.4.dsc' ifupdown_0.7.47.2ubuntu4.4.dsc 1645 SHA256:9f47a912a64fdf5e8975588c1ab6ac451daf3d28934dac4e3f9062026adfd06d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.4.tar.xz' ifupdown_0.7.47.2ubuntu4.4.tar.xz 92404 SHA256:90de068aaa673292ccf277f4cc6f49649d1f1f96b745632d2d5dbc71890e91a7
-```
 
 ### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
