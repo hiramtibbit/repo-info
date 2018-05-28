@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:316536b3f5c4aa1102f4ca80282c4d65b6f8da3a267489887b9d837660c7b19b`
-- Created: `2018-05-23T21:46:50.455587416Z`
-- Virtual Size: ~ 235.34 Mb  
+- Image ID: `sha256:61d053fc271ce1313896a2edf7719fb3b68637b53397e61d8114793b39e9ae65`
+- Created: `2018-05-25T20:37:00.567326091Z`
+- Virtual Size: ~ 236.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2158,6 +2158,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.3-1/ (for browsing the source)
 - https://sources.debian.net/src/npth/1.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.3-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `nss-wrapper=1.1.3-1`
+
+Binary Packages:
+
+- `libnss-wrapper=1.1.3-1`
+
+Licenses: (parsed from: `/usr/share/doc/libnss-wrapper/copyright`)
+
+- `BSD-3-clauses`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris nss-wrapper=1.1.3-1
+'http://deb.debian.org/debian/pool/main/n/nss-wrapper/nss-wrapper_1.1.3-1.dsc' nss-wrapper_1.1.3-1.dsc 2081 SHA256:a54024c2eecdc98413c25205b8108e9a2459bf10cb1b857e87f12ec54026d7b3
+'http://deb.debian.org/debian/pool/main/n/nss-wrapper/nss-wrapper_1.1.3.orig.tar.gz' nss-wrapper_1.1.3.orig.tar.gz 53543 SHA256:c9b84c14c5bc6948cdad4cbdeefaaf8b471a11ef876535002896779411573aa3
+'http://deb.debian.org/debian/pool/main/n/nss-wrapper/nss-wrapper_1.1.3-1.debian.tar.gz' nss-wrapper_1.1.3-1.debian.tar.gz 5448 SHA256:e378cb6163c075cb9055197c8a75d319eea116bf189eca36b5c9e9d2e0dbe070
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nss-wrapper/1.1.3-1/ (for browsing the source)
+- https://sources.debian.net/src/nss-wrapper/1.1.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss-wrapper/1.1.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u1`
 
