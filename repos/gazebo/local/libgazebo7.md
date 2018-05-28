@@ -5117,9 +5117,13 @@ Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sdformat6=6.0.0-1~xenial
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.dsc' sdformat6_6.0.0-1~xenial.dsc 1111 SHA256:194f94a6313f11085080ae5a163184287acc1d28a9bf2e6c57ab51f351210e64
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~xenial.tar.xz' sdformat6_6.0.0-1~xenial.tar.xz 421848 SHA256:752976d9c0958fbe9aaedca4e8dc200a5f7359447839defb85db0feeef0f1d70
+```
 
 ### `dpkg` source package: `sed=4.2.2-7`
 
