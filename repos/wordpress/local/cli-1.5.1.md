@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:469e60161fc964b6eaa91374898de699a6d56edc17050c0e599b081896ce6366`
-- Created: `2018-05-24T02:52:18.339367649Z`
-- Virtual Size: ~ 100.88 Mb  
+- Image ID: `sha256:0332e299ea05b2325a9439a78fc820c796ee34742009200734c0ea07597db40f`
+- Created: `2018-05-26T00:01:37.135239905Z`
+- Virtual Size: ~ 101.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.5`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.5.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.5.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=af70a33b3f7a51510467199b39af151333fbbe4cc21923bad9c7cf64268cddb2`
+  - `PHP_VERSION=7.2.6`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.6.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.6.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=1f004e049788a3effc89ef417f06a6cf704c95ae2a718b2175185f2983381ae7`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=3B9191625F3B1F1BF5DD3B47673A02042F6B6B7F`
   - `WORDPRESS_CLI_VERSION=1.5.1`
