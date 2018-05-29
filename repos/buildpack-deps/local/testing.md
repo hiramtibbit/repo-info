@@ -380,20 +380,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-15
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-15.dsc' binutils_2.30-15.dsc 11342 SHA256:d0c42ac9ee3d6c5e3e97a53ad2441371145149bce03c4437510d65de324b2ed1
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20144632 SHA256:f68a56df7d3cc66d5e6e24ad733a1f3d6188caeba570e4a1c515cfd2de2e11d5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.30-15.debian.tar.xz' binutils_2.30-15.debian.tar.xz 311280 SHA256:7447dc4f94b65fa9c388787e84425cdef6d96b04f7e27d9d1e714df54bd67063
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.30-15/
 
-- https://sources.debian.net/src/binutils/2.30-15/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.30-15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.30-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -2066,21 +2059,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.7-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7-1.dsc' libbsd_0.8.7-1.dsc 2181 SHA256:4354dc5d963ba909589b3a26a5e135c5a552710cdaa96fc0e76d88e9f78fe72e
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7.orig.tar.xz' libbsd_0.8.7.orig.tar.xz 371772 SHA256:f548f10e5af5a08b1e22889ce84315b1ebe41505b015c9596bad03fd13a12b31
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7.orig.tar.xz.asc' libbsd_0.8.7.orig.tar.xz.asc 833 SHA256:93ae025cc6430971572ce3c52af30a9ea8d8ae760e8759afe41fa955528617b4
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7-1.debian.tar.xz' libbsd_0.8.7-1.debian.tar.xz 15800 SHA256:137b8bedc3dfed65a318e12642759b61bd1a469f0f02bc551fc352d889792d89
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.8.7-1/
 
-- https://sources.debian.net/src/libbsd/0.8.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.8.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.8.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3.1`
 
@@ -3184,20 +3169,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-6.1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1.dsc' libxml2_2.9.4+dfsg1-6.1.dsc 3139 SHA256:80781c59c3fe24ed81efe58d2512c20a3cdbc9c862bee87cbd17f8241c2efab2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1.debian.tar.xz' libxml2_2.9.4+dfsg1-6.1.debian.tar.xz 36064 SHA256:bd4ee9a9e0c5c3c78902e4c12482fdbbcd4da0b0d1c3c41680bb8b5304116ca2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-6.1/
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-6.1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -4342,20 +4320,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.3-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3-2.dsc' postgresql-10_10.3-2.dsc 3524 SHA256:1f3d0d9204d40631a5e6b775a285868cdccd4fe69deba8b8967cad7eb219ae33
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3.orig.tar.bz2' postgresql-10_10.3.orig.tar.bz2 19959653 SHA256:6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.3-2.debian.tar.xz' postgresql-10_10.3-2.debian.tar.xz 23032 SHA256:e06aa0fc38f0900dff89c4a1e2a3229fa3e3df70d533e68fd02e1ff726ace9ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-10/10.3-2/
 
-- https://sources.debian.net/src/postgresql-10/10.3-2/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-10/10.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-10/10.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.14-1`
 
@@ -4462,19 +4433,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.6.4-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.6.4-1.dsc' python3-defaults_3.6.4-1.dsc 2870 SHA256:81fb876f7b761dc99e4c5190992083359385c009f50db61542cd2c7c2fee8da4
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.6.4-1.tar.gz' python3-defaults_3.6.4-1.tar.gz 131999 SHA256:68f7f5648771471c2aa6f188b2e23716ff6f53d86e61776c5612d4e19ed77725
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.6.4-1/
 
-- https://sources.debian.net/src/python3-defaults/3.6.4-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.6.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.6.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.6.5~rc1-1`
 
@@ -4487,20 +4452,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.5~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5~rc1-1.dsc' python3-stdlib-extensions_3.6.5~rc1-1.dsc 2441 SHA256:991cef60163f582aa2c344bf233454f05743fcf758372512e32dfa2d55549013
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5~rc1.orig.tar.xz' python3-stdlib-extensions_3.6.5~rc1.orig.tar.xz 1037124 SHA256:c3f1e3e2db3317416405c44fa8d46e3789be327ed43f15cee1aa20a0386fd0b2
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5~rc1-1.debian.tar.xz' python3-stdlib-extensions_3.6.5~rc1-1.debian.tar.xz 15520 SHA256:42f14076b4fef554aa4bfecb98d4ab96a609f2e76d5bce87c8f6a4f6e57d3105
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.5~rc1-1/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.5~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.5~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.5~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.6=3.6.5~rc1-1`
 
@@ -4531,20 +4489,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.5~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.5~rc1-1.dsc' python3.6_3.6.5~rc1-1.dsc 3429 SHA256:2d1e44edcba2858c2e56f973bbeb5570188d76ed28084c2f697b02bb17b9898e
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.5~rc1.orig.tar.xz' python3.6_3.6.5~rc1.orig.tar.xz 17016364 SHA256:7e24db1fb205160f1eb068b90a9a75490af310146aa32cef5ee9bc4bbc2d8399
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.5~rc1-1.debian.tar.xz' python3.6_3.6.5~rc1-1.debian.tar.xz 204612 SHA256:85b284051e82599d54fcc7246c771874a2969beddc98a48668a64fff9f1e4b32
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.6/3.6.5~rc1-1/
 
-- https://sources.debian.net/src/python3.6/3.6.5~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.5~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.5~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -4578,20 +4529,13 @@ Licenses: (parsed from: `/usr/share/doc/librtmp1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-1
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1-1.dsc' rtmpdump_2.4+20151223.gitfa8646d.1-1.dsc 2315 SHA256:e56822b88625bf6a51f06652fc36fa2a1348b4325ac76541800cd078192aa3d2
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz' rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz 142213 SHA256:5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1-1.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-1.debian.tar.xz 8044 SHA256:675847f5cddb860256cbf2e7d5b85918aa53b59b0fd97a466b39a5c77a399537
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-1/
 
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-1/ (for browsing the source)
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.4-2`
 
