@@ -4111,14 +4111,9 @@ Licenses: (parsed from: `/usr/share/doc/libplymouth2/copyright`, `/usr/share/doc
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris plymouth=0.8.8-0ubuntu17.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.1.dsc' plymouth_0.8.8-0ubuntu17.1.dsc 2413 SHA256:d2a5fda1f2ea56df7ffcefdeb85e9e624ec3e98023cdc79c8e43f4987840cfe3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8.orig.tar.bz2' plymouth_0.8.8.orig.tar.bz2 1143549 SHA256:1bada4e1d3a31a5a99adc2db83f5452d9818839cda51a6e430f044f6281d759b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.1.debian.tar.xz' plymouth_0.8.8-0ubuntu17.1.debian.tar.xz 93684 SHA256:8fc0f5e8cdef374293836932b2edeff58a30ccf157b41a1f7ee68b08ea9af15b
-```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
