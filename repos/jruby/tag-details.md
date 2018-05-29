@@ -33,7 +33,7 @@
 ## `jruby:9`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -47,14 +47,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -88,27 +88,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -149,20 +149,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -657,7 +657,7 @@ CMD ["irb"]
 ## `jruby:9.2`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -671,14 +671,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -712,27 +712,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -773,20 +773,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1281,7 +1281,7 @@ CMD ["irb"]
 ## `jruby:9.2.0`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1295,14 +1295,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2.0` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -1336,27 +1336,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -1397,20 +1397,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1905,7 +1905,7 @@ CMD ["irb"]
 ## `jruby:9.2.0.0`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1919,14 +1919,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2.0.0` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -1960,27 +1960,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -2021,20 +2021,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2529,7 +2529,7 @@ CMD ["irb"]
 ## `jruby:9.2.0.0-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2539,14 +2539,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2.0.0-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -2570,27 +2570,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -2611,27 +2611,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981a58e30f1f2f
+$ docker pull jruby@sha256:3c11107211d1ae7d3ffc3dd1da1f63202b329e3ccfbb33b2f65613b5a108a565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2645,14 +2645,14 @@ $ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981
 ### `jruby:9.2.0.0-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:e2412b89b6f0d3635836e58c89f060fc265e54e857edfcf0cf40c50dfc2b805e
+$ docker pull jruby@sha256:f75cf32261c3a7c854529c8ae564d7626890f0846901cde323e6ccba5eefe4b8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.5 MB (274503315 bytes)**  
+-	Total Size: **276.2 MB (276218906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b1f071cd76fc558762a985d1ae4c1244cebcc8d42e7b72c6b0b90f462a09c99`
+-	Image ID: `sha256:d90e35eaa162044078d2f5867c3b1eb98c5ccb6502df08bd72350dedb37aae7e`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -2688,27 +2688,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:52:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:20:54 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:55 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:00 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:21:00 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:41 GMT
+# Tue, 29 May 2018 17:21:01 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:54 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:54 GMT
+# Tue, 29 May 2018 17:21:16 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:16 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 CMD ["irb"]
 ```
 
@@ -2753,20 +2753,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:54:34 GMT  
 		Size: 6.7 MB (6711798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb9168d725e06d8951aa2c65ca689d2234d11ad838c79188adda3605f31a7be`  
-		Last Modified: Tue, 15 May 2018 01:54:32 GMT  
-		Size: 21.5 MB (21500859 bytes)  
+	-	`sha256:3fc37a08f094cf9b82093f732a238511b9703da364f75f33326ca10860990808`  
+		Last Modified: Tue, 29 May 2018 17:24:32 GMT  
+		Size: 23.0 MB (22969428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f9f45ade82cb9d80d98d5f8fc6a7c0a16720a5c85b8d01fd9b118d168a5f8ca`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 201.0 B  
+	-	`sha256:2a3e7ccacd7c080ef8a60cf576d20381dda2dc0ed694e6265fad5dab6e7004e7`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0728877d1df17c4bbd48d562503466b5c90c46ad7397a81be5281dacef544144`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 701.5 KB (701544 bytes)  
+	-	`sha256:2fe92c8178b8945a8146af70f97bfb17a55e1a1e156fb05cdb447494aa9b2e22`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 948.6 KB (948567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8730167d1da35d73ed82f6f0957230c3ce7bf599dcae194955cdb83fc93ccb82`  
-		Last Modified: Tue, 15 May 2018 01:54:29 GMT  
+	-	`sha256:45c3bd740b415b44ae46524e84be5eb023cf0e9e3dafbfecce56c023aee1ca26`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3285,7 +3285,7 @@ CMD ["irb"]
 ## `jruby:9.2.0.0-jdk-alpine`
 
 ```console
-$ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee1043bfa2b596ac
+$ docker pull jruby@sha256:9c65d28086e7fad46eb786543d78ee29cab7480a09a00cb9f5a78ebccaa98245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3295,14 +3295,14 @@ $ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee104
 ### `jruby:9.2.0.0-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:1b5ae13618c35cc198b299d7daad4152d0817125bb5302e90f16e41509b91deb
+$ docker pull jruby@sha256:11386ea5e103614b43bfcfc026be9e4a602be4083718a59487524bd9b91fbf1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95881049 bytes)**  
+-	Total Size: **97.6 MB (97596395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff286bc6c19a62e458767a7c1aea9c00abd828a4108e7b8665ae1697cf3a0d93`
+-	Image ID: `sha256:dd1c4c9198464c135e0dbf6338e0b24cffcea880c7e086d2bb1781f8a78deffa`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -3326,27 +3326,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:56 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:13:02 GMT
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:34 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:13:03 GMT
+# Tue, 29 May 2018 17:21:34 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:04 GMT
+# Tue, 29 May 2018 17:21:35 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:13:18 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:13:20 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 CMD ["irb"]
 ```
 
@@ -3367,27 +3367,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:18:34 GMT  
 		Size: 1.3 MB (1292232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a397892b996fd5254791c2c6a74808ead96abfe4d748492704cc5d783a9368`  
-		Last Modified: Tue, 24 Apr 2018 00:21:24 GMT  
-		Size: 21.6 MB (21593377 bytes)  
+	-	`sha256:e74902e7f9381fdf9125274e7c2fe38bec06b164a9be4d6bee8f3742d7b7080d`  
+		Last Modified: Tue, 29 May 2018 17:25:19 GMT  
+		Size: 23.1 MB (23061660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1059fe8a0427338f11d0da7c7f8559ef67dc09b095cf4c92d9778933cd647e85`  
-		Last Modified: Tue, 24 Apr 2018 00:21:20 GMT  
-		Size: 199.0 B  
+	-	`sha256:e13ed113220445d14eb0968894f8b30ac899825451a7af23cd96986545fbd671`  
+		Last Modified: Tue, 29 May 2018 17:25:10 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a301d79dafa3d07cd954900c80fb058ad9d8bbd6cc4bd32588e53bb78fbbc5d`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 701.5 KB (701545 bytes)  
+	-	`sha256:b6daf38b4d4925a1b2c8930b4a620d8e7f9b9d370e8e2e2def8e85f8a2b4967e`  
+		Last Modified: Tue, 29 May 2018 17:25:12 GMT  
+		Size: 948.6 KB (948609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:796c31ff1cdb9ae0c81f3b80843f02e8f2cbac82d2ef759d37e2667b0a70469a`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 157.0 B  
+	-	`sha256:6805e0043cc240e66620e4c85844e50133cf91320f3c5a92c221bf9a07624c60`  
+		Last Modified: Tue, 29 May 2018 17:25:11 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0.0-jre`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3401,14 +3401,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2.0.0-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -3442,27 +3442,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -3503,20 +3503,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4011,7 +4011,7 @@ CMD ["irb"]
 ## `jruby:9.2.0.0-jre-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4021,14 +4021,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2.0.0-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -4052,27 +4052,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -4093,21 +4093,21 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0.0-onbuild`
@@ -4847,7 +4847,7 @@ ONBUILD ADD . /usr/src/app
 ## `jruby:9.2.0-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4857,14 +4857,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2.0-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -4888,27 +4888,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -4929,27 +4929,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981a58e30f1f2f
+$ docker pull jruby@sha256:3c11107211d1ae7d3ffc3dd1da1f63202b329e3ccfbb33b2f65613b5a108a565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4963,14 +4963,14 @@ $ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981
 ### `jruby:9.2.0-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:e2412b89b6f0d3635836e58c89f060fc265e54e857edfcf0cf40c50dfc2b805e
+$ docker pull jruby@sha256:f75cf32261c3a7c854529c8ae564d7626890f0846901cde323e6ccba5eefe4b8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.5 MB (274503315 bytes)**  
+-	Total Size: **276.2 MB (276218906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b1f071cd76fc558762a985d1ae4c1244cebcc8d42e7b72c6b0b90f462a09c99`
+-	Image ID: `sha256:d90e35eaa162044078d2f5867c3b1eb98c5ccb6502df08bd72350dedb37aae7e`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -5006,27 +5006,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:52:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:20:54 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:55 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:00 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:21:00 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:41 GMT
+# Tue, 29 May 2018 17:21:01 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:54 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:54 GMT
+# Tue, 29 May 2018 17:21:16 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:16 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 CMD ["irb"]
 ```
 
@@ -5071,20 +5071,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:54:34 GMT  
 		Size: 6.7 MB (6711798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb9168d725e06d8951aa2c65ca689d2234d11ad838c79188adda3605f31a7be`  
-		Last Modified: Tue, 15 May 2018 01:54:32 GMT  
-		Size: 21.5 MB (21500859 bytes)  
+	-	`sha256:3fc37a08f094cf9b82093f732a238511b9703da364f75f33326ca10860990808`  
+		Last Modified: Tue, 29 May 2018 17:24:32 GMT  
+		Size: 23.0 MB (22969428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f9f45ade82cb9d80d98d5f8fc6a7c0a16720a5c85b8d01fd9b118d168a5f8ca`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 201.0 B  
+	-	`sha256:2a3e7ccacd7c080ef8a60cf576d20381dda2dc0ed694e6265fad5dab6e7004e7`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0728877d1df17c4bbd48d562503466b5c90c46ad7397a81be5281dacef544144`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 701.5 KB (701544 bytes)  
+	-	`sha256:2fe92c8178b8945a8146af70f97bfb17a55e1a1e156fb05cdb447494aa9b2e22`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 948.6 KB (948567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8730167d1da35d73ed82f6f0957230c3ce7bf599dcae194955cdb83fc93ccb82`  
-		Last Modified: Tue, 15 May 2018 01:54:29 GMT  
+	-	`sha256:45c3bd740b415b44ae46524e84be5eb023cf0e9e3dafbfecce56c023aee1ca26`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5603,7 +5603,7 @@ CMD ["irb"]
 ## `jruby:9.2.0-jdk-alpine`
 
 ```console
-$ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee1043bfa2b596ac
+$ docker pull jruby@sha256:9c65d28086e7fad46eb786543d78ee29cab7480a09a00cb9f5a78ebccaa98245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5613,14 +5613,14 @@ $ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee104
 ### `jruby:9.2.0-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:1b5ae13618c35cc198b299d7daad4152d0817125bb5302e90f16e41509b91deb
+$ docker pull jruby@sha256:11386ea5e103614b43bfcfc026be9e4a602be4083718a59487524bd9b91fbf1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95881049 bytes)**  
+-	Total Size: **97.6 MB (97596395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff286bc6c19a62e458767a7c1aea9c00abd828a4108e7b8665ae1697cf3a0d93`
+-	Image ID: `sha256:dd1c4c9198464c135e0dbf6338e0b24cffcea880c7e086d2bb1781f8a78deffa`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -5644,27 +5644,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:56 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:13:02 GMT
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:34 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:13:03 GMT
+# Tue, 29 May 2018 17:21:34 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:04 GMT
+# Tue, 29 May 2018 17:21:35 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:13:18 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:13:20 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 CMD ["irb"]
 ```
 
@@ -5685,27 +5685,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:18:34 GMT  
 		Size: 1.3 MB (1292232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a397892b996fd5254791c2c6a74808ead96abfe4d748492704cc5d783a9368`  
-		Last Modified: Tue, 24 Apr 2018 00:21:24 GMT  
-		Size: 21.6 MB (21593377 bytes)  
+	-	`sha256:e74902e7f9381fdf9125274e7c2fe38bec06b164a9be4d6bee8f3742d7b7080d`  
+		Last Modified: Tue, 29 May 2018 17:25:19 GMT  
+		Size: 23.1 MB (23061660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1059fe8a0427338f11d0da7c7f8559ef67dc09b095cf4c92d9778933cd647e85`  
-		Last Modified: Tue, 24 Apr 2018 00:21:20 GMT  
-		Size: 199.0 B  
+	-	`sha256:e13ed113220445d14eb0968894f8b30ac899825451a7af23cd96986545fbd671`  
+		Last Modified: Tue, 29 May 2018 17:25:10 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a301d79dafa3d07cd954900c80fb058ad9d8bbd6cc4bd32588e53bb78fbbc5d`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 701.5 KB (701545 bytes)  
+	-	`sha256:b6daf38b4d4925a1b2c8930b4a620d8e7f9b9d370e8e2e2def8e85f8a2b4967e`  
+		Last Modified: Tue, 29 May 2018 17:25:12 GMT  
+		Size: 948.6 KB (948609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:796c31ff1cdb9ae0c81f3b80843f02e8f2cbac82d2ef759d37e2667b0a70469a`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 157.0 B  
+	-	`sha256:6805e0043cc240e66620e4c85844e50133cf91320f3c5a92c221bf9a07624c60`  
+		Last Modified: Tue, 29 May 2018 17:25:11 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0-jre`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5719,14 +5719,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2.0-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -5760,27 +5760,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -5821,20 +5821,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6329,7 +6329,7 @@ CMD ["irb"]
 ## `jruby:9.2.0-jre-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6339,14 +6339,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2.0-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -6370,27 +6370,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -6411,21 +6411,21 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.0-onbuild`
@@ -7165,7 +7165,7 @@ ONBUILD ADD . /usr/src/app
 ## `jruby:9.2-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7175,14 +7175,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -7206,27 +7206,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -7247,27 +7247,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2-jdk`
 
 ```console
-$ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981a58e30f1f2f
+$ docker pull jruby@sha256:3c11107211d1ae7d3ffc3dd1da1f63202b329e3ccfbb33b2f65613b5a108a565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7281,14 +7281,14 @@ $ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981
 ### `jruby:9.2-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:e2412b89b6f0d3635836e58c89f060fc265e54e857edfcf0cf40c50dfc2b805e
+$ docker pull jruby@sha256:f75cf32261c3a7c854529c8ae564d7626890f0846901cde323e6ccba5eefe4b8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.5 MB (274503315 bytes)**  
+-	Total Size: **276.2 MB (276218906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b1f071cd76fc558762a985d1ae4c1244cebcc8d42e7b72c6b0b90f462a09c99`
+-	Image ID: `sha256:d90e35eaa162044078d2f5867c3b1eb98c5ccb6502df08bd72350dedb37aae7e`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -7324,27 +7324,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:52:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:20:54 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:55 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:00 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:21:00 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:41 GMT
+# Tue, 29 May 2018 17:21:01 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:54 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:54 GMT
+# Tue, 29 May 2018 17:21:16 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:16 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 CMD ["irb"]
 ```
 
@@ -7389,20 +7389,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:54:34 GMT  
 		Size: 6.7 MB (6711798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb9168d725e06d8951aa2c65ca689d2234d11ad838c79188adda3605f31a7be`  
-		Last Modified: Tue, 15 May 2018 01:54:32 GMT  
-		Size: 21.5 MB (21500859 bytes)  
+	-	`sha256:3fc37a08f094cf9b82093f732a238511b9703da364f75f33326ca10860990808`  
+		Last Modified: Tue, 29 May 2018 17:24:32 GMT  
+		Size: 23.0 MB (22969428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f9f45ade82cb9d80d98d5f8fc6a7c0a16720a5c85b8d01fd9b118d168a5f8ca`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 201.0 B  
+	-	`sha256:2a3e7ccacd7c080ef8a60cf576d20381dda2dc0ed694e6265fad5dab6e7004e7`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0728877d1df17c4bbd48d562503466b5c90c46ad7397a81be5281dacef544144`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 701.5 KB (701544 bytes)  
+	-	`sha256:2fe92c8178b8945a8146af70f97bfb17a55e1a1e156fb05cdb447494aa9b2e22`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 948.6 KB (948567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8730167d1da35d73ed82f6f0957230c3ce7bf599dcae194955cdb83fc93ccb82`  
-		Last Modified: Tue, 15 May 2018 01:54:29 GMT  
+	-	`sha256:45c3bd740b415b44ae46524e84be5eb023cf0e9e3dafbfecce56c023aee1ca26`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -7921,7 +7921,7 @@ CMD ["irb"]
 ## `jruby:9.2-jdk-alpine`
 
 ```console
-$ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee1043bfa2b596ac
+$ docker pull jruby@sha256:9c65d28086e7fad46eb786543d78ee29cab7480a09a00cb9f5a78ebccaa98245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7931,14 +7931,14 @@ $ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee104
 ### `jruby:9.2-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:1b5ae13618c35cc198b299d7daad4152d0817125bb5302e90f16e41509b91deb
+$ docker pull jruby@sha256:11386ea5e103614b43bfcfc026be9e4a602be4083718a59487524bd9b91fbf1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95881049 bytes)**  
+-	Total Size: **97.6 MB (97596395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff286bc6c19a62e458767a7c1aea9c00abd828a4108e7b8665ae1697cf3a0d93`
+-	Image ID: `sha256:dd1c4c9198464c135e0dbf6338e0b24cffcea880c7e086d2bb1781f8a78deffa`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -7962,27 +7962,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:56 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:13:02 GMT
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:34 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:13:03 GMT
+# Tue, 29 May 2018 17:21:34 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:04 GMT
+# Tue, 29 May 2018 17:21:35 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:13:18 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:13:20 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 CMD ["irb"]
 ```
 
@@ -8003,27 +8003,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:18:34 GMT  
 		Size: 1.3 MB (1292232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a397892b996fd5254791c2c6a74808ead96abfe4d748492704cc5d783a9368`  
-		Last Modified: Tue, 24 Apr 2018 00:21:24 GMT  
-		Size: 21.6 MB (21593377 bytes)  
+	-	`sha256:e74902e7f9381fdf9125274e7c2fe38bec06b164a9be4d6bee8f3742d7b7080d`  
+		Last Modified: Tue, 29 May 2018 17:25:19 GMT  
+		Size: 23.1 MB (23061660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1059fe8a0427338f11d0da7c7f8559ef67dc09b095cf4c92d9778933cd647e85`  
-		Last Modified: Tue, 24 Apr 2018 00:21:20 GMT  
-		Size: 199.0 B  
+	-	`sha256:e13ed113220445d14eb0968894f8b30ac899825451a7af23cd96986545fbd671`  
+		Last Modified: Tue, 29 May 2018 17:25:10 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a301d79dafa3d07cd954900c80fb058ad9d8bbd6cc4bd32588e53bb78fbbc5d`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 701.5 KB (701545 bytes)  
+	-	`sha256:b6daf38b4d4925a1b2c8930b4a620d8e7f9b9d370e8e2e2def8e85f8a2b4967e`  
+		Last Modified: Tue, 29 May 2018 17:25:12 GMT  
+		Size: 948.6 KB (948609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:796c31ff1cdb9ae0c81f3b80843f02e8f2cbac82d2ef759d37e2667b0a70469a`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 157.0 B  
+	-	`sha256:6805e0043cc240e66620e4c85844e50133cf91320f3c5a92c221bf9a07624c60`  
+		Last Modified: Tue, 29 May 2018 17:25:11 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2-jre`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8037,14 +8037,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:9.2-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -8078,27 +8078,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -8139,20 +8139,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8647,7 +8647,7 @@ CMD ["irb"]
 ## `jruby:9.2-jre-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8657,14 +8657,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9.2-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -8688,27 +8688,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -8729,21 +8729,21 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2-onbuild`
@@ -9483,7 +9483,7 @@ ONBUILD ADD . /usr/src/app
 ## `jruby:9-alpine`
 
 ```console
-$ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938875d4a7bc8a
+$ docker pull jruby@sha256:a21731fccedfe4b02eea1c259bee1936dc47e517587830f648d4947a7d1978d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9493,14 +9493,14 @@ $ docker pull jruby@sha256:ac65a4f5a22f6cfd72356f3dd7d513589b07a7ae7b482b5530938
 ### `jruby:9-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7f0bc4596c78db6052ccb915588a3262d12d65237251f74539c048f86f304b01
+$ docker pull jruby@sha256:f1c3ad11b51a176024a5ba9fff76dd70a1655c73fbd3945ea268d49babe03f8f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80104668 bytes)**  
+-	Total Size: **81.8 MB (81821014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c446d415b69debedfbca2f62f8216711207c7beb4524de4ec56a7ac0d72c2b`
+-	Image ID: `sha256:e769388f07da066e8b0d30c5728d7b72d55e97b18ce46663b13aee1579334ca3`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -9524,27 +9524,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:12 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:11:18 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:11:19 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:11:26 GMT
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:21 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:20:30 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:30 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:27 GMT
+# Tue, 29 May 2018 17:20:31 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:11:42 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:11:42 GMT
+# Tue, 29 May 2018 17:20:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:11:43 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:11:44 GMT
+# Tue, 29 May 2018 17:20:47 GMT
 CMD ["irb"]
 ```
 
@@ -9565,27 +9565,27 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:16:55 GMT  
 		Size: 1.3 MB (1291161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a5110a0668dce082fe316d17677129e8b1e8b22f2009ade5e87451877de7618`  
-		Last Modified: Tue, 24 Apr 2018 00:17:14 GMT  
-		Size: 21.6 MB (21591836 bytes)  
+	-	`sha256:b4cff3cb0e193c4a5267005eb8fe0f643d0a627fc3882c7caa1dc23f6a0a84fa`  
+		Last Modified: Tue, 29 May 2018 17:23:28 GMT  
+		Size: 23.1 MB (23061164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca6e903d7a988755b35ef0a53e57862702251e8188f33139646b4f040c0fa5f`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 199.0 B  
+	-	`sha256:c783740d08bfded88e86a188f0f13fe6fcb2fb729601a3547b2e143cd6e19454`  
+		Last Modified: Tue, 29 May 2018 17:23:25 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98f89370b2045bf53557da442d8a94b272589d0481449b6ae58d7f2365d0e872`  
-		Last Modified: Tue, 24 Apr 2018 00:17:13 GMT  
-		Size: 701.6 KB (701592 bytes)  
+	-	`sha256:f4707ed499b5df56c789623411de19ac97391a7f4888031119c2aa02ca816eb3`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 948.6 KB (948610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe283f67666ea4ac0e806888bc12f6db769af0b70ae0aa5a760a364ce82612c`  
-		Last Modified: Tue, 24 Apr 2018 00:17:12 GMT  
-		Size: 157.0 B  
+	-	`sha256:ddf07f55d53cf3277311434ad959f19db0dbbb01492024e2aaba73ba5e6f0239`  
+		Last Modified: Tue, 29 May 2018 17:23:26 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9-jdk`
 
 ```console
-$ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981a58e30f1f2f
+$ docker pull jruby@sha256:3c11107211d1ae7d3ffc3dd1da1f63202b329e3ccfbb33b2f65613b5a108a565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9599,14 +9599,14 @@ $ docker pull jruby@sha256:8ad50e69de243eea0aafb8593f0b2cccc2a4b48d27981f05d1981
 ### `jruby:9-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:e2412b89b6f0d3635836e58c89f060fc265e54e857edfcf0cf40c50dfc2b805e
+$ docker pull jruby@sha256:f75cf32261c3a7c854529c8ae564d7626890f0846901cde323e6ccba5eefe4b8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.5 MB (274503315 bytes)**  
+-	Total Size: **276.2 MB (276218906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b1f071cd76fc558762a985d1ae4c1244cebcc8d42e7b72c6b0b90f462a09c99`
+-	Image ID: `sha256:d90e35eaa162044078d2f5867c3b1eb98c5ccb6502df08bd72350dedb37aae7e`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -9642,27 +9642,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:52:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:52:35 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:20:54 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:20:55 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:00 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:40 GMT
+# Tue, 29 May 2018 17:21:00 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:41 GMT
+# Tue, 29 May 2018 17:21:01 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:54 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:54 GMT
+# Tue, 29 May 2018 17:21:16 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:16 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:55 GMT
+# Tue, 29 May 2018 17:21:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:56 GMT
+# Tue, 29 May 2018 17:21:18 GMT
 CMD ["irb"]
 ```
 
@@ -9707,20 +9707,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:54:34 GMT  
 		Size: 6.7 MB (6711798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb9168d725e06d8951aa2c65ca689d2234d11ad838c79188adda3605f31a7be`  
-		Last Modified: Tue, 15 May 2018 01:54:32 GMT  
-		Size: 21.5 MB (21500859 bytes)  
+	-	`sha256:3fc37a08f094cf9b82093f732a238511b9703da364f75f33326ca10860990808`  
+		Last Modified: Tue, 29 May 2018 17:24:32 GMT  
+		Size: 23.0 MB (22969428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f9f45ade82cb9d80d98d5f8fc6a7c0a16720a5c85b8d01fd9b118d168a5f8ca`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 201.0 B  
+	-	`sha256:2a3e7ccacd7c080ef8a60cf576d20381dda2dc0ed694e6265fad5dab6e7004e7`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0728877d1df17c4bbd48d562503466b5c90c46ad7397a81be5281dacef544144`  
-		Last Modified: Tue, 15 May 2018 01:54:30 GMT  
-		Size: 701.5 KB (701544 bytes)  
+	-	`sha256:2fe92c8178b8945a8146af70f97bfb17a55e1a1e156fb05cdb447494aa9b2e22`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
+		Size: 948.6 KB (948567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8730167d1da35d73ed82f6f0957230c3ce7bf599dcae194955cdb83fc93ccb82`  
-		Last Modified: Tue, 15 May 2018 01:54:29 GMT  
+	-	`sha256:45c3bd740b415b44ae46524e84be5eb023cf0e9e3dafbfecce56c023aee1ca26`  
+		Last Modified: Tue, 29 May 2018 17:24:29 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10239,7 +10239,7 @@ CMD ["irb"]
 ## `jruby:9-jdk-alpine`
 
 ```console
-$ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee1043bfa2b596ac
+$ docker pull jruby@sha256:9c65d28086e7fad46eb786543d78ee29cab7480a09a00cb9f5a78ebccaa98245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10249,14 +10249,14 @@ $ docker pull jruby@sha256:d06c09098dfea4d5f1fcf4ca273cea1043079e2d190c308bee104
 ### `jruby:9-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:1b5ae13618c35cc198b299d7daad4152d0817125bb5302e90f16e41509b91deb
+$ docker pull jruby@sha256:11386ea5e103614b43bfcfc026be9e4a602be4083718a59487524bd9b91fbf1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95881049 bytes)**  
+-	Total Size: **97.6 MB (97596395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff286bc6c19a62e458767a7c1aea9c00abd828a4108e7b8665ae1697cf3a0d93`
+-	Image ID: `sha256:dd1c4c9198464c135e0dbf6338e0b24cffcea880c7e086d2bb1781f8a78deffa`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -10280,27 +10280,27 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 08:15:56 GMT
 RUN apk add --no-cache       bash       libc6-compat
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 24 Apr 2018 00:12:55 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 24 Apr 2018 00:13:02 GMT
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:21:27 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:21:34 GMT
 RUN apk add --no-cache --virtual .build-deps       curl       tar   && mkdir -p /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 */tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && ln -s /opt/jruby/bin/jruby /usr/local/bin/ruby   && apk del .build-deps
-# Tue, 24 Apr 2018 00:13:03 GMT
+# Tue, 29 May 2018 17:21:34 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:04 GMT
+# Tue, 29 May 2018 17:21:35 GMT
 RUN mkdir -p /opt/jruby/etc     && {         echo 'install: --no-document';         echo 'update: --no-document';     } >> /opt/jruby/etc/gemrc
-# Tue, 24 Apr 2018 00:13:18 GMT
-RUN gem install bundler
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:21:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:18 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:51 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 24 Apr 2018 00:13:19 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN"     && chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 24 Apr 2018 00:13:20 GMT
+# Tue, 29 May 2018 17:21:52 GMT
 CMD ["irb"]
 ```
 
@@ -10321,21 +10321,21 @@ CMD ["irb"]
 		Last Modified: Wed, 10 Jan 2018 08:18:34 GMT  
 		Size: 1.3 MB (1292232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a397892b996fd5254791c2c6a74808ead96abfe4d748492704cc5d783a9368`  
-		Last Modified: Tue, 24 Apr 2018 00:21:24 GMT  
-		Size: 21.6 MB (21593377 bytes)  
+	-	`sha256:e74902e7f9381fdf9125274e7c2fe38bec06b164a9be4d6bee8f3742d7b7080d`  
+		Last Modified: Tue, 29 May 2018 17:25:19 GMT  
+		Size: 23.1 MB (23061660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1059fe8a0427338f11d0da7c7f8559ef67dc09b095cf4c92d9778933cd647e85`  
-		Last Modified: Tue, 24 Apr 2018 00:21:20 GMT  
-		Size: 199.0 B  
+	-	`sha256:e13ed113220445d14eb0968894f8b30ac899825451a7af23cd96986545fbd671`  
+		Last Modified: Tue, 29 May 2018 17:25:10 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a301d79dafa3d07cd954900c80fb058ad9d8bbd6cc4bd32588e53bb78fbbc5d`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 701.5 KB (701545 bytes)  
+	-	`sha256:b6daf38b4d4925a1b2c8930b4a620d8e7f9b9d370e8e2e2def8e85f8a2b4967e`  
+		Last Modified: Tue, 29 May 2018 17:25:12 GMT  
+		Size: 948.6 KB (948609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:796c31ff1cdb9ae0c81f3b80843f02e8f2cbac82d2ef759d37e2667b0a70469a`  
-		Last Modified: Tue, 24 Apr 2018 00:21:21 GMT  
-		Size: 157.0 B  
+	-	`sha256:6805e0043cc240e66620e4c85844e50133cf91320f3c5a92c221bf9a07624c60`  
+		Last Modified: Tue, 29 May 2018 17:25:11 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9-onbuild`
@@ -11075,7 +11075,7 @@ ONBUILD ADD . /usr/src/app
 ## `jruby:latest`
 
 ```console
-$ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0660af455c2f
+$ docker pull jruby@sha256:7daec2283eed386be7b18d1edad2db4347bfb347f481217a618ffca01bbd9be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11089,14 +11089,14 @@ $ docker pull jruby@sha256:78197feb5c21e44f19d254f40942f3ce437d143ca28b8116ba5b0
 ### `jruby:latest` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ecdc43405f313f1c7fef97e85d51d7804743198c48395baabf821bbc16810402
+$ docker pull jruby@sha256:8bc74d4e02ab2418b154b7d19e26334915cb6dd294db2112dfa89af71da0960d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212577052 bytes)**  
+-	Total Size: **214.3 MB (214292384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1724c45decde5fdc43bb8f7bfe8df21b7bcc886d3286c628722abddc9eecf984`
+-	Image ID: `sha256:7b9d3079d83626f7915b932d75ef04de9ed155fdb016cdb767c567c3d1047574`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -11130,27 +11130,27 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Tue, 15 May 2018 01:51:53 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_VERSION=9.1.17.0
-# Tue, 15 May 2018 01:51:53 GMT
-ENV JRUBY_SHA256=6a22f7bf8fef1a52530a9c9781a9d374ad07bbbef0d3d8e2af0ff5cbead0dfd5
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_VERSION=9.2.0.0
+# Tue, 29 May 2018 17:19:49 GMT
+ENV JRUBY_SHA256=42718dea5fc90b7696cb3fccf8e8d546729173963ad0bc477d66545677d00684
+# Tue, 29 May 2018 17:19:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 15 May 2018 01:52:04 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:05 GMT
+# Tue, 29 May 2018 17:19:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 15 May 2018 01:52:19 GMT
-RUN gem install bundler
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:11 GMT
+RUN gem install bundler rake net-telnet xmlrpc
+# Tue, 29 May 2018 17:20:12 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 15 May 2018 01:52:19 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:12 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 15 May 2018 01:52:20 GMT
+# Tue, 29 May 2018 17:20:13 GMT
 CMD ["irb"]
 ```
 
@@ -11191,20 +11191,20 @@ CMD ["irb"]
 		Last Modified: Tue, 15 May 2018 01:53:20 GMT  
 		Size: 6.7 MB (6681679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968ab4a9a40a6d3b5b3ebe88a33f649b35d1cee6fb1f3c59605020c9871c2718`  
-		Last Modified: Tue, 15 May 2018 01:53:21 GMT  
-		Size: 21.5 MB (21499635 bytes)  
+	-	`sha256:de4e7c5c009742808ec0e74e490c38e2110027103812c016afcaaf98b4c93c73`  
+		Last Modified: Tue, 29 May 2018 17:22:18 GMT  
+		Size: 23.0 MB (22967942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88364f9495d13a776c0971bec08bedeb3250f2e7c304e7ef637428fb35e6e7f9`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 199.0 B  
+	-	`sha256:819e13c0c4db1fb795142ed29d7b295c78c7777a797d9bae249a6366439a8370`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357dda7be20ac78a3c550bb7fc54562ce3a30cc6058dd7083f8086eeb8480374`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
-		Size: 701.5 KB (701546 bytes)  
+	-	`sha256:220816160852afa12c3e374394e2fd2fb08abcf65c7264894e9ded57e02aa470`  
+		Last Modified: Tue, 29 May 2018 17:22:16 GMT  
+		Size: 948.6 KB (948569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d371513b920545f67b3b790f1dc5109f4559cd8940786d4ecadb3f4d1bf7982e`  
-		Last Modified: Tue, 15 May 2018 01:53:19 GMT  
+	-	`sha256:8905e644e9b470ffe3d984b3b8e7abd6f7561445b3e66a5832dea2294dc44577`  
+		Last Modified: Tue, 29 May 2018 17:22:15 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
