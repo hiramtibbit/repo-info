@@ -78,6 +78,38 @@
 -	[`flink:1.4-hadoop28-alpine`](#flink14-hadoop28-alpine)
 -	[`flink:1.4-scala_2.11`](#flink14-scala_211)
 -	[`flink:1.4-scala_2.11-alpine`](#flink14-scala_211-alpine)
+-	[`flink:1.5`](#flink15)
+-	[`flink:1.5.0`](#flink150)
+-	[`flink:1.5.0-alpine`](#flink150-alpine)
+-	[`flink:1.5.0-hadoop24`](#flink150-hadoop24)
+-	[`flink:1.5.0-hadoop24-alpine`](#flink150-hadoop24-alpine)
+-	[`flink:1.5.0-hadoop24-scala_2.11`](#flink150-hadoop24-scala_211)
+-	[`flink:1.5.0-hadoop24-scala_2.11-alpine`](#flink150-hadoop24-scala_211-alpine)
+-	[`flink:1.5.0-hadoop26`](#flink150-hadoop26)
+-	[`flink:1.5.0-hadoop26-alpine`](#flink150-hadoop26-alpine)
+-	[`flink:1.5.0-hadoop26-scala_2.11`](#flink150-hadoop26-scala_211)
+-	[`flink:1.5.0-hadoop26-scala_2.11-alpine`](#flink150-hadoop26-scala_211-alpine)
+-	[`flink:1.5.0-hadoop27`](#flink150-hadoop27)
+-	[`flink:1.5.0-hadoop27-alpine`](#flink150-hadoop27-alpine)
+-	[`flink:1.5.0-hadoop27-scala_2.11`](#flink150-hadoop27-scala_211)
+-	[`flink:1.5.0-hadoop27-scala_2.11-alpine`](#flink150-hadoop27-scala_211-alpine)
+-	[`flink:1.5.0-hadoop28`](#flink150-hadoop28)
+-	[`flink:1.5.0-hadoop28-alpine`](#flink150-hadoop28-alpine)
+-	[`flink:1.5.0-hadoop28-scala_2.11`](#flink150-hadoop28-scala_211)
+-	[`flink:1.5.0-hadoop28-scala_2.11-alpine`](#flink150-hadoop28-scala_211-alpine)
+-	[`flink:1.5.0-scala_2.11`](#flink150-scala_211)
+-	[`flink:1.5.0-scala_2.11-alpine`](#flink150-scala_211-alpine)
+-	[`flink:1.5-alpine`](#flink15-alpine)
+-	[`flink:1.5-hadoop24`](#flink15-hadoop24)
+-	[`flink:1.5-hadoop24-alpine`](#flink15-hadoop24-alpine)
+-	[`flink:1.5-hadoop26`](#flink15-hadoop26)
+-	[`flink:1.5-hadoop26-alpine`](#flink15-hadoop26-alpine)
+-	[`flink:1.5-hadoop27`](#flink15-hadoop27)
+-	[`flink:1.5-hadoop27-alpine`](#flink15-hadoop27-alpine)
+-	[`flink:1.5-hadoop28`](#flink15-hadoop28)
+-	[`flink:1.5-hadoop28-alpine`](#flink15-hadoop28-alpine)
+-	[`flink:1.5-scala_2.11`](#flink15-scala_211)
+-	[`flink:1.5-scala_2.11-alpine`](#flink15-scala_211-alpine)
 -	[`flink:alpine`](#flinkalpine)
 -	[`flink:hadoop24`](#flinkhadoop24)
 -	[`flink:hadoop24-alpine`](#flinkhadoop24-alpine)
@@ -9970,6 +10002,134 @@ CMD ["help"]
 		Last Modified: Mon, 12 Mar 2018 22:46:52 GMT  
 		Size: 1.1 KB (1117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `flink:1.5`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop24`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop24-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop24-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop24-scala_2.11-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop26`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop26-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop26-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop26-scala_2.11-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop27`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop27-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop27-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop27-scala_2.11-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop28`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop28-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop28-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-hadoop28-scala_2.11-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5.0-scala_2.11-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop24`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop24-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop26`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop26-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop27`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop27-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop28`
+
+**does not exist** (yet?)
+
+## `flink:1.5-hadoop28-alpine`
+
+**does not exist** (yet?)
+
+## `flink:1.5-scala_2.11`
+
+**does not exist** (yet?)
+
+## `flink:1.5-scala_2.11-alpine`
+
+**does not exist** (yet?)
 
 ## `flink:alpine`
 
