@@ -3749,21 +3749,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-3
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-3.dsc' ncurses_6.1+20180210-3.dsc 4128 SHA256:acfaf1140d01a664339ce747df5b608d6249d1dbb64af2a64a24d5775c36fe9c
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-3.debian.tar.xz' ncurses_6.1+20180210-3.debian.tar.xz 60056 SHA256:715969f447b6148f1bc522ed577c2d0053f9c48f34637a812f633e189c27d316
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.1+20180210-3/
 
-- https://sources.debian.net/src/ncurses/6.1+20180210-3/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1+20180210-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1+20180210-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -3862,20 +3854,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.37-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37-1.dsc' nss_3.37-1.dsc 2146 SHA256:51f917c22fa8495cb5271172ed2504286bdcb9806c2b848ec1a1bc11d18043a5
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.orig.tar.gz' nss_3.37.orig.tar.gz 23027581 SHA256:5821969e85d241833e96cb82bd4211ddea6d87003f2cccce25e0eab4aefa6268
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37-1.debian.tar.xz' nss_3.37-1.debian.tar.xz 19868 SHA256:6e687aae0c9de1d2e2759718488b72231c9cc1537a7d927213b691954f9a60c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.37-1/
 
-- https://sources.debian.net/src/nss/2:3.37-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.37-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.37-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-11=11~13-2`
 
@@ -4349,20 +4334,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.dsc' systemd_238-4.dsc 4846 SHA256:ce4d11ac2f1a1d4c0e06f031420bea2338eb39182a6cec78d90e53a6f599e792
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.debian.tar.xz' systemd_238-4.debian.tar.xz 139840 SHA256:fd0353528020e4739b68fd7f68aca88df9fcd78cc78cd10e3d187b745a514846
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-4/
 
-- https://sources.debian.net/src/systemd/238-4/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
