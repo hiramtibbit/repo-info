@@ -6,6 +6,10 @@
 -	[`postgres:10.4`](#postgres104)
 -	[`postgres:10.4-alpine`](#postgres104-alpine)
 -	[`postgres:10-alpine`](#postgres10-alpine)
+-	[`postgres:11`](#postgres11)
+-	[`postgres:11-alpine`](#postgres11-alpine)
+-	[`postgres:11-beta1`](#postgres11-beta1)
+-	[`postgres:11-beta1-alpine`](#postgres11-beta1-alpine)
 -	[`postgres:9`](#postgres9)
 -	[`postgres:9.3`](#postgres93)
 -	[`postgres:9.3.23`](#postgres9323)
@@ -3014,6 +3018,22 @@ CMD ["postgres"]
 		Last Modified: Sat, 26 May 2018 13:37:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `postgres:11`
+
+**does not exist** (yet?)
+
+## `postgres:11-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:11-beta1`
+
+**does not exist** (yet?)
+
+## `postgres:11-beta1-alpine`
+
+**does not exist** (yet?)
 
 ## `postgres:9`
 
