@@ -1,7 +1,7 @@
 ## `flink:hadoop24-alpine`
 
 ```console
-$ docker pull flink@sha256:d3b78c137c8b18306283ce21518ab82c4b6575ef09d2c71eb77721550eb7d1e7
+$ docker pull flink@sha256:f8893f1517ff1935e99c66dfa39e3c6f98548d11be5cb437664680ba56624fcc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull flink@sha256:d3b78c137c8b18306283ce21518ab82c4b6575ef09d2c71eb7772
 ### `flink:hadoop24-alpine` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:381022705ee683a6e665f5702fe58b084617c7275539471c520e8aa12633e077
+$ docker pull flink@sha256:04a2fa2d0f3ebe40123e9f0470c5467dbb5ecc3630de70d75f577239358b9a27
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.8 MB (272844836 bytes)**  
+-	Total Size: **349.5 MB (349527181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2663ff4b4b1e316c045274711ff2c6cd9e3a11d9eb70318e1ac76c2ede973595`
+-	Image ID: `sha256:4ec8e9e81999764dad355967504651a0f55bee53658e9c0f65fa7c6d8da267a0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -43,31 +43,31 @@ ENV JAVA_ALPINE_VERSION=8.151.12-r0
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Wed, 10 Jan 2018 06:52:13 GMT
 RUN apk add --no-cache bash libc6-compat snappy 'su-exec>=0.2'
-# Mon, 12 Mar 2018 22:29:13 GMT
-ENV FLINK_VERSION=1.4.2 HADOOP_VERSION=24 SCALA_VERSION=2.11
-# Mon, 12 Mar 2018 22:29:13 GMT
+# Tue, 29 May 2018 22:49:08 GMT
+ENV FLINK_VERSION=1.5.0 HADOOP_SCALA_VARIANT=hadoop24-scala_2.11
+# Tue, 29 May 2018 22:49:08 GMT
 ENV FLINK_HOME=/opt/flink
-# Mon, 12 Mar 2018 22:29:13 GMT
+# Tue, 29 May 2018 22:49:08 GMT
 ENV PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Mon, 12 Mar 2018 22:29:14 GMT
+# Tue, 29 May 2018 22:49:09 GMT
 RUN addgroup -S -g 9999 flink &&     adduser -D -S -H -u 9999 -G flink -h $FLINK_HOME flink
-# Mon, 12 Mar 2018 22:29:15 GMT
+# Tue, 29 May 2018 22:49:09 GMT
 WORKDIR /opt/flink
-# Mon, 12 Mar 2018 22:29:15 GMT
-ENV FLINK_URL_FILE_PATH=flink/flink-1.4.2/flink-1.4.2-bin-hadoop24-scala_2.11.tgz
-# Mon, 12 Mar 2018 22:29:15 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.4.2/flink-1.4.2-bin-hadoop24-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.4.2/flink-1.4.2-bin-hadoop24-scala_2.11.tgz.asc
-# Mon, 12 Mar 2018 22:29:16 GMT
+# Tue, 29 May 2018 22:49:09 GMT
+ENV FLINK_URL_FILE_PATH=flink/flink-1.5.0/flink-1.5.0-bin-hadoop24-scala_2.11.tgz
+# Tue, 29 May 2018 22:49:09 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.5.0/flink-1.5.0-bin-hadoop24-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.5.0/flink-1.5.0-bin-hadoop24-scala_2.11.tgz.asc
+# Tue, 29 May 2018 22:49:10 GMT
 COPY file:d9b980b40ddcfab2700a72e4088616452368e14c4f8fbee56f3258ac7f5dd913 in /KEYS 
-# Mon, 12 Mar 2018 22:30:44 GMT
+# Tue, 29 May 2018 22:49:34 GMT
 RUN set -ex;   apk add --no-cache --virtual .build-deps     ca-certificates     gnupg     openssl     tar   ;     wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     apk del .build-deps;     chown -R flink:flink .;
-# Mon, 12 Mar 2018 22:30:44 GMT
+# Tue, 29 May 2018 22:49:35 GMT
 COPY file:dd3a2212d5f0bbe552ac5e863e5fb1df12bcbb32cff887e6f4f3c81e2372b6c1 in / 
-# Mon, 12 Mar 2018 22:30:44 GMT
+# Tue, 29 May 2018 22:49:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 12 Mar 2018 22:30:45 GMT
+# Tue, 29 May 2018 22:49:36 GMT
 EXPOSE 6123/tcp 8081/tcp
-# Mon, 12 Mar 2018 22:30:45 GMT
+# Tue, 29 May 2018 22:49:36 GMT
 CMD ["help"]
 ```
 
@@ -88,23 +88,23 @@ CMD ["help"]
 		Last Modified: Wed, 10 Jan 2018 07:43:12 GMT  
 		Size: 1.3 MB (1308287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74efb09cf4fa3626ebea56d50e77b0aa2a3f2cd74626c0cad568a296e913e179`  
-		Last Modified: Mon, 12 Mar 2018 22:42:29 GMT  
-		Size: 1.2 KB (1205 bytes)  
+	-	`sha256:2a869a37cce55d9280f95d455715d0a499e56590bc6f6543bc159ee77a787e3b`  
+		Last Modified: Tue, 29 May 2018 23:21:04 GMT  
+		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eae8456c4b7464e2e1c58fe1ae7f2bed39ba8528233a0ef5d3fc8a7fd99a9709`  
-		Last Modified: Mon, 12 Mar 2018 22:42:29 GMT  
+	-	`sha256:ee51fc1057bdb951b7ae46fc1bbeed0ededc4196d0df3c942e56529120d7656e`  
+		Last Modified: Tue, 29 May 2018 23:21:03 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eabdcdc166021b31c2753da615c349e0d6b8270ae255934b5fd02eb905aad0be`  
-		Last Modified: Mon, 12 Mar 2018 22:42:29 GMT  
-		Size: 59.3 KB (59337 bytes)  
+	-	`sha256:1319d38efb1f7d2defa0bb7c84e232522f8deff6f794057009e27ba4a4e78a8c`  
+		Last Modified: Tue, 29 May 2018 23:21:03 GMT  
+		Size: 59.3 KB (59338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28615e4d69a97a2ec2264871e39788aba942232ad96cd3cd81b35d78350b857d`  
-		Last Modified: Mon, 12 Mar 2018 22:42:45 GMT  
-		Size: 215.0 MB (214955053 bytes)  
+	-	`sha256:0fdb05f769eadb7f8210500dd90f396274bab0e0ddbcd942211062efb9d89023`  
+		Last Modified: Tue, 29 May 2018 23:21:28 GMT  
+		Size: 291.6 MB (291637392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4de8c57821d2b47ca4cf00f1ae46ab3be8f2fd221d370af464d2ef265f6f48f3`  
-		Last Modified: Mon, 12 Mar 2018 22:42:29 GMT  
-		Size: 1.1 KB (1117 bytes)  
+	-	`sha256:9a39017f78db5f345e8280b5fde79b6f1114c5b418d05507ce5d5f2e94154bd3`  
+		Last Modified: Tue, 29 May 2018 23:21:04 GMT  
+		Size: 1.1 KB (1118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
