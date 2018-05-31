@@ -1,7 +1,7 @@
 ## `clojure:tools-deps`
 
 ```console
-$ docker pull clojure@sha256:4c7bb9c40054faf6f9f4b99b6ae47748f71884839de76a76131380dd60092e3b
+$ docker pull clojure@sha256:aa1fc809cf1818831cceb521e8f45da59826d18acab5607ef1cd202b1c5a030f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -425,14 +425,14 @@ RUN clojure -e "(clojure-version)"
 ### `clojure:tools-deps` - linux; 386
 
 ```console
-$ docker pull clojure@sha256:5cf875f3823a190e5538244ee82e9c9df35992817619441702dbea2c3f1c7367
+$ docker pull clojure@sha256:70dcf34789c30a89fffdc8a05cc11fc74c0f7325d400ec81326e861428183680
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.6 MB (269589940 bytes)**  
+-	Total Size: **269.6 MB (269590648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7de1a4071e4f7e2c21c648bbf439db8896005ead624cbcf2c7b7f617ff0af004`
+-	Image ID: `sha256:244915073ac5b5c884306ebee43132e55a9a3bf6b52e3ce43d81c3751da3b5e2`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -446,35 +446,35 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Sat, 05 May 2018 11:07:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 13:21:59 GMT
+# Thu, 31 May 2018 06:03:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 05 May 2018 13:21:59 GMT
+# Thu, 31 May 2018 06:03:02 GMT
 ENV LANG=C.UTF-8
-# Sat, 05 May 2018 13:22:00 GMT
+# Thu, 31 May 2018 06:03:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 05 May 2018 13:22:00 GMT
+# Thu, 31 May 2018 06:03:03 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 05 May 2018 13:22:00 GMT
+# Thu, 31 May 2018 06:03:04 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 05 May 2018 13:22:01 GMT
+# Thu, 31 May 2018 06:03:04 GMT
 ENV JAVA_VERSION=8u171
-# Sat, 05 May 2018 13:22:01 GMT
+# Thu, 31 May 2018 06:03:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-# Sat, 05 May 2018 13:22:01 GMT
+# Thu, 31 May 2018 06:03:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Tue, 15 May 2018 11:39:27 GMT
+# Thu, 31 May 2018 06:04:01 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 15 May 2018 11:39:29 GMT
+# Thu, 31 May 2018 06:04:03 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 15 May 2018 13:18:20 GMT
+# Thu, 31 May 2018 10:46:26 GMT
 LABEL maintainer=Kirill Chernyshov <delaguardo@gmail.com>
-# Tue, 15 May 2018 13:18:20 GMT
+# Thu, 31 May 2018 10:46:26 GMT
 ENV CLOJURE_VERSION=1.9.0.375
-# Tue, 15 May 2018 13:18:20 GMT
+# Thu, 31 May 2018 10:46:27 GMT
 WORKDIR /tmp
-# Tue, 15 May 2018 13:18:22 GMT
+# Thu, 31 May 2018 10:46:32 GMT
 RUN wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh     && chmod +x linux-install-$CLOJURE_VERSION.sh     && ./linux-install-$CLOJURE_VERSION.sh
-# Tue, 15 May 2018 13:18:28 GMT
+# Thu, 31 May 2018 10:46:39 GMT
 RUN clojure -e "(clojure-version)"
 ```
 
@@ -495,33 +495,33 @@ RUN clojure -e "(clojure-version)"
 		Last Modified: Sat, 05 May 2018 11:40:43 GMT  
 		Size: 51.6 MB (51554057 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c73c3f41ff89acfb3c754b128bbef083614c69b98d854ff9516b73e3d60f19`  
-		Last Modified: Sat, 05 May 2018 13:45:02 GMT  
-		Size: 900.1 KB (900067 bytes)  
+	-	`sha256:8b9bc20752007c190b59e37b78f73481b437b6045f9a191ea471b55ba58dcc60`  
+		Last Modified: Thu, 31 May 2018 06:41:43 GMT  
+		Size: 900.1 KB (900087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c237d1c179a1e888bca57623514704a7021e1f112394345cbc71d30f8bce6ce9`  
-		Last Modified: Sat, 05 May 2018 13:45:02 GMT  
-		Size: 248.0 B  
+	-	`sha256:6cb5484f9ff8011b0db3335a41461b1b4ff08bb269786a5b9de00ecd24aa8e63`  
+		Last Modified: Thu, 31 May 2018 06:41:43 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:915a66a3aad8071041f85c2aeb8fc305872236c3a87afabd341e73cf254f97e1`  
-		Last Modified: Sat, 05 May 2018 13:45:02 GMT  
+	-	`sha256:e271c75cc8c5c270780d95ff275ab61ed9749112100c23687d3007782b922c0e`  
+		Last Modified: Thu, 31 May 2018 06:41:43 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b24ef60a567cb5fa284fa4b1196737fe1c18b7a7a1810511c8afd93259517990`  
-		Last Modified: Tue, 15 May 2018 12:17:31 GMT  
-		Size: 134.0 MB (134030401 bytes)  
+	-	`sha256:b7771575128aea3904929c3902a99aab8de52c3e75ee3cca7ba44999488658a5`  
+		Last Modified: Thu, 31 May 2018 06:42:29 GMT  
+		Size: 134.0 MB (134031176 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eccac42f1e79dbb16d86256590b009bf58506365e99cbd39583b07d5b1bb12bf`  
-		Last Modified: Tue, 15 May 2018 12:16:54 GMT  
-		Size: 272.1 KB (272147 bytes)  
+	-	`sha256:5234e8f9ac646db156f25e8b7e8cb3603c72a22349dedacc6ace7ae267b39f9d`  
+		Last Modified: Thu, 31 May 2018 06:41:42 GMT  
+		Size: 272.1 KB (272086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f39b64b3c6d38f680cf0979b1341f89db110890365fc95fd4010a7d4f614874f`  
-		Last Modified: Tue, 15 May 2018 13:19:48 GMT  
-		Size: 17.6 MB (17557967 bytes)  
+	-	`sha256:2183f5daca2ec3779bcbf7857bd74c5682d90849b806f9803010c1c1128919b0`  
+		Last Modified: Thu, 31 May 2018 10:48:05 GMT  
+		Size: 17.6 MB (17557948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46fab59a95f262c0d308962c365869888e245a50dd9712ff2c287bc3229ef776`  
-		Last Modified: Tue, 15 May 2018 13:19:47 GMT  
-		Size: 3.9 MB (3891359 bytes)  
+	-	`sha256:f5ef79ac70a2071381c9ee4378849c6e2a3b71bbd8a76828f15ab29a814d3590`  
+		Last Modified: Thu, 31 May 2018 10:47:59 GMT  
+		Size: 3.9 MB (3891351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:tools-deps` - linux; ppc64le
