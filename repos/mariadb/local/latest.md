@@ -1,9 +1,9 @@
-# `mariadb:10.2.15`
+# `mariadb:10.3.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:447a2850813951279d08d8de17bdea3a11a5fbd0b029894c71abcee971d5ac14`
-- Created: `2018-05-23T21:43:27.569596276Z`
+- Image ID: `sha256:4828ff028cad88245f06a5b8b1cb2161b87611181a04285c017983d98032a9ca`
+- Created: `2018-05-25T20:20:36.24713453Z`
 - Virtual Size: ~ 401.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
-  - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.15+maria~jessie`
+  - `MARIADB_MAJOR=10.3`
+  - `MARIADB_VERSION=1:10.3.7+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2680,27 +2680,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lvm2/2.02.111-2.2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.2=10.2.15+maria~jessie`
+### `dpkg` source package: `mariadb-10.3=1:10.3.7+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.15+maria~jessie`
-- `libmysqlclient18=10.2.15+maria~jessie`
-- `mariadb-client-10.2=10.2.15+maria~jessie`
-- `mariadb-client-core-10.2=10.2.15+maria~jessie`
-- `mariadb-common=10.2.15+maria~jessie`
-- `mariadb-server=10.2.15+maria~jessie`
-- `mariadb-server-10.2=10.2.15+maria~jessie`
-- `mariadb-server-core-10.2=10.2.15+maria~jessie`
-- `mysql-common=10.2.15+maria~jessie`
+- `libmariadb3=1:10.3.7+maria~jessie`
+- `libmysqlclient18=1:10.3.7+maria~jessie`
+- `mariadb-client-10.3=1:10.3.7+maria~jessie`
+- `mariadb-client-core-10.3=1:10.3.7+maria~jessie`
+- `mariadb-common=1:10.3.7+maria~jessie`
+- `mariadb-server=1:10.3.7+maria~jessie`
+- `mariadb-server-10.3=1:10.3.7+maria~jessie`
+- `mariadb-server-core-10.3=1:10.3.7+maria~jessie`
+- `mysql-common=1:10.3.7+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.7+maria~jessie
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.7+maria~jessie.dsc' mariadb-10.3_10.3.7+maria~jessie.dsc 3506 SHA256:a6b28e438e53d9f86e79f2a28cb69b0e1867f11638d13a0f596c866fa036f89b
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/debian/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.7+maria~jessie.tar.xz' mariadb-10.3_10.3.7+maria~jessie.tar.xz 46551360 SHA256:3b1bf2ca8fa909d967dc0a8d1c76335710808fd5d134e3a9afc45a8058fdcc00
+```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
