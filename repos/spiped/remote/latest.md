@@ -1,7 +1,7 @@
 ## `spiped:latest`
 
 ```console
-$ docker pull spiped@sha256:e973d0024b0606149749ba89fedee908a2840750bf0a6afcbd2de732ef781007
+$ docker pull spiped@sha256:6e30c640e3221639cd25c415a6fa0abffbe796128d61ee529022604b8c6b1b61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -293,14 +293,14 @@ CMD ["spiped"]
 ### `spiped:latest` - linux; 386
 
 ```console
-$ docker pull spiped@sha256:4ab057b3d820a906e36bca28439c2130d2a89bab82fbc446b13a90e83b9ac159
+$ docker pull spiped@sha256:bff4ae66fc9b18b3b85b9b87104f01662be7df119746017b8bb0d2bb4cd97af0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.3 MB (34316602 bytes)**  
+-	Total Size: **34.3 MB (34317030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:588592fead0bfd36e91dbaa82dade4c8fe6e8ee5609ebe6de13104672805351a`
+-	Image ID: `sha256:112967011fa50d41112860cbd1e3af6358068822eedeb083680be4b8c74888d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
@@ -309,27 +309,27 @@ $ docker pull spiped@sha256:4ab057b3d820a906e36bca28439c2130d2a89bab82fbc446b13a
 ADD file:9e45c98885c63b1f77e50324055758088ca38203260e2305cca24b13fbeb23cf in / 
 # Sat, 28 Apr 2018 10:41:49 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 17:25:51 GMT
+# Fri, 01 Jun 2018 15:50:58 GMT
 RUN groupadd -r spiped &&	useradd -r -g spiped spiped
-# Sat, 28 Apr 2018 17:25:57 GMT
+# Fri, 01 Jun 2018 15:51:05 GMT
 RUN DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y libssl1.1 --no-install-recommends &&	rm -rf /var/lib/apt/lists/*
-# Sat, 28 Apr 2018 17:25:57 GMT
+# Fri, 01 Jun 2018 15:51:06 GMT
 ENV SPIPED_VERSION=1.6.0
-# Sat, 28 Apr 2018 17:25:57 GMT
+# Fri, 01 Jun 2018 15:51:06 GMT
 ENV SPIPED_DOWNLOAD_URL=https://www.tarsnap.com/spiped/spiped-1.6.0.tgz
-# Sat, 28 Apr 2018 17:25:58 GMT
+# Fri, 01 Jun 2018 15:51:06 GMT
 ENV SPIPED_DOWNLOAD_SHA256=e6f7f8f912172c3ad55638af8346ae7c4ecaa92aed6d3fb60f2bda4359cba1e4
-# Sat, 28 Apr 2018 17:26:25 GMT
+# Fri, 01 Jun 2018 15:51:58 GMT
 RUN DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='libssl-dev libc-dev gcc make curl ca-certificates' &&	apt-get update && apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "$SPIPED_DOWNLOAD_URL" -o spiped.tar.gz &&	echo "$SPIPED_DOWNLOAD_SHA256 spiped.tar.gz" |sha256sum -c - &&	mkdir -p /usr/local/src/spiped &&	tar xzf "spiped.tar.gz" -C /usr/local/src/spiped --strip-components=1 &&	rm "spiped.tar.gz" &&	make -C /usr/local/src/spiped &&	make -C /usr/local/src/spiped install &&	rm -rf /usr/local/src/spiped &&	apt-get purge -y --auto-remove $buildDeps
-# Sat, 28 Apr 2018 17:26:26 GMT
+# Fri, 01 Jun 2018 15:51:58 GMT
 VOLUME [/spiped]
-# Sat, 28 Apr 2018 17:26:26 GMT
+# Fri, 01 Jun 2018 15:51:58 GMT
 WORKDIR /spiped
-# Sat, 28 Apr 2018 17:26:26 GMT
+# Fri, 01 Jun 2018 15:51:59 GMT
 COPY multi:cece67136bcb3e9eb15d965c7f2f0aa1577fa83acbd640e2016eb71cc01e0cfa in /usr/local/bin/ 
-# Sat, 28 Apr 2018 17:26:26 GMT
+# Fri, 01 Jun 2018 15:52:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 28 Apr 2018 17:26:27 GMT
+# Fri, 01 Jun 2018 15:52:02 GMT
 CMD ["spiped"]
 ```
 
@@ -338,24 +338,24 @@ CMD ["spiped"]
 		Last Modified: Sat, 28 Apr 2018 10:49:34 GMT  
 		Size: 23.1 MB (23138515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2877f245e7a65ce67343c53c187ba3c8de63a8329da7ac07250c4ceb35fa51c`  
-		Last Modified: Sat, 28 Apr 2018 17:26:58 GMT  
-		Size: 1.7 KB (1734 bytes)  
+	-	`sha256:be13eed6a5b7d9aca57e2e418cc9aa93d3c59fdd268d374e14f6763fc2b71666`  
+		Last Modified: Fri, 01 Jun 2018 15:52:48 GMT  
+		Size: 1.7 KB (1737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31f1c5a48f7bc82970f4dc07a3b7f99f4e6af713c416d368737307feb1796828`  
-		Last Modified: Sat, 28 Apr 2018 17:26:58 GMT  
-		Size: 1.9 MB (1874187 bytes)  
+	-	`sha256:d476f970fcaa57c8cbbe27ed846d4ead97b9c08d1da9c7265f653b5f3903bcc8`  
+		Last Modified: Fri, 01 Jun 2018 15:52:49 GMT  
+		Size: 1.9 MB (1874196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:695e8bc4124adb17e6615ea95eb028053bc62eb660142d4264bbf6d78a8e9b9e`  
-		Last Modified: Sat, 28 Apr 2018 17:27:00 GMT  
-		Size: 9.3 MB (9301722 bytes)  
+	-	`sha256:1abcba21b5a66d5646242afc4daddf7fcea63918081c37cbe028c4c14929f228`  
+		Last Modified: Fri, 01 Jun 2018 15:52:54 GMT  
+		Size: 9.3 MB (9302138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4829c759f70c85891075a0c809e58578aa56e48b0f4b2e1bad8d19a47b16bee8`  
-		Last Modified: Sat, 28 Apr 2018 17:26:58 GMT  
+	-	`sha256:13d53bcd12447a2a3405b5b6b54ce2da6b88e670ae01df7acc9ce18e7e7636e6`  
+		Last Modified: Fri, 01 Jun 2018 15:52:48 GMT  
 		Size: 95.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:820ee3353315d5708f872db4307977c3208ebdf2d7f2f37e46e2ce6f84f417c0`  
-		Last Modified: Sat, 28 Apr 2018 17:26:58 GMT  
+	-	`sha256:382f4e61a9152896965c64824ad3e591cd520695f9e732914ffef05a077ee044`  
+		Last Modified: Fri, 01 Jun 2018 15:52:48 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
