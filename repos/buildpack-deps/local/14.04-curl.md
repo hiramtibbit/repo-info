@@ -923,13 +923,9 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.10
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.dsc' initramfs-tools_0.103ubuntu4.10.dsc 1204 SHA256:a0307f3a5b8141a9e593b6554feff7d3db32b6fe43aee708b9fe2b922ec07f40
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.tar.xz' initramfs-tools_0.103ubuntu4.10.tar.xz 94700 SHA256:bff96166f409f5a793972f058fff1626caee0a88aacde32bdf8b5ac523f0e8cd
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 

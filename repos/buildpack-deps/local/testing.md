@@ -1294,20 +1294,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.17.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.17.0-1.dsc' git_2.17.0-1.dsc 2888 SHA256:4e8aa01f6c204178deab920b04aecaa2ce44fdfa711c54d7c4d434f83ca14df5
-'http://deb.debian.org/debian/pool/main/g/git/git_2.17.0.orig.tar.xz' git_2.17.0.orig.tar.xz 5011556 SHA256:e916e5e95e81dbeafa7aac5d719c01108b5c814eb90b746695afa1afedf955c7
-'http://deb.debian.org/debian/pool/main/g/git/git_2.17.0-1.debian.tar.xz' git_2.17.0-1.debian.tar.xz 567240 SHA256:2810a3ab87d6b91bb4256ceddcdf806c92308e6fa95a67715578dbd43460c99c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.17.0-1/
 
-- https://sources.debian.net/src/git/1:2.17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.17.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.56.1-2`
 
@@ -3214,20 +3207,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-5
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-5.dsc' libxslt_1.1.29-5.dsc 2403 SHA256:bdf606db536cce4bb3318f12379220b6af65fb8837cea58780ce20a4163a157e
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-5.debian.tar.xz' libxslt_1.1.29-5.debian.tar.xz 34484 SHA256:1d6d404ed3b045a5f833ec824768270db1dfd1822e3ddaa6f4d69adf1abbfffa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.29-5/
 
-- https://sources.debian.net/src/libxslt/1.1.29-5/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.29-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.29-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
@@ -4736,20 +4722,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=238-4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.dsc' systemd_238-4.dsc 4846 SHA256:ce4d11ac2f1a1d4c0e06f031420bea2338eb39182a6cec78d90e53a6f599e792
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238.orig.tar.gz' systemd_238.orig.tar.gz 6954022 SHA256:bbc8599bab2e3c4273886dfab12464e488ecdaf20b8284949e50f8858de3e022
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_238-4.debian.tar.xz' systemd_238-4.debian.tar.xz 139840 SHA256:fd0353528020e4739b68fd7f68aca88df9fcd78cc78cd10e3d187b745a514846
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/238-4/
 
-- https://sources.debian.net/src/systemd/238-4/ (for browsing the source)
-- https://sources.debian.net/src/systemd/238-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/238-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
