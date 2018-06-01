@@ -1,10 +1,10 @@
-# `rust:1.26.0-slim-jessie`
+# `rust:1.26.1-slim-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5e8fde638f8d68ad11e3c737ae7dd26f1a7bbdfa925250021de25a0bd6cc91b`
-- Created: `2018-05-11T18:43:28.956126833Z`
-- Virtual Size: ~ 937.64 Mb  
+- Image ID: `sha256:4f274ccc7fcfe5947a2911a4df8aff8d92d36f8d42969e320517dee9d6d32953`
+- Created: `2018-05-29T23:43:48.140902254Z`
+- Virtual Size: ~ 937.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.26.0`
+  - `RUST_VERSION=1.26.1`
 
 ## `dpkg` (`.deb`-based packages)
 
