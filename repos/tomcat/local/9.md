@@ -2858,20 +2858,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.20.1-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.20.1-1.dsc' libpsl_0.20.1-1.dsc 1635 SHA256:1e64af62fb8909b2e3d5b922b3d5dab8f42a26f9248bdfc11ef2e3ed96086c10
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.20.1.orig.tar.gz' libpsl_0.20.1.orig.tar.gz 8578922 SHA256:6ce1e8550587a5ff61e8172d859942e01f35022ec6634c58b02b8a3b47f042ee
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.20.1-1.debian.tar.xz' libpsl_0.20.1-1.debian.tar.xz 10688 SHA256:0abaac11f9fe7d08a43592b0e0a6aa626a1d7994a8cbd75b3482823e7cebcf70
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.20.1-1/
 
-- https://sources.debian.net/src/libpsl/0.20.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.20.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.20.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `librest=0.8.0-2`
 
@@ -3004,20 +2997,13 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.7-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.7-1.dsc' libsepol_2.7-1.dsc 1814 SHA256:7de809477acd60d256eca160d5fc6986e5e65227706b1cdb23f8139bb49d2782
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.7.orig.tar.gz' libsepol_2.7.orig.tar.gz 471147 SHA256:d69d3bd8ec901a3bd5adf2be2fb47fb1a685ed73066ab482e7e505371a48f9e7
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.7-1.debian.tar.xz' libsepol_2.7-1.debian.tar.xz 13944 SHA256:56b1c2b0e492b2089f23a0d7a95a260377a0e3adefc60e90c0ff6eff6be08450
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsepol/2.7-1/
 
-- https://sources.debian.net/src/libsepol/2.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libsepol/2.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsepol/2.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsm=2:1.2.2-1`
 
