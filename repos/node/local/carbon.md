@@ -1,4 +1,4 @@
-# `node:8.11.2`
+# `node:8.11.2-jessie`
 
 ## Docker Metadata
 

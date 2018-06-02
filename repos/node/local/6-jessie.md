@@ -1,17 +1,17 @@
-# `node:10.2.1`
+# `node:6.14.2-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:19cf4eb75395bfae86794b5228d0a3e6434bf696e6bc334911d4296155a8eb2f`
-- Created: `2018-05-25T17:20:09.353025705Z`
-- Virtual Size: ~ 675.03 Mb  
+- Image ID: `sha256:507095110431cabae1eb65d57108f53532e6b62e992c5c1170490a9a399dc880`
+- Created: `2018-05-24T20:08:16.283680443Z`
+- Virtual Size: ~ 659.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.2.1`
-  - `YARN_VERSION=1.7.0`
+  - `NODE_VERSION=6.14.2`
+  - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
 
