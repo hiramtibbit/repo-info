@@ -13,6 +13,7 @@
 -	[`centos:7.2.1511`](#centos721511)
 -	[`centos:7.3.1611`](#centos731611)
 -	[`centos:7.4.1708`](#centos741708)
+-	[`centos:7.5.1804`](#centos751804)
 -	[`centos:centos6`](#centoscentos6)
 -	[`centos:centos6.6`](#centoscentos66)
 -	[`centos:centos6.7`](#centoscentos67)
@@ -24,6 +25,7 @@
 -	[`centos:centos7.2.1511`](#centoscentos721511)
 -	[`centos:centos7.3.1611`](#centoscentos731611)
 -	[`centos:centos7.4.1708`](#centoscentos741708)
+-	[`centos:centos7.5.1804`](#centoscentos751804)
 -	[`centos:latest`](#centoslatest)
 
 ## `centos:6`
@@ -597,6 +599,10 @@ CMD ["/bin/bash"]
 		Size: 73.4 MB (73359152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `centos:7.5.1804`
+
+**does not exist** (yet?)
+
 ## `centos:centos6`
 
 ```console
@@ -1167,6 +1173,10 @@ CMD ["/bin/bash"]
 		Last Modified: Thu, 14 Sep 2017 15:14:38 GMT  
 		Size: 73.4 MB (73359152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `centos:centos7.5.1804`
+
+**does not exist** (yet?)
 
 ## `centos:latest`
 
