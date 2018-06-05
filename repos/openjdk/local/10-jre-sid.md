@@ -4965,6 +4965,10 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/wayland/1.15.0-1/
+
 
 ### `dpkg` source package: `wget=1.19.4-1`
 
