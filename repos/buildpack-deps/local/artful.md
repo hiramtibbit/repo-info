@@ -3691,9 +3691,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.6=9.6.8-0ubuntu0.17.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8-0ubuntu0.17.10.dsc' postgresql-9.6_9.6.8-0ubuntu0.17.10.dsc 3778 SHA256:aab4d1d1a26ed549e3d23228a2d4c9f227f5ba2b70f3572d047307116fcaaac9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8.orig.tar.gz' postgresql-9.6_9.6.8.orig.tar.gz 25580796 SHA256:7a87d98cb34bbb14f10fa572730e61f75cebc438edf7af46ce4a553d994e9573
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8-0ubuntu0.17.10.debian.tar.xz' postgresql-9.6_9.6.8-0ubuntu0.17.10.debian.tar.xz 22580 SHA256:e2bf32d07a678a507177b793ca129467d7a063903404df1df87e37a25925549a
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8-0ubuntu0.17.10.dsc' postgresql-9.6_9.6.8-0ubuntu0.17.10.dsc 3778 SHA256:aab4d1d1a26ed549e3d23228a2d4c9f227f5ba2b70f3572d047307116fcaaac9
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8.orig.tar.gz' postgresql-9.6_9.6.8.orig.tar.gz 25580796 SHA256:7a87d98cb34bbb14f10fa572730e61f75cebc438edf7af46ce4a553d994e9573
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.8-0ubuntu0.17.10.debian.tar.xz' postgresql-9.6_9.6.8-0ubuntu0.17.10.debian.tar.xz 22580 SHA256:e2bf32d07a678a507177b793ca129467d7a063903404df1df87e37a25925549a
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
@@ -4059,14 +4059,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=234-2ubuntu12.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.3.dsc' systemd_234-2ubuntu12.3.dsc 4565 SHA256:912d50df5930aacfe927feaaf40468c4cc2ec064ea86a0db9db0f57a004bc9b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.3.debian.tar.xz' systemd_234-2ubuntu12.3.debian.tar.xz 151496 SHA256:dca4b3fb844e8c484e4a637ac055c5ae764c1d1e4f2e25e925f7aee7b9118fe5
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

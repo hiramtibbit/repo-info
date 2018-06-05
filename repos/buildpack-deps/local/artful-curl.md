@@ -1525,14 +1525,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=234-2ubuntu12.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.3.dsc' systemd_234-2ubuntu12.3.dsc 4565 SHA256:912d50df5930aacfe927feaaf40468c4cc2ec064ea86a0db9db0f57a004bc9b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.3.debian.tar.xz' systemd_234-2ubuntu12.3.debian.tar.xz 151496 SHA256:dca4b3fb844e8c484e4a637ac055c5ae764c1d1e4f2e25e925f7aee7b9118fe5
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
