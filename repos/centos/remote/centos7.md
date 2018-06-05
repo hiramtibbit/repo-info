@@ -1,7 +1,7 @@
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:444362224027fe3c90add5e13802a4f49e4935f74f39fd887fe25f4484575025
+$ docker pull centos@sha256:b67d21dfe609ddacf404589e04631d90a342921e81c40aeaf3391f6717fa5322
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -99,29 +99,29 @@ CMD ["/bin/bash"]
 ### `centos:centos7` - linux; 386
 
 ```console
-$ docker pull centos@sha256:eca35a3757df970e23db13dec7367de9fcffa96ebf17865a6a91c1b44377af1a
+$ docker pull centos@sha256:da003c507cec3532d1fbb1d417a683408dfb1a1a7a899792730f0d1d2a2e0dff
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.6 MB (73601530 bytes)**  
+-	Total Size: **75.6 MB (75631476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65714568ac197af769f51fe97b8e34ec3d5ce2dd2b6a4d63aed19a828dfcaf54`
+-	Image ID: `sha256:1797d705c2b656b61935fe07ab00c82e3e8f15ea59c2cf82697ac628b312d1a5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 13 Apr 2018 20:25:30 GMT
-ADD file:b121c2aaef8af861eadeb1471032825cb9464c4b6cb3f0747df0e8297a0a6bf1 in / 
-# Fri, 13 Apr 2018 20:25:31 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180403
-# Fri, 13 Apr 2018 20:25:31 GMT
+# Tue, 05 Jun 2018 19:14:57 GMT
+ADD file:c3240db15687584b61bb6a0ca0e4a8174ceafcbf8acac5c3deb4a6021ebdeffc in / 
+# Tue, 05 Jun 2018 19:14:57 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180602
+# Tue, 05 Jun 2018 19:14:58 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:443b12714f8a5cc36e7ead31b263ee20ce3d5b8287592b11eb7bc086389d8eb4`  
-		Last Modified: Fri, 13 Apr 2018 20:26:20 GMT  
-		Size: 73.6 MB (73601530 bytes)  
+	-	`sha256:e2cc4faeb7e4eb5a43fdbd2bdf35dec9e9d1c27c2a979d54d44a4aed12f7ac22`  
+		Last Modified: Tue, 05 Jun 2018 19:16:11 GMT  
+		Size: 75.6 MB (75631476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:centos7` - linux; ppc64le
