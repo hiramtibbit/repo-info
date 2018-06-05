@@ -1,4 +1,4 @@
-# `centos:latest`
+# `centos:centos7.5.1804`
 
 ## Docker Metadata
 
