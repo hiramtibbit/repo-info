@@ -6000,9 +6000,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.3=9.3.22-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.22-0ubuntu0.14.04.dsc 3450 SHA256:1d977aa9d83f66c40ede80f60f91bfafbe8d1342b627bf86bf4f54c9cccecf22
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22.orig.tar.gz' postgresql-9.3_9.3.22.orig.tar.gz 22285798 SHA256:e5f6623fd533c8ae98321d9fb9a70c495615df29244efb496d6b30bf38654aea
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.22-0ubuntu0.14.04.debian.tar.gz 34734 SHA256:083475956553b22908c52cc6a8197988d1220ccdf4607d9e871ec7b05b2b91d2
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.22-0ubuntu0.14.04.dsc 3450 SHA256:1d977aa9d83f66c40ede80f60f91bfafbe8d1342b627bf86bf4f54c9cccecf22
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22.orig.tar.gz' postgresql-9.3_9.3.22.orig.tar.gz 22285798 SHA256:e5f6623fd533c8ae98321d9fb9a70c495615df29244efb496d6b30bf38654aea
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.22-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.22-0ubuntu0.14.04.debian.tar.gz 34734 SHA256:083475956553b22908c52cc6a8197988d1220ccdf4607d9e871ec7b05b2b91d2
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
