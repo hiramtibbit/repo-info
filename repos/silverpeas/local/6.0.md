@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7667afff7474db8e1fff74deab681c433f4eea9b13437541f8707dfe9afc76e2`
-- Created: `2018-04-28T14:32:38.84401694Z`
+- Image ID: `sha256:38030017a0223dcf46a4015741281d2b518ce3b60c5611a424d163b30824b111`
+- Created: `2018-06-05T22:45:57.630219558Z`
 - Virtual Size: ~ 1.50 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -416,11 +416,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-11build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz 15240 SHA256:646168058a9a41b20a392fe20f7a2a88caaa1a42fc3e002635c33f0cf129ed0f
 ```
 
-### `dpkg` source package: `cups-filters=1.8.3-2ubuntu3.1`
+### `dpkg` source package: `cups-filters=1.8.3-2ubuntu3.4`
 
 Binary Packages:
 
-- `libcupsfilters1:amd64=1.8.3-2ubuntu3.1`
+- `libcupsfilters1:amd64=1.8.3-2ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 
@@ -434,9 +434,14 @@ Licenses: (parsed from: `/usr/share/doc/libcupsfilters1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups-filters=1.8.3-2ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.4.dsc' cups-filters_1.8.3-2ubuntu3.4.dsc 2997 SHA256:6a3b822ed02982367c3cdfa6d78c5add9c6d8d1f2b31594431424bb66b4bdf6f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3.orig.tar.xz' cups-filters_1.8.3.orig.tar.xz 1373028 SHA256:e1e786f1fbcd3a203d87ebb4106a0ba8d579953cbe22056d12d4ee8143f5341a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.4.debian.tar.xz' cups-filters_1.8.3-2ubuntu3.4.debian.tar.xz 70892 SHA256:691f49bdb488afcbe2fe44c2bf9c5ccd70f01636dd2e3ccd44e7eb223aa49bbc
+```
 
 ### `dpkg` source package: `cups=2.1.3-4ubuntu0.4`
 
@@ -650,11 +655,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.13-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.13-1ubuntu1.debian.tar.xz' e2fsprogs_1.42.13-1ubuntu1.debian.tar.xz 69196 SHA256:90326bf4bd93d01fbd9dc73803cc58c8d98ff67e1469e4cbbe672169aa048220
 ```
 
-### `dpkg` source package: `elfutils=0.165-3ubuntu1`
+### `dpkg` source package: `elfutils=0.165-3ubuntu1.1`
 
 Binary Packages:
 
-- `libelf1:amd64=0.165-3ubuntu1`
+- `libelf1:amd64=0.165-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
@@ -663,10 +668,10 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris elfutils=0.165-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.dsc' elfutils_0.165-3ubuntu1.dsc 2292 SHA256:e1d4274343e279100fe8f60509f0d260d41eb0f293d1ddd36e492c7da04d1ff4
+$ apt-get source -qq --print-uris elfutils=0.165-3ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.dsc' elfutils_0.165-3ubuntu1.1.dsc 2379 SHA256:7a5fdcf2a4787423435f40cbfc5c98978f55faab530a4eec2f00913af8103ec9
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165.orig.tar.bz2' elfutils_0.165.orig.tar.bz2 6481128 SHA256:a7fc9277192caaa5f30b47e8c0518dbcfd8c4a19c6493a63d511d804290ce972
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.debian.tar.xz' elfutils_0.165-3ubuntu1.debian.tar.xz 41368 SHA256:4c12d2e335b1b33cb66bc4a5a98e829632667361480ac7e067b80a40f31099a6
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.1.debian.tar.xz' elfutils_0.165-3ubuntu1.1.debian.tar.xz 45776 SHA256:d4b0840dab750dc258d09c4b37d8ab1180d1ef818e617d641897660de004d648
 ```
 
 ### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.3`
@@ -998,13 +1003,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz 19120 SHA256:94d51d3f3a7fe11e0a939637ddb40bdfcc126d7deb09bc7ab9b600f41f4aae81
 ```
 
-### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.7`
+### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.8`
 
 Binary Packages:
 
-- `ghostscript=9.18~dfsg~0-0ubuntu2.7`
-- `libgs9:amd64=9.18~dfsg~0-0ubuntu2.7`
-- `libgs9-common=9.18~dfsg~0-0ubuntu2.7`
+- `ghostscript=9.18~dfsg~0-0ubuntu2.8`
+- `libgs9:amd64=9.18~dfsg~0-0ubuntu2.8`
+- `libgs9-common=9.18~dfsg~0-0ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1045,9 +1050,14 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `icclib`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ghostscript=9.18~dfsg~0-0ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.8.dsc' ghostscript_9.18~dfsg~0-0ubuntu2.8.dsc 2889 SHA256:30914ec8e6ec69a37064df72f95c056fe206ce1160747cc941f651af4782bd0f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0.orig.tar.bz2' ghostscript_9.18~dfsg~0.orig.tar.bz2 18274376 SHA256:b39e5d163e37e4c78b67380ada922c09ad65879f82e2322d1efbbf4ad1d7b814
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.8.debian.tar.xz' ghostscript_9.18~dfsg~0-0ubuntu2.8.debian.tar.xz 113348 SHA256:220eac18420a7f9fe68876931e1b83a1fe16e80f4f507d8c6161acc63fa31d10
+```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -3785,14 +3795,14 @@ $ apt-get source -qq --print-uris openexr=2.2.0-10ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-10ubuntu2.debian.tar.xz' openexr_2.2.0-10ubuntu2.debian.tar.xz 31344 SHA256:69ce99ec15dc21e76c688d59f02cb540a3075f7b65704bcca7fd7c7e059afa99
 ```
 
-### `dpkg` source package: `openjdk-8=8u162-b12-0ubuntu0.16.04.2`
+### `dpkg` source package: `openjdk-8=8u171-b11-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u162-b12-0ubuntu0.16.04.2`
-- `openjdk-8-jdk-headless:amd64=8u162-b12-0ubuntu0.16.04.2`
-- `openjdk-8-jre:amd64=8u162-b12-0ubuntu0.16.04.2`
-- `openjdk-8-jre-headless:amd64=8u162-b12-0ubuntu0.16.04.2`
+- `openjdk-8-jdk:amd64=8u171-b11-0ubuntu0.16.04.1`
+- `openjdk-8-jdk-headless:amd64=8u171-b11-0ubuntu0.16.04.1`
+- `openjdk-8-jre:amd64=8u171-b11-0ubuntu0.16.04.1`
+- `openjdk-8-jre-headless:amd64=8u171-b11-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -3801,9 +3811,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-8=8u171-b11-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11-0ubuntu0.16.04.1.dsc' openjdk-8_8u171-b11-0ubuntu0.16.04.1.dsc 4724 SHA256:70e6352f3767dfb3802766832afaa256114befbcec03d18a13326ca0254b8759
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11.orig.tar.xz' openjdk-8_8u171-b11.orig.tar.xz 70323856 SHA256:bf948503de9ea2f39fb9f5c24755a1437616d4412b06f2e18963842a016ec79d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz 251288 SHA256:a1aeb7d0375a6dca95af9c761386bc4a3b1c8c4bdb01cf0185deaf194a5ba434
+```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
@@ -4079,12 +4094,12 @@ $ apt-get source -qq --print-uris poppler-data=0.4.7-7
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.7-7.debian.tar.xz' poppler-data_0.4.7-7.debian.tar.xz 9004 SHA256:98add8235ea1d8cf58b3828a5f19fd47016cbd72f137b7448076ecaded568274
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.3`
-- `procps=2:3.3.10-4ubuntu2.3`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.4`
+- `procps=2:3.3.10-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -4095,15 +4110,20 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.dsc' procps_3.3.10-4ubuntu2.4.dsc 2243 SHA256:f7f14b0b818e21ad1f1f4be7fdedbd375b9c19b7f3ecf92a94f3bc4a1a625f5f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.debian.tar.xz' procps_3.3.10-4ubuntu2.4.debian.tar.xz 44376 SHA256:99854cab3c75853ec70cdda95d09fc22ee431c828e16dcdb9a0feaf65a3f74d1
+```
 
-### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.9`
+### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.10`
 
 Binary Packages:
 
-- `libpulse0:amd64=1:8.0-0ubuntu3.9`
+- `libpulse0:amd64=1:8.0-0ubuntu3.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 
@@ -4114,9 +4134,14 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.10.dsc' pulseaudio_8.0-0ubuntu3.10.dsc 3636 SHA256:e6a14bd9e178bfcbca1e0ab3e60094565527735d099d2ef7a8f2bddb3a42f4b5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.10.debian.tar.xz' pulseaudio_8.0-0ubuntu3.10.debian.tar.xz 151208 SHA256:eedb80db434a98bca95c04f38d22844cbd61c5bac3f0a136bbb72af0e8fa8b68
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
@@ -4676,20 +4701,25 @@ $ apt-get source -qq --print-uris wavpack=4.75.2-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.1.debian.tar.xz' wavpack_4.75.2-2ubuntu0.1.debian.tar.xz 6372 SHA256:a9c25c003ef321523a66b6c467a419bf9db772886654110ad94763ed039991a1
 ```
 
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.3`
+### `dpkg` source package: `wget=1.17.1-1ubuntu1.4`
 
 Binary Packages:
 
-- `wget=1.17.1-1ubuntu1.3`
+- `wget=1.17.1-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.dsc' wget_1.17.1-1ubuntu1.4.dsc 1935 SHA256:c2a5ba4d1bb1675f49b64f9c6662787235b03aa362c1ba47d23ca9e9e3781a1d
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.debian.tar.xz' wget_1.17.1-1ubuntu1.4.debian.tar.xz 28640 SHA256:c2c6105db48ba75296871fa42b4197f1cfb3c4e7ec80e419835f58073f7794f0
+```
 
 ### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.2`
 
