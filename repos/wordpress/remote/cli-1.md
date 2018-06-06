@@ -1,7 +1,7 @@
 ## `wordpress:cli-1`
 
 ```console
-$ docker pull wordpress@sha256:efc0229d7acf2b63f43b09dfeef8b2dc36696cae756091b679f644af72d21464
+$ docker pull wordpress@sha256:2d97a12c647f1cd417b4eb09bb8f3d5930d02bdf23e5ae2cafdfd6e1bd920b9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull wordpress@sha256:efc0229d7acf2b63f43b09dfeef8b2dc36696cae756091b67
 ### `wordpress:cli-1` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:216b01c694320410ae437db264fb7c62a3b51b1126a43edea0dbb5ed738c4c66
+$ docker pull wordpress@sha256:289772ffd16b91f9f6a9f80ce39a4329f9855bf15a293338d570510d656046a5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.5 MB (37503619 bytes)**  
+-	Total Size: **37.5 MB (37507274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0332e299ea05b2325a9439a78fc820c796ee34742009200734c0ea07597db40f`
+-	Image ID: `sha256:30830f0db29a2b193b28ff2714f42aee5b45b483ca8bdeeadf738507a8f1b73f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
@@ -81,21 +81,21 @@ RUN set -ex; 	mkdir -p /var/www/html; 	chown -R www-data:www-data /var/www/html
 WORKDIR /var/www/html
 # Sat, 26 May 2018 00:01:30 GMT
 VOLUME [/var/www/html]
-# Sat, 26 May 2018 00:01:30 GMT
-ENV WORDPRESS_CLI_GPG_KEY=3B9191625F3B1F1BF5DD3B47673A02042F6B6B7F
-# Sat, 26 May 2018 00:01:30 GMT
+# Wed, 06 Jun 2018 20:04:54 GMT
+ENV WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
+# Wed, 06 Jun 2018 20:04:55 GMT
 ENV WORDPRESS_CLI_VERSION=1.5.1
-# Sat, 26 May 2018 00:01:30 GMT
-ENV WORDPRESS_CLI_SHA512=8693cdbc06cca37be9976c4f76aa81c111095f88bb121277cbdfa85f8a2ada3b9133cd9641c439e6f5579d3469a1a44488e872ecbff3d3eba0488bbc8033d6d8
-# Sat, 26 May 2018 00:01:36 GMT
+# Wed, 06 Jun 2018 20:04:55 GMT
+ENV WORDPRESS_CLI_SHA512=8dd68c98c6fa00e1acc5e036f9393c8b052937045b5232e4aa0eb4f15773908eae48760607bc853a4f951bd5ba69e5050337e5d9dcfa48df87a12cebb1de3432
+# Wed, 06 Jun 2018 20:05:01 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
-# Sat, 26 May 2018 00:01:36 GMT
+# Wed, 06 Jun 2018 20:05:02 GMT
 COPY file:6439ebdee069987b41eac0b67f3829c60f8dc168426dc92872b5e95a5f4d8213 in /usr/local/bin/ 
-# Sat, 26 May 2018 00:01:36 GMT
+# Wed, 06 Jun 2018 20:05:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 26 May 2018 00:01:36 GMT
+# Wed, 06 Jun 2018 20:05:02 GMT
 USER [www-data]
-# Sat, 26 May 2018 00:01:37 GMT
+# Wed, 06 Jun 2018 20:05:03 GMT
 CMD ["wp" "shell"]
 ```
 
@@ -152,13 +152,13 @@ CMD ["wp" "shell"]
 		Last Modified: Sat, 26 May 2018 00:22:18 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16a60c59919297fb97ec5168b3b6aaeb320dfaf6104e73798b9bf93d7d1e11b1`  
-		Last Modified: Sat, 26 May 2018 00:22:18 GMT  
-		Size: 1.1 MB (1079937 bytes)  
+	-	`sha256:58c15ed554dd859302a04f7c878aa64da3ead3f5e4496189b36052bd8301f05a`  
+		Last Modified: Wed, 06 Jun 2018 20:07:55 GMT  
+		Size: 1.1 MB (1083591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a937c363ef9a26318acd011a59fbd638b54fcba902abdef4fa3174103bbe5787`  
-		Last Modified: Sat, 26 May 2018 00:22:17 GMT  
-		Size: 415.0 B  
+	-	`sha256:0cefd96be3484bc5b1e8d3026f819c538d74dacf8845a553d6c08e2a849d481d`  
+		Last Modified: Wed, 06 Jun 2018 20:07:55 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:cli-1` - linux; arm variant v6

@@ -1,7 +1,7 @@
 ## `wordpress:cli-1.5-php7.0`
 
 ```console
-$ docker pull wordpress@sha256:6f08c448f15a24711df99e7c122cbb7c60f473a7bc8097b293dbe1c63c17f607
+$ docker pull wordpress@sha256:28e017a69ba15b5f4d0f674be8a3eadf32e9286f7f624c0a66a9c89317883064
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull wordpress@sha256:6f08c448f15a24711df99e7c122cbb7c60f473a7bc8097b29
 ### `wordpress:cli-1.5-php7.0` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:a59d4eec3b9585b6e09e9f046bc27be468d4f1e2076158e3fa6124b0e270b662
+$ docker pull wordpress@sha256:38c3f7cc3da11b4fc79f6122e0b051e66d3945f08c2009958fc7f47dd5ec1cca
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.1 MB (36118055 bytes)**  
+-	Total Size: **36.1 MB (36121885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:824fde8d5d556113f77e4d40e07630730c81ac4f2e6d2e2965615665e459edc5`
+-	Image ID: `sha256:30f821c39e36d6d1d922e8fe63117e7cadf8f1d3dc89547cb01a4c5e333412a3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
@@ -78,21 +78,21 @@ RUN set -ex; 	mkdir -p /var/www/html; 	chown -R www-data:www-data /var/www/html
 WORKDIR /var/www/html
 # Fri, 25 May 2018 23:50:59 GMT
 VOLUME [/var/www/html]
-# Fri, 25 May 2018 23:50:59 GMT
-ENV WORDPRESS_CLI_GPG_KEY=3B9191625F3B1F1BF5DD3B47673A02042F6B6B7F
-# Fri, 25 May 2018 23:50:59 GMT
+# Wed, 06 Jun 2018 20:04:20 GMT
+ENV WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
+# Wed, 06 Jun 2018 20:04:20 GMT
 ENV WORDPRESS_CLI_VERSION=1.5.1
-# Fri, 25 May 2018 23:50:59 GMT
-ENV WORDPRESS_CLI_SHA512=8693cdbc06cca37be9976c4f76aa81c111095f88bb121277cbdfa85f8a2ada3b9133cd9641c439e6f5579d3469a1a44488e872ecbff3d3eba0488bbc8033d6d8
-# Fri, 25 May 2018 23:51:05 GMT
+# Wed, 06 Jun 2018 20:04:20 GMT
+ENV WORDPRESS_CLI_SHA512=8dd68c98c6fa00e1acc5e036f9393c8b052937045b5232e4aa0eb4f15773908eae48760607bc853a4f951bd5ba69e5050337e5d9dcfa48df87a12cebb1de3432
+# Wed, 06 Jun 2018 20:04:27 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
-# Fri, 25 May 2018 23:51:05 GMT
+# Wed, 06 Jun 2018 20:04:27 GMT
 COPY file:6439ebdee069987b41eac0b67f3829c60f8dc168426dc92872b5e95a5f4d8213 in /usr/local/bin/ 
-# Fri, 25 May 2018 23:51:06 GMT
+# Wed, 06 Jun 2018 20:04:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 25 May 2018 23:51:06 GMT
+# Wed, 06 Jun 2018 20:04:28 GMT
 USER [www-data]
-# Fri, 25 May 2018 23:51:06 GMT
+# Wed, 06 Jun 2018 20:04:28 GMT
 CMD ["wp" "shell"]
 ```
 
@@ -145,13 +145,13 @@ CMD ["wp" "shell"]
 		Last Modified: Sat, 26 May 2018 00:20:54 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3769f0a64862ed6766979f0d1ee7c40796c869272f2d753c20c7aeace463c642`  
-		Last Modified: Sat, 26 May 2018 00:20:54 GMT  
-		Size: 1.1 MB (1079610 bytes)  
+	-	`sha256:79df8eedc15fbeb555b405ecd5476382956ae7a32461df1c797cf67239348229`  
+		Last Modified: Wed, 06 Jun 2018 20:06:24 GMT  
+		Size: 1.1 MB (1083441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e14dee313e07b9e0f82ed9a5bfd715b05bc9d99b5ce7908b67f953f91af88acf`  
-		Last Modified: Sat, 26 May 2018 00:20:54 GMT  
-		Size: 416.0 B  
+	-	`sha256:e8c31f2b484b37790880e707689fac7130c643f84de3109bf74d0a8d73a60456`  
+		Last Modified: Wed, 06 Jun 2018 20:06:24 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:cli-1.5-php7.0` - linux; arm64 variant v8
