@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c2549a2ec2898dfdac8b840b9f63994ebdcc64f0ca07d266a49ea9bbeca7fe8`
-- Created: `2018-05-24T22:46:26.683267208Z`
-- Virtual Size: ~ 205.25 Mb  
+- Image ID: `sha256:6a1d1feed622fb4942e9a6d085c1de89945b89ab81e4cd7c70d014a940c329e4`
+- Created: `2018-06-07T00:39:13.318203555Z`
+- Virtual Size: ~ 205.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
