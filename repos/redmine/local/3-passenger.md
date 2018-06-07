@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:732c17d340a02a227532bf3f240fc7a17cbaebbb174cbe6e8dca1eac5bf4aac2`
-- Created: `2018-05-25T22:48:25.564747327Z`
-- Virtual Size: ~ 695.18 Mb  
+- Image ID: `sha256:f03cfc40e2c7209461e43b5480d7ce9fd6c4731f249c418c52bae4d7ee1f0356`
+- Created: `2018-06-07T00:23:00.758681013Z`
+- Virtual Size: ~ 695.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -996,12 +996,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-13.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.1.4-2.1+deb8u5`
+### `dpkg` source package: `git=1:2.1.4-2.1+deb8u6`
 
 Binary Packages:
 
-- `git=1:2.1.4-2.1+deb8u5`
-- `git-man=1:2.1.4-2.1+deb8u5`
+- `git=1:2.1.4-2.1+deb8u6`
+- `git-man=1:2.1.4-2.1+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1027,17 +1027,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u5
-'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u5.dsc' git_2.1.4-2.1+deb8u5.dsc 2803 SHA256:98a91bae8bf614cba4049cb47da1fa76d0639748d431d9241c6a269e5147216f
-'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
-'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u5.debian.tar.xz' git_2.1.4-2.1+deb8u5.debian.tar.xz 481960 SHA256:c3d39c895fdda768f9bc49ffe39e576b493ad92af81814136074fdc08349642b
+$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4-2.1+deb8u6.dsc' git_2.1.4-2.1+deb8u6.dsc 2846 SHA256:15400085501045140f322a3ce5579015a911571014d59cafd95f0bf982b0fc64
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4-2.1+deb8u6.debian.tar.xz' git_2.1.4-2.1+deb8u6.debian.tar.xz 512872 SHA256:782cb4ff810ca086d228711a1e3f0b5d743d9ba5dc7c221cb2bb596d1dd75c40
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.42.1-1`
 
@@ -2347,11 +2347,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.51-3+deb8u1`
+### `dpkg` source package: `linux=3.16.56-1+deb8u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.51-3+deb8u1`
+- `linux-libc-dev:amd64=3.16.56-1+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2362,17 +2362,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.51-3+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.51-3+deb8u1.dsc' linux_3.16.51-3+deb8u1.dsc 140609 SHA256:b9b5ed8337d2f352ab1ca521b4fcecf04d11ef6476b3639ef3db5249120e2b51
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.51.orig.tar.xz' linux_3.16.51.orig.tar.xz 81841624 SHA256:302253096f6f15696e3bd72359852e1a7a2488431d203fd6bc89372c35d1d7dc
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.51-3+deb8u1.debian.tar.xz' linux_3.16.51-3+deb8u1.debian.tar.xz 1202000 SHA256:c7e8e50786a437c32824f5dd9a5d60c674f351929b76e397d663d1b5ec645017
+$ apt-get source -qq --print-uris linux=3.16.56-1+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56-1+deb8u1.dsc' linux_3.16.56-1+deb8u1.dsc 140677 SHA256:ab00d6d4d59323e9c7d616d0d2b6a0000f295be792c3f7796cb96d3cb6f09e4d
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56.orig.tar.xz' linux_3.16.56.orig.tar.xz 81885080 SHA256:e1bde0867495ce859568b2cad613203491c080c94fae05d67a03a05697f099aa
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.56-1+deb8u1.debian.tar.xz' linux_3.16.56-1+deb8u1.debian.tar.xz 2439544 SHA256:43528c1eddf22e1920f86f4898d8b1122adc139a2836eaa838246536c38c3bfa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.51-3+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.51-3+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.51-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.56-1+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.56-1+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.56-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -2845,9 +2845,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libprocps3:amd64=2:3.3.9-9`
-- `procps=2:3.3.9-9`
 
-Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/procps/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
@@ -2866,6 +2865,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.9-9/ (for browsing the source)
 - https://sources.debian.net/src/procps/2:3.3.9-9/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.9-9/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
+
+Binary Packages:
+
+- `procps=2:3.3.9-9+deb8u1`
+
+Licenses: (parsed from: `/usr/share/doc/procps/copyright`)
+
+- `GPL-2`
+- `LGPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.9-9+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.9-9+deb8u1.dsc' procps_3.3.9-9+deb8u1.dsc 2249 SHA256:1137afe6cd82a3f2f70402f6091c9f7a4898c6da9dcf4b89c39cb315e5432d16
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.9-9+deb8u1.debian.tar.xz' procps_3.3.9-9+deb8u1.debian.tar.xz 41180 SHA256:41aeb4ebb60ebad15e9c30fb736ee15b4a5d8045c39d3ecf31e8b1237752bc28
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.9-9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-defaults=2.7.9-1`
 
