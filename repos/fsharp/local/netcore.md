@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2a556e38786def3aa662c334cfeb7fc8b3d56fb71426287ea57b1545da9f9e7`
-- Created: `2018-05-05T04:54:02.798035461Z`
+- Image ID: `sha256:95f41fa966fc655b516da87e68e707cce85a82c53255990bb995e491b776bf84`
+- Created: `2018-06-06T00:48:27.062196008Z`
 - Virtual Size: ~ 1.98 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -411,13 +411,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u5`
+### `dpkg` source package: `curl=7.52.1-5+deb9u6`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u5`
-- `libcurl3:amd64=7.52.1-5+deb9u5`
-- `libcurl3-gnutls:amd64=7.52.1-5+deb9u5`
+- `curl=7.52.1-5+deb9u6`
+- `libcurl3:amd64=7.52.1-5+deb9u6`
+- `libcurl3-gnutls:amd64=7.52.1-5+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -428,13 +428,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.dsc' curl_7.52.1-5+deb9u6.dsc 2793 SHA256:463a6ac7cb310890ae03c904ec31f85616cf05bd56c74d1d9b981da38bfab616
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.debian.tar.xz' curl_7.52.1-5+deb9u6.debian.tar.xz 40420 SHA256:df3786154af6f98fa3623272a1756355218fd686603259b441b3a4ae24d7a942
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
