@@ -1,10 +1,10 @@
-# `percona:5.7.21`
+# `percona:5.7.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:145a31e8326239d5b1c6debb8b3c343c083857c6dbd35ee5f304840a75d1d9e8`
-- Created: `2018-04-30T17:31:31.032510923Z`
-- Virtual Size: ~ 399.10 Mb  
+- Image ID: `sha256:94a2cf0efaba5abc41bdf1435849055985dc84fca6c18aedb65ad637902e2ec5`
+- Created: `2018-06-06T18:38:44.13808276Z`
+- Virtual Size: ~ 399.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
-  - `PERCONA_VERSION=5.7.21-21-3.jessie`
+  - `PERCONA_VERSION=5.7.22-22-1.jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -378,12 +378,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u10`
+### `dpkg` source package: `curl=7.38.0-4+deb8u11`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u10`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u10`
+- `libcurl3:amd64=7.38.0-4+deb8u11`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u11`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -392,13 +392,20 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u11
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u11.dsc' curl_7.38.0-4+deb8u11.dsc 2673 SHA256:52f88587caf333557b592424535e4659fc509888cb503264c4c865b10dc2ec35
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u11.debian.tar.xz' curl_7.38.0-4+deb8u11.debian.tar.xz 47596 SHA256:f8fe0c27d9a8a42365db8e09cdd7d76a3824fc31ece4b4e317ba0274f4f018f8
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2828,13 +2835,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `percona-server-5.7=5.7.21-21-3.jessie`
+### `dpkg` source package: `percona-server-5.7=5.7.22-22-1.jessie`
 
 Binary Packages:
 
-- `percona-server-client-5.7=5.7.21-21-3.jessie`
-- `percona-server-common-5.7=5.7.21-21-3.jessie`
-- `percona-server-server-5.7=5.7.21-21-3.jessie`
+- `percona-server-client-5.7=5.7.22-22-1.jessie`
+- `percona-server-common-5.7=5.7.22-22-1.jessie`
+- `percona-server-server-5.7=5.7.22-22-1.jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
