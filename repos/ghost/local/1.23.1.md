@@ -1,10 +1,10 @@
-# `ghost:1.23.0`
+# `ghost:1.23.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d828b9543a28c6d45e8108d059906f554fe2278587019826ef3327cc98d6f03`
-- Created: `2018-05-30T18:21:08.242916942Z`
-- Virtual Size: ~ 572.93 Mb  
+- Image ID: `sha256:c6f1e45f18fef077f41c85ad5c71f1c8f1458d3830fba3e1661556ebfe6e35a3`
+- Created: `2018-06-07T00:24:48.625149523Z`
+- Virtual Size: ~ 573.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,10 +15,10 @@
   - `YARN_VERSION=1.6.0`
   - `GOSU_VERSION=1.10`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.8.0`
+  - `GHOST_CLI_VERSION=1.8.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=1.23.0`
+  - `GHOST_VERSION=1.23.1`
 
 ## `dpkg` (`.deb`-based packages)
 
