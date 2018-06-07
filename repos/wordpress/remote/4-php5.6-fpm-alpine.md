@@ -1,7 +1,7 @@
 ## `wordpress:4-php5.6-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:d0ebc8015aa7c42ebbb7820ffe84d881668501ba7f060f1b5f87042d4cb73fdc
+$ docker pull wordpress@sha256:49ff80da54ed140c3f420ee4f4e79ef02a635bb63e753f4713274d9bb565cd8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull wordpress@sha256:d0ebc8015aa7c42ebbb7820ffe84d881668501ba7f060f1b5
 ### `wordpress:4-php5.6-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:4c00f4ab9b16b7aa5a57497c756ae59158de6474fdccbe9b317f61d034a49163
+$ docker pull wordpress@sha256:57df4932aa81622004fa85fa2093312c347459cfe05d310ccf81ea785cc01ad4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 MB (37634127 bytes)**  
+-	Total Size: **37.6 MB (37634144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d27f528afec5282180dc3705e2cbe4040f8d88c575df105185554a558ac81c33`
+-	Image ID: `sha256:108f19897cd0a2b28dec21c1f8feb6ceaace552cd4ad576d3bf8ba8129148832`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -74,25 +74,25 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Wed, 06 Jun 2018 21:55:17 GMT
 CMD ["php-fpm"]
-# Wed, 06 Jun 2018 23:02:39 GMT
+# Thu, 07 Jun 2018 03:16:08 GMT
 RUN apk add --no-cache 		bash 		sed
-# Wed, 06 Jun 2018 23:03:22 GMT
+# Thu, 07 Jun 2018 03:17:55 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		libjpeg-turbo-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache zip; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .wordpress-phpexts-rundeps $runDeps; 	apk del .build-deps
-# Wed, 06 Jun 2018 23:03:23 GMT
+# Thu, 07 Jun 2018 03:17:55 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Wed, 06 Jun 2018 23:03:23 GMT
+# Thu, 07 Jun 2018 03:17:56 GMT
 VOLUME [/var/www/html]
-# Wed, 06 Jun 2018 23:03:23 GMT
+# Thu, 07 Jun 2018 03:17:56 GMT
 ENV WORDPRESS_VERSION=4.9.6
-# Wed, 06 Jun 2018 23:03:24 GMT
+# Thu, 07 Jun 2018 03:17:56 GMT
 ENV WORDPRESS_SHA1=40616b40d120c97205e5852c03096115c2fca537
-# Wed, 06 Jun 2018 23:03:26 GMT
+# Thu, 07 Jun 2018 03:18:00 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Wed, 06 Jun 2018 23:03:26 GMT
+# Thu, 07 Jun 2018 03:18:00 GMT
 COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
-# Wed, 06 Jun 2018 23:03:27 GMT
+# Thu, 07 Jun 2018 03:18:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 06 Jun 2018 23:03:27 GMT
+# Thu, 07 Jun 2018 03:18:01 GMT
 CMD ["php-fpm"]
 ```
 
@@ -137,25 +137,25 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 06 Jun 2018 22:30:55 GMT  
 		Size: 7.7 KB (7694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15d0044568c1c6074f0395b8304e756b659b1ee8e084b5497098e7f67df33c21`  
-		Last Modified: Wed, 06 Jun 2018 23:38:16 GMT  
-		Size: 769.8 KB (769793 bytes)  
+	-	`sha256:9de929ea6f3ef3225952c1be67994f7a14ef4bf33a4caaa7427528a9696ac844`  
+		Last Modified: Thu, 07 Jun 2018 03:50:47 GMT  
+		Size: 769.8 KB (769807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fb647ffea70847d28cee7dfcecf0cb12252a6eb10c352c6e343eefc8f2b0c6e`  
-		Last Modified: Wed, 06 Jun 2018 23:38:15 GMT  
-		Size: 788.8 KB (788750 bytes)  
+	-	`sha256:ee251b8f8b9561586dc62454f012adc3ab85c720cc88f2fb1f5e6de40b71ecd1`  
+		Last Modified: Thu, 07 Jun 2018 03:50:47 GMT  
+		Size: 788.8 KB (788754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:344a9ad37c65f4a7c019b3af9826e7be13913d0eb6f4b904e99a50f6aa72494e`  
-		Last Modified: Wed, 06 Jun 2018 23:38:15 GMT  
+	-	`sha256:4bc45ba1953532216a00a6ee1770d192a242c703d74b582c276e08bd436da93d`  
+		Last Modified: Thu, 07 Jun 2018 03:50:46 GMT  
 		Size: 339.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7b9dd4a2c6aeb61636824476760ee0a7bada52385acf5a06d9e623131b9b47e`  
-		Last Modified: Wed, 06 Jun 2018 23:38:19 GMT  
-		Size: 8.6 MB (8600448 bytes)  
+	-	`sha256:4ae1646a3a26563c3d63f7e63956b8db8c72e21a5a4b20af16af523233eaea6a`  
+		Last Modified: Thu, 07 Jun 2018 03:50:50 GMT  
+		Size: 8.6 MB (8600446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fff87568285ebf17f0a645035ef329390515c4aca7c1d43219de7ad9f982f69e`  
-		Last Modified: Wed, 06 Jun 2018 23:38:15 GMT  
-		Size: 3.3 KB (3347 bytes)  
+	-	`sha256:55b73f403c34c730e6512c028b3c82b2581cb43dff57ab4e1619086d38a0d584`  
+		Last Modified: Thu, 07 Jun 2018 03:50:47 GMT  
+		Size: 3.3 KB (3348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:4-php5.6-fpm-alpine` - linux; arm64 variant v8
