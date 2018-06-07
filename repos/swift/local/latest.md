@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8dc956c3315f89e4c8fd3856306cadd520275e99df1e439cca9797fb7066708`
-- Created: `2018-04-28T10:59:24.712767909Z`
+- Image ID: `sha256:8349369b3899c572aa3c6e09c7dee7ede428e65509ca7a7179fac48e095bd685`
+- Created: `2018-06-05T21:46:10.114902659Z`
 - Virtual Size: ~ 1.35 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -370,14 +370,14 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.7`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.8`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.7`
-- `libcurl3:amd64=7.47.0-1ubuntu2.7`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.7`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.7`
+- `curl=7.47.0-1ubuntu2.8`
+- `libcurl3:amd64=7.47.0-1ubuntu2.8`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.8`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -388,9 +388,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.8.dsc' curl_7.47.0-1ubuntu2.8.dsc 2697 SHA256:2506462266cc02e4126e45243db3a274520b5e102a7b02e13e9b01e11efd9e45
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.8.debian.tar.xz' curl_7.47.0-1ubuntu2.8.debian.tar.xz 51544 SHA256:500f1809b987bbeb6e30113e95692823f3a190b0a32b18a47f79500da1bbf113
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -776,14 +781,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.3.dsc' git_2.7.4-0ubuntu1.3.dsc 2883 SHA256:5eb38a0856e2e059e4444958367f2428f2737895aa887e751ca94b4792b701da
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.3.debian.tar.xz' git_2.7.4-0ubuntu1.3.debian.tar.xz 510072 SHA256:52c820eae29877651bfb540852c005030a533c4fd5810d7e99e269e1fb500973
-```
 
 ### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
 
@@ -1006,20 +1006,24 @@ $ apt-get source -qq --print-uris icu=55.1-7ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.4.debian.tar.xz' icu_55.1-7ubuntu0.4.debian.tar.xz 31856 SHA256:dbdafcb148992e087b8495855421f515c90a7c40d3286b5d861a5afa9fcc562e
 ```
 
-### `dpkg` source package: `ifupdown=0.8.10ubuntu1.3`
+### `dpkg` source package: `ifupdown=0.8.10ubuntu1.4`
 
 Binary Packages:
 
-- `ifupdown=0.8.10ubuntu1.3`
+- `ifupdown=0.8.10ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ifupdown=0.8.10ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.4.dsc' ifupdown_0.8.10ubuntu1.4.dsc 1669 SHA256:c92af82c4f45dd1db5c4d292e241a3258d2224d3b7462dd17fe9e0976156b634
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.8.10ubuntu1.4.tar.xz' ifupdown_0.8.10ubuntu1.4.tar.xz 80520 SHA256:b1d907e49750e8ca78f62e44f2dd797c0984337fab8ec87057ef544911947848
+```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
@@ -1837,20 +1841,25 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-122.146`
+### `dpkg` source package: `linux=4.4.0-127.153`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-122.146`
+- `linux-libc-dev:amd64=4.4.0-127.153`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-127.153
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-127.153.dsc' linux_4.4.0-127.153.dsc 9712 SHA256:9e93c9874368c40d6f5dc803acd07196378284a560b1bbf7a71aca3c58d87de3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-127.153.diff.gz' linux_4.4.0-127.153.diff.gz 14429200 SHA256:a5dd9bfa5632335a514179070c3fc9a35ea417d491279639905417edf48142f1
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
 
@@ -2184,9 +2193,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.dsc' openldap_2.4.42+dfsg-2ubuntu3.2.dsc 3040 SHA256:f22b2a2b83f6b656ef96ca6b25a125399c123908cfaa9f1f503115fffa536ae7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.dsc' openldap_2.4.42+dfsg-2ubuntu3.2.dsc 3040 SHA256:f22b2a2b83f6b656ef96ca6b25a125399c123908cfaa9f1f503115fffa536ae7
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
 ```
 
 ### `dpkg` source package: `openssh=1:7.2p2-4ubuntu2.4`
@@ -2400,12 +2409,12 @@ $ apt-get source -qq --print-uris popt=1.16-10
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-10.debian.tar.xz' popt_1.16-10.debian.tar.xz 14136 SHA256:8300cbb47148f59fc6edc2f8ebe227a319b080ed26d17db846d1e346f0614899
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.3`
-- `procps=2:3.3.10-4ubuntu2.3`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.4`
+- `procps=2:3.3.10-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -2416,9 +2425,14 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.dsc' procps_3.3.10-4ubuntu2.4.dsc 2243 SHA256:f7f14b0b818e21ad1f1f4be7fdedbd375b9c19b7f3ecf92a94f3bc4a1a625f5f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.debian.tar.xz' procps_3.3.10-4ubuntu2.4.debian.tar.xz 44376 SHA256:99854cab3c75853ec70cdda95d09fc22ee431c828e16dcdb9a0feaf65a3f74d1
+```
 
 ### `dpkg` source package: `python-defaults=2.7.12-1~16.04`
 
