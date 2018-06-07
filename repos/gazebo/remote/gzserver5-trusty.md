@@ -1,7 +1,7 @@
 ## `gazebo:gzserver5-trusty`
 
 ```console
-$ docker pull gazebo@sha256:2b3537f797bbbcccc1e25b3b249ac84f0568a49cbfaaf12eb9993388f6b34aab
+$ docker pull gazebo@sha256:ad4d2830da9cacd3e272c817058b1f92526a6c1070ace2f3891e79092442c1cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gazebo@sha256:2b3537f797bbbcccc1e25b3b249ac84f0568a49cbfaaf12eb999
 ### `gazebo:gzserver5-trusty` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:7a44005e39e0cbd3421be2084ebba307d60d5498904cf122b495b872a31317cc
+$ docker pull gazebo@sha256:d119795beac3e52ee19900b4ac7b5fb614fbeaca4aa719205ecf528d31ee5937
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.5 MB (240518846 bytes)**  
+-	Total Size: **248.2 MB (248229808 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1d99808fddb76b86bd0ddb33dac872d07478a0bdd1f2a1a752e6dea81a33916`
+-	Image ID: `sha256:5b2a6101497cc214f96c077d6baace388ce0070570fca925b88d733f34636f3a`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -35,19 +35,21 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Tue, 05 Jun 2018 21:21:36 GMT
 CMD ["/bin/bash"]
-# Tue, 05 Jun 2018 21:46:21 GMT
+# Thu, 07 Jun 2018 00:40:29 GMT
+RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
+# Thu, 07 Jun 2018 00:40:30 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Tue, 05 Jun 2018 21:46:22 GMT
-RUN . /etc/os-release     && . /etc/lsb-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 05 Jun 2018 21:57:21 GMT
+# Thu, 07 Jun 2018 00:40:31 GMT
+RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
+# Thu, 07 Jun 2018 00:55:32 GMT
 RUN apt-get update && apt-get install -q -y     gazebo5=5.4.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 05 Jun 2018 21:57:21 GMT
+# Thu, 07 Jun 2018 00:55:32 GMT
 EXPOSE 11345/tcp
-# Tue, 05 Jun 2018 21:57:21 GMT
+# Thu, 07 Jun 2018 00:55:32 GMT
 COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
-# Tue, 05 Jun 2018 21:57:22 GMT
+# Thu, 07 Jun 2018 00:55:33 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 05 Jun 2018 21:57:22 GMT
+# Thu, 07 Jun 2018 00:55:33 GMT
 CMD ["gzserver"]
 ```
 
@@ -72,19 +74,23 @@ CMD ["gzserver"]
 		Last Modified: Tue, 05 Jun 2018 21:24:12 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:078255bd6a98655d0d07d538278ecb0c8ee0b2263bd481718c9cd47d99d692ab`  
-		Last Modified: Tue, 05 Jun 2018 22:35:32 GMT  
-		Size: 13.1 KB (13111 bytes)  
+	-	`sha256:342f68d1854242d3a38b15b6c82427debe3c8d9567c94d48131e23ae4b40c76a`  
+		Last Modified: Thu, 07 Jun 2018 01:33:36 GMT  
+		Size: 18.0 MB (18032877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:566c8f8bc9a093fd212dace676d99069dc799c49382f3253c6bc8cde2578faa0`  
-		Last Modified: Tue, 05 Jun 2018 22:35:32 GMT  
-		Size: 238.0 B  
+	-	`sha256:b0b92babf3dc363ea1253f92517d3cde0993eef7d6f10bb6b15a572b67e7c241`  
+		Last Modified: Thu, 07 Jun 2018 01:33:31 GMT  
+		Size: 13.1 KB (13108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c77a4b1397ae2eb597a0590f4697588beff4d7ffb9e082e6a249a8b1ea5750b`  
-		Last Modified: Tue, 05 Jun 2018 22:40:53 GMT  
-		Size: 167.3 MB (167268546 bytes)  
+	-	`sha256:141c1f4a3ecf8e12db7d117516aa823940ac3a41d2483e4c966388acd36acb78`  
+		Last Modified: Thu, 07 Jun 2018 01:33:31 GMT  
+		Size: 260.4 KB (260378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:662a326c29937ed853cd61d021e6cf18910ab6c7e9157d2010b7a99b8e9844ff`  
-		Last Modified: Tue, 05 Jun 2018 22:40:25 GMT  
+	-	`sha256:c7e84820550be8aa4dd05942ac79de0561a5ff5398ba096abde1e9d00460727f`  
+		Last Modified: Thu, 07 Jun 2018 01:36:13 GMT  
+		Size: 156.7 MB (156686494 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f8c7151e57002fc57d93ac8909933c0fce74d7d5eb8e69064ad11980f408856`  
+		Last Modified: Thu, 07 Jun 2018 01:35:50 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
