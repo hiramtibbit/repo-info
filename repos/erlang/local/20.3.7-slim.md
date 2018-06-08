@@ -1,16 +1,16 @@
-# `erlang:20.3.6-slim`
+# `erlang:20.3.7-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a31a50c9ae4a3b07d3ecc5ac4470e526359446100dcabac36e3a77b586817d9`
-- Created: `2018-05-09T19:08:18.432545059Z`
+- Image ID: `sha256:5e92d2c52082aecde9773700cdf377e7cae1e6f974bc11f36f13cc85df89dfff`
+- Created: `2018-06-05T20:22:32.701010615Z`
 - Virtual Size: ~ 257.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.3.6`
+  - `OTP_VERSION=20.3.7`
 
 ## `dpkg` (`.deb`-based packages)
 
