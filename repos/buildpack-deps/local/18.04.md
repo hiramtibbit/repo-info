@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22ba25303cb1cd8f5d63b8d1ea333664b3f02a5617983ac170c95cca074bdd83`
-- Created: `2018-05-04T17:25:35.670497384Z`
-- Virtual Size: ~ 636.05 Mb  
+- Image ID: `sha256:29f4eef4100208697c69e22dfb0a870dca6457c728c3cbe54e36a4dfc6e63e80`
+- Created: `2018-06-05T23:03:22.650205522Z`
+- Virtual Size: ~ 638.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -452,14 +452,14 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.1`
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3`
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3`
-- `libcurl4:amd64=7.58.0-2ubuntu3`
-- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3`
+- `curl=7.58.0-2ubuntu3.1`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.1`
+- `libcurl4:amd64=7.58.0-2ubuntu3.1`
+- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -473,10 +473,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.dsc' curl_7.58.0-2ubuntu3.dsc 2737 SHA256:6a8b36b254f9df77844b7c0267a71a9f0c3beb0085d5591b85bd0a4330cf13d7
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.1.dsc' curl_7.58.0-2ubuntu3.1.dsc 2745 SHA256:bc24bade23185d3357760bf0bf0d5e13ab6510cd9115c48f9ad9a4d387391a35
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.debian.tar.xz' curl_7.58.0-2ubuntu3.debian.tar.xz 34212 SHA256:4b311793187c67c7440f6247a840bf00122b69358c3dfa6dd3f7efc137cbe1ab
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.1.debian.tar.xz' curl_7.58.0-2ubuntu3.1.debian.tar.xz 35240 SHA256:46276fd6b567fec6feed01add6a277b9986032a8a36d45b688a1615fcb4d6fb3
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
@@ -1017,12 +1017,12 @@ $ apt-get source -qq --print-uris geoip=1.6.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.12-1.debian.tar.xz' geoip_1.6.12-1.debian.tar.xz 22308 SHA256:57e8c35fc909a32c624a26f75489adf20be886b663c49a926e328595d286ea6f
 ```
 
-### `dpkg` source package: `git=1:2.17.0-1ubuntu1`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.1`
 
 Binary Packages:
 
-- `git=1:2.17.0-1ubuntu1`
-- `git-man=1:2.17.0-1ubuntu1`
+- `git=1:2.17.1-1ubuntu0.1`
+- `git-man=1:2.17.1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1048,10 +1048,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.17.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.0-1ubuntu1.dsc' git_2.17.0-1ubuntu1.dsc 2976 SHA256:58e3a8e5c9da2215355592c3cdaa5b084673755b8da24238cf679b98e9725071
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.0.orig.tar.xz' git_2.17.0.orig.tar.xz 5011556 SHA256:e916e5e95e81dbeafa7aac5d719c01108b5c814eb90b746695afa1afedf955c7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.0-1ubuntu1.debian.tar.xz' git_2.17.0-1ubuntu1.debian.tar.xz 568080 SHA256:9a54b16e5f88a2a257a9b45df84400295533286a3a58de2af526bc51da9a4460
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.1.dsc' git_2.17.1-1ubuntu0.1.dsc 2959 SHA256:33a33282c0d96516e7c4183df26d5396f0e7c0e92526ee27a1ffcd9ab0e43c73
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.1.debian.tar.xz' git_2.17.1-1ubuntu0.1.debian.tar.xz 568544 SHA256:6f203047bcfcbd006f225b4f3576e53c9b5652de9acf910d6f74c22fbde467f1
 ```
 
 ### `dpkg` source package: `glib2.0=2.56.1-2ubuntu1`
@@ -2625,11 +2625,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz 11124 SHA256:34a1ce5f77815f20941f962019cef0ad6ed0da77179f05609a5c67274485b477
 ```
 
-### `dpkg` source package: `linux=4.15.0-20.21`
+### `dpkg` source package: `linux=4.15.0-22.24`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-20.21`
+- `linux-libc-dev:amd64=4.15.0-22.24`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2638,10 +2638,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.15.0-20.21
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-20.21.dsc' linux_4.15.0-20.21.dsc 7844 SHA256:e33bbee7b3343179251e622862173b26fc16f859b80b74fc217cf2f4b6b93ed8
+$ apt-get source -qq --print-uris linux=4.15.0-22.24
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-22.24.dsc' linux_4.15.0-22.24.dsc 7793 SHA256:56cfeacc446832bcac8985ac478e9619cac6c74c6a82b330abd7cf40551bee1b
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-20.21.diff.gz' linux_4.15.0-20.21.diff.gz 7370272 SHA256:23bb721bea8911be11943e04e45727be82d5d4ea17b5a4c106803e0cf2f3db72
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-22.24.diff.gz' linux_4.15.0-22.24.diff.gz 7381687 SHA256:7f0e4b580283b1094efa008ebc14caee36c0b3aefa52b29e39420031cbf5ebee
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
@@ -2919,12 +2919,6 @@ $ apt-get source -qq --print-uris mysql-defaults=1.0.4
 
 Binary Packages:
 
-- `libncurses5:amd64=6.1-1ubuntu1`
-- `libncurses5-dev:amd64=6.1-1ubuntu1`
-- `libncursesw5:amd64=6.1-1ubuntu1`
-- `libncursesw5-dev:amd64=6.1-1ubuntu1`
-- `libtinfo-dev:amd64=6.1-1ubuntu1`
-- `libtinfo5:amd64=6.1-1ubuntu1`
 - `ncurses-base=6.1-1ubuntu1`
 - `ncurses-bin=6.1-1ubuntu1`
 
@@ -2940,6 +2934,31 @@ $ apt-get source -qq --print-uris ncurses=6.1-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1-1ubuntu1.debian.tar.xz' ncurses_6.1-1ubuntu1.debian.tar.xz 56984 SHA256:e907a284a4ff3b4b6ee449276e114e21b7d357cb4cbb5ee0d883b6870095d56f
+```
+
+### `dpkg` source package: `ncurses=6.1-1ubuntu1.18.04`
+
+Binary Packages:
+
+- `libncurses5:amd64=6.1-1ubuntu1.18.04`
+- `libncurses5-dev:amd64=6.1-1ubuntu1.18.04`
+- `libncursesw5:amd64=6.1-1ubuntu1.18.04`
+- `libncursesw5-dev:amd64=6.1-1ubuntu1.18.04`
+- `libtinfo-dev:amd64=6.1-1ubuntu1.18.04`
+- `libtinfo5:amd64=6.1-1ubuntu1.18.04`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ncurses=6.1-1ubuntu1.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1-1ubuntu1.18.04.dsc' ncurses_6.1-1ubuntu1.18.04.dsc 4702 SHA256:9ff732e257304efa8ab3e5dba1ee85f6a360866466261c6a19f1a5d45b62d8f7
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz' ncurses_6.1.orig.tar.gz 3365395 SHA256:aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1.orig.tar.gz.asc' ncurses_6.1.orig.tar.gz.asc 251 SHA256:47fd6ab5c2b08758f9c372c2bb75f2f0dbcd5cf58ae30b08f791a903da0259a4
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1-1ubuntu1.18.04.debian.tar.xz' ncurses_6.1-1ubuntu1.18.04.debian.tar.xz 57464 SHA256:5f6822a052024372aa181f32dbe689ba3efd47920b5ffd3bae3c57c07f913983
 ```
 
 ### `dpkg` source package: `netbase=5.4`
@@ -3367,12 +3386,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu2.diff.gz' pkg-config_0.29.1-0ubuntu2.diff.gz 12715 SHA256:8d5645ccad7bdbcaf3bd83b1b18c7f7d0e2a813e9813b5d4603aa646fc5ff5ea
 ```
 
-### `dpkg` source package: `postgresql-10=10.3-1`
+### `dpkg` source package: `postgresql-10=10.4-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `libpq-dev=10.3-1`
-- `libpq5:amd64=10.3-1`
+- `libpq-dev=10.4-0ubuntu0.18.04`
+- `libpq5:amd64=10.4-0ubuntu0.18.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3394,18 +3413,18 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-10=10.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.3-1.dsc' postgresql-10_10.3-1.dsc 3474 SHA256:4d1c2d805241ffe873483c66fa531eac1cd785a6dbcfb452e38591abea5d24c7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.3.orig.tar.bz2' postgresql-10_10.3.orig.tar.bz2 19959653 SHA256:6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.3-1.debian.tar.xz' postgresql-10_10.3-1.debian.tar.xz 22800 SHA256:5349970dd7c757b7dfcaec64d39bc457f15afd65f2307c976a3ce868b49c59bd
+$ apt-get source -qq --print-uris postgresql-10=10.4-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4-0ubuntu0.18.04.dsc' postgresql-10_10.4-0ubuntu0.18.04.dsc 3523 SHA256:129815e127635151d0b55d5b94a34381ded696384c91e7eb853467310f0de4c1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4.orig.tar.gz' postgresql-10_10.4.orig.tar.gz 26652442 SHA256:60192bc75cd73e688500e8350ea065cca032e21abe57e72d4f556e0bf84fcf17
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4-0ubuntu0.18.04.debian.tar.xz' postgresql-10_10.4-0ubuntu0.18.04.debian.tar.xz 23052 SHA256:2d2b2035345a783170ea7a8d2fd26b40ceb6f53567c44f50b2734fd431048008
 ```
 
-### `dpkg` source package: `procps=2:3.3.12-3ubuntu1`
+### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-3ubuntu1`
-- `procps=2:3.3.12-3ubuntu1`
+- `libprocps6:amd64=2:3.3.12-3ubuntu1.1`
+- `procps=2:3.3.12-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -3419,10 +3438,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-3ubuntu1.dsc' procps_3.3.12-3ubuntu1.dsc 2253 SHA256:8cff613e6cc960d85f35eddfcb6a57d317a9a42b87609f66b52d146cdba4b39a
+$ apt-get source -qq --print-uris procps=2:3.3.12-3ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-3ubuntu1.1.dsc' procps_3.3.12-3ubuntu1.1.dsc 2265 SHA256:7a6d2a3970943c7fd5019ced8e36f36983bc159c4807b13900b575fa8a1ba5af
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-3ubuntu1.debian.tar.xz' procps_3.3.12-3ubuntu1.debian.tar.xz 31400 SHA256:0776e4a03656f9493565e4ab6030fe7ba6114060986d22cdab6bf422efcb9580
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-3ubuntu1.1.debian.tar.xz' procps_3.3.12-3ubuntu1.1.debian.tar.xz 37388 SHA256:58f388522d4def486730a00107a64b7f0948ee9a6fa6b058c555718d5f339151
 ```
 
 ### `dpkg` source package: `python-defaults=2.7.15~rc1-1`
@@ -3889,19 +3908,19 @@ $ apt-get source -qq --print-uris ucf=3.0038
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038.tar.xz' ucf_3.0038.tar.xz 65416 SHA256:262ccd52637c869ac851838a176d76e90db8d3f12373e3b62eb89e217f93fe7e
 ```
 
-### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3`
+### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.1`
 
 Binary Packages:
 
-- `bsdutils=1:2.31.1-0.4ubuntu3`
-- `fdisk=2.31.1-0.4ubuntu3`
-- `libblkid1:amd64=2.31.1-0.4ubuntu3`
-- `libfdisk1:amd64=2.31.1-0.4ubuntu3`
-- `libmount1:amd64=2.31.1-0.4ubuntu3`
-- `libsmartcols1:amd64=2.31.1-0.4ubuntu3`
-- `libuuid1:amd64=2.31.1-0.4ubuntu3`
-- `mount=2.31.1-0.4ubuntu3`
-- `util-linux=2.31.1-0.4ubuntu3`
+- `bsdutils=1:2.31.1-0.4ubuntu3.1`
+- `fdisk=2.31.1-0.4ubuntu3.1`
+- `libblkid1:amd64=2.31.1-0.4ubuntu3.1`
+- `libfdisk1:amd64=2.31.1-0.4ubuntu3.1`
+- `libmount1:amd64=2.31.1-0.4ubuntu3.1`
+- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.1`
+- `libuuid1:amd64=2.31.1-0.4ubuntu3.1`
+- `mount=2.31.1-0.4ubuntu3.1`
+- `util-linux=2.31.1-0.4ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -3925,17 +3944,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.dsc' util-linux_2.31.1-0.4ubuntu3.dsc 4148 SHA256:283ffbd6d3d01da482b95aec5fe36c66caad3d2cd98e79bc902986f286116ae3
+$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.1.dsc' util-linux_2.31.1-0.4ubuntu3.1.dsc 4148 SHA256:e242480a513a4c602363defbec6d5c8368bb3505e5e96c6a44ecff33207adb59
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.debian.tar.xz 96680 SHA256:d6d2c6ebb7a049a760b202aaf52d02fb1dbf6d8e2333d95689de6b5951c41761
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.1.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.1.debian.tar.xz 97216 SHA256:74af4d8d5750eb84e4e8393a7a2102fbe1aa40e15c4f5a198ff2bc8c281108c1
 ```
 
-### `dpkg` source package: `wget=1.19.4-1ubuntu2`
+### `dpkg` source package: `wget=1.19.4-1ubuntu2.1`
 
 Binary Packages:
 
-- `wget=1.19.4-1ubuntu2`
+- `wget=1.19.4-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -3945,11 +3964,11 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.19.4-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.dsc' wget_1.19.4-1ubuntu2.dsc 1909 SHA256:0c32a14135433309e821e93759ce63b8d91aaabccd1554dd034b8c958953390d
+$ apt-get source -qq --print-uris wget=1.19.4-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.1.dsc' wget_1.19.4-1ubuntu2.1.dsc 2226 SHA256:77e1c82aa5ff43cfea93c9ca3d53688cf11fd6f2ccb20b088633cd12959b3011
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4.orig.tar.gz' wget_1.19.4.orig.tar.gz 4310657 SHA256:93fb96b0f48a20ff5be0d9d9d3c4a986b469cb853131f9d5fe4cc9cecbc8b5b5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4.orig.tar.gz.asc' wget_1.19.4.orig.tar.gz.asc 1241 SHA256:ee273f3a27adb2d2dc02ba346759ce95cb74ded959853a8a9c9be5ae44d10fcb
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.debian.tar.xz' wget_1.19.4-1ubuntu2.debian.tar.xz 62904 SHA256:29638c3658feadc64ddcd971310e5469d7397f96cefc6572b3adb67636a45ebe
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.4-1ubuntu2.1.debian.tar.xz' wget_1.19.4-1ubuntu2.1.debian.tar.xz 63748 SHA256:f9b6530ede3c5d922f5c0cbc2c0753ecfb970491e63f3c1d9969528c919ee6f7
 ```
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:324152d712869a9f59905316bf9839780b815c1192d68d0dee8a3b6df79b937f`
-- Created: `2018-05-04T17:09:27.254363664Z`
-- Virtual Size: ~ 246.63 Mb  
+- Image ID: `sha256:075de2cfff44dbdd36558675ccd100bbe2c1d0bfd2b99b24920b25d2e9ca6d3a`
+- Created: `2018-06-05T22:51:40.235041286Z`
+- Virtual Size: ~ 247.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -325,13 +325,13 @@ $ apt-get source -qq --print-uris coreutils=8.26-3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.26-3ubuntu4.debian.tar.xz' coreutils_8.26-3ubuntu4.debian.tar.xz 29708 SHA256:e09ca24c1147538cb822a9d66388c5f24b6ae10a5b9ce4d51f2bb27a402d15c2
 ```
 
-### `dpkg` source package: `curl=7.55.1-1ubuntu2.4`
+### `dpkg` source package: `curl=7.55.1-1ubuntu2.5`
 
 Binary Packages:
 
-- `curl=7.55.1-1ubuntu2.4`
-- `libcurl3:amd64=7.55.1-1ubuntu2.4`
-- `libcurl3-gnutls:amd64=7.55.1-1ubuntu2.4`
+- `curl=7.55.1-1ubuntu2.5`
+- `libcurl3:amd64=7.55.1-1ubuntu2.5`
+- `libcurl3-gnutls:amd64=7.55.1-1ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -342,9 +342,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.5.dsc' curl_7.55.1-1ubuntu2.5.dsc 2764 SHA256:c73d6ac5857768d655c4c74ebe256fcba6bce7fdfaa9a45af7203eeefd5ecc60
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.5.debian.tar.xz' curl_7.55.1-1ubuntu2.5.debian.tar.xz 41104 SHA256:c4dfb38887baed4855ee2f02822e5cb1220c2f4f36091d58e2fe57a3c05a7b01
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 
@@ -611,12 +616,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-14
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-14.debian.tar.xz' gdbm_1.8.3-14.debian.tar.xz 15308 SHA256:1c0570dd53947ea5980111f51b67356d647c4f21c502443b02397041dde0bf31
 ```
 
-### `dpkg` source package: `git=1:2.14.1-1ubuntu4`
+### `dpkg` source package: `git=1:2.14.1-1ubuntu4.1`
 
 Binary Packages:
 
-- `git=1:2.14.1-1ubuntu4`
-- `git-man=1:2.14.1-1ubuntu4`
+- `git=1:2.14.1-1ubuntu4.1`
+- `git-man=1:2.14.1-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -642,10 +647,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.dsc' git_2.14.1-1ubuntu4.dsc 2934 SHA256:90d2356d869494bff03e2111c2f0ea6ab96ddfc25786693f1a02124bbfef05c8
+$ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.1.dsc' git_2.14.1-1ubuntu4.1.dsc 2956 SHA256:df7e5b50e925601a802ef5542768c5aae6983f3306e55edac6563e875e91228d
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.debian.tar.xz' git_2.14.1-1ubuntu4.debian.tar.xz 549800 SHA256:0e99c7771e82f1f1500e89304549f23cbd169ab363254f12d3cd9639b91a9832
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.1.debian.tar.xz' git_2.14.1-1ubuntu4.1.debian.tar.xz 568164 SHA256:6cbdc196712a4b9159d8950c03b1626f8fb295c76e8d3f70cd3086bfd97d2061
 ```
 
 ### `dpkg` source package: `glibc=2.26-0ubuntu2.1`
@@ -1681,12 +1686,12 @@ $ apt-get source -qq --print-uris pinentry=1.0.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-2.debian.tar.xz' pinentry_1.0.0-2.debian.tar.xz 16672 SHA256:85e0b03d74a64a08b51f6ffac58a1a07a42499615aa993f367675ef12d0b47fb
 ```
 
-### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
+### `dpkg` source package: `procps=2:3.3.12-1ubuntu2.1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-1ubuntu2`
-- `procps=2:3.3.12-1ubuntu2`
+- `libprocps6:amd64=2:3.3.12-1ubuntu2.1`
+- `procps=2:3.3.12-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1700,10 +1705,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.dsc' procps_3.3.12-1ubuntu2.dsc 2243 SHA256:c8e72f65fdcadb40b13f35ce322b820eb3fec082fef153387cae78a33d8f144b
+$ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.1.dsc' procps_3.3.12-1ubuntu2.1.dsc 2265 SHA256:7c5c1bb3b1bee31122d1ea5c0ee6e35fa762bc1e3b3bd2bd09b1eeacfc7d132f
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.debian.tar.xz' procps_3.3.12-1ubuntu2.debian.tar.xz 30724 SHA256:1b40d1519e0dd9965aa3faed306dfdb44a113e39a14a404ba5fd28ff3d6e42b8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.1.debian.tar.xz' procps_3.3.12-1ubuntu2.1.debian.tar.xz 36664 SHA256:0c1d5d017b1e77382bd00fc10c88d3fe37461dbba3711ffc28ffa6537a5dd4ed
 ```
 
 ### `dpkg` source package: `python-defaults=2.7.14-2ubuntu1`
@@ -2044,19 +2049,19 @@ $ apt-get source -qq --print-uris ucf=3.0036
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0036.tar.xz' ucf_3.0036.tar.xz 65020 SHA256:34aa44416106f1205376918386b2896edf21dd42b633133b5f8fedecae17fca8
 ```
 
-### `dpkg` source package: `util-linux=2.30.1-0ubuntu4.1`
+### `dpkg` source package: `util-linux=2.30.1-0ubuntu4.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.30.1-0ubuntu4.1`
-- `fdisk=2.30.1-0ubuntu4.1`
-- `libblkid1:amd64=2.30.1-0ubuntu4.1`
-- `libfdisk1:amd64=2.30.1-0ubuntu4.1`
-- `libmount1:amd64=2.30.1-0ubuntu4.1`
-- `libsmartcols1:amd64=2.30.1-0ubuntu4.1`
-- `libuuid1:amd64=2.30.1-0ubuntu4.1`
-- `mount=2.30.1-0ubuntu4.1`
-- `util-linux=2.30.1-0ubuntu4.1`
+- `bsdutils=1:2.30.1-0ubuntu4.2`
+- `fdisk=2.30.1-0ubuntu4.2`
+- `libblkid1:amd64=2.30.1-0ubuntu4.2`
+- `libfdisk1:amd64=2.30.1-0ubuntu4.2`
+- `libmount1:amd64=2.30.1-0ubuntu4.2`
+- `libsmartcols1:amd64=2.30.1-0ubuntu4.2`
+- `libuuid1:amd64=2.30.1-0ubuntu4.2`
+- `mount=2.30.1-0ubuntu4.2`
+- `util-linux=2.30.1-0ubuntu4.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2077,24 +2082,34 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.30.1-0ubuntu4.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1-0ubuntu4.2.dsc' util-linux_2.30.1-0ubuntu4.2.dsc 4208 SHA256:7149bd2a7880d3316b42cba8d3a5f8566b4ad9379b9e82e9e4b9070fed8719b7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1.orig.tar.xz' util-linux_2.30.1.orig.tar.xz 4459284 SHA256:1be4363a91ac428c9e43fc04dc6d2c66a19ec1e36f1105bd4b481540be13b841
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1-0ubuntu4.2.debian.tar.xz' util-linux_2.30.1-0ubuntu4.2.debian.tar.xz 76440 SHA256:c7c1814a9c787505d8332b1b11dd69aafb2c8febd7c0c467c5c7304ceb735524
+```
 
-### `dpkg` source package: `wget=1.19.1-3ubuntu1.1`
+### `dpkg` source package: `wget=1.19.1-3ubuntu1.2`
 
 Binary Packages:
 
-- `wget=1.19.1-3ubuntu1.1`
+- `wget=1.19.1-3ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.19.1-3ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.2.dsc' wget_1.19.1-3ubuntu1.2.dsc 1985 SHA256:8a39f246ae592d5fa9baac8864d1d5e91f56ae9b44662ecae28c6262faff4516
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1.orig.tar.xz' wget_1.19.1.orig.tar.xz 2111756 SHA256:0c950b9671881222a4d385b013c9604e98a8025d1988529dfca0e93617744cd2
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.2.debian.tar.xz' wget_1.19.1-3ubuntu1.2.debian.tar.xz 24352 SHA256:dfb5dbb5971373b55619613c90e8f222e165007f52c529973053f67f02af0b98
+```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 

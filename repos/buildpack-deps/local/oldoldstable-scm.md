@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f1d221cdcb7bab88ca4df11b659c42ccdf9924ee917bfec37012d659e2129bf`
-- Created: `2018-05-04T17:54:24.714381704Z`
+- Image ID: `sha256:60a938d645faec2c657dbb7af1584f28f9f817130d614245f780e55b512db9c8`
+- Created: `2018-06-05T23:23:37.680264959Z`
 - Virtual Size: ~ 210.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -365,13 +365,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy25`
+### `dpkg` source package: `curl=7.26.0-1+wheezy25+deb7u1`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy25`
-- `libcurl3:amd64=7.26.0-1+wheezy25`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy25`
+- `curl=7.26.0-1+wheezy25+deb7u1`
+- `libcurl3:amd64=7.26.0-1+wheezy25+deb7u1`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy25+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -380,13 +380,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy25+deb7u1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0-1+wheezy25+deb7u1.dsc' curl_7.26.0-1+wheezy25+deb7u1.dsc 2562 SHA256:cf96f8a0eb16b96e72c67fb5d198e8636dd0053aa7476d312dc300ed71e50210
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.26.0-1+wheezy25+deb7u1.debian.tar.gz' curl_7.26.0-1+wheezy25+deb7u1.debian.tar.gz 74387 SHA256:263060d8592019c281cdbcd82cea0d0dc4c1abf0135c4cdc26ce10e5b8a69edd
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy25/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy25+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy25+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy25+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1920,12 +1927,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.14.2-21+deb7u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.14.2-21+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `procps=1:3.3.3-3`
+### `dpkg` source package: `procps=1:3.3.3-3+deb7u1`
 
 Binary Packages:
 
-- `libprocps0:amd64=1:3.3.3-3`
-- `procps=1:3.3.3-3`
+- `libprocps0:amd64=1:3.3.3-3+deb7u1`
+- `procps=1:3.3.3-3+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps0/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1935,17 +1942,17 @@ Licenses: (parsed from: `/usr/share/doc/libprocps0/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=1:3.3.3-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.3-3.dsc' procps_3.3.3-3.dsc 1952 SHA256:00263395e552b052e7cb4c2406d825653bd4b30cf965a403faf4e9977fe1c2b5
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.3.orig.tar.xz' procps_3.3.3.orig.tar.xz 513968 SHA256:062c826a0aac90c4257f8002480d91229491d604c767eefe50d622b578ca4e22
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.3-3.debian.tar.gz' procps_3.3.3-3.debian.tar.gz 28381 SHA256:15747df30a2279d103c672c26ec4ff4c4c51a644c82d590ebb9f8a2a362d49ff
+$ apt-get source -qq --print-uris procps=1:3.3.3-3+deb7u1
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.3-3+deb7u1.dsc' procps_3.3.3-3+deb7u1.dsc 1977 SHA256:9c833e48fd1fb1c9f95bbe2eb7a4c2451f427ffbd49b4438d0aab5e8bf0235ee
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.3.orig.tar.xz' procps_3.3.3.orig.tar.xz 513968 SHA256:062c826a0aac90c4257f8002480d91229491d604c767eefe50d622b578ca4e22
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.3-3+deb7u1.debian.tar.gz' procps_3.3.3-3+deb7u1.debian.tar.gz 32183 SHA256:0d127927d0af422090df33b07e4abf404fa8d497419e8880af5c0bf4dc047226
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/procps/1:3.3.3-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/1:3.3.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/1:3.3.3-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/procps/1:3.3.3-3+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/1:3.3.3-3+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/1:3.3.3-3+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-defaults=2.7.3-4+deb7u1`
 
@@ -2369,24 +2376,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.20.1-5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u5`
+### `dpkg` source package: `wget=1.13.4-3+deb7u6`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u5`
+- `wget=1.13.4-3+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u6
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u6.dsc' wget_1.13.4-3+deb7u6.dsc 1768 SHA256:158a525031b14857cddb58a4c61b23a8ef733e475c6f40088623ec1268bc4636
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/debian-security/pool/updates/main/w/wget/wget_1.13.4-3+deb7u6.debian.tar.gz' wget_1.13.4-3+deb7u6.debian.tar.gz 31450 SHA256:076be0731fa7a085a5e4a85ac0a6fd4b7b4b13667ca63454e6b10c3fb3ede96e
+```
 
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 
