@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d34b1562b0b1923e88c7c0fdfc2738aab1afca32f12515845c6916e1fff96a38`
-- Created: `2018-05-24T21:55:28.532373924Z`
+- Image ID: `sha256:d05f5dab6f9186b519f7663e10710d1fc112526b308c16d9346e1f62d4f230f7`
+- Created: `2018-06-06T00:06:57.860731774Z`
 - Virtual Size: ~ 2.61 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2634,13 +2634,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/giflib/5.1.4-0.4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/giflib/5.1.4-0.4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.11.0-3+deb9u2`
+### `dpkg` source package: `git=1:2.11.0-3+deb9u3`
 
 Binary Packages:
 
-- `git=1:2.11.0-3+deb9u2`
-- `git-core=1:2.11.0-3+deb9u2`
-- `git-man=1:2.11.0-3+deb9u2`
+- `git=1:2.11.0-3+deb9u3`
+- `git-core=1:2.11.0-3+deb9u3`
+- `git-man=1:2.11.0-3+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -2666,17 +2666,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u2
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3+deb9u2.dsc' git_2.11.0-3+deb9u2.dsc 2901 SHA256:e6364c47a4237efe0008e9bcf55b0b053954baf3f165151bab97a8786c8a778f
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3+deb9u2.debian.tar.xz' git_2.11.0-3+deb9u2.debian.tar.xz 528052 SHA256:e9e29329319f6ebb9529147580400012348c6ad27ae9d5df37661c504b0df3ce
+$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u3.dsc' git_2.11.0-3+deb9u3.dsc 2944 SHA256:053ab7b47b8a40ca6ec1449c750396df578651e178c1bbedc2f154d53e9b3203
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u3.debian.tar.xz' git_2.11.0-3+deb9u3.debian.tar.xz 549420 SHA256:df8dbe103d6ae8b210280fd2f344ad3dee5c718bd2769278544874af38f011a4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gl2ps=1.3.9-4`
 
@@ -9897,33 +9897,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-autobahn/0.14.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-autobahn/0.14.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.1-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.3-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.1-1`
+- `python-catkin-pkg-modules=0.4.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.3-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3-1.dsc' python-catkin-pkg-modules_0.4.3-1.dsc 991 SHA256:c447fd396dc511f323b1922fb64a3f28b6c12a2d772d3181e8204af76ea1c674
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3.orig.tar.gz' python-catkin-pkg-modules_0.4.3.orig.tar.gz 58368 SHA256:c0e7a1c150ae10453e612c0bbd3a56621c89c7a5a7f9a0a58e2feaae0e99f785
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3-1.debian.tar.xz' python-catkin-pkg-modules_0.4.3-1.debian.tar.xz 1140 SHA256:63fb2fb813b2dfb8f32e55b62dc4693fb17da07c04b343c4f4082c35c88e8343
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.1-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.3-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.1-100`
+- `python-catkin-pkg=0.4.3-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.3-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3-100.dsc' python-catkin-pkg_0.4.3-100.dsc 931 SHA256:1d43b116f6a25995b2ea06bc4c8fc31f19ae9ac46399263d1a57d3eae059f7e2
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3.orig.tar.gz' python-catkin-pkg_0.4.3.orig.tar.gz 13062 SHA256:f64699d8f4f57bf10fc9d163514af4ece6da70acce6e0f319b302b7311b6bb31
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3-100.debian.tar.xz' python-catkin-pkg_0.4.3-100.debian.tar.xz 1120 SHA256:781d4f5f092be0c0f8ffc1a97bdba336e6a9437a87718a89758577e57dafd44c
+```
 
 ### `dpkg` source package: `python-cbor=0.1.24-1`
 
