@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0703f5f2af23ca1dd8e3dbcb0789cfd79cf8a43db89e6888698ef167c512d33d`
-- Created: `2018-06-01T18:58:55.290914734Z`
-- Virtual Size: ~ 460.42 Mb  
+- Image ID: `sha256:4d81edd5a125f214465acd792cf1511b1e40928380076afe92a8388abe08a631`
+- Created: `2018-06-05T23:22:05.395216943Z`
+- Virtual Size: ~ 461.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
@@ -1080,12 +1080,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.3`
-- `procps=2:3.3.10-4ubuntu2.3`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.4`
+- `procps=2:3.3.10-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1096,9 +1096,14 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.dsc' procps_3.3.10-4ubuntu2.4.dsc 2243 SHA256:f7f14b0b818e21ad1f1f4be7fdedbd375b9c19b7f3ecf92a94f3bc4a1a625f5f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.debian.tar.xz' procps_3.3.10-4ubuntu2.4.debian.tar.xz 44376 SHA256:99854cab3c75853ec70cdda95d09fc22ee431c828e16dcdb9a0feaf65a3f74d1
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
@@ -1348,20 +1353,25 @@ $ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.debian.tar.xz' util-linux_2.27.1-6ubuntu3.4.debian.tar.xz 84172 SHA256:f8d5c6e500357de7a1809aaf644949eacab67b16d3cbb057ae3e011b1455c73b
 ```
 
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.3`
+### `dpkg` source package: `wget=1.17.1-1ubuntu1.4`
 
 Binary Packages:
 
-- `wget=1.17.1-1ubuntu1.3`
+- `wget=1.17.1-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.dsc' wget_1.17.1-1ubuntu1.4.dsc 1935 SHA256:c2a5ba4d1bb1675f49b64f9c6662787235b03aa362c1ba47d23ca9e9e3781a1d
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.4.debian.tar.xz' wget_1.17.1-1ubuntu1.4.debian.tar.xz 28640 SHA256:c2c6105db48ba75296871fa42b4197f1cfb3c4e7ec80e419835f58073f7794f0
+```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
