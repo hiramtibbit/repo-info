@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4422b8da209755dd5a8aa201ba79cef0c465003f46f6313f318a0e306e4fe05`
-- Created: `2018-04-27T23:27:48.03723617Z`
-- Virtual Size: ~ 99.22 Mb  
+- Image ID: `sha256:5ec55cc5586f04d58156a3e42f4f875395d198c0c0c3abe313418bde9802d540`
+- Created: `2018-06-05T21:20:35.491888659Z`
+- Virtual Size: ~ 99.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1096,12 +1096,12 @@ $ apt-get source -qq --print-uris pinentry=1.0.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-2.debian.tar.xz' pinentry_1.0.0-2.debian.tar.xz 16672 SHA256:85e0b03d74a64a08b51f6ffac58a1a07a42499615aa993f367675ef12d0b47fb
 ```
 
-### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
+### `dpkg` source package: `procps=2:3.3.12-1ubuntu2.1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-1ubuntu2`
-- `procps=2:3.3.12-1ubuntu2`
+- `libprocps6:amd64=2:3.3.12-1ubuntu2.1`
+- `procps=2:3.3.12-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1115,10 +1115,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.dsc' procps_3.3.12-1ubuntu2.dsc 2243 SHA256:c8e72f65fdcadb40b13f35ce322b820eb3fec082fef153387cae78a33d8f144b
+$ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.1.dsc' procps_3.3.12-1ubuntu2.1.dsc 2265 SHA256:7c5c1bb3b1bee31122d1ea5c0ee6e35fa762bc1e3b3bd2bd09b1eeacfc7d132f
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.debian.tar.xz' procps_3.3.12-1ubuntu2.debian.tar.xz 30724 SHA256:1b40d1519e0dd9965aa3faed306dfdb44a113e39a14a404ba5fd28ff3d6e42b8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.1.debian.tar.xz' procps_3.3.12-1ubuntu2.1.debian.tar.xz 36664 SHA256:0c1d5d017b1e77382bd00fc10c88d3fe37461dbba3711ffc28ffa6537a5dd4ed
 ```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
@@ -1303,19 +1303,19 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2016.10.27
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.10.27.tar.gz' ubuntu-keyring_2016.10.27.tar.gz 19182 SHA256:dc0b83433b28e5acedf39330bedec2cd102547570d1ae135497b15bd6ac85abe
 ```
 
-### `dpkg` source package: `util-linux=2.30.1-0ubuntu4.1`
+### `dpkg` source package: `util-linux=2.30.1-0ubuntu4.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.30.1-0ubuntu4.1`
-- `fdisk=2.30.1-0ubuntu4.1`
-- `libblkid1:amd64=2.30.1-0ubuntu4.1`
-- `libfdisk1:amd64=2.30.1-0ubuntu4.1`
-- `libmount1:amd64=2.30.1-0ubuntu4.1`
-- `libsmartcols1:amd64=2.30.1-0ubuntu4.1`
-- `libuuid1:amd64=2.30.1-0ubuntu4.1`
-- `mount=2.30.1-0ubuntu4.1`
-- `util-linux=2.30.1-0ubuntu4.1`
+- `bsdutils=1:2.30.1-0ubuntu4.2`
+- `fdisk=2.30.1-0ubuntu4.2`
+- `libblkid1:amd64=2.30.1-0ubuntu4.2`
+- `libfdisk1:amd64=2.30.1-0ubuntu4.2`
+- `libmount1:amd64=2.30.1-0ubuntu4.2`
+- `libsmartcols1:amd64=2.30.1-0ubuntu4.2`
+- `libuuid1:amd64=2.30.1-0ubuntu4.2`
+- `mount=2.30.1-0ubuntu4.2`
+- `util-linux=2.30.1-0ubuntu4.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1336,9 +1336,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.30.1-0ubuntu4.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1-0ubuntu4.2.dsc' util-linux_2.30.1-0ubuntu4.2.dsc 4208 SHA256:7149bd2a7880d3316b42cba8d3a5f8566b4ad9379b9e82e9e4b9070fed8719b7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1.orig.tar.xz' util-linux_2.30.1.orig.tar.xz 4459284 SHA256:1be4363a91ac428c9e43fc04dc6d2c66a19ec1e36f1105bd4b481540be13b841
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1-0ubuntu4.2.debian.tar.xz' util-linux_2.30.1-0ubuntu4.2.debian.tar.xz 76440 SHA256:c7c1814a9c787505d8332b1b11dd69aafb2c8febd7c0c467c5c7304ceb735524
+```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
