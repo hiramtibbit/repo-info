@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc08038ba6573b9351c178982793181eaf967906e643c671668cb9bff5d13faa`
-- Created: `2018-04-28T22:14:23.4485199Z`
-- Virtual Size: ~ 222.88 Mb  
+- Image ID: `sha256:9bacead6c2cb1529ebebd35f46f2d38d8ebd92007933b3ca87611aedcfb9292f`
+- Created: `2018-06-05T21:58:13.608050173Z`
+- Virtual Size: ~ 223.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,14 +51,14 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.17`
+### `dpkg` source package: `apt=1.0.1ubuntu2.18`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.17`
-- `apt-utils=1.0.1ubuntu2.17`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.17`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.17`
+- `apt=1.0.1ubuntu2.18`
+- `apt-utils=1.0.1ubuntu2.18`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.18`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.18`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -68,9 +68,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.17
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.18
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.18.dsc' apt_1.0.1ubuntu2.18.dsc 2754 SHA256:7f1051957e65a3dcc60dad614249b3af0166618e4b35b553d8ba08bb24332c40
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.18.tar.xz' apt_1.0.1ubuntu2.18.tar.xz 1776384 SHA256:55237dba9195327f9eb410cdf9f8a81754d7f324d7b02a3da646ec03fb91af8b
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
@@ -790,19 +790,23 @@ $ apt-get source -qq --print-uris hostname=3.15ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.15ubuntu1.tar.gz' hostname_3.15ubuntu1.tar.gz 13879 SHA256:d85728816111a3eeac24d7e8428a5e907dd4b170544017386111148e86b35ef6
 ```
 
-### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
+### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.5`
 
 Binary Packages:
 
-- `ifupdown=0.7.47.2ubuntu4.4`
+- `ifupdown=0.7.47.2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/ifupdown/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ifupdown=0.7.47.2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.5.dsc' ifupdown_0.7.47.2ubuntu4.5.dsc 1659 SHA256:7383b9cd5e1a8969d9dfb1b1c0cc96e28d9b1117efc149f447adb71aac2f4d71
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.5.tar.xz' ifupdown_0.7.47.2ubuntu4.5.tar.xz 92488 SHA256:cf6811142e459541863f7a2698fd745aef052ee61cb03afd525e92786a0d5d42
+```
 
 ### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
@@ -822,20 +826,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.10`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.11`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.10`
-- `initramfs-tools-bin=0.103ubuntu4.10`
+- `initramfs-tools=0.103ubuntu4.11`
+- `initramfs-tools-bin=0.103ubuntu4.11`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.11
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.11.dsc' initramfs-tools_0.103ubuntu4.11.dsc 1531 SHA256:821a1f71d275848c2ee6ab2d83adb390e061d973059ac26f020ccc6f8b216f10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.11.tar.xz' initramfs-tools_0.103ubuntu4.11.tar.xz 94816 SHA256:9c2d2622024d2bb50ba0f5d87636f2e5e30e18a0916bd41f33e47bfeaeb0b13d
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -976,13 +984,13 @@ $ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz 22852 SHA256:bb16e4256d6c665fe94652d017561b637bb8e916a42f1e3277517a4d22db9f7d
 ```
 
-### `dpkg` source package: `kmod=15-0ubuntu6`
+### `dpkg` source package: `kmod=15-0ubuntu7`
 
 Binary Packages:
 
-- `kmod=15-0ubuntu6`
-- `libkmod2:amd64=15-0ubuntu6`
-- `module-init-tools=15-0ubuntu6`
+- `kmod=15-0ubuntu7`
+- `libkmod2:amd64=15-0ubuntu7`
+- `module-init-tools=15-0ubuntu7`
 
 Licenses: (parsed from: `/usr/share/doc/kmod/copyright`, `/usr/share/doc/libkmod2/copyright`, `/usr/share/doc/module-init-tools/copyright`)
 
@@ -992,10 +1000,10 @@ Licenses: (parsed from: `/usr/share/doc/kmod/copyright`, `/usr/share/doc/libkmod
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=15-0ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu6.dsc' kmod_15-0ubuntu6.dsc 1326 SHA256:91ee7326bf6916dd3a5f915c0e2f8e9175a6072ae0700cc77079617087361e65
+$ apt-get source -qq --print-uris kmod=15-0ubuntu7
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu7.dsc' kmod_15-0ubuntu7.dsc 2045 SHA256:a8ab7b22c30f7e57defbf3bc5e92beb0b7a4e66a2dcec67c90ddba4d8e46dba2
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15.orig.tar.xz' kmod_15.orig.tar.xz 1453996 SHA256:e8ef0ea7e1929b46aa681fe6ce58c5e62d0026289026ebfc63abae3b8fd5ca9e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu6.debian.tar.gz' kmod_15-0ubuntu6.debian.tar.gz 14348 SHA256:5cbd3db804ae4b6ef3868ff344c23cad67d51938d8cefa42114d8d3a0bb78159
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu7.debian.tar.xz' kmod_15-0ubuntu7.debian.tar.xz 13544 SHA256:d040e5e798f58b334f91e68fc183dc469f4d6a1c7bc52d9bc25819795d15c16f
 ```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`
@@ -1961,20 +1969,25 @@ $ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.4.debian.tar.gz' perl_5.18.2-2ubuntu1.4.debian.tar.gz 143576 SHA256:4dc4d78b83cbbe9ba7a2a1cee643767aa8ae5c6b4a34ff04943d3cda73e69746
 ```
 
-### `dpkg` source package: `plymouth=0.8.8-0ubuntu17.1`
+### `dpkg` source package: `plymouth=0.8.8-0ubuntu17.2`
 
 Binary Packages:
 
-- `libplymouth2:amd64=0.8.8-0ubuntu17.1`
-- `plymouth=0.8.8-0ubuntu17.1`
+- `libplymouth2:amd64=0.8.8-0ubuntu17.2`
+- `plymouth=0.8.8-0ubuntu17.2`
 
 Licenses: (parsed from: `/usr/share/doc/libplymouth2/copyright`, `/usr/share/doc/plymouth/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris plymouth=0.8.8-0ubuntu17.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.2.dsc' plymouth_0.8.8-0ubuntu17.2.dsc 2135 SHA256:31743592a6c4f6ea65d969011dfeeedbfcc0f28e4ad8a4dcb9a9b1f958120369
+'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8.orig.tar.bz2' plymouth_0.8.8.orig.tar.bz2 1143549 SHA256:1bada4e1d3a31a5a99adc2db83f5452d9818839cda51a6e430f044f6281d759b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.2.debian.tar.xz' plymouth_0.8.8-0ubuntu17.2.debian.tar.xz 93540 SHA256:93fa4201289aa8fccc344f3f74e90b1df8acae41a376550cbbf9660ee85b82de
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
@@ -1997,21 +2010,26 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
+### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.3`
 
 Binary Packages:
 
-- `libprocps3:amd64=1:3.3.9-1ubuntu2.2`
-- `procps=1:3.3.9-1ubuntu2.2`
+- `libprocps3:amd64=1:3.3.9-1ubuntu2.3`
+- `procps=1:3.3.9-1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/procps/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=1:3.3.9-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.3.dsc' procps_3.3.9-1ubuntu2.3.dsc 2164 SHA256:6ea2abc73b5e6e12f58b102d1c3a6ccbc3346b23e53c48074e55d4c868d8b49f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.3.debian.tar.gz' procps_3.3.9-1ubuntu2.3.debian.tar.gz 49147 SHA256:5bd59249a7ae077c7d9151dd064164096ddc6bd7591d70c3e7b8003ab706bd63
+```
 
 ### `dpkg` source package: `python3-defaults=3.4.0-0ubuntu2`
 

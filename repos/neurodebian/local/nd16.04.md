@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d83ad701f7d350cdf7f4deebfeff7bd478d21aaa2a99a4d39b80509ce95ced30`
-- Created: `2018-04-28T22:15:00.870899331Z`
-- Virtual Size: ~ 112.96 Mb  
+- Image ID: `sha256:0c0f0d02cb85e996e3af9cf81f0f19462aab10098ec20a7bd31d08908aa2c01c`
+- Created: `2018-06-05T21:58:22.209970937Z`
+- Virtual Size: ~ 113.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1003,12 +1003,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.3`
-- `procps=2:3.3.10-4ubuntu2.3`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.4`
+- `procps=2:3.3.10-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1019,9 +1019,14 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.dsc' procps_3.3.10-4ubuntu2.4.dsc 2243 SHA256:f7f14b0b818e21ad1f1f4be7fdedbd375b9c19b7f3ecf92a94f3bc4a1a625f5f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.debian.tar.xz' procps_3.3.10-4ubuntu2.4.debian.tar.xz 44376 SHA256:99854cab3c75853ec70cdda95d09fc22ee431c828e16dcdb9a0feaf65a3f74d1
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 

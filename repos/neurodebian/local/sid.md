@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4478e8fcb2131b2cee1738b0a28b6ff37e97373fdfbeea186e3ce87330d6f18d`
-- Created: `2018-04-28T22:21:04.291833475Z`
-- Virtual Size: ~ 123.66 Mb  
+- Image ID: `sha256:7315e4ba2068f8a64d8beef5fae06fad29d29577f8a7757585164d241f4571e2`
+- Created: `2018-06-05T22:02:21.42328043Z`
+- Virtual Size: ~ 125.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -658,21 +658,21 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.5-1`
+### `dpkg` source package: `gnupg2=2.2.7-1`
 
 Binary Packages:
 
-- `dirmngr=2.2.5-1`
-- `gnupg=2.2.5-1`
-- `gnupg-l10n=2.2.5-1`
-- `gnupg-utils=2.2.5-1`
-- `gpg=2.2.5-1`
-- `gpg-agent=2.2.5-1`
-- `gpg-wks-client=2.2.5-1`
-- `gpg-wks-server=2.2.5-1`
-- `gpgconf=2.2.5-1`
-- `gpgsm=2.2.5-1`
-- `gpgv=2.2.5-1`
+- `dirmngr=2.2.7-1`
+- `gnupg=2.2.7-1`
+- `gnupg-l10n=2.2.7-1`
+- `gnupg-utils=2.2.7-1`
+- `gpg=2.2.7-1`
+- `gpg-agent=2.2.7-1`
+- `gpg-wks-client=2.2.7-1`
+- `gpg-wks-server=2.2.7-1`
+- `gpgconf=2.2.7-1`
+- `gpgsm=2.2.7-1`
+- `gpgv=2.2.7-1`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -691,18 +691,18 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.5-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5-1.dsc' gnupg2_2.2.5-1.dsc 3129 SHA256:b2be9d0e45ea8d69ac44e4933d64b6254347fd80d6b53b502b39868e42a334c7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5.orig.tar.bz2' gnupg2_2.2.5.orig.tar.bz2 6584756 SHA256:3fa189a32d4fb62147874eb1389047c267d9ba088f57ab521cb0df46f08aef57
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5.orig.tar.bz2.asc' gnupg2_2.2.5.orig.tar.bz2.asc 534 SHA256:4ca4c01f569155cc87ae4ad391cb5f0144637b5716d883fb137c4d4f07909471
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.5-1.debian.tar.bz2' gnupg2_2.2.5-1.debian.tar.bz2 65573 SHA256:092122129bee360920fcc6c823668dadbf63001e28d4dbece0442e256c94fd6f
+$ apt-get source -qq --print-uris gnupg2=2.2.7-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.7-1.dsc' gnupg2_2.2.7-1.dsc 3129 SHA256:f3eda6db9841a5cedef927a188a6771ca2c56e6fdfa221ee6f3f1b113b442377
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.7.orig.tar.bz2' gnupg2_2.2.7.orig.tar.bz2 6631100 SHA256:d95b361ee6ef7eff86af40c8c72bf9313736ac9f7010d6604d78bf83818e976e
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.7.orig.tar.bz2.asc' gnupg2_2.2.7.orig.tar.bz2.asc 534 SHA256:7d274222ed061a0d89475f2e54ec74d2e75b8904de9e190c8b08fca599a43506
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.7-1.debian.tar.bz2' gnupg2_2.2.7-1.debian.tar.bz2 65580 SHA256:b1b2fc4868579d641be5cd946b295768c81f7ff53c720a60826848bed1f19754
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.5-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.5-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.7-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.7-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
@@ -1406,11 +1406,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.1+20180210-2`
+### `dpkg` source package: `ncurses=6.1+20180210-4`
 
 Binary Packages:
 
-- `libtinfo6:amd64=6.1+20180210-2`
+- `libncursesw6:amd64=6.1+20180210-4`
+- `libtinfo6:amd64=6.1+20180210-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1419,18 +1420,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.dsc' ncurses_6.1+20180210-2.dsc 4128 SHA256:1fad8789bf1a04a57608bd66d688a8fd8d4e01b73593ed72757172b9081c3e43
+$ apt-get source -qq --print-uris ncurses=6.1+20180210-4
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.dsc' ncurses_6.1+20180210-4.dsc 4147 SHA256:222d0380903406509fcbd6a82736fb59a46a40259fc01a7a417c476cd126d02d
 'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
 'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-2.debian.tar.xz' ncurses_6.1+20180210-2.debian.tar.xz 59516 SHA256:abd62913546581e37149a10816acf5028bfcbe4b4d38f43f9d512c3ba7e621b7
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.debian.tar.xz' ncurses_6.1+20180210-4.debian.tar.xz 60516 SHA256:0c636e711a41aabe3dd5fa7986c88aece92eb4de0fb9fa114e2548532da3acd3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.1+20180210-2/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1+20180210-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1+20180210-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ncurses/6.1+20180210-4/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20180210-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20180210-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -1490,11 +1491,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `npth=1.5-3`
+### `dpkg` source package: `npth=1.5-4`
 
 Binary Packages:
 
-- `libnpth0:amd64=1.5-3`
+- `libnpth0:amd64=1.5-4`
 
 Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 
@@ -1504,24 +1505,24 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris npth=1.5-3
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-3.dsc' npth_1.5-3.dsc 1954 SHA256:98e02623d39451685321ab638e12cd0b85f7829f6b174d03dbb806b8d899ae3f
+$ apt-get source -qq --print-uris npth=1.5-4
+'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-4.dsc' npth_1.5-4.dsc 1925 SHA256:78a69ba305424461b3077bcd256ecc1633fca2163e7a3f19e2cde64f400c47c8
 'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5.orig.tar.bz2' npth_1.5.orig.tar.bz2 299308 SHA256:294a690c1f537b92ed829d867bee537e46be93fbd60b16c04630fbbfcd9db3c2
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-3.debian.tar.xz' npth_1.5-3.debian.tar.xz 10480 SHA256:5cbaf91c95c90ab82053110eeec5ac72f5a3cab36829edb0579f1fb759ec5fec
+'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-4.debian.tar.xz' npth_1.5-4.debian.tar.xz 10516 SHA256:728392bfb0618b46990981f0d1d63461bd3b17a736aa10194635205391a24105
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/npth/1.5-3/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.5-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/npth/1.5-4/ (for browsing the source)
+- https://sources.debian.net/src/npth/1.5-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/npth/1.5-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1`
+### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1`
-- `libldap-common=2.4.45+dfsg-1`
+- `libldap-2.4-2:amd64=2.4.46+dfsg-5`
+- `libldap-common=2.4.46+dfsg-5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1530,17 +1531,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg-1.dsc' openldap_2.4.45+dfsg-1.dsc 2769 SHA256:a9544b9d02dec7eb101b0eb4a71d9feaa402c9f3e12ab2398c6408c84bd93212
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.45+dfsg-1.debian.tar.xz' openldap_2.4.45+dfsg-1.debian.tar.xz 162956 SHA256:7edec92185c74081a1fcbe934ccba951fb4a43075061aac40168a489f7989f5e
+$ apt-get source -qq --print-uris openldap=2.4.46+dfsg-5
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-5.dsc' openldap_2.4.46+dfsg-5.dsc 2711 SHA256:61354bc5ee694d39ad1046deb2aa3145cb52945ad6a0b26ce2837a0e2096a2af
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg.orig.tar.gz' openldap_2.4.46+dfsg.orig.tar.gz 4873832 SHA256:e93cb511f6bce162c27502d0d240e6410a8f14e72c47ddddb4e69b25b7c538e4
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-5.debian.tar.xz' openldap_2.4.46+dfsg-5.debian.tar.xz 163000 SHA256:f07814e83627de02011f175d698e104bdd369b070d0a65f5db2a007c35a58232
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openldap/2.4.45+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.45+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.45+dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openldap/2.4.46+dfsg-5/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.46+dfsg-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.46+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.10-2`
 
@@ -1674,7 +1675,7 @@ The source package *may* still be available for download from:
 
 Binary Packages:
 
-- `pinentry-curses=1.1.0-1`
+- `pinentry-curses=1.1.0-1+b1`
 
 Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 
@@ -1700,25 +1701,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.1.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `readline=7.0-3`
+### `dpkg` source package: `readline=7.0-5`
 
 Binary Packages:
 
-- `libreadline7:amd64=7.0-3+b1`
-- `readline-common=7.0-3`
+- `libreadline7:amd64=7.0-5`
+- `readline-common=7.0-5`
 
 Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc/readline-common/copyright`)
 
 - `GFDL`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris readline=7.0-5
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-5.dsc' readline_7.0-5.dsc 2419 SHA256:4a804235e91ced3b957b0772101ca3992f5ad051e6540b8c41a1f98a06e84033
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
+'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-5.debian.tar.xz' readline_7.0-5.debian.tar.xz 29992 SHA256:5c1cc7396a670ce7e6e4c0bc36e8d3067b7642bea5b30fc3ff22bf8e65d2ee80
+```
 
-- http://snapshot.debian.org/package/readline/7.0-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/readline/7.0-5/ (for browsing the source)
+- https://sources.debian.net/src/readline/7.0-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/readline/7.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.4-2`
 
