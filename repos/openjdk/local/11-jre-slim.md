@@ -1,10 +1,10 @@
-# `openjdk:11-ea-15-jre-slim-sid`
+# `openjdk:11-ea-16-jre-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ba38ab8ec08edd067394310d1a5ae44de365b4ec9ea2554b8517fab88132ab3`
-- Created: `2018-05-30T19:00:36.047817443Z`
-- Virtual Size: ~ 269.85 Mb  
+- Image ID: `sha256:2356de6309aac531a2c86bb496fc6cbb2327dc33442896c345e1f415accbd62b`
+- Created: `2018-06-06T18:40:55.737598853Z`
+- Virtual Size: ~ 269.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+15`
-  - `JAVA_DEBIAN_VERSION=11~15-1`
+  - `JAVA_VERSION=11-ea+16`
+  - `JAVA_DEBIAN_VERSION=11~16-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -981,11 +981,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.51/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.51/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-common=0.66`
+### `dpkg` source package: `java-common=0.67`
 
 Binary Packages:
 
-- `java-common=0.66`
+- `java-common=0.67`
 
 Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 
@@ -995,16 +995,16 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris java-common=0.66
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.66.dsc' java-common_0.66.dsc 1985 SHA256:bb2f2082ff75f0fb60e38e5f3df26d04e5010915666961b3ca89e0a3c3da1662
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.66.tar.xz' java-common_0.66.tar.xz 12956 SHA256:f55608dd94fbb32f458f5c1b55dd856c783fbea613019bc68afe7521c74aec99
+$ apt-get source -qq --print-uris java-common=0.67
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.dsc' java-common_0.67.dsc 1985 SHA256:c1ec68dd9663ea72165afc7d471e73fcd58f4d9016497af47c4f22d4d94b039f
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.tar.xz' java-common_0.67.tar.xz 13000 SHA256:b16e4532122f75d39cfacddc4df29dba43f4e66f5a4188ed926dbf5ff40758b9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/java-common/0.66/ (for browsing the source)
-- https://sources.debian.net/src/java-common/0.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/java-common/0.66/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/java-common/0.67/ (for browsing the source)
+- https://sources.debian.net/src/java-common/0.67/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-common/0.67/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2`
 
@@ -1876,11 +1876,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.37.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.37.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~15-1`
+### `dpkg` source package: `openjdk-11=11~16-1`
 
 Binary Packages:
 
-- `openjdk-11-jre-headless:amd64=11~15-1`
+- `openjdk-11-jre-headless:amd64=11~16-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -1892,17 +1892,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~15-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~15-1.dsc' openjdk-11_11~15-1.dsc 4511 SHA256:7d871dee6cad38fdc5b1f06c8e330f4f2c8e3162c49a6eac111760c6974e2da5
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~15.orig.tar.xz' openjdk-11_11~15.orig.tar.xz 76507284 SHA256:a428ace47deb2b5d0c78185d277ae17cd9e29a2671fb78d5f60ed2bb7797a68e
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~15-1.debian.tar.xz' openjdk-11_11~15-1.debian.tar.xz 166424 SHA256:7096f1737bfc341bb4550f577b7cb7b86ee825b5b30641f7088baee5bee51e54
+$ apt-get source -qq --print-uris openjdk-11=11~16-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16-1.dsc' openjdk-11_11~16-1.dsc 4511 SHA256:58245232fb13faef48852d453b89544dcd97b5c387b4c06f479ca79e7c54ada9
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16.orig.tar.xz' openjdk-11_11~16.orig.tar.xz 77225576 SHA256:4b9df37b7d6bac44475aa10f872d2871f069397e23ca9f1f3d542a0a07fb7851
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16-1.debian.tar.xz' openjdk-11_11~16-1.debian.tar.xz 166524 SHA256:c721a5b359b59db99b896679df19046d356c73c054ca26177584b7118b1290ea
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~15-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~15-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~16-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~16-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-4`
 
