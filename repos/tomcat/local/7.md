@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e77904434c8808875640e4f48bbe4cc0708b6146ff22a4652e434ee63972549f`
-- Created: `2018-06-06T04:59:02.479116696Z`
-- Virtual Size: ~ 358.36 Mb  
+- Image ID: `sha256:6ccc1317fc1dda0c57a3c7f9e5bfc80717fcc98259424c81278dcca57514e7b5`
+- Created: `2018-06-09T00:41:20.507496539Z`
+- Virtual Size: ~ 363.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -1199,10 +1199,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u4`
 - `gpgv=1.4.18-7+deb8u4`
 
-Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
@@ -1222,6 +1221,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/ (for browsing the source)
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u5`
+
+Binary Packages:
+
+- `gnupg=1.4.18-7+deb8u5`
+
+Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`)
+
+- `GPL-3`
+- `GPL-3+ with OpenSSL exception`
+- `RFC-Reference`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u5.dsc' gnupg_1.4.18-7+deb8u5.dsc 2591 SHA256:63cb3c6d7ee52b38bee3ade03c8d0ef4befd1d3bf56129bd11d260ac46e22f8b
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u5.debian.tar.xz' gnupg_1.4.18-7+deb8u5.debian.tar.xz 305056 SHA256:6e63f0543ca283511c0be22c87ac802c34819808f1a4e17fc7fce75b11a22c90
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
 
