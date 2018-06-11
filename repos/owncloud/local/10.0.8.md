@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d53b406ec68f38863fa0f5a5620f4e21a6141ac94b08a2e0e030d3abf8e980cb`
-- Created: `2018-06-07T01:29:29.557528395Z`
-- Virtual Size: ~ 604.07 Mb  
+- Image ID: `sha256:f6b347dd403b3cb4f232ab101db8ebb76e75b6a6cd732a653ec61951b607d6c6`
+- Created: `2018-06-09T00:30:12.96852063Z`
+- Virtual Size: ~ 604.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1066,12 +1066,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dirmngr=2.1.18-8~deb9u1`
-- `gnupg=2.1.18-8~deb9u1`
-- `gnupg-agent=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -1099,6 +1096,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/ (for browsing the source)
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gnupg2=2.1.18-8~deb9u2`
+
+Binary Packages:
+
+- `dirmngr=2.1.18-8~deb9u2`
+- `gnupg=2.1.18-8~deb9u2`
+- `gnupg-agent=2.1.18-8~deb9u2`
+
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`)
+
+- `BSD-3-clause`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `RFC-Reference`
+- `TinySCHEME`
+- `permissive`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.8-5+deb9u3`
 
@@ -3032,6 +3066,31 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/tzdata/2018d-0+deb9u1/
 
+
+### `dpkg` source package: `unzip=6.0-21`
+
+Binary Packages:
+
+- `unzip=6.0-21`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-21
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-21.dsc' unzip_6.0-21.dsc 1344 SHA256:c51fca0f9d8af19ead119addf4b56ea25443b64951b85eceb873f0ca76b378d4
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-21.debian.tar.xz' unzip_6.0-21.debian.tar.xz 17740 SHA256:8accd9d214630a366476437a3ec1842f2e057fdce16042a7b19ee569c33490a3
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-21/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
