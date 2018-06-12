@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85ed7de85e366525a841c9424096bb282c06a664ed8872c97c238ec08a03c8b5`
-- Created: `2018-05-15T04:28:59.566514801Z`
-- Virtual Size: ~ 1.17 Gb  
+- Image ID: `sha256:14efc4868925437cc752b58d50749bd82ed8993827b4c260f271d9dfdc464cb4`
+- Created: `2018-06-12T02:57:39.259468738Z`
+- Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA512=a961eedc4b0c0729f1fb96dafb75eb48e000502233b849f47c84a6355873bc96d131b112400587e96391262e0659df9b991b4e66a78fda74168f939c4ab5af88`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz.asc`
-  - `XWIKI_VERSION=10.3`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.3`
-  - `XWIKI_DOWNLOAD_SHA256=46e76e6d74fc59c00d09bbe03da36b8ff223a9cfa6e84cf2eff3001922ac715f`
+  - `XWIKI_VERSION=10.4`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.4`
+  - `XWIKI_DOWNLOAD_SHA256=4e9575813cb8e3c5c6fcb76f7a2df8bb6d0ec36b188235b37612184cb7b56a1a`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -861,13 +861,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.2.1-8+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.2.1-8+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u5`
+### `dpkg` source package: `curl=7.52.1-5+deb9u6`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u5`
-- `libcurl3:amd64=7.52.1-5+deb9u5`
-- `libcurl3-gnutls:amd64=7.52.1-5+deb9u5`
+- `curl=7.52.1-5+deb9u6`
+- `libcurl3:amd64=7.52.1-5+deb9u6`
+- `libcurl3-gnutls:amd64=7.52.1-5+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -878,13 +878,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.dsc' curl_7.52.1-5+deb9u6.dsc 2793 SHA256:463a6ac7cb310890ae03c904ec31f85616cf05bd56c74d1d9b981da38bfab616
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u6.debian.tar.xz' curl_7.52.1-5+deb9u6.debian.tar.xz 40420 SHA256:df3786154af6f98fa3623272a1756355218fd686603259b441b3a4ae24d7a942
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1661,12 +1668,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dirmngr=2.1.18-8~deb9u1`
-- `gnupg=2.1.18-8~deb9u1`
-- `gnupg-agent=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -1694,6 +1698,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/ (for browsing the source)
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gnupg2=2.1.18-8~deb9u2`
+
+Binary Packages:
+
+- `dirmngr=2.1.18-8~deb9u2`
+- `gnupg=2.1.18-8~deb9u2`
+- `gnupg-agent=2.1.18-8~deb9u2`
+
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`)
+
+- `BSD-3-clause`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `RFC-Reference`
+- `TinySCHEME`
+- `permissive`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.8-5+deb9u3`
 
@@ -5492,20 +5533,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.dsc' perl_5.24.1-3+deb9u3.dsc 2372 SHA256:ef88a406368034beed653af8300842a089954623fc53bdff7fa3ef64278ed68f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.debian.tar.xz' perl_5.24.1-3+deb9u3.debian.tar.xz 178988 SHA256:ec40e37d67e05aeb3fea641dc795b5e9d3dc8bbc9943b7f5d87aad889b3ac16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -5561,12 +5595,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pixman/0.34.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pixman/0.34.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `procps=2:3.3.12-3`
+### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-3`
-- `procps=2:3.3.12-3`
+- `libprocps6:amd64=2:3.3.12-3+deb9u1`
+- `procps=2:3.3.12-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -5580,17 +5614,17 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.dsc' procps_3.3.12-3.dsc 2118 SHA256:5bff9bf045fb88118e5fe69df1ed1d092c49b258ebae5368222a16900288f12e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.debian.tar.xz' procps_3.3.12-3.debian.tar.xz 27260 SHA256:5907253fba4f11755b60d7d47ffd8212564d7e2c692dcfffc951e4026c465f9e
+$ apt-get source -qq --print-uris procps=2:3.3.12-3+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.dsc' procps_3.3.12-3+deb9u1.dsc 2333 SHA256:0a9977b3577de224b4db2c957d8825faca13e131bd79daace4a9f3b4cbdeb067
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.debian.tar.xz' procps_3.3.12-3+deb9u1.debian.tar.xz 33320 SHA256:2645283a93fe698eb93a560ee0fd8897ecc7a8997bb65e2e1537f91dc788e3e7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/procps/2:3.3.12-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.12-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.12-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pulseaudio=10.0-1+deb9u1`
 
