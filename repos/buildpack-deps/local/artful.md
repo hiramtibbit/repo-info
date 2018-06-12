@@ -2992,14 +2992,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.13.0-43.48
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-43.48.dsc' linux_4.13.0-43.48.dsc 6206 SHA256:bebade7f8ce1843b1f93758b969062eaa7a51b26929ba0bc58a6d7d9cdd0bd20
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0.orig.tar.gz' linux_4.13.0.orig.tar.gz 155489655 SHA256:9511260e17e474183b9c3b2ea601d5af256dde783e14dba4031854eaa98d5089
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-43.48.diff.gz' linux_4.13.0-43.48.diff.gz 7202715 SHA256:35d7f5d9c8b2d7b162a3ae06f3b4a56990e28924eebf5c6cee5c1b0615c71098
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
