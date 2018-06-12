@@ -1,18 +1,18 @@
-# `aerospike:4.1.0.1`
+# `aerospike:4.2.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1918a84f1644628229508597df9e42bf0dc55ad1a8991b1dec0e610688a73f7f`
-- Created: `2018-06-05T21:38:19.177287524Z`
-- Virtual Size: ~ 198.48 Mb  
+- Image ID: `sha256:cdbf0306109b84ff12e44f64af17fef752cd03abf0ce4a219c198926a19fc601`
+- Created: `2018-06-11T23:20:57.828779119Z`
+- Virtual Size: ~ 201.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=4.1.0.1`
-  - `AEROSPIKE_SHA256=4cbf36ee7f8aebd17b05d0f75556edea4220c9bcf9469a4748de2109c5f799ab`
+  - `AEROSPIKE_VERSION=4.2.0.3`
+  - `AEROSPIKE_SHA256=3baf10f11060e35a8fb30c620f7a7673c92824a503d9b89e29f1d12ca79f1712`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=4.1.0.1-1`
+### `dpkg` source package: `aerospike-server-community=4.2.0.3-1`
 
 Binary Packages:
 
-- `aerospike-server-community=4.1.0.1-1`
+- `aerospike-server-community=4.2.0.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -68,11 +68,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aerospike-tools=3.15.3.6`
+### `dpkg` source package: `aerospike-tools=3.15.3.8`
 
 Binary Packages:
 
-- `aerospike-tools=3.15.3.6`
+- `aerospike-tools=3.15.3.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -669,14 +669,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.dsc' gnupg_1.4.20-1ubuntu3.1.dsc 2460 SHA256:d44da8008925234f403dbec9bb4baac47edb81b017728033ab258dddf032469f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
-```
 
 ### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
