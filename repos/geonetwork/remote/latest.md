@@ -1,7 +1,7 @@
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:addeea5c1c8038c344f009ef61c37377bced41ba559c6112c93d9bec481304eb
+$ docker pull geonetwork@sha256:d5f7a22205dd88df45f80c87eecc90c1666d8a555d48af1147abd310328a7af8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull geonetwork@sha256:addeea5c1c8038c344f009ef61c37377bced41ba559c6112
 ### `geonetwork:latest` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:f5efdc9f9fa25a1adef1fdc6bee8e7ec9125138e5964dac0b268091644fc46a2
+$ docker pull geonetwork@sha256:6025bb12f2796ee51a9a7c31e590408eb12569dda45b27738c654b504cfcee36
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.2 MB (395229187 bytes)**  
+-	Total Size: **395.2 MB (395229151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d39858f00d35d9c2806f1da7b753f6b68e003c4941b43933a89a7402645e367b`
+-	Image ID: `sha256:ba3409edc0b3cc4265c22c4b6acfa3a589f78cfb459793a327bf8fc53a8a52a5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -89,25 +89,25 @@ RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(e
 EXPOSE 8080/tcp
 # Sat, 09 Jun 2018 00:44:31 GMT
 CMD ["catalina.sh" "run"]
-# Sat, 09 Jun 2018 01:20:40 GMT
+# Tue, 12 Jun 2018 02:43:24 GMT
 ENV GN_FILE=geonetwork.war
-# Sat, 09 Jun 2018 01:20:40 GMT
+# Tue, 12 Jun 2018 02:43:24 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Sat, 09 Jun 2018 01:20:40 GMT
+# Tue, 12 Jun 2018 02:43:24 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Sat, 09 Jun 2018 01:23:29 GMT
+# Tue, 12 Jun 2018 02:45:21 GMT
 ENV GN_VERSION=3.4.2
-# Sat, 09 Jun 2018 01:23:29 GMT
+# Tue, 12 Jun 2018 02:45:21 GMT
 ENV GN_DOWNLOAD_MD5=e0ff34ab3995b3a8107f3c3c78f7294a
-# Sat, 09 Jun 2018 01:23:29 GMT
+# Tue, 12 Jun 2018 02:45:21 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Sat, 09 Jun 2018 01:26:19 GMT
+# Tue, 12 Jun 2018 02:45:31 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Sat, 09 Jun 2018 01:26:20 GMT
+# Tue, 12 Jun 2018 02:45:31 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Sat, 09 Jun 2018 01:26:20 GMT
+# Tue, 12 Jun 2018 02:45:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 09 Jun 2018 01:26:20 GMT
+# Tue, 12 Jun 2018 02:45:32 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -160,11 +160,11 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 09 Jun 2018 00:58:31 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d12927fa5a45f935c769606492418eec79650769451c02fd316dcb32a1ee604d`  
-		Last Modified: Sat, 09 Jun 2018 01:29:50 GMT  
-		Size: 197.7 MB (197725160 bytes)  
+	-	`sha256:03edddef44e02acd0246155d9265448b2a86343e3e3cf2aed2159641091fdee0`  
+		Last Modified: Tue, 12 Jun 2018 02:49:06 GMT  
+		Size: 197.7 MB (197725124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8c8296482b5ee17e42eff9a35f245149bb325aa8ac7d34e698b3f443181c77a`  
-		Last Modified: Sat, 09 Jun 2018 01:29:19 GMT  
+	-	`sha256:5f5add1e693e94aa2e0670357349b7dbf97a4d9d5928f36c956fd7d17de5ac77`  
+		Last Modified: Tue, 12 Jun 2018 02:48:53 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
