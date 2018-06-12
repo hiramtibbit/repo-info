@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af8b21bb6e3b03ccf33d1188295f44380761886934bfbafa0d0b0ee8eccb0f72`
-- Created: `2018-06-06T21:09:24.169802911Z`
+- Image ID: `sha256:a3354b1182c292edb3e3776216eb8917827e49234a995686acdb6491d412a70f`
+- Created: `2018-06-12T02:28:53.05879099Z`
 - Virtual Size: ~ 951.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -765,21 +765,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.7-5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-5.dsc' cups_2.2.7-5.dsc 3467 SHA256:2edc78bf555fd41f5ae10a16cefd7e1baacbc760bf29e3a86d12c7c9bcdf6674
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-5.debian.tar.xz' cups_2.2.7-5.debian.tar.xz 350768 SHA256:31b633d2575aa5306da3dcb056844f34bc3654d04b4c3ffeffdcdc5c4685f1b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.7-5/
 
-- https://sources.debian.net/src/cups/2.2.7-5/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.7-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.7-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.60.0-2`
 
@@ -964,19 +956,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.66
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.dsc' debconf_1.5.66.dsc 2059 SHA256:5b8586443a0a5a85b745b2c6b97a8aeab65be403d3f6a9ff42a7f79508a393cb
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.tar.xz' debconf_1.5.66.tar.xz 572936 SHA256:e2ba95f6e6229e4c6c8e12b8f193491b48c10479074e8de7aeb7fca2176cd657
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.66/
 
-- https://sources.debian.net/src/debconf/1.5.66/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -4588,21 +4574,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.10-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10-2.dsc' p11-kit_0.23.10-2.dsc 2431 SHA256:97d08edfce25799c344f73f03747ea868e7e455de030e967a4306a72f1b74b7b
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10.orig.tar.gz' p11-kit_0.23.10.orig.tar.gz 1121419 SHA256:f9212a3f225ef543e13fae9945527d66c0cbb67246320035dd94fab2bce5ae43
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10.orig.tar.gz.asc' p11-kit_0.23.10.orig.tar.gz.asc 900 SHA256:a90275067d5864c7f32b5d78cf4568117894faa6956a0796d26170e07396a622
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10-2.debian.tar.xz' p11-kit_0.23.10-2.debian.tar.xz 22240 SHA256:479025e0a37c8729c81c16e712b2cea9287674eed8d4b34e9191ab3003a8fe5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.10-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.10-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.7`
 
