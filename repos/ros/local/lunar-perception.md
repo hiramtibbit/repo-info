@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:de531f27b5e8f4cdd07824ce88e316c9d8a663bd4666b15f596e473f1dbd1298`
-- Created: `2018-06-05T23:21:39.119523078Z`
+- Image ID: `sha256:0b950ec8bb96aba897550c4624ba39dc0109ca6b17c23fa8a5637af051dfb1d5`
+- Created: `2018-06-12T01:27:15.466813735Z`
 - Virtual Size: ~ 2.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -959,9 +959,10 @@ $ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.8
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-14build1`
+- `libsasl2-modules:amd64=2.1.26.dfsg1-14build1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-14build1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -1949,13 +1950,13 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.3`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.4`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.3`
-- `git-core=1:2.7.4-0ubuntu1.3`
-- `git-man=1:2.7.4-0ubuntu1.3`
+- `git=1:2.7.4-0ubuntu1.4`
+- `git-core=1:2.7.4-0ubuntu1.4`
+- `git-man=1:2.7.4-0ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1978,9 +1979,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.4.dsc' git_2.7.4-0ubuntu1.4.dsc 2897 SHA256:626c3e8fe4667cbdce808bc4ee156db020a1e3aa8c0e9c9b526f6296cd554464
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.4.debian.tar.xz' git_2.7.4-0ubuntu1.4.debian.tar.xz 529936 SHA256:bad59432397385fb7357168d8ec0e1b7bd933f3dbab88e3a8d7df2ca6b907df9
+```
 
 ### `dpkg` source package: `gl2ps=1.3.8-1.2`
 
@@ -2137,14 +2143,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.dsc' gnupg_1.4.20-1ubuntu3.1.dsc 2460 SHA256:d44da8008925234f403dbec9bb4baac47edb81b017728033ab258dddf032469f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
-```
 
 ### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
@@ -5295,11 +5296,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-127.153`
+### `dpkg` source package: `linux=4.4.0-128.154`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-127.153`
+- `linux-libc-dev:amd64=4.4.0-128.154`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5309,10 +5310,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.4.0-127.153
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-127.153.dsc' linux_4.4.0-127.153.dsc 9712 SHA256:9e93c9874368c40d6f5dc803acd07196378284a560b1bbf7a71aca3c58d87de3
+$ apt-get source -qq --print-uris linux=4.4.0-128.154
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-128.154.dsc' linux_4.4.0-128.154.dsc 9712 SHA256:ecc9ac7abef3017a2f136196a7d2c0fb753774c095cc6c0deb7b5bcdd70b0f10
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-127.153.diff.gz' linux_4.4.0-127.153.diff.gz 14429200 SHA256:a5dd9bfa5632335a514179070c3fc9a35ea417d491279639905417edf48142f1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-128.154.diff.gz' linux_4.4.0-128.154.diff.gz 14491137 SHA256:8aabfb5677e4dd49f2195c23530f0368fa58ac48f2bef950150e686433107bbe
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
@@ -6214,12 +6215,12 @@ $ apt-get source -qq --print-uris openjpeg=1:1.5.2-3.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg/openjpeg_1.5.2-3.1.debian.tar.xz' openjpeg_1.5.2-3.1.debian.tar.xz 18660 SHA256:c45f580c9dbdeffe9bc0e1f4f5c69b7a661568771339424690c81e138b973285
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.2`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.2`
-- `libldap2-dev:amd64=2.4.42+dfsg-2ubuntu3.2`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
+- `libldap2-dev:amd64=2.4.42+dfsg-2ubuntu3.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6228,10 +6229,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.2
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.dsc' openldap_2.4.42+dfsg-2ubuntu3.2.dsc 3040 SHA256:f22b2a2b83f6b656ef96ca6b25a125399c123908cfaa9f1f503115fffa536ae7
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.3.dsc' openldap_2.4.42+dfsg-2ubuntu3.3.dsc 3054 SHA256:da68d2a61d6fe878663303f89230642e79799c6073c6bb86b94d3b09bd4fe3f5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.3.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.3.debian.tar.xz 178176 SHA256:65229120d88838c69ac4536079dd85eca8ad7f8420139fa0fdafcdfe666c990f
 ```
 
 ### `dpkg` source package: `openmpi=1.10.2-8ubuntu1`

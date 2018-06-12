@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4352863dd648eece7329de6f16f94491a7d9c2d8d2a4f6d1b16fd114184b6007`
-- Created: `2018-06-05T23:33:05.330173058Z`
-- Virtual Size: ~ 2.71 Gb  
+- Image ID: `sha256:e0d87802ebcec7f8dcb7c3be90ceb35e8017b331c4c17244b292116671001eb0`
+- Created: `2018-06-12T01:38:50.362446276Z`
+- Virtual Size: ~ 2.72 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1343,9 +1343,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3`
+- `libsasl2-modules:amd64=2.1.27~101-g0780600+dfsg-3`
 - `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-4-clause`
 - `GPL-3`
@@ -2951,13 +2952,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dirmngr=2.1.18-8~deb9u1`
-- `gnupg=2.1.18-8~deb9u1`
-- `gnupg-agent=2.1.18-8~deb9u1`
-- `gnupg2=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -2985,6 +2982,45 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/ (for browsing the source)
 - https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gnupg2=2.1.18-8~deb9u2`
+
+Binary Packages:
+
+- `dirmngr=2.1.18-8~deb9u2`
+- `gnupg=2.1.18-8~deb9u2`
+- `gnupg-agent=2.1.18-8~deb9u2`
+- `gnupg-l10n=2.1.18-8~deb9u2`
+- `gnupg2=2.1.18-8~deb9u2`
+
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg2/copyright`)
+
+- `BSD-3-clause`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `RFC-Reference`
+- `TinySCHEME`
+- `permissive`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.8-5+deb9u3`
 
@@ -9512,20 +9548,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.dsc' perl_5.24.1-3+deb9u3.dsc 2372 SHA256:ef88a406368034beed653af8300842a089954623fc53bdff7fa3ef64278ed68f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.debian.tar.xz' perl_5.24.1-3+deb9u3.debian.tar.xz 178988 SHA256:ec40e37d67e05aeb3fea641dc795b5e9d3dc8bbc9943b7f5d87aad889b3ac16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pillow=4.0.0-4`
 

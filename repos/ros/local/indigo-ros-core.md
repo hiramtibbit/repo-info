@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae83cd08ab20c37a584d81ea7a01db0dee9c787c4a698ea57ebaddc38dfe6ca4`
-- Created: `2018-06-05T22:26:14.437823043Z`
-- Virtual Size: ~ 875.87 Mb  
+- Image ID: `sha256:9b13369987247095f7de223001b62c2081f6991045d0486f74c658b0d9133280`
+- Created: `2018-06-12T00:50:13.757919055Z`
+- Virtual Size: ~ 877.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -822,9 +822,10 @@ $ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.16
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.25.dfsg1-17build1`
+- `libsasl2-modules:amd64=2.1.25.dfsg1-17build1`
 - `libsasl2-modules-db:amd64=2.1.25.dfsg1-17build1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -1358,13 +1359,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz 26135 SHA256:7252bb48df468005fca2dae0cad7e266e36864d45b57f7ea8b4bd4d3295eaabf
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.7`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.8`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.7`
-- `git-core=1:1.9.1-1ubuntu0.7`
-- `git-man=1:1.9.1-1ubuntu0.7`
+- `git=1:1.9.1-1ubuntu0.8`
+- `git-core=1:1.9.1-1ubuntu0.8`
+- `git-man=1:1.9.1-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1387,17 +1388,23 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.8.dsc' git_1.9.1-1ubuntu0.8.dsc 2808 SHA256:1b79a1ced2022c3e37302afa9f3615b81b00007f87b37278e8c7b3e1a3fbd331
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.8.debian.tar.gz' git_1.9.1-1ubuntu0.8.debian.tar.gz 682130 SHA256:32e0d02732ff5436b175b6e3f833462d85ee8c51c2431b4c385a81e90659a5b2
+```
 
 ### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1`
 
 Binary Packages:
 
 - `libglib2.0-0:amd64=2.40.2-0ubuntu1`
+- `libglib2.0-data=2.40.2-0ubuntu1`
 
-Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
 - `LGPL`
 
@@ -1472,14 +1479,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.dsc' gnupg_1.4.16-1ubuntu2.4.dsc 2354 SHA256:484156d1517096273053973420f965bb3941762d094d37878984220aad1604af
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16.orig.tar.gz' gnupg_1.4.16.orig.tar.gz 5073484 SHA256:f3af2f9c34c305869ad38b4ee7ab9e1487f50884ee8d9d42cccb31e1ced5cdef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
-```
 
 ### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 
@@ -1577,9 +1579,10 @@ $ apt-get source -qq --print-uris gtest=1.6.0-1ubuntu6
 Binary Packages:
 
 - `libgtk2.0-0:amd64=2.24.23-0ubuntu1.4`
+- `libgtk2.0-bin=2.24.23-0ubuntu1.4`
 - `libgtk2.0-common=2.24.23-0ubuntu1.4`
 
-Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-bin/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
 
 - `LGPL-2`
 - `other`
@@ -1656,6 +1659,25 @@ $ apt-get source -qq --print-uris heimdal=1.6~git20131207+dfsg-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.2.dsc' heimdal_1.6~git20131207+dfsg-1ubuntu1.2.dsc 3639 SHA256:4e5dd0d5a25ea7a1c6f99a78a9649a368db30aaf5b7f004d5e944a9e9d493956
 'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg.orig.tar.gz' heimdal_1.6~git20131207+dfsg.orig.tar.gz 9207949 SHA256:339bc6c204b5fc3a3f3bf3a1595321b41c1d5c72596c7d1f73a92133fdb30ddb
 'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.2.debian.tar.gz' heimdal_1.6~git20131207+dfsg-1ubuntu1.2.debian.tar.gz 79546 SHA256:b125636ba2648346bc7c0f0e7792636cb6e8426300ad6c33d8f38622c9325881
+```
+
+### `dpkg` source package: `hicolor-icon-theme=0.13-1`
+
+Binary Packages:
+
+- `hicolor-icon-theme=0.13-1`
+
+Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris hicolor-icon-theme=0.13-1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.13-1.dsc' hicolor-icon-theme_0.13-1.dsc 1259 SHA256:68c0f360fb2ac7775e32c5f14ac4356ef58aa38939b15b5572aef0ced9d70394
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.13.orig.tar.gz' hicolor-icon-theme_0.13.orig.tar.gz 40709 SHA256:a38b038915480d1ddd4e3c421562560a14d42ace0449a5acc07c50f57f9c3406
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.13-1.debian.tar.gz' hicolor-icon-theme_0.13-1.debian.tar.gz 3342 SHA256:ead36be120055516f938a0fd9075ccc51b4d14c2b93483a255b9ab1b5c4c51e7
 ```
 
 ### `dpkg` source package: `hostname=3.15ubuntu1`
@@ -2016,6 +2038,7 @@ $ apt-get source -qq --print-uris kmod=15-0ubuntu7
 
 Binary Packages:
 
+- `krb5-locales=1.12+dfsg-2ubuntu5.3`
 - `krb5-multidev=1.12+dfsg-2ubuntu5.3`
 - `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.3`
 - `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.3`
@@ -2026,7 +2049,7 @@ Binary Packages:
 - `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.3`
 - `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.3`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
@@ -3160,11 +3183,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-149.199`
+### `dpkg` source package: `linux=3.13.0-151.201`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-149.199`
+- `linux-libc-dev:amd64=3.13.0-151.201`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3173,10 +3196,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.13.0-149.199
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-149.199.dsc' linux_3.13.0-149.199.dsc 8127 SHA256:6263294594ee0e9041abb806044139ead659797de4d0b631bb73ef8156d508b6
+$ apt-get source -qq --print-uris linux=3.13.0-151.201
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-151.201.dsc' linux_3.13.0-151.201.dsc 8127 SHA256:9319c2126493f6dd8b244c94c10a6235cec3d7970152f063eab9eef653dd9079
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-149.199.diff.gz' linux_3.13.0-149.199.diff.gz 9656943 SHA256:beaf4b686bd12276797a61b2602cc6e6398ef985ac6cb4bb01cba2aea5b4693b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-151.201.diff.gz' linux_3.13.0-151.201.diff.gz 9663435 SHA256:04bfb8ad642ac8970fce35818d7a22bd191d064b10675261016a323f238945a0
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
@@ -4713,11 +4736,11 @@ $ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.4.tar.xz' resolvconf_1.69ubuntu1.4.tar.xz 73248 SHA256:adb1db828ac022ca8c25ae7d2b3a07b02a48622aec0305a56f8e2e64c6935342
 ```
 
-### `dpkg` source package: `ros-indigo-actionlib-msgs=1.11.9-0trusty-20170313-063739-0700`
+### `dpkg` source package: `ros-indigo-actionlib-msgs=1.11.10-0trusty-20180516-214150-0800`
 
 Binary Packages:
 
-- `ros-indigo-actionlib-msgs=1.11.9-0trusty-20170313-063739-0700`
+- `ros-indigo-actionlib-msgs=1.11.10-0trusty-20180516-214150-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4755,11 +4778,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-common-msgs=1.11.9-0trusty-20170313-092727-0700`
+### `dpkg` source package: `ros-indigo-common-msgs=1.11.10-0trusty-20180516-221301-0800`
 
 Binary Packages:
 
-- `ros-indigo-common-msgs=1.11.9-0trusty-20170313-092727-0700`
+- `ros-indigo-common-msgs=1.11.10-0trusty-20180516-221301-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4783,11 +4806,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20170313-064055-0700`
+### `dpkg` source package: `ros-indigo-diagnostic-msgs=1.11.10-0trusty-20180516-215134-0800`
 
 Binary Packages:
 
-- `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20170313-064055-0700`
+- `ros-indigo-diagnostic-msgs=1.11.10-0trusty-20180516-215134-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4853,11 +4876,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-geometry-msgs=1.11.9-0trusty-20170313-064143-0700`
+### `dpkg` source package: `ros-indigo-geometry-msgs=1.11.10-0trusty-20180516-213838-0800`
 
 Binary Packages:
 
-- `ros-indigo-geometry-msgs=1.11.9-0trusty-20170313-064143-0700`
+- `ros-indigo-geometry-msgs=1.11.10-0trusty-20180516-213838-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4923,11 +4946,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nav-msgs=1.11.9-0trusty-20170313-071702-0700`
+### `dpkg` source package: `ros-indigo-nav-msgs=1.11.10-0trusty-20180516-215649-0800`
 
 Binary Packages:
 
-- `ros-indigo-nav-msgs=1.11.9-0trusty-20170313-071702-0700`
+- `ros-indigo-nav-msgs=1.11.10-0trusty-20180516-215649-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4951,11 +4974,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-ros-core=1.1.6-0trusty-20180404-205352-0800`
+### `dpkg` source package: `ros-indigo-ros-core=1.1.6-0trusty-20180517-022911-0800`
 
 Binary Packages:
 
-- `ros-indigo-ros-core=1.1.6-0trusty-20180404-205352-0800`
+- `ros-indigo-ros-core=1.1.6-0trusty-20180517-022911-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5469,11 +5492,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-sensor-msgs=1.11.9-0trusty-20170313-084826-0700`
+### `dpkg` source package: `ros-indigo-sensor-msgs=1.11.10-0trusty-20180516-215040-0800`
 
 Binary Packages:
 
-- `ros-indigo-sensor-msgs=1.11.9-0trusty-20170313-084826-0700`
+- `ros-indigo-sensor-msgs=1.11.10-0trusty-20180516-215040-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5483,11 +5506,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-shape-msgs=1.11.9-0trusty-20170313-084827-0700`
+### `dpkg` source package: `ros-indigo-shape-msgs=1.11.10-0trusty-20180516-215506-0800`
 
 Binary Packages:
 
-- `ros-indigo-shape-msgs=1.11.9-0trusty-20170313-084827-0700`
+- `ros-indigo-shape-msgs=1.11.10-0trusty-20180516-215506-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5525,11 +5548,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-stereo-msgs=1.11.9-0trusty-20170313-085731-0700`
+### `dpkg` source package: `ros-indigo-stereo-msgs=1.11.10-0trusty-20180516-220253-0800`
 
 Binary Packages:
 
-- `ros-indigo-stereo-msgs=1.11.9-0trusty-20170313-085731-0700`
+- `ros-indigo-stereo-msgs=1.11.10-0trusty-20180516-220253-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5553,11 +5576,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-trajectory-msgs=1.11.9-0trusty-20170313-091815-0700`
+### `dpkg` source package: `ros-indigo-trajectory-msgs=1.11.10-0trusty-20180516-215648-0800`
 
 Binary Packages:
 
-- `ros-indigo-trajectory-msgs=1.11.9-0trusty-20170313-091815-0700`
+- `ros-indigo-trajectory-msgs=1.11.10-0trusty-20180516-215648-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5567,11 +5590,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-visualization-msgs=1.11.9-0trusty-20170313-092241-0700`
+### `dpkg` source package: `ros-indigo-visualization-msgs=1.11.10-0trusty-20180516-215637-0800`
 
 Binary Packages:
 
-- `ros-indigo-visualization-msgs=1.11.9-0trusty-20170313-092241-0700`
+- `ros-indigo-visualization-msgs=1.11.10-0trusty-20180516-215637-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
