@@ -1,7 +1,7 @@
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:755d334dd626adc597278a5e4d7ce18831943ba1539166ca4ebfdfb1c1b1cbb9
+$ docker pull logstash@sha256:31bd071374b156ad635eec6d95be8b1142f4bf984087f9eec269d4df74438153
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull logstash@sha256:755d334dd626adc597278a5e4d7ce18831943ba1539166ca4e
 ### `logstash:latest` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:910a93ef4d99f6f3524a6d20d4c4232e7c4e8f892bca454a12babf6dfb004e42
+$ docker pull logstash@sha256:2eb0c0119a5c99d4caf1690c9831d7c785432b61aaa507bd85fd14b774012683
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.2 MB (290153314 bytes)**  
+-	Total Size: **290.2 MB (290153478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d3eeb8f588236a863ff9c2c29bf6f6ca6e31602fbab87e7083178469a97e934`
+-	Image ID: `sha256:d3312614c883d608b033cab828a3af1fc5cde9d013496e579c19de53e89969fa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -51,35 +51,35 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 # Wed, 06 Jun 2018 18:45:19 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 06 Jun 2018 21:14:46 GMT
+# Tue, 12 Jun 2018 01:06:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https 		libzmq5 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Jun 2018 21:14:47 GMT
+# Tue, 12 Jun 2018 01:06:55 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Wed, 06 Jun 2018 21:14:47 GMT
+# Tue, 12 Jun 2018 01:06:55 GMT
 ENV GOSU_VERSION=1.10
-# Wed, 06 Jun 2018 21:14:54 GMT
+# Tue, 12 Jun 2018 01:07:01 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Wed, 06 Jun 2018 21:14:57 GMT
+# Tue, 12 Jun 2018 01:07:04 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Wed, 06 Jun 2018 21:14:58 GMT
+# Tue, 12 Jun 2018 01:07:05 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 06 Jun 2018 21:14:58 GMT
+# Tue, 12 Jun 2018 01:07:05 GMT
 ENV LOGSTASH_VERSION=5.6.9
-# Wed, 06 Jun 2018 21:14:58 GMT
+# Tue, 12 Jun 2018 01:07:05 GMT
 ENV LOGSTASH_DEB_VERSION=1:5.6.9-1
-# Wed, 06 Jun 2018 21:16:49 GMT
+# Tue, 12 Jun 2018 01:07:23 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Jun 2018 21:16:50 GMT
+# Tue, 12 Jun 2018 01:07:24 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Jun 2018 21:16:50 GMT
+# Tue, 12 Jun 2018 01:07:24 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 06 Jun 2018 21:16:51 GMT
+# Tue, 12 Jun 2018 01:07:25 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 06 Jun 2018 21:16:51 GMT
+# Tue, 12 Jun 2018 01:07:25 GMT
 COPY file:b540f903cdce9f3c92d22e6ec1673d5185797f0f604d4ddc9fdeb6fab1050a8f in / 
-# Wed, 06 Jun 2018 21:16:51 GMT
+# Tue, 12 Jun 2018 01:07:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 06 Jun 2018 21:16:51 GMT
+# Tue, 12 Jun 2018 01:07:26 GMT
 CMD ["-e" ""]
 ```
 
@@ -116,35 +116,35 @@ CMD ["-e" ""]
 		Last Modified: Wed, 06 Jun 2018 19:05:26 GMT  
 		Size: 272.2 KB (272162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921506ece6a4937958ab608f04fe1f271fdaa37e60e267a8d0f9bb400379f02b`  
-		Last Modified: Wed, 06 Jun 2018 21:18:57 GMT  
-		Size: 1.6 MB (1572367 bytes)  
+	-	`sha256:49ac27bbeaf004839e837bbcb877e6a9f6eaa99004113c4e75da7bc7782c1109`  
+		Last Modified: Tue, 12 Jun 2018 01:09:07 GMT  
+		Size: 1.6 MB (1572350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f6fe988cc31cd9658a468d2d737203d2f08541fe5466c5e536c1e36fe48ead1`  
-		Last Modified: Wed, 06 Jun 2018 21:18:57 GMT  
-		Size: 184.0 B  
+	-	`sha256:6354f010d8d0a02be03ecf66198d512b9bfc74c34cf369912986d0523fa1414a`  
+		Last Modified: Tue, 12 Jun 2018 01:09:07 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11f1c5e248e658c9959526028654f69ca568f3be7a6f7b934a017b67f45fdc1d`  
-		Last Modified: Wed, 06 Jun 2018 21:18:57 GMT  
-		Size: 500.9 KB (500915 bytes)  
+	-	`sha256:a81ea06206f57c75ecc32d22da1e97a16e6710e224d73d2d6837bfaecce39b5b`  
+		Last Modified: Tue, 12 Jun 2018 01:09:07 GMT  
+		Size: 500.9 KB (500916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcececa13042be6a8e5eba78d0c6d294a9575bf01fcc648d488510a0a214c0bc`  
-		Last Modified: Wed, 06 Jun 2018 21:18:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:255ad5f08f347453ffbcd32fec50f4726f47090244f1609d32b99b246456f2a1`  
+		Last Modified: Tue, 12 Jun 2018 01:09:04 GMT  
+		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9c29decc804ea33782b7a44cb7d80a56fe7bb7d232b276a1221a811f9118234`  
-		Last Modified: Wed, 06 Jun 2018 21:18:53 GMT  
+	-	`sha256:df5dce57024ba5cee678e93ae1474a2087b87baa80fd1ae779afd6aac123df54`  
+		Last Modified: Tue, 12 Jun 2018 01:09:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91328796cf7c06755f0ac61a17a01cf1503915f924878adba702d80ab47c3f5e`  
-		Last Modified: Wed, 06 Jun 2018 21:19:26 GMT  
-		Size: 104.4 MB (104379842 bytes)  
+	-	`sha256:68cb2c983dd918a76853f201a899f9f8e4bbcbd1529289cc825be514a2e29c43`  
+		Last Modified: Tue, 12 Jun 2018 01:09:16 GMT  
+		Size: 104.4 MB (104380025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45bba7c74e5a6cf8071b0e2d23fc4911b3365e3ab68e4eadac297cb917d7fa9a`  
-		Last Modified: Wed, 06 Jun 2018 21:18:54 GMT  
-		Size: 2.7 KB (2664 bytes)  
+	-	`sha256:3c20d5925b61c95c45f0683559b913111d9ae9c2dd68b24104c5a4fe4b5f9d76`  
+		Last Modified: Tue, 12 Jun 2018 01:09:04 GMT  
+		Size: 2.7 KB (2661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e132960bba7113e50cc4375e85e776c321f8ee913f2d9bd0fffaa4abf15659`  
-		Last Modified: Wed, 06 Jun 2018 21:18:54 GMT  
-		Size: 302.0 B  
+	-	`sha256:d7207c6af0edb3ab7d10d3f1bb4159b68236966b8bf20e4685d1db81197fe457`  
+		Last Modified: Tue, 12 Jun 2018 01:09:04 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
