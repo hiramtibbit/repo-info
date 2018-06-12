@@ -1,10 +1,10 @@
-# `openjdk:11-ea-16-jre-slim-sid`
+# `openjdk:11-ea-17-jre-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2356de6309aac531a2c86bb496fc6cbb2327dc33442896c345e1f415accbd62b`
-- Created: `2018-06-06T18:40:55.737598853Z`
-- Virtual Size: ~ 269.86 Mb  
+- Image ID: `sha256:d8b636ad9d644503a450392c093e60389c77f4cc208dd09e7de8da3d53bdcb02`
+- Created: `2018-06-12T00:29:57.466012975Z`
+- Virtual Size: ~ 270.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+16`
-  - `JAVA_DEBIAN_VERSION=11~16-1`
+  - `JAVA_VERSION=11-ea+17`
+  - `JAVA_DEBIAN_VERSION=11~17-2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -403,11 +403,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.28-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.2.7-5`
+### `dpkg` source package: `cups=2.2.8-3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.7-5`
+- `libcups2:amd64=2.2.8-3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -421,18 +421,18 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.2.7-5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-5.dsc' cups_2.2.7-5.dsc 3467 SHA256:2edc78bf555fd41f5ae10a16cefd7e1baacbc760bf29e3a86d12c7c9bcdf6674
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.7-5.debian.tar.xz' cups_2.2.7-5.debian.tar.xz 350768 SHA256:31b633d2575aa5306da3dcb056844f34bc3654d04b4c3ffeffdcdc5c4685f1b0
+$ apt-get source -qq --print-uris cups=2.2.8-3
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-3.dsc' cups_2.2.8-3.dsc 3467 SHA256:e16b5a5ac57c08459816af66e683d92b4e8740e20c728263094cce8aa73bd046
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz' cups_2.2.8.orig.tar.gz 10374921 SHA256:3968fc1d26fc48727508db1c1380e36c6694ab90177fd6920aec5f6cc73af9e4
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz.asc' cups_2.2.8.orig.tar.gz.asc 872 SHA256:2f86f5ae127169cc070da00f4460a7faf8fb4ac66b04a34adeecf451a0086781
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-3.debian.tar.xz' cups_2.2.8-3.debian.tar.xz 351036 SHA256:bb2394c24592b85a818918c32089f259d891f6c9f905fcb272a5ec72a74538e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.2.7-5/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.7-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.7-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.2.8-3/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.2.8-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.2.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -484,11 +484,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/db5.3/5.3.28-13.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/db5.3/5.3.28-13.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dbus=1.12.8-2`
+### `dpkg` source package: `dbus=1.12.8-3`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.12.8-2`
+- `libdbus-1-3:amd64=1.12.8-3`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -505,17 +505,17 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dbus=1.12.8-2
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-2.dsc' dbus_1.12.8-2.dsc 3471 SHA256:a1fbe2be6582ab4c798d86779564de17afd9da2ecc0860a3765ac61727dbff87
+$ apt-get source -qq --print-uris dbus=1.12.8-3
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.dsc' dbus_1.12.8-3.dsc 3498 SHA256:0a5edabcf62a7380fc880154acdc505dd8560f786ac1a310ed7aa82ff61886c3
 'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8.orig.tar.gz' dbus_1.12.8.orig.tar.gz 2071751 SHA256:e2dc99e7338303393b6663a98320aba6a63421bcdaaf571c8022f815e5896eb3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-2.debian.tar.xz' dbus_1.12.8-2.debian.tar.xz 60320 SHA256:69ab8f36813792343682463d19a084702ce515c2c789f4b3217d9039f87a2011
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.debian.tar.xz' dbus_1.12.8-3.debian.tar.xz 66988 SHA256:cfea04d82061a8302f93ee0a4b0b7ab01820b6b8c2b30c91d7449e4a3fee3927
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dbus/1.12.8-2/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.8-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dbus/1.12.8-3/ (for browsing the source)
+- https://sources.debian.net/src/dbus/1.12.8-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dbus/1.12.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.66`
 
@@ -1062,11 +1062,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.16-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.16-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lcms2=2.9-1`
+### `dpkg` source package: `lcms2=2.9-2`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.9-1`
+- `liblcms2-2:amd64=2.9-2`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1077,17 +1077,17 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.9-1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.dsc' lcms2_2.9-1.dsc 1985 SHA256:6c47df15d0a6434d33a48a2232ed9b59dac8840fac106ae7570fabcfef44380f
+$ apt-get source -qq --print-uris lcms2=2.9-2
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.dsc' lcms2_2.9-2.dsc 1956 SHA256:2c0db2fbde92ab2b8aecf20372e620e49bd5766c390dc541345e9c32a28f8e4b
 'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.debian.tar.xz' lcms2_2.9-1.debian.tar.xz 10040 SHA256:e2a48d8d302fc85f14439b67c9f66f341453558a16cef1991096b3acfe618b13
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.debian.tar.xz' lcms2_2.9-2.debian.tar.xz 10116 SHA256:9d6039d0d0e57594a442583922b28b0f9af37de7e630c6d4a6bcc11c397e59f7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.9-1/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lcms2/2.9-2/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.9-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -1876,11 +1876,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.37.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.37.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~16-1`
+### `dpkg` source package: `openjdk-11=11~17-2`
 
 Binary Packages:
 
-- `openjdk-11-jre-headless:amd64=11~16-1`
+- `openjdk-11-jre-headless:amd64=11~17-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -1892,17 +1892,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~16-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16-1.dsc' openjdk-11_11~16-1.dsc 4511 SHA256:58245232fb13faef48852d453b89544dcd97b5c387b4c06f479ca79e7c54ada9
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16.orig.tar.xz' openjdk-11_11~16.orig.tar.xz 77225576 SHA256:4b9df37b7d6bac44475aa10f872d2871f069397e23ca9f1f3d542a0a07fb7851
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~16-1.debian.tar.xz' openjdk-11_11~16-1.debian.tar.xz 166524 SHA256:c721a5b359b59db99b896679df19046d356c73c054ca26177584b7118b1290ea
+$ apt-get source -qq --print-uris openjdk-11=11~17-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~17-2.dsc' openjdk-11_11~17-2.dsc 4511 SHA256:63203cc06001c66a993965d6bcb6a71dd0a829192232c0fbaeffd7d3ae6fd80a
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~17.orig.tar.xz' openjdk-11_11~17.orig.tar.xz 77556488 SHA256:d36a80a4a33b1b07d0e7c20f99c73c141923e6c19dfd1504478a398663730bbe
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~17-2.debian.tar.xz' openjdk-11_11~17-2.debian.tar.xz 166624 SHA256:c99499d4b8e90abd96365eab9ea8bf399dc8642d574ca509f47040c121f2cd2a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~16-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~16-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~17-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~17-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~17-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-4`
 
@@ -1945,21 +1945,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.10-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10-2.dsc' p11-kit_0.23.10-2.dsc 2431 SHA256:97d08edfce25799c344f73f03747ea868e7e455de030e967a4306a72f1b74b7b
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10.orig.tar.gz' p11-kit_0.23.10.orig.tar.gz 1121419 SHA256:f9212a3f225ef543e13fae9945527d66c0cbb67246320035dd94fab2bce5ae43
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10.orig.tar.gz.asc' p11-kit_0.23.10.orig.tar.gz.asc 900 SHA256:a90275067d5864c7f32b5d78cf4568117894faa6956a0796d26170e07396a622
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.10-2.debian.tar.xz' p11-kit_0.23.10-2.debian.tar.xz 22240 SHA256:479025e0a37c8729c81c16e712b2cea9287674eed8d4b34e9191ab3003a8fe5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.10-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.10-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.7`
 
@@ -2139,11 +2131,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.23.1-1`
+### `dpkg` source package: `sqlite3=3.24.0-1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.23.1-1`
+- `libsqlite3-0:amd64=3.24.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2154,18 +2146,18 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.23.1-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.dsc' sqlite3_3.23.1-1.dsc 2397 SHA256:d7359aa47ae841a7dcff77199255017c9328c0d9fa62cb8e4bbaabc9c255682d
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig-www.tar.xz' sqlite3_3.23.1.orig-www.tar.xz 5298868 SHA256:aae9bf9b9f5ff3cb39ff971e4befa76dd4fff134c1e24059952c790d7c0e9123
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig.tar.xz' sqlite3_3.23.1.orig.tar.xz 6096480 SHA256:358f3eb72765fd5d272d89151649d39c9c9f15c92d15373517ab684d715957f7
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.debian.tar.xz' sqlite3_3.23.1-1.debian.tar.xz 17440 SHA256:a65dba708a204b2f37a348f556d7155398818a89586c92e3765ac776d184cb1c
+$ apt-get source -qq --print-uris sqlite3=3.24.0-1
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.dsc' sqlite3_3.24.0-1.dsc 2397 SHA256:0d9a761280a76ddbe0226297896e22e4588cd2219771564e0453874b57050935
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig-www.tar.xz' sqlite3_3.24.0.orig-www.tar.xz 5404272 SHA256:4284ce9924d5ae20e6cf32aa8c9c32b622a529bf6a0e65e51777da28034ac83e
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig.tar.xz' sqlite3_3.24.0.orig.tar.xz 6187072 SHA256:005a04905f54b648320946abac5a486276b85e285469dffa0eca8d03e9b0bf1f
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sqlite3/3.23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.23.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sqlite3/3.24.0-1/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.24.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.24.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-4`
 
