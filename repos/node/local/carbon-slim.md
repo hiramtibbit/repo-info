@@ -1,16 +1,16 @@
-# `node:8.11.2-slim`
+# `node:8.11.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3b2a57884bdcd8b6cc546c07db858a3036362f22a0e704066c1c6d21ec0d9de`
-- Created: `2018-06-06T01:50:42.995183413Z`
-- Virtual Size: ~ 181.85 Mb  
+- Image ID: `sha256:0c06b3a44d8bd42d1813ac19e1d6e1faf065087b9dc95785c7a89951df724130`
+- Created: `2018-06-13T01:17:12.910075827Z`
+- Virtual Size: ~ 181.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.11.2`
+  - `NODE_VERSION=8.11.3`
   - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1779,20 +1779,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u10
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.dsc' perl_5.20.2-3+deb8u10.dsc 2356 SHA256:83d1a00b79f831e4be65948a4bd09509cc01dfa3085605ff5e14d99d559c13c3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.debian.tar.xz' perl_5.20.2-3+deb8u10.debian.tar.xz 156452 SHA256:dc91930ad705ba38afe3cbd59ae98ec2439c860cc8636950688cb92691b04a70
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
