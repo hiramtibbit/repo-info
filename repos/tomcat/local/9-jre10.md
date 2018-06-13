@@ -937,19 +937,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.66
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.dsc' debconf_1.5.66.dsc 2059 SHA256:5b8586443a0a5a85b745b2c6b97a8aeab65be403d3f6a9ff42a7f79508a393cb
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.tar.xz' debconf_1.5.66.tar.xz 572936 SHA256:e2ba95f6e6229e4c6c8e12b8f193491b48c10479074e8de7aeb7fca2176cd657
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.66/
 
-- https://sources.debian.net/src/debconf/1.5.66/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -4513,21 +4507,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.2-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-5.dsc' perl_5.26.2-5.dsc 2780 SHA256:2923149838c3a18874a90f93d7307f0929df566bdc2ebc938fbee87c902a9827
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-5.debian.tar.xz' perl_5.26.2-5.debian.tar.xz 166656 SHA256:968768c0fc0ee0701e99776e11c7ba439001bad9b3cdfc7c2255accc9abdc52d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.2-5/
 
-- https://sources.debian.net/src/perl/5.26.2-5/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
