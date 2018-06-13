@@ -1,10 +1,10 @@
-# `nextcloud:13.0.3-fpm`
+# `nextcloud:13.0.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1d1f4f529f4df9388084e36dff00998e7c196472493b95270cb6a2be874ad4d`
-- Created: `2018-06-07T20:37:34.399688355Z`
-- Virtual Size: ~ 532.87 Mb  
+- Image ID: `sha256:207edf6b235aebf7a83e5e11b46918c11a7086b070b8a3acdd4988c7ebfd2aa7`
+- Created: `2018-06-11T23:22:37.816965676Z`
+- Virtual Size: ~ 532.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.18.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=8bd91cea072ea5b368cc9b4533a1a683eb426abdacbf024bb6ffa9b799cd3b01`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=13.0.3`
+  - `NEXTCLOUD_VERSION=13.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2358,20 +2358,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.dsc' perl_5.24.1-3+deb9u3.dsc 2372 SHA256:ef88a406368034beed653af8300842a089954623fc53bdff7fa3ef64278ed68f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.debian.tar.xz' perl_5.24.1-3+deb9u3.debian.tar.xz 178988 SHA256:ec40e37d67e05aeb3fea641dc795b5e9d3dc8bbc9943b7f5d87aad889b3ac16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkg-config=0.29-4`
 
