@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b76dbc113250225fb207ec2b8e4a195cd976dc382eade8a7eb3623859659b35c`
-- Created: `2018-06-06T21:49:21.432923387Z`
+- Image ID: `sha256:79835cf0e5e2de88e2594730626ba1d81a19fb20765a8b0d071856a4c1cc9cf2`
+- Created: `2018-06-12T01:24:34.144280315Z`
 - Virtual Size: ~ 2.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -7573,20 +7573,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.dsc' perl_5.24.1-3+deb9u3.dsc 2372 SHA256:ef88a406368034beed653af8300842a089954623fc53bdff7fa3ef64278ed68f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u3.debian.tar.xz' perl_5.24.1-3+deb9u3.debian.tar.xz 178988 SHA256:ec40e37d67e05aeb3fea641dc795b5e9d3dc8bbc9943b7f5d87aad889b3ac16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
