@@ -1,10 +1,10 @@
-# `redmine:3.4.5`
+# `redmine:3.4.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c78211c307c1e0b416dac768eebaaed3356fe02ff61a630d5d1683ccab23568`
-- Created: `2018-06-07T00:21:37.377436737Z`
-- Virtual Size: ~ 633.24 Mb  
+- Image ID: `sha256:04376db74dd8dae002c98135b5a324d6a5168568c63107bbf3ece015750913dc`
+- Created: `2018-06-12T00:33:14.342389267Z`
+- Virtual Size: ~ 633.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=v0.16.1`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.4.5`
-  - `REDMINE_DOWNLOAD_MD5=1c61ccbf3f597ebceefb05b60cc1947b`
+  - `REDMINE_VERSION=3.4.6`
+  - `REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2798,20 +2798,13 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u10
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.dsc' perl_5.20.2-3+deb8u10.dsc 2356 SHA256:83d1a00b79f831e4be65948a4bd09509cc01dfa3085605ff5e14d99d559c13c3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.debian.tar.xz' perl_5.20.2-3+deb8u10.debian.tar.xz 156452 SHA256:dc91930ad705ba38afe3cbd59ae98ec2439c860cc8636950688cb92691b04a70
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-9.4=9.4.15-0+deb8u1`
 
