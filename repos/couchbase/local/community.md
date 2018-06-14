@@ -649,14 +649,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.dsc' gnupg_1.4.20-1ubuntu3.1.dsc 2460 SHA256:d44da8008925234f403dbec9bb4baac47edb81b017728033ab258dddf032469f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
-```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
 
@@ -1367,14 +1362,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.dsc' perl_5.22.1-9ubuntu0.3.dsc 2448 SHA256:30830c674f0bcf58d018d6d1a326e8342fee37388f8593b376b863d4040a787a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
