@@ -1,7 +1,7 @@
 ## `composer:latest`
 
 ```console
-$ docker pull composer@sha256:1943fdcd78e733928faa0c6f9501db43836f8f59af53a5b5b5b6b9d2a3ecdf48
+$ docker pull composer@sha256:a8cc5a560163d510726079b8abadb4f8faececc770bbd6a065a6eb7b3b9b2806
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull composer@sha256:1943fdcd78e733928faa0c6f9501db43836f8f59af53a5b5b5
 ### `composer:latest` - linux; amd64
 
 ```console
-$ docker pull composer@sha256:eeb7aeb8773e2ff581b2d41b43cca0e09ba5e70681ea5e96f7bcc31624ff3bdb
+$ docker pull composer@sha256:24624c937393a6d19d3d2922241dd9174d3eb822732d47118c08d602dfb0f377
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.0 MB (56972789 bytes)**  
+-	Total Size: **55.5 MB (55539295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d48f2e08a83979ac32eccb19273c8048850ef6f95d5c3b5b7d159e276de5f1ba`
+-	Image ID: `sha256:a59ba324c7b2906d18f4db1f3c5b9d4f5d7470aafcd47a08bdec342a16c2f50b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -65,27 +65,27 @@ RUN docker-php-ext-enable sodium
 ENTRYPOINT ["docker-php-entrypoint"]
 # Wed, 06 Jun 2018 19:15:53 GMT
 CMD ["php" "-a"]
-# Thu, 07 Jun 2018 01:43:35 GMT
-RUN apk --no-cache add curl git subversion openssh openssl mercurial tini bash zlib-dev
-# Thu, 07 Jun 2018 01:43:36 GMT
+# Thu, 14 Jun 2018 05:19:30 GMT
+RUN apk --no-cache add git subversion openssh mercurial tini bash patch
+# Thu, 14 Jun 2018 05:19:33 GMT
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini"  && echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini"
-# Thu, 07 Jun 2018 01:44:18 GMT
-RUN docker-php-ext-install zip
-# Thu, 07 Jun 2018 01:44:18 GMT
+# Thu, 14 Jun 2018 05:20:18 GMT
+RUN apk add --no-cache --virtual .build-deps zlib-dev  && docker-php-ext-install zip  && runDeps="$(     scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions     | tr ',' '\n'     | sort -u     | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'     )"  && apk add --virtual .composer-phpext-rundeps $runDeps  && apk del .build-deps
+# Thu, 14 Jun 2018 05:20:18 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 07 Jun 2018 01:44:18 GMT
+# Thu, 14 Jun 2018 05:20:18 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 07 Jun 2018 01:44:18 GMT
+# Thu, 14 Jun 2018 05:20:18 GMT
 ENV COMPOSER_VERSION=1.6.5
-# Thu, 07 Jun 2018 01:44:21 GMT
+# Thu, 14 Jun 2018 05:20:21 GMT
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/b107d959a5924af895807021fcef4ffec5a76aa9/web/installer  && php -r "     \$signature = '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && composer --ansi --version --no-interaction  && rm -rf /tmp/* /tmp/.htaccess
-# Thu, 07 Jun 2018 01:44:21 GMT
+# Thu, 14 Jun 2018 05:20:21 GMT
 COPY file:295943a303e8f27de4302b6aa3687bce4b1d1392335efaaab9ecd37bec5ab4c5 in /docker-entrypoint.sh 
-# Thu, 07 Jun 2018 01:44:21 GMT
+# Thu, 14 Jun 2018 05:20:21 GMT
 WORKDIR /app
-# Thu, 07 Jun 2018 01:44:21 GMT
+# Thu, 14 Jun 2018 05:20:21 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 07 Jun 2018 01:44:22 GMT
+# Thu, 14 Jun 2018 05:20:22 GMT
 CMD ["composer"]
 ```
 
@@ -126,27 +126,27 @@ CMD ["composer"]
 		Last Modified: Wed, 06 Jun 2018 22:05:33 GMT  
 		Size: 70.9 KB (70867 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3892c809e3d15be4db0c6a306aac5e8be86bf072195199f43591935472176965`  
-		Last Modified: Thu, 07 Jun 2018 01:45:04 GMT  
-		Size: 27.6 MB (27629507 bytes)  
+	-	`sha256:a4b53a8cb247539b73d29b3b5f0d5b5e74fef662ce92fbae976ad81ff23ea86f`  
+		Last Modified: Thu, 14 Jun 2018 05:21:12 GMT  
+		Size: 26.2 MB (26196734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:282955695c9ff1e104c4e3ce78508c7982d2a51ce1d2e790ecd96ed5e40102d8`  
-		Last Modified: Thu, 07 Jun 2018 01:44:50 GMT  
-		Size: 280.0 B  
+	-	`sha256:92aff7ec36a9e8b8ed05697863f4e6a788ccb75a3b675d88d6548d7ca61b409f`  
+		Last Modified: Thu, 14 Jun 2018 05:20:59 GMT  
+		Size: 282.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b8db65815982d7d07612cc30e112f5436c4fe1582729fe75e4f06856e36410d`  
-		Last Modified: Thu, 07 Jun 2018 01:44:51 GMT  
-		Size: 229.7 KB (229663 bytes)  
+	-	`sha256:40f5f81fbafa43d79578d26fa1ab1e447199f47862b0ea527f36a2b8565f67ff`  
+		Last Modified: Thu, 14 Jun 2018 05:21:00 GMT  
+		Size: 228.9 KB (228938 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9d3ae59047bf386ea7796992bb1007113f6508568c369d00b71f0bdf1601e1b`  
-		Last Modified: Thu, 07 Jun 2018 01:44:51 GMT  
-		Size: 472.2 KB (472208 bytes)  
+	-	`sha256:cd679e349631da83abbbcae82d8d2cb17c926871e9d40c5b9319f8d9565faea8`  
+		Last Modified: Thu, 14 Jun 2018 05:21:00 GMT  
+		Size: 472.2 KB (472209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4df180e43f1dfd2773c02864d9d5d1b2cc8955e1e1d8cf340dc09b39a35a1c38`  
-		Last Modified: Thu, 07 Jun 2018 01:44:51 GMT  
-		Size: 534.0 B  
+	-	`sha256:b524e53ceefa051a55e2d97d65644022800d6a76cbc0739a09b422ba1af924eb`  
+		Last Modified: Thu, 14 Jun 2018 05:21:00 GMT  
+		Size: 535.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43aac01866b06b87d1156b6d0ee44e4284bcb6b700fd9a7c992cbde375b13430`  
-		Last Modified: Thu, 07 Jun 2018 01:44:50 GMT  
+	-	`sha256:66eb61ec97931c2ab4f75bb569a478a3986ad733ce22f1f65632c2b572d6ebf5`  
+		Last Modified: Thu, 14 Jun 2018 05:20:59 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
