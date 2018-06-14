@@ -1,24 +1,24 @@
-# `ghost:1.24.1`
+# `ghost:1.24.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e0c18450c7f85d79b2e2ab24ffcfc680a63c00ef0c5ce50e9c82dddd4208fb3`
-- Created: `2018-06-09T00:20:52.705069759Z`
-- Virtual Size: ~ 571.86 Mb  
+- Image ID: `sha256:75330bf68e42823a8fe8e67cf2ce3241753021bdea343cda14700e48731f3759`
+- Created: `2018-06-13T02:04:14.063645026Z`
+- Virtual Size: ~ 570.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/ghost/current/node_modules/knex-migrator/bin`
-  - `NODE_VERSION=6.14.2`
+  - `NODE_VERSION=6.14.3`
   - `YARN_VERSION=1.6.0`
   - `GOSU_VERSION=1.10`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.8.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=1.24.1`
+  - `GHOST_VERSION=1.24.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1786,20 +1786,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u10
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.dsc' perl_5.20.2-3+deb8u10.dsc 2356 SHA256:83d1a00b79f831e4be65948a4bd09509cc01dfa3085605ff5e14d99d559c13c3
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u10.debian.tar.xz' perl_5.20.2-3+deb8u10.debian.tar.xz 156452 SHA256:dc91930ad705ba38afe3cbd59ae98ec2439c860cc8636950688cb92691b04a70
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
