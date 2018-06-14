@@ -1,10 +1,10 @@
-# `neo4j:3.4.0`
+# `neo4j:3.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:386d7258246734c5774dbc44469813e203d2936594be73bf35594331f544c828`
-- Created: `2018-06-06T04:53:49.244807004Z`
-- Virtual Size: ~ 188.84 Mb  
+- Image ID: `sha256:d587e2a0bb38a488f0dea4607cf06bc4961b45fbf76104c5d112599bbed8e9d5`
+- Created: `2018-06-14T15:22:50.689769118Z`
+- Virtual Size: ~ 188.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","-g","--","/docker-entrypoint.sh"]`
@@ -15,6 +15,6 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u151`
   - `JAVA_ALPINE_VERSION=8.151.12-r0`
-  - `NEO4J_SHA256=ea04207536c91e83e1889b04ae3276876d1a9612e7fba69dbf188bb3d5e08cdd`
-  - `NEO4J_TARBALL=neo4j-community-3.4.0-unix.tar.gz`
+  - `NEO4J_SHA256=57ae9e512705b7c2f09067b6bc1c4d1727334e0081d01ce6bded65f0eb7cf7c1`
+  - `NEO4J_TARBALL=neo4j-community-3.4.1-unix.tar.gz`
   - `NEO4J_EDITION=community`
