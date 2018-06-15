@@ -1126,14 +1126,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 
 - `BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.14-2ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14-2ubuntu3.3.dsc' file_5.14-2ubuntu3.3.dsc 2089 SHA256:6935686df3c0dfc9a5d936b167f33f9629aa0e1924703c6d68d5a486317bdbc5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14.orig.tar.gz' file_5.14.orig.tar.gz 648552 SHA256:461ba01dd0900a3b7c2dcd901b04903192c07887a9c1928af0be507572c77fe4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14-2ubuntu3.3.debian.tar.xz' file_5.14-2ubuntu3.3.debian.tar.xz 41356 SHA256:7400a64b2d8d9a7c288320d42d7a77a9626ed849aaa500e902a6387155d313c2
-```
 
 ### `dpkg` source package: `findutils=4.4.2-7`
 
@@ -1458,14 +1453,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.0.22-3ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.0.22-3ubuntu1.3.dsc' gnupg2_2.0.22-3ubuntu1.3.dsc 2405 SHA256:8389d78af1bbeeddf01a11614162ad97d108deb254df0591b07755c4b6b7a0e3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.0.22.orig.tar.bz2' gnupg2_2.0.22.orig.tar.bz2 4277117 SHA256:437d0ab259854359fc48aa8795af80cff4975e559c111c92c03d0bc91408e251
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.0.22-3ubuntu1.3.debian.tar.bz2' gnupg2_2.0.22-3ubuntu1.3.debian.tar.bz2 51653 SHA256:1c1495f18ff301b923c573c3d1e80b6782082e7ad1beaaac40eaa1d011a703e6
-```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.4`
 
@@ -4066,14 +4056,9 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.4.dsc' perl_5.18.2-2ubuntu1.4.dsc 2433 SHA256:e7c855a717a871a7ab6af9cfe7e97f17dcc6be7a5b11d33dc90b5b88341b9092
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.4.debian.tar.gz' perl_5.18.2-2ubuntu1.4.debian.tar.gz 143576 SHA256:4dc4d78b83cbbe9ba7a2a1cee643767aa8ae5c6b4a34ff04943d3cda73e69746
-```
 
 ### `dpkg` source package: `pinentry=0.8.3-1ubuntu1`
 
