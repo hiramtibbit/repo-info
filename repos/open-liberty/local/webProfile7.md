@@ -1067,14 +1067,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.dsc' perl_5.22.1-9ubuntu0.3.dsc 2448 SHA256:30830c674f0bcf58d018d6d1a326e8342fee37388f8593b376b863d4040a787a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.3.debian.tar.xz' perl_5.22.1-9ubuntu0.3.debian.tar.xz 156552 SHA256:4febf3de21b4ef37be0d1d53549e6ce12199d8bd6a8a701cd9a1d98ac346f634
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
