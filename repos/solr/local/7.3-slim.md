@@ -2062,20 +2062,13 @@ Licenses: (parsed from: `/usr/share/doc/libnspr4/copyright`)
 
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.19-2
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19-2.dsc' nspr_4.19-2.dsc 1988 SHA256:d56517458e56571e17cf4323564fd66a15ed86542a04059b9230f2feb135323b
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19.orig.tar.gz' nspr_4.19.orig.tar.gz 1139967 SHA256:2ed95917fa2277910d1d1cf36030607dccc0ba522bba08e2af13c113dcd8f729
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.19-2.debian.tar.xz' nspr_4.19-2.debian.tar.xz 10524 SHA256:6eddaebb77f223b102185948113d4f9679fb82594aedd940a5c42b4efee474fa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nspr/2:4.19-2/
 
-- https://sources.debian.net/src/nspr/2:4.19-2/ (for browsing the source)
-- https://sources.debian.net/src/nspr/2:4.19-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nspr/2:4.19-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nss=2:3.37-1`
 
