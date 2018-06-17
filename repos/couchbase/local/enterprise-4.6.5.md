@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:201847312c3f565c4254fd4ab5eed32dad1544d7cd390e17610d27772b5d21dc`
-- Created: `2018-06-06T18:24:16.649946942Z`
+- Image ID: `sha256:b2d8260d376c14a50a8b8f7f9bdaa1f53ba72cf66069723c2526dc9f2a6c1a4e`
+- Created: `2018-06-14T05:23:18.737062721Z`
 - Virtual Size: ~ 608.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -646,14 +646,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 
 - `BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.14-2ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14-2ubuntu3.3.dsc' file_5.14-2ubuntu3.3.dsc 2089 SHA256:6935686df3c0dfc9a5d936b167f33f9629aa0e1924703c6d68d5a486317bdbc5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14.orig.tar.gz' file_5.14.orig.tar.gz 648552 SHA256:461ba01dd0900a3b7c2dcd901b04903192c07887a9c1928af0be507572c77fe4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.14-2ubuntu3.3.debian.tar.xz' file_5.14-2ubuntu3.3.debian.tar.xz 41356 SHA256:7400a64b2d8d9a7c288320d42d7a77a9626ed849aaa500e902a6387155d313c2
-```
 
 ### `dpkg` source package: `findutils=4.4.2-7`
 
