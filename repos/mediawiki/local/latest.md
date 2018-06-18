@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dffbab139bef37fd087198afcedfd6f2ec32bff1a52e1905e4a251fb1527c88a`
-- Created: `2018-06-07T02:45:18.999739031Z`
-- Virtual Size: ~ 697.92 Mb  
+- Image ID: `sha256:46718e6d65c167d5a620ba752f1e4b55b8812c199ec1378f4edc422e5c40a14f`
+- Created: `2018-06-15T15:23:54.215653493Z`
+- Virtual Size: ~ 677.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -26,10 +26,10 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.18.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=8bd91cea072ea5b368cc9b4533a1a683eb426abdacbf024bb6ffa9b799cd3b01`
   - `PHP_MD5=`
-  - `MEDIAWIKI_MAJOR_VERSION=1.30`
-  - `MEDIAWIKI_BRANCH=REL1_30`
-  - `MEDIAWIKI_VERSION=1.30.0`
-  - `MEDIAWIKI_SHA512=ec4aeb08c18af0e52aaf99124d43cd357328221934d593d87f38da804a2f4a5b172a114659f87f6de58c2140ee05ae14ec6a270574f655e7780a950a51178643`
+  - `MEDIAWIKI_MAJOR_VERSION=1.31`
+  - `MEDIAWIKI_BRANCH=REL1_31`
+  - `MEDIAWIKI_VERSION=1.31.0`
+  - `MEDIAWIKI_SHA512=50ad9303b0c0bd8380dea7489be18a4022d5b65a31961af8d36c3c9ff6d74cdf25e8e10137ef1e025b4287e9ee9b7e0bf4198ca342a46ab42915c91f1ddaf940`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -681,6 +681,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/debianutils/4.8.1.1/ (for browsing the source)
 - https://sources.debian.net/src/debianutils/4.8.1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/debianutils/4.8.1.1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `dh-python=2.20170125`
+
+Binary Packages:
+
+- `dh-python=2.20170125`
+
+Licenses: (parsed from: `/usr/share/doc/dh-python/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris dh-python=2.20170125
+'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20170125.dsc' dh-python_2.20170125.dsc 1908 SHA256:ef4f2951cea36ae4aac29126a1017505f98b595432fb5bdac0f21b4b4d72c1b4
+'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20170125.tar.xz' dh-python_2.20170125.tar.xz 91332 SHA256:2e09c162ee2442a03511b7ebe83896e1e3c1df79ce97a22d2f8a8b4cfec9f1e3
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dh-python/2.20170125/ (for browsing the source)
+- https://sources.debian.net/src/dh-python/2.20170125/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dh-python/2.20170125/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -2567,6 +2591,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpclib3/1.0.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpclib3/1.0.3-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `mpdecimal=2.4.2-1`
+
+Binary Packages:
+
+- `libmpdec2:amd64=2.4.2-1`
+
+Licenses: (parsed from: `/usr/share/doc/libmpdec2/copyright`)
+
+- `BSD`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mpdecimal=2.4.2-1
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_2.4.2-1.dsc' mpdecimal_2.4.2-1.dsc 1893 SHA256:5bc782829357ebc9f0c12084642319e5ac89784a119433f8bfba7a11008d7c13
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_2.4.2.orig.tar.gz' mpdecimal_2.4.2.orig.tar.gz 2271529 SHA256:83c628b90f009470981cf084c5418329c88b19835d8af3691b930afccb7d79c7
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_2.4.2-1.debian.tar.xz' mpdecimal_2.4.2-1.debian.tar.xz 5172 SHA256:b95fb775fd04a7ad34fa5bd2c222b49ee2dfd7f0e15295dbd3f7fb86a9b0194b
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mpdecimal/2.4.2-1/ (for browsing the source)
+- https://sources.debian.net/src/mpdecimal/2.4.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mpdecimal/2.4.2-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `mpfr4=3.1.5-1`
 
 Binary Packages:
@@ -3010,13 +3061,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.12-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-defaults=2.7.13-2`
+### `dpkg` source package: `python3-defaults=3.5.3-1`
 
 Binary Packages:
 
-- `libpython-stdlib:amd64=2.7.13-2`
-- `python=2.7.13-2`
-- `python-minimal=2.7.13-2`
+- `libpython3-stdlib:amd64=3.5.3-1`
+- `python3=3.5.3-1`
+- `python3-minimal=3.5.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3025,59 +3076,69 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-defaults=2.7.13-2
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.dsc' python-defaults_2.7.13-2.dsc 2677 SHA256:80d5452cde16052caa5b9c3880ed067c3d4f2e60485a56947531a6650f6e7d94
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.tar.gz' python-defaults_2.7.13-2.tar.gz 273915 SHA256:aa376f54a9b2ca59b6f051ce0b4320d95ef60f114f90d98a90e510c3968b416a
+$ apt-get source -qq --print-uris python3-defaults=3.5.3-1
+'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.5.3-1.dsc' python3-defaults_3.5.3-1.dsc 2776 SHA256:2bec1dd8a5836d5a19fbbd48d7c49aec40642669036297a34bbfd8b0b2d61439
+'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.5.3-1.tar.gz' python3-defaults_3.5.3-1.tar.gz 1007580 SHA256:aa58a9fceb9975f71be344e594393cf3384dd6b55d9541abf0bee7c5dce8ec15
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python-defaults/2.7.13-2/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.13-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3-defaults/3.5.3-1/ (for browsing the source)
+- https://sources.debian.net/src/python3-defaults/3.5.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3-defaults/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python2.7=2.7.13-2+deb9u2`
+### `dpkg` source package: `python3.5=3.5.3-1`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.13-2+deb9u2`
-- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u2`
-- `python2.7=2.7.13-2+deb9u2`
-- `python2.7-minimal=2.7.13-2+deb9u2`
+- `libpython3.5-minimal:amd64=3.5.3-1`
+- `libpython3.5-stdlib:amd64=3.5.3-1`
+- `python3.5=3.5.3-1`
+- `python3.5-minimal=3.5.3-1`
 
-Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
-- `# Licensed to PSF under a Contributor Agreement`
 - `* Permission to use this software in any way is granted without`
 - `Apache`
 - `Apache-2`
 - `Apache-2.0`
+- `By obtaining, using, and/or copying this software and/or its`
 - `Expat`
 - `GPL-2`
 - `ISC`
 - `LGPL-2.1+`
 - `PSF-2`
+- `Permission  is  hereby granted,  free  of charge,  to  any person`
 - `Permission is hereby granted, free of charge, to any person obtaining`
+- `Permission to use, copy, modify,`
 - `Python`
+- `Redistribution`
 - `This software is provided 'as-is', without any express`
 - `This software is provided as-is, without express`
+- `binary forms, with`
+- `distribute this software`
+- `distribute this software and`
+- `distribute this software for any`
 - `implied`
+- `its`
 - `see above, some license as Python`
+- `use in source`
+- `without`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.dsc' python2.7_2.7.13-2+deb9u2.dsc 3370 SHA256:1a1df934fcbc46cbca5d53fa70fd039161dbc26720e6ce74f734c177db48ef8b
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.diff.gz' python2.7_2.7.13-2+deb9u2.diff.gz 281084 SHA256:8d5f7000cc8f684d2de712aa7a8782653389873ea952ee8859aafe79790e48d6
+$ apt-get source -qq --print-uris python3.5=3.5.3-1
+'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.dsc' python3.5_3.5.3-1.dsc 3367 SHA256:5259cbb15bb93f7bdfbe9ce03a972ea47f81c86057d5939ef9ce578414b2f1de
+'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
+'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.debian.tar.xz' python3.5_3.5.3-1.debian.tar.xz 218268 SHA256:fc344383001555ff33b9509879d809e3c3749de32c052d8e24b23b2b2486ff6e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.5/3.5.3-1/ (for browsing the source)
+- https://sources.debian.net/src/python3.5/3.5.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.5/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=0.16-2`
 
