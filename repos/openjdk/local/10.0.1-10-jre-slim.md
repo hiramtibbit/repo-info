@@ -1027,20 +1027,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.9-1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.dsc' lcms2_2.9-1.dsc 1985 SHA256:6c47df15d0a6434d33a48a2232ed9b59dac8840fac106ae7570fabcfef44380f
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.debian.tar.xz' lcms2_2.9-1.debian.tar.xz 10040 SHA256:e2a48d8d302fc85f14439b67c9f66f341453558a16cef1991096b3acfe618b13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.9-1/
 
-- https://sources.debian.net/src/lcms2/2.9-1/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -1677,20 +1670,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.8.1.2-1
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.dsc' lz4_1.8.1.2-1.dsc 1943 SHA256:24677d39b0423e673f19f29d0db790123fa2e3e32268d258e1def87a172ceb15
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2.orig.tar.gz' lz4_1.8.1.2.orig.tar.gz 228640 SHA256:12f3a9e776a923275b2dc78ae138b4967ad6280863b77ff733028ce89b8123f9
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.debian.tar.xz' lz4_1.8.1.2-1.debian.tar.xz 6476 SHA256:ca5e5ec92e024067677e8fce50c88dba7e4469f9776408e7962026fd6b8b423a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.8.1.2-1/
 
-- https://sources.debian.net/src/lz4/1.8.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.8.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.8.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 

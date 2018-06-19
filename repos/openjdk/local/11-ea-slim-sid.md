@@ -681,20 +681,13 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.0.2-1
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2-1.dsc' cryptsetup_2.0.2-1.dsc 2746 SHA256:ab581ba3868db31f3a01a53a4fb7ba5d55a80ef8909a8ac9f75c708acd223cf7
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2.orig.tar.gz' cryptsetup_2.0.2.orig.tar.gz 10115459 SHA256:1b2d88ff39174d650e5c231fac3a4504109c2b4f112bf4a2242597607c7768b9
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2-1.debian.tar.xz' cryptsetup_2.0.2-1.debian.tar.xz 96076 SHA256:311827e288398c9b5a055a55dd186a5ad35873e1858b6f259b954ddced86c46b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cryptsetup/2:2.0.2-1/
 
-- https://sources.debian.net/src/cryptsetup/2:2.0.2-1/ (for browsing the source)
-- https://sources.debian.net/src/cryptsetup/2:2.0.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cryptsetup/2:2.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.8-3`
 
@@ -3673,20 +3666,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.8.1.2-1
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.dsc' lz4_1.8.1.2-1.dsc 1943 SHA256:24677d39b0423e673f19f29d0db790123fa2e3e32268d258e1def87a172ceb15
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2.orig.tar.gz' lz4_1.8.1.2.orig.tar.gz 228640 SHA256:12f3a9e776a923275b2dc78ae138b4967ad6280863b77ff733028ce89b8123f9
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.debian.tar.xz' lz4_1.8.1.2-1.debian.tar.xz 6476 SHA256:ca5e5ec92e024067677e8fce50c88dba7e4469f9776408e7962026fd6b8b423a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.8.1.2-1/
 
-- https://sources.debian.net/src/lz4/1.8.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.8.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.8.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
