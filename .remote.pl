@@ -6,10 +6,10 @@ use open ':encoding(utf8)';
 
 use Mojo::UserAgent;
 
-my $mediaManifestList = 'application/vnd.docker.distribution.manifest.list.v2+json';
-my $mediaManifestV2 = 'application/vnd.docker.distribution.manifest.v2+json';
-my $mediaManifestV1 = 'application/vnd.docker.distribution.manifest.v1+json';
-my $mediaForeignLayer = 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip';
+use constant MEDIA_MANIFEST_LIST => 'application/vnd.docker.distribution.manifest.list.v2+json';
+use constant MEDIA_MANIFEST_V2   => 'application/vnd.docker.distribution.manifest.v2+json';
+use constant MEDIA_MANIFEST_V1   => 'application/vnd.docker.distribution.manifest.v1+json';
+use constant MEDIA_FOREIGN_LAYER => 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip';
 
 # this isn't correct for Windows images, but ours usually use "SHELL" anyhow
 my @defaultShell = ('/bin/sh', '-c');
@@ -149,9 +149,9 @@ sub get_manifest {
 			# prefer a "version 2" manifest
 			# https://docs.docker.com/registry/spec/manifest-v2-2/
 			Accept => [
-				$mediaManifestList,
-				$mediaManifestV2,
-				$mediaManifestV1,
+				MEDIA_MANIFEST_LIST,
+				MEDIA_MANIFEST_V2,
+				MEDIA_MANIFEST_V1,
 			],
 		) => sub {
 			my $manifestTx = shift;
@@ -219,7 +219,7 @@ sub parse_manifest_v1_data {
 	my ($repo, $manifest, $callback) = @_;
 
 	my $data = {
-		manifestVersion => $mediaManifestV1,
+		manifestVersion => MEDIA_MANIFEST_V1,
 		manifest => $manifest,
 		imageId => undef,
 		platform => {},
@@ -276,7 +276,7 @@ sub parse_manifest_v2_data {
 		my $config = shift;
 
 		return $callback->({
-			manifestVersion => $mediaManifestV2,
+			manifestVersion => MEDIA_MANIFEST_V2,
 			manifest => $manifest,
 			imageId => $configDigest,
 			config => $config,
@@ -348,7 +348,7 @@ sub get_image_data {
 			for my $image (@{ $data->{images} }) {
 				$image->{layers} //= [];
 				for my $layer (@{ $image->{layers} }) {
-					if (defined $layer->{mediaType} && $layer->{mediaType} eq $mediaForeignLayer) {
+					if (defined $layer->{mediaType} && $layer->{mediaType} eq MEDIA_FOREIGN_LAYER) {
 						if (defined $layer->{urls} && @{ $layer->{urls} }) {
 							my $layerHeadersEnd = $layerHeadersDelay->begin(0);
 							get_foreign_headers($layer->{urls}, sub {
@@ -387,10 +387,10 @@ sub get_image_data {
 		}
 		elsif ($manifest->{schemaVersion} eq '2') {
 			# https://docs.docker.com/registry/spec/manifest-v2-2/
-			if ($manifest->{mediaType} eq $mediaManifestV2) {
+			if ($manifest->{mediaType} eq MEDIA_MANIFEST_V2) {
 				parse_manifest_v2_data($repo, $manifest, $imagesDelay->begin(0));
 			}
-			elsif ($manifest->{mediaType} eq $mediaManifestList) {
+			elsif ($manifest->{mediaType} eq MEDIA_MANIFEST_LIST) {
 				$data->{manifest} = $manifest;
 				$data->{manifestVersion} = $manifest->{mediaType};
 
@@ -410,10 +410,10 @@ sub get_image_data {
 							$subData->{platform} = $sub->{platform};
 							$subManifestEnd->($subData);
 						};
-						if ($sub->{mediaType} eq $mediaManifestV1) {
+						if ($sub->{mediaType} eq MEDIA_MANIFEST_V1) {
 							parse_manifest_v1_data($repo, $subManifest, $subDataCallback);
 						}
-						elsif ($sub->{mediaType} eq $mediaManifestV2) {
+						elsif ($sub->{mediaType} eq MEDIA_MANIFEST_V2) {
 							parse_manifest_v2_data($repo, $subManifest, $subDataCallback);
 						}
 						else {
