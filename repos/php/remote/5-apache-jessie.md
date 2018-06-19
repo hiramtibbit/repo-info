@@ -1,7 +1,7 @@
 ## `php:5-apache-jessie`
 
 ```console
-$ docker pull php@sha256:1c69566c51a1880cd6c96714126ac93bdf8e9437578de762f248d74e11d07bcc
+$ docker pull php@sha256:7d0b11f2335dedfd21efe7cda6e4395124e85fcc3365720e2905dc9ffdc3bbcc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull php@sha256:1c69566c51a1880cd6c96714126ac93bdf8e9437578de762f248d74
 ### `php:5-apache-jessie` - linux; amd64
 
 ```console
-$ docker pull php@sha256:b5711de7e50a8163cf051ca38d90da9a90584daf9d15ab50dcb8e8b5e840a2e8
+$ docker pull php@sha256:22efc74bff404b4f2257ac085fe11b1e79611a8a8138586ae1c5c19b043e61f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.0 MB (155950052 bytes)**  
+-	Total Size: **156.0 MB (155950024 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcb2eff714fe7241279047996f81d9aba3d747a5fa5d13969742591b190b3796`
+-	Image ID: `sha256:e47204d2644d5ea14df63235bb1dfcd59f274c654969c55a59c9416b09301ee6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -58,39 +58,39 @@ RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/err
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
 # Wed, 06 Jun 2018 20:01:53 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Wed, 06 Jun 2018 20:01:53 GMT
-ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Wed, 06 Jun 2018 20:01:54 GMT
+# Tue, 19 Jun 2018 00:30:49 GMT
+ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi
+# Tue, 19 Jun 2018 00:30:49 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Wed, 06 Jun 2018 20:01:54 GMT
+# Tue, 19 Jun 2018 00:30:49 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Wed, 06 Jun 2018 20:01:54 GMT
+# Tue, 19 Jun 2018 00:30:49 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Wed, 06 Jun 2018 21:34:24 GMT
+# Tue, 19 Jun 2018 01:56:20 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Wed, 06 Jun 2018 21:34:24 GMT
+# Tue, 19 Jun 2018 01:56:20 GMT
 ENV PHP_VERSION=5.6.36
-# Wed, 06 Jun 2018 21:34:25 GMT
+# Tue, 19 Jun 2018 01:56:20 GMT
 ENV PHP_URL=https://secure.php.net/get/php-5.6.36.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-5.6.36.tar.xz.asc/from/this/mirror
-# Wed, 06 Jun 2018 21:34:25 GMT
+# Tue, 19 Jun 2018 01:56:20 GMT
 ENV PHP_SHA256=18f536bf548e909b4e980379d0c4e56d024b2b1eb1c9768fd169360491f1d6dd PHP_MD5=
-# Wed, 06 Jun 2018 21:35:32 GMT
+# Tue, 19 Jun 2018 01:57:28 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Wed, 06 Jun 2018 21:35:32 GMT
+# Tue, 19 Jun 2018 01:57:28 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Wed, 06 Jun 2018 21:38:46 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--disable-cgi 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Wed, 06 Jun 2018 21:38:47 GMT
+# Tue, 19 Jun 2018 02:00:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
+# Tue, 19 Jun 2018 02:00:38 GMT
 COPY multi:c925dfb355ea16ba0238c8b6ca78d3cd7fe815932bf707b25bbf051070430157 in /usr/local/bin/ 
-# Wed, 06 Jun 2018 21:38:47 GMT
+# Tue, 19 Jun 2018 02:00:38 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 06 Jun 2018 21:38:47 GMT
+# Tue, 19 Jun 2018 02:00:38 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Wed, 06 Jun 2018 21:38:47 GMT
+# Tue, 19 Jun 2018 02:00:38 GMT
 WORKDIR /var/www/html
-# Wed, 06 Jun 2018 21:38:47 GMT
+# Tue, 19 Jun 2018 02:00:38 GMT
 EXPOSE 80/tcp
-# Wed, 06 Jun 2018 21:38:48 GMT
+# Tue, 19 Jun 2018 02:00:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -131,25 +131,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 06 Jun 2018 22:15:02 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:023ec211848a511e28b36ba66fabf244be9774897c8878705912bb7f3ecfe0ac`  
-		Last Modified: Wed, 06 Jun 2018 22:28:30 GMT  
-		Size: 12.8 MB (12820118 bytes)  
+	-	`sha256:bfa72946e2706bf113662770a78911bd1b21b976610e9b981f5348e10e467d36`  
+		Last Modified: Tue, 19 Jun 2018 02:58:08 GMT  
+		Size: 12.8 MB (12820149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96d93d5fd9f8e87a945d810a2ccb1a22ea129605b795ea6c5e4d846be37b7898`  
-		Last Modified: Wed, 06 Jun 2018 22:28:25 GMT  
-		Size: 503.0 B  
+	-	`sha256:f213e43acb9b6338320c8b4b535eb0705ed35b31110e04b7274d5e9c4e724b68`  
+		Last Modified: Tue, 19 Jun 2018 02:58:01 GMT  
+		Size: 502.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bedb263c2a992dcfdb9e01e3794e9d100f9cd8d7ab73d8b634c507ed128221a0`  
-		Last Modified: Wed, 06 Jun 2018 22:28:30 GMT  
-		Size: 9.7 MB (9720529 bytes)  
+	-	`sha256:c781ea58c41045e57c0025cde9e61479f4421a0ac0c2015fbddad07c993cbb75`  
+		Last Modified: Tue, 19 Jun 2018 02:58:06 GMT  
+		Size: 9.7 MB (9720468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93de71743ede2ace19527839a623ce15c7145c5c236ac290650f0d02f46a3f5b`  
-		Last Modified: Wed, 06 Jun 2018 22:28:25 GMT  
-		Size: 2.2 KB (2194 bytes)  
+	-	`sha256:e7cac2f9eaeecbc8f46fa31eb022c3652fd86ad7b5ae8d4f7e403bf42175ad83`  
+		Last Modified: Tue, 19 Jun 2018 02:58:01 GMT  
+		Size: 2.2 KB (2196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18935bb18c2cfda235f1fa219bad875d1699af11d9ceb1166ebe3e38db638582`  
-		Last Modified: Wed, 06 Jun 2018 22:28:25 GMT  
-		Size: 905.0 B  
+	-	`sha256:b6bb5065d97070fff75a5e41ff1aaf7d8cf1906fff6a970b58a76887a59c596c`  
+		Last Modified: Tue, 19 Jun 2018 02:58:01 GMT  
+		Size: 906.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-apache-jessie` - linux; arm variant v5
