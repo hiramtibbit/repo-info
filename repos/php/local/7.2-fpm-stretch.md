@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:084631c15c968c0af28657366e7935163dedbe50d4b50b460773b77587b310f7`
-- Created: `2018-06-06T19:06:36.72557896Z`
+- Image ID: `sha256:55034da544331812608b8af897a853b1f411fc013d781714d2e40364bb578a87`
+- Created: `2018-06-18T23:43:22.144908433Z`
 - Virtual Size: ~ 366.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
+  - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
