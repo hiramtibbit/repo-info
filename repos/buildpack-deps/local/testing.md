@@ -665,19 +665,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.66
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.dsc' debconf_1.5.66.dsc 2059 SHA256:5b8586443a0a5a85b745b2c6b97a8aeab65be403d3f6a9ff42a7f79508a393cb
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.66.tar.xz' debconf_1.5.66.tar.xz 572936 SHA256:e2ba95f6e6229e4c6c8e12b8f193491b48c10479074e8de7aeb7fca2176cd657
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.66/
 
-- https://sources.debian.net/src/debconf/1.5.66/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -3568,20 +3562,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.6-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6-2.dsc' mercurial_4.6-2.dsc 2361 SHA256:6ef43e69790aaa5edda679d7a3ae3e4b8b5973fdf4ea4d6b05966a7ec29d129e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.orig.tar.gz' mercurial_4.6.orig.tar.gz 6226745 SHA256:56ae3b10201adae37ad97fbd759cf3cea4ebe64c57641c059978c7a706ee6b49
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6-2.debian.tar.xz' mercurial_4.6-2.debian.tar.xz 61872 SHA256:b3152ccee65adb9e0ded2953fc4ee93ccb8277105c784b0c289b9f400dadd44f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.6-2/
 
-- https://sources.debian.net/src/mercurial/4.6-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -4772,21 +4759,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.dsc' subversion_1.10.0-1.dsc 3399 SHA256:1b4a7ca36f7e1f0033f6908a196f30b002e10dea0f74c6741aa4cc169678fa8e
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.debian.tar.xz' subversion_1.10.0-1.debian.tar.xz 2399756 SHA256:685452feb368fd61c4d782f035ada166662cbe99aa2c36ee2467405d3d95dba0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-1/
 
-- https://sources.debian.net/src/subversion/1.10.0-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-4`
 

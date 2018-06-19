@@ -1768,20 +1768,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.8.1.2-1
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.dsc' lz4_1.8.1.2-1.dsc 1943 SHA256:24677d39b0423e673f19f29d0db790123fa2e3e32268d258e1def87a172ceb15
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2.orig.tar.gz' lz4_1.8.1.2.orig.tar.gz 228640 SHA256:12f3a9e776a923275b2dc78ae138b4967ad6280863b77ff733028ce89b8123f9
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.debian.tar.xz' lz4_1.8.1.2-1.debian.tar.xz 6476 SHA256:ca5e5ec92e024067677e8fce50c88dba7e4469f9776408e7962026fd6b8b423a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.8.1.2-1/
 
-- https://sources.debian.net/src/lz4/1.8.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.8.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.8.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -1822,20 +1815,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.6-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6-2.dsc' mercurial_4.6-2.dsc 2361 SHA256:6ef43e69790aaa5edda679d7a3ae3e4b8b5973fdf4ea4d6b05966a7ec29d129e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.orig.tar.gz' mercurial_4.6.orig.tar.gz 6226745 SHA256:56ae3b10201adae37ad97fbd759cf3cea4ebe64c57641c059978c7a706ee6b49
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6-2.debian.tar.xz' mercurial_4.6-2.debian.tar.xz 61872 SHA256:b3152ccee65adb9e0ded2953fc4ee93ccb8277105c784b0c289b9f400dadd44f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.6-2/
 
-- https://sources.debian.net/src/mercurial/4.6-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -1848,19 +1834,13 @@ Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
 - `Bellcore`
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mime-support=3.60
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.dsc' mime-support_3.60.dsc 1605 SHA256:1c3c61f6943b130ee6518facac394b733661975955b84af640b78fa354d7595d
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.tar.gz' mime-support_3.60.tar.gz 36840 SHA256:f31d81f68dc007f56567cc14fb3b2effbd42d1dd087e414508e14e33d1a6a3a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mime-support/3.60/
 
-- https://sources.debian.net/src/mime-support/3.60/ (for browsing the source)
-- https://sources.debian.net/src/mime-support/3.60/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mime-support/3.60/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-4`
 
@@ -2612,21 +2592,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.dsc' subversion_1.10.0-1.dsc 3399 SHA256:1b4a7ca36f7e1f0033f6908a196f30b002e10dea0f74c6741aa4cc169678fa8e
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.debian.tar.xz' subversion_1.10.0-1.debian.tar.xz 2399756 SHA256:685452feb368fd61c4d782f035ada166662cbe99aa2c36ee2467405d3d95dba0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-1/
 
-- https://sources.debian.net/src/subversion/1.10.0-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=238-4`
 
