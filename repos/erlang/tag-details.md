@@ -35,6 +35,12 @@
 -	[`erlang:20.3-slim`](#erlang203-slim)
 -	[`erlang:20-alpine`](#erlang20-alpine)
 -	[`erlang:20-slim`](#erlang20-slim)
+-	[`erlang:21`](#erlang21)
+-	[`erlang:21.0`](#erlang210)
+-	[`erlang:21.0-alpine`](#erlang210-alpine)
+-	[`erlang:21.0-slim`](#erlang210-slim)
+-	[`erlang:21-alpine`](#erlang21-alpine)
+-	[`erlang:21-slim`](#erlang21-slim)
 -	[`erlang:alpine`](#erlangalpine)
 -	[`erlang:latest`](#erlanglatest)
 -	[`erlang:slim`](#erlangslim)
@@ -9670,6 +9676,30 @@ CMD ["erl"]
 		Last Modified: Fri, 15 Jun 2018 11:59:45 GMT  
 		Size: 65.6 MB (65556825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:21`
+
+**does not exist** (yet?)
+
+## `erlang:21.0`
+
+**does not exist** (yet?)
+
+## `erlang:21.0-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:21.0-slim`
+
+**does not exist** (yet?)
+
+## `erlang:21-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:21-slim`
+
+**does not exist** (yet?)
 
 ## `erlang:alpine`
 
