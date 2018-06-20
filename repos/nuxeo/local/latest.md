@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c85cc61369b47e8ac899a2ab800d34997883b03e42f12e46ea852022f5459335`
-- Created: `2018-06-12T01:26:10.2795034Z`
+- Image ID: `sha256:c269ff84e1dcf80b4546ddd07f483fe743af91978b4c13368aa48f071f616fb6`
+- Created: `2018-06-19T19:57:19.885496189Z`
 - Virtual Size: ~ 2.20 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,6 +18,7 @@
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `NUXEO_USER=nuxeo`
   - `NUXEO_HOME=/opt/nuxeo/server`
+  - `HOME=/opt/nuxeo/server`
   - `NUXEO_CONF=/etc/nuxeo/nuxeo.conf`
 
 ## `dpkg` (`.deb`-based packages)
