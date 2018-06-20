@@ -730,20 +730,13 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.0.2-1
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2-1.dsc' cryptsetup_2.0.2-1.dsc 2746 SHA256:ab581ba3868db31f3a01a53a4fb7ba5d55a80ef8909a8ac9f75c708acd223cf7
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2.orig.tar.gz' cryptsetup_2.0.2.orig.tar.gz 10115459 SHA256:1b2d88ff39174d650e5c231fac3a4504109c2b4f112bf4a2242597607c7768b9
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.2-1.debian.tar.xz' cryptsetup_2.0.2-1.debian.tar.xz 96076 SHA256:311827e288398c9b5a055a55dd186a5ad35873e1858b6f259b954ddced86c46b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cryptsetup/2:2.0.2-1/
 
-- https://sources.debian.net/src/cryptsetup/2:2.0.2-1/ (for browsing the source)
-- https://sources.debian.net/src/cryptsetup/2:2.0.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cryptsetup/2:2.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.7-3`
 
@@ -1373,20 +1366,13 @@ Licenses: (parsed from: `/usr/share/doc/libgif7/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris giflib=5.1.4-2
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4-2.dsc' giflib_5.1.4-2.dsc 1919 SHA256:ad93dac1249eecf8e9828d5588a86113ffef0e011f36e57ffb1ccf60e7f406b6
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4.orig.tar.bz2' giflib_5.1.4.orig.tar.bz2 639703 SHA256:df27ec3ff24671f80b29e6ab1c4971059c14ac3db95406884fc26574631ba8d5
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4-2.debian.tar.xz' giflib_5.1.4-2.debian.tar.xz 6988 SHA256:9430e43ee2ce876ef15deb151d360262c66405075fab297698a13ff68c123fc7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/giflib/5.1.4-2/
 
-- https://sources.debian.net/src/giflib/5.1.4-2/ (for browsing the source)
-- https://sources.debian.net/src/giflib/5.1.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/giflib/5.1.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.17.0-1`
 
@@ -2233,20 +2219,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.9-1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.dsc' lcms2_2.9-1.dsc 1985 SHA256:6c47df15d0a6434d33a48a2232ed9b59dac8840fac106ae7570fabcfef44380f
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-1.debian.tar.xz' lcms2_2.9-1.debian.tar.xz 10040 SHA256:e2a48d8d302fc85f14439b67c9f66f341453558a16cef1991096b3acfe618b13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.9-1/
 
-- https://sources.debian.net/src/lcms2/2.9-1/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.1-2`
 
@@ -2309,21 +2288,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.7-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7-1.dsc' libbsd_0.8.7-1.dsc 2181 SHA256:4354dc5d963ba909589b3a26a5e135c5a552710cdaa96fc0e76d88e9f78fe72e
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7.orig.tar.xz' libbsd_0.8.7.orig.tar.xz 371772 SHA256:f548f10e5af5a08b1e22889ce84315b1ebe41505b015c9596bad03fd13a12b31
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7.orig.tar.xz.asc' libbsd_0.8.7.orig.tar.xz.asc 833 SHA256:93ae025cc6430971572ce3c52af30a9ea8d8ae760e8759afe41fa955528617b4
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.7-1.debian.tar.xz' libbsd_0.8.7-1.debian.tar.xz 15800 SHA256:137b8bedc3dfed65a318e12642759b61bd1a469f0f02bc551fc352d889792d89
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.8.7-1/
 
-- https://sources.debian.net/src/libbsd/0.8.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.8.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.8.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-1`
 
@@ -2465,20 +2436,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20170329-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20170329-1.dsc' libedit_3.1-20170329-1.dsc 2269 SHA256:1e657cfcfbbe5c550b844f17cfeb1d8591136fa57300e6cff2b56e5a3e25ad3f
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20170329.orig.tar.gz' libedit_3.1-20170329.orig.tar.gz 508504 SHA256:91f2d90fbd2a048ff6dad7131d9a39e690fd8a8fd982a353f1333dd4017dd4be
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20170329-1.debian.tar.bz2' libedit_3.1-20170329-1.debian.tar.bz2 11267 SHA256:7dd7a23b07b082d058b7fb741d3b750b80699472e7c8efd1935a9e7c59a49a39
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20170329-1/
 
-- https://sources.debian.net/src/libedit/3.1-20170329-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20170329-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20170329-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libepoxy=1.4.3-1`
 
@@ -2518,20 +2482,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17025-1
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.dsc' liberror-perl_0.17025-1.dsc 2077 SHA256:994800c0123fe452ca1f1019e5bf71755c3200231d84999a31dd19be16ada41b
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025.orig.tar.gz' liberror-perl_0.17025.orig.tar.gz 32013 SHA256:6c9f474ad3d4fe0cabff6b6be532cb1dd348245986d4a6b600ad921d5cfdefaf
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.debian.tar.xz' liberror-perl_0.17025-1.debian.tar.xz 4108 SHA256:0288dcf7eeff5cddfaf8c6bdfbe9fc170a1d333bb6d88489ca8158c929a44f76
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17025-1/
 
-- https://sources.debian.net/src/liberror-perl/0.17025-1/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17025-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17025-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-8`
 
@@ -2627,20 +2584,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=1.0.0+git20180308-2
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-2.dsc' libglvnd_1.0.0+git20180308-2.dsc 2439 SHA256:c52a2a71b7cf59a9fbb26c9d117a9e821a124d796d0dcdb2183c21b6d888aec6
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308.orig.tar.gz' libglvnd_1.0.0+git20180308.orig.tar.gz 781370 SHA256:448d3c904145a8095bf15bf574dba2f027ed04b15e84ec2681a485269202ab8d
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-2.debian.tar.xz' libglvnd_1.0.0+git20180308-2.debian.tar.xz 19448 SHA256:6ceef08fb0a7bb28f2e1486374feed65d1ae3386294244e2630b04f76f59211d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-2/
 
-- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-2/ (for browsing the source)
-- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.29-4`
 
@@ -4044,20 +3994,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.8.1.2-1
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.dsc' lz4_1.8.1.2-1.dsc 1943 SHA256:24677d39b0423e673f19f29d0db790123fa2e3e32268d258e1def87a172ceb15
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2.orig.tar.gz' lz4_1.8.1.2.orig.tar.gz 228640 SHA256:12f3a9e776a923275b2dc78ae138b4967ad6280863b77ff733028ce89b8123f9
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.1.2-1.debian.tar.xz' lz4_1.8.1.2-1.debian.tar.xz 6476 SHA256:ca5e5ec92e024067677e8fce50c88dba7e4469f9776408e7962026fd6b8b423a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.8.1.2-1/
 
-- https://sources.debian.net/src/lz4/1.8.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.8.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.8.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4148,19 +4091,13 @@ Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
 - `Bellcore`
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mime-support=3.60
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.dsc' mime-support_3.60.dsc 1605 SHA256:1c3c61f6943b130ee6518facac394b733661975955b84af640b78fa354d7595d
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.tar.gz' mime-support_3.60.tar.gz 36840 SHA256:f31d81f68dc007f56567cc14fb3b2effbd42d1dd087e414508e14e33d1a6a3a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mime-support/3.60/
 
-- https://sources.debian.net/src/mime-support/3.60/ (for browsing the source)
-- https://sources.debian.net/src/mime-support/3.60/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mime-support/3.60/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-2`
 
@@ -5073,21 +5010,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.dsc' subversion_1.10.0-1.dsc 3399 SHA256:1b4a7ca36f7e1f0033f6908a196f30b002e10dea0f74c6741aa4cc169678fa8e
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-1.debian.tar.xz' subversion_1.10.0-1.debian.tar.xz 2399756 SHA256:685452feb368fd61c4d782f035ada166662cbe99aa2c36ee2467405d3d95dba0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-1/
 
-- https://sources.debian.net/src/subversion/1.10.0-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd-shim=10-3`
 
