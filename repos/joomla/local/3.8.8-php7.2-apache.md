@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ddec1e511a9cedf13d667c572f9e26fcca8199df8c9d69365567d59d65b545f3`
-- Created: `2018-06-07T03:30:00.887668661Z`
+- Image ID: `sha256:16ffd5d5dd2403c44403ea8b80a3004ac364864310564a4f880e1e0cdaa72296`
+- Created: `2018-06-19T03:57:54.749572731Z`
 - Virtual Size: ~ 421.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `APACHE_CONFDIR=/etc/apache2`
   - `APACHE_ENVVARS=/etc/apache2/envvars`
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
+  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
