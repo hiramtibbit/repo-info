@@ -1,10 +1,10 @@
-# `ghost:1.24.2-alpine`
+# `ghost:1.24.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bf175cb45d43d506878231ea5a943c785ba780874d1273529dfaf2ea492b5e6`
-- Created: `2018-06-13T02:06:02.520030383Z`
-- Virtual Size: ~ 450.31 Mb  
+- Image ID: `sha256:603334de009fa5d4c665f251d653be32328042dc4769f1c68be3d1472d1b823c`
+- Created: `2018-06-21T00:45:28.169849716Z`
+- Virtual Size: ~ 451.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,4 +17,4 @@
   - `GHOST_CLI_VERSION=1.8.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=1.24.2`
+  - `GHOST_VERSION=1.24.5`
