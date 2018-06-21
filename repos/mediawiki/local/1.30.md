@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66cfc18f4fda5351355c8186ad9a14adbe785bbcf6a6f9a2addeda7101f77461`
-- Created: `2018-06-07T02:52:26.03292925Z`
-- Virtual Size: ~ 690.00 Mb  
+- Image ID: `sha256:38a01bba2d62cba3216f465deb9f8ec76ee037ab59165bc2ec306166c12517b5`
+- Created: `2018-06-21T01:45:12.39328908Z`
+- Virtual Size: ~ 697.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,7 +16,7 @@
   - `APACHE_CONFDIR=/etc/apache2`
   - `APACHE_ENVVARS=/etc/apache2/envvars`
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
+  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
@@ -26,10 +26,10 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.18.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=8bd91cea072ea5b368cc9b4533a1a683eb426abdacbf024bb6ffa9b799cd3b01`
   - `PHP_MD5=`
-  - `MEDIAWIKI_MAJOR_VERSION=1.29`
-  - `MEDIAWIKI_BRANCH=REL1_29`
-  - `MEDIAWIKI_VERSION=1.29.2`
-  - `MEDIAWIKI_SHA512=53c6ca82280938d1e3281aa296f44c86dcfbbdf82710b7de578e73e1ef3150db145e059c8c8208859bc437f7a7f7a13eed896be9d44fd364a0ee6d78893fbe86`
+  - `MEDIAWIKI_MAJOR_VERSION=1.30`
+  - `MEDIAWIKI_BRANCH=REL1_30`
+  - `MEDIAWIKI_VERSION=1.30.0`
+  - `MEDIAWIKI_SHA512=ec4aeb08c18af0e52aaf99124d43cd357328221934d593d87f38da804a2f4a5b172a114659f87f6de58c2140ee05ae14ec6a270574f655e7780a950a51178643`
 
 ## `dpkg` (`.deb`-based packages)
 
