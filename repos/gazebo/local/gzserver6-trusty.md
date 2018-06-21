@@ -2222,14 +2222,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.dsc' libgcrypt11_1.5.3-2ubuntu4.5.dsc 2580 SHA256:4168dae7ba3ad78d8bebe45a28935de371bb281b89795a5ae2f76cfa3d3a5411
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2`
 
