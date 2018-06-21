@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4828ff028cad88245f06a5b8b1cb2161b87611181a04285c017983d98032a9ca`
-- Created: `2018-05-25T20:20:36.24713453Z`
-- Virtual Size: ~ 401.31 Mb  
+- Image ID: `sha256:724030be3a6e856979876d53a7339392910831a78300fe1522ac1d022016ef76`
+- Created: `2018-06-20T21:23:16.230655393Z`
+- Virtual Size: ~ 406.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -377,34 +377,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u10`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u10`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u10/
-
-
 ### `dpkg` source package: `curl=7.38.0-4+deb8u11`
 
 Binary Packages:
 
 - `libcurl3:amd64=7.38.0-4+deb8u11`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u11`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -3034,13 +3014,13 @@ Licenses: (parsed from: `/usr/share/doc/percona-xtrabackup-24/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u10`
+### `dpkg` source package: `perl=5.20.2-3+deb8u11`
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u10`
-- `perl-base=5.20.2-3+deb8u10`
-- `perl-modules=5.20.2-3+deb8u10`
+- `perl=5.20.2-3+deb8u11`
+- `perl-base=5.20.2-3+deb8u11`
+- `perl-modules=5.20.2-3+deb8u11`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -3069,13 +3049,20 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u11
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u11.dsc' perl_5.20.2-3+deb8u11.dsc 2377 SHA256:b58df3f05201f9a474157fbf3ede9d4b08beb8b3b69a882bb2c3f14eb70c1a40
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u11.debian.tar.xz' perl_5.20.2-3+deb8u11.debian.tar.xz 157516 SHA256:53e0ccd3ed238614fbcd8eb577159392892bcf82c7821f94f6ef379e8ae3a7c1
+```
 
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `popt=1.16-10`
 
