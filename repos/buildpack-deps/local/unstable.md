@@ -350,20 +350,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=4.4.18-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-2.dsc' bash_4.4.18-2.dsc 2321 SHA256:dd975e2eca220f15504fdc4515978c7e7c9e0098e73018597ebd95af3a6b1857
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18.orig.tar.xz' bash_4.4.18.orig.tar.xz 5036272 SHA256:704143a7170041ac9f1025455d6d23ff0f353711a3dc557b47d6e6322f24cd02
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-2.debian.tar.xz' bash_4.4.18-2.debian.tar.xz 58404 SHA256:539d6094b8545e3d1818d9a579b273d1a70181cf8e976ced8823e3e3247b6175
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/4.4.18-2/
 
-- https://sources.debian.net/src/bash/4.4.18-2/ (for browsing the source)
-- https://sources.debian.net/src/bash/4.4.18-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/4.4.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.30-21`
 
@@ -714,19 +707,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.4
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.4.dsc' debianutils_4.8.4.dsc 1764 SHA256:8b12921fe6e4f51d295bfd4213706d588a6c9b8bab659b0ee1fe525f37e9fbcc
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.4.tar.xz' debianutils_4.8.4.tar.xz 156344 SHA256:c061ab99aea61f892043b7624b021ab5b193e9c6bbfd474da0fbcdd506be1eb2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/4.8.4/
 
-- https://sources.debian.net/src/debianutils/4.8.4/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.8.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.8.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -824,20 +811,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.1-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-2.dsc' e2fsprogs_1.44.1-2.dsc 2491 SHA256:7614c01a383ee01e51be70ef7d81d3c72ff1ea024e87f8586c0143977759f7b5
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.1.orig.tar.gz' e2fsprogs_1.44.1.orig.tar.gz 7544908 SHA256:a5a8068dfe105050d8c63d67515a0ae5fff3f37232f725e0aa72b389eeb6c1e6
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-2.debian.tar.xz' e2fsprogs_1.44.1-2.debian.tar.xz 82036 SHA256:7dddd6eadf80040ae57bdd826fecd05d67a0ac6176053987e3b0d02e9a4a6ec4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.1-2/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.1-2/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.44.2-1`
 
@@ -960,20 +940,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.33-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.33-2.dsc' file_5.33-2.dsc 1857 SHA256:5eec2f3319ec16203ac6f8c411991f820a0a27d0ef0d5194fad3203a4e1d8abc
-'http://deb.debian.org/debian/pool/main/f/file/file_5.33.orig.tar.xz' file_5.33.orig.tar.xz 600432 SHA256:c1db43480556ca2db9dd16eb07eead1e4b5c75b3d3c703db11aa2383d08c7c7c
-'http://deb.debian.org/debian/pool/main/f/file/file_5.33-2.debian.tar.xz' file_5.33-2.debian.tar.xz 32796 SHA256:a9da024aa30479bf700c44fc894d7e9d5651f60031240b63b8b01934037d9bf0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.33-2/
 
-- https://sources.debian.net/src/file/1:5.33-2/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.33-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.33-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20171230-2`
 
@@ -2281,20 +2254,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17025-1
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.dsc' liberror-perl_0.17025-1.dsc 2077 SHA256:994800c0123fe452ca1f1019e5bf71755c3200231d84999a31dd19be16ada41b
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025.orig.tar.gz' liberror-perl_0.17025.orig.tar.gz 32013 SHA256:6c9f474ad3d4fe0cabff6b6be532cb1dd348245986d4a6b600ad921d5cfdefaf
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.debian.tar.xz' liberror-perl_0.17025-1.debian.tar.xz 4108 SHA256:0288dcf7eeff5cddfaf8c6bdfbe9fc170a1d333bb6d88489ca8158c929a44f76
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17025-1/
 
-- https://sources.debian.net/src/liberror-perl/0.17025-1/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17025-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17025-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libevent=2.1.8-stable-4`
 
@@ -2927,21 +2893,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.13-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.13-2.dsc' libtasn1-6_4.13-2.dsc 2574 SHA256:8f583c0ae8568ccf7fcf66c387963ef949d644cfca56d66512a17cb91c3a44fd
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.13.orig.tar.gz' libtasn1-6_4.13.orig.tar.gz 1891703 SHA256:7e528e8c317ddd156230c4e31d082cd13e7ddeb7a54824be82632209550c8cca
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.13.orig.tar.gz.asc' libtasn1-6_4.13.orig.tar.gz.asc 774 SHA256:90261376528edf44831d1369847088cc2fb48669860d343961daca42e674b226
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.13-2.debian.tar.xz' libtasn1-6_4.13-2.debian.tar.xz 63332 SHA256:f36a43fb898c031b6b1a5f43b35af1aea95ac164bb2b57c7f07d1c098ed9f7eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.13-2/
 
-- https://sources.debian.net/src/libtasn1-6/4.13-2/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.27-2`
 
@@ -4464,19 +4422,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.dsc' python-defaults_2.7.15~rc1-1.dsc 2633 SHA256:1089e25a274fb86e8dfbab1b661ecb5ef2b7610e1b6e3fbf8388f875758f7c2c
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-defaults/2.7.15~rc1-1/
 
-- https://sources.debian.net/src/python-defaults/2.7.15~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.15~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.15~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python2.7=2.7.15-1`
 
@@ -4794,21 +4746,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.23.1-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.dsc' sqlite3_3.23.1-1.dsc 2397 SHA256:d7359aa47ae841a7dcff77199255017c9328c0d9fa62cb8e4bbaabc9c255682d
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig-www.tar.xz' sqlite3_3.23.1.orig-www.tar.xz 5298868 SHA256:aae9bf9b9f5ff3cb39ff971e4befa76dd4fff134c1e24059952c790d7c0e9123
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1.orig.tar.xz' sqlite3_3.23.1.orig.tar.xz 6096480 SHA256:358f3eb72765fd5d272d89151649d39c9c9f15c92d15373517ab684d715957f7
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.23.1-1.debian.tar.xz' sqlite3_3.23.1-1.debian.tar.xz 17440 SHA256:a65dba708a204b2f37a348f556d7155398818a89586c92e3765ac776d184cb1c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.23.1-1/
 
-- https://sources.debian.net/src/sqlite3/3.23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.10.0-1`
 

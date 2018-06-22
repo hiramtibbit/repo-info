@@ -2239,20 +2239,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17025-1
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.dsc' liberror-perl_0.17025-1.dsc 2077 SHA256:994800c0123fe452ca1f1019e5bf71755c3200231d84999a31dd19be16ada41b
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025.orig.tar.gz' liberror-perl_0.17025.orig.tar.gz 32013 SHA256:6c9f474ad3d4fe0cabff6b6be532cb1dd348245986d4a6b600ad921d5cfdefaf
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17025-1.debian.tar.xz' liberror-perl_0.17025-1.debian.tar.xz 4108 SHA256:0288dcf7eeff5cddfaf8c6bdfbe9fc170a1d333bb6d88489ca8158c929a44f76
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17025-1/
 
-- https://sources.debian.net/src/liberror-perl/0.17025-1/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17025-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17025-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libevent=2.1.8-stable-4`
 
@@ -3581,19 +3574,13 @@ Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
 - `Bellcore`
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mime-support=3.60
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.dsc' mime-support_3.60.dsc 1605 SHA256:1c3c61f6943b130ee6518facac394b733661975955b84af640b78fa354d7595d
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.60.tar.gz' mime-support_3.60.tar.gz 36840 SHA256:f31d81f68dc007f56567cc14fb3b2effbd42d1dd087e414508e14e33d1a6a3a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mime-support/3.60/
 
-- https://sources.debian.net/src/mime-support/3.60/ (for browsing the source)
-- https://sources.debian.net/src/mime-support/3.60/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mime-support/3.60/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.1.0-1`
 
@@ -4495,20 +4482,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.5-4
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5-4.dsc' python3-stdlib-extensions_3.6.5-4.dsc 2413 SHA256:2cb496e2fa9731e8d1291ed8926f2e24f3b269cade4af33bbf16a9cbdbd23b2b
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5.orig.tar.xz' python3-stdlib-extensions_3.6.5.orig.tar.xz 1036300 SHA256:e3bc3ef0e207c0e7be2721128972d6735c05e4436fd7a1a2053182baf67d7238
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.5-4.debian.tar.xz' python3-stdlib-extensions_3.6.5-4.debian.tar.xz 17956 SHA256:587190f058b67bbcb973834eb298e8176380e6664e98fb6c16b7c700b2685675
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.5-4/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.5-4/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.6=3.6.5-9`
 
