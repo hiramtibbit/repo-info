@@ -689,14 +689,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.4.dsc' libgcrypt20_1.6.5-2ubuntu0.4.dsc 2639 SHA256:8563d406770c214117424b8d5f67bbbb44f988c18ec3bed8f593984661bff0b3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.4.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.4.debian.tar.xz 36840 SHA256:c27b1256f1d63cf3c7e410d3be397ada333be229edbfb6d24723325f7deb9748
-```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
