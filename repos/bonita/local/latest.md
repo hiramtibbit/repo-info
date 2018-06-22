@@ -1,19 +1,19 @@
-# `bonita:7.6.3`
+# `bonita:7.7.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9aa36040564ca05852f97085bd73fb86e751481126e4872cdbebaba3b9eef9a8`
-- Created: `2018-06-05T21:47:57.344708901Z`
-- Virtual Size: ~ 428.34 Mb  
+- Image ID: `sha256:befe6bd5ec2d599675620b391888d0ac5bc895096fa622c2f1b4c8cd3b5dee22`
+- Created: `2018-06-21T19:22:25.120971142Z`
+- Virtual Size: ~ 427.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.6.3`
-  - `TOMCAT_VERSION=8.5.23`
-  - `BONITA_SHA256=54c6ed105b31a216a7db513bc16abc06f8c003ea9223329285a410158e8c52fc`
-  - `BONITA_URL=https://download.forge.ow2.org/bonita/BonitaCommunity-7.6.3-Tomcat-8.5.23.zip`
+  - `BONITA_VERSION=7.7.0`
+  - `TOMCAT_VERSION=8.5.31`
+  - `BONITA_SHA256=8e5d3d3ff1954c31d8d29196799bc65955674314854ce67381e546ea40237778`
+  - `BONITA_URL=https://download.forge.ow2.org/bonita/BonitaCommunity-7.7.0-Tomcat-8.5.31.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -649,12 +649,12 @@ $ apt-get source -qq --print-uris expat=2.1.0-7ubuntu0.16.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz' expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz 22068 SHA256:691aec15db5b568d90db8f312f66af89e5f6f9848ef6061c65bbf06594f6fdb9
 ```
 
-### `dpkg` source package: `file=1:5.25-2ubuntu1`
+### `dpkg` source package: `file=1:5.25-2ubuntu1.1`
 
 Binary Packages:
 
-- `file=1:5.25-2ubuntu1`
-- `libmagic1:amd64=1:5.25-2ubuntu1`
+- `file=1:5.25-2ubuntu1.1`
+- `libmagic1:amd64=1:5.25-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagic1/copyright`)
 
@@ -667,10 +667,10 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris file=1:5.25-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.dsc' file_5.25-2ubuntu1.dsc 2230 SHA256:445934d8d9cb33039d9ac14c9145ac790eb3615364af07a04e2c2e6f3745ce37
+$ apt-get source -qq --print-uris file=1:5.25-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.dsc' file_5.25-2ubuntu1.1.dsc 2252 SHA256:3370ece4f15a7b857e7e635a7da060179571d4e772bddca6c97ce8f4ae89f5b0
 'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25.orig.tar.xz' file_5.25.orig.tar.xz 537916 SHA256:8062cae8be640ff8583b8714e394dc73c3127d23f8fe9097f1433cdb36bff31c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.debian.tar.xz' file_5.25-2ubuntu1.debian.tar.xz 33252 SHA256:1699cd2ea1fd134ced1c8002e9a60a79f531e9e4b02618b0235a6d971bdbc714
+'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.25-2ubuntu1.1.debian.tar.xz' file_5.25-2ubuntu1.1.debian.tar.xz 33712 SHA256:5dc5e368317b7a55aa8d3aeef59f4e6238b841480bae2d566e250d9a89313150
 ```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160126-2`
@@ -1352,14 +1352,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.4.dsc' libgcrypt20_1.6.5-2ubuntu0.4.dsc 2639 SHA256:8563d406770c214117424b8d5f67bbbb44f988c18ec3bed8f593984661bff0b3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.4.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.4.debian.tar.xz 36840 SHA256:c27b1256f1d63cf3c7e410d3be397ada333be229edbfb6d24723325f7deb9748
-```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -2104,11 +2099,11 @@ $ apt-get source -qq --print-uris openjdk-8=8u171-b11-0ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz 251288 SHA256:a1aeb7d0375a6dca95af9c761386bc4a3b1c8c4bdb01cf0185deaf194a5ba434
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.2`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.2`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2117,10 +2112,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.2
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.dsc' openldap_2.4.42+dfsg-2ubuntu3.2.dsc 3040 SHA256:f22b2a2b83f6b656ef96ca6b25a125399c123908cfaa9f1f503115fffa536ae7
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.3.dsc' openldap_2.4.42+dfsg-2ubuntu3.3.dsc 3054 SHA256:da68d2a61d6fe878663303f89230642e79799c6073c6bb86b94d3b09bd4fe3f5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.3.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.3.debian.tar.xz 178176 SHA256:65229120d88838c69ac4536079dd85eca8ad7f8420139fa0fdafcdfe666c990f
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.12`
