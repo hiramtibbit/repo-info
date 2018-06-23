@@ -1,10 +1,10 @@
-# `maven:3.5.3-ibmjava-8`
+# `maven:3.5.4-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a464c3c2da5bfd86a81cdfdb921bf79bde5a1054de34bf47f73f8a1611b4b198`
-- Created: `2018-06-12T01:53:27.027093606Z`
-- Virtual Size: ~ 421.93 Mb  
+- Image ID: `sha256:6e284b7a0bfd5a9746c860131c470c37c22c3de8d47a88e3f1f0a2f0541be72b`
+- Created: `2018-06-22T17:27:59.415943392Z`
+- Virtual Size: ~ 422.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
