@@ -1,7 +1,7 @@
 ## `debian:oldstable-backports`
 
 ```console
-$ docker pull debian@sha256:3269ebd4bf66b569f1d996417dfe24b7acd7c68cef34254bcd546540e1be52e1
+$ docker pull debian@sha256:a34576169c0b44cab567829f895e1171c48b499c125b6794be1005d5d7d22894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,33 +17,33 @@ $ docker pull debian@sha256:3269ebd4bf66b569f1d996417dfe24b7acd7c68cef34254bcd54
 ### `debian:oldstable-backports` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:ddbe2c60f1cd81b02827a97df73fcaf601f6d8ceaa7b9faf487ecda8e7d08637
+$ docker pull debian@sha256:a07375b7ca44b22b146cff8a42623333bb2b58afedc75eea5375bb76629a6f87
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54262779 bytes)**  
+-	Total Size: **54.3 MB (54252273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c61eda32fad5b630f8732b22f12d0e1b9b990f38bb3d1ff3d396bf482db4a1d`
+-	Image ID: `sha256:b43b7b818fce58468a14a4949fb1f5414809bc512ed2af7ddc0601a249f9ba95`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Sat, 28 Apr 2018 06:48:03 GMT
-ADD file:83bd7eb3b198b7d0f4119e9baebb32e1948ababcfde6552424bb478ea5a6bb5a in / 
-# Sat, 28 Apr 2018 06:48:04 GMT
+# Tue, 26 Jun 2018 21:22:33 GMT
+ADD file:fbb9ad61c9b463b415c98ebdea827716fe893547f36735cdb4380bdda9388f91 in / 
+# Tue, 26 Jun 2018 21:22:34 GMT
 CMD ["bash"]
-# Sat, 28 Apr 2018 06:48:28 GMT
+# Tue, 26 Jun 2018 21:22:43 GMT
 RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:0abc07726f0972e2019b666820eaaa376905507f116f702185cbfc9cf9ad81c3`  
-		Last Modified: Sat, 28 Apr 2018 08:34:06 GMT  
-		Size: 54.3 MB (54262552 bytes)  
+	-	`sha256:152f09685d7c9590a78eefdba35658b001988c7e4a03ae427427ad28b4a37da6`  
+		Last Modified: Tue, 26 Jun 2018 21:33:01 GMT  
+		Size: 54.3 MB (54252049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397c03ab2620afe9b4dd4e7a23a091949709b1432d0fdca139421412fac9ce1b`  
-		Last Modified: Sat, 28 Apr 2018 08:57:11 GMT  
-		Size: 227.0 B  
+	-	`sha256:dccffbc18bf20affffda23ba241d9c189e32f1abb156834f81977741741caa2b`  
+		Last Modified: Tue, 26 Jun 2018 21:33:25 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:oldstable-backports` - linux; arm variant v5
