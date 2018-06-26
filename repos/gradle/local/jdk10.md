@@ -1,9 +1,9 @@
-# `gradle:4.8.0-jdk10`
+# `gradle:4.8.1-jdk10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3354b1182c292edb3e3776216eb8917827e49234a995686acdb6491d412a70f`
-- Created: `2018-06-12T02:28:53.05879099Z`
+- Image ID: `sha256:b7c5f67dff65683e3a32e28691817ee6a02aa48df60b899c838fdc5ab6e02f63`
+- Created: `2018-06-25T23:23:08.489404751Z`
 - Virtual Size: ~ 951.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10.0.1+10`
   - `JAVA_DEBIAN_VERSION=10.0.1+10-4`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.8`
+  - `GRADLE_VERSION=4.8.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -225,19 +225,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.dsc' apt_1.6.1.dsc 2743 SHA256:2bd0953c1d778eb7554a6a125ab7248824549b377fb17194b36d48dc556c2adb
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.tar.xz' apt_1.6.1.tar.xz 2137808 SHA256:89ff5c6a29e550f3e96b1e9cf28ccea114965d2b5b4c008220d1625a4ca007b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.1/
 
-- https://sources.debian.net/src/apt/1.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20161029-2`
 
@@ -4319,20 +4313,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.37.1-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1-1.dsc' nss_3.37.1-1.dsc 2160 SHA256:c24f1e57ee62421c161a6d6e6dbcedaaf9ff65be38e39a9e8bda9b5fd9f1635c
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1.orig.tar.gz' nss_3.37.1.orig.tar.gz 23034142 SHA256:097b30e436479ad737b3703b25b6198b6513e202731085c6f097d8853dd20405
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1-1.debian.tar.xz' nss_3.37.1-1.debian.tar.xz 20168 SHA256:03db350efc07ce9fd3c016a7b1939c68415959916320efb1bf6be7c519e3852f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.37.1-1/
 
-- https://sources.debian.net/src/nss/2:3.37.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.37.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.37.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10.0.1+10-4`
 
