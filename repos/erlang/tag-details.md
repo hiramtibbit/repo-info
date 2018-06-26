@@ -29,6 +29,9 @@
 -	[`erlang:20`](#erlang20)
 -	[`erlang:20.3`](#erlang203)
 -	[`erlang:20.3.8`](#erlang2038)
+-	[`erlang:20.3.8.1`](#erlang20381)
+-	[`erlang:20.3.8.1-alpine`](#erlang20381-alpine)
+-	[`erlang:20.3.8.1-slim`](#erlang20381-slim)
 -	[`erlang:20.3.8-alpine`](#erlang2038-alpine)
 -	[`erlang:20.3.8-slim`](#erlang2038-slim)
 -	[`erlang:20.3-alpine`](#erlang203-alpine)
@@ -37,6 +40,9 @@
 -	[`erlang:20-slim`](#erlang20-slim)
 -	[`erlang:21`](#erlang21)
 -	[`erlang:21.0`](#erlang210)
+-	[`erlang:21.0.1`](#erlang2101)
+-	[`erlang:21.0.1-alpine`](#erlang2101-alpine)
+-	[`erlang:21.0.1-slim`](#erlang2101-slim)
 -	[`erlang:21.0-alpine`](#erlang210-alpine)
 -	[`erlang:21.0-slim`](#erlang210-slim)
 -	[`erlang:21-alpine`](#erlang21-alpine)
@@ -8330,6 +8336,18 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 3.4 MB (3380329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `erlang:20.3.8.1`
+
+**does not exist** (yet?)
+
+## `erlang:20.3.8.1-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:20.3.8.1-slim`
+
+**does not exist** (yet?)
+
 ## `erlang:20.3.8-alpine`
 
 ```console
@@ -10618,6 +10636,18 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Wed, 20 Jun 2018 12:08:54 GMT  
 		Size: 3.4 MB (3387478 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:21.0.1`
+
+**does not exist** (yet?)
+
+## `erlang:21.0.1-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:21.0.1-slim`
+
+**does not exist** (yet?)
 
 ## `erlang:21.0-alpine`
 
