@@ -21,6 +21,12 @@
 -	[`redis:4.0-alpine`](#redis40-alpine)
 -	[`redis:4-32bit`](#redis4-32bit)
 -	[`redis:4-alpine`](#redis4-alpine)
+-	[`redis:5.0-rc`](#redis50-rc)
+-	[`redis:5.0-rc3`](#redis50-rc3)
+-	[`redis:5.0-rc-32bit`](#redis50-rc-32bit)
+-	[`redis:5.0-rc3-32bit`](#redis50-rc3-32bit)
+-	[`redis:5.0-rc3-alpine`](#redis50-rc3-alpine)
+-	[`redis:5.0-rc-alpine`](#redis50-rc-alpine)
 -	[`redis:alpine`](#redisalpine)
 -	[`redis:latest`](#redislatest)
 
@@ -6804,6 +6810,30 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 Jun 2018 11:47:47 GMT  
 		Size: 400.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `redis:5.0-rc`
+
+**does not exist** (yet?)
+
+## `redis:5.0-rc3`
+
+**does not exist** (yet?)
+
+## `redis:5.0-rc-32bit`
+
+**does not exist** (yet?)
+
+## `redis:5.0-rc3-32bit`
+
+**does not exist** (yet?)
+
+## `redis:5.0-rc3-alpine`
+
+**does not exist** (yet?)
+
+## `redis:5.0-rc-alpine`
+
+**does not exist** (yet?)
 
 ## `redis:alpine`
 
