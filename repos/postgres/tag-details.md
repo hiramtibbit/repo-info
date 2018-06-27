@@ -34,7 +34,7 @@
 ## `postgres:10`
 
 ```console
-$ docker pull postgres@sha256:ea56e0ae17910aad7e32857a450fdf17bf6621453ad343c49d547a0f5c7277b7
+$ docker pull postgres@sha256:2aa5d4952a8abc5b9b71749208512ffd5a802ba31b7b05fc3c221e097165e446
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -425,125 +425,125 @@ CMD ["postgres"]
 ### `postgres:10` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:5261cfe07e023f9b500430874a1b20bf90664ddb8b026172bab6d4a7f82702f4
+$ docker pull postgres@sha256:759c0bb99fa1793761235670e446577ae4c6f7ff50065180e6dbdc7ad27ba7a2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83502524 bytes)**  
+-	Total Size: **83.5 MB (83503280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:105086360628be62956797fd97d1dbd8f5c43ece056c7cc4227cefc6590c0735`
+-	Image ID: `sha256:9facde73e07276e75350d17ae042a0534131ef8ad7b2ba22489a7d44ac169852`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 19:40:51 GMT
+# Wed, 27 Jun 2018 14:17:58 GMT
 ENV PG_MAJOR=10
-# Tue, 29 May 2018 19:40:52 GMT
+# Wed, 27 Jun 2018 14:17:59 GMT
 ENV PG_VERSION=10.4-2.pgdg90+1
-# Tue, 29 May 2018 20:11:00 GMT
+# Wed, 27 Jun 2018 14:57:17 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:11:02 GMT
+# Wed, 27 Jun 2018 14:57:19 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:11:04 GMT
+# Wed, 27 Jun 2018 14:57:21 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:11:05 GMT
+# Wed, 27 Jun 2018 14:57:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin
-# Tue, 29 May 2018 20:11:06 GMT
+# Wed, 27 Jun 2018 14:57:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:11:07 GMT
+# Wed, 27 Jun 2018 14:57:24 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:11:08 GMT
+# Wed, 27 Jun 2018 14:57:25 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:21 GMT
+# Wed, 27 Jun 2018 14:57:26 GMT
 COPY file:98ca6e65a2d4cca43a3092060e0e3fd01411004bfe737872db0a993e72513587 in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:23 GMT
+# Wed, 27 Jun 2018 14:57:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:24 GMT
+# Wed, 27 Jun 2018 14:57:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a48682352920b3ca42ec09e12d55261af9a8fe90a4f8f024bf562c8406e8be0`  
-		Last Modified: Tue, 29 May 2018 22:13:15 GMT  
-		Size: 51.7 MB (51671160 bytes)  
+	-	`sha256:1fbf27f5ef49fbc88d270ef1040076d8fd6647f5a86a04c661f5ea54688782b8`  
+		Last Modified: Wed, 27 Jun 2018 17:24:49 GMT  
+		Size: 51.7 MB (51671834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33abc36d2d7c442dabd521029437ec793f064bdfe1f615f8add874041b697bb1`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
-		Size: 7.3 KB (7303 bytes)  
+	-	`sha256:d8c58c991cea97a1b2bf260be73ffaa383380ef629dfd1e0386ba4c358171a8e`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 7.3 KB (7300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf26b60213fd8a965b840f7775afdffef6d78e4bd86388cfd3d7c03c68be5b4`  
-		Last Modified: Tue, 29 May 2018 22:12:53 GMT  
-		Size: 129.0 B  
+	-	`sha256:b75656ce850a9f95097cc2fa0997732c7d00343c97626cfbbb211e35c46f2cf1`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60cbd9c273f31d81cd27a072d76c23f67207e2f85e9e576864a68717eb37b6e3`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
+	-	`sha256:60ab62807b4d9b04dcff32ce2c7a4afa67ec242bf09081398439a7aae725fee3`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd99b9d0364390d8f6801b2175d06ae8952ca96366b14244d92e131cc0fb3ae9`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:9338be500f4bea67ce00ca5cd6c616a440ba25d5aef963b58220633857ba0d21`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 2.2 KB (2239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37832536795fb1da9308492b6270acdbb65982475190cc9cc76fc890d36f31e5`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
+	-	`sha256:2239f1878104ebbdd4b1313456c2d3d279ef45a710215a1d5f7ec6e869e52356`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -925,7 +925,7 @@ CMD ["postgres"]
 ## `postgres:10.4`
 
 ```console
-$ docker pull postgres@sha256:ea56e0ae17910aad7e32857a450fdf17bf6621453ad343c49d547a0f5c7277b7
+$ docker pull postgres@sha256:2aa5d4952a8abc5b9b71749208512ffd5a802ba31b7b05fc3c221e097165e446
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1316,125 +1316,125 @@ CMD ["postgres"]
 ### `postgres:10.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:5261cfe07e023f9b500430874a1b20bf90664ddb8b026172bab6d4a7f82702f4
+$ docker pull postgres@sha256:759c0bb99fa1793761235670e446577ae4c6f7ff50065180e6dbdc7ad27ba7a2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83502524 bytes)**  
+-	Total Size: **83.5 MB (83503280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:105086360628be62956797fd97d1dbd8f5c43ece056c7cc4227cefc6590c0735`
+-	Image ID: `sha256:9facde73e07276e75350d17ae042a0534131ef8ad7b2ba22489a7d44ac169852`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 19:40:51 GMT
+# Wed, 27 Jun 2018 14:17:58 GMT
 ENV PG_MAJOR=10
-# Tue, 29 May 2018 19:40:52 GMT
+# Wed, 27 Jun 2018 14:17:59 GMT
 ENV PG_VERSION=10.4-2.pgdg90+1
-# Tue, 29 May 2018 20:11:00 GMT
+# Wed, 27 Jun 2018 14:57:17 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:11:02 GMT
+# Wed, 27 Jun 2018 14:57:19 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:11:04 GMT
+# Wed, 27 Jun 2018 14:57:21 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:11:05 GMT
+# Wed, 27 Jun 2018 14:57:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin
-# Tue, 29 May 2018 20:11:06 GMT
+# Wed, 27 Jun 2018 14:57:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:11:07 GMT
+# Wed, 27 Jun 2018 14:57:24 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:11:08 GMT
+# Wed, 27 Jun 2018 14:57:25 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:21 GMT
+# Wed, 27 Jun 2018 14:57:26 GMT
 COPY file:98ca6e65a2d4cca43a3092060e0e3fd01411004bfe737872db0a993e72513587 in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:23 GMT
+# Wed, 27 Jun 2018 14:57:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:24 GMT
+# Wed, 27 Jun 2018 14:57:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a48682352920b3ca42ec09e12d55261af9a8fe90a4f8f024bf562c8406e8be0`  
-		Last Modified: Tue, 29 May 2018 22:13:15 GMT  
-		Size: 51.7 MB (51671160 bytes)  
+	-	`sha256:1fbf27f5ef49fbc88d270ef1040076d8fd6647f5a86a04c661f5ea54688782b8`  
+		Last Modified: Wed, 27 Jun 2018 17:24:49 GMT  
+		Size: 51.7 MB (51671834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33abc36d2d7c442dabd521029437ec793f064bdfe1f615f8add874041b697bb1`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
-		Size: 7.3 KB (7303 bytes)  
+	-	`sha256:d8c58c991cea97a1b2bf260be73ffaa383380ef629dfd1e0386ba4c358171a8e`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 7.3 KB (7300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf26b60213fd8a965b840f7775afdffef6d78e4bd86388cfd3d7c03c68be5b4`  
-		Last Modified: Tue, 29 May 2018 22:12:53 GMT  
-		Size: 129.0 B  
+	-	`sha256:b75656ce850a9f95097cc2fa0997732c7d00343c97626cfbbb211e35c46f2cf1`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60cbd9c273f31d81cd27a072d76c23f67207e2f85e9e576864a68717eb37b6e3`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
+	-	`sha256:60ab62807b4d9b04dcff32ce2c7a4afa67ec242bf09081398439a7aae725fee3`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd99b9d0364390d8f6801b2175d06ae8952ca96366b14244d92e131cc0fb3ae9`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:9338be500f4bea67ce00ca5cd6c616a440ba25d5aef963b58220633857ba0d21`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 2.2 KB (2239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37832536795fb1da9308492b6270acdbb65982475190cc9cc76fc890d36f31e5`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
+	-	`sha256:2239f1878104ebbdd4b1313456c2d3d279ef45a710215a1d5f7ec6e869e52356`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3022,7 +3022,7 @@ CMD ["postgres"]
 ## `postgres:11`
 
 ```console
-$ docker pull postgres@sha256:438deacda58af16fd2c98c0897e70ec3e0236bf83509509e33fa9f74593772c7
+$ docker pull postgres@sha256:c74c470f437a5541fa11cec6238cb1ab434ed7097a35ed4582559ef7f5e98034
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3413,125 +3413,125 @@ CMD ["postgres"]
 ### `postgres:11` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:6ded321cdd5e1f935a39f2ca9d382e8c5a1eed584a8807ec627cae3599c59c6a
+$ docker pull postgres@sha256:d71badbd4680ed4451241baaef863579be32620ca2f471ece507dcd05fc3bd7f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.8 MB (83774844 bytes)**  
+-	Total Size: **83.8 MB (83775170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9b92d185281863704ab5c36364fd3b2eb7344f7fc88819b032b6fdbea26d373`
+-	Image ID: `sha256:f19e304124822eec71ee091deecb2205e6331aa2026cac3e16049a98e27633c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Thu, 31 May 2018 09:33:02 GMT
+# Wed, 27 Jun 2018 13:39:28 GMT
 ENV PG_MAJOR=11
-# Thu, 31 May 2018 09:33:03 GMT
+# Wed, 27 Jun 2018 13:39:29 GMT
 ENV PG_VERSION=11~beta1-2.pgdg90+1
-# Thu, 31 May 2018 10:09:41 GMT
+# Wed, 27 Jun 2018 14:16:56 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Thu, 31 May 2018 10:09:46 GMT
+# Wed, 27 Jun 2018 14:17:05 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Thu, 31 May 2018 10:09:49 GMT
+# Wed, 27 Jun 2018 14:17:09 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Thu, 31 May 2018 10:09:50 GMT
+# Wed, 27 Jun 2018 14:17:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin
-# Thu, 31 May 2018 10:09:51 GMT
+# Wed, 27 Jun 2018 14:17:12 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Thu, 31 May 2018 10:09:55 GMT
+# Wed, 27 Jun 2018 14:17:17 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Thu, 31 May 2018 10:09:56 GMT
+# Wed, 27 Jun 2018 14:17:18 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:11:50 GMT
+# Wed, 27 Jun 2018 14:17:20 GMT
 COPY file:98ca6e65a2d4cca43a3092060e0e3fd01411004bfe737872db0a993e72513587 in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:11:55 GMT
+# Wed, 27 Jun 2018 14:17:23 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:11:56 GMT
+# Wed, 27 Jun 2018 14:17:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:11:57 GMT
+# Wed, 27 Jun 2018 14:17:27 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:11:57 GMT
+# Wed, 27 Jun 2018 14:17:28 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8f9f08cf09f5b8de3fe3513b0328f818c2d0f8c106f52d6f097b000e3c800fd`  
-		Last Modified: Thu, 31 May 2018 10:19:51 GMT  
-		Size: 51.9 MB (51943293 bytes)  
+	-	`sha256:67682ea67d0dfd4766c0fd4e0b098518819891df5d5a22debda773a019976a10`  
+		Last Modified: Wed, 27 Jun 2018 17:24:01 GMT  
+		Size: 51.9 MB (51943539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f350ab1159c24bb490cd553431efe01be718eae74d00c0fff31084ede594a1b`  
-		Last Modified: Thu, 31 May 2018 10:18:48 GMT  
-		Size: 7.5 KB (7489 bytes)  
+	-	`sha256:46a3069de5f9870dfef9fb44549130ff59b24061c47ea92e8a1966bf2763ec38`  
+		Last Modified: Wed, 27 Jun 2018 17:23:39 GMT  
+		Size: 7.5 KB (7488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e475a140d73bbae658c161fafe3ee725923b17d046b31532c4aacdfe403ee9`  
-		Last Modified: Thu, 31 May 2018 10:18:48 GMT  
-		Size: 129.0 B  
+	-	`sha256:1af4c1780a1f434631ae65a59d9744487957159c0bb46f25a6496b37bbec6c1f`  
+		Last Modified: Wed, 27 Jun 2018 17:23:40 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5474b11d371b2fe4e29bdc343a1388c9332e23692444739b1a4f0f37b10ea98d`  
-		Last Modified: Thu, 31 May 2018 10:18:47 GMT  
-		Size: 173.0 B  
+	-	`sha256:261c91726513be04b422eb440f530add9e7f777e99df38ea046ffa602d5e71ac`  
+		Last Modified: Wed, 27 Jun 2018 17:23:39 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6af92f8edd9e063bf8726dbe2eca94b9b260c6832507ccb106b1ede642017fdf`  
-		Last Modified: Sat, 09 Jun 2018 09:14:47 GMT  
+	-	`sha256:3d9ffbbfd6c3ed237e3bae015512e748e29446c7cce8b372d803eace873737c8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:38 GMT  
 		Size: 2.2 KB (2237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e290770cef3bff73e424fdea639e1a37ed5e92b98de142d142525bf82dde1440`  
-		Last Modified: Sat, 09 Jun 2018 09:14:48 GMT  
+	-	`sha256:11ad6cd2fd46e63e4bbee2e64e42e130815bea85ceff9f4343f2c86f289c9024`  
+		Last Modified: Wed, 27 Jun 2018 17:23:39 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6010,7 +6010,7 @@ CMD ["postgres"]
 ## `postgres:9`
 
 ```console
-$ docker pull postgres@sha256:dc4674a9e9395baf9723648df28c5899811d58a9e0ef4e3401f612784f9e8f06
+$ docker pull postgres@sha256:2b7f14abf8434e154bc24026170f9f9477216812d8fbf4c8f29be5ae04371edd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6401,126 +6401,126 @@ CMD ["postgres"]
 ### `postgres:9` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:cc355344aa5215b20ae6fc323ae26b4d1940b6efdce22791180ed0e471683fcd
+$ docker pull postgres@sha256:66ce200a4037a4f591f9d27b1910e5db8e124b14e60691666e3d4e70e68c3fe6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.6 MB (83563301 bytes)**  
+-	Total Size: **83.6 MB (83564423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abb25a64fa109d674e6775a9c455360c4d54d4fdc6825e65784fe9782961964`
+-	Image ID: `sha256:dcecc2baa1e8f801f2875253f5c2ce913821d582099f96c860c31be66cb69625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 20:11:54 GMT
+# Wed, 27 Jun 2018 14:58:00 GMT
 ENV PG_MAJOR=9.6
-# Tue, 29 May 2018 20:11:55 GMT
+# Wed, 27 Jun 2018 14:58:01 GMT
 ENV PG_VERSION=9.6.9-2.pgdg90+1
-# Tue, 29 May 2018 20:43:16 GMT
+# Wed, 27 Jun 2018 15:37:11 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:43:18 GMT
+# Wed, 27 Jun 2018 15:37:16 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:43:20 GMT
+# Wed, 27 Jun 2018 15:37:20 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:27 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:48 GMT
+# Wed, 27 Jun 2018 15:37:33 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:37 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:51 GMT
+# Wed, 27 Jun 2018 15:37:41 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:52 GMT
+# Wed, 27 Jun 2018 15:37:43 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec9df73bd3624ff9024e3260aaca2bcbcc12bacd263f4e3de9911c4c59d1abb4`  
-		Last Modified: Tue, 29 May 2018 22:15:00 GMT  
-		Size: 51.7 MB (51732126 bytes)  
+	-	`sha256:5a839c26091a980a35318e4ed00aa8c9bb6238c629be64c28c3d129abfb19191`  
+		Last Modified: Wed, 27 Jun 2018 17:25:48 GMT  
+		Size: 51.7 MB (51733172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8619677a421dd34c6fcf75b5e06b839d250b500d9d9d60d7002b58f95b097c3f`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 7.1 KB (7112 bytes)  
+	-	`sha256:baf8fc85fd375cde4206db1f3de81ed18746b7ffcaa125a4b0190ed4534d9395`  
+		Last Modified: Wed, 27 Jun 2018 17:25:27 GMT  
+		Size: 7.1 KB (7109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f20c4377935b9e2899bb0ad39a9f32092442db9017a7e201d14d8e2b9b6222e`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 129.0 B  
+	-	`sha256:744a90f79249a0e28bb7540a7c1778de88b5968a96650ce41d9a804cdc8764b5`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:767fd6b607d4a4d93a076ab1a1dccecd00eeef7e275f902c622ea441291be555`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:5ac3aebef851c38808a6963addcba3547ddf7fe9d0651eeaf1da60714ecf6e9c`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cec0ff49c84705dfdb40eb6ffdf853d0869000e16f57acb9503e0358b0e242`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 2.2 KB (2238 bytes)  
+	-	`sha256:df3a86a94f981b870f60868decae8ae529088d75da7ef8c96ef6cc30c8f41884`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 2.2 KB (2237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6776d304ccd762005e9f8ca7fd28f8db746402f8245562bc93e992d55ab300e7`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 121.0 B  
+	-	`sha256:28e20f9165c174f8c2f94484fa3281f2f996bcfba8b8723fb68de7df273d6e65`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9` - linux; 386
@@ -6901,7 +6901,7 @@ CMD ["postgres"]
 ## `postgres:9.3`
 
 ```console
-$ docker pull postgres@sha256:c0df37047497b6c8371dfbd5df4c5314ebbafc5466db00424c7d5fa790a31ec0
+$ docker pull postgres@sha256:69c906d802669306ac92e34d650794611f767ea9b450594fffc971e04b1f0e6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7292,126 +7292,126 @@ CMD ["postgres"]
 ### `postgres:9.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:f4a5554ccb1a82466bd40a53bb2bddb351c448b64807361921aa1370c7b4c562
+$ docker pull postgres@sha256:140ebdfccab5cbf4ca114340d297e6480def1c4eecaa25c71943ebd5aa5ef1ef
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82385734 bytes)**  
+-	Total Size: **82.4 MB (82386943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d65dc9f4fe528490e35eaf9a517199cd653be19fdb89b3936131133d1930ded`
+-	Image ID: `sha256:21b77b9e8edf46f2bbc8f5c58cd4cc9bb34d2ce5e57f15c0351a559fc0e4f700`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 21:44:34 GMT
+# Wed, 27 Jun 2018 16:45:16 GMT
 ENV PG_MAJOR=9.3
-# Tue, 29 May 2018 21:44:35 GMT
+# Wed, 27 Jun 2018 16:45:16 GMT
 ENV PG_VERSION=9.3.23-2.pgdg90+1
-# Tue, 29 May 2018 22:11:49 GMT
+# Wed, 27 Jun 2018 17:22:36 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 22:11:52 GMT
+# Wed, 27 Jun 2018 17:22:41 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 22:11:54 GMT
+# Wed, 27 Jun 2018 17:22:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 22:11:55 GMT
+# Wed, 27 Jun 2018 17:22:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.3/bin
-# Tue, 29 May 2018 22:11:56 GMT
+# Wed, 27 Jun 2018 17:22:47 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 22:11:57 GMT
+# Wed, 27 Jun 2018 17:22:52 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 22:11:58 GMT
+# Wed, 27 Jun 2018 17:22:53 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:14:09 GMT
+# Wed, 27 Jun 2018 17:22:55 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:14:11 GMT
+# Wed, 27 Jun 2018 17:23:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:14:12 GMT
+# Wed, 27 Jun 2018 17:23:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:14:13 GMT
+# Wed, 27 Jun 2018 17:23:06 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:14:13 GMT
+# Wed, 27 Jun 2018 17:23:08 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f8d05bd3c973a3688c2694c842c29ea5e6fa0a77b33bed76645cc26d1bed176`  
-		Last Modified: Tue, 29 May 2018 22:19:53 GMT  
-		Size: 50.6 MB (50555164 bytes)  
+	-	`sha256:1bdbbed11d7316784267863409210fb25c0a211316b4b298bf8ebb8aedc3bcaf`  
+		Last Modified: Wed, 27 Jun 2018 17:28:36 GMT  
+		Size: 50.6 MB (50556291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7de534ff2f044d3c6e067622e550fdb30d3ba557da6859f0f631cbe189ad295e`  
-		Last Modified: Tue, 29 May 2018 22:19:32 GMT  
-		Size: 6.5 KB (6511 bytes)  
+	-	`sha256:94cbeb45ef9baa8e5b13733f1289093b9e056427718a73f699b179cfaea20109`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 6.5 KB (6506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b23bc4babc4e82cfcc57e302c125ccbc9aaca4cf071634b96f59e07203be437f`  
-		Last Modified: Tue, 29 May 2018 22:19:33 GMT  
-		Size: 130.0 B  
+	-	`sha256:d2d80477c1f2fbf91565713cf75369e1016010d94bb5088c25581e1154d9f2ed`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dd470861c4ddd3a12b835c5c6d40aa87c3ad454385e65e74399e0b71bd95c7`  
-		Last Modified: Tue, 29 May 2018 22:19:33 GMT  
-		Size: 170.0 B  
+	-	`sha256:12384e173d5498affa4128744b8d46de8dbbc0f452c6dddfd3991d1634f92723`  
+		Last Modified: Wed, 27 Jun 2018 17:28:14 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79cb2d6d613b2852cd2452b7ea9bd13064c7268ff9ad61caa2942472725d2852`  
-		Last Modified: Sat, 09 Jun 2018 09:18:07 GMT  
-		Size: 2.2 KB (2236 bytes)  
+	-	`sha256:a5dfa907b2d1c540f2bd846de71f01918c4100b29d9e61ada5249191be2e3b83`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 2.2 KB (2242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc2aa90ef5e82041829baa2859008a7d46a596e0cd0e88943855c03d4fd432ba`  
-		Last Modified: Sat, 09 Jun 2018 09:18:07 GMT  
-		Size: 121.0 B  
+	-	`sha256:ec565c1a79fadcb95a93b1270848a58f605a471be5af672fb478a25f3e8bd5c5`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.3` - linux; 386
@@ -7792,7 +7792,7 @@ CMD ["postgres"]
 ## `postgres:9.3.23`
 
 ```console
-$ docker pull postgres@sha256:c0df37047497b6c8371dfbd5df4c5314ebbafc5466db00424c7d5fa790a31ec0
+$ docker pull postgres@sha256:69c906d802669306ac92e34d650794611f767ea9b450594fffc971e04b1f0e6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8183,126 +8183,126 @@ CMD ["postgres"]
 ### `postgres:9.3.23` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:f4a5554ccb1a82466bd40a53bb2bddb351c448b64807361921aa1370c7b4c562
+$ docker pull postgres@sha256:140ebdfccab5cbf4ca114340d297e6480def1c4eecaa25c71943ebd5aa5ef1ef
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82385734 bytes)**  
+-	Total Size: **82.4 MB (82386943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d65dc9f4fe528490e35eaf9a517199cd653be19fdb89b3936131133d1930ded`
+-	Image ID: `sha256:21b77b9e8edf46f2bbc8f5c58cd4cc9bb34d2ce5e57f15c0351a559fc0e4f700`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 21:44:34 GMT
+# Wed, 27 Jun 2018 16:45:16 GMT
 ENV PG_MAJOR=9.3
-# Tue, 29 May 2018 21:44:35 GMT
+# Wed, 27 Jun 2018 16:45:16 GMT
 ENV PG_VERSION=9.3.23-2.pgdg90+1
-# Tue, 29 May 2018 22:11:49 GMT
+# Wed, 27 Jun 2018 17:22:36 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 22:11:52 GMT
+# Wed, 27 Jun 2018 17:22:41 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 22:11:54 GMT
+# Wed, 27 Jun 2018 17:22:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 22:11:55 GMT
+# Wed, 27 Jun 2018 17:22:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.3/bin
-# Tue, 29 May 2018 22:11:56 GMT
+# Wed, 27 Jun 2018 17:22:47 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 22:11:57 GMT
+# Wed, 27 Jun 2018 17:22:52 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 22:11:58 GMT
+# Wed, 27 Jun 2018 17:22:53 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:14:09 GMT
+# Wed, 27 Jun 2018 17:22:55 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:14:11 GMT
+# Wed, 27 Jun 2018 17:23:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:14:12 GMT
+# Wed, 27 Jun 2018 17:23:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:14:13 GMT
+# Wed, 27 Jun 2018 17:23:06 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:14:13 GMT
+# Wed, 27 Jun 2018 17:23:08 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f8d05bd3c973a3688c2694c842c29ea5e6fa0a77b33bed76645cc26d1bed176`  
-		Last Modified: Tue, 29 May 2018 22:19:53 GMT  
-		Size: 50.6 MB (50555164 bytes)  
+	-	`sha256:1bdbbed11d7316784267863409210fb25c0a211316b4b298bf8ebb8aedc3bcaf`  
+		Last Modified: Wed, 27 Jun 2018 17:28:36 GMT  
+		Size: 50.6 MB (50556291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7de534ff2f044d3c6e067622e550fdb30d3ba557da6859f0f631cbe189ad295e`  
-		Last Modified: Tue, 29 May 2018 22:19:32 GMT  
-		Size: 6.5 KB (6511 bytes)  
+	-	`sha256:94cbeb45ef9baa8e5b13733f1289093b9e056427718a73f699b179cfaea20109`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 6.5 KB (6506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b23bc4babc4e82cfcc57e302c125ccbc9aaca4cf071634b96f59e07203be437f`  
-		Last Modified: Tue, 29 May 2018 22:19:33 GMT  
-		Size: 130.0 B  
+	-	`sha256:d2d80477c1f2fbf91565713cf75369e1016010d94bb5088c25581e1154d9f2ed`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9dd470861c4ddd3a12b835c5c6d40aa87c3ad454385e65e74399e0b71bd95c7`  
-		Last Modified: Tue, 29 May 2018 22:19:33 GMT  
-		Size: 170.0 B  
+	-	`sha256:12384e173d5498affa4128744b8d46de8dbbc0f452c6dddfd3991d1634f92723`  
+		Last Modified: Wed, 27 Jun 2018 17:28:14 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79cb2d6d613b2852cd2452b7ea9bd13064c7268ff9ad61caa2942472725d2852`  
-		Last Modified: Sat, 09 Jun 2018 09:18:07 GMT  
-		Size: 2.2 KB (2236 bytes)  
+	-	`sha256:a5dfa907b2d1c540f2bd846de71f01918c4100b29d9e61ada5249191be2e3b83`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 2.2 KB (2242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc2aa90ef5e82041829baa2859008a7d46a596e0cd0e88943855c03d4fd432ba`  
-		Last Modified: Sat, 09 Jun 2018 09:18:07 GMT  
-		Size: 121.0 B  
+	-	`sha256:ec565c1a79fadcb95a93b1270848a58f605a471be5af672fb478a25f3e8bd5c5`  
+		Last Modified: Wed, 27 Jun 2018 17:28:13 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.3.23` - linux; 386
@@ -9937,7 +9937,7 @@ CMD ["postgres"]
 ## `postgres:9.4`
 
 ```console
-$ docker pull postgres@sha256:0e0929fb8af8fcdfe1c35a9e7fe82dd44e2bae78aaba9b03149d4b44c5974528
+$ docker pull postgres@sha256:2b5617f6b6e3f1344fd539797e05a6ed4de09b04a678fb89c9c8ce80accc9c4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10328,125 +10328,125 @@ CMD ["postgres"]
 ### `postgres:9.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:58d9224ae7e9f727a78e9d53e3ae716518b75bba935005c0b6c4957ab148a5cf
+$ docker pull postgres@sha256:fe61e107e8b0aa8e7cabc69490050f8aab0fbe4292f6f0c0b43a1e128e687378
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82752521 bytes)**  
+-	Total Size: **82.8 MB (82753058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8463b135602c329e46aa9016731b70b6c1926556eaf7d3a87e358aba4c234b03`
+-	Image ID: `sha256:685078541bf323f185e0d5b85acc5e94e11bf0c50e6483d4f7848ec853db9b16`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 21:15:01 GMT
+# Wed, 27 Jun 2018 16:14:54 GMT
 ENV PG_MAJOR=9.4
-# Tue, 29 May 2018 21:15:02 GMT
+# Wed, 27 Jun 2018 16:14:54 GMT
 ENV PG_VERSION=9.4.18-2.pgdg90+1
-# Tue, 29 May 2018 21:43:36 GMT
+# Wed, 27 Jun 2018 16:44:37 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 21:43:39 GMT
+# Wed, 27 Jun 2018 16:44:41 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 21:43:41 GMT
+# Wed, 27 Jun 2018 16:44:43 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 21:43:41 GMT
+# Wed, 27 Jun 2018 16:44:43 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.4/bin
-# Tue, 29 May 2018 21:43:42 GMT
+# Wed, 27 Jun 2018 16:44:44 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 21:43:44 GMT
+# Wed, 27 Jun 2018 16:44:46 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 21:43:45 GMT
+# Wed, 27 Jun 2018 16:44:47 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:13:42 GMT
+# Wed, 27 Jun 2018 16:44:48 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:13:44 GMT
+# Wed, 27 Jun 2018 16:44:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:13:45 GMT
+# Wed, 27 Jun 2018 16:44:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:13:46 GMT
+# Wed, 27 Jun 2018 16:44:52 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:13:47 GMT
+# Wed, 27 Jun 2018 16:44:52 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7471e4ebe03f97b040faaee96b23640ceecff28361b47ff2ad17a38a5c7d17e`  
-		Last Modified: Tue, 29 May 2018 22:18:26 GMT  
-		Size: 50.9 MB (50921761 bytes)  
+	-	`sha256:d7e96d66f4c5fdcced3859bda5cdb1770a2431a6f519bbf49edddf18cb573d54`  
+		Last Modified: Wed, 27 Jun 2018 17:27:42 GMT  
+		Size: 50.9 MB (50922228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf68ea3fe5340e67a5bd34592e692d5173baa3ff64df63b70369d0aa067e11`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
-		Size: 6.7 KB (6698 bytes)  
+	-	`sha256:47cf7680a08f5c559faa03ee864af7165101d06ff2334a2218f9bbfca4838aa0`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
+		Size: 6.7 KB (6691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f7f11db1a7927e0b10c64b8aa44513803f241cb0bdd9bef2beff5bac5043e35`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
+	-	`sha256:93a7f6a1524847b1df8c841df16d0efc7c36d48aceb6368f593ac363be06eef5`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddded1aafa6e4da77f0e2074f2854aee206cf681388b7f1f9d9d9c932686bea2`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:84d33824d5caab57b4bbf989b1fa9a3911ef58984280cd0594ab8c3646e990ba`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b818f4b30f235e04830e3df1707cbd29ebcfae39bcc7321bdf1402cd902d6cf6`  
-		Last Modified: Sat, 09 Jun 2018 09:17:32 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:98e823abe05c9b91ea4bf6b2fbfe30f8bdca448b83447db8def525fd60474939`  
+		Last Modified: Wed, 27 Jun 2018 17:27:20 GMT  
+		Size: 2.2 KB (2236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d76e1cefb1903689ff61b21faa34c69fd25fa903af7c96692b48a62f10f99ab4`  
-		Last Modified: Sat, 09 Jun 2018 09:17:33 GMT  
+	-	`sha256:7c742265d7a0ad47c544c8a0177319cbf1284da91fab65189cb3c4ff7977b308`  
+		Last Modified: Wed, 27 Jun 2018 17:27:20 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10828,7 +10828,7 @@ CMD ["postgres"]
 ## `postgres:9.4.18`
 
 ```console
-$ docker pull postgres@sha256:0e0929fb8af8fcdfe1c35a9e7fe82dd44e2bae78aaba9b03149d4b44c5974528
+$ docker pull postgres@sha256:2b5617f6b6e3f1344fd539797e05a6ed4de09b04a678fb89c9c8ce80accc9c4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11219,125 +11219,125 @@ CMD ["postgres"]
 ### `postgres:9.4.18` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:58d9224ae7e9f727a78e9d53e3ae716518b75bba935005c0b6c4957ab148a5cf
+$ docker pull postgres@sha256:fe61e107e8b0aa8e7cabc69490050f8aab0fbe4292f6f0c0b43a1e128e687378
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82752521 bytes)**  
+-	Total Size: **82.8 MB (82753058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8463b135602c329e46aa9016731b70b6c1926556eaf7d3a87e358aba4c234b03`
+-	Image ID: `sha256:685078541bf323f185e0d5b85acc5e94e11bf0c50e6483d4f7848ec853db9b16`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 21:15:01 GMT
+# Wed, 27 Jun 2018 16:14:54 GMT
 ENV PG_MAJOR=9.4
-# Tue, 29 May 2018 21:15:02 GMT
+# Wed, 27 Jun 2018 16:14:54 GMT
 ENV PG_VERSION=9.4.18-2.pgdg90+1
-# Tue, 29 May 2018 21:43:36 GMT
+# Wed, 27 Jun 2018 16:44:37 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 21:43:39 GMT
+# Wed, 27 Jun 2018 16:44:41 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 21:43:41 GMT
+# Wed, 27 Jun 2018 16:44:43 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 21:43:41 GMT
+# Wed, 27 Jun 2018 16:44:43 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.4/bin
-# Tue, 29 May 2018 21:43:42 GMT
+# Wed, 27 Jun 2018 16:44:44 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 21:43:44 GMT
+# Wed, 27 Jun 2018 16:44:46 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 21:43:45 GMT
+# Wed, 27 Jun 2018 16:44:47 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:13:42 GMT
+# Wed, 27 Jun 2018 16:44:48 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:13:44 GMT
+# Wed, 27 Jun 2018 16:44:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:13:45 GMT
+# Wed, 27 Jun 2018 16:44:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:13:46 GMT
+# Wed, 27 Jun 2018 16:44:52 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:13:47 GMT
+# Wed, 27 Jun 2018 16:44:52 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7471e4ebe03f97b040faaee96b23640ceecff28361b47ff2ad17a38a5c7d17e`  
-		Last Modified: Tue, 29 May 2018 22:18:26 GMT  
-		Size: 50.9 MB (50921761 bytes)  
+	-	`sha256:d7e96d66f4c5fdcced3859bda5cdb1770a2431a6f519bbf49edddf18cb573d54`  
+		Last Modified: Wed, 27 Jun 2018 17:27:42 GMT  
+		Size: 50.9 MB (50922228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf68ea3fe5340e67a5bd34592e692d5173baa3ff64df63b70369d0aa067e11`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
-		Size: 6.7 KB (6698 bytes)  
+	-	`sha256:47cf7680a08f5c559faa03ee864af7165101d06ff2334a2218f9bbfca4838aa0`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
+		Size: 6.7 KB (6691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f7f11db1a7927e0b10c64b8aa44513803f241cb0bdd9bef2beff5bac5043e35`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
+	-	`sha256:93a7f6a1524847b1df8c841df16d0efc7c36d48aceb6368f593ac363be06eef5`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddded1aafa6e4da77f0e2074f2854aee206cf681388b7f1f9d9d9c932686bea2`  
-		Last Modified: Tue, 29 May 2018 22:17:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:84d33824d5caab57b4bbf989b1fa9a3911ef58984280cd0594ab8c3646e990ba`  
+		Last Modified: Wed, 27 Jun 2018 17:27:19 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b818f4b30f235e04830e3df1707cbd29ebcfae39bcc7321bdf1402cd902d6cf6`  
-		Last Modified: Sat, 09 Jun 2018 09:17:32 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:98e823abe05c9b91ea4bf6b2fbfe30f8bdca448b83447db8def525fd60474939`  
+		Last Modified: Wed, 27 Jun 2018 17:27:20 GMT  
+		Size: 2.2 KB (2236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d76e1cefb1903689ff61b21faa34c69fd25fa903af7c96692b48a62f10f99ab4`  
-		Last Modified: Sat, 09 Jun 2018 09:17:33 GMT  
+	-	`sha256:7c742265d7a0ad47c544c8a0177319cbf1284da91fab65189cb3c4ff7977b308`  
+		Last Modified: Wed, 27 Jun 2018 17:27:20 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12925,7 +12925,7 @@ CMD ["postgres"]
 ## `postgres:9.5`
 
 ```console
-$ docker pull postgres@sha256:26f33a949277aeeb957c9424a8d416c2b90a5adba9594a8fb1bfef31737df9c1
+$ docker pull postgres@sha256:cd6e612fa4ccb406d738e9b2e5bed4774eb3f30692dc177d1173bceeb2d02959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13316,125 +13316,125 @@ CMD ["postgres"]
 ### `postgres:9.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:3811be2f122df5df469f1ecb76e27b28a99262ac45fded2336fce6de708464a4
+$ docker pull postgres@sha256:05ab0be71ce557a16d36705e47faf9727fc42f99ce7edb288ba9b1b6522ecef7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.1 MB (83062703 bytes)**  
+-	Total Size: **83.1 MB (83062950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fab160dce19c8d81ed36804139c828ce3e922259fd9492ba180a0e41e178c907`
+-	Image ID: `sha256:39b82174744b87333dd8f0594d52133c0e7c46ac93e6c284e196ddab37207a9e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 20:44:12 GMT
+# Wed, 27 Jun 2018 15:38:11 GMT
 ENV PG_MAJOR=9.5
-# Tue, 29 May 2018 20:44:13 GMT
+# Wed, 27 Jun 2018 15:38:12 GMT
 ENV PG_VERSION=9.5.13-2.pgdg90+1
-# Tue, 29 May 2018 21:14:03 GMT
+# Wed, 27 Jun 2018 16:13:24 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 21:14:05 GMT
+# Wed, 27 Jun 2018 16:13:34 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 21:14:07 GMT
+# Wed, 27 Jun 2018 16:13:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 21:14:07 GMT
+# Wed, 27 Jun 2018 16:13:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.5/bin
-# Tue, 29 May 2018 21:14:08 GMT
+# Wed, 27 Jun 2018 16:13:52 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 21:14:10 GMT
+# Wed, 27 Jun 2018 16:14:01 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 21:14:11 GMT
+# Wed, 27 Jun 2018 16:14:04 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:13:15 GMT
+# Wed, 27 Jun 2018 16:14:08 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:13:17 GMT
+# Wed, 27 Jun 2018 16:14:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:13:18 GMT
+# Wed, 27 Jun 2018 16:14:20 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:13:19 GMT
+# Wed, 27 Jun 2018 16:14:22 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:13:19 GMT
+# Wed, 27 Jun 2018 16:14:25 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:895f86c122581bf33aab15425062b48ab07cba88a9eaffb7e9b39b47927de107`  
-		Last Modified: Tue, 29 May 2018 22:16:47 GMT  
-		Size: 51.2 MB (51231805 bytes)  
+	-	`sha256:c2ef20dcd9de1a50501f0f431d407f0c6dd24cd9404cda28b65f6779693c9e79`  
+		Last Modified: Wed, 27 Jun 2018 17:26:53 GMT  
+		Size: 51.2 MB (51231965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3041a3ed85cc8ccd9b4f7cae0bb1bfcd523766a96dea2910b682f229db2645e5`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
+	-	`sha256:3472e18466337a44f9f9fcf44238dcc3d6f529b12b5711cdc4ece2f6226ecaea`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
 		Size: 6.8 KB (6837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:640f3510074411edca1dbc8d9dee72dd8580bddef2b575b8c4156010d8c0b452`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
-		Size: 128.0 B  
+	-	`sha256:3a5033d76108a8e4a56f7facfe801b6543667f916bf6acb6a748c5812c951307`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7e21ce0f741cfbf32bbb19c2140a1ecf6653668951b5d5dbc68e9ff0139c40`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
-		Size: 173.0 B  
+	-	`sha256:d82c71a4343fa09bf7a7870644ba0d2dcb13ddd1786b665c94f6c3f70ae135e4`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6004f0b6237e4554038dfdba0dabb38d23455c0cc504f0dbc20d9fb3eebc82de`  
-		Last Modified: Sat, 09 Jun 2018 09:16:56 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:9ca776e39524d6c4e5df007842dc1f674f850b48db323e6a22a5a4067b8d4d21`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 2.2 KB (2242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d988ad3745c866f32c2fbe1cc3f95f1e87b747a1622eb92b34f0fc1b327fa8`  
-		Last Modified: Sat, 09 Jun 2018 09:16:58 GMT  
+	-	`sha256:fa72f3f34b10faa40fa7752b840fbd6e3fe0e677eb5a78a874f74e0917b6d94c`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13816,7 +13816,7 @@ CMD ["postgres"]
 ## `postgres:9.5.13`
 
 ```console
-$ docker pull postgres@sha256:26f33a949277aeeb957c9424a8d416c2b90a5adba9594a8fb1bfef31737df9c1
+$ docker pull postgres@sha256:cd6e612fa4ccb406d738e9b2e5bed4774eb3f30692dc177d1173bceeb2d02959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14207,125 +14207,125 @@ CMD ["postgres"]
 ### `postgres:9.5.13` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:3811be2f122df5df469f1ecb76e27b28a99262ac45fded2336fce6de708464a4
+$ docker pull postgres@sha256:05ab0be71ce557a16d36705e47faf9727fc42f99ce7edb288ba9b1b6522ecef7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.1 MB (83062703 bytes)**  
+-	Total Size: **83.1 MB (83062950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fab160dce19c8d81ed36804139c828ce3e922259fd9492ba180a0e41e178c907`
+-	Image ID: `sha256:39b82174744b87333dd8f0594d52133c0e7c46ac93e6c284e196ddab37207a9e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 20:44:12 GMT
+# Wed, 27 Jun 2018 15:38:11 GMT
 ENV PG_MAJOR=9.5
-# Tue, 29 May 2018 20:44:13 GMT
+# Wed, 27 Jun 2018 15:38:12 GMT
 ENV PG_VERSION=9.5.13-2.pgdg90+1
-# Tue, 29 May 2018 21:14:03 GMT
+# Wed, 27 Jun 2018 16:13:24 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 21:14:05 GMT
+# Wed, 27 Jun 2018 16:13:34 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 21:14:07 GMT
+# Wed, 27 Jun 2018 16:13:44 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 21:14:07 GMT
+# Wed, 27 Jun 2018 16:13:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.5/bin
-# Tue, 29 May 2018 21:14:08 GMT
+# Wed, 27 Jun 2018 16:13:52 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 21:14:10 GMT
+# Wed, 27 Jun 2018 16:14:01 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 21:14:11 GMT
+# Wed, 27 Jun 2018 16:14:04 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:13:15 GMT
+# Wed, 27 Jun 2018 16:14:08 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:13:17 GMT
+# Wed, 27 Jun 2018 16:14:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:13:18 GMT
+# Wed, 27 Jun 2018 16:14:20 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:13:19 GMT
+# Wed, 27 Jun 2018 16:14:22 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:13:19 GMT
+# Wed, 27 Jun 2018 16:14:25 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:895f86c122581bf33aab15425062b48ab07cba88a9eaffb7e9b39b47927de107`  
-		Last Modified: Tue, 29 May 2018 22:16:47 GMT  
-		Size: 51.2 MB (51231805 bytes)  
+	-	`sha256:c2ef20dcd9de1a50501f0f431d407f0c6dd24cd9404cda28b65f6779693c9e79`  
+		Last Modified: Wed, 27 Jun 2018 17:26:53 GMT  
+		Size: 51.2 MB (51231965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3041a3ed85cc8ccd9b4f7cae0bb1bfcd523766a96dea2910b682f229db2645e5`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
+	-	`sha256:3472e18466337a44f9f9fcf44238dcc3d6f529b12b5711cdc4ece2f6226ecaea`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
 		Size: 6.8 KB (6837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:640f3510074411edca1dbc8d9dee72dd8580bddef2b575b8c4156010d8c0b452`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
-		Size: 128.0 B  
+	-	`sha256:3a5033d76108a8e4a56f7facfe801b6543667f916bf6acb6a748c5812c951307`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7e21ce0f741cfbf32bbb19c2140a1ecf6653668951b5d5dbc68e9ff0139c40`  
-		Last Modified: Tue, 29 May 2018 22:16:18 GMT  
-		Size: 173.0 B  
+	-	`sha256:d82c71a4343fa09bf7a7870644ba0d2dcb13ddd1786b665c94f6c3f70ae135e4`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6004f0b6237e4554038dfdba0dabb38d23455c0cc504f0dbc20d9fb3eebc82de`  
-		Last Modified: Sat, 09 Jun 2018 09:16:56 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:9ca776e39524d6c4e5df007842dc1f674f850b48db323e6a22a5a4067b8d4d21`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
+		Size: 2.2 KB (2242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d988ad3745c866f32c2fbe1cc3f95f1e87b747a1622eb92b34f0fc1b327fa8`  
-		Last Modified: Sat, 09 Jun 2018 09:16:58 GMT  
+	-	`sha256:fa72f3f34b10faa40fa7752b840fbd6e3fe0e677eb5a78a874f74e0917b6d94c`  
+		Last Modified: Wed, 27 Jun 2018 17:26:31 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -15913,7 +15913,7 @@ CMD ["postgres"]
 ## `postgres:9.6`
 
 ```console
-$ docker pull postgres@sha256:dc4674a9e9395baf9723648df28c5899811d58a9e0ef4e3401f612784f9e8f06
+$ docker pull postgres@sha256:2b7f14abf8434e154bc24026170f9f9477216812d8fbf4c8f29be5ae04371edd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16304,126 +16304,126 @@ CMD ["postgres"]
 ### `postgres:9.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:cc355344aa5215b20ae6fc323ae26b4d1940b6efdce22791180ed0e471683fcd
+$ docker pull postgres@sha256:66ce200a4037a4f591f9d27b1910e5db8e124b14e60691666e3d4e70e68c3fe6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.6 MB (83563301 bytes)**  
+-	Total Size: **83.6 MB (83564423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abb25a64fa109d674e6775a9c455360c4d54d4fdc6825e65784fe9782961964`
+-	Image ID: `sha256:dcecc2baa1e8f801f2875253f5c2ce913821d582099f96c860c31be66cb69625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 20:11:54 GMT
+# Wed, 27 Jun 2018 14:58:00 GMT
 ENV PG_MAJOR=9.6
-# Tue, 29 May 2018 20:11:55 GMT
+# Wed, 27 Jun 2018 14:58:01 GMT
 ENV PG_VERSION=9.6.9-2.pgdg90+1
-# Tue, 29 May 2018 20:43:16 GMT
+# Wed, 27 Jun 2018 15:37:11 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:43:18 GMT
+# Wed, 27 Jun 2018 15:37:16 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:43:20 GMT
+# Wed, 27 Jun 2018 15:37:20 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:27 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:48 GMT
+# Wed, 27 Jun 2018 15:37:33 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:37 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:51 GMT
+# Wed, 27 Jun 2018 15:37:41 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:52 GMT
+# Wed, 27 Jun 2018 15:37:43 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec9df73bd3624ff9024e3260aaca2bcbcc12bacd263f4e3de9911c4c59d1abb4`  
-		Last Modified: Tue, 29 May 2018 22:15:00 GMT  
-		Size: 51.7 MB (51732126 bytes)  
+	-	`sha256:5a839c26091a980a35318e4ed00aa8c9bb6238c629be64c28c3d129abfb19191`  
+		Last Modified: Wed, 27 Jun 2018 17:25:48 GMT  
+		Size: 51.7 MB (51733172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8619677a421dd34c6fcf75b5e06b839d250b500d9d9d60d7002b58f95b097c3f`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 7.1 KB (7112 bytes)  
+	-	`sha256:baf8fc85fd375cde4206db1f3de81ed18746b7ffcaa125a4b0190ed4534d9395`  
+		Last Modified: Wed, 27 Jun 2018 17:25:27 GMT  
+		Size: 7.1 KB (7109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f20c4377935b9e2899bb0ad39a9f32092442db9017a7e201d14d8e2b9b6222e`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 129.0 B  
+	-	`sha256:744a90f79249a0e28bb7540a7c1778de88b5968a96650ce41d9a804cdc8764b5`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:767fd6b607d4a4d93a076ab1a1dccecd00eeef7e275f902c622ea441291be555`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:5ac3aebef851c38808a6963addcba3547ddf7fe9d0651eeaf1da60714ecf6e9c`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cec0ff49c84705dfdb40eb6ffdf853d0869000e16f57acb9503e0358b0e242`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 2.2 KB (2238 bytes)  
+	-	`sha256:df3a86a94f981b870f60868decae8ae529088d75da7ef8c96ef6cc30c8f41884`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 2.2 KB (2237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6776d304ccd762005e9f8ca7fd28f8db746402f8245562bc93e992d55ab300e7`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 121.0 B  
+	-	`sha256:28e20f9165c174f8c2f94484fa3281f2f996bcfba8b8723fb68de7df273d6e65`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.6` - linux; 386
@@ -16804,7 +16804,7 @@ CMD ["postgres"]
 ## `postgres:9.6.9`
 
 ```console
-$ docker pull postgres@sha256:dc4674a9e9395baf9723648df28c5899811d58a9e0ef4e3401f612784f9e8f06
+$ docker pull postgres@sha256:2b7f14abf8434e154bc24026170f9f9477216812d8fbf4c8f29be5ae04371edd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17195,126 +17195,126 @@ CMD ["postgres"]
 ### `postgres:9.6.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:cc355344aa5215b20ae6fc323ae26b4d1940b6efdce22791180ed0e471683fcd
+$ docker pull postgres@sha256:66ce200a4037a4f591f9d27b1910e5db8e124b14e60691666e3d4e70e68c3fe6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.6 MB (83563301 bytes)**  
+-	Total Size: **83.6 MB (83564423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abb25a64fa109d674e6775a9c455360c4d54d4fdc6825e65784fe9782961964`
+-	Image ID: `sha256:dcecc2baa1e8f801f2875253f5c2ce913821d582099f96c860c31be66cb69625`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 20:11:54 GMT
+# Wed, 27 Jun 2018 14:58:00 GMT
 ENV PG_MAJOR=9.6
-# Tue, 29 May 2018 20:11:55 GMT
+# Wed, 27 Jun 2018 14:58:01 GMT
 ENV PG_VERSION=9.6.9-2.pgdg90+1
-# Tue, 29 May 2018 20:43:16 GMT
+# Wed, 27 Jun 2018 15:37:11 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:43:18 GMT
+# Wed, 27 Jun 2018 15:37:16 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:43:20 GMT
+# Wed, 27 Jun 2018 15:37:20 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 29 May 2018 20:43:21 GMT
+# Wed, 27 Jun 2018 15:37:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:27 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:43:23 GMT
+# Wed, 27 Jun 2018 15:37:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:48 GMT
+# Wed, 27 Jun 2018 15:37:33 GMT
 COPY file:9494d12095c4a6dcf92eb31bbc6d6612e1af08f586becd8840ce47d0ebb5e5db in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:37 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:50 GMT
+# Wed, 27 Jun 2018 15:37:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:51 GMT
+# Wed, 27 Jun 2018 15:37:41 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:52 GMT
+# Wed, 27 Jun 2018 15:37:43 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec9df73bd3624ff9024e3260aaca2bcbcc12bacd263f4e3de9911c4c59d1abb4`  
-		Last Modified: Tue, 29 May 2018 22:15:00 GMT  
-		Size: 51.7 MB (51732126 bytes)  
+	-	`sha256:5a839c26091a980a35318e4ed00aa8c9bb6238c629be64c28c3d129abfb19191`  
+		Last Modified: Wed, 27 Jun 2018 17:25:48 GMT  
+		Size: 51.7 MB (51733172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8619677a421dd34c6fcf75b5e06b839d250b500d9d9d60d7002b58f95b097c3f`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 7.1 KB (7112 bytes)  
+	-	`sha256:baf8fc85fd375cde4206db1f3de81ed18746b7ffcaa125a4b0190ed4534d9395`  
+		Last Modified: Wed, 27 Jun 2018 17:25:27 GMT  
+		Size: 7.1 KB (7109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f20c4377935b9e2899bb0ad39a9f32092442db9017a7e201d14d8e2b9b6222e`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 129.0 B  
+	-	`sha256:744a90f79249a0e28bb7540a7c1778de88b5968a96650ce41d9a804cdc8764b5`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:767fd6b607d4a4d93a076ab1a1dccecd00eeef7e275f902c622ea441291be555`  
-		Last Modified: Tue, 29 May 2018 22:14:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:5ac3aebef851c38808a6963addcba3547ddf7fe9d0651eeaf1da60714ecf6e9c`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cec0ff49c84705dfdb40eb6ffdf853d0869000e16f57acb9503e0358b0e242`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 2.2 KB (2238 bytes)  
+	-	`sha256:df3a86a94f981b870f60868decae8ae529088d75da7ef8c96ef6cc30c8f41884`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 2.2 KB (2237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6776d304ccd762005e9f8ca7fd28f8db746402f8245562bc93e992d55ab300e7`  
-		Last Modified: Sat, 09 Jun 2018 09:16:09 GMT  
-		Size: 121.0 B  
+	-	`sha256:28e20f9165c174f8c2f94484fa3281f2f996bcfba8b8723fb68de7df273d6e65`  
+		Last Modified: Wed, 27 Jun 2018 17:25:26 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.6.9` - linux; 386
@@ -20107,7 +20107,7 @@ CMD ["postgres"]
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:ea56e0ae17910aad7e32857a450fdf17bf6621453ad343c49d547a0f5c7277b7
+$ docker pull postgres@sha256:2aa5d4952a8abc5b9b71749208512ffd5a802ba31b7b05fc3c221e097165e446
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20498,125 +20498,125 @@ CMD ["postgres"]
 ### `postgres:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:5261cfe07e023f9b500430874a1b20bf90664ddb8b026172bab6d4a7f82702f4
+$ docker pull postgres@sha256:759c0bb99fa1793761235670e446577ae4c6f7ff50065180e6dbdc7ad27ba7a2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83502524 bytes)**  
+-	Total Size: **83.5 MB (83503280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:105086360628be62956797fd97d1dbd8f5c43ece056c7cc4227cefc6590c0735`
+-	Image ID: `sha256:9facde73e07276e75350d17ae042a0534131ef8ad7b2ba22489a7d44ac169852`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 30 Apr 2018 23:33:18 GMT
-ADD file:d423aa6d423df239af0602fe8134c14cb277778de23c8553d629d3b4b510f38b in / 
-# Mon, 30 Apr 2018 23:33:20 GMT
+# Wed, 27 Jun 2018 08:47:44 GMT
+ADD file:b8a1907d99b0b9f75b52f8e25d5c346caf0244b325919c02090ab1e05ba1cf18 in / 
+# Wed, 27 Jun 2018 08:47:45 GMT
 CMD ["bash"]
-# Mon, 30 Apr 2018 23:56:18 GMT
+# Wed, 27 Jun 2018 13:37:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 30 Apr 2018 23:56:43 GMT
+# Wed, 27 Jun 2018 13:37:50 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Mon, 30 Apr 2018 23:56:45 GMT
+# Wed, 27 Jun 2018 13:37:51 GMT
 ENV GOSU_VERSION=1.10
-# Mon, 30 Apr 2018 23:57:37 GMT
+# Wed, 27 Jun 2018 13:38:37 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Mon, 30 Apr 2018 23:57:58 GMT
+# Wed, 27 Jun 2018 13:39:01 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Mon, 30 Apr 2018 23:57:59 GMT
+# Wed, 27 Jun 2018 13:39:02 GMT
 ENV LANG=en_US.utf8
-# Tue, 29 May 2018 19:40:44 GMT
+# Wed, 27 Jun 2018 13:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends libnss-wrapper; 	rm -rf /var/lib/apt/lists/*
-# Tue, 29 May 2018 19:40:45 GMT
+# Wed, 27 Jun 2018 13:39:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 29 May 2018 19:40:50 GMT
+# Wed, 27 Jun 2018 13:39:27 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 29 May 2018 19:40:51 GMT
+# Wed, 27 Jun 2018 14:17:58 GMT
 ENV PG_MAJOR=10
-# Tue, 29 May 2018 19:40:52 GMT
+# Wed, 27 Jun 2018 14:17:59 GMT
 ENV PG_VERSION=10.4-2.pgdg90+1
-# Tue, 29 May 2018 20:11:00 GMT
+# Wed, 27 Jun 2018 14:57:17 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64|i386|ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Tue, 29 May 2018 20:11:02 GMT
+# Wed, 27 Jun 2018 14:57:19 GMT
 RUN mv -v "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample" /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/" 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 29 May 2018 20:11:04 GMT
+# Wed, 27 Jun 2018 14:57:21 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 May 2018 20:11:05 GMT
+# Wed, 27 Jun 2018 14:57:22 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin
-# Tue, 29 May 2018 20:11:06 GMT
+# Wed, 27 Jun 2018 14:57:23 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 May 2018 20:11:07 GMT
+# Wed, 27 Jun 2018 14:57:24 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 29 May 2018 20:11:08 GMT
+# Wed, 27 Jun 2018 14:57:25 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 09 Jun 2018 09:12:21 GMT
+# Wed, 27 Jun 2018 14:57:26 GMT
 COPY file:98ca6e65a2d4cca43a3092060e0e3fd01411004bfe737872db0a993e72513587 in /usr/local/bin/ 
-# Sat, 09 Jun 2018 09:12:23 GMT
+# Wed, 27 Jun 2018 14:57:29 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 09 Jun 2018 09:12:24 GMT
+# Wed, 27 Jun 2018 14:57:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 EXPOSE 5432/tcp
-# Sat, 09 Jun 2018 09:12:25 GMT
+# Wed, 27 Jun 2018 14:57:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:18d6337cc9064ce5276eac2eb6da6c5fe3f204bc7f1392f5ad1ba468817c609e`  
-		Last Modified: Mon, 30 Apr 2018 23:54:34 GMT  
-		Size: 20.3 MB (20347907 bytes)  
+	-	`sha256:153362478bb06475bede3bd6da2ff08a91dd9fc6f245c70bb5a033b65f38ac14`  
+		Last Modified: Wed, 27 Jun 2018 08:58:51 GMT  
+		Size: 20.3 MB (20348077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d703d0a34039b449a858abb5900285074a06989452bae681a156eeed0025e`  
-		Last Modified: Tue, 01 May 2018 03:17:16 GMT  
-		Size: 4.1 MB (4073359 bytes)  
+	-	`sha256:626ba8250f480770d6c5e1025e7c0d28609681ff0cc8fa3357bea4de8cea65f8`  
+		Last Modified: Wed, 27 Jun 2018 17:23:48 GMT  
+		Size: 4.1 MB (4073248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91948ab08316299d5142c6c5d42f13fbfe908809a3f00b09f76aca51a12c0b81`  
-		Last Modified: Tue, 01 May 2018 03:17:04 GMT  
-		Size: 1.8 KB (1756 bytes)  
+	-	`sha256:e678aaf8b617fa5c1f19bfe436ef208d4b8a860d969e84e5c9115b9ad83e3371`  
+		Last Modified: Wed, 27 Jun 2018 17:23:44 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61acf63bf72b438c713c3103aa31512ec360061ef300c6a8e1fccc57d5e8c047`  
-		Last Modified: Tue, 01 May 2018 03:17:05 GMT  
-		Size: 919.5 KB (919450 bytes)  
+	-	`sha256:c67bb07f08a85cabae44d18f3bc6e56ac209f84c3a83e7e23d1a2607b8c1c294`  
+		Last Modified: Wed, 27 Jun 2018 17:23:45 GMT  
+		Size: 919.4 KB (919445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630cb60c340a6a8962c2b9836384b9e6330c57626bc4e67e16b560ef7717b35a`  
-		Last Modified: Tue, 01 May 2018 03:17:30 GMT  
-		Size: 6.2 MB (6182312 bytes)  
+	-	`sha256:fa17cfb23b1457380ce4fa3fb6aefcccff65dd4a6af5459b79809b0987c742c6`  
+		Last Modified: Wed, 27 Jun 2018 17:23:53 GMT  
+		Size: 6.2 MB (6182449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100ea1671466fa440391a9ab16fc374f6d4cd79623c084186b338e106266316d`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 292.0 KB (292015 bytes)  
+	-	`sha256:b53c79c2e548a2e4da2d8bce3d5f0bb2c2738175c6190640944329f7ed6e2d70`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 291.9 KB (291922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d357f69b02ae16dac3ef97230bb20d2f8fc5ed8f1c8f14841e9025c86e33c638`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
+	-	`sha256:d21f4b890e99773fca62307286aa121f571c6e53d3b91c5b5e3f2441270ca417`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e812c492156cd36a15bc0898091fc997b041bcfb68422402f1f9affc2b966171`  
-		Last Modified: Tue, 29 May 2018 22:12:56 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:39482a3d57a52b8053a64a779520e741d09673be127817ed35f397b57f9565a2`  
+		Last Modified: Wed, 27 Jun 2018 17:23:41 GMT  
+		Size: 4.5 KB (4480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a48682352920b3ca42ec09e12d55261af9a8fe90a4f8f024bf562c8406e8be0`  
-		Last Modified: Tue, 29 May 2018 22:13:15 GMT  
-		Size: 51.7 MB (51671160 bytes)  
+	-	`sha256:1fbf27f5ef49fbc88d270ef1040076d8fd6647f5a86a04c661f5ea54688782b8`  
+		Last Modified: Wed, 27 Jun 2018 17:24:49 GMT  
+		Size: 51.7 MB (51671834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33abc36d2d7c442dabd521029437ec793f064bdfe1f615f8add874041b697bb1`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
-		Size: 7.3 KB (7303 bytes)  
+	-	`sha256:d8c58c991cea97a1b2bf260be73ffaa383380ef629dfd1e0386ba4c358171a8e`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 7.3 KB (7300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf26b60213fd8a965b840f7775afdffef6d78e4bd86388cfd3d7c03c68be5b4`  
-		Last Modified: Tue, 29 May 2018 22:12:53 GMT  
-		Size: 129.0 B  
+	-	`sha256:b75656ce850a9f95097cc2fa0997732c7d00343c97626cfbbb211e35c46f2cf1`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60cbd9c273f31d81cd27a072d76c23f67207e2f85e9e576864a68717eb37b6e3`  
-		Last Modified: Tue, 29 May 2018 22:12:54 GMT  
+	-	`sha256:60ab62807b4d9b04dcff32ce2c7a4afa67ec242bf09081398439a7aae725fee3`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd99b9d0364390d8f6801b2175d06ae8952ca96366b14244d92e131cc0fb3ae9`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:9338be500f4bea67ce00ca5cd6c616a440ba25d5aef963b58220633857ba0d21`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
+		Size: 2.2 KB (2239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37832536795fb1da9308492b6270acdbb65982475190cc9cc76fc890d36f31e5`  
-		Last Modified: Sat, 09 Jun 2018 09:15:21 GMT  
+	-	`sha256:2239f1878104ebbdd4b1313456c2d3d279ef45a710215a1d5f7ec6e869e52356`  
+		Last Modified: Wed, 27 Jun 2018 17:24:27 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
