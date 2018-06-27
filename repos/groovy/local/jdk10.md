@@ -1,10 +1,10 @@
-# `groovy:2.4.15-jdk10`
+# `groovy:2.5.0-jdk10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f461102419f3ce1de76bfdd9eb27973849da169ef2a4e5335ff4d49d0b65f791`
-- Created: `2018-06-16T08:17:44.605312217Z`
-- Virtual Size: ~ 910.13 Mb  
+- Image ID: `sha256:e09137cbfeae1971eb3ea7520161ef367dda64ec0f0510eb1dc3065475af3af0`
+- Created: `2018-06-16T08:27:18.450875424Z`
+- Virtual Size: ~ 900.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10.0.1+10`
   - `JAVA_DEBIAN_VERSION=10.0.1+10-4`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.15`
+  - `GROOVY_VERSION=2.5.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -225,19 +225,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.dsc' apt_1.6.1.dsc 2743 SHA256:2bd0953c1d778eb7554a6a125ab7248824549b377fb17194b36d48dc556c2adb
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.tar.xz' apt_1.6.1.tar.xz 2137808 SHA256:89ff5c6a29e550f3e96b1e9cf28ccea114965d2b5b4c008220d1625a4ca007b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.1/
 
-- https://sources.debian.net/src/apt/1.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20161029-2`
 
@@ -4216,20 +4210,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.37.1-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1-1.dsc' nss_3.37.1-1.dsc 2160 SHA256:c24f1e57ee62421c161a6d6e6dbcedaaf9ff65be38e39a9e8bda9b5fd9f1635c
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1.orig.tar.gz' nss_3.37.1.orig.tar.gz 23034142 SHA256:097b30e436479ad737b3703b25b6198b6513e202731085c6f097d8853dd20405
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.37.1-1.debian.tar.xz' nss_3.37.1-1.debian.tar.xz 20168 SHA256:03db350efc07ce9fd3c016a7b1939c68415959916320efb1bf6be7c519e3852f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.37.1-1/
 
-- https://sources.debian.net/src/nss/2:3.37.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.37.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.37.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10.0.1+10-4`
 
