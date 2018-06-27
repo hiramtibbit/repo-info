@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db4dccfc14942b11a0031242385a985195959c843d06fe7e5ae22da240a3de0b`
-- Created: `2018-06-16T09:53:47.63216933Z`
-- Virtual Size: ~ 229.28 Mb  
+- Image ID: `sha256:29ab188c2eec996911fbb6a46c70739f10888ec324227e127b7a8b4349fc5ef2`
+- Created: `2018-06-27T06:57:34.474164055Z`
+- Virtual Size: ~ 221.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -211,23 +211,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.31-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.31-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=8+deb8u10`
+### `dpkg` source package: `base-files=8+deb8u11`
 
 Binary Packages:
 
-- `base-files=8+deb8u10`
+- `base-files=8+deb8u11`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=8+deb8u11
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u11.dsc' base-files_8+deb8u11.dsc 1030 SHA256:15eb9515f3d06e1cd09e23f8b6263ad5355d07f3bf6e3631ede2bf850235e2cd
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u11.tar.xz' base-files_8+deb8u11.tar.xz 53192 SHA256:361b53e18719b4a37ff5a0e2544ab238b412c2a75b7d63f8500c958590230e64
+```
 
-- http://snapshot.debian.org/package/base-files/8+deb8u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/8+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/base-files/8+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/8+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.37`
 
@@ -999,33 +1005,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.0.0+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u4`
-
-Binary Packages:
-
-- `gpgv=1.4.18-7+deb8u4`
-
-Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
-
-- `GPL-3`
-- `GPL-3+ with OpenSSL exception`
-- `RFC-Reference`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u4/
-
-
 ### `dpkg` source package: `gnupg=1.4.18-7+deb8u5`
 
 Binary Packages:
 
 - `gnupg=1.4.18-7+deb8u5`
+- `gpgv=1.4.18-7+deb8u5`
 
-Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
@@ -2192,27 +2179,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
+### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u3`
 
 Binary Packages:
 
-- `libncurses5:amd64=5.9+20140913-1+deb8u2`
-- `libncursesw5:amd64=5.9+20140913-1+deb8u2`
-- `libtinfo5:amd64=5.9+20140913-1+deb8u2`
-- `ncurses-base=5.9+20140913-1+deb8u2`
-- `ncurses-bin=5.9+20140913-1+deb8u2`
+- `libncurses5:amd64=5.9+20140913-1+deb8u3`
+- `libncursesw5:amd64=5.9+20140913-1+deb8u3`
+- `libtinfo5:amd64=5.9+20140913-1+deb8u3`
+- `ncurses-base=5.9+20140913-1+deb8u3`
+- `ncurses-bin=5.9+20140913-1+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ncurses=5.9+20140913-1+deb8u3
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1+deb8u3.dsc' ncurses_5.9+20140913-1+deb8u3.dsc 3505 SHA256:a4136ac92fd361e7b3c61f7e5a08e145841d960b2feefe014174f8109a997f0b
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913.orig.tar.gz' ncurses_5.9+20140913.orig.tar.gz 2987249 SHA256:c4247ad81ee9d743caba8a2db6dd96d36878530b2e76e376af1c00b067a2dec9
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1+deb8u3.debian.tar.xz' ncurses_5.9+20140913-1+deb8u3.debian.tar.xz 57136 SHA256:5edac557abf72e2f22c37423a9c8441f4da4509506e01b59b71d5120bd21a8ea
+```
 
-- http://snapshot.debian.org/package/ncurses/5.9+20140913-1+deb8u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ncurses/5.9+20140913-1+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/5.9+20140913-1+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/5.9+20140913-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=2.7.1-5+deb8u2`
 
@@ -2509,25 +2503,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `procps=2:3.3.9-9`
+### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
 Binary Packages:
 
-- `libprocps3:amd64=2:3.3.9-9`
-- `procps=2:3.3.9-9`
+- `libprocps3:amd64=2:3.3.9-9+deb8u1`
+- `procps=2:3.3.9-9+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/procps/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.9-9+deb8u1
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9-9+deb8u1.dsc' procps_3.3.9-9+deb8u1.dsc 2249 SHA256:1137afe6cd82a3f2f70402f6091c9f7a4898c6da9dcf4b89c39cb315e5432d16
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9-9+deb8u1.debian.tar.xz' procps_3.3.9-9+deb8u1.debian.tar.xz 41180 SHA256:41aeb4ebb60ebad15e9c30fb736ee15b4a5d8045c39d3ecf31e8b1237752bc28
+```
 
-- http://snapshot.debian.org/package/procps/2:3.3.9-9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.9-9+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pulseaudio=5.0-13`
 
