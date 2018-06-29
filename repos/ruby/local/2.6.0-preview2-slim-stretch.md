@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20240fff2a4a733298640f58d4f0782f1326b21437173e539dce69b25d70bd7b`
-- Created: `2018-06-06T23:57:08.653824017Z`
-- Virtual Size: ~ 179.35 Mb  
+- Image ID: `sha256:af0fc8c69c3df6eabc10f4f35ee902ad9759edc5e346d400023e5fc73c0b0622`
+- Created: `2018-06-27T02:18:21.978286935Z`
+- Virtual Size: ~ 179.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -672,11 +672,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.24-11+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.24-11+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.1.18-8~deb9u1`
+### `dpkg` source package: `gnupg2=2.1.18-8~deb9u2`
 
 Binary Packages:
 
-- `gpgv=2.1.18-8~deb9u1`
+- `gpgv=2.1.18-8~deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -695,17 +695,17 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u1.dsc' gnupg2_2.1.18-8~deb9u1.dsc 3157 SHA256:c2bfd6af89be7b52bb3d6a84e83be7e3a5ebad6a0e08af2dd2e2475c3bd9ff65
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u1.debian.tar.bz2' gnupg2_2.1.18-8~deb9u1.debian.tar.bz2 101222 SHA256:c3c7414dc1b15a00c08b7ae030db12d38cce78a1972f2999f67549d6294dddd8
+$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -938,11 +938,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.2.1-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.2.1-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u3`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u2`
+- `libgcrypt20:amd64=1.7.6-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -952,17 +952,17 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u3.dsc' libgcrypt20_1.7.6-2+deb9u3.dsc 2838 SHA256:55ab5150f7ff08345d819db2d8b68ae7d443265ca35c2e6ca0c0052a59b3c1f6
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u3.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u3.debian.tar.xz 32760 SHA256:5947ca05db069293a0cd2c4cbb561072d5e5a13933849039e6f054290b90b57f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.7.6-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt20/1.7.6-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -1159,11 +1159,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.82-1+deb9u3`
+### `dpkg` source package: `linux=4.9.88-1+deb9u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.82-1+deb9u3`
+- `linux-libc-dev:amd64=4.9.88-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1176,17 +1176,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.82-1+deb9u3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82-1+deb9u3.dsc' linux_4.9.82-1+deb9u3.dsc 123228 SHA256:c01750f16da89aaf478317cffa0fe2fb7347d103cae30da35075ffb3ae82bee7
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82.orig.tar.xz' linux_4.9.82.orig.tar.xz 94581900 SHA256:0ead25b4474543a836f6d35e8e99308985729512235e1aa95b5d09471ea1b4d5
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.82-1+deb9u3.debian.tar.xz' linux_4.9.82-1+deb9u3.debian.tar.xz 2464808 SHA256:9f3266093462d05fe0d41a05eb257d0d9a76b402ca33f8ab99d9a1e060b82ed1
+$ apt-get source -qq --print-uris linux=4.9.88-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1+deb9u1.dsc' linux_4.9.88-1+deb9u1.dsc 123228 SHA256:604c8de17c97b828aad1f0f1f6d72aed3d0f70a625bde59979eeb623f1b031bf
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88.orig.tar.xz' linux_4.9.88.orig.tar.xz 94587676 SHA256:d1896ed62f0284e212c106e13c38f285c26b62a1f6c0b14117f0491a6acfbd0b
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.88-1+deb9u1.debian.tar.xz' linux_4.9.88-1+deb9u1.debian.tar.xz 2493000 SHA256:53598cf9392fc8c196b912e3be9abb480cb76b1abdcaead598c6d6fe8b7327ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.82-1+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.82-1+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.82-1+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.88-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.88-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.88-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -1411,11 +1411,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.24.1-3+deb9u3`
+### `dpkg` source package: `perl=5.24.1-3+deb9u4`
 
 Binary Packages:
 
-- `perl-base=5.24.1-3+deb9u3`
+- `perl-base=5.24.1-3+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1447,20 +1447,27 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u4.dsc' perl_5.24.1-3+deb9u4.dsc 2393 SHA256:439fd400e8f7659679acac82bb6178c33e1c7cea161210c5051f8c78c2df004b
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u4.debian.tar.xz' perl_5.24.1-3+deb9u4.debian.tar.xz 179936 SHA256:96b1e96a4ac72bb937f53079806fe0d6127da8fbf40d113d618a240aa378745c
+```
 
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `procps=2:3.3.12-3`
+### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
 Binary Packages:
 
-- `libprocps6:amd64=2:3.3.12-3`
-- `procps=2:3.3.12-3`
+- `libprocps6:amd64=2:3.3.12-3+deb9u1`
+- `procps=2:3.3.12-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1474,17 +1481,17 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.dsc' procps_3.3.12-3.dsc 2118 SHA256:5bff9bf045fb88118e5fe69df1ed1d092c49b258ebae5368222a16900288f12e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-3.debian.tar.xz' procps_3.3.12-3.debian.tar.xz 27260 SHA256:5907253fba4f11755b60d7d47ffd8212564d7e2c692dcfffc951e4026c465f9e
+$ apt-get source -qq --print-uris procps=2:3.3.12-3+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.dsc' procps_3.3.12-3+deb9u1.dsc 2333 SHA256:0a9977b3577de224b4db2c957d8825faca13e131bd79daace4a9f3b4cbdeb067
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
+'http://security.debian.org/debian-security/pool/updates/main/p/procps/procps_3.3.12-3+deb9u1.debian.tar.xz' procps_3.3.12-3+deb9u1.debian.tar.xz 33320 SHA256:2645283a93fe698eb93a560ee0fd8897ecc7a8997bb65e2e1537f91dc788e3e7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/procps/2:3.3.12-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.12-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.12-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -1671,23 +1678,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018d-0+deb9u1`
+### `dpkg` source package: `tzdata=2018e-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2018d-0+deb9u1`
+- `tzdata=2018e-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb9u1.dsc' tzdata_2018e-0+deb9u1.dsc 2270 SHA256:279e0bcb363ba5d1eeed277f1f90f53d9bb9f51c908257c768fda8ac86ddc065
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb9u1.debian.tar.xz' tzdata_2018e-0+deb9u1.debian.tar.xz 101308 SHA256:db1d7c48f714d34a04e7cbcd17d2a9f7007e284049e5b8dd3950fb698e6a97a4
+```
 
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2018e-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018e-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018e-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
