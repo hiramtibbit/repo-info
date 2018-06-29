@@ -7,49 +7,76 @@
 -	[`gradle:4.8.1-alpine`](#gradle481-alpine)
 -	[`gradle:4.8.1-jdk`](#gradle481-jdk)
 -	[`gradle:4.8.1-jdk10`](#gradle481-jdk10)
+-	[`gradle:4.8.1-jdk10-slim`](#gradle481-jdk10-slim)
 -	[`gradle:4.8.1-jdk7`](#gradle481-jdk7)
 -	[`gradle:4.8.1-jdk7-alpine`](#gradle481-jdk7-alpine)
+-	[`gradle:4.8.1-jdk7-slim`](#gradle481-jdk7-slim)
 -	[`gradle:4.8.1-jdk8`](#gradle481-jdk8)
 -	[`gradle:4.8.1-jdk8-alpine`](#gradle481-jdk8-alpine)
+-	[`gradle:4.8.1-jdk8-slim`](#gradle481-jdk8-slim)
 -	[`gradle:4.8.1-jdk-alpine`](#gradle481-jdk-alpine)
+-	[`gradle:4.8.1-jdk-slim`](#gradle481-jdk-slim)
 -	[`gradle:4.8.1-jre`](#gradle481-jre)
 -	[`gradle:4.8.1-jre10`](#gradle481-jre10)
+-	[`gradle:4.8.1-jre10-slim`](#gradle481-jre10-slim)
 -	[`gradle:4.8.1-jre7`](#gradle481-jre7)
 -	[`gradle:4.8.1-jre7-alpine`](#gradle481-jre7-alpine)
+-	[`gradle:4.8.1-jre7-slim`](#gradle481-jre7-slim)
 -	[`gradle:4.8.1-jre8`](#gradle481-jre8)
 -	[`gradle:4.8.1-jre8-alpine`](#gradle481-jre8-alpine)
+-	[`gradle:4.8.1-jre8-slim`](#gradle481-jre8-slim)
 -	[`gradle:4.8.1-jre-alpine`](#gradle481-jre-alpine)
+-	[`gradle:4.8.1-jre-slim`](#gradle481-jre-slim)
+-	[`gradle:4.8.1-slim`](#gradle481-slim)
 -	[`gradle:4.8-alpine`](#gradle48-alpine)
 -	[`gradle:4.8-jdk`](#gradle48-jdk)
 -	[`gradle:4.8-jdk10`](#gradle48-jdk10)
+-	[`gradle:4.8-jdk10-slim`](#gradle48-jdk10-slim)
 -	[`gradle:4.8-jdk7`](#gradle48-jdk7)
 -	[`gradle:4.8-jdk7-alpine`](#gradle48-jdk7-alpine)
+-	[`gradle:4.8-jdk7-slim`](#gradle48-jdk7-slim)
 -	[`gradle:4.8-jdk8`](#gradle48-jdk8)
 -	[`gradle:4.8-jdk8-alpine`](#gradle48-jdk8-alpine)
+-	[`gradle:4.8-jdk8-slim`](#gradle48-jdk8-slim)
 -	[`gradle:4.8-jdk-alpine`](#gradle48-jdk-alpine)
+-	[`gradle:4.8-jdk-slim`](#gradle48-jdk-slim)
 -	[`gradle:4.8-jre`](#gradle48-jre)
 -	[`gradle:4.8-jre10`](#gradle48-jre10)
+-	[`gradle:4.8-jre10-slim`](#gradle48-jre10-slim)
 -	[`gradle:4.8-jre7`](#gradle48-jre7)
 -	[`gradle:4.8-jre7-alpine`](#gradle48-jre7-alpine)
+-	[`gradle:4.8-jre7-slim`](#gradle48-jre7-slim)
 -	[`gradle:4.8-jre8`](#gradle48-jre8)
 -	[`gradle:4.8-jre8-alpine`](#gradle48-jre8-alpine)
+-	[`gradle:4.8-jre8-slim`](#gradle48-jre8-slim)
 -	[`gradle:4.8-jre-alpine`](#gradle48-jre-alpine)
+-	[`gradle:4.8-jre-slim`](#gradle48-jre-slim)
+-	[`gradle:4.8-slim`](#gradle48-slim)
 -	[`gradle:alpine`](#gradlealpine)
 -	[`gradle:jdk`](#gradlejdk)
 -	[`gradle:jdk10`](#gradlejdk10)
+-	[`gradle:jdk10-slim`](#gradlejdk10-slim)
 -	[`gradle:jdk7`](#gradlejdk7)
 -	[`gradle:jdk7-alpine`](#gradlejdk7-alpine)
+-	[`gradle:jdk7-slim`](#gradlejdk7-slim)
 -	[`gradle:jdk8`](#gradlejdk8)
 -	[`gradle:jdk8-alpine`](#gradlejdk8-alpine)
+-	[`gradle:jdk8-slim`](#gradlejdk8-slim)
 -	[`gradle:jdk-alpine`](#gradlejdk-alpine)
+-	[`gradle:jdk-slim`](#gradlejdk-slim)
 -	[`gradle:jre`](#gradlejre)
 -	[`gradle:jre10`](#gradlejre10)
+-	[`gradle:jre10-slim`](#gradlejre10-slim)
 -	[`gradle:jre7`](#gradlejre7)
 -	[`gradle:jre7-alpine`](#gradlejre7-alpine)
+-	[`gradle:jre7-slim`](#gradlejre7-slim)
 -	[`gradle:jre8`](#gradlejre8)
 -	[`gradle:jre8-alpine`](#gradlejre8-alpine)
+-	[`gradle:jre8-slim`](#gradlejre8-slim)
 -	[`gradle:jre-alpine`](#gradlejre-alpine)
+-	[`gradle:jre-slim`](#gradlejre-slim)
 -	[`gradle:latest`](#gradlelatest)
+-	[`gradle:slim`](#gradleslim)
 
 ## `gradle:4.8`
 
@@ -3710,6 +3737,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8.1-jdk10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8.1-jdk7`
 
 ```console
@@ -4843,6 +4874,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:44:43 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8.1-jdk7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8.1-jdk8`
 
@@ -6145,6 +6180,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8.1-jdk8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8.1-jdk-alpine`
 
 ```console
@@ -6645,6 +6684,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:46:29 GMT  
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8.1-jdk-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8.1-jre`
 
@@ -8106,6 +8149,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8.1-jre10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8.1-jre7`
 
 ```console
@@ -9197,6 +9244,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:45:02 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8.1-jre7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8.1-jre8`
 
@@ -10457,6 +10508,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8.1-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8.1-jre-alpine`
 
 ```console
@@ -10957,6 +11012,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:47:06 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8.1-jre-slim`
+
+**does not exist** (yet?)
+
+## `gradle:4.8.1-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8-alpine`
 
@@ -13017,6 +13080,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8-jdk10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8-jdk7`
 
 ```console
@@ -14150,6 +14217,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:44:43 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8-jdk7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8-jdk8`
 
@@ -15452,6 +15523,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8-jdk8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8-jdk-alpine`
 
 ```console
@@ -15952,6 +16027,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:46:29 GMT  
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8-jdk-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8-jre`
 
@@ -17413,6 +17492,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8-jre10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8-jre7`
 
 ```console
@@ -18504,6 +18587,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:45:02 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8-jre7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:4.8-jre8`
 
@@ -19764,6 +19851,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:4.8-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:4.8-jre-alpine`
 
 ```console
@@ -20264,6 +20355,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:47:06 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:4.8-jre-slim`
+
+**does not exist** (yet?)
+
+## `gradle:4.8-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:alpine`
 
@@ -22324,6 +22423,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:jdk10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:jdk7`
 
 ```console
@@ -23457,6 +23560,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:44:43 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:jdk7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:jdk8`
 
@@ -24759,6 +24866,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:jdk8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:jdk-alpine`
 
 ```console
@@ -25259,6 +25370,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:46:29 GMT  
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:jdk-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:jre`
 
@@ -26720,6 +26835,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:jre10-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:jre7`
 
 ```console
@@ -27811,6 +27930,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:45:02 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:jre7-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:jre8`
 
@@ -29071,6 +29194,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `gradle:jre8-slim`
+
+**does not exist** (yet?)
+
 ## `gradle:jre-alpine`
 
 ```console
@@ -29571,6 +29698,10 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Tue, 26 Jun 2018 11:47:06 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:jre-slim`
+
+**does not exist** (yet?)
 
 ## `gradle:latest`
 
@@ -30371,3 +30502,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Wed, 27 Jun 2018 17:21:37 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gradle:slim`
+
+**does not exist** (yet?)
