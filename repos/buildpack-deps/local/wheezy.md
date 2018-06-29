@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea3538e50101f04a6214f07d0f89b7de34b0524097100b445a2b8534206b1ea2`
-- Created: `2018-06-05T23:24:55.703253513Z`
-- Virtual Size: ~ 468.66 Mb  
+- Image ID: `sha256:c26b4870857d65531bb7ff2aff676a2db32bdf11d0dabcfebce54f6154c4153a`
+- Created: `2018-06-26T22:21:51.0691298Z`
+- Virtual Size: ~ 468.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -4217,23 +4217,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ttf-dejavu/2.33-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018d-0+deb7u1`
+### `dpkg` source package: `tzdata=2018e-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2018d-0+deb7u1`
+- `tzdata=2018e-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0+deb7u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018e-0+deb7u1.dsc' tzdata_2018e-0+deb7u1.dsc 1966 SHA256:75c4f9836adef46cd3ba92879a28ad5b0ea6d2d291a87fce7978c993066187ae
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018e-0+deb7u1.debian.tar.xz' tzdata_2018e-0+deb7u1.debian.tar.xz 102452 SHA256:d1341149cca4149dc630cd6bb0535d6cf726bf2c19849b199fe87679b5ea20aa
+```
 
-- http://snapshot.debian.org/package/tzdata/2018d-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2018e-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018e-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018e-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
