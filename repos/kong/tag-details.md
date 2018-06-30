@@ -969,15 +969,192 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 
 ## `kong:0.14.0rc2`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:8bd77da0582a1090e51082fd2f87b73d9420b4d8fc209e9ff15bd9bebb8c81e5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `kong:0.14.0rc2` - linux; amd64
+
+```console
+$ docker pull kong@sha256:c8d615152bf3661a2033114203379657d1d75499e1ff1681af8d171050dfe99a
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.5 MB (33539510 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a24be1ce8157449932a4a468d20e0abd0dc9b657458be17fc1624969a426fdc3`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["\/usr\/local\/openresty\/nginx\/sbin\/nginx","-c","\/usr\/local\/kong\/nginx.conf","-p","\/usr\/local\/kong\/"]`
+
+```dockerfile
+# Tue, 09 Jan 2018 21:10:38 GMT
+ADD file:6edc55fb54ec9fc3658c8f5176a70e792103a516154442f94fed8e0290e4960e in / 
+# Tue, 09 Jan 2018 21:10:38 GMT
+CMD ["/bin/sh"]
+# Thu, 21 Jun 2018 19:20:17 GMT
+LABEL maintainer=Marco Palladino, marco@mashape.com
+# Fri, 29 Jun 2018 22:53:03 GMT
+ENV KONG_VERSION=0.14.0rc2
+# Fri, 29 Jun 2018 22:53:04 GMT
+ENV KONG_SHA256=b5c2aedd14c41625511841dcc4209442fda51acaa9080add2134b9829a10510e
+# Fri, 29 Jun 2018 22:53:16 GMT
+RUN apk add --no-cache --virtual .build-deps wget tar ca-certificates 	&& apk add --no-cache libgcc openssl pcre perl tzdata curl 	&& wget -O kong.tar.gz "https://bintray.com/kong/kong-community-edition-alpine-tar/download_file?file_path=kong-community-edition-$KONG_VERSION.apk.tar.gz" 	&& echo "$KONG_SHA256 *kong.tar.gz" | sha256sum -c - 	&& tar -xzf kong.tar.gz -C /tmp 	&& rm -f kong.tar.gz 	&& cp -R /tmp/usr / 	&& rm -rf /tmp/usr 	&& cp -R /tmp/etc / 	&& rm -rf /tmp/etc 	&& apk del .build-deps
+# Fri, 29 Jun 2018 22:53:17 GMT
+COPY file:0ce55305f95ddcb78ffb96b9502c795c4dd1040025f4ec7c3e19e4b889022b90 in /docker-entrypoint.sh 
+# Fri, 29 Jun 2018 22:53:17 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 29 Jun 2018 22:53:18 GMT
+EXPOSE 8000/tcp 8001/tcp 8443/tcp 8444/tcp
+# Fri, 29 Jun 2018 22:53:18 GMT
+STOPSIGNAL [SIGTERM]
+# Fri, 29 Jun 2018 22:53:18 GMT
+CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "-p" "/usr/local/kong/"]
+```
+
+-	Layers:
+	-	`sha256:605ce1bd3f3164f2949a30501cc596f52a72de05da1306ab360055f0d7130c32`  
+		Last Modified: Tue, 09 Jan 2018 21:13:17 GMT  
+		Size: 2.0 MB (1991747 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fb5bc21db5b912c0bca4179f4baa96cdc8312470b7b21938dd97a543acb996b`  
+		Last Modified: Fri, 29 Jun 2018 22:54:39 GMT  
+		Size: 31.5 MB (31547439 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8ce1712d8fdc68a6941391ed2dde30dd30a7595eb11e06d5602205f5556af35a`  
+		Last Modified: Fri, 29 Jun 2018 22:54:26 GMT  
+		Size: 324.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kong:0.14.0rc2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:8bd77da0582a1090e51082fd2f87b73d9420b4d8fc209e9ff15bd9bebb8c81e5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `kong:0.14.0rc2-alpine` - linux; amd64
+
+```console
+$ docker pull kong@sha256:c8d615152bf3661a2033114203379657d1d75499e1ff1681af8d171050dfe99a
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.5 MB (33539510 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a24be1ce8157449932a4a468d20e0abd0dc9b657458be17fc1624969a426fdc3`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["\/usr\/local\/openresty\/nginx\/sbin\/nginx","-c","\/usr\/local\/kong\/nginx.conf","-p","\/usr\/local\/kong\/"]`
+
+```dockerfile
+# Tue, 09 Jan 2018 21:10:38 GMT
+ADD file:6edc55fb54ec9fc3658c8f5176a70e792103a516154442f94fed8e0290e4960e in / 
+# Tue, 09 Jan 2018 21:10:38 GMT
+CMD ["/bin/sh"]
+# Thu, 21 Jun 2018 19:20:17 GMT
+LABEL maintainer=Marco Palladino, marco@mashape.com
+# Fri, 29 Jun 2018 22:53:03 GMT
+ENV KONG_VERSION=0.14.0rc2
+# Fri, 29 Jun 2018 22:53:04 GMT
+ENV KONG_SHA256=b5c2aedd14c41625511841dcc4209442fda51acaa9080add2134b9829a10510e
+# Fri, 29 Jun 2018 22:53:16 GMT
+RUN apk add --no-cache --virtual .build-deps wget tar ca-certificates 	&& apk add --no-cache libgcc openssl pcre perl tzdata curl 	&& wget -O kong.tar.gz "https://bintray.com/kong/kong-community-edition-alpine-tar/download_file?file_path=kong-community-edition-$KONG_VERSION.apk.tar.gz" 	&& echo "$KONG_SHA256 *kong.tar.gz" | sha256sum -c - 	&& tar -xzf kong.tar.gz -C /tmp 	&& rm -f kong.tar.gz 	&& cp -R /tmp/usr / 	&& rm -rf /tmp/usr 	&& cp -R /tmp/etc / 	&& rm -rf /tmp/etc 	&& apk del .build-deps
+# Fri, 29 Jun 2018 22:53:17 GMT
+COPY file:0ce55305f95ddcb78ffb96b9502c795c4dd1040025f4ec7c3e19e4b889022b90 in /docker-entrypoint.sh 
+# Fri, 29 Jun 2018 22:53:17 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 29 Jun 2018 22:53:18 GMT
+EXPOSE 8000/tcp 8001/tcp 8443/tcp 8444/tcp
+# Fri, 29 Jun 2018 22:53:18 GMT
+STOPSIGNAL [SIGTERM]
+# Fri, 29 Jun 2018 22:53:18 GMT
+CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "-p" "/usr/local/kong/"]
+```
+
+-	Layers:
+	-	`sha256:605ce1bd3f3164f2949a30501cc596f52a72de05da1306ab360055f0d7130c32`  
+		Last Modified: Tue, 09 Jan 2018 21:13:17 GMT  
+		Size: 2.0 MB (1991747 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fb5bc21db5b912c0bca4179f4baa96cdc8312470b7b21938dd97a543acb996b`  
+		Last Modified: Fri, 29 Jun 2018 22:54:39 GMT  
+		Size: 31.5 MB (31547439 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8ce1712d8fdc68a6941391ed2dde30dd30a7595eb11e06d5602205f5556af35a`  
+		Last Modified: Fri, 29 Jun 2018 22:54:26 GMT  
+		Size: 324.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kong:0.14.0rc2-centos`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:f0344611dc55c5ff8878fae0284a2de0666acfeaeaad7f2efec9aa377f119913
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `kong:0.14.0rc2-centos` - linux; amd64
+
+```console
+$ docker pull kong@sha256:e598ec84788816a5b5d54c47773b08cdb82e8afaf146730d84fa9b3beb242dbc
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **128.6 MB (128612007 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:688815684c8f9894651e54480fe370223538a68428d4837b491895e6655e2da4`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["\/usr\/local\/openresty\/nginx\/sbin\/nginx","-c","\/usr\/local\/kong\/nginx.conf","-p","\/usr\/local\/kong\/"]`
+
+```dockerfile
+# Mon, 04 Jun 2018 22:19:33 GMT
+ADD file:8f4b3be0c1427b158f7c30bad27af0d1bded0af60935cf8f0789286439ebdde9 in / 
+# Mon, 04 Jun 2018 22:19:34 GMT
+LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180531
+# Mon, 04 Jun 2018 22:19:34 GMT
+CMD ["/bin/bash"]
+# Thu, 21 Jun 2018 19:20:41 GMT
+MAINTAINER Marco Palladino, marco@mashape.com
+# Fri, 29 Jun 2018 22:53:29 GMT
+ENV KONG_VERSION=0.14.0rc2
+# Fri, 29 Jun 2018 22:53:55 GMT
+RUN yum install -y wget https://bintray.com/kong/kong-community-edition-rpm/download_file?file_path=centos/7/kong-community-edition-$KONG_VERSION.el7.noarch.rpm &&     yum clean all
+# Fri, 29 Jun 2018 22:53:56 GMT
+COPY file:0ce55305f95ddcb78ffb96b9502c795c4dd1040025f4ec7c3e19e4b889022b90 in /docker-entrypoint.sh 
+# Fri, 29 Jun 2018 22:53:56 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 29 Jun 2018 22:53:56 GMT
+EXPOSE 8000/tcp 8001/tcp 8443/tcp 8444/tcp
+# Fri, 29 Jun 2018 22:53:56 GMT
+STOPSIGNAL [SIGTERM]
+# Fri, 29 Jun 2018 22:53:56 GMT
+CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "-p" "/usr/local/kong/"]
+```
+
+-	Layers:
+	-	`sha256:7dc0dca2b1516961d6b3200564049db0a6e0410b370bb2189e2efae0d368616f`  
+		Last Modified: Mon, 04 Jun 2018 22:22:36 GMT  
+		Size: 74.7 MB (74693368 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8ae93836048508a9e0395216af63c94399b3a227bd92574d67a01c9f49c75bb5`  
+		Last Modified: Fri, 29 Jun 2018 22:55:31 GMT  
+		Size: 53.9 MB (53918316 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0efef39afdb6b26172d89a321c74b5ffa72ef4e77721c9a463589dc7fca76aba`  
+		Last Modified: Fri, 29 Jun 2018 22:55:14 GMT  
+		Size: 323.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kong:latest`
 
