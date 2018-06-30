@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2712ad4d98707232655b5b8484372395d6279729d2b2721d6d7ed264f474a4c2`
-- Created: `2018-06-12T02:41:43.412779513Z`
-- Virtual Size: ~ 414.88 Mb  
+- Image ID: `sha256:58b4b720fcca1e613cb3339ca7252cc51b046c3127f5749fb8ead58dcb0b8ec3`
+- Created: `2018-06-27T05:40:30.325652352Z`
+- Virtual Size: ~ 414.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u151`
-  - `JAVA_ALPINE_VERSION=8.151.12-r0`
+  - `JAVA_VERSION=8u171`
+  - `JAVA_ALPINE_VERSION=8.171.11-r0`
   - `FLINK_VERSION=1.5.0`
   - `HADOOP_SCALA_VARIANT=hadoop24-scala_2.11`
   - `FLINK_HOME=/opt/flink`
