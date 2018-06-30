@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2068f82760b014c18ef458030f9aa6300f615d1c8a43a03d4b112193399e65b`
-- Created: `2018-06-16T09:39:31.120028799Z`
+- Image ID: `sha256:bddc73093b2e67ee45402d00fe1ad85d83ebead1b7d314a51c365c992bb00feb`
+- Created: `2018-06-27T06:33:43.604868382Z`
 - Virtual Size: ~ 271.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
