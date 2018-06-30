@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.dsc' apt_1.6.1.dsc 2743 SHA256:2bd0953c1d778eb7554a6a125ab7248824549b377fb17194b36d48dc556c2adb
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.1.tar.xz' apt_1.6.1.tar.xz 2137808 SHA256:89ff5c6a29e550f3e96b1e9cf28ccea114965d2b5b4c008220d1625a4ca007b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.1/
 
-- https://sources.debian.net/src/apt/1.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1046,20 +1040,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.170-0.4
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.4.dsc' elfutils_0.170-0.4.dsc 2332 SHA256:d9ccf2b3fe282ef41d590b6f1f079d4b1758c3244104a39202e81cae42f59927
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.4.debian.tar.xz' elfutils_0.170-0.4.debian.tar.xz 45208 SHA256:d5b2934893ef975bf3dfb0772624a5cff1a96a226f4d60f0dbe7296870508aaa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.170-0.4/
 
-- https://sources.debian.net/src/elfutils/0.170-0.4/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.170-0.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.170-0.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.5-3`
 
@@ -1767,10 +1754,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=1.8.1-1
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.dsc' harfbuzz_1.8.1-1.dsc 2274 SHA256:851403197e1d736c408af74f4af58068374b615feb7d6bd360b411b6740bf2a9
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1.orig.tar.bz2' harfbuzz_1.8.1.orig.tar.bz2 3804867 SHA256:fbed6392ddb085e45e6090a9f389f72926d0e355f4b0a2ef51d35cf21686df45
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.debian.tar.xz' harfbuzz_1.8.1-1.debian.tar.xz 8668 SHA256:4ee214eb3271e1816b349de49464d4c74cd72c24e853d29798d13a52577b82d5
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.dsc' harfbuzz_1.8.1-1.dsc 2274 SHA256:851403197e1d736c408af74f4af58068374b615feb7d6bd360b411b6740bf2a9
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1.orig.tar.bz2' harfbuzz_1.8.1.orig.tar.bz2 3804867 SHA256:fbed6392ddb085e45e6090a9f389f72926d0e355f4b0a2ef51d35cf21686df45
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.debian.tar.xz' harfbuzz_1.8.1-1.debian.tar.xz 8668 SHA256:4ee214eb3271e1816b349de49464d4c74cd72c24e853d29798d13a52577b82d5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/1.8.1-1/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/1.8.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.20`
 
@@ -4192,16 +4185,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3.6=3.6.6~rc1-4
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1-4.dsc' python3.6_3.6.6~rc1-4.dsc 3448 SHA256:8fe18ab3bf55adb102a053d26cdea0496d9f84f6b32969ad3446e9aef7f22791
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1.orig.tar.xz' python3.6_3.6.6~rc1.orig.tar.xz 17145456 SHA256:dcbf5a4b944c4d5ef367c0c413f28081e053d920e759d0e4b64418ea7280050c
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1-4.debian.tar.xz' python3.6_3.6.6~rc1-4.debian.tar.xz 242832 SHA256:934acfe15f8f982c714246fd458ab007ac9aa833ded9d759b58032d0f51fca09
+'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1-4.dsc' python3.6_3.6.6~rc1-4.dsc 3448 SHA256:8fe18ab3bf55adb102a053d26cdea0496d9f84f6b32969ad3446e9aef7f22791
+'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1.orig.tar.xz' python3.6_3.6.6~rc1.orig.tar.xz 17145456 SHA256:dcbf5a4b944c4d5ef367c0c413f28081e053d920e759d0e4b64418ea7280050c
+'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6~rc1-4.debian.tar.xz' python3.6_3.6.6~rc1-4.debian.tar.xz 242832 SHA256:934acfe15f8f982c714246fd458ab007ac9aa833ded9d759b58032d0f51fca09
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3.6/3.6.6~rc1-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.6~rc1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.6~rc1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-base=3.5.0-5`
 
