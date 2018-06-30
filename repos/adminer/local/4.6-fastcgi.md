@@ -1,10 +1,10 @@
-# `adminer:4.6.2-fastcgi`
+# `adminer:4.6.3-fastcgi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7ac68014bf14e393bcfe64cd63b93fe14b7ec9ec836e4551f0d2f4958a7bc1a`
-- Created: `2018-06-27T09:07:33.168665199Z`
-- Virtual Size: ~ 84.26 Mb  
+- Image ID: `sha256:2bc7beb9be8f012f040709059a44831369fef06b7fb4350c67ea5c82a56c11d9`
+- Created: `2018-06-29T22:20:21.702295926Z`
+- Virtual Size: ~ 84.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -18,11 +18,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.6`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.6.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.6.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=1f004e049788a3effc89ef417f06a6cf704c95ae2a718b2175185f2983381ae7`
+  - `PHP_VERSION=7.2.7`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.7.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.7.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=eb01c0153b3baf1f64b8b044013ce414b52fede222df3f509e8ff209478f31f0`
   - `PHP_MD5=`
-  - `ADMINER_VERSION=4.6.2`
-  - `ADMINER_DOWNLOAD_SHA256=2b3e5e87ed1214288378fc272c1ba0497ec2f1128444e3a581eabd435f5575b9`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=13f26a5aeed2f734d9309a922592f2e2b35ba2ea5c1c2a2c8402ca26a8808682`
+  - `ADMINER_VERSION=4.6.3`
+  - `ADMINER_DOWNLOAD_SHA256=aa4a60ae2d1d0401cf26282451db8e57a1a66622e8048cdb3fd3a6db1f0f24e2`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=277a0c5cc2a2b3b956fbb9231f361aa1b405b2b65187a6c437c44a15568798cb`
