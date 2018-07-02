@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b71dc02172a2fc1e7df709d49c65087a575755aea329340f3f0e3c2695cb520`
-- Created: `2018-06-12T00:32:55.888763597Z`
-- Virtual Size: ~ 671.90 Mb  
+- Image ID: `sha256:14606dbf6c5ff6c13398a375d17be6a0f2e3364102e359ca436d2296a402dbc5`
+- Created: `2018-06-29T22:31:17.348950125Z`
+- Virtual Size: ~ 673.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1079,14 +1079,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo8=8.5.0-1~xenial`
+### `dpkg` source package: `gazebo8=8.6.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo8=8.5.0-1~xenial`
-- `gazebo8-common=8.5.0-1~xenial`
-- `gazebo8-plugin-base=8.5.0-1~xenial`
-- `libgazebo8:amd64=8.5.0-1~xenial`
+- `gazebo8=8.6.0-1~xenial`
+- `gazebo8-common=8.6.0-1~xenial`
+- `gazebo8-plugin-base=8.6.0-1~xenial`
+- `libgazebo8:amd64=8.6.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo8/copyright`, `/usr/share/doc/gazebo8-common/copyright`, `/usr/share/doc/gazebo8-plugin-base/copyright`, `/usr/share/doc/libgazebo8/copyright`)
 
@@ -1106,15 +1106,15 @@ Licenses: (parsed from: `/usr/share/doc/gazebo8/copyright`, `/usr/share/doc/gaze
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.9`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.10`
 
 Binary Packages:
 
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.9`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1124,9 +1124,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
+```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
 
@@ -1738,11 +1743,11 @@ $ apt-get source -qq --print-uris jackd2=1.9.10+20150825git1ed50c92~dfsg-1ubuntu
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jackd2/jackd2_1.9.10+20150825git1ed50c92~dfsg-1ubuntu1.debian.tar.xz' jackd2_1.9.10+20150825git1ed50c92~dfsg-1ubuntu1.debian.tar.xz 39608 SHA256:fa6cbe2bdd3ab174134e283c25bd4d8d094bb4952df6640cd38ab133205059c3
 ```
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4ubuntu1.1`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4ubuntu1.2`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4ubuntu1.1`
+- `libjasper1:amd64=1.900.1-debian1-2.4ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4341,7 +4346,6 @@ $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.3
 Binary Packages:
 
 - `libssl1.0.0:amd64=1.0.2g-1ubuntu4.12`
-- `openssl=1.0.2g-1ubuntu4.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4350,6 +4354,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
+
+Binary Packages:
+
+- `openssl=1.0.2g-1ubuntu4.13`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.dsc' openssl_1.0.2g-1ubuntu4.13.dsc 2453 SHA256:e2583bf1ea68c4ed1d92b09f9471d4e6c965bb232037e5dc5de8fccfc3093263
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.debian.tar.xz' openssl_1.0.2g-1ubuntu4.13.debian.tar.xz 125124 SHA256:43b6beb40533cc53595d4410be427fb2ff9d6e859f0ff4a73e21c49b45d6bcd5
+```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c57f8aecf4631dade38be757b035ba249f0924a25cbf76870d37069c17e4b437`
-- Created: `2018-06-12T00:30:34.24353611Z`
-- Virtual Size: ~ 1.45 Gb  
+- Image ID: `sha256:62b755ac74e14536988c60437c5935719f332f7777f2e5702ffcbb1a10ca50eb`
+- Created: `2018-06-29T22:29:06.567199552Z`
+- Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1235,15 +1235,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo7=7.13.0-1~xenial`
+### `dpkg` source package: `gazebo7=7.13.1-1~xenial`
 
 Binary Packages:
 
-- `gazebo7=7.13.0-1~xenial`
-- `gazebo7-common=7.13.0-1~xenial`
-- `gazebo7-plugin-base=7.13.0-1~xenial`
-- `libgazebo7:amd64=7.13.0-1~xenial`
-- `libgazebo7-dev:amd64=7.13.0-1~xenial`
+- `gazebo7=7.13.1-1~xenial`
+- `gazebo7-common=7.13.1-1~xenial`
+- `gazebo7-plugin-base=7.13.1-1~xenial`
+- `libgazebo7:amd64=7.13.1-1~xenial`
+- `libgazebo7-dev:amd64=7.13.1-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gazebo7-common/copyright`, `/usr/share/doc/gazebo7-plugin-base/copyright`, `/usr/share/doc/libgazebo7/copyright`, `/usr/share/doc/libgazebo7-dev/copyright`)
 
@@ -1263,31 +1263,31 @@ Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gaze
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.9`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.10`
 
 Binary Packages:
 
-- `cpp-5=5.4.0-6ubuntu1~16.04.9`
-- `g++-5=5.4.0-6ubuntu1~16.04.9`
-- `gcc-5=5.4.0-6ubuntu1~16.04.9`
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.9`
-- `gfortran-5=5.4.0-6ubuntu1~16.04.9`
-- `libasan2:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgfortran-5-dev:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libitm1:amd64=5.4.0-6ubuntu1~16.04.9`
-- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.9`
-- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.9`
+- `cpp-5=5.4.0-6ubuntu1~16.04.10`
+- `g++-5=5.4.0-6ubuntu1~16.04.10`
+- `gcc-5=5.4.0-6ubuntu1~16.04.10`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.10`
+- `gfortran-5=5.4.0-6ubuntu1~16.04.10`
+- `libasan2:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgfortran-5-dev:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libitm1:amd64=5.4.0-6ubuntu1~16.04.10`
+- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/copyright`, `/usr/share/doc/gcc-5/copyright`, `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/gfortran-5/copyright`, `/usr/share/doc/libasan2/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-5-dev/copyright`, `/usr/share/doc/libgfortran-5-dev/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libmpx0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-5-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1297,9 +1297,14 @@ Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
+```
 
 ### `dpkg` source package: `gcc-defaults=1.150ubuntu1`
 
@@ -2044,12 +2049,12 @@ $ apt-get source -qq --print-uris iso-codes=3.65-1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iso-codes/iso-codes_3.65-1.debian.tar.xz' iso-codes_3.65-1.debian.tar.xz 26824 SHA256:d62b506ddbadd5263160e80dc897736869e203d21be10455e07697587b3083cf
 ```
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4ubuntu1.1`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4ubuntu1.2`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-debian1-2.4ubuntu1.1`
-- `libjasper1:amd64=1.900.1-debian1-2.4ubuntu1.1`
+- `libjasper-dev=1.900.1-debian1-2.4ubuntu1.2`
+- `libjasper1:amd64=1.900.1-debian1-2.4ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3865,14 +3870,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-128.154
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-128.154.dsc' linux_4.4.0-128.154.dsc 9712 SHA256:ecc9ac7abef3017a2f136196a7d2c0fb753774c095cc6c0deb7b5bcdd70b0f10
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-128.154.diff.gz' linux_4.4.0-128.154.diff.gz 14491137 SHA256:8aabfb5677e4dd49f2195c23530f0368fa58ac48f2bef950150e686433107bbe
-```
 
 ### `dpkg` source package: `llvm-toolchain-5.0=1:5.0-3~16.04.1`
 
@@ -4644,22 +4644,27 @@ $ apt-get source -qq --print-uris openmpi=1.10.2-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openmpi/openmpi_1.10.2-8ubuntu1.debian.tar.xz' openmpi_1.10.2-8ubuntu1.debian.tar.xz 31736 SHA256:b402ee58b24798c198e64f033a5df1928b3949795eca2c0930c9fdcfa99b89f2
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.12`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu4.12`
-- `libssl-doc=1.0.2g-1ubuntu4.12`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.12`
-- `openssl=1.0.2g-1ubuntu4.12`
+- `libssl-dev:amd64=1.0.2g-1ubuntu4.13`
+- `libssl-doc=1.0.2g-1ubuntu4.13`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.13`
+- `openssl=1.0.2g-1ubuntu4.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.dsc' openssl_1.0.2g-1ubuntu4.13.dsc 2453 SHA256:e2583bf1ea68c4ed1d92b09f9471d4e6c965bb232037e5dc5de8fccfc3093263
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.debian.tar.xz' openssl_1.0.2g-1ubuntu4.13.debian.tar.xz 125124 SHA256:43b6beb40533cc53595d4410be427fb2ff9d6e859f0ff4a73e21c49b45d6bcd5
+```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 
@@ -4786,14 +4791,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9ubuntu0.3`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.5`
 
 Binary Packages:
 
-- `libperl5.22:amd64=5.22.1-9ubuntu0.3`
-- `perl=5.22.1-9ubuntu0.3`
-- `perl-base=5.22.1-9ubuntu0.3`
-- `perl-modules-5.22=5.22.1-9ubuntu0.3`
+- `libperl5.22:amd64=5.22.1-9ubuntu0.5`
+- `perl=5.22.1-9ubuntu0.5`
+- `perl-base=5.22.1-9ubuntu0.5`
+- `perl-modules-5.22=5.22.1-9ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.22/copyright`)
 
@@ -4824,9 +4829,14 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.dsc' perl_5.22.1-9ubuntu0.5.dsc 2464 SHA256:79543ad2fd3d89f0d8849a883e30162b64d920cc1a8e82f16b70f70d051b15b3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.debian.tar.xz' perl_5.22.1-9ubuntu0.5.debian.tar.xz 157120 SHA256:e2b969f803b52c0961a3495cbaf51cc353310cba02309c1b02400f9445e41bc1
+```
 
 ### `dpkg` source package: `pinentry=0.9.7-3`
 
