@@ -39,6 +39,12 @@
 -	[`solr:7.3.1-slim`](#solr731-slim)
 -	[`solr:7.3-alpine`](#solr73-alpine)
 -	[`solr:7.3-slim`](#solr73-slim)
+-	[`solr:7.4`](#solr74)
+-	[`solr:7.4.0`](#solr740)
+-	[`solr:7.4.0-alpine`](#solr740-alpine)
+-	[`solr:7.4.0-slim`](#solr740-slim)
+-	[`solr:7.4-alpine`](#solr74-alpine)
+-	[`solr:7.4-slim`](#solr74-slim)
 -	[`solr:7-alpine`](#solr7-alpine)
 -	[`solr:7-slim`](#solr7-slim)
 -	[`solr:alpine`](#solralpine)
@@ -28961,6 +28967,30 @@ CMD ["solr-foreground"]
 		Last Modified: Thu, 17 May 2018 12:05:35 GMT  
 		Size: 4.3 KB (4257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `solr:7.4`
+
+**does not exist** (yet?)
+
+## `solr:7.4.0`
+
+**does not exist** (yet?)
+
+## `solr:7.4.0-alpine`
+
+**does not exist** (yet?)
+
+## `solr:7.4.0-slim`
+
+**does not exist** (yet?)
+
+## `solr:7.4-alpine`
+
+**does not exist** (yet?)
+
+## `solr:7.4-slim`
+
+**does not exist** (yet?)
 
 ## `solr:7-alpine`
 
