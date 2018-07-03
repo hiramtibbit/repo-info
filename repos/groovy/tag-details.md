@@ -4158,7 +4158,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.5.0-jdk7-alpine`
 
 ```console
-$ docker pull groovy@sha256:cf6954a60ee7bb30440e7927a9976b3d6575decad296b625da15be8af346f516
+$ docker pull groovy@sha256:7f273727b59afec8e15ce7b376a8bd295b7f2ccfac0d0272c010cba22966577a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4400,14 +4400,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.5.0-jdk7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:51547522ad9b0caab776efbb6b9cc03a40f9a0796ca47748a945e607659e3a4f
+$ docker pull groovy@sha256:3f072373907cfff3b0d5e42278d4f86a93c0b42124b174cb6af4085a1a64ffe4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.3 MB (100332568 bytes)**  
+-	Total Size: **100.5 MB (100516046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b7e0eb67783f65110956ca74e045983504fa41e2f96ac7200bbd0840a696c41`
+-	Image ID: `sha256:2385c93e7ffa098d163a17e4d1836c619df1fe79288a03a22951c5b39e37873f`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -4425,27 +4425,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
 # Tue, 05 Dec 2017 11:48:00 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:48:01 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:48:02 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:48:55 GMT
+# Tue, 03 Jul 2018 09:04:09 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:04:32 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:05:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:36:59 GMT
+# Tue, 03 Jul 2018 09:59:40 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:37:02 GMT
+# Tue, 03 Jul 2018 09:59:42 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:02:39 GMT
+# Tue, 03 Jul 2018 09:59:44 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:03:14 GMT
+# Tue, 03 Jul 2018 10:00:26 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:03:16 GMT
+# Tue, 03 Jul 2018 10:00:33 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:03:17 GMT
+# Tue, 03 Jul 2018 10:00:35 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:03:18 GMT
+# Tue, 03 Jul 2018 10:00:38 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:03:25 GMT
+# Tue, 03 Jul 2018 10:00:43 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -4462,16 +4462,16 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1061c72558b55c62bfb93a17e9c05869fb18ca7ae72cb680eda1102a80b13b6e`  
-		Last Modified: Tue, 05 Dec 2017 11:51:24 GMT  
-		Size: 69.7 MB (69681273 bytes)  
+	-	`sha256:8e9afe34eae495afc3e28dbe7e16a7007cfcbd5d2c91baa656d6923c66de752f`  
+		Last Modified: Tue, 03 Jul 2018 09:17:15 GMT  
+		Size: 69.9 MB (69864465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:259af89c66040ca44707e886813ef567844e517af1ff9f9a1db5984434f2d707`  
-		Last Modified: Wed, 20 Jun 2018 09:45:16 GMT  
-		Size: 28.6 MB (28569240 bytes)  
+	-	`sha256:2ce8f7adf6eb7a7bae1bb9f81b9d374f851f35ea3e8271efd45a4e350efa7af7`  
+		Last Modified: Tue, 03 Jul 2018 10:05:37 GMT  
+		Size: 28.6 MB (28569526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf8c9df8e18038fbaf3b9273b2ced987ee4615d7f52f5c38afcf5b88777a0d1b`  
-		Last Modified: Wed, 20 Jun 2018 09:45:02 GMT  
+	-	`sha256:744eb3259cb02d801001f759ea72198c2ab6922da5923d25c9b1764e0a29448b`  
+		Last Modified: Tue, 03 Jul 2018 10:05:34 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8174,7 +8174,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.5.0-jre7-alpine`
 
 ```console
-$ docker pull groovy@sha256:92999cf8d1fe6a766e4629937089c275822381b498927ea1c95dc5b73c0ce8b6
+$ docker pull groovy@sha256:7d5047cdff643a3f3a3777e46bd3c6faff7791a632c088f877df6771e92d91a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8416,14 +8416,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.5.0-jre7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:bd579886cab63b78c9b1676ca9e7858901e47677af7603a3aa748981a56271b5
+$ docker pull groovy@sha256:b7dd2c6ed87fe49488ffa55b1a17164a17ad3ae7408e5ef1fe11032e84043034
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.9 MB (83946851 bytes)**  
+-	Total Size: **84.1 MB (84109199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f1e9ce4a4916dacdeab03103190c259e9b547077396cd4cb8c90b95764c647`
+-	Image ID: `sha256:67c86857eea73fe0e476275b2d3110c49eb62b579d2a9976f61aeb4cd5ae41f0`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -8441,27 +8441,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
 # Tue, 05 Dec 2017 11:49:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:49:12 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:49:13 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:49:26 GMT
+# Tue, 03 Jul 2018 09:07:08 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:07:10 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:07:18 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:38:00 GMT
+# Tue, 03 Jul 2018 10:00:57 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:38:01 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:03:32 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:36 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:44 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:45 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:47 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:04:07 GMT
+# Tue, 03 Jul 2018 10:01:50 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -8478,17 +8478,17 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4e6e790796714359566716c16f34426a754787d12c851526e8e17fd25a6e33`  
-		Last Modified: Tue, 05 Dec 2017 11:52:40 GMT  
-		Size: 53.3 MB (53307603 bytes)  
+	-	`sha256:749299594754ec1cee0a24e7616314c47d7a1624912dcba564500bac78e5fd07`  
+		Last Modified: Tue, 03 Jul 2018 09:18:49 GMT  
+		Size: 53.5 MB (53469919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19af6dd27c4d372cb5e23d502cc5abfdd819e8ce545fe65f1f5d6cee514b30b8`  
-		Last Modified: Wed, 20 Jun 2018 09:45:39 GMT  
-		Size: 28.6 MB (28557191 bytes)  
+	-	`sha256:2aa3f6e222dc177fabf27a6374d3f5c0c7e4c3501b1126fe497ee0119de3b0aa`  
+		Last Modified: Tue, 03 Jul 2018 10:06:17 GMT  
+		Size: 28.6 MB (28557224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62a2476a13cd5a3438239c4db3d6ecabd073c528240be0f573f2602bc2692d47`  
-		Last Modified: Wed, 20 Jun 2018 09:45:35 GMT  
-		Size: 173.0 B  
+	-	`sha256:4e7d597582d26a058c115bd6135cccbf8e2826c456e0b3bcd5520fa6018c2a69`  
+		Last Modified: Tue, 03 Jul 2018 10:06:14 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:2.5.0-jre7-alpine` - linux; s390x
@@ -12686,7 +12686,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.5-jdk7-alpine`
 
 ```console
-$ docker pull groovy@sha256:cf6954a60ee7bb30440e7927a9976b3d6575decad296b625da15be8af346f516
+$ docker pull groovy@sha256:7f273727b59afec8e15ce7b376a8bd295b7f2ccfac0d0272c010cba22966577a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12928,14 +12928,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.5-jdk7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:51547522ad9b0caab776efbb6b9cc03a40f9a0796ca47748a945e607659e3a4f
+$ docker pull groovy@sha256:3f072373907cfff3b0d5e42278d4f86a93c0b42124b174cb6af4085a1a64ffe4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.3 MB (100332568 bytes)**  
+-	Total Size: **100.5 MB (100516046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b7e0eb67783f65110956ca74e045983504fa41e2f96ac7200bbd0840a696c41`
+-	Image ID: `sha256:2385c93e7ffa098d163a17e4d1836c619df1fe79288a03a22951c5b39e37873f`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -12953,27 +12953,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
 # Tue, 05 Dec 2017 11:48:00 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:48:01 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:48:02 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:48:55 GMT
+# Tue, 03 Jul 2018 09:04:09 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:04:32 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:05:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:36:59 GMT
+# Tue, 03 Jul 2018 09:59:40 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:37:02 GMT
+# Tue, 03 Jul 2018 09:59:42 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:02:39 GMT
+# Tue, 03 Jul 2018 09:59:44 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:03:14 GMT
+# Tue, 03 Jul 2018 10:00:26 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:03:16 GMT
+# Tue, 03 Jul 2018 10:00:33 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:03:17 GMT
+# Tue, 03 Jul 2018 10:00:35 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:03:18 GMT
+# Tue, 03 Jul 2018 10:00:38 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:03:25 GMT
+# Tue, 03 Jul 2018 10:00:43 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -12990,16 +12990,16 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1061c72558b55c62bfb93a17e9c05869fb18ca7ae72cb680eda1102a80b13b6e`  
-		Last Modified: Tue, 05 Dec 2017 11:51:24 GMT  
-		Size: 69.7 MB (69681273 bytes)  
+	-	`sha256:8e9afe34eae495afc3e28dbe7e16a7007cfcbd5d2c91baa656d6923c66de752f`  
+		Last Modified: Tue, 03 Jul 2018 09:17:15 GMT  
+		Size: 69.9 MB (69864465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:259af89c66040ca44707e886813ef567844e517af1ff9f9a1db5984434f2d707`  
-		Last Modified: Wed, 20 Jun 2018 09:45:16 GMT  
-		Size: 28.6 MB (28569240 bytes)  
+	-	`sha256:2ce8f7adf6eb7a7bae1bb9f81b9d374f851f35ea3e8271efd45a4e350efa7af7`  
+		Last Modified: Tue, 03 Jul 2018 10:05:37 GMT  
+		Size: 28.6 MB (28569526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf8c9df8e18038fbaf3b9273b2ced987ee4615d7f52f5c38afcf5b88777a0d1b`  
-		Last Modified: Wed, 20 Jun 2018 09:45:02 GMT  
+	-	`sha256:744eb3259cb02d801001f759ea72198c2ab6922da5923d25c9b1764e0a29448b`  
+		Last Modified: Tue, 03 Jul 2018 10:05:34 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16702,7 +16702,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.5-jre7-alpine`
 
 ```console
-$ docker pull groovy@sha256:92999cf8d1fe6a766e4629937089c275822381b498927ea1c95dc5b73c0ce8b6
+$ docker pull groovy@sha256:7d5047cdff643a3f3a3777e46bd3c6faff7791a632c088f877df6771e92d91a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16944,14 +16944,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.5-jre7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:bd579886cab63b78c9b1676ca9e7858901e47677af7603a3aa748981a56271b5
+$ docker pull groovy@sha256:b7dd2c6ed87fe49488ffa55b1a17164a17ad3ae7408e5ef1fe11032e84043034
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.9 MB (83946851 bytes)**  
+-	Total Size: **84.1 MB (84109199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f1e9ce4a4916dacdeab03103190c259e9b547077396cd4cb8c90b95764c647`
+-	Image ID: `sha256:67c86857eea73fe0e476275b2d3110c49eb62b579d2a9976f61aeb4cd5ae41f0`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -16969,27 +16969,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
 # Tue, 05 Dec 2017 11:49:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:49:12 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:49:13 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:49:26 GMT
+# Tue, 03 Jul 2018 09:07:08 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:07:10 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:07:18 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:38:00 GMT
+# Tue, 03 Jul 2018 10:00:57 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:38:01 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:03:32 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:36 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:44 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:45 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:47 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:04:07 GMT
+# Tue, 03 Jul 2018 10:01:50 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -17006,17 +17006,17 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4e6e790796714359566716c16f34426a754787d12c851526e8e17fd25a6e33`  
-		Last Modified: Tue, 05 Dec 2017 11:52:40 GMT  
-		Size: 53.3 MB (53307603 bytes)  
+	-	`sha256:749299594754ec1cee0a24e7616314c47d7a1624912dcba564500bac78e5fd07`  
+		Last Modified: Tue, 03 Jul 2018 09:18:49 GMT  
+		Size: 53.5 MB (53469919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19af6dd27c4d372cb5e23d502cc5abfdd819e8ce545fe65f1f5d6cee514b30b8`  
-		Last Modified: Wed, 20 Jun 2018 09:45:39 GMT  
-		Size: 28.6 MB (28557191 bytes)  
+	-	`sha256:2aa3f6e222dc177fabf27a6374d3f5c0c7e4c3501b1126fe497ee0119de3b0aa`  
+		Last Modified: Tue, 03 Jul 2018 10:06:17 GMT  
+		Size: 28.6 MB (28557224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62a2476a13cd5a3438239c4db3d6ecabd073c528240be0f573f2602bc2692d47`  
-		Last Modified: Wed, 20 Jun 2018 09:45:35 GMT  
-		Size: 173.0 B  
+	-	`sha256:4e7d597582d26a058c115bd6135cccbf8e2826c456e0b3bcd5520fa6018c2a69`  
+		Last Modified: Tue, 03 Jul 2018 10:06:14 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:2.5-jre7-alpine` - linux; s390x
@@ -22056,7 +22056,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.6.0-alpha-4-jdk7-alpine`
 
 ```console
-$ docker pull groovy@sha256:46e757aa8047ad0cb1d33760a18677340a3a98f8f0d5ad091e6687d15b80926e
+$ docker pull groovy@sha256:c0cf0055b3db6676a1f293fd0de3c8a45a70e6bca60eeaedab48b16e0db7ea92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22298,14 +22298,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.6.0-alpha-4-jdk7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:50d133c5c79cd4db509b4bd3f428ddb1a70a5a95b00214561df76470ceb864a4
+$ docker pull groovy@sha256:47f6824012a94eccb5d14175337d358d6c3edda378b3a03d19a21421e0aa8faf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.6 MB (106639599 bytes)**  
+-	Total Size: **106.8 MB (106822908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb7aff7761768504f5ec3bcbd91aa7f61de673fbc1fb4db73f2955fdd42a7046`
+-	Image ID: `sha256:9a9891d724f23a62fd2465e910fdd76b8c3fa7d17e853f818de466e1652378a8`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -22323,27 +22323,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
 # Tue, 05 Dec 2017 11:48:00 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:48:01 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:48:02 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:48:55 GMT
+# Tue, 03 Jul 2018 09:04:09 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:04:32 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:05:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:36:59 GMT
+# Tue, 03 Jul 2018 09:59:40 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:37:02 GMT
+# Tue, 03 Jul 2018 09:59:42 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Sat, 30 Jun 2018 08:37:57 GMT
+# Tue, 03 Jul 2018 10:02:25 GMT
 ENV GROOVY_VERSION=2.6.0-alpha-4
-# Sat, 30 Jun 2018 08:39:12 GMT
+# Tue, 03 Jul 2018 10:03:22 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Sat, 30 Jun 2018 08:39:13 GMT
+# Tue, 03 Jul 2018 10:03:26 GMT
 USER [groovy]
-# Sat, 30 Jun 2018 08:39:14 GMT
+# Tue, 03 Jul 2018 10:03:27 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Sat, 30 Jun 2018 08:39:16 GMT
+# Tue, 03 Jul 2018 10:03:30 GMT
 WORKDIR /home/groovy
-# Sat, 30 Jun 2018 08:39:23 GMT
+# Tue, 03 Jul 2018 10:03:40 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -22360,17 +22360,17 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1061c72558b55c62bfb93a17e9c05869fb18ca7ae72cb680eda1102a80b13b6e`  
-		Last Modified: Tue, 05 Dec 2017 11:51:24 GMT  
-		Size: 69.7 MB (69681273 bytes)  
+	-	`sha256:8e9afe34eae495afc3e28dbe7e16a7007cfcbd5d2c91baa656d6923c66de752f`  
+		Last Modified: Tue, 03 Jul 2018 09:17:15 GMT  
+		Size: 69.9 MB (69864465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57b40899fa2846005a2601158b9500d0b62ae66a6022ee8d1cc7b69417baa3d2`  
-		Last Modified: Sat, 30 Jun 2018 08:58:26 GMT  
-		Size: 34.9 MB (34876271 bytes)  
+	-	`sha256:2153b783b9435a6699dc12c972ac4fdbb4a14c5d0d1c5f902da05ddeba57a341`  
+		Last Modified: Tue, 03 Jul 2018 10:07:06 GMT  
+		Size: 34.9 MB (34876386 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a62541a845be74f3d45e3466df3c56c2ba14ec734d8dcd60844efe3f8dc3f33e`  
-		Last Modified: Sat, 30 Jun 2018 08:58:18 GMT  
-		Size: 171.0 B  
+	-	`sha256:3085181258fd4eb764141639053dad1c37090b74971acc29c528bd20d00be7dd`  
+		Last Modified: Tue, 03 Jul 2018 10:07:01 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:2.6.0-alpha-4-jdk7-alpine` - linux; s390x
@@ -25502,7 +25502,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.6.0-alpha-4-jre7-alpine`
 
 ```console
-$ docker pull groovy@sha256:dea091d2194d8413dc24d81b600147884e8940b5105fcb7f871373c67a94ee47
+$ docker pull groovy@sha256:273c95d4e1588198e37b13e4dbba680539c33d36a728cf89ec4cacff3c4b5116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25744,14 +25744,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.6.0-alpha-4-jre7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:d0f8ba298c0f870ee17d0dbbd4a75f268e5867d6459e0d51d531f3c9e2015064
+$ docker pull groovy@sha256:11fd515a131aec6809482698c42da334d5daafa8ee715f1c9924ed99655ec203
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.3 MB (90254124 bytes)**  
+-	Total Size: **90.4 MB (90416632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6ea90cc6555269f9f72bfa8de10bb8ec38f34d9e80761dcd8eb3731ed61be42`
+-	Image ID: `sha256:7d01c79f0eb542ce6652e51cd0fc995fcfb88d03b4168bfa2af56613174ebccd`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -25769,27 +25769,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
 # Tue, 05 Dec 2017 11:49:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:49:12 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:49:13 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:49:26 GMT
+# Tue, 03 Jul 2018 09:07:08 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:07:10 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:07:18 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:38:00 GMT
+# Tue, 03 Jul 2018 10:00:57 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:38:01 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Sat, 30 Jun 2018 08:39:50 GMT
+# Tue, 03 Jul 2018 10:03:55 GMT
 ENV GROOVY_VERSION=2.6.0-alpha-4
-# Sat, 30 Jun 2018 08:41:13 GMT
+# Tue, 03 Jul 2018 10:04:21 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Sat, 30 Jun 2018 08:41:15 GMT
+# Tue, 03 Jul 2018 10:04:22 GMT
 USER [groovy]
-# Sat, 30 Jun 2018 08:41:17 GMT
+# Tue, 03 Jul 2018 10:04:23 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Sat, 30 Jun 2018 08:41:18 GMT
+# Tue, 03 Jul 2018 10:04:24 GMT
 WORKDIR /home/groovy
-# Sat, 30 Jun 2018 08:41:24 GMT
+# Tue, 03 Jul 2018 10:04:28 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -25806,16 +25806,16 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4e6e790796714359566716c16f34426a754787d12c851526e8e17fd25a6e33`  
-		Last Modified: Tue, 05 Dec 2017 11:52:40 GMT  
-		Size: 53.3 MB (53307603 bytes)  
+	-	`sha256:749299594754ec1cee0a24e7616314c47d7a1624912dcba564500bac78e5fd07`  
+		Last Modified: Tue, 03 Jul 2018 09:18:49 GMT  
+		Size: 53.5 MB (53469919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1e0e96a1933be05b18e505724fb7bd23af1e5e76641f457b57f19bf9c2ea88`  
-		Last Modified: Sat, 30 Jun 2018 08:58:59 GMT  
-		Size: 34.9 MB (34864466 bytes)  
+	-	`sha256:7a08aac370f9b620ad9e3946ab20161616b9fe5672dac517d2c591529c3a22f9`  
+		Last Modified: Tue, 03 Jul 2018 10:07:39 GMT  
+		Size: 34.9 MB (34864658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c750744da69698b170c72d3000d19da74331ed782cd655f26669a3ed59174dce`  
-		Last Modified: Sat, 30 Jun 2018 08:58:51 GMT  
+	-	`sha256:ceb5bcc61119b6e1feb668236bffb025dfd5941ea9f30883df1ee178d73b409c`  
+		Last Modified: Tue, 03 Jul 2018 10:07:36 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -29396,7 +29396,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.6-jdk7-alpine`
 
 ```console
-$ docker pull groovy@sha256:46e757aa8047ad0cb1d33760a18677340a3a98f8f0d5ad091e6687d15b80926e
+$ docker pull groovy@sha256:c0cf0055b3db6676a1f293fd0de3c8a45a70e6bca60eeaedab48b16e0db7ea92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29638,14 +29638,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.6-jdk7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:50d133c5c79cd4db509b4bd3f428ddb1a70a5a95b00214561df76470ceb864a4
+$ docker pull groovy@sha256:47f6824012a94eccb5d14175337d358d6c3edda378b3a03d19a21421e0aa8faf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.6 MB (106639599 bytes)**  
+-	Total Size: **106.8 MB (106822908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb7aff7761768504f5ec3bcbd91aa7f61de673fbc1fb4db73f2955fdd42a7046`
+-	Image ID: `sha256:9a9891d724f23a62fd2465e910fdd76b8c3fa7d17e853f818de466e1652378a8`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -29663,27 +29663,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
 # Tue, 05 Dec 2017 11:48:00 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:48:01 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:48:02 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:48:55 GMT
+# Tue, 03 Jul 2018 09:04:09 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:04:32 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:05:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:36:59 GMT
+# Tue, 03 Jul 2018 09:59:40 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:37:02 GMT
+# Tue, 03 Jul 2018 09:59:42 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Sat, 30 Jun 2018 08:37:57 GMT
+# Tue, 03 Jul 2018 10:02:25 GMT
 ENV GROOVY_VERSION=2.6.0-alpha-4
-# Sat, 30 Jun 2018 08:39:12 GMT
+# Tue, 03 Jul 2018 10:03:22 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Sat, 30 Jun 2018 08:39:13 GMT
+# Tue, 03 Jul 2018 10:03:26 GMT
 USER [groovy]
-# Sat, 30 Jun 2018 08:39:14 GMT
+# Tue, 03 Jul 2018 10:03:27 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Sat, 30 Jun 2018 08:39:16 GMT
+# Tue, 03 Jul 2018 10:03:30 GMT
 WORKDIR /home/groovy
-# Sat, 30 Jun 2018 08:39:23 GMT
+# Tue, 03 Jul 2018 10:03:40 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -29700,17 +29700,17 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1061c72558b55c62bfb93a17e9c05869fb18ca7ae72cb680eda1102a80b13b6e`  
-		Last Modified: Tue, 05 Dec 2017 11:51:24 GMT  
-		Size: 69.7 MB (69681273 bytes)  
+	-	`sha256:8e9afe34eae495afc3e28dbe7e16a7007cfcbd5d2c91baa656d6923c66de752f`  
+		Last Modified: Tue, 03 Jul 2018 09:17:15 GMT  
+		Size: 69.9 MB (69864465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57b40899fa2846005a2601158b9500d0b62ae66a6022ee8d1cc7b69417baa3d2`  
-		Last Modified: Sat, 30 Jun 2018 08:58:26 GMT  
-		Size: 34.9 MB (34876271 bytes)  
+	-	`sha256:2153b783b9435a6699dc12c972ac4fdbb4a14c5d0d1c5f902da05ddeba57a341`  
+		Last Modified: Tue, 03 Jul 2018 10:07:06 GMT  
+		Size: 34.9 MB (34876386 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a62541a845be74f3d45e3466df3c56c2ba14ec734d8dcd60844efe3f8dc3f33e`  
-		Last Modified: Sat, 30 Jun 2018 08:58:18 GMT  
-		Size: 171.0 B  
+	-	`sha256:3085181258fd4eb764141639053dad1c37090b74971acc29c528bd20d00be7dd`  
+		Last Modified: Tue, 03 Jul 2018 10:07:01 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:2.6-jdk7-alpine` - linux; s390x
@@ -32842,7 +32842,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:2.6-jre7-alpine`
 
 ```console
-$ docker pull groovy@sha256:dea091d2194d8413dc24d81b600147884e8940b5105fcb7f871373c67a94ee47
+$ docker pull groovy@sha256:273c95d4e1588198e37b13e4dbba680539c33d36a728cf89ec4cacff3c4b5116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33084,14 +33084,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:2.6-jre7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:d0f8ba298c0f870ee17d0dbbd4a75f268e5867d6459e0d51d531f3c9e2015064
+$ docker pull groovy@sha256:11fd515a131aec6809482698c42da334d5daafa8ee715f1c9924ed99655ec203
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.3 MB (90254124 bytes)**  
+-	Total Size: **90.4 MB (90416632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6ea90cc6555269f9f72bfa8de10bb8ec38f34d9e80761dcd8eb3731ed61be42`
+-	Image ID: `sha256:7d01c79f0eb542ce6652e51cd0fc995fcfb88d03b4168bfa2af56613174ebccd`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -33109,27 +33109,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
 # Tue, 05 Dec 2017 11:49:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:49:12 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:49:13 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:49:26 GMT
+# Tue, 03 Jul 2018 09:07:08 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:07:10 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:07:18 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:38:00 GMT
+# Tue, 03 Jul 2018 10:00:57 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:38:01 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Sat, 30 Jun 2018 08:39:50 GMT
+# Tue, 03 Jul 2018 10:03:55 GMT
 ENV GROOVY_VERSION=2.6.0-alpha-4
-# Sat, 30 Jun 2018 08:41:13 GMT
+# Tue, 03 Jul 2018 10:04:21 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Sat, 30 Jun 2018 08:41:15 GMT
+# Tue, 03 Jul 2018 10:04:22 GMT
 USER [groovy]
-# Sat, 30 Jun 2018 08:41:17 GMT
+# Tue, 03 Jul 2018 10:04:23 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Sat, 30 Jun 2018 08:41:18 GMT
+# Tue, 03 Jul 2018 10:04:24 GMT
 WORKDIR /home/groovy
-# Sat, 30 Jun 2018 08:41:24 GMT
+# Tue, 03 Jul 2018 10:04:28 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -33146,16 +33146,16 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4e6e790796714359566716c16f34426a754787d12c851526e8e17fd25a6e33`  
-		Last Modified: Tue, 05 Dec 2017 11:52:40 GMT  
-		Size: 53.3 MB (53307603 bytes)  
+	-	`sha256:749299594754ec1cee0a24e7616314c47d7a1624912dcba564500bac78e5fd07`  
+		Last Modified: Tue, 03 Jul 2018 09:18:49 GMT  
+		Size: 53.5 MB (53469919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1e0e96a1933be05b18e505724fb7bd23af1e5e76641f457b57f19bf9c2ea88`  
-		Last Modified: Sat, 30 Jun 2018 08:58:59 GMT  
-		Size: 34.9 MB (34864466 bytes)  
+	-	`sha256:7a08aac370f9b620ad9e3946ab20161616b9fe5672dac517d2c591529c3a22f9`  
+		Last Modified: Tue, 03 Jul 2018 10:07:39 GMT  
+		Size: 34.9 MB (34864658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c750744da69698b170c72d3000d19da74331ed782cd655f26669a3ed59174dce`  
-		Last Modified: Sat, 30 Jun 2018 08:58:51 GMT  
+	-	`sha256:ceb5bcc61119b6e1feb668236bffb025dfd5941ea9f30883df1ee178d73b409c`  
+		Last Modified: Tue, 03 Jul 2018 10:07:36 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -49234,7 +49234,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:jdk7-alpine`
 
 ```console
-$ docker pull groovy@sha256:cf6954a60ee7bb30440e7927a9976b3d6575decad296b625da15be8af346f516
+$ docker pull groovy@sha256:7f273727b59afec8e15ce7b376a8bd295b7f2ccfac0d0272c010cba22966577a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -49476,14 +49476,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:jdk7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:51547522ad9b0caab776efbb6b9cc03a40f9a0796ca47748a945e607659e3a4f
+$ docker pull groovy@sha256:3f072373907cfff3b0d5e42278d4f86a93c0b42124b174cb6af4085a1a64ffe4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.3 MB (100332568 bytes)**  
+-	Total Size: **100.5 MB (100516046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b7e0eb67783f65110956ca74e045983504fa41e2f96ac7200bbd0840a696c41`
+-	Image ID: `sha256:2385c93e7ffa098d163a17e4d1836c619df1fe79288a03a22951c5b39e37873f`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -49501,27 +49501,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
 # Tue, 05 Dec 2017 11:48:00 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:48:01 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:48:02 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:48:55 GMT
+# Tue, 03 Jul 2018 09:04:09 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:04:32 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:05:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:36:59 GMT
+# Tue, 03 Jul 2018 09:59:40 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:37:02 GMT
+# Tue, 03 Jul 2018 09:59:42 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:02:39 GMT
+# Tue, 03 Jul 2018 09:59:44 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:03:14 GMT
+# Tue, 03 Jul 2018 10:00:26 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:03:16 GMT
+# Tue, 03 Jul 2018 10:00:33 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:03:17 GMT
+# Tue, 03 Jul 2018 10:00:35 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:03:18 GMT
+# Tue, 03 Jul 2018 10:00:38 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:03:25 GMT
+# Tue, 03 Jul 2018 10:00:43 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -49538,16 +49538,16 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1061c72558b55c62bfb93a17e9c05869fb18ca7ae72cb680eda1102a80b13b6e`  
-		Last Modified: Tue, 05 Dec 2017 11:51:24 GMT  
-		Size: 69.7 MB (69681273 bytes)  
+	-	`sha256:8e9afe34eae495afc3e28dbe7e16a7007cfcbd5d2c91baa656d6923c66de752f`  
+		Last Modified: Tue, 03 Jul 2018 09:17:15 GMT  
+		Size: 69.9 MB (69864465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:259af89c66040ca44707e886813ef567844e517af1ff9f9a1db5984434f2d707`  
-		Last Modified: Wed, 20 Jun 2018 09:45:16 GMT  
-		Size: 28.6 MB (28569240 bytes)  
+	-	`sha256:2ce8f7adf6eb7a7bae1bb9f81b9d374f851f35ea3e8271efd45a4e350efa7af7`  
+		Last Modified: Tue, 03 Jul 2018 10:05:37 GMT  
+		Size: 28.6 MB (28569526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf8c9df8e18038fbaf3b9273b2ced987ee4615d7f52f5c38afcf5b88777a0d1b`  
-		Last Modified: Wed, 20 Jun 2018 09:45:02 GMT  
+	-	`sha256:744eb3259cb02d801001f759ea72198c2ab6922da5923d25c9b1764e0a29448b`  
+		Last Modified: Tue, 03 Jul 2018 10:05:34 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -53250,7 +53250,7 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ## `groovy:jre7-alpine`
 
 ```console
-$ docker pull groovy@sha256:92999cf8d1fe6a766e4629937089c275822381b498927ea1c95dc5b73c0ce8b6
+$ docker pull groovy@sha256:7d5047cdff643a3f3a3777e46bd3c6faff7791a632c088f877df6771e92d91a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -53492,14 +53492,14 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 ### `groovy:jre7-alpine` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:bd579886cab63b78c9b1676ca9e7858901e47677af7603a3aa748981a56271b5
+$ docker pull groovy@sha256:b7dd2c6ed87fe49488ffa55b1a17164a17ad3ae7408e5ef1fe11032e84043034
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.9 MB (83946851 bytes)**  
+-	Total Size: **84.1 MB (84109199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f1e9ce4a4916dacdeab03103190c259e9b547077396cd4cb8c90b95764c647`
+-	Image ID: `sha256:67c86857eea73fe0e476275b2d3110c49eb62b579d2a9976f61aeb4cd5ae41f0`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -53517,27 +53517,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
 # Tue, 05 Dec 2017 11:49:11 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 05 Dec 2017 11:49:12 GMT
-ENV JAVA_VERSION=7u151
-# Tue, 05 Dec 2017 11:49:13 GMT
-ENV JAVA_ALPINE_VERSION=7.151.2.6.11-r0
-# Tue, 05 Dec 2017 11:49:26 GMT
+# Tue, 03 Jul 2018 09:07:08 GMT
+ENV JAVA_VERSION=7u181
+# Tue, 03 Jul 2018 09:07:10 GMT
+ENV JAVA_ALPINE_VERSION=7.181.2.6.14-r0
+# Tue, 03 Jul 2018 09:07:18 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 20 Jun 2018 08:38:00 GMT
+# Tue, 03 Jul 2018 10:00:57 GMT
 CMD ["groovysh"]
-# Wed, 20 Jun 2018 08:38:01 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 20 Jun 2018 09:03:32 GMT
+# Tue, 03 Jul 2018 10:00:59 GMT
 ENV GROOVY_VERSION=2.5.0
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:36 GMT
 RUN set -o errexit -o nounset 	&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		openssl 		unzip 		&& echo "Downloading Groovy" 	&& wget -O groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 		"81CABC23EECA0790E8989B361FF96E10F0E13706" 	; do 		for server in 			"ha.pool.sks-keyservers.net" 			"hkp://p80.pool.sks-keyservers.net:80" 			"pgp.mit.edu" 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 5 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget -O groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm -rf "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mkdir /opt 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Cleaning up build dependencies" 	&& apk del .build-deps 		&& echo "Adding groovy user and group" 	&& addgroup -S -g 1000 groovy 	&& adduser -D -S -G groovy -u 1000 -s /bin/ash groovy 	&& mkdir -p /home/groovy/.groovy/grapes 	&& chown -R groovy:groovy /home/groovy 		&& echo "Symlinking root .groovy to groovy .groovy" 	&& ln -s /home/groovy/.groovy /root/.groovy
-# Wed, 20 Jun 2018 09:04:00 GMT
+# Tue, 03 Jul 2018 10:01:44 GMT
 USER [groovy]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:45 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 20 Jun 2018 09:04:02 GMT
+# Tue, 03 Jul 2018 10:01:47 GMT
 WORKDIR /home/groovy
-# Wed, 20 Jun 2018 09:04:07 GMT
+# Tue, 03 Jul 2018 10:01:50 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -53554,17 +53554,17 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 11:51:04 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4e6e790796714359566716c16f34426a754787d12c851526e8e17fd25a6e33`  
-		Last Modified: Tue, 05 Dec 2017 11:52:40 GMT  
-		Size: 53.3 MB (53307603 bytes)  
+	-	`sha256:749299594754ec1cee0a24e7616314c47d7a1624912dcba564500bac78e5fd07`  
+		Last Modified: Tue, 03 Jul 2018 09:18:49 GMT  
+		Size: 53.5 MB (53469919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19af6dd27c4d372cb5e23d502cc5abfdd819e8ce545fe65f1f5d6cee514b30b8`  
-		Last Modified: Wed, 20 Jun 2018 09:45:39 GMT  
-		Size: 28.6 MB (28557191 bytes)  
+	-	`sha256:2aa3f6e222dc177fabf27a6374d3f5c0c7e4c3501b1126fe497ee0119de3b0aa`  
+		Last Modified: Tue, 03 Jul 2018 10:06:17 GMT  
+		Size: 28.6 MB (28557224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62a2476a13cd5a3438239c4db3d6ecabd073c528240be0f573f2602bc2692d47`  
-		Last Modified: Wed, 20 Jun 2018 09:45:35 GMT  
-		Size: 173.0 B  
+	-	`sha256:4e7d597582d26a058c115bd6135cccbf8e2826c456e0b3bcd5520fa6018c2a69`  
+		Last Modified: Tue, 03 Jul 2018 10:06:14 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:jre7-alpine` - linux; s390x
