@@ -1,7 +1,7 @@
 ## `hello-seattle:latest`
 
 ```console
-$ docker pull hello-seattle@sha256:93cdcb901826410633ef2a18052b6a1ffc72f14a3323ddc94023ff58f4171d49
+$ docker pull hello-seattle@sha256:ecdff3ca0d7eb667bb8ce577766c46a0461d05429bbd11a3100faeebbc95ab4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,8 +13,8 @@ $ docker pull hello-seattle@sha256:93cdcb901826410633ef2a18052b6a1ffc72f14a3323d
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.14393.2189; amd64
-	-	windows version 10.0.16299.371; amd64
+	-	windows version 10.0.14393.2312; amd64
+	-	windows version 10.0.16299.492; amd64
 
 ### `hello-seattle:latest` - linux; amd64
 
@@ -198,27 +198,27 @@ CMD ["/hello"]
 		Size: 1.1 KB (1114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-seattle:latest` - windows version 10.0.14393.2189; amd64
+### `hello-seattle:latest` - windows version 10.0.14393.2312; amd64
 
 ```console
-$ docker pull hello-seattle@sha256:cd2aa90f836580d5613acc6736d0db6bd658d74a4b24f1fb77a07f75e646acbe
+$ docker pull hello-seattle@sha256:5cbc58bebafda8a68a8f51ec1ce3e77d8a6dca8610ebe6439dea6b38de49031a
 ```
 
--	Docker Version: 17.06.2-ee-7
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.9 MB (407946041 bytes)**  
+-	Total Size: **418.4 MB (418442747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ca31f575c3bc4a8a04e621328d1e10ba252abd316a4152946ee8ed7685fe659`
+-	Image ID: `sha256:3ca0ae883a930f70850fa0f5e2f6f9249b2ca8a3f9efbd98e811835473857b31`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Fri, 06 Apr 2018 21:37:58 GMT
-RUN Install update 10.0.14393.2189
-# Thu, 12 Apr 2018 09:39:36 GMT
+# Wed, 13 Jun 2018 00:36:03 GMT
+RUN Install update 10.0.14393.2312
+# Mon, 02 Jul 2018 23:44:14 GMT
 RUN cmd /S /C #(nop) COPY file:a04f617b384e418c261b5fa30ceb089a22f57b91ac80d8a5cc51f96d6ff98037 in C: 
-# Thu, 12 Apr 2018 09:39:40 GMT
+# Mon, 02 Jul 2018 23:44:15 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -227,40 +227,40 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:83eec61707e8c8a926a02da0ac7156cf6b64d3630672a6790004f10b87ae805b`  
-		Last Modified: Fri, 06 Apr 2018 21:37:58 GMT  
-		Size: 155.3 MB (155252511 bytes)  
+	-	`sha256:e7a598ed389ee13dc16cb56bd512d2eecc9597d79797803ef538a02b1e12351f`  
+		Last Modified: Wed, 13 Jun 2018 00:36:03 GMT  
+		Size: 165.7 MB (165749131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:32e7fb1c173abce7f9e986e497607fc4bff40a55a576fa833e83266866d6f16a`  
-		Last Modified: Thu, 12 Apr 2018 09:41:12 GMT  
-		Size: 1.6 KB (1643 bytes)  
+	-	`sha256:d502cd5a20e47e833be0fdad9b07df4289632db608ee4ce8d39cd90f04f0b92f`  
+		Last Modified: Mon, 02 Jul 2018 23:44:29 GMT  
+		Size: 1.7 KB (1669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9eb64644410ede30a6719890379e6dfa3ab482427f42d7b9e721a85990587c`  
-		Last Modified: Thu, 12 Apr 2018 09:41:11 GMT  
-		Size: 885.0 B  
+	-	`sha256:f78ab9daa8dffa4d58edde917ba247bac51cb6c0293eb58ef29d95a6d96d35e3`  
+		Last Modified: Mon, 02 Jul 2018 23:44:29 GMT  
+		Size: 945.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-seattle:latest` - windows version 10.0.16299.371; amd64
+### `hello-seattle:latest` - windows version 10.0.16299.492; amd64
 
 ```console
-$ docker pull hello-seattle@sha256:d39e53a9920a0202c586b18162b500d3d501117e31bb6b874650d0ae60bdd3cf
+$ docker pull hello-seattle@sha256:ea13446a9bbe03e257d4047cbef0188cccb4c5db26efb88ea6b1059503176d27
 ```
 
--	Docker Version: 17.06.2-ee-7
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.5 MB (128507129 bytes)**  
+-	Total Size: **133.6 MB (133580800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76b898d42839e95072d85867bf6591c56c8fb75769820f7e8f87df5616b20ac5`
+-	Image ID: `sha256:6d4755eea8de173a256ede135db9f55956d882c10ec197dfb03f12d7b51909a7`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 09:50:38 GMT
 RUN Apply image 10.0.16299.15
-# Mon, 02 Apr 2018 17:06:42 GMT
-RUN Install update 10.0.16299.371
-# Thu, 12 Apr 2018 09:40:10 GMT
+# Mon, 11 Jun 2018 20:15:59 GMT
+RUN Install update 10.0.16299.492
+# Mon, 02 Jul 2018 23:44:19 GMT
 RUN cmd /S /C #(nop) COPY file:a04f617b384e418c261b5fa30ceb089a22f57b91ac80d8a5cc51f96d6ff98037 in C: 
-# Thu, 12 Apr 2018 09:40:18 GMT
+# Mon, 02 Jul 2018 23:44:19 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -269,15 +269,15 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:09d5497005b498201371f0568d85a140f5349d3ea1ce7e336f5c5ccbad8195f0`  
-		Last Modified: Tue, 10 Apr 2018 16:33:37 GMT  
-		Size: 47.5 MB (47464738 bytes)  
+	-	`sha256:85710d780d680cb5dfe03ec4bec5d928cf13de184c4adfa2ee56c7c7b6d33f8d`  
+		Last Modified: Wed, 13 Jun 2018 01:11:25 GMT  
+		Size: 52.5 MB (52538468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:4e0becf6120be727ce0df34b2576326b6da6de44fea4b3ae502c18b6883febca`  
-		Last Modified: Thu, 12 Apr 2018 09:41:25 GMT  
-		Size: 1.7 KB (1701 bytes)  
+	-	`sha256:f204c96c9991cdd484be869f873d103e12d131755d4ec91027b627e8e0339100`  
+		Last Modified: Mon, 02 Jul 2018 23:44:35 GMT  
+		Size: 1.6 KB (1646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3df569dab845fff596d7e20fffeb4a1636407480a64fcac24e7598194eed965`  
-		Last Modified: Thu, 12 Apr 2018 09:41:25 GMT  
-		Size: 951.0 B  
+	-	`sha256:892a7f468c91fe18d070182557403994ad659a54bf91f43a3e316b6ade22ab69`  
+		Last Modified: Mon, 02 Jul 2018 23:44:35 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
