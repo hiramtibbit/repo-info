@@ -766,19 +766,13 @@ Licenses: (parsed from: `/usr/share/doc/debhelper/copyright`)
 - `GPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debhelper=11.3.4
-'http://deb.debian.org/debian/pool/main/d/debhelper/debhelper_11.3.4.dsc' debhelper_11.3.4.dsc 1689 SHA256:9a2d11634035bdfb14013901a7da92d1f05f49414f8994fb8371cbb3501e9ebb
-'http://deb.debian.org/debian/pool/main/d/debhelper/debhelper_11.3.4.tar.xz' debhelper_11.3.4.tar.xz 467684 SHA256:89189abaf2d85d155d68f05a597f826123d3fcae910f0ca69c7b1741f8dad2fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debhelper/11.3.4/
 
-- https://sources.debian.net/src/debhelper/11.3.4/ (for browsing the source)
-- https://sources.debian.net/src/debhelper/11.3.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debhelper/11.3.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -1298,16 +1292,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-7=7.3.0-23
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-23.dsc' gcc-7_7.3.0-23.dsc 25567 SHA256:c8f3c928620f541d2c4c460302a2389a48de4c8214f1e2b68e7c38ea9b5d4372
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-23.diff.gz' gcc-7_7.3.0-23.diff.gz 1077935 SHA256:e4c90ec9284e9478d52852631e49de4972d62f04de275c41390ae0750b35fbdd
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.3.0-23.dsc' gcc-7_7.3.0-23.dsc 25567 SHA256:c8f3c928620f541d2c4c460302a2389a48de4c8214f1e2b68e7c38ea9b5d4372
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.3.0-23.diff.gz' gcc-7_7.3.0-23.diff.gz 1077935 SHA256:e4c90ec9284e9478d52852631e49de4972d62f04de275c41390ae0750b35fbdd
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-7/7.3.0-23/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-23/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-23/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8.1.0-8`
 
@@ -1338,16 +1326,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-8=8.1.0-8
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-8.dsc' gcc-8_8.1.0-8.dsc 32307 SHA256:a61d8fed591ec9fed1023734e7c76a26d5dad080d3ea26acc0c4abb07d2cee28
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 73111115 SHA256:e4cdc357a44fcf8fddb9d01593b14fdad0086ec71d4c061994a7d912522ba3a3
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-8.diff.gz' gcc-8_8.1.0-8.diff.gz 3444231 SHA256:a81bb8263a7160c8243966b8e40303d759e5bd20ba442a8db9df3621dd847737
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.1.0-8.dsc' gcc-8_8.1.0-8.dsc 32307 SHA256:a61d8fed591ec9fed1023734e7c76a26d5dad080d3ea26acc0c4abb07d2cee28
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 73111115 SHA256:e4cdc357a44fcf8fddb9d01593b14fdad0086ec71d4c061994a7d912522ba3a3
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.1.0-8.diff.gz' gcc-8_8.1.0-8.diff.gz 3444231 SHA256:a81bb8263a7160c8243966b8e40303d759e5bd20ba442a8db9df3621dd847737
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-8/8.1.0-8/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.1.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.1.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.176`
 
@@ -2720,16 +2702,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.3.3-2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.dsc' libseccomp_2.3.3-2.dsc 2415 SHA256:98e860f9030428b2787ef3d9fe2dc5817b3ac44a7c14386f6af69a0b292c011b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3.orig.tar.gz' libseccomp_2.3.3.orig.tar.gz 564546 SHA256:7fc28f4294cc72e61c529bedf97e705c3acf9c479a8f1a3028d4cd2ca9f3b155
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.debian.tar.xz' libseccomp_2.3.3-2.debian.tar.xz 11816 SHA256:31111486ef1b49fb3aaf8cfbe82f3e8b76ed39bef02acfee8935a81bf1886b6a
+'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.dsc' libseccomp_2.3.3-2.dsc 2415 SHA256:98e860f9030428b2787ef3d9fe2dc5817b3ac44a7c14386f6af69a0b292c011b
+'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.3.3.orig.tar.gz' libseccomp_2.3.3.orig.tar.gz 564546 SHA256:7fc28f4294cc72e61c529bedf97e705c3acf9c479a8f1a3028d4cd2ca9f3b155
+'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.debian.tar.xz' libseccomp_2.3.3-2.debian.tar.xz 11816 SHA256:31111486ef1b49fb3aaf8cfbe82f3e8b76ed39bef02acfee8935a81bf1886b6a
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libseccomp/2.3.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.3.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.3.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.8-1`
 
@@ -3341,10 +3317,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.16.16-2
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.16.16-2.dsc' linux_4.16.16-2.dsc 144660 SHA256:fa319e09133d3c9cc5588a586a51da3c58e99bd3e0fcb9d346ffac394911dcc3
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.16.16.orig.tar.xz' linux_4.16.16.orig.tar.xz 105919668 SHA256:5d5e55624c7ade548018b7dc8be0d7244ba6560b13bf9598c9df33f9afcf7bd5
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.16.16-2.debian.tar.xz' linux_4.16.16-2.debian.tar.xz 2870388 SHA256:319726bc74cefc04c058ddd935c24ebf0405bc30bad285d99f1d1487be9c06a6
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.16.16-2.dsc' linux_4.16.16-2.dsc 144660 SHA256:fa319e09133d3c9cc5588a586a51da3c58e99bd3e0fcb9d346ffac394911dcc3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.16.16.orig.tar.xz' linux_4.16.16.orig.tar.xz 105919668 SHA256:5d5e55624c7ade548018b7dc8be0d7244ba6560b13bf9598c9df33f9afcf7bd5
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.16.16-2.debian.tar.xz' linux_4.16.16-2.debian.tar.xz 2870388 SHA256:319726bc74cefc04c058ddd935c24ebf0405bc30bad285d99f1d1487be9c06a6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/linux/4.16.16-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.16.16-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.16.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.3-1`
 
@@ -4141,16 +4123,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.6~rc1-3
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1-3.dsc' python3-stdlib-extensions_3.6.6~rc1-3.dsc 2551 SHA256:9d9798b9ba45b80d4d6f684df919c26015db9cf7f38adb9ee925754c4a2b2a80
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1.orig.tar.xz' python3-stdlib-extensions_3.6.6~rc1.orig.tar.xz 1036156 SHA256:2b29cd7d42753f641d712e260d5bf694fccc4f486eafc4ca9b46a4cd30ae3eef
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1-3.debian.tar.xz' python3-stdlib-extensions_3.6.6~rc1-3.debian.tar.xz 15860 SHA256:a2efe3ff52cc6a4e69d43420bf4d2e8c61b34034fe0f7535c89aa87dd5480013
+'http://http.debian.net/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1-3.dsc' python3-stdlib-extensions_3.6.6~rc1-3.dsc 2551 SHA256:9d9798b9ba45b80d4d6f684df919c26015db9cf7f38adb9ee925754c4a2b2a80
+'http://http.debian.net/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1.orig.tar.xz' python3-stdlib-extensions_3.6.6~rc1.orig.tar.xz 1036156 SHA256:2b29cd7d42753f641d712e260d5bf694fccc4f486eafc4ca9b46a4cd30ae3eef
+'http://http.debian.net/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.6~rc1-3.debian.tar.xz' python3-stdlib-extensions_3.6.6~rc1-3.debian.tar.xz 15860 SHA256:a2efe3ff52cc6a4e69d43420bf4d2e8c61b34034fe0f7535c89aa87dd5480013
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.6~rc1-3/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.6.6~rc1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.6~rc1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.6=3.6.6~rc1-4`
 
@@ -4842,16 +4818,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.0.9-5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-5.dsc' tiff_4.0.9-5.dsc 2184 SHA256:f708f46910204e0a009edd7ae709fd7c9a4b467775d36ca4160aab290c195bd6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-5.debian.tar.xz' tiff_4.0.9-5.debian.tar.xz 22864 SHA256:5c98180b77457fc5452f3b4fed85862172dbfdb342d7a98e88363e439a669c96
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-5.dsc' tiff_4.0.9-5.dsc 2184 SHA256:f708f46910204e0a009edd7ae709fd7c9a4b467775d36ca4160aab290c195bd6
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-5.debian.tar.xz' tiff_4.0.9-5.debian.tar.xz 22864 SHA256:5c98180b77457fc5452f3b4fed85862172dbfdb342d7a98e88363e439a669c96
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tiff/4.0.9-5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.8-4`
 
