@@ -107,13 +107,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.dsc' apt_1.2.26.dsc 2392 SHA256:b298a6f0613196ed3c9a047bf70a0c05e0847e62bb9f0ae89f97a0de619d9eb6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.tar.xz' apt_1.2.26.tar.xz 2059472 SHA256:0888abb49a99b981134b1bb715f374adc654e7c6c077c7fdf42ca5cdf30ceab1
-```
 
 ### `dpkg` source package: `armadillo=1:6.500.5+dfsg-1`
 
@@ -2925,14 +2921,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.83-1~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.dsc' libdrm_2.4.83-1~16.04.1.dsc 3035 SHA256:a3c4bab16ca75fb6890c42df5902969b29992d8ac5b3efd5153ad9e5b4f7dd6f
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83.orig.tar.gz' libdrm_2.4.83.orig.tar.gz 1056627 SHA256:2ff5f626a14ec5bd680f7769cac9a8eb1e40c36cf5ca554d2c4e5d91bab3d81d
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.diff.gz' libdrm_2.4.83-1~16.04.1.diff.gz 51446 SHA256:a90ea7972efa8b293725dc282b90022ac92d02038d735fae3ee5bc89fcadee9e
-```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -4756,14 +4747,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.8-0ubuntu0~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.dsc' mesa_17.2.8-0ubuntu0~16.04.1.dsc 5009 SHA256:3096a4d322989de390968fbbf2614a1be320b80c5a5329ab1dc9e31bb20936bf
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8.orig.tar.gz' mesa_17.2.8.orig.tar.gz 17755568 SHA256:c715c3a3d6fe26a69c096f573ec416e038a548f0405e3befedd5136517527a84
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.diff.gz' mesa_17.2.8-0ubuntu0~16.04.1.diff.gz 152309 SHA256:8ebdfc10cfb16c51048a29c65a64d77b942e1fd71f04e72e92f99ce806b3a553
-```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -7411,11 +7397,6 @@ Licenses: (parsed from: `/usr/share/doc/libzzip-0-13/copyright`)
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zziplib=0.13.62-3ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-3ubuntu0.16.04.1.dsc' zziplib_0.13.62-3ubuntu0.16.04.1.dsc 2153 SHA256:c0d6df7fe0e65ad2c0b1711abed3085b1c0e62b83882278f2fa4c351abc01bfd
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62.orig.tar.bz2' zziplib_0.13.62.orig.tar.bz2 685770 SHA256:a1b8033f1a1fd6385f4820b01ee32d8eca818409235d22caf5119e0078c7525b
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-3ubuntu0.16.04.1.debian.tar.xz' zziplib_0.13.62-3ubuntu0.16.04.1.debian.tar.xz 13256 SHA256:295ea2e46f0abac7316ce4049f1acd1db6d6e47be3599ce033fd9420c54de512
-```
