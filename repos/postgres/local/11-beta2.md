@@ -1,10 +1,10 @@
-# `postgres:11-beta1`
+# `postgres:11-beta2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d4443b599bfe0db5290bd6d2365038d898c996a32a1a7d298793d4a60f7ef18`
-- Created: `2018-06-27T00:02:34.884849759Z`
-- Virtual Size: ~ 299.74 Mb  
+- Image ID: `sha256:4fd2650d5df73508b056ec60ec302932ce8b64245f56977aaf7d22dfcb2d35c8`
+- Created: `2018-07-02T23:35:38.977837656Z`
+- Virtual Size: ~ 300.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=11`
-  - `PG_VERSION=11~beta1-2.pgdg90+1`
+  - `PG_VERSION=11~beta2-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2486,13 +2486,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-11=11~beta1-2.pgdg90+1`
+### `dpkg` source package: `postgresql-11=11~beta2-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=11~beta1-2.pgdg90+1`
-- `postgresql-11=11~beta1-2.pgdg90+1`
-- `postgresql-client-11=11~beta1-2.pgdg90+1`
+- `libpq5:amd64=11~beta2-1.pgdg90+1`
+- `postgresql-11=11~beta2-1.pgdg90+1`
+- `postgresql-client-11=11~beta2-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-11/copyright`, `/usr/share/doc/postgresql-client-11/copyright`)
 
@@ -2511,9 +2511,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-11=11~beta2-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2-1.pgdg90+1.dsc' postgresql-11_11~beta2-1.pgdg90+1.dsc 2731 SHA256:a23b220a8566174fad5ebce93e5d27528a19035e354930e9bde0fd8c29680345
+'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2.orig.tar.bz2' postgresql-11_11~beta2.orig.tar.bz2 21086270 SHA256:31e28f46b0529e5be937423bc040eff2787bc399ba0ebd725510aea30274b463
+'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2-1.pgdg90+1.debian.tar.xz' postgresql-11_11~beta2-1.pgdg90+1.debian.tar.xz 18632 SHA256:8f598b909a4960d5bf02b60e5bd5ca00fa89f58318eea41eeb6451c275dad1ac
+```
 
 ### `dpkg` source package: `postgresql-common=191.pgdg90+1`
 
