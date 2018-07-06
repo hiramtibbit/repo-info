@@ -1,10 +1,10 @@
-# `python:3.6.6-stretch`
+# `python:3.7.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb8fb36e5fd88a48261692e557b09604ca356be1c49576ed86cdd5d33af41fa3`
-- Created: `2018-06-27T22:30:39.509354734Z`
-- Virtual Size: ~ 911.65 Mb  
+- Image ID: `sha256:ce54ff8f2af6a78c85eaa78bbc7df2121add8fafc7bc1a91d39bd2773220d248`
+- Created: `2018-07-04T02:22:11.493065488Z`
+- Virtual Size: ~ 916.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.6`
+  - `PYTHON_VERSION=3.7.0`
   - `PYTHON_PIP_VERSION=10.0.1`
 
 ## `dpkg` (`.deb`-based packages)
