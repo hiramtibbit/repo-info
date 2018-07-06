@@ -103,13 +103,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.dsc' apt_1.5.1.dsc 2467 SHA256:e9687579e7eeddd387cf964b84fff59181e12e4120a357a522b6bccbf0b41459
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.tar.xz' apt_1.5.1.tar.xz 2101424 SHA256:a527b4ad0f3916427d8d452271a4b89b3d0537d7c9e9d18a4f88f40664d887dd
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 

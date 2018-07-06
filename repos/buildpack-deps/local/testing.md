@@ -1844,20 +1844,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.16.0-4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0-4.dsc' iproute2_4.16.0-4.dsc 1882 SHA256:25ed4f05d855f985b2461556e356bb077a84500ed394a82d75265c0a25c40364
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0.orig.tar.xz' iproute2_4.16.0.orig.tar.xz 661336 SHA256:0c5c24020fd7349fe25728c5edee9fb6a1bc8a38f08e23be5c57a6301e55ee0a
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0-4.debian.tar.xz' iproute2_4.16.0-4.debian.tar.xz 141992 SHA256:9829657bdf4490fac46c7cb3845960f479cb242f6239c8095cd8e3672335ba78
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.16.0-4/
 
-- https://sources.debian.net/src/iproute2/4.16.0-4/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.16.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20161105-1`
 
@@ -2739,20 +2732,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.3.3-2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.dsc' libseccomp_2.3.3-2.dsc 2415 SHA256:98e860f9030428b2787ef3d9fe2dc5817b3ac44a7c14386f6af69a0b292c011b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3.orig.tar.gz' libseccomp_2.3.3.orig.tar.gz 564546 SHA256:7fc28f4294cc72e61c529bedf97e705c3acf9c479a8f1a3028d4cd2ca9f3b155
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.3.3-2.debian.tar.xz' libseccomp_2.3.3-2.debian.tar.xz 11816 SHA256:31111486ef1b49fb3aaf8cfbe82f3e8b76ed39bef02acfee8935a81bf1886b6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.3.3-2/
 
-- https://sources.debian.net/src/libseccomp/2.3.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.3.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.3.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.8-1`
 
@@ -4956,20 +4942,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-5.dsc' tiff_4.0.9-5.dsc 2184 SHA256:f708f46910204e0a009edd7ae709fd7c9a4b467775d36ca4160aab290c195bd6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-5.debian.tar.xz' tiff_4.0.9-5.debian.tar.xz 22864 SHA256:5c98180b77457fc5452f3b4fed85862172dbfdb342d7a98e88363e439a669c96
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.9-5/
 
-- https://sources.debian.net/src/tiff/4.0.9-5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018e-1`
 
