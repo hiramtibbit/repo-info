@@ -1,7 +1,7 @@
 ## `python:2-alpine`
 
 ```console
-$ docker pull python@sha256:cbc1c1c227012034793083306f6f6322e0276ca134c218cc49b131ca59df7699
+$ docker pull python@sha256:78cacea08bf113aa6799301591939c29580357d3c786461a89180616a2c8c0d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,59 +15,59 @@ $ docker pull python@sha256:cbc1c1c227012034793083306f6f6322e0276ca134c218cc49b1
 ### `python:2-alpine` - linux; amd64
 
 ```console
-$ docker pull python@sha256:7932314f7cdc436003f1283303d7c492f77f1afacc07b7acec16c80dca105ee8
+$ docker pull python@sha256:cc4d7b21bddf14a61fe3b1290451f3ad5c7bafcc7591b0ae6be951f8b654ee50
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.7 MB (27691304 bytes)**  
+-	Total Size: **27.5 MB (27475793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a448d7554c75c27ded56cb4d029ad7787faca02dd0daa587704934a5bed67120`
+-	Image ID: `sha256:c57ed7d143f96b78d9b2490723ac04de19d831451fbfccaa059aca060627c5c8`
 -	Default Command: `["python2"]`
 
 ```dockerfile
-# Tue, 09 Jan 2018 21:10:58 GMT
-ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
-# Tue, 09 Jan 2018 21:10:58 GMT
+# Fri, 06 Jul 2018 14:13:45 GMT
+ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
+# Fri, 06 Jul 2018 14:13:45 GMT
 CMD ["/bin/sh"]
-# Wed, 06 Jun 2018 00:57:26 GMT
+# Fri, 06 Jul 2018 15:11:24 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Jun 2018 02:44:25 GMT
+# Fri, 06 Jul 2018 18:20:28 GMT
 ENV LANG=C.UTF-8
-# Wed, 06 Jun 2018 03:50:17 GMT
+# Fri, 06 Jul 2018 18:36:38 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Wed, 06 Jun 2018 03:50:18 GMT
+# Fri, 06 Jul 2018 18:36:39 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 06 Jun 2018 03:50:18 GMT
+# Fri, 06 Jul 2018 18:36:39 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Wed, 06 Jun 2018 03:50:18 GMT
+# Fri, 06 Jul 2018 18:36:40 GMT
 ENV PYTHON_VERSION=2.7.15
-# Wed, 06 Jun 2018 23:20:08 GMT
+# Fri, 06 Jul 2018 18:39:31 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		libressl 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		gcc 		gdbm-dev 		libc-dev 		libnsl-dev 		libressl 		libressl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 06 Jun 2018 23:20:08 GMT
+# Fri, 06 Jul 2018 18:39:40 GMT
 ENV PYTHON_PIP_VERSION=10.0.1
-# Wed, 06 Jun 2018 23:20:15 GMT
+# Fri, 06 Jul 2018 18:39:47 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apk del .fetch-deps; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 06 Jun 2018 23:20:15 GMT
+# Fri, 06 Jul 2018 18:39:56 GMT
 CMD ["python2"]
 ```
 
 -	Layers:
-	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
-		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
-		Size: 2.1 MB (2065537 bytes)  
+	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
+		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
+		Size: 2.1 MB (2103553 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5556c6f99b85c0df8edb29c5e669b77642d250a5a1afcf68b586ea7df18baf8b`  
-		Last Modified: Wed, 06 Jun 2018 04:08:14 GMT  
-		Size: 308.0 KB (308023 bytes)  
+	-	`sha256:17a85618b748da90a4b9a3b07c22052edda7b57ed2925a3a0d50980975ae3661`  
+		Last Modified: Fri, 06 Jul 2018 18:55:24 GMT  
+		Size: 308.3 KB (308318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbc81365bc00f9eb3e0415c20c7868545dd44b7e4085d603ba0813d3eee8c8`  
-		Last Modified: Wed, 06 Jun 2018 23:38:40 GMT  
-		Size: 23.4 MB (23425471 bytes)  
+	-	`sha256:880358d57a6c5662592f6f72f2421f52abf7c0df7f766b7e262177437f4ae814`  
+		Last Modified: Fri, 06 Jul 2018 18:55:32 GMT  
+		Size: 23.2 MB (23171524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8780cd8970327cf04c1e4272a6170384475b16b1ae0fe271487792b304a7c2fa`  
-		Last Modified: Wed, 06 Jun 2018 23:38:01 GMT  
-		Size: 1.9 MB (1892273 bytes)  
+	-	`sha256:eeaf1c636ed05fef3e6f43650bd215a0341a4ba2f1ea3e94947e26db661bba98`  
+		Last Modified: Fri, 06 Jul 2018 18:55:24 GMT  
+		Size: 1.9 MB (1892398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-alpine` - linux; arm64 variant v8
