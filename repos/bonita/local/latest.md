@@ -1,19 +1,19 @@
-# `bonita:7.7.0`
+# `bonita:7.7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:befe6bd5ec2d599675620b391888d0ac5bc895096fa622c2f1b4c8cd3b5dee22`
-- Created: `2018-06-21T19:22:25.120971142Z`
+- Image ID: `sha256:675afd92beffe93a9674647fe059022335e757c9ddf66dc2cf57636013a4a6e5`
+- Created: `2018-07-06T00:19:56.615942769Z`
 - Virtual Size: ~ 427.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.7.0`
+  - `BONITA_VERSION=7.7.1`
   - `TOMCAT_VERSION=8.5.31`
-  - `BONITA_SHA256=8e5d3d3ff1954c31d8d29196799bc65955674314854ce67381e546ea40237778`
-  - `BONITA_URL=https://download.forge.ow2.org/bonita/BonitaCommunity-7.7.0-Tomcat-8.5.31.zip`
+  - `BONITA_SHA256=bd9efcda5b98cd3a2744994fb1560ed4bc3f3a0bfb489a72c5466b474ca254cc`
+  - `BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.7.1-Tomcat-8.5.31.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -90,13 +90,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.dsc' apt_1.2.26.dsc 2392 SHA256:b298a6f0613196ed3c9a047bf70a0c05e0847e62bb9f0ae89f97a0de619d9eb6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.tar.xz' apt_1.2.26.tar.xz 2059472 SHA256:0888abb49a99b981134b1bb715f374adc654e7c6c077c7fdf42ca5cdf30ceab1
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
