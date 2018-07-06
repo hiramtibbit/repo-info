@@ -598,7 +598,7 @@ CMD ["/bin/sh"]
 ## `alpine:3.8`
 
 ```console
-$ docker pull alpine@sha256:b87c896a6482300775868561df3701b71e90c582aa606706fb6f4ea7249e5fdc
+$ docker pull alpine@sha256:7043076348bf5040220df6ad703798fd8593a0918d06d3ce30c6c93be117e430
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -606,6 +606,7 @@ $ docker pull alpine@sha256:b87c896a6482300775868561df3701b71e90c582aa606706fb6f
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -697,6 +698,38 @@ CMD ["/bin/sh"]
 	-	`sha256:b4103359e1ecd9a7253d8b8a041d4e81db1ff4a5e1950bc0e02305d221c9e6c2`  
 		Last Modified: Fri, 06 Jul 2018 08:42:09 GMT  
 		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:3.8` - linux; 386
+
+```console
+$ docker pull alpine@sha256:5d757fdef3d336720bbccfbaa6e32089acab8ade35992e14bb0253111beb3026
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2271095 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:47b871c82c1b54885247da879e50a804ea28c8c5dfda1a113e218a9f69e564c0`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 15:02:06 GMT
+ADD file:ebd40cda2f6087daf4d14e6dc1ee0b4a0fb5dc96c70129be8e07de0e5c628312 in / 
+# Fri, 06 Jul 2018 15:02:07 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 06 Jul 2018 15:02:07 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:ef15772113129a5330876ce10683bbf6509a4c4c99b3a99894dcbc7560975052`  
+		Last Modified: Fri, 06 Jul 2018 15:02:46 GMT  
+		Size: 2.3 MB (2270920 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6df692b84cf35e6038d677f9ab7de2a3c671c57671043da1d20d99252e0d9c42`  
+		Last Modified: Fri, 06 Jul 2018 15:02:43 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:3.8` - linux; ppc64le
@@ -967,7 +1000,7 @@ CMD ["/bin/sh"]
 ## `alpine:latest`
 
 ```console
-$ docker pull alpine@sha256:b87c896a6482300775868561df3701b71e90c582aa606706fb6f4ea7249e5fdc
+$ docker pull alpine@sha256:7043076348bf5040220df6ad703798fd8593a0918d06d3ce30c6c93be117e430
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -975,6 +1008,7 @@ $ docker pull alpine@sha256:b87c896a6482300775868561df3701b71e90c582aa606706fb6f
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -1066,6 +1100,38 @@ CMD ["/bin/sh"]
 	-	`sha256:b4103359e1ecd9a7253d8b8a041d4e81db1ff4a5e1950bc0e02305d221c9e6c2`  
 		Last Modified: Fri, 06 Jul 2018 08:42:09 GMT  
 		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:latest` - linux; 386
+
+```console
+$ docker pull alpine@sha256:5d757fdef3d336720bbccfbaa6e32089acab8ade35992e14bb0253111beb3026
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2271095 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:47b871c82c1b54885247da879e50a804ea28c8c5dfda1a113e218a9f69e564c0`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 15:02:06 GMT
+ADD file:ebd40cda2f6087daf4d14e6dc1ee0b4a0fb5dc96c70129be8e07de0e5c628312 in / 
+# Fri, 06 Jul 2018 15:02:07 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 06 Jul 2018 15:02:07 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:ef15772113129a5330876ce10683bbf6509a4c4c99b3a99894dcbc7560975052`  
+		Last Modified: Fri, 06 Jul 2018 15:02:46 GMT  
+		Size: 2.3 MB (2270920 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6df692b84cf35e6038d677f9ab7de2a3c671c57671043da1d20d99252e0d9c42`  
+		Last Modified: Fri, 06 Jul 2018 15:02:43 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:latest` - linux; ppc64le
