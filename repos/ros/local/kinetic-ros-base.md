@@ -160,13 +160,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.dsc' apt_1.2.26.dsc 2392 SHA256:b298a6f0613196ed3c9a047bf70a0c05e0847e62bb9f0ae89f97a0de619d9eb6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.26.tar.xz' apt_1.2.26.tar.xz 2059472 SHA256:0888abb49a99b981134b1bb715f374adc654e7c6c077c7fdf42ca5cdf30ceab1
-```
 
 ### `dpkg` source package: `at-spi2-atk=2.18.1-2ubuntu1`
 
@@ -2457,14 +2453,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.83-1~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.dsc' libdrm_2.4.83-1~16.04.1.dsc 3035 SHA256:a3c4bab16ca75fb6890c42df5902969b29992d8ac5b3efd5153ad9e5b4f7dd6f
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83.orig.tar.gz' libdrm_2.4.83.orig.tar.gz 1056627 SHA256:2ff5f626a14ec5bd680f7769cac9a8eb1e40c36cf5ca554d2c4e5d91bab3d81d
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.diff.gz' libdrm_2.4.83-1~16.04.1.diff.gz 51446 SHA256:a90ea7972efa8b293725dc282b90022ac92d02038d735fae3ee5bc89fcadee9e
-```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -3151,14 +3142,9 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.52.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoup2.4/libsoup2.4_2.52.2-1ubuntu0.2.dsc' libsoup2.4_2.52.2-1ubuntu0.2.dsc 2815 SHA256:b36a01a0756a79b605463ff441f3bd5b116ec23de9cb99b625d4240ae9683dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoup2.4/libsoup2.4_2.52.2.orig.tar.xz' libsoup2.4_2.52.2.orig.tar.xz 1764308 SHA256:db55628b5c7d952945bb71b236469057c8dfb8dea0c271513579c6273c2093dc
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoup2.4/libsoup2.4_2.52.2-1ubuntu0.2.debian.tar.xz' libsoup2.4_2.52.2-1ubuntu0.2.debian.tar.xz 17072 SHA256:7dc340e637bf6c62aa74b4208513087a2da048325293b9b73ad3c8c2434350b0
-```
 
 ### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.3`
 
@@ -3998,14 +3984,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.8-0ubuntu0~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.dsc' mesa_17.2.8-0ubuntu0~16.04.1.dsc 5009 SHA256:3096a4d322989de390968fbbf2614a1be320b80c5a5329ab1dc9e31bb20936bf
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8.orig.tar.gz' mesa_17.2.8.orig.tar.gz 17755568 SHA256:c715c3a3d6fe26a69c096f573ec416e038a548f0405e3befedd5136517527a84
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.8-0ubuntu0~16.04.1.diff.gz' mesa_17.2.8-0ubuntu0~16.04.1.diff.gz 152309 SHA256:8ebdfc10cfb16c51048a29c65a64d77b942e1fd71f04e72e92f99ce806b3a553
-```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -4755,14 +4736,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.3-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3-1.dsc' python-catkin-pkg-modules_0.4.3-1.dsc 991 SHA256:c447fd396dc511f323b1922fb64a3f28b6c12a2d772d3181e8204af76ea1c674
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3.orig.tar.gz' python-catkin-pkg-modules_0.4.3.orig.tar.gz 58368 SHA256:c0e7a1c150ae10453e612c0bbd3a56621c89c7a5a7f9a0a58e2feaae0e99f785
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.3-1.debian.tar.xz' python-catkin-pkg-modules_0.4.3-1.debian.tar.xz 1140 SHA256:63fb2fb813b2dfb8f32e55b62dc4693fb17da07c04b343c4f4082c35c88e8343
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.3-100`
 
@@ -4774,14 +4750,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.3-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3-100.dsc' python-catkin-pkg_0.4.3-100.dsc 931 SHA256:1d43b116f6a25995b2ea06bc4c8fc31f19ae9ac46399263d1a57d3eae059f7e2
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3.orig.tar.gz' python-catkin-pkg_0.4.3.orig.tar.gz 13062 SHA256:f64699d8f4f57bf10fc9d163514af4ece6da70acce6e0f319b302b7311b6bb31
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.3-100.debian.tar.xz' python-catkin-pkg_0.4.3-100.debian.tar.xz 1120 SHA256:781d4f5f092be0c0f8ffc1a97bdba336e6a9437a87718a89758577e57dafd44c
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.3`
 
