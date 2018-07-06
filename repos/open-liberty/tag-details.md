@@ -5,6 +5,9 @@
 -	[`open-liberty:javaee7`](#open-libertyjavaee7)
 -	[`open-liberty:javaee7-java8-ibm`](#open-libertyjavaee7-java8-ibm)
 -	[`open-liberty:javaee7-java8-ibmsfj`](#open-libertyjavaee7-java8-ibmsfj)
+-	[`open-liberty:javaee8`](#open-libertyjavaee8)
+-	[`open-liberty:javaee8-java8-ibm`](#open-libertyjavaee8-java8-ibm)
+-	[`open-liberty:javaee8-java8-ibmsfj`](#open-libertyjavaee8-java8-ibmsfj)
 -	[`open-liberty:kernel`](#open-libertykernel)
 -	[`open-liberty:kernel-java8-ibm`](#open-libertykernel-java8-ibm)
 -	[`open-liberty:kernel-java8-ibmsfj`](#open-libertykernel-java8-ibmsfj)
@@ -15,6 +18,9 @@
 -	[`open-liberty:webProfile7`](#open-libertywebprofile7)
 -	[`open-liberty:webProfile7-java8-ibm`](#open-libertywebprofile7-java8-ibm)
 -	[`open-liberty:webProfile7-java8-ibmsfj`](#open-libertywebprofile7-java8-ibmsfj)
+-	[`open-liberty:webProfile8`](#open-libertywebprofile8)
+-	[`open-liberty:webProfile8-java8-ibm`](#open-libertywebprofile8-java8-ibm)
+-	[`open-liberty:webProfile8-java8-ibmsfj`](#open-libertywebprofile8-java8-ibmsfj)
 
 ## `open-liberty:javaee7`
 
@@ -1144,6 +1150,18 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Tue, 03 Jul 2018 00:01:09 GMT  
 		Size: 14.0 MB (13995435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:javaee8`
+
+**does not exist** (yet?)
+
+## `open-liberty:javaee8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:javaee8-java8-ibmsfj`
+
+**does not exist** (yet?)
 
 ## `open-liberty:kernel`
 
@@ -4882,3 +4900,15 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Mon, 02 Jul 2018 23:59:59 GMT  
 		Size: 10.5 MB (10545636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:webProfile8`
+
+**does not exist** (yet?)
+
+## `open-liberty:webProfile8-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:webProfile8-java8-ibmsfj`
+
+**does not exist** (yet?)
