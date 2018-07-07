@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bf29b596030ae5b13410ddd78ad83c60b1961072dc6b7492ea80d595852931d`
-- Created: `2018-06-26T22:40:38.805674562Z`
-- Virtual Size: ~ 93.00 Mb  
+- Image ID: `sha256:73a557ff177a50bab42b5e36c9c8ba4c9fa18f2fe7a74f04900856ab1648cb89`
+- Created: `2018-07-06T15:40:36.956496706Z`
+- Virtual Size: ~ 91.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
