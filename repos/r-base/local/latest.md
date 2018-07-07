@@ -1890,16 +1890,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iproute2=4.16.0-4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0-4.dsc' iproute2_4.16.0-4.dsc 1882 SHA256:25ed4f05d855f985b2461556e356bb077a84500ed394a82d75265c0a25c40364
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0.orig.tar.xz' iproute2_4.16.0.orig.tar.xz 661336 SHA256:0c5c24020fd7349fe25728c5edee9fb6a1bc8a38f08e23be5c57a6301e55ee0a
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.16.0-4.debian.tar.xz' iproute2_4.16.0-4.debian.tar.xz 141992 SHA256:9829657bdf4490fac46c7cb3845960f479cb242f6239c8095cd8e3672335ba78
+'http://http.debian.net/debian/pool/main/i/iproute2/iproute2_4.16.0-4.dsc' iproute2_4.16.0-4.dsc 1882 SHA256:25ed4f05d855f985b2461556e356bb077a84500ed394a82d75265c0a25c40364
+'http://http.debian.net/debian/pool/main/i/iproute2/iproute2_4.16.0.orig.tar.xz' iproute2_4.16.0.orig.tar.xz 661336 SHA256:0c5c24020fd7349fe25728c5edee9fb6a1bc8a38f08e23be5c57a6301e55ee0a
+'http://http.debian.net/debian/pool/main/i/iproute2/iproute2_4.16.0-4.debian.tar.xz' iproute2_4.16.0-4.debian.tar.xz 141992 SHA256:9829657bdf4490fac46c7cb3845960f479cb242f6239c8095cd8e3672335ba78
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/iproute2/4.16.0-4/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.16.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20161105-1`
 
@@ -4188,16 +4182,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=3.5.0-5
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.0-5.dsc' r-base_3.5.0-5.dsc 3008 SHA256:77903e5c5a1897edf3b979c99b1d120fbe6b09a5d317fdbc2edfd50c81c5464f
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.0.orig.tar.gz' r-base_3.5.0.orig.tar.gz 30675040 SHA256:fd1725535e21797d3d9fea8963d99be0ba4c3aecadcf081b43e261458b416870
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.0-5.debian.tar.xz' r-base_3.5.0-5.debian.tar.xz 87864 SHA256:d68ccaefd2b613fa19dbb5ce971d0cfe8b28b054f69e563e28230c0fafe69394
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.0-5.dsc' r-base_3.5.0-5.dsc 3008 SHA256:77903e5c5a1897edf3b979c99b1d120fbe6b09a5d317fdbc2edfd50c81c5464f
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.0.orig.tar.gz' r-base_3.5.0.orig.tar.gz 30675040 SHA256:fd1725535e21797d3d9fea8963d99be0ba4c3aecadcf081b43e261458b416870
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.5.0-5.debian.tar.xz' r-base_3.5.0-5.debian.tar.xz 87864 SHA256:d68ccaefd2b613fa19dbb5ce971d0cfe8b28b054f69e563e28230c0fafe69394
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/r-base/3.5.0-5/ (for browsing the source)
-- https://sources.debian.net/src/r-base/3.5.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/3.5.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
@@ -4526,16 +4514,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sed=4.4-2
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4-2.dsc' sed_4.4-2.dsc 2006 SHA256:0e025a69a04c867048f918778771e2ba79d6ddfd62cb5ce6c3a6e255c005706c
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4.orig.tar.xz' sed_4.4.orig.tar.xz 1181664 SHA256:cbd6ebc5aaf080ed60d0162d7f6aeae58211a1ee9ba9bb25623daa6cd942683b
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4-2.debian.tar.xz' sed_4.4-2.debian.tar.xz 59600 SHA256:9f9b8bec0438ea0d0bd4315548de519543385c8196bcfcc61362f38f4cc6e7ed
+'http://http.debian.net/debian/pool/main/s/sed/sed_4.4-2.dsc' sed_4.4-2.dsc 2006 SHA256:0e025a69a04c867048f918778771e2ba79d6ddfd62cb5ce6c3a6e255c005706c
+'http://http.debian.net/debian/pool/main/s/sed/sed_4.4.orig.tar.xz' sed_4.4.orig.tar.xz 1181664 SHA256:cbd6ebc5aaf080ed60d0162d7f6aeae58211a1ee9ba9bb25623daa6cd942683b
+'http://http.debian.net/debian/pool/main/s/sed/sed_4.4-2.debian.tar.xz' sed_4.4-2.debian.tar.xz 59600 SHA256:9f9b8bec0438ea0d0bd4315548de519543385c8196bcfcc61362f38f4cc6e7ed
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sed/4.4-2/ (for browsing the source)
-- https://sources.debian.net/src/sed/4.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sed/4.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sensible-utils=0.0.12`
 
