@@ -1,7 +1,7 @@
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:eb5112b9326f08de2c59a74357bf1c273a072da4d67090b40c64e4f4e83f65d1
+$ docker pull geonetwork@sha256:ef2a7035870f3822b153bfcf92f68c29f80f15d667a07b53fc9c3a67a2ae54f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull geonetwork@sha256:eb5112b9326f08de2c59a74357bf1c273a072da4d67090b4
 ### `geonetwork:latest` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:c0a1fbc1fceebb40e6d9830bcd39b89dc2fc30f6019a9ccf8ffce5fc6eec9c1f
+$ docker pull geonetwork@sha256:a6dfbedfed0058df3d23641869a47bec3372612be68d2be77f59f1c10a818063
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **392.4 MB (392365481 bytes)**  
+-	Total Size: **392.4 MB (392383063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a676bb2ac5fd4f7af2aa1ac0f3f3a7bb64ceceef75a840b281bac3b811da67ae`
+-	Image ID: `sha256:23865c870f60e35b21d69e9f67de640026176eca937629d6567f9b6cc9041083`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -73,41 +73,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& r
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Wed, 27 Jun 2018 07:08:00 GMT
 ENV TOMCAT_MAJOR=8
-# Wed, 27 Jun 2018 07:08:00 GMT
-ENV TOMCAT_VERSION=8.0.52
-# Wed, 27 Jun 2018 07:08:00 GMT
-ENV TOMCAT_SHA512=23ba3c005d2e1bff30360a7aca5882ba7acaef0001395b1f77eb182c1f9c6a48db7f39b9f71ebdfb20668eca32c5f03bf00364f77d47e368850a794f6d65ea56
-# Wed, 27 Jun 2018 07:08:00 GMT
-ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz
-# Wed, 27 Jun 2018 07:08:01 GMT
-ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.52/bin/apache-tomcat-8.0.52.tar.gz.asc
-# Wed, 27 Jun 2018 07:08:41 GMT
+# Sat, 07 Jul 2018 04:22:52 GMT
+ENV TOMCAT_VERSION=8.0.53
+# Sat, 07 Jul 2018 04:22:52 GMT
+ENV TOMCAT_SHA512=cd8a4e48a629a2f2bb4ce6b101ebcce41da52b506064396ec1b2915c0b0d8d82123091242f2929a649bcd8b65ecf6cd1ab9c7d90ac0e261821097ab6fbe22df9
+# Sat, 07 Jul 2018 04:22:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz
+# Sat, 07 Jul 2018 04:22:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz.asc
+# Sat, 07 Jul 2018 04:23:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		"openjdk-${JAVA_VERSION%%[.~bu-]*}-jdk=$JAVA_DEBIAN_VERSION" 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Wed, 27 Jun 2018 07:08:50 GMT
+# Sat, 07 Jul 2018 04:23:47 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 27 Jun 2018 07:08:50 GMT
+# Sat, 07 Jul 2018 04:23:47 GMT
 EXPOSE 8080/tcp
-# Wed, 27 Jun 2018 07:08:50 GMT
+# Sat, 07 Jul 2018 04:23:47 GMT
 CMD ["catalina.sh" "run"]
-# Wed, 04 Jul 2018 03:07:42 GMT
+# Sat, 07 Jul 2018 05:22:43 GMT
 ENV GN_FILE=geonetwork.war
-# Wed, 04 Jul 2018 03:07:42 GMT
+# Sat, 07 Jul 2018 05:22:43 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Wed, 04 Jul 2018 03:07:43 GMT
+# Sat, 07 Jul 2018 05:22:43 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Wed, 04 Jul 2018 03:15:45 GMT
+# Sat, 07 Jul 2018 05:24:49 GMT
 ENV GN_VERSION=3.4.2
-# Wed, 04 Jul 2018 03:15:45 GMT
+# Sat, 07 Jul 2018 05:24:49 GMT
 ENV GN_DOWNLOAD_MD5=e0ff34ab3995b3a8107f3c3c78f7294a
-# Wed, 04 Jul 2018 03:15:45 GMT
+# Sat, 07 Jul 2018 05:24:49 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Wed, 04 Jul 2018 03:15:57 GMT
+# Sat, 07 Jul 2018 05:25:06 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Wed, 04 Jul 2018 03:15:57 GMT
+# Sat, 07 Jul 2018 05:25:07 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Wed, 04 Jul 2018 03:15:58 GMT
+# Sat, 07 Jul 2018 05:25:07 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 04 Jul 2018 03:15:59 GMT
+# Sat, 07 Jul 2018 05:25:08 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -152,19 +152,19 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 27 Jun 2018 07:33:06 GMT  
 		Size: 528.7 KB (528723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d30688c574558bcd0f04488fc899c2bc48b34f94ae8dcf2cb6b4ddfdf645dc07`  
-		Last Modified: Wed, 27 Jun 2018 07:37:35 GMT  
-		Size: 10.4 MB (10415902 bytes)  
+	-	`sha256:f9ea77db0ba4d9cc8687e7f1ebc98359564255257886241ec19bbd14096d7f53`  
+		Last Modified: Sat, 07 Jul 2018 04:42:10 GMT  
+		Size: 10.4 MB (10433487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40c2951cf9a54eee3d905486a69ce20afe9048b3cf73e2c05e698447232dac95`  
-		Last Modified: Wed, 27 Jun 2018 07:37:33 GMT  
-		Size: 131.0 B  
+	-	`sha256:b23c06b231488da54cb6b7f00d810939068c553950227c23e40ed9842c1fac24`  
+		Last Modified: Sat, 07 Jul 2018 04:42:07 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea169304bdaaecc7d445c98903c6b2066620407ec990f042163fe274dba4ef48`  
-		Last Modified: Wed, 04 Jul 2018 03:19:26 GMT  
-		Size: 197.7 MB (197725101 bytes)  
+	-	`sha256:ba45f75733aad4856e123899937b74bc6154c58f6c1bcf05679e4b2c7e31cade`  
+		Last Modified: Sat, 07 Jul 2018 05:30:14 GMT  
+		Size: 197.7 MB (197725098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee46bda343826d7b42ec2a4650e0030d7f8566a1a634724b0710286fd6af96ec`  
-		Last Modified: Wed, 04 Jul 2018 03:19:12 GMT  
-		Size: 248.0 B  
+	-	`sha256:9e75a7eedc26a79563ac18ca8a68f17a84435a19f4ff059156c883e732969af5`  
+		Last Modified: Sat, 07 Jul 2018 05:29:43 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
