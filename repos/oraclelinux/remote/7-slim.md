@@ -1,7 +1,7 @@
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:215413b44dbfe5b945914f30a5ccaeec83b25d0c9829218f7a2f607a4ff5ff2e
+$ docker pull oraclelinux@sha256:98d97cafd7de2f205258f29f160a00c23e26510a52ca2bdae948281242a5a4c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,29 +12,29 @@ $ docker pull oraclelinux@sha256:215413b44dbfe5b945914f30a5ccaeec83b25d0c9829218
 ### `oraclelinux:7-slim` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:b7c29b43220f4106f635bf3daa4fc3534e837153dfc08c5fd65a4311161174ce
+$ docker pull oraclelinux@sha256:9410431539b04df125c21d685ba71c37412aa6d187e5cc88b5157f64af43d1f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.4 MB (42432056 bytes)**  
+-	Total Size: **42.4 MB (42414614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c94cc930790a5339dd8ea82de99bea9d0a682afc2f35bfe330b5d469f181c3c2`
+-	Image ID: `sha256:b1af4ba0cf199c3e3fccffe7b8b1f832d9f14637f6c88a5c08512fcc2bc6dcfa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 06:39:58 GMT
+# Sat, 07 Jul 2018 03:36:39 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 18 Apr 2018 18:41:09 GMT
-ADD file:d326d51c1a9bcd202d9193f4f0d59c73870ab23ebc228ee85f16bd49b04e3fb9 in / 
-# Wed, 18 Apr 2018 18:41:10 GMT
+# Sat, 07 Jul 2018 03:37:20 GMT
+ADD file:78f6fe2752c17c59307d613462df4f6f92d2277a3ecc2457dbb41f063596dabc in / 
+# Sat, 07 Jul 2018 03:37:20 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b0efbbec3b2e75dfe994460ef48456ddd9041de3b33f489e14edadfc660ccc54`  
-		Last Modified: Wed, 18 Apr 2018 19:07:39 GMT  
-		Size: 42.4 MB (42432056 bytes)  
+	-	`sha256:b0e00407a0dbea1eeb46a8d59471ef79f9d379c49152ed9a49bbe6f4a26f9f13`  
+		Last Modified: Sat, 07 Jul 2018 03:40:12 GMT  
+		Size: 42.4 MB (42414614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `oraclelinux:7-slim` - linux; arm64 variant v8
