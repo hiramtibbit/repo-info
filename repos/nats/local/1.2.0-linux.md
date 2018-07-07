@@ -1,10 +1,10 @@
-# `nats:1.1.0-linux`
+# `nats:1.2.0-linux`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c6bb90d1d3873477a7485375736ade43cbe3020ba886ec535314001672dbc25`
-- Created: `2018-03-26T19:59:05.240668922Z`
-- Virtual Size: ~ 6.53 Mb  
+- Image ID: `sha256:8157d7afa1d923a7a7c1620d5a8e22ea3ba092a1d946748a4b7cccfd0c909eb9`
+- Created: `2018-07-06T15:05:52.268430212Z`
+- Virtual Size: ~ 6.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gnatsd"]`
