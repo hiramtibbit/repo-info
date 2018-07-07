@@ -1,7 +1,7 @@
 ## `kong:latest`
 
 ```console
-$ docker pull kong@sha256:ce31f88706e039827d1fb6d881b38875b2d8e12001f5a49cae215e93234b5168
+$ docker pull kong@sha256:e5b1cfb2107d2a4018b1364536fdd4af7d2755962a2c53ddd966b27c7680b962
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,40 +11,40 @@ $ docker pull kong@sha256:ce31f88706e039827d1fb6d881b38875b2d8e12001f5a49cae215e
 ### `kong:latest` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f624d9d2e8583b564e2ac1352f75998578fc141e9c39134e2c2e96aeff3ed5de
+$ docker pull kong@sha256:effa9a68317ff2ab0e384fbccaae75213e89cd7909a054a819de90349351942a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 MB (33426022 bytes)**  
+-	Total Size: **33.6 MB (33564000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c740b1fe6ed0a684d8971ee198c4d1b88b52ebed828022318aba57b05036cb`
+-	Image ID: `sha256:0423fe5663fcb29c83f3bff1ee0064ab200a4b7d1e38e4dd7b2122a6caa2bc00`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["\/usr\/local\/openresty\/nginx\/sbin\/nginx","-c","\/usr\/local\/kong\/nginx.conf","-p","\/usr\/local\/kong\/"]`
+-	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Fri, 06 Jul 2018 14:13:25 GMT
 ADD file:eceadb32d029164d23db918d14c88df7186b6ee9645fa2f0c0a7e3e046a6a129 in / 
 # Fri, 06 Jul 2018 14:13:25 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:15:47 GMT
+# Sat, 07 Jul 2018 03:44:49 GMT
 LABEL maintainer=Marco Palladino, marco@mashape.com
-# Fri, 06 Jul 2018 15:16:45 GMT
-ENV KONG_VERSION=0.13.1
-# Fri, 06 Jul 2018 15:16:46 GMT
-ENV KONG_SHA256=caf119ce7a367b9d9cd1ace55c4b6a499ff3c4693f80ea25129ebf2da0373fcc
-# Fri, 06 Jul 2018 15:16:55 GMT
+# Sat, 07 Jul 2018 03:44:49 GMT
+ENV KONG_VERSION=0.14.0
+# Sat, 07 Jul 2018 03:44:50 GMT
+ENV KONG_SHA256=968b355f6e46218dee31497f65fd708cf219b096c1c54bff7da00efb0c2db520
+# Sat, 07 Jul 2018 03:45:02 GMT
 RUN apk add --no-cache --virtual .build-deps wget tar ca-certificates 	&& apk add --no-cache libgcc openssl pcre perl tzdata curl 	&& wget -O kong.tar.gz "https://bintray.com/kong/kong-community-edition-alpine-tar/download_file?file_path=kong-community-edition-$KONG_VERSION.apk.tar.gz" 	&& echo "$KONG_SHA256 *kong.tar.gz" | sha256sum -c - 	&& tar -xzf kong.tar.gz -C /tmp 	&& rm -f kong.tar.gz 	&& cp -R /tmp/usr / 	&& rm -rf /tmp/usr 	&& cp -R /tmp/etc / 	&& rm -rf /tmp/etc 	&& apk del .build-deps
-# Fri, 06 Jul 2018 15:16:55 GMT
-COPY file:0ce55305f95ddcb78ffb96b9502c795c4dd1040025f4ec7c3e19e4b889022b90 in /docker-entrypoint.sh 
-# Fri, 06 Jul 2018 15:16:56 GMT
+# Sat, 07 Jul 2018 03:45:03 GMT
+COPY file:e1ac3f3f858d8725b7a4bbe2a68d491ba6f524d0d6384516d5f0ce50d28b9fda in /docker-entrypoint.sh 
+# Sat, 07 Jul 2018 03:45:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 06 Jul 2018 15:16:56 GMT
+# Sat, 07 Jul 2018 03:45:04 GMT
 EXPOSE 8000/tcp 8001/tcp 8443/tcp 8444/tcp
-# Fri, 06 Jul 2018 15:16:56 GMT
+# Sat, 07 Jul 2018 03:45:04 GMT
 STOPSIGNAL [SIGTERM]
-# Fri, 06 Jul 2018 15:16:56 GMT
-CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "-p" "/usr/local/kong/"]
+# Sat, 07 Jul 2018 03:45:04 GMT
+CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
@@ -52,11 +52,11 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 		Last Modified: Fri, 06 Jul 2018 14:16:26 GMT  
 		Size: 2.0 MB (2014658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9e802eaf18e7c7f56e379211145b148504d52a04654c30f18935c90177427e`  
-		Last Modified: Fri, 06 Jul 2018 15:18:38 GMT  
-		Size: 31.4 MB (31411042 bytes)  
+	-	`sha256:fe9db5a53243089eee0256ac935d0d650755f05b17e419d6e6e0fe2f09ef452b`  
+		Last Modified: Sat, 07 Jul 2018 03:48:57 GMT  
+		Size: 31.5 MB (31549028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:570e827121c46e73812e921fddff04aded29c4cff64ce86c5ac55055dc8de3ca`  
-		Last Modified: Fri, 06 Jul 2018 15:18:33 GMT  
-		Size: 322.0 B  
+	-	`sha256:0cdea2e533866fe120db80ba618785b29d0655593230e8e5d882c6e6d7ccd35b`  
+		Last Modified: Sat, 07 Jul 2018 03:48:45 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
