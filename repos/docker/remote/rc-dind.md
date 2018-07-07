@@ -1,7 +1,7 @@
 ## `docker:rc-dind`
 
 ```console
-$ docker pull docker@sha256:7db4e916ff91ffdd618257b037658529cf64e37eb2affee0262d6da6cd8d21bb
+$ docker pull docker@sha256:bc54283ca5bf201095867a30d4b8809824c0ac08c18c6de5b77c8a262db1c91a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -429,14 +429,14 @@ CMD []
 ### `docker:rc-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:33874f74ee01cf0ce6c58e684026c6f86b0bb9a02922dafcac257a8de552c8ee
+$ docker pull docker@sha256:c1f2244bae537a6630ebd57340c0f40361aee53c96e9a8d2c26bfe50ade44504
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.2 MB (51245057 bytes)**  
+-	Total Size: **51.2 MB (51245081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f730bbd94b04ffc06fb03089863d53b3eb802c5a8365371e9da4851e3a4f58`
+-	Image ID: `sha256:de60f44d9cba4ffd9c0951c0c5296599e2abd4e5e976ea8b3e174577e46603dd`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -473,15 +473,15 @@ RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& e
 ENV DIND_COMMIT=52379fa76dee07ca038624d639d9e14f4fb719ff
 # Tue, 03 Jul 2018 11:41:40 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Tue, 03 Jul 2018 11:41:40 GMT
-COPY file:073876936333c71cdffdb04170009690094f01b3e9221dc545ef3c1a021a0091 in /usr/local/bin/ 
-# Tue, 03 Jul 2018 11:41:40 GMT
+# Sat, 07 Jul 2018 11:41:30 GMT
+COPY file:4369494e10938c035554e3167656aa131a9a7c6790e86742abd46e48568c8201 in /usr/local/bin/ 
+# Sat, 07 Jul 2018 11:41:30 GMT
 VOLUME [/var/lib/docker]
-# Tue, 03 Jul 2018 11:41:41 GMT
+# Sat, 07 Jul 2018 11:41:30 GMT
 EXPOSE 2375/tcp
-# Tue, 03 Jul 2018 11:41:41 GMT
+# Sat, 07 Jul 2018 11:41:30 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Tue, 03 Jul 2018 11:41:41 GMT
+# Sat, 07 Jul 2018 11:41:30 GMT
 CMD []
 ```
 
@@ -526,7 +526,7 @@ CMD []
 		Last Modified: Tue, 03 Jul 2018 11:43:32 GMT  
 		Size: 25.1 KB (25098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b946c9bad9584a3654b07c7ec5d51bf24278836fb91de97bcc554a279118d89c`  
-		Last Modified: Tue, 03 Jul 2018 11:43:32 GMT  
-		Size: 576.0 B  
+	-	`sha256:b6cab4fd5c1dab60eb893d6e0849acaf5f703f1380b557cb13d5d8ba628ac3e9`  
+		Last Modified: Sat, 07 Jul 2018 11:42:16 GMT  
+		Size: 600.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
