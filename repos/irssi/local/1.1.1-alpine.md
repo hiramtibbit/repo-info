@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b658d18f3db63efb8a1b3737577d08c9a072171357d7bfc6b0b9a55d0f19c85b`
-- Created: `2018-04-24T01:07:56.884891746Z`
-- Virtual Size: ~ 60.92 Mb  
+- Image ID: `sha256:910c7a159b6d7f2f930196060122451e6d59fa05936fdffefce6aedbe13f87c8`
+- Created: `2018-07-06T15:21:19.440278954Z`
+- Virtual Size: ~ 61.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
