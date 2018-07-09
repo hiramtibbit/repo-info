@@ -84,7 +84,7 @@ CMD ["R"]
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:2e6e2c7449a080680438f5505029c27e75da8c7ff0649b22e7f89c24ba1be0f9
+$ docker pull r-base@sha256:4dfcda9d579095e001c2e498606363d61f7a49a0cd2697f4f95cc9cda505dee6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -94,14 +94,14 @@ $ docker pull r-base@sha256:2e6e2c7449a080680438f5505029c27e75da8c7ff0649b22e7f8
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:dcd63aedf688bdfa37cdf23c5daa4d77ebedc21a5447da4ade632666a12b72b3
+$ docker pull r-base@sha256:3746b5d8e2a7231d95129481eea615cae309d3cc65f43785b5e43e41591b3e6b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.2 MB (299193871 bytes)**  
+-	Total Size: **294.0 MB (294047410 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1906588928271a18d5aecd8759f3399cc3daa1cf91ad5b18983bad6e7210e2a8`
+-	Image ID: `sha256:ea6b542e774f94ce939b8907d50164ed8829447455004137a1c11256cdad5ec8`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -123,11 +123,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Wed, 27 Jun 2018 01:10:46 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Wed, 27 Jun 2018 01:10:47 GMT
-ENV R_BASE_VERSION=3.5.0
-# Wed, 27 Jun 2018 01:13:21 GMT
+# Mon, 09 Jul 2018 20:20:43 GMT
+ENV R_BASE_VERSION=3.5.1
+# Mon, 09 Jul 2018 20:23:17 GMT
 RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler                 r-cran-stringr 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-*         && echo 'options(repos = c(CRAN = "https://cloud.r-project.org/"))' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 01:13:21 GMT
+# Mon, 09 Jul 2018 20:23:27 GMT
 CMD ["R"]
 ```
 
@@ -152,7 +152,7 @@ CMD ["R"]
 		Last Modified: Wed, 27 Jun 2018 01:13:36 GMT  
 		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36cce1b4c79ab0efd9e3a68c3e88431f19147a5f76ba7ef665c706be767a8516`  
-		Last Modified: Wed, 27 Jun 2018 01:14:47 GMT  
-		Size: 224.0 MB (223983828 bytes)  
+	-	`sha256:deccbaccaab636f83c40851c0486a62db577e4ecea66a5a73e4763a25559152e`  
+		Last Modified: Mon, 09 Jul 2018 20:25:03 GMT  
+		Size: 218.8 MB (218837367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
