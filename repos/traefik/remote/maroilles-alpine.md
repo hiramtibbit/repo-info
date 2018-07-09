@@ -1,0 +1,62 @@
+## `traefik:maroilles-alpine`
+
+```console
+$ docker pull traefik@sha256:5239a703cf9c1ae77277916c2edd9308f5e31a669616787db2a0377face74e18
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `traefik:maroilles-alpine` - linux; amd64
+
+```console
+$ docker pull traefik@sha256:009e64dd6326f25842c6ec5b66ccbda4969be918994c10f78d8aba256fe04e31
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **18.4 MB (18442322 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73305e7fac9450028da3f0dde36ab29e7e116aaa63abd3cc06cb1b6cae198ebe`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["traefik"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:13:25 GMT
+ADD file:eceadb32d029164d23db918d14c88df7186b6ee9645fa2f0c0a7e3e046a6a129 in / 
+# Fri, 06 Jul 2018 14:13:25 GMT
+CMD ["/bin/sh"]
+# Fri, 06 Jul 2018 18:46:58 GMT
+RUN apk --no-cache add ca-certificates
+# Mon, 09 Jul 2018 20:28:15 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.7.0-rc1/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 09 Jul 2018 20:28:15 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 09 Jul 2018 20:28:16 GMT
+EXPOSE 80/tcp
+# Mon, 09 Jul 2018 20:28:16 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 09 Jul 2018 20:28:16 GMT
+CMD ["traefik"]
+# Mon, 09 Jul 2018 20:28:16 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.7.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:a073c86ecf9e0f29180e80e9638d4c741970695851ea48247276c32c57e40282`  
+		Last Modified: Fri, 06 Jul 2018 14:16:26 GMT  
+		Size: 2.0 MB (2014658 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0c55a74f9d93e30b92f7faffc5770afb8e8d803a8cf3e9e5a3c5a9482dc60a4`  
+		Last Modified: Fri, 06 Jul 2018 18:47:37 GMT  
+		Size: 351.3 KB (351276 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:599120177877a275d6f34fb50be2fccf0d85dbb352ceb855f6d52345cd87a938`  
+		Last Modified: Mon, 09 Jul 2018 20:30:22 GMT  
+		Size: 16.1 MB (16076047 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9412cad0b6d95728b8e02ed2271b2dee5a0a894d369f3b7cc7d91499b4ad174f`  
+		Last Modified: Mon, 09 Jul 2018 20:30:15 GMT  
+		Size: 341.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
