@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ed6657646e49329a186922ab13363970de1f238d756fb1f3926f46c96d2fac4`
-- Created: `2018-07-03T21:23:25.719290501Z`
-- Virtual Size: ~ 52.24 Mb  
+- Image ID: `sha256:050d68406ab6371cf6fb2b8f239d648a9e957d7e77f8860d1a45b01f1f50d98b`
+- Created: `2018-07-06T16:51:13.220002727Z`
+- Virtual Size: ~ 52.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
