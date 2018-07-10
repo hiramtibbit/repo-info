@@ -420,19 +420,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20130119+deb7u2
-'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.dsc' ca-certificates_20130119+deb7u2.dsc 1782 SHA256:c7ccab1d070c50ebf7ecc402a7b5ab81fcfd03bf625a10f5a12546c38ded5068
-'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u2.tar.gz' ca-certificates_20130119+deb7u2.tar.gz 380743 SHA256:e6597c8e6d3fc081ef8f2c34c2f2443d36865103557ed84942561f5ebb058aed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/
 
-- https://sources.debian.net/src/ca-certificates/20130119+deb7u2/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20130119+deb7u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.12.2-3+deb7u1`
 

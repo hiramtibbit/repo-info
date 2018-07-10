@@ -3868,14 +3868,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc 2394 SHA256:f8f2f694ef067bfd196fb7d9e7702299ba9180bf1061e8fd7f13afa2fc85f5b3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz 115364 SHA256:d1e8ad9781fdbf1c3fd89f2b15b480379052834cf37e76ac30fedaf1de6d11d2
-```
 
 ### `dpkg` source package: `openexr=1.6.1-7ubuntu1`
 
