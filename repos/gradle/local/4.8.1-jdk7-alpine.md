@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14a602dd6c852ad0b5a2c5c859f2806e2c601d0bfd1ee034298c2966ebd373b8`
-- Created: `2018-07-03T01:24:48.793348918Z`
-- Virtual Size: ~ 228.67 Mb  
+- Image ID: `sha256:d07e097a6e7e801e11d936cf737882b5f453a69b1a015ae3f764899db17e496a`
+- Created: `2018-07-06T19:27:05.089309079Z`
+- Virtual Size: ~ 229.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
