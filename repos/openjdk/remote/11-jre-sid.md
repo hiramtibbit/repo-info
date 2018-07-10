@@ -1,7 +1,7 @@
 ## `openjdk:11-jre-sid`
 
 ```console
-$ docker pull openjdk@sha256:41c8b2f33768b8251ebd16eea7b63a04038bbabcf92210612bea0e3d83f4ccbb
+$ docker pull openjdk@sha256:41ac10d28ff4d9bfcf393719206c6848d4a4a514cee4e46809593951102ea3cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull openjdk@sha256:41c8b2f33768b8251ebd16eea7b63a04038bbabcf92210612be
 ### `openjdk:11-jre-sid` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:8ebdd5512e0fb2f80fd9b5cb59b5abf5df437452183dd7a5fd8075d26ce9b799
+$ docker pull openjdk@sha256:687a7f6f9a57997156c257d23c8fada9df835e6bd4fbb90d39394790fc9baa3d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.8 MB (245843331 bytes)**  
+-	Total Size: **245.8 MB (245844899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e193c46e57eee3fbcb99f7a4b9de711df1ac2e70f71183a63e669d0cc451629`
+-	Image ID: `sha256:2e7343d08893f83f1a0ef3092b537132cf3018542e19153309834f169d0369f1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -43,9 +43,9 @@ RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-
 ENV JAVA_HOME=/docker-java-home
 # Sat, 07 Jul 2018 03:57:34 GMT
 ENV JAVA_VERSION=11-ea+21
-# Sat, 07 Jul 2018 03:57:35 GMT
-ENV JAVA_DEBIAN_VERSION=11~21-1
-# Sat, 07 Jul 2018 03:58:32 GMT
+# Tue, 10 Jul 2018 00:27:44 GMT
+ENV JAVA_DEBIAN_VERSION=11~21-2
+# Tue, 10 Jul 2018 00:28:44 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -74,9 +74,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 03 Jul 2018 01:05:26 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2331c546dec519400330a886e6d6c3ab1783625267c3fcafa6bf112d59b959b2`  
-		Last Modified: Sat, 07 Jul 2018 04:10:12 GMT  
-		Size: 180.1 MB (180068689 bytes)  
+	-	`sha256:7fe1718413c6c2c8a0886f957029af04c7921fe94f14ff5fd178b8252ffd14ea`  
+		Last Modified: Tue, 10 Jul 2018 00:39:48 GMT  
+		Size: 180.1 MB (180070257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:11-jre-sid` - linux; arm64 variant v8
