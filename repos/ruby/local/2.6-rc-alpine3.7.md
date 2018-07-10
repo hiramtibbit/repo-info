@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57bc92721793841a2419c4a8f26859d88997bbd5552d1b1087d82845b0a1bd45`
-- Created: `2018-06-06T23:59:35.451659071Z`
-- Virtual Size: ~ 64.51 Mb  
+- Image ID: `sha256:7583a9af0592105f2c7319c5b565cc64fd95e92f8fb6fff87ac043c71bffdb5d`
+- Created: `2018-07-06T17:42:36.189066497Z`
+- Virtual Size: ~ 62.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
