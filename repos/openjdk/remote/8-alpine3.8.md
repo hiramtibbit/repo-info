@@ -1,4 +1,4 @@
-## `openjdk:jdk-alpine`
+## `openjdk:8-alpine3.8`
 
 ```console
 $ docker pull openjdk@sha256:1e29f0a5921b1bf051d7d14fb1cc2162bde4f8a85176681de25cbfea60443677
@@ -8,7 +8,7 @@ $ docker pull openjdk@sha256:1e29f0a5921b1bf051d7d14fb1cc2162bde4f8a85176681de25
 -	Platforms:
 	-	linux; amd64
 
-### `openjdk:jdk-alpine` - linux; amd64
+### `openjdk:8-alpine3.8` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:d4c84528b8de75bf40ef402e7b02ffe60c5ae834a702e510664be1f6fc03d510

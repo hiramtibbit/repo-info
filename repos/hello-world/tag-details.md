@@ -6,6 +6,7 @@
 -	[`hello-world:linux`](#hello-worldlinux)
 -	[`hello-world:nanoserver`](#hello-worldnanoserver)
 -	[`hello-world:nanoserver-1709`](#hello-worldnanoserver-1709)
+-	[`hello-world:nanoserver-1803`](#hello-worldnanoserver-1803)
 -	[`hello-world:nanoserver-sac2016`](#hello-worldnanoserver-sac2016)
 
 ## `hello-world:latest`
@@ -636,6 +637,10 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Mon, 02 Jul 2018 23:41:15 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `hello-world:nanoserver-1803`
+
+**does not exist** (yet?)
 
 ## `hello-world:nanoserver-sac2016`
 

@@ -14,6 +14,9 @@
 -	[`buildpack-deps:18.04`](#buildpack-deps1804)
 -	[`buildpack-deps:18.04-curl`](#buildpack-deps1804-curl)
 -	[`buildpack-deps:18.04-scm`](#buildpack-deps1804-scm)
+-	[`buildpack-deps:18.10`](#buildpack-deps1810)
+-	[`buildpack-deps:18.10-curl`](#buildpack-deps1810-curl)
+-	[`buildpack-deps:18.10-scm`](#buildpack-deps1810-scm)
 -	[`buildpack-deps:artful`](#buildpack-depsartful)
 -	[`buildpack-deps:artful-curl`](#buildpack-depsartful-curl)
 -	[`buildpack-deps:artful-scm`](#buildpack-depsartful-scm)
@@ -23,6 +26,9 @@
 -	[`buildpack-deps:buster`](#buildpack-depsbuster)
 -	[`buildpack-deps:buster-curl`](#buildpack-depsbuster-curl)
 -	[`buildpack-deps:buster-scm`](#buildpack-depsbuster-scm)
+-	[`buildpack-deps:cosmic`](#buildpack-depscosmic)
+-	[`buildpack-deps:cosmic-curl`](#buildpack-depscosmic-curl)
+-	[`buildpack-deps:cosmic-scm`](#buildpack-depscosmic-scm)
 -	[`buildpack-deps:curl`](#buildpack-depscurl)
 -	[`buildpack-deps:jessie`](#buildpack-depsjessie)
 -	[`buildpack-deps:jessie-curl`](#buildpack-depsjessie-curl)
@@ -4725,6 +4731,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Size: 47.6 MB (47607828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `buildpack-deps:18.10`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:18.10-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:18.10-scm`
+
+**does not exist** (yet?)
+
 ## `buildpack-deps:artful`
 
 ```console
@@ -8162,6 +8180,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Wed, 27 Jun 2018 12:23:17 GMT  
 		Size: 50.8 MB (50771394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:cosmic`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:cosmic-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:cosmic-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:curl`
 
