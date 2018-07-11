@@ -153,21 +153,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.12-4
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-4.dsc' apparmor_2.12-4.dsc 3274 SHA256:e764a2385aeff03e72eac266f93d9d5c9edd675efed19ad742246e4168f1b862
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz' apparmor_2.12.orig.tar.gz 7258450 SHA256:8a2b0cd083faa4d0640f579024be3a629faa7db3b99540798a1a050e2eaba056
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz.asc' apparmor_2.12.orig.tar.gz.asc 837 SHA256:ea904e33c3b2ec109ea2ebf4c0cf29e9d4f68836328e901c9777a55b50084e63
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.12-4.debian.tar.xz' apparmor_2.12-4.debian.tar.xz 85176 SHA256:9c12219142515ec8b314962e54498c9a4347a800a5015e4d251d18866840d905
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.12-4/
 
-- https://sources.debian.net/src/apparmor/2.12-4/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.12-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.12-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.6.3-2`
 
@@ -1040,21 +1032,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.2-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.2-1.dsc' e2fsprogs_1.44.2-1.dsc 2730 SHA256:27018be4cc46608120c9541cc37776fe1323d99148332ef7994893af6ccd80a5
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.2.orig.tar.gz' e2fsprogs_1.44.2.orig.tar.gz 7562398 SHA256:e5c05a5ba4a9a1766f4b500ad7ef3220843860bfa64ebdda1b462b23bcb37f68
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.2.orig.tar.gz.asc' e2fsprogs_1.44.2.orig.tar.gz.asc 488 SHA256:0c3d0a1f5f0cd5d4ca0043cca76da1e5e963e13b6542d6ce0a8d2dd14e763ef5
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.2-1.debian.tar.xz' e2fsprogs_1.44.2-1.debian.tar.xz 76556 SHA256:e165e7073955f5a0b52ad1d8d144152cf6e31e8df3890804d3634dd519747f9e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.2-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.2-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.4`
 
@@ -1339,20 +1323,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.56.0-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.0-1.dsc' glib-networking_2.56.0-1.dsc 2510 SHA256:807831b3cef0a5c5f9ec3079534ac1705081d2bc3e6deab9bf26372dfa8b7f70
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.0.orig.tar.xz' glib-networking_2.56.0.orig.tar.xz 163852 SHA256:47fd10bcae2e5039dc5f685e3ea384f48e64a6bee26d755718f534a978477c93
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.0-1.debian.tar.xz' glib-networking_2.56.0-1.debian.tar.xz 7972 SHA256:d7508951b05952bea47dbbee1ddb6433b96875fc7801a9d9c47fcc256041dadd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.56.0-1/
 
-- https://sources.debian.net/src/glib-networking/2.56.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.56.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.56.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.56.1-2`
 
@@ -1691,20 +1668,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.8.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.dsc' harfbuzz_1.8.1-1.dsc 2274 SHA256:851403197e1d736c408af74f4af58068374b615feb7d6bd360b411b6740bf2a9
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1.orig.tar.bz2' harfbuzz_1.8.1.orig.tar.bz2 3804867 SHA256:fbed6392ddb085e45e6090a9f389f72926d0e355f4b0a2ef51d35cf21686df45
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.1-1.debian.tar.xz' harfbuzz_1.8.1-1.debian.tar.xz 8668 SHA256:4ee214eb3271e1816b349de49464d4c74cd72c24e853d29798d13a52577b82d5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.8.1-1/
 
-- https://sources.debian.net/src/harfbuzz/1.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -3157,21 +3127,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=0.9.8-1
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8-1.dsc' libunistring_0.9.8-1.dsc 2240 SHA256:9511879fc285637224302b95aed0a61f2f7356e26565257112e7ac34ed46360b
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8.orig.tar.xz' libunistring_0.9.8.orig.tar.xz 2029068 SHA256:7b9338cf52706facb2e18587dceda2fbc4a2a3519efa1e15a3f2a68193942f80
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8.orig.tar.xz.asc' libunistring_0.9.8.orig.tar.xz.asc 1355 SHA256:49a11d0261689b3fd03f3582e0b51e058e3a67c63aa6398f78cb4518dd0b0c21
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8-1.debian.tar.xz' libunistring_0.9.8-1.debian.tar.xz 39968 SHA256:4dcecb5e7f604ff9a81cca935c63f8d7f4e17f1c76cde1e7c9e0a2cc0cd23be6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/0.9.8-1/
 
-- https://sources.debian.net/src/libunistring/0.9.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/0.9.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/0.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.5-1`
 
@@ -4624,20 +4586,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.4-2
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4-2.dsc' sed_4.4-2.dsc 2006 SHA256:0e025a69a04c867048f918778771e2ba79d6ddfd62cb5ce6c3a6e255c005706c
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4.orig.tar.xz' sed_4.4.orig.tar.xz 1181664 SHA256:cbd6ebc5aaf080ed60d0162d7f6aeae58211a1ee9ba9bb25623daa6cd942683b
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.4-2.debian.tar.xz' sed_4.4-2.debian.tar.xz 59600 SHA256:9f9b8bec0438ea0d0bd4315548de519543385c8196bcfcc61362f38f4cc6e7ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sed/4.4-2/
 
-- https://sources.debian.net/src/sed/4.4-2/ (for browsing the source)
-- https://sources.debian.net/src/sed/4.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sed/4.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sensible-utils=0.0.12`
 
