@@ -2,8 +2,18 @@
 
 # Tags of `kaazing-gateway`
 
+-	[`kaazing-gateway:5`](#kaazing-gateway5)
+-	[`kaazing-gateway:5.6`](#kaazing-gateway56)
 -	[`kaazing-gateway:5.6.0`](#kaazing-gateway560)
 -	[`kaazing-gateway:latest`](#kaazing-gatewaylatest)
+
+## `kaazing-gateway:5`
+
+**does not exist** (yet?)
+
+## `kaazing-gateway:5.6`
+
+**does not exist** (yet?)
 
 ## `kaazing-gateway:5.6.0`
 
