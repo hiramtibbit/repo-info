@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:272897f7268b4a9ef71491a43f3fad9315a9cffa5c999d0e5ec0192b90585772`
-- Created: `2018-06-26T23:34:16.383531309Z`
-- Virtual Size: ~ 1.20 Gb  
+- Image ID: `sha256:a5e7392ccae1eea26fdaec6ec20ed1522bd7debee0ad60192678da1048fe272c`
+- Created: `2018-07-10T21:30:09.837566639Z`
+- Virtual Size: ~ 1.22 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `ODOO_VERSION=11.0`
-  - `ODOO_RELEASE=20180122`
+  - `ODOO_RELEASE=20180710`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3106,11 +3106,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nodejs/4.8.2~dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=11.0.20180122`
+### `dpkg` source package: `odoo=11.0.20180710`
 
 Binary Packages:
 
-- `odoo=11.0.20180122`
+- `odoo=11.0.20180710`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -3615,6 +3615,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pyserial/3.2.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pyserial/3.2.1-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `python-argh=0.26.2-1`
+
+Binary Packages:
+
+- `python3-argh=0.26.2-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-argh/copyright`)
+
+- `LGPL-3`
+- `LGPL-3.0+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-argh=0.26.2-1
+'http://deb.debian.org/debian/pool/main/p/python-argh/python-argh_0.26.2-1.dsc' python-argh_0.26.2-1.dsc 2092 SHA256:eab61c1d9ad8d2ed0d45fa7df2018546b3ea848f2c9e5c4b0c74e16662bda5e7
+'http://deb.debian.org/debian/pool/main/p/python-argh/python-argh_0.26.2.orig.tar.gz' python-argh_0.26.2.orig.tar.gz 32913 SHA256:e9535b8c84dc9571a48999094fda7f33e63c3f1b74f3e5f3ac0105a58405bb65
+'http://deb.debian.org/debian/pool/main/p/python-argh/python-argh_0.26.2-1.debian.tar.xz' python-argh_0.26.2-1.debian.tar.xz 3632 SHA256:7dfb900ef1f0fcbe347bb738c058ba7ff8283b5215260571071589c77e652786
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-argh/0.26.2-1/ (for browsing the source)
+- https://sources.debian.net/src/python-argh/0.26.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-argh/0.26.2-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `python-babel=2.3.4+dfsg.1-2`
 
 Binary Packages:
@@ -3885,6 +3911,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-passlib/1.7.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-passlib/1.7.0-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `python-pathtools=0.1.2-2`
+
+Binary Packages:
+
+- `python3-pathtools=0.1.2-2`
+
+Licenses: (parsed from: `/usr/share/doc/python3-pathtools/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-pathtools=0.1.2-2
+'http://deb.debian.org/debian/pool/main/p/python-pathtools/python-pathtools_0.1.2-2.dsc' python-pathtools_0.1.2-2.dsc 1977 SHA256:f495236524454882aa5d1ef3922837f13b6103721b5bc2decb2647a9b9ede4d7
+'http://deb.debian.org/debian/pool/main/p/python-pathtools/python-pathtools_0.1.2.orig.tar.gz' python-pathtools_0.1.2.orig.tar.gz 11006 SHA256:7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0
+'http://deb.debian.org/debian/pool/main/p/python-pathtools/python-pathtools_0.1.2-2.debian.tar.xz' python-pathtools_0.1.2-2.debian.tar.xz 4560 SHA256:8b0e55f725be75ebb97638f02f720d441ccd8bcff2838a18a7243248652aaa0a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-pathtools/0.1.2-2/ (for browsing the source)
+- https://sources.debian.net/src/python-pathtools/0.1.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-pathtools/0.1.2-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `python-pbr=1.10.0-1`
 
 Binary Packages:
@@ -4121,6 +4172,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-urllib3/1.19.1-1/ (for browsing the source)
 - https://sources.debian.net/src/python-urllib3/1.19.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-urllib3/1.19.1-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `python-watchdog=0.8.3-2`
+
+Binary Packages:
+
+- `python3-watchdog=0.8.3-2`
+
+Licenses: (parsed from: `/usr/share/doc/python3-watchdog/copyright`)
+
+- `Apache-2`
+- `Apache-2.0`
+- `BSD-3`
+- `Expat`
+- `Zope-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-watchdog=0.8.3-2
+'http://deb.debian.org/debian/pool/main/p/python-watchdog/python-watchdog_0.8.3-2.dsc' python-watchdog_0.8.3-2.dsc 2292 SHA256:839a161ee9667a99582f67a03314e168674c25e5d8b34da776180f163db78268
+'http://deb.debian.org/debian/pool/main/p/python-watchdog/python-watchdog_0.8.3.orig.tar.xz' python-watchdog_0.8.3.orig.tar.xz 72156 SHA256:0949f90e421f04ac46aa1b7b39753af113cf8ce5bd4c61f33643f2f3b76c85bc
+'http://deb.debian.org/debian/pool/main/p/python-watchdog/python-watchdog_0.8.3-2.debian.tar.xz' python-watchdog_0.8.3-2.debian.tar.xz 62444 SHA256:c60f7eb7c8768f382769c3fa1f1785979ea49fccb0017ea301056ae3f15b800f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-watchdog/0.8.3-2/ (for browsing the source)
+- https://sources.debian.net/src/python-watchdog/0.8.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-watchdog/0.8.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-werkzeug=0.11.15+dfsg1-1`
 
@@ -4487,6 +4567,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/six/1.10.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/six/1.10.0-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `sphinx=1.4.9-2`
+
+Binary Packages:
+
+- `libjs-sphinxdoc=1.4.9-2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris sphinx=1.4.9-2
+'http://deb.debian.org/debian/pool/main/s/sphinx/sphinx_1.4.9-2.dsc' sphinx_1.4.9-2.dsc 3364 SHA256:b4f1946c1d520e6784fc29628d6adbad6161a8b565aeaca8f632aa55807e96f7
+'http://deb.debian.org/debian/pool/main/s/sphinx/sphinx_1.4.9.orig.tar.gz' sphinx_1.4.9.orig.tar.gz 4525489 SHA256:82cd2728c906be96e307b81352d3fd9fb731869234c6b835cc25e9a3dfb4b7e4
+'http://deb.debian.org/debian/pool/main/s/sphinx/sphinx_1.4.9-2.debian.tar.xz' sphinx_1.4.9-2.debian.tar.xz 34600 SHA256:53b310bab37519dcfcedf95879876d3180ef00de4c023e9ac5106bbae57bc20d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sphinx/1.4.9-2/ (for browsing the source)
+- https://sources.debian.net/src/sphinx/1.4.9-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sphinx/1.4.9-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `sqlite3=3.16.2-5+deb9u1`
 
 Binary Packages:
@@ -4698,6 +4803,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0036/ (for browsing the source)
 - https://sources.debian.net/src/ucf/3.0036/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0036/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `underscore=1.8.3~dfsg-1`
+
+Binary Packages:
+
+- `libjs-underscore=1.8.3~dfsg-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjs-underscore/copyright`)
+
+- `BSD-3-clause`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris underscore=1.8.3~dfsg-1
+'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.8.3~dfsg-1.dsc' underscore_1.8.3~dfsg-1.dsc 2099 SHA256:8dd6cbe43c9b950fbd74d52e58124d3db38efc9ab4931a3d616f2fa5f71c4e0b
+'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.8.3~dfsg.orig.tar.gz' underscore_1.8.3~dfsg.orig.tar.gz 119157 SHA256:0f17052a77237423a5f0ec8a979fd8ea2df55e2a06567009dc4269bcb560935d
+'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.8.3~dfsg-1.debian.tar.xz' underscore_1.8.3~dfsg-1.debian.tar.xz 6780 SHA256:90a50f146b9fdacf902ac9006e2aa40d604688973ecdbab5e21b90b42286b45f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/underscore/1.8.3~dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/underscore/1.8.3~dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/underscore/1.8.3~dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
