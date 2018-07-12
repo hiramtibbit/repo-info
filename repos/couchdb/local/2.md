@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3853c68780ae091eb3b88e4dd192d2b2c58c991b08a7c1d32dabf86f4b1b2d57`
-- Created: `2018-06-26T22:12:23.536183701Z`
-- Virtual Size: ~ 332.75 Mb  
+- Image ID: `sha256:fce90359efc489dbb2b72befea3588a3e4300b8f2732e770f0ed58956c717220`
+- Created: `2018-07-11T00:24:40.700252451Z`
+- Virtual Size: ~ 334.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=0.16.1`
   - `GPG_KEYS=15DD4F3B8AACA54740EB78C7B7B7C53943ECCEE1   1CFBFA43C19B6DF4A0CA3934669C02FFDF3CEBA3   25BBBAC113C1BFD5AA594A4C9F96B92930380381   4BFCA2B99BADC6F9F105BEC9C5E32E2D6B065BFB   5D680346FAA3E51B29DBCB681015F68F9DA248BC   7BCCEB868313DDA925DF1805ECA5BCB7BB9656B0   C3F4DFAEAD621E1C94523AEEC376457E61D50B88   D2B17F9DA23C0A10991AF2E3D9EE01E47852AEE4   E0AF0A194D55C84E4A19A801CDB0C0F904F4EE9B   29E4F38113DF707D722A6EF91FE9AF73118F1A7C   2EC788AE3F239FA13E82D215CDE711289384AE37`
-  - `COUCHDB_VERSION=2.1.1`
+  - `COUCHDB_VERSION=2.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -302,11 +302,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20141019+deb8u3`
+### `dpkg` source package: `ca-certificates=20141019+deb8u4`
 
 Binary Packages:
 
-- `ca-certificates=20141019+deb8u3`
+- `ca-certificates=20141019+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -317,16 +317,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u3
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.dsc' ca-certificates_20141019+deb8u3.dsc 1779 SHA256:00d74f6be7cdae6be14b97f0a0c7d98e6050fcf09044d2f0f637cf1a985b1234
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.tar.xz' ca-certificates_20141019+deb8u3.tar.xz 299472 SHA256:d6c6244b47b96ae9b718e4c1f3b6dc3487a455a31aeae70573361f313bc532a8
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.dsc' ca-certificates_20141019+deb8u4.dsc 1754 SHA256:4f2bec1a926ff2be32571ef25fddaaf3656cfe28a040efa96ffc493194930b43
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.tar.xz' ca-certificates_20141019+deb8u4.tar.xz 248648 SHA256:12af9462236667ee617e34a4befb447bb9519dceefc76190a62bc16343f27650
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.14.0-2.1+deb8u2`
 
@@ -428,11 +428,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=1.7.5-11+deb8u2`
+### `dpkg` source package: `cups=1.7.5-11+deb8u3`
 
 Binary Packages:
 
-- `libcups2:amd64=1.7.5-11+deb8u2`
+- `libcups2:amd64=1.7.5-11+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -444,17 +444,17 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=1.7.5-11+deb8u2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5-11+deb8u2.dsc' cups_1.7.5-11+deb8u2.dsc 3461 SHA256:22f612c156019f489b1431356edac5b467ecd52779f8b56feb78644af4f0cb71
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5.orig.tar.bz2' cups_1.7.5.orig.tar.bz2 8793338 SHA256:18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5-11+deb8u2.debian.tar.xz' cups_1.7.5-11+deb8u2.debian.tar.xz 305704 SHA256:ae8943c35211802415a1495c0afdcb6943484f4f592f09ec024f11ded5f85ec9
+$ apt-get source -qq --print-uris cups=1.7.5-11+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u3.dsc' cups_1.7.5-11+deb8u3.dsc 3290 SHA256:19662c7556cb68c416ad0bdadcf308846eadec56ffca95908230e8fb54823959
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5.orig.tar.bz2' cups_1.7.5.orig.tar.bz2 8793338 SHA256:18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u3.debian.tar.xz' cups_1.7.5-11+deb8u3.debian.tar.xz 305240 SHA256:4878e3c941f01e487cecf0f587b76db90b7a4de13aee8d96f1426b1f2f208adc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/1.7.5-11+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/cups/1.7.5-11+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.38.0-4+deb8u11`
 
@@ -1283,34 +1283,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gzip/1.6-4/ (for browsing the source)
 - https://sources.debian.net/src/gzip/1.6-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gzip/1.6-4/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `haproxy=1.5.8-3+deb8u2`
-
-Binary Packages:
-
-- `haproxy=1.5.8-3+deb8u2`
-
-Licenses: (parsed from: `/usr/share/doc/haproxy/copyright`)
-
-- `Apache-2.0`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris haproxy=1.5.8-3+deb8u2
-'http://deb.debian.org/debian/pool/main/h/haproxy/haproxy_1.5.8-3+deb8u2.dsc' haproxy_1.5.8-3+deb8u2.dsc 2252 SHA256:bdb42792dd8989c41e943c9d2c37d75938367047d683687ea62e20ae221db1cf
-'http://deb.debian.org/debian/pool/main/h/haproxy/haproxy_1.5.8.orig.tar.gz' haproxy_1.5.8.orig.tar.gz 1338741 SHA256:db54b3cf08e530fdd5b67100153bb88293e8d6e179e7aa837412d8ea36a03539
-'http://deb.debian.org/debian/pool/main/h/haproxy/haproxy_1.5.8-3+deb8u2.debian.tar.xz' haproxy_1.5.8-3+deb8u2.debian.tar.xz 44396 SHA256:8886809c95cf112cadcd1ddeda094f7d2a6c62a830df504c3e160471f33f316d
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/haproxy/1.5.8-3+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/haproxy/1.5.8-3+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/haproxy/1.5.8-3+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `harfbuzz=0.9.35-2`
 
@@ -3471,11 +3443,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u5`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u5`
+- `libtiff5:amd64=4.0.3-12.3+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3484,17 +3456,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.dsc' tiff_4.0.3-12.3+deb8u5.dsc 2240 SHA256:69fe805e2304bc369b2200636988cb7bd5d38f6e0daf9ad0eaaf96ffaea8d464
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.debian.tar.xz' tiff_4.0.3-12.3+deb8u5.debian.tar.xz 63224 SHA256:d43190b75bb70c05701afc8c061f49c75433b5d9965fd57df68e334195b267c4
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.dsc' tiff_4.0.3-12.3+deb8u6.dsc 2391 SHA256:783258d2abdba051b0732d4b36baf3b2f2c7f52c9d02b9fde3ff2c8377270300
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.debian.tar.xz' tiff_4.0.3-12.3+deb8u6.debian.tar.xz 66520 SHA256:87c0d9e7fcba9c7ada1542574bacc01dc7dca6665692ba42d02eb550a9b24562
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018e-0+deb8u1`
 
