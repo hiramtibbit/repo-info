@@ -519,14 +519,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2`
 - `LGPL-2 with exceptions`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.9.dsc' cups_1.7.2-0ubuntu1.9.dsc 3369 SHA256:48eba94a88f44938b601c5fa5086dc6f14847f6621f6f3b2dc4fca039dacd07e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2.orig.tar.bz2' cups_1.7.2.orig.tar.bz2 8754601 SHA256:315cdff436924c4efe04cb110b145fb1a6e038e2eed8445359052f86e9e95676
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.9.debian.tar.xz' cups_1.7.2-0ubuntu1.9.debian.tar.xz 292708 SHA256:9ca8fb6e6ecf0c3c915d8485e4b4424ad012e7b45ea163e660ca015e20bbb2e9
-```
 
 ### `dpkg` source package: `curl=7.35.0-1ubuntu2.16`
 
@@ -2589,14 +2584,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng=1.2.50-1ubuntu2.14.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng_1.2.50-1ubuntu2.14.04.2.dsc' libpng_1.2.50-1ubuntu2.14.04.2.dsc 2118 SHA256:81c74ca4d5c69f1dbe010a1a8d41f8068610a8d0a14f14b4c0a0db81d853cf3d
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng_1.2.50.orig.tar.xz' libpng_1.2.50.orig.tar.xz 539152 SHA256:4724f81f8c92ac7f360ad1fbf173396ea7c535923424db9fbaff07bfd9d8e8e7
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng_1.2.50-1ubuntu2.14.04.2.debian.tar.bz2' libpng_1.2.50-1ubuntu2.14.04.2.debian.tar.bz2 21186 SHA256:88b21af6520f704cd60406740256f53a46beafb9790ab8427e3c03cbea7f94cf
-```
 
 ### `dpkg` source package: `libpod-latex-perl=0.61-1`
 
@@ -3834,14 +3824,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc 2394 SHA256:f8f2f694ef067bfd196fb7d9e7702299ba9180bf1061e8fd7f13afa2fc85f5b3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz 115364 SHA256:d1e8ad9781fdbf1c3fd89f2b15b480379052834cf37e76ac30fedaf1de6d11d2
-```
 
 ### `dpkg` source package: `ogdi-dfsg=3.2.0~beta2-7ubuntu1`
 
