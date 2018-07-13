@@ -100,14 +100,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.8.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.3-1ubuntu1.dsc' audit_2.8.3-1ubuntu1.dsc 2948 SHA256:dda1916a3c18adf97ae4fe1ee0c0a20907fe2a6616a374ef62f30e46d9126919
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.3.orig.tar.gz' audit_2.8.3.orig.tar.gz 1107583 SHA256:744945caee27a472f0cc7ecb067f1f33d606e5aebcf9660e701a58f9d3668a1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.3-1ubuntu1.debian.tar.xz' audit_2.8.3-1ubuntu1.debian.tar.xz 17648 SHA256:a7f112303ffba8be45b8779d457efd333a9b9650b9b03ee75274efd6bc20a505
-```
 
 ### `dpkg` source package: `base-files=10.1ubuntu4`
 
@@ -353,15 +348,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.2-1.dsc' e2fsprogs_1.44.2-1.dsc 2730 SHA256:27018be4cc46608120c9541cc37776fe1323d99148332ef7994893af6ccd80a5
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.2.orig.tar.gz' e2fsprogs_1.44.2.orig.tar.gz 7562398 SHA256:e5c05a5ba4a9a1766f4b500ad7ef3220843860bfa64ebdda1b462b23bcb37f68
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.2.orig.tar.gz.asc' e2fsprogs_1.44.2.orig.tar.gz.asc 488 SHA256:0c3d0a1f5f0cd5d4ca0043cca76da1e5e963e13b6542d6ce0a8d2dd14e763ef5
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.2-1.debian.tar.xz' e2fsprogs_1.44.2-1.debian.tar.xz 76556 SHA256:e165e7073955f5a0b52ad1d8d144152cf6e31e8df3890804d3634dd519747f9e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/e2fsprogs/1.44.2-1/
+
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -467,15 +460,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.dsc' gnupg2_2.2.4-1ubuntu1.dsc 3455 SHA256:27dd013aa4742bc8d0cccee5e78f2bbfb3c0d034fc3933e1809976467d372076
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA256:30dd26e12b451e8f6799ba3a81449ed18db3d3e747820b237a39745ab264c899
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.debian.tar.bz2 70580 SHA256:3cb581cbba071cbcdfdf8af8eb76b051a1c4e69f99ab8854ede8eb42cd71bf3c
-```
 
 ### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1`
 
@@ -633,15 +620,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.8.2-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.2-2ubuntu1.dsc' libgcrypt20_1.8.2-2ubuntu1.dsc 2999 SHA256:c3b9a465b08f93ec3d941452054022749f67a403188498c965fa3635199911e0
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.2.orig.tar.bz2' libgcrypt20_1.8.2.orig.tar.bz2 2966534 SHA256:c8064cae7558144b13ef0eb87093412380efa16c4ee30ad12ecb54886a524c07
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.2.orig.tar.bz2.asc' libgcrypt20_1.8.2.orig.tar.bz2.asc 534 SHA256:6533c76da0e69f39d525b7f85877e5657e1492f035a99920bcc00540f52e40f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.2-2ubuntu1.debian.tar.xz' libgcrypt20_1.8.2-2ubuntu1.debian.tar.xz 29372 SHA256:6dfab9bbc0cb0edfd9aa0d761bc9d7f60756bb2ca8029decf7c9e57cdb2ff718
-```
 
 ### `dpkg` source package: `libgpg-error=1.31-1`
 
