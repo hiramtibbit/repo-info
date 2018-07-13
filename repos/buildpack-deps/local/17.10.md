@@ -538,9 +538,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.2.4-7ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu3.dsc' cups_2.2.4-7ubuntu3.dsc 2998 SHA256:f3fccbd289661a53901ff8edca1556162c318cb76406334aa0ac96581ce6b538
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu3.1.dsc' cups_2.2.4-7ubuntu3.1.dsc 3447 SHA256:8d04933cdcb85b11fb4297472a583ed8880a60bece0a49059def44ec5c1b4c1a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu3.debian.tar.xz' cups_2.2.4-7ubuntu3.debian.tar.xz 360232 SHA256:97e1dc180e164113fb5f37798f8a63b1999de255077b1c4736af1db4e8d33ba5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu3.1.debian.tar.xz' cups_2.2.4-7ubuntu3.1.debian.tar.xz 361020 SHA256:77715b8d9f0d9c038b22335bbce566467f9904422c0026136d5097568e18c690
 ```
 
 ### `dpkg` source package: `curl=7.55.1-1ubuntu2.5`
@@ -561,14 +561,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.5.dsc' curl_7.55.1-1ubuntu2.5.dsc 2764 SHA256:c73d6ac5857768d655c4c74ebe256fcba6bce7fdfaa9a45af7203eeefd5ecc60
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.5.debian.tar.xz' curl_7.55.1-1ubuntu2.5.debian.tar.xz 41104 SHA256:c4dfb38887baed4855ee2f02822e5cb1220c2f4f36091d58e2fe57a3c05a7b01
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 
