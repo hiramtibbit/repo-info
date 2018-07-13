@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc75ec2865b5e73ddb37cced9508ca438a73efc5b370527f0bec7e533ef8ef69`
-- Created: `2018-06-26T23:35:14.166216056Z`
-- Virtual Size: ~ 235.47 Mb  
+- Image ID: `sha256:61f566e849bf98dbc483e620996d41a0ca7adba4e9c3ee3f7393defd688fa312`
+- Created: `2018-07-03T00:06:03.123974214Z`
+- Virtual Size: ~ 235.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -3558,11 +3558,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u5`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u5`
+- `libtiff5:amd64=4.0.3-12.3+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3571,17 +3571,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.dsc' tiff_4.0.3-12.3+deb8u5.dsc 2240 SHA256:69fe805e2304bc369b2200636988cb7bd5d38f6e0daf9ad0eaaf96ffaea8d464
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.debian.tar.xz' tiff_4.0.3-12.3+deb8u5.debian.tar.xz 63224 SHA256:d43190b75bb70c05701afc8c061f49c75433b5d9965fd57df68e334195b267c4
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.dsc' tiff_4.0.3-12.3+deb8u6.dsc 2391 SHA256:783258d2abdba051b0732d4b36baf3b2f2c7f52c9d02b9fde3ff2c8377270300
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.debian.tar.xz' tiff_4.0.3-12.3+deb8u6.debian.tar.xz 66520 SHA256:87c0d9e7fcba9c7ada1542574bacc01dc7dca6665692ba42d02eb550a9b24562
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018e-0+deb8u1`
 

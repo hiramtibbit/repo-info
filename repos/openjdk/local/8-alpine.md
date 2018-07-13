@@ -1,10 +1,10 @@
-# `openjdk:8u171-jdk-alpine3.7`
+# `openjdk:8u171-jdk-alpine3.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a6a75aac6c9869eda12b877927961cc61427a93bb11338589d0d6a34f7f3702`
-- Created: `2018-06-16T07:22:49.409599239Z`
-- Virtual Size: ~ 101.54 Mb  
+- Image ID: `sha256:5801f7d008e512b615212752f3ca170f19913c5434be3ee48b73e5aaa5945662`
+- Created: `2018-07-11T00:35:00.707462243Z`
+- Virtual Size: ~ 102.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
