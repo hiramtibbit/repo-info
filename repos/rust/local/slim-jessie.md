@@ -1,10 +1,10 @@
-# `rust:1.27.0-slim-jessie`
+# `rust:1.27.1-slim-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ed881f8bf8d9c8aea9aced3168293ccd3c00f56c47440c50ce688e9e9b9a3d4`
-- Created: `2018-06-27T08:48:28.875743649Z`
-- Virtual Size: ~ 980.66 Mb  
+- Image ID: `sha256:36d87de4c1c11452cfbf3f075a34d22fc29510e8ae17e884259c5c302e353958`
+- Created: `2018-07-10T21:26:02.137385102Z`
+- Virtual Size: ~ 984.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.27.0`
+  - `RUST_VERSION=1.27.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -272,11 +272,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20141019+deb8u3`
+### `dpkg` source package: `ca-certificates=20141019+deb8u4`
 
 Binary Packages:
 
-- `ca-certificates=20141019+deb8u3`
+- `ca-certificates=20141019+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -287,16 +287,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u3
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.dsc' ca-certificates_20141019+deb8u3.dsc 1779 SHA256:00d74f6be7cdae6be14b97f0a0c7d98e6050fcf09044d2f0f637cf1a985b1234
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.tar.xz' ca-certificates_20141019+deb8u3.tar.xz 299472 SHA256:d6c6244b47b96ae9b718e4c1f3b6dc3487a455a31aeae70573361f313bc532a8
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.dsc' ca-certificates_20141019+deb8u4.dsc 1754 SHA256:4f2bec1a926ff2be32571ef25fddaaf3656cfe28a040efa96ffc493194930b43
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.tar.xz' ca-certificates_20141019+deb8u4.tar.xz 248648 SHA256:12af9462236667ee617e34a4befb447bb9519dceefc76190a62bc16343f27650
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.192`
 
