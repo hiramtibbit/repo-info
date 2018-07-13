@@ -1,10 +1,10 @@
-# `open-liberty:webProfile7`
+# `open-liberty:webProfile8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:def7c96fbd53610465294f1d9ef9d705ada37162b6239516104942bcf9340711`
-- Created: `2018-07-07T04:45:40.671537143Z`
-- Virtual Size: ~ 514.32 Mb  
+- Image ID: `sha256:c9c58fdfac26c31fb5775f9eb773b3f6373c32edd191663fff4b44695fc21a89`
+- Created: `2018-07-07T04:47:41.893199338Z`
+- Virtual Size: ~ 514.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`

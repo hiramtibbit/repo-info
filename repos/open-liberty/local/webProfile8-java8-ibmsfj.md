@@ -1,10 +1,10 @@
-# `open-liberty:kernel-java8-ibmsfj`
+# `open-liberty:webProfile8-java8-ibmsfj`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b487662f4bee840647bbd22c8ec9abb4eeb231ae53c45a0df0a87445fe3736c`
-- Created: `2018-07-07T04:45:12.220362406Z`
-- Virtual Size: ~ 243.95 Mb  
+- Image ID: `sha256:d5be6bed0967a58d3ffa1857758541285e5cc48bb3b4dafd255af92a08d77455`
+- Created: `2018-07-07T04:48:05.675859396Z`
+- Virtual Size: ~ 308.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
