@@ -1,9 +1,9 @@
-# `wordpress:4.9.6-php5.6-fpm`
+# `wordpress:4.9.7-php5.6-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd031d0acbec7978b46a938fe538409b382c65d81d3ce417ee01b32f926e2cdf`
-- Created: `2018-06-28T07:00:39.838699552Z`
+- Image ID: `sha256:42acacd99da582d3b0f7cf7770491daeefe19bd3e7a9c52a31a0641e446ee8d9`
+- Created: `2018-07-07T04:14:37.524406211Z`
 - Virtual Size: ~ 374.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.36.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=18f536bf548e909b4e980379d0c4e56d024b2b1eb1c9768fd169360491f1d6dd`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=4.9.6`
-  - `WORDPRESS_SHA1=40616b40d120c97205e5852c03096115c2fca537`
+  - `WORDPRESS_VERSION=4.9.7`
+  - `WORDPRESS_SHA1=7bf349133750618e388e7a447bc9cdc405967b7d`
 
 ## `dpkg` (`.deb`-based packages)
 
