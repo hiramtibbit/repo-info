@@ -1,4 +1,4 @@
-# `kaazing-gateway:latest`
+# `kaazing-gateway:5.6.0`
 
 ## Docker Metadata
 
