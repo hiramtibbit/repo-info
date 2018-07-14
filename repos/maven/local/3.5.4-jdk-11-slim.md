@@ -408,21 +408,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.8-4
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-4.dsc' cups_2.2.8-4.dsc 3467 SHA256:e1f1f3abd9ab6d4e9e7c706b2a54cbaaeb86f593bf2e37fc53afb70f04217177
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz' cups_2.2.8.orig.tar.gz 10374921 SHA256:3968fc1d26fc48727508db1c1380e36c6694ab90177fd6920aec5f6cc73af9e4
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz.asc' cups_2.2.8.orig.tar.gz.asc 872 SHA256:2f86f5ae127169cc070da00f4460a7faf8fb4ac66b04a34adeecf451a0086781
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-4.debian.tar.xz' cups_2.2.8-4.debian.tar.xz 351380 SHA256:a96159fb59f5197e33df6fe45a13e7fc59e11091bcd927ce3272c687dfcc3d4a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.8-4/
 
-- https://sources.debian.net/src/cups/2.2.8-4/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.60.0-2`
 
@@ -2081,20 +2073,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/us
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-11=11~21-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~21-2.dsc' openjdk-11_11~21-2.dsc 4511 SHA256:be60a985b18c517a39121077b1a31ce70d4dc5b39eb70283c77578434656ad7a
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~21.orig.tar.xz' openjdk-11_11~21.orig.tar.xz 78523532 SHA256:047e82466d0e2980ce666f01356bd6afdb2c5536fffb12f9453f3f9affcb513e
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~21-2.debian.tar.xz' openjdk-11_11~21-2.debian.tar.xz 166456 SHA256:a1da5da6066accc9df55d3c0be8495af5e6987e4c5abb385467e94189018b7f2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-11/11~21-2/
 
-- https://sources.debian.net/src/openjdk-11/11~21-2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~21-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
