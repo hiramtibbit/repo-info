@@ -1179,10 +1179,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.27-4
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.27-4.dsc' glibc_2.27-4.dsc 8871 SHA256:59738840b5af9995596abc42af39f1bb963b8a96cf74c42b747c6fb2d46343b1
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA256:0e9826488e3ffedb4d14a426d741b7b1cf15f6973ab30762af9a188ad47633ed
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.27-4.debian.tar.xz' glibc_2.27-4.debian.tar.xz 997996 SHA256:2dfae33f1cd5db452a6d3f699f46e2f7d3f8c01ad85028fa8db3fac6e8610d06
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27-4.dsc' glibc_2.27-4.dsc 8871 SHA256:59738840b5af9995596abc42af39f1bb963b8a96cf74c42b747c6fb2d46343b1
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA256:0e9826488e3ffedb4d14a426d741b7b1cf15f6973ab30762af9a188ad47633ed
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.27-4.debian.tar.xz' glibc_2.27-4.debian.tar.xz 997996 SHA256:2dfae33f1cd5db452a6d3f699f46e2f7d3f8c01ad85028fa8db3fac6e8610d06
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.27-4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.27-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.27-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-3`
 
@@ -2456,21 +2462,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=0.9.8-1
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8-1.dsc' libunistring_0.9.8-1.dsc 2240 SHA256:9511879fc285637224302b95aed0a61f2f7356e26565257112e7ac34ed46360b
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8.orig.tar.xz' libunistring_0.9.8.orig.tar.xz 2029068 SHA256:7b9338cf52706facb2e18587dceda2fbc4a2a3519efa1e15a3f2a68193942f80
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8.orig.tar.xz.asc' libunistring_0.9.8.orig.tar.xz.asc 1355 SHA256:49a11d0261689b3fd03f3582e0b51e058e3a67c63aa6398f78cb4518dd0b0c21
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.8-1.debian.tar.xz' libunistring_0.9.8-1.debian.tar.xz 39968 SHA256:4dcecb5e7f604ff9a81cca935c63f8d7f4e17f1c76cde1e7c9e0a2cc0cd23be6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/0.9.8-1/
 
-- https://sources.debian.net/src/libunistring/0.9.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/0.9.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/0.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.5-1`
 
