@@ -441,20 +441,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2`
 - `LGPL-2 with exceptions`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=1.7.5-11+deb8u3
-'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u3.dsc' cups_1.7.5-11+deb8u3.dsc 3290 SHA256:19662c7556cb68c416ad0bdadcf308846eadec56ffca95908230e8fb54823959
-'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5.orig.tar.bz2' cups_1.7.5.orig.tar.bz2 8793338 SHA256:18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02
-'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u3.debian.tar.xz' cups_1.7.5-11+deb8u3.debian.tar.xz 305240 SHA256:4878e3c941f01e487cecf0f587b76db90b7a4de13aee8d96f1426b1f2f208adc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u3/
 
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.38.0-4+deb8u11`
 
