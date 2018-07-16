@@ -5,15 +5,28 @@
 -	[`mariadb:10`](#mariadb10)
 -	[`mariadb:10.0`](#mariadb100)
 -	[`mariadb:10.0.35`](#mariadb10035)
+-	[`mariadb:10.0.35-jessie`](#mariadb10035-jessie)
+-	[`mariadb:10.0-jessie`](#mariadb100-jessie)
 -	[`mariadb:10.1`](#mariadb101)
 -	[`mariadb:10.1.34`](#mariadb10134)
+-	[`mariadb:10.1.34-jessie`](#mariadb10134-jessie)
+-	[`mariadb:10.1-jessie`](#mariadb101-jessie)
 -	[`mariadb:10.2`](#mariadb102)
 -	[`mariadb:10.2.16`](#mariadb10216)
+-	[`mariadb:10.2.16-jessie`](#mariadb10216-jessie)
+-	[`mariadb:10.2-jessie`](#mariadb102-jessie)
 -	[`mariadb:10.3`](#mariadb103)
 -	[`mariadb:10.3.8`](#mariadb1038)
+-	[`mariadb:10.3.8-jessie`](#mariadb1038-jessie)
+-	[`mariadb:10.3-jessie`](#mariadb103-jessie)
+-	[`mariadb:10-jessie`](#mariadb10-jessie)
 -	[`mariadb:5`](#mariadb5)
 -	[`mariadb:5.5`](#mariadb55)
 -	[`mariadb:5.5.60`](#mariadb5560)
+-	[`mariadb:5.5.60-wheezy`](#mariadb5560-wheezy)
+-	[`mariadb:5.5-wheezy`](#mariadb55-wheezy)
+-	[`mariadb:5-wheezy`](#mariadb5-wheezy)
+-	[`mariadb:jessie`](#mariadbjessie)
 -	[`mariadb:latest`](#mariadblatest)
 
 ## `mariadb:10`
@@ -355,6 +368,14 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mariadb:10.0.35-jessie`
+
+**does not exist** (yet?)
+
+## `mariadb:10.0-jessie`
+
+**does not exist** (yet?)
+
 ## `mariadb:10.1`
 
 ```console
@@ -580,6 +601,14 @@ CMD ["mysqld"]
 		Last Modified: Tue, 26 Jun 2018 22:57:06 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mariadb:10.1.34-jessie`
+
+**does not exist** (yet?)
+
+## `mariadb:10.1-jessie`
+
+**does not exist** (yet?)
 
 ## `mariadb:10.2`
 
@@ -807,6 +836,14 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mariadb:10.2.16-jessie`
+
+**does not exist** (yet?)
+
+## `mariadb:10.2-jessie`
+
+**does not exist** (yet?)
+
 ## `mariadb:10.3`
 
 ```console
@@ -1032,6 +1069,18 @@ CMD ["mysqld"]
 		Last Modified: Wed, 04 Jul 2018 02:21:45 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mariadb:10.3.8-jessie`
+
+**does not exist** (yet?)
+
+## `mariadb:10.3-jessie`
+
+**does not exist** (yet?)
+
+## `mariadb:10-jessie`
+
+**does not exist** (yet?)
 
 ## `mariadb:5`
 
@@ -1371,6 +1420,22 @@ CMD ["mysqld"]
 		Last Modified: Tue, 26 Jun 2018 22:58:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mariadb:5.5.60-wheezy`
+
+**does not exist** (yet?)
+
+## `mariadb:5.5-wheezy`
+
+**does not exist** (yet?)
+
+## `mariadb:5-wheezy`
+
+**does not exist** (yet?)
+
+## `mariadb:jessie`
+
+**does not exist** (yet?)
 
 ## `mariadb:latest`
 
