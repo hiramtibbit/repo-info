@@ -1990,20 +1990,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.5.9-9.2
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.2.dsc' keyutils_1.5.9-9.2.dsc 2093 SHA256:41496f40742131ecb8ff0bb51df26989f58dc1c0698b85e04e9e30938e583709
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.2.debian.tar.xz' keyutils_1.5.9-9.2.debian.tar.xz 17848 SHA256:c137f4a426819253a9416177ffb1cf943691210b6910239779b82aa4c4714337
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.5.9-9.2/
 
-- https://sources.debian.net/src/keyutils/1.5.9-9.2/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.5.9-9.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.5.9-9.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `kmod=25-1`
 
@@ -3943,21 +3936,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.3-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.3-1.dsc' mesa_18.1.3-1.dsc 5097 SHA256:91d996e92dc3144d27b15a5bba94fee214abe2193917dacc64f4ebed16f8fa77
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.3.orig.tar.gz' mesa_18.1.3.orig.tar.gz 18881393 SHA256:2a1e36280d01ad18ba6d5b3fbd653ceaa109eaa031b78eb5dfaa4df452742b66
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.3.orig.tar.gz.asc' mesa_18.1.3.orig.tar.gz.asc 274 SHA256:b0c93c8ae201ba5f39fa39c0e568039085394af8ec96524f02839c9c8b000eaa
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.3-1.diff.gz' mesa_18.1.3-1.diff.gz 95570 SHA256:f0610c6b0d322ff029d6fd6b508ccc8b383e34b16f33db9b10cd086a679232c0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.3-1/
 
-- https://sources.debian.net/src/mesa/18.1.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-4`
 
