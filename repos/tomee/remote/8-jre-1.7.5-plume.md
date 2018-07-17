@@ -1,7 +1,7 @@
 ## `tomee:8-jre-1.7.5-plume`
 
 ```console
-$ docker pull tomee@sha256:59d02f40eb382a0b1c01b56725b7a11ed8d137e5521afec34d3b36398c86e5c9
+$ docker pull tomee@sha256:5394549c91612ef45ec758a6ed6a427f61c63a357a29be2c970358f1b2993f0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -123,107 +123,107 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-1.7.5-plume` - linux; arm variant v5
 
 ```console
-$ docker pull tomee@sha256:b6fa4221ffe79bce67c795b8a7f602d54eb215655a434e9fa93ef9776e13ed3c
+$ docker pull tomee@sha256:3147dea9e511dc4166e194fefab377f61472d76369851c9eb0049c0a72f7e432
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.0 MB (223009062 bytes)**  
+-	Total Size: **222.9 MB (222922897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bba8cff7246f075819bbd09b625bee3cbf52c1cd34306e8913a8c57994693945`
+-	Image ID: `sha256:76c72ff798ac74073372a596f1b4336044e09e023671676fce37acc08274557b`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Wed, 27 Jun 2018 08:53:37 GMT
-ADD file:d4d15d0259f3c83403f3d0565cbcd5c1d54e80367c46d9a05af1454c0d0e13ac in / 
-# Wed, 27 Jun 2018 08:53:37 GMT
+# Tue, 17 Jul 2018 08:55:48 GMT
+ADD file:bf9eafe81eb19079a2f2055b6727392afa823dfa125a4b1696537cf603115e52 in / 
+# Tue, 17 Jul 2018 08:55:49 GMT
 CMD ["bash"]
-# Wed, 27 Jun 2018 09:38:04 GMT
+# Tue, 17 Jul 2018 11:49:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 09:38:14 GMT
+# Tue, 17 Jul 2018 11:49:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 27 Jun 2018 12:35:46 GMT
+# Tue, 17 Jul 2018 12:43:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 12:35:46 GMT
+# Tue, 17 Jul 2018 12:43:03 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Jun 2018 12:35:49 GMT
+# Tue, 17 Jul 2018 12:43:04 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 27 Jun 2018 12:35:51 GMT
+# Tue, 17 Jul 2018 12:43:05 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 27 Jun 2018 12:35:52 GMT
+# Tue, 17 Jul 2018 12:43:06 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Wed, 27 Jun 2018 12:35:52 GMT
+# Tue, 17 Jul 2018 12:43:06 GMT
 ENV JAVA_VERSION=8u171
-# Wed, 27 Jun 2018 12:35:52 GMT
+# Tue, 17 Jul 2018 12:43:06 GMT
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-# Wed, 27 Jun 2018 12:35:53 GMT
+# Tue, 17 Jul 2018 12:43:06 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Wed, 27 Jun 2018 12:36:44 GMT
+# Tue, 17 Jul 2018 12:43:56 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 27 Jun 2018 12:36:50 GMT
+# Tue, 17 Jul 2018 12:44:02 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 27 Jun 2018 15:35:34 GMT
+# Tue, 17 Jul 2018 13:25:46 GMT
 ENV PATH=/usr/local/tomee/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Jun 2018 15:35:35 GMT
+# Tue, 17 Jul 2018 13:25:47 GMT
 RUN mkdir -p /usr/local/tomee
-# Wed, 27 Jun 2018 15:35:35 GMT
+# Tue, 17 Jul 2018 13:25:48 GMT
 WORKDIR /usr/local/tomee
-# Wed, 27 Jun 2018 15:35:35 GMT
+# Tue, 17 Jul 2018 13:25:48 GMT
 ENV GPG_KEYS=BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF 	223D3A74B068ECA354DC385CE126833F9CF64915 	7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF 	82D8419BA697F0E7FB85916EE91287822FDB81B1 	9056B710F1E332780DE7AF34CBAEBE39A46C4CA1 	A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1 	B7574789F5018690043E6DD9C212662E12F3E1DD 	B8B301E6105DF628076BD92C5483E55897ABD9B9 	DBCCD103B8B24F86FFAAB025C8BB472CD297D428 	F067B8140F5DD80E1D3B5D92318242FE9A0B1183 	FAA603D58B1BA4EDF65896D0ED340E0E6D545F97
-# Wed, 27 Jun 2018 15:35:40 GMT
+# Tue, 17 Jul 2018 13:25:53 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Wed, 27 Jun 2018 15:36:01 GMT
+# Tue, 17 Jul 2018 13:26:17 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-1.7.5/apache-tomee-1.7.5-plume.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL http://apache.rediris.es/tomee/tomee-1.7.5/apache-tomee-1.7.5-plume.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plume-1.7.5/* /usr/local/tomee 	&& rm -Rf apache-tomee-plume-1.7.5 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 27 Jun 2018 15:36:01 GMT
+# Tue, 17 Jul 2018 13:26:18 GMT
 EXPOSE 8080/tcp
-# Wed, 27 Jun 2018 15:36:01 GMT
+# Tue, 17 Jul 2018 13:26:18 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:d8a10c27f1911457fcf0131342ab203c0d98290ccb8731364e7f57f489cadcd4`  
-		Last Modified: Wed, 27 Jun 2018 09:02:36 GMT  
-		Size: 44.0 MB (44040132 bytes)  
+	-	`sha256:e0468d51364430736eb1d0d85f3dd880c4bebe4015787330b6c9227843acb4a6`  
+		Last Modified: Tue, 17 Jul 2018 09:08:05 GMT  
+		Size: 44.0 MB (44033063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac190b263215d7b1af43574c289285d9adca5216b1188d00cd5d71104d352db2`  
-		Last Modified: Wed, 27 Jun 2018 09:48:30 GMT  
-		Size: 9.8 MB (9842587 bytes)  
+	-	`sha256:0ad0b2352b28fea9acd0f76fa8814e168b15f21efe51602d644728d229d9bab9`  
+		Last Modified: Tue, 17 Jul 2018 12:02:04 GMT  
+		Size: 9.8 MB (9810102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2324a9fd4ad44784b0c5e6d4b25dd11d1cdb7ed900fbcf69c5aa74391a37a10`  
-		Last Modified: Wed, 27 Jun 2018 09:48:29 GMT  
-		Size: 4.2 MB (4153804 bytes)  
+	-	`sha256:864851e50dc1192bbdfa9be12666036d86148172f3ead845ee38c8033885580e`  
+		Last Modified: Tue, 17 Jul 2018 12:02:03 GMT  
+		Size: 4.2 MB (4153726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e667e3ddbea3ad46638cd1c07455b5a270ded007f17aaaac316495070ff2d31c`  
-		Last Modified: Wed, 27 Jun 2018 12:56:21 GMT  
-		Size: 846.1 KB (846058 bytes)  
+	-	`sha256:5835e5acfad7d56ae63ec170f3775123ea187c36c77147a58b1c8f77e944c094`  
+		Last Modified: Tue, 17 Jul 2018 12:56:10 GMT  
+		Size: 845.9 KB (845860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7df2097de4902e193e94d8dcc60b2ecb319963b50c3090b1cc7b8735292dd21a`  
-		Last Modified: Wed, 27 Jun 2018 12:56:21 GMT  
-		Size: 247.0 B  
+	-	`sha256:48ef3838b860ad2926373a0286edee0ed0209f0c88b9a118784b44620950df6b`  
+		Last Modified: Tue, 17 Jul 2018 12:56:10 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9f24cb5b0fca86faed493a4acbcf36f41c5b8c5636a4b9399966486a1b9b19e`  
-		Last Modified: Wed, 27 Jun 2018 12:56:21 GMT  
-		Size: 131.0 B  
+	-	`sha256:e0d09f94a09042fc2888b335d412166395678b9f17e6d701e4fed6ef5dc4e8a4`  
+		Last Modified: Tue, 17 Jul 2018 12:56:10 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:243fbb498fd74b410dcb29d222cbdd6102069a272efeaca4abc789cf6196fa7d`  
-		Last Modified: Wed, 27 Jun 2018 12:56:50 GMT  
-		Size: 111.9 MB (111902445 bytes)  
+	-	`sha256:2665b05a1829ed89b86aaf86d37b3e976afdaf372bb7010d059caaa9319656bf`  
+		Last Modified: Tue, 17 Jul 2018 12:56:37 GMT  
+		Size: 111.9 MB (111881554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72fe74a9cac620255d31ebd0dcd9bdcad40d2f10644dd712750108e8582a091d`  
-		Last Modified: Wed, 27 Jun 2018 12:56:21 GMT  
-		Size: 272.2 KB (272200 bytes)  
+	-	`sha256:65f81224ac9d1826fb3ab03a9719c9b63b3c04cdd299da6da4f619387dd8297d`  
+		Last Modified: Tue, 17 Jul 2018 12:56:10 GMT  
+		Size: 246.8 KB (246753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c13ff2b9cfd6e95638e0e56b9b536fcd72eb15ada4f311e4d8ad600b5aeb540d`  
-		Last Modified: Wed, 27 Jun 2018 15:40:50 GMT  
-		Size: 182.0 B  
+	-	`sha256:9d7843e2fd3d08dd66f832480a2d2af78580badda6131f5ce2d7606682ab09da`  
+		Last Modified: Tue, 17 Jul 2018 13:31:50 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4de3ede90e307a82c86eac1b75bc66e49aef62335e3e6d51b26683c51372a92`  
-		Last Modified: Wed, 27 Jun 2018 15:40:50 GMT  
-		Size: 26.9 KB (26863 bytes)  
+	-	`sha256:ed362021fb8ca40ea90f16f3c5ab2e29cb135e73ea38977de7bb15550f8cfff3`  
+		Last Modified: Tue, 17 Jul 2018 13:31:51 GMT  
+		Size: 26.8 KB (26849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:110958edfb0469785f2ad3d58bf2c0295d9c0f2f79b90aaa7198e92be86a8f9d`  
-		Last Modified: Wed, 27 Jun 2018 15:41:14 GMT  
-		Size: 51.9 MB (51924413 bytes)  
+	-	`sha256:f8e98c8251f562cbddd5f73dcdabb0a4dc1f2c773e2a2adfcdfd36bf2e8c9cc4`  
+		Last Modified: Tue, 17 Jul 2018 13:32:15 GMT  
+		Size: 51.9 MB (51924433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomee:8-jre-1.7.5-plume` - linux; arm variant v7

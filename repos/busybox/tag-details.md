@@ -22,7 +22,7 @@
 ## `busybox:1`
 
 ```console
-$ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6f77cbaad63fc2
+$ docker pull busybox@sha256:d21b79794850b4b15d8d332b451d95351d14c951542942a816eea69c9e04b240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30,6 +30,7 @@ $ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -111,6 +112,32 @@ CMD ["sh"]
 	-	`sha256:3de7e3894033b9df2faed9182c17e7376f2081a1b0a62a55779e3fa0b3d6d49d`  
 		Last Modified: Tue, 17 Jul 2018 07:49:34 GMT  
 		Size: 863.4 KB (863428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1` - linux; arm64 variant v8
@@ -220,7 +247,7 @@ CMD ["sh"]
 ## `busybox:1.29`
 
 ```console
-$ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6f77cbaad63fc2
+$ docker pull busybox@sha256:d21b79794850b4b15d8d332b451d95351d14c951542942a816eea69c9e04b240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -228,6 +255,7 @@ $ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -309,6 +337,32 @@ CMD ["sh"]
 	-	`sha256:3de7e3894033b9df2faed9182c17e7376f2081a1b0a62a55779e3fa0b3d6d49d`  
 		Last Modified: Tue, 17 Jul 2018 07:49:34 GMT  
 		Size: 863.4 KB (863428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29` - linux; arm64 variant v8
@@ -418,7 +472,7 @@ CMD ["sh"]
 ## `busybox:1.29.1`
 
 ```console
-$ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6f77cbaad63fc2
+$ docker pull busybox@sha256:d21b79794850b4b15d8d332b451d95351d14c951542942a816eea69c9e04b240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -426,6 +480,7 @@ $ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -507,6 +562,32 @@ CMD ["sh"]
 	-	`sha256:3de7e3894033b9df2faed9182c17e7376f2081a1b0a62a55779e3fa0b3d6d49d`  
 		Last Modified: Tue, 17 Jul 2018 07:49:34 GMT  
 		Size: 863.4 KB (863428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29.1` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29.1` - linux; arm64 variant v8
@@ -616,13 +697,14 @@ CMD ["sh"]
 ## `busybox:1.29.1-glibc`
 
 ```console
-$ docker pull busybox@sha256:85aa9ca5c270a61d900bdff6253f0a933349050aa2f0797830f89c4177af41a2
+$ docker pull busybox@sha256:e1163368590cd2685a4f6eb2de3f1d8267a5935bd5b22c3d472548737cc7ab09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -678,6 +760,32 @@ CMD ["sh"]
 	-	`sha256:e55f3dcf9d89907fb93e4b05d44c56d7797c79b98fe1f8201c7e53a6481ceebb`  
 		Last Modified: Tue, 17 Jul 2018 08:50:05 GMT  
 		Size: 2.0 MB (1967360 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29.1-glibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:6ae5c53e51bf4fb2ac3a5567491bfcaa422c72a1ea3a24f9a83ad5ee158fd936
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.7 MB (1708908 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d5eaafb7f8df09f8f950cb7e93b2f8a254eefa4f6293b11a14eec3dc2663eedd`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:58:03 GMT
+ADD file:6cd114d43edd585dfbda058e758e31c3d6cf4b30ffc4cab94ab7d93f259d88cc in / 
+# Tue, 17 Jul 2018 11:58:09 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:6b173c72e44c1e7b1f1b54f0b750606bca44cb72d2cc417c0b8fe25492c87f98`  
+		Last Modified: Tue, 17 Jul 2018 11:59:15 GMT  
+		Size: 1.7 MB (1708908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29.1-glibc` - linux; arm64 variant v8
@@ -958,13 +1066,14 @@ CMD ["sh"]
 ## `busybox:1.29.1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:3ffbab90e783eebaa1f6cce2a1eb2d75e0240ec4e424dc8b6baedac6845fdf29
+$ docker pull busybox@sha256:0806aea8da8ffbb5ce91858917abca0ee711e8af4bd79bd19f21754f5e2837d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
@@ -1018,6 +1127,32 @@ CMD ["sh"]
 	-	`sha256:b4f45fb2b1d01c55a010dc4585efa7c58022437c15734b329df6afdd7670005b`  
 		Last Modified: Tue, 17 Jul 2018 08:49:18 GMT  
 		Size: 712.4 KB (712442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29.1-uclibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29.1-uclibc` - linux; arm64 variant v8
@@ -1075,13 +1210,14 @@ CMD ["sh"]
 ## `busybox:1.29-glibc`
 
 ```console
-$ docker pull busybox@sha256:85aa9ca5c270a61d900bdff6253f0a933349050aa2f0797830f89c4177af41a2
+$ docker pull busybox@sha256:e1163368590cd2685a4f6eb2de3f1d8267a5935bd5b22c3d472548737cc7ab09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -1137,6 +1273,32 @@ CMD ["sh"]
 	-	`sha256:e55f3dcf9d89907fb93e4b05d44c56d7797c79b98fe1f8201c7e53a6481ceebb`  
 		Last Modified: Tue, 17 Jul 2018 08:50:05 GMT  
 		Size: 2.0 MB (1967360 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29-glibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:6ae5c53e51bf4fb2ac3a5567491bfcaa422c72a1ea3a24f9a83ad5ee158fd936
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.7 MB (1708908 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d5eaafb7f8df09f8f950cb7e93b2f8a254eefa4f6293b11a14eec3dc2663eedd`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:58:03 GMT
+ADD file:6cd114d43edd585dfbda058e758e31c3d6cf4b30ffc4cab94ab7d93f259d88cc in / 
+# Tue, 17 Jul 2018 11:58:09 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:6b173c72e44c1e7b1f1b54f0b750606bca44cb72d2cc417c0b8fe25492c87f98`  
+		Last Modified: Tue, 17 Jul 2018 11:59:15 GMT  
+		Size: 1.7 MB (1708908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29-glibc` - linux; arm64 variant v8
@@ -1417,13 +1579,14 @@ CMD ["sh"]
 ## `busybox:1.29-uclibc`
 
 ```console
-$ docker pull busybox@sha256:3ffbab90e783eebaa1f6cce2a1eb2d75e0240ec4e424dc8b6baedac6845fdf29
+$ docker pull busybox@sha256:0806aea8da8ffbb5ce91858917abca0ee711e8af4bd79bd19f21754f5e2837d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
@@ -1477,6 +1640,32 @@ CMD ["sh"]
 	-	`sha256:b4f45fb2b1d01c55a010dc4585efa7c58022437c15734b329df6afdd7670005b`  
 		Last Modified: Tue, 17 Jul 2018 08:49:18 GMT  
 		Size: 712.4 KB (712442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1.29-uclibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1.29-uclibc` - linux; arm64 variant v8
@@ -1534,13 +1723,14 @@ CMD ["sh"]
 ## `busybox:1-glibc`
 
 ```console
-$ docker pull busybox@sha256:85aa9ca5c270a61d900bdff6253f0a933349050aa2f0797830f89c4177af41a2
+$ docker pull busybox@sha256:e1163368590cd2685a4f6eb2de3f1d8267a5935bd5b22c3d472548737cc7ab09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -1596,6 +1786,32 @@ CMD ["sh"]
 	-	`sha256:e55f3dcf9d89907fb93e4b05d44c56d7797c79b98fe1f8201c7e53a6481ceebb`  
 		Last Modified: Tue, 17 Jul 2018 08:50:05 GMT  
 		Size: 2.0 MB (1967360 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1-glibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:6ae5c53e51bf4fb2ac3a5567491bfcaa422c72a1ea3a24f9a83ad5ee158fd936
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.7 MB (1708908 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d5eaafb7f8df09f8f950cb7e93b2f8a254eefa4f6293b11a14eec3dc2663eedd`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:58:03 GMT
+ADD file:6cd114d43edd585dfbda058e758e31c3d6cf4b30ffc4cab94ab7d93f259d88cc in / 
+# Tue, 17 Jul 2018 11:58:09 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:6b173c72e44c1e7b1f1b54f0b750606bca44cb72d2cc417c0b8fe25492c87f98`  
+		Last Modified: Tue, 17 Jul 2018 11:59:15 GMT  
+		Size: 1.7 MB (1708908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-glibc` - linux; arm64 variant v8
@@ -1876,13 +2092,14 @@ CMD ["sh"]
 ## `busybox:1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:3ffbab90e783eebaa1f6cce2a1eb2d75e0240ec4e424dc8b6baedac6845fdf29
+$ docker pull busybox@sha256:0806aea8da8ffbb5ce91858917abca0ee711e8af4bd79bd19f21754f5e2837d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
@@ -1936,6 +2153,32 @@ CMD ["sh"]
 	-	`sha256:b4f45fb2b1d01c55a010dc4585efa7c58022437c15734b329df6afdd7670005b`  
 		Last Modified: Tue, 17 Jul 2018 08:49:18 GMT  
 		Size: 712.4 KB (712442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:1-uclibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-uclibc` - linux; arm64 variant v8
@@ -1993,13 +2236,14 @@ CMD ["sh"]
 ## `busybox:glibc`
 
 ```console
-$ docker pull busybox@sha256:85aa9ca5c270a61d900bdff6253f0a933349050aa2f0797830f89c4177af41a2
+$ docker pull busybox@sha256:e1163368590cd2685a4f6eb2de3f1d8267a5935bd5b22c3d472548737cc7ab09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -2055,6 +2299,32 @@ CMD ["sh"]
 	-	`sha256:e55f3dcf9d89907fb93e4b05d44c56d7797c79b98fe1f8201c7e53a6481ceebb`  
 		Last Modified: Tue, 17 Jul 2018 08:50:05 GMT  
 		Size: 2.0 MB (1967360 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:glibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:6ae5c53e51bf4fb2ac3a5567491bfcaa422c72a1ea3a24f9a83ad5ee158fd936
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.7 MB (1708908 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d5eaafb7f8df09f8f950cb7e93b2f8a254eefa4f6293b11a14eec3dc2663eedd`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:58:03 GMT
+ADD file:6cd114d43edd585dfbda058e758e31c3d6cf4b30ffc4cab94ab7d93f259d88cc in / 
+# Tue, 17 Jul 2018 11:58:09 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:6b173c72e44c1e7b1f1b54f0b750606bca44cb72d2cc417c0b8fe25492c87f98`  
+		Last Modified: Tue, 17 Jul 2018 11:59:15 GMT  
+		Size: 1.7 MB (1708908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:glibc` - linux; arm64 variant v8
@@ -2164,7 +2434,7 @@ CMD ["sh"]
 ## `busybox:latest`
 
 ```console
-$ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6f77cbaad63fc2
+$ docker pull busybox@sha256:d21b79794850b4b15d8d332b451d95351d14c951542942a816eea69c9e04b240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2172,6 +2442,7 @@ $ docker pull busybox@sha256:aede3c55c4ce0a47cdf2299d33d63fd421f74b0365edd4f4da6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
@@ -2253,6 +2524,32 @@ CMD ["sh"]
 	-	`sha256:3de7e3894033b9df2faed9182c17e7376f2081a1b0a62a55779e3fa0b3d6d49d`  
 		Last Modified: Tue, 17 Jul 2018 07:49:34 GMT  
 		Size: 863.4 KB (863428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:latest` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:latest` - linux; arm64 variant v8
@@ -2533,13 +2830,14 @@ CMD ["sh"]
 ## `busybox:uclibc`
 
 ```console
-$ docker pull busybox@sha256:3ffbab90e783eebaa1f6cce2a1eb2d75e0240ec4e424dc8b6baedac6845fdf29
+$ docker pull busybox@sha256:0806aea8da8ffbb5ce91858917abca0ee711e8af4bd79bd19f21754f5e2837d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
@@ -2593,6 +2891,32 @@ CMD ["sh"]
 	-	`sha256:b4f45fb2b1d01c55a010dc4585efa7c58022437c15734b329df6afdd7670005b`  
 		Last Modified: Tue, 17 Jul 2018 08:49:18 GMT  
 		Size: 712.4 KB (712442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:uclibc` - linux; arm variant v7
+
+```console
+$ docker pull busybox@sha256:05831d5485384f8aee886c4773684b6b68114d6fabf3c244bbff1f5579da2729
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **681.8 KB (681783 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e5059acd614fef8bcc561190c76f93009f6a125d966f59aa981874b83fec98e5`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 11:57:39 GMT
+ADD file:1f21c472b55a12e2064437c3bc6187bc2b0196f4e79a8cc627f0446b3e427b44 in / 
+# Tue, 17 Jul 2018 11:57:39 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:f2a233543dfec794586554b869659f42b8a372dab31797707359adbe19060c65`  
+		Last Modified: Tue, 17 Jul 2018 11:58:28 GMT  
+		Size: 681.8 KB (681783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:uclibc` - linux; arm64 variant v8
