@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:77d416457bce4a905c8117a4f06092e4c45c5e4ee24b8c7b467605770e3305d5`
-- Created: `2018-06-27T08:45:18.165761274Z`
-- Virtual Size: ~ 280.75 Mb  
+- Image ID: `sha256:1ad3b479127e9c11a020a12d3adb911414824633dcfbcc29f5b51333473031d4`
+- Created: `2018-07-17T02:30:44.247777243Z`
+- Virtual Size: ~ 280.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -1014,11 +1014,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u4`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u5`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u4`
+- `libgcrypt20:amd64=1.6.3-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1028,17 +1028,17 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u4
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.dsc' libgcrypt20_1.6.3-2+deb8u4.dsc 2587 SHA256:5e7816a66d609cd07c15c3e2e55c4c09b11592260a463f36d9bd4f5bc90ce02f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz 35372 SHA256:36d11626006bcc4376659575780c2a28ff3a2fdca70b01944d4179716c9838f6
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.dsc' libgcrypt20_1.6.3-2+deb8u5.dsc 2587 SHA256:5c7506fe755e1dd79bb7dd0a7cf9d563e3f0a0ff48ea8755b6cf9bbb148f67ce
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz 36168 SHA256:cf1bb49de501c98845c44cd002e09f0f51a7b3fce70f9ff0377989fbb1d41f34
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -1329,11 +1329,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.56-1+deb8u1`
+### `dpkg` source package: `linux=3.16.57-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.56-1+deb8u1`
+- `linux-libc-dev:amd64=3.16.57-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1344,17 +1344,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.56-1+deb8u1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.56-1+deb8u1.dsc' linux_3.16.56-1+deb8u1.dsc 140677 SHA256:ab00d6d4d59323e9c7d616d0d2b6a0000f295be792c3f7796cb96d3cb6f09e4d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.56.orig.tar.xz' linux_3.16.56.orig.tar.xz 81885080 SHA256:e1bde0867495ce859568b2cad613203491c080c94fae05d67a03a05697f099aa
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.56-1+deb8u1.debian.tar.xz' linux_3.16.56-1+deb8u1.debian.tar.xz 2439544 SHA256:43528c1eddf22e1920f86f4898d8b1122adc139a2836eaa838246536c38c3bfa
+$ apt-get source -qq --print-uris linux=3.16.57-2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.dsc' linux_3.16.57-2.dsc 140649 SHA256:0a0a4e412693fbf7800dddf8cf382aeaeb8ba017894ae3c110ea8e289458b08a
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57.orig.tar.xz' linux_3.16.57.orig.tar.xz 81996408 SHA256:6cfda4ea8a54816233731a14ec3c586c241b85a935dcb987ab8a82b3d0ddbf51
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.debian.tar.xz' linux_3.16.57-2.debian.tar.xz 2495628 SHA256:4b45cb2df3d86288e7f3ee7a96db2aacf5cf6127c74e69f50155f5c51bdd236f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.56-1+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.56-1+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.56-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.57-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.57-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.57-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
