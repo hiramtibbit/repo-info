@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc47edac5681300ffa4a913ec55c7f25a08eee902e032dda9d75256d91b8d290`
-- Created: `2018-06-27T09:09:11.902849622Z`
-- Virtual Size: ~ 538.78 Mb  
+- Image ID: `sha256:c7e0b22c8286880729bcbcd00b2516210691c884cb38aa15188297b889405e7a`
+- Created: `2018-07-17T11:57:08.063717794Z`
+- Virtual Size: ~ 543.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -415,23 +415,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20130119+deb7u2`
+### `dpkg` source package: `ca-certificates=20130119+deb7u3`
 
 Binary Packages:
 
-- `ca-certificates=20130119+deb7u2`
+- `ca-certificates=20130119+deb7u3`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20130119+deb7u3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.dsc' ca-certificates_20130119+deb7u3.dsc 1782 SHA256:040b3562f105a283d38cbbafb5eec14034dd9c15297b9048c58490caeb69b0c3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.tar.gz' ca-certificates_20130119+deb7u3.tar.gz 315141 SHA256:dc93e0ff5f0a3b16ac091de3f75cdd31b82e3bb2fd031177225010d0370b4a44
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.12.2-3+deb7u1`
 
@@ -778,8 +784,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `dpkg=1.16.18`
+- `dpkg-dev=1.16.18`
+- `libdpkg-perl=1.16.18`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
 - `GPL`
 
@@ -2675,6 +2683,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libthai/0.1.18-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libthai/0.1.18-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libtimedate-perl=1.2000-1`
+
+Binary Packages:
+
+- `libtimedate-perl=1.2000-1`
+
+Licenses: (parsed from: `/usr/share/doc/libtimedate-perl/copyright`)
+
+- `Artistic`
+- `GPL`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libtimedate-perl=1.2000-1
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000-1.dsc' libtimedate-perl_1.2000-1.dsc 2038 SHA256:5f9dd2a1a03d0578b34aa6cdfad62c7f82b498f48b16262eb11e21c1246b6936
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000.orig.tar.gz' libtimedate-perl_1.2000.orig.tar.gz 29590 SHA256:f8251a791f6692c69952b4af697c01df93981ad1ab133279d034656a03cd3755
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000-1.diff.gz' libtimedate-perl_1.2000-1.diff.gz 3885 SHA256:ed1942ceecb6c2d08fb7e3bb77b3e8f6ebdc0a2446e33ed0345c8d1f674eec30
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libtimedate-perl/1.2000-1/ (for browsing the source)
+- https://sources.debian.net/src/libtimedate-perl/1.2000-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtimedate-perl/1.2000-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libtool=2.4.2-1.1`
 
 Binary Packages:
@@ -2996,6 +3031,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libxss-dev:amd64=1:1.2.2-1`
 - `libxss1:amd64=1:1.2.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -4165,6 +4201,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `tcl8.5=8.5.11-2`
+- `tcl8.5-dev=8.5.11-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4190,9 +4227,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `tcl=8.5.0-2.1`
+- `tcl-dev=8.5.0-2.1`
 - `tk=8.5.0-2.1`
+- `tk-dev=8.5.0-2.1`
 
-Licenses: (parsed from: `/usr/share/doc/tcl/copyright`, `/usr/share/doc/tk/copyright`)
+Licenses: (parsed from: `/usr/share/doc/tcl/copyright`, `/usr/share/doc/tcl-dev/copyright`, `/usr/share/doc/tk/copyright`, `/usr/share/doc/tk-dev/copyright`)
 
 - `GPL`
 
@@ -4242,6 +4281,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `tk8.5=8.5.11-2`
+- `tk8.5-dev=8.5.11-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4523,6 +4563,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/x11proto-render/2:0.11.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/x11proto-render/2:0.11.1-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `x11proto-scrnsaver=1.2.2-1`
+
+Binary Packages:
+
+- `x11proto-scrnsaver-dev=1.2.2-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris x11proto-scrnsaver=1.2.2-1
+'http://deb.debian.org/debian/pool/main/x/x11proto-scrnsaver/x11proto-scrnsaver_1.2.2-1.dsc' x11proto-scrnsaver_1.2.2-1.dsc 2119 SHA256:7cfe2ada6c501843dfb3f48469aadbd366e4232f73eb40daaaa141e0ac1cda37
+'http://deb.debian.org/debian/pool/main/x/x11proto-scrnsaver/x11proto-scrnsaver_1.2.2.orig.tar.gz' x11proto-scrnsaver_1.2.2.orig.tar.gz 148135 SHA256:d8dee19c52977f65af08fad6aa237bacee11bc5a33e1b9b064e8ac1fd99d6e79
+'http://deb.debian.org/debian/pool/main/x/x11proto-scrnsaver/x11proto-scrnsaver_1.2.2-1.diff.gz' x11proto-scrnsaver_1.2.2-1.diff.gz 14371 SHA256:580c2e138a2908da898338403e76e1d16fd2e81cf07328977f62346bd6d6169f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/x11proto-scrnsaver/1.2.2-1/ (for browsing the source)
+- https://sources.debian.net/src/x11proto-scrnsaver/1.2.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/x11proto-scrnsaver/1.2.2-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `x11proto-xext=7.2.1-1`
 
 Binary Packages:
@@ -4552,6 +4617,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libxft-dev=2.3.1-1`
 - `libxft2:amd64=2.3.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
