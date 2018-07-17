@@ -1,7 +1,7 @@
 ## `gradle:jdk-slim`
 
 ```console
-$ docker pull gradle@sha256:d30c9350f9dd0f5814eca79a3c1fcea83bcc3eb75fe6398b86e74e2652e75082
+$ docker pull gradle@sha256:6f53bf9e53b97ea0f2d78aa2a766cc371c7fda246e8ccff9574d0d72c1ce88fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -617,99 +617,99 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 ### `gradle:jdk-slim` - linux; s390x
 
 ```console
-$ docker pull gradle@sha256:f64b98b38816abe044007124859b68fe82a697c80c4559e92a0715a1b6a2dbf0
+$ docker pull gradle@sha256:0c49dfef3c6f8dbd313068e7735943ac106b5f4201b5e45fea5a458ade0fc8e6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.1 MB (157051891 bytes)**  
+-	Total Size: **157.0 MB (156961894 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da95f2c516459ab2d47b91d6787d4b024ff072270b8b186cffe7b8dc1c015e4`
+-	Image ID: `sha256:f562697a66551ec7ce50300b79443ee394ed7cbf67235d7c8d30ce8d86b95449`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Wed, 27 Jun 2018 11:48:52 GMT
-ADD file:30e8aac3f01e5ddc9493a0fac1c0978b9435ab33031d2af05afca0f9cb7eb71f in / 
-# Wed, 27 Jun 2018 11:48:52 GMT
+# Tue, 17 Jul 2018 11:43:35 GMT
+ADD file:32e6375c708c1a29a33eef651992d744ae278ef980cfb74086bc899cb8fffdfb in / 
+# Tue, 17 Jul 2018 11:43:36 GMT
 CMD ["bash"]
-# Wed, 27 Jun 2018 13:56:48 GMT
+# Tue, 17 Jul 2018 12:06:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 13:56:49 GMT
+# Tue, 17 Jul 2018 12:06:28 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Jun 2018 13:56:49 GMT
+# Tue, 17 Jul 2018 12:06:29 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 27 Jun 2018 13:56:50 GMT
+# Tue, 17 Jul 2018 12:06:30 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 27 Jun 2018 13:56:50 GMT
+# Tue, 17 Jul 2018 12:06:30 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 27 Jun 2018 13:56:50 GMT
+# Tue, 17 Jul 2018 12:06:30 GMT
 ENV JAVA_VERSION=8u171
-# Wed, 27 Jun 2018 13:56:51 GMT
+# Tue, 17 Jul 2018 12:06:30 GMT
 ENV JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-# Wed, 27 Jun 2018 13:56:51 GMT
+# Tue, 17 Jul 2018 12:06:31 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Wed, 27 Jun 2018 13:57:16 GMT
+# Tue, 17 Jul 2018 12:06:58 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 27 Jun 2018 13:57:19 GMT
+# Tue, 17 Jul 2018 12:07:03 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 30 Jun 2018 11:43:01 GMT
+# Tue, 17 Jul 2018 15:01:22 GMT
 CMD ["gradle"]
-# Sat, 30 Jun 2018 11:43:01 GMT
+# Tue, 17 Jul 2018 15:01:23 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Sat, 30 Jun 2018 11:43:01 GMT
+# Tue, 17 Jul 2018 15:01:23 GMT
 ENV GRADLE_VERSION=4.8.1
-# Sat, 30 Jun 2018 11:43:06 GMT
+# Tue, 17 Jul 2018 15:01:27 GMT
 RUN apt-get update && 	apt-get install -y --no-install-recommends 		unzip 		wget && 	rm -rf /var/lib/apt/lists/*
-# Sat, 30 Jun 2018 11:43:07 GMT
+# Tue, 17 Jul 2018 15:01:27 GMT
 ARG GRADLE_DOWNLOAD_SHA256=af334d994b5e69e439ab55b5d2b7d086da5ea6763d78054f49f147b06370ed71
-# Sat, 30 Jun 2018 11:43:10 GMT
+# Tue, 17 Jul 2018 15:01:31 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=af334d994b5e69e439ab55b5d2b7d086da5ea6763d78054f49f147b06370ed71
 RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle 		&& echo "Symlinking root Gradle cache to gradle Gradle cache" 	&& ln -s /home/gradle/.gradle /root/.gradle
-# Sat, 30 Jun 2018 11:43:10 GMT
+# Tue, 17 Jul 2018 15:01:31 GMT
 USER [gradle]
-# Sat, 30 Jun 2018 11:43:10 GMT
+# Tue, 17 Jul 2018 15:01:32 GMT
 VOLUME [/home/gradle/.gradle]
-# Sat, 30 Jun 2018 11:43:10 GMT
+# Tue, 17 Jul 2018 15:01:32 GMT
 WORKDIR /home/gradle
-# Sat, 30 Jun 2018 11:43:13 GMT
+# Tue, 17 Jul 2018 15:01:34 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=af334d994b5e69e439ab55b5d2b7d086da5ea6763d78054f49f147b06370ed71
 RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
 ```
 
 -	Layers:
-	-	`sha256:1c23a44ac305da2d34995cf30530ba5adce0229e4a70678fd4d25384883b1281`  
-		Last Modified: Wed, 27 Jun 2018 11:53:41 GMT  
-		Size: 22.3 MB (22349871 bytes)  
+	-	`sha256:f27811d943553766d4449683ea06b6eac1147fe5de5663e94d39150eb2180735`  
+		Last Modified: Tue, 17 Jul 2018 11:47:07 GMT  
+		Size: 22.3 MB (22334517 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98864f72d2f50de28cbc4c21989e206ade45beee445470d5998e020e706a28b8`  
-		Last Modified: Wed, 27 Jun 2018 14:06:32 GMT  
-		Size: 465.7 KB (465712 bytes)  
+	-	`sha256:1c2694fc3ff6a3c4f4d763d513c5c736ebb40c309940a78d32a1e7316f2a1e66`  
+		Last Modified: Tue, 17 Jul 2018 12:15:02 GMT  
+		Size: 465.8 KB (465754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80055cec33c71631fdda816b6a3a1287ebde60cf763f4769406656a2b09f85fd`  
-		Last Modified: Wed, 27 Jun 2018 14:06:31 GMT  
-		Size: 248.0 B  
+	-	`sha256:611a9d1fe5445ffae9bcc89d406f64a2bf2552772d06f33e3bed02b6b3a37443`  
+		Last Modified: Tue, 17 Jul 2018 12:15:02 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98774c95b6812a87cdf99c9c16d8b0f3dcf5cb9337e8659fb4d3d3ae8db7bc2e`  
-		Last Modified: Wed, 27 Jun 2018 14:06:32 GMT  
-		Size: 132.0 B  
+	-	`sha256:63b0cb7f2711fa5d57e82080787031b4539666474ed36cff3c426256535095b1`  
+		Last Modified: Tue, 17 Jul 2018 12:15:02 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5275da8820f1c0886960508213dff0c972b4b47fa3f0cf6913fff71263e71210`  
-		Last Modified: Wed, 27 Jun 2018 14:06:41 GMT  
-		Size: 57.0 MB (56978537 bytes)  
+	-	`sha256:410f4c6596179777a5c88259490dde6b36e151845099b2b56cfdb3f60ad4e336`  
+		Last Modified: Tue, 17 Jul 2018 12:15:11 GMT  
+		Size: 56.9 MB (56929705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:168d95102f02ea122c7368761d0675d79ac11e9923cbcb65f7a80f910e00ecba`  
-		Last Modified: Wed, 27 Jun 2018 14:06:32 GMT  
-		Size: 272.2 KB (272162 bytes)  
+	-	`sha256:214ad0fe4621b802ef5bb87af51e5c8fc11031f9b0da186d72dee155cb2f5be5`  
+		Last Modified: Tue, 17 Jul 2018 12:15:02 GMT  
+		Size: 246.7 KB (246686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee4c14091306ca4c38fd9a124b56232764107aede7a483601187cc243f82837e`  
-		Last Modified: Sat, 30 Jun 2018 11:44:47 GMT  
-		Size: 1.1 MB (1109611 bytes)  
+	-	`sha256:95bdaed88fe4686ea14e6d3ac9e21cf7baad3692469bf54cc39d360edd2339ee`  
+		Last Modified: Tue, 17 Jul 2018 15:05:07 GMT  
+		Size: 1.1 MB (1109185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4105d07555ceaaeb70a4be26aa980f46730c6786515f054792f6e4af298bd3c`  
-		Last Modified: Sat, 30 Jun 2018 11:45:27 GMT  
-		Size: 75.9 MB (75875409 bytes)  
+	-	`sha256:4a8d285ebb85c25722a8207e9f1e63510059add1b9959689c8b6740425018c0e`  
+		Last Modified: Tue, 17 Jul 2018 15:05:12 GMT  
+		Size: 75.9 MB (75875460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4ca1e75eec19b5240585d0573ceaa2306469471bbc9196b84a44aa6f0a28c84`  
-		Last Modified: Sat, 30 Jun 2018 11:44:47 GMT  
+	-	`sha256:f4effb910b3ab017daa45bd8e3d5d0674cb1fda125fc4c9f53c7da3dc243a204`  
+		Last Modified: Tue, 17 Jul 2018 15:05:06 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
