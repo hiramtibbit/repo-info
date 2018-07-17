@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:385fdbb0b4d8dbcb4e3771c83057ec84ed59d981e8b947985697d9f9f68e1b52`
-- Created: `2018-06-26T22:10:55.202086508Z`
-- Virtual Size: ~ 291.01 Mb  
+- Image ID: `sha256:c0d0f2f766de298a8e67d5f37e654d278615f25537bb28c520bb15e8b657ad7c`
+- Created: `2018-07-17T03:06:27.966327916Z`
+- Virtual Size: ~ 290.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -319,11 +319,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzr/2.6.0+bzr6595-6+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzr/2.6.0+bzr6595-6+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20141019+deb8u3`
+### `dpkg` source package: `ca-certificates=20141019+deb8u4`
 
 Binary Packages:
 
-- `ca-certificates=20141019+deb8u3`
+- `ca-certificates=20141019+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -334,16 +334,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u3
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.dsc' ca-certificates_20141019+deb8u3.dsc 1779 SHA256:00d74f6be7cdae6be14b97f0a0c7d98e6050fcf09044d2f0f637cf1a985b1234
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.tar.xz' ca-certificates_20141019+deb8u3.tar.xz 299472 SHA256:d6c6244b47b96ae9b718e4c1f3b6dc3487a455a31aeae70573361f313bc532a8
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.dsc' ca-certificates_20141019+deb8u4.dsc 1754 SHA256:4f2bec1a926ff2be32571ef25fddaaf3656cfe28a040efa96ffc493194930b43
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.tar.xz' ca-certificates_20141019+deb8u4.tar.xz 248648 SHA256:12af9462236667ee617e34a4befb447bb9519dceefc76190a62bc16343f27650
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.192`
 
@@ -1444,11 +1444,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u4`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u5`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u4`
+- `libgcrypt20:amd64=1.6.3-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1458,17 +1458,17 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u4
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.dsc' libgcrypt20_1.6.3-2+deb8u4.dsc 2587 SHA256:5e7816a66d609cd07c15c3e2e55c4c09b11592260a463f36d9bd4f5bc90ce02f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz 35372 SHA256:36d11626006bcc4376659575780c2a28ff3a2fdca70b01944d4179716c9838f6
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.dsc' libgcrypt20_1.6.3-2+deb8u5.dsc 2587 SHA256:5c7506fe755e1dd79bb7dd0a7cf9d563e3f0a0ff48ea8755b6cf9bbb148f67ce
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz 36168 SHA256:cf1bb49de501c98845c44cd002e09f0f51a7b3fce70f9ff0377989fbb1d41f34
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -1897,12 +1897,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=3.1.2-2+deb8u4`
+### `dpkg` source package: `mercurial=3.1.2-2+deb8u5`
 
 Binary Packages:
 
-- `mercurial=3.1.2-2+deb8u4`
-- `mercurial-common=3.1.2-2+deb8u4`
+- `mercurial=3.1.2-2+deb8u5`
+- `mercurial-common=3.1.2-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -1912,17 +1912,17 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u4
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.1.2-2+deb8u4.dsc' mercurial_3.1.2-2+deb8u4.dsc 2287 SHA256:740fdb848ff4ab80028cef06e0402d0e30b26c2614c5b6a5a9a16533011c165d
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.1.2.orig.tar.gz' mercurial_3.1.2.orig.tar.gz 3983825 SHA256:5dbe5ceb3707e378528dc9346af280919760aa1a8bcc27be12c1fe2bafa78d3a
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.1.2-2+deb8u4.debian.tar.xz' mercurial_3.1.2-2+deb8u4.debian.tar.xz 59220 SHA256:4e84c829f960516f058ffe85d205b96a3b23123d6c3268f251d1a558239fb889
+$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.dsc' mercurial_3.1.2-2+deb8u5.dsc 1942 SHA256:40105a4095a8f107cb9eaf9029c4a701bfec810d70dbfe6bf9a18e872bc81f47
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2.orig.tar.gz' mercurial_3.1.2.orig.tar.gz 3983825 SHA256:5dbe5ceb3707e378528dc9346af280919760aa1a8bcc27be12c1fe2bafa78d3a
+'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.debian.tar.xz' mercurial_3.1.2-2+deb8u5.debian.tar.xz 72512 SHA256:a78cae21139e98a7bc689b0490ad8c087761fb5bd03406090010f308f36c1455
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.58`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34be40996aea075e51c596a8fc5be5b59822de3cb457e4f72295caa58e84f5d0`
-- Created: `2018-06-26T22:20:37.429422532Z`
-- Virtual Size: ~ 210.07 Mb  
+- Image ID: `sha256:947c1ed9fb478db6d97c056be6a99f068f1f7e7d9cabd1f5ee944d9ec0bcb505`
+- Created: `2018-07-17T03:24:16.921376229Z`
+- Virtual Size: ~ 210.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -291,23 +291,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20130119+deb7u2`
+### `dpkg` source package: `ca-certificates=20130119+deb7u3`
 
 Binary Packages:
 
-- `ca-certificates=20130119+deb7u2`
+- `ca-certificates=20130119+deb7u3`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20130119+deb7u3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.dsc' ca-certificates_20130119+deb7u3.dsc 1782 SHA256:040b3562f105a283d38cbbafb5eec14034dd9c15297b9048c58490caeb69b0c3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.tar.gz' ca-certificates_20130119+deb7u3.tar.gz 315141 SHA256:dc93e0ff5f0a3b16ac091de3f75cdd31b82e3bb2fd031177225010d0370b4a44
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `configobj=4.7.2+ds-4`
 

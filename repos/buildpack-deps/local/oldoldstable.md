@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c26b4870857d65531bb7ff2aff676a2db32bdf11d0dabcfebce54f6154c4153a`
-- Created: `2018-06-26T22:21:51.0691298Z`
-- Virtual Size: ~ 468.67 Mb  
+- Image ID: `sha256:616e350d4d871d840bef12e9846de6d5708b7a27ea219b93a03b8aeda9f97936`
+- Created: `2018-07-17T03:25:46.654534164Z`
+- Virtual Size: ~ 468.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -410,23 +410,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20130119+deb7u2`
+### `dpkg` source package: `ca-certificates=20130119+deb7u3`
 
 Binary Packages:
 
-- `ca-certificates=20130119+deb7u2`
+- `ca-certificates=20130119+deb7u3`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20130119+deb7u3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.dsc' ca-certificates_20130119+deb7u3.dsc 1782 SHA256:040b3562f105a283d38cbbafb5eec14034dd9c15297b9048c58490caeb69b0c3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.tar.gz' ca-certificates_20130119+deb7u3.tar.gz 315141 SHA256:dc93e0ff5f0a3b16ac091de3f75cdd31b82e3bb2fd031177225010d0370b4a44
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.12.2-3+deb7u1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ad6c0ffd4e588a4fafc164c839bbb2deb12f83ff047e512e62e4c50e3c996ad`
-- Created: `2018-06-26T22:19:58.03740992Z`
-- Virtual Size: ~ 99.71 Mb  
+- Image ID: `sha256:dd8454d5ae5191e95aed20fc033fc977d6bbae6b553dfcb9ca1c91a60e4bc20a`
+- Created: `2018-07-17T03:23:19.570486391Z`
+- Virtual Size: ~ 99.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -190,23 +190,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20130119+deb7u2`
+### `dpkg` source package: `ca-certificates=20130119+deb7u3`
 
 Binary Packages:
 
-- `ca-certificates=20130119+deb7u2`
+- `ca-certificates=20130119+deb7u3`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20130119+deb7u3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.dsc' ca-certificates_20130119+deb7u3.dsc 1782 SHA256:040b3562f105a283d38cbbafb5eec14034dd9c15297b9048c58490caeb69b0c3
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20130119+deb7u3.tar.gz' ca-certificates_20130119+deb7u3.tar.gz 315141 SHA256:dc93e0ff5f0a3b16ac091de3f75cdd31b82e3bb2fd031177225010d0370b4a44
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.13-3.5`
 
