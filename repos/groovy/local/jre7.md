@@ -1,10 +1,10 @@
-# `groovy:2.5.0-jre7`
+# `groovy:2.5.1-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b3b08a663c4ea11f8a3c5a392fd49b55d9494795964c02ec616b33f3e99c2e6`
-- Created: `2018-06-27T05:11:59.512982975Z`
-- Virtual Size: ~ 361.55 Mb  
+- Image ID: `sha256:ad01a4416cd33a0c8093398be9a85f23222b95013b19de4e7a817945198b2991`
+- Created: `2018-07-17T16:45:35.53765789Z`
+- Virtual Size: ~ 361.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=7u181`
   - `JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.0`
+  - `GROOVY_VERSION=2.5.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -354,11 +354,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ca-certificates-java/20140324/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ca-certificates-java/20140324/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20141019+deb8u3`
+### `dpkg` source package: `ca-certificates=20141019+deb8u4`
 
 Binary Packages:
 
-- `ca-certificates=20141019+deb8u3`
+- `ca-certificates=20141019+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -369,16 +369,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u3
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.dsc' ca-certificates_20141019+deb8u3.dsc 1779 SHA256:00d74f6be7cdae6be14b97f0a0c7d98e6050fcf09044d2f0f637cf1a985b1234
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.tar.xz' ca-certificates_20141019+deb8u3.tar.xz 299472 SHA256:d6c6244b47b96ae9b718e4c1f3b6dc3487a455a31aeae70573361f313bc532a8
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.dsc' ca-certificates_20141019+deb8u4.dsc 1754 SHA256:4f2bec1a926ff2be32571ef25fddaaf3656cfe28a040efa96ffc493194930b43
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20141019+deb8u4.tar.xz' ca-certificates_20141019+deb8u4.tar.xz 248648 SHA256:12af9462236667ee617e34a4befb447bb9519dceefc76190a62bc16343f27650
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20141019+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.14.0-2.1+deb8u2`
 
@@ -480,11 +480,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=1.7.5-11+deb8u2`
+### `dpkg` source package: `cups=1.7.5-11+deb8u4`
 
 Binary Packages:
 
-- `libcups2:amd64=1.7.5-11+deb8u2`
+- `libcups2:amd64=1.7.5-11+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -496,17 +496,17 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=1.7.5-11+deb8u2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5-11+deb8u2.dsc' cups_1.7.5-11+deb8u2.dsc 3461 SHA256:22f612c156019f489b1431356edac5b467ecd52779f8b56feb78644af4f0cb71
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5.orig.tar.bz2' cups_1.7.5.orig.tar.bz2 8793338 SHA256:18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02
-'http://deb.debian.org/debian/pool/main/c/cups/cups_1.7.5-11+deb8u2.debian.tar.xz' cups_1.7.5-11+deb8u2.debian.tar.xz 305704 SHA256:ae8943c35211802415a1495c0afdcb6943484f4f592f09ec024f11ded5f85ec9
+$ apt-get source -qq --print-uris cups=1.7.5-11+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u4.dsc' cups_1.7.5-11+deb8u4.dsc 3635 SHA256:8e3a10a9310de07bef2595ca313cd429e14625641b06443a40e144f5e01b4c67
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5.orig.tar.bz2' cups_1.7.5.orig.tar.bz2 8793338 SHA256:18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_1.7.5-11+deb8u4.debian.tar.xz' cups_1.7.5-11+deb8u4.debian.tar.xz 306240 SHA256:fd85f86511e017f5eae28b310cb8807155c29cc48ce427030b00c75084aa58a4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/cups/1.7.5-11+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/1.7.5-11+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/cups/1.7.5-11+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/1.7.5-11+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.38.0-4+deb8u11`
 
@@ -1879,11 +1879,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u4`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u5`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u4`
+- `libgcrypt20:amd64=1.6.3-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1893,17 +1893,17 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u4
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.dsc' libgcrypt20_1.6.3-2+deb8u4.dsc 2587 SHA256:5e7816a66d609cd07c15c3e2e55c4c09b11592260a463f36d9bd4f5bc90ce02f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u4.debian.tar.xz 35372 SHA256:36d11626006bcc4376659575780c2a28ff3a2fdca70b01944d4179716c9838f6
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.dsc' libgcrypt20_1.6.3-2+deb8u5.dsc 2587 SHA256:5c7506fe755e1dd79bb7dd0a7cf9d563e3f0a0ff48ea8755b6cf9bbb148f67ce
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u5.debian.tar.xz 36168 SHA256:cf1bb49de501c98845c44cd002e09f0f51a7b3fce70f9ff0377989fbb1d41f34
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -3857,11 +3857,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u5`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u5`
+- `libtiff5:amd64=4.0.3-12.3+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3870,17 +3870,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.dsc' tiff_4.0.3-12.3+deb8u5.dsc 2240 SHA256:69fe805e2304bc369b2200636988cb7bd5d38f6e0daf9ad0eaaf96ffaea8d464
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u5.debian.tar.xz' tiff_4.0.3-12.3+deb8u5.debian.tar.xz 63224 SHA256:d43190b75bb70c05701afc8c061f49c75433b5d9965fd57df68e334195b267c4
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u6
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.dsc' tiff_4.0.3-12.3+deb8u6.dsc 2391 SHA256:783258d2abdba051b0732d4b36baf3b2f2c7f52c9d02b9fde3ff2c8377270300
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u6.debian.tar.xz' tiff_4.0.3-12.3+deb8u6.debian.tar.xz 66520 SHA256:87c0d9e7fcba9c7ada1542574bacc01dc7dca6665692ba42d02eb550a9b24562
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018e-0+deb8u1`
 
