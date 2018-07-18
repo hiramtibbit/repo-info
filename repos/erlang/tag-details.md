@@ -42,12 +42,16 @@
 -	[`erlang:21.0`](#erlang210)
 -	[`erlang:21.0.3`](#erlang2103)
 -	[`erlang:21.0.3-alpine`](#erlang2103-alpine)
+-	[`erlang:21.0.3-jessie`](#erlang2103-jessie)
 -	[`erlang:21.0.3-slim`](#erlang2103-slim)
 -	[`erlang:21.0-alpine`](#erlang210-alpine)
+-	[`erlang:21.0-jessie`](#erlang210-jessie)
 -	[`erlang:21.0-slim`](#erlang210-slim)
 -	[`erlang:21-alpine`](#erlang21-alpine)
+-	[`erlang:21-jessie`](#erlang21-jessie)
 -	[`erlang:21-slim`](#erlang21-slim)
 -	[`erlang:alpine`](#erlangalpine)
+-	[`erlang:jessie`](#erlangjessie)
 -	[`erlang:latest`](#erlanglatest)
 -	[`erlang:slim`](#erlangslim)
 
@@ -12234,6 +12238,10 @@ CMD ["erl"]
 		Size: 38.6 MB (38573134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `erlang:21.0.3-jessie`
+
+**does not exist** (yet?)
+
 ## `erlang:21.0.3-slim`
 
 ```console
@@ -12682,6 +12690,10 @@ CMD ["erl"]
 		Last Modified: Sat, 14 Jul 2018 12:01:10 GMT  
 		Size: 38.6 MB (38573134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:21.0-jessie`
+
+**does not exist** (yet?)
 
 ## `erlang:21.0-slim`
 
@@ -13132,6 +13144,10 @@ CMD ["erl"]
 		Size: 38.6 MB (38573134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `erlang:21-jessie`
+
+**does not exist** (yet?)
+
 ## `erlang:21-slim`
 
 ```console
@@ -13580,6 +13596,10 @@ CMD ["erl"]
 		Last Modified: Sat, 14 Jul 2018 12:01:10 GMT  
 		Size: 38.6 MB (38573134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:jessie`
+
+**does not exist** (yet?)
 
 ## `erlang:latest`
 
