@@ -1,10 +1,10 @@
-# `gradle:4.8.1-jdk8-slim`
+# `gradle:4.9.0-jdk8-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f3de18082589256a81e1e41ba724c5b17f1b4007a07632cb14fc3d9a0c892f4`
-- Created: `2018-06-29T22:28:27.213052549Z`
-- Virtual Size: ~ 332.53 Mb  
+- Image ID: `sha256:8a3c514c4b3760903613d8bb0e4d43b653575bd4f5d5e60422c32fb130e12e23`
+- Created: `2018-07-17T23:28:11.293572005Z`
+- Virtual Size: ~ 332.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -16,7 +16,7 @@
   - `JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.8.1`
+  - `GRADLE_VERSION=4.9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -179,23 +179,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u4`
+### `dpkg` source package: `base-files=9.9+deb9u5`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u4`
+- `base-files=9.9+deb9u5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u5
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u5.dsc' base-files_9.9+deb9u5.dsc 1095 SHA256:a2d4055dd4f8e06e605a2c457432f2a893836120d8344a634507005192f110e0
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u5.tar.xz' base-files_9.9+deb9u5.tar.xz 62980 SHA256:1ef6e319122c0ef5eaaf49f03401f580c159df9ac8921483d43b8583abea4eb2
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u5/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -297,11 +303,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ca-certificates-java/20170531+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ca-certificates-java/20170531+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20161130+nmu1`
+### `dpkg` source package: `ca-certificates=20161130+nmu1+deb9u1`
 
 Binary Packages:
 
-- `ca-certificates=20161130+nmu1`
+- `ca-certificates=20161130+nmu1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -309,13 +315,19 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20161130+nmu1+deb9u1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1+deb9u1.dsc' ca-certificates_20161130+nmu1+deb9u1.dsc 1900 SHA256:c2f23c84c06abb9e982fa54ea6b061369711824d472039e89aa3fe46d2f37715
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1+deb9u1.tar.xz' ca-certificates_20161130+nmu1+deb9u1.tar.xz 247788 SHA256:3b9b56e55a92acdabdae700340f36c5243105c2a022993407632bb08bb4c0197
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20161130+nmu1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20161130+nmu1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20161130+nmu1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20161130+nmu1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.227`
 
@@ -366,11 +378,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.2.1-8+deb9u1`
+### `dpkg` source package: `cups=2.2.1-8+deb9u2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.1-8+deb9u1`
+- `libcups2:amd64=2.2.1-8+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -384,18 +396,18 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.2.1-8+deb9u1
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8+deb9u1.dsc' cups_2.2.1-8+deb9u1.dsc 3598 SHA256:7cf37d5a52188b39dd1ba04d17fbd74ccf6d985db7736235572eb85fffced4a1
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8+deb9u1.debian.tar.xz' cups_2.2.1-8+deb9u1.debian.tar.xz 361088 SHA256:4ad1f1908db0aba76c0088dcac4cadc930fb4e2b2864e01942b62b84bcd17569
+$ apt-get source -qq --print-uris cups=2.2.1-8+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1-8+deb9u2.dsc' cups_2.2.1-8+deb9u2.dsc 3424 SHA256:eacce26ac37e8f93ffb68172b9aaa26fbc981385853bf88124adb4137d9043e5
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1-8+deb9u2.debian.tar.xz' cups_2.2.1-8+deb9u2.debian.tar.xz 364804 SHA256:c039e75c981d56bfb5ae5778fc821ae6fe5a54391d8491f00654072c87a35dfb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.2.1-8+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.1-8+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.1-8+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.2.1-8+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.2.1-8+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.2.1-8+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.4`
 
@@ -578,11 +590,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.5-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.5-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dpkg=1.18.24`
+### `dpkg` source package: `dpkg=1.18.25`
 
 Binary Packages:
 
-- `dpkg=1.18.24`
+- `dpkg=1.18.25`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -595,16 +607,16 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.18.24
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.24.dsc' dpkg_1.18.24.dsc 2032 SHA256:9f1560a0d237ec570f98f8aacfd1cbdd372371cce40e4c7ee4a31315b0c40823
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.24.tar.xz' dpkg_1.18.24.tar.xz 4530444 SHA256:d853081d3e06bfd46a227056e591f094e42e78fa8a5793b0093bad30b710d7b4
+$ apt-get source -qq --print-uris dpkg=1.18.25
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.25.dsc' dpkg_1.18.25.dsc 2048 SHA256:5cf6ac260dc3adae91516b777f9e3b6fcb783d867f811fa8fd0787f570a059a6
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.25.tar.xz' dpkg_1.18.25.tar.xz 4541640 SHA256:c49c371953aea03f543814dcae37c069e86069333fb2e24e9252e76647663492
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dpkg/1.18.24/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.18.24/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.18.24/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dpkg/1.18.25/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.18.25/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.18.25/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -2282,12 +2294,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.16.2-5+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.16.2-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=232-25+deb9u3`
+### `dpkg` source package: `systemd=232-25+deb9u4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-25+deb9u3`
-- `libudev1:amd64=232-25+deb9u3`
+- `libsystemd0:amd64=232-25+deb9u4`
+- `libudev1:amd64=232-25+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2302,17 +2314,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u3.dsc' systemd_232-25+deb9u3.dsc 4797 SHA256:0e93ad29a9625e1ed964e949fc6deaa0a94c041a297311cd0c53ece9c00105f1
+$ apt-get source -qq --print-uris systemd=232-25+deb9u4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.dsc' systemd_232-25+deb9u4.dsc 4797 SHA256:88aff99e39acdf56fec518f994557c2f7e97b900f231ddcafa26d806998ec2d3
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u3.debian.tar.xz' systemd_232-25+deb9u3.debian.tar.xz 208460 SHA256:534028b7bbe42ad1b02d2ca5a5ad5e9da4f5dcbf7cdd950cb31af57e6ff80809
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.debian.tar.xz' systemd_232-25+deb9u4.debian.tar.xz 209400 SHA256:1687f3b629a6fc21462e04ff0da3f5fe68b81298f6ec0a795246cf3e284baaf8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/232-25+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/232-25+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 

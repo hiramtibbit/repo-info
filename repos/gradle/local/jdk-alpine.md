@@ -1,10 +1,10 @@
-# `gradle:4.8.1-jdk8-alpine`
+# `gradle:4.9.0-jdk8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b97a5b97e6ef6bc961789bde30b57b110808a3634fe74c34373fa944a546e2e`
-- Created: `2018-07-11T01:52:11.224603272Z`
-- Virtual Size: ~ 189.85 Mb  
+- Image ID: `sha256:68db735b4a4d7bc10747576074685ae496fe7f0f301e1b8a4ca578578b3fd335`
+- Created: `2018-07-17T23:27:07.63494177Z`
+- Virtual Size: ~ 190.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,4 +15,4 @@
   - `JAVA_VERSION=8u171`
   - `JAVA_ALPINE_VERSION=8.171.11-r0`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.8.1`
+  - `GRADLE_VERSION=4.9`
