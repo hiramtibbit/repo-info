@@ -103,13 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.2.dsc' apt_1.6.2.dsc 2743 SHA256:f5d55e2ddcc2425d58f5b8066ade652dd43277082447ab638b1b4a8b0684a4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.2.tar.xz' apt_1.6.2.tar.xz 2138132 SHA256:5d6ed3e031cb9793fd73c8f93a41565bfa65ec3cd00da62d330cfc3d4c216d0f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6.2/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -2635,14 +2635,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-24.26
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-24.26.dsc' linux_4.15.0-24.26.dsc 7498 SHA256:0422ba24ff67849303a7e6621522b8957cb8ff06282f36c806e98be523877d61
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-24.26.diff.gz' linux_4.15.0-24.26.diff.gz 7697343 SHA256:24bd0dd13cbd43f2ea88e71e9de3caf14902bae3edc2269870a77c2ead73b951
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 

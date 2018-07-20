@@ -63,13 +63,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.2.dsc' apt_1.6.2.dsc 2743 SHA256:f5d55e2ddcc2425d58f5b8066ade652dd43277082447ab638b1b4a8b0684a4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.2.tar.xz' apt_1.6.2.tar.xz 2138132 SHA256:5d6ed3e031cb9793fd73c8f93a41565bfa65ec3cd00da62d330cfc3d4c216d0f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6.2/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
