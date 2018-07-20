@@ -19,11 +19,17 @@
 -	[`elixir:1.6`](#elixir16)
 -	[`elixir:1.6.6`](#elixir166)
 -	[`elixir:1.6.6-alpine`](#elixir166-alpine)
+-	[`elixir:1.6.6-otp-21`](#elixir166-otp-21)
+-	[`elixir:1.6.6-otp-21-alpine`](#elixir166-otp-21-alpine)
 -	[`elixir:1.6.6-slim`](#elixir166-slim)
 -	[`elixir:1.6-alpine`](#elixir16-alpine)
+-	[`elixir:1.6-otp-21`](#elixir16-otp-21)
+-	[`elixir:1.6-otp-21-alpine`](#elixir16-otp-21-alpine)
 -	[`elixir:1.6-slim`](#elixir16-slim)
 -	[`elixir:alpine`](#elixiralpine)
 -	[`elixir:latest`](#elixirlatest)
+-	[`elixir:otp-21`](#elixirotp-21)
+-	[`elixir:otp-21-alpine`](#elixirotp-21-alpine)
 -	[`elixir:slim`](#elixirslim)
 
 ## `elixir:1.3`
@@ -6208,6 +6214,14 @@ CMD ["iex"]
 		Size: 4.9 MB (4908809 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `elixir:1.6.6-otp-21`
+
+**does not exist** (yet?)
+
+## `elixir:1.6.6-otp-21-alpine`
+
+**does not exist** (yet?)
+
 ## `elixir:1.6.6-slim`
 
 ```console
@@ -6766,6 +6780,14 @@ CMD ["iex"]
 		Last Modified: Tue, 10 Jul 2018 11:45:31 GMT  
 		Size: 4.9 MB (4908809 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `elixir:1.6-otp-21`
+
+**does not exist** (yet?)
+
+## `elixir:1.6-otp-21-alpine`
+
+**does not exist** (yet?)
 
 ## `elixir:1.6-slim`
 
@@ -7856,6 +7878,14 @@ CMD ["iex"]
 		Last Modified: Tue, 17 Jul 2018 19:00:54 GMT  
 		Size: 6.0 MB (6019705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `elixir:otp-21`
+
+**does not exist** (yet?)
+
+## `elixir:otp-21-alpine`
+
+**does not exist** (yet?)
 
 ## `elixir:slim`
 
