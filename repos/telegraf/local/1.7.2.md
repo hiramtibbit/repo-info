@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d7cb5a113cb6f95f91f776516ea430f653de7988f46d4f1e87077fe985e08ad`
-- Created: `2018-07-17T15:55:57.600351653Z`
-- Virtual Size: ~ 211.23 Mb  
+- Image ID: `sha256:75da471225eb4b79d59b6e5cc699916f383ded2945862981ddfdfb804b76cb8a`
+- Created: `2018-07-19T22:23:10.907860847Z`
+- Virtual Size: ~ 212.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.7.1`
+  - `TELEGRAF_VERSION=1.7.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1509,8 +1509,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libsensors4:amd64=1:3.4.0-4`
+- `lm-sensors=1:3.4.0-4`
 
-Licenses: (parsed from: `/usr/share/doc/libsensors4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsensors4/copyright`, `/usr/share/doc/lm-sensors/copyright`)
 
 - `GPL`
 - `GPL-2`
@@ -1972,10 +1973,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libperl5.24:amd64=5.24.1-3+deb9u4`
+- `perl=5.24.1-3+deb9u4`
 - `perl-base=5.24.1-3+deb9u4`
 - `perl-modules-5.24=5.24.1-3+deb9u4`
 
-Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
 
 - `Artistic`
 - `Artistic,`
@@ -2344,11 +2346,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-26/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-26/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `telegraf=1.7.1-1`
+### `dpkg` source package: `telegraf=1.7.2-1`
 
 Binary Packages:
 
-- `telegraf=1.7.1-1`
+- `telegraf=1.7.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
