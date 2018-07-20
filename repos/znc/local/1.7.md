@@ -1,14 +1,14 @@
-# `znc:1.7.0`
+# `znc:1.7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15d5ef71c84dcc4b8b633edb6c5b9774933ea92bd7164a6de6b74ae4c5f74abd`
-- Created: `2018-07-10T21:43:12.088323469Z`
-- Virtual Size: ~ 355.63 Mb  
+- Image ID: `sha256:0b831cce8dc11282b7a404dcd1dac53edfe9506cc8cca15706086d1bdea4febd`
+- Created: `2018-07-20T17:58:16.097708942Z`
+- Virtual Size: ~ 356.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E`
-  - `ZNC_VERSION=1.7.0`
+  - `ZNC_VERSION=1.7.1`
