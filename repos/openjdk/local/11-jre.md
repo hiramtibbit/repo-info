@@ -881,19 +881,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.67
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.67.dsc' debconf_1.5.67.dsc 2063 SHA256:ce43d6dd459ea3ee7205d0b129370636f7b9a5ab134f41e7dea7e08d8d368e9a
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.67.tar.xz' debconf_1.5.67.tar.xz 573204 SHA256:1468310ba175aaff7cafcd41cfd0b8d341d373381740e458dd52fb38e01dc90e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.67/
 
-- https://sources.debian.net/src/debconf/1.5.67/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.67/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.67/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -4131,20 +4125,13 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.5-4
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-4.dsc' npth_1.5-4.dsc 1925 SHA256:78a69ba305424461b3077bcd256ecc1633fca2163e7a3f19e2cde64f400c47c8
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5.orig.tar.bz2' npth_1.5.orig.tar.bz2 299308 SHA256:294a690c1f537b92ed829d867bee537e46be93fbd60b16c04630fbbfcd9db3c2
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-4.debian.tar.xz' npth_1.5-4.debian.tar.xz 10516 SHA256:728392bfb0618b46990981f0d1d63461bd3b17a736aa10194635205391a24105
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/npth/1.5-4/
 
-- https://sources.debian.net/src/npth/1.5-4/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.19-3`
 
@@ -4771,20 +4758,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-5.dsc' systemd_239-5.dsc 4819 SHA256:2374be742ffde27d8733c75d6555794a3c339d43ab62bb6fd0fd913fab816848
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-5.debian.tar.xz' systemd_239-5.debian.tar.xz 139532 SHA256:cf09ab0a7d39513b5897cc3cf524d3fe27fb9af1a265242763b9e59377055117
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-5/
 
-- https://sources.debian.net/src/systemd/239-5/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
