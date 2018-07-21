@@ -235,14 +235,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.31-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.31-1.dsc' binutils_2.31-1.dsc 11572 SHA256:4b020ba96948ba9c6a5d78c61ca621f805c224aa8f51b4aec67649193d3c4afe
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.31.orig.tar.xz' binutils_2.31.orig.tar.xz 21629336 SHA256:54c9cf92fd5563173f3728f1a40b9e77b3f2ba48da27f389dafcc3757a4cd9dd
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.31-1.debian.tar.xz' binutils_2.31-1.debian.tar.xz 85780 SHA256:3432daead5486d2cf55da4675a4b12b064dcf28a715aecf7e32aef4e386edac8
-```
 
 ### `dpkg` source package: `boot=1.3-20-2`
 
@@ -978,10 +973,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fribidi=1.0.4-1
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.4-1.dsc' fribidi_1.0.4-1.dsc 1832 SHA256:370aff38390928fd0bacb3a8f13b6c9585f1d2fcdb1669083e7fde055934a070
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.4.orig.tar.bz2' fribidi_1.0.4.orig.tar.bz2 2082335 SHA256:94bdfe553e004d8bd095b109e182682311dd511740d5083326d1582f1df237be
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.4-1.debian.tar.xz' fribidi_1.0.4-1.debian.tar.xz 7732 SHA256:00094ff8b59d89dbca7aa24f97fb86b0671194166fc51039b953aa39bf78e30e
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.dsc' fribidi_1.0.4-1.dsc 1832 SHA256:370aff38390928fd0bacb3a8f13b6c9585f1d2fcdb1669083e7fde055934a070
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4.orig.tar.bz2' fribidi_1.0.4.orig.tar.bz2 2082335 SHA256:94bdfe553e004d8bd095b109e182682311dd511740d5083326d1582f1df237be
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.debian.tar.xz' fribidi_1.0.4-1.debian.tar.xz 7732 SHA256:00094ff8b59d89dbca7aa24f97fb86b0671194166fc51039b953aa39bf78e30e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fribidi/1.0.4-1/ (for browsing the source)
+- https://sources.debian.net/src/fribidi/1.0.4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fribidi/1.0.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-7=7.3.0-25`
 
@@ -1716,10 +1717,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris keyutils=1.5.9-9.3
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9-9.3.dsc' keyutils_1.5.9-9.3.dsc 2093 SHA256:65c003c2e0796a14f7dac94a3f3c8676e8a00a0c393136ae29a1e563a1aa5f42
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9-9.3.debian.tar.xz' keyutils_1.5.9-9.3.debian.tar.xz 18236 SHA256:2d4d01cb07ac113341b33190a1eba6524768f575ea0c7309daa656a1f1305ac2
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.3.dsc' keyutils_1.5.9-9.3.dsc 2093 SHA256:65c003c2e0796a14f7dac94a3f3c8676e8a00a0c393136ae29a1e563a1aa5f42
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.3.debian.tar.xz' keyutils_1.5.9-9.3.debian.tar.xz 18236 SHA256:2d4d01cb07ac113341b33190a1eba6524768f575ea0c7309daa656a1f1305ac2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/keyutils/1.5.9-9.3/ (for browsing the source)
+- https://sources.debian.net/src/keyutils/1.5.9-9.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/keyutils/1.5.9-9.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.16-2`
 
@@ -4042,10 +4049,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris survival=2.42-6-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.42-6-1.dsc' survival_2.42-6-1.dsc 1862 SHA256:25c5d02467fc0a0f387eb35921d723e2ce3f122cc4e1a9f0abb7d6637c114e64
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.42-6.orig.tar.gz' survival_2.42-6.orig.tar.gz 4138981 SHA256:e33c44ee95961ff3c1bd1afe040d3059c143a72387d8e47fdbeba61c9d605daf
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.42-6-1.debian.tar.xz' survival_2.42-6-1.debian.tar.xz 5844 SHA256:d5812a7b6a290a242cee0ec0a64071f0c60616dc4e0a7154df7d14dcdecae0f4
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6-1.dsc' survival_2.42-6-1.dsc 1862 SHA256:25c5d02467fc0a0f387eb35921d723e2ce3f122cc4e1a9f0abb7d6637c114e64
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6.orig.tar.gz' survival_2.42-6.orig.tar.gz 4138981 SHA256:e33c44ee95961ff3c1bd1afe040d3059c143a72387d8e47fdbeba61c9d605daf
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6-1.debian.tar.xz' survival_2.42-6-1.debian.tar.xz 5844 SHA256:d5812a7b6a290a242cee0ec0a64071f0c60616dc4e0a7154df7d14dcdecae0f4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/survival/2.42-6-1/ (for browsing the source)
+- https://sources.debian.net/src/survival/2.42-6-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/survival/2.42-6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-5`
 
@@ -4064,20 +4077,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-5.dsc' systemd_239-5.dsc 4819 SHA256:2374be742ffde27d8733c75d6555794a3c339d43ab62bb6fd0fd913fab816848
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-5.debian.tar.xz' systemd_239-5.debian.tar.xz 139532 SHA256:cf09ab0a7d39513b5897cc3cf524d3fe27fb9af1a265242763b9e59377055117
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-5/
 
-- https://sources.debian.net/src/systemd/239-5/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
