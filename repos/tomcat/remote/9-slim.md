@@ -1,7 +1,7 @@
 ## `tomcat:9-slim`
 
 ```console
-$ docker pull tomcat@sha256:fe8860948304bde41073148abb6e6fc7ae17122512bb3103522295205e8783fb
+$ docker pull tomcat@sha256:5f709c8369ad4ba11d7cb45128d044ff9d011bd91b9317c8929865b1b02b8a96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -689,14 +689,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-slim` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:ac75bba571c138718cd7a5b0d78ae26a7fc360b18befa4b3ae4e08c538f2c253
+$ docker pull tomcat@sha256:e48cbafc2a8796012dffecb7e0a869ebfc40b1c8c02b7d1476a89c25683d4f84
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.0 MB (107004936 bytes)**  
+-	Total Size: **110.1 MB (110100252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ace1cc7a8907527503771c8fff5f93f7abddd30397e22828ad9ed3774bd7f97`
+-	Image ID: `sha256:65de1e464434e9f6b4ad00422b3b6d8affd0989fe3450c48261f7aef2c87f8e6`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -714,49 +714,49 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-10-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Tue, 17 Jul 2018 12:05:17 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 17 Jul 2018 12:05:17 GMT
-ENV JAVA_VERSION=10.0.1+10
-# Tue, 17 Jul 2018 12:05:17 GMT
-ENV JAVA_DEBIAN_VERSION=10.0.1+10-4
-# Tue, 17 Jul 2018 12:06:12 GMT
+# Sat, 21 Jul 2018 12:12:45 GMT
+ENV JAVA_VERSION=10.0.2+13
+# Sat, 21 Jul 2018 12:12:46 GMT
+ENV JAVA_DEBIAN_VERSION=10.0.2+13-1
+# Sat, 21 Jul 2018 12:14:58 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-10-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 17 Jul 2018 15:29:48 GMT
+# Sat, 21 Jul 2018 14:09:24 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 17 Jul 2018 15:29:48 GMT
+# Sat, 21 Jul 2018 14:09:24 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Jul 2018 15:29:49 GMT
+# Sat, 21 Jul 2018 14:09:25 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Tue, 17 Jul 2018 15:29:49 GMT
+# Sat, 21 Jul 2018 14:09:25 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 17 Jul 2018 15:29:49 GMT
+# Sat, 21 Jul 2018 14:09:25 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 17 Jul 2018 15:29:50 GMT
+# Sat, 21 Jul 2018 14:09:25 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 17 Jul 2018 15:29:50 GMT
+# Sat, 21 Jul 2018 14:09:26 GMT
 ENV OPENSSL_VERSION=1.1.0f-3+deb9u2
-# Tue, 17 Jul 2018 15:29:51 GMT
+# Sat, 21 Jul 2018 14:09:26 GMT
 RUN set -ex; 	currentVersion="$(dpkg-query --show --showformat '${Version}\n' openssl)"; 	if dpkg --compare-versions "$currentVersion" '<<' "$OPENSSL_VERSION"; then 		if ! grep -q stretch /etc/apt/sources.list; then 			{ 				echo 'deb http://deb.debian.org/debian stretch main'; 				echo 'deb http://security.debian.org stretch/updates main'; 				echo 'deb http://deb.debian.org/debian stretch-updates main'; 			} > /etc/apt/sources.list.d/stretch.list; 			{ 				echo 'Package: *'; 				echo 'Pin: release n=stretch*'; 				echo 'Pin-Priority: -10'; 				echo; 				echo 'Package: openssl libssl*'; 				echo "Pin: version $OPENSSL_VERSION"; 				echo 'Pin-Priority: 990'; 			} > /etc/apt/preferences.d/stretch-openssl; 		fi; 		apt-get update; 		apt-get install -y --no-install-recommends openssl="$OPENSSL_VERSION"; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 17 Jul 2018 15:29:55 GMT
+# Sat, 21 Jul 2018 14:09:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libapr1 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:20 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:21 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:21 GMT
 ENV TOMCAT_VERSION=9.0.10
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:21 GMT
 ENV TOMCAT_SHA512=ecdee920fcb75bf30cd87c350e0732e8fa566911cd16cf2759689edd324ebac911c0d154e79ffc67e948b29eacc49c88dadc5954383d3c4af2fdb952f3d1c371
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:21 GMT
 ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz
-# Tue, 17 Jul 2018 15:33:55 GMT
+# Sat, 21 Jul 2018 14:12:21 GMT
 ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.10/bin/apache-tomcat-9.0.10.tar.gz.asc
-# Tue, 17 Jul 2018 15:34:52 GMT
+# Sat, 21 Jul 2018 14:13:21 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 		apt-get install -y --no-install-recommends gnupg dirmngr; 		export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 		apt-get install -y --no-install-recommends wget ca-certificates; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	rm -rf "$GNUPGHOME"; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		"openjdk-${JAVA_VERSION%%[.~bu-]*}-jdk=$JAVA_DEBIAN_VERSION" 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Tue, 17 Jul 2018 15:34:53 GMT
+# Sat, 21 Jul 2018 14:13:23 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 17 Jul 2018 15:34:54 GMT
+# Sat, 21 Jul 2018 14:13:23 GMT
 EXPOSE 8080/tcp
-# Tue, 17 Jul 2018 15:34:54 GMT
+# Sat, 21 Jul 2018 14:13:23 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -777,23 +777,23 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 17 Jul 2018 12:13:05 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d3100d922b63296525c0c248e168f1d5d7a32a51a0ef1b0aff03e3981738a8`  
-		Last Modified: Tue, 17 Jul 2018 12:14:28 GMT  
-		Size: 65.6 MB (65648321 bytes)  
+	-	`sha256:3ab14cd81259328f4fafa2aba52f33272950a78409ed6ef42388afd2b0685bf5`  
+		Last Modified: Sat, 21 Jul 2018 12:25:22 GMT  
+		Size: 67.4 MB (67441592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8af951453bd91becf8f7d51b9713c8540b6c91e2db2596775242d4bf86bdb09a`  
-		Last Modified: Tue, 17 Jul 2018 15:38:11 GMT  
-		Size: 138.0 B  
+	-	`sha256:79034369a2ac37a7b0be50cbee39b53e0fe5a482567667c3fa9049b007cc3c75`  
+		Last Modified: Sat, 21 Jul 2018 14:14:23 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee47e9f4592d27a560faba0dd8bac34dec3eec982aa514d6cb01be78a2030d0e`  
-		Last Modified: Tue, 17 Jul 2018 15:38:09 GMT  
-		Size: 409.9 KB (409851 bytes)  
+	-	`sha256:8e4539e9e99e1632c03c85eea6d60d072d543600ef5bbe5a95e3e73588de2b5d`  
+		Last Modified: Sat, 21 Jul 2018 14:14:23 GMT  
+		Size: 437.8 KB (437776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04f35c68475681588a741dab21c048401734a2b2687ce751e767d1e5fd29817`  
-		Last Modified: Tue, 17 Jul 2018 15:39:35 GMT  
-		Size: 15.3 MB (15344826 bytes)  
+	-	`sha256:3540290f5301aef53dd40d17407f684cf2b1b46a5ca53262719db7ba84359262`  
+		Last Modified: Sat, 21 Jul 2018 14:15:18 GMT  
+		Size: 16.6 MB (16618947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02df57f62fb300348fc0213a5869966442611f081e832dd13fabb886ac548c0`  
-		Last Modified: Tue, 17 Jul 2018 15:39:33 GMT  
+	-	`sha256:85f44588ae83a682a837ca437110c97d13385a2b31f8468ad9a1105f54c7a751`  
+		Last Modified: Sat, 21 Jul 2018 14:15:15 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
