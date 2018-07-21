@@ -83,12 +83,14 @@
 ## `mongo:3`
 
 ```console
-$ docker pull mongo@sha256:df82a70fd59c4642508e996b5c8aeaa328781570d94ee665c777173e1b6e0fa4
+$ docker pull mongo@sha256:5125611e4df8884e9272eadeb4404df42cf6afb07e977ca7fe56d1c0eb992713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3` - linux; amd64
 
@@ -195,15 +197,175 @@ CMD ["mongod"]
 		Size: 3.7 KB (3714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:3` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 GB (6027581671 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:31:44 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:31:46 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:31:48 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3643445971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:15:05 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:15:08 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:15:09 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:3.2`
 
 ```console
-$ docker pull mongo@sha256:2ea3783f7ee258361a4264ea1d5b69b79e66abef97a26d2e92f493331368c9c9
+$ docker pull mongo@sha256:47b360e6ee0ef21bf208c68844a8f9b8745d91ca2800aa0db1b606856d843f94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.2` - linux; amd64
 
@@ -316,15 +478,175 @@ CMD ["mongod"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:3.2` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.5 GB (5547254913 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:53:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:53:19 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:53:20 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.2` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3158660481 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:50:51 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:50:54 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:50:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:3.2.20`
 
 ```console
-$ docker pull mongo@sha256:2ea3783f7ee258361a4264ea1d5b69b79e66abef97a26d2e92f493331368c9c9
+$ docker pull mongo@sha256:47b360e6ee0ef21bf208c68844a8f9b8745d91ca2800aa0db1b606856d843f94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.2.20` - linux; amd64
 
@@ -435,6 +757,164 @@ CMD ["mongod"]
 	-	`sha256:16c5c79e60c53d9be37c668a30c252ce3a3a6aeafb9702ba36ce3aed0b2503be`  
 		Last Modified: Tue, 17 Jul 2018 04:15:13 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.2.20` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.5 GB (5547254913 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:53:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:53:19 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:53:20 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.2.20` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3158660481 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:50:51 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:50:54 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:50:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2.20-jessie`
@@ -560,15 +1040,350 @@ CMD ["mongod"]
 
 ## `mongo:3.2.20-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:04ca7b1ed57f142f76f3f77c8d2cb90f0002559d9d3c1fd5317a0b74160b544e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.2.20-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.5 GB (5547254913 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:53:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:53:19 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:53:20 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.2.20-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3158660481 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:50:51 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:50:54 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:50:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2.20-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:aef17ca99351bf22479f13947cfe76e4f7ebe9ed1a41a9b7e52b04dad4bfd76c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.2.20-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3158660481 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:50:51 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:50:54 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:50:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2.20-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:8337001b8e6eb76bbf0219c2333a30c5751826625b6dec6feca0ecf5327916c3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:3.2.20-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.5 GB (5547254913 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:53:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:53:19 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:53:20 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2-jessie`
 
@@ -694,48 +1509,48 @@ CMD ["mongod"]
 ## `mongo:3.2-windowsservercore`
 
 ```console
-$ docker pull mongo@sha256:4b6ae38915d5f635ab76d44282dd1e2519e3cd83e232dfd468198209057f497d
+$ docker pull mongo@sha256:04ca7b1ed57f142f76f3f77c8d2cb90f0002559d9d3c1fd5317a0b74160b544e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2007; amd64
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.2-windowsservercore` - windows version 10.0.14393.2007; amd64
+### `mongo:3.2-windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:e861cf2ec90b70167a81bde4e575f57e90691b7bf54f322d1e36e41bf6fb228d
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5431581851 bytes)**  
+-	Total Size: **5.5 GB (5547254913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a5c9d5f38e7e185f0f48425f76c1d4df069c573cd55b1892b5463173aaecf74`
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Thu, 04 Jan 2018 20:07:32 GMT
-RUN Install update 10.0.14393.2007
-# Fri, 05 Jan 2018 02:38:19 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 05 Jan 2018 02:54:58 GMT
-ENV MONGO_VERSION=3.2.18
-# Fri, 05 Jan 2018 02:54:59 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.18-signed.msi
-# Fri, 05 Jan 2018 02:55:00 GMT
-ENV MONGO_DOWNLOAD_SHA256=f86aba3b01fc3b50ffecfe1ae11cd9d3e0456b3e84cc25e9cc2eb40bcfa40452
-# Fri, 05 Jan 2018 02:57:25 GMT
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 05 Jan 2018 02:57:28 GMT
+# Thu, 19 Jul 2018 14:53:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 05 Jan 2018 02:57:30 GMT
+# Thu, 19 Jul 2018 14:53:19 GMT
 EXPOSE 27017/tcp
-# Fri, 05 Jan 2018 02:57:31 GMT
+# Thu, 19 Jul 2018 14:53:20 GMT
 CMD ["mongod"]
 ```
 
@@ -744,77 +1559,77 @@ CMD ["mongod"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:449343c9d7e2919413898dc8a7e8780ef164b76a3b9dd19de104706edf05113a`  
-		Last Modified: Thu, 04 Jan 2018 20:07:32 GMT  
-		Size: 1.3 GB (1304019288 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:7e8689c7b014746ecb94f640c979d8f83b6d8fa0afd27c93e33f46f2f0a68eed`  
-		Last Modified: Fri, 05 Jan 2018 03:29:26 GMT  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
 		Size: 1.2 KB (1197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6ed512d86bd9d3a8b8b47abbbcabe4061539a48448d43677d1a4189078ea0c`  
-		Last Modified: Fri, 05 Jan 2018 03:29:50 GMT  
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
 		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9db960ec35e4cb176d7829bc3e9514b17e6c72fa4969e17ae44318d304e2a6f`  
-		Last Modified: Fri, 05 Jan 2018 03:29:50 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:666e31dad3c808b393f4c74d0577591676d714d6d6e65dcfc3553eaf7ab75ed8`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1174 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beca61b27caba48b26a421f9675ed749e51d3031d71dca186c3ee32810f34e77`  
-		Last Modified: Fri, 05 Jan 2018 03:30:02 GMT  
-		Size: 57.6 MB (57568333 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4876df11d8c141788429649d82c87c1520c226823be82ec703817d713bea8039`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1176 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cde7d988e5403e6bbd5abed523fc17a9ab031686a29ced1550c8197db9bd122d`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5cc462cef18d08eb57b96f8589e89b2c4216659a46af1d4e303bc6e7ee673b`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `mongo:3.2-windowsservercore` - windows version 10.0.16299.125; amd64
+### `mongo:3.2-windowsservercore` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:221495d2b9b7a642fa59fb6640c5bbc1efdfc0ec8fddd8b84e2b93b35bc9ab6b
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2916434524 bytes)**  
+-	Total Size: **3.2 GB (3158660481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2a0f0b7b41be06d7d22d922fbdb8183c10277249b84615c7adbdfabfd70345a`
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 13 Dec 2017 02:58:40 GMT
-ENV MONGO_VERSION=3.2.18
-# Wed, 13 Dec 2017 02:58:41 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.18-signed.msi
-# Wed, 13 Dec 2017 02:58:42 GMT
-ENV MONGO_DOWNLOAD_SHA256=f86aba3b01fc3b50ffecfe1ae11cd9d3e0456b3e84cc25e9cc2eb40bcfa40452
-# Wed, 13 Dec 2017 03:00:18 GMT
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 13 Dec 2017 03:00:19 GMT
+# Thu, 19 Jul 2018 14:50:51 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 13 Dec 2017 03:00:22 GMT
+# Thu, 19 Jul 2018 14:50:54 GMT
 EXPOSE 27017/tcp
-# Wed, 13 Dec 2017 03:00:23 GMT
+# Thu, 19 Jul 2018 14:50:55 GMT
 CMD ["mongod"]
 ```
 
@@ -823,87 +1638,87 @@ CMD ["mongod"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b144e842ac867249c947aa0cf6cf59e6fcfbcc49e6efb2e7f0742dbc20ad51`  
-		Last Modified: Tue, 19 Dec 2017 04:08:40 GMT  
-		Size: 1.2 KB (1189 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a66e6991fc46847e0d0c8add3693bab61b5b83da78d5c40608e55a28c2c58d`  
-		Last Modified: Tue, 19 Dec 2017 04:08:40 GMT  
-		Size: 1.2 KB (1198 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d8fb4692c41b99c2be66bd7f2a704c2e6d0ec417f74897ec824a4bcc63e6062`  
-		Last Modified: Tue, 19 Dec 2017 04:08:38 GMT  
-		Size: 1.2 KB (1172 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d3901e8f2cbaccbbf2ed1272e07ccc92366ffd5ff3f102f07c431b332b52bbd`  
-		Last Modified: Tue, 19 Dec 2017 04:08:52 GMT  
-		Size: 52.6 MB (52601081 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:257eb31b051e51e455018425175f8873db12de2b0d695cf1801362366a6f19d6`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
-		Size: 1.2 KB (1194 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad3a97356c88a1060f27de644028c806b2ae706532c438abf9ab257d1eb0e6b`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
-		Size: 1.2 KB (1201 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cc34ffd5375d43282d15f2441bea0f89e1bba25a1d6315cc2f20b84cac17b6`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2-windowsservercore-1709`
 
 ```console
-$ docker pull mongo@sha256:65c8e9ed61dadd86792ef01107942c9af9e051466e82e1ea67bc32ac24719b20
+$ docker pull mongo@sha256:aef17ca99351bf22479f13947cfe76e4f7ebe9ed1a41a9b7e52b04dad4bfd76c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.2-windowsservercore-1709` - windows version 10.0.16299.125; amd64
+### `mongo:3.2-windowsservercore-1709` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:221495d2b9b7a642fa59fb6640c5bbc1efdfc0ec8fddd8b84e2b93b35bc9ab6b
+$ docker pull mongo@sha256:518f1974b9cd53795024b92ff0b545655853dc535f4b8ff95832c5c2d2efae68
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2916434524 bytes)**  
+-	Total Size: **3.2 GB (3158660481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2a0f0b7b41be06d7d22d922fbdb8183c10277249b84615c7adbdfabfd70345a`
+-	Image ID: `sha256:2b65e9700d12b1adc6b589336026fba61fe33cfc7f300c57a91b3a5265e5afa5`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 13 Dec 2017 02:58:40 GMT
-ENV MONGO_VERSION=3.2.18
-# Wed, 13 Dec 2017 02:58:41 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.18-signed.msi
-# Wed, 13 Dec 2017 02:58:42 GMT
-ENV MONGO_DOWNLOAD_SHA256=f86aba3b01fc3b50ffecfe1ae11cd9d3e0456b3e84cc25e9cc2eb40bcfa40452
-# Wed, 13 Dec 2017 03:00:18 GMT
+# Thu, 19 Jul 2018 14:48:51 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:48:52 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:48:53 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:50:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 13 Dec 2017 03:00:19 GMT
+# Thu, 19 Jul 2018 14:50:51 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 13 Dec 2017 03:00:22 GMT
+# Thu, 19 Jul 2018 14:50:54 GMT
 EXPOSE 27017/tcp
-# Wed, 13 Dec 2017 03:00:23 GMT
+# Thu, 19 Jul 2018 14:50:55 GMT
 CMD ["mongod"]
 ```
 
@@ -912,87 +1727,87 @@ CMD ["mongod"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10c935c725bba8d98986e1bfa7da714de85bffa432f8cd111a0661ad693b2d5d`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6eb9690d563f07c928f88595d6ffbed962e12c9e84aacbd5544e4b459f6d2ff0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45b7808b2172d5f22eaa80ce7d2e3cea05b12a180376f01797629bf9373dc217`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6615c6fd1712c3e745c70058777868b442d2e3b90d25c6432a93ed99f623f347`  
+		Last Modified: Sat, 21 Jul 2018 09:50:01 GMT  
+		Size: 53.2 MB (53231975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85c3a3f4849fe850b0ea080a4845a7b8a3e95598453febc111f3a21762eedb76`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f55931de0e3d1443780ba1e7693016ff23d075c98a6cb1c431e0050496afd4e0`  
+		Last Modified: Sat, 21 Jul 2018 09:49:50 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b144e842ac867249c947aa0cf6cf59e6fcfbcc49e6efb2e7f0742dbc20ad51`  
-		Last Modified: Tue, 19 Dec 2017 04:08:40 GMT  
-		Size: 1.2 KB (1189 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a66e6991fc46847e0d0c8add3693bab61b5b83da78d5c40608e55a28c2c58d`  
-		Last Modified: Tue, 19 Dec 2017 04:08:40 GMT  
-		Size: 1.2 KB (1198 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d8fb4692c41b99c2be66bd7f2a704c2e6d0ec417f74897ec824a4bcc63e6062`  
-		Last Modified: Tue, 19 Dec 2017 04:08:38 GMT  
-		Size: 1.2 KB (1172 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d3901e8f2cbaccbbf2ed1272e07ccc92366ffd5ff3f102f07c431b332b52bbd`  
-		Last Modified: Tue, 19 Dec 2017 04:08:52 GMT  
-		Size: 52.6 MB (52601081 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:257eb31b051e51e455018425175f8873db12de2b0d695cf1801362366a6f19d6`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
-		Size: 1.2 KB (1194 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad3a97356c88a1060f27de644028c806b2ae706532c438abf9ab257d1eb0e6b`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
-		Size: 1.2 KB (1201 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cc34ffd5375d43282d15f2441bea0f89e1bba25a1d6315cc2f20b84cac17b6`  
-		Last Modified: Tue, 19 Dec 2017 04:08:37 GMT  
+	-	`sha256:973cd9b9320e63e8d57d4a3100d32911e44219d2025483e289a24b0a343d718b`  
+		Last Modified: Sat, 21 Jul 2018 09:49:49 GMT  
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.2-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull mongo@sha256:3d4a3c9698cab157c3fbda816feae6b93f3518607dbfb67bb66157d49067f0b2
+$ docker pull mongo@sha256:8337001b8e6eb76bbf0219c2333a30c5751826625b6dec6feca0ecf5327916c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2007; amd64
+	-	windows version 10.0.14393.2363; amd64
 
-### `mongo:3.2-windowsservercore-ltsc2016` - windows version 10.0.14393.2007; amd64
+### `mongo:3.2-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:e861cf2ec90b70167a81bde4e575f57e90691b7bf54f322d1e36e41bf6fb228d
+$ docker pull mongo@sha256:d657d14ba46a62e698ff39d144628017d32705e5c7833247871a9e357d2ce894
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5431581851 bytes)**  
+-	Total Size: **5.5 GB (5547254913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a5c9d5f38e7e185f0f48425f76c1d4df069c573cd55b1892b5463173aaecf74`
+-	Image ID: `sha256:1234a51fddde774bd8575ee9b90094363fc2b3c1d5f9f32d139bf32c5990f16b`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Thu, 04 Jan 2018 20:07:32 GMT
-RUN Install update 10.0.14393.2007
-# Fri, 05 Jan 2018 02:38:19 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 05 Jan 2018 02:54:58 GMT
-ENV MONGO_VERSION=3.2.18
-# Fri, 05 Jan 2018 02:54:59 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.18-signed.msi
-# Fri, 05 Jan 2018 02:55:00 GMT
-ENV MONGO_DOWNLOAD_SHA256=f86aba3b01fc3b50ffecfe1ae11cd9d3e0456b3e84cc25e9cc2eb40bcfa40452
-# Fri, 05 Jan 2018 02:57:25 GMT
+# Thu, 19 Jul 2018 14:50:58 GMT
+ENV MONGO_VERSION=3.2.20
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.2.20-signed.msi
+# Thu, 19 Jul 2018 14:50:59 GMT
+ENV MONGO_DOWNLOAD_SHA256=dae23beba9f896444c462881404f15920d02add866ff4b50852f892c9f4f84f1
+# Thu, 19 Jul 2018 14:53:14 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 05 Jan 2018 02:57:28 GMT
+# Thu, 19 Jul 2018 14:53:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 05 Jan 2018 02:57:30 GMT
+# Thu, 19 Jul 2018 14:53:19 GMT
 EXPOSE 27017/tcp
-# Fri, 05 Jan 2018 02:57:31 GMT
+# Thu, 19 Jul 2018 14:53:20 GMT
 CMD ["mongod"]
 ```
 
@@ -1001,52 +1816,54 @@ CMD ["mongod"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:449343c9d7e2919413898dc8a7e8780ef164b76a3b9dd19de104706edf05113a`  
-		Last Modified: Thu, 04 Jan 2018 20:07:32 GMT  
-		Size: 1.3 GB (1304019288 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:7e8689c7b014746ecb94f640c979d8f83b6d8fa0afd27c93e33f46f2f0a68eed`  
-		Last Modified: Fri, 05 Jan 2018 03:29:26 GMT  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f56492bd7b9f4dfdca159ad64fea433a08726f1868b69f466ecc431b3f4ce00f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cd31f6eff6c2c5c89717047f158159d5627229018ebe1d5ef60f43ea881af93`  
+		Last Modified: Sat, 21 Jul 2018 09:49:24 GMT  
+		Size: 1.2 KB (1183 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3734cf7d4addc47118ff7363f7812bf84b1dda00ced86a8d688a48450094e750`  
+		Last Modified: Sat, 21 Jul 2018 09:49:22 GMT  
 		Size: 1.2 KB (1197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6ed512d86bd9d3a8b8b47abbbcabe4061539a48448d43677d1a4189078ea0c`  
-		Last Modified: Fri, 05 Jan 2018 03:29:50 GMT  
+	-	`sha256:771a6d52c7ef096ceffcc04c3eb8060838f5104ab1abbd97d0b83c688067cc12`  
+		Last Modified: Sat, 21 Jul 2018 09:49:34 GMT  
+		Size: 58.0 MB (57962341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f817d42d4282798863e7677812228f0ffed6d2625578af97f06b1fdb5ba2ff2f`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
 		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9db960ec35e4cb176d7829bc3e9514b17e6c72fa4969e17ae44318d304e2a6f`  
-		Last Modified: Fri, 05 Jan 2018 03:29:50 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:ab42b9083194a69dde0214c464c17a08255e7efe3bf3a4d289b88325e2df4ed9`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:666e31dad3c808b393f4c74d0577591676d714d6d6e65dcfc3553eaf7ab75ed8`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1174 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beca61b27caba48b26a421f9675ed749e51d3031d71dca186c3ee32810f34e77`  
-		Last Modified: Fri, 05 Jan 2018 03:30:02 GMT  
-		Size: 57.6 MB (57568333 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4876df11d8c141788429649d82c87c1520c226823be82ec703817d713bea8039`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1176 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cde7d988e5403e6bbd5abed523fc17a9ab031686a29ced1550c8197db9bd122d`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5cc462cef18d08eb57b96f8589e89b2c4216659a46af1d4e303bc6e7ee673b`  
-		Last Modified: Fri, 05 Jan 2018 03:29:48 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:6b5acc84a089ca724aaefa8b016ab1fa2c521ecde31b1cbdcf6c15c11d80b6bd`  
+		Last Modified: Sat, 21 Jul 2018 09:49:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4`
 
 ```console
-$ docker pull mongo@sha256:3132ed027d9aa9fbca9ddf40188ceef082204ee3fc9677653c9dd0c3ff3b0bbd
+$ docker pull mongo@sha256:1d24a5452d0577bceba481f70e2d0db4abd29a61ce2e722a828fd1c33990d6c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.4` - linux; amd64
 
@@ -1159,15 +1976,175 @@ CMD ["mongod"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:3.4` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5558990117 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:57:41 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:57:43 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:57:45 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.4` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3170407344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:55:23 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:55:27 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:55:28 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:3.4.16`
 
 ```console
-$ docker pull mongo@sha256:3132ed027d9aa9fbca9ddf40188ceef082204ee3fc9677653c9dd0c3ff3b0bbd
+$ docker pull mongo@sha256:1d24a5452d0577bceba481f70e2d0db4abd29a61ce2e722a828fd1c33990d6c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.4.16` - linux; amd64
 
@@ -1278,6 +2255,164 @@ CMD ["mongod"]
 	-	`sha256:baedb6798aac70cf84825489f8c600870a7784508fcab902c9171b291728f56d`  
 		Last Modified: Tue, 17 Jul 2018 04:16:24 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.4.16` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5558990117 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:57:41 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:57:43 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:57:45 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.4.16` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3170407344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:55:23 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:55:27 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:55:28 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4.16-jessie`
@@ -1403,15 +2538,350 @@ CMD ["mongod"]
 
 ## `mongo:3.4.16-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:d2e1f2a20843a262429d239c6bccada87baf2310e9a47f02d07e88a4ebd5d0b0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.4.16-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5558990117 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:57:41 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:57:43 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:57:45 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.4.16-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3170407344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:55:23 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:55:27 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:55:28 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4.16-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:3188c1e334499fb48dee2a77d927af89c9ec18b19eeb407af3e4a272e0cc14e3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.4.16-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 GB (3170407344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:55:23 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:55:27 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:55:28 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4.16-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:2a4282b0f944f9df7878a825d444072fde674637773a4e6d1adfd7e707721a4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:3.4.16-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5558990117 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
+-	Default Command: `["mongod"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 14:57:41 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 14:57:43 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 14:57:45 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4-jessie`
 
@@ -1537,48 +3007,48 @@ CMD ["mongod"]
 ## `mongo:3.4-windowsservercore`
 
 ```console
-$ docker pull mongo@sha256:2e0c4d5e775b28765fc21b4aeb1d75d45a86482124644e674db4141e4796f53d
+$ docker pull mongo@sha256:d2e1f2a20843a262429d239c6bccada87baf2310e9a47f02d07e88a4ebd5d0b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2007; amd64
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.4-windowsservercore` - windows version 10.0.14393.2007; amd64
+### `mongo:3.4-windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3f1dc34f2da33af68327358d6b3cd03dd1510685b5b9122135dd4901bdf760b0
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5441722307 bytes)**  
+-	Total Size: **5.6 GB (5558990117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7824ed2b768e3615699c88117f0071087616a0ce56a59e48907e197c94b7ae14`
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Thu, 04 Jan 2018 20:07:32 GMT
-RUN Install update 10.0.14393.2007
-# Fri, 05 Jan 2018 02:38:19 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 05 Jan 2018 02:57:44 GMT
-ENV MONGO_VERSION=3.4.10
-# Fri, 05 Jan 2018 02:57:45 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.10-signed.msi
-# Fri, 05 Jan 2018 02:57:46 GMT
-ENV MONGO_DOWNLOAD_SHA256=6b650bdf62792fb44445edfee2100b9a8d861710348c8bbd3b93f56d11d5e7ea
-# Fri, 05 Jan 2018 03:00:01 GMT
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 05 Jan 2018 03:00:03 GMT
+# Thu, 19 Jul 2018 14:57:41 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 05 Jan 2018 03:00:05 GMT
+# Thu, 19 Jul 2018 14:57:43 GMT
 EXPOSE 27017/tcp
-# Fri, 05 Jan 2018 03:00:06 GMT
+# Thu, 19 Jul 2018 14:57:45 GMT
 CMD ["mongod"]
 ```
 
@@ -1587,77 +3057,77 @@ CMD ["mongod"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:449343c9d7e2919413898dc8a7e8780ef164b76a3b9dd19de104706edf05113a`  
-		Last Modified: Thu, 04 Jan 2018 20:07:32 GMT  
-		Size: 1.3 GB (1304019288 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:7e8689c7b014746ecb94f640c979d8f83b6d8fa0afd27c93e33f46f2f0a68eed`  
-		Last Modified: Fri, 05 Jan 2018 03:29:26 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02097f6a68c26f33c17204ffccb87065bb6c1dddf9292aabdc5d0cfd5e85f5ee`  
-		Last Modified: Fri, 05 Jan 2018 03:30:17 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4556ca69527ee909f60b6fb4d531cafe45206281526cadcfde6f14335d9d68af`  
-		Last Modified: Fri, 05 Jan 2018 03:30:17 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:051995d82c52c619f43b898ff1617f3babffa147dbe1947c2c3d9d1b22ec837d`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
-		Size: 1.2 KB (1198 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68069dd0d2b7ff3e611e3b0a6c0037abf1dc78e277089f153954918710519dd5`  
-		Last Modified: Fri, 05 Jan 2018 03:30:37 GMT  
-		Size: 67.7 MB (67708742 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0716c245a7299dc321097c8c2f74c8cd54ba39eb2336277d43eab2aaa4d188`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
 		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75e02cb68857161cbd6d8575fee89783ca7e13b497240a7f38e41f76f859ba6f`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
-		Size: 1.2 KB (1199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03322bd68565b6e1b936ed40c538349761d037d248bd1cc710f927712f00c41`  
-		Last Modified: Fri, 05 Jan 2018 03:30:15 GMT  
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `mongo:3.4-windowsservercore` - windows version 10.0.16299.125; amd64
+### `mongo:3.4-windowsservercore` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:29302f0f0eee02cb1df6ecedb46c0ba3f2e51c2a47379f4ad7de5795e0e8c332
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2926599685 bytes)**  
+-	Total Size: **3.2 GB (3170407344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba42d72049e85b3e5b42280dfd62ed78e80bb8e7101d91b64e16840ad5fa6959`
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 13 Dec 2017 03:03:04 GMT
-ENV MONGO_VERSION=3.4.10
-# Wed, 13 Dec 2017 03:03:05 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.10-signed.msi
-# Wed, 13 Dec 2017 03:03:05 GMT
-ENV MONGO_DOWNLOAD_SHA256=6b650bdf62792fb44445edfee2100b9a8d861710348c8bbd3b93f56d11d5e7ea
-# Wed, 13 Dec 2017 03:04:50 GMT
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 13 Dec 2017 03:04:53 GMT
+# Thu, 19 Jul 2018 14:55:23 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 13 Dec 2017 03:04:55 GMT
+# Thu, 19 Jul 2018 14:55:27 GMT
 EXPOSE 27017/tcp
-# Wed, 13 Dec 2017 03:04:56 GMT
+# Thu, 19 Jul 2018 14:55:28 GMT
 CMD ["mongod"]
 ```
 
@@ -1666,87 +3136,87 @@ CMD ["mongod"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe3897e104207f2d5fcfbeb59db966ec737475f376aaf98b3b77e20bd0d28a99`  
-		Last Modified: Tue, 19 Dec 2017 04:09:38 GMT  
-		Size: 1.2 KB (1202 bytes)  
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd3f909469ec493bd10b7bad5b5fb130796da35ceffdd10017495d139676f7cd`  
-		Last Modified: Tue, 19 Dec 2017 04:09:38 GMT  
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
 		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc2306bda02ae76915dce1b47898ce5b4599e9cd01ef0dbe5abfa25fdeb461a1`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04b8495b3df676b97f4c3e13a85c40754d9e20c470e12801f3333501163338ed`  
-		Last Modified: Tue, 19 Dec 2017 04:09:52 GMT  
-		Size: 62.8 MB (62766246 bytes)  
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dad9a53e77635aaccd959073dcf5e3923c5240a7e5bfb8899bc5a63a91e91b7e`  
-		Last Modified: Tue, 19 Dec 2017 04:09:35 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebecba35c2e569980a8b7b04578cf30e0d719bbb9a7dbbf5f6e103cae3d7fd2a`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9286875f590bc8985af9b15c002756168e9695752fa557785aea4a360c886318`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4-windowsservercore-1709`
 
 ```console
-$ docker pull mongo@sha256:b54357b02c9de5b60a13d54d6db47a46d4f6b7f47a80c0b963a9e031629866bd
+$ docker pull mongo@sha256:3188c1e334499fb48dee2a77d927af89c9ec18b19eeb407af3e4a272e0cc14e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.4-windowsservercore-1709` - windows version 10.0.16299.125; amd64
+### `mongo:3.4-windowsservercore-1709` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:29302f0f0eee02cb1df6ecedb46c0ba3f2e51c2a47379f4ad7de5795e0e8c332
+$ docker pull mongo@sha256:a5562de9a6c51c05f048723c3ee19c2ff474a8562fc5d7668a5291c18d5184ca
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2926599685 bytes)**  
+-	Total Size: **3.2 GB (3170407344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba42d72049e85b3e5b42280dfd62ed78e80bb8e7101d91b64e16840ad5fa6959`
+-	Image ID: `sha256:657a40c8b351960282379364770d419b0f0ab5711398c8498a13d5e38fc9d486`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 13 Dec 2017 03:03:04 GMT
-ENV MONGO_VERSION=3.4.10
-# Wed, 13 Dec 2017 03:03:05 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.10-signed.msi
-# Wed, 13 Dec 2017 03:03:05 GMT
-ENV MONGO_DOWNLOAD_SHA256=6b650bdf62792fb44445edfee2100b9a8d861710348c8bbd3b93f56d11d5e7ea
-# Wed, 13 Dec 2017 03:04:50 GMT
+# Thu, 19 Jul 2018 14:53:23 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:53:24 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:55:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 13 Dec 2017 03:04:53 GMT
+# Thu, 19 Jul 2018 14:55:23 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 13 Dec 2017 03:04:55 GMT
+# Thu, 19 Jul 2018 14:55:27 GMT
 EXPOSE 27017/tcp
-# Wed, 13 Dec 2017 03:04:56 GMT
+# Thu, 19 Jul 2018 14:55:28 GMT
 CMD ["mongod"]
 ```
 
@@ -1755,87 +3225,87 @@ CMD ["mongod"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe3897e104207f2d5fcfbeb59db966ec737475f376aaf98b3b77e20bd0d28a99`  
-		Last Modified: Tue, 19 Dec 2017 04:09:38 GMT  
-		Size: 1.2 KB (1202 bytes)  
+	-	`sha256:486f1f0a92717bbbe8e68576ea2afad3a6b68e89936bf20f1a4124c4b0e76154`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
+		Size: 1.2 KB (1207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd3f909469ec493bd10b7bad5b5fb130796da35ceffdd10017495d139676f7cd`  
-		Last Modified: Tue, 19 Dec 2017 04:09:38 GMT  
+	-	`sha256:d37d7ab0466991eb6ee2fdef6d884feb5321f337437852796c6b6ae16a7aada1`  
+		Last Modified: Sat, 21 Jul 2018 09:50:43 GMT  
 		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc2306bda02ae76915dce1b47898ce5b4599e9cd01ef0dbe5abfa25fdeb461a1`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:8275cdf57752594395e172713f9095eff8f67f3d5c677288ab9e6ba48bc2aa65`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04b8495b3df676b97f4c3e13a85c40754d9e20c470e12801f3333501163338ed`  
-		Last Modified: Tue, 19 Dec 2017 04:09:52 GMT  
-		Size: 62.8 MB (62766246 bytes)  
+	-	`sha256:3e7b8762b5bd6787f18acabea046dab757b7ae5776b417f81037f950fc2198c7`  
+		Last Modified: Sat, 21 Jul 2018 09:50:54 GMT  
+		Size: 65.0 MB (64978813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dad9a53e77635aaccd959073dcf5e3923c5240a7e5bfb8899bc5a63a91e91b7e`  
-		Last Modified: Tue, 19 Dec 2017 04:09:35 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:96d07f474c4dc19395b649261673a7dd098dac3b4f663743de70536dd29b9c57`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebecba35c2e569980a8b7b04578cf30e0d719bbb9a7dbbf5f6e103cae3d7fd2a`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:ba478972c230db03791d1ab1f1e6638150cec6bcd1665406f19f3e62523f5b5a`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9286875f590bc8985af9b15c002756168e9695752fa557785aea4a360c886318`  
-		Last Modified: Tue, 19 Dec 2017 04:09:36 GMT  
+	-	`sha256:6d921153deb69ca24d30f6125b3d12ecf9898eea6984fbe50ccef3bddbab0b0d`  
+		Last Modified: Sat, 21 Jul 2018 09:50:41 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.4-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull mongo@sha256:a1d2b25c01b95040b758042f00dd6f042d7e100cb040d6e4a676f15d90582fe1
+$ docker pull mongo@sha256:2a4282b0f944f9df7878a825d444072fde674637773a4e6d1adfd7e707721a4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2007; amd64
+	-	windows version 10.0.14393.2363; amd64
 
-### `mongo:3.4-windowsservercore-ltsc2016` - windows version 10.0.14393.2007; amd64
+### `mongo:3.4-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3f1dc34f2da33af68327358d6b3cd03dd1510685b5b9122135dd4901bdf760b0
+$ docker pull mongo@sha256:aa4d3d8fe1519cf0c4243c54ea390cee03298ce878244da9e7db2595c0a0e418
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5441722307 bytes)**  
+-	Total Size: **5.6 GB (5558990117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7824ed2b768e3615699c88117f0071087616a0ce56a59e48907e197c94b7ae14`
+-	Image ID: `sha256:dc273b3b6fea201c9cf5686b59c38a93234a256314fde9766cabd6c99117b0cc`
 -	Default Command: `["mongod"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Thu, 04 Jan 2018 20:07:32 GMT
-RUN Install update 10.0.14393.2007
-# Fri, 05 Jan 2018 02:38:19 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 05 Jan 2018 02:57:44 GMT
-ENV MONGO_VERSION=3.4.10
-# Fri, 05 Jan 2018 02:57:45 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.10-signed.msi
-# Fri, 05 Jan 2018 02:57:46 GMT
-ENV MONGO_DOWNLOAD_SHA256=6b650bdf62792fb44445edfee2100b9a8d861710348c8bbd3b93f56d11d5e7ea
-# Fri, 05 Jan 2018 03:00:01 GMT
+# Thu, 19 Jul 2018 14:55:30 GMT
+ENV MONGO_VERSION=3.4.16
+# Thu, 19 Jul 2018 14:55:31 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.16-signed.msi
+# Thu, 19 Jul 2018 14:55:32 GMT
+ENV MONGO_DOWNLOAD_SHA256=d8be8b5b65d265f7dbdc38ffc2d07f26cb5613d9d50c21dd9dbb7000ff0ba967
+# Thu, 19 Jul 2018 14:57:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 05 Jan 2018 03:00:03 GMT
+# Thu, 19 Jul 2018 14:57:41 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 05 Jan 2018 03:00:05 GMT
+# Thu, 19 Jul 2018 14:57:43 GMT
 EXPOSE 27017/tcp
-# Fri, 05 Jan 2018 03:00:06 GMT
+# Thu, 19 Jul 2018 14:57:45 GMT
 CMD ["mongod"]
 ```
 
@@ -1844,52 +3314,54 @@ CMD ["mongod"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:449343c9d7e2919413898dc8a7e8780ef164b76a3b9dd19de104706edf05113a`  
-		Last Modified: Thu, 04 Jan 2018 20:07:32 GMT  
-		Size: 1.3 GB (1304019288 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:7e8689c7b014746ecb94f640c979d8f83b6d8fa0afd27c93e33f46f2f0a68eed`  
-		Last Modified: Fri, 05 Jan 2018 03:29:26 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02097f6a68c26f33c17204ffccb87065bb6c1dddf9292aabdc5d0cfd5e85f5ee`  
-		Last Modified: Fri, 05 Jan 2018 03:30:17 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4556ca69527ee909f60b6fb4d531cafe45206281526cadcfde6f14335d9d68af`  
-		Last Modified: Fri, 05 Jan 2018 03:30:17 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:051995d82c52c619f43b898ff1617f3babffa147dbe1947c2c3d9d1b22ec837d`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
-		Size: 1.2 KB (1198 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68069dd0d2b7ff3e611e3b0a6c0037abf1dc78e277089f153954918710519dd5`  
-		Last Modified: Fri, 05 Jan 2018 03:30:37 GMT  
-		Size: 67.7 MB (67708742 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0716c245a7299dc321097c8c2f74c8cd54ba39eb2336277d43eab2aaa4d188`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
+	-	`sha256:d6ba5321aba13b27d4e720360781e23592b49502ed4d740347b3f7cc32e092f0`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
 		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75e02cb68857161cbd6d8575fee89783ca7e13b497240a7f38e41f76f859ba6f`  
-		Last Modified: Fri, 05 Jan 2018 03:30:14 GMT  
-		Size: 1.2 KB (1199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03322bd68565b6e1b936ed40c538349761d037d248bd1cc710f927712f00c41`  
-		Last Modified: Fri, 05 Jan 2018 03:30:15 GMT  
+	-	`sha256:3e0cf149673f9fc27ac04713ce21a767bb3757bc9fedf715ebe900ab7d3de14b`  
+		Last Modified: Sat, 21 Jul 2018 09:50:16 GMT  
 		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7dd857b5789f26c00828cbd7d4f6e49ea1324246081f43d2d53d4fcf7473e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2ed145956010e6a24a28677d5724ba5b2ba64e7d5c974b0955f8d0af206dc9e`  
+		Last Modified: Sat, 21 Jul 2018 09:50:29 GMT  
+		Size: 69.7 MB (69697552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2659374375636e490f672a1a337ef6db171195cf9c51e4a555b817232b4d988`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38cc0da8cdeac6ef1114627eefb1e3f970e34f35f6a263474f963ba42c0160cd`  
+		Last Modified: Sat, 21 Jul 2018 09:50:14 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ad291799a29ff56044545c3c1291ff513c8096572beda6fd38b490491ce645d3`  
+		Last Modified: Sat, 21 Jul 2018 09:50:13 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6`
 
 ```console
-$ docker pull mongo@sha256:df82a70fd59c4642508e996b5c8aeaa328781570d94ee665c777173e1b6e0fa4
+$ docker pull mongo@sha256:5125611e4df8884e9272eadeb4404df42cf6afb07e977ca7fe56d1c0eb992713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.6` - linux; amd64
 
@@ -1996,15 +3468,175 @@ CMD ["mongod"]
 		Size: 3.7 KB (3714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:3.6` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 GB (6027581671 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:31:44 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:31:46 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:31:48 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.6` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3643445971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:15:05 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:15:08 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:15:09 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:3.6.6`
 
 ```console
-$ docker pull mongo@sha256:df82a70fd59c4642508e996b5c8aeaa328781570d94ee665c777173e1b6e0fa4
+$ docker pull mongo@sha256:5125611e4df8884e9272eadeb4404df42cf6afb07e977ca7fe56d1c0eb992713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
 ### `mongo:3.6.6` - linux; amd64
 
@@ -2109,6 +3741,164 @@ CMD ["mongod"]
 	-	`sha256:b510662cfc9e4b92733c0158e8e1d72020405ac792e803d545293ddad1f957a9`  
 		Last Modified: Tue, 17 Jul 2018 04:17:35 GMT  
 		Size: 3.7 KB (3714 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.6.6` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 GB (6027581671 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:31:44 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:31:46 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:31:48 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.6.6` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3643445971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:15:05 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:15:08 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:15:09 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6.6-jessie`
@@ -2228,15 +4018,350 @@ CMD ["mongod"]
 
 ## `mongo:3.6.6-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:6547b1177a4cc532aa6013001075089819eea30fb847f3ba945ff5da7be6c929
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.6.6-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 GB (6027581671 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:31:44 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:31:46 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:31:48 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:3.6.6-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3643445971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:15:05 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:15:08 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:15:09 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6.6-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:fe2301a8d71976612d24c096e4dd679191c3f3035c79ad567ecfe1d297a1c750
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:3.6.6-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3643445971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:15:05 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:15:08 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:15:09 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6.6-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a725a2f2c504915f45eb6a65cad9618e93e3753d531f45f542ae78c01bad4961
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:3.6.6-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 GB (6027581671 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:31:44 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:31:46 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:31:48 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6-jessie`
 
@@ -2356,48 +4481,48 @@ CMD ["mongod"]
 ## `mongo:3.6-windowsservercore`
 
 ```console
-$ docker pull mongo@sha256:7a433605bf77d114d6c5a2947398565baf45b545176c407fa00b63b8c8cb3dd7
+$ docker pull mongo@sha256:6547b1177a4cc532aa6013001075089819eea30fb847f3ba945ff5da7be6c929
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.6-windowsservercore` - windows version 10.0.14393.1944; amd64
+### `mongo:3.6-windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **6.0 GB (6027581671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 15:31:44 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 15:31:46 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 15:31:48 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2406,77 +4531,77 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
 		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `mongo:3.6-windowsservercore` - windows version 10.0.16299.125; amd64
+### `mongo:3.6-windowsservercore` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.6 GB (3643445971 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:15:05 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:15:08 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:15:09 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2485,87 +4610,87 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6-windowsservercore-1709`
 
 ```console
-$ docker pull mongo@sha256:511c3e95ac728c2b41b5886b99110c19fc20fa6a5d965033b0e2ea748fde8a8a
+$ docker pull mongo@sha256:fe2301a8d71976612d24c096e4dd679191c3f3035c79ad567ecfe1d297a1c750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3.6-windowsservercore-1709` - windows version 10.0.16299.125; amd64
+### `mongo:3.6-windowsservercore-1709` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.6 GB (3643445971 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:15:05 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:15:08 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:15:09 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2574,87 +4699,87 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull mongo@sha256:df1f2f6d3ea85e4830748919a0ea70268d79194f52296bd7245200abf7a4d3cf
+$ docker pull mongo@sha256:a725a2f2c504915f45eb6a65cad9618e93e3753d531f45f542ae78c01bad4961
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
+	-	windows version 10.0.14393.2363; amd64
 
-### `mongo:3.6-windowsservercore-ltsc2016` - windows version 10.0.14393.1944; amd64
+### `mongo:3.6-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **6.0 GB (6027581671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 15:31:44 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 15:31:46 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 15:31:48 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2663,41 +4788,41 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
 		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3-jessie`
@@ -2818,48 +4943,48 @@ CMD ["mongod"]
 ## `mongo:3-windowsservercore`
 
 ```console
-$ docker pull mongo@sha256:7a433605bf77d114d6c5a2947398565baf45b545176c407fa00b63b8c8cb3dd7
+$ docker pull mongo@sha256:6547b1177a4cc532aa6013001075089819eea30fb847f3ba945ff5da7be6c929
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3-windowsservercore` - windows version 10.0.14393.1944; amd64
+### `mongo:3-windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **6.0 GB (6027581671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 15:31:44 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 15:31:46 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 15:31:48 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2868,77 +4993,77 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
 		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `mongo:3-windowsservercore` - windows version 10.0.16299.125; amd64
+### `mongo:3-windowsservercore` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.6 GB (3643445971 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:15:05 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:15:08 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:15:09 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -2947,87 +5072,87 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3-windowsservercore-1709`
 
 ```console
-$ docker pull mongo@sha256:511c3e95ac728c2b41b5886b99110c19fc20fa6a5d965033b0e2ea748fde8a8a
+$ docker pull mongo@sha256:fe2301a8d71976612d24c096e4dd679191c3f3035c79ad567ecfe1d297a1c750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:3-windowsservercore-1709` - windows version 10.0.16299.125; amd64
+### `mongo:3-windowsservercore-1709` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:98b516a95b8fb75e7a14b7df1b4f5f556e35f36dafed50949f73479e86999f40
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.6 GB (3643445971 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:e4a3f084626f5b0bcd887869909e6812a58fad19e1fe1930584da34fd28de36a`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 14:57:48 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 14:57:49 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:15:04 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:15:05 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:15:08 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:15:09 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -3036,87 +5161,87 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c3840e69e78a024e722777c38915db1789f12b9a970daa2f5173bedead36694`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaa72df169228e99cdc58794c07b7d21964d85ee4b2136bf06b927a2a8e6277e`  
+		Last Modified: Sat, 21 Jul 2018 09:52:34 GMT  
+		Size: 1.2 KB (1206 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23e1d36b3c46001f39a68a2f039875ae25668f3872d2903a0ee4c24fbef8eae5`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:23a2dcd8c95f87465ea14a4cf4586e960c20f5a0a707ff4a70cb0f2916baeaf9`  
+		Last Modified: Sat, 21 Jul 2018 09:53:27 GMT  
+		Size: 538.0 MB (538017465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:e0176aa7ea35ce6527b3454b6e1153d81661b11f128e03e8f8e312f0852e72ae`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
+	-	`sha256:13ceb5164df328fa3029bd7a5d129496134cb5e1f6c9696e3c4e37ff011370bb`  
+		Last Modified: Sat, 21 Jul 2018 09:52:32 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:3872604e12d9db23ddb1bbd92d2111d7cb80c0843359112189687b39e08ed0d2`  
+		Last Modified: Sat, 21 Jul 2018 09:52:31 GMT  
+		Size: 1.2 KB (1188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull mongo@sha256:df1f2f6d3ea85e4830748919a0ea70268d79194f52296bd7245200abf7a4d3cf
+$ docker pull mongo@sha256:a725a2f2c504915f45eb6a65cad9618e93e3753d531f45f542ae78c01bad4961
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
+	-	windows version 10.0.14393.2363; amd64
 
-### `mongo:3-windowsservercore-ltsc2016` - windows version 10.0.14393.1944; amd64
+### `mongo:3-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:43a4aff85d89ee56132019469519d5536a13e4400b7d960c3881b6d28ea97e24
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **6.0 GB (6027581671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:ee281c593599710bc0286f3d62e731d587a3346ef7787b7fa22160a03cf14542`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 15:15:12 GMT
+ENV MONGO_VERSION=3.6.6
+# Thu, 19 Jul 2018 15:15:13 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.6-signed.msi
+# Thu, 19 Jul 2018 15:15:14 GMT
+ENV MONGO_DOWNLOAD_SHA256=584bc98ce5755f419b7182c3abf1c632a4365e28577a4f498be2c291beeae7c2
+# Thu, 19 Jul 2018 15:31:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 15:31:44 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 15:31:46 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 15:31:48 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -3125,53 +5250,56 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:f1f7c506c655758bc3c1229711675a929a1eef5253376c4dfd93a5902df5a985`  
+		Last Modified: Sat, 21 Jul 2018 09:51:08 GMT  
 		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:2f8dfe512fb731ed8d79c03b93aa29a6f36f041508115e8d0a6edf607d2ee7e6`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:97ede4d15341e7f7193b1b409d11ae75c74c1ad14b8a34064df243c833b720b1`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
+	-	`sha256:4a49e6c1c55fd3c2a0c8c0b85bf23cf772c5671c7e9734177a2affbb66e01722`  
+		Last Modified: Sat, 21 Jul 2018 09:52:02 GMT  
+		Size: 538.3 MB (538289101 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ac80d277b3bd9ece884f44f372da8024d260580d26fcb564db79d2739d49dea`  
+		Last Modified: Sat, 21 Jul 2018 09:51:07 GMT  
+		Size: 1.2 KB (1203 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a189f1c72a2e51490afcd09d56cf06c1d7f83004a6258192979fc5b57bc93359`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
 		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:b941d73f5d206d0a38bff164943b157168c0e2ce23b89085f4ce3ad317f2ae8c`  
+		Last Modified: Sat, 21 Jul 2018 09:51:05 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4`
 
 ```console
-$ docker pull mongo@sha256:2e5e54f94429839d4904c9962b6933ef631b1938b6223c1cf84a0442421f111d
+$ docker pull mongo@sha256:c49de5bdfefe50bed224be006dabb32e113ee3f4ad3e3d2ff46cacc2d2390b98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:4` - linux; amd64
 
@@ -3431,16 +5559,256 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:4` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:4.0`
 
 ```console
-$ docker pull mongo@sha256:2e5e54f94429839d4904c9962b6933ef631b1938b6223c1cf84a0442421f111d
+$ docker pull mongo@sha256:c49de5bdfefe50bed224be006dabb32e113ee3f4ad3e3d2ff46cacc2d2390b98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:4.0` - linux; amd64
 
@@ -3700,16 +6068,256 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:4.0` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:4.0.0`
 
 ```console
-$ docker pull mongo@sha256:2e5e54f94429839d4904c9962b6933ef631b1938b6223c1cf84a0442421f111d
+$ docker pull mongo@sha256:c49de5bdfefe50bed224be006dabb32e113ee3f4ad3e3d2ff46cacc2d2390b98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:4.0.0` - linux; amd64
 
@@ -3969,21 +6577,758 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:4.0.0` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0.0` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0.0` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:4.0.0-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:c66e82e6696db84ee611ff382224b098ee02561f45e0a9e99db0a0e53c00df48
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.0.0-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0.0-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0.0-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0.0-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:92095f58c882465056fa9921e32978c1b026e7518ee52ebdba3cc3a2af06f228
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:4.0.0-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0.0-windowsservercore-1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:737ff529ed2de5c28f9f5a8ab9729ed72c18be81db5805bfb2efcbfb0e8404d5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.0.0-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0.0-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:d05e9d74a53caf1710dc075ec9b6b146326c4e49e4c4c1f45c4a454cfa9f948b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:4.0.0-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0.0-xenial`
 
@@ -4256,19 +7601,519 @@ CMD ["mongod"]
 
 ## `mongo:4.0-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:c66e82e6696db84ee611ff382224b098ee02561f45e0a9e99db0a0e53c00df48
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.0-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.0-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:92095f58c882465056fa9921e32978c1b026e7518ee52ebdba3cc3a2af06f228
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:4.0-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0-windowsservercore-1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:737ff529ed2de5c28f9f5a8ab9729ed72c18be81db5805bfb2efcbfb0e8404d5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.0-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:d05e9d74a53caf1710dc075ec9b6b146326c4e49e4c4c1f45c4a454cfa9f948b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:4.0-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0-xenial`
 
@@ -4542,13 +8387,16 @@ CMD ["mongod"]
 ## `mongo:4.1`
 
 ```console
-$ docker pull mongo@sha256:9b66c9b94a1b83030a702bb6bca3b748559774b87ad7273eb9d2c79ee85e6557
+$ docker pull mongo@sha256:3c0a77f746467686e31bcf3a6ae3045b661e2e9526b1de237edbec523bf47d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:4.1` - linux; amd64
 
@@ -4808,16 +8656,256 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:4.1` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:4.1.1`
 
 ```console
-$ docker pull mongo@sha256:9b66c9b94a1b83030a702bb6bca3b748559774b87ad7273eb9d2c79ee85e6557
+$ docker pull mongo@sha256:3c0a77f746467686e31bcf3a6ae3045b661e2e9526b1de237edbec523bf47d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:4.1.1` - linux; amd64
 
@@ -5077,21 +9165,758 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:4.1.1` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1.1` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1.1` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:4.1.1-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:0ea180ca35a0e5be93efdc628f761c3922dfaa75048baa7e03d9eb5381cc42b7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.1.1-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1.1-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1.1-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1.1-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:dd9f248c7f9345b46f21767237db98a16ac17b8377b6c1febc4301120283a58e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:4.1.1-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1.1-windowsservercore-1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:35b2c762a6b1d57412e33a17deb0907aa27ec4cf0b8a20970eac9e1d99e4e988
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.1.1-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1.1-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:9cc12b336f3ac98fde26d415bdd0fafe06cab9df50f4549aea70c4ddda1aad63
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:4.1.1-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1.1-xenial`
 
@@ -5364,19 +10189,519 @@ CMD ["mongod"]
 
 ## `mongo:4.1-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:0ea180ca35a0e5be93efdc628f761c3922dfaa75048baa7e03d9eb5381cc42b7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.1-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4.1-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:dd9f248c7f9345b46f21767237db98a16ac17b8377b6c1febc4301120283a58e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:4.1-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1-windowsservercore-1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:35b2c762a6b1d57412e33a17deb0907aa27ec4cf0b8a20970eac9e1d99e4e988
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4.1-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:9cc12b336f3ac98fde26d415bdd0fafe06cab9df50f4549aea70c4ddda1aad63
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:4.1-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.1-xenial`
 
@@ -5649,19 +10974,519 @@ CMD ["mongod"]
 
 ## `mongo:4-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:c66e82e6696db84ee611ff382224b098ee02561f45e0a9e99db0a0e53c00df48
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4-windowsservercore` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:4-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4-windowsservercore-1709`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:92095f58c882465056fa9921e32978c1b026e7518ee52ebdba3cc3a2af06f228
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:4-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4-windowsservercore-1803`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:737ff529ed2de5c28f9f5a8ab9729ed72c18be81db5805bfb2efcbfb0e8404d5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:4-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:d05e9d74a53caf1710dc075ec9b6b146326c4e49e4c4c1f45c4a454cfa9f948b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:4-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4-xenial`
 
@@ -5935,13 +11760,16 @@ CMD ["mongod"]
 ## `mongo:latest`
 
 ```console
-$ docker pull mongo@sha256:2e5e54f94429839d4904c9962b6933ef631b1938b6223c1cf84a0442421f111d
+$ docker pull mongo@sha256:c49de5bdfefe50bed224be006dabb32e113ee3f4ad3e3d2ff46cacc2d2390b98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:latest` - linux; amd64
 
@@ -6201,16 +12029,256 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mongo:latest` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:17:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:17:18 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:17:21 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:latest` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 GB (3662729672 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 15:50:02 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 15:50:03 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 15:50:04 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:latest` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mongo:unstable`
 
 ```console
-$ docker pull mongo@sha256:9b66c9b94a1b83030a702bb6bca3b748559774b87ad7273eb9d2c79ee85e6557
+$ docker pull mongo@sha256:3c0a77f746467686e31bcf3a6ae3045b661e2e9526b1de237edbec523bf47d92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
 ### `mongo:unstable` - linux; amd64
 
@@ -6470,50 +12538,40 @@ CMD ["mongod"]
 		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `mongo:unstable-windowsservercore`
+### `mongo:unstable` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:f64d714de9c0a613690d3c0e1737a6d090c9c489c1a9abc3f575db25c3d402d6
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
 ```
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	windows version 10.0.14393.1884; amd64
-
-### `mongo:unstable-windowsservercore` - windows version 10.0.14393.1884; amd64
-
-```console
-$ docker pull mongo@sha256:bf9a83c3904400edb18de3187451597b73fc527ba61e8fe76be810d35156fef1
-```
-
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5426898646 bytes)**  
+-	Total Size: **5.6 GB (5553526993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64aaddfb26295f95ccf511020d0c27ad2ad357414588d7d6e8e4c71db0373c1a`
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 13 Nov 2017 21:42:13 GMT
-RUN Install update 10.0.14393.1884
-# Wed, 15 Nov 2017 02:39:48 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 15 Nov 2017 02:59:30 GMT
-ENV MONGO_VERSION=3.5.13
-# Wed, 15 Nov 2017 02:59:31 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.5.13-signed.msi
-# Wed, 15 Nov 2017 02:59:31 GMT
-ENV MONGO_DOWNLOAD_SHA256=7ee348277ea8c692e8552aaea4a758f4fb3838431e6627160ef4b060bbaf3b49
-# Wed, 15 Nov 2017 03:01:50 GMT
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 15 Nov 2017 03:01:52 GMT
+# Thu, 19 Jul 2018 16:45:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 15 Nov 2017 03:01:55 GMT
+# Thu, 19 Jul 2018 16:45:20 GMT
 EXPOSE 27017/tcp
-# Wed, 15 Nov 2017 03:01:56 GMT
+# Thu, 19 Jul 2018 16:45:22 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -6522,87 +12580,77 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
-		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
-		Size: 1.3 GB (1286993027 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:548545e3bfa5574188201e946d80c077338e1cf3292a3cc901720d63138c4c22`  
-		Last Modified: Wed, 15 Nov 2017 03:02:23 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f8df0c8b1aa41ba99c2e9552977463e3657c825ae65163661f17b84dc0719`  
-		Last Modified: Wed, 15 Nov 2017 03:03:47 GMT  
-		Size: 1.2 KB (1192 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ea6ea7eba67c5cb2ffcf9e423d1d28cdab585b50d6f170abee434dc3dc1c128`  
-		Last Modified: Wed, 15 Nov 2017 03:03:46 GMT  
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b4ade4d48e5af7820e405ea8017711de5a1b8031c9ef75e7113a02f5c251c5`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
-		Size: 1.2 KB (1191 bytes)  
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:961bca6c3758e043266583cd652a09e1c7ca58782094e96f3fe243e32317951e`  
-		Last Modified: Wed, 15 Nov 2017 03:03:58 GMT  
-		Size: 69.9 MB (69911393 bytes)  
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3226d383bcc5642184896e279a9a06cbe55ec38e9a9533c34239b8c1145453`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3d804dfcd7791f707b240f0c9482ac8a9fe22f53e02083bce5ac6c71dd0773f`  
-		Last Modified: Wed, 15 Nov 2017 03:03:43 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c1ae943c69c48ab33e1b692b4df11273b1345d67d3ab096e0004ced56b1a337`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `mongo:unstable-windowsservercore-1709`
+### `mongo:unstable` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:8d21138074926102221c9b03c883b20a35856867c412c6d730810ad92d565b10
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
 ```
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	windows version 10.0.16299.64; amd64
-
-### `mongo:unstable-windowsservercore-1709` - windows version 10.0.16299.64; amd64
-
-```console
-$ docker pull mongo@sha256:1a05c57bcc78c5b88b17defbcdc66490e510c04b58854cc2c9f1464b40098159
-```
-
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 GB (2741093880 bytes)**  
+-	Total Size: **3.6 GB (3636487991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2611d9b26969607d01636c5678fb9e18bc2e6bc01be797629ea41803cd897753`
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Thu, 02 Nov 2017 14:03:00 GMT
-RUN Install update 10.0.16299.64
-# Thu, 23 Nov 2017 02:49:43 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 23 Nov 2017 02:56:08 GMT
-ENV MONGO_VERSION=3.5.13
-# Thu, 23 Nov 2017 02:56:08 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.5.13-signed.msi
-# Thu, 23 Nov 2017 02:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=7ee348277ea8c692e8552aaea4a758f4fb3838431e6627160ef4b060bbaf3b49
-# Thu, 23 Nov 2017 02:58:23 GMT
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Thu, 23 Nov 2017 02:58:24 GMT
+# Thu, 19 Jul 2018 16:35:32 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Thu, 23 Nov 2017 02:58:25 GMT
+# Thu, 19 Jul 2018 16:35:34 GMT
 EXPOSE 27017/tcp
-# Thu, 23 Nov 2017 02:58:27 GMT
+# Thu, 19 Jul 2018 16:35:35 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -6611,91 +12659,168 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:0e0a3062a7ac7e07eda6c54e1ddfafc80550c98dd5e1933799f934bc4bdcf0ab`  
-		Last Modified: Tue, 14 Nov 2017 18:59:18 GMT  
-		Size: 401.9 MB (401851142 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2c18a4bf1d8437116b78c74d8f3fe02e52f672dfc5b9143279880561df54f6f9`  
-		Last Modified: Thu, 23 Nov 2017 02:58:59 GMT  
-		Size: 1.2 KB (1203 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1f6c61d9274f59c9ebd734657950eaa95263b70c92488a31a8b8e73b50c0c3b`  
-		Last Modified: Thu, 23 Nov 2017 03:00:45 GMT  
-		Size: 1.2 KB (1192 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b9e208b44efb5fc67a3c2c4625009512dbb6e04d89261225b00c9bc4e8f8ffb`  
-		Last Modified: Thu, 23 Nov 2017 03:00:45 GMT  
-		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ff5583df31fefb355a834495ed54517851dcae6e2080704ba7ccf0f7412295b`  
-		Last Modified: Thu, 23 Nov 2017 03:00:42 GMT  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
 		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1619c370734755415b51a04774c6b4448c590a8c839309fc4bbec8569befa5`  
-		Last Modified: Thu, 23 Nov 2017 03:00:56 GMT  
-		Size: 64.9 MB (64933797 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f6ab143bb4e4905bf1b4061ff1ddbb43fb16175ab373fbaa70675aa3c9cd58b`  
-		Last Modified: Thu, 23 Nov 2017 03:00:42 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34749b97d9ed2731dc8d5374a70b13fecacecfdeede2aceea8f330a341c23a30`  
-		Last Modified: Thu, 23 Nov 2017 03:00:43 GMT  
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
 		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad72e56436a079fb2fdb7a7929be36d55c6c5e311451e6cd84f55b7d2f8b1b4f`  
-		Last Modified: Thu, 23 Nov 2017 03:00:42 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `mongo:unstable-windowsservercore-1803`
-
-**does not exist** (yet?)
-
-## `mongo:unstable-windowsservercore-ltsc2016`
+### `mongo:unstable` - windows version 10.0.17134.165; amd64
 
 ```console
-$ docker pull mongo@sha256:f64d714de9c0a613690d3c0e1737a6d090c9c489c1a9abc3f575db25c3d402d6
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:unstable-windowsservercore`
+
+```console
+$ docker pull mongo@sha256:0ea180ca35a0e5be93efdc628f761c3922dfaa75048baa7e03d9eb5381cc42b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1884; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
-### `mongo:unstable-windowsservercore-ltsc2016` - windows version 10.0.14393.1884; amd64
+### `mongo:unstable-windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:bf9a83c3904400edb18de3187451597b73fc527ba61e8fe76be810d35156fef1
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5426898646 bytes)**  
+-	Total Size: **5.6 GB (5553526993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64aaddfb26295f95ccf511020d0c27ad2ad357414588d7d6e8e4c71db0373c1a`
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 13 Nov 2017 21:42:13 GMT
-RUN Install update 10.0.14393.1884
-# Wed, 15 Nov 2017 02:39:48 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 15 Nov 2017 02:59:30 GMT
-ENV MONGO_VERSION=3.5.13
-# Wed, 15 Nov 2017 02:59:31 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.5.13-signed.msi
-# Wed, 15 Nov 2017 02:59:31 GMT
-ENV MONGO_DOWNLOAD_SHA256=7ee348277ea8c692e8552aaea4a758f4fb3838431e6627160ef4b060bbaf3b49
-# Wed, 15 Nov 2017 03:01:50 GMT
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Wed, 15 Nov 2017 03:01:52 GMT
+# Thu, 19 Jul 2018 16:45:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Wed, 15 Nov 2017 03:01:55 GMT
+# Thu, 19 Jul 2018 16:45:20 GMT
 EXPOSE 27017/tcp
-# Wed, 15 Nov 2017 03:01:56 GMT
+# Thu, 19 Jul 2018 16:45:22 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -6704,41 +12829,466 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
-		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
-		Size: 1.3 GB (1286993027 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:548545e3bfa5574188201e946d80c077338e1cf3292a3cc901720d63138c4c22`  
-		Last Modified: Wed, 15 Nov 2017 03:02:23 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f8df0c8b1aa41ba99c2e9552977463e3657c825ae65163661f17b84dc0719`  
-		Last Modified: Wed, 15 Nov 2017 03:03:47 GMT  
-		Size: 1.2 KB (1192 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ea6ea7eba67c5cb2ffcf9e423d1d28cdab585b50d6f170abee434dc3dc1c128`  
-		Last Modified: Wed, 15 Nov 2017 03:03:46 GMT  
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b4ade4d48e5af7820e405ea8017711de5a1b8031c9ef75e7113a02f5c251c5`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
-		Size: 1.2 KB (1191 bytes)  
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:961bca6c3758e043266583cd652a09e1c7ca58782094e96f3fe243e32317951e`  
-		Last Modified: Wed, 15 Nov 2017 03:03:58 GMT  
-		Size: 69.9 MB (69911393 bytes)  
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3226d383bcc5642184896e279a9a06cbe55ec38e9a9533c34239b8c1145453`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3d804dfcd7791f707b240f0c9482ac8a9fe22f53e02083bce5ac6c71dd0773f`  
-		Last Modified: Wed, 15 Nov 2017 03:03:43 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c1ae943c69c48ab33e1b692b4df11273b1345d67d3ab096e0004ced56b1a337`  
-		Last Modified: Wed, 15 Nov 2017 03:03:44 GMT  
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:unstable-windowsservercore` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
 		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mongo:unstable-windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:unstable-windowsservercore-1709`
+
+```console
+$ docker pull mongo@sha256:dd9f248c7f9345b46f21767237db98a16ac17b8377b6c1febc4301120283a58e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.16299.547; amd64
+
+### `mongo:unstable-windowsservercore-1709` - windows version 10.0.16299.547; amd64
+
+```console
+$ docker pull mongo@sha256:ce853241ca5d29ad9ed15bf7bdae70056fe3abc4cf817693258e8cd4404860b8
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 GB (3636487991 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8399013c8d4aa6a60f5938d84ea66a091f0e0640aed200bc6821e4cd193818e9`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Fri, 29 Sep 2017 14:43:28 GMT
+RUN Apply image 10.0.16299.15
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:17:23 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:17:24 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:17:25 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:35:30 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:35:32 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:35:34 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:35:35 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:5847a47b8593f7c39aa5e3db09e50b76d42aa8898c0440c70cc9c69747d4c479`  
+		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
+		Size: 2.3 GB (2274300585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bf81ab9252e0a0bc98df5bc0ded356345b808d4a9acd97d5f20da4ddb0fb7d3`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1187 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19c3ff94971a0df59cb2232e7be67a98e3f5f53cfec66f71c6936a98f4b63057`  
+		Last Modified: Sat, 21 Jul 2018 09:58:49 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:18ff760f42215fa6b2105b06bc5ed3bd04d729c7094bbda23ef0a8908d0ec0c7`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27a2f95d16f0209486cf289360986ef83fa50e8c543a97ba30f6a645d0186c38`  
+		Last Modified: Sat, 21 Jul 2018 09:59:46 GMT  
+		Size: 531.1 MB (531059519 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1146efcc8927f5854bdc5fceaa7885054c68e379e78f146d7fe2e9f810ee9d46`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5616dbc3cadf8f9b36a1c30e13da6bb3f9fb251e41914c24c49ce53e16665f4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac6111e011064a95d5c86d13046517fb8019d9aa19e76c2489242625bb0c3f04`  
+		Last Modified: Sat, 21 Jul 2018 09:58:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:unstable-windowsservercore-1803`
+
+```console
+$ docker pull mongo@sha256:35b2c762a6b1d57412e33a17deb0907aa27ec4cf0b8a20970eac9e1d99e4e988
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.17134.165; amd64
+
+### `mongo:unstable-windowsservercore-1803` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:752370b41b3f2aa7a00c3a182020f936eda1623425caf6a0830e9fcea137f17f
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683457150 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:92472d373c617255fa0920fc222842af0246ecf01954c9ef1df89106b2983ab2`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Tue, 17 Jul 2018 20:48:01 GMT
+ENV MONGO_VERSION=4.1.1
+# Tue, 17 Jul 2018 20:48:02 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Tue, 17 Jul 2018 20:48:03 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Tue, 17 Jul 2018 21:02:43 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Tue, 17 Jul 2018 21:02:45 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Tue, 17 Jul 2018 21:02:48 GMT
+EXPOSE 27017/tcp
+# Tue, 17 Jul 2018 21:02:49 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:225f5baa4bea3646d6eb92581981516f830ce95ed09dd27b404f9d06076a742e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:22330611b43dd8c7d64953fb0ef4ce8d4c612d0d18a7f0e5ccfed4e02cfd4c73`  
+		Last Modified: Sat, 21 Jul 2018 10:00:13 GMT  
+		Size: 1.2 KB (1195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fed0e0e9d1547ee53f65c41888a0ba896c9771a95866bfb9437ea85087f144cc`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8cb21a7cd20bcf7acb906264e448c9ff3b7abb4a031f34b8015dbb1ddd8d594`  
+		Last Modified: Sat, 21 Jul 2018 10:01:08 GMT  
+		Size: 530.2 MB (530239288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f141d03c57f485de0d016024f3ab1855ba51835c5811d4487353c2a5a127f5be`  
+		Last Modified: Sat, 21 Jul 2018 10:00:11 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a7fe94ab99e315642a5f16ab83c1489bb0125ac4fcb47224de17683f0f7a771`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0806f892642c07ecaef8c0cc7af5eec5cd5a5a9ad6fd6bf006784a86c15eaa1e`  
+		Last Modified: Sat, 21 Jul 2018 10:00:10 GMT  
+		Size: 1.2 KB (1193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:unstable-windowsservercore-ltsc2016`
+
+```console
+$ docker pull mongo@sha256:9cc12b336f3ac98fde26d415bdd0fafe06cab9df50f4549aea70c4ddda1aad63
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:unstable-windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:73a7fe37c542b1d9720976c346e535f9a5571a8cc3e24bc90256daf04de35e74
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553526993 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4b63887f8b03bb21faebc92127e3342f82468c17ba2b042e3cd5307720a6e329`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Tue, 13 Dec 2016 10:53:31 GMT
+RUN Apply image 10.0.14393.0
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 16:35:39 GMT
+ENV MONGO_VERSION=4.1.1
+# Thu, 19 Jul 2018 16:35:40 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.1.1-signed.msi
+# Thu, 19 Jul 2018 16:35:41 GMT
+ENV MONGO_DOWNLOAD_SHA256=ff14a5e670543a966500d562195dcdd9738b3dd76cb0122b4b3648215e6cf47d
+# Thu, 19 Jul 2018 16:45:16 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:45:17 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:45:20 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:45:22 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
+		Size: 4.1 GB (4069985900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e244861375e1d32a097d21c71f641ba400ef8eac815314472d1d0fed6afcdfc4`  
+		Last Modified: Sat, 21 Jul 2018 09:58:21 GMT  
+		Size: 1.2 KB (1198 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:724ffa6899d0d9bec5572d38f2f98ac267abe390e89130fac43c522a34636dd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:20 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f70f68953085458b0108b6bd8db961ec1b10916db99acaf72093d568621bd82`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e985889d45b448771f228f92f5261ccfc509a45cd8a3e27b18cb779d203121fe`  
+		Last Modified: Sat, 21 Jul 2018 09:58:32 GMT  
+		Size: 64.2 MB (64234422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fdbf7b82bf30f2c941ee3f47f921e76ac3c4f52d3fef5a02024b61ad0b1ebd2`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0faa0f23f982a601e55d62842ebc8a7d58ca602c1bd3a9329879f05faae32c4f`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:208eac53be2f718ce539f85619002e8a916fc090e7ab89529728110fc90bf5da`  
+		Last Modified: Sat, 21 Jul 2018 09:58:18 GMT  
+		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:unstable-xenial`
@@ -7013,48 +13563,49 @@ CMD ["mongod"]
 ## `mongo:windowsservercore`
 
 ```console
-$ docker pull mongo@sha256:7a433605bf77d114d6c5a2947398565baf45b545176c407fa00b63b8c8cb3dd7
+$ docker pull mongo@sha256:c66e82e6696db84ee611ff382224b098ee02561f45e0a9e99db0a0e53c00df48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.14393.2363; amd64
+	-	windows version 10.0.16299.547; amd64
+	-	windows version 10.0.17134.165; amd64
 
-### `mongo:windowsservercore` - windows version 10.0.14393.1944; amd64
+### `mongo:windowsservercore` - windows version 10.0.14393.2363; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **5.6 GB (5553704870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 16:17:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 16:17:18 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 16:17:21 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -7063,77 +13614,77 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `mongo:windowsservercore` - windows version 10.0.16299.125; amd64
+### `mongo:windowsservercore` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.7 GB (3662729672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:50:02 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:50:03 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:50:04 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -7142,87 +13693,166 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
+
+### `mongo:windowsservercore` - windows version 10.0.17134.165; amd64
+
+```console
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 GB (2683666366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:windowsservercore-1709`
 
 ```console
-$ docker pull mongo@sha256:511c3e95ac728c2b41b5886b99110c19fc20fa6a5d965033b0e2ea748fde8a8a
+$ docker pull mongo@sha256:92095f58c882465056fa9921e32978c1b026e7518ee52ebdba3cc3a2af06f228
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.16299.125; amd64
+	-	windows version 10.0.16299.547; amd64
 
-### `mongo:windowsservercore-1709` - windows version 10.0.16299.125; amd64
+### `mongo:windowsservercore-1709` - windows version 10.0.16299.547; amd64
 
 ```console
-$ docker pull mongo@sha256:d89e786e6fd181804336ab6c0b6e1f87e6c96858d9a46c8493a18b921498b94e
+$ docker pull mongo@sha256:1dc9d8d9b1fded1aa825d1671c5bfd6ac217d90fed7d1ef77a8a5b5dc1182f97
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3338494894 bytes)**  
+-	Total Size: **3.7 GB (3662729672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3a52b013210e6623ff35456dc66d228c8a3a17c23fbabb5b507192f82ff784c`
+-	Image ID: `sha256:0cca04bd9225f5139f803c5c82a03c8b6ef617bda0eeed8b09c85b528a0a69a2`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Fri, 29 Sep 2017 14:43:28 GMT
 RUN Apply image 10.0.16299.15
-# Sat, 09 Dec 2017 18:00:03 GMT
-RUN Install update 10.0.16299.125
-# Wed, 13 Dec 2017 02:53:46 GMT
+# Mon, 02 Jul 2018 18:10:50 GMT
+RUN Install update 10.0.16299.547
+# Thu, 19 Jul 2018 14:48:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 01:26:57 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 01:26:58 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 01:26:59 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:40:32 GMT
+# Thu, 19 Jul 2018 15:31:50 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:31:51 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:31:52 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 15:50:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:40:33 GMT
+# Thu, 19 Jul 2018 15:50:02 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:40:36 GMT
+# Thu, 19 Jul 2018 15:50:03 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:40:37 GMT
+# Thu, 19 Jul 2018 15:50:04 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -7231,91 +13861,176 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 17 Oct 2017 15:51:05 GMT  
 		Size: 2.3 GB (2274300585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e50cc21fbc56936f06a5d9dfe4559b7108a89064fcb39dfbe14150d5cfeb912b`  
-		Last Modified: Mon, 11 Dec 2017 22:06:21 GMT  
-		Size: 589.5 MB (589524514 bytes)  
+	-	`sha256:a01c2a39b5bdf158508b424626efbcede4aa9da21f2d4f6ffbd5bff4deb0fb01`  
+		Last Modified: Tue, 10 Jul 2018 23:36:17 GMT  
+		Size: 831.1 MB (831119569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a768329167a641833bde82301c06d629170e446fe0d207a2fe4a55c0a7aeb6ac`  
-		Last Modified: Tue, 19 Dec 2017 04:07:42 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:d0dc9d8f5ea2c4c020baad73aacc777702fac8821ec0901ea9f85ad3490d64a1`  
+		Last Modified: Sat, 21 Jul 2018 09:49:52 GMT  
+		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28e3bb4b9749c84007c7810c65240f8106ba9608f199a7e485e3ba2d21a7a864`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
+	-	`sha256:90524fdb00cc5a0df24c2a9f10884d31f6c992726539262be9c0ae75062faf79`  
+		Last Modified: Sat, 21 Jul 2018 09:54:55 GMT  
+		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5eb01d26b466b99d5e84576986c5ff57c7bd1c12f0bdaca454bff708dfadf0b7`  
+		Last Modified: Sat, 21 Jul 2018 09:54:52 GMT  
+		Size: 1.2 KB (1196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3056f4a17fcf4d34a4a44833b66aca7cdab38c1e629da0e804d30aff682c76d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cbdff71bf2081cc1d3eb10b25d79cb17f8c0c141f0b87a52a591e741d3d6cd8`  
+		Last Modified: Sat, 21 Jul 2018 09:55:50 GMT  
+		Size: 557.3 MB (557301185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:768fde70cf7857f0f1a905117d99906f168e14176826e552a5df49cc4beedc1f`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1184 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5af8d83ed409d4b4d3ca9d19aca43310796f9fea51c1f7a05ab4169d4d39b06c`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0544f397fc2c056bf2a834fddacb1343ce4b6e0720fa13c44c2d0ded9f8162a`  
+		Last Modified: Sat, 21 Jul 2018 09:54:50 GMT  
 		Size: 1.2 KB (1193 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0697d468897e9e6d6bfbe41501d2de9b645a46eab2a4dec083748d5730f6eb3`  
-		Last Modified: Fri, 29 Dec 2017 01:42:24 GMT  
-		Size: 1.2 KB (1195 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2490784db3cb2b59d48ca3176511804c2a85b36d7c9bc793a94eb23c9027dec`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b365c0cf397768a4bf7aac72bb76a6dfc29449089a4fe4b0fca2cef80a70689a`  
-		Last Modified: Fri, 29 Dec 2017 01:43:12 GMT  
-		Size: 474.7 MB (474661422 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e79f395b54d7591d7b11fc73904a05bc00129fcaa0ab30d6d9fc5efe95fbf38b`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:013616d6f38ceab757949e1069006e4895ee0bf317e30970529ab93eb2e1cfe6`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d39a64fef9b2dca3963911767ef3b25812e5b42ff9f66a1cb15b1b540d43ea`  
-		Last Modified: Fri, 29 Dec 2017 01:42:22 GMT  
-		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:windowsservercore-1803`
 
-**does not exist** (yet?)
-
-## `mongo:windowsservercore-ltsc2016`
-
 ```console
-$ docker pull mongo@sha256:df1f2f6d3ea85e4830748919a0ea70268d79194f52296bd7245200abf7a4d3cf
+$ docker pull mongo@sha256:737ff529ed2de5c28f9f5a8ab9729ed72c18be81db5805bfb2efcbfb0e8404d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1944; amd64
+	-	windows version 10.0.17134.165; amd64
 
-### `mongo:windowsservercore-ltsc2016` - windows version 10.0.14393.1944; amd64
+### `mongo:windowsservercore-1803` - windows version 10.0.17134.165; amd64
 
 ```console
-$ docker pull mongo@sha256:3a9345a8268c7fb01a145e0e2477d8723c24f26383ffa728bba17fc836ae9914
+$ docker pull mongo@sha256:fe66b5d49b8177f14775cd1c5a43f09f3802526feee7b74ddf55eabe553e6dd6
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5836956052 bytes)**  
+-	Total Size: **2.7 GB (2683666366 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a77765337380bb8b7086a133a9df23c5ea32c972b31ae3bbb44e1df1e18eec`
+-	Image ID: `sha256:d7f256d9e293d92e7e86fb6a560fd82b0ba5dd338fd81e115731ef98f6fb7bf8`
+-	Default Command: `["mongod","--bind_ip_all"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 12 Apr 2018 09:20:54 GMT
+RUN Apply image 10.0.17134.1
+# Sat, 07 Jul 2018 22:48:41 GMT
+RUN Install update 10.0.17134.165
+# Tue, 17 Jul 2018 20:48:00 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Thu, 19 Jul 2018 15:50:07 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 15:50:08 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 15:50:09 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:07:51 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
+# Thu, 19 Jul 2018 16:07:52 GMT
+VOLUME [C:\data\db C:\data\configdb]
+# Thu, 19 Jul 2018 16:07:55 GMT
+EXPOSE 27017/tcp
+# Thu, 19 Jul 2018 16:07:57 GMT
+CMD ["mongod" "--bind_ip_all"]
+```
+
+-	Layers:
+	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
+		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Size: 1.7 GB (1659688273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:e30fefc566f71c5dd5786e4783ff4ae3ad98804d5279c14dcf806c813fdf8f66`  
+		Last Modified: Tue, 10 Jul 2018 21:54:14 GMT  
+		Size: 493.5 MB (493521205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
+	-	`sha256:24d7aea33bc8c516e9df1805b8a1a30efaf719325f3117e896a5f2eb3972e54a`  
+		Last Modified: Sat, 21 Jul 2018 09:56:49 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a13c4a01802b5ced5aee8776795d940bf23a1180df0069b0829f3df9c75636cf`  
+		Last Modified: Sat, 21 Jul 2018 09:56:47 GMT  
+		Size: 1.2 KB (1200 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c00c50727a978dec62bfa165314f78388127a03c7eb2c6c4bd3648e4a3ea0673`  
+		Last Modified: Sat, 21 Jul 2018 09:56:46 GMT  
+		Size: 1.2 KB (1192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:665ad3a1d60167cc812aff1f2315b7080007d5ec7a73d4457830d13155dcfce3`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:653c8ca5b6c72a72357d80f64e5aa86d716756f9c6e38c519a4c4a1368183f8f`  
+		Last Modified: Sat, 21 Jul 2018 09:57:41 GMT  
+		Size: 530.4 MB (530448518 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94c6bfbdb796413bbf8f85d2bfd0dc191585370add91f587d7bd644681988f7d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1190 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:937489ca712e634a876233084d40fdeafa37b1985280242c025eb07f39cfea5d`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f776d762f8be89ac94007fa1f13c1c64835cb3dc8d5d80c5e314a463eeffae1`  
+		Last Modified: Sat, 21 Jul 2018 09:56:44 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:windowsservercore-ltsc2016`
+
+```console
+$ docker pull mongo@sha256:d05e9d74a53caf1710dc075ec9b6b146326c4e49e4c4c1f45c4a454cfa9f948b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	windows version 10.0.14393.2363; amd64
+
+### `mongo:windowsservercore-ltsc2016` - windows version 10.0.14393.2363; amd64
+
+```console
+$ docker pull mongo@sha256:6b3684c7ae5b418966790362872149c788e55b8ec91edac6cd844fe56bb083a2
+```
+
+-	Docker Version: 17.06.2-ee-13
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 GB (5553704870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:51ff4f2608846eb180e0e3afc4b0bd07ef949978498851ab793f22aab0c62f95`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 11 Dec 2017 21:43:15 GMT
-RUN Install update 10.0.14393.1944
-# Wed, 13 Dec 2017 02:43:53 GMT
+# Tue, 10 Jul 2018 21:16:33 GMT
+RUN Install update 10.0.14393.2363
+# Tue, 17 Jul 2018 09:16:18 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 29 Dec 2017 00:56:09 GMT
-ENV MONGO_VERSION=3.6.1
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_URL=http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.1-signed.msi
-# Fri, 29 Dec 2017 00:56:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=ff04f71216c93de9d96735cece828be5c48478d9b92519f647152ba7f17494de
-# Fri, 29 Dec 2017 01:26:41 GMT
+# Thu, 19 Jul 2018 16:08:00 GMT
+ENV MONGO_VERSION=4.0.0
+# Thu, 19 Jul 2018 16:08:01 GMT
+ENV MONGO_DOWNLOAD_URL=https://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.0-signed.msi
+# Thu, 19 Jul 2018 16:08:02 GMT
+ENV MONGO_DOWNLOAD_SHA256=bf370d32e956eb5849cf92f3d092739a930531378091ea8f9237bd902368ae69
+# Thu, 19 Jul 2018 16:17:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 	if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=all' 		); 	$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongo --version'; mongo --version; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\mongodb\bin\*.pdb -Force; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 29 Dec 2017 01:26:43 GMT
+# Thu, 19 Jul 2018 16:17:17 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 29 Dec 2017 01:26:46 GMT
+# Thu, 19 Jul 2018 16:17:18 GMT
 EXPOSE 27017/tcp
-# Fri, 29 Dec 2017 01:26:48 GMT
+# Thu, 19 Jul 2018 16:17:21 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -7324,41 +14039,41 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3725c17d990aca553df2f531b536a72c07f2781fcbb60b01a557e3666808dda2`  
-		Last Modified: Mon, 11 Dec 2017 21:43:15 GMT  
-		Size: 1.3 GB (1291829199 bytes)  
+	-	`sha256:fb1ebf2c42b6ac63b874d36a405b413fdf6c314131c3605d77e3cee6f485881f`  
+		Last Modified: Tue, 10 Jul 2018 21:16:33 GMT  
+		Size: 1.4 GB (1419298293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c29de164cfa4c6f227e7f0a8df3325f748ead8e6293c8f40db2bdc289e3a94d9`  
-		Last Modified: Tue, 19 Dec 2017 04:07:11 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:331fd417053dd4f3ba6c8293909f00c1104bf81840c35fa27cf2047a7c124804`  
+		Last Modified: Tue, 17 Jul 2018 09:47:17 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7089526b167439127c14e9c504c0fff40f08905bd84680ed04054ab9004fe729`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
+	-	`sha256:74fb50e6bb98a5800f7cf962d75ccbbd197bcf25919d9f21fe6e3f4f3f0c8f37`  
+		Last Modified: Sat, 21 Jul 2018 09:54:21 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:868590eb12c9f4e610329b31ed775eec3ca23ddd8632e19b890e51d0fdf4bc0d`  
+		Last Modified: Sat, 21 Jul 2018 09:54:20 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46871ac23fa560cdb922d43d1352e8e2e3ac0d6bb62fed8b0447ba441b506c70`  
-		Last Modified: Fri, 29 Dec 2017 01:41:07 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:9e9e7f8a9b48bb35a6d8cea81f3576471d11af5c6ad490d945d869df052c6272`  
+		Last Modified: Sat, 21 Jul 2018 09:54:19 GMT  
+		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f15b49c2c0bb9bc31247ac927a2aa1475d647444e1ab2a88fa01d5ee804a67`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:1594c1f52fba0beeb7256de70778915a25e3c61a65cec8738fb8c0565b13ce7b`  
+		Last Modified: Sat, 21 Jul 2018 09:54:33 GMT  
+		Size: 64.4 MB (64412347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe26687608cd705811ce9b5874024082a4ec76314c48f389ac372695ef09af6a`  
-		Last Modified: Fri, 29 Dec 2017 01:41:58 GMT  
-		Size: 475.1 MB (475132603 bytes)  
+	-	`sha256:ee57fca283fb5d3bce683e6af5714366871e31ac7428f7e05a13eb5862f4c730`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6741cc54d376ea2838cc5853c0eb0739d9d1e05c1346aad29bc9cc666ef67f`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:91d1dad23dac2fc2934bf7334f47012e715ea7c7127177a63964f4c629ebd335`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:528989e591fd649b081bd74aec092a9a894314b41b0d1b81f85926694f53460e`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20273f474dc39cb1fd684fa537e37f86129f99f94e0e756be474abc54058c757`  
-		Last Modified: Fri, 29 Dec 2017 01:41:05 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:a55aa2e77f0b9f13f665f8bb116084dcc9830b2decf18fd26ff971820f072c95`  
+		Last Modified: Sat, 21 Jul 2018 09:54:18 GMT  
+		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:xenial`

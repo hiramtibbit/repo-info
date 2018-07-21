@@ -1,7 +1,7 @@
 ## `ruby:latest`
 
 ```console
-$ docker pull ruby@sha256:6a0699466b6eb74d79f874b0383453ed0f699cbcf39d3da4fa6356ee4117e860
+$ docker pull ruby@sha256:92524a28b60e2b3e703d7656d20dfcccaadad6fa01a2fade80189aa532a48f0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -103,86 +103,86 @@ CMD ["irb"]
 ### `ruby:latest` - linux; arm variant v5
 
 ```console
-$ docker pull ruby@sha256:3acf08f9e325ea1807bb090bc26f64a285b9c3fab62ecd09599bb298457e8ab7
+$ docker pull ruby@sha256:f29db6a7340f1d1fd39b837d0bd55bfa57a9a10d077224cec9b7dff358736c3a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328808304 bytes)**  
+-	Total Size: **328.8 MB (328802965 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8f7b896a08ea87f7b9a8185cfd4197c1ddc64568597f04c9c7c85c22519e78f`
+-	Image ID: `sha256:3f99c6904bbaa1827695cfd7eed079049f939336b8d9b9ecd73c1daef25992bf`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Wed, 27 Jun 2018 08:53:37 GMT
-ADD file:d4d15d0259f3c83403f3d0565cbcd5c1d54e80367c46d9a05af1454c0d0e13ac in / 
-# Wed, 27 Jun 2018 08:53:37 GMT
+# Tue, 17 Jul 2018 08:55:48 GMT
+ADD file:bf9eafe81eb19079a2f2055b6727392afa823dfa125a4b1696537cf603115e52 in / 
+# Tue, 17 Jul 2018 08:55:49 GMT
 CMD ["bash"]
-# Wed, 27 Jun 2018 09:38:04 GMT
+# Tue, 17 Jul 2018 11:49:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 09:38:14 GMT
+# Tue, 17 Jul 2018 11:49:19 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 27 Jun 2018 09:38:54 GMT
+# Tue, 17 Jul 2018 11:50:10 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 09:40:28 GMT
+# Tue, 17 Jul 2018 11:52:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jun 2018 11:19:55 GMT
+# Sat, 21 Jul 2018 09:36:04 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Wed, 27 Jun 2018 11:26:04 GMT
+# Sat, 21 Jul 2018 09:42:22 GMT
 ENV RUBY_MAJOR=2.5
-# Wed, 27 Jun 2018 11:26:04 GMT
+# Sat, 21 Jul 2018 09:42:22 GMT
 ENV RUBY_VERSION=2.5.1
-# Wed, 27 Jun 2018 11:26:04 GMT
+# Sat, 21 Jul 2018 09:42:22 GMT
 ENV RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d
-# Wed, 27 Jun 2018 11:26:05 GMT
+# Sat, 21 Jul 2018 09:42:23 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Wed, 27 Jun 2018 11:26:05 GMT
-ENV BUNDLER_VERSION=1.16.2
-# Wed, 27 Jun 2018 11:28:33 GMT
+# Sat, 21 Jul 2018 09:42:23 GMT
+ENV BUNDLER_VERSION=1.16.3
+# Sat, 21 Jul 2018 09:44:46 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Wed, 27 Jun 2018 11:28:34 GMT
+# Sat, 21 Jul 2018 09:44:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 27 Jun 2018 11:28:34 GMT
+# Sat, 21 Jul 2018 09:44:47 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 27 Jun 2018 11:28:34 GMT
+# Sat, 21 Jul 2018 09:44:47 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Jun 2018 11:28:35 GMT
+# Sat, 21 Jul 2018 09:44:48 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Wed, 27 Jun 2018 11:28:35 GMT
+# Sat, 21 Jul 2018 09:44:48 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d8a10c27f1911457fcf0131342ab203c0d98290ccb8731364e7f57f489cadcd4`  
-		Last Modified: Wed, 27 Jun 2018 09:02:36 GMT  
-		Size: 44.0 MB (44040132 bytes)  
+	-	`sha256:e0468d51364430736eb1d0d85f3dd880c4bebe4015787330b6c9227843acb4a6`  
+		Last Modified: Tue, 17 Jul 2018 09:08:05 GMT  
+		Size: 44.0 MB (44033063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac190b263215d7b1af43574c289285d9adca5216b1188d00cd5d71104d352db2`  
-		Last Modified: Wed, 27 Jun 2018 09:48:30 GMT  
-		Size: 9.8 MB (9842587 bytes)  
+	-	`sha256:0ad0b2352b28fea9acd0f76fa8814e168b15f21efe51602d644728d229d9bab9`  
+		Last Modified: Tue, 17 Jul 2018 12:02:04 GMT  
+		Size: 9.8 MB (9810102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2324a9fd4ad44784b0c5e6d4b25dd11d1cdb7ed900fbcf69c5aa74391a37a10`  
-		Last Modified: Wed, 27 Jun 2018 09:48:29 GMT  
-		Size: 4.2 MB (4153804 bytes)  
+	-	`sha256:864851e50dc1192bbdfa9be12666036d86148172f3ead845ee38c8033885580e`  
+		Last Modified: Tue, 17 Jul 2018 12:02:03 GMT  
+		Size: 4.2 MB (4153726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f66256cabdbc7741d09f42298fe50050b54a4c15b5961aba608f067ab0ef1de7`  
-		Last Modified: Wed, 27 Jun 2018 09:49:04 GMT  
-		Size: 48.3 MB (48262675 bytes)  
+	-	`sha256:27ff07a7047bdbf3f1d34d007232ddb301a8ad8db690f9a765f2a2f4b46f4bae`  
+		Last Modified: Tue, 17 Jul 2018 12:02:46 GMT  
+		Size: 48.3 MB (48264515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c925d031c160388663e82b7d2d4df8da819e2bf66e355daae5223c89fc134002`  
-		Last Modified: Wed, 27 Jun 2018 09:50:14 GMT  
-		Size: 201.4 MB (201418127 bytes)  
+	-	`sha256:7327094fc014200d5b71d14c49f15466f8c284750551dea596bf306e366772b4`  
+		Last Modified: Tue, 17 Jul 2018 12:04:05 GMT  
+		Size: 201.4 MB (201446682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b681a52f1e05087af1fc36a3906dac0369f61e3365643ca99ae23f41bad1ecb`  
-		Last Modified: Wed, 27 Jun 2018 12:16:51 GMT  
-		Size: 207.0 B  
+	-	`sha256:1160bd57de095e221b8bf3b740c3c308576caca4d4cc6212e4d70e13482c2ca8`  
+		Last Modified: Sat, 21 Jul 2018 10:32:41 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6235fb11e80fa02293c217d67b605f2b3654e934f3c01197e5e3ca7347a07a69`  
-		Last Modified: Wed, 27 Jun 2018 12:18:19 GMT  
-		Size: 21.1 MB (21090590 bytes)  
+	-	`sha256:6397d4a5046644677b21a495c2ec4246ad2fbba272606fac69159b457c08243f`  
+		Last Modified: Sat, 21 Jul 2018 10:35:03 GMT  
+		Size: 21.1 MB (21094490 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16e67530a0e1f8664fc47dc5a116129b791f51f46596e17e673a26edc742af22`  
-		Last Modified: Wed, 27 Jun 2018 12:18:14 GMT  
+	-	`sha256:6c95ecbe6035e19be98c726b72ddc02d091b9bccdec1a9f6fd774945339ab587`  
+		Last Modified: Sat, 21 Jul 2018 10:34:58 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
