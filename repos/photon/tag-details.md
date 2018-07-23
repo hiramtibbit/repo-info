@@ -163,7 +163,7 @@ CMD ["/bin/bash"]
 ## `photon:latest`
 
 ```console
-$ docker pull photon@sha256:862b9722055e076b720c86a98b10914a6f38587a060b9218203de16cd4dd4b68
+$ docker pull photon@sha256:2a921e5e1275ec708f1228e0c17069b7292f7ea1e7ed49a12417014295cd10dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -173,27 +173,27 @@ $ docker pull photon@sha256:862b9722055e076b720c86a98b10914a6f38587a060b9218203d
 ### `photon:latest` - linux; amd64
 
 ```console
-$ docker pull photon@sha256:dc1ba1c08381069a6a4912df22526b2fad31532ad9dac23e0c5527ed45a44c18
+$ docker pull photon@sha256:900f3995e09c61dfda09165cdb07a3cc78977dcf1bc221419345a39df6b73da8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14111842 bytes)**  
+-	Total Size: **14.1 MB (14124066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d47abd66e8564e53141021967f5f43529bc78517819db30dab92fa95dc12856`
+-	Image ID: `sha256:1ca29a56afa957b10a6aa01d7079effe2d8afd0d4cefc3d0fc14bb953c256924`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 16 Jul 2018 22:20:46 GMT
-ADD file:77a66fdf8413b3616ede568af7347dbe9ed06f1f07e3a61108b02c79875ccc74 in / 
-# Mon, 16 Jul 2018 22:20:53 GMT
-LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20180714
-# Mon, 16 Jul 2018 22:20:54 GMT
+# Mon, 23 Jul 2018 20:21:49 GMT
+ADD file:b98bfae997e7d335bd3051d3c27d564965dae2e0e11df16156d4698d5d6eedab in / 
+# Mon, 23 Jul 2018 20:21:49 GMT
+LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20180720
+# Mon, 23 Jul 2018 20:21:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:72e844cd79eec138cb039c1d64e10e7ac011f1875214a1a5537dc30350c065c4`  
-		Last Modified: Mon, 16 Jul 2018 22:22:26 GMT  
-		Size: 14.1 MB (14111842 bytes)  
+	-	`sha256:84a6010da53535b758a0e0b28edfeb5f8c80d4db3a5d3da7d4402bc3a90a089b`  
+		Last Modified: Mon, 23 Jul 2018 20:23:12 GMT  
+		Size: 14.1 MB (14124066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

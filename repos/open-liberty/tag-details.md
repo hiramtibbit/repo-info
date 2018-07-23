@@ -15,6 +15,12 @@
 -	[`open-liberty:microProfile1`](#open-libertymicroprofile1)
 -	[`open-liberty:microProfile1-java8-ibm`](#open-libertymicroprofile1-java8-ibm)
 -	[`open-liberty:microProfile1-java8-ibmsfj`](#open-libertymicroprofile1-java8-ibmsfj)
+-	[`open-liberty:springBoot1`](#open-libertyspringboot1)
+-	[`open-liberty:springBoot1-java8-ibm`](#open-libertyspringboot1-java8-ibm)
+-	[`open-liberty:springBoot1-java8-ibmsfj`](#open-libertyspringboot1-java8-ibmsfj)
+-	[`open-liberty:springBoot2`](#open-libertyspringboot2)
+-	[`open-liberty:springBoot2-java8-ibm`](#open-libertyspringboot2-java8-ibm)
+-	[`open-liberty:springBoot2-java8-ibmsfj`](#open-libertyspringboot2-java8-ibmsfj)
 -	[`open-liberty:webProfile7`](#open-libertywebprofile7)
 -	[`open-liberty:webProfile7-java8-ibm`](#open-libertywebprofile7-java8-ibm)
 -	[`open-liberty:webProfile7-java8-ibmsfj`](#open-libertywebprofile7-java8-ibmsfj)
@@ -4906,6 +4912,30 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Sat, 07 Jul 2018 04:55:44 GMT  
 		Size: 11.1 MB (11069872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:springBoot1`
+
+**does not exist** (yet?)
+
+## `open-liberty:springBoot1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:springBoot1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:springBoot2`
+
+**does not exist** (yet?)
+
+## `open-liberty:springBoot2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:springBoot2-java8-ibmsfj`
+
+**does not exist** (yet?)
 
 ## `open-liberty:webProfile7`
 
