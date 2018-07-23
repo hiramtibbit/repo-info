@@ -1,7 +1,7 @@
 ## `couchbase:community`
 
 ```console
-$ docker pull couchbase@sha256:e3450f1523f5e8b54dabd6e73b2a9dec727d5a32d9c66eb0cf20edd559434e24
+$ docker pull couchbase@sha256:5c462a386702db1902828bf3cb9ec14ca0d8328b24c9c6a433eefbfb326aa91b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull couchbase@sha256:e3450f1523f5e8b54dabd6e73b2a9dec727d5a32d9c66eb0c
 ### `couchbase:community` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:f521670d541a61c9ac3330b2a1f515e0d1c32bf137172ab10b1e943d371287d7
+$ docker pull couchbase@sha256:b31e2f9d0207a1702dde48f7c88a730091c89f59abc4aa95f431ffb5c57fd2e7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **190.5 MB (190527750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8352008e8dfe7860216c37ff5cdf3b8e4bf63d8102229c0ea4b3b0d564701245`
+-	Image ID: `sha256:d193d0d0d5736fddbed08c6016937c5faafe14a19726895d4782671bc9d1ba5a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
@@ -74,9 +74,9 @@ COPY file:5d67fa23771c82cbce2e1a74900e7c0ce4d1466a002273f57ab13d52d6b844b3 in /
 ENTRYPOINT ["/entrypoint.sh"]
 # Tue, 17 Jul 2018 10:56:46 GMT
 CMD ["couchbase-server"]
-# Tue, 17 Jul 2018 10:56:46 GMT
-EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 18094/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp
-# Tue, 17 Jul 2018 10:56:46 GMT
+# Mon, 23 Jul 2018 21:21:25 GMT
+EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 18094/tcp 18095/tcp 18096/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp 8095/tcp 8096/tcp
+# Mon, 23 Jul 2018 21:21:25 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
