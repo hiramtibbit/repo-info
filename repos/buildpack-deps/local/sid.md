@@ -1095,20 +1095,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-25
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-25.dsc' gcc-7_7.3.0-25.dsc 25567 SHA256:32aaa6b7f432a9c2343005ff7fa92ffb2acd383a61bbdfbf17f3cf8a7d6f5c35
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 70153891 SHA256:6238c453fce162d3fdcd937bdfab4898c26ed0d2c16cd8c0d980e245ed2051d3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.3.0-25.diff.gz' gcc-7_7.3.0-25.diff.gz 1131561 SHA256:68d711beda1cfa0d214161406366e53ad9e721590773cfedc332217e7e98fdb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.3.0-25/
 
-- https://sources.debian.net/src/gcc-7/7.3.0-25/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.3.0-25/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.3.0-25/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8.1.0-10`
 
@@ -1135,20 +1128,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.1.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-10.dsc' gcc-8_8.1.0-10.dsc 32311 SHA256:8e67df55276241febd6822eebdab0ed1a24727df1719044eb6dcf5fa715ab23b
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 73111115 SHA256:e4cdc357a44fcf8fddb9d01593b14fdad0086ec71d4c061994a7d912522ba3a3
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-10.diff.gz' gcc-8_8.1.0-10.diff.gz 3511079 SHA256:48bcd10bfefccc2490ec31b79a5ac0e36b7baf6a92f63dce699a6fb1ef20eab8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8.1.0-10/
 
-- https://sources.debian.net/src/gcc-8/8.1.0-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.1.0-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.1.0-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.176`
 
@@ -1162,19 +1148,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.dsc' gcc-defaults_1.176.dsc 15357 SHA256:f7e4f4ac066b7c3bd9b4f3b00331ddb0d23003ebcfce89f1c22534c67f579f85
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.tar.gz' gcc-defaults_1.176.tar.gz 71780 SHA256:8805548d86c153ccbc54e2aefcf0981f5152482dfe50a3793097d15b4bbb2b0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.176/
 
-- https://sources.debian.net/src/gcc-defaults/1.176/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.176/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.176/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -1609,20 +1589,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-harfbuzz-0.0/copyright`, `/usr/sh
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.8.3-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.dsc' harfbuzz_1.8.3-1.dsc 2295 SHA256:5fd1e82172a8156191cb6a3583bf19cf480c021c20542d485a8b08e86ca5dd12
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3.orig.tar.bz2' harfbuzz_1.8.3.orig.tar.bz2 3828043 SHA256:2ac2ad1ca26253bfe7f437adcd034c84dad0e7c2c0fe008d6051b754fa987a9e
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.debian.tar.xz' harfbuzz_1.8.3-1.debian.tar.xz 8828 SHA256:e97c2b54f21b755c9ad15bd1d7d206929ce6ba885b9d92f8af5059ab335df16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/
 
-- https://sources.debian.net/src/harfbuzz/1.8.3-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.8.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -2900,20 +2873,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.8.0-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.dsc' libssh2_1.8.0-1.dsc 1860 SHA256:14837d645e77d08fbf00333dee60129be3aeb40c956294cb7bd0b79f456a3fb0
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.debian.tar.xz' libssh2_1.8.0-1.debian.tar.xz 7320 SHA256:79a68889d8102922b92b1757b1d5993cb70faa9a259aca21c2db2e5e55d30b62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.8.0-1/
 
-- https://sources.debian.net/src/libssh2/1.8.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.8.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
 
@@ -3405,20 +3371,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.17.6-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.17.6-2.dsc' linux_4.17.6-2.dsc 148913 SHA256:b45528de654cd755682a04dd0bbf7053ec48634e66506c2d79a0a0b3d470278e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.17.6.orig.tar.xz' linux_4.17.6.orig.tar.xz 106510472 SHA256:6d81b4044d0e3478f75645b2f61fb9706cdf5df72dd7e7f76c8b20ce9c240976
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.17.6-2.debian.tar.xz' linux_4.17.6-2.debian.tar.xz 2886204 SHA256:5b79575413f8ac82ed801b84cf180fc0b404ccf534b846631767d2cd4c8dad0c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.17.6-2/
 
-- https://sources.debian.net/src/linux/4.17.6-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.17.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.17.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 

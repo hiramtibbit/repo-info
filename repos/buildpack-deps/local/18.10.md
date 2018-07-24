@@ -300,14 +300,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-22ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-22ubuntu1.dsc' binutils_2.30-22ubuntu1.dsc 11552 SHA256:5a75059c9511f91037e96cb501937f216c61308625f4842df3039dbf28e6519a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-22ubuntu1.debian.tar.xz' binutils_2.30-22ubuntu1.debian.tar.xz 595760 SHA256:2e5b5cac64055126338576931f68616f5639ccfde3e9f2e5da3ed8bd3510541d
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -900,14 +895,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-24ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-24ubuntu1.dsc' gcc-7_7.3.0-24ubuntu1.dsc 28252 SHA256:25ea9f0cabb538fab662c4feafa0b3c1da01f99092059034bffcecc8e0a21270
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-24ubuntu1.diff.gz' gcc-7_7.3.0-24ubuntu1.diff.gz 979334 SHA256:f3dd34111db6486a5e807cfd6dd3851a57cf4bfa47bfa53122b7481fca467534
-```
 
 ### `dpkg` source package: `gcc-8=8.1.0-9ubuntu1`
 
@@ -934,14 +924,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.1.0-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0-9ubuntu1.dsc' gcc-8_8.1.0-9ubuntu1.dsc 36267 SHA256:63a29b84afd583927a638d32651e3dbc42d982b444c5a7c250fc8e47e46e660e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 75076465 SHA256:a2cb26c5904443efa2ce1a7f037f1ff076b3aba5d23c5e46dc6bb12de8f180c9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0-9ubuntu1.diff.gz' gcc-8_8.1.0-9ubuntu1.diff.gz 3344611 SHA256:885f53c6c8fbfb0f54851b74a5e326f5d598181ac7764bd84ff14b2dce9e4c4a
-```
 
 ### `dpkg` source package: `gcc-defaults=1.176ubuntu3`
 
@@ -955,13 +940,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu3.dsc' gcc-defaults_1.176ubuntu3.dsc 15220 SHA256:874fe57a768e1562b34472446b781badde807f42b97ff7bea3216cd8d468fbdb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.176ubuntu3.tar.gz' gcc-defaults_1.176ubuntu3.tar.gz 208519 SHA256:702b1b50d78a8ef8956284a166cd95a4f6d0772cb5082e3ebf900c51b98707f1
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -1318,14 +1299,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-harfbuzz-0.0/copyright`, `/usr/sh
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.8.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.dsc' harfbuzz_1.8.3-1.dsc 2295 SHA256:5fd1e82172a8156191cb6a3583bf19cf480c021c20542d485a8b08e86ca5dd12
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.8.3.orig.tar.bz2' harfbuzz_1.8.3.orig.tar.bz2 3828043 SHA256:2ac2ad1ca26253bfe7f437adcd034c84dad0e7c2c0fe008d6051b754fa987a9e
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.debian.tar.xz' harfbuzz_1.8.3-1.debian.tar.xz 8828 SHA256:e97c2b54f21b755c9ad15bd1d7d206929ce6ba885b9d92f8af5059ab335df16c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/
+
 
 ### `dpkg` source package: `heimdal=7.5.0+dfsg-2`
 
@@ -1590,14 +1570,9 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.5.9-9.2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu3.dsc' keyutils_1.5.9-9.2ubuntu3.dsc 2200 SHA256:09013eb278bd09d464094f0ac30024d96e39d02bb101131fa493323caa1287f7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu3.debian.tar.xz' keyutils_1.5.9-9.2ubuntu3.debian.tar.xz 18572 SHA256:5036bbc4b921abfc29751acb961b82e9c0e565a62dedb09629f22599fb4ff9ad
-```
 
 ### `dpkg` source package: `krb5=1.16-2build1`
 
@@ -1921,15 +1896,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.31-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.31-1.dsc' libgpg-error_1.31-1.dsc 2060 SHA256:f40ac0fc39b34012e85b20d40a9340d1110adbe13d199f2a5f8636e6e0b72451
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.31.orig.tar.bz2' libgpg-error_1.31.orig.tar.bz2 901728 SHA256:40d0a823c9329478063903192a1f82496083b277265904878f4bc09e0db7a4ef
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.31.orig.tar.bz2.asc' libgpg-error_1.31.orig.tar.bz2.asc 534 SHA256:35c40510967492541132ef40c29218a47dacf6e77b790c8eeceb0f68e25494c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.31-1.debian.tar.xz' libgpg-error_1.31-1.debian.tar.xz 15268 SHA256:98ea9eddc818abdebdace779a49d92293695d3d52e5e81a049c9f7297cd807c2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.31-1/
+
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
@@ -2361,14 +2334,9 @@ Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=0.9.9-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.dsc' libunistring_0.9.9-0ubuntu1.dsc 1974 SHA256:ae7c9c50fd8ba84a19b4304deb7e924e3c51e5285909a373d5bccb3b6f85b6fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9.orig.tar.xz' libunistring_0.9.9.orig.tar.xz 2042992 SHA256:a4d993ecfce16cf503ff7579f5da64619cee66226fb3b998dafb706190d9a833
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.debian.tar.xz' libunistring_0.9.9-0ubuntu1.debian.tar.xz 40024 SHA256:86f14f6266d66b9aa613ac2263b6d73163ab3865144c1a68fc6fb401e52360dc
-```
 
 ### `dpkg` source package: `libwebp=0.6.1-2`
 
@@ -2468,14 +2436,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13-1.dsc' libxcb_1.13-1.dsc 5213 SHA256:b62c8d9b9fa0299a4b4276bfdd520f43e461fc130824447e0e59a57b5b6def98
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13-1.diff.gz' libxcb_1.13-1.diff.gz 24982 SHA256:02855328dbea159371d90648e63cbb2dff6101f952537cf7cdfe2281e968a55a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxcb/1.13-1/
+
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
