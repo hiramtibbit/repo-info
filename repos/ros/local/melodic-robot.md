@@ -4121,14 +4121,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-24.26
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-24.26.dsc' linux_4.15.0-24.26.dsc 7498 SHA256:0422ba24ff67849303a7e6621522b8957cb8ff06282f36c806e98be523877d61
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-24.26.diff.gz' linux_4.15.0-24.26.diff.gz 7697343 SHA256:24bd0dd13cbd43f2ea88e71e9de3caf14902bae3edc2269870a77c2ead73b951
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -5039,10 +5034,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.dsc' perl_5.26.1-6ubuntu0.1.dsc 2752 SHA256:fcb5edbbb97a12fcd591e38b870e7726e74313287a08cce36669594a523ceed6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.debian.tar.xz' perl_5.26.1-6ubuntu0.1.debian.tar.xz 168888 SHA256:e03bf924bee8540d755495b49b16e1e0d9be8e28514375d331a27744f87ad6f4
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.dsc' perl_5.26.1-6ubuntu0.1.dsc 2752 SHA256:fcb5edbbb97a12fcd591e38b870e7726e74313287a08cce36669594a523ceed6
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.debian.tar.xz' perl_5.26.1-6ubuntu0.1.debian.tar.xz 168888 SHA256:e03bf924bee8540d755495b49b16e1e0d9be8e28514375d331a27744f87ad6f4
 ```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
