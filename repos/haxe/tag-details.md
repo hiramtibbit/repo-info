@@ -2117,7 +2117,7 @@ CMD ["haxe"]
 ## `haxe:3.2.1-alpine`
 
 ```console
-$ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc6756c04e583b
+$ docker pull haxe@sha256:e38dd153f7ade39b43f5c36be6c4d9fdbc89bfe0d15aa08c99a30857a33263b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2127,55 +2127,55 @@ $ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc67
 ### `haxe:3.2.1-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5aeb5e818437e983be5dc2972c9c2265ac047efce77b43dcce803c09954a66d4
+$ docker pull haxe@sha256:d1f702104568bdc3ed875e7f7d4d5af4f072354a93b9ea435be479635a0bf2f5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23582105 bytes)**  
+-	Total Size: **23.3 MB (23258211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f72f0891958523091f05640ecb5048e6344ad63367f7abb87194067b19c99e7b`
+-	Image ID: `sha256:b260796f4e1948f338292debbda8efc92ad2bd16ff0c9caf611c27c9d75da3d0`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:19:03 GMT
+# Tue, 24 Jul 2018 20:30:46 GMT
 ENV HAXE_VERSION=3.2.1
-# Fri, 06 Jul 2018 15:19:04 GMT
+# Tue, 24 Jul 2018 20:30:46 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:20:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:20:15 GMT
+# Tue, 24 Jul 2018 20:31:52 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:31:53 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d467319249704097c9b5bf6e5befbf776ff7b814cd4a9c3a182049b084c44cc9`  
-		Last Modified: Fri, 06 Jul 2018 15:33:43 GMT  
-		Size: 21.2 MB (21170229 bytes)  
+	-	`sha256:f97a4e442b2c6365ffda37ca01a7d829640ec20cd8c61d61e39ee0f2680eddec`  
+		Last Modified: Tue, 24 Jul 2018 21:22:16 GMT  
+		Size: 20.7 MB (20742677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:6d46e1c16fcce347a2505c5083b984ee6468e0e8eef2adf02ecc515f0e20ed05
+$ docker pull haxe@sha256:073286fc9a1d198975e77cea19ec0c0b87f9def3834e9228ade1b30763149ee0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2185,14 +2185,14 @@ $ docker pull haxe@sha256:6d46e1c16fcce347a2505c5083b984ee6468e0e8eef2adf02ecc51
 ### `haxe:3.2.1-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:590e087034cd7c06bba511bf2510e92c6bf9897b7905c74f78f11c7f4c2474b2
+$ docker pull haxe@sha256:6b9ff97d64bbb06627e4b58eb3dbb16eec526b9161a89e8e4dc73c142253a3b4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.6 MB (22557012 bytes)**  
+-	Total Size: **22.6 MB (22557039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5720fc1492b3b06fe1f108b3e4c7da45b0a8e3f424a46637fd092b74eac0cba1`
+-	Image ID: `sha256:a86d80f884f8e41107fcb7981ca6d470083c1df8dd8ed72c72357db35e2eb939`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -2210,9 +2210,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.2.1
 # Fri, 06 Jul 2018 15:20:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:21:38 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:21:47 GMT
+# Tue, 24 Jul 2018 20:35:09 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:35:09 GMT
 CMD ["haxe"]
 ```
 
@@ -2225,15 +2225,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:807c099f83c90498978ded55229df5735f7fccf1f0995d4902ad58b51943f023`  
-		Last Modified: Fri, 06 Jul 2018 15:34:44 GMT  
-		Size: 20.2 MB (20191067 bytes)  
+	-	`sha256:da2e083b0c48b350197bd122eea0c20b70c5dc1e0b0035fd1850e0510952cd6e`  
+		Last Modified: Tue, 24 Jul 2018 21:24:42 GMT  
+		Size: 20.2 MB (20191094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc6756c04e583b
+$ docker pull haxe@sha256:2b3f055e70fcf5e312bef44d055020748a3f7ee0d08bc43058eddec6c5be888c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2243,14 +2243,14 @@ $ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc67
 ### `haxe:3.2.1-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5aeb5e818437e983be5dc2972c9c2265ac047efce77b43dcce803c09954a66d4
+$ docker pull haxe@sha256:b638cb7958796e59a9a3afc8458d3b046c7953fc4fd1eb781e810e018bfa90fc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23582105 bytes)**  
+-	Total Size: **23.6 MB (23582863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f72f0891958523091f05640ecb5048e6344ad63367f7abb87194067b19c99e7b`
+-	Image ID: `sha256:c531715ad91a560ecf79b1ca999327a976e47fc7193857d8c5de4e9e3824730e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -2268,9 +2268,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.2.1
 # Fri, 06 Jul 2018 15:19:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:20:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:20:15 GMT
+# Tue, 24 Jul 2018 20:33:27 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:33:28 GMT
 CMD ["haxe"]
 ```
 
@@ -2283,14 +2283,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d467319249704097c9b5bf6e5befbf776ff7b814cd4a9c3a182049b084c44cc9`  
-		Last Modified: Fri, 06 Jul 2018 15:33:43 GMT  
-		Size: 21.2 MB (21170229 bytes)  
+	-	`sha256:b5d1e0ad7c86c618cfca864fd7a1464055442e559a540fed1998aba37604cfbc`  
+		Last Modified: Tue, 24 Jul 2018 21:23:44 GMT  
+		Size: 21.2 MB (21170987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:e38dd153f7ade39b43f5c36be6c4d9fdbc89bfe0d15aa08c99a30857a33263b6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.2.1-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:d1f702104568bdc3ed875e7f7d4d5af4f072354a93b9ea435be479635a0bf2f5
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.3 MB (23258211 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b260796f4e1948f338292debbda8efc92ad2bd16ff0c9caf611c27c9d75da3d0`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:30:46 GMT
+ENV HAXE_VERSION=3.2.1
+# Tue, 24 Jul 2018 20:30:46 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:31:52 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:31:53 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f97a4e442b2c6365ffda37ca01a7d829640ec20cd8c61d61e39ee0f2680eddec`  
+		Last Modified: Tue, 24 Jul 2018 21:22:16 GMT  
+		Size: 20.7 MB (20742677 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1-jessie`
 
@@ -2844,7 +2898,7 @@ CMD ["haxe"]
 ## `haxe:3.2-alpine`
 
 ```console
-$ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc6756c04e583b
+$ docker pull haxe@sha256:e38dd153f7ade39b43f5c36be6c4d9fdbc89bfe0d15aa08c99a30857a33263b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2854,55 +2908,55 @@ $ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc67
 ### `haxe:3.2-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5aeb5e818437e983be5dc2972c9c2265ac047efce77b43dcce803c09954a66d4
+$ docker pull haxe@sha256:d1f702104568bdc3ed875e7f7d4d5af4f072354a93b9ea435be479635a0bf2f5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23582105 bytes)**  
+-	Total Size: **23.3 MB (23258211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f72f0891958523091f05640ecb5048e6344ad63367f7abb87194067b19c99e7b`
+-	Image ID: `sha256:b260796f4e1948f338292debbda8efc92ad2bd16ff0c9caf611c27c9d75da3d0`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:19:03 GMT
+# Tue, 24 Jul 2018 20:30:46 GMT
 ENV HAXE_VERSION=3.2.1
-# Fri, 06 Jul 2018 15:19:04 GMT
+# Tue, 24 Jul 2018 20:30:46 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:20:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:20:15 GMT
+# Tue, 24 Jul 2018 20:31:52 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:31:53 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d467319249704097c9b5bf6e5befbf776ff7b814cd4a9c3a182049b084c44cc9`  
-		Last Modified: Fri, 06 Jul 2018 15:33:43 GMT  
-		Size: 21.2 MB (21170229 bytes)  
+	-	`sha256:f97a4e442b2c6365ffda37ca01a7d829640ec20cd8c61d61e39ee0f2680eddec`  
+		Last Modified: Tue, 24 Jul 2018 21:22:16 GMT  
+		Size: 20.7 MB (20742677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:6d46e1c16fcce347a2505c5083b984ee6468e0e8eef2adf02ecc515f0e20ed05
+$ docker pull haxe@sha256:073286fc9a1d198975e77cea19ec0c0b87f9def3834e9228ade1b30763149ee0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2912,14 +2966,14 @@ $ docker pull haxe@sha256:6d46e1c16fcce347a2505c5083b984ee6468e0e8eef2adf02ecc51
 ### `haxe:3.2-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:590e087034cd7c06bba511bf2510e92c6bf9897b7905c74f78f11c7f4c2474b2
+$ docker pull haxe@sha256:6b9ff97d64bbb06627e4b58eb3dbb16eec526b9161a89e8e4dc73c142253a3b4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.6 MB (22557012 bytes)**  
+-	Total Size: **22.6 MB (22557039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5720fc1492b3b06fe1f108b3e4c7da45b0a8e3f424a46637fd092b74eac0cba1`
+-	Image ID: `sha256:a86d80f884f8e41107fcb7981ca6d470083c1df8dd8ed72c72357db35e2eb939`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -2937,9 +2991,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.2.1
 # Fri, 06 Jul 2018 15:20:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:21:38 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:21:47 GMT
+# Tue, 24 Jul 2018 20:35:09 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:35:09 GMT
 CMD ["haxe"]
 ```
 
@@ -2952,15 +3006,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:807c099f83c90498978ded55229df5735f7fccf1f0995d4902ad58b51943f023`  
-		Last Modified: Fri, 06 Jul 2018 15:34:44 GMT  
-		Size: 20.2 MB (20191067 bytes)  
+	-	`sha256:da2e083b0c48b350197bd122eea0c20b70c5dc1e0b0035fd1850e0510952cd6e`  
+		Last Modified: Tue, 24 Jul 2018 21:24:42 GMT  
+		Size: 20.2 MB (20191094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc6756c04e583b
+$ docker pull haxe@sha256:2b3f055e70fcf5e312bef44d055020748a3f7ee0d08bc43058eddec6c5be888c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2970,14 +3024,14 @@ $ docker pull haxe@sha256:43d262ec9f894d4b9420e11bbf0fd0f7ae7ce24835958f4684cc67
 ### `haxe:3.2-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5aeb5e818437e983be5dc2972c9c2265ac047efce77b43dcce803c09954a66d4
+$ docker pull haxe@sha256:b638cb7958796e59a9a3afc8458d3b046c7953fc4fd1eb781e810e018bfa90fc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23582105 bytes)**  
+-	Total Size: **23.6 MB (23582863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f72f0891958523091f05640ecb5048e6344ad63367f7abb87194067b19c99e7b`
+-	Image ID: `sha256:c531715ad91a560ecf79b1ca999327a976e47fc7193857d8c5de4e9e3824730e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -2995,9 +3049,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.2.1
 # Fri, 06 Jul 2018 15:19:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:20:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:20:15 GMT
+# Tue, 24 Jul 2018 20:33:27 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:33:28 GMT
 CMD ["haxe"]
 ```
 
@@ -3010,14 +3064,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d467319249704097c9b5bf6e5befbf776ff7b814cd4a9c3a182049b084c44cc9`  
-		Last Modified: Fri, 06 Jul 2018 15:33:43 GMT  
-		Size: 21.2 MB (21170229 bytes)  
+	-	`sha256:b5d1e0ad7c86c618cfca864fd7a1464055442e559a540fed1998aba37604cfbc`  
+		Last Modified: Tue, 24 Jul 2018 21:23:44 GMT  
+		Size: 21.2 MB (21170987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:e38dd153f7ade39b43f5c36be6c4d9fdbc89bfe0d15aa08c99a30857a33263b6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.2-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:d1f702104568bdc3ed875e7f7d4d5af4f072354a93b9ea435be479635a0bf2f5
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.3 MB (23258211 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b260796f4e1948f338292debbda8efc92ad2bd16ff0c9caf611c27c9d75da3d0`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:30:46 GMT
+ENV HAXE_VERSION=3.2.1
+# Tue, 24 Jul 2018 20:30:46 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:31:52 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:31:53 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f97a4e442b2c6365ffda37ca01a7d829640ec20cd8c61d61e39ee0f2680eddec`  
+		Last Modified: Tue, 24 Jul 2018 21:22:16 GMT  
+		Size: 20.7 MB (20742677 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2-jessie`
 
@@ -4027,7 +4135,7 @@ CMD ["haxe"]
 ## `haxe:3.3.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4037,55 +4145,55 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.1 MB (24110566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:14:58 GMT
+# Tue, 24 Jul 2018 20:25:44 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Fri, 06 Jul 2018 15:14:59 GMT
+# Tue, 24 Jul 2018 20:25:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb89016207ef5bec1d
+$ docker pull haxe@sha256:b8e50e3540319126a2fed4ec8d951bcce25d71ec6cbe819687a5e0a33fc1f0a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4095,14 +4203,14 @@ $ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb890162
 ### `haxe:3.3.0-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d78eb85aa37267479b081556ff60f93e6cc346b44e1a37fabc056c8907ca41e6
+$ docker pull haxe@sha256:040ba6b5a682be574304725afc5937ef0ad71b43e15a48b59bbf26e898128dd6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 MB (23385437 bytes)**  
+-	Total Size: **23.4 MB (23385368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10ab156fdb7d82f8a5257ae635e068f25fac5cb35eea019b6de317022f8256db`
+-	Image ID: `sha256:734f45144093931be2a29a23b0630fb6ec2458ab0669fec160a94bd44abaaae8`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -4120,9 +4228,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:16:54 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:18:12 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:18:23 GMT
+# Tue, 24 Jul 2018 20:30:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:30:16 GMT
 CMD ["haxe"]
 ```
 
@@ -4135,15 +4243,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e260b53f056a1d7b6d0d27d3ca2cab0e3bc7a1d37bcde2e30c2902b30315ade4`  
-		Last Modified: Fri, 06 Jul 2018 15:32:55 GMT  
-		Size: 21.0 MB (21019492 bytes)  
+	-	`sha256:a622d952bd92b66c5bb4a1b277b8e60985de66bc0ccaaa8e48475d749ebed0f6`  
+		Last Modified: Tue, 24 Jul 2018 21:21:08 GMT  
+		Size: 21.0 MB (21019423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:644c95635cea9748d188bfca55c331f149176dc561a134a65be0aeecea9d64bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4153,14 +4261,14 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3.0-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:d61642dabc3c448d27217c84a4c8d838caada1ef5eea54fc61acef4a0fb10b2e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.4 MB (24407073 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:0cd176f103300eb8deff1307a695b97d083f7f660cc517e98d4bbe774e381562`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -4178,9 +4286,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:14:59 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:28:43 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:28:43 GMT
 CMD ["haxe"]
 ```
 
@@ -4193,14 +4301,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:53583d98549127fbb7caa405ee5378dbf5f0a2b725e3577f05448b6a9b46997b`  
+		Last Modified: Tue, 24 Jul 2018 21:20:03 GMT  
+		Size: 22.0 MB (21995197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.3.0-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.1 MB (24110566 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:25:44 GMT
+ENV HAXE_VERSION=3.3.0-rc.1
+# Tue, 24 Jul 2018 20:25:45 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-jessie`
 
@@ -4617,7 +4779,7 @@ CMD ["haxe"]
 ## `haxe:3.3.0-rc.1-alpine`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4627,55 +4789,55 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3.0-rc.1-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.1 MB (24110566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:14:58 GMT
+# Tue, 24 Jul 2018 20:25:44 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Fri, 06 Jul 2018 15:14:59 GMT
+# Tue, 24 Jul 2018 20:25:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb89016207ef5bec1d
+$ docker pull haxe@sha256:b8e50e3540319126a2fed4ec8d951bcce25d71ec6cbe819687a5e0a33fc1f0a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4685,14 +4847,14 @@ $ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb890162
 ### `haxe:3.3.0-rc.1-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d78eb85aa37267479b081556ff60f93e6cc346b44e1a37fabc056c8907ca41e6
+$ docker pull haxe@sha256:040ba6b5a682be574304725afc5937ef0ad71b43e15a48b59bbf26e898128dd6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 MB (23385437 bytes)**  
+-	Total Size: **23.4 MB (23385368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10ab156fdb7d82f8a5257ae635e068f25fac5cb35eea019b6de317022f8256db`
+-	Image ID: `sha256:734f45144093931be2a29a23b0630fb6ec2458ab0669fec160a94bd44abaaae8`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -4710,9 +4872,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:16:54 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:18:12 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:18:23 GMT
+# Tue, 24 Jul 2018 20:30:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:30:16 GMT
 CMD ["haxe"]
 ```
 
@@ -4725,15 +4887,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e260b53f056a1d7b6d0d27d3ca2cab0e3bc7a1d37bcde2e30c2902b30315ade4`  
-		Last Modified: Fri, 06 Jul 2018 15:32:55 GMT  
-		Size: 21.0 MB (21019492 bytes)  
+	-	`sha256:a622d952bd92b66c5bb4a1b277b8e60985de66bc0ccaaa8e48475d749ebed0f6`  
+		Last Modified: Tue, 24 Jul 2018 21:21:08 GMT  
+		Size: 21.0 MB (21019423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:644c95635cea9748d188bfca55c331f149176dc561a134a65be0aeecea9d64bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4743,14 +4905,14 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3.0-rc.1-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:d61642dabc3c448d27217c84a4c8d838caada1ef5eea54fc61acef4a0fb10b2e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.4 MB (24407073 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:0cd176f103300eb8deff1307a695b97d083f7f660cc517e98d4bbe774e381562`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -4768,9 +4930,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:14:59 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:28:43 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:28:43 GMT
 CMD ["haxe"]
 ```
 
@@ -4783,14 +4945,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:53583d98549127fbb7caa405ee5378dbf5f0a2b725e3577f05448b6a9b46997b`  
+		Last Modified: Tue, 24 Jul 2018 21:20:03 GMT  
+		Size: 22.0 MB (21995197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.3.0-rc.1-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.1 MB (24110566 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:25:44 GMT
+ENV HAXE_VERSION=3.3.0-rc.1
+# Tue, 24 Jul 2018 20:25:45 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1-jessie`
 
@@ -5709,7 +5925,7 @@ CMD ["haxe"]
 ## `haxe:3.3-alpine`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5719,55 +5935,55 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.1 MB (24110566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:14:58 GMT
+# Tue, 24 Jul 2018 20:25:44 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Fri, 06 Jul 2018 15:14:59 GMT
+# Tue, 24 Jul 2018 20:25:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb89016207ef5bec1d
+$ docker pull haxe@sha256:b8e50e3540319126a2fed4ec8d951bcce25d71ec6cbe819687a5e0a33fc1f0a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5777,14 +5993,14 @@ $ docker pull haxe@sha256:8a833e54d6602c1b6c1e914798faa0ce8efcf5f8d771d3cb890162
 ### `haxe:3.3-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d78eb85aa37267479b081556ff60f93e6cc346b44e1a37fabc056c8907ca41e6
+$ docker pull haxe@sha256:040ba6b5a682be574304725afc5937ef0ad71b43e15a48b59bbf26e898128dd6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 MB (23385437 bytes)**  
+-	Total Size: **23.4 MB (23385368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10ab156fdb7d82f8a5257ae635e068f25fac5cb35eea019b6de317022f8256db`
+-	Image ID: `sha256:734f45144093931be2a29a23b0630fb6ec2458ab0669fec160a94bd44abaaae8`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -5802,9 +6018,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:16:54 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:18:12 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:18:23 GMT
+# Tue, 24 Jul 2018 20:30:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:30:16 GMT
 CMD ["haxe"]
 ```
 
@@ -5817,15 +6033,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e260b53f056a1d7b6d0d27d3ca2cab0e3bc7a1d37bcde2e30c2902b30315ade4`  
-		Last Modified: Fri, 06 Jul 2018 15:32:55 GMT  
-		Size: 21.0 MB (21019492 bytes)  
+	-	`sha256:a622d952bd92b66c5bb4a1b277b8e60985de66bc0ccaaa8e48475d749ebed0f6`  
+		Last Modified: Tue, 24 Jul 2018 21:21:08 GMT  
+		Size: 21.0 MB (21019423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c0c4da36119
+$ docker pull haxe@sha256:644c95635cea9748d188bfca55c331f149176dc561a134a65be0aeecea9d64bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5835,14 +6051,14 @@ $ docker pull haxe@sha256:1df09068a014e822ef9a39c66396acc98ba649f6a8840288ff018c
 ### `haxe:3.3-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:d91fa08561be604b4a7ade4dcaed733d72d2cf30e40bcaaa5a78d75c6557953c
+$ docker pull haxe@sha256:d61642dabc3c448d27217c84a4c8d838caada1ef5eea54fc61acef4a0fb10b2e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.4 MB (24406275 bytes)**  
+-	Total Size: **24.4 MB (24407073 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5574b4f3e73091cbc530ec4ce0b2535b041283526244d0ab1c142c56478a7cf6`
+-	Image ID: `sha256:0cd176f103300eb8deff1307a695b97d083f7f660cc517e98d4bbe774e381562`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -5860,9 +6076,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.3.0-rc.1
 # Fri, 06 Jul 2018 15:14:59 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:16:14 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:16:22 GMT
+# Tue, 24 Jul 2018 20:28:43 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:28:43 GMT
 CMD ["haxe"]
 ```
 
@@ -5875,14 +6091,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cdbe2a2456d10bffc05c2773b8f4662caa7fe9f4e704d1a6e580dd5870551aa`  
-		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
-		Size: 22.0 MB (21994399 bytes)  
+	-	`sha256:53583d98549127fbb7caa405ee5378dbf5f0a2b725e3577f05448b6a9b46997b`  
+		Last Modified: Tue, 24 Jul 2018 21:20:03 GMT  
+		Size: 22.0 MB (21995197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:8e2b2e51f1fe57c8960c32300aeee3e8ef06688b6b0750aad2adfea3906cbb51
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.3-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:0e0d3e437661a62e8489ddd28de845166b68a30ac70078eec156bdc06cb63a62
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.1 MB (24110566 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8122766bc34944323da830d02395f2a722be6bd07b01fe4f8ccaafec1ecbac9b`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:25:44 GMT
+ENV HAXE_VERSION=3.3.0-rc.1
+# Tue, 24 Jul 2018 20:25:45 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:27:02 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:27:03 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6d9db35323c0143b9edb6e35594dd2f2e35ed26cedaaae4f2d923c5d196ff5fe`  
+		Last Modified: Tue, 24 Jul 2018 21:18:09 GMT  
+		Size: 21.6 MB (21595032 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3-jessie`
 
@@ -6892,7 +7162,7 @@ CMD ["haxe"]
 ## `haxe:3.4.7-alpine`
 
 ```console
-$ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379951c8ff59a
+$ docker pull haxe@sha256:8870a3b360c41afc8e5532570cc9ef387f55d4273b4d19691497ee7804e8d880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6902,55 +7172,55 @@ $ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379
 ### `haxe:3.4.7-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:da97be122a92a622059f3f54f51de935c8f61f1ea700fbfe5168d511c331fcb6
+$ docker pull haxe@sha256:77e46092ad9c44895caa92d06a90d078bd4c280bd151158656d0e692b75b8f25
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.0 MB (25024352 bytes)**  
+-	Total Size: **24.7 MB (24744101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8084fb2a0dbe8ffb960da1c968bcad9cafd434119c5cede0fd5560aa25c85463`
+-	Image ID: `sha256:744298829227c78bcc06af7215354f0991ad17fef41126649dd590d42b55c36d`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV HAXE_VERSION=3.4.7
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:12:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:12:55 GMT
+# Tue, 24 Jul 2018 20:21:18 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:21:18 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ec9f63531628a4cae8b076651be96e50601495369e998cba3c73dc29fe40875`  
-		Last Modified: Fri, 06 Jul 2018 15:29:56 GMT  
-		Size: 22.6 MB (22612476 bytes)  
+	-	`sha256:e53d385e15c9c55b1177bceb5caad04df5f22ae5f8df2e51475a9e69dee00e80`  
+		Last Modified: Tue, 24 Jul 2018 21:14:32 GMT  
+		Size: 22.2 MB (22228567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4.7-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:60ac57923fd7b3950d2a2942dfec163340f8446cfd8ba39bf67c747d8cc3f806
+$ docker pull haxe@sha256:b54eddb99a0938ac53c0dedd5359f5c4c3f113973882df7ca4ef73e7a7c3016b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6960,14 +7230,14 @@ $ docker pull haxe@sha256:60ac57923fd7b3950d2a2942dfec163340f8446cfd8ba39bf67c74
 ### `haxe:3.4.7-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:9011fb99808260fa991ad74b3872b2cac0c75da043e28d119c7c623f5aaa6839
+$ docker pull haxe@sha256:f8963aa409d55ae497d5d4d75c177e12db00df5bfec09d5867af0d69e26a024f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.0 MB (24002992 bytes)**  
+-	Total Size: **24.0 MB (24003149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37351a11d960ef9328d683b4d1c56856a28b4fb44a96c61102ea7991efdeb43e`
+-	Image ID: `sha256:b39c875c0164609421a64624242a12a7c057c21b3dde41c38359c7905a1db203`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -6985,9 +7255,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.4.7
 # Fri, 06 Jul 2018 15:13:12 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:14:35 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:14:35 GMT
+# Tue, 24 Jul 2018 20:25:15 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:25:15 GMT
 CMD ["haxe"]
 ```
 
@@ -7000,15 +7270,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5875a9408a9c91f29ea0bd9f34726977f34bf18d3d47278f1492d2c7e11ebfa`  
-		Last Modified: Fri, 06 Jul 2018 15:30:55 GMT  
-		Size: 21.6 MB (21637047 bytes)  
+	-	`sha256:675dbd2aa0fb88a02a5ef753126214d82c6b2b1ef2358d25611bd2261739eeef`  
+		Last Modified: Tue, 24 Jul 2018 21:17:05 GMT  
+		Size: 21.6 MB (21637204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4.7-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379951c8ff59a
+$ docker pull haxe@sha256:9fbbad9f600921580cf828b91be1b29856fa36c6febfd8e20f6671a3a32449ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7018,14 +7288,14 @@ $ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379
 ### `haxe:3.4.7-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:da97be122a92a622059f3f54f51de935c8f61f1ea700fbfe5168d511c331fcb6
+$ docker pull haxe@sha256:d631c6bc8888bd639a12346f1756e19f78db2db34b717c7fa40c91ae65a9ec3d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.0 MB (25024352 bytes)**  
+-	Total Size: **25.0 MB (25025342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8084fb2a0dbe8ffb960da1c968bcad9cafd434119c5cede0fd5560aa25c85463`
+-	Image ID: `sha256:d124a158d0ec0bbb85d8321798308fc60f37439bb33fccfc9b245f57724091de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -7043,9 +7313,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.4.7
 # Fri, 06 Jul 2018 15:11:26 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:12:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:12:55 GMT
+# Tue, 24 Jul 2018 20:23:23 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:23:23 GMT
 CMD ["haxe"]
 ```
 
@@ -7058,14 +7328,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ec9f63531628a4cae8b076651be96e50601495369e998cba3c73dc29fe40875`  
-		Last Modified: Fri, 06 Jul 2018 15:29:56 GMT  
-		Size: 22.6 MB (22612476 bytes)  
+	-	`sha256:6370989d40344816b1cefbb2af9fa525feffff2bfe2f457b820967fa18f5420c`  
+		Last Modified: Tue, 24 Jul 2018 21:16:10 GMT  
+		Size: 22.6 MB (22613466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4.7-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:8870a3b360c41afc8e5532570cc9ef387f55d4273b4d19691497ee7804e8d880
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.4.7-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:77e46092ad9c44895caa92d06a90d078bd4c280bd151158656d0e692b75b8f25
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.7 MB (24744101 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:744298829227c78bcc06af7215354f0991ad17fef41126649dd590d42b55c36d`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV HAXE_VERSION=3.4.7
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:21:18 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:21:18 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e53d385e15c9c55b1177bceb5caad04df5f22ae5f8df2e51475a9e69dee00e80`  
+		Last Modified: Tue, 24 Jul 2018 21:14:32 GMT  
+		Size: 22.2 MB (22228567 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4.7-jessie`
 
@@ -7619,7 +7943,7 @@ CMD ["haxe"]
 ## `haxe:3.4-alpine`
 
 ```console
-$ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379951c8ff59a
+$ docker pull haxe@sha256:8870a3b360c41afc8e5532570cc9ef387f55d4273b4d19691497ee7804e8d880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7629,55 +7953,55 @@ $ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379
 ### `haxe:3.4-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:da97be122a92a622059f3f54f51de935c8f61f1ea700fbfe5168d511c331fcb6
+$ docker pull haxe@sha256:77e46092ad9c44895caa92d06a90d078bd4c280bd151158656d0e692b75b8f25
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.0 MB (25024352 bytes)**  
+-	Total Size: **24.7 MB (24744101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8084fb2a0dbe8ffb960da1c968bcad9cafd434119c5cede0fd5560aa25c85463`
+-	Image ID: `sha256:744298829227c78bcc06af7215354f0991ad17fef41126649dd590d42b55c36d`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV HAXE_VERSION=3.4.7
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:12:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:12:55 GMT
+# Tue, 24 Jul 2018 20:21:18 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:21:18 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ec9f63531628a4cae8b076651be96e50601495369e998cba3c73dc29fe40875`  
-		Last Modified: Fri, 06 Jul 2018 15:29:56 GMT  
-		Size: 22.6 MB (22612476 bytes)  
+	-	`sha256:e53d385e15c9c55b1177bceb5caad04df5f22ae5f8df2e51475a9e69dee00e80`  
+		Last Modified: Tue, 24 Jul 2018 21:14:32 GMT  
+		Size: 22.2 MB (22228567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:60ac57923fd7b3950d2a2942dfec163340f8446cfd8ba39bf67c747d8cc3f806
+$ docker pull haxe@sha256:b54eddb99a0938ac53c0dedd5359f5c4c3f113973882df7ca4ef73e7a7c3016b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7687,14 +8011,14 @@ $ docker pull haxe@sha256:60ac57923fd7b3950d2a2942dfec163340f8446cfd8ba39bf67c74
 ### `haxe:3.4-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:9011fb99808260fa991ad74b3872b2cac0c75da043e28d119c7c623f5aaa6839
+$ docker pull haxe@sha256:f8963aa409d55ae497d5d4d75c177e12db00df5bfec09d5867af0d69e26a024f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.0 MB (24002992 bytes)**  
+-	Total Size: **24.0 MB (24003149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37351a11d960ef9328d683b4d1c56856a28b4fb44a96c61102ea7991efdeb43e`
+-	Image ID: `sha256:b39c875c0164609421a64624242a12a7c057c21b3dde41c38359c7905a1db203`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -7712,9 +8036,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.4.7
 # Fri, 06 Jul 2018 15:13:12 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:14:35 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:14:35 GMT
+# Tue, 24 Jul 2018 20:25:15 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:25:15 GMT
 CMD ["haxe"]
 ```
 
@@ -7727,15 +8051,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5875a9408a9c91f29ea0bd9f34726977f34bf18d3d47278f1492d2c7e11ebfa`  
-		Last Modified: Fri, 06 Jul 2018 15:30:55 GMT  
-		Size: 21.6 MB (21637047 bytes)  
+	-	`sha256:675dbd2aa0fb88a02a5ef753126214d82c6b2b1ef2358d25611bd2261739eeef`  
+		Last Modified: Tue, 24 Jul 2018 21:17:05 GMT  
+		Size: 21.6 MB (21637204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379951c8ff59a
+$ docker pull haxe@sha256:9fbbad9f600921580cf828b91be1b29856fa36c6febfd8e20f6671a3a32449ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7745,14 +8069,14 @@ $ docker pull haxe@sha256:ee19706b10a33bce7796e9c0d4b40ae3b53c20713c48756b881379
 ### `haxe:3.4-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:da97be122a92a622059f3f54f51de935c8f61f1ea700fbfe5168d511c331fcb6
+$ docker pull haxe@sha256:d631c6bc8888bd639a12346f1756e19f78db2db34b717c7fa40c91ae65a9ec3d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.0 MB (25024352 bytes)**  
+-	Total Size: **25.0 MB (25025342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8084fb2a0dbe8ffb960da1c968bcad9cafd434119c5cede0fd5560aa25c85463`
+-	Image ID: `sha256:d124a158d0ec0bbb85d8321798308fc60f37439bb33fccfc9b245f57724091de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -7770,9 +8094,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=3.4.7
 # Fri, 06 Jul 2018 15:11:26 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:12:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:12:55 GMT
+# Tue, 24 Jul 2018 20:23:23 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 				&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:23:23 GMT
 CMD ["haxe"]
 ```
 
@@ -7785,14 +8109,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ec9f63531628a4cae8b076651be96e50601495369e998cba3c73dc29fe40875`  
-		Last Modified: Fri, 06 Jul 2018 15:29:56 GMT  
-		Size: 22.6 MB (22612476 bytes)  
+	-	`sha256:6370989d40344816b1cefbb2af9fa525feffff2bfe2f457b820967fa18f5420c`  
+		Last Modified: Tue, 24 Jul 2018 21:16:10 GMT  
+		Size: 22.6 MB (22613466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:8870a3b360c41afc8e5532570cc9ef387f55d4273b4d19691497ee7804e8d880
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:3.4-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:77e46092ad9c44895caa92d06a90d078bd4c280bd151158656d0e692b75b8f25
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **24.7 MB (24744101 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:744298829227c78bcc06af7215354f0991ad17fef41126649dd590d42b55c36d`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV HAXE_VERSION=3.4.7
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:21:18 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 3.4.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				ocaml 		camlp4 		ocaml-camlp4-dev 				&& OCAMLPARAM=safe-string=0,_ make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:21:18 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e53d385e15c9c55b1177bceb5caad04df5f22ae5f8df2e51475a9e69dee00e80`  
+		Last Modified: Tue, 24 Jul 2018 21:14:32 GMT  
+		Size: 22.2 MB (22228567 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4-jessie`
 
@@ -8802,7 +9180,7 @@ CMD ["haxe"]
 ## `haxe:4.0.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8812,55 +9190,55 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.4 MB (25364816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:37 GMT
 ENV HAXE_VERSION=4.0.0-preview.4
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a4f8342b60c
+$ docker pull haxe@sha256:801809b88c827b08dfcbcd1f8ab008ea3583b076cbca20703373c61e0ca20565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8870,14 +9248,14 @@ $ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a
 ### `haxe:4.0.0-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14db15480fd26914f8226c0ced950f73cd7c75fa1de5aac8eb691601edb13489
+$ docker pull haxe@sha256:9010e93e8e03bf758532d4893387fe7bf4f4be074436a84dca02bdd2719c7627
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.6 MB (24605964 bytes)**  
+-	Total Size: **24.9 MB (24859351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44aaafabeb2e6974af3c33ff58ecefb136a4d2e4219a8af1efc19523292fb16a`
+-	Image ID: `sha256:87d101e10f444300b7bc466b234f6224908a14665cdfe115491ec9cb964110a3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -8895,9 +9273,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:25:34 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:28:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:28:56 GMT
+# Tue, 24 Jul 2018 21:13:23 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:13:24 GMT
 CMD ["haxe"]
 ```
 
@@ -8910,15 +9288,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c55e66cb1c65c83be006eac62d3f8190b6d7b52079fd9dd4e1ad7b3113bb7b63`  
-		Last Modified: Fri, 06 Jul 2018 15:36:44 GMT  
-		Size: 22.2 MB (22240019 bytes)  
+	-	`sha256:1014dd4596202ec1a45525a2686ff4841dda8adbe9dcb217574a5e2cecd63c8b`  
+		Last Modified: Tue, 24 Jul 2018 21:29:10 GMT  
+		Size: 22.5 MB (22493406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:1029aee4e7b686dd2607d741cda884374d5fba6d76bb3856fa067954f7bab523
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8928,14 +9306,14 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0.0-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:6f46e4b59fc68a700ec205f07df7ff51fd6f5144dd3ac3ffd4fb900c24e71619
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.9 MB (25884133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:2c93dc068300e4980f16500c64110e46ba02e550dd3dc958f4c8a24abea3b856`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -8953,9 +9331,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:22:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 21:00:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:00:17 GMT
 CMD ["haxe"]
 ```
 
@@ -8968,14 +9346,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:e94023ee6bf91e55cf7f07a034d05dc0d08d98a4bf6f5a52566e3e626b8afd49`  
+		Last Modified: Tue, 24 Jul 2018 21:27:45 GMT  
+		Size: 23.5 MB (23472257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:4.0.0-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.4 MB (25364816 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:35:37 GMT
+ENV HAXE_VERSION=4.0.0-preview.4
+# Tue, 24 Jul 2018 20:35:38 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-jessie`
 
@@ -9392,7 +9824,7 @@ CMD ["haxe"]
 ## `haxe:4.0.0-preview.4-alpine`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9402,55 +9834,55 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0.0-preview.4-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.4 MB (25364816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:37 GMT
 ENV HAXE_VERSION=4.0.0-preview.4
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-preview.4-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a4f8342b60c
+$ docker pull haxe@sha256:801809b88c827b08dfcbcd1f8ab008ea3583b076cbca20703373c61e0ca20565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9460,14 +9892,14 @@ $ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a
 ### `haxe:4.0.0-preview.4-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14db15480fd26914f8226c0ced950f73cd7c75fa1de5aac8eb691601edb13489
+$ docker pull haxe@sha256:9010e93e8e03bf758532d4893387fe7bf4f4be074436a84dca02bdd2719c7627
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.6 MB (24605964 bytes)**  
+-	Total Size: **24.9 MB (24859351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44aaafabeb2e6974af3c33ff58ecefb136a4d2e4219a8af1efc19523292fb16a`
+-	Image ID: `sha256:87d101e10f444300b7bc466b234f6224908a14665cdfe115491ec9cb964110a3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -9485,9 +9917,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:25:34 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:28:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:28:56 GMT
+# Tue, 24 Jul 2018 21:13:23 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:13:24 GMT
 CMD ["haxe"]
 ```
 
@@ -9500,15 +9932,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c55e66cb1c65c83be006eac62d3f8190b6d7b52079fd9dd4e1ad7b3113bb7b63`  
-		Last Modified: Fri, 06 Jul 2018 15:36:44 GMT  
-		Size: 22.2 MB (22240019 bytes)  
+	-	`sha256:1014dd4596202ec1a45525a2686ff4841dda8adbe9dcb217574a5e2cecd63c8b`  
+		Last Modified: Tue, 24 Jul 2018 21:29:10 GMT  
+		Size: 22.5 MB (22493406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-preview.4-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:1029aee4e7b686dd2607d741cda884374d5fba6d76bb3856fa067954f7bab523
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9518,14 +9950,14 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0.0-preview.4-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:6f46e4b59fc68a700ec205f07df7ff51fd6f5144dd3ac3ffd4fb900c24e71619
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.9 MB (25884133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:2c93dc068300e4980f16500c64110e46ba02e550dd3dc958f4c8a24abea3b856`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -9543,9 +9975,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:22:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 21:00:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:00:17 GMT
 CMD ["haxe"]
 ```
 
@@ -9558,14 +9990,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:e94023ee6bf91e55cf7f07a034d05dc0d08d98a4bf6f5a52566e3e626b8afd49`  
+		Last Modified: Tue, 24 Jul 2018 21:27:45 GMT  
+		Size: 23.5 MB (23472257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-preview.4-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:4.0.0-preview.4-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.4 MB (25364816 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:35:37 GMT
+ENV HAXE_VERSION=4.0.0-preview.4
+# Tue, 24 Jul 2018 20:35:38 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0.0-preview.4-jessie`
 
@@ -10484,7 +10970,7 @@ CMD ["haxe"]
 ## `haxe:4.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10494,55 +10980,55 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.4 MB (25364816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 14:13:45 GMT
-ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
-# Fri, 06 Jul 2018 14:13:45 GMT
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
 CMD ["/bin/sh"]
-# Fri, 06 Jul 2018 15:11:24 GMT
+# Mon, 16 Jul 2018 23:43:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 06 Jul 2018 15:11:25 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 RUN apk add --no-cache ca-certificates
-# Fri, 06 Jul 2018 15:11:26 GMT
+# Tue, 24 Jul 2018 20:19:54 GMT
 ENV NEKO_VERSION=2.2.0
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:37 GMT
 ENV HAXE_VERSION=4.0.0-preview.4
-# Fri, 06 Jul 2018 15:22:06 GMT
+# Tue, 24 Jul 2018 20:35:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:911c6d0c7995e5d9763c1864d54fb6deccda04a55d7955123a8e22dd9d44c497`  
-		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
-		Size: 2.1 MB (2103553 bytes)  
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10249cb8da1aa60d40e29fce16245399a406b9078206d86724236a624e59cc74`  
-		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
-		Size: 308.3 KB (308323 bytes)  
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0-alpine3.6`
 
 ```console
-$ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a4f8342b60c
+$ docker pull haxe@sha256:801809b88c827b08dfcbcd1f8ab008ea3583b076cbca20703373c61e0ca20565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10552,14 +11038,14 @@ $ docker pull haxe@sha256:bed2632d7eeac0a7b01c0da4b768043aa16b023569e1e66a283a1a
 ### `haxe:4.0-alpine3.6` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14db15480fd26914f8226c0ced950f73cd7c75fa1de5aac8eb691601edb13489
+$ docker pull haxe@sha256:9010e93e8e03bf758532d4893387fe7bf4f4be074436a84dca02bdd2719c7627
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.6 MB (24605964 bytes)**  
+-	Total Size: **24.9 MB (24859351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44aaafabeb2e6974af3c33ff58ecefb136a4d2e4219a8af1efc19523292fb16a`
+-	Image ID: `sha256:87d101e10f444300b7bc466b234f6224908a14665cdfe115491ec9cb964110a3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -10577,9 +11063,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:25:34 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:28:55 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:28:56 GMT
+# Tue, 24 Jul 2018 21:13:23 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:13:24 GMT
 CMD ["haxe"]
 ```
 
@@ -10592,15 +11078,15 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:30:46 GMT  
 		Size: 351.3 KB (351287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c55e66cb1c65c83be006eac62d3f8190b6d7b52079fd9dd4e1ad7b3113bb7b63`  
-		Last Modified: Fri, 06 Jul 2018 15:36:44 GMT  
-		Size: 22.2 MB (22240019 bytes)  
+	-	`sha256:1014dd4596202ec1a45525a2686ff4841dda8adbe9dcb217574a5e2cecd63c8b`  
+		Last Modified: Tue, 24 Jul 2018 21:29:10 GMT  
+		Size: 22.5 MB (22493406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0-alpine3.7`
 
 ```console
-$ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb6adf9fa5af
+$ docker pull haxe@sha256:1029aee4e7b686dd2607d741cda884374d5fba6d76bb3856fa067954f7bab523
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10610,14 +11096,14 @@ $ docker pull haxe@sha256:a4dbe863ec8af5ff9a80a7beb3e977a0149e4f37254ecbafcc82cb
 ### `haxe:4.0-alpine3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:26b72670414acef15babe65f61f2b9c34338a016cee6d9a42bf226aca232b578
+$ docker pull haxe@sha256:6f46e4b59fc68a700ec205f07df7ff51fd6f5144dd3ac3ffd4fb900c24e71619
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 MB (25629130 bytes)**  
+-	Total Size: **25.9 MB (25884133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c6059ed3248dce3ac5c2977f2fc501df8368f4dcf220e0a3596c4b66e266a2`
+-	Image ID: `sha256:2c93dc068300e4980f16500c64110e46ba02e550dd3dc958f4c8a24abea3b856`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -10635,9 +11121,9 @@ ENV NEKO_VERSION=2.2.0
 ENV HAXE_VERSION=4.0.0-preview.4
 # Fri, 06 Jul 2018 15:22:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Fri, 06 Jul 2018 15:25:13 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		camlp4 		ocaml 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp system 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
-# Fri, 06 Jul 2018 15:25:14 GMT
+# Tue, 24 Jul 2018 21:00:16 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 21:00:17 GMT
 CMD ["haxe"]
 ```
 
@@ -10650,14 +11136,68 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:46 GMT  
 		Size: 308.3 KB (308323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df68b9d29bbf79933e7282f5c2b62caf9a72959c43948815aed2455f2be7f836`  
-		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
-		Size: 23.2 MB (23217254 bytes)  
+	-	`sha256:e94023ee6bf91e55cf7f07a034d05dc0d08d98a4bf6f5a52566e3e626b8afd49`  
+		Last Modified: Tue, 24 Jul 2018 21:27:45 GMT  
+		Size: 23.5 MB (23472257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0-alpine3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:f2aede2920ab9a28946eb1b8f74930c8bd54172ee638af6d72968666dbeef4c8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `haxe:4.0-alpine3.8` - linux; amd64
+
+```console
+$ docker pull haxe@sha256:689fe1bb5c13e796f416ce047d86058772562ea33318302c0ff9e1b38feef0a3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.4 MB (25364816 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a1ee37ed198586aed113034ceb9be0e0fd0654bfba9dd452d68e7ce72eb0f39`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Fri, 06 Jul 2018 14:14:06 GMT
+ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / 
+# Fri, 06 Jul 2018 14:14:06 GMT
+CMD ["/bin/sh"]
+# Mon, 16 Jul 2018 23:43:21 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 24 Jul 2018 20:19:54 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 24 Jul 2018 20:19:54 GMT
+ENV NEKO_VERSION=2.2.0
+# Tue, 24 Jul 2018 20:35:37 GMT
+ENV HAXE_VERSION=4.0.0-preview.4
+# Tue, 24 Jul 2018 20:35:38 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 24 Jul 2018 20:47:45 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		libressl 		tar 		git 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-2-0/neko-2.2.0.tar.gz" 	&& echo "cf101ca05db6cb673504efe217d8ed7ab5638f30e12c5e3095f06fa0d43f64e3 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& apk add --no-cache --virtual .build-deps 		apache2-dev 		cmake 		gc-dev 		gcc 		gtk+2.0-dev 		libc-dev 		linux-headers 		mariadb-dev 		mbedtls-dev 		ninja 		sqlite-dev 	&& cd /usr/src/neko 	&& cmake -GNinja -DNEKO_JIT_DISABLE=ON -DRELOCATABLE=OFF -DRUN_LDCONFIG=OFF . 	&& ninja 	&& ninja install 		&& git clone --recursive --depth 1 --branch 4.0.0-preview.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& apk add --no-cache --virtual .build-deps 		pcre-dev 		zlib-dev 		make 				opam 		aspcud 		m4 		unzip 		patch 				&& opam init --comp 4.06.1 	&& eval `opam config env` 	&& make opam_install 	&& make all tools 		&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .python-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .fetch-deps 		&& rm -rf ~/.opam 		&& rm -rf /usr/src/neko /usr/src/haxe
+# Tue, 24 Jul 2018 20:47:45 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6`  
+		Last Modified: Fri, 06 Jul 2018 04:15:58 GMT  
+		Size: 2.2 MB (2206542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:394fc81362a6d61c196af203308e989a844d22b43fee13e6318e3184c6120ae7`  
+		Last Modified: Tue, 24 Jul 2018 21:14:22 GMT  
+		Size: 309.0 KB (308992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28f2baf6efb91791cd7d2dd72e91141e310d20acfc1899dd1e4b635dae3165a`  
+		Last Modified: Tue, 24 Jul 2018 21:25:40 GMT  
+		Size: 22.8 MB (22849282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.0-jessie`
 
