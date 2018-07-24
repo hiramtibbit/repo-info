@@ -1,10 +1,10 @@
-# `openjdk:11-ea-22-jre-sid`
+# `openjdk:11-ea-23-jre-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9aaae06e00561071f42cff70d3c878162034ce4488283af8918253289ea808f0`
-- Created: `2018-07-17T06:11:44.87785628Z`
-- Virtual Size: ~ 619.48 Mb  
+- Image ID: `sha256:91d47f23e2d7fbcfa39a66cfcf2d3492ba9448eb6f606cf4780295b73a6fb534`
+- Created: `2018-07-21T07:47:10.904800954Z`
+- Virtual Size: ~ 620.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+22`
-  - `JAVA_DEBIAN_VERSION=11~22-2`
+  - `JAVA_VERSION=11-ea+23`
+  - `JAVA_DEBIAN_VERSION=11~23-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3224,20 +3224,20 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxaw/2:1.0.13-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxaw/2:1.0.13-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcb=1.13-1`
+### `dpkg` source package: `libxcb=1.13-2`
 
 Binary Packages:
 
-- `libxcb-dri2-0:amd64=1.13-1`
-- `libxcb-dri3-0:amd64=1.13-1`
-- `libxcb-glx0:amd64=1.13-1`
-- `libxcb-present0:amd64=1.13-1`
-- `libxcb-render0:amd64=1.13-1`
-- `libxcb-shape0:amd64=1.13-1`
-- `libxcb-shm0:amd64=1.13-1`
-- `libxcb-sync1:amd64=1.13-1`
-- `libxcb-xfixes0:amd64=1.13-1`
-- `libxcb1:amd64=1.13-1`
+- `libxcb-dri2-0:amd64=1.13-2`
+- `libxcb-dri3-0:amd64=1.13-2`
+- `libxcb-glx0:amd64=1.13-2`
+- `libxcb-present0:amd64=1.13-2`
+- `libxcb-render0:amd64=1.13-2`
+- `libxcb-shape0:amd64=1.13-2`
+- `libxcb-shm0:amd64=1.13-2`
+- `libxcb-sync1:amd64=1.13-2`
+- `libxcb-xfixes0:amd64=1.13-2`
+- `libxcb1:amd64=1.13-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3246,17 +3246,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcb=1.13-1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.dsc' libxcb_1.13-1.dsc 5213 SHA256:b62c8d9b9fa0299a4b4276bfdd520f43e461fc130824447e0e59a57b5b6def98
+$ apt-get source -qq --print-uris libxcb=1.13-2
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.dsc' libxcb_1.13-2.dsc 5329 SHA256:1dc813a0b2fbcb3323e869e84cf52181ccd9fb7dbe08a44e9080b5e814f6e3e1
 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.diff.gz' libxcb_1.13-1.diff.gz 24982 SHA256:02855328dbea159371d90648e63cbb2dff6101f952537cf7cdfe2281e968a55a
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.diff.gz' libxcb_1.13-2.diff.gz 25222 SHA256:3b1215da593c65c95ce2a9cc1c3dc786b31d99985d676d9958ad2094192e706f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcb/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcb/1.13-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcb/1.13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcb/1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcomposite=1:0.4.4-2`
 
@@ -3996,9 +3996,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses6:amd64=6.1+20180210-4`
-- `libncursesw6:amd64=6.1+20180210-4`
-- `libtinfo6:amd64=6.1+20180210-4`
 - `ncurses-base=6.1+20180210-4`
 - `ncurses-bin=6.1+20180210-4`
 
@@ -4021,6 +4018,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.1+20180210-4/ (for browsing the source)
 - https://sources.debian.net/src/ncurses/6.1+20180210-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.1+20180210-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ncurses=6.1+20180714-1`
+
+Binary Packages:
+
+- `libncurses6:amd64=6.1+20180714-1`
+- `libncursesw6:amd64=6.1+20180714-1`
+- `libtinfo6:amd64=6.1+20180714-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ncurses=6.1+20180714-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.dsc' ncurses_6.1+20180714-1.dsc 4147 SHA256:d4ee01fcada6e29bba632598e517fff5c48329c4191712f07311e3a21d36d4b9
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz' ncurses_6.1+20180714.orig.tar.gz 3400860 SHA256:8e2d9ab51c54d5a5b78ca6d8e63200646202e91b152d9ea8ddbce86e6a32796d
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz.asc' ncurses_6.1+20180714.orig.tar.gz.asc 251 SHA256:682fbba42d188d489b1cd457cce1285f0d9356fe8c45fdcd6e1c45e81e22d352
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.debian.tar.xz' ncurses_6.1+20180714-1.debian.tar.xz 59968 SHA256:4160bcdae8e616c584317ae46ec8053709a4e640f9620621644f986c1b7e402f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20180714-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=5.4`
 
@@ -4187,12 +4212,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~22-2`
+### `dpkg` source package: `openjdk-11=11~23-1`
 
 Binary Packages:
 
-- `openjdk-11-jre:amd64=11~22-2`
-- `openjdk-11-jre-headless:amd64=11~22-2`
+- `openjdk-11-jre:amd64=11~23-1`
+- `openjdk-11-jre-headless:amd64=11~23-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -4204,17 +4229,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~22-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22-2.dsc' openjdk-11_11~22-2.dsc 4511 SHA256:6cf662d0a7a4dd09a45bf73b80b30bd072c37cecf6f45b70e62aa4a55604a682
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22.orig.tar.xz' openjdk-11_11~22.orig.tar.xz 78611076 SHA256:b6c9e26c0892dc9b44da1d09e55e79439fde21c9902a929bfe8ab908f46a1dc7
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22-2.debian.tar.xz' openjdk-11_11~22-2.debian.tar.xz 166424 SHA256:080a1d0caf509507f9bd0ee8f11d81edfda11922950e065b62a6014b8d5a1dcf
+$ apt-get source -qq --print-uris openjdk-11=11~23-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.dsc' openjdk-11_11~23-1.dsc 4531 SHA256:59543b64df315d1306d01fbead0265eb014b8200824abf3e6ab898cb9191cab2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23.orig.tar.xz' openjdk-11_11~23.orig.tar.xz 78645124 SHA256:5f59d2df33bae80582d6fbfa2d048d7df64ca46969624a0d6449d3ca462e5da8
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.debian.tar.xz' openjdk-11_11~23-1.debian.tar.xz 166284 SHA256:556b141a3116b4e75e3b4036d343c691ff84343ccfdea56ae0d7b5626a1afe01
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~22-2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~22-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~22-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~23-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~23-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~23-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
@@ -4742,13 +4767,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpam-systemd:amd64=239-5`
-- `libsystemd0:amd64=239-5`
 - `libudev1:amd64=239-5`
-- `systemd=239-5`
-- `systemd-sysv=239-5`
 
-Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`)
 
 - `CC0-1.0`
 - `Expat`
@@ -4764,6 +4785,29 @@ This is *usually* due to a new package version being released and the old versio
 The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/systemd/239-5/
+
+
+### `dpkg` source package: `systemd=239-6`
+
+Binary Packages:
+
+- `libpam-systemd:amd64=239-6`
+- `libsystemd0:amd64=239-6`
+- `systemd=239-6`
+- `systemd-sysv=239-6`
+
+Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+
+- `CC0-1.0`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `public-domain`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`

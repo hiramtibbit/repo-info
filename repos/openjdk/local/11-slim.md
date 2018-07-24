@@ -1,10 +1,10 @@
-# `openjdk:11-ea-22-jdk-slim-sid`
+# `openjdk:11-ea-23-jdk-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1452fddd0a33027cdb14be14493212c7ac7245c31880db32b3f05a6d843cb72a`
-- Created: `2018-07-17T06:10:32.788377047Z`
-- Virtual Size: ~ 356.40 Mb  
+- Image ID: `sha256:377f88be57bba0b90cf9f2df3fdbd280dde3812493c0cf568bf41063fcc33368`
+- Created: `2018-07-21T07:45:54.080624015Z`
+- Virtual Size: ~ 499.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+22`
-  - `JAVA_DEBIAN_VERSION=11~22-2`
+  - `JAVA_VERSION=11-ea+23`
+  - `JAVA_DEBIAN_VERSION=11~23-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -667,6 +667,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.44.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.44.3-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `expat=2.2.5-3`
+
+Binary Packages:
+
+- `libexpat1:amd64=2.2.5-3`
+
+Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
+
+- `MIT`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris expat=2.2.5-3
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.5-3.dsc' expat_2.2.5-3.dsc 2099 SHA256:21c9f507f332a388a8224ebe19e030bd04a9627d255138acc3efef467604c55f
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.5.orig.tar.gz' expat_2.2.5.orig.tar.gz 8273003 SHA256:b3781742738611eaa737543ee94264dd511c52a3ba7e53111f7d705f6bff65a8
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.5-3.debian.tar.xz' expat_2.2.5-3.debian.tar.xz 10640 SHA256:497d14ac905cb70fc4cacc1e4d92bcccf792237b31fc506a5ea7c4d3aa6c8235
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/expat/2.2.5-3/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.5-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.5-3/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `findutils=4.6.0+git+20171230-2`
 
 Binary Packages:
@@ -692,6 +717,59 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.6.0+git+20171230-2/ (for browsing the source)
 - https://sources.debian.net/src/findutils/4.6.0+git+20171230-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.6.0+git+20171230-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `fontconfig=2.13.0-5`
+
+Binary Packages:
+
+- `fontconfig-config=2.13.0-5`
+- `libfontconfig1:amd64=2.13.0-5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris fontconfig=2.13.0-5
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.0-5.dsc' fontconfig_2.13.0-5.dsc 2158 SHA256:cb93433a7b14c64a957ce147df7c718ae5b3e79e5e8c39ba42d40257652ac62c
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.0.orig.tar.bz2' fontconfig_2.13.0.orig.tar.bz2 1700500 SHA256:91dde8492155b7f34bb95079e79be92f1df353fcc682c19be90762fd3e12eeb9
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.0-5.debian.tar.xz' fontconfig_2.13.0-5.debian.tar.xz 54344 SHA256:0afd3b7a4a097d7f2c16052563fded8d8cc4e6281fc288cbb444fa0f06e9e93f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fontconfig/2.13.0-5/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.13.0-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.13.0-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `fonts-dejavu=2.37-1`
+
+Binary Packages:
+
+- `fonts-dejavu-core=2.37-1`
+
+Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `bitstream-vera`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris fonts-dejavu=2.37-1
+'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-1.dsc' fonts-dejavu_2.37-1.dsc 2575 SHA256:f35ff7b2c8dbfda6564c9dedf088ba06cc6d279fdd8e7cccbd1ae08ded1bb71c
+'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37.orig.tar.bz2' fonts-dejavu_2.37.orig.tar.bz2 12050109 SHA256:4b21c5203f792343d5e90ab1cb0cf07e99887218abe3d83cd9a98cea9085e799
+'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-1.debian.tar.xz' fonts-dejavu_2.37-1.debian.tar.xz 10424 SHA256:5105cdbfc086f4a83ab6871eb39cc904bf02aa52762402b7cacf33d0938122f7
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fonts-dejavu/2.37-1/ (for browsing the source)
+- https://sources.debian.net/src/fonts-dejavu/2.37-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fonts-dejavu/2.37-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.8.1-2`
 
@@ -1554,11 +1632,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxau/1:1.0.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxau/1:1.0.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcb=1.13-1`
+### `dpkg` source package: `libxcb=1.13-2`
 
 Binary Packages:
 
-- `libxcb1:amd64=1.13-1`
+- `libxcb1:amd64=1.13-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1567,17 +1645,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcb=1.13-1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.dsc' libxcb_1.13-1.dsc 5213 SHA256:b62c8d9b9fa0299a4b4276bfdd520f43e461fc130824447e0e59a57b5b6def98
+$ apt-get source -qq --print-uris libxcb=1.13-2
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.dsc' libxcb_1.13-2.dsc 5329 SHA256:1dc813a0b2fbcb3323e869e84cf52181ccd9fb7dbe08a44e9080b5e814f6e3e1
 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.diff.gz' libxcb_1.13-1.diff.gz 24982 SHA256:02855328dbea159371d90648e63cbb2dff6101f952537cf7cdfe2281e968a55a
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.diff.gz' libxcb_1.13-2.diff.gz 25222 SHA256:3b1215da593c65c95ce2a9cc1c3dc786b31d99985d676d9958ad2094192e706f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcb/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcb/1.13-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcb/1.13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcb/1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -1930,12 +2008,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~22-2`
+### `dpkg` source package: `openjdk-11=11~23-1`
 
 Binary Packages:
 
-- `openjdk-11-jdk-headless:amd64=11~22-2`
-- `openjdk-11-jre-headless:amd64=11~22-2`
+- `openjdk-11-jdk-headless:amd64=11~23-1`
+- `openjdk-11-jre-headless:amd64=11~23-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -1947,17 +2025,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/us
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~22-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22-2.dsc' openjdk-11_11~22-2.dsc 4511 SHA256:6cf662d0a7a4dd09a45bf73b80b30bd072c37cecf6f45b70e62aa4a55604a682
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22.orig.tar.xz' openjdk-11_11~22.orig.tar.xz 78611076 SHA256:b6c9e26c0892dc9b44da1d09e55e79439fde21c9902a929bfe8ab908f46a1dc7
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~22-2.debian.tar.xz' openjdk-11_11~22-2.debian.tar.xz 166424 SHA256:080a1d0caf509507f9bd0ee8f11d81edfda11922950e065b62a6014b8d5a1dcf
+$ apt-get source -qq --print-uris openjdk-11=11~23-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.dsc' openjdk-11_11~23-1.dsc 4531 SHA256:59543b64df315d1306d01fbead0265eb014b8200824abf3e6ab898cb9191cab2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23.orig.tar.xz' openjdk-11_11~23.orig.tar.xz 78645124 SHA256:5f59d2df33bae80582d6fbfa2d048d7df64ca46969624a0d6449d3ca462e5da8
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.debian.tar.xz' openjdk-11_11~23-1.debian.tar.xz 166284 SHA256:556b141a3116b4e75e3b4036d343c691ff84343ccfdea56ae0d7b5626a1afe01
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~22-2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~22-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~22-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~23-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~23-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~23-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0h-4`
 
@@ -2177,6 +2255,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.5-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `sensible-utils=0.0.12`
+
+Binary Packages:
+
+- `sensible-utils=0.0.12`
+
+Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
+
+- `All-permissive`
+- `GPL-2`
+- `GPL-2+`
+- `configure`
+- `installsh`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris sensible-utils=0.0.12
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.12.dsc' sensible-utils_0.0.12.dsc 1732 SHA256:1b62cc5f7561b3f5692a6edaec942e2e97e8368dabff8c865867d428eecb1221
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.12.tar.xz' sensible-utils_0.0.12.tar.xz 62152 SHA256:99ba2ebf8c57447c69d426b99b84ff9dc817be0bc4988ec6890a14558c529e2e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sensible-utils/0.0.12/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.12/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `shadow=1:4.5-1`
 
 Binary Packages:
@@ -2332,6 +2438,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2018e-1/ (for browsing the source)
 - https://sources.debian.net/src/tzdata/2018e-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2018e-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ucf=3.0038`
+
+Binary Packages:
+
+- `ucf=3.0038`
+
+Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ucf=3.0038
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0038.dsc' ucf_3.0038.dsc 1445 SHA256:5fab6d0af664eac92b3404c6bb62d0a3ceb88cd21a1462b9a262d1292c77328f
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0038.tar.xz' ucf_3.0038.tar.xz 65416 SHA256:262ccd52637c869ac851838a176d76e90db8d3f12373e3b62eb89e217f93fe7e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ucf/3.0038/ (for browsing the source)
+- https://sources.debian.net/src/ucf/3.0038/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ucf/3.0038/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-21`
 

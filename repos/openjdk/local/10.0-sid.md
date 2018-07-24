@@ -1,10 +1,10 @@
-# `openjdk:10.0.1-10-jdk-sid`
+# `openjdk:10.0.2-13-jdk-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75d06acfdc115854111b32dd9543a92ab41d0fe7d69ac356bd59cb81cb0da1cd`
-- Created: `2018-07-17T06:13:48.53267697Z`
-- Virtual Size: ~ 859.12 Mb  
+- Image ID: `sha256:22b2c9245dfe0eed29968b6d1a27ec7462cf00349f3077407d9e21f0e935d8af`
+- Created: `2018-07-21T07:49:26.112890544Z`
+- Virtual Size: ~ 975.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=10.0.1+10`
-  - `JAVA_DEBIAN_VERSION=10.0.1+10-4`
+  - `JAVA_VERSION=10.0.2+13`
+  - `JAVA_DEBIAN_VERSION=10.0.2+13-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3368,20 +3368,20 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxaw/2:1.0.13-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxaw/2:1.0.13-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcb=1.13-1`
+### `dpkg` source package: `libxcb=1.13-2`
 
 Binary Packages:
 
-- `libxcb-dri2-0:amd64=1.13-1`
-- `libxcb-dri3-0:amd64=1.13-1`
-- `libxcb-glx0:amd64=1.13-1`
-- `libxcb-present0:amd64=1.13-1`
-- `libxcb-render0:amd64=1.13-1`
-- `libxcb-shape0:amd64=1.13-1`
-- `libxcb-shm0:amd64=1.13-1`
-- `libxcb-sync1:amd64=1.13-1`
-- `libxcb-xfixes0:amd64=1.13-1`
-- `libxcb1:amd64=1.13-1`
+- `libxcb-dri2-0:amd64=1.13-2`
+- `libxcb-dri3-0:amd64=1.13-2`
+- `libxcb-glx0:amd64=1.13-2`
+- `libxcb-present0:amd64=1.13-2`
+- `libxcb-render0:amd64=1.13-2`
+- `libxcb-shape0:amd64=1.13-2`
+- `libxcb-shm0:amd64=1.13-2`
+- `libxcb-sync1:amd64=1.13-2`
+- `libxcb-xfixes0:amd64=1.13-2`
+- `libxcb1:amd64=1.13-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3390,17 +3390,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcb=1.13-1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.dsc' libxcb_1.13-1.dsc 5213 SHA256:b62c8d9b9fa0299a4b4276bfdd520f43e461fc130824447e0e59a57b5b6def98
+$ apt-get source -qq --print-uris libxcb=1.13-2
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.dsc' libxcb_1.13-2.dsc 5329 SHA256:1dc813a0b2fbcb3323e869e84cf52181ccd9fb7dbe08a44e9080b5e814f6e3e1
 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-1.diff.gz' libxcb_1.13-1.diff.gz 24982 SHA256:02855328dbea159371d90648e63cbb2dff6101f952537cf7cdfe2281e968a55a
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.diff.gz' libxcb_1.13-2.diff.gz 25222 SHA256:3b1215da593c65c95ce2a9cc1c3dc786b31d99985d676d9958ad2094192e706f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcb/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcb/1.13-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcb/1.13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcb/1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcomposite=1:0.4.4-2`
 
@@ -4386,14 +4386,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10.0.1+10-4`
+### `dpkg` source package: `openjdk-10=10.0.2+13-1`
 
 Binary Packages:
 
-- `openjdk-10-jdk:amd64=10.0.1+10-4`
-- `openjdk-10-jdk-headless:amd64=10.0.1+10-4`
-- `openjdk-10-jre:amd64=10.0.1+10-4`
-- `openjdk-10-jre-headless:amd64=10.0.1+10-4`
+- `openjdk-10-jdk:amd64=10.0.2+13-1`
+- `openjdk-10-jdk-headless:amd64=10.0.2+13-1`
+- `openjdk-10-jre:amd64=10.0.2+13-1`
+- `openjdk-10-jre-headless:amd64=10.0.2+13-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-10-jdk/copyright`, `/usr/share/doc/openjdk-10-jdk-headless/copyright`, `/usr/share/doc/openjdk-10-jre/copyright`, `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
@@ -4402,13 +4402,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jdk/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-10=10.0.2+13-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.dsc' openjdk-10_10.0.2+13-1.dsc 4563 SHA256:33171e18e9c61ee6d1dd95b24e0ef5bf5216997daa0071a5ed54fff97d0ddd56
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13.orig.tar.xz' openjdk-10_10.0.2+13.orig.tar.xz 74012480 SHA256:c9b839f4834eeee0b455a52b3b6b3bd22a3e064c06574bed11a4a81d6ce0d0ca
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.debian.tar.xz' openjdk-10_10.0.2+13-1.debian.tar.xz 168704 SHA256:5ac15cc4e199887c3d7f2a92b793fc0bbf30f692b9fdd857abee5876526b9daf
+```
 
-- http://snapshot.debian.org/package/openjdk-10/10.0.1+10-4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10.0.2+13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
@@ -5144,13 +5151,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpam-systemd:amd64=239-5`
-- `libsystemd0:amd64=239-5`
 - `libudev1:amd64=239-5`
-- `systemd=239-5`
-- `systemd-sysv=239-5`
 
-Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`)
 
 - `CC0-1.0`
 - `Expat`
@@ -5166,6 +5169,29 @@ This is *usually* due to a new package version being released and the old versio
 The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/systemd/239-5/
+
+
+### `dpkg` source package: `systemd=239-6`
+
+Binary Packages:
+
+- `libpam-systemd:amd64=239-6`
+- `libsystemd0:amd64=239-6`
+- `systemd=239-6`
+- `systemd-sysv=239-6`
+
+Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+
+- `CC0-1.0`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `public-domain`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
