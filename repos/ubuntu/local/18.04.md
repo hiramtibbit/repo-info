@@ -1076,10 +1076,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.dsc' perl_5.26.1-6ubuntu0.1.dsc 2752 SHA256:fcb5edbbb97a12fcd591e38b870e7726e74313287a08cce36669594a523ceed6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.debian.tar.xz' perl_5.26.1-6ubuntu0.1.debian.tar.xz 168888 SHA256:e03bf924bee8540d755495b49b16e1e0d9be8e28514375d331a27744f87ad6f4
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.dsc' perl_5.26.1-6ubuntu0.1.dsc 2752 SHA256:fcb5edbbb97a12fcd591e38b870e7726e74313287a08cce36669594a523ceed6
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
+'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.debian.tar.xz' perl_5.26.1-6ubuntu0.1.debian.tar.xz 168888 SHA256:e03bf924bee8540d755495b49b16e1e0d9be8e28514375d331a27744f87ad6f4
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.1`

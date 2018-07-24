@@ -404,14 +404,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.1.0-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0-9ubuntu1.dsc' gcc-8_8.1.0-9ubuntu1.dsc 36267 SHA256:63a29b84afd583927a638d32651e3dbc42d982b444c5a7c250fc8e47e46e660e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 75076465 SHA256:a2cb26c5904443efa2ce1a7f037f1ff076b3aba5d23c5e46dc6bb12de8f180c9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.1.0-9ubuntu1.diff.gz' gcc-8_8.1.0-9ubuntu1.diff.gz 3344611 SHA256:885f53c6c8fbfb0f54851b74a5e326f5d598181ac7764bd84ff14b2dce9e4c4a
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -825,14 +820,9 @@ Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=0.9.9-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.dsc' libunistring_0.9.9-0ubuntu1.dsc 1974 SHA256:ae7c9c50fd8ba84a19b4304deb7e924e3c51e5285909a373d5bccb3b6f85b6fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9.orig.tar.xz' libunistring_0.9.9.orig.tar.xz 2042992 SHA256:a4d993ecfce16cf503ff7579f5da64619cee66226fb3b998dafb706190d9a833
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_0.9.9-0ubuntu1.debian.tar.xz' libunistring_0.9.9-0ubuntu1.debian.tar.xz 40024 SHA256:86f14f6266d66b9aa613ac2263b6d73163ab3865144c1a68fc6fb401e52360dc
-```
 
 ### `dpkg` source package: `libzstd=1.3.3+dfsg-2ubuntu1`
 
