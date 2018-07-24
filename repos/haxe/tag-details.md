@@ -17,6 +17,7 @@
 -	[`haxe:3.2.1-alpine`](#haxe321-alpine)
 -	[`haxe:3.2.1-alpine3.6`](#haxe321-alpine36)
 -	[`haxe:3.2.1-alpine3.7`](#haxe321-alpine37)
+-	[`haxe:3.2.1-alpine3.8`](#haxe321-alpine38)
 -	[`haxe:3.2.1-jessie`](#haxe321-jessie)
 -	[`haxe:3.2.1-onbuild`](#haxe321-onbuild)
 -	[`haxe:3.2.1-stretch`](#haxe321-stretch)
@@ -24,6 +25,7 @@
 -	[`haxe:3.2-alpine`](#haxe32-alpine)
 -	[`haxe:3.2-alpine3.6`](#haxe32-alpine36)
 -	[`haxe:3.2-alpine3.7`](#haxe32-alpine37)
+-	[`haxe:3.2-alpine3.8`](#haxe32-alpine38)
 -	[`haxe:3.2-jessie`](#haxe32-jessie)
 -	[`haxe:3.2-onbuild`](#haxe32-onbuild)
 -	[`haxe:3.2-stretch`](#haxe32-stretch)
@@ -33,12 +35,14 @@
 -	[`haxe:3.3.0-alpine`](#haxe330-alpine)
 -	[`haxe:3.3.0-alpine3.6`](#haxe330-alpine36)
 -	[`haxe:3.3.0-alpine3.7`](#haxe330-alpine37)
+-	[`haxe:3.3.0-alpine3.8`](#haxe330-alpine38)
 -	[`haxe:3.3.0-jessie`](#haxe330-jessie)
 -	[`haxe:3.3.0-onbuild`](#haxe330-onbuild)
 -	[`haxe:3.3.0-rc.1`](#haxe330-rc1)
 -	[`haxe:3.3.0-rc.1-alpine`](#haxe330-rc1-alpine)
 -	[`haxe:3.3.0-rc.1-alpine3.6`](#haxe330-rc1-alpine36)
 -	[`haxe:3.3.0-rc.1-alpine3.7`](#haxe330-rc1-alpine37)
+-	[`haxe:3.3.0-rc.1-alpine3.8`](#haxe330-rc1-alpine38)
 -	[`haxe:3.3.0-rc.1-jessie`](#haxe330-rc1-jessie)
 -	[`haxe:3.3.0-rc.1-onbuild`](#haxe330-rc1-onbuild)
 -	[`haxe:3.3.0-rc.1-stretch`](#haxe330-rc1-stretch)
@@ -48,6 +52,7 @@
 -	[`haxe:3.3-alpine`](#haxe33-alpine)
 -	[`haxe:3.3-alpine3.6`](#haxe33-alpine36)
 -	[`haxe:3.3-alpine3.7`](#haxe33-alpine37)
+-	[`haxe:3.3-alpine3.8`](#haxe33-alpine38)
 -	[`haxe:3.3-jessie`](#haxe33-jessie)
 -	[`haxe:3.3-onbuild`](#haxe33-onbuild)
 -	[`haxe:3.3-stretch`](#haxe33-stretch)
@@ -57,6 +62,7 @@
 -	[`haxe:3.4.7-alpine`](#haxe347-alpine)
 -	[`haxe:3.4.7-alpine3.6`](#haxe347-alpine36)
 -	[`haxe:3.4.7-alpine3.7`](#haxe347-alpine37)
+-	[`haxe:3.4.7-alpine3.8`](#haxe347-alpine38)
 -	[`haxe:3.4.7-jessie`](#haxe347-jessie)
 -	[`haxe:3.4.7-onbuild`](#haxe347-onbuild)
 -	[`haxe:3.4.7-stretch`](#haxe347-stretch)
@@ -64,6 +70,7 @@
 -	[`haxe:3.4-alpine`](#haxe34-alpine)
 -	[`haxe:3.4-alpine3.6`](#haxe34-alpine36)
 -	[`haxe:3.4-alpine3.7`](#haxe34-alpine37)
+-	[`haxe:3.4-alpine3.8`](#haxe34-alpine38)
 -	[`haxe:3.4-jessie`](#haxe34-jessie)
 -	[`haxe:3.4-onbuild`](#haxe34-onbuild)
 -	[`haxe:3.4-stretch`](#haxe34-stretch)
@@ -73,12 +80,14 @@
 -	[`haxe:4.0.0-alpine`](#haxe400-alpine)
 -	[`haxe:4.0.0-alpine3.6`](#haxe400-alpine36)
 -	[`haxe:4.0.0-alpine3.7`](#haxe400-alpine37)
+-	[`haxe:4.0.0-alpine3.8`](#haxe400-alpine38)
 -	[`haxe:4.0.0-jessie`](#haxe400-jessie)
 -	[`haxe:4.0.0-onbuild`](#haxe400-onbuild)
 -	[`haxe:4.0.0-preview.4`](#haxe400-preview4)
 -	[`haxe:4.0.0-preview.4-alpine`](#haxe400-preview4-alpine)
 -	[`haxe:4.0.0-preview.4-alpine3.6`](#haxe400-preview4-alpine36)
 -	[`haxe:4.0.0-preview.4-alpine3.7`](#haxe400-preview4-alpine37)
+-	[`haxe:4.0.0-preview.4-alpine3.8`](#haxe400-preview4-alpine38)
 -	[`haxe:4.0.0-preview.4-jessie`](#haxe400-preview4-jessie)
 -	[`haxe:4.0.0-preview.4-onbuild`](#haxe400-preview4-onbuild)
 -	[`haxe:4.0.0-preview.4-stretch`](#haxe400-preview4-stretch)
@@ -88,6 +97,7 @@
 -	[`haxe:4.0-alpine`](#haxe40-alpine)
 -	[`haxe:4.0-alpine3.6`](#haxe40-alpine36)
 -	[`haxe:4.0-alpine3.7`](#haxe40-alpine37)
+-	[`haxe:4.0-alpine3.8`](#haxe40-alpine38)
 -	[`haxe:4.0-jessie`](#haxe40-jessie)
 -	[`haxe:4.0-onbuild`](#haxe40-onbuild)
 -	[`haxe:4.0-stretch`](#haxe40-stretch)
@@ -2278,6 +2288,10 @@ CMD ["haxe"]
 		Size: 21.2 MB (21170229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `haxe:3.2.1-alpine3.8`
+
+**does not exist** (yet?)
+
 ## `haxe:3.2.1-jessie`
 
 ```console
@@ -3000,6 +3014,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:33:43 GMT  
 		Size: 21.2 MB (21170229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:3.2-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:3.2-jessie`
 
@@ -4180,6 +4198,10 @@ CMD ["haxe"]
 		Size: 22.0 MB (21994399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `haxe:3.3.0-alpine3.8`
+
+**does not exist** (yet?)
+
 ## `haxe:3.3.0-jessie`
 
 ```console
@@ -4765,6 +4787,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
 		Size: 22.0 MB (21994399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:3.3.0-rc.1-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:3.3.0-rc.1-jessie`
 
@@ -5853,6 +5879,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:31:32 GMT  
 		Size: 22.0 MB (21994399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:3.3-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:3.3-jessie`
 
@@ -7033,6 +7063,10 @@ CMD ["haxe"]
 		Size: 22.6 MB (22612476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `haxe:3.4.7-alpine3.8`
+
+**does not exist** (yet?)
+
 ## `haxe:3.4.7-jessie`
 
 ```console
@@ -7755,6 +7789,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:29:56 GMT  
 		Size: 22.6 MB (22612476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:3.4-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:3.4-jessie`
 
@@ -8935,6 +8973,10 @@ CMD ["haxe"]
 		Size: 23.2 MB (23217254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `haxe:4.0.0-alpine3.8`
+
+**does not exist** (yet?)
+
 ## `haxe:4.0.0-jessie`
 
 ```console
@@ -9520,6 +9562,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
 		Size: 23.2 MB (23217254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:4.0.0-preview.4-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:4.0.0-preview.4-jessie`
 
@@ -10608,6 +10654,10 @@ CMD ["haxe"]
 		Last Modified: Fri, 06 Jul 2018 15:35:25 GMT  
 		Size: 23.2 MB (23217254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haxe:4.0-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `haxe:4.0-jessie`
 
