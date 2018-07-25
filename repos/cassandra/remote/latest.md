@@ -1,7 +1,7 @@
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:654aa571fe80ea3a24268e798311a5a8e69ac2b6ff67190d4c60655a51cb069a
+$ docker pull cassandra@sha256:150107c1803e14748e85b7ed3fa8e6025e7cb8588ce90c2fd56e98e54a05b914
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull cassandra@sha256:654aa571fe80ea3a24268e798311a5a8e69ac2b6ff67190d4
 ### `cassandra:latest` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:d10282e46a3fe1ced38b0eac6c2061e6253b4d07140cbc0ab9c2866550c28089
+$ docker pull cassandra@sha256:b8ce39b295a20581a58122fe9e0ab30ba2201f5a75b5318fc770a7ec95f986f5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132569739 bytes)**  
+-	Total Size: **132.6 MB (132569738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1808f6dc37a9b903b53ba272d87bb58225450f8aa6fd92257024712eeb417c6`
+-	Image ID: `sha256:fa529e6bb5f3ad28002f8ba4224d6534818870d4b45321cb220197fd14148458`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -50,19 +50,19 @@ RUN set -ex; 		mkdir -p /usr/share/man/man1/; 		dpkgArch="$(dpkg --print-archite
 ENV CASSANDRA_CONFIG=/etc/cassandra
 # Tue, 17 Jul 2018 01:14:39 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONFIG/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONFIG/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONFIG/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONFIG/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONFIG/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONFIG/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONFIG/cassandra-env.sh"; 			fi; 			;; 	esac; 		sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' "$CASSANDRA_CONFIG/cassandra-env.sh"
-# Tue, 17 Jul 2018 01:14:39 GMT
-COPY file:bb2a95b1b37d2dc1935688f875c1dd3e0d1524f08c9b049361424bcaaf27b1b2 in /usr/local/bin/ 
-# Tue, 17 Jul 2018 01:14:40 GMT
+# Wed, 25 Jul 2018 17:22:35 GMT
+COPY file:f8f11b9db08561e1af94b25a1dc5230d7e687ae49a1451e029f35631e7ae6338 in /usr/local/bin/ 
+# Wed, 25 Jul 2018 17:22:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Tue, 17 Jul 2018 01:14:40 GMT
+# Wed, 25 Jul 2018 17:22:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Jul 2018 01:14:41 GMT
+# Wed, 25 Jul 2018 17:22:36 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Tue, 17 Jul 2018 01:14:42 GMT
+# Wed, 25 Jul 2018 17:22:37 GMT
 VOLUME [/var/lib/cassandra]
-# Tue, 17 Jul 2018 01:14:42 GMT
+# Wed, 25 Jul 2018 17:22:37 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Tue, 17 Jul 2018 01:14:42 GMT
+# Wed, 25 Jul 2018 17:22:37 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -95,17 +95,17 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 17 Jul 2018 01:18:20 GMT  
 		Size: 4.7 KB (4657 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ba19e05692073c361b08362aa4fd0c8905f84045bc990cb6909db26f3da6b03`  
-		Last Modified: Tue, 17 Jul 2018 01:18:20 GMT  
-		Size: 1.0 KB (1008 bytes)  
+	-	`sha256:3344e6bfd0e8b656a69bde6b7f27a32c6afe9b6e6bb1a74d5262b476223522ec`  
+		Last Modified: Wed, 25 Jul 2018 17:26:26 GMT  
+		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6306c8e153521d5c53c9869fbd8869891739785c5c9268f103918b7d6b11952`  
-		Last Modified: Tue, 17 Jul 2018 01:18:20 GMT  
-		Size: 118.0 B  
+	-	`sha256:04b98e64d8e2540d92860fc230ed4a52a1bb866bb84d2f49f6e23ff296e8fdf4`  
+		Last Modified: Wed, 25 Jul 2018 17:26:27 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57469a71c97be62fee5c9aaa938f469cc42b9aed797d2b389bb0ab7b34664e89`  
-		Last Modified: Tue, 17 Jul 2018 01:18:20 GMT  
-		Size: 30.5 KB (30527 bytes)  
+	-	`sha256:d99179340fd31a0b6787cfaa04759aaa2e2478b0899308d662228b662ffb8d3e`  
+		Last Modified: Wed, 25 Jul 2018 17:26:26 GMT  
+		Size: 30.5 KB (30532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:latest` - linux; arm64 variant v8
