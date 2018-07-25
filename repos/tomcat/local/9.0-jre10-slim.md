@@ -2435,20 +2435,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-6.dsc' systemd_239-6.dsc 4835 SHA256:234a8f7a190f2eae2acf325cbd4cf606423f6abfebed3ec391059bb2397199e7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-6.debian.tar.xz' systemd_239-6.debian.tar.xz 141596 SHA256:ffe18429d3f7184cddd11058a0633d04768aab11f8ddf982b506b0cd8c2c97e9
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/systemd/239-6/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
