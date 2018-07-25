@@ -328,7 +328,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull oraclelinux@sha256:fb1805f991d134a72120773f83e22c46848ba5c97bc6ba5a3dc2a04732e8c2b8
+$ docker pull oraclelinux@sha256:9038b899ed350f136af1b4d3e707633b1e6276980e01b0b747c319fbfb658ab8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -339,29 +339,29 @@ $ docker pull oraclelinux@sha256:fb1805f991d134a72120773f83e22c46848ba5c97bc6ba5
 ### `oraclelinux:latest` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:2164dac718a3eb32812bc46f0032ee8edb17ca65d0753eeb69965c85b5a1d433
+$ docker pull oraclelinux@sha256:8eea33138abe78b3f17e1ecdce27604996aa08e53bd042c385fe65317a1d2e00
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.0 MB (86025331 bytes)**  
+-	Total Size: **86.0 MB (86019191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45bfd0efe21c5eddfe1e8666410917284597ae1acdf813c1688bc133ccff1ca7`
+-	Image ID: `sha256:859a07e77c9e8be2ba251ee4652d40ba98aab6cf38692c950d818b7525b805e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Sat, 07 Jul 2018 03:36:39 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Sat, 07 Jul 2018 03:36:51 GMT
-ADD file:7243d9f9f9d4548a4f2c5f1fbc5ab7ed074eae079927195fcbb1d78c80a866f8 in / 
-# Sat, 07 Jul 2018 03:36:51 GMT
+# Wed, 25 Jul 2018 18:22:33 GMT
+ADD file:2555d2bfed8c5fcc610e64b0748280c9ed5fdf95c7fa639fbf8eee196d92328f in / 
+# Wed, 25 Jul 2018 18:22:34 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a8b14ce046f0628c1b26bb2af1d29c99bfacab1fceb3a61c32177ba204ef2a3c`  
-		Last Modified: Sat, 07 Jul 2018 03:39:15 GMT  
-		Size: 86.0 MB (86025331 bytes)  
+	-	`sha256:f8f4915271704be3ad63a920cfb051b99c8ef94d658b492027c5a24b46c90c8c`  
+		Last Modified: Wed, 25 Jul 2018 18:25:33 GMT  
+		Size: 86.0 MB (86019191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `oraclelinux:latest` - linux; arm64 variant v8
