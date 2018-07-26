@@ -4523,9 +4523,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-130.156
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-130.156.dsc' linux_4.4.0-130.156.dsc 9712 SHA256:93b114e4180c4fbf4c992d562ce414ffc45d2dfe728c64ccdc871bf01880429d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-130.156.diff.gz' linux_4.4.0-130.156.diff.gz 14648684 SHA256:7a50910e3c587d673aa793f9031749092e54639cd0f2f6dde0dee5aead086f14
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-130.156.dsc' linux_4.4.0-130.156.dsc 9712 SHA256:93b114e4180c4fbf4c992d562ce414ffc45d2dfe728c64ccdc871bf01880429d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-130.156.diff.gz' linux_4.4.0-130.156.diff.gz 14648684 SHA256:7a50910e3c587d673aa793f9031749092e54639cd0f2f6dde0dee5aead086f14
 ```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
@@ -6786,14 +6786,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.dsc' util-linux_2.27.1-6ubuntu3.4.dsc 3862 SHA256:1963b4b9acfcd40246184a00944b36786ce39f8032ff8050deaf500dd5e98425
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.debian.tar.xz' util-linux_2.27.1-6ubuntu3.4.debian.tar.xz 84172 SHA256:f8d5c6e500357de7a1809aaf644949eacab67b16d3cbb057ae3e011b1455c73b
-```
 
 ### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.1`
 
