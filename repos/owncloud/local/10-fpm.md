@@ -1,10 +1,10 @@
-# `owncloud:10.0.8-fpm`
+# `owncloud:10.0.9-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f744c21f0ed6c7029eec255b21803b0216ac3b01718fd54466bdee31ba9a8252`
-- Created: `2018-07-17T20:37:29.728350555Z`
-- Virtual Size: ~ 594.42 Mb  
+- Image ID: `sha256:be03264347c494797d8de2afa59162e6995b2a6d0e64141375889bf038b4d520`
+- Created: `2018-07-21T14:40:45.424762352Z`
+- Virtual Size: ~ 594.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,13 +18,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.30`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.30.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.30.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=c90892fb68ab9b8476519658d3f78f6388f2609ae1309bdc2a2e1cc9f92dd686`
+  - `PHP_VERSION=7.0.31`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.31.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.31.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=68f57b3f4587071fb54a620cb83a1cfb3f0bd4ee071e0ce3bf7046a5f2d2f3cf`
   - `PHP_MD5=`
-  - `OWNCLOUD_VERSION=10.0.8`
-  - `OWNCLOUD_SHA256=9eef77a171cf69fc89b0628b083b4b1dd15eec375599c7eb5ac0b6d37ab6f903`
+  - `OWNCLOUD_VERSION=10.0.9`
+  - `OWNCLOUD_SHA256=767faedf7b236b469e71ad73a70c6250fc33fd493708d95cf31b0b58b4710973`
 
 ## `dpkg` (`.deb`-based packages)
 
