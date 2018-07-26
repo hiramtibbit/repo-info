@@ -1,10 +1,10 @@
-# `drupal:8.4.8-fpm`
+# `drupal:8.6.0-alpha1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:188be6fbb6c8c1c98ea577ddeeeae02819ad2e6a6b472c7f829f79eef43af772`
-- Created: `2018-07-21T13:49:38.868847458Z`
-- Virtual Size: ~ 418.21 Mb  
+- Image ID: `sha256:de7b1465ef14c689fa5f5c6c75d35cfae60266aa3023e9c0fa1640319fc0591e`
+- Created: `2018-07-25T17:21:45.9510791Z`
+- Virtual Size: ~ 433.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,14 +17,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
-  - `PHP_VERSION=7.1.20`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.20.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.20.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=cd7d1006201459d43fae0790cce4eb3451add5c87f4cadb13b228d4c179b850c`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
+  - `PHP_VERSION=7.2.8`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.8.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.8.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=53ba0708be8a7db44256e3ae9fcecc91b811e5b5119e6080c951ffe7910ffb0f`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.4.8`
-  - `DRUPAL_MD5=f922c5fead1e05ecf155cfd63983fcf1`
+  - `DRUPAL_VERSION=8.6.0-alpha1`
+  - `DRUPAL_MD5=15cda0cacdf2287dfa44649d3fc590ef`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -103,6 +103,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `argon2=0~20160821-1`
+
+Binary Packages:
+
+- `libargon2-0:amd64=0~20160821-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libargon2-0/copyright`)
+
+- `CC0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris argon2=0~20160821-1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.dsc' argon2_0~20160821-1.dsc 1985 SHA256:a930d20b8ed485a7907c9ebf9774e3f6e10b732c19b3e363f5ac236373ff1227
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821.orig.tar.gz' argon2_0~20160821.orig.tar.gz 1170019 SHA256:f81456ae31337a13a1a1b8ffe994d71ace741833a97a75f0c1a76259639bf3b8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.debian.tar.xz' argon2_0~20160821-1.debian.tar.xz 5728 SHA256:062ab159a0bbc442e7a80c0c91a19d71b27aca17544635c348032e707f95f84e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/argon2/0~20160821-1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20160821-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20160821-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1604,6 +1629,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsigsegv/2.10-5/ (for browsing the source)
 - https://sources.debian.net/src/libsigsegv/2.10-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsigsegv/2.10-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libsodium=1.0.11-2`
+
+Binary Packages:
+
+- `libsodium18:amd64=1.0.11-2`
+
+Licenses: (parsed from: `/usr/share/doc/libsodium18/copyright`)
+
+- `BSD-2-clause`
+- `CC0`
+- `GPL-2`
+- `GPL-2+`
+- `ISC`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libsodium=1.0.11-2
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.dsc' libsodium_1.0.11-2.dsc 1981 SHA256:c27e29c0d33b4b541ec209263f8537a74b435e43250970ce4baaa3a043340fac
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11.orig.tar.gz' libsodium_1.0.11.orig.tar.gz 1445598 SHA256:7ad3340938af851186318b09fe977e1bd48acc3f21068f3961afa42ed37a3a65
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.debian.tar.xz' libsodium_1.0.11-2.debian.tar.xz 6120 SHA256:36802b06c9b10b9bf413124418c1d5cbbfa9f35ee9d20641d9c4f8897d37d573
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libsodium/1.0.11-2/ (for browsing the source)
+- https://sources.debian.net/src/libsodium/1.0.11-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsodium/1.0.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
