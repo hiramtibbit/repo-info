@@ -1,14 +1,14 @@
-# `vault:0.10.3`
+# `vault:0.10.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54c4ae088eaea3aed9e97efb3f9aa1992438c7570485ee28fcefedc664e4a512`
-- Created: `2018-07-06T14:43:12.715865225Z`
-- Virtual Size: ~ 96.63 Mb  
+- Image ID: `sha256:38063b24806e972ceb1efe9ba5b0985c4ec4fdb4c71b43471f4cb4f9d5c70c05`
+- Created: `2018-07-25T18:10:01.679666092Z`
+- Virtual Size: ~ 102.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["server","-dev"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VAULT_VERSION=0.10.3`
+  - `VAULT_VERSION=0.10.4`
