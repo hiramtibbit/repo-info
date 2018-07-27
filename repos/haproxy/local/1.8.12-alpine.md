@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72ae71163d38c80ee2903b61b139b7e8b6c063323231feab2a80e84fbaed4ca0`
-- Created: `2018-07-06T15:15:18.403953542Z`
-- Virtual Size: ~ 18.37 Mb  
+- Image ID: `sha256:0132826423d45744e69e19e6dbeffe182bbd7587efe4eea0a8d46751a6984e84`
+- Created: `2018-07-25T17:36:52.571413758Z`
+- Virtual Size: ~ 18.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,4 +13,4 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HAPROXY_MAJOR=1.8`
   - `HAPROXY_VERSION=1.8.12`
-  - `HAPROXY_MD5=9f37013ec1e76942a67a9f7c067af9f2`
+  - `HAPROXY_SHA256=f438a98e657935fa8fad48b98d9029a399e0ad9105cf0e7e8e54365f93d83e9b`
