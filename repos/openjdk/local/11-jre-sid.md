@@ -1228,20 +1228,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.1.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-10.dsc' gcc-8_8.1.0-10.dsc 32311 SHA256:8e67df55276241febd6822eebdab0ed1a24727df1719044eb6dcf5fa715ab23b
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0.orig.tar.gz' gcc-8_8.1.0.orig.tar.gz 73111115 SHA256:e4cdc357a44fcf8fddb9d01593b14fdad0086ec71d4c061994a7d912522ba3a3
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.1.0-10.diff.gz' gcc-8_8.1.0-10.diff.gz 3511079 SHA256:48bcd10bfefccc2490ec31b79a5ac0e36b7baf6a92f63dce699a6fb1ef20eab8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8.1.0-10/
 
-- https://sources.debian.net/src/gcc-8/8.1.0-10/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.1.0-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.1.0-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-2`
 
@@ -1670,20 +1663,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.8.3-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.dsc' harfbuzz_1.8.3-1.dsc 2295 SHA256:5fd1e82172a8156191cb6a3583bf19cf480c021c20542d485a8b08e86ca5dd12
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3.orig.tar.bz2' harfbuzz_1.8.3.orig.tar.bz2 3828043 SHA256:2ac2ad1ca26253bfe7f437adcd034c84dad0e7c2c0fe008d6051b754fa987a9e
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.3-1.debian.tar.xz' harfbuzz_1.8.3-1.debian.tar.xz 8828 SHA256:e97c2b54f21b755c9ad15bd1d7d206929ce6ba885b9d92f8af5059ab335df16c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/
 
-- https://sources.debian.net/src/harfbuzz/1.8.3-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.8.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -3038,20 +3024,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.8.0-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.dsc' libssh2_1.8.0-1.dsc 1860 SHA256:14837d645e77d08fbf00333dee60129be3aeb40c956294cb7bd0b79f456a3fb0
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.debian.tar.xz' libssh2_1.8.0-1.debian.tar.xz 7320 SHA256:79a68889d8102922b92b1757b1d5993cb70faa9a259aca21c2db2e5e55d30b62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.8.0-1/
 
-- https://sources.debian.net/src/libssh2/1.8.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.8.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
 
