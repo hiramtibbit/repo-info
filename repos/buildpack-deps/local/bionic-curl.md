@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d059ed034362266bd9dc255a7b135267e8d870f783aa7e06eab9fb0333f9c9ab`
-- Created: `2018-07-17T02:49:44.365099622Z`
-- Virtual Size: ~ 102.77 Mb  
+- Image ID: `sha256:b507f9eb1ebb416652d65ef5ac627e252d4f9414f0926b678f4d9fc08f20baf3`
+- Created: `2018-07-26T22:58:19.072192971Z`
+- Virtual Size: ~ 103.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,25 +51,25 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.2`
+### `dpkg` source package: `apt=1.6.3`
 
 Binary Packages:
 
-- `apt=1.6.2`
-- `libapt-pkg5.0:amd64=1.6.2`
+- `apt=1.6.3`
+- `libapt-pkg5.0:amd64=1.6.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/1.6.2/
-
+```console
+$ apt-get source -qq --print-uris apt=1.6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -113,11 +113,11 @@ $ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2`
+### `dpkg` source package: `base-files=10.1ubuntu2.1`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2`
+- `base-files=10.1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -126,9 +126,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.dsc' base-files_10.1ubuntu2.dsc 1612 SHA256:d996abd3f94f982fa507ae7e982f3a6d5982f71c9258393cbaa2cebf5b765c1c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.tar.xz' base-files_10.1ubuntu2.tar.xz 77128 SHA256:6b5190db4a20f5b62129c445d949fc005137f8d30703a98910e1e2dccbed411d
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.dsc' base-files_10.1ubuntu2.1.dsc 1620 SHA256:a830d8f04e756e3513148b4137d7cb21cf4a49893166083856f34b12c9672702
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.tar.xz' base-files_10.1ubuntu2.1.tar.xz 77200 SHA256:483c7224e0d9747652bebe9cc786862855dc66e5fff8685e88440f123e89f79d
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -1360,11 +1360,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-9.debian.tar.gz' pcre3_8.39-9.debian.tar.gz 26333 SHA256:68be90799b722a8d5a075c3d2f48718cb21e2e736e0edf1e7e46a87c51215f55
 ```
 
-### `dpkg` source package: `perl=5.26.1-6ubuntu0.1`
+### `dpkg` source package: `perl=5.26.1-6ubuntu0.2`
 
 Binary Packages:
 
-- `perl-base=5.26.1-6ubuntu0.1`
+- `perl-base=5.26.1-6ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1400,11 +1400,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.dsc' perl_5.26.1-6ubuntu0.1.dsc 2752 SHA256:fcb5edbbb97a12fcd591e38b870e7726e74313287a08cce36669594a523ceed6
-'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.1.debian.tar.xz' perl_5.26.1-6ubuntu0.1.debian.tar.xz 168888 SHA256:e03bf924bee8540d755495b49b16e1e0d9be8e28514375d331a27744f87ad6f4
+$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.2.dsc' perl_5.26.1-6ubuntu0.2.dsc 2797 SHA256:d5a49f779d721ca100059cdff7f946e7b37ada463d8440caae67f04dd4836e92
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.2.debian.tar.xz' perl_5.26.1-6ubuntu0.2.debian.tar.xz 168996 SHA256:5cba68df6fbac5f3970c4b1f7a28ddfcbced609dc2707c0e122ba33fb07542b7
 ```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
@@ -1580,12 +1580,12 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10`
+### `dpkg` source package: `systemd=237-3ubuntu10.3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10`
-- `libudev1:amd64=237-3ubuntu10`
+- `libsystemd0:amd64=237-3ubuntu10.3`
+- `libudev1:amd64=237-3ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1600,10 +1600,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.dsc' systemd_237-3ubuntu10.dsc 4981 SHA256:39a15b24ccc61849480ab6079905381d666c4d5cac32d12330272a87b2492ff4
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.3.dsc' systemd_237-3ubuntu10.3.dsc 4960 SHA256:b72a4558c78ed9d9b9522091f6e7ffe7ec34d5abeb40d37a855f8a0548a9de81
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.debian.tar.xz' systemd_237-3ubuntu10.debian.tar.xz 168288 SHA256:10f3add01b6af3ed154a1e2668e6fb15570034ac3f2bee859ea98127d57828cd
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.3.debian.tar.xz' systemd_237-3ubuntu10.3.debian.tar.xz 179068 SHA256:905e2f76b453fbf62623a575504423e041c91cc86e9c248ab455e25f38d83b94
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`

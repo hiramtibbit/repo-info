@@ -1057,20 +1057,9 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.4-1
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.dsc' fribidi_1.0.4-1.dsc 1832 SHA256:370aff38390928fd0bacb3a8f13b6c9585f1d2fcdb1669083e7fde055934a070
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4.orig.tar.bz2' fribidi_1.0.4.orig.tar.bz2 2082335 SHA256:94bdfe553e004d8bd095b109e182682311dd511740d5083326d1582f1df237be
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.debian.tar.xz' fribidi_1.0.4-1.debian.tar.xz 7732 SHA256:00094ff8b59d89dbca7aa24f97fb86b0671194166fc51039b953aa39bf78e30e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/fribidi/1.0.4-1/ (for browsing the source)
-- https://sources.debian.net/src/fribidi/1.0.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fribidi/1.0.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-7=7.3.0-25`
 

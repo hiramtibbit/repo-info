@@ -1145,19 +1145,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.dsc' gcc-defaults_1.176.dsc 15357 SHA256:f7e4f4ac066b7c3bd9b4f3b00331ddb0d23003ebcfce89f1c22534c67f579f85
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.tar.gz' gcc-defaults_1.176.tar.gz 71780 SHA256:8805548d86c153ccbc54e2aefcf0981f5152482dfe50a3793097d15b4bbb2b0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.176/
 
-- https://sources.debian.net/src/gcc-defaults/1.176/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.176/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.176/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
