@@ -33086,7 +33086,7 @@ CMD ["python3"]
 ## `python:3.6.6-alpine3.6`
 
 ```console
-$ docker pull python@sha256:3aa10cf524017c0d748635ef2a744540632dc404ffbfdd265b42c8e754410294
+$ docker pull python@sha256:bcb065587e251ae2bd8eb2d2e328d2737c97b90cded1d64eaa7f0b4eb7e188cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33298,14 +33298,14 @@ CMD ["python3"]
 ### `python:3.6.6-alpine3.6` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:eef3d6a910d9930998c87e97359acfdd090f9392449cab90376ae79076d57b7d
+$ docker pull python@sha256:3003a31e3ac5ff0e2d3ca3db48678d3070a938f86f193826d60e807dc04ae8d5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.1 MB (28121975 bytes)**  
+-	Total Size: **28.1 MB (28121980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6687ba6dbb859cab12959417cf3bcd9edfecc42a60e8d2f3ec594578accb3c48`
+-	Image ID: `sha256:3d060c9df192dd522899587729a258db15f7ca46cc29eccc250a97ea5d0ecc35`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -33331,9 +33331,9 @@ RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		libressl 		ta
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Thu, 26 Jul 2018 10:23:03 GMT
 ENV PYTHON_PIP_VERSION=18.0
-# Thu, 26 Jul 2018 10:23:23 GMT
-RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apk del .fetch-deps; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 26 Jul 2018 10:23:25 GMT
+# Fri, 27 Jul 2018 08:36:18 GMT
+RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; trap 'apk del .fetch-deps' EXIT; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 27 Jul 2018 08:36:19 GMT
 CMD ["python3"]
 ```
 
@@ -33358,9 +33358,9 @@ CMD ["python3"]
 		Last Modified: Tue, 17 Jul 2018 13:39:26 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ea4afc81cc2ac52f2a5d3bc3c37c9b978dfd47bd08270a64cf8ecc68287696d`  
-		Last Modified: Thu, 26 Jul 2018 11:23:08 GMT  
-		Size: 2.0 MB (2012760 bytes)  
+	-	`sha256:66804d1dd346286c97298ac7996495974cf1483ce0359dd30908f5acf62f7636`  
+		Last Modified: Fri, 27 Jul 2018 09:10:40 GMT  
+		Size: 2.0 MB (2012765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3.6.6-alpine3.6` - linux; s390x
@@ -36903,7 +36903,7 @@ CMD ["python3"]
 ## `python:3.6-alpine3.6`
 
 ```console
-$ docker pull python@sha256:3aa10cf524017c0d748635ef2a744540632dc404ffbfdd265b42c8e754410294
+$ docker pull python@sha256:bcb065587e251ae2bd8eb2d2e328d2737c97b90cded1d64eaa7f0b4eb7e188cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37115,14 +37115,14 @@ CMD ["python3"]
 ### `python:3.6-alpine3.6` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:eef3d6a910d9930998c87e97359acfdd090f9392449cab90376ae79076d57b7d
+$ docker pull python@sha256:3003a31e3ac5ff0e2d3ca3db48678d3070a938f86f193826d60e807dc04ae8d5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.1 MB (28121975 bytes)**  
+-	Total Size: **28.1 MB (28121980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6687ba6dbb859cab12959417cf3bcd9edfecc42a60e8d2f3ec594578accb3c48`
+-	Image ID: `sha256:3d060c9df192dd522899587729a258db15f7ca46cc29eccc250a97ea5d0ecc35`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -37148,9 +37148,9 @@ RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		libressl 		ta
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Thu, 26 Jul 2018 10:23:03 GMT
 ENV PYTHON_PIP_VERSION=18.0
-# Thu, 26 Jul 2018 10:23:23 GMT
-RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apk del .fetch-deps; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 26 Jul 2018 10:23:25 GMT
+# Fri, 27 Jul 2018 08:36:18 GMT
+RUN set -ex; 		apk add --no-cache --virtual .fetch-deps libressl; trap 'apk del .fetch-deps' EXIT; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 27 Jul 2018 08:36:19 GMT
 CMD ["python3"]
 ```
 
@@ -37175,9 +37175,9 @@ CMD ["python3"]
 		Last Modified: Tue, 17 Jul 2018 13:39:26 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ea4afc81cc2ac52f2a5d3bc3c37c9b978dfd47bd08270a64cf8ecc68287696d`  
-		Last Modified: Thu, 26 Jul 2018 11:23:08 GMT  
-		Size: 2.0 MB (2012760 bytes)  
+	-	`sha256:66804d1dd346286c97298ac7996495974cf1483ce0359dd30908f5acf62f7636`  
+		Last Modified: Fri, 27 Jul 2018 09:10:40 GMT  
+		Size: 2.0 MB (2012765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3.6-alpine3.6` - linux; s390x
