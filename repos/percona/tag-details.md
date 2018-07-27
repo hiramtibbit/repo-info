@@ -5,10 +5,18 @@
 -	[`percona:5`](#percona5)
 -	[`percona:5.5`](#percona55)
 -	[`percona:5.5.60`](#percona5560)
+-	[`percona:5.5.60-jessie`](#percona5560-jessie)
+-	[`percona:5.5-jessie`](#percona55-jessie)
 -	[`percona:5.6`](#percona56)
 -	[`percona:5.6.40`](#percona5640)
+-	[`percona:5.6.40-jessie`](#percona5640-jessie)
+-	[`percona:5.6-jessie`](#percona56-jessie)
 -	[`percona:5.7`](#percona57)
 -	[`percona:5.7.22`](#percona5722)
+-	[`percona:5.7.22-jessie`](#percona5722-jessie)
+-	[`percona:5.7-jessie`](#percona57-jessie)
+-	[`percona:5-jessie`](#percona5-jessie)
+-	[`percona:jessie`](#perconajessie)
 -	[`percona:latest`](#perconalatest)
 
 ## `percona:5`
@@ -332,6 +340,14 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `percona:5.5.60-jessie`
+
+**does not exist** (yet?)
+
+## `percona:5.5-jessie`
+
+**does not exist** (yet?)
+
 ## `percona:5.6`
 
 ```console
@@ -546,6 +562,14 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `percona:5.6.40-jessie`
+
+**does not exist** (yet?)
+
+## `percona:5.6-jessie`
+
+**does not exist** (yet?)
+
 ## `percona:5.7`
 
 ```console
@@ -759,6 +783,22 @@ CMD ["mysqld"]
 		Last Modified: Tue, 17 Jul 2018 04:54:39 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `percona:5.7.22-jessie`
+
+**does not exist** (yet?)
+
+## `percona:5.7-jessie`
+
+**does not exist** (yet?)
+
+## `percona:5-jessie`
+
+**does not exist** (yet?)
+
+## `percona:jessie`
+
+**does not exist** (yet?)
 
 ## `percona:latest`
 

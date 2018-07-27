@@ -13,7 +13,23 @@
 -	[`julia:0.6-stretch`](#julia06-stretch)
 -	[`julia:0.6-windowsservercore-1709`](#julia06-windowsservercore-1709)
 -	[`julia:0.6-windowsservercore-ltsc2016`](#julia06-windowsservercore-ltsc2016)
+-	[`julia:0.7`](#julia07)
+-	[`julia:0.7.0`](#julia070)
+-	[`julia:0.7.0-beta2`](#julia070-beta2)
+-	[`julia:0.7.0-beta2-stretch`](#julia070-beta2-stretch)
+-	[`julia:0.7.0-beta2-windowsservercore-1709`](#julia070-beta2-windowsservercore-1709)
+-	[`julia:0.7.0-beta2-windowsservercore-ltsc2016`](#julia070-beta2-windowsservercore-ltsc2016)
+-	[`julia:0.7.0-stretch`](#julia070-stretch)
+-	[`julia:0.7.0-windowsservercore-1709`](#julia070-windowsservercore-1709)
+-	[`julia:0.7.0-windowsservercore-ltsc2016`](#julia070-windowsservercore-ltsc2016)
+-	[`julia:0.7-stretch`](#julia07-stretch)
+-	[`julia:0.7-windowsservercore-1709`](#julia07-windowsservercore-1709)
+-	[`julia:0.7-windowsservercore-ltsc2016`](#julia07-windowsservercore-ltsc2016)
 -	[`julia:0-jessie`](#julia0-jessie)
+-	[`julia:0-rc`](#julia0-rc)
+-	[`julia:0-rc-stretch`](#julia0-rc-stretch)
+-	[`julia:0-rc-windowsservercore-1709`](#julia0-rc-windowsservercore-1709)
+-	[`julia:0-rc-windowsservercore-ltsc2016`](#julia0-rc-windowsservercore-ltsc2016)
 -	[`julia:0-stretch`](#julia0-stretch)
 -	[`julia:0-windowsservercore-1709`](#julia0-windowsservercore-1709)
 -	[`julia:0-windowsservercore-ltsc2016`](#julia0-windowsservercore-ltsc2016)
@@ -1428,6 +1444,54 @@ CMD ["julia"]
 		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:0.7`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-beta2`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-beta2-stretch`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-beta2-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-beta2-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-stretch`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `julia:0.7.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:0.7-stretch`
+
+**does not exist** (yet?)
+
+## `julia:0.7-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `julia:0.7-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
 ## `julia:0-jessie`
 
 ```console
@@ -1534,6 +1598,22 @@ CMD ["julia"]
 		Last Modified: Thu, 26 Jul 2018 11:05:02 GMT  
 		Size: 66.9 MB (66946403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `julia:0-rc`
+
+**does not exist** (yet?)
+
+## `julia:0-rc-stretch`
+
+**does not exist** (yet?)
+
+## `julia:0-rc-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `julia:0-rc-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `julia:0-stretch`
 
