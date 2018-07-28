@@ -3729,20 +3729,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u5
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.dsc' mercurial_3.1.2-2+deb8u5.dsc 1942 SHA256:40105a4095a8f107cb9eaf9029c4a701bfec810d70dbfe6bf9a18e872bc81f47
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2.orig.tar.gz' mercurial_3.1.2.orig.tar.gz 3983825 SHA256:5dbe5ceb3707e378528dc9346af280919760aa1a8bcc27be12c1fe2bafa78d3a
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.debian.tar.xz' mercurial_3.1.2-2+deb8u5.debian.tar.xz 72512 SHA256:a78cae21139e98a7bc689b0490ad8c087761fb5bd03406090010f308f36c1455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u5/
 
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.58`
 
