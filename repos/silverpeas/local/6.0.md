@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25ca4c52bf9fea3f0a3431636c8083be5c3ce8310df8fed27be4a3f9ac369e22`
-- Created: `2018-07-17T10:50:01.963453722Z`
+- Image ID: `sha256:bf958a0b75efd2ae07228becee4a6c8d4eb57e3c76d0d4c664e87c24c30e3d4c`
+- Created: `2018-07-26T22:52:58.696900698Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -207,19 +207,23 @@ $ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz 33608 SHA256:eaecf25bbdc695c866ae72926b4c8b9d05c42e5984a767b6e5d581b6f67ff5b2
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.6`
+### `dpkg` source package: `base-files=9.4ubuntu4.7`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.6`
+- `base-files=9.4ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.dsc' base-files_9.4ubuntu4.7.dsc 1226 SHA256:cc4e66c0cfedf2893bab541316713f28b35f4d0833d0c5f31837db9b1ea686c8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.tar.xz' base-files_9.4ubuntu4.7.tar.xz 63132 SHA256:da2f5f7e2ac681435a3251d969d6d50d8be3716bcee62b024ae59e4cc6c52eb2
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -978,12 +982,12 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gccgo-6/gccgo-6_6.0.1-0ubuntu1.diff.gz' gccgo-6_6.0.1-0ubuntu1.diff.gz 633954 SHA256:839eea6c2d23670f09b642864ff61e3097b47391cb508a5997538750ff8678f6
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.4`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.5`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.4`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.4`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.5`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -993,10 +997,10 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.dsc' gdk-pixbuf_2.32.2-1ubuntu1.4.dsc 2896 SHA256:996379bf3be305ff50b76957cf71addf72c25d37f380b70267d6bc56fb4e4a86
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.dsc' gdk-pixbuf_2.32.2-1ubuntu1.5.dsc 2989 SHA256:d3327425db711bcc8e3659f91f56c71bf338d22bf43bf3b53450436050f58250
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz 19120 SHA256:94d51d3f3a7fe11e0a939637ddb40bdfcc126d7deb09bc7ab9b600f41f4aae81
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz 19148 SHA256:505d4e611ff95885894414c951c121a355d33c40780b31c3b19a5903b65bfc8f
 ```
 
 ### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.8`
@@ -1074,12 +1078,12 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu3`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.2-0ubuntu1`
-- `libglib2.0-data=2.48.2-0ubuntu1`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu3`
+- `libglib2.0-data=2.48.2-0ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -1088,10 +1092,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.dsc' glib2.0_2.48.2-0ubuntu1.dsc 3324 SHA256:83dbf2f597e79d34b42e89d2b3129bc3925142e5f4cd4d3df2254b4a4d486345
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu3.dsc' glib2.0_2.48.2-0ubuntu3.dsc 3385 SHA256:840f99586a1c296933f8f566408075304caac94ce632de42e023d8aecdf46069
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu3.debian.tar.xz' glib2.0_2.48.2-0ubuntu3.debian.tar.xz 69584 SHA256:5d73aa45e4ed17f583b06e7a2fddab8cac58ec82283623f11e4237cb017915bf
 ```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
@@ -1315,11 +1319,11 @@ $ apt-get source -qq --print-uris harfbuzz=1.0.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.0.1-1ubuntu0.1.debian.tar.xz' harfbuzz_1.0.1-1ubuntu0.1.debian.tar.xz 8952 SHA256:5b8b03fa2a6ed98e0e90b2d279e6d477c8d692b8ed772e35cab1f4cb51a20d10
 ```
 
-### `dpkg` source package: `hicolor-icon-theme=0.15-0ubuntu1`
+### `dpkg` source package: `hicolor-icon-theme=0.15-0ubuntu1.1`
 
 Binary Packages:
 
-- `hicolor-icon-theme=0.15-0ubuntu1`
+- `hicolor-icon-theme=0.15-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 
@@ -1328,10 +1332,10 @@ Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris hicolor-icon-theme=0.15-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-0ubuntu1.dsc' hicolor-icon-theme_0.15-0ubuntu1.dsc 1393 SHA256:37afdb852c80bcdabcc4149541955022365cebb644cbcc0c8ce51f510832405c
+$ apt-get source -qq --print-uris hicolor-icon-theme=0.15-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-0ubuntu1.1.dsc' hicolor-icon-theme_0.15-0ubuntu1.1.dsc 2084 SHA256:b2f4740a56d5911937dde4c840c416577393eae349683882f7470fc52e2e9b2b
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15.orig.tar.xz' hicolor-icon-theme_0.15.orig.tar.xz 51056 SHA256:9cc45ac3318c31212ea2d8cb99e64020732393ee7630fa6c1810af5f987033cc
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-0ubuntu1.debian.tar.xz' hicolor-icon-theme_0.15-0ubuntu1.debian.tar.xz 3260 SHA256:c90dfa7b46fba6577b54049643d8029e1736065a5823891aa2ba909afb52899c
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-0ubuntu1.1.debian.tar.xz' hicolor-icon-theme_0.15-0ubuntu1.1.debian.tar.xz 3356 SHA256:b9ffb5a9fd267257e072d065e8be2aed82aeff5cb7631cd413cf5a82632727fc
 ```
 
 ### `dpkg` source package: `hostname=3.16ubuntu2`
@@ -4296,11 +4300,11 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
 ```
 
-### `dpkg` source package: `shared-mime-info=1.5-2ubuntu0.1`
+### `dpkg` source package: `shared-mime-info=1.5-2ubuntu0.2`
 
 Binary Packages:
 
-- `shared-mime-info=1.5-2ubuntu0.1`
+- `shared-mime-info=1.5-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
@@ -4309,10 +4313,10 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shared-mime-info=1.5-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.1.dsc' shared-mime-info_1.5-2ubuntu0.1.dsc 1527 SHA256:f612c1ecfdd685dae8107665a75191ea305e63dc84c4f930038eff69f582c668
+$ apt-get source -qq --print-uris shared-mime-info=1.5-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.2.dsc' shared-mime-info_1.5-2ubuntu0.2.dsc 2289 SHA256:ca9e4459755bc42b5d54938bb20b5c1cac9144e590f690583169ac349bfcd669
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5.orig.tar.xz' shared-mime-info_1.5.orig.tar.xz 559040 SHA256:d6412840eb265bf36e61fd7b6fc6bea21b0f58cb22bed16f2ccccdd54bea4180
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.1.debian.tar.xz' shared-mime-info_1.5-2ubuntu0.1.debian.tar.xz 10444 SHA256:a6b465a346b0e59a2600d56a0350cac242e6ee19b1f591ef47406135dfe0761f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz' shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz 10548 SHA256:7687ced629abcb5e53fb5686403393c99a89dec08a8a8070b9818242b0bf4b92
 ```
 
 ### `dpkg` source package: `shine=3.1.0-4`
@@ -4336,11 +4340,11 @@ $ apt-get source -qq --print-uris shine=3.1.0-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/shine/shine_3.1.0-4.debian.tar.xz' shine_3.1.0-4.debian.tar.xz 3472 SHA256:5fc56f00d6653fc9d33b6adf802ea20324ccec762f9c4e581e1ddffee0fdb1a4
 ```
 
-### `dpkg` source package: `slang2=2.3.0-2ubuntu1`
+### `dpkg` source package: `slang2=2.3.0-2ubuntu1.1`
 
 Binary Packages:
 
-- `libslang2:amd64=2.3.0-2ubuntu1`
+- `libslang2:amd64=2.3.0-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libslang2/copyright`)
 
@@ -4350,10 +4354,10 @@ Licenses: (parsed from: `/usr/share/doc/libslang2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris slang2=2.3.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.dsc' slang2_2.3.0-2ubuntu1.dsc 1783 SHA256:6ff38e8b767aaa71e04a8a7d98a8794424d3ed11e72d092c2ba5561197566654
+$ apt-get source -qq --print-uris slang2=2.3.0-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.1.dsc' slang2_2.3.0-2ubuntu1.1.dsc 2445 SHA256:4ad16e8d76bf7e345778ba121ca5174d72736d69c288f370ceaaac8cef557a83
 'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0.orig.tar.xz' slang2_2.3.0.orig.tar.xz 1250392 SHA256:cdd5b9582959b3afdae403ee6f4be9de8efc7e205e4a7de18c1a847ea5ef0472
-'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.debian.tar.xz' slang2_2.3.0-2ubuntu1.debian.tar.xz 21952 SHA256:903711b3902a5d58849798d221088701387c9dcc992500c3f3ca514660aa3532
+'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.1.debian.tar.xz' slang2_2.3.0-2ubuntu1.1.debian.tar.xz 22868 SHA256:7f4edf5f0f656ef8386436c647f0c1a866fb14691970cda0e0d4e2875258bdc7
 ```
 
 ### `dpkg` source package: `snappy=1.1.3-2`
@@ -4640,18 +4644,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.4`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.6`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.4`
-- `libblkid1:amd64=2.27.1-6ubuntu3.4`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.4`
-- `libmount1:amd64=2.27.1-6ubuntu3.4`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.4`
-- `libuuid1:amd64=2.27.1-6ubuntu3.4`
-- `mount=2.27.1-6ubuntu3.4`
-- `util-linux=2.27.1-6ubuntu3.4`
+- `bsdutils=1:2.27.1-6ubuntu3.6`
+- `libblkid1:amd64=2.27.1-6ubuntu3.6`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.6`
+- `libmount1:amd64=2.27.1-6ubuntu3.6`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.6`
+- `libuuid1:amd64=2.27.1-6ubuntu3.6`
+- `mount=2.27.1-6ubuntu3.6`
+- `util-linux=2.27.1-6ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -4675,10 +4679,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.dsc' util-linux_2.27.1-6ubuntu3.4.dsc 3862 SHA256:1963b4b9acfcd40246184a00944b36786ce39f8032ff8050deaf500dd5e98425
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.4.debian.tar.xz' util-linux_2.27.1-6ubuntu3.4.debian.tar.xz 84172 SHA256:f8d5c6e500357de7a1809aaf644949eacab67b16d3cbb057ae3e011b1455c73b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
 ```
 
 ### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.1`
