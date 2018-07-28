@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6151a5075eb5f652586ea91d17b2f79f8fda8b0c1f329292d25ad826da08e56`
-- Created: `2018-07-21T10:26:50.091899299Z`
-- Virtual Size: ~ 516.08 Mb  
+- Image ID: `sha256:7ad1fd4c3dce56630e566ac9285b06155c0ea38f52ab23fdd0c411f6b3ffca8c`
+- Created: `2018-07-27T23:06:18.18149527Z`
+- Virtual Size: ~ 516.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+23`
-  - `JAVA_DEBIAN_VERSION=11~23-1`
+  - `JAVA_VERSION=11-ea+24`
+  - `JAVA_DEBIAN_VERSION=11~24-1`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -1001,21 +1001,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18-1.dsc' gnutls28_3.5.18-1.dsc 3319 SHA256:8fb56c45fa720337996fa289539eeb220abedaaf7cab6a4068ff1597b711ab89
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18-1.debian.tar.xz' gnutls28_3.5.18-1.debian.tar.xz 65332 SHA256:cb9057e1a32052743d9da2d446a4fac428c2831c33f9380b8be1cecb204e8466
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.18-1/
 
-- https://sources.debian.net/src/gnutls28/3.5.18-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-5`
 
@@ -1146,11 +1138,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.51/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.51/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-common=0.67`
+### `dpkg` source package: `java-common=0.68`
 
 Binary Packages:
 
-- `java-common=0.67`
+- `java-common=0.68`
 
 Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 
@@ -1160,16 +1152,16 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris java-common=0.67
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.dsc' java-common_0.67.dsc 1985 SHA256:c1ec68dd9663ea72165afc7d471e73fcd58f4d9016497af47c4f22d4d94b039f
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.tar.xz' java-common_0.67.tar.xz 13000 SHA256:b16e4532122f75d39cfacddc4df29dba43f4e66f5a4188ed926dbf5ff40758b9
+$ apt-get source -qq --print-uris java-common=0.68
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.68.dsc' java-common_0.68.dsc 1985 SHA256:f738ae4584a93674646485415b9531410165463ebdc0ffbf88853077ddf4bc67
+'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.68.tar.xz' java-common_0.68.tar.xz 13032 SHA256:86bac85c87e6e4fb918b57d66945e786150c1a1e482d1755b41338e903dd8f45
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/java-common/0.67/ (for browsing the source)
-- https://sources.debian.net/src/java-common/0.67/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/java-common/0.67/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/java-common/0.68/ (for browsing the source)
+- https://sources.debian.net/src/java-common/0.68/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-common/0.68/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.3`
 
@@ -2200,12 +2192,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~23-1`
+### `dpkg` source package: `openjdk-11=11~24-1`
 
 Binary Packages:
 
-- `openjdk-11-jdk-headless:amd64=11~23-1`
-- `openjdk-11-jre-headless:amd64=11~23-1`
+- `openjdk-11-jdk-headless:amd64=11~24-1`
+- `openjdk-11-jre-headless:amd64=11~24-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -2217,17 +2209,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/us
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~23-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.dsc' openjdk-11_11~23-1.dsc 4531 SHA256:59543b64df315d1306d01fbead0265eb014b8200824abf3e6ab898cb9191cab2
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23.orig.tar.xz' openjdk-11_11~23.orig.tar.xz 78645124 SHA256:5f59d2df33bae80582d6fbfa2d048d7df64ca46969624a0d6449d3ca462e5da8
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~23-1.debian.tar.xz' openjdk-11_11~23-1.debian.tar.xz 166284 SHA256:556b141a3116b4e75e3b4036d343c691ff84343ccfdea56ae0d7b5626a1afe01
+$ apt-get source -qq --print-uris openjdk-11=11~24-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~24-1.dsc' openjdk-11_11~24-1.dsc 4531 SHA256:2235fa4e8179887284c90d8694a01e322fed0084cee7fba07f96dd64436f87f0
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~24.orig.tar.xz' openjdk-11_11~24.orig.tar.xz 78605824 SHA256:31542a77526ac19861a58f986b9978e6ab3bbbcb84f05d9ab5dd0be8450a91f1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~24-1.debian.tar.xz' openjdk-11_11~24-1.debian.tar.xz 166412 SHA256:c985c95ac8600d6cd54b30a63defe2dc703c52b681d4940e3695f299161fe8de
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~23-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~23-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~23-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~24-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~24-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~24-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
