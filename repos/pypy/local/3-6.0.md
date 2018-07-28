@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a840b5ede6765ae531ebefddbd9c4dc3023e46567b39ac29e6a3dd8f67a7e8c`
-- Created: `2018-07-17T05:01:38.84261132Z`
-- Virtual Size: ~ 732.61 Mb  
+- Image ID: `sha256:b299e10fd621aadc7c36b461080b969bcceb02783e6da84d3607c4c3df8781f9`
+- Created: `2018-07-25T17:50:27.714401995Z`
+- Virtual Size: ~ 732.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=6.0.0`
-  - `PYTHON_PIP_VERSION=10.0.1`
+  - `PYTHON_PIP_VERSION=18.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3755,20 +3755,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=3.1.2-2+deb8u5
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.dsc' mercurial_3.1.2-2+deb8u5.dsc 1942 SHA256:40105a4095a8f107cb9eaf9029c4a701bfec810d70dbfe6bf9a18e872bc81f47
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2.orig.tar.gz' mercurial_3.1.2.orig.tar.gz 3983825 SHA256:5dbe5ceb3707e378528dc9346af280919760aa1a8bcc27be12c1fe2bafa78d3a
-'http://security.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_3.1.2-2+deb8u5.debian.tar.xz' mercurial_3.1.2-2+deb8u5.debian.tar.xz 72512 SHA256:a78cae21139e98a7bc689b0490ad8c087761fb5bd03406090010f308f36c1455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u5/
 
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/3.1.2-2+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/3.1.2-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.58`
 
