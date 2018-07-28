@@ -905,20 +905,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-foreign/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris foreign=0.8.70-1
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.70-1.dsc' foreign_0.8.70-1.dsc 1835 SHA256:ac9929569165ac55a450e10907d151859d9d457ec88c2bfc461422da5ecdd0ad
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.70.orig.tar.gz' foreign_0.8.70.orig.tar.gz 344502 SHA256:86cd8645f15fca4e2854a1011469114bb93d3774a18cb6db4805873830a2b886
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.70-1.debian.tar.xz' foreign_0.8.70-1.debian.tar.xz 4004 SHA256:1f017129111c7e7eb0189b381c5bcf254019ee0251a90439b15f161eaffbd6ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/foreign/0.8.70-1/
 
-- https://sources.debian.net/src/foreign/0.8.70-1/ (for browsing the source)
-- https://sources.debian.net/src/foreign/0.8.70-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/foreign/0.8.70-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.8.1-2`
 
@@ -1058,19 +1051,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.176
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.dsc' gcc-defaults_1.176.dsc 15357 SHA256:f7e4f4ac066b7c3bd9b4f3b00331ddb0d23003ebcfce89f1c22534c67f579f85
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.176.tar.gz' gcc-defaults_1.176.tar.gz 71780 SHA256:8805548d86c153ccbc54e2aefcf0981f5152482dfe50a3793097d15b4bbb2b0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.176/
 
-- https://sources.debian.net/src/gcc-defaults/1.176/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.176/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.176/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -3628,20 +3615,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-glue/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-glue=1.2.0-2
-'http://deb.debian.org/debian/pool/main/r/r-cran-glue/r-cran-glue_1.2.0-2.dsc' r-cran-glue_1.2.0-2.dsc 2039 SHA256:c5d54928ae9f452c89b3d70572d3158ff82ce4906200d9e1ecb47a957c862f6b
-'http://deb.debian.org/debian/pool/main/r/r-cran-glue/r-cran-glue_1.2.0.orig.tar.gz' r-cran-glue_1.2.0.orig.tar.gz 28193 SHA256:19275b34ee6a1bcad05360b7eb996cebaa1402f189a5dfb084e695d423f2296e
-'http://deb.debian.org/debian/pool/main/r/r-cran-glue/r-cran-glue_1.2.0-2.debian.tar.xz' r-cran-glue_1.2.0-2.debian.tar.xz 2220 SHA256:f54e2c28f2f3753590674abe9c2cf9c9e67140b7c669b77dfb5c4763e0ea5c4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-glue/1.2.0-2/
 
-- https://sources.debian.net/src/r-cran-glue/1.2.0-2/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-glue/1.2.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-glue/1.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-magrittr=1.5-5`
 
