@@ -1,10 +1,10 @@
-# `nuxeo:10.1`
+# `nuxeo:10.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0bdc704f39542f1f9ead1684aef9ffb43da3243a667c78a9f8e89208cb397a5`
-- Created: `2018-07-17T17:27:39.616638021Z`
-- Virtual Size: ~ 2.20 Gb  
+- Image ID: `sha256:32998a118799e008c24348abe266ce0cebfbc45832c2540364942918ff81cbe9`
+- Created: `2018-07-26T20:28:13.696124368Z`
+- Virtual Size: ~ 2.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1615,21 +1615,22 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ffmpeg2theora/0.30-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ffmpeg2theora/0.30-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ffmpeg=7:3.2.10-1~deb9u1`
+### `dpkg` source package: `ffmpeg=7:3.2.11-1~deb9u1`
 
 Binary Packages:
 
-- `libavcodec57:amd64=7:3.2.10-1~deb9u1`
-- `libavdevice57:amd64=7:3.2.10-1~deb9u1`
-- `libavfilter6:amd64=7:3.2.10-1~deb9u1`
-- `libavformat57:amd64=7:3.2.10-1~deb9u1`
-- `libavresample3:amd64=7:3.2.10-1~deb9u1`
-- `libavutil55:amd64=7:3.2.10-1~deb9u1`
-- `libpostproc54:amd64=7:3.2.10-1~deb9u1`
-- `libswresample2:amd64=7:3.2.10-1~deb9u1`
-- `libswscale4:amd64=7:3.2.10-1~deb9u1`
+- `ffmpeg=7:3.2.11-1~deb9u1`
+- `libavcodec57:amd64=7:3.2.11-1~deb9u1`
+- `libavdevice57:amd64=7:3.2.11-1~deb9u1`
+- `libavfilter6:amd64=7:3.2.11-1~deb9u1`
+- `libavformat57:amd64=7:3.2.11-1~deb9u1`
+- `libavresample3:amd64=7:3.2.11-1~deb9u1`
+- `libavutil55:amd64=7:3.2.11-1~deb9u1`
+- `libpostproc54:amd64=7:3.2.11-1~deb9u1`
+- `libswresample2:amd64=7:3.2.11-1~deb9u1`
+- `libswscale4:amd64=7:3.2.11-1~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavdevice57/copyright`, `/usr/share/doc/libavfilter6/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libpostproc54/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ffmpeg/copyright`, `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavdevice57/copyright`, `/usr/share/doc/libavfilter6/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libpostproc54/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale4/copyright`)
 
 - `BSD-1-clause`
 - `BSD-2-clause`
@@ -1655,18 +1656,48 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ffmpeg=7:3.2.10-1~deb9u1
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.10-1~deb9u1.dsc' ffmpeg_3.2.10-1~deb9u1.dsc 5187 SHA256:47fdf3ba8d440cbdfee18fb19cb1c68bf0956ac2a177b8062f2e12b5d28fb336
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.10.orig.tar.xz' ffmpeg_3.2.10.orig.tar.xz 8036940 SHA256:3c1626220c7b68ff6be7312559f77f3c65ff6809daf645d4470ac0189926bdbc
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.10.orig.tar.xz.asc' ffmpeg_3.2.10.orig.tar.xz.asc 473 SHA256:215defff760480ea1cb8ac5b7b02a121610d40c4cff07a040ec40f6ac5551694
-'http://deb.debian.org/debian/pool/main/f/ffmpeg/ffmpeg_3.2.10-1~deb9u1.debian.tar.xz' ffmpeg_3.2.10-1~deb9u1.debian.tar.xz 39188 SHA256:a907b22f375340c20017b08dd6656dcb3ec1341d937933b8bdec8a3e1786401f
+$ apt-get source -qq --print-uris ffmpeg=7:3.2.11-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.11-1~deb9u1.dsc' ffmpeg_3.2.11-1~deb9u1.dsc 5187 SHA256:b669edb5eb801f6729acc8715499c7105b1ba0d10abd15230d438b7376de409a
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.11.orig.tar.xz' ffmpeg_3.2.11.orig.tar.xz 8035116 SHA256:a7270f5dc64b1b90fb4c0165a783c037ae47c315f1f67a72bdbdcb0181fbbece
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.11.orig.tar.xz.asc' ffmpeg_3.2.11.orig.tar.xz.asc 473 SHA256:5f8292ca43112c41e7efde20356e17b7d5a606d886bc76e929793d055b2f64b1
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.11-1~deb9u1.debian.tar.xz' ffmpeg_3.2.11-1~deb9u1.debian.tar.xz 39472 SHA256:2a3bfaa311431f95c6bda82bf7ac063d0afe55a492f6dd7ff818639b0d453e81
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ffmpeg/7:3.2.10-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/ffmpeg/7:3.2.10-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ffmpeg/7:3.2.10-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ffmpeg/7:3.2.11-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/ffmpeg/7:3.2.11-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ffmpeg/7:3.2.11-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ffms2=2.23-1`
+
+Binary Packages:
+
+- `libffms2-4:amd64=2.23-1`
+
+Licenses: (parsed from: `/usr/share/doc/libffms2-4/copyright`)
+
+- `Expat`
+- `GPL-2`
+- `GPL-3`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `custom`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ffms2=2.23-1
+'http://deb.debian.org/debian/pool/main/f/ffms2/ffms2_2.23-1.dsc' ffms2_2.23-1.dsc 2254 SHA256:bbef9076354ef02db9677b379d8eb442301e482c39d03b324b17e11442688711
+'http://deb.debian.org/debian/pool/main/f/ffms2/ffms2_2.23.orig.tar.gz' ffms2_2.23.orig.tar.gz 488940 SHA256:b09b2aa2b1c6f87f94a0a0dd8284b3c791cbe77f0f3df57af99ddebcd15273ed
+'http://deb.debian.org/debian/pool/main/f/ffms2/ffms2_2.23-1.debian.tar.xz' ffms2_2.23-1.debian.tar.xz 9924 SHA256:7bad7d6e4d267364b44bfbd5151b8a151c74a987c3bce7d41bb739dd1c61bd1a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ffms2/2.23-1/ (for browsing the source)
+- https://sources.debian.net/src/ffms2/2.23-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ffms2/2.23-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.5-3`
 
@@ -2365,6 +2396,51 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u3/ (for browsing the source)
 - https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gpac=0.5.2-426-gc5ad4e4+dfsg5-3`
+
+Binary Packages:
+
+- `libgpac4:amd64=0.5.2-426-gc5ad4e4+dfsg5-3+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libgpac4/copyright`)
+
+- `Apache-2.0`
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-3-clause-axiomatic`
+- `BSD-3-clause-intel`
+- `FreeType-License`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `JPEG-License`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `MPL-1.1`
+- `OpenSSL-License`
+- `Zlib`
+- `other-3`
+- `other-nonfree-1`
+- `public-domain`
+- `wxWidgets`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gpac=0.5.2-426-gc5ad4e4+dfsg5-3
+'http://deb.debian.org/debian/pool/main/g/gpac/gpac_0.5.2-426-gc5ad4e4+dfsg5-3.dsc' gpac_0.5.2-426-gc5ad4e4+dfsg5-3.dsc 2695 SHA256:f77b3ccfe7352a128bc5284581f2fb61b1e6cde07870cb2434c10610d7097515
+'http://deb.debian.org/debian/pool/main/g/gpac/gpac_0.5.2-426-gc5ad4e4+dfsg5.orig.tar.xz' gpac_0.5.2-426-gc5ad4e4+dfsg5.orig.tar.xz 3607392 SHA256:964173b9fc2439daa0366951deed08f84235cc554b18e30a62197ba3afd35e00
+'http://deb.debian.org/debian/pool/main/g/gpac/gpac_0.5.2-426-gc5ad4e4+dfsg5-3.debian.tar.xz' gpac_0.5.2-426-gc5ad4e4+dfsg5-3.debian.tar.xz 38108 SHA256:82c179b940b279bd7c967200428418319b825a63787388d1e31a1701a5a8e392
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gpac/0.5.2-426-gc5ad4e4+dfsg5-3/ (for browsing the source)
+- https://sources.debian.net/src/gpac/0.5.2-426-gc5ad4e4+dfsg5-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gpac/0.5.2-426-gc5ad4e4+dfsg5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-1`
 
@@ -8991,8 +9067,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libx264-148:amd64=2:0.148.2748+git97eaef2-1`
+- `x264=2:0.148.2748+git97eaef2-1`
 
-Licenses: (parsed from: `/usr/share/doc/libx264-148/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libx264-148/copyright`, `/usr/share/doc/x264/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
