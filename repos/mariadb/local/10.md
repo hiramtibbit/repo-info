@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15ac58d92ba23cee7cbe2d6f06f8ae9b1ce5e2ba50cc913c42e33f9eb5f7f2d0`
-- Created: `2018-07-25T17:46:23.007095018Z`
-- Virtual Size: ~ 367.09 Mb  
+- Image ID: `sha256:2c73b3262fff7ac54635d58e13deb8cc8e224dddf3b2b0e2abfc0ad9d508f54c`
+- Created: `2018-07-26T23:29:25.97963736Z`
+- Virtual Size: ~ 362.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -56,33 +56,15 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.2`
-
-Binary Packages:
-
-- `apt=1.6.2`
-- `libapt-pkg5.0:amd64=1.6.2`
-
-Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
-
-- `GPL-2`
-- `GPLv2+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/1.6.2/
-
-
 ### `dpkg` source package: `apt=1.6.3`
 
 Binary Packages:
 
+- `apt=1.6.3`
 - `apt-transport-https=1.6.3`
+- `libapt-pkg5.0:amd64=1.6.3`
 
-Licenses: (parsed from: `/usr/share/doc/apt-transport-https/copyright`)
+Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
@@ -137,11 +119,11 @@ $ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2`
+### `dpkg` source package: `base-files=10.1ubuntu2.1`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2`
+- `base-files=10.1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -150,9 +132,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.dsc' base-files_10.1ubuntu2.dsc 1612 SHA256:d996abd3f94f982fa507ae7e982f3a6d5982f71c9258393cbaa2cebf5b765c1c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.tar.xz' base-files_10.1ubuntu2.tar.xz 77128 SHA256:6b5190db4a20f5b62129c445d949fc005137f8d30703a98910e1e2dccbed411d
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.dsc' base-files_10.1ubuntu2.1.dsc 1620 SHA256:a830d8f04e756e3513148b4137d7cb21cf4a49893166083856f34b12c9672702
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.tar.xz' base-files_10.1ubuntu2.1.tar.xz 77200 SHA256:483c7224e0d9747652bebe9cc786862855dc66e5fff8685e88440f123e89f79d
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -2259,12 +2241,12 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10`
+### `dpkg` source package: `systemd=237-3ubuntu10.3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10`
-- `libudev1:amd64=237-3ubuntu10`
+- `libsystemd0:amd64=237-3ubuntu10.3`
+- `libudev1:amd64=237-3ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2279,10 +2261,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.dsc' systemd_237-3ubuntu10.dsc 4981 SHA256:39a15b24ccc61849480ab6079905381d666c4d5cac32d12330272a87b2492ff4
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.3.dsc' systemd_237-3ubuntu10.3.dsc 4960 SHA256:b72a4558c78ed9d9b9522091f6e7ffe7ec34d5abeb40d37a855f8a0548a9de81
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.debian.tar.xz' systemd_237-3ubuntu10.debian.tar.xz 168288 SHA256:10f3add01b6af3ed154a1e2668e6fb15570034ac3f2bee859ea98127d57828cd
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.3.debian.tar.xz' systemd_237-3ubuntu10.3.debian.tar.xz 179068 SHA256:905e2f76b453fbf62623a575504423e041c91cc86e9c248ab455e25f38d83b94
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
