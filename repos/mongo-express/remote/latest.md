@@ -1,7 +1,7 @@
 ## `mongo-express:latest`
 
 ```console
-$ docker pull mongo-express@sha256:36d910722817a8a13a9e2eb51aa65723f12e7ac0291317a1a5bdfb4bc2b2b93a
+$ docker pull mongo-express@sha256:4379a8c04d6eec5ebfea59c521da3a3627a7c363a31a596a62e4750a136ce5fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,15 +11,16 @@ $ docker pull mongo-express@sha256:36d910722817a8a13a9e2eb51aa65723f12e7ac029131
 ### `mongo-express:latest` - linux; amd64
 
 ```console
-$ docker pull mongo-express@sha256:708d2d145bbc907b7924813ca501604d20d076038b3c3a5b790225de164c5a2c
+$ docker pull mongo-express@sha256:bc7f8f4e2d97dc691ea81d0e13f337a1ed26bed1d5e1f164d131e4783b713841
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.2 MB (76249343 bytes)**  
+-	Total Size: **79.3 MB (79293111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4c0ed03e2f94446802d16ec6d55e97b1337d1f4f447c7b8cfbefe9661fe8a9a`
--	Default Command: `["tini","--","node","app"]`
+-	Image ID: `sha256:988c71e16be4253698817c566a10c69125146a3db163649f6c229e37a225bfba`
+-	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
+-	Default Command: `["mongo-express"]`
 
 ```dockerfile
 # Tue, 17 Jul 2018 00:21:41 GMT
@@ -40,24 +41,28 @@ ENV YARN_VERSION=1.6.0
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
 # Tue, 17 Jul 2018 05:39:37 GMT
 CMD ["node"]
-# Tue, 17 Jul 2018 16:07:57 GMT
-ENV TINI_VERSION=0.9.0
-# Tue, 17 Jul 2018 16:08:21 GMT
-RUN set -x 	&& apt-get update && apt-get install -y ca-certificates curl 		--no-install-recommends 	&& curl -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini" -o /usr/local/bin/tini 	&& curl -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini.asc" -o /usr/local/bin/tini.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h 	&& apt-get purge --auto-remove -y ca-certificates curl 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jul 2018 16:08:22 GMT
+# Mon, 30 Jul 2018 21:20:02 GMT
+ENV TINI_VERSION=0.18.0
+# Mon, 30 Jul 2018 21:20:39 GMT
+RUN set -x 	&& apt-get update && apt-get install -y ca-certificates curl 		--no-install-recommends 	&& dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')" 	&& curl -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$dpkgArch" -o /usr/local/bin/tini 	&& curl -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$dpkgArch.asc" -o /usr/local/bin/tini.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h 	&& apt-get purge --auto-remove -y ca-certificates curl 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jul 2018 21:20:40 GMT
 EXPOSE 8081/tcp
-# Tue, 17 Jul 2018 16:08:22 GMT
+# Mon, 30 Jul 2018 21:20:40 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Tue, 17 Jul 2018 16:08:22 GMT
-ENV MONGO_EXPRESS=0.45.0
-# Tue, 17 Jul 2018 16:08:33 GMT
+# Mon, 30 Jul 2018 21:20:40 GMT
+ENV MONGO_EXPRESS=0.49.0
+# Mon, 30 Jul 2018 21:20:53 GMT
 RUN npm install mongo-express@$MONGO_EXPRESS
-# Tue, 17 Jul 2018 16:08:35 GMT
+# Mon, 30 Jul 2018 21:20:53 GMT
+COPY file:2516c7b7f7588c555e93ea187f5e232cc365678735934990998dc2509b84b3c2 in / 
+# Mon, 30 Jul 2018 21:20:54 GMT
 WORKDIR /node_modules/mongo-express
-# Tue, 17 Jul 2018 16:08:36 GMT
+# Mon, 30 Jul 2018 21:20:54 GMT
 RUN cp config.default.js config.js
-# Tue, 17 Jul 2018 16:08:36 GMT
-CMD ["tini" "--" "node" "app"]
+# Mon, 30 Jul 2018 21:20:55 GMT
+ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
+# Mon, 30 Jul 2018 21:20:55 GMT
+CMD ["mongo-express"]
 ```
 
 -	Layers:
@@ -81,15 +86,19 @@ CMD ["tini" "--" "node" "app"]
 		Last Modified: Tue, 17 Jul 2018 05:53:28 GMT  
 		Size: 1.1 MB (1072181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9046a4716f35d0ca616c7d4b15ca221f6470b812de925b420a04a01b15d6011`  
-		Last Modified: Tue, 17 Jul 2018 16:09:01 GMT  
-		Size: 531.4 KB (531360 bytes)  
+	-	`sha256:b92060e0969ef1d7b9c9500123a8233ada84e789b957c90344503d2567f38f79`  
+		Last Modified: Mon, 30 Jul 2018 21:21:25 GMT  
+		Size: 533.5 KB (533467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61a5ae81d675b2f2462b8fbc16d9bb6187cec695b91b0cef574e1c96dd90671f`  
-		Last Modified: Tue, 17 Jul 2018 16:09:04 GMT  
-		Size: 9.2 MB (9174686 bytes)  
+	-	`sha256:e8a3c9ce906522e4966b90f486e6b26d072b73251d0f704ffd92d7b3344f07aa`  
+		Last Modified: Mon, 30 Jul 2018 21:21:29 GMT  
+		Size: 12.2 MB (12215771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebe82938482974a6359602a657238c511ff19895aad507e1cccc9d19b7d05d5`  
-		Last Modified: Tue, 17 Jul 2018 16:09:01 GMT  
-		Size: 2.8 KB (2761 bytes)  
+	-	`sha256:961fd595a46e29606f9c54c13bc4da53f457e9b249b328902ee74f16551624bb`  
+		Last Modified: Mon, 30 Jul 2018 21:21:24 GMT  
+		Size: 573.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4796755907e347a227baaaac2fbf76dbb69f43f90b58dd9fc0db5ab1a545653f`  
+		Last Modified: Mon, 30 Jul 2018 21:21:24 GMT  
+		Size: 2.8 KB (2764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
