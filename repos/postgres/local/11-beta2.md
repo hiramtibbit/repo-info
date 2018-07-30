@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d37ba78d15407d7925b58a3647b15202eeba85f0b7c7125e8624abbc32591925`
-- Created: `2018-07-17T05:18:54.663296924Z`
+- Image ID: `sha256:f0fe3f9dc86e815b1152e22ad5935ae69fa5a4a524cf034f836491a3d499843b`
+- Created: `2018-07-27T01:18:42.508119581Z`
 - Virtual Size: ~ 300.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2511,14 +2511,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11~beta2-2.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2-2.pgdg90+1.dsc' postgresql-11_11~beta2-2.pgdg90+1.dsc 2718 SHA256:48ffb1bb3d93b5ddc465552becd6dbde290aa8013da348bd4d1d037952f75227
-'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2.orig.tar.bz2' postgresql-11_11~beta2.orig.tar.bz2 21086270 SHA256:31e28f46b0529e5be937423bc040eff2787bc399ba0ebd725510aea30274b463
-'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta2-2.pgdg90+1.debian.tar.xz' postgresql-11_11~beta2-2.pgdg90+1.debian.tar.xz 18616 SHA256:1caf43ef6b5dc06458226e5bbfe91b487d9d219089bbf3212355d4bce38ea0f2
-```
 
 ### `dpkg` source package: `postgresql-common=191.pgdg90+1`
 
