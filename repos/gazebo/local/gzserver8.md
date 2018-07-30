@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b866a4b0e8484c964c1c495b8817c33f312b1884ff15db3ca447f5626ed7fb57`
-- Created: `2018-07-17T10:27:55.204209149Z`
-- Virtual Size: ~ 679.70 Mb  
+- Image ID: `sha256:a63ef51b6257a0cf5c407122b87cdade0a0eeffb2f185d4fb375b6af348b6b91`
+- Created: `2018-07-26T23:35:57.692070554Z`
+- Virtual Size: ~ 679.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -217,19 +217,23 @@ $ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz 33608 SHA256:eaecf25bbdc695c866ae72926b4c8b9d05c42e5984a767b6e5d581b6f67ff5b2
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.6`
+### `dpkg` source package: `base-files=9.4ubuntu4.7`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.6`
+- `base-files=9.4ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.dsc' base-files_9.4ubuntu4.7.dsc 1226 SHA256:cc4e66c0cfedf2893bab541316713f28b35f4d0833d0c5f31837db9b1ea686c8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.tar.xz' base-files_9.4ubuntu4.7.tar.xz 63132 SHA256:da2f5f7e2ac681435a3251d969d6d50d8be3716bcee62b024ae59e4cc6c52eb2
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -1245,12 +1249,12 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu3`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.2-0ubuntu1`
-- `libglib2.0-data=2.48.2-0ubuntu1`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu3`
+- `libglib2.0-data=2.48.2-0ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -1259,10 +1263,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.dsc' glib2.0_2.48.2-0ubuntu1.dsc 3324 SHA256:83dbf2f597e79d34b42e89d2b3129bc3925142e5f4cd4d3df2254b4a4d486345
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu3.dsc' glib2.0_2.48.2-0ubuntu3.dsc 3385 SHA256:840f99586a1c296933f8f566408075304caac94ce632de42e023d8aecdf46069
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu3.debian.tar.xz' glib2.0_2.48.2-0ubuntu3.debian.tar.xz 69584 SHA256:5d73aa45e4ed17f583b06e7a2fddab8cac58ec82283623f11e4237cb017915bf
 ```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
@@ -5052,11 +5056,11 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
 ```
 
-### `dpkg` source package: `shared-mime-info=1.5-2ubuntu0.1`
+### `dpkg` source package: `shared-mime-info=1.5-2ubuntu0.2`
 
 Binary Packages:
 
-- `shared-mime-info=1.5-2ubuntu0.1`
+- `shared-mime-info=1.5-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
@@ -5065,10 +5069,10 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shared-mime-info=1.5-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.1.dsc' shared-mime-info_1.5-2ubuntu0.1.dsc 1527 SHA256:f612c1ecfdd685dae8107665a75191ea305e63dc84c4f930038eff69f582c668
+$ apt-get source -qq --print-uris shared-mime-info=1.5-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.2.dsc' shared-mime-info_1.5-2ubuntu0.2.dsc 2289 SHA256:ca9e4459755bc42b5d54938bb20b5c1cac9144e590f690583169ac349bfcd669
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5.orig.tar.xz' shared-mime-info_1.5.orig.tar.xz 559040 SHA256:d6412840eb265bf36e61fd7b6fc6bea21b0f58cb22bed16f2ccccdd54bea4180
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.1.debian.tar.xz' shared-mime-info_1.5-2ubuntu0.1.debian.tar.xz 10444 SHA256:a6b465a346b0e59a2600d56a0350cac242e6ee19b1f591ef47406135dfe0761f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz' shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz 10548 SHA256:7687ced629abcb5e53fb5686403393c99a89dec08a8a8070b9818242b0bf4b92
 ```
 
 ### `dpkg` source package: `shine=3.1.0-4`
@@ -5114,11 +5118,11 @@ $ apt-get source -qq --print-uris simbody=3.5.3+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/simbody/simbody_3.5.3+dfsg-1ubuntu1.debian.tar.xz' simbody_3.5.3+dfsg-1ubuntu1.debian.tar.xz 11868 SHA256:3652dca348eee88ed4a309fc3a8191f521ea002d1327e6801b1a8af3b2d62740
 ```
 
-### `dpkg` source package: `slang2=2.3.0-2ubuntu1`
+### `dpkg` source package: `slang2=2.3.0-2ubuntu1.1`
 
 Binary Packages:
 
-- `libslang2:amd64=2.3.0-2ubuntu1`
+- `libslang2:amd64=2.3.0-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libslang2/copyright`)
 
@@ -5128,10 +5132,10 @@ Licenses: (parsed from: `/usr/share/doc/libslang2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris slang2=2.3.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.dsc' slang2_2.3.0-2ubuntu1.dsc 1783 SHA256:6ff38e8b767aaa71e04a8a7d98a8794424d3ed11e72d092c2ba5561197566654
+$ apt-get source -qq --print-uris slang2=2.3.0-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.1.dsc' slang2_2.3.0-2ubuntu1.1.dsc 2445 SHA256:4ad16e8d76bf7e345778ba121ca5174d72736d69c288f370ceaaac8cef557a83
 'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0.orig.tar.xz' slang2_2.3.0.orig.tar.xz 1250392 SHA256:cdd5b9582959b3afdae403ee6f4be9de8efc7e205e4a7de18c1a847ea5ef0472
-'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.debian.tar.xz' slang2_2.3.0-2ubuntu1.debian.tar.xz 21952 SHA256:903711b3902a5d58849798d221088701387c9dcc992500c3f3ca514660aa3532
+'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.3.0-2ubuntu1.1.debian.tar.xz' slang2_2.3.0-2ubuntu1.1.debian.tar.xz 22868 SHA256:7f4edf5f0f656ef8386436c647f0c1a866fb14691970cda0e0d4e2875258bdc7
 ```
 
 ### `dpkg` source package: `snappy=1.1.3-2`
@@ -5538,18 +5542,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.4`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.6`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.4`
-- `libblkid1:amd64=2.27.1-6ubuntu3.4`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.4`
-- `libmount1:amd64=2.27.1-6ubuntu3.4`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.4`
-- `libuuid1:amd64=2.27.1-6ubuntu3.4`
-- `mount=2.27.1-6ubuntu3.4`
-- `util-linux=2.27.1-6ubuntu3.4`
+- `bsdutils=1:2.27.1-6ubuntu3.6`
+- `libblkid1:amd64=2.27.1-6ubuntu3.6`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.6`
+- `libmount1:amd64=2.27.1-6ubuntu3.6`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.6`
+- `libuuid1:amd64=2.27.1-6ubuntu3.6`
+- `mount=2.27.1-6ubuntu3.6`
+- `util-linux=2.27.1-6ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -5570,9 +5574,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
+```
 
 ### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.1`
 
