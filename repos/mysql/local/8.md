@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f45277861b044bbd4fa0cf38f5e768b47f50fb564abfdd85e7664894fa3e97b6`
-- Created: `2018-07-17T04:17:35.312062253Z`
+- Image ID: `sha256:5dbe5b6313e13db9674a452938731e74e9ed2adaf13cff3078acdbedae3d4bfa`
+- Created: `2018-07-27T01:13:30.590775369Z`
 - Virtual Size: ~ 444.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1343,14 +1343,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-community=8.0.11-1debian9
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11-1debian9.dsc' mysql-community_8.0.11-1debian9.dsc 2112 SHA256:ba24903d675f6223a1dc138a820dd110d5f5405b02e12852c9dae08a2c1cf9c4
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11.orig.tar.gz' mysql-community_8.0.11.orig.tar.gz 79361578 SHA256:3bde3e30d5d4afcedfc6db9eed5c984237ac7db9480a9cc3bddc026d50700bf9
-'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.11-1debian9.debian.tar.xz' mysql-community_8.0.11-1debian9.debian.tar.xz 18132 SHA256:f93013fa39f82f7bae933f32f173976bbe95db18e538b9c40dedfd20080dd87f
-```
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1+deb9u2`
 
