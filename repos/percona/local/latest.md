@@ -1,17 +1,17 @@
-# `percona:5.7.22`
+# `percona:5.7.22-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:03dba90d5b6baeee450220bf6ab33622b79636a48e535beea2b7ec5b137fce7b`
-- Created: `2018-07-17T04:51:11.147871698Z`
-- Virtual Size: ~ 399.55 Mb  
+- Image ID: `sha256:6287f51662890f79dcfcec775c69d06bf7a2768fcdb204965920750da530e6b6`
+- Created: `2018-07-27T22:32:30.440405844Z`
+- Virtual Size: ~ 398.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.7`
+  - `GOSU_VERSION=1.10`
   - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
   - `PERCONA_VERSION=5.7.22-22-1.jessie`
@@ -1661,11 +1661,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.17-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.17-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libidn=1.29-1+deb8u2`
+### `dpkg` source package: `libidn=1.29-1+deb8u3`
 
 Binary Packages:
 
-- `libidn11:amd64=1.29-1+deb8u2`
+- `libidn11:amd64=1.29-1+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -1684,17 +1684,17 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libidn=1.29-1+deb8u2
-'http://deb.debian.org/debian/pool/main/libi/libidn/libidn_1.29-1+deb8u2.dsc' libidn_1.29-1+deb8u2.dsc 2177 SHA256:8346d3ad4ea48159c1008a7482685c7abfb0e3bcdc4bbda937b6a1774df1798f
-'http://deb.debian.org/debian/pool/main/libi/libidn/libidn_1.29.orig.tar.gz' libidn_1.29.orig.tar.gz 3474087 SHA256:fb82747dbbf9b36f703ed27293317d818d7e851d4f5773dedf3efa4db32a7c7c
-'http://deb.debian.org/debian/pool/main/libi/libidn/libidn_1.29-1+deb8u2.debian.tar.xz' libidn_1.29-1+deb8u2.debian.tar.xz 70728 SHA256:5f3be629b7185609bb2aed149f568a014524f69dec1368a4455a4eb0972a61d9
+$ apt-get source -qq --print-uris libidn=1.29-1+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.29-1+deb8u3.dsc' libidn_1.29-1+deb8u3.dsc 2181 SHA256:ddbc55c4bbf8697d21eb1da1716a501b089b40550f4dfaa8d211716043e5919c
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.29.orig.tar.gz' libidn_1.29.orig.tar.gz 3474087 SHA256:fb82747dbbf9b36f703ed27293317d818d7e851d4f5773dedf3efa4db32a7c7c
+'http://security.debian.org/debian-security/pool/updates/main/libi/libidn/libidn_1.29-1+deb8u3.debian.tar.xz' libidn_1.29-1+deb8u3.debian.tar.xz 71392 SHA256:8296ad1847cf52b8c284705c986549a27b854dcf36993431c789b18a314e49db
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libidn/1.29-1+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/libidn/1.29-1+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn/1.29-1+deb8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libidn/1.29-1+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/libidn/1.29-1+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libidn/1.29-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-8`
 
