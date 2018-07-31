@@ -26,7 +26,27 @@
 -	[`nextcloud:13-apache`](#nextcloud13-apache)
 -	[`nextcloud:13-fpm`](#nextcloud13-fpm)
 -	[`nextcloud:13-fpm-alpine`](#nextcloud13-fpm-alpine)
+-	[`nextcloud:14.0.0-beta`](#nextcloud1400-beta)
+-	[`nextcloud:14.0.0beta1`](#nextcloud1400beta1)
+-	[`nextcloud:14.0.0beta1-apache`](#nextcloud1400beta1-apache)
+-	[`nextcloud:14.0.0beta1-fpm`](#nextcloud1400beta1-fpm)
+-	[`nextcloud:14.0.0beta1-fpm-alpine`](#nextcloud1400beta1-fpm-alpine)
+-	[`nextcloud:14.0.0-beta-apache`](#nextcloud1400-beta-apache)
+-	[`nextcloud:14.0.0-beta-fpm`](#nextcloud1400-beta-fpm)
+-	[`nextcloud:14.0.0-beta-fpm-alpine`](#nextcloud1400-beta-fpm-alpine)
+-	[`nextcloud:14.0-beta`](#nextcloud140-beta)
+-	[`nextcloud:14.0-beta-apache`](#nextcloud140-beta-apache)
+-	[`nextcloud:14.0-beta-fpm`](#nextcloud140-beta-fpm)
+-	[`nextcloud:14.0-beta-fpm-alpine`](#nextcloud140-beta-fpm-alpine)
+-	[`nextcloud:14-beta`](#nextcloud14-beta)
+-	[`nextcloud:14-beta-apache`](#nextcloud14-beta-apache)
+-	[`nextcloud:14-beta-fpm`](#nextcloud14-beta-fpm)
+-	[`nextcloud:14-beta-fpm-alpine`](#nextcloud14-beta-fpm-alpine)
 -	[`nextcloud:apache`](#nextcloudapache)
+-	[`nextcloud:beta`](#nextcloudbeta)
+-	[`nextcloud:beta-apache`](#nextcloudbeta-apache)
+-	[`nextcloud:beta-fpm`](#nextcloudbeta-fpm)
+-	[`nextcloud:beta-fpm-alpine`](#nextcloudbeta-fpm-alpine)
 -	[`nextcloud:fpm`](#nextcloudfpm)
 -	[`nextcloud:fpm-alpine`](#nextcloudfpm-alpine)
 -	[`nextcloud:latest`](#nextcloudlatest)
@@ -26351,6 +26371,70 @@ CMD ["php-fpm"]
 		Size: 788.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `nextcloud:14.0.0-beta`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0beta1`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0beta1-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0beta1-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0beta1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0-beta-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0-beta-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0.0-beta-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0-beta`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0-beta-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0-beta-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:14.0-beta-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:14-beta`
+
+**does not exist** (yet?)
+
+## `nextcloud:14-beta-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:14-beta-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:14-beta-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `nextcloud:apache`
 
 ```console
@@ -27689,6 +27773,22 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 24 Jul 2018 11:59:44 GMT  
 		Size: 847.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nextcloud:beta`
+
+**does not exist** (yet?)
+
+## `nextcloud:beta-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:beta-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:beta-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `nextcloud:fpm`
 
