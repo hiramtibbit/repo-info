@@ -8,12 +8,13 @@
 ## `consul:1.2.2`
 
 ```console
-$ docker pull consul@sha256:b59a3cfe0a3b61ae0a17e3779d98c9e7e62cef1d4841359e4a04e50cd3a4cb77
+$ docker pull consul@sha256:805096831703daf41cc16eb0be36adbc6d71d92aa57ebbd3f6e987fdff39ca04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `consul:1.2.2` - linux; amd64
 
@@ -90,15 +91,97 @@ CMD ["agent" "-dev" "-client" "0.0.0.0"]
 		Size: 1.7 KB (1681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `consul:1.2.2` - linux; arm64 variant v8
+
+```console
+$ docker pull consul@sha256:7dc10709f5fab62e18ee90f8b0545ce12c078001c1231e77c531b6e2fbc6c1df
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **20.5 MB (20493637 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4897792c6ac5957af4d45280ed6901a657047f6f262be1e4b9ba2a84f045eb10`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["agent","-dev","-client","0.0.0.0"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Sat, 12 May 2018 08:39:33 GMT
+MAINTAINER Preetha Appan <preetha@hashicorp.com> (@preetapan)
+# Tue, 31 Jul 2018 08:42:15 GMT
+ENV CONSUL_VERSION=1.2.2
+# Tue, 31 Jul 2018 08:42:16 GMT
+ENV HASHICORP_RELEASES=https://releases.hashicorp.com
+# Tue, 31 Jul 2018 08:42:18 GMT
+RUN addgroup consul &&     adduser -S -G consul consul
+# Tue, 31 Jul 2018 08:42:32 GMT
+RUN set -eux &&     apk add --no-cache ca-certificates curl dumb-init gnupg libcap openssl su-exec &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     apkArch="$(apk --print-arch)" &&     case "${apkArch}" in         aarch64) consulArch='arm64' ;;         armhf) consulArch='arm' ;;         x86) consulArch='386' ;;         x86_64) consulArch='amd64' ;;         *) echo >&2 "error: unsupported architecture: ${apkArch} (see ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/)" && exit 1 ;;     esac &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_${consulArch}.zip &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify consul_${CONSUL_VERSION}_SHA256SUMS.sig consul_${CONSUL_VERSION}_SHA256SUMS &&     grep consul_${CONSUL_VERSION}_linux_${consulArch}.zip consul_${CONSUL_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin consul_${CONSUL_VERSION}_linux_${consulArch}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg &&     consul version
+# Tue, 31 Jul 2018 08:42:45 GMT
+RUN mkdir -p /consul/data &&     mkdir -p /consul/config &&     chown -R consul:consul /consul
+# Tue, 31 Jul 2018 08:42:47 GMT
+RUN test -e /etc/nsswitch.conf || echo 'hosts: files dns' > /etc/nsswitch.conf
+# Tue, 31 Jul 2018 08:42:48 GMT
+VOLUME [/consul/data]
+# Tue, 31 Jul 2018 08:42:49 GMT
+EXPOSE 8300/tcp
+# Tue, 31 Jul 2018 08:42:49 GMT
+EXPOSE 8301/tcp 8301/udp 8302/tcp 8302/udp
+# Tue, 31 Jul 2018 08:42:50 GMT
+EXPOSE 8500/tcp 8600/tcp 8600/udp
+# Tue, 31 Jul 2018 08:42:51 GMT
+COPY file:4d7013a8316461b27eb7cb7d1002f1be6aa386a925388563c1989385ebf30c2c in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 31 Jul 2018 08:42:51 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 31 Jul 2018 08:42:52 GMT
+CMD ["agent" "-dev" "-client" "0.0.0.0"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1af5e28580ec7c8d064ab95119e5a4a31c5e6decee4fa72ad80f6253aded6054`  
+		Last Modified: Tue, 31 Jul 2018 08:43:39 GMT  
+		Size: 1.2 KB (1249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:163d462056884a4c2be0b1c8aecf3b659961723e2c0751568443ce2755e939e3`  
+		Last Modified: Tue, 31 Jul 2018 08:43:47 GMT  
+		Size: 18.5 MB (18501375 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:efdd30461b708c49ce748fa487a66f0b5d25be3199e4bd88aaff85b0c3565d8b`  
+		Last Modified: Tue, 31 Jul 2018 08:43:40 GMT  
+		Size: 142.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c2277af96cd570f3278754a3aa0f244bdd4bedd5dd62c190eb0747910b5a89d`  
+		Last Modified: Tue, 31 Jul 2018 08:43:38 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:692baa2eacd5350a3fe4b4e1ba88962af03dc9ffe4371195351d5acabf5d01fa`  
+		Last Modified: Tue, 31 Jul 2018 08:43:39 GMT  
+		Size: 1.7 KB (1685 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `consul:latest`
 
 ```console
-$ docker pull consul@sha256:b59a3cfe0a3b61ae0a17e3779d98c9e7e62cef1d4841359e4a04e50cd3a4cb77
+$ docker pull consul@sha256:805096831703daf41cc16eb0be36adbc6d71d92aa57ebbd3f6e987fdff39ca04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `consul:latest` - linux; amd64
 
@@ -173,4 +256,85 @@ CMD ["agent" "-dev" "-client" "0.0.0.0"]
 	-	`sha256:4db135194b9f82d898779de656af145502c0ecac6a834b187a1f33cb8020b9de`  
 		Last Modified: Mon, 30 Jul 2018 17:20:28 GMT  
 		Size: 1.7 KB (1681 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `consul:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull consul@sha256:7dc10709f5fab62e18ee90f8b0545ce12c078001c1231e77c531b6e2fbc6c1df
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **20.5 MB (20493637 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4897792c6ac5957af4d45280ed6901a657047f6f262be1e4b9ba2a84f045eb10`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["agent","-dev","-client","0.0.0.0"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Sat, 12 May 2018 08:39:33 GMT
+MAINTAINER Preetha Appan <preetha@hashicorp.com> (@preetapan)
+# Tue, 31 Jul 2018 08:42:15 GMT
+ENV CONSUL_VERSION=1.2.2
+# Tue, 31 Jul 2018 08:42:16 GMT
+ENV HASHICORP_RELEASES=https://releases.hashicorp.com
+# Tue, 31 Jul 2018 08:42:18 GMT
+RUN addgroup consul &&     adduser -S -G consul consul
+# Tue, 31 Jul 2018 08:42:32 GMT
+RUN set -eux &&     apk add --no-cache ca-certificates curl dumb-init gnupg libcap openssl su-exec &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     apkArch="$(apk --print-arch)" &&     case "${apkArch}" in         aarch64) consulArch='arm64' ;;         armhf) consulArch='arm' ;;         x86) consulArch='386' ;;         x86_64) consulArch='amd64' ;;         *) echo >&2 "error: unsupported architecture: ${apkArch} (see ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/)" && exit 1 ;;     esac &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_${consulArch}.zip &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS &&     wget ${HASHICORP_RELEASES}/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify consul_${CONSUL_VERSION}_SHA256SUMS.sig consul_${CONSUL_VERSION}_SHA256SUMS &&     grep consul_${CONSUL_VERSION}_linux_${consulArch}.zip consul_${CONSUL_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin consul_${CONSUL_VERSION}_linux_${consulArch}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg &&     consul version
+# Tue, 31 Jul 2018 08:42:45 GMT
+RUN mkdir -p /consul/data &&     mkdir -p /consul/config &&     chown -R consul:consul /consul
+# Tue, 31 Jul 2018 08:42:47 GMT
+RUN test -e /etc/nsswitch.conf || echo 'hosts: files dns' > /etc/nsswitch.conf
+# Tue, 31 Jul 2018 08:42:48 GMT
+VOLUME [/consul/data]
+# Tue, 31 Jul 2018 08:42:49 GMT
+EXPOSE 8300/tcp
+# Tue, 31 Jul 2018 08:42:49 GMT
+EXPOSE 8301/tcp 8301/udp 8302/tcp 8302/udp
+# Tue, 31 Jul 2018 08:42:50 GMT
+EXPOSE 8500/tcp 8600/tcp 8600/udp
+# Tue, 31 Jul 2018 08:42:51 GMT
+COPY file:4d7013a8316461b27eb7cb7d1002f1be6aa386a925388563c1989385ebf30c2c in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 31 Jul 2018 08:42:51 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 31 Jul 2018 08:42:52 GMT
+CMD ["agent" "-dev" "-client" "0.0.0.0"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1af5e28580ec7c8d064ab95119e5a4a31c5e6decee4fa72ad80f6253aded6054`  
+		Last Modified: Tue, 31 Jul 2018 08:43:39 GMT  
+		Size: 1.2 KB (1249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:163d462056884a4c2be0b1c8aecf3b659961723e2c0751568443ce2755e939e3`  
+		Last Modified: Tue, 31 Jul 2018 08:43:47 GMT  
+		Size: 18.5 MB (18501375 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:efdd30461b708c49ce748fa487a66f0b5d25be3199e4bd88aaff85b0c3565d8b`  
+		Last Modified: Tue, 31 Jul 2018 08:43:40 GMT  
+		Size: 142.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c2277af96cd570f3278754a3aa0f244bdd4bedd5dd62c190eb0747910b5a89d`  
+		Last Modified: Tue, 31 Jul 2018 08:43:38 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:692baa2eacd5350a3fe4b4e1ba88962af03dc9ffe4371195351d5acabf5d01fa`  
+		Last Modified: Tue, 31 Jul 2018 08:43:39 GMT  
+		Size: 1.7 KB (1685 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
