@@ -1198,20 +1198,9 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.4-1
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.dsc' fribidi_1.0.4-1.dsc 1832 SHA256:370aff38390928fd0bacb3a8f13b6c9585f1d2fcdb1669083e7fde055934a070
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4.orig.tar.bz2' fribidi_1.0.4.orig.tar.bz2 2082335 SHA256:94bdfe553e004d8bd095b109e182682311dd511740d5083326d1582f1df237be
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.4-1.debian.tar.xz' fribidi_1.0.4-1.debian.tar.xz 7732 SHA256:00094ff8b59d89dbca7aa24f97fb86b0671194166fc51039b953aa39bf78e30e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/fribidi/1.0.4-1/ (for browsing the source)
-- https://sources.debian.net/src/fribidi/1.0.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fribidi/1.0.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8.1.0-10`
 
@@ -1466,21 +1455,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18-1.dsc' gnutls28_3.5.18-1.dsc 3319 SHA256:8fb56c45fa720337996fa289539eeb220abedaaf7cab6a4068ff1597b711ab89
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.18-1.debian.tar.xz' gnutls28_3.5.18-1.debian.tar.xz 65332 SHA256:cb9057e1a32052743d9da2d446a4fac428c2831c33f9380b8be1cecb204e8466
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.18-1/
 
-- https://sources.debian.net/src/gnutls28/3.5.18-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.11-2`
 
@@ -1918,19 +1899,13 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris java-common=0.67
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.dsc' java-common_0.67.dsc 1985 SHA256:c1ec68dd9663ea72165afc7d471e73fcd58f4d9016497af47c4f22d4d94b039f
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.67.tar.xz' java-common_0.67.tar.xz 13000 SHA256:b16e4532122f75d39cfacddc4df29dba43f4e66f5a4188ed926dbf5ff40758b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/java-common/0.67/
 
-- https://sources.debian.net/src/java-common/0.67/ (for browsing the source)
-- https://sources.debian.net/src/java-common/0.67/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/java-common/0.67/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2564,20 +2539,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.0.4-1.1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4-1.1.dsc' libidn2_2.0.4-1.1.dsc 2292 SHA256:501fe84ff95ad94d7ef8a4a7225c0d3da9969333aeceb7c46b61e7c7b970c240
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4.orig.tar.gz' libidn2_2.0.4.orig.tar.gz 2008524 SHA256:644b6b03b285fb0ace02d241d59483d98bc462729d8bb3608d5cad5532f3d2f0
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4-1.1.debian.tar.xz' libidn2_2.0.4-1.1.debian.tar.xz 10285032 SHA256:434c590d238e7fd86ead3c9e201ade52d1b415d453824817747ed77179e6793b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.0.4-1.1/
 
-- https://sources.debian.net/src/libidn2/2.0.4-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.0.4-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.0.4-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn=1.33-2.2`
 
@@ -3958,20 +3926,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.4-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.4-1.dsc' mesa_18.1.4-1.dsc 4859 SHA256:b5ab7af0bbfeebbae80611876faee6c7e916f2363f776ccac14b5bf8fe45ca68
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.4.orig.tar.gz' mesa_18.1.4.orig.tar.gz 18885083 SHA256:8acd42e4ac4d1e96ed22344073b3d4fef03d10f225f4eaf3f88c001dfc10e2db
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.4-1.diff.gz' mesa_18.1.4-1.diff.gz 95618 SHA256:3578c6e0a3010dae68c309ca06bed433658dcd4b2e138e1dac75a977a7d3e944
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.4-1/
 
-- https://sources.debian.net/src/mesa/18.1.4-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-4`
 
@@ -4676,20 +4637,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.5-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5-1.dsc' shadow_4.5-1.dsc 2282 SHA256:1e93b2e4cb3f0f14a52dd9603bf8153f31a3117c580c0b46fd94822437516ff6
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA256:22b0952dc944b163e2370bb911b11ca275fc80ad024267cf21e496b28c23d500
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5-1.debian.tar.xz' shadow_4.5-1.debian.tar.xz 462752 SHA256:0aa8980eddef9159ee6532d40bda92237ad2163dcc2bb6601aecc415ab9662ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.5-1/
 
-- https://sources.debian.net/src/shadow/1:4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=1.9-2`
 
