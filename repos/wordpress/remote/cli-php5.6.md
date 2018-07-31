@@ -1,7 +1,7 @@
 ## `wordpress:cli-php5.6`
 
 ```console
-$ docker pull wordpress@sha256:3f1a4f68392b3c535481d911455b64998104b35d753a32ab78c5af6edab2a12e
+$ docker pull wordpress@sha256:16c84a3b453691f73b30a514215fef24865cc6dba4ca3b176338e54c29c3033d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull wordpress@sha256:3f1a4f68392b3c535481d911455b64998104b35d753a32ab7
 ### `wordpress:cli-php5.6` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:1fc79ecca8a4a1635480889b2f44dcaa91c67d538aeda82901e601a7c449f253
+$ docker pull wordpress@sha256:29279d313d1b2540b04b5460a05b5daef6a20434286fd7a335eee690b89e25ed
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.0 MB (37030643 bytes)**  
+-	Total Size: **38.3 MB (38253432 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a8327051ca1b7e8c376904bbf99f96c8b35e6d3a17b1aff31954b348658813a`
+-	Image ID: `sha256:fa7d270dca65389434d0acdebae7704168ec4c67fec49f594b1ae38458aaa3be`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
@@ -84,15 +84,15 @@ ENV WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
 ENV WORDPRESS_CLI_VERSION=1.5.1
 # Sat, 21 Jul 2018 13:28:07 GMT
 ENV WORDPRESS_CLI_SHA512=8dd68c98c6fa00e1acc5e036f9393c8b052937045b5232e4aa0eb4f15773908eae48760607bc853a4f951bd5ba69e5050337e5d9dcfa48df87a12cebb1de3432
-# Sat, 21 Jul 2018 13:28:14 GMT
-RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
-# Sat, 21 Jul 2018 13:28:14 GMT
+# Tue, 31 Jul 2018 17:48:33 GMT
+RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
+# Tue, 31 Jul 2018 17:48:33 GMT
 COPY file:6439ebdee069987b41eac0b67f3829c60f8dc168426dc92872b5e95a5f4d8213 in /usr/local/bin/ 
-# Sat, 21 Jul 2018 13:28:15 GMT
+# Tue, 31 Jul 2018 17:48:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 21 Jul 2018 13:28:15 GMT
+# Tue, 31 Jul 2018 17:48:34 GMT
 USER [www-data]
-# Sat, 21 Jul 2018 13:28:16 GMT
+# Tue, 31 Jul 2018 17:48:34 GMT
 CMD ["wp" "shell"]
 ```
 
@@ -145,12 +145,12 @@ CMD ["wp" "shell"]
 		Last Modified: Sat, 21 Jul 2018 14:04:29 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42006794087112f3ffdc536cca89fca9a25568f1ce1a6ab2d558bbab0cd03b76`  
-		Last Modified: Sat, 21 Jul 2018 14:04:30 GMT  
-		Size: 1.1 MB (1083435 bytes)  
+	-	`sha256:348639af7fa29e0b8054f4f0bc5862db425386d3e787a5c0f97d17fe7bc24f6e`  
+		Last Modified: Tue, 31 Jul 2018 18:19:39 GMT  
+		Size: 2.3 MB (2306224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bfd11fe9970a091d28520ba595f20b10104df0fcfd46393e5e521baeed206db`  
-		Last Modified: Sat, 21 Jul 2018 14:04:30 GMT  
+	-	`sha256:b86b46adf1be07499697da57f2b1b71efea825b539b4d2cb0261ef5eb4a689da`  
+		Last Modified: Tue, 31 Jul 2018 18:19:39 GMT  
 		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

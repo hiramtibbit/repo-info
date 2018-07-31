@@ -5,7 +5,7 @@
 -	[`photon:1.0`](#photon10)
 -	[`photon:1.0-20180727`](#photon10-20180727)
 -	[`photon:2.0`](#photon20)
--	[`photon:2.0-20180721`](#photon20-20180721)
+-	[`photon:2.0-20180730`](#photon20-20180730)
 -	[`photon:latest`](#photonlatest)
 
 ## `photon:1.0`
@@ -122,7 +122,7 @@ CMD ["/bin/bash"]
 		Size: 14.1 MB (14124161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `photon:2.0-20180721`
+## `photon:2.0-20180730`
 
 ```console
 $ docker pull photon@sha256:1d823a41ea6b67c214c85669c458e285524e10aa7169b4ec4b264657fd2cbabf
@@ -132,7 +132,7 @@ $ docker pull photon@sha256:1d823a41ea6b67c214c85669c458e285524e10aa7169b4ec4b26
 -	Platforms:
 	-	linux; amd64
 
-### `photon:2.0-20180721` - linux; amd64
+### `photon:2.0-20180730` - linux; amd64
 
 ```console
 $ docker pull photon@sha256:d9865703f251e8e33744d5a56fe190fd3cfcd0686b11d95036c457f569ef1a47
