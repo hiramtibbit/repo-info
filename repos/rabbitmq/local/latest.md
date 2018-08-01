@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc1744b237f949720be52989bf2e9a8638384ed716b6137f0ce97ae773535dfb`
-- Created: `2018-07-17T05:10:23.663156801Z`
-- Virtual Size: ~ 124.67 Mb  
+- Image ID: `sha256:5fbca98fc816ee764f2a93891b12b68b0f720d595dd029585ad77ce96fbf4f49`
+- Created: `2018-07-31T17:28:28.311817482Z`
+- Virtual Size: ~ 124.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -563,34 +563,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.43.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.43.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `erlang=1:20.3.8.1+dfsg-1`
+### `dpkg` source package: `erlang=1:20.3.8.3+dfsg-1`
 
 Binary Packages:
 
-- `erlang-asn1=1:20.3.8.1+dfsg-1`
-- `erlang-base-hipe=1:20.3.8.1+dfsg-1`
-- `erlang-corba=1:20.3.8.1+dfsg-1`
-- `erlang-crypto=1:20.3.8.1+dfsg-1`
-- `erlang-diameter=1:20.3.8.1+dfsg-1`
-- `erlang-edoc=1:20.3.8.1+dfsg-1`
-- `erlang-eldap=1:20.3.8.1+dfsg-1`
-- `erlang-erl-docgen=1:20.3.8.1+dfsg-1`
-- `erlang-eunit=1:20.3.8.1+dfsg-1`
-- `erlang-ic=1:20.3.8.1+dfsg-1`
-- `erlang-inets=1:20.3.8.1+dfsg-1`
-- `erlang-mnesia=1:20.3.8.1+dfsg-1`
-- `erlang-nox=1:20.3.8.1+dfsg-1`
-- `erlang-odbc=1:20.3.8.1+dfsg-1`
-- `erlang-os-mon=1:20.3.8.1+dfsg-1`
-- `erlang-parsetools=1:20.3.8.1+dfsg-1`
-- `erlang-public-key=1:20.3.8.1+dfsg-1`
-- `erlang-runtime-tools=1:20.3.8.1+dfsg-1`
-- `erlang-snmp=1:20.3.8.1+dfsg-1`
-- `erlang-ssh=1:20.3.8.1+dfsg-1`
-- `erlang-ssl=1:20.3.8.1+dfsg-1`
-- `erlang-syntax-tools=1:20.3.8.1+dfsg-1`
-- `erlang-tools=1:20.3.8.1+dfsg-1`
-- `erlang-xmerl=1:20.3.8.1+dfsg-1`
+- `erlang-asn1=1:20.3.8.3+dfsg-1`
+- `erlang-base-hipe=1:20.3.8.3+dfsg-1`
+- `erlang-corba=1:20.3.8.3+dfsg-1`
+- `erlang-crypto=1:20.3.8.3+dfsg-1`
+- `erlang-diameter=1:20.3.8.3+dfsg-1`
+- `erlang-edoc=1:20.3.8.3+dfsg-1`
+- `erlang-eldap=1:20.3.8.3+dfsg-1`
+- `erlang-erl-docgen=1:20.3.8.3+dfsg-1`
+- `erlang-eunit=1:20.3.8.3+dfsg-1`
+- `erlang-ic=1:20.3.8.3+dfsg-1`
+- `erlang-inets=1:20.3.8.3+dfsg-1`
+- `erlang-mnesia=1:20.3.8.3+dfsg-1`
+- `erlang-nox=1:20.3.8.3+dfsg-1`
+- `erlang-odbc=1:20.3.8.3+dfsg-1`
+- `erlang-os-mon=1:20.3.8.3+dfsg-1`
+- `erlang-parsetools=1:20.3.8.3+dfsg-1`
+- `erlang-public-key=1:20.3.8.3+dfsg-1`
+- `erlang-runtime-tools=1:20.3.8.3+dfsg-1`
+- `erlang-snmp=1:20.3.8.3+dfsg-1`
+- `erlang-ssh=1:20.3.8.3+dfsg-1`
+- `erlang-ssl=1:20.3.8.3+dfsg-1`
+- `erlang-syntax-tools=1:20.3.8.3+dfsg-1`
+- `erlang-tools=1:20.3.8.3+dfsg-1`
+- `erlang-xmerl=1:20.3.8.3+dfsg-1`
 
 Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/erlang-base-hipe/copyright`, `/usr/share/doc/erlang-corba/copyright`, `/usr/share/doc/erlang-crypto/copyright`, `/usr/share/doc/erlang-diameter/copyright`, `/usr/share/doc/erlang-edoc/copyright`, `/usr/share/doc/erlang-eldap/copyright`, `/usr/share/doc/erlang-erl-docgen/copyright`, `/usr/share/doc/erlang-eunit/copyright`, `/usr/share/doc/erlang-ic/copyright`, `/usr/share/doc/erlang-inets/copyright`, `/usr/share/doc/erlang-mnesia/copyright`, `/usr/share/doc/erlang-nox/copyright`, `/usr/share/doc/erlang-odbc/copyright`, `/usr/share/doc/erlang-os-mon/copyright`, `/usr/share/doc/erlang-parsetools/copyright`, `/usr/share/doc/erlang-public-key/copyright`, `/usr/share/doc/erlang-runtime-tools/copyright`, `/usr/share/doc/erlang-snmp/copyright`, `/usr/share/doc/erlang-ssh/copyright`, `/usr/share/doc/erlang-ssl/copyright`, `/usr/share/doc/erlang-syntax-tools/copyright`, `/usr/share/doc/erlang-tools/copyright`, `/usr/share/doc/erlang-xmerl/copyright`)
 
@@ -602,17 +602,17 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris erlang=1:20.3.8.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.1+dfsg-1.dsc' erlang_20.3.8.1+dfsg-1.dsc 5129 SHA256:980cac972ac740820dbb56fbec890efc177e21ae502e6344d2166b69af102aad
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.1+dfsg.orig.tar.xz' erlang_20.3.8.1+dfsg.orig.tar.xz 42889100 SHA256:da7c915fc1ba1e1404ea6487f4e8c2cb76f950da2a9065e3a0d9e09cec93f04f
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.1+dfsg-1.debian.tar.xz' erlang_20.3.8.1+dfsg-1.debian.tar.xz 59448 SHA256:47e672bbe3fce102f7769276177e26a14d64843135f534a87b073b8a56a43b2f
+$ apt-get source -qq --print-uris erlang=1:20.3.8.3+dfsg-1
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.3+dfsg-1.dsc' erlang_20.3.8.3+dfsg-1.dsc 5129 SHA256:ec19befe6d50db26f2ab47abdf60b9d8e86a272a3fd92ae18c10de5b383bfb68
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.3+dfsg.orig.tar.xz' erlang_20.3.8.3+dfsg.orig.tar.xz 42899548 SHA256:5830bea741482d81dfff032a45466c4ced32ab1b54f896a37fa200cace6eac7a
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.3+dfsg-1.debian.tar.xz' erlang_20.3.8.3+dfsg-1.debian.tar.xz 59472 SHA256:8d49716832ef3cd9999d69203889e5717bba1660093058237bc2aab35d188207
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/erlang/1:20.3.8.1+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/erlang/1:20.3.8.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/erlang/1:20.3.8.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/erlang/1:20.3.8.3+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/erlang/1:20.3.8.3+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/erlang/1:20.3.8.3+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -1366,11 +1366,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.1+20180210-4`
+### `dpkg` source package: `ncurses=6.1+20180714-1`
 
 Binary Packages:
 
-- `libtinfo6:amd64=6.1+20180210-4`
+- `libtinfo6:amd64=6.1+20180714-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1379,18 +1379,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.dsc' ncurses_6.1+20180210-4.dsc 4147 SHA256:222d0380903406509fcbd6a82736fb59a46a40259fc01a7a417c476cd126d02d
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.debian.tar.xz' ncurses_6.1+20180210-4.debian.tar.xz 60516 SHA256:0c636e711a41aabe3dd5fa7986c88aece92eb4de0fb9fa114e2548532da3acd3
+$ apt-get source -qq --print-uris ncurses=6.1+20180714-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.dsc' ncurses_6.1+20180714-1.dsc 4147 SHA256:d4ee01fcada6e29bba632598e517fff5c48329c4191712f07311e3a21d36d4b9
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz' ncurses_6.1+20180714.orig.tar.gz 3400860 SHA256:8e2d9ab51c54d5a5b78ca6d8e63200646202e91b152d9ea8ddbce86e6a32796d
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz.asc' ncurses_6.1+20180714.orig.tar.gz.asc 251 SHA256:682fbba42d188d489b1cd457cce1285f0d9356fe8c45fdcd6e1c45e81e22d352
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.debian.tar.xz' ncurses_6.1+20180714-1.debian.tar.xz 59968 SHA256:4160bcdae8e616c584317ae46ec8053709a4e640f9620621644f986c1b7e402f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.1+20180210-4/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1+20180210-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1+20180210-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20180714-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.3-1`
 
