@@ -1,7 +1,7 @@
 ## `wordpress:cli-php7.1`
 
 ```console
-$ docker pull wordpress@sha256:ab251a5c28e50256465813937af5f054bfc7bcbefdc4de26e789ebe6409baaf1
+$ docker pull wordpress@sha256:b3176009898f2e40752ed7de5ba034eac55b3556b6719cf223a1098fdcfeae2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -455,14 +455,14 @@ CMD ["wp" "shell"]
 ### `wordpress:cli-php7.1` - linux; ppc64le
 
 ```console
-$ docker pull wordpress@sha256:662df92bc5aef3c620ca9088e951ec26aa9355923b30c4f05896b13b92e5ca39
+$ docker pull wordpress@sha256:22787f2da146c2b84a99371a61ef0fecae7ea3a1da691c6e9747e4f620c109a0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.3 MB (41305260 bytes)**  
+-	Total Size: **41.3 MB (41305280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dad9d7535f8c211bf51f7dc763d941857f93c4cd44bd48a764fc2921c21f17ef`
+-	Image ID: `sha256:c758eb167734c32f13e0cca27e750bf388bc62efffb652317d71855db5a868ee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
@@ -527,15 +527,15 @@ ENV WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
 ENV WORDPRESS_CLI_VERSION=1.5.1
 # Sat, 21 Jul 2018 15:28:39 GMT
 ENV WORDPRESS_CLI_SHA512=8dd68c98c6fa00e1acc5e036f9393c8b052937045b5232e4aa0eb4f15773908eae48760607bc853a4f951bd5ba69e5050337e5d9dcfa48df87a12cebb1de3432
-# Sat, 21 Jul 2018 15:28:47 GMT
-RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
-# Sat, 21 Jul 2018 15:28:48 GMT
+# Wed, 01 Aug 2018 15:33:47 GMT
+RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
+# Wed, 01 Aug 2018 15:34:01 GMT
 COPY file:6439ebdee069987b41eac0b67f3829c60f8dc168426dc92872b5e95a5f4d8213 in /usr/local/bin/ 
-# Sat, 21 Jul 2018 15:28:55 GMT
+# Wed, 01 Aug 2018 15:34:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 21 Jul 2018 15:28:56 GMT
+# Wed, 01 Aug 2018 15:34:18 GMT
 USER [www-data]
-# Sat, 21 Jul 2018 15:28:57 GMT
+# Wed, 01 Aug 2018 15:34:23 GMT
 CMD ["wp" "shell"]
 ```
 
@@ -592,11 +592,11 @@ CMD ["wp" "shell"]
 		Last Modified: Sat, 21 Jul 2018 15:48:43 GMT  
 		Size: 167.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c63b01cda37d058a909a385c550be17ecc3cfd01b4ec4fa4c77227bac8bde32`  
-		Last Modified: Sat, 21 Jul 2018 15:48:44 GMT  
-		Size: 1.1 MB (1083446 bytes)  
+	-	`sha256:93f9838c3e537151e0f0cc222e1aa344b839da9f3b2aa12efd5a508037d1c7d7`  
+		Last Modified: Wed, 01 Aug 2018 15:52:13 GMT  
+		Size: 1.1 MB (1083464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e3387943395a7f5c3894bb489247faa1e7f57c9de0c1a3272c2ad5d83bf6a9f`  
-		Last Modified: Sat, 21 Jul 2018 15:48:44 GMT  
-		Size: 415.0 B  
+	-	`sha256:78ecedd62c1abfc9a6a889b7c7479c653491c155b150deb7ed35ad456bf263ef`  
+		Last Modified: Wed, 01 Aug 2018 15:52:12 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
