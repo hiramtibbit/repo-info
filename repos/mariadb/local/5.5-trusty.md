@@ -1,10 +1,10 @@
-# `mariadb:5.5.60-trusty`
+# `mariadb:5.5.61-trusty`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea7768378d3ffce5728d7f7730ffd22a8685e2921be4bc9d3ddb82de27e8f4a2`
-- Created: `2018-07-25T17:54:39.793011047Z`
-- Virtual Size: ~ 352.16 Mb  
+- Image ID: `sha256:ca5a49e55eac5cee31b8b73c5f70c9539a0b7e7768b31193ecc1632522615814`
+- Created: `2018-07-31T22:29:43.02036036Z`
+- Virtual Size: ~ 352.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=5.5`
-  - `MARIADB_VERSION=5.5.60+maria-1~trusty`
+  - `MARIADB_VERSION=5.5.61+maria-1~trusty`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1925,19 +1925,19 @@ $ apt-get source -qq --print-uris makedev=2.3.1-93ubuntu2~ubuntu14.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz' makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz 50336 SHA256:ba9a3313d0711db1188b2674bb4f3114f6ff3bec2e568808c38a3134b5440361
 ```
 
-### `dpkg` source package: `mariadb-5.5=5.5.60+maria-1~trusty`
+### `dpkg` source package: `mariadb-5.5=5.5.61+maria-1~trusty`
 
 Binary Packages:
 
-- `libmariadbclient18=5.5.60+maria-1~trusty`
-- `libmysqlclient18=5.5.60+maria-1~trusty`
-- `mariadb-client-5.5=5.5.60+maria-1~trusty`
-- `mariadb-client-core-5.5=5.5.60+maria-1~trusty`
-- `mariadb-common=5.5.60+maria-1~trusty`
-- `mariadb-server=5.5.60+maria-1~trusty`
-- `mariadb-server-5.5=5.5.60+maria-1~trusty`
-- `mariadb-server-core-5.5=5.5.60+maria-1~trusty`
-- `mysql-common=5.5.60+maria-1~trusty`
+- `libmariadbclient18=5.5.61+maria-1~trusty`
+- `libmysqlclient18=5.5.61+maria-1~trusty`
+- `mariadb-client-5.5=5.5.61+maria-1~trusty`
+- `mariadb-client-core-5.5=5.5.61+maria-1~trusty`
+- `mariadb-common=5.5.61+maria-1~trusty`
+- `mariadb-server=5.5.61+maria-1~trusty`
+- `mariadb-server-5.5=5.5.61+maria-1~trusty`
+- `mariadb-server-core-5.5=5.5.61+maria-1~trusty`
+- `mysql-common=5.5.61+maria-1~trusty`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1946,9 +1946,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-5.5=5.5.60+maria-1~trusty
-'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.60+maria-1~trusty.dsc' mariadb-5.5_5.5.60+maria-1~trusty.dsc 1955 SHA256:dd08f3e01ed5954cebe6bc70e920ef7125e09af58c89a642ed1f1f16c09b8c24
-'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.60+maria-1~trusty.tar.gz' mariadb-5.5_5.5.60+maria-1~trusty.tar.gz 45373941 SHA256:e45cad6d0e727b7aef68d09fe209f03c492ed5ab782f4e401df67abdda13e12a
+$ apt-get source -qq --print-uris mariadb-5.5=5.5.61+maria-1~trusty
+'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.61+maria-1~trusty.dsc' mariadb-5.5_5.5.61+maria-1~trusty.dsc 1955 SHA256:9788fbc43c4c560304a8f07ae18629153fb4a9b9fc54188811232629aae08f4d
+'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.61+maria-1~trusty.tar.gz' mariadb-5.5_5.5.61+maria-1~trusty.tar.gz 45384646 SHA256:233364ca412c98605035c8da84bd1b56f7971f5428940d47eeb9b531d5b4a8a0
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu2`
