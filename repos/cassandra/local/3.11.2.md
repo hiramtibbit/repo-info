@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa529e6bb5f3ad28002f8ba4224d6534818870d4b45321cb220197fd14148458`
-- Created: `2018-07-25T17:22:37.548306874Z`
+- Image ID: `sha256:1d46448d0e52a526142fd055d657eaee2e1db0f13e4e675faaa451786604c2db`
+- Created: `2018-07-31T16:29:12.925442379Z`
 - Virtual Size: ~ 323.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -400,14 +400,9 @@ Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/ca
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cassandra=3.11.2
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.dsc' cassandra_3.11.2.dsc 2022 SHA256:7629bb4c78ec0c1d6f712d316baa4d5b491238551952e0e833a0d44c68da758d
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.orig.tar.gz' cassandra_3.11.2.orig.tar.gz 36441459 SHA256:48119b6309b8fbd7ee020d13c7a646889d85c11d02fd84f82d1084c54a58a8d1
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.2.diff.gz' cassandra_3.11.2.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
-```
 
 ### `dpkg` source package: `cdebconf=0.227`
 
