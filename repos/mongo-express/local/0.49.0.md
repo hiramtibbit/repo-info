@@ -1,25 +1,26 @@
-# `mongo-express:0.45.0`
+# `mongo-express:0.49.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4c0ed03e2f94446802d16ec6d55e97b1337d1f4f447c7b8cfbefe9661fe8a9a`
-- Created: `2018-07-17T16:08:36.757179811Z`
-- Virtual Size: ~ 205.36 Mb  
+- Image ID: `sha256:988c71e16be4253698817c566a10c69125146a3db163649f6c229e37a225bfba`
+- Created: `2018-07-30T21:20:55.292382671Z`
+- Virtual Size: ~ 209.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["tini","--","node","app"]`
+- Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
+- Command: `["mongo-express"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=8.11.3`
   - `YARN_VERSION=1.6.0`
-  - `TINI_VERSION=0.9.0`
+  - `TINI_VERSION=0.18.0`
   - `ME_CONFIG_EDITORTHEME=default`
   - `ME_CONFIG_MONGODB_SERVER=mongo`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
   - `ME_CONFIG_BASICAUTH_USERNAME=`
   - `ME_CONFIG_BASICAUTH_PASSWORD=`
   - `VCAP_APP_HOST=0.0.0.0`
-  - `MONGO_EXPRESS=0.45.0`
+  - `MONGO_EXPRESS=0.49.0`
 
 ## `dpkg` (`.deb`-based packages)
 
