@@ -1,10 +1,10 @@
-# `rust:1.27.2-slim-jessie`
+# `rust:1.28.0-slim-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cfee13236833205f94543b62707fe773aa4253afa8b38307c9382b7105c1fc58`
-- Created: `2018-07-20T19:25:55.494210568Z`
-- Virtual Size: ~ 984.02 Mb  
+- Image ID: `sha256:08fa5b20854642b53fd463860c0648c79973e71e61910dc4d559c751463d7036`
+- Created: `2018-08-02T18:57:59.537515793Z`
+- Virtual Size: ~ 929.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.27.2`
+  - `RUST_VERSION=1.28.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1467,12 +1467,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/5.9+20140913-1+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/5.9+20140913-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u8`
-- `openssl=1.0.1t-1+deb8u8`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
+- `openssl=1.0.1t-1+deb8u9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1481,17 +1481,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.dsc' openssl_1.0.1t-1+deb8u8.dsc 2305 SHA256:e6fc30d2f34c04dd3c96e00d89b777442de79bb13d11056c8935f71667fcfcc0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.debian.tar.xz' openssl_1.0.1t-1+deb8u8.debian.tar.xz 110384 SHA256:fb200537c8b7ec882145463373889b063353eddc5d4f957f4d55fabd7065c418
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u9
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.dsc' openssl_1.0.1t-1+deb8u9.dsc 2423 SHA256:3dba1093668c2171f2a187a1225a4ee598c207e0307632f3808000ae3dc25bc5
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.debian.tar.xz' openssl_1.0.1t-1+deb8u9.debian.tar.xz 111484 SHA256:58f6dc16b6c65b1c6bc1c1f13133a81c2955779072b6a6f583f5db97b8db948d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.1+deb8u2`
 
