@@ -1,10 +1,10 @@
-# `rocket.chat:0.67.0`
+# `rocket.chat:0.68.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c8883caae075b6ae65463660fc520e4901f0c422ebc3b92d239af12feef3bd3`
-- Created: `2018-07-27T01:44:32.155731379Z`
-- Virtual Size: ~ 797.67 Mb  
+- Image ID: `sha256:f0c5bacd6cab9bfb01dbd7a1355bacb495eeae848d853a4374c514db5e118500`
+- Created: `2018-08-02T23:13:46.688269814Z`
+- Virtual Size: ~ 801.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=8.9.4`
   - `YARN_VERSION=1.3.2`
-  - `RC_VERSION=0.67.0`
+  - `RC_VERSION=0.68.3`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
@@ -362,10 +362,6 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u9/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
@@ -760,10 +756,6 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u4/
 
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
@@ -1604,10 +1596,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/ncurses/5.9+20140913-1+deb8u2/
-
 
 ### `dpkg` source package: `netbase=5.3`
 
@@ -1847,10 +1835,6 @@ Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/p
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/procps/2:3.3.9-9/
 
 
 ### `dpkg` source package: `readline6=6.3-8`
@@ -2131,10 +2115,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tzdata/2018c-0+deb8u1/
 
 
 ### `dpkg` source package: `ustr=1.0.4-3`
