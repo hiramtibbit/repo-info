@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:716594d2ee2ddf587ea91249bcf36e4ded07c257b87ffcb5213d31112de28438`
-- Created: `2018-07-17T10:10:36.252241909Z`
-- Virtual Size: ~ 312.70 Mb  
+- Image ID: `sha256:1ce3d629356bddf335143a2c1ac5c8b34e2bb56dc067bb00fd3a0298702f2c9a`
+- Created: `2018-07-26T23:15:01.616782583Z`
+- Virtual Size: ~ 312.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -138,19 +138,23 @@ $ apt-get source -qq --print-uris audit=1:2.4.5-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.4.5-1ubuntu2.1.debian.tar.xz' audit_2.4.5-1ubuntu2.1.debian.tar.xz 19292 SHA256:285eef1a789f47c9ad6a30dc8427822b624146715a8f603d011bdc117529d5b2
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.6`
+### `dpkg` source package: `base-files=9.4ubuntu4.7`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.6`
+- `base-files=9.4ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.dsc' base-files_9.4ubuntu4.7.dsc 1226 SHA256:cc4e66c0cfedf2893bab541316713f28b35f4d0833d0c5f31837db9b1ea686c8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.tar.xz' base-files_9.4ubuntu4.7.tar.xz 63132 SHA256:da2f5f7e2ac681435a3251d969d6d50d8be3716bcee62b024ae59e4cc6c52eb2
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -1193,14 +1197,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu21.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.2.dsc' systemd_229-4ubuntu21.2.dsc 4124 SHA256:cafb2d2f7d5a1ac7fbf40713d0e949e0c79f534b8ed92b55b962434ce473fb4e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.2.debian.tar.xz' systemd_229-4ubuntu21.2.debian.tar.xz 259928 SHA256:935a2c2bfc434cc84678635fe05c49829b5b69e05dc3fbd55f797c91ac10cdce
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -1285,18 +1284,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.4`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.6`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.4`
-- `libblkid1:amd64=2.27.1-6ubuntu3.4`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.4`
-- `libmount1:amd64=2.27.1-6ubuntu3.4`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.4`
-- `libuuid1:amd64=2.27.1-6ubuntu3.4`
-- `mount=2.27.1-6ubuntu3.4`
-- `util-linux=2.27.1-6ubuntu3.4`
+- `bsdutils=1:2.27.1-6ubuntu3.6`
+- `libblkid1:amd64=2.27.1-6ubuntu3.6`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.6`
+- `libmount1:amd64=2.27.1-6ubuntu3.6`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.6`
+- `libuuid1:amd64=2.27.1-6ubuntu3.6`
+- `mount=2.27.1-6ubuntu3.6`
+- `util-linux=2.27.1-6ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1317,9 +1316,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.dsc' util-linux_2.27.1-6ubuntu3.6.dsc 3960 SHA256:a435d426cc471afdd66a7943444055cbb20ec7932a62076c8b5295ee55d7ba55
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.6.debian.tar.xz' util-linux_2.27.1-6ubuntu3.6.debian.tar.xz 86092 SHA256:e5fdc30a0e8a920286c42d0f8acb86d8c80866676cf5b6d8474b838283d9d705
+```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.4`
 
