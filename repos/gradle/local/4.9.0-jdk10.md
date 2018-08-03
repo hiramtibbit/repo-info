@@ -699,20 +699,13 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.0.3-6
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.3-6.dsc' cryptsetup_2.0.3-6.dsc 2800 SHA256:5875f3177e41de34a66e6566d515546d5758bb89fc4d60cf9a44548532a90278
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.3.orig.tar.gz' cryptsetup_2.0.3.orig.tar.gz 10136680 SHA256:127f9ffb32f2c7cf7d9a2aebc3e70623c8337588a8bf32032af2447846444b41
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.3-6.debian.tar.xz' cryptsetup_2.0.3-6.debian.tar.xz 97524 SHA256:d06f75c25034dc671e9f5a5833c5726ca9de1815d6cdf6ad3db5fcf22735fc0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cryptsetup/2:2.0.3-6/
 
-- https://sources.debian.net/src/cryptsetup/2:2.0.3-6/ (for browsing the source)
-- https://sources.debian.net/src/cryptsetup/2:2.0.3-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cryptsetup/2:2.0.3-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.8-5`
 
