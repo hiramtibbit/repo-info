@@ -1,4 +1,4 @@
-# `rakudo-star:2018.04`
+# `rakudo-star:latest`
 
 ## Docker Metadata
 
