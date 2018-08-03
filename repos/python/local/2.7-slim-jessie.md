@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79ebf33a9dc77695f6ef8faf259e6f7fd55ef7ad602867021e61f90234668648`
-- Created: `2018-07-25T18:35:05.698020737Z`
-- Virtual Size: ~ 139.35 Mb  
+- Image ID: `sha256:16213106d5440236553472e4237c43da5a6b5212d4cdf92511a4b7c404c82919`
+- Created: `2018-07-31T23:11:57.944460613Z`
+- Virtual Size: ~ 142.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -1294,7 +1294,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u8`
 - `openssl=1.0.1t-1+deb8u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1315,6 +1314,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
+
+Binary Packages:
+
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u9
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.dsc' openssl_1.0.1t-1+deb8u9.dsc 2423 SHA256:3dba1093668c2171f2a187a1225a4ee598c207e0307632f3808000ae3dc25bc5
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.debian.tar.xz' openssl_1.0.1t-1+deb8u9.debian.tar.xz 111484 SHA256:58f6dc16b6c65b1c6bc1c1f13133a81c2955779072b6a6f583f5db97b8db948d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.1+deb8u2`
 
@@ -1818,9 +1842,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `liblzma5:amd64=5.1.1alpha+20120614-2+b3`
-- `xz-utils=5.1.1alpha+20120614-2+b3`
 
-Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
+Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
 - `Autoconf`
 - `GPL-2`

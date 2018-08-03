@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7302ff8cae7a7a3daff8a6838faf7af7de5a016499a67c23e9087a5ce2d8bbe8`
-- Created: `2018-07-25T18:26:16.109822645Z`
-- Virtual Size: ~ 120.35 Mb  
+- Image ID: `sha256:40792d8a2d6d50e66bc76c05ca1d68644d071599a6765f956e024c569ecf7eb6`
+- Created: `2018-07-31T23:06:09.237827143Z`
+- Virtual Size: ~ 120.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -1511,9 +1511,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `liblzma5:amd64=5.2.2-1.2+b1`
-- `xz-utils=5.2.2-1.2+b1`
 
-Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
+Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
 - `Autoconf`
 - `GPL-2`
