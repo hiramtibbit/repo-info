@@ -1,7 +1,7 @@
 ## `python:alpine`
 
 ```console
-$ docker pull python@sha256:53840ed1d1baed5dd596d70f354afdfe5625685923adc159bb7f63065d5d0b88
+$ docker pull python@sha256:b4e8e911e489f4cf9c2102646c2d0257b2d42f58107498a447dbe5ccb61fcdf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -145,14 +145,14 @@ CMD ["python3"]
 ### `python:alpine` - linux; 386
 
 ```console
-$ docker pull python@sha256:ec3aa92ef7f2a7b6f7a6a8bd38a2ea486765840c35820add98b456b57c86e7ca
+$ docker pull python@sha256:94ae68cc1ab0ade61e8812cd8e3ad0e8f862c7f3778dc0ce65ba80b28967f422
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.7 MB (28738258 bytes)**  
+-	Total Size: **29.0 MB (29043618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03f0edea09e4fc956314a9c4ade1d672a5ed2764b2185fe6d40e83965f8630a2`
+-	Image ID: `sha256:8a1b95d703992cbfa523a8752d5687166f72202fb51da08ecea84dbab38291ad`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -166,19 +166,21 @@ CMD ["/bin/sh"]
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 17 Jul 2018 12:18:18 GMT
 ENV LANG=C.UTF-8
-# Fri, 27 Jul 2018 10:46:48 GMT
+# Tue, 17 Jul 2018 12:18:19 GMT
+RUN apk add --no-cache ca-certificates
+# Tue, 17 Jul 2018 12:18:20 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Fri, 27 Jul 2018 10:46:48 GMT
+# Tue, 17 Jul 2018 12:18:20 GMT
 ENV PYTHON_VERSION=3.7.0
-# Fri, 27 Jul 2018 10:50:26 GMT
+# Fri, 03 Aug 2018 11:49:29 GMT
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libressl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		xz-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --virtual .python-rundeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python3 --version
-# Fri, 27 Jul 2018 10:50:27 GMT
+# Fri, 03 Aug 2018 11:49:31 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 27 Jul 2018 10:50:28 GMT
+# Fri, 03 Aug 2018 11:49:31 GMT
 ENV PYTHON_PIP_VERSION=18.0
-# Fri, 27 Jul 2018 10:50:37 GMT
+# Fri, 03 Aug 2018 11:49:38 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 27 Jul 2018 10:50:37 GMT
+# Fri, 03 Aug 2018 11:49:38 GMT
 CMD ["python3"]
 ```
 
@@ -191,17 +193,21 @@ CMD ["python3"]
 		Last Modified: Fri, 06 Jul 2018 15:02:43 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7478621c968946d866579af788a316325df36769c5593a9ae329a1165c4db3`  
-		Last Modified: Fri, 27 Jul 2018 11:23:44 GMT  
-		Size: 24.7 MB (24679799 bytes)  
+	-	`sha256:14705ac8a94365e19ed36d2840bdf0f677f4c116b8306d94b427c0948bab6041`  
+		Last Modified: Tue, 17 Jul 2018 14:19:03 GMT  
+		Size: 309.1 KB (309052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:985fbfc126634acd02518f23e18a98e95469d0dbd757662a0901aaf898dea028`  
-		Last Modified: Fri, 27 Jul 2018 11:23:33 GMT  
+	-	`sha256:354fab73965b5c25f26340b5840415c4660cc489cc49e22a5d6a90593a66e9bf`  
+		Last Modified: Fri, 03 Aug 2018 12:59:16 GMT  
+		Size: 24.7 MB (24676063 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5e8e12f6655d88c958e36f76a19cb8a34b29d5ce378be485fe7e5271f7d2dd8d`  
+		Last Modified: Fri, 03 Aug 2018 12:59:07 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0072e12c07c95fcc06172f1033fb76863c24b5c64ca1165250f831554b8ca180`  
-		Last Modified: Fri, 27 Jul 2018 11:23:35 GMT  
-		Size: 1.8 MB (1787133 bytes)  
+	-	`sha256:db08af6a1dade0a78414f1bd0b3ac9fe56c2b2d1455d4af3ab3b974984ae6de3`  
+		Last Modified: Fri, 03 Aug 2018 12:59:08 GMT  
+		Size: 1.8 MB (1787177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:alpine` - linux; ppc64le
