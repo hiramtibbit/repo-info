@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:80ef598b73c0b89b65d8bca6e68554f43589a7516226d8a1543ffe9d6548112a`
-- Created: `2018-07-07T04:47:17.687465167Z`
+- Image ID: `sha256:4e36dd0658873fdaa924c84f70945ae1f8a387342ce0b383fbd580a67fd94fe8`
+- Created: `2018-08-02T20:28:13.746002922Z`
 - Virtual Size: ~ 308.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,4 +18,5 @@
   - `LIBERTY_SHA=4170e609e1e4189e75a57bcc0e65a972e9c9ef6e`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
+  - `WLP_SKIP_MAXPERMSIZE=true`
   - `KEYSTORE_REQUIRED=true`
