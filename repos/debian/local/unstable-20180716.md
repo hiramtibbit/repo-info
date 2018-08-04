@@ -852,20 +852,13 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iputils=3:20180629-1
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629-1.dsc' iputils_20180629-1.dsc 2093 SHA256:49176ad71ec8517dd1ac86dd141021d20b486fd81d130ed2a499e0547d01544f
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629.orig.tar.bz2' iputils_20180629.orig.tar.bz2 157943 SHA256:1a54fe72d67ac00dae328ddb1952110ee5310ccecbfcb97cbb26d4dedc73fe6d
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629-1.debian.tar.xz' iputils_20180629-1.debian.tar.xz 10220 SHA256:0cfb89def58d88556332b938ad43b62556849e3ab3420efcc2614044b85085b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iputils/3:20180629-1/
 
-- https://sources.debian.net/src/iputils/3:20180629-1/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20180629-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20180629-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-1`
 
