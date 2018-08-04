@@ -1,10 +1,10 @@
-# `joomla:3.8.10-apache`
+# `joomla:3.8.11-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bfdf744436839aea30ddd7270e7c1d90e4bce92e804d92393a3f26b85264973`
-- Created: `2018-07-21T14:38:11.101539111Z`
-- Virtual Size: ~ 413.09 Mb  
+- Image ID: `sha256:d0d976b3f80b2bbb4e4a06a3db6a408f4baf9616927373269301b290a716734c`
+- Created: `2018-08-02T22:33:27.62039333Z`
+- Virtual Size: ~ 413.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -27,8 +27,8 @@
   - `PHP_SHA256=cd7d1006201459d43fae0790cce4eb3451add5c87f4cadb13b228d4c179b850c`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.8.10`
-  - `JOOMLA_SHA1=9e3f45496f9c448a5e024f05bac1d4e2dc1cb4e4`
+  - `JOOMLA_VERSION=3.8.11`
+  - `JOOMLA_SHA1=d27fb06f13ec4fe74a41124e354ed639f2093100`
 
 ## `dpkg` (`.deb`-based packages)
 
