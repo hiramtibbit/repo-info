@@ -2587,20 +2587,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.5-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5-1.dsc' shadow_4.5-1.dsc 2282 SHA256:1e93b2e4cb3f0f14a52dd9603bf8153f31a3117c580c0b46fd94822437516ff6
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA256:22b0952dc944b163e2370bb911b11ca275fc80ad024267cf21e496b28c23d500
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.5-1.debian.tar.xz' shadow_4.5-1.debian.tar.xz 462752 SHA256:0aa8980eddef9159ee6532d40bda92237ad2163dcc2bb6601aecc415ab9662ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.5-1/
 
-- https://sources.debian.net/src/shadow/1:4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.24.0-1`
 
@@ -2796,20 +2789,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.1.1-1
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.1.1-1.dsc' utf8proc_2.1.1-1.dsc 2097 SHA256:9d8ec7d06f67dd30a53b90ac0af23d793325bc9dbe119f4a334f57a69c566248
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.1.1.orig.tar.gz' utf8proc_2.1.1.orig.tar.gz 152198 SHA256:27702f369f3545144470b277cd8369a7997ba4292a48a28be154c3aff28bd7b2
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.1.1-1.debian.tar.xz' utf8proc_2.1.1-1.debian.tar.xz 89720 SHA256:09d9415dda14a5bff4a5b68a6a991c7051a362b5d53104384b08bb2ca56cec1a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/utf8proc/2.1.1-1/
 
-- https://sources.debian.net/src/utf8proc/2.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/utf8proc/2.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/utf8proc/2.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.32-0.1`
 
