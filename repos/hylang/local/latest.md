@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69d5f55d5da016841ff6e8b38548d1565bebc00c2a7cf803186bc31b1addf7d5`
-- Created: `2018-07-25T19:39:09.968949076Z`
-- Virtual Size: ~ 929.72 Mb  
+- Image ID: `sha256:0d8202c592bd63099d06c3a4f5ee39c5d9070e7eeed4d979935e5f2a3b1dbb70`
+- Created: `2018-08-04T03:19:11.836174761Z`
+- Virtual Size: ~ 929.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -5622,8 +5622,9 @@ Binary Packages:
 - `libuuid1:amd64=2.29.2-1+deb9u1`
 - `mount=2.29.2-1+deb9u1`
 - `util-linux=2.29.2-1+deb9u1`
+- `uuid-dev:amd64=2.29.2-1+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
