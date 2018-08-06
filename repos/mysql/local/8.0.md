@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3da0f4853002c2751ba0c3a92edf42b3f4342bea58a8319dba8b12935e7b41dd`
-- Created: `2018-07-31T16:56:41.464776284Z`
-- Virtual Size: ~ 445.08 Mb  
+- Image ID: `sha256:7bbe2074ef0a0c494a3481d04377c24ed93711f25cc0bf55598ee052b6d4c277`
+- Created: `2018-08-04T02:28:22.677007554Z`
+- Virtual Size: ~ 484.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1336,6 +1336,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `mysql-common=8.0.12-1debian9`
+- `mysql-community-client=8.0.12-1debian9`
 - `mysql-community-client-core=8.0.12-1debian9`
 - `mysql-community-server-core=8.0.12-1debian9`
 
