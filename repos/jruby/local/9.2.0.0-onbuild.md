@@ -390,6 +390,10 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-files/9.9+deb9u4/
+
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -717,6 +721,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u5/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
@@ -2468,6 +2476,10 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgcrypt20/1.7.6-2+deb9u2/
+
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -2970,6 +2982,10 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsoup2.4/2.56.0-2+deb9u1/
 
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
@@ -4428,6 +4444,10 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u3/
+
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -4768,6 +4788,10 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/shared-mime-info/1.8-1/
+
 
 ### `dpkg` source package: `six=1.10.0-3`
 
@@ -4869,6 +4893,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/232-25+deb9u3/
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
@@ -5156,6 +5184,10 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/wget/1.18-5+deb9u1/
 
 
 ### `dpkg` source package: `x11-utils=7.7+3`
