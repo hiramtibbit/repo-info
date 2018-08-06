@@ -1,7 +1,7 @@
 ## `centos:centos6.7`
 
 ```console
-$ docker pull centos@sha256:7248c96de4648749c7936f203d983530e7ebdd83c3db6d47278392f18bcd7baf
+$ docker pull centos@sha256:9587f36d043e0ab9ad0f4c17e3022c360d57b3b970299b3bf7ddd81f0248a60e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,26 +11,26 @@ $ docker pull centos@sha256:7248c96de4648749c7936f203d983530e7ebdd83c3db6d472783
 ### `centos:centos6.7` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:8465fb658e41f38894b1f7f05b9d5709c9f7b22cc4cb6287f4bfd3525e44e965
+$ docker pull centos@sha256:0501dbcb2b299bc94a3ca408022143151b6d8071112fca2de44d9d423df12401
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **67.8 MB (67814264 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000c5746fa523e3e4150a91909ef6236ff4c063f0b1e5c8c2acedf5982175284`
+-	Image ID: `sha256:f2e2f7b8308b7192be042131750ce19432c8e87382b3aafdd5e409540181fd85`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:32:37 GMT
+# Mon, 06 Aug 2018 19:26:21 GMT
 MAINTAINER The CentOS Project <cloud-ops@centos.org>
-# Fri, 03 Nov 2017 22:33:34 GMT
+# Mon, 06 Aug 2018 19:31:39 GMT
 ADD file:b32a37ee272e6ae1740be193cc0947edaf5cda5d428feaf347a4afb571042bc1 in / 
-# Fri, 03 Nov 2017 22:33:34 GMT
+# Mon, 06 Aug 2018 19:31:40 GMT
 LABEL Vendor=CentOS
-# Fri, 03 Nov 2017 22:33:35 GMT
+# Mon, 06 Aug 2018 19:31:57 GMT
 LABEL License=GPLv2
-# Fri, 03 Nov 2017 22:33:35 GMT
+# Mon, 06 Aug 2018 19:31:57 GMT
 CMD ["/bin/bash"]
 ```
 
