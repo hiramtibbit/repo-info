@@ -1,19 +1,19 @@
-# `bonita:7.7.2`
+# `bonita:7.7.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d56a1e1999de1bd4a2380dfe9140955ffbca54717daa2d567a10dd2a6a21ced2`
-- Created: `2018-07-26T23:03:42.081113718Z`
+- Image ID: `sha256:cf48bd0169ced55045e32099ac8239d23ba8c452d30985fdc7895df3c51c6eb0`
+- Created: `2018-08-06T19:22:23.993497595Z`
 - Virtual Size: ~ 428.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.7.2`
+  - `BONITA_VERSION=7.7.3`
   - `TOMCAT_VERSION=8.5.31`
-  - `BONITA_SHA256=a69daaa4b12b78434306a35d1d74de63220033edafdb9eb36f9d12b73ee293ef`
-  - `BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.7.2-Tomcat-8.5.31.zip`
+  - `BONITA_SHA256=a2c5c13359e90a99b143848b650be0cbee1b9bb6cfa9666904c123fc6d1e30a6`
+  - `BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.7.3-Tomcat-8.5.31.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -865,14 +865,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.2.dsc' gnupg_1.4.20-1ubuntu3.2.dsc 2474 SHA256:82d0475c76cf306f4169c5f99554f39b71debd8d6f920da3fd4ce379301e5e81
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.2.debian.tar.xz' gnupg_1.4.20-1ubuntu3.2.debian.tar.xz 38960 SHA256:7b0d0bedc680f5018b465e22a8f8b1a94b9b7d8c323298f007d9d9a7c3163332
-```
 
 ### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
