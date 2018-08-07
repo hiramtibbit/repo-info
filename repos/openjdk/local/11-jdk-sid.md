@@ -854,20 +854,13 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-us
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.8-3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.dsc' dbus_1.12.8-3.dsc 3498 SHA256:0a5edabcf62a7380fc880154acdc505dd8560f786ac1a310ed7aa82ff61886c3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8.orig.tar.gz' dbus_1.12.8.orig.tar.gz 2071751 SHA256:e2dc99e7338303393b6663a98320aba6a63421bcdaaf571c8022f815e5896eb3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.debian.tar.xz' dbus_1.12.8-3.debian.tar.xz 66988 SHA256:cfea04d82061a8302f93ee0a4b0b7ab01820b6b8c2b30c91d7449e4a3fee3927
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.8-3/
 
-- https://sources.debian.net/src/dbus/1.12.8-3/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dconf=0.28.0-2`
 
@@ -1961,20 +1954,13 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iputils=3:20180629-1
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629-1.dsc' iputils_20180629-1.dsc 2093 SHA256:49176ad71ec8517dd1ac86dd141021d20b486fd81d130ed2a499e0547d01544f
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629.orig.tar.bz2' iputils_20180629.orig.tar.bz2 157943 SHA256:1a54fe72d67ac00dae328ddb1952110ee5310ccecbfcb97cbb26d4dedc73fe6d
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20180629-1.debian.tar.xz' iputils_20180629-1.debian.tar.xz 10220 SHA256:0cfb89def58d88556332b938ad43b62556849e3ab3420efcc2614044b85085b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iputils/3:20180629-1/
 
-- https://sources.debian.net/src/iputils/3:20180629-1/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20180629-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20180629-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.33.3-21`
 
@@ -5065,21 +5051,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.dsc' subversion_1.10.0-2.dsc 3399 SHA256:dcacf0d1e8ae705a94b3a1354108bc2bfc0e7d39ea72eb97da18e2e31fc238c7
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.debian.tar.xz' subversion_1.10.0-2.debian.tar.xz 2401276 SHA256:af7c4d03bb2f72b34642b2c7dbc4ab2dfae5f993acb89f1d1636f918a3d73e56
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-2/
 
-- https://sources.debian.net/src/subversion/1.10.0-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-5`
 
