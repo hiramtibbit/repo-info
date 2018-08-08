@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ff381f009fc20e809126452a5668aba32f7d4897ef81f98a792aa47da2c8367`
-- Created: `2018-07-17T12:37:35.374964346Z`
-- Virtual Size: ~ 253.44 Mb  
+- Image ID: `sha256:35b591140dbd9f0eb87a96cf086eb8519c1505832fac4090e2de067c35148ecc`
+- Created: `2018-08-08T14:22:44.022368093Z`
+- Virtual Size: ~ 253.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.5.0`
+  - `KAPACITOR_VERSION=1.5.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -973,11 +973,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/iputils/3:20161105-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/iputils/3:20161105-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `kapacitor=1.5.0-1`
+### `dpkg` source package: `kapacitor=1.5.1-1`
 
 Binary Packages:
 
-- `kapacitor=1.5.0-1`
+- `kapacitor=1.5.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
