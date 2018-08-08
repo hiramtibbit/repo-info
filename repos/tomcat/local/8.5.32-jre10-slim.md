@@ -511,20 +511,13 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.8-3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.dsc' dbus_1.12.8-3.dsc 3498 SHA256:0a5edabcf62a7380fc880154acdc505dd8560f786ac1a310ed7aa82ff61886c3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8.orig.tar.gz' dbus_1.12.8.orig.tar.gz 2071751 SHA256:e2dc99e7338303393b6663a98320aba6a63421bcdaaf571c8022f815e5896eb3
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.8-3.debian.tar.xz' dbus_1.12.8-3.debian.tar.xz 66988 SHA256:cfea04d82061a8302f93ee0a4b0b7ab01820b6b8c2b30c91d7449e4a3fee3927
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.8-3/
 
-- https://sources.debian.net/src/dbus/1.12.8-3/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.67`
 
@@ -2620,20 +2613,9 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.32-0.3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.32-0.3.dsc' util-linux_2.32-0.3.dsc 4042 SHA256:55bd8630e07d8721e774bc6d42f4ae9eb8582a606ed6c5c518374500853c1c22
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.32.orig.tar.xz' util-linux_2.32.orig.tar.xz 4550128 SHA256:6c7397abc764e32e8159c2e96042874a190303e77adceb4ac5bd502a272a4734
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.32-0.3.debian.tar.xz' util-linux_2.32-0.3.debian.tar.xz 81300 SHA256:7d51d357e6c6feee08a815dec877d4b46c994b12da7d7e812a00e01f033df5eb
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/util-linux/2.32-0.3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.32-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.32-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg=1:7.7+19`
 
