@@ -1581,20 +1581,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl19/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.19-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.dsc' isl_0.19-1.dsc 1833 SHA256:f9786677430e2ea7295c6ad9480e7e710582f84b5b850a5ddfe1f21b3d726b0f
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19.orig.tar.xz' isl_0.19.orig.tar.xz 1515156 SHA256:6d6c1aa00e2a6dfc509fa46d9a9dbe93af0c451e196a670577a148feecf6b8a5
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.debian.tar.xz' isl_0.19-1.debian.tar.xz 22388 SHA256:aa034a5700c63867aae836a1f985fccc50ccacd1abe57a2a016e076fa745feb0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.19-1/
 
-- https://sources.debian.net/src/isl/0.19-1/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.19-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -4305,16 +4298,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:8.1.0089-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0089-1.dsc' vim_8.1.0089-1.dsc 2979 SHA256:882ec2c8564a54d6615e8f73a1dff07096fb47917c8f7379db664fca2badb380
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0089.orig.tar.gz' vim_8.1.0089.orig.tar.gz 13663344 SHA256:54c5a3db5eae90616ff207c3165e674327979065885e002e3ea4b108d48d9a0c
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0089-1.debian.tar.xz' vim_8.1.0089-1.debian.tar.xz 156884 SHA256:46c3ded6c5f8bfe635d29e5e2f09d727d0bb6dc39668e32c2ce803448cff8d7d
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0089-1.dsc' vim_8.1.0089-1.dsc 2979 SHA256:882ec2c8564a54d6615e8f73a1dff07096fb47917c8f7379db664fca2badb380
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0089.orig.tar.gz' vim_8.1.0089.orig.tar.gz 13663344 SHA256:54c5a3db5eae90616ff207c3165e674327979065885e002e3ea4b108d48d9a0c
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0089-1.debian.tar.xz' vim_8.1.0089-1.debian.tar.xz 156884 SHA256:46c3ded6c5f8bfe635d29e5e2f09d727d0bb6dc39668e32c2ce803448cff8d7d
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/vim/2:8.1.0089-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.1.0089-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.1.0089-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.5-1`
 
