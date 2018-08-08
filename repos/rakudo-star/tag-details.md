@@ -8,7 +8,7 @@
 ## `rakudo-star:2018.06`
 
 ```console
-$ docker pull rakudo-star@sha256:76bb5cfe33f6a5c68b85da9f1ce4346ccf9106bdb203243ab5f7f6cfe918820f
+$ docker pull rakudo-star@sha256:bcdb8cdd91e0b10b61aff0e2b4185901e4375bca70704bc6f2105276d6ddd0d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19,14 +19,14 @@ $ docker pull rakudo-star@sha256:76bb5cfe33f6a5c68b85da9f1ce4346ccf9106bdb203243
 ### `rakudo-star:2018.06` - linux; amd64
 
 ```console
-$ docker pull rakudo-star@sha256:ab0bfd87f8aca1a37cbd450ca17552763e54649e53b4893a0baeb5f0f667f461
+$ docker pull rakudo-star@sha256:4fec95272943201453f7550af5b0e2d2dc0e296695f6f203f64734cbbfa7dba1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.4 MB (130368064 bytes)**  
+-	Total Size: **132.6 MB (132591476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1679a32d7ca01a5871eac2ca61c03a6f38d31fbb1c30d9ce883aa163ac350536`
+-	Image ID: `sha256:cb1f901820855de24294651c7d53f07ad60a7580714e392d1be0896f7346af1c`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
@@ -44,15 +44,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 MAINTAINER Rob Hoelz
 # Tue, 17 Jul 2018 15:35:32 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Tue, 17 Jul 2018 15:35:32 GMT
-ARG rakudo_version=2018.04
-# Tue, 17 Jul 2018 15:35:33 GMT
-ENV rakudo_version=2018.04
-# Tue, 17 Jul 2018 15:53:27 GMT
+# Wed, 08 Aug 2018 14:26:57 GMT
+ARG rakudo_version=2018.06
+# Wed, 08 Aug 2018 14:26:57 GMT
+ENV rakudo_version=2018.06
+# Wed, 08 Aug 2018 14:46:12 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Tue, 17 Jul 2018 15:53:28 GMT
+# Wed, 08 Aug 2018 14:46:12 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Tue, 17 Jul 2018 15:53:28 GMT
+# Wed, 08 Aug 2018 14:46:13 GMT
 CMD ["perl6"]
 ```
 
@@ -77,9 +77,9 @@ CMD ["perl6"]
 		Last Modified: Tue, 17 Jul 2018 15:53:59 GMT  
 		Size: 1.8 KB (1763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce0961bdbfb48dde8430c851a3fa9181c51924f70b950889492f1abbd910780e`  
-		Last Modified: Tue, 17 Jul 2018 15:54:04 GMT  
-		Size: 19.9 MB (19915340 bytes)  
+	-	`sha256:700632a63a8f702e7328440874926d50d2a5b923332ddb9d12e82ad09916269d`  
+		Last Modified: Wed, 08 Aug 2018 14:46:55 GMT  
+		Size: 22.1 MB (22138752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rakudo-star:2018.06` - linux; arm64 variant v8
