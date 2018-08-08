@@ -1756,20 +1756,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.2+dfsg-3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg-3.dsc' imagemagick_6.9.10.2+dfsg-3.dsc 5081 SHA256:a3ac9e54c4c705a70f2f07c2627b46b9ed80074b88c88bb934e7b71bc75e8da2
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg.orig.tar.xz' imagemagick_6.9.10.2+dfsg.orig.tar.xz 9054712 SHA256:69cdaefff8c0a9e4aa3a90ae051f9f2b0e7245e804597ed7dfe04b08e784f858
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg-3.debian.tar.xz' imagemagick_6.9.10.2+dfsg-3.debian.tar.xz 219672 SHA256:bc3e00236eeda64fdf3cdb5fecba644dc93c5c337ed3da680a8455d42eeb51c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.10.2+dfsg-3/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.10.2+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.10.2+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.10.2+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 
@@ -1839,9 +1832,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iptables=1.6.2-1
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.dsc' iptables_1.6.2-1.dsc 2808 SHA256:e2cd6eef1cbf90bd66f819e0283483b6186044e933e8ed4b9084b1f6b8da135f
+'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.dsc' iptables_1.6.2-1.1.dsc 2791 SHA256:d1e8a317abc6d3a9ecf3a87a6da251b5e585961e2e8363f316e72f9f3d41be0d
 'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2.orig.tar.bz2' iptables_1.6.2.orig.tar.bz2 639785 SHA256:55d02dfa46263343a401f297d44190f2a3e5113c8933946f094ed40237053733
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.debian.tar.xz' iptables_1.6.2-1.debian.tar.xz 61096 SHA256:20e91e84dac732ee2cc26d9d6cd5fe87a22ecf38b0233201d0776c67095c9553
+'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.debian.tar.xz' iptables_1.6.2-1.1.debian.tar.xz 61192 SHA256:410b999709db3d319dcfa882adbc40c7b1cfe243ac9fa1527c3e24b60a02822f
 ```
 
 Other potentially useful URLs:
@@ -1881,20 +1874,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl19/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.19-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.dsc' isl_0.19-1.dsc 1833 SHA256:f9786677430e2ea7295c6ad9480e7e710582f84b5b850a5ddfe1f21b3d726b0f
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19.orig.tar.xz' isl_0.19.orig.tar.xz 1515156 SHA256:6d6c1aa00e2a6dfc509fa46d9a9dbe93af0c451e196a670577a148feecf6b8a5
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.debian.tar.xz' isl_0.19-1.debian.tar.xz 22388 SHA256:aa034a5700c63867aae836a1f985fccc50ccacd1abe57a2a016e076fa745feb0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.19-1/
 
-- https://sources.debian.net/src/isl/0.19-1/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.19-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3460,20 +3446,13 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.2.1-1.1
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1-1.1.dsc' make-dfsg_4.2.1-1.1.dsc 2019 SHA256:a6c8810fbdf85c1ce4d56d42e0c05e30a87d67b7e91e87ddc67c35c2bd876c6a
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1.orig.tar.gz' make-dfsg_4.2.1.orig.tar.gz 1485018 SHA256:480405e8995796ea47cc54b281b7855280f0d815d296a1af1993eeeb72074e39
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1-1.1.diff.gz' make-dfsg_4.2.1-1.1.diff.gz 52923 SHA256:bfa8877a1e57e8134e61def5a851c0c87d4e3f24d2d18b735f804e8e12ff3b86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/make-dfsg/4.2.1-1.1/
 
-- https://sources.debian.net/src/make-dfsg/4.2.1-1.1/ (for browsing the source)
-- https://sources.debian.net/src/make-dfsg/4.2.1-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/make-dfsg/4.2.1-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mariadb-10.1=1:10.1.29-6`
 
@@ -4772,21 +4751,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.dsc' subversion_1.10.0-2.dsc 3399 SHA256:dcacf0d1e8ae705a94b3a1354108bc2bfc0e7d39ea72eb97da18e2e31fc238c7
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.debian.tar.xz' subversion_1.10.0-2.debian.tar.xz 2401276 SHA256:af7c4d03bb2f72b34642b2c7dbc4ab2dfae5f993acb89f1d1636f918a3d73e56
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-2/
 
-- https://sources.debian.net/src/subversion/1.10.0-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-5`
 

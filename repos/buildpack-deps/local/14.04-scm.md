@@ -884,14 +884,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.5.dsc' gnupg_1.4.16-1ubuntu2.5.dsc 2368 SHA256:ba6588465465aa80ac4f50631027ca0edcd88779a2a1d1f304bfe2532e802862
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16.orig.tar.gz' gnupg_1.4.16.orig.tar.gz 5073484 SHA256:f3af2f9c34c305869ad38b4ee7ab9e1487f50884ee8d9d42cccb31e1ced5cdef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.5.debian.tar.gz' gnupg_1.4.16-1ubuntu2.5.debian.tar.gz 56373 SHA256:5d7f04013f3413131d3a386b7a893be0f3ea8debb3b0e3e26be5b61be8ad534d
-```
 
 ### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 

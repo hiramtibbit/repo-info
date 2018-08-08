@@ -1756,20 +1756,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.9.34+dfsg-3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.9.34+dfsg-3.dsc' imagemagick_6.9.9.34+dfsg-3.dsc 5122 SHA256:5733b5cea4d13b5ce5b1cabc3ef6a641f21452b06f85c9ddaf1108a833706a84
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.9.34+dfsg.orig.tar.xz' imagemagick_6.9.9.34+dfsg.orig.tar.xz 9047920 SHA256:ef0554a2e27cc8d039da5f7c6178bc889a896f3892d7d3ee48fc83cad579b590
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.9.34+dfsg-3.debian.tar.xz' imagemagick_6.9.9.34+dfsg-3.debian.tar.xz 218424 SHA256:c10570d043722573e4eb493f7ccf9a5faf483bb072713ba0a2febedb24d1c67d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.9.34+dfsg-3/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.9.34+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.9.34+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.9.34+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 
@@ -2437,20 +2430,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.0.4-1.1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4-1.1.dsc' libidn2_2.0.4-1.1.dsc 2292 SHA256:501fe84ff95ad94d7ef8a4a7225c0d3da9969333aeceb7c46b61e7c7b970c240
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4.orig.tar.gz' libidn2_2.0.4.orig.tar.gz 2008524 SHA256:644b6b03b285fb0ace02d241d59483d98bc462729d8bb3608d5cad5532f3d2f0
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.0.4-1.1.debian.tar.xz' libidn2_2.0.4-1.1.debian.tar.xz 10285032 SHA256:434c590d238e7fd86ead3c9e201ade52d1b415d453824817747ed77179e6793b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.0.4-1.1/
 
-- https://sources.debian.net/src/libidn2/2.0.4-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.0.4-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.0.4-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn=1.33-2.2`
 
@@ -3541,20 +3527,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=1:10.1.29-6
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.29-6.dsc' mariadb-10.1_10.1.29-6.dsc 4355 SHA256:bb0a0b1af1ae90ed1b435a027c966cc8cf2e7dfae4761768e284b00a7cdf68cd
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.29.orig.tar.gz' mariadb-10.1_10.1.29.orig.tar.gz 67885370 SHA256:73bbd5602f52ab5aa4d83f465134871b6c87bda25371d098f6da5a3d98517ed4
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.29-6.debian.tar.xz' mariadb-10.1_10.1.29-6.debian.tar.xz 224788 SHA256:85773bb28469c93461467650e74d7ada752bb05bea3d0366422548f25e4e56bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.1/1:10.1.29-6/
 
-- https://sources.debian.net/src/mariadb-10.1/1:10.1.29-6/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.1/1:10.1.29-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.1/1:10.1.29-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4808,21 +4787,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.0-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.dsc' subversion_1.10.0-2.dsc 3399 SHA256:dcacf0d1e8ae705a94b3a1354108bc2bfc0e7d39ea72eb97da18e2e31fc238c7
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.0-2.debian.tar.xz' subversion_1.10.0-2.debian.tar.xz 2401276 SHA256:af7c4d03bb2f72b34642b2c7dbc4ab2dfae5f993acb89f1d1636f918a3d73e56
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.0-2/
 
-- https://sources.debian.net/src/subversion/1.10.0-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-5`
 
