@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d2c49f534cdd52d2a4ed36ec65fb6222ace52c72300643725da9f4cf07f4821`
-- Created: `2018-07-17T04:41:43.520660002Z`
+- Image ID: `sha256:8c53378e12e8ad226763593f292270e9e0cde74f43e0db85f70b0ea94c147f38`
+- Created: `2018-08-09T02:21:49.642486282Z`
 - Virtual Size: ~ 1.22 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `ODOO_VERSION=11.0`
-  - `ODOO_RELEASE=20180710`
+  - `ODOO_RELEASE=20180808`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3106,11 +3106,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nodejs/4.8.2~dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=11.0.20180710`
+### `dpkg` source package: `odoo=11.0.20180808`
 
 Binary Packages:
 
-- `odoo=11.0.20180710`
+- `odoo=11.0.20180808`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
