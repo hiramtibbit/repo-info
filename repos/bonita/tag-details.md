@@ -2,9 +2,15 @@
 
 # Tags of `bonita`
 
+-	[`bonita:7.6`](#bonita76)
 -	[`bonita:7.6.3`](#bonita763)
+-	[`bonita:7.7`](#bonita77)
 -	[`bonita:7.7.3`](#bonita773)
 -	[`bonita:latest`](#bonitalatest)
+
+## `bonita:7.6`
+
+**does not exist** (yet?)
 
 ## `bonita:7.6.3`
 
@@ -141,6 +147,10 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Thu, 26 Jul 2018 23:04:05 GMT  
 		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `bonita:7.7`
+
+**does not exist** (yet?)
 
 ## `bonita:7.7.3`
 
