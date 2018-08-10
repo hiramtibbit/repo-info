@@ -1,16 +1,16 @@
-# `mono:5.12.0.226-slim`
+# `mono:5.14.0.177-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2f86f6485e80a9e1ea6242f6e883917f4ad0f97d3c40ca4f71616b3c6546cd3`
-- Created: `2018-07-17T03:56:59.620702463Z`
-- Virtual Size: ~ 171.64 Mb  
+- Image ID: `sha256:c91d4458d55d74c485e582708f1d954342bc2a9af4c0e9feb7c27b95c5c6c7f4`
+- Created: `2018-08-08T14:25:21.317937723Z`
+- Virtual Size: ~ 233.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MONO_VERSION=5.12.0.226`
+  - `MONO_VERSION=5.14.0.177`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2222,28 +2222,61 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mono=5.12.0.226-0xamarin3+debian8b1`
+### `dpkg` source package: `mono-llvm=3.6.0+mono201606291653-0xamarin3+debian8b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-btls-interface4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-corlib4.5-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-i18n-west4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-i18n4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-security4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-system-configuration4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-system-numerics4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-system-security4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-system-xml4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `libmono-system4.0-cil=5.12.0.226-0xamarin3+debian8b1`
-- `mono-4.0-gac=5.12.0.226-0xamarin3+debian8b1`
-- `mono-gac=5.12.0.226-0xamarin3+debian8b1`
-- `mono-runtime=5.12.0.226-0xamarin3+debian8b1`
-- `mono-runtime-common=5.12.0.226-0xamarin3+debian8b1`
-- `mono-runtime-sgen=5.12.0.226-0xamarin3+debian8b1`
+- `mono-llvm-tools=3.6.0+mono201606291653-0xamarin3+debian8b1`
 
-Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
+Licenses: (parsed from: `/usr/share/doc/mono-llvm-tools/copyright`)
+
+- `ARM`
+- `Apple`
+- `BSD-3-Clause`
+- `BSD-3-clause`
+- `Expat`
+- `LLVM`
+- `MIT`
+- `NCSA`
+- `Polly`
+- `Python`
+- `U-OF-I-BSD-LIKE`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mono-llvm=3.6.0+mono201606291653-0xamarin3+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_3.6.0+mono201606291653-0xamarin3+debian8b1.dsc' mono-llvm_3.6.0+mono201606291653-0xamarin3+debian8b1.dsc 1283 SHA256:313b7f5da172c9c6777db703914fdb7dcf43a8cb7455bb890721e7be412d0605
+'http://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_3.6.0+mono201606291653.orig.tar.gz' mono-llvm_3.6.0+mono201606291653.orig.tar.gz 17939671 SHA256:3f7186ea4970855eaa4f0636dac4beebc4016a887c408a11e5e2ec78ba3d170a
+'http://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_3.6.0+mono201606291653-0xamarin3+debian8b1.debian.tar.xz' mono-llvm_3.6.0+mono201606291653-0xamarin3+debian8b1.debian.tar.xz 15556 SHA256:c4820f12f82245efbbb30e2052d513ff5ed5ed46666bc87eb8c3ebb584ff5291
+```
+
+### `dpkg` source package: `mono=5.14.0.177-0xamarin3+debian8b1`
+
+Binary Packages:
+
+- `ca-certificates-mono=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-btls-interface4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-corlib4.5-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-i18n-west4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-i18n4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-posix4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-security4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system-configuration4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system-core4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system-numerics4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system-security4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system-xml4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `libmono-system4.0-cil=5.14.0.177-0xamarin3+debian8b1`
+- `mono-4.0-gac=5.14.0.177-0xamarin3+debian8b1`
+- `mono-gac=5.14.0.177-0xamarin3+debian8b1`
+- `mono-llvm-support=5.14.0.177-0xamarin3+debian8b1`
+- `mono-runtime=5.14.0.177-0xamarin3+debian8b1`
+- `mono-runtime-common=5.14.0.177-0xamarin3+debian8b1`
+- `mono-runtime-sgen=5.14.0.177-0xamarin3+debian8b1`
+
+Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-posix4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-core4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-llvm-support/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
 
 - `Apache 2.0 | other`
 - `Apache-2.0`
@@ -2262,9 +2295,14 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mono=5.14.0.177-0xamarin3+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.14.0.177-0xamarin3+debian8b1.dsc' mono_5.14.0.177-0xamarin3+debian8b1.dsc 19092 SHA256:f825de67a28a01da640d38d1e0b35d72ae488f3edbcfdc3de35cddd7b5b91b75
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.14.0.177.orig.tar.bz2' mono_5.14.0.177.orig.tar.bz2 219653411 SHA256:e4548b6da977b68f52853933f77dfb7bb5dd168bc475b69b0a0df8aa5f3c9f07
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.14.0.177-0xamarin3+debian8b1.debian.tar.xz' mono_5.14.0.177-0xamarin3+debian8b1.debian.tar.xz 154812 SHA256:85c6b7cdf9a9a57c3de272d8c46333493b16c20c0b95ae808bdd6c0a4cae7008
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u3`
 
@@ -2319,12 +2357,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/netbase/5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/netbase/5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u8`
-- `openssl=1.0.1t-1+deb8u8`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
+- `openssl=1.0.1t-1+deb8u9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2333,17 +2371,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.dsc' openssl_1.0.1t-1+deb8u8.dsc 2305 SHA256:e6fc30d2f34c04dd3c96e00d89b777442de79bb13d11056c8935f71667fcfcc0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.debian.tar.xz' openssl_1.0.1t-1+deb8u8.debian.tar.xz 110384 SHA256:fb200537c8b7ec882145463373889b063353eddc5d4f957f4d55fabd7065c418
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u9
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.dsc' openssl_1.0.1t-1+deb8u9.dsc 2423 SHA256:3dba1093668c2171f2a187a1225a4ee598c207e0307632f3808000ae3dc25bc5
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.debian.tar.xz' openssl_1.0.1t-1+deb8u9.debian.tar.xz 111484 SHA256:58f6dc16b6c65b1c6bc1c1f13133a81c2955779072b6a6f583f5db97b8db948d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.1+deb8u2`
 
