@@ -1,9 +1,9 @@
-# `elixir:1.7.1-slim`
+# `elixir:1.7.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6a4c86c84d8dea83bb16ff9bdc8191e395e748f017325ca75e7675661bb9fda`
-- Created: `2018-07-30T18:05:54.00561701Z`
+- Image ID: `sha256:4743468494d4eb27afa7b1d508b20155ca08aa5fc6ccc3c9de3c57d4633262c0`
+- Created: `2018-08-08T22:22:07.362319962Z`
 - Virtual Size: ~ 259.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=21.0.4`
-  - `ELIXIR_VERSION=v1.7.1`
+  - `ELIXIR_VERSION=v1.7.2`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
