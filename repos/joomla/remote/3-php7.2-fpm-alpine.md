@@ -1,7 +1,7 @@
 ## `joomla:3-php7.2-fpm-alpine`
 
 ```console
-$ docker pull joomla@sha256:25d4c946d146d88894e044420b327ea93a66bc3a1a8d09653f0750869283c237
+$ docker pull joomla@sha256:44f154c7714f6649801028f0178e388b5c3589df0f708190505d68d639f6f263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull joomla@sha256:25d4c946d146d88894e044420b327ea93a66bc3a1a8d09653f07
 ### `joomla:3-php7.2-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:da9ccd133d794b958ab2fe00adff19cdf3ddcb0d6ba30e46631980af15602a47
+$ docker pull joomla@sha256:7e1be11876251cf9937de1bfdcb7d7d1247ba68d7449199b9db284df72f1e7e0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48343249 bytes)**  
+-	Total Size: **48.3 MB (48343228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:086c3e43b1a055d9368e08c840b875d36616961510194a679e562f54124b54f5`
+-	Image ID: `sha256:294b2f50fa36683f6f2fe18143ee55e96296d7c2bc2b20ee9e00e5cca1375ae9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -92,13 +92,13 @@ ENV JOOMLA_VERSION=3.8.11
 ENV JOOMLA_SHA1=d27fb06f13ec4fe74a41124e354ed639f2093100
 # Thu, 02 Aug 2018 22:36:35 GMT
 RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA1 *joomla.tar.bz2" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 02 Aug 2018 22:36:36 GMT
-COPY file:c1e8bebe69e832de6ba85a02864e7d24ff9e6b5232ea62a31e27a5769c662116 in /entrypoint.sh 
-# Thu, 02 Aug 2018 22:36:37 GMT
+# Fri, 10 Aug 2018 21:40:25 GMT
+COPY file:25b57bf11549456c8a7b3fadac31b0211225c2cd85b3a380a644dcec5f8a605c in /entrypoint.sh 
+# Fri, 10 Aug 2018 21:40:26 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php 
-# Thu, 02 Aug 2018 22:36:37 GMT
+# Fri, 10 Aug 2018 21:40:26 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Aug 2018 22:36:37 GMT
+# Fri, 10 Aug 2018 21:40:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -159,13 +159,13 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 02 Aug 2018 23:06:33 GMT  
 		Size: 9.4 MB (9422751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a54649b544c8f4c0d47a451c952acbf95b52b9d9cbfddec5d4d5f82ea15c0eb`  
-		Last Modified: Thu, 02 Aug 2018 23:06:28 GMT  
-		Size: 1.2 KB (1191 bytes)  
+	-	`sha256:13363eb6988b8e4b4ce4428a3aca46b815eea621d872082c8cc8b99bc4552b34`  
+		Last Modified: Fri, 10 Aug 2018 22:11:58 GMT  
+		Size: 1.2 KB (1172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41a7f3ca5b3abad84d77a6a8c3ab1b2545dc2929fc928ed0e3e6c1516307c7d1`  
-		Last Modified: Thu, 02 Aug 2018 23:06:28 GMT  
-		Size: 614.0 B  
+	-	`sha256:175c042e4b62f629061bad5cfad05abb914ee64552cdbfa2fc7680d609f13af5`  
+		Last Modified: Fri, 10 Aug 2018 22:11:58 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `joomla:3-php7.2-fpm-alpine` - linux; arm64 variant v8
