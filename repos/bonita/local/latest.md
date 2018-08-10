@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf48bd0169ced55045e32099ac8239d23ba8c452d30985fdc7895df3c51c6eb0`
-- Created: `2018-08-06T19:22:23.993497595Z`
-- Virtual Size: ~ 428.73 Mb  
+- Image ID: `sha256:f3ee53ecb906d69eaf5e38a633ecc526950d0cbde94fa5b34d7bc81a06cf0097`
+- Created: `2018-08-09T18:21:46.469610186Z`
+- Virtual Size: ~ 427.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
@@ -2090,14 +2090,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u171-b11-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11-0ubuntu0.16.04.1.dsc' openjdk-8_8u171-b11-0ubuntu0.16.04.1.dsc 4724 SHA256:70e6352f3767dfb3802766832afaa256114befbcec03d18a13326ca0254b8759
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11.orig.tar.xz' openjdk-8_8u171-b11.orig.tar.xz 70323856 SHA256:bf948503de9ea2f39fb9f5c24755a1437616d4412b06f2e18963842a016ec79d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u171-b11-0ubuntu0.16.04.1.debian.tar.xz 251288 SHA256:a1aeb7d0375a6dca95af9c761386bc4a3b1c8c4bdb01cf0185deaf194a5ba434
-```
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
 
