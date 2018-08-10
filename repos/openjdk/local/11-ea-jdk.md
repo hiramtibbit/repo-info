@@ -1748,20 +1748,9 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.8.4-2
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.4-2.dsc' harfbuzz_1.8.4-2.dsc 2295 SHA256:120485c45b234e8cd43d98baf2944ed6b8d86debcb4a80fd7d1b4c8a9bbc4c8d
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.4.orig.tar.bz2' harfbuzz_1.8.4.orig.tar.bz2 3829479 SHA256:3c592f86fa0da69e2e0e98cae9f5d5b61def3bb7948aa00ca45748f27fa545fd
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.8.4-2.debian.tar.xz' harfbuzz_1.8.4-2.debian.tar.xz 8828 SHA256:dd5751d8b8cb419b74168aec30925daf1c8168ba9bd47989a9449b95a8089e94
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/harfbuzz/1.8.4-2/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.8.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.8.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -1933,9 +1922,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iptables=1.6.2-1
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.dsc' iptables_1.6.2-1.dsc 2808 SHA256:e2cd6eef1cbf90bd66f819e0283483b6186044e933e8ed4b9084b1f6b8da135f
+'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.dsc' iptables_1.6.2-1.1.dsc 2791 SHA256:d1e8a317abc6d3a9ecf3a87a6da251b5e585961e2e8363f316e72f9f3d41be0d
 'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2.orig.tar.bz2' iptables_1.6.2.orig.tar.bz2 639785 SHA256:55d02dfa46263343a401f297d44190f2a3e5113c8933946f094ed40237053733
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.debian.tar.xz' iptables_1.6.2-1.debian.tar.xz 61096 SHA256:20e91e84dac732ee2cc26d9d6cd5fe87a22ecf38b0233201d0776c67095c9553
+'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.debian.tar.xz' iptables_1.6.2-1.1.debian.tar.xz 61192 SHA256:410b999709db3d319dcfa882adbc40c7b1cfe243ac9fa1527c3e24b60a02822f
 ```
 
 Other potentially useful URLs:
