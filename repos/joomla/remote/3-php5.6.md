@@ -1,7 +1,7 @@
 ## `joomla:3-php5.6`
 
 ```console
-$ docker pull joomla@sha256:8d45fc22226df785eed3be88318582e8d2e7009bbcef85ed06b8609b84a0917e
+$ docker pull joomla@sha256:3826b9be26d7b10661956b7be0fe5b222918fa6725d1bee25200d76c0c7ba302
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -748,14 +748,14 @@ CMD ["apache2-foreground"]
 ### `joomla:3-php5.6` - linux; 386
 
 ```console
-$ docker pull joomla@sha256:2a3966300b22a54accb6ee01fe742446c3806255ca346c296461ad71f8f15879
+$ docker pull joomla@sha256:0a7dc81ff90062a30078b6934e6f5aab06c087de3ccd90f36b2ef722f94b9291
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.4 MB (147426847 bytes)**  
+-	Total Size: **147.4 MB (147426831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144ef540d3c01de441a92f1a937d047f12e9502969045d9be1b556fda3b0db84`
+-	Image ID: `sha256:8f4d6c55fcdd734682b1e1273c9536f2db450aa25dbc6529ab12ff4f12def682`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -840,13 +840,13 @@ ENV JOOMLA_VERSION=3.8.11
 ENV JOOMLA_SHA1=d27fb06f13ec4fe74a41124e354ed639f2093100
 # Fri, 03 Aug 2018 10:51:17 GMT
 RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA1 *joomla.tar.bz2" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
-# Fri, 03 Aug 2018 10:51:18 GMT
-COPY file:c1e8bebe69e832de6ba85a02864e7d24ff9e6b5232ea62a31e27a5769c662116 in /entrypoint.sh 
-# Fri, 03 Aug 2018 10:51:18 GMT
+# Sat, 11 Aug 2018 10:48:39 GMT
+COPY file:25b57bf11549456c8a7b3fadac31b0211225c2cd85b3a380a644dcec5f8a605c in /entrypoint.sh 
+# Sat, 11 Aug 2018 10:48:39 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php 
-# Fri, 03 Aug 2018 10:51:19 GMT
+# Sat, 11 Aug 2018 10:48:39 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 03 Aug 2018 10:51:19 GMT
+# Sat, 11 Aug 2018 10:48:40 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -919,13 +919,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Aug 2018 10:58:25 GMT  
 		Size: 9.4 MB (9422443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee3b60e4d48558d320b58bbcb452192ba6247bad0907ee4a7f328f14b00cbc84`  
-		Last Modified: Fri, 03 Aug 2018 10:58:19 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:711b6a36576d360d65c7e83f826a0315f9c55172dcd7eb987b3ca077282a2421`  
+		Last Modified: Sat, 11 Aug 2018 10:52:41 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:336363f3008ac15404b87e5e7b89d0da50857100f9b844531f4f081ea3a15aa5`  
-		Last Modified: Fri, 03 Aug 2018 10:58:20 GMT  
-		Size: 614.0 B  
+	-	`sha256:bce19397540dd44d2ff335a47c5bc50fc451960bed2af8344c6215fd7b7aadb2`  
+		Last Modified: Sat, 11 Aug 2018 10:52:41 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `joomla:3-php5.6` - linux; ppc64le
