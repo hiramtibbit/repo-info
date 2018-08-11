@@ -244,20 +244,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15.1-3.1
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-3.1.dsc' automake-1.15_1.15.1-3.1.dsc 2263 SHA256:696ed34ef72a7b445604d98b31248f5a79a6ec45a9a859b421ddeb09579e6226
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1.orig.tar.xz' automake-1.15_1.15.1.orig.tar.xz 1509496 SHA256:af6ba39142220687c500f79b4aa2f181d9b24e4f8d8ec497cea4ba26c64bedaf
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-3.1.debian.tar.xz' automake-1.15_1.15.1-3.1.debian.tar.xz 13832 SHA256:c66a9c15235f2a1386e95b4d005fa4179dcdd8052ef06ef64488ce4822b64b24
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake-1.15/1:1.15.1-3.1/
 
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-3.1/ (for browsing the source)
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake-1.15/1:1.15.1-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20180224.1`
 
@@ -1853,20 +1846,13 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iputils=3:20161105-1
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.dsc' iputils_20161105-1.dsc 2086 SHA256:7e810cf28c14f1e5fb7b51620dd4af748a97202967ee4fb5d4ee3111eb66f4ae
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105.orig.tar.bz2' iputils_20161105.orig.tar.bz2 159944 SHA256:fc193249341d240b227ce4246d7b0ceb30c1186608c7deff7261c8a2607ad02e
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.debian.tar.xz' iputils_20161105-1.debian.tar.xz 10976 SHA256:1216eb9d51a85004524fea30320bad3ea45adaf5a17ec5a9ea3bafad697fd612
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iputils/3:20161105-1/
 
-- https://sources.debian.net/src/iputils/3:20161105-1/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20161105-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20161105-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.19-1`
 
@@ -1881,20 +1867,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl19/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.19-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.dsc' isl_0.19-1.dsc 1833 SHA256:f9786677430e2ea7295c6ad9480e7e710582f84b5b850a5ddfe1f21b3d726b0f
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19.orig.tar.xz' isl_0.19.orig.tar.xz 1515156 SHA256:6d6c1aa00e2a6dfc509fa46d9a9dbe93af0c451e196a670577a148feecf6b8a5
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.19-1.debian.tar.xz' isl_0.19-1.debian.tar.xz 22388 SHA256:aa034a5700c63867aae836a1f985fccc50ccacd1abe57a2a016e076fa745feb0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.19-1/
 
-- https://sources.debian.net/src/isl/0.19-1/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.19-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3574,21 +3553,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.6.1-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.1-1.dsc' mercurial_4.6.1-1.dsc 2625 SHA256:4cd67a829c0a022c5a95a34c5ee789bf24dc135d65af9a65b95f4a61e573a05e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.1.orig.tar.gz' mercurial_4.6.1.orig.tar.gz 6407380 SHA256:89fa8ecbc8aa6e48e98f9803a1683ba91367124295dba2407b28c34ca621108d
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.1.orig.tar.gz.asc' mercurial_4.6.1.orig.tar.gz.asc 833 SHA256:a7c61e69edce0c63660a7fe2fec69c981b24c7684495403585de87794a62188b
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.6.1-1.debian.tar.xz' mercurial_4.6.1-1.debian.tar.xz 61556 SHA256:428206fe5ec52ebcddc74ef2fe229d1279e3c3ee5a5ed801cb20a6d36b30c8f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.6.1-1/
 
-- https://sources.debian.net/src/mercurial/4.6.1-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.6.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.6.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 

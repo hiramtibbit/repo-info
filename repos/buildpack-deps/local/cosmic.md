@@ -3193,14 +3193,9 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.6-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6-2ubuntu1.dsc' patch_2.7.6-2ubuntu1.dsc 1774 SHA256:8f0dc0c31ffeac22ec21ea69756e1aa56ac5b77a4c12e05023f2751ba868e785
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6-2ubuntu1.debian.tar.xz' patch_2.7.6-2ubuntu1.debian.tar.xz 10968 SHA256:9b62482c9506567398b3234a1f1f67e04ff6c813c524911b22df16adbe8ccc13
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
@@ -3361,14 +3356,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4-2.dsc' postgresql-10_10.4-2.dsc 3474 SHA256:62984661432c28056e2cc18241885bb0b577e5394f038160c3b7f1b137e252dc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4.orig.tar.bz2' postgresql-10_10.4.orig.tar.bz2 20201838 SHA256:1b60812310bd5756c62d93a9f93de8c28ea63b0df254f428cd1cf1a4d9020048
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.4-2.debian.tar.xz' postgresql-10_10.4-2.debian.tar.xz 23884 SHA256:88cd7f5785820aadbfd456c8c13c257c6c770ba3c69d00b031d7a5f73a5409eb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/postgresql-10/10.4-2/
+
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu1`
 
