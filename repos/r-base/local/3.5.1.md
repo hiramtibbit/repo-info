@@ -1553,20 +1553,13 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iputils=3:20161105-1
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.dsc' iputils_20161105-1.dsc 2086 SHA256:7e810cf28c14f1e5fb7b51620dd4af748a97202967ee4fb5d4ee3111eb66f4ae
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105.orig.tar.bz2' iputils_20161105.orig.tar.bz2 159944 SHA256:fc193249341d240b227ce4246d7b0ceb30c1186608c7deff7261c8a2607ad02e
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.debian.tar.xz' iputils_20161105-1.debian.tar.xz 10976 SHA256:1216eb9d51a85004524fea30320bad3ea45adaf5a17ec5a9ea3bafad697fd612
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iputils/3:20161105-1/
 
-- https://sources.debian.net/src/iputils/3:20161105-1/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20161105-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20161105-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.19-1`
 
@@ -2819,20 +2812,13 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.2.1-1.1
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1-1.1.dsc' make-dfsg_4.2.1-1.1.dsc 2019 SHA256:a6c8810fbdf85c1ce4d56d42e0c05e30a87d67b7e91e87ddc67c35c2bd876c6a
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1.orig.tar.gz' make-dfsg_4.2.1.orig.tar.gz 1485018 SHA256:480405e8995796ea47cc54b281b7855280f0d815d296a1af1993eeeb72074e39
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.2.1-1.1.diff.gz' make-dfsg_4.2.1-1.1.diff.gz 52923 SHA256:bfa8877a1e57e8134e61def5a851c0c87d4e3f24d2d18b735f804e8e12ff3b86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/make-dfsg/4.2.1-1.1/
 
-- https://sources.debian.net/src/make-dfsg/4.2.1-1.1/ (for browsing the source)
-- https://sources.debian.net/src/make-dfsg/4.2.1-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/make-dfsg/4.2.1-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -3270,16 +3256,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris patch=2.7.6-2
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-2.dsc' patch_2.7.6-2.dsc 1699 SHA256:79a3abea712134d1dbedfe4377c493f059338c665a458c1db106aeb72c844890
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-2.debian.tar.xz' patch_2.7.6-2.debian.tar.xz 10620 SHA256:10520677ca3da2be51fa429e6b661ba2781500ecd8f2dca8dfcbeba751627195
+'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6-2.dsc' patch_2.7.6-2.dsc 1699 SHA256:79a3abea712134d1dbedfe4377c493f059338c665a458c1db106aeb72c844890
+'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+'http://http.debian.net/debian/pool/main/p/patch/patch_2.7.6-2.debian.tar.xz' patch_2.7.6-2.debian.tar.xz 10620 SHA256:10520677ca3da2be51fa429e6b661ba2781500ecd8f2dca8dfcbeba751627195
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/patch/2.7.6-2/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.7.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.7.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
