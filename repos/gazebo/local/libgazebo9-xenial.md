@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce258f3ee27e971950c7c52f44c50871c9853945957f34bad3b79a3caa7b4f55`
-- Created: `2018-07-26T23:42:58.268244248Z`
+- Image ID: `sha256:43ca86848ea9065b4d2b2f3a06b0d1181ea478dcd5c6656dc558c00d773ddd72`
+- Created: `2018-08-06T19:41:31.176933008Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -542,11 +542,11 @@ $ apt-get source -qq --print-uris ca-certificates=20170717~16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
 ```
 
-### `dpkg` source package: `capnproto=0.5.3-2ubuntu1`
+### `dpkg` source package: `capnproto=0.5.3-2ubuntu1.1`
 
 Binary Packages:
 
-- `libcapnp-0.5.3:amd64=0.5.3-2ubuntu1`
+- `libcapnp-0.5.3:amd64=0.5.3-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcapnp-0.5.3/copyright`)
 
@@ -556,10 +556,10 @@ Licenses: (parsed from: `/usr/share/doc/libcapnp-0.5.3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris capnproto=0.5.3-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/capnproto/capnproto_0.5.3-2ubuntu1.dsc' capnproto_0.5.3-2ubuntu1.dsc 1504 SHA256:6114a76db9641f51ae7771c09d9f5e1e45c17b61d24aa139156a40f0a9a25587
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/capnproto/capnproto_0.5.3.orig.tar.gz' capnproto_0.5.3.orig.tar.gz 2044467 SHA256:cdb17c792493bdcd4a24bcd196eb09f70ee64c83a3eccb0bc6534ff560536afb
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/capnproto/capnproto_0.5.3-2ubuntu1.debian.tar.xz' capnproto_0.5.3-2ubuntu1.debian.tar.xz 12148 SHA256:46c8fe9126d34daad5a952b306921930489bce36759a18e2bf7edccaafd285fb
+$ apt-get source -qq --print-uris capnproto=0.5.3-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/capnproto/capnproto_0.5.3-2ubuntu1.1.dsc' capnproto_0.5.3-2ubuntu1.1.dsc 2166 SHA256:2e2dbff4a52170d9d2ea0efe2ac1d0a37e7d2c5153897b013233be0eb6884a39
+'http://archive.ubuntu.com/ubuntu/pool/main/c/capnproto/capnproto_0.5.3.orig.tar.gz' capnproto_0.5.3.orig.tar.gz 2044467 SHA256:cdb17c792493bdcd4a24bcd196eb09f70ee64c83a3eccb0bc6534ff560536afb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/capnproto/capnproto_0.5.3-2ubuntu1.1.debian.tar.xz' capnproto_0.5.3-2ubuntu1.1.debian.tar.xz 12816 SHA256:2992fd8d44469b9e0c1eb17879b414a773f3762e77bd3a01c06ccade9abe589d
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
@@ -1340,15 +1340,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.2.0-1~xenial`
+### `dpkg` source package: `gazebo9=9.3.0-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.2.0-1~xenial`
-- `gazebo9-common=9.2.0-1~xenial`
-- `gazebo9-plugin-base=9.2.0-1~xenial`
-- `libgazebo9:amd64=9.2.0-1~xenial`
-- `libgazebo9-dev:amd64=9.2.0-1~xenial`
+- `gazebo9=9.3.0-1~xenial`
+- `gazebo9-common=9.3.0-1~xenial`
+- `gazebo9-plugin-base=9.3.0-1~xenial`
+- `libgazebo9:amd64=9.3.0-1~xenial`
+- `libgazebo9-dev:amd64=9.3.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`, `/usr/share/doc/libgazebo9-dev/copyright`)
 
@@ -1570,22 +1570,27 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `glib2.0=2.48.2-0ubuntu3`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu4`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.2-0ubuntu3`
-- `libglib2.0-bin=2.48.2-0ubuntu3`
-- `libglib2.0-data=2.48.2-0ubuntu3`
-- `libglib2.0-dev=2.48.2-0ubuntu3`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu4`
+- `libglib2.0-bin=2.48.2-0ubuntu4`
+- `libglib2.0-data=2.48.2-0ubuntu4`
+- `libglib2.0-dev=2.48.2-0ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.dsc' glib2.0_2.48.2-0ubuntu4.dsc 2677 SHA256:c597b6e6af6f9fab47ce5ac947c88a7bced8c336ec85cbdac15e22b0c029bd5f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.debian.tar.xz 69636 SHA256:8d50004ddb10d8a01b42e5a773413c5be66b2bdd6da7f0798a205a472764b80b
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
@@ -1677,14 +1682,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.2.dsc' gnupg_1.4.20-1ubuntu3.2.dsc 2474 SHA256:82d0475c76cf306f4169c5f99554f39b71debd8d6f920da3fd4ce379301e5e81
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.2.debian.tar.xz' gnupg_1.4.20-1ubuntu3.2.debian.tar.xz 38960 SHA256:7b0d0bedc680f5018b465e22a8f8b1a94b9b7d8c323298f007d9d9a7c3163332
-```
 
 ### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
@@ -4953,13 +4953,13 @@ $ apt-get source -qq --print-uris mtdev=1.1.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.5-1ubuntu2.debian.tar.xz' mtdev_1.1.5-1ubuntu2.debian.tar.xz 6224 SHA256:daf836ba10f7a870df957d1b5fcdb98dca302cbdc901baae91a3d7f6a5b2dd90
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.22-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.23-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.22-0ubuntu0.16.04.1`
-- `libmysqlclient20:amd64=5.7.22-0ubuntu0.16.04.1`
-- `mysql-common=5.7.22-0ubuntu0.16.04.1`
+- `libmysqlclient-dev=5.7.23-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.23-0ubuntu0.16.04.1`
+- `mysql-common=5.7.23-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4977,9 +4977,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.23-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.23-0ubuntu0.16.04.1.dsc 3369 SHA256:a3909b10bdcdb010043d3f3a921fd53e05ee62614663cd0759b2621c7caad5b1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23.orig.tar.gz' mysql-5.7_5.7.23.orig.tar.gz 49025014 SHA256:d05700ec5c1c6dae9311059dc1713206c29597f09dbd237bf0679b3c6438e87a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.23-0ubuntu0.16.04.1.debian.tar.xz 250752 SHA256:df6fb0a446a076fbb891b2e9dc40157045c0fdc9f8b864f5e2e2e92f39dfc0c1
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -7254,11 +7259,11 @@ $ apt-get source -qq --print-uris xorg-sgml-doctools=1:1.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg-sgml-doctools/xorg-sgml-doctools_1.11-1.diff.gz' xorg-sgml-doctools_1.11-1.diff.gz 3194 SHA256:18eeb355cb0efff9f47f8ed8e852eee322d9733a427419f4b39f43bc4df630c1
 ```
 
-### `dpkg` source package: `xorg=1:7.7+13ubuntu3`
+### `dpkg` source package: `xorg=1:7.7+13ubuntu3.1`
 
 Binary Packages:
 
-- `x11-common=1:7.7+13ubuntu3`
+- `x11-common=1:7.7+13ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
@@ -7267,9 +7272,9 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xorg=1:7.7+13ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+13ubuntu3.dsc' xorg_7.7+13ubuntu3.dsc 2071 SHA256:350244bac4decd59848b3d4eb14ca1275226fc680c311bfdcbdedaa1f36d053c
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+13ubuntu3.tar.gz' xorg_7.7+13ubuntu3.tar.gz 295402 SHA256:0031ab2eb50f483de51ffd64441e42a0c19115051e899851a89f98f4b0eb17b9
+$ apt-get source -qq --print-uris xorg=1:7.7+13ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+13ubuntu3.1.dsc' xorg_7.7+13ubuntu3.1.dsc 2112 SHA256:5c0130212f42b56c6049fcbf9a03b9559ee4931c7d7b4741627189b3a5e01e21
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+13ubuntu3.1.tar.gz' xorg_7.7+13ubuntu3.1.tar.gz 289897 SHA256:bd672adfec604657e3ac825649ad4f4ef727a8839612abc4fce760d57801778b
 ```
 
 ### `dpkg` source package: `xtrans=1.3.5-1`

@@ -1726,14 +1726,9 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.5.dsc' gnupg_1.4.16-1ubuntu2.5.dsc 2368 SHA256:ba6588465465aa80ac4f50631027ca0edcd88779a2a1d1f304bfe2532e802862
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16.orig.tar.gz' gnupg_1.4.16.orig.tar.gz 5073484 SHA256:f3af2f9c34c305869ad38b4ee7ab9e1487f50884ee8d9d42cccb31e1ced5cdef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.5.debian.tar.gz' gnupg_1.4.16-1ubuntu2.5.debian.tar.gz 56373 SHA256:5d7f04013f3413131d3a386b7a893be0f3ea8debb3b0e3e26be5b61be8ad534d
-```
 
 ### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 
@@ -4254,14 +4249,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcursor=1:1.1.14-1ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14-1ubuntu0.14.04.1.dsc' libxcursor_1.1.14-1ubuntu0.14.04.1.dsc 2399 SHA256:8484efbaa3486ded1555ee4d17ca37bf2110c51b9b9a5e16f2d388f9f97cc62a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14.orig.tar.gz' libxcursor_1.1.14.orig.tar.gz 374910 SHA256:be0954faf274969ffa6d95b9606b9c0cfee28c13b6fc014f15606a0c8b05c17b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14-1ubuntu0.14.04.1.diff.gz' libxcursor_1.1.14-1ubuntu0.14.04.1.diff.gz 19321 SHA256:964e866af9c35e67e0790d0828babb0829afcbbbf3a601fb2c6c1593b2e33991
-```
 
 ### `dpkg` source package: `libxdamage=1:1.1.4-1ubuntu1`
 
