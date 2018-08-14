@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22d5fe815763d8ce9ed685d27c6d31bfa594c307c3b4cb5af07a49c40341d350`
-- Created: `2018-08-02T20:21:15.017859791Z`
-- Virtual Size: ~ 463.66 Mb  
+- Image ID: `sha256:e6ec0088ab4b2a69768fc58fc17f7610317d05d7a2090e219e5b88862e1c26dc`
+- Created: `2018-08-13T22:58:45.835492062Z`
+- Virtual Size: ~ 464.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp17`
+  - `JAVA_VERSION=1.8.0_sr5fp20`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `LIBERTY_VERSION=18.0.0.2`
