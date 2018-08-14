@@ -1,12 +1,13 @@
 ## `perl:slim-threaded`
 
 ```console
-$ docker pull perl@sha256:298fc5a416160b2c77df46e70efc233e35f56e24caf1ecac583e022fc77dde97
+$ docker pull perl@sha256:27201f4aeb53dc560de8647cb65103d42e2a13fc0f973368e35cac3df174823c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; ppc64le
 
 ### `perl:slim-threaded` - linux; amd64
 
@@ -52,4 +53,50 @@ CMD ["perl5.28.0" "-de0"]
 	-	`sha256:5e670a2cab92542c140378e4dc29eaee712e6e0243ca3cc9fee1c29265e29ffc`  
 		Last Modified: Tue, 14 Aug 2018 00:48:07 GMT  
 		Size: 14.5 MB (14524381 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `perl:slim-threaded` - linux; ppc64le
+
+```console
+$ docker pull perl@sha256:f9770082a3b29c9d37d734aec60ba82415cbaf382a94df523e60f3bd6c3b0273
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **37.1 MB (37132620 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b27cf42a4c659805a258716e4ce37f8eddbd021b3e6b484048bd27fe6b3be0d7`
+-	Default Command: `["perl5.28.0","-de0"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 08:20:29 GMT
+ADD file:d8fd3ee34d99a5bb7abafecc4f8991a3de0ad779e8fd8f3ebb33a4811ecfd5a5 in / 
+# Tue, 17 Jul 2018 08:20:30 GMT
+CMD ["bash"]
+# Tue, 14 Aug 2018 09:29:08 GMT
+LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
+# Tue, 14 Aug 2018 09:29:17 GMT
+COPY file:2be96a0b9a6d4b3ea837439f6ea05fc01b773b4b26dd6bd7635bd489469d0075 in /usr/src/perl/ 
+# Tue, 14 Aug 2018 09:29:25 GMT
+WORKDIR /usr/src/perl
+# Tue, 14 Aug 2018 10:05:48 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.28.0.tar.xz -o perl-5.28.0.tar.xz     && echo '059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49 *perl-5.28.0.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.28.0.tar.xz -C /usr/src/perl     && rm perl-5.28.0.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO http://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
+# Tue, 14 Aug 2018 10:05:50 GMT
+WORKDIR /root
+# Tue, 14 Aug 2018 10:05:52 GMT
+CMD ["perl5.28.0" "-de0"]
+```
+
+-	Layers:
+	-	`sha256:6dc0c10e32a730b4a6b92aaa59148a751864a834dc8ac1b0032717f378efc701`  
+		Last Modified: Tue, 17 Jul 2018 08:26:26 GMT  
+		Size: 22.7 MB (22740445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a3eaebf76db1f55fcdb4c82938ac8b543d2b339df03f79f76a39acc601771a88`  
+		Last Modified: Tue, 14 Aug 2018 11:10:58 GMT  
+		Size: 204.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d4acdde2fe4ddc2c69bac3f822eb9dc1aff03e9293a8eeb96319c203ba720c3`  
+		Last Modified: Tue, 14 Aug 2018 11:12:52 GMT  
+		Size: 14.4 MB (14391971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
