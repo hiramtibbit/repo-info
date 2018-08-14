@@ -17,7 +17,7 @@
 ## `mysql:5`
 
 ```console
-$ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b28fa19ab9cc5
+$ docker pull mysql@sha256:e25e2768e910223db3095c1560aa2255371986b24fbebf4b015bae3cc60b9b34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27,14 +27,14 @@ $ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b2
 ### `mysql:5` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:fd46c9fa4f666643d334c8070049d398687a9b60dd02dab6f3995d6418b36181
+$ docker pull mysql@sha256:97fca0a7d9c7904130c43a75d65a4a5b20eb9cc2a48fe9cdf5a94cb54935832f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **123.9 MB (123878922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75576f90a7797f67cdce6638c285fc81b8627f3236e89b923cddd5cb278d8d30`
+-	Image ID: `sha256:43b029b6b6406b40f1ba51b069980b5c14b701786830a41ebb489ad3bbf3d928`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -73,9 +73,9 @@ COPY file:4b5f8335c16a8bc9f76a2164458df1d71cf76facbf16d02f18ce7409122c2146 in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Tue, 31 Jul 2018 16:57:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 31 Jul 2018 16:57:31 GMT
-EXPOSE 3306/tcp
-# Tue, 31 Jul 2018 16:57:31 GMT
+# Tue, 14 Aug 2018 20:28:35 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:35 GMT
 CMD ["mysqld"]
 ```
 
@@ -576,7 +576,7 @@ CMD ["mysqld"]
 ## `mysql:5.7`
 
 ```console
-$ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b28fa19ab9cc5
+$ docker pull mysql@sha256:e25e2768e910223db3095c1560aa2255371986b24fbebf4b015bae3cc60b9b34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -586,14 +586,14 @@ $ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b2
 ### `mysql:5.7` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:fd46c9fa4f666643d334c8070049d398687a9b60dd02dab6f3995d6418b36181
+$ docker pull mysql@sha256:97fca0a7d9c7904130c43a75d65a4a5b20eb9cc2a48fe9cdf5a94cb54935832f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **123.9 MB (123878922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75576f90a7797f67cdce6638c285fc81b8627f3236e89b923cddd5cb278d8d30`
+-	Image ID: `sha256:43b029b6b6406b40f1ba51b069980b5c14b701786830a41ebb489ad3bbf3d928`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -632,9 +632,9 @@ COPY file:4b5f8335c16a8bc9f76a2164458df1d71cf76facbf16d02f18ce7409122c2146 in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Tue, 31 Jul 2018 16:57:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 31 Jul 2018 16:57:31 GMT
-EXPOSE 3306/tcp
-# Tue, 31 Jul 2018 16:57:31 GMT
+# Tue, 14 Aug 2018 20:28:35 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:35 GMT
 CMD ["mysqld"]
 ```
 
@@ -687,7 +687,7 @@ CMD ["mysqld"]
 ## `mysql:5.7.23`
 
 ```console
-$ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b28fa19ab9cc5
+$ docker pull mysql@sha256:e25e2768e910223db3095c1560aa2255371986b24fbebf4b015bae3cc60b9b34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -697,14 +697,14 @@ $ docker pull mysql@sha256:e8f85df0b02606e573ad3dfa31ad6dd1d659ad72ea927f8f307b2
 ### `mysql:5.7.23` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:fd46c9fa4f666643d334c8070049d398687a9b60dd02dab6f3995d6418b36181
+$ docker pull mysql@sha256:97fca0a7d9c7904130c43a75d65a4a5b20eb9cc2a48fe9cdf5a94cb54935832f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **123.9 MB (123878922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75576f90a7797f67cdce6638c285fc81b8627f3236e89b923cddd5cb278d8d30`
+-	Image ID: `sha256:43b029b6b6406b40f1ba51b069980b5c14b701786830a41ebb489ad3bbf3d928`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -743,9 +743,9 @@ COPY file:4b5f8335c16a8bc9f76a2164458df1d71cf76facbf16d02f18ce7409122c2146 in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Tue, 31 Jul 2018 16:57:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 31 Jul 2018 16:57:31 GMT
-EXPOSE 3306/tcp
-# Tue, 31 Jul 2018 16:57:31 GMT
+# Tue, 14 Aug 2018 20:28:35 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:35 GMT
 CMD ["mysqld"]
 ```
 
@@ -798,7 +798,7 @@ CMD ["mysqld"]
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11858307bd378
+$ docker pull mysql@sha256:d39a8ab7679df309e7eff6ddba434ad5747cc2a2acee2d7c60d8221c9acedcad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -808,14 +808,14 @@ $ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11
 ### `mysql:8` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:b1cba388cd1ddbe3646cf06868134b5244d706578f4aeedf65771903f1ee2aaa
+$ docker pull mysql@sha256:ca67d8f3ea4a2b3e551994cf0eee92cc22f507d816c8626317135855ef52e15c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **137.7 MB (137709656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bbe2074ef0a0c494a3481d04377c24ed93711f25cc0bf55598ee052b6d4c277`
+-	Image ID: `sha256:29e0ae3b69b9031ab7d7fd3024057b9441d74c8244e583cfb48697109148ca71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -856,9 +856,9 @@ COPY file:59647006b032bcb29e59fba419c45f9d14154b34df99013c41321e204048254c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Sat, 04 Aug 2018 02:28:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Aug 2018 02:28:05 GMT
-EXPOSE 3306/tcp
-# Sat, 04 Aug 2018 02:28:22 GMT
+# Tue, 14 Aug 2018 20:28:17 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:17 GMT
 CMD ["mysqld"]
 ```
 
@@ -915,7 +915,7 @@ CMD ["mysqld"]
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11858307bd378
+$ docker pull mysql@sha256:d39a8ab7679df309e7eff6ddba434ad5747cc2a2acee2d7c60d8221c9acedcad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -925,14 +925,14 @@ $ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11
 ### `mysql:8.0` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:b1cba388cd1ddbe3646cf06868134b5244d706578f4aeedf65771903f1ee2aaa
+$ docker pull mysql@sha256:ca67d8f3ea4a2b3e551994cf0eee92cc22f507d816c8626317135855ef52e15c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **137.7 MB (137709656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bbe2074ef0a0c494a3481d04377c24ed93711f25cc0bf55598ee052b6d4c277`
+-	Image ID: `sha256:29e0ae3b69b9031ab7d7fd3024057b9441d74c8244e583cfb48697109148ca71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -973,9 +973,9 @@ COPY file:59647006b032bcb29e59fba419c45f9d14154b34df99013c41321e204048254c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Sat, 04 Aug 2018 02:28:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Aug 2018 02:28:05 GMT
-EXPOSE 3306/tcp
-# Sat, 04 Aug 2018 02:28:22 GMT
+# Tue, 14 Aug 2018 20:28:17 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:17 GMT
 CMD ["mysqld"]
 ```
 
@@ -1032,7 +1032,7 @@ CMD ["mysqld"]
 ## `mysql:8.0.12`
 
 ```console
-$ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11858307bd378
+$ docker pull mysql@sha256:d39a8ab7679df309e7eff6ddba434ad5747cc2a2acee2d7c60d8221c9acedcad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1042,14 +1042,14 @@ $ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11
 ### `mysql:8.0.12` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:b1cba388cd1ddbe3646cf06868134b5244d706578f4aeedf65771903f1ee2aaa
+$ docker pull mysql@sha256:ca67d8f3ea4a2b3e551994cf0eee92cc22f507d816c8626317135855ef52e15c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **137.7 MB (137709656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bbe2074ef0a0c494a3481d04377c24ed93711f25cc0bf55598ee052b6d4c277`
+-	Image ID: `sha256:29e0ae3b69b9031ab7d7fd3024057b9441d74c8244e583cfb48697109148ca71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1090,9 +1090,9 @@ COPY file:59647006b032bcb29e59fba419c45f9d14154b34df99013c41321e204048254c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Sat, 04 Aug 2018 02:28:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Aug 2018 02:28:05 GMT
-EXPOSE 3306/tcp
-# Sat, 04 Aug 2018 02:28:22 GMT
+# Tue, 14 Aug 2018 20:28:17 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:17 GMT
 CMD ["mysqld"]
 ```
 
@@ -1149,7 +1149,7 @@ CMD ["mysqld"]
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11858307bd378
+$ docker pull mysql@sha256:d39a8ab7679df309e7eff6ddba434ad5747cc2a2acee2d7c60d8221c9acedcad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1159,14 +1159,14 @@ $ docker pull mysql@sha256:e42cbb3afa80aa210aa1245b930619c12641a8de57a486e6f1b11
 ### `mysql:latest` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:b1cba388cd1ddbe3646cf06868134b5244d706578f4aeedf65771903f1ee2aaa
+$ docker pull mysql@sha256:ca67d8f3ea4a2b3e551994cf0eee92cc22f507d816c8626317135855ef52e15c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **137.7 MB (137709656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bbe2074ef0a0c494a3481d04377c24ed93711f25cc0bf55598ee052b6d4c277`
+-	Image ID: `sha256:29e0ae3b69b9031ab7d7fd3024057b9441d74c8244e583cfb48697109148ca71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1207,9 +1207,9 @@ COPY file:59647006b032bcb29e59fba419c45f9d14154b34df99013c41321e204048254c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 # Sat, 04 Aug 2018 02:28:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Aug 2018 02:28:05 GMT
-EXPOSE 3306/tcp
-# Sat, 04 Aug 2018 02:28:22 GMT
+# Tue, 14 Aug 2018 20:28:17 GMT
+EXPOSE 3306/tcp 33060/tcp
+# Tue, 14 Aug 2018 20:28:17 GMT
 CMD ["mysqld"]
 ```
 
