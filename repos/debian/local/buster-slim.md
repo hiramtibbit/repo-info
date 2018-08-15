@@ -1324,21 +1324,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.2-6
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-6.dsc' perl_5.26.2-6.dsc 2776 SHA256:8441ca46715247218cbc19cabd15126f4fbacd544b6ce6446ea7b2ba2541f16a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.2-6.debian.tar.xz' perl_5.26.2-6.debian.tar.xz 167332 SHA256:6b3a39b03e80498d7e0d02c544aa24d4d9fdfc4afd85a91375aa2685d882d178
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.26.2-6/
 
-- https://sources.debian.net/src/perl/5.26.2-6/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.26.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.26.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.5-1`
 
