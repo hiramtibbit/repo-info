@@ -1,10 +1,10 @@
-# `flink:1.5.2-scala_2.11`
+# `flink:1.6.0-scala_2.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c653da33b1d08283c1230b69ce33c71cd25bc1a81bf52715c00c7ee8ab0238e`
-- Created: `2018-08-02T18:25:56.040951904Z`
-- Virtual Size: ~ 748.57 Mb  
+- Image ID: `sha256:aa7c3b80f354c70203186fcd8a06c4f8015f635465353e0ed4c795e355cc25af`
+- Created: `2018-08-14T21:44:33.58651896Z`
+- Virtual Size: ~ 749.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,16 +13,16 @@
   - `PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u171`
-  - `JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1`
+  - `JAVA_VERSION=8u181`
+  - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GOSU_VERSION=1.7`
-  - `FLINK_VERSION=1.5.2`
+  - `FLINK_VERSION=1.6.0`
   - `HADOOP_SCALA_VARIANT=scala_2.11`
   - `FLINK_HOME=/opt/flink`
-  - `FLINK_URL_FILE_PATH=flink/flink-1.5.2/flink-1.5.2-bin-scala_2.11.tgz`
-  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.5.2/flink-1.5.2-bin-scala_2.11.tgz`
-  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.5.2/flink-1.5.2-bin-scala_2.11.tgz.asc`
+  - `FLINK_URL_FILE_PATH=flink/flink-1.6.0/flink-1.6.0-bin-scala_2.11.tgz`
+  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.6.0/flink-1.6.0-bin-scala_2.11.tgz`
+  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.6.0/flink-1.6.0-bin-scala_2.11.tgz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3843,12 +3843,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u171-b11-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u181-b13-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u171-b11-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u171-b11-1~deb9u1`
+- `openjdk-8-jre:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u181-b13-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -3860,17 +3860,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u171-b11-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.dsc' openjdk-8_8u171-b11-1~deb9u1.dsc 4506 SHA256:90aa0656bc242ca2c2f8d5eacae5ff2ac9dcd4286a3e23f772a1151dfd2e0522
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11.orig.tar.xz' openjdk-8_8u171-b11.orig.tar.xz 70323856 SHA256:bf948503de9ea2f39fb9f5c24755a1437616d4412b06f2e18963842a016ec79d
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz' openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz 251408 SHA256:435eb6909058ba46d4b1fa00b0456ba1f93f5cea4344ac1e9a68b4178f9cf94d
+$ apt-get source -qq --print-uris openjdk-8=8u181-b13-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.dsc' openjdk-8_8u181-b13-1~deb9u1.dsc 4499 SHA256:845081407cc42795948b0ddc4c07ad0821fa4737512370eb16f2ecd89dfe3d17
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz 245108 SHA256:28820042eda4448917b5a714a35f6db84168cba087c0464bd415aee5fba28d1a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u171-b11-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u181-b13-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
