@@ -1,10 +1,10 @@
-# `groovy:2.5.1-jdk7-alpine`
+# `groovy:2.5.2-jdk7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0cdd849ee85967f612b3b0086c3433096048575d3fff4568620139d0b1ddc49`
-- Created: `2018-07-16T21:20:56.468668703Z`
-- Virtual Size: ~ 178.06 Mb  
+- Image ID: `sha256:85d6049fb7225495a51fdc096d3e329464a7c98491ba98b0f4c66aa77f295302`
+- Created: `2018-08-14T17:26:05.504220473Z`
+- Virtual Size: ~ 179.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,4 +15,4 @@
   - `JAVA_VERSION=7u181`
   - `JAVA_ALPINE_VERSION=7.181.2.6.14-r0`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.1`
+  - `GROOVY_VERSION=2.5.2`

@@ -1,9 +1,9 @@
-# `groovy:2.5.1-jdk10`
+# `groovy:2.5.2-jdk10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:362bab265544354b123357116cad0b16c4b355255f360c97987cff0cbf743594`
-- Created: `2018-07-21T10:13:51.444201016Z`
+- Image ID: `sha256:8d0a6c5100868b4c73089ff0cdcee348948e11ffc681d96e03b130160ff5387e`
+- Created: `2018-08-14T17:30:00.770448447Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10.0.2+13`
   - `JAVA_DEBIAN_VERSION=10.0.2+13-1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.1`
+  - `GROOVY_VERSION=2.5.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -755,20 +755,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.60.0-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.60.0-2.dsc' curl_7.60.0-2.dsc 2662 SHA256:171c3e2879b4ee61138b9d2225644caf5517ddb2a415ed1ffccb363650da057e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.60.0.orig.tar.gz' curl_7.60.0.orig.tar.gz 3949173 SHA256:e9c37986337743f37fd14fe8737f246e97aec94b39d1b71e8a5973f72a9fc4f5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.60.0-2.debian.tar.xz' curl_7.60.0-2.debian.tar.xz 28204 SHA256:903732d54e8edefbac2688b95110f16ae0e304dbf92a10864c4dd7e7bb410443
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.60.0-2/
 
-- https://sources.debian.net/src/curl/7.60.0-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.60.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.60.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3.1`
 
@@ -1492,11 +1485,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.8-3`
+### `dpkg` source package: `gnupg2=2.2.9-1`
 
 Binary Packages:
 
-- `gpgv=2.2.8-3`
+- `gpgv=2.2.9-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1516,18 +1509,18 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.8-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.dsc' gnupg2_2.2.8-3.dsc 3129 SHA256:0b2cd9156396ce8fe0749fd8398ecc56d50fcb7ed6eeb2f36ffb4255a644ab3f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2' gnupg2_2.2.8.orig.tar.bz2 6632465 SHA256:777b4cb8ced21965a5053d4fa20fe11484f0a478f3d011cef508a1a49db50dcd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2.asc' gnupg2_2.2.8.orig.tar.bz2.asc 534 SHA256:332f4d315f692544c980b2ec6a71b2f481c4825b046aa65d05dbedee64a5c02f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.debian.tar.bz2' gnupg2_2.2.8-3.debian.tar.bz2 69755 SHA256:17e1a226b6a9d8a8308d79d2cb7af8067ae508ced02ba1cf7a16270c054e818d
+$ apt-get source -qq --print-uris gnupg2=2.2.9-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.dsc' gnupg2_2.2.9-1.dsc 3132 SHA256:e7b992ba2cc60447d12adaa462eae250b2e9f2412032b7877f363e6d312a01cd
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2' gnupg2_2.2.9.orig.tar.bz2 6659547 SHA256:6278eaabffa1ebc9fa2ceb3dc53eea9a1505ab02a668a86dd6fec06951af2164
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2.asc' gnupg2_2.2.9.orig.tar.bz2.asc 1068 SHA256:cf693b7c512a1a7b7385d6d99e85e08ca8cbf4a623aa96cbe717b5a7f48f4dda
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.debian.tar.bz2' gnupg2_2.2.9-1.debian.tar.bz2 66642 SHA256:61ecb3aceb4173eefca05324d7ff6afb73700af2abc55bc2085509163a5fdae4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.8-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.8-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.9-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.9-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
