@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab6bba5a84b35fbe321bc94dea91ab4c5b91973406c187aa44952d264bb3ea9d`
-- Created: `2018-08-10T22:05:25.666329742Z`
-- Virtual Size: ~ 305.37 Mb  
+- Image ID: `sha256:49f9c68716aa39b428dbc7df9e179d562bc97cc48baad7fcfa5d6de247d12f53`
+- Created: `2018-08-14T20:48:13.566126075Z`
+- Virtual Size: ~ 319.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=11`
-  - `PG_VERSION=11~beta3-1.pgdg90+1`
+  - `PG_VERSION=11~beta3-1.pgdg90+2`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1736,13 +1736,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxslt/1.1.29-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxslt/1.1.29-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `llvm-toolchain-4.0=1:4.0.1-10~deb9u2`
+### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1~bpo9+1`
 
 Binary Packages:
 
-- `libllvm4.0:amd64=1:4.0.1-10~deb9u2`
+- `libllvm6.0:amd64=1:6.0-1~bpo9+1`
 
-Licenses: (parsed from: `/usr/share/doc/libllvm4.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libllvm6.0/copyright`)
 
 - `ARM`
 - `Apple`
@@ -1761,23 +1761,17 @@ Licenses: (parsed from: `/usr/share/doc/libllvm4.0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris llvm-toolchain-4.0=1:4.0.1-10~deb9u2
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1-10~deb9u2.dsc' llvm-toolchain-4.0_4.0.1-10~deb9u2.dsc 6917 SHA256:ab2e43f133d3c9f28c66c90f8a0d7ee02238c03cb5e0d5fa8c22b04607ee8c28
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-clang-tools-extra.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-clang-tools-extra.tar.bz2 615648 SHA256:0d3e69df0dcf31ab6f010ea3bf395cb2ba1652e9f48f48481018c35a33024665
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-clang.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-clang.tar.bz2 12035514 SHA256:6109cc668b13b9dd7fdeca80b1445c280bf873de55a129025f0d70d7cb8b1bc1
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-compiler-rt.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-compiler-rt.tar.bz2 1833519 SHA256:7e2cd489cc3aa37e9846a072f206af8d7b9c15b48ddb46f7f7e8ab03d9f4ba52
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-lld.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-lld.tar.bz2 623475 SHA256:537eda117953536df02a90d3bdc88477f60fde59242106609480730731be8175
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-lldb.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-lldb.tar.bz2 11060792 SHA256:f7250232d39765f7f29ce1e9e9bcc1abd93bd9db90fa6aba5abf7cf413b2613e
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig-polly.tar.bz2' llvm-toolchain-4.0_4.0.1.orig-polly.tar.bz2 3359646 SHA256:97922fcdaba2eb88d02d60da4371ce4f0947aab136df95614627e6e477c4a0d8
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1.orig.tar.bz2' llvm-toolchain-4.0_4.0.1.orig.tar.bz2 24762852 SHA256:10ea465493475891add1dc0c109458869afa29899210eb259d8a4ae3ec1d500d
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.1-10~deb9u2.debian.tar.xz' llvm-toolchain-4.0_4.0.1-10~deb9u2.debian.tar.xz 79952 SHA256:a3c1db98b9f1c000313b3adb9e801834821a71c3da5a0fa57b3c0fba81a15376
+$ apt-get source -qq --print-uris llvm-toolchain-6.0=1:6.0-1~bpo9+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0-1~bpo9+1.dsc' llvm-toolchain-6.0_6.0-1~bpo9+1.dsc 6856 SHA256:460946c3c55631d3e1d02190ba089800bb32c7d9669f2de1a95678f4ec1a9ed0
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-clang-tools-extra.tar.bz2' llvm-toolchain-6.0_6.0.orig-clang-tools-extra.tar.bz2 808825 SHA256:f5c96f38067cf0c8d81395452d0386e4715d83bd5588e49832798f6ed4b2d8fa
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-clang.tar.bz2' llvm-toolchain-6.0_6.0.orig-clang.tar.bz2 13228782 SHA256:d6d155313658edc8f901b1f01e353605de1c6a9a1efe6c87b2c111d23febad43
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-compiler-rt.tar.bz2' llvm-toolchain-6.0_6.0.orig-compiler-rt.tar.bz2 2145520 SHA256:7253f34ae3faee95f32ee6b4a674b87911338f49f5e14f24afb2fa693f53b09c
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-lld.tar.bz2' llvm-toolchain-6.0_6.0.orig-lld.tar.bz2 853733 SHA256:cd67e62c2bfc5cef9fad2b0b1044c072956bc0ab1692616d5dd9b4034782ab1e
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-lldb.tar.bz2' llvm-toolchain-6.0_6.0.orig-lldb.tar.bz2 11238461 SHA256:4519601ff08e43e83dc42dbdd8de134e59e33f78466fd88f1fdfd79798f5bdef
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-polly.tar.bz2' llvm-toolchain-6.0_6.0.orig-polly.tar.bz2 3253870 SHA256:a256c73b80c5bc311e8dc9471ded02a48c59583a3302f62f3296d223e108b6c6
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig.tar.bz2' llvm-toolchain-6.0_6.0.orig.tar.bz2 29853313 SHA256:6e3439558692bbfd0bcaf4c4d1290e0c97bd710dab42860e0585303bbf67797a
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0-1~bpo9+1.debian.tar.xz' llvm-toolchain-6.0_6.0-1~bpo9+1.debian.tar.xz 69496 SHA256:2009db4e0be6700aded2a5bad8ac43a4aeaebb92aa7dc57a2306e7eaacf9755e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/llvm-toolchain-4.0/1:4.0.1-10~deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/llvm-toolchain-4.0/1:4.0.1-10~deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/llvm-toolchain-4.0/1:4.0.1-10~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -2487,13 +2481,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-11=11~beta3-1.pgdg90+1`
+### `dpkg` source package: `postgresql-11=11~beta3-1.pgdg90+2`
 
 Binary Packages:
 
-- `libpq5:amd64=11~beta3-1.pgdg90+1`
-- `postgresql-11=11~beta3-1.pgdg90+1`
-- `postgresql-client-11=11~beta3-1.pgdg90+1`
+- `libpq5:amd64=11~beta3-1.pgdg90+2`
+- `postgresql-11=11~beta3-1.pgdg90+2`
+- `postgresql-client-11=11~beta3-1.pgdg90+2`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-11/copyright`, `/usr/share/doc/postgresql-client-11/copyright`)
 
@@ -2515,10 +2509,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-11=11~beta3-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta3-1.pgdg90+1.dsc' postgresql-11_11~beta3-1.pgdg90+1.dsc 2718 SHA256:961dbb062c00dba71cc36c57b9622baff044118f72df07afebbbbd92d16049ef
+$ apt-get source -qq --print-uris postgresql-11=11~beta3-1.pgdg90+2
+'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta3-1.pgdg90+2.dsc' postgresql-11_11~beta3-1.pgdg90+2.dsc 2718 SHA256:6fdc9ad6780f5f553652b17095384cd94fe505eaf1eaf888c1436a953104458a
 'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta3.orig.tar.bz2' postgresql-11_11~beta3.orig.tar.bz2 21375988 SHA256:82babba086ea7297d78f3ce2298296cd22fc1bb10ba315e8b4ff661658a8044d
-'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta3-1.pgdg90+1.debian.tar.xz' postgresql-11_11~beta3-1.pgdg90+1.debian.tar.xz 19240 SHA256:c4818008f21c751fa3f23ac8646ff495a07332d8a299536c580acd20368b985e
+'http://apt.postgresql.org/pub/repos/apt/pool/11/p/postgresql-11/postgresql-11_11~beta3-1.pgdg90+2.debian.tar.xz' postgresql-11_11~beta3-1.pgdg90+2.debian.tar.xz 19224 SHA256:948d4ff3fbec6b46e0f10f99cbd8c2aed2611829d0cb0ba0b23d96af286fbfb9
 ```
 
 ### `dpkg` source package: `postgresql-common=192.pgdg90+1`
