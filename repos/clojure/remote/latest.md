@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:2e94ed40429d3b5755fcf813c980cfe58c38eccc4e894114be08b3e37bc75702
+$ docker pull clojure@sha256:72a4495b12f8c6c55ddb28e1a173b3e45f8dbd64bed41f6aab705ecad6468004
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -449,14 +449,14 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' >
 ### `clojure:latest` - linux; 386
 
 ```console
-$ docker pull clojure@sha256:10435a42d97068918581ddfa0583d7634678e935112df66dc5441e908f6f67de
+$ docker pull clojure@sha256:0c247fa1ee4db092b1386e1c5e24d6215b28728537c7b4bba5bb867cecb27f79
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.2 MB (264249436 bytes)**  
+-	Total Size: **264.2 MB (264249482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3730fd4b32745a6cd298b1aa8baf90dd11aacdd463edc8369b23b9f25849c4c`
+-	Image ID: `sha256:ff6768649db770e7f2aa922ae3971021089ff603ec05c12303a0409a1ce688cd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -498,13 +498,13 @@ ENV LEIN_VERSION=2.8.1
 ENV LEIN_INSTALL=/usr/local/bin/
 # Wed, 15 Aug 2018 11:39:49 GMT
 WORKDIR /tmp
-# Wed, 15 Aug 2018 11:39:58 GMT
-RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg   && echo "Comparing lein-pkg checksum ..."   && echo "019faa5f91a463bf9742c3634ee32fb3db8c47f0 *lein-pkg" | sha1sum -c -   && mv lein-pkg $LEIN_INSTALL/lein   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2B72BF956E23DE5E830D50F6002AF007D1A7CC18   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Wed, 15 Aug 2018 11:40:07 GMT
+# Thu, 16 Aug 2018 10:38:49 GMT
+RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg   && echo "Comparing lein-pkg checksum ..."   && echo "019faa5f91a463bf9742c3634ee32fb3db8c47f0 *lein-pkg" | sha1sum -c -   && mv lein-pkg $LEIN_INSTALL/lein   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-key 2B72BF956E23DE5E830D50F6002AF007D1A7CC18   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
+# Thu, 16 Aug 2018 10:38:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 15 Aug 2018 11:40:07 GMT
+# Thu, 16 Aug 2018 10:38:50 GMT
 ENV LEIN_ROOT=1
-# Wed, 15 Aug 2018 11:40:14 GMT
+# Thu, 16 Aug 2018 10:38:57 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
@@ -545,13 +545,13 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' >
 		Last Modified: Wed, 15 Aug 2018 11:10:38 GMT  
 		Size: 246.7 KB (246700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70c49d103bab8a0a5d1e7e26c816c690f7808a207514a199c31e381d1e09179d`  
-		Last Modified: Wed, 15 Aug 2018 11:45:03 GMT  
-		Size: 12.1 MB (12137665 bytes)  
+	-	`sha256:3ff27074868cb90d203a6fe1eeea929ef50d6f855d5245a3b5f0c2a2a2744f24`  
+		Last Modified: Thu, 16 Aug 2018 10:40:39 GMT  
+		Size: 12.1 MB (12137696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d404e7d5cf750fbc18ec7d093845689f218d01fc36912cfa0ba3b1d992890137`  
-		Last Modified: Wed, 15 Aug 2018 11:45:02 GMT  
-		Size: 3.9 MB (3941877 bytes)  
+	-	`sha256:526a4bf20ced492de162e46c716a9407dc7e8957cc6771639a2c9c5c372a3696`  
+		Last Modified: Thu, 16 Aug 2018 10:40:39 GMT  
+		Size: 3.9 MB (3941892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:latest` - linux; ppc64le
