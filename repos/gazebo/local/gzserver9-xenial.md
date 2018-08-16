@@ -1,9 +1,9 @@
-# `gazebo:gzserver9`
+# `gazebo:gzserver9-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce74c96fb1f51d01163892750227c058096b4d7483d024b8c8e556997922adee`
-- Created: `2018-08-06T19:39:05.068673688Z`
+- Image ID: `sha256:8f1a14b16b793754c1b9c64740b526e433859f0c44cacc92818bc00bf15b731a`
+- Created: `2018-08-14T01:26:49.229486632Z`
 - Virtual Size: ~ 680.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1079,14 +1079,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.3.0-1~xenial`
+### `dpkg` source package: `gazebo9=9.3.1-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.3.0-1~xenial`
-- `gazebo9-common=9.3.0-1~xenial`
-- `gazebo9-plugin-base=9.3.0-1~xenial`
-- `libgazebo9:amd64=9.3.0-1~xenial`
+- `gazebo9=9.3.1-1~xenial`
+- `gazebo9-common=9.3.1-1~xenial`
+- `gazebo9-plugin-base=9.3.1-1~xenial`
+- `libgazebo9:amd64=9.3.1-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -3595,14 +3595,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.3+dfsg1-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.5.dsc' libxml2_2.9.3+dfsg1-1ubuntu0.5.dsc 2756 SHA256:9c79dcce7c9d1232b01146a8ff5badf7a0575e380b0748c71b94073a3b38eddb
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1.orig.tar.xz' libxml2_2.9.3+dfsg1.orig.tar.xz 2475440 SHA256:d6b7686fa12c70dd9ce7c7d97c84471b5afed1c176538df8c670754d8c206079
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.5.debian.tar.xz' libxml2_2.9.3+dfsg1-1ubuntu0.5.debian.tar.xz 55504 SHA256:aaf38127e4bf7e643024f2d4421c70689ac45e29db115e1d8984be8050bc8e84
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.2-2`
 
