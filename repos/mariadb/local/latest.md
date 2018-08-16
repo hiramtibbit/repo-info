@@ -1623,13 +1623,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.8+maria~bionic
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.8+maria~bionic.dsc' mariadb-10.3_10.3.8+maria~bionic.dsc 3511 SHA256:0466e06fa1647f0ddb1dcab2a33a42ce84bf0c5dd4f34a22c21a4d3a3a34dc29
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.8+maria~bionic.tar.xz' mariadb-10.3_10.3.8+maria~bionic.tar.xz 45552084 SHA256:08977cd062c36ae0ac95f6e774065c24975e9518a6874055e2bb64981ffb1528
-```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
 
