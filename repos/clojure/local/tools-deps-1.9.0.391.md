@@ -1,10 +1,10 @@
-# `clojure:tools-deps-1.9.0.381`
+# `clojure:tools-deps-1.9.0.391`
 
 ## Docker Metadata
 
-- Image ID: `sha256:556d3271a7338a11853700f2e898371e2e5c48953e260f4e70e72f14a7a5d12a`
-- Created: `2018-07-17T16:14:55.099077303Z`
-- Virtual Size: ~ 650.15 Mb  
+- Image ID: `sha256:cbf0867b7f2cd2ebb804360d407f9337ace758a12d27e2677645711a2a1dcf1c`
+- Created: `2018-08-15T20:26:25.520812299Z`
+- Virtual Size: ~ 668.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,10 +12,10 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=8u171`
-  - `JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1`
+  - `JAVA_VERSION=8u181`
+  - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `CLOJURE_VERSION=1.9.0.381`
+  - `CLOJURE_VERSION=1.9.0.391`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4138,14 +4138,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u171-b11-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u181-b13-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u171-b11-1~deb9u1`
-- `openjdk-8-jdk-headless:amd64=8u171-b11-1~deb9u1`
-- `openjdk-8-jre:amd64=8u171-b11-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u171-b11-1~deb9u1`
+- `openjdk-8-jdk:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jdk-headless:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jre:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u181-b13-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -4157,17 +4157,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u171-b11-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.dsc' openjdk-8_8u171-b11-1~deb9u1.dsc 4506 SHA256:90aa0656bc242ca2c2f8d5eacae5ff2ac9dcd4286a3e23f772a1151dfd2e0522
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11.orig.tar.xz' openjdk-8_8u171-b11.orig.tar.xz 70323856 SHA256:bf948503de9ea2f39fb9f5c24755a1437616d4412b06f2e18963842a016ec79d
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz' openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz 251408 SHA256:435eb6909058ba46d4b1fa00b0456ba1f93f5cea4344ac1e9a68b4178f9cf94d
+$ apt-get source -qq --print-uris openjdk-8=8u181-b13-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.dsc' openjdk-8_8u181-b13-1~deb9u1.dsc 4499 SHA256:845081407cc42795948b0ddc4c07ad0821fa4737512370eb16f2ecd89dfe3d17
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz 245108 SHA256:28820042eda4448917b5a714a35f6db84168cba087c0464bd415aee5fba28d1a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u171-b11-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u181-b13-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
@@ -4684,6 +4684,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/ (for browsing the source)
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `rlwrap=0.42-3`
+
+Binary Packages:
+
+- `rlwrap=0.42-3`
+
+Licenses: (parsed from: `/usr/share/doc/rlwrap/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rlwrap=0.42-3
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42-3.dsc' rlwrap_0.42-3.dsc 1894 SHA256:ae15d26fa6fef9c1e4483079ed2c5e54f71bd27c8004ea59ffe573826bce6473
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42.orig.tar.gz' rlwrap_0.42.orig.tar.gz 279608 SHA256:5a70d8469db9d0a6630628f2d5d2972ad16c092400b7fbbdf699693ec0f87e44
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42-3.debian.tar.xz' rlwrap_0.42-3.debian.tar.xz 5928 SHA256:91c8c6177faa5a719dcce13eb5724e636a44a873f244bc481e41949a5221e620
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rlwrap/0.42-3/ (for browsing the source)
+- https://sources.debian.net/src/rlwrap/0.42-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rlwrap/0.42-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
