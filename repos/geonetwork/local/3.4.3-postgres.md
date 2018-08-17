@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a94e6ee115a1c1a5fc28f180eb06baaab4573b871176b3ba3fcf16038434239`
-- Created: `2018-08-03T19:24:42.356524453Z`
-- Virtual Size: ~ 795.12 Mb  
+- Image ID: `sha256:eaf2159c88752b042691a25302c540ac82d1d33d8daf08a38d81f0b355705de2`
+- Created: `2018-08-15T00:36:10.177753385Z`
+- Virtual Size: ~ 795.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u171`
-  - `JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1`
+  - `JAVA_VERSION=8u181`
+  - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
@@ -4059,12 +4059,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u171-b11-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u181-b13-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u171-b11-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u171-b11-1~deb9u1`
+- `openjdk-8-jre:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u181-b13-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -4076,17 +4076,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u171-b11-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.dsc' openjdk-8_8u171-b11-1~deb9u1.dsc 4506 SHA256:90aa0656bc242ca2c2f8d5eacae5ff2ac9dcd4286a3e23f772a1151dfd2e0522
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11.orig.tar.xz' openjdk-8_8u171-b11.orig.tar.xz 70323856 SHA256:bf948503de9ea2f39fb9f5c24755a1437616d4412b06f2e18963842a016ec79d
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz' openjdk-8_8u171-b11-1~deb9u1.debian.tar.xz 251408 SHA256:435eb6909058ba46d4b1fa00b0456ba1f93f5cea4344ac1e9a68b4178f9cf94d
+$ apt-get source -qq --print-uris openjdk-8=8u181-b13-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.dsc' openjdk-8_8u181-b13-1~deb9u1.dsc 4499 SHA256:845081407cc42795948b0ddc4c07ad0821fa4737512370eb16f2ecd89dfe3d17
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-1~deb9u1.debian.tar.xz 245108 SHA256:28820042eda4448917b5a714a35f6db84168cba087c0464bd415aee5fba28d1a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u171-b11-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u171-b11-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u181-b13-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
@@ -4410,12 +4410,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pixman/0.34.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pixman/0.34.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.9-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.10-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.9-0+deb9u1`
-- `postgresql-client-9.6=9.6.9-0+deb9u1`
+- `libpq5:amd64=9.6.10-0+deb9u1`
+- `postgresql-client-9.6=9.6.10-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.6/copyright`)
 
@@ -4437,17 +4437,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.9-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9-0+deb9u1.dsc' postgresql-9.6_9.6.9-0+deb9u1.dsc 3694 SHA256:9019a96f9338377a5a7151031651f3fcf6420eaedf401748b826c5c1e4a4a3a3
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9.orig.tar.bz2' postgresql-9.6_9.6.9.orig.tar.bz2 19566222 SHA256:b97952e3af02dc1e446f9c4188ff53021cc0eed7ed96f254ae6daf968c443e2e
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.9-0+deb9u1.debian.tar.xz 23340 SHA256:a6f15d5e3d629550672de8583ca9bd01668cbb42830deb766222e529716f80df
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.10-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.9-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.9-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.9-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.10-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-common=181+deb9u2`
 
