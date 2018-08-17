@@ -1089,20 +1089,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u1.dsc' linux_4.9.110-3+deb9u1.dsc 123390 SHA256:c3ba1905da2aa0a25065540ad8f76f22114e2d42fe821085950f706c1e4acdc6
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u1.debian.tar.xz' linux_4.9.110-3+deb9u1.debian.tar.xz 2536456 SHA256:768a3e2002e1dad16a8228dbc2202772f521af482e704c84ee8b6d244c898ac9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u1/
 
-- https://sources.debian.net/src/linux/4.9.110-3+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.110-3+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
