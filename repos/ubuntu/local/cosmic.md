@@ -63,13 +63,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.0~alpha2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha2.dsc' apt_1.7.0~alpha2.dsc 2787 SHA256:fa57ab10dd1b0244eed6c8250dd151e2720733a343e20bff64e7feb3c2a79d78
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha2.tar.xz' apt_1.7.0~alpha2.tar.xz 2146808 SHA256:16c7b8894802e5085903553a5007f7e1e0443f4e6ba0f035f8351e5b16a3d896
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.7.0~alpha2/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -123,13 +123,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu4.dsc' base-files_10.1ubuntu4.dsc 1612 SHA256:ca347bf194258b6dfd08e647b9d1db0875a59cead168078a32838880b1f032ad
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu4.tar.xz' base-files_10.1ubuntu4.tar.xz 77204 SHA256:67b9222029a058a5dd191cbb99bd5c54dcdf0ab2e00fcbd65fe65aaead0e084b
-```
 
 ### `dpkg` source package: `base-passwd=3.5.45`
 
@@ -378,14 +374,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.dsc' findutils_4.6.0+git+20170828-2.dsc 2221 SHA256:6997072de2f1b24457073275f7b8f15ad2f0569389dcb277ebe99dd1846e2ee9
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828.orig.tar.xz' findutils_4.6.0+git+20170828.orig.tar.xz 1865192 SHA256:8d6571ffd5105307bcb1b20c4b7d5c2d0b5152e463b082801268bd3ec9e2bbfd
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20170828-2/
+
 
 ### `dpkg` source package: `gcc-8=8.1.0-12ubuntu1`
 
@@ -976,15 +971,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.12-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.12-2.dsc' p11-kit_0.23.12-2.dsc 2434 SHA256:891dff5385e01d2a462616d23eeda2d9160f2a505f6f8c88ec0c5765d9bd2343
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.12.orig.tar.gz' p11-kit_0.23.12.orig.tar.gz 1257028 SHA256:58bae22f19db1de1a1103e7ca4149eed6e303e727878c2cd5ea9e6fe445fd403
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.12.orig.tar.gz.asc' p11-kit_0.23.12.orig.tar.gz.asc 879 SHA256:5daea7402bf9d5585489eaa3523a7e21a18c4af5169bdc7d92170a0444eeeee3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.12-2.debian.tar.xz' p11-kit_0.23.12-2.debian.tar.xz 21960 SHA256:33f9089dabb16774cd3ab78da16d53cb8d16025ce04ac5a1bf33f7c3ee8c4b2f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.23.12-2/
+
 
 ### `dpkg` source package: `pam=1.1.8-3.6ubuntu2`
 
