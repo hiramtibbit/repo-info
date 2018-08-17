@@ -5018,14 +5018,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.3+dfsg1-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.5.dsc' libxml2_2.9.3+dfsg1-1ubuntu0.5.dsc 2756 SHA256:9c79dcce7c9d1232b01146a8ff5badf7a0575e380b0748c71b94073a3b38eddb
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1.orig.tar.xz' libxml2_2.9.3+dfsg1.orig.tar.xz 2475440 SHA256:d6b7686fa12c70dd9ce7c7d97c84471b5afed1c176538df8c670754d8c206079
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.5.debian.tar.xz' libxml2_2.9.3+dfsg1-1ubuntu0.5.debian.tar.xz 55504 SHA256:aaf38127e4bf7e643024f2d4421c70689ac45e29db115e1d8984be8050bc8e84
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.2-2`
 
@@ -5293,14 +5288,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-131.157
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-131.157.dsc' linux_4.4.0-131.157.dsc 9712 SHA256:9e9ae9bf6f6014fc599af9e9fd891ac98a03b3e60d87e78a0b8af532d19f851e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-131.157.diff.gz' linux_4.4.0-131.157.diff.gz 14649082 SHA256:0371f414e6d89b7386e14e525cb9f7675092264081e675c18192ab786735ac5a
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -6745,14 +6735,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.13-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.13-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.13-0ubuntu0.16.04.dsc 3766 SHA256:ac9ad50eeff81a4a8c5774a59cee62bd146e426c278fab5b374939f3ae537ac4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.13.orig.tar.gz' postgresql-9.5_9.5.13.orig.tar.gz 24311922 SHA256:59b0ef9cc993b36cbe41d8c10b59a3d00794824b9cc80f57a00172de4f0a8bf2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.13-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.13-0ubuntu0.16.04.debian.tar.xz 23924 SHA256:3e9539226527ff985329d0d477e48e751959a515d00eba2bed0aca5b617d35fd
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
