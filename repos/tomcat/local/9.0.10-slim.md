@@ -825,6 +825,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8.2.0-1/
+
 
 ### `dpkg` source package: `glibc=2.27-4`
 
@@ -2575,6 +2579,10 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.32-0.3/
 
 
 ### `dpkg` source package: `xorg=1:7.7+19`

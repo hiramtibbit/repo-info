@@ -1214,6 +1214,10 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fribidi/1.0.4-1/
+
 
 ### `dpkg` source package: `gcc-8=8.2.0-1`
 
@@ -1234,6 +1238,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8.2.0-1/
 
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.11-2`
@@ -4742,6 +4750,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/239-6/
+
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
@@ -4968,6 +4980,10 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.32-0.3/
 
 
 ### `dpkg` source package: `wayland=1.15.0-2`
