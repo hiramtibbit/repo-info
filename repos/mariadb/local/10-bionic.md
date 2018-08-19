@@ -1,10 +1,10 @@
-# `mariadb:10.3.8-bionic`
+# `mariadb:10.3.9-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2c73b3262fff7ac54635d58e13deb8cc8e224dddf3b2b0e2abfc0ad9d508f54c`
-- Created: `2018-07-26T23:29:25.97963736Z`
-- Virtual Size: ~ 362.63 Mb  
+- Image ID: `sha256:a130830db9a4b1e5cede072cdccfa5130d1b0df8ad96f41b23efd533be46bb32`
+- Created: `2018-08-16T20:27:02.578191708Z`
+- Virtual Size: ~ 362.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.3`
-  - `MARIADB_VERSION=1:10.3.8+maria~bionic`
+  - `MARIADB_VERSION=1:10.3.9+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1606,26 +1606,30 @@ $ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu3.debian.tar.xz' lz4_0.0~r131-2ubuntu3.debian.tar.xz 5340 SHA256:94834bac922397529ffc185f9c4c7e7a6eb1ef3bc527f3fcd26e36fc9430afa7
 ```
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.8+maria~bionic`
+### `dpkg` source package: `mariadb-10.3=1:10.3.9+maria~bionic`
 
 Binary Packages:
 
-- `mariadb-backup=1:10.3.8+maria~bionic`
-- `mariadb-client-10.3=1:10.3.8+maria~bionic`
-- `mariadb-client-core-10.3=1:10.3.8+maria~bionic`
-- `mariadb-common=1:10.3.8+maria~bionic`
-- `mariadb-server=1:10.3.8+maria~bionic`
-- `mariadb-server-10.3=1:10.3.8+maria~bionic`
-- `mariadb-server-core-10.3=1:10.3.8+maria~bionic`
-- `mysql-common=1:10.3.8+maria~bionic`
+- `mariadb-backup=1:10.3.9+maria~bionic`
+- `mariadb-client-10.3=1:10.3.9+maria~bionic`
+- `mariadb-client-core-10.3=1:10.3.9+maria~bionic`
+- `mariadb-common=1:10.3.9+maria~bionic`
+- `mariadb-server=1:10.3.9+maria~bionic`
+- `mariadb-server-10.3=1:10.3.9+maria~bionic`
+- `mariadb-server-core-10.3=1:10.3.9+maria~bionic`
+- `mysql-common=1:10.3.9+maria~bionic`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.9+maria~bionic
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.9+maria~bionic.dsc' mariadb-10.3_10.3.9+maria~bionic.dsc 3511 SHA256:92e2a3818637dd3033396304b796fb49a4e2d13ef352043cfe6e52552ddf7b87
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.9+maria~bionic.tar.xz' mariadb-10.3_10.3.9+maria~bionic.tar.xz 45589096 SHA256:16bee01c149dad9f7d9ed979322a1d0610509b716c49085ea16c795f21ef56c5
+```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
 
@@ -1666,11 +1670,11 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.22-0ubuntu18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.23-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.22-0ubuntu18.04.1`
+- `libmysqlclient20:amd64=5.7.23-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -1688,9 +1692,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.23-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc 3391 SHA256:d00cbcfa422496728268fc316f81ad2a2a6a94e396cc8c023e976dd32148aca1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23.orig.tar.gz' mysql-5.7_5.7.23.orig.tar.gz 49025014 SHA256:d05700ec5c1c6dae9311059dc1713206c29597f09dbd237bf0679b3c6438e87a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz 155992 SHA256:a4d44d56f984dfd658909bc54074d128f97c7b4b9189127ca3a88f5c3c97f643
+```
 
 ### `dpkg` source package: `ncurses=6.1-1ubuntu1.18.04`
 
