@@ -1,4 +1,4 @@
-## `couchbase:enterprise-5.5.0`
+## `couchbase:enterprise-5.5.1`
 
 ```console
 $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f56553c5f8f96e9dc19
@@ -8,7 +8,7 @@ $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f565
 -	Platforms:
 	-	linux; amd64
 
-### `couchbase:enterprise-5.5.0` - linux; amd64
+### `couchbase:enterprise-5.5.1` - linux; amd64
 
 ```console
 $ docker pull couchbase@sha256:49940497188452608dc63c89503f69e35664f10664155aea80a56684d419f236

@@ -3,13 +3,13 @@
 # Tags of `couchbase`
 
 -	[`couchbase:4.6.5`](#couchbase465)
--	[`couchbase:5.5.0`](#couchbase550)
+-	[`couchbase:5.5.1`](#couchbase551)
 -	[`couchbase:community`](#couchbasecommunity)
 -	[`couchbase:community-4.5.1`](#couchbasecommunity-451)
 -	[`couchbase:community-5.1.1`](#couchbasecommunity-511)
 -	[`couchbase:enterprise`](#couchbaseenterprise)
 -	[`couchbase:enterprise-4.6.5`](#couchbaseenterprise-465)
--	[`couchbase:enterprise-5.5.0`](#couchbaseenterprise-550)
+-	[`couchbase:enterprise-5.5.1`](#couchbaseenterprise-551)
 -	[`couchbase:latest`](#couchbaselatest)
 
 ## `couchbase:4.6.5`
@@ -152,7 +152,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `couchbase:5.5.0`
+## `couchbase:5.5.1`
 
 ```console
 $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f56553c5f8f96e9dc19
@@ -162,7 +162,7 @@ $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f565
 -	Platforms:
 	-	linux; amd64
 
-### `couchbase:5.5.0` - linux; amd64
+### `couchbase:5.5.1` - linux; amd64
 
 ```console
 $ docker pull couchbase@sha256:49940497188452608dc63c89503f69e35664f10664155aea80a56684d419f236
@@ -992,7 +992,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `couchbase:enterprise-5.5.0`
+## `couchbase:enterprise-5.5.1`
 
 ```console
 $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f56553c5f8f96e9dc19
@@ -1002,7 +1002,7 @@ $ docker pull couchbase@sha256:4ade44792ab55ffa5fb68eae9af4ed93941ba2a3777c9f565
 -	Platforms:
 	-	linux; amd64
 
-### `couchbase:enterprise-5.5.0` - linux; amd64
+### `couchbase:enterprise-5.5.1` - linux; amd64
 
 ```console
 $ docker pull couchbase@sha256:49940497188452608dc63c89503f69e35664f10664155aea80a56684d419f236
