@@ -5,6 +5,7 @@
 -	[`fedora:26`](#fedora26)
 -	[`fedora:27`](#fedora27)
 -	[`fedora:28`](#fedora28)
+-	[`fedora:29`](#fedora29)
 -	[`fedora:latest`](#fedoralatest)
 -	[`fedora:rawhide`](#fedorarawhide)
 
@@ -370,6 +371,10 @@ ADD file:a8fad616930df244be6dfec18cf787c2e7497b815f9bf943c248bf452fbf53d4 in /
 		Last Modified: Sat, 12 May 2018 08:17:28 GMT  
 		Size: 92.4 MB (92399384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fedora:29`
+
+**does not exist** (yet?)
 
 ## `fedora:latest`
 
