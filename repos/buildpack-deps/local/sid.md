@@ -119,19 +119,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.3/
 
-- https://sources.debian.net/src/apt/1.6.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -3910,21 +3904,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.7p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.dsc' openssh_7.7p1-3.dsc 3121 SHA256:957be26e3c066cd6c5a36455b211afaa430b1817568e3ab4e9c832aac88234b7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz' openssh_7.7p1.orig.tar.gz 1536900 SHA256:d73be7e684e99efcd024be15a30bffcbe41b012b2f7b3c9084aed621775e6b8f
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz.asc' openssh_7.7p1.orig.tar.gz.asc 683 SHA256:9a78b5aadf9a43f5367da4989b8ddb6777374a8e5ba6fc19afad072705becaa4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.debian.tar.xz' openssh_7.7p1-3.debian.tar.xz 159700 SHA256:160baec59cc0b3155ff9e75a18cc61d020ae2560545a24d69d0cfd097cf957f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.7p1-3/
 
-- https://sources.debian.net/src/openssh/1:7.7p1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.7p1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.7p1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 

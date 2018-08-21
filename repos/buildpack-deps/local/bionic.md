@@ -103,13 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.6.3/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -241,13 +241,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.dsc' base-files_10.1ubuntu2.1.dsc 1620 SHA256:a830d8f04e756e3513148b4137d7cb21cf4a49893166083856f34b12c9672702
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.tar.xz' base-files_10.1ubuntu2.1.tar.xz 77200 SHA256:483c7224e0d9747652bebe9cc786862855dc66e5fff8685e88440f123e89f79d
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 

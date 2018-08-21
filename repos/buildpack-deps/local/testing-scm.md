@@ -996,19 +996,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.51
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.51.dsc' init-system-helpers_1.51.dsc 1963 SHA256:82f0e30fef2ad14c65f9c7d8ccafd43549451041fdf661dca28b963a6cef02e4
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.51.tar.xz' init-system-helpers_1.51.tar.xz 37468 SHA256:e18b28efe8df087146d9c1e4e9c25386ee1b7312f518d48a2a38469a6c661be0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.51/
 
-- https://sources.debian.net/src/init-system-helpers/1.51/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.51/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.51/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.17.0-2`
 
@@ -2061,21 +2055,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.7p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.dsc' openssh_7.7p1-3.dsc 3121 SHA256:957be26e3c066cd6c5a36455b211afaa430b1817568e3ab4e9c832aac88234b7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz' openssh_7.7p1.orig.tar.gz 1536900 SHA256:d73be7e684e99efcd024be15a30bffcbe41b012b2f7b3c9084aed621775e6b8f
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz.asc' openssh_7.7p1.orig.tar.gz.asc 683 SHA256:9a78b5aadf9a43f5367da4989b8ddb6777374a8e5ba6fc19afad072705becaa4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.debian.tar.xz' openssh_7.7p1-3.debian.tar.xz 159700 SHA256:160baec59cc0b3155ff9e75a18cc61d020ae2560545a24d69d0cfd097cf957f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.7p1-3/
 
-- https://sources.debian.net/src/openssh/1:7.7p1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.7p1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.7p1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 
@@ -2173,20 +2159,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.7
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.7.dsc' pam_1.1.8-3.7.dsc 2540 SHA256:2156194ddf2b157015933f292d767355fb86ad7710d3459dd149c00c23dab0ed
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.7.diff.gz' pam_1.1.8-3.7.diff.gz 139676 SHA256:888ab2b312fe99d014d7cf338026812361bf73bf6d12666794fcd2717c626230
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.1.8-3.7/
 
-- https://sources.debian.net/src/pam/1.1.8-3.7/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.1.8-3.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.1.8-3.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.31-3`
 

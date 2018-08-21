@@ -559,13 +559,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.66
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.66.dsc' debconf_1.5.66.dsc 2059 SHA256:5b8586443a0a5a85b745b2c6b97a8aeab65be403d3f6a9ff42a7f79508a393cb
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.66.tar.xz' debconf_1.5.66.tar.xz 572936 SHA256:e2ba95f6e6229e4c6c8e12b8f193491b48c10479074e8de7aeb7fca2176cd657
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debconf/1.5.66/
+
 
 ### `dpkg` source package: `debianutils=4.8.6`
 
@@ -707,14 +707,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.5-3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3.dsc' expat_2.2.5-3.dsc 2099 SHA256:21c9f507f332a388a8224ebe19e030bd04a9627d255138acc3efef467604c55f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5.orig.tar.gz' expat_2.2.5.orig.tar.gz 8273003 SHA256:b3781742738611eaa737543ee94264dd511c52a3ba7e53111f7d705f6bff65a8
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3.debian.tar.xz' expat_2.2.5-3.debian.tar.xz 10640 SHA256:497d14ac905cb70fc4cacc1e4d92bcccf792237b31fc506a5ea7c4d3aa6c8235
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.2.5-3/
+
 
 ### `dpkg` source package: `fftw3=3.3.8-1`
 
@@ -726,14 +725,13 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.8-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8-1.dsc' fftw3_3.3.8-1.dsc 2823 SHA256:8faf03e7a3c7c28d55dabf284bfd27fb8f2e50d846fc8d41d8f3ac5527bdb4f2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8.orig.tar.gz' fftw3_3.3.8.orig.tar.gz 4110137 SHA256:6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8-1.debian.tar.xz' fftw3_3.3.8-1.debian.tar.xz 13648 SHA256:b4c4cc29ab73f77eedb5c17dc3d74f51cab5a18625504762d93a052c152e7387
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fftw3/3.3.8-1/
+
 
 ### `dpkg` source package: `file=1:5.33-3`
 
@@ -915,13 +913,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.178ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.178ubuntu1.dsc' gcc-defaults_1.178ubuntu1.dsc 15194 SHA256:b2d42c0e364c17473d0366b3b56131f04c01a1d2c500f035d84d7facfd7763e8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.178ubuntu1.tar.gz' gcc-defaults_1.178ubuntu1.tar.gz 208541 SHA256:f7300b8707f2d79934ccf8808e13e710e4332dd710964e79806bc437ab53ff83
-```
 
 ### `dpkg` source package: `gdbm=1.14.1-6`
 
@@ -1157,15 +1151,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.dsc' gnutls28_3.5.18-1ubuntu1.dsc 3455 SHA256:1bda752730abcbe4b4fd1ca2a1717c8937c4fe1cf462a9ad6044c765fab3f8d8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.debian.tar.xz 66900 SHA256:c14acc84669e0c570dc8edcd5847ba2a1fd7cc2a942be467342743824a827406
-```
 
 ### `dpkg` source package: `gobject-introspection=1.56.1-1`
 
@@ -1573,14 +1561,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.16-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2build1.dsc' krb5_1.16-2build1.dsc 3226 SHA256:70f80a88dfad37daf7e19578d8262cebdb4c436282992b3ec5005ff52a2629c6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA256:faeb125f83b0fb4cdb2f99f088140631bb47d975982de0956d18c85842969e08
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2build1.debian.tar.xz' krb5_1.16-2build1.debian.tar.xz 96376 SHA256:834d2b02fb8cb2ff772c6ae2ecf69d48e7edf3a626d254d4fb1073a207f0a8cb
-```
 
 ### `dpkg` source package: `lcms2=2.9-2`
 
@@ -3512,14 +3495,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.6-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-1.dsc' python3.6_3.6.6-1.dsc 3420 SHA256:9402b81eab34a44e8e94b66a278fc7a70be051679a93204f37fd49d7728f3bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6.orig.tar.xz' python3.6_3.6.6.orig.tar.xz 17156744 SHA256:d79bc15d456e73a3173a2938f18a17e5149c850ebdedf84a78067f501ee6e16f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-1.debian.tar.xz' python3.6_3.6.6-1.debian.tar.xz 206524 SHA256:d3ccbb278e8d4e2f0d0c900084e9e400ee4c924b45b73c0247f00faaa282f8fe
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.6/3.6.6-1/
+
 
 ### `dpkg` source package: `readline=7.0-5`
 
