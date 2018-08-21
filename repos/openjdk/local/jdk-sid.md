@@ -2564,20 +2564,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgl
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=1.0.0+git20180308-3
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-3.dsc' libglvnd_1.0.0+git20180308-3.dsc 2439 SHA256:185fe6aa0d623dbfc96d675b1c1dd47694ca8da4fcd08464d9e2b556cc2a0b3f
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308.orig.tar.gz' libglvnd_1.0.0+git20180308.orig.tar.gz 781370 SHA256:448d3c904145a8095bf15bf574dba2f027ed04b15e84ec2681a485269202ab8d
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0+git20180308-3.debian.tar.xz' libglvnd_1.0.0+git20180308-3.debian.tar.xz 19508 SHA256:420d943f745072019554cbfd7c64d294ee890a1935fa1b7bb3cd8fb4c0f0e552
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-3/
 
-- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-3/ (for browsing the source)
-- https://sources.debian.net/src/libglvnd/1.0.0+git20180308-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.32-1`
 
@@ -4362,21 +4355,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.7p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.dsc' openssh_7.7p1-3.dsc 3121 SHA256:957be26e3c066cd6c5a36455b211afaa430b1817568e3ab4e9c832aac88234b7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz' openssh_7.7p1.orig.tar.gz 1536900 SHA256:d73be7e684e99efcd024be15a30bffcbe41b012b2f7b3c9084aed621775e6b8f
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz.asc' openssh_7.7p1.orig.tar.gz.asc 683 SHA256:9a78b5aadf9a43f5367da4989b8ddb6777374a8e5ba6fc19afad072705becaa4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.7p1-3.debian.tar.xz' openssh_7.7p1-3.debian.tar.xz 159700 SHA256:160baec59cc0b3155ff9e75a18cc61d020ae2560545a24d69d0cfd097cf957f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.7p1-3/
 
-- https://sources.debian.net/src/openssh/1:7.7p1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.7p1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.7p1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 
