@@ -14,6 +14,12 @@
 -	[`ghost:1.25.5-alpine`](#ghost1255-alpine)
 -	[`ghost:1.25-alpine`](#ghost125-alpine)
 -	[`ghost:1-alpine`](#ghost1-alpine)
+-	[`ghost:2`](#ghost2)
+-	[`ghost:2.0`](#ghost20)
+-	[`ghost:2.0.3`](#ghost203)
+-	[`ghost:2.0.3-alpine`](#ghost203-alpine)
+-	[`ghost:2.0-alpine`](#ghost20-alpine)
+-	[`ghost:2-alpine`](#ghost2-alpine)
 -	[`ghost:alpine`](#ghostalpine)
 -	[`ghost:latest`](#ghostlatest)
 
@@ -3430,6 +3436,30 @@ CMD ["node" "current/index.js"]
 		Last Modified: Thu, 16 Aug 2018 07:29:14 GMT  
 		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ghost:2`
+
+**does not exist** (yet?)
+
+## `ghost:2.0`
+
+**does not exist** (yet?)
+
+## `ghost:2.0.3`
+
+**does not exist** (yet?)
+
+## `ghost:2.0.3-alpine`
+
+**does not exist** (yet?)
+
+## `ghost:2.0-alpine`
+
+**does not exist** (yet?)
+
+## `ghost:2-alpine`
+
+**does not exist** (yet?)
 
 ## `ghost:alpine`
 
