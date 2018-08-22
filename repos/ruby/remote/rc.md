@@ -1,7 +1,7 @@
 ## `ruby:rc`
 
 ```console
-$ docker pull ruby@sha256:2d6681c892f794f830039bfab312106d8277b1694b66f187df57f13dcc8c8895
+$ docker pull ruby@sha256:4c57ce63be7de8aedec9b74ab595a4a6b986d0faf827b4f186e0c7d5ab574f8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull ruby@sha256:2d6681c892f794f830039bfab312106d8277b1694b66f187df57f1
 ### `ruby:rc` - linux; amd64
 
 ```console
-$ docker pull ruby@sha256:fbbe40662ef441b42916430431f92da57a62b7b675c5124052a5528674da13d1
+$ docker pull ruby@sha256:0a737b27f6bdc59b1235e99db25ddee8585e39df520b9f2c386e8b5bb11a9f13
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345506371 bytes)**  
+-	Total Size: **345.5 MB (345508184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abed5cf116ef364c183ad7d723e8061fafb0dbffff5b3c2db32445f528bcdb0d`
+-	Image ID: `sha256:400798eb27fab7df9633345490be122c221791f8d333080b576a855d60925188`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -50,19 +50,19 @@ ENV RUBY_VERSION=2.6.0-preview2
 ENV RUBY_DOWNLOAD_SHA256=00ddfb5e33dee24469dd0b203597f7ecee66522ebb496f620f5815372ea2d3ec
 # Tue, 17 Jul 2018 07:54:24 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Sat, 21 Jul 2018 08:25:53 GMT
-ENV BUNDLER_VERSION=1.16.3
-# Sat, 21 Jul 2018 08:28:17 GMT
+# Wed, 22 Aug 2018 21:42:59 GMT
+ENV BUNDLER_VERSION=1.16.4
+# Wed, 22 Aug 2018 21:45:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Sat, 21 Jul 2018 08:28:18 GMT
+# Wed, 22 Aug 2018 21:45:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 21 Jul 2018 08:28:18 GMT
+# Wed, 22 Aug 2018 21:45:43 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 21 Jul 2018 08:28:18 GMT
+# Wed, 22 Aug 2018 21:45:43 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 21 Jul 2018 08:28:19 GMT
+# Wed, 22 Aug 2018 21:45:44 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Sat, 21 Jul 2018 08:28:19 GMT
+# Wed, 22 Aug 2018 21:45:45 GMT
 CMD ["irb"]
 ```
 
@@ -91,13 +91,13 @@ CMD ["irb"]
 		Last Modified: Tue, 17 Jul 2018 08:53:49 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84428d436196cc9983b55ab8a1925ab31f3c48084067ac03012d6eec2099d818`  
-		Last Modified: Sat, 21 Jul 2018 09:36:10 GMT  
-		Size: 21.9 MB (21864947 bytes)  
+	-	`sha256:7b0571141f7e655b47b983d3eabe4a2f42a6f6d38989918097a0988271d79c53`  
+		Last Modified: Wed, 22 Aug 2018 23:06:56 GMT  
+		Size: 21.9 MB (21866761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0bdc2b04d5c9deb951b0cf36b2f456ebc7686e2e831c97949d375afea060e4`  
-		Last Modified: Sat, 21 Jul 2018 09:36:04 GMT  
-		Size: 147.0 B  
+	-	`sha256:d6c9392c1418dfd43ffc79a90644eeb55967d75512aafc79fd537cb4a511b426`  
+		Last Modified: Wed, 22 Aug 2018 23:06:49 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc` - linux; arm variant v5
