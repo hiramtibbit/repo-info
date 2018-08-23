@@ -1,10 +1,10 @@
-# `mongo:4.0.1-xenial`
+# `mongo:4.0.1-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bf72137439e4b2533d2286e4af5092e4b9a869e5d51d39fabb967df7d148d9f`
-- Created: `2018-08-10T21:59:44.988145569Z`
-- Virtual Size: ~ 380.11 Mb  
+- Image ID: `sha256:ae5085a13e31fe967861f7408685ee0f3b34e0133687f998aa5385738e985e35`
+- Created: `2018-08-22T22:55:50.461862906Z`
+- Virtual Size: ~ 349.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
