@@ -1,7 +1,7 @@
 ## `mediawiki:legacy`
 
 ```console
-$ docker pull mediawiki@sha256:d5f008194dd6facb0af9bfe8cf48df5bd6ddb81d11a1b845a8e2ff80f191ec7c
+$ docker pull mediawiki@sha256:5868c770b4690fa5c4f8a46d80e65aab833a54712daa7ff396ae30ed71646dee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -199,14 +199,14 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 ### `mediawiki:legacy` - linux; arm variant v5
 
 ```console
-$ docker pull mediawiki@sha256:5b11e448a17600af85433524e034f26815a402ba2932433536af974a769cd1b0
+$ docker pull mediawiki@sha256:a0ce77c4dafd82f93744cb847e090b267507df89b74834fec829baaec34f2bd6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.2 MB (220230440 bytes)**  
+-	Total Size: **220.2 MB (220232071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:221fb981bc45f80e4426b47d6ede86510cd59659b7c7177713aa8fddfbac01c0`
+-	Image ID: `sha256:cbe87f98be900c852efc04471eabc8b887ba9eddf3a2d5a3f68f5fd88907474b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -251,49 +251,49 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Tue, 17 Jul 2018 12:33:14 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172
-# Sat, 21 Jul 2018 09:09:47 GMT
-ENV PHP_VERSION=7.1.20
-# Sat, 21 Jul 2018 09:09:48 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.1.20.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.20.tar.xz.asc/from/this/mirror
-# Sat, 21 Jul 2018 09:09:48 GMT
-ENV PHP_SHA256=cd7d1006201459d43fae0790cce4eb3451add5c87f4cadb13b228d4c179b850c PHP_MD5=
-# Sat, 21 Jul 2018 09:10:02 GMT
+# Thu, 23 Aug 2018 09:24:48 GMT
+ENV PHP_VERSION=7.1.21
+# Thu, 23 Aug 2018 09:24:48 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.1.21.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.21.tar.xz.asc/from/this/mirror
+# Thu, 23 Aug 2018 09:24:48 GMT
+ENV PHP_SHA256=d4da6dc69d3fe1e6b2b80f16b262f391037bfeb21213c966e026bd45d7ca2813 PHP_MD5=
+# Thu, 23 Aug 2018 09:25:02 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		command -v gpgconf > /dev/null && gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Sat, 21 Jul 2018 09:10:02 GMT
+# Thu, 23 Aug 2018 09:25:03 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 21 Jul 2018 09:12:36 GMT
+# Thu, 23 Aug 2018 09:27:32 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Sat, 21 Jul 2018 09:12:37 GMT
+# Thu, 23 Aug 2018 09:27:33 GMT
 COPY multi:c925dfb355ea16ba0238c8b6ca78d3cd7fe815932bf707b25bbf051070430157 in /usr/local/bin/ 
-# Sat, 21 Jul 2018 09:12:37 GMT
+# Thu, 23 Aug 2018 09:27:34 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 21 Jul 2018 09:12:38 GMT
+# Thu, 23 Aug 2018 09:27:34 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 21 Jul 2018 09:12:38 GMT
+# Thu, 23 Aug 2018 09:27:34 GMT
 WORKDIR /var/www/html
-# Sat, 21 Jul 2018 09:12:38 GMT
+# Thu, 23 Aug 2018 09:27:35 GMT
 EXPOSE 80/tcp
-# Sat, 21 Jul 2018 09:12:39 GMT
+# Thu, 23 Aug 2018 09:27:35 GMT
 CMD ["apache2-foreground"]
-# Sat, 21 Jul 2018 14:37:53 GMT
+# Thu, 23 Aug 2018 12:00:59 GMT
 RUN apt-get update && apt-get install -y 		git 		imagemagick 		libicu-dev 		python 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Sat, 21 Jul 2018 14:40:46 GMT
+# Thu, 23 Aug 2018 12:04:03 GMT
 RUN docker-php-ext-install mbstring mysqli opcache intl
-# Sat, 21 Jul 2018 14:41:01 GMT
+# Thu, 23 Aug 2018 12:04:21 GMT
 RUN pecl channel-update pecl.php.net 	&& pecl install apcu-5.1.8 	&& docker-php-ext-enable apcu
-# Sat, 21 Jul 2018 14:41:08 GMT
+# Thu, 23 Aug 2018 12:04:24 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 21 Jul 2018 14:41:09 GMT
+# Thu, 23 Aug 2018 12:04:25 GMT
 RUN mkdir -p /var/www/data 	&& chown -R www-data:www-data /var/www/data
-# Sat, 21 Jul 2018 14:41:19 GMT
+# Thu, 23 Aug 2018 12:04:29 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.30
-# Sat, 21 Jul 2018 14:41:19 GMT
+# Thu, 23 Aug 2018 12:04:30 GMT
 ENV MEDIAWIKI_BRANCH=REL1_30
-# Sat, 21 Jul 2018 14:41:20 GMT
+# Thu, 23 Aug 2018 12:04:30 GMT
 ENV MEDIAWIKI_VERSION=1.30.0
-# Sat, 21 Jul 2018 14:41:20 GMT
+# Thu, 23 Aug 2018 12:04:31 GMT
 ENV MEDIAWIKI_SHA512=ec4aeb08c18af0e52aaf99124d43cd357328221934d593d87f38da804a2f4a5b172a114659f87f6de58c2140ee05ae14ec6a270574f655e7780a950a51178643
-# Sat, 21 Jul 2018 14:41:36 GMT
+# Thu, 23 Aug 2018 12:04:47 GMT
 RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz 	&& echo "${MEDIAWIKI_SHA512} *mediawiki.tar.gz" | sha512sum -c - 	&& tar -xz --strip-components=1 -f mediawiki.tar.gz 	&& rm mediawiki.tar.gz 	&& chown -R www-data:www-data extensions skins cache images
 ```
 
@@ -334,49 +334,49 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 		Last Modified: Tue, 17 Jul 2018 14:13:05 GMT  
 		Size: 512.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb102381e1cbdbeb005c0a60f4a7713c548a93e657879685c17104cceca0b46b`  
-		Last Modified: Sat, 21 Jul 2018 10:53:09 GMT  
-		Size: 12.6 MB (12574667 bytes)  
+	-	`sha256:dadab0cd8d4703695dceabe16b094e8dc3bdcde44833fbb9d2fbf4a4e85bb7bd`  
+		Last Modified: Thu, 23 Aug 2018 10:03:30 GMT  
+		Size: 12.6 MB (12574967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9336d67b460ec0fb656065930b03f9d0fdf6a6a287c0f0a9ad54aaa60ccf338e`  
-		Last Modified: Sat, 21 Jul 2018 10:53:07 GMT  
+	-	`sha256:74bdc0b3cde6679e034e00e3ca4aad3c7d8d73e30e61861351f6cd0fa4d952e1`  
+		Last Modified: Thu, 23 Aug 2018 10:03:29 GMT  
 		Size: 499.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ce11cf1377d08a20ba940c4097ec6542e51f39a6d0ec7bc00bfb9f1d7f5a3f`  
-		Last Modified: Sat, 21 Jul 2018 10:53:12 GMT  
-		Size: 13.5 MB (13525324 bytes)  
+	-	`sha256:0621ba60f242af5730d4d16ab3014e3fd1c1a6357fe4fbb25ea5297e516d8f5d`  
+		Last Modified: Thu, 23 Aug 2018 10:03:33 GMT  
+		Size: 13.5 MB (13525539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c44cbf6cdcfe26bdab8256726720fdc371520862e1fd89b661a1f7489a53347`  
-		Last Modified: Sat, 21 Jul 2018 10:53:07 GMT  
+	-	`sha256:9de117ef09e9a170bfa952f9a91ab337bc5718e787d9e663e5ffddb03f340371`  
+		Last Modified: Thu, 23 Aug 2018 10:03:29 GMT  
 		Size: 2.2 KB (2192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba441c3a58f04e4ae98ad44485a30901239d7515cb2dc6350344bd14b655083e`  
-		Last Modified: Sat, 21 Jul 2018 10:53:07 GMT  
-		Size: 902.0 B  
+	-	`sha256:8c21408ef09ed1a95a00a1f137aca6061b45c9c91a6b4869f693d403bcd28a24`  
+		Last Modified: Thu, 23 Aug 2018 10:03:29 GMT  
+		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f54bae0fc9afc22367ed1bf4f1f0297d44be2ca3354d213a50467e172deffcc4`  
-		Last Modified: Sat, 21 Jul 2018 14:47:35 GMT  
-		Size: 54.0 MB (53981673 bytes)  
+	-	`sha256:f0c98b495eadb48ae2018d039ed7e1e0796b9efa027547fab1e4587b2ca2a57e`  
+		Last Modified: Thu, 23 Aug 2018 12:06:44 GMT  
+		Size: 54.0 MB (53981696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f2e979f276795c0b7cd21c19cb04a7d0e45d39dabc0de367426c66f3c1ad349`  
-		Last Modified: Sat, 21 Jul 2018 14:47:17 GMT  
-		Size: 1.6 MB (1592692 bytes)  
+	-	`sha256:829a192c8b120fffba551e4e1491ce02b89fd8bf82feb53bff44f1a89f39384a`  
+		Last Modified: Thu, 23 Aug 2018 12:06:26 GMT  
+		Size: 1.6 MB (1593745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b796f5b82052ef23543d3d275717d7632a542d4c09bb2fca575ae0f99d6b33e9`  
-		Last Modified: Sat, 21 Jul 2018 14:47:16 GMT  
-		Size: 397.8 KB (397779 bytes)  
+	-	`sha256:8e04afeb98e3dacc23c423aaae205b27e857cc7f4aa37a4bec09c1e509233e4f`  
+		Last Modified: Thu, 23 Aug 2018 12:06:25 GMT  
+		Size: 397.8 KB (397771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a32bece75d66270eb1001211cd5c63854320c88dc9e61b43a43783d9d45207e7`  
-		Last Modified: Sat, 21 Jul 2018 14:47:16 GMT  
-		Size: 353.0 B  
+	-	`sha256:760507000fb63aa48d31e71002a006bc497bd35d0b2e027fb9b9096d101a5f06`  
+		Last Modified: Thu, 23 Aug 2018 12:06:25 GMT  
+		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2fcf36a8b2a3c3284148c87aea551c615eb86d22167f145cdd0115dd665005`  
-		Last Modified: Sat, 21 Jul 2018 14:47:17 GMT  
-		Size: 170.0 B  
+	-	`sha256:ff59a919a88fef5ad897a181c1b4ac9b8177ed2e8190433d18abeb8bd16be47e`  
+		Last Modified: Thu, 23 Aug 2018 12:06:25 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7312376215f30c0ab9249121b4f42f578b99e7a44087da4fbb228d8ad2c9522f`  
-		Last Modified: Sat, 21 Jul 2018 14:47:43 GMT  
-		Size: 42.9 MB (42890332 bytes)  
+	-	`sha256:bf149233768fb12139f3905e244b357788b73c71825bf8b4403d6696d719059e`  
+		Last Modified: Thu, 23 Aug 2018 12:06:52 GMT  
+		Size: 42.9 MB (42890376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:legacy` - linux; arm variant v7
