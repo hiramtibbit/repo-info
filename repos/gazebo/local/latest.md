@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ad05099d0dcae5534183e436a713724a28fcd5fd3a12d73bc67d93ffea5bfa7`
-- Created: `2018-08-15T00:16:07.472196705Z`
+- Image ID: `sha256:c98e4be449e5a3055c43593e86f7d1b14921afd9ee68a8b63e4f58b607968422`
+- Created: `2018-08-22T19:21:22.680913023Z`
 - Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -125,12 +125,12 @@ $ apt-get source -qq --print-uris apparmor=2.12-4ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.debian.tar.xz' apparmor_2.12-4ubuntu5.debian.tar.xz 88180 SHA256:1bd6183223a95cb8aed5371634bf89fb116782f13d90b5ffde02b425c6532ff8
 ```
 
-### `dpkg` source package: `apt=1.6.3`
+### `dpkg` source package: `apt=1.6.3ubuntu0.1`
 
 Binary Packages:
 
-- `apt=1.6.3`
-- `libapt-pkg5.0:amd64=1.6.3`
+- `apt=1.6.3ubuntu0.1`
+- `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -140,9 +140,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.6.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
+$ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
 ```
 
 ### `dpkg` source package: `armadillo=1:8.400.0+dfsg-2`
@@ -340,11 +340,11 @@ $ apt-get source -qq --print-uris avahi=0.7-3.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.debian.tar.xz' avahi_0.7-3.1ubuntu1.debian.tar.xz 34228 SHA256:5c2e90652dd1db596176c0227b50e6eb4d2a2e6f4351f6a08a63e3422ebb8b68
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2.1`
+### `dpkg` source package: `base-files=10.1ubuntu2.2`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2.1`
+- `base-files=10.1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -353,9 +353,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.dsc' base-files_10.1ubuntu2.1.dsc 1620 SHA256:a830d8f04e756e3513148b4137d7cb21cf4a49893166083856f34b12c9672702
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.1.tar.xz' base-files_10.1ubuntu2.1.tar.xz 77200 SHA256:483c7224e0d9747652bebe9cc786862855dc66e5fff8685e88440f123e89f79d
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -6339,13 +6339,13 @@ $ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.tar.gz' pam_1.1.8-3.6ubuntu2.tar.gz 1989104 SHA256:3244f99b6bd0a3501c692102d897c013a6736ab8f9656fe2411cacffcaaba20e
 ```
 
-### `dpkg` source package: `pango1.0=1.40.14-1`
+### `dpkg` source package: `pango1.0=1.40.14-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpango-1.0-0:amd64=1.40.14-1`
-- `libpangocairo-1.0-0:amd64=1.40.14-1`
-- `libpangoft2-1.0-0:amd64=1.40.14-1`
+- `libpango-1.0-0:amd64=1.40.14-1ubuntu0.1`
+- `libpangocairo-1.0-0:amd64=1.40.14-1ubuntu0.1`
+- `libpangoft2-1.0-0:amd64=1.40.14-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/doc/libpangocairo-1.0-0/copyright`, `/usr/share/doc/libpangoft2-1.0-0/copyright`)
 
@@ -6355,10 +6355,10 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pango1.0=1.40.14-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.14-1.dsc' pango1.0_1.40.14-1.dsc 3227 SHA256:196da02884c501954773967c932bc31a26c215ad7f5be745153506d57c0c00fc
+$ apt-get source -qq --print-uris pango1.0=1.40.14-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.14-1ubuntu0.1.dsc' pango1.0_1.40.14-1ubuntu0.1.dsc 3358 SHA256:4dff30f666f681591f878326115625c9eca431c9237e9affe66452a4d48d757e
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.14.orig.tar.xz' pango1.0_1.40.14.orig.tar.xz 858388 SHA256:90af1beaa7bf9e4c52db29ec251ec4fd0a8f2cc185d521ad1f88d01b3a6a17e3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.14-1.debian.tar.xz' pango1.0_1.40.14-1.debian.tar.xz 27748 SHA256:5cf2778fbafeac5a12bfed90a0154ab002bffe338873f39cb391b91c773e40c6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.14-1ubuntu0.1.debian.tar.xz' pango1.0_1.40.14-1ubuntu0.1.debian.tar.xz 28460 SHA256:f4c031a14629eaea9dd7a5a4209b0652ceb7cabafcd653bd112b67982cf83ba7
 ```
 
 ### `dpkg` source package: `patch=2.7.6-2ubuntu1`
@@ -6560,12 +6560,12 @@ $ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.1.debian.tar.xz' poppler_0.62.0-2ubuntu2.1.debian.tar.xz 34964 SHA256:da8ca397e6ce556c632f42dd2a4730940ab776423bb62eea891a5ae4c08af10f
 ```
 
-### `dpkg` source package: `postgresql-10=10.4-0ubuntu0.18.04`
+### `dpkg` source package: `postgresql-10=10.5-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `libpq-dev=10.4-0ubuntu0.18.04`
-- `libpq5:amd64=10.4-0ubuntu0.18.04`
+- `libpq-dev=10.5-0ubuntu0.18.04`
+- `libpq5:amd64=10.5-0ubuntu0.18.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -6584,9 +6584,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-10=10.5-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.dsc' postgresql-10_10.5-0ubuntu0.18.04.dsc 3602 SHA256:1a9358391f50dc8734f19d4f9fd8e1c44bc75806a7344a740ad3dc73181a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5.orig.tar.gz' postgresql-10_10.5.orig.tar.gz 26818092 SHA256:13be7053b1d8ad4e24943b24d80170574fc701b49b3f14e68a5f1bda452ce3d1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz' postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz 23668 SHA256:280337bbb790c36aaed11f08fb21d2906650616d0f344765af48edd93e8938f2
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.1`
 
