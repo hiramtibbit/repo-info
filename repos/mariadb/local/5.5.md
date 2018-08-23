@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7aff94e60a52772f86bcf128639375dc6cd2340727b8e75b8fa6e40782e56ded`
-- Created: `2018-08-02T22:35:44.975779465Z`
-- Virtual Size: ~ 352.17 Mb  
+- Image ID: `sha256:82ef961ebeb29ac9ea36e0b99ed42f66c366e0a79e1e4ac89cdfb6ef7ba92c4d`
+- Created: `2018-08-22T18:44:19.961039827Z`
+- Virtual Size: ~ 352.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -762,21 +762,26 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.5`
+### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.6`
 
 Binary Packages:
 
-- `gnupg=1.4.16-1ubuntu2.5`
-- `gpgv=1.4.16-1ubuntu2.5`
+- `gnupg=1.4.16-1ubuntu2.6`
+- `gpgv=1.4.16-1ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.6.dsc' gnupg_1.4.16-1ubuntu2.6.dsc 2060 SHA256:13284df3206b915a8e7e209bb47f6ad6baa4ba41bb67746708dd959336b1b82c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16.orig.tar.gz' gnupg_1.4.16.orig.tar.gz 5073484 SHA256:f3af2f9c34c305869ad38b4ee7ab9e1487f50884ee8d9d42cccb31e1ced5cdef
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.6.debian.tar.gz' gnupg_1.4.16-1ubuntu2.6.debian.tar.gz 61311 SHA256:d87ad9b22b0f14d3953f5defcc91004eb139c9adf81283acdf24ba5e0ce5ecbb
+```
 
 ### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 
@@ -3059,11 +3064,11 @@ $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2ubuntu2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2ubuntu2.debian.tar.gz 156001 SHA256:e7743d4a96276ccffc4e171812e402a1f503f87df3b668ef0e58db6629146a18
 ```
 
-### `dpkg` source package: `zlib=1:1.2.8.dfsg-1ubuntu1`
+### `dpkg` source package: `zlib=1:1.2.8.dfsg-1ubuntu1.1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.8.dfsg-1ubuntu1`
+- `zlib1g:amd64=1:1.2.8.dfsg-1ubuntu1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3072,8 +3077,8 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-1ubuntu1.dsc' zlib_1.2.8.dfsg-1ubuntu1.dsc 2543 SHA256:cecdb22b8c388e236b43172aed1c9b96173ee344153eaa2e0e93773211256b5c
+$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-1ubuntu1.1.dsc' zlib_1.2.8.dfsg-1ubuntu1.1.dsc 2478 SHA256:9d7ba31a18773358d20f29038722a6c3404a3e1f447d0b73c5de2baf562ccaef
 'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-1ubuntu1.debian.tar.gz' zlib_1.2.8.dfsg-1ubuntu1.debian.tar.gz 17369 SHA256:89aea2797e44b85c9a87066255eed3695f0b3ba06b70a560ca38f686995734f9
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-1ubuntu1.1.debian.tar.gz' zlib_1.2.8.dfsg-1ubuntu1.1.debian.tar.gz 17550 SHA256:f7f234df141d2b4b4b7baf9358102df0472200c0e820f5b1b4330be01f325204
 ```
