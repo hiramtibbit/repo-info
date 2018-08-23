@@ -1,28 +1,24 @@
 ## `docker:git`
 
 ```console
-$ docker pull docker@sha256:08b339446345ab3c3d0c6597fbb205dad52b22f75e99fec312ce534863628470
+$ docker pull docker@sha256:6034a1f8bb9a3ea9d3b762186b4294cf7a2b01e9efbc22b26cbf957fe8719b1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
-	-	linux; arm variant v6
-	-	linux; arm64 variant v8
-	-	linux; ppc64le
-	-	linux; s390x
 
 ### `docker:git` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:f22f539a0e59e88b03cb7f827f40dd9bd44619c367c58f73576c78226aa35a5d
+$ docker pull docker@sha256:2f25d7d75a7508861107b25134e8e5cfe7124688de11e689ebaabff016189301
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56719039 bytes)**  
+-	Total Size: **56.7 MB (56744766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bbe92802c022026ee14a9c72299de3e5025585d078ea61e83eb5bf2178f86bec`
+-	Image ID: `sha256:890535b457f54216b302567ae1a957b47b1de78ac8a23065092a9b54f10b6ad4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -37,19 +33,19 @@ RUN apk add --no-cache 		ca-certificates
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 # Thu, 16 Aug 2018 20:26:03 GMT
 ENV DOCKER_CHANNEL=stable
-# Thu, 16 Aug 2018 20:26:04 GMT
-ENV DOCKER_VERSION=18.06.0-ce
-# Thu, 16 Aug 2018 20:26:11 GMT
+# Thu, 23 Aug 2018 01:44:22 GMT
+ENV DOCKER_VERSION=18.06.1-ce
+# Thu, 23 Aug 2018 01:44:30 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Thu, 16 Aug 2018 20:26:12 GMT
+# Thu, 23 Aug 2018 01:44:30 GMT
 COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
-# Thu, 16 Aug 2018 20:26:12 GMT
+# Thu, 23 Aug 2018 01:44:31 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Thu, 16 Aug 2018 20:26:13 GMT
+# Thu, 23 Aug 2018 01:44:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 16 Aug 2018 20:26:13 GMT
+# Thu, 23 Aug 2018 01:44:32 GMT
 CMD ["sh"]
-# Thu, 16 Aug 2018 20:27:02 GMT
+# Thu, 23 Aug 2018 01:45:19 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -66,327 +62,19 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Jul 2018 21:25:39 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21f08d1a7f2a3ccc52494c5e769d0111d7f3c59baf68ab7696889419b08f33f1`  
-		Last Modified: Thu, 16 Aug 2018 20:34:37 GMT  
-		Size: 45.6 MB (45576798 bytes)  
+	-	`sha256:9ba82f60b2f0adf19467b5fb5027a83805b420e72f2fe9ca6cd712d9655245f3`  
+		Last Modified: Thu, 23 Aug 2018 01:45:57 GMT  
+		Size: 45.6 MB (45602538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e310e3d68b4c4a2c42309c4479bf9ec59210e2d54807d01116ece68f6426bec`  
-		Last Modified: Thu, 16 Aug 2018 20:34:17 GMT  
-		Size: 548.0 B  
+	-	`sha256:e35cd29f8979da0a41811cbc66a2ccad595d3baffd898684a0773ef835e0489e`  
+		Last Modified: Thu, 23 Aug 2018 01:45:46 GMT  
+		Size: 546.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7edcda076b3fd72ae032667c27f9fac01af0c8e5fc69dc97ede2bfbe7dcf2e0`  
-		Last Modified: Thu, 16 Aug 2018 20:34:17 GMT  
-		Size: 741.0 B  
+	-	`sha256:c6bc85010933069c405ba4c21f8762c26d93c289ddd3448fe2e9e652190457ee`  
+		Last Modified: Thu, 23 Aug 2018 01:45:46 GMT  
+		Size: 740.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bda8363a62f52597a53f261f9789d6234425f358cdec594f01f27e36dd8b0f55`  
-		Last Modified: Thu, 16 Aug 2018 20:40:47 GMT  
-		Size: 8.6 MB (8625262 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `docker:git` - linux; arm variant v6
-
-```console
-$ docker pull docker@sha256:1f7f256a6e41c0d5f6bdcd49afab69ab877ca1fa9945e0b007e37c7fd96bf4b2
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.0 MB (54956967 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9f7c05c8b5b9ce0ac7825684aeef80a918f358dbc445115b15a0950a46a767f`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["sh"]`
-
-```dockerfile
-# Fri, 06 Jul 2018 07:53:29 GMT
-ADD file:122e3422d9afa971806601812374fdd9d00c8edc8e9a6df7256e2caa85fab6d1 in / 
-# Fri, 06 Jul 2018 07:53:30 GMT
-COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Fri, 06 Jul 2018 07:53:30 GMT
-CMD ["/bin/sh"]
-# Fri, 17 Aug 2018 07:54:18 GMT
-RUN apk add --no-cache 		ca-certificates
-# Fri, 17 Aug 2018 07:54:18 GMT
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 17 Aug 2018 07:54:48 GMT
-ENV DOCKER_CHANNEL=stable
-# Fri, 17 Aug 2018 07:54:49 GMT
-ENV DOCKER_VERSION=18.06.0-ce
-# Fri, 17 Aug 2018 07:54:58 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Fri, 17 Aug 2018 07:54:59 GMT
-COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
-# Fri, 17 Aug 2018 07:54:59 GMT
-COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Fri, 17 Aug 2018 07:55:00 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Aug 2018 07:55:02 GMT
-CMD ["sh"]
-# Fri, 17 Aug 2018 07:55:19 GMT
-RUN apk add --no-cache 		git 		openssh-client
-```
-
--	Layers:
-	-	`sha256:ee7d700abbf209aa401ef5d53f86af298a25e8154b3259036e9307d08f255c5d`  
-		Last Modified: Fri, 06 Jul 2018 07:53:45 GMT  
-		Size: 2.1 MB (2145998 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1653f4692c1ccea69cd46121d4f1371957f66e97a20141371dd4da10ebaec19`  
-		Last Modified: Fri, 06 Jul 2018 07:53:45 GMT  
-		Size: 175.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8914d45f1b2cabdf98026bbfec8b70ebb63e829a8ebde571f733abaad018de39`  
-		Last Modified: Fri, 17 Aug 2018 07:55:31 GMT  
-		Size: 309.1 KB (309072 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6579bc6b32fc36451455300d9a15571bf468bcfe7f8b52ddc36f24590628d2b`  
-		Last Modified: Fri, 17 Aug 2018 07:55:32 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf5d90f4098faa0c9da904eccab16e4541f04e46a6dd074c07ad32b0b4499d96`  
-		Last Modified: Fri, 17 Aug 2018 07:56:44 GMT  
-		Size: 44.3 MB (44318480 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95105d26892328ca082fd05b9fe110a5f6f367583c75f2d4659db9e2a64cb364`  
-		Last Modified: Fri, 17 Aug 2018 07:56:30 GMT  
-		Size: 550.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e727ee8216a42b5298f9cb62300156c639be25c5f39ca82ea27cf58fcb7b7b`  
-		Last Modified: Fri, 17 Aug 2018 07:56:29 GMT  
-		Size: 741.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1035b1f69f8fca186f55c101bcbd24ab22e678fad6e5d607b7f7a6e1ed027a4e`  
-		Last Modified: Fri, 17 Aug 2018 07:57:31 GMT  
-		Size: 8.2 MB (8181797 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `docker:git` - linux; arm64 variant v8
-
-```console
-$ docker pull docker@sha256:64cd81d74e6074ca25b5c95ffda0c629f7198ec0175563740b878cbb5b43df59
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.8 MB (52766275 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:471a9a9576c51ccd0d4b0d589cf6c9488d1f58e1e4350097b9e7dc2d5967a35e`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["sh"]`
-
-```dockerfile
-# Fri, 06 Jul 2018 08:41:03 GMT
-ADD file:199a5a48bddabaf1f649f58f3b17c323a1aa1a50e939dfdea3542e4041e91b7b in / 
-# Fri, 06 Jul 2018 08:41:03 GMT
-COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Fri, 06 Jul 2018 08:41:04 GMT
-CMD ["/bin/sh"]
-# Fri, 13 Jul 2018 08:41:59 GMT
-RUN apk add --no-cache 		ca-certificates
-# Fri, 13 Jul 2018 08:42:00 GMT
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 17 Aug 2018 08:41:39 GMT
-ENV DOCKER_CHANNEL=stable
-# Fri, 17 Aug 2018 08:41:40 GMT
-ENV DOCKER_VERSION=18.06.0-ce
-# Fri, 17 Aug 2018 08:41:51 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Fri, 17 Aug 2018 08:41:52 GMT
-COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
-# Fri, 17 Aug 2018 08:41:52 GMT
-COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Fri, 17 Aug 2018 08:41:53 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Aug 2018 08:41:54 GMT
-CMD ["sh"]
-# Fri, 17 Aug 2018 08:43:11 GMT
-RUN apk add --no-cache 		git 		openssh-client
-```
-
--	Layers:
-	-	`sha256:47e04371c99027fae42871b720fdc6cdddcb65062bfa05f0c3bb0a594cb5bbbd`  
-		Last Modified: Wed, 27 Jun 2018 19:15:35 GMT  
-		Size: 2.1 MB (2099514 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4103359e1ecd9a7253d8b8a041d4e81db1ff4a5e1950bc0e02305d221c9e6c2`  
-		Last Modified: Fri, 06 Jul 2018 08:42:09 GMT  
-		Size: 176.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdcf8e21e8f5edb742758a8dcd7868dc15b1b1ad2605c214d159d58216e7944a`  
-		Last Modified: Fri, 13 Jul 2018 08:52:12 GMT  
-		Size: 308.5 KB (308530 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38e221838d317e50636dd30af1175c5672e49c137b7163688ad18fd895860a23`  
-		Last Modified: Fri, 13 Jul 2018 08:52:12 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d5a154ae2c0a159da37a6503adbbedf0418c84cce85eb789fb1b2f1b9f74419`  
-		Last Modified: Fri, 17 Aug 2018 08:50:41 GMT  
-		Size: 42.4 MB (42437979 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04209c19ca84bd3ab70ac282091dcedd06d9c3a1fb6dc71ea38358e724800467`  
-		Last Modified: Fri, 17 Aug 2018 08:50:24 GMT  
-		Size: 548.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07707688181b1276152c5fa47e88f899b42b33614f1d3ed651d6dc3969c1ffe`  
-		Last Modified: Fri, 17 Aug 2018 08:50:24 GMT  
-		Size: 741.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1ca76443ba3e25f102c4370edfce82c24170fb9b84fbb174d612c531c51f6d`  
-		Last Modified: Fri, 17 Aug 2018 08:57:06 GMT  
-		Size: 7.9 MB (7918633 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `docker:git` - linux; ppc64le
-
-```console
-$ docker pull docker@sha256:9c3dd297093c36bd6d960b3d98fdf77d07b1c0a8961c7df1873c21e05dd3c214
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.9 MB (52938553 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43333cdf7fc35a0543b480dc5cb2edc9230f9dec3ff8f707964787fe2ea3bfe8`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["sh"]`
-
-```dockerfile
-# Fri, 06 Jul 2018 08:18:09 GMT
-ADD file:4ff20d593b16518d45b1b1d6efdab141199316dba7a53ce7459249f5de690dfd in / 
-# Fri, 06 Jul 2018 08:18:10 GMT
-COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Fri, 06 Jul 2018 08:18:11 GMT
-CMD ["/bin/sh"]
-# Fri, 13 Jul 2018 18:43:52 GMT
-RUN apk add --no-cache 		ca-certificates
-# Fri, 13 Jul 2018 18:43:56 GMT
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 17 Aug 2018 08:23:05 GMT
-ENV DOCKER_CHANNEL=stable
-# Fri, 17 Aug 2018 08:23:16 GMT
-ENV DOCKER_VERSION=18.06.0-ce
-# Fri, 17 Aug 2018 08:23:57 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Fri, 17 Aug 2018 08:24:00 GMT
-COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
-# Fri, 17 Aug 2018 08:24:05 GMT
-COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Fri, 17 Aug 2018 08:24:08 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Aug 2018 08:24:11 GMT
-CMD ["sh"]
-# Fri, 17 Aug 2018 08:27:05 GMT
-RUN apk add --no-cache 		git 		openssh-client
-```
-
--	Layers:
-	-	`sha256:e642bcb5b1890a07dd2fc8be2bc35edf5e2b651d4993e71caef03b4b43ace970`  
-		Last Modified: Fri, 06 Jul 2018 08:18:44 GMT  
-		Size: 2.2 MB (2194861 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e09410b1fce4c4630b3bc57c6ee158ee9821ec415d0acaa1607b9e0bcf76d91`  
-		Last Modified: Fri, 06 Jul 2018 08:18:43 GMT  
-		Size: 176.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ec6bd9d21e799a48d9d45adc8b1205b230ebc1c404f5e24819f7a163e930fae`  
-		Last Modified: Fri, 13 Jul 2018 18:48:55 GMT  
-		Size: 310.8 KB (310839 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72b93b2b95e568babbdef6769cccc48118c63c2cdbfabd9b4a3b15250ec64fc`  
-		Last Modified: Fri, 13 Jul 2018 18:48:54 GMT  
-		Size: 153.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5138551710ed50e6127ea6e8acbea4b269283db16c78b02605b615b4f889df6d`  
-		Last Modified: Fri, 17 Aug 2018 08:32:48 GMT  
-		Size: 42.0 MB (42031918 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28beb4cd41306987803d1a259ea5ff7aebc05ccb0475c27669b0ff2beff0f1ed`  
-		Last Modified: Fri, 17 Aug 2018 08:32:23 GMT  
-		Size: 549.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29d0e366fc4f9b80666b00a7b41a51f305d1ec4bbd1a74889e68d07c937f8c58`  
-		Last Modified: Fri, 17 Aug 2018 08:32:24 GMT  
-		Size: 742.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ec20a88e2cc692dfc386d6090d068b3e26480e745a8c0c614506e982c3b53d4`  
-		Last Modified: Fri, 17 Aug 2018 08:37:38 GMT  
-		Size: 8.4 MB (8399315 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `docker:git` - linux; s390x
-
-```console
-$ docker pull docker@sha256:3aa6959d4b179e596172f92c92440d0f4cf0ef8b6fb03dd880da6072c65a7ede
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56663040 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06f3febce18ea20bd4a655d19f0de982194b82d2e1adb16ba925ac5cfc747cd6`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["sh"]`
-
-```dockerfile
-# Fri, 06 Jul 2018 11:41:42 GMT
-ADD file:376dd7fc34ad39570d2e20f3704305e788ae613c589445b3e8fb880147c3eb59 in / 
-# Fri, 06 Jul 2018 11:41:43 GMT
-COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Fri, 06 Jul 2018 11:41:43 GMT
-CMD ["/bin/sh"]
-# Fri, 13 Jul 2018 11:41:31 GMT
-RUN apk add --no-cache 		ca-certificates
-# Fri, 13 Jul 2018 11:41:33 GMT
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 17 Aug 2018 11:43:08 GMT
-ENV DOCKER_CHANNEL=stable
-# Fri, 17 Aug 2018 11:43:08 GMT
-ENV DOCKER_VERSION=18.06.0-ce
-# Fri, 17 Aug 2018 11:43:13 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Fri, 17 Aug 2018 11:43:15 GMT
-COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
-# Fri, 17 Aug 2018 11:43:15 GMT
-COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Fri, 17 Aug 2018 11:43:15 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Aug 2018 11:43:15 GMT
-CMD ["sh"]
-# Fri, 17 Aug 2018 11:43:40 GMT
-RUN apk add --no-cache 		git 		openssh-client
-```
-
--	Layers:
-	-	`sha256:cdf21ace94188d512903eea53ea8559677e0e6ffd5d6a180a1d88c118abc96fc`  
-		Last Modified: Fri, 06 Jul 2018 11:42:01 GMT  
-		Size: 2.3 MB (2307471 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea178433f2f09080fbbf77f09da1b16d588b7ced380d495a2f2ad00d28468338`  
-		Last Modified: Fri, 06 Jul 2018 11:42:00 GMT  
-		Size: 175.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5eeb143e96d53824ae8400edeaff13b2f662c7b1eabb1ea3f35b13606a43844`  
-		Last Modified: Fri, 13 Jul 2018 11:46:08 GMT  
-		Size: 309.4 KB (309440 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4d9e1e34325661474352d946155c6b35e9706f2ab12465bc084d780a7c2bb27`  
-		Last Modified: Fri, 13 Jul 2018 11:46:07 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7caab55db7f600161d5fa5c68006ed69f4c0a2b99f885e2e7e5e8f3f255d6bc`  
-		Last Modified: Fri, 17 Aug 2018 11:45:39 GMT  
-		Size: 45.2 MB (45178212 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ece79bf3e29be2eb65a853c6050461cf41d63ce6c6e943f61970a3e24e27f8`  
-		Last Modified: Fri, 17 Aug 2018 11:45:28 GMT  
-		Size: 547.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9e14d4739c7ba31b1cbb7e39063891a2a2f47de8517f06a861bbd3f6b8af020`  
-		Last Modified: Fri, 17 Aug 2018 11:45:28 GMT  
-		Size: 741.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0655c49119d07cb72ad8e90f5d3b43b0d436ae9fc95cd5521ba0263b455c0624`  
-		Last Modified: Fri, 17 Aug 2018 11:47:16 GMT  
-		Size: 8.9 MB (8866300 bytes)  
+	-	`sha256:c5122fd3ffb9d9f5e8f30b97f230012eb77f9adf91ea491cb1bd8b85cb76a93c`  
+		Last Modified: Thu, 23 Aug 2018 01:51:30 GMT  
+		Size: 8.6 MB (8625252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
