@@ -217,19 +217,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.3/
 
-- https://sources.debian.net/src/apt/1.6.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20171227-0.1`
 
@@ -701,6 +695,10 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cryptsetup/2:2.0.3-6/
 
 
 ### `dpkg` source package: `cups=2.2.8-5`
@@ -1553,6 +1551,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.5.18-1/
+
 
 ### `dpkg` source package: `graphite2=1.3.11-2`
 
@@ -1739,6 +1741,10 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/harfbuzz/1.8.3-1/
 
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
@@ -2557,6 +2563,10 @@ Licenses: (parsed from: `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libglvnd/1.0.0+git20180308-3/
+
 
 ### `dpkg` source package: `libgpg-error=1.32-1`
 
@@ -2632,6 +2642,10 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libidn2/2.0.4-1.1/
 
 
 ### `dpkg` source package: `libidn=1.33-2.2`
@@ -3083,6 +3097,10 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libssh2/1.8.0-1/
 
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
@@ -4012,6 +4030,10 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/4.6.1-1/
+
 
 ### `dpkg` source package: `mesa=18.1.4-1`
 
@@ -4029,6 +4051,10 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mesa/18.1.4-1/
 
 
 ### `dpkg` source package: `mime-support=3.61`
@@ -4328,6 +4354,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssh/1:7.7p1-3/
+
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 
@@ -4419,6 +4449,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pam/1.1.8-3.7/
 
 
 ### `dpkg` source package: `pango1.0=1.42.1-2`
@@ -4575,6 +4609,10 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.26.2-6/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -4721,6 +4759,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.15-1/
 
 
 ### `dpkg` source package: `readline=7.0-5`
