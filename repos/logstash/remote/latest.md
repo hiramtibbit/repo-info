@@ -1,7 +1,7 @@
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:b251b684debe204a6f1bbf218f4b939155d156eebff9f7eb9934d6e5d157b950
+$ docker pull logstash@sha256:a52cca3b437c5c0317eb41b90a3edcb930e1f51b2ac7a4abb2977c7c9392cdc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull logstash@sha256:b251b684debe204a6f1bbf218f4b939155d156eebff9f7eb99
 ### `logstash:latest` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:4cb6a58e92be4295b43c515d42518e5ff0105b4edfedb9d5d7895d66e3bcb39c
+$ docker pull logstash@sha256:df0622833526a7729534b52c1cd3e483d9e4242aecc14dd35a6d0dc87f1f5353
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.4 MB (292448492 bytes)**  
+-	Total Size: **292.4 MB (292447475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7608f546016ffd2f7a9623fc9fce2cb4d89e1c15b86b07b6a78cffeafb943ee`
+-	Image ID: `sha256:7d05c52bdfa0fe5cbfa0439ee62d9e55ec53c1c5ddd09b96a7845d60a9c45f4c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -63,23 +63,23 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
 # Tue, 14 Aug 2018 22:25:18 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Tue, 14 Aug 2018 22:25:18 GMT
-ENV LOGSTASH_VERSION=5.6.10
-# Tue, 14 Aug 2018 22:25:18 GMT
-ENV LOGSTASH_DEB_VERSION=1:5.6.10-1
-# Tue, 14 Aug 2018 22:25:46 GMT
+# Fri, 24 Aug 2018 01:33:02 GMT
+ENV LOGSTASH_VERSION=5.6.11
+# Fri, 24 Aug 2018 01:33:02 GMT
+ENV LOGSTASH_DEB_VERSION=1:5.6.11-1
+# Fri, 24 Aug 2018 01:33:29 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Tue, 14 Aug 2018 22:25:53 GMT
+# Fri, 24 Aug 2018 01:33:31 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 14 Aug 2018 22:25:53 GMT
+# Fri, 24 Aug 2018 01:33:31 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Tue, 14 Aug 2018 22:25:54 GMT
+# Fri, 24 Aug 2018 01:33:32 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Tue, 14 Aug 2018 22:25:55 GMT
+# Fri, 24 Aug 2018 01:33:32 GMT
 COPY file:b540f903cdce9f3c92d22e6ec1673d5185797f0f604d4ddc9fdeb6fab1050a8f in / 
-# Tue, 14 Aug 2018 22:25:55 GMT
+# Fri, 24 Aug 2018 01:33:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 22:25:55 GMT
+# Fri, 24 Aug 2018 01:33:33 GMT
 CMD ["-e" ""]
 ```
 
@@ -136,15 +136,15 @@ CMD ["-e" ""]
 		Last Modified: Tue, 14 Aug 2018 22:28:11 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8ff9db3a16e623d4e9b20faff7add46ad180b04212386baafe1437106b879ee`  
-		Last Modified: Tue, 14 Aug 2018 22:28:37 GMT  
-		Size: 106.8 MB (106764381 bytes)  
+	-	`sha256:f948ac0f6afb656d3eb4ee1d56f4c000f031b02f26dd37c75384c50ffa266e54`  
+		Last Modified: Fri, 24 Aug 2018 01:35:41 GMT  
+		Size: 106.8 MB (106763368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3987a91d303be0da56b53a955106ef6422b103ba3eec41b8364b3c2045f33913`  
-		Last Modified: Tue, 14 Aug 2018 22:28:11 GMT  
-		Size: 2.7 KB (2665 bytes)  
+	-	`sha256:d5642f3e95f7c9fa350ff3337ce9b98dd31072820f8c38febecafabb2f24c87a`  
+		Last Modified: Fri, 24 Aug 2018 01:35:16 GMT  
+		Size: 2.7 KB (2662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a39e9748e5e0573d0879a6209394d5a00e874f1a0df3b782d31b313aaea0f11`  
-		Last Modified: Tue, 14 Aug 2018 22:28:11 GMT  
-		Size: 305.0 B  
+	-	`sha256:77b106ae66af65de9681b0c9f14fc6979991023f0e60a376ddfed7eabfa077eb`  
+		Last Modified: Fri, 24 Aug 2018 01:35:16 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
