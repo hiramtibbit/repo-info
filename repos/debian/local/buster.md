@@ -75,19 +75,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.dsc' apt_1.6.3.dsc 2743 SHA256:921ee8a5e8c522e7c7ea091f9d7fa0933f1e5a7b99fa3304f0b40787deea9996
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.3.tar.xz' apt_1.6.3.tar.xz 2138276 SHA256:8a1a67c9aa96824b92230e58c19943b334de6bb132a14ebc51302b3bbc6e68c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.3/
 
-- https://sources.debian.net/src/apt/1.6.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -327,20 +321,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-13.1
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-13.1.dsc' db5.3_5.3.28-13.1.dsc 3124 SHA256:8941edcad8e16fe6bc76ffcbe86dbdaadc654b5ed994654689cf5408602a84f3
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-13.1.debian.tar.xz' db5.3_5.3.28-13.1.debian.tar.xz 28180 SHA256:9e04b9269be51de4e73536584addc61e19b29e34f769e263c180228064c72ec9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28-13.1/
 
-- https://sources.debian.net/src/db5.3/5.3.28-13.1/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28-13.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28-13.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.67`
 
@@ -1254,20 +1241,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.3.4+dfsg-3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.dsc' libzstd_1.3.4+dfsg-3.dsc 2155 SHA256:638074a04c7fd50f94f23773fc677535fe3939c2d92f1e4204a8f88002edddae
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg.orig.tar.xz' libzstd_1.3.4+dfsg.orig.tar.xz 1525060 SHA256:891c88ddce6b9ba15ef44df405687de322b65de8ef12d660a3d36ed7319b415e
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.debian.tar.xz' libzstd_1.3.4+dfsg-3.debian.tar.xz 9880 SHA256:5b0eacffe7853f67edfddccb96a762b3f59412ff6e432691124f99aa4f2767dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/
 
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.2-1`
 
