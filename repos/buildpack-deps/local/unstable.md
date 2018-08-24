@@ -4458,20 +4458,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.6-1
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6-1.dsc' python3.6_3.6.6-1.dsc 3420 SHA256:9402b81eab34a44e8e94b66a278fc7a70be051679a93204f37fd49d7728f3bf5
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6.orig.tar.xz' python3.6_3.6.6.orig.tar.xz 17156744 SHA256:d79bc15d456e73a3173a2938f18a17e5149c850ebdedf84a78067f501ee6e16f
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.6-1.debian.tar.xz' python3.6_3.6.6-1.debian.tar.xz 206524 SHA256:d3ccbb278e8d4e2f0d0c900084e9e400ee4c924b45b73c0247f00faaa282f8fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.6/3.6.6-1/
 
-- https://sources.debian.net/src/python3.6/3.6.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
