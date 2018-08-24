@@ -1,10 +1,10 @@
-# `php:7.2.8-apache-stretch`
+# `php:7.2.9-apache-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e5a59788e3478bbe55f34be668abae4fe899a515a15f101ab8048f9379f8bea`
-- Created: `2018-07-21T07:52:59.996465348Z`
-- Virtual Size: ~ 377.34 Mb  
+- Image ID: `sha256:6a99292078a8221de4a0e7545c1624462b573a0921b3d2c8c1f30741cad4d25d`
+- Created: `2018-08-23T00:04:12.765689174Z`
+- Virtual Size: ~ 377.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.8`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.8.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.8.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=53ba0708be8a7db44256e3ae9fcecc91b811e5b5119e6080c951ffe7910ffb0f`
+  - `PHP_VERSION=7.2.9`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.9.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.9.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=3585c1222e00494efee4f5a65a8e03a1e6eca3dfb834814236ee7f02c5248ae0`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -199,30 +199,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `argon2=0~20160821-1`
+### `dpkg` source package: `argon2=0~20171227-0.1`
 
 Binary Packages:
 
-- `libargon2-0:amd64=0~20160821-1+b1`
+- `libargon2-1:amd64=0~20171227-0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libargon2-0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
 
+- `Apache-2.0`
 - `CC0`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris argon2=0~20160821-1
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.dsc' argon2_0~20160821-1.dsc 1985 SHA256:a930d20b8ed485a7907c9ebf9774e3f6e10b732c19b3e363f5ac236373ff1227
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821.orig.tar.gz' argon2_0~20160821.orig.tar.gz 1170019 SHA256:f81456ae31337a13a1a1b8ffe994d71ace741833a97a75f0c1a76259639bf3b8
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.debian.tar.xz' argon2_0~20160821-1.debian.tar.xz 5728 SHA256:062ab159a0bbc442e7a80c0c91a19d71b27aca17544635c348032e707f95f84e
+$ apt-get source -qq --print-uris argon2=0~20171227-0.1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/argon2/0~20160821-1/ (for browsing the source)
-- https://sources.debian.net/src/argon2/0~20160821-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/argon2/0~20160821-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
