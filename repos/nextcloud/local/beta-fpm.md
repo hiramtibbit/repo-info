@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cd58ea7182faef916ebd4bee183033e58dfb3ee147f4ed18977a744db26a478`
-- Created: `2018-08-21T19:23:07.382571524Z`
-- Virtual Size: ~ 551.97 Mb  
+- Image ID: `sha256:18b54ce2076c1302e5fd95349e18b982b891b4e078bdf0c5d4da625ba5305de7`
+- Created: `2018-08-23T05:44:20.389578684Z`
+- Virtual Size: ~ 551.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.8`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.8.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.8.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=53ba0708be8a7db44256e3ae9fcecc91b811e5b5119e6080c951ffe7910ffb0f`
+  - `PHP_VERSION=7.2.9`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.9.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.9.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=3585c1222e00494efee4f5a65a8e03a1e6eca3dfb834814236ee7f02c5248ae0`
   - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=14.0.0beta4`
 
@@ -103,30 +103,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `argon2=0~20160821-1`
+### `dpkg` source package: `argon2=0~20171227-0.1`
 
 Binary Packages:
 
-- `libargon2-0:amd64=0~20160821-1+b1`
+- `libargon2-1:amd64=0~20171227-0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libargon2-0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
 
+- `Apache-2.0`
 - `CC0`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris argon2=0~20160821-1
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.dsc' argon2_0~20160821-1.dsc 1985 SHA256:a930d20b8ed485a7907c9ebf9774e3f6e10b732c19b3e363f5ac236373ff1227
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821.orig.tar.gz' argon2_0~20160821.orig.tar.gz 1170019 SHA256:f81456ae31337a13a1a1b8ffe994d71ace741833a97a75f0c1a76259639bf3b8
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.debian.tar.xz' argon2_0~20160821-1.debian.tar.xz 5728 SHA256:062ab159a0bbc442e7a80c0c91a19d71b27aca17544635c348032e707f95f84e
+$ apt-get source -qq --print-uris argon2=0~20171227-0.1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/argon2/0~20160821-1/ (for browsing the source)
-- https://sources.debian.net/src/argon2/0~20160821-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/argon2/0~20160821-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -2456,11 +2457,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.9-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.10-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.9-0+deb9u1`
+- `libpq5:amd64=9.6.10-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2482,17 +2483,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.9-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9-0+deb9u1.dsc' postgresql-9.6_9.6.9-0+deb9u1.dsc 3694 SHA256:9019a96f9338377a5a7151031651f3fcf6420eaedf401748b826c5c1e4a4a3a3
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9.orig.tar.bz2' postgresql-9.6_9.6.9.orig.tar.bz2 19566222 SHA256:b97952e3af02dc1e446f9c4188ff53021cc0eed7ed96f254ae6daf968c443e2e
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.9-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.9-0+deb9u1.debian.tar.xz 23340 SHA256:a6f15d5e3d629550672de8583ca9bd01668cbb42830deb766222e529716f80df
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.10-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.9-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.9-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.9-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.10-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=0.16-2`
 
