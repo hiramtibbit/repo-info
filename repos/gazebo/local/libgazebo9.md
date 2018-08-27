@@ -5381,14 +5381,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-32.35
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-32.35.dsc' linux_4.15.0-32.35.dsc 7494 SHA256:529381df7ef5d35970bd8c7e488cd49512f743ac40b1e29b5c78873facedcac3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-32.35.diff.gz' linux_4.15.0-32.35.diff.gz 7764218 SHA256:de015152a52017ca725142ea5ec2e79b56c1961a13dc6f2fcfc8ff003aaa3a78
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2`
 

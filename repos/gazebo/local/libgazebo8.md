@@ -1024,14 +1024,9 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ffmpeg=7:2.8.14-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.14-0ubuntu0.16.04.1.dsc' ffmpeg_2.8.14-0ubuntu0.16.04.1.dsc 4861 SHA256:7610a54c14d5e9e43a101ec6b62715c54f5e5366eeda6d9f67d8acd0da8a18a5
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.14.orig.tar.xz' ffmpeg_2.8.14.orig.tar.xz 7222108 SHA256:ef061d9a6cdde8628d00613d17b467fb5ad75e7404ef523dc842e192c511a116
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.14-0ubuntu0.16.04.1.debian.tar.xz' ffmpeg_2.8.14-0ubuntu0.16.04.1.debian.tar.xz 44152 SHA256:f91ae66f88d0c012e6619c512979573bb3160a0469882bc1cbbeecd5b84737ef
-```
 
 ### `dpkg` source package: `file=1:5.25-2ubuntu1.1`
 
@@ -4359,14 +4354,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-133.159
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-133.159.dsc' linux_4.4.0-133.159.dsc 9712 SHA256:d622bb14abfbf098f2a42f6cb64c6b6f5ecb3c29c418dda3c507a8531b9428fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-133.159.diff.gz' linux_4.4.0-133.159.diff.gz 14688509 SHA256:1791cc5b3b3ee6a87b42b053ec38cdebb29f6e5f7d9ef657178bbea1d3e03920
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
