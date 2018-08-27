@@ -21,7 +21,7 @@
 ## `nuxeo:10`
 
 ```console
-$ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe51e85abea68a
+$ docker pull nuxeo@sha256:454bc9e4f4693e143b8437cba9cbd79471622b08e5dca6a8c05160d94b4be299
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31,14 +31,14 @@ $ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe5
 ### `nuxeo:10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:0d82270398f32578c538c2e0a5116e0c5627a6ed9625dbbc45530a2942b66952
+$ docker pull nuxeo@sha256:dc969fc30f81125f9845a8fbf8cfedeb2fbfbcc4278954a8e51b15fbc156e335
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1207587107 bytes)**  
+-	Total Size: **1.2 GB (1207587075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fd619d2d719dd33e9dbf3d3669dc68a0e5dd1c3342e35b729c476a07274725a`
+-	Image ID: `sha256:226ebf7b963417c94b8983778c0fb978fb0c9ed0b93826d8b43960e04026fd05`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -110,17 +110,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:50:45 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:50:45 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 USER [1000]
 ```
 
@@ -185,9 +185,9 @@ USER [1000]
 		Last Modified: Wed, 15 Aug 2018 00:01:25 GMT  
 		Size: 359.5 MB (359515407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ae96a1880d2ab1a81441580f884d007530d7ebfc5b33c17eb792d8b76151ea1`  
-		Last Modified: Wed, 15 Aug 2018 00:00:48 GMT  
-		Size: 1.1 KB (1054 bytes)  
+	-	`sha256:be26305e66f84cf123fb1a71b0afc4e5667cc609c9d1febe45809c6c1f45dd27`  
+		Last Modified: Mon, 27 Aug 2018 20:54:48 GMT  
+		Size: 1.0 KB (1022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:10.1`
@@ -365,7 +365,7 @@ USER [1000]
 ## `nuxeo:10.2`
 
 ```console
-$ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe51e85abea68a
+$ docker pull nuxeo@sha256:454bc9e4f4693e143b8437cba9cbd79471622b08e5dca6a8c05160d94b4be299
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -375,14 +375,14 @@ $ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe5
 ### `nuxeo:10.2` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:0d82270398f32578c538c2e0a5116e0c5627a6ed9625dbbc45530a2942b66952
+$ docker pull nuxeo@sha256:dc969fc30f81125f9845a8fbf8cfedeb2fbfbcc4278954a8e51b15fbc156e335
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1207587107 bytes)**  
+-	Total Size: **1.2 GB (1207587075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fd619d2d719dd33e9dbf3d3669dc68a0e5dd1c3342e35b729c476a07274725a`
+-	Image ID: `sha256:226ebf7b963417c94b8983778c0fb978fb0c9ed0b93826d8b43960e04026fd05`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -454,17 +454,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:50:45 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:50:45 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 USER [1000]
 ```
 
@@ -529,9 +529,9 @@ USER [1000]
 		Last Modified: Wed, 15 Aug 2018 00:01:25 GMT  
 		Size: 359.5 MB (359515407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ae96a1880d2ab1a81441580f884d007530d7ebfc5b33c17eb792d8b76151ea1`  
-		Last Modified: Wed, 15 Aug 2018 00:00:48 GMT  
-		Size: 1.1 KB (1054 bytes)  
+	-	`sha256:be26305e66f84cf123fb1a71b0afc4e5667cc609c9d1febe45809c6c1f45dd27`  
+		Last Modified: Mon, 27 Aug 2018 20:54:48 GMT  
+		Size: 1.0 KB (1022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:7`
@@ -1201,7 +1201,7 @@ USER [1000]
 ## `nuxeo:9`
 
 ```console
-$ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d4846e1b77ec2f2
+$ docker pull nuxeo@sha256:c22a536417a5e928994ebf07e312661a944eb28cb02610544df42645bdbfc0d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1211,14 +1211,14 @@ $ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d484
 ### `nuxeo:9` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:6fa5a12a687e97052137d308a623afaedb260344e6e9be0b7039ebc55297a770
+$ docker pull nuxeo@sha256:62ff90ef41a6931302b052fc9cb3826beb6ddc6734fac09312e87a49d87a7f91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1258880003 bytes)**  
+-	Total Size: **1.3 GB (1258879968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9906ce1fa3ee998f5488d125d5efb691939882bd63fc1c49bbc61c26dad6abe1`
+-	Image ID: `sha256:4bd8d39d61281b249b47ccc284c6a066208bc94ac193f74d2af0739877ca72f1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1290,17 +1290,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:47:17 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:47:18 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:08 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:47:36 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:47:37 GMT
+# Mon, 27 Aug 2018 20:52:10 GMT
 USER [1000]
 ```
 
@@ -1365,15 +1365,15 @@ USER [1000]
 		Last Modified: Tue, 14 Aug 2018 23:57:23 GMT  
 		Size: 385.2 MB (385161597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a835fc86ed0646fe74dc3cc93a3919d6cef23809daec0ec33311fcbd1914ed`  
-		Last Modified: Tue, 14 Aug 2018 23:56:46 GMT  
-		Size: 1.1 KB (1056 bytes)  
+	-	`sha256:2324de53832167d8fc61fc0212d9c74fcaffcf3d8af54f424fbd488afe9fd9aa`  
+		Last Modified: Mon, 27 Aug 2018 20:53:06 GMT  
+		Size: 1.0 KB (1021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9.10`
 
 ```console
-$ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d4846e1b77ec2f2
+$ docker pull nuxeo@sha256:c22a536417a5e928994ebf07e312661a944eb28cb02610544df42645bdbfc0d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1383,14 +1383,14 @@ $ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d484
 ### `nuxeo:9.10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:6fa5a12a687e97052137d308a623afaedb260344e6e9be0b7039ebc55297a770
+$ docker pull nuxeo@sha256:62ff90ef41a6931302b052fc9cb3826beb6ddc6734fac09312e87a49d87a7f91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1258880003 bytes)**  
+-	Total Size: **1.3 GB (1258879968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9906ce1fa3ee998f5488d125d5efb691939882bd63fc1c49bbc61c26dad6abe1`
+-	Image ID: `sha256:4bd8d39d61281b249b47ccc284c6a066208bc94ac193f74d2af0739877ca72f1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1462,17 +1462,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:47:17 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:47:18 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:08 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:47:36 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:47:37 GMT
+# Mon, 27 Aug 2018 20:52:10 GMT
 USER [1000]
 ```
 
@@ -1537,15 +1537,15 @@ USER [1000]
 		Last Modified: Tue, 14 Aug 2018 23:57:23 GMT  
 		Size: 385.2 MB (385161597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a835fc86ed0646fe74dc3cc93a3919d6cef23809daec0ec33311fcbd1914ed`  
-		Last Modified: Tue, 14 Aug 2018 23:56:46 GMT  
-		Size: 1.1 KB (1056 bytes)  
+	-	`sha256:2324de53832167d8fc61fc0212d9c74fcaffcf3d8af54f424fbd488afe9fd9aa`  
+		Last Modified: Mon, 27 Aug 2018 20:53:06 GMT  
+		Size: 1.0 KB (1021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe51e85abea68a
+$ docker pull nuxeo@sha256:454bc9e4f4693e143b8437cba9cbd79471622b08e5dca6a8c05160d94b4be299
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1555,14 +1555,14 @@ $ docker pull nuxeo@sha256:31d82c617c321996a12cf5c8a3d8b3a1a7eecf572dcfe9b08fbe5
 ### `nuxeo:FT` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:0d82270398f32578c538c2e0a5116e0c5627a6ed9625dbbc45530a2942b66952
+$ docker pull nuxeo@sha256:dc969fc30f81125f9845a8fbf8cfedeb2fbfbcc4278954a8e51b15fbc156e335
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1207587107 bytes)**  
+-	Total Size: **1.2 GB (1207587075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fd619d2d719dd33e9dbf3d3669dc68a0e5dd1c3342e35b729c476a07274725a`
+-	Image ID: `sha256:226ebf7b963417c94b8983778c0fb978fb0c9ed0b93826d8b43960e04026fd05`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1634,17 +1634,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:50:45 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:50:45 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:31 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:50:46 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:50:47 GMT
+# Mon, 27 Aug 2018 20:52:32 GMT
 USER [1000]
 ```
 
@@ -1709,9 +1709,9 @@ USER [1000]
 		Last Modified: Wed, 15 Aug 2018 00:01:25 GMT  
 		Size: 359.5 MB (359515407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ae96a1880d2ab1a81441580f884d007530d7ebfc5b33c17eb792d8b76151ea1`  
-		Last Modified: Wed, 15 Aug 2018 00:00:48 GMT  
-		Size: 1.1 KB (1054 bytes)  
+	-	`sha256:be26305e66f84cf123fb1a71b0afc4e5667cc609c9d1febe45809c6c1f45dd27`  
+		Last Modified: Mon, 27 Aug 2018 20:54:48 GMT  
+		Size: 1.0 KB (1022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:latest`
@@ -1889,7 +1889,7 @@ USER [1000]
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d4846e1b77ec2f2
+$ docker pull nuxeo@sha256:c22a536417a5e928994ebf07e312661a944eb28cb02610544df42645bdbfc0d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1899,14 +1899,14 @@ $ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d484
 ### `nuxeo:LTS` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:6fa5a12a687e97052137d308a623afaedb260344e6e9be0b7039ebc55297a770
+$ docker pull nuxeo@sha256:62ff90ef41a6931302b052fc9cb3826beb6ddc6734fac09312e87a49d87a7f91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1258880003 bytes)**  
+-	Total Size: **1.3 GB (1258879968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9906ce1fa3ee998f5488d125d5efb691939882bd63fc1c49bbc61c26dad6abe1`
+-	Image ID: `sha256:4bd8d39d61281b249b47ccc284c6a066208bc94ac193f74d2af0739877ca72f1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1978,17 +1978,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:47:17 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:47:18 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:08 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:47:36 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:47:37 GMT
+# Mon, 27 Aug 2018 20:52:10 GMT
 USER [1000]
 ```
 
@@ -2053,9 +2053,9 @@ USER [1000]
 		Last Modified: Tue, 14 Aug 2018 23:57:23 GMT  
 		Size: 385.2 MB (385161597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a835fc86ed0646fe74dc3cc93a3919d6cef23809daec0ec33311fcbd1914ed`  
-		Last Modified: Tue, 14 Aug 2018 23:56:46 GMT  
-		Size: 1.1 KB (1056 bytes)  
+	-	`sha256:2324de53832167d8fc61fc0212d9c74fcaffcf3d8af54f424fbd488afe9fd9aa`  
+		Last Modified: Mon, 27 Aug 2018 20:53:06 GMT  
+		Size: 1.0 KB (1021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2015`
@@ -2393,7 +2393,7 @@ USER [1000]
 ## `nuxeo:LTS-2017`
 
 ```console
-$ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d4846e1b77ec2f2
+$ docker pull nuxeo@sha256:c22a536417a5e928994ebf07e312661a944eb28cb02610544df42645bdbfc0d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2403,14 +2403,14 @@ $ docker pull nuxeo@sha256:901e2c06df6a079caeecae4f2fcdcd7c11d0f61a6166ec390d484
 ### `nuxeo:LTS-2017` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:6fa5a12a687e97052137d308a623afaedb260344e6e9be0b7039ebc55297a770
+$ docker pull nuxeo@sha256:62ff90ef41a6931302b052fc9cb3826beb6ddc6734fac09312e87a49d87a7f91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1258880003 bytes)**  
+-	Total Size: **1.3 GB (1258879968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9906ce1fa3ee998f5488d125d5efb691939882bd63fc1c49bbc61c26dad6abe1`
+-	Image ID: `sha256:4bd8d39d61281b249b47ccc284c6a066208bc94ac193f74d2af0739877ca72f1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -2482,17 +2482,17 @@ RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 10
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 14 Aug 2018 23:47:17 GMT
 WORKDIR /opt/nuxeo/server
-# Tue, 14 Aug 2018 23:47:18 GMT
-COPY file:749f7de88227793c0214c52f0deb9d353a9a98ccf05c06ddca1eaafa3fae3e51 in / 
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:08 GMT
+COPY file:b68c33898a1effa6e7ec54fb18544cb92f685f85aba3f75cfa01d1939dcc4680 in / 
+# Mon, 27 Aug 2018 20:52:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8080/tcp
-# Tue, 14 Aug 2018 23:47:18 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 EXPOSE 8787/tcp
-# Tue, 14 Aug 2018 23:47:36 GMT
+# Mon, 27 Aug 2018 20:52:09 GMT
 CMD ["nuxeoctl" "console"]
-# Tue, 14 Aug 2018 23:47:37 GMT
+# Mon, 27 Aug 2018 20:52:10 GMT
 USER [1000]
 ```
 
@@ -2557,7 +2557,7 @@ USER [1000]
 		Last Modified: Tue, 14 Aug 2018 23:57:23 GMT  
 		Size: 385.2 MB (385161597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a835fc86ed0646fe74dc3cc93a3919d6cef23809daec0ec33311fcbd1914ed`  
-		Last Modified: Tue, 14 Aug 2018 23:56:46 GMT  
-		Size: 1.1 KB (1056 bytes)  
+	-	`sha256:2324de53832167d8fc61fc0212d9c74fcaffcf3d8af54f424fbd488afe9fd9aa`  
+		Last Modified: Mon, 27 Aug 2018 20:53:06 GMT  
+		Size: 1.0 KB (1021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
