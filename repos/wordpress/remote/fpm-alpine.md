@@ -1,7 +1,7 @@
 ## `wordpress:fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:e16586e143da9bddf7dd89e07f3504b10f6f02f88a66593f13faa6ec8f73c09e
+$ docker pull wordpress@sha256:6881f0bd151557aa088ee01d40dc59a69c41fa7a9c0bec2dedf54c8d94d4d4db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -167,14 +167,14 @@ CMD ["php-fpm"]
 ### `wordpress:fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:34a8130139bfe21f0e5871a224e59be93a48a97e84b285a13ed49eb69712b2b9
+$ docker pull wordpress@sha256:f583e038a4a0f946ed85198cc00baca35a848b7acdb12f7e00b514d91645623f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.8 MB (42834474 bytes)**  
+-	Total Size: **42.8 MB (42834518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eaa870cfbd9287713cf53dd09bef8510b112560086c096d0711441404d4753a5`
+-	Image ID: `sha256:def3d3e47feab1c92d405c2044840911558699e0aa1a3a7264850b9dcb2cb69e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -245,11 +245,11 @@ ENV WORDPRESS_VERSION=4.9.8
 ENV WORDPRESS_SHA1=0945bab959cba127531dceb2c4fed81770812b4f
 # Thu, 23 Aug 2018 20:13:04 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Thu, 23 Aug 2018 20:13:05 GMT
-COPY file:04b4d07c9d3136edf9c8577ffa64ec7d4e58b496615794ad26aca90e715c5e49 in /usr/local/bin/ 
-# Thu, 23 Aug 2018 20:13:07 GMT
+# Tue, 28 Aug 2018 10:27:33 GMT
+COPY file:40bd880f26da3adad8bb436e27a3c64dd1d5db384e7909c06445f4df5abeb3df in /usr/local/bin/ 
+# Tue, 28 Aug 2018 10:27:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 23 Aug 2018 20:13:08 GMT
+# Tue, 28 Aug 2018 10:27:35 GMT
 CMD ["php-fpm"]
 ```
 
@@ -318,9 +318,9 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 23 Aug 2018 20:44:12 GMT  
 		Size: 8.6 MB (8605972 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e096c76340892dc661db56db89e6520aac27c9f9e84d62a95a35806375d44849`  
-		Last Modified: Thu, 23 Aug 2018 20:44:09 GMT  
-		Size: 3.4 KB (3407 bytes)  
+	-	`sha256:96062f7eb7a5462f31b6ac5949c525a39747e97fdd7d7de1e28502186b287147`  
+		Last Modified: Tue, 28 Aug 2018 11:11:58 GMT  
+		Size: 3.5 KB (3451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:fpm-alpine` - linux; 386
