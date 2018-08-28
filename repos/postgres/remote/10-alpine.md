@@ -1,7 +1,7 @@
 ## `postgres:10-alpine`
 
 ```console
-$ docker pull postgres@sha256:acee6adb9b53386448ce026122c5fa29916bf27b919cf8608c3ad4256906ad6f
+$ docker pull postgres@sha256:6001744681f2b9e041f0eae8789365f0296f37c41e5952fb23b771452a55cb00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -406,14 +406,14 @@ CMD ["postgres"]
 ### `postgres:10-alpine` - linux; ppc64le
 
 ```console
-$ docker pull postgres@sha256:a7dd2577142086b3bb0846881ac0f44692dc7d789bf004ef1dc398ca0fa66982
+$ docker pull postgres@sha256:b25ecbf0fce397f83338307976c896cad27060c6269c9253dcafcbae0653e388
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29151341 bytes)**  
+-	Total Size: **29.2 MB (29151366 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e10ca0489826380bd647e3290100a1bd39a0053c1cc29c873f65df577c88d5`
+-	Image ID: `sha256:812406d851f72392cd211d2e2a1dcaa5df46ca02e256d2290f5ab098371efe4f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -448,15 +448,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Sat, 11 Aug 2018 09:46:58 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 11 Aug 2018 09:47:00 GMT
-COPY file:ea83254240307acb41cff4ba67980cb25f52871869af6e6c49a729ba283f82ed in /usr/local/bin/ 
-# Sat, 11 Aug 2018 09:47:02 GMT
+# Tue, 28 Aug 2018 08:55:06 GMT
+COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
+# Tue, 28 Aug 2018 08:55:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Sat, 11 Aug 2018 09:47:04 GMT
+# Tue, 28 Aug 2018 08:55:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 11 Aug 2018 09:47:06 GMT
+# Tue, 28 Aug 2018 08:55:12 GMT
 EXPOSE 5432/tcp
-# Sat, 11 Aug 2018 09:47:07 GMT
+# Tue, 28 Aug 2018 08:55:13 GMT
 CMD ["postgres"]
 ```
 
@@ -493,13 +493,13 @@ CMD ["postgres"]
 		Last Modified: Sat, 11 Aug 2018 10:18:03 GMT  
 		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c447f3285a6ff327ac040a073aa3d2e323ebab8f617e7ab6f7b46eeca5d61ce`  
-		Last Modified: Sat, 11 Aug 2018 10:18:03 GMT  
-		Size: 2.2 KB (2230 bytes)  
+	-	`sha256:8b256ff24149f00074a0bb24e23d480d3688e6effe47071ad0ab43a753443502`  
+		Last Modified: Tue, 28 Aug 2018 08:59:40 GMT  
+		Size: 2.3 KB (2258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d347d85f86e1e6750af2c558a5cb39fde83b859cf015283bdb37489fb3169031`  
-		Last Modified: Sat, 11 Aug 2018 10:18:03 GMT  
-		Size: 121.0 B  
+	-	`sha256:eb960687416fb0d25e68da323b746bc50bae24b4a1da87f2f0850717feecebdd`  
+		Last Modified: Tue, 28 Aug 2018 08:59:40 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:10-alpine` - linux; s390x
