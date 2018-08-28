@@ -2995,14 +2995,9 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.8.dsc' libgd2_2.1.1-4ubuntu0.16.04.8.dsc 2332 SHA256:be59a38a63028dbd88c26c3b0ff4a4c3da51968efc2308467691c6275f0a4c19
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.8.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.8.debian.tar.xz 56956 SHA256:18057e5ee3dba1cc9411651064e0d5467f9ec831cf92b45a0395f1b9d94abc06
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2.1`
 
