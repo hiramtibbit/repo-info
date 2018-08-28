@@ -1,7 +1,7 @@
 ## `wordpress:php7.0-fpm`
 
 ```console
-$ docker pull wordpress@sha256:ac8cdf3ad9291b40234824ee188e9b56426b014b50560054587e01506c7ae67f
+$ docker pull wordpress@sha256:d21aba2ea159dff6ae601fa615b458f4ecb1a6cadda304a7b618771ecaefb007
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -440,14 +440,14 @@ CMD ["php-fpm"]
 ### `wordpress:php7.0-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:b975100bfa8ff64dbc35b9fa9f48d10a15ea6a4300b4e13631a8cdf39007714c
+$ docker pull wordpress@sha256:4dc064925725e6d01c87b2c5cc1aadea772d9d4f07518e2ae7951920f2c7aead
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.0 MB (125993659 bytes)**  
+-	Total Size: **126.0 MB (125993697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:723cfcca0c3631e8574c53a873a59c2cc41606de19235844ebed1e482996123c`
+-	Image ID: `sha256:ec07d479a8fca7e1909a417beed46d8ecef223a31b562b4fe58c54db21f3b7d2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -512,11 +512,11 @@ ENV WORDPRESS_VERSION=4.9.8
 ENV WORDPRESS_SHA1=0945bab959cba127531dceb2c4fed81770812b4f
 # Sat, 04 Aug 2018 10:19:33 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Wed, 15 Aug 2018 09:59:24 GMT
-COPY file:04b4d07c9d3136edf9c8577ffa64ec7d4e58b496615794ad26aca90e715c5e49 in /usr/local/bin/ 
-# Wed, 15 Aug 2018 09:59:25 GMT
+# Tue, 28 Aug 2018 10:21:18 GMT
+COPY file:40bd880f26da3adad8bb436e27a3c64dd1d5db384e7909c06445f4df5abeb3df in /usr/local/bin/ 
+# Tue, 28 Aug 2018 10:21:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 15 Aug 2018 09:59:26 GMT
+# Tue, 28 Aug 2018 10:21:20 GMT
 CMD ["php-fpm"]
 ```
 
@@ -573,9 +573,9 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 04 Aug 2018 10:32:27 GMT  
 		Size: 8.6 MB (8605677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c27acdecaac6a81cb94972428551af0ff1f7fc33c0bd229c631302006858e6b4`  
-		Last Modified: Wed, 15 Aug 2018 10:11:45 GMT  
-		Size: 3.4 KB (3418 bytes)  
+	-	`sha256:b7cfea6343c581e9b319da438dab022782af762adefc07c17c951881c5c4df60`  
+		Last Modified: Tue, 28 Aug 2018 10:48:08 GMT  
+		Size: 3.5 KB (3456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.0-fpm` - linux; 386
