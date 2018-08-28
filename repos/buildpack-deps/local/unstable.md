@@ -238,20 +238,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15.1-3.1
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-3.1.dsc' automake-1.15_1.15.1-3.1.dsc 2263 SHA256:696ed34ef72a7b445604d98b31248f5a79a6ec45a9a859b421ddeb09579e6226
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1.orig.tar.xz' automake-1.15_1.15.1.orig.tar.xz 1509496 SHA256:af6ba39142220687c500f79b4aa2f181d9b24e4f8d8ec497cea4ba26c64bedaf
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-3.1.debian.tar.xz' automake-1.15_1.15.1-3.1.debian.tar.xz 13832 SHA256:c66a9c15235f2a1386e95b4d005fa4179dcdd8052ef06ef64488ce4822b64b24
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake-1.15/1:1.15.1-3.1/
 
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-3.1/ (for browsing the source)
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake-1.15/1:1.15.1-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20180224.1`
 
@@ -2623,20 +2616,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.40.20-2
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20-2.dsc' librsvg_2.40.20-2.dsc 2731 SHA256:35b78a72b57dc406ce641efbca357476e2b67b8681951c9f0e7a6ec2f6808b37
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20.orig.tar.xz' librsvg_2.40.20.orig.tar.xz 1796376 SHA256:cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20-2.debian.tar.xz' librsvg_2.40.20-2.debian.tar.xz 16544 SHA256:40f1ff3c70b3bb3d107f5d9e37c4ee023c8cffd33bd2d65cebb0ebc245adda28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.40.20-2/
 
-- https://sources.debian.net/src/librsvg/2.40.20-2/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.40.20-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.40.20-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.3-3`
 
@@ -3275,20 +3261,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.3.4+dfsg-3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.dsc' libzstd_1.3.4+dfsg-3.dsc 2155 SHA256:638074a04c7fd50f94f23773fc677535fe3939c2d92f1e4204a8f88002edddae
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg.orig.tar.xz' libzstd_1.3.4+dfsg.orig.tar.xz 1525060 SHA256:891c88ddce6b9ba15ef44df405687de322b65de8ef12d660a3d36ed7319b415e
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.debian.tar.xz' libzstd_1.3.4+dfsg-3.debian.tar.xz 9880 SHA256:5b0eacffe7853f67edfddccb96a762b3f59412ff6e432691124f99aa4f2767dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/
 
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=4.17.6-2`
 
@@ -4026,20 +4005,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.1-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1-2.dsc' pango1.0_1.42.1-2.dsc 3266 SHA256:bc1eca182e2c489324a05ac446efe54c4ecb79614b0742aabf6dc4e0203acb33
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1.orig.tar.xz' pango1.0_1.42.1.orig.tar.xz 840920 SHA256:095d69a7a4a801b8e8bbbdcb0e3e85eed1371233889046a5aea8a67626099af3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1-2.debian.tar.xz' pango1.0_1.42.1-2.debian.tar.xz 30156 SHA256:806bdae7e4a014d344ed2defaf4964af6ef0722f9df2bc5eac7e69b008b3372d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.42.1-2/
 
-- https://sources.debian.net/src/pango1.0/1.42.1-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-2`
 

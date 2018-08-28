@@ -180,14 +180,13 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.6-8.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1.dsc' bzip2_1.0.6-8.1.dsc 2082 SHA256:d80deed11a1419ad090cb486dd2335850fd8719b809c32002dea04b485f55dbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1.debian.tar.bz2' bzip2_1.0.6-8.1.debian.tar.bz2 59875 SHA256:bdbe7bf29e014e44d79bb7c733fe63cae990ab50882a4a07867cf69c61ad72b7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/bzip2/1.0.6-8.1/
+
 
 ### `dpkg` source package: `ca-certificates=20180409`
 
@@ -263,14 +262,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.60.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.60.0-2ubuntu1.dsc' curl_7.60.0-2ubuntu1.dsc 2806 SHA256:4c512e2baf021b9d35d35c6c447f8cb27b6b6c9f466f2cdf14a6672fd4fc7bb4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.60.0.orig.tar.gz' curl_7.60.0.orig.tar.gz 3949173 SHA256:e9c37986337743f37fd14fe8737f246e97aec94b39d1b71e8a5973f72a9fc4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.60.0-2ubuntu1.debian.tar.xz' curl_7.60.0-2ubuntu1.debian.tar.xz 32508 SHA256:11d769b646018c3b2140211d25a066facbc0df910fdbfef37af8be5fc73d7c2f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -689,13 +683,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.51
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.51.dsc' init-system-helpers_1.51.dsc 1963 SHA256:82f0e30fef2ad14c65f9c7d8ccafd43549451041fdf661dca28b963a6cef02e4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.51.tar.xz' init-system-helpers_1.51.tar.xz 37468 SHA256:e18b28efe8df087146d9c1e4e9c25386ee1b7312f518d48a2a38469a6c661be0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/init-system-helpers/1.51/
+
 
 ### `dpkg` source package: `keyutils=1.5.9-9.3`
 
@@ -951,14 +945,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.8-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.8-1.dsc' libselinux_2.8-1.dsc 2347 SHA256:0f08d64f4488312a8e8b7ffb12771cd385560752473a2e585449edc27223c129
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.8.orig.tar.gz' libselinux_2.8.orig.tar.gz 187759 SHA256:31db96ec7643ce10912b3c3f98506a08a9116dcfe151855fd349c3fda96187e1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.8-1.debian.tar.xz' libselinux_2.8-1.debian.tar.xz 23052 SHA256:a0b150e870a3da7e1d7b0fec7c1a5ae6988a0985e545c69cfe8fe05363c5bf64
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/2.8-1/
+
 
 ### `dpkg` source package: `libsemanage=2.8-1build1`
 
@@ -1396,15 +1389,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.2-6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-6.dsc' perl_5.26.2-6.dsc 2776 SHA256:8441ca46715247218cbc19cabd15126f4fbacd544b6ce6446ea7b2ba2541f16a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-6.debian.tar.xz' perl_5.26.2-6.debian.tar.xz 167332 SHA256:6b3a39b03e80498d7e0d02c544aa24d4d9fdfc4afd85a91375aa2685d882d178
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.26.2-6/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-1build2`
 
@@ -1597,14 +1588,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.dsc' systemd_237-3ubuntu10.dsc 4981 SHA256:39a15b24ccc61849480ab6079905381d666c4d5cac32d12330272a87b2492ff4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.debian.tar.xz' systemd_237-3ubuntu10.debian.tar.xz 168288 SHA256:10f3add01b6af3ed154a1e2668e6fb15570034ac3f2bee859ea98127d57828cd
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
