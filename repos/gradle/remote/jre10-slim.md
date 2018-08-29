@@ -1,16 +1,109 @@
 ## `gradle:jre10-slim`
 
 ```console
-$ docker pull gradle@sha256:ef7720b3b7fc55406e6af027a2ea1a2cf28d0b6fe748460bb2c937e15df27e11
+$ docker pull gradle@sha256:60886e02ff7456592d10d0a36bd0e1438286e93c982a8a0405359d1c39e4144a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
+	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
+
+### `gradle:jre10-slim` - linux; amd64
+
+```console
+$ docker pull gradle@sha256:d7767302e52f105dc1e2e5ee4b7fd782962efdd3d3c16f7280c1b08240878238
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **183.7 MB (183698854 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22f677bcc355ec97b512715618e87bd4603118c1a753fb8e60a348073dbbfaeb`
+-	Default Command: `["gradle"]`
+
+```dockerfile
+# Tue, 17 Jul 2018 00:25:12 GMT
+ADD file:f91110c5482cb29a759356df06fea755606755e05306ca55f921f44a5b9470fb in / 
+# Tue, 17 Jul 2018 00:25:12 GMT
+CMD ["bash"]
+# Tue, 17 Jul 2018 06:09:53 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 17 Jul 2018 06:09:54 GMT
+ENV LANG=C.UTF-8
+# Tue, 17 Jul 2018 06:09:55 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Tue, 17 Jul 2018 06:14:14 GMT
+RUN ln -svT "/usr/lib/jvm/java-10-openjdk-$(dpkg --print-architecture)" /docker-java-home
+# Tue, 17 Jul 2018 06:14:14 GMT
+ENV JAVA_HOME=/docker-java-home
+# Sat, 21 Jul 2018 07:49:52 GMT
+ENV JAVA_VERSION=10.0.2+13
+# Sat, 21 Jul 2018 07:49:52 GMT
+ENV JAVA_DEBIAN_VERSION=10.0.2+13-1
+# Sat, 21 Jul 2018 07:52:29 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-10-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Wed, 29 Aug 2018 15:40:33 GMT
+CMD ["gradle"]
+# Wed, 29 Aug 2018 15:40:33 GMT
+ENV GRADLE_HOME=/opt/gradle
+# Wed, 29 Aug 2018 15:40:33 GMT
+ENV GRADLE_VERSION=4.10
+# Wed, 29 Aug 2018 15:40:45 GMT
+RUN apt-get update && 	apt-get install -y --no-install-recommends 		unzip 		wget && 	rm -rf /var/lib/apt/lists/*
+# Wed, 29 Aug 2018 15:40:45 GMT
+ARG GRADLE_DOWNLOAD_SHA256=248cfd92104ce12c5431ddb8309cf713fe58de8e330c63176543320022f59f18
+# Wed, 29 Aug 2018 15:40:51 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=248cfd92104ce12c5431ddb8309cf713fe58de8e330c63176543320022f59f18
+RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle 		&& echo "Symlinking root Gradle cache to gradle Gradle cache" 	&& ln -s /home/gradle/.gradle /root/.gradle
+# Wed, 29 Aug 2018 15:40:52 GMT
+USER [gradle]
+# Wed, 29 Aug 2018 15:40:52 GMT
+VOLUME [/home/gradle/.gradle]
+# Wed, 29 Aug 2018 15:40:52 GMT
+WORKDIR /home/gradle
+# Wed, 29 Aug 2018 15:41:01 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=248cfd92104ce12c5431ddb8309cf713fe58de8e330c63176543320022f59f18
+RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
+```
+
+-	Layers:
+	-	`sha256:21c77be511c9830e11f7da7f8796340d6103e5b1e4124bb1639947aa0f11c19e`  
+		Last Modified: Tue, 17 Jul 2018 00:40:27 GMT  
+		Size: 26.2 MB (26153708 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c9a9bc4c131a474462e235e575844d60055d3904745b1cd7e9bcb0bbd1ed82b7`  
+		Last Modified: Tue, 17 Jul 2018 06:33:28 GMT  
+		Size: 460.1 KB (460144 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a85403034af41f2da36b479c531eb04f843b0af4715e65ee84a91e1fbb5f1bf9`  
+		Last Modified: Tue, 17 Jul 2018 06:33:27 GMT  
+		Size: 237.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aab55a95cbe8505bad8207b291a71574247d047b00b7b0256d27cd342623b79`  
+		Last Modified: Tue, 17 Jul 2018 06:45:47 GMT  
+		Size: 131.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:758cbdfbf3382630dd9093b6418a2042878ccec1596d1fe8cbddffb0e5075454`  
+		Last Modified: Sat, 21 Jul 2018 08:20:38 GMT  
+		Size: 78.1 MB (78084541 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4669ceff5b25daa9d9e9dc36cb06b2292aa43079a33aa3575eccbcbf87c9b66`  
+		Last Modified: Wed, 29 Aug 2018 15:50:06 GMT  
+		Size: 611.2 KB (611196 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f9156870a036df1ed56b9411324a89795813369bce27c9d7cfba45da4484c8e`  
+		Last Modified: Wed, 29 Aug 2018 15:50:16 GMT  
+		Size: 78.4 MB (78388758 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec7809e0477ca9bd4991f64426b7adbd50716834b0c7b06dc1cc238e494d4a02`  
+		Last Modified: Wed, 29 Aug 2018 15:50:03 GMT  
+		Size: 139.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre10-slim` - linux; arm variant v5
 
