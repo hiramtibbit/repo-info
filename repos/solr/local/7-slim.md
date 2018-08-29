@@ -1733,20 +1733,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13-2
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.dsc' libxcb_1.13-2.dsc 5329 SHA256:1dc813a0b2fbcb3323e869e84cf52181ccd9fb7dbe08a44e9080b5e814f6e3e1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.diff.gz' libxcb_1.13-2.diff.gz 25222 SHA256:3b1215da593c65c95ce2a9cc1c3dc786b31d99985d676d9958ad2094192e706f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcb/1.13-2/
 
-- https://sources.debian.net/src/libxcb/1.13-2/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -1887,20 +1880,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.3.4+dfsg-3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.dsc' libzstd_1.3.4+dfsg-3.dsc 2155 SHA256:638074a04c7fd50f94f23773fc677535fe3939c2d92f1e4204a8f88002edddae
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg.orig.tar.xz' libzstd_1.3.4+dfsg.orig.tar.xz 1525060 SHA256:891c88ddce6b9ba15ef44df405687de322b65de8ef12d660a3d36ed7319b415e
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.debian.tar.xz' libzstd_1.3.4+dfsg-3.debian.tar.xz 9880 SHA256:5b0eacffe7853f67edfddccb96a762b3f59412ff6e432691124f99aa4f2767dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/
 
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 
