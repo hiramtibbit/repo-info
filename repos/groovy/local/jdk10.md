@@ -1645,20 +1645,13 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 - `LGPL-2`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.32-2
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.32-2.dsc' gtk+2.0_2.24.32-2.dsc 3662 SHA256:ba4d6a78681823f71c9c62635e7abddd7429a77dbc53f07be4d1f34821367eac
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.32.orig.tar.xz' gtk+2.0_2.24.32.orig.tar.xz 12620860 SHA256:b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.32-2.debian.tar.xz' gtk+2.0_2.24.32-2.debian.tar.xz 89224 SHA256:d4a448d44e27ce10b32d97010ef1a2f6338537ab578ddcf6c054cdbd3775f80a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+2.0/2.24.32-2/
 
-- https://sources.debian.net/src/gtk+2.0/2.24.32-2/ (for browsing the source)
-- https://sources.debian.net/src/gtk+2.0/2.24.32-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+2.0/2.24.32-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gtk+3.0=3.22.30-2`
 
@@ -1868,20 +1861,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.17.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0-2.dsc' iproute2_4.17.0-2.dsc 1882 SHA256:55e9cd67b8ed8da224a141f65c563f388ef8e1e9cebaa51a9265e1ad2b0ddbe2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0.orig.tar.xz' iproute2_4.17.0.orig.tar.xz 675268 SHA256:6fa991b092315887775b9e47dc6a89af7ae09dd3ad4ccff754d055c566b4be6e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0-2.debian.tar.xz' iproute2_4.17.0-2.debian.tar.xz 141960 SHA256:39473a50cb5f37bddb4eac0349488cde9b373975a5e5a60f9363eb30079b1049
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.17.0-2/
 
-- https://sources.debian.net/src/iproute2/4.17.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.17.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.17.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.6.2-1`
 
@@ -2843,20 +2829,13 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/l
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.40.20-2
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20-2.dsc' librsvg_2.40.20-2.dsc 2731 SHA256:35b78a72b57dc406ce641efbca357476e2b67b8681951c9f0e7a6ec2f6808b37
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20.orig.tar.xz' librsvg_2.40.20.orig.tar.xz 1796376 SHA256:cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.40.20-2.debian.tar.xz' librsvg_2.40.20-2.debian.tar.xz 16544 SHA256:40f1ff3c70b3bb3d107f5d9e37c4ee023c8cffd33bd2d65cebb0ebc245adda28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.40.20-2/
 
-- https://sources.debian.net/src/librsvg/2.40.20-2/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.40.20-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.40.20-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.3-3`
 
@@ -3222,20 +3201,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13-2
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.dsc' libxcb_1.13-2.dsc 5329 SHA256:1dc813a0b2fbcb3323e869e84cf52181ccd9fb7dbe08a44e9080b5e814f6e3e1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-2.diff.gz' libxcb_1.13-2.diff.gz 25222 SHA256:3b1215da593c65c95ce2a9cc1c3dc786b31d99985d676d9958ad2094192e706f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcb/1.13-2/
 
-- https://sources.debian.net/src/libxcb/1.13-2/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcomposite=1:0.4.4-2`
 
@@ -3753,20 +3725,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.3.4+dfsg-3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.dsc' libzstd_1.3.4+dfsg-3.dsc 2155 SHA256:638074a04c7fd50f94f23773fc677535fe3939c2d92f1e4204a8f88002edddae
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg.orig.tar.xz' libzstd_1.3.4+dfsg.orig.tar.xz 1525060 SHA256:891c88ddce6b9ba15ef44df405687de322b65de8ef12d660a3d36ed7319b415e
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.4+dfsg-3.debian.tar.xz' libzstd_1.3.4+dfsg-3.debian.tar.xz 9880 SHA256:5b0eacffe7853f67edfddccb96a762b3f59412ff6e432691124f99aa4f2767dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/
 
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.4+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.4+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0.1-2`
 
@@ -4382,20 +4347,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.1-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1-2.dsc' pango1.0_1.42.1-2.dsc 3266 SHA256:bc1eca182e2c489324a05ac446efe54c4ecb79614b0742aabf6dc4e0203acb33
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1.orig.tar.xz' pango1.0_1.42.1.orig.tar.xz 840920 SHA256:095d69a7a4a801b8e8bbbdcb0e3e85eed1371233889046a5aea8a67626099af3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.1-2.debian.tar.xz' pango1.0_1.42.1-2.debian.tar.xz 30156 SHA256:806bdae7e4a014d344ed2defaf4964af6ef0722f9df2bc5eac7e69b008b3372d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.42.1-2/
 
-- https://sources.debian.net/src/pango1.0/1.42.1-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.31-3`
 
