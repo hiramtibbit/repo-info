@@ -204,14 +204,9 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15.1-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake-1.15/automake-1.15_1.15.1-3ubuntu2.dsc' automake-1.15_1.15.1-3ubuntu2.dsc 2663 SHA256:406f9f2118936675f458d18fcb7aeb707428ba0fffb074c21e8083834a5e95ff
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake-1.15/automake-1.15_1.15.1.orig.tar.xz' automake-1.15_1.15.1.orig.tar.xz 1509496 SHA256:af6ba39142220687c500f79b4aa2f181d9b24e4f8d8ec497cea4ba26c64bedaf
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake-1.15/automake-1.15_1.15.1-3ubuntu2.debian.tar.xz' automake-1.15_1.15.1-3ubuntu2.debian.tar.xz 14580 SHA256:d84981f19bcf179aaeb1a471329c28332aae3fa22062b840bbc700032a556e0b
-```
 
 ### `dpkg` source package: `autotools-dev=20180224.1`
 
@@ -542,14 +537,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-13.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.1ubuntu1.dsc' db5.3_5.3.28-13.1ubuntu1.dsc 3113 SHA256:af89bf00a4732155c8cf253cbadf6e0e0738d747eb08641f8432ec831d06fc94
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.1ubuntu1.debian.tar.xz' db5.3_5.3.28-13.1ubuntu1.debian.tar.xz 28560 SHA256:17b85931297dd02cfa775b94324f8ab611115d8da983828746b30e34ea06fb28
-```
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -644,13 +634,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu3.dsc' dpkg_1.19.0.5ubuntu3.dsc 2128 SHA256:a9c03180630cf3b391ded2af70162fedfdf288f7349cb03c2bc2346bd101314e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu3.tar.xz' dpkg_1.19.0.5ubuntu3.tar.xz 4570820 SHA256:73a6a51d7e830add4ba23af4e8f2928e030ac468988c84aa62e0e0e134b929af
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.3-1`
 
@@ -1076,14 +1062,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.57.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.57.2-1.dsc' glib2.0_2.57.2-1.dsc 3261 SHA256:86b4624cbd4d85853cb0cf9d3ca50405b3f10f057e7975e1b920c4b3d6d12082
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.57.2.orig.tar.xz' glib2.0_2.57.2.orig.tar.xz 4883340 SHA256:e19f795baabb52651ddea90bb5dc8f696939e15290c3cb7cfa684d4e1628c1a8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.57.2-1.debian.tar.xz' glib2.0_2.57.2-1.debian.tar.xz 77428 SHA256:92e7212a4eddfc1611217f62ef2b138227df93fae448abd422cb20bce014bb02
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.57.2-1/
+
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1216,14 +1201,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.57.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.57.2-2.dsc' gobject-introspection_1.57.2-2.dsc 2899 SHA256:0cdad9be2082ae0c39b104541db143123221515be5e3c16e172e000773c4bd25
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.57.2.orig.tar.xz' gobject-introspection_1.57.2.orig.tar.xz 1391488 SHA256:be566d1b32ef0cfc449765da10baa907dc8c072fdaad3bd1d105e777e3192bf3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.57.2-2.debian.tar.xz' gobject-introspection_1.57.2-2.debian.tar.xz 20804 SHA256:30a9c12cc412f43ba2d9b04e2babd1927282e91b19b624c442e0729e92e82758
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.57.2-2/
+
 
 ### `dpkg` source package: `graphite2=1.3.11-2`
 
@@ -1496,14 +1480,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.2+dfsg-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg-3ubuntu2.dsc' imagemagick_6.9.10.2+dfsg-3ubuntu2.dsc 5170 SHA256:85fce031abbd31aa9e69acc9ff2a058faf335f86bcdbb14edb08ea24c5b27112
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg.orig.tar.xz' imagemagick_6.9.10.2+dfsg.orig.tar.xz 9054712 SHA256:69cdaefff8c0a9e4aa3a90ae051f9f2b0e7245e804597ed7dfe04b08e784f858
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.10.2+dfsg-3ubuntu2.debian.tar.xz' imagemagick_6.9.10.2+dfsg-3ubuntu2.debian.tar.xz 223348 SHA256:03521eee8902b781659172c7aca9a8a90b60711808f4c8b75545bde91d6cc763
-```
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 
@@ -2639,14 +2618,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.17.0-7.8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0-7.8.dsc' linux_4.17.0-7.8.dsc 7424 SHA256:ade0df94b1ef534fd01c491d1ca8d3f65ace8bd2a1159dcc620cb892f91c3998
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0.orig.tar.gz' linux_4.17.0.orig.tar.gz 157716315 SHA256:482e5141e63fb6413fc90a9c46dcc408b9b44011fca609c4988cb904143e93b5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0-7.8.diff.gz' linux_4.17.0-7.8.diff.gz 6797470 SHA256:da7692f83166d383c2e7fba8d60c9bb6a10073006fa36d4ab8dca609f644e4e0
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
