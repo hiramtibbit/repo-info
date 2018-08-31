@@ -1,10 +1,10 @@
-# `wordpress:cli-2.0.0-php7.0`
+# `wordpress:cli-2.0.1-php7.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0034dc1572b7cbde4a0dd5708b606d5f24ce18c252945f791bdf2f1d4a98eefd`
-- Created: `2018-08-10T22:14:33.880996885Z`
-- Virtual Size: ~ 106.95 Mb  
+- Image ID: `sha256:365b390f3806d0e6fa9ab50d30073a74fd8358b0ce793c9c4a28fe9903d898fd`
+- Created: `2018-08-29T16:04:22.717505206Z`
+- Virtual Size: ~ 107.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,5 +23,5 @@
   - `PHP_SHA256=68f57b3f4587071fb54a620cb83a1cfb3f0bd4ee071e0ce3bf7046a5f2d2f3cf`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.0.0`
-  - `WORDPRESS_CLI_SHA512=18c15c792a0747e434f70fb74f8d82dbc6dc504bd6238a4928859430129f12d88d829a1f37203c30813eb5f4d2c69f4e40aa15c74d9c6f01343052f01842463b`
+  - `WORDPRESS_CLI_VERSION=2.0.1`
+  - `WORDPRESS_CLI_SHA512=21b9c1d65993f88bf81cc73c0a832532cc424bea8c15563a77af1905d0dc4714f2af679dfadedd3b683f3968902b4b6be4c6cf94285da9f5582b30c1dac5397f`
