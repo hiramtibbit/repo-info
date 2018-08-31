@@ -1296,20 +1296,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.56.1-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.dsc' glib-networking_2.56.1-1.dsc 2510 SHA256:a9745dd553ab8309033b19ea79b412a6b2645660c6e7fd2bcced11e5bde89435
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1.orig.tar.xz' glib-networking_2.56.1.orig.tar.xz 164852 SHA256:df47b0e0a037d2dcf6b1846cbdf68dd4b3cc055e026bb40c4a55f19f29f635c8
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.debian.tar.xz' glib-networking_2.56.1-1.debian.tar.xz 8008 SHA256:dce08753760c71317115d8f833634a5ea7b974712b669e3c533c734a0b3ac84e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.56.1-1/
 
-- https://sources.debian.net/src/glib-networking/2.56.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.56.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.56.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.56.1-2`
 
@@ -1422,21 +1415,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.8-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.dsc' gnupg2_2.2.8-3.dsc 3129 SHA256:0b2cd9156396ce8fe0749fd8398ecc56d50fcb7ed6eeb2f36ffb4255a644ab3f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2' gnupg2_2.2.8.orig.tar.bz2 6632465 SHA256:777b4cb8ced21965a5053d4fa20fe11484f0a478f3d011cef508a1a49db50dcd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2.asc' gnupg2_2.2.8.orig.tar.bz2.asc 534 SHA256:332f4d315f692544c980b2ec6a71b2f481c4825b046aa65d05dbedee64a5c02f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.debian.tar.bz2' gnupg2_2.2.8-3.debian.tar.bz2 69755 SHA256:17e1a226b6a9d8a8308d79d2cb7af8067ae508ced02ba1cf7a16270c054e818d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.8-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.8-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
@@ -1793,20 +1778,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.17.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0-2.dsc' iproute2_4.17.0-2.dsc 1882 SHA256:55e9cd67b8ed8da224a141f65c563f388ef8e1e9cebaa51a9265e1ad2b0ddbe2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0.orig.tar.xz' iproute2_4.17.0.orig.tar.xz 675268 SHA256:6fa991b092315887775b9e47dc6a89af7ae09dd3ad4ccff754d055c566b4be6e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.17.0-2.debian.tar.xz' iproute2_4.17.0-2.debian.tar.xz 141960 SHA256:39473a50cb5f37bddb4eac0349488cde9b373975a5e5a60f9363eb30079b1049
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.17.0-2/
 
-- https://sources.debian.net/src/iproute2/4.17.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.17.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.17.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.6.2-1`
 
@@ -2322,20 +2300,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.93-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.93-1.dsc' libdrm_2.4.93-1.dsc 2999 SHA256:84656d62d0a76242baf7cfa6d6656426d7a5d95fb7d8e84914833cc777de58df
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.93.orig.tar.gz' libdrm_2.4.93.orig.tar.gz 1116159 SHA256:bc67b2503106155c239c4e455b6718ef1b31675ea51f544c785c0e3295712861
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.93-1.diff.gz' libdrm_2.4.93-1.diff.gz 50358 SHA256:ab7ab1ec5bcefc241f34fb9dcbb819d382499dbffff0e50cc7287c56335008cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.93-1/
 
-- https://sources.debian.net/src/libdrm/2.4.93-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.93-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.93-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20180525-1`
 
@@ -3438,20 +3409,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxkbcommon=0.8.0-2
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.dsc' libxkbcommon_0.8.0-2.dsc 2396 SHA256:5d2fc85d7043a37d703e3fc91348aa50f942b10913f42c09e0f5cc50c112264f
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0.orig.tar.gz' libxkbcommon_0.8.0.orig.tar.gz 584451 SHA256:7a22796dbf6e0d5ef7cfde686b8a503aba60e153ba07b405a9a8eadd47f60a07
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.diff.gz' libxkbcommon_0.8.0-2.diff.gz 28918 SHA256:080b790edd8c2baf34405383dfdd7f3545af82251ade61a5cb188de19a4035e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/
 
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxml2=2.9.4+dfsg1-7`
 
@@ -3940,20 +3904,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.6-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.6-1.dsc' mesa_18.1.6-1.dsc 4884 SHA256:ec976c854adb2c05830066656b6a89be761eeef26891b0999d31be24b5e34656
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.6.orig.tar.gz' mesa_18.1.6.orig.tar.gz 18891793 SHA256:580e03328ffefe1fd43b19ab7669f20d931601a1c0a4c0f8b9c65d6e81a06df3
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.6-1.diff.gz' mesa_18.1.6-1.diff.gz 95001 SHA256:a6b345776c59b3af3aaa573b6e7f07eca7402a39bed90e31b5a8fd8e78d1db09
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.6-1/
 
-- https://sources.debian.net/src/mesa/18.1.6-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180210-4`
 
@@ -4317,20 +4274,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.4-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-1.dsc' pango1.0_1.42.4-1.dsc 3234 SHA256:47ea52c86a4b18937405011ad74d2d040e3ada694d999b06565f9e9be6a1bfcc
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-1.debian.tar.xz' pango1.0_1.42.4-1.debian.tar.xz 29368 SHA256:d809d076867969761b5db5a31fec1665085d3a3db38eb090878664e762fc16af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.42.4-1/
 
-- https://sources.debian.net/src/pango1.0/1.42.4-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
