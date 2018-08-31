@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f42a31b08f798f99da413b0059b0d739c5716433acdaeb7162ba82a5d10f357a`
-- Created: `2018-08-13T23:03:51.906827547Z`
+- Image ID: `sha256:e6a0964a07154c7d8a7cd07d262da2d2ffe84828a9b53692de7b5c3395b3bfb4`
+- Created: `2018-08-29T22:17:46.569897014Z`
 - Virtual Size: ~ 440.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2144,11 +2144,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcomposite/1:0.4.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcomposite/1:0.4.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcursor=1:1.1.14-1+deb8u1`
+### `dpkg` source package: `libxcursor=1:1.1.14-1+deb8u2`
 
 Binary Packages:
 
-- `libxcursor1:amd64=1:1.1.14-1+deb8u1`
+- `libxcursor1:amd64=1:1.1.14-1+deb8u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2157,17 +2157,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcursor=1:1.1.14-1+deb8u1
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.14-1+deb8u1.dsc' libxcursor_1.1.14-1+deb8u1.dsc 2489 SHA256:7af9f2b539d1fca5fda58ad45597cb748a3bfc60ac40e979264d99354ceefea3
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.14.orig.tar.gz' libxcursor_1.1.14.orig.tar.gz 374910 SHA256:be0954faf274969ffa6d95b9606b9c0cfee28c13b6fc014f15606a0c8b05c17b
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.14-1+deb8u1.diff.gz' libxcursor_1.1.14-1+deb8u1.diff.gz 19303 SHA256:eaeb821b3d4eab91585687533da6bfec45e1195e7f6cf984ced43b221cc4296d
+$ apt-get source -qq --print-uris libxcursor=1:1.1.14-1+deb8u2
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxcursor/libxcursor_1.1.14-1+deb8u2.dsc' libxcursor_1.1.14-1+deb8u2.dsc 2334 SHA256:6254d854b9bfbf522a49e0b8f9c5213e58e83d8f27677cc24518b586673de8ff
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxcursor/libxcursor_1.1.14.orig.tar.gz' libxcursor_1.1.14.orig.tar.gz 374910 SHA256:be0954faf274969ffa6d95b9606b9c0cfee28c13b6fc014f15606a0c8b05c17b
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxcursor/libxcursor_1.1.14-1+deb8u2.diff.gz' libxcursor_1.1.14-1+deb8u2.diff.gz 19797 SHA256:d9238239b35374e4fb433999698d524b7eded95edca46ec248bb369b677920fb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcursor/1:1.1.14-1+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/libxcursor/1:1.1.14-1+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcursor/1:1.1.14-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcursor/1:1.1.14-1+deb8u2/ (for browsing the source)
+- https://sources.debian.net/src/libxcursor/1:1.1.14-1+deb8u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcursor/1:1.1.14-1+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdamage=1:1.1.4-2`
 
