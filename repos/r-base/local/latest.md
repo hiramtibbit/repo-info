@@ -1193,15 +1193,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.8-3
-'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.dsc' gnupg2_2.2.8-3.dsc 3129 SHA256:0b2cd9156396ce8fe0749fd8398ecc56d50fcb7ed6eeb2f36ffb4255a644ab3f
-'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2' gnupg2_2.2.8.orig.tar.bz2 6632465 SHA256:777b4cb8ced21965a5053d4fa20fe11484f0a478f3d011cef508a1a49db50dcd
-'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2.asc' gnupg2_2.2.8.orig.tar.bz2.asc 534 SHA256:332f4d315f692544c980b2ec6a71b2f481c4825b046aa65d05dbedee64a5c02f
-'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.debian.tar.bz2' gnupg2_2.2.8-3.debian.tar.bz2 69755 SHA256:17e1a226b6a9d8a8308d79d2cb7af8067ae508ced02ba1cf7a16270c054e818d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnupg2/2.2.8-3/
+
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
@@ -2704,20 +2702,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.3-1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.3-1.dsc' littler_0.3.3-1.dsc 1696 SHA256:7856bca969f1be0cd56e8deb285d83a53f212a0f12835502472f103657e04ea6
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.3.orig.tar.gz' littler_0.3.3.orig.tar.gz 422170 SHA256:a78324f259370a644ab4aa07891477726a6fa079e6219cd6488d7ee748b57ab1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.3-1.diff.gz' littler_0.3.3-1.diff.gz 4474 SHA256:fa52d6a9e2dd80195de2a6bcb9a7d99b5be2640d8e30628a4d31c5f0c5fb175f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/littler/0.3.3-1/
 
-- https://sources.debian.net/src/littler/0.3.3-1/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 
