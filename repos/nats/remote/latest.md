@@ -1,13 +1,14 @@
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:cedc6bbde451072fd163f8d7076c0c881417488f13460390c72a38ca6ae33fa9
+$ docker pull nats@sha256:5e99caf7ca7b2e4a242e741328bde393bbd7a529a2cfdd19b84870da87ad6ca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	windows version 10.0.14393.2430; amd64
 
@@ -83,6 +84,43 @@ CMD ["-c" "gnatsd.conf"]
 	-	`sha256:df871aaa7657f720a6fba2814f184aee8406b7433dd4f92c6a372a46ca1131a4`  
 		Last Modified: Sat, 01 Sep 2018 08:02:06 GMT  
 		Size: 478.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `nats:latest` - linux; arm variant v7
+
+```console
+$ docker pull nats@sha256:8dadd3af659b8e423eef8fa230b13689e2d707dada19dde8df70181fadf00638
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2855832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5c9e955b545a4b29c330f2209888122d6c7b0cf5d7ab9fe2d2a2763b86f30924`
+-	Entrypoint: `["\/gnatsd"]`
+-	Default Command: `["-c","gnatsd.conf"]`
+
+```dockerfile
+# Sat, 01 Sep 2018 12:01:28 GMT
+COPY file:7b255c840fdfa2ad78b472dd50bd56edde21fbfac7c69c841cb727bc583e5761 in /gnatsd 
+# Sat, 01 Sep 2018 12:01:29 GMT
+COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in gnatsd.conf 
+# Sat, 01 Sep 2018 12:01:29 GMT
+EXPOSE 4222/tcp 6222/tcp 8222/tcp
+# Sat, 01 Sep 2018 12:01:30 GMT
+ENTRYPOINT ["/gnatsd"]
+# Sat, 01 Sep 2018 12:01:30 GMT
+CMD ["-c" "gnatsd.conf"]
+```
+
+-	Layers:
+	-	`sha256:f8897a9c74d9812d44ab7ba54c52990e75a39d75a4e2891fcfe53dd279ddcc0d`  
+		Last Modified: Sat, 01 Sep 2018 12:01:46 GMT  
+		Size: 2.9 MB (2855355 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6e1ba7784eab45dd8281d59a67981e289d9db7ea01dfd4b12a4858cc72e14c1`  
+		Last Modified: Sat, 01 Sep 2018 12:01:46 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats:latest` - linux; arm64 variant v8
