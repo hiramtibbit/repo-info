@@ -1313,20 +1313,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.56.1-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.dsc' glib-networking_2.56.1-1.dsc 2510 SHA256:a9745dd553ab8309033b19ea79b412a6b2645660c6e7fd2bcced11e5bde89435
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1.orig.tar.xz' glib-networking_2.56.1.orig.tar.xz 164852 SHA256:df47b0e0a037d2dcf6b1846cbdf68dd4b3cc055e026bb40c4a55f19f29f635c8
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.debian.tar.xz' glib-networking_2.56.1-1.debian.tar.xz 8008 SHA256:dce08753760c71317115d8f833634a5ea7b974712b669e3c533c734a0b3ac84e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.56.1-1/
 
-- https://sources.debian.net/src/glib-networking/2.56.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.56.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.56.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.56.1-2`
 
@@ -1464,21 +1457,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.9-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.dsc' gnupg2_2.2.9-1.dsc 3132 SHA256:e7b992ba2cc60447d12adaa462eae250b2e9f2412032b7877f363e6d312a01cd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2' gnupg2_2.2.9.orig.tar.bz2 6659547 SHA256:6278eaabffa1ebc9fa2ceb3dc53eea9a1505ab02a668a86dd6fec06951af2164
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2.asc' gnupg2_2.2.9.orig.tar.bz2.asc 1068 SHA256:cf693b7c512a1a7b7385d6d99e85e08ca8cbf4a623aa96cbe717b5a7f48f4dda
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.debian.tar.bz2' gnupg2_2.2.9-1.debian.tar.bz2 66642 SHA256:61ecb3aceb4173eefca05324d7ff6afb73700af2abc55bc2085509163a5fdae4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.9-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.9-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
@@ -3412,20 +3397,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxkbcommon=0.8.0-2
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.dsc' libxkbcommon_0.8.0-2.dsc 2396 SHA256:5d2fc85d7043a37d703e3fc91348aa50f942b10913f42c09e0f5cc50c112264f
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0.orig.tar.gz' libxkbcommon_0.8.0.orig.tar.gz 584451 SHA256:7a22796dbf6e0d5ef7cfde686b8a503aba60e153ba07b405a9a8eadd47f60a07
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.diff.gz' libxkbcommon_0.8.0-2.diff.gz 28918 SHA256:080b790edd8c2baf34405383dfdd7f3545af82251ade61a5cb188de19a4035e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/
 
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxml2=2.9.4+dfsg1-7`
 
@@ -4054,20 +4032,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.32.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0-1.dsc' nghttp2_1.32.0-1.dsc 2278 SHA256:8b4743acd51dd5609082d5e1f8f4a8dd744e11084858d5467e59b5460cabd126
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0.orig.tar.bz2' nghttp2_1.32.0.orig.tar.bz2 1841198 SHA256:0660816fa83494471d7bff3c556d5a7c2ff07fb6ffa6b2d06bdbdb45ee6a964a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0-1.debian.tar.xz' nghttp2_1.32.0-1.debian.tar.xz 12444 SHA256:e4ce3e1115fb20b57d98e9dd1a6cdf25b5c0927d5cd27d1eb27538fad5a8b5d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.32.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.32.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.32.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.32.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-4`
 

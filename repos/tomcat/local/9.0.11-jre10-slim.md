@@ -940,21 +940,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.9-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.dsc' gnupg2_2.2.9-1.dsc 3132 SHA256:e7b992ba2cc60447d12adaa462eae250b2e9f2412032b7877f363e6d312a01cd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2' gnupg2_2.2.9.orig.tar.bz2 6659547 SHA256:6278eaabffa1ebc9fa2ceb3dc53eea9a1505ab02a668a86dd6fec06951af2164
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9.orig.tar.bz2.asc' gnupg2_2.2.9.orig.tar.bz2.asc 1068 SHA256:cf693b7c512a1a7b7385d6d99e85e08ca8cbf4a623aa96cbe717b5a7f48f4dda
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.9-1.debian.tar.bz2' gnupg2_2.2.9-1.debian.tar.bz2 66642 SHA256:61ecb3aceb4173eefca05324d7ff6afb73700af2abc55bc2085509163a5fdae4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.9-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.9-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
