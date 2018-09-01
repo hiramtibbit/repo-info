@@ -1281,20 +1281,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.56.1-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.dsc' glib-networking_2.56.1-1.dsc 2510 SHA256:a9745dd553ab8309033b19ea79b412a6b2645660c6e7fd2bcced11e5bde89435
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1.orig.tar.xz' glib-networking_2.56.1.orig.tar.xz 164852 SHA256:df47b0e0a037d2dcf6b1846cbdf68dd4b3cc055e026bb40c4a55f19f29f635c8
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.56.1-1.debian.tar.xz' glib-networking_2.56.1-1.debian.tar.xz 8008 SHA256:dce08753760c71317115d8f833634a5ea7b974712b669e3c533c734a0b3ac84e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.56.1-1/
 
-- https://sources.debian.net/src/glib-networking/2.56.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.56.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.56.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.56.1-2`
 
@@ -1407,21 +1400,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.8-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.dsc' gnupg2_2.2.8-3.dsc 3129 SHA256:0b2cd9156396ce8fe0749fd8398ecc56d50fcb7ed6eeb2f36ffb4255a644ab3f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2' gnupg2_2.2.8.orig.tar.bz2 6632465 SHA256:777b4cb8ced21965a5053d4fa20fe11484f0a478f3d011cef508a1a49db50dcd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8.orig.tar.bz2.asc' gnupg2_2.2.8.orig.tar.bz2.asc 534 SHA256:332f4d315f692544c980b2ec6a71b2f481c4825b046aa65d05dbedee64a5c02f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.8-3.debian.tar.bz2' gnupg2_2.2.8-3.debian.tar.bz2 69755 SHA256:17e1a226b6a9d8a8308d79d2cb7af8067ae508ced02ba1cf7a16270c054e818d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.8-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.8-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.18-1`
 
@@ -3355,20 +3340,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxkbcommon=0.8.0-2
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.dsc' libxkbcommon_0.8.0-2.dsc 2396 SHA256:5d2fc85d7043a37d703e3fc91348aa50f942b10913f42c09e0f5cc50c112264f
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0.orig.tar.gz' libxkbcommon_0.8.0.orig.tar.gz 584451 SHA256:7a22796dbf6e0d5ef7cfde686b8a503aba60e153ba07b405a9a8eadd47f60a07
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.8.0-2.diff.gz' libxkbcommon_0.8.0-2.diff.gz 28918 SHA256:080b790edd8c2baf34405383dfdd7f3545af82251ade61a5cb188de19a4035e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/
 
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libxkbcommon/0.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxkbcommon/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxml2=2.9.4+dfsg1-7`
 
