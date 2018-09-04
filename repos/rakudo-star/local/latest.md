@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb1f901820855de24294651c7d53f07ad60a7580714e392d1be0896f7346af1c`
-- Created: `2018-08-08T14:46:13.026035415Z`
-- Virtual Size: ~ 350.20 Mb  
+- Image ID: `sha256:a543f1358e3fdf424c335c8a02a7b922dcf241bbad33d5de79925a387ca0adf2`
+- Created: `2018-09-03T18:31:45.989835282Z`
+- Virtual Size: ~ 350.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
