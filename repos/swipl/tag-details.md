@@ -208,7 +208,7 @@ CMD ["swipl"]
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:e82134c2471a96a0bb3f4e0f44a91ad0f8b9988e2738181b4e98b26f59437b7f
+$ docker pull swipl@sha256:a982842881bdd9652503908b5252aa85274c577fd0913f2782efe2afea600b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -220,45 +220,45 @@ $ docker pull swipl@sha256:e82134c2471a96a0bb3f4e0f44a91ad0f8b9988e2738181b4e98b
 ### `swipl:latest` - linux; amd64
 
 ```console
-$ docker pull swipl@sha256:8b0c4df406a4bd0089b2c8264859a325b1a257a7bb79423a8c312d8d237a3ee1
+$ docker pull swipl@sha256:09d8540a07dd71ce32e1d56f7994b06ef58da7a30b147fa1b612fcfe5781b3a3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56300370 bytes)**  
+-	Total Size: **56.3 MB (56300279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:589dab2b8dc8f24f283beaadca6a9f0ea7ec928af7003e78c39111525654d368`
+-	Image ID: `sha256:3c0db5e53dc6a10d284d5b9e234aaad723aca4c3215afd94d583885be0eee466`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Tue, 17 Jul 2018 00:28:04 GMT
-ADD file:919939fa022472751b717443eea9f1d7ab5c0723f1f3a6b776d3b83d22bde818 in / 
-# Tue, 17 Jul 2018 00:28:04 GMT
+# Tue, 04 Sep 2018 21:21:34 GMT
+ADD file:e6ca98733431f75e97eb09758ba64065d213d51bd2070a95cf15f2ff5adccfc4 in / 
+# Tue, 04 Sep 2018 21:21:34 GMT
 CMD ["bash"]
-# Fri, 31 Aug 2018 17:20:00 GMT
+# Tue, 04 Sep 2018 22:55:12 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
-# Fri, 31 Aug 2018 17:20:24 GMT
+# Tue, 04 Sep 2018 22:55:31 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends     libarchive13     libgmp10     libossp-uuid16     libssl1.1     ca-certificates     libdb5.3     libpcre3     libedit2     libgeos-c1v5     libspatialindex4v5     unixodbc     odbc-postgresql     tdsodbc     libmariadbclient18     libsqlite3-0     libserd-0-0     libraptor2-0 &&     dpkgArch="$(dpkg --print-architecture)" &&     { [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || apt-get install -y --no-install-recommends librocksdb4.5; } &&     rm -rf /var/lib/apt/lists/*
-# Fri, 31 Aug 2018 17:25:44 GMT
+# Tue, 04 Sep 2018 22:59:37 GMT
 RUN set -eux;     SWIPL_VER=7.7.19;     SWIPL_CHECKSUM=a7820510afd89c2d7cad977ff455841350e7163f8c532d25ce94e70336564a82;     BUILD_DEPS='make gcc g++ wget git autoconf libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev unixodbc-dev libsqlite3-dev libserd-dev libraptor2-dev libgeos++-dev libspatialindex-dev';     dpkgArch="$(dpkg --print-architecture)";     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || BUILD_DEPS="$BUILD_DEPS librocksdb-dev";     apt-get update; apt-get install -y --no-install-recommends $BUILD_DEPS; rm -rf /var/lib/apt/lists/*;     mkdir /tmp/src;     cd /tmp/src;     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz;     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM;     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM;     tar -xzf swipl-$SWIPL_VER.tar.gz;     cd swipl-$SWIPL_VER;     sed -e '/PREFIX=$HOME/c\PREFIX=/usr'         -e '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"'         -e 's/# *\(EXTRA.*--disable-libdirversion\)/\1/'            build.templ > build;     chmod u+x build; ./build;     mkdir -p /usr/lib/swipl/pack;     cd /usr/lib/swipl/pack;     rm -rf /tmp/src;     install_addin () {         git clone "$2" "$1";         git -C "$1" checkout -q "$3";         if [ "$1" = 'space' ]; then (cd "$1"; ln -s configure.ac configure.in); fi;         if [ "$1" = 'prosqlite' ]; then rm -rf "$1/lib"; fi;         swipl -g "pack_rebuild($1)" -t halt;         find "$1" -mindepth 1 -maxdepth 1 ! -name lib ! -name prolog ! -name pack.pl -exec rm -rf {} +;         find "$1" -name .git -exec rm -rf {} +;     };     dpkgArch="$(dpkg --print-architecture)";     install_addin space https://github.com/JanWielemaker/space.git cd6fefa63317a7a6effb61a1c5aee634ebe2ca05;     install_addin prosqlite https://github.com/nicos-angelopoulos/prosqlite.git 816cb2e45a5fb53290a763a3306e430b72c40794;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || install_addin rocksdb https://github.com/JanWielemaker/rocksdb.git 93f29d8f298d73de5719b93516acc73e00610eed;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] ||  install_addin hdt https://github.com/JanWielemaker/hdt.git e0a0eff87fc3318434cb493690c570e1255ed30e;     install_addin rserve_client https://github.com/JanWielemaker/rserve_client.git 72838bbfa3976a83d19fb38bdae04378e30f4b0d;     apt-get purge -y --auto-remove $BUILD_DEPS
-# Fri, 31 Aug 2018 17:25:44 GMT
+# Tue, 04 Sep 2018 22:59:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 31 Aug 2018 17:25:45 GMT
+# Tue, 04 Sep 2018 22:59:37 GMT
 CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:be8881be8156e4068e611fe956aba2b9593ebd953be14fb7feea6d0659aa3abe`  
-		Last Modified: Tue, 17 Jul 2018 00:44:17 GMT  
-		Size: 22.5 MB (22485906 bytes)  
+	-	`sha256:802b00ed6f79f48e6a5f44ecbcaf43563d6077aaecb565eee1dfc615c0b18c00`  
+		Last Modified: Tue, 04 Sep 2018 21:25:45 GMT  
+		Size: 22.5 MB (22485965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd4029315b0addc39ec306acfbb093a1c2602570cacd0c69e7835a203ffc341d`  
-		Last Modified: Fri, 31 Aug 2018 17:31:35 GMT  
-		Size: 26.2 MB (26227016 bytes)  
+	-	`sha256:23df70b488f325d049d5287a1b1f83e3e14bcab144dc3d1d1102d8fa3c480160`  
+		Last Modified: Tue, 04 Sep 2018 23:04:28 GMT  
+		Size: 26.2 MB (26226848 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4227407519b26fbf7dcc8372717a3ee72b477623f0a5c5197d0ff2a0f4e6ed5`  
-		Last Modified: Fri, 31 Aug 2018 17:31:32 GMT  
-		Size: 7.6 MB (7587448 bytes)  
+	-	`sha256:f9ea36428236aff14837e1e99191296a08852c5b2d8b72c3fc45a51ed990341a`  
+		Last Modified: Tue, 04 Sep 2018 23:04:22 GMT  
+		Size: 7.6 MB (7587466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `swipl:latest` - linux; arm variant v7
