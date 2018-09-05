@@ -4054,20 +4054,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.32.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0-1.dsc' nghttp2_1.32.0-1.dsc 2278 SHA256:8b4743acd51dd5609082d5e1f8f4a8dd744e11084858d5467e59b5460cabd126
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0.orig.tar.bz2' nghttp2_1.32.0.orig.tar.bz2 1841198 SHA256:0660816fa83494471d7bff3c556d5a7c2ff07fb6ffa6b2d06bdbdb45ee6a964a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.0-1.debian.tar.xz' nghttp2_1.32.0-1.debian.tar.xz 12444 SHA256:e4ce3e1115fb20b57d98e9dd1a6cdf25b5c0927d5cd27d1eb27538fad5a8b5d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.32.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.32.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.32.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.32.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.19-3`
 
