@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62a653ea4337120d053abdba9edfb44d6f4e239de51c58da34de59e3c607c713`
-- Created: `2018-07-31T17:39:04.408623808Z`
+- Image ID: `sha256:225b3567391753ab88a1c62d40a37c7b77fb82a33c9a089fdce22e81bd6c6f31`
+- Created: `2018-09-05T15:58:15.063181939Z`
 - Virtual Size: ~ 221.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1896,13 +1896,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libvorbis/1.3.4-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libvorbis/1.3.4-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libx11=2:1.6.2-3+deb8u1`
+### `dpkg` source package: `libx11=2:1.6.2-3+deb8u2`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.2-3+deb8u1`
-- `libx11-data=2:1.6.2-3+deb8u1`
-- `libx11-xcb1:amd64=2:1.6.2-3+deb8u1`
+- `libx11-6:amd64=2:1.6.2-3+deb8u2`
+- `libx11-data=2:1.6.2-3+deb8u2`
+- `libx11-xcb1:amd64=2:1.6.2-3+deb8u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1911,17 +1911,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2-3+deb8u1.dsc' libx11_1.6.2-3+deb8u1.dsc 2537 SHA256:5297502cf817e4558ad008ecbaa17733237fc48a1e8abafacce977fe308e4e82
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2.orig.tar.gz' libx11_1.6.2.orig.tar.gz 3119924 SHA256:b93739bcd517723121f508bcaf0c213c1bae9c5eacffdca571ff0d86c30ead3e
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2-3+deb8u1.diff.gz' libx11_1.6.2-3+deb8u1.diff.gz 74206 SHA256:57bef4ad21dc20583c23d2861295b42170ff3bd75f2b5793bc07880bc1dafea0
+$ apt-get source -qq --print-uris libx11=2:1.6.2-3+deb8u2
+'http://security.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.2-3+deb8u2.dsc' libx11_1.6.2-3+deb8u2.dsc 2688 SHA256:2a1f803b76d186b025d6c66172e2e6865cc5b65c7f03a0cdcece166f7cfdcfa6
+'http://security.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.2.orig.tar.gz' libx11_1.6.2.orig.tar.gz 3119924 SHA256:b93739bcd517723121f508bcaf0c213c1bae9c5eacffdca571ff0d86c30ead3e
+'http://security.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.2-3+deb8u2.diff.gz' libx11_1.6.2-3+deb8u2.diff.gz 75641 SHA256:04a564142214edc6e3f0817eccb1c6f6263c882731b6c1d1eeddf57de7ed55c2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libx11/2:1.6.2-3+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.6.2-3+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.6.2-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libx11/2:1.6.2-3+deb8u2/ (for browsing the source)
+- https://sources.debian.net/src/libx11/2:1.6.2-3+deb8u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libx11/2:1.6.2-3+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
 
