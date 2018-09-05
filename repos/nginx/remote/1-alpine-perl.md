@@ -1,7 +1,7 @@
 ## `nginx:1-alpine-perl`
 
 ```console
-$ docker pull nginx@sha256:89ccce6fff2b6e4eae201859710d6a7eebb85fe3d33dac4d1230dddd22df4990
+$ docker pull nginx@sha256:9db2984e07f2e71677e41f2e6e334821fc92108d664b252b4a2d24842d9a504a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull nginx@sha256:89ccce6fff2b6e4eae201859710d6a7eebb85fe3d33dac4d1230d
 ### `nginx:1-alpine-perl` - linux; amd64
 
 ```console
-$ docker pull nginx@sha256:623b0d4b903fadc5f34b11ab42e2fc4be46f9846fd5d3f63abff4c565a9f5d29
+$ docker pull nginx@sha256:c02dd4f1fef0e9fd7f5c7362d064bcb06104967e8b612edae0e7fa6831530470
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17564230 bytes)**  
+-	Total Size: **17.6 MB (17564232 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ac3da521472a3d4f4e7db467d285ce99927a3329bb08c437d032ba6af4a2d89`
+-	Image ID: `sha256:a3949fc5b8a5244f2f11a5b873b4f868d1d619c6ec0b91a32c1bcddfe6d18fb3`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
@@ -31,21 +31,21 @@ $ docker pull nginx@sha256:623b0d4b903fadc5f34b11ab42e2fc4be46f9846fd5d3f63abff4
 ADD file:6ee19b92d5cb1bf143947fe2e2481cb3b353d42e1e54888a8ba48c03dd4155f2 in / 
 # Fri, 06 Jul 2018 14:13:45 GMT
 CMD ["/bin/sh"]
-# Wed, 29 Aug 2018 15:31:34 GMT
+# Wed, 05 Sep 2018 00:57:31 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Wed, 29 Aug 2018 15:31:35 GMT
+# Wed, 05 Sep 2018 00:57:31 GMT
 ENV NGINX_VERSION=1.15.3
-# Wed, 29 Aug 2018 15:38:17 GMT
+# Wed, 05 Sep 2018 00:59:48 GMT
 RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 	&& CONFIG="		--prefix=/etc/nginx 		--sbin-path=/usr/sbin/nginx 		--modules-path=/usr/lib/nginx/modules 		--conf-path=/etc/nginx/nginx.conf 		--error-log-path=/var/log/nginx/error.log 		--http-log-path=/var/log/nginx/access.log 		--pid-path=/var/run/nginx.pid 		--lock-path=/var/run/nginx.lock 		--http-client-body-temp-path=/var/cache/nginx/client_temp 		--http-proxy-temp-path=/var/cache/nginx/proxy_temp 		--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 		--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 		--http-scgi-temp-path=/var/cache/nginx/scgi_temp 		--user=nginx 		--group=nginx 		--with-http_ssl_module 		--with-http_realip_module 		--with-http_addition_module 		--with-http_sub_module 		--with-http_dav_module 		--with-http_flv_module 		--with-http_mp4_module 		--with-http_gunzip_module 		--with-http_gzip_static_module 		--with-http_random_index_module 		--with-http_secure_link_module 		--with-http_stub_status_module 		--with-http_auth_request_module 		--with-http_xslt_module=dynamic 		--with-http_image_filter_module=dynamic 		--with-http_geoip_module=dynamic 		--with-http_perl_module=dynamic 		--with-threads 		--with-stream 		--with-stream_ssl_module 		--with-stream_ssl_preread_module 		--with-stream_realip_module 		--with-stream_geoip_module=dynamic 		--with-http_slice_module 		--with-mail 		--with-mail_ssl_module 		--with-compat 		--with-file-aio 		--with-http_v2_module 	" 	&& addgroup -S nginx 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx 	&& apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		make 		openssl-dev 		pcre-dev 		zlib-dev 		linux-headers 		curl 		gnupg 		libxslt-dev 		gd-dev 		geoip-dev 		perl-dev 	&& curl -fSL https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz 	&& curl -fSL https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify nginx.tar.gz.asc nginx.tar.gz 	&& rm -rf "$GNUPGHOME" nginx.tar.gz.asc 	&& mkdir -p /usr/src 	&& tar -zxC /usr/src -f nginx.tar.gz 	&& rm nginx.tar.gz 	&& cd /usr/src/nginx-$NGINX_VERSION 	&& ./configure $CONFIG --with-debug 	&& make -j$(getconf _NPROCESSORS_ONLN) 	&& mv objs/nginx objs/nginx-debug 	&& mv objs/ngx_http_xslt_filter_module.so objs/ngx_http_xslt_filter_module-debug.so 	&& mv objs/ngx_http_image_filter_module.so objs/ngx_http_image_filter_module-debug.so 	&& mv objs/ngx_http_geoip_module.so objs/ngx_http_geoip_module-debug.so 	&& mv objs/ngx_http_perl_module.so objs/ngx_http_perl_module-debug.so 	&& mv objs/ngx_stream_geoip_module.so objs/ngx_stream_geoip_module-debug.so 	&& ./configure $CONFIG 	&& make -j$(getconf _NPROCESSORS_ONLN) 	&& make install 	&& rm -rf /etc/nginx/html/ 	&& mkdir /etc/nginx/conf.d/ 	&& mkdir -p /usr/share/nginx/html/ 	&& install -m644 html/index.html /usr/share/nginx/html/ 	&& install -m644 html/50x.html /usr/share/nginx/html/ 	&& install -m755 objs/nginx-debug /usr/sbin/nginx-debug 	&& install -m755 objs/ngx_http_xslt_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_xslt_filter_module-debug.so 	&& install -m755 objs/ngx_http_image_filter_module-debug.so /usr/lib/nginx/modules/ngx_http_image_filter_module-debug.so 	&& install -m755 objs/ngx_http_geoip_module-debug.so /usr/lib/nginx/modules/ngx_http_geoip_module-debug.so 	&& install -m755 objs/ngx_http_perl_module-debug.so /usr/lib/nginx/modules/ngx_http_perl_module-debug.so 	&& install -m755 objs/ngx_stream_geoip_module-debug.so /usr/lib/nginx/modules/ngx_stream_geoip_module-debug.so 	&& ln -s ../../usr/lib/nginx/modules /etc/nginx/modules 	&& strip /usr/sbin/nginx* 	&& strip /usr/lib/nginx/modules/*.so 	&& rm -rf /usr/src/nginx-$NGINX_VERSION 		&& apk add --no-cache --virtual .gettext gettext 	&& mv /usr/bin/envsubst /tmp/ 		&& runDeps="$( 		scanelf --needed --nobanner /usr/sbin/nginx /usr/lib/nginx/modules/*.so /tmp/envsubst 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .nginx-rundeps $runDeps 	&& apk del .build-deps 	&& apk del .gettext 	&& mv /tmp/envsubst /usr/local/bin/ 		&& apk add --no-cache tzdata 		&& ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Wed, 29 Aug 2018 15:38:18 GMT
+# Wed, 05 Sep 2018 00:59:48 GMT
 COPY file:af94db45bb7e4b8ff4e699f1ff6f41c348f9876073ad91d6e803070415f8d9ce in /etc/nginx/nginx.conf 
-# Wed, 29 Aug 2018 15:38:18 GMT
+# Wed, 05 Sep 2018 00:59:48 GMT
 COPY file:1d1ac3b9a14c94a709efa20da1c4268a931f1a234e782801ce5912fdcf53a7af in /etc/nginx/conf.d/default.conf 
-# Wed, 29 Aug 2018 15:38:18 GMT
+# Wed, 05 Sep 2018 00:59:48 GMT
 EXPOSE 80/tcp
-# Wed, 29 Aug 2018 15:38:19 GMT
+# Wed, 05 Sep 2018 00:59:49 GMT
 STOPSIGNAL [SIGTERM]
-# Wed, 29 Aug 2018 15:38:19 GMT
+# Wed, 05 Sep 2018 00:59:49 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
@@ -54,17 +54,17 @@ CMD ["nginx" "-g" "daemon off;"]
 		Last Modified: Fri, 06 Jul 2018 14:16:43 GMT  
 		Size: 2.1 MB (2103553 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8942a0804ea6d37dc8e61a7f27d15e86ed494f9b45c920c93a17793598e00a5b`  
-		Last Modified: Wed, 29 Aug 2018 15:48:47 GMT  
-		Size: 15.5 MB (15459557 bytes)  
+	-	`sha256:6ff8964a0bb93f54cbf81eb19a1275182ebe466dd7d4810a80fb23dc05036544`  
+		Last Modified: Wed, 05 Sep 2018 01:04:36 GMT  
+		Size: 15.5 MB (15459563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b1f684926c8ebfa095596f80b7bbfc7ac7cfddfcf0c1463b9e60c3443d37ba7`  
-		Last Modified: Wed, 29 Aug 2018 15:48:36 GMT  
-		Size: 492.0 B  
+	-	`sha256:d4dfdcb12a1b659e10dead9bd7ca240f2be54cc95e20dd0191ed16b972a93606`  
+		Last Modified: Wed, 05 Sep 2018 01:04:33 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f4ac86a083a330dcc032f91b36866d39172107b140098dce44f19fbf3b4008a`  
-		Last Modified: Wed, 29 Aug 2018 15:48:36 GMT  
-		Size: 628.0 B  
+	-	`sha256:079ff26f3e9df426e3fb30e2b9cfb78e8fe053da27ccfbca6ca2ea2c75551e88`  
+		Last Modified: Wed, 05 Sep 2018 01:04:33 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:1-alpine-perl` - linux; arm variant v6
