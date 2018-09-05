@@ -1,40 +1,40 @@
 ## `nats-streaming:nanoserver`
 
 ```console
-$ docker pull nats-streaming@sha256:a536f79211653dce97934150d6571d2f722feb2df30c44b9b20813cc689c2eb1
+$ docker pull nats-streaming@sha256:75b09817c84856d1693885299554fb24df85c29047414bd810df3324a4a9713e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.2312; amd64
+	-	windows version 10.0.14393.2430; amd64
 
-### `nats-streaming:nanoserver` - windows version 10.0.14393.2312; amd64
+### `nats-streaming:nanoserver` - windows version 10.0.14393.2430; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:03eb9b1a738cd1a662f6e4ecd372d0c3172480ee2ec4cf0a11aba8dc23747c1e
+$ docker pull nats-streaming@sha256:3a088a1696926cf537d937a3d015c35ca0eab4bdb03b1701ce54f62789945a1f
 ```
 
 -	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.3 MB (422321569 bytes)**  
+-	Total Size: **425.2 MB (425187122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a7d584ae56c36d92795e6102f023fb7814ecab7b597cdc0a40b56c082eea5f8`
+-	Image ID: `sha256:9f8e24a698772edebf095d61624ed3b15d1344dd65b4c327ed4e64d42da71788`
 -	Default Command: `["nats-streaming-server","-m","8222"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Wed, 13 Jun 2018 00:36:03 GMT
-RUN Install update 10.0.14393.2312
-# Wed, 04 Jul 2018 09:46:03 GMT
+# Mon, 13 Aug 2018 17:51:52 GMT
+RUN Install update 10.0.14393.2430
+# Sat, 01 Sep 2018 09:16:32 GMT
 RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Wed, 04 Jul 2018 09:46:04 GMT
+# Wed, 05 Sep 2018 09:16:35 GMT
 RUN cmd /S /C #(nop) WORKDIR C:\nats-streaming-server
-# Wed, 04 Jul 2018 09:46:06 GMT
-RUN cmd /S /C #(nop) COPY file:e47f90ad2a6e70faab21b17190b493ddccd7936d592dbddfceca1ae7f3a1b36d in nats-streaming-server.exe 
-# Wed, 04 Jul 2018 09:46:07 GMT
+# Wed, 05 Sep 2018 09:16:39 GMT
+RUN cmd /S /C #(nop) COPY file:6fceacb4a15339840cf000d448e03db257add8a4e5daf67cfcafa881a6bcc60e in nats-streaming-server.exe 
+# Wed, 05 Sep 2018 09:16:40 GMT
 RUN cmd /S /C #(nop)  EXPOSE 4222/tcp 8222/tcp
-# Wed, 04 Jul 2018 09:46:08 GMT
+# Wed, 05 Sep 2018 09:16:41 GMT
 RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ```
 
@@ -43,27 +43,27 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e7a598ed389ee13dc16cb56bd512d2eecc9597d79797803ef538a02b1e12351f`  
-		Last Modified: Wed, 13 Jun 2018 00:36:03 GMT  
-		Size: 165.7 MB (165749131 bytes)  
+	-	`sha256:4a14bdf6da80603aa5007acea8d5ea659958b0bd1b31d31078023ca0d1c8ee05`  
+		Last Modified: Mon, 13 Aug 2018 17:51:52 GMT  
+		Size: 167.8 MB (167784035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a9b8eb83c4be00aa333cea97cdf6ceaf95035481bde902ce5e8f1490185df8ac`  
-		Last Modified: Wed, 04 Jul 2018 09:46:26 GMT  
-		Size: 954.0 B  
+	-	`sha256:a7c6c5ea540b6fa9c311ada0aa79e1d6a539cefffe98b603b8c7fe79ed75c84b`  
+		Last Modified: Sat, 01 Sep 2018 09:17:08 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4e6efc10cd798be334a86d568b3846f09b726211c9fcded32679c19c1f5f78b`  
-		Last Modified: Wed, 04 Jul 2018 09:46:26 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:599e503aadfd0b71d01498b4a808cf1e8dc59369fdeedd395df00013b2af29f5`  
+		Last Modified: Wed, 05 Sep 2018 09:17:03 GMT  
+		Size: 1.2 KB (1168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1756f2c92493766a563b929181898809a5091f408d4525c1d2ebf8906a6b0c7d`  
-		Last Modified: Wed, 04 Jul 2018 09:46:27 GMT  
-		Size: 3.9 MB (3877406 bytes)  
+	-	`sha256:ee264f6da7998e0ae0c3ba855c08df351f3c3692987b10e75b2f67c907cd31b9`  
+		Last Modified: Wed, 05 Sep 2018 09:17:05 GMT  
+		Size: 4.7 MB (4708069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5aaac107ffcca158e9090b076792c8811ffbee7374a4efd05c9ed39dc31ca479`  
-		Last Modified: Wed, 04 Jul 2018 09:46:26 GMT  
-		Size: 950.0 B  
+	-	`sha256:3ec2e1b9b696f6473b3ad8bb4752606357d61f024c304a8bb14060b6f6e5bae9`  
+		Last Modified: Wed, 05 Sep 2018 09:17:03 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd013f80a7c11c32ad034196d330730680e72b7f824e477c4928ce8b072de8dd`  
-		Last Modified: Wed, 04 Jul 2018 09:46:26 GMT  
-		Size: 960.0 B  
+	-	`sha256:e154a145009205425127039a269004d1ee6eff14137abeeb64f47b7523f05e74`  
+		Last Modified: Wed, 05 Sep 2018 09:17:03 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
