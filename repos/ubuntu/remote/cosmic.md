@@ -1,7 +1,7 @@
 ## `ubuntu:cosmic`
 
 ```console
-$ docker pull ubuntu@sha256:26e7da8bee274a98532c15287ac505d4cb4eae7ac6f90f695d2fb2c77f0e02b9
+$ docker pull ubuntu@sha256:740d2fdcc25a8ff0776e0987b6d8153f5c59f195cd6f1972f9959174b412e1eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,47 +108,47 @@ CMD ["/bin/bash"]
 ### `ubuntu:cosmic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:8c72ceef1bcfc1fc7045ecf57d5a6acbbb7ff1ad6e75566e6aab90604dcddae0
+$ docker pull ubuntu@sha256:9be0ac83c995b783258d079c347fb0d49d22a976abe9b0c5a81eef271fae21a2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.2 MB (26200002 bytes)**  
+-	Total Size: **26.6 MB (26628290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bebfb6e3aae84f7ed57b98761e7b5da6d2aab0951149f4a334e8eb3fc1ef136f`
+-	Image ID: `sha256:b09eed2fed586f819b29dc5e46b1c5272e3c904becf751bb630a8a90cb6eee66`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 23 Aug 2018 17:57:53 GMT
-ADD file:c08411583fbd036cdfe52a57e60bc2135cf3eb5a2977dcb5d72108c418cbc3b9 in / 
-# Thu, 23 Aug 2018 17:57:55 GMT
+# Thu, 06 Sep 2018 11:13:30 GMT
+ADD file:e26106db800a0ecafb3dced9d54f8d6d610a2ecc3349d0af388822d621a29003 in / 
+# Thu, 06 Sep 2018 11:13:32 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 23 Aug 2018 17:57:57 GMT
+# Thu, 06 Sep 2018 11:13:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 23 Aug 2018 17:57:59 GMT
+# Thu, 06 Sep 2018 11:13:35 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 23 Aug 2018 17:58:01 GMT
+# Thu, 06 Sep 2018 11:13:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 23 Aug 2018 17:58:02 GMT
+# Thu, 06 Sep 2018 11:13:37 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:190c7faaa654089b6c9b07e24206c9a4c4f4fe35811239202386e1e34be4699f`  
-		Last Modified: Thu, 23 Aug 2018 18:02:54 GMT  
-		Size: 26.2 MB (26198122 bytes)  
+	-	`sha256:8afcf4e2d24a00d2654536c6cd4c53c770ed252a339359579e5bd9b83c1e5a0c`  
+		Last Modified: Thu, 06 Sep 2018 11:16:10 GMT  
+		Size: 26.6 MB (26626408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d65558fd4a4a93c465bec4d53f3dce1c0d987222b21e632f5c7b020539c05`  
-		Last Modified: Thu, 23 Aug 2018 18:02:47 GMT  
-		Size: 862.0 B  
+	-	`sha256:55b69e476c2268d8a13378e9f3877b80b81fd224fb027a35af9f12a59a6a3b98`  
+		Last Modified: Thu, 06 Sep 2018 11:16:00 GMT  
+		Size: 867.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:755dd2b40afb33c13be4c8289fb6c15d2fdab88d8fa5a68c1114837976770c41`  
-		Last Modified: Thu, 23 Aug 2018 18:02:45 GMT  
-		Size: 855.0 B  
+	-	`sha256:7e9e655e8aebba26cf7d93e0a1d7a911d0852d486f7c37552909152eb62adfdc`  
+		Last Modified: Thu, 06 Sep 2018 11:16:00 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff283afd59de84a6fca251b29c062a8fc9db9db7e5607af70a5152fb07503bf`  
-		Last Modified: Thu, 23 Aug 2018 18:02:45 GMT  
-		Size: 163.0 B  
+	-	`sha256:6959f058270a4693c87bdb4d8a0816b66eddfec01b291f9df85564392a30c308`  
+		Last Modified: Thu, 06 Sep 2018 11:16:01 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:cosmic` - linux; 386
