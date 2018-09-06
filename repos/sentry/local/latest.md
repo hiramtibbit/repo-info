@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f1b4ff945f5ba0b776f9d8bc1c5fe10bff3e52a6a8545fb5a95e677a3c6bf7a`
-- Created: `2018-07-31T23:48:23.727763449Z`
-- Virtual Size: ~ 599.43 Mb  
+- Image ID: `sha256:57c0335092fef8a3a4191b8cc395b4adf24c3329cc8ac23ee9b4593b82b09ec4`
+- Created: `2018-09-05T17:47:22.42000869Z`
+- Virtual Size: ~ 596.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2055,37 +2055,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.40+dfsg-1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
-
-Binary Packages:
-
-- `openssl=1.0.1t-1+deb8u8`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.dsc' openssl_1.0.1t-1+deb8u8.dsc 2305 SHA256:e6fc30d2f34c04dd3c96e00d89b777442de79bb13d11056c8935f71667fcfcc0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.debian.tar.xz' openssl_1.0.1t-1+deb8u8.debian.tar.xz 110384 SHA256:fb200537c8b7ec882145463373889b063353eddc5d4f957f4d55fabd7065c418
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
 
 Binary Packages:
 
 - `libssl-dev:amd64=1.0.1t-1+deb8u9`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
+- `openssl=1.0.1t-1+deb8u9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2236,12 +2212,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.4=9.4.18-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.19-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.18-0+deb8u1`
-- `libpq5:amd64=9.4.18-0+deb8u1`
+- `libpq-dev=9.4.19-0+deb8u1`
+- `libpq5:amd64=9.4.19-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -2251,17 +2227,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.18-0+deb8u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.18-0+deb8u1.dsc' postgresql-9.4_9.4.18-0+deb8u1.dsc 3546 SHA256:7a1635ac109c5dea9e96b6574eacb19764b3c0cb29a94c5429697dff1d832487
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.18.orig.tar.bz2' postgresql-9.4_9.4.18.orig.tar.bz2 17828085 SHA256:428337f2b2f5e3ea21b8a44f88eb89c99a07a324559b99aebe777c9abdf4c4c0
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.18-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.18-0+deb8u1.debian.tar.xz 26108 SHA256:233e9ff40c257aa2f228ae1204857570ed75fb0c64027f84abbfdc10708c639b
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.19-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.dsc' postgresql-9.4_9.4.19-0+deb8u1.dsc 3546 SHA256:53821a217db0df2ec4fc8e3cb1eb7f92cc992ec605c75df177dd4a5b3bd9d4ec
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19.orig.tar.bz2' postgresql-9.4_9.4.19.orig.tar.bz2 17879273 SHA256:03776b036b2a05371083558e10c21cc4b90bde9eb3aff60299c4ce7c084c168b
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz 26560 SHA256:904e0f0e337c9fd83afa5026cb44c161f846682874b79687d6cbccfcb2a264a7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.18-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.4/9.4.18-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.18-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.19-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
