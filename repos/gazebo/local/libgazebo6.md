@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2108053862b3b530971a95ccd8ec93bd3fadce745cc2461d19239462be8634c6`
-- Created: `2018-08-22T18:50:57.960434812Z`
+- Image ID: `sha256:1c5d155b1256424121cf3952e65b520cc259346bf8f5ffab5d3fd59d6b556898`
+- Created: `2018-09-05T23:30:13.259034087Z`
 - Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2027,13 +2027,13 @@ $ apt-get source -qq --print-uris harfbuzz=0.9.27-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_0.9.27-1ubuntu1.1.debian.tar.gz' harfbuzz_0.9.27-1ubuntu1.1.debian.tar.gz 8433 SHA256:fde8b041695af6a04923a8492c14437da72a0d7aef4688c5dce8fcb61d76826e
 ```
 
-### `dpkg` source package: `hdf5=1.8.11-5ubuntu7`
+### `dpkg` source package: `hdf5=1.8.11-5ubuntu7.1`
 
 Binary Packages:
 
-- `hdf5-helpers=1.8.11-5ubuntu7`
-- `libhdf5-7:amd64=1.8.11-5ubuntu7`
-- `libhdf5-dev=1.8.11-5ubuntu7`
+- `hdf5-helpers=1.8.11-5ubuntu7.1`
+- `libhdf5-7:amd64=1.8.11-5ubuntu7.1`
+- `libhdf5-dev=1.8.11-5ubuntu7.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2042,10 +2042,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris hdf5=1.8.11-5ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11-5ubuntu7.dsc' hdf5_1.8.11-5ubuntu7.dsc 3040 SHA256:eb5f17b5e915f185bc1ac797ae67043556f67bc175645667315cf91cd11bcc86
+$ apt-get source -qq --print-uris hdf5=1.8.11-5ubuntu7.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11-5ubuntu7.1.dsc' hdf5_1.8.11-5ubuntu7.1.dsc 3045 SHA256:c106277c577ff38782a2b668397503ab6b25d9c4d4b96b7fa5ce35aba6abddd1
 'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11.orig.tar.gz' hdf5_1.8.11.orig.tar.gz 8088169 SHA256:c2e4419e058ea7bc9c352777aa2d9de8f5cb386d1c5139b1b25fe9d36a8620ee
-'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11-5ubuntu7.debian.tar.gz' hdf5_1.8.11-5ubuntu7.debian.tar.gz 108488 SHA256:a4c39c8c15a9edd149cce1cd8d654ac5e6f2d0f85b3f214f72c1c0df55590a7c
+'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11-5ubuntu7.1.debian.tar.gz' hdf5_1.8.11-5ubuntu7.1.debian.tar.gz 111849 SHA256:921c1ea8c56a23b5e1301deac06ca58012bb374f5b8638e3b7ad80ce9618e51e
 ```
 
 ### `dpkg` source package: `heimdal=1.6~git20131207+dfsg-1ubuntu1.2`
@@ -4119,16 +4119,16 @@ $ apt-get source -qq --print-uris libwebp=0.4.0-4
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.4.0-4.debian.tar.gz' libwebp_0.4.0-4.debian.tar.gz 3782 SHA256:6e7bcb4285b4d3b8cf08d8772c3043ab6e2907c1cbcabf04339bbdb56aaeffe2
 ```
 
-### `dpkg` source package: `libx11=2:1.6.2-1ubuntu2`
+### `dpkg` source package: `libx11=2:1.6.2-1ubuntu2.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.2-1ubuntu2`
-- `libx11-data=2:1.6.2-1ubuntu2`
-- `libx11-dev:amd64=2:1.6.2-1ubuntu2`
-- `libx11-doc=2:1.6.2-1ubuntu2`
-- `libx11-xcb-dev:amd64=2:1.6.2-1ubuntu2`
-- `libx11-xcb1:amd64=2:1.6.2-1ubuntu2`
+- `libx11-6:amd64=2:1.6.2-1ubuntu2.1`
+- `libx11-data=2:1.6.2-1ubuntu2.1`
+- `libx11-dev:amd64=2:1.6.2-1ubuntu2.1`
+- `libx11-doc=2:1.6.2-1ubuntu2.1`
+- `libx11-xcb-dev:amd64=2:1.6.2-1ubuntu2.1`
+- `libx11-xcb1:amd64=2:1.6.2-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4137,10 +4137,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.2-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.dsc' libx11_1.6.2-1ubuntu2.dsc 1946 SHA256:1ac50ecc1e33826bb3ae42ba59694b86464db889c9d3485ee4e19ed7e8251c89
+$ apt-get source -qq --print-uris libx11=2:1.6.2-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.1.dsc' libx11_1.6.2-1ubuntu2.1.dsc 2575 SHA256:a8c594d2582aa4000a1a45a84e0ae05613ec740785f01e6eb80fcb851c4f0381
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2.orig.tar.gz' libx11_1.6.2.orig.tar.gz 3119924 SHA256:b93739bcd517723121f508bcaf0c213c1bae9c5eacffdca571ff0d86c30ead3e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.diff.gz' libx11_1.6.2-1ubuntu2.diff.gz 82749 SHA256:db2640ec0df1f57ea4160d0fcbe3629f82fa6049860c933e32eb4bdb41676019
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.1.diff.gz' libx11_1.6.2-1ubuntu2.1.diff.gz 86883 SHA256:6a604a25c12f92c418e8231824a9fedf7d644f61cb977ee9ed8d81ad692225a4
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -4564,19 +4564,24 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-156.206`
+### `dpkg` source package: `linux=3.13.0-157.207`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-156.206`
+- `linux-libc-dev:amd64=3.13.0-157.207`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-157.207
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-157.207.dsc' linux_3.13.0-157.207.dsc 7833 SHA256:a8770356e9007b13fa27a12062ccafe6f61186b4de376d291975bc38e82ef25e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-157.207.diff.gz' linux_3.13.0-157.207.diff.gz 9739739 SHA256:31d9ce0abfc6221e68f085d6ac735beec8ae5f36bc87ef7542befe68d9d0c710
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -5750,19 +5755,24 @@ $ apt-get source -qq --print-uris po-debconf=1.0.16+nmu2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/po-debconf/po-debconf_1.0.16+nmu2ubuntu1.tar.gz' po-debconf_1.0.16+nmu2ubuntu1.tar.gz 306550 SHA256:ff701e40d0e4ea40f0f445ea4372ed1b63c57f5e84b0dd43e4aca972845d8763
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.11`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.12`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.11`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.12`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.12
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.12.dsc' poppler_0.24.5-2ubuntu4.12.dsc 3332 SHA256:f8daaf21e97704dc4425428051689c274650620320205a3fd9af8929c3d22081
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.12.debian.tar.gz' poppler_0.24.5-2ubuntu4.12.debian.tar.gz 59604 SHA256:e9f65d84dcabd0f28aa8c5b6d81002f1d4a12ffb85b1c15068ee1750b752aac6
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 

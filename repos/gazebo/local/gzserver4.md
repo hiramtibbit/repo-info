@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e1504c7e57559c1b7b267f08334c1ba4dfec56b13c616d6a620aed5571d8401`
-- Created: `2018-08-22T18:37:03.253459968Z`
+- Image ID: `sha256:b98117f78158b79291fc439fa05e15fd98de97d305c5a80026edd077224439a3`
+- Created: `2018-09-05T23:23:00.146486317Z`
 - Virtual Size: ~ 548.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2973,13 +2973,13 @@ $ apt-get source -qq --print-uris libvpx=1.3.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.3.0-2.debian.tar.gz' libvpx_1.3.0-2.debian.tar.gz 10857 SHA256:e63632aa78955eed7b2040d336091dc7a1f1d46398ce1b5f956e9e20c93c08a1
 ```
 
-### `dpkg` source package: `libx11=2:1.6.2-1ubuntu2`
+### `dpkg` source package: `libx11=2:1.6.2-1ubuntu2.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.2-1ubuntu2`
-- `libx11-data=2:1.6.2-1ubuntu2`
-- `libx11-xcb1:amd64=2:1.6.2-1ubuntu2`
+- `libx11-6:amd64=2:1.6.2-1ubuntu2.1`
+- `libx11-data=2:1.6.2-1ubuntu2.1`
+- `libx11-xcb1:amd64=2:1.6.2-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2988,10 +2988,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.2-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.dsc' libx11_1.6.2-1ubuntu2.dsc 1946 SHA256:1ac50ecc1e33826bb3ae42ba59694b86464db889c9d3485ee4e19ed7e8251c89
+$ apt-get source -qq --print-uris libx11=2:1.6.2-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.1.dsc' libx11_1.6.2-1ubuntu2.1.dsc 2575 SHA256:a8c594d2582aa4000a1a45a84e0ae05613ec740785f01e6eb80fcb851c4f0381
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2.orig.tar.gz' libx11_1.6.2.orig.tar.gz 3119924 SHA256:b93739bcd517723121f508bcaf0c213c1bae9c5eacffdca571ff0d86c30ead3e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.diff.gz' libx11_1.6.2-1ubuntu2.diff.gz 82749 SHA256:db2640ec0df1f57ea4160d0fcbe3629f82fa6049860c933e32eb4bdb41676019
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.2-1ubuntu2.1.diff.gz' libx11_1.6.2-1ubuntu2.1.diff.gz 86883 SHA256:6a604a25c12f92c418e8231824a9fedf7d644f61cb977ee9ed8d81ad692225a4
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`

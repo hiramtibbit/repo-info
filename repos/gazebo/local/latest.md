@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c98e4be449e5a3055c43593e86f7d1b14921afd9ee68a8b63e4f58b607968422`
-- Created: `2018-08-22T19:21:22.680913023Z`
+- Image ID: `sha256:b74b9efea1468f7447cb8e1974f5581f2cfb634afb39b8c2796976be81c31dc9`
+- Created: `2018-09-05T23:43:22.648932484Z`
 - Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -354,8 +354,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=10.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -1197,28 +1197,28 @@ $ apt-get source -qq --print-uris fakeroot=1.22-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fakeroot/fakeroot_1.22-2ubuntu1.debian.tar.xz' fakeroot_1.22-2ubuntu1.debian.tar.xz 44960 SHA256:ffcfc108ec282b729937ada529729b1ab071e10d70f0e3f6977a1bfddc75f172
 ```
 
-### `dpkg` source package: `ffmpeg=7:3.4.2-2`
+### `dpkg` source package: `ffmpeg=7:3.4.4-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libavcodec-dev:amd64=7:3.4.2-2`
-- `libavcodec57:amd64=7:3.4.2-2`
-- `libavdevice-dev:amd64=7:3.4.2-2`
-- `libavdevice57:amd64=7:3.4.2-2`
-- `libavfilter-dev:amd64=7:3.4.2-2`
-- `libavfilter6:amd64=7:3.4.2-2`
-- `libavformat-dev:amd64=7:3.4.2-2`
-- `libavformat57:amd64=7:3.4.2-2`
-- `libavresample-dev:amd64=7:3.4.2-2`
-- `libavresample3:amd64=7:3.4.2-2`
-- `libavutil-dev:amd64=7:3.4.2-2`
-- `libavutil55:amd64=7:3.4.2-2`
-- `libpostproc-dev:amd64=7:3.4.2-2`
-- `libpostproc54:amd64=7:3.4.2-2`
-- `libswresample-dev:amd64=7:3.4.2-2`
-- `libswresample2:amd64=7:3.4.2-2`
-- `libswscale-dev:amd64=7:3.4.2-2`
-- `libswscale4:amd64=7:3.4.2-2`
+- `libavcodec-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavcodec57:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavdevice-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavdevice57:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavfilter-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavfilter6:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavformat-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavformat57:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavresample-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavresample3:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavutil-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libavutil55:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libpostproc-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libpostproc54:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libswresample-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libswresample2:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libswscale-dev:amd64=7:3.4.4-0ubuntu0.18.04.1`
+- `libswscale4:amd64=7:3.4.4-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavdevice-dev/copyright`, `/usr/share/doc/libavdevice57/copyright`, `/usr/share/doc/libavfilter-dev/copyright`, `/usr/share/doc/libavfilter6/copyright`, `/usr/share/doc/libavformat-dev/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample-dev/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil-dev/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libpostproc-dev/copyright`, `/usr/share/doc/libpostproc54/copyright`, `/usr/share/doc/libswresample-dev/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale-dev/copyright`, `/usr/share/doc/libswscale4/copyright`)
 
@@ -1246,10 +1246,11 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ffmpeg=7:3.4.2-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.2-2.dsc' ffmpeg_3.4.2-2.dsc 4894 SHA256:c1102ded5f3f1642893f78c3365616cb4dd8d0ea10b484cbbcf3e536a68ba008
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.2.orig.tar.xz' ffmpeg_3.4.2.orig.tar.xz 8478376 SHA256:2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.2-2.debian.tar.xz' ffmpeg_3.4.2-2.debian.tar.xz 41784 SHA256:ba25889bb65a1a795c587601da26b553d2ce6dee8b0a995389a25be811a9e6d2
+$ apt-get source -qq --print-uris ffmpeg=7:3.4.4-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4-0ubuntu0.18.04.1.dsc' ffmpeg_3.4.4-0ubuntu0.18.04.1.dsc 5245 SHA256:97a6f37b80b1230574b796582a7048ceedf009174eaccbeb4dfc224bc86a00e8
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4.orig.tar.xz' ffmpeg_3.4.4.orig.tar.xz 8485304 SHA256:386f7601e865df6bddde05bb6927119b5a853f0b92e2e9834f59c125a17d3fc6
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4.orig.tar.xz.asc' ffmpeg_3.4.4.orig.tar.xz.asc 473 SHA256:6ada8ffb5bf8a4850b3fc2646c13d42f5e4c168a71cb0e259686af35004928e2
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.4-0ubuntu0.18.04.1.debian.tar.xz' ffmpeg_3.4.4-0ubuntu0.18.04.1.debian.tar.xz 41928 SHA256:9435d582c463df6e42529ac8e710c753885aeacd14f51d5aa7ea2422b9de0e37
 ```
 
 ### `dpkg` source package: `fftw3=3.3.7-1`
@@ -4810,16 +4811,16 @@ $ apt-get source -qq --print-uris libwebp=0.6.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2.debian.tar.xz' libwebp_0.6.1-2.debian.tar.xz 9532 SHA256:5af543e277abb97f6b2c72ca0d7ce95de79108d88da383d511ef729683fa7a45
 ```
 
-### `dpkg` source package: `libx11=2:1.6.4-3`
+### `dpkg` source package: `libx11=2:1.6.4-3ubuntu0.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.4-3`
-- `libx11-data=2:1.6.4-3`
-- `libx11-dev:amd64=2:1.6.4-3`
-- `libx11-doc=2:1.6.4-3`
-- `libx11-xcb-dev:amd64=2:1.6.4-3`
-- `libx11-xcb1:amd64=2:1.6.4-3`
+- `libx11-6:amd64=2:1.6.4-3ubuntu0.1`
+- `libx11-data=2:1.6.4-3ubuntu0.1`
+- `libx11-dev:amd64=2:1.6.4-3ubuntu0.1`
+- `libx11-doc=2:1.6.4-3ubuntu0.1`
+- `libx11-xcb-dev:amd64=2:1.6.4-3ubuntu0.1`
+- `libx11-xcb1:amd64=2:1.6.4-3ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4828,10 +4829,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.4-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3.dsc' libx11_1.6.4-3.dsc 2397 SHA256:4c5d6add2ba969067ca111c827ae94264e4c22776e22f318d264545dc1c6a300
+$ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.dsc' libx11_1.6.4-3ubuntu0.1.dsc 2496 SHA256:522207baf69f09b8fd8a8a9d75fa7928c7378fe15db62ef2764ee70c880482e8
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3.diff.gz' libx11_1.6.4-3.diff.gz 41366 SHA256:2c936827bca63eaf5b66683bdcd0ecf013d152c35439f792475db85c5c2338fd
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.diff.gz' libx11_1.6.4-3ubuntu0.1.diff.gz 43542 SHA256:d32eb7b1164342a5571799f89fef0d53f96a59d814f848a19ed637a4b5e57835
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -5371,19 +5372,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz 11124 SHA256:34a1ce5f77815f20941f962019cef0ad6ed0da77179f05609a5c67274485b477
 ```
 
-### `dpkg` source package: `linux=4.15.0-32.35`
+### `dpkg` source package: `linux=4.15.0-33.36`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-32.35`
+- `linux-libc-dev:amd64=4.15.0-33.36`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-33.36
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-33.36.dsc' linux_4.15.0-33.36.dsc 7499 SHA256:f75d52f9b8c339c014e6db74c3b9a6cc2c63da3e8860a4322e3e82d04a558913
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-33.36.diff.gz' linux_4.15.0-33.36.diff.gz 7949975 SHA256:f48554541f2491837d75f48beb1a34038c95bc35ff02ac50871b4ad545951ee5
+```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2`
 
@@ -6534,21 +6540,26 @@ $ apt-get source -qq --print-uris poppler-data=0.4.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.8-2.debian.tar.xz' poppler-data_0.4.8-2.debian.tar.xz 19524 SHA256:471ce26ff9082a1562a360b3ba636ce7d0f19b9fb1b353a3d46c9a4f34d6f8ea
 ```
 
-### `dpkg` source package: `poppler=0.62.0-2ubuntu2.1`
+### `dpkg` source package: `poppler=0.62.0-2ubuntu2.2`
 
 Binary Packages:
 
-- `libpoppler-dev:amd64=0.62.0-2ubuntu2.1`
-- `libpoppler-private-dev:amd64=0.62.0-2ubuntu2.1`
-- `libpoppler73:amd64=0.62.0-2ubuntu2.1`
+- `libpoppler-dev:amd64=0.62.0-2ubuntu2.2`
+- `libpoppler-private-dev:amd64=0.62.0-2ubuntu2.2`
+- `libpoppler73:amd64=0.62.0-2ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/doc/libpoppler-private-dev/copyright`, `/usr/share/doc/libpoppler73/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.2.dsc' poppler_0.62.0-2ubuntu2.2.dsc 3354 SHA256:3da1cd1cc7ae93890f034a4c3f83ff47b6350f56e7a9088ac9057c8cf0fb05df
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA256:5b9a73dfd4d6f61d165ada1e4f0abd2d420494bf9d0b1c15d0db3f7b83a729c6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.2.debian.tar.xz' poppler_0.62.0-2ubuntu2.2.debian.tar.xz 35236 SHA256:5f73f2c7d45b076b6be67f79282fdc6e70ee255c56a31a1772f40f0892cd881d
+```
 
 ### `dpkg` source package: `postgresql-10=10.5-0ubuntu0.18.04`
 
