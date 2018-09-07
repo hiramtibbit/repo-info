@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c42caf6db395f27c4969f8f393148dda91cad8c153501addd0d714e5b642ccd`
-- Created: `2018-08-06T19:26:25.454199521Z`
+- Image ID: `sha256:2b8104daa4d9b7dbd1d1bce9ce9e43d3c262490e4729eda36dffdb85954c7c88`
+- Created: `2018-09-05T21:20:34.166634492Z`
 - Virtual Size: ~ 37.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["eggdrop.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `EGGDROP_SHA256=5a7ec41eebc415065256946d7a986012a493ec483930c9de3c5d84916e236366`
-  - `EGGDROP_COMMIT=24fad2705e619751d86061d1031e3c60b9b2e6da`
+  - `EGGDROP_SHA256=87d8368c4816174837d3173d08adda23a4f68efae1ffec10b8b2cb63fba27d1e`
+  - `EGGDROP_COMMIT=88f49af5cb00ec8586c2362647f35a7fe64f873f`
   - `NICK=`
   - `SERVER=`
   - `LISTEN=3333`
