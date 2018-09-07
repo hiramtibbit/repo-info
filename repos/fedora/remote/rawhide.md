@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:ed7567f4bccad041898454e3cd28e8d88007ec45a56e5460f71ec12e5cbb9c22
+$ docker pull fedora@sha256:9487b51154d6723f56591f2920419a113e2833970fe7cfbffadb1b19ce18681f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,28 +14,28 @@ $ docker pull fedora@sha256:ed7567f4bccad041898454e3cd28e8d88007ec45a56e5460f71e
 ### `fedora:rawhide` - linux; amd64
 
 ```console
-$ docker pull fedora@sha256:366d5d0b370b55cee8ad6208be93f2e7d8b058c22aa23d133dbe7c58bfa564ab
+$ docker pull fedora@sha256:9a5c00c5f30048796bc928059800ddb993746763eaf2cf74947edb95e1651ae5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82446379 bytes)**  
+-	Total Size: **86.4 MB (86414097 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b087779a1c7fdba128f4a6e91df8952f3d3ac0b7b5d17dc1b0b719fcc1551490`
+-	Image ID: `sha256:415235e739665b475617c33ba777e69151705e9a66fbf87eca2b2b8bf8493a2d`
 
 ```dockerfile
 # Fri, 07 Sep 2018 14:42:43 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Fri, 07 Sep 2018 14:43:19 GMT
-ENV DISTTAG=frawhidecontainer FGC=frawhide FBR=frawhide
-# Fri, 07 Sep 2018 14:43:26 GMT
-ADD file:a431bb2a7616a7c7c2d308835cf378020da05802adc11de58635d9a990ff9079 in / 
+# Fri, 07 Sep 2018 19:19:36 GMT
+ENV DISTTAG=f30container FGC=f30 FBR=f30
+# Fri, 07 Sep 2018 19:19:44 GMT
+ADD file:14e7152f5c9c1d7c368cb2226808c7afb73baa5bdbc06faf21b6bec2446ab314 in / 
 ```
 
 -	Layers:
-	-	`sha256:e66343a2291fce17e156b357f52b136dfaf595ae013680788b896a5fcb121c92`  
-		Last Modified: Wed, 07 Mar 2018 20:55:55 GMT  
-		Size: 82.4 MB (82446379 bytes)  
+	-	`sha256:478ff666c3b2a5520a10d26fd052ea21e21fd40119de257fd77b42ddd70af0aa`  
+		Last Modified: Fri, 07 Sep 2018 19:20:51 GMT  
+		Size: 86.4 MB (86414097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; arm variant v7
