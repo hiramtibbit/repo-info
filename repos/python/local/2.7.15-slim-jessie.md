@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16213106d5440236553472e4237c43da5a6b5212d4cdf92511a4b7c404c82919`
-- Created: `2018-07-31T23:11:57.944460613Z`
-- Virtual Size: ~ 142.16 Mb  
+- Image ID: `sha256:efbb1b59f6570a804250bd0898cac7a50d12a08dd6d0fc37c979dae122c9e90f`
+- Created: `2018-09-05T04:59:47.699177838Z`
+- Virtual Size: ~ 139.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -1290,36 +1290,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/netbase/5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/netbase/5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u8`
-
-Binary Packages:
-
-- `openssl=1.0.1t-1+deb8u8`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.dsc' openssl_1.0.1t-1+deb8u8.dsc 2305 SHA256:e6fc30d2f34c04dd3c96e00d89b777442de79bb13d11056c8935f71667fcfcc0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u8.debian.tar.xz' openssl_1.0.1t-1+deb8u8.debian.tar.xz 110384 SHA256:fb200537c8b7ec882145463373889b063353eddc5d4f957f4d55fabd7065c418
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u8/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
 
 Binary Packages:
 
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
+- `openssl=1.0.1t-1+deb8u9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
