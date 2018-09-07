@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c239d3635667d9ac13be4b9b1724060318dd275f9b4cb721102e7a63b332923`
-- Created: `2018-07-17T08:30:32.376370776Z`
+- Image ID: `sha256:bb4454b9a9989c4db9700b9689cdeb6de44a6cd3b27832311d48932a3eca31b5`
+- Created: `2018-09-05T07:27:37.813273836Z`
 - Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2927,11 +2927,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lapack/3.7.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lapack/3.7.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lcms2=2.8-4`
+### `dpkg` source package: `lcms2=2.8-4+deb9u1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.8-4`
+- `liblcms2-2:amd64=2.8-4+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -2942,17 +2942,17 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.8-4
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.dsc' lcms2_2.8-4.dsc 1997 SHA256:3b92900948848eef62fa91b78f6b6661bd84eae6c49c224248c7c48a09b5f028
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.debian.tar.xz' lcms2_2.8-4.debian.tar.xz 11036 SHA256:50c0040fc92e1f2ca27740f608ae248acdd5b21a633f34cf2fe4d66f1d05c4b4
+$ apt-get source -qq --print-uris lcms2=2.8-4+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8-4+deb9u1.dsc' lcms2_2.8-4+deb9u1.dsc 2025 SHA256:47144a3cf2a008da72f32747f7e07be6e940bdc4fbeef80c07c2c65346f8ec43
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8-4+deb9u1.debian.tar.xz' lcms2_2.8-4+deb9u1.debian.tar.xz 11492 SHA256:9e1d8156c301000aec3af9c861c5db4984bb820caca724e5d5bc8bd39cb5fed3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.8-4/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.8-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lcms2/2.8-4+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.8-4+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.8-4+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libarchive=3.2.2-2`
 
@@ -5064,11 +5064,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.110-1`
+### `dpkg` source package: `linux=4.9.110-3+deb9u4`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.110-1`
+- `linux-libc-dev:amd64=4.9.110-3+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5081,17 +5081,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.110-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110-1.dsc' linux_4.9.110-1.dsc 123207 SHA256:8d08b5b5373e82ddc2c95784be5098b16b65911af0f7658ad332d755cb99bedb
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110-1.debian.tar.xz' linux_4.9.110-1.debian.tar.xz 2528848 SHA256:08f14f58a475c733a49854900c8e965e03b7c735ee2f26aa7a56c9de58226537
+$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.dsc' linux_4.9.110-3+deb9u4.dsc 123390 SHA256:879d1cde4a145e71c4ff435e0fb1563eb9e7bcf2010f5b7de6e1be72074aaa0e
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.debian.tar.xz' linux_4.9.110-3+deb9u4.debian.tar.xz 2604644 SHA256:d88c3ffe100742a234c57913dbc1b87d2ac9d10617f8e8f20d533ecfa237582f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.110-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.110-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.110-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -6545,33 +6545,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pyqt5/5.7+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pyqt5/5.7+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.6-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.8-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.6-1`
+- `python-catkin-pkg-modules=0.4.8-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.8-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.dsc' python-catkin-pkg-modules_0.4.8-1.dsc 991 SHA256:d49dff5df394ce4161684228f02565efb26600a10fc3cd703cb2391f2f7d643d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8.orig.tar.gz' python-catkin-pkg-modules_0.4.8.orig.tar.gz 57439 SHA256:28b6325fbbc95a43ba680256179e27876d420c0a6e17644fc84bdecb3381284a
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.debian.tar.xz' python-catkin-pkg-modules_0.4.8-1.debian.tar.xz 1992 SHA256:f0b3e37c8cdf77e15df4148f616ad32b5ac662ecb044f2fdd489b43bb8950cb6
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.6-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.8-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.6-100`
+- `python-catkin-pkg=0.4.8-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.8-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.dsc' python-catkin-pkg_0.4.8-100.dsc 931 SHA256:733b5de0dcbec622b87dab88628833d61ccad352c854bb3aed45209a48a0ed8e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8.orig.tar.gz' python-catkin-pkg_0.4.8.orig.tar.gz 12927 SHA256:20c716979dfec771e39b537bef0e36490d30d94c7561116b7d0bb649dec21a42
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.debian.tar.xz' python-catkin-pkg_0.4.8-100.debian.tar.xz 1976 SHA256:d062662c9c53666632848cbfba855657c8538acf2f933ece1de57187fdd91e9a
+```
 
 ### `dpkg` source package: `python-cffi=1.9.1-2`
 
@@ -6859,33 +6869,43 @@ $ apt-get source -qq --print-uris python-rosdep=0.12.2-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2-1.debian.tar.gz' python-rosdep_0.12.2-1.debian.tar.gz 1078 SHA256:b727ea1c0771dd48acda4e02ee8a108c8193d5fc1c0576e72330caa0546b6e4f
 ```
 
-### `dpkg` source package: `python-rosdistro-modules=0.6.8-1`
+### `dpkg` source package: `python-rosdistro-modules=0.6.9-1`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.6.8-1`
+- `python-rosdistro-modules=0.6.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.9-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9-1.dsc' python-rosdistro-modules_0.6.9-1.dsc 982 SHA256:6db2bb4f2410fd05be3323ee3bad2df21bfb576c7f4879207650f3e74dabd056
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9.orig.tar.gz' python-rosdistro-modules_0.6.9.orig.tar.gz 40210 SHA256:8e1ccc8f19cb8f424f51ce56e55cb53f2dabee352160b53fe2718c99c1709fc2
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9-1.debian.tar.xz' python-rosdistro-modules_0.6.9-1.debian.tar.xz 1972 SHA256:e4b3c5824c24344a36be382d9b9354039007b1a099d99af0010a6b3c4f767a78
+```
 
-### `dpkg` source package: `python-rosdistro=0.6.8-100`
+### `dpkg` source package: `python-rosdistro=0.6.9-100`
 
 Binary Packages:
 
-- `python-rosdistro=0.6.8-100`
+- `python-rosdistro=0.6.9-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro=0.6.9-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9-100.dsc' python-rosdistro_0.6.9-100.dsc 919 SHA256:f5ee3f41857f66b04d852c8c1d4cd05cd9ae733361c870813aedc44afaf45f50
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9.orig.tar.gz' python-rosdistro_0.6.9.orig.tar.gz 9640 SHA256:91dcb77d7ca7bb304d57340e09e6b2fd02853fee64ccbbb06e7b333e14ebceae
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9-100.debian.tar.xz' python-rosdistro_0.6.9-100.debian.tar.xz 1960 SHA256:cf11300753079cd8013779d7b71782091e50356dfc5c28b1c220460145cd69fe
+```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
@@ -6906,33 +6926,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.1.4-1`
+### `dpkg` source package: `python-rospkg-modules=1.1.7-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.1.4-1`
+- `python-rospkg-modules=1.1.7-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.1.7-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7-1.dsc' python-rospkg-modules_1.1.7-1.dsc 953 SHA256:33b4aa87fe81014a4e75af693eaf774ad50a130db6606398b09d3493d9fa1ade
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7.orig.tar.gz' python-rospkg-modules_1.1.7.orig.tar.gz 39986 SHA256:9317ac27b68e807884781a07339123ea7b2c3911bbf8a0a2f321e7c7de1f904e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.7-1.debian.tar.xz' python-rospkg-modules_1.1.7-1.debian.tar.xz 1144 SHA256:2cc798fb32dc340f1b640e8be0ef9e1ad6f0d8a10099c5ddb4b98e7a45b360ee
+```
 
-### `dpkg` source package: `python-rospkg=1.1.4-100`
+### `dpkg` source package: `python-rospkg=1.1.7-100`
 
 Binary Packages:
 
-- `python-rospkg=1.1.4-100`
+- `python-rospkg=1.1.7-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.1.7-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7-100.dsc' python-rospkg_1.1.7-100.dsc 889 SHA256:91196293547af117a86a3a6530841fe2ccf85332d5ba1574f96546f65bc822fb
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7.orig.tar.gz' python-rospkg_1.1.7.orig.tar.gz 16920 SHA256:caf4f2615c9bdff92d92f3a0fb6a2e42f5085099d90a635ec7134c869ea23a1c
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.7-100.debian.tar.xz' python-rospkg_1.1.7-100.debian.tar.xz 1140 SHA256:722cf76cbd9c81734874ccdb101fc10cbd94b6e7edb2e304718688e182195731
+```
 
 ### `dpkg` source package: `python-setuptools=33.1.1-1`
 
@@ -7394,11 +7424,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ros-lunar-actionlib-msgs=1.12.6-0stretch-20180517-121204-0800`
+### `dpkg` source package: `ros-lunar-actionlib-msgs=1.12.6-0stretch-20180817-160652-0800`
 
 Binary Packages:
 
-- `ros-lunar-actionlib-msgs=1.12.6-0stretch-20180517-121204-0800`
+- `ros-lunar-actionlib-msgs=1.12.6-0stretch-20180817-160652-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7408,11 +7438,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-actionlib=1.11.13-0stretch-20180517-122044-0800`
+### `dpkg` source package: `ros-lunar-actionlib=1.11.15-0stretch-20180817-170108-0800`
 
 Binary Packages:
 
-- `ros-lunar-actionlib=1.11.13-0stretch-20180517-122044-0800`
+- `ros-lunar-actionlib=1.11.15-0stretch-20180817-170108-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7422,11 +7452,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-angles=1.9.11-0stretch-20180205-143040-0800`
+### `dpkg` source package: `ros-lunar-angles=1.9.11-0stretch-20180817-160407-0800`
 
 Binary Packages:
 
-- `ros-lunar-angles=1.9.11-0stretch-20180205-143040-0800`
+- `ros-lunar-angles=1.9.11-0stretch-20180817-160407-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7436,11 +7466,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bond-core=1.8.1-0stretch-20180205-230627-0800`
+### `dpkg` source package: `ros-lunar-bond-core=1.8.3-0stretch-20180817-162957-0800`
 
 Binary Packages:
 
-- `ros-lunar-bond-core=1.8.1-0stretch-20180205-230627-0800`
+- `ros-lunar-bond-core=1.8.3-0stretch-20180817-162957-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7450,11 +7480,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bond=1.8.1-0stretch-20180205-144059-0800`
+### `dpkg` source package: `ros-lunar-bond=1.8.3-0stretch-20180817-160636-0800`
 
 Binary Packages:
 
-- `ros-lunar-bond=1.8.1-0stretch-20180205-144059-0800`
+- `ros-lunar-bond=1.8.3-0stretch-20180817-160636-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7464,11 +7494,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bondcpp=1.8.1-0stretch-20180205-145638-0800`
+### `dpkg` source package: `ros-lunar-bondcpp=1.8.3-0stretch-20180817-162249-0800`
 
 Binary Packages:
 
-- `ros-lunar-bondcpp=1.8.1-0stretch-20180205-145638-0800`
+- `ros-lunar-bondcpp=1.8.3-0stretch-20180817-162249-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7478,11 +7508,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-bondpy=1.8.1-0stretch-20180205-230301-0800`
+### `dpkg` source package: `ros-lunar-bondpy=1.8.3-0stretch-20180817-162343-0800`
 
 Binary Packages:
 
-- `ros-lunar-bondpy=1.8.1-0stretch-20180205-230301-0800`
+- `ros-lunar-bondpy=1.8.3-0stretch-20180817-162343-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7492,11 +7522,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-catkin=0.7.11-0stretch-20180205-134732-0800`
+### `dpkg` source package: `ros-lunar-catkin=0.7.14-0stretch-20180808-125342-0800`
 
 Binary Packages:
 
-- `ros-lunar-catkin=0.7.11-0stretch-20180205-134732-0800`
+- `ros-lunar-catkin=0.7.14-0stretch-20180808-125342-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7506,11 +7536,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-class-loader=0.3.9-0stretch-20180316-113249-0800`
+### `dpkg` source package: `ros-lunar-class-loader=0.3.9-0stretch-20180808-131839-0800`
 
 Binary Packages:
 
-- `ros-lunar-class-loader=0.3.9-0stretch-20180316-113249-0800`
+- `ros-lunar-class-loader=0.3.9-0stretch-20180808-131839-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7520,11 +7550,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-cmake-modules=0.4.1-0stretch-20180205-142215-0800`
+### `dpkg` source package: `ros-lunar-cmake-modules=0.4.1-0stretch-20180808-131356-0800`
 
 Binary Packages:
 
-- `ros-lunar-cmake-modules=0.4.1-0stretch-20180205-142215-0800`
+- `ros-lunar-cmake-modules=0.4.1-0stretch-20180808-131356-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7534,11 +7564,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-collada-parser=1.12.12-0stretch-20180508-072642-0800`
+### `dpkg` source package: `ros-lunar-collada-parser=1.12.12-0stretch-20180817-165502-0800`
 
 Binary Packages:
 
-- `ros-lunar-collada-parser=1.12.12-0stretch-20180508-072642-0800`
+- `ros-lunar-collada-parser=1.12.12-0stretch-20180817-165502-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7548,11 +7578,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-collada-urdf=1.12.12-0stretch-20180517-125708-0800`
+### `dpkg` source package: `ros-lunar-collada-urdf=1.12.12-0stretch-20180817-171305-0800`
 
 Binary Packages:
 
-- `ros-lunar-collada-urdf=1.12.12-0stretch-20180517-125708-0800`
+- `ros-lunar-collada-urdf=1.12.12-0stretch-20180817-171305-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7562,11 +7592,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-common-msgs=1.12.6-0stretch-20180517-123535-0800`
+### `dpkg` source package: `ros-lunar-common-msgs=1.12.6-0stretch-20180817-194444-0800`
 
 Binary Packages:
 
-- `ros-lunar-common-msgs=1.12.6-0stretch-20180517-123535-0800`
+- `ros-lunar-common-msgs=1.12.6-0stretch-20180817-194444-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7576,11 +7606,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-control-msgs=1.4.0-1stretch-20180517-122322-0800`
+### `dpkg` source package: `ros-lunar-control-msgs=1.4.0-1stretch-20180817-162111-0800`
 
 Binary Packages:
 
-- `ros-lunar-control-msgs=1.4.0-1stretch-20180517-122322-0800`
+- `ros-lunar-control-msgs=1.4.0-1stretch-20180817-162111-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7590,11 +7620,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-cpp-common=0.6.9-0stretch-20180205-142504-0800`
+### `dpkg` source package: `ros-lunar-cpp-common=0.6.11-0stretch-20180817-154005-0800`
 
 Binary Packages:
 
-- `ros-lunar-cpp-common=0.6.9-0stretch-20180205-142504-0800`
+- `ros-lunar-cpp-common=0.6.11-0stretch-20180817-154005-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7604,11 +7634,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-aggregator=1.9.3-0stretch-20180517-123129-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-aggregator=1.9.3-0stretch-20180817-163731-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-aggregator=1.9.3-0stretch-20180517-123129-0800`
+- `ros-lunar-diagnostic-aggregator=1.9.3-0stretch-20180817-163731-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7618,11 +7648,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-analysis=1.9.3-0stretch-20180517-122846-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-analysis=1.9.3-0stretch-20180817-165751-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-analysis=1.9.3-0stretch-20180517-122846-0800`
+- `ros-lunar-diagnostic-analysis=1.9.3-0stretch-20180817-165751-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7632,11 +7662,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-common-diagnostics=1.9.3-0stretch-20180517-133030-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-common-diagnostics=1.9.3-0stretch-20180817-210432-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-common-diagnostics=1.9.3-0stretch-20180517-133030-0800`
+- `ros-lunar-diagnostic-common-diagnostics=1.9.3-0stretch-20180817-210432-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7646,11 +7676,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-msgs=1.12.6-0stretch-20180517-121402-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-msgs=1.12.6-0stretch-20180817-160815-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-msgs=1.12.6-0stretch-20180517-121402-0800`
+- `ros-lunar-diagnostic-msgs=1.12.6-0stretch-20180817-160815-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7660,11 +7690,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-updater=1.9.3-0stretch-20180517-122853-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-updater=1.9.3-0stretch-20180817-163809-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-updater=1.9.3-0stretch-20180517-122853-0800`
+- `ros-lunar-diagnostic-updater=1.9.3-0stretch-20180817-163809-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7674,11 +7704,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostics=1.9.3-0stretch-20180517-133411-0800`
+### `dpkg` source package: `ros-lunar-diagnostics=1.9.3-0stretch-20180817-211918-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostics=1.9.3-0stretch-20180517-133411-0800`
+- `ros-lunar-diagnostics=1.9.3-0stretch-20180817-211918-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7688,11 +7718,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180205-151517-0800`
+### `dpkg` source package: `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180817-171226-0800`
 
 Binary Packages:
 
-- `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180205-151517-0800`
+- `ros-lunar-dynamic-reconfigure=1.5.49-0stretch-20180817-171226-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7702,11 +7732,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-eigen-conversions=1.11.9-0stretch-20180517-123253-0800`
+### `dpkg` source package: `ros-lunar-eigen-conversions=1.11.9-0stretch-20180817-161840-0800`
 
 Binary Packages:
 
-- `ros-lunar-eigen-conversions=1.11.9-0stretch-20180517-123253-0800`
+- `ros-lunar-eigen-conversions=1.11.9-0stretch-20180817-161840-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7716,11 +7746,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-eigen-stl-containers=0.1.8-0stretch-20180205-142320-0800`
+### `dpkg` source package: `ros-lunar-eigen-stl-containers=0.1.8-0stretch-20180808-131827-0800`
 
 Binary Packages:
 
-- `ros-lunar-eigen-stl-containers=0.1.8-0stretch-20180205-142320-0800`
+- `ros-lunar-eigen-stl-containers=0.1.8-0stretch-20180808-131827-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7730,11 +7760,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-executive-smach=2.0.1-0stretch-20180517-130012-0800`
+### `dpkg` source package: `ros-lunar-executive-smach=2.0.1-0stretch-20180817-195326-0800`
 
 Binary Packages:
 
-- `ros-lunar-executive-smach=2.0.1-0stretch-20180517-130012-0800`
+- `ros-lunar-executive-smach=2.0.1-0stretch-20180817-195326-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7744,11 +7774,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-filters=1.8.1-0stretch-20180316-114246-0800`
+### `dpkg` source package: `ros-lunar-filters=1.8.1-0stretch-20180817-163705-0800`
 
 Binary Packages:
 
-- `ros-lunar-filters=1.8.1-0stretch-20180316-114246-0800`
+- `ros-lunar-filters=1.8.1-0stretch-20180817-163705-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7758,11 +7788,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-gencpp=0.6.0-0stretch-20180205-141417-0800`
+### `dpkg` source package: `ros-lunar-gencpp=0.6.0-0stretch-20180817-154646-0800`
 
 Binary Packages:
 
-- `ros-lunar-gencpp=0.6.0-0stretch-20180205-141417-0800`
+- `ros-lunar-gencpp=0.6.0-0stretch-20180817-154646-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7772,11 +7802,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geneus=2.2.6-0stretch-20180205-141845-0800`
+### `dpkg` source package: `ros-lunar-geneus=2.2.6-0stretch-20180817-154657-0800`
 
 Binary Packages:
 
-- `ros-lunar-geneus=2.2.6-0stretch-20180205-141845-0800`
+- `ros-lunar-geneus=2.2.6-0stretch-20180817-154657-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7786,11 +7816,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genlisp=0.4.16-0stretch-20180205-142155-0800`
+### `dpkg` source package: `ros-lunar-genlisp=0.4.16-0stretch-20180817-154726-0800`
 
 Binary Packages:
 
-- `ros-lunar-genlisp=0.4.16-0stretch-20180205-142155-0800`
+- `ros-lunar-genlisp=0.4.16-0stretch-20180817-154726-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7800,11 +7830,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genmsg=0.5.10-0stretch-20180205-140320-0800`
+### `dpkg` source package: `ros-lunar-genmsg=0.5.11-0stretch-20180817-154005-0800`
 
 Binary Packages:
 
-- `ros-lunar-genmsg=0.5.10-0stretch-20180205-140320-0800`
+- `ros-lunar-genmsg=0.5.11-0stretch-20180817-154005-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7814,11 +7844,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-gennodejs=2.0.1-0stretch-20180205-141841-0800`
+### `dpkg` source package: `ros-lunar-gennodejs=2.0.1-0stretch-20180817-154930-0800`
 
 Binary Packages:
 
-- `ros-lunar-gennodejs=2.0.1-0stretch-20180205-141841-0800`
+- `ros-lunar-gennodejs=2.0.1-0stretch-20180817-154930-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7828,11 +7858,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-genpy=0.6.7-0stretch-20180205-142022-0800`
+### `dpkg` source package: `ros-lunar-genpy=0.6.7-0stretch-20180817-154737-0800`
 
 Binary Packages:
 
-- `ros-lunar-genpy=0.6.7-0stretch-20180205-142022-0800`
+- `ros-lunar-genpy=0.6.7-0stretch-20180817-154737-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7842,11 +7872,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geometric-shapes=0.5.4-0stretch-20180517-123653-0800`
+### `dpkg` source package: `ros-lunar-geometric-shapes=0.5.4-0stretch-20180817-162143-0800`
 
 Binary Packages:
 
-- `ros-lunar-geometric-shapes=0.5.4-0stretch-20180517-123653-0800`
+- `ros-lunar-geometric-shapes=0.5.4-0stretch-20180817-162143-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7856,11 +7886,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geometry-msgs=1.12.6-0stretch-20180517-121546-0800`
+### `dpkg` source package: `ros-lunar-geometry-msgs=1.12.6-0stretch-20180817-160823-0800`
 
 Binary Packages:
 
-- `ros-lunar-geometry-msgs=1.12.6-0stretch-20180517-121546-0800`
+- `ros-lunar-geometry-msgs=1.12.6-0stretch-20180817-160823-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7870,11 +7900,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geometry=1.11.9-0stretch-20180517-133106-0800`
+### `dpkg` source package: `ros-lunar-geometry=1.11.9-0stretch-20180817-201301-0800`
 
 Binary Packages:
 
-- `ros-lunar-geometry=1.11.9-0stretch-20180517-133106-0800`
+- `ros-lunar-geometry=1.11.9-0stretch-20180817-201301-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7884,11 +7914,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-joint-state-publisher=1.12.13-0stretch-20180517-123804-0800`
+### `dpkg` source package: `ros-lunar-joint-state-publisher=1.12.13-0stretch-20180817-190440-0800`
 
 Binary Packages:
 
-- `ros-lunar-joint-state-publisher=1.12.13-0stretch-20180517-123804-0800`
+- `ros-lunar-joint-state-publisher=1.12.13-0stretch-20180817-190440-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7898,11 +7928,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-kdl-conversions=1.11.9-0stretch-20180517-123253-0800`
+### `dpkg` source package: `ros-lunar-kdl-conversions=1.11.9-0stretch-20180817-161956-0800`
 
 Binary Packages:
 
-- `ros-lunar-kdl-conversions=1.11.9-0stretch-20180517-123253-0800`
+- `ros-lunar-kdl-conversions=1.11.9-0stretch-20180817-161956-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7912,11 +7942,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-kdl-parser=1.12.10-0stretch-20180316-131615-0800`
+### `dpkg` source package: `ros-lunar-kdl-parser=1.12.11-0stretch-20180817-165501-0800`
 
 Binary Packages:
 
-- `ros-lunar-kdl-parser=1.12.10-0stretch-20180316-131615-0800`
+- `ros-lunar-kdl-parser=1.12.11-0stretch-20180817-165501-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7926,11 +7956,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-filters=1.13.6-0stretch-20180205-150400-0800`
+### `dpkg` source package: `ros-lunar-message-filters=1.13.7-0stretch-20180817-163652-0800`
 
 Binary Packages:
 
-- `ros-lunar-message-filters=1.13.6-0stretch-20180205-150400-0800`
+- `ros-lunar-message-filters=1.13.7-0stretch-20180817-163652-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7940,11 +7970,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-generation=0.4.0-0stretch-20180205-142233-0800`
+### `dpkg` source package: `ros-lunar-message-generation=0.4.0-0stretch-20180817-155155-0800`
 
 Binary Packages:
 
-- `ros-lunar-message-generation=0.4.0-0stretch-20180205-142233-0800`
+- `ros-lunar-message-generation=0.4.0-0stretch-20180817-155155-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7954,11 +7984,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-message-runtime=0.4.12-0stretch-20180205-143527-0800`
+### `dpkg` source package: `ros-lunar-message-runtime=0.4.12-0stretch-20180817-155408-0800`
 
 Binary Packages:
 
-- `ros-lunar-message-runtime=0.4.12-0stretch-20180205-143527-0800`
+- `ros-lunar-message-runtime=0.4.12-0stretch-20180817-155408-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7968,11 +7998,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-mk=1.14.2-0stretch-20180205-143747-0800`
+### `dpkg` source package: `ros-lunar-mk=1.14.4-0stretch-20180817-155644-0800`
 
 Binary Packages:
 
-- `ros-lunar-mk=1.14.2-0stretch-20180205-143747-0800`
+- `ros-lunar-mk=1.14.4-0stretch-20180817-155644-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7982,11 +8012,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nav-msgs=1.12.6-0stretch-20180517-123154-0800`
+### `dpkg` source package: `ros-lunar-nav-msgs=1.12.6-0stretch-20180817-161341-0800`
 
 Binary Packages:
 
-- `ros-lunar-nav-msgs=1.12.6-0stretch-20180517-123154-0800`
+- `ros-lunar-nav-msgs=1.12.6-0stretch-20180817-161341-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7996,11 +8026,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet-core=1.9.14-0stretch-20180316-132410-0800`
+### `dpkg` source package: `ros-lunar-nodelet-core=1.9.14-0stretch-20180817-210808-0800`
 
 Binary Packages:
 
-- `ros-lunar-nodelet-core=1.9.14-0stretch-20180316-132410-0800`
+- `ros-lunar-nodelet-core=1.9.14-0stretch-20180817-210808-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8010,11 +8040,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180316-132043-0800`
+### `dpkg` source package: `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180817-184855-0800`
 
 Binary Packages:
 
-- `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180316-132043-0800`
+- `ros-lunar-nodelet-topic-tools=1.9.14-0stretch-20180817-184855-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8024,11 +8054,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nodelet=1.9.14-0stretch-20180316-131501-0800`
+### `dpkg` source package: `ros-lunar-nodelet=1.9.14-0stretch-20180817-162833-0800`
 
 Binary Packages:
 
-- `ros-lunar-nodelet=1.9.14-0stretch-20180316-131501-0800`
+- `ros-lunar-nodelet=1.9.14-0stretch-20180817-162833-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8038,11 +8068,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-octomap=1.9.0-0stretch-20180205-141915-0800`
+### `dpkg` source package: `ros-lunar-octomap=1.9.0-0stretch-20180808-131444-0800`
 
 Binary Packages:
 
-- `ros-lunar-octomap=1.9.0-0stretch-20180205-141915-0800`
+- `ros-lunar-octomap=1.9.0-0stretch-20180808-131444-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8052,11 +8082,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-orocos-kdl=1.3.1-0stretch-20180205-143141-0800`
+### `dpkg` source package: `ros-lunar-orocos-kdl=1.3.1-0stretch-20180808-132102-0800`
 
 Binary Packages:
 
-- `ros-lunar-orocos-kdl=1.3.1-0stretch-20180205-143141-0800`
+- `ros-lunar-orocos-kdl=1.3.1-0stretch-20180808-132102-0800`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lunar-orocos-kdl/copyright`)
 
@@ -8066,11 +8096,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lunar-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-pluginlib=1.11.3-0stretch-20180316-113511-0800`
+### `dpkg` source package: `ros-lunar-pluginlib=1.11.3-0stretch-20180817-160106-0800`
 
 Binary Packages:
 
-- `ros-lunar-pluginlib=1.11.3-0stretch-20180316-113511-0800`
+- `ros-lunar-pluginlib=1.11.3-0stretch-20180817-160106-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8080,11 +8110,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-python-orocos-kdl=1.3.1-0stretch-20180205-143518-0800`
+### `dpkg` source package: `ros-lunar-python-orocos-kdl=1.3.1-0stretch-20180808-132538-0800`
 
 Binary Packages:
 
-- `ros-lunar-python-orocos-kdl=1.3.1-0stretch-20180205-143518-0800`
+- `ros-lunar-python-orocos-kdl=1.3.1-0stretch-20180808-132538-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8094,11 +8124,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-python-qt-binding=0.3.3-2stretch-20180205-143751-0800`
+### `dpkg` source package: `ros-lunar-python-qt-binding=0.3.4-0stretch-20180817-160604-0800`
 
 Binary Packages:
 
-- `ros-lunar-python-qt-binding=0.3.3-2stretch-20180205-143751-0800`
+- `ros-lunar-python-qt-binding=0.3.4-0stretch-20180817-160604-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8108,11 +8138,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-random-numbers=0.3.1-1stretch-20180205-142041-0800`
+### `dpkg` source package: `ros-lunar-random-numbers=0.3.1-1stretch-20180808-131659-0800`
 
 Binary Packages:
 
-- `ros-lunar-random-numbers=0.3.1-1stretch-20180205-142041-0800`
+- `ros-lunar-random-numbers=0.3.1-1stretch-20180808-131659-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8122,11 +8152,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-resource-retriever=1.12.4-0stretch-20180319-132257-0800`
+### `dpkg` source package: `ros-lunar-resource-retriever=1.12.4-0stretch-20180817-160103-0800`
 
 Binary Packages:
 
-- `ros-lunar-resource-retriever=1.12.4-0stretch-20180319-132257-0800`
+- `ros-lunar-resource-retriever=1.12.4-0stretch-20180817-160103-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8136,11 +8166,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-robot-model=1.12.11-0stretch-20180517-130145-0800`
+### `dpkg` source package: `ros-lunar-robot-model=1.12.11-0stretch-20180817-192342-0800`
 
 Binary Packages:
 
-- `ros-lunar-robot-model=1.12.11-0stretch-20180517-130145-0800`
+- `ros-lunar-robot-model=1.12.11-0stretch-20180817-192342-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8150,11 +8180,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-robot-state-publisher=1.13.6-0stretch-20180517-132853-0800`
+### `dpkg` source package: `ros-lunar-robot-state-publisher=1.13.6-0stretch-20180817-213240-0800`
 
 Binary Packages:
 
-- `ros-lunar-robot-state-publisher=1.13.6-0stretch-20180517-132853-0800`
+- `ros-lunar-robot-state-publisher=1.13.6-0stretch-20180817-213240-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8164,11 +8194,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-robot=1.3.2-0stretch-20180517-133457-0800`
+### `dpkg` source package: `ros-lunar-robot=1.3.2-0stretch-20180817-220208-0800`
 
 Binary Packages:
 
-- `ros-lunar-robot=1.3.2-0stretch-20180517-133457-0800`
+- `ros-lunar-robot=1.3.2-0stretch-20180817-220208-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8178,11 +8208,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-base=1.3.2-0stretch-20180517-125554-0800`
+### `dpkg` source package: `ros-lunar-ros-base=1.3.2-0stretch-20180817-211004-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros-base=1.3.2-0stretch-20180517-125554-0800`
+- `ros-lunar-ros-base=1.3.2-0stretch-20180817-211004-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8192,11 +8222,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-comm=1.13.6-0stretch-20180205-151830-0800`
+### `dpkg` source package: `ros-lunar-ros-comm=1.13.7-0stretch-20180817-172833-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros-comm=1.13.6-0stretch-20180205-151830-0800`
+- `ros-lunar-ros-comm=1.13.7-0stretch-20180817-172833-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8206,11 +8236,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-core=1.3.2-0stretch-20180517-125454-0800`
+### `dpkg` source package: `ros-lunar-ros-core=1.3.2-0stretch-20180817-194601-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros-core=1.3.2-0stretch-20180517-125454-0800`
+- `ros-lunar-ros-core=1.3.2-0stretch-20180817-194601-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8220,11 +8250,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros=1.14.2-0stretch-20180205-143836-0800`
+### `dpkg` source package: `ros-lunar-ros-environment=1.1.0-0stretch-20180808-131724-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros=1.14.2-0stretch-20180205-143836-0800`
+- `ros-lunar-ros-environment=1.1.0-0stretch-20180808-131724-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8234,11 +8264,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180205-142101-0800`
+### `dpkg` source package: `ros-lunar-ros=1.14.4-0stretch-20180817-155735-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180205-142101-0800`
+- `ros-lunar-ros=1.14.4-0stretch-20180817-155735-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8248,11 +8278,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag-storage=1.13.6-0stretch-20180205-143525-0800`
+### `dpkg` source package: `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180808-132134-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosbag-storage=1.13.6-0stretch-20180205-143525-0800`
+- `ros-lunar-rosbag-migration-rule=1.0.0-0stretch-20180808-132134-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8262,11 +8292,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbag=1.13.6-0stretch-20180205-150800-0800`
+### `dpkg` source package: `ros-lunar-rosbag-storage=1.13.7-0stretch-20180817-160939-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosbag=1.13.6-0stretch-20180205-150800-0800`
+- `ros-lunar-rosbag-storage=1.13.7-0stretch-20180817-160939-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8276,11 +8306,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbash=1.14.2-0stretch-20180205-143418-0800`
+### `dpkg` source package: `ros-lunar-rosbag=1.13.7-0stretch-20180817-164309-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosbash=1.14.2-0stretch-20180205-143418-0800`
+- `ros-lunar-rosbag=1.13.7-0stretch-20180817-164309-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8290,11 +8320,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosboost-cfg=1.14.2-0stretch-20180205-143436-0800`
+### `dpkg` source package: `ros-lunar-rosbash=1.14.4-0stretch-20180817-154326-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosboost-cfg=1.14.2-0stretch-20180205-143436-0800`
+- `ros-lunar-rosbash=1.14.4-0stretch-20180817-154326-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8304,11 +8334,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosbuild=1.14.2-0stretch-20180205-143611-0800`
+### `dpkg` source package: `ros-lunar-rosboost-cfg=1.14.4-0stretch-20180817-154618-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosbuild=1.14.2-0stretch-20180205-143611-0800`
+- `ros-lunar-rosboost-cfg=1.14.4-0stretch-20180817-154618-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8318,11 +8348,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosclean=1.14.2-0stretch-20180205-143451-0800`
+### `dpkg` source package: `ros-lunar-rosbuild=1.14.4-0stretch-20180817-155458-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosclean=1.14.2-0stretch-20180205-143451-0800`
+- `ros-lunar-rosbuild=1.14.4-0stretch-20180817-155458-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8332,11 +8362,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosconsole-bridge=0.5.1-0stretch-20180205-144020-0800`
+### `dpkg` source package: `ros-lunar-rosclean=1.14.4-0stretch-20180817-154356-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosconsole-bridge=0.5.1-0stretch-20180205-144020-0800`
+- `ros-lunar-rosclean=1.14.4-0stretch-20180817-154356-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8346,11 +8376,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosconsole=1.13.6-0stretch-20180205-143743-0800`
+### `dpkg` source package: `ros-lunar-rosconsole-bridge=0.5.2-0stretch-20180817-161742-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosconsole=1.13.6-0stretch-20180205-143743-0800`
+- `ros-lunar-rosconsole-bridge=0.5.2-0stretch-20180817-161742-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8360,11 +8390,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-core=0.6.9-0stretch-20180205-143530-0800`
+### `dpkg` source package: `ros-lunar-rosconsole=1.13.7-0stretch-20180817-155648-0800`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-core=0.6.9-0stretch-20180205-143530-0800`
+- `ros-lunar-rosconsole=1.13.7-0stretch-20180817-155648-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8374,11 +8404,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-serialization=0.6.9-0stretch-20180205-143251-0800`
+### `dpkg` source package: `ros-lunar-roscpp-core=0.6.11-0stretch-20180817-155422-0800`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-serialization=0.6.9-0stretch-20180205-143251-0800`
+- `ros-lunar-roscpp-core=0.6.11-0stretch-20180817-155422-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8388,11 +8418,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp-traits=0.6.9-0stretch-20180205-143116-0800`
+### `dpkg` source package: `ros-lunar-roscpp-serialization=0.6.11-0stretch-20180817-154909-0800`
 
 Binary Packages:
 
-- `ros-lunar-roscpp-traits=0.6.9-0stretch-20180205-143116-0800`
+- `ros-lunar-roscpp-serialization=0.6.11-0stretch-20180817-154909-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8402,11 +8432,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscpp=1.13.6-0stretch-20180205-144847-0800`
+### `dpkg` source package: `ros-lunar-roscpp-traits=0.6.11-0stretch-20180817-154834-0800`
 
 Binary Packages:
 
-- `ros-lunar-roscpp=1.13.6-0stretch-20180205-144847-0800`
+- `ros-lunar-roscpp-traits=0.6.11-0stretch-20180817-154834-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8416,11 +8446,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roscreate=1.14.2-0stretch-20180205-143504-0800`
+### `dpkg` source package: `ros-lunar-roscpp=1.13.7-0stretch-20180817-161354-0800`
 
 Binary Packages:
 
-- `ros-lunar-roscreate=1.14.2-0stretch-20180205-143504-0800`
+- `ros-lunar-roscpp=1.13.7-0stretch-20180817-161354-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8430,11 +8460,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180205-144522-0800`
+### `dpkg` source package: `ros-lunar-roscreate=1.14.4-0stretch-20180817-154605-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180205-144522-0800`
+- `ros-lunar-roscreate=1.14.4-0stretch-20180817-154605-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8444,11 +8474,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosgraph=1.13.6-0stretch-20180205-141418-0800`
+### `dpkg` source package: `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180817-161234-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosgraph=1.13.6-0stretch-20180205-141418-0800`
+- `ros-lunar-rosgraph-msgs=1.11.2-0stretch-20180817-161234-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8458,11 +8488,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslang=1.14.2-0stretch-20180205-142139-0800`
+### `dpkg` source package: `ros-lunar-rosgraph=1.13.7-0stretch-20180817-154607-0800`
 
 Binary Packages:
 
-- `ros-lunar-roslang=1.14.2-0stretch-20180205-142139-0800`
+- `ros-lunar-rosgraph=1.13.7-0stretch-20180817-154607-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8472,11 +8502,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslaunch=1.13.6-0stretch-20180205-145847-0800`
+### `dpkg` source package: `ros-lunar-roslang=1.14.4-0stretch-20180817-154436-0800`
 
 Binary Packages:
 
-- `ros-lunar-roslaunch=1.13.6-0stretch-20180205-145847-0800`
+- `ros-lunar-roslang=1.14.4-0stretch-20180817-154436-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8486,11 +8516,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslib=1.14.2-0stretch-20180205-142614-0800`
+### `dpkg` source package: `ros-lunar-roslaunch=1.13.7-0stretch-20180817-162629-0800`
 
 Binary Packages:
 
-- `ros-lunar-roslib=1.14.2-0stretch-20180205-142614-0800`
+- `ros-lunar-roslaunch=1.13.7-0stretch-20180817-162629-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8500,11 +8530,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslisp=1.9.21-0stretch-20180205-144849-0800`
+### `dpkg` source package: `ros-lunar-roslib=1.14.4-0stretch-20180817-154730-0800`
 
 Binary Packages:
 
-- `ros-lunar-roslisp=1.9.21-0stretch-20180205-144849-0800`
+- `ros-lunar-roslib=1.14.4-0stretch-20180817-154730-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8514,11 +8544,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roslz4=1.13.6-0stretch-20180205-142951-0800`
+### `dpkg` source package: `ros-lunar-roslisp=1.9.21-0stretch-20180817-161405-0800`
 
 Binary Packages:
 
-- `ros-lunar-roslz4=1.13.6-0stretch-20180205-142951-0800`
+- `ros-lunar-roslisp=1.9.21-0stretch-20180817-161405-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8528,11 +8558,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmake=1.14.2-0stretch-20180205-141429-0800`
+### `dpkg` source package: `ros-lunar-roslz4=1.13.7-0stretch-20180817-160351-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosmake=1.14.2-0stretch-20180205-141429-0800`
+- `ros-lunar-roslz4=1.13.7-0stretch-20180817-160351-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8542,11 +8572,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmaster=1.13.6-0stretch-20180205-141615-0800`
+### `dpkg` source package: `ros-lunar-rosmake=1.14.4-0stretch-20180817-154433-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosmaster=1.13.6-0stretch-20180205-141615-0800`
+- `ros-lunar-rosmake=1.14.4-0stretch-20180817-154433-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8556,11 +8586,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosmsg=1.13.6-0stretch-20180205-151125-0800`
+### `dpkg` source package: `ros-lunar-rosmaster=1.13.7-0stretch-20180817-154944-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosmsg=1.13.6-0stretch-20180205-151125-0800`
+- `ros-lunar-rosmaster=1.13.7-0stretch-20180817-154944-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8570,11 +8600,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosnode=1.13.6-0stretch-20180205-151448-0800`
+### `dpkg` source package: `ros-lunar-rosmsg=1.13.7-0stretch-20180817-165617-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosnode=1.13.6-0stretch-20180205-151448-0800`
+- `ros-lunar-rosmsg=1.13.7-0stretch-20180817-165617-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8584,11 +8614,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosout=1.13.6-0stretch-20180205-145559-0800`
+### `dpkg` source package: `ros-lunar-rosnode=1.13.7-0stretch-20180817-170033-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosout=1.13.6-0stretch-20180205-145559-0800`
+- `ros-lunar-rosnode=1.13.7-0stretch-20180817-170033-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8598,11 +8628,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rospack=2.5.0-0stretch-20180205-142248-0800`
+### `dpkg` source package: `ros-lunar-rosout=1.13.7-0stretch-20180817-162257-0800`
 
 Binary Packages:
 
-- `ros-lunar-rospack=2.5.0-0stretch-20180205-142248-0800`
+- `ros-lunar-rosout=1.13.7-0stretch-20180817-162257-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8612,11 +8642,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosparam=1.13.6-0stretch-20180205-141631-0800`
+### `dpkg` source package: `ros-lunar-rospack=2.5.1-0stretch-20180817-154357-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosparam=1.13.6-0stretch-20180205-141631-0800`
+- `ros-lunar-rospack=2.5.1-0stretch-20180817-154357-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8626,11 +8656,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rospy=1.13.6-0stretch-20180205-145604-0800`
+### `dpkg` source package: `ros-lunar-rosparam=1.13.7-0stretch-20180817-154928-0800`
 
 Binary Packages:
 
-- `ros-lunar-rospy=1.13.6-0stretch-20180205-145604-0800`
+- `ros-lunar-rosparam=1.13.7-0stretch-20180817-154928-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8640,11 +8670,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosservice=1.13.6-0stretch-20180205-151416-0800`
+### `dpkg` source package: `ros-lunar-rospy=1.13.7-0stretch-20180817-162251-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosservice=1.13.6-0stretch-20180205-151416-0800`
+- `ros-lunar-rospy=1.13.7-0stretch-20180817-162251-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8654,11 +8684,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostest=1.13.6-0stretch-20180205-150131-0800`
+### `dpkg` source package: `ros-lunar-rosservice=1.13.7-0stretch-20180817-171041-0800`
 
 Binary Packages:
 
-- `ros-lunar-rostest=1.13.6-0stretch-20180205-150131-0800`
+- `ros-lunar-rosservice=1.13.7-0stretch-20180817-171041-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8668,11 +8698,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostime=0.6.9-0stretch-20180205-142758-0800`
+### `dpkg` source package: `ros-lunar-rostest=1.13.7-0stretch-20180817-163246-0800`
 
 Binary Packages:
 
-- `ros-lunar-rostime=0.6.9-0stretch-20180205-142758-0800`
+- `ros-lunar-rostest=1.13.7-0stretch-20180817-163246-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8682,11 +8712,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rostopic=1.13.6-0stretch-20180205-151130-0800`
+### `dpkg` source package: `ros-lunar-rostime=0.6.11-0stretch-20180817-154440-0800`
 
 Binary Packages:
 
-- `ros-lunar-rostopic=1.13.6-0stretch-20180205-151130-0800`
+- `ros-lunar-rostime=0.6.11-0stretch-20180817-154440-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8696,11 +8726,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-rosunit=1.14.2-0stretch-20180205-142904-0800`
+### `dpkg` source package: `ros-lunar-rostopic=1.13.7-0stretch-20180817-165637-0800`
 
 Binary Packages:
 
-- `ros-lunar-rosunit=1.14.2-0stretch-20180205-142904-0800`
+- `ros-lunar-rostopic=1.13.7-0stretch-20180817-165637-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8710,11 +8740,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-roswtf=1.13.6-0stretch-20180205-151556-0800`
+### `dpkg` source package: `ros-lunar-rosunit=1.14.4-0stretch-20180817-155136-0800`
 
 Binary Packages:
 
-- `ros-lunar-roswtf=1.13.6-0stretch-20180205-151556-0800`
+- `ros-lunar-rosunit=1.14.4-0stretch-20180817-155136-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8724,11 +8754,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-self-test=1.9.3-0stretch-20180517-123215-0800`
+### `dpkg` source package: `ros-lunar-roswtf=1.13.7-0stretch-20180817-171205-0800`
 
 Binary Packages:
 
-- `ros-lunar-self-test=1.9.3-0stretch-20180517-123215-0800`
+- `ros-lunar-roswtf=1.13.7-0stretch-20180817-171205-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8738,11 +8768,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-sensor-msgs=1.12.6-0stretch-20180517-122048-0800`
+### `dpkg` source package: `ros-lunar-self-test=1.9.3-0stretch-20180817-195225-0800`
 
 Binary Packages:
 
-- `ros-lunar-sensor-msgs=1.12.6-0stretch-20180517-122048-0800`
+- `ros-lunar-self-test=1.9.3-0stretch-20180817-195225-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8752,11 +8782,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-shape-msgs=1.12.6-0stretch-20180517-122026-0800`
+### `dpkg` source package: `ros-lunar-sensor-msgs=1.12.6-0stretch-20180817-165805-0800`
 
 Binary Packages:
 
-- `ros-lunar-shape-msgs=1.12.6-0stretch-20180517-122026-0800`
+- `ros-lunar-sensor-msgs=1.12.6-0stretch-20180817-165805-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8766,11 +8796,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-smach-msgs=2.0.1-0stretch-20180205-144231-0800`
+### `dpkg` source package: `ros-lunar-shape-msgs=1.12.6-0stretch-20180817-161456-0800`
 
 Binary Packages:
 
-- `ros-lunar-smach-msgs=2.0.1-0stretch-20180205-144231-0800`
+- `ros-lunar-shape-msgs=1.12.6-0stretch-20180817-161456-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8780,11 +8810,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-smach-ros=2.0.1-0stretch-20180517-122436-0800`
+### `dpkg` source package: `ros-lunar-smach-msgs=2.0.1-0stretch-20180817-161236-0800`
 
 Binary Packages:
 
-- `ros-lunar-smach-ros=2.0.1-0stretch-20180517-122436-0800`
+- `ros-lunar-smach-msgs=2.0.1-0stretch-20180817-161236-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8794,11 +8824,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-smach=2.0.1-0stretch-20180205-141811-0800`
+### `dpkg` source package: `ros-lunar-smach-ros=2.0.1-0stretch-20180817-171300-0800`
 
 Binary Packages:
 
-- `ros-lunar-smach=2.0.1-0stretch-20180205-141811-0800`
+- `ros-lunar-smach-ros=2.0.1-0stretch-20180817-171300-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8808,11 +8838,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-smclib=1.8.1-0stretch-20180205-142058-0800`
+### `dpkg` source package: `ros-lunar-smach=2.0.1-0stretch-20180808-132134-0800`
 
 Binary Packages:
 
-- `ros-lunar-smclib=1.8.1-0stretch-20180205-142058-0800`
+- `ros-lunar-smach=2.0.1-0stretch-20180808-132134-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8822,11 +8852,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-std-msgs=0.5.11-0stretch-20180205-143704-0800`
+### `dpkg` source package: `ros-lunar-smclib=1.8.3-0stretch-20180817-154610-0800`
 
 Binary Packages:
 
-- `ros-lunar-std-msgs=0.5.11-0stretch-20180205-143704-0800`
+- `ros-lunar-smclib=1.8.3-0stretch-20180817-154610-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8836,11 +8866,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-std-srvs=1.11.2-0stretch-20180205-143724-0800`
+### `dpkg` source package: `ros-lunar-std-msgs=0.5.11-0stretch-20180817-160449-0800`
 
 Binary Packages:
 
-- `ros-lunar-std-srvs=1.11.2-0stretch-20180205-143724-0800`
+- `ros-lunar-std-msgs=0.5.11-0stretch-20180817-160449-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8850,11 +8880,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-stereo-msgs=1.12.6-0stretch-20180517-122511-0800`
+### `dpkg` source package: `ros-lunar-std-srvs=1.11.2-0stretch-20180817-160459-0800`
 
 Binary Packages:
 
-- `ros-lunar-stereo-msgs=1.12.6-0stretch-20180517-122511-0800`
+- `ros-lunar-std-srvs=1.11.2-0stretch-20180817-160459-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8864,11 +8894,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf-conversions=1.11.9-0stretch-20180517-132514-0800`
+### `dpkg` source package: `ros-lunar-stereo-msgs=1.12.6-0stretch-20180817-174317-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf-conversions=1.11.9-0stretch-20180517-132514-0800`
+- `ros-lunar-stereo-msgs=1.12.6-0stretch-20180817-174317-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8878,11 +8908,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-kdl=0.5.17-0stretch-20180517-130544-0800`
+### `dpkg` source package: `ros-lunar-tf-conversions=1.11.9-0stretch-20180817-194723-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-kdl=0.5.17-0stretch-20180517-130544-0800`
+- `ros-lunar-tf-conversions=1.11.9-0stretch-20180817-194723-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8892,11 +8922,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-msgs=0.5.17-0stretch-20180517-122154-0800`
+### `dpkg` source package: `ros-lunar-tf2-kdl=0.5.18-0stretch-20180817-210702-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-msgs=0.5.17-0stretch-20180517-122154-0800`
+- `ros-lunar-tf2-kdl=0.5.18-0stretch-20180817-210702-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8906,11 +8936,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-py=0.5.17-0stretch-20180517-125543-0800`
+### `dpkg` source package: `ros-lunar-tf2-msgs=0.5.18-0stretch-20180817-161521-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-py=0.5.17-0stretch-20180517-125543-0800`
+- `ros-lunar-tf2-msgs=0.5.18-0stretch-20180817-161521-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8920,11 +8950,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-ros=0.5.17-0stretch-20180517-125905-0800`
+### `dpkg` source package: `ros-lunar-tf2-py=0.5.18-0stretch-20180817-163045-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-ros=0.5.17-0stretch-20180517-125905-0800`
+- `ros-lunar-tf2-py=0.5.18-0stretch-20180817-163045-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8934,11 +8964,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2=0.5.17-0stretch-20180517-123409-0800`
+### `dpkg` source package: `ros-lunar-tf2-ros=0.5.18-0stretch-20180817-170749-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2=0.5.17-0stretch-20180517-123409-0800`
+- `ros-lunar-tf2-ros=0.5.18-0stretch-20180817-170749-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8948,11 +8978,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf=1.11.9-0stretch-20180517-130513-0800`
+### `dpkg` source package: `ros-lunar-tf2=0.5.18-0stretch-20180817-162202-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf=1.11.9-0stretch-20180517-130513-0800`
+- `ros-lunar-tf2=0.5.18-0stretch-20180817-162202-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8962,11 +8992,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-topic-tools=1.13.6-0stretch-20180205-150403-0800`
+### `dpkg` source package: `ros-lunar-tf=1.11.9-0stretch-20180817-172833-0800`
 
 Binary Packages:
 
-- `ros-lunar-topic-tools=1.13.6-0stretch-20180205-150403-0800`
+- `ros-lunar-tf=1.11.9-0stretch-20180817-172833-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8976,11 +9006,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-trajectory-msgs=1.12.6-0stretch-20180517-122031-0800`
+### `dpkg` source package: `ros-lunar-topic-tools=1.13.7-0stretch-20180817-163656-0800`
 
 Binary Packages:
 
-- `ros-lunar-trajectory-msgs=1.12.6-0stretch-20180517-122031-0800`
+- `ros-lunar-topic-tools=1.13.7-0stretch-20180817-163656-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8990,11 +9020,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-urdf-parser-plugin=1.12.12-0stretch-20180205-142447-0800`
+### `dpkg` source package: `ros-lunar-trajectory-msgs=1.12.6-0stretch-20180817-161500-0800`
 
 Binary Packages:
 
-- `ros-lunar-urdf-parser-plugin=1.12.12-0stretch-20180205-142447-0800`
+- `ros-lunar-trajectory-msgs=1.12.6-0stretch-20180817-161500-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9004,11 +9034,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-urdf=1.12.12-0stretch-20180316-130631-0800`
+### `dpkg` source package: `ros-lunar-urdf-parser-plugin=1.12.12-0stretch-20180808-131756-0800`
 
 Binary Packages:
 
-- `ros-lunar-urdf=1.12.12-0stretch-20180316-130631-0800`
+- `ros-lunar-urdf-parser-plugin=1.12.12-0stretch-20180808-131756-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9018,11 +9048,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-visualization-msgs=1.12.6-0stretch-20180517-122327-0800`
+### `dpkg` source package: `ros-lunar-urdf=1.12.12-0stretch-20180817-163808-0800`
 
 Binary Packages:
 
-- `ros-lunar-visualization-msgs=1.12.6-0stretch-20180517-122327-0800`
+- `ros-lunar-urdf=1.12.12-0stretch-20180817-163808-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9032,11 +9062,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-xacro=1.12.2-0stretch-20180503-114116-0800`
+### `dpkg` source package: `ros-lunar-visualization-msgs=1.12.6-0stretch-20180817-161506-0800`
 
 Binary Packages:
 
-- `ros-lunar-xacro=1.12.2-0stretch-20180503-114116-0800`
+- `ros-lunar-visualization-msgs=1.12.6-0stretch-20180817-161506-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9046,11 +9076,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-xmlrpcpp=1.13.6-0stretch-20180205-143045-0800`
+### `dpkg` source package: `ros-lunar-xacro=1.12.2-0stretch-20180817-210809-0800`
 
 Binary Packages:
 
-- `ros-lunar-xmlrpcpp=1.13.6-0stretch-20180205-143045-0800`
+- `ros-lunar-xacro=1.12.2-0stretch-20180817-210809-0800`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-lunar-xmlrpcpp=1.13.7-0stretch-20180817-154827-0800`
+
+Binary Packages:
+
+- `ros-lunar-xmlrpcpp=1.13.7-0stretch-20180817-154827-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
