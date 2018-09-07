@@ -1,7 +1,7 @@
 ## `rabbitmq:alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:cf94f7f21fd07b3564957aea4dc984f1e48f7290221c1960c11459704f041db2
+$ docker pull rabbitmq@sha256:a9c08428db36ab93e383efb765d8481ae441d53a563aa0ce348c5c6f9aa43a9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -215,14 +215,14 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:c2477d53be0d4ea1a694644311d09d43b7956a742a72bf9159d4954cd73683fc
+$ docker pull rabbitmq@sha256:176083ea86e318ce74e1e44b8ea54e2f66cdf44df5bdc0be5a814542753ffc84
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31989482 bytes)**  
+-	Total Size: **32.0 MB (31992029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c93bdfff0a5744d174460d00dbe1c95f6448b7828c84f70862b6df044136153`
+-	Image ID: `sha256:7265fb0c0d5d71577c60d1f76d8d547983f7a2c917b6a09b8f95b5e469829178`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -233,43 +233,43 @@ ADD file:ebd40cda2f6087daf4d14e6dc1ee0b4a0fb5dc96c70129be8e07de0e5c628312 in /
 COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
 # Fri, 06 Jul 2018 15:02:07 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Jul 2018 10:53:45 GMT
+# Fri, 07 Sep 2018 00:48:29 GMT
 RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
-# Wed, 11 Jul 2018 10:53:47 GMT
+# Fri, 07 Sep 2018 00:48:30 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Wed, 11 Jul 2018 10:53:54 GMT
+# Fri, 07 Sep 2018 00:48:32 GMT
 RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
-# Wed, 11 Jul 2018 10:53:55 GMT
+# Fri, 07 Sep 2018 00:48:33 GMT
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Wed, 11 Jul 2018 10:53:55 GMT
+# Fri, 07 Sep 2018 00:48:33 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Jul 2018 10:53:55 GMT
+# Fri, 07 Sep 2018 00:48:33 GMT
 ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Jul 2018 10:53:55 GMT
+# Fri, 07 Sep 2018 00:48:33 GMT
 ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Jul 2018 10:53:55 GMT
+# Fri, 07 Sep 2018 00:48:33 GMT
 ENV RABBITMQ_VERSION=3.7.7
-# Wed, 11 Jul 2018 10:53:56 GMT
+# Fri, 07 Sep 2018 00:48:34 GMT
 ENV RABBITMQ_GITHUB_TAG=v3.7.7
-# Wed, 01 Aug 2018 11:46:12 GMT
+# Fri, 07 Sep 2018 00:48:39 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		wget 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
-# Wed, 01 Aug 2018 11:46:12 GMT
+# Fri, 07 Sep 2018 00:48:39 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 01 Aug 2018 11:46:13 GMT
+# Fri, 07 Sep 2018 00:48:40 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
-# Wed, 01 Aug 2018 11:46:13 GMT
+# Fri, 07 Sep 2018 00:48:40 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 01 Aug 2018 11:46:14 GMT
+# Fri, 07 Sep 2018 00:48:41 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 01 Aug 2018 11:46:15 GMT
+# Fri, 07 Sep 2018 00:48:41 GMT
 RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
-# Wed, 01 Aug 2018 11:46:15 GMT
+# Fri, 07 Sep 2018 00:48:42 GMT
 COPY file:03f4165e1aefa09a8d97a5e402638f735384652cec9e89f399f563063d59ab58 in /usr/local/bin/ 
-# Wed, 01 Aug 2018 11:46:16 GMT
+# Fri, 07 Sep 2018 00:48:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 01 Aug 2018 11:46:16 GMT
+# Fri, 07 Sep 2018 00:48:42 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 01 Aug 2018 11:46:16 GMT
+# Fri, 07 Sep 2018 00:48:42 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -282,37 +282,37 @@ CMD ["rabbitmq-server"]
 		Last Modified: Fri, 06 Jul 2018 15:02:43 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae68ec2c4b66a1ddd95998f177dbfeb1442c6ce1411916b3801221abd105c6f`  
-		Last Modified: Wed, 11 Jul 2018 10:55:47 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:93395322a9ab7b8303d2b2677ddc38efbfc791a55b6d7c4214fa9e200ea016b4`  
+		Last Modified: Fri, 07 Sep 2018 00:51:00 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c48a5fb3e649e78c97521547e4aebccc3781f46cb89541c266f04e2999b43078`  
-		Last Modified: Wed, 11 Jul 2018 10:55:47 GMT  
-		Size: 9.1 KB (9127 bytes)  
+	-	`sha256:dfc5f6e67f8e1f8d393156650cbf2e615131464d202cc846320322d9b129039a`  
+		Last Modified: Fri, 07 Sep 2018 00:51:00 GMT  
+		Size: 9.1 KB (9118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84d2158a94acaad710b72d22111260734c66c6215029b2e0b9ffcc8b6bd9565a`  
-		Last Modified: Wed, 11 Jul 2018 10:55:50 GMT  
-		Size: 18.9 MB (18866924 bytes)  
+	-	`sha256:91a58d70b5da167499dd68a10af69e807ee4c4c8e765ce576e4633c1ea5e8b70`  
+		Last Modified: Fri, 07 Sep 2018 00:51:03 GMT  
+		Size: 18.9 MB (18868305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e744a031c58134ddd277eddcc4eac27b743671568f3808bc025dcafa9b0ce42`  
-		Last Modified: Wed, 01 Aug 2018 11:53:00 GMT  
-		Size: 10.8 MB (10836419 bytes)  
+	-	`sha256:9e3d203e48ea2f34ea9399acf851cf455b4a53b4174d5197a5d5e32c7cbc04eb`  
+		Last Modified: Fri, 07 Sep 2018 00:51:00 GMT  
+		Size: 10.8 MB (10837600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff96bc76a49e8814bc8f475e744db30939d5632fea72d4c92aa6069da0c944f7`  
-		Last Modified: Wed, 01 Aug 2018 11:52:59 GMT  
-		Size: 211.0 B  
+	-	`sha256:aa8c6c9ef7df4dfc5be4160a5ed953c831b477fba8c84ace17969cccca6e74e7`  
+		Last Modified: Fri, 07 Sep 2018 00:51:00 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9cb02acfea4eafd98c3055810bbb63f908b69af7c5ee496526cbe39d4c121c`  
-		Last Modified: Wed, 01 Aug 2018 11:52:59 GMT  
-		Size: 147.0 B  
+	-	`sha256:c36a4c7571a02bfee2c6df745f2cea355ee9c22a6e76340b669abbba71cc9b86`  
+		Last Modified: Fri, 07 Sep 2018 00:50:59 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:902e5051db26a81052e8faad02b369d2891c3f5e9fc658ab8c7175fb28891cd4`  
-		Last Modified: Wed, 01 Aug 2018 11:52:59 GMT  
+	-	`sha256:9dcb1126bd9d96852bb2fe203fac74d9b56e2a574b28026403c00b2d734e6a95`  
+		Last Modified: Fri, 07 Sep 2018 00:50:59 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edda6eb163d592be40e00addd727889135132d7dee173ee707bd2faec74a6567`  
-		Last Modified: Wed, 01 Aug 2018 11:52:59 GMT  
-		Size: 4.2 KB (4177 bytes)  
+	-	`sha256:1d60d70281fb4cf10ad0af26f242d395b9c5c4410acd0f598b0c32158505b4ab`  
+		Last Modified: Fri, 07 Sep 2018 00:50:59 GMT  
+		Size: 4.2 KB (4181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; ppc64le
