@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c91d4458d55d74c485e582708f1d954342bc2a9af4c0e9feb7c27b95c5c6c7f4`
-- Created: `2018-08-08T14:25:21.317937723Z`
+- Image ID: `sha256:22afec10a0e90ae936f882335640feb64f7b91bce2ccbdc45bbe2657f893f800`
+- Created: `2018-09-05T00:22:40.828856502Z`
 - Virtual Size: ~ 233.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -218,14 +218,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/4.3-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u15`
+### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u16`
 
 Binary Packages:
 
-- `libdns-export100=1:9.9.5.dfsg-9+deb8u15`
-- `libirs-export91=1:9.9.5.dfsg-9+deb8u15`
-- `libisc-export95=1:9.9.5.dfsg-9+deb8u15`
-- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u15`
+- `libdns-export100=1:9.9.5.dfsg-9+deb8u16`
+- `libirs-export91=1:9.9.5.dfsg-9+deb8u16`
+- `libisc-export95=1:9.9.5.dfsg-9+deb8u16`
+- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u16`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -234,17 +234,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u15
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.dsc' bind9_9.9.5.dfsg-9+deb8u15.dsc 3620 SHA256:1e90d3bdd8394b9f96aa494a0f5146ab52bc8a6c712cda9508f881dd9a0b28c1
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u15.diff.gz' bind9_9.9.5.dfsg-9+deb8u15.diff.gz 138089 SHA256:0e189a414fe9e73617e6ecdb20b4517d718c23e565cead79146e3c95aa886135
+$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u16
+'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u16.dsc' bind9_9.9.5.dfsg-9+deb8u16.dsc 3624 SHA256:76b3a3fd54dfc77c2b9982b7eae28437529c229b6076ac214ee39c659125ffb4
+'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
+'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u16.diff.gz' bind9_9.9.5.dfsg-9+deb8u16.diff.gz 138716 SHA256:8b0e9215332f39854856246939202f4d63eb69aeb9316037f55df582db058c33
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u15/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u16/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u16/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.9.5.dfsg-9+deb8u16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binfmt-support=2.1.5-1`
 
