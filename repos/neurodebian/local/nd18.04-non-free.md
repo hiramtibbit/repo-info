@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a29575ec6628c4ab972ada0bb231e975ccda3ac4aa6639d2027078ba572346e`
-- Created: `2018-08-22T19:09:50.279359477Z`
+- Image ID: `sha256:1ef102a64032ed1ec10ae8328af5af60e6208041356bfbd8f63d832b29fd498b`
+- Created: `2018-09-05T23:04:15.250894697Z`
 - Virtual Size: ~ 94.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -127,8 +127,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=10.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
