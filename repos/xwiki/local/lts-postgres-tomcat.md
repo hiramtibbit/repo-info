@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e8fb07018830332d74e7dda83125e6ae12385e7940fbcb97e17303b6821b583`
-- Created: `2018-08-30T22:13:13.998982567Z`
+- Image ID: `sha256:ad5c32dd7b1dc0c62279e187c28c2857b3e87494f166922f24a72acfb2d9ecf9`
+- Created: `2018-09-05T19:44:12.546588623Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2412,11 +2412,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lapack/3.7.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lapack/3.7.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lcms2=2.8-4`
+### `dpkg` source package: `lcms2=2.8-4+deb9u1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.8-4`
+- `liblcms2-2:amd64=2.8-4+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -2427,17 +2427,17 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.8-4
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.dsc' lcms2_2.8-4.dsc 1997 SHA256:3b92900948848eef62fa91b78f6b6661bd84eae6c49c224248c7c48a09b5f028
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.debian.tar.xz' lcms2_2.8-4.debian.tar.xz 11036 SHA256:50c0040fc92e1f2ca27740f608ae248acdd5b21a633f34cf2fe4d66f1d05c4b4
+$ apt-get source -qq --print-uris lcms2=2.8-4+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8-4+deb9u1.dsc' lcms2_2.8-4+deb9u1.dsc 2025 SHA256:47144a3cf2a008da72f32747f7e07be6e940bdc4fbeef80c07c2c65346f8ec43
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
+'http://security.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.8-4+deb9u1.debian.tar.xz' lcms2_2.8-4+deb9u1.debian.tar.xz 11492 SHA256:9e1d8156c301000aec3af9c861c5db4984bb820caca724e5d5bc8bd39cb5fed3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.8-4/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.8-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lcms2/2.8-4+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.8-4+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.8-4+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libabw=0.1.1-4`
 
