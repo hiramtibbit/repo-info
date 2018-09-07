@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f73ec3907d9992ce06e82f41275edda3f671e57e663bcb2850c8fc5c33027af`
-- Created: `2018-08-22T18:01:07.129333036Z`
-- Virtual Size: ~ 640.72 Mb  
+- Image ID: `sha256:9831ccfc5dd2e07a419427aa3badbb5b086da458fd7db6c3c5b12fbdced25aee`
+- Created: `2018-09-05T22:41:17.238116233Z`
+- Virtual Size: ~ 640.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -245,8 +245,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=10.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
+'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -2395,13 +2395,13 @@ $ apt-get source -qq --print-uris libwmf=0.2.8.4-12
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-12.debian.tar.xz' libwmf_0.2.8.4-12.debian.tar.xz 11952 SHA256:579cc19e9199e30b1097559f031a9814f4990206487cb4c402defb68f55be1cd
 ```
 
-### `dpkg` source package: `libx11=2:1.6.4-3`
+### `dpkg` source package: `libx11=2:1.6.4-3ubuntu0.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.4-3`
-- `libx11-data=2:1.6.4-3`
-- `libx11-dev:amd64=2:1.6.4-3`
+- `libx11-6:amd64=2:1.6.4-3ubuntu0.1`
+- `libx11-data=2:1.6.4-3ubuntu0.1`
+- `libx11-dev:amd64=2:1.6.4-3ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2410,10 +2410,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.4-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3.dsc' libx11_1.6.4-3.dsc 2397 SHA256:4c5d6add2ba969067ca111c827ae94264e4c22776e22f318d264545dc1c6a300
+$ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.dsc' libx11_1.6.4-3ubuntu0.1.dsc 2496 SHA256:522207baf69f09b8fd8a8a9d75fa7928c7378fe15db62ef2764ee70c880482e8
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3.diff.gz' libx11_1.6.4-3.diff.gz 41366 SHA256:2c936827bca63eaf5b66683bdcd0ecf013d152c35439f792475db85c5c2338fd
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.diff.gz' libx11_1.6.4-3ubuntu0.1.diff.gz 43542 SHA256:d32eb7b1164342a5571799f89fef0d53f96a59d814f848a19ed637a4b5e57835
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -2625,19 +2625,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz 11124 SHA256:34a1ce5f77815f20941f962019cef0ad6ed0da77179f05609a5c67274485b477
 ```
 
-### `dpkg` source package: `linux=4.15.0-32.35`
+### `dpkg` source package: `linux=4.15.0-33.36`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-32.35`
+- `linux-libc-dev:amd64=4.15.0-33.36`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-33.36
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-33.36.dsc' linux_4.15.0-33.36.dsc 7499 SHA256:f75d52f9b8c339c014e6db74c3b9a6cc2c63da3e8860a4322e3e82d04a558913
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-33.36.diff.gz' linux_4.15.0-33.36.diff.gz 7949975 SHA256:f48554541f2491837d75f48beb1a34038c95bc35ff02ac50871b4ad545951ee5
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 

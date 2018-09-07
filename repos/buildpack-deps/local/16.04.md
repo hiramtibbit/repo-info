@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45f86d3a19d81db95f28d34ad415fec57353bdb15add67b17856c817703cc8e2`
-- Created: `2018-08-22T18:19:21.101299321Z`
-- Virtual Size: ~ 637.30 Mb  
+- Image ID: `sha256:0cb82b18918d7e293b2d69a8f91ae5c818b014ef14f76fad09ffb6b5ff3187e8`
+- Created: `2018-09-05T22:51:17.417013487Z`
+- Virtual Size: ~ 637.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -2053,11 +2053,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.5.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.5.debian.tar.xz 37732 SHA256:f7d5ac6d8014f0d40c49cb32cbded6655d410a417512d4bde977a5a5175a987c
 ```
 
-### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.8`
+### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.10`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.1-4ubuntu0.16.04.8`
+- `libgd3:amd64=2.1.1-4ubuntu0.16.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2073,9 +2073,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.10.dsc' libgd2_2.1.1-4ubuntu0.16.04.10.dsc 2336 SHA256:f7dfbc4dd3de3ff4f5af98d2b2a216a84e2940d1a86988a516ef7de99f578ad1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.10.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.10.debian.tar.xz 57932 SHA256:ae41a92147f8b605789d1ce30dbb9f816829af336f0016e181b888dc00cc45ce
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -2542,13 +2547,13 @@ $ apt-get source -qq --print-uris libwmf=0.2.8.4-10.5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5ubuntu1.debian.tar.xz' libwmf_0.2.8.4-10.5ubuntu1.debian.tar.xz 11696 SHA256:e448f84c36c2921403cf47e19090ad17be71877c3ec62cdf4b4c8a3e8869d5ee
 ```
 
-### `dpkg` source package: `libx11=2:1.6.3-1ubuntu2`
+### `dpkg` source package: `libx11=2:1.6.3-1ubuntu2.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.3-1ubuntu2`
-- `libx11-data=2:1.6.3-1ubuntu2`
-- `libx11-dev:amd64=2:1.6.3-1ubuntu2`
+- `libx11-6:amd64=2:1.6.3-1ubuntu2.1`
+- `libx11-data=2:1.6.3-1ubuntu2.1`
+- `libx11-dev:amd64=2:1.6.3-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2557,10 +2562,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.3-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.dsc' libx11_1.6.3-1ubuntu2.dsc 2597 SHA256:bc78ad8a487d2ba8a9b5e521053a1bcb0f8ed12b823fd32a3aa21d95a34fc4c3
+$ apt-get source -qq --print-uris libx11=2:1.6.3-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.1.dsc' libx11_1.6.3-1ubuntu2.1.dsc 2603 SHA256:efb03b486de6587de9572f57f42948125a8ea5ad47f6e872f2b9c17a150de103
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3.orig.tar.gz' libx11_1.6.3.orig.tar.gz 3105928 SHA256:0b03b9d22f4c9e59b4ba498f294e297f013cae27050dfa0f3496640200db5376
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.diff.gz' libx11_1.6.3-1ubuntu2.diff.gz 41227 SHA256:0e48fbe1d54b2e8e0412cbe62e3a377106fa332b954d5fd4d08f3d296431d076
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.1.diff.gz' libx11_1.6.3-1ubuntu2.1.diff.gz 44832 SHA256:205f80b6f3110c068f3bbf18b177102399b67634ef5c436a71d1f90b58ac753f
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -2900,20 +2905,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-133.159`
+### `dpkg` source package: `linux=4.4.0-134.160`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-133.159`
+- `linux-libc-dev:amd64=4.4.0-134.160`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-134.160
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-134.160.dsc' linux_4.4.0-134.160.dsc 9418 SHA256:7f32a5d9b690af97c1690537fc63164efc61bdcf05611b8edf8fc7be6374d6f0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-134.160.diff.gz' linux_4.4.0-134.160.diff.gz 14744006 SHA256:6af88b15c19fca2cfd5b1ff2a6c918b597c1aa7047f1c3c7403ebf10cc6a29b8
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
