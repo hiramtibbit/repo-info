@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a543f1358e3fdf424c335c8a02a7b922dcf241bbad33d5de79925a387ca0adf2`
-- Created: `2018-09-03T18:31:45.989835282Z`
-- Virtual Size: ~ 350.18 Mb  
+- Image ID: `sha256:f236f15ea0bae1cd217297c059ff062717bb736635867f0a65353b1aa9003ef8`
+- Created: `2018-09-05T10:58:21.387987729Z`
+- Virtual Size: ~ 350.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
@@ -2096,11 +2096,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:7.4p1-10+deb9u3`
+### `dpkg` source package: `openssh=1:7.4p1-10+deb9u4`
 
 Binary Packages:
 
-- `openssh-client=1:7.4p1-10+deb9u3`
+- `openssh-client=1:7.4p1-10+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2117,17 +2117,17 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-10+deb9u3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-10+deb9u3.dsc' openssh_7.4p1-10+deb9u3.dsc 2924 SHA256:1b4bcec19e41f87bdb24261e139c0e50d54ef8345ae57d1398e8f3a2afe38dd8
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-10+deb9u3.debian.tar.xz' openssh_7.4p1-10+deb9u3.debian.tar.xz 162772 SHA256:7a9702bcbdb97617534179f27f3a2128d8991d24bbf89cc219c8838a3fa508eb
+$ apt-get source -qq --print-uris openssh=1:7.4p1-10+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_7.4p1-10+deb9u4.dsc' openssh_7.4p1-10+deb9u4.dsc 2579 SHA256:57eb36cd403b8f9f06d776f3f2f0ba4ddb52aff01ab88c134099838bff1c245f
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_7.4p1-10+deb9u4.debian.tar.xz' openssh_7.4p1-10+deb9u4.debian.tar.xz 163928 SHA256:cf02250803a0a8762b520ad16679736e2177e06a1dff67c018b32d668070e686
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:7.4p1-10+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.4p1-10+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.4p1-10+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:7.4p1-10+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:7.4p1-10+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:7.4p1-10+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2l-2+deb9u3`
 
