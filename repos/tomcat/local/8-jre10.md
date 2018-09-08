@@ -797,20 +797,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.10
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.dsc' dash_0.5.8-2.10.dsc 1618 SHA256:1e8fdac0880d57d8ed5eb11f9f1750a67c71a7200180cf3ed5aa3e74dab3e4c5
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.debian.tar.xz' dash_0.5.8-2.10.debian.tar.xz 43920 SHA256:0d870b0cf9b3ad40e4d4f1e3d4d9097f4d62151693a48f34cb1d49865fd4abdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.8-2.10/
 
-- https://sources.debian.net/src/dash/0.5.8-2.10/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.8-2.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.8-2.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.1`
 
@@ -886,20 +879,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dconf=0.28.0-2
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.28.0-2.dsc' dconf_0.28.0-2.dsc 2483 SHA256:20a871ff4295663599f42de94aa3cab92e17ecae96dcfb45cb8f202647996746
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.28.0.orig.tar.xz' dconf_0.28.0.orig.tar.xz 99340 SHA256:61d3b3865ef58b729c3b39aa0979f886c014aa8362f93dcfc74bf5648ed9c742
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.28.0-2.debian.tar.xz' dconf_0.28.0-2.debian.tar.xz 8804 SHA256:99a05f3bfc9c17166ee8445f61a26abb2666dd8deaa66aecd57742d04fdb604f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dconf/0.28.0-2/
 
-- https://sources.debian.net/src/dconf/0.28.0-2/ (for browsing the source)
-- https://sources.debian.net/src/dconf/0.28.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dconf/0.28.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -1377,20 +1363,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.58.0-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.0-2.dsc' glib2.0_2.58.0-2.dsc 3261 SHA256:c2649e69fd2efcc7eedcaa28a7d67bab5bc88b0751deff2e7a1bb6eddff81408
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.0.orig.tar.xz' glib2.0_2.58.0.orig.tar.xz 4900456 SHA256:c0f4ce0730b4f95c47b711613b5406a887c2ee13ea6d25930d72a4fa7fdb77f6
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.0-2.debian.tar.xz' glib2.0_2.58.0-2.debian.tar.xz 76364 SHA256:b1f2f016652bc8f1b4a7f4680c0cdf00fbc9ff1107f68a2f46ccbbcd95478d37
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.58.0-2/
 
-- https://sources.debian.net/src/glib2.0/2.58.0-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.58.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.58.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-5`
 
@@ -2182,20 +2161,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.9-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.dsc' lcms2_2.9-2.dsc 1956 SHA256:2c0db2fbde92ab2b8aecf20372e620e49bd5766c390dc541345e9c32a28f8e4b
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.debian.tar.xz' lcms2_2.9-2.debian.tar.xz 10116 SHA256:9d6039d0d0e57594a442583922b28b0f9af37de7e630c6d4a6bcc11c397e59f7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.9-2/
 
-- https://sources.debian.net/src/lcms2/2.9-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.1-2`
 
@@ -3079,20 +3051,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.64.0-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.0-1.dsc' libsoup2.4_2.64.0-1.dsc 2714 SHA256:b4b05efc489b9c0dcd78b5daca3322c4d30f22a76ae463adb5664fc33cd4a37c
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.0.orig.tar.xz' libsoup2.4_2.64.0.orig.tar.xz 1797040 SHA256:d95bc9602c97ec805d80e5ddf75605665c4c4d6b2c56893c416e707ef578e727
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.0-1.debian.tar.xz' libsoup2.4_2.64.0-1.debian.tar.xz 17408 SHA256:a03f163464c01e40fc5d7bbeb6978b09a5d18aca1c89eb51784affb163eb4b25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.64.0-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.64.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.64.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.64.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-2`
 
@@ -4164,20 +4129,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.32.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.1-1.dsc' nghttp2_1.32.1-1.dsc 2560 SHA256:f03c4922cc0fa17634c695ef4b824183c274c41d49fe9e6deea66cfd00c7cd6e
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.1.orig.tar.bz2' nghttp2_1.32.1.orig.tar.bz2 1840755 SHA256:41a132ad51ef0de4b8592a8506809a0c830ff7db7a7054b9dafe0bff4611a862
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.32.1-1.debian.tar.xz' nghttp2_1.32.1-1.debian.tar.xz 12444 SHA256:cd0441957cf2867d962677f0bacbbcd8d321b240929a7024faf7deb6914435b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.32.1-1/
 
-- https://sources.debian.net/src/nghttp2/1.32.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.32.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.32.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -4416,20 +4374,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.4-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-2.dsc' pango1.0_1.42.4-2.dsc 3253 SHA256:81674a68e9713b7b04efff5c9308a6f63ca8ddcf2949463f90f326cd4c5f0bc0
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-2.debian.tar.xz' pango1.0_1.42.4-2.debian.tar.xz 29332 SHA256:bb15c734034a6412aba6274f4496950ee2a7586ea27a3f6e71d98e4b77931a36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.42.4-2/
 
-- https://sources.debian.net/src/pango1.0/1.42.4-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-11`
 
@@ -4830,20 +4781,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-7.dsc' systemd_239-7.dsc 4854 SHA256:baa76bbe4ab36eda3b8f3dfa1c3731ebcd2850e7fc70e2ddc9d1729ade1e5ba3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-7.debian.tar.xz' systemd_239-7.debian.tar.xz 142048 SHA256:87283b64e2f09969c326ab3eecc6a2fd4ad173330911e101a46937468f543dec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-7/
 
-- https://sources.debian.net/src/systemd/239-7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
@@ -5056,20 +5000,13 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.15.0-2
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-2.dsc' wayland_1.15.0-2.dsc 2565 SHA256:34167cfc114dc8fc9407f0ce834c13607a6643acdd3f9b11a1610f287a17fed4
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0.orig.tar.gz' wayland_1.15.0.orig.tar.gz 698641 SHA256:8b8c265b4acf46148e764b7eb4d6e368aef9325a7dca27ebcabc81a4d03bc120
-'http://deb.debian.org/debian/pool/main/w/wayland/wayland_1.15.0-2.diff.gz' wayland_1.15.0-2.diff.gz 12517 SHA256:d8f73896a181c08f86dd855e61d8f7fa5d249eb7b34af5c88f99c8a8caea5818
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wayland/1.15.0-2/
 
-- https://sources.debian.net/src/wayland/1.15.0-2/ (for browsing the source)
-- https://sources.debian.net/src/wayland/1.15.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wayland/1.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.5-1`
 
