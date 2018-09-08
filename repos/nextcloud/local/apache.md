@@ -1,10 +1,10 @@
-# `nextcloud:13.0.6-apache`
+# `nextcloud:14.0.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:106397e9b6d66b78b1140eac16f61a98363c14072e5c9a4ff53dd9a9916c9fbd`
-- Created: `2018-08-31T20:43:00.588176894Z`
-- Virtual Size: ~ 553.12 Mb  
+- Image ID: `sha256:972e17a4f9cffe3b392b2cfbc8448dbf43e07674ffc0549d30c6abd5866ceb93`
+- Created: `2018-09-06T19:20:53.747303976Z`
+- Virtual Size: ~ 562.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -26,7 +26,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.9.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=3585c1222e00494efee4f5a65a8e03a1e6eca3dfb834814236ee7f02c5248ae0`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=13.0.6`
+  - `NEXTCLOUD_VERSION=14.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1983,11 +1983,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.110-1`
+### `dpkg` source package: `linux=4.9.110-3+deb9u4`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.110-1`
+- `linux-libc-dev:amd64=4.9.110-3+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2000,17 +2000,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.110-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110-1.dsc' linux_4.9.110-1.dsc 123207 SHA256:8d08b5b5373e82ddc2c95784be5098b16b65911af0f7658ad332d755cb99bedb
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.110-1.debian.tar.xz' linux_4.9.110-1.debian.tar.xz 2528848 SHA256:08f14f58a475c733a49854900c8e965e03b7c735ee2f26aa7a56c9de58226537
+$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.dsc' linux_4.9.110-3+deb9u4.dsc 123390 SHA256:879d1cde4a145e71c4ff435e0fb1563eb9e7bcf2010f5b7de6e1be72074aaa0e
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.debian.tar.xz' linux_4.9.110-3+deb9u4.debian.tar.xz 2604644 SHA256:d88c3ffe100742a234c57913dbc1b87d2ac9d10617f8e8f20d533ecfa237582f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.110-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.110-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.110-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
