@@ -547,20 +547,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.10
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.dsc' dash_0.5.8-2.10.dsc 1618 SHA256:1e8fdac0880d57d8ed5eb11f9f1750a67c71a7200180cf3ed5aa3e74dab3e4c5
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.debian.tar.xz' dash_0.5.8-2.10.debian.tar.xz 43920 SHA256:0d870b0cf9b3ad40e4d4f1e3d4d9097f4d62151693a48f34cb1d49865fd4abdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.8-2.10/
 
-- https://sources.debian.net/src/dash/0.5.8-2.10/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.8-2.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.8-2.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.1`
 
@@ -1104,14 +1097,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.58.0-2
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.58.0-2.dsc' glib2.0_2.58.0-2.dsc 3261 SHA256:c2649e69fd2efcc7eedcaa28a7d67bab5bc88b0751deff2e7a1bb6eddff81408
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.58.0.orig.tar.xz' glib2.0_2.58.0.orig.tar.xz 4900456 SHA256:c0f4ce0730b4f95c47b711613b5406a887c2ee13ea6d25930d72a4fa7fdb77f6
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.58.0-2.debian.tar.xz' glib2.0_2.58.0-2.debian.tar.xz 76364 SHA256:b1f2f016652bc8f1b4a7f4680c0cdf00fbc9ff1107f68a2f46ccbbcd95478d37
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.58.0-2/
+
 
 ### `dpkg` source package: `glibc=2.27-5`
 
@@ -3060,14 +3052,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.32.1-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.32.1-1.dsc' nghttp2_1.32.1-1.dsc 2560 SHA256:f03c4922cc0fa17634c695ef4b824183c274c41d49fe9e6deea66cfd00c7cd6e
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.32.1.orig.tar.bz2' nghttp2_1.32.1.orig.tar.bz2 1840755 SHA256:41a132ad51ef0de4b8592a8506809a0c830ff7db7a7054b9dafe0bff4611a862
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.32.1-1.debian.tar.xz' nghttp2_1.32.1-1.debian.tar.xz 12444 SHA256:cd0441957cf2867d962677f0bacbbcd8d321b240929a7024faf7deb6914435b6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.32.1-1/
+
 
 ### `dpkg` source package: `nlme=3.1.137-1`
 
