@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:d10782672ea72886f34f71cd3d38a209cf5dc9a3cae9e323e110535bb8dd9e9a
+$ docker pull fedora@sha256:be2618fc719743b4ea5a2d3c4166d6efffe0e856e510856bd703188ba37ee040
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -68,28 +68,28 @@ ADD file:0115aa7f5b9f5d057f4761d533419214dbe96ac857ec3b7e136137a9bda888f3 in /
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:a7399c42da4e53499d66fb5080cfcebe2feda0bd925e790f01e2355299a97325
+$ docker pull fedora@sha256:255fd5fa78febc4d7620fe38bd85aaab240dfd6cea6a8bd7fb2602585246d066
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81751611 bytes)**  
+-	Total Size: **85.4 MB (85387611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e05b135ca2904fa2d8688eef552db941276d1e93600f88a1394d1d4632c77c2`
+-	Image ID: `sha256:c56ca67b7da757633c0582ca17c219d7e7d240e3c5e6793bbb41479e2015493a`
 
 ```dockerfile
 # Fri, 21 Jul 2017 05:00:22 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Thu, 08 Mar 2018 06:02:33 GMT
-ENV DISTTAG=frawhidecontainer FGC=frawhide FBR=frawhide
-# Thu, 08 Mar 2018 06:02:49 GMT
-ADD file:20367e058f0c7067d189bb6f762f2ef33cfc16f789cbd24d69c72b422b0cacc4 in / 
+# Sat, 08 Sep 2018 08:58:46 GMT
+ENV DISTTAG=f30container FGC=f30 FBR=f30
+# Sat, 08 Sep 2018 08:59:03 GMT
+ADD file:aee5d8edf0a7cbf861e98009bc375088aeddd3f6ab34167e0aea82ad1dfba113 in / 
 ```
 
 -	Layers:
-	-	`sha256:08dac2f1132fd7ef833f657cadfadc71cc1b8ebeb9a041ddbba2bb323d2c2f66`  
-		Last Modified: Thu, 08 Mar 2018 06:06:36 GMT  
-		Size: 81.8 MB (81751611 bytes)  
+	-	`sha256:6cbb25a8152075774b6c9da3dc276c2f71682dbad30b02bb00abc0c4ee7bc495`  
+		Last Modified: Sat, 08 Sep 2018 09:03:53 GMT  
+		Size: 85.4 MB (85387611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; ppc64le
