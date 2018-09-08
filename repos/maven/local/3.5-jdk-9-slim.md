@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0089b448645da97a370d5a41eba87703490990cc3800d1359288257f0339dc62`
-- Created: `2018-06-27T06:07:58.25424604Z`
-- Virtual Size: ~ 390.16 Mb  
+- Image ID: `sha256:79fa2cc53358c85576b5de668271d810786704b23f2ace69af28e442e37cf3ba`
+- Created: `2018-09-05T15:32:03.752165194Z`
+- Virtual Size: ~ 390.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -376,12 +376,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/cups/2.2.7-3/
 
 
-### `dpkg` source package: `curl=7.60.0-2`
+### `dpkg` source package: `curl=7.61.0-1`
 
 Binary Packages:
 
-- `curl=7.60.0-2`
-- `libcurl4:amd64=7.60.0-2`
+- `curl=7.61.0-1`
+- `libcurl4:amd64=7.61.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -392,13 +392,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.61.0-1
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.61.0-1.dsc' curl_7.61.0-1.dsc 2662 SHA256:f7a9c3d60f75ff16dae8bde2efc632d12b5d306d2dd2f0b7bad5ebc61c3f2830
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.61.0.orig.tar.gz' curl_7.61.0.orig.tar.gz 3964862 SHA256:64141f0db4945268a21b490d58806b97c615d3d0c75bf8c335bbe0efd13b45b5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.61.0-1.debian.tar.xz' curl_7.61.0-1.debian.tar.xz 28348 SHA256:3bdcd5605cf1e7fdf10aa7009e55ae16fd518e6ae193e262ade19a1d24ce5134
+```
 
-- http://snapshot.debian.org/package/curl/7.60.0-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.61.0-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.61.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.61.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3.1`
 
@@ -1393,23 +1400,30 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libsepol/2.7-1/
 
 
-### `dpkg` source package: `libssh2=1.8.0-1`
+### `dpkg` source package: `libssh2=1.8.0-2`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.8.0-1`
+- `libssh2-1:amd64=1.8.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 - `BSD3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libssh2=1.8.0-2
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-2.dsc' libssh2_1.8.0-2.dsc 1447 SHA256:a3ab2120a472d0a886114ca62b44186550c060c82124616326ca8da11b2e8c7d
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-2.debian.tar.xz' libssh2_1.8.0-2.debian.tar.xz 7460 SHA256:2c9c438e77ed1bc84f4fc130a8018e935862a251b01749c8b79d89df655b5480
+```
 
-- http://snapshot.debian.org/package/libssh2/1.8.0-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libssh2/1.8.0-2/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.8.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.13-2`
 
@@ -1753,13 +1767,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.1+20180210-4`
+### `dpkg` source package: `ncurses=6.1+20180714-1`
 
 Binary Packages:
 
-- `libncurses6:amd64=6.1+20180210-4`
-- `libncursesw6:amd64=6.1+20180210-4`
-- `libtinfo6:amd64=6.1+20180210-4`
+- `libncurses6:amd64=6.1+20180714-1`
+- `libncursesw6:amd64=6.1+20180714-1`
+- `libtinfo6:amd64=6.1+20180714-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1768,18 +1782,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.dsc' ncurses_6.1+20180210-4.dsc 4147 SHA256:222d0380903406509fcbd6a82736fb59a46a40259fc01a7a417c476cd126d02d
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180210-4.debian.tar.xz' ncurses_6.1+20180210-4.debian.tar.xz 60516 SHA256:0c636e711a41aabe3dd5fa7986c88aece92eb4de0fb9fa114e2548532da3acd3
+$ apt-get source -qq --print-uris ncurses=6.1+20180714-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.dsc' ncurses_6.1+20180714-1.dsc 4147 SHA256:d4ee01fcada6e29bba632598e517fff5c48329c4191712f07311e3a21d36d4b9
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz' ncurses_6.1+20180714.orig.tar.gz 3400860 SHA256:8e2d9ab51c54d5a5b78ca6d8e63200646202e91b152d9ea8ddbce86e6a32796d
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714.orig.tar.gz.asc' ncurses_6.1+20180714.orig.tar.gz.asc 251 SHA256:682fbba42d188d489b1cd457cce1285f0d9356fe8c45fdcd6e1c45e81e22d352
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20180714-1.debian.tar.xz' ncurses_6.1+20180714-1.debian.tar.xz 59968 SHA256:4160bcdae8e616c584317ae46ec8053709a4e640f9620621644f986c1b7e402f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.1+20180210-4/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.1+20180210-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.1+20180210-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20180714-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20180714-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1-1`
 
@@ -1839,11 +1853,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.32.0-1`
+### `dpkg` source package: `nghttp2=1.32.1-1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.32.0-1`
+- `libnghttp2-14:amd64=1.32.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1860,7 +1874,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/nghttp2/1.32.0-1/
+- http://snapshot.debian.org/package/nghttp2/1.32.1-1/
 
 
 ### `dpkg` source package: `nspr=2:4.19-2`
