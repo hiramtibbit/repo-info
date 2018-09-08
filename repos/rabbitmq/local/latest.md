@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5fbca98fc816ee764f2a93891b12b68b0f720d595dd029585ad77ce96fbf4f49`
-- Created: `2018-07-31T17:28:28.311817482Z`
+- Image ID: `sha256:d502f687f36a213315522f323952a37532397f2b81659cc72f5ad067c08fd14f`
+- Created: `2018-09-05T05:22:15.054997209Z`
 - Virtual Size: ~ 124.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -563,34 +563,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.43.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.43.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `erlang=1:20.3.8.3+dfsg-1`
+### `dpkg` source package: `erlang=1:20.3.8.5+dfsg-1`
 
 Binary Packages:
 
-- `erlang-asn1=1:20.3.8.3+dfsg-1`
-- `erlang-base-hipe=1:20.3.8.3+dfsg-1`
-- `erlang-corba=1:20.3.8.3+dfsg-1`
-- `erlang-crypto=1:20.3.8.3+dfsg-1`
-- `erlang-diameter=1:20.3.8.3+dfsg-1`
-- `erlang-edoc=1:20.3.8.3+dfsg-1`
-- `erlang-eldap=1:20.3.8.3+dfsg-1`
-- `erlang-erl-docgen=1:20.3.8.3+dfsg-1`
-- `erlang-eunit=1:20.3.8.3+dfsg-1`
-- `erlang-ic=1:20.3.8.3+dfsg-1`
-- `erlang-inets=1:20.3.8.3+dfsg-1`
-- `erlang-mnesia=1:20.3.8.3+dfsg-1`
-- `erlang-nox=1:20.3.8.3+dfsg-1`
-- `erlang-odbc=1:20.3.8.3+dfsg-1`
-- `erlang-os-mon=1:20.3.8.3+dfsg-1`
-- `erlang-parsetools=1:20.3.8.3+dfsg-1`
-- `erlang-public-key=1:20.3.8.3+dfsg-1`
-- `erlang-runtime-tools=1:20.3.8.3+dfsg-1`
-- `erlang-snmp=1:20.3.8.3+dfsg-1`
-- `erlang-ssh=1:20.3.8.3+dfsg-1`
-- `erlang-ssl=1:20.3.8.3+dfsg-1`
-- `erlang-syntax-tools=1:20.3.8.3+dfsg-1`
-- `erlang-tools=1:20.3.8.3+dfsg-1`
-- `erlang-xmerl=1:20.3.8.3+dfsg-1`
+- `erlang-asn1=1:20.3.8.5+dfsg-1`
+- `erlang-base-hipe=1:20.3.8.5+dfsg-1`
+- `erlang-corba=1:20.3.8.5+dfsg-1`
+- `erlang-crypto=1:20.3.8.5+dfsg-1`
+- `erlang-diameter=1:20.3.8.5+dfsg-1`
+- `erlang-edoc=1:20.3.8.5+dfsg-1`
+- `erlang-eldap=1:20.3.8.5+dfsg-1`
+- `erlang-erl-docgen=1:20.3.8.5+dfsg-1`
+- `erlang-eunit=1:20.3.8.5+dfsg-1`
+- `erlang-ic=1:20.3.8.5+dfsg-1`
+- `erlang-inets=1:20.3.8.5+dfsg-1`
+- `erlang-mnesia=1:20.3.8.5+dfsg-1`
+- `erlang-nox=1:20.3.8.5+dfsg-1`
+- `erlang-odbc=1:20.3.8.5+dfsg-1`
+- `erlang-os-mon=1:20.3.8.5+dfsg-1`
+- `erlang-parsetools=1:20.3.8.5+dfsg-1`
+- `erlang-public-key=1:20.3.8.5+dfsg-1`
+- `erlang-runtime-tools=1:20.3.8.5+dfsg-1`
+- `erlang-snmp=1:20.3.8.5+dfsg-1`
+- `erlang-ssh=1:20.3.8.5+dfsg-1`
+- `erlang-ssl=1:20.3.8.5+dfsg-1`
+- `erlang-syntax-tools=1:20.3.8.5+dfsg-1`
+- `erlang-tools=1:20.3.8.5+dfsg-1`
+- `erlang-xmerl=1:20.3.8.5+dfsg-1`
 
 Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/erlang-base-hipe/copyright`, `/usr/share/doc/erlang-corba/copyright`, `/usr/share/doc/erlang-crypto/copyright`, `/usr/share/doc/erlang-diameter/copyright`, `/usr/share/doc/erlang-edoc/copyright`, `/usr/share/doc/erlang-eldap/copyright`, `/usr/share/doc/erlang-erl-docgen/copyright`, `/usr/share/doc/erlang-eunit/copyright`, `/usr/share/doc/erlang-ic/copyright`, `/usr/share/doc/erlang-inets/copyright`, `/usr/share/doc/erlang-mnesia/copyright`, `/usr/share/doc/erlang-nox/copyright`, `/usr/share/doc/erlang-odbc/copyright`, `/usr/share/doc/erlang-os-mon/copyright`, `/usr/share/doc/erlang-parsetools/copyright`, `/usr/share/doc/erlang-public-key/copyright`, `/usr/share/doc/erlang-runtime-tools/copyright`, `/usr/share/doc/erlang-snmp/copyright`, `/usr/share/doc/erlang-ssh/copyright`, `/usr/share/doc/erlang-ssl/copyright`, `/usr/share/doc/erlang-syntax-tools/copyright`, `/usr/share/doc/erlang-tools/copyright`, `/usr/share/doc/erlang-xmerl/copyright`)
 
@@ -599,13 +599,20 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 - `MIT`
 - `RSA`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris erlang=1:20.3.8.5+dfsg-1
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg-1.dsc' erlang_20.3.8.5+dfsg-1.dsc 5129 SHA256:a92734fff27a775467c8ab1337b450e0675636e9b838c185a498ba16aaf7e094
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg.orig.tar.xz' erlang_20.3.8.5+dfsg.orig.tar.xz 42901268 SHA256:97a1b071ae4d752b568346dc9209047fd4f21a8df5530030148dc759417e3e8d
+'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg-1.debian.tar.xz' erlang_20.3.8.5+dfsg-1.debian.tar.xz 59520 SHA256:1bb8b20a2b1b64c560f86441b37cd08956a8e838f0548a264517c028193f7f6f
+```
 
-- http://snapshot.debian.org/package/erlang/1:20.3.8.3+dfsg-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/erlang/1:20.3.8.5+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/erlang/1:20.3.8.5+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/erlang/1:20.3.8.5+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
