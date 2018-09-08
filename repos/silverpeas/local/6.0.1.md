@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:275fc81537de6f4e80c3cb3fff736c8173ca7a38c767667f90de6b52aca2b0e2`
-- Created: `2018-08-22T20:00:17.824197216Z`
+- Image ID: `sha256:3c9950f785fdcdf9f75ed39fe41c177ace9a3e8ff739945763ec3205652b8dee`
+- Created: `2018-09-06T00:33:54.48055044Z`
 - Virtual Size: ~ 1.52 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -693,20 +693,20 @@ $ apt-get source -qq --print-uris expat=2.1.0-7ubuntu0.16.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz' expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz 22068 SHA256:691aec15db5b568d90db8f312f66af89e5f6f9848ef6061c65bbf06594f6fdb9
 ```
 
-### `dpkg` source package: `ffmpeg=7:2.8.14-0ubuntu0.16.04.1`
+### `dpkg` source package: `ffmpeg=7:2.8.15-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `ffmpeg=7:2.8.14-0ubuntu0.16.04.1`
-- `libavcodec-ffmpeg56:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libavdevice-ffmpeg56:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libavfilter-ffmpeg5:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libavformat-ffmpeg56:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libavresample-ffmpeg2:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libavutil-ffmpeg54:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libpostproc-ffmpeg53:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libswresample-ffmpeg1:amd64=7:2.8.14-0ubuntu0.16.04.1`
-- `libswscale-ffmpeg3:amd64=7:2.8.14-0ubuntu0.16.04.1`
+- `ffmpeg=7:2.8.15-0ubuntu0.16.04.1`
+- `libavcodec-ffmpeg56:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libavdevice-ffmpeg56:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libavfilter-ffmpeg5:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libavformat-ffmpeg56:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libavresample-ffmpeg2:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libavutil-ffmpeg54:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libpostproc-ffmpeg53:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libswresample-ffmpeg1:amd64=7:2.8.15-0ubuntu0.16.04.1`
+- `libswscale-ffmpeg3:amd64=7:2.8.15-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ffmpeg/copyright`, `/usr/share/doc/libavcodec-ffmpeg56/copyright`, `/usr/share/doc/libavdevice-ffmpeg56/copyright`, `/usr/share/doc/libavfilter-ffmpeg5/copyright`, `/usr/share/doc/libavformat-ffmpeg56/copyright`, `/usr/share/doc/libavresample-ffmpeg2/copyright`, `/usr/share/doc/libavutil-ffmpeg54/copyright`, `/usr/share/doc/libpostproc-ffmpeg53/copyright`, `/usr/share/doc/libswresample-ffmpeg1/copyright`, `/usr/share/doc/libswscale-ffmpeg3/copyright`)
 
@@ -728,9 +728,14 @@ Licenses: (parsed from: `/usr/share/doc/ffmpeg/copyright`, `/usr/share/doc/libav
 - `man-page`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ffmpeg=7:2.8.15-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.15-0ubuntu0.16.04.1.dsc' ffmpeg_2.8.15-0ubuntu0.16.04.1.dsc 4893 SHA256:31fd066a28260e4cf6be48f941362ba5b9037ae3d65a78a655c1d60ea1c2dabf
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.15.orig.tar.xz' ffmpeg_2.8.15.orig.tar.xz 7228272 SHA256:7b5c0e60fb889fd52ce17a4ab653a2916ad13cbe5b31125876cbf5eaec5ebd18
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.15-0ubuntu0.16.04.1.debian.tar.xz' ffmpeg_2.8.15-0ubuntu0.16.04.1.debian.tar.xz 44272 SHA256:64c1f1a71d301321fe2b101b81423b05e552f6bd683743354b9159bd73f1ce5b
+```
 
 ### `dpkg` source package: `fftw3=3.3.4-2ubuntu1`
 
@@ -3015,15 +3020,15 @@ $ apt-get source -qq --print-uris libwmf=0.2.8.4-10.5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5ubuntu1.debian.tar.xz' libwmf_0.2.8.4-10.5ubuntu1.debian.tar.xz 11696 SHA256:e448f84c36c2921403cf47e19090ad17be71877c3ec62cdf4b4c8a3e8869d5ee
 ```
 
-### `dpkg` source package: `libx11=2:1.6.3-1ubuntu2`
+### `dpkg` source package: `libx11=2:1.6.3-1ubuntu2.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.3-1ubuntu2`
-- `libx11-data=2:1.6.3-1ubuntu2`
-- `libx11-dev:amd64=2:1.6.3-1ubuntu2`
-- `libx11-doc=2:1.6.3-1ubuntu2`
-- `libx11-xcb1:amd64=2:1.6.3-1ubuntu2`
+- `libx11-6:amd64=2:1.6.3-1ubuntu2.1`
+- `libx11-data=2:1.6.3-1ubuntu2.1`
+- `libx11-dev:amd64=2:1.6.3-1ubuntu2.1`
+- `libx11-doc=2:1.6.3-1ubuntu2.1`
+- `libx11-xcb1:amd64=2:1.6.3-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3032,10 +3037,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.3-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.dsc' libx11_1.6.3-1ubuntu2.dsc 2597 SHA256:bc78ad8a487d2ba8a9b5e521053a1bcb0f8ed12b823fd32a3aa21d95a34fc4c3
+$ apt-get source -qq --print-uris libx11=2:1.6.3-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.1.dsc' libx11_1.6.3-1ubuntu2.1.dsc 2603 SHA256:efb03b486de6587de9572f57f42948125a8ea5ad47f6e872f2b9c17a150de103
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3.orig.tar.gz' libx11_1.6.3.orig.tar.gz 3105928 SHA256:0b03b9d22f4c9e59b4ba498f294e297f013cae27050dfa0f3496640200db5376
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.diff.gz' libx11_1.6.3-1ubuntu2.diff.gz 41227 SHA256:0e48fbe1d54b2e8e0412cbe62e3a377106fa332b954d5fd4d08f3d296431d076
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu2.1.diff.gz' libx11_1.6.3-1ubuntu2.1.diff.gz 44832 SHA256:205f80b6f3110c068f3bbf18b177102399b67634ef5c436a71d1f90b58ac753f
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
