@@ -2012,20 +2012,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.38-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.dsc' nss_3.38-1.dsc 2146 SHA256:1dbdbb28be43cf74b4bf8f7ccdb8811194d8383628048264fde286f06371d0a2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38.orig.tar.gz' nss_3.38.orig.tar.gz 23023474 SHA256:2c643d3c08d6935f4d325f40743719b6990aa25a79ec2f8f712c99d086672f62
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.debian.tar.xz' nss_3.38-1.debian.tar.xz 19932 SHA256:f100e820a4e1593f70cdc1dea909d9b473d12d7fd1b13cc74075204a549135da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.38-1/
 
-- https://sources.debian.net/src/nss/2:3.38-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10.0.2+13-1`
 
