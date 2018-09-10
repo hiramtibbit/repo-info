@@ -236,11 +236,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:4a14bdf6da80603aa5007acea8d5ea659958b0bd1b31d31078023ca0d1c8ee05`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 17:51:52 GMT  
 		Size: 167.8 MB (167784035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:0f49885c2b3f0788c420e3751e75d01ef5452949226f1ac6cddfb7f163ff0d6d`  
@@ -278,11 +278,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:407ada6e90de9752a53cb9f52b7947a0e38a9b21a349970ace15c68890d72511`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:10288d9444107391fbf14d7bcca60d7043fccf0fb52d8b726814ba29a88a33a3`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 18:28:19 GMT  
 		Size: 54.6 MB (54585475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:94931baafad3333661227eb47d49a917017f2a242125e21d94fb416bb902f50d`  
@@ -320,11 +320,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:e46172273a4e4384e1eec7fb01091c828a256ea0f87b30f61381fba9bc511371`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 07 May 2018 21:17:40 GMT  
 		Size: 92.8 MB (92818888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:1f7d468f830cb0ed4beb8edc9438f18096e8c682e56a35242f60e6c61b718b30`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 19:09:58 GMT  
 		Size: 48.6 MB (48632111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:828764807e49d7783facd9fc2d9f4c72579063a9ba6910d16de07586572e32ae`  
@@ -572,11 +572,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:4a14bdf6da80603aa5007acea8d5ea659958b0bd1b31d31078023ca0d1c8ee05`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 17:51:52 GMT  
 		Size: 167.8 MB (167784035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:0f49885c2b3f0788c420e3751e75d01ef5452949226f1ac6cddfb7f163ff0d6d`  
@@ -614,11 +614,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:407ada6e90de9752a53cb9f52b7947a0e38a9b21a349970ace15c68890d72511`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:10288d9444107391fbf14d7bcca60d7043fccf0fb52d8b726814ba29a88a33a3`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 18:28:19 GMT  
 		Size: 54.6 MB (54585475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:94931baafad3333661227eb47d49a917017f2a242125e21d94fb416bb902f50d`  
@@ -656,11 +656,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:e46172273a4e4384e1eec7fb01091c828a256ea0f87b30f61381fba9bc511371`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 07 May 2018 21:17:40 GMT  
 		Size: 92.8 MB (92818888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:1f7d468f830cb0ed4beb8edc9438f18096e8c682e56a35242f60e6c61b718b30`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 19:09:58 GMT  
 		Size: 48.6 MB (48632111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:828764807e49d7783facd9fc2d9f4c72579063a9ba6910d16de07586572e32ae`  
@@ -708,11 +708,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:407ada6e90de9752a53cb9f52b7947a0e38a9b21a349970ace15c68890d72511`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:10288d9444107391fbf14d7bcca60d7043fccf0fb52d8b726814ba29a88a33a3`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 18:28:19 GMT  
 		Size: 54.6 MB (54585475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:94931baafad3333661227eb47d49a917017f2a242125e21d94fb416bb902f50d`  
@@ -760,11 +760,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:e46172273a4e4384e1eec7fb01091c828a256ea0f87b30f61381fba9bc511371`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 07 May 2018 21:17:40 GMT  
 		Size: 92.8 MB (92818888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:1f7d468f830cb0ed4beb8edc9438f18096e8c682e56a35242f60e6c61b718b30`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 19:09:58 GMT  
 		Size: 48.6 MB (48632111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:828764807e49d7783facd9fc2d9f4c72579063a9ba6910d16de07586572e32ae`  
@@ -812,11 +812,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:4a14bdf6da80603aa5007acea8d5ea659958b0bd1b31d31078023ca0d1c8ee05`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 17:51:52 GMT  
 		Size: 167.8 MB (167784035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:0f49885c2b3f0788c420e3751e75d01ef5452949226f1ac6cddfb7f163ff0d6d`  

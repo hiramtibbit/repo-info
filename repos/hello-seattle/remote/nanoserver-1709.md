@@ -34,11 +34,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:407ada6e90de9752a53cb9f52b7947a0e38a9b21a349970ace15c68890d72511`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Tue, 17 Oct 2017 15:49:36 GMT  
 		Size: 81.0 MB (81039739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:10288d9444107391fbf14d7bcca60d7043fccf0fb52d8b726814ba29a88a33a3`  
-		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
+		Last Modified: Mon, 13 Aug 2018 18:28:19 GMT  
 		Size: 54.6 MB (54585475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:672760237dea310d0198d1a8249cee35bfbe528389b162832345ba419a0b0f91`  

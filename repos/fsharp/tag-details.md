@@ -3,10 +3,10 @@
 # Tags of `fsharp`
 
 -	[`fsharp:10`](#fsharp10)
--	[`fsharp:10.0`](#fsharp100)
--	[`fsharp:10.0.2`](#fsharp1002)
--	[`fsharp:10.0.2-netcore`](#fsharp1002-netcore)
--	[`fsharp:10.0-netcore`](#fsharp100-netcore)
+-	[`fsharp:10.2`](#fsharp102)
+-	[`fsharp:10.2.1`](#fsharp1021)
+-	[`fsharp:10.2.1-netcore`](#fsharp1021-netcore)
+-	[`fsharp:10.2-netcore`](#fsharp102-netcore)
 -	[`fsharp:10-netcore`](#fsharp10-netcore)
 -	[`fsharp:4`](#fsharp4)
 -	[`fsharp:4.0`](#fsharp40)
@@ -108,7 +108,7 @@ CMD ["fsharpi"]
 		Size: 129.5 MB (129500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `fsharp:10.0`
+## `fsharp:10.2`
 
 ```console
 $ docker pull fsharp@sha256:3d328e908f6517fafb659d67566cf94a5f0a56604a907b96e42b657c887ad3ef
@@ -119,7 +119,7 @@ $ docker pull fsharp@sha256:3d328e908f6517fafb659d67566cf94a5f0a56604a907b96e42b
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `fsharp:10.0` - linux; amd64
+### `fsharp:10.2` - linux; amd64
 
 ```console
 $ docker pull fsharp@sha256:447054bb09ab8d1847233693d04a772eb09384eed3a5c0a1d61e32d0ae9ff8c3
@@ -159,7 +159,7 @@ CMD ["fsharpi"]
 		Size: 132.4 MB (132436957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `fsharp:10.0` - linux; arm64 variant v8
+### `fsharp:10.2` - linux; arm64 variant v8
 
 ```console
 $ docker pull fsharp@sha256:1db8c1bf26f746befde77237f0377d9b46501c3d1fd9521eeedf8f7f38026e0a
@@ -199,7 +199,7 @@ CMD ["fsharpi"]
 		Size: 129.5 MB (129500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `fsharp:10.0.2`
+## `fsharp:10.2.1`
 
 ```console
 $ docker pull fsharp@sha256:3d328e908f6517fafb659d67566cf94a5f0a56604a907b96e42b657c887ad3ef
@@ -210,7 +210,7 @@ $ docker pull fsharp@sha256:3d328e908f6517fafb659d67566cf94a5f0a56604a907b96e42b
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `fsharp:10.0.2` - linux; amd64
+### `fsharp:10.2.1` - linux; amd64
 
 ```console
 $ docker pull fsharp@sha256:447054bb09ab8d1847233693d04a772eb09384eed3a5c0a1d61e32d0ae9ff8c3
@@ -250,7 +250,7 @@ CMD ["fsharpi"]
 		Size: 132.4 MB (132436957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `fsharp:10.0.2` - linux; arm64 variant v8
+### `fsharp:10.2.1` - linux; arm64 variant v8
 
 ```console
 $ docker pull fsharp@sha256:1db8c1bf26f746befde77237f0377d9b46501c3d1fd9521eeedf8f7f38026e0a
@@ -290,7 +290,7 @@ CMD ["fsharpi"]
 		Size: 129.5 MB (129500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `fsharp:10.0.2-netcore`
+## `fsharp:10.2.1-netcore`
 
 ```console
 $ docker pull fsharp@sha256:9e73df4811e522dea6919e9b465e6f6342a10f2647b444506fd2b418ff29fe21
@@ -300,7 +300,7 @@ $ docker pull fsharp@sha256:9e73df4811e522dea6919e9b465e6f6342a10f2647b444506fd2
 -	Platforms:
 	-	linux; amd64
 
-### `fsharp:10.0.2-netcore` - linux; amd64
+### `fsharp:10.2.1-netcore` - linux; amd64
 
 ```console
 $ docker pull fsharp@sha256:1c8254374e1ab8086752d4051070cc960055155e433d3768525c1398f8d22909
@@ -368,7 +368,7 @@ WORKDIR /root
 		Size: 290.5 MB (290485004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `fsharp:10.0-netcore`
+## `fsharp:10.2-netcore`
 
 ```console
 $ docker pull fsharp@sha256:9e73df4811e522dea6919e9b465e6f6342a10f2647b444506fd2b418ff29fe21
@@ -378,7 +378,7 @@ $ docker pull fsharp@sha256:9e73df4811e522dea6919e9b465e6f6342a10f2647b444506fd2
 -	Platforms:
 	-	linux; amd64
 
-### `fsharp:10.0-netcore` - linux; amd64
+### `fsharp:10.2-netcore` - linux; amd64
 
 ```console
 $ docker pull fsharp@sha256:1c8254374e1ab8086752d4051070cc960055155e433d3768525c1398f8d22909
