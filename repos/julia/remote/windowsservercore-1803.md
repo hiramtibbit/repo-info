@@ -41,11 +41,11 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:d9e8b01179bfc94a5bdb1810fbd76b999aa52016001ace2d3a4c4bc7065a9601`  
-		Last Modified: Mon, 07 May 2018 21:18:35 GMT  
+		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
 		Size: 1.7 GB (1659688273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:fd59519ea2c2d73a5cba6e562d012a127d08d86dfc5067535eef141406c3750b`  
-		Last Modified: Mon, 13 Aug 2018 19:10:18 GMT  
+		Last Modified: Thu, 06 Sep 2018 21:37:41 GMT  
 		Size: 530.1 MB (530108736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:595cc1655e57da5d50a2e822ee129ee8e86e86e5873f2d763a68fae6b3990104`  
