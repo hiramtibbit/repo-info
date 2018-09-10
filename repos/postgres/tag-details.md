@@ -34,7 +34,7 @@
 ## `postgres:10`
 
 ```console
-$ docker pull postgres@sha256:b5f078741b60c58b0c4c29ea19d72be3ee368b8fe3478d92738d7c6994b5b202
+$ docker pull postgres@sha256:7aa9e08b6140a7b9b18866035a43d6e962b9a699d3a3d9925828c29cdd98ed72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -50,14 +50,14 @@ $ docker pull postgres@sha256:b5f078741b60c58b0c4c29ea19d72be3ee368b8fe3478d9273
 ### `postgres:10` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:bf7354b1900a3b05da92f744fe00ae1d365f4214eb2d424635de747141bae1c1
+$ docker pull postgres@sha256:7c67a14d481620674bc3cf8279d981ac609055a3468427eb870a13ee891f7990
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 MB (83221464 bytes)**  
+-	Total Size: **83.2 MB (83221420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac25c2bac3c4e56f949c60ca343e1c4cd95f493db28bbf29b8ce466b4171cc8f`
+-	Image ID: `sha256:084ec18124c8ccb08c7df98492db211f19a6a3d9e159cc88d1281c634b90bb87`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -102,15 +102,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:52:46 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:52:46 GMT
-COPY file:9dfee985db858ea9bcf8869aa2929efed1affa079c7fc23523f13953b5c3f562 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:17 GMT
+COPY file:8679fccc32fd3636a9beb8295538f82d9b1466e95ef6111e8c677c558ba9cb1e in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:18 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:52:48 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 CMD ["postgres"]
 ```
 
@@ -163,12 +163,12 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:58:14 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ba632c2c57b715d7b88fa05c334120c5b2a21b2f18c1cd01ee190c91b2c0a71`  
-		Last Modified: Tue, 04 Sep 2018 21:58:14 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:e9a30e7f2a9f52bbde3333e40a3bad8d6f269e53c948ab4852ab5a371c998506`  
+		Last Modified: Mon, 10 Sep 2018 22:25:16 GMT  
+		Size: 2.2 KB (2217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc453ad727561c73ce3e462f5f433f0cde826c7bc46eab47131bae0f58bf5af4`  
-		Last Modified: Tue, 04 Sep 2018 21:58:15 GMT  
+	-	`sha256:86bffc7855b02106837e6dc7a32bf41f40cd3445e822347333ff7f7229b37ec8`  
+		Last Modified: Mon, 10 Sep 2018 22:25:16 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -925,7 +925,7 @@ CMD ["postgres"]
 ## `postgres:10.5`
 
 ```console
-$ docker pull postgres@sha256:b5f078741b60c58b0c4c29ea19d72be3ee368b8fe3478d92738d7c6994b5b202
+$ docker pull postgres@sha256:7aa9e08b6140a7b9b18866035a43d6e962b9a699d3a3d9925828c29cdd98ed72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -941,14 +941,14 @@ $ docker pull postgres@sha256:b5f078741b60c58b0c4c29ea19d72be3ee368b8fe3478d9273
 ### `postgres:10.5` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:bf7354b1900a3b05da92f744fe00ae1d365f4214eb2d424635de747141bae1c1
+$ docker pull postgres@sha256:7c67a14d481620674bc3cf8279d981ac609055a3468427eb870a13ee891f7990
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 MB (83221464 bytes)**  
+-	Total Size: **83.2 MB (83221420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac25c2bac3c4e56f949c60ca343e1c4cd95f493db28bbf29b8ce466b4171cc8f`
+-	Image ID: `sha256:084ec18124c8ccb08c7df98492db211f19a6a3d9e159cc88d1281c634b90bb87`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -993,15 +993,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:52:46 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:52:46 GMT
-COPY file:9dfee985db858ea9bcf8869aa2929efed1affa079c7fc23523f13953b5c3f562 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:17 GMT
+COPY file:8679fccc32fd3636a9beb8295538f82d9b1466e95ef6111e8c677c558ba9cb1e in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:18 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:52:47 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:52:48 GMT
+# Mon, 10 Sep 2018 22:23:18 GMT
 CMD ["postgres"]
 ```
 
@@ -1054,12 +1054,12 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:58:14 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ba632c2c57b715d7b88fa05c334120c5b2a21b2f18c1cd01ee190c91b2c0a71`  
-		Last Modified: Tue, 04 Sep 2018 21:58:14 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:e9a30e7f2a9f52bbde3333e40a3bad8d6f269e53c948ab4852ab5a371c998506`  
+		Last Modified: Mon, 10 Sep 2018 22:25:16 GMT  
+		Size: 2.2 KB (2217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc453ad727561c73ce3e462f5f433f0cde826c7bc46eab47131bae0f58bf5af4`  
-		Last Modified: Tue, 04 Sep 2018 21:58:15 GMT  
+	-	`sha256:86bffc7855b02106837e6dc7a32bf41f40cd3445e822347333ff7f7229b37ec8`  
+		Last Modified: Mon, 10 Sep 2018 22:25:16 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1816,7 +1816,7 @@ CMD ["postgres"]
 ## `postgres:10.5-alpine`
 
 ```console
-$ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c766811c259c66abf2a5
+$ docker pull postgres@sha256:d6460456a5841457694528d0b11c4d7a26c664b863085f5f3136ee8ecff7a94a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1831,14 +1831,14 @@ $ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c76681
 ### `postgres:10.5-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:7ed5247dc56eb7b1de8ce5b72798ff36be0a09e8e26bda16b937d34e07f094b8
+$ docker pull postgres@sha256:60c86546a3d4a40d4668fcff349e04affee01e08a74fb27a4f4016331305641e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29482771 bytes)**  
+-	Total Size: **29.5 MB (29482731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e76de55985febddd26751cfbdf7cf0324024b3ec720fb102d3000637a4f52731`
+-	Image ID: `sha256:7e13d5da46b9f6079fd7e0efa932fdead3271348c45cafc1250c5ec6fa600c90`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -1871,15 +1871,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:15:51 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:15:51 GMT
-COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:26 GMT
+COPY file:e4d1cf3be629c43237bbb1e31a071c44ad8c72b8285cb3fb00c70144997dbdb8 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:27 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 CMD ["postgres"]
 ```
 
@@ -1912,12 +1912,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fda00273266fcf0ea419ecf94e868539f9f49ba0daa81d6ee666f0aeab29a5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
-		Size: 2.3 KB (2255 bytes)  
+	-	`sha256:44d72dfb1d468fb1bf7ea5bf1dc9357f20d042b225befd873ccbca7647ad69d0`  
+		Last Modified: Mon, 10 Sep 2018 22:25:36 GMT  
+		Size: 2.2 KB (2215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49b19bcd2fee71461ffd24531d2a8e6c4f23a9a6a90fb03f43f31266be0bed14`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
+	-	`sha256:725df0a03c822d06b8ffdd84a84a2226abea093e7711d8b4f26d445a111816ba`  
+		Last Modified: Mon, 10 Sep 2018 22:25:34 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2419,7 +2419,7 @@ CMD ["postgres"]
 ## `postgres:10-alpine`
 
 ```console
-$ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c766811c259c66abf2a5
+$ docker pull postgres@sha256:d6460456a5841457694528d0b11c4d7a26c664b863085f5f3136ee8ecff7a94a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2434,14 +2434,14 @@ $ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c76681
 ### `postgres:10-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:7ed5247dc56eb7b1de8ce5b72798ff36be0a09e8e26bda16b937d34e07f094b8
+$ docker pull postgres@sha256:60c86546a3d4a40d4668fcff349e04affee01e08a74fb27a4f4016331305641e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29482771 bytes)**  
+-	Total Size: **29.5 MB (29482731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e76de55985febddd26751cfbdf7cf0324024b3ec720fb102d3000637a4f52731`
+-	Image ID: `sha256:7e13d5da46b9f6079fd7e0efa932fdead3271348c45cafc1250c5ec6fa600c90`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -2474,15 +2474,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:15:51 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:15:51 GMT
-COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:26 GMT
+COPY file:e4d1cf3be629c43237bbb1e31a071c44ad8c72b8285cb3fb00c70144997dbdb8 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:27 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 CMD ["postgres"]
 ```
 
@@ -2515,12 +2515,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fda00273266fcf0ea419ecf94e868539f9f49ba0daa81d6ee666f0aeab29a5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
-		Size: 2.3 KB (2255 bytes)  
+	-	`sha256:44d72dfb1d468fb1bf7ea5bf1dc9357f20d042b225befd873ccbca7647ad69d0`  
+		Last Modified: Mon, 10 Sep 2018 22:25:36 GMT  
+		Size: 2.2 KB (2215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49b19bcd2fee71461ffd24531d2a8e6c4f23a9a6a90fb03f43f31266be0bed14`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
+	-	`sha256:725df0a03c822d06b8ffdd84a84a2226abea093e7711d8b4f26d445a111816ba`  
+		Last Modified: Mon, 10 Sep 2018 22:25:34 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3022,7 +3022,7 @@ CMD ["postgres"]
 ## `postgres:11`
 
 ```console
-$ docker pull postgres@sha256:cae544d0f330a7f3f806c34b0bd7ab1affef37b1e7738702c8532ef1d16372f8
+$ docker pull postgres@sha256:34bc39037477a539c60cc758ca8ffb4715d477e6874497d533134bb963c0164b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3038,14 +3038,14 @@ $ docker pull postgres@sha256:cae544d0f330a7f3f806c34b0bd7ab1affef37b1e7738702c8
 ### `postgres:11` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:bc6cb39ba7eafd6a77638d9382695eb12cb95c01b7690357db5bc04676baf645
+$ docker pull postgres@sha256:ab995d1a7894640cb4ea0e3100f45479ea4959e9a91c31f48ea9bacc0d6b69b2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.6 MB (116556358 bytes)**  
+-	Total Size: **116.6 MB (116556317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:554be8e63037bc81f6ac3b09eab011d8ff1f2a7d54337d255d192020cac6bc39`
+-	Image ID: `sha256:7874d394d9cde835bd238323462176ac05a947264742cf4bf208f1ae2035f2c8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -3090,15 +3090,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:51:37 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:51:37 GMT
-COPY file:9dfee985db858ea9bcf8869aa2929efed1affa079c7fc23523f13953b5c3f562 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:51:38 GMT
+# Mon, 10 Sep 2018 22:23:02 GMT
+COPY file:8679fccc32fd3636a9beb8295538f82d9b1466e95ef6111e8c677c558ba9cb1e in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:03 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:03 GMT
 CMD ["postgres"]
 ```
 
@@ -3151,12 +3151,12 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:57:41 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10586053e779028ae9fd360ed1b14c6f6689fd1a3e1071441bbbafbeae50901a`  
-		Last Modified: Tue, 04 Sep 2018 21:57:41 GMT  
-		Size: 2.3 KB (2260 bytes)  
+	-	`sha256:93fc7dd4afe76d5a3332b9f1c8f1fdc0ca247a9fddc3aae84e27949ede3af510`  
+		Last Modified: Mon, 10 Sep 2018 22:24:55 GMT  
+		Size: 2.2 KB (2219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9de09236922a43797b0c2e0d6ec92874e5a85f8d8ad8667cdbf00c48479b9480`  
-		Last Modified: Tue, 04 Sep 2018 21:57:40 GMT  
+	-	`sha256:d10aa00ae7fa7e4d856dacc0b0344b432d251853313f099ba7e95fdf21cf50e0`  
+		Last Modified: Mon, 10 Sep 2018 22:24:55 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3913,7 +3913,7 @@ CMD ["postgres"]
 ## `postgres:11-alpine`
 
 ```console
-$ docker pull postgres@sha256:d321e6cc33b1ebd3e97b4b29c2dda6f05381f237f86d55c98c34cac7b21781df
+$ docker pull postgres@sha256:1a5bed68038337754c3db69cef905b89cd0af4ae5f49f5f6ae4c6fd54b40145b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3928,14 +3928,14 @@ $ docker pull postgres@sha256:d321e6cc33b1ebd3e97b4b29c2dda6f05381f237f86d55c98c
 ### `postgres:11-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:4cb979817012d732fd81c8afdce8ae3be99d22e8eb4fd106fd12dc813320a011
+$ docker pull postgres@sha256:d9ce228aeb206a5c4977dddf6763cd599a8be6179840681c568b286dcbffb95c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29689873 bytes)**  
+-	Total Size: **29.7 MB (29689834 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95feb17a169874e50486cadf63c2b372b81975d3769172d2c424dd8d790dc932`
+-	Image ID: `sha256:8695d7aef097ea7158f4221e5cc656af503b163534227df76fc1e51507cbbbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -3968,15 +3968,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:12:09 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:12:09 GMT
-COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:09 GMT
+COPY file:e4d1cf3be629c43237bbb1e31a071c44ad8c72b8285cb3fb00c70144997dbdb8 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:10 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:10 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:12:11 GMT
+# Mon, 10 Sep 2018 22:23:11 GMT
 CMD ["postgres"]
 ```
 
@@ -4009,12 +4009,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b04296dd756a1aaa00cae9cfb699df13409ca183d26e002bf7b488e9f3c16c5c`  
-		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
-		Size: 2.3 KB (2253 bytes)  
+	-	`sha256:897add96a58eb4214d53b0fbf85303501a5e8865b08bcbcd6395362fc09fceae`  
+		Last Modified: Mon, 10 Sep 2018 22:25:05 GMT  
+		Size: 2.2 KB (2214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5425f9a6abdf83e5af2eeb2df81abff502f36fae102b15b10743e59468ecf3a`  
-		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
+	-	`sha256:6ac4229d2790339bb32fdbd256b044858aabfce998e5ba61f30fc002631ac541`  
+		Last Modified: Mon, 10 Sep 2018 22:25:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4516,7 +4516,7 @@ CMD ["postgres"]
 ## `postgres:11-beta3`
 
 ```console
-$ docker pull postgres@sha256:cae544d0f330a7f3f806c34b0bd7ab1affef37b1e7738702c8532ef1d16372f8
+$ docker pull postgres@sha256:34bc39037477a539c60cc758ca8ffb4715d477e6874497d533134bb963c0164b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4532,14 +4532,14 @@ $ docker pull postgres@sha256:cae544d0f330a7f3f806c34b0bd7ab1affef37b1e7738702c8
 ### `postgres:11-beta3` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:bc6cb39ba7eafd6a77638d9382695eb12cb95c01b7690357db5bc04676baf645
+$ docker pull postgres@sha256:ab995d1a7894640cb4ea0e3100f45479ea4959e9a91c31f48ea9bacc0d6b69b2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.6 MB (116556358 bytes)**  
+-	Total Size: **116.6 MB (116556317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:554be8e63037bc81f6ac3b09eab011d8ff1f2a7d54337d255d192020cac6bc39`
+-	Image ID: `sha256:7874d394d9cde835bd238323462176ac05a947264742cf4bf208f1ae2035f2c8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -4584,15 +4584,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:51:37 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:51:37 GMT
-COPY file:9dfee985db858ea9bcf8869aa2929efed1affa079c7fc23523f13953b5c3f562 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:51:38 GMT
+# Mon, 10 Sep 2018 22:23:02 GMT
+COPY file:8679fccc32fd3636a9beb8295538f82d9b1466e95ef6111e8c677c558ba9cb1e in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:03 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:51:39 GMT
+# Mon, 10 Sep 2018 22:23:03 GMT
 CMD ["postgres"]
 ```
 
@@ -4645,12 +4645,12 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:57:41 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10586053e779028ae9fd360ed1b14c6f6689fd1a3e1071441bbbafbeae50901a`  
-		Last Modified: Tue, 04 Sep 2018 21:57:41 GMT  
-		Size: 2.3 KB (2260 bytes)  
+	-	`sha256:93fc7dd4afe76d5a3332b9f1c8f1fdc0ca247a9fddc3aae84e27949ede3af510`  
+		Last Modified: Mon, 10 Sep 2018 22:24:55 GMT  
+		Size: 2.2 KB (2219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9de09236922a43797b0c2e0d6ec92874e5a85f8d8ad8667cdbf00c48479b9480`  
-		Last Modified: Tue, 04 Sep 2018 21:57:40 GMT  
+	-	`sha256:d10aa00ae7fa7e4d856dacc0b0344b432d251853313f099ba7e95fdf21cf50e0`  
+		Last Modified: Mon, 10 Sep 2018 22:24:55 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5407,7 +5407,7 @@ CMD ["postgres"]
 ## `postgres:11-beta3-alpine`
 
 ```console
-$ docker pull postgres@sha256:d321e6cc33b1ebd3e97b4b29c2dda6f05381f237f86d55c98c34cac7b21781df
+$ docker pull postgres@sha256:1a5bed68038337754c3db69cef905b89cd0af4ae5f49f5f6ae4c6fd54b40145b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5422,14 +5422,14 @@ $ docker pull postgres@sha256:d321e6cc33b1ebd3e97b4b29c2dda6f05381f237f86d55c98c
 ### `postgres:11-beta3-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:4cb979817012d732fd81c8afdce8ae3be99d22e8eb4fd106fd12dc813320a011
+$ docker pull postgres@sha256:d9ce228aeb206a5c4977dddf6763cd599a8be6179840681c568b286dcbffb95c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29689873 bytes)**  
+-	Total Size: **29.7 MB (29689834 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95feb17a169874e50486cadf63c2b372b81975d3769172d2c424dd8d790dc932`
+-	Image ID: `sha256:8695d7aef097ea7158f4221e5cc656af503b163534227df76fc1e51507cbbbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -5462,15 +5462,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:12:09 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:12:09 GMT
-COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:09 GMT
+COPY file:e4d1cf3be629c43237bbb1e31a071c44ad8c72b8285cb3fb00c70144997dbdb8 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:10 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:12:10 GMT
+# Mon, 10 Sep 2018 22:23:10 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:12:11 GMT
+# Mon, 10 Sep 2018 22:23:11 GMT
 CMD ["postgres"]
 ```
 
@@ -5503,12 +5503,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b04296dd756a1aaa00cae9cfb699df13409ca183d26e002bf7b488e9f3c16c5c`  
-		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
-		Size: 2.3 KB (2253 bytes)  
+	-	`sha256:897add96a58eb4214d53b0fbf85303501a5e8865b08bcbcd6395362fc09fceae`  
+		Last Modified: Mon, 10 Sep 2018 22:25:05 GMT  
+		Size: 2.2 KB (2214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5425f9a6abdf83e5af2eeb2df81abff502f36fae102b15b10743e59468ecf3a`  
-		Last Modified: Thu, 30 Aug 2018 22:28:43 GMT  
+	-	`sha256:6ac4229d2790339bb32fdbd256b044858aabfce998e5ba61f30fc002631ac541`  
+		Last Modified: Mon, 10 Sep 2018 22:25:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6010,7 +6010,7 @@ CMD ["postgres"]
 ## `postgres:9`
 
 ```console
-$ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35286fcd0025768c
+$ docker pull postgres@sha256:1a5534a23f6ab19a44b45a459576cae95c1820c0709e5cc225d203240580e64c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6026,14 +6026,14 @@ $ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35
 ### `postgres:9` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:52d9586ee84de00ceeca2f93859530ada765abdb6bb8ab6b4a4658e18e875688
+$ docker pull postgres@sha256:fde505a804df29f785d4e0749bc65ea9829a3b0f60f78abfd743f4924fa6f688
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.7 MB (83679084 bytes)**  
+-	Total Size: **83.7 MB (83679045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e1fdb168a4857a415725ef81f3408cf64dae0d1bd852e2858acb3a869991c1`
+-	Image ID: `sha256:c0b5c11b5690c96b3ddb0e067bb586639333332c4c8310c03524b75df416aaa0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -6078,15 +6078,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:54:01 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:54:02 GMT
-COPY file:6d32638a89fd9792b78af241f33b6811ce7c16464bd5a810693eac592a25a3f8 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:34 GMT
+COPY file:0b5c59faae377c8c5f1c14e4b8fb087129dc09b0ce713733a5e3564e0bb210cb in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 CMD ["postgres"]
 ```
 
@@ -6139,13 +6139,13 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:304c79b7bb812e8f2f78ecb8d901d2e2054cd67790b548445c69c23ea8a00e0d`  
-		Last Modified: Tue, 04 Sep 2018 21:58:45 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:56e2f1d2303b4e5d530499849f82d2e34cdeac0f3a93c58ccb3469f46c3b60e1`  
+		Last Modified: Mon, 10 Sep 2018 22:25:51 GMT  
+		Size: 2.2 KB (2223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:061dec7054ab2f0365039beb8bc339046ca2a320e164f365f5db8d1ea348ccd0`  
-		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
-		Size: 121.0 B  
+	-	`sha256:6eb2ae61937d79667c3f545013d30b27046c237a257b85a437d850b1946433a9`  
+		Last Modified: Mon, 10 Sep 2018 22:25:52 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9` - linux; arm variant v5
@@ -15913,7 +15913,7 @@ CMD ["postgres"]
 ## `postgres:9.6`
 
 ```console
-$ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35286fcd0025768c
+$ docker pull postgres@sha256:1a5534a23f6ab19a44b45a459576cae95c1820c0709e5cc225d203240580e64c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15929,14 +15929,14 @@ $ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35
 ### `postgres:9.6` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:52d9586ee84de00ceeca2f93859530ada765abdb6bb8ab6b4a4658e18e875688
+$ docker pull postgres@sha256:fde505a804df29f785d4e0749bc65ea9829a3b0f60f78abfd743f4924fa6f688
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.7 MB (83679084 bytes)**  
+-	Total Size: **83.7 MB (83679045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e1fdb168a4857a415725ef81f3408cf64dae0d1bd852e2858acb3a869991c1`
+-	Image ID: `sha256:c0b5c11b5690c96b3ddb0e067bb586639333332c4c8310c03524b75df416aaa0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -15981,15 +15981,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:54:01 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:54:02 GMT
-COPY file:6d32638a89fd9792b78af241f33b6811ce7c16464bd5a810693eac592a25a3f8 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:34 GMT
+COPY file:0b5c59faae377c8c5f1c14e4b8fb087129dc09b0ce713733a5e3564e0bb210cb in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 CMD ["postgres"]
 ```
 
@@ -16042,13 +16042,13 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:304c79b7bb812e8f2f78ecb8d901d2e2054cd67790b548445c69c23ea8a00e0d`  
-		Last Modified: Tue, 04 Sep 2018 21:58:45 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:56e2f1d2303b4e5d530499849f82d2e34cdeac0f3a93c58ccb3469f46c3b60e1`  
+		Last Modified: Mon, 10 Sep 2018 22:25:51 GMT  
+		Size: 2.2 KB (2223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:061dec7054ab2f0365039beb8bc339046ca2a320e164f365f5db8d1ea348ccd0`  
-		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
-		Size: 121.0 B  
+	-	`sha256:6eb2ae61937d79667c3f545013d30b27046c237a257b85a437d850b1946433a9`  
+		Last Modified: Mon, 10 Sep 2018 22:25:52 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.6` - linux; arm variant v5
@@ -16804,7 +16804,7 @@ CMD ["postgres"]
 ## `postgres:9.6.10`
 
 ```console
-$ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35286fcd0025768c
+$ docker pull postgres@sha256:1a5534a23f6ab19a44b45a459576cae95c1820c0709e5cc225d203240580e64c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16820,14 +16820,14 @@ $ docker pull postgres@sha256:955e0a38fcfb2d700cdaa6188e3a28fbfd949c8b297a2ccd35
 ### `postgres:9.6.10` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:52d9586ee84de00ceeca2f93859530ada765abdb6bb8ab6b4a4658e18e875688
+$ docker pull postgres@sha256:fde505a804df29f785d4e0749bc65ea9829a3b0f60f78abfd743f4924fa6f688
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.7 MB (83679084 bytes)**  
+-	Total Size: **83.7 MB (83679045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e1fdb168a4857a415725ef81f3408cf64dae0d1bd852e2858acb3a869991c1`
+-	Image ID: `sha256:c0b5c11b5690c96b3ddb0e067bb586639333332c4c8310c03524b75df416aaa0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -16872,15 +16872,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Tue, 04 Sep 2018 21:54:01 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 04 Sep 2018 21:54:02 GMT
-COPY file:6d32638a89fd9792b78af241f33b6811ce7c16464bd5a810693eac592a25a3f8 in /usr/local/bin/ 
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:34 GMT
+COPY file:0b5c59faae377c8c5f1c14e4b8fb087129dc09b0ce713733a5e3564e0bb210cb in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 EXPOSE 5432/tcp
-# Tue, 04 Sep 2018 21:54:03 GMT
+# Mon, 10 Sep 2018 22:23:35 GMT
 CMD ["postgres"]
 ```
 
@@ -16933,13 +16933,13 @@ CMD ["postgres"]
 		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:304c79b7bb812e8f2f78ecb8d901d2e2054cd67790b548445c69c23ea8a00e0d`  
-		Last Modified: Tue, 04 Sep 2018 21:58:45 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:56e2f1d2303b4e5d530499849f82d2e34cdeac0f3a93c58ccb3469f46c3b60e1`  
+		Last Modified: Mon, 10 Sep 2018 22:25:51 GMT  
+		Size: 2.2 KB (2223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:061dec7054ab2f0365039beb8bc339046ca2a320e164f365f5db8d1ea348ccd0`  
-		Last Modified: Tue, 04 Sep 2018 21:58:43 GMT  
-		Size: 121.0 B  
+	-	`sha256:6eb2ae61937d79667c3f545013d30b27046c237a257b85a437d850b1946433a9`  
+		Last Modified: Mon, 10 Sep 2018 22:25:52 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:9.6.10` - linux; arm variant v5
@@ -17695,7 +17695,7 @@ CMD ["postgres"]
 ## `postgres:9.6.10-alpine`
 
 ```console
-$ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d8008613102238c8230bf41bbb0
+$ docker pull postgres@sha256:6dd4f60a941349fb72847623ed6c731834dc03319fc622288b4975e529900953
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17710,14 +17710,14 @@ $ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d800861310223
 ### `postgres:9.6.10-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:454b2b0fe4bd7b494b4922c33809d0e1aa3b44123fc3aa8d2063841b421eb4e3
+$ docker pull postgres@sha256:37d8426493089efea1d1c8a9aa33b9c924013646fd640831c6a21f2f087d8666
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16403771 bytes)**  
+-	Total Size: **16.4 MB (16403732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01790f6da5eebf18e764de5533402cf447a5f2f0cdbba99345700756b37c8334`
+-	Image ID: `sha256:a46df2a834a4172b56afbf70f56bbceda53d563a22e706d84e043e35dd89bee6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -17750,15 +17750,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:19:18 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:19:18 GMT
-COPY file:82123c46d7815651766a814dba7091d3fc0a4c915e3c1448353df27687b7b3e5 in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:42 GMT
+COPY file:433e69abe3111480b9ab7a66c431215e594d273aab16b3294422463bbdc123b6 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:19:20 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 CMD ["postgres"]
 ```
 
@@ -17791,12 +17791,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d23f414e8e40e1f4061c387e5a332a43ce31283080539e9088218be17e903022`  
-		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
-		Size: 2.3 KB (2258 bytes)  
+	-	`sha256:40c7d8bb94bf3f71e4bcb9fe63788868aeec12c962cf3da985e7d08759193174`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
+		Size: 2.2 KB (2219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc31338422815d6ec6a662d35f2a3b96c2f09667a7fc80abfd34fd526d444da5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:37 GMT  
+	-	`sha256:b88aae06c36d19e3aa02284885ed74154d7d829035451cdc9a3e1cc0fb2aa647`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -18298,7 +18298,7 @@ CMD ["postgres"]
 ## `postgres:9.6-alpine`
 
 ```console
-$ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d8008613102238c8230bf41bbb0
+$ docker pull postgres@sha256:6dd4f60a941349fb72847623ed6c731834dc03319fc622288b4975e529900953
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18313,14 +18313,14 @@ $ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d800861310223
 ### `postgres:9.6-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:454b2b0fe4bd7b494b4922c33809d0e1aa3b44123fc3aa8d2063841b421eb4e3
+$ docker pull postgres@sha256:37d8426493089efea1d1c8a9aa33b9c924013646fd640831c6a21f2f087d8666
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16403771 bytes)**  
+-	Total Size: **16.4 MB (16403732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01790f6da5eebf18e764de5533402cf447a5f2f0cdbba99345700756b37c8334`
+-	Image ID: `sha256:a46df2a834a4172b56afbf70f56bbceda53d563a22e706d84e043e35dd89bee6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -18353,15 +18353,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:19:18 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:19:18 GMT
-COPY file:82123c46d7815651766a814dba7091d3fc0a4c915e3c1448353df27687b7b3e5 in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:42 GMT
+COPY file:433e69abe3111480b9ab7a66c431215e594d273aab16b3294422463bbdc123b6 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:19:20 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 CMD ["postgres"]
 ```
 
@@ -18394,12 +18394,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d23f414e8e40e1f4061c387e5a332a43ce31283080539e9088218be17e903022`  
-		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
-		Size: 2.3 KB (2258 bytes)  
+	-	`sha256:40c7d8bb94bf3f71e4bcb9fe63788868aeec12c962cf3da985e7d08759193174`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
+		Size: 2.2 KB (2219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc31338422815d6ec6a662d35f2a3b96c2f09667a7fc80abfd34fd526d444da5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:37 GMT  
+	-	`sha256:b88aae06c36d19e3aa02284885ed74154d7d829035451cdc9a3e1cc0fb2aa647`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -18901,7 +18901,7 @@ CMD ["postgres"]
 ## `postgres:9-alpine`
 
 ```console
-$ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d8008613102238c8230bf41bbb0
+$ docker pull postgres@sha256:6dd4f60a941349fb72847623ed6c731834dc03319fc622288b4975e529900953
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18916,14 +18916,14 @@ $ docker pull postgres@sha256:0972b09e1a1fa0491a0ded28b5fdb528730d0d800861310223
 ### `postgres:9-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:454b2b0fe4bd7b494b4922c33809d0e1aa3b44123fc3aa8d2063841b421eb4e3
+$ docker pull postgres@sha256:37d8426493089efea1d1c8a9aa33b9c924013646fd640831c6a21f2f087d8666
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16403771 bytes)**  
+-	Total Size: **16.4 MB (16403732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01790f6da5eebf18e764de5533402cf447a5f2f0cdbba99345700756b37c8334`
+-	Image ID: `sha256:a46df2a834a4172b56afbf70f56bbceda53d563a22e706d84e043e35dd89bee6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -18956,15 +18956,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:19:18 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:19:18 GMT
-COPY file:82123c46d7815651766a814dba7091d3fc0a4c915e3c1448353df27687b7b3e5 in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:42 GMT
+COPY file:433e69abe3111480b9ab7a66c431215e594d273aab16b3294422463bbdc123b6 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:19:19 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:19:20 GMT
+# Mon, 10 Sep 2018 22:23:43 GMT
 CMD ["postgres"]
 ```
 
@@ -18997,12 +18997,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d23f414e8e40e1f4061c387e5a332a43ce31283080539e9088218be17e903022`  
-		Last Modified: Thu, 30 Aug 2018 22:29:38 GMT  
-		Size: 2.3 KB (2258 bytes)  
+	-	`sha256:40c7d8bb94bf3f71e4bcb9fe63788868aeec12c962cf3da985e7d08759193174`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
+		Size: 2.2 KB (2219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc31338422815d6ec6a662d35f2a3b96c2f09667a7fc80abfd34fd526d444da5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:37 GMT  
+	-	`sha256:b88aae06c36d19e3aa02284885ed74154d7d829035451cdc9a3e1cc0fb2aa647`  
+		Last Modified: Mon, 10 Sep 2018 22:26:08 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -19504,7 +19504,7 @@ CMD ["postgres"]
 ## `postgres:alpine`
 
 ```console
-$ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c766811c259c66abf2a5
+$ docker pull postgres@sha256:d6460456a5841457694528d0b11c4d7a26c664b863085f5f3136ee8ecff7a94a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19519,14 +19519,14 @@ $ docker pull postgres@sha256:3609152c765b926f9ec535addb6f95eb5195dcfb84c3c76681
 ### `postgres:alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:7ed5247dc56eb7b1de8ce5b72798ff36be0a09e8e26bda16b937d34e07f094b8
+$ docker pull postgres@sha256:60c86546a3d4a40d4668fcff349e04affee01e08a74fb27a4f4016331305641e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29482771 bytes)**  
+-	Total Size: **29.5 MB (29482731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e76de55985febddd26751cfbdf7cf0324024b3ec720fb102d3000637a4f52731`
+-	Image ID: `sha256:7e13d5da46b9f6079fd7e0efa932fdead3271348c45cafc1250c5ec6fa600c90`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -19559,15 +19559,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Thu, 30 Aug 2018 22:15:51 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 30 Aug 2018 22:15:51 GMT
-COPY file:86ac8c6f9b02a25651114cb226da72e718a9cacfa324b01f169bfe88e0027aec in /usr/local/bin/ 
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:26 GMT
+COPY file:e4d1cf3be629c43237bbb1e31a071c44ad8c72b8285cb3fb00c70144997dbdb8 in /usr/local/bin/ 
+# Mon, 10 Sep 2018 22:23:27 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 EXPOSE 5432/tcp
-# Thu, 30 Aug 2018 22:15:52 GMT
+# Mon, 10 Sep 2018 22:23:27 GMT
 CMD ["postgres"]
 ```
 
@@ -19600,12 +19600,12 @@ CMD ["postgres"]
 		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42fda00273266fcf0ea419ecf94e868539f9f49ba0daa81d6ee666f0aeab29a5`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
-		Size: 2.3 KB (2255 bytes)  
+	-	`sha256:44d72dfb1d468fb1bf7ea5bf1dc9357f20d042b225befd873ccbca7647ad69d0`  
+		Last Modified: Mon, 10 Sep 2018 22:25:36 GMT  
+		Size: 2.2 KB (2215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49b19bcd2fee71461ffd24531d2a8e6c4f23a9a6a90fb03f43f31266be0bed14`  
-		Last Modified: Thu, 30 Aug 2018 22:29:11 GMT  
+	-	`sha256:725df0a03c822d06b8ffdd84a84a2226abea093e7711d8b4f26d445a111816ba`  
+		Last Modified: Mon, 10 Sep 2018 22:25:34 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
