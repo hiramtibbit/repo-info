@@ -433,20 +433,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.10
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.dsc' dash_0.5.8-2.10.dsc 1618 SHA256:1e8fdac0880d57d8ed5eb11f9f1750a67c71a7200180cf3ed5aa3e74dab3e4c5
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.debian.tar.xz' dash_0.5.8-2.10.debian.tar.xz 43920 SHA256:0d870b0cf9b3ad40e4d4f1e3d4d9097f4d62151693a48f34cb1d49865fd4abdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.8-2.10/
 
-- https://sources.debian.net/src/dash/0.5.8-2.10/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.8-2.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.8-2.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.1`
 
@@ -1865,21 +1858,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.7-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7-1.dsc' mercurial_4.7-1.dsc 2605 SHA256:244cf51c58ebcef58016e55056721f0e613b29d2c4e9d15475c24ed9eaa7e456
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.orig.tar.gz' mercurial_4.7.orig.tar.gz 6476268 SHA256:098cb1437f77fb7f75dc2f008742933c729ec0b63cfa3e4e2f0a8fbc3d0d349f
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.orig.tar.gz.asc' mercurial_4.7.orig.tar.gz.asc 833 SHA256:79ecb4e0d9fcc29e79d433404c04d5a38dfc27d1e27c2c8e92f732d4b945ac97
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7-1.debian.tar.xz' mercurial_4.7-1.debian.tar.xz 61608 SHA256:8275e68b4bce5ed700a765f18b79ff5a1b6c51e1dfbeb2a649b43cfd4f35f3ea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.7-1/
 
-- https://sources.debian.net/src/mercurial/4.7-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 

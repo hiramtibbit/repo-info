@@ -1796,14 +1796,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.15-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-3.dsc' python2.7_2.7.15-3.dsc 3357 SHA256:c277054ffdc03e23cdccd6c0bd4b0344d1714415de7c4851c54edd572b79919c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15.orig.tar.gz' python2.7_2.7.15.orig.tar.gz 17496336 SHA256:18617d1f15a380a919d517630a9cd85ce17ea602f9bbdc58ddc672df4b0239db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-3.diff.gz' python2.7_2.7.15-3.diff.gz 284340 SHA256:a4a8fb31c6ba2f249e16a51a6527dd8307de183d708bca3a31722e81b3c60335
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.15-3/
+
 
 ### `dpkg` source package: `readline=7.0-5`
 

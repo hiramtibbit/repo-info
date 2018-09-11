@@ -980,14 +980,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `MPL-1.1-or-LGPL-2+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.12-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.12-2.dsc' gdk-pixbuf_2.36.12-2.dsc 2890 SHA256:4e19e426897f823bcf272c5a23220fc8f39d19ce42cf0ffd67294d4f36cfdb03
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.12.orig.tar.xz' gdk-pixbuf_2.36.12.orig.tar.xz 5675768 SHA256:fff85cf48223ab60e3c3c8318e2087131b590fd6f1737e42cb3759a3b427a334
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.12-2.debian.tar.xz' gdk-pixbuf_2.36.12-2.debian.tar.xz 15240 SHA256:e46eb1f71424d048dcd5d479d4b974b9a31c5467471e6669ea24b3188b86db9b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdk-pixbuf/2.36.12-2/
+
 
 ### `dpkg` source package: `geoip=1.6.12-1`
 
@@ -2119,14 +2118,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.40.20-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.20-2.dsc' librsvg_2.40.20-2.dsc 2731 SHA256:35b78a72b57dc406ce641efbca357476e2b67b8681951c9f0e7a6ec2f6808b37
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.20.orig.tar.xz' librsvg_2.40.20.orig.tar.xz 1796376 SHA256:cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.20-2.debian.tar.xz' librsvg_2.40.20-2.debian.tar.xz 16544 SHA256:40f1ff3c70b3bb3d107f5d9e37c4ee023c8cffd33bd2d65cebb0ebc245adda28
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.40.20-2/
+
 
 ### `dpkg` source package: `libseccomp=2.3.3-3ubuntu1`
 
@@ -2311,15 +2309,9 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-2.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-2.1build1.dsc' libtool_2.4.6-2.1build1.dsc 2395 SHA256:5b07a45cc8ceee27484e8aa38db573218dd039efde10f8d5d29a63b65c9e377e
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-2.1build1.debian.tar.xz' libtool_2.4.6-2.1build1.debian.tar.xz 45916 SHA256:1dbc40a56233d9f2443fdfc07319361e1d81b56ccd9967f0fc15b76810c699e6
-```
 
 ### `dpkg` source package: `libunistring=0.9.10-1ubuntu1`
 
@@ -2510,14 +2502,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-7build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7build1.dsc' libxml2_2.9.4+dfsg1-7build1.dsc 3025 SHA256:aca90b48301d1ad4ac6d4b6990461ba659a6a68c3d3c3158cebb68738f09258d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7build1.debian.tar.xz' libxml2_2.9.4+dfsg1-7build1.debian.tar.xz 36204 SHA256:e5b1f3b25ee209ccbf80e00c441aab9c24d406dbf39603be3ef5de2ba938a217
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -2634,14 +2621,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.17.0-9.10
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0-9.10.dsc' linux_4.17.0-9.10.dsc 7428 SHA256:441da0e7bfcf01976478284eab0980c43876ad584e9082b9be0e966adca6250d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0.orig.tar.gz' linux_4.17.0.orig.tar.gz 157716315 SHA256:482e5141e63fb6413fc90a9c46dcc408b9b44011fca609c4988cb904143e93b5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.17.0-9.10.diff.gz' linux_4.17.0-9.10.diff.gz 6869892 SHA256:51007d1ecc70bff9a880de70c3ba5d87f3b9d80c2b057c8da6c514f6908e3c21
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -3480,14 +3462,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.15-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-3.dsc' python2.7_2.7.15-3.dsc 3357 SHA256:c277054ffdc03e23cdccd6c0bd4b0344d1714415de7c4851c54edd572b79919c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15.orig.tar.gz' python2.7_2.7.15.orig.tar.gz 17496336 SHA256:18617d1f15a380a919d517630a9cd85ce17ea602f9bbdc58ddc672df4b0239db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15-3.diff.gz' python2.7_2.7.15-3.diff.gz 284340 SHA256:a4a8fb31c6ba2f249e16a51a6527dd8307de183d708bca3a31722e81b3c60335
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.15-3/
+
 
 ### `dpkg` source package: `python3-defaults=3.6.6-1`
 
