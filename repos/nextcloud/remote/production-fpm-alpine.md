@@ -1,7 +1,7 @@
 ## `nextcloud:production-fpm-alpine`
 
 ```console
-$ docker pull nextcloud@sha256:4d83c4f2490320a94261e0ec7719b887b78b0256ceda0e51038206dce0fb14e2
+$ docker pull nextcloud@sha256:8bfa4d8097f105699970411b4f0a378aa2b523670c358b0f986b11ae2908523c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,14 +171,14 @@ CMD ["php-fpm"]
 ### `nextcloud:production-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:b080db701dd37382cdc084855b0c2c3e81cf66f989716f60d0b36aee023b0ba5
+$ docker pull nextcloud@sha256:7826f9ac0e18c50a60d504faa320cb1a507ae1a608de301dfe0c0109acc75802
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.9 MB (100925241 bytes)**  
+-	Total Size: **100.9 MB (100925243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:734843a8fa6477ccba479fa28a2f3e8172585c1bee757f57bc6b9f4a99b50545`
+-	Image ID: `sha256:53c547faad811ce1569e5c714d18d3aa40994e24181b81e633e4731b4ba0c645`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -247,13 +247,13 @@ VOLUME [/var/www/html]
 ENV NEXTCLOUD_VERSION=13.0.6
 # Sat, 01 Sep 2018 09:15:40 GMT
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
-# Sat, 01 Sep 2018 09:15:42 GMT
-COPY multi:f33934cfb9da2d432252f25123e4239ab0550f895400c104c4593506cd83b53b in / 
-# Sat, 01 Sep 2018 09:15:43 GMT
+# Tue, 11 Sep 2018 09:14:13 GMT
+COPY multi:c5eef63d9e5eaba8c1b0bcde935f9bed33bacf2bf9ff56bfe4d8ac253916e66a in / 
+# Tue, 11 Sep 2018 09:14:15 GMT
 COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
-# Sat, 01 Sep 2018 09:15:44 GMT
+# Tue, 11 Sep 2018 09:14:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 01 Sep 2018 09:15:45 GMT
+# Tue, 11 Sep 2018 09:14:16 GMT
 CMD ["php-fpm"]
 ```
 
@@ -322,13 +322,13 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 01 Sep 2018 09:35:50 GMT  
 		Size: 49.6 MB (49607691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb343f68dcb0b4050ee7a8f94efa1ebe26d54bd1ee5dc769ccfa52944a4fb1f2`  
-		Last Modified: Sat, 01 Sep 2018 09:35:29 GMT  
+	-	`sha256:e453587256d27b8c54d1d445814c546a8eb0cd74707dc08716ca9f3d0e57e412`  
+		Last Modified: Tue, 11 Sep 2018 09:27:00 GMT  
 		Size: 999.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ffd630e3b2cc6e674c410cd02fa0f5ee275044aa8bae3a3304d151703a158ae`  
-		Last Modified: Sat, 01 Sep 2018 09:35:29 GMT  
-		Size: 784.0 B  
+	-	`sha256:e93e8509e130101ee57e0512bd0a6f4533b8b413e1faf693f54768a142c1ae26`  
+		Last Modified: Tue, 11 Sep 2018 09:27:00 GMT  
+		Size: 786.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production-fpm-alpine` - linux; 386
