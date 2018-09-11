@@ -1,10 +1,10 @@
-# `tomee:8-jre-7.0.0-plus`
+# `tomee:8-jre-7.1.0-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb5e0d13b9ca149c10a536c1b2c4e9d4873dd80d83af0b7ecd595285a67554df`
-- Created: `2018-09-05T17:30:49.985053004Z`
-- Virtual Size: ~ 500.89 Mb  
+- Image ID: `sha256:86d26adb4755f3b766ede9f492904e21c0f7815f7fac988dacc2a6efd0ec9ba3`
+- Created: `2018-09-07T20:26:38.4642289Z`
+- Virtual Size: ~ 490.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
