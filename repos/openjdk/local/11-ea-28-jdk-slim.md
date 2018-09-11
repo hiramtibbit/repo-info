@@ -1,19 +1,19 @@
-# `openjdk:11-ea-27-jre-slim-sid`
+# `openjdk:11-ea-28-jdk-slim-sid`
 
 ## Docker Metadata
 
-- Image ID: `sha256:285ae1b89ac7dbc7956615478c4a01ebd62d176d38e268679a3544e211db7068`
-- Created: `2018-09-05T01:17:52.005404724Z`
-- Virtual Size: ~ 280.92 Mb  
+- Image ID: `sha256:f097550f7cc786376cff2aa2107c6767f306d9aa672a50e0fbbc5985effb0def`
+- Created: `2018-09-07T19:35:15.643830713Z`
+- Virtual Size: ~ 502.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["bash"]`
+- Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11-ea+27`
-  - `JAVA_DEBIAN_VERSION=11~27-1`
+  - `JAVA_VERSION=11-ea+28`
+  - `JAVA_DEBIAN_VERSION=11~28-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -437,20 +437,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.10
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.dsc' dash_0.5.8-2.10.dsc 1618 SHA256:1e8fdac0880d57d8ed5eb11f9f1750a67c71a7200180cf3ed5aa3e74dab3e4c5
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.10.debian.tar.xz' dash_0.5.8-2.10.debian.tar.xz 43920 SHA256:0d870b0cf9b3ad40e4d4f1e3d4d9097f4d62151693a48f34cb1d49865fd4abdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.8-2.10/
 
-- https://sources.debian.net/src/dash/0.5.8-2.10/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.8-2.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.8-2.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.1`
 
@@ -1142,11 +1135,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.16-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.16-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lcms2=2.9-2`
+### `dpkg` source package: `lcms2=2.9-3`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.9-2`
+- `liblcms2-2:amd64=2.9-3`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1157,17 +1150,17 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.9-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.dsc' lcms2_2.9-2.dsc 1956 SHA256:2c0db2fbde92ab2b8aecf20372e620e49bd5766c390dc541345e9c32a28f8e4b
+$ apt-get source -qq --print-uris lcms2=2.9-3
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-3.dsc' lcms2_2.9-3.dsc 1956 SHA256:2529e211246393053d2f1567f067f9983facf086185b582a56d10ecf04f9ca80
 'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.debian.tar.xz' lcms2_2.9-2.debian.tar.xz 10116 SHA256:9d6039d0d0e57594a442583922b28b0f9af37de7e630c6d4a6bcc11c397e59f7
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-3.debian.tar.xz' lcms2_2.9-3.debian.tar.xz 10580 SHA256:5916773a94edbfac06c36c95d8c6b7e8dc304cecb91897f84575f51f22663744
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.9-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lcms2/2.9-3/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.9-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.9-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -1992,41 +1985,42 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.38-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.dsc' nss_3.38-1.dsc 2146 SHA256:1dbdbb28be43cf74b4bf8f7ccdb8811194d8383628048264fde286f06371d0a2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38.orig.tar.gz' nss_3.38.orig.tar.gz 23023474 SHA256:2c643d3c08d6935f4d325f40743719b6990aa25a79ec2f8f712c99d086672f62
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.debian.tar.xz' nss_3.38-1.debian.tar.xz 19932 SHA256:f100e820a4e1593f70cdc1dea909d9b473d12d7fd1b13cc74075204a549135da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.38-1/
 
-- https://sources.debian.net/src/nss/2:3.38-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~27-1`
+### `dpkg` source package: `openjdk-11=11~28-1`
 
 Binary Packages:
 
-- `openjdk-11-jre-headless:amd64=11~27-1`
+- `openjdk-11-jdk-headless:amd64=11~28-1`
+- `openjdk-11-jre-headless:amd64=11~28-1`
 
-Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
 - `Apache-2.0`
 - `GPL-2`
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-11=11~28-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-1.dsc' openjdk-11_11~28-1.dsc 4531 SHA256:c557b9078ca315c245a128e71c941f3dbe3b4f95657b1b6e794ac57b9fa77f92
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28.orig.tar.xz' openjdk-11_11~28.orig.tar.xz 75178272 SHA256:95556aa3253a4d2d95a61e673da1dc721123a9bd0b7f14611542f41556877a47
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-1.debian.tar.xz' openjdk-11_11~28-1.debian.tar.xz 166496 SHA256:d8c5d80faf05e7d80f070603c5db150887a77d8d0dc5b8159d89485caf921b3d
+```
 
-- http://snapshot.debian.org/package/openjdk-11/11~27-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-11/11~28-1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~28-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~28-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1~~pre9-1`
 
@@ -2345,20 +2339,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-7.dsc' systemd_239-7.dsc 4854 SHA256:baa76bbe4ab36eda3b8f3dfa1c3731ebcd2850e7fc70e2ddc9d1729ade1e5ba3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-7.debian.tar.xz' systemd_239-7.debian.tar.xz 142048 SHA256:87283b64e2f09969c326ab3eecc6a2fd4ad173330911e101a46937468f543dec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-7/
 
-- https://sources.debian.net/src/systemd/239-7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
