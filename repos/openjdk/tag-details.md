@@ -81,6 +81,14 @@
 -	[`openjdk:10-windowsservercore-1709`](#openjdk10-windowsservercore-1709)
 -	[`openjdk:10-windowsservercore-ltsc2016`](#openjdk10-windowsservercore-ltsc2016)
 -	[`openjdk:11`](#openjdk11)
+-	[`openjdk:11-28-jdk-windowsservercore`](#openjdk11-28-jdk-windowsservercore)
+-	[`openjdk:11-28-jdk-windowsservercore-1709`](#openjdk11-28-jdk-windowsservercore-1709)
+-	[`openjdk:11-28-jdk-windowsservercore-1803`](#openjdk11-28-jdk-windowsservercore-1803)
+-	[`openjdk:11-28-jdk-windowsservercore-ltsc2016`](#openjdk11-28-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:11-28-windowsservercore`](#openjdk11-28-windowsservercore)
+-	[`openjdk:11-28-windowsservercore-1709`](#openjdk11-28-windowsservercore-1709)
+-	[`openjdk:11-28-windowsservercore-1803`](#openjdk11-28-windowsservercore-1803)
+-	[`openjdk:11-28-windowsservercore-ltsc2016`](#openjdk11-28-windowsservercore-ltsc2016)
 -	[`openjdk:11-ea`](#openjdk11-ea)
 -	[`openjdk:11-ea-28`](#openjdk11-ea-28)
 -	[`openjdk:11-ea-28-jdk`](#openjdk11-ea-28-jdk)
@@ -109,6 +117,10 @@
 -	[`openjdk:11-jdk-sid`](#openjdk11-jdk-sid)
 -	[`openjdk:11-jdk-slim`](#openjdk11-jdk-slim)
 -	[`openjdk:11-jdk-slim-sid`](#openjdk11-jdk-slim-sid)
+-	[`openjdk:11-jdk-windowsservercore`](#openjdk11-jdk-windowsservercore)
+-	[`openjdk:11-jdk-windowsservercore-1709`](#openjdk11-jdk-windowsservercore-1709)
+-	[`openjdk:11-jdk-windowsservercore-1803`](#openjdk11-jdk-windowsservercore-1803)
+-	[`openjdk:11-jdk-windowsservercore-ltsc2016`](#openjdk11-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:11-jre`](#openjdk11-jre)
 -	[`openjdk:11-jre-sid`](#openjdk11-jre-sid)
 -	[`openjdk:11-jre-slim`](#openjdk11-jre-slim)
@@ -116,6 +128,34 @@
 -	[`openjdk:11-sid`](#openjdk11-sid)
 -	[`openjdk:11-slim`](#openjdk11-slim)
 -	[`openjdk:11-slim-sid`](#openjdk11-slim-sid)
+-	[`openjdk:11-windowsservercore`](#openjdk11-windowsservercore)
+-	[`openjdk:11-windowsservercore-1709`](#openjdk11-windowsservercore-1709)
+-	[`openjdk:11-windowsservercore-1803`](#openjdk11-windowsservercore-1803)
+-	[`openjdk:11-windowsservercore-ltsc2016`](#openjdk11-windowsservercore-ltsc2016)
+-	[`openjdk:12-ea-10-jdk-windowsservercore`](#openjdk12-ea-10-jdk-windowsservercore)
+-	[`openjdk:12-ea-10-jdk-windowsservercore-1709`](#openjdk12-ea-10-jdk-windowsservercore-1709)
+-	[`openjdk:12-ea-10-jdk-windowsservercore-1803`](#openjdk12-ea-10-jdk-windowsservercore-1803)
+-	[`openjdk:12-ea-10-jdk-windowsservercore-ltsc2016`](#openjdk12-ea-10-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:12-ea-10-windowsservercore`](#openjdk12-ea-10-windowsservercore)
+-	[`openjdk:12-ea-10-windowsservercore-1709`](#openjdk12-ea-10-windowsservercore-1709)
+-	[`openjdk:12-ea-10-windowsservercore-1803`](#openjdk12-ea-10-windowsservercore-1803)
+-	[`openjdk:12-ea-10-windowsservercore-ltsc2016`](#openjdk12-ea-10-windowsservercore-ltsc2016)
+-	[`openjdk:12-ea-jdk-windowsservercore`](#openjdk12-ea-jdk-windowsservercore)
+-	[`openjdk:12-ea-jdk-windowsservercore-1709`](#openjdk12-ea-jdk-windowsservercore-1709)
+-	[`openjdk:12-ea-jdk-windowsservercore-1803`](#openjdk12-ea-jdk-windowsservercore-1803)
+-	[`openjdk:12-ea-jdk-windowsservercore-ltsc2016`](#openjdk12-ea-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:12-ea-windowsservercore`](#openjdk12-ea-windowsservercore)
+-	[`openjdk:12-ea-windowsservercore-1709`](#openjdk12-ea-windowsservercore-1709)
+-	[`openjdk:12-ea-windowsservercore-1803`](#openjdk12-ea-windowsservercore-1803)
+-	[`openjdk:12-ea-windowsservercore-ltsc2016`](#openjdk12-ea-windowsservercore-ltsc2016)
+-	[`openjdk:12-jdk-windowsservercore`](#openjdk12-jdk-windowsservercore)
+-	[`openjdk:12-jdk-windowsservercore-1709`](#openjdk12-jdk-windowsservercore-1709)
+-	[`openjdk:12-jdk-windowsservercore-1803`](#openjdk12-jdk-windowsservercore-1803)
+-	[`openjdk:12-jdk-windowsservercore-ltsc2016`](#openjdk12-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:12-windowsservercore`](#openjdk12-windowsservercore)
+-	[`openjdk:12-windowsservercore-1709`](#openjdk12-windowsservercore-1709)
+-	[`openjdk:12-windowsservercore-1803`](#openjdk12-windowsservercore-1803)
+-	[`openjdk:12-windowsservercore-ltsc2016`](#openjdk12-windowsservercore-ltsc2016)
 -	[`openjdk:7`](#openjdk7)
 -	[`openjdk:7-alpine`](#openjdk7-alpine)
 -	[`openjdk:7-alpine3.8`](#openjdk7-alpine38)
@@ -27544,6 +27584,38 @@ CMD ["jshell"]
 		Size: 336.4 MB (336399099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11-28-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-jdk-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:11-28-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
 ## `openjdk:11-ea`
 
 ```console
@@ -39316,6 +39388,22 @@ CMD ["jshell"]
 		Size: 260.3 MB (260301655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:11-jdk-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:11-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:11-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
 ## `openjdk:11-jre`
 
 ```console
@@ -42144,6 +42232,118 @@ CMD ["jshell"]
 		Last Modified: Sat, 08 Sep 2018 12:14:57 GMT  
 		Size: 260.3 MB (260301655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:11-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:11-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:11-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-jdk-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-10-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-jdk-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-ea-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-jdk-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-jdk-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:12-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:12-windowsservercore-1709`
+
+**does not exist** (yet?)
+
+## `openjdk:12-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `openjdk:12-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `openjdk:7`
 
