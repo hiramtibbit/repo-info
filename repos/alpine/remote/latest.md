@@ -1,7 +1,7 @@
 ## `alpine:latest`
 
 ```console
-$ docker pull alpine@sha256:94db8cf66bf26046c430cbcfbc161133964d6336c6800649945c4d7c1d268b27
+$ docker pull alpine@sha256:01912ef2b071dad199f6202d3ed354de7e3036ba4cbe34411a928c70eca827aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -74,32 +74,32 @@ CMD ["/bin/sh"]
 ### `alpine:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull alpine@sha256:30ebbffae9ba098b9c345b890c6610aa8422f067754d7e707978a954f3b7a601
+$ docker pull alpine@sha256:a158be94ab7ee264e583e77e3928b450a358dc59a322cdaf474006a0ee811d4b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2099690 bytes)**  
+-	Total Size: **2.1 MB (2099938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:def91cb894ef09cfa305b37c92e9abca641bcdcf30e08654d233b393ba829b8e`
+-	Image ID: `sha256:637f35dd3ce491224a1f424f7a31efc64033355a9d3d8e77a34b90fe2fe6ceb8`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 06 Jul 2018 08:41:03 GMT
-ADD file:199a5a48bddabaf1f649f58f3b17c323a1aa1a50e939dfdea3542e4041e91b7b in / 
-# Fri, 06 Jul 2018 08:41:03 GMT
+# Wed, 12 Sep 2018 08:42:24 GMT
+ADD file:a4b53e2a2e207c5107a76c16d91b99cb1ed4ecb90b363913798e663426137d45 in / 
+# Wed, 12 Sep 2018 08:42:24 GMT
 COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Fri, 06 Jul 2018 08:41:04 GMT
+# Wed, 12 Sep 2018 08:42:25 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:47e04371c99027fae42871b720fdc6cdddcb65062bfa05f0c3bb0a594cb5bbbd`  
-		Last Modified: Wed, 27 Jun 2018 19:15:35 GMT  
-		Size: 2.1 MB (2099514 bytes)  
+	-	`sha256:9941776d74c9129fd585b6f0434ba48bd3a7112d6736bc02e6d12f41153cab26`  
+		Last Modified: Wed, 12 Sep 2018 08:44:55 GMT  
+		Size: 2.1 MB (2099762 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4103359e1ecd9a7253d8b8a041d4e81db1ff4a5e1950bc0e02305d221c9e6c2`  
-		Last Modified: Fri, 06 Jul 2018 08:42:09 GMT  
+	-	`sha256:ae94b3cb7a1b2cef0ceffe3303cd03f83434d283aab43389e586b42bea00b358`  
+		Last Modified: Wed, 12 Sep 2018 08:44:55 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
