@@ -1,17 +1,17 @@
-# `node:8.11.4-jessie`
+# `node:8.12.0-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8198006b2b5715ea28c15b9a9d270db3d0aa1bfa7cf60a2ee896654ebbde293f`
-- Created: `2018-09-05T10:20:45.206663788Z`
-- Virtual Size: ~ 672.53 Mb  
+- Image ID: `sha256:6f62c0cdc461dd48950f0ed3a6f6e8c7edbbfd778be1cc71ea883ec476c06769`
+- Created: `2018-09-11T17:19:57.66269598Z`
+- Virtual Size: ~ 669.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.11.4`
-  - `YARN_VERSION=1.6.0`
+  - `NODE_VERSION=8.12.0`
+  - `YARN_VERSION=1.9.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4011,20 +4011,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:6.7p1-5+deb8u5
-'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.7p1-5+deb8u5.dsc' openssh_6.7p1-5+deb8u5.dsc 2723 SHA256:302ab63fd54a900667041519ba9c06b72bf9695f28a5562b818399f0f738968b
-'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.7p1.orig.tar.gz' openssh_6.7p1.orig.tar.gz 1351367 SHA256:b2f8394eae858dabbdef7dac10b99aec00c95462753e80342e530bbb6f725507
-'http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh_6.7p1-5+deb8u5.debian.tar.xz' openssh_6.7p1-5+deb8u5.debian.tar.xz 152924 SHA256:d91eca6b6068b8b87680bf5b841f315a6256d863e46352b668ee57c422c18f07
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:6.7p1-5+deb8u5/
 
-- https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:6.7p1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
 
