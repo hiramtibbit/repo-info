@@ -2209,20 +2209,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.9-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.dsc' lcms2_2.9-2.dsc 1956 SHA256:2c0db2fbde92ab2b8aecf20372e620e49bd5766c390dc541345e9c32a28f8e4b
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.9-2.debian.tar.xz' lcms2_2.9-2.debian.tar.xz 10116 SHA256:9d6039d0d0e57594a442583922b28b0f9af37de7e630c6d4a6bcc11c397e59f7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.9-2/
 
-- https://sources.debian.net/src/lcms2/2.9-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -4029,21 +4022,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.7-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7-1.dsc' mercurial_4.7-1.dsc 2605 SHA256:244cf51c58ebcef58016e55056721f0e613b29d2c4e9d15475c24ed9eaa7e456
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.orig.tar.gz' mercurial_4.7.orig.tar.gz 6476268 SHA256:098cb1437f77fb7f75dc2f008742933c729ec0b63cfa3e4e2f0a8fbc3d0d349f
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.orig.tar.gz.asc' mercurial_4.7.orig.tar.gz.asc 833 SHA256:79ecb4e0d9fcc29e79d433404c04d5a38dfc27d1e27c2c8e92f732d4b945ac97
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7-1.debian.tar.xz' mercurial_4.7-1.debian.tar.xz 61608 SHA256:8275e68b4bce5ed700a765f18b79ff5a1b6c51e1dfbeb2a649b43cfd4f35f3ea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.7-1/
 
-- https://sources.debian.net/src/mercurial/4.7-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mesa=18.1.7-1`
 
@@ -4059,20 +4044,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.7-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7-1.dsc' mesa_18.1.7-1.dsc 4884 SHA256:76733c22e97eaca195782f431cce80ca10c26df4738cb30ddbd2ee19b1d209ff
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7.orig.tar.gz' mesa_18.1.7.orig.tar.gz 18894102 SHA256:0c3c240bcd1352d179e65993214f9d55a399beac852c3ab4433e8df9b6c51c83
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7-1.diff.gz' mesa_18.1.7-1.diff.gz 95044 SHA256:a70a6af331b6cbbdfbfcf98263ddaec8102de44d1db19b44cce4daa5704b7b07
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.7-1/
 
-- https://sources.debian.net/src/mesa/18.1.7-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 
@@ -4253,20 +4231,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.38-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.dsc' nss_3.38-1.dsc 2146 SHA256:1dbdbb28be43cf74b4bf8f7ccdb8811194d8383628048264fde286f06371d0a2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38.orig.tar.gz' nss_3.38.orig.tar.gz 23023474 SHA256:2c643d3c08d6935f4d325f40743719b6990aa25a79ec2f8f712c99d086672f62
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.38-1.debian.tar.xz' nss_3.38-1.debian.tar.xz 19932 SHA256:f100e820a4e1593f70cdc1dea909d9b473d12d7fd1b13cc74075204a549135da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.38-1/
 
-- https://sources.debian.net/src/nss/2:3.38-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.38-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.38-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10.0.2+13-1`
 
@@ -4486,20 +4457,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.4-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-2.dsc' pango1.0_1.42.4-2.dsc 3253 SHA256:81674a68e9713b7b04efff5c9308a6f63ca8ddcf2949463f90f326cd4c5f0bc0
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-2.debian.tar.xz' pango1.0_1.42.4-2.debian.tar.xz 29332 SHA256:bb15c734034a6412aba6274f4496950ee2a7586ea27a3f6e71d98e4b77931a36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.42.4-2/
 
-- https://sources.debian.net/src/pango1.0/1.42.4-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.31-3`
 
