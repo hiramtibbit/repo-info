@@ -1,10 +1,10 @@
-# `percona:5.7.22-stretch`
+# `percona:5.7.23-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:656ff8ddd1b64635104e68c9a9080aa69a21981a6516b83cb8141ec3fe18c42c`
-- Created: `2018-09-05T01:20:14.420255807Z`
-- Virtual Size: ~ 403.84 Mb  
+- Image ID: `sha256:efcbfb5c16bab190eed828c5b9a5831b5aed77171b79d55a94bea3dbb3b82820`
+- Created: `2018-09-12T20:25:34.30011478Z`
+- Virtual Size: ~ 404.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
-  - `PERCONA_VERSION=5.7.22-22-1.stretch`
+  - `PERCONA_VERSION=5.7.23-23-1.stretch`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -328,10 +328,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcurl3:amd64=7.52.1-5+deb9u6`
 - `libcurl3-gnutls:amd64=7.52.1-5+deb9u6`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -354,6 +353,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
 - https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `curl=7.52.1-5+deb9u7`
+
+Binary Packages:
+
+- `libcurl3:amd64=7.52.1-5+deb9u7`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.dsc' curl_7.52.1-5+deb9u7.dsc 2818 SHA256:e8f007d8d45d4d00ba5aa54223f46b8c240a72fb2c4e45d80a859124e3ef40d0
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.debian.tar.xz' curl_7.52.1-5+deb9u7.debian.tar.xz 40796 SHA256:dbe0d4258f0d91787be2197f175807a69a454c9463e7dec3539f168cc43d1b40
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -2134,13 +2163,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `percona-server-5.7=5.7.22-22-1.stretch`
+### `dpkg` source package: `percona-server-5.7=5.7.23-23-1.stretch`
 
 Binary Packages:
 
-- `percona-server-client-5.7=5.7.22-22-1.stretch`
-- `percona-server-common-5.7=5.7.22-22-1.stretch`
-- `percona-server-server-5.7=5.7.22-22-1.stretch`
+- `percona-server-client-5.7=5.7.23-23-1.stretch`
+- `percona-server-common-5.7=5.7.23-23-1.stretch`
+- `percona-server-server-5.7=5.7.23-23-1.stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
