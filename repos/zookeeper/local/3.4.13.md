@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72d44402c57aa61c686169455e13e52e6d75fe121985166d6fa788ff0cc36865`
-- Created: `2018-09-05T12:57:35.231424921Z`
-- Virtual Size: ~ 148.89 Mb  
+- Image ID: `sha256:f0ab213a8e7439324c041f39fc73fafa238a29bed93e8a8d372125cd3161cd56`
+- Created: `2018-09-12T04:31:36.962850777Z`
+- Virtual Size: ~ 147.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,6 +19,7 @@
   - `ZOO_CONF_DIR=/conf`
   - `ZOO_DATA_DIR=/data`
   - `ZOO_DATA_LOG_DIR=/datalog`
+  - `ZOO_LOG_DIR=/logs`
   - `ZOO_PORT=2181`
   - `ZOO_TICK_TIME=2000`
   - `ZOO_INIT_LIMIT=5`
