@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f781e9a080bc97aff1c1bbff4cef011c3b64c8b67c72eb81633b5e173474132`
-- Created: `2018-09-05T19:42:37.362849212Z`
+- Image ID: `sha256:1e7043d59c43fc4a3eab821cc6c773ff4f71816d876d2dedd87e41e0010798d7`
+- Created: `2018-09-12T21:36:20.65543413Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,10 +22,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.33`
-  - `TOMCAT_SHA512=bb6b3c27284697a835d1625bf63921b6147f98f3e1167b896d28b05bbcf7d6c71baa0aef35d8405ad41f897985dacf288f3a403b7d65bd726808637d97bfad11`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.34`
+  - `TOMCAT_SHA512=131dfe23918f33fb24cefa7a03286c786304151f95f7bc0b6e34dfb6b0d1e65fe606e48b85c60c8a522938d1a01a36b540e69c94f36973321858e229731cda82`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc`
   - `XWIKI_VERSION=9.11.7`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.11.7`
   - `XWIKI_DOWNLOAD_SHA256=3102643408f3db9e0d1a82f7586afecb02d0a186e8314ff32c76e4ed23d83afe`
@@ -861,13 +861,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.2.1-8+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.2.1-8+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u6`
+### `dpkg` source package: `curl=7.52.1-5+deb9u7`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u6`
-- `libcurl3:amd64=7.52.1-5+deb9u6`
-- `libcurl3-gnutls:amd64=7.52.1-5+deb9u6`
+- `curl=7.52.1-5+deb9u7`
+- `libcurl3:amd64=7.52.1-5+deb9u7`
+- `libcurl3-gnutls:amd64=7.52.1-5+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -881,17 +881,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u6
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u6.dsc' curl_7.52.1-5+deb9u6.dsc 2793 SHA256:463a6ac7cb310890ae03c904ec31f85616cf05bd56c74d1d9b981da38bfab616
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u6.debian.tar.xz' curl_7.52.1-5+deb9u6.debian.tar.xz 40420 SHA256:df3786154af6f98fa3623272a1756355218fd686603259b441b3a4ae24d7a942
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.dsc' curl_7.52.1-5+deb9u7.dsc 2818 SHA256:e8f007d8d45d4d00ba5aa54223f46b8c240a72fb2c4e45d80a859124e3ef40d0
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.debian.tar.xz' curl_7.52.1-5+deb9u7.debian.tar.xz 40796 SHA256:dbe0d4258f0d91787be2197f175807a69a454c9463e7dec3539f168cc43d1b40
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
