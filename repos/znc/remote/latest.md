@@ -1,12 +1,13 @@
 ## `znc:latest`
 
 ```console
-$ docker pull znc@sha256:d2f7e1f81a316c9b88377283864cefaba1cb173554315cc8cbf6f9c4d8db34b5
+$ docker pull znc@sha256:520b44411774b4f06a0fafedf650f8d148090b0092617cb8bd982376b1b03998
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 	-	linux; arm64 variant v8
 
 ### `znc:latest` - linux; amd64
@@ -94,6 +95,99 @@ COPY file:d1446fead8db29053b5a4bf7f2af913ddb4d8b1c90f97cc6c099fc74c4322109 in /s
 	-	`sha256:1b8cd8c6bc87ead811a6f34106fcdac70057b0adb44d2b6f2d147c4e1f1e780f`  
 		Last Modified: Tue, 11 Sep 2018 22:43:41 GMT  
 		Size: 333.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `znc:latest` - linux; arm variant v6
+
+```console
+$ docker pull znc@sha256:447c4da9c65b9156e8e79d9ddf9e7866afab50fd76a55d0bc7aaad2e6f7afbc5
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **108.5 MB (108535335 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b9dca68a37cbb47fea31f018cf0a004d374e8382317ffd2c81ec09826cf5948b`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Wed, 12 Sep 2018 07:49:32 GMT
+ADD file:47756a54e89ec523296aa20963b604f1619f1346f5ef85cd184d29694b45ca41 in / 
+# Wed, 12 Sep 2018 07:49:33 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 12 Sep 2018 07:49:34 GMT
+CMD ["/bin/sh"]
+# Wed, 12 Sep 2018 08:22:16 GMT
+ENV GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E
+# Wed, 12 Sep 2018 08:22:16 GMT
+ARG CMAKEFLAGS=-DCMAKE_INSTALL_PREFIX=/opt/znc -DWANT_CYRUS=YES -DWANT_PERL=YES -DWANT_PYTHON=YES -DWANT_IPV6=NO
+# Wed, 12 Sep 2018 08:22:17 GMT
+ARG MAKEFLAGS=
+# Wed, 12 Sep 2018 08:22:17 GMT
+ENV ZNC_VERSION=1.7.1
+# Sat, 15 Sep 2018 10:20:08 GMT
+# ARGS: CMAKEFLAGS=-DCMAKE_INSTALL_PREFIX=/opt/znc -DWANT_CYRUS=YES -DWANT_PERL=YES -DWANT_PYTHON=YES -DWANT_IPV6=NO MAKEFLAGS=
+RUN set -x     && adduser -S znc     && addgroup -S znc     && apk add --no-cache --virtual runtime-dependencies         boost         ca-certificates         cyrus-sasl         icu         su-exec         tini         tzdata     && apk add --no-cache --virtual build-dependencies         boost-dev         build-base         cmake         curl         cyrus-sasl-dev         gettext         gnupg         icu-dev         libressl-dev         perl-dev         python3-dev     && mkdir /znc-src && cd /znc-src     && curl -fsSL "https://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz" -o znc.tgz     && curl -fsSL "https://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz.sig" -o znc.tgz.sig     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "${GPG_KEY}"     && gpg --batch --verify znc.tgz.sig znc.tgz     && rm -rf "$GNUPGHOME"     && tar -zxf znc.tgz --strip-components=1     && mkdir build && cd build     && cmake .. ${CMAKEFLAGS}     && make $MAKEFLAGS     && make install     && apk del build-dependencies     && cd / && rm -rf /znc-src
+# Sat, 15 Sep 2018 10:20:09 GMT
+COPY file:9d7b3114446d239420ea168b9310c1d20e26b75d069079c5742a25823c4c2aab in / 
+# Sat, 15 Sep 2018 10:20:10 GMT
+COPY file:e0192a282adc7f54a8a1ff4594ead3ef35387b9ac6cad11dc37da9ea1b048a13 in /startup-sequence/ 
+# Sat, 15 Sep 2018 10:20:10 GMT
+COPY file:378c136273fef23830ba35f7a8a99554baf86a694f5366f4ba9e9bbabcb8ee6a in /startup-sequence/ 
+# Sat, 15 Sep 2018 10:20:11 GMT
+COPY file:9c43478daa2a1fccaed5a69ad3c74782d9efa3cd18a66d033f2ddf6956451ba5 in /startup-sequence/ 
+# Sat, 15 Sep 2018 10:20:11 GMT
+COPY file:0aff452a445b305c16e9c2c7fb36e9b027100f93ff8f18f4a9342fb94cc44b9c in /startup-sequence/ 
+# Sat, 15 Sep 2018 10:20:12 GMT
+VOLUME [/znc-data]
+# Sat, 15 Sep 2018 10:20:12 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Sat, 15 Sep 2018 10:20:37 GMT
+RUN set -x     && apk add --no-cache         build-base         cmake         icu-dev         libressl-dev         perl         python3
+# Sat, 15 Sep 2018 10:20:39 GMT
+COPY file:d1446fead8db29053b5a4bf7f2af913ddb4d8b1c90f97cc6c099fc74c4322109 in /startup-sequence/ 
+```
+
+-	Layers:
+	-	`sha256:c2dacc7b3755044bd80e7edb446986de7cfade7636ea19f3b7eb64e8c88bf3fd`  
+		Last Modified: Wed, 12 Sep 2018 07:50:02 GMT  
+		Size: 2.1 MB (2051097 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:684756a9d4ca4d4de310f5d47bb7c15bd0065aa787da5bab1736082d28281370`  
+		Last Modified: Wed, 12 Sep 2018 07:50:03 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f5fbe774c76b993bd6fdef2f2333cc0cc6301525dc9d878a60b0cc7b739a1ab5`  
+		Last Modified: Sat, 15 Sep 2018 10:21:01 GMT  
+		Size: 26.8 MB (26814398 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ec92bcd4c881fb1a58f1d47651df6ebad4d22eb2ae6ecccda5364f1808ce333`  
+		Last Modified: Sat, 15 Sep 2018 10:20:51 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28e91af6e5a0ab76e4a04547b9ff6f5e8248bdad4a2446998f89b5aeca7bb0a9`  
+		Last Modified: Sat, 15 Sep 2018 10:20:51 GMT  
+		Size: 304.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648526344f4800def7e6d9ac509be9d6d770a34f1f799534d6da6392127d6df9`  
+		Last Modified: Sat, 15 Sep 2018 10:20:51 GMT  
+		Size: 235.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:133decc9d8dcfbc4f0bee3263c209e297afc50fb9f57629810227b6a30e171be`  
+		Last Modified: Sat, 15 Sep 2018 10:20:51 GMT  
+		Size: 280.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:242d2471ec2a5d4950cfac605889d4ca3c7a5f4e6254a6cbcc1488975e07831b`  
+		Last Modified: Sat, 15 Sep 2018 10:20:51 GMT  
+		Size: 351.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:83fe000338e0fc365933159fa08b246cc548123958e7dcae9814365535a69d79`  
+		Last Modified: Sat, 15 Sep 2018 10:21:42 GMT  
+		Size: 79.7 MB (79667992 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15a6746aa28fd4d10651b4317c994aec6254ebe39268a271ebe3a4a77293f67e`  
+		Last Modified: Sat, 15 Sep 2018 10:21:15 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `znc:latest` - linux; arm64 variant v8
