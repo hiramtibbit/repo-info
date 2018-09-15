@@ -1,10 +1,10 @@
-# `tomcat:8.5.33-jre10`
+# `tomcat:8.5.34-jre10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ca18930062f27346b8cf0ae234135465b392b6293af71dde42207894081cdc6`
-- Created: `2018-09-05T16:21:02.683244709Z`
-- Virtual Size: ~ 669.01 Mb  
+- Image ID: `sha256:9e08e6cc442e4e8d37ac41eeb987c1ce48f58a597a70cf1b5f5df51d919f24a7`
+- Created: `2018-09-12T20:52:04.762364626Z`
+- Virtual Size: ~ 669.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,10 +20,10 @@
   - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.33`
-  - `TOMCAT_SHA512=bb6b3c27284697a835d1625bf63921b6147f98f3e1167b896d28b05bbcf7d6c71baa0aef35d8405ad41f897985dacf288f3a403b7d65bd726808637d97bfad11`
-  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz`
-  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.34`
+  - `TOMCAT_SHA512=131dfe23918f33fb24cefa7a03286c786304151f95f7bc0b6e34dfb6b0d1e65fe606e48b85c60c8a522938d1a01a36b540e69c94f36973321858e229731cda82`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1232,13 +1232,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/fribidi/1.0.5-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/fribidi/1.0.5-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-8=8.2.0-5`
+### `dpkg` source package: `gcc-8=8.2.0-6`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.2.0-5`
-- `libgcc1:amd64=1:8.2.0-5`
-- `libstdc++6:amd64=8.2.0-5`
+- `gcc-8-base:amd64=8.2.0-6`
+- `libgcc1:amd64=1:8.2.0-6`
+- `libstdc++6:amd64=8.2.0-6`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1252,17 +1252,17 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.dsc' gcc-8_8.2.0-5.dsc 32392 SHA256:49a26be2f779c0895f9f4acf2e73b0ebf21e090557cd24dcf79377a0ed37ac08
+$ apt-get source -qq --print-uris gcc-8=8.2.0-6
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-6.dsc' gcc-8_8.2.0-6.dsc 32392 SHA256:5510932a6e1095d79a453179a0d2c65818f759778eca64f50c0e5925a9693861
 'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.diff.gz' gcc-8_8.2.0-5.diff.gz 4154878 SHA256:45049807b8a4e60c5f3e3a99a275d2a88c214418d6ed6207103fe35684ac44c5
+'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-6.diff.gz' gcc-8_8.2.0-6.diff.gz 4164517 SHA256:34c217231396d89852ac1b766ef9c645050e9b24aa805638fc25b94548b4a3b5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-8/8.2.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.2.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.2.0-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-8/8.2.0-6/ (for browsing the source)
+- https://sources.debian.net/src/gcc-8/8.2.0-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-8/8.2.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.12-2`
 
@@ -4007,20 +4007,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.7-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7-1.dsc' mesa_18.1.7-1.dsc 4884 SHA256:76733c22e97eaca195782f431cce80ca10c26df4738cb30ddbd2ee19b1d209ff
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7.orig.tar.gz' mesa_18.1.7.orig.tar.gz 18894102 SHA256:0c3c240bcd1352d179e65993214f9d55a399beac852c3ab4433e8df9b6c51c83
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.7-1.diff.gz' mesa_18.1.7-1.diff.gz 95044 SHA256:a70a6af331b6cbbdfbfcf98263ddaec8102de44d1db19b44cce4daa5704b7b07
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.7-1/
 
-- https://sources.debian.net/src/mesa/18.1.7-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180714-1`
 
