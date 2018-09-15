@@ -7,6 +7,7 @@
 -	[`ruby:2.3.7`](#ruby237)
 -	[`ruby:2.3.7-alpine`](#ruby237-alpine)
 -	[`ruby:2.3.7-alpine3.7`](#ruby237-alpine37)
+-	[`ruby:2.3.7-alpine3.8`](#ruby237-alpine38)
 -	[`ruby:2.3.7-jessie`](#ruby237-jessie)
 -	[`ruby:2.3.7-slim`](#ruby237-slim)
 -	[`ruby:2.3.7-slim-jessie`](#ruby237-slim-jessie)
@@ -14,6 +15,7 @@
 -	[`ruby:2.3.7-stretch`](#ruby237-stretch)
 -	[`ruby:2.3-alpine`](#ruby23-alpine)
 -	[`ruby:2.3-alpine3.7`](#ruby23-alpine37)
+-	[`ruby:2.3-alpine3.8`](#ruby23-alpine38)
 -	[`ruby:2.3-jessie`](#ruby23-jessie)
 -	[`ruby:2.3-slim`](#ruby23-slim)
 -	[`ruby:2.3-slim-jessie`](#ruby23-slim-jessie)
@@ -52,12 +54,14 @@
 -	[`ruby:2.6.0-preview2`](#ruby260-preview2)
 -	[`ruby:2.6.0-preview2-alpine`](#ruby260-preview2-alpine)
 -	[`ruby:2.6.0-preview2-alpine3.7`](#ruby260-preview2-alpine37)
+-	[`ruby:2.6.0-preview2-alpine3.8`](#ruby260-preview2-alpine38)
 -	[`ruby:2.6.0-preview2-slim`](#ruby260-preview2-slim)
 -	[`ruby:2.6.0-preview2-slim-stretch`](#ruby260-preview2-slim-stretch)
 -	[`ruby:2.6.0-preview2-stretch`](#ruby260-preview2-stretch)
 -	[`ruby:2.6-rc`](#ruby26-rc)
 -	[`ruby:2.6-rc-alpine`](#ruby26-rc-alpine)
 -	[`ruby:2.6-rc-alpine3.7`](#ruby26-rc-alpine37)
+-	[`ruby:2.6-rc-alpine3.8`](#ruby26-rc-alpine38)
 -	[`ruby:2.6-rc-slim`](#ruby26-rc-slim)
 -	[`ruby:2.6-rc-slim-stretch`](#ruby26-rc-slim-stretch)
 -	[`ruby:2.6-rc-stretch`](#ruby26-rc-stretch)
@@ -72,6 +76,7 @@
 -	[`ruby:rc`](#rubyrc)
 -	[`ruby:rc-alpine`](#rubyrc-alpine)
 -	[`ruby:rc-alpine3.7`](#rubyrc-alpine37)
+-	[`ruby:rc-alpine3.8`](#rubyrc-alpine38)
 -	[`ruby:rc-slim`](#rubyrc-slim)
 -	[`ruby:rc-slim-stretch`](#rubyrc-slim-stretch)
 -	[`ruby:rc-stretch`](#rubyrc-stretch)
@@ -2628,6 +2633,10 @@ CMD ["irb"]
 		Last Modified: Thu, 13 Sep 2018 12:18:40 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:2.3.7-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `ruby:2.3.7-jessie`
 
@@ -5552,6 +5561,10 @@ CMD ["irb"]
 		Last Modified: Thu, 13 Sep 2018 12:18:40 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:2.3-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `ruby:2.3-jessie`
 
@@ -22707,6 +22720,10 @@ CMD ["irb"]
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ruby:2.6.0-preview2-alpine3.8`
+
+**does not exist** (yet?)
+
 ## `ruby:2.6.0-preview2-slim`
 
 ```console
@@ -25622,6 +25639,10 @@ CMD ["irb"]
 		Last Modified: Thu, 13 Sep 2018 12:16:04 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:2.6-rc-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `ruby:2.6-rc-slim`
 
@@ -32150,6 +32171,10 @@ CMD ["irb"]
 		Last Modified: Thu, 13 Sep 2018 12:16:04 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:rc-alpine3.8`
+
+**does not exist** (yet?)
 
 ## `ruby:rc-slim`
 
