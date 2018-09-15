@@ -563,16 +563,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.1
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.dsc' db5.3_5.3.28+dfsg1-0.1.dsc 3036 SHA256:8d944e067e06bf3d7bcd2459242462ae7f4017a926665ad5f3d6bd9e2915bc70
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.debian.tar.xz' db5.3_5.3.28+dfsg1-0.1.debian.tar.xz 29056 SHA256:1c2a431efff617e9954da8d4c57d1ffde21206676284a17fc5db2092716a9128
+'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.dsc' db5.3_5.3.28+dfsg1-0.1.dsc 3036 SHA256:8d944e067e06bf3d7bcd2459242462ae7f4017a926665ad5f3d6bd9e2915bc70
+'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
+'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.debian.tar.xz' db5.3_5.3.28+dfsg1-0.1.debian.tar.xz 29056 SHA256:1c2a431efff617e9954da8d4c57d1ffde21206676284a17fc5db2092716a9128
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.1/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -1021,16 +1015,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-8=8.2.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.dsc' gcc-8_8.2.0-5.dsc 32392 SHA256:49a26be2f779c0895f9f4acf2e73b0ebf21e090557cd24dcf79377a0ed37ac08
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.diff.gz' gcc-8_8.2.0-5.diff.gz 4154878 SHA256:45049807b8a4e60c5f3e3a99a275d2a88c214418d6ed6207103fe35684ac44c5
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.dsc' gcc-8_8.2.0-5.dsc 32392 SHA256:49a26be2f779c0895f9f4acf2e73b0ebf21e090557cd24dcf79377a0ed37ac08
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
+'http://http.debian.net/debian/pool/main/g/gcc-8/gcc-8_8.2.0-5.diff.gz' gcc-8_8.2.0-5.diff.gz 4154878 SHA256:45049807b8a4e60c5f3e3a99a275d2a88c214418d6ed6207103fe35684ac44c5
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-8/8.2.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.2.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.2.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.179`
 
