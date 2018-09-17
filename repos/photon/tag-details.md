@@ -3,9 +3,9 @@
 # Tags of `photon`
 
 -	[`photon:1.0`](#photon10)
--	[`photon:1.0-20180816`](#photon10-20180816)
+-	[`photon:1.0-20180917`](#photon10-20180917)
 -	[`photon:2.0`](#photon20)
--	[`photon:2.0-20180912`](#photon20-20180912)
+-	[`photon:2.0-20180917`](#photon20-20180917)
 -	[`photon:dev`](#photondev)
 -	[`photon:dev-20180904`](#photondev-20180904)
 -	[`photon:latest`](#photonlatest)
@@ -48,7 +48,7 @@ CMD ["/bin/bash"]
 		Size: 49.3 MB (49279396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `photon:1.0-20180816`
+## `photon:1.0-20180917`
 
 ```console
 $ docker pull photon@sha256:1980a0145646578bf6f33ad6e5369ead92ad21b2e687b94b3f93ed868333ab61
@@ -58,7 +58,7 @@ $ docker pull photon@sha256:1980a0145646578bf6f33ad6e5369ead92ad21b2e687b94b3f93
 -	Platforms:
 	-	linux; amd64
 
-### `photon:1.0-20180816` - linux; amd64
+### `photon:1.0-20180917` - linux; amd64
 
 ```console
 $ docker pull photon@sha256:e9ac9d29cf8ba165acb05965bc67eb4b1dde24eb5d82476838d5acdbe283227c
@@ -124,7 +124,7 @@ CMD ["/bin/bash"]
 		Size: 14.1 MB (14143174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `photon:2.0-20180912`
+## `photon:2.0-20180917`
 
 ```console
 $ docker pull photon@sha256:35b6176c4c9f511e3b4dfd57a6de5b85656118fff546a5336930fd00cdc10729
@@ -134,7 +134,7 @@ $ docker pull photon@sha256:35b6176c4c9f511e3b4dfd57a6de5b85656118fff546a5336930
 -	Platforms:
 	-	linux; amd64
 
-### `photon:2.0-20180912` - linux; amd64
+### `photon:2.0-20180917` - linux; amd64
 
 ```console
 $ docker pull photon@sha256:fd2ae69add305f49d9c99b3ec268957c01947971e0c7f5543f47a63d371c8fb8
