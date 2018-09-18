@@ -331,13 +331,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu4.dsc' dpkg_1.19.0.5ubuntu4.dsc 2132 SHA256:8b1aa3047d527f6e41ea7f28a90478c9b0d17e2b3307d9e17ee9cfd247e06e97
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu4.tar.xz' dpkg_1.19.0.5ubuntu4.tar.xz 4571312 SHA256:70f639e29bd1ded5b0d04826d225ad37c117bfb9e84afbf6530a566eed6d802a
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.4-2`
 
@@ -1177,14 +1173,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu7.dsc' systemd_239-7ubuntu7.dsc 4637 SHA256:4cbdf571ca657597a6a6a2e0448e0d9ec95bf86c6fe86b12989b1ece1a43aa75
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu7.debian.tar.xz' systemd_239-7ubuntu7.debian.tar.xz 167044 SHA256:bd2c978b2149e0de68a580acb75ea2b15f2380a3d927c9b8e4e29a7425c4cb85
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
