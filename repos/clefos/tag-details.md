@@ -46,7 +46,41 @@ CMD ["/bin/bash"]
 
 ## `clefos:7.5.1804`
 
-**does not exist** (yet?)
+```console
+$ docker pull clefos@sha256:8e89216b23e7a5716a7e31de352ed777769738d258a1e20cc9cff06e39316717
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; s390x
+
+### `clefos:7.5.1804` - linux; s390x
+
+```console
+$ docker pull clefos@sha256:c6e8b459e226f8861e5915e800db5a01929de9b007c6e1b9bdf6e6387c942e43
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **41.5 MB (41456182 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:98fce21c1c8ab31a95917ef650e18473d45ec745b8400e182284188012797462`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Mon, 22 Jan 2018 23:19:26 GMT
+ADD file:f1a84a416cd0c08f0c56187b7424ea1d1e7c561a643c6da045471572212eb758 in / 
+# Mon, 22 Jan 2018 23:19:27 GMT
+LABEL name=ClefOS Base Image vendor=ClefOS license=GPLv2 build-date=20170913
+# Mon, 22 Jan 2018 23:19:27 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:26dbd8e1d5ff1fa6a10fb3802ee24d8595ea5912a62b8d548778c44367068a93`  
+		Last Modified: Tue, 23 Jan 2018 00:16:26 GMT  
+		Size: 41.5 MB (41456182 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clefos:latest`
 
