@@ -1,10 +1,10 @@
-# `php:5.6.37-cli-jessie`
+# `php:5.6.38-cli-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:78a8fc4054e868c944064a08bf3f0e1a7df420bbead23c6175fd5e151e622816`
-- Created: `2018-09-08T00:21:52.36710488Z`
-- Virtual Size: ~ 363.38 Mb  
+- Image ID: `sha256:4fb918d54c2aaae3e5f197aca16c425998c646c0fde1c2125a05b947592d312d`
+- Created: `2018-09-15T05:43:27.738265995Z`
+- Virtual Size: ~ 364.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.37`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.37.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.37.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=5000d82610f9134aaedef28854ec3591f68dedf26a17b8935727dac2843bd256`
+  - `PHP_VERSION=5.6.38`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.38.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.38.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -452,12 +452,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u11`
+### `dpkg` source package: `curl=7.38.0-4+deb8u12`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u11`
-- `libcurl3:amd64=7.38.0-4+deb8u11`
+- `curl=7.38.0-4+deb8u12`
+- `libcurl3:amd64=7.38.0-4+deb8u12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -469,17 +469,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u11
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u11.dsc' curl_7.38.0-4+deb8u11.dsc 2673 SHA256:52f88587caf333557b592424535e4659fc509888cb503264c4c865b10dc2ec35
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u11.debian.tar.xz' curl_7.38.0-4+deb8u11.debian.tar.xz 47596 SHA256:f8fe0c27d9a8a42365db8e09cdd7d76a3824fc31ece4b4e317ba0274f4f018f8
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u12
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u12.dsc' curl_7.38.0-4+deb8u12.dsc 2673 SHA256:80f22d569e3532d1235cd883e3916972356c26d5b530a464135a9a4ee544e262
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u12.debian.tar.xz' curl_7.38.0-4+deb8u12.debian.tar.xz 48108 SHA256:c64ecf02f9a9d493b85ee106da534d37ab284fd98010782fbaf2c2656958bd08
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u11/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u11/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u12/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 

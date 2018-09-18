@@ -1,10 +1,10 @@
-# `php:7.3.0beta3-zts-alpine3.8`
+# `php:7.3.0RC1-zts-alpine3.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c92f2c4c071a2948984a1c3367a885f2ae5ba7faa76ead8974c595bd10be0f81`
-- Created: `2018-09-12T00:50:33.126826515Z`
-- Virtual Size: ~ 63.57 Mb  
+- Image ID: `sha256:45743b9833eca376f173f95e051e641e9bbfafad83ee22d8403be9f1cc7430dd`
+- Created: `2018-09-15T02:16:38.5026177Z`
+- Virtual Size: ~ 63.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,8 +18,8 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.0beta3`
-  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0beta3.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0beta3.tar.xz.asc`
-  - `PHP_SHA256=062111b400939d26f3a6ec41925b52b93feb1a5e70e3ccade12496cea9fb190f`
+  - `PHP_VERSION=7.3.0RC1`
+  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0RC1.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0RC1.tar.xz.asc`
+  - `PHP_SHA256=f6af9e4e2376f1aadee8d1b4b7a60c5080bf53fe8816e141c78d4f72c93c5075`
   - `PHP_MD5=`
