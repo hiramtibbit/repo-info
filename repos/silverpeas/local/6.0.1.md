@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c9950f785fdcdf9f75ed39fe41c177ace9a3e8ff739945763ec3205652b8dee`
-- Created: `2018-09-06T00:33:54.48055044Z`
+- Image ID: `sha256:2488581214d25844d016e78ceccdf529dffbcce07ad9198c508261f0974a3c1a`
+- Created: `2018-09-19T18:24:48.48616186Z`
 - Virtual Size: ~ 1.52 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US.UTF-8`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64`
+  - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
   - `SILVERPEAS_VERSION=6.0.1`
@@ -1050,14 +1050,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `icclib`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.18~dfsg~0-0ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.8.dsc' ghostscript_9.18~dfsg~0-0ubuntu2.8.dsc 2889 SHA256:30914ec8e6ec69a37064df72f95c056fe206ce1160747cc941f651af4782bd0f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0.orig.tar.bz2' ghostscript_9.18~dfsg~0.orig.tar.bz2 18274376 SHA256:b39e5d163e37e4c78b67380ada922c09ad65879f82e2322d1efbbf4ad1d7b814
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.8.debian.tar.xz' ghostscript_9.18~dfsg~0-0ubuntu2.8.debian.tar.xz 113348 SHA256:220eac18420a7f9fe68876931e1b83a1fe16e80f4f507d8c6161acc63fa31d10
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -1089,14 +1084,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.dsc' glib2.0_2.48.2-0ubuntu4.dsc 2677 SHA256:c597b6e6af6f9fab47ce5ac947c88a7bced8c336ec85cbdac15e22b0c029bd5f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.debian.tar.xz 69636 SHA256:8d50004ddb10d8a01b42e5a773413c5be66b2bdd6da7f0798a205a472764b80b
-```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
