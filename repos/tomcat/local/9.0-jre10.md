@@ -201,19 +201,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.4.dsc' apt_1.6.4.dsc 2743 SHA256:91d4e2bb3681ca91d976fc619b8f0c3afd8411c41d582404adab93a97e75e360
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.4.tar.xz' apt_1.6.4.tar.xz 2138916 SHA256:b4fad4790f03257dbbd950c90ae4ccd79839e70fcbdab181052f74a7e9b66818
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.4/
 
-- https://sources.debian.net/src/apt/1.6.4/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20171227-0.1`
 
@@ -1243,20 +1237,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-6
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-6.dsc' gcc-8_8.2.0-6.dsc 32392 SHA256:5510932a6e1095d79a453179a0d2c65818f759778eca64f50c0e5925a9693861
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-6.diff.gz' gcc-8_8.2.0-6.diff.gz 4164517 SHA256:34c217231396d89852ac1b766ef9c645050e9b24aa805638fc25b94548b4a3b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8.2.0-6/
 
-- https://sources.debian.net/src/gcc-8/8.2.0-6/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.2.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.2.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.12-2`
 
