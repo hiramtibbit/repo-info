@@ -2935,21 +2935,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-2.1
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-2.1.dsc' libtool_2.4.6-2.1.dsc 2371 SHA256:25d8e002e155c43eb27997e7e2b193c4c14ee04e93cc09226d3701be310246d4
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-2.1.debian.tar.xz' libtool_2.4.6-2.1.debian.tar.xz 45852 SHA256:ba63fae90ff856bbcf77e617d4810833016821f55a1add5842c704ac6f18246f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.6-2.1/
 
-- https://sources.debian.net/src/libtool/2.4.6-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.6-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.6-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=0.9.10-1`
 
