@@ -56,19 +56,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.117
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.117.dsc' adduser_3.117.dsc 1679 SHA256:c36045e4d82a72ec11fab353104603875dca660561724eb762fba52a9678a01f
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.117.tar.xz' adduser_3.117.tar.xz 211944 SHA256:be01881356e40c4d7dd2ce209fb4a94c0589056ac3ebe7debbbf09a6383c1411
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.117/
 
-- https://sources.debian.net/src/adduser/3.117/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.117/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.117/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.6.4`
 
@@ -82,19 +76,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.4.dsc' apt_1.6.4.dsc 2743 SHA256:91d4e2bb3681ca91d976fc619b8f0c3afd8411c41d582404adab93a97e75e360
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.6.4.tar.xz' apt_1.6.4.tar.xz 2138916 SHA256:b4fad4790f03257dbbd950c90ae4ccd79839e70fcbdab181052f74a7e9b66818
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.6.4/
 
-- https://sources.debian.net/src/apt/1.6.4/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.6.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
