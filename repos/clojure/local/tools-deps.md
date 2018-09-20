@@ -1,10 +1,10 @@
-# `clojure:tools-deps-1.9.0.391`
+# `clojure:tools-deps-1.9.0.394`
 
 ## Docker Metadata
 
-- Image ID: `sha256:984e6c7cdd709579e828c9eb4aa2f47edf534b627325995cfb5bc94e895d6491`
-- Created: `2018-09-05T12:11:13.155090673Z`
-- Virtual Size: ~ 668.28 Mb  
+- Image ID: `sha256:b9741da19699a652168aeb9d7eaed3ecf698ad728ba3b6bc095a9079bbf59cb4`
+- Created: `2018-09-17T20:21:20.54853052Z`
+- Virtual Size: ~ 668.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `CLOJURE_VERSION=1.9.0.391`
+  - `CLOJURE_VERSION=1.9.0.394`
 
 ## `dpkg` (`.deb`-based packages)
 
