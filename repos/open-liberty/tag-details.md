@@ -15,6 +15,9 @@
 -	[`open-liberty:microProfile1`](#open-libertymicroprofile1)
 -	[`open-liberty:microProfile1-java8-ibm`](#open-libertymicroprofile1-java8-ibm)
 -	[`open-liberty:microProfile1-java8-ibmsfj`](#open-libertymicroprofile1-java8-ibmsfj)
+-	[`open-liberty:microProfile2`](#open-libertymicroprofile2)
+-	[`open-liberty:microProfile2-java8-ibm`](#open-libertymicroprofile2-java8-ibm)
+-	[`open-liberty:microProfile2-java8-ibmsfj`](#open-libertymicroprofile2-java8-ibmsfj)
 -	[`open-liberty:springBoot1`](#open-libertyspringboot1)
 -	[`open-liberty:springBoot1-java8-ibm`](#open-libertyspringboot1-java8-ibm)
 -	[`open-liberty:springBoot1-java8-ibmsfj`](#open-libertyspringboot1-java8-ibmsfj)
@@ -4520,6 +4523,18 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Wed, 12 Sep 2018 03:52:59 GMT  
 		Size: 10.7 MB (10722776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:microProfile2`
+
+**does not exist** (yet?)
+
+## `open-liberty:microProfile2-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:microProfile2-java8-ibmsfj`
+
+**does not exist** (yet?)
 
 ## `open-liberty:springBoot1`
 
