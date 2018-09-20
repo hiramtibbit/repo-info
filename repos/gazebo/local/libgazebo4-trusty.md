@@ -1633,14 +1633,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.40.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.dsc' glib2.0_2.40.2-0ubuntu1.dsc 3107 SHA256:6a7d0c35a8bac623ff18cfc9ae1746e05f9093e134ce79fb17f1297f1b4b4a3e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2.orig.tar.xz' glib2.0_2.40.2.orig.tar.xz 7001344 SHA256:e8ff8af2950897e805408480c454c415d1eade4e670ec5fb507f5e5853726c7a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.debian.tar.xz' glib2.0_2.40.2-0ubuntu1.debian.tar.xz 64612 SHA256:f0ce12128142147d9ca99a7bac4591afde8095b8491a42b5cc506a1feae91a25
-```
 
 ### `dpkg` source package: `gmp=2:5.1.3+dfsg-1ubuntu1`
 

@@ -3567,14 +3567,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=1.0.0-2ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.1.dsc' libglvnd_1.0.0-2ubuntu2.1.dsc 2388 SHA256:7fa2bf31d876c1094f473ce9c06d710476361c6f42844ed392a6cd78bcafdfa6
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0.orig.tar.gz' libglvnd_1.0.0.orig.tar.gz 795552 SHA256:d1cb238081f8fc708178f21e7e6b33a009c0807eae7a11b790146043f6e8eea5
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.1.debian.tar.xz' libglvnd_1.0.0-2ubuntu2.1.debian.tar.xz 20128 SHA256:1439177e7550e6b6525cb432e36221a179c5fbfd337a5f05141296626aaaafdd
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-6`
 
