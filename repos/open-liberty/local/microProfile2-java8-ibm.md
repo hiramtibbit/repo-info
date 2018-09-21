@@ -1,10 +1,10 @@
-# `open-liberty:microProfile1`
+# `open-liberty:microProfile2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e6ff7a878516f23e02f78a27912553681f537dd975a26de67273e47d31eff7d`
-- Created: `2018-09-20T22:17:53.315867748Z`
-- Virtual Size: ~ 520.70 Mb  
+- Image ID: `sha256:0fa4d3333fc224e4f820db197cb48c37602ce504323af55d3e46bbd88d6f52c0`
+- Created: `2018-09-20T22:19:36.867497576Z`
+- Virtual Size: ~ 520.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
