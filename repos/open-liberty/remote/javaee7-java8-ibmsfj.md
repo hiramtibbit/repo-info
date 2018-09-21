@@ -1,7 +1,7 @@
 ## `open-liberty:javaee7-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:80067b53477e99074b5e5c959c851fa6ea3b6450ad1eeaadff94fcb816c41c80
+$ docker pull open-liberty@sha256:c89eb8fb3eba62c0f0f0e004ba1ff979b0a3ba2e7a1df420d35e93aa997b6004
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull open-liberty@sha256:80067b53477e99074b5e5c959c851fa6ea3b6450ad1eea
 ### `open-liberty:javaee7-java8-ibmsfj` - linux; amd64
 
 ```console
-$ docker pull open-liberty@sha256:b95e0d7a6f64ad4bd6a1de567c84377b8631c36df2adcb923178640ace8233b3
+$ docker pull open-liberty@sha256:c4ef7ac576da731fb5509a3fdb551c1f1687c83cece70b117cfb555918ae5e0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.8 MB (203809350 bytes)**  
+-	Total Size: **208.4 MB (208364498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4b04481c60768c470bb47f7571dd6b4e2080d28787d6cf42e9f874ab37fe912`
+-	Image ID: `sha256:6990715eaa5e514c772be99511e6604e7abcd29b1d663b6ebc7583ce06ed65e0`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -41,27 +41,27 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 LABEL maintainer=Alasdair Nottingham vendor=Open Liberty url=https://openliberty.io/ github=https://github.com/OpenLiberty/ci.docker
 # Wed, 12 Sep 2018 03:48:47 GMT
 COPY file:a6eac68a3be2db3229be20bb825e70a7a1e5f32d189da5168ed4f2fe9c9b96fc in /opt/ol/docker/ 
-# Wed, 12 Sep 2018 03:48:47 GMT
-ENV LIBERTY_VERSION=18.0.0.2 LIBERTY_SHA=4170e609e1e4189e75a57bcc0e65a972e9c9ef6e
-# Wed, 12 Sep 2018 03:48:57 GMT
+# Thu, 20 Sep 2018 22:11:23 GMT
+ENV LIBERTY_VERSION=18.0.0.3 LIBERTY_SHA=3d79b261a6c4723617ad20c5e2ec746bb70121b9
+# Thu, 20 Sep 2018 22:11:34 GMT
 RUN wget https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/$LIBERTY_VERSION/openliberty-runtime-$LIBERTY_VERSION.zip -U UA-Open-Liberty-Docker -O /tmp/wlp.zip    && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1    && sha1sum -c /tmp/wlp.zip.sha1    && unzip -q /tmp/wlp.zip -d /opt/ol    && rm /tmp/wlp.zip    && rm /tmp/wlp.zip.sha1
-# Wed, 12 Sep 2018 03:48:58 GMT
+# Thu, 20 Sep 2018 22:11:35 GMT
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true
-# Wed, 12 Sep 2018 03:48:58 GMT
+# Thu, 20 Sep 2018 22:11:36 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs
-# Wed, 12 Sep 2018 03:49:00 GMT
+# Thu, 20 Sep 2018 22:11:39 GMT
 RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Wed, 12 Sep 2018 03:49:01 GMT
+# Thu, 20 Sep 2018 22:11:39 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Wed, 12 Sep 2018 03:49:01 GMT
+# Thu, 20 Sep 2018 22:11:39 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Wed, 12 Sep 2018 03:49:01 GMT
+# Thu, 20 Sep 2018 22:11:39 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
-# Wed, 12 Sep 2018 03:49:35 GMT
+# Thu, 20 Sep 2018 22:14:59 GMT
 ENV KEYSTORE_REQUIRED=true
-# Wed, 12 Sep 2018 03:49:36 GMT
+# Thu, 20 Sep 2018 22:15:00 GMT
 RUN cp /opt/ol/wlp/templates/servers/javaee7/server.xml /config/server.xml
-# Wed, 12 Sep 2018 03:49:53 GMT
+# Thu, 20 Sep 2018 22:15:38 GMT
 RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ && rm -rf /output/messaging
 ```
 
@@ -82,23 +82,23 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Wed, 12 Sep 2018 03:51:44 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ddff9866515babced8aafb791b7f86674b2e0d20e461a143dcfdfbe8abe869`  
-		Last Modified: Wed, 12 Sep 2018 03:51:57 GMT  
-		Size: 120.8 MB (120847444 bytes)  
+	-	`sha256:34002c50f7b605035cd7296ae7934e276844a56946e35bec8a99fde7b2cc0faf`  
+		Last Modified: Thu, 20 Sep 2018 22:25:48 GMT  
+		Size: 125.0 MB (124992948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61ff6eaa62b12f0e0719b39610b396c362f42b14f7d1351b5844e4b984069007`  
-		Last Modified: Wed, 12 Sep 2018 03:51:45 GMT  
-		Size: 274.0 B  
+	-	`sha256:44e552064a8cc4c4bfaba21d9ff1adea51866bec23cb69eb6d834cc20d0b7350`  
+		Last Modified: Thu, 20 Sep 2018 22:25:38 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01893af0eee5cb640542ccea2d8804556979910d607d587d61ea7d13a49da7c0`  
-		Last Modified: Wed, 12 Sep 2018 03:51:45 GMT  
-		Size: 705.0 B  
+	-	`sha256:4744f3f7299ef28b23f4f30ef5f5d3ac3d075caa0b13698dd28449184f9a1f46`  
+		Last Modified: Thu, 20 Sep 2018 22:25:38 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fb50f1f3d2f4bf36b04585b319d8cec9861e21508ea64857423d9c86bd5af11`  
-		Last Modified: Wed, 12 Sep 2018 03:52:28 GMT  
-		Size: 889.0 B  
+	-	`sha256:11966eda47c983695e5d66aba098cdd88ee8f22d72279ff9b7d4ebb42bc2583a`  
+		Last Modified: Thu, 20 Sep 2018 22:26:49 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00fa50a117fd80b5e108e0a3af038cc0441d11f85b44a461573e40aa8840032`  
-		Last Modified: Wed, 12 Sep 2018 03:52:32 GMT  
-		Size: 13.9 MB (13865809 bytes)  
+	-	`sha256:0aef2f17c60e1802018f283aecfa49f64e4d55ec7201be2f9999eafcc7eb1040`  
+		Last Modified: Thu, 20 Sep 2018 22:26:52 GMT  
+		Size: 14.3 MB (14275434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
