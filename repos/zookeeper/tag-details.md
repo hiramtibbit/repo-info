@@ -1205,7 +1205,7 @@ CMD ["zkServer.sh" "start-foreground"]
 ## `zookeeper:3.5`
 
 ```console
-$ docker pull zookeeper@sha256:3f4bc6caee5d8b0cf7a2d0dda6583da8690225ea59138739583f09525d8f03bc
+$ docker pull zookeeper@sha256:602f0de37597c827613a59d75b51b8052c2e741b7b3140501be3e052b7b0918d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1410,14 +1410,14 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:163ab7e5c694f935da811d535dc334353284370c1320cd546b8c84a35484f926
+$ docker pull zookeeper@sha256:3f3543713673d001365d97c7f0e75eb0f3782aa39920878b1f8a99803afa95fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.9 MB (75877317 bytes)**  
+-	Total Size: **75.9 MB (75877318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a0f353ddcc0c778902d343cce721d34a8db6e0c66462077d379fa04bb812406`
+-	Image ID: `sha256:ad99f8bc8ed61454bcad64a8ced64a58f7a1a67ce257a091c9100aa2c529f865`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -1463,11 +1463,11 @@ VOLUME [/data /datalog /logs]
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
 # Sat, 15 Sep 2018 16:23:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.5.4-beta/bin ZOOCFGDIR=/conf
-# Sat, 15 Sep 2018 16:23:59 GMT
-COPY file:5ae7bf2d4a121a8e420ce793542d2d7d3253fd2f4ae4b308a09928fac017ed3d in / 
-# Sat, 15 Sep 2018 16:24:00 GMT
+# Fri, 21 Sep 2018 09:55:06 GMT
+COPY file:eae2ade8a1aebf1c567adda750d851dbdcedf45caa6df91d13e91b46664454f4 in / 
+# Fri, 21 Sep 2018 09:55:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:24:01 GMT
+# Fri, 21 Sep 2018 09:55:11 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -1500,9 +1500,9 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Sat, 15 Sep 2018 16:25:25 GMT  
 		Size: 19.3 MB (19297899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b67bd969afec197df73e169ee51fd974450b151592bcf6b5249c76a0c917fbc`  
-		Last Modified: Sat, 15 Sep 2018 16:25:19 GMT  
-		Size: 673.0 B  
+	-	`sha256:b1244c18ac82f0209a7f3d21d7969cdec4b114e813e0a45d04d5434f7c62164c`  
+		Last Modified: Fri, 21 Sep 2018 09:56:13 GMT  
+		Size: 674.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5` - linux; 386
@@ -1606,14 +1606,14 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:4125717130d93d3abc65d4cf933dca682fe209021e7c72f6cbbd5fba851b98b6
+$ docker pull zookeeper@sha256:fa2366a271cf33f93d16058979d00ebf8161d59e5c347ff62275df4e9611588a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76631230 bytes)**  
+-	Total Size: **76.6 MB (76631231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a92ab7f1775557caed6e34cf294edefd5a5eea460814cd324b548299a5755e80`
+-	Image ID: `sha256:0587975da1d298e3268e057a4fd65d9a823dcaaa5e42f3c5ed4619235a9e5e9a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -1659,11 +1659,11 @@ VOLUME [/data /datalog /logs]
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
 # Wed, 12 Sep 2018 15:01:27 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.5.4-beta/bin ZOOCFGDIR=/conf
-# Wed, 12 Sep 2018 15:01:30 GMT
-COPY file:5ae7bf2d4a121a8e420ce793542d2d7d3253fd2f4ae4b308a09928fac017ed3d in / 
-# Wed, 12 Sep 2018 15:01:32 GMT
+# Fri, 21 Sep 2018 10:16:40 GMT
+COPY file:eae2ade8a1aebf1c567adda750d851dbdcedf45caa6df91d13e91b46664454f4 in / 
+# Fri, 21 Sep 2018 10:16:44 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 15:01:34 GMT
+# Fri, 21 Sep 2018 10:16:55 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -1696,9 +1696,9 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Wed, 12 Sep 2018 15:02:56 GMT  
 		Size: 19.3 MB (19296564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c63b487b9714189cbb3f9dd0a4da537331168515a7f8113fcab3272b27210fad`  
-		Last Modified: Wed, 12 Sep 2018 15:02:52 GMT  
-		Size: 673.0 B  
+	-	`sha256:7c4f780184443da559d686975e82f7531406d9b3f70f05836cf067d136f982e6`  
+		Last Modified: Fri, 21 Sep 2018 10:17:57 GMT  
+		Size: 674.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5` - linux; s390x
@@ -1802,7 +1802,7 @@ CMD ["zkServer.sh" "start-foreground"]
 ## `zookeeper:3.5.4-beta`
 
 ```console
-$ docker pull zookeeper@sha256:3f4bc6caee5d8b0cf7a2d0dda6583da8690225ea59138739583f09525d8f03bc
+$ docker pull zookeeper@sha256:602f0de37597c827613a59d75b51b8052c2e741b7b3140501be3e052b7b0918d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2007,14 +2007,14 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5.4-beta` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:163ab7e5c694f935da811d535dc334353284370c1320cd546b8c84a35484f926
+$ docker pull zookeeper@sha256:3f3543713673d001365d97c7f0e75eb0f3782aa39920878b1f8a99803afa95fe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.9 MB (75877317 bytes)**  
+-	Total Size: **75.9 MB (75877318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a0f353ddcc0c778902d343cce721d34a8db6e0c66462077d379fa04bb812406`
+-	Image ID: `sha256:ad99f8bc8ed61454bcad64a8ced64a58f7a1a67ce257a091c9100aa2c529f865`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -2060,11 +2060,11 @@ VOLUME [/data /datalog /logs]
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
 # Sat, 15 Sep 2018 16:23:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.5.4-beta/bin ZOOCFGDIR=/conf
-# Sat, 15 Sep 2018 16:23:59 GMT
-COPY file:5ae7bf2d4a121a8e420ce793542d2d7d3253fd2f4ae4b308a09928fac017ed3d in / 
-# Sat, 15 Sep 2018 16:24:00 GMT
+# Fri, 21 Sep 2018 09:55:06 GMT
+COPY file:eae2ade8a1aebf1c567adda750d851dbdcedf45caa6df91d13e91b46664454f4 in / 
+# Fri, 21 Sep 2018 09:55:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:24:01 GMT
+# Fri, 21 Sep 2018 09:55:11 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -2097,9 +2097,9 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Sat, 15 Sep 2018 16:25:25 GMT  
 		Size: 19.3 MB (19297899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b67bd969afec197df73e169ee51fd974450b151592bcf6b5249c76a0c917fbc`  
-		Last Modified: Sat, 15 Sep 2018 16:25:19 GMT  
-		Size: 673.0 B  
+	-	`sha256:b1244c18ac82f0209a7f3d21d7969cdec4b114e813e0a45d04d5434f7c62164c`  
+		Last Modified: Fri, 21 Sep 2018 09:56:13 GMT  
+		Size: 674.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5.4-beta` - linux; 386
@@ -2203,14 +2203,14 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5.4-beta` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:4125717130d93d3abc65d4cf933dca682fe209021e7c72f6cbbd5fba851b98b6
+$ docker pull zookeeper@sha256:fa2366a271cf33f93d16058979d00ebf8161d59e5c347ff62275df4e9611588a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76631230 bytes)**  
+-	Total Size: **76.6 MB (76631231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a92ab7f1775557caed6e34cf294edefd5a5eea460814cd324b548299a5755e80`
+-	Image ID: `sha256:0587975da1d298e3268e057a4fd65d9a823dcaaa5e42f3c5ed4619235a9e5e9a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -2256,11 +2256,11 @@ VOLUME [/data /datalog /logs]
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
 # Wed, 12 Sep 2018 15:01:27 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.5.4-beta/bin ZOOCFGDIR=/conf
-# Wed, 12 Sep 2018 15:01:30 GMT
-COPY file:5ae7bf2d4a121a8e420ce793542d2d7d3253fd2f4ae4b308a09928fac017ed3d in / 
-# Wed, 12 Sep 2018 15:01:32 GMT
+# Fri, 21 Sep 2018 10:16:40 GMT
+COPY file:eae2ade8a1aebf1c567adda750d851dbdcedf45caa6df91d13e91b46664454f4 in / 
+# Fri, 21 Sep 2018 10:16:44 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 15:01:34 GMT
+# Fri, 21 Sep 2018 10:16:55 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -2293,9 +2293,9 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Wed, 12 Sep 2018 15:02:56 GMT  
 		Size: 19.3 MB (19296564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c63b487b9714189cbb3f9dd0a4da537331168515a7f8113fcab3272b27210fad`  
-		Last Modified: Wed, 12 Sep 2018 15:02:52 GMT  
-		Size: 673.0 B  
+	-	`sha256:7c4f780184443da559d686975e82f7531406d9b3f70f05836cf067d136f982e6`  
+		Last Modified: Fri, 21 Sep 2018 10:17:57 GMT  
+		Size: 674.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5.4-beta` - linux; s390x

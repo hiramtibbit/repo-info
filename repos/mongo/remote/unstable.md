@@ -1,7 +1,7 @@
 ## `mongo:unstable`
 
 ```console
-$ docker pull mongo@sha256:cf429828ce856288a796e0d1b5ef12720231321afa238a2dc827c7604781dbe9
+$ docker pull mongo@sha256:f365666a160e81efc9e6641b35b39696a4de740ac9a484f44421aad61e59a0b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -141,14 +141,14 @@ CMD ["mongod"]
 ### `mongo:unstable` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:1d3c7e856fbda2d9279389886b66ed8a8d555b7ff54e6db610637c3e55c4205c
+$ docker pull mongo@sha256:41768e1f80b6f1f0b09760f1d9c9ed00bc49d78fe7e5c3673667384594229f6b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.1 MB (116060610 bytes)**  
+-	Total Size: **116.1 MB (116060617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5827d5664681bc03809ef6bd4832a7a4733af4026d47df5eb872de42b562904a`
+-	Image ID: `sha256:c62fb9c1ee6041ae497b48fdb12ca988b550906442d3a9772b0dded061c2fbde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -199,13 +199,13 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_V
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
 # Sat, 15 Sep 2018 09:54:58 GMT
 VOLUME [/data/db /data/configdb]
-# Sat, 15 Sep 2018 09:54:59 GMT
-COPY file:47ca6ed303b5e87966437b3e87e905087ed10f4ddb3c7a51598a2879cc615558 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 09:55:00 GMT
+# Fri, 21 Sep 2018 09:00:46 GMT
+COPY file:bfcc9e8ad946f02dd66786c7586f4f2d9cdb5303a3538bdd57253f65a183717f in /usr/local/bin/ 
+# Fri, 21 Sep 2018 09:00:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 09:55:01 GMT
+# Fri, 21 Sep 2018 09:00:49 GMT
 EXPOSE 27017/tcp
-# Sat, 15 Sep 2018 09:55:02 GMT
+# Fri, 21 Sep 2018 09:00:50 GMT
 CMD ["mongod"]
 ```
 
@@ -262,7 +262,7 @@ CMD ["mongod"]
 		Last Modified: Sat, 15 Sep 2018 09:56:51 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2e25c60a573ce61656c3006e1e999f1ad3d53273480158f730e0d0a234bfdb`  
-		Last Modified: Sat, 15 Sep 2018 09:56:52 GMT  
-		Size: 3.7 KB (3704 bytes)  
+	-	`sha256:b558072b646bc0090bb40f8adf12f13d327ce13f314152f4d522c1f9ce6ad364`  
+		Last Modified: Fri, 21 Sep 2018 09:02:01 GMT  
+		Size: 3.7 KB (3711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
