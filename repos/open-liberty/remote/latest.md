@@ -1,7 +1,7 @@
 ## `open-liberty:latest`
 
 ```console
-$ docker pull open-liberty@sha256:6f08c2a3bc34680dc3264b08d24c139b568186f3c0c4c6114e81db4acb651d04
+$ docker pull open-liberty@sha256:35f6cca2420c418ab52e7ce1cca43cc7451b085589c3f5eb2fdf23104bddcca3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -119,14 +119,14 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ### `open-liberty:latest` - linux; 386
 
 ```console
-$ docker pull open-liberty@sha256:2702a671ea456e570517c56ebb60f79b12933f1c7007e71e14c1478722b2c1ee
+$ docker pull open-liberty@sha256:be7b15a99e1bb0e354dec4a00427467bc465509a45bd618142750ee31370b5e0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.6 MB (284603486 bytes)**  
+-	Total Size: **288.3 MB (288270833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:947a01048c25f90987c750ed1ff6a1bf89942a86028faf68f7e92eef6e79712b`
+-	Image ID: `sha256:789710572983053a90781335a4d539ed2ed40c1780e2d0a856f8cd55e375ef26`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -157,21 +157,21 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 LABEL maintainer=Alasdair Nottingham vendor=Open Liberty url=https://openliberty.io/ github=https://github.com/OpenLiberty/ci.docker
 # Fri, 07 Sep 2018 10:03:36 GMT
 COPY file:a6eac68a3be2db3229be20bb825e70a7a1e5f32d189da5168ed4f2fe9c9b96fc in /opt/ol/docker/ 
-# Fri, 07 Sep 2018 10:04:10 GMT
-ENV LIBERTY_VERSION=18.0.0.2 LIBERTY_SHA=9f2fa4e47ffcfb66d3ffedb14777d7cb3e2da30e
-# Fri, 07 Sep 2018 10:04:21 GMT
+# Fri, 21 Sep 2018 11:30:41 GMT
+ENV LIBERTY_VERSION=18.0.0.3 LIBERTY_SHA=b86ffc50eaf3965713cc9a1a3246bb9c05d59858
+# Fri, 21 Sep 2018 11:30:55 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*     && wget https://repo1.maven.org/maven2/io/openliberty/openliberty-javaee8/$LIBERTY_VERSION/openliberty-javaee8-$LIBERTY_VERSION.zip -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && apt-get remove -y unzip     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Sep 2018 10:04:22 GMT
+# Fri, 21 Sep 2018 11:30:55 GMT
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true KEYSTORE_REQUIRED=true
-# Fri, 07 Sep 2018 10:04:22 GMT
+# Fri, 21 Sep 2018 11:30:56 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs     && ln -s /liberty /opt/ol/wlp
-# Fri, 07 Sep 2018 10:04:39 GMT
+# Fri, 21 Sep 2018 11:31:13 GMT
 RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml     && /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ && rm -rf /output/messaging
-# Fri, 07 Sep 2018 10:04:39 GMT
+# Fri, 21 Sep 2018 11:31:13 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Fri, 07 Sep 2018 10:04:39 GMT
+# Fri, 21 Sep 2018 11:31:13 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Fri, 07 Sep 2018 10:04:40 GMT
+# Fri, 21 Sep 2018 11:31:13 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -208,17 +208,17 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 07 Sep 2018 10:06:46 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61311c40ee68827004f0fec125a75749aa5973734e18a7e6f71c21bbd25a050a`  
-		Last Modified: Fri, 07 Sep 2018 10:07:21 GMT  
-		Size: 107.4 MB (107423916 bytes)  
+	-	`sha256:ef5c26c0896cf0620cfbd5ed1503ca4b2e11cf3c9db9994e30a366105a319586`  
+		Last Modified: Fri, 21 Sep 2018 11:34:37 GMT  
+		Size: 111.1 MB (111062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d79f738ec6c7ae74b03aa98ba76f4ef3abc1ca909c65f4cad33547a5128cfa32`  
-		Last Modified: Fri, 07 Sep 2018 10:07:11 GMT  
-		Size: 300.0 B  
+	-	`sha256:6337a4402173507d092a022c4f8696cd1586f8b7f2e451549fe1ef2dd1aa2442`  
+		Last Modified: Fri, 21 Sep 2018 11:34:27 GMT  
+		Size: 308.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86014a78eadb5d0d2649973bf4a6c4973b1dc3168629b4c2fce731f12614bbe6`  
-		Last Modified: Fri, 07 Sep 2018 10:07:16 GMT  
-		Size: 14.9 MB (14879630 bytes)  
+	-	`sha256:1456b03955314381a2fd8d456ebe2c887d1399b6865ae2a1d72624d74548280a`  
+		Last Modified: Fri, 21 Sep 2018 11:34:32 GMT  
+		Size: 14.9 MB (14908230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:latest` - linux; ppc64le
