@@ -541,20 +541,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-4
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-4.dsc' gcc-8_8.2.0-4.dsc 32392 SHA256:e6e96de20a8448dfbeb09b6ffe88a384eb726a78e81baa1d393bf7f87d790db9
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-4.diff.gz' gcc-8_8.2.0-4.diff.gz 4132515 SHA256:1e8c15d6ddd3da080a440bc82eea4f1e8e873db89b8667e3942ed9f482d6b5f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8.2.0-4/
 
-- https://sources.debian.net/src/gcc-8/8.2.0-4/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.2.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.2.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.27-5`
 
