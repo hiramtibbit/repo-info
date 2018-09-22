@@ -1,10 +1,10 @@
-# `websphere-liberty:springBoot1`
+# `websphere-liberty:microProfile1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e0cd88b2d6776c76ad4c4b014e5c2fb165e2b2889820311b12e0227c72a77ed`
-- Created: `2018-09-21T19:28:41.55671484Z`
-- Virtual Size: ~ 425.95 Mb  
+- Image ID: `sha256:8f065ae14da29070af8121849651c4f496b5c47c6c7fe43f48a8a9fed52ba5f7`
+- Created: `2018-09-21T19:37:45.09485424Z`
+- Virtual Size: ~ 487.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
