@@ -1260,10 +1260,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gobject-introspection=1.58.0-1
-'http://http.debian.net/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.dsc' gobject-introspection_1.58.0-1.dsc 2844 SHA256:96ffd5f06eba428637b8e7debbd92d0fdcb85f2935be646a8a4c495a11f9a7d4
-'http://http.debian.net/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0.orig.tar.xz' gobject-introspection_1.58.0.orig.tar.xz 1370824 SHA256:27c1590a32749de0a5481ce897772547043e94bccba4bc0a7edb3d8513e401ec
-'http://http.debian.net/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.debian.tar.xz' gobject-introspection_1.58.0-1.debian.tar.xz 20884 SHA256:e263848fb37673d39000ee20635ad6204b9a8590cd2868baf5e6c96ef739f4ec
+'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.dsc' gobject-introspection_1.58.0-1.dsc 2844 SHA256:96ffd5f06eba428637b8e7debbd92d0fdcb85f2935be646a8a4c495a11f9a7d4
+'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0.orig.tar.xz' gobject-introspection_1.58.0.orig.tar.xz 1370824 SHA256:27c1590a32749de0a5481ce897772547043e94bccba4bc0a7edb3d8513e401ec
+'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.debian.tar.xz' gobject-introspection_1.58.0-1.debian.tar.xz 20884 SHA256:e263848fb37673d39000ee20635ad6204b9a8590cd2868baf5e6c96ef739f4ec
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gobject-introspection/1.58.0-1/ (for browsing the source)
+- https://sources.debian.net/src/gobject-introspection/1.58.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gobject-introspection/1.58.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.12-1`
 
@@ -3887,17 +3893,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.24.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.dsc' sqlite3_3.24.0-1.dsc 2397 SHA256:0d9a761280a76ddbe0226297896e22e4588cd2219771564e0453874b57050935
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig-www.tar.xz' sqlite3_3.24.0.orig-www.tar.xz 5404272 SHA256:4284ce9924d5ae20e6cf32aa8c9c32b622a529bf6a0e65e51777da28034ac83e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig.tar.xz' sqlite3_3.24.0.orig.tar.xz 6187072 SHA256:005a04905f54b648320946abac5a486276b85e285469dffa0eca8d03e9b0bf1f
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.dsc' sqlite3_3.24.0-1.dsc 2397 SHA256:0d9a761280a76ddbe0226297896e22e4588cd2219771564e0453874b57050935
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig-www.tar.xz' sqlite3_3.24.0.orig-www.tar.xz 5404272 SHA256:4284ce9924d5ae20e6cf32aa8c9c32b622a529bf6a0e65e51777da28034ac83e
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig.tar.xz' sqlite3_3.24.0.orig.tar.xz 6187072 SHA256:005a04905f54b648320946abac5a486276b85e285469dffa0eca8d03e9b0bf1f
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sqlite3/3.24.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.24.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.24.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=2.42-6-1`
 
