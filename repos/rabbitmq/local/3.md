@@ -1,10 +1,10 @@
-# `rabbitmq:3.7.7`
+# `rabbitmq:3.7.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d502f687f36a213315522f323952a37532397f2b81659cc72f5ad067c08fd14f`
-- Created: `2018-09-05T05:22:15.054997209Z`
-- Virtual Size: ~ 124.79 Mb  
+- Image ID: `sha256:4fdcccc8ade180bbc149f2834c3fca45e64bc1c3829309576d8eee6c8f20f3f0`
+- Created: `2018-09-21T19:20:49.103627938Z`
+- Virtual Size: ~ 124.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.7.7`
-  - `RABBITMQ_GITHUB_TAG=v3.7.7`
-  - `RABBITMQ_DEBIAN_VERSION=3.7.7-1`
+  - `RABBITMQ_VERSION=3.7.8`
+  - `RABBITMQ_GITHUB_TAG=v3.7.8`
+  - `RABBITMQ_DEBIAN_VERSION=3.7.8-1`
   - `LANG=C.UTF-8`
   - `HOME=/var/lib/rabbitmq`
 
@@ -1728,11 +1728,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.12-3+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.12-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rabbitmq-server=3.7.7-1`
+### `dpkg` source package: `rabbitmq-server=3.7.8-1`
 
 Binary Packages:
 
-- `rabbitmq-server=3.7.7-1`
+- `rabbitmq-server=3.7.8-1`
 
 Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 
