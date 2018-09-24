@@ -2719,14 +2719,9 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.5-0ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5-0ubuntu4.1.dsc' lcms2_2.5-0ubuntu4.1.dsc 1957 SHA256:3db3491e57ad31ce22ae27316cf9469a09e757f72846cb6586e6d316d63eb44d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5.orig.tar.gz' lcms2_2.5.orig.tar.gz 7000396 SHA256:6727772b44470a2111dba53b9ce4c952b87e7d1b72a31c5ebdf44ba6eb0aa72b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5-0ubuntu4.1.debian.tar.gz' lcms2_2.5-0ubuntu4.1.debian.tar.gz 23453 SHA256:e6a48b3a55587e6c7a86e50baac06e3029320b821e427167b8466b02f508cc7f
-```
 
 ### `dpkg` source package: `lcms=1.19.dfsg-1.2ubuntu5`
 
