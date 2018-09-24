@@ -205,14 +205,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.10
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.10.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.10.dsc 3838 SHA256:5f0f9cebedb87b8b200ce9d1acd9e57c9095a9936722b5b859b410217cc603ad
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.10.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.10.debian.tar.xz 90936 SHA256:ca3885d66cd0e048af5d15d77ea73b5471b29b2c237e23b46caf363c6504e0c1
-```
 
 ### `dpkg` source package: `binfmt-support=2.1.6-1`
 
@@ -250,9 +245,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.dsc' binutils_2.26.1-1ubuntu1~16.04.6.dsc 4046 SHA256:eff6ef396b4beb6228973c9019dc7c17f340c82daf984b3af4a94b8793806764
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.diff.gz' binutils_2.26.1-1ubuntu1~16.04.6.diff.gz 237840 SHA256:2810d1767117fb41d6b572c4cf7d30eaf5d4c24a3219163fd4dcba3524c710eb
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.dsc' binutils_2.26.1-1ubuntu1~16.04.6.dsc 4046 SHA256:eff6ef396b4beb6228973c9019dc7c17f340c82daf984b3af4a94b8793806764
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.diff.gz' binutils_2.26.1-1ubuntu1~16.04.6.diff.gz 237840 SHA256:2810d1767117fb41d6b572c4cf7d30eaf5d4c24a3219163fd4dcba3524c710eb
 ```
 
 ### `dpkg` source package: `build-essential=12.1ubuntu2`
