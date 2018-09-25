@@ -1,10 +1,10 @@
-# `gradle:4.10.1-jre10-slim`
+# `gradle:4.10.2-jre10-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d25cf4f953aa0af506537bca899b3f38c7a154280d0ed1c75c11999127453f66`
-- Created: `2018-09-13T17:24:41.291990018Z`
-- Virtual Size: ~ 383.55 Mb  
+- Image ID: `sha256:85034ccc2a5fe735efeb3a1538350e6ef08f96af9153e627d6bcc5a4d1a9be6f`
+- Created: `2018-09-24T20:26:06.934726989Z`
+- Virtual Size: ~ 383.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=10.0.2+13`
   - `JAVA_DEBIAN_VERSION=10.0.2+13-1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.10.1`
+  - `GRADLE_VERSION=4.10.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -418,20 +418,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.1
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.dsc' db5.3_5.3.28+dfsg1-0.1.dsc 3036 SHA256:8d944e067e06bf3d7bcd2459242462ae7f4017a926665ad5f3d6bd9e2915bc70
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.1.debian.tar.xz' db5.3_5.3.28+dfsg1-0.1.debian.tar.xz 29056 SHA256:1c2a431efff617e9954da8d4c57d1ffde21206676284a17fc5db2092716a9128
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.1/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.1/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dbus=1.12.10-1`
 
@@ -2007,21 +2000,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1~~pre9-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1~~pre9-1.dsc' openssl_1.1.1~~pre9-1.dsc 2664 SHA256:06b4021d2fee5f7272f26bd122aaaaf2400de2daff450e4459bddd3356778d0f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1~~pre9.orig.tar.gz' openssl_1.1.1~~pre9.orig.tar.gz 8411103 SHA256:95ebdfbb05e8451fb01a186ccaa4a7da0eff9a48999ede9fe1a7d90db75ccb4c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1~~pre9.orig.tar.gz.asc' openssl_1.1.1~~pre9.orig.tar.gz.asc 488 SHA256:f2d723353a9f9d2fc2699add7ed23a5b1c511684fd05d00e0ce8b4a619f8c6f3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1~~pre9-1.debian.tar.xz' openssl_1.1.1~~pre9-1.debian.tar.xz 82920 SHA256:47e7e1b1c0a27f90f8b8fc804927fd87ed3f269c0d26116d9e1d20158442b36f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1~~pre9-1/
 
-- https://sources.debian.net/src/openssl/1.1.1~~pre9-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1~~pre9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1~~pre9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
 
@@ -2280,21 +2265,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.24.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.dsc' sqlite3_3.24.0-1.dsc 2397 SHA256:0d9a761280a76ddbe0226297896e22e4588cd2219771564e0453874b57050935
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig-www.tar.xz' sqlite3_3.24.0.orig-www.tar.xz 5404272 SHA256:4284ce9924d5ae20e6cf32aa8c9c32b622a529bf6a0e65e51777da28034ac83e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0.orig.tar.xz' sqlite3_3.24.0.orig.tar.xz 6187072 SHA256:005a04905f54b648320946abac5a486276b85e285469dffa0eca8d03e9b0bf1f
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.24.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.24.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.24.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.24.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-7`
 
@@ -2495,11 +2472,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.32.1-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.32.1-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.19.5-1`
+### `dpkg` source package: `wget=1.19.5-2`
 
 Binary Packages:
 
-- `wget=1.19.5-1`
+- `wget=1.19.5-2`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2509,18 +2486,18 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.19.5-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5-1.dsc' wget_1.19.5-1.dsc 2155 SHA256:0171f759be8a7b460e4ee01e932a80dda40125780c73fba675be9959a0affe1e
+$ apt-get source -qq --print-uris wget=1.19.5-2
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5-2.dsc' wget_1.19.5-2.dsc 2167 SHA256:950a051129ef0a62bb4ec25cca6f501a64a135a08d5b9846ff42e44f3a98560e
 'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5.orig.tar.gz' wget_1.19.5.orig.tar.gz 4455797 SHA256:b39212abe1a73f2b28f4c6cb223c738559caac91d6e416a6d91d4b9d55c9faee
 'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5.orig.tar.gz.asc' wget_1.19.5.orig.tar.gz.asc 879 SHA256:f2058db1f155fc5564de797d11dc40f5fa721f35e36e02bf06332771db150ef7
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5-1.debian.tar.xz' wget_1.19.5-1.debian.tar.xz 60208 SHA256:24e48282b093e87b1b90f5874ae7446386b13ffe61ad68e1681522f3576fd161
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.5-2.debian.tar.xz' wget_1.19.5-2.debian.tar.xz 61220 SHA256:fd73848daf25da5306c6269c5dee9939a2daabe1aba959b3699297c182fb5385
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.19.5-1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.19.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.19.5-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.19.5-2/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.19.5-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.19.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg=1:7.7+19`
 
