@@ -1,17 +1,17 @@
-# `nginx:1.15.3-perl`
+# `nginx:1.15.4-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:71cdfd2ee37873e1d09ec467aaab6f2913b37aac33323ab5d79612298169a82f`
-- Created: `2018-09-05T00:57:27.246453424Z`
-- Virtual Size: ~ 148.00 Mb  
+- Image ID: `sha256:ee31a4c6214e6f3c9feaac29129137dd060e788f9db9ecd3a3f256fc3b3ec48f`
+- Created: `2018-09-25T17:22:04.410496439Z`
+- Virtual Size: ~ 148.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.15.3-1~stretch`
-  - `NJS_VERSION=1.15.3.0.2.3-1~stretch`
+  - `NGINX_VERSION=1.15.4-1~stretch`
+  - `NJS_VERSION=1.15.4.0.2.4-1~stretch`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1581,11 +1581,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.15.3-1~stretch`
+### `dpkg` source package: `nginx-module-geoip=1.15.4-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.15.3-1~stretch`
+- `nginx-module-geoip=1.15.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1595,11 +1595,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.15.3-1~stretch`
+### `dpkg` source package: `nginx-module-image-filter=1.15.4-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.15.3-1~stretch`
+- `nginx-module-image-filter=1.15.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1609,11 +1609,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.15.3.0.2.3-1~stretch`
+### `dpkg` source package: `nginx-module-njs=1.15.4.0.2.4-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-njs=1.15.3.0.2.3-1~stretch`
+- `nginx-module-njs=1.15.4.0.2.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1623,11 +1623,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.15.3-1~stretch`
+### `dpkg` source package: `nginx-module-perl=1.15.4-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-perl=1.15.3-1~stretch`
+- `nginx-module-perl=1.15.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1637,11 +1637,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.15.3-1~stretch`
+### `dpkg` source package: `nginx-module-xslt=1.15.4-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.15.3-1~stretch`
+- `nginx-module-xslt=1.15.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1651,11 +1651,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.15.3-1~stretch`
+### `dpkg` source package: `nginx=1.15.4-1~stretch`
 
 Binary Packages:
 
-- `nginx=1.15.3-1~stretch`
+- `nginx=1.15.4-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
