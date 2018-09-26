@@ -1,10 +1,10 @@
-# `traefik:v1.7.0-rc5-alpine`
+# `traefik:v1.7.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:266a4bad7efe29c8daa067debd05287b2841b0696e3c1207d3e2203d65815379`
-- Created: `2018-09-18T22:20:32.51467311Z`
-- Virtual Size: ~ 72.35 Mb  
+- Image ID: `sha256:1545aa48563651c9bdec9eae25e37e00ced30734b883c7b48c419d5135b2460f`
+- Created: `2018-09-24T22:27:51.49879955Z`
+- Virtual Size: ~ 72.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
