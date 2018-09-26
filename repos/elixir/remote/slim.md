@@ -1,7 +1,7 @@
 ## `elixir:slim`
 
 ```console
-$ docker pull elixir@sha256:bea49c2115e200bec8502f5a579ada473cb8f4900117b0781bdceac565f85cd6
+$ docker pull elixir@sha256:6d7841353e50e42ad08826b047532ee9af0c12eee975861579bc7e0e739cb762
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,14 +108,14 @@ CMD ["iex"]
 ### `elixir:slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull elixir@sha256:c7008df928812fdd188443280e1ac507c7a87c93616ab0082cfa510b562a3f40
+$ docker pull elixir@sha256:5f9908339d88ac80a3a4a8b9894262232f1dc6cd60acd1afa0e89e15d1ed40e2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.1 MB (106054090 bytes)**  
+-	Total Size: **106.1 MB (106141615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19d4e81ddf10a5de114c1f4339517a9d4e9891a4a68762b6abbdd27dfa020c20`
+-	Image ID: `sha256:3a47a31aeb7be7b493d54a35a98e278af78f42e840fef7325e6996d3e095ed40`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -123,17 +123,17 @@ $ docker pull elixir@sha256:c7008df928812fdd188443280e1ac507c7a87c93616ab0082cfa
 ADD file:4e01bc399974f6fe22cd2b4421c2e52c52380aa00a770986939071dbc59d734e in / 
 # Wed, 05 Sep 2018 08:50:30 GMT
 CMD ["bash"]
-# Sat, 15 Sep 2018 09:13:17 GMT
-ENV OTP_VERSION=21.0.9
-# Sat, 15 Sep 2018 09:24:36 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="fbbd21358ddcf657b3125db636ef2260d421f5024ff9b4ad03c5e690651ec0dd" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 15 Sep 2018 09:24:38 GMT
+# Wed, 26 Sep 2018 09:36:11 GMT
+ENV OTP_VERSION=21.1
+# Wed, 26 Sep 2018 09:47:59 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7212f895ae317fa7a086fa2946070de5b910df5d41263e357d44b0f1f410af0f" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 09:48:07 GMT
 CMD ["erl"]
-# Sat, 15 Sep 2018 14:44:08 GMT
+# Wed, 26 Sep 2018 10:56:11 GMT
 ENV ELIXIR_VERSION=v1.7.3 LANG=C.UTF-8
-# Sat, 15 Sep 2018 14:45:31 GMT
+# Wed, 26 Sep 2018 10:57:41 GMT
 RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="219cc599cbb59aaece4347b1c4bb383c6e277f242ca88bc2e8a553aedaaa4c1c" 	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 15 Sep 2018 14:45:32 GMT
+# Wed, 26 Sep 2018 10:57:42 GMT
 CMD ["iex"]
 ```
 
@@ -142,13 +142,13 @@ CMD ["iex"]
 		Last Modified: Wed, 05 Sep 2018 09:06:53 GMT  
 		Size: 43.1 MB (43123621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19fb8dbb9eb6a746ab851625726c89dbf27bb31eb32f8b9404100accfaf3971e`  
-		Last Modified: Sat, 15 Sep 2018 09:49:17 GMT  
-		Size: 57.5 MB (57454466 bytes)  
+	-	`sha256:e0e67d291c87a551b3d1a6b5110369f3704032902e85b2721332054d829a21c5`  
+		Last Modified: Wed, 26 Sep 2018 10:03:13 GMT  
+		Size: 57.5 MB (57541967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:742da57ae21c66cdd26fabac797518afc6aa04fb02d41472a1b5c351f6fbf9e8`  
-		Last Modified: Sat, 15 Sep 2018 14:52:15 GMT  
-		Size: 5.5 MB (5476003 bytes)  
+	-	`sha256:cc2eb2933832df58b5c0cc211faa210bea3f4fb69ae691e557a62970fa14a4e9`  
+		Last Modified: Wed, 26 Sep 2018 11:03:41 GMT  
+		Size: 5.5 MB (5476027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `elixir:slim` - linux; 386
