@@ -425,12 +425,13 @@ CMD ["mysqld"]
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:e696f398fa424135f9e5fb0fe69637461319ff557521ab8b3025ee1c25e29eab
+$ docker pull mariadb@sha256:e8dbae9a1d81730515449cd4d81a77b10d10655974fa98bb7f88f4edca29d6f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -559,6 +560,133 @@ CMD ["mysqld"]
 	-	`sha256:a430ceed57be3c3351ece3e29a209a29bca515d4b85f4cc186acf36c75c60d04`  
 		Last Modified: Wed, 05 Sep 2018 23:20:54 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mariadb:10.0` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:d508fea046580b994f14fe63d72ce194f53f78797f65b614ea3cb749af797510
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **99.0 MB (98984454 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4783fd0aa143e1a11e26ff97ba3192312e3c94cb9240c3b1f332daa4b21587d2`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 18:00:02 GMT
+ADD file:e5010797ac02efecbf22dd21592880fd5283c01d177c3f0d1274c6397683f8f0 in / 
+# Thu, 23 Aug 2018 18:00:04 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 18:00:06 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 18:00:08 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 18:00:10 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 18:00:11 GMT
+CMD ["/bin/bash"]
+# Wed, 26 Sep 2018 10:25:08 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Wed, 26 Sep 2018 10:25:26 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:25:29 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 26 Sep 2018 10:26:01 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 26 Sep 2018 10:26:03 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Wed, 26 Sep 2018 10:26:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:26:59 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Wed, 26 Sep 2018 10:27:01 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Wed, 26 Sep 2018 10:27:09 GMT
+ENV MARIADB_MAJOR=10.0
+# Wed, 26 Sep 2018 10:27:10 GMT
+ENV MARIADB_VERSION=10.0.36+maria-1~xenial
+# Wed, 26 Sep 2018 10:27:12 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu xenial main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:29:16 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='percona-xtrabackup'; 	echo "deb [arch=amd64,i386] https://repo.percona.com/apt xenial main" > /etc/apt/sources.list.d/percona.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${backupPackage}_${dpkgArch##*-}" in 		percona*_amd64 | percona*_i386 ) ;; 		*) backupPackage= ;; 	esac; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:29:17 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:29:18 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:29:21 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:29:22 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:29:23 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:29:24 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:672a69505838a80ab1d16038f6268944bf913e2b9df67785f4f560145b243625`  
+		Last Modified: Fri, 10 Aug 2018 22:12:34 GMT  
+		Size: 39.4 MB (39381352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:958416e5b29b0395ebf84d5442b4a440207871d06ab7b5b475bbfcbc64625d16`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9b2df41f722dc826e75f4e3fadac77f1487ed4e1254e92645e664d785662036`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3ea051153c5ecf9f78bc0528c6f4917ae8a6bb1910be9c1e23926fa80704160a`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 855.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bdeb5fe2e665aecb71278bdb333b15048b051370afe97929d4abf456e456a22`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:052236dfb66e04f02a03818327d036879f09accdb26876a907a8c817f97b6574`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 2.0 KB (1996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ac3c2df78bcc67cc4406c3b48844c650a7e228edf20287255e5190b29a5098a`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85923ce4fd4a927d024137868595a2be4fc257065bbb0d1b1d2fb20e26b3f060`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 807.3 KB (807293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73714b27dd56b8cb91e74b1031ad576f0dfa3d9929ceb46e96b159f1ed03be3e`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:896aa591cf25054153621abd12dcdc7d50127b6cc6469840f770f9d4c17b33d4`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 6.4 MB (6396550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:00f3139e6dc24f756d5c55368709e0a54050aad499d3d0f21e1d00bd119581a9`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 25.1 KB (25132 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6dd937e0caac41e20aba4a56c48b0af57ffb2cc41f99a2ae30d1bc4fc30e642`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:feff2c4cc6ad3ba2bfb4949741740d0e8c4d2653b2b1a9d3306736794bf2b1ed`  
+		Last Modified: Wed, 26 Sep 2018 10:31:31 GMT  
+		Size: 52.4 MB (52366377 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a4339e7bdb0a1f15e264c6666ae571bbb454b2ecc536bb67aa8e45d2c871637`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 2.6 KB (2597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fb857f3cc38e0eacf61433b640d98f84fd0233d33105da3db3fa2e51d461df3`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:10.0` - linux; 386
@@ -818,12 +946,13 @@ CMD ["mysqld"]
 ## `mariadb:10.0.36`
 
 ```console
-$ docker pull mariadb@sha256:e696f398fa424135f9e5fb0fe69637461319ff557521ab8b3025ee1c25e29eab
+$ docker pull mariadb@sha256:e8dbae9a1d81730515449cd4d81a77b10d10655974fa98bb7f88f4edca29d6f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -952,6 +1081,133 @@ CMD ["mysqld"]
 	-	`sha256:a430ceed57be3c3351ece3e29a209a29bca515d4b85f4cc186acf36c75c60d04`  
 		Last Modified: Wed, 05 Sep 2018 23:20:54 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mariadb:10.0.36` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:d508fea046580b994f14fe63d72ce194f53f78797f65b614ea3cb749af797510
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **99.0 MB (98984454 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4783fd0aa143e1a11e26ff97ba3192312e3c94cb9240c3b1f332daa4b21587d2`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 18:00:02 GMT
+ADD file:e5010797ac02efecbf22dd21592880fd5283c01d177c3f0d1274c6397683f8f0 in / 
+# Thu, 23 Aug 2018 18:00:04 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 18:00:06 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 18:00:08 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 18:00:10 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 18:00:11 GMT
+CMD ["/bin/bash"]
+# Wed, 26 Sep 2018 10:25:08 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Wed, 26 Sep 2018 10:25:26 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:25:29 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 26 Sep 2018 10:26:01 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 26 Sep 2018 10:26:03 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Wed, 26 Sep 2018 10:26:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:26:59 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Wed, 26 Sep 2018 10:27:01 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Wed, 26 Sep 2018 10:27:09 GMT
+ENV MARIADB_MAJOR=10.0
+# Wed, 26 Sep 2018 10:27:10 GMT
+ENV MARIADB_VERSION=10.0.36+maria-1~xenial
+# Wed, 26 Sep 2018 10:27:12 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu xenial main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:29:16 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='percona-xtrabackup'; 	echo "deb [arch=amd64,i386] https://repo.percona.com/apt xenial main" > /etc/apt/sources.list.d/percona.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${backupPackage}_${dpkgArch##*-}" in 		percona*_amd64 | percona*_i386 ) ;; 		*) backupPackage= ;; 	esac; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:29:17 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:29:18 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:29:21 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:29:22 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:29:23 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:29:24 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:672a69505838a80ab1d16038f6268944bf913e2b9df67785f4f560145b243625`  
+		Last Modified: Fri, 10 Aug 2018 22:12:34 GMT  
+		Size: 39.4 MB (39381352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:958416e5b29b0395ebf84d5442b4a440207871d06ab7b5b475bbfcbc64625d16`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9b2df41f722dc826e75f4e3fadac77f1487ed4e1254e92645e664d785662036`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3ea051153c5ecf9f78bc0528c6f4917ae8a6bb1910be9c1e23926fa80704160a`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 855.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bdeb5fe2e665aecb71278bdb333b15048b051370afe97929d4abf456e456a22`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:052236dfb66e04f02a03818327d036879f09accdb26876a907a8c817f97b6574`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 2.0 KB (1996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ac3c2df78bcc67cc4406c3b48844c650a7e228edf20287255e5190b29a5098a`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85923ce4fd4a927d024137868595a2be4fc257065bbb0d1b1d2fb20e26b3f060`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 807.3 KB (807293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73714b27dd56b8cb91e74b1031ad576f0dfa3d9929ceb46e96b159f1ed03be3e`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:896aa591cf25054153621abd12dcdc7d50127b6cc6469840f770f9d4c17b33d4`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 6.4 MB (6396550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:00f3139e6dc24f756d5c55368709e0a54050aad499d3d0f21e1d00bd119581a9`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 25.1 KB (25132 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6dd937e0caac41e20aba4a56c48b0af57ffb2cc41f99a2ae30d1bc4fc30e642`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:feff2c4cc6ad3ba2bfb4949741740d0e8c4d2653b2b1a9d3306736794bf2b1ed`  
+		Last Modified: Wed, 26 Sep 2018 10:31:31 GMT  
+		Size: 52.4 MB (52366377 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a4339e7bdb0a1f15e264c6666ae571bbb454b2ecc536bb67aa8e45d2c871637`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 2.6 KB (2597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fb857f3cc38e0eacf61433b640d98f84fd0233d33105da3db3fa2e51d461df3`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:10.0.36` - linux; 386
@@ -1211,12 +1467,13 @@ CMD ["mysqld"]
 ## `mariadb:10.0.36-xenial`
 
 ```console
-$ docker pull mariadb@sha256:e696f398fa424135f9e5fb0fe69637461319ff557521ab8b3025ee1c25e29eab
+$ docker pull mariadb@sha256:e8dbae9a1d81730515449cd4d81a77b10d10655974fa98bb7f88f4edca29d6f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -1345,6 +1602,133 @@ CMD ["mysqld"]
 	-	`sha256:a430ceed57be3c3351ece3e29a209a29bca515d4b85f4cc186acf36c75c60d04`  
 		Last Modified: Wed, 05 Sep 2018 23:20:54 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mariadb:10.0.36-xenial` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:d508fea046580b994f14fe63d72ce194f53f78797f65b614ea3cb749af797510
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **99.0 MB (98984454 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4783fd0aa143e1a11e26ff97ba3192312e3c94cb9240c3b1f332daa4b21587d2`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 18:00:02 GMT
+ADD file:e5010797ac02efecbf22dd21592880fd5283c01d177c3f0d1274c6397683f8f0 in / 
+# Thu, 23 Aug 2018 18:00:04 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 18:00:06 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 18:00:08 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 18:00:10 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 18:00:11 GMT
+CMD ["/bin/bash"]
+# Wed, 26 Sep 2018 10:25:08 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Wed, 26 Sep 2018 10:25:26 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:25:29 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 26 Sep 2018 10:26:01 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 26 Sep 2018 10:26:03 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Wed, 26 Sep 2018 10:26:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:26:59 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Wed, 26 Sep 2018 10:27:01 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Wed, 26 Sep 2018 10:27:09 GMT
+ENV MARIADB_MAJOR=10.0
+# Wed, 26 Sep 2018 10:27:10 GMT
+ENV MARIADB_VERSION=10.0.36+maria-1~xenial
+# Wed, 26 Sep 2018 10:27:12 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu xenial main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:29:16 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='percona-xtrabackup'; 	echo "deb [arch=amd64,i386] https://repo.percona.com/apt xenial main" > /etc/apt/sources.list.d/percona.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${backupPackage}_${dpkgArch##*-}" in 		percona*_amd64 | percona*_i386 ) ;; 		*) backupPackage= ;; 	esac; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:29:17 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:29:18 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:29:21 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:29:22 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:29:23 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:29:24 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:672a69505838a80ab1d16038f6268944bf913e2b9df67785f4f560145b243625`  
+		Last Modified: Fri, 10 Aug 2018 22:12:34 GMT  
+		Size: 39.4 MB (39381352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:958416e5b29b0395ebf84d5442b4a440207871d06ab7b5b475bbfcbc64625d16`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9b2df41f722dc826e75f4e3fadac77f1487ed4e1254e92645e664d785662036`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3ea051153c5ecf9f78bc0528c6f4917ae8a6bb1910be9c1e23926fa80704160a`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 855.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bdeb5fe2e665aecb71278bdb333b15048b051370afe97929d4abf456e456a22`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:052236dfb66e04f02a03818327d036879f09accdb26876a907a8c817f97b6574`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 2.0 KB (1996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ac3c2df78bcc67cc4406c3b48844c650a7e228edf20287255e5190b29a5098a`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85923ce4fd4a927d024137868595a2be4fc257065bbb0d1b1d2fb20e26b3f060`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 807.3 KB (807293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73714b27dd56b8cb91e74b1031ad576f0dfa3d9929ceb46e96b159f1ed03be3e`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:896aa591cf25054153621abd12dcdc7d50127b6cc6469840f770f9d4c17b33d4`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 6.4 MB (6396550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:00f3139e6dc24f756d5c55368709e0a54050aad499d3d0f21e1d00bd119581a9`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 25.1 KB (25132 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6dd937e0caac41e20aba4a56c48b0af57ffb2cc41f99a2ae30d1bc4fc30e642`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:feff2c4cc6ad3ba2bfb4949741740d0e8c4d2653b2b1a9d3306736794bf2b1ed`  
+		Last Modified: Wed, 26 Sep 2018 10:31:31 GMT  
+		Size: 52.4 MB (52366377 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a4339e7bdb0a1f15e264c6666ae571bbb454b2ecc536bb67aa8e45d2c871637`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 2.6 KB (2597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fb857f3cc38e0eacf61433b640d98f84fd0233d33105da3db3fa2e51d461df3`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:10.0.36-xenial` - linux; 386
@@ -1604,12 +1988,13 @@ CMD ["mysqld"]
 ## `mariadb:10.0-xenial`
 
 ```console
-$ docker pull mariadb@sha256:e696f398fa424135f9e5fb0fe69637461319ff557521ab8b3025ee1c25e29eab
+$ docker pull mariadb@sha256:e8dbae9a1d81730515449cd4d81a77b10d10655974fa98bb7f88f4edca29d6f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -1738,6 +2123,133 @@ CMD ["mysqld"]
 	-	`sha256:a430ceed57be3c3351ece3e29a209a29bca515d4b85f4cc186acf36c75c60d04`  
 		Last Modified: Wed, 05 Sep 2018 23:20:54 GMT  
 		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mariadb:10.0-xenial` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:d508fea046580b994f14fe63d72ce194f53f78797f65b614ea3cb749af797510
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **99.0 MB (98984454 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4783fd0aa143e1a11e26ff97ba3192312e3c94cb9240c3b1f332daa4b21587d2`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 18:00:02 GMT
+ADD file:e5010797ac02efecbf22dd21592880fd5283c01d177c3f0d1274c6397683f8f0 in / 
+# Thu, 23 Aug 2018 18:00:04 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 18:00:06 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 18:00:08 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 18:00:10 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 18:00:11 GMT
+CMD ["/bin/bash"]
+# Wed, 26 Sep 2018 10:25:08 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Wed, 26 Sep 2018 10:25:26 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:25:29 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 26 Sep 2018 10:26:01 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 26 Sep 2018 10:26:03 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Wed, 26 Sep 2018 10:26:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 26 Sep 2018 10:26:59 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Wed, 26 Sep 2018 10:27:01 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Wed, 26 Sep 2018 10:27:09 GMT
+ENV MARIADB_MAJOR=10.0
+# Wed, 26 Sep 2018 10:27:10 GMT
+ENV MARIADB_VERSION=10.0.36+maria-1~xenial
+# Wed, 26 Sep 2018 10:27:12 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu xenial main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:29:16 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='percona-xtrabackup'; 	echo "deb [arch=amd64,i386] https://repo.percona.com/apt xenial main" > /etc/apt/sources.list.d/percona.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=Percona Development Team'; 		echo 'Pin-Priority: 998'; 	} > /etc/apt/preferences.d/percona; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${backupPackage}_${dpkgArch##*-}" in 		percona*_amd64 | percona*_i386 ) ;; 		*) backupPackage= ;; 	esac; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:29:17 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:29:18 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:29:21 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:29:22 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:29:23 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:29:24 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:672a69505838a80ab1d16038f6268944bf913e2b9df67785f4f560145b243625`  
+		Last Modified: Fri, 10 Aug 2018 22:12:34 GMT  
+		Size: 39.4 MB (39381352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:958416e5b29b0395ebf84d5442b4a440207871d06ab7b5b475bbfcbc64625d16`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9b2df41f722dc826e75f4e3fadac77f1487ed4e1254e92645e664d785662036`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3ea051153c5ecf9f78bc0528c6f4917ae8a6bb1910be9c1e23926fa80704160a`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 855.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bdeb5fe2e665aecb71278bdb333b15048b051370afe97929d4abf456e456a22`  
+		Last Modified: Thu, 23 Aug 2018 18:06:04 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:052236dfb66e04f02a03818327d036879f09accdb26876a907a8c817f97b6574`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 2.0 KB (1996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4ac3c2df78bcc67cc4406c3b48844c650a7e228edf20287255e5190b29a5098a`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85923ce4fd4a927d024137868595a2be4fc257065bbb0d1b1d2fb20e26b3f060`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 807.3 KB (807293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73714b27dd56b8cb91e74b1031ad576f0dfa3d9929ceb46e96b159f1ed03be3e`  
+		Last Modified: Wed, 26 Sep 2018 10:31:14 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:896aa591cf25054153621abd12dcdc7d50127b6cc6469840f770f9d4c17b33d4`  
+		Last Modified: Wed, 26 Sep 2018 10:31:16 GMT  
+		Size: 6.4 MB (6396550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:00f3139e6dc24f756d5c55368709e0a54050aad499d3d0f21e1d00bd119581a9`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 25.1 KB (25132 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6dd937e0caac41e20aba4a56c48b0af57ffb2cc41f99a2ae30d1bc4fc30e642`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:feff2c4cc6ad3ba2bfb4949741740d0e8c4d2653b2b1a9d3306736794bf2b1ed`  
+		Last Modified: Wed, 26 Sep 2018 10:31:31 GMT  
+		Size: 52.4 MB (52366377 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a4339e7bdb0a1f15e264c6666ae571bbb454b2ecc536bb67aa8e45d2c871637`  
+		Last Modified: Wed, 26 Sep 2018 10:31:11 GMT  
+		Size: 2.6 KB (2597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fb857f3cc38e0eacf61433b640d98f84fd0233d33105da3db3fa2e51d461df3`  
+		Last Modified: Wed, 26 Sep 2018 10:31:12 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:10.0-xenial` - linux; 386
@@ -3569,12 +4081,13 @@ CMD ["mysqld"]
 ## `mariadb:10.2`
 
 ```console
-$ docker pull mariadb@sha256:544e3e2ba153d33a28a543c26f367b08ad8bdd5d6ee8892d76f785149526ba52
+$ docker pull mariadb@sha256:f4a2df380debd23195e95d20b1cde611b80d7a0ceba7740592245e96e17a81d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `mariadb:10.2` - linux; amd64
 
@@ -3703,15 +4216,143 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mariadb:10.2` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:c9aa93a0966eda64012d88a8e5c0f65b76e24de1d7189ceff691047db9e4c80c
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **108.8 MB (108786921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:391373ec895d923e6d8fd4400d8ed56aadfd68292f6ffda420f8504df7308c4f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 17:56:54 GMT
+ADD file:7a7f37f1518282b188a2e6efd752b806e74a3e03b89d4a9fa9c9f152f0a18cf5 in / 
+# Thu, 23 Aug 2018 17:56:57 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 17:56:59 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 17:57:02 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 17:57:04 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 17:57:04 GMT
+CMD ["/bin/bash"]
+# Thu, 23 Aug 2018 22:07:16 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Thu, 23 Aug 2018 22:08:03 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:08:23 GMT
+ENV GOSU_VERSION=1.10
+# Thu, 23 Aug 2018 22:08:54 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Thu, 23 Aug 2018 22:08:56 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Thu, 23 Aug 2018 22:09:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:09:33 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Thu, 23 Aug 2018 22:09:36 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Thu, 23 Aug 2018 22:12:53 GMT
+ENV MARIADB_MAJOR=10.2
+# Wed, 26 Sep 2018 10:23:00 GMT
+ENV MARIADB_VERSION=1:10.2.18+maria~bionic
+# Wed, 26 Sep 2018 10:23:02 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu bionic main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:24:25 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='mariadb-backup-10.2'; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:24:32 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:24:33 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:24:38 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:24:39 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:24:40 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:24:40 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:7dc40899884ddfbc2c46bcb408eadac218094356ce47c086c70055a9a5106232`  
+		Last Modified: Thu, 23 Aug 2018 18:00:56 GMT  
+		Size: 28.6 MB (28621029 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c3b1bd6c6b34662a55b82dcdb1dad925a66d4c5dce47cb9a24dd87d574980df`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 847.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f2b826692f9ce0816877c9f77c87684866283f1301ea97b908f2e09472b2f8f3`  
+		Last Modified: Thu, 23 Aug 2018 18:00:54 GMT  
+		Size: 458.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:836583884d3ec17820ebc8e13f6cc8cf47ebb1346b54355d68021a4c22fcab11`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27ede898dd26221aa350a0643dade517c27f7abf43a01b35713188fbeb5600ce`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19176e5ffa5007075fea3bf03075da6d726590e43714075c7a2ac917d501587a`  
+		Last Modified: Thu, 23 Aug 2018 22:18:43 GMT  
+		Size: 1.9 KB (1873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3224678e706a6b1d0b09b8c0fbc1696793bdd6dded24ad9ec3a80332abce960e`  
+		Last Modified: Thu, 23 Aug 2018 22:18:44 GMT  
+		Size: 4.4 MB (4380208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c33168d94017560a2dd216e9499451e6ab2d585a2b4f167f2fbbcfbb589741c1`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 829.6 KB (829624 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aa6e3fba1221b410a2957c297a5077928d96f47a30b8502dff11ce22bd98ebe`  
+		Last Modified: Thu, 23 Aug 2018 22:18:41 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9338b381605e4eba14c402bccc57290fe842288eb001578bfeec89193023554`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 2.7 MB (2698421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461d5789441b0cec5f423faba99bf5895234f0b0e8bbad8b6348e665d2989fc7`  
+		Last Modified: Thu, 23 Aug 2018 22:18:39 GMT  
+		Size: 25.1 KB (25133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6322af15a8d3f33e8a37c7a3fa7a97e0e4003f4377b6842a4c7e64bdfb920e69`  
+		Last Modified: Wed, 26 Sep 2018 10:29:49 GMT  
+		Size: 328.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:596484c926314de6dbea3bd96dfef7f9239635560e020519a231672f886e225b`  
+		Last Modified: Wed, 26 Sep 2018 10:30:17 GMT  
+		Size: 72.2 MB (72225155 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bca642e87fff3e13816f291288f79110bfc99e4ce9d1f2675ddf75dbc654eccc`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 2.6 KB (2592 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bd50a9fb63263df35bd073afb53f3a3ab1a326147aa781d70aaa2b3a25af6517`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mariadb:10.2.18`
 
 ```console
-$ docker pull mariadb@sha256:544e3e2ba153d33a28a543c26f367b08ad8bdd5d6ee8892d76f785149526ba52
+$ docker pull mariadb@sha256:f4a2df380debd23195e95d20b1cde611b80d7a0ceba7740592245e96e17a81d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `mariadb:10.2.18` - linux; amd64
 
@@ -3840,15 +4481,143 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mariadb:10.2.18` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:c9aa93a0966eda64012d88a8e5c0f65b76e24de1d7189ceff691047db9e4c80c
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **108.8 MB (108786921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:391373ec895d923e6d8fd4400d8ed56aadfd68292f6ffda420f8504df7308c4f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 17:56:54 GMT
+ADD file:7a7f37f1518282b188a2e6efd752b806e74a3e03b89d4a9fa9c9f152f0a18cf5 in / 
+# Thu, 23 Aug 2018 17:56:57 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 17:56:59 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 17:57:02 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 17:57:04 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 17:57:04 GMT
+CMD ["/bin/bash"]
+# Thu, 23 Aug 2018 22:07:16 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Thu, 23 Aug 2018 22:08:03 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:08:23 GMT
+ENV GOSU_VERSION=1.10
+# Thu, 23 Aug 2018 22:08:54 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Thu, 23 Aug 2018 22:08:56 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Thu, 23 Aug 2018 22:09:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:09:33 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Thu, 23 Aug 2018 22:09:36 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Thu, 23 Aug 2018 22:12:53 GMT
+ENV MARIADB_MAJOR=10.2
+# Wed, 26 Sep 2018 10:23:00 GMT
+ENV MARIADB_VERSION=1:10.2.18+maria~bionic
+# Wed, 26 Sep 2018 10:23:02 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu bionic main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:24:25 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='mariadb-backup-10.2'; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:24:32 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:24:33 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:24:38 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:24:39 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:24:40 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:24:40 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:7dc40899884ddfbc2c46bcb408eadac218094356ce47c086c70055a9a5106232`  
+		Last Modified: Thu, 23 Aug 2018 18:00:56 GMT  
+		Size: 28.6 MB (28621029 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c3b1bd6c6b34662a55b82dcdb1dad925a66d4c5dce47cb9a24dd87d574980df`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 847.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f2b826692f9ce0816877c9f77c87684866283f1301ea97b908f2e09472b2f8f3`  
+		Last Modified: Thu, 23 Aug 2018 18:00:54 GMT  
+		Size: 458.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:836583884d3ec17820ebc8e13f6cc8cf47ebb1346b54355d68021a4c22fcab11`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27ede898dd26221aa350a0643dade517c27f7abf43a01b35713188fbeb5600ce`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19176e5ffa5007075fea3bf03075da6d726590e43714075c7a2ac917d501587a`  
+		Last Modified: Thu, 23 Aug 2018 22:18:43 GMT  
+		Size: 1.9 KB (1873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3224678e706a6b1d0b09b8c0fbc1696793bdd6dded24ad9ec3a80332abce960e`  
+		Last Modified: Thu, 23 Aug 2018 22:18:44 GMT  
+		Size: 4.4 MB (4380208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c33168d94017560a2dd216e9499451e6ab2d585a2b4f167f2fbbcfbb589741c1`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 829.6 KB (829624 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aa6e3fba1221b410a2957c297a5077928d96f47a30b8502dff11ce22bd98ebe`  
+		Last Modified: Thu, 23 Aug 2018 22:18:41 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9338b381605e4eba14c402bccc57290fe842288eb001578bfeec89193023554`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 2.7 MB (2698421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461d5789441b0cec5f423faba99bf5895234f0b0e8bbad8b6348e665d2989fc7`  
+		Last Modified: Thu, 23 Aug 2018 22:18:39 GMT  
+		Size: 25.1 KB (25133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6322af15a8d3f33e8a37c7a3fa7a97e0e4003f4377b6842a4c7e64bdfb920e69`  
+		Last Modified: Wed, 26 Sep 2018 10:29:49 GMT  
+		Size: 328.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:596484c926314de6dbea3bd96dfef7f9239635560e020519a231672f886e225b`  
+		Last Modified: Wed, 26 Sep 2018 10:30:17 GMT  
+		Size: 72.2 MB (72225155 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bca642e87fff3e13816f291288f79110bfc99e4ce9d1f2675ddf75dbc654eccc`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 2.6 KB (2592 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bd50a9fb63263df35bd073afb53f3a3ab1a326147aa781d70aaa2b3a25af6517`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mariadb:10.2.18-bionic`
 
 ```console
-$ docker pull mariadb@sha256:544e3e2ba153d33a28a543c26f367b08ad8bdd5d6ee8892d76f785149526ba52
+$ docker pull mariadb@sha256:f4a2df380debd23195e95d20b1cde611b80d7a0ceba7740592245e96e17a81d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `mariadb:10.2.18-bionic` - linux; amd64
 
@@ -3977,15 +4746,143 @@ CMD ["mysqld"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `mariadb:10.2.18-bionic` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:c9aa93a0966eda64012d88a8e5c0f65b76e24de1d7189ceff691047db9e4c80c
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **108.8 MB (108786921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:391373ec895d923e6d8fd4400d8ed56aadfd68292f6ffda420f8504df7308c4f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 17:56:54 GMT
+ADD file:7a7f37f1518282b188a2e6efd752b806e74a3e03b89d4a9fa9c9f152f0a18cf5 in / 
+# Thu, 23 Aug 2018 17:56:57 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 17:56:59 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 17:57:02 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 17:57:04 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 17:57:04 GMT
+CMD ["/bin/bash"]
+# Thu, 23 Aug 2018 22:07:16 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Thu, 23 Aug 2018 22:08:03 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:08:23 GMT
+ENV GOSU_VERSION=1.10
+# Thu, 23 Aug 2018 22:08:54 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Thu, 23 Aug 2018 22:08:56 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Thu, 23 Aug 2018 22:09:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:09:33 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Thu, 23 Aug 2018 22:09:36 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Thu, 23 Aug 2018 22:12:53 GMT
+ENV MARIADB_MAJOR=10.2
+# Wed, 26 Sep 2018 10:23:00 GMT
+ENV MARIADB_VERSION=1:10.2.18+maria~bionic
+# Wed, 26 Sep 2018 10:23:02 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu bionic main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:24:25 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='mariadb-backup-10.2'; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:24:32 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:24:33 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:24:38 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:24:39 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:24:40 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:24:40 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:7dc40899884ddfbc2c46bcb408eadac218094356ce47c086c70055a9a5106232`  
+		Last Modified: Thu, 23 Aug 2018 18:00:56 GMT  
+		Size: 28.6 MB (28621029 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c3b1bd6c6b34662a55b82dcdb1dad925a66d4c5dce47cb9a24dd87d574980df`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 847.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f2b826692f9ce0816877c9f77c87684866283f1301ea97b908f2e09472b2f8f3`  
+		Last Modified: Thu, 23 Aug 2018 18:00:54 GMT  
+		Size: 458.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:836583884d3ec17820ebc8e13f6cc8cf47ebb1346b54355d68021a4c22fcab11`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27ede898dd26221aa350a0643dade517c27f7abf43a01b35713188fbeb5600ce`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19176e5ffa5007075fea3bf03075da6d726590e43714075c7a2ac917d501587a`  
+		Last Modified: Thu, 23 Aug 2018 22:18:43 GMT  
+		Size: 1.9 KB (1873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3224678e706a6b1d0b09b8c0fbc1696793bdd6dded24ad9ec3a80332abce960e`  
+		Last Modified: Thu, 23 Aug 2018 22:18:44 GMT  
+		Size: 4.4 MB (4380208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c33168d94017560a2dd216e9499451e6ab2d585a2b4f167f2fbbcfbb589741c1`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 829.6 KB (829624 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aa6e3fba1221b410a2957c297a5077928d96f47a30b8502dff11ce22bd98ebe`  
+		Last Modified: Thu, 23 Aug 2018 22:18:41 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9338b381605e4eba14c402bccc57290fe842288eb001578bfeec89193023554`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 2.7 MB (2698421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461d5789441b0cec5f423faba99bf5895234f0b0e8bbad8b6348e665d2989fc7`  
+		Last Modified: Thu, 23 Aug 2018 22:18:39 GMT  
+		Size: 25.1 KB (25133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6322af15a8d3f33e8a37c7a3fa7a97e0e4003f4377b6842a4c7e64bdfb920e69`  
+		Last Modified: Wed, 26 Sep 2018 10:29:49 GMT  
+		Size: 328.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:596484c926314de6dbea3bd96dfef7f9239635560e020519a231672f886e225b`  
+		Last Modified: Wed, 26 Sep 2018 10:30:17 GMT  
+		Size: 72.2 MB (72225155 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bca642e87fff3e13816f291288f79110bfc99e4ce9d1f2675ddf75dbc654eccc`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 2.6 KB (2592 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bd50a9fb63263df35bd073afb53f3a3ab1a326147aa781d70aaa2b3a25af6517`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `mariadb:10.2-bionic`
 
 ```console
-$ docker pull mariadb@sha256:544e3e2ba153d33a28a543c26f367b08ad8bdd5d6ee8892d76f785149526ba52
+$ docker pull mariadb@sha256:f4a2df380debd23195e95d20b1cde611b80d7a0ceba7740592245e96e17a81d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `mariadb:10.2-bionic` - linux; amd64
 
@@ -4111,6 +5008,133 @@ CMD ["mysqld"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15d17df69020275c55815f9ddd53bc98ecb56ab974d62dc519a53ee6fde44a47`  
 		Last Modified: Wed, 26 Sep 2018 00:33:06 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `mariadb:10.2-bionic` - linux; arm64 variant v8
+
+```console
+$ docker pull mariadb@sha256:c9aa93a0966eda64012d88a8e5c0f65b76e24de1d7189ceff691047db9e4c80c
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **108.8 MB (108786921 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:391373ec895d923e6d8fd4400d8ed56aadfd68292f6ffda420f8504df7308c4f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Thu, 23 Aug 2018 17:56:54 GMT
+ADD file:7a7f37f1518282b188a2e6efd752b806e74a3e03b89d4a9fa9c9f152f0a18cf5 in / 
+# Thu, 23 Aug 2018 17:56:57 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 23 Aug 2018 17:56:59 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 17:57:02 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Thu, 23 Aug 2018 17:57:04 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 23 Aug 2018 17:57:04 GMT
+CMD ["/bin/bash"]
+# Thu, 23 Aug 2018 22:07:16 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+# Thu, 23 Aug 2018 22:08:03 GMT
+RUN set -ex; 	apt-get update; 	if ! which gpg; then 		apt-get install -y --no-install-recommends gnupg; 	fi; 	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		 apt-get install -y --no-install-recommends dirmngr; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:08:23 GMT
+ENV GOSU_VERSION=1.10
+# Thu, 23 Aug 2018 22:08:54 GMT
+RUN set -ex; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Thu, 23 Aug 2018 22:08:56 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Thu, 23 Aug 2018 22:09:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https ca-certificates 		pwgen 		tzdata 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 23 Aug 2018 22:09:33 GMT
+ENV GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5
+# Thu, 23 Aug 2018 22:09:36 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mariadb.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Thu, 23 Aug 2018 22:12:53 GMT
+ENV MARIADB_MAJOR=10.2
+# Wed, 26 Sep 2018 10:23:00 GMT
+ENV MARIADB_VERSION=1:10.2.18+maria~bionic
+# Wed, 26 Sep 2018 10:23:02 GMT
+RUN set -e;	echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu bionic main" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
+# Wed, 26 Sep 2018 10:24:25 GMT
+RUN set -ex; 	{ 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	backupPackage='mariadb-backup-10.2'; 	apt-get update; 	apt-get install -y 		"mariadb-server=$MARIADB_VERSION" 		$backupPackage 		socat 	; 	rm -rf /var/lib/apt/lists/*; 	sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf /etc/mysql/conf.d/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/'; 	echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+# Wed, 26 Sep 2018 10:24:32 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 26 Sep 2018 10:24:33 GMT
+COPY file:f73461a79523c32707442c61588726e0c8a32ac13d151b97d567cd38bf7443d4 in /usr/local/bin/ 
+# Wed, 26 Sep 2018 10:24:38 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 26 Sep 2018 10:24:39 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 26 Sep 2018 10:24:40 GMT
+EXPOSE 3306/tcp
+# Wed, 26 Sep 2018 10:24:40 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:7dc40899884ddfbc2c46bcb408eadac218094356ce47c086c70055a9a5106232`  
+		Last Modified: Thu, 23 Aug 2018 18:00:56 GMT  
+		Size: 28.6 MB (28621029 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c3b1bd6c6b34662a55b82dcdb1dad925a66d4c5dce47cb9a24dd87d574980df`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 847.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f2b826692f9ce0816877c9f77c87684866283f1301ea97b908f2e09472b2f8f3`  
+		Last Modified: Thu, 23 Aug 2018 18:00:54 GMT  
+		Size: 458.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:836583884d3ec17820ebc8e13f6cc8cf47ebb1346b54355d68021a4c22fcab11`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 854.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27ede898dd26221aa350a0643dade517c27f7abf43a01b35713188fbeb5600ce`  
+		Last Modified: Thu, 23 Aug 2018 18:00:46 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19176e5ffa5007075fea3bf03075da6d726590e43714075c7a2ac917d501587a`  
+		Last Modified: Thu, 23 Aug 2018 22:18:43 GMT  
+		Size: 1.9 KB (1873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3224678e706a6b1d0b09b8c0fbc1696793bdd6dded24ad9ec3a80332abce960e`  
+		Last Modified: Thu, 23 Aug 2018 22:18:44 GMT  
+		Size: 4.4 MB (4380208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c33168d94017560a2dd216e9499451e6ab2d585a2b4f167f2fbbcfbb589741c1`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 829.6 KB (829624 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aa6e3fba1221b410a2957c297a5077928d96f47a30b8502dff11ce22bd98ebe`  
+		Last Modified: Thu, 23 Aug 2018 22:18:41 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9338b381605e4eba14c402bccc57290fe842288eb001578bfeec89193023554`  
+		Last Modified: Thu, 23 Aug 2018 22:18:42 GMT  
+		Size: 2.7 MB (2698421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461d5789441b0cec5f423faba99bf5895234f0b0e8bbad8b6348e665d2989fc7`  
+		Last Modified: Thu, 23 Aug 2018 22:18:39 GMT  
+		Size: 25.1 KB (25133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6322af15a8d3f33e8a37c7a3fa7a97e0e4003f4377b6842a4c7e64bdfb920e69`  
+		Last Modified: Wed, 26 Sep 2018 10:29:49 GMT  
+		Size: 328.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:596484c926314de6dbea3bd96dfef7f9239635560e020519a231672f886e225b`  
+		Last Modified: Wed, 26 Sep 2018 10:30:17 GMT  
+		Size: 72.2 MB (72225155 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bca642e87fff3e13816f291288f79110bfc99e4ce9d1f2675ddf75dbc654eccc`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
+		Size: 2.6 KB (2592 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bd50a9fb63263df35bd073afb53f3a3ab1a326147aa781d70aaa2b3a25af6517`  
+		Last Modified: Wed, 26 Sep 2018 10:29:48 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
