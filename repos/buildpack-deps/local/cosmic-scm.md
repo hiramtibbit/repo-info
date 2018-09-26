@@ -101,13 +101,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.0~alpha3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha3.dsc' apt_1.7.0~alpha3.dsc 2787 SHA256:11f19bd42e59984ed3d724526a93bc9b6307a816d16b625a06706ed45897c3a9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha3.tar.xz' apt_1.7.0~alpha3.tar.xz 2149312 SHA256:64553a9eeda16e1034b8247b3c88c0374ea1d8805e61389dc368ad87ba0a4bcf
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.7.0~alpha3/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -235,14 +235,13 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6622-11
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622-11.dsc' bzr_2.7.0+bzr6622-11.dsc 2918 SHA256:20470a88abed5166e5f5c6bc25fe4343f445a6646138ec17805c9d85252b338d
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622.orig.tar.gz' bzr_2.7.0+bzr6622.orig.tar.gz 10948360 SHA256:08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622-11.debian.tar.xz' bzr_2.7.0+bzr6622-11.debian.tar.xz 92636 SHA256:7f20acd3fee83519dbd61b330fd7479a5470d46ee62b6b881d4e96d9f70df2ae
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/bzr/2.7.0+bzr6622-11/
+
 
 ### `dpkg` source package: `ca-certificates=20180409`
 
@@ -1584,15 +1583,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.13-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13-2.dsc' p11-kit_0.23.13-2.dsc 2434 SHA256:19bc875d2c6dfa4704b5b10a50468411ef770b24397a5cc0c3f691aaa6f4d93e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13.orig.tar.gz' p11-kit_0.23.13.orig.tar.gz 1264090 SHA256:aa65403e3ac7c3aba17ca60f28db17b9c76d988b66b91789b8e8c145ae9922f1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13.orig.tar.gz.asc' p11-kit_0.23.13.orig.tar.gz.asc 900 SHA256:a77b0bb4d4f9bf6e3a473163d04b5b9a959324411a1a45167e36f93123b002e2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13-2.debian.tar.xz' p11-kit_0.23.13-2.debian.tar.xz 22100 SHA256:184c4a469c61a1dfb54d79ab3274eaa74e5a2ed78e257109146bf48bc204ab09
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.23.13-2/
+
 
 ### `dpkg` source package: `pam=1.1.8-3.6ubuntu2`
 

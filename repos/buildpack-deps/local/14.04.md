@@ -1300,14 +1300,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.40.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.dsc' glib2.0_2.40.2-0ubuntu1.dsc 3107 SHA256:6a7d0c35a8bac623ff18cfc9ae1746e05f9093e134ce79fb17f1297f1b4b4a3e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2.orig.tar.xz' glib2.0_2.40.2.orig.tar.xz 7001344 SHA256:e8ff8af2950897e805408480c454c415d1eade4e670ec5fb507f5e5853726c7a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.debian.tar.xz' glib2.0_2.40.2-0ubuntu1.debian.tar.xz 64612 SHA256:f0ce12128142147d9ca99a7bac4591afde8095b8491a42b5cc506a1feae91a25
-```
 
 ### `dpkg` source package: `gmp=2:5.1.3+dfsg-1ubuntu1`
 
@@ -2035,14 +2030,9 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.5-0ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5-0ubuntu4.1.dsc' lcms2_2.5-0ubuntu4.1.dsc 1957 SHA256:3db3491e57ad31ce22ae27316cf9469a09e757f72846cb6586e6d316d63eb44d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5.orig.tar.gz' lcms2_2.5.orig.tar.gz 7000396 SHA256:6727772b44470a2111dba53b9ce4c952b87e7d1b72a31c5ebdf44ba6eb0aa72b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.5-0ubuntu4.1.debian.tar.gz' lcms2_2.5-0ubuntu4.1.debian.tar.gz 23453 SHA256:e6a48b3a55587e6c7a86e50baac06e3029320b821e427167b8466b02f508cc7f
-```
 
 ### `dpkg` source package: `less=458-2`
 

@@ -101,13 +101,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.0~alpha3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha3.dsc' apt_1.7.0~alpha3.dsc 2787 SHA256:11f19bd42e59984ed3d724526a93bc9b6307a816d16b625a06706ed45897c3a9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0~alpha3.tar.xz' apt_1.7.0~alpha3.tar.xz 2149312 SHA256:64553a9eeda16e1034b8247b3c88c0374ea1d8805e61389dc368ad87ba0a4bcf
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.7.0~alpha3/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -295,14 +295,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.31.1-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1-5ubuntu1.dsc' binutils_2.31.1-5ubuntu1.dsc 11765 SHA256:f1c699919d3ad26e592ee3520f39fe5f6799068df1ca8487997880f25260dace
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1.orig.tar.xz' binutils_2.31.1.orig.tar.xz 20467996 SHA256:5d20086ecf5752cc7d9134246e9588fa201740d540f7eb84d795b1f7a93bca86
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.31.1-5ubuntu1.debian.tar.xz' binutils_2.31.1-5ubuntu1.debian.tar.xz 113024 SHA256:d91120dcb98d5b1692a865dbeff8b894c625e1010ee4ad724364255d33e08bd1
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -338,14 +333,13 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6622-11
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622-11.dsc' bzr_2.7.0+bzr6622-11.dsc 2918 SHA256:20470a88abed5166e5f5c6bc25fe4343f445a6646138ec17805c9d85252b338d
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622.orig.tar.gz' bzr_2.7.0+bzr6622.orig.tar.gz 10948360 SHA256:08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/bzr/bzr_2.7.0+bzr6622-11.debian.tar.xz' bzr_2.7.0+bzr6622-11.debian.tar.xz 92636 SHA256:7f20acd3fee83519dbd61b330fd7479a5470d46ee62b6b881d4e96d9f70df2ae
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/bzr/2.7.0+bzr6622-11/
+
 
 ### `dpkg` source package: `ca-certificates=20180409`
 
@@ -723,14 +717,9 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.8-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8-1build1.dsc' fftw3_3.3.8-1build1.dsc 2872 SHA256:cdf3745e88a6b89f8fd112a74e3b196d74c06fa74f7a521a84e0cee2dc76164a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8.orig.tar.gz' fftw3_3.3.8.orig.tar.gz 4110137 SHA256:6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.8-1build1.debian.tar.xz' fftw3_3.3.8-1build1.debian.tar.xz 13704 SHA256:4510ebd160e76d9c73f39a72e1f626cfeda4606172d6cbef10eaa7a28b99e342
-```
 
 ### `dpkg` source package: `file=1:5.34-2`
 
@@ -1953,14 +1942,9 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/d
 - `JPEG`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1.5.2-0ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu6.dsc' libjpeg-turbo_1.5.2-0ubuntu6.dsc 2359 SHA256:c462e5a7bd6f8b27b8cc5d64a2055e842c1634f945cf9c3e4bc0631be5085178
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA256:9098943b270388727ae61de82adec73cf9f0dbb240b3bc8b172595ebf405b528
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu6.debian.tar.xz' libjpeg-turbo_1.5.2-0ubuntu6.debian.tar.xz 29480 SHA256:0098a622e16863a74b3ec083aae2e4ebb29284c960d9754442bd5f179da70e86
-```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -3130,15 +3114,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.13-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13-2.dsc' p11-kit_0.23.13-2.dsc 2434 SHA256:19bc875d2c6dfa4704b5b10a50468411ef770b24397a5cc0c3f691aaa6f4d93e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13.orig.tar.gz' p11-kit_0.23.13.orig.tar.gz 1264090 SHA256:aa65403e3ac7c3aba17ca60f28db17b9c76d988b66b91789b8e8c145ae9922f1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13.orig.tar.gz.asc' p11-kit_0.23.13.orig.tar.gz.asc 900 SHA256:a77b0bb4d4f9bf6e3a473163d04b5b9a959324411a1a45167e36f93123b002e2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.13-2.debian.tar.xz' p11-kit_0.23.13-2.debian.tar.xz 22100 SHA256:184c4a469c61a1dfb54d79ab3274eaa74e5a2ed78e257109146bf48bc204ab09
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.23.13-2/
+
 
 ### `dpkg` source package: `pam=1.1.8-3.6ubuntu2`
 
