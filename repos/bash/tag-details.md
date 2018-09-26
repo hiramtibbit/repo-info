@@ -20,7 +20,10 @@
 -	[`bash:4.3.48`](#bash4348)
 -	[`bash:4.4`](#bash44)
 -	[`bash:4.4.23`](#bash4423)
+-	[`bash:5.0-beta`](#bash50-beta)
+-	[`bash:5.0-rc`](#bash50-rc)
 -	[`bash:latest`](#bashlatest)
+-	[`bash:rc`](#bashrc)
 
 ## `bash:3`
 
@@ -6340,6 +6343,14 @@ CMD ["bash"]
 		Size: 341.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `bash:5.0-beta`
+
+**does not exist** (yet?)
+
+## `bash:5.0-rc`
+
+**does not exist** (yet?)
+
 ## `bash:latest`
 
 ```console
@@ -6690,3 +6701,7 @@ CMD ["bash"]
 		Last Modified: Wed, 12 Sep 2018 12:19:53 GMT  
 		Size: 341.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `bash:rc`
+
+**does not exist** (yet?)
