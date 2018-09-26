@@ -151,21 +151,13 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-2.dsc' apr-util_1.6.1-2.dsc 2851 SHA256:7a3a7d0dccc0d89ad751988163cb57d34b32094893d08c4d0ac79e9bfee6d8f4
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2.asc' apr-util_1.6.1.orig.tar.bz2.asc 801 SHA256:47837b605290c0d7659b73734e4a9d5e6c0c24c13185cd4d91837afe63c07ca4
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-2.debian.tar.xz' apr-util_1.6.1-2.debian.tar.xz 211832 SHA256:e30e919e7e049a8a7056b7184e77d69b82660d71a4bf9654d1c9bfccf2fcde30
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr-util/1.6.1-2/
 
-- https://sources.debian.net/src/apr-util/1.6.1-2/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.6.3-2`
 
@@ -2316,20 +2308,13 @@ Licenses: (parsed from: `/usr/share/doc/libepoxy0/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libepoxy=1.4.3-1
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.4.3-1.dsc' libepoxy_1.4.3-1.dsc 2107 SHA256:896b02444d12e4be1a1aa9582e5227041d595d355cf7ee431833eff0f4207fd2
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.4.3.orig.tar.xz' libepoxy_1.4.3.orig.tar.xz 821560 SHA256:85f3608223106be2bdf8e45eb25c0593904f6f00f40abe9100993f249923a39b
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.4.3-1.debian.tar.xz' libepoxy_1.4.3-1.debian.tar.xz 15900 SHA256:a3f21f10bb7c812630c8f88123e692ddc4bebf0aff5f9250d80afc24a8cc28b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libepoxy/1.4.3-1/
 
-- https://sources.debian.net/src/libepoxy/1.4.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libepoxy/1.4.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libepoxy/1.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17025-1`
 
