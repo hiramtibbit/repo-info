@@ -9,7 +9,7 @@
 ## `alt:latest`
 
 ```console
-$ docker pull alt@sha256:1214faa3d42ca6ccb15b7a06a1f3191b3ce76970587fdab18fb5b62b68031b46
+$ docker pull alt@sha256:fd33c9aec11e87e4fa86f978978169724900f634c3d8a653a2e1a28505cdfd31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -48,35 +48,35 @@ CMD ["/bin/bash"]
 ### `alt:latest` - linux; 386
 
 ```console
-$ docker pull alt@sha256:72195e6390b17d6e3b28864db6de839affa00ec105c890f17c0fd48f107bbbf3
+$ docker pull alt@sha256:6270745369220213c0829fb20d2e8e13bfd5577ea317c6976993e22bfdbec2ed
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40760869 bytes)**  
+-	Total Size: **41.1 MB (41117674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4d8b8ce3aa94bb56a0003203abc1391c067d18b344d9c0f3ef3543cb7d0fe97`
+-	Image ID: `sha256:1cab7f3497d91f5f254ef073fef5439856386de215004c2f81ce31fe2939925f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 31 Jul 2018 10:41:25 GMT
-MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>]
-# Tue, 31 Jul 2018 10:41:33 GMT
-ADD file:579d522f718ae27b9812143c16184c7d2ac49a3b545a74023c8cbe01cf4df9fa in / 
-# Tue, 31 Jul 2018 10:41:33 GMT
+# Thu, 27 Sep 2018 10:38:37 GMT
+MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
+# Thu, 27 Sep 2018 10:38:43 GMT
+ADD file:557918fb1d02f2f843d6bbb543fd0f1e28d099fef32b7e6ee4e1e431ab4a48e7 in / 
+# Thu, 27 Sep 2018 10:38:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f7ec1813e376506fea02f70e3f0707fad408d86df78e5afd94af585b49087b6d`  
-		Last Modified: Tue, 31 Jul 2018 10:42:49 GMT  
-		Size: 40.8 MB (40760869 bytes)  
+	-	`sha256:c3f6c058d155587442d122dd2f0d9238906a430dfaf5b79e005a7a7b77bae744`  
+		Last Modified: Thu, 27 Sep 2018 10:39:23 GMT  
+		Size: 41.1 MB (41117674 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `alt:p8`
 
 ```console
-$ docker pull alt@sha256:1214faa3d42ca6ccb15b7a06a1f3191b3ce76970587fdab18fb5b62b68031b46
+$ docker pull alt@sha256:fd33c9aec11e87e4fa86f978978169724900f634c3d8a653a2e1a28505cdfd31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,35 +115,35 @@ CMD ["/bin/bash"]
 ### `alt:p8` - linux; 386
 
 ```console
-$ docker pull alt@sha256:72195e6390b17d6e3b28864db6de839affa00ec105c890f17c0fd48f107bbbf3
+$ docker pull alt@sha256:6270745369220213c0829fb20d2e8e13bfd5577ea317c6976993e22bfdbec2ed
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40760869 bytes)**  
+-	Total Size: **41.1 MB (41117674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4d8b8ce3aa94bb56a0003203abc1391c067d18b344d9c0f3ef3543cb7d0fe97`
+-	Image ID: `sha256:1cab7f3497d91f5f254ef073fef5439856386de215004c2f81ce31fe2939925f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 31 Jul 2018 10:41:25 GMT
-MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>]
-# Tue, 31 Jul 2018 10:41:33 GMT
-ADD file:579d522f718ae27b9812143c16184c7d2ac49a3b545a74023c8cbe01cf4df9fa in / 
-# Tue, 31 Jul 2018 10:41:33 GMT
+# Thu, 27 Sep 2018 10:38:37 GMT
+MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
+# Thu, 27 Sep 2018 10:38:43 GMT
+ADD file:557918fb1d02f2f843d6bbb543fd0f1e28d099fef32b7e6ee4e1e431ab4a48e7 in / 
+# Thu, 27 Sep 2018 10:38:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f7ec1813e376506fea02f70e3f0707fad408d86df78e5afd94af585b49087b6d`  
-		Last Modified: Tue, 31 Jul 2018 10:42:49 GMT  
-		Size: 40.8 MB (40760869 bytes)  
+	-	`sha256:c3f6c058d155587442d122dd2f0d9238906a430dfaf5b79e005a7a7b77bae744`  
+		Last Modified: Thu, 27 Sep 2018 10:39:23 GMT  
+		Size: 41.1 MB (41117674 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:ef6566f3ec42782cc628390db7068957f53f0a282973c63e070abec5e54de2ee
+$ docker pull alt@sha256:b007c12d48c663cf9c7b9674951a0ea8216123481a06fa5a443ce20f7c320e34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -211,27 +211,27 @@ CMD ["/bin/bash"]
 ### `alt:sisyphus` - linux; 386
 
 ```console
-$ docker pull alt@sha256:0cecf65b65bdeeaa92bcc8ee6de54fabf98c908509fa653d3e3127cdc9a1addd
+$ docker pull alt@sha256:d594817dff9ca83bb90d47ab1e327b074fcd061e2921a4c1d944df5a2f73a5e4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42186566 bytes)**  
+-	Total Size: **42.8 MB (42844934 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca28debafd3f61c6ffaa23792eb4978193e0ca07845bd4e34c55a319716116f7`
+-	Image ID: `sha256:77e684500bb67fc65d214f4735c67a9a4848f338b6f88be23d0c733c3e2b0f30`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 31 Jul 2018 10:41:25 GMT
-MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>]
-# Tue, 31 Jul 2018 10:42:12 GMT
-ADD file:b12e0d64bb833dd8f8eb73bf9d7d7a6c8de87a76ee50c104c5a9caaee51073e8 in / 
-# Tue, 31 Jul 2018 10:42:12 GMT
+# Thu, 27 Sep 2018 10:38:37 GMT
+MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
+# Thu, 27 Sep 2018 10:39:02 GMT
+ADD file:3b71b9963d5b270ef50af569d47b393e70af6f8706df0c46bcf789fac1f300e2 in / 
+# Thu, 27 Sep 2018 10:39:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:8b796b10c3dac93024f2191bb846568af71c21869eb859f538f7ea7aca6b7b25`  
-		Last Modified: Tue, 31 Jul 2018 10:44:02 GMT  
-		Size: 42.2 MB (42186566 bytes)  
+	-	`sha256:3bb66f5f1ff349783c2cdab2cc8155c61a65ca002c9103afa80a76d8639a014c`  
+		Last Modified: Thu, 27 Sep 2018 10:39:51 GMT  
+		Size: 42.8 MB (42844934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
