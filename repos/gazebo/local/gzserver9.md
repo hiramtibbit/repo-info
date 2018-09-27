@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31aacbffbbcee63e7068b90c30657a2badf0e00a27f49f66d4b8756c1cbcd678`
-- Created: `2018-09-05T23:41:31.246899614Z`
-- Virtual Size: ~ 740.50 Mb  
+- Image ID: `sha256:dc8de52af29960d1f457b581236be1b09d8728282794ac6427fb145bdbe8fadd`
+- Created: `2018-09-24T22:29:36.330769857Z`
+- Virtual Size: ~ 740.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -297,13 +297,13 @@ $ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
 ```
 
-### `dpkg` source package: `avahi=0.7-3.1ubuntu1`
+### `dpkg` source package: `avahi=0.7-3.1ubuntu1.1`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.7-3.1ubuntu1`
-- `libavahi-common-data:amd64=0.7-3.1ubuntu1`
-- `libavahi-common3:amd64=0.7-3.1ubuntu1`
+- `libavahi-client3:amd64=0.7-3.1ubuntu1.1`
+- `libavahi-common-data:amd64=0.7-3.1ubuntu1.1`
+- `libavahi-common3:amd64=0.7-3.1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -314,10 +314,10 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris avahi=0.7-3.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.dsc' avahi_0.7-3.1ubuntu1.dsc 4162 SHA256:6fd0eaaaf5c1f1dffc3362ff6d8e9d10825b22fcfc1f482f46645e78f7331c94
+$ apt-get source -qq --print-uris avahi=0.7-3.1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.1.dsc' avahi_0.7-3.1ubuntu1.1.dsc 4202 SHA256:11fdad4b4ca493ea1e63c88a7ceb35c8b6c0da5ec8ff90077b6d473651a6180a
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7.orig.tar.gz' avahi_0.7.orig.tar.gz 1333400 SHA256:57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.debian.tar.xz' avahi_0.7-3.1ubuntu1.debian.tar.xz 34228 SHA256:5c2e90652dd1db596176c0227b50e6eb4d2a2e6f4351f6a08a63e3422ebb8b68
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.1.debian.tar.xz' avahi_0.7-3.1ubuntu1.1.debian.tar.xz 34408 SHA256:21f22a4d36f2b620bf55c039ed40a62a35ca029fe228959f2baa58c21484b6a4
 ```
 
 ### `dpkg` source package: `base-files=10.1ubuntu2.2`
@@ -637,12 +637,12 @@ $ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.1.debian.tar.xz' cups_2.2.7-1ubuntu2.1.debian.tar.xz 358328 SHA256:096f140d5a4f2b47a8398af0df140498ef6481e0d8cd19d55f91e1a326646425
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.2`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.3`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.2`
-- `libcurl4:amd64=7.58.0-2ubuntu3.2`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.3`
+- `libcurl4:amd64=7.58.0-2ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -653,9 +653,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.3.dsc' curl_7.58.0-2ubuntu3.3.dsc 2761 SHA256:fecca4991eb1008580cf182a0bb40b88e586dd99a065872bed0eea81597e0517
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.3.debian.tar.xz' curl_7.58.0-2ubuntu3.3.debian.tar.xz 36324 SHA256:3ca366646b98a10e3646670c83f5ce4670d6ec47c0015aecd14b4ed60f67f701
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -1289,14 +1294,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo9=9.3.1-1~bionic`
+### `dpkg` source package: `gazebo9=9.4.1-1~bionic`
 
 Binary Packages:
 
-- `gazebo9=9.3.1-1~bionic`
-- `gazebo9-common=9.3.1-1~bionic`
-- `gazebo9-plugin-base=9.3.1-1~bionic`
-- `libgazebo9:amd64=9.3.1-1~bionic`
+- `gazebo9=9.4.1-1~bionic`
+- `gazebo9-common=9.4.1-1~bionic`
+- `gazebo9-plugin-base=9.4.1-1~bionic`
+- `libgazebo9:amd64=9.4.1-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -1511,12 +1516,12 @@ $ apt-get source -qq --print-uris glib-networking=2.56.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib-networking/glib-networking_2.56.0-1.debian.tar.xz' glib-networking_2.56.0-1.debian.tar.xz 7972 SHA256:d7508951b05952bea47dbbee1ddb6433b96875fc7801a9d9c47fcc256041dadd
 ```
 
-### `dpkg` source package: `glib2.0=2.56.1-2ubuntu1`
+### `dpkg` source package: `glib2.0=2.56.2-0ubuntu0.18.04.2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.56.1-2ubuntu1`
-- `libglib2.0-data=2.56.1-2ubuntu1`
+- `libglib2.0-0:amd64=2.56.2-0ubuntu0.18.04.2`
+- `libglib2.0-data=2.56.2-0ubuntu0.18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -1525,10 +1530,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.56.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.1-2ubuntu1.dsc' glib2.0_2.56.1-2ubuntu1.dsc 3414 SHA256:a6fb93181d5c26b31896a03c68a2e149241cff48f4561d46ebf207b43190cdde
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.1.orig.tar.xz' glib2.0_2.56.1.orig.tar.xz 8028716 SHA256:40ef3f44f2c651c7a31aedee44259809b6f03d3d20be44545cd7d177221c0b8d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.1-2ubuntu1.debian.tar.xz' glib2.0_2.56.1-2ubuntu1.debian.tar.xz 79432 SHA256:a9f07ab2bf8d43e154eafe55739b157b96dfff39ca19f44265e1f38e0322863e
+$ apt-get source -qq --print-uris glib2.0=2.56.2-0ubuntu0.18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.dsc' glib2.0_2.56.2-0ubuntu0.18.04.2.dsc 3567 SHA256:4e24f344e94881d6a7476d170747cabb1ea871ce8e4afe2d9812ec270e4c0a95
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2.orig.tar.xz' glib2.0_2.56.2.orig.tar.xz 8041756 SHA256:d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz' glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz 80444 SHA256:4aff5b11aa5f632161d4045aff4f8f1e3f616976060139354bef617817891346
 ```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
@@ -2291,11 +2296,11 @@ $ apt-get source -qq --print-uris lapack=3.7.1-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.7.1-4ubuntu1.debian.tar.xz' lapack_3.7.1-4ubuntu1.debian.tar.xz 20956 SHA256:0b981a911d7a8cde6b1addd3d823be88d29807f50c19e71e1a8a233e469c3a6d
 ```
 
-### `dpkg` source package: `lcms2=2.9-1`
+### `dpkg` source package: `lcms2=2.9-1ubuntu0.1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.9-1`
+- `liblcms2-2:amd64=2.9-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -2306,10 +2311,10 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.9-1.dsc' lcms2_2.9-1.dsc 1985 SHA256:6c47df15d0a6434d33a48a2232ed9b59dac8840fac106ae7570fabcfef44380f
+$ apt-get source -qq --print-uris lcms2=2.9-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.9-1ubuntu0.1.dsc' lcms2_2.9-1ubuntu0.1.dsc 2084 SHA256:aac9c6cc63af8c4587ff51c7b69babe48d8283181818934639a3bd958e4145cb
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.9.orig.tar.gz' lcms2_2.9.orig.tar.gz 10974649 SHA256:48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.9-1.debian.tar.xz' lcms2_2.9-1.debian.tar.xz 10040 SHA256:e2a48d8d302fc85f14439b67c9f66f341453558a16cef1991096b3acfe618b13
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.9-1ubuntu0.1.debian.tar.xz' lcms2_2.9-1ubuntu0.1.debian.tar.xz 10680 SHA256:b541cee04359249b80f3313522f1ff5d9175e787e0320a510fac7cd4640a5bfc
 ```
 
 ### `dpkg` source package: `libaacs=0.9.0-1`
@@ -2917,14 +2922,14 @@ $ apt-get source -qq --print-uris libglu=9.0.0-2.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglu/libglu_9.0.0-2.1build1.diff.gz' libglu_9.0.0-2.1build1.diff.gz 14740 SHA256:823038bcb4418ae2756d2bbd4c9b9a90d2997806ebcfe6460cffa688cf1b8ede
 ```
 
-### `dpkg` source package: `libglvnd=1.0.0-2ubuntu2.1`
+### `dpkg` source package: `libglvnd=1.0.0-2ubuntu2.2`
 
 Binary Packages:
 
-- `libegl1:amd64=1.0.0-2ubuntu2.1`
-- `libgl1:amd64=1.0.0-2ubuntu2.1`
-- `libglvnd0:amd64=1.0.0-2ubuntu2.1`
-- `libglx0:amd64=1.0.0-2ubuntu2.1`
+- `libegl1:amd64=1.0.0-2ubuntu2.2`
+- `libgl1:amd64=1.0.0-2ubuntu2.2`
+- `libglvnd0:amd64=1.0.0-2ubuntu2.2`
+- `libglx0:amd64=1.0.0-2ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx0/copyright`)
 
@@ -2934,9 +2939,14 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libglvnd=1.0.0-2ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.2.dsc' libglvnd_1.0.0-2ubuntu2.2.dsc 2435 SHA256:2c009014177905e98de33f6aa67ff5e4f4faa71732c1893c63dc69b8a8506e61
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0.orig.tar.gz' libglvnd_1.0.0.orig.tar.gz 795552 SHA256:d1cb238081f8fc708178f21e7e6b33a009c0807eae7a11b790146043f6e8eea5
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd_1.0.0-2ubuntu2.2.debian.tar.xz' libglvnd_1.0.0-2ubuntu2.2.debian.tar.xz 21048 SHA256:be975fd04b74904ed4cf0d878f811030f3f1ecc1e19cefd9f6c2d2e88b08c776
+```
 
 ### `dpkg` source package: `libgpg-error=1.27-6`
 

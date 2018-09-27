@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:737bed5767b2c54c38f7d69550e473ccf954f65cd3105c072eed633c2f9f0f57`
-- Created: `2018-09-05T23:37:24.342985441Z`
-- Virtual Size: ~ 680.93 Mb  
+- Image ID: `sha256:00ad65f5460759f6bcd795e0d813f2d80890809346f86dc49b349cda139256ca`
+- Created: `2018-09-24T22:22:24.796186883Z`
+- Virtual Size: ~ 681.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -490,12 +490,12 @@ $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.5.debian.tar.xz' cups_2.1.3-4ubuntu0.5.debian.tar.xz 352280 SHA256:74b49c9d4c2d0ce61149a42140afb89edc25beb18402fed7cc3a7748ce525b8b
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.8`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.9`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.8`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.8`
+- `libcurl3:amd64=7.47.0-1ubuntu2.9`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.9`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -506,9 +506,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.dsc' curl_7.47.0-1ubuntu2.9.dsc 2713 SHA256:c2a3f53e058b5acecc69158fd624559feabb7d336447fa701efd1c784fb27805
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.debian.tar.xz' curl_7.47.0-1ubuntu2.9.debian.tar.xz 52008 SHA256:2ab4a4d6d5b3796d663355d47f62da7b1e8d295ef4f9d43ea7fc56c3bc260dfa
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -1074,14 +1079,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.0-3ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz' game-music-emu_0.6.0-3ubuntu0.16.04.1.debian.tar.xz 5592 SHA256:a4d7a4f5d9df23098abc4c1fe82696ed8f93d893c50bb8fc14a4de84e705810d
 ```
 
-### `dpkg` source package: `gazebo9=9.3.1-1~xenial`
+### `dpkg` source package: `gazebo9=9.4.1-1~xenial`
 
 Binary Packages:
 
-- `gazebo9=9.3.1-1~xenial`
-- `gazebo9-common=9.3.1-1~xenial`
-- `gazebo9-plugin-base=9.3.1-1~xenial`
-- `libgazebo9:amd64=9.3.1-1~xenial`
+- `gazebo9=9.4.1-1~xenial`
+- `gazebo9-common=9.4.1-1~xenial`
+- `gazebo9-plugin-base=9.4.1-1~xenial`
+- `libgazebo9:amd64=9.4.1-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -1244,20 +1249,25 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `glib2.0=2.48.2-0ubuntu4`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu4.1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.2-0ubuntu4`
-- `libglib2.0-data=2.48.2-0ubuntu4`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu4.1`
+- `libglib2.0-data=2.48.2-0ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.dsc' glib2.0_2.48.2-0ubuntu4.1.dsc 3157 SHA256:9665fd4be0c6848584e830c240206ee3a3ca8f8297ef4106587597b818414552
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz 71256 SHA256:280d06a688aef975b08dabb5420662761fe97869ce98afe1c22870cad080e196
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
@@ -1957,11 +1967,11 @@ $ apt-get source -qq --print-uris lapack=3.6.0-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.6.0-2ubuntu2.debian.tar.xz' lapack_3.6.0-2ubuntu2.debian.tar.xz 24556 SHA256:a713e29f24fca14d59937595a54f03cf0479416188c5911d5220f61299f31c47
 ```
 
-### `dpkg` source package: `lcms2=2.6-3ubuntu2`
+### `dpkg` source package: `lcms2=2.6-3ubuntu2.1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.6-3ubuntu2`
+- `liblcms2-2:amd64=2.6-3ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1972,10 +1982,10 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.6-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.dsc' lcms2_2.6-3ubuntu2.dsc 1557 SHA256:37064e27fe6a655613d88bcb47c7ed9f09817483d550f682c72b1340101da84c
+$ apt-get source -qq --print-uris lcms2=2.6-3ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.1.dsc' lcms2_2.6-3ubuntu2.1.dsc 2203 SHA256:2f6dbceb336dbba9a95c87df41175cfa44d045c82edc731fd7406936c0a97bd0
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.debian.tar.xz' lcms2_2.6-3ubuntu2.debian.tar.xz 2417052 SHA256:fd54e8a2950e8d61b245f6762bb17e503364cb1c5aa39bfa11438a28eb4cb247
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.1.debian.tar.xz' lcms2_2.6-3ubuntu2.1.debian.tar.xz 2417988 SHA256:74d3f20d1e8937bee6db0a5496a7a7e434ed2c6af6850483f70f9a3ef8515a2b
 ```
 
 ### `dpkg` source package: `libaacs=0.8.1-1`
@@ -4331,12 +4341,12 @@ $ apt-get source -qq --print-uris openal-soft=1:1.16.0-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/openal-soft_1.16.0-3.debian.tar.xz' openal-soft_1.16.0-3.debian.tar.xz 12520 SHA256:3351735b5ac97b464c79cca06a94a5045746e60afd7a59a75abe0403cf8a0aae
 ```
 
-### `dpkg` source package: `opencv=2.4.9.1+dfsg-1.5ubuntu1`
+### `dpkg` source package: `opencv=2.4.9.1+dfsg-1.5ubuntu1.1`
 
 Binary Packages:
 
-- `libopencv-core2.4v5:amd64=2.4.9.1+dfsg-1.5ubuntu1`
-- `libopencv-imgproc2.4v5:amd64=2.4.9.1+dfsg-1.5ubuntu1`
+- `libopencv-core2.4v5:amd64=2.4.9.1+dfsg-1.5ubuntu1.1`
+- `libopencv-imgproc2.4v5:amd64=2.4.9.1+dfsg-1.5ubuntu1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4345,10 +4355,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris opencv=2.4.9.1+dfsg-1.5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.9.1+dfsg-1.5ubuntu1.dsc' opencv_2.4.9.1+dfsg-1.5ubuntu1.dsc 5719 SHA256:b6678b4d36bb6768f90a8f800018acf9c3bf1dabc5f9184b08e42509c0232d15
+$ apt-get source -qq --print-uris opencv=2.4.9.1+dfsg-1.5ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.9.1+dfsg-1.5ubuntu1.1.dsc' opencv_2.4.9.1+dfsg-1.5ubuntu1.1.dsc 6107 SHA256:e517f6af2a31a02c81e972cb28b321acfe48b101cbb9bca6681e9dccbadce784
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.9.1+dfsg.orig.tar.xz' opencv_2.4.9.1+dfsg.orig.tar.xz 55863896 SHA256:aade3b475cc1a9c53076dbcfa0da5aa452733bfeec6bc54dae4d9c4e229594ea
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.9.1+dfsg-1.5ubuntu1.debian.tar.xz' opencv_2.4.9.1+dfsg-1.5ubuntu1.debian.tar.xz 33892 SHA256:8ed4667311084ce3c608b37fec052346642da580d1d097917bcb9afd3e7d820f
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.9.1+dfsg-1.5ubuntu1.1.debian.tar.xz' opencv_2.4.9.1+dfsg-1.5ubuntu1.1.debian.tar.xz 42700 SHA256:19cdda618be7aec8bc0fce5802bc0728666e611068ebc812499e6bc2c3bd1353
 ```
 
 ### `dpkg` source package: `openexr=2.2.0-10ubuntu2`
