@@ -1,7 +1,7 @@
 ## `yourls:apache`
 
 ```console
-$ docker pull yourls@sha256:b28834487affde84f62f2405be479b80f49b729a271d9f6e9e0fbb0b73271939
+$ docker pull yourls@sha256:d2dbb2d8c13dc926b6fead47278d4fe3ec15301e70aab331e596406057998c54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull yourls@sha256:b28834487affde84f62f2405be479b80f49b729a271d9f6e9e0f
 ### `yourls:apache` - linux; amd64
 
 ```console
-$ docker pull yourls@sha256:4d71c28329560941845c08b3da7a875ea56da524f67e881054c9fbe662d9a091
+$ docker pull yourls@sha256:27b40ca78850bb2049f725ace18613a9974d77f3c8fda8ae2582f50be2d23a20
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.0 MB (137951221 bytes)**  
+-	Total Size: **138.0 MB (137951551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1aab5a3bc2f2a1f0d2e958bd128d55f081ae077f84a078b6a58a80bc3d70b85`
+-	Image ID: `sha256:1003407dca40a59674ae87b74cc67877f3f9e3e74c6803646393c4b47cc6ead8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -105,9 +105,11 @@ RUN set -ex; 	curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/arch
 COPY file:1e7eea4f2ddeb3df609290207510540deddfbdbbf746a9e1d73399adf987c4de in /usr/local/bin/ 
 # Sat, 15 Sep 2018 07:27:26 GMT
 COPY file:2f3fea83dc8aa9715a3101e3e732865663b6868812897892960246ce23641ea7 in /var/www/html/ 
-# Sat, 15 Sep 2018 07:27:26 GMT
+# Fri, 28 Sep 2018 17:20:23 GMT
+COPY file:ca0dc40bc19b5887c59642d8b16d2fc1fc1a1cc300b6552a9931a827e43e0dc9 in /var/www/html/ 
+# Fri, 28 Sep 2018 17:20:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 07:27:27 GMT
+# Fri, 28 Sep 2018 17:20:23 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -195,4 +197,8 @@ CMD ["apache2-foreground"]
 	-	`sha256:ce4669c9eb63b83e4555cd585f2f37c7fc87d0e81b461a7c60deebd65c8d3e34`  
 		Last Modified: Sat, 15 Sep 2018 07:30:07 GMT  
 		Size: 1.8 KB (1815 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0830a52d133b330d6049864042fa9268cb1de626fc14be3e1da38e794180527`  
+		Last Modified: Fri, 28 Sep 2018 17:20:43 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
