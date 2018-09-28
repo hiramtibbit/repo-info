@@ -1,7 +1,7 @@
 ## `openjdk:11-jre-slim-sid`
 
 ```console
-$ docker pull openjdk@sha256:21aaebaa9493b8706a614117e2ceabc603f6a8aa2c2474b07b0ade391828d85a
+$ docker pull openjdk@sha256:a2d296fc23a366a52cab9ae25fff04b4a16fa1b2869769cd9c70b145d0afab93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull openjdk@sha256:21aaebaa9493b8706a614117e2ceabc603f6a8aa2c2474b07b0
 ### `openjdk:11-jre-slim-sid` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:eee7921645a112f5b1018a85844438af4518679f29c8b3653bbdae855d8d8d6a
+$ docker pull openjdk@sha256:ab5e166c5203548a56dde0ea936493edf957eb892d2a38faf8db86c16be8c9fc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.3 MB (102272941 bytes)**  
+-	Total Size: **102.5 MB (102481699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:422e4d3c11a7e7c29aa88fffeac0e0a6d5b50ed3401a9c6a15e255029f9a8303`
+-	Image ID: `sha256:6c3236e75f7afdb91f4f49848babab06c5e5cb80fff546c94b0b9e9673bdb216`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -42,11 +42,11 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Wed, 05 Sep 2018 01:15:52 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 07 Sep 2018 19:34:20 GMT
-ENV JAVA_VERSION=11-ea+28
-# Fri, 07 Sep 2018 19:34:20 GMT
-ENV JAVA_DEBIAN_VERSION=11~28-1
-# Fri, 07 Sep 2018 19:37:25 GMT
+# Fri, 28 Sep 2018 18:24:19 GMT
+ENV JAVA_VERSION=11
+# Fri, 28 Sep 2018 18:24:20 GMT
+ENV JAVA_DEBIAN_VERSION=11~28-2
+# Fri, 28 Sep 2018 18:26:40 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -67,9 +67,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Wed, 05 Sep 2018 01:32:24 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bcced24cc54b827ef4a527a11ca088e293119846ba4f1a598426c5efb42d3d0`  
-		Last Modified: Fri, 07 Sep 2018 19:43:16 GMT  
-		Size: 75.5 MB (75542279 bytes)  
+	-	`sha256:dd992c6c0ffbe2da21430ad292c620a004a9cede6aca40f8fa1fa6e5a31aecbf`  
+		Last Modified: Fri, 28 Sep 2018 18:34:46 GMT  
+		Size: 75.8 MB (75751037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:11-jre-slim-sid` - linux; arm variant v5
