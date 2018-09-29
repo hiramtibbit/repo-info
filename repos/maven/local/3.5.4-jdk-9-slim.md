@@ -2155,20 +2155,13 @@ Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris psmisc=23.1-1
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1-1.dsc' psmisc_23.1-1.dsc 1693 SHA256:1a69dc469a783320ce74f7365cb4c7655f038e31d54771e8ffba623e5a735bcc
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1.orig.tar.xz' psmisc_23.1.orig.tar.xz 291480 SHA256:561c6a87c4d8eadd5b5338aed7be8620c5634f6cb6730c11383cf75c712255c0
-'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.1-1.debian.tar.xz' psmisc_23.1-1.debian.tar.xz 6668 SHA256:b6d8f0bd163c5b1f020e44cbd04d7f0b57858667915a271876a351deb923825e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/psmisc/23.1-1/
 
-- https://sources.debian.net/src/psmisc/23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/psmisc/23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/psmisc/23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `publicsuffix=20180523.2326-2`
 
