@@ -306,9 +306,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.30-20ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-20ubuntu2~18.04.dsc' binutils_2.30-20ubuntu2~18.04.dsc 11576 SHA256:adb68a8ce7eff117901a3f765191b14abf8000a0bf57da5e2c0ead4d64b79c05
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-20ubuntu2~18.04.debian.tar.xz' binutils_2.30-20ubuntu2~18.04.debian.tar.xz 555728 SHA256:de51249267769e2672e89764596eb11f2d914f4586941829975a5c37c1c549f9
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-20ubuntu2~18.04.dsc' binutils_2.30-20ubuntu2~18.04.dsc 11576 SHA256:adb68a8ce7eff117901a3f765191b14abf8000a0bf57da5e2c0ead4d64b79c05
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-20ubuntu2~18.04.debian.tar.xz' binutils_2.30-20ubuntu2~18.04.debian.tar.xz 555728 SHA256:de51249267769e2672e89764596eb11f2d914f4586941829975a5c37c1c549f9
 ```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
