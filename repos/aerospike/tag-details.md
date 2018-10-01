@@ -4,7 +4,7 @@
 
 -	[`aerospike:3.13.0.11`](#aerospike313011)
 -	[`aerospike:4.1.0.6`](#aerospike4106)
--	[`aerospike:4.3.0.7`](#aerospike4307)
+-	[`aerospike:4.3.0.8`](#aerospike4308)
 -	[`aerospike:latest`](#aerospikelatest)
 
 ## `aerospike:3.13.0.11`
@@ -165,72 +165,9 @@ CMD ["asd"]
 		Size: 883.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `aerospike:4.3.0.7`
+## `aerospike:4.3.0.8`
 
-```console
-$ docker pull aerospike@sha256:be20605233b212915afbe4c60dd4b468491268c1c69c0b58527b02676690991f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `aerospike:4.3.0.7` - linux; amd64
-
-```console
-$ docker pull aerospike@sha256:83d24da149c8f1c5c1ae6315b2abe66a859cd5f9c078f0ffc78fb1a497a9f397
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.7 MB (53741683 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2882c984da766020e2950cdc2ce1ba954f49b1fc5ee081fcd5ec5cca1c36655a`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["asd"]`
-
-```dockerfile
-# Tue, 04 Sep 2018 21:21:34 GMT
-ADD file:e6ca98733431f75e97eb09758ba64065d213d51bd2070a95cf15f2ff5adccfc4 in / 
-# Tue, 04 Sep 2018 21:21:34 GMT
-CMD ["bash"]
-# Tue, 11 Sep 2018 21:19:52 GMT
-ENV AEROSPIKE_VERSION=4.3.0.7
-# Tue, 11 Sep 2018 21:19:53 GMT
-ENV AEROSPIKE_SHA256=7586e21fc9c53a152cdd58fb39e9d073ebc71d2898f6e134ae3b1b2deae44022
-# Tue, 11 Sep 2018 21:20:08 GMT
-RUN apt-get update -y   && apt-get install -y wget python lua5.2 gettext-base   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian9.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y
-# Tue, 11 Sep 2018 21:20:08 GMT
-COPY file:92f154ac5768cc66c29bd7ca3d00a0fe0ae8d08f1d309fdcda8bf66d4c73cadd in /etc/aerospike/aerospike.template.conf 
-# Tue, 11 Sep 2018 21:20:08 GMT
-COPY file:7eece3188902a85a78ecb96d2ec561fce45fa1728926bc66f3903d6955630907 in /entrypoint.sh 
-# Tue, 11 Sep 2018 21:20:08 GMT
-VOLUME [/opt/aerospike/data]
-# Tue, 11 Sep 2018 21:20:08 GMT
-EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Tue, 11 Sep 2018 21:20:09 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 11 Sep 2018 21:20:09 GMT
-CMD ["asd"]
-```
-
--	Layers:
-	-	`sha256:802b00ed6f79f48e6a5f44ecbcaf43563d6077aaecb565eee1dfc615c0b18c00`  
-		Last Modified: Tue, 04 Sep 2018 21:25:45 GMT  
-		Size: 22.5 MB (22485965 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1328cd8973277187b8026879c3e7b2ed5a397f914d598dc9b72969db7c88acd2`  
-		Last Modified: Tue, 11 Sep 2018 21:20:40 GMT  
-		Size: 31.3 MB (31253728 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30a7e8e2d016c3735b035f2b06c37eb037b10ec7044d2d0d02b291afb5cf4c15`  
-		Last Modified: Tue, 11 Sep 2018 21:20:35 GMT  
-		Size: 1.1 KB (1105 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d154b31f1b9619f377ab333252e2b58c318878cb207071613abb4c15c5e8a708`  
-		Last Modified: Tue, 11 Sep 2018 21:20:35 GMT  
-		Size: 885.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `aerospike:latest`
 
