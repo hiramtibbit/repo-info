@@ -1,7 +1,7 @@
 ## `redmine:3-passenger`
 
 ```console
-$ docker pull redmine@sha256:8551a67186d7df85b61f89022029f831eef2989d779f386f9062323f9aaf1621
+$ docker pull redmine@sha256:65fe37c371d0851fd0c46a588053a520fdab1c658890f48b11952037a144e10e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull redmine@sha256:8551a67186d7df85b61f89022029f831eef2989d779f386f906
 ### `redmine:3-passenger` - linux; amd64
 
 ```console
-$ docker pull redmine@sha256:20781dcf3e338cb6ef5996ea323aa91796f20f4660cbf418ce9fdb37c5c271ac
+$ docker pull redmine@sha256:3bdb8e66c5c7b998aa0a564651c318c08656f8662b5615f9d447651681c09c23
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **316.3 MB (316320607 bytes)**  
+-	Total Size: **316.3 MB (316321156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801a2721cf817cfec760cd52f10ef3df09cbd3152681c7a85541c7803a28f758`
+-	Image ID: `sha256:120ae2b5f1bfebd6d9de0edee129d404c62659158a7cc4809c23ca230ebfa7d8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -73,21 +73,21 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Thu, 20 Sep 2018 22:36:39 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 20 Sep 2018 22:36:39 GMT
-COPY file:8064eeba1336402e59165b07c73d0734f58aa7e83e3c0a42b6888098f2e2c11d in / 
-# Thu, 20 Sep 2018 22:36:39 GMT
+# Tue, 02 Oct 2018 18:21:29 GMT
+COPY file:fc148119ccb9e484870c0b5926b68fb1ea903c3ded95d8f91ae4bd3783cd9d9a in / 
+# Tue, 02 Oct 2018 18:21:29 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 20 Sep 2018 22:36:39 GMT
+# Tue, 02 Oct 2018 18:21:30 GMT
 EXPOSE 3000/tcp
-# Thu, 20 Sep 2018 22:36:40 GMT
+# Tue, 02 Oct 2018 18:21:30 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
-# Wed, 26 Sep 2018 00:35:11 GMT
+# Tue, 02 Oct 2018 18:21:38 GMT
 ENV PASSENGER_VERSION=5.3.5
-# Wed, 26 Sep 2018 00:35:23 GMT
+# Tue, 02 Oct 2018 18:21:50 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Sep 2018 00:35:25 GMT
+# Tue, 02 Oct 2018 18:21:51 GMT
 RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
-# Wed, 26 Sep 2018 00:35:26 GMT
+# Tue, 02 Oct 2018 18:21:52 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -136,15 +136,15 @@ CMD ["passenger" "start"]
 		Last Modified: Thu, 20 Sep 2018 22:42:03 GMT  
 		Size: 124.9 MB (124881280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d9b0de7215d762bdcabdcf7a6b35b480663ec4459df3fe34e785fc059631f1f`  
-		Last Modified: Thu, 20 Sep 2018 22:41:42 GMT  
-		Size: 1.8 KB (1792 bytes)  
+	-	`sha256:cd75beb414352284591925f13f7d17f4bcfa8840f31fd57153f52bbebdab7139`  
+		Last Modified: Tue, 02 Oct 2018 18:22:39 GMT  
+		Size: 1.8 KB (1820 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e8956f4c53ecaa327e50c9aca38bc789b38db69bb8f328eeb04ed6b33011d50`  
-		Last Modified: Wed, 26 Sep 2018 00:36:08 GMT  
-		Size: 19.1 MB (19115684 bytes)  
+	-	`sha256:d6ae611cc8559b3fb6b1e09291816bf1fd9ee33dd698ff5136bda3cef2758f78`  
+		Last Modified: Tue, 02 Oct 2018 18:23:30 GMT  
+		Size: 19.1 MB (19116204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1ff23cb6ab9d80dee76875406d8884eb07a1ada857c09eab7fb1ca6cc1fabe`  
-		Last Modified: Wed, 26 Sep 2018 00:36:04 GMT  
-		Size: 4.4 MB (4447460 bytes)  
+	-	`sha256:b2e204b9d2568f91c009e7d975a30d78f77e85c8301326a56e9a946cd85f54b7`  
+		Last Modified: Tue, 02 Oct 2018 18:23:28 GMT  
+		Size: 4.4 MB (4447461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `ghost:1-alpine`
 
 ```console
-$ docker pull ghost@sha256:f6cd9334ab746abeb2b6af1221d1eadc93163aba38052fd3443c717ad332fc2c
+$ docker pull ghost@sha256:8dbc8ed0df2f0c5f8c908d1d9788330fb12ed44343822e508295bd9587e68e32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ghost@sha256:f6cd9334ab746abeb2b6af1221d1eadc93163aba38052fd3443c7
 ### `ghost:1-alpine` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:f7aa72edd7e84f5a208e6c5fe8e33d031491ee21ba650b9d98d0c776c597d83e
+$ docker pull ghost@sha256:482873b7bba42cfb2f8f49d8a169b3e7e6f336531c60546e0e593bad08fa5442
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.1 MB (143132182 bytes)**  
+-	Total Size: **143.1 MB (143132202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d91fb227bb9541790bf862903210c3166773b6e2cb7c33d90e1e5a32067470d`
+-	Image ID: `sha256:a1f65c46c1ab2df7d397791ee684fe6c9557adb3949e8f6056e0b13b678e3cae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -63,13 +63,13 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/g
 WORKDIR /var/lib/ghost
 # Sat, 15 Sep 2018 01:23:27 GMT
 VOLUME [/var/lib/ghost/content]
-# Sat, 15 Sep 2018 01:23:28 GMT
-COPY file:fe4f8ce065580d78daf2ea3ae3ab9174f3edd7740df8b95889926dc1cdfe77b0 in /usr/local/bin 
-# Sat, 15 Sep 2018 01:23:28 GMT
+# Tue, 02 Oct 2018 17:24:32 GMT
+COPY file:ec5f0dc0340c44f728261188497016ebbb720b84d4de7a293d7d96e1d7c20c56 in /usr/local/bin 
+# Tue, 02 Oct 2018 17:24:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 01:23:28 GMT
+# Tue, 02 Oct 2018 17:24:32 GMT
 EXPOSE 2368/tcp
-# Sat, 15 Sep 2018 01:23:28 GMT
+# Tue, 02 Oct 2018 17:24:33 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -102,9 +102,9 @@ CMD ["node" "current/index.js"]
 		Last Modified: Sat, 15 Sep 2018 01:26:40 GMT  
 		Size: 101.8 MB (101820793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab3160d698a22eb86b73e6386a98d1f64171ede839613777412681f987a74e0f`  
-		Last Modified: Sat, 15 Sep 2018 01:26:22 GMT  
-		Size: 553.0 B  
+	-	`sha256:238526cf95352f9d505e9cf28e293b2bc343ec205da57c9d061c19ae9a160b18`  
+		Last Modified: Tue, 02 Oct 2018 17:27:24 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:1-alpine` - linux; arm variant v6
