@@ -1,10 +1,10 @@
-# `gradle:4.10.2-jre10-slim`
+# `gradle:4.10.2-jre11-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e780ed7b80180168ab4454f0a379be5c51cd4890e37fd5457c69edfdfd781f42`
-- Created: `2018-09-28T19:20:52.903335576Z`
-- Virtual Size: ~ 383.71 Mb  
+- Image ID: `sha256:e36db4c6d7e08ea35f8578be5a102942fb8e206e413f6766214e5f4c6b161480`
+- Created: `2018-10-01T20:24:05.503234684Z`
+- Virtual Size: ~ 371.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=10.0.2`
-  - `JAVA_DEBIAN_VERSION=10.0.2+13-1`
+  - `JAVA_VERSION=11`
+  - `JAVA_DEBIAN_VERSION=11~28-2`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=4.10.2`
 
@@ -62,6 +62,33 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/adduser/3.117/
 
+
+### `dpkg` source package: `alsa-lib=1.1.6-1`
+
+Binary Packages:
+
+- `libasound2:amd64=1.1.6-1`
+- `libasound2-data=1.1.6-1`
+
+Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/libasound2-data/copyright`)
+
+- `LGPL-2.1`
+- `LPGL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris alsa-lib=1.1.6-1
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.6-1.dsc' alsa-lib_1.1.6-1.dsc 2460 SHA256:4a79043a56d9191188e87cc331469a3529bfe8d5cfb582fe0eee4b9950ecc883
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.6.orig.tar.bz2' alsa-lib_1.1.6.orig.tar.bz2 989316 SHA256:5f2cd274b272cae0d0d111e8a9e363f08783329157e8dd68b3de0c096de6d724
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.6-1.debian.tar.xz' alsa-lib_1.1.6-1.debian.tar.xz 133160 SHA256:e0bf56438f8eb3fe8e39d7e23b947786aed7e0dd56f983b93adcb97404b39b3b
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/alsa-lib/1.1.6-1/ (for browsing the source)
+- https://sources.debian.net/src/alsa-lib/1.1.6-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/alsa-lib/1.1.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.6.4`
 
@@ -1975,13 +2002,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10.0.2+13-1`
+### `dpkg` source package: `openjdk-11=11~28-2`
 
 Binary Packages:
 
-- `openjdk-10-jre-headless:amd64=10.0.2+13-1`
+- `openjdk-11-jre-headless:amd64=11~28-2`
 
-Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
 - `Apache-2.0`
 - `GPL-2`
@@ -1991,17 +2018,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-10=10.0.2+13-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.dsc' openjdk-10_10.0.2+13-1.dsc 4563 SHA256:33171e18e9c61ee6d1dd95b24e0ef5bf5216997daa0071a5ed54fff97d0ddd56
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13.orig.tar.xz' openjdk-10_10.0.2+13.orig.tar.xz 74012480 SHA256:c9b839f4834eeee0b455a52b3b6b3bd22a3e064c06574bed11a4a81d6ce0d0ca
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.debian.tar.xz' openjdk-10_10.0.2+13-1.debian.tar.xz 168704 SHA256:5ac15cc4e199887c3d7f2a92b793fc0bbf30f692b9fdd857abee5876526b9daf
+$ apt-get source -qq --print-uris openjdk-11=11~28-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-2.dsc' openjdk-11_11~28-2.dsc 4531 SHA256:f9086799e55a9b77ce614ac52fe76d6e51a9ca1fafdf16276dd44971fd8ad771
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28.orig.tar.xz' openjdk-11_11~28.orig.tar.xz 75178272 SHA256:95556aa3253a4d2d95a61e673da1dc721123a9bd0b7f14611542f41556877a47
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-2.debian.tar.xz' openjdk-11_11~28-2.debian.tar.xz 163708 SHA256:dd8fe8f7b48060368d7b091755e20b192188fb4049384165db7ada74b81c56b7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-10/10.0.2+13-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~28-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~28-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~28-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1-1`
 
