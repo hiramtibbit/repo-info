@@ -1,18 +1,18 @@
-# `aerospike:4.3.0.7`
+# `aerospike:4.3.0.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2882c984da766020e2950cdc2ce1ba954f49b1fc5ee081fcd5ec5cca1c36655a`
-- Created: `2018-09-11T21:20:09.330990519Z`
-- Virtual Size: ~ 133.36 Mb  
+- Image ID: `sha256:06f614f5f50570ce3f0d252657a48dd8a9510308b468312569e32ba1130a4094`
+- Created: `2018-10-01T23:19:48.57062916Z`
+- Virtual Size: ~ 127.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=4.3.0.7`
-  - `AEROSPIKE_SHA256=7586e21fc9c53a152cdd58fb39e9d073ebc71d2898f6e134ae3b1b2deae44022`
+  - `AEROSPIKE_VERSION=4.3.0.8`
+  - `AEROSPIKE_SHA256=dbddf87e806355edcc47c809f21ee9d8d6313cb4be6c2c25c4b2ca50e9d7d426`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -66,11 +66,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=4.3.0.7-1`
+### `dpkg` source package: `aerospike-server-community=4.3.0.8-1`
 
 Binary Packages:
 
-- `aerospike-server-community=4.3.0.7-1`
+- `aerospike-server-community=4.3.0.8-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1325,14 +1325,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-defaults/2.7.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python2.7=2.7.13-2+deb9u2`
+### `dpkg` source package: `python2.7=2.7.13-2+deb9u3`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.13-2+deb9u2`
-- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u2`
-- `python2.7=2.7.13-2+deb9u2`
-- `python2.7-minimal=2.7.13-2+deb9u2`
+- `libpython2.7-minimal:amd64=2.7.13-2+deb9u3`
+- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u3`
+- `python2.7=2.7.13-2+deb9u3`
+- `python2.7-minimal=2.7.13-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1356,17 +1356,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.dsc' python2.7_2.7.13-2+deb9u2.dsc 3370 SHA256:1a1df934fcbc46cbca5d53fa70fd039161dbc26720e6ce74f734c177db48ef8b
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.diff.gz' python2.7_2.7.13-2+deb9u2.diff.gz 281084 SHA256:8d5f7000cc8f684d2de712aa7a8782653389873ea952ee8859aafe79790e48d6
+$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.dsc' python2.7_2.7.13-2+deb9u3.dsc 3370 SHA256:07f864cef82aaf3741af4c89aa5bcc595c56c283c3ff61630c36171ce5aac9f3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.diff.gz' python2.7_2.7.13-2+deb9u3.diff.gz 284882 SHA256:4e7d5d372cb78eadc0fafa461a579a658ee245fcc1142234561406b45193c087
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
