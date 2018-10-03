@@ -1,12 +1,14 @@
 ## `busybox:glibc`
 
 ```console
-$ docker pull busybox@sha256:af14f45bbeba98f6d69308e00dfdce7775e77450bfda05b26446b3cbb1494843
+$ docker pull busybox@sha256:abe52b28303c8e035dd51b4aefa618aac33599c8deb230ac2287d10ac67b03cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v5
+	-	linux; arm64 variant v8
 	-	linux; ppc64le
 
 ### `busybox:glibc` - linux; amd64
@@ -33,6 +35,58 @@ CMD ["sh"]
 	-	`sha256:0de338cf42586fa81850a9f1610429364d1a7f348e8db87786be48663b25a60d`  
 		Last Modified: Tue, 02 Oct 2018 17:21:36 GMT  
 		Size: 2.4 MB (2399873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:glibc` - linux; arm variant v5
+
+```console
+$ docker pull busybox@sha256:4217f560beaa93b156e993aba1c98aaf61000e57f990561c50c7b35659f602a0
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (1967115 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:16d17a89a084b7a91a26e2cc1c8345cad22ac35c433b6f20ca335a937fea03a3`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 03 Oct 2018 08:49:10 GMT
+ADD file:13dfb0661a731f7ad7995aaf1d5b16f0fe060abcb16f40d83e4e2aa2c7b7ee94 in / 
+# Wed, 03 Oct 2018 08:49:10 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:09ff7705e133361f0f49290993b54c507b38e15d10cc5acdbc6abcf9d21a8492`  
+		Last Modified: Wed, 03 Oct 2018 08:50:18 GMT  
+		Size: 2.0 MB (1967115 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `busybox:glibc` - linux; arm64 variant v8
+
+```console
+$ docker pull busybox@sha256:0623a4d86293538a73b53f8ed8f0f94542299d306387d8186c7a6a06af0b2981
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 MB (1940936 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a01861f62feae80959afaaa5b652c432ec5e89690f361cf3837f27f2fa88df20`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 03 Oct 2018 08:40:34 GMT
+ADD file:56028a9dc1ebbab645f65d592992506927bbe98ffdb4b21f52f19b9a7450acd3 in / 
+# Wed, 03 Oct 2018 08:40:35 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:b3b70ad382977a7e76d72487a21782f4297ee1d1e266e94877d4f5a57d0a1a99`  
+		Last Modified: Wed, 03 Oct 2018 08:42:42 GMT  
+		Size: 1.9 MB (1940936 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:glibc` - linux; ppc64le
