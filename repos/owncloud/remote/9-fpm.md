@@ -1,7 +1,7 @@
 ## `owncloud:9-fpm`
 
 ```console
-$ docker pull owncloud@sha256:e4465ac67beed47f2a2903e3f993109bb9142317b0e3c22063a841b3e489e414
+$ docker pull owncloud@sha256:fff0a790dbfa4c639a5fdf2ac6a63991e7f05dd7800c925d3308a2860916fe6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -335,14 +335,14 @@ CMD ["php-fpm"]
 ### `owncloud:9-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull owncloud@sha256:80139c062eaf58053586dd4c268fa1df934b44f44a1d4833afdb2cadaea412c4
+$ docker pull owncloud@sha256:21f86ce6835d1400343fdb7bfba8a2d70e23bd0ff389b2666bf64a66d3b384f9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.1 MB (179103533 bytes)**  
+-	Total Size: **179.1 MB (179103547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41fe5805e8d61267574b1bbc11de973b47688c6ffa412ad753d4a580ef9cfc10`
+-	Image ID: `sha256:2c6cdd142c9e1074f3b502172b5b559ae887d48ac673523e2a2f2adaa23bb597`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -411,13 +411,13 @@ ENV OWNCLOUD_SHA256=2b688327a2f986236e14b81dffcf684f730f61946d8035e99a6d032083c1
 VOLUME [/var/www/html]
 # Fri, 21 Sep 2018 12:25:51 GMT
 RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
-# Fri, 21 Sep 2018 12:25:52 GMT
-COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /usr/local/bin/ 
-# Fri, 21 Sep 2018 12:26:01 GMT
+# Wed, 03 Oct 2018 12:04:20 GMT
+COPY file:d37f6ced72c54685115ff42b55a093ee744c3ebeb6639ddc19b28f6204890d49 in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:04:22 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 21 Sep 2018 12:26:02 GMT
+# Wed, 03 Oct 2018 12:04:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 21 Sep 2018 12:26:02 GMT
+# Wed, 03 Oct 2018 12:04:23 GMT
 CMD ["php-fpm"]
 ```
 
@@ -482,12 +482,12 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 21 Sep 2018 12:31:18 GMT  
 		Size: 32.0 MB (32020497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:854481eff5f87f59e41da082462cd62c8b5794ae80f9daf9eb0ab72010ee0aeb`  
-		Last Modified: Fri, 21 Sep 2018 12:31:04 GMT  
-		Size: 338.0 B  
+	-	`sha256:697aefa5a45982dcb445e25b5a8efb45329d74d14d42a04be15434c5fea116f2`  
+		Last Modified: Wed, 03 Oct 2018 12:09:15 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb80b16e301ac0deb594cb6084f3ac9aba9db97c14566f9a044a6e15009299b7`  
-		Last Modified: Fri, 21 Sep 2018 12:31:04 GMT  
+	-	`sha256:f4d88eafd72c64c53d85c447e38a0a1ad7f72afa43ded1d3da370c02b7d2fa4d`  
+		Last Modified: Wed, 03 Oct 2018 12:09:15 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -971,14 +971,14 @@ CMD ["php-fpm"]
 ### `owncloud:9-fpm` - linux; s390x
 
 ```console
-$ docker pull owncloud@sha256:1424ec7e2345ad7bf0d85be4fd4fc6663562275d166d57b3f1f42271239f72d4
+$ docker pull owncloud@sha256:175d62d11b0fef5a08d2ec16d8c9b728571a0b81bc331f98a159cc78294085c0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.9 MB (193906899 bytes)**  
+-	Total Size: **193.9 MB (193906918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bac499aa8b214af5f3d5e74d11172ff5fea3a34a0cf98dcd21087aade4827ba`
+-	Image ID: `sha256:a19d08a00904c1ab819839a9f5f5a36403f82e6c6f137880f09215892e2254f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1047,13 +1047,13 @@ ENV OWNCLOUD_SHA256=2b688327a2f986236e14b81dffcf684f730f61946d8035e99a6d032083c1
 VOLUME [/var/www/html]
 # Sat, 15 Sep 2018 13:56:08 GMT
 RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
-# Sat, 15 Sep 2018 13:56:08 GMT
-COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 13:56:09 GMT
+# Wed, 03 Oct 2018 12:01:05 GMT
+COPY file:d37f6ced72c54685115ff42b55a093ee744c3ebeb6639ddc19b28f6204890d49 in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:01:08 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Sat, 15 Sep 2018 13:56:09 GMT
+# Wed, 03 Oct 2018 12:01:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 13:56:09 GMT
+# Wed, 03 Oct 2018 12:01:09 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1118,11 +1118,11 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 15 Sep 2018 13:58:57 GMT  
 		Size: 32.0 MB (32020515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f819fde110c9ca8ca227c1c3e55d5fab5bcb012ca7dbb9225aa08e1ef74d8c7`  
-		Last Modified: Sat, 15 Sep 2018 13:58:51 GMT  
-		Size: 334.0 B  
+	-	`sha256:afe02580c450e25dbb962bf0e767ff16b47e7df39319b45622329e235dd5649b`  
+		Last Modified: Wed, 03 Oct 2018 12:06:41 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbfef39938801eec49dc86915e16f2eb89a583e05ae92825bc906245861574f9`  
-		Last Modified: Sat, 15 Sep 2018 13:58:53 GMT  
+	-	`sha256:aba08e55252acfe8e286ae054411dfe3d4c5cb735c0444c2f5f5ca3ba7de8655`  
+		Last Modified: Wed, 03 Oct 2018 12:06:41 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
