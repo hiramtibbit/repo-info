@@ -60,7 +60,7 @@
 ## `redis:3`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -226,14 +226,14 @@ CMD ["redis-server"]
 ### `redis:3` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -262,13 +262,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -293,9 +293,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3` - linux; arm64 variant v8
@@ -376,14 +376,14 @@ CMD ["redis-server"]
 ### `redis:3` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -412,13 +412,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -443,9 +443,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3` - linux; ppc64le
@@ -526,14 +526,14 @@ CMD ["redis-server"]
 ### `redis:3` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -562,13 +562,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -593,15 +593,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -767,14 +767,14 @@ CMD ["redis-server"]
 ### `redis:3.2` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -803,13 +803,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -834,9 +834,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2` - linux; arm64 variant v8
@@ -917,14 +917,14 @@ CMD ["redis-server"]
 ### `redis:3.2` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -953,13 +953,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -984,9 +984,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2` - linux; ppc64le
@@ -1067,14 +1067,14 @@ CMD ["redis-server"]
 ### `redis:3.2` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -1103,13 +1103,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -1134,15 +1134,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.12`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1308,14 +1308,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -1344,13 +1344,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -1375,9 +1375,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12` - linux; arm64 variant v8
@@ -1458,14 +1458,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -1494,13 +1494,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -1525,9 +1525,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12` - linux; ppc64le
@@ -1608,14 +1608,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -1644,13 +1644,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -1675,9 +1675,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.12-32bit`
@@ -1865,7 +1865,7 @@ CMD ["redis-server"]
 ## `redis:3.2.12-alpine`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2111,14 +2111,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -2147,13 +2147,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -2182,9 +2182,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12-alpine` - linux; ppc64le
@@ -2269,14 +2269,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -2305,13 +2305,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -2340,15 +2340,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.12-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2594,14 +2594,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -2630,13 +2630,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -2665,9 +2665,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12-alpine3.8` - linux; ppc64le
@@ -2752,14 +2752,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -2788,13 +2788,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -2823,15 +2823,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.12-stretch`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2997,14 +2997,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -3033,13 +3033,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -3064,9 +3064,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12-stretch` - linux; arm64 variant v8
@@ -3147,14 +3147,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -3183,13 +3183,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -3214,9 +3214,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2.12-stretch` - linux; ppc64le
@@ -3297,14 +3297,14 @@ CMD ["redis-server"]
 ### `redis:3.2.12-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -3333,13 +3333,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -3364,9 +3364,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2-32bit`
@@ -3554,7 +3554,7 @@ CMD ["redis-server"]
 ## `redis:3.2-alpine`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3800,14 +3800,14 @@ CMD ["redis-server"]
 ### `redis:3.2-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -3836,13 +3836,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -3871,9 +3871,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2-alpine` - linux; ppc64le
@@ -3958,14 +3958,14 @@ CMD ["redis-server"]
 ### `redis:3.2-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -3994,13 +3994,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -4029,15 +4029,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4283,14 +4283,14 @@ CMD ["redis-server"]
 ### `redis:3.2-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -4319,13 +4319,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -4354,9 +4354,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2-alpine3.8` - linux; ppc64le
@@ -4441,14 +4441,14 @@ CMD ["redis-server"]
 ### `redis:3.2-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -4477,13 +4477,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -4512,9 +4512,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:32bit`
@@ -4702,7 +4702,7 @@ CMD ["redis-server"]
 ## `redis:3.2-stretch`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4868,14 +4868,14 @@ CMD ["redis-server"]
 ### `redis:3.2-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -4904,13 +4904,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -4935,9 +4935,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2-stretch` - linux; arm64 variant v8
@@ -5018,14 +5018,14 @@ CMD ["redis-server"]
 ### `redis:3.2-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -5054,13 +5054,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -5085,9 +5085,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3.2-stretch` - linux; ppc64le
@@ -5168,14 +5168,14 @@ CMD ["redis-server"]
 ### `redis:3.2-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -5204,13 +5204,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -5235,9 +5235,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3-32bit`
@@ -5425,7 +5425,7 @@ CMD ["redis-server"]
 ## `redis:3-alpine`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5671,14 +5671,14 @@ CMD ["redis-server"]
 ### `redis:3-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -5707,13 +5707,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -5742,9 +5742,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3-alpine` - linux; ppc64le
@@ -5829,14 +5829,14 @@ CMD ["redis-server"]
 ### `redis:3-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -5865,13 +5865,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -5900,15 +5900,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:23e552e144fe25fbb9bd30a74d4d72b5d8004c055a1b937cd8562dfea7c85358
+$ docker pull redis@sha256:e9083e10f5f81d350a3f687d582aefd06e114890b03e7f08a447fa1a1f66d967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6154,14 +6154,14 @@ CMD ["redis-server"]
 ### `redis:3-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:3123e6a802c6ede443cc69184fe9c1aa508c4a658e0b19ca9a778efd881a2036
+$ docker pull redis@sha256:b5d3a8ea62abe72a1030d8a5bbd2740227d9961172aeb4762ddebe5387f92697
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9154056 bytes)**  
+-	Total Size: **9.2 MB (9154068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc88add7693f5fe14fe235a465f03ecad0466d75323c41716b61db9c320f20d3`
+-	Image ID: `sha256:806b2d540b7d806914919e0d24a919697b08bcf990273a52efe71bd26700e361`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -6190,13 +6190,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:22:22 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:22:22 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:22:22 GMT
+# Wed, 03 Oct 2018 12:03:08 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:22:23 GMT
+# Wed, 03 Oct 2018 12:03:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -6225,9 +6225,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a4ccbc825a893a3b408eb1df5fec5a9b4f1c327cb2848f40953bfabb25d341`  
-		Last Modified: Wed, 12 Sep 2018 17:23:44 GMT  
-		Size: 401.0 B  
+	-	`sha256:4913c80e13aee3ca866f4b5cd950e3addf2a72b475371642835181d13f1c8024`  
+		Last Modified: Wed, 03 Oct 2018 12:06:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3-alpine3.8` - linux; ppc64le
@@ -6312,14 +6312,14 @@ CMD ["redis-server"]
 ### `redis:3-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7972c0955dae8e06b5da931c2804b7e66fd04901d3107fb17283b0ecb816dfc9
+$ docker pull redis@sha256:a6ea3eae6800c7fb60bb7bc21143bf7174fd45342d1c93aa6ddf91f66a6e827c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9592652 bytes)**  
+-	Total Size: **9.6 MB (9592669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e42e16f6e09b8f24d3ad47477d009b2b051f2c9917cb31ab4c240088cc629179`
+-	Image ID: `sha256:47d60e39bc4b1a15aa522fcc12156669e670a44ea15a0c47a4471ca1ac2095d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -6348,13 +6348,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:53 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:54 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:54 GMT
+# Wed, 03 Oct 2018 12:25:46 GMT
 CMD ["redis-server"]
 ```
 
@@ -6383,15 +6383,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:23:55 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a3cf6f83ecd7b3d07fa5fc090eea7ee26a089a5baaf68305c08d9107a670b7`  
-		Last Modified: Wed, 12 Sep 2018 13:23:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:116b08289f952ff3896611c08a6bb8eaf7f356181eea619531e1facf00f9187e`  
+		Last Modified: Wed, 03 Oct 2018 12:30:27 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3-stretch`
 
 ```console
-$ docker pull redis@sha256:3b45fc30eb27ece5061adda167967f2e29ac1ec5190098341e2d5cb6f7e0c2e6
+$ docker pull redis@sha256:5d1b6660fca7e77b133d7a8bdb130b3248a136c3ff37be229e96c150bf37bbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6557,14 +6557,14 @@ CMD ["redis-server"]
 ### `redis:3-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:e9000eb88c215f27bd67c7cbf1859e22fdedc0454758267e5c2a7c41eea82016
+$ docker pull redis@sha256:98ee3a2a1bba61e2978e75c9d77a628152b6e88cb8d7dde89df7eebb6bdfb839
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25805688 bytes)**  
+-	Total Size: **25.8 MB (25805703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24f112210734220e2870e41e88b9a3acf72dc039b3cd8e45cfe110a41fb5e4b`
+-	Image ID: `sha256:4bb6277fd4b713ce7fdfa918d899f0ddf046ed30a9e6cdb2571c59567da88640`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -6593,13 +6593,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:44:06 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:44:07 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:31 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:44:07 GMT
+# Wed, 03 Oct 2018 12:19:32 GMT
 CMD ["redis-server"]
 ```
 
@@ -6624,9 +6624,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddce9d7c2352f5097e2dfd78450a0491e4865050955bbfe7e7a210b691fc2cb7`  
-		Last Modified: Wed, 05 Sep 2018 15:46:03 GMT  
-		Size: 403.0 B  
+	-	`sha256:f8aa244033a59b0bd37be190719231cc5ca5c84ea130d5f07c5f94e9cdaad5a9`  
+		Last Modified: Wed, 03 Oct 2018 12:23:10 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3-stretch` - linux; arm64 variant v8
@@ -6707,14 +6707,14 @@ CMD ["redis-server"]
 ### `redis:3-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:a3bb60c2ace5ee6e03b182a3454b172353d255120fb7821df85c11df78f1a34a
+$ docker pull redis@sha256:b601e9ea1ef20bb2658b953e6f617e2140f79e68337207ab594c1fa479652251
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29700533 bytes)**  
+-	Total Size: **29.7 MB (29700546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eaf8b6afe29300be17fd8f685a1eb5a926e53e28835ada20deaee546be7a9a3`
+-	Image ID: `sha256:b852846abe22b8efec9a4dab76884e8ab8647d3dfaa8de304825de1297bf1399`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -6743,13 +6743,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:33:53 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:33:53 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:33:53 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:03:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:00 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:33:54 GMT
+# Wed, 03 Oct 2018 12:03:01 GMT
 CMD ["redis-server"]
 ```
 
@@ -6774,9 +6774,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:55 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbd27d70335755e3fe23b992a7ca72b99359d9793753015e082927bbc283a66`  
-		Last Modified: Fri, 07 Sep 2018 00:35:51 GMT  
-		Size: 401.0 B  
+	-	`sha256:aa45ef6050cc42eb1f31726ce88dd5e82f4be060338e9dcb57e2ecbcf921efe2`  
+		Last Modified: Wed, 03 Oct 2018 12:06:17 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:3-stretch` - linux; ppc64le
@@ -6857,14 +6857,14 @@ CMD ["redis-server"]
 ### `redis:3-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:cc5245bdf8b36c1b25dacadfdd3eea8f297f1778b861fed03e3a02ac8b9e5f0d
+$ docker pull redis@sha256:05ee4ea22af4bacf180013121840436e2893097b5ca7c5b3470378f0e9babe0d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.5 MB (29494123 bytes)**  
+-	Total Size: **29.5 MB (29494139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda26cf82dcd78ed6aceca11aed96d1bacd4f248cfab0592ad7ddd546be74b67`
+-	Image ID: `sha256:ab020a589f03dfa2bd3057f0eef87af1b29950ad6cf333384842f03bff04e89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -6893,13 +6893,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:40 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:40 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:40 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:41 GMT
+# Wed, 03 Oct 2018 12:25:37 GMT
 CMD ["redis-server"]
 ```
 
@@ -6924,15 +6924,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:38:22 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a22ee5baf6d3823a7b559e18f7fe17b88ccd78f9c87be838981406f6a74c02`  
-		Last Modified: Wed, 05 Sep 2018 12:38:23 GMT  
-		Size: 402.0 B  
+	-	`sha256:83ce33fbd8c68425f958da9427c0bbd95071b25a83cb765b87bebb63908912ec`  
+		Last Modified: Wed, 03 Oct 2018 12:29:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7098,14 +7098,14 @@ CMD ["redis-server"]
 ### `redis:4` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7134,13 +7134,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -7165,9 +7165,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4` - linux; arm64 variant v8
@@ -7248,14 +7248,14 @@ CMD ["redis-server"]
 ### `redis:4` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7284,13 +7284,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -7315,9 +7315,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4` - linux; ppc64le
@@ -7398,14 +7398,14 @@ CMD ["redis-server"]
 ### `redis:4` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7434,13 +7434,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -7465,15 +7465,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7639,14 +7639,14 @@ CMD ["redis-server"]
 ### `redis:4.0` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7675,13 +7675,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -7706,9 +7706,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0` - linux; arm64 variant v8
@@ -7789,14 +7789,14 @@ CMD ["redis-server"]
 ### `redis:4.0` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7825,13 +7825,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -7856,9 +7856,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0` - linux; ppc64le
@@ -7939,14 +7939,14 @@ CMD ["redis-server"]
 ### `redis:4.0` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7975,13 +7975,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -8006,15 +8006,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.11`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8180,14 +8180,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -8216,13 +8216,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -8247,9 +8247,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11` - linux; arm64 variant v8
@@ -8330,14 +8330,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -8366,13 +8366,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -8397,9 +8397,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11` - linux; ppc64le
@@ -8480,14 +8480,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -8516,13 +8516,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -8547,9 +8547,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.11-32bit`
@@ -8737,7 +8737,7 @@ CMD ["redis-server"]
 ## `redis:4.0.11-alpine`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8983,14 +8983,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -9019,13 +9019,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -9054,9 +9054,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11-alpine` - linux; ppc64le
@@ -9141,14 +9141,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -9177,13 +9177,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -9212,15 +9212,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.11-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9466,14 +9466,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -9502,13 +9502,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -9537,9 +9537,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11-alpine3.8` - linux; ppc64le
@@ -9624,14 +9624,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -9660,13 +9660,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -9695,15 +9695,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0.11-stretch`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9869,14 +9869,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -9905,13 +9905,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -9936,9 +9936,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11-stretch` - linux; arm64 variant v8
@@ -10019,14 +10019,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -10055,13 +10055,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -10086,9 +10086,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0.11-stretch` - linux; ppc64le
@@ -10169,14 +10169,14 @@ CMD ["redis-server"]
 ### `redis:4.0.11-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -10205,13 +10205,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -10236,9 +10236,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0-32bit`
@@ -10426,7 +10426,7 @@ CMD ["redis-server"]
 ## `redis:4.0-alpine`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10672,14 +10672,14 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -10708,13 +10708,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -10743,9 +10743,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0-alpine` - linux; ppc64le
@@ -10830,14 +10830,14 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -10866,13 +10866,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -10901,15 +10901,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11155,14 +11155,14 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11191,13 +11191,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -11226,9 +11226,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0-alpine3.8` - linux; ppc64le
@@ -11313,14 +11313,14 @@ CMD ["redis-server"]
 ### `redis:4.0-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11349,13 +11349,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -11384,15 +11384,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4.0-stretch`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11558,14 +11558,14 @@ CMD ["redis-server"]
 ### `redis:4.0-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11594,13 +11594,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -11625,9 +11625,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0-stretch` - linux; arm64 variant v8
@@ -11708,14 +11708,14 @@ CMD ["redis-server"]
 ### `redis:4.0-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11744,13 +11744,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -11775,9 +11775,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4.0-stretch` - linux; ppc64le
@@ -11858,14 +11858,14 @@ CMD ["redis-server"]
 ### `redis:4.0-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11894,13 +11894,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -11925,9 +11925,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4-32bit`
@@ -12115,7 +12115,7 @@ CMD ["redis-server"]
 ## `redis:4-alpine`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12361,14 +12361,14 @@ CMD ["redis-server"]
 ### `redis:4-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -12397,13 +12397,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -12432,9 +12432,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4-alpine` - linux; ppc64le
@@ -12519,14 +12519,14 @@ CMD ["redis-server"]
 ### `redis:4-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -12555,13 +12555,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -12590,15 +12590,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12844,14 +12844,14 @@ CMD ["redis-server"]
 ### `redis:4-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -12880,13 +12880,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -12915,9 +12915,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4-alpine3.8` - linux; ppc64le
@@ -13002,14 +13002,14 @@ CMD ["redis-server"]
 ### `redis:4-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13038,13 +13038,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -13073,15 +13073,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:4-stretch`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13247,14 +13247,14 @@ CMD ["redis-server"]
 ### `redis:4-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13283,13 +13283,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -13314,9 +13314,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4-stretch` - linux; arm64 variant v8
@@ -13397,14 +13397,14 @@ CMD ["redis-server"]
 ### `redis:4-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13433,13 +13433,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -13464,9 +13464,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:4-stretch` - linux; ppc64le
@@ -13547,14 +13547,14 @@ CMD ["redis-server"]
 ### `redis:4-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13583,13 +13583,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -13614,15 +13614,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc`
 
 ```console
-$ docker pull redis@sha256:5e2d51200bc87940f5da300dd10199ac10688bacdad36863206c48d0be85d840
+$ docker pull redis@sha256:6e9c16691f12c48f3030d8bedbeef106294c6cdb0a6ab6f008fff32561ae51e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13788,14 +13788,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:1ada59b4a940b70d02cb115cb35e9db1f61347ca51bc3abf2906077e706267b2
+$ docker pull redis@sha256:997c2cd41190b4b8ae9c3ee87c89adf94dda864d6917520d77985c3370c5f2db
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.2 MB (31184862 bytes)**  
+-	Total Size: **31.2 MB (31184879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf62d7a76f0bc6b9dc3e787cf8318231bf45ece019f74cf00278e6df35516c6`
+-	Image ID: `sha256:7e775614e9df7c1f36efa855f2f5e313195695e684122d3738e5d3c08b5f007b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13824,13 +13824,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:59:23 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:59:24 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:59:24 GMT
+# Wed, 03 Oct 2018 12:18:17 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:18:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:18 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:19 GMT
 CMD ["redis-server"]
 ```
 
@@ -13855,9 +13855,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91a056a2f72759e72c8bab5918ef22638d5b20629d4d3ab225779e25ceb9c217`  
-		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
-		Size: 402.0 B  
+	-	`sha256:5bdb2ab07b825dabcad350d5185dacc6880beef19c1c351a729838f25d21ccc8`  
+		Last Modified: Wed, 03 Oct 2018 12:19:51 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc` - linux; arm64 variant v8
@@ -13938,14 +13938,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8fe06a5d491950ea7f279241c097634425abddff9d8fd2b1259eb093949f1933
+$ docker pull redis@sha256:f8b02e584483ebc7b4e4132cb4ca31bf9f5a0e963f45bb9e477a2420e948eab2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35121711 bytes)**  
+-	Total Size: **35.1 MB (35121723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b065d90a1d1abf6b9f83e6e40ea55e155ad662280abc4f6b6d2b3fe7d57b94fc`
+-	Image ID: `sha256:cd491b4eb81386f0ee19c63959089410f3c6b8e63e61f28b94768dc57d54d1d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13974,13 +13974,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:55:55 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:55:55 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:55:55 GMT
+# Wed, 03 Oct 2018 12:02:27 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 CMD ["redis-server"]
 ```
 
@@ -14005,9 +14005,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:28 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09bcf9502c1d25df4dcb089b6ae8c2e698c37fd8beef62d2d9fe3b6d2e1c6c69`  
-		Last Modified: Sat, 15 Sep 2018 16:57:27 GMT  
-		Size: 404.0 B  
+	-	`sha256:1ce78dd73e6b00f2024b0b4097d1a416e3f17717bf82f0130a713babc6963a67`  
+		Last Modified: Wed, 03 Oct 2018 12:03:23 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc` - linux; ppc64le
@@ -14088,14 +14088,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dd077037bfc461b66e743e8e7ae33454bea2cbdbcb73d35f1383f719a22ddc5c
+$ docker pull redis@sha256:8260fe9dcd1161346c622001d24297f11cda488a76950325ab37f503dc65a305
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35375876 bytes)**  
+-	Total Size: **35.4 MB (35375890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee4bbf3da4a157e95dd96903c95b3ea36e2df86e08161e5f811797950f56ccb`
+-	Image ID: `sha256:ded634b0e64aefd8e2a297f00e15679bcb86fd14aa556357715f7ef0367afe3a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14124,13 +14124,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:11 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:11 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:24:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -14155,9 +14155,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:27 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602e0ebc3c3a2b689f100f4c199597957daf1f95d6ef1d0c4ddf5a5a8b6e55f5`  
-		Last Modified: Sat, 15 Sep 2018 11:59:28 GMT  
-		Size: 404.0 B  
+	-	`sha256:d3c9426fff80730fd63cfc64060fb63394ab084993428ab578edb778a043e6aa`  
+		Last Modified: Wed, 03 Oct 2018 12:26:04 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc-32bit`
@@ -14345,7 +14345,7 @@ CMD ["redis-server"]
 ## `redis:5.0-rc5`
 
 ```console
-$ docker pull redis@sha256:5e2d51200bc87940f5da300dd10199ac10688bacdad36863206c48d0be85d840
+$ docker pull redis@sha256:6e9c16691f12c48f3030d8bedbeef106294c6cdb0a6ab6f008fff32561ae51e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14511,14 +14511,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:1ada59b4a940b70d02cb115cb35e9db1f61347ca51bc3abf2906077e706267b2
+$ docker pull redis@sha256:997c2cd41190b4b8ae9c3ee87c89adf94dda864d6917520d77985c3370c5f2db
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.2 MB (31184862 bytes)**  
+-	Total Size: **31.2 MB (31184879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf62d7a76f0bc6b9dc3e787cf8318231bf45ece019f74cf00278e6df35516c6`
+-	Image ID: `sha256:7e775614e9df7c1f36efa855f2f5e313195695e684122d3738e5d3c08b5f007b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14547,13 +14547,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:59:23 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:59:24 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:59:24 GMT
+# Wed, 03 Oct 2018 12:18:17 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:18:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:18 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:19 GMT
 CMD ["redis-server"]
 ```
 
@@ -14578,9 +14578,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91a056a2f72759e72c8bab5918ef22638d5b20629d4d3ab225779e25ceb9c217`  
-		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
-		Size: 402.0 B  
+	-	`sha256:5bdb2ab07b825dabcad350d5185dacc6880beef19c1c351a729838f25d21ccc8`  
+		Last Modified: Wed, 03 Oct 2018 12:19:51 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5` - linux; arm64 variant v8
@@ -14661,14 +14661,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8fe06a5d491950ea7f279241c097634425abddff9d8fd2b1259eb093949f1933
+$ docker pull redis@sha256:f8b02e584483ebc7b4e4132cb4ca31bf9f5a0e963f45bb9e477a2420e948eab2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35121711 bytes)**  
+-	Total Size: **35.1 MB (35121723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b065d90a1d1abf6b9f83e6e40ea55e155ad662280abc4f6b6d2b3fe7d57b94fc`
+-	Image ID: `sha256:cd491b4eb81386f0ee19c63959089410f3c6b8e63e61f28b94768dc57d54d1d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14697,13 +14697,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:55:55 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:55:55 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:55:55 GMT
+# Wed, 03 Oct 2018 12:02:27 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 CMD ["redis-server"]
 ```
 
@@ -14728,9 +14728,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:28 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09bcf9502c1d25df4dcb089b6ae8c2e698c37fd8beef62d2d9fe3b6d2e1c6c69`  
-		Last Modified: Sat, 15 Sep 2018 16:57:27 GMT  
-		Size: 404.0 B  
+	-	`sha256:1ce78dd73e6b00f2024b0b4097d1a416e3f17717bf82f0130a713babc6963a67`  
+		Last Modified: Wed, 03 Oct 2018 12:03:23 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5` - linux; ppc64le
@@ -14811,14 +14811,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dd077037bfc461b66e743e8e7ae33454bea2cbdbcb73d35f1383f719a22ddc5c
+$ docker pull redis@sha256:8260fe9dcd1161346c622001d24297f11cda488a76950325ab37f503dc65a305
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35375876 bytes)**  
+-	Total Size: **35.4 MB (35375890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee4bbf3da4a157e95dd96903c95b3ea36e2df86e08161e5f811797950f56ccb`
+-	Image ID: `sha256:ded634b0e64aefd8e2a297f00e15679bcb86fd14aa556357715f7ef0367afe3a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14847,13 +14847,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:11 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:11 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:24:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -14878,9 +14878,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:27 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602e0ebc3c3a2b689f100f4c199597957daf1f95d6ef1d0c4ddf5a5a8b6e55f5`  
-		Last Modified: Sat, 15 Sep 2018 11:59:28 GMT  
-		Size: 404.0 B  
+	-	`sha256:d3c9426fff80730fd63cfc64060fb63394ab084993428ab578edb778a043e6aa`  
+		Last Modified: Wed, 03 Oct 2018 12:26:04 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc5-32bit`
@@ -15068,7 +15068,7 @@ CMD ["redis-server"]
 ## `redis:5.0-rc5-alpine`
 
 ```console
-$ docker pull redis@sha256:6c00a6f210b81468f0cf2ef160d1dbfe44bd6e49a5fd93263dcc487595f3e485
+$ docker pull redis@sha256:7d7143fd23182ba532b41e005a567502f810113233e13ff013bd438a927c7f67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15314,14 +15314,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8b59432dc6cd28112604a26825f5cb4eb01a1cc5a5b496b1fb4ff9d613ffbd1f
+$ docker pull redis@sha256:676b47d1bde5bc8d2d2b50052c37e5454a5ed77b0db1eabc13c230a407e503ab
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14290703 bytes)**  
+-	Total Size: **14.3 MB (14290717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e79b9e0275b97b5fe929cbd6222db571876c29d9329a0401d34508fb3cf38ba`
+-	Image ID: `sha256:b0f6ebc9abe9c243c7a7bab38677169da27fa47027e7546fa7968081cc5a1ff3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15350,13 +15350,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:57:03 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:57:03 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:57:03 GMT
+# Wed, 03 Oct 2018 12:02:35 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 CMD ["redis-server"]
 ```
 
@@ -15385,9 +15385,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b69b76b2312ad8ac412a91b694fd72aac809a6764b20ae8363fef08aa769e54`  
-		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
-		Size: 399.0 B  
+	-	`sha256:d93444578eeaabbad1f35ad2c6ab52746b795957756b23e0b0f3256531b4bb8a`  
+		Last Modified: Wed, 03 Oct 2018 12:03:53 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5-alpine` - linux; ppc64le
@@ -15472,14 +15472,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7cd82af138c98c4f4ec235687e7187a33114b6eec825deb1197584d177a40a98
+$ docker pull redis@sha256:3164deffcca906c50464b97ef3dfe3dd6c4880ff8da3b34802bcdf0f2e6b9bf2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.0 MB (15025959 bytes)**  
+-	Total Size: **15.0 MB (15025972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd765aadd46afa7807d9c1aac016e4be37beef7f10ff0a0ef683043eb687e9df`
+-	Image ID: `sha256:3b30fc782fb7a4481a8a760780dba241fabec41e43e5d5494fd155dad642fc7c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15508,13 +15508,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:56 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:56 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 CMD ["redis-server"]
 ```
 
@@ -15543,15 +15543,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff67a8b1702d4a06d329cd6d973a7aba4db4b9fab0350c590f8a44e3e3aa809a`  
-		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
-		Size: 399.0 B  
+	-	`sha256:77fce5a6f236f09dbad2e9cef90b44301ce76b76c06ea5005770fb01096adba6`  
+		Last Modified: Wed, 03 Oct 2018 12:26:34 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc5-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:6c00a6f210b81468f0cf2ef160d1dbfe44bd6e49a5fd93263dcc487595f3e485
+$ docker pull redis@sha256:7d7143fd23182ba532b41e005a567502f810113233e13ff013bd438a927c7f67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15797,14 +15797,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8b59432dc6cd28112604a26825f5cb4eb01a1cc5a5b496b1fb4ff9d613ffbd1f
+$ docker pull redis@sha256:676b47d1bde5bc8d2d2b50052c37e5454a5ed77b0db1eabc13c230a407e503ab
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14290703 bytes)**  
+-	Total Size: **14.3 MB (14290717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e79b9e0275b97b5fe929cbd6222db571876c29d9329a0401d34508fb3cf38ba`
+-	Image ID: `sha256:b0f6ebc9abe9c243c7a7bab38677169da27fa47027e7546fa7968081cc5a1ff3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15833,13 +15833,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:57:03 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:57:03 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:57:03 GMT
+# Wed, 03 Oct 2018 12:02:35 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 CMD ["redis-server"]
 ```
 
@@ -15868,9 +15868,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b69b76b2312ad8ac412a91b694fd72aac809a6764b20ae8363fef08aa769e54`  
-		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
-		Size: 399.0 B  
+	-	`sha256:d93444578eeaabbad1f35ad2c6ab52746b795957756b23e0b0f3256531b4bb8a`  
+		Last Modified: Wed, 03 Oct 2018 12:03:53 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5-alpine3.8` - linux; ppc64le
@@ -15955,14 +15955,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7cd82af138c98c4f4ec235687e7187a33114b6eec825deb1197584d177a40a98
+$ docker pull redis@sha256:3164deffcca906c50464b97ef3dfe3dd6c4880ff8da3b34802bcdf0f2e6b9bf2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.0 MB (15025959 bytes)**  
+-	Total Size: **15.0 MB (15025972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd765aadd46afa7807d9c1aac016e4be37beef7f10ff0a0ef683043eb687e9df`
+-	Image ID: `sha256:3b30fc782fb7a4481a8a760780dba241fabec41e43e5d5494fd155dad642fc7c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15991,13 +15991,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:56 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:56 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 CMD ["redis-server"]
 ```
 
@@ -16026,15 +16026,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff67a8b1702d4a06d329cd6d973a7aba4db4b9fab0350c590f8a44e3e3aa809a`  
-		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
-		Size: 399.0 B  
+	-	`sha256:77fce5a6f236f09dbad2e9cef90b44301ce76b76c06ea5005770fb01096adba6`  
+		Last Modified: Wed, 03 Oct 2018 12:26:34 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc5-stretch`
 
 ```console
-$ docker pull redis@sha256:5e2d51200bc87940f5da300dd10199ac10688bacdad36863206c48d0be85d840
+$ docker pull redis@sha256:6e9c16691f12c48f3030d8bedbeef106294c6cdb0a6ab6f008fff32561ae51e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16200,14 +16200,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:1ada59b4a940b70d02cb115cb35e9db1f61347ca51bc3abf2906077e706267b2
+$ docker pull redis@sha256:997c2cd41190b4b8ae9c3ee87c89adf94dda864d6917520d77985c3370c5f2db
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.2 MB (31184862 bytes)**  
+-	Total Size: **31.2 MB (31184879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf62d7a76f0bc6b9dc3e787cf8318231bf45ece019f74cf00278e6df35516c6`
+-	Image ID: `sha256:7e775614e9df7c1f36efa855f2f5e313195695e684122d3738e5d3c08b5f007b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -16236,13 +16236,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:59:23 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:59:24 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:59:24 GMT
+# Wed, 03 Oct 2018 12:18:17 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:18:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:18 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:19 GMT
 CMD ["redis-server"]
 ```
 
@@ -16267,9 +16267,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91a056a2f72759e72c8bab5918ef22638d5b20629d4d3ab225779e25ceb9c217`  
-		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
-		Size: 402.0 B  
+	-	`sha256:5bdb2ab07b825dabcad350d5185dacc6880beef19c1c351a729838f25d21ccc8`  
+		Last Modified: Wed, 03 Oct 2018 12:19:51 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5-stretch` - linux; arm64 variant v8
@@ -16350,14 +16350,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8fe06a5d491950ea7f279241c097634425abddff9d8fd2b1259eb093949f1933
+$ docker pull redis@sha256:f8b02e584483ebc7b4e4132cb4ca31bf9f5a0e963f45bb9e477a2420e948eab2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35121711 bytes)**  
+-	Total Size: **35.1 MB (35121723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b065d90a1d1abf6b9f83e6e40ea55e155ad662280abc4f6b6d2b3fe7d57b94fc`
+-	Image ID: `sha256:cd491b4eb81386f0ee19c63959089410f3c6b8e63e61f28b94768dc57d54d1d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -16386,13 +16386,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:55:55 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:55:55 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:55:55 GMT
+# Wed, 03 Oct 2018 12:02:27 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 CMD ["redis-server"]
 ```
 
@@ -16417,9 +16417,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:28 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09bcf9502c1d25df4dcb089b6ae8c2e698c37fd8beef62d2d9fe3b6d2e1c6c69`  
-		Last Modified: Sat, 15 Sep 2018 16:57:27 GMT  
-		Size: 404.0 B  
+	-	`sha256:1ce78dd73e6b00f2024b0b4097d1a416e3f17717bf82f0130a713babc6963a67`  
+		Last Modified: Wed, 03 Oct 2018 12:03:23 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc5-stretch` - linux; ppc64le
@@ -16500,14 +16500,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc5-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dd077037bfc461b66e743e8e7ae33454bea2cbdbcb73d35f1383f719a22ddc5c
+$ docker pull redis@sha256:8260fe9dcd1161346c622001d24297f11cda488a76950325ab37f503dc65a305
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35375876 bytes)**  
+-	Total Size: **35.4 MB (35375890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee4bbf3da4a157e95dd96903c95b3ea36e2df86e08161e5f811797950f56ccb`
+-	Image ID: `sha256:ded634b0e64aefd8e2a297f00e15679bcb86fd14aa556357715f7ef0367afe3a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -16536,13 +16536,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:11 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:11 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:24:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -16567,15 +16567,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:27 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602e0ebc3c3a2b689f100f4c199597957daf1f95d6ef1d0c4ddf5a5a8b6e55f5`  
-		Last Modified: Sat, 15 Sep 2018 11:59:28 GMT  
-		Size: 404.0 B  
+	-	`sha256:d3c9426fff80730fd63cfc64060fb63394ab084993428ab578edb778a043e6aa`  
+		Last Modified: Wed, 03 Oct 2018 12:26:04 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc-alpine`
 
 ```console
-$ docker pull redis@sha256:6c00a6f210b81468f0cf2ef160d1dbfe44bd6e49a5fd93263dcc487595f3e485
+$ docker pull redis@sha256:7d7143fd23182ba532b41e005a567502f810113233e13ff013bd438a927c7f67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16821,14 +16821,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8b59432dc6cd28112604a26825f5cb4eb01a1cc5a5b496b1fb4ff9d613ffbd1f
+$ docker pull redis@sha256:676b47d1bde5bc8d2d2b50052c37e5454a5ed77b0db1eabc13c230a407e503ab
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14290703 bytes)**  
+-	Total Size: **14.3 MB (14290717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e79b9e0275b97b5fe929cbd6222db571876c29d9329a0401d34508fb3cf38ba`
+-	Image ID: `sha256:b0f6ebc9abe9c243c7a7bab38677169da27fa47027e7546fa7968081cc5a1ff3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -16857,13 +16857,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:57:03 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:57:03 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:57:03 GMT
+# Wed, 03 Oct 2018 12:02:35 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 CMD ["redis-server"]
 ```
 
@@ -16892,9 +16892,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b69b76b2312ad8ac412a91b694fd72aac809a6764b20ae8363fef08aa769e54`  
-		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
-		Size: 399.0 B  
+	-	`sha256:d93444578eeaabbad1f35ad2c6ab52746b795957756b23e0b0f3256531b4bb8a`  
+		Last Modified: Wed, 03 Oct 2018 12:03:53 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc-alpine` - linux; ppc64le
@@ -16979,14 +16979,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7cd82af138c98c4f4ec235687e7187a33114b6eec825deb1197584d177a40a98
+$ docker pull redis@sha256:3164deffcca906c50464b97ef3dfe3dd6c4880ff8da3b34802bcdf0f2e6b9bf2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.0 MB (15025959 bytes)**  
+-	Total Size: **15.0 MB (15025972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd765aadd46afa7807d9c1aac016e4be37beef7f10ff0a0ef683043eb687e9df`
+-	Image ID: `sha256:3b30fc782fb7a4481a8a760780dba241fabec41e43e5d5494fd155dad642fc7c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -17015,13 +17015,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:56 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:56 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 CMD ["redis-server"]
 ```
 
@@ -17050,15 +17050,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff67a8b1702d4a06d329cd6d973a7aba4db4b9fab0350c590f8a44e3e3aa809a`  
-		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
-		Size: 399.0 B  
+	-	`sha256:77fce5a6f236f09dbad2e9cef90b44301ce76b76c06ea5005770fb01096adba6`  
+		Last Modified: Wed, 03 Oct 2018 12:26:34 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc-alpine3.8`
 
 ```console
-$ docker pull redis@sha256:6c00a6f210b81468f0cf2ef160d1dbfe44bd6e49a5fd93263dcc487595f3e485
+$ docker pull redis@sha256:7d7143fd23182ba532b41e005a567502f810113233e13ff013bd438a927c7f67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17304,14 +17304,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8b59432dc6cd28112604a26825f5cb4eb01a1cc5a5b496b1fb4ff9d613ffbd1f
+$ docker pull redis@sha256:676b47d1bde5bc8d2d2b50052c37e5454a5ed77b0db1eabc13c230a407e503ab
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14290703 bytes)**  
+-	Total Size: **14.3 MB (14290717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e79b9e0275b97b5fe929cbd6222db571876c29d9329a0401d34508fb3cf38ba`
+-	Image ID: `sha256:b0f6ebc9abe9c243c7a7bab38677169da27fa47027e7546fa7968081cc5a1ff3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -17340,13 +17340,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:57:03 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:57:03 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:57:03 GMT
+# Wed, 03 Oct 2018 12:02:35 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:57:04 GMT
+# Wed, 03 Oct 2018 12:02:36 GMT
 CMD ["redis-server"]
 ```
 
@@ -17375,9 +17375,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b69b76b2312ad8ac412a91b694fd72aac809a6764b20ae8363fef08aa769e54`  
-		Last Modified: Sat, 15 Sep 2018 16:57:52 GMT  
-		Size: 399.0 B  
+	-	`sha256:d93444578eeaabbad1f35ad2c6ab52746b795957756b23e0b0f3256531b4bb8a`  
+		Last Modified: Wed, 03 Oct 2018 12:03:53 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc-alpine3.8` - linux; ppc64le
@@ -17462,14 +17462,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:7cd82af138c98c4f4ec235687e7187a33114b6eec825deb1197584d177a40a98
+$ docker pull redis@sha256:3164deffcca906c50464b97ef3dfe3dd6c4880ff8da3b34802bcdf0f2e6b9bf2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.0 MB (15025959 bytes)**  
+-	Total Size: **15.0 MB (15025972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd765aadd46afa7807d9c1aac016e4be37beef7f10ff0a0ef683043eb687e9df`
+-	Image ID: `sha256:3b30fc782fb7a4481a8a760780dba241fabec41e43e5d5494fd155dad642fc7c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -17498,13 +17498,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:56 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:56 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:56 GMT
+# Wed, 03 Oct 2018 12:25:02 GMT
 CMD ["redis-server"]
 ```
 
@@ -17533,15 +17533,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff67a8b1702d4a06d329cd6d973a7aba4db4b9fab0350c590f8a44e3e3aa809a`  
-		Last Modified: Sat, 15 Sep 2018 11:59:58 GMT  
-		Size: 399.0 B  
+	-	`sha256:77fce5a6f236f09dbad2e9cef90b44301ce76b76c06ea5005770fb01096adba6`  
+		Last Modified: Wed, 03 Oct 2018 12:26:34 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:5.0-rc-stretch`
 
 ```console
-$ docker pull redis@sha256:5e2d51200bc87940f5da300dd10199ac10688bacdad36863206c48d0be85d840
+$ docker pull redis@sha256:6e9c16691f12c48f3030d8bedbeef106294c6cdb0a6ab6f008fff32561ae51e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17707,14 +17707,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:1ada59b4a940b70d02cb115cb35e9db1f61347ca51bc3abf2906077e706267b2
+$ docker pull redis@sha256:997c2cd41190b4b8ae9c3ee87c89adf94dda864d6917520d77985c3370c5f2db
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.2 MB (31184862 bytes)**  
+-	Total Size: **31.2 MB (31184879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf62d7a76f0bc6b9dc3e787cf8318231bf45ece019f74cf00278e6df35516c6`
+-	Image ID: `sha256:7e775614e9df7c1f36efa855f2f5e313195695e684122d3738e5d3c08b5f007b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -17743,13 +17743,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:59:23 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:59:24 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:59:24 GMT
+# Wed, 03 Oct 2018 12:18:17 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:18:18 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:18 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:59:25 GMT
+# Wed, 03 Oct 2018 12:18:19 GMT
 CMD ["redis-server"]
 ```
 
@@ -17774,9 +17774,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91a056a2f72759e72c8bab5918ef22638d5b20629d4d3ab225779e25ceb9c217`  
-		Last Modified: Sat, 15 Sep 2018 11:59:54 GMT  
-		Size: 402.0 B  
+	-	`sha256:5bdb2ab07b825dabcad350d5185dacc6880beef19c1c351a729838f25d21ccc8`  
+		Last Modified: Wed, 03 Oct 2018 12:19:51 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc-stretch` - linux; arm64 variant v8
@@ -17857,14 +17857,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:8fe06a5d491950ea7f279241c097634425abddff9d8fd2b1259eb093949f1933
+$ docker pull redis@sha256:f8b02e584483ebc7b4e4132cb4ca31bf9f5a0e963f45bb9e477a2420e948eab2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35121711 bytes)**  
+-	Total Size: **35.1 MB (35121723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b065d90a1d1abf6b9f83e6e40ea55e155ad662280abc4f6b6d2b3fe7d57b94fc`
+-	Image ID: `sha256:cd491b4eb81386f0ee19c63959089410f3c6b8e63e61f28b94768dc57d54d1d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -17893,13 +17893,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 16:55:55 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 16:55:55 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 16:55:55 GMT
+# Wed, 03 Oct 2018 12:02:27 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 16:55:56 GMT
+# Wed, 03 Oct 2018 12:02:28 GMT
 CMD ["redis-server"]
 ```
 
@@ -17924,9 +17924,9 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 16:57:28 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09bcf9502c1d25df4dcb089b6ae8c2e698c37fd8beef62d2d9fe3b6d2e1c6c69`  
-		Last Modified: Sat, 15 Sep 2018 16:57:27 GMT  
-		Size: 404.0 B  
+	-	`sha256:1ce78dd73e6b00f2024b0b4097d1a416e3f17717bf82f0130a713babc6963a67`  
+		Last Modified: Wed, 03 Oct 2018 12:03:23 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:5.0-rc-stretch` - linux; ppc64le
@@ -18007,14 +18007,14 @@ CMD ["redis-server"]
 ### `redis:5.0-rc-stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dd077037bfc461b66e743e8e7ae33454bea2cbdbcb73d35f1383f719a22ddc5c
+$ docker pull redis@sha256:8260fe9dcd1161346c622001d24297f11cda488a76950325ab37f503dc65a305
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35375876 bytes)**  
+-	Total Size: **35.4 MB (35375890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee4bbf3da4a157e95dd96903c95b3ea36e2df86e08161e5f811797950f56ccb`
+-	Image ID: `sha256:ded634b0e64aefd8e2a297f00e15679bcb86fd14aa556357715f7ef0367afe3a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -18043,13 +18043,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Sat, 15 Sep 2018 11:58:11 GMT
 WORKDIR /data
-# Sat, 15 Sep 2018 11:58:11 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:24:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 EXPOSE 6379/tcp
-# Sat, 15 Sep 2018 11:58:11 GMT
+# Wed, 03 Oct 2018 12:24:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -18074,15 +18074,15 @@ CMD ["redis-server"]
 		Last Modified: Sat, 15 Sep 2018 11:59:27 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602e0ebc3c3a2b689f100f4c199597957daf1f95d6ef1d0c4ddf5a5a8b6e55f5`  
-		Last Modified: Sat, 15 Sep 2018 11:59:28 GMT  
-		Size: 404.0 B  
+	-	`sha256:d3c9426fff80730fd63cfc64060fb63394ab084993428ab578edb778a043e6aa`  
+		Last Modified: Wed, 03 Oct 2018 12:26:04 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:alpine`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18328,14 +18328,14 @@ CMD ["redis-server"]
 ### `redis:alpine` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -18364,13 +18364,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -18399,9 +18399,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:alpine` - linux; ppc64le
@@ -18486,14 +18486,14 @@ CMD ["redis-server"]
 ### `redis:alpine` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -18522,13 +18522,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -18557,15 +18557,15 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:alpine3.8`
 
 ```console
-$ docker pull redis@sha256:a79614c778cb9dd587f1de60548986bdc6d3feaae904dbbf40f92297a197bde5
+$ docker pull redis@sha256:2953e537b8eaa5120855285497d4f936d9f02a16480a9d76e8ba014dc3998704
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18811,14 +18811,14 @@ CMD ["redis-server"]
 ### `redis:alpine3.8` - linux; 386
 
 ```console
-$ docker pull redis@sha256:14f487fc315bd15574ecc8d7b4ba12fa4282358074e80e06d6505d451644c03b
+$ docker pull redis@sha256:d3cc91e30d252933ab11ce95516fbb5d9ca2532f2aff048e8019d0c972226c1b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.7 MB (11658638 bytes)**  
+-	Total Size: **11.7 MB (11658653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fb23b300b88e9ead0c142289be5d67985fd6479a98a93d2de7b088d52f415b9`
+-	Image ID: `sha256:62ca9bf6489dfb4741e8b0c99f90c2cc3c322dc8c730eb31300d2a3f57bde6c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -18847,13 +18847,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 17:21:43 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 17:21:43 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 17:21:43 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 17:21:44 GMT
+# Wed, 03 Oct 2018 12:02:52 GMT
 CMD ["redis-server"]
 ```
 
@@ -18882,9 +18882,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
 		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:376c36c0cd91abb73ad2e9947cdd156562d1a487fd28232f443e6d0ff7dfe1b9`  
-		Last Modified: Wed, 12 Sep 2018 17:23:03 GMT  
-		Size: 398.0 B  
+	-	`sha256:8f6538470c9add5fe3b683dcfd3d7ff9d19f60930f43f4cd656627f8193bf115`  
+		Last Modified: Wed, 03 Oct 2018 12:05:21 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:alpine3.8` - linux; ppc64le
@@ -18969,14 +18969,14 @@ CMD ["redis-server"]
 ### `redis:alpine3.8` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:8516abb8e4003617dd2bfe31ae764f131f7aacc30a81d1fe874af4884a191d41
+$ docker pull redis@sha256:3b3a4f5241eb9457dd411a42f4747d9c4c2ef8f127c9611fd7cc69646076181d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12295781 bytes)**  
+-	Total Size: **12.3 MB (12295793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:438ab86b5c25dea5b9bb033d60b548558ee39fbbe4486fa6cce8fb404d810f15`
+-	Image ID: `sha256:52d5d7ac86216e83c78439305787237d0c69463dfb139a72ec225b89f6d331ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -19005,13 +19005,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 12 Sep 2018 13:21:13 GMT
 WORKDIR /data
-# Wed, 12 Sep 2018 13:21:13 GMT
-COPY file:9b596974f478088dc2d2bf2906046f6c8872ecff3c716abd89850fd50ec90c47 in /usr/local/bin/ 
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:20 GMT
+COPY file:592b00f2927fa2144858cc8c78ef610815375a7ed6046b2460776997a98d663a in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 EXPOSE 6379/tcp
-# Wed, 12 Sep 2018 13:21:14 GMT
+# Wed, 03 Oct 2018 12:25:21 GMT
 CMD ["redis-server"]
 ```
 
@@ -19040,9 +19040,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 12 Sep 2018 13:22:52 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:179f364637d58fe37cb94cb4caeaadb5858fa03d090b3761132f76902187da26`  
-		Last Modified: Wed, 12 Sep 2018 13:22:53 GMT  
-		Size: 402.0 B  
+	-	`sha256:28488f5142d39126a9281e71c052ebf40c78afb7218f01c669a776185819abb9`  
+		Last Modified: Wed, 03 Oct 2018 12:28:15 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:latest`
@@ -19589,7 +19589,7 @@ CMD ["redis-server"]
 ## `redis:stretch`
 
 ```console
-$ docker pull redis@sha256:f107db94bd60d71f397acf54565fd540cb8405be8263b1b7b90e6add5cf248e9
+$ docker pull redis@sha256:3af96d7643f46b9cfb475b6e26720db8ac00cbc7396d5b74fe7b0080f6df337e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19755,14 +19755,14 @@ CMD ["redis-server"]
 ### `redis:stretch` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:bb1d86771e13bcac7279124198f78ec5a96073701b73b6f2595a173244000be7
+$ docker pull redis@sha256:2ec891e7f1962524a9e283b3a4a74a90e1391662a6c1905911d0853357d8e46e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.4 MB (28376467 bytes)**  
+-	Total Size: **28.4 MB (28376483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3afb92563f1ab5e61ce49ce39cbaf0d518a8c9d02496a3f8824c2fa25724a1`
+-	Image ID: `sha256:159a4f024827d94d36956a638a4fcde4495e2a718c4ba1127f133c5a5848920f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -19791,13 +19791,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 15:43:23 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 15:43:23 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:07 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:19:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 15:43:24 GMT
+# Wed, 03 Oct 2018 12:19:08 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 15:43:25 GMT
+# Wed, 03 Oct 2018 12:19:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -19822,9 +19822,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df9c672f238758d30685947aad971efe4facc36db3e4235f318deab30d547bc6`  
-		Last Modified: Wed, 05 Sep 2018 15:45:00 GMT  
-		Size: 402.0 B  
+	-	`sha256:01eebbe99fda800667b67bb7312d17053a4f49d724700ead7fa139cf0b16cb26`  
+		Last Modified: Wed, 03 Oct 2018 12:20:51 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:stretch` - linux; arm64 variant v8
@@ -19905,14 +19905,14 @@ CMD ["redis-server"]
 ### `redis:stretch` - linux; 386
 
 ```console
-$ docker pull redis@sha256:5929f176cfd289a0d5ad58bf9f5868f7f66d1d94deb6e3cea295de648eb7d638
+$ docker pull redis@sha256:44d5e46da725defd327da9784465798210eb9dfe6414f08d220bc9fb35e74197
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32299370 bytes)**  
+-	Total Size: **32.3 MB (32299383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e84ffdf313a3be4e80c3db7ff538f9698e359bb517820c5420954712c5aee1`
+-	Image ID: `sha256:c57aa5029ffba7b3f8afcbf2370b4bd2c57e74a42d1fee3972a4b79995dd596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -19941,13 +19941,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Fri, 07 Sep 2018 00:32:33 GMT
 WORKDIR /data
-# Fri, 07 Sep 2018 00:32:33 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Fri, 07 Sep 2018 00:32:33 GMT
+# Wed, 03 Oct 2018 12:02:43 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:02:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 EXPOSE 6379/tcp
-# Fri, 07 Sep 2018 00:32:34 GMT
+# Wed, 03 Oct 2018 12:02:44 GMT
 CMD ["redis-server"]
 ```
 
@@ -19972,9 +19972,9 @@ CMD ["redis-server"]
 		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6e4aa4af1c5543d9e77526361fc8307a144895bc15edfb42e0fdff12a830fa`  
-		Last Modified: Fri, 07 Sep 2018 00:35:15 GMT  
-		Size: 402.0 B  
+	-	`sha256:82b64cfaf73ab18f9600bff0bff51fa9c2a6aa3b83911361938840ada5199d4c`  
+		Last Modified: Wed, 03 Oct 2018 12:04:27 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:stretch` - linux; ppc64le
@@ -20055,14 +20055,14 @@ CMD ["redis-server"]
 ### `redis:stretch` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:4c77447e824c75189bbfd49845a21401528e1a9de6583ad51bb8707ccf459a2b
+$ docker pull redis@sha256:26432e45ab8e0a9bc680ad6d25c12a893488c6ae5546a54b46d76351131df395
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32347335 bytes)**  
+-	Total Size: **32.3 MB (32347347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c4386f43d9375a5022662858ffa1598bff9f81f4d1efe02b784ac08a58b901`
+-	Image ID: `sha256:4e54d46f5e10dd5f74377d8491195142a229a70a5fed2a33c5be3edb75bc8834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -20091,13 +20091,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:36:04 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:36:04 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 12:25:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:11 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:36:05 GMT
+# Wed, 03 Oct 2018 12:25:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -20122,7 +20122,7 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:37:33 GMT  
 		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7833647a9762df8b84fca76f7641ebc50970f588a5717bd6bdae7f0b6f91d49`  
-		Last Modified: Wed, 05 Sep 2018 12:37:34 GMT  
-		Size: 403.0 B  
+	-	`sha256:7fa885d301b87928e2d6fcbc0a30178ca48aa64dac6de572a5fe6ccec1a97947`  
+		Last Modified: Wed, 03 Oct 2018 12:27:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
