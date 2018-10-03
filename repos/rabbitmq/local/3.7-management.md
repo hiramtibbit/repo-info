@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75472a5c510b61464a1791eaa76edf71080d5f9208388f0e018fdd79582330c3`
-- Created: `2018-09-21T19:21:19.278578414Z`
+- Image ID: `sha256:477e8d4fe4ef5c1c751ab3867f0c9dfcb0762c76c31f93ae1014b9f15cde1e5d`
+- Created: `2018-10-02T17:52:37.787186318Z`
 - Virtual Size: ~ 149.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1804,14 +1804,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-defaults/2.7.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python2.7=2.7.13-2+deb9u2`
+### `dpkg` source package: `python2.7=2.7.13-2+deb9u3`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.13-2+deb9u2`
-- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u2`
-- `python2.7=2.7.13-2+deb9u2`
-- `python2.7-minimal=2.7.13-2+deb9u2`
+- `libpython2.7-minimal:amd64=2.7.13-2+deb9u3`
+- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u3`
+- `python2.7=2.7.13-2+deb9u3`
+- `python2.7-minimal=2.7.13-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1835,17 +1835,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.dsc' python2.7_2.7.13-2+deb9u2.dsc 3370 SHA256:1a1df934fcbc46cbca5d53fa70fd039161dbc26720e6ce74f734c177db48ef8b
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.diff.gz' python2.7_2.7.13-2+deb9u2.diff.gz 281084 SHA256:8d5f7000cc8f684d2de712aa7a8782653389873ea952ee8859aafe79790e48d6
+$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.dsc' python2.7_2.7.13-2+deb9u3.dsc 3370 SHA256:07f864cef82aaf3741af4c89aa5bcc595c56c283c3ff61630c36171ce5aac9f3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.diff.gz' python2.7_2.7.13-2+deb9u3.diff.gz 284882 SHA256:4e7d5d372cb78eadc0fafa461a579a658ee245fcc1142234561406b45193c087
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rabbitmq-server=3.7.8-1`
 
