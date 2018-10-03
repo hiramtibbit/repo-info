@@ -1,7 +1,7 @@
 ## `nextcloud:apache`
 
 ```console
-$ docker pull nextcloud@sha256:bd33be6c58fea541a70ef9cb64499d3ea19eddc8b9eb9f7c12b418f7c85efa36
+$ docker pull nextcloud@sha256:c3dccdf14946b7bf7cc57086aa56ede4e997a773887d732ea33235d928df8140
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull nextcloud@sha256:bd33be6c58fea541a70ef9cb64499d3ea19eddc8b9eb9f7c1
 ### `nextcloud:apache` - linux; amd64
 
 ```console
-$ docker pull nextcloud@sha256:d5f91da031b4e2430d76d9fdcda80b5b7ce6c542b93b522eb7bdb62ed2fc82f6
+$ docker pull nextcloud@sha256:bc652d7ac81580c4cf9799ceb90556cdd45e692661d81fd613a00a7217866654
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.9 MB (195857587 bytes)**  
+-	Total Size: **195.9 MB (195858276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90058de5a0f0eb2967aae4c939d8e6237c635534677fe5cec821654efa4c5a21`
+-	Image ID: `sha256:334044518480e639df021fc816e7c035c0f45040e8457f534d7e3c1f45dfe612`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -108,13 +108,13 @@ RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo
 ENV NEXTCLOUD_VERSION=14.0.1
 # Fri, 28 Sep 2018 19:24:40 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 28 Sep 2018 19:24:40 GMT
-COPY multi:c5eef63d9e5eaba8c1b0bcde935f9bed33bacf2bf9ff56bfe4d8ac253916e66a in / 
-# Fri, 28 Sep 2018 19:24:41 GMT
-COPY multi:a4ce16f733fa0a4cb4b62b3fe3229e71f5a6b970a03b912772780cdb452098f4 in /usr/src/nextcloud/config/ 
-# Fri, 28 Sep 2018 19:24:41 GMT
+# Wed, 03 Oct 2018 17:21:07 GMT
+COPY multi:a919efb1f937b9a3a6b09b4b5fb3b88598bd67d5005046f934901c70b52c2ec7 in / 
+# Wed, 03 Oct 2018 17:21:08 GMT
+COPY multi:eac8745b44f3120ecace4002549feaf5db1821ce8d3a1b02a8dfca5dac5abba0 in /usr/src/nextcloud/config/ 
+# Wed, 03 Oct 2018 17:21:08 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 28 Sep 2018 19:24:41 GMT
+# Wed, 03 Oct 2018 17:21:08 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -199,13 +199,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 28 Sep 2018 19:26:22 GMT  
 		Size: 55.0 MB (54989173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7618757b84e242c28d03363db4fb06afba2215e6742edc6d3682d5c618504cb5`  
-		Last Modified: Fri, 28 Sep 2018 19:26:11 GMT  
-		Size: 999.0 B  
+	-	`sha256:93ed394609ba480ee851cf70f12f778686a497f1e73fb57dee7b84ef579beb49`  
+		Last Modified: Wed, 03 Oct 2018 17:25:57 GMT  
+		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07344e658326e9b97600f9e28c9c1c31719bfc35eeee6aa24c6fedc0b9cab2b7`  
-		Last Modified: Fri, 28 Sep 2018 19:26:11 GMT  
-		Size: 851.0 B  
+	-	`sha256:cec2d06937f2771bdf7705b0edc863ada302727c0a48c9fe038e0f65f2e54c63`  
+		Last Modified: Wed, 03 Oct 2018 17:25:57 GMT  
+		Size: 810.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:apache` - linux; arm variant v5
