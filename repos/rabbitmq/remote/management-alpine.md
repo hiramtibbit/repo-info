@@ -1,7 +1,7 @@
 ## `rabbitmq:management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:520042dd7fd7d964a667f8f2bc8557109d9f0e7c3af72fb3ab4475331ec9c8a4
+$ docker pull rabbitmq@sha256:664d3b8ab990c2677316fab55b613619ac8b9186cc0bb310012ac1bd67f77097
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -127,14 +127,14 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:a2b41b6e35bc8944672953ee9be9bafc26f20d6e9490576b6015ae289d47ca8c
+$ docker pull rabbitmq@sha256:f00ca729859e9e79d3c83fe7eecc9e668200644038b91526b29b4b24328107e1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (38952654 bytes)**  
+-	Total Size: **39.0 MB (38952718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a4912a3780a00f636017b7ec22285b11c480215f5c9148fb6f67b82dab0fcb9`
+-	Image ID: `sha256:c400e993c0840d3f5c76ae0b155455c181c986f36a34f043418cbaed0e7aced5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -175,19 +175,19 @@ VOLUME [/var/lib/rabbitmq]
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 # Sat, 22 Sep 2018 07:49:40 GMT
 RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
-# Sat, 22 Sep 2018 07:49:41 GMT
-COPY file:03f4165e1aefa09a8d97a5e402638f735384652cec9e89f399f563063d59ab58 in /usr/local/bin/ 
-# Sat, 22 Sep 2018 07:49:41 GMT
+# Wed, 03 Oct 2018 07:52:22 GMT
+COPY file:501135c6bc150ebaf0c386365e25f7d2d6534a7b6e58846e059817326c136228 in /usr/local/bin/ 
+# Wed, 03 Oct 2018 07:52:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 22 Sep 2018 07:49:41 GMT
+# Wed, 03 Oct 2018 07:52:23 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Sat, 22 Sep 2018 07:49:42 GMT
+# Wed, 03 Oct 2018 07:52:24 GMT
 CMD ["rabbitmq-server"]
-# Sat, 22 Sep 2018 07:49:59 GMT
+# Wed, 03 Oct 2018 07:52:40 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Sat, 22 Sep 2018 07:50:09 GMT
+# Wed, 03 Oct 2018 07:52:50 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python; 	rabbitmqadmin --version
-# Sat, 22 Sep 2018 07:50:10 GMT
+# Wed, 03 Oct 2018 07:52:51 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
@@ -228,17 +228,17 @@ EXPOSE 15671/tcp 15672/tcp
 		Last Modified: Sat, 22 Sep 2018 07:50:31 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bcce22d98cb3045f9edc61ff44926f9ca03a0dcfb0ee50b0f5c5071cbb4ed55`  
-		Last Modified: Sat, 22 Sep 2018 07:50:31 GMT  
-		Size: 4.2 KB (4181 bytes)  
+	-	`sha256:46a5442ab272c745f9ce6c1d1fe88e6191ee3b301f42a8bb163d75e853d70283`  
+		Last Modified: Wed, 03 Oct 2018 07:53:32 GMT  
+		Size: 4.2 KB (4204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f32aa0580787db67b407557e59c97438915e6fb9bdbdb4b92a25422db52edc3`  
-		Last Modified: Sat, 22 Sep 2018 07:50:54 GMT  
-		Size: 192.0 B  
+	-	`sha256:52b2361ed4ecea187e68d0c40c6d24623220ca51b3c6128b3bc1753ffa07f66d`  
+		Last Modified: Wed, 03 Oct 2018 07:53:54 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51bdb320194c15a1a05c6c05c0ad095e2c94f82073e99ec5c2b84cd8021180a1`  
-		Last Modified: Sat, 22 Sep 2018 07:50:58 GMT  
-		Size: 10.9 MB (10880738 bytes)  
+	-	`sha256:977bdc94ebd12ef13d20dd68387dab23a712f219183de3d3f47e7a51de8d574c`  
+		Last Modified: Wed, 03 Oct 2018 07:54:00 GMT  
+		Size: 10.9 MB (10880777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; arm64 variant v8
