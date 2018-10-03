@@ -3430,14 +3430,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-157.207
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-157.207.dsc' linux_3.13.0-157.207.dsc 7833 SHA256:a8770356e9007b13fa27a12062ccafe6f61186b4de376d291975bc38e82ef25e
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-157.207.diff.gz' linux_3.13.0-157.207.diff.gz 9739739 SHA256:31d9ce0abfc6221e68f085d6ac735beec8ae5f36bc87ef7542befe68d9d0c710
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
