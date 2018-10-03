@@ -1,7 +1,7 @@
 ## `redis:stretch`
 
 ```console
-$ docker pull redis@sha256:911f976312f503692709ad9534f15e2564a0967f2aa6dd08a74c684fb1e53e1a
+$ docker pull redis@sha256:233dced916e9a07f7e6488834731ad9ea59a7bbcb12b50f5742c68c6d1f315a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -92,14 +92,14 @@ CMD ["redis-server"]
 ### `redis:stretch` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:aa4eda9e0105601a37442f8f6ae5598b5ffddda9e3992a68872d779ba2c73488
+$ docker pull redis@sha256:38f47b32de10106f3db2599dd5868264bdc8a003d70e41298847c112d532c3af
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.5 MB (30514637 bytes)**  
+-	Total Size: **30.5 MB (30514652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:841674e79e249538ab80a229252aca16115c10a804477130d94336d0f0d2b3ef`
+-	Image ID: `sha256:7cbc82ebe4598d442dc5d5f319596cfb106b852ef4e8643e8a899c4c6c4731d3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -128,13 +128,13 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME [/data]
 # Wed, 05 Sep 2018 12:42:55 GMT
 WORKDIR /data
-# Wed, 05 Sep 2018 12:42:56 GMT
-COPY file:9c29fbe8374a97f9c2d953c9c8b7224554607eeb7a610a930844f2bec678265c in /usr/local/bin/ 
-# Wed, 05 Sep 2018 12:42:56 GMT
+# Wed, 03 Oct 2018 09:07:22 GMT
+COPY file:b63bb2d2b8d095988c9ca3d261a6153681a0107ca332050c5df612429b4703dc in /usr/local/bin/ 
+# Wed, 03 Oct 2018 09:07:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Sep 2018 12:42:57 GMT
+# Wed, 03 Oct 2018 09:07:23 GMT
 EXPOSE 6379/tcp
-# Wed, 05 Sep 2018 12:42:57 GMT
+# Wed, 03 Oct 2018 09:07:24 GMT
 CMD ["redis-server"]
 ```
 
@@ -159,9 +159,9 @@ CMD ["redis-server"]
 		Last Modified: Wed, 05 Sep 2018 12:44:46 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9394dbaf8090b4970b4fe395550ce3c9388d243ced208f6cc182aed26fe05d42`  
-		Last Modified: Wed, 05 Sep 2018 12:44:46 GMT  
-		Size: 403.0 B  
+	-	`sha256:5ab1467f9e005f711e8caa01fc43a016739c3cc50dc1e189ca7ed9a123853ae6`  
+		Last Modified: Wed, 03 Oct 2018 09:08:54 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:stretch` - linux; arm variant v7

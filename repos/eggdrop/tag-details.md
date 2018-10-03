@@ -201,12 +201,13 @@ CMD ["eggdrop.conf"]
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:b6f3edff6d93dc29cd5b780c8370bd94a4f691d21f62e4b58b346b947c51f539
+$ docker pull eggdrop@sha256:7d9271302c1e0c0b43d7694f474d6a09333869a18810da9a91df02a7a6066c44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v6
 
 ### `eggdrop:develop` - linux; amd64
 
@@ -295,6 +296,101 @@ CMD ["eggdrop.conf"]
 	-	`sha256:71788901a3240b2d442e017fa44f891aeeac71e263646899002ff14674d8afda`  
 		Last Modified: Mon, 17 Sep 2018 20:22:42 GMT  
 		Size: 708.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `eggdrop:develop` - linux; arm variant v6
+
+```console
+$ docker pull eggdrop@sha256:551b729b5a2cbfb31a8ef02efe27fd990a716bcdc79ca10a4514980f73626196
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **13.3 MB (13296664 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f936da87e64e5c556af19aed516e1627e03cfd91f6ea2a27ae3e18dbccf04e5f`
+-	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
+-	Default Command: `["eggdrop.conf"]`
+
+```dockerfile
+# Wed, 12 Sep 2018 07:49:32 GMT
+ADD file:47756a54e89ec523296aa20963b604f1619f1346f5ef85cd184d29694b45ca41 in / 
+# Wed, 12 Sep 2018 07:49:33 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 12 Sep 2018 07:49:34 GMT
+CMD ["/bin/sh"]
+# Wed, 03 Oct 2018 07:49:30 GMT
+MAINTAINER Geo Van O <geo@eggheads.org>
+# Wed, 03 Oct 2018 07:49:31 GMT
+RUN adduser -S eggdrop
+# Wed, 03 Oct 2018 07:49:32 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 03 Oct 2018 07:49:32 GMT
+ENV EGGDROP_SHA256=74212f33f8c44be68ea6bd8c41f636620771328f9e8dc1549e218e637efbc9bc
+# Wed, 03 Oct 2018 07:49:33 GMT
+ENV EGGDROP_COMMIT=83d237a1d82a74dd36c86bacd4b833131143c062
+# Wed, 03 Oct 2018 07:49:37 GMT
+RUN apk --update add --no-cache tcl bash openssl
+# Wed, 03 Oct 2018 07:51:11 GMT
+RUN apk --update add --no-cache --virtual egg-deps tcl-dev wget ca-certificates make tar gpgme build-base openssl-dev   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256  develop.tar.gz" | sha256sum -c -   && tar -zxvf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && make     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del egg-deps
+# Wed, 03 Oct 2018 07:51:11 GMT
+ENV NICK=
+# Wed, 03 Oct 2018 07:51:11 GMT
+ENV SERVER=
+# Wed, 03 Oct 2018 07:51:12 GMT
+ENV LISTEN=3333
+# Wed, 03 Oct 2018 07:51:12 GMT
+ENV OWNER=
+# Wed, 03 Oct 2018 07:51:12 GMT
+ENV USERFILE=eggdrop.user
+# Wed, 03 Oct 2018 07:51:12 GMT
+ENV CHANFILE=eggdrop.chan
+# Wed, 03 Oct 2018 07:51:13 GMT
+WORKDIR /home/eggdrop/eggdrop
+# Wed, 03 Oct 2018 07:51:13 GMT
+EXPOSE 3333/tcp
+# Wed, 03 Oct 2018 07:51:14 GMT
+COPY file:d80744926cf822928c4fc2c3f9107364df320eecb3ae407a3a5419a43ae4b872 in /home/eggdrop/eggdrop 
+# Wed, 03 Oct 2018 07:51:14 GMT
+COPY file:919804e5ddd4c807c178caccfed03e9d75a459fe0f744c3a1ada109817cb44ec in /home/eggdrop/eggdrop/scripts/ 
+# Wed, 03 Oct 2018 07:51:14 GMT
+ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
+# Wed, 03 Oct 2018 07:51:15 GMT
+CMD ["eggdrop.conf"]
+```
+
+-	Layers:
+	-	`sha256:c2dacc7b3755044bd80e7edb446986de7cfade7636ea19f3b7eb64e8c88bf3fd`  
+		Last Modified: Wed, 12 Sep 2018 07:50:02 GMT  
+		Size: 2.1 MB (2051097 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:684756a9d4ca4d4de310f5d47bb7c15bd0065aa787da5bab1736082d28281370`  
+		Last Modified: Wed, 12 Sep 2018 07:50:03 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a1804d6773d9f5a54c9a145caaf4c5f560110db9a83993961b02028402ac18d`  
+		Last Modified: Wed, 03 Oct 2018 07:51:26 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f0330c2151a31411d3194b5631c9d760390fbeb2bd95cbeb9beacd665d63db9`  
+		Last Modified: Wed, 03 Oct 2018 07:51:25 GMT  
+		Size: 9.0 KB (9021 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:52c4abcf96d30dd12df46b6b471c04c9d96dba944bb886b5f9527f49df5b37c2`  
+		Last Modified: Wed, 03 Oct 2018 07:51:27 GMT  
+		Size: 3.9 MB (3945060 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fe32f7d6af3dfff84cefbffcb9a4c20861ade192ba1551271807fe9e07c52d02`  
+		Last Modified: Wed, 03 Oct 2018 07:51:26 GMT  
+		Size: 7.3 MB (7287447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8bb000c29205e7d243727b5e9efcf4705ccf5342a0bc0408723ab155b9f5bb0`  
+		Last Modified: Wed, 03 Oct 2018 07:51:24 GMT  
+		Size: 1.9 KB (1878 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62b6858f948d77b85eb26cceab5d4a7474641dc06db9e2730b14d9b5f41be718`  
+		Last Modified: Wed, 03 Oct 2018 07:51:24 GMT  
+		Size: 703.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:latest`
