@@ -1,7 +1,7 @@
 ## `openjdk:8u181-nanoserver-sac2016`
 
 ```console
-$ docker pull openjdk@sha256:98d0b1be8932c14281f58496c173b110815b31ce86ae1c088cd2e3bdc2c098c6
+$ docker pull openjdk@sha256:9ab28f424b8931f021db48d48d75d514dfd7ff693b798c5967d831c38289c24f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:98d0b1be8932c14281f58496c173b110815b31ce86ae1c088cd
 ### `openjdk:8u181-nanoserver-sac2016` - windows version 10.0.14393.2485; amd64
 
 ```console
-$ docker pull openjdk@sha256:604885b6ffdd39cff3c9b8fbca3c93fd338c2a96cebfe5f79983b8a233db95c0
+$ docker pull openjdk@sha256:3498fd02835f380b452ffc274aa5bf2f6ce6a6f805cef80ccc94d8c357ff9a77
 ```
 
 -	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **542.0 MB (541991015 bytes)**  
+-	Total Size: **546.1 MB (546050278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4b00d80f21b60e3594ca7588092a7417e8db9654e3af8552e85083d4f52f76e`
+-	Image ID: `sha256:410df3f37881712fc35fca02429faa6f2060b555b9ce1015badd0a5f10f3d0b4`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -43,8 +43,8 @@ ENV JAVA_OJDKBUILD_VERSION=1.8.0.181-1
 ENV JAVA_OJDKBUILD_ZIP=java-1.8.0-openjdk-1.8.0.181-1.b13.ojdkbuild.windows.x86_64.zip
 # Thu, 13 Sep 2018 10:22:02 GMT
 ENV JAVA_OJDKBUILD_SHA256=dd7d2ea7951c06857523e95359e5e94630039a1eae5b5223e4b8c308afc95ebb
-# Thu, 13 Sep 2018 10:23:12 GMT
-RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -f $env:JAVA_OJDKBUILD_VERSION, $env:JAVA_OJDKBUILD_ZIP); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'ojdkbuild.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_OJDKBUILD_SHA256); 	if ((Get-FileHash ojdkbuild.zip -Algorithm sha256).Hash -ne $env:JAVA_OJDKBUILD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive ojdkbuild.zip -DestinationPath C:\; 		Write-Host 'Renaming ...'; 	Move-Item 		-Path ('C:\{0}' -f ($env:JAVA_OJDKBUILD_ZIP -Replace '.zip$', '')) 		-Destination $env:JAVA_HOME 	; 		Write-Host 'Verifying install ...'; 	Write-Host '  java -version'; java -version; 	Write-Host '  javac -version'; javac -version; 		Write-Host 'Removing ...'; 	Remove-Item ojdkbuild.zip -Force; 		Write-Host 'Complete.';
+# Wed, 03 Oct 2018 11:05:17 GMT
+RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -f $env:JAVA_OJDKBUILD_VERSION, $env:JAVA_OJDKBUILD_ZIP); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'ojdkbuild.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_OJDKBUILD_SHA256); 	if ((Get-FileHash ojdkbuild.zip -Algorithm sha256).Hash -ne $env:JAVA_OJDKBUILD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive ojdkbuild.zip -DestinationPath C:\; 		Write-Host 'Renaming ...'; 	Move-Item 		-Path ('C:\{0}' -f ($env:JAVA_OJDKBUILD_ZIP -Replace '.zip$', '')) 		-Destination $env:JAVA_HOME 	; 		Write-Host 'Verifying install ...'; 	Write-Host '  java --version'; java --version; 	Write-Host '  javac --version'; javac --version; 		Write-Host 'Removing ...'; 	Remove-Item ojdkbuild.zip -Force; 		Write-Host 'Complete.';
 ```
 
 -	Layers:
@@ -88,7 +88,7 @@ RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -
 		Last Modified: Thu, 13 Sep 2018 10:35:24 GMT  
 		Size: 951.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60c4a1309fad2cc2eac165a762b398a0b7f0d4dedea3ca4f2f9e4d5c058920e4`  
-		Last Modified: Thu, 13 Sep 2018 10:35:39 GMT  
-		Size: 106.9 MB (106945023 bytes)  
+	-	`sha256:8d7ca94cfaa5df89ce863abca57fd8b05e28576433612eb9d8b0a64fb2abbc39`  
+		Last Modified: Wed, 03 Oct 2018 11:16:57 GMT  
+		Size: 111.0 MB (111004286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `openjdk:10-jdk-windowsservercore-1709`
 
 ```console
-$ docker pull openjdk@sha256:d1b938ae13cfa046c5f3b3dc7a7df0570bf80abbdc836c2fcc0b901cb38fae3d
+$ docker pull openjdk@sha256:ae75b5c882c97e7feee05f18771db3d0192f0a8b11e79f150130f99d8f9c5391
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:d1b938ae13cfa046c5f3b3dc7a7df0570bf80abbdc836c2fcc0
 ### `openjdk:10-jdk-windowsservercore-1709` - windows version 10.0.16299.665; amd64
 
 ```console
-$ docker pull openjdk@sha256:4295da7ad3fce16562b6b4edfe02917d28d9a168969c56b2d405e7fdc94fabab
+$ docker pull openjdk@sha256:7506501881f464d6135da2a71eb4db64134264fd93d5e5af9a7a58cc11418bf9
 ```
 
 -	Docker Version: 17.06.2-ee-13
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 GB (3416390744 bytes)**  
+-	Total Size: **3.4 GB (3416422597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e73dfe9deff8f70e9cf85f498b4d943aa34af6fcd323558e2212a6bdda16d557`
+-	Image ID: `sha256:fef515bee09f38e1ff6b65eaa8d030c74e86b203d70e984d81c04820592c2985`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -41,9 +41,9 @@ ENV JAVA_OJDKBUILD_VERSION=10.0.2-1
 ENV JAVA_OJDKBUILD_ZIP=java-10-openjdk-10.0.2-1.b13.ojdkbuild.windows.x86_64.zip
 # Thu, 13 Sep 2018 10:11:07 GMT
 ENV JAVA_OJDKBUILD_SHA256=39801db76f04b9f1491b0d0a64258535f14e319a3cd08d3e161b18a6af7a842d
-# Thu, 13 Sep 2018 10:13:40 GMT
-RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -f $env:JAVA_OJDKBUILD_VERSION, $env:JAVA_OJDKBUILD_ZIP); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'ojdkbuild.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_OJDKBUILD_SHA256); 	if ((Get-FileHash ojdkbuild.zip -Algorithm sha256).Hash -ne $env:JAVA_OJDKBUILD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive ojdkbuild.zip -DestinationPath C:\; 		Write-Host 'Renaming ...'; 	Move-Item 		-Path ('C:\{0}' -f ($env:JAVA_OJDKBUILD_ZIP -Replace '.zip$', '')) 		-Destination $env:JAVA_HOME 	; 		Write-Host 'Verifying install ...'; 	Write-Host '  java -version'; java -version; 	Write-Host '  javac -version'; javac -version; 		Write-Host 'Removing ...'; 	Remove-Item ojdkbuild.zip -Force; 		Write-Host 'Complete.';
-# Thu, 13 Sep 2018 10:13:43 GMT
+# Wed, 03 Oct 2018 10:52:50 GMT
+RUN $url = ('https://github.com/ojdkbuild/ojdkbuild/releases/download/{0}/{1}' -f $env:JAVA_OJDKBUILD_VERSION, $env:JAVA_OJDKBUILD_ZIP); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'ojdkbuild.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_OJDKBUILD_SHA256); 	if ((Get-FileHash ojdkbuild.zip -Algorithm sha256).Hash -ne $env:JAVA_OJDKBUILD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive ojdkbuild.zip -DestinationPath C:\; 		Write-Host 'Renaming ...'; 	Move-Item 		-Path ('C:\{0}' -f ($env:JAVA_OJDKBUILD_ZIP -Replace '.zip$', '')) 		-Destination $env:JAVA_HOME 	; 		Write-Host 'Verifying install ...'; 	Write-Host '  java --version'; java --version; 	Write-Host '  javac --version'; javac --version; 		Write-Host 'Removing ...'; 	Remove-Item ojdkbuild.zip -Force; 		Write-Host 'Complete.';
+# Wed, 03 Oct 2018 10:52:52 GMT
 CMD ["jshell"]
 ```
 
@@ -84,11 +84,11 @@ CMD ["jshell"]
 		Last Modified: Thu, 13 Sep 2018 10:31:58 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0f9d656ffb289035ae0473e7793936997334b6c07e1fbb3cd2af5b067b85786`  
-		Last Modified: Thu, 13 Sep 2018 10:32:30 GMT  
-		Size: 279.0 MB (279023226 bytes)  
+	-	`sha256:4b6fddeac375ea58beb945f5660ebccd5ddefd09d541ea02c83c6e5a515e6846`  
+		Last Modified: Wed, 03 Oct 2018 11:13:02 GMT  
+		Size: 279.1 MB (279055075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f011aef4dcc9607c11babb96972049c57fa2e8073fd22b7fb9aa8e0303d999cf`  
-		Last Modified: Thu, 13 Sep 2018 10:31:59 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:6522c6325c1a45a71a89f2e530697f2a63f589ffd5ad483d4d11621d311dc003`  
+		Last Modified: Wed, 03 Oct 2018 11:12:30 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
