@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:801a2721cf817cfec760cd52f10ef3df09cbd3152681c7a85541c7803a28f758`
-- Created: `2018-09-26T00:35:26.030749604Z`
+- Image ID: `sha256:120ae2b5f1bfebd6d9de0edee129d404c62659158a7cc4809c23ca230ebfa7d8`
+- Created: `2018-10-02T18:21:52.162237073Z`
 - Virtual Size: ~ 751.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2739,20 +2739,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u4
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.dsc' linux_4.9.110-3+deb9u4.dsc 123390 SHA256:879d1cde4a145e71c4ff435e0fb1563eb9e7bcf2010f5b7de6e1be72074aaa0e
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u4.debian.tar.xz' linux_4.9.110-3+deb9u4.debian.tar.xz 2604644 SHA256:d88c3ffe100742a234c57913dbc1b87d2ac9d10617f8e8f20d533ecfa237582f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/
 
-- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.110-3+deb9u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
