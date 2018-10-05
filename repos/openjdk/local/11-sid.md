@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f6f32c2da6b0ef5e7009cc2806b1e5d9fbd1217cbe3ebefc1bef10d48792d25`
-- Created: `2018-09-28T18:24:03.115049055Z`
-- Virtual Size: ~ 964.19 Mb  
+- Image ID: `sha256:789ec485fd4dcc5d5f2f0b8138076a4707f8ffe166debf42e2d61cab7b16b1aa`
+- Created: `2018-10-04T20:21:02.578721385Z`
+- Virtual Size: ~ 964.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=11`
-  - `JAVA_DEBIAN_VERSION=11~28-2`
+  - `JAVA_DEBIAN_VERSION=11~28-3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -259,20 +259,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk-bridge2.0-0/copyright`)
 - `LGPL-2+`
 - `Unlimited`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-atk=2.30.0-1
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.30.0-1.dsc' at-spi2-atk_2.30.0-1.dsc 2544 SHA256:8e01ae510fbbc9bae53d62a549e259bd35b1c4ec58ca2d3ed2b90bb7e16def10
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.30.0.orig.tar.xz' at-spi2-atk_2.30.0.orig.tar.xz 94824 SHA256:e2e1571004ea7b105c969473ce455a95be4038fb2541471714aeb33a26da8a9a
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.30.0-1.debian.tar.xz' at-spi2-atk_2.30.0-1.debian.tar.xz 10168 SHA256:cae66ea7ad1ae99822825da0b54a405b8c92d5133664a7d2c077b8949453820a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-atk/2.30.0-1/
 
-- https://sources.debian.net/src/at-spi2-atk/2.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-atk/2.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-atk/2.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-core=2.30.0-2`
 
@@ -593,19 +586,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.244
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.244.dsc' cdebconf_0.244.dsc 2781 SHA256:2865d3d072fc54e0e07f52ac83ec7b5659e6a11ae06e6f6d9d8de8025ff8b658
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.244.tar.xz' cdebconf_0.244.tar.xz 274480 SHA256:0dd89645937298574347680f29dfebd154b325f22f7635d143dd8eff858c2b25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.244/
 
-- https://sources.debian.net/src/cdebconf/0.244/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.244/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.244/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `colord=1.4.3-3`
 
@@ -1651,13 +1638,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gsettings-desktop-schemas/3.28.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gsettings-desktop-schemas/3.28.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gtk+3.0=3.24.0-3`
+### `dpkg` source package: `gtk+3.0=3.24.1-2`
 
 Binary Packages:
 
-- `gtk-update-icon-cache=3.24.0-3`
-- `libgtk-3-0:amd64=3.24.0-3`
-- `libgtk-3-common=3.24.0-3`
+- `gtk-update-icon-cache=3.24.1-2`
+- `libgtk-3-0:amd64=3.24.1-2`
+- `libgtk-3-common=3.24.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/share/doc/libgtk-3-0/copyright`, `/usr/share/doc/libgtk-3-common/copyright`)
 
@@ -1670,13 +1657,20 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gtk+3.0=3.24.1-2
+'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.dsc' gtk+3.0_3.24.1-2.dsc 3770 SHA256:c3f5652583f64a7b6d955b5abeea9c98b9b018f38442047012a5ddce03fcde08
+'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1.orig.tar.xz' gtk+3.0_3.24.1.orig.tar.xz 19307612 SHA256:68387be307b99aadcdc653561d7a2a7f0113b93561fb18ded7075ec9ced5b02f
+'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.debian.tar.xz' gtk+3.0_3.24.1-2.debian.tar.xz 148728 SHA256:f3c3ccda2bb07fa13dea3e4595d1a0dbd7a320c5a8f3ea084fd662823c19393c
+```
 
-- http://snapshot.debian.org/package/gtk+3.0/3.24.0-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gtk+3.0/3.24.1-2/ (for browsing the source)
+- https://sources.debian.net/src/gtk+3.0/3.24.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2`
 
@@ -1764,19 +1758,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.20
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.20.dsc' hostname_3.20.dsc 1429 SHA256:1fd7b0b2b61e58aa0e50de4d375072c938cb3cc4b722bc73e085e3a3691d9114
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.20.tar.gz' hostname_3.20.tar.gz 13336 SHA256:e7ed56f8c532573ff34d9bd6e7a10d04fbbb2c7fae187898805868e5fed24ab0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.20/
 
-- https://sources.debian.net/src/hostname/3.20/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu-le-hb=1.0.3+git161113-5`
 
@@ -4050,14 +4038,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~28-2`
+### `dpkg` source package: `openjdk-11=11~28-3`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11~28-2`
-- `openjdk-11-jdk-headless:amd64=11~28-2`
-- `openjdk-11-jre:amd64=11~28-2`
-- `openjdk-11-jre-headless:amd64=11~28-2`
+- `openjdk-11-jdk:amd64=11~28-3`
+- `openjdk-11-jdk-headless:amd64=11~28-3`
+- `openjdk-11-jre:amd64=11~28-3`
+- `openjdk-11-jre-headless:amd64=11~28-3`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -4069,17 +4057,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~28-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-2.dsc' openjdk-11_11~28-2.dsc 4531 SHA256:f9086799e55a9b77ce614ac52fe76d6e51a9ca1fafdf16276dd44971fd8ad771
+$ apt-get source -qq --print-uris openjdk-11=11~28-3
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.dsc' openjdk-11_11~28-3.dsc 4539 SHA256:9cbd1ca2d9ffd04946a384c86ea6a73fdee0d4036a1395c3948a8a7799c16467
 'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28.orig.tar.xz' openjdk-11_11~28.orig.tar.xz 75178272 SHA256:95556aa3253a4d2d95a61e673da1dc721123a9bd0b7f14611542f41556877a47
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-2.debian.tar.xz' openjdk-11_11~28-2.debian.tar.xz 163708 SHA256:dd8fe8f7b48060368d7b091755e20b192188fb4049384165db7ada74b81c56b7
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.debian.tar.xz' openjdk-11_11~28-3.debian.tar.xz 162992 SHA256:3f95d31f562146a7bbfb6da3873427064e98804da4c9fdc6af2ff25271203967
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~28-2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~28-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~28-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11~28-3/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11~28-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11~28-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
