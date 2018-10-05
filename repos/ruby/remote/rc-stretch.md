@@ -1,7 +1,7 @@
 ## `ruby:rc-stretch`
 
 ```console
-$ docker pull ruby@sha256:b314073f2181d3904a584820819fd52784ed0e436d08b3b017be48ba72c64e34
+$ docker pull ruby@sha256:93b26b944902a3e3f73b2822211e0861a1b7eff2d538d079cea366d5e189eaf4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull ruby@sha256:b314073f2181d3904a584820819fd52784ed0e436d08b3b017be48
 ### `ruby:rc-stretch` - linux; amd64
 
 ```console
-$ docker pull ruby@sha256:c5834aaed60a1bd255516d740808cd9622f5d87d4b021458ed6470e6520d7172
+$ docker pull ruby@sha256:256a20ae08ab0fae051b9c173c525c97c1288039e937c3ccb0159bea496f8f83
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345529183 bytes)**  
+-	Total Size: **345.5 MB (345531056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78cf6c8cfd27c0efa7989eea9a2f6741c8430e19405783105e315da08b3537d8`
+-	Image ID: `sha256:842a53eac26475e4ee71e001c73e17997d8ae0d22db915f20fb8ba122b2f0f35`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -50,19 +50,19 @@ ENV RUBY_VERSION=2.6.0-preview2
 ENV RUBY_DOWNLOAD_SHA256=00ddfb5e33dee24469dd0b203597f7ecee66522ebb496f620f5815372ea2d3ec
 # Wed, 05 Sep 2018 05:31:14 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Thu, 20 Sep 2018 20:39:07 GMT
-ENV BUNDLER_VERSION=1.16.5
-# Thu, 20 Sep 2018 20:41:31 GMT
+# Fri, 05 Oct 2018 21:25:19 GMT
+ENV BUNDLER_VERSION=1.16.6
+# Fri, 05 Oct 2018 21:28:07 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Thu, 20 Sep 2018 20:41:32 GMT
+# Fri, 05 Oct 2018 21:28:07 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 20 Sep 2018 20:41:32 GMT
+# Fri, 05 Oct 2018 21:28:07 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 20 Sep 2018 20:41:32 GMT
+# Fri, 05 Oct 2018 21:28:08 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 20 Sep 2018 20:41:33 GMT
+# Fri, 05 Oct 2018 21:28:08 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Thu, 20 Sep 2018 20:41:33 GMT
+# Fri, 05 Oct 2018 21:28:09 GMT
 CMD ["irb"]
 ```
 
@@ -91,13 +91,13 @@ CMD ["irb"]
 		Last Modified: Wed, 05 Sep 2018 06:49:25 GMT  
 		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c31a1508b616055475ab1e14058c552bc4da37f85f2b2472455b6c69a3dca652`  
-		Last Modified: Thu, 20 Sep 2018 21:46:47 GMT  
-		Size: 21.9 MB (21868007 bytes)  
+	-	`sha256:fe8da94714066fe050e0a052879f0182ff082466126fd217ae33a79ebd134b4b`  
+		Last Modified: Fri, 05 Oct 2018 22:26:14 GMT  
+		Size: 21.9 MB (21869881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a52f6be463d25bd442c7de5910be77a2ab227a409ae56b71af43fc030d892334`  
-		Last Modified: Thu, 20 Sep 2018 21:46:42 GMT  
-		Size: 148.0 B  
+	-	`sha256:e39831061d2f0230bc20bee1ddeaf521cf47157c40228ac70dc126d02f82eb04`  
+		Last Modified: Fri, 05 Oct 2018 22:26:11 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc-stretch` - linux; arm variant v5
