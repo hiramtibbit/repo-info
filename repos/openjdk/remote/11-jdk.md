@@ -1,7 +1,7 @@
 ## `openjdk:11-jdk`
 
 ```console
-$ docker pull openjdk@sha256:94ec61f98aebc632bf02751ec381c97d97ea46e7024754091d2efcfb0000ecdb
+$ docker pull openjdk@sha256:c276e44e3b11a54a309992337ae177f7441d69ce2a8a381bbd813640f7d27c4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -485,14 +485,14 @@ CMD ["jshell"]
 ### `openjdk:11-jdk` - linux; s390x
 
 ```console
-$ docker pull openjdk@sha256:f9557a0625055390a33fa7b8580cb66f4acccab917a2c5457e68fc6567109767
+$ docker pull openjdk@sha256:d9d7f5a756ca000dc0f964e64bb5aa6a298bcb47e4f7d3f245b247ea07b2ce2e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **446.1 MB (446133895 bytes)**  
+-	Total Size: **446.0 MB (446045818 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a249c26e9e88e8dd685ba2534086c2caba4a9df04587410703f3f78e586421a8`
+-	Image ID: `sha256:16caafad21f298de13c6d9d44b6cadab767775e500a8711407741257fcd0232c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -518,11 +518,11 @@ RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-
 ENV JAVA_HOME=/docker-java-home
 # Sat, 29 Sep 2018 11:55:25 GMT
 ENV JAVA_VERSION=11
-# Sat, 29 Sep 2018 11:55:25 GMT
-ENV JAVA_DEBIAN_VERSION=11~28-2
-# Sat, 29 Sep 2018 11:58:03 GMT
+# Fri, 05 Oct 2018 12:01:59 GMT
+ENV JAVA_DEBIAN_VERSION=11~28-3
+# Fri, 05 Oct 2018 12:04:13 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Sat, 29 Sep 2018 11:58:04 GMT
+# Fri, 05 Oct 2018 12:04:14 GMT
 CMD ["jshell"]
 ```
 
@@ -555,7 +555,7 @@ CMD ["jshell"]
 		Last Modified: Sat, 08 Sep 2018 12:12:25 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331352f9d09b281b4228c5badf37466767a05182d09309915320cada040014ec`  
-		Last Modified: Sat, 29 Sep 2018 12:14:59 GMT  
-		Size: 330.6 MB (330606916 bytes)  
+	-	`sha256:47a7d38ece57541574b69dafb681e24fe0bdbad2f460f894c88fd7a0749af159`  
+		Last Modified: Fri, 05 Oct 2018 12:09:14 GMT  
+		Size: 330.5 MB (330518839 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
