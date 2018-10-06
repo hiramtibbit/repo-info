@@ -65,14 +65,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.9.dsc' apparmor_2.10.95-0ubuntu2.9.dsc 3252 SHA256:e0ffa6f0c0610e68e87bdc44af9c86dd02e4e98fbed4a4ac531ea8ebd112a6f0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.9.debian.tar.xz' apparmor_2.10.95-0ubuntu2.9.debian.tar.xz 97000 SHA256:22afd37e164269a152f37bd33e5c3fd208dbd35b324e9a0d13154acc45792be9
-```
 
 ### `dpkg` source package: `apr-util=1.5.4-1build1`
 
@@ -1599,14 +1594,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.12
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.12.dsc' imagemagick_6.8.9.9-7ubuntu5.12.dsc 4337 SHA256:646994dc0ef01a6c519854e5167aadbaaeb315f04cc125eeb22860ec2a37f6b8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.12.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.12.debian.tar.xz 299280 SHA256:8bb4c6cd4dd946972853e7ab7326eb820dc5287562422f18ba1006c7e2af1b3c
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 

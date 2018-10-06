@@ -411,14 +411,13 @@ Licenses: (parsed from: `/usr/share/doc/python-configobj/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris configobj=5.0.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-2.dsc' configobj_5.0.6-2.dsc 2381 SHA256:9bb8577128460ff33326d3d90b8454376c83f4d41b1da61aeabdbfcbfb5e0087
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA256:2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-2.debian.tar.xz' configobj_5.0.6-2.debian.tar.xz 7436 SHA256:dc677cd329b4a3aacebe10c5a169d9d092cc27888c3f3f9203930cacd6a0eab8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/configobj/5.0.6-2/
+
 
 ### `dpkg` source package: `coreutils=8.28-1ubuntu1`
 
@@ -2956,9 +2955,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.32.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1.dsc' nghttp2_1.32.1-1.dsc 2560 SHA256:f03c4922cc0fa17634c695ef4b824183c274c41d49fe9e6deea66cfd00c7cd6e
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1build1.dsc' nghttp2_1.32.1-1build1.dsc 2313 SHA256:59aadaa7c9688f7323cfd8430a7f3fc3cfa95b8e0c4090a9407b29c11b19fd0f
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1.orig.tar.bz2' nghttp2_1.32.1.orig.tar.bz2 1840755 SHA256:41a132ad51ef0de4b8592a8506809a0c830ff7db7a7054b9dafe0bff4611a862
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1.debian.tar.xz' nghttp2_1.32.1-1.debian.tar.xz 12444 SHA256:cd0441957cf2867d962677f0bacbbcd8d321b240929a7024faf7deb6914435b6
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1build1.debian.tar.xz' nghttp2_1.32.1-1build1.debian.tar.xz 12564 SHA256:696d6376dcf56e0a087455904f9753183c9af70bd99ce1ac0a92e412e1b83f2f
 ```
 
 ### `dpkg` source package: `npth=1.6-1`
@@ -3080,15 +3079,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0h-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h-4ubuntu1.dsc' openssl_1.1.0h-4ubuntu1.dsc 2642 SHA256:f894f5230c81ba7ffa69c662f6a1c88fa9b42472e3382efdea66ef744aebe3da
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz' openssl_1.1.0h.orig.tar.gz 5422717 SHA256:5835626cde9e99656585fc7aaa2302a73a7e1340bf8c14fd635a62c66802a517
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz.asc' openssl_1.1.0h.orig.tar.gz.asc 455 SHA256:5d01aeb02958dcf6e7d4a82d2ca61e9cbe5fd3b32c2bcad150469e29fbbfdccf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h-4ubuntu1.debian.tar.xz' openssl_1.1.0h-4ubuntu1.debian.tar.xz 97968 SHA256:aae00655e99fd56ef15835531715765597e53366f683eefc2281dc0357a8bb6e
-```
 
 ### `dpkg` source package: `p11-kit=0.23.13-2`
 
@@ -3499,14 +3492,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.6-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-4.dsc' python3.6_3.6.6-4.dsc 3420 SHA256:3990eb54938234d4b7c6e4518df92d5ff26b8134da3bffae32d43faf82702dad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6.orig.tar.xz' python3.6_3.6.6.orig.tar.xz 17156744 SHA256:d79bc15d456e73a3173a2938f18a17e5149c850ebdedf84a78067f501ee6e16f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-4.debian.tar.xz' python3.6_3.6.6-4.debian.tar.xz 376176 SHA256:6a74062b1501866b2293bb4f5b69e59000a948a33e58c9bac94b143955a56282
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.6/3.6.6-4/
+
 
 ### `dpkg` source package: `readline=7.0-5`
 
@@ -3746,14 +3738,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.dsc' sysvinit_2.88dsf-59.10ubuntu1.dsc 2428 SHA256:030f4e8a71381529da3141988344d6e1d0e05ba437e0cdd38d2f3786185bf285
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz' sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz 132736 SHA256:faee591309aa0065aa43f44a1e840eb01db7f55379af2b45949534bd0317b734
-```
 
 ### `dpkg` source package: `tar=1.30+dfsg-2`
 

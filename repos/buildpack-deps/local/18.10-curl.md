@@ -1211,9 +1211,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.32.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1.dsc' nghttp2_1.32.1-1.dsc 2560 SHA256:f03c4922cc0fa17634c695ef4b824183c274c41d49fe9e6deea66cfd00c7cd6e
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1build1.dsc' nghttp2_1.32.1-1build1.dsc 2313 SHA256:59aadaa7c9688f7323cfd8430a7f3fc3cfa95b8e0c4090a9407b29c11b19fd0f
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1.orig.tar.bz2' nghttp2_1.32.1.orig.tar.bz2 1840755 SHA256:41a132ad51ef0de4b8592a8506809a0c830ff7db7a7054b9dafe0bff4611a862
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1.debian.tar.xz' nghttp2_1.32.1-1.debian.tar.xz 12444 SHA256:cd0441957cf2867d962677f0bacbbcd8d321b240929a7024faf7deb6914435b6
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.32.1-1build1.debian.tar.xz' nghttp2_1.32.1-1build1.debian.tar.xz 12564 SHA256:696d6376dcf56e0a087455904f9753183c9af70bd99ce1ac0a92e412e1b83f2f
 ```
 
 ### `dpkg` source package: `npth=1.6-1`
@@ -1267,15 +1267,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0h-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h-4ubuntu1.dsc' openssl_1.1.0h-4ubuntu1.dsc 2642 SHA256:f894f5230c81ba7ffa69c662f6a1c88fa9b42472e3382efdea66ef744aebe3da
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz' openssl_1.1.0h.orig.tar.gz 5422717 SHA256:5835626cde9e99656585fc7aaa2302a73a7e1340bf8c14fd635a62c66802a517
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h.orig.tar.gz.asc' openssl_1.1.0h.orig.tar.gz.asc 455 SHA256:5d01aeb02958dcf6e7d4a82d2ca61e9cbe5fd3b32c2bcad150469e29fbbfdccf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0h-4ubuntu1.debian.tar.xz' openssl_1.1.0h-4ubuntu1.debian.tar.xz 97968 SHA256:aae00655e99fd56ef15835531715765597e53366f683eefc2281dc0357a8bb6e
-```
 
 ### `dpkg` source package: `p11-kit=0.23.13-2`
 
@@ -1591,14 +1585,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.dsc' sysvinit_2.88dsf-59.10ubuntu1.dsc 2428 SHA256:030f4e8a71381529da3141988344d6e1d0e05ba437e0cdd38d2f3786185bf285
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz' sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz 132736 SHA256:faee591309aa0065aa43f44a1e840eb01db7f55379af2b45949534bd0317b734
-```
 
 ### `dpkg` source package: `tar=1.30+dfsg-2`
 
