@@ -234,19 +234,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.244
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.244.dsc' cdebconf_0.244.dsc 2781 SHA256:2865d3d072fc54e0e07f52ac83ec7b5659e6a11ae06e6f6d9d8de8025ff8b658
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.244.tar.xz' cdebconf_0.244.tar.xz 274480 SHA256:0dd89645937298574347680f29dfebd154b325f22f7635d143dd8eff858c2b25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.244/
 
-- https://sources.debian.net/src/cdebconf/0.244/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.244/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.244/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.30-1`
 
@@ -767,19 +761,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.20
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.20.dsc' hostname_3.20.dsc 1429 SHA256:1fd7b0b2b61e58aa0e50de4d375072c938cb3cc4b722bc73e085e3a3691d9114
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.20.tar.gz' hostname_3.20.tar.gz 13336 SHA256:e7ed56f8c532573ff34d9bd6e7a10d04fbbb2c7fae187898805868e5fed24ab0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.20/
 
-- https://sources.debian.net/src/hostname/3.20/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.54`
 
