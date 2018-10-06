@@ -376,13 +376,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.244
-'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.244.dsc' cdebconf_0.244.dsc 2781 SHA256:2865d3d072fc54e0e07f52ac83ec7b5659e6a11ae06e6f6d9d8de8025ff8b658
-'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.244.tar.xz' cdebconf_0.244.tar.xz 274480 SHA256:0dd89645937298574347680f29dfebd154b325f22f7635d143dd8eff858c2b25
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cdebconf/0.244/
+
 
 ### `dpkg` source package: `cluster=2.0.7-1-1`
 
@@ -1370,13 +1370,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.20
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.20.dsc' hostname_3.20.dsc 1429 SHA256:1fd7b0b2b61e58aa0e50de4d375072c938cb3cc4b722bc73e085e3a3691d9114
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.20.tar.gz' hostname_3.20.tar.gz 13336 SHA256:e7ed56f8c532573ff34d9bd6e7a10d04fbbb2c7fae187898805868e5fed24ab0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/hostname/3.20/
+
 
 ### `dpkg` source package: `icu-le-hb=1.0.3+git161113-5`
 
@@ -3415,14 +3415,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.6-4
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6-4.dsc' python3.6_3.6.6-4.dsc 3420 SHA256:3990eb54938234d4b7c6e4518df92d5ff26b8134da3bffae32d43faf82702dad
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6.orig.tar.xz' python3.6_3.6.6.orig.tar.xz 17156744 SHA256:d79bc15d456e73a3173a2938f18a17e5149c850ebdedf84a78067f501ee6e16f
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.6-4.debian.tar.xz' python3.6_3.6.6-4.debian.tar.xz 376176 SHA256:6a74062b1501866b2293bb4f5b69e59000a948a33e58c9bac94b143955a56282
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.6/3.6.6-4/
+
 
 ### `dpkg` source package: `r-base=3.5.1-1`
 
