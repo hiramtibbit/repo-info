@@ -1,10 +1,10 @@
-# `mariadb:10.3.9-bionic`
+# `mariadb:10.3.10-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23edf799b823d69095f83ec45f785d5276ac86c84d2fbcc1786ed091f415f988`
-- Created: `2018-10-02T17:27:57.351614193Z`
-- Virtual Size: ~ 363.32 Mb  
+- Image ID: `sha256:54514d54a4a598dc03d9501c5c76906c04e9cc4963bf9886f2515ba2d57dfe5a`
+- Created: `2018-10-04T20:20:14.702798708Z`
+- Virtual Size: ~ 363.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.3`
-  - `MARIADB_VERSION=1:10.3.9+maria~bionic`
+  - `MARIADB_VERSION=1:10.3.10+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -456,11 +456,11 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `galera-3=25.3.23-bionic`
+### `dpkg` source package: `galera-3=25.3.24-bionic`
 
 Binary Packages:
 
-- `galera-3=25.3.23-bionic`
+- `galera-3=25.3.24-bionic`
 
 Licenses: (parsed from: `/usr/share/doc/galera-3/copyright`)
 
@@ -1606,18 +1606,18 @@ $ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu3.debian.tar.xz' lz4_0.0~r131-2ubuntu3.debian.tar.xz 5340 SHA256:94834bac922397529ffc185f9c4c7e7a6eb1ef3bc527f3fcd26e36fc9430afa7
 ```
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.9+maria~bionic`
+### `dpkg` source package: `mariadb-10.3=1:10.3.10+maria~bionic`
 
 Binary Packages:
 
-- `mariadb-backup=1:10.3.9+maria~bionic`
-- `mariadb-client-10.3=1:10.3.9+maria~bionic`
-- `mariadb-client-core-10.3=1:10.3.9+maria~bionic`
-- `mariadb-common=1:10.3.9+maria~bionic`
-- `mariadb-server=1:10.3.9+maria~bionic`
-- `mariadb-server-10.3=1:10.3.9+maria~bionic`
-- `mariadb-server-core-10.3=1:10.3.9+maria~bionic`
-- `mysql-common=1:10.3.9+maria~bionic`
+- `mariadb-backup=1:10.3.10+maria~bionic`
+- `mariadb-client-10.3=1:10.3.10+maria~bionic`
+- `mariadb-client-core-10.3=1:10.3.10+maria~bionic`
+- `mariadb-common=1:10.3.10+maria~bionic`
+- `mariadb-server=1:10.3.10+maria~bionic`
+- `mariadb-server-10.3=1:10.3.10+maria~bionic`
+- `mariadb-server-core-10.3=1:10.3.10+maria~bionic`
+- `mysql-common=1:10.3.10+maria~bionic`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1626,9 +1626,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.9+maria~bionic
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.9+maria~bionic.dsc' mariadb-10.3_10.3.9+maria~bionic.dsc 3511 SHA256:92e2a3818637dd3033396304b796fb49a4e2d13ef352043cfe6e52552ddf7b87
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.9+maria~bionic.tar.xz' mariadb-10.3_10.3.9+maria~bionic.tar.xz 45589096 SHA256:16bee01c149dad9f7d9ed979322a1d0610509b716c49085ea16c795f21ef56c5
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.10+maria~bionic
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.10+maria~bionic.dsc' mariadb-10.3_10.3.10+maria~bionic.dsc 3515 SHA256:7d33b650fc1b12195f9406c53d629d7654adb3e2723a2a47849f536fd7e70b0d
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.10+maria~bionic.tar.xz' mariadb-10.3_10.3.10+maria~bionic.tar.xz 44010440 SHA256:f1bcb948d3a76211b3af0870c0cc3271aa41463801db5688f71750cade7ff036
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
