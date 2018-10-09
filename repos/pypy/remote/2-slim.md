@@ -1,7 +1,7 @@
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:6e1ee5b87992d38adaec7f76c263f980e8c1bfd549911bf155538b45305e4f05
+$ docker pull pypy@sha256:6d23cf18d5bfb285a4375d474f9cfd975ba944769c235bf0f3911fb113ec0086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull pypy@sha256:6e1ee5b87992d38adaec7f76c263f980e8c1bfd549911bf155538b
 ### `pypy:2-slim` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:e9f75fbd3b197af40470487b482f9143035b57596757ff0849add4bd6696ed34
+$ docker pull pypy@sha256:9956974d15aacc363f66ef597bff756205bd9c6df415f1f9b99e9bc6d29d49fa
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63363310 bytes)**  
+-	Total Size: **63.4 MB (63351045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83e0ec14e7a024b47fefa927fbeb9b2244b040a6318281fdeac31a893aff7074`
+-	Image ID: `sha256:596810918a0d2a896ce69a90ec86b83e0db62b760e5dca227e7ab1b42da9880a`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -36,11 +36,11 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 04 Sep 2018 21:44:09 GMT
 ENV PYPY_VERSION=6.0.0
-# Tue, 04 Sep 2018 21:44:10 GMT
-ENV PYTHON_PIP_VERSION=18.0
-# Tue, 04 Sep 2018 21:45:06 GMT
+# Tue, 09 Oct 2018 22:23:57 GMT
+ENV PYTHON_PIP_VERSION=18.1
+# Tue, 09 Oct 2018 22:24:39 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		fetchDeps=' 		bzip2 		wget 	'; 	apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-get purge -y --auto-remove $fetchDeps
-# Tue, 04 Sep 2018 21:45:06 GMT
+# Tue, 09 Oct 2018 22:24:39 GMT
 CMD ["pypy"]
 ```
 
@@ -53,9 +53,9 @@ CMD ["pypy"]
 		Last Modified: Tue, 04 Sep 2018 21:47:37 GMT  
 		Size: 2.8 MB (2811143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d657078726cccff1ffc2ca5b8e06cdd134d743d1b1a3b4b80173986f9c73fa4b`  
-		Last Modified: Tue, 04 Sep 2018 21:47:48 GMT  
-		Size: 30.4 MB (30431603 bytes)  
+	-	`sha256:eaa753546a31406a40ab341db54edda3b1465d4cc550b626e1b2704bfe826f28`  
+		Last Modified: Tue, 09 Oct 2018 22:28:19 GMT  
+		Size: 30.4 MB (30419338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `pypy:2-slim` - linux; arm variant v5
