@@ -1,7 +1,7 @@
 ## `centos:centos7.0.1406`
 
 ```console
-$ docker pull centos@sha256:1680ebb0e5a0cc05447254c95075279586706c364c768ec9bf14099888b78540
+$ docker pull centos@sha256:e06b6eef24eaf8b531e18691f6d8af5b0610b5b637438be7151930c283b6261f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,19 +11,19 @@ $ docker pull centos@sha256:1680ebb0e5a0cc05447254c95075279586706c364c768ec9bf14
 ### `centos:centos7.0.1406` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:645399d55fb70d0cd65eb9fa150e469c177446bed3bc9c78570205f46dc7c579
+$ docker pull centos@sha256:a873e0ebe2a3bfc474409c6b7d381115988c5ef94e228ef6fd04a19a0e1a86df
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **76.8 MB (76788795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd260f17a4caa4467e40dbf55e69bf969061c372c480a510bd1fc55a993a721b`
+-	Image ID: `sha256:59b15a9def8d2da0290638987c34a023df538033959932c1ae5adddc183c34cd`
 
 ```dockerfile
-# Mon, 06 Aug 2018 19:27:26 GMT
+# Tue, 09 Oct 2018 18:21:58 GMT
 MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
-# Mon, 06 Aug 2018 19:28:34 GMT
+# Tue, 09 Oct 2018 18:22:28 GMT
 ADD file:6a409eac27f0c7e04393da096dbeff01b929405e79b15222a0dc06a2084d3df3 in / 
 ```
 
