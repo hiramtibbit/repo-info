@@ -1,7 +1,7 @@
 ## `python:2-jessie`
 
 ```console
-$ docker pull python@sha256:3ea65417a0c7dd6c65e030a2b67abca2c0410f362df5a0076d65246356b118d0
+$ docker pull python@sha256:8f8c719e8b68e4bd3dca9faf5eb66105342eca7fc7a59caa63436cbc08cfcb1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull python@sha256:3ea65417a0c7dd6c65e030a2b67abca2c0410f362df5a0076d65
 ### `python:2-jessie` - linux; amd64
 
 ```console
-$ docker pull python@sha256:6e984cef399a97792fb83d4c4a2f4e08ef25be818eb1431a5d60fa659f9df120
+$ docker pull python@sha256:f7cad9e5f3a66a3720c4bd63b2df7939f50739e09ecb3f9c100b4d5f66a19352
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271967562 bytes)**  
+-	Total Size: **272.0 MB (271966521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6d2993d090f4c9aa8349de9ead4eb78a1e56d4f7e0696db0416059dedac37af`
+-	Image ID: `sha256:8e1cc32914848651dcda36007472b733f612fa0f274c8f3090c8794be04438cb`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -51,13 +51,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.15
 # Wed, 05 Sep 2018 04:55:03 GMT
 RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Wed, 05 Sep 2018 04:55:04 GMT
-ENV PYTHON_PIP_VERSION=18.0
-# Wed, 05 Sep 2018 04:55:11 GMT
+# Tue, 09 Oct 2018 22:38:12 GMT
+ENV PYTHON_PIP_VERSION=18.1
+# Tue, 09 Oct 2018 22:38:17 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 05 Sep 2018 04:55:14 GMT
+# Tue, 09 Oct 2018 22:38:19 GMT
 RUN pip install --no-cache-dir virtualenv
-# Wed, 05 Sep 2018 04:55:14 GMT
+# Tue, 09 Oct 2018 22:38:19 GMT
 CMD ["python2"]
 ```
 
@@ -86,13 +86,13 @@ CMD ["python2"]
 		Last Modified: Wed, 05 Sep 2018 05:19:14 GMT  
 		Size: 14.6 MB (14589160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfaea2b6fad09aadd2ae9b6a944d443b6f6ca006d6225819108d79367e596718`  
-		Last Modified: Wed, 05 Sep 2018 05:19:11 GMT  
-		Size: 1.8 MB (1786586 bytes)  
+	-	`sha256:f86a8b158106e8d834a255e220eadaa7dfc3eb304514cf660ccfe8a490ec9a17`  
+		Last Modified: Tue, 09 Oct 2018 22:53:27 GMT  
+		Size: 1.8 MB (1777193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86b04281cc07efb12621fa3c2c69b215f4c17df9913d53b81a2c9b5ca1b54141`  
-		Last Modified: Wed, 05 Sep 2018 05:19:12 GMT  
-		Size: 3.6 MB (3649637 bytes)  
+	-	`sha256:3f202dfe9843a997aa234b9bdb6d0f809aea38351ca7f50153efc4eeab9970c6`  
+		Last Modified: Tue, 09 Oct 2018 22:53:27 GMT  
+		Size: 3.7 MB (3657989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-jessie` - linux; arm variant v5

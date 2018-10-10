@@ -10,7 +10,7 @@
 ## `cirros:0`
 
 ```console
-$ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41cb1517847f56
+$ docker pull cirros@sha256:0de6e51e415a43709918e95d85aba70da2135b10ee466a08be54fee57f736872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24,24 +24,24 @@ $ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41
 ### `cirros:0` - linux; amd64
 
 ```console
-$ docker pull cirros@sha256:1a896e2ecba268edef2c63d42e2006d9bfc05da078532d518b2549e78bee53c5
+$ docker pull cirros@sha256:d1f38e93797d5bf313cd0d934fab76ca84c93d03b3fe8cb0d735a4ddd98ca962
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4898133 bytes)**  
+-	Total Size: **4.9 MB (4898138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ecd8c2e01b5e439f2f20e4310738b14438e7d4ff674146128fe334a044d78f`
+-	Image ID: `sha256:17d52dddc81558d99fd3aa64d2fe44add500321cf3c954378d627cb9daead478`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Wed, 25 Jul 2018 18:19:44 GMT
+# Tue, 09 Oct 2018 22:19:31 GMT
 ADD file:c47735fbd8ec76ba402a2ea81619e620ec0aba6cae0f23373a9c1ecc12bfb53d in / 
-# Wed, 25 Jul 2018 18:19:45 GMT
+# Tue, 09 Oct 2018 22:19:38 GMT
 RUN rm /etc/rc3.d/S40-network
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 CMD ["/sbin/init"]
 ```
 
@@ -50,13 +50,13 @@ CMD ["/sbin/init"]
 		Last Modified: Wed, 25 Jul 2018 18:20:09 GMT  
 		Size: 4.9 MB (4896732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f41e3d981b96503c1c04e3903bd3252485b30d1a19f07fd7f5cd2829c86047e`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 152.0 B  
+	-	`sha256:79c1e9c6a738751bfc9bd073f9863057e074ab7f0c2f8e3a7cf0a87a245af58a`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56f8ef4ed3d72a69f7afbf84d3015745f2c0a1e6901a1db18ca0b6d877d34912`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 1.2 KB (1249 bytes)  
+	-	`sha256:cc54052e3eb118c8e14bb2f5cc0c561326f9dcc6c1f65ed1e14daba22a2d6c08`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 1.3 KB (1252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cirros:0` - linux; arm variant v5
@@ -214,7 +214,7 @@ CMD ["/sbin/init"]
 ## `cirros:0.4`
 
 ```console
-$ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41cb1517847f56
+$ docker pull cirros@sha256:0de6e51e415a43709918e95d85aba70da2135b10ee466a08be54fee57f736872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -228,24 +228,24 @@ $ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41
 ### `cirros:0.4` - linux; amd64
 
 ```console
-$ docker pull cirros@sha256:1a896e2ecba268edef2c63d42e2006d9bfc05da078532d518b2549e78bee53c5
+$ docker pull cirros@sha256:d1f38e93797d5bf313cd0d934fab76ca84c93d03b3fe8cb0d735a4ddd98ca962
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4898133 bytes)**  
+-	Total Size: **4.9 MB (4898138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ecd8c2e01b5e439f2f20e4310738b14438e7d4ff674146128fe334a044d78f`
+-	Image ID: `sha256:17d52dddc81558d99fd3aa64d2fe44add500321cf3c954378d627cb9daead478`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Wed, 25 Jul 2018 18:19:44 GMT
+# Tue, 09 Oct 2018 22:19:31 GMT
 ADD file:c47735fbd8ec76ba402a2ea81619e620ec0aba6cae0f23373a9c1ecc12bfb53d in / 
-# Wed, 25 Jul 2018 18:19:45 GMT
+# Tue, 09 Oct 2018 22:19:38 GMT
 RUN rm /etc/rc3.d/S40-network
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 CMD ["/sbin/init"]
 ```
 
@@ -254,13 +254,13 @@ CMD ["/sbin/init"]
 		Last Modified: Wed, 25 Jul 2018 18:20:09 GMT  
 		Size: 4.9 MB (4896732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f41e3d981b96503c1c04e3903bd3252485b30d1a19f07fd7f5cd2829c86047e`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 152.0 B  
+	-	`sha256:79c1e9c6a738751bfc9bd073f9863057e074ab7f0c2f8e3a7cf0a87a245af58a`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56f8ef4ed3d72a69f7afbf84d3015745f2c0a1e6901a1db18ca0b6d877d34912`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 1.2 KB (1249 bytes)  
+	-	`sha256:cc54052e3eb118c8e14bb2f5cc0c561326f9dcc6c1f65ed1e14daba22a2d6c08`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 1.3 KB (1252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cirros:0.4` - linux; arm variant v5
@@ -418,7 +418,7 @@ CMD ["/sbin/init"]
 ## `cirros:0.4.0`
 
 ```console
-$ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41cb1517847f56
+$ docker pull cirros@sha256:0de6e51e415a43709918e95d85aba70da2135b10ee466a08be54fee57f736872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -432,24 +432,24 @@ $ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41
 ### `cirros:0.4.0` - linux; amd64
 
 ```console
-$ docker pull cirros@sha256:1a896e2ecba268edef2c63d42e2006d9bfc05da078532d518b2549e78bee53c5
+$ docker pull cirros@sha256:d1f38e93797d5bf313cd0d934fab76ca84c93d03b3fe8cb0d735a4ddd98ca962
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4898133 bytes)**  
+-	Total Size: **4.9 MB (4898138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ecd8c2e01b5e439f2f20e4310738b14438e7d4ff674146128fe334a044d78f`
+-	Image ID: `sha256:17d52dddc81558d99fd3aa64d2fe44add500321cf3c954378d627cb9daead478`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Wed, 25 Jul 2018 18:19:44 GMT
+# Tue, 09 Oct 2018 22:19:31 GMT
 ADD file:c47735fbd8ec76ba402a2ea81619e620ec0aba6cae0f23373a9c1ecc12bfb53d in / 
-# Wed, 25 Jul 2018 18:19:45 GMT
+# Tue, 09 Oct 2018 22:19:38 GMT
 RUN rm /etc/rc3.d/S40-network
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 CMD ["/sbin/init"]
 ```
 
@@ -458,13 +458,13 @@ CMD ["/sbin/init"]
 		Last Modified: Wed, 25 Jul 2018 18:20:09 GMT  
 		Size: 4.9 MB (4896732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f41e3d981b96503c1c04e3903bd3252485b30d1a19f07fd7f5cd2829c86047e`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 152.0 B  
+	-	`sha256:79c1e9c6a738751bfc9bd073f9863057e074ab7f0c2f8e3a7cf0a87a245af58a`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56f8ef4ed3d72a69f7afbf84d3015745f2c0a1e6901a1db18ca0b6d877d34912`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 1.2 KB (1249 bytes)  
+	-	`sha256:cc54052e3eb118c8e14bb2f5cc0c561326f9dcc6c1f65ed1e14daba22a2d6c08`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 1.3 KB (1252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cirros:0.4.0` - linux; arm variant v5
@@ -622,7 +622,7 @@ CMD ["/sbin/init"]
 ## `cirros:latest`
 
 ```console
-$ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41cb1517847f56
+$ docker pull cirros@sha256:0de6e51e415a43709918e95d85aba70da2135b10ee466a08be54fee57f736872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -636,24 +636,24 @@ $ docker pull cirros@sha256:38e8f9e7bc8a340c54a5139823dc726d67dd7408ed7db9e3be41
 ### `cirros:latest` - linux; amd64
 
 ```console
-$ docker pull cirros@sha256:1a896e2ecba268edef2c63d42e2006d9bfc05da078532d518b2549e78bee53c5
+$ docker pull cirros@sha256:d1f38e93797d5bf313cd0d934fab76ca84c93d03b3fe8cb0d735a4ddd98ca962
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4898133 bytes)**  
+-	Total Size: **4.9 MB (4898138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ecd8c2e01b5e439f2f20e4310738b14438e7d4ff674146128fe334a044d78f`
+-	Image ID: `sha256:17d52dddc81558d99fd3aa64d2fe44add500321cf3c954378d627cb9daead478`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Wed, 25 Jul 2018 18:19:44 GMT
+# Tue, 09 Oct 2018 22:19:31 GMT
 ADD file:c47735fbd8ec76ba402a2ea81619e620ec0aba6cae0f23373a9c1ecc12bfb53d in / 
-# Wed, 25 Jul 2018 18:19:45 GMT
+# Tue, 09 Oct 2018 22:19:38 GMT
 RUN rm /etc/rc3.d/S40-network
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
-# Wed, 25 Jul 2018 18:19:46 GMT
+# Tue, 09 Oct 2018 22:19:39 GMT
 CMD ["/sbin/init"]
 ```
 
@@ -662,13 +662,13 @@ CMD ["/sbin/init"]
 		Last Modified: Wed, 25 Jul 2018 18:20:09 GMT  
 		Size: 4.9 MB (4896732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f41e3d981b96503c1c04e3903bd3252485b30d1a19f07fd7f5cd2829c86047e`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 152.0 B  
+	-	`sha256:79c1e9c6a738751bfc9bd073f9863057e074ab7f0c2f8e3a7cf0a87a245af58a`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56f8ef4ed3d72a69f7afbf84d3015745f2c0a1e6901a1db18ca0b6d877d34912`  
-		Last Modified: Wed, 25 Jul 2018 18:20:07 GMT  
-		Size: 1.2 KB (1249 bytes)  
+	-	`sha256:cc54052e3eb118c8e14bb2f5cc0c561326f9dcc6c1f65ed1e14daba22a2d6c08`  
+		Last Modified: Tue, 09 Oct 2018 22:20:03 GMT  
+		Size: 1.3 KB (1252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cirros:latest` - linux; arm variant v5
