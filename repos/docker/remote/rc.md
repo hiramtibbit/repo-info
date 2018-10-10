@@ -1,13 +1,14 @@
 ## `docker:rc`
 
 ```console
-$ docker pull docker@sha256:8fbf0735c3ecf9b3fe45835db9262bb428ec89f6fbdf7d8f5019926d206d1cd7
+$ docker pull docker@sha256:80b3207ed26c500e585658bb297062fa9417bc517ec051f83e0c667ac8559b9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 
 ### `docker:rc` - linux; amd64
 
@@ -143,4 +144,75 @@ CMD ["sh"]
 	-	`sha256:0ecf30e6b7e98c349273eccc347d911d7e89702cb534cc86add168c1944c1235`  
 		Last Modified: Wed, 10 Oct 2018 07:50:51 GMT  
 		Size: 738.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `docker:rc` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:f683149cd2e3c07c6ac4b7e6dd2e80488f0ae70bf98fa9e54c9e17ab7c537440
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **45.0 MB (44998683 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:850d9f0e480b84350b5d0adfc531e464708c4a8982c2932bba4998f4a3ed0a9e`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 12 Sep 2018 08:42:24 GMT
+ADD file:a4b53e2a2e207c5107a76c16d91b99cb1ed4ecb90b363913798e663426137d45 in / 
+# Wed, 12 Sep 2018 08:42:24 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 12 Sep 2018 08:42:25 GMT
+CMD ["/bin/sh"]
+# Wed, 03 Oct 2018 08:51:01 GMT
+RUN apk add --no-cache 		ca-certificates
+# Wed, 03 Oct 2018 08:51:03 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Sat, 06 Oct 2018 08:39:56 GMT
+ENV DOCKER_CHANNEL=test
+# Wed, 10 Oct 2018 08:42:22 GMT
+ENV DOCKER_VERSION=18.09.0-beta3
+# Wed, 10 Oct 2018 08:42:31 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! wget -O docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Wed, 10 Oct 2018 08:42:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Wed, 10 Oct 2018 08:42:33 GMT
+COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
+# Wed, 10 Oct 2018 08:42:34 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 10 Oct 2018 08:42:35 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:9941776d74c9129fd585b6f0434ba48bd3a7112d6736bc02e6d12f41153cab26`  
+		Last Modified: Wed, 12 Sep 2018 08:44:55 GMT  
+		Size: 2.1 MB (2099762 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae94b3cb7a1b2cef0ceffe3303cd03f83434d283aab43389e586b42bea00b358`  
+		Last Modified: Wed, 12 Sep 2018 08:44:55 GMT  
+		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f9cdac08f3358dba836f2b7ded1fa5dc2150665abbe222782cae6cf449c3078f`  
+		Last Modified: Wed, 03 Oct 2018 09:06:55 GMT  
+		Size: 308.5 KB (308522 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f2ef4ad6416adae80970c5edd8e49ff9040d95e018ae5ad3f51e6adc1acdcf87`  
+		Last Modified: Wed, 03 Oct 2018 09:06:54 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:170bc7620a16b74202b27368eba1389875b2a86fc3949401d941ce340413924e`  
+		Last Modified: Wed, 10 Oct 2018 08:44:33 GMT  
+		Size: 42.6 MB (42588789 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9a8e7b3e007fd3a840f182093d67c5e186770f171d811e458f96f0048fa40aa`  
+		Last Modified: Wed, 10 Oct 2018 08:44:15 GMT  
+		Size: 544.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4736509eb5cd412a0dc570390ce9adc1477a15aefd96c914ba2f8f965f12d906`  
+		Last Modified: Wed, 10 Oct 2018 08:44:39 GMT  
+		Size: 736.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
