@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6706216a51c3752e5697719f145316cf5d9acd85f2117e343ed9482119401f74`
-- Created: `2018-09-05T10:27:47.63071211Z`
-- Virtual Size: ~ 732.55 Mb  
+- Image ID: `sha256:b3f0c033c460cfd6a16d7f557f48bd54850ffd7aa6db45dfd978bed1045db722`
+- Created: `2018-10-09T22:25:12.96726263Z`
+- Virtual Size: ~ 732.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=6.0.0`
-  - `PYTHON_PIP_VERSION=18.0`
+  - `PYTHON_PIP_VERSION=18.1`
 
 ## `dpkg` (`.deb`-based packages)
 
