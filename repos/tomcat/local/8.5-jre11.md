@@ -1969,20 +1969,13 @@ Licenses: (parsed from: `/usr/share/doc/libjson-glib-1.0-0/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris json-glib=1.4.2-4
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2-4.dsc' json-glib_1.4.2-4.dsc 2694 SHA256:63e2695e9f3f682e94b9d4e742b849955db89efda176ce280cca14bffc83125a
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2.orig.tar.xz' json-glib_1.4.2.orig.tar.xz 148404 SHA256:ea185056d95f26a549590677cb532a0b2955e58b118b4486d6587ee9ccaf73c1
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2-4.debian.tar.xz' json-glib_1.4.2-4.debian.tar.xz 8744 SHA256:b00e4da7bd0e9efe80903dbfbcc37e1886a8469b131ad2ca661eaafff315acb7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/json-glib/1.4.2-4/
 
-- https://sources.debian.net/src/json-glib/1.4.2-4/ (for browsing the source)
-- https://sources.debian.net/src/json-glib/1.4.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/json-glib/1.4.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.3`
 
@@ -2293,20 +2286,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.94-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.94-1.dsc' libdrm_2.4.94-1.dsc 2980 SHA256:ee5b08367af36fe61e685b5650970f9ad5edf8b13225865e1d8b0d672beaf442
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.94.orig.tar.gz' libdrm_2.4.94.orig.tar.gz 1110565 SHA256:9b3d3509fe496839c4c52dfcfe6cc24f46f3dc272eab776ca6aa4d4a5c381597
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.94-1.diff.gz' libdrm_2.4.94-1.diff.gz 50023 SHA256:f83cb437804785c7269bd8086277ae760c5ec26c870fe491f4960cd0b013523e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.94-1/
 
-- https://sources.debian.net/src/libdrm/2.4.94-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.94-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.94-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20180525-1`
 
@@ -2900,20 +2886,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.64.1-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1-1.dsc' libsoup2.4_2.64.1-1.dsc 2680 SHA256:0a6838b8257ee9ae0093246f10e4d2da1ffcf23bcfbd749813eb14ba37389e23
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1.orig.tar.xz' libsoup2.4_2.64.1.orig.tar.xz 1794340 SHA256:359bd02a909bfd43f68712146e9c4f4c643bffa84e513d8b0af1be215a92e1f3
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1-1.debian.tar.xz' libsoup2.4_2.64.1-1.debian.tar.xz 17464 SHA256:e541f249fd0572290f84ef087c7ab313efe12022db2964a7f7721979d64c8c85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.64.1-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.64.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.64.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.64.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-2`
 
