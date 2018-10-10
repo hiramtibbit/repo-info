@@ -1,10 +1,10 @@
-# `lightstreamer:7.0.1-jre8-alpine`
+# `lightstreamer:7.0.2-jre8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5caa773a9dcb3abf19aa78db4baa6571c8560a17f3644247e9668d0864459ea6`
-- Created: `2018-09-12T04:37:18.991007083Z`
-- Virtual Size: ~ 146.65 Mb  
+- Image ID: `sha256:1eb36e1f153a0b1e68731badcfb1633595a87183d892843dbb62458fcb76954f`
+- Created: `2018-10-08T23:20:11.859311242Z`
+- Virtual Size: ~ 149.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
@@ -14,5 +14,5 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u171`
   - `JAVA_ALPINE_VERSION=8.171.11-r0`
-  - `LIGHTSTREAMER_VERSION=7_0_1_20180614`
-  - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_1_20180614.tar.gz`
+  - `LIGHTSTREAMER_VERSION=7_0_2_20181003`
+  - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_2_20181003.tar.gz`

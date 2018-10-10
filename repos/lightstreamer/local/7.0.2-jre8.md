@@ -1,10 +1,10 @@
-# `lightstreamer:7.0.1-jre8`
+# `lightstreamer:7.0.2-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4daa739bba3acf214a9485b1af9f4b57d936d6836237d1ff126caec92c10e14b`
-- Created: `2018-09-05T15:22:46.36231817Z`
-- Virtual Size: ~ 506.36 Mb  
+- Image ID: `sha256:fc78349f21b17070deb2977cfecb339f05f2b11b78671cc7c11904ad1cbbc774`
+- Created: `2018-10-08T23:19:54.300242091Z`
+- Virtual Size: ~ 509.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
@@ -15,8 +15,8 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `LIGHTSTREAMER_VERSION=7_0_1_20180614`
-  - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_1_20180614.tar.gz`
+  - `LIGHTSTREAMER_VERSION=7_0_2_20181003`
+  - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_2_20181003.tar.gz`
 
 ## `dpkg` (`.deb`-based packages)
 
