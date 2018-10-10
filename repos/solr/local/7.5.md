@@ -2966,20 +2966,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.64.1-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1-1.dsc' libsoup2.4_2.64.1-1.dsc 2680 SHA256:0a6838b8257ee9ae0093246f10e4d2da1ffcf23bcfbd749813eb14ba37389e23
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1.orig.tar.xz' libsoup2.4_2.64.1.orig.tar.xz 1794340 SHA256:359bd02a909bfd43f68712146e9c4f4c643bffa84e513d8b0af1be215a92e1f3
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.64.1-1.debian.tar.xz' libsoup2.4_2.64.1-1.debian.tar.xz 17464 SHA256:e541f249fd0572290f84ef087c7ab313efe12022db2964a7f7721979d64c8c85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.64.1-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.64.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.64.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.64.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-2`
 
