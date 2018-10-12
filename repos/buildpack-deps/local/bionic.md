@@ -1040,14 +1040,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.1.dsc' git_2.17.1-1ubuntu0.1.dsc 2959 SHA256:33a33282c0d96516e7c4183df26d5396f0e7c0e92526ee27a1ffcd9ab0e43c73
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.1.debian.tar.xz' git_2.17.1-1ubuntu0.1.debian.tar.xz 568544 SHA256:6f203047bcfcbd006f225b4f3576e53c9b5652de9acf910d6f74c22fbde467f1
-```
 
 ### `dpkg` source package: `glib2.0=2.56.1-2ubuntu1`
 
