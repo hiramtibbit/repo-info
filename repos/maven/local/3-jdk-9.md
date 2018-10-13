@@ -742,20 +742,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3.1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.dsc 3522 SHA256:dd620adc358eb9831e42291c3b10c1749a2f837cb4fcb7553709edbccd37a164
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.debian.tar.xz 94780 SHA256:f036ab5b68d4f24ccdba41ccb566f395e15a1374f0a0d67963989f829cca3b9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -1958,20 +1951,13 @@ Licenses: (parsed from: `/usr/share/doc/libjson-glib-1.0-0/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris json-glib=1.4.2-4
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2-4.dsc' json-glib_1.4.2-4.dsc 2694 SHA256:63e2695e9f3f682e94b9d4e742b849955db89efda176ce280cca14bffc83125a
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2.orig.tar.xz' json-glib_1.4.2.orig.tar.xz 148404 SHA256:ea185056d95f26a549590677cb532a0b2955e58b118b4486d6587ee9ccaf73c1
-'http://deb.debian.org/debian/pool/main/j/json-glib/json-glib_1.4.2-4.debian.tar.xz' json-glib_1.4.2-4.debian.tar.xz 8744 SHA256:b00e4da7bd0e9efe80903dbfbcc37e1886a8469b131ad2ca661eaafff315acb7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/json-glib/1.4.2-4/
 
-- https://sources.debian.net/src/json-glib/1.4.2-4/ (for browsing the source)
-- https://sources.debian.net/src/json-glib/1.4.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/json-glib/1.4.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2`
 
@@ -2033,20 +2019,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.16-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16-2.dsc' krb5_1.16-2.dsc 3358 SHA256:b854c4994e9f45b4e99498e5b8fbdda6ec4f5c06f697a7cfce3ab2a89cc8e60f
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA256:faeb125f83b0fb4cdb2f99f088140631bb47d975982de0956d18c85842969e08
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16-2.debian.tar.xz' krb5_1.16-2.debian.tar.xz 96272 SHA256:96c43881a8503b01c5025a4855de9261d0633200e15627d74f9717a0f971ac6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.16-2/
 
-- https://sources.debian.net/src/krb5/1.16-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.16-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.9-1`
 

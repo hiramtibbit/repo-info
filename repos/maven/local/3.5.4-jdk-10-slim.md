@@ -430,20 +430,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3.1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.dsc 3522 SHA256:dd620adc358eb9831e42291c3b10c1749a2f837cb4fcb7553709edbccd37a164
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3.1.debian.tar.xz 94780 SHA256:f036ab5b68d4f24ccdba41ccb566f395e15a1374f0a0d67963989f829cca3b9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -907,21 +900,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.10-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-1.dsc' gnupg2_2.2.10-1.dsc 3139 SHA256:50418f69d9bfcedad1f1b231799ef63f383e230aadcf64c4b09a4e4657998b20
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2' gnupg2_2.2.10.orig.tar.bz2 6659484 SHA256:799dd37a86a1448732e339bd20440f4f5ee6e69755f6fd7a73ee8af30840c915
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2.asc' gnupg2_2.2.10.orig.tar.bz2.asc 530 SHA256:85ef54fde7fac6ed5f7de06312d5b6bcfae70cf045ff636d28f75b6225966220
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-1.debian.tar.bz2' gnupg2_2.2.10-1.debian.tar.bz2 65542 SHA256:7856d67a9e16c1a105d5fab174bd68734fee0cf926ca012477e0e968e2cb2c40
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.10-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.10-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.19-1`
 
@@ -1021,20 +1006,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.9-2
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9-2.dsc' gzip_1.9-2.dsc 1879 SHA256:dadbf2ac52814fc8ecdd15ea2aca2f283c829cbf9144915666e715a0ed1c7fd5
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9.orig.tar.gz' gzip_1.9.orig.tar.gz 1181937 SHA256:5d2d3a3432ef32f24cdb060d278834507b481a75adeca18850c73592f778f6ad
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9-2.debian.tar.xz' gzip_1.9-2.debian.tar.xz 11684 SHA256:f431951eecbd5aa6b3a42b2fa490ad9a64a95dc9badc2522265efa9da6542dcb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.9-2/
 
-- https://sources.debian.net/src/gzip/1.9-2/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.20`
 
@@ -1146,20 +1124,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.16-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16-2.dsc' krb5_1.16-2.dsc 3358 SHA256:b854c4994e9f45b4e99498e5b8fbdda6ec4f5c06f697a7cfce3ab2a89cc8e60f
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA256:faeb125f83b0fb4cdb2f99f088140631bb47d975982de0956d18c85842969e08
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16-2.debian.tar.xz' krb5_1.16-2.debian.tar.xz 96272 SHA256:96c43881a8503b01c5025a4855de9261d0633200e15627d74f9717a0f971ac6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.16-2/
 
-- https://sources.debian.net/src/krb5/1.16-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.16-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.9-3`
 
@@ -2040,20 +2011,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.33.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.33.0-1.dsc' nghttp2_1.33.0-1.dsc 2560 SHA256:29f0477db63e0dc794988ba171694592b5b12426a1477b869807458ce7ffbc19
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.33.0.orig.tar.bz2' nghttp2_1.33.0.orig.tar.bz2 1844374 SHA256:474630d5568adbd871f0fe63553d26939d9e97f8bb52e455f1a364596af90cf3
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.33.0-1.debian.tar.xz' nghttp2_1.33.0-1.debian.tar.xz 12468 SHA256:5544497447448f800d7de4486f167ef75ea78e638939b65e5df8baf45ea6d64b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.33.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.33.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.33.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.33.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.20-1`
 
