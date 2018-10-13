@@ -1,17 +1,17 @@
-# `node:10.11.0-stretch`
+# `node:10.12.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed0b0360ebbc4a56ab058207e8ee67dd7c3b009bae2eb0163ef9682ba10b54b7`
-- Created: `2018-09-20T22:27:30.130451369Z`
-- Virtual Size: ~ 892.69 Mb  
+- Image ID: `sha256:51baf0d4995000de81ec814f261604ab00a93ccd8e72e7d8f000ee12b1fcb898`
+- Created: `2018-10-11T18:45:17.255011927Z`
+- Virtual Size: ~ 893.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.11.0`
-  - `YARN_VERSION=1.9.4`
+  - `NODE_VERSION=10.12.0`
+  - `YARN_VERSION=1.10.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2077,20 +2077,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc 5165 SHA256:1c69bbfca987982ff487302fd830c3aa3b6d2f0530c95da99d37ffcf33edad17
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz 243432 SHA256:792c345b834ae5f8b33b0eeaa82ba6be220021d52995f4b44df2186804a991d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.48`
 
