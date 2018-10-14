@@ -3196,20 +3196,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13-3
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-3.dsc' libxcb_1.13-3.dsc 5329 SHA256:4fcb496b790ba27d7bd2ad8c4027769d8f12eaf63cdab7263b3d7fbbef51baac
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13.orig.tar.gz' libxcb_1.13.orig.tar.gz 632493 SHA256:0bb3cfd46dbd90066bf4d7de3cad73ec1024c7325a4a0cbf5f4a0d4fa91155fb
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.13-3.diff.gz' libxcb_1.13-3.diff.gz 25263 SHA256:ba6561e0e32f6bc5ea8f0b2536d10d45362033f35d76325cb2065a2b28ea7e9b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcb/1.13-3/
 
-- https://sources.debian.net/src/libxcb/1.13-3/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.13-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.13-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcomposite=1:0.4.4-2`
 
@@ -3929,21 +3922,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.8-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.8-1.dsc' mesa_18.1.8-1.dsc 5097 SHA256:8fd52ef15e09c5e634f287cea9af04a5c2e31f940943797daf69fb029a2702f9
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.8.orig.tar.gz' mesa_18.1.8.orig.tar.gz 18896562 SHA256:8ec62f215dd1bb3910987f9941c6fc31632a0874e618815cf1e8e29445c86e0a
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.8.orig.tar.gz.asc' mesa_18.1.8.orig.tar.gz.asc 274 SHA256:1a65b353cd7bb030e5d53e9b75717fcb320891b5b5a41a4e6d31a55726a195d3
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.8-1.diff.gz' mesa_18.1.8-1.diff.gz 95549 SHA256:c9969e5a02a3123db4405ae5bb4853a10ee7e961496648c9d4af87368aeb29b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.8-1/
 
-- https://sources.debian.net/src/mesa/18.1.8-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20180714-1`
 
