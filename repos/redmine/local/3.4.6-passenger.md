@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc9c6d5d6086c7a9706c6aade0da2ab13c908d74c1212e790f5dda4d1cf780d9`
-- Created: `2018-10-05T22:58:34.486883735Z`
-- Virtual Size: ~ 752.14 Mb  
+- Image ID: `sha256:323fbcc62bcd38fd65bbcbc86ba50949081caf7f0ba29bdc832ac4816974cb33`
+- Created: `2018-10-15T18:29:59.995190031Z`
+- Virtual Size: ~ 756.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1339,6 +1339,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/grep/2.27-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/grep/2.27-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `gsfonts=1:8.11+urwcyr1.0.7~pre44-4.3`
+
+Binary Packages:
+
+- `gsfonts=1:8.11+urwcyr1.0.7~pre44-4.3`
+
+Licenses: (parsed from: `/usr/share/doc/gsfonts/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gsfonts=1:8.11+urwcyr1.0.7~pre44-4.3
+'http://deb.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44-4.3.dsc' gsfonts_8.11+urwcyr1.0.7~pre44-4.3.dsc 1954 SHA256:a559bdb044b36c2bfda00b4817ddad2c3f06af8013f908b0bf3c31905e44d5a3
+'http://deb.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44.orig.tar.gz' gsfonts_8.11+urwcyr1.0.7~pre44.orig.tar.gz 3390551 SHA256:9f2a598998bf05e023546ac981aa2a857aa1635d2e0e3020a3c3004ad564dc00
+'http://deb.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44-4.3.diff.gz' gsfonts_8.11+urwcyr1.0.7~pre44-4.3.diff.gz 6805 SHA256:1bc028fee68515d9888ed7e518533306eecd4ca185e4d81c326b900aae3aa79f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gsfonts/1:8.11+urwcyr1.0.7~pre44-4.3/ (for browsing the source)
+- https://sources.debian.net/src/gsfonts/1:8.11+urwcyr1.0.7~pre44-4.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gsfonts/1:8.11+urwcyr1.0.7~pre44-4.3/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `gtk+3.0=3.22.11-1`
 
 Binary Packages:
@@ -1494,17 +1519,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/57.1-6+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/57.1-6+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u5`
+### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u6`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.7.4+dfsg-11+deb9u5`
-- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u5`
-- `imagemagick-6.q16=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6-headers=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u5`
+- `imagemagick=8:6.9.7.4+dfsg-11+deb9u6`
+- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u6`
+- `imagemagick-6.q16=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6-headers=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-3/copyright`, `/usr/share/doc/libmagickwand-6.q16-3/copyright`)
 
@@ -1535,17 +1560,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc 5165 SHA256:1c69bbfca987982ff487302fd830c3aa3b6d2f0530c95da99d37ffcf33edad17
+$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc 5165 SHA256:e6ccd430801ccc82e0af0dd5468c30ce2c206b11aeec081868a024662ccd2921
 'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz 243432 SHA256:792c345b834ae5f8b33b0eeaa82ba6be220021d52995f4b44df2186804a991d8
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz 245208 SHA256:8aa037bba5c1eeb99e7591a19dcaf5d76ecc408562ec9727f24c26ccd4bbe7e4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.48`
 
