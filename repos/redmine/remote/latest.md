@@ -1,7 +1,7 @@
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:aa9d4154005bd0a181908e621420d127914147fe8f9f04bfdc2c7e9a7f96e2db
+$ docker pull redmine@sha256:a083229cee84a1f5eef1da97b9e92a95e583965738631947b258b808df31acce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -142,126 +142,126 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:latest` - linux; arm variant v5
 
 ```console
-$ docker pull redmine@sha256:8ebb24032e04e884e2b85457d48355df042ae774c9048bd7dbd0c105023dcefd
+$ docker pull redmine@sha256:77a13f85209375c890d8588e8a897ff6b2205623afe19220a815516be3f09f92
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.8 MB (284817314 bytes)**  
+-	Total Size: **284.8 MB (284821037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ceb0fd47ab9105e725d65c340d4c99521e82f265e97d3fc7381e5245a12994d`
+-	Image ID: `sha256:f3d9284730cafbd6ee43b19735581341ec61a394988d8663ca8fbb3c607751fc`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
 ```dockerfile
-# Wed, 05 Sep 2018 08:54:58 GMT
-ADD file:2301eb998a2cf644d62951808894ec7ace20df38ed4e82f7ab477d8a9043b67b in / 
-# Wed, 05 Sep 2018 08:54:59 GMT
+# Tue, 16 Oct 2018 08:54:59 GMT
+ADD file:9400a194c6dcf24f439664aab3a28cb7dbf93753b71d2756dbaf872d294fbb8e in / 
+# Tue, 16 Oct 2018 08:55:00 GMT
 CMD ["bash"]
-# Wed, 05 Sep 2018 12:51:54 GMT
+# Tue, 16 Oct 2018 12:01:29 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgdbm3 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 05 Sep 2018 12:51:55 GMT
+# Tue, 16 Oct 2018 12:01:31 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Wed, 05 Sep 2018 13:07:20 GMT
+# Tue, 16 Oct 2018 12:17:01 GMT
 ENV RUBY_MAJOR=2.4
-# Wed, 05 Sep 2018 13:07:20 GMT
+# Tue, 16 Oct 2018 12:17:01 GMT
 ENV RUBY_VERSION=2.4.4
-# Wed, 05 Sep 2018 13:07:20 GMT
+# Tue, 16 Oct 2018 12:17:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=1d0034071d675193ca769f64c91827e5f54cb3a7962316a41d5217c7bc6949f0
-# Wed, 05 Sep 2018 13:07:21 GMT
+# Tue, 16 Oct 2018 12:17:02 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Sat, 06 Oct 2018 09:07:23 GMT
+# Tue, 16 Oct 2018 12:17:03 GMT
 ENV BUNDLER_VERSION=1.16.6
-# Sat, 06 Oct 2018 09:13:24 GMT
+# Tue, 16 Oct 2018 12:23:36 GMT
 RUN set -ex 		&& buildDeps=' 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& dpkg-query --show --showformat '${package}\n' 		| grep -P '^libreadline\d+$' 		| xargs apt-mark manual 	&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Sat, 06 Oct 2018 09:13:25 GMT
+# Tue, 16 Oct 2018 12:23:37 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 06 Oct 2018 09:13:25 GMT
+# Tue, 16 Oct 2018 12:23:37 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 06 Oct 2018 09:13:26 GMT
+# Tue, 16 Oct 2018 12:23:38 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 06 Oct 2018 09:13:27 GMT
+# Tue, 16 Oct 2018 12:23:39 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Sat, 06 Oct 2018 09:13:27 GMT
+# Tue, 16 Oct 2018 12:23:39 GMT
 CMD ["irb"]
-# Sat, 06 Oct 2018 10:13:16 GMT
+# Tue, 16 Oct 2018 16:41:17 GMT
 RUN groupadd -r redmine && useradd -r -g redmine redmine
-# Tue, 16 Oct 2018 09:31:00 GMT
+# Tue, 16 Oct 2018 16:42:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				bzr 		git 		mercurial 		openssh-client 		subversion 				gsfonts 		imagemagick 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 09:31:18 GMT
+# Tue, 16 Oct 2018 16:42:23 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 		export GOSU_VERSION='1.10'; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		export TINI_VERSION='0.18.0'; 	wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"; 	wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5; 	gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" /usr/local/bin/tini.asc; 	chmod +x /usr/local/bin/tini; 	tini -h; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 16 Oct 2018 09:31:18 GMT
+# Tue, 16 Oct 2018 16:42:24 GMT
 ENV RAILS_ENV=production
-# Tue, 16 Oct 2018 09:31:19 GMT
+# Tue, 16 Oct 2018 16:42:24 GMT
 WORKDIR /usr/src/redmine
-# Tue, 16 Oct 2018 09:31:19 GMT
+# Tue, 16 Oct 2018 16:42:24 GMT
 ENV REDMINE_VERSION=3.4.6
-# Tue, 16 Oct 2018 09:31:20 GMT
+# Tue, 16 Oct 2018 16:42:25 GMT
 ENV REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1
-# Tue, 16 Oct 2018 09:31:25 GMT
+# Tue, 16 Oct 2018 16:42:29 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p tmp/pdf public/plugin_assets 	&& chown -R redmine:redmine ./
-# Tue, 16 Oct 2018 09:37:41 GMT
+# Tue, 16 Oct 2018 16:48:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 16 Oct 2018 09:37:44 GMT
+# Tue, 16 Oct 2018 16:48:17 GMT
 VOLUME [/usr/src/redmine/files]
-# Tue, 16 Oct 2018 09:37:44 GMT
+# Tue, 16 Oct 2018 16:48:17 GMT
 COPY file:fc148119ccb9e484870c0b5926b68fb1ea903c3ded95d8f91ae4bd3783cd9d9a in / 
-# Tue, 16 Oct 2018 09:37:45 GMT
+# Tue, 16 Oct 2018 16:48:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 16 Oct 2018 09:37:45 GMT
+# Tue, 16 Oct 2018 16:48:18 GMT
 EXPOSE 3000/tcp
-# Tue, 16 Oct 2018 09:37:46 GMT
+# Tue, 16 Oct 2018 16:48:19 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
 -	Layers:
-	-	`sha256:9cb1890a5e52c7c05eedad090ff39b863a62697e36cd9b3ff608dc0f832d5687`  
-		Last Modified: Wed, 05 Sep 2018 09:03:55 GMT  
-		Size: 44.0 MB (44033002 bytes)  
+	-	`sha256:67cd7720dfa3de15234643bf308008813fd129e03429f026775738064b364e24`  
+		Last Modified: Tue, 16 Oct 2018 09:04:05 GMT  
+		Size: 44.0 MB (44033067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12390ab3149ae30eeab0d28e282ec9dfc32cb5ef9f593dafe3f6d19c7a87e6a8`  
-		Last Modified: Wed, 05 Sep 2018 13:47:51 GMT  
-		Size: 11.4 MB (11375484 bytes)  
+	-	`sha256:3dd956c3d59d9c149b09ee0d97a8e7b865de6f7a097088208284aa8744d2765a`  
+		Last Modified: Tue, 16 Oct 2018 12:35:04 GMT  
+		Size: 11.4 MB (11376546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2009e6c97b5106406ef13e40328ba9a0cf05c22a693f346cd9a9c8fa5cf5a0`  
-		Last Modified: Wed, 05 Sep 2018 13:47:46 GMT  
+	-	`sha256:7a41750db3498e0c5c42960a9a7b557f725903b2fc9bc90d11bcb52322ad7f0b`  
+		Last Modified: Tue, 16 Oct 2018 12:35:00 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e47406156b00501b0143810093dd8459e1c55082a12a6ce6724f1f8727100454`  
-		Last Modified: Sat, 06 Oct 2018 09:52:50 GMT  
-		Size: 21.3 MB (21314635 bytes)  
+	-	`sha256:0e43d1625c0bc98a1bff830848eff67d6dfa2493f875fa1339ff2118da89b033`  
+		Last Modified: Tue, 16 Oct 2018 12:37:34 GMT  
+		Size: 21.3 MB (21314634 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc98cb83a05d6638e22a3cd2fb07f2a27c4ff697efda7b4f6e8b48b90927d37d`  
-		Last Modified: Sat, 06 Oct 2018 09:52:49 GMT  
-		Size: 182.0 B  
+	-	`sha256:c830da8d606f28186c682490e0aca0eee0c119eb24990a4e16ab1e4c0bd018c3`  
+		Last Modified: Tue, 16 Oct 2018 12:37:29 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c78e43441eab240fe52759112948efccc113ef67ab49496636ef15f16dc12d8`  
-		Last Modified: Sat, 06 Oct 2018 10:28:01 GMT  
-		Size: 1.7 KB (1743 bytes)  
+	-	`sha256:ef0c6c5af44d80aaea2413cbd37ff11f7a105c44fd878f6ff4d3ff6492df1e9b`  
+		Last Modified: Tue, 16 Oct 2018 16:55:48 GMT  
+		Size: 1.7 KB (1742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8451afb126e15280c92fcbf035e3e308f7c76de3f8a50c2c928745bd50e0ff50`  
-		Last Modified: Tue, 16 Oct 2018 09:45:51 GMT  
-		Size: 85.0 MB (84957267 bytes)  
+	-	`sha256:9065060727d5bf1804ac2ffda920702786fef3d52485ff1b02f3ddd32c3a2359`  
+		Last Modified: Tue, 16 Oct 2018 16:56:13 GMT  
+		Size: 85.0 MB (84956744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:987d195bbef8506a2705ec9d69fdf4a34fee64a3d5d76dbd6168a022c1480880`  
-		Last Modified: Tue, 16 Oct 2018 09:45:24 GMT  
-		Size: 894.4 KB (894399 bytes)  
+	-	`sha256:92f0782a7e0d8a65c6b3187f2e1f8d4dda7f6f3b0be2e6c0b0e6cf0efba80e9b`  
+		Last Modified: Tue, 16 Oct 2018 16:55:45 GMT  
+		Size: 894.4 KB (894362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a748f3063b650848b40f4826421fd0677463a4075d888e80e6b17807fd1f4597`  
-		Last Modified: Tue, 16 Oct 2018 09:45:24 GMT  
-		Size: 171.0 B  
+	-	`sha256:b1e3f53cd48c3cf26fc266057a1f8fae75b45a638faf7f78a5439eeeacb91c31`  
+		Last Modified: Tue, 16 Oct 2018 16:55:45 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c26dd1d48e0d7f09c41ac6bd64adaf401eec65ce227b25d2fe98abfc08f59f9d`  
-		Last Modified: Tue, 16 Oct 2018 09:45:26 GMT  
-		Size: 2.5 MB (2457569 bytes)  
+	-	`sha256:9d576e075ea939251e4c3cda207f11cf0d725e5948dc2db426b009cf7cf84bbf`  
+		Last Modified: Tue, 16 Oct 2018 16:55:46 GMT  
+		Size: 2.5 MB (2457568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc7b2c1015246c1e5a17adb7c17c2d24d46a2a0604c70af958a82317652a6665`  
-		Last Modified: Tue, 16 Oct 2018 09:45:55 GMT  
-		Size: 119.8 MB (119780835 bytes)  
+	-	`sha256:8d68e092b1120c37d59a66565ce330dcbec8e9cdc1ce08a56f006fc9fd0cabef`  
+		Last Modified: Tue, 16 Oct 2018 16:56:26 GMT  
+		Size: 119.8 MB (119783993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498a6aad53e845c97f07a668ab20a6526995873fb26d55ad85fa55cc61e8f8e5`  
-		Last Modified: Tue, 16 Oct 2018 09:45:24 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:5d958bbc46b7433ab73bcbfd2d369d6ff89d1abf058990961e8eb2417aa18690`  
+		Last Modified: Tue, 16 Oct 2018 16:55:45 GMT  
+		Size: 1.8 KB (1821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:latest` - linux; arm variant v7
