@@ -8,7 +8,7 @@
 ## `r-base:3.5.1`
 
 ```console
-$ docker pull r-base@sha256:0223cbd663e4fdd86f4cb6e43a45d35b4eb473f53d6ee7924260cfea4c301594
+$ docker pull r-base@sha256:4c9f943854ae70ecee6272d15be4efb09ec04f9823c22162f42ff7f7b3b508ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19,67 +19,67 @@ $ docker pull r-base@sha256:0223cbd663e4fdd86f4cb6e43a45d35b4eb473f53d6ee7924260
 ### `r-base:3.5.1` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:e32c63fa18840d6fc46d6c9e0c648285849eec3cc2f82617245884cc4ced5e08
+$ docker pull r-base@sha256:85123354e989404f050ef009f8a67fe9c0f1a01a0e679835511fbad880c7451e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.0 MB (289999472 bytes)**  
+-	Total Size: **287.9 MB (287920732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42d8318728bf56aaef5ac4dd103689adbb56843bdb427153db4e0196235cffa9`
+-	Image ID: `sha256:e4a158184cc53f2c4a873bb027f87400f9fc18a093d850903a92a0f37ed6d92d`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Tue, 04 Sep 2018 21:21:42 GMT
-ADD file:39949bc512df81bb112deccd2b9d55a193e4921451f17776eff96e5c20699054 in / 
-# Tue, 04 Sep 2018 21:21:43 GMT
+# Mon, 15 Oct 2018 23:25:09 GMT
+ADD file:f2b830e0a43d401f6bd8b71879b10173ff51646dcae983030485e206cf59d021 in / 
+# Mon, 15 Oct 2018 23:25:09 GMT
 CMD ["bash"]
-# Wed, 05 Sep 2018 05:26:32 GMT
+# Tue, 16 Oct 2018 04:45:46 GMT
 LABEL org.label-schema.license=GPL-2.0 org.label-schema.vcs-url=https://github.com/rocker-org/r-base org.label-schema.vendor=Rocker Project maintainer=Dirk Eddelbuettel <edd@debian.org>
-# Wed, 05 Sep 2018 05:26:33 GMT
+# Tue, 16 Oct 2018 04:45:47 GMT
 RUN useradd docker 	&& mkdir /home/docker 	&& chown docker:docker /home/docker 	&& addgroup docker staff
-# Wed, 05 Sep 2018 05:26:56 GMT
+# Tue, 16 Oct 2018 04:46:01 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 05 Sep 2018 05:26:59 GMT
+# Tue, 16 Oct 2018 04:46:03 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
-# Wed, 05 Sep 2018 05:26:59 GMT
+# Tue, 16 Oct 2018 04:46:03 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 05 Sep 2018 05:26:59 GMT
+# Tue, 16 Oct 2018 04:46:04 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 05 Sep 2018 05:27:00 GMT
+# Tue, 16 Oct 2018 04:46:04 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Wed, 05 Sep 2018 05:27:00 GMT
+# Tue, 16 Oct 2018 04:46:05 GMT
 ENV R_BASE_VERSION=3.5.1
-# Wed, 05 Sep 2018 05:28:27 GMT
+# Tue, 16 Oct 2018 04:47:33 GMT
 RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler                 r-cran-stringr 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-*         && echo 'options(repos = c(CRAN = "https://cloud.r-project.org/"))' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 05 Sep 2018 05:28:28 GMT
+# Tue, 16 Oct 2018 04:47:33 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:8f9234435f64947bcad1104e14346b296e1b87f45a1afe2f95e3bf1cb0864926`  
-		Last Modified: Tue, 04 Sep 2018 21:25:58 GMT  
-		Size: 49.0 MB (48982630 bytes)  
+	-	`sha256:5fc5a8c3aca57d7cb1630f3de51caabacfb4db3ecf96f3363b4f0dec3edd7cf7`  
+		Last Modified: Mon, 15 Oct 2018 23:35:24 GMT  
+		Size: 49.1 MB (49111873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4768ed7b65fb84476d16e30ced8a0318191752cdf6488299dad3db72c1500cce`  
-		Last Modified: Wed, 05 Sep 2018 05:28:38 GMT  
-		Size: 2.0 KB (1973 bytes)  
+	-	`sha256:5d0bc8b1173b8a424254e79e479589602e0d1db264626387eca94d59201f9c22`  
+		Last Modified: Tue, 16 Oct 2018 04:47:49 GMT  
+		Size: 2.0 KB (1976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:315aef06947a63106f1b991c5aaf93985a3cb03c55da613fd72dac13dc85fd40`  
-		Last Modified: Wed, 05 Sep 2018 05:28:43 GMT  
-		Size: 26.2 MB (26181588 bytes)  
+	-	`sha256:3ca4b634b502cc4caa4571436ae5b1ff3df5887fcda946a2ab42ba4c3f6151ac`  
+		Last Modified: Tue, 16 Oct 2018 04:47:52 GMT  
+		Size: 26.2 MB (26184837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:646915aa41c68863854026530acca13cabd24e5a85f992f3532101bf70471306`  
-		Last Modified: Wed, 05 Sep 2018 05:28:40 GMT  
-		Size: 426.6 KB (426570 bytes)  
+	-	`sha256:cf75621eeb8a9fcd3005d8e1c1b0bc61e20df3d8f458a611a4e3883be4c6d897`  
+		Last Modified: Tue, 16 Oct 2018 04:47:48 GMT  
+		Size: 426.6 KB (426572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:430db1c15e9318ed42284202243e072dd74e0249b333bcbc74ca908ddb168a9c`  
-		Last Modified: Wed, 05 Sep 2018 05:28:38 GMT  
-		Size: 294.0 B  
+	-	`sha256:8e6c0d1a6765cff573fc59d2d8d2dbd8cb57fe7c99c34b3f81a225ff49d10b63`  
+		Last Modified: Tue, 16 Oct 2018 04:47:48 GMT  
+		Size: 295.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:402b231c832395be460ac7c9a55a825933cfc55ba49f3a4fd1104061f22736a1`  
-		Last Modified: Wed, 05 Sep 2018 05:29:25 GMT  
-		Size: 214.4 MB (214406417 bytes)  
+	-	`sha256:adc1db090481f76367909061af933a0fa1f0959f1a71df9a01520bdaf5ef4bce`  
+		Last Modified: Tue, 16 Oct 2018 04:48:23 GMT  
+		Size: 212.2 MB (212195179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:3.5.1` - linux; arm64 variant v8
