@@ -1,9 +1,9 @@
-# `aerospike:4.3.0.8`
+# `aerospike:4.3.0.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:06f614f5f50570ce3f0d252657a48dd8a9510308b468312569e32ba1130a4094`
-- Created: `2018-10-01T23:19:48.57062916Z`
+- Image ID: `sha256:993131d5f4127fb63a412acfb2c5b3ba78f30b745b8e625944c35c6f30eb5271`
+- Created: `2018-10-15T23:59:18.627795885Z`
 - Virtual Size: ~ 127.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=4.3.0.8`
-  - `AEROSPIKE_SHA256=dbddf87e806355edcc47c809f21ee9d8d6313cb4be6c2c25c4b2ca50e9d7d426`
+  - `AEROSPIKE_VERSION=4.3.0.10`
+  - `AEROSPIKE_SHA256=a1778c8efe29b93aaecf08f519448d8944f1cc02e473c940bf7627f6c909b7c2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -66,11 +66,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=4.3.0.8-1`
+### `dpkg` source package: `aerospike-server-community=4.3.0.10-1`
 
 Binary Packages:
 
-- `aerospike-server-community=4.3.0.8-1`
+- `aerospike-server-community=4.3.0.10-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
