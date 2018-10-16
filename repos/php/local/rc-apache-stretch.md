@@ -1,10 +1,10 @@
-# `php:7.3.0RC2-apache-stretch`
+# `php:7.3.0RC3-apache-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9787676a49585fedfcec21d00b46e200550be11bbac5f60d31f54ce4488eac07`
-- Created: `2018-10-02T17:46:15.645683584Z`
-- Virtual Size: ~ 378.42 Mb  
+- Image ID: `sha256:7d36fbbd9ccad36366434926e343de4cce91abcb0579a4dd42d67a4f37dcac9d`
+- Created: `2018-10-16T00:16:27.467421613Z`
+- Virtual Size: ~ 377.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.0RC2`
-  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0RC2.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0RC2.tar.xz.asc`
-  - `PHP_SHA256=f52692cb4f5144365a72c6ff698101035a27bceebf2d5a307ad82dd43ee9d751`
+  - `PHP_VERSION=7.3.0RC3`
+  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0RC3.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0RC3.tar.xz.asc`
+  - `PHP_SHA256=bd6c7fa718ff5b430d64ae1b5cfdf3e076ceb0a4a8569927bba8fe65fa04c4b5`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1838,11 +1838,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.110-3+deb9u4`
+### `dpkg` source package: `linux=4.9.110-3+deb9u6`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.110-3+deb9u4`
+- `linux-libc-dev:amd64=4.9.110-3+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1852,13 +1852,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.dsc' linux_4.9.110-3+deb9u6.dsc 123390 SHA256:95aeedb629855a01197613ea516540352354c955325baa7caaa7993b9a733efc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.debian.tar.xz' linux_4.9.110-3+deb9u6.debian.tar.xz 2620700 SHA256:d2c03d4e3cb8cfad0cb17552c54b0a388f04ba82ad187ef68600a234a908d171
+```
 
-- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
