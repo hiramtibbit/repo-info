@@ -195,7 +195,7 @@ CMD ["odoo"]
 ## `odoo:11`
 
 ```console
-$ docker pull odoo@sha256:dbb53cfb88004469c1fb59373936fc14bd4d4e481954ce7b95d1c4bddba34023
+$ docker pull odoo@sha256:67b7f3f69e85f3e7c7eda2d9594decfa5e9c474d8f90ad387f91a048ea0eef2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -295,96 +295,96 @@ CMD ["odoo"]
 ### `odoo:11` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:9b5ea012711c61dcb6a3e37bf63e009488c4a64a7d555ac46254f06c4e2f627d
+$ docker pull odoo@sha256:259f6593b885ce2fad1e0191cee92d99efeb970a1b9b116afcec41b84cd730d1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.8 MB (415829189 bytes)**  
+-	Total Size: **415.9 MB (415908972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e667f207e5d4cb1c7014973bfd11d528f2ef1b5077a77b616cf5644e97ac024`
+-	Image ID: `sha256:144db40eedd57d026ec9201b5cfa7b890ea30065f2c80351f9d98f5c02d38327`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 
 ```dockerfile
-# Wed, 05 Sep 2018 08:50:16 GMT
-ADD file:4e01bc399974f6fe22cd2b4421c2e52c52380aa00a770986939071dbc59d734e in / 
-# Wed, 05 Sep 2018 08:50:30 GMT
+# Tue, 16 Oct 2018 08:43:08 GMT
+ADD file:961d2f24a0cebfcdd333e000ed4488e5c4f4d2a3d11056c45934d647caed5845 in / 
+# Tue, 16 Oct 2018 08:43:10 GMT
 CMD ["bash"]
-# Wed, 05 Sep 2018 12:16:07 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Wed, 05 Sep 2018 12:16:08 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Sep 2018 12:17:45 GMT
+# Tue, 16 Oct 2018 15:53:35 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             python3-pip             python3-setuptools             python3-renderpm             libssl1.0-dev             xz-utils             python3-watchdog         && curl -o wkhtmltox.tar.xz -SL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz         && echo '3f923f425d345940089e44c1466f6408b9619562 wkhtmltox.tar.xz' | sha1sum -c -         && tar xvf wkhtmltox.tar.xz         && cp wkhtmltox/lib/* /usr/local/lib/         && cp wkhtmltox/bin/* /usr/local/bin/         && cp -r wkhtmltox/share/man/man1 /usr/local/share/man/
-# Wed, 05 Sep 2018 12:17:47 GMT
+# Tue, 16 Oct 2018 16:00:48 GMT
 ENV ODOO_VERSION=11.0
-# Tue, 09 Oct 2018 08:56:18 GMT
+# Tue, 16 Oct 2018 16:00:48 GMT
 ENV ODOO_RELEASE=20181008
-# Tue, 09 Oct 2018 08:59:52 GMT
+# Tue, 16 Oct 2018 16:04:45 GMT
 RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo '28804ea596ea88eeb1cec5c6089436af0bd67d57 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 09 Oct 2018 09:00:14 GMT
+# Tue, 16 Oct 2018 16:04:58 GMT
 RUN pip3 install num2words xlwt
-# Tue, 09 Oct 2018 09:00:15 GMT
+# Tue, 16 Oct 2018 16:04:59 GMT
 COPY file:33fddeba88e5214ff2c7cd05a02348dc417a5de70b767d6ff559e871ee6d046a in / 
-# Tue, 09 Oct 2018 09:00:16 GMT
+# Tue, 16 Oct 2018 16:05:00 GMT
 COPY file:db43c8e34bfc1a07c1c22547437af17629fbadb6633084c02cbfc0bb6069c9fd in /etc/odoo/ 
-# Tue, 09 Oct 2018 09:00:19 GMT
+# Tue, 16 Oct 2018 16:05:02 GMT
 RUN chown odoo /etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 09:00:20 GMT
+# Tue, 16 Oct 2018 16:05:03 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Tue, 09 Oct 2018 09:00:21 GMT
+# Tue, 16 Oct 2018 16:05:08 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 09 Oct 2018 09:00:22 GMT
+# Tue, 16 Oct 2018 16:05:09 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Tue, 09 Oct 2018 09:00:23 GMT
+# Tue, 16 Oct 2018 16:05:10 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 09:00:24 GMT
+# Tue, 16 Oct 2018 16:05:11 GMT
 USER [odoo]
-# Tue, 09 Oct 2018 09:00:25 GMT
+# Tue, 16 Oct 2018 16:05:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Oct 2018 09:00:26 GMT
+# Tue, 16 Oct 2018 16:05:13 GMT
 CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:421608e4e92275f9265604523f9299cf5f4bd493a1ea3affd62c265b38fc8823`  
-		Last Modified: Wed, 05 Sep 2018 09:06:53 GMT  
-		Size: 43.1 MB (43123621 bytes)  
+	-	`sha256:54fc83a09c68f915c1e318f4b118a467a545027084dd28edbdfded4ea6772e9d`  
+		Last Modified: Tue, 16 Oct 2018 08:49:44 GMT  
+		Size: 43.1 MB (43123597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32e8a4d458843da11ee1eb25ae26afa96663eb7a58bc53811c085e47c2c40dea`  
-		Last Modified: Wed, 05 Sep 2018 12:23:42 GMT  
-		Size: 219.4 MB (219417745 bytes)  
+	-	`sha256:6007c6fbe35d2b9f941d61d07886ff24bfce70a308c8efd672ded7da28103683`  
+		Last Modified: Tue, 16 Oct 2018 16:10:56 GMT  
+		Size: 219.5 MB (219499122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f0fbad29d1a146215a301b019ad668bece5317da81e87cbd2af94fd261cee5`  
-		Last Modified: Tue, 09 Oct 2018 09:03:24 GMT  
-		Size: 152.8 MB (152754697 bytes)  
+	-	`sha256:2fde4fa4759d21971a92fe8312cee5f48dd408f8c5b2497e57e79759d57a3d76`  
+		Last Modified: Tue, 16 Oct 2018 16:12:33 GMT  
+		Size: 152.8 MB (152753109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47f2361b93d932f3d1b609bf319e23839d6bf10115f720dc27632ddedab27695`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 531.3 KB (531289 bytes)  
+	-	`sha256:2c3e2e0917f07d96e3943101e6655d9c3ad7ed24368879b97617d08b03e88d15`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 531.3 KB (531307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:726ab1210e3e0c0a47009337fc91f8d42b8f199948c126820d1dfbc031c975fd`  
-		Last Modified: Tue, 09 Oct 2018 09:02:26 GMT  
-		Size: 600.0 B  
+	-	`sha256:9e79d2af8aae1299fb094a5025c2bc0cae1c2063e618dab4fbb37147c0935a6f`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 601.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d92ad58c2164fd61e6579feadeca59ec253158069221e16197689cf6fe88419`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 556.0 B  
+	-	`sha256:6f8e47691aaa1521f0c440296b72c134b13661c550787c33fb5e0bab11461dcf`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 550.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5915ac9b54d713bdc667280e7dcb41456f946e17742a35aaf414e37388e9514`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 554.0 B  
+	-	`sha256:7f6f32105fc567815433df3299ee1ffd0be4aac739e1acee2fdc6e28140fa54c`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 558.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:441ad3d717c3d7c14608647ec04901693df1310ae04a63f869fa324532ca93a2`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 127.0 B  
+	-	`sha256:137248ab2efbd74a634122f3a75deef2ab3e7fe9b24b396ab354ab61f004cc6d`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:11.0`
 
 ```console
-$ docker pull odoo@sha256:dbb53cfb88004469c1fb59373936fc14bd4d4e481954ce7b95d1c4bddba34023
+$ docker pull odoo@sha256:67b7f3f69e85f3e7c7eda2d9594decfa5e9c474d8f90ad387f91a048ea0eef2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -484,90 +484,90 @@ CMD ["odoo"]
 ### `odoo:11.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:9b5ea012711c61dcb6a3e37bf63e009488c4a64a7d555ac46254f06c4e2f627d
+$ docker pull odoo@sha256:259f6593b885ce2fad1e0191cee92d99efeb970a1b9b116afcec41b84cd730d1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.8 MB (415829189 bytes)**  
+-	Total Size: **415.9 MB (415908972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e667f207e5d4cb1c7014973bfd11d528f2ef1b5077a77b616cf5644e97ac024`
+-	Image ID: `sha256:144db40eedd57d026ec9201b5cfa7b890ea30065f2c80351f9d98f5c02d38327`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 
 ```dockerfile
-# Wed, 05 Sep 2018 08:50:16 GMT
-ADD file:4e01bc399974f6fe22cd2b4421c2e52c52380aa00a770986939071dbc59d734e in / 
-# Wed, 05 Sep 2018 08:50:30 GMT
+# Tue, 16 Oct 2018 08:43:08 GMT
+ADD file:961d2f24a0cebfcdd333e000ed4488e5c4f4d2a3d11056c45934d647caed5845 in / 
+# Tue, 16 Oct 2018 08:43:10 GMT
 CMD ["bash"]
-# Wed, 05 Sep 2018 12:16:07 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Wed, 05 Sep 2018 12:16:08 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Sep 2018 12:17:45 GMT
+# Tue, 16 Oct 2018 15:53:35 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             python3-pip             python3-setuptools             python3-renderpm             libssl1.0-dev             xz-utils             python3-watchdog         && curl -o wkhtmltox.tar.xz -SL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz         && echo '3f923f425d345940089e44c1466f6408b9619562 wkhtmltox.tar.xz' | sha1sum -c -         && tar xvf wkhtmltox.tar.xz         && cp wkhtmltox/lib/* /usr/local/lib/         && cp wkhtmltox/bin/* /usr/local/bin/         && cp -r wkhtmltox/share/man/man1 /usr/local/share/man/
-# Wed, 05 Sep 2018 12:17:47 GMT
+# Tue, 16 Oct 2018 16:00:48 GMT
 ENV ODOO_VERSION=11.0
-# Tue, 09 Oct 2018 08:56:18 GMT
+# Tue, 16 Oct 2018 16:00:48 GMT
 ENV ODOO_RELEASE=20181008
-# Tue, 09 Oct 2018 08:59:52 GMT
+# Tue, 16 Oct 2018 16:04:45 GMT
 RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo '28804ea596ea88eeb1cec5c6089436af0bd67d57 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 09 Oct 2018 09:00:14 GMT
+# Tue, 16 Oct 2018 16:04:58 GMT
 RUN pip3 install num2words xlwt
-# Tue, 09 Oct 2018 09:00:15 GMT
+# Tue, 16 Oct 2018 16:04:59 GMT
 COPY file:33fddeba88e5214ff2c7cd05a02348dc417a5de70b767d6ff559e871ee6d046a in / 
-# Tue, 09 Oct 2018 09:00:16 GMT
+# Tue, 16 Oct 2018 16:05:00 GMT
 COPY file:db43c8e34bfc1a07c1c22547437af17629fbadb6633084c02cbfc0bb6069c9fd in /etc/odoo/ 
-# Tue, 09 Oct 2018 09:00:19 GMT
+# Tue, 16 Oct 2018 16:05:02 GMT
 RUN chown odoo /etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 09:00:20 GMT
+# Tue, 16 Oct 2018 16:05:03 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Tue, 09 Oct 2018 09:00:21 GMT
+# Tue, 16 Oct 2018 16:05:08 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 09 Oct 2018 09:00:22 GMT
+# Tue, 16 Oct 2018 16:05:09 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Tue, 09 Oct 2018 09:00:23 GMT
+# Tue, 16 Oct 2018 16:05:10 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 09:00:24 GMT
+# Tue, 16 Oct 2018 16:05:11 GMT
 USER [odoo]
-# Tue, 09 Oct 2018 09:00:25 GMT
+# Tue, 16 Oct 2018 16:05:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Oct 2018 09:00:26 GMT
+# Tue, 16 Oct 2018 16:05:13 GMT
 CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:421608e4e92275f9265604523f9299cf5f4bd493a1ea3affd62c265b38fc8823`  
-		Last Modified: Wed, 05 Sep 2018 09:06:53 GMT  
-		Size: 43.1 MB (43123621 bytes)  
+	-	`sha256:54fc83a09c68f915c1e318f4b118a467a545027084dd28edbdfded4ea6772e9d`  
+		Last Modified: Tue, 16 Oct 2018 08:49:44 GMT  
+		Size: 43.1 MB (43123597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32e8a4d458843da11ee1eb25ae26afa96663eb7a58bc53811c085e47c2c40dea`  
-		Last Modified: Wed, 05 Sep 2018 12:23:42 GMT  
-		Size: 219.4 MB (219417745 bytes)  
+	-	`sha256:6007c6fbe35d2b9f941d61d07886ff24bfce70a308c8efd672ded7da28103683`  
+		Last Modified: Tue, 16 Oct 2018 16:10:56 GMT  
+		Size: 219.5 MB (219499122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f0fbad29d1a146215a301b019ad668bece5317da81e87cbd2af94fd261cee5`  
-		Last Modified: Tue, 09 Oct 2018 09:03:24 GMT  
-		Size: 152.8 MB (152754697 bytes)  
+	-	`sha256:2fde4fa4759d21971a92fe8312cee5f48dd408f8c5b2497e57e79759d57a3d76`  
+		Last Modified: Tue, 16 Oct 2018 16:12:33 GMT  
+		Size: 152.8 MB (152753109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47f2361b93d932f3d1b609bf319e23839d6bf10115f720dc27632ddedab27695`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 531.3 KB (531289 bytes)  
+	-	`sha256:2c3e2e0917f07d96e3943101e6655d9c3ad7ed24368879b97617d08b03e88d15`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 531.3 KB (531307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:726ab1210e3e0c0a47009337fc91f8d42b8f199948c126820d1dfbc031c975fd`  
-		Last Modified: Tue, 09 Oct 2018 09:02:26 GMT  
-		Size: 600.0 B  
+	-	`sha256:9e79d2af8aae1299fb094a5025c2bc0cae1c2063e618dab4fbb37147c0935a6f`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 601.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d92ad58c2164fd61e6579feadeca59ec253158069221e16197689cf6fe88419`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 556.0 B  
+	-	`sha256:6f8e47691aaa1521f0c440296b72c134b13661c550787c33fb5e0bab11461dcf`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 550.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5915ac9b54d713bdc667280e7dcb41456f946e17742a35aaf414e37388e9514`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 554.0 B  
+	-	`sha256:7f6f32105fc567815433df3299ee1ffd0be4aac739e1acee2fdc6e28140fa54c`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 558.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:441ad3d717c3d7c14608647ec04901693df1310ae04a63f869fa324532ca93a2`  
-		Last Modified: Tue, 09 Oct 2018 09:02:25 GMT  
-		Size: 127.0 B  
+	-	`sha256:137248ab2efbd74a634122f3a75deef2ab3e7fe9b24b396ab354ab61f004cc6d`  
+		Last Modified: Tue, 16 Oct 2018 16:11:25 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:12`
@@ -951,7 +951,7 @@ CMD ["odoo"]
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:f0cda40c07f90d37c4a8e4b99c0efb41a1c3a09e881d81d5274f5a250c4483e3
+$ docker pull odoo@sha256:8c158e40b1e33ddba15f7434f7555ca0ef312c93f83a2ffa7665097c276d0eb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1051,88 +1051,88 @@ CMD ["odoo"]
 ### `odoo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:72952c7adb5bce9c3979b1faf36f3b8185b130b2b56e9099edbeef39eb472e35
+$ docker pull odoo@sha256:4d30a9f632a5de67fbb06070e415cb0459dcf208bb8aef8f59eab5e6f4127e11
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **394.0 MB (393987066 bytes)**  
+-	Total Size: **394.1 MB (394067077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87de0a2769dd52d629d6a56e44b7e082c40907c5240b5859d6ba8308a7aaaf25`
+-	Image ID: `sha256:bb2b50d59e95cfa24c2c3f0228f386cb05918826b64a7560935fa87eacf80180`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 
 ```dockerfile
-# Wed, 05 Sep 2018 08:50:16 GMT
-ADD file:4e01bc399974f6fe22cd2b4421c2e52c52380aa00a770986939071dbc59d734e in / 
-# Wed, 05 Sep 2018 08:50:30 GMT
+# Tue, 16 Oct 2018 08:43:08 GMT
+ADD file:961d2f24a0cebfcdd333e000ed4488e5c4f4d2a3d11056c45934d647caed5845 in / 
+# Tue, 16 Oct 2018 08:43:10 GMT
 CMD ["bash"]
-# Wed, 05 Sep 2018 12:16:07 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Wed, 05 Sep 2018 12:16:08 GMT
+# Tue, 16 Oct 2018 15:51:46 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Sep 2018 12:17:45 GMT
+# Tue, 16 Oct 2018 15:53:35 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             python3-pip             python3-setuptools             python3-renderpm             libssl1.0-dev             xz-utils             python3-watchdog         && curl -o wkhtmltox.tar.xz -SL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz         && echo '3f923f425d345940089e44c1466f6408b9619562 wkhtmltox.tar.xz' | sha1sum -c -         && tar xvf wkhtmltox.tar.xz         && cp wkhtmltox/lib/* /usr/local/lib/         && cp wkhtmltox/bin/* /usr/local/bin/         && cp -r wkhtmltox/share/man/man1 /usr/local/share/man/
-# Fri, 05 Oct 2018 09:09:01 GMT
+# Tue, 16 Oct 2018 15:53:36 GMT
 ENV ODOO_VERSION=12.0
-# Tue, 09 Oct 2018 08:51:31 GMT
+# Tue, 16 Oct 2018 15:53:36 GMT
 ENV ODOO_RELEASE=20181008
-# Tue, 09 Oct 2018 08:55:15 GMT
+# Tue, 16 Oct 2018 15:59:58 GMT
 RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo 'caedca66b655268f2f0fb8d2661593dabbf46b88 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 09 Oct 2018 08:55:37 GMT
+# Tue, 16 Oct 2018 16:00:11 GMT
 RUN pip3 install num2words xlwt
-# Tue, 09 Oct 2018 08:55:44 GMT
+# Tue, 16 Oct 2018 16:00:14 GMT
 COPY file:33fddeba88e5214ff2c7cd05a02348dc417a5de70b767d6ff559e871ee6d046a in / 
-# Tue, 09 Oct 2018 08:55:45 GMT
+# Tue, 16 Oct 2018 16:00:18 GMT
 COPY file:db43c8e34bfc1a07c1c22547437af17629fbadb6633084c02cbfc0bb6069c9fd in /etc/odoo/ 
-# Tue, 09 Oct 2018 08:55:46 GMT
+# Tue, 16 Oct 2018 16:00:27 GMT
 RUN chown odoo /etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 08:55:58 GMT
+# Tue, 16 Oct 2018 16:00:31 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Tue, 09 Oct 2018 08:55:59 GMT
+# Tue, 16 Oct 2018 16:00:33 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 09 Oct 2018 08:55:59 GMT
+# Tue, 16 Oct 2018 16:00:34 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Tue, 09 Oct 2018 08:56:00 GMT
+# Tue, 16 Oct 2018 16:00:35 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 09 Oct 2018 08:56:01 GMT
+# Tue, 16 Oct 2018 16:00:36 GMT
 USER [odoo]
-# Tue, 09 Oct 2018 08:56:02 GMT
+# Tue, 16 Oct 2018 16:00:37 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Oct 2018 08:56:03 GMT
+# Tue, 16 Oct 2018 16:00:38 GMT
 CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:421608e4e92275f9265604523f9299cf5f4bd493a1ea3affd62c265b38fc8823`  
-		Last Modified: Wed, 05 Sep 2018 09:06:53 GMT  
-		Size: 43.1 MB (43123621 bytes)  
+	-	`sha256:54fc83a09c68f915c1e318f4b118a467a545027084dd28edbdfded4ea6772e9d`  
+		Last Modified: Tue, 16 Oct 2018 08:49:44 GMT  
+		Size: 43.1 MB (43123597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32e8a4d458843da11ee1eb25ae26afa96663eb7a58bc53811c085e47c2c40dea`  
-		Last Modified: Wed, 05 Sep 2018 12:23:42 GMT  
-		Size: 219.4 MB (219417745 bytes)  
+	-	`sha256:6007c6fbe35d2b9f941d61d07886ff24bfce70a308c8efd672ded7da28103683`  
+		Last Modified: Tue, 16 Oct 2018 16:10:56 GMT  
+		Size: 219.5 MB (219499122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9ecb491b6e36740db12f6aed000c39a2d40b511e19fc0878c221913ca0a5725`  
-		Last Modified: Tue, 09 Oct 2018 09:01:40 GMT  
-		Size: 130.9 MB (130912568 bytes)  
+	-	`sha256:45213afe6b813df96cb1777e6ea67823ea93c4e11973d743beeded21384e3738`  
+		Last Modified: Tue, 16 Oct 2018 16:10:40 GMT  
+		Size: 130.9 MB (130911232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43c7badae181688c4e03eb20434dce5e12fbe6367d0cff4bf0f84871ef9ff102`  
-		Last Modified: Tue, 09 Oct 2018 09:00:46 GMT  
-		Size: 531.3 KB (531300 bytes)  
+	-	`sha256:42855506e80e32deb5e5f6bdd9c20efdd26eaaf63dadd7c6e7d74751c6a52d12`  
+		Last Modified: Tue, 16 Oct 2018 16:09:38 GMT  
+		Size: 531.3 KB (531292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6584b2e951d677b589c124ada8bfaafd293b8d4e7f287735473e869993c03a7`  
-		Last Modified: Tue, 09 Oct 2018 09:00:46 GMT  
-		Size: 599.0 B  
+	-	`sha256:0edc433d7ed8c23cc57b1fa3a1e6b2223af5a027a1375805cc3adb5a381dfe06`  
+		Last Modified: Tue, 16 Oct 2018 16:09:38 GMT  
+		Size: 601.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38563e78d6d5c50b787011ee029e6342191a6989779af847aee141f09bf3ccbd`  
-		Last Modified: Tue, 09 Oct 2018 09:00:46 GMT  
-		Size: 549.0 B  
+	-	`sha256:7727a119a7a2eb6e3077c3305a3c22bd04909416f586585df26646c1977ce221`  
+		Last Modified: Tue, 16 Oct 2018 16:09:37 GMT  
+		Size: 553.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ac2bfc83771c31f3aaaf86622503b9d8005e1ae95c66429ab69790a54fe5a15`  
-		Last Modified: Tue, 09 Oct 2018 09:00:46 GMT  
-		Size: 557.0 B  
+	-	`sha256:9c3d4e258a81095cbd8d225115fdaaff76dc3f6a8b4e949661309860c925b671`  
+		Last Modified: Tue, 16 Oct 2018 16:09:39 GMT  
+		Size: 553.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3526def363b8ede320d8a01566b589ef4504269625f74c19a3de18f817fedb76`  
-		Last Modified: Tue, 09 Oct 2018 09:00:46 GMT  
+	-	`sha256:2b01a4c3e4d646193682ac1f1f41ec019fee839c95b8bf5c605e17b2cf80e6b8`  
+		Last Modified: Tue, 16 Oct 2018 16:09:38 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
