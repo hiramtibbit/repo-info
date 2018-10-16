@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e7043d59c43fc4a3eab821cc6c773ff4f71816d876d2dedd87e41e0010798d7`
-- Created: `2018-09-12T21:36:20.65543413Z`
+- Image ID: `sha256:3878835bc8013238d9a41fff81eadf1c04f61a8c3a72c1172dc0678c018a8575`
+- Created: `2018-10-16T20:01:39.782592415Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5656,15 +5656,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.5.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.5=3.5.3-1`
+### `dpkg` source package: `python3.5=3.5.3-1+deb9u1`
 
 Binary Packages:
 
-- `libpython3.5:amd64=3.5.3-1`
-- `libpython3.5-minimal:amd64=3.5.3-1`
-- `libpython3.5-stdlib:amd64=3.5.3-1`
-- `python3.5=3.5.3-1`
-- `python3.5-minimal=3.5.3-1`
+- `libpython3.5:amd64=3.5.3-1+deb9u1`
+- `libpython3.5-minimal:amd64=3.5.3-1+deb9u1`
+- `libpython3.5-stdlib:amd64=3.5.3-1+deb9u1`
+- `python3.5=3.5.3-1+deb9u1`
+- `python3.5-minimal=3.5.3-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.5/copyright`, `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
@@ -5698,17 +5698,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.dsc' python3.5_3.5.3-1.dsc 3367 SHA256:5259cbb15bb93f7bdfbe9ce03a972ea47f81c86057d5939ef9ce578414b2f1de
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.debian.tar.xz' python3.5_3.5.3-1.debian.tar.xz 218268 SHA256:fc344383001555ff33b9509879d809e3c3749de32c052d8e24b23b2b2486ff6e
+$ apt-get source -qq --print-uris python3.5=3.5.3-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.dsc' python3.5_3.5.3-1+deb9u1.dsc 3370 SHA256:ab783e665c7943425b4e14d0473806c5a8d4ceabde25958a77b49fb5fd47f8c6
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.debian.tar.xz' python3.5_3.5.3-1+deb9u1.debian.tar.xz 221400 SHA256:04f498e2a049fd95e5f152ff5a2242d1fe99084fb44eba4df0a6758512d731a4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.5/3.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.5/3.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.5/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.5/3.5.3-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `raptor2=2.0.14-1`
 

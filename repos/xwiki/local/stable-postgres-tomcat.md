@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d41089140af7b819a6f2152d73857df5e1beec2f439105fbcf4d8f40c5e960ea`
-- Created: `2018-09-26T20:21:57.230398326Z`
+- Image ID: `sha256:e481fb8267ce4323e240272c391a16b98db93dc8e1307ee6fce13291dee805b9`
+- Created: `2018-10-16T21:48:54.76285112Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA512=131dfe23918f33fb24cefa7a03286c786304151f95f7bc0b6e34dfb6b0d1e65fe606e48b85c60c8a522938d1a01a36b540e69c94f36973321858e229731cda82`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc`
-  - `XWIKI_VERSION=10.8`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.8`
-  - `XWIKI_DOWNLOAD_SHA256=3a47e25243ec19cf81258c6e30db292419636a06d27c8e3b7fa30a445328ed85`
+  - `XWIKI_VERSION=10.8.1`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.8.1`
+  - `XWIKI_DOWNLOAD_SHA256=ed9436b5704e8cd4bc399c017f2ef7cf32e8f18f4e75a4fcc52782d933e9893c`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5656,15 +5656,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.5.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.5=3.5.3-1`
+### `dpkg` source package: `python3.5=3.5.3-1+deb9u1`
 
 Binary Packages:
 
-- `libpython3.5:amd64=3.5.3-1`
-- `libpython3.5-minimal:amd64=3.5.3-1`
-- `libpython3.5-stdlib:amd64=3.5.3-1`
-- `python3.5=3.5.3-1`
-- `python3.5-minimal=3.5.3-1`
+- `libpython3.5:amd64=3.5.3-1+deb9u1`
+- `libpython3.5-minimal:amd64=3.5.3-1+deb9u1`
+- `libpython3.5-stdlib:amd64=3.5.3-1+deb9u1`
+- `python3.5=3.5.3-1+deb9u1`
+- `python3.5-minimal=3.5.3-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.5/copyright`, `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
@@ -5698,17 +5698,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.dsc' python3.5_3.5.3-1.dsc 3367 SHA256:5259cbb15bb93f7bdfbe9ce03a972ea47f81c86057d5939ef9ce578414b2f1de
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.debian.tar.xz' python3.5_3.5.3-1.debian.tar.xz 218268 SHA256:fc344383001555ff33b9509879d809e3c3749de32c052d8e24b23b2b2486ff6e
+$ apt-get source -qq --print-uris python3.5=3.5.3-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.dsc' python3.5_3.5.3-1+deb9u1.dsc 3370 SHA256:ab783e665c7943425b4e14d0473806c5a8d4ceabde25958a77b49fb5fd47f8c6
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.debian.tar.xz' python3.5_3.5.3-1+deb9u1.debian.tar.xz 221400 SHA256:04f498e2a049fd95e5f152ff5a2242d1fe99084fb44eba4df0a6758512d731a4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.5/3.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.5/3.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.5/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.5/3.5.3-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `raptor2=2.0.14-1`
 
