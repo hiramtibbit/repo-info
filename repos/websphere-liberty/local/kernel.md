@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c66b6627dbeb16f6d55c3751fea1d00d9de91d5342133b1ac5df9878b52a92d1`
-- Created: `2018-09-28T19:46:52.328177673Z`
-- Virtual Size: ~ 334.94 Mb  
+- Image ID: `sha256:ebbdb1bd1d09c02a923572c200a4f4fa9bc9ddbe223166ff701caaf344ab1eab`
+- Created: `2018-10-16T21:46:40.779265571Z`
+- Virtual Size: ~ 355.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`

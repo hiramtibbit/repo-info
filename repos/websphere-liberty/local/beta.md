@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d90a0b334a93b3dc684d31852f55f6dca0df2877df6062f83b170cd5370f0d15`
-- Created: `2018-10-01T19:22:52.135064137Z`
-- Virtual Size: ~ 437.01 Mb  
+- Image ID: `sha256:9aa3e4e5a4c7e724efa67ed767a2bf73f8632084431e0c4f486d08f6a8cdd951`
+- Created: `2018-10-16T21:47:47.248077536Z`
+- Virtual Size: ~ 559.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
