@@ -3902,14 +3902,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.1.dsc' util-linux_2.31.1-0.4ubuntu3.1.dsc 4148 SHA256:e242480a513a4c602363defbec6d5c8368bb3505e5e96c6a44ecff33207adb59
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.1.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.1.debian.tar.xz 97216 SHA256:74af4d8d5750eb84e4e8393a7a2102fbe1aa40e15c4f5a198ff2bc8c281108c1
-```
 
 ### `dpkg` source package: `wget=1.19.4-1ubuntu2.1`
 

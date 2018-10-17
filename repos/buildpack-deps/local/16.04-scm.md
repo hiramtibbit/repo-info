@@ -1531,9 +1531,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.dsc' openssh_7.2p2-4ubuntu2.4.dsc 2878 SHA256:4c35e06545e8e332474f5e3cb1fa4ef159e8af090c566693d34d401ef726b493
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.debian.tar.xz' openssh_7.2p2-4ubuntu2.4.debian.tar.xz 166628 SHA256:00b7e94483e369ab0e098ccada7b35473694544e4498d20ff7c2a2ae8bfe8def
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.dsc' openssh_7.2p2-4ubuntu2.4.dsc 2878 SHA256:4c35e06545e8e332474f5e3cb1fa4ef159e8af090c566693d34d401ef726b493
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.debian.tar.xz' openssh_7.2p2-4ubuntu2.4.debian.tar.xz 166628 SHA256:00b7e94483e369ab0e098ccada7b35473694544e4498d20ff7c2a2ae8bfe8def
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
