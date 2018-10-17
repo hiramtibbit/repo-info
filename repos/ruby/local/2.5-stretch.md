@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e2b5b80415f0bce7852208e51ad6489c1ffcc4cd033a62c2ca7467df954ca43`
-- Created: `2018-10-05T21:40:48.694938392Z`
-- Virtual Size: ~ 868.80 Mb  
+- Image ID: `sha256:3c8181e703d290cbf01a41fd4592936dbb5c209409efb4ea384c0b36c4652eca`
+- Created: `2018-10-16T09:52:36.053045414Z`
+- Virtual Size: ~ 868.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -667,14 +667,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.2.1-8+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.2.1-8+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u6`
+### `dpkg` source package: `curl=7.52.1-5+deb9u7`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u6`
-- `libcurl3:amd64=7.52.1-5+deb9u6`
-- `libcurl3-gnutls:amd64=7.52.1-5+deb9u6`
-- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u6`
+- `curl=7.52.1-5+deb9u7`
+- `libcurl3:amd64=7.52.1-5+deb9u7`
+- `libcurl3-gnutls:amd64=7.52.1-5+deb9u7`
+- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -688,17 +688,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u6
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u6.dsc' curl_7.52.1-5+deb9u6.dsc 2793 SHA256:463a6ac7cb310890ae03c904ec31f85616cf05bd56c74d1d9b981da38bfab616
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u6.debian.tar.xz' curl_7.52.1-5+deb9u6.debian.tar.xz 40420 SHA256:df3786154af6f98fa3623272a1756355218fd686603259b441b3a4ae24d7a942
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.dsc' curl_7.52.1-5+deb9u7.dsc 2818 SHA256:e8f007d8d45d4d00ba5aa54223f46b8c240a72fb2c4e45d80a859124e3ef40d0
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.debian.tar.xz' curl_7.52.1-5+deb9u7.debian.tar.xz 40796 SHA256:dbe0d4258f0d91787be2197f175807a69a454c9463e7dec3539f168cc43d1b40
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1449,12 +1449,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/geoip/1.6.9-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/geoip/1.6.9-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.11.0-3+deb9u3`
+### `dpkg` source package: `git=1:2.11.0-3+deb9u4`
 
 Binary Packages:
 
-- `git=1:2.11.0-3+deb9u3`
-- `git-man=1:2.11.0-3+deb9u3`
+- `git=1:2.11.0-3+deb9u4`
+- `git-man=1:2.11.0-3+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1480,17 +1480,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3+deb9u3.dsc' git_2.11.0-3+deb9u3.dsc 2944 SHA256:053ab7b47b8a40ca6ec1449c750396df578651e178c1bbedc2f154d53e9b3203
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3+deb9u3.debian.tar.xz' git_2.11.0-3+deb9u3.debian.tar.xz 549420 SHA256:df8dbe103d6ae8b210280fd2f344ad3dee5c718bd2769278544874af38f011a4
+$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u4.dsc' git_2.11.0-3+deb9u4.dsc 2944 SHA256:ca0df7a6de443d3a19920a2b59c10a669928dee2929d03d060ed181ff9646e86
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u4.debian.tar.xz' git_2.11.0-3+deb9u4.debian.tar.xz 554016 SHA256:c9158b7c3446a0c9ed15f644a520494c3c675b46b2355b9c7e2b429a3ad0392f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.50.3-2`
 
@@ -2038,23 +2038,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ilmbase/2.2.0-12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ilmbase/2.2.0-12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u5`
+### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-11+deb9u6`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.7.4+dfsg-11+deb9u5`
-- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u5`
-- `imagemagick-6.q16=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6-headers=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6.q16-3-extra:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickcore-dev=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickwand-6-headers=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.7.4+dfsg-11+deb9u5`
-- `libmagickwand-dev=8:6.9.7.4+dfsg-11+deb9u5`
+- `imagemagick=8:6.9.7.4+dfsg-11+deb9u6`
+- `imagemagick-6-common=8:6.9.7.4+dfsg-11+deb9u6`
+- `imagemagick-6.q16=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6-headers=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6.q16-3-extra:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickcore-dev=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickwand-6-headers=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.7.4+dfsg-11+deb9u6`
+- `libmagickwand-dev=8:6.9.7.4+dfsg-11+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-3/copyright`, `/usr/share/doc/libmagickcore-6.q16-3-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-3/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2085,17 +2085,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u5.dsc 5165 SHA256:1c69bbfca987982ff487302fd830c3aa3b6d2f0530c95da99d37ffcf33edad17
+$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u6.dsc 5165 SHA256:e6ccd430801ccc82e0af0dd5468c30ce2c206b11aeec081868a024662ccd2921
 'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u5.debian.tar.xz 243432 SHA256:792c345b834ae5f8b33b0eeaa82ba6be220021d52995f4b44df2186804a991d8
+'http://security.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u6.debian.tar.xz 245208 SHA256:8aa037bba5c1eeb99e7591a19dcaf5d76ecc408562ec9727f24c26ccd4bbe7e4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.7.4+dfsg-11+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.48`
 
@@ -3862,11 +3862,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.110-3+deb9u4`
+### `dpkg` source package: `linux=4.9.110-3+deb9u6`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.110-3+deb9u4`
+- `linux-libc-dev:amd64=4.9.110-3+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3876,13 +3876,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.dsc' linux_4.9.110-3+deb9u6.dsc 123390 SHA256:95aeedb629855a01197613ea516540352354c955325baa7caaa7993b9a733efc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.debian.tar.xz' linux_4.9.110-3+deb9u6.debian.tar.xz 2620700 SHA256:d2c03d4e3cb8cfad0cb17552c54b0a388f04ba82ad187ef68600a234a908d171
+```
 
-- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -4931,14 +4938,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-defaults/2.7.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python2.7=2.7.13-2+deb9u2`
+### `dpkg` source package: `python2.7=2.7.13-2+deb9u3`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.13-2+deb9u2`
-- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u2`
-- `python2.7=2.7.13-2+deb9u2`
-- `python2.7-minimal=2.7.13-2+deb9u2`
+- `libpython2.7-minimal:amd64=2.7.13-2+deb9u3`
+- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u3`
+- `python2.7=2.7.13-2+deb9u3`
+- `python2.7-minimal=2.7.13-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -4962,17 +4969,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.dsc' python2.7_2.7.13-2+deb9u2.dsc 3370 SHA256:1a1df934fcbc46cbca5d53fa70fd039161dbc26720e6ce74f734c177db48ef8b
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u2.diff.gz' python2.7_2.7.13-2+deb9u2.diff.gz 281084 SHA256:8d5f7000cc8f684d2de712aa7a8782653389873ea952ee8859aafe79790e48d6
+$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.dsc' python2.7_2.7.13-2+deb9u3.dsc 3370 SHA256:07f864cef82aaf3741af4c89aa5bcc595c56c283c3ff61630c36171ce5aac9f3
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
+'http://security.debian.org/debian-security/pool/updates/main/p/python2.7/python2.7_2.7.13-2+deb9u3.diff.gz' python2.7_2.7.13-2+deb9u3.diff.gz 284882 SHA256:4e7d5d372cb78eadc0fafa461a579a658ee245fcc1142234561406b45193c087
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.5.3-1`
 
@@ -5000,14 +5007,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.5.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.5=3.5.3-1`
+### `dpkg` source package: `python3.5=3.5.3-1+deb9u1`
 
 Binary Packages:
 
-- `libpython3.5-minimal:amd64=3.5.3-1`
-- `libpython3.5-stdlib:amd64=3.5.3-1`
-- `python3.5=3.5.3-1`
-- `python3.5-minimal=3.5.3-1`
+- `libpython3.5-minimal:amd64=3.5.3-1+deb9u1`
+- `libpython3.5-stdlib:amd64=3.5.3-1+deb9u1`
+- `python3.5=3.5.3-1+deb9u1`
+- `python3.5-minimal=3.5.3-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
@@ -5041,17 +5048,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.dsc' python3.5_3.5.3-1.dsc 3367 SHA256:5259cbb15bb93f7bdfbe9ce03a972ea47f81c86057d5939ef9ce578414b2f1de
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1.debian.tar.xz' python3.5_3.5.3-1.debian.tar.xz 218268 SHA256:fc344383001555ff33b9509879d809e3c3749de32c052d8e24b23b2b2486ff6e
+$ apt-get source -qq --print-uris python3.5=3.5.3-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.dsc' python3.5_3.5.3-1+deb9u1.dsc 3370 SHA256:ab783e665c7943425b4e14d0473806c5a8d4ceabde25958a77b49fb5fd47f8c6
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
+'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u1.debian.tar.xz' python3.5_3.5.3-1+deb9u1.debian.tar.xz 221400 SHA256:04f498e2a049fd95e5f152ff5a2242d1fe99084fb44eba4df0a6758512d731a4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.5/3.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.5/3.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.5/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.5/3.5.3-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
