@@ -1,9 +1,9 @@
-# `debian:jessie`
+# `debian:oldstable`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f228954ce78f68cc956bf834c1cde5798a75c1e39eba40ce897350619ce008b`
-- Created: `2018-09-04T21:19:54.251867476Z`
+- Image ID: `sha256:a43b2213b3f35939948065b42a32c9b5ba3345e6d19f73d2d2ce5bf1acc4bb09`
+- Created: `2018-10-15T23:22:04.386967851Z`
 - Virtual Size: ~ 126.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
