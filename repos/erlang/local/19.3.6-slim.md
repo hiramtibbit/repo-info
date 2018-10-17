@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5063a34ee5d9e3ed7d35ae80f5d7ff52f04c72acd4d67cf4489499e62b3108b`
-- Created: `2018-09-20T21:52:47.075861969Z`
-- Virtual Size: ~ 440.16 Mb  
+- Image ID: `sha256:d62479f06108c7a899bfeb843c6dbc69638ebfcbbd7f1d1aa1eee0338634d53c`
+- Created: `2018-10-16T03:29:44.106937021Z`
+- Virtual Size: ~ 440.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -2319,11 +2319,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxinerama/2:1.1.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u6`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u7`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u6`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2332,17 +2332,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u6
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.dsc' libxml2_2.9.1+dfsg1-5+deb8u6.dsc 2760 SHA256:d887a48f96f3953cd0ecd9e2c8b77334c9619367dc16ca658586098a0c68f8fe
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz 71152 SHA256:b6f36d51b2ff810fcc29f149ba21c69656c5dea164afc93eb48ff0daf8bc568a
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u7
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u7.dsc' libxml2_2.9.1+dfsg1-5+deb8u7.dsc 2764 SHA256:77e5a0b7b1c497eab1cd78595d6028cb7b0e888ab8678a7372e8c4eac9fb0f50
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u7.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u7.debian.tar.xz 71860 SHA256:090c7342d79a297545e613b315e70d7a47627ea3ea116600ef9056d748f7c3a5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrandr=2:1.4.2-1+deb8u1`
 
@@ -2444,11 +2444,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxxf86vm/1:1.1.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.57-2`
+### `dpkg` source package: `linux=3.16.59-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.57-2`
+- `linux-libc-dev:amd64=3.16.59-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2459,17 +2459,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.57-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.dsc' linux_3.16.57-2.dsc 140649 SHA256:0a0a4e412693fbf7800dddf8cf382aeaeb8ba017894ae3c110ea8e289458b08a
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57.orig.tar.xz' linux_3.16.57.orig.tar.xz 81996408 SHA256:6cfda4ea8a54816233731a14ec3c586c241b85a935dcb987ab8a82b3d0ddbf51
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.debian.tar.xz' linux_3.16.57-2.debian.tar.xz 2495628 SHA256:4b45cb2df3d86288e7f3ee7a96db2aacf5cf6127c74e69f50155f5c51bdd236f
+$ apt-get source -qq --print-uris linux=3.16.59-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.dsc' linux_3.16.59-1.dsc 140642 SHA256:4a266a627825e948606c7fcc573c258e09d591a57100107df4ec5f8dbad756ae
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59.orig.tar.xz' linux_3.16.59.orig.tar.xz 82000932 SHA256:5a8c026cb5af665d1e092b093ddf422bfd0037fa0bcc054def17da61a7a5bb6f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.debian.tar.xz' linux_3.16.59-1.debian.tar.xz 1141232 SHA256:a9d3721764e4e2e35941d4ada1bdadbc53f4a9c9b88977fedf23f5932614d2e1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.57-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.57-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.57-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.59-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.59-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.59-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 

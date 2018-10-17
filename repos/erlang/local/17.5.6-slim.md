@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b6fb7ac512530e58ceb5e36c2f8fd0c6e7e5a6962dec13c8fb78214f51883b1`
-- Created: `2018-09-05T00:52:32.4994556Z`
+- Image ID: `sha256:4f29b25bfada21b65f7ff2006a8356cd31c81b7463940aa9b4e1e2bbd5ee252a`
+- Created: `2018-10-16T04:07:22.262703473Z`
 - Virtual Size: ~ 280.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1329,11 +1329,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.57-2`
+### `dpkg` source package: `linux=3.16.59-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.57-2`
+- `linux-libc-dev:amd64=3.16.59-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1344,17 +1344,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.57-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.dsc' linux_3.16.57-2.dsc 140649 SHA256:0a0a4e412693fbf7800dddf8cf382aeaeb8ba017894ae3c110ea8e289458b08a
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57.orig.tar.xz' linux_3.16.57.orig.tar.xz 81996408 SHA256:6cfda4ea8a54816233731a14ec3c586c241b85a935dcb987ab8a82b3d0ddbf51
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.57-2.debian.tar.xz' linux_3.16.57-2.debian.tar.xz 2495628 SHA256:4b45cb2df3d86288e7f3ee7a96db2aacf5cf6127c74e69f50155f5c51bdd236f
+$ apt-get source -qq --print-uris linux=3.16.59-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.dsc' linux_3.16.59-1.dsc 140642 SHA256:4a266a627825e948606c7fcc573c258e09d591a57100107df4ec5f8dbad756ae
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59.orig.tar.xz' linux_3.16.59.orig.tar.xz 82000932 SHA256:5a8c026cb5af665d1e092b093ddf422bfd0037fa0bcc054def17da61a7a5bb6f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_3.16.59-1.debian.tar.xz' linux_3.16.59-1.debian.tar.xz 1141232 SHA256:a9d3721764e4e2e35941d4ada1bdadbc53f4a9c9b88977fedf23f5932614d2e1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.57-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.57-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.57-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.59-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.59-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.59-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
