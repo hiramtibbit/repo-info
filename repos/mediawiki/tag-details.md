@@ -10,6 +10,7 @@
 -	[`mediawiki:1.31.1`](#mediawiki1311)
 -	[`mediawiki:latest`](#mediawikilatest)
 -	[`mediawiki:legacy`](#mediawikilegacy)
+-	[`mediawiki:legacylts`](#mediawikilegacylts)
 -	[`mediawiki:lts`](#mediawikilts)
 -	[`mediawiki:stable`](#mediawikistable)
 
@@ -9024,6 +9025,10 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 		Last Modified: Tue, 16 Oct 2018 20:17:16 GMT  
 		Size: 42.8 MB (42782530 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mediawiki:legacylts`
+
+**does not exist** (yet?)
 
 ## `mediawiki:lts`
 

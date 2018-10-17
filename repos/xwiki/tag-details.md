@@ -13,8 +13,8 @@
 -	[`xwiki:10-postgres-tomcat`](#xwiki10-postgres-tomcat)
 -	[`xwiki:9`](#xwiki9)
 -	[`xwiki:9.11`](#xwiki911)
--	[`xwiki:9.11.7`](#xwiki9117)
--	[`xwiki:9.11.7-postgres-tomcat`](#xwiki9117-postgres-tomcat)
+-	[`xwiki:9.11.8`](#xwiki9118)
+-	[`xwiki:9.11.8-postgres-tomcat`](#xwiki9118-postgres-tomcat)
 -	[`xwiki:9.11-postgres-tomcat`](#xwiki911-postgres-tomcat)
 -	[`xwiki:9-mysql-tomcat`](#xwiki9-mysql-tomcat)
 -	[`xwiki:9-postgres-tomcat`](#xwiki9-postgres-tomcat)
@@ -2791,7 +2791,7 @@ CMD ["xwiki"]
 		Size: 2.5 KB (2457 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:9.11.7`
+## `xwiki:9.11.8`
 
 ```console
 $ docker pull xwiki@sha256:09ba23728f72884025f891cd736951578f3d63cd83c292e51da60b342323820b
@@ -2801,7 +2801,7 @@ $ docker pull xwiki@sha256:09ba23728f72884025f891cd736951578f3d63cd83c292e51da60
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:9.11.7` - linux; amd64
+### `xwiki:9.11.8` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:f1503b78fc95185e8e61ba16c5e9ed984b0017bd8dc8aa6685d4dc6f109d1c81
@@ -2990,7 +2990,7 @@ CMD ["xwiki"]
 		Size: 2.5 KB (2457 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:9.11.7-postgres-tomcat`
+## `xwiki:9.11.8-postgres-tomcat`
 
 ```console
 $ docker pull xwiki@sha256:92871782e23976bea6375971393fc3ac6b5b0ce5e32add4c940336172d386b63
@@ -3001,7 +3001,7 @@ $ docker pull xwiki@sha256:92871782e23976bea6375971393fc3ac6b5b0ce5e32add4c94033
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `xwiki:9.11.7-postgres-tomcat` - linux; amd64
+### `xwiki:9.11.8-postgres-tomcat` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:827ca879c35a0c5e6318b382e1c6888c3dc129bdc43c70a4b31c6690a1e3ce0f
@@ -3190,7 +3190,7 @@ CMD ["xwiki"]
 		Size: 2.5 KB (2456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `xwiki:9.11.7-postgres-tomcat` - linux; arm64 variant v8
+### `xwiki:9.11.8-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
 $ docker pull xwiki@sha256:f7c652b1538eceae3124db9541a83a4ebb2de925546db25c277566a5dd6532fd
