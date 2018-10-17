@@ -1,7 +1,7 @@
 ## `pypy:2-6-slim`
 
 ```console
-$ docker pull pypy@sha256:37863c02f01ce46406c92c5cad93650d0f797583a38a8b94619b8dd5c10708a3
+$ docker pull pypy@sha256:99347d01bc2163b7eb9e40e6f08ba42714cd852c2364f66944e6c1f5e0f08565
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -109,47 +109,47 @@ CMD ["pypy"]
 ### `pypy:2-6-slim` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:afbb063d0046ede00da922bc20702f94ee64efdabbc7730c2ab318d5bd06bdc8
+$ docker pull pypy@sha256:d4d5f21fda5320dc8c15f37485be9fbb2412a68668054100850f19659a79b3be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.7 MB (62688781 bytes)**  
+-	Total Size: **62.7 MB (62688789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97d8e3d8ee27d50c87cd75b0757fd1fce80ed4653c3451033221f6b590f59625`
+-	Image ID: `sha256:2ee041c113743a85e505dbfdc79080d69508a35e18b0d1c4180007ff45f78647`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 05 Sep 2018 10:40:12 GMT
-ADD file:2ca8426f2467f87a86e824a9ddd82e5c18a3154cacd5c74b4de6fa8de206b84c in / 
-# Wed, 05 Sep 2018 10:40:12 GMT
+# Tue, 16 Oct 2018 10:41:56 GMT
+ADD file:805bcf9c1da55b8a2fe5407bcea59a7af4f4e70001d03f514f31e4bafcb20a1c in / 
+# Tue, 16 Oct 2018 10:41:56 GMT
 CMD ["bash"]
-# Thu, 06 Sep 2018 21:52:42 GMT
+# Tue, 16 Oct 2018 23:14:43 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 06 Sep 2018 21:52:42 GMT
+# Tue, 16 Oct 2018 23:14:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Sep 2018 21:53:18 GMT
+# Tue, 16 Oct 2018 23:15:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Sep 2018 21:53:18 GMT
+# Tue, 16 Oct 2018 23:15:18 GMT
 ENV PYPY_VERSION=6.0.0
-# Wed, 10 Oct 2018 10:57:59 GMT
+# Tue, 16 Oct 2018 23:15:18 GMT
 ENV PYTHON_PIP_VERSION=18.1
-# Wed, 10 Oct 2018 10:58:55 GMT
+# Tue, 16 Oct 2018 23:16:14 GMT
 RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='6cbf942ba7c90f504d8d6a2e45d4244e3bf146c8722d64e9410b85eac6b5af67' ;; 		armel) pypyArch='linux-armel'; sha256='924ca3f90aa28e8961859508c25752c95253b842318a0f267267ffe90f56a916' ;; 		i386) pypyArch='linux32'; sha256='ad1082d4328ae8f32617b14628648583b82b6d29df3aa42b97bd1853c08c4bc8' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		fetchDeps=' 		bzip2 		wget 	'; 	apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	find /usr/local/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		pypy --version; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py; 		apt-get purge -y --auto-remove $fetchDeps
-# Wed, 10 Oct 2018 10:58:55 GMT
+# Tue, 16 Oct 2018 23:16:14 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:3a0612442afb0e48bf3a7464b288a65842036a329ebe2e29d2c5cf2865a7eda1`  
-		Last Modified: Wed, 05 Sep 2018 10:48:24 GMT  
-		Size: 30.3 MB (30270069 bytes)  
+	-	`sha256:8fa4cce02855aa948a5b8498a42eb08255f5ed0b56d7820985ad2853ff0a254a`  
+		Last Modified: Tue, 16 Oct 2018 10:57:05 GMT  
+		Size: 30.3 MB (30270032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5c3e5d7633ac249bc6d7cc7a961a6cc7c93adb2e5527c6b5c84480f0f4140ad`  
-		Last Modified: Thu, 06 Sep 2018 21:56:27 GMT  
-		Size: 4.9 MB (4912378 bytes)  
+	-	`sha256:71c949561bdee6c4cf7a7d32021188de3944667ffe6715e2d49344c0732249b5`  
+		Last Modified: Tue, 16 Oct 2018 23:19:22 GMT  
+		Size: 4.9 MB (4912313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fc4d29e0f2cadba3475c30db0ae01ac55e0ee8edaf15caf23d8591aafe7def8`  
-		Last Modified: Wed, 10 Oct 2018 11:01:58 GMT  
-		Size: 27.5 MB (27506334 bytes)  
+	-	`sha256:9f83260931ba8fc3d625d34f52a96e4df104d449c187a89b5db566562203e1ff`  
+		Last Modified: Tue, 16 Oct 2018 23:19:31 GMT  
+		Size: 27.5 MB (27506444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
