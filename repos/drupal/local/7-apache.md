@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a2a9d2d7a31a7ff8c1dbfbff62a2ccb7f0d1a579331a29783f77888cc91fb23`
-- Created: `2018-09-15T07:25:33.912024399Z`
-- Virtual Size: ~ 384.27 Mb  
+- Image ID: `sha256:3d22f588ca47f0907f676b4768ec12aaa2673afc3857eb6d84f99ebb20297fde`
+- Created: `2018-10-16T11:21:41.352617078Z`
+- Virtual Size: ~ 383.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -1839,11 +1839,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.110-3+deb9u4`
+### `dpkg` source package: `linux=4.9.110-3+deb9u6`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.110-3+deb9u4`
+- `linux-libc-dev:amd64=4.9.110-3+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1853,13 +1853,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.110-3+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.dsc' linux_4.9.110-3+deb9u6.dsc 123390 SHA256:95aeedb629855a01197613ea516540352354c955325baa7caaa7993b9a733efc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110.orig.tar.xz' linux_4.9.110.orig.tar.xz 94665036 SHA256:f6fd7010eca6e6be81e303ce4b82239c77362bb0076b3f5b69b28bfa27b8dcdc
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.110-3+deb9u6.debian.tar.xz' linux_4.9.110-3+deb9u6.debian.tar.xz 2620700 SHA256:d2c03d4e3cb8cfad0cb17552c54b0a388f04ba82ad187ef68600a234a908d171
+```
 
-- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.110-3+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.110-3+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
