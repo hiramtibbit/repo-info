@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a5363cc8946ec23abf249ebd6057784ce19aadd21406b6c8b30cf636bd3b027`
-- Created: `2018-10-16T16:46:13.355288931Z`
-- Virtual Size: ~ 680.81 Mb  
+- Image ID: `sha256:50cbc240f368a3b8fc55bc04a49c3c472dc9ee3f92185a42354add11e6491314`
+- Created: `2018-10-19T00:58:07.346697303Z`
+- Virtual Size: ~ 681.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11`
-  - `JAVA_DEBIAN_VERSION=11~28-3`
+  - `JAVA_VERSION=11.0.1`
+  - `JAVA_DEBIAN_VERSION=11.0.1+13-2`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=4.10.2`
 
@@ -3724,9 +3724,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses6:amd64=6.1+20180714-1`
-- `libncursesw6:amd64=6.1+20180714-1`
-- `libtinfo6:amd64=6.1+20180714-1`
 - `ncurses-base=6.1+20180714-1`
 - `ncurses-bin=6.1+20180714-1`
 
@@ -3749,6 +3746,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.1+20180714-1/ (for browsing the source)
 - https://sources.debian.net/src/ncurses/6.1+20180714-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.1+20180714-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ncurses=6.1+20181013-1`
+
+Binary Packages:
+
+- `libncurses6:amd64=6.1+20181013-1`
+- `libncursesw6:amd64=6.1+20181013-1`
+- `libtinfo6:amd64=6.1+20181013-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ncurses=6.1+20181013-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20181013-1.dsc' ncurses_6.1+20181013-1.dsc 4147 SHA256:76a68c5955b24cbd1a0b4c68c7013ef912afccdd1f4d031291ea8457e5e69858
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20181013.orig.tar.gz' ncurses_6.1+20181013.orig.tar.gz 3411288 SHA256:aeb1d098ee90b39a763b57b00da19ff5bbb573dea077f98fbd85d59444bb3b59
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20181013.orig.tar.gz.asc' ncurses_6.1+20181013.orig.tar.gz.asc 251 SHA256:865931406e519909a4d0ab87b14d0c6d3ebccb7b3e0dac5c6095f0dfce5e14cf
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.1+20181013-1.debian.tar.xz' ncurses_6.1+20181013-1.debian.tar.xz 60112 SHA256:df50810d9de6f973adc409aa07b03ee280f53784b8fdc2d5f5ca0d55ab0e7eba
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.1+20181013-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.1+20181013-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.1+20181013-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=5.4`
 
@@ -3922,12 +3947,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~28-3`
+### `dpkg` source package: `openjdk-11=11.0.1+13-2`
 
 Binary Packages:
 
-- `openjdk-11-jre:amd64=11~28-3`
-- `openjdk-11-jre-headless:amd64=11~28-3`
+- `openjdk-11-jre:amd64=11.0.1+13-2`
+- `openjdk-11-jre-headless:amd64=11.0.1+13-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -3939,17 +3964,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~28-3
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.dsc' openjdk-11_11~28-3.dsc 4539 SHA256:9cbd1ca2d9ffd04946a384c86ea6a73fdee0d4036a1395c3948a8a7799c16467
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28.orig.tar.xz' openjdk-11_11~28.orig.tar.xz 75178272 SHA256:95556aa3253a4d2d95a61e673da1dc721123a9bd0b7f14611542f41556877a47
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.debian.tar.xz' openjdk-11_11~28-3.debian.tar.xz 162992 SHA256:3f95d31f562146a7bbfb6da3873427064e98804da4c9fdc6af2ff25271203967
+$ apt-get source -qq --print-uris openjdk-11=11.0.1+13-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2.dsc' openjdk-11_11.0.1+13-2.dsc 4567 SHA256:7295f5e4d603996b910e89d516ff859046299a9bb1e06a0351ee8573b6c0ec64
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13.orig.tar.xz' openjdk-11_11.0.1+13.orig.tar.xz 75285988 SHA256:9cb9fa9e1b89013acd2ea73391123f99ccb1c9fdec34438d05d865b135ab8215
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2.debian.tar.xz' openjdk-11_11.0.1+13-2.debian.tar.xz 163212 SHA256:fc2d5507b83aa036a07f48be8ac70669f4d716d83233c2c2b5571beda1da5eae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~28-3/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~28-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~28-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11.0.1+13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
 
@@ -4594,21 +4619,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018e-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.dsc' tzdata_2018e-1.dsc 2232 SHA256:68552c028c1c8f2bec8ac786acf1afb9b38ba1f821a3f39da5ae6e3aee744f63
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.debian.tar.xz' tzdata_2018e-1.debian.tar.xz 104188 SHA256:2c8999456a1529a1e4abe42d5d97bbafe2eba0fa00f2a1a4140c0af74ed94750
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018e-1/
 
-- https://sources.debian.net/src/tzdata/2018e-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038`
 

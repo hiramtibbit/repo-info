@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c6dfeb3bc03b032a07eccd0cb7bfdc1a1ed72272d45cb49057084434d777eb9`
-- Created: `2018-10-16T16:46:57.131303908Z`
-- Virtual Size: ~ 372.04 Mb  
+- Image ID: `sha256:6a56d3180c8f644e109149d9f2d3566bb59693d144ed8518d91639a52d7f7acf`
+- Created: `2018-10-19T00:58:47.986521845Z`
+- Virtual Size: ~ 371.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=11`
-  - `JAVA_DEBIAN_VERSION=11~28-3`
+  - `JAVA_VERSION=11.0.1`
+  - `JAVA_DEBIAN_VERSION=11.0.1+13-2`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=4.10.2`
 
@@ -2043,11 +2043,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-11=11~28-3`
+### `dpkg` source package: `openjdk-11=11.0.1+13-2`
 
 Binary Packages:
 
-- `openjdk-11-jre-headless:amd64=11~28-3`
+- `openjdk-11-jre-headless:amd64=11.0.1+13-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -2059,17 +2059,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-11=11~28-3
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.dsc' openjdk-11_11~28-3.dsc 4539 SHA256:9cbd1ca2d9ffd04946a384c86ea6a73fdee0d4036a1395c3948a8a7799c16467
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28.orig.tar.xz' openjdk-11_11~28.orig.tar.xz 75178272 SHA256:95556aa3253a4d2d95a61e673da1dc721123a9bd0b7f14611542f41556877a47
-'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11~28-3.debian.tar.xz' openjdk-11_11~28-3.debian.tar.xz 162992 SHA256:3f95d31f562146a7bbfb6da3873427064e98804da4c9fdc6af2ff25271203967
+$ apt-get source -qq --print-uris openjdk-11=11.0.1+13-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2.dsc' openjdk-11_11.0.1+13-2.dsc 4567 SHA256:7295f5e4d603996b910e89d516ff859046299a9bb1e06a0351ee8573b6c0ec64
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13.orig.tar.xz' openjdk-11_11.0.1+13.orig.tar.xz 75285988 SHA256:9cb9fa9e1b89013acd2ea73391123f99ccb1c9fdec34438d05d865b135ab8215
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2.debian.tar.xz' openjdk-11_11.0.1+13-2.debian.tar.xz 163212 SHA256:fc2d5507b83aa036a07f48be8ac70669f4d716d83233c2c2b5571beda1da5eae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-11/11~28-3/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-11/11~28-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-11/11~28-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11.0.1+13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1-1`
 
@@ -2464,21 +2464,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018e-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.dsc' tzdata_2018e-1.dsc 2232 SHA256:68552c028c1c8f2bec8ac786acf1afb9b38ba1f821a3f39da5ae6e3aee744f63
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.debian.tar.xz' tzdata_2018e-1.debian.tar.xz 104188 SHA256:2c8999456a1529a1e4abe42d5d97bbafe2eba0fa00f2a1a4140c0af74ed94750
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018e-1/
 
-- https://sources.debian.net/src/tzdata/2018e-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038`
 
