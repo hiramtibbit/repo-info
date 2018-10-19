@@ -3965,14 +3965,9 @@ Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris paramiko=1.10.1-1git1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.1.dsc' paramiko_1.10.1-1git1ubuntu0.1.dsc 2165 SHA256:ed28d7920fe1ab1c19aea251b5a40a79fbb7beb83e8ed15b8c65ce0a412afb7b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1.orig.tar.gz' paramiko_1.10.1.orig.tar.gz 217201 SHA256:fc96931a594e86736e577073ef535d25598d445a4fbcfe4ba3e7a9c8c24e65ec
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.1.debian.tar.gz' paramiko_1.10.1-1git1ubuntu0.1.debian.tar.gz 9062 SHA256:777f2e4953d35d0a8f9fc657e0b4962999d4e918a5a83aab85927ca3b2c32403
-```
 
 ### `dpkg` source package: `pciutils=1:3.2.1-1ubuntu5.1`
 
@@ -4251,14 +4246,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.8-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.dsc' python-catkin-pkg-modules_0.4.8-1.dsc 991 SHA256:d49dff5df394ce4161684228f02565efb26600a10fc3cd703cb2391f2f7d643d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8.orig.tar.gz' python-catkin-pkg-modules_0.4.8.orig.tar.gz 57439 SHA256:28b6325fbbc95a43ba680256179e27876d420c0a6e17644fc84bdecb3381284a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.debian.tar.xz' python-catkin-pkg-modules_0.4.8-1.debian.tar.xz 1992 SHA256:f0b3e37c8cdf77e15df4148f616ad32b5ac662ecb044f2fdd489b43bb8950cb6
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.8-100`
 
@@ -4270,14 +4260,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.8-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.dsc' python-catkin-pkg_0.4.8-100.dsc 931 SHA256:733b5de0dcbec622b87dab88628833d61ccad352c854bb3aed45209a48a0ed8e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8.orig.tar.gz' python-catkin-pkg_0.4.8.orig.tar.gz 12927 SHA256:20c716979dfec771e39b537bef0e36490d30d94c7561116b7d0bb649dec21a42
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.debian.tar.xz' python-catkin-pkg_0.4.8-100.debian.tar.xz 1976 SHA256:d062662c9c53666632848cbfba855657c8538acf2f933ece1de57187fdd91e9a
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.3`
 

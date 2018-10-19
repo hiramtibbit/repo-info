@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6e4d9fa7055be61e1819ad662d0655e37d6a60ed0dbc91a906abc054713129e`
-- Created: `2018-09-05T23:19:21.930267606Z`
+- Image ID: `sha256:694c94b5b8524607d19d018269954f369327d015e768d4a69601031f86807d60`
+- Created: `2018-10-19T02:20:50.980180769Z`
 - Virtual Size: ~ 1.81 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -55,11 +55,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.6~14.04.3`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.6~14.04.4`
 
 Binary Packages:
 
-- `dh-apparmor=2.10.95-0ubuntu2.6~14.04.3`
+- `dh-apparmor=2.10.95-0ubuntu2.6~14.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/dh-apparmor/copyright`)
 
@@ -69,9 +69,14 @@ Licenses: (parsed from: `/usr/share/doc/dh-apparmor/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6~14.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.4.dsc' apparmor_2.10.95-0ubuntu2.6~14.04.4.dsc 3161 SHA256:8091802ab8cba9fdef1dc7c164d3580cc356e346b863b60ef741e6e36bf53738
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6~14.04.4.debian.tar.gz' apparmor_2.10.95-0ubuntu2.6~14.04.4.debian.tar.gz 187519 SHA256:aa9ea2ede0b4599baf59c8b0205c0ad23a2d731b63680ddb4a2f783a5cb84a94
+```
 
 ### `dpkg` source package: `apr-util=1.5.3-1`
 
@@ -853,13 +858,13 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.10.debian.tar.gz' cups_1.7.2-0ubuntu1.10.debian.tar.gz 452384 SHA256:e359e5bfbb7d005a9c158b02b6d4c4fab1001a7be1d61b788785ed964af06656
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.16`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.17`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.16`
-- `libcurl3:amd64=7.35.0-1ubuntu2.16`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.16`
+- `curl=7.35.0-1ubuntu2.17`
+- `libcurl3:amd64=7.35.0-1ubuntu2.17`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.17`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -868,9 +873,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.17
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.dsc' curl_7.35.0-1ubuntu2.17.dsc 2739 SHA256:54178c3db89c2b52ad0ff8afa4a3503a8ef8615a31ae982b877c864a1161b3b2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.debian.tar.gz' curl_7.35.0-1ubuntu2.17.debian.tar.gz 76791 SHA256:1312988cb1f618b6b1b1b47c6f33a7c6b54a384520385c68584ee636ad65a3fe
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1596,13 +1606,13 @@ $ apt-get source -qq --print-uris gettext=0.18.3.1-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gettext/gettext_0.18.3.1-1ubuntu3.debian.tar.gz' gettext_0.18.3.1-1ubuntu3.debian.tar.gz 48254 SHA256:c9fc46229d5b1b147881d3c169f7bd913a475b3e440e22aad929eed5d8885711
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.8`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.9`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.8`
-- `git-core=1:1.9.1-1ubuntu0.8`
-- `git-man=1:1.9.1-1ubuntu0.8`
+- `git=1:1.9.1-1ubuntu0.9`
+- `git-core=1:1.9.1-1ubuntu0.9`
+- `git-man=1:1.9.1-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1625,9 +1635,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.dsc' git_1.9.1-1ubuntu0.9.dsc 2808 SHA256:2936782f1446a803f333262eb0afbc25e41be6e83b839e6002d846ecdd0fb004
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.debian.tar.gz' git_1.9.1-1ubuntu0.9.debian.tar.gz 689205 SHA256:f13dc0b6ea55dc9a5924dad3e36aad915f9029a07c1793f8757d497260240389
+```
 
 ### `dpkg` source package: `gl2ps=1.3.8-1`
 
@@ -1650,22 +1665,27 @@ $ apt-get source -qq --print-uris gl2ps=1.3.8-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gl2ps/gl2ps_1.3.8-1.debian.tar.gz' gl2ps_1.3.8-1.debian.tar.gz 4145 SHA256:73cce6f66f1e382571acf33a9bc620f9a8a0c9f2f0c9e33c291397a3557b5a82
 ```
 
-### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1`
+### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1.1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.40.2-0ubuntu1`
-- `libglib2.0-bin=2.40.2-0ubuntu1`
-- `libglib2.0-data=2.40.2-0ubuntu1`
-- `libglib2.0-dev=2.40.2-0ubuntu1`
+- `libglib2.0-0:amd64=2.40.2-0ubuntu1.1`
+- `libglib2.0-bin=2.40.2-0ubuntu1.1`
+- `libglib2.0-data=2.40.2-0ubuntu1.1`
+- `libglib2.0-dev=2.40.2-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.40.2-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.1.dsc' glib2.0_2.40.2-0ubuntu1.1.dsc 3162 SHA256:16c7cb57a076f103025d40981b325ba9c6e8849b53fefbd7878cc3f1586b3073
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2.orig.tar.xz' glib2.0_2.40.2.orig.tar.xz 7001344 SHA256:e8ff8af2950897e805408480c454c415d1eade4e670ec5fb507f5e5853726c7a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.40.2-0ubuntu1.1.debian.tar.gz' glib2.0_2.40.2-0ubuntu1.1.debian.tar.gz 81795 SHA256:4aeea8431e59b3a8d1b5ec069d90a5b6f016a6116f298b6ce981a2e8f1689cd5
+```
 
 ### `dpkg` source package: `gmp=2:5.1.3+dfsg-1ubuntu1`
 
@@ -4567,19 +4587,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-157.207`
+### `dpkg` source package: `linux=3.13.0-160.210`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-157.207`
+- `linux-libc-dev:amd64=3.13.0-160.210`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-160.210
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-160.210.dsc' linux_3.13.0-160.210.dsc 8130 SHA256:358bd4c0aa4719e79434bf8cdde9f75f0e19286691c917b873cb146c5f1c358f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-160.210.diff.gz' linux_3.13.0-160.210.diff.gz 10073090 SHA256:3176fffbe6e25a87241df3ca6c618d963811387dc1d14ffc9b1d61bbf0dfdf6b
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -5332,54 +5357,54 @@ $ apt-get source -qq --print-uris ocl-icd=2.1.3-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/ocl-icd/ocl-icd_2.1.3-4.debian.tar.xz' ocl-icd_2.1.3-4.debian.tar.xz 9920 SHA256:9f8665d99bda401d69ce5ae55b43a76215509377917be6b076343b3091a3de68
 ```
 
-### `dpkg` source package: `opencv=2.4.8+dfsg1-2ubuntu1`
+### `dpkg` source package: `opencv=2.4.8+dfsg1-2ubuntu1.2`
 
 Binary Packages:
 
-- `libcv-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libcvaux-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libhighgui-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-calib3d-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-calib3d2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-contrib-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-contrib2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-core-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-core2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-dev=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-features2d-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-features2d2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-flann-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-flann2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-gpu-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-gpu2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-highgui-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-highgui2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-imgproc-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-imgproc2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-legacy-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-legacy2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ml-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ml2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-objdetect-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-objdetect2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ocl-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ocl2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-photo-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-photo2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-stitching-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-stitching2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-superres-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-superres2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ts-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-ts2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-video-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-video2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-videostab-dev:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv-videostab2.4:amd64=2.4.8+dfsg1-2ubuntu1`
-- `libopencv2.4-java=2.4.8+dfsg1-2ubuntu1`
-- `libopencv2.4-jni=2.4.8+dfsg1-2ubuntu1`
-- `opencv-data=2.4.8+dfsg1-2ubuntu1`
-- `python-opencv=2.4.8+dfsg1-2ubuntu1`
+- `libcv-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libcvaux-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libhighgui-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-calib3d-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-calib3d2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-contrib-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-contrib2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-core-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-core2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-dev=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-features2d-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-features2d2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-flann-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-flann2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-gpu-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-gpu2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-highgui-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-highgui2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-imgproc-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-imgproc2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-legacy-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-legacy2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ml-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ml2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-objdetect-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-objdetect2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ocl-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ocl2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-photo-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-photo2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-stitching-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-stitching2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-superres-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-superres2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ts-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-ts2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-video-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-video2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-videostab-dev:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv-videostab2.4:amd64=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv2.4-java=2.4.8+dfsg1-2ubuntu1.2`
+- `libopencv2.4-jni=2.4.8+dfsg1-2ubuntu1.2`
+- `opencv-data=2.4.8+dfsg1-2ubuntu1.2`
+- `python-opencv=2.4.8+dfsg1-2ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5388,10 +5413,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris opencv=2.4.8+dfsg1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.8+dfsg1-2ubuntu1.dsc' opencv_2.4.8+dfsg1-2ubuntu1.dsc 4945 SHA256:817f61a778e3289b83559008b0087303c7dbd36a6893daf5c08535862f78311e
+$ apt-get source -qq --print-uris opencv=2.4.8+dfsg1-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.8+dfsg1-2ubuntu1.2.dsc' opencv_2.4.8+dfsg1-2ubuntu1.2.dsc 5607 SHA256:04b2c0f40f35d6de33bf2ff963b78141a60b0f41961f6e40abf424a469a3fd40
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.8+dfsg1.orig.tar.xz' opencv_2.4.8+dfsg1.orig.tar.xz 55611364 SHA256:ddbdff1235ff0a4b219ccb9ddd2e13869542291d05a712c03c496691275615e4
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.8+dfsg1-2ubuntu1.debian.tar.gz' opencv_2.4.8+dfsg1-2ubuntu1.debian.tar.gz 28934 SHA256:8e610358e5287fe5fe70a39d50285498530efde95ac547e3a35210179077768f
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/opencv/opencv_2.4.8+dfsg1-2ubuntu1.2.debian.tar.gz' opencv_2.4.8+dfsg1-2ubuntu1.2.debian.tar.gz 39452 SHA256:b9dfe40814908245db7a7f8007eb2b58dfcf16204381661ef8c0e61ce332690f
 ```
 
 ### `dpkg` source package: `openexr=1.6.1-7ubuntu1`
@@ -5672,11 +5697,11 @@ $ apt-get source -qq --print-uris pangox-compat=0.0.2-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pangox-compat/pangox-compat_0.0.2-4ubuntu1.debian.tar.xz' pangox-compat_0.0.2-4ubuntu1.debian.tar.xz 3072 SHA256:18b87e5375f84ffabeaba1035a307a4ec4d12c8bde36df414b51603461c43ab7
 ```
 
-### `dpkg` source package: `paramiko=1.10.1-1git1ubuntu0.1`
+### `dpkg` source package: `paramiko=1.10.1-1git1ubuntu0.2`
 
 Binary Packages:
 
-- `python-paramiko=1.10.1-1git1ubuntu0.1`
+- `python-paramiko=1.10.1-1git1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 
@@ -5685,10 +5710,10 @@ Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris paramiko=1.10.1-1git1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.1.dsc' paramiko_1.10.1-1git1ubuntu0.1.dsc 2165 SHA256:ed28d7920fe1ab1c19aea251b5a40a79fbb7beb83e8ed15b8c65ce0a412afb7b
+$ apt-get source -qq --print-uris paramiko=1.10.1-1git1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.2.dsc' paramiko_1.10.1-1git1ubuntu0.2.dsc 2195 SHA256:bb44124d355b21212d5ce832ed146cc56b3eae4069ede22ed1d75dbdd7b8a683
 'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1.orig.tar.gz' paramiko_1.10.1.orig.tar.gz 217201 SHA256:fc96931a594e86736e577073ef535d25598d445a4fbcfe4ba3e7a9c8c24e65ec
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.1.debian.tar.gz' paramiko_1.10.1-1git1ubuntu0.1.debian.tar.gz 9062 SHA256:777f2e4953d35d0a8f9fc657e0b4962999d4e918a5a83aab85927ca3b2c32403
+'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.10.1-1git1ubuntu0.2.debian.tar.gz' paramiko_1.10.1-1git1ubuntu0.2.debian.tar.gz 11860 SHA256:fa83457a96bff991f9e0d14350d80882755ea62d4eefa576fabf1f7b8df21c83
 ```
 
 ### `dpkg` source package: `patch=2.7.1-4ubuntu2.4`
@@ -6085,11 +6110,11 @@ $ apt-get source -qq --print-uris pyparsing=2.0.1+dfsg1-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pyparsing/pyparsing_2.0.1+dfsg1-1build1.debian.tar.gz' pyparsing_2.0.1+dfsg1-1build1.debian.tar.gz 6649 SHA256:3a841b039a2ecd6b62520de108aca1b889266daabf812276105f1c8038abd9a8
 ```
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.8-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.9-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.8-1`
+- `python-catkin-pkg-modules=0.4.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6098,17 +6123,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.8-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.dsc' python-catkin-pkg-modules_0.4.8-1.dsc 991 SHA256:d49dff5df394ce4161684228f02565efb26600a10fc3cd703cb2391f2f7d643d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8.orig.tar.gz' python-catkin-pkg-modules_0.4.8.orig.tar.gz 57439 SHA256:28b6325fbbc95a43ba680256179e27876d420c0a6e17644fc84bdecb3381284a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.debian.tar.xz' python-catkin-pkg-modules_0.4.8-1.debian.tar.xz 1992 SHA256:f0b3e37c8cdf77e15df4148f616ad32b5ac662ecb044f2fdd489b43bb8950cb6
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.9-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.debian.tar.xz' python-catkin-pkg-modules_0.4.9-1.debian.tar.xz 1948 SHA512:b627d5cb48923a61d5dfa0577f7068358f8b41f4168ed95cecb1ddff4e4c2c844206e83692ebedc4efa41674cdd5720e61316720ac73ef5ecaf9c6a805b96d35
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.dsc' python-catkin-pkg-modules_0.4.9-1.dsc 991 SHA512:d3764d831fff27cb84771fa02e0d002c0c223cbb217f898f8106f5d5f588de23be26e7d79b63d76590721efd592b34bcccdf060f538590e5f6d1b243f550260c
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9.orig.tar.gz' python-catkin-pkg-modules_0.4.9.orig.tar.gz 57952 SHA512:56597225ec23707219b1591a1eba765e7dc2e7007b0f84817413fa21b4f8571834faf328b5802050052fc6ef19c8c2065e549b5e2c9e221537e40b16f869e726
 ```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.8-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.8-100`
+- `python-catkin-pkg=0.4.9-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6117,10 +6142,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.8-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.dsc' python-catkin-pkg_0.4.8-100.dsc 931 SHA256:733b5de0dcbec622b87dab88628833d61ccad352c854bb3aed45209a48a0ed8e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8.orig.tar.gz' python-catkin-pkg_0.4.8.orig.tar.gz 12927 SHA256:20c716979dfec771e39b537bef0e36490d30d94c7561116b7d0bb649dec21a42
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.debian.tar.xz' python-catkin-pkg_0.4.8-100.debian.tar.xz 1976 SHA256:d062662c9c53666632848cbfba855657c8538acf2f933ece1de57187fdd91e9a
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.9-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.debian.tar.xz' python-catkin-pkg_0.4.9-100.debian.tar.xz 1932 SHA512:ce0923aebcb2ee92a0729fcfba79617cfe80a77a1b11fdfd0c587aa80446fb898771065565c3ba6951eb7613af146bbc63c890d6e3a55686c7455c3019f66364
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.dsc' python-catkin-pkg_0.4.9-100.dsc 931 SHA512:7a24f17dd339794388a8efa8d2729e519686c7e895993a5a7ab87457b31ef843df593acb791ae6ba54b7ae310bd913b78671fd861c265a73c2280e36f6d3be16
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9.orig.tar.gz' python-catkin-pkg_0.4.9.orig.tar.gz 12805 SHA512:c6feb8d894b0eb9fa69840c80c43fdd2b932cb75b4fda6268ebe78b00de52d1a420bcff06a099f7dbbf0c6c4be740e4aeaac4d655e7900cd3e57d83af17791aa
 ```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.3`
@@ -6902,11 +6927,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20180517-054856-0800`
+### `dpkg` source package: `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20181006-065548-0800`
 
 Binary Packages:
 
-- `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20180517-054856-0800`
+- `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20181006-065548-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6916,11 +6941,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-compressed-image-transport=1.9.5-0trusty-20180517-054903-0800`
+### `dpkg` source package: `ros-indigo-compressed-image-transport=1.9.5-0trusty-20181006-070144-0800`
 
 Binary Packages:
 
-- `ros-indigo-compressed-image-transport=1.9.5-0trusty-20180517-054903-0800`
+- `ros-indigo-compressed-image-transport=1.9.5-0trusty-20181006-070144-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6986,11 +7011,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-dynamic-reconfigure=1.5.49-0trusty-20180317-010815-0800`
+### `dpkg` source package: `ros-indigo-dynamic-reconfigure=1.5.50-0trusty-20181005-102159-0800`
 
 Binary Packages:
 
-- `ros-indigo-dynamic-reconfigure=1.5.49-0trusty-20180317-010815-0800`
+- `ros-indigo-dynamic-reconfigure=1.5.50-0trusty-20181005-102159-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7126,11 +7151,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-pipeline=1.12.23-0trusty-20180715-171812-0800`
+### `dpkg` source package: `ros-indigo-image-pipeline=1.12.23-0trusty-20181006-085330-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-pipeline=1.12.23-0trusty-20180715-171812-0800`
+- `ros-indigo-image-pipeline=1.12.23-0trusty-20181006-085330-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7140,11 +7165,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-proc=1.12.23-0trusty-20180517-022111-0800`
+### `dpkg` source package: `ros-indigo-image-proc=1.12.23-0trusty-20181006-073940-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-proc=1.12.23-0trusty-20180517-022111-0800`
+- `ros-indigo-image-proc=1.12.23-0trusty-20181006-073940-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7154,11 +7179,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-publisher=1.12.23-0trusty-20180517-020307-0800`
+### `dpkg` source package: `ros-indigo-image-publisher=1.12.23-0trusty-20181006-063759-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-publisher=1.12.23-0trusty-20180517-020307-0800`
+- `ros-indigo-image-publisher=1.12.23-0trusty-20181006-063759-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7168,11 +7193,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-rotate=1.12.23-0trusty-20180714-091256-0800`
+### `dpkg` source package: `ros-indigo-image-rotate=1.12.23-0trusty-20181006-070817-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-rotate=1.12.23-0trusty-20180714-091256-0800`
+- `ros-indigo-image-rotate=1.12.23-0trusty-20181006-070817-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7182,11 +7207,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-transport-plugins=1.9.5-0trusty-20180517-083717-0800`
+### `dpkg` source package: `ros-indigo-image-transport-plugins=1.9.5-0trusty-20181006-090341-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-transport-plugins=1.9.5-0trusty-20180517-083717-0800`
+- `ros-indigo-image-transport-plugins=1.9.5-0trusty-20181006-090341-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7210,11 +7235,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-image-view=1.12.23-0trusty-20180517-015606-0800`
+### `dpkg` source package: `ros-indigo-image-view=1.12.23-0trusty-20181006-064333-0800`
 
 Binary Packages:
 
-- `ros-indigo-image-view=1.12.23-0trusty-20180517-015606-0800`
+- `ros-indigo-image-view=1.12.23-0trusty-20181006-064333-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7350,11 +7375,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nodelet-core=1.9.14-0trusty-20180317-040532-0800`
+### `dpkg` source package: `ros-indigo-nodelet-core=1.9.14-0trusty-20181006-094415-0800`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-core=1.9.14-0trusty-20180317-040532-0800`
+- `ros-indigo-nodelet-core=1.9.14-0trusty-20181006-094415-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7364,11 +7389,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20180317-025520-0800`
+### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20181006-073024-0800`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20180317-025520-0800`
+- `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20181006-073024-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7434,11 +7459,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-pcl-ros=1.2.9-0trusty-20180715-182134-0800`
+### `dpkg` source package: `ros-indigo-pcl-ros=1.2.9-0trusty-20181006-074007-0800`
 
 Binary Packages:
 
-- `ros-indigo-pcl-ros=1.2.9-0trusty-20180715-182134-0800`
+- `ros-indigo-pcl-ros=1.2.9-0trusty-20181006-074007-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7448,11 +7473,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-perception-pcl=1.2.9-0trusty-20180715-190720-0800`
+### `dpkg` source package: `ros-indigo-perception-pcl=1.2.9-0trusty-20181006-103709-0800`
 
 Binary Packages:
 
-- `ros-indigo-perception-pcl=1.2.9-0trusty-20180715-190720-0800`
+- `ros-indigo-perception-pcl=1.2.9-0trusty-20181006-103709-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7462,11 +7487,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-perception=1.1.6-0trusty-20180716-112413-0800`
+### `dpkg` source package: `ros-indigo-perception=1.1.6-0trusty-20181006-115033-0800`
 
 Binary Packages:
 
-- `ros-indigo-perception=1.1.6-0trusty-20180716-112413-0800`
+- `ros-indigo-perception=1.1.6-0trusty-20181006-115033-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7532,11 +7557,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-ros-base=1.1.6-0trusty-20180517-024824-0800`
+### `dpkg` source package: `ros-indigo-ros-base=1.1.6-0trusty-20181006-094539-0800`
 
 Binary Packages:
 
-- `ros-indigo-ros-base=1.1.6-0trusty-20180517-024824-0800`
+- `ros-indigo-ros-base=1.1.6-0trusty-20181006-094539-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8148,11 +8173,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-stereo-image-proc=1.12.23-0trusty-20180517-023508-0800`
+### `dpkg` source package: `ros-indigo-stereo-image-proc=1.12.23-0trusty-20181006-075646-0800`
 
 Binary Packages:
 
-- `ros-indigo-stereo-image-proc=1.12.23-0trusty-20180517-023508-0800`
+- `ros-indigo-stereo-image-proc=1.12.23-0trusty-20181006-075646-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8274,11 +8299,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-theora-image-transport=1.9.5-0trusty-20180517-054954-0800`
+### `dpkg` source package: `ros-indigo-theora-image-transport=1.9.5-0trusty-20181006-074140-0800`
 
 Binary Packages:
 
-- `ros-indigo-theora-image-transport=1.9.5-0trusty-20180517-054954-0800`
+- `ros-indigo-theora-image-transport=1.9.5-0trusty-20181006-074140-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8885,19 +8910,25 @@ $ apt-get source -qq --print-uris torque=2.4.16+dfsg-1.3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/torque/torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz' torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz 21720 SHA256:c573894b063f5b1e6db0b4ad6e82f24e97733da03b80c3a08835438b17cf36a4
 ```
 
-### `dpkg` source package: `tzdata=2017c-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018e-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2017c-0ubuntu0.14.04`
+- `tzdata=2018e-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.dsc' tzdata_2018e-0ubuntu0.14.04.dsc 2358 SHA256:d8ad3b0743b8f1d8df4c05b619ffd4e61d0027301b0eb57f401465bfbba5a919
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.debian.tar.xz' tzdata_2018e-0ubuntu0.14.04.debian.tar.xz 100356 SHA256:a9768080feba9a8538f493d27c466b04894617687df2582245a55250150f4a5a
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 

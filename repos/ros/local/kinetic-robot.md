@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12c0cc83e6f08b9676cee21447c3db45b7a1e26df06a67e59c75060301dc6aa6`
-- Created: `2018-09-05T23:25:49.371015367Z`
+- Image ID: `sha256:ca8a3294dffcdb2180f2fc6e30780bd5a4272ea5064d95d491d1cb5665a7fd16`
+- Created: `2018-10-19T02:27:48.792907182Z`
 - Virtual Size: ~ 1.52 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -105,11 +105,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.1.0-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.0-0ubuntu1.debian.tar.xz' alsa-lib_1.1.0-0ubuntu1.debian.tar.xz 53828 SHA256:216445e0a62424c36080e4ef7eca6ad5c4bfe12f1258e52c1d98e53d212efac3
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.9`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.10`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-0ubuntu2.9`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -119,9 +119,14 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.dsc' apparmor_2.10.95-0ubuntu2.10.dsc 3270 SHA256:be1f3548638cbd44113ad2c463554c679e8376bdbd4a8c947ca65b454cca346c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
+```
 
 ### `dpkg` source package: `apr-util=1.5.4-1build1`
 
@@ -434,11 +439,11 @@ $ apt-get source -qq --print-uris binfmt-support=2.1.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/binfmt-support/binfmt-support_2.1.6-1.debian.tar.xz' binfmt-support_2.1.6-1.debian.tar.xz 202852 SHA256:17a00cfc0e2b4c71890d4aae6d4e67f606ad1531d78afd6ff6cbd54970d14718
 ```
 
-### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.6`
+### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.7`
 
 Binary Packages:
 
-- `binutils=2.26.1-1ubuntu1~16.04.6`
+- `binutils=2.26.1-1ubuntu1~16.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 
@@ -449,10 +454,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.6
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.dsc' binutils_2.26.1-1ubuntu1~16.04.6.dsc 4046 SHA256:eff6ef396b4beb6228973c9019dc7c17f340c82daf984b3af4a94b8793806764
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.diff.gz' binutils_2.26.1-1ubuntu1~16.04.6.diff.gz 237840 SHA256:2810d1767117fb41d6b572c4cf7d30eaf5d4c24a3219163fd4dcba3524c710eb
+$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.7.dsc' binutils_2.26.1-1ubuntu1~16.04.7.dsc 3753 SHA256:2dbd2cb29e15b42eec4b8813b05142bb8c388d94d24e18de946551393d813cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.7.diff.gz' binutils_2.26.1-1ubuntu1~16.04.7.diff.gz 235722 SHA256:d39ec93a75e3a9d0930b4fa7cf20efd81a1ad0aad371ae3c5cc27f9c51eb29bf
 ```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
@@ -912,14 +917,14 @@ $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.5.debian.tar.xz' cups_2.1.3-4ubuntu0.5.debian.tar.xz 352280 SHA256:74b49c9d4c2d0ce61149a42140afb89edc25beb18402fed7cc3a7748ce525b8b
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.8`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.9`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.8`
-- `libcurl3:amd64=7.47.0-1ubuntu2.8`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.8`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.8`
+- `curl=7.47.0-1ubuntu2.9`
+- `libcurl3:amd64=7.47.0-1ubuntu2.9`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.9`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -930,9 +935,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.dsc' curl_7.47.0-1ubuntu2.9.dsc 2713 SHA256:c2a3f53e058b5acecc69158fd624559feabb7d336447fa701efd1c784fb27805
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.debian.tar.xz' curl_7.47.0-1ubuntu2.9.debian.tar.xz 52008 SHA256:2ab4a4d6d5b3796d663355d47f62da7b1e8d295ef4f9d43ea7fc56c3bc260dfa
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -1658,13 +1668,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz 19148 SHA256:505d4e611ff95885894414c951c121a355d33c40780b31c3b19a5903b65bfc8f
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.4`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.5`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.4`
-- `git-core=1:2.7.4-0ubuntu1.4`
-- `git-man=1:2.7.4-0ubuntu1.4`
+- `git=1:2.7.4-0ubuntu1.5`
+- `git-core=1:2.7.4-0ubuntu1.5`
+- `git-man=1:2.7.4-0ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1687,9 +1697,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.5.dsc' git_2.7.4-0ubuntu1.5.dsc 2897 SHA256:d21fd716d073369fa6fdc3b595d229a97cef959a8c167d8aa0a40be146bce79c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.5.debian.tar.xz' git_2.7.4-0ubuntu1.5.debian.tar.xz 534100 SHA256:eb51f337531aaa916993e508cfd0082245a6209f97cd2a51e26402858d570513
+```
 
 ### `dpkg` source package: `glib-networking=2.48.2-1~ubuntu16.04.1`
 
@@ -1713,20 +1728,25 @@ $ apt-get source -qq --print-uris glib-networking=2.48.2-1~ubuntu16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib-networking/glib-networking_2.48.2-1~ubuntu16.04.1.debian.tar.xz' glib-networking_2.48.2-1~ubuntu16.04.1.debian.tar.xz 7260 SHA256:66997dbe9d2055478c1f02298ddbb87335884951dc9848417f576d67e51613df
 ```
 
-### `dpkg` source package: `glib2.0=2.48.2-0ubuntu4`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu4.1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.2-0ubuntu4`
-- `libglib2.0-data=2.48.2-0ubuntu4`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu4.1`
+- `libglib2.0-data=2.48.2-0ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.dsc' glib2.0_2.48.2-0ubuntu4.1.dsc 3157 SHA256:9665fd4be0c6848584e830c240206ee3a3ca8f8297ef4106587597b818414552
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz 71256 SHA256:280d06a688aef975b08dabb5420662761fe97869ce98afe1c22870cad080e196
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
@@ -2497,11 +2517,11 @@ $ apt-get source -qq --print-uris lapack=3.6.0-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.6.0-2ubuntu2.debian.tar.xz' lapack_3.6.0-2ubuntu2.debian.tar.xz 24556 SHA256:a713e29f24fca14d59937595a54f03cf0479416188c5911d5220f61299f31c47
 ```
 
-### `dpkg` source package: `lcms2=2.6-3ubuntu2`
+### `dpkg` source package: `lcms2=2.6-3ubuntu2.1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.6-3ubuntu2`
+- `liblcms2-2:amd64=2.6-3ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -2512,10 +2532,10 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.6-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.dsc' lcms2_2.6-3ubuntu2.dsc 1557 SHA256:37064e27fe6a655613d88bcb47c7ed9f09817483d550f682c72b1340101da84c
+$ apt-get source -qq --print-uris lcms2=2.6-3ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.1.dsc' lcms2_2.6-3ubuntu2.1.dsc 2203 SHA256:2f6dbceb336dbba9a95c87df41175cfa44d045c82edc731fd7406936c0a97bd0
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.debian.tar.xz' lcms2_2.6-3ubuntu2.debian.tar.xz 2417052 SHA256:fd54e8a2950e8d61b245f6762bb17e503364cb1c5aa39bfa11438a28eb4cb247
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.6-3ubuntu2.1.debian.tar.xz' lcms2_2.6-3ubuntu2.1.debian.tar.xz 2417988 SHA256:74d3f20d1e8937bee6db0a5496a7a7e434ed2c6af6850483f70f9a3ef8515a2b
 ```
 
 ### `dpkg` source package: `libalgorithm-diff-perl=1.19.03-1`
@@ -4083,13 +4103,13 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.3-1.diff.gz' libxinerama_1.1.3-1.diff.gz 15738 SHA256:2b1487e3511ddabfec666a62f6e5e8ac4f97536b0d53c51f7bf4cbe07508a130
 ```
 
-### `dpkg` source package: `libxkbcommon=0.5.0-1ubuntu2`
+### `dpkg` source package: `libxkbcommon=0.5.0-1ubuntu2.1`
 
 Binary Packages:
 
-- `libxkbcommon-dev=0.5.0-1ubuntu2`
-- `libxkbcommon-x11-0:amd64=0.5.0-1ubuntu2`
-- `libxkbcommon0:amd64=0.5.0-1ubuntu2`
+- `libxkbcommon-dev=0.5.0-1ubuntu2.1`
+- `libxkbcommon-x11-0:amd64=0.5.0-1ubuntu2.1`
+- `libxkbcommon0:amd64=0.5.0-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4098,10 +4118,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxkbcommon=0.5.0-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_0.5.0-1ubuntu2.dsc' libxkbcommon_0.5.0-1ubuntu2.dsc 2450 SHA256:23de50b3274352cfdccb42822fd15cc49b00d56a9b5ee9ab6e0c15b7f8ec9977
+$ apt-get source -qq --print-uris libxkbcommon=0.5.0-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_0.5.0-1ubuntu2.1.dsc' libxkbcommon_0.5.0-1ubuntu2.1.dsc 2456 SHA256:53ffd077c53dba77ccb302d2d60f616b5d864cfeb80911a210996ef957712380
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_0.5.0.orig.tar.gz' libxkbcommon_0.5.0.orig.tar.gz 575722 SHA256:fe8a809c32d81e793c3ae5e0aad0d38cb93c42546c42621e18d5c8c0cae23dd7
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_0.5.0-1ubuntu2.diff.gz' libxkbcommon_0.5.0-1ubuntu2.diff.gz 183563 SHA256:1804c9ff78d14b739a63171fadb1bf153838b2b99d83bacbc609fca900e88925
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_0.5.0-1ubuntu2.1.diff.gz' libxkbcommon_0.5.0-1ubuntu2.1.diff.gz 189015 SHA256:6b1600af8eae3a146a1e66dc6d77d2f945baa702d757914a612368b187f2cba6
 ```
 
 ### `dpkg` source package: `libxml2=2.9.3+dfsg1-1ubuntu0.6`
@@ -4316,20 +4336,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-134.160`
+### `dpkg` source package: `linux=4.4.0-137.163`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-134.160`
+- `linux-libc-dev:amd64=4.4.0-137.163`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-137.163
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-137.163.dsc' linux_4.4.0-137.163.dsc 9712 SHA256:60250bd571d0540e663a22310cac20c02badbf6f3534bc6eabdcfa305ccc804f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-137.163.diff.gz' linux_4.4.0-137.163.diff.gz 14791027 SHA256:7b8e30b6978bac8cfa98469ffdce4c5c4e15a0d33663b7b287cc1e11b4951b58
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -5198,11 +5223,11 @@ $ apt-get source -qq --print-uris pango1.0=1.38.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.38.1-1.debian.tar.xz' pango1.0_1.38.1-1.debian.tar.xz 29216 SHA256:673a39fb35b469af653a819a65e778563fc4be3fa8265e7321006f9be06df143
 ```
 
-### `dpkg` source package: `paramiko=1.16.0-1ubuntu0.1`
+### `dpkg` source package: `paramiko=1.16.0-1ubuntu0.2`
 
 Binary Packages:
 
-- `python-paramiko=1.16.0-1ubuntu0.1`
+- `python-paramiko=1.16.0-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 
@@ -5211,10 +5236,10 @@ Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris paramiko=1.16.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.16.0-1ubuntu0.1.dsc' paramiko_1.16.0-1ubuntu0.1.dsc 2407 SHA256:e6d479e98c84a78eccb51bf7885bfc21e6e2ea7c554745ea650a934dfc2307e2
+$ apt-get source -qq --print-uris paramiko=1.16.0-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.16.0-1ubuntu0.2.dsc' paramiko_1.16.0-1ubuntu0.2.dsc 2451 SHA256:25bdfd49bb3af80e5add0e3e959c04676a1a28e5b66d5422dd5d626c186f0859
 'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.16.0.orig.tar.gz' paramiko_1.16.0.orig.tar.gz 266200 SHA256:77d266cb33b25313c2b7a9e813995fac87cf1de3be3d6e11f6c62df4507ef908
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.16.0-1ubuntu0.1.debian.tar.xz' paramiko_1.16.0-1ubuntu0.1.debian.tar.xz 9784 SHA256:c938fc1fcd91646b59d7f42ad1f0656e259adfa7055b0703d518f9add73ee0e9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_1.16.0-1ubuntu0.2.debian.tar.xz' paramiko_1.16.0-1ubuntu0.2.debian.tar.xz 12380 SHA256:4c3308af98f75ab1e1347da4d12dfe68e8ea40b5cf1ea365a1a12db067458e88
 ```
 
 ### `dpkg` source package: `patch=2.7.5-1ubuntu0.16.04.1`
@@ -5574,11 +5599,11 @@ Licenses: (parsed from: `/usr/share/doc/libpyside-py3-2.0/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.8-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.9-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.8-1`
+- `python-catkin-pkg-modules=0.4.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5587,17 +5612,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.8-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.dsc' python-catkin-pkg-modules_0.4.8-1.dsc 991 SHA256:d49dff5df394ce4161684228f02565efb26600a10fc3cd703cb2391f2f7d643d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8.orig.tar.gz' python-catkin-pkg-modules_0.4.8.orig.tar.gz 57439 SHA256:28b6325fbbc95a43ba680256179e27876d420c0a6e17644fc84bdecb3381284a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.8-1.debian.tar.xz' python-catkin-pkg-modules_0.4.8-1.debian.tar.xz 1992 SHA256:f0b3e37c8cdf77e15df4148f616ad32b5ac662ecb044f2fdd489b43bb8950cb6
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.9-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.debian.tar.xz' python-catkin-pkg-modules_0.4.9-1.debian.tar.xz 1948 SHA512:b627d5cb48923a61d5dfa0577f7068358f8b41f4168ed95cecb1ddff4e4c2c844206e83692ebedc4efa41674cdd5720e61316720ac73ef5ecaf9c6a805b96d35
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.dsc' python-catkin-pkg-modules_0.4.9-1.dsc 991 SHA512:d3764d831fff27cb84771fa02e0d002c0c223cbb217f898f8106f5d5f588de23be26e7d79b63d76590721efd592b34bcccdf060f538590e5f6d1b243f550260c
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9.orig.tar.gz' python-catkin-pkg-modules_0.4.9.orig.tar.gz 57952 SHA512:56597225ec23707219b1591a1eba765e7dc2e7007b0f84817413fa21b4f8571834faf328b5802050052fc6ef19c8c2065e549b5e2c9e221537e40b16f869e726
 ```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.8-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.8-100`
+- `python-catkin-pkg=0.4.9-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5606,10 +5631,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.8-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.dsc' python-catkin-pkg_0.4.8-100.dsc 931 SHA256:733b5de0dcbec622b87dab88628833d61ccad352c854bb3aed45209a48a0ed8e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8.orig.tar.gz' python-catkin-pkg_0.4.8.orig.tar.gz 12927 SHA256:20c716979dfec771e39b537bef0e36490d30d94c7561116b7d0bb649dec21a42
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.8-100.debian.tar.xz' python-catkin-pkg_0.4.8-100.debian.tar.xz 1976 SHA256:d062662c9c53666632848cbfba855657c8538acf2f933ece1de57187fdd91e9a
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.9-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.debian.tar.xz' python-catkin-pkg_0.4.9-100.debian.tar.xz 1932 SHA512:ce0923aebcb2ee92a0729fcfba79617cfe80a77a1b11fdfd0c587aa80446fb898771065565c3ba6951eb7613af146bbc63c890d6e3a55686c7455c3019f66364
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.dsc' python-catkin-pkg_0.4.9-100.dsc 931 SHA512:7a24f17dd339794388a8efa8d2729e519686c7e895993a5a7ab87457b31ef843df593acb791ae6ba54b7ae310bd913b78671fd861c265a73c2280e36f6d3be16
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9.orig.tar.gz' python-catkin-pkg_0.4.9.orig.tar.gz 12805 SHA512:c6feb8d894b0eb9fa69840c80c43fdd2b932cb75b4fda6268ebe78b00de52d1a420bcff06a099f7dbbf0c6c4be740e4aeaac4d655e7900cd3e57d83af17791aa
 ```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.3`
@@ -6458,11 +6483,11 @@ $ apt-get source -qq --print-uris readline6=6.3-8ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline6/readline6_6.3-8ubuntu2.debian.tar.xz' readline6_6.3-8ubuntu2.debian.tar.xz 31232 SHA256:32d4f30dc92d79d722b04c2b678883245d2eccff2ed4f8591faebca7e6d81948
 ```
 
-### `dpkg` source package: `ros-kinetic-actionlib-msgs=1.12.6-0xenial-20180809-141505-0800`
+### `dpkg` source package: `ros-kinetic-actionlib-msgs=1.12.6-0xenial-20180824-091950-0800`
 
 Binary Packages:
 
-- `ros-kinetic-actionlib-msgs=1.12.6-0xenial-20180809-141505-0800`
+- `ros-kinetic-actionlib-msgs=1.12.6-0xenial-20180824-091950-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6472,11 +6497,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-actionlib=1.11.13-0xenial-20180809-155829-0800`
+### `dpkg` source package: `ros-kinetic-actionlib=1.11.13-0xenial-20180824-105059-0800`
 
 Binary Packages:
 
-- `ros-kinetic-actionlib=1.11.13-0xenial-20180809-155829-0800`
+- `ros-kinetic-actionlib=1.11.13-0xenial-20180824-105059-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6486,11 +6511,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-angles=1.9.11-0xenial-20180809-141106-0800`
+### `dpkg` source package: `ros-kinetic-angles=1.9.11-0xenial-20180824-102548-0800`
 
 Binary Packages:
 
-- `ros-kinetic-angles=1.9.11-0xenial-20180809-141106-0800`
+- `ros-kinetic-angles=1.9.11-0xenial-20180824-102548-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6500,11 +6525,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-bond-core=1.8.1-0xenial-20180809-150208-0800`
+### `dpkg` source package: `ros-kinetic-bond-core=1.8.3-0xenial-20181005-140628-0800`
 
 Binary Packages:
 
-- `ros-kinetic-bond-core=1.8.1-0xenial-20180809-150208-0800`
+- `ros-kinetic-bond-core=1.8.3-0xenial-20181005-140628-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6514,11 +6539,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-bond=1.8.1-0xenial-20180809-141537-0800`
+### `dpkg` source package: `ros-kinetic-bond=1.8.3-0xenial-20181005-101651-0800`
 
 Binary Packages:
 
-- `ros-kinetic-bond=1.8.1-0xenial-20180809-141537-0800`
+- `ros-kinetic-bond=1.8.3-0xenial-20181005-101651-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6528,11 +6553,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-bondcpp=1.8.1-0xenial-20180809-145306-0800`
+### `dpkg` source package: `ros-kinetic-bondcpp=1.8.3-0xenial-20181005-135036-0800`
 
 Binary Packages:
 
-- `ros-kinetic-bondcpp=1.8.1-0xenial-20180809-145306-0800`
+- `ros-kinetic-bondcpp=1.8.3-0xenial-20181005-135036-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6542,11 +6567,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-bondpy=1.8.1-0xenial-20180809-145637-0800`
+### `dpkg` source package: `ros-kinetic-bondpy=1.8.3-0xenial-20181005-134911-0800`
 
 Binary Packages:
 
-- `ros-kinetic-bondpy=1.8.1-0xenial-20180809-145637-0800`
+- `ros-kinetic-bondpy=1.8.3-0xenial-20181005-134911-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6598,11 +6623,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-collada-parser=1.12.12-0xenial-20180809-154235-0800`
+### `dpkg` source package: `ros-kinetic-collada-parser=1.12.12-0xenial-20180824-122019-0800`
 
 Binary Packages:
 
-- `ros-kinetic-collada-parser=1.12.12-0xenial-20180809-154235-0800`
+- `ros-kinetic-collada-parser=1.12.12-0xenial-20180824-122019-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6612,11 +6637,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-collada-urdf=1.12.12-0xenial-20180809-155009-0800`
+### `dpkg` source package: `ros-kinetic-collada-urdf=1.12.12-0xenial-20180824-123759-0800`
 
 Binary Packages:
 
-- `ros-kinetic-collada-urdf=1.12.12-0xenial-20180809-155009-0800`
+- `ros-kinetic-collada-urdf=1.12.12-0xenial-20180824-123759-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6626,11 +6651,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-common-msgs=1.12.6-0xenial-20180809-201132-0800`
+### `dpkg` source package: `ros-kinetic-common-msgs=1.12.6-0xenial-20180824-113027-0800`
 
 Binary Packages:
 
-- `ros-kinetic-common-msgs=1.12.6-0xenial-20180809-201132-0800`
+- `ros-kinetic-common-msgs=1.12.6-0xenial-20180824-113027-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6640,11 +6665,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-control-msgs=1.4.0-0xenial-20180809-143428-0800`
+### `dpkg` source package: `ros-kinetic-control-msgs=1.4.0-0xenial-20180824-102433-0800`
 
 Binary Packages:
 
-- `ros-kinetic-control-msgs=1.4.0-0xenial-20180809-143428-0800`
+- `ros-kinetic-control-msgs=1.4.0-0xenial-20180824-102433-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6654,11 +6679,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-cpp-common=0.6.9-0xenial-20180809-134002-0800`
+### `dpkg` source package: `ros-kinetic-cpp-common=0.6.11-0xenial-20180824-081824-0800`
 
 Binary Packages:
 
-- `ros-kinetic-cpp-common=0.6.9-0xenial-20180809-134002-0800`
+- `ros-kinetic-cpp-common=0.6.11-0xenial-20180824-081824-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6668,11 +6693,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-aggregator=1.9.3-0xenial-20180809-152946-0800`
+### `dpkg` source package: `ros-kinetic-diagnostic-aggregator=1.9.3-0xenial-20181005-170006-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-aggregator=1.9.3-0xenial-20180809-152946-0800`
+- `ros-kinetic-diagnostic-aggregator=1.9.3-0xenial-20181005-170006-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6682,11 +6707,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-analysis=1.9.3-0xenial-20180809-154703-0800`
+### `dpkg` source package: `ros-kinetic-diagnostic-analysis=1.9.3-0xenial-20180824-104453-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-analysis=1.9.3-0xenial-20180809-154703-0800`
+- `ros-kinetic-diagnostic-analysis=1.9.3-0xenial-20180824-104453-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6696,11 +6721,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-common-diagnostics=1.9.3-0xenial-20180809-170814-0800`
+### `dpkg` source package: `ros-kinetic-diagnostic-common-diagnostics=1.9.3-0xenial-20180824-161316-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-common-diagnostics=1.9.3-0xenial-20180809-170814-0800`
+- `ros-kinetic-diagnostic-common-diagnostics=1.9.3-0xenial-20180824-161316-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6710,11 +6735,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-msgs=1.12.6-0xenial-20180809-141702-0800`
+### `dpkg` source package: `ros-kinetic-diagnostic-msgs=1.12.6-0xenial-20180824-100658-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-msgs=1.12.6-0xenial-20180809-141702-0800`
+- `ros-kinetic-diagnostic-msgs=1.12.6-0xenial-20180824-100658-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6724,11 +6749,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-updater=1.9.3-0xenial-20180809-153037-0800`
+### `dpkg` source package: `ros-kinetic-diagnostic-updater=1.9.3-0xenial-20180824-111436-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-updater=1.9.3-0xenial-20180809-153037-0800`
+- `ros-kinetic-diagnostic-updater=1.9.3-0xenial-20180824-111436-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6738,11 +6763,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-diagnostics=1.9.3-0xenial-20180809-172326-0800`
+### `dpkg` source package: `ros-kinetic-diagnostics=1.9.3-0xenial-20181005-215159-0800`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostics=1.9.3-0xenial-20180809-172326-0800`
+- `ros-kinetic-diagnostics=1.9.3-0xenial-20181005-215159-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6752,11 +6777,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-dynamic-reconfigure=1.5.49-0xenial-20180809-160102-0800`
+### `dpkg` source package: `ros-kinetic-dynamic-reconfigure=1.5.50-0xenial-20181005-102118-0800`
 
 Binary Packages:
 
-- `ros-kinetic-dynamic-reconfigure=1.5.49-0xenial-20180809-160102-0800`
+- `ros-kinetic-dynamic-reconfigure=1.5.50-0xenial-20181005-102118-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6766,11 +6791,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-eigen-conversions=1.11.9-0xenial-20180809-142621-0800`
+### `dpkg` source package: `ros-kinetic-eigen-conversions=1.11.9-0xenial-20180824-112005-0800`
 
 Binary Packages:
 
-- `ros-kinetic-eigen-conversions=1.11.9-0xenial-20180809-142621-0800`
+- `ros-kinetic-eigen-conversions=1.11.9-0xenial-20180824-112005-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6794,11 +6819,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-executive-smach=2.0.1-0xenial-20180809-162343-0800`
+### `dpkg` source package: `ros-kinetic-executive-smach=2.0.1-0xenial-20180824-124851-0800`
 
 Binary Packages:
 
-- `ros-kinetic-executive-smach=2.0.1-0xenial-20180809-162343-0800`
+- `ros-kinetic-executive-smach=2.0.1-0xenial-20180824-124851-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6808,11 +6833,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-filters=1.7.5-0xenial-20180809-153054-0800`
+### `dpkg` source package: `ros-kinetic-filters=1.7.5-0xenial-20180824-104446-0800`
 
 Binary Packages:
 
-- `ros-kinetic-filters=1.7.5-0xenial-20180809-153054-0800`
+- `ros-kinetic-filters=1.7.5-0xenial-20180824-104446-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6822,11 +6847,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-gencpp=0.6.0-0xenial-20180809-135750-0800`
+### `dpkg` source package: `ros-kinetic-gencpp=0.6.0-0xenial-20180824-081412-0800`
 
 Binary Packages:
 
-- `ros-kinetic-gencpp=0.6.0-0xenial-20180809-135750-0800`
+- `ros-kinetic-gencpp=0.6.0-0xenial-20180824-081412-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6836,11 +6861,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-geneus=2.2.6-0xenial-20180809-135801-0800`
+### `dpkg` source package: `ros-kinetic-geneus=2.2.6-0xenial-20180824-081429-0800`
 
 Binary Packages:
 
-- `ros-kinetic-geneus=2.2.6-0xenial-20180809-135801-0800`
+- `ros-kinetic-geneus=2.2.6-0xenial-20180824-081429-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6850,11 +6875,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-genlisp=0.4.16-0xenial-20180809-135737-0800`
+### `dpkg` source package: `ros-kinetic-genlisp=0.4.16-0xenial-20180824-081624-0800`
 
 Binary Packages:
 
-- `ros-kinetic-genlisp=0.4.16-0xenial-20180809-135737-0800`
+- `ros-kinetic-genlisp=0.4.16-0xenial-20180824-081624-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6864,11 +6889,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-genmsg=0.5.10-0xenial-20180809-135325-0800`
+### `dpkg` source package: `ros-kinetic-genmsg=0.5.11-0xenial-20180824-080325-0800`
 
 Binary Packages:
 
-- `ros-kinetic-genmsg=0.5.10-0xenial-20180809-135325-0800`
+- `ros-kinetic-genmsg=0.5.11-0xenial-20180824-080325-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6878,11 +6903,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-gennodejs=2.0.1-0xenial-20180809-135740-0800`
+### `dpkg` source package: `ros-kinetic-gennodejs=2.0.1-0xenial-20180824-081715-0800`
 
 Binary Packages:
 
-- `ros-kinetic-gennodejs=2.0.1-0xenial-20180809-135740-0800`
+- `ros-kinetic-gennodejs=2.0.1-0xenial-20180824-081715-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6892,11 +6917,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-genpy=0.6.7-0xenial-20180809-135935-0800`
+### `dpkg` source package: `ros-kinetic-genpy=0.6.7-0xenial-20180824-081724-0800`
 
 Binary Packages:
 
-- `ros-kinetic-genpy=0.6.7-0xenial-20180809-135935-0800`
+- `ros-kinetic-genpy=0.6.7-0xenial-20180824-081724-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6906,11 +6931,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-geometric-shapes=0.5.4-1xenial-20180809-144744-0800`
+### `dpkg` source package: `ros-kinetic-geometric-shapes=0.5.4-1xenial-20180824-102650-0800`
 
 Binary Packages:
 
-- `ros-kinetic-geometric-shapes=0.5.4-1xenial-20180809-144744-0800`
+- `ros-kinetic-geometric-shapes=0.5.4-1xenial-20180824-102650-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6920,11 +6945,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-geometry-msgs=1.12.6-0xenial-20180809-141803-0800`
+### `dpkg` source package: `ros-kinetic-geometry-msgs=1.12.6-0xenial-20180824-100440-0800`
 
 Binary Packages:
 
-- `ros-kinetic-geometry-msgs=1.12.6-0xenial-20180809-141803-0800`
+- `ros-kinetic-geometry-msgs=1.12.6-0xenial-20180824-100440-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6934,11 +6959,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-geometry=1.11.9-0xenial-20180809-184338-0800`
+### `dpkg` source package: `ros-kinetic-geometry=1.11.9-0xenial-20180824-171210-0800`
 
 Binary Packages:
 
-- `ros-kinetic-geometry=1.11.9-0xenial-20180809-184338-0800`
+- `ros-kinetic-geometry=1.11.9-0xenial-20180824-171210-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6948,11 +6973,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-joint-state-publisher=1.12.13-0xenial-20180809-160141-0800`
+### `dpkg` source package: `ros-kinetic-joint-state-publisher=1.12.13-0xenial-20180824-123105-0800`
 
 Binary Packages:
 
-- `ros-kinetic-joint-state-publisher=1.12.13-0xenial-20180809-160141-0800`
+- `ros-kinetic-joint-state-publisher=1.12.13-0xenial-20180824-123105-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6962,11 +6987,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-kdl-conversions=1.11.9-0xenial-20180809-142643-0800`
+### `dpkg` source package: `ros-kinetic-kdl-conversions=1.11.9-0xenial-20180824-124637-0800`
 
 Binary Packages:
 
-- `ros-kinetic-kdl-conversions=1.11.9-0xenial-20180809-142643-0800`
+- `ros-kinetic-kdl-conversions=1.11.9-0xenial-20180824-124637-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6976,11 +7001,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-kdl-parser=1.12.11-0xenial-20180809-154148-0800`
+### `dpkg` source package: `ros-kinetic-kdl-parser=1.12.11-0xenial-20180824-121940-0800`
 
 Binary Packages:
 
-- `ros-kinetic-kdl-parser=1.12.11-0xenial-20180809-154148-0800`
+- `ros-kinetic-kdl-parser=1.12.11-0xenial-20180824-121940-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6990,11 +7015,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-message-filters=1.12.13-0xenial-20180809-153145-0800`
+### `dpkg` source package: `ros-kinetic-message-filters=1.12.14-0xenial-20180824-125219-0800`
 
 Binary Packages:
 
-- `ros-kinetic-message-filters=1.12.13-0xenial-20180809-153145-0800`
+- `ros-kinetic-message-filters=1.12.14-0xenial-20180824-125219-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7004,11 +7029,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-message-generation=0.4.0-0xenial-20180809-140403-0800`
+### `dpkg` source package: `ros-kinetic-message-generation=0.4.0-0xenial-20180824-081816-0800`
 
 Binary Packages:
 
-- `ros-kinetic-message-generation=0.4.0-0xenial-20180809-140403-0800`
+- `ros-kinetic-message-generation=0.4.0-0xenial-20180824-081816-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7018,11 +7043,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-message-runtime=0.4.12-0xenial-20180809-140402-0800`
+### `dpkg` source package: `ros-kinetic-message-runtime=0.4.12-0xenial-20180824-083918-0800`
 
 Binary Packages:
 
-- `ros-kinetic-message-runtime=0.4.12-0xenial-20180809-140402-0800`
+- `ros-kinetic-message-runtime=0.4.12-0xenial-20180824-083918-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7032,11 +7057,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-mk=1.14.3-0xenial-20180809-141356-0800`
+### `dpkg` source package: `ros-kinetic-mk=1.14.4-0xenial-20180824-085325-0800`
 
 Binary Packages:
 
-- `ros-kinetic-mk=1.14.3-0xenial-20180809-141356-0800`
+- `ros-kinetic-mk=1.14.4-0xenial-20180824-085325-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7046,11 +7071,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-nav-msgs=1.12.6-0xenial-20180809-142359-0800`
+### `dpkg` source package: `ros-kinetic-nav-msgs=1.12.6-0xenial-20180824-101442-0800`
 
 Binary Packages:
 
-- `ros-kinetic-nav-msgs=1.12.6-0xenial-20180809-142359-0800`
+- `ros-kinetic-nav-msgs=1.12.6-0xenial-20180824-101442-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7060,11 +7085,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-nodelet-core=1.9.14-0xenial-20180809-184526-0800`
+### `dpkg` source package: `ros-kinetic-nodelet-core=1.9.14-0xenial-20181005-214351-0800`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet-core=1.9.14-0xenial-20180809-184526-0800`
+- `ros-kinetic-nodelet-core=1.9.14-0xenial-20181005-214351-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7074,11 +7099,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-nodelet-topic-tools=1.9.14-0xenial-20180809-182858-0800`
+### `dpkg` source package: `ros-kinetic-nodelet-topic-tools=1.9.14-0xenial-20181005-172253-0800`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet-topic-tools=1.9.14-0xenial-20180809-182858-0800`
+- `ros-kinetic-nodelet-topic-tools=1.9.14-0xenial-20181005-172253-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7088,11 +7113,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-nodelet=1.9.14-0xenial-20180809-145945-0800`
+### `dpkg` source package: `ros-kinetic-nodelet=1.9.14-0xenial-20181005-170113-0800`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet=1.9.14-0xenial-20180809-145945-0800`
+- `ros-kinetic-nodelet=1.9.14-0xenial-20181005-170113-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7130,11 +7155,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kinetic-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-pluginlib=1.11.3-0xenial-20180809-144109-0800`
+### `dpkg` source package: `ros-kinetic-pluginlib=1.11.3-0xenial-20180824-102355-0800`
 
 Binary Packages:
 
-- `ros-kinetic-pluginlib=1.11.3-0xenial-20180809-144109-0800`
+- `ros-kinetic-pluginlib=1.11.3-0xenial-20180824-102355-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7158,11 +7183,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-python-qt-binding=0.3.4-0xenial-20180809-141405-0800`
+### `dpkg` source package: `ros-kinetic-python-qt-binding=0.3.4-0xenial-20180824-102741-0800`
 
 Binary Packages:
 
-- `ros-kinetic-python-qt-binding=0.3.4-0xenial-20180809-141405-0800`
+- `ros-kinetic-python-qt-binding=0.3.4-0xenial-20180824-102741-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7186,11 +7211,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-resource-retriever=1.12.4-0xenial-20180809-144100-0800`
+### `dpkg` source package: `ros-kinetic-resource-retriever=1.12.4-0xenial-20180824-102007-0800`
 
 Binary Packages:
 
-- `ros-kinetic-resource-retriever=1.12.4-0xenial-20180809-144100-0800`
+- `ros-kinetic-resource-retriever=1.12.4-0xenial-20180824-102007-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7200,11 +7225,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-robot-model=1.12.11-0xenial-20180809-160855-0800`
+### `dpkg` source package: `ros-kinetic-robot-model=1.12.11-0xenial-20180824-130105-0800`
 
 Binary Packages:
 
-- `ros-kinetic-robot-model=1.12.11-0xenial-20180809-160855-0800`
+- `ros-kinetic-robot-model=1.12.11-0xenial-20180824-130105-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7214,11 +7239,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-robot-state-publisher=1.13.6-0xenial-20180809-164247-0800`
+### `dpkg` source package: `ros-kinetic-robot-state-publisher=1.13.6-0xenial-20180824-135121-0800`
 
 Binary Packages:
 
-- `ros-kinetic-robot-state-publisher=1.13.6-0xenial-20180809-164247-0800`
+- `ros-kinetic-robot-state-publisher=1.13.6-0xenial-20180824-135121-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7228,11 +7253,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-robot=1.3.2-0xenial-20180809-202834-0800`
+### `dpkg` source package: `ros-kinetic-robot=1.3.2-0xenial-20181006-034328-0800`
 
 Binary Packages:
 
-- `ros-kinetic-robot=1.3.2-0xenial-20180809-202834-0800`
+- `ros-kinetic-robot=1.3.2-0xenial-20181006-034328-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7242,11 +7267,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-ros-base=1.3.2-0xenial-20180809-201421-0800`
+### `dpkg` source package: `ros-kinetic-ros-base=1.3.2-0xenial-20181005-214458-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-base=1.3.2-0xenial-20180809-201421-0800`
+- `ros-kinetic-ros-base=1.3.2-0xenial-20181005-214458-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7256,11 +7281,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-ros-comm=1.12.13-0xenial-20180809-160818-0800`
+### `dpkg` source package: `ros-kinetic-ros-comm=1.12.14-0xenial-20180824-125632-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-comm=1.12.13-0xenial-20180809-160818-0800`
+- `ros-kinetic-ros-comm=1.12.14-0xenial-20180824-125632-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7270,11 +7295,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-ros-core=1.3.2-0xenial-20180809-201302-0800`
+### `dpkg` source package: `ros-kinetic-ros-core=1.3.2-0xenial-20180824-125739-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-core=1.3.2-0xenial-20180809-201302-0800`
+- `ros-kinetic-ros-core=1.3.2-0xenial-20180824-125739-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7298,11 +7323,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-ros=1.14.3-0xenial-20180809-142018-0800`
+### `dpkg` source package: `ros-kinetic-ros=1.14.4-0xenial-20180824-085446-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros=1.14.3-0xenial-20180809-142018-0800`
+- `ros-kinetic-ros=1.14.4-0xenial-20180824-085446-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7326,11 +7351,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosbag-storage=1.12.13-0xenial-20180809-143708-0800`
+### `dpkg` source package: `ros-kinetic-rosbag-storage=1.12.14-0xenial-20180824-085858-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosbag-storage=1.12.13-0xenial-20180809-143708-0800`
+- `ros-kinetic-rosbag-storage=1.12.14-0xenial-20180824-085858-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7340,11 +7365,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosbag=1.12.13-0xenial-20180809-154017-0800`
+### `dpkg` source package: `ros-kinetic-rosbag=1.12.14-0xenial-20180824-103606-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosbag=1.12.13-0xenial-20180809-154017-0800`
+- `ros-kinetic-rosbag=1.12.14-0xenial-20180824-103606-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7354,11 +7379,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosbash=1.14.3-0xenial-20180809-134025-0800`
+### `dpkg` source package: `ros-kinetic-rosbash=1.14.4-0xenial-20180824-082251-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosbash=1.14.3-0xenial-20180809-134025-0800`
+- `ros-kinetic-rosbash=1.14.4-0xenial-20180824-082251-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7368,11 +7393,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosboost-cfg=1.14.3-0xenial-20180809-134809-0800`
+### `dpkg` source package: `ros-kinetic-rosboost-cfg=1.14.4-0xenial-20180824-082342-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosboost-cfg=1.14.3-0xenial-20180809-134809-0800`
+- `ros-kinetic-rosboost-cfg=1.14.4-0xenial-20180824-082342-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7382,11 +7407,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosbuild=1.14.3-0xenial-20180809-140846-0800`
+### `dpkg` source package: `ros-kinetic-rosbuild=1.14.4-0xenial-20180824-084011-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosbuild=1.14.3-0xenial-20180809-140846-0800`
+- `ros-kinetic-rosbuild=1.14.4-0xenial-20180824-084011-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7396,11 +7421,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosclean=1.14.3-0xenial-20180809-134400-0800`
+### `dpkg` source package: `ros-kinetic-rosclean=1.14.4-0xenial-20180824-082408-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosclean=1.14.3-0xenial-20180809-134400-0800`
+- `ros-kinetic-rosclean=1.14.4-0xenial-20180824-082408-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7410,11 +7435,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosconsole-bridge=0.5.2-0xenial-20180809-144106-0800`
+### `dpkg` source package: `ros-kinetic-rosconsole-bridge=0.5.2-0xenial-20180824-112716-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosconsole-bridge=0.5.2-0xenial-20180809-144106-0800`
+- `ros-kinetic-rosconsole-bridge=0.5.2-0xenial-20180824-112716-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7424,11 +7449,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosconsole=1.12.13-0xenial-20180809-143343-0800`
+### `dpkg` source package: `ros-kinetic-rosconsole=1.12.14-0xenial-20180824-085351-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosconsole=1.12.13-0xenial-20180809-143343-0800`
+- `ros-kinetic-rosconsole=1.12.14-0xenial-20180824-085351-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7438,11 +7463,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roscpp-core=0.6.9-0xenial-20180809-140342-0800`
+### `dpkg` source package: `ros-kinetic-roscpp-core=0.6.11-0xenial-20180824-083916-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roscpp-core=0.6.9-0xenial-20180809-140342-0800`
+- `ros-kinetic-roscpp-core=0.6.11-0xenial-20180824-083916-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7452,11 +7477,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roscpp-serialization=0.6.9-0xenial-20180809-135807-0800`
+### `dpkg` source package: `ros-kinetic-roscpp-serialization=0.6.11-0xenial-20180824-083414-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roscpp-serialization=0.6.9-0xenial-20180809-135807-0800`
+- `ros-kinetic-roscpp-serialization=0.6.11-0xenial-20180824-083414-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7466,11 +7491,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roscpp-traits=0.6.9-0xenial-20180809-135356-0800`
+### `dpkg` source package: `ros-kinetic-roscpp-traits=0.6.11-0xenial-20180824-083319-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roscpp-traits=0.6.9-0xenial-20180809-135356-0800`
+- `ros-kinetic-roscpp-traits=0.6.11-0xenial-20180824-083319-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7480,11 +7505,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roscpp=1.12.13-0xenial-20180809-144114-0800`
+### `dpkg` source package: `ros-kinetic-roscpp=1.12.14-0xenial-20180824-091453-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roscpp=1.12.13-0xenial-20180809-144114-0800`
+- `ros-kinetic-roscpp=1.12.14-0xenial-20180824-091453-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7494,11 +7519,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roscreate=1.14.3-0xenial-20180809-141210-0800`
+### `dpkg` source package: `ros-kinetic-roscreate=1.14.4-0xenial-20180824-082437-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roscreate=1.14.3-0xenial-20180809-141210-0800`
+- `ros-kinetic-roscreate=1.14.4-0xenial-20180824-082437-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7508,11 +7533,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20180809-143348-0800`
+### `dpkg` source package: `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20180824-085730-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20180809-143348-0800`
+- `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20180824-085730-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7522,11 +7547,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosgraph=1.12.13-0xenial-20180809-133347-0800`
+### `dpkg` source package: `ros-kinetic-rosgraph=1.12.14-0xenial-20180824-082526-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosgraph=1.12.13-0xenial-20180809-133347-0800`
+- `ros-kinetic-rosgraph=1.12.14-0xenial-20180824-082526-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7536,11 +7561,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roslang=1.14.3-0xenial-20180809-135752-0800`
+### `dpkg` source package: `ros-kinetic-roslang=1.14.4-0xenial-20180824-081744-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roslang=1.14.3-0xenial-20180809-135752-0800`
+- `ros-kinetic-roslang=1.14.4-0xenial-20180824-081744-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7550,11 +7575,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roslaunch=1.12.13-0xenial-20180809-151254-0800`
+### `dpkg` source package: `ros-kinetic-roslaunch=1.12.14-0xenial-20180824-095418-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roslaunch=1.12.13-0xenial-20180809-151254-0800`
+- `ros-kinetic-roslaunch=1.12.14-0xenial-20180824-095418-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7564,11 +7589,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roslib=1.14.3-0xenial-20180809-140100-0800`
+### `dpkg` source package: `ros-kinetic-roslib=1.14.4-0xenial-20180824-082628-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roslib=1.14.3-0xenial-20180809-140100-0800`
+- `ros-kinetic-roslib=1.14.4-0xenial-20180824-082628-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7578,11 +7603,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roslisp=1.9.21-0xenial-20180809-143904-0800`
+### `dpkg` source package: `ros-kinetic-roslisp=1.9.21-0xenial-20180824-091500-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roslisp=1.9.21-0xenial-20180809-143904-0800`
+- `ros-kinetic-roslisp=1.9.21-0xenial-20180824-091500-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7592,11 +7617,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roslz4=1.12.13-0xenial-20180809-141138-0800`
+### `dpkg` source package: `ros-kinetic-roslz4=1.12.14-0xenial-20180824-084411-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roslz4=1.12.13-0xenial-20180809-141138-0800`
+- `ros-kinetic-roslz4=1.12.14-0xenial-20180824-084411-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7606,11 +7631,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosmake=1.14.3-0xenial-20180809-141234-0800`
+### `dpkg` source package: `ros-kinetic-rosmake=1.14.4-0xenial-20180824-082802-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosmake=1.14.3-0xenial-20180809-141234-0800`
+- `ros-kinetic-rosmake=1.14.4-0xenial-20180824-082802-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7620,11 +7645,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosmaster=1.12.13-0xenial-20180809-133843-0800`
+### `dpkg` source package: `ros-kinetic-rosmaster=1.12.14-0xenial-20180824-082836-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosmaster=1.12.13-0xenial-20180809-133843-0800`
+- `ros-kinetic-rosmaster=1.12.14-0xenial-20180824-082836-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7634,11 +7659,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosmsg=1.12.13-0xenial-20180809-154845-0800`
+### `dpkg` source package: `ros-kinetic-rosmsg=1.12.14-0xenial-20180824-104154-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosmsg=1.12.13-0xenial-20180809-154845-0800`
+- `ros-kinetic-rosmsg=1.12.14-0xenial-20180824-104154-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7648,11 +7673,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosnode=1.12.13-0xenial-20180809-155415-0800`
+### `dpkg` source package: `ros-kinetic-rosnode=1.12.14-0xenial-20180824-104806-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosnode=1.12.13-0xenial-20180809-155415-0800`
+- `ros-kinetic-rosnode=1.12.14-0xenial-20180824-104806-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7662,11 +7687,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosout=1.12.13-0xenial-20180809-150722-0800`
+### `dpkg` source package: `ros-kinetic-rosout=1.12.14-0xenial-20180824-093510-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosout=1.12.13-0xenial-20180809-150722-0800`
+- `ros-kinetic-rosout=1.12.14-0xenial-20180824-093510-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7690,11 +7715,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosparam=1.12.13-0xenial-20180809-133844-0800`
+### `dpkg` source package: `ros-kinetic-rosparam=1.12.14-0xenial-20180824-082853-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosparam=1.12.13-0xenial-20180809-133844-0800`
+- `ros-kinetic-rosparam=1.12.14-0xenial-20180824-082853-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7704,11 +7729,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rospy=1.12.13-0xenial-20180809-145154-0800`
+### `dpkg` source package: `ros-kinetic-rospy=1.12.14-0xenial-20180824-093546-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rospy=1.12.13-0xenial-20180809-145154-0800`
+- `ros-kinetic-rospy=1.12.14-0xenial-20180824-093546-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7718,11 +7743,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosservice=1.12.13-0xenial-20180809-155510-0800`
+### `dpkg` source package: `ros-kinetic-rosservice=1.12.14-0xenial-20180824-104815-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosservice=1.12.13-0xenial-20180809-155510-0800`
+- `ros-kinetic-rosservice=1.12.14-0xenial-20180824-104815-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7732,11 +7757,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rostest=1.12.13-0xenial-20180809-152236-0800`
+### `dpkg` source package: `ros-kinetic-rostest=1.12.14-0xenial-20180824-102002-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rostest=1.12.13-0xenial-20180809-152236-0800`
+- `ros-kinetic-rostest=1.12.14-0xenial-20180824-102002-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7746,11 +7771,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rostime=0.6.9-0xenial-20180809-134759-0800`
+### `dpkg` source package: `ros-kinetic-rostime=0.6.11-0xenial-20180824-082916-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rostime=0.6.9-0xenial-20180809-134759-0800`
+- `ros-kinetic-rostime=0.6.11-0xenial-20180824-082916-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7760,11 +7785,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rostopic=1.12.13-0xenial-20180809-154739-0800`
+### `dpkg` source package: `ros-kinetic-rostopic=1.12.14-0xenial-20180824-104149-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rostopic=1.12.13-0xenial-20180809-154739-0800`
+- `ros-kinetic-rostopic=1.12.14-0xenial-20180824-104149-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7774,11 +7799,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-rosunit=1.14.3-0xenial-20180809-140649-0800`
+### `dpkg` source package: `ros-kinetic-rosunit=1.14.4-0xenial-20180824-083440-0800`
 
 Binary Packages:
 
-- `ros-kinetic-rosunit=1.14.3-0xenial-20180809-140649-0800`
+- `ros-kinetic-rosunit=1.14.4-0xenial-20180824-083440-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7788,11 +7813,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-roswtf=1.12.13-0xenial-20180809-160202-0800`
+### `dpkg` source package: `ros-kinetic-roswtf=1.12.14-0xenial-20180824-105256-0800`
 
 Binary Packages:
 
-- `ros-kinetic-roswtf=1.12.13-0xenial-20180809-160202-0800`
+- `ros-kinetic-roswtf=1.12.14-0xenial-20180824-105256-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7802,11 +7827,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-self-test=1.9.3-0xenial-20180809-153749-0800`
+### `dpkg` source package: `ros-kinetic-self-test=1.9.3-0xenial-20180824-113915-0800`
 
 Binary Packages:
 
-- `ros-kinetic-self-test=1.9.3-0xenial-20180809-153749-0800`
+- `ros-kinetic-self-test=1.9.3-0xenial-20180824-113915-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7816,11 +7841,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-sensor-msgs=1.12.6-0xenial-20180809-154909-0800`
+### `dpkg` source package: `ros-kinetic-sensor-msgs=1.12.6-0xenial-20180824-104202-0800`
 
 Binary Packages:
 
-- `ros-kinetic-sensor-msgs=1.12.6-0xenial-20180809-154909-0800`
+- `ros-kinetic-sensor-msgs=1.12.6-0xenial-20180824-104202-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7830,11 +7855,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-shape-msgs=1.12.6-0xenial-20180809-142845-0800`
+### `dpkg` source package: `ros-kinetic-shape-msgs=1.12.6-0xenial-20180824-101736-0800`
 
 Binary Packages:
 
-- `ros-kinetic-shape-msgs=1.12.6-0xenial-20180809-142845-0800`
+- `ros-kinetic-shape-msgs=1.12.6-0xenial-20180824-101736-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7844,11 +7869,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-smach-msgs=2.0.1-0xenial-20180809-143416-0800`
+### `dpkg` source package: `ros-kinetic-smach-msgs=2.0.1-0xenial-20180824-101119-0800`
 
 Binary Packages:
 
-- `ros-kinetic-smach-msgs=2.0.1-0xenial-20180809-143416-0800`
+- `ros-kinetic-smach-msgs=2.0.1-0xenial-20180824-101119-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7858,11 +7883,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-smach-ros=2.0.1-0xenial-20180809-161416-0800`
+### `dpkg` source package: `ros-kinetic-smach-ros=2.0.1-0xenial-20180824-111350-0800`
 
 Binary Packages:
 
-- `ros-kinetic-smach-ros=2.0.1-0xenial-20180809-161416-0800`
+- `ros-kinetic-smach-ros=2.0.1-0xenial-20180824-111350-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7886,11 +7911,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-smclib=1.8.1-0xenial-20180809-141309-0800`
+### `dpkg` source package: `ros-kinetic-smclib=1.8.3-0xenial-20181005-102223-0800`
 
 Binary Packages:
 
-- `ros-kinetic-smclib=1.8.1-0xenial-20180809-141309-0800`
+- `ros-kinetic-smclib=1.8.3-0xenial-20181005-102223-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7900,11 +7925,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-std-msgs=0.5.11-0xenial-20180809-140907-0800`
+### `dpkg` source package: `ros-kinetic-std-msgs=0.5.11-0xenial-20180824-085549-0800`
 
 Binary Packages:
 
-- `ros-kinetic-std-msgs=0.5.11-0xenial-20180809-140907-0800`
+- `ros-kinetic-std-msgs=0.5.11-0xenial-20180824-085549-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7914,11 +7939,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-std-srvs=1.11.2-0xenial-20180809-140916-0800`
+### `dpkg` source package: `ros-kinetic-std-srvs=1.11.2-0xenial-20180824-085636-0800`
 
 Binary Packages:
 
-- `ros-kinetic-std-srvs=1.11.2-0xenial-20180809-140916-0800`
+- `ros-kinetic-std-srvs=1.11.2-0xenial-20180824-085636-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7928,11 +7953,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-stereo-msgs=1.12.6-0xenial-20180809-192303-0800`
+### `dpkg` source package: `ros-kinetic-stereo-msgs=1.12.6-0xenial-20180824-105434-0800`
 
 Binary Packages:
 
-- `ros-kinetic-stereo-msgs=1.12.6-0xenial-20180809-192303-0800`
+- `ros-kinetic-stereo-msgs=1.12.6-0xenial-20180824-105434-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7942,11 +7967,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf-conversions=1.11.9-0xenial-20180809-181134-0800`
+### `dpkg` source package: `ros-kinetic-tf-conversions=1.11.9-0xenial-20180824-162602-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf-conversions=1.11.9-0xenial-20180809-181134-0800`
+- `ros-kinetic-tf-conversions=1.11.9-0xenial-20180824-162602-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7956,11 +7981,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf2-kdl=0.5.18-0xenial-20180809-162022-0800`
+### `dpkg` source package: `ros-kinetic-tf2-kdl=0.5.18-0xenial-20180824-132631-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf2-kdl=0.5.18-0xenial-20180809-162022-0800`
+- `ros-kinetic-tf2-kdl=0.5.18-0xenial-20180824-132631-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7970,11 +7995,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf2-msgs=0.5.18-0xenial-20180809-142411-0800`
+### `dpkg` source package: `ros-kinetic-tf2-msgs=0.5.18-0xenial-20180824-101445-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf2-msgs=0.5.18-0xenial-20180809-142411-0800`
+- `ros-kinetic-tf2-msgs=0.5.18-0xenial-20180824-101445-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7984,11 +8009,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf2-py=0.5.18-0xenial-20180809-150220-0800`
+### `dpkg` source package: `ros-kinetic-tf2-py=0.5.18-0xenial-20180824-123846-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf2-py=0.5.18-0xenial-20180809-150220-0800`
+- `ros-kinetic-tf2-py=0.5.18-0xenial-20180824-123846-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7998,11 +8023,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf2-ros=0.5.18-0xenial-20180809-161438-0800`
+### `dpkg` source package: `ros-kinetic-tf2-ros=0.5.18-0xenial-20180824-125648-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf2-ros=0.5.18-0xenial-20180809-161438-0800`
+- `ros-kinetic-tf2-ros=0.5.18-0xenial-20180824-125648-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8012,11 +8037,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf2=0.5.18-0xenial-20180809-143149-0800`
+### `dpkg` source package: `ros-kinetic-tf2=0.5.18-0xenial-20180824-102527-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf2=0.5.18-0xenial-20180809-143149-0800`
+- `ros-kinetic-tf2=0.5.18-0xenial-20180824-102527-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8026,11 +8051,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-tf=1.11.9-0xenial-20180809-162317-0800`
+### `dpkg` source package: `ros-kinetic-tf=1.11.9-0xenial-20180824-131716-0800`
 
 Binary Packages:
 
-- `ros-kinetic-tf=1.11.9-0xenial-20180809-162317-0800`
+- `ros-kinetic-tf=1.11.9-0xenial-20180824-131716-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8040,11 +8065,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-topic-tools=1.12.13-0xenial-20180809-153427-0800`
+### `dpkg` source package: `ros-kinetic-topic-tools=1.12.14-0xenial-20180824-102957-0800`
 
 Binary Packages:
 
-- `ros-kinetic-topic-tools=1.12.13-0xenial-20180809-153427-0800`
+- `ros-kinetic-topic-tools=1.12.14-0xenial-20180824-102957-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8054,11 +8079,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-trajectory-msgs=1.12.6-0xenial-20180809-142857-0800`
+### `dpkg` source package: `ros-kinetic-trajectory-msgs=1.12.6-0xenial-20180824-101801-0800`
 
 Binary Packages:
 
-- `ros-kinetic-trajectory-msgs=1.12.6-0xenial-20180809-142857-0800`
+- `ros-kinetic-trajectory-msgs=1.12.6-0xenial-20180824-101801-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8082,11 +8107,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-urdf=1.12.12-0xenial-20180809-153440-0800`
+### `dpkg` source package: `ros-kinetic-urdf=1.12.12-0xenial-20180824-120058-0800`
 
 Binary Packages:
 
-- `ros-kinetic-urdf=1.12.12-0xenial-20180809-153440-0800`
+- `ros-kinetic-urdf=1.12.12-0xenial-20180824-120058-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8096,11 +8121,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-visualization-msgs=1.12.6-0xenial-20180809-142930-0800`
+### `dpkg` source package: `ros-kinetic-visualization-msgs=1.12.6-0xenial-20180824-101920-0800`
 
 Binary Packages:
 
-- `ros-kinetic-visualization-msgs=1.12.6-0xenial-20180809-142930-0800`
+- `ros-kinetic-visualization-msgs=1.12.6-0xenial-20180824-101920-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8110,11 +8135,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-xacro=1.11.3-0xenial-20180809-153500-0800`
+### `dpkg` source package: `ros-kinetic-xacro=1.11.3-0xenial-20180824-125006-0800`
 
 Binary Packages:
 
-- `ros-kinetic-xacro=1.11.3-0xenial-20180809-153500-0800`
+- `ros-kinetic-xacro=1.11.3-0xenial-20180824-125006-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8124,11 +8149,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kinetic-xmlrpcpp=1.12.13-0xenial-20180809-135412-0800`
+### `dpkg` source package: `ros-kinetic-xmlrpcpp=1.12.14-0xenial-20180824-083404-0800`
 
 Binary Packages:
 
-- `ros-kinetic-xmlrpcpp=1.12.13-0xenial-20180809-135412-0800`
+- `ros-kinetic-xmlrpcpp=1.12.14-0xenial-20180824-083404-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8595,19 +8620,25 @@ $ apt-get source -qq --print-uris tinyxml=2.6.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tinyxml/tinyxml_2.6.2-3.debian.tar.xz' tinyxml_2.6.2-3.debian.tar.xz 4152 SHA256:f592529ece8b36a0ae2bacfb9d13ebb67ee3d4409af10c92f7bb9f73f3ba1423
 ```
 
-### `dpkg` source package: `tzdata=2017c-0ubuntu0.16.04`
+### `dpkg` source package: `tzdata=2018e-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `tzdata=2017c-0ubuntu0.16.04`
+- `tzdata=2018e-0ubuntu0.16.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.16.04.dsc' tzdata_2018e-0ubuntu0.16.04.dsc 2411 SHA256:cd1578c4c4131629be765157748a618366fb629d855adcca4de5058a03fa93ca
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.16.04.debian.tar.xz' tzdata_2018e-0ubuntu0.16.04.debian.tar.xz 99776 SHA256:c52f73e1fe27dc5cc8c851555fca465ad9c7b583076402d6c969adc15b894411
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
