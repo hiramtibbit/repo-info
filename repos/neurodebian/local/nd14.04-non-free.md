@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:945660ea6daee0cd7e3113e5c6bf1b47e3ac265dab0d539ea30bf58fdfc5b149`
-- Created: `2018-09-05T23:03:33.178941251Z`
+- Image ID: `sha256:c4c943e65b9b73d579d509564739144b6207ce6e34fbffa10be74ee0fbd4d8f6`
+- Created: `2018-10-19T02:31:38.057644422Z`
 - Virtual Size: ~ 188.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2336,19 +2336,25 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `tzdata=2017c-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018e-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2017c-0ubuntu0.14.04`
+- `tzdata=2018e-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.dsc' tzdata_2018e-0ubuntu0.14.04.dsc 2358 SHA256:d8ad3b0743b8f1d8df4c05b619ffd4e61d0027301b0eb57f401465bfbba5a919
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.debian.tar.xz' tzdata_2018e-0ubuntu0.14.04.debian.tar.xz 100356 SHA256:a9768080feba9a8538f493d27c466b04894617687df2582245a55250150f4a5a
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
