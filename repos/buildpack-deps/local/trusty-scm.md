@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d094987c3c8e872c2ad13f62778b541250e1ee8f36dacca776534ef286649147`
-- Created: `2018-09-05T22:46:04.893856554Z`
+- Image ID: `sha256:60b57f18d0a079c07448b5d446ffd617d46a274ee53d8b418cc559e61f93966c`
+- Created: `2018-10-19T01:37:00.793149518Z`
 - Virtual Size: ~ 279.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -426,13 +426,13 @@ $ apt-get source -qq --print-uris cron=3.0pl1-124ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cron/cron_3.0pl1-124ubuntu2.diff.gz' cron_3.0pl1-124ubuntu2.diff.gz 98350 SHA256:282213a327434e44b0f0f6ac23da5f0f4024cf284ca6e008a0b774bb76102dab
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.16`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.17`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.16`
-- `libcurl3:amd64=7.35.0-1ubuntu2.16`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.16`
+- `curl=7.35.0-1ubuntu2.17`
+- `libcurl3:amd64=7.35.0-1ubuntu2.17`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.17`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -441,9 +441,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.17
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.dsc' curl_7.35.0-1ubuntu2.17.dsc 2739 SHA256:54178c3db89c2b52ad0ff8afa4a3503a8ef8615a31ae982b877c864a1161b3b2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.debian.tar.gz' curl_7.35.0-1ubuntu2.17.debian.tar.gz 76791 SHA256:1312988cb1f618b6b1b1b47c6f33a7c6b54a384520385c68584ee636ad65a3fe
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -830,12 +835,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.8`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.9`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.8`
-- `git-man=1:1.9.1-1ubuntu0.8`
+- `git=1:1.9.1-1ubuntu0.9`
+- `git-man=1:1.9.1-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -858,9 +863,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.dsc' git_1.9.1-1ubuntu0.9.dsc 2808 SHA256:2936782f1446a803f333262eb0afbc25e41be6e83b839e6002d846ecdd0fb004
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.debian.tar.gz' git_1.9.1-1ubuntu0.9.debian.tar.gz 689205 SHA256:f13dc0b6ea55dc9a5924dad3e36aad915f9029a07c1793f8757d497260240389
+```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.6`
 
@@ -2819,19 +2829,25 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `tzdata=2017c-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018e-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2017c-0ubuntu0.14.04`
+- `tzdata=2018e-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.dsc' tzdata_2018e-0ubuntu0.14.04.dsc 2358 SHA256:d8ad3b0743b8f1d8df4c05b619ffd4e61d0027301b0eb57f401465bfbba5a919
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.14.04.debian.tar.xz' tzdata_2018e-0ubuntu0.14.04.debian.tar.xz 100356 SHA256:a9768080feba9a8538f493d27c466b04894617687df2582245a55250150f4a5a
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
