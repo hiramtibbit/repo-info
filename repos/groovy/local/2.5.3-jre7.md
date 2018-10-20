@@ -1,10 +1,10 @@
-# `groovy:2.5.2-jre7`
+# `groovy:2.5.3-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f20ea2df1f7ae47cdd25545227816084081f077b5a50b410141caad5c402d386`
-- Created: `2018-10-16T15:39:53.663084579Z`
-- Virtual Size: ~ 362.92 Mb  
+- Image ID: `sha256:09dc7973bb9d5292b930c6bc7538620cd0654bdff7ddd21ff9a94d1f2afa68f6`
+- Created: `2018-10-19T22:20:17.744035427Z`
+- Virtual Size: ~ 363.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=7u181`
   - `JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.2`
+  - `GROOVY_VERSION=2.5.3`
 
 ## `dpkg` (`.deb`-based packages)
 
