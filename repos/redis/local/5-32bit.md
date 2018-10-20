@@ -1,10 +1,10 @@
-# `redis:5.0-rc6`
+# `redis:5.0.0-32bit`
 
 ## Docker Metadata
 
-- Image ID: `sha256:baeabf5c72a021a4ec031782f5098c45b5aea16d2a305070e6b8be137e1dab0e`
-- Created: `2018-10-16T04:32:57.819558439Z`
-- Virtual Size: ~ 94.88 Mb  
+- Image ID: `sha256:fff7108df51c4c089cea96d8e59aa13ea8181bf20ead2a94bc9380ba4d6b8115`
+- Created: `2018-10-18T23:50:53.764225378Z`
+- Virtual Size: ~ 99.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
-  - `REDIS_VERSION=5.0-rc6`
-  - `REDIS_DOWNLOAD_URL=https://github.com/antirez/redis/archive/5.0-rc6.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=6f16ffb5550b6ba74f8198f873e2f4f1fc031a69583a16084c237c5389f6d159`
+  - `REDIS_VERSION=5.0.0`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-5.0.0.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=70c98b2d0640b2b73c9d8adb4df63bcb62bad34b788fe46d1634b6cf87dc99a4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -564,9 +564,10 @@ Binary Packages:
 
 - `libc-bin=2.24-11+deb9u3`
 - `libc6:amd64=2.24-11+deb9u3`
+- `libc6-i386=2.24-11+deb9u3`
 - `multiarch-support=2.24-11+deb9u3`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-i386/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
