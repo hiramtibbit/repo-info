@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc8de52af29960d1f457b581236be1b09d8728282794ac6427fb145bdbe8fadd`
-- Created: `2018-09-24T22:29:36.330769857Z`
-- Virtual Size: ~ 740.62 Mb  
+- Image ID: `sha256:ad0331b07fcca6b5729c0b37dad11b0b05d50aacf6dd80bf501b313aee774301`
+- Created: `2018-10-19T02:09:45.475471652Z`
+- Virtual Size: ~ 742.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -102,11 +102,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.1.3-5ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.1.debian.tar.xz' alsa-lib_1.1.3-5ubuntu0.1.debian.tar.xz 138180 SHA256:f70af796dfb686ea6af44c91fb023c66c4bd4ff36fac3b5d8c9068ad3178e77e
 ```
 
-### `dpkg` source package: `apparmor=2.12-4ubuntu5`
+### `dpkg` source package: `apparmor=2.12-4ubuntu5.1`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.12-4ubuntu5`
+- `libapparmor1:amd64=2.12-4ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -119,10 +119,10 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=2.12-4ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.dsc' apparmor_2.12-4ubuntu5.dsc 3173 SHA256:e0157ddbbdae9d815debd9b2450565a34591b994c84e811ad8ac36b1bc6ed2f8
+$ apt-get source -qq --print-uris apparmor=2.12-4ubuntu5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.1.dsc' apparmor_2.12-4ubuntu5.1.dsc 3181 SHA256:89317e316d9f361e9852721cdab972bcba7bd0e1ee980dfbd9cb34bca2830f37
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12.orig.tar.gz' apparmor_2.12.orig.tar.gz 7258450 SHA256:8a2b0cd083faa4d0640f579024be3a629faa7db3b99540798a1a050e2eaba056
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.debian.tar.xz' apparmor_2.12-4ubuntu5.debian.tar.xz 88180 SHA256:1bd6183223a95cb8aed5371634bf89fb116782f13d90b5ffde02b425c6532ff8
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.12-4ubuntu5.1.debian.tar.xz' apparmor_2.12-4ubuntu5.1.debian.tar.xz 89084 SHA256:12371db4ceca11ba27a3fd6ac129dbeeb0566c30bee53d1a2c1619e5d83b0225
 ```
 
 ### `dpkg` source package: `apt=1.6.3ubuntu0.1`
@@ -320,11 +320,11 @@ $ apt-get source -qq --print-uris avahi=0.7-3.1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.1.debian.tar.xz' avahi_0.7-3.1ubuntu1.1.debian.tar.xz 34408 SHA256:21f22a4d36f2b620bf55c039ed40a62a35ca029fe228959f2baa58c21484b6a4
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2.2`
+### `dpkg` source package: `base-files=10.1ubuntu2.3`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2.2`
+- `base-files=10.1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -333,9 +333,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.2
-'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.dsc' base-files_10.1ubuntu2.2.dsc 1620 SHA256:04b197619ca86c6a23e89814f6569f9e6e7be5dfa2629e739915236f2fa896f6
-'http://security.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.2.tar.xz' base-files_10.1ubuntu2.2.tar.xz 77304 SHA256:5d0e7e5394c545012efd1eab6a76ebb464f54cf1ce52f46e636aedae04513959
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.dsc' base-files_10.1ubuntu2.3.dsc 1620 SHA256:09df4de1d368582baec2118933103e533ee584dad99e20e9da4fc14cd3531d6c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.tar.xz' base-files_10.1ubuntu2.3.tar.xz 78140 SHA256:96f33d65b216e1d980d807d979ff8a8230834790627df8afe63dfc758a45be69
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
@@ -551,25 +551,6 @@ $ apt-get source -qq --print-uris colord=1.3.3-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/colord/colord_1.3.3-2build1.dsc' colord_1.3.3-2build1.dsc 2966 SHA256:67f8c4ae30f17b3096a6120169de439085f4d8d4186a7be3e2a2de7a0936645e
 'http://archive.ubuntu.com/ubuntu/pool/main/c/colord/colord_1.3.3.orig.tar.xz' colord_1.3.3.orig.tar.xz 1240104 SHA256:d1848e797106a036b0d6ebed99a789a6ae07d60f1d9cc59be5b257efe7ec31a4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/colord/colord_1.3.3-2build1.debian.tar.xz' colord_1.3.3-2build1.debian.tar.xz 26840 SHA256:19064b1f189c5e0657fd5b0a461351fca19e492b0dea13304c39944b9f5f7687
-```
-
-### `dpkg` source package: `console-bridge=0.4.0+dfsg-2`
-
-Binary Packages:
-
-- `libconsole-bridge0.4:amd64=0.4.0+dfsg-2`
-
-Licenses: (parsed from: `/usr/share/doc/libconsole-bridge0.4/copyright`)
-
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris console-bridge=0.4.0+dfsg-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg-2.dsc' console-bridge_0.4.0+dfsg-2.dsc 1949 SHA256:5cfb1b8f43d210c5c1c72bdccb909092b40f361759372211331f75859f29ff91
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg.orig.tar.gz' console-bridge_0.4.0+dfsg.orig.tar.gz 6042 SHA256:172eecc6c185de2f6d43aed10c3110b8573e53a49f77c48c3f81a83e0e6e63c2
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/console-bridge/console-bridge_0.4.0+dfsg-2.debian.tar.xz' console-bridge_0.4.0+dfsg-2.debian.tar.xz 3628 SHA256:56bdfbf50a6e7a83c1f4d1f9052b5b605b8f61846cce7042af0bb6ab661707f7
 ```
 
 ### `dpkg` source package: `coreutils=8.28-1ubuntu1`
@@ -1321,12 +1302,12 @@ Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gaze
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-7=7.3.0-16ubuntu3`
+### `dpkg` source package: `gcc-7=7.3.0-27ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.3.0-16ubuntu3`
-- `libgfortran4:amd64=7.3.0-16ubuntu3`
+- `gcc-7-base:amd64=7.3.0-27ubuntu1~18.04`
+- `libgfortran4:amd64=7.3.0-27ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libgfortran4/copyright`)
 
@@ -1340,21 +1321,21 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-7=7.3.0-16ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-16ubuntu3.dsc' gcc-7_7.3.0-16ubuntu3.dsc 28258 SHA256:9beb174f51d518bcd8dc1629dafe6239a736f2e1374c675a38deff29a7323938
+$ apt-get source -qq --print-uris gcc-7=7.3.0-27ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.dsc' gcc-7_7.3.0-27ubuntu1~18.04.dsc 28285 SHA256:5374b6648fdc46ff2d9b5267d9b03bbf6c9d7a48e273f666d3a14bcdb01f2ce0
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0.orig.tar.gz' gcc-7_7.3.0.orig.tar.gz 73555852 SHA256:9e29793395d3012c0d71ee5f680642c594bf1dee0184cd74d2e0e67c70598283
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-16ubuntu3.diff.gz' gcc-7_7.3.0-16ubuntu3.diff.gz 733443 SHA256:2b3d516170bc17d8baf42414bf1777205ab9b4a5ad56472994fef990b7ec4e6f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.3.0-27ubuntu1~18.04.diff.gz' gcc-7_7.3.0-27ubuntu1~18.04.diff.gz 996303 SHA256:ad7f083469cd4b7dad8796ed779504e742caae862ac13351ca6fb0b27d745a56
 ```
 
-### `dpkg` source package: `gcc-8=8-20180414-1ubuntu2`
+### `dpkg` source package: `gcc-8=8.2.0-1ubuntu2~18.04`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8-20180414-1ubuntu2`
-- `libgcc1:amd64=1:8-20180414-1ubuntu2`
-- `libgomp1:amd64=8-20180414-1ubuntu2`
-- `libquadmath0:amd64=8-20180414-1ubuntu2`
-- `libstdc++6:amd64=8-20180414-1ubuntu2`
+- `gcc-8-base:amd64=8.2.0-1ubuntu2~18.04`
+- `libgcc1:amd64=1:8.2.0-1ubuntu2~18.04`
+- `libgomp1:amd64=8.2.0-1ubuntu2~18.04`
+- `libquadmath0:amd64=8.2.0-1ubuntu2~18.04`
+- `libstdc++6:amd64=8.2.0-1ubuntu2~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1368,10 +1349,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-8=8-20180414-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180414-1ubuntu2.dsc' gcc-8_8-20180414-1ubuntu2.dsc 36299 SHA256:72d4fa5091e308a34a9dfbcb184101c93b700abcce2f4f571b942afef3cc1c76
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180414.orig.tar.gz' gcc-8_8-20180414.orig.tar.gz 70429524 SHA256:e8141c930ac3378cb64571f4f9f87d2b0ae7c522d5863fd3985db60ca02ec783
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8-20180414-1ubuntu2.diff.gz' gcc-8_8-20180414-1ubuntu2.diff.gz 469518 SHA256:0e290b975d870df6a986ae40074d66b59d25583ef7c0cecbf73ea55b42f09d09
+$ apt-get source -qq --print-uris gcc-8=8.2.0-1ubuntu2~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.dsc' gcc-8_8.2.0-1ubuntu2~18.04.dsc 36291 SHA256:73af7438517e473ce305701bab7d9fa764e59432317f8244112046bda9633136
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-1ubuntu2~18.04.diff.gz' gcc-8_8.2.0-1ubuntu2~18.04.diff.gz 3960987 SHA256:0d9d73f1de12d04fcfe9042f32fc97a19e0f5439b2d553ce450405642a3494f5
 ```
 
 ### `dpkg` source package: `gdal=2.2.3+dfsg-2`
@@ -3766,11 +3747,11 @@ $ apt-get source -qq --print-uris libspnav=0.2.3-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libspnav/libspnav_0.2.3-1.debian.tar.xz' libspnav_0.2.3-1.debian.tar.xz 3536 SHA256:90989c2656f922ee6a56280d530a77c547268edecb9a1e2f02b2011bf451afe3
 ```
 
-### `dpkg` source package: `libssh=0.8.0~20170825.94fa1e38-1build1`
+### `dpkg` source package: `libssh=0.8.0~20170825.94fa1e38-1ubuntu0.1`
 
 Binary Packages:
 
-- `libssh-gcrypt-4:amd64=0.8.0~20170825.94fa1e38-1build1`
+- `libssh-gcrypt-4:amd64=0.8.0~20170825.94fa1e38-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -3783,10 +3764,10 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.8.0~20170825.94fa1e38-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1build1.dsc' libssh_0.8.0~20170825.94fa1e38-1build1.dsc 2181 SHA256:a99a8fe16f2cecb4bf69c06123825c0d2cbcafca74e4ebbbf8822c42d8068546
+$ apt-get source -qq --print-uris libssh=0.8.0~20170825.94fa1e38-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.dsc' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.dsc 2518 SHA256:cc607477cd06f6d399bffd866f7ecfe3c114674bdccf0e01886bdd480d3c7c00
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38.orig.tar.xz' libssh_0.8.0~20170825.94fa1e38.orig.tar.xz 381176 SHA256:48cbcc4c946380f08c024fbc1898b1efd6edff66a5ec4b536695926f0ea055a8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1build1.debian.tar.xz' libssh_0.8.0~20170825.94fa1e38-1build1.debian.tar.xz 18792 SHA256:50d49c256e1129e9b53508bd282dbc6a78a7fc52ccf357e03f85f1d072937a54
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.debian.tar.xz' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.debian.tar.xz 26648 SHA256:1177efb29ee19242b06b7eed32a7d815ff6bcf70d0eab2d4501818aa1a8d7bba
 ```
 
 ### `dpkg` source package: `libtar=1.2.20-7`
@@ -5708,14 +5689,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.6.5-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.5-3ubuntu1.tar.gz' python3-defaults_3.6.5-3ubuntu1.tar.gz 132687 SHA256:3dfa5d3586f927db27d85745b2701f8c5ffe43fbee22b957144ac6e1516876fd
 ```
 
-### `dpkg` source package: `python3.6=3.6.5-3`
+### `dpkg` source package: `python3.6=3.6.6-1~18.04`
 
 Binary Packages:
 
-- `libpython3.6-minimal:amd64=3.6.5-3`
-- `libpython3.6-stdlib:amd64=3.6.5-3`
-- `python3.6=3.6.5-3`
-- `python3.6-minimal=3.6.5-3`
+- `libpython3.6-minimal:amd64=3.6.6-1~18.04`
+- `libpython3.6-stdlib:amd64=3.6.6-1~18.04`
+- `python3.6=3.6.6-1~18.04`
+- `python3.6-minimal=3.6.6-1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`, `/usr/share/doc/python3.6/copyright`, `/usr/share/doc/python3.6-minimal/copyright`)
 
@@ -5740,10 +5721,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.6=3.6.5-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.5-3.dsc' python3.6_3.6.5-3.dsc 3385 SHA256:556398b32219582d6ee24e3131916d2432e723e681dd1dbfe36c87fb0869f850
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.5.orig.tar.xz' python3.6_3.6.5.orig.tar.xz 17049912 SHA256:f434053ba1b5c8a5cc597e966ead3c5143012af827fd3f0697d21450bb8d87a6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.5-3.debian.tar.xz' python3.6_3.6.5-3.debian.tar.xz 204732 SHA256:0ca462ade2ca8e9c5fd0f009156a3b49acd0f7f9ab29ef9d03d06249f78f3340
+$ apt-get source -qq --print-uris python3.6=3.6.6-1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-1~18.04.dsc' python3.6_3.6.6-1~18.04.dsc 3444 SHA256:1b7be64e1dbff06c52537afd983b259e887c5a9c6e601560f7aaa30b62eeea5b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6.orig.tar.xz' python3.6_3.6.6.orig.tar.xz 17156744 SHA256:d79bc15d456e73a3173a2938f18a17e5149c850ebdedf84a78067f501ee6e16f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.6-1~18.04.debian.tar.xz' python3.6_3.6.6-1~18.04.debian.tar.xz 206524 SHA256:823e5ce057534998b8dd74762eae2379f167dc9e3f7764384a9737db82b93f9e
 ```
 
 ### `dpkg` source package: `qhull=2015.2-4`
@@ -5948,30 +5929,22 @@ $ apt-get source -qq --print-uris rubberband=1.8.1-7ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/r/rubberband/rubberband_1.8.1-7ubuntu2.debian.tar.xz' rubberband_1.8.1-7ubuntu2.debian.tar.xz 9424 SHA256:2e1af1831dc0223fc5df26d131e633fc5f9ccbb68c705cfa95823db9584df15f
 ```
 
-### `dpkg` source package: `sdformat=6.0.0+dfsg-4`
+### `dpkg` source package: `sdformat6=6.1.0-1~bionic`
 
 Binary Packages:
 
-- `libsdformat6:amd64=6.0.0+dfsg-4`
-- `sdformat-sdf=6.0.0+dfsg-4`
+- `libsdformat6:amd64=6.1.0-1~bionic`
+- `sdformat-sdf=6.1.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat6/copyright`, `/usr/share/doc/sdformat-sdf/copyright`)
 
+- `Apache`
 - `Apache-2.0`
-- `BSD-2-clause`
 - `BSD-3-clause`
-- `BSL-1.0`
-- `GPL`
-- `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat=6.0.0+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/sdformat/sdformat_6.0.0+dfsg-4.dsc' sdformat_6.0.0+dfsg-4.dsc 2142 SHA256:3eaed96aae6c59b75e55dbd0230dd899aa5bedad76a6264419c69f7d3c5bf055
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/sdformat/sdformat_6.0.0+dfsg.orig.tar.gz' sdformat_6.0.0+dfsg.orig.tar.gz 390402 SHA256:2ea693d953cde461aa2881864f07979db81497f0f0d413784a086d979e9ef370
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/sdformat/sdformat_6.0.0+dfsg-4.debian.tar.xz' sdformat_6.0.0+dfsg-4.debian.tar.xz 7712 SHA256:b63257811ef3421496626ac4883595d3bdede9ade5fa118d66678fabe73cbdf3
-```
 
 ### `dpkg` source package: `sed=4.4-2`
 
@@ -6432,11 +6405,11 @@ $ apt-get source -qq --print-uris twolame=0.3.13-3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/twolame/twolame_0.3.13-3.debian.tar.xz' twolame_0.3.13-3.debian.tar.xz 4352 SHA256:5d1806d16825de652a1c956afbd77739a7d7f1494cf8b238f2f85ed4c94d173f
 ```
 
-### `dpkg` source package: `tzdata=2018d-1`
+### `dpkg` source package: `tzdata=2018e-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `tzdata=2018d-1`
+- `tzdata=2018e-0ubuntu0.18.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6445,11 +6418,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018d-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018d-1.dsc' tzdata_2018d-1.dsc 2379 SHA256:6ca8ec6645e862fad8c618a43df52bf93106127e923f02906b25297e808ebbc5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz' tzdata_2018d.orig.tar.gz 351271 SHA256:5106eddceb5f1ae3a91dbd3960e1b8b11ba0dc08579a31cf0724a7691b10c054
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018d.orig.tar.gz.asc' tzdata_2018d.orig.tar.gz.asc 819 SHA256:5b59a168565424e6227550c85d9007101d18a9d0b018ada02ad49abf5a086405
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018d-1.debian.tar.xz' tzdata_2018d-1.debian.tar.xz 104124 SHA256:3dad94ca3940fb561829a1d6689436335fc18b2d8ed0e9f7def0c82288e26658
+$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.18.04.dsc' tzdata_2018e-0ubuntu0.18.04.dsc 2400 SHA256:76dd797304fe9eaba7ceb2598aa8a9cde52d439241153ab2245e298d3a57842d
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.18.04.debian.tar.xz' tzdata_2018e-0ubuntu0.18.04.debian.tar.xz 104280 SHA256:148400e07086018ac25b470b63f0bc180549a311c7799441c778c88aca781bf8
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.02.28`
@@ -6532,25 +6505,6 @@ $ apt-get source -qq --print-uris unixodbc=2.3.4-1.1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.4-1.1ubuntu3.diff.gz' unixodbc_2.3.4-1.1ubuntu3.diff.gz 19700 SHA256:7b533e947f1a0c49541668924b3679e8fe7dac75a3759081a6ac82f0c55f9184
 ```
 
-### `dpkg` source package: `urdfdom=1.0.0-2build2`
-
-Binary Packages:
-
-- `liburdfdom-model:amd64=1.0.0-2build2`
-
-Licenses: (parsed from: `/usr/share/doc/liburdfdom-model/copyright`)
-
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris urdfdom=1.0.0-2build2
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/urdfdom/urdfdom_1.0.0-2build2.dsc' urdfdom_1.0.0-2build2.dsc 2681 SHA256:652ff88edb94160420f68cb2197f4dc344b6c23f36098c17ba37b00b17b94e8c
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/urdfdom/urdfdom_1.0.0.orig.tar.gz' urdfdom_1.0.0.orig.tar.gz 249133 SHA256:2be892dda8e558052fd56886b7b5b40d9946e72c6bd3dde18563f4cfce5ae038
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/urdfdom/urdfdom_1.0.0-2build2.debian.tar.xz' urdfdom_1.0.0-2build2.debian.tar.xz 4428 SHA256:2243ad1ddead3b530c670623f916ee48e71f1736a4eb0a0b0bfe87d9856ba676
-```
-
 ### `dpkg` source package: `uriparser=0.8.4-1`
 
 Binary Packages:
@@ -6574,19 +6528,19 @@ $ apt-get source -qq --print-uris uriparser=0.8.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/uriparser/uriparser_0.8.4-1.debian.tar.xz' uriparser_0.8.4-1.debian.tar.xz 6096 SHA256:fdff8accbb61b3befed0f9da70975fec473051a0f1f9b2020fead23471eed43f
 ```
 
-### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.1`
+### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.31.1-0.4ubuntu3.1`
-- `fdisk=2.31.1-0.4ubuntu3.1`
-- `libblkid1:amd64=2.31.1-0.4ubuntu3.1`
-- `libfdisk1:amd64=2.31.1-0.4ubuntu3.1`
-- `libmount1:amd64=2.31.1-0.4ubuntu3.1`
-- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.1`
-- `libuuid1:amd64=2.31.1-0.4ubuntu3.1`
-- `mount=2.31.1-0.4ubuntu3.1`
-- `util-linux=2.31.1-0.4ubuntu3.1`
+- `bsdutils=1:2.31.1-0.4ubuntu3.2`
+- `fdisk=2.31.1-0.4ubuntu3.2`
+- `libblkid1:amd64=2.31.1-0.4ubuntu3.2`
+- `libfdisk1:amd64=2.31.1-0.4ubuntu3.2`
+- `libmount1:amd64=2.31.1-0.4ubuntu3.2`
+- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.2`
+- `libuuid1:amd64=2.31.1-0.4ubuntu3.2`
+- `mount=2.31.1-0.4ubuntu3.2`
+- `util-linux=2.31.1-0.4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -6607,9 +6561,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.2.dsc' util-linux_2.31.1-0.4ubuntu3.2.dsc 4152 SHA256:a311d5b5c9b5c85f11ba1ff86512607f4615a1950ef835219e8765654cb6174a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz 98512 SHA256:e026d029578f200c4f8cefbdba65184f12adbd856ed873673e09cdaaf7486288
+```
 
 ### `dpkg` source package: `wavpack=5.1.0-2ubuntu1.1`
 
