@@ -1,20 +1,20 @@
-# `postgres:10.5`
+# `postgres:11.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc21dac1eb4e0a0382895faba084a3418adbc7b586aab2d478262a1b1c0245ab`
-- Created: `2018-10-16T05:06:02.179295612Z`
-- Virtual Size: ~ 228.41 Mb  
+- Image ID: `sha256:7a2907672aabc8acef32a62a1e0af63bc3e461377376a9201e45a87be3f075c2`
+- Created: `2018-10-18T23:39:51.864511929Z`
+- Virtual Size: ~ 310.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin`
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=10`
-  - `PG_VERSION=10.5-1.pgdg90+1`
+  - `PG_MAJOR=11`
+  - `PG_VERSION=11.0-1.pgdg90+2`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1736,6 +1736,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxslt/1.1.29-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxslt/1.1.29-2.1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1~bpo9+1`
+
+Binary Packages:
+
+- `libllvm6.0:amd64=1:6.0-1~bpo9+1`
+
+Licenses: (parsed from: `/usr/share/doc/libllvm6.0/copyright`)
+
+- `ARM`
+- `Apple`
+- `BSD-3-Clause`
+- `BSD-3-clause`
+- `Expat`
+- `LLVM`
+- `MIT`
+- `NCSA`
+- `Polly`
+- `Python`
+- `U-OF-I-BSD-LIKE`
+- `public-domain`
+- `solar-public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris llvm-toolchain-6.0=1:6.0-1~bpo9+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0-1~bpo9+1.dsc' llvm-toolchain-6.0_6.0-1~bpo9+1.dsc 6856 SHA256:460946c3c55631d3e1d02190ba089800bb32c7d9669f2de1a95678f4ec1a9ed0
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-clang-tools-extra.tar.bz2' llvm-toolchain-6.0_6.0.orig-clang-tools-extra.tar.bz2 808825 SHA256:f5c96f38067cf0c8d81395452d0386e4715d83bd5588e49832798f6ed4b2d8fa
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-clang.tar.bz2' llvm-toolchain-6.0_6.0.orig-clang.tar.bz2 13228782 SHA256:d6d155313658edc8f901b1f01e353605de1c6a9a1efe6c87b2c111d23febad43
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-compiler-rt.tar.bz2' llvm-toolchain-6.0_6.0.orig-compiler-rt.tar.bz2 2145520 SHA256:7253f34ae3faee95f32ee6b4a674b87911338f49f5e14f24afb2fa693f53b09c
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-lld.tar.bz2' llvm-toolchain-6.0_6.0.orig-lld.tar.bz2 853733 SHA256:cd67e62c2bfc5cef9fad2b0b1044c072956bc0ab1692616d5dd9b4034782ab1e
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-lldb.tar.bz2' llvm-toolchain-6.0_6.0.orig-lldb.tar.bz2 11238461 SHA256:4519601ff08e43e83dc42dbdd8de134e59e33f78466fd88f1fdfd79798f5bdef
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig-polly.tar.bz2' llvm-toolchain-6.0_6.0.orig-polly.tar.bz2 3253870 SHA256:a256c73b80c5bc311e8dc9471ded02a48c59583a3302f62f3296d223e108b6c6
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0.orig.tar.bz2' llvm-toolchain-6.0_6.0.orig.tar.bz2 29853313 SHA256:6e3439558692bbfd0bcaf4c4d1290e0c97bd710dab42860e0585303bbf67797a
+'http://apt.postgresql.org/pub/repos/apt/pool/main/l/llvm-toolchain-6.0/llvm-toolchain-6.0_6.0-1~bpo9+1.debian.tar.xz' llvm-toolchain-6.0_6.0-1~bpo9+1.debian.tar.xz 69496 SHA256:2009db4e0be6700aded2a5bad8ac43a4aeaebb92aa7dc57a2306e7eaacf9755e
+```
+
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
 Binary Packages:
@@ -2444,15 +2481,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-10=10.5-1.pgdg90+1`
+### `dpkg` source package: `postgresql-11=11.0-1.pgdg90+2`
 
 Binary Packages:
 
-- `libpq5:amd64=10.5-1.pgdg90+1`
-- `postgresql-10=10.5-1.pgdg90+1`
-- `postgresql-client-10=10.5-1.pgdg90+1`
+- `libpq5:amd64=11.0-1.pgdg90+2`
+- `postgresql-11=11.0-1.pgdg90+2`
+- `postgresql-client-11=11.0-1.pgdg90+2`
 
-Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-11/copyright`, `/usr/share/doc/postgresql-client-11/copyright`)
 
 - `Artistic`
 - `BSD-2-clause`
@@ -2469,25 +2506,34 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-11=11.0-1.pgdg90+2
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0-1.pgdg90+2.dsc' postgresql-11_11.0-1.pgdg90+2.dsc 2667 SHA256:0d1c28930e7911b53b1c242ee099ab8d2abcd8235f1d22bfb05e5777e1b1e53e
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0.orig.tar.bz2' postgresql-11_11.0.orig.tar.bz2 21206820 SHA256:bf9bba03d0c3902c188af12e454b35343c4a9bf9e377ec2fe50132efb44ef36b
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0-1.pgdg90+2.debian.tar.xz' postgresql-11_11.0-1.pgdg90+2.debian.tar.xz 19868 SHA256:a812d43b18b0dd218d4e0c648abae6544b3d91276ebe06f1af0a8df4c45fa6b5
+```
 
-### `dpkg` source package: `postgresql-common=192.pgdg90+1`
+### `dpkg` source package: `postgresql-common=195.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client-common=192.pgdg90+1`
-- `postgresql-common=192.pgdg90+1`
+- `postgresql-client-common=195.pgdg90+1`
+- `postgresql-common=195.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-common=195.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_195.pgdg90+1.dsc' postgresql-common_195.pgdg90+1.dsc 1462 SHA256:9029468389e32a95048674617a4a91df34333ff8467c42d10181aff80252d203
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_195.pgdg90+1.tar.xz' postgresql-common_195.pgdg90+1.tar.xz 208852 SHA256:d966247ad4d74fbc5f88326535136337be37b7d32fe0fb26e00d4e3c1b51745a
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
