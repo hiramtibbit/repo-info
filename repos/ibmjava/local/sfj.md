@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0575b01f1807f23ef7f59524055850c0611d19b9a85d3b45654fe727e4caed38`
-- Created: `2018-09-28T19:24:24.970488116Z`
-- Virtual Size: ~ 215.95 Mb  
+- Image ID: `sha256:9697dfe16de0700583c1a6c9ebeb74081f91b907fcc387181aac0111a66da156`
+- Created: `2018-10-19T01:32:45.026757545Z`
+- Virtual Size: ~ 216.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.9`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.10`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-0ubuntu2.9`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -68,9 +68,14 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.dsc' apparmor_2.10.95-0ubuntu2.10.dsc 3270 SHA256:be1f3548638cbd44113ad2c463554c679e8376bdbd4a8c947ca65b454cca346c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
+```
 
 ### `dpkg` source package: `apt=1.2.27`
 
