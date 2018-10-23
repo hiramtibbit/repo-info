@@ -2,6 +2,15 @@
 
 # Tags of `websphere-liberty`
 
+-	[`websphere-liberty:18.0.0.3-javaee7`](#websphere-liberty18003-javaee7)
+-	[`websphere-liberty:18.0.0.3-javaee8`](#websphere-liberty18003-javaee8)
+-	[`websphere-liberty:18.0.0.3-kernel`](#websphere-liberty18003-kernel)
+-	[`websphere-liberty:18.0.0.3-microProfile1`](#websphere-liberty18003-microprofile1)
+-	[`websphere-liberty:18.0.0.3-microProfile2`](#websphere-liberty18003-microprofile2)
+-	[`websphere-liberty:18.0.0.3-springBoot1`](#websphere-liberty18003-springboot1)
+-	[`websphere-liberty:18.0.0.3-springBoot2`](#websphere-liberty18003-springboot2)
+-	[`websphere-liberty:18.0.0.3-webProfile7`](#websphere-liberty18003-webprofile7)
+-	[`websphere-liberty:18.0.0.3-webProfile8`](#websphere-liberty18003-webprofile8)
 -	[`websphere-liberty:beta`](#websphere-libertybeta)
 -	[`websphere-liberty:javaee7`](#websphere-libertyjavaee7)
 -	[`websphere-liberty:javaee8`](#websphere-libertyjavaee8)
@@ -14,6 +23,42 @@
 -	[`websphere-liberty:springBoot2`](#websphere-libertyspringboot2)
 -	[`websphere-liberty:webProfile7`](#websphere-libertywebprofile7)
 -	[`websphere-liberty:webProfile8`](#websphere-libertywebprofile8)
+
+## `websphere-liberty:18.0.0.3-javaee7`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-javaee8`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-kernel`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-microProfile1`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-microProfile2`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-springBoot1`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-springBoot2`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-webProfile7`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:18.0.0.3-webProfile8`
+
+**does not exist** (yet?)
 
 ## `websphere-liberty:beta`
 
