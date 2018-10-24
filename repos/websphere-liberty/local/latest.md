@@ -1,10 +1,10 @@
-# `websphere-liberty:javaee8`
+# `websphere-liberty:18.0.0.3-javaee8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:866cd8aca5e8f091b6e3b2178508d7357a929bcf2a593ce6754f454b011d0565`
-- Created: `2018-10-19T03:07:39.53248398Z`
-- Virtual Size: ~ 536.48 Mb  
+- Image ID: `sha256:883c8f89013e6fc18503d5b6086f15e9554b8ec7d7b31a2dbce7290f79d5895c`
+- Created: `2018-10-23T22:29:53.895649132Z`
+- Virtual Size: ~ 536.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
