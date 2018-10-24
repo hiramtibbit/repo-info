@@ -356,20 +356,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.15.12-1
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.12-1.dsc' cairo_1.15.12-1.dsc 2847 SHA256:6410bcfd9b0750a9fa4c7da07fe01cb2428ff92f7252270b4cbba09c6eb20aac
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.12.orig.tar.xz' cairo_1.15.12.orig.tar.xz 41883440 SHA256:7623081b94548a47ee6839a7312af34e9322997806948b6eec421a8c6d0594c9
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.15.12-1.debian.tar.xz' cairo_1.15.12-1.debian.tar.xz 29792 SHA256:ba715c98ff88558a68fdecfa8bf3408b4aa55013db4bec69729425613de8dae9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cairo/1.15.12-1/
 
-- https://sources.debian.net/src/cairo/1.15.12-1/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.15.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.15.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.245`
 
@@ -3519,14 +3512,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.7~rc2-1
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.7~rc2-1.dsc' python3.6_3.6.7~rc2-1.dsc 3448 SHA256:2029154bbf5b36e91eda5bf9f8f5ddd8eb8372ab91b4aee7a8192dfc3e1d7e73
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.7~rc2.orig.tar.xz' python3.6_3.6.7~rc2.orig.tar.xz 17178404 SHA256:9710181b545f9b16e490323d9884db75e141fa469f88bbed58886767d109d6af
-'http://http.debian.net/debian/pool/main/p/python3.6/python3.6_3.6.7~rc2-1.debian.tar.xz' python3.6_3.6.7~rc2-1.debian.tar.xz 207004 SHA256:8f8ce031b108ed3b20ca1a693dd870af45384ce7f10a2efe7d42e18f6c7c656d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.6/3.6.7~rc2-1/
+
 
 ### `dpkg` source package: `r-base=3.5.1-1`
 
@@ -4185,21 +4177,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018e-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.dsc' tzdata_2018e-1.dsc 2232 SHA256:68552c028c1c8f2bec8ac786acf1afb9b38ba1f821a3f39da5ae6e3aee744f63
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-1.debian.tar.xz' tzdata_2018e-1.debian.tar.xz 104188 SHA256:2c8999456a1529a1e4abe42d5d97bbafe2eba0fa00f2a1a4140c0af74ed94750
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018e-1/
 
-- https://sources.debian.net/src/tzdata/2018e-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038`
 
