@@ -2639,9 +2639,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.15.0-36.39
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.dsc' linux_4.15.0-36.39.dsc 7499 SHA256:8276b91c19add6c31ba73f7601ead023c62d62cae82c83241262fd261c0912a0
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.diff.gz' linux_4.15.0-36.39.diff.gz 8195142 SHA256:46e6148eefacac51df4c8acdcd583956148b315a1be039913aea506cb5daf707
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.dsc' linux_4.15.0-36.39.dsc 7499 SHA256:8276b91c19add6c31ba73f7601ead023c62d62cae82c83241262fd261c0912a0
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.diff.gz' linux_4.15.0-36.39.diff.gz 8195142 SHA256:46e6148eefacac51df4c8acdcd583956148b315a1be039913aea506cb5daf707
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
@@ -2886,14 +2886,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.23-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc 3391 SHA256:d00cbcfa422496728268fc316f81ad2a2a6a94e396cc8c023e976dd32148aca1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23.orig.tar.gz' mysql-5.7_5.7.23.orig.tar.gz 49025014 SHA256:d05700ec5c1c6dae9311059dc1713206c29597f09dbd237bf0679b3c6438e87a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz 155992 SHA256:a4d44d56f984dfd658909bc54074d128f97c7b4b9189127ca3a88f5c3c97f643
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 

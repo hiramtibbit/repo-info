@@ -698,20 +698,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20180808-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20180808-2.dsc' findutils_4.6.0+git+20180808-2.dsc 2137 SHA256:82c5bdd7618af85ec161a0b22297e9b486abf85282abe7e1acf255a254691009
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20180808.orig.tar.xz' findutils_4.6.0+git+20180808.orig.tar.xz 1875160 SHA256:daa434e95aef62a79d6e03cdea901564f01791cff24394285c86f4962b50a979
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20180808-2.debian.tar.xz' findutils_4.6.0+git+20180808-2.debian.tar.xz 26224 SHA256:6dfede94f210c40c46900262a0174c7fecaa79f675b738096543a054802cffdd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20180808-2/
 
-- https://sources.debian.net/src/findutils/4.6.0+git+20180808-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20180808-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20180808-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-8=8.2.0-7`
 
@@ -2099,21 +2092,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.8p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.8p1-1.dsc' openssh_7.8p1-1.dsc 3121 SHA256:8ec0c6c21c59e00899e1102b2641ddfea63b1ca3aade5865db6c5aa6a628e266
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.8p1.orig.tar.gz' openssh_7.8p1.orig.tar.gz 1548026 SHA256:1a484bb15152c183bb2514e112aa30dd34138c3cfb032eee5490a66c507144ca
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.8p1.orig.tar.gz.asc' openssh_7.8p1.orig.tar.gz.asc 683 SHA256:01649b5f618d9f19c861a038b981db456778dd7b38a20d039513e2639a022fe4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.8p1-1.debian.tar.xz' openssh_7.8p1-1.debian.tar.xz 161912 SHA256:e9c101ac6c8123a8148702585c67880229a8d472fb74d4a9ad3767a72b3e7592
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.8p1-1/
 
-- https://sources.debian.net/src/openssh/1:7.8p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.8p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.8p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2o-1`
 
@@ -2651,21 +2636,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.10.2-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.2-1.dsc' subversion_1.10.2-1.dsc 3516 SHA256:f086b629c60d8eae9c46d5b7f630e1ad3ebac78c192a21502016ac710a9724f7
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.2.orig.tar.gz' subversion_1.10.2.orig.tar.gz 11340555 SHA256:4f1be1bc26758c7c85c0ba6e7e8a90ce02e346607e84f44e018753f096f86577
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.2.orig.tar.gz.asc' subversion_1.10.2.orig.tar.gz.asc 2485 SHA256:3828cd55766859ec42374745f6ed0967b3c1dc85df8e770ceb07e4a265892ceb
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.10.2-1.debian.tar.xz' subversion_1.10.2-1.debian.tar.xz 2402840 SHA256:072ef649e862aedc919d9c2feab6c92ca57de14cfb25d50a734ae6ca6e4b5378
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.10.2-1/
 
-- https://sources.debian.net/src/subversion/1.10.2-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.10.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.10.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-10`
 

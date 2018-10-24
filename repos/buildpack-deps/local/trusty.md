@@ -3445,14 +3445,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-160.210
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-160.210.dsc' linux_3.13.0-160.210.dsc 8130 SHA256:358bd4c0aa4719e79434bf8cdde9f75f0e19286691c917b873cb146c5f1c358f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-160.210.diff.gz' linux_3.13.0-160.210.diff.gz 10073090 SHA256:3176fffbe6e25a87241df3ca6c618d963811387dc1d14ffc9b1d61bbf0dfdf6b
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -3771,14 +3766,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.61-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.61-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.61-0ubuntu0.14.04.1.dsc 3187 SHA256:5e2addd7eebc831dc0e1cc1865bcbe6edd8cccf885f610f64c6b03be9b9ccd8e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.61.orig.tar.gz' mysql-5.5_5.5.61.orig.tar.gz 21027098 SHA256:62a7f8aeb9c6c4d5a127f7254500878d9d172b70ad9639b098f3c01731f1fbf0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.61-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.61-0ubuntu0.14.04.1.debian.tar.gz 317029 SHA256:74a3e69e2fbb70daffc07626207aa0ad4292934dafb312fa4ceb6f13b68f6ba0
-```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
