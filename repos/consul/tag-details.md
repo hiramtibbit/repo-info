@@ -3,6 +3,7 @@
 # Tags of `consul`
 
 -	[`consul:1.3.0`](#consul130)
+-	[`consul:1.4.0-rc1`](#consul140-rc1)
 -	[`consul:latest`](#consullatest)
 
 ## `consul:1.3.0`
@@ -335,6 +336,10 @@ CMD ["agent" "-dev" "-client" "0.0.0.0"]
 		Last Modified: Fri, 12 Oct 2018 10:39:38 GMT  
 		Size: 1.7 KB (1681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `consul:1.4.0-rc1`
+
+**does not exist** (yet?)
 
 ## `consul:latest`
 
