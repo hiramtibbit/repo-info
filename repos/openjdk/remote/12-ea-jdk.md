@@ -1,7 +1,7 @@
 ## `openjdk:12-ea-jdk`
 
 ```console
-$ docker pull openjdk@sha256:489001024cf3352122fdb7a55cdb896447fffdfddd7a8fee412b67f73f83794b
+$ docker pull openjdk@sha256:4268cf27db671991545e3926d87ebd93d80b3c58c01d41fc9b4d5ba8624137c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:489001024cf3352122fdb7a55cdb896447fffdfddd7a8fee412
 ### `openjdk:12-ea-jdk` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:162c7ca130845885b69202cdf53e13abb4fa1c48c6106f86e463a3d1695876c0
+$ docker pull openjdk@sha256:57ba5b534eec1df4093f6cc7a9f7dbe652793ac2ca251f7485a2df581dfc93c7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.7 MB (243716855 bytes)**  
+-	Total Size: **243.8 MB (243765816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ec96e33711695e329b456079760ca128c039c3d108c655f019ad40f08980de3`
+-	Image ID: `sha256:1eacb9a1e180848d6f22dd0223f5b2859c681c11eb05d750c08be82b492c9af7`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34,15 +34,15 @@ RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /v
 ENV JAVA_HOME=/usr/java/openjdk-12
 # Tue, 16 Oct 2018 22:02:17 GMT
 ENV PATH=/usr/java/openjdk-12/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 20 Oct 2018 00:20:02 GMT
-ENV JAVA_VERSION=12-ea+16
-# Sat, 20 Oct 2018 00:20:02 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk12/16/GPL/openjdk-12-ea+16_linux-x64_bin.tar.gz
-# Sat, 20 Oct 2018 00:20:02 GMT
-ENV JAVA_SHA256=20ab4c21b20d0c823c5dcbf0bdb81bc9ab5c2a45954a80563ffd591b25b36038
-# Sat, 20 Oct 2018 00:23:22 GMT
+# Fri, 26 Oct 2018 20:23:51 GMT
+ENV JAVA_VERSION=12-ea+17
+# Fri, 26 Oct 2018 20:23:51 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk12/17/GPL/openjdk-12-ea+17_linux-x64_bin.tar.gz
+# Fri, 26 Oct 2018 20:23:52 GMT
+ENV JAVA_SHA256=68a4cafbb0325ad89efa67c36aa46788fcf076721d73e479bd84d735d62ccd1f
+# Fri, 26 Oct 2018 20:24:31 GMT
 RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
-# Sat, 20 Oct 2018 00:23:30 GMT
+# Fri, 26 Oct 2018 20:24:39 GMT
 CMD ["jshell"]
 ```
 
@@ -55,7 +55,7 @@ CMD ["jshell"]
 		Last Modified: Tue, 16 Oct 2018 22:05:40 GMT  
 		Size: 4.4 MB (4374701 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec840cd9bc7d3960ff0ca38af0378caa71f129234eda9c2f7f1a8437a6c0a67a`  
-		Last Modified: Sat, 20 Oct 2018 00:29:11 GMT  
-		Size: 196.9 MB (196928043 bytes)  
+	-	`sha256:8e07188eb4e4ff656de38d92d6e2ce5b660a572ad5d307d225892f1da9288026`  
+		Last Modified: Fri, 26 Oct 2018 20:33:06 GMT  
+		Size: 197.0 MB (196977004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
