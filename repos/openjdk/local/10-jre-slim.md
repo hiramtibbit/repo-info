@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e933bd7c8c1eeb511b344b8fc35c7784083bbf72a740ac59bd17cd94cb997b8`
-- Created: `2018-10-16T05:24:51.825696508Z`
-- Virtual Size: ~ 293.32 Mb  
+- Image ID: `sha256:f9ce8cd412b0801b8fe02a65b22630c2a285cf87ca2db53fa53077540bcdb732`
+- Created: `2018-10-24T22:31:15.606064602Z`
+- Virtual Size: ~ 293.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=10.0.2`
-  - `JAVA_DEBIAN_VERSION=10.0.2+13-1`
+  - `JAVA_DEBIAN_VERSION=10.0.2+13-2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1973,11 +1973,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-10=10.0.2+13-1`
+### `dpkg` source package: `openjdk-10=10.0.2+13-2`
 
 Binary Packages:
 
-- `openjdk-10-jre-headless:amd64=10.0.2+13-1`
+- `openjdk-10-jre-headless:amd64=10.0.2+13-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 
@@ -1989,17 +1989,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-10-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-10=10.0.2+13-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.dsc' openjdk-10_10.0.2+13-1.dsc 4563 SHA256:33171e18e9c61ee6d1dd95b24e0ef5bf5216997daa0071a5ed54fff97d0ddd56
+$ apt-get source -qq --print-uris openjdk-10=10.0.2+13-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-2.dsc' openjdk-10_10.0.2+13-2.dsc 4518 SHA256:500e40578f2043723c426c1e0eb788a99e622227ed6edec1d3659285117c854f
 'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13.orig.tar.xz' openjdk-10_10.0.2+13.orig.tar.xz 74012480 SHA256:c9b839f4834eeee0b455a52b3b6b3bd22a3e064c06574bed11a4a81d6ce0d0ca
-'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-1.debian.tar.xz' openjdk-10_10.0.2+13-1.debian.tar.xz 168704 SHA256:5ac15cc4e199887c3d7f2a92b793fc0bbf30f692b9fdd857abee5876526b9daf
+'http://deb.debian.org/debian/pool/main/o/openjdk-10/openjdk-10_10.0.2+13-2.debian.tar.xz' openjdk-10_10.0.2+13-2.debian.tar.xz 179896 SHA256:acf423fcc7a7bd9ff96bfe64cb9634b888fc1276c90131d31b8c164ca4b72c9a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-10/10.0.2+13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-10/10.0.2+13-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-10/10.0.2+13-2/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-10/10.0.2+13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-10/10.0.2+13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1-1`
 
