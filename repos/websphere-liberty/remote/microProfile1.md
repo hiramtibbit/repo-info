@@ -1,7 +1,7 @@
 ## `websphere-liberty:microProfile1`
 
 ```console
-$ docker pull websphere-liberty@sha256:095c6ae950f2f38b959b0a230778d46cfd48e497f994eb479d5fb2f41b9b79dd
+$ docker pull websphere-liberty@sha256:503fab18261b87633671fe31023ccf80829327c1c952ae07b71495b2da3600c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull websphere-liberty@sha256:095c6ae950f2f38b959b0a230778d46cfd48e497f
 ### `websphere-liberty:microProfile1` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:b1b6b0a83deed3faaf941b24a5286c21b01f7ae749a69788335178154276c4ad
+$ docker pull websphere-liberty@sha256:99e9d85cc046995246c22a906dd5c7f95b110da82e41dd330f08a6b4d7109689
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.9 MB (284927879 bytes)**  
+-	Total Size: **285.2 MB (285150732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38828f56698a6692d39d4cd0d9052a17f19963c062223f019b599faba6fabbfa`
+-	Image ID: `sha256:6c218c9516678b1c0bd15915cf10825129a00490b9ea06da059942231d87d7cb`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -92,9 +92,9 @@ ARG REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense      appSecurity-2.0 ldapRegistry-3.0 localConnector-1.0 microProfile-1.0      microProfile-1.2 microProfile-1.3 microProfile-1.4 monitor-1.0      requestTiming-1.0 restConnector-2.0 sessionCache-1.0 sessionDatabase-1.0      ssl-1.0 transportSecurity-1.0 webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
 # Tue, 23 Oct 2018 22:32:25 GMT
 COPY file:23644e3c10b3bdd139278cd7f641eb7947292e238e821d17fbf24b360f5250b1 in /config/ 
-# Tue, 23 Oct 2018 22:32:37 GMT
+# Fri, 26 Oct 2018 23:31:18 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN server start && server stop && rm -rf /output/resources/security/
+RUN server start && server stop && rm -rf /output/resources/security/ /logs/*
 ```
 
 -	Layers:
@@ -154,9 +154,9 @@ RUN server start && server stop && rm -rf /output/resources/security/
 		Last Modified: Tue, 23 Oct 2018 22:38:20 GMT  
 		Size: 573.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0af6322631510a410631baf83642e5376960bb276b3bcc4ec8776f757cacd61d`  
-		Last Modified: Tue, 23 Oct 2018 22:38:23 GMT  
-		Size: 11.8 MB (11830465 bytes)  
+	-	`sha256:f05f39eaaa0aa3a5278eab5b4f67ee1887deb42cc9e32291d750f8b8c1f3e17e`  
+		Last Modified: Fri, 26 Oct 2018 23:36:55 GMT  
+		Size: 12.1 MB (12053318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:microProfile1` - linux; 386
