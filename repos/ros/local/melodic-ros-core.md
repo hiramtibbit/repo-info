@@ -113,8 +113,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
 ```
 
 ### `dpkg` source package: `asn1crypto=0.24.0-1`
@@ -2478,9 +2478,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.15.0-36.39
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.dsc' linux_4.15.0-36.39.dsc 7499 SHA256:8276b91c19add6c31ba73f7601ead023c62d62cae82c83241262fd261c0912a0
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.diff.gz' linux_4.15.0-36.39.diff.gz 8195142 SHA256:46e6148eefacac51df4c8acdcd583956148b315a1be039913aea506cb5daf707
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.dsc' linux_4.15.0-36.39.dsc 7499 SHA256:8276b91c19add6c31ba73f7601ead023c62d62cae82c83241262fd261c0912a0
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.diff.gz' linux_4.15.0-36.39.diff.gz 8195142 SHA256:46e6148eefacac51df4c8acdcd583956148b315a1be039913aea506cb5daf707
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
@@ -2800,14 +2800,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.23-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.23-0ubuntu0.18.04.1.dsc 3391 SHA256:d00cbcfa422496728268fc316f81ad2a2a6a94e396cc8c023e976dd32148aca1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23.orig.tar.gz' mysql-5.7_5.7.23.orig.tar.gz 49025014 SHA256:d05700ec5c1c6dae9311059dc1713206c29597f09dbd237bf0679b3c6438e87a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.23-0ubuntu0.18.04.1.debian.tar.xz 155992 SHA256:a4d44d56f984dfd658909bc54074d128f97c7b4b9189127ca3a88f5c3c97f643
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -5311,15 +5306,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018e-0ubuntu0.18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.18.04.dsc' tzdata_2018e-0ubuntu0.18.04.dsc 2400 SHA256:76dd797304fe9eaba7ceb2598aa8a9cde52d439241153ab2245e298d3a57842d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018e-0ubuntu0.18.04.debian.tar.xz' tzdata_2018e-0ubuntu0.18.04.debian.tar.xz 104280 SHA256:148400e07086018ac25b470b63f0bc180549a311c7799441c778c88aca781bf8
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.02.28`
 
