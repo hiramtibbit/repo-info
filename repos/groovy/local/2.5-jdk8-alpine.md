@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63fba7d04a784d164581a65d57ba1b86c670d674e80819554ec84cb279142fd2`
-- Created: `2018-10-19T22:22:28.783023876Z`
-- Virtual Size: ~ 136.28 Mb  
+- Image ID: `sha256:e80eb5ebe4de862853488772c0b2227f5e147fd9752382b7ef3a92563e390963`
+- Created: `2018-10-24T23:40:25.815454748Z`
+- Virtual Size: ~ 136.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
-  - `JAVA_VERSION=8u171`
-  - `JAVA_ALPINE_VERSION=8.171.11-r0`
+  - `JAVA_VERSION=8u181`
+  - `JAVA_ALPINE_VERSION=8.181.13-r0`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=2.5.3`
