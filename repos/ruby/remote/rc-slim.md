@@ -1,7 +1,7 @@
 ## `ruby:rc-slim`
 
 ```console
-$ docker pull ruby@sha256:a3bade86404849b5faf78ee29a63ea8dc651d591db8d398fb7e4b96b15563d13
+$ docker pull ruby@sha256:20f4820c696de047e799b66b27092927ea62aeea4f64f906933a0d6adaa30c0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -85,14 +85,14 @@ CMD ["irb"]
 ### `ruby:rc-slim` - linux; arm variant v5
 
 ```console
-$ docker pull ruby@sha256:27e55218a316f8e3d38f0124db1efc1def34e729b9c6241a5702baa74b02c05d
+$ docker pull ruby@sha256:7f6ad140a6d7c17d49e425c951282169af910e4204c80fd9452561a4274eee6b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.4 MB (77393797 bytes)**  
+-	Total Size: **77.4 MB (77408412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbd43a827561f4f4b25ec74d7a1ed4a99a2f3ec5b2d597cb963f0a7b917840d6`
+-	Image ID: `sha256:24a59a201f863aadf2f0515d38e9820fdd8fe75caa7f17739b52184b21b6ec2a`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -112,19 +112,19 @@ ENV RUBY_VERSION=2.6.0-preview2
 ENV RUBY_DOWNLOAD_SHA256=00ddfb5e33dee24469dd0b203597f7ecee66522ebb496f620f5815372ea2d3ec
 # Tue, 16 Oct 2018 12:01:32 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Tue, 16 Oct 2018 12:01:33 GMT
-ENV BUNDLER_VERSION=1.16.6
-# Tue, 16 Oct 2018 12:04:44 GMT
+# Sat, 27 Oct 2018 08:55:26 GMT
+ENV BUNDLER_VERSION=1.17.0
+# Sat, 27 Oct 2018 08:59:10 GMT
 RUN set -ex 		&& buildDeps=' 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& dpkg-query --show --showformat '${package}\n' 		| grep -P '^libreadline\d+$' 		| xargs apt-mark manual 	&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Tue, 16 Oct 2018 12:04:45 GMT
+# Sat, 27 Oct 2018 08:59:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 16 Oct 2018 12:04:46 GMT
+# Sat, 27 Oct 2018 08:59:12 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 16 Oct 2018 12:04:46 GMT
+# Sat, 27 Oct 2018 08:59:12 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Oct 2018 12:04:47 GMT
+# Sat, 27 Oct 2018 08:59:13 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Tue, 16 Oct 2018 12:04:48 GMT
+# Sat, 27 Oct 2018 08:59:13 GMT
 CMD ["irb"]
 ```
 
@@ -141,13 +141,13 @@ CMD ["irb"]
 		Last Modified: Tue, 16 Oct 2018 12:35:00 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85570999c6cb5966f6a229fb172c4145ee69ce95dd20dd9796b799b460539a6e`  
-		Last Modified: Tue, 16 Oct 2018 12:35:05 GMT  
-		Size: 22.0 MB (21983796 bytes)  
+	-	`sha256:fcb476442398c3abe8b43cb0bfb16e85ca41ce6b2ab0f6d6ad61ad9c645a3476`  
+		Last Modified: Sat, 27 Oct 2018 09:52:19 GMT  
+		Size: 22.0 MB (21998410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da10d16fed81838bdd8e44c22b84a68761526e3f27425983da6ff6c214e6e738`  
-		Last Modified: Tue, 16 Oct 2018 12:35:00 GMT  
-		Size: 181.0 B  
+	-	`sha256:9b69b6d81e1c4c9f589bef8741b058d9b237df4898aecf598b42ba8345b0c220`  
+		Last Modified: Sat, 27 Oct 2018 09:52:19 GMT  
+		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc-slim` - linux; arm variant v7
@@ -357,14 +357,14 @@ CMD ["irb"]
 ### `ruby:rc-slim` - linux; ppc64le
 
 ```console
-$ docker pull ruby@sha256:b7bc7b7b0901cf2318aaf46f1d7ea77db2ebc6c0b7779f7e90211f090708fd8b
+$ docker pull ruby@sha256:69ea25c793045b2460a937fc8ee35acb9674b43911c7dd59ec60ac0118f9b2f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.5 MB (80473167 bytes)**  
+-	Total Size: **80.5 MB (80488285 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1e3ad18573d4c86e721c728e5f079e87a5eb58a4cd68abf2e87a008adba525e`
+-	Image ID: `sha256:7e59de29ee7b93eece91e11cd1ee3181dd21a4e6ff4d99436560025001a8a56a`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -384,19 +384,19 @@ ENV RUBY_VERSION=2.6.0-preview2
 ENV RUBY_DOWNLOAD_SHA256=00ddfb5e33dee24469dd0b203597f7ecee66522ebb496f620f5815372ea2d3ec
 # Tue, 16 Oct 2018 13:52:55 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Tue, 16 Oct 2018 13:52:56 GMT
-ENV BUNDLER_VERSION=1.16.6
-# Tue, 16 Oct 2018 13:58:40 GMT
+# Sat, 27 Oct 2018 08:26:35 GMT
+ENV BUNDLER_VERSION=1.17.0
+# Sat, 27 Oct 2018 08:32:13 GMT
 RUN set -ex 		&& buildDeps=' 		autoconf 		bison 		dpkg-dev 		gcc 		libbz2-dev 		libgdbm-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		ruby 		wget 		xz-utils 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& dpkg-query --show --showformat '${package}\n' 		| grep -P '^libreadline\d+$' 		| xargs apt-mark manual 	&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Tue, 16 Oct 2018 13:58:42 GMT
+# Sat, 27 Oct 2018 08:32:14 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 16 Oct 2018 13:58:43 GMT
+# Sat, 27 Oct 2018 08:32:15 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 16 Oct 2018 13:58:46 GMT
+# Sat, 27 Oct 2018 08:32:16 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Oct 2018 13:58:49 GMT
+# Sat, 27 Oct 2018 08:32:20 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Tue, 16 Oct 2018 13:58:50 GMT
+# Sat, 27 Oct 2018 08:32:21 GMT
 CMD ["irb"]
 ```
 
@@ -413,13 +413,13 @@ CMD ["irb"]
 		Last Modified: Tue, 16 Oct 2018 14:32:58 GMT  
 		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c03990114832abba12355b7fe7dbb115558d6fc3b785b3e91cb49f7b725ed28`  
-		Last Modified: Tue, 16 Oct 2018 14:33:08 GMT  
-		Size: 22.7 MB (22668813 bytes)  
+	-	`sha256:5f830f9cbbab116c52288aa3715fb3531f6bb8ae4269856779c1f50c2691ddff`  
+		Last Modified: Sat, 27 Oct 2018 09:38:14 GMT  
+		Size: 22.7 MB (22683932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ba801294b8034d7d83c90b7f3cce49be7bdf2f7976334339f434d3269a87f7`  
-		Last Modified: Tue, 16 Oct 2018 14:32:58 GMT  
-		Size: 183.0 B  
+	-	`sha256:4b49c4754e6da89f39427cdcef30f060e41074e0d96ae2cfb4e211db426c2210`  
+		Last Modified: Sat, 27 Oct 2018 09:38:02 GMT  
+		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc-slim` - linux; s390x
