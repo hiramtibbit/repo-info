@@ -1,7 +1,7 @@
 ## `websphere-liberty:latest`
 
 ```console
-$ docker pull websphere-liberty@sha256:79f0fa27e6edf3d555b8edeba3155d5b7d6ea2156750b344605a4f5303c8bba4
+$ docker pull websphere-liberty@sha256:3c5c3e97812009210c6e7649f13e3ed6ec549b37b52f9191923b6eb10ad92114
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull websphere-liberty@sha256:79f0fa27e6edf3d555b8edeba3155d5b7d6ea2156
 ### `websphere-liberty:latest` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:12312cb7f9b5bbeab194b1a0477d32d094f390b242561f324c45b6c73ac3d509
+$ docker pull websphere-liberty@sha256:d3aa9004710e8ad13ed884cc0170120d82177e9aae2b005e93479a5b2b9b8ddd
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.3 MB (313313470 bytes)**  
+-	Total Size: **313.4 MB (313416931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:883c8f89013e6fc18503d5b6086f15e9554b8ec7d7b31a2dbce7290f79d5895c`
+-	Image ID: `sha256:195ecbef7857e77068f929ba37e8cc7c621333936b206daa1d0a78dc0c468ea8`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -92,9 +92,9 @@ ARG REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     appSecurity-2.0 ldapRegistry-3.0     localConnector-1.0 monitor-1.0 requestTiming-1.0 restConnector-2.0 sessionCache-1.0     sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0 webCache-1.0 webProfile-8.0     appSecurityClient-1.0 javaee-8.0 javaeeClient-8.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
 # Tue, 23 Oct 2018 22:29:37 GMT
 COPY file:f4cac514955c255b36133cfe1191b08f01517de7405d8bd87d2a32324b7c8a39 in /config/ 
-# Tue, 23 Oct 2018 22:29:53 GMT
+# Fri, 26 Oct 2018 23:30:14 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN server start && server stop && rm -rf /output/resources/security/ && rm -rf /output/messaging
+RUN server start && server stop && rm -rf /output/resources/security/ /output/messaging /logs/*
 ```
 
 -	Layers:
@@ -154,9 +154,9 @@ RUN server start && server stop && rm -rf /output/resources/security/ && rm -rf 
 		Last Modified: Tue, 23 Oct 2018 22:37:11 GMT  
 		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e59462dba32539f14387ad08cd227407df1be96cb74f41b3ade408c12da3daf`  
-		Last Modified: Tue, 23 Oct 2018 22:37:14 GMT  
-		Size: 15.9 MB (15885611 bytes)  
+	-	`sha256:3a68c27a9179a9b73dc87648cfbab3d7fd7102e382fcb32bea3880b44c1561cf`  
+		Last Modified: Fri, 26 Oct 2018 23:35:14 GMT  
+		Size: 16.0 MB (15989072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:latest` - linux; 386
