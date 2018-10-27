@@ -1,7 +1,7 @@
 ## `websphere-liberty:springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:84c2501b061791be5bb8ccce5005556dc9f647dd32b0f5409322f127d4abb7fa
+$ docker pull websphere-liberty@sha256:a53823d3ecbce70d3af45871841226e105068be747cc681380b4ebb76e2cadbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -458,14 +458,14 @@ RUN server start && server stop && rm -rf /output/resources/security/ /logs/*
 ### `websphere-liberty:springBoot2` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:0885283ce342ee8e5e97dd63d112bb5fbf6ed26b836af59b9eb7a8c728cc4ed3
+$ docker pull websphere-liberty@sha256:2702fda9c37d0cb3d7b3e3282a9cd1d7e93004a8f63b34cbb8fa4e3596c5bd58
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.3 MB (229285842 bytes)**  
+-	Total Size: **229.3 MB (229345750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3c187f463bb0d90af1ec1608e0fdbeb933e239ee8e78b28e923112a00af4414`
+-	Image ID: `sha256:568b199a04222db0ff3eab1cb3bcdb3acc51481db742fdc47ba799ce896fed8d`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -536,9 +536,9 @@ ARG REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && mkdir /opt/ibm/wlp/usr/shared/resources/lib.index.cache   && ln -s /opt/ibm/wlp/usr/shared/resources/lib.index.cache /lib.index.cache   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
 # Wed, 24 Oct 2018 11:54:45 GMT
 COPY file:9bd7671f14eb4dab5e8157daf2d04f397fe5fb91e12a88930e54b90e462cac3c in /config/ 
-# Wed, 24 Oct 2018 11:54:52 GMT
+# Sat, 27 Oct 2018 12:27:14 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN server start && server stop && rm -rf /output/resources/security/
+RUN server start && server stop && rm -rf /output/resources/security/ /logs/*
 ```
 
 -	Layers:
@@ -598,7 +598,7 @@ RUN server start && server stop && rm -rf /output/resources/security/
 		Last Modified: Wed, 24 Oct 2018 11:57:02 GMT  
 		Size: 557.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df93bec02f6fa952bba0fdf3e984bf8c9c83b409c6fd9f3832af73db2ff247d6`  
-		Last Modified: Wed, 24 Oct 2018 11:57:04 GMT  
-		Size: 8.4 MB (8375703 bytes)  
+	-	`sha256:606266a238f9d8af5d3f43d2e9ba2fa62d8fb82b36d3483e1da74d11424db9ff`  
+		Last Modified: Sat, 27 Oct 2018 12:29:11 GMT  
+		Size: 8.4 MB (8435611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
