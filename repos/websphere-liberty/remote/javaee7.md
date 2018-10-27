@@ -1,7 +1,7 @@
 ## `websphere-liberty:javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:e87b559592b5078b67a51ffd8a905d8f2817029c1e2b3f68b4d4d926fe910142
+$ docker pull websphere-liberty@sha256:fe4d6af8737b2e19ec5930b65a02a578372d12f3a22d1a03b4430daeda436f96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -162,14 +162,14 @@ RUN server start && server stop && rm -rf /output/resources/security/ /output/me
 ### `websphere-liberty:javaee7` - linux; 386
 
 ```console
-$ docker pull websphere-liberty@sha256:2e50436df496de67ee7ec9404837d2fcf81d95a227649977ea2a894647d9423e
+$ docker pull websphere-liberty@sha256:2e4fc9963c2d9168e4721a2c548c95b4a19f81eb6979e051999b08fec4271f4a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **305.1 MB (305070123 bytes)**  
+-	Total Size: **305.0 MB (305036421 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9165dcfcb213b8c041cac28208b0d43361075f89cbfa0f45a1110b491f74c874`
+-	Image ID: `sha256:86724040f306c1a9849bea2e4faa1aa1515f2139da3a954205d84e1b382baad1`
 -	Entrypoint: `["\/opt\/ibm\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -240,9 +240,9 @@ ARG REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 microProfile-1.2 microProfile-1.3 microProfile-1.4 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 sessionCache-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0 appSecurityClient-1.0 javaee-7.0 javaeeClient-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
 # Wed, 24 Oct 2018 10:45:46 GMT
 COPY file:a6a1a88d3f0473f85596df9cf7599a22f32111deb67c95183a9a45b654d347eb in /config/ 
-# Wed, 24 Oct 2018 10:46:04 GMT
+# Sat, 27 Oct 2018 13:16:41 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN server start && server stop && rm -rf /output/resources/security/ && rm -rf /output/messaging
+RUN server start && server stop && rm -rf /output/resources/security/ /output/messaging /logs/*
 ```
 
 -	Layers:
@@ -302,9 +302,9 @@ RUN server start && server stop && rm -rf /output/resources/security/ && rm -rf 
 		Last Modified: Wed, 24 Oct 2018 10:54:30 GMT  
 		Size: 932.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8626a5fd7f9abde382c46f4b29190368e6984fbef82deb926d1f29bc5e8d8752`  
-		Last Modified: Wed, 24 Oct 2018 10:54:35 GMT  
-		Size: 16.2 MB (16172495 bytes)  
+	-	`sha256:4839264eb29c7f1176b52302548f63c64d7ac4eafefd36786cf5710e3e51b41c`  
+		Last Modified: Sat, 27 Oct 2018 13:20:34 GMT  
+		Size: 16.1 MB (16138793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:javaee7` - linux; ppc64le
