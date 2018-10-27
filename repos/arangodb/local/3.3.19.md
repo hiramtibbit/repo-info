@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2103c51be1059e0735a31f76b2f4a9788b4b3ed745596b49d58d5060106768f`
-- Created: `2018-10-16T00:32:23.891361642Z`
-- Virtual Size: ~ 292.58 Mb  
+- Image ID: `sha256:1f9daf3358dd6ff7da0a7208ce18d7a61f67f92a587835718876015194b1547a`
+- Created: `2018-10-25T01:04:33.455206246Z`
+- Virtual Size: ~ 292.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
   - `DEB_PACKAGE_VERSION=1`
-  - `ARANGO_VERSION=3.3.16`
+  - `ARANGO_VERSION=3.3.19`
   - `ARANGO_URL=https://download.arangodb.com/arangodb33/Debian_9.0`
-  - `ARANGO_PACKAGE=arangodb3-3.3.16-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.16-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.16-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3-3.3.19-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -97,11 +97,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `arangodb3=3.3.16`
+### `dpkg` source package: `arangodb3=3.3.19`
 
 Binary Packages:
 
-- `arangodb3=3.3.16`
+- `arangodb3=3.3.19`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1723,6 +1723,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.3-1/ (for browsing the source)
 - https://sources.debian.net/src/npth/1.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.3-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `numactl=2.0.11-2.1`
+
+Binary Packages:
+
+- `libnuma1:amd64=2.0.11-2.1`
+- `numactl=2.0.11-2.1`
+
+Licenses: (parsed from: `/usr/share/doc/libnuma1/copyright`, `/usr/share/doc/numactl/copyright`)
+
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris numactl=2.0.11-2.1
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.11-2.1.dsc' numactl_2.0.11-2.1.dsc 1613 SHA256:3462c9e9a53e1cdbec095092859fdd2448e629a687b6dac511f83708cecbbfe3
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.11.orig.tar.gz' numactl_2.0.11.orig.tar.gz 408175 SHA256:450c091235f891ee874a8651b179c30f57a1391ca5c4673354740ba65e527861
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.11-2.1.debian.tar.xz' numactl_2.0.11-2.1.debian.tar.xz 6760 SHA256:1dc86f99e7b2d8d652a2af34b14d66b7a3637316403789a3c10f09b490cf89d8
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/numactl/2.0.11-2.1/ (for browsing the source)
+- https://sources.debian.net/src/numactl/2.0.11-2.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/numactl/2.0.11-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
