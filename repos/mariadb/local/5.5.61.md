@@ -1943,13 +1943,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-5.5=5.5.61+maria-1~trusty
-'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.61+maria-1~trusty.dsc' mariadb-5.5_5.5.61+maria-1~trusty.dsc 1955 SHA256:9788fbc43c4c560304a8f07ae18629153fb4a9b9fc54188811232629aae08f4d
-'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.61+maria-1~trusty.tar.gz' mariadb-5.5_5.5.61+maria-1~trusty.tar.gz 45384646 SHA256:233364ca412c98605035c8da84bd1b56f7971f5428940d47eeb9b531d5b4a8a0
-```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu2`
 

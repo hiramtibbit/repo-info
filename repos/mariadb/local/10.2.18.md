@@ -73,8 +73,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
