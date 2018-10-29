@@ -1,10 +1,10 @@
-# `docker:18.09.0-beta3`
+# `docker:18.09.0-beta5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a4e5357c8d4bd83a6c39f57d1392d4876822d5850b71877d10f357204ed0f7d`
-- Created: `2018-10-09T22:20:35.071755758Z`
-- Virtual Size: ~ 165.61 Mb  
+- Image ID: `sha256:e4e6e851c2eeb300f0d792ae465788b17881c926193c431b3f1a44c23b3bed22`
+- Created: `2018-10-26T20:20:02.472263851Z`
+- Virtual Size: ~ 166.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,4 +12,4 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=18.09.0-beta3`
+  - `DOCKER_VERSION=18.09.0-beta5`
