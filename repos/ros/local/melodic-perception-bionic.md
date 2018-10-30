@@ -7137,14 +7137,9 @@ Licenses: (parsed from: `/usr/share/doc/networkd-dispatcher/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris networkd-dispatcher=1.7-0ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_1.7-0ubuntu3.2.dsc' networkd-dispatcher_1.7-0ubuntu3.2.dsc 2042 SHA256:017acb70db27841c252d8a53c5667af369adb79860b32dd0c7011e96a888ab22
-'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_1.7.orig.tar.gz' networkd-dispatcher_1.7.orig.tar.gz 22920 SHA256:81c3509602b3540fbd261de3a9a526fc959dd774c529e8fbc581f9bac1d0d933
-'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_1.7-0ubuntu3.2.debian.tar.xz' networkd-dispatcher_1.7-0ubuntu3.2.debian.tar.xz 4164 SHA256:775a616fe4356e527f4ed4f5bd22a6229608b323879f9a8f925ee5a43109d12c
-```
 
 ### `dpkg` source package: `nghttp2=1.30.0-1ubuntu1`
 
@@ -7749,14 +7744,9 @@ Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris paramiko=2.0.0-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0-1ubuntu1.1.dsc' paramiko_2.0.0-1ubuntu1.1.dsc 2465 SHA256:71dc3007c01b016ba4c547be350964650ab56a6aa9420ed62bfec5c7847c5854
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0.orig.tar.gz' paramiko_2.0.0.orig.tar.gz 273791 SHA256:acf3866621794d68ce42bd5bcb769b6f9ff7e362cc1064e1b1af4185cdc4ed3b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0-1ubuntu1.1.debian.tar.xz' paramiko_2.0.0-1ubuntu1.1.debian.tar.xz 12588 SHA256:a337d74701ee45d70e1afe5e860119fcc7d64fc00856e4817983751177231ff3
-```
 
 ### `dpkg` source package: `patch=2.7.6-2ubuntu1`
 

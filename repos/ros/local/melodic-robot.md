@@ -4939,14 +4939,9 @@ Licenses: (parsed from: `/usr/share/doc/python-paramiko/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris paramiko=2.0.0-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0-1ubuntu1.1.dsc' paramiko_2.0.0-1ubuntu1.1.dsc 2465 SHA256:71dc3007c01b016ba4c547be350964650ab56a6aa9420ed62bfec5c7847c5854
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0.orig.tar.gz' paramiko_2.0.0.orig.tar.gz 273791 SHA256:acf3866621794d68ce42bd5bcb769b6f9ff7e362cc1064e1b1af4185cdc4ed3b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/paramiko/paramiko_2.0.0-1ubuntu1.1.debian.tar.xz' paramiko_2.0.0-1ubuntu1.1.debian.tar.xz 12588 SHA256:a337d74701ee45d70e1afe5e860119fcc7d64fc00856e4817983751177231ff3
-```
 
 ### `dpkg` source package: `patch=2.7.6-2ubuntu1`
 
