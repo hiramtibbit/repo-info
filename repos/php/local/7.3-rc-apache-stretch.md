@@ -1,9 +1,9 @@
-# `php:7.3.0RC3-apache-stretch`
+# `php:7.3.0RC4-apache-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d36fbbd9ccad36366434926e343de4cce91abcb0579a4dd42d67a4f37dcac9d`
-- Created: `2018-10-16T00:16:27.467421613Z`
+- Image ID: `sha256:5fcd86bdbac461f9d23749142d8eac443ea15b30dbef94299f2c480ddafdfe43`
+- Created: `2018-10-26T20:37:07.92017768Z`
 - Virtual Size: ~ 377.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.0RC3`
-  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0RC3.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0RC3.tar.xz.asc`
-  - `PHP_SHA256=bd6c7fa718ff5b430d64ae1b5cfdf3e076ceb0a4a8569927bba8fe65fa04c4b5`
+  - `PHP_VERSION=7.3.0RC4`
+  - `PHP_URL=https://downloads.php.net/~cmb/php-7.3.0RC4.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~cmb/php-7.3.0RC4.tar.xz.asc`
+  - `PHP_SHA256=11582176003e0e8ca06dbdebab0921d539cab2ad795c0d90f146977859e21c26`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
