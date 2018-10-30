@@ -1,7 +1,7 @@
 ## `ruby:alpine3.8`
 
 ```console
-$ docker pull ruby@sha256:12ff2c10035f1b6f969ea18964cdab67498ae4dae31919490718c409a6567bed
+$ docker pull ruby@sha256:2938785389aaa30e1b6d7683f52ec0a86af1a5af915698a102598e56e2313640
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -146,14 +146,14 @@ CMD ["irb"]
 ### `ruby:alpine3.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull ruby@sha256:18f6594186c6cfedaaf05fb43f80248c19e4496bb9fefacf81527d1729154b60
+$ docker pull ruby@sha256:2f233566392126583e3db9824c5fdf6d5415e0ab00545da55cca128bb1f8cd43
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.3 MB (23269660 bytes)**  
+-	Total Size: **23.3 MB (23269891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da1d9a42c79f1e4ea3617c93a37fcee4e1e9c5502ae685f5bb68d5ecf4bd90c9`
+-	Image ID: `sha256:d514638a3f3d41381db49e9e27191ec94f41bc19fec0ba3c74908426885bb8b0`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -173,19 +173,19 @@ ENV RUBY_VERSION=2.5.3
 ENV RUBY_DOWNLOAD_SHA256=1cc9d0359a8ea35fc6111ec830d12e60168f3b9b305a3c2578357d360fcf306f
 # Sat, 20 Oct 2018 09:36:54 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Sat, 27 Oct 2018 09:44:42 GMT
-ENV BUNDLER_VERSION=1.17.0
-# Sat, 27 Oct 2018 09:51:45 GMT
+# Tue, 30 Oct 2018 10:53:53 GMT
+ENV BUNDLER_VERSION=1.17.1
+# Tue, 30 Oct 2018 11:01:13 GMT
 RUN set -ex 		&& apk add --no-cache --virtual .ruby-builddeps 		autoconf 		bison 		bzip2 		bzip2-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gdbm-dev 		glib-dev 		libc-dev 		libffi-dev 		libressl 		libressl-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		ncurses-dev 		procps 		readline-dev 		ruby 		tar 		xz 		yaml-dev 		zlib-dev 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& wget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch' 	&& echo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum -c - 	&& patch -p1 -i thread-stack-fix.patch 	&& rm thread-stack-fix.patch 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& export ac_cv_func_isnan=yes ac_cv_func_isinf=yes 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-network --virtual .ruby-rundeps $runDeps 		bzip2 		ca-certificates 		libffi-dev 		procps 		yaml-dev 		zlib-dev 	&& apk del --no-network .ruby-builddeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Sat, 27 Oct 2018 09:51:46 GMT
+# Tue, 30 Oct 2018 11:01:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 27 Oct 2018 09:51:46 GMT
+# Tue, 30 Oct 2018 11:01:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 27 Oct 2018 09:51:47 GMT
+# Tue, 30 Oct 2018 11:01:18 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Oct 2018 09:51:49 GMT
+# Tue, 30 Oct 2018 11:01:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Sat, 27 Oct 2018 09:51:49 GMT
+# Tue, 30 Oct 2018 11:01:22 GMT
 CMD ["irb"]
 ```
 
@@ -202,13 +202,13 @@ CMD ["irb"]
 		Last Modified: Sat, 15 Sep 2018 14:24:58 GMT  
 		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34661014965fc3d9e7f24df6dcae93c7c3d941b4998b8ed39bcc391a6e1da392`  
-		Last Modified: Sat, 27 Oct 2018 11:14:32 GMT  
-		Size: 21.2 MB (21169383 bytes)  
+	-	`sha256:c264d54c306ccf62df977a3613237fe26dd2e03e56fd0745fe6a5b64903c5d56`  
+		Last Modified: Tue, 30 Oct 2018 12:57:30 GMT  
+		Size: 21.2 MB (21169613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7c787b20b9b11de1f0071f325e981eedb146a730a8d115b8824722a89bcb889`  
-		Last Modified: Sat, 27 Oct 2018 11:14:26 GMT  
-		Size: 140.0 B  
+	-	`sha256:94e9781548bebf9af49d6cbe4857a41255b9c5a0a1a87ca988a6d5b87f7cf40d`  
+		Last Modified: Tue, 30 Oct 2018 12:57:18 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:alpine3.8` - linux; 386
@@ -350,14 +350,14 @@ CMD ["irb"]
 ### `ruby:alpine3.8` - linux; s390x
 
 ```console
-$ docker pull ruby@sha256:929a211781cef404df70ba806389b65311b55ec34f72886362d76f7aecf488ca
+$ docker pull ruby@sha256:375d4ce3729e52909986e67165e4d957a1a56386555ba0758eaebb5b4886d0e9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.1 MB (24071222 bytes)**  
+-	Total Size: **24.1 MB (24070851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cb479b6edc2ebd0c4d2d08ef61aa35dd5a7b2e85df54e05f3037fdfa131a4e8`
+-	Image ID: `sha256:3843426802d1e6f9885074280effb8aba382c9031e7b270c10224c705d500228`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -377,19 +377,19 @@ ENV RUBY_VERSION=2.5.3
 ENV RUBY_DOWNLOAD_SHA256=1cc9d0359a8ea35fc6111ec830d12e60168f3b9b305a3c2578357d360fcf306f
 # Sat, 20 Oct 2018 12:34:01 GMT
 ENV RUBYGEMS_VERSION=2.7.7
-# Sat, 27 Oct 2018 12:18:14 GMT
-ENV BUNDLER_VERSION=1.17.0
-# Sat, 27 Oct 2018 12:20:15 GMT
+# Tue, 30 Oct 2018 12:37:10 GMT
+ENV BUNDLER_VERSION=1.17.1
+# Tue, 30 Oct 2018 12:40:07 GMT
 RUN set -ex 		&& apk add --no-cache --virtual .ruby-builddeps 		autoconf 		bison 		bzip2 		bzip2-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gdbm-dev 		glib-dev 		libc-dev 		libffi-dev 		libressl 		libressl-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		ncurses-dev 		procps 		readline-dev 		ruby 		tar 		xz 		yaml-dev 		zlib-dev 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& wget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch' 	&& echo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum -c - 	&& patch -p1 -i thread-stack-fix.patch 	&& rm thread-stack-fix.patch 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& export ac_cv_func_isnan=yes ac_cv_func_isinf=yes 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-network --virtual .ruby-rundeps $runDeps 		bzip2 		ca-certificates 		libffi-dev 		procps 		yaml-dev 		zlib-dev 	&& apk del --no-network .ruby-builddeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Sat, 27 Oct 2018 12:20:16 GMT
+# Tue, 30 Oct 2018 12:40:07 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 27 Oct 2018 12:20:16 GMT
+# Tue, 30 Oct 2018 12:40:08 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 27 Oct 2018 12:20:16 GMT
+# Tue, 30 Oct 2018 12:40:08 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Oct 2018 12:20:16 GMT
+# Tue, 30 Oct 2018 12:40:09 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Sat, 27 Oct 2018 12:20:17 GMT
+# Tue, 30 Oct 2018 12:40:09 GMT
 CMD ["irb"]
 ```
 
@@ -406,11 +406,11 @@ CMD ["irb"]
 		Last Modified: Sat, 15 Sep 2018 12:20:30 GMT  
 		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcda75ebe2050abe610fafc7971ca77ae7e0634b234404340cb165ae379757f4`  
-		Last Modified: Sat, 27 Oct 2018 12:46:47 GMT  
-		Size: 21.8 MB (21762958 bytes)  
+	-	`sha256:df49554a13571c5a14c9ce6bd218ba07ac1bc94bb35251313f9fa66dc6d9b34e`  
+		Last Modified: Tue, 30 Oct 2018 13:11:32 GMT  
+		Size: 21.8 MB (21762589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44079242ca8bb3508f033dc1b0428d323d4a679f903870aa41320e1c6fa95670`  
-		Last Modified: Sat, 27 Oct 2018 12:46:44 GMT  
-		Size: 141.0 B  
+	-	`sha256:b0eca8796f18a251c9f54b88dac687ca01835933d5a7499653dec690b3eccf8b`  
+		Last Modified: Tue, 30 Oct 2018 13:11:28 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
