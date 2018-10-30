@@ -451,10 +451,6 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cairo/1.15.12-1/
-
 
 ### `dpkg` source package: `cdebconf=0.245`
 
@@ -4371,10 +4367,6 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/postgresql-11/11~rc1-1/
-
 
 ### `dpkg` source package: `procps=2:3.3.15-2`
 
@@ -4549,10 +4541,6 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.6/3.6.7~rc2-1/
 
 
 ### `dpkg` source package: `readline=7.0-5`
@@ -4793,20 +4781,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-10
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-10.dsc' systemd_239-10.dsc 4858 SHA256:dcceb0a998a20a6b00911f3f69758a041f004500267712d56f51a88fa469e75e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-10.debian.tar.xz' systemd_239-10.debian.tar.xz 152028 SHA256:43bdd70015c90959938fed3004a6c93cf6877f17a88a013939cc9a21b7758b71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-10/
 
-- https://sources.debian.net/src/systemd/239-10/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 

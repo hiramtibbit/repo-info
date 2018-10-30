@@ -376,10 +376,6 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/binutils/2.31.1-6/
-
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -450,10 +446,6 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cairo/1.15.12-1/
 
 
 ### `dpkg` source package: `cdebconf=0.245`
@@ -1161,19 +1153,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.178
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.178.dsc' gcc-defaults_1.178.dsc 15326 SHA256:9f52ab0fc08c9abfdd92b9fc1f8e160fec27ab9cb57f176592de043a3f34f841
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.178.tar.gz' gcc-defaults_1.178.tar.gz 72065 SHA256:7f62dbdc99adb06c62ce2a24ec057ca6fb1aaae756d094c3038bc7c1cebbb846
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.178/
 
-- https://sources.debian.net/src/gcc-defaults/1.178/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.178/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.178/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.18-2`
 
@@ -1191,21 +1177,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18-2
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18-2.dsc' gdbm_1.18-2.dsc 2575 SHA256:1df7c1b158de5cad39be16723bd50de50d4be002c3c66b3723de8bad70228565
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.orig.tar.gz' gdbm_1.18.orig.tar.gz 939352 SHA256:b8822cb4769e2d759c828c06f196614936c88c141c3132b18252fe25c2b635ce
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.orig.tar.gz.asc' gdbm_1.18.orig.tar.gz.asc 412 SHA256:b37ee909ad378df0c5e34e8c127d5b0ac8c8aae9a9c246ad33e8c213edd9a3d7
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18-2.debian.tar.xz' gdbm_1.18-2.debian.tar.xz 27900 SHA256:6a10bf84d643a046daf8bcb47fa220f0cd1f58b53eb5dcf1fecf95e264b31498
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.18-2/
 
-- https://sources.debian.net/src/gdbm/1.18-2/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.18-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.38.0+dfsg-6`
 
@@ -1880,20 +1858,13 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.6.2-1.1
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.dsc' iptables_1.6.2-1.1.dsc 2791 SHA256:d1e8a317abc6d3a9ecf3a87a6da251b5e585961e2e8363f316e72f9f3d41be0d
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2.orig.tar.bz2' iptables_1.6.2.orig.tar.bz2 639785 SHA256:55d02dfa46263343a401f297d44190f2a3e5113c8933946f094ed40237053733
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.6.2-1.1.debian.tar.xz' iptables_1.6.2-1.1.debian.tar.xz 61192 SHA256:410b999709db3d319dcfa882adbc40c7b1cfe243ac9fa1527c3e24b60a02822f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.6.2-1.1/
 
-- https://sources.debian.net/src/iptables/1.6.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.6.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.6.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20180629-2`
 
@@ -2972,10 +2943,6 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libtool/2.4.6-4/
 
 
 ### `dpkg` source package: `libunistring=0.9.10-1`
@@ -4527,10 +4494,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3-defaults/3.6.6-1/
-
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.6.6-1`
 
@@ -4545,10 +4508,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.6.6-1/
 
 
 ### `dpkg` source package: `python3.6=3.6.6-1`
@@ -4853,10 +4812,6 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sysvinit/2.88dsf-59.10/
 
 
 ### `dpkg` source package: `tar=1.30+dfsg-2`
