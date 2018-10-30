@@ -11,8 +11,8 @@
 -	[`telegraf:1.7.4-alpine`](#telegraf174-alpine)
 -	[`telegraf:1.7-alpine`](#telegraf17-alpine)
 -	[`telegraf:1.8`](#telegraf18)
--	[`telegraf:1.8.1`](#telegraf181)
--	[`telegraf:1.8.1-alpine`](#telegraf181-alpine)
+-	[`telegraf:1.8.2`](#telegraf182)
+-	[`telegraf:1.8.2-alpine`](#telegraf182-alpine)
 -	[`telegraf:1.8-alpine`](#telegraf18-alpine)
 -	[`telegraf:alpine`](#telegrafalpine)
 -	[`telegraf:latest`](#telegraflatest)
@@ -1418,7 +1418,7 @@ CMD ["telegraf"]
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `telegraf:1.8.1`
+## `telegraf:1.8.2`
 
 ```console
 $ docker pull telegraf@sha256:afa0f20e39530e404a8c2fa17d9e9b50900bee19945d3ca8e390dfa3b5d35909
@@ -1430,7 +1430,7 @@ $ docker pull telegraf@sha256:afa0f20e39530e404a8c2fa17d9e9b50900bee19945d3ca8e3
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `telegraf:1.8.1` - linux; amd64
+### `telegraf:1.8.2` - linux; amd64
 
 ```console
 $ docker pull telegraf@sha256:2d67519d805018cc66758d2183fb57bb0118b13eacaf62d975bc28f7a3bd1ca4
@@ -1501,7 +1501,7 @@ CMD ["telegraf"]
 		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `telegraf:1.8.1` - linux; arm variant v7
+### `telegraf:1.8.2` - linux; arm variant v7
 
 ```console
 $ docker pull telegraf@sha256:79fd38a531d53fc7ecf9fabfcd7ce7fb3554ca73512f74a6f49119f63dceff8f
@@ -1572,7 +1572,7 @@ CMD ["telegraf"]
 		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `telegraf:1.8.1` - linux; arm64 variant v8
+### `telegraf:1.8.2` - linux; arm64 variant v8
 
 ```console
 $ docker pull telegraf@sha256:cb0e29e2d64795dd08180471bb59232744dfd1d0ae6005ac28d6fbd307a04404
@@ -1643,7 +1643,7 @@ CMD ["telegraf"]
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `telegraf:1.8.1-alpine`
+## `telegraf:1.8.2-alpine`
 
 ```console
 $ docker pull telegraf@sha256:7f6873f5745fe9b4f610c5dcfaaa73d7cd75adb63bd770bb70c26a7e85c94a2a
@@ -1653,7 +1653,7 @@ $ docker pull telegraf@sha256:7f6873f5745fe9b4f610c5dcfaaa73d7cd75adb63bd770bb70
 -	Platforms:
 	-	linux; amd64
 
-### `telegraf:1.8.1-alpine` - linux; amd64
+### `telegraf:1.8.2-alpine` - linux; amd64
 
 ```console
 $ docker pull telegraf@sha256:74a56edd5eb28c8587429ba26632979ed6b5abe6f041f36b8d6ed2c4195ca653
