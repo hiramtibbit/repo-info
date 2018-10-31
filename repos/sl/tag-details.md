@@ -9,7 +9,7 @@
 ## `sl:6`
 
 ```console
-$ docker pull sl@sha256:28384b396bde7d67732efe05980975629568ec40fbbec4f4041ae2e7223c2dd8
+$ docker pull sl@sha256:6fb6d3e5eed19d230abfbbb0588561a32c47b2416c4b6aef797af4e1549060c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19,29 +19,29 @@ $ docker pull sl@sha256:28384b396bde7d67732efe05980975629568ec40fbbec4f4041ae2e7
 ### `sl:6` - linux; amd64
 
 ```console
-$ docker pull sl@sha256:61b794edde7d453feffbfa29284e4193a135bce3e906eec5ed928593d941f493
+$ docker pull sl@sha256:638a12d65719d62f51241de8246d9cda111dadf4261440df70fc1e0e6e6eed65
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48291283 bytes)**  
+-	Total Size: **48.3 MB (48293548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6917a5f514f7257d2b4c86b3a6f0255afa47ff931c3189a0be65a7c5f266eee9`
+-	Image ID: `sha256:a082875f7268ae338659b6d546e54ce00af9fde2f63853a914fbf0052eab797b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 14 Sep 2018 20:20:30 GMT
-ADD file:eb1ebb0cca9577b90ba5b4da10201056b0538cd24581564144538cb66be21a28 in / 
-# Fri, 14 Sep 2018 20:20:30 GMT
-LABEL name=SL6 Base Image vendor=Scientific Linux build-date=20180914
-# Fri, 14 Sep 2018 20:20:30 GMT
+# Wed, 31 Oct 2018 01:09:22 GMT
+ADD file:b2107a32cecc1bb50d1f25015e43a0e4220cf3fc25d4f9161b1a99419cf69d92 in / 
+# Wed, 31 Oct 2018 01:09:29 GMT
+LABEL name=SL6 Base Image vendor=Scientific Linux build-date=20181030
+# Wed, 31 Oct 2018 01:09:30 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f880b674c5b853ba72a9ed7f066bcb3b5feb5141f07a0350d43ced83374775a4`  
-		Last Modified: Fri, 14 Sep 2018 19:51:39 GMT  
-		Size: 48.3 MB (48291283 bytes)  
+	-	`sha256:6464a6df67e82599b055007de1b6ebfe48e14b41d4152ea03f7c159e0998ff3b`  
+		Last Modified: Tue, 30 Oct 2018 15:56:09 GMT  
+		Size: 48.3 MB (48293548 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sl:7`
