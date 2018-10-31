@@ -59,10 +59,6 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/adduser/3.117/
-
 
 ### `dpkg` source package: `apt=1.6.1`
 
@@ -125,10 +121,6 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/audit/1:2.8.2-1/
 
 
 ### `dpkg` source package: `avahi=0.7-4`
@@ -221,10 +213,6 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/bash/4.4.18-2/
 
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
@@ -418,10 +406,6 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3.1/
-
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -512,10 +496,6 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/debconf/1.5.66/
-
 
 ### `dpkg` source package: `debian-archive-keyring=2017.7`
 
@@ -553,10 +533,6 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/debianutils/4.8.4/
 
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
@@ -732,10 +708,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8-20180425-1/
 
 
 ### `dpkg` source package: `glibc=2.27-3`
@@ -947,10 +919,6 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/hostname/3.20/
-
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 
@@ -966,10 +934,6 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/init-system-helpers/1.51/
 
 
 ### `dpkg` source package: `java-common=0.65`
@@ -1028,10 +992,6 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/krb5/1.16-2/
-
 
 ### `dpkg` source package: `lcms2=2.9-1`
 
@@ -1082,10 +1042,6 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libbsd/0.8.7-1/
-
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3.1`
 
@@ -1101,10 +1057,6 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libcap-ng/0.7.7-3.1/
 
 
 ### `dpkg` source package: `libffi=3.2.1-8`
@@ -1297,10 +1249,6 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libseccomp/2.3.3-1/
-
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
@@ -1336,10 +1284,6 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libsemanage/2.7-2/
-
 
 ### `dpkg` source package: `libsepol=2.7-1`
 
@@ -1354,10 +1298,6 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libsepol/2.7-1/
 
 
 ### `dpkg` source package: `libssh2=1.8.0-2`
@@ -1652,10 +1592,6 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libzstd/1.3.3+dfsg-2/
-
 
 ### `dpkg` source package: `lsb=9.20170808`
 
@@ -1771,10 +1707,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/ncurses/6.1-1/
-
 
 ### `dpkg` source package: `nettle=3.4-1`
 
@@ -1831,10 +1763,6 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nghttp2/1.32.1-1/
 
 
 ### `dpkg` source package: `nspr=2:4.19-2`
@@ -1893,10 +1821,6 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openjdk-9/9.0.4+12-4/
 
 
 ### `dpkg` source package: `openldap=2.4.46+dfsg-5`
@@ -1961,10 +1885,6 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/p11-kit/0.23.10-2/
-
 
 ### `dpkg` source package: `pam=1.1.8-3.7`
 
@@ -1981,10 +1901,6 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/pam/1.1.8-3.7/
 
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
@@ -2124,10 +2040,6 @@ Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/psmisc/23.1-1/
-
 
 ### `dpkg` source package: `publicsuffix=20180523.2326-2`
 
@@ -2213,10 +2125,6 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/shadow/1:4.5-1/
-
 
 ### `dpkg` source package: `sqlite3=3.23.1-1`
 
@@ -2232,10 +2140,6 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sqlite3/3.23.1-1/
 
 
 ### `dpkg` source package: `systemd=238-4`
@@ -2312,10 +2216,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tzdata/2018d-1/
 
 
 ### `dpkg` source package: `unzip=6.0-21`
