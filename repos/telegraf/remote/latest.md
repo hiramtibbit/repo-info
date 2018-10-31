@@ -1,7 +1,7 @@
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:30977e423e7e486804d7b39d8402e7d0a82809acd62f1981e28afc80cedd0f87
+$ docker pull telegraf@sha256:9f854f64fc44316e1456b5f4547207bf0d672d334d86d3f548af7a708fd1cbd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -84,14 +84,14 @@ CMD ["telegraf"]
 ### `telegraf:latest` - linux; arm variant v7
 
 ```console
-$ docker pull telegraf@sha256:79fd38a531d53fc7ecf9fabfcd7ce7fb3554ca73512f74a6f49119f63dceff8f
+$ docker pull telegraf@sha256:07b56b045ca5a3fba79d45530b9a27af70edfaa9227028a75001c9cbf4e78b73
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.8 MB (83798409 bytes)**  
+-	Total Size: **83.8 MB (83798642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:705bd80efcaa231329d2eeca5ae88cfab44d6573eaf2480f2e33c879c641cfd1`
+-	Image ID: `sha256:5c9c09e4d4a42a2bd40af5e5de10b50b64e60b60652a631a3ac0954e2af9dfc8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -108,17 +108,17 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors &&     rm -rf /var/lib/apt/lists/*
 # Tue, 16 Oct 2018 14:30:13 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Tue, 16 Oct 2018 14:30:39 GMT
-ENV TELEGRAF_VERSION=1.8.1
-# Tue, 16 Oct 2018 14:30:44 GMT
+# Wed, 31 Oct 2018 11:59:29 GMT
+ENV TELEGRAF_VERSION=1.8.2
+# Wed, 31 Oct 2018 11:59:33 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 16 Oct 2018 14:30:44 GMT
+# Wed, 31 Oct 2018 11:59:33 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Tue, 16 Oct 2018 14:30:45 GMT
+# Wed, 31 Oct 2018 11:59:34 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Tue, 16 Oct 2018 14:30:46 GMT
+# Wed, 31 Oct 2018 11:59:34 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Oct 2018 14:30:46 GMT
+# Wed, 31 Oct 2018 11:59:35 GMT
 CMD ["telegraf"]
 ```
 
@@ -143,13 +143,13 @@ CMD ["telegraf"]
 		Last Modified: Tue, 16 Oct 2018 14:30:57 GMT  
 		Size: 2.9 KB (2911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2408d853b81e72bf370a37994d174ae818e5ce607c948df7c21ab49c933f37bc`  
-		Last Modified: Tue, 16 Oct 2018 14:31:45 GMT  
-		Size: 13.5 MB (13549530 bytes)  
+	-	`sha256:178d9bfc41366dab2430ae9015b693327cc7d020f35418a9809bd1570d6dc320`  
+		Last Modified: Wed, 31 Oct 2018 11:59:55 GMT  
+		Size: 13.5 MB (13549764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:daec9840a25b80b93e92809276517e0528c3bdf8cd3a9a4dc2ce308863ec733c`  
-		Last Modified: Tue, 16 Oct 2018 14:31:41 GMT  
-		Size: 185.0 B  
+	-	`sha256:e4567f740fa15301a8b3626223d0f96ff3b2f1d587f2febc1b04bb01dc5c458e`  
+		Last Modified: Wed, 31 Oct 2018 11:59:51 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `telegraf:latest` - linux; arm64 variant v8
