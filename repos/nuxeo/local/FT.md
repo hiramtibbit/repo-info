@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:601c1c181c283432fbb0aa2ea6f064c833b429c93758eb53008d4e24021086ad`
-- Created: `2018-10-16T17:59:41.498903692Z`
+- Image ID: `sha256:9f7b47e25d6cb049a4a8c65cc04161c55eab2368e954b4ff7a085a014d7da8cb`
+- Created: `2018-10-30T03:40:13.148212255Z`
 - Virtual Size: ~ 2.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=8u181`
-  - `JAVA_DEBIAN_VERSION=8u181-b13-1~deb9u1`
+  - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `NUXEO_USER=nuxeo`
   - `NUXEO_HOME=/opt/nuxeo/server`
@@ -5519,11 +5519,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libssh2/1.7.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libssh2/1.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh=0.7.3-2`
+### `dpkg` source package: `libssh=0.7.3-2+deb9u1`
 
 Binary Packages:
 
-- `libssh-gcrypt-4:amd64=0.7.3-2`
+- `libssh-gcrypt-4:amd64=0.7.3-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -5536,17 +5536,17 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.7.3-2
-'http://deb.debian.org/debian/pool/main/libs/libssh/libssh_0.7.3-2.dsc' libssh_0.7.3-2.dsc 1959 SHA256:b72824a809186e2ed8a3bd4b7f199c81f7441da41e955a54b1e116408529bd1a
-'http://deb.debian.org/debian/pool/main/libs/libssh/libssh_0.7.3.orig.tar.xz' libssh_0.7.3.orig.tar.xz 350464 SHA256:26ef46be555da21112c01e4b9f5e3abba9194485c8822ab55ba3d6496222af98
-'http://deb.debian.org/debian/pool/main/libs/libssh/libssh_0.7.3-2.debian.tar.xz' libssh_0.7.3-2.debian.tar.xz 16940 SHA256:88611ddfb2c84573de142903a883091f9cd4b09479cd4dd4ea8096c32cd44547
+$ apt-get source -qq --print-uris libssh=0.7.3-2+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh/libssh_0.7.3-2+deb9u1.dsc' libssh_0.7.3-2+deb9u1.dsc 2463 SHA256:9a3e129ffb7bdf8538e55faa9aa5f9efbfe8831a1e0eae7c969a1de6fcecc928
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh/libssh_0.7.3.orig.tar.xz' libssh_0.7.3.orig.tar.xz 350464 SHA256:26ef46be555da21112c01e4b9f5e3abba9194485c8822ab55ba3d6496222af98
+'http://security.debian.org/debian-security/pool/updates/main/libs/libssh/libssh_0.7.3-2+deb9u1.debian.tar.xz' libssh_0.7.3-2+deb9u1.debian.tar.xz 24944 SHA256:21e1bdf45dc7b592534c2dfa77b69dfe4800e0b3991e386139ab871d7510403c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh/0.7.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libssh/0.7.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh/0.7.3-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh/0.7.3-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libssh/0.7.3-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh/0.7.3-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.10-1.1+deb9u1`
 
@@ -7247,14 +7247,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/opencv/2.4.9.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/opencv/2.4.9.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u181-b13-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u181-b13-2~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u181-b13-1~deb9u1`
-- `openjdk-8-jdk-headless:amd64=8u181-b13-1~deb9u1`
-- `openjdk-8-jre:amd64=8u181-b13-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u181-b13-1~deb9u1`
+- `openjdk-8-jdk:amd64=8u181-b13-2~deb9u1`
+- `openjdk-8-jdk-headless:amd64=8u181-b13-2~deb9u1`
+- `openjdk-8-jre:amd64=8u181-b13-2~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u181-b13-2~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -7263,13 +7263,20 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjdk-8=8u181-b13-2~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.dsc' openjdk-8_8u181-b13-2~deb9u1.dsc 4499 SHA256:e8f04a2104632b525686a180d67a57618337c18e291912797cb9c58eb888d0bc
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz 255716 SHA256:363df60e16c303da497bf88dd77d818df6b9cec2f5598296a4b8b27508344be9
+```
 
-- http://snapshot.debian.org/package/openjdk-8/8u181-b13-1~deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u181-b13-2~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u2`
 
