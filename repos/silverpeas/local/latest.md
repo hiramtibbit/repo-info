@@ -620,13 +620,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.4.dsc' dpkg_1.18.4ubuntu1.4.dsc 2182 SHA256:bfc874171efa7bd4540704c5b337c8b75f5abe2617c3300ffa9c6288e61fc48f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.4.tar.xz' dpkg_1.18.4ubuntu1.4.tar.xz 4298120 SHA256:1b0eb1e3d8b98531fa1edf01a3530809d7c6765271dc82a3805115876ef690c7
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -1036,14 +1032,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.25~dfsg+1-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.1.dsc' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.1.dsc 2926 SHA256:2adf825cff91bcfebd625b066f30944da27808d865e4a133e92f0fd1571c22af
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1.orig.tar.xz' ghostscript_9.25~dfsg+1.orig.tar.xz 27033872 SHA256:ebcf00fe0b7b45fc8199b93df717e2020d08307a0f273040be1267ea0a0a656b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.1.debian.tar.xz' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.1.debian.tar.xz 128300 SHA256:e1d43f8986a9444bd40a782acd345746d06807eb811c7bd28ca83a40716137e7
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -3800,14 +3791,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u181-b13-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13-0ubuntu0.16.04.1.dsc' openjdk-8_8u181-b13-0ubuntu0.16.04.1.dsc 4724 SHA256:5cc5efebe34571ef37acf87b642a2ae39505e90142de29ff32052c5d0e64c318
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.xz' openjdk-8_8u181-b13.orig.tar.xz 70373860 SHA256:d96ec3d64b61a7db1066c9b9aacd6c595a6c179cf21d616ee22ffd2b21d056b2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13-0ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u181-b13-0ubuntu0.16.04.1.debian.tar.xz 245712 SHA256:bf7070ddead307dccb73bf687434a7bce549da0e46b3c3a38173547a603179be
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
