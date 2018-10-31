@@ -148,10 +148,6 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apparmor/2.13.1-1/
-
 
 ### `dpkg` source package: `apr-util=1.6.1-3`
 
@@ -696,20 +692,9 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.0.4-3
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.4-3.dsc' cryptsetup_2.0.4-3.dsc 2814 SHA256:34a87f6a72b08919fa4e2028424a5fc9941752c6eacd0af7ee85402b69975555
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.4.orig.tar.gz' cryptsetup_2.0.4.orig.tar.gz 10456802 SHA256:2eff4dd941fc19d090012f3de369c68a61d8f384c108122ea8de7285e396e3a5
-'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_2.0.4-3.debian.tar.xz' cryptsetup_2.0.4-3.debian.tar.xz 98988 SHA256:eb8e4d0d6d0c977e3c0c33133f3a9053c1aca05f3a5b4636a13b0f831a3c1283
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/cryptsetup/2:2.0.4-3/ (for browsing the source)
-- https://sources.debian.net/src/cryptsetup/2:2.0.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cryptsetup/2:2.0.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.8-5`
 
@@ -1136,10 +1121,6 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20180808-2/
 
 
 ### `dpkg` source package: `fontconfig=2.13.1-1`
@@ -1956,10 +1937,6 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iptables/1.6.2-1.1/
-
 
 ### `dpkg` source package: `iptables=1.8.1-1`
 
@@ -1976,10 +1953,6 @@ Licenses: (parsed from: `/usr/share/doc/libip4tc0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iptables/1.8.1-1/
 
 
 ### `dpkg` source package: `iputils=3:20180629-2`
@@ -2878,10 +2851,6 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libpsl/0.20.2-1/
 
 
 ### `dpkg` source package: `librest=0.8.1-1`
@@ -4835,10 +4804,6 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sed/4.5-1/
-
 
 ### `dpkg` source package: `sensible-utils=0.0.12`
 
@@ -4882,10 +4847,6 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/serf/1.3.9-6/
 
 
 ### `dpkg` source package: `shadow=1:4.5-1.1`
@@ -4983,10 +4944,6 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/subversion/1.10.2-1/
-
 
 ### `dpkg` source package: `systemd=239-10`
 
@@ -5008,20 +4965,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-10
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-10.dsc' systemd_239-10.dsc 4858 SHA256:dcceb0a998a20a6b00911f3f69758a041f004500267712d56f51a88fa469e75e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-10.debian.tar.xz' systemd_239-10.debian.tar.xz 152028 SHA256:43bdd70015c90959938fed3004a6c93cf6877f17a88a013939cc9a21b7758b71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-10/
 
-- https://sources.debian.net/src/systemd/239-10/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
