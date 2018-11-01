@@ -1853,7 +1853,7 @@ CMD ["telegraf"]
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:c9ac50c9605d81f0e7494f8815daada45dbcc4ea18c342f62b1a4626aa02a428
+$ docker pull telegraf@sha256:31fa5a08bbe4098ecb048222550b65faf34dd6c803989e94020ddf131600cfa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1936,14 +1936,14 @@ CMD ["telegraf"]
 ### `telegraf:latest` - linux; arm variant v7
 
 ```console
-$ docker pull telegraf@sha256:07b56b045ca5a3fba79d45530b9a27af70edfaa9227028a75001c9cbf4e78b73
+$ docker pull telegraf@sha256:ed9ba72c3df59d9ca1b89769cc4a55afd2cda53de88f669c9ab062b25cc05689
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.8 MB (83798642 bytes)**  
+-	Total Size: **83.8 MB (83800057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c9c09e4d4a42a2bd40af5e5de10b50b64e60b60652a631a3ac0954e2af9dfc8`
+-	Image ID: `sha256:54253d754a039b01c9c82bfd69e9225068b86fc791fbe34be58af7efb86198d5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -1960,17 +1960,17 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors &&     rm -rf /var/lib/apt/lists/*
 # Tue, 16 Oct 2018 14:30:13 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Wed, 31 Oct 2018 11:59:29 GMT
-ENV TELEGRAF_VERSION=1.8.2
-# Wed, 31 Oct 2018 11:59:33 GMT
+# Thu, 01 Nov 2018 11:58:49 GMT
+ENV TELEGRAF_VERSION=1.8.3
+# Thu, 01 Nov 2018 11:58:53 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Wed, 31 Oct 2018 11:59:33 GMT
+# Thu, 01 Nov 2018 11:58:53 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Wed, 31 Oct 2018 11:59:34 GMT
+# Thu, 01 Nov 2018 11:58:54 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Wed, 31 Oct 2018 11:59:34 GMT
+# Thu, 01 Nov 2018 11:58:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 31 Oct 2018 11:59:35 GMT
+# Thu, 01 Nov 2018 11:58:54 GMT
 CMD ["telegraf"]
 ```
 
@@ -1995,13 +1995,13 @@ CMD ["telegraf"]
 		Last Modified: Tue, 16 Oct 2018 14:30:57 GMT  
 		Size: 2.9 KB (2911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:178d9bfc41366dab2430ae9015b693327cc7d020f35418a9809bd1570d6dc320`  
-		Last Modified: Wed, 31 Oct 2018 11:59:55 GMT  
-		Size: 13.5 MB (13549764 bytes)  
+	-	`sha256:903381f71a6ea5be4caa2edf05800c13449a4a2e45f84525b55145332a9f8f01`  
+		Last Modified: Thu, 01 Nov 2018 11:59:19 GMT  
+		Size: 13.6 MB (13551178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4567f740fa15301a8b3626223d0f96ff3b2f1d587f2febc1b04bb01dc5c458e`  
-		Last Modified: Wed, 31 Oct 2018 11:59:51 GMT  
-		Size: 184.0 B  
+	-	`sha256:0da302779d6a97da3c2a15036f90c54965f27e38df3652d3f8c18716a7511bb4`  
+		Last Modified: Thu, 01 Nov 2018 11:59:15 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `telegraf:latest` - linux; arm64 variant v8
