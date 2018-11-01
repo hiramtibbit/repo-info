@@ -1,10 +1,10 @@
-# `mariadb:5.5.61-trusty`
+# `mariadb:5.5.62-trusty`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6706e8dabab57fd6ad4b30e5d42f51258ad6bbbedb9bc6d9e7939f62e4e99bdd`
-- Created: `2018-10-19T01:41:31.823673951Z`
-- Virtual Size: ~ 352.18 Mb  
+- Image ID: `sha256:4720cd73b9afb706449b3395fa1aac7860dcc6aa0803e0157a215e55dfb7f4d8`
+- Created: `2018-10-29T23:23:34.543958273Z`
+- Virtual Size: ~ 352.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=5.5`
-  - `MARIADB_VERSION=5.5.61+maria-1~trusty`
+  - `MARIADB_VERSION=5.5.62+maria-1~trusty`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -368,14 +368,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.17
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.dsc' curl_7.35.0-1ubuntu2.17.dsc 2739 SHA256:54178c3db89c2b52ad0ff8afa4a3503a8ef8615a31ae982b877c864a1161b3b2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.debian.tar.gz' curl_7.35.0-1ubuntu2.17.debian.tar.gz 76791 SHA256:1312988cb1f618b6b1b1b47c6f33a7c6b54a384520385c68584ee636ad65a3fe
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1925,27 +1920,31 @@ $ apt-get source -qq --print-uris makedev=2.3.1-93ubuntu2~ubuntu14.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz' makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz 50336 SHA256:ba9a3313d0711db1188b2674bb4f3114f6ff3bec2e568808c38a3134b5440361
 ```
 
-### `dpkg` source package: `mariadb-5.5=5.5.61+maria-1~trusty`
+### `dpkg` source package: `mariadb-5.5=5.5.62+maria-1~trusty`
 
 Binary Packages:
 
-- `libmariadbclient18=5.5.61+maria-1~trusty`
-- `libmysqlclient18=5.5.61+maria-1~trusty`
-- `mariadb-client-5.5=5.5.61+maria-1~trusty`
-- `mariadb-client-core-5.5=5.5.61+maria-1~trusty`
-- `mariadb-common=5.5.61+maria-1~trusty`
-- `mariadb-server=5.5.61+maria-1~trusty`
-- `mariadb-server-5.5=5.5.61+maria-1~trusty`
-- `mariadb-server-core-5.5=5.5.61+maria-1~trusty`
-- `mysql-common=5.5.61+maria-1~trusty`
+- `libmariadbclient18=5.5.62+maria-1~trusty`
+- `libmysqlclient18=5.5.62+maria-1~trusty`
+- `mariadb-client-5.5=5.5.62+maria-1~trusty`
+- `mariadb-client-core-5.5=5.5.62+maria-1~trusty`
+- `mariadb-common=5.5.62+maria-1~trusty`
+- `mariadb-server=5.5.62+maria-1~trusty`
+- `mariadb-server-5.5=5.5.62+maria-1~trusty`
+- `mariadb-server-core-5.5=5.5.62+maria-1~trusty`
+- `mysql-common=5.5.62+maria-1~trusty`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mariadb-5.5=5.5.62+maria-1~trusty
+'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.62+maria-1~trusty.dsc' mariadb-5.5_5.5.62+maria-1~trusty.dsc 1955 SHA256:3f5cedc69b4b1c88890deac2a9320b5d3dfc777c9f123a5e2a0b3b17fc55b868
+'http://ftp.osuosl.org/pub/mariadb/repo/5.5/ubuntu/pool/main/m/mariadb-5.5/mariadb-5.5_5.5.62+maria-1~trusty.tar.gz' mariadb-5.5_5.5.62+maria-1~trusty.tar.gz 45496095 SHA256:e7af92b2884ae32e73388e678376334cebd0dc3a22148dad0f44b2b068be2729
+```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu2`
 
