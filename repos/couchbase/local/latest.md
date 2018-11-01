@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5201ec0e2dd9b23ace4d6eff82f9c006581d31e4785ab3ed4bfda390afdc0cc`
-- Created: `2018-10-19T01:50:45.662764111Z`
-- Virtual Size: ~ 782.81 Mb  
+- Image ID: `sha256:c915a5ec5fd18af017b325d3adb3755928e4fbfd4a26a132962c39ba6a546560`
+- Created: `2018-10-30T06:20:55.367613491Z`
+- Virtual Size: ~ 808.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -283,11 +283,11 @@ $ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
-### `dpkg` source package: `couchbase-server=5.5.2-3733-1`
+### `dpkg` source package: `couchbase-server=6.0.0-1693-1`
 
 Binary Packages:
 
-- `couchbase-server=5.5.2-3733-1`
+- `couchbase-server=6.0.0-1693-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -448,13 +448,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.4.dsc' dpkg_1.18.4ubuntu1.4.dsc 2182 SHA256:bfc874171efa7bd4540704c5b337c8b75f5abe2617c3300ffa9c6288e61fc48f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.4.tar.xz' dpkg_1.18.4ubuntu1.4.tar.xz 4298120 SHA256:1b0eb1e3d8b98531fa1edf01a3530809d7c6765271dc82a3805115876ef690c7
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
