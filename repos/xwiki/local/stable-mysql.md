@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59e11df748f34059c769bdbbac7c03cb97a0d4675b476290cb2a631ea2ceec28`
-- Created: `2018-10-30T06:31:45.419255724Z`
+- Image ID: `sha256:5779658701bdb471bcb91dc0ed9bc1a67b1602f64168eeaea97efef67aac4d21`
+- Created: `2018-10-31T01:17:10.694461128Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA512=131dfe23918f33fb24cefa7a03286c786304151f95f7bc0b6e34dfb6b0d1e65fe606e48b85c60c8a522938d1a01a36b540e69c94f36973321858e229731cda82`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz.asc`
-  - `XWIKI_VERSION=10.8.1`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.8.1`
-  - `XWIKI_DOWNLOAD_SHA256=ed9436b5704e8cd4bc399c017f2ef7cf32e8f18f4e75a4fcc52782d933e9893c`
+  - `XWIKI_VERSION=10.9`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/10.9`
+  - `XWIKI_DOWNLOAD_SHA256=100b60e4caf94bb653c50a8991d3deab9131c5631f0848e27637aa006c412aa7`
 
 ## `dpkg` (`.deb`-based packages)
 
