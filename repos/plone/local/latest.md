@@ -1,10 +1,10 @@
-# `plone:5.1.2`
+# `plone:5.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76ba2713a25fdb19d54986f5d567a56098a87889d80c8d629e0bb04d10b3de5a`
-- Created: `2018-09-05T17:44:41.834771646Z`
-- Virtual Size: ~ 514.51 Mb  
+- Image ID: `sha256:9a7f54112dfbff717d7ee8209cb24fb308d1158e07cd26d87c7dccc406fa94a6`
+- Created: `2018-10-31T00:32:00.275346079Z`
+- Virtual Size: ~ 548.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,13 +15,14 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=18.0`
+  - `PYTHON_PIP_VERSION=18.1`
   - `PIP=9.0.3`
-  - `ZC_BUILDOUT=2.11.2`
-  - `SETUPTOOLS=38.7.0`
+  - `ZC_BUILDOUT=2.11.4`
+  - `SETUPTOOLS=39.1.0`
+  - `WHEEL=0.31.1`
   - `PLONE_MAJOR=5.1`
-  - `PLONE_VERSION=5.1.2`
-  - `PLONE_MD5=e34790cea362b8db6a8ffe30854c6fc3`
+  - `PLONE_VERSION=5.1.4`
+  - `PLONE_MD5=ce3b87b1cb8ee30e577ae347d9bdd647`
 
 ## `dpkg` (`.deb`-based packages)
 

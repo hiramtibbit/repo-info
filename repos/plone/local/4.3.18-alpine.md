@@ -1,10 +1,10 @@
-# `plone:4.3.17-alpine`
+# `plone:4.3.18-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e50bb5e678a5ec46fcb3fe3fda9158f5a62fe2f4b02ce6ea83d3f2821e5e67e0`
-- Created: `2018-09-12T05:29:43.762705807Z`
-- Virtual Size: ~ 311.92 Mb  
+- Image ID: `sha256:8a6b1ee57eb662c19d4b9b41c81624d709cb86e6fc5e2c38c814fb31561c4e2d`
+- Created: `2018-10-31T01:02:54.103350379Z`
+- Virtual Size: ~ 363.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,10 +15,11 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=18.0`
+  - `PYTHON_PIP_VERSION=18.1`
   - `PIP=9.0.3`
-  - `ZC_BUILDOUT=2.11.2`
-  - `SETUPTOOLS=38.7.0`
+  - `ZC_BUILDOUT=2.11.4`
+  - `SETUPTOOLS=39.1.0`
+  - `WHEEL=0.31.1`
   - `PLONE_MAJOR=4.3`
-  - `PLONE_VERSION=4.3.17`
-  - `PLONE_MD5=4d9f175803c63301758f42dbf68f015a`
+  - `PLONE_VERSION=4.3.18`
+  - `PLONE_MD5=c9932e919254a2799b0e340b2ecbda9b`
