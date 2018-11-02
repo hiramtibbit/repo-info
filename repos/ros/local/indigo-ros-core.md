@@ -808,14 +808,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.17
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.dsc' curl_7.35.0-1ubuntu2.17.dsc 2739 SHA256:54178c3db89c2b52ad0ff8afa4a3503a8ef8615a31ae982b877c864a1161b3b2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.17.debian.tar.gz' curl_7.35.0-1ubuntu2.17.debian.tar.gz 76791 SHA256:1312988cb1f618b6b1b1b47c6f33a7c6b54a384520385c68584ee636ad65a3fe
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
