@@ -1,17 +1,17 @@
-# `maven:3.5.4-ibmjava-8`
+# `maven:3.6.0-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:edf0d346944fb1c5f4ebe9130fb7c5633fbcb6ec1c4467c1eb3db7f7cb8ca670`
-- Created: `2018-10-19T02:48:17.899017938Z`
-- Virtual Size: ~ 404.54 Mb  
+- Image ID: `sha256:26b20ac590ea0be5878ce0fda8158e8b91505d54655054a29f730ae8e4583958`
+- Created: `2018-11-02T22:28:05.311355125Z`
+- Virtual Size: ~ 404.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp22`
+  - `JAVA_VERSION=1.8.0_sr5fp25`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -289,12 +289,12 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.9`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.9`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.9`
+- `curl=7.47.0-1ubuntu2.11`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.11`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -308,10 +308,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.dsc' curl_7.47.0-1ubuntu2.9.dsc 2713 SHA256:c2a3f53e058b5acecc69158fd624559feabb7d336447fa701efd1c784fb27805
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.11
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.dsc' curl_7.47.0-1ubuntu2.11.dsc 2733 SHA256:2e4e6c43849f942de7a023485e6389a3a2de717f1b116c93262f65549fd1ef3b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.9.debian.tar.xz' curl_7.47.0-1ubuntu2.9.debian.tar.xz 52008 SHA256:2ab4a4d6d5b3796d663355d47f62da7b1e8d295ef4f9d43ea7fc56c3bc260dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.debian.tar.xz' curl_7.47.0-1ubuntu2.11.debian.tar.xz 53460 SHA256:4d730a08036b5ed2945f400e313007e7d4cad41c1df10e1a762ab38df87d5964
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
