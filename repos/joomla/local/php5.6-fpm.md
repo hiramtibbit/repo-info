@@ -1,10 +1,10 @@
-# `joomla:3.8.13-php5.6-fpm`
+# `joomla:3.9.0-php5.6-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:861fa55d28ba55f805d11e4655ae08d0aa49b0fc573cf9759161bdf076b9dc91`
-- Created: `2018-10-16T11:40:19.819246276Z`
-- Virtual Size: ~ 388.32 Mb  
+- Image ID: `sha256:ba418665149cdbd63893fda51266761202eb896c12f4471ff048dce5b315f046`
+- Created: `2018-11-01T20:27:33.506834962Z`
+- Virtual Size: ~ 389.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_SHA256=c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.8.13`
-  - `JOOMLA_SHA1=f769b1a7539f08a04dcbde5df6b82fd678254609`
+  - `JOOMLA_VERSION=3.9.0`
+  - `JOOMLA_SHA1=db67108d2dd3e65ae05cecbc57958a425f6f340f`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -418,20 +418,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u7
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.dsc' curl_7.52.1-5+deb9u7.dsc 2818 SHA256:e8f007d8d45d4d00ba5aa54223f46b8c240a72fb2c4e45d80a859124e3ef40d0
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.debian.tar.xz' curl_7.52.1-5+deb9u7.debian.tar.xz 40796 SHA256:dbe0d4258f0d91787be2197f175807a69a454c9463e7dec3539f168cc43d1b40
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
