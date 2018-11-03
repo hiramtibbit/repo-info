@@ -1888,6 +1888,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/239-10/
+
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
@@ -1901,6 +1905,10 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sysvinit/2.88dsf-59.10/
 
 
 ### `dpkg` source package: `tar=1.30+dfsg-2`
