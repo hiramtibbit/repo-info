@@ -1092,15 +1092,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18-2
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.18-2.dsc' gdbm_1.18-2.dsc 2575 SHA256:1df7c1b158de5cad39be16723bd50de50d4be002c3c66b3723de8bad70228565
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.18.orig.tar.gz' gdbm_1.18.orig.tar.gz 939352 SHA256:b8822cb4769e2d759c828c06f196614936c88c141c3132b18252fe25c2b635ce
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.18.orig.tar.gz.asc' gdbm_1.18.orig.tar.gz.asc 412 SHA256:b37ee909ad378df0c5e34e8c127d5b0ac8c8aae9a9c246ad33e8c213edd9a3d7
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.18-2.debian.tar.xz' gdbm_1.18-2.debian.tar.xz 27900 SHA256:6a10bf84d643a046daf8bcb47fa220f0cd1f58b53eb5dcf1fecf95e264b31498
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdbm/1.18-2/
+
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
 
@@ -3157,15 +3155,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1-1
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.1-1.dsc' openssl_1.1.1-1.dsc 2604 SHA256:bb36f5416905aaeb424a89556101ffad372287cfc21a64180141fde446d705e3
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.1-1.debian.tar.xz' openssl_1.1.1-1.debian.tar.xz 83052 SHA256:858f59d320b7fdbd127493a33809deeaad9d70dece56536b8814dc8d7ca188bd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl/1.1.1-1/
+
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
 
@@ -4086,14 +4082,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-6
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-6.dsc' tiff_4.0.9-6.dsc 2184 SHA256:9200f8f74e28e99b46bc083ad7a253d38e4dd0838fe0355c473c409610b8b14e
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-6.debian.tar.xz' tiff_4.0.9-6.debian.tar.xz 23684 SHA256:4e145dcde596e0c406a9f482680f9ddd09bed61a0dc6d3ac7e4c77c8ae2dd383
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.9-6/
+
 
 ### `dpkg` source package: `tk8.6=8.6.8-4`
 
