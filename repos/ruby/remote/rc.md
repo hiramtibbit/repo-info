@@ -1,7 +1,7 @@
 ## `ruby:rc`
 
 ```console
-$ docker pull ruby@sha256:7b1ccb8875dd366bc0486ab109ab33ed67b99d6a33cb7cbcb3d61b70738d1bd1
+$ docker pull ruby@sha256:3e552fed1f2dd4bfa953a313e157d0e2313b41e4fe562cc9bcbb839edda83821
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -275,14 +275,14 @@ CMD ["irb"]
 ### `ruby:rc` - linux; arm64 variant v8
 
 ```console
-$ docker pull ruby@sha256:4cf9882e847a38135340251397da9534f05239acae647f0064d5ae97b29fc19b
+$ docker pull ruby@sha256:f27b197fef2b7d82fe577abaf0b1ba4a8ec9d3e21b02b1cb93805d05b09d94ee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.2 MB (327207133 bytes)**  
+-	Total Size: **327.2 MB (327220800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da23fb4cbaf788d6dc8702f8d0d1ac26662dc45088246f9e7c62a17e05381a89`
+-	Image ID: `sha256:41d0993b7ad55480290e2812fb4fc5760aec98181e58c7bb77c4ba7f7e7a2445`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -306,21 +306,21 @@ ENV RUBY_MAJOR=2.6-rc
 ENV RUBY_VERSION=2.6.0-preview2
 # Tue, 16 Oct 2018 19:57:47 GMT
 ENV RUBY_DOWNLOAD_SHA256=00ddfb5e33dee24469dd0b203597f7ecee66522ebb496f620f5815372ea2d3ec
-# Tue, 16 Oct 2018 19:57:48 GMT
-ENV RUBYGEMS_VERSION=2.7.7
-# Tue, 30 Oct 2018 10:05:28 GMT
+# Sat, 03 Nov 2018 10:00:22 GMT
+ENV RUBYGEMS_VERSION=2.7.8
+# Sat, 03 Nov 2018 10:00:23 GMT
 ENV BUNDLER_VERSION=1.17.1
-# Tue, 30 Oct 2018 10:11:54 GMT
+# Sat, 03 Nov 2018 10:05:14 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force 	&& rm -r /root/.gem/
-# Tue, 30 Oct 2018 10:11:56 GMT
+# Sat, 03 Nov 2018 10:05:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 30 Oct 2018 10:11:57 GMT
+# Sat, 03 Nov 2018 10:05:16 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 30 Oct 2018 10:11:58 GMT
+# Sat, 03 Nov 2018 10:05:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Oct 2018 10:12:01 GMT
+# Sat, 03 Nov 2018 10:05:18 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Tue, 30 Oct 2018 10:12:01 GMT
+# Sat, 03 Nov 2018 10:05:19 GMT
 CMD ["irb"]
 ```
 
@@ -349,13 +349,13 @@ CMD ["irb"]
 		Last Modified: Tue, 16 Oct 2018 20:59:22 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641a615f66a84706cf5dd549c19ad4199dbbce3526f5dacce4a69be62f7978fa`  
-		Last Modified: Tue, 30 Oct 2018 12:47:52 GMT  
-		Size: 21.7 MB (21675795 bytes)  
+	-	`sha256:87e3bca465ff18b60524d8acb3b3d6c922db6b961b57cf67f81f06a452d1a15a`  
+		Last Modified: Sat, 03 Nov 2018 11:42:22 GMT  
+		Size: 21.7 MB (21689461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4351bf36adf7946d1d3b3c072ac2a03703a7359648b6165b6201636c4dfe0a75`  
-		Last Modified: Tue, 30 Oct 2018 12:47:46 GMT  
-		Size: 148.0 B  
+	-	`sha256:ca7f16974a5e3c85c729a90f636fb91696bc8555dcb642a4e8c7f39f7683b103`  
+		Last Modified: Sat, 03 Nov 2018 11:42:16 GMT  
+		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc` - linux; 386
