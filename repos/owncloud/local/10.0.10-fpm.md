@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3421d5abeb54c71a3e8a5797d79c5c745fd1d3d15a57dc91a2604f1e0e51b17c`
-- Created: `2018-10-16T14:05:03.682562244Z`
-- Virtual Size: ~ 599.71 Mb  
+- Image ID: `sha256:adf743d617863886b2016ca7cd508aeec795016595d876a5909d0639e0413d34`
+- Created: `2018-11-03T00:34:14.289946017Z`
+- Virtual Size: ~ 608.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.32`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.32.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.32.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=ff6f62afeb32c71b3b89ecbd42950ef6c5e0c329cc6e1c58ffac47e6f1f883c4`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
+  - `PHP_VERSION=7.2.11`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.11.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.11.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=da1a705c0bc46410e330fc6baa967666c8cd2985378fb9707c01a8e33b01d985`
   - `PHP_MD5=`
   - `OWNCLOUD_VERSION=10.0.10`
   - `OWNCLOUD_SHA256=a2efe484678c1659b9640ea247746a2174d77870d29c7d60abd565c20eb5aa84`
@@ -103,6 +103,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `argon2=0~20171227-0.1`
+
+Binary Packages:
+
+- `libargon2-1:amd64=0~20171227-0.1`
+
+Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
+
+- `Apache-2.0`
+- `CC0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris argon2=0~20171227-0.1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -401,13 +427,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u7`
+### `dpkg` source package: `curl=7.52.1-5+deb9u8`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u7`
-- `libcurl3:amd64=7.52.1-5+deb9u7`
-- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u7`
+- `curl=7.52.1-5+deb9u8`
+- `libcurl3:amd64=7.52.1-5+deb9u8`
+- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -421,17 +447,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u7
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.dsc' curl_7.52.1-5+deb9u7.dsc 2818 SHA256:e8f007d8d45d4d00ba5aa54223f46b8c240a72fb2c4e45d80a859124e3ef40d0
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u8
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u8.dsc' curl_7.52.1-5+deb9u8.dsc 2818 SHA256:0c2fa7a1b44066cb4998c4c02fbd3d29c268ddaa381ce489f7be6784cda6350d
 'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u7.debian.tar.xz' curl_7.52.1-5+deb9u7.debian.tar.xz 40796 SHA256:dbe0d4258f0d91787be2197f175807a69a454c9463e7dec3539f168cc43d1b40
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u8.debian.tar.xz' curl_7.52.1-5+deb9u8.debian.tar.xz 41348 SHA256:6f570876bf1a5fa492c850ecd811ab684af814d59375b151a52194db772a3e70
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1549,32 +1575,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libksba/1.3.5-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libksba/1.3.5-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libmcrypt=2.5.8-3.3`
-
-Binary Packages:
-
-- `libmcrypt-dev=2.5.8-3.3`
-- `libmcrypt4=2.5.8-3.3`
-
-Licenses: (parsed from: `/usr/share/doc/libmcrypt-dev/copyright`, `/usr/share/doc/libmcrypt4/copyright`)
-
-- `LGPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libmcrypt=2.5.8-3.3
-'http://deb.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8-3.3.dsc' libmcrypt_2.5.8-3.3.dsc 1926 SHA256:83ea31a37aa86161f980b68d392dc293ee2d65b0b61ddc38ea7a9969df39863a
-'http://deb.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8.orig.tar.gz' libmcrypt_2.5.8.orig.tar.gz 1335178 SHA256:e4eb6c074bbab168ac47b947c195ff8cef9d51a211cdd18ca9c9ef34d27a373e
-'http://deb.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8-3.3.diff.gz' libmcrypt_2.5.8-3.3.diff.gz 5469 SHA256:bb55c2d5c86ecd620be4cf2888b0b7a57217670d3e36738d491dc3d4a72fabc3
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libmcrypt/2.5.8-3.3/ (for browsing the source)
-- https://sources.debian.net/src/libmcrypt/2.5.8-3.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmcrypt/2.5.8-3.3/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libmemcached=1.0.18-4.1`
 
 Binary Packages:
@@ -1768,6 +1768,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsigsegv/2.10-5/ (for browsing the source)
 - https://sources.debian.net/src/libsigsegv/2.10-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsigsegv/2.10-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libsodium=1.0.11-2`
+
+Binary Packages:
+
+- `libsodium18:amd64=1.0.11-2`
+
+Licenses: (parsed from: `/usr/share/doc/libsodium18/copyright`)
+
+- `BSD-2-clause`
+- `CC0`
+- `GPL-2`
+- `GPL-2+`
+- `ISC`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libsodium=1.0.11-2
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.dsc' libsodium_1.0.11-2.dsc 1981 SHA256:c27e29c0d33b4b541ec209263f8537a74b435e43250970ce4baaa3a043340fac
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11.orig.tar.gz' libsodium_1.0.11.orig.tar.gz 1445598 SHA256:7ad3340938af851186318b09fe977e1bd48acc3f21068f3961afa42ed37a3a65
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.debian.tar.xz' libsodium_1.0.11-2.debian.tar.xz 6120 SHA256:36802b06c9b10b9bf413124418c1d5cbbfa9f35ee9d20641d9c4f8897d37d573
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libsodium/1.0.11-2/ (for browsing the source)
+- https://sources.debian.net/src/libsodium/1.0.11-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsodium/1.0.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
