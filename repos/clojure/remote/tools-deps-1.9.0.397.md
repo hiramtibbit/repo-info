@@ -1,4 +1,4 @@
-## `clojure:tools-deps`
+## `clojure:tools-deps-1.9.0.397`
 
 ```console
 $ docker pull clojure@sha256:d67a570ae4e7097f20f2fe21cd5ea99683543a3dec3fda6a233b881144fe6065
@@ -8,7 +8,7 @@ $ docker pull clojure@sha256:d67a570ae4e7097f20f2fe21cd5ea99683543a3dec3fda6a233
 -	Platforms:
 	-	linux; amd64
 
-### `clojure:tools-deps` - linux; amd64
+### `clojure:tools-deps-1.9.0.397` - linux; amd64
 
 ```console
 $ docker pull clojure@sha256:b56109048d116d68a39d62d76935a996381aa2a452194ac4cef438954678816c
