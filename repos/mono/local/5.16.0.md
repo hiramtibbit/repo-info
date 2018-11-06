@@ -3294,14 +3294,9 @@ Licenses: (parsed from: `/usr/share/doc/msbuild/copyright`, `/usr/share/doc/msbu
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris msbuild=1:15.8+xamarinxplat.2018.07.31.22.43-0xamarin5+debian8b1
-'http://download.mono-project.com/repo/debian/pool/main/m/msbuild/msbuild_15.8+xamarinxplat.2018.07.31.22.43-0xamarin5+debian8b1.dsc' msbuild_15.8+xamarinxplat.2018.07.31.22.43-0xamarin5+debian8b1.dsc 1307 SHA256:7fe037ff8313149645eff6f727463a1a2c63ca18a3add8612b634ffb8a2f0290
-'http://download.mono-project.com/repo/debian/pool/main/m/msbuild/msbuild_15.8+xamarinxplat.2018.07.31.22.43.orig.tar.xz' msbuild_15.8+xamarinxplat.2018.07.31.22.43.orig.tar.xz 9029288 SHA256:ab6b36d49de0501d216bdbced10dfdf7266e8cb529b0c9f82b56be2e9fc190d4
-'http://download.mono-project.com/repo/debian/pool/main/m/msbuild/msbuild_15.8+xamarinxplat.2018.07.31.22.43-0xamarin5+debian8b1.debian.tar.xz' msbuild_15.8+xamarinxplat.2018.07.31.22.43-0xamarin5+debian8b1.debian.tar.xz 9588 SHA256:1f7a98ae7136cefc1ec929e6274039a4768062300b316e6c92b9cd2fc68fca43
-```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u3`
 
