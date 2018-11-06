@@ -1,7 +1,7 @@
 ## `flink:hadoop26-alpine`
 
 ```console
-$ docker pull flink@sha256:ee49b1b5420fd12cbab7c0d9646840ece4dda3cf29bc0d7d79cf65cb2ba1d3d4
+$ docker pull flink@sha256:8d277b9e2d2bd636d1e3cbd58e48c0e3823116341eb5c0adc24642fbb7a3add6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -117,14 +117,14 @@ CMD ["help"]
 ### `flink:hadoop26-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull flink@sha256:920a508038ca62b2dac2af9c600307c33263363493c3d77c6929cc4c5f400b99
+$ docker pull flink@sha256:ad43955ce2b660d2ce1fa4aea5eae1532e15beb0fc5033f9562dc55fd8683eaf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.7 MB (353723925 bytes)**  
+-	Total Size: **353.7 MB (353723791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea9a8a98dae177f5ffec7d228145b28e7d9a2fd24b6a200059fbb22df7554033`
+-	Image ID: `sha256:7f1e4e2a1928859067d98cc74c9f63f5b07a4a1d70453af03eea8253c184800f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -167,15 +167,15 @@ ENV FLINK_URL_FILE_PATH=flink/flink-1.6.2/flink-1.6.2-bin-hadoop26-scala_2.11.tg
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.6.2/flink-1.6.2-bin-hadoop26-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.6.2/flink-1.6.2-bin-hadoop26-scala_2.11.tgz.asc
 # Wed, 31 Oct 2018 07:57:13 GMT
 COPY file:d9b980b40ddcfab2700a72e4088616452368e14c4f8fbee56f3258ac7f5dd913 in /KEYS 
-# Wed, 31 Oct 2018 07:58:43 GMT
-RUN set -ex;   apk add --no-cache --virtual .build-deps     ca-certificates     gnupg     openssl     tar   ;     wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     apk del .build-deps;     chown -R flink:flink .;
-# Wed, 31 Oct 2018 07:58:44 GMT
+# Tue, 06 Nov 2018 08:56:50 GMT
+RUN set -ex;   apk add --no-cache --virtual .build-deps     ca-certificates     gnupg     openssl     tar   ;     wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   gpgconf --kill all;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     apk del .build-deps;     chown -R flink:flink .;
+# Tue, 06 Nov 2018 08:56:52 GMT
 COPY file:15d049520a883d1b2d6ad6d561d06e3024278246670c49143dfdd98a0057a86a in / 
-# Wed, 31 Oct 2018 07:58:45 GMT
+# Tue, 06 Nov 2018 08:56:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 31 Oct 2018 07:58:45 GMT
+# Tue, 06 Nov 2018 08:56:52 GMT
 EXPOSE 6123/tcp 8081/tcp
-# Wed, 31 Oct 2018 07:58:45 GMT
+# Tue, 06 Nov 2018 08:56:53 GMT
 CMD ["help"]
 ```
 
@@ -212,13 +212,13 @@ CMD ["help"]
 		Last Modified: Wed, 31 Oct 2018 08:06:52 GMT  
 		Size: 59.3 KB (59338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95db06f9b17b206ce501e388cf02eb03ae4fb9d9aa3e0fda916ee3b959853c9a`  
-		Last Modified: Wed, 31 Oct 2018 08:07:26 GMT  
-		Size: 298.1 MB (298051443 bytes)  
+	-	`sha256:069f23f03d5e9e65efc92689ddbaa4e2379ca202f353d2f80cd40d0f6f4e0915`  
+		Last Modified: Tue, 06 Nov 2018 09:08:26 GMT  
+		Size: 298.1 MB (298051308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a247776d0fe802306377132ec6a55d69d06103b1599d80cf529a082ae6514f85`  
-		Last Modified: Wed, 31 Oct 2018 08:06:52 GMT  
-		Size: 1.1 KB (1100 bytes)  
+	-	`sha256:aeed5f6d45e0d3407d4ebb4c3f7563f711cbef18aa0093b6ba6cb3bd4f64398d`  
+		Last Modified: Tue, 06 Nov 2018 09:07:52 GMT  
+		Size: 1.1 KB (1101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:hadoop26-alpine` - linux; arm64 variant v8

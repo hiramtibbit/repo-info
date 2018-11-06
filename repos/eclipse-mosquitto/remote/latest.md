@@ -1,7 +1,7 @@
 ## `eclipse-mosquitto:latest`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:189c6e93e251c8a1bdac83a727ccb04d6a0c412f28a5602779fa7cf0642173d0
+$ docker pull eclipse-mosquitto@sha256:639be16e1b3fade45ea4c64a54c2e7c59fe6d543c01a15a649905ddbe2e58e7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -65,14 +65,14 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ### `eclipse-mosquitto:latest` - linux; arm variant v6
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:2c7038e70b82c0ac02082fb97c84cb7e8e90089955dd0e5009579a2bebc59411
+$ docker pull eclipse-mosquitto@sha256:24a5d2328dfda4384abc26edffdf9756986936a9b560e9bb53fd7f329ed420f7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2333450 bytes)**  
+-	Total Size: **2.3 MB (2346236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ae035f8c2715592e2de4772877c8fcc0a740847a1f035433e5924a435911ac9`
+-	Image ID: `sha256:d8124ab7423ea6d81efe6b49815e839c8c4a410e115c40d52d90f5c8b8e28268`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
@@ -87,15 +87,15 @@ CMD ["/bin/sh"]
 LABEL maintainer=Roger Light <roger@atchoo.org> description=Eclipse Mosquitto MQTT Broker
 # Tue, 30 Oct 2018 07:51:08 GMT
 ENV VERSION=1.5.3 DOWNLOAD_SHA256=3081a998d303a883b1cd064009beabc88aa9159e26f5258a4ae6007160491d10 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Tue, 30 Oct 2018 07:51:31 GMT
-RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build /etc/apk /lib/apk
-# Tue, 30 Oct 2018 07:51:31 GMT
+# Tue, 06 Nov 2018 08:49:43 GMT
+RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -s -m755 /build/src/mosquitto_passwd /usr/bin/mosquitto_passwd && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build
+# Tue, 06 Nov 2018 08:49:43 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Tue, 30 Oct 2018 07:51:32 GMT
+# Tue, 06 Nov 2018 08:49:44 GMT
 COPY file:539724540604f93d38fd4c30485a000e2aca8adc782ac6d761c0f752d6a3608c in / 
-# Tue, 30 Oct 2018 07:51:32 GMT
+# Tue, 06 Nov 2018 08:49:44 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Oct 2018 07:51:32 GMT
+# Tue, 06 Nov 2018 08:49:45 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
@@ -108,26 +108,26 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Last Modified: Wed, 12 Sep 2018 07:50:09 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dffd8233961a5d77fa67ddc30c790103f7907c3b805e470bc0febf9da74239e9`  
-		Last Modified: Tue, 30 Oct 2018 07:51:52 GMT  
-		Size: 186.7 KB (186679 bytes)  
+	-	`sha256:087dee7db23807b4c7c039410db96c8d5ac42c5416da100a6b8a557213fb5562`  
+		Last Modified: Tue, 06 Nov 2018 08:49:56 GMT  
+		Size: 199.5 KB (199463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1c8d657fb1d108bd6fe94c5bebdcb89cfb65e83c70129c636c42589bf2caa0f`  
-		Last Modified: Tue, 30 Oct 2018 07:51:53 GMT  
-		Size: 143.0 B  
+	-	`sha256:f4f723afd14697761d27ffdc7f36bf78b6253707c2e7f29716a0c15a5fe9c945`  
+		Last Modified: Tue, 06 Nov 2018 08:49:56 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-mosquitto:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:fdc5b8f564700c178ca5546259d3b24c86a7def2072ddec6496654abaa157445
+$ docker pull eclipse-mosquitto@sha256:6860f6597ab07bfbf2df3b97f862d5ed32c396d8b05542aeeba8c3b10cca3529
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2280566 bytes)**  
+-	Total Size: **2.3 MB (2293043 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00285f30296b4dd9c34a4bcdff8bc46e8e74a4abc08d012611f6a62047a25ad5`
+-	Image ID: `sha256:c08d92c7fc8131395a6895e9a33c3491e75204dd10720fbc6ad4b480fe40e17c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
@@ -142,15 +142,15 @@ CMD ["/bin/sh"]
 LABEL maintainer=Roger Light <roger@atchoo.org> description=Eclipse Mosquitto MQTT Broker
 # Tue, 30 Oct 2018 08:42:16 GMT
 ENV VERSION=1.5.3 DOWNLOAD_SHA256=3081a998d303a883b1cd064009beabc88aa9159e26f5258a4ae6007160491d10 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Tue, 30 Oct 2018 08:42:41 GMT
-RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build /etc/apk /lib/apk
-# Tue, 30 Oct 2018 08:42:46 GMT
+# Tue, 06 Nov 2018 09:40:14 GMT
+RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -s -m755 /build/src/mosquitto_passwd /usr/bin/mosquitto_passwd && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build
+# Tue, 06 Nov 2018 09:40:14 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Tue, 30 Oct 2018 08:42:47 GMT
+# Tue, 06 Nov 2018 09:40:15 GMT
 COPY file:539724540604f93d38fd4c30485a000e2aca8adc782ac6d761c0f752d6a3608c in / 
-# Tue, 30 Oct 2018 08:42:48 GMT
+# Tue, 06 Nov 2018 09:40:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Oct 2018 08:42:48 GMT
+# Tue, 06 Nov 2018 09:40:17 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
@@ -163,13 +163,13 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Last Modified: Wed, 12 Sep 2018 08:44:55 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dfbdb148d2dcb2ef75381b21dd428aa6d557126f9a20474128702b2d819c529`  
-		Last Modified: Tue, 30 Oct 2018 08:43:31 GMT  
-		Size: 180.5 KB (180483 bytes)  
+	-	`sha256:6f51e2805f3ad7cbf4a6362e9e44a5b379b24b86648864815d83bdffa5a9e6e7`  
+		Last Modified: Tue, 06 Nov 2018 09:40:45 GMT  
+		Size: 193.0 KB (192961 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15e80cf4a6499faca3a4c6baa2ef94b77913c6f4910da492d1430ead203cd2e8`  
-		Last Modified: Tue, 30 Oct 2018 08:43:29 GMT  
-		Size: 145.0 B  
+	-	`sha256:bb3151bfadf04cb38ca094e94b287c125e2fd9d9c08a4c50a537f25c84584cc0`  
+		Last Modified: Tue, 06 Nov 2018 09:40:45 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-mosquitto:latest` - linux; 386
@@ -230,14 +230,14 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ### `eclipse-mosquitto:latest` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:435ac197741d344039531b884d4928230e65eb22151b5880cd86d8f552a81251
+$ docker pull eclipse-mosquitto@sha256:f80ec504d4c7c52364bbf5154b0d94b64f310e77cdff6bef5b31dc4657e70a2c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2390791 bytes)**  
+-	Total Size: **2.4 MB (2404068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:693e45c00503d3f1e5a334ad6c544d142dd6968742b60014a498b45ac80412be`
+-	Image ID: `sha256:46a9c7ab642997e36dfc4717667858a8251fb27f47d58f7340ad308763bdce50`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
@@ -252,15 +252,15 @@ CMD ["/bin/sh"]
 LABEL maintainer=Roger Light <roger@atchoo.org> description=Eclipse Mosquitto MQTT Broker
 # Tue, 30 Oct 2018 08:43:26 GMT
 ENV VERSION=1.5.3 DOWNLOAD_SHA256=3081a998d303a883b1cd064009beabc88aa9159e26f5258a4ae6007160491d10 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Tue, 30 Oct 2018 08:43:55 GMT
-RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build /etc/apk /lib/apk
-# Tue, 30 Oct 2018 08:43:56 GMT
+# Tue, 06 Nov 2018 09:17:27 GMT
+RUN set -x && 	 apk --no-cache add --virtual build-deps       build-base 	  gnupg       libressl-dev       libwebsockets-dev       util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz && 	echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc && 	export GNUPGHOME="$(mktemp -d)" && 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $GPG_KEYS from $server"; 		gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1; 	gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz && 	gpgconf --kill all && 	rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc && 	mkdir -p /build && 	tar --strip=1 -xf /tmp/mosq.tar.gz -C /build && 	rm /tmp/mosq.tar.gz &&     make -C /build -j "$(nproc)"       WITH_ADNS=no 	  WITH_DOCS=no       WITH_MEMORY_TRACKING=no 	  WITH_SHARED_LIBRARIES=no       WITH_SRV=no 	  WITH_STRIP=yes       WITH_TLS_PSK=no       WITH_WEBSOCKETS=yes       prefix=/usr       binary && 	addgroup -S mosquitto 2>/dev/null &&     adduser -S -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && 	install -d /usr/sbin/ && 	install -s -m755 /build/src/mosquitto /usr/sbin/mosquitto && 	install -s -m755 /build/src/mosquitto_passwd /usr/bin/mosquitto_passwd && 	install -m644 /build/mosquitto.conf /mosquitto/config/mosquitto.conf &&     chown -R mosquitto:mosquitto /mosquitto && 	apk --no-cache add       libuuid       libwebsockets && 	apk del build-deps && 	rm -rf /build
+# Tue, 06 Nov 2018 09:17:28 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Tue, 30 Oct 2018 08:43:58 GMT
+# Tue, 06 Nov 2018 09:17:36 GMT
 COPY file:539724540604f93d38fd4c30485a000e2aca8adc782ac6d761c0f752d6a3608c in / 
-# Tue, 30 Oct 2018 08:44:00 GMT
+# Tue, 06 Nov 2018 09:17:38 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Oct 2018 08:44:02 GMT
+# Tue, 06 Nov 2018 09:17:39 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
@@ -273,12 +273,12 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Last Modified: Wed, 12 Sep 2018 08:19:44 GMT  
 		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d69b506a387ee279a85706c55d7a7732e986aa17bd0c93ba52bc1be8819ec5`  
-		Last Modified: Tue, 30 Oct 2018 08:47:42 GMT  
-		Size: 195.2 KB (195244 bytes)  
+	-	`sha256:f8929d3a2e0d38a95f48aba347193ca2ce4b750a5464fdff9a1256c38acbe2e6`  
+		Last Modified: Tue, 06 Nov 2018 09:18:01 GMT  
+		Size: 208.5 KB (208521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:703b00d7984888648dbd4f5bcecb8bcfba9070556c23f71999a6d00c5d084026`  
-		Last Modified: Tue, 30 Oct 2018 08:47:42 GMT  
+	-	`sha256:2840d805ae2d1931b1a9b1fed64d6b25cf0c16d6002a214ac05533439c13ce9f`  
+		Last Modified: Tue, 06 Nov 2018 09:18:01 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
