@@ -1,18 +1,18 @@
-# `aerospike:4.3.0.10`
+# `aerospike:4.3.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:993131d5f4127fb63a412acfb2c5b3ba78f30b745b8e625944c35c6f30eb5271`
-- Created: `2018-10-15T23:59:18.627795885Z`
-- Virtual Size: ~ 127.79 Mb  
+- Image ID: `sha256:e26f1da882f74e422b371fae34a3a06e17349f3c59318851e6c153ff94380ce6`
+- Created: `2018-11-02T22:20:39.747218051Z`
+- Virtual Size: ~ 128.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=4.3.0.10`
-  - `AEROSPIKE_SHA256=a1778c8efe29b93aaecf08f519448d8944f1cc02e473c940bf7627f6c909b7c2`
+  - `AEROSPIKE_VERSION=4.3.1.4`
+  - `AEROSPIKE_SHA256=0d21c9dfe05d7f55cbf30388203d5aa43f73137a36dcc8b71df77f0e9699a539`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -66,11 +66,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=4.3.0.10-1`
+### `dpkg` source package: `aerospike-server-community=4.3.1.4-1`
 
 Binary Packages:
 
-- `aerospike-server-community=4.3.0.10-1`
+- `aerospike-server-community=4.3.1.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -80,11 +80,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aerospike-tools=3.15.3.14`
+### `dpkg` source package: `aerospike-tools=3.15.3.18`
 
 Binary Packages:
 
-- `aerospike-tools=3.15.3.14`
+- `aerospike-tools=3.15.3.18`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
