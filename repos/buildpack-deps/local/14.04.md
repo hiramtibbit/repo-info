@@ -3937,14 +3937,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.10.dsc' openssh_6.6p1-2ubuntu2.10.dsc 2708 SHA256:8e65cd7f7001915ce9c3574a7218aa9d1d304ecff6d93132a24fffa39c8deecf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1.orig.tar.gz' openssh_6.6p1.orig.tar.gz 1282502 SHA256:48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.10.debian.tar.gz' openssh_6.6p1-2ubuntu2.10.debian.tar.gz 198960 SHA256:1b77259775baebdc0a74e0edc7b74d3ed5d781ed0a9040b46cca55f2bc4b6b73
-```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.26`
 
