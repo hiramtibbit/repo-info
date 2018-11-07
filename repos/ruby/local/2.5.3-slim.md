@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95a14f5599b3d4d3c469c3f704610726100d4fcd2a8d68508d8961fe23b26601`
-- Created: `2018-10-30T00:29:09.651374602Z`
-- Virtual Size: ~ 178.35 Mb  
+- Image ID: `sha256:1b8d0786af5e1fa61279ae272583b9cbfa757fb579a7fd7f225ec40116c5a7ff`
+- Created: `2018-11-03T01:01:42.273902134Z`
+- Virtual Size: ~ 178.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -13,7 +13,7 @@
   - `RUBY_MAJOR=2.5`
   - `RUBY_VERSION=2.5.3`
   - `RUBY_DOWNLOAD_SHA256=1cc9d0359a8ea35fc6111ec830d12e60168f3b9b305a3c2578357d360fcf306f`
-  - `RUBYGEMS_VERSION=2.7.7`
+  - `RUBYGEMS_VERSION=2.7.8`
   - `BUNDLER_VERSION=1.17.1`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
