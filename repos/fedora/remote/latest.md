@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:0f3853fc79f7f7a3d866170e7e013e5727c81537b7330d27c63a6902e0c6b58e
+$ docker pull fedora@sha256:ed3fc02cee5d13611fff40bf5155e1d136471190c7ec0a24e5dd0376ebede814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,28 +13,28 @@ $ docker pull fedora@sha256:0f3853fc79f7f7a3d866170e7e013e5727c81537b7330d27c63a
 ### `fedora:latest` - linux; amd64
 
 ```console
-$ docker pull fedora@sha256:6fb84ba634fe68572a2ac99741062695db24b921d0aa72e61ee669902f88c187
+$ docker pull fedora@sha256:f6d888e4caccb101aa540013d46089803f84f2b41b7ce70ef6b42e1ff4b33254
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86922341 bytes)**  
+-	Total Size: **87.3 MB (87276676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c582c1438f27b3775e2534abc82d14974ecb00c2c53161d05ec73a73d35e1235`
+-	Image ID: `sha256:8c568f1043264e34f0a8774587266565c7e5e54e9ea6b97ab459086d18ac5175`
 
 ```dockerfile
 # Fri, 07 Sep 2018 14:42:43 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Fri, 07 Sep 2018 14:43:36 GMT
-ENV DISTTAG=f28container FGC=f28 FBR=f28
-# Fri, 07 Sep 2018 19:20:02 GMT
-ADD file:5e89a07f1b4eb312eff1d2b0e61450c5ae26e8d8d179eb690735c4f150c65f00 in / 
+# Fri, 07 Sep 2018 14:43:55 GMT
+ENV DISTTAG=f29container FGC=f29 FBR=f29
+# Wed, 07 Nov 2018 00:23:59 GMT
+ADD file:111d462499323bf69c91b689bc0151a0691ce87a2bbc4b79fe3d8072c15d5bc0 in / 
 ```
 
 -	Layers:
-	-	`sha256:565884f490d9ec697e519c57d55d09e268542ef2c1340fd63262751fa308f047`  
-		Last Modified: Fri, 07 Sep 2018 19:21:18 GMT  
-		Size: 86.9 MB (86922341 bytes)  
+	-	`sha256:d0483bd5a55488f5ba6383a5cc8553d5101864f03acd07eabc5df7563c3692cf`  
+		Last Modified: Wed, 07 Nov 2018 00:26:36 GMT  
+		Size: 87.3 MB (87276676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; arm64 variant v8
