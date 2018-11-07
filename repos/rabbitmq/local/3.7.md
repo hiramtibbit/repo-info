@@ -599,20 +599,13 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 - `MIT`
 - `RSA`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris erlang=1:20.3.8.5+dfsg-1
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg-1.dsc' erlang_20.3.8.5+dfsg-1.dsc 5129 SHA256:a92734fff27a775467c8ab1337b450e0675636e9b838c185a498ba16aaf7e094
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg.orig.tar.xz' erlang_20.3.8.5+dfsg.orig.tar.xz 42901268 SHA256:97a1b071ae4d752b568346dc9209047fd4f21a8df5530030148dc759417e3e8d
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.3.8.5+dfsg-1.debian.tar.xz' erlang_20.3.8.5+dfsg-1.debian.tar.xz 59520 SHA256:1bb8b20a2b1b64c560f86441b37cd08956a8e838f0548a264517c028193f7f6f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/erlang/1:20.3.8.5+dfsg-1/
 
-- https://sources.debian.net/src/erlang/1:20.3.8.5+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/erlang/1:20.3.8.5+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/erlang/1:20.3.8.5+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
