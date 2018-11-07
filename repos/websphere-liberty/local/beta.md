@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad15828c43390cfd3867f42878a287728f06456f7e379aef77c2fb380c1044b6`
-- Created: `2018-10-26T23:28:00.587916842Z`
-- Virtual Size: ~ 556.83 Mb  
+- Image ID: `sha256:d93d7f8bfd908edfde10ecfd581a5300ee7406c68bc0753e9e648b6a43caa9ac`
+- Created: `2018-11-02T23:13:23.018796289Z`
+- Virtual Size: ~ 556.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp22`
+  - `JAVA_VERSION=1.8.0_sr5fp25`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `LIBERTY_VERSION=2018.10.0_0`
@@ -648,9 +648,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
 ```
 
 ### `dpkg` source package: `libcap2=1:2.24-12`

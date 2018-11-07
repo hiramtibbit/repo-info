@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cfaabaee0f355352d0a51a393f76f69cdbe2f1da8be678f3862787839ce281c3`
-- Created: `2018-10-26T23:32:23.500036082Z`
-- Virtual Size: ~ 446.68 Mb  
+- Image ID: `sha256:529a949c3cf53bf1c49e42a1b41ab5764ff8503891fcc5e71bf7dafe85ae7a1c`
+- Created: `2018-11-02T23:25:59.823147642Z`
+- Virtual Size: ~ 446.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/docker/docker-server"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp22`
+  - `JAVA_VERSION=1.8.0_sr5fp25`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `LIBERTY_VERSION=18.0.0_03`
@@ -650,9 +650,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
 ```
 
 ### `dpkg` source package: `libcap2=1:2.24-12`
