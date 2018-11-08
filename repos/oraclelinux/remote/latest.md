@@ -1,66 +1,37 @@
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull oraclelinux@sha256:aacb3ca22fa4089375be9b44b1cd9638fb3521695919f5a64cc833217e8c2c21
+$ docker pull oraclelinux@sha256:d00a45664f89b5e8791fd1a9483486dd33ad61ddf5259909f650ac2b450e0f1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
 ### `oraclelinux:latest` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:2164f73fbcc7b562c871d29107592c4699fa01c8d13a7b0ea8622d4bba50e0ea
+$ docker pull oraclelinux@sha256:f98256125702c513943c6eaf5360e3af2d7d0d7f8b45a0fa214181024e48b93d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.0 MB (86033403 bytes)**  
+-	Total Size: **86.7 MB (86688668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fbf7d1c04feccd465f9cc4295bb0172bc939952ec22c24f36de39fea43be6ae`
+-	Image ID: `sha256:70927e8bd213a0e449eb714e357c56214d34a03661e91611ecc7d7a36d081adc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 30 Aug 2018 21:49:27 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Tue, 16 Oct 2018 21:37:45 GMT
-ADD file:0d0f38cc04632fa054d6617a1ec7f9ef8d2d38f5d1431fe4d2b8d919cfa35a35 in / 
-# Tue, 16 Oct 2018 21:37:46 GMT
+# Thu, 08 Nov 2018 02:20:23 GMT
+ADD file:f8b9477d956061bddf47f75dfbc4172f35ba359dfdfa8ab9b4cd578710777e9b in / 
+# Thu, 08 Nov 2018 02:20:23 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:26917481f5f3d902bef3a14e3ac51c9099889ac5753c24c313f100971a87dadd`  
-		Last Modified: Tue, 16 Oct 2018 21:40:40 GMT  
-		Size: 86.0 MB (86033403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `oraclelinux:latest` - linux; arm64 variant v8
-
-```console
-$ docker pull oraclelinux@sha256:e35f0204c9f85cd185d841678eceb04c3d7ea0ccda44b8ce61afcb29a75c76ff
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86453194 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6843546293eb617343b72cd445a4bf01ae99b16f290753b564b334b789046af3`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Wed, 21 Mar 2018 16:42:26 GMT
-MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Sat, 29 Sep 2018 08:54:10 GMT
-ADD file:d9dabf5df5bd6551a5ef9f7f48aaf4d157c735291b2c4b6dee4af531fa3e0373 in / 
-# Sat, 29 Sep 2018 08:54:13 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:aaaf20c40ff95e608866ebabd58cdd97371ff1a679cb1fd7e02b2b89a81943f7`  
-		Last Modified: Sat, 29 Sep 2018 08:55:39 GMT  
-		Size: 86.5 MB (86453194 bytes)  
+	-	`sha256:9b7bbe25a4d5a4f9030cf80d49ebafea53cbb5aa5283bfd4958f7bdd4a0d0181`  
+		Last Modified: Thu, 08 Nov 2018 02:22:18 GMT  
+		Size: 86.7 MB (86688668 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
