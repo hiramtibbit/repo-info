@@ -1063,19 +1063,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.179
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.179.dsc' gcc-defaults_1.179.dsc 15518 SHA256:617dd4b49e00cf2322bcdaabcfe893b68e96ec32acaa278880a53b73c8394e54
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.179.tar.gz' gcc-defaults_1.179.tar.gz 72119 SHA256:8913c208c5390ee8bf1e4997d4d1036550cf804c1bdd779c376263f6343ca5f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.179/
 
-- https://sources.debian.net/src/gcc-defaults/1.179/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.179/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.179/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.18-2`
 
@@ -2849,20 +2843,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-24-1
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-24-1.dsc' mgcv_1.8-24-1.dsc 1827 SHA256:54de4a54f847eba5c020838c267444fad91ba74947ab26ff5f2881384f6f3f89
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-24.orig.tar.gz' mgcv_1.8-24.orig.tar.gz 876098 SHA256:2ce542bcf841f722f34b936d44d859a53718a9de18ea24eb6ae843e042356795
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-24-1.debian.tar.xz' mgcv_1.8-24-1.debian.tar.xz 5128 SHA256:f7cf1e2ac5ec636c5de277526fa1fa9887ae7cfaab8ac394f8698ea426bee3d4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mgcv/1.8-24-1/
 
-- https://sources.debian.net/src/mgcv/1.8-24-1/ (for browsing the source)
-- https://sources.debian.net/src/mgcv/1.8-24-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mgcv/1.8-24-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 
@@ -3938,20 +3925,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=2.42-6-1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6-1.dsc' survival_2.42-6-1.dsc 1862 SHA256:25c5d02467fc0a0f387eb35921d723e2ce3f122cc4e1a9f0abb7d6637c114e64
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6.orig.tar.gz' survival_2.42-6.orig.tar.gz 4138981 SHA256:e33c44ee95961ff3c1bd1afe040d3059c143a72387d8e47fdbeba61c9d605daf
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.42-6-1.debian.tar.xz' survival_2.42-6-1.debian.tar.xz 5844 SHA256:d5812a7b6a290a242cee0ec0a64071f0c60616dc4e0a7154df7d14dcdecae0f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/survival/2.42-6-1/
 
-- https://sources.debian.net/src/survival/2.42-6-1/ (for browsing the source)
-- https://sources.debian.net/src/survival/2.42-6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/survival/2.42-6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-10`
 
