@@ -1,9 +1,9 @@
-# `swift:4.2`
+# `swift:4.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f36243ca591d215c41ad868a8354525581eaf71f77a67902527ecaca443b9010`
-- Created: `2018-10-19T02:39:22.451516Z`
+- Image ID: `sha256:2f707d99706cbffdd61fdc9d618b94bc1922571275e77a0fdcc7897ddd046434`
+- Created: `2018-11-08T23:37:46.548817727Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_PLATFORM=ubuntu16.04`
-  - `SWIFT_BRANCH=swift-4.2-release`
-  - `SWIFT_VERSION=swift-4.2-RELEASE`
+  - `SWIFT_BRANCH=swift-4.2.1-release`
+  - `SWIFT_VERSION=swift-4.2.1-RELEASE`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1177,9 +1177,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
 ```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
@@ -2195,14 +2195,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.5.dsc' openssh_7.2p2-4ubuntu2.5.dsc 2957 SHA256:379d860bfde8a37b06cc12c1de3395d6aa559359d20d1fc8049c949c851ae003
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.5.debian.tar.xz' openssh_7.2p2-4ubuntu2.5.debian.tar.xz 165460 SHA256:23dcada063437d20400cbd19f478616fa19097c1dc2f917c78cfb755174c8d0b
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
 
