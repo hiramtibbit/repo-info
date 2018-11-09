@@ -13,8 +13,8 @@
 -	[`chronograf:1.6.2-alpine`](#chronograf162-alpine)
 -	[`chronograf:1.6-alpine`](#chronograf16-alpine)
 -	[`chronograf:1.7`](#chronograf17)
--	[`chronograf:1.7.1`](#chronograf171)
--	[`chronograf:1.7.1-alpine`](#chronograf171-alpine)
+-	[`chronograf:1.7.2`](#chronograf172)
+-	[`chronograf:1.7.2-alpine`](#chronograf172-alpine)
 -	[`chronograf:1.7-alpine`](#chronograf17-alpine)
 -	[`chronograf:alpine`](#chronografalpine)
 -	[`chronograf:latest`](#chronograflatest)
@@ -1503,11 +1503,11 @@ CMD ["chronograf"]
 
 **does not exist** (yet?)
 
-## `chronograf:1.7.1`
+## `chronograf:1.7.2`
 
 **does not exist** (yet?)
 
-## `chronograf:1.7.1-alpine`
+## `chronograf:1.7.2-alpine`
 
 **does not exist** (yet?)
 
