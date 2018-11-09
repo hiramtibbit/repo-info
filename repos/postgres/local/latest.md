@@ -2506,14 +2506,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11.0-1.pgdg90+2
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0-1.pgdg90+2.dsc' postgresql-11_11.0-1.pgdg90+2.dsc 2667 SHA256:0d1c28930e7911b53b1c242ee099ab8d2abcd8235f1d22bfb05e5777e1b1e53e
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0.orig.tar.bz2' postgresql-11_11.0.orig.tar.bz2 21206820 SHA256:bf9bba03d0c3902c188af12e454b35343c4a9bf9e377ec2fe50132efb44ef36b
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.0-1.pgdg90+2.debian.tar.xz' postgresql-11_11.0-1.pgdg90+2.debian.tar.xz 19868 SHA256:a812d43b18b0dd218d4e0c648abae6544b3d91276ebe06f1af0a8df4c45fa6b5
-```
 
 ### `dpkg` source package: `postgresql-common=195.pgdg90+1`
 
