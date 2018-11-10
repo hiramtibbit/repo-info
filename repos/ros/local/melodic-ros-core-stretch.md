@@ -4422,14 +4422,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.9-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9-1.dsc' python-rosdistro-modules_0.6.9-1.dsc 982 SHA256:6db2bb4f2410fd05be3323ee3bad2df21bfb576c7f4879207650f3e74dabd056
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9.orig.tar.gz' python-rosdistro-modules_0.6.9.orig.tar.gz 40210 SHA256:8e1ccc8f19cb8f424f51ce56e55cb53f2dabee352160b53fe2718c99c1709fc2
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.9-1.debian.tar.xz' python-rosdistro-modules_0.6.9-1.debian.tar.xz 1972 SHA256:e4b3c5824c24344a36be382d9b9354039007b1a099d99af0010a6b3c4f767a78
-```
 
 ### `dpkg` source package: `python-rosdistro=0.6.9-100`
 
@@ -4441,14 +4436,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.6.9-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9-100.dsc' python-rosdistro_0.6.9-100.dsc 919 SHA256:f5ee3f41857f66b04d852c8c1d4cd05cd9ae733361c870813aedc44afaf45f50
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9.orig.tar.gz' python-rosdistro_0.6.9.orig.tar.gz 9640 SHA256:91dcb77d7ca7bb304d57340e09e6b2fd02853fee64ccbbb06e7b333e14ebceae
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.9-100.debian.tar.xz' python-rosdistro_0.6.9-100.debian.tar.xz 1960 SHA256:cf11300753079cd8013779d7b71782091e50356dfc5c28b1c220460145cd69fe
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
