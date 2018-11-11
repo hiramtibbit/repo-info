@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ddad511732be49c6211a6af1443edc70935dcd4ffc6f248f1ab93a48034c5c4`
-- Created: `2018-11-01T20:31:37.640027616Z`
-- Virtual Size: ~ 411.98 Mb  
+- Image ID: `sha256:8b03dce28183fd971f40316a26f3f1cd6cfae5f25c861e4cea22793b462f2f07`
+- Created: `2018-11-10T02:18:55.582320452Z`
+- Virtual Size: ~ 412.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.11`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.11.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.11.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=da1a705c0bc46410e330fc6baa967666c8cd2985378fb9707c01a8e33b01d985`
+  - `PHP_VERSION=7.2.12`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.12.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=989c04cc879ee71a5e1131db867f3c5102f1f7565f805e2bb8bde33f93147fe1`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.0`
@@ -236,19 +236,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u5.dsc' base-files_9.9+deb9u5.dsc 1095 SHA256:a2d4055dd4f8e06e605a2c457432f2a893836120d8344a634507005192f110e0
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u5.tar.xz' base-files_9.9+deb9u5.tar.xz 62980 SHA256:1ef6e319122c0ef5eaaf49f03401f580c159df9ac8921483d43b8583abea4eb2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u5/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u5/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -428,12 +422,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u7`
+### `dpkg` source package: `curl=7.52.1-5+deb9u8`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u7`
-- `libcurl3:amd64=7.52.1-5+deb9u7`
+- `curl=7.52.1-5+deb9u8`
+- `libcurl3:amd64=7.52.1-5+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -444,13 +438,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u8
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u8.dsc' curl_7.52.1-5+deb9u8.dsc 2818 SHA256:0c2fa7a1b44066cb4998c4c02fbd3d29c268ddaa381ce489f7be6784cda6350d
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u8.debian.tar.xz' curl_7.52.1-5+deb9u8.debian.tar.xz 41348 SHA256:6f570876bf1a5fa492c850ecd811ab684af814d59375b151a52194db772a3e70
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -949,9 +950,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u2
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.dsc' gnupg2_2.1.18-8~deb9u2.dsc 3312 SHA256:982324405af58350579609b15f18561375efdff7e442a5d25e1f64f2111cbfef
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.1.18-8~deb9u2.debian.tar.bz2' gnupg2_2.1.18-8~deb9u2.debian.tar.bz2 101922 SHA256:449b7e96ce4fb11a78ecaefefdb0ab067d86da3b414b21045090554c58ea6734
 ```
 
 Other potentially useful URLs:
@@ -978,21 +979,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-5+deb9u3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5+deb9u3.dsc' gnutls28_3.5.8-5+deb9u3.dsc 3286 SHA256:1e5c25f95b60f8320ec34dcaa0cd91fb0738ee51398ed885f56f8265acc21112
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5+deb9u3.debian.tar.xz' gnutls28_3.5.8-5+deb9u3.debian.tar.xz 108300 SHA256:73c4ac104115bee72e4acf253eac01306426d3687d7a883acf0265cdd3eac12f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/
 
-- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -2395,9 +2388,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.6=9.6.10-0+deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
 ```
 
 Other potentially useful URLs:
@@ -2625,21 +2618,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018e-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb9u1.dsc' tzdata_2018e-0+deb9u1.dsc 2270 SHA256:279e0bcb363ba5d1eeed277f1f90f53d9bb9f51c908257c768fda8ac86ddc065
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz.asc' tzdata_2018e.orig.tar.gz.asc 819 SHA256:46812e7b7761bf4cbee7449a500cb0fba46912f99f6725b9437ab2f226e64753
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb9u1.debian.tar.xz' tzdata_2018e-0+deb9u1.debian.tar.xz 101308 SHA256:db1d7c48f714d34a04e7cbcd17d2a9f7007e284049e5b8dd3950fb698e6a97a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018e-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2018e-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
