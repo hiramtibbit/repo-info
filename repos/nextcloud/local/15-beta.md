@@ -1,10 +1,10 @@
-# `nextcloud:12.0.12-apache`
+# `nextcloud:15.0.0beta1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34c52865db3d609accb1cc2f0c88cccbbb8feddfa41718ac0129f3c8d7413316`
-- Created: `2018-10-16T21:19:57.511620267Z`
-- Virtual Size: ~ 548.16 Mb  
+- Image ID: `sha256:dc372e5a7c1c2d39bf7450edc3caeae67731358de67ae3337ddb9762a446ec36`
+- Created: `2018-11-10T01:53:28.064589493Z`
+- Virtual Size: ~ 568.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -20,13 +20,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
-  - `PHP_VERSION=7.1.23`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.23.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.23.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=227a3c76133c3dc1cec937989456cbd89ed00e68e7260c651900dbe1f5b798bc`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
+  - `PHP_VERSION=7.2.12`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.12.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=989c04cc879ee71a5e1131db867f3c5102f1f7565f805e2bb8bde33f93147fe1`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=12.0.12`
+  - `NEXTCLOUD_VERSION=15.0.0beta1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -192,6 +192,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `argon2=0~20171227-0.1`
+
+Binary Packages:
+
+- `libargon2-1:amd64=0~20171227-0.1`
+
+Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
+
+- `Apache-2.0`
+- `CC0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris argon2=0~20171227-0.1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -509,12 +535,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u7`
+### `dpkg` source package: `curl=7.52.1-5+deb9u8`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u7`
-- `libcurl3:amd64=7.52.1-5+deb9u7`
+- `curl=7.52.1-5+deb9u8`
+- `libcurl3:amd64=7.52.1-5+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -525,13 +551,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u8
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u8.dsc' curl_7.52.1-5+deb9u8.dsc 2818 SHA256:0c2fa7a1b44066cb4998c4c02fbd3d29c268ddaa381ce489f7be6784cda6350d
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5+deb9u8.debian.tar.xz' curl_7.52.1-5+deb9u8.debian.tar.xz 41348 SHA256:6f570876bf1a5fa492c850ecd811ab684af814d59375b151a52194db772a3e70
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1786,6 +1819,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsigsegv/2.10-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsigsegv/2.10-5/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libsodium=1.0.11-2`
+
+Binary Packages:
+
+- `libsodium18:amd64=1.0.11-2`
+
+Licenses: (parsed from: `/usr/share/doc/libsodium18/copyright`)
+
+- `BSD-2-clause`
+- `CC0`
+- `GPL-2`
+- `GPL-2+`
+- `ISC`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libsodium=1.0.11-2
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.dsc' libsodium_1.0.11-2.dsc 1981 SHA256:c27e29c0d33b4b541ec209263f8537a74b435e43250970ce4baaa3a043340fac
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11.orig.tar.gz' libsodium_1.0.11.orig.tar.gz 1445598 SHA256:7ad3340938af851186318b09fe977e1bd48acc3f21068f3961afa42ed37a3a65
+'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.11-2.debian.tar.xz' libsodium_1.0.11-2.debian.tar.xz 6120 SHA256:36802b06c9b10b9bf413124418c1d5cbbfa9f35ee9d20641d9c4f8897d37d573
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libsodium/1.0.11-2/ (for browsing the source)
+- https://sources.debian.net/src/libsodium/1.0.11-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsodium/1.0.11-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
 Binary Packages:
@@ -2809,13 +2873,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=232-25+deb9u4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.dsc' systemd_232-25+deb9u4.dsc 4797 SHA256:88aff99e39acdf56fec518f994557c2f7e97b900f231ddcafa26d806998ec2d3
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.debian.tar.xz' systemd_232-25+deb9u4.debian.tar.xz 209400 SHA256:1687f3b629a6fc21462e04ff0da3f5fe68b81298f6ec0a795246cf3e284baaf8
+```
 
-- http://snapshot.debian.org/package/systemd/232-25+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/232-25+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
