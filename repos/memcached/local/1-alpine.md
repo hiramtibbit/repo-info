@@ -1,9 +1,9 @@
-# `memcached:1.5.11-alpine`
+# `memcached:1.5.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:01e7979fa1754aef988542f456754cb4441dc8dc15599cf58f2489f43cbb652e`
-- Created: `2018-10-12T18:36:16.930996365Z`
+- Image ID: `sha256:f6d1c1d203fd5b09c9ea039caaf35eab3e9bf212a0b6afa7eef28c5d9d9e4048`
+- Created: `2018-11-09T22:48:04.103554521Z`
 - Virtual Size: ~ 8.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,5 +11,5 @@
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.5.11`
-  - `MEMCACHED_SHA1=59b800337ae4bb164b85a5779fa5b72d5f9af66c`
+  - `MEMCACHED_VERSION=1.5.12`
+  - `MEMCACHED_SHA1=f67096ba64b0c47668bcad5b680010c4f8987d4c`
