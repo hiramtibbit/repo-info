@@ -1,9 +1,9 @@
-# `docker:18.09.0-rc1-git`
+# `docker:18.09.0-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:800cf66a6c54b393e18c9b455d04bb706c1fee372e472334f6df4565886e67e3`
-- Created: `2018-11-03T00:20:21.008940861Z`
+- Image ID: `sha256:df527949de43895f96502b959dd12469f4c43e487cdfa22321c1b372794d99f8`
+- Created: `2018-11-09T22:21:02.472594068Z`
 - Virtual Size: ~ 183.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,5 +11,5 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=18.09.0-rc1`
+  - `DOCKER_CHANNEL=stable`
+  - `DOCKER_VERSION=18.09.0`
