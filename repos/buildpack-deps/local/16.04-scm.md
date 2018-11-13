@@ -1737,14 +1737,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.dsc' python2.7_2.7.12-1ubuntu0~16.04.3.dsc 3379 SHA256:a4784c90f5036a12c145f6f7690c12c187866f2c9ae0263cd3527dc916a98e84
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz 281711 SHA256:85bc19c1f058792ff0fe7abfc0362b76b6abcbdaca890e0745d25e5f25184bf7
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 

@@ -2444,14 +2444,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `This software is provided as-is, without express`
 - `implied`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.6-8ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.4.dsc' python2.7_2.7.6-8ubuntu0.4.dsc 3215 SHA256:8d46a5e66b75ef11f6d37ce114b5487c2fbbd986262d40aa8c146a5d82b545ab
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6.orig.tar.gz' python2.7_2.7.6.orig.tar.gz 14823209 SHA256:b6eeafea7ffaa8c25e2169ba5f5f66bedfa504a51cf62ae7df58a424c3f3fc02
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.4.diff.gz' python2.7_2.7.6-8ubuntu0.4.diff.gz 635936 SHA256:4d837d395293673c347157816a1fd58bc66c629a0d72ccaca0958635303fe4b5
-```
 
 ### `dpkg` source package: `python3-defaults=3.4.0-0ubuntu2`
 
@@ -2502,14 +2497,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.6.dsc' python3.4_3.4.3-1ubuntu1~14.04.6.dsc 3227 SHA256:d43df67f82e8802c0366bf2ab2ce36a3f47378e331f4d1c52c95077df6b2d0c7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.6.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.6.debian.tar.gz 262498 SHA256:4ef319faaf7619bc2e3953e048b30819549f3f937b59ba9eef29c72ecb681775
-```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
