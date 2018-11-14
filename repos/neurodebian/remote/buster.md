@@ -1,7 +1,7 @@
 ## `neurodebian:buster`
 
 ```console
-$ docker pull neurodebian@sha256:b8ad3d70b54e04e3f78045fd6e0225d70e7796b28945fb55490798fd4dfeef54
+$ docker pull neurodebian@sha256:449f139eb21802686c509bfc45f0b5884f72dfd96cebecc288693a85e0096513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neurodebian@sha256:b8ad3d70b54e04e3f78045fd6e0225d70e7796b28945fb5
 ### `neurodebian:buster` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:fb094707e1a2416446a36ba72d4a4c1700af193b6173528ebe06581b16b5e59d
+$ docker pull neurodebian@sha256:c414c3c8d899c8a50c64a9aad0be9a8008c55218b4bd3e7d1ceae53efd4d3fdf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.9 MB (60862761 bytes)**  
+-	Total Size: **61.2 MB (61165264 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2ec8ac74edc8c04e1cc2b303f724aa9cf918485a78ec9148a5c1575827c5d8a`
+-	Image ID: `sha256:deac76b3ab2f71ab9f41bed56bc7cf1465eef935c7c87b97a7e601b0d95eace2`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -32,6 +32,8 @@ RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-ins
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
 # Tue, 16 Oct 2018 06:55:50 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian buster main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel buster main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
+# Wed, 14 Nov 2018 02:26:26 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -50,4 +52,8 @@ RUN { 	echo 'deb http://neuro.debian.net/debian buster main'; 	echo 'deb http://
 	-	`sha256:97ffd812786dab00a8e8f5eb8ae42251a418ebc7f08890574366b69460f00a9b`  
 		Last Modified: Tue, 16 Oct 2018 06:59:03 GMT  
 		Size: 245.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1ddc0828919f141748921b7628f0e92f3d45840509fc9cba9db852dfd76f914`  
+		Last Modified: Wed, 14 Nov 2018 02:32:35 GMT  
+		Size: 302.5 KB (302503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

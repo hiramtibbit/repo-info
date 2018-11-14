@@ -1,7 +1,7 @@
 ## `neurodebian:sid`
 
 ```console
-$ docker pull neurodebian@sha256:d1a48586219f296545ffdeece95799e09237990c06a50ba27e6c29ba39940300
+$ docker pull neurodebian@sha256:9e52e2ebbcdd474fc70d13797e18fbfe4312caf29494f456fa634487622c9076
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neurodebian@sha256:d1a48586219f296545ffdeece95799e09237990c06a50ba
 ### `neurodebian:sid` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:f116ac33ac6c72528e11b49d87e6e34304b237e6286ebfceca9aa5cca15a02c2
+$ docker pull neurodebian@sha256:7a75806682ff88d50b9719b9cee6970798d9ef1529cae376d5dcd16e92312a1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.2 MB (60238733 bytes)**  
+-	Total Size: **60.5 MB (60539527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57dea3675d4d9f1f31657d42f15c958cd65649de0265bc7758562844fa2dec22`
+-	Image ID: `sha256:2f13f81ca6e5926d50b20a61e72dce892cc7a1dc25b751b7f178e178283769a1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -32,6 +32,8 @@ RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-ins
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
 # Tue, 16 Oct 2018 06:56:19 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian sid main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel sid main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
+# Wed, 14 Nov 2018 02:27:01 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -50,4 +52,8 @@ RUN { 	echo 'deb http://neuro.debian.net/debian sid main'; 	echo 'deb http://neu
 	-	`sha256:ef346786d76feba0f372b7f4eb10cbe39a6d6edd42791973a38ba97f859ef192`  
 		Last Modified: Tue, 16 Oct 2018 06:59:44 GMT  
 		Size: 244.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f83d73ea2656fd98ef904db5a8b520a97d902fe6e38360e35a641085e56d1211`  
+		Last Modified: Wed, 14 Nov 2018 02:33:29 GMT  
+		Size: 300.8 KB (300794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

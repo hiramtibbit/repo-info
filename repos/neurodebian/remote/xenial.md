@@ -1,7 +1,7 @@
 ## `neurodebian:xenial`
 
 ```console
-$ docker pull neurodebian@sha256:15e2f6ba8388cf1ea5a5558a732567d066b16973f628a8f6d66e4922599c49e6
+$ docker pull neurodebian@sha256:5037ab6ac861f5001132c9e47c9a4cbdaefb69f2e79baab2714c366082e93b3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neurodebian@sha256:15e2f6ba8388cf1ea5a5558a732567d066b16973f628a8f
 ### `neurodebian:xenial` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:8d0e53d7c496879cc678c521b7ce464eb8064985f32f92b27d3975c391c33f56
+$ docker pull neurodebian@sha256:1e39c8c22fc73225444ed40e162f4948323f24f20840fa24a131379b4f3da5c7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.4 MB (43358059 bytes)**  
+-	Total Size: **43.6 MB (43581354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b190258509982dd77829a54b99ea1c7258eeb5deb03772061bef7c3a488cc55`
+-	Image ID: `sha256:6de28e772e3db522de89fcabf70869f68d04ffe4fc2b3c8f37a48a73dede6d9d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -38,6 +38,8 @@ RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-ins
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
 # Fri, 19 Oct 2018 02:31:55 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
+# Wed, 14 Nov 2018 02:21:50 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -68,4 +70,8 @@ RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://
 	-	`sha256:c3aa6254bd1a0993ed3520ab432374efe4ef6ccbdc8c68fb1a0f1c196bd1030a`  
 		Last Modified: Fri, 19 Oct 2018 02:34:53 GMT  
 		Size: 246.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:85827c406d09e78fdaac9bdf7b2b6f4eb65633eacb9b4cc94c05cc8101505ee7`  
+		Last Modified: Wed, 14 Nov 2018 02:28:31 GMT  
+		Size: 223.3 KB (223295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
