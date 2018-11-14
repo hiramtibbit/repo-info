@@ -874,14 +874,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.13.1-1
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.13.1-1.dsc' fontconfig_2.13.1-1.dsc 2479 SHA256:2657b352e74710fef230764fdd390955d10a55c1208c8228704cbccea92746f7
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.13.1.orig.tar.bz2' fontconfig_2.13.1.orig.tar.bz2 1723639 SHA256:f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.13.1-1.debian.tar.xz' fontconfig_2.13.1-1.debian.tar.xz 52104 SHA256:36965c7b70f7694453c88cffa5058dd5546dd84097e582532d650bfd046d2291
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fontconfig/2.13.1-1/
+
 
 ### `dpkg` source package: `fonts-dejavu=2.37-1`
 
@@ -1735,16 +1734,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lattice=0.20-35-1
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35-1.dsc' lattice_0.20-35-1.dsc 1649 SHA256:e10a748e19f8ffecc755a1b233e235d765b039024ee92d4ffc471380f01b3d19
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35.orig.tar.gz' lattice_0.20-35.orig.tar.gz 359813 SHA256:0829ab0f4dec55aac6a73bc3411af68441ddb1b5b078d680a7c2643abeaa965d
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35-1.diff.gz' lattice_0.20-35-1.diff.gz 4245 SHA256:72c4b1ed2a50f355171cd5d6bcb471200b9e0724adff27a87fc7d1b432462bc2
+'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35-1.dsc' lattice_0.20-35-1.dsc 1649 SHA256:e10a748e19f8ffecc755a1b233e235d765b039024ee92d4ffc471380f01b3d19
+'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35.orig.tar.gz' lattice_0.20-35.orig.tar.gz 359813 SHA256:0829ab0f4dec55aac6a73bc3411af68441ddb1b5b078d680a7c2643abeaa965d
+'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35-1.diff.gz' lattice_0.20-35-1.diff.gz 4245 SHA256:72c4b1ed2a50f355171cd5d6bcb471200b9e0724adff27a87fc7d1b432462bc2
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/lattice/0.20-35-1/ (for browsing the source)
-- https://sources.debian.net/src/lattice/0.20-35-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lattice/0.20-35-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `less=487-0.1`
 
@@ -3746,16 +3739,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.2-14-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-14-1.dsc' rmatrix_1.2-14-1.dsc 1864 SHA256:36097b9b043fa22ee99091f02d01718c30ec86e6494e90a85459a99da7d3158e
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-14.orig.tar.gz' rmatrix_1.2-14.orig.tar.gz 1832986 SHA256:49a6403547b66675cb44c1afb04bb87130c054510cb2b94971435a826ab41396
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-14-1.debian.tar.xz' rmatrix_1.2-14-1.debian.tar.xz 5392 SHA256:e5a9abba23e57c0501708b356f59af184eee31ced7932fef918d3c0d2024896e
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-14-1.dsc' rmatrix_1.2-14-1.dsc 1864 SHA256:36097b9b043fa22ee99091f02d01718c30ec86e6494e90a85459a99da7d3158e
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-14.orig.tar.gz' rmatrix_1.2-14.orig.tar.gz 1832986 SHA256:49a6403547b66675cb44c1afb04bb87130c054510cb2b94971435a826ab41396
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-14-1.debian.tar.xz' rmatrix_1.2-14-1.debian.tar.xz 5392 SHA256:e5a9abba23e57c0501708b356f59af184eee31ced7932fef918d3c0d2024896e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/rmatrix/1.2-14-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.2-14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.2-14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1-13-1`
 
@@ -3897,17 +3884,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.25.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.dsc' sqlite3_3.25.2-1.dsc 2397 SHA256:45eef7df971bce359b667486fd69cbd0e568bc202e45efb1a25c837367b70095
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig-www.tar.xz' sqlite3_3.25.2.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig.tar.xz' sqlite3_3.25.2.orig.tar.xz 6314420 SHA256:fa690863e75d2ba5db7f1c70108e33d351ea5d62899bf7b9ee43ba478933d7ef
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.debian.tar.xz' sqlite3_3.25.2-1.debian.tar.xz 17608 SHA256:e63a55f3432cc98e6d92a21becc8dabb2df77e0d3fccb51ce23b995d916caafc
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.dsc' sqlite3_3.25.2-1.dsc 2397 SHA256:45eef7df971bce359b667486fd69cbd0e568bc202e45efb1a25c837367b70095
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig-www.tar.xz' sqlite3_3.25.2.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig.tar.xz' sqlite3_3.25.2.orig.tar.xz 6314420 SHA256:fa690863e75d2ba5db7f1c70108e33d351ea5d62899bf7b9ee43ba478933d7ef
+'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.debian.tar.xz' sqlite3_3.25.2-1.debian.tar.xz 17608 SHA256:e63a55f3432cc98e6d92a21becc8dabb2df77e0d3fccb51ce23b995d916caafc
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sqlite3/3.25.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.25.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.25.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=2.42-6-1`
 
