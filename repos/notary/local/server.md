@@ -1,4 +1,4 @@
-# `notary:server`
+# `notary:server-0.5.0`
 
 ## Docker Metadata
 
