@@ -8,7 +8,7 @@
 -	[`elasticsearch:5.6.13-alpine`](#elasticsearch5613-alpine)
 -	[`elasticsearch:5.6-alpine`](#elasticsearch56-alpine)
 -	[`elasticsearch:5-alpine`](#elasticsearch5-alpine)
--	[`elasticsearch:6.4.3`](#elasticsearch643)
+-	[`elasticsearch:6.5.0`](#elasticsearch650)
 
 ## `elasticsearch:5`
 
@@ -790,99 +790,6 @@ CMD ["elasticsearch"]
 		Size: 508.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `elasticsearch:6.4.3`
+## `elasticsearch:6.5.0`
 
-```console
-$ docker pull elasticsearch@sha256:43634d909c6077b01388762dcb8312e6b6dcc775621a1605d4fad25323e10480
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `elasticsearch:6.4.3` - linux; amd64
-
-```console
-$ docker pull elasticsearch@sha256:ba2d82b70025e503ded44135e2fbb79b0aefa9db17be2750d75565c28d21ea38
-```
-
--	Docker Version: 18.03.0-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.4 MB (422357008 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e5bee1e0599448ecc63732345de8b202d8c4d86c92af06fa890a092e6e2bed`
--	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
--	Default Command: `["eswrapper"]`
-
-```dockerfile
-# Tue, 09 Oct 2018 18:19:47 GMT
-ADD file:fbe9badfd2790f0747a25fbe5c94a6daa78969511ca08c8d4ac654f3442570de in / 
-# Tue, 09 Oct 2018 18:19:48 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006
-# Tue, 09 Oct 2018 18:19:48 GMT
-CMD ["/bin/bash"]
-# Wed, 31 Oct 2018 00:05:30 GMT
-ENV ELASTIC_CONTAINER=true
-# Wed, 31 Oct 2018 00:06:16 GMT
-RUN curl -s https://download.java.net/java/GA/jdk10/10.0.2/19aef61b38124481863b1413dce1855f/13/openjdk-10.0.2_linux-x64_bin.tar.gz | tar -C /opt -zxf -
-# Wed, 31 Oct 2018 00:06:17 GMT
-ENV JAVA_HOME=/opt/jdk-10.0.2
-# Wed, 31 Oct 2018 00:06:17 GMT
-RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts /opt/jdk-10.0.2/lib/security/cacerts
-# Wed, 31 Oct 2018 00:06:44 GMT
-RUN yum update -y &&     yum install -y nc unzip wget which &&     yum clean all
-# Wed, 31 Oct 2018 00:06:45 GMT
-RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chmod 0775 /usr/share/elasticsearch &&     chgrp 0 /usr/share/elasticsearch
-# Wed, 31 Oct 2018 00:06:45 GMT
-WORKDIR /usr/share/elasticsearch
-# Wed, 31 Oct 2018 00:07:04 GMT
-COPY --chown=1000:0dir:a33abef4558834f53ddf28307c91d1b3f8abbb23330430c5f1d813131b98424b in /usr/share/elasticsearch 
-# Wed, 31 Oct 2018 00:07:05 GMT
-ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 31 Oct 2018 00:07:05 GMT
-COPY --chown=1000:0file:0835d3d3ae8342e1be53607254cb0caca7134efdfcb7a65dcebbf3097ec59b11 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 31 Oct 2018 00:07:05 GMT
-RUN chgrp 0 /usr/local/bin/docker-entrypoint.sh &&     chmod g=u /etc/passwd &&     chmod 0775 /usr/local/bin/docker-entrypoint.sh
-# Wed, 31 Oct 2018 00:07:05 GMT
-EXPOSE 9200 9300
-# Wed, 31 Oct 2018 00:07:06 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=elasticsearch org.label-schema.version=6.4.3 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.vcs-url=https://github.com/elastic/elasticsearch-docker license=Elastic License
-# Wed, 31 Oct 2018 00:07:06 GMT
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Wed, 31 Oct 2018 00:07:06 GMT
-CMD ["eswrapper"]
-```
-
--	Layers:
-	-	`sha256:aeb7866da422acc7e93dcf7323f38d7646f6269af33bcdb6647f2094fc4b3bf7`  
-		Last Modified: Tue, 09 Oct 2018 18:24:50 GMT  
-		Size: 74.7 MB (74703002 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0edca7f972b2fd927e23e95ec7324f2abf625a4a9c81082c418ae18c68d76e32`  
-		Last Modified: Tue, 06 Nov 2018 16:50:00 GMT  
-		Size: 205.4 MB (205374645 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e55382ecc4ad0cccd84bcabe21c8f4eef5177b78784925eed6387d49307e22`  
-		Last Modified: Tue, 06 Nov 2018 16:47:13 GMT  
-		Size: 216.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0d012405a9e2741d955eb987ee3660993aa25393d1622dd2d873793074ad87f`  
-		Last Modified: Tue, 06 Nov 2018 16:49:17 GMT  
-		Size: 7.1 MB (7147722 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ff453a459f86b102e5fdd27dd03213790dbd84b039d61b3cff26c22681fd249`  
-		Last Modified: Tue, 06 Nov 2018 16:47:11 GMT  
-		Size: 2.1 KB (2065 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3af1e094a8ccfd994d1e27c25b3e477388c60af628928a797800a3f75217085a`  
-		Last Modified: Tue, 06 Nov 2018 16:49:38 GMT  
-		Size: 135.1 MB (135124876 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae6ac1303d92dc52fedbe723db7c8e9427363c3449c57871ecafac05529b7884`  
-		Last Modified: Tue, 06 Nov 2018 16:47:10 GMT  
-		Size: 2.1 KB (2071 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78482fa26855629e00e186ed68697344995c524ca4a635996086015528d08d0a`  
-		Last Modified: Tue, 06 Nov 2018 16:47:10 GMT  
-		Size: 2.4 KB (2411 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
