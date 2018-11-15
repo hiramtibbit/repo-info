@@ -1,4 +1,4 @@
-# `registry:2`
+# `registry:2.6.2`
 
 ## Docker Metadata
 
