@@ -1,7 +1,7 @@
 ## `php:fpm-alpine3.8`
 
 ```console
-$ docker pull php@sha256:e43b8bdf235a23ecfee7f9d868ec9c523c4d27bfd6524a9b6bd92c0bd94198a8
+$ docker pull php@sha256:f0cb3eac93d069e0790ee55446e860148bbb294d21f6d4ee3857d2e382c165a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,14 +128,14 @@ CMD ["php-fpm"]
 ### `php:fpm-alpine3.8` - linux; arm variant v6
 
 ```console
-$ docker pull php@sha256:3c5aca782008cc7e1d106b99444998a0b994e849629b39fb1fad5e5a0690cfb4
+$ docker pull php@sha256:d10231a90cf651ce07e9a75f13ef90cd1707b101e05f6c0badbb5c76e344e2d5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.7 MB (30737672 bytes)**  
+-	Total Size: **30.7 MB (30737692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5cb67092a67c6fffe199b6fdb70ed0b95725ccd7209a9ccd65645a0eefb7521`
+-	Image ID: `sha256:bfe34a8d9125f4f529d5e1fb2e5ca34ad4124b2d6881f2c82c39dde646c435ce`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -178,19 +178,19 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		wget 	; 		mkdi
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Sat, 10 Nov 2018 09:11:08 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libressl-dev 		libsodium-dev 		libxml2-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 		&& cp -v php.ini-* "$PHP_INI_DIR/" 		&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Sat, 10 Nov 2018 09:11:09 GMT
-COPY multi:af8a06a5cfc82b17b169c6d1e48630a516582fa7ce00d8e59e5a378e100d064a in /usr/local/bin/ 
-# Sat, 10 Nov 2018 09:11:11 GMT
+# Thu, 15 Nov 2018 08:50:20 GMT
+COPY multi:2f2285f9c7c2f530675964f31be8902a60efa3a3d796ee46d73916fab59fdd38 in /usr/local/bin/ 
+# Thu, 15 Nov 2018 08:50:22 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 10 Nov 2018 09:11:11 GMT
+# Thu, 15 Nov 2018 08:50:22 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 10 Nov 2018 09:11:11 GMT
+# Thu, 15 Nov 2018 08:50:23 GMT
 WORKDIR /var/www/html
-# Sat, 10 Nov 2018 09:11:12 GMT
+# Thu, 15 Nov 2018 08:50:24 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 10 Nov 2018 09:11:12 GMT
+# Thu, 15 Nov 2018 08:50:24 GMT
 EXPOSE 9000/tcp
-# Sat, 10 Nov 2018 09:11:13 GMT
+# Thu, 15 Nov 2018 08:50:24 GMT
 CMD ["php-fpm"]
 ```
 
@@ -227,21 +227,21 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 10 Nov 2018 09:20:26 GMT  
 		Size: 15.0 MB (15031302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b616216818d1c88d6dfdf5981767cace2a8719cd48061584a9c330f23ba5bb02`  
-		Last Modified: Sat, 10 Nov 2018 09:20:21 GMT  
-		Size: 2.2 KB (2174 bytes)  
+	-	`sha256:b2de50f951464b1e276b644b63299ed8f89901163d7ad587009c636533bac78b`  
+		Last Modified: Thu, 15 Nov 2018 09:05:58 GMT  
+		Size: 2.2 KB (2179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b56bb2a1b2889d65b7a38cbbe38d532f88b23850d563d3e871d50f12cf2ced7`  
-		Last Modified: Sat, 10 Nov 2018 09:20:21 GMT  
-		Size: 71.4 KB (71419 bytes)  
+	-	`sha256:53bb17e8bfa5cb46555cc3a011d757888ca7068c6217c848317c1ce2a85e0c38`  
+		Last Modified: Thu, 15 Nov 2018 09:05:57 GMT  
+		Size: 71.4 KB (71429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:339fc1c127a6e2d430882193ebbc6d103498f71685221539878128995495a4aa`  
-		Last Modified: Sat, 10 Nov 2018 09:20:21 GMT  
-		Size: 161.0 B  
+	-	`sha256:2c948201b895255b398c5460f858f8a9633f6d44f471020a757964bddd6da785`  
+		Last Modified: Thu, 15 Nov 2018 09:05:58 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac24a041cb351c16e76c4ee950e2cd8c7d3f23b345a77e954183b91ff3e95b9d`  
-		Last Modified: Sat, 10 Nov 2018 09:20:21 GMT  
-		Size: 7.8 KB (7780 bytes)  
+	-	`sha256:ca4bb104fd76e842f9dd5de5fbae977918bbb89ad17096bb6c6d959a087e22ee`  
+		Last Modified: Thu, 15 Nov 2018 09:05:58 GMT  
+		Size: 7.8 KB (7786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-alpine3.8` - linux; arm64 variant v8
