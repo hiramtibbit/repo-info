@@ -1,7 +1,7 @@
 ## `php:rc-cli`
 
 ```console
-$ docker pull php@sha256:665b31fe7545379729af3f53cc4fd6985b3486913c39e98e5f7507c2b0f4c895
+$ docker pull php@sha256:a3a2ceb276208b4aaa13b2e30c16853a99b8e940a01043d0ed164b74267b16b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull php@sha256:665b31fe7545379729af3f53cc4fd6985b3486913c39e98e5f7507c
 ### `php:rc-cli` - linux; amd64
 
 ```console
-$ docker pull php@sha256:3b8f7f8514d365221a1f9a7f3056baeee8539ba9b1f2c3a6d92de1c167ffc90f
+$ docker pull php@sha256:849f0c7c96d8d66cd04199eb0fd7b9886ef10f1e3d89c7cbe850d9e9468a1833
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.5 MB (131484430 bytes)**  
+-	Total Size: **131.5 MB (131484440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e5d31dd5c6c6ff012af5524e6723062e39e0653d1f16bdb85d4c2540286ce69`
+-	Image ID: `sha256:7c33d790f376c405d9438f8f57f8f5bc714ccda996689e47193917e369fafd9b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -60,13 +60,13 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 09 Nov 2018 22:50:10 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	sed -e 's/stretch/buster/g' /etc/apt/sources.list > /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: libargon2*'; 		echo 'Pin: release n=buster'; 		echo 'Pin-Priority: 990'; 	} > /etc/apt/preferences.d/argon2-buster; 	apt-get update; 	apt-get install -y --no-install-recommends libargon2-dev; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Fri, 09 Nov 2018 22:50:14 GMT
-COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
-# Fri, 09 Nov 2018 22:50:15 GMT
+# Thu, 15 Nov 2018 01:23:15 GMT
+COPY multi:bea61589f5a3f8f99b5cfe1d774a1d3e55f2589d6c15a6fd6696601525640b39 in /usr/local/bin/ 
+# Thu, 15 Nov 2018 01:23:16 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 09 Nov 2018 22:50:15 GMT
+# Thu, 15 Nov 2018 01:23:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 09 Nov 2018 22:50:26 GMT
+# Thu, 15 Nov 2018 01:23:17 GMT
 CMD ["php" "-a"]
 ```
 
@@ -99,13 +99,13 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 10 Nov 2018 00:25:49 GMT  
 		Size: 29.3 MB (29321643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07e39c7736ddd45c1555c6434fae3db6ce7e97ecce39e45da51cf17cfef3a1ee`  
-		Last Modified: Sat, 10 Nov 2018 00:25:41 GMT  
-		Size: 2.2 KB (2184 bytes)  
+	-	`sha256:13973dfecce1631e1295a309ce4f6d9d499e753b4b9be452db9effe131c86003`  
+		Last Modified: Thu, 15 Nov 2018 02:19:05 GMT  
+		Size: 2.2 KB (2191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b8fbba06f0f0c5c76dd23b075e48b6f7ab7a56b09722301b2ccd4c6703bacd`  
-		Last Modified: Sat, 10 Nov 2018 00:25:40 GMT  
-		Size: 258.0 B  
+	-	`sha256:f878d7bd00c61bce8d4c46f4c4fac500e8d28542bf9e2bdf500a255941f48bce`  
+		Last Modified: Thu, 15 Nov 2018 02:19:05 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:rc-cli` - linux; arm variant v5
