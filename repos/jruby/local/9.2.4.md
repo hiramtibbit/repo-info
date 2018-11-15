@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:338a99eda0690e8fa845497ea10f1c599a93cb4c359a4d7de155c30d7999b7cd`
-- Created: `2018-11-10T01:13:33.80684344Z`
+- Image ID: `sha256:cf76313c43b88ae12798ff4eb72548c4437e4c0b3ae291da2cd9ae7f8c15995e`
+- Created: `2018-11-14T22:20:12.379207312Z`
 - Virtual Size: ~ 504.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,8 +15,8 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `JRUBY_VERSION=9.2.3.0`
-  - `JRUBY_SHA256=d9c2d179696394aafe41027f0e48fa53267ecde04b3d10babc88fea4d523336a`
+  - `JRUBY_VERSION=9.2.4.0`
+  - `JRUBY_SHA256=b9638c82c85d89f6e8b2da1b876ac235bb9ed47f2163b3c851f0496c9bd58a0c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
