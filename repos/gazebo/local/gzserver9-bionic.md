@@ -1503,9 +1503,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.56.2-0ubuntu0.18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.dsc' glib2.0_2.56.2-0ubuntu0.18.04.2.dsc 3567 SHA256:4e24f344e94881d6a7476d170747cabb1ea871ce8e4afe2d9812ec270e4c0a95
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2.orig.tar.xz' glib2.0_2.56.2.orig.tar.xz 8041756 SHA256:d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz' glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz 80444 SHA256:4aff5b11aa5f632161d4045aff4f8f1e3f616976060139354bef617817891346
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.dsc' glib2.0_2.56.2-0ubuntu0.18.04.2.dsc 3567 SHA256:4e24f344e94881d6a7476d170747cabb1ea871ce8e4afe2d9812ec270e4c0a95
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2.orig.tar.xz' glib2.0_2.56.2.orig.tar.xz 8041756 SHA256:d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz' glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz 80444 SHA256:4aff5b11aa5f632161d4045aff4f8f1e3f616976060139354bef617817891346
 ```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
@@ -5523,14 +5523,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.5-0ubuntu0.18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.dsc' postgresql-10_10.5-0ubuntu0.18.04.dsc 3602 SHA256:1a9358391f50dc8734f19d4f9fd8e1c44bc75806a7344a740ad3dc73181a5c21
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5.orig.tar.gz' postgresql-10_10.5.orig.tar.gz 26818092 SHA256:13be7053b1d8ad4e24943b24d80170574fc701b49b3f14e68a5f1bda452ce3d1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz' postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz 23668 SHA256:280337bbb790c36aaed11f08fb21d2906650616d0f344765af48edd93e8938f2
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.1`
 
