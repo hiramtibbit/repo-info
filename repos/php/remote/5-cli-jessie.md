@@ -1,7 +1,7 @@
 ## `php:5-cli-jessie`
 
 ```console
-$ docker pull php@sha256:d0a765f1446452985e0c2edbaa71b1bbd197cadf6e52a53d23718f707b22bb8b
+$ docker pull php@sha256:3225172ced4baf34dcc379aabe16245b2ba97fd7622c3d94c16fe4d7493a372a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull php@sha256:d0a765f1446452985e0c2edbaa71b1bbd197cadf6e52a53d23718f7
 ### `php:5-cli-jessie` - linux; amd64
 
 ```console
-$ docker pull php@sha256:d19ab401585156bd3b37812f4fe0b2bbabd463a5e1a93d2b6aa3dadde77eabd2
+$ docker pull php@sha256:a28604e18fe0a293b0e89634cd6e82e8c40a6dc9057edd5d66c5145ff18ec0fc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.0 MB (152021225 bytes)**  
+-	Total Size: **152.0 MB (152021234 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd4c5c85b8481ce1c8d5c5df95d85fb610e2b63fa44d2fa000c962903b932684`
+-	Image ID: `sha256:178d926acf905646568dea03c79dbdc699f0ba8da4d9898e1a3fee7cc40999e0`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -60,11 +60,11 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 16 Oct 2018 03:01:42 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Tue, 16 Oct 2018 03:01:42 GMT
-COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
-# Tue, 16 Oct 2018 03:01:42 GMT
+# Thu, 15 Nov 2018 02:16:32 GMT
+COPY multi:bea61589f5a3f8f99b5cfe1d774a1d3e55f2589d6c15a6fd6696601525640b39 in /usr/local/bin/ 
+# Thu, 15 Nov 2018 02:16:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 16 Oct 2018 03:01:43 GMT
+# Thu, 15 Nov 2018 02:16:32 GMT
 CMD ["php" "-a"]
 ```
 
@@ -97,9 +97,9 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 16 Oct 2018 03:59:11 GMT  
 		Size: 10.3 MB (10324664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745474b0732db99f11e7a811fc0f31598b9d334d98827259a06b61fab6cf9f42`  
-		Last Modified: Tue, 16 Oct 2018 03:59:08 GMT  
-		Size: 2.2 KB (2184 bytes)  
+	-	`sha256:d70d5de80f186b75907b5ae894298ccd7a33bcb0188721d8efcecb11874a729a`  
+		Last Modified: Thu, 15 Nov 2018 03:08:54 GMT  
+		Size: 2.2 KB (2193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-cli-jessie` - linux; arm variant v5

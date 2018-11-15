@@ -1,7 +1,7 @@
 ## `php:7-fpm-alpine3.8`
 
 ```console
-$ docker pull php@sha256:ac7b7f00fea32e4710af9332d4ddd50000dfbfa5c8d8a9cdda9a0de9eb187ed9
+$ docker pull php@sha256:e43b8bdf235a23ecfee7f9d868ec9c523c4d27bfd6524a9b6bd92c0bd94198a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull php@sha256:ac7b7f00fea32e4710af9332d4ddd50000dfbfa5c8d8a9cdda9a0de
 ### `php:7-fpm-alpine3.8` - linux; amd64
 
 ```console
-$ docker pull php@sha256:92294f5be363fa140754372d7a6a7357bebf8ee20d908bdb0902940db5ec0447
+$ docker pull php@sha256:727b451581c1f02d1a2d2a4f2ae8025fc2dbef4a3bb7e6642a80d6f4f2916e42
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.9 MB (31879832 bytes)**  
+-	Total Size: **31.9 MB (31879860 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f53603cf9944606802d088b7ed17a48444b21a34465bc23d5aa13399025cdde`
+-	Image ID: `sha256:4e0d7a9bed3c541e5903db8d7858c40eb452886129e7c34156327cd75e3bea4b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -63,19 +63,19 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		wget 	; 		mkdi
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Sat, 10 Nov 2018 00:16:13 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libressl-dev 		libsodium-dev 		libxml2-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 		&& cp -v php.ini-* "$PHP_INI_DIR/" 		&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Sat, 10 Nov 2018 00:16:14 GMT
-COPY multi:af8a06a5cfc82b17b169c6d1e48630a516582fa7ce00d8e59e5a378e100d064a in /usr/local/bin/ 
-# Sat, 10 Nov 2018 00:16:16 GMT
+# Thu, 15 Nov 2018 01:28:24 GMT
+COPY multi:2f2285f9c7c2f530675964f31be8902a60efa3a3d796ee46d73916fab59fdd38 in /usr/local/bin/ 
+# Thu, 15 Nov 2018 01:28:25 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 10 Nov 2018 00:16:16 GMT
+# Thu, 15 Nov 2018 01:28:37 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 10 Nov 2018 00:16:16 GMT
+# Thu, 15 Nov 2018 01:28:37 GMT
 WORKDIR /var/www/html
-# Sat, 10 Nov 2018 00:16:17 GMT
+# Thu, 15 Nov 2018 01:28:38 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 10 Nov 2018 00:16:17 GMT
+# Thu, 15 Nov 2018 01:28:38 GMT
 EXPOSE 9000/tcp
-# Sat, 10 Nov 2018 00:16:17 GMT
+# Thu, 15 Nov 2018 01:28:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -108,21 +108,21 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 10 Nov 2018 00:57:49 GMT  
 		Size: 16.1 MB (16074269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14e31054104178a8bc60f9d1528d21cb5d27de1af2a6f3722beb178e9ab9c7e`  
-		Last Modified: Sat, 10 Nov 2018 00:57:47 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:653b6a7abcd8fb3ede4388125bb81c99515d0bdc98c9709622644f89d9ff613e`  
+		Last Modified: Thu, 15 Nov 2018 02:42:37 GMT  
+		Size: 2.2 KB (2179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f49624aa5a155f09bad6470686eaa8c35a71861848a6ad18d6ff1edae525d9d3`  
-		Last Modified: Sat, 10 Nov 2018 00:57:46 GMT  
-		Size: 71.9 KB (71880 bytes)  
+	-	`sha256:8c14366a51674aab1f20840baad818b9e81ce55f8486429e1c8c54a169c77df7`  
+		Last Modified: Thu, 15 Nov 2018 02:42:37 GMT  
+		Size: 71.9 KB (71892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e47108e9bbf645e05cb10f54b0fbf52b931d95fa424feb07f68811cb063d26a4`  
-		Last Modified: Sat, 10 Nov 2018 00:57:46 GMT  
+	-	`sha256:c5e7fcfe71617bff2d39cc4222bd169fa33118525c4ef347770929c05aa26654`  
+		Last Modified: Thu, 15 Nov 2018 02:42:38 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41684d7538c9bde080029be80ddbf642c8ce0dd078075ff69fc5b2a1943e474e`  
-		Last Modified: Sat, 10 Nov 2018 00:57:46 GMT  
-		Size: 7.8 KB (7784 bytes)  
+	-	`sha256:5d12fc6c2f1b89f3b501700cc33bcd3b5d4496368c6fb28a64ae54f76f2bee96`  
+		Last Modified: Thu, 15 Nov 2018 02:42:38 GMT  
+		Size: 7.8 KB (7790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-fpm-alpine3.8` - linux; arm variant v6
