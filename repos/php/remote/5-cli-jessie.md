@@ -1,7 +1,7 @@
 ## `php:5-cli-jessie`
 
 ```console
-$ docker pull php@sha256:3225172ced4baf34dcc379aabe16245b2ba97fd7622c3d94c16fe4d7493a372a
+$ docker pull php@sha256:ea5a269c45c669656a1c0df8aa5e581c7ccbd9b82e40c54275140db3bd8b146c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -105,14 +105,14 @@ CMD ["php" "-a"]
 ### `php:5-cli-jessie` - linux; arm variant v5
 
 ```console
-$ docker pull php@sha256:fcc0817fd5c5b05f50d229e7e75f1a228cd7a73f874ff459e0cf80cfcef549e9
+$ docker pull php@sha256:328aa476538c8e76c0f36dce2d74cad1ac8e4d6f6043583b4a32fe48c56994be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135326294 bytes)**  
+-	Total Size: **135.3 MB (135326301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce6cec3052024160c49578f3a121c37879ebf525ec5699e17776fad0836168c7`
+-	Image ID: `sha256:f3c6ddb03d0d1d4011d349f494e2ff9cf106f067cc33865208dafd20d96b2e72`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -151,11 +151,11 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Sat, 15 Sep 2018 10:57:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Sat, 15 Sep 2018 10:57:10 GMT
-COPY multi:2cdcedabcf5a3b9ae610fab7848e94bc2f64b4d85710d55fd6f79e44dacf73d8 in /usr/local/bin/ 
-# Sat, 15 Sep 2018 10:57:10 GMT
+# Thu, 15 Nov 2018 10:27:56 GMT
+COPY multi:bea61589f5a3f8f99b5cfe1d774a1d3e55f2589d6c15a6fd6696601525640b39 in /usr/local/bin/ 
+# Thu, 15 Nov 2018 10:27:56 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 15 Sep 2018 10:57:11 GMT
+# Thu, 15 Nov 2018 10:27:57 GMT
 CMD ["php" "-a"]
 ```
 
@@ -188,9 +188,9 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 15 Sep 2018 11:43:10 GMT  
 		Size: 10.3 MB (10278470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a9985bef0f89a76d45f61bc37532c07faa326ca462a9104536254dde8b4a871`  
-		Last Modified: Sat, 15 Sep 2018 11:43:07 GMT  
-		Size: 2.2 KB (2184 bytes)  
+	-	`sha256:b4db12cb98828e91eb0860e2fb78350481d5e3cdcddb910b747b29f125988d24`  
+		Last Modified: Thu, 15 Nov 2018 10:52:10 GMT  
+		Size: 2.2 KB (2191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-cli-jessie` - linux; arm variant v7
