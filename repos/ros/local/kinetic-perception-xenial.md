@@ -7291,14 +7291,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.12.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2-1.dsc' python-rosdep_0.12.2-1.dsc 900 SHA256:642358020faf238263f7fc91b26253e99957aef3abff71dc45d2c6c2ce94d31f
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2.orig.tar.gz' python-rosdep_0.12.2.orig.tar.gz 80974 SHA256:83810f7f157311fc3a3f095f1daa6b77a6ca8ee4a0bb4280b3536f91f43274d3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2-1.debian.tar.gz' python-rosdep_0.12.2-1.debian.tar.gz 1078 SHA256:b727ea1c0771dd48acda4e02ee8a108c8193d5fc1c0576e72330caa0546b6e4f
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.9-1`
 
@@ -7551,14 +7546,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.dsc' python2.7_2.7.12-1ubuntu0~16.04.3.dsc 3379 SHA256:a4784c90f5036a12c145f6f7690c12c187866f2c9ae0263cd3527dc916a98e84
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz 281711 SHA256:85bc19c1f058792ff0fe7abfc0362b76b6abcbdaca890e0745d25e5f25184bf7
-```
 
 ### `dpkg` source package: `python3-defaults=3.5.1-3`
 
@@ -7618,14 +7608,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.4.dsc' python3.5_3.5.2-2ubuntu0~16.04.4.dsc 3371 SHA256:3dc2093766365ec51638804d3b127ab0f5c34ae8562da5ccd03e8aa340e9a43c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.4.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.4.debian.tar.xz 215796 SHA256:e3b04331c0a5e1ba85b4b5e815ddd37ba9905d4b794e1180dca01b8d2fcc59ba
-```
 
 ### `dpkg` source package: `pyyaml=3.11-3build1`
 

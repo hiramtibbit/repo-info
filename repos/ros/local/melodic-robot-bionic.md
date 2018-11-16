@@ -1691,9 +1691,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.56.2-0ubuntu0.18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.dsc' glib2.0_2.56.2-0ubuntu0.18.04.2.dsc 3567 SHA256:4e24f344e94881d6a7476d170747cabb1ea871ce8e4afe2d9812ec270e4c0a95
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2.orig.tar.xz' glib2.0_2.56.2.orig.tar.xz 8041756 SHA256:d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz' glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz 80444 SHA256:4aff5b11aa5f632161d4045aff4f8f1e3f616976060139354bef617817891346
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.dsc' glib2.0_2.56.2-0ubuntu0.18.04.2.dsc 3567 SHA256:4e24f344e94881d6a7476d170747cabb1ea871ce8e4afe2d9812ec270e4c0a95
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2.orig.tar.xz' glib2.0_2.56.2.orig.tar.xz 8041756 SHA256:d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz' glib2.0_2.56.2-0ubuntu0.18.04.2.debian.tar.xz 80444 SHA256:4aff5b11aa5f632161d4045aff4f8f1e3f616976060139354bef617817891346
 ```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
@@ -4112,14 +4112,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-36.39
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.dsc' linux_4.15.0-36.39.dsc 7499 SHA256:8276b91c19add6c31ba73f7601ead023c62d62cae82c83241262fd261c0912a0
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-36.39.diff.gz' linux_4.15.0-36.39.diff.gz 8195142 SHA256:46e6148eefacac51df4c8acdcd583956148b315a1be039913aea506cb5daf707
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -5521,14 +5516,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.12.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2-1.dsc' python-rosdep_0.12.2-1.dsc 900 SHA256:642358020faf238263f7fc91b26253e99957aef3abff71dc45d2c6c2ce94d31f
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2.orig.tar.gz' python-rosdep_0.12.2.orig.tar.gz 80974 SHA256:83810f7f157311fc3a3f095f1daa6b77a6ca8ee4a0bb4280b3536f91f43274d3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.12.2-1.debian.tar.gz' python-rosdep_0.12.2-1.debian.tar.gz 1078 SHA256:b727ea1c0771dd48acda4e02ee8a108c8193d5fc1c0576e72330caa0546b6e4f
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.9-1`
 
