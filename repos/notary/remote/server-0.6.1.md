@@ -1,13 +1,14 @@
 ## `notary:server-0.6.1`
 
 ```console
-$ docker pull notary@sha256:3fbbcb61241765a647fbacf7ae92cf740a6770d4a470a42772e8bd37c73fd066
+$ docker pull notary@sha256:1116e117f4aeac7d7d068cde8748c037249ddd8710eea16acd57a8a485c59304
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -167,6 +168,85 @@ CMD ["notary-server" "--help"]
 	-	`sha256:885b9ceceb519a0f279e4f21cdf9d39cba70801df8d33fdf66137ae88df8f2fc`  
 		Last Modified: Fri, 16 Nov 2018 14:06:13 GMT  
 		Size: 1.2 KB (1189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `notary:server-0.6.1` - linux; 386
+
+```console
+$ docker pull notary@sha256:e7e390ac3043ea1c40a7ac36d6a2a3fd527859b02321136d69679337cb1f303f
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **7.2 MB (7207176 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e92372d26a28cc8b3361c6b9e3ae935269522ef9662f1ee0becc3fe576d83c3c`
+-	Entrypoint: `["entrypoint.sh"]`
+-	Default Command: `["notary-server","--help"]`
+
+```dockerfile
+# Wed, 12 Sep 2018 10:38:54 GMT
+ADD file:b789aca08d6985c0bf373a2ca5f2a263d45e3a789aa6bbcd1fe1d47133f985d2 in / 
+# Wed, 12 Sep 2018 10:38:54 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 12 Sep 2018 10:38:54 GMT
+CMD ["/bin/sh"]
+# Fri, 16 Nov 2018 16:42:40 GMT
+ENV TAG=v0.6.1
+# Fri, 16 Nov 2018 16:42:41 GMT
+ENV NOTARYPKG=github.com/theupdateframework/notary
+# Fri, 16 Nov 2018 16:42:41 GMT
+ENV INSTALLDIR=/notary/server
+# Fri, 16 Nov 2018 16:42:41 GMT
+EXPOSE 4443/tcp
+# Fri, 16 Nov 2018 16:42:42 GMT
+WORKDIR /notary/server
+# Fri, 16 Nov 2018 16:43:22 GMT
+RUN set -eux;     apk add --no-cache --virtual build-deps git go make musl-dev;     export GOPATH=/go GOCACHE=/go/cache;     mkdir -p ${GOPATH}/src/${NOTARYPKG};     git clone -b ${TAG} --depth 1 https://${NOTARYPKG} ${GOPATH}/src/${NOTARYPKG};     make -C ${GOPATH}/src/${NOTARYPKG} PREFIX=. ./bin/static/notary-server;     cp -vL ${GOPATH}/src/${NOTARYPKG}/bin/static/notary-server ./;     apk del --no-network build-deps;     rm -rf ${GOPATH}
+# Fri, 16 Nov 2018 16:43:23 GMT
+COPY file:e0e3204ef0b253b4cb710125fb7780914daff79cb06e65bfd4e44ee5c6a69a75 in . 
+# Fri, 16 Nov 2018 16:43:23 GMT
+COPY file:ac552ea00574aaf9d5de8e5a1abcf10c8f09012df960328db4f963f404e2d409 in . 
+# Fri, 16 Nov 2018 16:43:25 GMT
+RUN adduser -D -H -g "" notary
+# Fri, 16 Nov 2018 16:43:25 GMT
+USER [notary]
+# Fri, 16 Nov 2018 16:43:25 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
+# Fri, 16 Nov 2018 16:43:25 GMT
+ENTRYPOINT ["entrypoint.sh"]
+# Fri, 16 Nov 2018 16:43:26 GMT
+CMD ["notary-server" "--help"]
+```
+
+-	Layers:
+	-	`sha256:6b5c2e9bbf9885ccefe772a5a1f471d7da4315b7bf43ec3b4c014a65d04073b1`  
+		Last Modified: Wed, 12 Sep 2018 10:39:28 GMT  
+		Size: 2.3 MB (2271460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4d99e807699886f28203b3284584d7b093a61a84c40230f7094513bb2f84cd2`  
+		Last Modified: Wed, 12 Sep 2018 10:39:28 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0865aae2e6d5557bafa48c22f98fd7fba5f3fd4cdf1664323be49eaa68a59e2`  
+		Last Modified: Fri, 16 Nov 2018 16:45:04 GMT  
+		Size: 118.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f53606f72842f83c7e3886c011d008ee1c7f95d9a371bf6661ab0882ceee4d2e`  
+		Last Modified: Fri, 16 Nov 2018 16:45:06 GMT  
+		Size: 4.9 MB (4933432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc9f55edbfd4d4e75c3a1fb15448971dde8998dfc2efcb71dbd3709cf1958537`  
+		Last Modified: Fri, 16 Nov 2018 16:45:04 GMT  
+		Size: 417.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:52e61e63a97eb0f301faecbe15dfc0dcdddf93cc26b5acc8c08fe5463a90a635`  
+		Last Modified: Fri, 16 Nov 2018 16:45:04 GMT  
+		Size: 382.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8852ae6e3affd2f48b7dbe577a2892fb663ceab646408c00610413f8651cc0b9`  
+		Last Modified: Fri, 16 Nov 2018 16:45:04 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `notary:server-0.6.1` - linux; ppc64le
