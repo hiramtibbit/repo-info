@@ -217,19 +217,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.7.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.7.0.dsc' apt_1.7.0.dsc 2759 SHA256:ef8e855b1ba78b54caa6eac0667db417f3bc78c2532f120b12552c820c36a205
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.7.0.tar.xz' apt_1.7.0.tar.xz 2151720 SHA256:47a0f10227c662c55dc8c4154c7124bd467392614c394a7c186112ad1050b4b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.7.0/
 
-- https://sources.debian.net/src/apt/1.7.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.7.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.7.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `argon2=0~20171227-0.1`
 
@@ -873,20 +867,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dconf=0.30.0-1
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.0-1.dsc' dconf_0.30.0-1.dsc 2530 SHA256:bf979e4aaa4b2cdbb95dd5aff9dc08ffd95851468d64bd12feca0a22888d7a75
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.0.orig.tar.xz' dconf_0.30.0.orig.tar.xz 104308 SHA256:0af256c98395ec5241e830cb0cc760047dfa6d94f2fe93311e021ff94e14a715
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.0-1.debian.tar.xz' dconf_0.30.0-1.debian.tar.xz 9496 SHA256:ffb67cac19e161d85c37b2ee323ec206eddff2d104b08e7db5a4d72db0938848
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dconf/0.30.0-1/
 
-- https://sources.debian.net/src/dconf/0.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/dconf/0.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dconf/0.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -4705,21 +4692,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.25.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.dsc' sqlite3_3.25.2-1.dsc 2397 SHA256:45eef7df971bce359b667486fd69cbd0e568bc202e45efb1a25c837367b70095
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig-www.tar.xz' sqlite3_3.25.2.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2.orig.tar.xz' sqlite3_3.25.2.orig.tar.xz 6314420 SHA256:fa690863e75d2ba5db7f1c70108e33d351ea5d62899bf7b9ee43ba478933d7ef
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.2-1.debian.tar.xz' sqlite3_3.25.2-1.debian.tar.xz 17608 SHA256:e63a55f3432cc98e6d92a21becc8dabb2df77e0d3fccb51ce23b995d916caafc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.25.2-1/
 
-- https://sources.debian.net/src/sqlite3/3.25.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.25.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.25.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.10.2-1`
 
