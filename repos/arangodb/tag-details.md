@@ -13,7 +13,7 @@
 ## `arangodb:2.8`
 
 ```console
-$ docker pull arangodb@sha256:906a08afb4fc2d3d03da0e0b16b52a715660c437ed8463b255dc407e931751d6
+$ docker pull arangodb@sha256:faef6806c200469bce03bc7e057a7fcb053ac5816bd5047e9a07d3679000b792
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,82 +23,82 @@ $ docker pull arangodb@sha256:906a08afb4fc2d3d03da0e0b16b52a715660c437ed8463b255
 ### `arangodb:2.8` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:395d62fa0e1c370533c99a184b4a445536aff8380a932f49d1cd42f63fa3038a
+$ docker pull arangodb@sha256:f8d3a37053ec40cbf743a883bd5b31021cc4e55764c60ac2a4afb4e9f99649f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.0 MB (114991792 bytes)**  
+-	Total Size: **115.1 MB (115097530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9d05dfcc499326e382343a01232e734df58ee610af9b37dd7944192ff24447f`
+-	Image ID: `sha256:295893bc50821506df807e3c4160958c883cf66db697e69f7b6847edebde89b8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:20:26 GMT
-ADD file:28906382f13932b8498c715984587f13905a32cc9427fb4f8779b7f159a68580 in / 
-# Mon, 15 Oct 2018 23:20:26 GMT
+# Thu, 15 Nov 2018 22:33:25 GMT
+ADD file:0b25d0012989e20b95dd0702d9491fdc4a4d40d0994690df7ec502cf163590fe in / 
+# Thu, 15 Nov 2018 22:33:36 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:29:59 GMT
+# Fri, 16 Nov 2018 10:51:30 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:00 GMT
+# Fri, 16 Nov 2018 10:51:31 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Tue, 16 Oct 2018 00:30:00 GMT
+# Fri, 16 Nov 2018 10:51:43 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:43 GMT
 ENV ARANGO_VERSION=2.8.11
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb2/Debian_8.0
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_PACKAGE=arangodb_2.8.11_amd64.deb
-# Tue, 16 Oct 2018 00:30:02 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb
-# Tue, 16 Oct 2018 00:30:02 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb.asc
-# Tue, 16 Oct 2018 00:30:40 GMT
+# Fri, 16 Nov 2018 10:52:26 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libgoogle-perftools4         ca-certificates         pwgen         wget     &&     rm -rf /var/lib/apt/lists/* &&     wget ${ARANGO_SIGNATURE_URL} &&           wget ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     dpkg -i ${ARANGO_PACKAGE} &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb/arangod.conf     &&     apt-get purge -y --auto-remove ca-certificates wget &&     rm -f ${ARANGO_PACKAGE}*
-# Tue, 16 Oct 2018 00:30:40 GMT
+# Fri, 16 Nov 2018 10:52:32 GMT
 RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/lib/arangodb-apps
-# Tue, 16 Oct 2018 00:30:41 GMT
+# Fri, 16 Nov 2018 10:52:32 GMT
 VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
-# Tue, 16 Oct 2018 00:30:41 GMT
+# Fri, 16 Nov 2018 10:52:45 GMT
 COPY file:d5e2df43b028efe92b9f4dc2dfd67aa54840beb1e09b6c23c32ae8403b0ae7e4 in /entrypoint.sh 
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:46 GMT
 EXPOSE 8529/tcp
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:59 GMT
 USER [arangodb]
-# Tue, 16 Oct 2018 00:30:43 GMT
+# Fri, 16 Nov 2018 10:53:12 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:61be48634cb9ffcb29c1508fc1c308be81c32f84e95a627de9bdf107a854408c`  
-		Last Modified: Mon, 15 Oct 2018 23:28:32 GMT  
-		Size: 54.3 MB (54252125 bytes)  
+	-	`sha256:4b105072aa89afc93b7238396c7ca2951308666854da2fb399c4ca362c93b445`  
+		Last Modified: Thu, 15 Nov 2018 22:53:33 GMT  
+		Size: 54.4 MB (54357843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7f0b53bd01bb207039d72e1d1788d499bd4eb3ef64c9a701bd64ea6ed976b`  
-		Last Modified: Tue, 16 Oct 2018 00:32:44 GMT  
-		Size: 7.4 KB (7407 bytes)  
+	-	`sha256:9d74839ae7d490b651ea708992f5fa1c834e31de7e94dd4b83a389c4d1e2c0b8`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
+		Size: 7.4 KB (7410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67fde5b672179da7ecd706493fc2d1518877857e50eebe2ff9adf2b2482102fb`  
-		Last Modified: Tue, 16 Oct 2018 00:33:25 GMT  
-		Size: 60.7 MB (60730998 bytes)  
+	-	`sha256:8ec2dd6eadcd26e5b8a00348adb27733ea43ec646d0e9832788256d8bec58c2d`  
+		Last Modified: Fri, 16 Nov 2018 10:58:47 GMT  
+		Size: 60.7 MB (60731016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0110f786b6d11a091aa3c00f3f76f79d8a06838bd6d595d38486ba1e9438d77e`  
-		Last Modified: Tue, 16 Oct 2018 00:32:44 GMT  
-		Size: 169.0 B  
+	-	`sha256:7e5731919ebd292166125127870df1fcfd7138bb1af097048aa8a88f2d72dcd8`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e895cb567a5197a6bf901ec44bb8bfffdaa42fdc791874ba9850c3ba48f818ff`  
-		Last Modified: Tue, 16 Oct 2018 00:32:45 GMT  
+	-	`sha256:8aa45e17d23f640d74951e241ec149f7bf735c3e301fbd1068b2dbec604e2e30`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
 		Size: 1.1 KB (1093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.8.11`
 
 ```console
-$ docker pull arangodb@sha256:906a08afb4fc2d3d03da0e0b16b52a715660c437ed8463b255dc407e931751d6
+$ docker pull arangodb@sha256:faef6806c200469bce03bc7e057a7fcb053ac5816bd5047e9a07d3679000b792
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,82 +108,82 @@ $ docker pull arangodb@sha256:906a08afb4fc2d3d03da0e0b16b52a715660c437ed8463b255
 ### `arangodb:2.8.11` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:395d62fa0e1c370533c99a184b4a445536aff8380a932f49d1cd42f63fa3038a
+$ docker pull arangodb@sha256:f8d3a37053ec40cbf743a883bd5b31021cc4e55764c60ac2a4afb4e9f99649f6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.0 MB (114991792 bytes)**  
+-	Total Size: **115.1 MB (115097530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9d05dfcc499326e382343a01232e734df58ee610af9b37dd7944192ff24447f`
+-	Image ID: `sha256:295893bc50821506df807e3c4160958c883cf66db697e69f7b6847edebde89b8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:20:26 GMT
-ADD file:28906382f13932b8498c715984587f13905a32cc9427fb4f8779b7f159a68580 in / 
-# Mon, 15 Oct 2018 23:20:26 GMT
+# Thu, 15 Nov 2018 22:33:25 GMT
+ADD file:0b25d0012989e20b95dd0702d9491fdc4a4d40d0994690df7ec502cf163590fe in / 
+# Thu, 15 Nov 2018 22:33:36 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:29:59 GMT
+# Fri, 16 Nov 2018 10:51:30 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:00 GMT
+# Fri, 16 Nov 2018 10:51:31 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Tue, 16 Oct 2018 00:30:00 GMT
+# Fri, 16 Nov 2018 10:51:43 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:43 GMT
 ENV ARANGO_VERSION=2.8.11
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb2/Debian_8.0
-# Tue, 16 Oct 2018 00:30:01 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_PACKAGE=arangodb_2.8.11_amd64.deb
-# Tue, 16 Oct 2018 00:30:02 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb
-# Tue, 16 Oct 2018 00:30:02 GMT
+# Fri, 16 Nov 2018 10:51:44 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb2/Debian_8.0/amd64/arangodb_2.8.11_amd64.deb.asc
-# Tue, 16 Oct 2018 00:30:40 GMT
+# Fri, 16 Nov 2018 10:52:26 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libgoogle-perftools4         ca-certificates         pwgen         wget     &&     rm -rf /var/lib/apt/lists/* &&     wget ${ARANGO_SIGNATURE_URL} &&           wget ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     dpkg -i ${ARANGO_PACKAGE} &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb/arangod.conf     &&     apt-get purge -y --auto-remove ca-certificates wget &&     rm -f ${ARANGO_PACKAGE}*
-# Tue, 16 Oct 2018 00:30:40 GMT
+# Fri, 16 Nov 2018 10:52:32 GMT
 RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/lib/arangodb-apps
-# Tue, 16 Oct 2018 00:30:41 GMT
+# Fri, 16 Nov 2018 10:52:32 GMT
 VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
-# Tue, 16 Oct 2018 00:30:41 GMT
+# Fri, 16 Nov 2018 10:52:45 GMT
 COPY file:d5e2df43b028efe92b9f4dc2dfd67aa54840beb1e09b6c23c32ae8403b0ae7e4 in /entrypoint.sh 
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:45 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:46 GMT
 EXPOSE 8529/tcp
-# Tue, 16 Oct 2018 00:30:42 GMT
+# Fri, 16 Nov 2018 10:52:59 GMT
 USER [arangodb]
-# Tue, 16 Oct 2018 00:30:43 GMT
+# Fri, 16 Nov 2018 10:53:12 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:61be48634cb9ffcb29c1508fc1c308be81c32f84e95a627de9bdf107a854408c`  
-		Last Modified: Mon, 15 Oct 2018 23:28:32 GMT  
-		Size: 54.3 MB (54252125 bytes)  
+	-	`sha256:4b105072aa89afc93b7238396c7ca2951308666854da2fb399c4ca362c93b445`  
+		Last Modified: Thu, 15 Nov 2018 22:53:33 GMT  
+		Size: 54.4 MB (54357843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7f0b53bd01bb207039d72e1d1788d499bd4eb3ef64c9a701bd64ea6ed976b`  
-		Last Modified: Tue, 16 Oct 2018 00:32:44 GMT  
-		Size: 7.4 KB (7407 bytes)  
+	-	`sha256:9d74839ae7d490b651ea708992f5fa1c834e31de7e94dd4b83a389c4d1e2c0b8`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
+		Size: 7.4 KB (7410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67fde5b672179da7ecd706493fc2d1518877857e50eebe2ff9adf2b2482102fb`  
-		Last Modified: Tue, 16 Oct 2018 00:33:25 GMT  
-		Size: 60.7 MB (60730998 bytes)  
+	-	`sha256:8ec2dd6eadcd26e5b8a00348adb27733ea43ec646d0e9832788256d8bec58c2d`  
+		Last Modified: Fri, 16 Nov 2018 10:58:47 GMT  
+		Size: 60.7 MB (60731016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0110f786b6d11a091aa3c00f3f76f79d8a06838bd6d595d38486ba1e9438d77e`  
-		Last Modified: Tue, 16 Oct 2018 00:32:44 GMT  
-		Size: 169.0 B  
+	-	`sha256:7e5731919ebd292166125127870df1fcfd7138bb1af097048aa8a88f2d72dcd8`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e895cb567a5197a6bf901ec44bb8bfffdaa42fdc791874ba9850c3ba48f818ff`  
-		Last Modified: Tue, 16 Oct 2018 00:32:45 GMT  
+	-	`sha256:8aa45e17d23f640d74951e241ec149f7bf735c3e301fbd1068b2dbec604e2e30`  
+		Last Modified: Fri, 16 Nov 2018 10:58:36 GMT  
 		Size: 1.1 KB (1093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.2`
 
 ```console
-$ docker pull arangodb@sha256:b17b201f6d4365890a868a8b18d1e0f685ea43b1492907f3a494b929e1b8bbdc
+$ docker pull arangodb@sha256:1ec55085b316c736349a3aa3f1762807304aa901a9230626c574df860c4034e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -193,94 +193,94 @@ $ docker pull arangodb@sha256:b17b201f6d4365890a868a8b18d1e0f685ea43b1492907f3a4
 ### `arangodb:3.2` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:0312000c9b1261bcbb9c1f8ebb757ea3222c37b9ba370b1339733cec8524636b
+$ docker pull arangodb@sha256:9e4f975c544b170a4387c28d71d753f64fffe834b4093d7ad19f629a1c17b859
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.4 MB (113433159 bytes)**  
+-	Total Size: **113.4 MB (113447233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13856e18fd3cdf75183e2263ec2fd5e4903545390fe30c5a1fcf9c02b38a4724`
+-	Image ID: `sha256:7f25582b76d739cb7a2b928d2c4a820daf26b35d5ae245bee51b86d5110b1825`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
+# Thu, 15 Nov 2018 22:44:00 GMT
+ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / 
+# Thu, 15 Nov 2018 22:44:09 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:30:52 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_VERSION=3.2.17
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb32/Debian_9.0
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_PACKAGE=arangodb3-3.2.17-1_amd64.deb
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:37 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.17-1_amd64.deb
-# Fri, 26 Oct 2018 23:23:08 GMT
+# Fri, 16 Nov 2018 10:56:49 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.17-1_amd64.deb.asc
-# Fri, 26 Oct 2018 23:23:13 GMT
+# Fri, 16 Nov 2018 10:56:55 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gpg dirmngr     &&     rm -rf /var/lib/apt/lists/*
-# Fri, 26 Oct 2018 23:23:30 GMT
+# Fri, 16 Nov 2018 10:57:06 GMT
 RUN gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Fri, 26 Oct 2018 23:23:40 GMT
+# Fri, 16 Nov 2018 10:57:15 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1         ca-certificates         pwgen         curl         numactl     &&     rm -rf /var/lib/apt/lists/*
-# Fri, 26 Oct 2018 23:23:41 GMT
+# Fri, 16 Nov 2018 10:57:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Fri, 26 Oct 2018 23:23:54 GMT
+# Fri, 16 Nov 2018 10:57:45 GMT
 RUN curl --fail -O ${ARANGO_SIGNATURE_URL} &&           curl --fail -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf     && chgrp 0 /var/lib/arangodb3 /var/lib/arangodb3-apps     && chmod 775 /var/lib/arangodb3 /var/lib/arangodb3-apps     &&     rm -f ${ARANGO_PACKAGE}*
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:57:52 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:57:53 GMT
 COPY file:4bcca9ee8e4681827859c9d14dae31394f6111804a202c9e25898fd8dcc5c8d4 in /entrypoint.sh 
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:58:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 26 Oct 2018 23:23:56 GMT
+# Fri, 16 Nov 2018 10:58:06 GMT
 EXPOSE 8529/tcp
-# Fri, 26 Oct 2018 23:23:56 GMT
+# Fri, 16 Nov 2018 10:58:06 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
+	-	`sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486`  
+		Last Modified: Thu, 15 Nov 2018 23:08:31 GMT  
+		Size: 45.3 MB (45320257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e931f52e5c597bf7574552c5c007a3d56ff6b7f460212d5d38921496276c744`  
-		Last Modified: Fri, 26 Oct 2018 23:24:21 GMT  
-		Size: 6.6 MB (6561795 bytes)  
+	-	`sha256:4e5376dc47ad980c3dee3bb4b5719b6361685c3cd8700a893b880d67d044cdf7`  
+		Last Modified: Fri, 16 Nov 2018 11:00:47 GMT  
+		Size: 6.6 MB (6565477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2733c1e1b622c4e87bc987b8cbf473a0d3170d96119872a08aadef3b481486a`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
-		Size: 3.5 KB (3477 bytes)  
+	-	`sha256:b390c52965992501270344632fa0cebb92c6c77babce3d8ec404db1ae17e6863`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
+		Size: 3.5 KB (3471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eccb6ec0ae1086df13e4f495219a0edd0ee34e977094f6ea8361901ce2c93edf`  
-		Last Modified: Fri, 26 Oct 2018 23:24:20 GMT  
-		Size: 7.4 MB (7408554 bytes)  
+	-	`sha256:66a09c1077bac803d7fafed8e74406c541009c2dceed1fb161aff561e5b2d88c`  
+		Last Modified: Fri, 16 Nov 2018 11:00:47 GMT  
+		Size: 7.4 MB (7408705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:374f71e5282fdb31efda50bd297ccb10e8b8c9d653943b89a46de7aa6ade8d37`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
+	-	`sha256:07a0d57fc409f77e91119889f3e4df1bf2084db58f85f54ec38e73e1f5f2fa25`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae7ba8b247ede9ba5d139d77bc7e6333860fe153e007803ad999442e19cb3dd`  
-		Last Modified: Fri, 26 Oct 2018 23:24:30 GMT  
-		Size: 54.1 MB (54147245 bytes)  
+	-	`sha256:892bfb33d78fc95d78bf58235b11a3eb594be60d99fc12b1cd7b328df15fd337`  
+		Last Modified: Fri, 16 Nov 2018 11:00:57 GMT  
+		Size: 54.1 MB (54147171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:086b23921fae67853d9a06799865c43ecabbf947736c9a83d02a4a003382efc6`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
-		Size: 2.0 KB (2039 bytes)  
+	-	`sha256:2162b4a0b9694459700c03015e9dd6feff8f8ae2bbb7c1b1b413ca7fbe661aed`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
+		Size: 2.0 KB (2037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.2.17`
 
 ```console
-$ docker pull arangodb@sha256:b17b201f6d4365890a868a8b18d1e0f685ea43b1492907f3a494b929e1b8bbdc
+$ docker pull arangodb@sha256:1ec55085b316c736349a3aa3f1762807304aa901a9230626c574df860c4034e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -290,94 +290,94 @@ $ docker pull arangodb@sha256:b17b201f6d4365890a868a8b18d1e0f685ea43b1492907f3a4
 ### `arangodb:3.2.17` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:0312000c9b1261bcbb9c1f8ebb757ea3222c37b9ba370b1339733cec8524636b
+$ docker pull arangodb@sha256:9e4f975c544b170a4387c28d71d753f64fffe834b4093d7ad19f629a1c17b859
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.4 MB (113433159 bytes)**  
+-	Total Size: **113.4 MB (113447233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13856e18fd3cdf75183e2263ec2fd5e4903545390fe30c5a1fcf9c02b38a4724`
+-	Image ID: `sha256:7f25582b76d739cb7a2b928d2c4a820daf26b35d5ae245bee51b86d5110b1825`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
+# Thu, 15 Nov 2018 22:44:00 GMT
+ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / 
+# Thu, 15 Nov 2018 22:44:09 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:30:52 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_VERSION=3.2.17
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb32/Debian_9.0
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:36 GMT
 ENV ARANGO_PACKAGE=arangodb3-3.2.17-1_amd64.deb
-# Fri, 26 Oct 2018 23:23:07 GMT
+# Fri, 16 Nov 2018 10:56:37 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.17-1_amd64.deb
-# Fri, 26 Oct 2018 23:23:08 GMT
+# Fri, 16 Nov 2018 10:56:49 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.17-1_amd64.deb.asc
-# Fri, 26 Oct 2018 23:23:13 GMT
+# Fri, 16 Nov 2018 10:56:55 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gpg dirmngr     &&     rm -rf /var/lib/apt/lists/*
-# Fri, 26 Oct 2018 23:23:30 GMT
+# Fri, 16 Nov 2018 10:57:06 GMT
 RUN gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Fri, 26 Oct 2018 23:23:40 GMT
+# Fri, 16 Nov 2018 10:57:15 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1         ca-certificates         pwgen         curl         numactl     &&     rm -rf /var/lib/apt/lists/*
-# Fri, 26 Oct 2018 23:23:41 GMT
+# Fri, 16 Nov 2018 10:57:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Fri, 26 Oct 2018 23:23:54 GMT
+# Fri, 16 Nov 2018 10:57:45 GMT
 RUN curl --fail -O ${ARANGO_SIGNATURE_URL} &&           curl --fail -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf     && chgrp 0 /var/lib/arangodb3 /var/lib/arangodb3-apps     && chmod 775 /var/lib/arangodb3 /var/lib/arangodb3-apps     &&     rm -f ${ARANGO_PACKAGE}*
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:57:52 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:57:53 GMT
 COPY file:4bcca9ee8e4681827859c9d14dae31394f6111804a202c9e25898fd8dcc5c8d4 in /entrypoint.sh 
-# Fri, 26 Oct 2018 23:23:55 GMT
+# Fri, 16 Nov 2018 10:58:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 26 Oct 2018 23:23:56 GMT
+# Fri, 16 Nov 2018 10:58:06 GMT
 EXPOSE 8529/tcp
-# Fri, 26 Oct 2018 23:23:56 GMT
+# Fri, 16 Nov 2018 10:58:06 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
+	-	`sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486`  
+		Last Modified: Thu, 15 Nov 2018 23:08:31 GMT  
+		Size: 45.3 MB (45320257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e931f52e5c597bf7574552c5c007a3d56ff6b7f460212d5d38921496276c744`  
-		Last Modified: Fri, 26 Oct 2018 23:24:21 GMT  
-		Size: 6.6 MB (6561795 bytes)  
+	-	`sha256:4e5376dc47ad980c3dee3bb4b5719b6361685c3cd8700a893b880d67d044cdf7`  
+		Last Modified: Fri, 16 Nov 2018 11:00:47 GMT  
+		Size: 6.6 MB (6565477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2733c1e1b622c4e87bc987b8cbf473a0d3170d96119872a08aadef3b481486a`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
-		Size: 3.5 KB (3477 bytes)  
+	-	`sha256:b390c52965992501270344632fa0cebb92c6c77babce3d8ec404db1ae17e6863`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
+		Size: 3.5 KB (3471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eccb6ec0ae1086df13e4f495219a0edd0ee34e977094f6ea8361901ce2c93edf`  
-		Last Modified: Fri, 26 Oct 2018 23:24:20 GMT  
-		Size: 7.4 MB (7408554 bytes)  
+	-	`sha256:66a09c1077bac803d7fafed8e74406c541009c2dceed1fb161aff561e5b2d88c`  
+		Last Modified: Fri, 16 Nov 2018 11:00:47 GMT  
+		Size: 7.4 MB (7408705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:374f71e5282fdb31efda50bd297ccb10e8b8c9d653943b89a46de7aa6ade8d37`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
+	-	`sha256:07a0d57fc409f77e91119889f3e4df1bf2084db58f85f54ec38e73e1f5f2fa25`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae7ba8b247ede9ba5d139d77bc7e6333860fe153e007803ad999442e19cb3dd`  
-		Last Modified: Fri, 26 Oct 2018 23:24:30 GMT  
-		Size: 54.1 MB (54147245 bytes)  
+	-	`sha256:892bfb33d78fc95d78bf58235b11a3eb594be60d99fc12b1cd7b328df15fd337`  
+		Last Modified: Fri, 16 Nov 2018 11:00:57 GMT  
+		Size: 54.1 MB (54147171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:086b23921fae67853d9a06799865c43ecabbf947736c9a83d02a4a003382efc6`  
-		Last Modified: Fri, 26 Oct 2018 23:24:18 GMT  
-		Size: 2.0 KB (2039 bytes)  
+	-	`sha256:2162b4a0b9694459700c03015e9dd6feff8f8ae2bbb7c1b1b413ca7fbe661aed`  
+		Last Modified: Fri, 16 Nov 2018 11:00:45 GMT  
+		Size: 2.0 KB (2037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.3`
 
 ```console
-$ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08bf9447cc62c54f
+$ docker pull arangodb@sha256:8ba2b9d8e67869bf8c39065a2db7b0c077b0008a9beb08baddfc328cdcbe9a83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -387,94 +387,94 @@ $ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08
 ### `arangodb:3.3` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:a58f5ec9fe82f188466c5dd29a9d8ae947ae49780e5c9757c383deddd28853be
+$ docker pull arangodb@sha256:73c79c2950686241e82cecfc411f93f9cd8b860ed2a992f962cf5a41fbfd4b91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117606306 bytes)**  
+-	Total Size: **117.6 MB (117620626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f9daf3358dd6ff7da0a7208ce18d7a61f67f92a587835718876015194b1547a`
+-	Image ID: `sha256:bd28f3d79deaac846fb8869a6349278a92cda4cc1f04ad72390e6d74c5e90e35`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
+# Thu, 15 Nov 2018 22:44:00 GMT
+ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / 
+# Thu, 15 Nov 2018 22:44:09 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:30:52 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Thu, 25 Oct 2018 01:03:47 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_VERSION=3.3.19
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb33/Debian_9.0
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_PACKAGE=arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb.asc
-# Thu, 25 Oct 2018 01:03:55 GMT
+# Fri, 16 Nov 2018 10:53:58 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gpg dirmngr     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:06 GMT
+# Fri, 16 Nov 2018 10:54:48 GMT
 RUN gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Thu, 25 Oct 2018 01:04:16 GMT
+# Fri, 16 Nov 2018 10:55:08 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1         ca-certificates         pwgen         curl         numactl     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:17 GMT
+# Fri, 16 Nov 2018 10:55:13 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:26 GMT
 RUN curl --fail -O ${ARANGO_SIGNATURE_URL} &&           curl --fail -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf     && chgrp 0 /var/lib/arangodb3 /var/lib/arangodb3-apps     && chmod 775 /var/lib/arangodb3 /var/lib/arangodb3-apps     &&     rm -f ${ARANGO_PACKAGE}*
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:27 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:28 GMT
 COPY file:4bcca9ee8e4681827859c9d14dae31394f6111804a202c9e25898fd8dcc5c8d4 in /entrypoint.sh 
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 EXPOSE 8529/tcp
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
+	-	`sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486`  
+		Last Modified: Thu, 15 Nov 2018 23:08:31 GMT  
+		Size: 45.3 MB (45320257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b71184a3ad0a62e6a0836cacfb7ed719eb80b078a8af322639a2eeb254716e8d`  
-		Last Modified: Thu, 25 Oct 2018 01:04:51 GMT  
-		Size: 6.6 MB (6561805 bytes)  
+	-	`sha256:bbcdb0d9835cd8a8c309e9a8c91ba7419a49c598a1b5521c9d94ef3508038bf7`  
+		Last Modified: Fri, 16 Nov 2018 10:59:30 GMT  
+		Size: 6.6 MB (6565475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b945b03376b5f727a2cd22d863cc3384e2bc6869286435ee664e2d46c37e10a9`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
-		Size: 3.5 KB (3467 bytes)  
+	-	`sha256:07f888914c506d27fbdf52443daa4cbffc89111c57a642a204f0b55056e8b2f8`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 3.5 KB (3470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16e480ad8188adf4b5c4decfd09aa5df2e344cd3677fd43f66eabd4dbd6c79b`  
-		Last Modified: Thu, 25 Oct 2018 01:04:50 GMT  
-		Size: 7.4 MB (7408565 bytes)  
+	-	`sha256:5ef9cb0e57ed6384eb8ff51b190aa0657490a30843707fdc42454c95a0ac75f1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:29 GMT  
+		Size: 7.4 MB (7408777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f21ba9c3c432b9da243ee547b6e9feb69dababf7915e870e58c4efb20eb7eff`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
+	-	`sha256:3f6a514897da7ab8e6aa69f8f9e65c3748ddbeecd803c7aa5c1ab2e98e47e160`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e161ba20857c41402c0b316e35c96f7025293a99a63bc328ee1418e9e429299`  
-		Last Modified: Thu, 25 Oct 2018 01:05:04 GMT  
-		Size: 58.3 MB (58320383 bytes)  
+	-	`sha256:dbdbdb2e2af3b4df5945ada29988167c8caa12b0b689e87e446e5012d6c58379`  
+		Last Modified: Fri, 16 Nov 2018 10:59:40 GMT  
+		Size: 58.3 MB (58320494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035794471fbe9b7c45c0a75270abf42741542d8e2d863d330870b431235e6e57`  
-		Last Modified: Thu, 25 Oct 2018 01:04:49 GMT  
-		Size: 2.0 KB (2037 bytes)  
+	-	`sha256:fcdb5fe9a71a551ebd299e865357fbc15562b86072d74a4f55a7c3a27dd67fa1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 2.0 KB (2038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.3.19`
 
 ```console
-$ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08bf9447cc62c54f
+$ docker pull arangodb@sha256:8ba2b9d8e67869bf8c39065a2db7b0c077b0008a9beb08baddfc328cdcbe9a83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -484,94 +484,94 @@ $ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08
 ### `arangodb:3.3.19` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:a58f5ec9fe82f188466c5dd29a9d8ae947ae49780e5c9757c383deddd28853be
+$ docker pull arangodb@sha256:73c79c2950686241e82cecfc411f93f9cd8b860ed2a992f962cf5a41fbfd4b91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117606306 bytes)**  
+-	Total Size: **117.6 MB (117620626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f9daf3358dd6ff7da0a7208ce18d7a61f67f92a587835718876015194b1547a`
+-	Image ID: `sha256:bd28f3d79deaac846fb8869a6349278a92cda4cc1f04ad72390e6d74c5e90e35`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
+# Thu, 15 Nov 2018 22:44:00 GMT
+ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / 
+# Thu, 15 Nov 2018 22:44:09 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:30:52 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Thu, 25 Oct 2018 01:03:47 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_VERSION=3.3.19
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb33/Debian_9.0
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_PACKAGE=arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb.asc
-# Thu, 25 Oct 2018 01:03:55 GMT
+# Fri, 16 Nov 2018 10:53:58 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gpg dirmngr     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:06 GMT
+# Fri, 16 Nov 2018 10:54:48 GMT
 RUN gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Thu, 25 Oct 2018 01:04:16 GMT
+# Fri, 16 Nov 2018 10:55:08 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1         ca-certificates         pwgen         curl         numactl     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:17 GMT
+# Fri, 16 Nov 2018 10:55:13 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:26 GMT
 RUN curl --fail -O ${ARANGO_SIGNATURE_URL} &&           curl --fail -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf     && chgrp 0 /var/lib/arangodb3 /var/lib/arangodb3-apps     && chmod 775 /var/lib/arangodb3 /var/lib/arangodb3-apps     &&     rm -f ${ARANGO_PACKAGE}*
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:27 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:28 GMT
 COPY file:4bcca9ee8e4681827859c9d14dae31394f6111804a202c9e25898fd8dcc5c8d4 in /entrypoint.sh 
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 EXPOSE 8529/tcp
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
+	-	`sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486`  
+		Last Modified: Thu, 15 Nov 2018 23:08:31 GMT  
+		Size: 45.3 MB (45320257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b71184a3ad0a62e6a0836cacfb7ed719eb80b078a8af322639a2eeb254716e8d`  
-		Last Modified: Thu, 25 Oct 2018 01:04:51 GMT  
-		Size: 6.6 MB (6561805 bytes)  
+	-	`sha256:bbcdb0d9835cd8a8c309e9a8c91ba7419a49c598a1b5521c9d94ef3508038bf7`  
+		Last Modified: Fri, 16 Nov 2018 10:59:30 GMT  
+		Size: 6.6 MB (6565475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b945b03376b5f727a2cd22d863cc3384e2bc6869286435ee664e2d46c37e10a9`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
-		Size: 3.5 KB (3467 bytes)  
+	-	`sha256:07f888914c506d27fbdf52443daa4cbffc89111c57a642a204f0b55056e8b2f8`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 3.5 KB (3470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16e480ad8188adf4b5c4decfd09aa5df2e344cd3677fd43f66eabd4dbd6c79b`  
-		Last Modified: Thu, 25 Oct 2018 01:04:50 GMT  
-		Size: 7.4 MB (7408565 bytes)  
+	-	`sha256:5ef9cb0e57ed6384eb8ff51b190aa0657490a30843707fdc42454c95a0ac75f1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:29 GMT  
+		Size: 7.4 MB (7408777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f21ba9c3c432b9da243ee547b6e9feb69dababf7915e870e58c4efb20eb7eff`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
+	-	`sha256:3f6a514897da7ab8e6aa69f8f9e65c3748ddbeecd803c7aa5c1ab2e98e47e160`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e161ba20857c41402c0b316e35c96f7025293a99a63bc328ee1418e9e429299`  
-		Last Modified: Thu, 25 Oct 2018 01:05:04 GMT  
-		Size: 58.3 MB (58320383 bytes)  
+	-	`sha256:dbdbdb2e2af3b4df5945ada29988167c8caa12b0b689e87e446e5012d6c58379`  
+		Last Modified: Fri, 16 Nov 2018 10:59:40 GMT  
+		Size: 58.3 MB (58320494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035794471fbe9b7c45c0a75270abf42741542d8e2d863d330870b431235e6e57`  
-		Last Modified: Thu, 25 Oct 2018 01:04:49 GMT  
-		Size: 2.0 KB (2037 bytes)  
+	-	`sha256:fcdb5fe9a71a551ebd299e865357fbc15562b86072d74a4f55a7c3a27dd67fa1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 2.0 KB (2038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:latest`
 
 ```console
-$ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08bf9447cc62c54f
+$ docker pull arangodb@sha256:8ba2b9d8e67869bf8c39065a2db7b0c077b0008a9beb08baddfc328cdcbe9a83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -581,86 +581,86 @@ $ docker pull arangodb@sha256:19e54f128c19b350f23bcdeb8557f55df7975f99977a498d08
 ### `arangodb:latest` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:a58f5ec9fe82f188466c5dd29a9d8ae947ae49780e5c9757c383deddd28853be
+$ docker pull arangodb@sha256:73c79c2950686241e82cecfc411f93f9cd8b860ed2a992f962cf5a41fbfd4b91
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117606306 bytes)**  
+-	Total Size: **117.6 MB (117620626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f9daf3358dd6ff7da0a7208ce18d7a61f67f92a587835718876015194b1547a`
+-	Image ID: `sha256:bd28f3d79deaac846fb8869a6349278a92cda4cc1f04ad72390e6d74c5e90e35`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
+# Thu, 15 Nov 2018 22:44:00 GMT
+ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / 
+# Thu, 15 Nov 2018 22:44:09 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:30:52 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:49 GMT
 ENV ARCHITECTURE=amd64
-# Tue, 16 Oct 2018 00:30:53 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Thu, 25 Oct 2018 01:03:47 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_VERSION=3.3.19
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_URL=https://download.arangodb.com/arangodb33/Debian_9.0
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:50 GMT
 ENV ARANGO_PACKAGE=arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb
-# Thu, 25 Oct 2018 01:03:48 GMT
+# Fri, 16 Nov 2018 10:53:51 GMT
 ENV ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb33/Debian_9.0/amd64/arangodb3-3.3.19-1_amd64.deb.asc
-# Thu, 25 Oct 2018 01:03:55 GMT
+# Fri, 16 Nov 2018 10:53:58 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends gpg dirmngr     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:06 GMT
+# Fri, 16 Nov 2018 10:54:48 GMT
 RUN gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Thu, 25 Oct 2018 01:04:16 GMT
+# Fri, 16 Nov 2018 10:55:08 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1         ca-certificates         pwgen         curl         numactl     &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Oct 2018 01:04:17 GMT
+# Fri, 16 Nov 2018 10:55:13 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:26 GMT
 RUN curl --fail -O ${ARANGO_SIGNATURE_URL} &&           curl --fail -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf     && chgrp 0 /var/lib/arangodb3 /var/lib/arangodb3-apps     && chmod 775 /var/lib/arangodb3 /var/lib/arangodb3-apps     &&     rm -f ${ARANGO_PACKAGE}*
-# Thu, 25 Oct 2018 01:04:31 GMT
+# Fri, 16 Nov 2018 10:55:27 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:28 GMT
 COPY file:4bcca9ee8e4681827859c9d14dae31394f6111804a202c9e25898fd8dcc5c8d4 in /entrypoint.sh 
-# Thu, 25 Oct 2018 01:04:32 GMT
+# Fri, 16 Nov 2018 10:55:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 EXPOSE 8529/tcp
-# Thu, 25 Oct 2018 01:04:33 GMT
+# Fri, 16 Nov 2018 10:55:41 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
+	-	`sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486`  
+		Last Modified: Thu, 15 Nov 2018 23:08:31 GMT  
+		Size: 45.3 MB (45320257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b71184a3ad0a62e6a0836cacfb7ed719eb80b078a8af322639a2eeb254716e8d`  
-		Last Modified: Thu, 25 Oct 2018 01:04:51 GMT  
-		Size: 6.6 MB (6561805 bytes)  
+	-	`sha256:bbcdb0d9835cd8a8c309e9a8c91ba7419a49c598a1b5521c9d94ef3508038bf7`  
+		Last Modified: Fri, 16 Nov 2018 10:59:30 GMT  
+		Size: 6.6 MB (6565475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b945b03376b5f727a2cd22d863cc3384e2bc6869286435ee664e2d46c37e10a9`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
-		Size: 3.5 KB (3467 bytes)  
+	-	`sha256:07f888914c506d27fbdf52443daa4cbffc89111c57a642a204f0b55056e8b2f8`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 3.5 KB (3470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16e480ad8188adf4b5c4decfd09aa5df2e344cd3677fd43f66eabd4dbd6c79b`  
-		Last Modified: Thu, 25 Oct 2018 01:04:50 GMT  
-		Size: 7.4 MB (7408565 bytes)  
+	-	`sha256:5ef9cb0e57ed6384eb8ff51b190aa0657490a30843707fdc42454c95a0ac75f1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:29 GMT  
+		Size: 7.4 MB (7408777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f21ba9c3c432b9da243ee547b6e9feb69dababf7915e870e58c4efb20eb7eff`  
-		Last Modified: Thu, 25 Oct 2018 01:04:48 GMT  
+	-	`sha256:3f6a514897da7ab8e6aa69f8f9e65c3748ddbeecd803c7aa5c1ab2e98e47e160`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e161ba20857c41402c0b316e35c96f7025293a99a63bc328ee1418e9e429299`  
-		Last Modified: Thu, 25 Oct 2018 01:05:04 GMT  
-		Size: 58.3 MB (58320383 bytes)  
+	-	`sha256:dbdbdb2e2af3b4df5945ada29988167c8caa12b0b689e87e446e5012d6c58379`  
+		Last Modified: Fri, 16 Nov 2018 10:59:40 GMT  
+		Size: 58.3 MB (58320494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035794471fbe9b7c45c0a75270abf42741542d8e2d863d330870b431235e6e57`  
-		Last Modified: Thu, 25 Oct 2018 01:04:49 GMT  
-		Size: 2.0 KB (2037 bytes)  
+	-	`sha256:fcdb5fe9a71a551ebd299e865357fbc15562b86072d74a4f55a7c3a27dd67fa1`  
+		Last Modified: Fri, 16 Nov 2018 10:59:28 GMT  
+		Size: 2.0 KB (2038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
