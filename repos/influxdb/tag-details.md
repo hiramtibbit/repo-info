@@ -27,8 +27,8 @@
 -	[`influxdb:1.6-meta`](#influxdb16-meta)
 -	[`influxdb:1.6-meta-alpine`](#influxdb16-meta-alpine)
 -	[`influxdb:1.7`](#influxdb17)
--	[`influxdb:1.7.0`](#influxdb170)
--	[`influxdb:1.7.0-alpine`](#influxdb170-alpine)
+-	[`influxdb:1.7.1`](#influxdb171)
+-	[`influxdb:1.7.1-alpine`](#influxdb171-alpine)
 -	[`influxdb:1.7-alpine`](#influxdb17-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
 -	[`influxdb:data`](#influxdbdata)
@@ -2942,7 +2942,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.7.0`
+## `influxdb:1.7.1`
 
 ```console
 $ docker pull influxdb@sha256:18ea71225fd670be1e1b5ab747c3f2ce8f3fc94efc016d47509272cec293d2cc
@@ -2954,7 +2954,7 @@ $ docker pull influxdb@sha256:18ea71225fd670be1e1b5ab747c3f2ce8f3fc94efc016d4750
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `influxdb:1.7.0` - linux; amd64
+### `influxdb:1.7.1` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:247f4f172a04d93a664d4fd15b384665a100742a7b280303ffa1184b10a898bf
@@ -3033,7 +3033,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `influxdb:1.7.0` - linux; arm variant v7
+### `influxdb:1.7.1` - linux; arm variant v7
 
 ```console
 $ docker pull influxdb@sha256:e59725a36ad49d0a56222df8c50a1a515af1106923bb8c2ca9787d3fc01d3fe6
@@ -3112,7 +3112,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `influxdb:1.7.0` - linux; arm64 variant v8
+### `influxdb:1.7.1` - linux; arm64 variant v8
 
 ```console
 $ docker pull influxdb@sha256:a19f49148808bd090ea6a415ed24e7b3db53b15ae9b478eeb5f9405521f6ea2a
@@ -3191,7 +3191,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.7.0-alpine`
+## `influxdb:1.7.1-alpine`
 
 ```console
 $ docker pull influxdb@sha256:9d9bb506cf03b333d146de8d6dd436b9f972de80d71cfe6f00b58876b1523c71
@@ -3201,7 +3201,7 @@ $ docker pull influxdb@sha256:9d9bb506cf03b333d146de8d6dd436b9f972de80d71cfe6f00
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.7.0-alpine` - linux; amd64
+### `influxdb:1.7.1-alpine` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:400bcf884e6fb68142496e5d5b1cdf84d13f62ac90cda73434aeb867a4d4e86f
