@@ -1,7 +1,7 @@
 ## `openjdk:11-jre`
 
 ```console
-$ docker pull openjdk@sha256:20f5a2304e9bc26ffd7dfd3ac014debb491f69c18f37d44fa24aabe1f2b17234
+$ docker pull openjdk@sha256:0ad83bac552194f8d4a60ea2350268b1a723feb854ee9ee3d0363a2e656897f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -437,69 +437,69 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:11-jre` - linux; s390x
 
 ```console
-$ docker pull openjdk@sha256:1c8a5e57373f25d69f9888fc5f44feed1215ee5f39a9802086e4cda31e00f902
+$ docker pull openjdk@sha256:5fb736b58d4dd084ac740828d568c2f91d727c6e792243a9e2d445db1945e1a5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.5 MB (195456053 bytes)**  
+-	Total Size: **197.4 MB (197423873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7b14e845da1a2c42339e500595f702f3a02753ddcba051c9b893dedba1f4b08`
+-	Image ID: `sha256:6fedb0861edff3cbe77d8d1de61ab04980fa118c206a2a3a046370f781644f32`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 16 Oct 2018 11:41:58 GMT
-ADD file:c2788418bf37902fd1afb90f8c09580137baf257270ad310c93f4617b2910c5c in / 
-# Tue, 16 Oct 2018 11:41:58 GMT
+# Fri, 16 Nov 2018 12:42:33 GMT
+ADD file:77fbcf3a7fd8e7c1d35c9b0144f5dcef5228f477c512b3de313b5f9f8106c20b in / 
+# Fri, 16 Nov 2018 12:42:34 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 12:52:21 GMT
+# Fri, 16 Nov 2018 20:14:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 12:52:31 GMT
+# Fri, 16 Nov 2018 20:14:53 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 16 Oct 2018 13:01:58 GMT
+# Fri, 16 Nov 2018 20:46:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 13:01:59 GMT
+# Fri, 16 Nov 2018 20:46:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 16 Oct 2018 13:01:59 GMT
+# Fri, 16 Nov 2018 20:46:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 16 Oct 2018 13:02:00 GMT
+# Fri, 16 Nov 2018 20:46:28 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 16 Oct 2018 13:02:00 GMT
+# Fri, 16 Nov 2018 20:46:28 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 19 Oct 2018 11:48:50 GMT
+# Fri, 16 Nov 2018 20:46:28 GMT
 ENV JAVA_VERSION=11.0.1
-# Fri, 19 Oct 2018 11:48:50 GMT
+# Fri, 16 Nov 2018 20:46:28 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.1+13-2
-# Fri, 19 Oct 2018 11:49:27 GMT
+# Fri, 16 Nov 2018 20:47:23 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:3d678438ae7450e08efed3c628d6a7e353e585928d4dfe02330f09708b274772`  
-		Last Modified: Tue, 16 Oct 2018 11:44:43 GMT  
-		Size: 47.7 MB (47695841 bytes)  
+	-	`sha256:b5f718c394fe29f847c837a4abaeea5358350a23da072857d9a17d7b3f835ba6`  
+		Last Modified: Thu, 15 Nov 2018 01:49:01 GMT  
+		Size: 47.9 MB (47868485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:370423f265313c06fe7dd635c4b99d81682ced500c2b77a849335c6f0d80cc04`  
-		Last Modified: Tue, 16 Oct 2018 12:57:15 GMT  
-		Size: 7.0 MB (7035166 bytes)  
+	-	`sha256:41806c8eb45b71025055bb1e6fd1976203b50f81a43cd4d17ecd2e08bf1ca416`  
+		Last Modified: Fri, 16 Nov 2018 20:22:12 GMT  
+		Size: 7.0 MB (7044644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdeca24a03568efca643ee17996da4af2979d3da4313f8c2b884ffa852c56204`  
-		Last Modified: Tue, 16 Oct 2018 12:57:15 GMT  
-		Size: 9.7 MB (9670377 bytes)  
+	-	`sha256:311646161ff8988e1dbd14a16907d30a4e22f1b324c178e21580877b40c200d0`  
+		Last Modified: Fri, 16 Nov 2018 20:22:12 GMT  
+		Size: 9.7 MB (9670979 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:256ad90c7474b5de835e3ab64dd8c8dca01d9691e402f0f46d9dda0488fb7dd3`  
-		Last Modified: Tue, 16 Oct 2018 13:08:34 GMT  
-		Size: 856.8 KB (856842 bytes)  
+	-	`sha256:d3daa5e6ccb5d5a10075a97563ac4cb3bc6bfb05665231d741f838f2c4695418`  
+		Last Modified: Fri, 16 Nov 2018 21:01:05 GMT  
+		Size: 856.8 KB (856763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a5854269e98a3a87d6f9c36043fc6855b5b395fa7b410e89b424646e03e3df`  
-		Last Modified: Tue, 16 Oct 2018 13:08:34 GMT  
-		Size: 239.0 B  
+	-	`sha256:a08bf9b3fa4478baac5ba087a103482d1bdc6d787761586c7927c6d291478ac4`  
+		Last Modified: Fri, 16 Nov 2018 21:01:04 GMT  
+		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce3d61be69c759d3383ecb88eea7da9f98a2e3642e0c1d709dbb9ce3c23c79af`  
-		Last Modified: Tue, 16 Oct 2018 13:08:34 GMT  
-		Size: 132.0 B  
+	-	`sha256:008dde56645221b49e6dd4468e789c72f166aa3b1039849f4a0a2e66f4fc2ae3`  
+		Last Modified: Fri, 16 Nov 2018 21:01:04 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5507253393a991f4a65d3b624c968160d04a669388a58488efa6ea4678eaac92`  
-		Last Modified: Fri, 19 Oct 2018 11:53:44 GMT  
-		Size: 130.2 MB (130197456 bytes)  
+	-	`sha256:aa4b13b7773fd52602a46f3b654bfd9f4a4ddc2be1e2bdd73c982c3855ffc83f`  
+		Last Modified: Fri, 16 Nov 2018 21:01:34 GMT  
+		Size: 132.0 MB (131982632 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
