@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:71a805e93bb9d305272d65f328f6ef63626e79acfa6f6d04c72efb0d1d9c0fcc`
-- Created: `2018-10-16T06:46:19.239779431Z`
-- Virtual Size: ~ 219.59 Mb  
+- Image ID: `sha256:304daaefe9ea822745b64c75d117b8ef40b5567c267e2e0a5f4fc48bf182c807`
+- Created: `2018-11-16T12:34:14.419477599Z`
+- Virtual Size: ~ 219.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -374,19 +374,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.192/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.192/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cli-common=0.9+xamarin7+debian8b1`
+### `dpkg` source package: `cli-common=0.9+xamarin8+debian8b1`
 
 Binary Packages:
 
-- `cli-common=0.9+xamarin7+debian8b1`
+- `cli-common=0.9+xamarin8+debian8b1`
 
 Licenses: (parsed from: `/usr/share/doc/cli-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cli-common=0.9+xamarin8+debian8b1
+'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin8+debian8b1.dsc' cli-common_0.9+xamarin8+debian8b1.dsc 1114 SHA256:445c715e70c8fb42a1f948f442ba96e384e1e37efca3195e2cdda83b09c6235a
+'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9+xamarin8+debian8b1.tar.gz' cli-common_0.9+xamarin8+debian8b1.tar.gz 256775 SHA256:56950b9225aa5dd32458c976c51988ff341a45a1921c5fd8cda1c9c38e0e20ef
+```
 
 ### `dpkg` source package: `coreutils=8.23-4`
 
@@ -2776,11 +2780,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018e-0+deb8u1`
+### `dpkg` source package: `tzdata=2018g-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018e-0+deb8u1`
+- `tzdata=2018g-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2789,17 +2793,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018e-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.dsc' tzdata_2018e-0+deb8u1.dsc 1985 SHA256:b726a8d125c934311d4a9a6640ae5ef373dfc390fa031096467e932e4ab3aef0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.debian.tar.xz' tzdata_2018e-0+deb8u1.debian.tar.xz 102688 SHA256:8f7f886c171573386296ac92e5a198d67e8c1fd19097dd44bb8b3f7922df7970
+$ apt-get source -qq --print-uris tzdata=2018g-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.dsc' tzdata_2018g-0+deb8u1.dsc 2018 SHA256:f40170aeb0283ee7fe0d74573b868952cfaa50d02ad535f3cb4937c8bc9c5500
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.debian.tar.xz' tzdata_2018g-0+deb8u1.debian.tar.xz 104188 SHA256:bbc313ee2d22d6f432917f9792033d353406862f85ce5d978c6e36610ce48fcd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018g-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
