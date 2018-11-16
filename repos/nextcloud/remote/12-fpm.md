@@ -1,7 +1,7 @@
 ## `nextcloud:12-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:73a51cd9160282990f22d7da7e38ded4149fbcf57e08bc61109162e5b24e368c
+$ docker pull nextcloud@sha256:601e8e1dab6e0ed63a2c4e8918b861f97f4638e0f5437b70f37d8dd4a26d9fc9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -470,14 +470,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:b381bbdd68907504c3320360ede20772ada273b19e2882bf2456fb896edd92bf
+$ docker pull nextcloud@sha256:7a0a46563a0d2808b5379ece076a2c446a32edcd35fd7de0a002a14cf4870b12
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.8 MB (172767243 bytes)**  
+-	Total Size: **172.8 MB (172767298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:729367891a04664138947855a7bd9dd5faa263a65b7ce2ac712017ab89d7ef5d`
+-	Image ID: `sha256:8a86072dd278c1a4117d68fd387c02f2fdeaefbc047146025dbf889162f3c160`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -540,15 +540,15 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 17 Oct 2018 06:34:08 GMT
 ENV NEXTCLOUD_VERSION=12.0.12
-# Wed, 17 Oct 2018 06:35:09 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 17 Oct 2018 06:35:11 GMT
+# Fri, 16 Nov 2018 12:40:09 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Fri, 16 Nov 2018 12:40:12 GMT
 COPY multi:81a604c4dab97e68e347c33e116ec4b72cbaeaa1a1c71fb9375c9cc9ec06291c in / 
-# Wed, 17 Oct 2018 06:35:13 GMT
+# Fri, 16 Nov 2018 12:40:13 GMT
 COPY multi:ca4d4da57eb7f9d9da17f5414c6686894b87a363e243105b8463618fd8dc681d in /usr/src/nextcloud/config/ 
-# Wed, 17 Oct 2018 06:35:13 GMT
+# Fri, 16 Nov 2018 12:40:14 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 17 Oct 2018 06:35:14 GMT
+# Fri, 16 Nov 2018 12:40:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -605,16 +605,16 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Oct 2018 07:07:01 GMT  
 		Size: 521.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:648905e762d7e0eee50455a76e4e383bf600403543175a839de58f12d18952f7`  
-		Last Modified: Wed, 17 Oct 2018 07:07:22 GMT  
-		Size: 50.3 MB (50338904 bytes)  
+	-	`sha256:9d6503907bd3061d7ffec0adbc1e3ae7a9dd85df22efba1cc20bb32735b83e63`  
+		Last Modified: Fri, 16 Nov 2018 13:22:51 GMT  
+		Size: 50.3 MB (50338960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7143fc08b0a16b62dc0fa79043e90b84f5c500ff7508a0a373bb2f4b2b449455`  
-		Last Modified: Wed, 17 Oct 2018 07:07:02 GMT  
-		Size: 1.9 KB (1910 bytes)  
+	-	`sha256:3683cdd2df06f3a09e0c996840e9a31434a3f10edd53fffe2a60336ed0bdf149`  
+		Last Modified: Fri, 16 Nov 2018 13:22:17 GMT  
+		Size: 1.9 KB (1909 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ad7c281381aa214cf57291f709562052aa2ca976e8da509d46b321c0325cf53`  
-		Last Modified: Wed, 17 Oct 2018 07:07:01 GMT  
+	-	`sha256:b3f5a1d6809260160e2c978396069cd41e21ba4ab833a137d27aed31448ef4d8`  
+		Last Modified: Fri, 16 Nov 2018 13:22:18 GMT  
 		Size: 743.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -772,14 +772,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12-fpm` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:0b414b8f645402b8bf5493503c431891177424f9b0e301c4899126aa7dd2e552
+$ docker pull nextcloud@sha256:a61c645c23bc5af6ed93b7b773e378f857acf1d1305eb6b22f419ffb9b1763ab
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.6 MB (180566268 bytes)**  
+-	Total Size: **180.6 MB (180566309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:347686ab443359ae3d790ad41b93c0b6a6cef1f5a112ccbb8a54a900f4f2e3d9`
+-	Image ID: `sha256:a859ea0f15e39d1cdae5017f4adc1287ccab738ab01582cb90c66d183ea5a361`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -842,15 +842,15 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Tue, 16 Oct 2018 20:54:02 GMT
 ENV NEXTCLOUD_VERSION=12.0.12
-# Tue, 16 Oct 2018 20:55:15 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 20:55:18 GMT
+# Fri, 16 Nov 2018 12:51:04 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Fri, 16 Nov 2018 12:51:07 GMT
 COPY multi:81a604c4dab97e68e347c33e116ec4b72cbaeaa1a1c71fb9375c9cc9ec06291c in / 
-# Tue, 16 Oct 2018 20:55:20 GMT
+# Fri, 16 Nov 2018 12:51:09 GMT
 COPY multi:ca4d4da57eb7f9d9da17f5414c6686894b87a363e243105b8463618fd8dc681d in /usr/src/nextcloud/config/ 
-# Tue, 16 Oct 2018 20:55:21 GMT
+# Fri, 16 Nov 2018 12:51:11 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Oct 2018 20:55:22 GMT
+# Fri, 16 Nov 2018 12:51:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -907,17 +907,17 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 16 Oct 2018 21:20:09 GMT  
 		Size: 546.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9008c1e89c3f3a3de6b21d6fa3d717f27e3bddf9c05223d7ebc559c05e74d077`  
-		Last Modified: Tue, 16 Oct 2018 21:21:00 GMT  
-		Size: 50.3 MB (50339016 bytes)  
+	-	`sha256:e462fa75be00342c9c30637b49c87bd2b8141056076e3b0e67d584e6939060f2`  
+		Last Modified: Fri, 16 Nov 2018 13:28:56 GMT  
+		Size: 50.3 MB (50339054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5aa2b1c16a5898b3a9745bea420b51d676b0369b32e658838ae8a5f62071e73a`  
-		Last Modified: Tue, 16 Oct 2018 21:20:08 GMT  
+	-	`sha256:bfc812ea84749e5d801020f00ec675a2166d9ace2688d298c362ab9d98a63c76`  
+		Last Modified: Fri, 16 Nov 2018 13:28:18 GMT  
 		Size: 1.9 KB (1910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a6dbda4dc0daae61200659441447b1068e4f8265d270a2765f29607cddd629`  
-		Last Modified: Tue, 16 Oct 2018 21:20:09 GMT  
-		Size: 738.0 B  
+	-	`sha256:20b69f8d46bd678443db8a650dd050b9fb63de3d869b10e2597e13391da0c2b5`  
+		Last Modified: Fri, 16 Nov 2018 13:28:18 GMT  
+		Size: 741.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-fpm` - linux; s390x
