@@ -1,7 +1,7 @@
 ## `openjdk:11-jre-sid`
 
 ```console
-$ docker pull openjdk@sha256:c8af390512d30cddd9aa263a9b261e323b0548cb88829ccb70192f1fe166da25
+$ docker pull openjdk@sha256:ca1e3280c38f4d4a6ad3be56d0669cb6851c208e85cc948ec5e4d5537f596d5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,71 +17,71 @@ $ docker pull openjdk@sha256:c8af390512d30cddd9aa263a9b261e323b0548cb88829ccb701
 ### `openjdk:11-jre-sid` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ea5dffea9eed9ebe72b7530831d480bdb4accd7bedb4bfd5a2db861e185750a9
+$ docker pull openjdk@sha256:96ed2a8c1c9ce9543aa53ffd827dfb2f5ff53fce3b9e6bd38305968c8cff17b7
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.4 MB (235431467 bytes)**  
+-	Total Size: **237.5 MB (237542163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c64b1279c2cebf3f253b9d04eefe9b2ca6ba5ee8896959dcd86a8f130430980c`
+-	Image ID: `sha256:a51f82673d117210bf6dce586c3d25e4929635b22da5939e2bacf406fae78bcf`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 15 Oct 2018 23:22:53 GMT
-ADD file:12e34cd91f24d3d0c4716498cdd87838722af59e568ba8c18c457c367a53a315 in / 
-# Mon, 15 Oct 2018 23:22:53 GMT
+# Thu, 15 Nov 2018 22:39:40 GMT
+ADD file:84029df3086c983b05fbe43604e262a3500994b6a3ecfe0d463f3c8c58e0a7a1 in / 
+# Thu, 15 Nov 2018 22:39:48 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 00:58:24 GMT
+# Fri, 16 Nov 2018 11:12:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 00:58:34 GMT
+# Fri, 16 Nov 2018 11:12:11 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 16 Oct 2018 05:18:46 GMT
+# Fri, 16 Nov 2018 14:47:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 Oct 2018 05:18:46 GMT
+# Fri, 16 Nov 2018 14:47:35 GMT
 ENV LANG=C.UTF-8
-# Tue, 16 Oct 2018 05:18:47 GMT
+# Fri, 16 Nov 2018 14:47:36 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 16 Oct 2018 05:18:48 GMT
+# Fri, 16 Nov 2018 14:47:38 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 16 Oct 2018 05:18:48 GMT
+# Fri, 16 Nov 2018 14:47:38 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 19 Oct 2018 00:01:38 GMT
+# Fri, 16 Nov 2018 14:47:38 GMT
 ENV JAVA_VERSION=11.0.1
-# Fri, 19 Oct 2018 00:01:38 GMT
+# Fri, 16 Nov 2018 14:47:39 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.1+13-2
-# Fri, 19 Oct 2018 00:02:22 GMT
+# Fri, 16 Nov 2018 14:48:40 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:38517b3035164966f7e2b960f3e87e1f9178537d06992e6045fbd375b84cddfa`  
-		Last Modified: Mon, 15 Oct 2018 23:31:59 GMT  
-		Size: 49.1 MB (49107897 bytes)  
+	-	`sha256:16e82e17faef9e90ceefcd8175e9899edce768aa6008cc16dd1e3fe7d3b88bb8`  
+		Last Modified: Thu, 15 Nov 2018 23:04:08 GMT  
+		Size: 49.3 MB (49259589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d518e0b86e7ef6483709500f0dc9be4abfd5336b2516ddb335a46601ebabbd3f`  
-		Last Modified: Tue, 16 Oct 2018 01:10:56 GMT  
-		Size: 7.4 MB (7366348 bytes)  
+	-	`sha256:117dc02416a34c62e28a030f27828f2f31af6b8b1f02c85b009a1ffb390d01dc`  
+		Last Modified: Fri, 16 Nov 2018 11:30:56 GMT  
+		Size: 7.4 MB (7375503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75323769698f687431e704e4c1f298f8e803cf5a000e24ccb08f94cbf4a7fda8`  
-		Last Modified: Tue, 16 Oct 2018 01:10:55 GMT  
-		Size: 9.8 MB (9779476 bytes)  
+	-	`sha256:7e4c717259ac9c550efbbf41c6fe0dc9598046f4bfd4b398deb63f7a0c19cb3f`  
+		Last Modified: Fri, 16 Nov 2018 11:30:57 GMT  
+		Size: 9.8 MB (9780063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7961e608858b28edeca0c7c0088bf0a9f4e7d451d82f6e673e1538506a86f706`  
-		Last Modified: Tue, 16 Oct 2018 05:40:58 GMT  
-		Size: 847.9 KB (847862 bytes)  
+	-	`sha256:ff78688707a851f0821b98d726bd73c923f82850c650aa07bb2b079c9239443f`  
+		Last Modified: Fri, 16 Nov 2018 15:29:59 GMT  
+		Size: 847.8 KB (847791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08b11391f09f57b188e77665b517a3682a810faded1984ca4c765f68852d3a7`  
-		Last Modified: Tue, 16 Oct 2018 05:40:57 GMT  
-		Size: 239.0 B  
+	-	`sha256:836f4a8d99d340e17ffa455950c9b8b92303a875c4d20e0794156bbd463a4520`  
+		Last Modified: Fri, 16 Nov 2018 15:29:58 GMT  
+		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a077d7622476130b714ad4c885aad16dda281c06653d9c581f5a2821779cebd3`  
-		Last Modified: Tue, 16 Oct 2018 05:40:57 GMT  
+	-	`sha256:bebeef34911947e582305caa31fb4742319808febaf576d9b866be8b31b629e6`  
+		Last Modified: Fri, 16 Nov 2018 15:29:58 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c11eb7b6a25d149357eaafdbb0a31a12952ed115c49f3ed32f52f2bcbcc29b25`  
-		Last Modified: Fri, 19 Oct 2018 00:16:27 GMT  
-		Size: 168.3 MB (168329514 bytes)  
+	-	`sha256:8dcbfb1a2ee967a514032f93bf3a703f580cb16af021331fca08592ab5a33bcd`  
+		Last Modified: Fri, 16 Nov 2018 15:30:46 GMT  
+		Size: 170.3 MB (170278849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:11-jre-sid` - linux; arm variant v5

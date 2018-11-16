@@ -1,7 +1,7 @@
 ## `owncloud:latest`
 
 ```console
-$ docker pull owncloud@sha256:f50788567e6ef4249badf991abf2983fc72f72be021af043f93d29695a6b5d4f
+$ docker pull owncloud@sha256:9e0742d2d84aa798d0cdf9fb6112f0c5fb44cd91e69ee4f9dbe164032171ca57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -410,14 +410,14 @@ CMD ["apache2-foreground"]
 ### `owncloud:latest` - linux; arm variant v7
 
 ```console
-$ docker pull owncloud@sha256:88293a607cc4ba075c9a105c823b00b1369c75114cb463e41d236d40f3455127
+$ docker pull owncloud@sha256:c02cfabe3d4fe1a56fcc69a092f1e85fbb5cd5fa84042371961402b8847089a9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.7 MB (199650748 bytes)**  
+-	Total Size: **199.7 MB (199650757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98d004c21490f31f68a9c740bcfb319197f1ecebfd28ce778d6c59b342a5d640`
+-	Image ID: `sha256:0eca4ce616dd2a931818684a680e21a66a55481053b7d6875e06444a155a6037`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -504,13 +504,13 @@ ENV OWNCLOUD_VERSION=10.0.10
 ENV OWNCLOUD_SHA256=a2efe484678c1659b9640ea247746a2174d77870d29c7d60abd565c20eb5aa84
 # Sat, 03 Nov 2018 12:05:31 GMT
 VOLUME [/var/www/html]
-# Sat, 03 Nov 2018 12:06:23 GMT
-RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
-# Sat, 03 Nov 2018 12:06:33 GMT
+# Fri, 16 Nov 2018 14:01:31 GMT
+RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
+# Fri, 16 Nov 2018 14:01:34 GMT
 COPY file:d37f6ced72c54685115ff42b55a093ee744c3ebeb6639ddc19b28f6204890d49 in /usr/local/bin/ 
-# Sat, 03 Nov 2018 12:06:33 GMT
+# Fri, 16 Nov 2018 14:01:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 03 Nov 2018 12:06:34 GMT
+# Fri, 16 Nov 2018 14:01:35 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -595,26 +595,26 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 03 Nov 2018 12:18:39 GMT  
 		Size: 1.5 MB (1502182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0caeb570a13a48eefbbf2a7ca686f46218d0f7b19b26ec5342d499b33824f92e`  
-		Last Modified: Sat, 03 Nov 2018 12:18:54 GMT  
-		Size: 48.8 MB (48750689 bytes)  
+	-	`sha256:b9bb36003b04f22dadd921cff0da9195cafba020b5afc7e97fe643a0f0124989`  
+		Last Modified: Fri, 16 Nov 2018 14:05:33 GMT  
+		Size: 48.8 MB (48750696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0477579f9e11ea0c46d5713e9804a4645d75d06eafa837685e703db4d824950`  
-		Last Modified: Sat, 03 Nov 2018 12:18:38 GMT  
-		Size: 353.0 B  
+	-	`sha256:fb97be2a4b1413c63664ae8a9c0cda002c0e6233d2bcb362142b1b2f957620cf`  
+		Last Modified: Fri, 16 Nov 2018 14:05:18 GMT  
+		Size: 355.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `owncloud:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull owncloud@sha256:d30269b5cb821b5207899ff1ebc06c45ac560e33d8d3ae5b36fcee098af740a5
+$ docker pull owncloud@sha256:c1543747e9dacec302815033062cf0a1919a7f13d93f7fef145eb0f47a7e391f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.7 MB (207672792 bytes)**  
+-	Total Size: **207.7 MB (207672806 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe88b81cb268476c546279a6ccd4de3452a4ae6c9110d3988ea03c5b2dfc94d1`
+-	Image ID: `sha256:5cce8aa21facc23c754ea04bf979e6fafb03485173488555200f683033f9612b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -701,13 +701,13 @@ ENV OWNCLOUD_VERSION=10.0.10
 ENV OWNCLOUD_SHA256=a2efe484678c1659b9640ea247746a2174d77870d29c7d60abd565c20eb5aa84
 # Sat, 03 Nov 2018 09:26:04 GMT
 VOLUME [/var/www/html]
-# Sat, 03 Nov 2018 09:26:50 GMT
-RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
-# Sat, 03 Nov 2018 09:26:52 GMT
+# Fri, 16 Nov 2018 14:09:05 GMT
+RUN set -eux; 	curl -fL -o owncloud.tar.bz2 "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2"; 	curl -fL -o owncloud.tar.bz2.asc "https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc"; 	echo "$OWNCLOUD_SHA256 *owncloud.tar.bz2" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26; 	gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" owncloud.tar.bz2.asc; 	tar -xjf owncloud.tar.bz2 -C /usr/src/; 	rm owncloud.tar.bz2
+# Fri, 16 Nov 2018 14:09:08 GMT
 COPY file:d37f6ced72c54685115ff42b55a093ee744c3ebeb6639ddc19b28f6204890d49 in /usr/local/bin/ 
-# Sat, 03 Nov 2018 09:26:54 GMT
+# Fri, 16 Nov 2018 14:09:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 03 Nov 2018 09:26:55 GMT
+# Fri, 16 Nov 2018 14:09:10 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -792,13 +792,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 03 Nov 2018 09:51:43 GMT  
 		Size: 1.5 MB (1540355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6821b2d590bf8720f99818969d523ef393b072c3b074ce67479265c0a3456bf9`  
-		Last Modified: Sat, 03 Nov 2018 09:52:00 GMT  
-		Size: 48.8 MB (48750712 bytes)  
+	-	`sha256:057a83dfc5c7d8d9f7f02cd3f855ee9e9dff0ecb4cec81989f1c8f55de40cea4`  
+		Last Modified: Fri, 16 Nov 2018 14:13:27 GMT  
+		Size: 48.8 MB (48750728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a322ea5cdf909989dd123fa68d4533c8c07ebcb42dc5e5115458f7f0c2b39e7`  
-		Last Modified: Sat, 03 Nov 2018 09:51:42 GMT  
-		Size: 356.0 B  
+	-	`sha256:695b92a13899b319d2e3672dbab4656b4d0b2a7f53c41c660e2de7140170eed1`  
+		Last Modified: Fri, 16 Nov 2018 14:13:00 GMT  
+		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `owncloud:latest` - linux; 386
