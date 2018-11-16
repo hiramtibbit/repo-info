@@ -1,7 +1,7 @@
 ## `debian:jessie-backports`
 
 ```console
-$ docker pull debian@sha256:848e997bda1cde948132268f4634f92e90798c73bbdd8ad7af2772b4aade6399
+$ docker pull debian@sha256:5009f184355e15fa7b9e21875c6880f373744e8659a77857c1ba838aa9c842ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46,33 +46,33 @@ RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sou
 ### `debian:jessie-backports` - linux; arm variant v5
 
 ```console
-$ docker pull debian@sha256:ee4afcc6d563116cff503ec3fe8a1dc0516183260438fcefd00ca58cee373ea6
+$ docker pull debian@sha256:a257bed9c10df65d081ff4fa4bf28988d023e2e246318ae98a189cbdf1d491cc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.4 MB (52448173 bytes)**  
+-	Total Size: **52.5 MB (52544788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad6be069aaae8d9698e68901f223eab407fbf07efa23558861de1b49076dee92`
+-	Image ID: `sha256:a58a329013086807524612580355842e89568501f545370b291a852ad261dd71`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 16 Oct 2018 08:50:03 GMT
-ADD file:7b66da06b04342d6312147be471b07c9280814a36b863bd49a0217020323e65e in / 
-# Tue, 16 Oct 2018 08:50:04 GMT
+# Fri, 16 Nov 2018 09:50:40 GMT
+ADD file:51b6e570dd2584f3747b0877f1342ea36c4c8dae4b0aa0f4a114e816fde77904 in / 
+# Fri, 16 Nov 2018 09:50:41 GMT
 CMD ["bash"]
-# Tue, 16 Oct 2018 08:50:12 GMT
+# Fri, 16 Nov 2018 09:50:57 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:e4274eb716467eff2e7b204e8b5c7870ed82dd4fc89f821939b7f3017c84480f`  
-		Last Modified: Tue, 16 Oct 2018 08:59:33 GMT  
-		Size: 52.4 MB (52447946 bytes)  
+	-	`sha256:28b426da5f009c6d2c8bc1993bee5601ab4126eb8a3a2698db1d96c7f612dde8`  
+		Last Modified: Fri, 16 Nov 2018 10:05:38 GMT  
+		Size: 52.5 MB (52544563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e8023452cf8e0f8c0cad858252852931388388174876136debeecfe648c2324`  
-		Last Modified: Tue, 16 Oct 2018 08:59:49 GMT  
-		Size: 227.0 B  
+	-	`sha256:0c0bbd5cd7cef4679d11f58b128a0a19def22fd708aad857c2e2ccaa712471c3`  
+		Last Modified: Fri, 16 Nov 2018 10:06:18 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:jessie-backports` - linux; arm variant v7
