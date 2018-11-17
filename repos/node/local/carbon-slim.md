@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c136029ee5fcc8e3a2045fdc17d4a7a0366bbfb6109eeaec02047cd908ad5db1`
-- Created: `2018-10-16T06:23:56.666619502Z`
-- Virtual Size: ~ 179.00 Mb  
+- Image ID: `sha256:54f6c4036aa5712b0a6b57ef128791232fa9b1d7bdcd0b062c17cc09a1ca010d`
+- Created: `2018-11-16T14:01:26.835561368Z`
+- Virtual Size: ~ 179.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -345,12 +345,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u12`
+### `dpkg` source package: `curl=7.38.0-4+deb8u13`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u12`
-- `libcurl3:amd64=7.38.0-4+deb8u12`
+- `curl=7.38.0-4+deb8u13`
+- `libcurl3:amd64=7.38.0-4+deb8u13`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -359,13 +359,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u13
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u13.dsc' curl_7.38.0-4+deb8u13.dsc 2824 SHA256:0e3a424bd1c09fc2cd35711e521e2b288ef0ec6c06d899597d52a589a5e012e0
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u13.debian.tar.xz' curl_7.38.0-4+deb8u13.debian.tar.xz 56740 SHA256:26e740e89fe36a1ed4503b0e946dd1f8bcae23b7a7d6515986c5600b3bb352d1
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u12/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u13/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -772,11 +779,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
+### `dpkg` source package: `gnutls28=3.3.30-0+deb8u1`
 
 Binary Packages:
 
-- `libgnutls-deb0-28:amd64=3.3.8-6+deb8u7`
+- `libgnutls-deb0-28:amd64=3.3.30-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 
@@ -793,17 +800,17 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u7.dsc' gnutls28_3.3.8-6+deb8u7.dsc 2958 SHA256:a5d18c2afd4eee5d05618eb146a81bf70e761527e828987bce23609f7612a7c5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u7.debian.tar.xz' gnutls28_3.3.8-6+deb8u7.debian.tar.xz 106372 SHA256:f5bfa892ddf437ce3c8de5f55315689d03d3e484375c47599051b8f2bb4e0c07
+$ apt-get source -qq --print-uris gnutls28=3.3.30-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30-0+deb8u1.dsc' gnutls28_3.3.30-0+deb8u1.dsc 2628 SHA256:01be8c173d3ffbe984b5dddb3ada3f6e984e1219daf9d9af14c0512b965a3dbb
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30.orig.tar.xz' gnutls28_3.3.30.orig.tar.xz 6392748 SHA256:41d70107ead3de2f12390909a05eefc9a88def6cd1f0d90ea82a7dac8b8effee
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30-0+deb8u1.debian.tar.xz' gnutls28_3.3.30-0+deb8u1.debian.tar.xz 46352 SHA256:f3055451c76ba5c805f558b676bc5b83fbbc5cce9332d2fc0bece2c180165d6f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.3.8-6+deb8u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.3.30-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.3.30-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.3.30-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -2080,11 +2087,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018e-0+deb8u1`
+### `dpkg` source package: `tzdata=2018g-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018e-0+deb8u1`
+- `tzdata=2018g-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2093,17 +2100,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018e-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.dsc' tzdata_2018e-0+deb8u1.dsc 1985 SHA256:b726a8d125c934311d4a9a6640ae5ef373dfc390fa031096467e932e4ab3aef0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.debian.tar.xz' tzdata_2018e-0+deb8u1.debian.tar.xz 102688 SHA256:8f7f886c171573386296ac92e5a198d67e8c1fd19097dd44bb8b3f7922df7970
+$ apt-get source -qq --print-uris tzdata=2018g-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.dsc' tzdata_2018g-0+deb8u1.dsc 2018 SHA256:f40170aeb0283ee7fe0d74573b868952cfaa50d02ad535f3cb4937c8bc9c5500
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.debian.tar.xz' tzdata_2018g-0+deb8u1.debian.tar.xz 104188 SHA256:bbc313ee2d22d6f432917f9792033d353406862f85ce5d978c6e36610ce48fcd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018g-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
