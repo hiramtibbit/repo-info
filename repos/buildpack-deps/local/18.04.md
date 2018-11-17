@@ -3376,14 +3376,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.5-0ubuntu0.18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.dsc' postgresql-10_10.5-0ubuntu0.18.04.dsc 3602 SHA256:1a9358391f50dc8734f19d4f9fd8e1c44bc75806a7344a740ad3dc73181a5c21
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5.orig.tar.gz' postgresql-10_10.5.orig.tar.gz 26818092 SHA256:13be7053b1d8ad4e24943b24d80170574fc701b49b3f14e68a5f1bda452ce3d1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz' postgresql-10_10.5-0ubuntu0.18.04.debian.tar.xz 23668 SHA256:280337bbb790c36aaed11f08fb21d2906650616d0f344765af48edd93e8938f2
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.1`
 
