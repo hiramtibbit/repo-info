@@ -1899,20 +1899,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.dsc' systemd_232-25+deb9u4.dsc 4797 SHA256:88aff99e39acdf56fec518f994557c2f7e97b900f231ddcafa26d806998ec2d3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u4.debian.tar.xz' systemd_232-25+deb9u4.debian.tar.xz 209400 SHA256:1687f3b629a6fc21462e04ff0da3f5fe68b81298f6ec0a795246cf3e284baaf8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/232-25+deb9u4/
 
-- https://sources.debian.net/src/systemd/232-25+deb9u4/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
