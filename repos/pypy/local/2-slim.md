@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b900e9072e29084581362e88dda1fbe11ca01a6ba2813fb9719ab557ac64f7f`
-- Created: `2018-10-16T04:52:50.818656287Z`
-- Virtual Size: ~ 204.94 Mb  
+- Image ID: `sha256:aecf094be5f43bfb6293773212e937e2fa00e3315781fc7ffc36be508cf4b09c`
+- Created: `2018-11-16T16:26:18.898833344Z`
+- Virtual Size: ~ 204.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
@@ -1736,11 +1736,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018e-0+deb8u1`
+### `dpkg` source package: `tzdata=2018g-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018e-0+deb8u1`
+- `tzdata=2018g-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1749,17 +1749,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018e-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.dsc' tzdata_2018e-0+deb8u1.dsc 1985 SHA256:b726a8d125c934311d4a9a6640ae5ef373dfc390fa031096467e932e4ab3aef0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.debian.tar.xz' tzdata_2018e-0+deb8u1.debian.tar.xz 102688 SHA256:8f7f886c171573386296ac92e5a198d67e8c1fd19097dd44bb8b3f7922df7970
+$ apt-get source -qq --print-uris tzdata=2018g-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.dsc' tzdata_2018g-0+deb8u1.dsc 2018 SHA256:f40170aeb0283ee7fe0d74573b868952cfaa50d02ad535f3cb4937c8bc9c5500
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.debian.tar.xz' tzdata_2018g-0+deb8u1.debian.tar.xz 104188 SHA256:bbc313ee2d22d6f432917f9792033d353406862f85ce5d978c6e36610ce48fcd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018g-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
