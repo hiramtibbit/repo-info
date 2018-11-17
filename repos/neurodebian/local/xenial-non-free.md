@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6d88992637d2e4d2e98f106f4bcb8833981dc46eff9e97f9263825c73c24ba5`
-- Created: `2018-10-19T02:32:07.428640088Z`
-- Virtual Size: ~ 115.99 Mb  
+- Image ID: `sha256:c7e04ffc2ec651cd5d27707a66263d7493a697445609204194a84ad7a2f1bfa2`
+- Created: `2018-11-14T02:22:04.875353608Z`
+- Virtual Size: ~ 116.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -649,6 +649,27 @@ $ apt-get source -qq --print-uris libcap2=1:2.24-12
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.24-12.debian.tar.xz' libcap2_2.24-12.debian.tar.xz 18704 SHA256:34be2e791ec96095cc0b405e532874e8c79aeb2125981ebc6896a0ad0b999cf2
 ```
 
+### `dpkg` source package: `libeatmydata=105-3`
+
+Binary Packages:
+
+- `eatmydata=105-3`
+- `libeatmydata1:amd64=105-3`
+
+Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/libeatmydata1/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libeatmydata=105-3
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105-3.dsc' libeatmydata_105-3.dsc 1992 SHA256:e62e23125e92fafec0396c96a33ead6cd8a7cefd7a98fdfce579b2ec83866e6a
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105.orig.tar.gz' libeatmydata_105.orig.tar.gz 419427 SHA256:bdd2d068b6b27cf47cd22aa4c5da43b3d4a05944cfe0ad1b0d843d360ed3a8dd
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105-3.debian.tar.xz' libeatmydata_105-3.debian.tar.xz 45804 SHA256:b2b79660876282416193535e72b72ba490c447c3bd0c922f25865acde6807c5d
+```
+
 ### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.5`
 
 Binary Packages:
@@ -908,6 +929,27 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.dsc' ncurses_6.0+20160213-1ubuntu1.dsc 4379 SHA256:16628fbe5a690f6f8d147a54d0ba6900a0afeaa51d318475781ce3f14df1ca79
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213.orig.tar.gz' ncurses_6.0+20160213.orig.tar.gz 3153008 SHA256:20269c2dd62a311b9a3fb9f25638d35a057a5ece5f8d6caf4e70a3da6f01082c
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
+```
+
+### `dpkg` source package: `neurodebian=0.38.1~nd16.04+1`
+
+Binary Packages:
+
+- `neurodebian-freeze=0.38.1~nd16.04+1`
+
+Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
+
+- `BSD-2`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris neurodebian=0.38.1~nd16.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd16.04+1.dsc' neurodebian_0.38.1~nd16.04+1.dsc 1485 SHA256:f3611bd9340717676f28b9fc54606ea8fb0f4268d7088ca75031575bd0ec54fc
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd16.04+1.tar.xz' neurodebian_0.38.1~nd16.04+1.tar.xz 8320320 SHA256:9a169112324d59cb957023b6e886cd66bb1b34774724f119b69f77437c681486
 ```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2.1`

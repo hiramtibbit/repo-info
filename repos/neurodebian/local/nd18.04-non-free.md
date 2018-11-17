@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:04cb8bfd2a3e12cc10ac341ac9c2ebc080e4cfc8aa9c6dec673a3f3b51e0e19d`
-- Created: `2018-10-19T02:33:15.63308263Z`
-- Virtual Size: ~ 96.65 Mb  
+- Image ID: `sha256:cc237bf42efb8ec3b191c94613b3d4db0db876fb60edd3b955d5d2eb9fb0afd9`
+- Created: `2018-11-14T02:22:51.223342086Z`
+- Virtual Size: ~ 97.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -704,6 +704,27 @@ $ apt-get source -qq --print-uris libcap-ng=0.7.7-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.1.debian.tar.xz' libcap-ng_0.7.7-3.1.debian.tar.xz 5432 SHA256:074bf729c3081af729e7e0fbbe3354ddecc16e045245e7d4f44003b9f1f1adc6
 ```
 
+### `dpkg` source package: `libeatmydata=105-6`
+
+Binary Packages:
+
+- `eatmydata=105-6`
+- `libeatmydata1:amd64=105-6`
+
+Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/libeatmydata1/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libeatmydata=105-6
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105-6.dsc' libeatmydata_105-6.dsc 2044 SHA256:8df7967cfddf7ba25f9dfb9081ca5868be349fcbdf723d2dfa39b3a043298ee8
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105.orig.tar.gz' libeatmydata_105.orig.tar.gz 419427 SHA256:bdd2d068b6b27cf47cd22aa4c5da43b3d4a05944cfe0ad1b0d843d360ed3a8dd
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libeatmydata/libeatmydata_105-6.debian.tar.xz' libeatmydata_105-6.debian.tar.xz 47156 SHA256:e839f9cb4cd6596c406d2af85fa86474323ac723dfa463e8680505cf49b66413
+```
+
 ### `dpkg` source package: `libffi=3.2.1-8`
 
 Binary Packages:
@@ -1081,6 +1102,27 @@ $ apt-get source -qq --print-uris nettle=3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.orig.tar.gz' nettle_3.4.orig.tar.gz 1935069 SHA256:ae7a42df026550b85daca8389b6a60ba6313b0567f374392e54918588a411e94
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.orig.tar.gz.asc' nettle_3.4.orig.tar.gz.asc 1238 SHA256:86d7441c7334dd95d16b1ca488fd94ec45ed6406714d4ed9887c7212e337eb2a
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4-1.debian.tar.xz' nettle_3.4-1.debian.tar.xz 19884 SHA256:9bfc25562ed36449e75741b0473e0e558bc9ef5c20ca24e7c650fea87d631c03
+```
+
+### `dpkg` source package: `neurodebian=0.38.1~nd18.04+1`
+
+Binary Packages:
+
+- `neurodebian-freeze=0.38.1~nd18.04+1`
+
+Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
+
+- `BSD-2`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris neurodebian=0.38.1~nd18.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd18.04+1.dsc' neurodebian_0.38.1~nd18.04+1.dsc 1485 SHA256:86a7e005307f1665a7f5e55010400f4fb091e0edb8d916b30eda1505f0f7252f
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd18.04+1.tar.xz' neurodebian_0.38.1~nd18.04+1.tar.xz 8324884 SHA256:4a4ec31bdb19d5377fd521a7839e4f051d5bb1aa3f517c9e2833655f47e0e869
 ```
 
 ### `dpkg` source package: `npth=1.5-3`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aabbac0e717808156c8a7f7ceb6202fc3d176dafa3dd067d0babfd8ac6a96550`
-- Created: `2018-10-16T06:55:05.919187158Z`
-- Virtual Size: ~ 112.88 Mb  
+- Image ID: `sha256:54bfff400bdc6385df9a20af801a0b1587f23514666026434ed2a02977f0ca8d`
+- Created: `2018-11-14T02:25:51.350122586Z`
+- Virtual Size: ~ 113.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -963,6 +963,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.25-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.25-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libeatmydata=105-5`
+
+Binary Packages:
+
+- `eatmydata=105-5`
+- `libeatmydata1:amd64=105-5`
+
+Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/libeatmydata1/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libeatmydata=105-5
+'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105-5.dsc' libeatmydata_105-5.dsc 2040 SHA256:c2322dc60c7141ff555a28b9e8eecfbc4e393fddffc035c428946ced850b27b9
+'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105.orig.tar.gz' libeatmydata_105.orig.tar.gz 419427 SHA256:bdd2d068b6b27cf47cd22aa4c5da43b3d4a05944cfe0ad1b0d843d360ed3a8dd
+'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105-5.debian.tar.xz' libeatmydata_105-5.debian.tar.xz 47304 SHA256:6d0fb20ea53489b52c7a28971ba655006c6c92203cac63c661bd39d57809c438
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libeatmydata/105-5/ (for browsing the source)
+- https://sources.debian.net/src/libeatmydata/105-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libeatmydata/105-5/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libffi=3.2.1-6`
 
 Binary Packages:
@@ -1376,6 +1403,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-1/ (for browsing the source)
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `neurodebian=0.38.1~nd90+1`
+
+Binary Packages:
+
+- `neurodebian-freeze=0.38.1~nd90+1`
+
+Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
+
+- `BSD-2`
+- `Expat`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris neurodebian=0.38.1~nd90+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd90+1.dsc' neurodebian_0.38.1~nd90+1.dsc 1561 SHA256:d8c32b24d6627466230b60e611a09ebdb2b81ff1355e74655fb3c399900cee39
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd90+1.tar.xz' neurodebian_0.38.1~nd90+1.tar.xz 8324596 SHA256:12ae0659af3ad476eb750b2faae07fc075f3583814e41d67b96dcea430ce4f57
+```
 
 ### `dpkg` source package: `npth=1.3-1`
 
