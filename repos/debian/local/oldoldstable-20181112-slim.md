@@ -1,9 +1,9 @@
-# `debian:wheezy-slim`
+# `debian:oldoldstable-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:80de0a9eff9e010ced63ca68639ff595dac9a079621001cb9d296c92a44777e9`
-- Created: `2018-10-15T23:26:56.090171759Z`
+- Image ID: `sha256:9a51cce3df7929d30e1b900e6545b1b4990cdfb223bb093b14b1321e2e6e9c8c`
+- Created: `2018-11-15T22:36:00.833890785Z`
 - Virtual Size: ~ 46.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
