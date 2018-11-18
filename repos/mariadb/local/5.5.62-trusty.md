@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4720cd73b9afb706449b3395fa1aac7860dcc6aa0803e0157a215e55dfb7f4d8`
-- Created: `2018-10-29T23:23:34.543958273Z`
-- Virtual Size: ~ 352.16 Mb  
+- Image ID: `sha256:d77ddea4a81dd086d3a4e5e027a8be7d2738bbbbf8fe16aaa8b10f18f2b164a0`
+- Created: `2018-11-16T00:37:02.784321404Z`
+- Virtual Size: ~ 353.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -354,12 +354,12 @@ $ apt-get source -qq --print-uris cron=3.0pl1-124ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cron/cron_3.0pl1-124ubuntu2.diff.gz' cron_3.0pl1-124ubuntu2.diff.gz 98350 SHA256:282213a327434e44b0f0f6ac23da5f0f4024cf284ca6e008a0b774bb76102dab
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.17`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.19`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.35.0-1ubuntu2.17`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.17`
+- `libcurl3:amd64=7.35.0-1ubuntu2.19`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.19`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -368,9 +368,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.19
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.dsc' curl_7.35.0-1ubuntu2.19.dsc 2755 SHA256:6dd7a0398bf7671ea623fdf08f7723e565bff65266000d06aa1d16d2cff78c6d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.debian.tar.gz' curl_7.35.0-1ubuntu2.19.debian.tar.gz 78629 SHA256:ea501ac4f7b33b1b77a4df806716dbd9e93d28792019bd52c50757c7a9529e92
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -2822,19 +2827,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-25
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-25.debian.tar.xz' tcp-wrappers_7.6.q-25.debian.tar.xz 35504 SHA256:fb7bb73c586a0c00c76c730ab93ffd73c300e8c4fd83df76222e305a2466c7bb
 ```
 
-### `dpkg` source package: `tzdata=2018e-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018g-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2018e-0ubuntu0.14.04`
+- `tzdata=2018g-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.dsc' tzdata_2018g-0ubuntu0.14.04.dsc 2080 SHA256:b0cebc355c6e60033ae471b76ca50962a92c20aaf1044f6f4fd21e894055e783
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.debian.tar.xz' tzdata_2018g-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:71b1d88ca95860408140367ed60e3d2918deea06ff8b03c065784e00803e9180
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 

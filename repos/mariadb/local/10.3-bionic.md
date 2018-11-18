@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:67238b4c1da06cdaec89d5728aaaa72b762304bffcc45b6bd7110503c9528111`
-- Created: `2018-10-19T01:37:44.018925557Z`
+- Image ID: `sha256:95d6852bba5ae4adc374fe563b8a6665032449e9b45e9f133e845fb33d2a09d7`
+- Created: `2018-11-16T00:29:14.06283387Z`
 - Virtual Size: ~ 365.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -61,10 +61,9 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 Binary Packages:
 
 - `apt=1.6.3ubuntu0.1`
-- `apt-transport-https=1.6.3ubuntu0.1`
 - `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
@@ -75,6 +74,25 @@ Source:
 $ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+```
+
+### `dpkg` source package: `apt=1.6.6`
+
+Binary Packages:
+
+- `apt-transport-https=1.6.6`
+
+Licenses: (parsed from: `/usr/share/doc/apt-transport-https/copyright`)
+
+- `GPL-2`
+- `GPLv2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apt=1.6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.dsc' apt_1.6.6.dsc 2751 SHA256:4a2a1166a5989a3a8cdfaa37fe8be20eb4385ecb4a73a272970c81ae66551f7a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.tar.xz' apt_1.6.6.tar.xz 2141060 SHA256:c4d9b6d623ab455b297a551fe1fc20c87f866d2eeb21026131dc8c83e347f641
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -1670,11 +1688,11 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.23-0ubuntu0.18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.24-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.23-0ubuntu0.18.04.1`
+- `libmysqlclient20:amd64=5.7.24-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -1692,9 +1710,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.24-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.24-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.24-0ubuntu0.18.04.1.dsc 3391 SHA256:4e8477a7b98f56618ebca07e807c991eca85dee732fc6b3bc3188bc79c14237e
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.24.orig.tar.gz' mysql-5.7_5.7.24.orig.tar.gz 49110448 SHA256:b980dced9c9eb3385cca44870facc220504ca011196c5a19c2bfe43d3f5d6212
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.24-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.24-0ubuntu0.18.04.1.debian.tar.xz 156016 SHA256:3e021aa4d6c45176704fde0fefe2afb4e89c19df7ed93699eacfbffb9c3d7307
+```
 
 ### `dpkg` source package: `ncurses=6.1-1ubuntu1.18.04`
 
@@ -2315,19 +2338,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-27
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-27.debian.tar.xz' tcp-wrappers_7.6.q-27.debian.tar.xz 36060 SHA256:b73487b0faf59dfcc1074b9f11a91556713d9ae210033536f20cfd3c8bc73b36
 ```
 
-### `dpkg` source package: `tzdata=2018e-0ubuntu0.18.04`
+### `dpkg` source package: `tzdata=2018g-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `tzdata=2018e-0ubuntu0.18.04`
+- `tzdata=2018g-0ubuntu0.18.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.18.04.dsc' tzdata_2018g-0ubuntu0.18.04.dsc 2122 SHA256:f43c357585bf748110cae43521c8c90b4b87c6b664c2cb0e3e4f0d8fd942195a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.18.04.debian.tar.xz' tzdata_2018g-0ubuntu0.18.04.debian.tar.xz 104340 SHA256:c36000ce2708f0105861a53b46b39ebce6f158f2004dbc321441da996f76fa8c
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.02.28`
 
