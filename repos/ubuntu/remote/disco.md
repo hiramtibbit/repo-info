@@ -1,4 +1,4 @@
-## `ubuntu:devel`
+## `ubuntu:disco`
 
 ```console
 $ docker pull ubuntu@sha256:275e612ab02e8d40aeb5399d693e71946e098effed7fc4920819cbb5e413a6d8
@@ -8,7 +8,7 @@ $ docker pull ubuntu@sha256:275e612ab02e8d40aeb5399d693e71946e098effed7fc4920819
 -	Platforms:
 	-	linux; amd64
 
-### `ubuntu:devel` - linux; amd64
+### `ubuntu:disco` - linux; amd64
 
 ```console
 $ docker pull ubuntu@sha256:fad141b8eba55b4d8539c51bbaf6ae72acd8718d725ff3e249918a13c24b1e3e
