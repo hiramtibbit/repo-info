@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea4c82dcd15a33e3e9c4c37050def20476856a08e59526fbe533cc4e98387e39`
-- Created: `2018-10-19T00:47:56.963343052Z`
-- Virtual Size: ~ 85.85 Mb  
+- Image ID: `sha256:93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26`
+- Created: `2018-11-19T21:20:42.235528208Z`
+- Virtual Size: ~ 86.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.3ubuntu0.1`
+### `dpkg` source package: `apt=1.6.6`
 
 Binary Packages:
 
-- `apt=1.6.3ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
+- `apt=1.6.6`
+- `libapt-pkg5.0:amd64=1.6.6`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+$ apt-get source -qq --print-uris apt=1.6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.dsc' apt_1.6.6.dsc 2751 SHA256:4a2a1166a5989a3a8cdfaa37fe8be20eb4385ecb4a73a272970c81ae66551f7a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.tar.xz' apt_1.6.6.tar.xz 2141060 SHA256:c4d9b6d623ab455b297a551fe1fc20c87f866d2eeb21026131dc8c83e347f641
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -321,11 +321,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `dpkg=1.19.0.5ubuntu2`
+### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.1`
 
 Binary Packages:
 
-- `dpkg=1.19.0.5ubuntu2`
+- `dpkg=1.19.0.5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -338,9 +338,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.dsc' dpkg_1.19.0.5ubuntu2.dsc 2132 SHA256:e9e965f1f4a1a86f2944253ee393e1de8f53d0db5a5f8cc9d88c8cd20b0559a9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.tar.xz' dpkg_1.19.0.5ubuntu2.tar.xz 4570900 SHA256:29444a09e6976e9b9adde799acd78d7049bf5c933f4d49b249a11f167d79d5f4
+$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.dsc' dpkg_1.19.0.5ubuntu2.1.dsc 2140 SHA256:98044f3fb11b12c8e08930adc3a3057f8e4f542d11aee929a6e2a7dea0d4cd9b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.tar.xz' dpkg_1.19.0.5ubuntu2.1.tar.xz 4570912 SHA256:3e8bd743f1b953095bba765bfb75eaaa68a6aba3bc8de97e3f9d1dff754addaa
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.44.1-1`
@@ -1168,12 +1168,12 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.debian.tar.xz' shadow_4.5-1ubuntu1.debian.tar.xz 470524 SHA256:51e534983f0500229b51b3f3ccbee3b041e48d3ea6e5f64c914351a0e996dc05
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.3`
+### `dpkg` source package: `systemd=237-3ubuntu10.6`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.3`
-- `libudev1:amd64=237-3ubuntu10.3`
+- `libsystemd0:amd64=237-3ubuntu10.6`
+- `libudev1:amd64=237-3ubuntu10.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
