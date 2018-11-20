@@ -1,4 +1,4 @@
-## `node:chakracore-10`
+## `node:chakracore-10.13.0`
 
 ```console
 $ docker pull node@sha256:0a377d9d6b8aa08cabb8026ae76a190a866625fc5a26cf3a22e116ff82cf9113
@@ -8,7 +8,7 @@ $ docker pull node@sha256:0a377d9d6b8aa08cabb8026ae76a190a866625fc5a26cf3a22e116
 -	Platforms:
 	-	linux; amd64
 
-### `node:chakracore-10` - linux; amd64
+### `node:chakracore-10.13.0` - linux; amd64
 
 ```console
 $ docker pull node@sha256:9b51fcfdb4b53270521e83efcd5337b7da3839fc33c08f923ff2775276e82506
