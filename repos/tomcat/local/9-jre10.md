@@ -709,21 +709,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.8-5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-5.dsc' cups_2.2.8-5.dsc 3467 SHA256:2f27b624cd965f100906ea5bba0abea9cc9daadbfef42bbeab021b8ffd184ce6
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz' cups_2.2.8.orig.tar.gz 10374921 SHA256:3968fc1d26fc48727508db1c1380e36c6694ab90177fd6920aec5f6cc73af9e4
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz.asc' cups_2.2.8.orig.tar.gz.asc 872 SHA256:2f86f5ae127169cc070da00f4460a7faf8fb4ac66b04a34adeecf451a0086781
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-5.debian.tar.xz' cups_2.2.8-5.debian.tar.xz 351624 SHA256:4f1e27226659d44d6b3409d7509d53ebd64976b85a0bb7331efd50d4e362d547
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.8-5/
 
-- https://sources.debian.net/src/cups/2.2.8-5/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.8-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.62.0-1`
 
@@ -1879,20 +1871,13 @@ Licenses: (parsed from: `/usr/share/doc/libip4tc0/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.2-1
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2-1.dsc' iptables_1.8.2-1.dsc 2699 SHA256:24d39c7cd9e9536c7e65b76c7e283d109684c4f25c9eefbc22be581a342f4cc9
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2.orig.tar.bz2' iptables_1.8.2.orig.tar.bz2 679858 SHA256:a3778b50ed1a3256f9ca975de82c2204e508001fc2471238c8c97f3d1c4c12af
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2-1.debian.tar.xz' iptables_1.8.2-1.debian.tar.xz 64348 SHA256:52eca8f1ea202addf1c53b77110031155cdc661abe72ba7400b6b6c0914d9044
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.2-1/
 
-- https://sources.debian.net/src/iptables/1.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20180629-2`
 
@@ -2894,20 +2879,13 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/l
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.8-3
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.8-3.dsc' librsvg_2.44.8-3.dsc 2860 SHA256:ba46bde8d6150eb2603af534a87d4854b773959464fc973c64b764a3d3b3a805
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.8.orig.tar.xz' librsvg_2.44.8.orig.tar.xz 9873708 SHA256:6bb8044c0082485070825e8dad57615384c28a57e89c8930d6a812955ab82d8e
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.8-3.debian.tar.xz' librsvg_2.44.8-3.debian.tar.xz 21644 SHA256:51d4ec10ad85d46f49eddd8058a5ba1c34946d0a907f04692facb200818c2a28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.44.8-3/
 
-- https://sources.debian.net/src/librsvg/2.44.8-3/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.44.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.44.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.3-3`
 
@@ -4039,20 +4017,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.1.9-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.9-1.dsc' mesa_18.1.9-1.dsc 4884 SHA256:1bd976049d9c10c440d1967acef789ec9e021efbf3d33c060e21349528a43229
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.9.orig.tar.gz' mesa_18.1.9.orig.tar.gz 18905423 SHA256:0f825dc834b1b3e3d9a6c3ce58b42977f0d9a248a7627a36dd3b313ffe41a499
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.1.9-1.diff.gz' mesa_18.1.9-1.diff.gz 95268 SHA256:675456cc71de66aab449543805a9004cd7ae3f46e71e3f165030220ff2ae3c87
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.1.9-1/
 
-- https://sources.debian.net/src/mesa/18.1.9-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.1.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.1.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20181013-1`
 
@@ -4820,20 +4791,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-11
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.dsc' systemd_239-11.dsc 4817 SHA256:833a319ba82a62d2ea8e2f53fa9ba5706f442192f9b4ac128e9847da21171d35
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.debian.tar.xz' systemd_239-11.debian.tar.xz 154748 SHA256:2c99b4f5f200f4603b51f421910056bd7feba510ce0e19b386510b3f73a42e47
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-11/
 
-- https://sources.debian.net/src/systemd/239-11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 
@@ -4889,20 +4853,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9+git181026-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.dsc' tiff_4.0.9+git181026-1.dsc 2280 SHA256:c62af309cc73df28ace1fcf7d7fa1c4f09f96150d093562347aa711e7d76b08e
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026.orig.tar.xz' tiff_4.0.9+git181026.orig.tar.xz 1520264 SHA256:a08f8f156d67d0b9504ff01a1456af975a72f51577d52e39b57847201c6bb6ae
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.debian.tar.xz' tiff_4.0.9+git181026-1.debian.tar.xz 17408 SHA256:fd02f97164b6768c1e775ce965a69937bd56e4210bdcca8f4d78e4a88d4583cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/
 
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018g-1`
 
