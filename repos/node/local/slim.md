@@ -1,17 +1,17 @@
-# `node:11.1.0-slim`
+# `node:11.2.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e688aeed37425e61cdb8383e42f03bd574283615b19bdfb2e3f5ca59d540bbb2`
-- Created: `2018-11-16T14:08:11.175849411Z`
-- Virtual Size: ~ 143.60 Mb  
+- Image ID: `sha256:5f4cbbb1dead23c584e844153638d4afe82f837c81e33f4f2cb2bb010dfd3664`
+- Created: `2018-11-19T16:50:58.243010003Z`
+- Virtual Size: ~ 143.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=11.1.0`
-  - `YARN_VERSION=1.12.1`
+  - `NODE_VERSION=11.2.0`
+  - `YARN_VERSION=1.12.3`
 
 ## `dpkg` (`.deb`-based packages)
 
