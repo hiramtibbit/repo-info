@@ -18,7 +18,7 @@
 ## `redmine:3`
 
 ```console
-$ docker pull redmine@sha256:a9d0a8d564e592502664699580e366103f039ee6a5c108578b1b179d95e834df
+$ docker pull redmine@sha256:03e8d16dc02d234af7af602898281a1b9ae4c70a4cda2b0a5e26af61cf8f44ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -683,14 +683,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:6848eb42bd2be115be4011f8b3e4623e42cf811e43b42cffeb993261adec7cb9
+$ docker pull redmine@sha256:ee042e2ccc376efd12380dfb3e7ca22bb26ba4244296682721da39739b33306a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.8 MB (292753632 bytes)**  
+-	Total Size: **285.7 MB (285732344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9072164ee4f28df45f0cd73bef1d470f7c3a5ea3c696e090bc4245bf56dff88`
+-	Image ID: `sha256:b231ba2375df6bca4e36cabfcc8ed4944ad33efc2e7ca7a026aa1bce903515a4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -735,23 +735,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 04:41:25 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 04:41:30 GMT
+# Wed, 21 Nov 2018 11:43:49 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 11:43:51 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 11:43:52 GMT
 ENV REDMINE_VERSION=3.4.6
-# Sat, 17 Nov 2018 04:41:40 GMT
+# Wed, 21 Nov 2018 11:43:53 GMT
 ENV REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1
-# Sat, 17 Nov 2018 04:41:47 GMT
+# Wed, 21 Nov 2018 11:44:00 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 04:49:47 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 04:49:54 GMT
+# Wed, 21 Nov 2018 11:53:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 11:55:57 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:55:59 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:56:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 04:50:08 GMT
+# Wed, 21 Nov 2018 11:56:01 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 04:50:09 GMT
+# Wed, 21 Nov 2018 11:56:02 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -792,16 +796,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfe60a0ae2012cf4fdd0774fa4b84ddc05a1689dffa9cf5b30e1717312edf8a8`  
-		Last Modified: Sat, 17 Nov 2018 05:03:32 GMT  
+	-	`sha256:80476d544d5901076176ecf6c5e12b263c3d9d975406fc419b5a7a3db1d87212`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e6087f4e54de617c7d48f9bd9d585207f0453fed0452c11ee7ca27c1105c5ce`  
+		Last Modified: Wed, 21 Nov 2018 12:11:36 GMT  
 		Size: 2.5 MB (2457724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2557e48cbbf5f9fc5125bf3598ac68efc87295d206b48d2979c8d3cc3e794275`  
-		Last Modified: Sat, 17 Nov 2018 05:04:41 GMT  
-		Size: 122.3 MB (122325574 bytes)  
+	-	`sha256:c92ba45b55dcbc5b55d6016ea1a1e19a2909e44d25a1f847c88e091932d895e6`  
+		Last Modified: Wed, 21 Nov 2018 12:12:15 GMT  
+		Size: 115.3 MB (115304126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc45f3f697012a28dad4d6dda7971a8f304d375d6afb8c2434bdecd1f9c376`  
-		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
+	-	`sha256:ea73ba65345a0cd52f11b04e4e985cc911ef65e8198b1b68f43a79b97282c93e`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -933,7 +941,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.3`
 
 ```console
-$ docker pull redmine@sha256:b2633d3131604c9f46a88ea09b6ac8bc09919e36db1fd84b22043985d81717d1
+$ docker pull redmine@sha256:a8f7404474e6c90e04bc0844cc6b673a49eb440a1a462c285925ce0fd54f3d8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1598,14 +1606,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.3` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:327b8b27b9e202d9d0b2ab9bd4a511a90bc49a3ab5a96d27e10a6dbb428c7c9a
+$ docker pull redmine@sha256:ca63cf6c9e258b2d53e83197a487a7d04237a59cd8762113cfc3e6e124ae2409
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.9 MB (306883076 bytes)**  
+-	Total Size: **299.8 MB (299815167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c13de45344f816ef648329ac559f75452fffd73cc2f518a98ac47667fc53f036`
+-	Image ID: `sha256:6fcdc58a1a19ed6ea42723c5585cf83c0b63b5e91cab5b9e8d574f3d3f26e97f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -1650,23 +1658,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 04:53:34 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 04:53:45 GMT
+# Wed, 21 Nov 2018 11:56:45 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 11:56:48 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 11:56:49 GMT
 ENV REDMINE_VERSION=3.3.8
-# Sat, 17 Nov 2018 04:53:46 GMT
+# Wed, 21 Nov 2018 11:56:50 GMT
 ENV REDMINE_DOWNLOAD_MD5=6ca9284fa1c3571f6c83dd0e0d0fec1b
-# Sat, 17 Nov 2018 04:53:51 GMT
+# Wed, 21 Nov 2018 11:56:56 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 05:02:23 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 05:02:26 GMT
+# Wed, 21 Nov 2018 12:06:28 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 12:07:33 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 05:02:28 GMT
+# Wed, 21 Nov 2018 12:07:34 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 05:02:39 GMT
+# Wed, 21 Nov 2018 12:07:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 05:02:43 GMT
+# Wed, 21 Nov 2018 12:10:42 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 05:02:54 GMT
+# Wed, 21 Nov 2018 12:10:44 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -1707,16 +1719,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sat, 17 Nov 2018 05:06:11 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d199f6c803ee56d487b971de759c4d08af4b31589764aea26fab1485db2a6621`  
-		Last Modified: Sat, 17 Nov 2018 05:06:18 GMT  
-		Size: 2.4 MB (2394580 bytes)  
+	-	`sha256:b4301d4fe8826ae5b62dafcb7658da27b9ce23f874e728d30e8146f29e7be2b1`  
+		Last Modified: Wed, 21 Nov 2018 12:16:51 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90bb0731ca93f2ac386cc030d975750897420b7c9e5ec8e549c78c5437370134`  
-		Last Modified: Sat, 17 Nov 2018 05:06:39 GMT  
-		Size: 123.2 MB (123202344 bytes)  
+	-	`sha256:e35543ab65c7edc9647fef2c9aeac0b0963195408781157cd215f85116a8a121`  
+		Last Modified: Wed, 21 Nov 2018 12:16:56 GMT  
+		Size: 2.4 MB (2394568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5186d20dd631447a090277bd733da74048d6d8d745e62e34cde03f1c828370ec`  
-		Last Modified: Sat, 17 Nov 2018 05:06:11 GMT  
+	-	`sha256:403722b00adc30b20163c20f5c1196cf9c99d3d4632d262631cf669fce9ba2fd`  
+		Last Modified: Wed, 21 Nov 2018 12:17:41 GMT  
+		Size: 116.1 MB (116134288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79147f5669781d8a3cd9049a4d7acd495ad9c0cf3ec58f4ecd6ecaf2ea22518a`  
+		Last Modified: Wed, 21 Nov 2018 12:16:52 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1848,7 +1864,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.3.8`
 
 ```console
-$ docker pull redmine@sha256:b2633d3131604c9f46a88ea09b6ac8bc09919e36db1fd84b22043985d81717d1
+$ docker pull redmine@sha256:a8f7404474e6c90e04bc0844cc6b673a49eb440a1a462c285925ce0fd54f3d8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2513,14 +2529,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.3.8` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:327b8b27b9e202d9d0b2ab9bd4a511a90bc49a3ab5a96d27e10a6dbb428c7c9a
+$ docker pull redmine@sha256:ca63cf6c9e258b2d53e83197a487a7d04237a59cd8762113cfc3e6e124ae2409
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.9 MB (306883076 bytes)**  
+-	Total Size: **299.8 MB (299815167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c13de45344f816ef648329ac559f75452fffd73cc2f518a98ac47667fc53f036`
+-	Image ID: `sha256:6fcdc58a1a19ed6ea42723c5585cf83c0b63b5e91cab5b9e8d574f3d3f26e97f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -2565,23 +2581,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 04:53:34 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 04:53:45 GMT
+# Wed, 21 Nov 2018 11:56:45 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 11:56:48 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 11:56:49 GMT
 ENV REDMINE_VERSION=3.3.8
-# Sat, 17 Nov 2018 04:53:46 GMT
+# Wed, 21 Nov 2018 11:56:50 GMT
 ENV REDMINE_DOWNLOAD_MD5=6ca9284fa1c3571f6c83dd0e0d0fec1b
-# Sat, 17 Nov 2018 04:53:51 GMT
+# Wed, 21 Nov 2018 11:56:56 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 05:02:23 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 05:02:26 GMT
+# Wed, 21 Nov 2018 12:06:28 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 12:07:33 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 05:02:28 GMT
+# Wed, 21 Nov 2018 12:07:34 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 05:02:39 GMT
+# Wed, 21 Nov 2018 12:07:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 05:02:43 GMT
+# Wed, 21 Nov 2018 12:10:42 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 05:02:54 GMT
+# Wed, 21 Nov 2018 12:10:44 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -2622,16 +2642,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sat, 17 Nov 2018 05:06:11 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d199f6c803ee56d487b971de759c4d08af4b31589764aea26fab1485db2a6621`  
-		Last Modified: Sat, 17 Nov 2018 05:06:18 GMT  
-		Size: 2.4 MB (2394580 bytes)  
+	-	`sha256:b4301d4fe8826ae5b62dafcb7658da27b9ce23f874e728d30e8146f29e7be2b1`  
+		Last Modified: Wed, 21 Nov 2018 12:16:51 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90bb0731ca93f2ac386cc030d975750897420b7c9e5ec8e549c78c5437370134`  
-		Last Modified: Sat, 17 Nov 2018 05:06:39 GMT  
-		Size: 123.2 MB (123202344 bytes)  
+	-	`sha256:e35543ab65c7edc9647fef2c9aeac0b0963195408781157cd215f85116a8a121`  
+		Last Modified: Wed, 21 Nov 2018 12:16:56 GMT  
+		Size: 2.4 MB (2394568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5186d20dd631447a090277bd733da74048d6d8d745e62e34cde03f1c828370ec`  
-		Last Modified: Sat, 17 Nov 2018 05:06:11 GMT  
+	-	`sha256:403722b00adc30b20163c20f5c1196cf9c99d3d4632d262631cf669fce9ba2fd`  
+		Last Modified: Wed, 21 Nov 2018 12:17:41 GMT  
+		Size: 116.1 MB (116134288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79147f5669781d8a3cd9049a4d7acd495ad9c0cf3ec58f4ecd6ecaf2ea22518a`  
+		Last Modified: Wed, 21 Nov 2018 12:16:52 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3085,7 +3109,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.4`
 
 ```console
-$ docker pull redmine@sha256:a9d0a8d564e592502664699580e366103f039ee6a5c108578b1b179d95e834df
+$ docker pull redmine@sha256:03e8d16dc02d234af7af602898281a1b9ae4c70a4cda2b0a5e26af61cf8f44ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3750,14 +3774,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.4` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:6848eb42bd2be115be4011f8b3e4623e42cf811e43b42cffeb993261adec7cb9
+$ docker pull redmine@sha256:ee042e2ccc376efd12380dfb3e7ca22bb26ba4244296682721da39739b33306a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.8 MB (292753632 bytes)**  
+-	Total Size: **285.7 MB (285732344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9072164ee4f28df45f0cd73bef1d470f7c3a5ea3c696e090bc4245bf56dff88`
+-	Image ID: `sha256:b231ba2375df6bca4e36cabfcc8ed4944ad33efc2e7ca7a026aa1bce903515a4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -3802,23 +3826,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 04:41:25 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 04:41:30 GMT
+# Wed, 21 Nov 2018 11:43:49 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 11:43:51 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 11:43:52 GMT
 ENV REDMINE_VERSION=3.4.6
-# Sat, 17 Nov 2018 04:41:40 GMT
+# Wed, 21 Nov 2018 11:43:53 GMT
 ENV REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1
-# Sat, 17 Nov 2018 04:41:47 GMT
+# Wed, 21 Nov 2018 11:44:00 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 04:49:47 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 04:49:54 GMT
+# Wed, 21 Nov 2018 11:53:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 11:55:57 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:55:59 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:56:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 04:50:08 GMT
+# Wed, 21 Nov 2018 11:56:01 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 04:50:09 GMT
+# Wed, 21 Nov 2018 11:56:02 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -3859,16 +3887,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfe60a0ae2012cf4fdd0774fa4b84ddc05a1689dffa9cf5b30e1717312edf8a8`  
-		Last Modified: Sat, 17 Nov 2018 05:03:32 GMT  
+	-	`sha256:80476d544d5901076176ecf6c5e12b263c3d9d975406fc419b5a7a3db1d87212`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e6087f4e54de617c7d48f9bd9d585207f0453fed0452c11ee7ca27c1105c5ce`  
+		Last Modified: Wed, 21 Nov 2018 12:11:36 GMT  
 		Size: 2.5 MB (2457724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2557e48cbbf5f9fc5125bf3598ac68efc87295d206b48d2979c8d3cc3e794275`  
-		Last Modified: Sat, 17 Nov 2018 05:04:41 GMT  
-		Size: 122.3 MB (122325574 bytes)  
+	-	`sha256:c92ba45b55dcbc5b55d6016ea1a1e19a2909e44d25a1f847c88e091932d895e6`  
+		Last Modified: Wed, 21 Nov 2018 12:12:15 GMT  
+		Size: 115.3 MB (115304126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc45f3f697012a28dad4d6dda7971a8f304d375d6afb8c2434bdecd1f9c376`  
-		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
+	-	`sha256:ea73ba65345a0cd52f11b04e4e985cc911ef65e8198b1b68f43a79b97282c93e`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4000,7 +4032,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4.6`
 
 ```console
-$ docker pull redmine@sha256:a9d0a8d564e592502664699580e366103f039ee6a5c108578b1b179d95e834df
+$ docker pull redmine@sha256:03e8d16dc02d234af7af602898281a1b9ae4c70a4cda2b0a5e26af61cf8f44ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4665,14 +4697,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.4.6` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:6848eb42bd2be115be4011f8b3e4623e42cf811e43b42cffeb993261adec7cb9
+$ docker pull redmine@sha256:ee042e2ccc376efd12380dfb3e7ca22bb26ba4244296682721da39739b33306a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.8 MB (292753632 bytes)**  
+-	Total Size: **285.7 MB (285732344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9072164ee4f28df45f0cd73bef1d470f7c3a5ea3c696e090bc4245bf56dff88`
+-	Image ID: `sha256:b231ba2375df6bca4e36cabfcc8ed4944ad33efc2e7ca7a026aa1bce903515a4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -4717,23 +4749,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 04:41:25 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 04:41:30 GMT
+# Wed, 21 Nov 2018 11:43:49 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 11:43:51 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 11:43:52 GMT
 ENV REDMINE_VERSION=3.4.6
-# Sat, 17 Nov 2018 04:41:40 GMT
+# Wed, 21 Nov 2018 11:43:53 GMT
 ENV REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1
-# Sat, 17 Nov 2018 04:41:47 GMT
+# Wed, 21 Nov 2018 11:44:00 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 04:49:47 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 04:49:54 GMT
+# Wed, 21 Nov 2018 11:53:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 11:55:57 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:55:59 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 04:49:55 GMT
+# Wed, 21 Nov 2018 11:56:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 04:50:08 GMT
+# Wed, 21 Nov 2018 11:56:01 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 04:50:09 GMT
+# Wed, 21 Nov 2018 11:56:02 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -4774,16 +4810,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfe60a0ae2012cf4fdd0774fa4b84ddc05a1689dffa9cf5b30e1717312edf8a8`  
-		Last Modified: Sat, 17 Nov 2018 05:03:32 GMT  
+	-	`sha256:80476d544d5901076176ecf6c5e12b263c3d9d975406fc419b5a7a3db1d87212`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e6087f4e54de617c7d48f9bd9d585207f0453fed0452c11ee7ca27c1105c5ce`  
+		Last Modified: Wed, 21 Nov 2018 12:11:36 GMT  
 		Size: 2.5 MB (2457724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2557e48cbbf5f9fc5125bf3598ac68efc87295d206b48d2979c8d3cc3e794275`  
-		Last Modified: Sat, 17 Nov 2018 05:04:41 GMT  
-		Size: 122.3 MB (122325574 bytes)  
+	-	`sha256:c92ba45b55dcbc5b55d6016ea1a1e19a2909e44d25a1f847c88e091932d895e6`  
+		Last Modified: Wed, 21 Nov 2018 12:12:15 GMT  
+		Size: 115.3 MB (115304126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc45f3f697012a28dad4d6dda7971a8f304d375d6afb8c2434bdecd1f9c376`  
-		Last Modified: Sat, 17 Nov 2018 05:03:26 GMT  
+	-	`sha256:ea73ba65345a0cd52f11b04e4e985cc911ef65e8198b1b68f43a79b97282c93e`  
+		Last Modified: Wed, 21 Nov 2018 12:11:31 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5398,7 +5438,7 @@ CMD ["passenger" "start"]
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:0cbb8d047a7cce42e1a8712a68e8eae23737abc280bb7d1847affb0e8ce49bfb
+$ docker pull redmine@sha256:a9d0a8d564e592502664699580e366103f039ee6a5c108578b1b179d95e834df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5805,14 +5845,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull redmine@sha256:e56be1b23a8c12b5e92ccfb49a403abaa59da8ba5728f01d89ffa62a2a595dd8
+$ docker pull redmine@sha256:0a243905903563d60d60e16531d931039f5d66b7d32d2689bec1d352ef924e97
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **283.6 MB (283615795 bytes)**  
+-	Total Size: **276.5 MB (276492237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:649a81d0f1cf9c04f9bfb4d97c08ff97deeb38433dd360361f1acfe1ef8350ca`
+-	Image ID: `sha256:7371349e420df0a8ef8b2c0085d2df18b65817ec84909afa8c9bc00ff2a0e1af`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -5857,23 +5897,27 @@ RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get 
 ENV RAILS_ENV=production
 # Sat, 17 Nov 2018 23:30:14 GMT
 WORKDIR /usr/src/redmine
-# Sat, 17 Nov 2018 23:30:15 GMT
+# Wed, 21 Nov 2018 10:38:28 GMT
+ENV HOME=/home/redmine
+# Wed, 21 Nov 2018 10:38:31 GMT
+RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME"
+# Wed, 21 Nov 2018 10:38:32 GMT
 ENV REDMINE_VERSION=3.4.6
-# Sat, 17 Nov 2018 23:30:16 GMT
+# Wed, 21 Nov 2018 10:38:33 GMT
 ENV REDMINE_DOWNLOAD_MD5=5f4993446ecf25782f469763c0d32ea1
-# Sat, 17 Nov 2018 23:30:37 GMT
+# Wed, 21 Nov 2018 10:38:39 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p log public/plugin_assets sqlite tmp/pdf tmp/pids 	&& chown -R redmine:redmine ./ 	&& chmod -R ugo=rwX config db sqlite 	&& find log tmp -type d -exec chmod 1777 '{}' +
-# Sat, 17 Nov 2018 23:42:07 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	bundle config build.tiny_tds --enable-system-freetds; 		bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod ugo=rwX Gemfile.lock; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 17 Nov 2018 23:42:09 GMT
+# Wed, 21 Nov 2018 10:48:53 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmariadbclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 				libssl1.0-dev 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O freetds.tar.bz2 'http://www.freetds.org/files/stable/freetds-1.00.91.tar.bz2'; 	echo '8d71f9f29be0fe0637e443dd3807b3fd *freetds.tar.bz2' | md5sum -c -; 	mkdir freetds; 	tar -xf freetds.tar.bz2 -C freetds --strip-components=1; 	rm freetds.tar.bz2; 	( cd freetds && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" && ./configure --build="$gnuArch" --enable-silent-rules && make -j "$(nproc)" && make -C src install && make -C include install ); 	rm -rf freetds; 	gosu redmine bundle config build.tiny_tds --enable-system-freetds; 		gosu redmine bundle install --without development test; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		gosu redmine bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -v '^/usr/local/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
+# Wed, 21 Nov 2018 10:48:57 GMT
 VOLUME [/usr/src/redmine/files]
-# Sat, 17 Nov 2018 23:42:10 GMT
+# Wed, 21 Nov 2018 10:48:58 GMT
 COPY file:f46860d7b82095e9a3d06325ae45f8e7139bfe2905a8fbfa3c8e563f12d0462a in / 
-# Sat, 17 Nov 2018 23:42:11 GMT
+# Wed, 21 Nov 2018 10:48:59 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 17 Nov 2018 23:42:12 GMT
+# Wed, 21 Nov 2018 10:49:06 GMT
 EXPOSE 3000/tcp
-# Sat, 17 Nov 2018 23:42:12 GMT
+# Wed, 21 Nov 2018 10:49:07 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -5914,16 +5958,20 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Sun, 18 Nov 2018 00:00:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a202f76477ae7deefe223b1898fd6aad3b2e8f09ab76201084800aebbd3349b3`  
-		Last Modified: Sun, 18 Nov 2018 00:00:20 GMT  
-		Size: 2.5 MB (2457035 bytes)  
+	-	`sha256:e423011ae5a4f7b432d007cfe8f328600159e86eb78e3dc6c4ff44df0b456324`  
+		Last Modified: Wed, 21 Nov 2018 11:03:03 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca44cdd90185f4def653f77148e0615e13669a45a819cb4c7f2deae1edcfbfb`  
-		Last Modified: Sun, 18 Nov 2018 00:00:56 GMT  
-		Size: 120.1 MB (120054353 bytes)  
+	-	`sha256:af0bdb123f0b5f37e22debd16d22b798be5d0ea828e6066d381ab78eece649eb`  
+		Last Modified: Wed, 21 Nov 2018 11:03:05 GMT  
+		Size: 2.5 MB (2457040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49f1b9a95b7aafe170e7e27a5b73ab59d91171c0870d7845674ad6b3387bb558`  
-		Last Modified: Sun, 18 Nov 2018 00:00:19 GMT  
+	-	`sha256:f40e5cb001ba9864545daa4364a4b023e29c05e2f1be64db3ca8f9830f5c9b53`  
+		Last Modified: Wed, 21 Nov 2018 11:03:37 GMT  
+		Size: 112.9 MB (112930662 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d59de5dac08d3d02c9793549f8bb3652573a33f98732060992edfe4e8c6a2df`  
+		Last Modified: Wed, 21 Nov 2018 11:03:03 GMT  
 		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
