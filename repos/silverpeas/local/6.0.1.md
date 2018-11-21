@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c1b18ac85fcbe29e2de647b9949beb55012987c312e6aaeac9d79da54f58a7e`
-- Created: `2018-10-19T02:29:35.690202742Z`
+- Image ID: `sha256:8d44bd5e8a6255d3404e74ab44ba2b4c3b95213cfc6e6e2b8beefeb674d0fdb3`
+- Created: `2018-11-19T23:04:42.767083538Z`
 - Virtual Size: ~ 1.53 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -103,21 +103,25 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
 ```
 
-### `dpkg` source package: `apt=1.2.27`
+### `dpkg` source package: `apt=1.2.29`
 
 Binary Packages:
 
-- `apt=1.2.27`
-- `libapt-pkg5.0:amd64=1.2.27`
+- `apt=1.2.29`
+- `libapt-pkg5.0:amd64=1.2.29`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.29
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.dsc' apt_1.2.29.dsc 2392 SHA256:cd6d3baf99c6f80b9e46c90ee3686de856ef197a978af825c688287e7c9a80ea
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.tar.xz' apt_1.2.29.tar.xz 2055072 SHA256:aefb56c030c8fb909b690ba51d04dbf3dda8f9761803f9f0c4a6ffa78433cd95
+```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
 
@@ -606,11 +610,11 @@ $ apt-get source -qq --print-uris djvulibre=3.5.27.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-5.debian.tar.xz' djvulibre_3.5.27.1-5.debian.tar.xz 19860 SHA256:a7005e62356e0ea62362119aea70783cbe1ead79a5949af9a5adba2432e3254e
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.4`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.5`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.4`
+- `dpkg=1.18.4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -620,9 +624,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.dsc' dpkg_1.18.4ubuntu1.5.dsc 2211 SHA256:b76b4e1750ba75a8bc5fae43beb77b723a7b6dff933ff792e6d98a360dd6b55e
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.tar.xz' dpkg_1.18.4ubuntu1.5.tar.xz 4298288 SHA256:43e6c3934c08ec1c6e040f35d80f88a93d1ed41602932bdcbe059173fbd5fda9
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -995,13 +1003,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.5.debian.tar.xz 19148 SHA256:505d4e611ff95885894414c951c121a355d33c40780b31c3b19a5903b65bfc8f
 ```
 
-### `dpkg` source package: `ghostscript=9.25~dfsg+1-0ubuntu0.16.04.1`
+### `dpkg` source package: `ghostscript=9.25~dfsg+1-0ubuntu0.16.04.2`
 
 Binary Packages:
 
-- `ghostscript=9.25~dfsg+1-0ubuntu0.16.04.1`
-- `libgs9:amd64=9.25~dfsg+1-0ubuntu0.16.04.1`
-- `libgs9-common=9.25~dfsg+1-0ubuntu0.16.04.1`
+- `ghostscript=9.25~dfsg+1-0ubuntu0.16.04.2`
+- `libgs9:amd64=9.25~dfsg+1-0ubuntu0.16.04.2`
+- `libgs9-common=9.25~dfsg+1-0ubuntu0.16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1032,9 +1040,14 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ghostscript=9.25~dfsg+1-0ubuntu0.16.04.2
+'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.dsc' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.dsc 2926 SHA256:9597edb0476098059c273bcb6802df3ff8fa66617e4ebaf834e8260a07924e14
+'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1.orig.tar.xz' ghostscript_9.25~dfsg+1.orig.tar.xz 27033872 SHA256:ebcf00fe0b7b45fc8199b93df717e2020d08307a0f273040be1267ea0a0a656b
+'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.debian.tar.xz' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.debian.tar.xz 155960 SHA256:b615ebab590543f4d9683c550fc0080183fdc55d9b771dd89af5d2da4791ce78
+```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -1640,11 +1653,11 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-8ubuntu1.debian.tar.xz' keyutils_1.5.9-8ubuntu1.debian.tar.xz 16716 SHA256:36f69846dfeb1e7abdd39dace57a43f9637e426cf4c5252dd9990af36488249b
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu5`
+### `dpkg` source package: `kmod=22-1ubuntu5.1`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu5`
+- `libkmod2:amd64=22-1ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -1654,10 +1667,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.dsc' kmod_22-1ubuntu5.1.dsc 2165 SHA256:b7d1bd8258fa8d3120522a82f4618ab55bbf3ee03ea79c5f0f1209e075968102
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
 ```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
@@ -3775,14 +3788,14 @@ $ apt-get source -qq --print-uris openexr=2.2.0-10ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-10ubuntu2.debian.tar.xz' openexr_2.2.0-10ubuntu2.debian.tar.xz 31344 SHA256:69ce99ec15dc21e76c688d59f02cb540a3075f7b65704bcca7fd7c7e059afa99
 ```
 
-### `dpkg` source package: `openjdk-8=8u181-b13-0ubuntu0.16.04.1`
+### `dpkg` source package: `openjdk-8=8u181-b13-1ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u181-b13-0ubuntu0.16.04.1`
-- `openjdk-8-jdk-headless:amd64=8u181-b13-0ubuntu0.16.04.1`
-- `openjdk-8-jre:amd64=8u181-b13-0ubuntu0.16.04.1`
-- `openjdk-8-jre-headless:amd64=8u181-b13-0ubuntu0.16.04.1`
+- `openjdk-8-jdk:amd64=8u181-b13-1ubuntu0.16.04.1`
+- `openjdk-8-jdk-headless:amd64=8u181-b13-1ubuntu0.16.04.1`
+- `openjdk-8-jre:amd64=8u181-b13-1ubuntu0.16.04.1`
+- `openjdk-8-jre-headless:amd64=8u181-b13-1ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -3791,9 +3804,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-8=8u181-b13-1ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13-1ubuntu0.16.04.1.dsc' openjdk-8_8u181-b13-1ubuntu0.16.04.1.dsc 4717 SHA256:61d0b9671599a41d4ea12af54912d1f65c876424c2c3a5612bb6623597f0c727
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u181-b13-1ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u181-b13-1ubuntu0.16.04.1.debian.tar.xz 255960 SHA256:189ee71ab8de01b077933c6436e7971f88323b50527b94e18ac6cc4ff350442d
+```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
@@ -4391,14 +4409,14 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.4`
+### `dpkg` source package: `systemd=229-4ubuntu21.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.4`
-- `libudev1:amd64=229-4ubuntu21.4`
-- `systemd=229-4ubuntu21.4`
-- `systemd-sysv=229-4ubuntu21.4`
+- `libsystemd0:amd64=229-4ubuntu21.8`
+- `libudev1:amd64=229-4ubuntu21.8`
+- `systemd=229-4ubuntu21.8`
+- `systemd-sysv=229-4ubuntu21.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
