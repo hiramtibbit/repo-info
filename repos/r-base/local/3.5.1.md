@@ -1205,17 +1205,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnupg2=2.2.10-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.dsc' gnupg2_2.2.10-3.dsc 3136 SHA256:7ad097220da84cc81821f572d8a0655b05a80267a32e95d9ad5005fac8df5346
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2' gnupg2_2.2.10.orig.tar.bz2 6659484 SHA256:799dd37a86a1448732e339bd20440f4f5ee6e69755f6fd7a73ee8af30840c915
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2.asc' gnupg2_2.2.10.orig.tar.bz2.asc 530 SHA256:85ef54fde7fac6ed5f7de06312d5b6bcfae70cf045ff636d28f75b6225966220
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.debian.tar.xz' gnupg2_2.2.10-3.debian.tar.xz 65040 SHA256:5a9b507fe577b8930c3d2b2bbd76d3b27a53ea7917d4af6a19ea8d0c6f67ab2d
+'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.dsc' gnupg2_2.2.10-3.dsc 3136 SHA256:7ad097220da84cc81821f572d8a0655b05a80267a32e95d9ad5005fac8df5346
+'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2' gnupg2_2.2.10.orig.tar.bz2 6659484 SHA256:799dd37a86a1448732e339bd20440f4f5ee6e69755f6fd7a73ee8af30840c915
+'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2.asc' gnupg2_2.2.10.orig.tar.bz2.asc 530 SHA256:85ef54fde7fac6ed5f7de06312d5b6bcfae70cf045ff636d28f75b6225966220
+'http://http.debian.net/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.debian.tar.xz' gnupg2_2.2.10-3.debian.tar.xz 65040 SHA256:5a9b507fe577b8930c3d2b2bbd76d3b27a53ea7917d4af6a19ea8d0c6f67ab2d
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gnupg2/2.2.10-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.19-1`
 
@@ -3277,16 +3271,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.42.4-3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-3.dsc' pango1.0_1.42.4-3.dsc 3253 SHA256:b78be9f1e8c6bd3e1f5d1955a51af8b3867abba863b0534bd6a9594c3faf4a87
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.42.4-3.debian.tar.xz' pango1.0_1.42.4-3.debian.tar.xz 29748 SHA256:886833ac2f266d4384f02319cb517500739119842d59cbfbfd63f9ee1b3430ff
+'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.42.4-3.dsc' pango1.0_1.42.4-3.dsc 3253 SHA256:b78be9f1e8c6bd3e1f5d1955a51af8b3867abba863b0534bd6a9594c3faf4a87
+'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
+'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.42.4-3.debian.tar.xz' pango1.0_1.42.4-3.debian.tar.xz 29748 SHA256:886833ac2f266d4384f02319cb517500739119842d59cbfbfd63f9ee1b3430ff
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/pango1.0/1.42.4-3/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.42.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.42.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-3`
 
@@ -3746,10 +3734,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-stringi=1.2.4-2
-'http://http.debian.net/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4-2.dsc' r-cran-stringi_1.2.4-2.dsc 2053 SHA256:cab0994640f662cef9599ddaf4b6e8047d21083900dee811ceee6829fc378954
-'http://http.debian.net/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4.orig.tar.gz' r-cran-stringi_1.2.4.orig.tar.gz 17916239 SHA256:01570a200a25bde62c47b241636e67d73425efa10b924b63959a867796ea86f8
-'http://http.debian.net/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4-2.debian.tar.xz' r-cran-stringi_1.2.4-2.debian.tar.xz 10684536 SHA256:b3e340129e41019a483625a7ffeb075c2b1fad8633a64024bfb859b9331462c9
+'http://deb.debian.org/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4-2.dsc' r-cran-stringi_1.2.4-2.dsc 2053 SHA256:cab0994640f662cef9599ddaf4b6e8047d21083900dee811ceee6829fc378954
+'http://deb.debian.org/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4.orig.tar.gz' r-cran-stringi_1.2.4.orig.tar.gz 17916239 SHA256:01570a200a25bde62c47b241636e67d73425efa10b924b63959a867796ea86f8
+'http://deb.debian.org/debian/pool/main/r/r-cran-stringi/r-cran-stringi_1.2.4-2.debian.tar.xz' r-cran-stringi_1.2.4-2.debian.tar.xz 10684536 SHA256:b3e340129e41019a483625a7ffeb075c2b1fad8633a64024bfb859b9331462c9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-stringi/1.2.4-2/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-stringi/1.2.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-stringi/1.2.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-stringr=1.3.1-2`
 
@@ -4033,20 +4027,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-11
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.dsc' systemd_239-11.dsc 4817 SHA256:833a319ba82a62d2ea8e2f53fa9ba5706f442192f9b4ac128e9847da21171d35
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.debian.tar.xz' systemd_239-11.debian.tar.xz 154748 SHA256:2c99b4f5f200f4603b51f421910056bd7feba510ce0e19b386510b3f73a42e47
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-11/
 
-- https://sources.debian.net/src/systemd/239-11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 
