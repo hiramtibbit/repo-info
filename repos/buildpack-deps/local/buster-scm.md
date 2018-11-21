@@ -899,21 +899,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.10-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.dsc' gnupg2_2.2.10-3.dsc 3136 SHA256:7ad097220da84cc81821f572d8a0655b05a80267a32e95d9ad5005fac8df5346
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2' gnupg2_2.2.10.orig.tar.bz2 6659484 SHA256:799dd37a86a1448732e339bd20440f4f5ee6e69755f6fd7a73ee8af30840c915
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10.orig.tar.bz2.asc' gnupg2_2.2.10.orig.tar.bz2.asc 530 SHA256:85ef54fde7fac6ed5f7de06312d5b6bcfae70cf045ff636d28f75b6225966220
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.10-3.debian.tar.xz' gnupg2_2.2.10-3.debian.tar.xz 65040 SHA256:5a9b507fe577b8930c3d2b2bbd76d3b27a53ea7917d4af6a19ea8d0c6f67ab2d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.10-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.10-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.19-1`
 
@@ -1354,20 +1346,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17026-1
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17026-1.dsc' liberror-perl_0.17026-1.dsc 2209 SHA256:6fe4e58ee63353bc35ad95bd7642f3c0ca07248221a69bcedb36a1592a4f285e
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17026.orig.tar.gz' liberror-perl_0.17026.orig.tar.gz 32988 SHA256:37590a962cd73ae03470e1ff16459a6cbc5273fc57626b8981dab9c2433155d9
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17026-1.debian.tar.xz' liberror-perl_0.17026-1.debian.tar.xz 4216 SHA256:45583961ac80fb63b8766b3c7d4157a9bb424e0cf25bc407b290b06f402324b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17026-1/
 
-- https://sources.debian.net/src/liberror-perl/0.17026-1/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17026-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17026-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-8`
 
@@ -2108,21 +2093,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.9p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.9p1-1.dsc' openssh_7.9p1-1.dsc 3121 SHA256:dcf0986f38bead63c956b8c75cee6cd6263d5f836faedf8a3a34f1976e6907fa
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz' openssh_7.9p1.orig.tar.gz 1565384 SHA256:6b4b3ba2253d84ed3771c8050728d597c91cfce898713beb7b64a305b6f11aad
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz.asc' openssh_7.9p1.orig.tar.gz.asc 683 SHA256:4fd584498595450d68f5514b3d79eb14425a3d6aa9e9021d9e928fdd7b4469eb
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.9p1-1.debian.tar.xz' openssh_7.9p1-1.debian.tar.xz 163012 SHA256:7b2ca8e1fac29e7a42141fdb6efb05c12ac3c98c4018478377d301098a7762da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.9p1-1/
 
-- https://sources.debian.net/src/openssh/1:7.9p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.9p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.9p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1-2`
 
@@ -2674,20 +2651,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-11
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.dsc' systemd_239-11.dsc 4817 SHA256:833a319ba82a62d2ea8e2f53fa9ba5706f442192f9b4ac128e9847da21171d35
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.debian.tar.xz' systemd_239-11.debian.tar.xz 154748 SHA256:2c99b4f5f200f4603b51f421910056bd7feba510ce0e19b386510b3f73a42e47
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-11/
 
-- https://sources.debian.net/src/systemd/239-11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 

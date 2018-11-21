@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8a1f00851cbdeee1022ac8fb86714e70582c41587e52cb1e213bc53f72aab0f`
-- Created: `2018-10-19T01:29:38.846654777Z`
-- Virtual Size: ~ 247.06 Mb  
+- Image ID: `sha256:0251281b44f3d1a234e5a150727f4d14a18803ba013103e02644888e5fe53028`
+- Created: `2018-11-19T21:48:54.273952305Z`
+- Virtual Size: ~ 247.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -91,12 +91,12 @@ $ apt-get source -qq --print-uris apr=1.6.3-2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-2.debian.tar.xz' apr_1.6.3-2.debian.tar.xz 213068 SHA256:ac515f888f7157586631e3de9792ee01d239f9cbf1e768be31ee6daac61f2597
 ```
 
-### `dpkg` source package: `apt=1.6.3ubuntu0.1`
+### `dpkg` source package: `apt=1.6.6`
 
 Binary Packages:
 
-- `apt=1.6.3ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
+- `apt=1.6.6`
+- `libapt-pkg5.0:amd64=1.6.6`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -106,9 +106,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+$ apt-get source -qq --print-uris apt=1.6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.dsc' apt_1.6.6.dsc 2751 SHA256:4a2a1166a5989a3a8cdfaa37fe8be20eb4385ecb4a73a272970c81ae66551f7a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.tar.xz' apt_1.6.6.tar.xz 2141060 SHA256:c4d9b6d623ab455b297a551fe1fc20c87f866d2eeb21026131dc8c83e347f641
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -327,13 +327,13 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.3`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.5`
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3.3`
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.3`
-- `libcurl4:amd64=7.58.0-2ubuntu3.3`
+- `curl=7.58.0-2ubuntu3.5`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.5`
+- `libcurl4:amd64=7.58.0-2ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -344,9 +344,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.5.dsc' curl_7.58.0-2ubuntu3.5.dsc 2777 SHA256:452b48935c1f8188f716ffe6efe1c5fa6213d9a57f92e96c0bd825182836443c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.5.debian.tar.xz' curl_7.58.0-2ubuntu3.5.debian.tar.xz 37444 SHA256:dbce6d663e68afcee5c818fd9302d3059983763bfcc4a3f7edba328b7aacf0bc
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -464,11 +469,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `dpkg=1.19.0.5ubuntu2`
+### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.1`
 
 Binary Packages:
 
-- `dpkg=1.19.0.5ubuntu2`
+- `dpkg=1.19.0.5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -481,9 +486,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.dsc' dpkg_1.19.0.5ubuntu2.dsc 2132 SHA256:e9e965f1f4a1a86f2944253ee393e1de8f53d0db5a5f8cc9d88c8cd20b0559a9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.tar.xz' dpkg_1.19.0.5ubuntu2.tar.xz 4570900 SHA256:29444a09e6976e9b9adde799acd78d7049bf5c933f4d49b249a11f167d79d5f4
+$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.dsc' dpkg_1.19.0.5ubuntu2.1.dsc 2140 SHA256:98044f3fb11b12c8e08930adc3a3057f8e4f542d11aee929a6e2a7dea0d4cd9b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.tar.xz' dpkg_1.19.0.5ubuntu2.1.tar.xz 4570912 SHA256:3e8bd743f1b953095bba765bfb75eaaa68a6aba3bc8de97e3f9d1dff754addaa
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.44.1-1`
@@ -1547,11 +1552,11 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
 ```
 
-### `dpkg` source package: `openssh=1:7.6p1-4`
+### `dpkg` source package: `openssh=1:7.6p1-4ubuntu0.1`
 
 Binary Packages:
 
-- `openssh-client=1:7.6p1-4`
+- `openssh-client=1:7.6p1-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1567,11 +1572,11 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:7.6p1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1-4.dsc' openssh_7.6p1-4.dsc 3105 SHA256:3b8a02d664fab7b7d757adf4d5885697e8723a4fc8b71072787af50384d442b7
+$ apt-get source -qq --print-uris openssh=1:7.6p1-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1-4ubuntu0.1.dsc' openssh_7.6p1-4ubuntu0.1.dsc 3204 SHA256:e69dbddc2c6f8b7e2e8c9d698ca13417e7f7f712b42f3715c32e7d29b426d0f8
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz' openssh_7.6p1.orig.tar.gz 1489788 SHA256:a323caeeddfe145baaa0db16e98d784b1fbc7dd436a6bf1f479dfd5cd1d21723
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1.orig.tar.gz.asc' openssh_7.6p1.orig.tar.gz.asc 683 SHA256:14e5097d68c73d42afe6314a510e7056b1748ac1d1e19518057b270d19656ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1-4.debian.tar.xz' openssh_7.6p1-4.debian.tar.xz 159732 SHA256:c54489a7eec51a79581ad69eabfe6f9f0d8ddbe08d841157509e38631f8c0e0d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1-4ubuntu0.1.debian.tar.xz' openssh_7.6p1-4ubuntu0.1.debian.tar.xz 160952 SHA256:46ef8830f68ea4dbf7708aaa447ae95da33139bb1e45303e269fdcffeb039158
 ```
 
 ### `dpkg` source package: `openssl1.0=1.0.2n-1ubuntu5.1`
@@ -1798,14 +1803,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.15~rc1-1`
+### `dpkg` source package: `python2.7=2.7.15~rc1-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.15~rc1-1`
-- `libpython2.7-stdlib:amd64=2.7.15~rc1-1`
-- `python2.7=2.7.15~rc1-1`
-- `python2.7-minimal=2.7.15~rc1-1`
+- `libpython2.7-minimal:amd64=2.7.15~rc1-1ubuntu0.1`
+- `libpython2.7-stdlib:amd64=2.7.15~rc1-1ubuntu0.1`
+- `python2.7=2.7.15~rc1-1ubuntu0.1`
+- `python2.7-minimal=2.7.15~rc1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1829,10 +1834,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.15~rc1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1.dsc' python2.7_2.7.15~rc1-1.dsc 3385 SHA256:b9e3a9b33aa978dc5635a26cb5176c2080d1b2f8097300ff33f2e54eb5fd86ed
+$ apt-get source -qq --print-uris python2.7=2.7.15~rc1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1ubuntu0.1.dsc' python2.7_2.7.15~rc1-1ubuntu0.1.dsc 3480 SHA256:98f51fba2a970d76de4e52aacd682a7643b4b19082f860bb1af4f7aaf96effcc
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1.orig.tar.gz' python2.7_2.7.15~rc1.orig.tar.gz 17496421 SHA256:8a0c4ce73d351d73dc105cb8dadd2b5b0aa91956353a558dff10962f543f5d8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1.diff.gz' python2.7_2.7.15~rc1-1.diff.gz 285090 SHA256:55c3e10c975f3c63cdf354da9536d8e91f38ef8e7a5f6bc7cbe14f97964fe27c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz' python2.7_2.7.15~rc1-1ubuntu0.1.diff.gz 286551 SHA256:5759321345df298f17dbb5405a22929ac6d33eb3646fe6516027bf43893e6973
 ```
 
 ### `dpkg` source package: `readline=7.0-3`
@@ -2020,12 +2025,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.3`
+### `dpkg` source package: `systemd=237-3ubuntu10.6`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.3`
-- `libudev1:amd64=237-3ubuntu10.3`
+- `libsystemd0:amd64=237-3ubuntu10.6`
+- `libudev1:amd64=237-3ubuntu10.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 

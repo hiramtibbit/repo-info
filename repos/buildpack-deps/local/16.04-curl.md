@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ae26717a3cc159466c7cf61518aac7e42e1ff968c69dc8ff7a9ee683d73a02d`
-- Created: `2018-10-19T01:39:46.707519222Z`
-- Virtual Size: ~ 132.67 Mb  
+- Image ID: `sha256:cad12a29ec327538c1da53a48f6e70ba229782235805b1b6d0d474619c2107c9`
+- Created: `2018-11-19T22:02:24.799489151Z`
+- Virtual Size: ~ 133.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -74,21 +74,25 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
 ```
 
-### `dpkg` source package: `apt=1.2.27`
+### `dpkg` source package: `apt=1.2.29`
 
 Binary Packages:
 
-- `apt=1.2.27`
-- `libapt-pkg5.0:amd64=1.2.27`
+- `apt=1.2.29`
+- `libapt-pkg5.0:amd64=1.2.29`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.29
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.dsc' apt_1.2.29.dsc 2392 SHA256:cd6d3baf99c6f80b9e46c90ee3686de856ef197a978af825c688287e7c9a80ea
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.tar.xz' apt_1.2.29.tar.xz 2055072 SHA256:aefb56c030c8fb909b690ba51d04dbf3dda8f9761803f9f0c4a6ffa78433cd95
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -283,12 +287,12 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.9`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.9`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.9`
+- `curl=7.47.0-1ubuntu2.11`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.11`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -299,16 +303,21 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.11
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.dsc' curl_7.47.0-1ubuntu2.11.dsc 2733 SHA256:2e4e6c43849f942de7a023485e6389a3a2de717f1b116c93262f65549fd1ef3b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.debian.tar.xz' curl_7.47.0-1ubuntu2.11.debian.tar.xz 53460 SHA256:4d730a08036b5ed2945f400e313007e7d4cad41c1df10e1a762ab38df87d5964
+```
 
-### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
+### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.26.dfsg1-14build1`
-- `libsasl2-modules-db:amd64=2.1.26.dfsg1-14build1`
+- `libsasl2-2:amd64=2.1.26.dfsg1-14ubuntu0.1`
+- `libsasl2-modules-db:amd64=2.1.26.dfsg1-14ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -322,10 +331,10 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-14build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-14build1.dsc' cyrus-sasl2_2.1.26.dfsg1-14build1.dsc 3327 SHA256:74a35f22e72f7bcb3fb6b11421d31d2d9b0fb45aa869661c668274458fc4b45e
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-14ubuntu0.1.dsc' cyrus-sasl2_2.1.26.dfsg1-14ubuntu0.1.dsc 3353 SHA256:47ce36870820598ce2e77c2f7e03dbdf3f5497d580058e8de157797bbf111270
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-14build1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-14build1.debian.tar.xz 94628 SHA256:458c95e20745f61bbb080305e62348e26c079caaae56917cb12c2127095de6a4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-14ubuntu0.1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-14ubuntu0.1.debian.tar.xz 94648 SHA256:cb8cb014d1466d0b8b74c6aabd810ede2df66aa813a6a364b78a262747d3ab27
 ```
 
 ### `dpkg` source package: `dash=0.5.8-2.1ubuntu2`
@@ -422,11 +431,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.4`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.5`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.4`
+- `dpkg=1.18.4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -436,9 +445,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.dsc' dpkg_1.18.4ubuntu1.5.dsc 2211 SHA256:b76b4e1750ba75a8bc5fae43beb77b723a7b6dff933ff792e6d98a360dd6b55e
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.tar.xz' dpkg_1.18.4ubuntu1.5.tar.xz 4298288 SHA256:43e6c3934c08ec1c6e040f35d80f88a93d1ed41602932bdcbe059173fbd5fda9
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -771,11 +784,11 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-8ubuntu1.debian.tar.xz' keyutils_1.5.9-8ubuntu1.debian.tar.xz 16716 SHA256:36f69846dfeb1e7abdd39dace57a43f9637e426cf4c5252dd9990af36488249b
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu5`
+### `dpkg` source package: `kmod=22-1ubuntu5.1`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu5`
+- `libkmod2:amd64=22-1ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -785,10 +798,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.dsc' kmod_22-1ubuntu5.1.dsc 2165 SHA256:b7d1bd8258fa8d3120522a82f4618ab55bbf3ee03ea79c5f0f1209e075968102
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
 ```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
@@ -1506,14 +1519,14 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.4`
+### `dpkg` source package: `systemd=229-4ubuntu21.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.4`
-- `libudev1:amd64=229-4ubuntu21.4`
-- `systemd=229-4ubuntu21.4`
-- `systemd-sysv=229-4ubuntu21.4`
+- `libsystemd0:amd64=229-4ubuntu21.8`
+- `libudev1:amd64=229-4ubuntu21.8`
+- `systemd=229-4ubuntu21.8`
+- `systemd-sysv=229-4ubuntu21.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 

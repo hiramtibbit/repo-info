@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3697426dbdd43c4087ba2e6e6ad72151cc86c4b7b967d927483778f12583e2b1`
-- Created: `2018-10-19T01:32:43.450423634Z`
+- Image ID: `sha256:bbfd4214feef8b205226f0bf182c5101d7ff6c552b56ddaaba18c4bf2f45e8db`
+- Created: `2018-11-19T21:53:06.303291829Z`
 - Virtual Size: ~ 94.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -248,12 +248,12 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu2.debian.tar.xz' coreutils_8.28-1ubuntu2.debian.tar.xz 39892 SHA256:5556e6d2d37504b74d3aea27e8a8a91bc8db5fe9ae6e2d608992f0c7d03efbdf
 ```
 
-### `dpkg` source package: `curl=7.61.0-1ubuntu2`
+### `dpkg` source package: `curl=7.61.0-1ubuntu2.2`
 
 Binary Packages:
 
-- `curl=7.61.0-1ubuntu2`
-- `libcurl4:amd64=7.61.0-1ubuntu2`
+- `curl=7.61.0-1ubuntu2.2`
+- `libcurl4:amd64=7.61.0-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -267,10 +267,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.61.0-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.dsc' curl_7.61.0-1ubuntu2.dsc 2444 SHA256:6365d3253fd9ae337bc31231e1cc0d982b9ad8000e8cc277717b53f1ceea8f08
+$ apt-get source -qq --print-uris curl=7.61.0-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.2.dsc' curl_7.61.0-1ubuntu2.2.dsc 2777 SHA256:eb92ba5348d28ebee8ae5a5544f1d414e5d92467b314fc0a034eeb6f1dd5e168
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0.orig.tar.gz' curl_7.61.0.orig.tar.gz 3964862 SHA256:64141f0db4945268a21b490d58806b97c615d3d0c75bf8c335bbe0efd13b45b5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.debian.tar.xz' curl_7.61.0-1ubuntu2.debian.tar.xz 29048 SHA256:3820ce9c4c5cb339a76a3f3d5d5a9c826f62a9babfbf9e9270c76649608170c9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.2.debian.tar.xz' curl_7.61.0-1ubuntu2.2.debian.tar.xz 30192 SHA256:5df3a639bae8576f19fe24e5eb6382f7dc0bc827f75b7ba28b4c8dabe51d6707
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
@@ -1585,12 +1585,12 @@ $ apt-get source -qq --print-uris sqlite3=3.24.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
 ```
 
-### `dpkg` source package: `systemd=239-7ubuntu10`
+### `dpkg` source package: `systemd=239-7ubuntu10.3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=239-7ubuntu10`
-- `libudev1:amd64=239-7ubuntu10`
+- `libsystemd0:amd64=239-7ubuntu10.3`
+- `libudev1:amd64=239-7ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1602,14 +1602,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.dsc' systemd_239-7ubuntu10.dsc 4641 SHA256:5da3ca389e4f6f56396dd534bc8b70e5c9bc87522fec69b465b58852d36274ca
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.debian.tar.xz' systemd_239-7ubuntu10.debian.tar.xz 180360 SHA256:f5f68e21ea09708de43a68905446f92ad28e3259068e5c06c0258563699bcbdb
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
