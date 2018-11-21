@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6de28e772e3db522de89fcabf70869f68d04ffe4fc2b3c8f37a48a73dede6d9d`
-- Created: `2018-11-14T02:21:50.444171247Z`
-- Virtual Size: ~ 116.82 Mb  
+- Image ID: `sha256:4df33d03354ee66752270710a2410b7fe0b3e75a19b29e6d434c84e37a6b8737`
+- Created: `2018-11-19T22:35:27.397111675Z`
+- Virtual Size: ~ 117.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -74,21 +74,25 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
 ```
 
-### `dpkg` source package: `apt=1.2.27`
+### `dpkg` source package: `apt=1.2.29`
 
 Binary Packages:
 
-- `apt=1.2.27`
-- `libapt-pkg5.0:amd64=1.2.27`
+- `apt=1.2.29`
+- `libapt-pkg5.0:amd64=1.2.29`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.29
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.dsc' apt_1.2.29.dsc 2392 SHA256:cd6d3baf99c6f80b9e46c90ee3686de856ef197a978af825c688287e7c9a80ea
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.tar.xz' apt_1.2.29.tar.xz 2055072 SHA256:aefb56c030c8fb909b690ba51d04dbf3dda8f9761803f9f0c4a6ffa78433cd95
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -357,11 +361,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.4`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.5`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.4`
+- `dpkg=1.18.4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -371,9 +375,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.dsc' dpkg_1.18.4ubuntu1.5.dsc 2211 SHA256:b76b4e1750ba75a8bc5fae43beb77b723a7b6dff933ff792e6d98a360dd6b55e
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.5.tar.xz' dpkg_1.18.4ubuntu1.5.tar.xz 4298288 SHA256:43e6c3934c08ec1c6e040f35d80f88a93d1ed41602932bdcbe059173fbd5fda9
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -607,11 +615,11 @@ $ apt-get source -qq --print-uris insserv=1.14.0-5ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/insserv/insserv_1.14.0-5ubuntu3.debian.tar.xz' insserv_1.14.0-5ubuntu3.debian.tar.xz 48124 SHA256:a4d0d0703fa398819ab7b4cad573f334feee80aac5520202457519e737b4648a
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu5`
+### `dpkg` source package: `kmod=22-1ubuntu5.1`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu5`
+- `libkmod2:amd64=22-1ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -621,10 +629,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu5
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://security.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.dsc' kmod_22-1ubuntu5.1.dsc 2165 SHA256:b7d1bd8258fa8d3120522a82f4618ab55bbf3ee03ea79c5f0f1209e075968102
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
 ```
 
 ### `dpkg` source package: `libcap2=1:2.24-12`
@@ -931,11 +939,11 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
 ```
 
-### `dpkg` source package: `neurodebian=0.38.1~nd16.04+1`
+### `dpkg` source package: `neurodebian=0.38.2~nd16.04+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.1~nd16.04+1`
+- `neurodebian-freeze=0.38.2~nd16.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -947,9 +955,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris neurodebian=0.38.1~nd16.04+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd16.04+1.dsc' neurodebian_0.38.1~nd16.04+1.dsc 1485 SHA256:f3611bd9340717676f28b9fc54606ea8fb0f4268d7088ca75031575bd0ec54fc
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd16.04+1.tar.xz' neurodebian_0.38.1~nd16.04+1.tar.xz 8320320 SHA256:9a169112324d59cb957023b6e886cd66bb1b34774724f119b69f77437c681486
+$ apt-get source -qq --print-uris neurodebian=0.38.2~nd16.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd16.04+1.dsc' neurodebian_0.38.2~nd16.04+1.dsc 1485 SHA256:479c6eab579197858b3ecd2f7c47c40729884eb5e94e31f0adbfa9ca1d16a8c8
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd16.04+1.tar.xz' neurodebian_0.38.2~nd16.04+1.tar.xz 8321208 SHA256:981af1213ad2c5f9606f8321882528769e7e8d21fef37063e55727f920ac9caf
 ```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2.1`
@@ -1139,14 +1147,14 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.4`
+### `dpkg` source package: `systemd=229-4ubuntu21.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.4`
-- `libudev1:amd64=229-4ubuntu21.4`
-- `systemd=229-4ubuntu21.4`
-- `systemd-sysv=229-4ubuntu21.4`
+- `libsystemd0:amd64=229-4ubuntu21.8`
+- `libudev1:amd64=229-4ubuntu21.8`
+- `systemd=229-4ubuntu21.8`
+- `systemd-sysv=229-4ubuntu21.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 

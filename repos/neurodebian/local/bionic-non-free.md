@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc237bf42efb8ec3b191c94613b3d4db0db876fb60edd3b955d5d2eb9fb0afd9`
-- Created: `2018-11-14T02:22:51.223342086Z`
-- Virtual Size: ~ 97.60 Mb  
+- Image ID: `sha256:8d8b611009773c8bd20c04ac8069c145f23445009e334964ea4f61740d7d3350`
+- Created: `2018-11-19T22:38:00.020037186Z`
+- Virtual Size: ~ 97.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.3ubuntu0.1`
+### `dpkg` source package: `apt=1.6.6`
 
 Binary Packages:
 
-- `apt=1.6.3ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
+- `apt=1.6.6`
+- `libapt-pkg5.0:amd64=1.6.6`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
+$ apt-get source -qq --print-uris apt=1.6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.dsc' apt_1.6.6.dsc 2751 SHA256:4a2a1166a5989a3a8cdfaa37fe8be20eb4385ecb4a73a272970c81ae66551f7a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.tar.xz' apt_1.6.6.tar.xz 2141060 SHA256:c4d9b6d623ab455b297a551fe1fc20c87f866d2eeb21026131dc8c83e347f641
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -343,11 +343,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `dpkg=1.19.0.5ubuntu2`
+### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.1`
 
 Binary Packages:
 
-- `dpkg=1.19.0.5ubuntu2`
+- `dpkg=1.19.0.5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -360,9 +360,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.dsc' dpkg_1.19.0.5ubuntu2.dsc 2132 SHA256:e9e965f1f4a1a86f2944253ee393e1de8f53d0db5a5f8cc9d88c8cd20b0559a9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.tar.xz' dpkg_1.19.0.5ubuntu2.tar.xz 4570900 SHA256:29444a09e6976e9b9adde799acd78d7049bf5c933f4d49b249a11f167d79d5f4
+$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.dsc' dpkg_1.19.0.5ubuntu2.1.dsc 2140 SHA256:98044f3fb11b12c8e08930adc3a3057f8e4f542d11aee929a6e2a7dea0d4cd9b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.tar.xz' dpkg_1.19.0.5ubuntu2.1.tar.xz 4570912 SHA256:3e8bd743f1b953095bba765bfb75eaaa68a6aba3bc8de97e3f9d1dff754addaa
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.44.1-1`
@@ -1104,11 +1104,11 @@ $ apt-get source -qq --print-uris nettle=3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4-1.debian.tar.xz' nettle_3.4-1.debian.tar.xz 19884 SHA256:9bfc25562ed36449e75741b0473e0e558bc9ef5c20ca24e7c650fea87d631c03
 ```
 
-### `dpkg` source package: `neurodebian=0.38.1~nd18.04+1`
+### `dpkg` source package: `neurodebian=0.38.2~nd18.04+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.1~nd18.04+1`
+- `neurodebian-freeze=0.38.2~nd18.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1120,9 +1120,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris neurodebian=0.38.1~nd18.04+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd18.04+1.dsc' neurodebian_0.38.1~nd18.04+1.dsc 1485 SHA256:86a7e005307f1665a7f5e55010400f4fb091e0edb8d916b30eda1505f0f7252f
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd18.04+1.tar.xz' neurodebian_0.38.1~nd18.04+1.tar.xz 8324884 SHA256:4a4ec31bdb19d5377fd521a7839e4f051d5bb1aa3f517c9e2833655f47e0e869
+$ apt-get source -qq --print-uris neurodebian=0.38.2~nd18.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd18.04+1.dsc' neurodebian_0.38.2~nd18.04+1.dsc 1485 SHA256:f4ed6775435922f4e7d7d000d8b73e82b02d5231a701316ffc9973c8e932beab
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd18.04+1.tar.xz' neurodebian_0.38.2~nd18.04+1.tar.xz 8325404 SHA256:3876fa243dc4540fd58c4dd69b8367328b2abf64ba8e5e0197cb6c5c8f3daa42
 ```
 
 ### `dpkg` source package: `npth=1.5-3`
@@ -1429,12 +1429,12 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.3`
+### `dpkg` source package: `systemd=237-3ubuntu10.6`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.3`
-- `libudev1:amd64=237-3ubuntu10.3`
+- `libsystemd0:amd64=237-3ubuntu10.6`
+- `libudev1:amd64=237-3ubuntu10.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 

@@ -1613,13 +1613,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.38.1~nd100+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd100+1.dsc' neurodebian_0.38.1~nd100+1.dsc 1477 SHA256:af66eca7247fd232861bb4a4b8af315cfdc44c9fc06e10ba9fbf9caff0836dcc
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd100+1.tar.xz' neurodebian_0.38.1~nd100+1.tar.xz 8324640 SHA256:e5787cc199e287f807776b2524e834bc3ebac32b87b55222f8123b34a6c12d20
-```
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -1962,20 +1958,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-11
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.dsc' systemd_239-11.dsc 4817 SHA256:833a319ba82a62d2ea8e2f53fa9ba5706f442192f9b4ac128e9847da21171d35
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.debian.tar.xz' systemd_239-11.debian.tar.xz 154748 SHA256:2c99b4f5f200f4603b51f421910056bd7feba510ce0e19b386510b3f73a42e47
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-11/
 
-- https://sources.debian.net/src/systemd/239-11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 

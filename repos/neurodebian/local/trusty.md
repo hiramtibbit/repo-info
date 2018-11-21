@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d125627adfd5ec69f0816dac76cff89b9e3c3e266d06c84e6dad47987e28401`
-- Created: `2018-11-14T02:20:28.10011863Z`
-- Virtual Size: ~ 190.36 Mb  
+- Image ID: `sha256:0c2904127613961ed184a153e789290fa42a08fc110abb883b340eb1c1219bed`
+- Created: `2018-11-19T22:33:55.380243561Z`
+- Virtual Size: ~ 190.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1824,11 +1824,11 @@ $ apt-get source -qq --print-uris netcat-openbsd=1.105-7ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/netcat-openbsd/netcat-openbsd_1.105-7ubuntu1.debian.tar.gz' netcat-openbsd_1.105-7ubuntu1.debian.tar.gz 33804 SHA256:e64fad2b9164d16d9de471ae8ecdda2c31fb9872244e685ac189e65a64f18725
 ```
 
-### `dpkg` source package: `neurodebian=0.38.1~nd14.04+1`
+### `dpkg` source package: `neurodebian=0.38.2~nd14.04+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.1~nd14.04+1`
+- `neurodebian-freeze=0.38.2~nd14.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1840,9 +1840,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris neurodebian=0.38.1~nd14.04+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd14.04+1.dsc' neurodebian_0.38.1~nd14.04+1.dsc 1435 SHA256:f6581aff132281092dcc32c7582e36dc9abe3042c3a3544151f58f5f7d76699e
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.1~nd14.04+1.tar.gz' neurodebian_0.38.1~nd14.04+1.tar.gz 8819023 SHA256:873f6e2d98739aa8e6e958156682b750e54de477f1cbbd5464dc38863d922eee
+$ apt-get source -qq --print-uris neurodebian=0.38.2~nd14.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd14.04+1.dsc' neurodebian_0.38.2~nd14.04+1.dsc 1435 SHA256:94845a5bf5757ff7569b650ca79a696c8089e40b09b81787a4445e2be92ca5a2
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.2~nd14.04+1.tar.gz' neurodebian_0.38.2~nd14.04+1.tar.gz 8818918 SHA256:cfffee883d380274d753593bda879be89fa71cbef42f8350bfee1ae028b09cd4
 ```
 
 ### `dpkg` source package: `newt=0.52.15-2ubuntu5`
@@ -2092,14 +2092,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.6`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.7`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.6`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.6`
-- `python3.4=3.4.3-1ubuntu1~14.04.6`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.6`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.7`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.7`
+- `python3.4=3.4.3-1ubuntu1~14.04.7`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -2121,9 +2121,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.7.dsc' python3.4_3.4.3-1ubuntu1~14.04.7.dsc 3243 SHA256:236165c48110979afc10af9839f3ac0051b177948ed25cd3144feb9e66f4ee8e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.7.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.7.debian.tar.gz 266940 SHA256:e09bc691453d1d06d5ae3045ed9c3aab1e70596497992cb73b946cfc9bdb9f12
+```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
@@ -2372,19 +2377,43 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `tzdata=2018e-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018g-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2018e-0ubuntu0.14.04`
+- `tzdata=2018g-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.dsc' tzdata_2018g-0ubuntu0.14.04.dsc 2080 SHA256:b0cebc355c6e60033ae471b76ca50962a92c20aaf1044f6f4fd21e894055e783
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.debian.tar.xz' tzdata_2018g-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:71b1d88ca95860408140367ed60e3d2918deea06ff8b03c065784e00803e9180
+```
+
+### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
+
+Binary Packages:
+
+- `ubuntu-advantage-tools=10ubuntu0.14.04.2`
+
+Licenses: (parsed from: `/usr/share/doc/ubuntu-advantage-tools/copyright`)
+
+- `GPL-3`
+- `GPL-3.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ubuntu-advantage-tools=10ubuntu0.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc' ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc 1396 SHA256:b660add317d25dfa8bd0af790ea303007c21ba58dab2aaefd1e0fab62028461a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz' ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz 26604 SHA256:33583848adb6d81c17c6ed958f3703f93870a83613307066d901adec6b45b216
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
@@ -2404,11 +2433,11 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2012.05.19
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2012.05.19.tar.gz' ubuntu-keyring_2012.05.19.tar.gz 18495 SHA256:8b3bb00770c7b1e5c0abb215ecf8c383cb3b709292a52aeb1022b5556e768b69
 ```
 
-### `dpkg` source package: `ubuntu-meta=1.325`
+### `dpkg` source package: `ubuntu-meta=1.325.1`
 
 Binary Packages:
 
-- `ubuntu-minimal=1.325`
+- `ubuntu-minimal=1.325.1`
 
 Licenses: (parsed from: `/usr/share/doc/ubuntu-minimal/copyright`)
 
@@ -2417,9 +2446,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-minimal/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ubuntu-meta=1.325
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.dsc' ubuntu-meta_1.325.dsc 1570 SHA256:3bcf5dc9a2a546c13212d7dd90409e6d700e22ec4092c008b7d50350583ed898
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.tar.gz' ubuntu-meta_1.325.tar.gz 47427 SHA256:1d5ac588833592603c136c3d07402748433ab9603eec50bf0967a0a7fe86c255
+$ apt-get source -qq --print-uris ubuntu-meta=1.325.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.1.dsc' ubuntu-meta_1.325.1.dsc 1292 SHA256:8984b7ded33e9f160de62d1c69a08438cf958f0447edae75a18133d52d1a96ea
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.1.tar.xz' ubuntu-meta_1.325.1.tar.xz 38580 SHA256:267dd5647db7113d7d66d722520c2044ed883fc8b711afb9677046f74d039b2b
 ```
 
 ### `dpkg` source package: `ucf=3.0027+nmu1`
