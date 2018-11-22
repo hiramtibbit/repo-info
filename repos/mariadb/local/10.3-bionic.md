@@ -1,10 +1,10 @@
-# `mariadb:10.3.10-bionic`
+# `mariadb:10.3.11-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:95d6852bba5ae4adc374fe563b8a6665032449e9b45e9f133e845fb33d2a09d7`
-- Created: `2018-11-16T00:29:14.06283387Z`
-- Virtual Size: ~ 365.30 Mb  
+- Image ID: `sha256:b468922dbbd73bdc874c751778f1ec0ec10817691624976865cb3ec5c70cd4e0`
+- Created: `2018-11-21T00:35:32.756056617Z`
+- Virtual Size: ~ 365.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.3`
-  - `MARIADB_VERSION=1:10.3.10+maria~bionic`
+  - `MARIADB_VERSION=1:10.3.11+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -56,33 +56,15 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.3ubuntu0.1`
-
-Binary Packages:
-
-- `apt=1.6.3ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.6.3ubuntu0.1`
-
-Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
-
-- `GPL-2`
-- `GPLv2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apt=1.6.3ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.dsc' apt_1.6.3ubuntu0.1.dsc 2837 SHA256:9d52047a84adec24d0d5735c0f96e42add754cdc14d0899179539f1223ca4bf1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.3ubuntu0.1.tar.xz' apt_1.6.3ubuntu0.1.tar.xz 2138972 SHA256:e23dc541902369f3ab49155a7ecdc6d42f66a5e938327fd5e629b3baea6079fc
-```
-
 ### `dpkg` source package: `apt=1.6.6`
 
 Binary Packages:
 
+- `apt=1.6.6`
 - `apt-transport-https=1.6.6`
+- `libapt-pkg5.0:amd64=1.6.6`
 
-Licenses: (parsed from: `/usr/share/doc/apt-transport-https/copyright`)
+Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
@@ -387,11 +369,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `dpkg=1.19.0.5ubuntu2`
+### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.1`
 
 Binary Packages:
 
-- `dpkg=1.19.0.5ubuntu2`
+- `dpkg=1.19.0.5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -404,9 +386,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.dsc' dpkg_1.19.0.5ubuntu2.dsc 2132 SHA256:e9e965f1f4a1a86f2944253ee393e1de8f53d0db5a5f8cc9d88c8cd20b0559a9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.tar.xz' dpkg_1.19.0.5ubuntu2.tar.xz 4570900 SHA256:29444a09e6976e9b9adde799acd78d7049bf5c933f4d49b249a11f167d79d5f4
+$ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.dsc' dpkg_1.19.0.5ubuntu2.1.dsc 2140 SHA256:98044f3fb11b12c8e08930adc3a3057f8e4f542d11aee929a6e2a7dea0d4cd9b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.tar.xz' dpkg_1.19.0.5ubuntu2.1.tar.xz 4570912 SHA256:3e8bd743f1b953095bba765bfb75eaaa68a6aba3bc8de97e3f9d1dff754addaa
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.44.1-1`
@@ -1624,18 +1606,18 @@ $ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu3.debian.tar.xz' lz4_0.0~r131-2ubuntu3.debian.tar.xz 5340 SHA256:94834bac922397529ffc185f9c4c7e7a6eb1ef3bc527f3fcd26e36fc9430afa7
 ```
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.10+maria~bionic`
+### `dpkg` source package: `mariadb-10.3=1:10.3.11+maria~bionic`
 
 Binary Packages:
 
-- `mariadb-backup=1:10.3.10+maria~bionic`
-- `mariadb-client-10.3=1:10.3.10+maria~bionic`
-- `mariadb-client-core-10.3=1:10.3.10+maria~bionic`
-- `mariadb-common=1:10.3.10+maria~bionic`
-- `mariadb-server=1:10.3.10+maria~bionic`
-- `mariadb-server-10.3=1:10.3.10+maria~bionic`
-- `mariadb-server-core-10.3=1:10.3.10+maria~bionic`
-- `mysql-common=1:10.3.10+maria~bionic`
+- `mariadb-backup=1:10.3.11+maria~bionic`
+- `mariadb-client-10.3=1:10.3.11+maria~bionic`
+- `mariadb-client-core-10.3=1:10.3.11+maria~bionic`
+- `mariadb-common=1:10.3.11+maria~bionic`
+- `mariadb-server=1:10.3.11+maria~bionic`
+- `mariadb-server-10.3=1:10.3.11+maria~bionic`
+- `mariadb-server-core-10.3=1:10.3.11+maria~bionic`
+- `mysql-common=1:10.3.11+maria~bionic`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1644,9 +1626,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.10+maria~bionic
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.10+maria~bionic.dsc' mariadb-10.3_10.3.10+maria~bionic.dsc 3515 SHA256:7d33b650fc1b12195f9406c53d629d7654adb3e2723a2a47849f536fd7e70b0d
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.10+maria~bionic.tar.xz' mariadb-10.3_10.3.10+maria~bionic.tar.xz 44010440 SHA256:f1bcb948d3a76211b3af0870c0cc3271aa41463801db5688f71750cade7ff036
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.11+maria~bionic
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.11+maria~bionic.dsc' mariadb-10.3_10.3.11+maria~bionic.dsc 3616 SHA256:93562cadce76c1795681e6f8f96d5c998685a6790c82315a480bd3112070fb68
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.11+maria~bionic.tar.xz' mariadb-10.3_10.3.11+maria~bionic.tar.xz 44118356 SHA256:83e10229156382c55487ce304474e6b8316eada9f870477f609663ec8ecc8b33
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
@@ -2259,12 +2241,12 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1.debian.tar.xz' sqlite3_3.22.0-1.debian.tar.xz 17312 SHA256:7fcce88ce9c8fe517fb9fc5b9d67daf14e48da678496fede4b27cbd3ddcbd453
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.3`
+### `dpkg` source package: `systemd=237-3ubuntu10.6`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.3`
-- `libudev1:amd64=237-3ubuntu10.3`
+- `libsystemd0:amd64=237-3ubuntu10.6`
+- `libudev1:amd64=237-3ubuntu10.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 

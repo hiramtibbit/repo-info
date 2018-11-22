@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d77ddea4a81dd086d3a4e5e027a8be7d2738bbbbf8fe16aaa8b10f18f2b164a0`
-- Created: `2018-11-16T00:37:02.784321404Z`
-- Virtual Size: ~ 353.57 Mb  
+- Image ID: `sha256:1dfff0af4a5e658de7f77c3be23b1ebbb13f4ce7cdfe2f8c227aa00a46a25b34`
+- Created: `2018-11-19T22:32:48.403087111Z`
+- Virtual Size: ~ 352.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2162,9 +2162,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.26`
@@ -2447,14 +2447,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.6`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.7`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.6`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.6`
-- `python3.4=3.4.3-1ubuntu1~14.04.6`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.6`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.7`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.7`
+- `python3.4=3.4.3-1ubuntu1~14.04.7`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -2476,9 +2476,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.7.dsc' python3.4_3.4.3-1ubuntu1~14.04.7.dsc 3243 SHA256:236165c48110979afc10af9839f3ac0051b177948ed25cd3144feb9e66f4ee8e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.7.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.7.debian.tar.gz 266940 SHA256:e09bc691453d1d06d5ae3045ed9c3aab1e70596497992cb73b946cfc9bdb9f12
+```
 
 ### `dpkg` source package: `readline5=5.2+dfsg-2`
 
@@ -2846,6 +2851,25 @@ $ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.14.04
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.debian.tar.xz' tzdata_2018g-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:71b1d88ca95860408140367ed60e3d2918deea06ff8b03c065784e00803e9180
 ```
 
+### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
+
+Binary Packages:
+
+- `ubuntu-advantage-tools=10ubuntu0.14.04.2`
+
+Licenses: (parsed from: `/usr/share/doc/ubuntu-advantage-tools/copyright`)
+
+- `GPL-3`
+- `GPL-3.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ubuntu-advantage-tools=10ubuntu0.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc' ubuntu-advantage-tools_10ubuntu0.14.04.2.dsc 1396 SHA256:b660add317d25dfa8bd0af790ea303007c21ba58dab2aaefd1e0fab62028461a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-advantage-tools/ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz' ubuntu-advantage-tools_10ubuntu0.14.04.2.tar.xz 26604 SHA256:33583848adb6d81c17c6ed958f3703f93870a83613307066d901adec6b45b216
+```
+
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
 Binary Packages:
@@ -2864,11 +2888,11 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2012.05.19
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2012.05.19.tar.gz' ubuntu-keyring_2012.05.19.tar.gz 18495 SHA256:8b3bb00770c7b1e5c0abb215ecf8c383cb3b709292a52aeb1022b5556e768b69
 ```
 
-### `dpkg` source package: `ubuntu-meta=1.325`
+### `dpkg` source package: `ubuntu-meta=1.325.1`
 
 Binary Packages:
 
-- `ubuntu-minimal=1.325`
+- `ubuntu-minimal=1.325.1`
 
 Licenses: (parsed from: `/usr/share/doc/ubuntu-minimal/copyright`)
 
@@ -2877,9 +2901,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-minimal/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ubuntu-meta=1.325
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.dsc' ubuntu-meta_1.325.dsc 1570 SHA256:3bcf5dc9a2a546c13212d7dd90409e6d700e22ec4092c008b7d50350583ed898
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.tar.gz' ubuntu-meta_1.325.tar.gz 47427 SHA256:1d5ac588833592603c136c3d07402748433ab9603eec50bf0967a0a7fe86c255
+$ apt-get source -qq --print-uris ubuntu-meta=1.325.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.1.dsc' ubuntu-meta_1.325.1.dsc 1292 SHA256:8984b7ded33e9f160de62d1c69a08438cf958f0447edae75a18133d52d1a96ea
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-meta/ubuntu-meta_1.325.1.tar.xz' ubuntu-meta_1.325.1.tar.xz 38580 SHA256:267dd5647db7113d7d66d722520c2044ed883fc8b711afb9677046f74d039b2b
 ```
 
 ### `dpkg` source package: `ucf=3.0027+nmu1`
