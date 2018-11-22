@@ -1,7 +1,7 @@
 ## `nextcloud:12-fpm-alpine`
 
 ```console
-$ docker pull nextcloud@sha256:50dda89796d156f890aae48dbda47eb3d02215f61b749e7cf88e937ac0764219
+$ docker pull nextcloud@sha256:895c665baccb96df3dcea3f6435fe1ff5ab3fdffbd290d3f61c56b3959743d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,14 +166,14 @@ CMD ["php-fpm"]
 ### `nextcloud:12-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nextcloud@sha256:bd4dd780f30f660c292b45a601e195e72180bec0de72199208a4c81261470db5
+$ docker pull nextcloud@sha256:3bd628455b9c01c9b49e6c71f50b8a892dc7efdb796ecd4e935ed7639250cd0f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.5 MB (99463907 bytes)**  
+-	Total Size: **99.5 MB (99505537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aca40e30d73d9e1f77bc6d0d97e55fae1c21c2e535405345844387da6dfcfbbf`
+-	Image ID: `sha256:c2dfa44dd0c548619380eeca0aa7029c740eb09e7c1a40b2651f4a708cb7509b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -230,23 +230,23 @@ EXPOSE 9000/tcp
 CMD ["php-fpm"]
 # Fri, 16 Nov 2018 10:48:40 GMT
 RUN set -ex;         apk add --no-cache         rsync     ;         rm /var/spool/cron/crontabs/root;     echo '*/15 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data
-# Fri, 16 Nov 2018 10:52:45 GMT
-RUN set -ex;         apk add --no-cache --virtual .build-deps         $PHPIZE_DEPS         autoconf         freetype-dev         icu-dev         libjpeg-turbo-dev         libmcrypt-dev         libpng-dev         libmemcached-dev         libxml2-dev         openldap-dev         pcre-dev         postgresql-dev     ;         docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap;     docker-php-ext-install         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip     ;         pecl install APCu-5.1.12;     pecl install memcached-3.0.4;     pecl install redis-4.1.1;         docker-php-ext-enable         apcu         memcached         redis     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --virtual .nextcloud-phpext-rundeps $runDeps;     apk del .build-deps
-# Fri, 16 Nov 2018 10:52:48 GMT
+# Thu, 22 Nov 2018 08:53:19 GMT
+RUN set -ex;         apk add --no-cache --virtual .build-deps         $PHPIZE_DEPS         autoconf         freetype-dev         icu-dev         libjpeg-turbo-dev         libmcrypt-dev         libpng-dev         libmemcached-dev         libxml2-dev         openldap-dev         pcre-dev         postgresql-dev     ;         docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr;     docker-php-ext-configure ldap;     docker-php-ext-install         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip     ;         pecl install APCu-5.1.13;     pecl install memcached-3.0.4;     pecl install redis-4.2.0;         docker-php-ext-enable         apcu         memcached         redis     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --virtual .nextcloud-phpext-rundeps $runDeps;     apk del .build-deps
+# Thu, 22 Nov 2018 08:53:20 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > /usr/local/etc/php/conf.d/memory-limit.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Fri, 16 Nov 2018 10:52:52 GMT
+# Thu, 22 Nov 2018 08:53:20 GMT
 VOLUME [/var/www/html]
-# Fri, 16 Nov 2018 10:54:20 GMT
+# Thu, 22 Nov 2018 08:54:35 GMT
 ENV NEXTCLOUD_VERSION=12.0.12
-# Fri, 16 Nov 2018 10:55:11 GMT
+# Thu, 22 Nov 2018 08:55:20 GMT
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
-# Fri, 16 Nov 2018 10:55:14 GMT
+# Thu, 22 Nov 2018 08:55:23 GMT
 COPY multi:81a604c4dab97e68e347c33e116ec4b72cbaeaa1a1c71fb9375c9cc9ec06291c in / 
-# Fri, 16 Nov 2018 10:55:16 GMT
+# Thu, 22 Nov 2018 08:55:23 GMT
 COPY multi:ca4d4da57eb7f9d9da17f5414c6686894b87a363e243105b8463618fd8dc681d in /usr/src/nextcloud/config/ 
-# Fri, 16 Nov 2018 10:55:16 GMT
+# Thu, 22 Nov 2018 08:55:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Nov 2018 10:55:17 GMT
+# Thu, 22 Nov 2018 08:55:24 GMT
 CMD ["php-fpm"]
 ```
 
@@ -299,25 +299,25 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 16 Nov 2018 11:05:12 GMT  
 		Size: 347.8 KB (347848 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bf06bec6fc03a3fca936a6121c6e847ad81f5f947f4024c64bc47d92acfb990`  
-		Last Modified: Fri, 16 Nov 2018 11:05:15 GMT  
-		Size: 19.2 MB (19150294 bytes)  
+	-	`sha256:814ba78e3e2312d1a33d0f4be11774fed82de3017f5012d73481977db9fc4d9e`  
+		Last Modified: Thu, 22 Nov 2018 09:05:00 GMT  
+		Size: 19.2 MB (19191879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbd4e7dade87d38586607cdf098088d314a42d8973945665fe0317ed49c66aaf`  
-		Last Modified: Fri, 16 Nov 2018 11:05:10 GMT  
-		Size: 528.0 B  
+	-	`sha256:3f906dc5e5909cc054b2cb4736ad6a5005fe905e2cab99ad6ea869064d130136`  
+		Last Modified: Thu, 22 Nov 2018 09:04:55 GMT  
+		Size: 530.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6714786ae11cc7d9adb338e43cf3f17ecf405f05912976f50e3637f0f995ed2a`  
-		Last Modified: Fri, 16 Nov 2018 11:06:21 GMT  
-		Size: 50.1 MB (50076779 bytes)  
+	-	`sha256:8e23c42ba284f0ce7aa33256148148216bd2c73c5eeb2a0097be53e5cfc09d4f`  
+		Last Modified: Thu, 22 Nov 2018 09:05:54 GMT  
+		Size: 50.1 MB (50076824 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e688898c822b5e07b0022cb06dadef205825f78e640b8c38098e40449793152`  
-		Last Modified: Fri, 16 Nov 2018 11:05:58 GMT  
+	-	`sha256:32341cf0204e12e41693d021ca8cb6707f7e34ac5796b0267aae945e21ba1d79`  
+		Last Modified: Thu, 22 Nov 2018 09:05:36 GMT  
 		Size: 1.9 KB (1910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1f7ed384fe408606738027bfac6b1da1746c9e1ce38466bc2d56a299008b721`  
-		Last Modified: Fri, 16 Nov 2018 11:05:59 GMT  
-		Size: 739.0 B  
+	-	`sha256:7368c76242b0e715672c9320b55a9f825e7988ea9bd43449354b578e050e755c`  
+		Last Modified: Thu, 22 Nov 2018 09:05:36 GMT  
+		Size: 737.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:12-fpm-alpine` - linux; arm64 variant v8
