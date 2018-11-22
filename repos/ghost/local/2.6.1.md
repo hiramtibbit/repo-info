@@ -1,9 +1,9 @@
-# `ghost:2.6.0`
+# `ghost:2.6.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be39725149f4db327c394b2188af6b2a64cccfd5e1a2341afb4522a6612563bb`
-- Created: `2018-11-16T19:00:28.028349588Z`
+- Image ID: `sha256:31a184261f16fda54ef92c53f985aa8924b3647ef22039e022c5c386bc8898dc`
+- Created: `2018-11-21T00:22:54.275598314Z`
 - Virtual Size: ~ 563.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.9.8`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=2.6.0`
+  - `GHOST_VERSION=2.6.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1658,20 +1658,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u9
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.dsc' openssl_1.0.1t-1+deb8u9.dsc 2423 SHA256:3dba1093668c2171f2a187a1225a4ee598c207e0307632f3808000ae3dc25bc5
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.debian.tar.xz' openssl_1.0.1t-1+deb8u9.debian.tar.xz 111484 SHA256:58f6dc16b6c65b1c6bc1c1f13133a81c2955779072b6a6f583f5db97b8db948d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
