@@ -1398,20 +1398,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.19.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.1-1.dsc' git_2.19.1-1.dsc 2888 SHA256:d932d2ff6eca8d2d0f8eab8f01b0aabc4a6b5f26321e11b48dad4b7d80f7b742
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.1.orig.tar.xz' git_2.19.1.orig.tar.xz 5227908 SHA256:345056aa9b8084280b1b9fe1374d232dec05a34e8849028a20bfdb56e920dbb5
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.1-1.debian.tar.xz' git_2.19.1-1.debian.tar.xz 587320 SHA256:1053cd6bb8d7e1a948e0dfddb122f97be5420bad76dddae13cca557067997857
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.19.1-1/
 
-- https://sources.debian.net/src/git/1:2.19.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.19.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.19.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib-networking=2.58.0-1`
 
@@ -1962,20 +1955,13 @@ Licenses: (parsed from: `/usr/share/doc/libip4tc0/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.2-1
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2-1.dsc' iptables_1.8.2-1.dsc 2699 SHA256:24d39c7cd9e9536c7e65b76c7e283d109684c4f25c9eefbc22be581a342f4cc9
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2.orig.tar.bz2' iptables_1.8.2.orig.tar.bz2 679858 SHA256:a3778b50ed1a3256f9ca975de82c2204e508001fc2471238c8c97f3d1c4c12af
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.2-1.debian.tar.xz' iptables_1.8.2-1.debian.tar.xz 64348 SHA256:52eca8f1ea202addf1c53b77110031155cdc661abe72ba7400b6b6c0914d9044
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.2-1/
 
-- https://sources.debian.net/src/iptables/1.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20180629-2`
 
@@ -4713,21 +4699,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.28/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.0-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.dsc' perl_5.28.0-3.dsc 2810 SHA256:19595f3005acdcbd11b982c76bd9960af17b29cd995e7535e7575cd83f5e10c9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig-regen-configure.tar.xz' perl_5.28.0.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig.tar.xz' perl_5.28.0.orig.tar.xz 12410536 SHA256:059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.debian.tar.xz' perl_5.28.0-3.debian.tar.xz 159980 SHA256:49c39dbc89d1715ea1d8dfc2ca4bf16f2711a227ef0a828b658964c1731f89a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.0-3/
 
-- https://sources.debian.net/src/perl/5.28.0-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -5203,20 +5181,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9+git181026-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.dsc' tiff_4.0.9+git181026-1.dsc 2280 SHA256:c62af309cc73df28ace1fcf7d7fa1c4f09f96150d093562347aa711e7d76b08e
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026.orig.tar.xz' tiff_4.0.9+git181026.orig.tar.xz 1520264 SHA256:a08f8f156d67d0b9504ff01a1456af975a72f51577d52e39b57847201c6bb6ae
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.debian.tar.xz' tiff_4.0.9+git181026-1.debian.tar.xz 17408 SHA256:fd02f97164b6768c1e775ce965a69937bd56e4210bdcca8f4d78e4a88d4583cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/
 
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018g-1`
 
