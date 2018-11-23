@@ -3646,14 +3646,9 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.8.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2-1ubuntu1.3.dsc' mercurial_2.8.2-1ubuntu1.3.dsc 2346 SHA256:686787864cc11767113dbfeb90249b1ad68830bee2ed8d1fb206b9452ecbdbc7
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2.orig.tar.gz' mercurial_2.8.2.orig.tar.gz 3839304 SHA256:c8a5baa21140c6cd6749c3b52b5e5e4a14b6b8ee7c518d9d9de09b1952efbe6f
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2-1ubuntu1.3.debian.tar.gz' mercurial_2.8.2-1ubuntu1.3.debian.tar.gz 54439 SHA256:048770ccfe6c914c8717f6cb3df8b6a507dce3028d3e49d93a63f28f8f557330
-```
 
 ### `dpkg` source package: `mesa=10.1.3-0ubuntu0.6`
 
@@ -4069,9 +4064,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
 ### `dpkg` source package: `openmpi=1.6.5-8`
