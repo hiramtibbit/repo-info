@@ -1483,19 +1483,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.55
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.dsc' init-system-helpers_1.55.dsc 2047 SHA256:c8a9b4f5aa0629d3e42e1e40c4bec7bc0eaafd60bfaa7ecb38e19944ad837815
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.tar.xz' init-system-helpers_1.55.tar.xz 40132 SHA256:ed124a69c20162a1364aec400b6910c2ad60124e9e08f99de016af02e4cdd7b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.55/
 
-- https://sources.debian.net/src/init-system-helpers/1.55/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.55/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.55/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.18.0-2`
 
@@ -1535,20 +1529,13 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.1-2
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.1-2.dsc' iptables_1.8.1-2.dsc 2724 SHA256:f08f7b36b0dad4df46f8e0d595362f0b8a3b8ef1ea6577885e9a3c08539421c3
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.1.orig.tar.bz2' iptables_1.8.1.orig.tar.bz2 678706 SHA256:8fe4f297cf9c9bbab4972f95527f3e484f60c17c61800c9bff562f06c45461d8
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.1-2.debian.tar.xz' iptables_1.8.1-2.debian.tar.xz 63416 SHA256:b6bd4cf26f3941cfb3375beda85a3abbbceef56f2fc9598cfecb1841ea368647
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.1-2/
 
-- https://sources.debian.net/src/iptables/1.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20180629-2`
 
@@ -3370,21 +3357,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.28/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.0-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.dsc' perl_5.28.0-3.dsc 2810 SHA256:19595f3005acdcbd11b982c76bd9960af17b29cd995e7535e7575cd83f5e10c9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig-regen-configure.tar.xz' perl_5.28.0.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig.tar.xz' perl_5.28.0.orig.tar.xz 12410536 SHA256:059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.debian.tar.xz' perl_5.28.0-3.debian.tar.xz 159980 SHA256:49c39dbc89d1715ea1d8dfc2ca4bf16f2711a227ef0a828b658964c1731f89a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.0-3/
 
-- https://sources.debian.net/src/perl/5.28.0-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.34.0-2`
 
@@ -3550,20 +3529,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=3.5.1-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.1-1.dsc' r-base_3.5.1-1.dsc 3008 SHA256:087828bdcc335cffb013550a4a5aac3e58f79d2c45a38879cd527b16096f64d4
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.1.orig.tar.gz' r-base_3.5.1.orig.tar.gz 29812849 SHA256:0463bff5eea0f3d93fa071f79c18d0993878fd4f2e18ae6cf22c1639d11457ed
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.5.1-1.debian.tar.xz' r-base_3.5.1-1.debian.tar.xz 87980 SHA256:670c7b713b62dcc26e2cb2b172537e98377f2a8b696f14d3ef17015ce36d7e18
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/3.5.1-1/
 
-- https://sources.debian.net/src/r-base/3.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/r-base/3.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/3.5.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
@@ -4071,20 +4043,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-2.dsc' tar_1.30+dfsg-2.dsc 1951 SHA256:e06cc08da7db7e8a546a946c23d89042cf86c9e8ae3a5c2c4e0d585ad6f2039f
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-2.debian.tar.xz' tar_1.30+dfsg-2.debian.tar.xz 17384 SHA256:7799136a18d6735463d421f5b48df900cd51ee7e89e3e6acc6c401bd903e4231
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.30+dfsg-2/
 
-- https://sources.debian.net/src/tar/1.30+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.30+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.30+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.8+dfsg-4`
 
@@ -4146,20 +4111,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9+git181026-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.dsc' tiff_4.0.9+git181026-1.dsc 2280 SHA256:c62af309cc73df28ace1fcf7d7fa1c4f09f96150d093562347aa711e7d76b08e
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026.orig.tar.xz' tiff_4.0.9+git181026.orig.tar.xz 1520264 SHA256:a08f8f156d67d0b9504ff01a1456af975a72f51577d52e39b57847201c6bb6ae
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9+git181026-1.debian.tar.xz' tiff_4.0.9+git181026-1.debian.tar.xz 17408 SHA256:fd02f97164b6768c1e775ce965a69937bd56e4210bdcca8f4d78e4a88d4583cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/
 
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9+git181026-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9+git181026-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.8-4`
 
