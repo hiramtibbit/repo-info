@@ -1,14 +1,14 @@
-# `percona:5.6.41-centos`
+# `percona:8.0.12-2rc1-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9897d94e53102a779e8502d0f129163ca74caf4ebb75842223e0b682221284b4`
-- Created: `2018-11-22T19:23:25.183088685Z`
-- Virtual Size: ~ 418.22 Mb  
+- Image ID: `sha256:874c2c5621984f951b43bd9781948f956c331173c4e567b176ba1cb528ece4eb`
+- Created: `2018-11-22T19:21:19.143047645Z`
+- Virtual Size: ~ 721.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PERCONA_VERSION=5.6.41-rel84.1.el7`
+  - `PERCONA_VERSION=8.0.12-2.rc1.el7`
