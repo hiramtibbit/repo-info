@@ -27,9 +27,15 @@
 -	[`kong:1.0.0rc2`](#kong100rc2)
 -	[`kong:1.0.0rc2-alpine`](#kong100rc2-alpine)
 -	[`kong:1.0.0rc2-centos`](#kong100rc2-centos)
+-	[`kong:1.0.0rc3`](#kong100rc3)
+-	[`kong:1.0.0rc3-alpine`](#kong100rc3-alpine)
+-	[`kong:1.0.0rc3-centos`](#kong100rc3-centos)
 -	[`kong:1.0rc2`](#kong10rc2)
 -	[`kong:1.0rc2-alpine`](#kong10rc2-alpine)
 -	[`kong:1.0rc2-centos`](#kong10rc2-centos)
+-	[`kong:1.0rc3`](#kong10rc3)
+-	[`kong:1.0rc3-alpine`](#kong10rc3-alpine)
+-	[`kong:1.0rc3-centos`](#kong10rc3-centos)
 -	[`kong:latest`](#konglatest)
 
 ## `kong:0.11`
@@ -1607,6 +1613,18 @@ CMD ["kong" "docker-start"]
 		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `kong:1.0.0rc3`
+
+**does not exist** (yet?)
+
+## `kong:1.0.0rc3-alpine`
+
+**does not exist** (yet?)
+
+## `kong:1.0.0rc3-centos`
+
+**does not exist** (yet?)
+
 ## `kong:1.0rc2`
 
 ```console
@@ -1795,6 +1813,18 @@ CMD ["kong" "docker-start"]
 		Last Modified: Thu, 25 Oct 2018 01:10:11 GMT  
 		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kong:1.0rc3`
+
+**does not exist** (yet?)
+
+## `kong:1.0rc3-alpine`
+
+**does not exist** (yet?)
+
+## `kong:1.0rc3-centos`
+
+**does not exist** (yet?)
 
 ## `kong:latest`
 
