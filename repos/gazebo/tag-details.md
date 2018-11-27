@@ -8,6 +8,7 @@
 -	[`gazebo:gzserver8-xenial`](#gazebogzserver8-xenial)
 -	[`gazebo:gzserver9`](#gazebogzserver9)
 -	[`gazebo:gzserver9-bionic`](#gazebogzserver9-bionic)
+-	[`gazebo:gzserver9-stretch`](#gazebogzserver9-stretch)
 -	[`gazebo:gzserver9-xenial`](#gazebogzserver9-xenial)
 -	[`gazebo:latest`](#gazebolatest)
 -	[`gazebo:libgazebo7`](#gazebolibgazebo7)
@@ -16,6 +17,7 @@
 -	[`gazebo:libgazebo8-xenial`](#gazebolibgazebo8-xenial)
 -	[`gazebo:libgazebo9`](#gazebolibgazebo9)
 -	[`gazebo:libgazebo9-bionic`](#gazebolibgazebo9-bionic)
+-	[`gazebo:libgazebo9-stretch`](#gazebolibgazebo9-stretch)
 -	[`gazebo:libgazebo9-xenial`](#gazebolibgazebo9-xenial)
 
 ## `gazebo:gzserver7`
@@ -575,6 +577,10 @@ CMD ["gzserver"]
 		Last Modified: Mon, 19 Nov 2018 22:24:02 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gazebo:gzserver9-stretch`
+
+**does not exist** (yet?)
 
 ## `gazebo:gzserver9-xenial`
 
@@ -1363,6 +1369,10 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.4.1-1*     && r
 		Last Modified: Mon, 19 Nov 2018 22:26:31 GMT  
 		Size: 279.4 MB (279439962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gazebo:libgazebo9-stretch`
+
+**does not exist** (yet?)
 
 ## `gazebo:libgazebo9-xenial`
 
