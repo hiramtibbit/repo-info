@@ -229,20 +229,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.31.1-7
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1-7.dsc' binutils_2.31.1-7.dsc 11792 SHA256:a43f3fa8b7eb8afc595816324a9eaaa2f30f8ae9cdf1d503f43a67f8222bc568
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1.orig.tar.xz' binutils_2.31.1.orig.tar.xz 21649228 SHA256:e398a2d579faa0f2b5a988add5f7481af8e21a21f63b6ea5702e6f517960c5eb
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1-7.debian.tar.xz' binutils_2.31.1-7.debian.tar.xz 107864 SHA256:e8bd5b00180dd41343809d256716e5da911aa833ad5582a0ca6d920a9624b7fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.31.1-7/
 
-- https://sources.debian.net/src/binutils/2.31.1-7/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.31.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.31.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-2`
 
@@ -1074,21 +1067,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18.1-1
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-1.dsc' gdbm_1.18.1-1.dsc 2607 SHA256:649ba9a530feb33de2aff9664df0f744e37d90da1a5b6d644b6ee809ae9a49ad
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz' gdbm_1.18.1.orig.tar.gz 941863 SHA256:86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz.asc' gdbm_1.18.1.orig.tar.gz.asc 412 SHA256:3254738e7689e44ac65e78a766806828b8282e6bb1c0e5bb6156a99e567889a5
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-1.debian.tar.xz' gdbm_1.18.1-1.debian.tar.xz 28020 SHA256:039cc6a034903da608be20f7f1d6e39801d83e755301b22ac43df17ea98cf75e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.18.1-1/
 
-- https://sources.debian.net/src/gdbm/1.18.1-1/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.18.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.18.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
 
@@ -1261,20 +1246,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.58.0-1
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.dsc' gobject-introspection_1.58.0-1.dsc 2844 SHA256:96ffd5f06eba428637b8e7debbd92d0fdcb85f2935be646a8a4c495a11f9a7d4
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0.orig.tar.xz' gobject-introspection_1.58.0.orig.tar.xz 1370824 SHA256:27c1590a32749de0a5481ce897772547043e94bccba4bc0a7edb3d8513e401ec
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.58.0-1.debian.tar.xz' gobject-introspection_1.58.0-1.debian.tar.xz 20884 SHA256:e263848fb37673d39000ee20635ad6204b9a8590cd2868baf5e6c96ef739f4ec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.58.0-1/
 
-- https://sources.debian.net/src/gobject-introspection/1.58.0-1/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.58.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.58.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.12-1`
 
@@ -2882,20 +2860,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-25-1
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-25-1.dsc' mgcv_1.8-25-1.dsc 1827 SHA256:e395f3f3e5b7dcede55558d8517a8baddc3b68eb14f8b9752346d63a0c8f6d54
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-25.orig.tar.gz' mgcv_1.8-25.orig.tar.gz 896191 SHA256:586cf3300056ccb3689e7a3351238d9aedc69e8df541183be322df42b6c159f8
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-25-1.debian.tar.xz' mgcv_1.8-25-1.debian.tar.xz 5140 SHA256:1fdc01ecd6bd72702ce3d577e175a885f5b008f029681d0824943674ec1e43b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mgcv/1.8-25-1/
 
-- https://sources.debian.net/src/mgcv/1.8-25-1/ (for browsing the source)
-- https://sources.debian.net/src/mgcv/1.8-25-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mgcv/1.8-25-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 
@@ -3163,21 +3134,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1-2.dsc' openssl_1.1.1-2.dsc 2604 SHA256:04fc6eda57fbf20b6341c846e99c2b5fea1ea8f681bc714bb59929c688d80a85
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1-2.debian.tar.xz' openssl_1.1.1-2.debian.tar.xz 83652 SHA256:41bb79d0b716aa93d18f6067d5a0aad9890abc09ddd6de893ea1ec6074ec597c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1-2/
 
-- https://sources.debian.net/src/openssl/1.1.1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
 
@@ -3941,21 +3904,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.25.3-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.dsc' sqlite3_3.25.3-1.dsc 2397 SHA256:8d10755c938bad4db8934d30d73fd8265cdb0fa9be60c29fb24d200711e768a4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig-www.tar.xz' sqlite3_3.25.3.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig.tar.xz' sqlite3_3.25.3.orig.tar.xz 6313928 SHA256:a06c58c7f9faa20fa24bd95828f4cd7c2672a81b1894a2505cc2f9e1ff9b5f9e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.debian.tar.xz' sqlite3_3.25.3-1.debian.tar.xz 17620 SHA256:fa38ac0d9e7de499186b88cec3c24a04034f3a0e65f3485ed71c07ed7a0d4721
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.25.3-1/
 
-- https://sources.debian.net/src/sqlite3/3.25.3-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.25.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.25.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=2.43-1-1`
 
