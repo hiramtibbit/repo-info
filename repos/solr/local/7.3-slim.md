@@ -396,21 +396,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.8-5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-5.dsc' cups_2.2.8-5.dsc 3467 SHA256:2f27b624cd965f100906ea5bba0abea9cc9daadbfef42bbeab021b8ffd184ce6
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz' cups_2.2.8.orig.tar.gz 10374921 SHA256:3968fc1d26fc48727508db1c1380e36c6694ab90177fd6920aec5f6cc73af9e4
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8.orig.tar.gz.asc' cups_2.2.8.orig.tar.gz.asc 872 SHA256:2f86f5ae127169cc070da00f4460a7faf8fb4ac66b04a34adeecf451a0086781
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.8-5.debian.tar.xz' cups_2.2.8-5.debian.tar.xz 351624 SHA256:4f1e27226659d44d6b3409d7509d53ebd64976b85a0bb7331efd50d4e362d547
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.8-5/
 
-- https://sources.debian.net/src/cups/2.2.8-5/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.8-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~rc8-1`
 
@@ -1099,19 +1091,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.55
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.dsc' init-system-helpers_1.55.dsc 2047 SHA256:c8a9b4f5aa0629d3e42e1e40c4bec7bc0eaafd60bfaa7ecb38e19944ad837815
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.tar.xz' init-system-helpers_1.55.tar.xz 40132 SHA256:ed124a69c20162a1364aec400b6910c2ad60124e9e08f99de016af02e4cdd7b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.55/
 
-- https://sources.debian.net/src/init-system-helpers/1.55/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.55/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.55/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-common=0.70`
 
@@ -2190,20 +2176,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.39-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.39-1.dsc' nss_3.39-1.dsc 2146 SHA256:4f897b66d1c29e13b0ef42e01501b3bc8a4926d3884f5d4a7581dc620899e820
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.39.orig.tar.gz' nss_3.39.orig.tar.gz 23048561 SHA256:6be64dd76f212415cc8bc34343ac1e7389048db4db9a023a84873c411dc5864b
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.39-1.debian.tar.xz' nss_3.39-1.debian.tar.xz 19968 SHA256:b4eba0767491697cda2d9d36a3ad25056dbc57b9001b149df75c59c73a07a6d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.39-1/
 
-- https://sources.debian.net/src/nss/2:3.39-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.39-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.39-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-10=10.0.2+13-2`
 
@@ -2270,21 +2249,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1-2.dsc' openssl_1.1.1-2.dsc 2604 SHA256:04fc6eda57fbf20b6341c846e99c2b5fea1ea8f681bc714bb59929c688d80a85
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1-2.debian.tar.xz' openssl_1.1.1-2.debian.tar.xz 83652 SHA256:41bb79d0b716aa93d18f6067d5a0aad9890abc09ddd6de893ea1ec6074ec597c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1-2/
 
-- https://sources.debian.net/src/openssl/1.1.1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
 
@@ -2435,21 +2406,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.0-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.dsc' perl_5.28.0-3.dsc 2810 SHA256:19595f3005acdcbd11b982c76bd9960af17b29cd995e7535e7575cd83f5e10c9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig-regen-configure.tar.xz' perl_5.28.0.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig.tar.xz' perl_5.28.0.orig.tar.xz 12410536 SHA256:059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.debian.tar.xz' perl_5.28.0-3.debian.tar.xz 159980 SHA256:49c39dbc89d1715ea1d8dfc2ca4bf16f2711a227ef0a828b658964c1731f89a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.0-3/
 
-- https://sources.debian.net/src/perl/5.28.0-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -2682,21 +2645,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.25.3-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.dsc' sqlite3_3.25.3-1.dsc 2397 SHA256:8d10755c938bad4db8934d30d73fd8265cdb0fa9be60c29fb24d200711e768a4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig-www.tar.xz' sqlite3_3.25.3.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig.tar.xz' sqlite3_3.25.3.orig.tar.xz 6313928 SHA256:a06c58c7f9faa20fa24bd95828f4cd7c2672a81b1894a2505cc2f9e1ff9b5f9e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.debian.tar.xz' sqlite3_3.25.3-1.debian.tar.xz 17620 SHA256:fa38ac0d9e7de499186b88cec3c24a04034f3a0e65f3485ed71c07ed7a0d4721
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.25.3-1/
 
-- https://sources.debian.net/src/sqlite3/3.25.3-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.25.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.25.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-11`
 
@@ -2715,20 +2670,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-11
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.dsc' systemd_239-11.dsc 4817 SHA256:833a319ba82a62d2ea8e2f53fa9ba5706f442192f9b4ac128e9847da21171d35
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-11.debian.tar.xz' systemd_239-11.debian.tar.xz 154748 SHA256:2c99b4f5f200f4603b51f421910056bd7feba510ce0e19b386510b3f73a42e47
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-11/
 
-- https://sources.debian.net/src/systemd/239-11/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 
@@ -2766,20 +2714,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-2.dsc' tar_1.30+dfsg-2.dsc 1951 SHA256:e06cc08da7db7e8a546a946c23d89042cf86c9e8ae3a5c2c4e0d585ad6f2039f
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-2.debian.tar.xz' tar_1.30+dfsg-2.debian.tar.xz 17384 SHA256:7799136a18d6735463d421f5b48df900cd51ee7e89e3e6acc6c401bd903e4231
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.30+dfsg-2/
 
-- https://sources.debian.net/src/tar/1.30+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.30+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.30+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018g-1`
 
