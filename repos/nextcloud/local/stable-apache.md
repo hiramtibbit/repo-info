@@ -1,10 +1,10 @@
-# `nextcloud:13.0.7-apache`
+# `nextcloud:14.0.4-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2ccd43238d0df4f031a3dc0768704f923e3520c35e0842da49af12999ef2df4`
-- Created: `2018-11-16T20:49:43.131772607Z`
-- Virtual Size: ~ 554.21 Mb  
+- Image ID: `sha256:8266fecc860975c651b6d9ac13fd4539ecc531aa0b1d7fb3a24f16b165426c7e`
+- Created: `2018-11-26T23:41:03.328171264Z`
+- Virtual Size: ~ 563.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -26,7 +26,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.12.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=989c04cc879ee71a5e1131db867f3c5102f1f7565f805e2bb8bde33f93147fe1`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=13.0.7`
+  - `NEXTCLOUD_VERSION=14.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
