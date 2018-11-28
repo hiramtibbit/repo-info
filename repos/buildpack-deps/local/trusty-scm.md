@@ -863,14 +863,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.dsc' git_1.9.1-1ubuntu0.9.dsc 2808 SHA256:2936782f1446a803f333262eb0afbc25e41be6e83b839e6002d846ecdd0fb004
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.9.debian.tar.gz' git_1.9.1-1ubuntu0.9.debian.tar.gz 689205 SHA256:f13dc0b6ea55dc9a5924dad3e36aad915f9029a07c1793f8757d497260240389
-```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.6`
 
@@ -2000,14 +1995,9 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.8.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2-1ubuntu1.3.dsc' mercurial_2.8.2-1ubuntu1.3.dsc 2346 SHA256:686787864cc11767113dbfeb90249b1ad68830bee2ed8d1fb206b9452ecbdbc7
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2.orig.tar.gz' mercurial_2.8.2.orig.tar.gz 3839304 SHA256:c8a5baa21140c6cd6749c3b52b5e5e4a14b6b8ee7c518d9d9de09b1952efbe6f
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_2.8.2-1ubuntu1.3.debian.tar.gz' mercurial_2.8.2-1ubuntu1.3.debian.tar.gz 54439 SHA256:048770ccfe6c914c8717f6cb3df8b6a507dce3028d3e49d93a63f28f8f557330
-```
 
 ### `dpkg` source package: `mime-support=3.54ubuntu1.1`
 
@@ -2201,9 +2191,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
 ### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.11`
