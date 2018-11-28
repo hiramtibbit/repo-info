@@ -827,19 +827,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.55
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.dsc' init-system-helpers_1.55.dsc 2047 SHA256:c8a9b4f5aa0629d3e42e1e40c4bec7bc0eaafd60bfaa7ecb38e19944ad837815
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.55.tar.xz' init-system-helpers_1.55.tar.xz 40132 SHA256:ed124a69c20162a1364aec400b6910c2ad60124e9e08f99de016af02e4cdd7b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.55/
 
-- https://sources.debian.net/src/init-system-helpers/1.55/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.55/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.55/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.18.0-2`
 
@@ -1786,21 +1780,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.0-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.dsc' perl_5.28.0-3.dsc 2810 SHA256:19595f3005acdcbd11b982c76bd9960af17b29cd995e7535e7575cd83f5e10c9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig-regen-configure.tar.xz' perl_5.28.0.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0.orig.tar.xz' perl_5.28.0.orig.tar.xz 12410536 SHA256:059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.0-3.debian.tar.xz' perl_5.28.0-3.debian.tar.xz 159980 SHA256:49c39dbc89d1715ea1d8dfc2ca4bf16f2711a227ef0a828b658964c1731f89a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.0-3/
 
-- https://sources.debian.net/src/perl/5.28.0-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -1922,21 +1908,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.25.3-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.dsc' sqlite3_3.25.3-1.dsc 2397 SHA256:8d10755c938bad4db8934d30d73fd8265cdb0fa9be60c29fb24d200711e768a4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig-www.tar.xz' sqlite3_3.25.3.orig-www.tar.xz 5510212 SHA256:08631c80a2598f35f1598703b0e7df7610dd4d7e592473cf9cdc39218dda48a3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3.orig.tar.xz' sqlite3_3.25.3.orig.tar.xz 6313928 SHA256:a06c58c7f9faa20fa24bd95828f4cd7c2672a81b1894a2505cc2f9e1ff9b5f9e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.25.3-1.debian.tar.xz' sqlite3_3.25.3-1.debian.tar.xz 17620 SHA256:fa38ac0d9e7de499186b88cec3c24a04034f3a0e65f3485ed71c07ed7a0d4721
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.25.3-1/
 
-- https://sources.debian.net/src/sqlite3/3.25.3-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.25.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.25.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-11`
 
