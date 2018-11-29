@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d84c7940aa6ea74016d9b6f6ab6c65aa797cfd79b9b7d5ca7d3277b2cc7d30f`
-- Created: `2018-11-16T06:04:10.531457683Z`
-- Virtual Size: ~ 310.79 Mb  
+- Image ID: `sha256:f9b577fb1ed6ad42987f06b79889a4f140cb356aad67a61557c1683ea8009f13`
+- Created: `2018-11-28T23:19:13.159605774Z`
+- Virtual Size: ~ 310.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2523,13 +2523,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=195.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_195.pgdg90+1.dsc' postgresql-common_195.pgdg90+1.dsc 1462 SHA256:9029468389e32a95048674617a4a91df34333ff8467c42d10181aff80252d203
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_195.pgdg90+1.tar.xz' postgresql-common_195.pgdg90+1.tar.xz 208852 SHA256:d966247ad4d74fbc5f88326535136337be37b7d32fe0fb26e00d4e3c1b51745a
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3+deb9u1`
 
