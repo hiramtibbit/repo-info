@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cee57c5969123b40fd835883778724b0d497dd666044e7cebc2a500aafe36adc`
-- Created: `2018-11-19T22:15:10.651168845Z`
+- Image ID: `sha256:5e908b49ea7b0af77cf737066ac53a69e53018d0ac32ea42d619863888b27401`
+- Created: `2018-11-27T00:45:38.383137617Z`
 - Virtual Size: ~ 1.62 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1553,15 +1553,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo9=9.4.1-1~bionic`
+### `dpkg` source package: `gazebo9=9.5.0-1~bionic`
 
 Binary Packages:
 
-- `gazebo9=9.4.1-1~bionic`
-- `gazebo9-common=9.4.1-1~bionic`
-- `gazebo9-plugin-base=9.4.1-1~bionic`
-- `libgazebo9:amd64=9.4.1-1~bionic`
-- `libgazebo9-dev:amd64=9.4.1-1~bionic`
+- `gazebo9=9.5.0-1~bionic`
+- `gazebo9-common=9.5.0-1~bionic`
+- `gazebo9-plugin-base=9.5.0-1~bionic`
+- `libgazebo9:amd64=9.5.0-1~bionic`
+- `libgazebo9-dev:amd64=9.5.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`, `/usr/share/doc/libgazebo9-dev/copyright`)
 
