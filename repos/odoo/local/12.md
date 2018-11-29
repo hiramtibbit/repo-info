@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dffde1a323cc9923581cd7f466941356291f9711007a9d4d7e4666f5e1a2265e`
-- Created: `2018-11-16T13:46:56.011305429Z`
-- Virtual Size: ~ 1.18 Gb  
+- Image ID: `sha256:32cc0f46febcf67783cbb8395f67ba89ff68b0b255f98e1d28952d1f75706f30`
+- Created: `2018-11-27T01:06:59.021160969Z`
+- Virtual Size: ~ 916.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `ODOO_VERSION=12.0`
-  - `ODOO_RELEASE=20181109`
+  - `ODOO_RELEASE=20181126`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1793,6 +1793,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.2.1-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.2.1-6/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libfontenc=1:1.1.3-1`
+
+Binary Packages:
+
+- `libfontenc1:amd64=1:1.1.3-1+b2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libfontenc=1:1.1.3-1
+'http://deb.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.3-1.dsc' libfontenc_1.1.3-1.dsc 2160 SHA256:87e0054659d4764f027fd85a9e95699a851ce5b890f228a600c2a36324edc9f4
+'http://deb.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.3.orig.tar.gz' libfontenc_1.1.3.orig.tar.gz 366621 SHA256:6fba26760ca8d5045f2b52ddf641c12cedc19ee30939c6478162b7db8b6220fb
+'http://deb.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.3-1.diff.gz' libfontenc_1.1.3-1.diff.gz 8398 SHA256:51122d4d86fa210b10198a5d4e4e2e1f56f23906c43d7fb536d4b7cba5caa336
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libfontenc/1:1.1.3-1/ (for browsing the source)
+- https://sources.debian.net/src/libfontenc/1:1.1.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libfontenc/1:1.1.3-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u3`
 
 Binary Packages:
@@ -2620,6 +2645,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxext/2:1.3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxext/2:1.3.3-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libxfont1=1:1.5.2-4`
+
+Binary Packages:
+
+- `libxfont1:amd64=1:1.5.2-4`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libxfont1=1:1.5.2-4
+'http://deb.debian.org/debian/pool/main/libx/libxfont1/libxfont1_1.5.2-4.dsc' libxfont1_1.5.2-4.dsc 2110 SHA256:dcd919b1a10ca7383f2f7c8c393e53428e4d6a21712731c1ca5c7860943a093b
+'http://deb.debian.org/debian/pool/main/libx/libxfont1/libxfont1_1.5.2.orig.tar.gz' libxfont1_1.5.2.orig.tar.gz 656408 SHA256:a7350c75171d03d06ae0d623e42240356d6d3e1ac7dfe606639bf20f0d653c93
+'http://deb.debian.org/debian/pool/main/libx/libxfont1/libxfont1_1.5.2-4.diff.gz' libxfont1_1.5.2-4.diff.gz 15619 SHA256:2542dad3809ce03d4bc303b5dfbddf18fce501c0c02c895b25f00bdd45f658e4
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libxfont1/1:1.5.2-4/ (for browsing the source)
+- https://sources.debian.net/src/libxfont1/1:1.5.2-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxfont1/1:1.5.2-4/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u2`
 
 Binary Packages:
@@ -3165,11 +3215,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nodejs/4.8.2~dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=12.0.20181109`
+### `dpkg` source package: `odoo=12.0.20181126`
 
 Binary Packages:
 
-- `odoo=12.0.20181109`
+- `odoo=12.0.20181126`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -4075,6 +4125,56 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-psutil/5.0.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-psutil/5.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `python-pyldap=2.4.25.1-2`
+
+Binary Packages:
+
+- `python3-pyldap=2.4.25.1-2`
+
+Licenses: (parsed from: `/usr/share/doc/python3-pyldap/copyright`)
+
+- `PSF-License`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-pyldap=2.4.25.1-2
+'http://deb.debian.org/debian/pool/main/p/python-pyldap/python-pyldap_2.4.25.1-2.dsc' python-pyldap_2.4.25.1-2.dsc 2287 SHA256:c4f7cd28f47137cf340b120bd48d0fb55b52c5351f9b5b3050a99ab9d7c52aac
+'http://deb.debian.org/debian/pool/main/p/python-pyldap/python-pyldap_2.4.25.1.orig.tar.xz' python-pyldap_2.4.25.1.orig.tar.xz 119724 SHA256:71580f338658fbe9f96b11ca351d9c47dfc84f3f2345e0815c836402c84c565d
+'http://deb.debian.org/debian/pool/main/p/python-pyldap/python-pyldap_2.4.25.1-2.debian.tar.xz' python-pyldap_2.4.25.1-2.debian.tar.xz 3800 SHA256:c2e2388fec32d07442d3785a2aa476fa7ec4f49398bc109e38e0431837e90a2e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-pyldap/2.4.25.1-2/ (for browsing the source)
+- https://sources.debian.net/src/python-pyldap/2.4.25.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-pyldap/2.4.25.1-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `python-qrcode=5.3-1`
+
+Binary Packages:
+
+- `python3-qrcode=5.3-1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-qrcode/copyright`)
+
+- `BSD-3-clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-qrcode=5.3-1
+'http://deb.debian.org/debian/pool/main/p/python-qrcode/python-qrcode_5.3-1.dsc' python-qrcode_5.3-1.dsc 2209 SHA256:c542a825fc7d9e279a39991a6a104f7cacbb3d3552b06aa5d305efcd390b67e1
+'http://deb.debian.org/debian/pool/main/p/python-qrcode/python-qrcode_5.3.orig.tar.gz' python-qrcode_5.3.orig.tar.gz 25564 SHA256:9647eb023580ef673b15e1d234b1bdd23c5ba5cc03a92c727cee36099fb28bd4
+'http://deb.debian.org/debian/pool/main/p/python-qrcode/python-qrcode_5.3-1.debian.tar.xz' python-qrcode_5.3-1.debian.tar.xz 5812 SHA256:5c0bd73c7aeafd48f9582f7f9a922d57ea925ebffb0d8a8fca9c01e60e058c4e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-qrcode/5.3-1/ (for browsing the source)
+- https://sources.debian.net/src/python-qrcode/5.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-qrcode/5.3-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `python-reportlab=3.3.0-2`
 
 Binary Packages:
@@ -4231,6 +4331,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-urllib3/1.19.1-1/ (for browsing the source)
 - https://sources.debian.net/src/python-urllib3/1.19.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-urllib3/1.19.1-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `python-vobject=0.9.3-3`
+
+Binary Packages:
+
+- `python3-vobject=0.9.3-3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-vobject=0.9.3-3
+'http://deb.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.9.3-3.dsc' python-vobject_0.9.3-3.dsc 2180 SHA256:accddcf4982e4103213dc536585e904d0fc456fbcc547dca4008bd792789191b
+'http://deb.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.9.3.orig.tar.gz' python-vobject_0.9.3.orig.tar.gz 57744 SHA256:cb79bd61cb54e222496278a90d9f6fe6fc0640ab2c4163f3fbc2942372d09d21
+'http://deb.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.9.3-3.debian.tar.xz' python-vobject_0.9.3-3.debian.tar.xz 6376 SHA256:966b31faf4bd1c712304ab08b9f207b7257a58072c648b4910765eb6bcad78b6
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-vobject/0.9.3-3/ (for browsing the source)
+- https://sources.debian.net/src/python-vobject/0.9.3-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-vobject/0.9.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-watchdog=0.8.3-2`
 
@@ -4993,6 +5118,117 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/vatnumber/1:1.2-7/ (for browsing the source)
 - https://sources.debian.net/src/vatnumber/1:1.2-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/vatnumber/1:1.2-7/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `wkhtmltox=1:0.12.5-1.stretch`
+
+Binary Packages:
+
+- `wkhtmltox=1:0.12.5-1.stretch`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `xfonts-75dpi=1:1.0.4+nmu1`
+
+Binary Packages:
+
+- `xfonts-75dpi=1:1.0.4+nmu1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris xfonts-75dpi=1:1.0.4+nmu1
+'http://deb.debian.org/debian/pool/main/x/xfonts-75dpi/xfonts-75dpi_1.0.4+nmu1.dsc' xfonts-75dpi_1.0.4+nmu1.dsc 1690 SHA256:b9a5681f2b521a88f8205da74e06013bbbaef7f0a0e14c9e2439d4726be960ea
+'http://deb.debian.org/debian/pool/main/x/xfonts-75dpi/xfonts-75dpi_1.0.4+nmu1.tar.gz' xfonts-75dpi_1.0.4+nmu1.tar.gz 2973309 SHA256:2534493db5da3b1176383d47eda60ee07e4b5884bb1455343f92cabb9729c00e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xfonts-75dpi/1:1.0.4+nmu1/ (for browsing the source)
+- https://sources.debian.net/src/xfonts-75dpi/1:1.0.4+nmu1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xfonts-75dpi/1:1.0.4+nmu1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `xfonts-base=1:1.0.4+nmu1`
+
+Binary Packages:
+
+- `xfonts-base=1:1.0.4+nmu1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris xfonts-base=1:1.0.4+nmu1
+'http://deb.debian.org/debian/pool/main/x/xfonts-base/xfonts-base_1.0.4+nmu1.dsc' xfonts-base_1.0.4+nmu1.dsc 1514 SHA256:67fa4cc08dd813806286a9e2897d445c7e4e18cc999caa723beff90559f854c6
+'http://deb.debian.org/debian/pool/main/x/xfonts-base/xfonts-base_1.0.4+nmu1.tar.gz' xfonts-base_1.0.4+nmu1.tar.gz 6627548 SHA256:c80bc71101896a55d3d56cb9fcdab534f2b5745e32c20850c5525f6f66d7e147
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xfonts-base/1:1.0.4+nmu1/ (for browsing the source)
+- https://sources.debian.net/src/xfonts-base/1:1.0.4+nmu1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xfonts-base/1:1.0.4+nmu1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `xfonts-encodings=1:1.0.4-2`
+
+Binary Packages:
+
+- `xfonts-encodings=1:1.0.4-2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris xfonts-encodings=1:1.0.4-2
+'http://deb.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4-2.dsc' xfonts-encodings_1.0.4-2.dsc 1960 SHA256:f9ea7a7a5b5574b4b3ec5f68ff64ee4c1938d2daf3aa46237ac4a8ce6fc85858
+'http://deb.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4.orig.tar.gz' xfonts-encodings_1.0.4.orig.tar.gz 768589 SHA256:55861d9cf456bd717a3d30a3193402c02174ed3c0dcee828798165fe307ee324
+'http://deb.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4-2.diff.gz' xfonts-encodings_1.0.4-2.diff.gz 13939 SHA256:20c87283a2b8ea4bb72d547234149fa5c459f539793bc938ac2056bc2079966c
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xfonts-encodings/1:1.0.4-2/ (for browsing the source)
+- https://sources.debian.net/src/xfonts-encodings/1:1.0.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xfonts-encodings/1:1.0.4-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `xfonts-utils=1:7.7+4`
+
+Binary Packages:
+
+- `xfonts-utils=1:7.7+4`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris xfonts-utils=1:7.7+4
+'http://deb.debian.org/debian/pool/main/x/xfonts-utils/xfonts-utils_7.7+4.dsc' xfonts-utils_7.7+4.dsc 1718 SHA256:7ee45dc8e209de3c1c3b24a65895331672b3dbd6035043530d1639e537445e35
+'http://deb.debian.org/debian/pool/main/x/xfonts-utils/xfonts-utils_7.7+4.tar.gz' xfonts-utils_7.7+4.tar.gz 825529 SHA256:69acb0811b4e717db06d2ba27c35faabd967160e27c55265d9dbd200748dadaa
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xfonts-utils/1:7.7+4/ (for browsing the source)
+- https://sources.debian.net/src/xfonts-utils/1:7.7+4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xfonts-utils/1:7.7+4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xlsxwriter=0.9.6-0.1`
 
