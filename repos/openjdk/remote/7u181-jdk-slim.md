@@ -1,7 +1,7 @@
 ## `openjdk:7u181-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:0e100b76d5616ca01b0e411c5f28d09cb2ad7d6c99015a25ec7204a78174a731
+$ docker pull openjdk@sha256:d4772eae346510190310d803a246e8f2f3d9c152f03a96be88f10190d80aaa17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -188,14 +188,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:7u181-jdk-slim` - linux; 386
 
 ```console
-$ docker pull openjdk@sha256:632ae0a0ed770951bea07d03c85626c1782528b9895143b9012c68cdff3f3e4d
+$ docker pull openjdk@sha256:fb81c2eea8c0f4d121c2cd68324aa84f6bccd14fc0cc258a3f703b4dfdac282f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.9 MB (127891903 bytes)**  
+-	Total Size: **127.9 MB (127925148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1934806b3f1ebebe21a6e29b670b939a4327d7cf6b0c8948d82a2c937c66340`
+-	Image ID: `sha256:04c5326bcae581b2cb5164d6cfaf91b19ede5bd5e6de5e5bd29114aea6c95918`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -215,9 +215,9 @@ RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-j
 ENV JAVA_HOME=/docker-java-home
 # Sat, 17 Nov 2018 14:12:34 GMT
 ENV JAVA_VERSION=7u181
-# Sat, 17 Nov 2018 14:12:34 GMT
-ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1
-# Sat, 17 Nov 2018 14:14:10 GMT
+# Thu, 29 Nov 2018 12:34:06 GMT
+ENV JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1
+# Thu, 29 Nov 2018 12:35:15 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -238,7 +238,7 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Sat, 17 Nov 2018 14:55:24 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79b959b3be87b16af8da5999f8c38bec00fd4c314379fd64485a472e73d2cc67`  
-		Last Modified: Sat, 17 Nov 2018 14:55:41 GMT  
-		Size: 97.1 MB (97143050 bytes)  
+	-	`sha256:d632549ef414ded52740cf796c917663f0312075866a2109815ce1828245dc40`  
+		Last Modified: Thu, 29 Nov 2018 12:41:26 GMT  
+		Size: 97.2 MB (97176295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
