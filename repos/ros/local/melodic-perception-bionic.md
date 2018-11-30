@@ -2434,14 +2434,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.3.dsc' git_2.17.1-1ubuntu0.3.dsc 2959 SHA256:0fa29312ecfd3cbd7af4e02cf4e4e55e6e432a41fdc3767d7f7a9fc7a57dad4d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.3.debian.tar.xz' git_2.17.1-1ubuntu0.3.debian.tar.xz 572836 SHA256:63262ddb4d8d0170a7bc51f40091f02a6fbb3edfe080b003feabc2b908bff514
-```
 
 ### `dpkg` source package: `gl2ps=1.4.0+dfsg1-1`
 
@@ -5403,14 +5398,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.8.0~20170825.94fa1e38-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.dsc' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.dsc 2518 SHA256:cc607477cd06f6d399bffd866f7ecfe3c114674bdccf0e01886bdd480d3c7c00
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38.orig.tar.xz' libssh_0.8.0~20170825.94fa1e38.orig.tar.xz 381176 SHA256:48cbcc4c946380f08c024fbc1898b1efd6edff66a5ec4b536695926f0ea055a8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.debian.tar.xz' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.1.debian.tar.xz 26648 SHA256:1177efb29ee19242b06b7eed32a7d815ff6bcf70d0eab2d4501818aa1a8d7bba
-```
 
 ### `dpkg` source package: `libsys-hostname-long-perl=1.5-1`
 

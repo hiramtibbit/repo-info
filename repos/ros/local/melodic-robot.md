@@ -1651,14 +1651,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.3.dsc' git_2.17.1-1ubuntu0.3.dsc 2959 SHA256:0fa29312ecfd3cbd7af4e02cf4e4e55e6e432a41fdc3767d7f7a9fc7a57dad4d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.3.debian.tar.xz' git_2.17.1-1ubuntu0.3.debian.tar.xz 572836 SHA256:63262ddb4d8d0170a7bc51f40091f02a6fbb3edfe080b003feabc2b908bff514
-```
 
 ### `dpkg` source package: `glib-networking=2.56.0-1`
 

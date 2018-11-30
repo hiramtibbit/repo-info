@@ -1697,14 +1697,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.5.dsc' git_2.7.4-0ubuntu1.5.dsc 2897 SHA256:d21fd716d073369fa6fdc3b595d229a97cef959a8c167d8aa0a40be146bce79c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.5.debian.tar.xz' git_2.7.4-0ubuntu1.5.debian.tar.xz 534100 SHA256:eb51f337531aaa916993e508cfd0082245a6209f97cd2a51e26402858d570513
-```
 
 ### `dpkg` source package: `glib-networking=2.48.2-1~ubuntu16.04.1`
 
@@ -8503,14 +8498,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu21.9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.9.dsc' systemd_229-4ubuntu21.9.dsc 4141 SHA256:d0547c4ff21d7fe1b654fc76b7afbc64e5e4ea11f1621d349d440707cb74b97e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.9.debian.tar.xz' systemd_229-4ubuntu21.9.debian.tar.xz 283792 SHA256:0b3c32b03b8b1a95cd6f46adf65934e494a49a0eb1b3544b9e543d4b1d72f73e
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
