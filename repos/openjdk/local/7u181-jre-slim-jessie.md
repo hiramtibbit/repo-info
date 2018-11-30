@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f04c986ccfcb31776b5c0c25ce8d174bd939b5c4201ca407a171c8caf11d6636`
-- Created: `2018-11-16T15:12:56.418614239Z`
-- Virtual Size: ~ 194.42 Mb  
+- Image ID: `sha256:3e3444a88b534ae8878f5e1dab7e7c6ec0a7c2f01b49aedb20d2c5bcb0d7c8ed`
+- Created: `2018-11-28T23:07:56.195666399Z`
+- Virtual Size: ~ 194.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=7u181`
-  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1`
+  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2258,11 +2258,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u181-2.6.14-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u181-2.6.14-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jre-headless:amd64=7u181-2.6.14-1~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u181-2.6.14-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -2273,36 +2273,43 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-1~deb8u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.dsc' openjdk-7_7u181-2.6.14-1~deb8u1.dsc 4656 SHA256:ae64ff00ef2951c15dfe141d2561dd1d417b44a5fe7323fc4bf213967a08df9e
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz 171916 SHA256:1476fda16daf9c353a14bc890292b44ae8fc0b1caee2d8d50670b08a21cea41d
+$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-2~deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.dsc' openjdk-7_7u181-2.6.14-2~deb8u1.dsc 4656 SHA256:8faf99f6fd490d1d8ea3ddc0adbc8695423d54eb7581259947d4fd6f489c9f49
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz 281776 SHA256:dd7ed7ae7265c48c91b0d2477e747e8417ed008abe8e47a26b98a55bea5d457c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u10`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
-- `openssl=1.0.1t-1+deb8u9`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u10`
+- `openssl=1.0.1t-1+deb8u10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u10
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.dsc' openssl_1.0.1t-1+deb8u10.dsc 2435 SHA256:97749e587e4b1efebb8d1175fc954d47a2b648e9a01f2a71e74717a98dafe035
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.debian.tar.xz' openssl_1.0.1t-1+deb8u10.debian.tar.xz 114312 SHA256:0a15e679a90df37152df559ce331f843a26178d4d5550d7306851d28b4fd2d13
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
