@@ -3,10 +3,10 @@
 # Tags of `haskell`
 
 -	[`haskell:8`](#haskell8)
--	[`haskell:8.2`](#haskell82)
--	[`haskell:8.2.2`](#haskell822)
 -	[`haskell:8.4`](#haskell84)
--	[`haskell:8.4.3`](#haskell843)
+-	[`haskell:8.4.4`](#haskell844)
+-	[`haskell:8.6`](#haskell86)
+-	[`haskell:8.6.2`](#haskell862)
 -	[`haskell:latest`](#haskelllatest)
 
 ## `haskell:8`
@@ -57,102 +57,6 @@ CMD ["ghci"]
 		Size: 262.8 MB (262816967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `haskell:8.2`
-
-```console
-$ docker pull haskell@sha256:cc90210b77dd67c530a0ce830583a8d038b47e607a63e56a0e68402c4317fdb6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `haskell:8.2` - linux; amd64
-
-```console
-$ docker pull haskell@sha256:f7ab3da15a468f67139b42a8011818e54d0a791f149530f7b77af2921fd80201
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.0 MB (286984837 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6caf6c4c552eb1bce9daee5999233a11e6fa85ed4b4298e5fd5827bf432e42ec`
--	Default Command: `["ghci"]`
-
-```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
-CMD ["bash"]
-# Tue, 16 Oct 2018 01:47:09 GMT
-ENV LANG=C.UTF-8
-# Tue, 16 Oct 2018 01:51:08 GMT
-RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.2.2 cabal-install-2.2         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     apt-get purge -y --auto-remove curl &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Tue, 16 Oct 2018 01:51:09 GMT
-ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.2/bin:/opt/ghc/8.2.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Oct 2018 01:51:09 GMT
-CMD ["ghci"]
-```
-
--	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68f68140a888091b71d769ccd84663d41db04cd5d3d81efe44a2965f81993082`  
-		Last Modified: Tue, 16 Oct 2018 01:55:11 GMT  
-		Size: 241.7 MB (241674903 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `haskell:8.2.2`
-
-```console
-$ docker pull haskell@sha256:cc90210b77dd67c530a0ce830583a8d038b47e607a63e56a0e68402c4317fdb6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `haskell:8.2.2` - linux; amd64
-
-```console
-$ docker pull haskell@sha256:f7ab3da15a468f67139b42a8011818e54d0a791f149530f7b77af2921fd80201
-```
-
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.0 MB (286984837 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6caf6c4c552eb1bce9daee5999233a11e6fa85ed4b4298e5fd5827bf432e42ec`
--	Default Command: `["ghci"]`
-
-```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
-CMD ["bash"]
-# Tue, 16 Oct 2018 01:47:09 GMT
-ENV LANG=C.UTF-8
-# Tue, 16 Oct 2018 01:51:08 GMT
-RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.2.2 cabal-install-2.2         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     apt-get purge -y --auto-remove curl &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Tue, 16 Oct 2018 01:51:09 GMT
-ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.2/bin:/opt/ghc/8.2.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Oct 2018 01:51:09 GMT
-CMD ["ghci"]
-```
-
--	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68f68140a888091b71d769ccd84663d41db04cd5d3d81efe44a2965f81993082`  
-		Last Modified: Tue, 16 Oct 2018 01:55:11 GMT  
-		Size: 241.7 MB (241674903 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
 ## `haskell:8.4`
 
 ```console
@@ -201,53 +105,17 @@ CMD ["ghci"]
 		Size: 262.8 MB (262816967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `haskell:8.4.3`
+## `haskell:8.4.4`
 
-```console
-$ docker pull haskell@sha256:e5f87b43e16aaa15e306a39c5eed9cd02d2f88105b3400c9434b5bff2fd87362
-```
+**does not exist** (yet?)
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
+## `haskell:8.6`
 
-### `haskell:8.4.3` - linux; amd64
+**does not exist** (yet?)
 
-```console
-$ docker pull haskell@sha256:dfbb3272e0a5b2f3e088b207f4920c343e942a5767fe2dde6c47c14a19b693f8
-```
+## `haskell:8.6.2`
 
--	Docker Version: 17.06.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.1 MB (308126901 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31fad3e91eba2b569eb7b0d7bfe7864cc3eeb64a5fd451a55640ed069de67aba`
--	Default Command: `["ghci"]`
-
-```dockerfile
-# Mon, 15 Oct 2018 23:24:20 GMT
-ADD file:b3598c18dc395846ab2c5e4e8422c4a5dad7bc3b5b08c09ebceee80989904641 in / 
-# Mon, 15 Oct 2018 23:24:21 GMT
-CMD ["bash"]
-# Tue, 16 Oct 2018 01:47:09 GMT
-ENV LANG=C.UTF-8
-# Tue, 16 Oct 2018 01:48:22 GMT
-RUN apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git &&     echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA3CBA3FFE22B574 &&     apt-get update &&     apt-get install -y --no-install-recommends ghc-8.4.3 cabal-install-2.2         zlib1g-dev libtinfo-dev libsqlite3-dev g++ netbase xz-utils make &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz.asc -o stack.tar.gz.asc &&     apt-get purge -y --auto-remove curl &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     /usr/local/bin/stack config set install-ghc --global false &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Tue, 16 Oct 2018 01:48:23 GMT
-ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.2/bin:/opt/ghc/8.4.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Oct 2018 01:48:23 GMT
-CMD ["ghci"]
-```
-
--	Layers:
-	-	`sha256:bc9ab73e5b14b9fbd3687a4d8c1f1360533d6ee9ffc3f5ecc6630794b40257b7`  
-		Last Modified: Mon, 15 Oct 2018 23:33:47 GMT  
-		Size: 45.3 MB (45309934 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d553ba08f210fb8cd72074e52821c234ca00d47862cdf9226532e869a417d89e`  
-		Last Modified: Tue, 16 Oct 2018 01:52:58 GMT  
-		Size: 262.8 MB (262816967 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `haskell:latest`
 

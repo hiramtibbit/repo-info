@@ -1,7 +1,7 @@
 ## `clojure:lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:ff3d8b11689cecd051a04115efd9dc93510395105681cfb4e258de1409103f81
+$ docker pull clojure@sha256:9b6920df73da0c3d925ec2675be705e3a9ee01952b4d6aea9b84a66188923845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,15 +11,15 @@ $ docker pull clojure@sha256:ff3d8b11689cecd051a04115efd9dc93510395105681cfb4e25
 ### `clojure:lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:f2e44d16ba3c66c278f4f41da4289623dda4143dbab1abbf952f5b4fd2b70f67
+$ docker pull clojure@sha256:0a35e4ff04dc53327a99a96d6540aa325f4161269b7263971d09b4fc05d11c60
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **97.5 MB (97490124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f20de8f7d98bea2e3c7c5f5f5c5724fe59e49bd2bc18ae6412a58a2a320fb799`
--	Default Command: `["\/bin\/sh"]`
+-	Image ID: `sha256:0c202aec2f6c23e43467e6c70aa7a9ad9450f35a671a5376c8a3ad14cb58344a`
+-	Default Command: `["lein","repl"]`
 
 ```dockerfile
 # Tue, 11 Sep 2018 22:19:50 GMT
@@ -58,6 +58,8 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 ENV LEIN_ROOT=1
 # Mon, 05 Nov 2018 23:21:16 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.9.0"]])' > project.clj   && lein deps && rm project.clj
+# Fri, 30 Nov 2018 00:21:48 GMT
+CMD ["lein" "repl"]
 ```
 
 -	Layers:

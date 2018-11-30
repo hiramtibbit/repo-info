@@ -1,7 +1,7 @@
 ## `clojure:tools-deps-1.9.0.397-alpine`
 
 ```console
-$ docker pull clojure@sha256:f4651ec07919ad21813d8b882b64ecd9bfda8295907c6e7b704f84f8138653c5
+$ docker pull clojure@sha256:48774e689a88ce027da9b213185954f50dea55cde813c1f133dfd59f83fa5202
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,15 +11,15 @@ $ docker pull clojure@sha256:f4651ec07919ad21813d8b882b64ecd9bfda8295907c6e7b704
 ### `clojure:tools-deps-1.9.0.397-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:0ccf8af1f8431ce55e5cc0c17d4cbcc18da42789d8f570aa5a542b66cd443b89
+$ docker pull clojure@sha256:d7d20eece0e2d01fd6787678e7e3e867fe7025f8e24f1d245d6f122799cae223
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.0 MB (98033204 bytes)**  
+-	Total Size: **97.9 MB (97949938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:708038e6f3ab452efbee697f03c3f5b4f9fe3dbb61168c8d40ba27c913e3d6ab`
--	Default Command: `["\/bin\/sh"]`
+-	Image ID: `sha256:3b6a7eda9a686173c5e30870ca66cf54ef5a09a6ca16d690998cfdc1389bef07`
+-	Default Command: `["sh","-c","sleep 1 && exec clj"]`
 
 ```dockerfile
 # Tue, 11 Sep 2018 22:19:50 GMT
@@ -46,12 +46,14 @@ LABEL maintainer=Kirill Chernyshov <delaguardo@gmail.com>
 ENV CLOJURE_VERSION=1.9.0.397
 # Mon, 05 Nov 2018 23:22:54 GMT
 WORKDIR /tmp
-# Mon, 05 Nov 2018 23:22:56 GMT
-RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories &&   apk add --update --no-cache bash curl rlwrap@testing
-# Mon, 05 Nov 2018 23:22:57 GMT
+# Fri, 30 Nov 2018 00:23:47 GMT
+RUN apk add --update --no-cache bash curl
+# Fri, 30 Nov 2018 00:24:02 GMT
 RUN wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh     && chmod +x linux-install-$CLOJURE_VERSION.sh     && ./linux-install-$CLOJURE_VERSION.sh
-# Mon, 05 Nov 2018 23:23:04 GMT
+# Fri, 30 Nov 2018 00:24:10 GMT
 RUN clojure -e "(clojure-version)"
+# Fri, 30 Nov 2018 00:24:22 GMT
+CMD ["sh" "-c" "sleep 1 && exec clj"]
 ```
 
 -	Layers:
@@ -67,15 +69,15 @@ RUN clojure -e "(clojure-version)"
 		Last Modified: Wed, 24 Oct 2018 22:43:46 GMT  
 		Size: 70.6 MB (70610525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36b1382300f3a26447bc8a17983ca7e805219d17712dade0006417272801e443`  
-		Last Modified: Mon, 05 Nov 2018 23:27:13 GMT  
-		Size: 1.8 MB (1774799 bytes)  
+	-	`sha256:3997a126d808b78d06953bd44c56d9408d1d787f1c4b41fd444e17618771f66e`  
+		Last Modified: Fri, 30 Nov 2018 00:32:16 GMT  
+		Size: 1.7 MB (1691543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a1cc23b16986f01d2a6616652e95c22684bd4a111ec7abc49740cb21730d3c2`  
-		Last Modified: Mon, 05 Nov 2018 23:27:14 GMT  
-		Size: 19.5 MB (19549321 bytes)  
+	-	`sha256:c6ad864985408825e03a9e66be6c0271857ddd12cab95f7eaf3ac9cbb16e1001`  
+		Last Modified: Fri, 30 Nov 2018 00:32:17 GMT  
+		Size: 19.5 MB (19549306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7140c32bcd1cf2771bef85294b03f464abb571bec861cbf07294d46a16905f4e`  
-		Last Modified: Mon, 05 Nov 2018 23:27:13 GMT  
-		Size: 3.9 MB (3891390 bytes)  
+	-	`sha256:81d69e386160d0a42176d677826b605cb4cfca3c0fcefcaca4eb09a2818d0ac6`  
+		Last Modified: Fri, 30 Nov 2018 00:32:16 GMT  
+		Size: 3.9 MB (3891395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

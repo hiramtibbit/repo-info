@@ -1,7 +1,7 @@
 ## `clojure:boot-alpine`
 
 ```console
-$ docker pull clojure@sha256:48195f1f91f06e3f81028448660c3fa18dba829ee7d25f58bfb732d69be8ba24
+$ docker pull clojure@sha256:90845b44b105f7441455dfe05bbcd8d7128bd1c9799a4e34391b9c11e6d03feb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,15 +11,15 @@ $ docker pull clojure@sha256:48195f1f91f06e3f81028448660c3fa18dba829ee7d25f58bfb
 ### `clojure:boot-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:9d534c0c65511fd4d6446b00eb8b2e0eed2b2f47ea7a4c2176769cc584e5288d
+$ docker pull clojure@sha256:19290e63b3f7532cf56dbd636fadce1f93ab50fc4c6cc6f27e30682adc7cdc84
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **115.6 MB (115605036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e542523ce5a648bb2afdce5fee76e14e04969d06ba5a606f94cbcd168c58218f`
--	Default Command: `["\/bin\/sh"]`
+-	Image ID: `sha256:26c84c943fd39755a1256c8c5e5375a713405bac09c3517615fbb9cbcf2df1c1`
+-	Default Command: `["boot","repl"]`
 
 ```dockerfile
 # Tue, 11 Sep 2018 22:19:50 GMT
@@ -58,6 +58,8 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 ENV BOOT_AS_ROOT=yes
 # Wed, 24 Oct 2018 23:03:53 GMT
 RUN boot
+# Fri, 30 Nov 2018 00:22:26 GMT
+CMD ["boot" "repl"]
 ```
 
 -	Layers:
