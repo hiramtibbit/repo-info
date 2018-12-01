@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:77971a304d3426fe61ffa8164e1f9e609a77f60c4ba81329e6bbcd01dd67627e`
-- Created: `2018-11-19T23:54:25.886535289Z`
-- Virtual Size: ~ 404.90 Mb  
+- Image ID: `sha256:fd20db515fcbc863c9747ebf417fdcfadefdf05ab2b743850b6a251580964169`
+- Created: `2018-11-30T01:49:29.23138267Z`
+- Virtual Size: ~ 405.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp25`
+  - `JAVA_VERSION=1.8.0_sr5fp26`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -1218,19 +1218,24 @@ $ apt-get source -qq --print-uris nettle=3.2-1ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz' nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz 21340 SHA256:49e9715ec8f211831efeaa90122fb16126e39d2cf0739fecd572621b5e55a097
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.dsc' openldap_2.4.42+dfsg-2ubuntu3.4.dsc 3054 SHA256:52339a3445ea29c60349d2c2cb5639c17663b7661a5166ecd2fc891631ac0a6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz 178300 SHA256:2951df1d5e470328e4d619c5f35dbc3577d501d2e65bfcef45db57558aa93929
+```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
 
