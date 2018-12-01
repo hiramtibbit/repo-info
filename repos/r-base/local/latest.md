@@ -484,10 +484,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.62.0-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.62.0-1.dsc' curl_7.62.0-1.dsc 2687 SHA256:9a95b882b900fa8c0f25b03befd8af3a2c6d4cdfe0ea72e3accfe9b1153f2aec
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.62.0.orig.tar.gz' curl_7.62.0.orig.tar.gz 4045208 SHA256:55ccd5b5209f8cc53d4250e2a9fd87e6f67dd323ae8bd7d06b072cfcbb7836cb
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.62.0-1.debian.tar.xz' curl_7.62.0-1.debian.tar.xz 28764 SHA256:6c3574ad00b4d5811339d02275a75420263698b03d5d5bc39bfc7eece1c219bd
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0-1.dsc' curl_7.62.0-1.dsc 2687 SHA256:9a95b882b900fa8c0f25b03befd8af3a2c6d4cdfe0ea72e3accfe9b1153f2aec
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0.orig.tar.gz' curl_7.62.0.orig.tar.gz 4045208 SHA256:55ccd5b5209f8cc53d4250e2a9fd87e6f67dd323ae8bd7d06b072cfcbb7836cb
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0-1.debian.tar.xz' curl_7.62.0-1.debian.tar.xz 28764 SHA256:6c3574ad00b4d5811339d02275a75420263698b03d5d5bc39bfc7eece1c219bd
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.62.0-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.62.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.62.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~rc8-1`
 
@@ -3976,16 +3982,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=2.88dsf-59.11
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.11.dsc' sysvinit_2.88dsf-59.11.dsc 2378 SHA256:c984df9a0a527eff06cfad1ebf36fdc0a4446fe6f2bd45b97b8536f9a6fee71c
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.11.debian.tar.xz' sysvinit_2.88dsf-59.11.debian.tar.xz 132624 SHA256:6a0663a761b48569decbb32cfd699d31dab2058422db61d9198d70d9f06d07bd
+'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.11.dsc' sysvinit_2.88dsf-59.11.dsc 2378 SHA256:c984df9a0a527eff06cfad1ebf36fdc0a4446fe6f2bd45b97b8536f9a6fee71c
+'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
+'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.11.debian.tar.xz' sysvinit_2.88dsf-59.11.debian.tar.xz 132624 SHA256:6a0663a761b48569decbb32cfd699d31dab2058422db61d9198d70d9f06d07bd
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.11/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.88dsf-59.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-2`
 
@@ -4253,20 +4253,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.0320-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0320-1.dsc' vim_8.1.0320-1.dsc 2998 SHA256:18836ef7f4a220c937873153fa65101b6bc9415eca9dcac7ee18e2b5af290984
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0320.orig.tar.gz' vim_8.1.0320.orig.tar.gz 13792307 SHA256:f68ea392589355233259b8782a634abaee765b588148b644fb4c83e6df64adb8
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0320-1.debian.tar.xz' vim_8.1.0320-1.debian.tar.xz 161684 SHA256:137d5895dc4abcbb0ed573c4c5c30e45b246055227d1c497f8795ab4d173e797
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:8.1.0320-1/
 
-- https://sources.debian.net/src/vim/2:8.1.0320-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.1.0320-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.1.0320-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.5-2`
 
