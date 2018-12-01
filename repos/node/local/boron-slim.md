@@ -1,16 +1,16 @@
-# `node:6.14.4-slim`
+# `node:6.15.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d817f2d9161e4db888e5d1eece1724868ed3b0cc6388f72908894606821f671`
-- Created: `2018-11-16T14:05:29.138714648Z`
-- Virtual Size: ~ 168.40 Mb  
+- Image ID: `sha256:7093609fbf963f67b62dec2217b71cf234900757e4ed05e89f7222aacbc5738f`
+- Created: `2018-11-28T12:34:27.71066054Z`
+- Virtual Size: ~ 168.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=6.14.4`
+  - `NODE_VERSION=6.15.0`
   - `YARN_VERSION=1.6.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1640,24 +1640,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.40+dfsg-1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u10`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u9`
-- `openssl=1.0.1t-1+deb8u9`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u10`
+- `openssl=1.0.1t-1+deb8u10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u10
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.dsc' openssl_1.0.1t-1+deb8u10.dsc 2435 SHA256:97749e587e4b1efebb8d1175fc954d47a2b648e9a01f2a71e74717a98dafe035
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.debian.tar.xz' openssl_1.0.1t-1+deb8u10.debian.tar.xz 114312 SHA256:0a15e679a90df37152df559ce331f843a26178d4d5550d7306851d28b4fd2d13
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
