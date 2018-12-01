@@ -1,9 +1,9 @@
-# `joomla:3.9.0-php7.0-apache`
+# `joomla:3.9.1-php7.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a3b7a1f53f15979e15b21189021ea9c57a6b4b60f22fc3e9dbe46cc39a8ef87`
-- Created: `2018-11-21T00:40:16.290556363Z`
+- Image ID: `sha256:1d002743a417965b7b210fbd75abbe6050d9f064ff53dd38c5e94a585a3f380c`
+- Created: `2018-11-29T01:25:34.476578648Z`
 - Virtual Size: ~ 412.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -27,8 +27,8 @@
   - `PHP_SHA256=ff6f62afeb32c71b3b89ecbd42950ef6c5e0c329cc6e1c58ffac47e6f1f883c4`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.9.0`
-  - `JOOMLA_SHA1=db67108d2dd3e65ae05cecbc57958a425f6f340f`
+  - `JOOMLA_VERSION=3.9.1`
+  - `JOOMLA_SHA1=aec0f602f93064d55cc06917329abdeef2e0f820`
 
 ## `dpkg` (`.deb`-based packages)
 
