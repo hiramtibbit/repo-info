@@ -3376,19 +3376,13 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20170808
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20170808.dsc' lsb_9.20170808.dsc 1597 SHA256:d767e622530f73df4f041f7bace54412a6da3d66ddcc73df7913cdebdbf258a9
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20170808.tar.xz' lsb_9.20170808.tar.xz 42120 SHA256:ec9cb022cedcdf34c5b8dc2dca530777ce3f491ad364222557691e87807729b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lsb/9.20170808/
 
-- https://sources.debian.net/src/lsb/9.20170808/ (for browsing the source)
-- https://sources.debian.net/src/lsb/9.20170808/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lsb/9.20170808/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.2-1`
 
@@ -4417,20 +4411,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.15-4
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.15-4.dsc' python2.7_2.7.15-4.dsc 3357 SHA256:86c6621118d37dcb4a9e10b98ea9a26d91309247dac6e356ad4a847bfc3a8975
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.15.orig.tar.gz' python2.7_2.7.15.orig.tar.gz 17496336 SHA256:18617d1f15a380a919d517630a9cd85ce17ea602f9bbdc58ddc672df4b0239db
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.15-4.diff.gz' python2.7_2.7.15-4.diff.gz 483036 SHA256:05ca1a74c8172f890e7dcfe920212b125b345b1d60c97ad5cbf0fd4ac28d0d7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.15-4/
 
-- https://sources.debian.net/src/python2.7/2.7.15-4/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.15-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.15-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1`
 
