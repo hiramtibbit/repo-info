@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:abcaf732a68bfad2b3592457123ac7f09c29047ca0e574cbbdf011b8a675d386`
-- Created: `2018-11-21T01:28:54.546704728Z`
-- Virtual Size: ~ 356.88 Mb  
+- Image ID: `sha256:e2045fd40a7f9cb812b9a28cccf290bac25aed6ba48630cf7b40894229ebe6d9`
+- Created: `2018-11-29T01:05:24.431034566Z`
+- Virtual Size: ~ 356.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=7u181`
-  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1`
+  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -1543,11 +1543,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/iputils/3:20121221-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/iputils/3:20121221-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u4`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1556,17 +1556,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.dsc' jasper_1.900.1-debian1-2.4+deb8u4.dsc 2120 SHA256:d10770e6fbffd6a63f554af5c1f49e7fe8415e43a618f80b2a8bcf713ba72c47
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz 39040 SHA256:1edc8a12d963e129cadd43dc15010595eebf60af2cc1c30866508b891764f47b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.5-1`
 
@@ -3200,12 +3200,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u181-2.6.14-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u181-2.6.14-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jre:amd64=7u181-2.6.14-1~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u181-2.6.14-1~deb8u1`
+- `openjdk-7-jre:amd64=7u181-2.6.14-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u181-2.6.14-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3216,17 +3216,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-1~deb8u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.dsc' openjdk-7_7u181-2.6.14-1~deb8u1.dsc 4656 SHA256:ae64ff00ef2951c15dfe141d2561dd1d417b44a5fe7323fc4bf213967a08df9e
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz 171916 SHA256:1476fda16daf9c353a14bc890292b44ae8fc0b1caee2d8d50670b08a21cea41d
+$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-2~deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.dsc' openjdk-7_7u181-2.6.14-2~deb8u1.dsc 4656 SHA256:8faf99f6fd490d1d8ea3ddc0adbc8695423d54eb7581259947d4fd6f489c9f49
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz 281776 SHA256:dd7ed7ae7265c48c91b0d2477e747e8417ed008abe8e47a26b98a55bea5d457c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u4`
 
@@ -3482,11 +3482,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pixman=0.32.6-3`
+### `dpkg` source package: `pixman=0.32.6-3+deb8u1`
 
 Binary Packages:
 
-- `libpixman-1-0:amd64=0.32.6-3`
+- `libpixman-1-0:amd64=0.32.6-3+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3495,17 +3495,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pixman=0.32.6-3
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.dsc' pixman_0.32.6-3.dsc 2002 SHA256:bc1090a051b5ce887976c06e8f1e389941f906bc6fc5b95f88a17cc2f5f887f1
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6.orig.tar.gz' pixman_0.32.6.orig.tar.gz 816702 SHA256:3dfed13b8060eadabf0a4945c7045b7793cc7e3e910e748a8bb0f0dc3e794904
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.diff.gz' pixman_0.32.6-3.diff.gz 283461 SHA256:d7343e301c4c79a931d38cfb3fcf6189c50a6904b3a26ea484481cba4fdef13c
+$ apt-get source -qq --print-uris pixman=0.32.6-3+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6-3+deb8u1.dsc' pixman_0.32.6-3+deb8u1.dsc 2205 SHA256:fee04be8aa089c32a66aeb17eda6bff21e135d03ed606c91a08a8ede7e67010f
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6.orig.tar.gz' pixman_0.32.6.orig.tar.gz 816702 SHA256:3dfed13b8060eadabf0a4945c7045b7793cc7e3e910e748a8bb0f0dc3e794904
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6-3+deb8u1.diff.gz' pixman_0.32.6-3+deb8u1.diff.gz 284680 SHA256:c36a6931b078c0e9db5e00984ddde4c80c4c294fb4f6bcf8e7704f0c05db7920
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pixman/0.32.6-3/ (for browsing the source)
-- https://sources.debian.net/src/pixman/0.32.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pixman/0.32.6-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pixman/0.32.6-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/pixman/0.32.6-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pixman/0.32.6-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
