@@ -1040,14 +1040,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.25~dfsg+1-0ubuntu0.16.04.2
-'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.dsc' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.dsc 2926 SHA256:9597edb0476098059c273bcb6802df3ff8fa66617e4ebaf834e8260a07924e14
-'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1.orig.tar.xz' ghostscript_9.25~dfsg+1.orig.tar.xz 27033872 SHA256:ebcf00fe0b7b45fc8199b93df717e2020d08307a0f273040be1267ea0a0a656b
-'http://security.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.debian.tar.xz' ghostscript_9.25~dfsg+1-0ubuntu0.16.04.2.debian.tar.xz 155960 SHA256:b615ebab590543f4d9683c550fc0080183fdc55d9b771dd89af5d2da4791ce78
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -2754,14 +2749,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+~OpenSSL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.6.3-4.3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3-4.3ubuntu0.1.dsc' libssh_0.6.3-4.3ubuntu0.1.dsc 2429 SHA256:94e875648e102d1c1aa4427c882153e0821acfd153162203c52a3506dbb3eb29
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3.orig.tar.xz' libssh_0.6.3.orig.tar.xz 279492 SHA256:2bb5d7c595059f990a8915c190169257328ffa828ced0c05b09bbe186092cacb
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3-4.3ubuntu0.1.debian.tar.xz' libssh_0.6.3-4.3ubuntu0.1.debian.tar.xz 26836 SHA256:704de52c1c6e9d0ee60c21576119f8f6b59a359658986788216677f5ce7a21e5
-```
 
 ### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.3`
 
