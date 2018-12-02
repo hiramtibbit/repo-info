@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20fcac21d96d0a9aa8a19e566013c1039160022f44c3ef2c51b2f8e877e15d7a`
-- Created: `2018-12-01T04:32:09.294403844Z`
-- Virtual Size: ~ 226.43 Mb  
+- Image ID: `sha256:2cd8aa8d6ce6fb2f3d519a49f7b42c3f5ab244eb7175ba1e1b1e6519ba039058`
+- Created: `2018-11-29T01:09:15.827827445Z`
+- Virtual Size: ~ 221.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -17,7 +17,7 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0j-1~deb9u1`
+  - `OPENSSL_VERSION=1.1.0f-3+deb9u2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=7`
   - `TOMCAT_VERSION=7.0.92`
@@ -2320,12 +2320,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0j-1~deb9u1`
-- `openssl=1.1.0j-1~deb9u1`
+- `libssl1.1:amd64=1.1.0f-3+deb9u2`
+- `openssl=1.1.0f-3+deb9u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2334,18 +2334,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0j-1~deb9u1
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.dsc' openssl_1.1.0j-1~deb9u1.dsc 2611 SHA256:3c4f9e2af00c7595218d05d09635746f7edfd13b6c08b6266cd386b195c7889b
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz' openssl_1.1.0j.orig.tar.gz 5411919 SHA256:31bec6c203ce1a8e93d5994f4ed304c63ccf07676118b6634edded12ad1b3246
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz.asc' openssl_1.1.0j.orig.tar.gz.asc 488 SHA256:e162322dce0b98f92401a48ba5f088ded64ee308a54580ed9edc3edafd85eebf
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.debian.tar.xz' openssl_1.1.0j-1~deb9u1.debian.tar.xz 71944 SHA256:737db70af006b984b914ba63ac8cbf012cb0db43df5e31f7dfa95d0b5890910b
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0j-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2456,11 +2455,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcsc-lite/1.8.13-1+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcsc-lite/1.8.13-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u12`
+### `dpkg` source package: `perl=5.20.2-3+deb8u11`
 
 Binary Packages:
 
-- `perl-base=5.20.2-3+deb8u12`
+- `perl-base=5.20.2-3+deb8u11`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -2492,17 +2491,17 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u12
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u12.dsc' perl_5.20.2-3+deb8u12.dsc 2377 SHA256:b3e2ae82349e60575b28e62712e61aa1e862351e50eb7013004c75a951196cdb
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u12.debian.tar.xz' perl_5.20.2-3+deb8u12.debian.tar.xz 158872 SHA256:b93b828b4ebd8171ca7ef5f8f195d529c368e83cd86f276d4a25470a6b7aaa6d
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u11
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u11.dsc' perl_5.20.2-3+deb8u11.dsc 2377 SHA256:b58df3f05201f9a474157fbf3ede9d4b08beb8b3b69a882bb2c3f14eb70c1a40
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u11.debian.tar.xz' perl_5.20.2-3+deb8u11.debian.tar.xz 157516 SHA256:53e0ccd3ed238614fbcd8eb577159392892bcf82c7821f94f6ef379e8ae3a7c1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u12/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u12/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
