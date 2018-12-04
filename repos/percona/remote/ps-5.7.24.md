@@ -1,4 +1,4 @@
-## `percona:5.7-centos`
+## `percona:ps-5.7.24`
 
 ```console
 $ docker pull percona@sha256:ea421bd34839e9618131974c4c47d0b3cf71b81cab9ec1d8a5e37f047888c905
@@ -8,7 +8,7 @@ $ docker pull percona@sha256:ea421bd34839e9618131974c4c47d0b3cf71b81cab9ec1d8a5e
 -	Platforms:
 	-	linux; amd64
 
-### `percona:5.7-centos` - linux; amd64
+### `percona:ps-5.7.24` - linux; amd64
 
 ```console
 $ docker pull percona@sha256:a246bd3e233cc8ab80e9c7779a5d249c8d02cf65c25e8f42b72216e7fb02abfd
