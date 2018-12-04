@@ -3632,9 +3632,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=3.13.0-162.212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-162.212.dsc' linux_3.13.0-162.212.dsc 8130 SHA256:77e16a3d953b9e7d9db83e4bb520539c27de590a0b5231b90cc4dee55e81c28e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-162.212.diff.gz' linux_3.13.0-162.212.diff.gz 10089603 SHA256:b155db0c713c4d8c8144c462e7a3ac1bc4f28819cb1fa0d48f21eafadc8348c4
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-162.212.dsc' linux_3.13.0-162.212.dsc 8130 SHA256:77e16a3d953b9e7d9db83e4bb520539c27de590a0b5231b90cc4dee55e81c28e
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-162.212.diff.gz' linux_3.13.0-162.212.diff.gz 10089603 SHA256:b155db0c713c4d8c8144c462e7a3ac1bc4f28819cb1fa0d48f21eafadc8348c4
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
@@ -4562,14 +4562,9 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.6.dsc' perl_5.18.2-2ubuntu1.6.dsc 2449 SHA256:952b3e8cfcfcde2e4af8c3a2d90bb433372e43d126b90597d4a4787850bc16f7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.6.debian.tar.gz' perl_5.18.2-2ubuntu1.6.debian.tar.gz 143751 SHA256:3822923eb20f5151e24265f5565d1574fdd0d648d3f73f81acc58b0d2fc26f5c
-```
 
 ### `dpkg` source package: `pinentry=0.8.3-1ubuntu1`
 
