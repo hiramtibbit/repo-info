@@ -2001,14 +2001,9 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.6.dsc' perl_5.18.2-2ubuntu1.6.dsc 2449 SHA256:952b3e8cfcfcde2e4af8c3a2d90bb433372e43d126b90597d4a4787850bc16f7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.6.debian.tar.gz' perl_5.18.2-2ubuntu1.6.debian.tar.gz 143751 SHA256:3822923eb20f5151e24265f5565d1574fdd0d648d3f73f81acc58b0d2fc26f5c
-```
 
 ### `dpkg` source package: `plymouth=0.8.8-0ubuntu17.2`
 
