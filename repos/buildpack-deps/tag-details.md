@@ -14,6 +14,9 @@
 -	[`buildpack-deps:18.10`](#buildpack-deps1810)
 -	[`buildpack-deps:18.10-curl`](#buildpack-deps1810-curl)
 -	[`buildpack-deps:18.10-scm`](#buildpack-deps1810-scm)
+-	[`buildpack-deps:19.04`](#buildpack-deps1904)
+-	[`buildpack-deps:19.04-curl`](#buildpack-deps1904-curl)
+-	[`buildpack-deps:19.04-scm`](#buildpack-deps1904-scm)
 -	[`buildpack-deps:bionic`](#buildpack-depsbionic)
 -	[`buildpack-deps:bionic-curl`](#buildpack-depsbionic-curl)
 -	[`buildpack-deps:bionic-scm`](#buildpack-depsbionic-scm)
@@ -24,6 +27,9 @@
 -	[`buildpack-deps:cosmic-curl`](#buildpack-depscosmic-curl)
 -	[`buildpack-deps:cosmic-scm`](#buildpack-depscosmic-scm)
 -	[`buildpack-deps:curl`](#buildpack-depscurl)
+-	[`buildpack-deps:disco`](#buildpack-depsdisco)
+-	[`buildpack-deps:disco-curl`](#buildpack-depsdisco-curl)
+-	[`buildpack-deps:disco-scm`](#buildpack-depsdisco-scm)
 -	[`buildpack-deps:jessie`](#buildpack-depsjessie)
 -	[`buildpack-deps:jessie-curl`](#buildpack-depsjessie-curl)
 -	[`buildpack-deps:jessie-scm`](#buildpack-depsjessie-scm)
@@ -4383,6 +4389,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Size: 47.8 MB (47762579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `buildpack-deps:19.04`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:19.04-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:19.04-scm`
+
+**does not exist** (yet?)
+
 ## `buildpack-deps:bionic`
 
 ```console
@@ -7958,6 +7976,18 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Fri, 16 Nov 2018 20:23:28 GMT  
 		Size: 4.4 MB (4371951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:disco`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:disco-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:disco-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:jessie`
 
