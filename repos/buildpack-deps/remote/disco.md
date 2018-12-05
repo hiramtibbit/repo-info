@@ -1,15 +1,17 @@
 ## `buildpack-deps:disco`
 
 ```console
-$ docker pull buildpack-deps@sha256:fdb298a8cd860ceddefac2d9331cb4850a1af58d11d4b086b09a7954b1e8d39b
+$ docker pull buildpack-deps@sha256:22efa3633ceccdbd48dac6f95d385d32c49e03190f2ccbf38fdb5a8fed2eb7b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `buildpack-deps:disco` - linux; amd64
 
@@ -77,6 +79,74 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 	-	`sha256:d0563afc1675a130d58374c9a6fa49c2c5d78e0aa9b4e6477b9e2ee37687db87`  
 		Last Modified: Tue, 04 Dec 2018 23:28:19 GMT  
 		Size: 138.8 MB (138765045 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:disco` - linux; arm variant v7
+
+```console
+$ docker pull buildpack-deps@sha256:62e242d53630f9f65cf7f507215625630b034f46dad73a6ef62560fd0fe6d535
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.1 MB (194095436 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc86296490e0a54bfebec0ba96d09b4b5f0166c90159fc0760490b71d88950c4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 20 Nov 2018 13:06:44 GMT
+ADD file:25d55bc6d7d892fd357f56bc488362d24323b9fa49980ba53261b824b99b2788 in / 
+# Tue, 20 Nov 2018 13:06:45 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 20 Nov 2018 13:06:47 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Tue, 20 Nov 2018 13:06:48 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Tue, 20 Nov 2018 13:06:48 GMT
+CMD ["/bin/bash"]
+# Wed, 05 Dec 2018 12:58:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 05 Dec 2018 12:59:14 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Wed, 05 Dec 2018 13:00:09 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 05 Dec 2018 13:02:54 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:a753913fd9ccf64b6990de89fcbbbb44fc5f459e7c4d693eb57afe859357de3c`  
+		Last Modified: Tue, 20 Nov 2018 13:09:35 GMT  
+		Size: 24.9 MB (24911271 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:451dc523aa60b7358e3a45a6f40c36d5cc0166aa5dc6a822710887001aa72947`  
+		Last Modified: Tue, 20 Nov 2018 13:09:28 GMT  
+		Size: 849.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a188c1ab0c6e346b369134112cb267387d4d3c276004dc27e3074d52cd28e63`  
+		Last Modified: Tue, 20 Nov 2018 13:09:28 GMT  
+		Size: 209.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc7d9128132a1e2ba7875d0aaae8253f8708d0929dc168fac468d7ed141fadd9`  
+		Last Modified: Tue, 20 Nov 2018 13:09:28 GMT  
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ec77b36c36669a0562da704af6e2e2470009fcfe66d20ce65776e5a405087d3`  
+		Last Modified: Wed, 05 Dec 2018 13:04:22 GMT  
+		Size: 5.2 MB (5181338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:758436e529f07c56d57505a157f11cb5ac11f4ee26d3b7f22cad42c2744ce13d`  
+		Last Modified: Wed, 05 Dec 2018 13:04:22 GMT  
+		Size: 2.5 MB (2534329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:43a78762140cbc486cf6dbe4c7b7e171806e4af85bc18b738ddd0c0cc2b0f7c2`  
+		Last Modified: Wed, 05 Dec 2018 13:04:52 GMT  
+		Size: 43.3 MB (43260993 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f1a640512b9e1c3ae099a4cd2fc0899e7f84550a83d39e394313041b04c2ed9d`  
+		Last Modified: Wed, 05 Dec 2018 13:05:46 GMT  
+		Size: 118.2 MB (118206259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:disco` - linux; arm64 variant v8
@@ -281,4 +351,72 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 	-	`sha256:51ea30ac984ac6b036f78c2d5b6054cf532e049141c186b62801e7d605c64f7e`  
 		Last Modified: Wed, 05 Dec 2018 09:56:20 GMT  
 		Size: 150.2 MB (150181509 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:disco` - linux; s390x
+
+```console
+$ docker pull buildpack-deps@sha256:8a61d09ba895d2d782a5e50ebe835f5d8196b97c81d8398ec0373f56b4180b63
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **209.8 MB (209789729 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:582020cd17365ea4bc203c3f54c7aa4cc9b5fbc1b2b0946dbbb491a5e9c9371b`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 20 Nov 2018 13:10:47 GMT
+ADD file:e403e24fe0174dd207ccac54dd2c6342dba6e71cbedf6d2f00a614e6f67a9775 in / 
+# Tue, 20 Nov 2018 13:10:49 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 20 Nov 2018 13:10:50 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Tue, 20 Nov 2018 13:10:52 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Tue, 20 Nov 2018 13:10:57 GMT
+CMD ["/bin/bash"]
+# Wed, 05 Dec 2018 12:42:19 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 05 Dec 2018 12:42:25 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Wed, 05 Dec 2018 12:42:48 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 05 Dec 2018 12:43:45 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:d88339db9ad03424b89ae2790f0153d16c729a57dcf58ee4630e89fcd55e2704`  
+		Last Modified: Tue, 20 Nov 2018 13:13:02 GMT  
+		Size: 27.9 MB (27934331 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57b7b5e64abc55f9f681351b0d31161a0c78019b3450cb3cc98e06c22f584276`  
+		Last Modified: Tue, 20 Nov 2018 13:12:56 GMT  
+		Size: 844.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46130fe47b308ef9fa05ca9c85dde58ee583133c22fc92891c4b49f8f0e6fd9a`  
+		Last Modified: Tue, 20 Nov 2018 13:12:56 GMT  
+		Size: 209.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8ceee9be585c558e95b5a6c2b013a0ac341aaba91f7e802cd0f25338143d1a`  
+		Last Modified: Tue, 20 Nov 2018 13:12:57 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4174caf9b32c122f00d5bdfd3f0fc8aa9659d0a8a6d85d14734435cb0298964`  
+		Last Modified: Wed, 05 Dec 2018 12:44:45 GMT  
+		Size: 5.8 MB (5795000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5e2106b410686ebc62244718d55e039447e3e6c25daafc393fca341c8923e3ac`  
+		Last Modified: Wed, 05 Dec 2018 12:44:44 GMT  
+		Size: 2.9 MB (2914719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:303ea327bd44cd6287173b12728dee9e7faa6912383e4f5bce1ef598a27fb6c3`  
+		Last Modified: Wed, 05 Dec 2018 12:45:08 GMT  
+		Size: 47.3 MB (47328722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae748de818278d65727f25374c71806b06b165816914d3f748ff0c46f938153e`  
+		Last Modified: Wed, 05 Dec 2018 12:45:43 GMT  
+		Size: 125.8 MB (125815741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
