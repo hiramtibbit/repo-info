@@ -2915,9 +2915,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-139.165
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.dsc' linux_4.4.0-139.165.dsc 9418 SHA256:02fec0ccbe2445ce0e3b4a42ef1b20314b0c31c114ea508c76485134df1db2ce
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.diff.gz' linux_4.4.0-139.165.diff.gz 14968503 SHA256:8d11f7bf728964a9e0d087cf5e340f4f0e7713bba06af0ba27044c3307171949
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.dsc' linux_4.4.0-139.165.dsc 9418 SHA256:02fec0ccbe2445ce0e3b4a42ef1b20314b0c31c114ea508c76485134df1db2ce
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.diff.gz' linux_4.4.0-139.165.diff.gz 14968503 SHA256:8d11f7bf728964a9e0d087cf5e340f4f0e7713bba06af0ba27044c3307171949
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
@@ -3484,14 +3484,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.dsc' perl_5.22.1-9ubuntu0.5.dsc 2464 SHA256:79543ad2fd3d89f0d8849a883e30162b64d920cc1a8e82f16b70f70d051b15b3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.debian.tar.xz' perl_5.22.1-9ubuntu0.5.debian.tar.xz 157120 SHA256:e2b969f803b52c0961a3495cbaf51cc353310cba02309c1b02400f9445e41bc1
-```
 
 ### `dpkg` source package: `pixman=0.33.6-1`
 
