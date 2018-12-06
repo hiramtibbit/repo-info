@@ -4126,14 +4126,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.18.8-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.1.dsc' libraw_0.18.8-1ubuntu0.1.dsc 2278 SHA256:2707cda2071ed32555ec9472c3f2996c666ec0c6467477c040fd4864ca2c04ef
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8.orig.tar.gz' libraw_0.18.8.orig.tar.gz 519442 SHA256:5edf25d32c300a1081fba8b6ded9e47cbb8a8330dde4a23806f64884a1e46d64
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.1.debian.tar.xz' libraw_0.18.8-1ubuntu0.1.debian.tar.xz 22636 SHA256:942e21a6399aad47371aae6000bf2e6bfee231aa161cb3146f2e2fcc76b4cd6f
-```
 
 ### `dpkg` source package: `librest=0.8.0-2`
 
@@ -5358,14 +5353,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-39.42
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-39.42.dsc' linux_4.15.0-39.42.dsc 7499 SHA256:6ed34d0253788be144c08cea80d67c1df5070b6a39768f25bdd0b30b108ea63d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-39.42.diff.gz' linux_4.15.0-39.42.diff.gz 8315051 SHA256:8a169cb5d1515b18e03501459dd539be5af351417bfe24b0a5378667fbb75a2b
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2`
 
@@ -6420,15 +6410,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.2.dsc' perl_5.26.1-6ubuntu0.2.dsc 2797 SHA256:d5a49f779d721ca100059cdff7f946e7b37ada463d8440caae67f04dd4836e92
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.2.debian.tar.xz' perl_5.26.1-6ubuntu0.2.debian.tar.xz 168996 SHA256:5cba68df6fbac5f3970c4b1f7a28ddfcbced609dc2707c0e122ba33fb07542b7
-```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -6528,14 +6512,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.2.dsc' poppler_0.62.0-2ubuntu2.2.dsc 3354 SHA256:3da1cd1cc7ae93890f034a4c3f83ff47b6350f56e7a9088ac9057c8cf0fb05df
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA256:5b9a73dfd4d6f61d165ada1e4f0abd2d420494bf9d0b1c15d0db3f7b83a729c6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.2.debian.tar.xz' poppler_0.62.0-2ubuntu2.2.debian.tar.xz 35236 SHA256:5f73f2c7d45b076b6be67f79282fdc6e70ee255c56a31a1772f40f0892cd881d
-```
 
 ### `dpkg` source package: `postgresql-10=10.6-0ubuntu0.18.04.1`
 

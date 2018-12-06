@@ -3044,14 +3044,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw15/copyright`)
 - `LibRaw`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.17.1-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.3.dsc' libraw_0.17.1-1ubuntu0.3.dsc 2276 SHA256:ef6674515a5c9bef097b5ed8c32513f244bb061afe9e26ab7a6cc2dd648e1ec5
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1.orig.tar.gz' libraw_0.17.1.orig.tar.gz 689407 SHA256:dd07861ea3b9739c61c50d5e8a5dfedd738f4765962104c120dd8ea2dc2e3491
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.17.1-1ubuntu0.3.debian.tar.xz' libraw_0.17.1-1ubuntu0.3.debian.tar.xz 34908 SHA256:be9895cca553cf6d25cd2d33223122687585b32f95b47d14ab850569b2ead091
-```
 
 ### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
@@ -3880,9 +3875,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-139.165
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.dsc' linux_4.4.0-139.165.dsc 9418 SHA256:02fec0ccbe2445ce0e3b4a42ef1b20314b0c31c114ea508c76485134df1db2ce
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.diff.gz' linux_4.4.0-139.165.diff.gz 14968503 SHA256:8d11f7bf728964a9e0d087cf5e340f4f0e7713bba06af0ba27044c3307171949
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.dsc' linux_4.4.0-139.165.dsc 9418 SHA256:02fec0ccbe2445ce0e3b4a42ef1b20314b0c31c114ea508c76485134df1db2ce
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.diff.gz' linux_4.4.0-139.165.diff.gz 14968503 SHA256:8d11f7bf728964a9e0d087cf5e340f4f0e7713bba06af0ba27044c3307171949
 ```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
@@ -4837,14 +4832,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.dsc' perl_5.22.1-9ubuntu0.5.dsc 2464 SHA256:79543ad2fd3d89f0d8849a883e30162b64d920cc1a8e82f16b70f70d051b15b3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.5.debian.tar.xz' perl_5.22.1-9ubuntu0.5.debian.tar.xz 157120 SHA256:e2b969f803b52c0961a3495cbaf51cc353310cba02309c1b02400f9445e41bc1
-```
 
 ### `dpkg` source package: `pinentry=0.9.7-3`
 
@@ -4900,14 +4890,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.8.dsc' poppler_0.41.0-0ubuntu1.8.dsc 3356 SHA256:f18a084c8e26c2766ac4dc46ce5bb72f5bac49495907750b9d33939302e401e9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.8.debian.tar.xz' poppler_0.41.0-0ubuntu1.8.debian.tar.xz 44864 SHA256:b2f032b3554d1c000aaa89da0a5e21143ad30e0b603b3433c6c55cda17ef0f41
-```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.14-0ubuntu0.16.04`
 
