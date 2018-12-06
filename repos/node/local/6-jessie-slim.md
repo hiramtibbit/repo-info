@@ -1,17 +1,17 @@
-# `node:10.14.0-slim`
+# `node:6.15.1-jessie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7c1977f932021f74f50a7d712bc7d7aa27347a16777e92af1792ac44ddbc776`
-- Created: `2018-11-28T13:52:08.11144017Z`
-- Virtual Size: ~ 183.64 Mb  
+- Image ID: `sha256:30835af7441e0646d62559422d48d462c9508f207ca4288d13cb9592716480c5`
+- Created: `2018-12-04T00:37:12.855216238Z`
+- Virtual Size: ~ 170.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.14.0`
-  - `YARN_VERSION=1.10.1`
+  - `NODE_VERSION=6.15.1`
+  - `YARN_VERSION=1.12.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -554,6 +554,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.3-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `dirmngr=1.1.1-5`
+
+Binary Packages:
+
+- `dirmngr=1.1.1-5`
+
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+- `Public-Domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris dirmngr=1.1.1-5
+'http://deb.debian.org/debian/pool/main/d/dirmngr/dirmngr_1.1.1-5.dsc' dirmngr_1.1.1-5.dsc 2253 SHA256:8e463fd2f85009035424aecd3b1893ae78ff996f53db45e578a8718e11258b95
+'http://deb.debian.org/debian/pool/main/d/dirmngr/dirmngr_1.1.1.orig.tar.bz2' dirmngr_1.1.1.orig.tar.bz2 566929 SHA256:d2280b8c314db80cdaf101211a47826734443436f5c3545cc1b614c50eaae6ff
+'http://deb.debian.org/debian/pool/main/d/dirmngr/dirmngr_1.1.1-5.debian.tar.xz' dirmngr_1.1.1-5.debian.tar.xz 9952 SHA256:8b3005a890cc9ffed63c8e65209aaefe68a73b20b830b5f5c1a2e0d2dd6ce65d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dirmngr/1.1.1-5/ (for browsing the source)
+- https://sources.debian.net/src/dirmngr/1.1.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dirmngr/1.1.1-5/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `dpkg=1.17.27`
 
 Binary Packages:
@@ -1045,6 +1072,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.12.1+dfsg-19+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libassuan=2.1.2-2`
+
+Binary Packages:
+
+- `libassuan0:amd64=2.1.2-2`
+
+Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
+
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libassuan=2.1.2-2
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.1.2-2.dsc' libassuan_2.1.2-2.dsc 2095 SHA256:2d761dc907a6140dc4ae5e094b2656043f2931bff271062df3a7dc651398db8e
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.1.2.orig.tar.bz2' libassuan_2.1.2.orig.tar.bz2 516026 SHA256:39f8a7c9349aaaf7ccd937b90660153ec4d2d4df2465018754e5bcae5b1db77b
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.1.2-2.debian.tar.xz' libassuan_2.1.2-2.debian.tar.xz 11480 SHA256:7fad885f89b18ee19361abbb273acd4792e05526c4cd05482660c3f2c9625a73
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libassuan/2.1.2-2/ (for browsing the source)
+- https://sources.debian.net/src/libassuan/2.1.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libassuan/2.1.2-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libcap2=1:2.24-8`
 
 Binary Packages:
@@ -1184,6 +1236,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libidn/1.29-1+deb8u3/ (for browsing the source)
 - https://sources.debian.net/src/libidn/1.29-1+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libidn/1.29-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libksba=1.3.2-1+deb8u1`
+
+Binary Packages:
+
+- `libksba8:amd64=1.3.2-1+deb8u1`
+
+Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
+
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libksba=1.3.2-1+deb8u1
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.2-1+deb8u1.dsc' libksba_1.3.2-1+deb8u1.dsc 2155 SHA256:bf947531acd6bdffc99c67dccd3a8711fa4ebc515666bc708dbf832d321bddce
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.2.orig.tar.bz2' libksba_1.3.2.orig.tar.bz2 600952 SHA256:eb95537955dfc2845690a4cc3836074fa6d0a2c2ca2cbf1759364d3bd9868406
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.2-1+deb8u1.debian.tar.xz' libksba_1.3.2-1+deb8u1.debian.tar.xz 17496 SHA256:0be2be431aa1e20a50d47d4bf12bfdfbd5df7d3e79d0f44b82563efd0061789f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libksba/1.3.2-1+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/libksba/1.3.2-1+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libksba/1.3.2-1+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-8`
 
@@ -1820,6 +1897,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/ (for browsing the source)
 - https://sources.debian.net/src/procps/2:3.3.9-9+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.9-9+deb8u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `pth=2.0.7-20`
+
+Binary Packages:
+
+- `libpth20:amd64=2.0.7-20`
+
+Licenses: (parsed from: `/usr/share/doc/libpth20/copyright`)
+
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pth=2.0.7-20
+'http://deb.debian.org/debian/pool/main/p/pth/pth_2.0.7-20.dsc' pth_2.0.7-20.dsc 1463 SHA256:2ecd0ef8bcdc572462acb8bf3e6a325a681262b1fa092ea9f49bf684e0437ba0
+'http://deb.debian.org/debian/pool/main/p/pth/pth_2.0.7.orig.tar.gz' pth_2.0.7.orig.tar.gz 652640 SHA256:72353660c5a2caafd601b20e12e75d865fd88f6cf1a088b306a3963f0bc77232
+'http://deb.debian.org/debian/pool/main/p/pth/pth_2.0.7-20.debian.tar.xz' pth_2.0.7-20.debian.tar.xz 10540 SHA256:30ec35561d192cae28064ca4f711320a10d3b693b101fc5e6fe525946b384323
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pth/2.0.7-20/ (for browsing the source)
+- https://sources.debian.net/src/pth/2.0.7-20/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pth/2.0.7-20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline6=6.3-8`
 
