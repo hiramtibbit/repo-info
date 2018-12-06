@@ -1,13 +1,13 @@
-# `clojure:lein-2.8.1-alpine`
+# `clojure:openjdk-8-lein-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f20de8f7d98bea2e3c7c5f5f5c5724fe59e49bd2bc18ae6412a58a2a320fb799`
-- Created: `2018-11-05T23:21:16.772034883Z`
+- Image ID: `sha256:65c729d29ce105d31bba1778620ca6125c68eb42380dd85094829a37434a877d`
+- Created: `2018-12-03T20:56:16.954620886Z`
 - Virtual Size: ~ 140.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/sh"]`
+- Command: `["lein","repl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`

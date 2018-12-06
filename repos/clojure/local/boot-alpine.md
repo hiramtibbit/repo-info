@@ -1,13 +1,13 @@
-# `clojure:boot-2.8.1-alpine`
+# `clojure:openjdk-8-boot-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e542523ce5a648bb2afdce5fee76e14e04969d06ba5a606f94cbcd168c58218f`
-- Created: `2018-10-24T23:03:53.760333965Z`
+- Image ID: `sha256:26c84c943fd39755a1256c8c5e5375a713405bac09c3517615fbb9cbcf2df1c1`
+- Created: `2018-11-30T00:22:26.151328359Z`
 - Virtual Size: ~ 154.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/sh"]`
+- Command: `["boot","repl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`

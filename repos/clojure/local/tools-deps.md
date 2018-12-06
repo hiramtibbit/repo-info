@@ -1,13 +1,13 @@
-# `clojure:tools-deps-1.9.0.397`
+# `clojure:openjdk-8-tools-deps`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c2a8fb5f5187016495dcf013017efa738e323e091abcf1605541466734f7526`
-- Created: `2018-11-17T06:57:32.03401551Z`
+- Image ID: `sha256:3531e5f84272702500a571277c2b0ba27d41ed2fde62694cd7b2f0232c7f2060`
+- Created: `2018-11-30T00:23:13.526672684Z`
 - Virtual Size: ~ 668.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["bash"]`
+- Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
