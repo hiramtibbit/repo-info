@@ -2764,19 +2764,13 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20170808
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20170808.dsc' lsb_9.20170808.dsc 1597 SHA256:d767e622530f73df4f041f7bace54412a6da3d66ddcc73df7913cdebdbf258a9
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20170808.tar.xz' lsb_9.20170808.tar.xz 42120 SHA256:ec9cb022cedcdf34c5b8dc2dca530777ce3f491ad364222557691e87807729b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lsb/9.20170808/
 
-- https://sources.debian.net/src/lsb/9.20170808/ (for browsing the source)
-- https://sources.debian.net/src/lsb/9.20170808/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lsb/9.20170808/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.2-1`
 
@@ -3928,20 +3922,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=2.43-1-1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.43-1-1.dsc' survival_2.43-1-1.dsc 1862 SHA256:f2790e9f596f8d6fa17220ef8acc69eb2d457719768479a6cda18d707c5744d8
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.43-1.orig.tar.gz' survival_2.43-1.orig.tar.gz 4392702 SHA256:13cf63db9faa882b7a8f6ce19f51ee4616b91a4f0316f68b0d9d7982b5744008
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.43-1-1.debian.tar.xz' survival_2.43-1-1.debian.tar.xz 5860 SHA256:fe6960452399f686744b18779f3583b07b966fd2639ca61d6536ac34d8e37099
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/survival/2.43-1-1/
 
-- https://sources.debian.net/src/survival/2.43-1-1/ (for browsing the source)
-- https://sources.debian.net/src/survival/2.43-1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/survival/2.43-1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-11`
 
