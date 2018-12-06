@@ -299,7 +299,7 @@ CMD ["/bin/bash"]
 ## `centos:7`
 
 ```console
-$ docker pull centos@sha256:92d23a2bd90c258ade0aa076cc0ca64c75aed6eecfec9f2acf9e1c6e14b76385
+$ docker pull centos@sha256:184e5f35598e333bfa7de10d8fb1cebb5ee4df5bc0f970bf2b1e7c7345136426
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -341,29 +341,29 @@ CMD ["/bin/bash"]
 ### `centos:7` - linux; arm variant v7
 
 ```console
-$ docker pull centos@sha256:65d68928b28bd5878bf53b8e0611b0cae52a9f5876110916891f4b6e04040336
+$ docker pull centos@sha256:a757bdb58fcfd0656121b77e2fef6629c27062563219e0729ee77bb291e29d5a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69853138 bytes)**  
+-	Total Size: **70.0 MB (70028874 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb63e3c96f54a97414c0aeac6e6c709e4dd54d7eb1dce08c669605662d3f51f5`
+-	Image ID: `sha256:696a2a326214d2c5b0fb9849a8744e1da20c7c5c9d36a5bbc2697a6f3ae0249a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 07 Aug 2018 12:06:18 GMT
-ADD file:8b763ef22f8c3765b00d2f5d39f38eee7fd677abb9d6d1c6c3138a56e2c063fc in / 
-# Tue, 07 Aug 2018 12:06:19 GMT
-LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180805
-# Tue, 07 Aug 2018 12:06:19 GMT
+# Thu, 06 Dec 2018 12:58:41 GMT
+ADD file:55e9ef36644ac92db8d8b25e3a32bd832bb2b9df5f21aabed195f2ab41ee4459 in / 
+# Thu, 06 Dec 2018 12:58:42 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205
+# Thu, 06 Dec 2018 12:58:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f98cb03e8d557f5fadff544769d6efa28e545dab0ed92580a31fbe026a3648f6`  
-		Last Modified: Tue, 07 Aug 2018 12:06:55 GMT  
-		Size: 69.9 MB (69853138 bytes)  
+	-	`sha256:848bc3b64acac10d70e39a27bd8fad888a66b9d4a2822e43d7280a0fcb86a8cd`  
+		Last Modified: Thu, 06 Dec 2018 12:59:27 GMT  
+		Size: 70.0 MB (70028874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:7` - linux; arm64 variant v8
@@ -1019,7 +1019,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7`
 
 ```console
-$ docker pull centos@sha256:92d23a2bd90c258ade0aa076cc0ca64c75aed6eecfec9f2acf9e1c6e14b76385
+$ docker pull centos@sha256:184e5f35598e333bfa7de10d8fb1cebb5ee4df5bc0f970bf2b1e7c7345136426
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1061,29 +1061,29 @@ CMD ["/bin/bash"]
 ### `centos:centos7` - linux; arm variant v7
 
 ```console
-$ docker pull centos@sha256:65d68928b28bd5878bf53b8e0611b0cae52a9f5876110916891f4b6e04040336
+$ docker pull centos@sha256:a757bdb58fcfd0656121b77e2fef6629c27062563219e0729ee77bb291e29d5a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69853138 bytes)**  
+-	Total Size: **70.0 MB (70028874 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb63e3c96f54a97414c0aeac6e6c709e4dd54d7eb1dce08c669605662d3f51f5`
+-	Image ID: `sha256:696a2a326214d2c5b0fb9849a8744e1da20c7c5c9d36a5bbc2697a6f3ae0249a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 07 Aug 2018 12:06:18 GMT
-ADD file:8b763ef22f8c3765b00d2f5d39f38eee7fd677abb9d6d1c6c3138a56e2c063fc in / 
-# Tue, 07 Aug 2018 12:06:19 GMT
-LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180805
-# Tue, 07 Aug 2018 12:06:19 GMT
+# Thu, 06 Dec 2018 12:58:41 GMT
+ADD file:55e9ef36644ac92db8d8b25e3a32bd832bb2b9df5f21aabed195f2ab41ee4459 in / 
+# Thu, 06 Dec 2018 12:58:42 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205
+# Thu, 06 Dec 2018 12:58:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f98cb03e8d557f5fadff544769d6efa28e545dab0ed92580a31fbe026a3648f6`  
-		Last Modified: Tue, 07 Aug 2018 12:06:55 GMT  
-		Size: 69.9 MB (69853138 bytes)  
+	-	`sha256:848bc3b64acac10d70e39a27bd8fad888a66b9d4a2822e43d7280a0fcb86a8cd`  
+		Last Modified: Thu, 06 Dec 2018 12:59:27 GMT  
+		Size: 70.0 MB (70028874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:centos7` - linux; arm64 variant v8
@@ -1475,7 +1475,7 @@ CMD ["/bin/bash"]
 ## `centos:latest`
 
 ```console
-$ docker pull centos@sha256:92d23a2bd90c258ade0aa076cc0ca64c75aed6eecfec9f2acf9e1c6e14b76385
+$ docker pull centos@sha256:184e5f35598e333bfa7de10d8fb1cebb5ee4df5bc0f970bf2b1e7c7345136426
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1517,29 +1517,29 @@ CMD ["/bin/bash"]
 ### `centos:latest` - linux; arm variant v7
 
 ```console
-$ docker pull centos@sha256:65d68928b28bd5878bf53b8e0611b0cae52a9f5876110916891f4b6e04040336
+$ docker pull centos@sha256:a757bdb58fcfd0656121b77e2fef6629c27062563219e0729ee77bb291e29d5a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69853138 bytes)**  
+-	Total Size: **70.0 MB (70028874 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb63e3c96f54a97414c0aeac6e6c709e4dd54d7eb1dce08c669605662d3f51f5`
+-	Image ID: `sha256:696a2a326214d2c5b0fb9849a8744e1da20c7c5c9d36a5bbc2697a6f3ae0249a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 07 Aug 2018 12:06:18 GMT
-ADD file:8b763ef22f8c3765b00d2f5d39f38eee7fd677abb9d6d1c6c3138a56e2c063fc in / 
-# Tue, 07 Aug 2018 12:06:19 GMT
-LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180805
-# Tue, 07 Aug 2018 12:06:19 GMT
+# Thu, 06 Dec 2018 12:58:41 GMT
+ADD file:55e9ef36644ac92db8d8b25e3a32bd832bb2b9df5f21aabed195f2ab41ee4459 in / 
+# Thu, 06 Dec 2018 12:58:42 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205
+# Thu, 06 Dec 2018 12:58:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f98cb03e8d557f5fadff544769d6efa28e545dab0ed92580a31fbe026a3648f6`  
-		Last Modified: Tue, 07 Aug 2018 12:06:55 GMT  
-		Size: 69.9 MB (69853138 bytes)  
+	-	`sha256:848bc3b64acac10d70e39a27bd8fad888a66b9d4a2822e43d7280a0fcb86a8cd`  
+		Last Modified: Thu, 06 Dec 2018 12:59:27 GMT  
+		Size: 70.0 MB (70028874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:latest` - linux; arm64 variant v8
