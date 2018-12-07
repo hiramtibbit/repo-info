@@ -6313,14 +6313,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.dsc' openssl_1.0.2g-1ubuntu4.13.dsc 2453 SHA256:e2583bf1ea68c4ed1d92b09f9471d4e6c965bb232037e5dc5de8fccfc3093263
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.13.debian.tar.xz' openssl_1.0.2g-1ubuntu4.13.debian.tar.xz 125124 SHA256:43b6beb40533cc53595d4410be427fb2ff9d6e859f0ff4a73e21c49b45d6bcd5
-```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 
@@ -6725,14 +6720,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.8.dsc' poppler_0.41.0-0ubuntu1.8.dsc 3356 SHA256:f18a084c8e26c2766ac4dc46ce5bb72f5bac49495907750b9d33939302e401e9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.8.debian.tar.xz' poppler_0.41.0-0ubuntu1.8.debian.tar.xz 44864 SHA256:b2f032b3554d1c000aaa89da0a5e21143ad30e0b603b3433c6c55cda17ef0f41
-```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.14-0ubuntu0.16.04`
 
@@ -10594,14 +10584,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wavpack=4.75.2-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.1.dsc' wavpack_4.75.2-2ubuntu0.1.dsc 2230 SHA256:683b2cecf8a60f84ac3088c07dea0cf755975358821c63368e4f03d4d48b385c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2.orig.tar.bz2' wavpack_4.75.2.orig.tar.bz2 439798 SHA256:7d31b34166c33c3109b45c6e4579b472fd05e3ee8ec6d728352961c5cdd1d6b0
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.1.debian.tar.xz' wavpack_4.75.2-2ubuntu0.1.debian.tar.xz 6372 SHA256:a9c25c003ef321523a66b6c467a419bf9db772886654110ad94763ed039991a1
-```
 
 ### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.3`
 
