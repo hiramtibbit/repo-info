@@ -1,7 +1,7 @@
 ## `opensuse:leap`
 
 ```console
-$ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d18ce66bb94a369
+$ docker pull opensuse@sha256:47b12905e42b8144707adbdb967f053e0c9a34b765b551591722382207718cd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,19 +13,19 @@ $ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d
 ### `opensuse:leap` - linux; amd64
 
 ```console
-$ docker pull opensuse@sha256:76bcb201b49a1091ed76c5631a076d2aa99ea3b5c56b977c3453daee40c7fe68
+$ docker pull opensuse@sha256:b1d6860f2d4dc75892d8afe1c6151eaf9c0ea4af31bc38aa345b82b7588dc380
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.1 MB (45116945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35057ab4ef084eb79755b0eb3a724eed2187cf3a22724f6e426f1b0e9cac6d83`
+-	Image ID: `sha256:efc0e91c4ab2d0a004a192c10c5e61f5af42839783c642e2491478fdef048593`
 
 ```dockerfile
-# Sat, 21 Apr 2018 00:12:31 GMT
+# Fri, 07 Dec 2018 16:20:22 GMT
 MAINTAINER Fabian Vogt <fvogt@suse.com>
-# Sat, 21 Apr 2018 00:12:35 GMT
+# Fri, 07 Dec 2018 16:20:26 GMT
 ADD file:c2e8c3d7a2db6a8351551b927a2d5b872d3fd42c0cd533cd8c6fc1c9d1968238 in / 
 ```
 

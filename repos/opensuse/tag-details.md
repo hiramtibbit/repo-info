@@ -10,7 +10,7 @@
 ## `opensuse:42.3`
 
 ```console
-$ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d18ce66bb94a369
+$ docker pull opensuse@sha256:47b12905e42b8144707adbdb967f053e0c9a34b765b551591722382207718cd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22,19 +22,19 @@ $ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d
 ### `opensuse:42.3` - linux; amd64
 
 ```console
-$ docker pull opensuse@sha256:76bcb201b49a1091ed76c5631a076d2aa99ea3b5c56b977c3453daee40c7fe68
+$ docker pull opensuse@sha256:b1d6860f2d4dc75892d8afe1c6151eaf9c0ea4af31bc38aa345b82b7588dc380
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.1 MB (45116945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35057ab4ef084eb79755b0eb3a724eed2187cf3a22724f6e426f1b0e9cac6d83`
+-	Image ID: `sha256:efc0e91c4ab2d0a004a192c10c5e61f5af42839783c642e2491478fdef048593`
 
 ```dockerfile
-# Sat, 21 Apr 2018 00:12:31 GMT
+# Fri, 07 Dec 2018 16:20:22 GMT
 MAINTAINER Fabian Vogt <fvogt@suse.com>
-# Sat, 21 Apr 2018 00:12:35 GMT
+# Fri, 07 Dec 2018 16:20:26 GMT
 ADD file:c2e8c3d7a2db6a8351551b927a2d5b872d3fd42c0cd533cd8c6fc1c9d1968238 in / 
 ```
 
@@ -184,7 +184,7 @@ ADD file:d73e65836369eff91bcedc19021a4a0ab231627cc7841586084d4630ecbc4203 in /
 ## `opensuse:leap`
 
 ```console
-$ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d18ce66bb94a369
+$ docker pull opensuse@sha256:47b12905e42b8144707adbdb967f053e0c9a34b765b551591722382207718cd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -196,19 +196,19 @@ $ docker pull opensuse@sha256:569e6ee7a622838b9fa1111c3bfa99a50fdb34b7503f945b7d
 ### `opensuse:leap` - linux; amd64
 
 ```console
-$ docker pull opensuse@sha256:76bcb201b49a1091ed76c5631a076d2aa99ea3b5c56b977c3453daee40c7fe68
+$ docker pull opensuse@sha256:b1d6860f2d4dc75892d8afe1c6151eaf9c0ea4af31bc38aa345b82b7588dc380
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.1 MB (45116945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35057ab4ef084eb79755b0eb3a724eed2187cf3a22724f6e426f1b0e9cac6d83`
+-	Image ID: `sha256:efc0e91c4ab2d0a004a192c10c5e61f5af42839783c642e2491478fdef048593`
 
 ```dockerfile
-# Sat, 21 Apr 2018 00:12:31 GMT
+# Fri, 07 Dec 2018 16:20:22 GMT
 MAINTAINER Fabian Vogt <fvogt@suse.com>
-# Sat, 21 Apr 2018 00:12:35 GMT
+# Fri, 07 Dec 2018 16:20:26 GMT
 ADD file:c2e8c3d7a2db6a8351551b927a2d5b872d3fd42c0cd533cd8c6fc1c9d1968238 in / 
 ```
 
@@ -271,7 +271,7 @@ ADD file:d73e65836369eff91bcedc19021a4a0ab231627cc7841586084d4630ecbc4203 in /
 ## `opensuse:tumbleweed`
 
 ```console
-$ docker pull opensuse@sha256:f5fc65bd0dc133a4d716efb42e9df608727491a6d697c36b615bc6c6ba069fa1
+$ docker pull opensuse@sha256:7acbd54c3ecb92dc1234cc28724af76325af5cd05a2a36a1f37643fc30c0356b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -284,19 +284,19 @@ $ docker pull opensuse@sha256:f5fc65bd0dc133a4d716efb42e9df608727491a6d697c36b61
 ### `opensuse:tumbleweed` - linux; amd64
 
 ```console
-$ docker pull opensuse@sha256:e1281d883f3975ead424c9a2b732d7b4ee541752e1e8337686420372713f642c
+$ docker pull opensuse@sha256:a6a936f8c10dd0c60cecf89b5619c1237ad933b6873e42b5ca1e0c601225f4e1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **42.0 MB (41961148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6e1f7b02c915ec735b35c4853e89ab1c84717cea7bd849f7500cc3ffb60ad11`
+-	Image ID: `sha256:994767880f2a978ba52e16962a1eb1da624d078ebd231eb4e583cd3aada3eb75`
 
 ```dockerfile
-# Fri, 03 Nov 2017 23:07:47 GMT
+# Fri, 07 Dec 2018 16:21:32 GMT
 MAINTAINER SUSE Containers Team <containers@suse.com>
-# Sat, 21 Apr 2018 00:13:20 GMT
+# Fri, 07 Dec 2018 16:21:36 GMT
 ADD file:520a8282b11f349f172e6098c179f4baeeb968d79652b738873ace311efa6d8d in / 
 ```
 
