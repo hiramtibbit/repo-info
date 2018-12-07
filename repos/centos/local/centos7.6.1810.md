@@ -1,10 +1,10 @@
-# `centos:latest`
+# `centos:centos7.6.1810`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e1148e4cc2c148c6890a18e3b2d2dde41a6745ceb4e5fe94a923d811bf82ddb`
-- Created: `2018-12-06T00:21:07.135655444Z`
-- Virtual Size: ~ 201.78 Mb  
+- Image ID: `sha256:d5f224905a66234d2f0b448f8a2f0991fa11212b5469cb8836115c0ed99872d6`
+- Created: `2018-12-06T00:22:44.782662Z`
+- Virtual Size: ~ 201.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
