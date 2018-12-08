@@ -415,21 +415,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.9-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9-2.dsc' cups_2.2.9-2.dsc 3304 SHA256:7900966c0061eb6f6e68ba1afd35acb5c04ad3507e67fe568ab214a0181fb999
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9.orig.tar.gz' cups_2.2.9.orig.tar.gz 10402885 SHA256:6d22d5da253b97643320da0bf95574acd85ff2abe3ec1a51d36093841d891156
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9.orig.tar.gz.asc' cups_2.2.9.orig.tar.gz.asc 864 SHA256:dd5843030e454cb0d3ef0abadd9da07175343d7775ea0b1f253e86de94f6a821
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9-2.debian.tar.xz' cups_2.2.9-2.debian.tar.xz 351120 SHA256:0ecfe44dd2a4328b6b0942ee4d989b9316ef8cbe8ee08c5b66145fcdc29577ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.9-2/
 
-- https://sources.debian.net/src/cups/2.2.9-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.62.0-1`
 
@@ -1331,20 +1323,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.2.1-8
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.dsc' libffi_3.2.1-8.dsc 1959 SHA256:a07201eb5374cfab35703a6f4c88a494bb23ece91da5481497bc25404c57eaf4
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz' libffi_3.2.1.orig.tar.gz 940837 SHA256:d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.debian.tar.xz' libffi_3.2.1-8.debian.tar.xz 11660 SHA256:1eb0b13e0c0fc989ed98011d18dcddf8a05af17380fe1258883761a8d16586b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.2.1-8/
 
-- https://sources.debian.net/src/libffi/3.2.1-8/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.2.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.2.1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.8.4-3`
 
@@ -2605,21 +2590,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.26.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0-1.dsc' sqlite3_3.26.0-1.dsc 2397 SHA256:897aa14f506671beabf9e8cdaea64411d81e6e5e9bcd814d5eab58a0294eca94
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0.orig-www.tar.xz' sqlite3_3.26.0.orig-www.tar.xz 5572636 SHA256:11c2813fafaae6efbb6a6c62fc4c63425c0de626fb0893bfa90431f295da84bd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0.orig.tar.xz' sqlite3_3.26.0.orig.tar.xz 6691672 SHA256:f4181c560e02cb435c0396c00eb0645e88f8fc06078ee20fe4a3216f6785d46b
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0-1.debian.tar.xz' sqlite3_3.26.0-1.debian.tar.xz 17732 SHA256:eee459f6bfb73f34701384f5d3e32394694d168e5edae4db6abff4a972a92f6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.26.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=239-11`
 
