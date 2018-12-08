@@ -1,7 +1,7 @@
 ## `plone:alpine`
 
 ```console
-$ docker pull plone@sha256:5d8b5164f4d75acb66c6e8026d5ae708f381b976bec8c6fabedcd02b10096036
+$ docker pull plone@sha256:8b111c6b644d5736fa2998f450e938fa054952b597f745fa48332e915244f38f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,14 +115,14 @@ CMD ["start"]
 ### `plone:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull plone@sha256:b93a81c2bc2f0f98b9f1274a2718709f68e9bdfa19e2b6bba1f1b9b5869ec339
+$ docker pull plone@sha256:47e4e287657c2338c4d836306dd0d31e11f2ac82b1be147b8d1c9f27a2a2e478
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.8 MB (122846839 bytes)**  
+-	Total Size: **122.7 MB (122706460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fb18b4ebdb264c0e90e020bea3b5b6765d73667ff69f1071a49e4a6bc6b3814`
+-	Image ID: `sha256:386364eaf79fb5f7453cb28cc155131fa976edf5f0e778a27aa3c0c71c0e44ca`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -145,37 +145,37 @@ RUN apk add --no-cache ca-certificates
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 # Wed, 12 Sep 2018 08:12:56 GMT
 ENV PYTHON_VERSION=2.7.15
-# Fri, 16 Nov 2018 09:50:02 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libnsl-dev 		libressl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Fri, 16 Nov 2018 09:50:04 GMT
+# Sat, 08 Dec 2018 09:04:10 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libressl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		zlib-dev 	&& apk del .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 		--with-system-expat 		--with-system-ffi 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
+# Sat, 08 Dec 2018 09:04:10 GMT
 ENV PYTHON_PIP_VERSION=18.1
-# Fri, 16 Nov 2018 09:50:13 GMT
+# Sat, 08 Dec 2018 09:04:19 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 16 Nov 2018 09:50:13 GMT
+# Sat, 08 Dec 2018 09:04:19 GMT
 CMD ["python2"]
-# Fri, 16 Nov 2018 10:16:00 GMT
+# Sat, 08 Dec 2018 09:24:23 GMT
 ENV PIP=9.0.3 ZC_BUILDOUT=2.11.4 SETUPTOOLS=39.1.0 WHEEL=0.31.1 PLONE_MAJOR=5.1 PLONE_VERSION=5.1.4 PLONE_MD5=ce3b87b1cb8ee30e577ae347d9bdd647
-# Fri, 16 Nov 2018 10:16:00 GMT
+# Sat, 08 Dec 2018 09:24:24 GMT
 LABEL plone=5.1.4 os=alpine os.version=3.7 name=Plone 5.1 description=Plone image, based on Unified Installer maintainer=Plone Community
-# Fri, 16 Nov 2018 10:16:03 GMT
+# Sat, 08 Dec 2018 09:24:25 GMT
 RUN addgroup -g 500 plone  && adduser -S -D -G plone -u 500 plone  && mkdir -p /plone/instance /data/filestorage /data/blobstorage
-# Fri, 16 Nov 2018 10:16:04 GMT
+# Sat, 08 Dec 2018 09:24:25 GMT
 COPY file:941f3698549712ff2843305a22ae0d28616618df1d65cad9d56ab26bb48b9a99 in /plone/instance/ 
-# Fri, 16 Nov 2018 10:31:54 GMT
+# Sat, 08 Dec 2018 09:39:32 GMT
 RUN apk add --no-cache --virtual .build-deps     gcc     libc-dev     zlib-dev     libjpeg-turbo-dev     libpng-dev     libxml2-dev     libxslt-dev     pcre-dev && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/Plone-$PLONE_VERSION-UnifiedInstaller.tgz && echo "$PLONE_MD5  Plone.tgz" | md5sum -c - && tar -zxvf Plone.tgz && cp -rv ./Plone-$PLONE_VERSION-UnifiedInstaller/base_skeleton/* /plone/instance/ && cp -v ./Plone-$PLONE_VERSION-UnifiedInstaller/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL && cd /plone/instance && buildout && ln -s /data/filestorage/ /plone/instance/var/filestorage && ln -s /data/blobstorage /plone/instance//var/blobstorage && chown -R plone:plone /plone /data && rm -rf /Plone* && apk del .build-deps && apk add --no-cache --virtual .run-deps     su-exec     bash     rsync     libxml2     libxslt     libjpeg-turbo && rm -rf /plone/buildout-cache/downloads/*
-# Fri, 16 Nov 2018 10:31:59 GMT
+# Sat, 08 Dec 2018 09:39:35 GMT
 VOLUME [/data]
-# Fri, 16 Nov 2018 10:32:00 GMT
+# Sat, 08 Dec 2018 09:39:36 GMT
 COPY multi:5a3433f39e2b332ac9b21e380af31d9e3233508c9d9f67c14188cd72bd3dcf73 in / 
-# Fri, 16 Nov 2018 10:32:01 GMT
+# Sat, 08 Dec 2018 09:39:36 GMT
 EXPOSE 8080/tcp
-# Fri, 16 Nov 2018 10:32:02 GMT
+# Sat, 08 Dec 2018 09:39:37 GMT
 WORKDIR /plone/instance
-# Fri, 16 Nov 2018 10:32:03 GMT
+# Sat, 08 Dec 2018 09:39:37 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Fri, 16 Nov 2018 10:32:04 GMT
+# Sat, 08 Dec 2018 09:39:38 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 16 Nov 2018 10:32:05 GMT
+# Sat, 08 Dec 2018 09:39:38 GMT
 CMD ["start"]
 ```
 
@@ -192,29 +192,29 @@ CMD ["start"]
 		Last Modified: Sat, 15 Sep 2018 09:09:22 GMT  
 		Size: 309.1 KB (309094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7022a236858c7fab717986435bd0bdc58b94cdf52b9f890c26a4a472ee020c20`  
-		Last Modified: Fri, 16 Nov 2018 09:59:42 GMT  
-		Size: 16.9 MB (16903311 bytes)  
+	-	`sha256:ba47a56a77b7e8e10a1d6dbf82bc36026d1b23cdb1018f8c4c6784fe53536808`  
+		Last Modified: Sat, 08 Dec 2018 09:08:34 GMT  
+		Size: 16.8 MB (16766645 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09b0babbcdebadab7272767658eb4a2d4bac494870eef061750f831e25a81909`  
-		Last Modified: Fri, 16 Nov 2018 09:59:37 GMT  
-		Size: 1.8 MB (1780188 bytes)  
+	-	`sha256:4aca7938210f3efefa2900715d537133559a68a5a8a9d41a691ece3c2f19e175`  
+		Last Modified: Sat, 08 Dec 2018 09:08:29 GMT  
+		Size: 1.8 MB (1780222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d990af0b41ba88d65d093b429a9e168ce835c5549a7c15ed05a07788dbbdfffa`  
-		Last Modified: Fri, 16 Nov 2018 10:50:33 GMT  
-		Size: 1.4 KB (1391 bytes)  
+	-	`sha256:ccfa81fd5bfa3b7768140fa9233510e2daaeff1f2ea57827f5cd6bf03905270a`  
+		Last Modified: Sat, 08 Dec 2018 09:57:44 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d901bef03fcd5f57ae987b214c3d73dcb97b34683254ecd67e318491b79e6139`  
-		Last Modified: Fri, 16 Nov 2018 10:50:34 GMT  
-		Size: 669.0 B  
+	-	`sha256:61196d5a5936ec2b257b3c87d6f00851a71e73b5df775487cb6525e4c252874c`  
+		Last Modified: Sat, 08 Dec 2018 09:57:44 GMT  
+		Size: 668.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:287070dbe42b29e47102f687290e53b15af6e59f33e1ae60ec5980f027437267`  
-		Last Modified: Fri, 16 Nov 2018 10:51:14 GMT  
-		Size: 101.8 MB (101798664 bytes)  
+	-	`sha256:7aa9abd0ba4a9213e48bf8d69339534dfdfde87e9199cfc8f4830e70b3cc070b`  
+		Last Modified: Sat, 08 Dec 2018 09:58:23 GMT  
+		Size: 101.8 MB (101794921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:740d364dc51d24ecd1b3168b610b2e9f3d221097e7c437c5f7e496c788ffc030`  
-		Last Modified: Fri, 16 Nov 2018 10:50:33 GMT  
-		Size: 2.2 KB (2250 bytes)  
+	-	`sha256:969598f9bb9d3fb7b176453b8b41aea563abb4ffa34ebda118e1d43516f18434`  
+		Last Modified: Sat, 08 Dec 2018 09:57:44 GMT  
+		Size: 2.2 KB (2249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `plone:alpine` - linux; arm64 variant v8
