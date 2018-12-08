@@ -1,17 +1,17 @@
-# `nginx:1.14.1`
+# `nginx:1.14.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f2d4477b7ea238f6ffb483962f4d124876277879a8aa948ae554d4268a41b04`
-- Created: `2018-11-16T13:34:49.610696646Z`
-- Virtual Size: ~ 109.08 Mb  
+- Image ID: `sha256:a7dfe30a82fbb7d23fcbd1257e7a5d7fb37f3bad011324f4d48733395130cced`
+- Created: `2018-12-06T00:21:46.631277725Z`
+- Virtual Size: ~ 109.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.14.1-1~stretch`
-  - `NJS_VERSION=1.14.1.0.2.5-1~stretch`
+  - `NGINX_VERSION=1.14.2-1~stretch`
+  - `NJS_VERSION=1.14.2.0.2.6-1~stretch`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1556,11 +1556,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.14.1-1~stretch`
+### `dpkg` source package: `nginx-module-geoip=1.14.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.14.1-1~stretch`
+- `nginx-module-geoip=1.14.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1570,11 +1570,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.14.1-1~stretch`
+### `dpkg` source package: `nginx-module-image-filter=1.14.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.14.1-1~stretch`
+- `nginx-module-image-filter=1.14.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1584,11 +1584,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.14.1.0.2.5-1~stretch`
+### `dpkg` source package: `nginx-module-njs=1.14.2.0.2.6-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-njs=1.14.1.0.2.5-1~stretch`
+- `nginx-module-njs=1.14.2.0.2.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1598,11 +1598,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.14.1-1~stretch`
+### `dpkg` source package: `nginx-module-xslt=1.14.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.14.1-1~stretch`
+- `nginx-module-xslt=1.14.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1612,11 +1612,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.14.1-1~stretch`
+### `dpkg` source package: `nginx=1.14.2-1~stretch`
 
 Binary Packages:
 
-- `nginx=1.14.1-1~stretch`
+- `nginx=1.14.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1626,11 +1626,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
+### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3+deb9u2`
+- `libssl1.1:amd64=1.1.0j-1~deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1639,17 +1639,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
+$ apt-get source -qq --print-uris openssl=1.1.0j-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.dsc' openssl_1.1.0j-1~deb9u1.dsc 2611 SHA256:3c4f9e2af00c7595218d05d09635746f7edfd13b6c08b6266cd386b195c7889b
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz' openssl_1.1.0j.orig.tar.gz 5411919 SHA256:31bec6c203ce1a8e93d5994f4ed304c63ccf07676118b6634edded12ad1b3246
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz.asc' openssl_1.1.0j.orig.tar.gz.asc 488 SHA256:e162322dce0b98f92401a48ba5f088ded64ee308a54580ed9edc3edafd85eebf
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.debian.tar.xz' openssl_1.1.0j-1~deb9u1.debian.tar.xz 71944 SHA256:737db70af006b984b914ba63ac8cbf012cb0db43df5e31f7dfa95d0b5890910b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0j-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 
@@ -1913,11 +1914,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.0.8-2+deb9u2`
+### `dpkg` source package: `tiff=4.0.8-2+deb9u4`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.8-2+deb9u2`
+- `libtiff5:amd64=4.0.8-2+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -1926,17 +1927,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.0.8-2+deb9u2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2+deb9u2.dsc' tiff_4.0.8-2+deb9u2.dsc 2185 SHA256:b64056af722ac8826486c5361bce5e832347da02a7f7f5664d92c57b5b816ddf
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2+deb9u2.debian.tar.xz' tiff_4.0.8-2+deb9u2.debian.tar.xz 26252 SHA256:25fc9acaa503e454e40050a4fb6bca69bdce0f3d5eec5a08d8abe29b4f9584d9
+$ apt-get source -qq --print-uris tiff=4.0.8-2+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8-2+deb9u4.dsc' tiff_4.0.8-2+deb9u4.dsc 2185 SHA256:7f2a8ae92ea3ea871eb9baca399e589d256163e9689a64ac41ac64253c84b0b7
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8-2+deb9u4.debian.tar.xz' tiff_4.0.8-2+deb9u4.debian.tar.xz 32508 SHA256:2096e012af91b8503e656212409c438ad2105fd42c22e8f811fe5ef25810342d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.0.8-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.8-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.0.8-2+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.8-2+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018g-0+deb9u1`
 
