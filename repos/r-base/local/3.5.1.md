@@ -940,20 +940,13 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.8.1-2
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.8.1-2.dsc' freetype_2.8.1-2.dsc 2169 SHA256:a557f67d2849d327cfc63ac76d395aab746a27b866588a58f9af6fcbc4c23019
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.8.1.orig.tar.gz' freetype_2.8.1.orig.tar.gz 4242784 SHA256:a7531cb8c2f6b709896f018380ad97e677e243847ff8a098d1b8b5d23e9d74d7
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.8.1-2.diff.gz' freetype_2.8.1-2.diff.gz 37741 SHA256:9a33ce04ea099336d6a79d06b60ba46f73a660f674b9def9a29323d525e1b6d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/freetype/2.8.1-2/
 
-- https://sources.debian.net/src/freetype/2.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/freetype/2.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetype/2.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fribidi=1.0.5-3`
 
@@ -1156,20 +1149,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-3
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-3.dsc' gmp_6.1.2+dfsg-3.dsc 2123 SHA256:1c918d2bf8a4fce98fc6bdcd752b36e1cd897114b9b9aeaf5dc661200bbcf9e2
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg.orig.tar.xz' gmp_6.1.2+dfsg.orig.tar.xz 1804424 SHA256:18016f718f621e7641ddd4e57f8e140391c5183252e5998263ffff59198a65b7
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-3.debian.tar.xz' gmp_6.1.2+dfsg-3.debian.tar.xz 20824 SHA256:8c61aa9fcc1c90052c53bd723b1391acb4c9032bf90fcce27c6facfd8065bf5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/
 
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.10-3`
 
@@ -1444,16 +1430,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris icu=63.1-4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-4.dsc' icu_63.1-4.dsc 2057 SHA256:eec716e2d10c7a97528346636e0dda078f107d1533339ea299df7b855e6de431
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-4.debian.tar.xz' icu_63.1-4.debian.tar.xz 24584 SHA256:835fbfc0c998e2a4797cc3c4fa4bca81934e996c8462b67a00b1c8979b56eea4
+'http://http.debian.net/debian/pool/main/i/icu/icu_63.1-4.dsc' icu_63.1-4.dsc 2057 SHA256:eec716e2d10c7a97528346636e0dda078f107d1533339ea299df7b855e6de431
+'http://http.debian.net/debian/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
+'http://http.debian.net/debian/pool/main/i/icu/icu_63.1-4.debian.tar.xz' icu_63.1-4.debian.tar.xz 24584 SHA256:835fbfc0c998e2a4797cc3c4fa4bca81934e996c8462b67a00b1c8979b56eea4
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/icu/63.1-4/ (for browsing the source)
-- https://sources.debian.net/src/icu/63.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/63.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.55`
 
@@ -1695,20 +1675,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas-dev/copyright`, `/usr/share/doc/
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.8.0-1
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.8.0-1.dsc' lapack_3.8.0-1.dsc 2771 SHA256:821562c0de1c1c7440b76f90a66442c068087757beb5bd078e5203aaf57daf50
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.8.0.orig.tar.gz' lapack_3.8.0.orig.tar.gz 7426094 SHA256:deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.8.0-1.debian.tar.xz' lapack_3.8.0-1.debian.tar.xz 20944 SHA256:937bea9b102d4869bc2a730afc061a847fe8ca742108492bd497ad01d4fbed8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lapack/3.8.0-1/
 
-- https://sources.debian.net/src/lapack/3.8.0-1/ (for browsing the source)
-- https://sources.debian.net/src/lapack/3.8.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lapack/3.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lattice=0.20-38-1`
 
@@ -1895,20 +1868,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.2.1-8
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.dsc' libffi_3.2.1-8.dsc 1959 SHA256:a07201eb5374cfab35703a6f4c88a494bb23ece91da5481497bc25404c57eaf4
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz' libffi_3.2.1.orig.tar.gz 940837 SHA256:d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.debian.tar.xz' libffi_3.2.1-8.debian.tar.xz 11660 SHA256:1eb0b13e0c0fc989ed98011d18dcddf8a05af17380fe1258883761a8d16586b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.2.1-8/
 
-- https://sources.debian.net/src/libffi/3.2.1-8/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.2.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.2.1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.8.4-3`
 
