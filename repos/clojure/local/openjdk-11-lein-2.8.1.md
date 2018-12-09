@@ -117,13 +117,20 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris alsa-lib=1.1.7-1
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.7-1.dsc' alsa-lib_1.1.7-1.dsc 2485 SHA256:62321ac9f0ac0c801f2135a048f7bf85dfd579181b8986f07f7c34b7ae3478b2
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.7.orig.tar.bz2' alsa-lib_1.1.7.orig.tar.bz2 1005257 SHA256:9d6000b882a3b2df56300521225d69717be6741b71269e488bb20a20783bdc09
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.7-1.debian.tar.xz' alsa-lib_1.1.7-1.debian.tar.xz 34556 SHA256:8a2b061d482c5712f041d2baa5101710cea94ba2f596c954ea727b123be70a0d
+```
 
-- http://snapshot.debian.org/package/alsa-lib/1.1.7-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/alsa-lib/1.1.7-1/ (for browsing the source)
+- https://sources.debian.net/src/alsa-lib/1.1.7-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/alsa-lib/1.1.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apparmor=2.13.1-3`
 
@@ -721,21 +728,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.9-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9-2.dsc' cups_2.2.9-2.dsc 3304 SHA256:7900966c0061eb6f6e68ba1afd35acb5c04ad3507e67fe568ab214a0181fb999
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9.orig.tar.gz' cups_2.2.9.orig.tar.gz 10402885 SHA256:6d22d5da253b97643320da0bf95574acd85ff2abe3ec1a51d36093841d891156
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9.orig.tar.gz.asc' cups_2.2.9.orig.tar.gz.asc 864 SHA256:dd5843030e454cb0d3ef0abadd9da07175343d7775ea0b1f253e86de94f6a821
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.9-2.debian.tar.xz' cups_2.2.9-2.debian.tar.xz 351120 SHA256:0ecfe44dd2a4328b6b0942ee4d989b9316ef8cbe8ee08c5b66145fcdc29577ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.9-2/
 
-- https://sources.debian.net/src/cups/2.2.9-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.62.0-1`
 
@@ -2463,20 +2462,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.2.1-8
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.dsc' libffi_3.2.1-8.dsc 1959 SHA256:a07201eb5374cfab35703a6f4c88a494bb23ece91da5481497bc25404c57eaf4
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz' libffi_3.2.1.orig.tar.gz 940837 SHA256:d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-8.debian.tar.xz' libffi_3.2.1-8.debian.tar.xz 11660 SHA256:1eb0b13e0c0fc989ed98011d18dcddf8a05af17380fe1258883761a8d16586b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.2.1-8/
 
-- https://sources.debian.net/src/libffi/3.2.1-8/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.2.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.2.1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.8.4-3`
 
