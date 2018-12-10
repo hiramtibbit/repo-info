@@ -4828,20 +4828,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-14.dsc' systemd_239-14.dsc 4864 SHA256:3446a5077f04890d1b26e1129a9717b281ca4ab246bdf56a57240a6e9525c81a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_239-14.debian.tar.xz' systemd_239-14.debian.tar.xz 163976 SHA256:a6b481e829beac7d7740aa79b9d67891a48fd7908e44a0ea7e310eebe8f7460b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/239-14/
 
-- https://sources.debian.net/src/systemd/239-14/ (for browsing the source)
-- https://sources.debian.net/src/systemd/239-14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/239-14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
 
