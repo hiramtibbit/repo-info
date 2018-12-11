@@ -816,14 +816,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.5.dsc' cups_2.1.3-4ubuntu0.5.dsc 3751 SHA256:a7fb1b738eebef56c9cc838fa8f6e071c6825a228a0f5b85265a403117c2fbb4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.5.debian.tar.xz' cups_2.1.3-4ubuntu0.5.debian.tar.xz 352280 SHA256:74b49c9d4c2d0ce61149a42140afb89edc25beb18402fed7cc3a7748ce525b8b
-```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
 
