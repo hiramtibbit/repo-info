@@ -928,14 +928,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-8/copyright`, `/usr/share/doc/g++-8/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-10ubuntu1.dsc' gcc-8_8.2.0-10ubuntu1.dsc 36374 SHA256:59f34f2621a7372856dcf70912779a53fcca86e85338a99df9dbac635639609b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-10ubuntu1.diff.gz' gcc-8_8.2.0-10ubuntu1.diff.gz 4449574 SHA256:9f92d20f35068be52387a961327ba591941c89c4a659302bbf0fdaee2c4dcd17
-```
 
 ### `dpkg` source package: `gcc-defaults=1.180ubuntu2`
 
@@ -1403,9 +1398,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris icu-le-hb=1.0.3+git180724-3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu-le-hb/icu-le-hb_1.0.3+git180724-3.dsc' icu-le-hb_1.0.3+git180724-3.dsc 1929 SHA256:9b41687d767aaa16c0aac4632bb6c6988fee19537d5b31bd4144e84774ae1c5e
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu-le-hb/icu-le-hb_1.0.3+git180724.orig.tar.xz' icu-le-hb_1.0.3+git180724.orig.tar.xz 31768 SHA256:62cfd2618e94eaee9ee94587cacf63b112766ab165f03fa4906628bf92eb2c01
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu-le-hb/icu-le-hb_1.0.3+git180724-3.debian.tar.xz' icu-le-hb_1.0.3+git180724-3.debian.tar.xz 3472 SHA256:5835056a66cbfbaa1869b83865bd54d65befd8065fe954a143339af4154615a9
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/icu-le-hb/icu-le-hb_1.0.3+git180724-3.dsc' icu-le-hb_1.0.3+git180724-3.dsc 1929 SHA256:9b41687d767aaa16c0aac4632bb6c6988fee19537d5b31bd4144e84774ae1c5e
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/icu-le-hb/icu-le-hb_1.0.3+git180724.orig.tar.xz' icu-le-hb_1.0.3+git180724.orig.tar.xz 31768 SHA256:62cfd2618e94eaee9ee94587cacf63b112766ab165f03fa4906628bf92eb2c01
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/icu-le-hb/icu-le-hb_1.0.3+git180724-3.debian.tar.xz' icu-le-hb_1.0.3+git180724-3.debian.tar.xz 3472 SHA256:5835056a66cbfbaa1869b83865bd54d65befd8065fe954a143339af4154615a9
 ```
 
 ### `dpkg` source package: `icu=63.1-4`
@@ -1421,14 +1416,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=63.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.1-4.dsc' icu_63.1-4.dsc 2057 SHA256:eec716e2d10c7a97528346636e0dda078f107d1533339ea299df7b855e6de431
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.1-4.debian.tar.xz' icu_63.1-4.debian.tar.xz 24584 SHA256:835fbfc0c998e2a4797cc3c4fa4bca81934e996c8462b67a00b1c8979b56eea4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/icu/63.1-4/
+
 
 ### `dpkg` source package: `ilmbase=2.2.1-2ubuntu1`
 
@@ -3279,15 +3273,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.28/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.0-3.dsc' perl_5.28.0-3.dsc 2810 SHA256:19595f3005acdcbd11b982c76bd9960af17b29cd995e7535e7575cd83f5e10c9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.0.orig-regen-configure.tar.xz' perl_5.28.0.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.0.orig.tar.xz' perl_5.28.0.orig.tar.xz 12410536 SHA256:059b3cb69970d8c8c5964caced0335b4af34ac990c8e61f7e3f90cd1c2d11e49
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.28.0-3.debian.tar.xz' perl_5.28.0-3.debian.tar.xz 159980 SHA256:49c39dbc89d1715ea1d8dfc2ca4bf16f2711a227ef0a828b658964c1731f89a1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.28.0-3/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-1build2`
 
