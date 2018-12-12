@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75f46320fe49ce1ef5058eea3c77a52fdfbab4d351123da10daf6fdf8b57dbde`
-- Created: `2018-11-26T23:39:48.379318268Z`
-- Virtual Size: ~ 544.47 Mb  
+- Image ID: `sha256:5d25427a14436ee6afafb7e9fd6ac5015b8785d7db178e3e8b2f7094d77d53b5`
+- Created: `2018-12-10T20:23:49.051740677Z`
+- Virtual Size: ~ 548.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.12`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=989c04cc879ee71a5e1131db867f3c5102f1f7565f805e2bb8bde33f93147fe1`
+  - `PHP_VERSION=7.2.13`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=14b0429abdb46b65c843e5882c9a8c46b31dfbf279c747293b8ab950c2644a4b`
   - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=13.0.8`
 
@@ -2221,7 +2221,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3+deb9u2`
 - `openssl=1.1.0f-3+deb9u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2242,6 +2241,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.0j-1~deb9u1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0j-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.dsc' openssl_1.1.0j-1~deb9u1.dsc 2611 SHA256:3c4f9e2af00c7595218d05d09635746f7edfd13b6c08b6266cd386b195c7889b
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz' openssl_1.1.0j.orig.tar.gz 5411919 SHA256:31bec6c203ce1a8e93d5994f4ed304c63ccf07676118b6634edded12ad1b3246
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz.asc' openssl_1.1.0j.orig.tar.gz.asc 488 SHA256:e162322dce0b98f92401a48ba5f088ded64ee308a54580ed9edc3edafd85eebf
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.debian.tar.xz' openssl_1.1.0j-1~deb9u1.debian.tar.xz 71944 SHA256:737db70af006b984b914ba63ac8cbf012cb0db43df5e31f7dfa95d0b5890910b
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0j-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0j-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
