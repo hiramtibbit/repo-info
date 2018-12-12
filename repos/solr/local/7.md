@@ -1593,20 +1593,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.24.1-2
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.dsc' gtk+3.0_3.24.1-2.dsc 3770 SHA256:c3f5652583f64a7b6d955b5abeea9c98b9b018f38442047012a5ddce03fcde08
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1.orig.tar.xz' gtk+3.0_3.24.1.orig.tar.xz 19307612 SHA256:68387be307b99aadcdc653561d7a2a7f0113b93561fb18ded7075ec9ced5b02f
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.debian.tar.xz' gtk+3.0_3.24.1-2.debian.tar.xz 148728 SHA256:f3c3ccda2bb07fa13dea3e4595d1a0dbd7a320c5a8f3ea084fd662823c19393c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/
 
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
