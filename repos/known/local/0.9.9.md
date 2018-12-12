@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15267595a3f1050bd1de0d8e66e6471a09590de7ce28027eea301572c9a3de1d`
-- Created: `2018-11-17T02:08:56.827755337Z`
-- Virtual Size: ~ 462.06 Mb  
+- Image ID: `sha256:bf3d9920d53ea812822eab66570a325bd78457433100a63e0bb3dd633fc9dbdc`
+- Created: `2018-12-10T22:43:39.451405944Z`
+- Virtual Size: ~ 462.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.38`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.38.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.38.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e`
+  - `PHP_VERSION=5.6.39`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.39.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.39.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=8147576001a832ff3d03cb2980caa2d6b584a10624f87ac459fcd3948c6e4a10`
   - `PHP_MD5=`
   - `KNOWN_VERSION=0.9.9`
 
@@ -1302,6 +1302,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.7-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libconfig-inifiles-perl=2.94-1`
+
+Binary Packages:
+
+- `libconfig-inifiles-perl=2.94-1`
+
+Licenses: (parsed from: `/usr/share/doc/libconfig-inifiles-perl/copyright`)
+
+- `Artistic`
+- `Expat`
+- `GPL-1`
+- `GPL-1+`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libconfig-inifiles-perl=2.94-1
+'http://deb.debian.org/debian/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_2.94-1.dsc' libconfig-inifiles-perl_2.94-1.dsc 2417 SHA256:a2fc2179e07179b423adae495aad85951368a0c4bf1558fe54d017ddd9a265a2
+'http://deb.debian.org/debian/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_2.94.orig.tar.gz' libconfig-inifiles-perl_2.94.orig.tar.gz 65322 SHA256:d6d38a416da79de874c5f1825221f22e972ad500b6527d190cc6e9ebc45194b4
+'http://deb.debian.org/debian/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_2.94-1.debian.tar.xz' libconfig-inifiles-perl_2.94-1.debian.tar.xz 9244 SHA256:b1fad4e4f4d73f1c0272c8dec7ac32df400aff722d61afe3e65cd4c40ff94bcb
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libconfig-inifiles-perl/2.94-1/ (for browsing the source)
+- https://sources.debian.net/src/libconfig-inifiles-perl/2.94-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libconfig-inifiles-perl/2.94-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libedit=3.1-20160903-3`
 
 Binary Packages:
@@ -1925,13 +1955,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/make-dfsg/4.1-9.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/make-dfsg/4.1-9.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.1=10.1.26-0+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.37-0+deb9u1`
 
 Binary Packages:
 
-- `mariadb-client-10.1=10.1.26-0+deb9u1`
-- `mariadb-client-core-10.1=10.1.26-0+deb9u1`
-- `mariadb-common=10.1.26-0+deb9u1`
+- `mariadb-client-10.1=10.1.37-0+deb9u1`
+- `mariadb-client-core-10.1=10.1.37-0+deb9u1`
+- `mariadb-common=10.1.37-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/mariadb-client-10.1/copyright`, `/usr/share/doc/mariadb-client-core-10.1/copyright`, `/usr/share/doc/mariadb-common/copyright`)
 
@@ -1958,17 +1988,18 @@ Licenses: (parsed from: `/usr/share/doc/mariadb-client-10.1/copyright`, `/usr/sh
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.37-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37-0+deb9u1.dsc' mariadb-10.1_10.1.37-0+deb9u1.dsc 4530 SHA256:6f8aa1d177ff530c1de727e5bbbc7b3545457147900eef641e01075808b0ec15
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37.orig.tar.gz' mariadb-10.1_10.1.37.orig.tar.gz 63492946 SHA256:8cd516b0a7f7aa36a7c1d6e687dbbad8c0b08c92d5fd60c6e691b19a6cab4d46
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37.orig.tar.gz.asc' mariadb-10.1_10.1.37.orig.tar.gz.asc 181 SHA256:d671adf786ff5ce80d6c28a9701a602d6f7728cc79c0604db28bc51c4ef8ab68
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.37-0+deb9u1.debian.tar.xz 227848 SHA256:cae259581b60d952967dca0bb23808edd10150f9ae5595325f8dcea62397a1a0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.1/10.1.26-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mariadb-10.1/10.1.37-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/mariadb-10.1/10.1.37-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mariadb-10.1/10.1.37-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
