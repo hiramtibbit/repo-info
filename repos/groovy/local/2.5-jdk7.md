@@ -1,10 +1,10 @@
-# `groovy:2.5.3-jdk7`
+# `groovy:2.5.4-jdk7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:edf996083669396d45338ce5fc71e69558a9749f7990937a3e8e6b00349f51a5`
-- Created: `2018-10-19T22:19:51.795372416Z`
-- Virtual Size: ~ 505.89 Mb  
+- Image ID: `sha256:107dec4bccbdb886fdea60430ee95905d5e2d233679d48efba9bd4ee0624d39a`
+- Created: `2018-12-12T02:46:48.64878112Z`
+- Virtual Size: ~ 506.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -13,9 +13,9 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=7u181`
-  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-1~deb8u1`
+  - `JAVA_DEBIAN_VERSION=7u181-2.6.14-2~deb8u1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.3`
+  - `GROOVY_VERSION=2.5.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -610,13 +610,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.7.5-11+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u12`
+### `dpkg` source package: `curl=7.38.0-4+deb8u13`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u12`
-- `libcurl3:amd64=7.38.0-4+deb8u12`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u12`
+- `curl=7.38.0-4+deb8u13`
+- `libcurl3:amd64=7.38.0-4+deb8u13`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u13`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -625,13 +625,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u13
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u13.dsc' curl_7.38.0-4+deb8u13.dsc 2824 SHA256:0e3a424bd1c09fc2cd35711e521e2b288ef0ec6c06d899597d52a589a5e012e0
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.38.0-4+deb8u13.debian.tar.xz' curl_7.38.0-4+deb8u13.debian.tar.xz 56740 SHA256:26e740e89fe36a1ed4503b0e946dd1f8bcae23b7a7d6515986c5600b3bb352d1
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u12/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u13/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1379,12 +1386,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg/1.4.18-7+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
+### `dpkg` source package: `gnutls28=3.3.30-0+deb8u1`
 
 Binary Packages:
 
-- `libgnutls-deb0-28:amd64=3.3.8-6+deb8u7`
-- `libgnutls-openssl27:amd64=3.3.8-6+deb8u7`
+- `libgnutls-deb0-28:amd64=3.3.30-0+deb8u1`
+- `libgnutls-openssl27:amd64=3.3.30-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`, `/usr/share/doc/libgnutls-openssl27/copyright`)
 
@@ -1401,17 +1408,17 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u7.dsc' gnutls28_3.3.8-6+deb8u7.dsc 2958 SHA256:a5d18c2afd4eee5d05618eb146a81bf70e761527e828987bce23609f7612a7c5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u7.debian.tar.xz' gnutls28_3.3.8-6+deb8u7.debian.tar.xz 106372 SHA256:f5bfa892ddf437ce3c8de5f55315689d03d3e484375c47599051b8f2bb4e0c07
+$ apt-get source -qq --print-uris gnutls28=3.3.30-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30-0+deb8u1.dsc' gnutls28_3.3.30-0+deb8u1.dsc 2628 SHA256:01be8c173d3ffbe984b5dddb3ada3f6e984e1219daf9d9af14c0512b965a3dbb
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30.orig.tar.xz' gnutls28_3.3.30.orig.tar.xz 6392748 SHA256:41d70107ead3de2f12390909a05eefc9a88def6cd1f0d90ea82a7dac8b8effee
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.3.30-0+deb8u1.debian.tar.xz' gnutls28_3.3.30-0+deb8u1.debian.tar.xz 46352 SHA256:f3055451c76ba5c805f558b676bc5b83fbbc5cce9332d2fc0bece2c180165d6f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.3.8-6+deb8u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.3.30-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.3.30-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.3.30-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-1~deb8u1`
 
@@ -1699,11 +1706,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/iputils/3:20121221-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/iputils/3:20121221-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u4`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1712,17 +1719,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.dsc' jasper_1.900.1-debian1-2.4+deb8u4.dsc 2120 SHA256:d10770e6fbffd6a63f554af5c1f49e7fe8415e43a618f80b2a8bcf713ba72c47
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz 39040 SHA256:1edc8a12d963e129cadd43dc15010595eebf60af2cc1c30866508b891764f47b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.5-1`
 
@@ -3484,13 +3491,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u181-2.6.14-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u181-2.6.14-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jdk:amd64=7u181-2.6.14-1~deb8u1`
-- `openjdk-7-jre:amd64=7u181-2.6.14-1~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u181-2.6.14-1~deb8u1`
+- `openjdk-7-jdk:amd64=7u181-2.6.14-2~deb8u1`
+- `openjdk-7-jre:amd64=7u181-2.6.14-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u181-2.6.14-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3501,17 +3508,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-1~deb8u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.dsc' openjdk-7_7u181-2.6.14-1~deb8u1.dsc 4656 SHA256:ae64ff00ef2951c15dfe141d2561dd1d417b44a5fe7323fc4bf213967a08df9e
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
-'http://deb.debian.org/debian/pool/main/o/openjdk-7/openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-1~deb8u1.debian.tar.xz 171916 SHA256:1476fda16daf9c353a14bc890292b44ae8fc0b1caee2d8d50670b08a21cea41d
+$ apt-get source -qq --print-uris openjdk-7=7u181-2.6.14-2~deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.dsc' openjdk-7_7u181-2.6.14-2~deb8u1.dsc 4656 SHA256:8faf99f6fd490d1d8ea3ddc0adbc8695423d54eb7581259947d4fd6f489c9f49
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14.orig.tar.gz' openjdk-7_7u181-2.6.14.orig.tar.gz 54160454 SHA256:88a0bc956cfb651fa89a62f5a64bbc7e223b2e57b971bc613654471d3cda4fe5
+'http://security.debian.org/debian-security/pool/updates/main/o/openjdk-7/openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz' openjdk-7_7u181-2.6.14-2~deb8u1.debian.tar.xz 281776 SHA256:dd7ed7ae7265c48c91b0d2477e747e8417ed008abe8e47a26b98a55bea5d457c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u181-2.6.14-2~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u181-2.6.14-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u4`
 
@@ -3574,20 +3581,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u9
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.dsc' openssl_1.0.1t-1+deb8u9.dsc 2423 SHA256:3dba1093668c2171f2a187a1225a4ee598c207e0307632f3808000ae3dc25bc5
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u9.debian.tar.xz' openssl_1.0.1t-1+deb8u9.debian.tar.xz 111484 SHA256:58f6dc16b6c65b1c6bc1c1f13133a81c2955779072b6a6f583f5db97b8db948d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -3776,11 +3776,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pixman=0.32.6-3`
+### `dpkg` source package: `pixman=0.32.6-3+deb8u1`
 
 Binary Packages:
 
-- `libpixman-1-0:amd64=0.32.6-3`
+- `libpixman-1-0:amd64=0.32.6-3+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3789,17 +3789,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pixman=0.32.6-3
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.dsc' pixman_0.32.6-3.dsc 2002 SHA256:bc1090a051b5ce887976c06e8f1e389941f906bc6fc5b95f88a17cc2f5f887f1
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6.orig.tar.gz' pixman_0.32.6.orig.tar.gz 816702 SHA256:3dfed13b8060eadabf0a4945c7045b7793cc7e3e910e748a8bb0f0dc3e794904
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.diff.gz' pixman_0.32.6-3.diff.gz 283461 SHA256:d7343e301c4c79a931d38cfb3fcf6189c50a6904b3a26ea484481cba4fdef13c
+$ apt-get source -qq --print-uris pixman=0.32.6-3+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6-3+deb8u1.dsc' pixman_0.32.6-3+deb8u1.dsc 2205 SHA256:fee04be8aa089c32a66aeb17eda6bff21e135d03ed606c91a08a8ede7e67010f
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6.orig.tar.gz' pixman_0.32.6.orig.tar.gz 816702 SHA256:3dfed13b8060eadabf0a4945c7045b7793cc7e3e910e748a8bb0f0dc3e794904
+'http://security.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.32.6-3+deb8u1.diff.gz' pixman_0.32.6-3+deb8u1.diff.gz 284680 SHA256:c36a6931b078c0e9db5e00984ddde4c80c4c294fb4f6bcf8e7704f0c05db7920
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pixman/0.32.6-3/ (for browsing the source)
-- https://sources.debian.net/src/pixman/0.32.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pixman/0.32.6-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pixman/0.32.6-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/pixman/0.32.6-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pixman/0.32.6-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
@@ -4341,30 +4341,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u6`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u7`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u6`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u6/
-
-
-### `dpkg` source package: `tzdata=2018e-0+deb8u1`
-
-Binary Packages:
-
-- `tzdata=2018e-0+deb8u1`
-- `tzdata-java=2018e-0+deb8u1`
+- `libtiff5:amd64=4.0.3-12.3+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4373,17 +4354,43 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018e-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.dsc' tzdata_2018e-0+deb8u1.dsc 1985 SHA256:b726a8d125c934311d4a9a6640ae5ef373dfc390fa031096467e932e4ab3aef0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e.orig.tar.gz' tzdata_2018e.orig.tar.gz 353953 SHA256:6b288e5926841a4cb490909fe822d85c36ae75538ad69baf20da9628b63b692e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018e-0+deb8u1.debian.tar.xz' tzdata_2018e-0+deb8u1.debian.tar.xz 102688 SHA256:8f7f886c171573386296ac92e5a198d67e8c1fd19097dd44bb8b3f7922df7970
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u7
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.dsc' tiff_4.0.3-12.3+deb8u7.dsc 2399 SHA256:f9d14ebc651fa937088eebd85a46a071bff977b9580a5fe5ce9a35f57f5b1c4c
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.debian.tar.xz' tiff_4.0.3-12.3+deb8u7.debian.tar.xz 67436 SHA256:b3175567626a0ea5a26565120d8474f1fcb4e22fcd5a0a9cbd1734a8b32421cf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018e-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018e-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u7/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `tzdata=2018g-0+deb8u1`
+
+Binary Packages:
+
+- `tzdata=2018g-0+deb8u1`
+- `tzdata-java=2018g-0+deb8u1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris tzdata=2018g-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.dsc' tzdata_2018g-0+deb8u1.dsc 2018 SHA256:f40170aeb0283ee7fe0d74573b868952cfaa50d02ad535f3cb4937c8bc9c5500
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018g-0+deb8u1.debian.tar.xz' tzdata_2018g-0+deb8u1.debian.tar.xz 104188 SHA256:bbc313ee2d22d6f432917f9792033d353406862f85ce5d978c6e36610ce48fcd
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018g-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018g-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0030`
 
