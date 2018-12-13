@@ -1,7 +1,7 @@
 ## `backdrop:apache`
 
 ```console
-$ docker pull backdrop@sha256:34c7d796bc8a05bb42e00bc94101eb27e7394d04aad9d9b9c4841302d1be105b
+$ docker pull backdrop@sha256:dbb54c4184c670f07ba759618b3a1cf10382cb708ba0371f9e0575029f57c830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -179,14 +179,14 @@ CMD ["apache2-foreground"]
 ### `backdrop:apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull backdrop@sha256:eaee6241ddff9bd77abc8948cb942ecb9c8735e2e804898e564d3433a3266095
+$ docker pull backdrop@sha256:39d9d5ddbfba7f9ced359fdb3f060cbdfa8c14cdfb707146f0f4cf58b931b922
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127274502 bytes)**  
+-	Total Size: **127.3 MB (127275078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f06a56710de5d9f962f876908396566fa57b618f6be3a7e0822ced2369e35f3`
+-	Image ID: `sha256:5957a7ae528b063b233d752671b978c5b83abf5f217edc72987b0295dd43e15e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -259,17 +259,17 @@ RUN a2enmod rewrite
 RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
 # Tue, 11 Dec 2018 16:13:24 GMT
 WORKDIR /var/www/html
-# Tue, 11 Dec 2018 16:13:25 GMT
-ENV BACKDROP_VERSION=1.11.1
-# Tue, 11 Dec 2018 16:13:26 GMT
-ENV BACKDROP_MD5=2785b5bf7ede351939abb9187b886c40
-# Tue, 11 Dec 2018 16:13:33 GMT
+# Thu, 13 Dec 2018 09:39:38 GMT
+ENV BACKDROP_VERSION=1.11.3
+# Thu, 13 Dec 2018 09:39:39 GMT
+ENV BACKDROP_MD5=548333a6eec104af1ff6f19cd73791e4
+# Thu, 13 Dec 2018 09:39:49 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 11 Dec 2018 16:13:34 GMT
+# Thu, 13 Dec 2018 09:39:50 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 11 Dec 2018 16:13:34 GMT
+# Thu, 13 Dec 2018 09:39:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 11 Dec 2018 16:13:35 GMT
+# Thu, 13 Dec 2018 09:39:51 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -334,11 +334,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 11 Dec 2018 16:17:44 GMT  
 		Size: 2.3 MB (2333045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad8947a62d6ae1ce878d08da04b7277af5ab65f63fcf54a6c7403df0abc3c269`  
-		Last Modified: Tue, 11 Dec 2018 16:17:47 GMT  
-		Size: 8.3 MB (8338070 bytes)  
+	-	`sha256:6543446a08e8476c0f6412007ff86bb8b1196f2e2d6cf8a82dcd921ea1ca2b35`  
+		Last Modified: Thu, 13 Dec 2018 09:40:44 GMT  
+		Size: 8.3 MB (8338648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9cf82dc3b93f039553a4a8a0cfa6e2b507c9de8bddf002b59943342b85200bc`  
-		Last Modified: Tue, 11 Dec 2018 16:17:43 GMT  
-		Size: 950.0 B  
+	-	`sha256:bf4e0974cf662147c531bed16795e8300c21beb3c617a15b3e87b2b72890b1e2`  
+		Last Modified: Thu, 13 Dec 2018 09:40:39 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
