@@ -1693,20 +1693,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.24.1-2
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.dsc' gtk+3.0_3.24.1-2.dsc 3770 SHA256:c3f5652583f64a7b6d955b5abeea9c98b9b018f38442047012a5ddce03fcde08
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1.orig.tar.xz' gtk+3.0_3.24.1.orig.tar.xz 19307612 SHA256:68387be307b99aadcdc653561d7a2a7f0113b93561fb18ded7075ec9ced5b02f
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.debian.tar.xz' gtk+3.0_3.24.1-2.debian.tar.xz 148728 SHA256:f3c3ccda2bb07fa13dea3e4595d1a0dbd7a320c5a8f3ea084fd662823c19393c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/
 
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
@@ -3665,29 +3658,13 @@ Licenses: (parsed from: `/usr/share/doc/libllvm7/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-7=1:7.0.1~+rc2-7
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2-7.dsc' llvm-toolchain-7_7.0.1~+rc2-7.dsc 8413 SHA256:8773dde578c810f697ed6a49dfb6ba7aab173aa57ca3144e5aa7905d9f416f41
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-clang-tools-extra.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-clang-tools-extra.tar.bz2 964049 SHA256:d90c74b4c739c520a177405f68aeedfad7e66ae8176b2d97c1e5d18f34de78f1
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-clang.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-clang.tar.bz2 13901204 SHA256:19f73efdb4bf56e9e9ad3df53d737332f62e9119963a3241c7ab9a29ed01b2ad
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-compiler-rt.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-compiler-rt.tar.bz2 2379891 SHA256:ed9ab6b2c04cead06b121300ef5f21180d459112be25a71a5cc9b4c0faad3d3c
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-libcxx.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-libcxx.tar.bz2 1809603 SHA256:37be2191dda6c87b25c3dd7fe929dcbec047d4a135301739117aef2480646bbb
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-libcxxabi.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-libcxxabi.tar.bz2 544414 SHA256:215ceb7c453afeb50d18debedc1b012feb3670105f33ba4f092310a2f6a3489f
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-lld.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-lld.tar.bz2 994798 SHA256:9737dce1626c46869338fb38827655d6e588fb979b2933f36ef71419bead0f51
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-lldb.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-lldb.tar.bz2 11344315 SHA256:c62f91247599d06dc4e49a828f287ac396e45a66baa671088febb49d0306e06c
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-openmp.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-openmp.tar.bz2 1004086 SHA256:0117fb395c2e50faf835f375d9bc10a2e9de6daf745feecadd19bec59140c766
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-polly.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-polly.tar.bz2 3330769 SHA256:b54005a230d26e3d81933a1f08d83de882fe5619434a52b788fbb1349ffcf846
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig.tar.bz2 33383191 SHA256:c401badf85c8818de4557ebf437cad45f28b7c519984f058ef1643f50a6717b4
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2-7.debian.tar.xz' llvm-toolchain-7_7.0.1~+rc2-7.debian.tar.xz 99852 SHA256:a040442d93bd6ce9380006f1f04bd4201f50772f2e08dbc9e83241fbf9bca292
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/llvm-toolchain-7/1:7.0.1~+rc2-7/
 
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1~+rc2-7/ (for browsing the source)
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1~+rc2-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/llvm-toolchain-7/1:7.0.1~+rc2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -4100,20 +4077,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.40-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.dsc' nss_3.40-1.dsc 2146 SHA256:aa3ec42525e5dea813b280b164dd8f2768c196a40727ee7647809ce890b1f8be
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40.orig.tar.gz' nss_3.40.orig.tar.gz 23308315 SHA256:0562087b8bda072bf5964f8acf851f9c0997a59c384f4887cb517b3b628b32dd
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.debian.tar.xz' nss_3.40-1.debian.tar.xz 19984 SHA256:fda4d8753ee05ea59d9a1d37a19b3966ee1923aaa0eba70ad79613a6993eb7b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.40-1/
 
-- https://sources.debian.net/src/nss/2:3.40-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-11=11.0.1+13-3`
 
