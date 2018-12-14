@@ -512,14 +512,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2-1.dsc' dash_0.5.10.2-1.dsc 1708 SHA256:5acbfc1afcb4722f7ff4a5d62c229fa5569cfde900aa6883180b235ba3b6e7fe
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2-1.debian.tar.xz' dash_0.5.10.2-1.debian.tar.xz 44436 SHA256:107261de1d73cdb137d947de077f840e689bd8881f086177cbbcc13c39cfcc2b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/dash/0.5.10.2-1/
+
 
 ### `dpkg` source package: `db-defaults=1:5.3.21~exp1ubuntu2`
 
@@ -2126,14 +2125,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.9-1.dsc' librsvg_2.44.9-1.dsc 2860 SHA256:3881150722f1cfeaf5c227bfb40332374d4902047019c5ace3efb74524bada57
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.9.orig.tar.xz' librsvg_2.44.9.orig.tar.xz 9910980 SHA256:0835cd624cbe0bfb3401441fe43b4f5105f16d296407fa5b928b7354dc21a13a
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.44.9-1.debian.tar.xz' librsvg_2.44.9-1.debian.tar.xz 21724 SHA256:1189690352c85135eb4d187ecfdb6d9afa37f46b2f8251b198cd8db6f20c4ad2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.44.9-1/
+
 
 ### `dpkg` source package: `libseccomp=2.3.3-3ubuntu1`
 
@@ -3316,14 +3314,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pixman=0.34.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-2.dsc' pixman_0.34.0-2.dsc 2091 SHA256:a2d9b02ea4b0255813197c2266cee166578b083815e255530aec390bbc43d15c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0.orig.tar.gz' pixman_0.34.0.orig.tar.gz 878784 SHA256:21b6b249b51c6800dc9553b65106e1e37d0e25df942c90531d4c3997aa20a88e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-2.diff.gz' pixman_0.34.0-2.diff.gz 315460 SHA256:e81ec91d58776d804a2c56cbebb8c80fa3318a45a6a7246005bc96985f7dd805
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pixman/0.34.0-2/
+
 
 ### `dpkg` source package: `pkg-config=0.29.1-0ubuntu2`
 
