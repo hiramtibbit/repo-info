@@ -4585,14 +4585,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pixman=0.30.2-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.30.2-2ubuntu1.1.dsc' pixman_0.30.2-2ubuntu1.1.dsc 2136 SHA256:9692a9d5093e8b0a97debafda0c293baa69fde7e668300a73a3e727369403fce
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.30.2.orig.tar.gz' pixman_0.30.2.orig.tar.gz 799461 SHA256:bd988920ccd742310ddf5b363c7b278f11d69a3405a09d542162c84b46bff6e9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.30.2-2ubuntu1.1.diff.gz' pixman_0.30.2-2ubuntu1.1.diff.gz 267409 SHA256:5f8cdd98900682fcbead0e9d83cce571222075fe6e4258172483eabf304f174d
-```
 
 ### `dpkg` source package: `pkg-config=0.26-1ubuntu4`
 
