@@ -752,20 +752,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-1
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.dsc' dash_0.5.10.2-1.dsc 1708 SHA256:5acbfc1afcb4722f7ff4a5d62c229fa5569cfde900aa6883180b235ba3b6e7fe
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.debian.tar.xz' dash_0.5.10.2-1.debian.tar.xz 44436 SHA256:107261de1d73cdb137d947de077f840e689bd8881f086177cbbcc13c39cfcc2b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-1/
 
-- https://sources.debian.net/src/dash/0.5.10.2-1/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
@@ -2271,20 +2264,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20180525-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525-1.dsc' libedit_3.1-20180525-1.dsc 2219 SHA256:0680d068bbbad63ddbaaded2ea713f6807eec601715f7ddabbe9fb4b7aed5b9b
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525.orig.tar.gz' libedit_3.1-20180525.orig.tar.gz 521999 SHA256:c41bea8fd140fb57ba67a98ec1d8ae0b8ffa82f4aba9c35a87e5a9499e653116
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525-1.debian.tar.bz2' libedit_3.1-20180525-1.debian.tar.bz2 11444 SHA256:2bd107dbd9aff59d28314a55bbb74edbfd1eb969450223ca87127203ab001454
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20180525-1/
 
-- https://sources.debian.net/src/libedit/3.1-20180525-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20180525-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20180525-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libepoxy=1.5.3-0.1`
 
@@ -2724,20 +2710,13 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/l
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.9-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9-1.dsc' librsvg_2.44.9-1.dsc 2860 SHA256:3881150722f1cfeaf5c227bfb40332374d4902047019c5ace3efb74524bada57
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9.orig.tar.xz' librsvg_2.44.9.orig.tar.xz 9910980 SHA256:0835cd624cbe0bfb3401441fe43b4f5105f16d296407fa5b928b7354dc21a13a
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9-1.debian.tar.xz' librsvg_2.44.9-1.debian.tar.xz 21724 SHA256:1189690352c85135eb4d187ecfdb6d9afa37f46b2f8251b198cd8db6f20c4ad2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.44.9-1/
 
-- https://sources.debian.net/src/librsvg/2.44.9-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.44.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.44.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.3-3`
 
@@ -3863,20 +3842,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.40-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.dsc' nss_3.40-1.dsc 2146 SHA256:aa3ec42525e5dea813b280b164dd8f2768c196a40727ee7647809ce890b1f8be
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40.orig.tar.gz' nss_3.40.orig.tar.gz 23308315 SHA256:0562087b8bda072bf5964f8acf851f9c0997a59c384f4887cb517b3b628b32dd
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.debian.tar.xz' nss_3.40-1.debian.tar.xz 19984 SHA256:fda4d8753ee05ea59d9a1d37a19b3966ee1923aaa0eba70ad79613a6993eb7b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.40-1/
 
-- https://sources.debian.net/src/nss/2:3.40-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-11=11.0.1+13-3`
 
