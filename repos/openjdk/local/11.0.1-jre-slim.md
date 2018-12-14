@@ -430,20 +430,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-1
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.dsc' dash_0.5.10.2-1.dsc 1708 SHA256:5acbfc1afcb4722f7ff4a5d62c229fa5569cfde900aa6883180b235ba3b6e7fe
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.debian.tar.xz' dash_0.5.10.2-1.debian.tar.xz 44436 SHA256:107261de1d73cdb137d947de077f840e689bd8881f086177cbbcc13c39cfcc2b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-1/
 
-- https://sources.debian.net/src/dash/0.5.10.2-1/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
@@ -1962,20 +1955,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.40-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.dsc' nss_3.40-1.dsc 2146 SHA256:aa3ec42525e5dea813b280b164dd8f2768c196a40727ee7647809ce890b1f8be
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40.orig.tar.gz' nss_3.40.orig.tar.gz 23308315 SHA256:0562087b8bda072bf5964f8acf851f9c0997a59c384f4887cb517b3b628b32dd
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.debian.tar.xz' nss_3.40-1.debian.tar.xz 19984 SHA256:fda4d8753ee05ea59d9a1d37a19b3966ee1923aaa0eba70ad79613a6993eb7b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.40-1/
 
-- https://sources.debian.net/src/nss/2:3.40-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-11=11.0.1+13-3`
 
