@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f88075c45955929ae9d3c215d03e88d982eeb30a00bfcba1af7acd6dfd8f9aa`
-- Created: `2018-12-10T21:36:57.74492791Z`
+- Image ID: `sha256:4e77de75fe08c3fce4b806f233bbae9efe2ef5fe12110091ab9b093873280588`
+- Created: `2018-12-13T07:22:46.616086038Z`
 - Virtual Size: ~ 393.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,8 +26,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.39.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=8147576001a832ff3d03cb2980caa2d6b584a10624f87ac459fcd3948c6e4a10`
   - `PHP_MD5=`
-  - `BACKDROP_VERSION=1.11.1`
-  - `BACKDROP_MD5=2785b5bf7ede351939abb9187b886c40`
+  - `BACKDROP_VERSION=1.11.3`
+  - `BACKDROP_MD5=548333a6eec104af1ff6f19cd73791e4`
 
 ## `dpkg` (`.deb`-based packages)
 
