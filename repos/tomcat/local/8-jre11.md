@@ -97,20 +97,13 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adwaita-icon-theme=3.30.0-1
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.30.0-1.dsc' adwaita-icon-theme_3.30.0-1.dsc 2159 SHA256:740ec133b0ac14590f964f34583027dfbae8f95caea7adf2bd19a125207876bb
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.30.0.orig.tar.xz' adwaita-icon-theme_3.30.0.orig.tar.xz 19933720 SHA256:9106729174a3e6cc183d14f74454987f5378b46f213e698a6ab2702f70e4e64b
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.30.0-1.debian.tar.xz' adwaita-icon-theme_3.30.0-1.debian.tar.xz 27860 SHA256:84ab1be16dc940a8ca6e3a47cabe02c6d3546305b2936c3e37dcedbc3dfbd7fc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adwaita-icon-theme/3.30.0-1/
 
-- https://sources.debian.net/src/adwaita-icon-theme/3.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/adwaita-icon-theme/3.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adwaita-icon-theme/3.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `alsa-lib=1.1.7-1`
 
@@ -786,20 +779,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-1
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.dsc' dash_0.5.10.2-1.dsc 1708 SHA256:5acbfc1afcb4722f7ff4a5d62c229fa5569cfde900aa6883180b235ba3b6e7fe
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-1.debian.tar.xz' dash_0.5.10.2-1.debian.tar.xz 44436 SHA256:107261de1d73cdb137d947de077f840e689bd8881f086177cbbcc13c39cfcc2b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-1/
 
-- https://sources.debian.net/src/dash/0.5.10.2-1/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
@@ -1648,20 +1634,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.24.1-2
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.dsc' gtk+3.0_3.24.1-2.dsc 3770 SHA256:c3f5652583f64a7b6d955b5abeea9c98b9b018f38442047012a5ddce03fcde08
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1.orig.tar.xz' gtk+3.0_3.24.1.orig.tar.xz 19307612 SHA256:68387be307b99aadcdc653561d7a2a7f0113b93561fb18ded7075ec9ced5b02f
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.24.1-2.debian.tar.xz' gtk+3.0_3.24.1-2.debian.tar.xz 148728 SHA256:f3c3ccda2bb07fa13dea3e4595d1a0dbd7a320c5a8f3ea084fd662823c19393c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/
 
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
@@ -2344,20 +2323,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20180525-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525-1.dsc' libedit_3.1-20180525-1.dsc 2219 SHA256:0680d068bbbad63ddbaaded2ea713f6807eec601715f7ddabbe9fb4b7aed5b9b
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525.orig.tar.gz' libedit_3.1-20180525.orig.tar.gz 521999 SHA256:c41bea8fd140fb57ba67a98ec1d8ae0b8ffa82f4aba9c35a87e5a9499e653116
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20180525-1.debian.tar.bz2' libedit_3.1-20180525-1.debian.tar.bz2 11444 SHA256:2bd107dbd9aff59d28314a55bbb74edbfd1eb969450223ca87127203ab001454
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20180525-1/
 
-- https://sources.debian.net/src/libedit/3.1-20180525-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20180525-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20180525-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libepoxy=1.5.3-0.1`
 
@@ -2797,20 +2769,13 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/l
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.9-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9-1.dsc' librsvg_2.44.9-1.dsc 2860 SHA256:3881150722f1cfeaf5c227bfb40332374d4902047019c5ace3efb74524bada57
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9.orig.tar.xz' librsvg_2.44.9.orig.tar.xz 9910980 SHA256:0835cd624cbe0bfb3401441fe43b4f5105f16d296407fa5b928b7354dc21a13a
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.9-1.debian.tar.xz' librsvg_2.44.9-1.debian.tar.xz 21724 SHA256:1189690352c85135eb4d187ecfdb6d9afa37f46b2f8251b198cd8db6f20c4ad2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.44.9-1/
 
-- https://sources.debian.net/src/librsvg/2.44.9-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.44.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.44.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.3.3-3`
 
@@ -3599,29 +3564,13 @@ Licenses: (parsed from: `/usr/share/doc/libllvm7/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-7=1:7.0.1~+rc2-7
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2-7.dsc' llvm-toolchain-7_7.0.1~+rc2-7.dsc 8413 SHA256:8773dde578c810f697ed6a49dfb6ba7aab173aa57ca3144e5aa7905d9f416f41
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-clang-tools-extra.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-clang-tools-extra.tar.bz2 964049 SHA256:d90c74b4c739c520a177405f68aeedfad7e66ae8176b2d97c1e5d18f34de78f1
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-clang.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-clang.tar.bz2 13901204 SHA256:19f73efdb4bf56e9e9ad3df53d737332f62e9119963a3241c7ab9a29ed01b2ad
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-compiler-rt.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-compiler-rt.tar.bz2 2379891 SHA256:ed9ab6b2c04cead06b121300ef5f21180d459112be25a71a5cc9b4c0faad3d3c
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-libcxx.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-libcxx.tar.bz2 1809603 SHA256:37be2191dda6c87b25c3dd7fe929dcbec047d4a135301739117aef2480646bbb
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-libcxxabi.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-libcxxabi.tar.bz2 544414 SHA256:215ceb7c453afeb50d18debedc1b012feb3670105f33ba4f092310a2f6a3489f
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-lld.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-lld.tar.bz2 994798 SHA256:9737dce1626c46869338fb38827655d6e588fb979b2933f36ef71419bead0f51
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-lldb.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-lldb.tar.bz2 11344315 SHA256:c62f91247599d06dc4e49a828f287ac396e45a66baa671088febb49d0306e06c
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-openmp.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-openmp.tar.bz2 1004086 SHA256:0117fb395c2e50faf835f375d9bc10a2e9de6daf745feecadd19bec59140c766
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig-polly.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig-polly.tar.bz2 3330769 SHA256:b54005a230d26e3d81933a1f08d83de882fe5619434a52b788fbb1349ffcf846
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2.orig.tar.bz2' llvm-toolchain-7_7.0.1~+rc2.orig.tar.bz2 33383191 SHA256:c401badf85c8818de4557ebf437cad45f28b7c519984f058ef1643f50a6717b4
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1~+rc2-7.debian.tar.xz' llvm-toolchain-7_7.0.1~+rc2-7.debian.tar.xz 99852 SHA256:a040442d93bd6ce9380006f1f04bd4201f50772f2e08dbc9e83241fbf9bca292
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/llvm-toolchain-7/1:7.0.1~+rc2-7/
 
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1~+rc2-7/ (for browsing the source)
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1~+rc2-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/llvm-toolchain-7/1:7.0.1~+rc2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -3952,20 +3901,13 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.40-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.dsc' nss_3.40-1.dsc 2146 SHA256:aa3ec42525e5dea813b280b164dd8f2768c196a40727ee7647809ce890b1f8be
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40.orig.tar.gz' nss_3.40.orig.tar.gz 23308315 SHA256:0562087b8bda072bf5964f8acf851f9c0997a59c384f4887cb517b3b628b32dd
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.40-1.debian.tar.xz' nss_3.40-1.debian.tar.xz 19984 SHA256:fda4d8753ee05ea59d9a1d37a19b3966ee1923aaa0eba70ad79613a6993eb7b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.40-1/
 
-- https://sources.debian.net/src/nss/2:3.40-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-11=11.0.1+13-3`
 
