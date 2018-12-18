@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45d4b67ace5b68f153a0a91e6754103071c24c05deae3082aa4b85b6059097f2`
-- Created: `2018-11-30T01:50:06.424440275Z`
-- Virtual Size: ~ 507.12 Mb  
+- Image ID: `sha256:dbf46aec12fd75f723ece319dddc3c7caf26df640f944e465ddddd2f3c0ad6c3`
+- Created: `2018-12-14T18:21:25.679085261Z`
+- Virtual Size: ~ 529.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
@@ -14,8 +14,8 @@
   - `JAVA_VERSION=1.8.0_sr5fp26`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=18.0.0.3`
-  - `LIBERTY_SHA=b86ffc50eaf3965713cc9a1a3246bb9c05d59858`
+  - `LIBERTY_VERSION=18.0.0.4`
+  - `LIBERTY_SHA=282d3cbe9d5017a3a993b91e0c651719d40afb01`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
@@ -475,9 +475,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
 ```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
