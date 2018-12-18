@@ -167,7 +167,7 @@ CMD ["/bin/bash"]
 ## `photon:3.0`
 
 ```console
-$ docker pull photon@sha256:9f7ecf9866bc60878a30e52a5c7b50a72287df4dfa867ccfc70256ab78b95329
+$ docker pull photon@sha256:d27e25faddf59f64e0c9662dfd1c440d166492d24f59736f41542d197be7712e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -206,22 +206,22 @@ CMD ["/bin/bash"]
 ### `photon:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:dbc03838a607e1d96a25ab0393f957a315353ca7dd2fee4ca854ee8bae3c5332
+$ docker pull photon@sha256:cf5bc20ed72912936e771dfaaead904de092a5dd32ecb81552a3b61d3b023cfd
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.5 MB (12458797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ada04758680b08020887a0ca879ca1f1d198aa92b5ae27dbf82da9812aec01da`
+-	Image ID: `sha256:aeb0af95bf7c3d50d7db8d8f113249f943951d59e8c39af4ec3844b3c3cc8ed7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 01 Nov 2018 08:44:33 GMT
-ADD file:0156c971c2af35ac2ee40394fec4ab786c87b90f947b288eadf356b57f53cdb2 in / 
-# Thu, 01 Nov 2018 08:44:34 GMT
+# Tue, 18 Dec 2018 10:33:39 GMT
+ADD file:da67214a4c6116de94e689dfba898a7fdff1b352cbf51b641253f1a0fcfaa70a in / 
+# Tue, 18 Dec 2018 10:33:41 GMT
 LABEL name=Photon OS 3.0 Base Image vendor=VMware build-date=20181030
-# Thu, 01 Nov 2018 08:44:35 GMT
+# Tue, 18 Dec 2018 10:33:42 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -234,7 +234,7 @@ CMD ["/bin/bash"]
 ## `photon:3.0-20181030`
 
 ```console
-$ docker pull photon@sha256:9f7ecf9866bc60878a30e52a5c7b50a72287df4dfa867ccfc70256ab78b95329
+$ docker pull photon@sha256:d27e25faddf59f64e0c9662dfd1c440d166492d24f59736f41542d197be7712e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -273,22 +273,22 @@ CMD ["/bin/bash"]
 ### `photon:3.0-20181030` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:dbc03838a607e1d96a25ab0393f957a315353ca7dd2fee4ca854ee8bae3c5332
+$ docker pull photon@sha256:cf5bc20ed72912936e771dfaaead904de092a5dd32ecb81552a3b61d3b023cfd
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.5 MB (12458797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ada04758680b08020887a0ca879ca1f1d198aa92b5ae27dbf82da9812aec01da`
+-	Image ID: `sha256:aeb0af95bf7c3d50d7db8d8f113249f943951d59e8c39af4ec3844b3c3cc8ed7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 01 Nov 2018 08:44:33 GMT
-ADD file:0156c971c2af35ac2ee40394fec4ab786c87b90f947b288eadf356b57f53cdb2 in / 
-# Thu, 01 Nov 2018 08:44:34 GMT
+# Tue, 18 Dec 2018 10:33:39 GMT
+ADD file:da67214a4c6116de94e689dfba898a7fdff1b352cbf51b641253f1a0fcfaa70a in / 
+# Tue, 18 Dec 2018 10:33:41 GMT
 LABEL name=Photon OS 3.0 Base Image vendor=VMware build-date=20181030
-# Thu, 01 Nov 2018 08:44:35 GMT
+# Tue, 18 Dec 2018 10:33:42 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -301,7 +301,7 @@ CMD ["/bin/bash"]
 ## `photon:dev`
 
 ```console
-$ docker pull photon@sha256:c27e22d3dc01e7891342667644822fab9fb3ef7611832bfc66c09c6515039e7b
+$ docker pull photon@sha256:13ac2a52bcab872698293e9da769f447f78acb1593afe1e978494125e9abba91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -340,22 +340,22 @@ CMD ["/bin/bash"]
 ### `photon:dev` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:21d2fb56f6ea87a6754f39516e27c61b21ee13254b96b5c091ba637c2ebcc12a
+$ docker pull photon@sha256:13fd7919a349a6b78139ed96d2c4d06989fb218ae62b77cdb6d371daa5bc1acd
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **11.9 MB (11925621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d138e96320f712653ad937a0b49a84d630879723e567cca2b9c9e8b3beb61186`
+-	Image ID: `sha256:dbbd8ca6355b18e5a647bdde235a0a17e72266b7ce6a6071b18370d50318f156`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 07 Sep 2018 09:00:02 GMT
-ADD file:eabc754ac1af7564c69f045fe0b65a491327479bf83e0c41294fac7b44a66808 in / 
-# Fri, 07 Sep 2018 09:00:02 GMT
+# Tue, 18 Dec 2018 10:34:05 GMT
+ADD file:141ded4441815d44f96b237ada4e62ac18d38383dec0d0ee20d0bcb566171ff7 in / 
+# Tue, 18 Dec 2018 10:34:07 GMT
 LABEL name=Photon OS Dev Base Image vendor=VMware build-date=20180904
-# Fri, 07 Sep 2018 09:00:03 GMT
+# Tue, 18 Dec 2018 10:34:08 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -368,7 +368,7 @@ CMD ["/bin/bash"]
 ## `photon:dev-20180904`
 
 ```console
-$ docker pull photon@sha256:c27e22d3dc01e7891342667644822fab9fb3ef7611832bfc66c09c6515039e7b
+$ docker pull photon@sha256:13ac2a52bcab872698293e9da769f447f78acb1593afe1e978494125e9abba91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -407,22 +407,22 @@ CMD ["/bin/bash"]
 ### `photon:dev-20180904` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:21d2fb56f6ea87a6754f39516e27c61b21ee13254b96b5c091ba637c2ebcc12a
+$ docker pull photon@sha256:13fd7919a349a6b78139ed96d2c4d06989fb218ae62b77cdb6d371daa5bc1acd
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **11.9 MB (11925621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d138e96320f712653ad937a0b49a84d630879723e567cca2b9c9e8b3beb61186`
+-	Image ID: `sha256:dbbd8ca6355b18e5a647bdde235a0a17e72266b7ce6a6071b18370d50318f156`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 07 Sep 2018 09:00:02 GMT
-ADD file:eabc754ac1af7564c69f045fe0b65a491327479bf83e0c41294fac7b44a66808 in / 
-# Fri, 07 Sep 2018 09:00:02 GMT
+# Tue, 18 Dec 2018 10:34:05 GMT
+ADD file:141ded4441815d44f96b237ada4e62ac18d38383dec0d0ee20d0bcb566171ff7 in / 
+# Tue, 18 Dec 2018 10:34:07 GMT
 LABEL name=Photon OS Dev Base Image vendor=VMware build-date=20180904
-# Fri, 07 Sep 2018 09:00:03 GMT
+# Tue, 18 Dec 2018 10:34:08 GMT
 CMD ["/bin/bash"]
 ```
 
