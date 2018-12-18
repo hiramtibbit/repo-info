@@ -668,13 +668,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/lib
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.2ubuntu1.dsc' dpkg_1.19.2ubuntu1.dsc 2157 SHA256:0f4bf8c6e1b115fbcf7b568801aaa0ba4e4350d3697e21faec6111b634ae1b2e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.2ubuntu1.tar.xz' dpkg_1.19.2ubuntu1.tar.xz 4622072 SHA256:a1abb91b521bc1cbdd019792ba0593d22febeacd7c1fb40be1f3144c67a883eb
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.4-2`
 
@@ -2450,14 +2446,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1-1.dsc' libxcb_1.13.1-1.dsc 5343 SHA256:b9304d936953bda0b43aacfe750ed42f57445bacb834fcd3c2fbb7991c5baaa2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1.orig.tar.gz' libxcb_1.13.1.orig.tar.gz 636748 SHA256:f09a76971437780a602303170fd51b5f7474051722bc39d566a272d2c4bde1b5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1-1.diff.gz' libxcb_1.13.1-1.diff.gz 25316 SHA256:9c7734125a0b42eb861c7664d982bdb63692da80c1f9f1b20c6a66aa657c485d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxcb/1.13.1-1/
+
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -3006,14 +3001,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.35.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0-1.dsc' nghttp2_1.35.0-1.dsc 2560 SHA256:3bd156150c212d073aa496f3fbf9360ad08dd37bf5f0eab47237bc35ebf316ed
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0.orig.tar.bz2' nghttp2_1.35.0.orig.tar.bz2 1898083 SHA256:70ffe236b9c00fd42e972126cecd7625b69126aa294f2474ddef2ab0e453cd59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0-1.debian.tar.xz' nghttp2_1.35.0-1.debian.tar.xz 12496 SHA256:bcd5ed1d56091c063792152a883af41dfbd6637fbb78acd341ece6a468c73082
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.35.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -3180,14 +3174,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.42.4-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-4.dsc' pango1.0_1.42.4-4.dsc 3269 SHA256:9475407e4a13bac9cabaebabeb322d2c853e4964be9cc02b72f7be7e18e1e7f4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-4.debian.tar.xz' pango1.0_1.42.4-4.debian.tar.xz 29932 SHA256:7b9787388bf089e98efe2e100bf8bf067f12ee398d3eff9b90c6edd5125bbdae
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.42.4-4/
+
 
 ### `dpkg` source package: `patch=2.7.6-3`
 
@@ -3528,14 +3521,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.1-1.dsc' python3.7_3.7.1-1.dsc 3424 SHA256:3354da3fa4393d216e212bd50697e05a0e741ee1c5b12c7e5c3c16991ad54452
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.1.orig.tar.xz' python3.7_3.7.1.orig.tar.xz 16960060 SHA256:fa7e2b8e8c9402f192ad56dc4f814089d1c4466c97d780f5e5acc02c04243d6d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.1-1.debian.tar.xz' python3.7_3.7.1-1.debian.tar.xz 207704 SHA256:6eb7fd8d34887c8da51fb849d532a1a3da8a820c346a67941740b932b2be40ca
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.7/3.7.1-1/
+
 
 ### `dpkg` source package: `readline=7.0-5`
 

@@ -1191,14 +1191,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.35.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0-1.dsc' nghttp2_1.35.0-1.dsc 2560 SHA256:3bd156150c212d073aa496f3fbf9360ad08dd37bf5f0eab47237bc35ebf316ed
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0.orig.tar.bz2' nghttp2_1.35.0.orig.tar.bz2 1898083 SHA256:70ffe236b9c00fd42e972126cecd7625b69126aa294f2474ddef2ab0e453cd59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.35.0-1.debian.tar.xz' nghttp2_1.35.0-1.debian.tar.xz 12496 SHA256:bcd5ed1d56091c063792152a883af41dfbd6637fbb78acd341ece6a468c73082
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.35.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-1`
 
