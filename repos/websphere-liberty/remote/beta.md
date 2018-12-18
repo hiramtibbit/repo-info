@@ -1,7 +1,7 @@
 ## `websphere-liberty:beta`
 
 ```console
-$ docker pull websphere-liberty@sha256:26885f0e320268fd3b5f1d0a41f34c5b2bba8c51c5127c62c705134c331b7367
+$ docker pull websphere-liberty@sha256:c69782ff4e76a51ffda5bd86751c6da85d2839a4ad6a7389138ceb22ab04a33d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -332,14 +332,14 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ### `websphere-liberty:beta` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:f34f951d070af93ebb7ec1df2355aaecba47c92ec32f12b51af41610205476a3
+$ docker pull websphere-liberty@sha256:74fcb273e446066dbc0634c2783bde281d2a7624e162968157aca0504a6f2d93
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **378.2 MB (378238563 bytes)**  
+-	Total Size: **378.2 MB (378237447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ba77fbd71d6caa5fdbce9fbc96c98125a05c4f70545add0b84e26ab48c21a94`
+-	Image ID: `sha256:05d17d8c7af79172d93f354f69cbf933b29c10c11852646aa74425eb461af379`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
 ```dockerfile
@@ -377,15 +377,15 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 # Fri, 30 Nov 2018 13:18:46 GMT
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea
-# Fri, 30 Nov 2018 13:18:46 GMT
-COPY file:3b23d7d17672e2c49786942609f319a90591738e9dfd67f95b1df374561c29ce in /opt/ibm/wlp/usr/servers/defaultServer/ 
-# Fri, 30 Nov 2018 13:18:52 GMT
+# Tue, 18 Dec 2018 13:12:50 GMT
+COPY file:f1015ab5ca098f3a04cde2e721a2aa35a1ebb2e9f5eb01d378eb2264cff9a268 in /opt/ibm/wlp/usr/servers/defaultServer/ 
+# Tue, 18 Dec 2018 13:13:00 GMT
 RUN mkdir /logs     && mkdir /etc/wlp     && mkdir /lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm /liberty     && mkdir -p /config/configDropins/defaults     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /lib.index.cache     && chmod -R g+rw /lib.index.cache     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default
-# Fri, 30 Nov 2018 13:18:52 GMT
-USER [1001]
-# Fri, 30 Nov 2018 13:18:52 GMT
-EXPOSE 9080/tcp 9443/tcp
-# Fri, 30 Nov 2018 13:18:53 GMT
+# Tue, 18 Dec 2018 13:13:00 GMT
+USER 1001
+# Tue, 18 Dec 2018 13:13:00 GMT
+EXPOSE 9080 9443
+# Tue, 18 Dec 2018 13:13:00 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -426,11 +426,11 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 30 Nov 2018 13:30:51 GMT  
 		Size: 1.3 KB (1349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18e0f5821e08c5a454c82287bdf8ec3a03dfa0fad63b57d9d1aeb14792185b35`  
-		Last Modified: Fri, 30 Nov 2018 13:30:51 GMT  
-		Size: 424.0 B  
+	-	`sha256:d66141874ce32b4efb112762b77f3564f6f5daa39687211894a8d16eec935fe4`  
+		Last Modified: Tue, 18 Dec 2018 13:29:47 GMT  
+		Size: 428.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9914740c31fe63b9ce9968d73412a026f1df7da27e6688b3fcfb439559bf2664`  
-		Last Modified: Fri, 30 Nov 2018 13:31:01 GMT  
-		Size: 102.7 MB (102702535 bytes)  
+	-	`sha256:c02e155e8971d1f632ba37d53c5e6a86f0b358310f7f9f95552a9c6fc71ee984`  
+		Last Modified: Tue, 18 Dec 2018 13:29:55 GMT  
+		Size: 102.7 MB (102701415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
