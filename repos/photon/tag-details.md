@@ -435,7 +435,7 @@ CMD ["/bin/bash"]
 ## `photon:latest`
 
 ```console
-$ docker pull photon@sha256:99245da48eafb19d5f1c808ee0972b66b4b94f3fac3c725f83583c258c59650f
+$ docker pull photon@sha256:cff07540c4487088731d2e4b55d7269ebfbdd66cef4f21fa0a2143d2e3033b0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -445,27 +445,27 @@ $ docker pull photon@sha256:99245da48eafb19d5f1c808ee0972b66b4b94f3fac3c725f8358
 ### `photon:latest` - linux; amd64
 
 ```console
-$ docker pull photon@sha256:2b11d3fd0576ae3bda711188eb37a019ac61994fa5f3c68ea6174b4fc1ce27f8
+$ docker pull photon@sha256:c130aab6834a3c49b7409e95fddf7fcf05793022b40064eb2a2287227f4ef9e1
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.0 MB (14037361 bytes)**  
+-	Total Size: **14.0 MB (14037571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e7adda5a3ea96aa42b0b731ef34de52905e7f3298d1524041f4e41c6cab690`
+-	Image ID: `sha256:27ef6f9830b91fcbe20330e53d50ef64d87a3721ff5fa912bcd11267b1128d81`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 09 Nov 2018 00:20:31 GMT
-ADD file:55ac92c931381947db69de799767a44a67e754442a5b32eafc75098420823d37 in / 
-# Fri, 09 Nov 2018 00:20:40 GMT
-LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20181108
-# Fri, 09 Nov 2018 00:20:40 GMT
+# Tue, 18 Dec 2018 00:34:59 GMT
+ADD file:118d8fd21fbc027273d136431dfa92fe9b6791efca8445c0807e72d057ddf0ec in / 
+# Tue, 18 Dec 2018 00:34:59 GMT
+LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20181211
+# Tue, 18 Dec 2018 00:34:59 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b2fe08cc4eaa7454976f40d6e7dfcf316f487e060bff4e6e6bf568dbdd94bd66`  
-		Last Modified: Fri, 09 Nov 2018 00:21:10 GMT  
-		Size: 14.0 MB (14037361 bytes)  
+	-	`sha256:321a8da5ee1f85fda4e4d62ccf2fe14ad1aad46b44f76145339fcf7207500323`  
+		Last Modified: Tue, 18 Dec 2018 00:35:51 GMT  
+		Size: 14.0 MB (14037571 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
