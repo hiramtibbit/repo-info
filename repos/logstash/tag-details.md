@@ -8,7 +8,7 @@
 -	[`logstash:5.6.14-alpine`](#logstash5614-alpine)
 -	[`logstash:5.6-alpine`](#logstash56-alpine)
 -	[`logstash:5-alpine`](#logstash5-alpine)
--	[`logstash:6.5.3`](#logstash653)
+-	[`logstash:6.5.4`](#logstash654)
 
 ## `logstash:5`
 
@@ -772,27 +772,27 @@ CMD ["-e" ""]
 		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `logstash:6.5.3`
+## `logstash:6.5.4`
 
 ```console
-$ docker pull logstash@sha256:abd998fd066f0f870236cb34e01dab40559ebcfaeea9090fe41bb735b6c728a5
+$ docker pull logstash@sha256:55ee758b90387227dc6c5d86304b006012a7ad2019ff366a63e8c0b35ed8b5f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
-### `logstash:6.5.3` - linux; amd64
+### `logstash:6.5.4` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:91c57ce269ceef1369b33010dca34583f79308e60797de3ca398e16cf7d545bb
+$ docker pull logstash@sha256:aeb0cc317b51b01ac90216726ba6e636da9fbb5285056b2ffc81e7ee0539faf2
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.9 MB (312927144 bytes)**  
+-	Total Size: **312.9 MB (312927542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58d24eebe215569dd929cf77a9e9fc82538f8cccbc114a83c404e55e24813f86`
+-	Image ID: `sha256:ac1d36dfa4160e44e94b07a34050ce87e21d2114c7551c753953a1272b0fd1b3`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
 
 ```dockerfile
@@ -802,43 +802,43 @@ ADD file:6f877549795f4798a38b318c0f63f6646dbf10d3c249c7f4b73cc7cfe42dc0f5 in /
 LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205
 # Thu, 06 Dec 2018 00:21:07 GMT
 CMD ["/bin/bash"]
-# Thu, 06 Dec 2018 21:13:27 GMT
+# Mon, 17 Dec 2018 22:12:52 GMT
 RUN yum update -y && yum install -y java-1.8.0-openjdk-devel which &&     yum clean all
-# Thu, 06 Dec 2018 21:13:27 GMT
+# Mon, 17 Dec 2018 22:12:52 GMT
 RUN groupadd --gid 1000 logstash &&     adduser --uid 1000 --gid 1000       --home-dir /usr/share/logstash --no-create-home       logstash
-# Thu, 06 Dec 2018 21:13:46 GMT
-RUN curl -Lo - http://localhost:8000/logstash/build//logstash-6.5.3.tar.gz |     tar zxf - -C /usr/share &&     mv /usr/share/logstash-6.5.3 /usr/share/logstash &&     chown --recursive logstash:logstash /usr/share/logstash/ &&     chown -R logstash:root /usr/share/logstash &&     chmod -R g=u /usr/share/logstash &&     find /usr/share/logstash -type d -exec chmod g+s {} \; &&     ln -s /usr/share/logstash /opt/logstash
-# Thu, 06 Dec 2018 21:13:47 GMT
+# Mon, 17 Dec 2018 22:13:12 GMT
+RUN curl -Lo - http://localhost:8000/logstash/build//logstash-6.5.4.tar.gz |     tar zxf - -C /usr/share &&     mv /usr/share/logstash-6.5.4 /usr/share/logstash &&     chown --recursive logstash:logstash /usr/share/logstash/ &&     chown -R logstash:root /usr/share/logstash &&     chmod -R g=u /usr/share/logstash &&     find /usr/share/logstash -type d -exec chmod g+s {} \; &&     ln -s /usr/share/logstash /opt/logstash
+# Mon, 17 Dec 2018 22:13:12 GMT
 WORKDIR /usr/share/logstash
-# Thu, 06 Dec 2018 21:13:47 GMT
+# Mon, 17 Dec 2018 22:13:12 GMT
 ENV ELASTIC_CONTAINER=true
-# Thu, 06 Dec 2018 21:13:47 GMT
+# Mon, 17 Dec 2018 22:13:12 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 06 Dec 2018 21:13:47 GMT
+# Mon, 17 Dec 2018 22:13:12 GMT
 ADD file:1183410472ec370104718a08e1144081518db1d006a8cc82de824a34455ab3f3 in config/pipelines.yml 
-# Thu, 06 Dec 2018 21:13:47 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 ADD file:2a0dac103ac5f20f8efa6c77384f10d83a87c3de7c017658f787cce7d6156b76 in config/logstash.yml 
-# Thu, 06 Dec 2018 21:13:48 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 ADD file:2ef21d4766eab3ac48ed3847c8b8d05554f1fd0b39061cba66c9ac93240087fa in config/ 
-# Thu, 06 Dec 2018 21:13:48 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 ADD file:0cd9cc51daf5f37b2aa8aae8cf3570a3680e22852afb2803ccb87ddcd3369f52 in pipeline/logstash.conf 
-# Thu, 06 Dec 2018 21:13:49 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 RUN chown --recursive logstash:root config/ pipeline/
-# Thu, 06 Dec 2018 21:13:50 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-# Thu, 06 Dec 2018 21:13:50 GMT
+# Mon, 17 Dec 2018 22:13:13 GMT
 ADD file:29dd60f159d64086c20a7a02f84a9314f44b2290304547233fb96744325b1245 in /usr/local/bin/ 
-# Thu, 06 Dec 2018 21:13:50 GMT
+# Mon, 17 Dec 2018 22:13:14 GMT
 RUN chmod 0755 /usr/local/bin/docker-entrypoint
-# Thu, 06 Dec 2018 21:13:50 GMT
+# Mon, 17 Dec 2018 22:13:14 GMT
 USER 1000
-# Thu, 06 Dec 2018 21:13:50 GMT
+# Mon, 17 Dec 2018 22:13:14 GMT
 ADD file:e22d146a880f0f369decacfd49c523706ac533251c16f48f477e83d655dd66bc in /usr/local/bin/ 
-# Thu, 06 Dec 2018 21:13:51 GMT
+# Mon, 17 Dec 2018 22:13:14 GMT
 EXPOSE 5044 9600
-# Thu, 06 Dec 2018 21:13:51 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=logstash org.label-schema.version=6.5.3 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash-docker license=Elastic License
-# Thu, 06 Dec 2018 21:13:51 GMT
+# Mon, 17 Dec 2018 22:13:15 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=logstash org.label-schema.version=6.5.4 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash-docker license=Elastic License
+# Mon, 17 Dec 2018 22:13:15 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ```
 
@@ -847,47 +847,47 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Last Modified: Thu, 06 Dec 2018 00:33:41 GMT  
 		Size: 75.2 MB (75165529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b6efc3da8cbdb4d7c651871076a9e9f428c6139654a60aaea65b10b3388283`  
-		Last Modified: Tue, 11 Dec 2018 18:10:01 GMT  
-		Size: 74.9 MB (74893584 bytes)  
+	-	`sha256:3a1e4174c6a296153beda684486cb50234aa71c509233cb74566bd18c9bfe03f`  
+		Last Modified: Wed, 19 Dec 2018 16:54:42 GMT  
+		Size: 74.9 MB (74893587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8b439c768af44f212fdaa9526ef1874242ebe23585d0c8de3f2a59767886c0e`  
-		Last Modified: Tue, 11 Dec 2018 18:09:48 GMT  
-		Size: 1.6 KB (1607 bytes)  
+	-	`sha256:a45580ada7cbab4ca39c65b67b236ec6ea7824a28c0f06c68e63b95c52fc16d8`  
+		Last Modified: Wed, 19 Dec 2018 16:54:29 GMT  
+		Size: 1.6 KB (1608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78757a31cfb7c34f44ed42d69cf84b555862fc9344c4a06a14679bf06f783f61`  
-		Last Modified: Tue, 11 Dec 2018 18:10:08 GMT  
-		Size: 161.9 MB (161859371 bytes)  
+	-	`sha256:85783b3810d1b3a53900738a9791020d31f821235dfdcfdf1c044d53633d227c`  
+		Last Modified: Wed, 19 Dec 2018 16:54:48 GMT  
+		Size: 161.9 MB (161859764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dea95c0fa98eeee95b0ddb77c9e24842ea9c79e579f9d066de264ff27710e497`  
-		Last Modified: Tue, 11 Dec 2018 18:09:48 GMT  
-		Size: 378.0 B  
+	-	`sha256:30c254b18180a82563f1de6546e26b6066eb85586d6506e7859f99f4254424e0`  
+		Last Modified: Wed, 19 Dec 2018 16:54:29 GMT  
+		Size: 379.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8893ce2d22baa0c8c38a610a5e2c07f6e46fad2d48b8f44624385bad21ef2657`  
-		Last Modified: Tue, 11 Dec 2018 18:09:47 GMT  
+	-	`sha256:583ceb4bc726c73ccd796c98b0cf7eabb5c9678c79246ef5fbcb1341ea89e91c`  
+		Last Modified: Wed, 19 Dec 2018 16:54:29 GMT  
 		Size: 269.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e93f23f26d9c38d09fc39516a480239aaa174b4edd4d6ccd89af1ca1cc99e183`  
-		Last Modified: Tue, 11 Dec 2018 18:09:44 GMT  
-		Size: 443.0 B  
+	-	`sha256:d1d6aa33e4935484873c7e414c77ff0172705b622cc19c0aba4d012b680a2163`  
+		Last Modified: Wed, 19 Dec 2018 16:54:26 GMT  
+		Size: 442.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99e69d21473a8b14fa8f4885dc661f7890b45e2531caff62b890f6d77fa2f0f9`  
-		Last Modified: Tue, 11 Dec 2018 18:09:44 GMT  
+	-	`sha256:5d470174a592cd738b662af4764d34d4ceb54fa0ea158c172d9d6224d9cc1d76`  
+		Last Modified: Wed, 19 Dec 2018 16:54:26 GMT  
 		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4c6e3d47d5aa3a61d83af6f30083c5d0c1dee568ec907b5efb147415941fc5`  
-		Last Modified: Tue, 11 Dec 2018 18:09:44 GMT  
+	-	`sha256:0538316f0c3c458e0f3dc8e1de1efb803a565a572e1b17804861e2b6c27e697d`  
+		Last Modified: Wed, 19 Dec 2018 16:54:26 GMT  
 		Size: 2.6 KB (2640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:801d9f0022aee75fe6a465229d541d60fecb55bff22359dc2fc7c01d2a65528e`  
-		Last Modified: Tue, 11 Dec 2018 18:09:44 GMT  
-		Size: 494.0 B  
+	-	`sha256:77e7b1a9620ec8cc75b5cac1e78aeedb51791729fc8ab3aadf9dbfb4eb320e28`  
+		Last Modified: Wed, 19 Dec 2018 16:54:26 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:801d9f0022aee75fe6a465229d541d60fecb55bff22359dc2fc7c01d2a65528e`  
-		Last Modified: Tue, 11 Dec 2018 18:09:44 GMT  
-		Size: 494.0 B  
+	-	`sha256:77e7b1a9620ec8cc75b5cac1e78aeedb51791729fc8ab3aadf9dbfb4eb320e28`  
+		Last Modified: Wed, 19 Dec 2018 16:54:26 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101b44128cbdacf7913c3e92b6f738b9b5361f34a1f36bc8fd257950612e18da`  
-		Last Modified: Tue, 11 Dec 2018 18:09:45 GMT  
-		Size: 1.0 MB (1002057 bytes)  
+	-	`sha256:18467bd04a72ada743516782f03e2556fe5e8d486b73af51fe5a240531bd3444`  
+		Last Modified: Wed, 19 Dec 2018 16:54:27 GMT  
+		Size: 1.0 MB (1002056 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

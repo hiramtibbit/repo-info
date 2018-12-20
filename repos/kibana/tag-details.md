@@ -5,7 +5,7 @@
 -	[`kibana:5`](#kibana5)
 -	[`kibana:5.6`](#kibana56)
 -	[`kibana:5.6.14`](#kibana5614)
--	[`kibana:6.5.3`](#kibana653)
+-	[`kibana:6.5.4`](#kibana654)
 
 ## `kibana:5`
 
@@ -304,100 +304,6 @@ CMD ["kibana"]
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kibana:6.5.3`
+## `kibana:6.5.4`
 
-```console
-$ docker pull kibana@sha256:0f48135e3ae113dbce7a6c07504557ddcaa6db9db940763c5c2c30343a6691d6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `kibana:6.5.3` - linux; amd64
-
-```console
-$ docker pull kibana@sha256:8ff31afcb3d50fed0870ddc0b17365f15eeb27f51b66d98ba5e076a020646482
-```
-
--	Docker Version: 18.06.1-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.6 MB (290638600 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:244856174a8768dc5514c5b16a9b5e39aba749300a1999a90833fded109431a7`
--	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
-
-```dockerfile
-# Thu, 06 Dec 2018 00:21:06 GMT
-ADD file:6f877549795f4798a38b318c0f63f6646dbf10d3c249c7f4b73cc7cfe42dc0f5 in / 
-# Thu, 06 Dec 2018 00:21:06 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205
-# Thu, 06 Dec 2018 00:21:07 GMT
-CMD ["/bin/bash"]
-# Thu, 06 Dec 2018 20:58:49 GMT
-EXPOSE 5601
-# Thu, 06 Dec 2018 20:58:55 GMT
-RUN yum update -y && yum install -y fontconfig freetype && yum clean all
-# Thu, 06 Dec 2018 20:58:55 GMT
-WORKDIR /usr/share/kibana
-# Thu, 06 Dec 2018 20:59:31 GMT
-RUN curl -Ls http://localhost:8000/kibana/target/kibana-6.5.3-linux-x86_64.tar.gz | tar --strip-components=1 -zxf - &&     ln -s /usr/share/kibana /opt/kibana &&     chown -R 1000:0 . &&     chmod -R g=u /usr/share/kibana &&     find /usr/share/kibana -type d -exec chmod g+s {} \;
-# Thu, 06 Dec 2018 20:59:32 GMT
-ENV ELASTIC_CONTAINER=true
-# Thu, 06 Dec 2018 20:59:33 GMT
-ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 06 Dec 2018 20:59:33 GMT
-COPY --chown=1000:0file:2c9b351c7512ff200b350310fe751b2d52ed3bb748386081bbc89592fdf7eff2 in /usr/share/kibana/config/kibana.yml 
-# Thu, 06 Dec 2018 20:59:33 GMT
-COPY --chown=1000:0file:c85732e778311deac5a266a8d4144b3cd633263715920f796973739ae3f07ab0 in /usr/local/bin/ 
-# Thu, 06 Dec 2018 20:59:33 GMT
-COPY --chown=1000:0multi:ec65c62d6619069c5768a37a923aff3bc5da64ee746fe458069d0826e9e080cf in /usr/share/kibana/config/ 
-# Thu, 06 Dec 2018 20:59:34 GMT
-RUN find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \;
-# Thu, 06 Dec 2018 20:59:34 GMT
-RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000       --home-dir /usr/share/kibana --no-create-home       kibana
-# Thu, 06 Dec 2018 20:59:34 GMT
-USER 1000
-# Thu, 06 Dec 2018 20:59:35 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=kibana org.label-schema.version=6.5.3 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.vcs-url=https://github.com/elastic/kibana-docker license=Elastic License
-# Thu, 06 Dec 2018 20:59:35 GMT
-CMD ["/usr/local/bin/kibana-docker"]
-```
-
--	Layers:
-	-	`sha256:a02a4930cb5d36f3290eb84f4bfa30668ef2e9fe3a1fb73ec015fc58b9958b17`  
-		Last Modified: Thu, 06 Dec 2018 00:33:41 GMT  
-		Size: 75.2 MB (75165529 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33737d3fb6b71bf73d808e1f5f322b00c327d0a3e02de9018de7b45c9b4d21d0`  
-		Last Modified: Tue, 11 Dec 2018 18:08:47 GMT  
-		Size: 9.6 MB (9615094 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bbec7111352c2fe2092650b7c0018af2537f6d178a199e35e593f6f143a31c7`  
-		Last Modified: Tue, 11 Dec 2018 18:08:45 GMT  
-		Size: 140.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acb9782a927ff4c940981903c039423de63bdadfe156997e9ab475eaf23baaa`  
-		Last Modified: Tue, 11 Dec 2018 18:09:19 GMT  
-		Size: 205.8 MB (205848804 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71441fabd3dac90f3ffc6f86e690f69c27582aed6a578539b3d6adf40d0e34a8`  
-		Last Modified: Tue, 11 Dec 2018 18:08:42 GMT  
-		Size: 340.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1d1dc7326b07cc0463975e81776962f7a57e57298bbc1e2768d58af2f6c0bf`  
-		Last Modified: Tue, 11 Dec 2018 18:08:42 GMT  
-		Size: 2.0 KB (2004 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:432cf82d78e6a64b55c34809b607f032d3e25e7e51d08f93f5a42e29c4617f74`  
-		Last Modified: Tue, 11 Dec 2018 18:08:42 GMT  
-		Size: 2.5 KB (2460 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:156a28089caa4215ab8976d2a05788f2c05775de7fd2d7d50e62cf068dd01b0f`  
-		Last Modified: Tue, 11 Dec 2018 18:08:42 GMT  
-		Size: 2.6 KB (2625 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21859307527d1b62b6f52a6919a5c131261caa66a78dbdc890f068ed4b47ae54`  
-		Last Modified: Tue, 11 Dec 2018 18:08:42 GMT  
-		Size: 1.6 KB (1604 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
