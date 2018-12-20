@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c17550f8729e0976db0b660d5f749048a9c100ac93d8d4e7bd2ecee66052e89`
-- Created: `2018-12-05T00:11:59.018941652Z`
+- Image ID: `sha256:a20e630e58da2c1f0f280dad1204314762c635acc47ade3539d65415ea2ff0e4`
+- Created: `2018-12-20T00:25:11.467574365Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=11.0.1`
   - `JAVA_DEBIAN_VERSION=11.0.1+13-3`
-  - `CLOJURE_VERSION=1.9.0.397`
+  - `CLOJURE_VERSION=1.10.0.403`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1034,20 +1034,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.dsc' e2fsprogs_1.44.4-2.dsc 2494 SHA256:fd92d2d786434c29b07932ca3d4e778345f022aa4221c8c4387744e5723854ac
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.debian.tar.xz' e2fsprogs_1.44.4-2.debian.tar.xz 80640 SHA256:b72fdfbda6b96338432222d25c9be639e0d800d50533fa345f32789925282d5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.5`
 
@@ -2155,20 +2148,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.5.1-2
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1-2.dsc' libassuan_2.5.1-2.dsc 2215 SHA256:e954a7ef30815e62832ca4a1d2959142e264795e7ec78ba369752353135beb68
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1.orig.tar.bz2' libassuan_2.5.1.orig.tar.bz2 564857 SHA256:47f96c37b4f2aac289f0bc1bacfa8bd8b4b209a488d3d15e2229cb6cc9b26449
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1-2.debian.tar.xz' libassuan_2.5.1-2.debian.tar.xz 15236 SHA256:4a67901dcb0e92cd40e0d5d7148ebe6f929378671df373eb68b48acb560d641f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libassuan/2.5.1-2/
 
-- https://sources.debian.net/src/libassuan/2.5.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.5.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.5.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -3807,21 +3793,13 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.2.6-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.2.6-1.dsc' mesa_18.2.6-1.dsc 5322 SHA256:ca7f82f1974c34fdd6c304b320d2579bdc2a4294bbae360ce829d69433f58c1d
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.2.6.orig.tar.gz' mesa_18.2.6.orig.tar.gz 19626522 SHA256:e0ea1236dbc6c412b02e1b5d7f838072525971a6630246fa82ae4466a6d8a587
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.2.6.orig.tar.gz.asc' mesa_18.2.6.orig.tar.gz.asc 879 SHA256:1e326647470c7fa28d3b4a1be759116b534ef3e6f9ced0339c9eb8fb2c21be91
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_18.2.6-1.diff.gz' mesa_18.2.6-1.diff.gz 102411 SHA256:25a91e92fd16c595c85872b2be0a3e220620dc72b0b6caf506e87eda087e06c0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/18.2.6-1/
 
-- https://sources.debian.net/src/mesa/18.2.6-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/18.2.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/18.2.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 
@@ -4518,13 +4496,13 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/python2.7/2.7.15-4/
 
 
-### `dpkg` source package: `python3-defaults=3.7.1-2`
+### `dpkg` source package: `python3-defaults=3.7.1-3`
 
 Binary Packages:
 
-- `libpython3-stdlib:amd64=3.7.1-2`
-- `python3=3.7.1-2`
-- `python3-minimal=3.7.1-2`
+- `libpython3-stdlib:amd64=3.7.1-3`
+- `python3=3.7.1-3`
+- `python3-minimal=3.7.1-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4533,25 +4511,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-defaults=3.7.1-2
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.1-2.dsc' python3-defaults_3.7.1-2.dsc 2797 SHA256:a5539add7007cd9599fbe46f2eb82466c790ba391167bf82164f3ef5a14c9255
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.1-2.tar.gz' python3-defaults_3.7.1-2.tar.gz 137520 SHA256:fbeb13c56c5a68330881f4819afe07cab4cd67f13a48013e3942b9105aafd732
+$ apt-get source -qq --print-uris python3-defaults=3.7.1-3
+'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.1-3.dsc' python3-defaults_3.7.1-3.dsc 2797 SHA256:43bc530bbecc03394f30b515bc729eb67db2bba59455fbb598ea7708dbdb946c
+'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.7.1-3.tar.gz' python3-defaults_3.7.1-3.tar.gz 137572 SHA256:f0fd5243d700cc88fa0654425279c4704cb2264943ae28adaacfaa900853e66d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3-defaults/3.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.7.1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3-defaults/3.7.1-3/ (for browsing the source)
+- https://sources.debian.net/src/python3-defaults/3.7.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3-defaults/3.7.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.7=3.7.1-1`
+### `dpkg` source package: `python3.7=3.7.2~rc1-1`
 
 Binary Packages:
 
-- `libpython3.7-minimal:amd64=3.7.1-1`
-- `libpython3.7-stdlib:amd64=3.7.1-1`
-- `python3.7=3.7.1-1`
-- `python3.7-minimal=3.7.1-1`
+- `libpython3.7-minimal:amd64=3.7.2~rc1-1`
+- `libpython3.7-stdlib:amd64=3.7.2~rc1-1`
+- `python3.7=3.7.2~rc1-1`
+- `python3.7-minimal=3.7.2~rc1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/share/doc/libpython3.7-stdlib/copyright`, `/usr/share/doc/python3.7/copyright`, `/usr/share/doc/python3.7-minimal/copyright`)
 
@@ -4573,13 +4551,20 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python3.7=3.7.2~rc1-1
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.2~rc1-1.dsc' python3.7_3.7.2~rc1-1.dsc 3467 SHA256:9cad86fe4a4e22c5360ec6cd21a18cba3f119845f5899eca4517d921ad717d8b
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.2~rc1.orig.tar.xz' python3.7_3.7.2~rc1.orig.tar.xz 17042752 SHA256:ea9662f48e734df43348ae8cccca1606a9424fdda2826df83e976b0f033954b9
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.2~rc1-1.debian.tar.xz' python3.7_3.7.2~rc1-1.debian.tar.xz 207672 SHA256:f35da55a23d267377a3a4f1c7ca3fa4b9236dc92a0892ae4c16c1107b7e719b9
+```
 
-- http://snapshot.debian.org/package/python3.7/3.7.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python3.7/3.7.2~rc1-1/ (for browsing the source)
+- https://sources.debian.net/src/python3.7/3.7.2~rc1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.7/3.7.2~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
@@ -4991,19 +4976,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0038
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0038.dsc' ucf_3.0038.dsc 1445 SHA256:5fab6d0af664eac92b3404c6bb62d0a3ceb88cd21a1462b9a262d1292c77328f
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0038.tar.xz' ucf_3.0038.tar.xz 65416 SHA256:262ccd52637c869ac851838a176d76e90db8d3f12373e3b62eb89e217f93fe7e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0038/
 
-- https://sources.debian.net/src/ucf/3.0038/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0038/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0038/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-21`
 

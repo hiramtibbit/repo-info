@@ -1,13 +1,13 @@
-# `clojure:openjdk-8-boot`
+# `clojure:openjdk-8-lein`
 
 ## Docker Metadata
 
-- Image ID: `sha256:11479b199591ba46e1340dcb93225811aad826a164f4f18f2bdf15a65230f04c`
-- Created: `2018-11-30T00:22:07.63858919Z`
-- Virtual Size: ~ 668.31 Mb  
+- Image ID: `sha256:74c6116627e1db273aaa76fe3f9c860fb52714b15b70d816b37c72f6798de680`
+- Created: `2018-12-20T00:19:38.710937608Z`
+- Virtual Size: ~ 642.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["boot","repl"]`
+- Command: `["lein","repl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`
@@ -15,9 +15,9 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `BOOT_VERSION=2.8.1`
-  - `BOOT_INSTALL=/usr/local/bin/`
-  - `BOOT_AS_ROOT=yes`
+  - `LEIN_VERSION=2.8.3`
+  - `LEIN_INSTALL=/usr/local/bin/`
+  - `LEIN_ROOT=1`
 
 ## `dpkg` (`.deb`-based packages)
 

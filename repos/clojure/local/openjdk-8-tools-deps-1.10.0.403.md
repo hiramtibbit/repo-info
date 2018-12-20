@@ -1,23 +1,21 @@
-# `clojure:openjdk-8-lein`
+# `clojure:openjdk-8-tools-deps`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9eef2e7a1199cc45c0f274484b262aa2d70f638c9a90ac19285996d4add22401`
-- Created: `2018-12-03T20:55:15.3068183Z`
-- Virtual Size: ~ 641.95 Mb  
+- Image ID: `sha256:28987c18defcb5fa154937420a12134f88a89bc478b414025d1d515ec69d0537`
+- Created: `2018-12-20T00:22:53.566988736Z`
+- Virtual Size: ~ 668.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["lein","repl"]`
+- Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `LEIN_VERSION=2.8.1`
-  - `LEIN_INSTALL=/usr/local/bin/`
-  - `LEIN_ROOT=1`
+  - `CLOJURE_VERSION=1.10.0.403`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4686,6 +4684,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/ (for browsing the source)
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `rlwrap=0.42-3`
+
+Binary Packages:
+
+- `rlwrap=0.42-3`
+
+Licenses: (parsed from: `/usr/share/doc/rlwrap/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rlwrap=0.42-3
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42-3.dsc' rlwrap_0.42-3.dsc 1894 SHA256:ae15d26fa6fef9c1e4483079ed2c5e54f71bd27c8004ea59ffe573826bce6473
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42.orig.tar.gz' rlwrap_0.42.orig.tar.gz 279608 SHA256:5a70d8469db9d0a6630628f2d5d2972ad16c092400b7fbbdf699693ec0f87e44
+'http://deb.debian.org/debian/pool/main/r/rlwrap/rlwrap_0.42-3.debian.tar.xz' rlwrap_0.42-3.debian.tar.xz 5928 SHA256:91c8c6177faa5a719dcce13eb5724e636a44a873f244bc481e41949a5221e620
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rlwrap/0.42-3/ (for browsing the source)
+- https://sources.debian.net/src/rlwrap/0.42-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rlwrap/0.42-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
