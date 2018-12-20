@@ -1,7 +1,7 @@
 ## `clojure:openjdk-11-boot`
 
 ```console
-$ docker pull clojure@sha256:36cbc2153ad78a88c249f85c9eb2137c1327f875e424e78cc069e0f84a2ffb9f
+$ docker pull clojure@sha256:15db32d5c36255c5f6add0b4d60a90ac8153ea285ca2064dc6c15de4db332111
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -225,14 +225,14 @@ CMD ["boot" "repl"]
 ### `clojure:openjdk-11-boot` - linux; arm variant v7
 
 ```console
-$ docker pull clojure@sha256:777359143125cdeb70ccdad839c98c9278b161ccb3156e2eb6c36c71c74c9625
+$ docker pull clojure@sha256:8634c8b3ba8cc58862a63dadba4eecaca097a03213430e49d786653a41f3a147
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **490.1 MB (490135720 bytes)**  
+-	Total Size: **489.7 MB (489676407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1549358928274965ebf7563a14c5fd5ce1078ea4c5523d101537fd3e4b624f71`
+-	Image ID: `sha256:091bcb4c003816abaf8b62272a8a32d9b801ff85449e01cce84f3a0166030988`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
@@ -266,21 +266,21 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 CMD ["jshell"]
 # Wed, 05 Dec 2018 13:39:22 GMT
 LABEL maintainer=Wes Morgan <wesmorgan@icloud.com>
-# Wed, 05 Dec 2018 13:39:23 GMT
-ENV BOOT_VERSION=2.8.1
-# Wed, 05 Dec 2018 13:39:23 GMT
+# Thu, 20 Dec 2018 12:59:41 GMT
+ENV BOOT_VERSION=2.8.2
+# Thu, 20 Dec 2018 12:59:41 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Wed, 05 Dec 2018 13:39:24 GMT
+# Thu, 20 Dec 2018 12:59:41 GMT
 WORKDIR /tmp
-# Wed, 05 Dec 2018 13:39:26 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Wed, 05 Dec 2018 13:39:26 GMT
+# Thu, 20 Dec 2018 12:59:43 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Thu, 20 Dec 2018 12:59:43 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 05 Dec 2018 13:39:27 GMT
+# Thu, 20 Dec 2018 12:59:44 GMT
 ENV BOOT_AS_ROOT=yes
-# Wed, 05 Dec 2018 13:41:09 GMT
+# Thu, 20 Dec 2018 13:00:36 GMT
 RUN boot
-# Wed, 05 Dec 2018 13:41:14 GMT
+# Thu, 20 Dec 2018 13:00:37 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -317,13 +317,13 @@ CMD ["boot" "repl"]
 		Last Modified: Wed, 05 Dec 2018 13:15:10 GMT  
 		Size: 342.6 MB (342585614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:788bb92a677d26602bb78441150e8e90adf44732f5df39b62af30bba989339da`  
-		Last Modified: Wed, 05 Dec 2018 13:44:08 GMT  
-		Size: 6.9 KB (6889 bytes)  
+	-	`sha256:58b1a2a59b453e930116e6899bf14300a7ebaa862473b727372ebca859c08b83`  
+		Last Modified: Thu, 20 Dec 2018 13:02:25 GMT  
+		Size: 6.9 KB (6890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2e73fe92e06267aa1cad79c8497658bb49aa2cf8ae717cc78715ca1688d7f40`  
-		Last Modified: Wed, 05 Dec 2018 13:44:14 GMT  
-		Size: 39.8 MB (39803687 bytes)  
+	-	`sha256:64999336cd4e4922655cc6f6dece7cd0606acfe2ffceb87e09fee7bcd004c346`  
+		Last Modified: Thu, 20 Dec 2018 13:02:32 GMT  
+		Size: 39.3 MB (39344373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:openjdk-11-boot` - linux; arm64 variant v8
@@ -641,14 +641,14 @@ CMD ["boot" "repl"]
 ### `clojure:openjdk-11-boot` - linux; s390x
 
 ```console
-$ docker pull clojure@sha256:f1e802629c7f77821ea4d62f6e519c1f8ff520e7baf3c15ab1eafc8b877d17ec
+$ docker pull clojure@sha256:3dc2ac2f0f1370cc44d0b969f2c76099866d2b24e66f1d45995a41e5477665f8
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **486.1 MB (486082866 bytes)**  
+-	Total Size: **485.6 MB (485623709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9218caf28bf775fe795ee291075c623e01f8fbae528ddae44a748b4777f9fa19`
+-	Image ID: `sha256:b2eb905b8e03f55a9473b1430a1664227bc0200ac668a1eebe05781613a4862c`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
@@ -682,21 +682,21 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 CMD ["jshell"]
 # Wed, 05 Dec 2018 13:41:18 GMT
 LABEL maintainer=Wes Morgan <wesmorgan@icloud.com>
-# Wed, 05 Dec 2018 13:41:18 GMT
-ENV BOOT_VERSION=2.8.1
-# Wed, 05 Dec 2018 13:41:18 GMT
+# Thu, 20 Dec 2018 12:45:26 GMT
+ENV BOOT_VERSION=2.8.2
+# Thu, 20 Dec 2018 12:45:27 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Wed, 05 Dec 2018 13:41:19 GMT
+# Thu, 20 Dec 2018 12:45:27 GMT
 WORKDIR /tmp
-# Wed, 05 Dec 2018 13:41:20 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Wed, 05 Dec 2018 13:41:20 GMT
+# Thu, 20 Dec 2018 12:45:28 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Thu, 20 Dec 2018 12:45:28 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 05 Dec 2018 13:41:20 GMT
+# Thu, 20 Dec 2018 12:45:28 GMT
 ENV BOOT_AS_ROOT=yes
-# Wed, 05 Dec 2018 13:42:12 GMT
+# Thu, 20 Dec 2018 12:46:08 GMT
 RUN boot
-# Wed, 05 Dec 2018 13:42:12 GMT
+# Thu, 20 Dec 2018 12:46:09 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -733,11 +733,11 @@ CMD ["boot" "repl"]
 		Last Modified: Wed, 05 Dec 2018 13:13:55 GMT  
 		Size: 330.7 MB (330669305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35c8767f6f55f06e1375527d872fec30c9bdcf5491c8a15d7b497569184d7095`  
-		Last Modified: Wed, 05 Dec 2018 13:43:48 GMT  
-		Size: 6.9 KB (6890 bytes)  
+	-	`sha256:55f05b6e018fdd023f830cea97912b52905ff4c8a876cddefc5fcd6922fc692b`  
+		Last Modified: Thu, 20 Dec 2018 12:47:40 GMT  
+		Size: 6.9 KB (6891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb4429bf98951d275cb7ec580b6accab9543dd0cc126b85643474514e667bd7f`  
-		Last Modified: Wed, 05 Dec 2018 13:43:51 GMT  
-		Size: 39.8 MB (39803442 bytes)  
+	-	`sha256:43f72fbfaa2521141eb19ab7ee057703d0158ed5d3805fd2392f58a33dcbf282`  
+		Last Modified: Thu, 20 Dec 2018 12:47:43 GMT  
+		Size: 39.3 MB (39344284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
