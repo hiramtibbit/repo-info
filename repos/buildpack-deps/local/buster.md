@@ -797,20 +797,13 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.dsc' e2fsprogs_1.44.4-2.dsc 2494 SHA256:fd92d2d786434c29b07932ca3d4e778345f022aa4221c8c4387744e5723854ac
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.debian.tar.xz' e2fsprogs_1.44.4-2.debian.tar.xz 80640 SHA256:b72fdfbda6b96338432222d25c9be639e0d800d50533fa345f32789925282d5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.5`
 
@@ -1965,20 +1958,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.5.1-2
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1-2.dsc' libassuan_2.5.1-2.dsc 2215 SHA256:e954a7ef30815e62832ca4a1d2959142e264795e7ec78ba369752353135beb68
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1.orig.tar.bz2' libassuan_2.5.1.orig.tar.bz2 564857 SHA256:47f96c37b4f2aac289f0bc1bacfa8bd8b4b209a488d3d15e2229cb6cc9b26449
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.1-2.debian.tar.xz' libassuan_2.5.1-2.debian.tar.xz 15236 SHA256:4a67901dcb0e92cd40e0d5d7148ebe6f929378671df373eb68b48acb560d641f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libassuan/2.5.1-2/
 
-- https://sources.debian.net/src/libassuan/2.5.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.5.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.5.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-1`
 
@@ -3458,21 +3444,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.7.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.2-1.dsc' mercurial_4.7.2-1.dsc 2625 SHA256:40b5c365c82aeb86b0cdbfdd30838311224e590bac21f6aa191d5b7b01617a31
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.2.orig.tar.gz' mercurial_4.7.2.orig.tar.gz 6481684 SHA256:97f0594216f2348a2e37b2ad8a56eade044e741153fee8c584487e9934ca09fb
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.2.orig.tar.gz.asc' mercurial_4.7.2.orig.tar.gz.asc 833 SHA256:9d67c6d9b5006a5073078c16e4d424e26b3d08db86ec2f58759d21db50412861
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.7.2-1.debian.tar.xz' mercurial_4.7.2-1.debian.tar.xz 61764 SHA256:17040960e304cebd6905c7afc847c4d3b444543cf9256f375c7ea8b64c77f775
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.7.2-1/
 
-- https://sources.debian.net/src/mercurial/4.7.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.7.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.61`
 
