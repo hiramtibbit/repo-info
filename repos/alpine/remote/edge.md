@@ -1,7 +1,7 @@
 ## `alpine:edge`
 
 ```console
-$ docker pull alpine@sha256:d577f0a54e3fb6438553594906d6203e6c82d92973652994b0b346a2da73492a
+$ docker pull alpine@sha256:ef15530d375328b5f066c529fef7d7e88e557972578427fc0fed810271946a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -106,22 +106,22 @@ CMD ["/bin/sh"]
 ### `alpine:edge` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:d4962e09190cfeaa7daf820a42821e9fdff8ccfedcc96aeb057f9edf3fe770d4
+$ docker pull alpine@sha256:b4a5b8c8b75f46399df776a4b145ad321769d7a7ea8d0c011c32e38284b1e7ad
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2126447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e37e41336956102cb02200e2d160c58d16305a4cd438660de8bf24cdc8acf26a`
+-	Image ID: `sha256:53e483551d4ee937dd2c9585e20c214b81c9218d0a696783cca311d64dc8cac7`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 12 Sep 2018 10:39:04 GMT
-ADD file:9403554c80ea9f7bb5e0881e039e82cb9e1a255161a3f6d780f2fb2810bf64af in / 
-# Wed, 12 Sep 2018 10:39:04 GMT
-COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
-# Wed, 12 Sep 2018 10:39:04 GMT
+# Fri, 21 Dec 2018 11:40:33 GMT
+ADD file:e86b5a481cbd69a81ef7e7a968c3c83d183f8871758e40bd8c95c7af715e97bf in / 
+# Fri, 21 Dec 2018 11:40:33 GMT
+COPY file:a10c133d8d5e9af3a9a1610709d3ed2f85b1507f1ba5745ac12bb495974e3fe6 in /etc/localtime 
+# Fri, 21 Dec 2018 11:40:34 GMT
 CMD ["/bin/sh"]
 ```
 
@@ -130,8 +130,8 @@ CMD ["/bin/sh"]
 		Last Modified: Wed, 10 Jan 2018 19:08:38 GMT  
 		Size: 2.1 MB (2126271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7ebddcd058db46d5b7e82c4d393ea85085cd6d25d36ca5c3efc128ffb7fd1a`  
-		Last Modified: Wed, 12 Sep 2018 10:39:38 GMT  
+	-	`sha256:73426c7a5c514778249c669a017e721e7f00b0d70b8f323a0ad5b280a2608036`  
+		Last Modified: Fri, 21 Dec 2018 11:40:49 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
