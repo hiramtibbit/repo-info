@@ -1,7 +1,7 @@
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:97eeb9e414abbeb21ecb9f831ba9488f1995a081ad96bc6ff2f5a821d29d51da
+$ docker pull crate@sha256:93e8d42000d1fdd8c364961be09c46ac65cf5f5a2721dacd10290fe7e0401272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,87 +12,87 @@ $ docker pull crate@sha256:97eeb9e414abbeb21ecb9f831ba9488f1995a081ad96bc6ff2f5a
 ### `crate:latest` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:de205c4fae991de8588b6d8ffe859382fbc902a40e8934e856f79385320aca8d
+$ docker pull crate@sha256:3f955934f4e09c4dbad4653b4923846aa299c89ed72da9c33166864068983baf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130536907 bytes)**  
+-	Total Size: **130.5 MB (130536970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:011e111d656cf60fd41749f7f7baee91abaae8025156dd4330a3663d8efa31bf`
+-	Image ID: `sha256:9fcb90f09c0ead11112f54c2a12a0e3d69eecf67d9a7a0557ada13eafc636fa7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 11 Sep 2018 22:19:50 GMT
-ADD file:25c10b1d1b41d46a1827ad0b0d2389c24df6d31430005ff4e9a2d84ea23ebd42 in / 
-# Tue, 11 Sep 2018 22:19:50 GMT
+# Fri, 21 Dec 2018 00:21:29 GMT
+ADD file:2ff00caea4e83dfade726ca47e3c795a1e9acb8ac24e392785c474ecf9a621f2 in / 
+# Fri, 21 Dec 2018 00:21:30 GMT
 CMD ["/bin/sh"]
-# Fri, 14 Dec 2018 18:19:25 GMT
+# Fri, 21 Dec 2018 01:00:21 GMT
 RUN addgroup -g 1000 -S crate     && adduser -u 1000 -G crate -h /crate -S crate
-# Fri, 14 Dec 2018 18:19:45 GMT
+# Fri, 21 Dec 2018 01:00:32 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         curl         coreutils     && apk add --no-cache --virtual .build-deps         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-3.1.3.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-3.1.3.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-3.1.3.tar.gz.asc crate-3.1.3.tar.gz     && rm -rf "$GNUPGHOME" crate-3.1.3.tar.gz.asc     && tar -xf crate-3.1.3.tar.gz -C /crate --strip-components=1     && rm crate-3.1.3.tar.gz     && ln -sf /usr/bin/python3 /usr/bin/python     && apk del .build-deps
-# Fri, 14 Dec 2018 18:19:50 GMT
+# Fri, 21 Dec 2018 01:00:35 GMT
 RUN apk add --no-cache --virtual .build-deps         gnupg     && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.24.2    && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.24.2.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crash_standalone_0.24.2.asc crash_standalone_0.24.2     && rm -rf "$GNUPGHOME" crash_standalone_0.24.2.asc     && mv crash_standalone_0.24.2 /usr/local/bin/crash     && chmod +x /usr/local/bin/crash     && apk del .build-deps
-# Fri, 14 Dec 2018 18:19:50 GMT
+# Fri, 21 Dec 2018 01:00:35 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 14 Dec 2018 18:19:50 GMT
+# Fri, 21 Dec 2018 01:00:36 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 14 Dec 2018 18:19:50 GMT
+# Fri, 21 Dec 2018 01:00:36 GMT
 HEALTHCHECK &{["CMD-SHELL" "curl --max-time 25 $(hostname):4200 || exit 1"] "30s" "30s" "0s" '\x00'}
-# Fri, 14 Dec 2018 18:19:51 GMT
+# Fri, 21 Dec 2018 01:00:36 GMT
 RUN mkdir -p /data/data /data/log
-# Fri, 14 Dec 2018 18:19:51 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 VOLUME [/data]
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 WORKDIR /data
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 EXPOSE 4200 4300 5432
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.label-schema.schema-version=1.0 org.label-schema.build-date=2018-12-06T23:39:49.888248104+00:00 org.label-schema.name=crate org.label-schema.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time. org.label-schema.url=https://crate.io/products/cratedb/ org.label-schema.vcs-url=https://github.com/crate/docker-crate org.label-schema.vendor=Crate.io org.label-schema.version=3.1.3
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 COPY --chown=1000:0file:bff8d2f33b7a44d36fcd66fc7e7d92b0ee463d0eb0df2a56e42511d4f1b3e9b2 in /crate/config/crate.yml 
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:37 GMT
 COPY --chown=1000:0file:0d0763ba6bbc9b78b4a05b228e1f3ca6b2b3b56aefaf888ab848f021062291d1 in /crate/config/log4j2.properties 
-# Fri, 14 Dec 2018 18:19:52 GMT
+# Fri, 21 Dec 2018 01:00:38 GMT
 COPY file:dcdba4de3b5ee86e3ed391c361c223b50022f9865a89a53d53f5c45521bd6989 in / 
-# Fri, 14 Dec 2018 18:19:53 GMT
+# Fri, 21 Dec 2018 01:00:38 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 14 Dec 2018 18:19:53 GMT
+# Fri, 21 Dec 2018 01:00:38 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:4fe2ade4980c2dda4fc95858ebb981489baec8c1e4bd282ab1c3560be8ff9bde`  
-		Last Modified: Tue, 11 Sep 2018 22:21:23 GMT  
-		Size: 2.2 MB (2206931 bytes)  
+	-	`sha256:cd784148e3483c2c86c50a48e535302ab0288bebd587accf40b714fffd0646b3`  
+		Last Modified: Fri, 21 Dec 2018 00:23:44 GMT  
+		Size: 2.2 MB (2207025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2fa2aebfc583d590aab480446de1cc1b0e687f08c1d6a1e0a7e479d6fe281c0`  
-		Last Modified: Fri, 14 Dec 2018 18:20:27 GMT  
-		Size: 1.2 KB (1229 bytes)  
+	-	`sha256:69f9be2a1317187a4a965a34ea54ef71816a72cc4a215f84a3a843ea3ab552da`  
+		Last Modified: Fri, 21 Dec 2018 01:03:41 GMT  
+		Size: 1.2 KB (1231 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6386a492d80fdf529b42f9b1b47ebc20cd99add8855fa34df35d6d4fb6bbd3ea`  
-		Last Modified: Fri, 14 Dec 2018 18:20:41 GMT  
-		Size: 126.9 MB (126868996 bytes)  
+	-	`sha256:9582396e681d00a9131e8b6dadafa33ff033e86312f5f26003a4bd91b6be9ca0`  
+		Last Modified: Fri, 21 Dec 2018 01:03:52 GMT  
+		Size: 126.9 MB (126868975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82fbb6748470d2d4265caec1d0af60ea30f03a7918e869d068c1471dc8fa1533`  
-		Last Modified: Fri, 14 Dec 2018 18:20:27 GMT  
-		Size: 1.5 MB (1457863 bytes)  
+	-	`sha256:ff2d42837bd3a58a9e20e55a4b1912f8678bbc0c730a8e2facb23c122c543dc7`  
+		Last Modified: Fri, 21 Dec 2018 01:03:40 GMT  
+		Size: 1.5 MB (1457855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d58e12d8cb857fb0f4f3cd84054bc1aa461eed72254482bb3868a4ced85ebf6c`  
-		Last Modified: Fri, 14 Dec 2018 18:20:26 GMT  
-		Size: 125.0 B  
+	-	`sha256:13f706df6af07260af7354c8f0523f5dbf1f2720092e0990ad87ee4387f01940`  
+		Last Modified: Fri, 21 Dec 2018 01:03:40 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5aa1680e85936e70d191acc4d9c28f4c2803c37680e96c230195adc9ab84b7`  
-		Last Modified: Fri, 14 Dec 2018 18:20:26 GMT  
-		Size: 267.0 B  
+	-	`sha256:a4fadd8c69ef18c1a4f046cc9853200731d878e0d72d568b7c6de9de4f99f12a`  
+		Last Modified: Fri, 21 Dec 2018 01:03:40 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8880a2a301ba9f04f5ac405eec0010f2e164e9be245d75f4e034b5ed588254db`  
-		Last Modified: Fri, 14 Dec 2018 18:20:27 GMT  
-		Size: 948.0 B  
+	-	`sha256:868321e829d4f009cb4d264b755f60cdcd9c5e522f346a68973c9ab958bdd360`  
+		Last Modified: Fri, 21 Dec 2018 01:03:40 GMT  
+		Size: 945.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3e233b7d9490744f3cc5f4c811cda1aca0a197e77a82de1f7b746c49af31f2b`  
-		Last Modified: Fri, 14 Dec 2018 18:20:27 GMT  
+	-	`sha256:80e85d032b9f762fb03dd0a21e2e565fdac930a352b991e2b566f3d5c423b2b5`  
+		Last Modified: Fri, 21 Dec 2018 01:03:40 GMT  
 		Size: 548.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
