@@ -8,7 +8,7 @@
 ## `vault:1.0.1`
 
 ```console
-$ docker pull vault@sha256:09a7e21f3dec95b880de20034d2d2a21c0b71e6d2e1bbdc1acaa7ac850ed62ad
+$ docker pull vault@sha256:f071c40ab5f325da52a07376db946a05d8a3472b1b7e94c007de4cbd4c9c8f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20,64 +20,64 @@ $ docker pull vault@sha256:09a7e21f3dec95b880de20034d2d2a21c0b71e6d2e1bbdc1acaa7
 ### `vault:1.0.1` - linux; amd64
 
 ```console
-$ docker pull vault@sha256:d82671bb1753f8992dd04aadd9801e0d4f04f6ab5fcdf69e1ba217b7cfd6755a
+$ docker pull vault@sha256:a80e01caaa439c25d7e0b04fca6d5ec1cc8b93ed8217fc6084a5489f3efcb118
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (39047966 bytes)**  
+-	Total Size: **39.0 MB (39048007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f82b637a3c724013f0a3dc73c12dc8002efad1abd4d7e87e6c6b3d2392b5c16`
+-	Image ID: `sha256:afec97cfa8b3e6945be120946b9dc32eb07533e6c98707fd769b77fb64fb12b7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Tue, 11 Sep 2018 22:19:50 GMT
-ADD file:25c10b1d1b41d46a1827ad0b0d2389c24df6d31430005ff4e9a2d84ea23ebd42 in / 
-# Tue, 11 Sep 2018 22:19:50 GMT
+# Fri, 21 Dec 2018 00:21:29 GMT
+ADD file:2ff00caea4e83dfade726ca47e3c795a1e9acb8ac24e392785c474ecf9a621f2 in / 
+# Fri, 21 Dec 2018 00:21:30 GMT
 CMD ["/bin/sh"]
-# Thu, 20 Dec 2018 00:50:28 GMT
+# Fri, 21 Dec 2018 00:47:02 GMT
 ENV VAULT_VERSION=1.0.1
-# Thu, 20 Dec 2018 00:50:29 GMT
+# Fri, 21 Dec 2018 00:47:03 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Thu, 20 Dec 2018 00:50:39 GMT
+# Fri, 21 Dec 2018 00:47:11 GMT
 RUN set -eux;     apk add --no-cache ca-certificates gnupg openssl libcap su-exec dumb-init tzdata &&     apkArch="$(apk --print-arch)";     case "$apkArch" in         armhf) ARCH='arm' ;;         aarch64) ARCH='arm64' ;;         x86_64) ARCH='amd64' ;;         x86) ARCH='386' ;;         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;;     esac &&     VAULT_GPGKEY=91A6E7F85D05C65630BEF18951852D87348FFC4C;     found='';     for server in         hkp://p80.pool.sks-keyservers.net:80         hkp://keyserver.ubuntu.com:80         hkp://pgp.mit.edu:80     ; do         echo "Fetching GPG key $VAULT_GPGKEY from $server";         gpg --batch --keyserver "$server" --recv-keys "$VAULT_GPGKEY" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $VAULT_GPGKEY" && exit 1;     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_${ARCH}.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     gpgconf --kill dirmngr &&     gpgconf --kill gpg-agent &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Thu, 20 Dec 2018 00:50:40 GMT
+# Fri, 21 Dec 2018 00:47:12 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Thu, 20 Dec 2018 00:50:40 GMT
+# Fri, 21 Dec 2018 00:47:13 GMT
 VOLUME [/vault/logs]
-# Thu, 20 Dec 2018 00:50:40 GMT
+# Fri, 21 Dec 2018 00:47:13 GMT
 VOLUME [/vault/file]
-# Thu, 20 Dec 2018 00:50:41 GMT
+# Fri, 21 Dec 2018 00:47:13 GMT
 EXPOSE 8200
-# Thu, 20 Dec 2018 00:50:41 GMT
+# Fri, 21 Dec 2018 00:47:13 GMT
 COPY file:2cf778f577f27333fdd34a8c9bbb529a6bc3f4b4f6599e38b0af9d428091c36f in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 20 Dec 2018 00:50:41 GMT
+# Fri, 21 Dec 2018 00:47:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 20 Dec 2018 00:50:42 GMT
+# Fri, 21 Dec 2018 00:47:15 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:4fe2ade4980c2dda4fc95858ebb981489baec8c1e4bd282ab1c3560be8ff9bde`  
-		Last Modified: Tue, 11 Sep 2018 22:21:23 GMT  
-		Size: 2.2 MB (2206931 bytes)  
+	-	`sha256:cd784148e3483c2c86c50a48e535302ab0288bebd587accf40b714fffd0646b3`  
+		Last Modified: Fri, 21 Dec 2018 00:23:44 GMT  
+		Size: 2.2 MB (2207025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df5f5a7b65fa1277ca5b08144e5992a642de46bded212d7890527c60c450e286`  
-		Last Modified: Thu, 20 Dec 2018 00:50:51 GMT  
-		Size: 1.3 KB (1252 bytes)  
+	-	`sha256:212f40d6b4509fcf9b183aafb5457b7ab2bab7067571cac4dc0954b351cf0d19`  
+		Last Modified: Fri, 21 Dec 2018 00:47:25 GMT  
+		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b8bba7ecf3bb555c99ab8a492a1b3ebfc2321588f67681f0c5ebbaff14c19a7`  
-		Last Modified: Thu, 20 Dec 2018 00:51:01 GMT  
-		Size: 36.8 MB (36837834 bytes)  
+	-	`sha256:c3009ff512547220a3d1993d37d3fa74acd26896f1a00e0cfcef5abefff1f65e`  
+		Last Modified: Fri, 21 Dec 2018 00:47:34 GMT  
+		Size: 36.8 MB (36837784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16157b9e553bd0ea151ec736ecf8ada1c7bf54cccf3ce4e61cf8980b0bd936d`  
-		Last Modified: Thu, 20 Dec 2018 00:50:51 GMT  
-		Size: 155.0 B  
+	-	`sha256:d8862af4a2e31085f15fade65b46498bf02ab4f1c532600cd2e9fbc5598b2a92`  
+		Last Modified: Fri, 21 Dec 2018 00:47:26 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce640c5bf7f229948576c1703d6fa9537fa19660cc3752d6e76e7e10d5421942`  
-		Last Modified: Thu, 20 Dec 2018 00:50:51 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:03dae74736fd4975b77f63d57c1c1b585e4d2ee2ece35e54d123b1522d320d80`  
+		Last Modified: Fri, 21 Dec 2018 00:47:25 GMT  
+		Size: 1.8 KB (1791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `vault:1.0.1` - linux; arm variant v6
