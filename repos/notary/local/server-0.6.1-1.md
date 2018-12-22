@@ -1,9 +1,9 @@
-# `notary:server-0.6.1`
+# `notary:server-0.6.1-1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbd815c2ee5000846aab39d323cdccc6f2f0ee66a6351e667dfdc4a3c2c34565`
-- Created: `2018-11-16T20:20:47.736341552Z`
+- Image ID: `sha256:d8fbf75f1e1523bf2458bc266b9f282b34321ece7be66851395d777843fee81c`
+- Created: `2018-12-21T05:00:23.227088518Z`
 - Virtual Size: ~ 21.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
