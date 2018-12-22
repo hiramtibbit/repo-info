@@ -536,10 +536,6 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/dash/0.5.10.2-1/
-
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
@@ -708,20 +704,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.dsc' e2fsprogs_1.44.4-2.dsc 2494 SHA256:fd92d2d786434c29b07932ca3d4e778345f022aa4221c8c4387744e5723854ac
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.debian.tar.xz' e2fsprogs_1.44.4-2.debian.tar.xz 80640 SHA256:b72fdfbda6b96338432222d25c9be639e0d800d50533fa345f32789925282d5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/
 
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.44.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.44.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ed=1.14.2-2`
 
@@ -1054,10 +1043,6 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gdbm/1.18.1-1/
 
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
@@ -2707,10 +2692,6 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/lsb/9.20170808/
-
 
 ### `dpkg` source package: `lz4=1.8.2-1`
 
@@ -2983,10 +2964,6 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nghttp2/1.34.0-1/
 
 
 ### `dpkg` source package: `nlme=3.1.137-1`
@@ -3811,10 +3788,6 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sqlite3/3.25.3-1/
-
 
 ### `dpkg` source package: `survival=2.43-1-1`
 
@@ -3909,10 +3882,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tcl8.6/8.6.8+dfsg-4/
 
 
 ### `dpkg` source package: `tex-gyre=20180621-2`
