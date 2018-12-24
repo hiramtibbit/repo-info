@@ -4344,14 +4344,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-139.165
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.dsc' linux_4.4.0-139.165.dsc 9418 SHA256:02fec0ccbe2445ce0e3b4a42ef1b20314b0c31c114ea508c76485134df1db2ce
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-139.165.diff.gz' linux_4.4.0-139.165.diff.gz 14968503 SHA256:8d11f7bf728964a9e0d087cf5e340f4f0e7713bba06af0ba27044c3307171949
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
