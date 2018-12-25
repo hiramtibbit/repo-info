@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-stretch`
 
 ```console
-$ docker pull gazebo@sha256:cc73d501345359e9e5038d82e004b6b66e9cf7d46c18e146e6bbcce161f02c9c
+$ docker pull gazebo@sha256:d9f7e3a30a6f504c9aa68191ec04d061ce7220303150747e32bf334da4532b50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -139,14 +139,14 @@ CMD ["gzserver"]
 ### `gazebo:gzserver9-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull gazebo@sha256:e1141a72c88a373cc5612b9fb938b9ab2d3c74562159f8254fec436d07a78b64
+$ docker pull gazebo@sha256:dbf9f3ea625d23e1e933f7fcb1f9506ec7e1acbc9242824ae832a3a7d633b405
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.0 MB (328023659 bytes)**  
+-	Total Size: **328.0 MB (328045332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ad404c8a8e456fcfa47212e712b9d5e8d123b3ae46050c129fc18aa24b9c35e`
+-	Image ID: `sha256:db3b4da2c699cecd3da54150683a58924f83127baf09aaf2d14267b8d8e998a4`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -161,15 +161,15 @@ RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-relea
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Tue, 27 Nov 2018 10:02:57 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 27 Nov 2018 10:12:11 GMT
-RUN apt-get update && apt-get install -q -y     gazebo9=9.5.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 27 Nov 2018 10:12:13 GMT
-EXPOSE 11345/tcp
-# Tue, 27 Nov 2018 10:12:14 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
-# Tue, 27 Nov 2018 10:12:15 GMT
+# Tue, 25 Dec 2018 10:20:19 GMT
+RUN apt-get update && apt-get install -q -y     gazebo9=9.6.0-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 25 Dec 2018 10:20:26 GMT
+EXPOSE 11345
+# Tue, 25 Dec 2018 10:20:26 GMT
+COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
+# Tue, 25 Dec 2018 10:20:27 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 27 Nov 2018 10:12:16 GMT
+# Tue, 25 Dec 2018 10:20:29 GMT
 CMD ["gzserver"]
 ```
 
@@ -190,11 +190,11 @@ CMD ["gzserver"]
 		Last Modified: Tue, 27 Nov 2018 10:25:58 GMT  
 		Size: 5.0 KB (4989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1483983f083295c6536dae0c4be99b9c35e1ff04ed82e2236611b4187cd0cd1`  
-		Last Modified: Tue, 27 Nov 2018 10:27:18 GMT  
-		Size: 265.2 MB (265166050 bytes)  
+	-	`sha256:47978ab10077d02db49db4b178e05a9d36cc7f936b80a15077a5b6114c742f39`  
+		Last Modified: Tue, 25 Dec 2018 10:38:34 GMT  
+		Size: 265.2 MB (265187722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b5594425e594971162f423946e972b707c8f46f08bb13da35c31d24b89d986a`  
-		Last Modified: Tue, 27 Nov 2018 10:25:59 GMT  
-		Size: 187.0 B  
+	-	`sha256:5d3714e88379ff88e8bf239256c19a8b0625a7c394262ee387192c6861612000`  
+		Last Modified: Tue, 25 Dec 2018 10:37:14 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

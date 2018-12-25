@@ -1,7 +1,7 @@
 ## `gazebo:latest`
 
 ```console
-$ docker pull gazebo@sha256:4e12c89d3a045e4e16c370ae618e0b8eb21e70583fe4cd0d1e7ca6bce4b2a78c
+$ docker pull gazebo@sha256:edf72127222c247d1cd797573aa28e9f982b708daff88087b5cd786c93430bec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -105,14 +105,14 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.6.0-1*     && r
 ### `gazebo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull gazebo@sha256:9f84e674df37d87ed6a7e7ed0fdc9578bee6896a2db05cbe4461ff086a3bbefd
+$ docker pull gazebo@sha256:3e244d806ff5bed94e4b0564cad7c03900bbd8bb632638f029267b0222a1fb3d
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **495.2 MB (495166876 bytes)**  
+-	Total Size: **497.1 MB (497079387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86e6c414d94ee7d0acb02845499029a870b1dc56b35d6eab79cc20e254c241bb`
+-	Image ID: `sha256:b38ae3c77f9b5341469d90faabad65f64cac56efcc5ddae9cde7822879b44f05`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -135,18 +135,18 @@ RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-relea
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Tue, 27 Nov 2018 09:43:53 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 27 Nov 2018 09:54:18 GMT
-RUN apt-get update && apt-get install -q -y     gazebo9=9.5.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 27 Nov 2018 09:54:20 GMT
-EXPOSE 11345/tcp
-# Tue, 27 Nov 2018 09:54:21 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
-# Tue, 27 Nov 2018 09:54:21 GMT
+# Tue, 25 Dec 2018 09:56:31 GMT
+RUN apt-get update && apt-get install -q -y     gazebo9=9.6.0-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 25 Dec 2018 09:56:34 GMT
+EXPOSE 11345
+# Tue, 25 Dec 2018 09:56:34 GMT
+COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
+# Tue, 25 Dec 2018 09:56:35 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 27 Nov 2018 09:54:22 GMT
+# Tue, 25 Dec 2018 09:56:36 GMT
 CMD ["gzserver"]
-# Tue, 27 Nov 2018 10:02:20 GMT
-RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.5.0-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 25 Dec 2018 10:07:55 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.6.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -182,15 +182,15 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.5.0-1*     && r
 		Last Modified: Tue, 27 Nov 2018 10:21:15 GMT  
 		Size: 5.4 KB (5441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a39013122ac18e9d7055205163cc94fbdc953996820b2464029fd950984e8daf`  
-		Last Modified: Tue, 27 Nov 2018 10:23:19 GMT  
-		Size: 235.5 MB (235478260 bytes)  
+	-	`sha256:3bb1cce1e906cf2eef8c30083705028bedc6808811dee7a32db1da5b92241a0f`  
+		Last Modified: Tue, 25 Dec 2018 10:35:20 GMT  
+		Size: 235.6 MB (235559623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbdc1716fcb47829d52a9b09b64f1e6dde62842761d824ab5db61dd99cc9d794`  
-		Last Modified: Tue, 27 Nov 2018 10:21:15 GMT  
-		Size: 187.0 B  
+	-	`sha256:dbfcb04bbb40ffabdea3a38f51abf6e088d50d38e77c7226b8235de356fe0f1d`  
+		Last Modified: Tue, 25 Dec 2018 10:34:07 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe4a203d5f59fb639c3cdaa23054a803232c25d1c3326a652cdf08d49265020a`  
-		Last Modified: Tue, 27 Nov 2018 10:25:28 GMT  
-		Size: 216.1 MB (216117060 bytes)  
+	-	`sha256:a4d0e8d5e95103ac7724a4e6d65087fd467f5361c03d9846202d393d23b87f2a`  
+		Last Modified: Tue, 25 Dec 2018 10:37:00 GMT  
+		Size: 217.9 MB (217948207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
