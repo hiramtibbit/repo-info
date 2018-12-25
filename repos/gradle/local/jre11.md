@@ -827,20 +827,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dconf=0.30.1-1
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.dsc' dconf_0.30.1-1.dsc 2468 SHA256:3e08cae2c8cbbef92a4ed67e60b6195ec7e58d6ffe6f2726a1d09f75f0955c79
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1.orig.tar.xz' dconf_0.30.1.orig.tar.xz 104376 SHA256:549a3a7cc3881318107dc48a7b02ee8f88c9127acaf2d47f7724f78a8f6d02b7
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.debian.tar.xz' dconf_0.30.1-1.debian.tar.xz 9524 SHA256:45fa89e86146ffd9f32d670434fd2b4a86fbda5d0f631d303582b3ac5f8e0f61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dconf/0.30.1-1/
 
-- https://sources.debian.net/src/dconf/0.30.1-1/ (for browsing the source)
-- https://sources.debian.net/src/dconf/0.30.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dconf/0.30.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
