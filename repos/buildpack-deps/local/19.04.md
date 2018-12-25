@@ -991,14 +991,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.38.0+dfsg-6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.38.0+dfsg-6.dsc' gdk-pixbuf_2.38.0+dfsg-6.dsc 2903 SHA256:074a11cdc4ef071c8213a2eca24865e274abb0830e5687e003aac3a01517b499
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.38.0+dfsg.orig.tar.xz' gdk-pixbuf_2.38.0+dfsg.orig.tar.xz 5148368 SHA256:08d9cd6e87c147cc01ec2b0b5925490386e012ea8c02a6553573a90933bdfc7d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.38.0+dfsg-6.debian.tar.xz' gdk-pixbuf_2.38.0+dfsg-6.debian.tar.xz 17388 SHA256:e0fadd61649fa33a9df04306d25aa9581c01c568fb2ebc331d90eb8f28fffecb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdk-pixbuf/2.38.0+dfsg-6/
+
 
 ### `dpkg` source package: `geoip=1.6.12-1`
 
@@ -1299,14 +1298,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-harfbuzz-0.0/copyright`, `/usr/sh
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=2.1.1-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.1.1-1build1.dsc' harfbuzz_2.1.1-1build1.dsc 2770 SHA256:f976a384ed259ab8d2d3631c5074ec6b1086980260640e102dc1e85d9716bbea
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.1.1.orig.tar.bz2' harfbuzz_2.1.1.orig.tar.bz2 4386396 SHA256:83bf5d552df72c52969332f294cd97d8f6b46b77b41b61346ca56ebb81884e14
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.1.1-1build1.debian.tar.xz' harfbuzz_2.1.1-1build1.debian.tar.xz 9552 SHA256:204eaa8a41afb5b5b23d24a1cf8b8bc62b37da31d4f6fcdef9201690ee8b76d8
-```
 
 ### `dpkg` source package: `heimdal=7.5.0+dfsg-2.1`
 
@@ -3576,14 +3570,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.5-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.5-2.dsc' sed_4.5-2.dsc 1855 SHA256:0262c80cbca0033f729dd4859284d0656416b072945c7ff4e5b75c2e169e300b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.5.orig.tar.xz' sed_4.5.orig.tar.xz 1274252 SHA256:7aad73c8839c2bdadca9476f884d2953cdace9567ecd0d90f9959f229d146b40
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.5-2.debian.tar.xz' sed_4.5-2.debian.tar.xz 59836 SHA256:a03c68be337b6435ed02fce4f06998bfaf930986aa09991f968b256cff5851d8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sed/4.5-2/
+
 
 ### `dpkg` source package: `sensible-utils=0.0.12`
 
