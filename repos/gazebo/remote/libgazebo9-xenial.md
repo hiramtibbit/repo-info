@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:1665921a2cda14a3f20c562e68593457b2930a3c22a8f601114915de0cd2caf6
+$ docker pull gazebo@sha256:b38396fabe8df73e5c666b1f2a694e2d9e4b4f12057715c16d27b84e42a0ca53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gazebo@sha256:1665921a2cda14a3f20c562e68593457b2930a3c22a8f6011149
 ### `gazebo:libgazebo9-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:efb1aee30e220f6567879dfaaf98b9d3126df24c1fc945db3b901beb379f18d9
+$ docker pull gazebo@sha256:4ae1fc681b392f5710db27365c199d15e1c44944f42026eb4c9fdf51ce2d4d12
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.3 MB (521274901 bytes)**  
+-	Total Size: **525.1 MB (525125679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:501fc2197492389e6da2441b21cd21e73f0acef900134fcfb74d932ad269d4a3`
+-	Image ID: `sha256:bcc838b7215c300f6014a1228976a09956371bf6b29cb041078ef5b60805df76`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -39,18 +39,18 @@ RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     lsb-relea
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Mon, 19 Nov 2018 21:55:25 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 27 Nov 2018 00:30:30 GMT
-RUN apt-get update && apt-get install -q -y     gazebo9=9.5.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 27 Nov 2018 00:30:31 GMT
-EXPOSE 11345/tcp
-# Tue, 27 Nov 2018 00:30:31 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
-# Tue, 27 Nov 2018 00:30:31 GMT
+# Mon, 24 Dec 2018 23:22:22 GMT
+RUN apt-get update && apt-get install -q -y     gazebo9=9.6.0-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 24 Dec 2018 23:22:22 GMT
+EXPOSE 11345
+# Mon, 24 Dec 2018 23:22:22 GMT
+COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
+# Mon, 24 Dec 2018 23:22:22 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 27 Nov 2018 00:30:32 GMT
+# Mon, 24 Dec 2018 23:22:23 GMT
 CMD ["gzserver"]
-# Tue, 27 Nov 2018 00:36:01 GMT
-RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.5.0-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 24 Dec 2018 23:25:26 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.6.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -82,15 +82,15 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.5.0-1*     && r
 		Last Modified: Mon, 19 Nov 2018 22:15:47 GMT  
 		Size: 5.5 KB (5522 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75afba3034be5e7c4214da5fc13d77711075600676b4d3edf40c330bae0db66a`  
-		Last Modified: Tue, 27 Nov 2018 00:53:33 GMT  
-		Size: 218.9 MB (218934609 bytes)  
+	-	`sha256:307ef9face1550ec9d53cfc3005666df52a4ab43293f260da299ea1cdcf41366`  
+		Last Modified: Mon, 24 Dec 2018 23:37:05 GMT  
+		Size: 219.6 MB (219583931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0279c0375e40a4242d4e2a9445bb46b2b90eccb15f624e2995a7ff02ce46a119`  
-		Last Modified: Tue, 27 Nov 2018 00:52:51 GMT  
-		Size: 187.0 B  
+	-	`sha256:8c780d94ed14c6aabe8d18256423604c572b437cf38c9846c0e4e132f528966f`  
+		Last Modified: Mon, 24 Dec 2018 23:36:34 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb5d2ab5de7b2fadd485711c60cc8980782e572ba04219dd7900ae35797e76a5`  
-		Last Modified: Tue, 27 Nov 2018 00:54:53 GMT  
-		Size: 242.2 MB (242246924 bytes)  
+	-	`sha256:ac38146c8ed79c57c009750213424e109ac35b7e8d57ab3734083e3fc3ed7797`  
+		Last Modified: Mon, 24 Dec 2018 23:37:50 GMT  
+		Size: 245.4 MB (245448379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
