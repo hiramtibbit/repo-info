@@ -1,10 +1,10 @@
-# `crate:3.1.3`
+# `crate:3.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9fcb90f09c0ead11112f54c2a12a0e3d69eecf67d9a7a0557ada13eafc636fa7`
-- Created: `2018-12-21T01:00:38.502979256Z`
-- Virtual Size: ~ 198.82 Mb  
+- Image ID: `sha256:74ee34098008ab908da5e7a899071b8f18c031d840d14b4d36f09b340ca9a601`
+- Created: `2018-12-24T22:21:23.570792877Z`
+- Virtual Size: ~ 198.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
