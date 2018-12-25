@@ -167,7 +167,7 @@ CMD ["/bin/bash"]
 ## `photon:3.0`
 
 ```console
-$ docker pull photon@sha256:c202e72eac066970c7a4ad5cd650315251b14817ba8aeb2095c11d7c69c70c11
+$ docker pull photon@sha256:2d4053badba180d016915bc4ea39cd403594de235dbcbf67530e96e849ad851b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -206,35 +206,35 @@ CMD ["/bin/bash"]
 ### `photon:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:cf5bc20ed72912936e771dfaaead904de092a5dd32ecb81552a3b61d3b023cfd
+$ docker pull photon@sha256:45dd7fb2e6063948bef136d94a57254424165e6aa294d460883769c2c72a9555
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12458797 bytes)**  
+-	Total Size: **12.5 MB (12474859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb0af95bf7c3d50d7db8d8f113249f943951d59e8c39af4ec3844b3c3cc8ed7`
+-	Image ID: `sha256:534bbe7cc3c00a6034087630175d152bb139c0d3f7c22caafcc8c243e1279a74`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 18 Dec 2018 10:33:39 GMT
-ADD file:da67214a4c6116de94e689dfba898a7fdff1b352cbf51b641253f1a0fcfaa70a in / 
-# Tue, 18 Dec 2018 10:33:41 GMT
-LABEL name=Photon OS 3.0 Base Image vendor=VMware build-date=20181030
-# Tue, 18 Dec 2018 10:33:42 GMT
+# Tue, 25 Dec 2018 10:30:41 GMT
+ADD file:a3def2eda528cf4d46433e6031c73838ef2b73bd1a193496928de5c827c24e2b in / 
+# Tue, 25 Dec 2018 10:30:42 GMT
+LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20181218
+# Tue, 25 Dec 2018 10:30:44 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:2d0fc10711e83c04d85c0ef8bc3d071653a8f91dda0fb11bd3d31a8e3e911840`  
-		Last Modified: Thu, 01 Nov 2018 08:45:46 GMT  
-		Size: 12.5 MB (12458797 bytes)  
+	-	`sha256:c3bb289f733044afad15170bf0b3503ee612f5249210759b72540aaa7bf38633`  
+		Last Modified: Tue, 25 Dec 2018 10:31:01 GMT  
+		Size: 12.5 MB (12474859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `photon:3.0-20181218`
 
 ```console
-$ docker pull photon@sha256:c202e72eac066970c7a4ad5cd650315251b14817ba8aeb2095c11d7c69c70c11
+$ docker pull photon@sha256:2d4053badba180d016915bc4ea39cd403594de235dbcbf67530e96e849ad851b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -273,29 +273,29 @@ CMD ["/bin/bash"]
 ### `photon:3.0-20181218` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:cf5bc20ed72912936e771dfaaead904de092a5dd32ecb81552a3b61d3b023cfd
+$ docker pull photon@sha256:45dd7fb2e6063948bef136d94a57254424165e6aa294d460883769c2c72a9555
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12458797 bytes)**  
+-	Total Size: **12.5 MB (12474859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb0af95bf7c3d50d7db8d8f113249f943951d59e8c39af4ec3844b3c3cc8ed7`
+-	Image ID: `sha256:534bbe7cc3c00a6034087630175d152bb139c0d3f7c22caafcc8c243e1279a74`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 18 Dec 2018 10:33:39 GMT
-ADD file:da67214a4c6116de94e689dfba898a7fdff1b352cbf51b641253f1a0fcfaa70a in / 
-# Tue, 18 Dec 2018 10:33:41 GMT
-LABEL name=Photon OS 3.0 Base Image vendor=VMware build-date=20181030
-# Tue, 18 Dec 2018 10:33:42 GMT
+# Tue, 25 Dec 2018 10:30:41 GMT
+ADD file:a3def2eda528cf4d46433e6031c73838ef2b73bd1a193496928de5c827c24e2b in / 
+# Tue, 25 Dec 2018 10:30:42 GMT
+LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20181218
+# Tue, 25 Dec 2018 10:30:44 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:2d0fc10711e83c04d85c0ef8bc3d071653a8f91dda0fb11bd3d31a8e3e911840`  
-		Last Modified: Thu, 01 Nov 2018 08:45:46 GMT  
-		Size: 12.5 MB (12458797 bytes)  
+	-	`sha256:c3bb289f733044afad15170bf0b3503ee612f5249210759b72540aaa7bf38633`  
+		Last Modified: Tue, 25 Dec 2018 10:31:01 GMT  
+		Size: 12.5 MB (12474859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `photon:dev`
