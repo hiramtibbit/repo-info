@@ -1,10 +1,10 @@
-# `groovy:2.5.4-jre11`
+# `groovy:2.5.5-jre11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77dc2e2315709a107f333b87e71af9be15346a2e82a7b20e7390f60099cbab04`
-- Created: `2018-12-12T02:51:31.477108943Z`
-- Virtual Size: ~ 650.64 Mb  
+- Image ID: `sha256:40468d5f3b034f9e663a5f2b8f20ced9b525fd1c9e39c185d32b4b90ccf68e43`
+- Created: `2018-12-24T22:25:44.282534809Z`
+- Virtual Size: ~ 650.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=11.0.1`
   - `JAVA_DEBIAN_VERSION=11.0.1+13-3`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.4`
+  - `GROOVY_VERSION=2.5.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -827,20 +827,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dconf=0.30.1-1
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.dsc' dconf_0.30.1-1.dsc 2468 SHA256:3e08cae2c8cbbef92a4ed67e60b6195ec7e58d6ffe6f2726a1d09f75f0955c79
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1.orig.tar.xz' dconf_0.30.1.orig.tar.xz 104376 SHA256:549a3a7cc3881318107dc48a7b02ee8f88c9127acaf2d47f7724f78a8f6d02b7
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.debian.tar.xz' dconf_0.30.1-1.debian.tar.xz 9524 SHA256:45fa89e86146ffd9f32d670434fd2b4a86fbda5d0f631d303582b3ac5f8e0f61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dconf/0.30.1-1/
 
-- https://sources.debian.net/src/dconf/0.30.1-1/ (for browsing the source)
-- https://sources.debian.net/src/dconf/0.30.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dconf/0.30.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -1284,20 +1277,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.58.0-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0-1.dsc' glib-networking_2.58.0-1.dsc 2485 SHA256:4b43a5b22f358ff1bb03bb02373c5fc5c61c8de0e9ea99793383ac0c8e9cd52d
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0.orig.tar.xz' glib-networking_2.58.0.orig.tar.xz 172632 SHA256:bdfa0255e031b8ee003cc283002536b77ee76450105f1dc6ab066b9bf4330068
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0-1.debian.tar.xz' glib-networking_2.58.0-1.debian.tar.xz 8516 SHA256:d8dee3c695defc9c100ecceaa4c1293979feb51581736dc4b88fd2f18e65fbf2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.58.0-1/
 
-- https://sources.debian.net/src/glib-networking/2.58.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.58.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.58.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
 
@@ -1374,11 +1360,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/
 
 
-### `dpkg` source package: `gnupg2=2.2.11-1`
+### `dpkg` source package: `gnupg2=2.2.12-1`
 
 Binary Packages:
 
-- `gpgv=2.2.11-1`
+- `gpgv=2.2.12-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1398,18 +1384,18 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.11-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.11-1.dsc' gnupg2_2.2.11-1.dsc 3136 SHA256:801f2f70ff85aee23f1c90c96701316f2294033bd781ed8436f270f4e68d42dd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.11.orig.tar.bz2' gnupg2_2.2.11.orig.tar.bz2 6652480 SHA256:496c3e123ef53f35436ddccca58e82acaa901ca4e21174e77386c0cea0c49cd9
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.11.orig.tar.bz2.asc' gnupg2_2.2.11.orig.tar.bz2.asc 534 SHA256:e4803cb7ea52bf1da6cdfbd52ca33b408663962821dc2a247db65fd6092b8ccc
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.11-1.debian.tar.xz' gnupg2_2.2.11-1.debian.tar.xz 64288 SHA256:45337cd881a25bdc72541f90f25bc35d9aea099e5c814da72d05168da23842a0
+$ apt-get source -qq --print-uris gnupg2=2.2.12-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12-1.dsc' gnupg2_2.2.12-1.dsc 3139 SHA256:480cba4feb4466b29e5d69f15ad49361722a11bb59ce311c091f6d86004a7b22
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2' gnupg2_2.2.12.orig.tar.bz2 6682303 SHA256:db030f8b4c98640e91300d36d516f1f4f8fe09514a94ea9fc7411ee1a34082cb
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2.asc' gnupg2_2.2.12.orig.tar.bz2.asc 3204 SHA256:97c8dc25c4c2fe9a39b2ffd81b65b6f3dc4ad359c9a81ca4bb9b4bdeb6167c60
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12-1.debian.tar.xz' gnupg2_2.2.12-1.debian.tar.xz 63368 SHA256:a48bbabcb393459fecd2128304c147d093143784913b302cff1181718e4a82dc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.11-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.11-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.12-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.12-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.19-1`
 
@@ -1706,20 +1692,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.18.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0-2.dsc' iproute2_4.18.0-2.dsc 1884 SHA256:c91b269cc33330df547351f90483738fd7132830fe0350f2fddf9fd7c9b811b7
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0.orig.tar.xz' iproute2_4.18.0.orig.tar.xz 692868 SHA256:a9e6c70c95f513871c5e1f4e452c04fcb3c4d8a05be651bd794cd994a52daa45
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0-2.debian.tar.xz' iproute2_4.18.0-2.debian.tar.xz 143956 SHA256:aef0ec3a8721f3278113694952634deb1d6465c59f4880a8840a76e7aa17a53f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.18.0-2/
 
-- https://sources.debian.net/src/iproute2/4.18.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.18.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.18.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.8.1-2`
 

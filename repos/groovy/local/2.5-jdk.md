@@ -1,10 +1,10 @@
-# `groovy:2.5.4-jdk8`
+# `groovy:2.5.5-jdk8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8eb6d67499c368ca3b86363efa75b16c5dcfdfd59df7c71429649610ed1c8418`
-- Created: `2018-12-12T02:48:47.235144451Z`
-- Virtual Size: ~ 657.86 Mb  
+- Image ID: `sha256:9fa4a85e41f2c17d899c9cd742bc9a855f7e93dcc7d16adb98ae49e2fe11f85b`
+- Created: `2018-12-24T22:23:59.609018763Z`
+- Virtual Size: ~ 657.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -16,7 +16,7 @@
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.5.4`
+  - `GROOVY_VERSION=2.5.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4775,6 +4775,10 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-3+deb9u1/
 
 
 ### `dpkg` source package: `shadow=1:4.4-4.1`
