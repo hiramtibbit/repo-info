@@ -1,7 +1,7 @@
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:52cfe1a1f299711a7336b59d761ba44478aa21791332538b4c49d03076789a6b
+$ docker pull hylang@sha256:d5e3e6b4f36936605a8636408ebd6b815618b56f1b2f0aecc51449f4ae714a34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull hylang@sha256:52cfe1a1f299711a7336b59d761ba44478aa21791332538b4c49
 ### `hylang:latest` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:7f06b8852c8e7571b59d92012e63921aacd70d8c074876c02579507225d5468f
+$ docker pull hylang@sha256:4a6f3834de9bd43780c05df329281574b02663c9c17aac6ed80b6b0967008da1
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **356.7 MB (356650522 bytes)**  
+-	Total Size: **356.7 MB (356666640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fbd9941862f32c15fc8f97e7e5a4372977d33b77e9b3b8ba591cb3e82832ead`
+-	Image ID: `sha256:680567cf21a5bcd61a3c0613e2b0f6e0e89200a581e55742e76498a5bcac6b4a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -48,25 +48,25 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		tk-dev 		uuid-dev 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 16 Nov 2018 22:23:18 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Fri, 16 Nov 2018 22:23:19 GMT
-ENV PYTHON_VERSION=3.7.1
-# Fri, 16 Nov 2018 22:28:29 GMT
+# Wed, 26 Dec 2018 08:42:00 GMT
+ENV PYTHON_VERSION=3.7.2
+# Wed, 26 Dec 2018 08:44:29 GMT
 RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python3 --version
-# Fri, 16 Nov 2018 22:28:31 GMT
+# Wed, 26 Dec 2018 08:44:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Fri, 16 Nov 2018 22:28:31 GMT
+# Wed, 26 Dec 2018 08:44:30 GMT
 ENV PYTHON_PIP_VERSION=18.1
-# Fri, 16 Nov 2018 22:28:41 GMT
+# Wed, 26 Dec 2018 08:44:36 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 16 Nov 2018 22:28:41 GMT
+# Wed, 26 Dec 2018 08:44:36 GMT
 CMD ["python3"]
-# Sat, 17 Nov 2018 00:29:56 GMT
+# Wed, 26 Dec 2018 10:33:26 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Sat, 17 Nov 2018 00:29:56 GMT
-ADD dir:2acd4535b26397539b0d8acdba095106228048eab03c48a045cc3123cab3ab02 in /opt/hylang/hy 
-# Sat, 17 Nov 2018 00:30:03 GMT
+# Wed, 26 Dec 2018 10:33:26 GMT
+ADD dir:a05a45ee9f2f6abd81608e27a8160f322fc7835a3647d93b6cd365a9e58a0b3a in /opt/hylang/hy 
+# Wed, 26 Dec 2018 10:33:31 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Sat, 17 Nov 2018 00:30:03 GMT
+# Wed, 26 Dec 2018 10:33:31 GMT
 CMD ["hy"]
 ```
 
@@ -95,25 +95,25 @@ CMD ["hy"]
 		Last Modified: Fri, 16 Nov 2018 23:28:45 GMT  
 		Size: 5.8 MB (5830951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a3d3a96a32d4a5283b45966b9c49576fd5914f47797170104043068e3d87b0`  
-		Last Modified: Fri, 16 Nov 2018 23:28:51 GMT  
-		Size: 22.4 MB (22366555 bytes)  
+	-	`sha256:3979c1f9d2e6c41f923d92b74e23ff5c7128740ca2be0ba109ed08f1b1dfabab`  
+		Last Modified: Wed, 26 Dec 2018 09:25:22 GMT  
+		Size: 22.4 MB (22429585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:885a0ed92c894cb8a2abfc207d6a17cade6c8caea91ffe184e47cf3de08ed278`  
-		Last Modified: Fri, 16 Nov 2018 23:28:40 GMT  
-		Size: 240.0 B  
+	-	`sha256:b1551281985f783c8e4aa76e2d602be58d0190f00f9e15a73e65a41d2b9fbc09`  
+		Last Modified: Wed, 26 Dec 2018 09:25:17 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd7cc9ace2427e64037752916207e90ff203948d45fff8eb41cd250413c27f10`  
-		Last Modified: Fri, 16 Nov 2018 23:28:42 GMT  
-		Size: 1.8 MB (1783813 bytes)  
+	-	`sha256:39ab8f51abbe0f77323b7a009c367c88dc000dbb1f73b0dd0fbab50429846443`  
+		Last Modified: Wed, 26 Dec 2018 09:25:17 GMT  
+		Size: 1.8 MB (1783532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5d8c091f92d59da98f0cec3fb79284d02a36e9f19451960b495775549c82c11`  
-		Last Modified: Sat, 17 Nov 2018 00:30:33 GMT  
-		Size: 385.5 KB (385517 bytes)  
+	-	`sha256:fc2d8bdadea09b9b0d0006935fe60eb6954bef60f0be6e98f0201f2d4a342b41`  
+		Last Modified: Wed, 26 Dec 2018 10:33:39 GMT  
+		Size: 385.5 KB (385513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c646f9322363fc94b3d1f0cf7560e29497cdc12723cf5ffd4ced68ec4217673`  
-		Last Modified: Sat, 17 Nov 2018 00:30:34 GMT  
-		Size: 2.6 MB (2605947 bytes)  
+	-	`sha256:fc1e943d6792c22b04324c364f91d4a336a9c6ff2eb498a1f1dbfb6084828f61`  
+		Last Modified: Wed, 26 Dec 2018 10:33:40 GMT  
+		Size: 2.6 MB (2559318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:latest` - linux; arm variant v5
