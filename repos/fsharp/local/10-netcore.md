@@ -3033,10 +3033,6 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/232-25+deb9u4/
-
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
