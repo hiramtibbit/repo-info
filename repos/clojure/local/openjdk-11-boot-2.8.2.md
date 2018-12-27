@@ -93,10 +93,6 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/adwaita-icon-theme/3.30.0-1/
-
 
 ### `dpkg` source package: `alsa-lib=1.1.7-1`
 
@@ -802,10 +798,6 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/dash/0.5.10.2-1/
-
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
@@ -881,20 +873,13 @@ Licenses: (parsed from: `/usr/share/doc/dconf-gsettings-backend/copyright`, `/us
 - `GPL-3`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dconf=0.30.1-1
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.dsc' dconf_0.30.1-1.dsc 2468 SHA256:3e08cae2c8cbbef92a4ed67e60b6195ec7e58d6ffe6f2726a1d09f75f0955c79
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1.orig.tar.xz' dconf_0.30.1.orig.tar.xz 104376 SHA256:549a3a7cc3881318107dc48a7b02ee8f88c9127acaf2d47f7724f78a8f6d02b7
-'http://deb.debian.org/debian/pool/main/d/dconf/dconf_0.30.1-1.debian.tar.xz' dconf_0.30.1-1.debian.tar.xz 9524 SHA256:45fa89e86146ffd9f32d670434fd2b4a86fbda5d0f631d303582b3ac5f8e0f61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dconf/0.30.1-1/
 
-- https://sources.debian.net/src/dconf/0.30.1-1/ (for browsing the source)
-- https://sources.debian.net/src/dconf/0.30.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dconf/0.30.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.69`
 
@@ -1265,10 +1250,6 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gcc-8/8.2.0-9/
-
 
 ### `dpkg` source package: `gdbm=1.18.1-1`
 
@@ -1397,20 +1378,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.58.0-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0-1.dsc' glib-networking_2.58.0-1.dsc 2485 SHA256:4b43a5b22f358ff1bb03bb02373c5fc5c61c8de0e9ea99793383ac0c8e9cd52d
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0.orig.tar.xz' glib-networking_2.58.0.orig.tar.xz 172632 SHA256:bdfa0255e031b8ee003cc283002536b77ee76450105f1dc6ab066b9bf4330068
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.58.0-1.debian.tar.xz' glib-networking_2.58.0-1.debian.tar.xz 8516 SHA256:d8dee3c695defc9c100ecceaa4c1293979feb51581736dc4b88fd2f18e65fbf2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.58.0-1/
 
-- https://sources.debian.net/src/glib-networking/2.58.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.58.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.58.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
 
@@ -1669,10 +1643,6 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gtk+3.0/3.24.1-2/
-
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
@@ -1829,20 +1799,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.18.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0-2.dsc' iproute2_4.18.0-2.dsc 1884 SHA256:c91b269cc33330df547351f90483738fd7132830fe0350f2fddf9fd7c9b811b7
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0.orig.tar.xz' iproute2_4.18.0.orig.tar.xz 692868 SHA256:a9e6c70c95f513871c5e1f4e452c04fcb3c4d8a05be651bd794cd994a52daa45
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.18.0-2.debian.tar.xz' iproute2_4.18.0-2.debian.tar.xz 143956 SHA256:aef0ec3a8721f3278113694952634deb1d6465c59f4880a8840a76e7aa17a53f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.18.0-2/
 
-- https://sources.debian.net/src/iproute2/4.18.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.18.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.18.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.8.1-2`
 
@@ -1859,10 +1822,6 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/iptables/1.8.1-2/
 
 
 ### `dpkg` source package: `iptables=1.8.2-2`
@@ -2396,10 +2355,6 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/liberror-perl/0.17026-1/
 
 
 ### `dpkg` source package: `libffi=3.2.1-8`
@@ -3871,10 +3826,6 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/netbase/5.4/
-
 
 ### `dpkg` source package: `nettle=3.4-1`
 
@@ -3997,10 +3948,6 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nss/2:3.40-1/
-
 
 ### `dpkg` source package: `openjdk-11=11.0.1+13-3`
 
@@ -4044,20 +3991,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.46+dfsg-5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-5.dsc' openldap_2.4.46+dfsg-5.dsc 2711 SHA256:61354bc5ee694d39ad1046deb2aa3145cb52945ad6a0b26ce2837a0e2096a2af
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg.orig.tar.gz' openldap_2.4.46+dfsg.orig.tar.gz 4873832 SHA256:e93cb511f6bce162c27502d0d240e6410a8f14e72c47ddddb4e69b25b7c538e4
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.46+dfsg-5.debian.tar.xz' openldap_2.4.46+dfsg-5.debian.tar.xz 163000 SHA256:f07814e83627de02011f175d698e104bdd369b070d0a65f5db2a007c35a58232
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.46+dfsg-5/
 
-- https://sources.debian.net/src/openldap/2.4.46+dfsg-5/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.46+dfsg-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.46+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:7.9p1-1`
 
@@ -4097,10 +4037,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.1.1-2/
 
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
@@ -4742,10 +4678,6 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/239-14/
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.11`
