@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d85527506b2876550a74eb05bebdeead55aaabfeb23896d46bb339d6c4346a2`
-- Created: `2018-11-27T00:40:59.758989581Z`
-- Virtual Size: ~ 742.79 Mb  
+- Image ID: `sha256:6e3ba50cf36f35885844c651669f24b7d716a6b12dcb8e5efdef9718853d9586`
+- Created: `2018-12-24T23:28:44.234740506Z`
+- Virtual Size: ~ 743.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -593,11 +593,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-12
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-12.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-12.debian.tar.xz 15260 SHA256:b634af1ff394c6e44445e29e7e6b27648d35f58e475ed1749eeaf3dc80ca15a1
 ```
 
-### `dpkg` source package: `cups=2.2.7-1ubuntu2.1`
+### `dpkg` source package: `cups=2.2.7-1ubuntu2.2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.7-1ubuntu2.1`
+- `libcups2:amd64=2.2.7-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -608,9 +608,15 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.dsc' cups_2.2.7-1ubuntu2.2.dsc 3647 SHA256:d95deaac3ea59deece22aeba7e1ab8abb8e91fd77852b226d27e0aee723eaa9f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.debian.tar.xz' cups_2.2.7-1ubuntu2.2.debian.tar.xz 358768 SHA256:d14f8476df1dfc3552637dc1be7e37bbed4ee9dd1da6b4d03f6cd1b379c00a5f
+```
 
 ### `dpkg` source package: `curl=7.58.0-2ubuntu3.5`
 
@@ -1269,14 +1275,14 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo9=9.5.0-1~bionic`
+### `dpkg` source package: `gazebo9=9.6.0-1~bionic`
 
 Binary Packages:
 
-- `gazebo9=9.5.0-1~bionic`
-- `gazebo9-common=9.5.0-1~bionic`
-- `gazebo9-plugin-base=9.5.0-1~bionic`
-- `libgazebo9:amd64=9.5.0-1~bionic`
+- `gazebo9=9.6.0-1~bionic`
+- `gazebo9-common=9.6.0-1~bionic`
+- `gazebo9-plugin-base=9.6.0-1~bionic`
+- `libgazebo9:amd64=9.6.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/gazebo9-plugin-base/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -3398,11 +3404,11 @@ $ apt-get source -qq --print-uris libraw1394=2.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394_2.1.2-1.debian.tar.xz' libraw1394_2.1.2-1.debian.tar.xz 8760 SHA256:5cee0e0049d820a8e4e5d3dbd94fb2c3d7b782ec09134c6c714ed523829dc1c3
 ```
 
-### `dpkg` source package: `libraw=0.18.8-1ubuntu0.1`
+### `dpkg` source package: `libraw=0.18.8-1ubuntu0.2`
 
 Binary Packages:
 
-- `libraw16:amd64=0.18.8-1ubuntu0.1`
+- `libraw16:amd64=0.18.8-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 
@@ -3414,9 +3420,14 @@ Licenses: (parsed from: `/usr/share/doc/libraw16/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libraw=0.18.8-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.2.dsc' libraw_0.18.8-1ubuntu0.2.dsc 1986 SHA256:824667a6ae1923101674ab42881ab08550b627d98ed92cb3eb35a80a0dea788e
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8.orig.tar.gz' libraw_0.18.8.orig.tar.gz 519442 SHA256:5edf25d32c300a1081fba8b6ded9e47cbb8a8330dde4a23806f64884a1e46d64
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.18.8-1ubuntu0.2.debian.tar.xz' libraw_0.18.8-1ubuntu0.2.debian.tar.xz 26172 SHA256:9ae55780b37412eb7093fa517061b2836413aad2fcef3faae294520e0e28300a
+```
 
 ### `dpkg` source package: `librest=0.8.0-2`
 
@@ -3736,11 +3747,11 @@ $ apt-get source -qq --print-uris libspnav=0.2.3-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libspnav/libspnav_0.2.3-1.debian.tar.xz' libspnav_0.2.3-1.debian.tar.xz 3536 SHA256:90989c2656f922ee6a56280d530a77c547268edecb9a1e2f02b2011bf451afe3
 ```
 
-### `dpkg` source package: `libssh=0.8.0~20170825.94fa1e38-1ubuntu0.1`
+### `dpkg` source package: `libssh=0.8.0~20170825.94fa1e38-1ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-gcrypt-4:amd64=0.8.0~20170825.94fa1e38-1ubuntu0.1`
+- `libssh-gcrypt-4:amd64=0.8.0~20170825.94fa1e38-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -3750,9 +3761,14 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.8.0~20170825.94fa1e38-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.2.dsc' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.2.dsc 2518 SHA256:589e0a6a37b54688f542cc118bc816cab17bf9e2c5ba34d8c3e22b3a05f49274
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38.orig.tar.xz' libssh_0.8.0~20170825.94fa1e38.orig.tar.xz 381176 SHA256:48cbcc4c946380f08c024fbc1898b1efd6edff66a5ec4b536695926f0ea055a8
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.0~20170825.94fa1e38-1ubuntu0.2.debian.tar.xz' libssh_0.8.0~20170825.94fa1e38-1ubuntu0.2.debian.tar.xz 27372 SHA256:4183d352ad02010dac86f1aa1ec2e0b27ca3825c471bc39b843f555bbdbb8ebf
+```
 
 ### `dpkg` source package: `libtar=1.2.20-7`
 
@@ -5244,7 +5260,6 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.0g-2ubuntu4.1`
-- `openssl=1.1.0g-2ubuntu4.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5253,6 +5268,26 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.1.0g-2ubuntu4.3`
+
+Binary Packages:
+
+- `openssl=1.1.0g-2ubuntu4.3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0g-2ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu4.3.dsc' openssl_1.1.0g-2ubuntu4.3.dsc 2698 SHA256:80ac13c31b09a3412a4db6086961ee3a44ed924c5e08d9176daa4f873ad5af64
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz' openssl_1.1.0g.orig.tar.gz 5404748 SHA256:de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz.asc' openssl_1.1.0g.orig.tar.gz.asc 455 SHA256:2a7532e6722aab8989644049ba5c1d3a5fce417aa4b18235eec901224098bbed
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu4.3.debian.tar.xz' openssl_1.1.0g-2ubuntu4.3.debian.tar.xz 86600 SHA256:debb83bc324b415fdcc521600dafa527897213492bca8dfcdd46133d8d9ed9da
+```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 
@@ -5467,19 +5502,24 @@ $ apt-get source -qq --print-uris poppler-data=0.4.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.8-2.debian.tar.xz' poppler-data_0.4.8-2.debian.tar.xz 19524 SHA256:471ce26ff9082a1562a360b3ba636ce7d0f19b9fb1b353a3d46c9a4f34d6f8ea
 ```
 
-### `dpkg` source package: `poppler=0.62.0-2ubuntu2.2`
+### `dpkg` source package: `poppler=0.62.0-2ubuntu2.5`
 
 Binary Packages:
 
-- `libpoppler73:amd64=0.62.0-2ubuntu2.2`
+- `libpoppler73:amd64=0.62.0-2ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler73/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.5.dsc' poppler_0.62.0-2ubuntu2.5.dsc 3354 SHA256:31ad8fab397ddcc25ba758db9d85396cf71a24877285541e88da4474afc74c39
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA256:5b9a73dfd4d6f61d165ada1e4f0abd2d420494bf9d0b1c15d0db3f7b83a729c6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.5.debian.tar.xz' poppler_0.62.0-2ubuntu2.5.debian.tar.xz 38044 SHA256:bf4ef4c60a6c05ef198aab109bdff04b84f65d02a949297285097ebc01b4b38b
+```
 
 ### `dpkg` source package: `postgresql-10=10.6-0ubuntu0.18.04.1`
 
@@ -6531,19 +6571,24 @@ $ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz 98512 SHA256:e026d029578f200c4f8cefbdba65184f12adbd856ed873673e09cdaaf7486288
 ```
 
-### `dpkg` source package: `wavpack=5.1.0-2ubuntu1.1`
+### `dpkg` source package: `wavpack=5.1.0-2ubuntu1.2`
 
 Binary Packages:
 
-- `libwavpack1:amd64=5.1.0-2ubuntu1.1`
+- `libwavpack1:amd64=5.1.0-2ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.2.dsc' wavpack_5.1.0-2ubuntu1.2.dsc 2196 SHA256:5390721c4830c8a1ae4b4f19fcc52fffa8425e35a418a8bb593e90a237837641
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0.orig.tar.bz2' wavpack_5.1.0.orig.tar.bz2 824331 SHA256:1939627d5358d1da62bc6158d63f7ed12905552f3a799c799ee90296a7612944
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.2.debian.tar.xz' wavpack_5.1.0-2ubuntu1.2.debian.tar.xz 9888 SHA256:d0ff12fb8c273773ec6106d852ad544f213ce2d516c83e81d9b00bf1ec745fc7
+```
 
 ### `dpkg` source package: `wayland=1.14.0-2`
 
