@@ -1,7 +1,7 @@
 ## `mongo-express:latest`
 
 ```console
-$ docker pull mongo-express@sha256:35ea90f74c3608647877d2f4bd9d9ce889672655cf85b17f2393bf023c3946de
+$ docker pull mongo-express@sha256:6ac203373243e34387b8c0e65f1d79f1f0facc32f7b4a0952bc98ce086dd359c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull mongo-express@sha256:35ea90f74c3608647877d2f4bd9d9ce889672655cf85b
 ### `mongo-express:latest` - linux; amd64
 
 ```console
-$ docker pull mongo-express@sha256:0069eae5fc961429e51c267c318d7a19d89603ce599dd2c0d33da5db027c348c
+$ docker pull mongo-express@sha256:35a99e8d186f7a36b752b78157f2a57acef6d4c706f5985f9fdb427aab236b07
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.0 MB (35959279 bytes)**  
+-	Total Size: **36.0 MB (35965836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fae86bef7a474d0f2bf4538987ac53429c735b503615b83fbff789ad8790dab2`
+-	Image ID: `sha256:5d9867d0343ce9688d076d58c5470a3c35ba6ddbfeaaa9d105b9f1c262425b86`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -28,35 +28,35 @@ $ docker pull mongo-express@sha256:0069eae5fc961429e51c267c318d7a19d89603ce599dd
 ADD file:2ff00caea4e83dfade726ca47e3c795a1e9acb8ac24e392785c474ecf9a621f2 in / 
 # Fri, 21 Dec 2018 00:21:30 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:19:39 GMT
-ENV NODE_VERSION=8.14.1
-# Fri, 21 Dec 2018 01:48:05 GMT
+# Thu, 27 Dec 2018 01:22:27 GMT
+ENV NODE_VERSION=8.15.0
+# Thu, 27 Dec 2018 01:40:46 GMT
 RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
-# Fri, 21 Dec 2018 01:48:05 GMT
+# Thu, 27 Dec 2018 01:40:46 GMT
 ENV YARN_VERSION=1.12.3
-# Fri, 21 Dec 2018 01:48:10 GMT
+# Thu, 27 Dec 2018 01:40:51 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn
-# Fri, 21 Dec 2018 01:48:11 GMT
+# Thu, 27 Dec 2018 01:40:51 GMT
 CMD ["node"]
-# Fri, 21 Dec 2018 06:06:53 GMT
+# Thu, 27 Dec 2018 03:07:36 GMT
 RUN apk add --no-cache bash tini
-# Fri, 21 Dec 2018 06:06:54 GMT
+# Thu, 27 Dec 2018 03:07:36 GMT
 EXPOSE 8081
-# Fri, 21 Dec 2018 06:06:54 GMT
+# Thu, 27 Dec 2018 03:07:36 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 21 Dec 2018 06:06:54 GMT
+# Thu, 27 Dec 2018 03:07:37 GMT
 ENV MONGO_EXPRESS=0.49.0
-# Fri, 21 Dec 2018 06:07:06 GMT
+# Thu, 27 Dec 2018 03:07:49 GMT
 RUN npm install mongo-express@$MONGO_EXPRESS
-# Fri, 21 Dec 2018 06:07:06 GMT
+# Thu, 27 Dec 2018 03:07:50 GMT
 COPY file:58292318f4d4eebb73af5f654a480f4db1e1bb8a29365676b6ccf54504b61984 in / 
-# Fri, 21 Dec 2018 06:07:06 GMT
+# Thu, 27 Dec 2018 03:07:50 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 21 Dec 2018 06:07:07 GMT
+# Thu, 27 Dec 2018 03:07:51 GMT
 RUN cp config.default.js config.js
-# Fri, 21 Dec 2018 06:07:07 GMT
+# Thu, 27 Dec 2018 03:07:51 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 21 Dec 2018 06:07:08 GMT
+# Thu, 27 Dec 2018 03:07:51 GMT
 CMD ["mongo-express"]
 ```
 
@@ -65,29 +65,29 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 21 Dec 2018 00:23:44 GMT  
 		Size: 2.2 MB (2207025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e5cdc0df0c41993ce1a9614e4527ab0fb3ff2af463c4411ca320d204d6c3765`  
-		Last Modified: Fri, 21 Dec 2018 03:18:51 GMT  
-		Size: 18.9 MB (18869761 bytes)  
+	-	`sha256:f6268ae5d1d7bedece5f65f36723304879063e13f205431cea73abea4fa89646`  
+		Last Modified: Thu, 27 Dec 2018 02:48:55 GMT  
+		Size: 18.9 MB (18870715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f789259667da7b274a53720a0a89df06073f0fa2e02372323d165d98362107a7`  
-		Last Modified: Fri, 21 Dec 2018 03:18:47 GMT  
-		Size: 1.3 MB (1325176 bytes)  
+	-	`sha256:97eb9028b14bfd2dee6c78f631e9d83fac380a7ff52fe5ae834d4a13e88241b6`  
+		Last Modified: Thu, 27 Dec 2018 02:48:52 GMT  
+		Size: 1.3 MB (1325188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1276b3f5e246fc746613d884c47e043e10bf351343da46ec91bceb10339c6296`  
-		Last Modified: Fri, 21 Dec 2018 06:07:16 GMT  
-		Size: 1.2 MB (1181716 bytes)  
+	-	`sha256:2cfc9568b220a782041030278e2ef17e05845c30e6489ef29e4b7a7829562b72`  
+		Last Modified: Thu, 27 Dec 2018 03:07:59 GMT  
+		Size: 1.2 MB (1181679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58c5f7a05b1af757cb135439909f4414448ab6578757a1780a4d41a339479fc`  
-		Last Modified: Fri, 21 Dec 2018 06:07:18 GMT  
-		Size: 12.4 MB (12372262 bytes)  
+	-	`sha256:91e4caf678002524bcab8c28c87916b3b508629e56c81fab54de48964304c4e7`  
+		Last Modified: Thu, 27 Dec 2018 03:08:01 GMT  
+		Size: 12.4 MB (12377895 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c7e46bdadf5aa8d3748975a44d8e955d13ed20273f27665ab0d3fc9906c47f`  
-		Last Modified: Fri, 21 Dec 2018 06:07:16 GMT  
-		Size: 574.0 B  
+	-	`sha256:8579436d5fa9394054c091500635895c03fa70ae5245509d4dd746cee36d59aa`  
+		Last Modified: Thu, 27 Dec 2018 03:07:58 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f71984b6ef80ff18980e0ecc10c47ece3ff6b66bfb80ab81200dde8f35a175a`  
-		Last Modified: Fri, 21 Dec 2018 06:07:16 GMT  
-		Size: 2.8 KB (2765 bytes)  
+	-	`sha256:5046e8defa1207601dda481fcc928cdd7b8f542c85cbaa294e8e52f597cd4dc5`  
+		Last Modified: Thu, 27 Dec 2018 03:07:58 GMT  
+		Size: 2.8 KB (2761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo-express:latest` - linux; arm64 variant v8
