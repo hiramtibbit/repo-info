@@ -66,10 +66,6 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/1.7.0/
-
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -439,10 +435,6 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-3/
-
 
 ### `dpkg` source package: `gnupg2=2.2.8-3ubuntu1`
 
@@ -566,10 +558,6 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/init-system-helpers/1.54/
-
 
 ### `dpkg` source package: `libcap-ng=0.7.9-1build1`
 
@@ -604,10 +592,6 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libffi/3.2.1-8/
 
 
 ### `dpkg` source package: `libgcrypt20=1.8.3-1ubuntu1`
@@ -1039,10 +1023,6 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/perl/5.28.0-3/
 
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu1`
