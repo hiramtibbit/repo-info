@@ -336,10 +336,6 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/base-files/9.9+deb9u5/
-
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -620,10 +616,6 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u7/
 
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
@@ -1370,10 +1362,6 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/
 
 
 ### `dpkg` source package: `graphite2=1.3.10-1`
@@ -4392,10 +4380,6 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/systemd/232-25+deb9u4/
 
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
