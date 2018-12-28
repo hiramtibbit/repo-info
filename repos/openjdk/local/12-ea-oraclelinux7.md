@@ -1,16 +1,16 @@
-# `openjdk:12-ea-24-jdk-oraclelinux7`
+# `openjdk:12-ea-25-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bd6d19668b8ce681b582781ab31f7719a9f6f5c4b97fb0ad71cdc1ab8330b3b`
-- Created: `2018-12-20T03:27:52.363225235Z`
-- Virtual Size: ~ 468.88 Mb  
+- Image ID: `sha256:7a42a9720e090fb8c0661b1a76d42a38365795a6a586865ae700a0d7b2edec4e`
+- Created: `2018-12-26T08:29:17.734663399Z`
+- Virtual Size: ~ 468.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/java/openjdk-12/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-12`
-  - `JAVA_VERSION=12-ea+24`
-  - `JAVA_URL=https://download.java.net/java/early_access/jdk12/24/GPL/openjdk-12-ea+24_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=dd927d41c2174f66e3fa2ffc847386e081d111318b235d2b9f4fb64b40624072`
+  - `JAVA_VERSION=12-ea+25`
+  - `JAVA_URL=https://download.java.net/java/early_access/jdk12/25/GPL/openjdk-12-ea+25_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=7913b0f30005e29250603882a7d5fd55a15bb0238b95b8372eb8fbc51118a9a9`
