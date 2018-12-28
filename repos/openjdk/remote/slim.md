@@ -1,7 +1,7 @@
 ## `openjdk:slim`
 
 ```console
-$ docker pull openjdk@sha256:5fc74d3941c28aea30e03d16beabadeb5c113cc870b39385cb2d9960a5789843
+$ docker pull openjdk@sha256:0119b15db96e67de741c63d5eafd6c44f36452f17fd1e7ea4dffb17921ea4073
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -347,14 +347,14 @@ CMD ["jshell"]
 ### `openjdk:slim` - linux; ppc64le
 
 ```console
-$ docker pull openjdk@sha256:ad1a13639e5a7e43685a96fcd4a649d45c20b3b91017fbb2dcd1d267e3f38004
+$ docker pull openjdk@sha256:52783c5b803cf3695ef2a72b19b43f55ae64b826f2812113ad1fc80005615f3e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.1 MB (262051381 bytes)**  
+-	Total Size: **262.1 MB (262102388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68a6900398e35414db79acb161afc755c6e4339560cc97fd45f8dc632b58a9ce`
+-	Image ID: `sha256:be795f8649b17f281c0d869631aaf061ba9dc90012753f4d9e3b9b1979daf721`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -378,9 +378,9 @@ ENV JAVA_HOME=/docker-java-home
 ENV JAVA_VERSION=11.0.1
 # Wed, 26 Dec 2018 09:45:00 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.1+13-2~bpo9+1
-# Wed, 26 Dec 2018 09:47:08 GMT
-RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jdk-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 26 Dec 2018 09:47:15 GMT
+# Fri, 28 Dec 2018 09:22:52 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jdk-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Fri, 28 Dec 2018 09:22:56 GMT
 CMD ["jshell"]
 ```
 
@@ -405,9 +405,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 26 Dec 2018 10:07:11 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db97854dd2fecbe882dd8bde139651ca79f1c7b5dae38f938b0b2be449d84a47`  
-		Last Modified: Wed, 26 Dec 2018 10:07:42 GMT  
-		Size: 238.9 MB (238860299 bytes)  
+	-	`sha256:b05c45ec4f370232705c092b0f1362466bfe2cf227f5269948ba1ec6b5ad6432`  
+		Last Modified: Fri, 28 Dec 2018 09:32:01 GMT  
+		Size: 238.9 MB (238911306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:slim` - linux; s390x
