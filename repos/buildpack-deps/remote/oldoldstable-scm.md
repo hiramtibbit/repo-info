@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldoldstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:61f453ad93b42aea475e8ac2ad27b9b7aaf6b1e89e2f1e629a673a3d39fc6244
+$ docker pull buildpack-deps@sha256:1f2599305e34e23808197dbe018a3e1ae4bf508578f1fb8751a7a74203c68156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -54,41 +54,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:oldoldstable-scm` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:7c3dfe1a92daf384313fed44c9b318b5e16e7312aae74ee6a893e8d2bdab7c6d
+$ docker pull buildpack-deps@sha256:c3d6cb8198292793b3c1433034467691d687acca9a0a249779de4c029d8af83c
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.4 MB (79362825 bytes)**  
+-	Total Size: **79.4 MB (79361456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19660fbf6bb43e68063f69654f84a864e9954cdd2a14b5566c96ead26738a27e`
+-	Image ID: `sha256:0b7eae282cc5fd9360908e31bfc414bf00d8a3a2b2c301c3f0b531c346d59790`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 16 Nov 2018 10:01:50 GMT
-ADD file:7fa32f63a9a6cff48266f7afe3843db8f84995b13663eac5199dd7027bef743c in / 
-# Fri, 16 Nov 2018 10:01:51 GMT
+# Sat, 29 Dec 2018 09:57:51 GMT
+ADD file:2176455c0a806208679d84cd68bd333f8550a0221930164de204c0d700ef0732 in / 
+# Sat, 29 Dec 2018 09:57:52 GMT
 CMD ["bash"]
-# Fri, 16 Nov 2018 18:41:34 GMT
+# Sat, 29 Dec 2018 10:36:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 16 Nov 2018 18:41:36 GMT
+# Sat, 29 Dec 2018 10:36:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 16 Nov 2018 18:42:32 GMT
+# Sat, 29 Dec 2018 10:37:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:f2509498a89240dc1cfe86f8e2bc15366b63a69b5a49e209394999a4297dedde`  
-		Last Modified: Fri, 16 Nov 2018 10:16:29 GMT  
-		Size: 38.0 MB (37993565 bytes)  
+	-	`sha256:0a88807c02a49bee45e800ff85ea3cdd0868f83fffa6aa89ab393861b593d635`  
+		Last Modified: Sat, 29 Dec 2018 10:04:37 GMT  
+		Size: 38.0 MB (37992205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b541535b0699a8d321a281618a0854b5158af2ca61ab032b66c360a86c3b23`  
-		Last Modified: Fri, 16 Nov 2018 18:54:41 GMT  
-		Size: 5.5 MB (5474871 bytes)  
+	-	`sha256:fe1dfee93bb9c051c7f471b5ca0ecb702dae9db3b59df8960dca6109967e6f19`  
+		Last Modified: Sat, 29 Dec 2018 10:45:33 GMT  
+		Size: 5.5 MB (5474987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c13ec111098acb913b84384b682f7c1bcab0b42c5622f4cd0a9ea2678556d0f`  
-		Last Modified: Fri, 16 Nov 2018 18:55:29 GMT  
-		Size: 35.9 MB (35894389 bytes)  
+	-	`sha256:2631b4de03bee133a32c6b6482c689d00f44fa2622345479f531366e62e92f7f`  
+		Last Modified: Sat, 29 Dec 2018 10:45:53 GMT  
+		Size: 35.9 MB (35894264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oldoldstable-scm` - linux; arm variant v7
