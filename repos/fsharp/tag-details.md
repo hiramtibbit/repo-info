@@ -527,7 +527,7 @@ WORKDIR /root
 ## `fsharp:4`
 
 ```console
-$ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c1739f0041fb53c6
+$ docker pull fsharp@sha256:8a3b3afce01aecf74c4ee648234e79c2588758ffdcd99a27bd18e02377383839
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -537,47 +537,47 @@ $ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c173
 ### `fsharp:4` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:bb4a36eb21865e4c548f6955945448c2c1f393d717460f2660d02807e3e7ab41
+$ docker pull fsharp@sha256:1248c516a95fb778a5551180fa8f00355d83298896fe6f40bdfef8d870363528
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.3 MB (176297699 bytes)**  
+-	Total Size: **176.3 MB (176290348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:022fb78379edb9b1c4fe0f32489e668399cb00ca0b1e52a1f68e6826e2c52265`
+-	Image ID: `sha256:424c1c1c173d93092c8ffdbbf0e42d6283338ae187a97f7c06646170f54557c6`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Thu, 15 Nov 2018 22:34:24 GMT
-ADD file:e9f2e31ca621ef0c68e6a429b08e2e874fb0a1b8f98fe675a5e036ccd9dd9e40 in / 
-# Thu, 15 Nov 2018 22:34:24 GMT
+# Fri, 28 Dec 2018 23:24:10 GMT
+ADD file:74e9771816fa7d109fa79427ea1b8615f036838a9c02d4fe124035b440692cfd in / 
+# Fri, 28 Dec 2018 23:24:12 GMT
 CMD ["bash"]
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 16 Nov 2018 12:28:25 GMT
+# Sat, 29 Dec 2018 01:57:47 GMT
 RUN MONO_VERSION=5.8.0.108 &&     FSHARP_VERSION=4.1.34 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel msbuild ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 WORKDIR /root
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:a92a4af0fb9c102a6d410fbd9c77c3119cd91a2230064f6c5b398fd97e3bff71`  
-		Last Modified: Thu, 15 Nov 2018 22:56:37 GMT  
-		Size: 30.1 MB (30129457 bytes)  
+	-	`sha256:436214a91f468dfbb145ef1658128dc3f3c35f5af545a90c9a60a6c42968ac87`  
+		Last Modified: Fri, 28 Dec 2018 23:33:59 GMT  
+		Size: 30.2 MB (30153953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f071202b107b678bd29630ff782173a67228dbf6c072f2e124a062e0eaf97b58`  
-		Last Modified: Fri, 16 Nov 2018 12:31:10 GMT  
-		Size: 146.2 MB (146168242 bytes)  
+	-	`sha256:fae987113a35452af45f6e7d0e8d93af1bfe25bcbba68aa09bda76ee79a60c7a`  
+		Last Modified: Sat, 29 Dec 2018 02:09:25 GMT  
+		Size: 146.1 MB (146136395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0`
 
 ```console
-$ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e72a0366d4b88
+$ docker pull fsharp@sha256:c20cafd58c1a27b7f59777af55c0f69dd8241dafbf742eba01b762cce459603c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -587,103 +587,103 @@ $ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e
 ### `fsharp:4.0` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:ae2041de36fd03aa8cd8baa17fe2bce4829eb89e6906d1f3551a1fd5bd74af71
+$ docker pull fsharp@sha256:dc1d00194d1f6d16b0c7d699b0fbc362d8fd59698dacea3917b3cead6e828b8e
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.1 MB (274060576 bytes)**  
+-	Total Size: **274.0 MB (274048390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14562d1921ed7a195435a86240ed163665ed0d78793e7ba882f51e019bf65171`
+-	Image ID: `sha256:d61ad840a2c53cdea1dd74d49bd18302b97fc85a296b0382180ee0d16864cad2`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Mon, 19 Nov 2018 21:23:15 GMT
-ADD file:8921935f38cde7b92d4bd627249b58572d76f05b6b1beb19cde07d6266e98dff in / 
-# Mon, 19 Nov 2018 21:23:16 GMT
+# Fri, 28 Dec 2018 23:24:45 GMT
+ADD file:c860cba1b1cd5ee3b965d7ee8dee07308dc4d1429a8e0e9fd2196d2b41d8aa27 in / 
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 19 Nov 2018 21:23:18 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Nov 2018 21:58:17 GMT
+# Sat, 29 Dec 2018 00:06:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:58:18 GMT
+# Sat, 29 Dec 2018 00:06:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 19 Nov 2018 21:59:00 GMT
+# Sat, 29 Dec 2018 00:07:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 22:01:37 GMT
+# Sat, 29 Dec 2018 00:09:44 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 ENV MONO_VERSION=4.8.0.495
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Mon, 19 Nov 2018 23:14:38 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:21 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 WORKDIR /root
-# Mon, 19 Nov 2018 23:21:32 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:aa1a66b8583aebb7079effdfe4f95e93dbad248eb4016d1204b28a1b4daf0be1`  
-		Last Modified: Mon, 19 Nov 2018 15:07:10 GMT  
-		Size: 67.1 MB (67148042 bytes)  
+	-	`sha256:9b316e271c6053db26f20220c0e58149bc29688e748cc242e38689568ca67e59`  
+		Last Modified: Mon, 24 Dec 2018 15:11:45 GMT  
+		Size: 67.1 MB (67148528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaccc2e362b2a0d1730104c2ec458779bf780014de00161d1844f910e41adbfd`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 72.7 KB (72658 bytes)  
+	-	`sha256:dea703e2e1f1ccb3ffe844168b3c506120c4a88563ca2657ccdd414c5ea90b7e`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 72.7 KB (72651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53116a2808f001c7a5ca43153ddc0ba788204142fe6fd928761d94d6c8e66bb`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
+	-	`sha256:dd50fddc64aed3615057b72ae4712ba6bcb90d3b2e97673bded147b12ba9c653`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
 		Size: 365.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3a7298e318c5e03f94da0eb1a7d1aba5c973086135a2063a3088b4035d4d933`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 163.0 B  
+	-	`sha256:9d32d2e6dcde218d27789c141b58de9095b70c1e7b78fffc8c93c30cfc65ab5f`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47fffb34bebc889e0692f79732b87ea104186e007d8f0c6070e3e7685928a701`  
-		Last Modified: Mon, 19 Nov 2018 22:10:42 GMT  
-		Size: 4.7 MB (4659746 bytes)  
+	-	`sha256:b55ca2d8c235aebe2692a87a6003762a00339fa4cacf8a1a7d823061b6dfc485`  
+		Last Modified: Sat, 29 Dec 2018 00:22:52 GMT  
+		Size: 4.7 MB (4659385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57d10f13a861ac1bf7eec48c6e3f45b188e4424a4d7c96eb08d9b161b5638f1d`  
-		Last Modified: Mon, 19 Nov 2018 22:11:21 GMT  
-		Size: 29.6 MB (29597035 bytes)  
+	-	`sha256:6919414d67dde79a00793c7094d373d0ed254d7961f4a0c63c92dc05d4ef0055`  
+		Last Modified: Sat, 29 Dec 2018 00:23:03 GMT  
+		Size: 29.6 MB (29601892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f01a6ce7efeb66d41c8ae60523e5461d38f178724b855d788eddb1e85bbc4fc`  
-		Last Modified: Mon, 19 Nov 2018 22:12:26 GMT  
-		Size: 106.7 MB (106672910 bytes)  
+	-	`sha256:ea9be0fcfb7faa91e9fe4e6adabe175f4cbe3caae9a242ff874e6b6b03d2af1d`  
+		Last Modified: Sat, 29 Dec 2018 00:23:28 GMT  
+		Size: 106.7 MB (106676588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca24e53150a1b899d01b86cc44a238b91d19fa3d4b1f4ce63f4dd6340a5b5f7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:00 GMT  
-		Size: 13.8 KB (13822 bytes)  
+	-	`sha256:937955505f1a7824f8fc187c061ae689319893d5b7970d1fe999fb378b31f603`  
+		Last Modified: Sat, 29 Dec 2018 02:09:31 GMT  
+		Size: 13.8 KB (13824 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad18d60f85920437d32d5ff4be34031ff3a01c7373ff5ece0990d2d462bb2eb7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:12 GMT  
-		Size: 55.3 MB (55286919 bytes)  
+	-	`sha256:e70030af21a72c5ba2a33b0102b827f78da6b5e518dd314a2ca34b79d6e8cf80`  
+		Last Modified: Sat, 29 Dec 2018 02:09:48 GMT  
+		Size: 55.3 MB (55268670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4fd05ee7526f8c1cc98fffe1ecaf9799e34b9a37a78236534c33bff47f55664`  
-		Last Modified: Mon, 19 Nov 2018 23:22:02 GMT  
-		Size: 10.6 MB (10608916 bytes)  
+	-	`sha256:9c2908cd5196a7ef005467939e85ce6da5b36d52be1b45e5004f1a4ecea20a40`  
+		Last Modified: Sat, 29 Dec 2018 02:09:34 GMT  
+		Size: 10.6 MB (10606325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0.1`
 
 ```console
-$ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e72a0366d4b88
+$ docker pull fsharp@sha256:c20cafd58c1a27b7f59777af55c0f69dd8241dafbf742eba01b762cce459603c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -693,103 +693,103 @@ $ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e
 ### `fsharp:4.0.1` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:ae2041de36fd03aa8cd8baa17fe2bce4829eb89e6906d1f3551a1fd5bd74af71
+$ docker pull fsharp@sha256:dc1d00194d1f6d16b0c7d699b0fbc362d8fd59698dacea3917b3cead6e828b8e
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.1 MB (274060576 bytes)**  
+-	Total Size: **274.0 MB (274048390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14562d1921ed7a195435a86240ed163665ed0d78793e7ba882f51e019bf65171`
+-	Image ID: `sha256:d61ad840a2c53cdea1dd74d49bd18302b97fc85a296b0382180ee0d16864cad2`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Mon, 19 Nov 2018 21:23:15 GMT
-ADD file:8921935f38cde7b92d4bd627249b58572d76f05b6b1beb19cde07d6266e98dff in / 
-# Mon, 19 Nov 2018 21:23:16 GMT
+# Fri, 28 Dec 2018 23:24:45 GMT
+ADD file:c860cba1b1cd5ee3b965d7ee8dee07308dc4d1429a8e0e9fd2196d2b41d8aa27 in / 
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 19 Nov 2018 21:23:18 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Nov 2018 21:58:17 GMT
+# Sat, 29 Dec 2018 00:06:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:58:18 GMT
+# Sat, 29 Dec 2018 00:06:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 19 Nov 2018 21:59:00 GMT
+# Sat, 29 Dec 2018 00:07:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 22:01:37 GMT
+# Sat, 29 Dec 2018 00:09:44 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 ENV MONO_VERSION=4.8.0.495
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Mon, 19 Nov 2018 23:14:38 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:21 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 WORKDIR /root
-# Mon, 19 Nov 2018 23:21:32 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:aa1a66b8583aebb7079effdfe4f95e93dbad248eb4016d1204b28a1b4daf0be1`  
-		Last Modified: Mon, 19 Nov 2018 15:07:10 GMT  
-		Size: 67.1 MB (67148042 bytes)  
+	-	`sha256:9b316e271c6053db26f20220c0e58149bc29688e748cc242e38689568ca67e59`  
+		Last Modified: Mon, 24 Dec 2018 15:11:45 GMT  
+		Size: 67.1 MB (67148528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaccc2e362b2a0d1730104c2ec458779bf780014de00161d1844f910e41adbfd`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 72.7 KB (72658 bytes)  
+	-	`sha256:dea703e2e1f1ccb3ffe844168b3c506120c4a88563ca2657ccdd414c5ea90b7e`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 72.7 KB (72651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53116a2808f001c7a5ca43153ddc0ba788204142fe6fd928761d94d6c8e66bb`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
+	-	`sha256:dd50fddc64aed3615057b72ae4712ba6bcb90d3b2e97673bded147b12ba9c653`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
 		Size: 365.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3a7298e318c5e03f94da0eb1a7d1aba5c973086135a2063a3088b4035d4d933`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 163.0 B  
+	-	`sha256:9d32d2e6dcde218d27789c141b58de9095b70c1e7b78fffc8c93c30cfc65ab5f`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47fffb34bebc889e0692f79732b87ea104186e007d8f0c6070e3e7685928a701`  
-		Last Modified: Mon, 19 Nov 2018 22:10:42 GMT  
-		Size: 4.7 MB (4659746 bytes)  
+	-	`sha256:b55ca2d8c235aebe2692a87a6003762a00339fa4cacf8a1a7d823061b6dfc485`  
+		Last Modified: Sat, 29 Dec 2018 00:22:52 GMT  
+		Size: 4.7 MB (4659385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57d10f13a861ac1bf7eec48c6e3f45b188e4424a4d7c96eb08d9b161b5638f1d`  
-		Last Modified: Mon, 19 Nov 2018 22:11:21 GMT  
-		Size: 29.6 MB (29597035 bytes)  
+	-	`sha256:6919414d67dde79a00793c7094d373d0ed254d7961f4a0c63c92dc05d4ef0055`  
+		Last Modified: Sat, 29 Dec 2018 00:23:03 GMT  
+		Size: 29.6 MB (29601892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f01a6ce7efeb66d41c8ae60523e5461d38f178724b855d788eddb1e85bbc4fc`  
-		Last Modified: Mon, 19 Nov 2018 22:12:26 GMT  
-		Size: 106.7 MB (106672910 bytes)  
+	-	`sha256:ea9be0fcfb7faa91e9fe4e6adabe175f4cbe3caae9a242ff874e6b6b03d2af1d`  
+		Last Modified: Sat, 29 Dec 2018 00:23:28 GMT  
+		Size: 106.7 MB (106676588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca24e53150a1b899d01b86cc44a238b91d19fa3d4b1f4ce63f4dd6340a5b5f7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:00 GMT  
-		Size: 13.8 KB (13822 bytes)  
+	-	`sha256:937955505f1a7824f8fc187c061ae689319893d5b7970d1fe999fb378b31f603`  
+		Last Modified: Sat, 29 Dec 2018 02:09:31 GMT  
+		Size: 13.8 KB (13824 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad18d60f85920437d32d5ff4be34031ff3a01c7373ff5ece0990d2d462bb2eb7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:12 GMT  
-		Size: 55.3 MB (55286919 bytes)  
+	-	`sha256:e70030af21a72c5ba2a33b0102b827f78da6b5e518dd314a2ca34b79d6e8cf80`  
+		Last Modified: Sat, 29 Dec 2018 02:09:48 GMT  
+		Size: 55.3 MB (55268670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4fd05ee7526f8c1cc98fffe1ecaf9799e34b9a37a78236534c33bff47f55664`  
-		Last Modified: Mon, 19 Nov 2018 23:22:02 GMT  
-		Size: 10.6 MB (10608916 bytes)  
+	-	`sha256:9c2908cd5196a7ef005467939e85ce6da5b36d52be1b45e5004f1a4ecea20a40`  
+		Last Modified: Sat, 29 Dec 2018 02:09:34 GMT  
+		Size: 10.6 MB (10606325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0.1.1`
 
 ```console
-$ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e72a0366d4b88
+$ docker pull fsharp@sha256:c20cafd58c1a27b7f59777af55c0f69dd8241dafbf742eba01b762cce459603c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -799,103 +799,103 @@ $ docker pull fsharp@sha256:b122d40b15377721e434865ac8bd567e66c802c6c29f856cc59e
 ### `fsharp:4.0.1.1` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:ae2041de36fd03aa8cd8baa17fe2bce4829eb89e6906d1f3551a1fd5bd74af71
+$ docker pull fsharp@sha256:dc1d00194d1f6d16b0c7d699b0fbc362d8fd59698dacea3917b3cead6e828b8e
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.1 MB (274060576 bytes)**  
+-	Total Size: **274.0 MB (274048390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14562d1921ed7a195435a86240ed163665ed0d78793e7ba882f51e019bf65171`
+-	Image ID: `sha256:d61ad840a2c53cdea1dd74d49bd18302b97fc85a296b0382180ee0d16864cad2`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Mon, 19 Nov 2018 21:23:15 GMT
-ADD file:8921935f38cde7b92d4bd627249b58572d76f05b6b1beb19cde07d6266e98dff in / 
-# Mon, 19 Nov 2018 21:23:16 GMT
+# Fri, 28 Dec 2018 23:24:45 GMT
+ADD file:c860cba1b1cd5ee3b965d7ee8dee07308dc4d1429a8e0e9fd2196d2b41d8aa27 in / 
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:46 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:23:17 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 19 Nov 2018 21:23:18 GMT
+# Fri, 28 Dec 2018 23:24:47 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Nov 2018 21:58:17 GMT
+# Sat, 29 Dec 2018 00:06:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 21:58:18 GMT
+# Sat, 29 Dec 2018 00:06:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 19 Nov 2018 21:59:00 GMT
+# Sat, 29 Dec 2018 00:07:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 22:01:37 GMT
+# Sat, 29 Dec 2018 00:09:44 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Mon, 19 Nov 2018 23:13:50 GMT
+# Sat, 29 Dec 2018 01:58:00 GMT
 ENV MONO_VERSION=4.8.0.495
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Mon, 19 Nov 2018 23:13:51 GMT
+# Sat, 29 Dec 2018 01:58:02 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Mon, 19 Nov 2018 23:14:37 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Mon, 19 Nov 2018 23:14:38 GMT
+# Sat, 29 Dec 2018 01:58:50 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:21 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Mon, 19 Nov 2018 23:21:31 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 WORKDIR /root
-# Mon, 19 Nov 2018 23:21:32 GMT
+# Sat, 29 Dec 2018 02:08:22 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:aa1a66b8583aebb7079effdfe4f95e93dbad248eb4016d1204b28a1b4daf0be1`  
-		Last Modified: Mon, 19 Nov 2018 15:07:10 GMT  
-		Size: 67.1 MB (67148042 bytes)  
+	-	`sha256:9b316e271c6053db26f20220c0e58149bc29688e748cc242e38689568ca67e59`  
+		Last Modified: Mon, 24 Dec 2018 15:11:45 GMT  
+		Size: 67.1 MB (67148528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaccc2e362b2a0d1730104c2ec458779bf780014de00161d1844f910e41adbfd`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 72.7 KB (72658 bytes)  
+	-	`sha256:dea703e2e1f1ccb3ffe844168b3c506120c4a88563ca2657ccdd414c5ea90b7e`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 72.7 KB (72651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53116a2808f001c7a5ca43153ddc0ba788204142fe6fd928761d94d6c8e66bb`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
+	-	`sha256:dd50fddc64aed3615057b72ae4712ba6bcb90d3b2e97673bded147b12ba9c653`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
 		Size: 365.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3a7298e318c5e03f94da0eb1a7d1aba5c973086135a2063a3088b4035d4d933`  
-		Last Modified: Mon, 19 Nov 2018 21:27:28 GMT  
-		Size: 163.0 B  
+	-	`sha256:9d32d2e6dcde218d27789c141b58de9095b70c1e7b78fffc8c93c30cfc65ab5f`  
+		Last Modified: Fri, 28 Dec 2018 23:26:32 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47fffb34bebc889e0692f79732b87ea104186e007d8f0c6070e3e7685928a701`  
-		Last Modified: Mon, 19 Nov 2018 22:10:42 GMT  
-		Size: 4.7 MB (4659746 bytes)  
+	-	`sha256:b55ca2d8c235aebe2692a87a6003762a00339fa4cacf8a1a7d823061b6dfc485`  
+		Last Modified: Sat, 29 Dec 2018 00:22:52 GMT  
+		Size: 4.7 MB (4659385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57d10f13a861ac1bf7eec48c6e3f45b188e4424a4d7c96eb08d9b161b5638f1d`  
-		Last Modified: Mon, 19 Nov 2018 22:11:21 GMT  
-		Size: 29.6 MB (29597035 bytes)  
+	-	`sha256:6919414d67dde79a00793c7094d373d0ed254d7961f4a0c63c92dc05d4ef0055`  
+		Last Modified: Sat, 29 Dec 2018 00:23:03 GMT  
+		Size: 29.6 MB (29601892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f01a6ce7efeb66d41c8ae60523e5461d38f178724b855d788eddb1e85bbc4fc`  
-		Last Modified: Mon, 19 Nov 2018 22:12:26 GMT  
-		Size: 106.7 MB (106672910 bytes)  
+	-	`sha256:ea9be0fcfb7faa91e9fe4e6adabe175f4cbe3caae9a242ff874e6b6b03d2af1d`  
+		Last Modified: Sat, 29 Dec 2018 00:23:28 GMT  
+		Size: 106.7 MB (106676588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca24e53150a1b899d01b86cc44a238b91d19fa3d4b1f4ce63f4dd6340a5b5f7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:00 GMT  
-		Size: 13.8 KB (13822 bytes)  
+	-	`sha256:937955505f1a7824f8fc187c061ae689319893d5b7970d1fe999fb378b31f603`  
+		Last Modified: Sat, 29 Dec 2018 02:09:31 GMT  
+		Size: 13.8 KB (13824 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad18d60f85920437d32d5ff4be34031ff3a01c7373ff5ece0990d2d462bb2eb7`  
-		Last Modified: Mon, 19 Nov 2018 23:22:12 GMT  
-		Size: 55.3 MB (55286919 bytes)  
+	-	`sha256:e70030af21a72c5ba2a33b0102b827f78da6b5e518dd314a2ca34b79d6e8cf80`  
+		Last Modified: Sat, 29 Dec 2018 02:09:48 GMT  
+		Size: 55.3 MB (55268670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4fd05ee7526f8c1cc98fffe1ecaf9799e34b9a37a78236534c33bff47f55664`  
-		Last Modified: Mon, 19 Nov 2018 23:22:02 GMT  
-		Size: 10.6 MB (10608916 bytes)  
+	-	`sha256:9c2908cd5196a7ef005467939e85ce6da5b36d52be1b45e5004f1a4ecea20a40`  
+		Last Modified: Sat, 29 Dec 2018 02:09:34 GMT  
+		Size: 10.6 MB (10606325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1`
 
 ```console
-$ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c1739f0041fb53c6
+$ docker pull fsharp@sha256:8a3b3afce01aecf74c4ee648234e79c2588758ffdcd99a27bd18e02377383839
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -905,47 +905,47 @@ $ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c173
 ### `fsharp:4.1` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:bb4a36eb21865e4c548f6955945448c2c1f393d717460f2660d02807e3e7ab41
+$ docker pull fsharp@sha256:1248c516a95fb778a5551180fa8f00355d83298896fe6f40bdfef8d870363528
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.3 MB (176297699 bytes)**  
+-	Total Size: **176.3 MB (176290348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:022fb78379edb9b1c4fe0f32489e668399cb00ca0b1e52a1f68e6826e2c52265`
+-	Image ID: `sha256:424c1c1c173d93092c8ffdbbf0e42d6283338ae187a97f7c06646170f54557c6`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Thu, 15 Nov 2018 22:34:24 GMT
-ADD file:e9f2e31ca621ef0c68e6a429b08e2e874fb0a1b8f98fe675a5e036ccd9dd9e40 in / 
-# Thu, 15 Nov 2018 22:34:24 GMT
+# Fri, 28 Dec 2018 23:24:10 GMT
+ADD file:74e9771816fa7d109fa79427ea1b8615f036838a9c02d4fe124035b440692cfd in / 
+# Fri, 28 Dec 2018 23:24:12 GMT
 CMD ["bash"]
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 16 Nov 2018 12:28:25 GMT
+# Sat, 29 Dec 2018 01:57:47 GMT
 RUN MONO_VERSION=5.8.0.108 &&     FSHARP_VERSION=4.1.34 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel msbuild ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 WORKDIR /root
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:a92a4af0fb9c102a6d410fbd9c77c3119cd91a2230064f6c5b398fd97e3bff71`  
-		Last Modified: Thu, 15 Nov 2018 22:56:37 GMT  
-		Size: 30.1 MB (30129457 bytes)  
+	-	`sha256:436214a91f468dfbb145ef1658128dc3f3c35f5af545a90c9a60a6c42968ac87`  
+		Last Modified: Fri, 28 Dec 2018 23:33:59 GMT  
+		Size: 30.2 MB (30153953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f071202b107b678bd29630ff782173a67228dbf6c072f2e124a062e0eaf97b58`  
-		Last Modified: Fri, 16 Nov 2018 12:31:10 GMT  
-		Size: 146.2 MB (146168242 bytes)  
+	-	`sha256:fae987113a35452af45f6e7d0e8d93af1bfe25bcbba68aa09bda76ee79a60c7a`  
+		Last Modified: Sat, 29 Dec 2018 02:09:25 GMT  
+		Size: 146.1 MB (146136395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.34`
 
 ```console
-$ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c1739f0041fb53c6
+$ docker pull fsharp@sha256:8a3b3afce01aecf74c4ee648234e79c2588758ffdcd99a27bd18e02377383839
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -955,41 +955,41 @@ $ docker pull fsharp@sha256:d111d0e86a18197ffc786653cc8b79cf2de1ac94b767dc33c173
 ### `fsharp:4.1.34` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:bb4a36eb21865e4c548f6955945448c2c1f393d717460f2660d02807e3e7ab41
+$ docker pull fsharp@sha256:1248c516a95fb778a5551180fa8f00355d83298896fe6f40bdfef8d870363528
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.3 MB (176297699 bytes)**  
+-	Total Size: **176.3 MB (176290348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:022fb78379edb9b1c4fe0f32489e668399cb00ca0b1e52a1f68e6826e2c52265`
+-	Image ID: `sha256:424c1c1c173d93092c8ffdbbf0e42d6283338ae187a97f7c06646170f54557c6`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Thu, 15 Nov 2018 22:34:24 GMT
-ADD file:e9f2e31ca621ef0c68e6a429b08e2e874fb0a1b8f98fe675a5e036ccd9dd9e40 in / 
-# Thu, 15 Nov 2018 22:34:24 GMT
+# Fri, 28 Dec 2018 23:24:10 GMT
+ADD file:74e9771816fa7d109fa79427ea1b8615f036838a9c02d4fe124035b440692cfd in / 
+# Fri, 28 Dec 2018 23:24:12 GMT
 CMD ["bash"]
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 16 Nov 2018 12:10:38 GMT
+# Sat, 29 Dec 2018 01:44:53 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 16 Nov 2018 12:28:25 GMT
+# Sat, 29 Dec 2018 01:57:47 GMT
 RUN MONO_VERSION=5.8.0.108 &&     FSHARP_VERSION=4.1.34 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel msbuild ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 WORKDIR /root
-# Fri, 16 Nov 2018 12:28:26 GMT
+# Sat, 29 Dec 2018 01:57:48 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:a92a4af0fb9c102a6d410fbd9c77c3119cd91a2230064f6c5b398fd97e3bff71`  
-		Last Modified: Thu, 15 Nov 2018 22:56:37 GMT  
-		Size: 30.1 MB (30129457 bytes)  
+	-	`sha256:436214a91f468dfbb145ef1658128dc3f3c35f5af545a90c9a60a6c42968ac87`  
+		Last Modified: Fri, 28 Dec 2018 23:33:59 GMT  
+		Size: 30.2 MB (30153953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f071202b107b678bd29630ff782173a67228dbf6c072f2e124a062e0eaf97b58`  
-		Last Modified: Fri, 16 Nov 2018 12:31:10 GMT  
-		Size: 146.2 MB (146168242 bytes)  
+	-	`sha256:fae987113a35452af45f6e7d0e8d93af1bfe25bcbba68aa09bda76ee79a60c7a`  
+		Last Modified: Sat, 29 Dec 2018 02:09:25 GMT  
+		Size: 146.1 MB (146136395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:latest`
