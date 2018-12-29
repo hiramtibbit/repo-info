@@ -1,7 +1,7 @@
 ## `nginx:stable`
 
 ```console
-$ docker pull nginx@sha256:897da6b6c4477e3969385712de582a7f96c946424fc2730427fcb81e72635842
+$ docker pull nginx@sha256:8d9d48bb3592f07a2802534cb6cd4299e0f9bed0ff08c367ad52ddabea94de42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,51 +16,51 @@ $ docker pull nginx@sha256:897da6b6c4477e3969385712de582a7f96c946424fc2730427fcb
 ### `nginx:stable` - linux; amd64
 
 ```console
-$ docker pull nginx@sha256:cb290ced5afcdfbb078233c5f6925e7c1b8e817d633fb38ecb6951b9cc7dee0c
+$ docker pull nginx@sha256:d42c8f779bfb6f91f99682edd291793a02649b923afc351b1964ce5798ca7703
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.7 MB (44691461 bytes)**  
+-	Total Size: **44.7 MB (44698112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7dfe30a82fbb7d23fcbd1257e7a5d7fb37f3bad011324f4d48733395130cced`
+-	Image ID: `sha256:3f55d5bb33f3ae6e7f232c82f3bc09f2aa8029d9d213bf69324c95ac1cb9d7ae`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Thu, 15 Nov 2018 22:45:06 GMT
-ADD file:dab9baf938799c515ddce14c02f899da5992f0b76a432fa10a2338556a3cb04f in / 
-# Thu, 15 Nov 2018 22:45:07 GMT
+# Fri, 28 Dec 2018 23:30:06 GMT
+ADD file:6d6f6f123e45697d3e73ea24621e4fd8da0ed5cf7504767f6b3120671fe6e7d1 in / 
+# Fri, 28 Dec 2018 23:30:06 GMT
 CMD ["bash"]
-# Fri, 16 Nov 2018 13:31:11 GMT
+# Sat, 29 Dec 2018 03:30:50 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Thu, 06 Dec 2018 00:20:58 GMT
+# Sat, 29 Dec 2018 03:32:27 GMT
 ENV NGINX_VERSION=1.14.2-1~stretch
-# Thu, 06 Dec 2018 00:20:59 GMT
+# Sat, 29 Dec 2018 03:32:27 GMT
 ENV NJS_VERSION=1.14.2.0.2.6-1~stretch
-# Thu, 06 Dec 2018 00:21:28 GMT
+# Sat, 29 Dec 2018 03:33:02 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y gnupg1 apt-transport-https ca-certificates 	&& 	NGINX_GPGKEY=573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62; 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $NGINX_GPGKEY from $server"; 		apt-key adv --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$NGINX_GPGKEY" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $NGINX_GPGKEY" && exit 1; 	apt-get remove --purge --auto-remove -y gnupg1 && rm -rf /var/lib/apt/lists/* 	&& dpkgArch="$(dpkg --print-architecture)" 	&& nginxPackages=" 		nginx=${NGINX_VERSION} 		nginx-module-xslt=${NGINX_VERSION} 		nginx-module-geoip=${NGINX_VERSION} 		nginx-module-image-filter=${NGINX_VERSION} 		nginx-module-njs=${NJS_VERSION} 	" 	&& case "$dpkgArch" in 		amd64|i386) 			echo "deb https://nginx.org/packages/debian/ stretch nginx" >> /etc/apt/sources.list.d/nginx.list 			&& apt-get update 			;; 		*) 			echo "deb-src https://nginx.org/packages/debian/ stretch nginx" >> /etc/apt/sources.list.d/nginx.list 						&& tempDir="$(mktemp -d)" 			&& chmod 777 "$tempDir" 						&& savedAptMark="$(apt-mark showmanual)" 						&& apt-get update 			&& apt-get build-dep -y $nginxPackages 			&& ( 				cd "$tempDir" 				&& DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 					apt-get source --compile $nginxPackages 			) 						&& apt-mark showmanual | xargs apt-mark auto > /dev/null 			&& { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; } 						&& ls -lAFh "$tempDir" 			&& ( cd "$tempDir" && dpkg-scanpackages . > Packages ) 			&& grep '^Package: ' "$tempDir/Packages" 			&& echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list 			&& apt-get -o Acquire::GzipIndexes=false update 			;; 	esac 		&& apt-get install --no-install-recommends --no-install-suggests -y 						$nginxPackages 						gettext-base 	&& apt-get remove --purge --auto-remove -y apt-transport-https ca-certificates && rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/nginx.list 		&& if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove 		&& rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi
-# Thu, 06 Dec 2018 00:21:31 GMT
+# Sat, 29 Dec 2018 03:33:03 GMT
 RUN ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Thu, 06 Dec 2018 00:21:46 GMT
-EXPOSE 80/tcp
-# Thu, 06 Dec 2018 00:21:46 GMT
-STOPSIGNAL [SIGTERM]
-# Thu, 06 Dec 2018 00:21:46 GMT
+# Sat, 29 Dec 2018 03:33:03 GMT
+EXPOSE 80
+# Sat, 29 Dec 2018 03:33:03 GMT
+STOPSIGNAL SIGTERM
+# Sat, 29 Dec 2018 03:33:04 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:a5a6f2f73cd8abbdc55d0df0d8834f7262713e87d6c8800ea3851f103025e0f0`  
-		Last Modified: Thu, 15 Nov 2018 23:12:57 GMT  
-		Size: 22.5 MB (22486277 bytes)  
+	-	`sha256:177e7ef0df6987e0c5738a1fb5aba98b6b6e7a5fef992e481977dbb5ba3f91be`  
+		Last Modified: Fri, 28 Dec 2018 23:36:01 GMT  
+		Size: 22.5 MB (22492916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a32bfb24a51943ac8bd4d53be7768d377088bd53447f66ff52db9cda5e620bd`  
-		Last Modified: Thu, 06 Dec 2018 00:28:19 GMT  
-		Size: 22.2 MB (22204981 bytes)  
+	-	`sha256:132d4353ecd57fddb560602ed07ca9822240c94c050d0c8877c2af180b2a3387`  
+		Last Modified: Sat, 29 Dec 2018 03:35:02 GMT  
+		Size: 22.2 MB (22204994 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b30849834152c73ea813ad858a0f86b389ce3d80ae5938c0f7045fc7f895a792`  
-		Last Modified: Thu, 06 Dec 2018 00:28:15 GMT  
-		Size: 203.0 B  
+	-	`sha256:9482632c8a8ffa4dd5d31d1f0dd9c6c7cfc25b7d14bc6a456a41dd0ca0dcbcc3`  
+		Last Modified: Sat, 29 Dec 2018 03:34:58 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nginx:stable` - linux; arm variant v7
