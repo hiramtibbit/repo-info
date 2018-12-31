@@ -170,6 +170,10 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-files/8+deb8u10/
+
 
 ### `dpkg` source package: `base-passwd=3.5.37`
 
@@ -2561,6 +2565,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tzdata/2018d-0+deb8u1/
 
 
 ### `dpkg` source package: `ustr=1.0.4-3`
