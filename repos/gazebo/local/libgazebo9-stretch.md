@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efcacc306db9d3def91abf81d7f5045b028ba5cd69bc2ea675c97ad14a79c74b`
-- Created: `2018-12-24T23:36:08.692442033Z`
+- Image ID: `sha256:e086a669e3c28f61b29a517d20d39f122ef73f68afd24c14458a9f6604fdd67e`
+- Created: `2018-12-29T00:14:18.830687054Z`
 - Virtual Size: ~ 1.74 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3346,11 +3346,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libaec/0.3.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libaec/0.3.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libarchive=3.2.2-2`
+### `dpkg` source package: `libarchive=3.2.2-2+deb9u1`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.2.2-2`
+- `libarchive13:amd64=3.2.2-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -3366,17 +3366,17 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libarchive=3.2.2-2
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2-2.dsc' libarchive_3.2.2-2.dsc 2482 SHA256:9b99d67a8c48e3b806c3e7cccbc7c65d9c638057e836427d2f287c1f882de826
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2-2.debian.tar.xz' libarchive_3.2.2-2.debian.tar.xz 15220 SHA256:92e91195aabea4dfce3d26a38ff385922fe79051f3a7196ce350b44c592a967d
+$ apt-get source -qq --print-uris libarchive=3.2.2-2+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2-2+deb9u1.dsc' libarchive_3.2.2-2+deb9u1.dsc 2636 SHA256:aca78d3d03fd5ef9ab4ec3e42a701ec8f767ab7757c459c168c56229165bb5a5
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2-2+deb9u1.debian.tar.xz' libarchive_3.2.2-2+deb9u1.debian.tar.xz 18624 SHA256:0e22308dbacd841ab4c2a0f04ad343afa24d398e69c31064df84c70f4589307c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libarchive/3.2.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libarchive/3.2.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libarchive/3.2.2-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libarchive/3.2.2-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libarchive/3.2.2-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libarchive/3.2.2-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libass=1:0.13.4-2`
 
@@ -7659,35 +7659,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl1.0/1.0.2q-1~deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl1.0/1.0.2q-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.0f-3+deb9u2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.0j-1~deb9u1`
 - `openssl=1.1.0j-1~deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  

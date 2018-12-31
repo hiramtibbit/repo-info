@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bcc838b7215c300f6014a1228976a09956371bf6b29cb041078ef5b60805df76`
-- Created: `2018-12-24T23:25:26.869569038Z`
-- Virtual Size: ~ 1.49 Gb  
+- Image ID: `sha256:a6e2c5fffdc4e9dcc95437f2eff7664f061b60be37eb0eaaa28f31293812e274`
+- Created: `2018-12-29T00:02:59.625868994Z`
+- Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -5340,19 +5340,24 @@ $ apt-get source -qq --print-uris openjpeg=1:1.5.2-3.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg/openjpeg_1.5.2-3.1.debian.tar.xz' openjpeg_1.5.2-3.1.debian.tar.xz 18660 SHA256:c45f580c9dbdeffe9bc0e1f4f5c69b7a661568771339424690c81e138b973285
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.dsc' openldap_2.4.42+dfsg-2ubuntu3.4.dsc 3054 SHA256:52339a3445ea29c60349d2c2cb5639c17663b7661a5166ecd2fc891631ac0a6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz 178300 SHA256:2951df1d5e470328e4d619c5f35dbc3577d501d2e65bfcef45db57558aa93929
+```
 
 ### `dpkg` source package: `openmpi=1.10.2-8ubuntu1`
 
@@ -6350,6 +6355,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/snappy/1.1.3-2/
+
 
 ### `dpkg` source package: `spatialite=4.3.0a-5`
 
@@ -6446,14 +6455,14 @@ $ apt-get source -qq --print-uris superlu=4.3+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_4.3+dfsg-3.debian.tar.xz' superlu_4.3+dfsg-3.debian.tar.xz 8472 SHA256:49b450efda3b636894fb66b0998c6246d5df1f6ad9135a5c7c4983dd630c8fc4
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.8`
+### `dpkg` source package: `systemd=229-4ubuntu21.10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.8`
-- `libudev1:amd64=229-4ubuntu21.8`
-- `systemd=229-4ubuntu21.8`
-- `systemd-sysv=229-4ubuntu21.8`
+- `libsystemd0:amd64=229-4ubuntu21.10`
+- `libudev1:amd64=229-4ubuntu21.10`
+- `systemd=229-4ubuntu21.10`
+- `systemd-sysv=229-4ubuntu21.10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -6465,9 +6474,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.dsc' systemd_229-4ubuntu21.10.dsc 4145 SHA256:21886574d7b979953591d74c1f0a43da6a04ae6b58301a47c590618d79cae866
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.debian.tar.xz' systemd_229-4ubuntu21.10.debian.tar.xz 283812 SHA256:01d4b43e70aa2642e80416ea3cf2c627f830aaa896fa63c41a1d09e5e4a91051
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 

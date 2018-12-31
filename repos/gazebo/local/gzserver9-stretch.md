@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:67e603681d7af1a35e45ea1ce939a743a98e080cb117068b2de45d5ea2d9903a`
-- Created: `2018-12-24T23:34:24.174488834Z`
-- Virtual Size: ~ 804.31 Mb  
+- Image ID: `sha256:f2e3bc164bef96647aed6cc9bdb3cb7738f5001415e525592ec115330473c83d`
+- Created: `2018-12-29T00:12:38.958596481Z`
+- Virtual Size: ~ 804.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -6557,35 +6557,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl1.0/1.0.2q-1~deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl1.0/1.0.2q-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.0f-3+deb9u2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.0j-1~deb9u1`
 - `openssl=1.1.0j-1~deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -6745,11 +6721,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.24.1-3+deb9u4`
+### `dpkg` source package: `perl=5.24.1-3+deb9u5`
 
 Binary Packages:
 
-- `perl-base=5.24.1-3+deb9u4`
+- `perl-base=5.24.1-3+deb9u5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -6784,17 +6760,17 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u4.dsc' perl_5.24.1-3+deb9u4.dsc 2393 SHA256:439fd400e8f7659679acac82bb6178c33e1c7cea161210c5051f8c78c2df004b
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u4.debian.tar.xz' perl_5.24.1-3+deb9u4.debian.tar.xz 179936 SHA256:96b1e96a4ac72bb937f53079806fe0d6127da8fbf40d113d618a240aa378745c
+$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u5
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u5.dsc' perl_5.24.1-3+deb9u5.dsc 2393 SHA256:d30a446b21afb8f3c0da9bc117244646ef34a05c440a18bcd5c114ee87f8293f
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u5.debian.tar.xz' perl_5.24.1-3+deb9u5.debian.tar.xz 185316 SHA256:fbb78d029b5a9a94e32feba2e360d3628a8a6de90066f90ff22e78d4918aab69
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u5/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
