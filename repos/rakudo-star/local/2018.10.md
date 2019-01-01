@@ -990,6 +990,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/
+
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -2538,6 +2542,10 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-3/
+
 
 ### `dpkg` source package: `shadow=1:4.4-4.1`
 
@@ -2633,6 +2641,10 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.9.5-1+deb9u2/
 
 
 ### `dpkg` source package: `systemd=232-25+deb9u4`
