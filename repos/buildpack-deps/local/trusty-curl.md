@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2de6f4f001b3258d2c1ae2d69799671ff7c1209ea75d999fa6a2f220aa1818bc`
-- Created: `2018-11-19T21:58:18.471174625Z`
+- Image ID: `sha256:2ed677ed08b373d5deb9bc3fa0a7f7a1b01329231baacb713bea8086fe0e1b08`
+- Created: `2018-12-29T00:06:59.551670256Z`
 - Virtual Size: ~ 199.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2011,11 +2011,11 @@ $ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.13
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.13.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.13.debian.tar.gz 164317 SHA256:69ee1bce4fb6f48b61eea68ab911f52ef3a41c7f875131cf481d63acc0614db1
 ```
 
-### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.4`
+### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.5`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
+- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2024,26 +2024,31 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
+$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.5.dsc' openldap_2.4.31-1+nmu2ubuntu8.5.dsc 2904 SHA256:5a3db191b4b7fa2572254be1430db734472134c4e58f2ca63dc6e7b253394102
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.5.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.5.diff.gz 176564 SHA256:5e0681bb546aec9621f7e58685b279229a45c3d904eaf450443d492bf94cbd01
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.26`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.27`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.26`
-- `openssl=1.0.1f-1ubuntu2.26`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.27`
+- `openssl=1.0.1f-1ubuntu2.27`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.27
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.27.dsc' openssl_1.0.1f-1ubuntu2.27.dsc 2384 SHA256:b1a1dd09a6a3d8120d0eedfc8fd152b7e1c5ddb3027461259390b612097c3390
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.27.debian.tar.gz' openssl_1.0.1f-1ubuntu2.27.debian.tar.gz 281994 SHA256:8ca27108da300048c1cbdcaea16278c9bfd0ee55cae974b57e8410abc863aeaa
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -2107,13 +2112,13 @@ $ apt-get source -qq --print-uris pcre3=1:8.31-2ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.31-2ubuntu2.3.debian.tar.gz' pcre3_8.31-2ubuntu2.3.debian.tar.gz 32334 SHA256:abd464618602848585b85bcf6ed197839f1359e3dbe887d7d8aed856f277ed9f
 ```
 
-### `dpkg` source package: `perl=5.18.2-2ubuntu1.6`
+### `dpkg` source package: `perl=5.18.2-2ubuntu1.7`
 
 Binary Packages:
 
-- `perl=5.18.2-2ubuntu1.6`
-- `perl-base=5.18.2-2ubuntu1.6`
-- `perl-modules=5.18.2-2ubuntu1.6`
+- `perl=5.18.2-2ubuntu1.7`
+- `perl-base=5.18.2-2ubuntu1.7`
+- `perl-modules=5.18.2-2ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -2143,9 +2148,14 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.7.dsc' perl_5.18.2-2ubuntu1.7.dsc 2465 SHA256:c3df84db697577b3f0415de1054c5e127b5013e982dc7b31e6129b6b6bc051df
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.7.debian.tar.gz' perl_5.18.2-2ubuntu1.7.debian.tar.gz 146833 SHA256:ea6a3ddea4829605cb0dbf59701fe73f7843d7275137c14164a908db36c50ef4
+```
 
 ### `dpkg` source package: `plymouth=0.8.8-0ubuntu17.2`
 
@@ -2468,12 +2478,12 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.28`
+### `dpkg` source package: `systemd=204-5ubuntu20.29`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.28`
-- `udev=204-5ubuntu20.28`
+- `libudev1:amd64=204-5ubuntu20.29`
+- `udev=204-5ubuntu20.29`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2484,9 +2494,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.29
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.dsc' systemd_204-5ubuntu20.29.dsc 3711 SHA256:9b1003fab6f0181c4aed6f0527a4214d6440107ff3a6e8729c555cb915260722
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.29.debian.tar.gz' systemd_204-5ubuntu20.29.debian.tar.gz 180084 SHA256:005127c686251cd81e3503295f22be40f80730adbb4bdac7ba869534499c5eac
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -2539,14 +2554,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.dsc' tzdata_2018g-0ubuntu0.14.04.dsc 2080 SHA256:b0cebc355c6e60033ae471b76ca50962a92c20aaf1044f6f4fd21e894055e783
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.debian.tar.xz' tzdata_2018g-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:71b1d88ca95860408140367ed60e3d2918deea06ff8b03c065784e00803e9180
-```
 
 ### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cad12a29ec327538c1da53a48f6e70ba229782235805b1b6d0d474619c2107c9`
-- Created: `2018-11-19T22:02:24.799489151Z`
-- Virtual Size: ~ 133.07 Mb  
+- Image ID: `sha256:23cdeecb4c746444e4efcc52d0fc06c235dfd188020d97a9872c2a59a7007d7e`
+- Created: `2018-12-29T00:12:03.205789692Z`
+- Virtual Size: ~ 133.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -496,12 +496,12 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20160126-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20160126-2.debian.tar.xz' findutils_4.6.0+git+20160126-2.debian.tar.xz 25080 SHA256:58bf1e7a07fbac6a68693b099ec6fc9a6166e0b1b60cebe6bac3b90287a8dc3f
 ```
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.10`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.11`
 
 Binary Packages:
 
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.10`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -514,10 +514,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.10
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.11.dsc' gcc-5_5.4.0-6ubuntu1~16.04.11.dsc 28318 SHA256:fd7629f95cb155f067a2fea1d54a6e31684df2f669b9f23d3521c5ed4aafc7cc
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.11.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.11.diff.gz 1486206 SHA256:f5fb02ea3cf13efbc95c2a75d39b426b8a2cf167c3d6cbe103711e40a10f8cd8
 ```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
@@ -1228,34 +1228,44 @@ $ apt-get source -qq --print-uris nettle=3.2-1ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz' nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz 21340 SHA256:49e9715ec8f211831efeaa90122fb16126e39d2cf0739fecd572621b5e55a097
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.dsc' openldap_2.4.42+dfsg-2ubuntu3.4.dsc 3054 SHA256:52339a3445ea29c60349d2c2cb5639c17663b7661a5166ecd2fc891631ac0a6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz 178300 SHA256:2951df1d5e470328e4d619c5f35dbc3577d501d2e65bfcef45db57558aa93929
+```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.14`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.13`
-- `openssl=1.0.2g-1ubuntu4.13`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.14`
+- `openssl=1.0.2g-1ubuntu4.14`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.14
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.14.dsc' openssl_1.0.2g-1ubuntu4.14.dsc 2453 SHA256:22854d162e9b99f442cd395bc115167dd7720574202eaf57377eba77b876605a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.14.debian.tar.xz' openssl_1.0.2g-1ubuntu4.14.debian.tar.xz 130020 SHA256:f10ca048b9a3ee310fd5cb3c75446bfdc1a353ec1884abccf545224af8f85ea7
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
@@ -1321,11 +1331,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9ubuntu0.5`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.6`
 
 Binary Packages:
 
-- `perl-base=5.22.1-9ubuntu0.5`
+- `perl-base=5.22.1-9ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1356,9 +1366,14 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.dsc' perl_5.22.1-9ubuntu0.6.dsc 2480 SHA256:5e45c28174bac9738045c0be2b13f82db99aa1148796c5cdfa4ee151a57ed9ed
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.debian.tar.xz' perl_5.22.1-9ubuntu0.6.debian.tar.xz 161972 SHA256:8ada4467517b405493c876ba78121ff4ec25eed15cfbbc65682da461050a1f6b
+```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 
@@ -1504,14 +1519,14 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.8`
+### `dpkg` source package: `systemd=229-4ubuntu21.10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.8`
-- `libudev1:amd64=229-4ubuntu21.8`
-- `systemd=229-4ubuntu21.8`
-- `systemd-sysv=229-4ubuntu21.8`
+- `libsystemd0:amd64=229-4ubuntu21.10`
+- `libudev1:amd64=229-4ubuntu21.10`
+- `systemd=229-4ubuntu21.10`
+- `systemd-sysv=229-4ubuntu21.10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1523,9 +1538,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.dsc' systemd_229-4ubuntu21.10.dsc 4145 SHA256:21886574d7b979953591d74c1f0a43da6a04ae6b58301a47c590618d79cae866
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.debian.tar.xz' systemd_229-4ubuntu21.10.debian.tar.xz 283812 SHA256:01d4b43e70aa2642e80416ea3cf2c627f830aaa896fa63c41a1d09e5e4a91051
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 

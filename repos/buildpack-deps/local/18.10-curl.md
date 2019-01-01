@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbfd4214feef8b205226f0bf182c5101d7ff6c552b56ddaaba18c4bf2f45e8db`
-- Created: `2018-11-19T21:53:06.303291829Z`
-- Virtual Size: ~ 94.77 Mb  
+- Image ID: `sha256:060fa826b616ddf12184856e8dd30e58f8a1dcd2c69054c08b98c368a63c9358`
+- Created: `2018-12-28T23:49:30.069782569Z`
+- Virtual Size: ~ 94.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -411,14 +411,14 @@ $ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu5.tar.xz' dpkg_1.19.0.5ubuntu5.tar.xz 4587016 SHA256:75ace78245f4355c2d4628b150b0b3aecb64b50c5b859f661b9f742f7e4696f1
 ```
 
-### `dpkg` source package: `e2fsprogs=1.44.4-2`
+### `dpkg` source package: `e2fsprogs=1.44.4-2ubuntu0.1`
 
 Binary Packages:
 
-- `e2fsprogs=1.44.4-2`
-- `libcom-err2:amd64=1.44.4-2`
-- `libext2fs2:amd64=1.44.4-2`
-- `libss2:amd64=1.44.4-2`
+- `e2fsprogs=1.44.4-2ubuntu0.1`
+- `libcom-err2:amd64=1.44.4-2ubuntu0.1`
+- `libext2fs2:amd64=1.44.4-2ubuntu0.1`
+- `libss2:amd64=1.44.4-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`)
 
@@ -428,10 +428,10 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.dsc' e2fsprogs_1.44.4-2.dsc 2494 SHA256:fd92d2d786434c29b07932ca3d4e778345f022aa4221c8c4387744e5723854ac
+$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.dsc' e2fsprogs_1.44.4-2ubuntu0.1.dsc 2991 SHA256:1051b6e74f58090c9a692e27c1a04ebbc49ec51b925a461802c9faa812ffe0cb
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.debian.tar.xz' e2fsprogs_1.44.4-2.debian.tar.xz 80640 SHA256:b72fdfbda6b96338432222d25c9be639e0d800d50533fa345f32789925282d5c
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz' e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz 81492 SHA256:ee2dbd7294b4ffb7d6fa8f6e2da0184d914f14b707c924d204187e1e35e11fbe
 ```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20180808-2`
@@ -1259,12 +1259,12 @@ $ apt-get source -qq --print-uris npth=1.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-1.debian.tar.xz' npth_1.6-1.debian.tar.xz 10532 SHA256:d312d4a3cf1d082e2f2cf3ea752c41d34f7e120f77a941c6c1680e6093834353
 ```
 
-### `dpkg` source package: `openldap=2.4.46+dfsg-5ubuntu1`
+### `dpkg` source package: `openldap=2.4.46+dfsg-5ubuntu1.1`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.46+dfsg-5ubuntu1`
-- `libldap-common=2.4.46+dfsg-5ubuntu1`
+- `libldap-2.4-2:amd64=2.4.46+dfsg-5ubuntu1.1`
+- `libldap-common=2.4.46+dfsg-5ubuntu1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1273,18 +1273,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.46+dfsg-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.46+dfsg-5ubuntu1.dsc' openldap_2.4.46+dfsg-5ubuntu1.dsc 2707 SHA256:7c87ad2962f080d288aa4518ca9be64a30e89b622213ae4d009964c6314d6b75
+$ apt-get source -qq --print-uris openldap=2.4.46+dfsg-5ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.46+dfsg-5ubuntu1.1.dsc' openldap_2.4.46+dfsg-5ubuntu1.1.dsc 2747 SHA256:f15d6c161f2ca81e2569135d6cc233d3be6fa9b57e6cf4137ccab6fd1162ee5a
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.46+dfsg.orig.tar.gz' openldap_2.4.46+dfsg.orig.tar.gz 4873832 SHA256:e93cb511f6bce162c27502d0d240e6410a8f14e72c47ddddb4e69b25b7c538e4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.46+dfsg-5ubuntu1.debian.tar.xz' openldap_2.4.46+dfsg-5ubuntu1.debian.tar.xz 175304 SHA256:2459a3e834e1fbb7a148c8444ca223153f8ffc988d91c6f7c44d9a4ec0d234da
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.46+dfsg-5ubuntu1.1.debian.tar.xz' openldap_2.4.46+dfsg-5ubuntu1.1.debian.tar.xz 175348 SHA256:5559e66c9770d8a2ee5bd3b7aa5a2d34821189a6827051d125774b901c2d782a
 ```
 
-### `dpkg` source package: `openssl=1.1.1-1ubuntu2`
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1-1ubuntu2`
-- `openssl=1.1.1-1ubuntu2`
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1`
+- `openssl=1.1.1-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1293,11 +1293,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.dsc' openssl_1.1.1-1ubuntu2.dsc 2386 SHA256:1650cd469debf943bd63778b7fd28aab45d32967649ddb4f48915579083935f0
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.dsc' openssl_1.1.1-1ubuntu2.1.dsc 2719 SHA256:64c5d3688e63bded6a00018a19d5947a7f53dee01bb6edb90310a3ec5c979674
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.debian.tar.xz' openssl_1.1.1-1ubuntu2.debian.tar.xz 84128 SHA256:cc1874f2dba3ba250e52fcd545d3acf49b2ca7537f60478f3e728f11cbf282b3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1.debian.tar.xz' openssl_1.1.1-1ubuntu2.1.debian.tar.xz 86872 SHA256:b4f545cac59220e73c5c2148b622e9239bd2c39a48cf0d98b0e316840c53ca86
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
@@ -1364,11 +1364,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-11
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.debian.tar.gz' pcre3_8.39-11.debian.tar.gz 26414 SHA256:de1f66246fe7b4e85fba0f9e3bac69bdf3271a9c5c6b7ac0661b20051c012883
 ```
 
-### `dpkg` source package: `perl=5.26.2-7`
+### `dpkg` source package: `perl=5.26.2-7ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.26.2-7`
+- `perl-base=5.26.2-7ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1404,11 +1404,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.26.2-7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7.dsc' perl_5.26.2-7.dsc 2780 SHA256:5c385bc8c8d6ad08e1ed2942ba4e71dd684b81b744a219d0843b3d60dd50657d
+$ apt-get source -qq --print-uris perl=5.26.2-7ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7ubuntu0.1.dsc' perl_5.26.2-7ubuntu0.1.dsc 2870 SHA256:4a45393dc99052c75d4bcc459acc75774e10b9a2286f510689f16d414a1823ce
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7.debian.tar.xz' perl_5.26.2-7.debian.tar.xz 167472 SHA256:84223fbd68d617a2bf3734ebe622b381c74d435aec67c5e17cf60ecb5af6ecb1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7ubuntu0.1.debian.tar.xz' perl_5.26.2-7ubuntu0.1.debian.tar.xz 172948 SHA256:f6c0ac3f84d16576be408e582e942799a4d450fd0691097ba5a0779a22aea6b7
 ```
 
 ### `dpkg` source package: `pinentry=1.1.0-1build2`
@@ -1585,12 +1585,12 @@ $ apt-get source -qq --print-uris sqlite3=3.24.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
 ```
 
-### `dpkg` source package: `systemd=239-7ubuntu10.3`
+### `dpkg` source package: `systemd=239-7ubuntu10.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=239-7ubuntu10.3`
-- `libudev1:amd64=239-7ubuntu10.3`
+- `libsystemd0:amd64=239-7ubuntu10.4`
+- `libudev1:amd64=239-7ubuntu10.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1602,9 +1602,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=239-7ubuntu10.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.dsc' systemd_239-7ubuntu10.4.dsc 4666 SHA256:52b5e0aa8a07936cdbabb4528366a2eb6ff5c503fca9b79d8052a1ef1a3437ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.debian.tar.xz' systemd_239-7ubuntu10.4.debian.tar.xz 193104 SHA256:8a444f137e9430144bc096d5c32326679ab15faae874bcbdb775aee7810fdd0f
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
