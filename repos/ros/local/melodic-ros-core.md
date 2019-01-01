@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c120258206e78be9510cc7409f9b30f1ff1223b5169bbd16ac175b506196da52`
-- Created: `2018-11-19T23:24:35.074859505Z`
+- Image ID: `sha256:7732abc9219ecbde39789688d94bb9103d791ec84739c8c2559188b03373a61a`
+- Created: `2018-12-29T01:00:21.158426493Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1171,12 +1171,12 @@ $ apt-get source -qq --print-uris gdbm=1.14.1-6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-6.debian.tar.xz' gdbm_1.14.1-6.debian.tar.xz 27492 SHA256:c9da59f11d5e40ecd877f1256c53ea4750b9d614c7885800e42d0f1885996658
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.3`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.4`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.3`
-- `git-man=1:2.17.1-1ubuntu0.3`
+- `git=1:2.17.1-1ubuntu0.4`
+- `git-man=1:2.17.1-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1199,9 +1199,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.4.dsc' git_2.17.1-1ubuntu0.4.dsc 2943 SHA256:15b2496e63c2234fd6e9a4b03dac9e93bb6939bc5e432917afaf6b93a082224d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.4.debian.tar.xz' git_2.17.1-1ubuntu0.4.debian.tar.xz 574144 SHA256:58099c54314f64626f42a3e03469ffff9e63c877b0452818c8aebfb93b0fc7a0
+```
 
 ### `dpkg` source package: `glib2.0=2.56.3-0ubuntu0.18.04.1`
 
@@ -2459,19 +2464,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz 11124 SHA256:34a1ce5f77815f20941f962019cef0ad6ed0da77179f05609a5c67274485b477
 ```
 
-### `dpkg` source package: `linux=4.15.0-39.42`
+### `dpkg` source package: `linux=4.15.0-43.46`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-39.42`
+- `linux-libc-dev:amd64=4.15.0-43.46`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-43.46
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-43.46.dsc' linux_4.15.0-43.46.dsc 8025 SHA256:c1b66c6ed620b00848128c6d6611a0dce24abb18f93ef7f7ca4fcf7740b9b87b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-43.46.diff.gz' linux_4.15.0-43.46.diff.gz 8433784 SHA256:24ecde14018c3fea77869738744f8f32931447579828bdfc6ea7a50a5e61786f
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -2646,12 +2656,12 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mercurial=4.5.3-1ubuntu2`
+### `dpkg` source package: `mercurial=4.5.3-1ubuntu2.1`
 
 Binary Packages:
 
-- `mercurial=4.5.3-1ubuntu2`
-- `mercurial-common=4.5.3-1ubuntu2`
+- `mercurial=4.5.3-1ubuntu2.1`
+- `mercurial-common=4.5.3-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -2661,11 +2671,11 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=4.5.3-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.dsc' mercurial_4.5.3-1ubuntu2.dsc 2777 SHA256:3ddf9f4558ae60917f6d5e3f0a41f1e9eec573c5d3087917b522dfd605251fae
+$ apt-get source -qq --print-uris mercurial=4.5.3-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.1.dsc' mercurial_4.5.3-1ubuntu2.1.dsc 2760 SHA256:b2acaf07c4ef5aa7c3d347fcf880089821dc13e7e35ed2bf6f61fddefb5b6e34
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3.orig.tar.gz' mercurial_4.5.3.orig.tar.gz 5884837 SHA256:9c4cb257ef1e59e9aba693cc285a6136f7bb4e8300f598ff50ff8b6fc77808fc
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3.orig.tar.gz.asc' mercurial_4.5.3.orig.tar.gz.asc 833 SHA256:578a21314a0ab790777c88ae4af6bab66f8cf72e94f2d09580f9dfa3197ce326
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.debian.tar.xz' mercurial_4.5.3-1ubuntu2.debian.tar.xz 59088 SHA256:667e0aac817671416a1e1979cc68648da20f95efacdc92b12e78904dacc174e9
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.5.3-1ubuntu2.1.debian.tar.xz' mercurial_4.5.3-1ubuntu2.1.debian.tar.xz 61912 SHA256:d6026337786d4ee3e94a2f91312444e2a6668d6606c1a721f20ec177d0e1891b
 ```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
@@ -3000,13 +3010,13 @@ $ apt-get source -qq --print-uris ocl-icd=2.2.11-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/ocl-icd/ocl-icd_2.2.11-1ubuntu1.debian.tar.xz' ocl-icd_2.2.11-1ubuntu1.debian.tar.xz 11204 SHA256:2baece01c46beada400992cfcbe5b0facb822bae07bda5d98f1a7ad4d474415c
 ```
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1`
+### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.1`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1`
-- `libldap-common=2.4.45+dfsg-1ubuntu1`
-- `libldap2-dev:amd64=2.4.45+dfsg-1ubuntu1`
+- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.1`
+- `libldap-common=2.4.45+dfsg-1ubuntu1.1`
+- `libldap2-dev:amd64=2.4.45+dfsg-1ubuntu1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3015,10 +3025,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.dsc' openldap_2.4.45+dfsg-1ubuntu1.dsc 2765 SHA256:d7990a3ad576ff2b6e3ec32e76adf351b54edeb073b9368b1ee84ac71ca8b5b1
+$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.dsc' openldap_2.4.45+dfsg-1ubuntu1.1.dsc 2805 SHA256:9f673c1afea3e40d7c0c0510b772c7fb897e33e253ae6703ea6197401bd13086
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.1.debian.tar.xz 175268 SHA256:9440833280fe408c38bdcd9a58f3644d10c2ab3ef40871875fd644c559a8085a
 ```
 
 ### `dpkg` source package: `openmpi=2.1.1-8`
@@ -3043,22 +3053,28 @@ $ apt-get source -qq --print-uris openmpi=2.1.1-8
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openmpi/openmpi_2.1.1-8.debian.tar.xz' openmpi_2.1.1-8.debian.tar.xz 60008 SHA256:33ee9c1ebc8c5c5a8c60faa25efbcc8abfea101331b9318abae2e3a458fc937f
 ```
 
-### `dpkg` source package: `openssl=1.1.0g-2ubuntu4.1`
+### `dpkg` source package: `openssl=1.1.0g-2ubuntu4.3`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.1.0g-2ubuntu4.1`
-- `libssl-doc=1.1.0g-2ubuntu4.1`
-- `libssl1.1:amd64=1.1.0g-2ubuntu4.1`
-- `openssl=1.1.0g-2ubuntu4.1`
+- `libssl-dev:amd64=1.1.0g-2ubuntu4.3`
+- `libssl-doc=1.1.0g-2ubuntu4.3`
+- `libssl1.1:amd64=1.1.0g-2ubuntu4.3`
+- `openssl=1.1.0g-2ubuntu4.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0g-2ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu4.3.dsc' openssl_1.1.0g-2ubuntu4.3.dsc 2698 SHA256:80ac13c31b09a3412a4db6086961ee3a44ed924c5e08d9176daa4f873ad5af64
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz' openssl_1.1.0g.orig.tar.gz 5404748 SHA256:de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g.orig.tar.gz.asc' openssl_1.1.0g.orig.tar.gz.asc 455 SHA256:2a7532e6722aab8989644049ba5c1d3a5fce417aa4b18235eec901224098bbed
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.0g-2ubuntu4.3.debian.tar.xz' openssl_1.1.0g-2ubuntu4.3.debian.tar.xz 86600 SHA256:debb83bc324b415fdcc521600dafa527897213492bca8dfcdd46133d8d9ed9da
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
@@ -3166,14 +3182,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-9.debian.tar.gz' pcre3_8.39-9.debian.tar.gz 26333 SHA256:68be90799b722a8d5a075c3d2f48718cb21e2e736e0edf1e7e46a87c51215f55
 ```
 
-### `dpkg` source package: `perl=5.26.1-6ubuntu0.2`
+### `dpkg` source package: `perl=5.26.1-6ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.26:amd64=5.26.1-6ubuntu0.2`
-- `perl=5.26.1-6ubuntu0.2`
-- `perl-base=5.26.1-6ubuntu0.2`
-- `perl-modules-5.26=5.26.1-6ubuntu0.2`
+- `libperl5.26:amd64=5.26.1-6ubuntu0.3`
+- `perl=5.26.1-6ubuntu0.3`
+- `perl-base=5.26.1-6ubuntu0.3`
+- `perl-modules-5.26=5.26.1-6ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.26/copyright`)
 
@@ -3206,9 +3222,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.3.dsc' perl_5.26.1-6ubuntu0.3.dsc 2768 SHA256:76badc610c519409d121d4c9b965614a798f6a681d8427d5a63a898ef3f963e8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA256:fe8208133e73e47afc3251c08d2c21c5a60160165a8ab8b669c43a420e4ec680
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.3.debian.tar.xz' perl_5.26.1-6ubuntu0.3.debian.tar.xz 174240 SHA256:9f509fc771c8b46cea480cf464f4ddb83bd33160673607a02431e42a7fba9d61
+```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -4012,11 +4034,11 @@ $ apt-get source -qq --print-uris rhash=1.3.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.6-2.debian.tar.xz' rhash_1.3.6-2.debian.tar.xz 9672 SHA256:fcccfa3d3a5a7ac16395ec54fcfb4217a5ccf5718e762f3670276366061e5638
 ```
 
-### `dpkg` source package: `ros-melodic-actionlib-msgs=1.12.6-0bionic.20180606.215905`
+### `dpkg` source package: `ros-melodic-actionlib-msgs=1.12.7-0bionic.20181109.223847`
 
 Binary Packages:
 
-- `ros-melodic-actionlib-msgs=1.12.6-0bionic.20180606.215905`
+- `ros-melodic-actionlib-msgs=1.12.7-0bionic.20181109.223847`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4068,11 +4090,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-common-msgs=1.12.6-0bionic.20180907.002623`
+### `dpkg` source package: `ros-melodic-common-msgs=1.12.7-0bionic.20181112.205822`
 
 Binary Packages:
 
-- `ros-melodic-common-msgs=1.12.6-0bionic.20180907.002623`
+- `ros-melodic-common-msgs=1.12.7-0bionic.20181112.205822`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4096,11 +4118,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-diagnostic-msgs=1.12.6-0bionic.20180606.183822`
+### `dpkg` source package: `ros-melodic-diagnostic-msgs=1.12.7-0bionic.20181109.223847`
 
 Binary Packages:
 
-- `ros-melodic-diagnostic-msgs=1.12.6-0bionic.20180606.183822`
+- `ros-melodic-diagnostic-msgs=1.12.7-0bionic.20181109.223847`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4194,11 +4216,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-geometry-msgs=1.12.6-0bionic.20180606.191611`
+### `dpkg` source package: `ros-melodic-geometry-msgs=1.12.7-0bionic.20181109.223847`
 
 Binary Packages:
 
-- `ros-melodic-geometry-msgs=1.12.6-0bionic.20180606.191611`
+- `ros-melodic-geometry-msgs=1.12.7-0bionic.20181109.223847`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4208,11 +4230,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-message-filters=1.14.3-0bionic.20180906.225716`
+### `dpkg` source package: `ros-melodic-message-filters=1.14.3-0bionic.20181112.182550`
 
 Binary Packages:
 
-- `ros-melodic-message-filters=1.14.3-0bionic.20180906.225716`
+- `ros-melodic-message-filters=1.14.3-0bionic.20181112.182550`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4264,11 +4286,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nav-msgs=1.12.6-0bionic.20180606.220235`
+### `dpkg` source package: `ros-melodic-nav-msgs=1.12.7-0bionic.20181109.225243`
 
 Binary Packages:
 
-- `ros-melodic-nav-msgs=1.12.6-0bionic.20180606.220235`
+- `ros-melodic-nav-msgs=1.12.7-0bionic.20181109.225243`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4278,11 +4300,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-pluginlib=1.12.1-0bionic.20180906.222755`
+### `dpkg` source package: `ros-melodic-pluginlib=1.12.1-0bionic.20181112.172345`
 
 Binary Packages:
 
-- `ros-melodic-pluginlib=1.12.1-0bionic.20180906.222755`
+- `ros-melodic-pluginlib=1.12.1-0bionic.20181112.172345`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4292,11 +4314,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-comm=1.14.3-0bionic.20181015.225934`
+### `dpkg` source package: `ros-melodic-ros-comm=1.14.3-0bionic.20181112.202811`
 
 Binary Packages:
 
-- `ros-melodic-ros-comm=1.14.3-0bionic.20181015.225934`
+- `ros-melodic-ros-comm=1.14.3-0bionic.20181112.202811`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4306,11 +4328,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-core=1.4.1-0bionic.20181015.230802`
+### `dpkg` source package: `ros-melodic-ros-core=1.4.1-0bionic.20181112.205903`
 
 Binary Packages:
 
-- `ros-melodic-ros-core=1.4.1-0bionic.20181015.230802`
+- `ros-melodic-ros-core=1.4.1-0bionic.20181112.205903`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4362,11 +4384,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbag-storage=1.14.3-0bionic.20180906.225725`
+### `dpkg` source package: `ros-melodic-rosbag-storage=1.14.3-0bionic.20181112.185327`
 
 Binary Packages:
 
-- `ros-melodic-rosbag-storage=1.14.3-0bionic.20180906.225725`
+- `ros-melodic-rosbag-storage=1.14.3-0bionic.20181112.185327`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4376,11 +4398,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosbag=1.14.3-0bionic.20180906.230250`
+### `dpkg` source package: `ros-melodic-rosbag=1.14.3-0bionic.20181112.185825`
 
 Binary Packages:
 
-- `ros-melodic-rosbag=1.14.3-0bionic.20180906.230250`
+- `ros-melodic-rosbag=1.14.3-0bionic.20181112.185825`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4446,11 +4468,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosconsole-bridge=0.5.2-0bionic.20180906.222812`
+### `dpkg` source package: `ros-melodic-rosconsole-bridge=0.5.2-0bionic.20181112.172001`
 
 Binary Packages:
 
-- `ros-melodic-rosconsole-bridge=0.5.2-0bionic.20180906.222812`
+- `ros-melodic-rosconsole-bridge=0.5.2-0bionic.20181112.172001`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4460,11 +4482,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosconsole=1.13.7-0bionic.20180906.222240`
+### `dpkg` source package: `ros-melodic-rosconsole=1.13.9-0bionic.20181112.171419`
 
 Binary Packages:
 
-- `ros-melodic-rosconsole=1.13.7-0bionic.20180906.222240`
+- `ros-melodic-rosconsole=1.13.9-0bionic.20181112.171419`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4516,11 +4538,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roscpp=1.14.3-0bionic.20180906.222821`
+### `dpkg` source package: `ros-melodic-roscpp=1.14.3-0bionic.20181112.172149`
 
 Binary Packages:
 
-- `ros-melodic-roscpp=1.14.3-0bionic.20180906.222821`
+- `ros-melodic-roscpp=1.14.3-0bionic.20181112.172149`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4586,11 +4608,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roslaunch=1.14.3-0bionic.20180906.224754`
+### `dpkg` source package: `ros-melodic-roslaunch=1.14.3-0bionic.20181112.181542`
 
 Binary Packages:
 
-- `ros-melodic-roslaunch=1.14.3-0bionic.20180906.224754`
+- `ros-melodic-roslaunch=1.14.3-0bionic.20181112.181542`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4670,11 +4692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosmsg=1.14.3-0bionic.20180906.232748`
+### `dpkg` source package: `ros-melodic-rosmsg=1.14.3-0bionic.20181112.195831`
 
 Binary Packages:
 
-- `ros-melodic-rosmsg=1.14.3-0bionic.20180906.232748`
+- `ros-melodic-rosmsg=1.14.3-0bionic.20181112.195831`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4684,11 +4706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosnode=1.14.3-0bionic.20180906.232834`
+### `dpkg` source package: `ros-melodic-rosnode=1.14.3-0bionic.20181112.190825`
 
 Binary Packages:
 
-- `ros-melodic-rosnode=1.14.3-0bionic.20180906.232834`
+- `ros-melodic-rosnode=1.14.3-0bionic.20181112.190825`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4698,11 +4720,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosout=1.14.3-0bionic.20180906.224240`
+### `dpkg` source package: `ros-melodic-rosout=1.14.3-0bionic.20181112.174738`
 
 Binary Packages:
 
-- `ros-melodic-rosout=1.14.3-0bionic.20180906.224240`
+- `ros-melodic-rosout=1.14.3-0bionic.20181112.174738`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4740,11 +4762,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rospy=1.14.3-0bionic.20180906.223757`
+### `dpkg` source package: `ros-melodic-rospy=1.14.3-0bionic.20181112.174741`
 
 Binary Packages:
 
-- `ros-melodic-rospy=1.14.3-0bionic.20180906.223757`
+- `ros-melodic-rospy=1.14.3-0bionic.20181112.174741`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4754,11 +4776,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rosservice=1.14.3-0bionic.20180906.233814`
+### `dpkg` source package: `ros-melodic-rosservice=1.14.3-0bionic.20181112.202329`
 
 Binary Packages:
 
-- `ros-melodic-rosservice=1.14.3-0bionic.20180906.233814`
+- `ros-melodic-rosservice=1.14.3-0bionic.20181112.202329`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4768,11 +4790,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rostest=1.14.3-0bionic.20180906.225313`
+### `dpkg` source package: `ros-melodic-rostest=1.14.3-0bionic.20181112.182207`
 
 Binary Packages:
 
-- `ros-melodic-rostest=1.14.3-0bionic.20180906.225313`
+- `ros-melodic-rostest=1.14.3-0bionic.20181112.182207`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4796,11 +4818,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-rostopic=1.14.3-0bionic.20180906.232729`
+### `dpkg` source package: `ros-melodic-rostopic=1.14.3-0bionic.20181112.190405`
 
 Binary Packages:
 
-- `ros-melodic-rostopic=1.14.3-0bionic.20180906.232729`
+- `ros-melodic-rostopic=1.14.3-0bionic.20181112.190405`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4824,11 +4846,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-roswtf=1.14.3-0bionic.20180906.233914`
+### `dpkg` source package: `ros-melodic-roswtf=1.14.3-0bionic.20181112.202445`
 
 Binary Packages:
 
-- `ros-melodic-roswtf=1.14.3-0bionic.20180906.233914`
+- `ros-melodic-roswtf=1.14.3-0bionic.20181112.202445`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4838,11 +4860,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-sensor-msgs=1.12.6-0bionic.20180906.232643`
+### `dpkg` source package: `ros-melodic-sensor-msgs=1.12.7-0bionic.20181112.195813`
 
 Binary Packages:
 
-- `ros-melodic-sensor-msgs=1.12.6-0bionic.20180906.232643`
+- `ros-melodic-sensor-msgs=1.12.7-0bionic.20181112.195813`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4852,11 +4874,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-shape-msgs=1.12.6-0bionic.20180606.192147`
+### `dpkg` source package: `ros-melodic-shape-msgs=1.12.7-0bionic.20181109.225211`
 
 Binary Packages:
 
-- `ros-melodic-shape-msgs=1.12.6-0bionic.20180606.192147`
+- `ros-melodic-shape-msgs=1.12.7-0bionic.20181109.225211`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4894,11 +4916,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-stereo-msgs=1.12.6-0bionic.20180907.001129`
+### `dpkg` source package: `ros-melodic-stereo-msgs=1.12.7-0bionic.20181112.205410`
 
 Binary Packages:
 
-- `ros-melodic-stereo-msgs=1.12.6-0bionic.20180907.001129`
+- `ros-melodic-stereo-msgs=1.12.7-0bionic.20181112.205410`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4908,11 +4930,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-topic-tools=1.14.3-0bionic.20180906.225714`
+### `dpkg` source package: `ros-melodic-topic-tools=1.14.3-0bionic.20181112.182554`
 
 Binary Packages:
 
-- `ros-melodic-topic-tools=1.14.3-0bionic.20180906.225714`
+- `ros-melodic-topic-tools=1.14.3-0bionic.20181112.182554`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4922,11 +4944,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-trajectory-msgs=1.12.6-0bionic.20180606.192146`
+### `dpkg` source package: `ros-melodic-trajectory-msgs=1.12.7-0bionic.20181109.225228`
 
 Binary Packages:
 
-- `ros-melodic-trajectory-msgs=1.12.6-0bionic.20180606.192146`
+- `ros-melodic-trajectory-msgs=1.12.7-0bionic.20181109.225228`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4936,11 +4958,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-visualization-msgs=1.12.6-0bionic.20180606.192229`
+### `dpkg` source package: `ros-melodic-visualization-msgs=1.12.7-0bionic.20181109.225021`
 
 Binary Packages:
 
-- `ros-melodic-visualization-msgs=1.12.6-0bionic.20180606.192229`
+- `ros-melodic-visualization-msgs=1.12.7-0bionic.20181109.225021`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5065,6 +5087,10 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-6/
+
 
 ### `dpkg` source package: `sgml-base=1.29`
 
@@ -5188,12 +5214,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.6`
+### `dpkg` source package: `systemd=237-3ubuntu10.9`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.6`
-- `libudev1:amd64=237-3ubuntu10.6`
+- `libsystemd0:amd64=237-3ubuntu10.9`
+- `libudev1:amd64=237-3ubuntu10.9`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5205,9 +5231,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.9
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.9.dsc' systemd_237-3ubuntu10.9.dsc 4652 SHA256:6a071d7ffe095d6b47c3078bc21bf6773ab578138611f2ac85f5c523d9178070
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.9.debian.tar.xz' systemd_237-3ubuntu10.9.debian.tar.xz 195632 SHA256:a15744c8a2ae796f2ab4b616d27c52f766d5502ee370b61d7649564b40c97c82
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -5289,11 +5320,11 @@ $ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.18.04.debian.tar.xz' tzdata_2018g-0ubuntu0.18.04.debian.tar.xz 104340 SHA256:c36000ce2708f0105861a53b46b39ebce6f158f2004dbc321441da996f76fa8c
 ```
 
-### `dpkg` source package: `ubuntu-keyring=2018.02.28`
+### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.0`
 
 Binary Packages:
 
-- `ubuntu-keyring=2018.02.28`
+- `ubuntu-keyring=2018.09.18.1~18.04.0`
 
 Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
@@ -5302,9 +5333,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2018.02.28
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.02.28.dsc' ubuntu-keyring_2018.02.28.dsc 1463 SHA256:c8cec16ff68285682d8a2982c30e4adffac38231b74849f3fe8650b479d7f233
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.02.28.tar.gz' ubuntu-keyring_2018.02.28.tar.gz 30181 SHA256:6aa8c434de9a55bb03faebcd652c1a30c44a81e296a7516fea349fcf440043fe
+$ apt-get source -qq --print-uris ubuntu-keyring=2018.09.18.1~18.04.0
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.dsc' ubuntu-keyring_2018.09.18.1~18.04.0.dsc 1503 SHA256:1c9a599b6b3c98fdc920756c8031678d2556b6267eb55f057d0369cfc64e0263
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz' ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz 34238 SHA256:7095b786c02816bb6933b3a73ed6c9e302542e8fc1edb8346f7ddab49e95b3bd
 ```
 
 ### `dpkg` source package: `ucf=3.0038`

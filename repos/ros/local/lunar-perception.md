@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e47a05e9b894a39913dad1e1c343ff5d98640f3b3d6063572f6b9bb79741d2b`
-- Created: `2018-11-19T23:19:14.135501256Z`
-- Virtual Size: ~ 2.32 Gb  
+- Image ID: `sha256:1f1e6bd3bb9bce027f04d19f86c32c6cd756ae98087c90e513c4544162b29997`
+- Created: `2018-12-29T00:47:57.319697582Z`
+- Virtual Size: ~ 2.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -903,11 +903,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-11build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz 15240 SHA256:646168058a9a41b20a392fe20f7a2a88caaa1a42fc3e002635c33f0cf129ed0f
 ```
 
-### `dpkg` source package: `cups=2.1.3-4ubuntu0.5`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.6`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4ubuntu0.5`
+- `libcups2:amd64=2.1.3-4ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -918,9 +918,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.dsc' cups_2.1.3-4ubuntu0.6.dsc 3751 SHA256:eebc7c5247c51130068f62ddb04c1ffd0e11b719bf3129ec1ebfacd8d87d1882
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.debian.tar.xz' cups_2.1.3-4ubuntu0.6.debian.tar.xz 352564 SHA256:f8b67a29997902041a6b831e48e16d30225707dd68f3717592ced8ccb1487d12
+```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
 
@@ -1697,29 +1702,29 @@ $ apt-get source -qq --print-uris gcc-4.8=4.8.5-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-4.8/gcc-4.8_4.8.5-4ubuntu2.diff.gz' gcc-4.8_4.8.5-4ubuntu2.diff.gz 950839 SHA256:ee26de30eb1e0b5d73f73e387853539b6e609fcb25ec581c11081f49c9332a9a
 ```
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.10`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.11`
 
 Binary Packages:
 
-- `cpp-5=5.4.0-6ubuntu1~16.04.10`
-- `g++-5=5.4.0-6ubuntu1~16.04.10`
-- `gcc-5=5.4.0-6ubuntu1~16.04.10`
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libasan2:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libitm1:amd64=5.4.0-6ubuntu1~16.04.10`
-- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.10`
-- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.10`
+- `cpp-5=5.4.0-6ubuntu1~16.04.11`
+- `g++-5=5.4.0-6ubuntu1~16.04.11`
+- `gcc-5=5.4.0-6ubuntu1~16.04.11`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libasan2:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libitm1:amd64=5.4.0-6ubuntu1~16.04.11`
+- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.11`
+- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/copyright`, `/usr/share/doc/gcc-5/copyright`, `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libasan2/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-5-dev/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libmpx0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-5-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1732,10 +1737,10 @@ Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.10
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.dsc' gcc-5_5.4.0-6ubuntu1~16.04.10.dsc 28668 SHA256:10add8559b4f9e00fe36b0dd1f396365dd8646c19eecc1e117c71a064b8402ed
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.10.diff.gz 1503131 SHA256:8b9d366dba389d00f8ba4e1a91e24d5c586cd6a7c29f2aabe45083c84cb0bf5d
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.11.dsc' gcc-5_5.4.0-6ubuntu1~16.04.11.dsc 28318 SHA256:fd7629f95cb155f067a2fea1d54a6e31684df2f669b9f23d3521c5ed4aafc7cc
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.11.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.11.diff.gz 1486206 SHA256:f5fb02ea3cf13efbc95c2a75d39b426b8a2cf167c3d6cbe103711e40a10f8cd8
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.150ubuntu1`
@@ -1945,13 +1950,13 @@ $ apt-get source -qq --print-uris giflib=5.1.4-0.3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-0.3~16.04.debian.tar.xz' giflib_5.1.4-0.3~16.04.debian.tar.xz 13052 SHA256:04627903c97eaf176bd3d8214b971867bfa21ee4da7336e36a1aae5e738e6bb7
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.5`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.6`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.5`
-- `git-core=1:2.7.4-0ubuntu1.5`
-- `git-man=1:2.7.4-0ubuntu1.5`
+- `git=1:2.7.4-0ubuntu1.6`
+- `git-core=1:2.7.4-0ubuntu1.6`
+- `git-man=1:2.7.4-0ubuntu1.6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1974,9 +1979,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.6.dsc' git_2.7.4-0ubuntu1.6.dsc 2881 SHA256:12c0658a451f77defeeea504e0fe6672199d750f8d126fb6fd76a04123c989c3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.6.debian.tar.xz' git_2.7.4-0ubuntu1.6.debian.tar.xz 534912 SHA256:d388f2034849e89385be14e3f4243f8d8d10808f85bd6c9eb7a9b68dc07d999f
+```
 
 ### `dpkg` source package: `gl2ps=1.3.8-1.2`
 
@@ -4361,11 +4371,11 @@ $ apt-get source -qq --print-uris libsoxr=0.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libsoxr/libsoxr_0.1.2-1.debian.tar.xz' libsoxr_0.1.2-1.debian.tar.xz 4096 SHA256:46f983cbef66856659fc496de6f112f978abeafd2468c816081c6b30bfffb713
 ```
 
-### `dpkg` source package: `libssh=0.6.3-4.3ubuntu0.1`
+### `dpkg` source package: `libssh=0.6.3-4.3ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-gcrypt-4:amd64=0.6.3-4.3ubuntu0.1`
+- `libssh-gcrypt-4:amd64=0.6.3-4.3ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -4374,9 +4384,14 @@ Licenses: (parsed from: `/usr/share/doc/libssh-gcrypt-4/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+~OpenSSL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.6.3-4.3ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3-4.3ubuntu0.2.dsc' libssh_0.6.3-4.3ubuntu0.2.dsc 2429 SHA256:438da30b2f31ead76074870c4aef844bc55bec9f0a0c2a35dde9230e74b864dc
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3.orig.tar.xz' libssh_0.6.3.orig.tar.xz 279492 SHA256:2bb5d7c595059f990a8915c190169257328ffa828ced0c05b09bbe186092cacb
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3-4.3ubuntu0.2.debian.tar.xz' libssh_0.6.3-4.3ubuntu0.2.debian.tar.xz 27584 SHA256:31c2d7c311723c8fb78afebb847da6272e7469f26a9c55ab84995f69cc05caec
+```
 
 ### `dpkg` source package: `libsys-hostname-long-perl=1.5-1`
 
@@ -5287,20 +5302,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-139.165`
+### `dpkg` source package: `linux=4.4.0-141.167`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-139.165`
+- `linux-libc-dev:amd64=4.4.0-141.167`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-141.167
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.dsc' linux_4.4.0-141.167.dsc 9418 SHA256:1a085a45b35803f398041288cd3c32e03a9354c56f04ae84dd2ae64daa922406
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.diff.gz' linux_4.4.0-141.167.diff.gz 15018277 SHA256:67f5102684cbf455d7233dbc2c48b1db66bfba920ca082d56a358642d1770fd9
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -5594,12 +5614,12 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mercurial=3.7.3-1ubuntu1`
+### `dpkg` source package: `mercurial=3.7.3-1ubuntu1.2`
 
 Binary Packages:
 
-- `mercurial=3.7.3-1ubuntu1`
-- `mercurial-common=3.7.3-1ubuntu1`
+- `mercurial=3.7.3-1ubuntu1.2`
+- `mercurial-common=3.7.3-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -5609,10 +5629,10 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=3.7.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_3.7.3-1ubuntu1.dsc' mercurial_3.7.3-1ubuntu1.dsc 2365 SHA256:2461b88acae5afa9a57a9a3ac94d54570d5da3b91ac94f51f52a24a19c5ae246
+$ apt-get source -qq --print-uris mercurial=3.7.3-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_3.7.3-1ubuntu1.2.dsc' mercurial_3.7.3-1ubuntu1.2.dsc 2387 SHA256:e7630314efbc0a71b73cc69f23a8d4a842605823d30eb0daf4cc37483cd7cff7
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_3.7.3.orig.tar.gz' mercurial_3.7.3.orig.tar.gz 4636732 SHA256:c099c42d74e2d520b61dd372cd996b0fa7605c06617834fd7b13c79b9a9a5b30
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_3.7.3-1ubuntu1.debian.tar.xz' mercurial_3.7.3-1ubuntu1.debian.tar.xz 45628 SHA256:0eb961f9a010443a8b3376404cca8c23a913f166df0a4fc5d22a983ffa90313b
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_3.7.3-1ubuntu1.2.debian.tar.xz' mercurial_3.7.3-1ubuntu1.2.debian.tar.xz 65164 SHA256:a9e06adde535207d4b633ba209621fb030a2ee06b0173d3eec4233b561783b4b
 ```
 
 ### `dpkg` source package: `mesa=18.0.5-0ubuntu0~16.04.1`
@@ -6203,20 +6223,25 @@ $ apt-get source -qq --print-uris openjpeg=1:1.5.2-3.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg/openjpeg_1.5.2-3.1.debian.tar.xz' openjpeg_1.5.2-3.1.debian.tar.xz 18660 SHA256:c45f580c9dbdeffe9bc0e1f4f5c69b7a661568771339424690c81e138b973285
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.3`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.3`
-- `libldap2-dev:amd64=2.4.42+dfsg-2ubuntu3.3`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.4`
+- `libldap2-dev:amd64=2.4.42+dfsg-2ubuntu3.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.dsc' openldap_2.4.42+dfsg-2ubuntu3.4.dsc 3054 SHA256:52339a3445ea29c60349d2c2cb5639c17663b7661a5166ecd2fc891631ac0a6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz 178300 SHA256:2951df1d5e470328e4d619c5f35dbc3577d501d2e65bfcef45db57558aa93929
+```
 
 ### `dpkg` source package: `openmpi=1.10.2-8ubuntu1`
 
@@ -6290,22 +6315,27 @@ $ apt-get source -qq --print-uris openni=1.5.4.0-14
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openni/openni_1.5.4.0-14.debian.tar.xz' openni_1.5.4.0-14.debian.tar.xz 648524 SHA256:f69368ad4f4660755e16549108d028d72ce5da391bb0b58f9ec32c18a5e4147c
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.13`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.14`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu4.13`
-- `libssl-doc=1.0.2g-1ubuntu4.13`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.13`
-- `openssl=1.0.2g-1ubuntu4.13`
+- `libssl-dev:amd64=1.0.2g-1ubuntu4.14`
+- `libssl-doc=1.0.2g-1ubuntu4.14`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.14`
+- `openssl=1.0.2g-1ubuntu4.14`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.14
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.14.dsc' openssl_1.0.2g-1ubuntu4.14.dsc 2453 SHA256:22854d162e9b99f442cd395bc115167dd7720574202eaf57377eba77b876605a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.14.debian.tar.xz' openssl_1.0.2g-1ubuntu4.14.debian.tar.xz 130020 SHA256:f10ca048b9a3ee310fd5cb3c75446bfdc1a353ec1884abccf545224af8f85ea7
+```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 
@@ -6521,14 +6551,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9ubuntu0.5`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.6`
 
 Binary Packages:
 
-- `libperl5.22:amd64=5.22.1-9ubuntu0.5`
-- `perl=5.22.1-9ubuntu0.5`
-- `perl-base=5.22.1-9ubuntu0.5`
-- `perl-modules-5.22=5.22.1-9ubuntu0.5`
+- `libperl5.22:amd64=5.22.1-9ubuntu0.6`
+- `perl=5.22.1-9ubuntu0.6`
+- `perl-base=5.22.1-9ubuntu0.6`
+- `perl-modules-5.22=5.22.1-9ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.22/copyright`)
 
@@ -6559,9 +6589,14 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.dsc' perl_5.22.1-9ubuntu0.6.dsc 2480 SHA256:5e45c28174bac9738045c0be2b13f82db99aa1148796c5cdfa4ee151a57ed9ed
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.debian.tar.xz' perl_5.22.1-9ubuntu0.6.debian.tar.xz 161972 SHA256:8ada4467517b405493c876ba78121ff4ec25eed15cfbbc65682da461050a1f6b
+```
 
 ### `dpkg` source package: `pinentry=0.9.7-3`
 
@@ -6646,22 +6681,22 @@ $ apt-get source -qq --print-uris po-debconf=1.0.19
 'http://archive.ubuntu.com/ubuntu/pool/main/p/po-debconf/po-debconf_1.0.19.tar.xz' po-debconf_1.0.19.tar.xz 158632 SHA256:f5caa0de432248362e3a701f583c843a36c8fd8dfea2cd6eccac3e2c1066a8cd
 ```
 
-### `dpkg` source package: `poco=1.3.6p1-5.1build1`
+### `dpkg` source package: `poco=1.3.6p1-5.1ubuntu0.1`
 
 Binary Packages:
 
-- `libpoco-dev=1.3.6p1-5.1build1`
-- `libpococrypto9v5=1.3.6p1-5.1build1`
-- `libpocodata9v5=1.3.6p1-5.1build1`
-- `libpocofoundation9v5=1.3.6p1-5.1build1`
-- `libpocomysql9v5=1.3.6p1-5.1build1`
-- `libpoconet9v5=1.3.6p1-5.1build1`
-- `libpoconetssl9v5=1.3.6p1-5.1build1`
-- `libpocoodbc9v5=1.3.6p1-5.1build1`
-- `libpocosqlite9v5=1.3.6p1-5.1build1`
-- `libpocoutil9v5=1.3.6p1-5.1build1`
-- `libpocoxml9v5=1.3.6p1-5.1build1`
-- `libpocozip9v5=1.3.6p1-5.1build1`
+- `libpoco-dev=1.3.6p1-5.1ubuntu0.1`
+- `libpococrypto9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocodata9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocofoundation9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocomysql9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpoconet9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpoconetssl9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocoodbc9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocosqlite9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocoutil9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocoxml9v5=1.3.6p1-5.1ubuntu0.1`
+- `libpocozip9v5=1.3.6p1-5.1ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6670,10 +6705,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poco=1.3.6p1-5.1build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1-5.1build1.dsc' poco_1.3.6p1-5.1build1.dsc 3443 SHA256:aa0030c304ec805e00da42dc2d27b6f55b3c4b73a5776a68e427af79a5596fc9
+$ apt-get source -qq --print-uris poco=1.3.6p1-5.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1-5.1ubuntu0.1.dsc' poco_1.3.6p1-5.1ubuntu0.1.dsc 3581 SHA256:0f8f927fca688837e77124870d2fb36227d44cfeb2adcf06630b4b8a8e892994
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1.orig.tar.gz' poco_1.3.6p1.orig.tar.gz 3057466 SHA256:b08f1c742975549e2cee705fa3b77edcd05f65085348f3a489b897285af958e5
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1-5.1build1.diff.gz' poco_1.3.6p1-5.1build1.diff.gz 13582 SHA256:c0ca7d31085a0fb81ea2d5d4287d22fdcd0ab856fdecc2f326abce14ae4985fc
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1-5.1ubuntu0.1.diff.gz' poco_1.3.6p1-5.1ubuntu0.1.diff.gz 16150 SHA256:e16cfb83c74253621f2b84424c791dd3feacbe5581affbd40f98f37f1b5b7f3b
 ```
 
 ### `dpkg` source package: `policykit-1=0.105-14.1ubuntu0.1`
@@ -6700,19 +6735,24 @@ $ apt-get source -qq --print-uris policykit-1=0.105-14.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/policykit-1/policykit-1_0.105-14.1ubuntu0.1.debian.tar.xz' policykit-1_0.105-14.1ubuntu0.1.debian.tar.xz 45428 SHA256:4dcf37d215ac0216eaa573651881d3d1c40861d8e1b21478434afd552ed9de14
 ```
 
-### `dpkg` source package: `poppler=0.41.0-0ubuntu1.8`
+### `dpkg` source package: `poppler=0.41.0-0ubuntu1.10`
 
 Binary Packages:
 
-- `libpoppler58:amd64=0.41.0-0ubuntu1.8`
+- `libpoppler58:amd64=0.41.0-0ubuntu1.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.10.dsc' poppler_0.41.0-0ubuntu1.10.dsc 3360 SHA256:abb8889a2a2a5ab3c262ff91c709aa81b9ab63b9bba508bf1ec1a57485ae1bb0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.10.debian.tar.xz' poppler_0.41.0-0ubuntu1.10.debian.tar.xz 47980 SHA256:5cf844b87d35caa1703b741eef6801955e178bc5473d022c1dc29213de1c2e81
+```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.14-0ubuntu0.16.04`
 
@@ -7917,11 +7957,11 @@ $ apt-get source -qq --print-uris readline6=6.3-8ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline6/readline6_6.3-8ubuntu2.debian.tar.xz' readline6_6.3-8ubuntu2.debian.tar.xz 31232 SHA256:32d4f30dc92d79d722b04c2b678883245d2eccff2ed4f8591faebca7e6d81948
 ```
 
-### `dpkg` source package: `ros-lunar-actionlib-msgs=1.12.6-0xenial-20180817-155506-0800`
+### `dpkg` source package: `ros-lunar-actionlib-msgs=1.12.7-0xenial-20181109-201426-0800`
 
 Binary Packages:
 
-- `ros-lunar-actionlib-msgs=1.12.6-0xenial-20180817-155506-0800`
+- `ros-lunar-actionlib-msgs=1.12.7-0xenial-20181109-201426-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7931,11 +7971,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-actionlib=1.11.15-0xenial-20180906-215144-0800`
+### `dpkg` source package: `ros-lunar-actionlib=1.11.15-0xenial-20181109-210115-0800`
 
 Binary Packages:
 
-- `ros-lunar-actionlib=1.11.15-0xenial-20180906-215144-0800`
+- `ros-lunar-actionlib=1.11.15-0xenial-20181109-210115-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8015,11 +8055,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-camera-calibration-parsers=1.11.13-0xenial-20180906-203826-0800`
+### `dpkg` source package: `ros-lunar-camera-calibration-parsers=1.11.13-0xenial-20181109-220001-0800`
 
 Binary Packages:
 
-- `ros-lunar-camera-calibration-parsers=1.11.13-0xenial-20180906-203826-0800`
+- `ros-lunar-camera-calibration-parsers=1.11.13-0xenial-20181109-220001-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8029,11 +8069,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-camera-calibration=1.12.23-0xenial-20180906-223422-0800`
+### `dpkg` source package: `ros-lunar-camera-calibration=1.12.23-0xenial-20181109-221729-0800`
 
 Binary Packages:
 
-- `ros-lunar-camera-calibration=1.12.23-0xenial-20180906-223422-0800`
+- `ros-lunar-camera-calibration=1.12.23-0xenial-20181109-221729-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8043,11 +8083,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-camera-info-manager=1.11.13-0xenial-20180906-205401-0800`
+### `dpkg` source package: `ros-lunar-camera-info-manager=1.11.13-0xenial-20181109-220641-0800`
 
 Binary Packages:
 
-- `ros-lunar-camera-info-manager=1.11.13-0xenial-20180906-205401-0800`
+- `ros-lunar-camera-info-manager=1.11.13-0xenial-20181109-220641-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8099,11 +8139,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-common-msgs=1.12.6-0xenial-20180906-220408-0800`
+### `dpkg` source package: `ros-lunar-common-msgs=1.12.7-0xenial-20181109-221138-0800`
 
 Binary Packages:
 
-- `ros-lunar-common-msgs=1.12.6-0xenial-20180906-220408-0800`
+- `ros-lunar-common-msgs=1.12.7-0xenial-20181109-221138-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8113,11 +8153,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-compressed-depth-image-transport=1.9.5-0xenial-20181005-112332-0800`
+### `dpkg` source package: `ros-lunar-compressed-depth-image-transport=1.9.5-0xenial-20181109-231745-0800`
 
 Binary Packages:
 
-- `ros-lunar-compressed-depth-image-transport=1.9.5-0xenial-20181005-112332-0800`
+- `ros-lunar-compressed-depth-image-transport=1.9.5-0xenial-20181109-231745-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8127,11 +8167,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-compressed-image-transport=1.9.5-0xenial-20181005-112653-0800`
+### `dpkg` source package: `ros-lunar-compressed-image-transport=1.9.5-0xenial-20181109-231851-0800`
 
 Binary Packages:
 
-- `ros-lunar-compressed-image-transport=1.9.5-0xenial-20181005-112653-0800`
+- `ros-lunar-compressed-image-transport=1.9.5-0xenial-20181109-231851-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8155,11 +8195,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-cv-bridge=1.12.8-0xenial-20180906-203842-0800`
+### `dpkg` source package: `ros-lunar-cv-bridge=1.12.8-0xenial-20181109-215711-0800`
 
 Binary Packages:
 
-- `ros-lunar-cv-bridge=1.12.8-0xenial-20180906-203842-0800`
+- `ros-lunar-cv-bridge=1.12.8-0xenial-20181109-215711-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8169,11 +8209,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-depth-image-proc=1.12.23-0xenial-20180906-225457-0800`
+### `dpkg` source package: `ros-lunar-depth-image-proc=1.12.23-0xenial-20181117-104122-0800`
 
 Binary Packages:
 
-- `ros-lunar-depth-image-proc=1.12.23-0xenial-20180906-225457-0800`
+- `ros-lunar-depth-image-proc=1.12.23-0xenial-20181117-104122-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8183,11 +8223,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-diagnostic-msgs=1.12.6-0xenial-20180817-155746-0800`
+### `dpkg` source package: `ros-lunar-diagnostic-msgs=1.12.7-0xenial-20181109-201231-0800`
 
 Binary Packages:
 
-- `ros-lunar-diagnostic-msgs=1.12.6-0xenial-20180817-155746-0800`
+- `ros-lunar-diagnostic-msgs=1.12.7-0xenial-20181109-201231-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8211,11 +8251,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-eigen-conversions=1.11.9-0xenial-20180817-160523-0800`
+### `dpkg` source package: `ros-lunar-eigen-conversions=1.11.9-0xenial-20181109-210902-0800`
 
 Binary Packages:
 
-- `ros-lunar-eigen-conversions=1.11.9-0xenial-20180817-160523-0800`
+- `ros-lunar-eigen-conversions=1.11.9-0xenial-20181109-210902-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8323,11 +8363,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-geometry-msgs=1.12.6-0xenial-20180817-155806-0800`
+### `dpkg` source package: `ros-lunar-geometry-msgs=1.12.7-0xenial-20181109-201426-0800`
 
 Binary Packages:
 
-- `ros-lunar-geometry-msgs=1.12.6-0xenial-20180817-155806-0800`
+- `ros-lunar-geometry-msgs=1.12.7-0xenial-20181109-201426-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8337,11 +8377,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-common=1.11.13-0xenial-20180906-221017-0800`
+### `dpkg` source package: `ros-lunar-image-common=1.11.13-0xenial-20181109-231644-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-common=1.11.13-0xenial-20180906-221017-0800`
+- `ros-lunar-image-common=1.11.13-0xenial-20181109-231644-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8351,11 +8391,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-geometry=1.12.8-0xenial-20180906-215313-0800`
+### `dpkg` source package: `ros-lunar-image-geometry=1.12.8-0xenial-20181109-220030-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-geometry=1.12.8-0xenial-20180906-215313-0800`
+- `ros-lunar-image-geometry=1.12.8-0xenial-20181109-220030-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8365,11 +8405,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-pipeline=1.12.23-0xenial-20181005-125957-0800`
+### `dpkg` source package: `ros-lunar-image-pipeline=1.12.23-0xenial-20181117-121310-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-pipeline=1.12.23-0xenial-20181005-125957-0800`
+- `ros-lunar-image-pipeline=1.12.23-0xenial-20181117-121310-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8379,11 +8419,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-proc=1.12.23-0xenial-20181005-115200-0800`
+### `dpkg` source package: `ros-lunar-image-proc=1.12.23-0xenial-20181109-221247-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-proc=1.12.23-0xenial-20181005-115200-0800`
+- `ros-lunar-image-proc=1.12.23-0xenial-20181109-221247-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8393,11 +8433,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-publisher=1.12.23-0xenial-20181005-111552-0800`
+### `dpkg` source package: `ros-lunar-image-publisher=1.12.23-0xenial-20181109-221254-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-publisher=1.12.23-0xenial-20181005-111552-0800`
+- `ros-lunar-image-publisher=1.12.23-0xenial-20181109-221254-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8407,11 +8447,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-rotate=1.12.23-0xenial-20181005-110746-0800`
+### `dpkg` source package: `ros-lunar-image-rotate=1.12.23-0xenial-20181117-104743-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-rotate=1.12.23-0xenial-20181005-110746-0800`
+- `ros-lunar-image-rotate=1.12.23-0xenial-20181117-104743-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8421,11 +8461,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-transport-plugins=1.9.5-0xenial-20181005-125842-0800`
+### `dpkg` source package: `ros-lunar-image-transport-plugins=1.9.5-0xenial-20181109-235500-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-transport-plugins=1.9.5-0xenial-20181005-125842-0800`
+- `ros-lunar-image-transport-plugins=1.9.5-0xenial-20181109-235500-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8435,11 +8475,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-transport=1.11.13-0xenial-20180906-203733-0800`
+### `dpkg` source package: `ros-lunar-image-transport=1.11.13-0xenial-20181109-220002-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-transport=1.11.13-0xenial-20180906-203733-0800`
+- `ros-lunar-image-transport=1.11.13-0xenial-20181109-220002-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8449,11 +8489,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-image-view=1.12.23-0xenial-20181005-112915-0800`
+### `dpkg` source package: `ros-lunar-image-view=1.12.23-0xenial-20181109-221341-0800`
 
 Binary Packages:
 
-- `ros-lunar-image-view=1.12.23-0xenial-20181005-112915-0800`
+- `ros-lunar-image-view=1.12.23-0xenial-20181109-221341-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8463,11 +8503,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-laser-assembler=1.7.4-0xenial-20180906-235130-0800`
+### `dpkg` source package: `ros-lunar-laser-assembler=1.7.4-0xenial-20181117-123309-0800`
 
 Binary Packages:
 
-- `ros-lunar-laser-assembler=1.7.4-0xenial-20180906-235130-0800`
+- `ros-lunar-laser-assembler=1.7.4-0xenial-20181117-123309-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8477,11 +8517,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-laser-filters=1.8.5-0xenial-20180906-234658-0800`
+### `dpkg` source package: `ros-lunar-laser-filters=1.8.5-0xenial-20181117-123350-0800`
 
 Binary Packages:
 
-- `ros-lunar-laser-filters=1.8.5-0xenial-20180906-234658-0800`
+- `ros-lunar-laser-filters=1.8.5-0xenial-20181117-123350-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8491,11 +8531,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-laser-geometry=1.6.4-0xenial-20180906-232133-0800`
+### `dpkg` source package: `ros-lunar-laser-geometry=1.6.4-0xenial-20181117-122846-0800`
 
 Binary Packages:
 
-- `ros-lunar-laser-geometry=1.6.4-0xenial-20180906-232133-0800`
+- `ros-lunar-laser-geometry=1.6.4-0xenial-20181117-122846-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8505,11 +8545,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-laser-pipeline=1.6.2-0xenial-20180907-024925-0800`
+### `dpkg` source package: `ros-lunar-laser-pipeline=1.6.2-0xenial-20181117-130636-0800`
 
 Binary Packages:
 
-- `ros-lunar-laser-pipeline=1.6.2-0xenial-20180907-024925-0800`
+- `ros-lunar-laser-pipeline=1.6.2-0xenial-20181117-130636-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8575,11 +8615,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-nav-msgs=1.12.6-0xenial-20180817-155923-0800`
+### `dpkg` source package: `ros-lunar-nav-msgs=1.12.7-0xenial-20181109-202329-0800`
 
 Binary Packages:
 
-- `ros-lunar-nav-msgs=1.12.6-0xenial-20180817-155923-0800`
+- `ros-lunar-nav-msgs=1.12.7-0xenial-20181109-202329-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8659,11 +8699,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lunar-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-pcl-conversions=0.2.1-0xenial-20180907-003522-0800`
+### `dpkg` source package: `ros-lunar-pcl-conversions=0.2.1-0xenial-20181109-220849-0800`
 
 Binary Packages:
 
-- `ros-lunar-pcl-conversions=0.2.1-0xenial-20180907-003522-0800`
+- `ros-lunar-pcl-conversions=0.2.1-0xenial-20181109-220849-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8673,11 +8713,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-pcl-msgs=0.2.0-0xenial-20180906-230247-0800`
+### `dpkg` source package: `ros-lunar-pcl-msgs=0.2.0-0xenial-20181109-220403-0800`
 
 Binary Packages:
 
-- `ros-lunar-pcl-msgs=0.2.0-0xenial-20180906-230247-0800`
+- `ros-lunar-pcl-msgs=0.2.0-0xenial-20181109-220403-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8687,11 +8727,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-pcl-ros=1.5.4-0xenial-20181005-115201-0800`
+### `dpkg` source package: `ros-lunar-pcl-ros=1.5.4-0xenial-20181117-122138-0800`
 
 Binary Packages:
 
-- `ros-lunar-pcl-ros=1.5.4-0xenial-20181005-115201-0800`
+- `ros-lunar-pcl-ros=1.5.4-0xenial-20181117-122138-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8701,11 +8741,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-perception-pcl=1.5.4-0xenial-20181005-133959-0800`
+### `dpkg` source package: `ros-lunar-perception-pcl=1.5.4-0xenial-20181117-131630-0800`
 
 Binary Packages:
 
-- `ros-lunar-perception-pcl=1.5.4-0xenial-20181005-133959-0800`
+- `ros-lunar-perception-pcl=1.5.4-0xenial-20181117-131630-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8715,11 +8755,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-perception=1.3.2-0xenial-20181005-134602-0800`
+### `dpkg` source package: `ros-lunar-perception=1.3.2-0xenial-20181117-131724-0800`
 
 Binary Packages:
 
-- `ros-lunar-perception=1.3.2-0xenial-20181005-134602-0800`
+- `ros-lunar-perception=1.3.2-0xenial-20181117-131724-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8743,11 +8783,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-polled-camera=1.11.13-0xenial-20180906-205051-0800`
+### `dpkg` source package: `ros-lunar-polled-camera=1.11.13-0xenial-20181109-220704-0800`
 
 Binary Packages:
 
-- `ros-lunar-polled-camera=1.11.13-0xenial-20180906-205051-0800`
+- `ros-lunar-polled-camera=1.11.13-0xenial-20181109-220704-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8771,11 +8811,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-base=1.3.2-0xenial-20181005-125804-0800`
+### `dpkg` source package: `ros-lunar-ros-base=1.3.2-0xenial-20181109-233334-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros-base=1.3.2-0xenial-20181005-125804-0800`
+- `ros-lunar-ros-base=1.3.2-0xenial-20181109-233334-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8799,11 +8839,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-ros-core=1.3.2-0xenial-20180906-221332-0800`
+### `dpkg` source package: `ros-lunar-ros-core=1.3.2-0xenial-20181109-233257-0800`
 
 Binary Packages:
 
-- `ros-lunar-ros-core=1.3.2-0xenial-20180906-221332-0800`
+- `ros-lunar-ros-core=1.3.2-0xenial-20181109-233257-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9331,11 +9371,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-sensor-msgs=1.12.6-0xenial-20180906-202017-0800`
+### `dpkg` source package: `ros-lunar-sensor-msgs=1.12.7-0xenial-20181109-202352-0800`
 
 Binary Packages:
 
-- `ros-lunar-sensor-msgs=1.12.6-0xenial-20180906-202017-0800`
+- `ros-lunar-sensor-msgs=1.12.7-0xenial-20181109-202352-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9345,11 +9385,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-shape-msgs=1.12.6-0xenial-20180817-160134-0800`
+### `dpkg` source package: `ros-lunar-shape-msgs=1.12.7-0xenial-20181109-201929-0800`
 
 Binary Packages:
 
-- `ros-lunar-shape-msgs=1.12.6-0xenial-20180817-160134-0800`
+- `ros-lunar-shape-msgs=1.12.7-0xenial-20181109-201929-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9401,11 +9441,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-stereo-image-proc=1.12.23-0xenial-20181005-122614-0800`
+### `dpkg` source package: `ros-lunar-stereo-image-proc=1.12.23-0xenial-20181109-222200-0800`
 
 Binary Packages:
 
-- `ros-lunar-stereo-image-proc=1.12.23-0xenial-20181005-122614-0800`
+- `ros-lunar-stereo-image-proc=1.12.23-0xenial-20181109-222200-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9415,11 +9455,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-stereo-msgs=1.12.6-0xenial-20180906-215635-0800`
+### `dpkg` source package: `ros-lunar-stereo-msgs=1.12.7-0xenial-20181109-220800-0800`
 
 Binary Packages:
 
-- `ros-lunar-stereo-msgs=1.12.6-0xenial-20180906-215635-0800`
+- `ros-lunar-stereo-msgs=1.12.7-0xenial-20181109-220800-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9429,11 +9469,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-eigen=0.5.18-0xenial-20180817-161655-0800`
+### `dpkg` source package: `ros-lunar-tf2-eigen=0.5.20-0xenial-20181117-103016-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-eigen=0.5.18-0xenial-20180817-161655-0800`
+- `ros-lunar-tf2-eigen=0.5.20-0xenial-20181117-103016-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9443,11 +9483,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-geometry-msgs=0.5.18-0xenial-20180906-225334-0800`
+### `dpkg` source package: `ros-lunar-tf2-geometry-msgs=0.5.20-0xenial-20181117-104055-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-geometry-msgs=0.5.18-0xenial-20180906-225334-0800`
+- `ros-lunar-tf2-geometry-msgs=0.5.20-0xenial-20181117-104055-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9457,11 +9497,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-msgs=0.5.18-0xenial-20180817-160407-0800`
+### `dpkg` source package: `ros-lunar-tf2-msgs=0.5.20-0xenial-20181117-102358-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-msgs=0.5.18-0xenial-20180817-160407-0800`
+- `ros-lunar-tf2-msgs=0.5.20-0xenial-20181117-102358-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9471,11 +9511,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-py=0.5.18-0xenial-20180906-203310-0800`
+### `dpkg` source package: `ros-lunar-tf2-py=0.5.20-0xenial-20181117-103009-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-py=0.5.18-0xenial-20180906-203310-0800`
+- `ros-lunar-tf2-py=0.5.20-0xenial-20181117-103009-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9485,11 +9525,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2-ros=0.5.18-0xenial-20180906-222352-0800`
+### `dpkg` source package: `ros-lunar-tf2-ros=0.5.20-0xenial-20181117-103410-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2-ros=0.5.18-0xenial-20180906-222352-0800`
+- `ros-lunar-tf2-ros=0.5.20-0xenial-20181117-103410-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9499,11 +9539,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf2=0.5.18-0xenial-20180817-160529-0800`
+### `dpkg` source package: `ros-lunar-tf2=0.5.20-0xenial-20181117-102704-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf2=0.5.18-0xenial-20180817-160529-0800`
+- `ros-lunar-tf2=0.5.20-0xenial-20181117-102704-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9513,11 +9553,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-tf=1.11.9-0xenial-20180906-225044-0800`
+### `dpkg` source package: `ros-lunar-tf=1.11.9-0xenial-20181117-121218-0800`
 
 Binary Packages:
 
-- `ros-lunar-tf=1.11.9-0xenial-20180906-225044-0800`
+- `ros-lunar-tf=1.11.9-0xenial-20181117-121218-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9527,11 +9567,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-theora-image-transport=1.9.5-0xenial-20181005-113103-0800`
+### `dpkg` source package: `ros-lunar-theora-image-transport=1.9.5-0xenial-20181109-231926-0800`
 
 Binary Packages:
 
-- `ros-lunar-theora-image-transport=1.9.5-0xenial-20181005-113103-0800`
+- `ros-lunar-theora-image-transport=1.9.5-0xenial-20181109-231926-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9555,11 +9595,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-trajectory-msgs=1.12.6-0xenial-20180817-160153-0800`
+### `dpkg` source package: `ros-lunar-trajectory-msgs=1.12.7-0xenial-20181109-201934-0800`
 
 Binary Packages:
 
-- `ros-lunar-trajectory-msgs=1.12.6-0xenial-20180817-160153-0800`
+- `ros-lunar-trajectory-msgs=1.12.7-0xenial-20181109-201934-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9569,11 +9609,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-vision-opencv=1.12.8-0xenial-20180906-225702-0800`
+### `dpkg` source package: `ros-lunar-vision-opencv=1.12.8-0xenial-20181109-232452-0800`
 
 Binary Packages:
 
-- `ros-lunar-vision-opencv=1.12.8-0xenial-20180906-225702-0800`
+- `ros-lunar-vision-opencv=1.12.8-0xenial-20181109-232452-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9583,11 +9623,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lunar-visualization-msgs=1.12.6-0xenial-20180817-160158-0800`
+### `dpkg` source package: `ros-lunar-visualization-msgs=1.12.7-0xenial-20181109-202316-0800`
 
 Binary Packages:
 
-- `ros-lunar-visualization-msgs=1.12.6-0xenial-20180817-160158-0800`
+- `ros-lunar-visualization-msgs=1.12.7-0xenial-20181109-202316-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10067,14 +10107,17 @@ $ apt-get source -qq --print-uris superlu=4.3+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_4.3+dfsg-3.debian.tar.xz' superlu_4.3+dfsg-3.debian.tar.xz 8472 SHA256:49b450efda3b636894fb66b0998c6246d5df1f6ad9135a5c7c4983dd630c8fc4
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.8`
+### `dpkg` source package: `systemd=229-4ubuntu21.10`
 
 Binary Packages:
 
-- `libudev1:amd64=229-4ubuntu21.8`
-- `systemd-sysv=229-4ubuntu21.8`
+- `libpam-systemd:amd64=229-4ubuntu21.10`
+- `libsystemd0:amd64=229-4ubuntu21.10`
+- `libudev1:amd64=229-4ubuntu21.10`
+- `systemd=229-4ubuntu21.10`
+- `systemd-sysv=229-4ubuntu21.10`
 
-Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
 - `CC0`
 - `Expat`
@@ -10084,31 +10127,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/sys
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-
-### `dpkg` source package: `systemd=229-4ubuntu21.9`
-
-Binary Packages:
-
-- `libpam-systemd:amd64=229-4ubuntu21.9`
-- `libsystemd0:amd64=229-4ubuntu21.9`
-- `systemd=229-4ubuntu21.9`
-
-Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/systemd/copyright`)
-
-- `CC0`
-- `Expat`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.dsc' systemd_229-4ubuntu21.10.dsc 4145 SHA256:21886574d7b979953591d74c1f0a43da6a04ae6b58301a47c590618d79cae866
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.10.debian.tar.xz' systemd_229-4ubuntu21.10.debian.tar.xz 283812 SHA256:01d4b43e70aa2642e80416ea3cf2c627f830aaa896fa63c41a1d09e5e4a91051
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -10563,19 +10589,24 @@ $ apt-get source -qq --print-uris vtk6=6.2.0+dfsg1-10build1+debian11.1+osrf1
 'http://packages.ros.org/ros/ubuntu/pool/main/v/vtk6/vtk6_6.2.0+dfsg1-10build1+debian11.1+osrf1.dsc' vtk6_6.2.0+dfsg1-10build1+debian11.1+osrf1.dsc 3334 SHA256:739e524cd6246914fcca5304e1c15c6839a7fd76c4ac063e8ff7b0beced630ee
 ```
 
-### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.1`
+### `dpkg` source package: `wavpack=4.75.2-2ubuntu0.2`
 
 Binary Packages:
 
-- `libwavpack1:amd64=4.75.2-2ubuntu0.1`
+- `libwavpack1:amd64=4.75.2-2ubuntu0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wavpack=4.75.2-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.2.dsc' wavpack_4.75.2-2ubuntu0.2.dsc 2230 SHA256:4f9feec761d8821e8dfe0960ed243a517617d70d805fad1099a6292937e1aa08
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2.orig.tar.bz2' wavpack_4.75.2.orig.tar.bz2 439798 SHA256:7d31b34166c33c3109b45c6e4579b472fd05e3ee8ec6d728352961c5cdd1d6b0
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2ubuntu0.2.debian.tar.xz' wavpack_4.75.2-2ubuntu0.2.debian.tar.xz 6932 SHA256:78c0d6d7dd4bb8c158c18b67c9ed4ab5bd779f662db00a4b6bfb9cd7d5b558dd
+```
 
 ### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.3`
 
