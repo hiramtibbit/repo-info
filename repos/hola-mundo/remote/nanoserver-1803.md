@@ -1,7 +1,7 @@
 ## `hola-mundo:nanoserver-1803`
 
 ```console
-$ docker pull hola-mundo@sha256:186fa4b128efaa5e111facd551f3bba0abb9f16e0a73e614a29e5d10bb481eb2
+$ docker pull hola-mundo@sha256:d68facd3a23907fa6c11b212f00066f2c52cd44b1d58d5a8428228b487490a71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull hola-mundo@sha256:186fa4b128efaa5e111facd551f3bba0abb9f16e0a73e614
 ### `hola-mundo:nanoserver-1803` - windows version 10.0.17134.469; amd64
 
 ```console
-$ docker pull hola-mundo@sha256:e2a34d0066ef9f8571e040b2234ea04c9782494611d4cb2cf14544a8bea0c624
+$ docker pull hola-mundo@sha256:53b464ad5b71f46e87803a18ca0c4b293bbfc52b47e2351287745ccb14335d55
 ```
 
 -	Docker Version: 18.03.1-ee-4
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.4 MB (146428085 bytes)**  
+-	Total Size: **146.4 MB (146428102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8179fabed9f0c6ec55514d2ab11251b290b1b311004cdf5cf9c177089499ac3f`
+-	Image ID: `sha256:52ebdb09c5fe16e1ee503e81a31834f27f5bb949c62d10dc66ca6e794515d3b5`
 -	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
 
 ```dockerfile
@@ -26,9 +26,9 @@ $ docker pull hola-mundo@sha256:e2a34d0066ef9f8571e040b2234ea04c9782494611d4cb2c
 RUN Apply image 10.0.17134.1
 # Thu, 06 Dec 2018 19:28:32 GMT
 RUN Install update 10.0.17134.469
-# Tue, 25 Dec 2018 04:39:56 GMT
-RUN cmd /S /C #(nop) COPY file:9b863d14177c2b9b93c1d0e1cb09e05425927bfb27dc0d618954b743bf5ef3de in C: 
-# Tue, 25 Dec 2018 04:39:58 GMT
+# Tue, 01 Jan 2019 10:18:48 GMT
+RUN cmd /S /C #(nop) COPY file:02d59aec07c6a527c98423b3d0c90f16a3a32cc41a18540c9be03696275947b3 in C: 
+# Tue, 01 Jan 2019 10:18:49 GMT
 RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ```
 
@@ -41,11 +41,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Last Modified: Tue, 11 Dec 2018 22:06:26 GMT  
 		Size: 53.6 MB (53606566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:225e1b870d02c86403bf88547b59678d835eea485bb80e306ae302c6bfef9da2`  
-		Last Modified: Tue, 25 Dec 2018 04:40:26 GMT  
-		Size: 1.7 KB (1681 bytes)  
+	-	`sha256:03a5247ed04d0bf643dad7c6f2dae5716e2a2fa1c1136ba2df6be32cc38a5b82`  
+		Last Modified: Tue, 01 Jan 2019 10:19:23 GMT  
+		Size: 1.7 KB (1698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a42a57217548d148b95a89ffc62727e01ad1a543e3d91eeacd77c6681f2d265`  
-		Last Modified: Tue, 25 Dec 2018 04:40:26 GMT  
+	-	`sha256:51bd43771475e4904b95c16fb8ce6b0625a13dc2380e6b9f69529ed54ffccc0a`  
+		Last Modified: Tue, 01 Jan 2019 10:19:22 GMT  
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
