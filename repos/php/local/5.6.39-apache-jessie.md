@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16da3a39a78b5305e4ef2f5cc68d4a70ff55fdc150d3086cc75ef57c2d63dd42`
-- Created: `2018-12-10T18:15:47.562976734Z`
-- Virtual Size: ~ 376.98 Mb  
+- Image ID: `sha256:8a2967933fe2f6b69f69558fc79fc11206864039032c0b401ef64109e3321a3b`
+- Created: `2018-12-29T08:24:36.374755515Z`
+- Virtual Size: ~ 374.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -926,27 +926,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-4.8/4.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u1`
+### `dpkg` source package: `gcc-4.9=4.9.2-10+deb8u2`
 
 Binary Packages:
 
-- `cpp-4.9=4.9.2-10+deb8u1`
-- `g++-4.9=4.9.2-10+deb8u1`
-- `gcc-4.9=4.9.2-10+deb8u1`
-- `gcc-4.9-base:amd64=4.9.2-10+deb8u1`
-- `libasan1:amd64=4.9.2-10+deb8u1`
-- `libatomic1:amd64=4.9.2-10+deb8u1`
-- `libcilkrts5:amd64=4.9.2-10+deb8u1`
-- `libgcc-4.9-dev:amd64=4.9.2-10+deb8u1`
-- `libgcc1:amd64=1:4.9.2-10+deb8u1`
-- `libgomp1:amd64=4.9.2-10+deb8u1`
-- `libitm1:amd64=4.9.2-10+deb8u1`
-- `liblsan0:amd64=4.9.2-10+deb8u1`
-- `libquadmath0:amd64=4.9.2-10+deb8u1`
-- `libstdc++-4.9-dev:amd64=4.9.2-10+deb8u1`
-- `libstdc++6:amd64=4.9.2-10+deb8u1`
-- `libtsan0:amd64=4.9.2-10+deb8u1`
-- `libubsan0:amd64=4.9.2-10+deb8u1`
+- `cpp-4.9=4.9.2-10+deb8u2`
+- `g++-4.9=4.9.2-10+deb8u2`
+- `gcc-4.9=4.9.2-10+deb8u2`
+- `gcc-4.9-base:amd64=4.9.2-10+deb8u2`
+- `libasan1:amd64=4.9.2-10+deb8u2`
+- `libatomic1:amd64=4.9.2-10+deb8u2`
+- `libcilkrts5:amd64=4.9.2-10+deb8u2`
+- `libgcc-4.9-dev:amd64=4.9.2-10+deb8u2`
+- `libgcc1:amd64=1:4.9.2-10+deb8u2`
+- `libgomp1:amd64=4.9.2-10+deb8u2`
+- `libitm1:amd64=4.9.2-10+deb8u2`
+- `liblsan0:amd64=4.9.2-10+deb8u2`
+- `libquadmath0:amd64=4.9.2-10+deb8u2`
+- `libstdc++-4.9-dev:amd64=4.9.2-10+deb8u2`
+- `libstdc++6:amd64=4.9.2-10+deb8u2`
+- `libtsan0:amd64=4.9.2-10+deb8u2`
+- `libubsan0:amd64=4.9.2-10+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/g++-4.9/copyright`, `/usr/share/doc/gcc-4.9/copyright`, `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libasan1/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-4.9-dev/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-4.9-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -959,17 +959,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-4.9/copyright`, `/usr/share/doc/g++-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u1
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.dsc' gcc-4.9_4.9.2-10+deb8u1.dsc 19264 SHA256:6b8b3822063411e6d31bad8581ccebbd09dd1f537b4a949dbee7520b73dcd3bc
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u1.diff.gz' gcc-4.9_4.9.2-10+deb8u1.diff.gz 875721 SHA256:c46cb11de5e54f61cb356ea24c72603a66aef2add62fc58df68ba813edffb6b2
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10+deb8u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u2.dsc' gcc-4.9_4.9.2-10+deb8u2.dsc 19264 SHA256:900b6da5b21d5e15e1cb14ea6f17f56c85bbb82394ad6f091b98b05a6246961e
+'http://security.debian.org/debian-security/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://security.debian.org/debian-security/pool/updates/main/g/gcc-4.9/gcc-4.9_4.9.2-10+deb8u2.diff.gz' gcc-4.9_4.9.2-10+deb8u2.diff.gz 883134 SHA256:bd151e4ec61e40a96a49dc4a8275da688380ffd9668670b3cfe78c622e3812ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u2/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.9/4.9.2-10+deb8u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.9/4.9.2-10+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.136`
 
@@ -2332,6 +2332,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u10`
+- `openssl=1.0.1t-1+deb8u10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2351,24 +2352,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u9`
-
-Binary Packages:
-
-- `openssl=1.0.1t-1+deb8u9`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u9/
-
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2475,13 +2458,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u11`
+### `dpkg` source package: `perl=5.20.2-3+deb8u12`
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u11`
-- `perl-base=5.20.2-3+deb8u11`
-- `perl-modules=5.20.2-3+deb8u11`
+- `perl=5.20.2-3+deb8u12`
+- `perl-base=5.20.2-3+deb8u12`
+- `perl-modules=5.20.2-3+deb8u12`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -2513,17 +2496,17 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u11
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u11.dsc' perl_5.20.2-3+deb8u11.dsc 2377 SHA256:b58df3f05201f9a474157fbf3ede9d4b08beb8b3b69a882bb2c3f14eb70c1a40
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u11.debian.tar.xz' perl_5.20.2-3+deb8u11.debian.tar.xz 157516 SHA256:53e0ccd3ed238614fbcd8eb577159392892bcf82c7821f94f6ef379e8ae3a7c1
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u12
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u12.dsc' perl_5.20.2-3+deb8u12.dsc 2377 SHA256:b3e2ae82349e60575b28e62712e61aa1e862351e50eb7013004c75a951196cdb
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.20.2-3+deb8u12.debian.tar.xz' perl_5.20.2-3+deb8u12.debian.tar.xz 158872 SHA256:b93b828b4ebd8171ca7ef5f8f195d529c368e83cd86f276d4a25470a6b7aaa6d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u11/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u12/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkg-config=0.28-1`
 
@@ -2755,11 +2738,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/slang2/2.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u2`
+### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.8.7.1-1+deb8u2`
+- `libsqlite3-0:amd64=3.8.7.1-1+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2770,18 +2753,18 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.dsc' sqlite3_3.8.7.1-1+deb8u2.dsc 2540 SHA256:a99074d920a3b6c95bbc55402ff62ccddbfeed2f1a0ed63423bf79e7e4faeff9
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz 20428 SHA256:e3ef272994d4423c0dbed82c1171d774d7c0a459db44eb1750a4a61d719fbbd2
+$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.dsc' sqlite3_3.8.7.1-1+deb8u3.dsc 2583 SHA256:a9724e31807793c02b9ef8d828cd83bafd6f3efe00973ffe70ff17ef666e1887
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz 22544 SHA256:5e5d51718d4dbfb7027ef82dc9eafdf86e17f78a20f8233e267aae6c0b2040a3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
@@ -2809,15 +2792,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u7`
+### `dpkg` source package: `systemd=215-17+deb8u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u7`
-- `libudev1:amd64=215-17+deb8u7`
-- `systemd=215-17+deb8u7`
-- `systemd-sysv=215-17+deb8u7`
-- `udev=215-17+deb8u7`
+- `libsystemd0:amd64=215-17+deb8u8`
+- `libudev1:amd64=215-17+deb8u8`
+- `systemd=215-17+deb8u8`
+- `systemd-sysv=215-17+deb8u8`
+- `udev=215-17+deb8u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2831,17 +2814,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u7.dsc' systemd_215-17+deb8u7.dsc 4259 SHA256:12faf93b32dd67b758d66c15a6a9b5fd5a94109d13f560ec95d060ca07e9b145
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u7.debian.tar.xz' systemd_215-17+deb8u7.debian.tar.xz 224056 SHA256:f70c90bb8475741cc0dce62aed90bc4a404c17bee96beb9dfe1b5cade7fbded3
+$ apt-get source -qq --print-uris systemd=215-17+deb8u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u8.dsc' systemd_215-17+deb8u8.dsc 3804 SHA256:6fe49b8073627db9ccf3bce141648900f33675eb002c525e75a919530b45306c
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u8.debian.tar.xz' systemd_215-17+deb8u8.debian.tar.xz 242872 SHA256:afbd7e7b3c1fd2c0f12e478d3e30b18908e272ff1faf2fcde1a16d306f34deb4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/215-17+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/215-17+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
