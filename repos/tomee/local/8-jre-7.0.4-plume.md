@@ -334,6 +334,10 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-files/9.9+deb9u5/
+
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 

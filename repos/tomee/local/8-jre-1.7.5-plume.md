@@ -334,6 +334,10 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-files/9.9+deb9u5/
+
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1364,6 +1368,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u3/
 
 
 ### `dpkg` source package: `graphite2=1.3.10-1`
@@ -2905,6 +2913,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libx11/2:1.6.4-3/
 
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
