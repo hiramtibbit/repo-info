@@ -14,6 +14,7 @@
 -	[`golang:1.10.7-windowsservercore`](#golang1107-windowsservercore)
 -	[`golang:1.10.7-windowsservercore-1709`](#golang1107-windowsservercore-1709)
 -	[`golang:1.10.7-windowsservercore-1803`](#golang1107-windowsservercore-1803)
+-	[`golang:1.10.7-windowsservercore-1809`](#golang1107-windowsservercore-1809)
 -	[`golang:1.10.7-windowsservercore-ltsc2016`](#golang1107-windowsservercore-ltsc2016)
 -	[`golang:1.10-alpine`](#golang110-alpine)
 -	[`golang:1.10-alpine3.7`](#golang110-alpine37)
@@ -24,6 +25,7 @@
 -	[`golang:1.10-windowsservercore`](#golang110-windowsservercore)
 -	[`golang:1.10-windowsservercore-1709`](#golang110-windowsservercore-1709)
 -	[`golang:1.10-windowsservercore-1803`](#golang110-windowsservercore-1803)
+-	[`golang:1.10-windowsservercore-1809`](#golang110-windowsservercore-1809)
 -	[`golang:1.10-windowsservercore-ltsc2016`](#golang110-windowsservercore-ltsc2016)
 -	[`golang:1.11`](#golang111)
 -	[`golang:1.11.4`](#golang1114)
@@ -36,6 +38,7 @@
 -	[`golang:1.11.4-windowsservercore`](#golang1114-windowsservercore)
 -	[`golang:1.11.4-windowsservercore-1709`](#golang1114-windowsservercore-1709)
 -	[`golang:1.11.4-windowsservercore-1803`](#golang1114-windowsservercore-1803)
+-	[`golang:1.11.4-windowsservercore-1809`](#golang1114-windowsservercore-1809)
 -	[`golang:1.11.4-windowsservercore-ltsc2016`](#golang1114-windowsservercore-ltsc2016)
 -	[`golang:1.11-alpine`](#golang111-alpine)
 -	[`golang:1.11-alpine3.7`](#golang111-alpine37)
@@ -46,6 +49,7 @@
 -	[`golang:1.11-windowsservercore`](#golang111-windowsservercore)
 -	[`golang:1.11-windowsservercore-1709`](#golang111-windowsservercore-1709)
 -	[`golang:1.11-windowsservercore-1803`](#golang111-windowsservercore-1803)
+-	[`golang:1.11-windowsservercore-1809`](#golang111-windowsservercore-1809)
 -	[`golang:1.11-windowsservercore-ltsc2016`](#golang111-windowsservercore-ltsc2016)
 -	[`golang:1.12beta1`](#golang112beta1)
 -	[`golang:1.12beta1-alpine`](#golang112beta1-alpine)
@@ -56,6 +60,7 @@
 -	[`golang:1.12beta1-windowsservercore`](#golang112beta1-windowsservercore)
 -	[`golang:1.12beta1-windowsservercore-1709`](#golang112beta1-windowsservercore-1709)
 -	[`golang:1.12beta1-windowsservercore-1803`](#golang112beta1-windowsservercore-1803)
+-	[`golang:1.12beta1-windowsservercore-1809`](#golang112beta1-windowsservercore-1809)
 -	[`golang:1.12beta1-windowsservercore-ltsc2016`](#golang112beta1-windowsservercore-ltsc2016)
 -	[`golang:1.12-rc`](#golang112-rc)
 -	[`golang:1.12-rc-alpine`](#golang112-rc-alpine)
@@ -66,6 +71,7 @@
 -	[`golang:1.12-rc-windowsservercore`](#golang112-rc-windowsservercore)
 -	[`golang:1.12-rc-windowsservercore-1709`](#golang112-rc-windowsservercore-1709)
 -	[`golang:1.12-rc-windowsservercore-1803`](#golang112-rc-windowsservercore-1803)
+-	[`golang:1.12-rc-windowsservercore-1809`](#golang112-rc-windowsservercore-1809)
 -	[`golang:1.12-rc-windowsservercore-ltsc2016`](#golang112-rc-windowsservercore-ltsc2016)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:1-alpine3.7`](#golang1-alpine37)
@@ -76,6 +82,7 @@
 -	[`golang:1-windowsservercore`](#golang1-windowsservercore)
 -	[`golang:1-windowsservercore-1709`](#golang1-windowsservercore-1709)
 -	[`golang:1-windowsservercore-1803`](#golang1-windowsservercore-1803)
+-	[`golang:1-windowsservercore-1809`](#golang1-windowsservercore-1809)
 -	[`golang:1-windowsservercore-ltsc2016`](#golang1-windowsservercore-ltsc2016)
 -	[`golang:alpine`](#golangalpine)
 -	[`golang:alpine3.7`](#golangalpine37)
@@ -92,11 +99,13 @@
 -	[`golang:rc-windowsservercore`](#golangrc-windowsservercore)
 -	[`golang:rc-windowsservercore-1709`](#golangrc-windowsservercore-1709)
 -	[`golang:rc-windowsservercore-1803`](#golangrc-windowsservercore-1803)
+-	[`golang:rc-windowsservercore-1809`](#golangrc-windowsservercore-1809)
 -	[`golang:rc-windowsservercore-ltsc2016`](#golangrc-windowsservercore-ltsc2016)
 -	[`golang:stretch`](#golangstretch)
 -	[`golang:windowsservercore`](#golangwindowsservercore)
 -	[`golang:windowsservercore-1709`](#golangwindowsservercore-1709)
 -	[`golang:windowsservercore-1803`](#golangwindowsservercore-1803)
+-	[`golang:windowsservercore-1809`](#golangwindowsservercore-1809)
 -	[`golang:windowsservercore-ltsc2016`](#golangwindowsservercore-ltsc2016)
 
 ## `golang:1`
@@ -4571,6 +4580,10 @@ WORKDIR C:\gopath
 		Size: 1.4 KB (1358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.10.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `golang:1.10.7-windowsservercore-ltsc2016`
 
 ```console
@@ -6962,6 +6975,10 @@ WORKDIR C:\gopath
 		Last Modified: Tue, 25 Dec 2018 23:46:53 GMT  
 		Size: 1.4 KB (1358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.10-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `golang:1.10-windowsservercore-ltsc2016`
 
@@ -10813,6 +10830,10 @@ WORKDIR C:\gopath
 		Size: 1.4 KB (1360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.11.4-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `golang:1.11.4-windowsservercore-ltsc2016`
 
 ```console
@@ -13204,6 +13225,10 @@ WORKDIR C:\gopath
 		Last Modified: Tue, 25 Dec 2018 23:40:01 GMT  
 		Size: 1.4 KB (1360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.11-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `golang:1.11-windowsservercore-ltsc2016`
 
@@ -15933,6 +15958,10 @@ WORKDIR C:\gopath
 		Size: 1.4 KB (1350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.12beta1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `golang:1.12beta1-windowsservercore-ltsc2016`
 
 ```console
@@ -18661,6 +18690,10 @@ WORKDIR C:\gopath
 		Size: 1.4 KB (1350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.12-rc-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `golang:1.12-rc-windowsservercore-ltsc2016`
 
 ```console
@@ -21052,6 +21085,10 @@ WORKDIR C:\gopath
 		Last Modified: Tue, 25 Dec 2018 23:40:01 GMT  
 		Size: 1.4 KB (1360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `golang:1-windowsservercore-ltsc2016`
 
@@ -25843,6 +25880,10 @@ WORKDIR C:\gopath
 		Size: 1.4 KB (1350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:rc-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `golang:rc-windowsservercore-ltsc2016`
 
 ```console
@@ -26901,6 +26942,10 @@ WORKDIR C:\gopath
 		Last Modified: Tue, 25 Dec 2018 23:40:01 GMT  
 		Size: 1.4 KB (1360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `golang:windowsservercore-ltsc2016`
 
