@@ -1,14 +1,14 @@
-# `erlang:21.2.1-alpine`
+# `erlang:21.2.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81f27cb0b6648dba733e54a4d08f14702423561ca51ebdb72bb253b8750cd21f`
-- Created: `2018-12-21T23:53:11.380024493Z`
+- Image ID: `sha256:952186d522b8ca09469064d4e5b6f9f8822f653301aca886aec5c1d2f38f3c44`
+- Created: `2019-01-01T01:58:19.246586204Z`
 - Virtual Size: ~ 73.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=21.2.1`
+  - `OTP_VERSION=21.2.2`
   - `REBAR3_VERSION=3.7.5`
