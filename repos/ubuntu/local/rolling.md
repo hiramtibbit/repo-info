@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bfd76efee037fce5409beb2d79d91a26037bbf795e2aaa19ab8303b89ff0e2e`
-- Created: `2018-11-19T21:21:45.479220059Z`
-- Virtual Size: ~ 73.68 Mb  
+- Image ID: `sha256:d4452947e3faf4c9002596b6a9b84831f1412b731b893ddf623b206c523d5e86`
+- Created: `2018-12-28T23:23:46.197209038Z`
+- Virtual Size: ~ 73.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -344,14 +344,14 @@ $ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu5.tar.xz' dpkg_1.19.0.5ubuntu5.tar.xz 4587016 SHA256:75ace78245f4355c2d4628b150b0b3aecb64b50c5b859f661b9f742f7e4696f1
 ```
 
-### `dpkg` source package: `e2fsprogs=1.44.4-2`
+### `dpkg` source package: `e2fsprogs=1.44.4-2ubuntu0.1`
 
 Binary Packages:
 
-- `e2fsprogs=1.44.4-2`
-- `libcom-err2:amd64=1.44.4-2`
-- `libext2fs2:amd64=1.44.4-2`
-- `libss2:amd64=1.44.4-2`
+- `e2fsprogs=1.44.4-2ubuntu0.1`
+- `libcom-err2:amd64=1.44.4-2ubuntu0.1`
+- `libext2fs2:amd64=1.44.4-2ubuntu0.1`
+- `libss2:amd64=1.44.4-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`)
 
@@ -361,10 +361,10 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.dsc' e2fsprogs_1.44.4-2.dsc 2494 SHA256:fd92d2d786434c29b07932ca3d4e778345f022aa4221c8c4387744e5723854ac
+$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.dsc' e2fsprogs_1.44.4-2ubuntu0.1.dsc 2991 SHA256:1051b6e74f58090c9a692e27c1a04ebbc49ec51b925a461802c9faa812ffe0cb
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2.debian.tar.xz' e2fsprogs_1.44.4-2.debian.tar.xz 80640 SHA256:b72fdfbda6b96338432222d25c9be639e0d800d50533fa345f32789925282d5c
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz' e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz 81492 SHA256:ee2dbd7294b4ffb7d6fa8f6e2da0184d914f14b707c924d204187e1e35e11fbe
 ```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20180808-2`
@@ -1039,11 +1039,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-11
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-11.debian.tar.gz' pcre3_8.39-11.debian.tar.gz 26414 SHA256:de1f66246fe7b4e85fba0f9e3bac69bdf3271a9c5c6b7ac0661b20051c012883
 ```
 
-### `dpkg` source package: `perl=5.26.2-7`
+### `dpkg` source package: `perl=5.26.2-7ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.26.2-7`
+- `perl-base=5.26.2-7ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1079,11 +1079,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.26.2-7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7.dsc' perl_5.26.2-7.dsc 2780 SHA256:5c385bc8c8d6ad08e1ed2942ba4e71dd684b81b744a219d0843b3d60dd50657d
+$ apt-get source -qq --print-uris perl=5.26.2-7ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7ubuntu0.1.dsc' perl_5.26.2-7ubuntu0.1.dsc 2870 SHA256:4a45393dc99052c75d4bcc459acc75774e10b9a2286f510689f16d414a1823ce
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig-regen-configure.tar.gz' perl_5.26.2.orig-regen-configure.tar.gz 712883 SHA256:918f054a64b2835bc1c6ed79c1e082e7dcdb76735a95b54ee39c25ea9e245ca4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2.orig.tar.xz' perl_5.26.2.orig.tar.xz 11931624 SHA256:0f8c0fb1b0db4681adb75c3ba0dd77a0472b1b359b9e80efd79fc27b4352132c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7.debian.tar.xz' perl_5.26.2-7.debian.tar.xz 167472 SHA256:84223fbd68d617a2bf3734ebe622b381c74d435aec67c5e17cf60ecb5af6ecb1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.2-7ubuntu0.1.debian.tar.xz' perl_5.26.2-7ubuntu0.1.debian.tar.xz 172948 SHA256:f6c0ac3f84d16576be408e582e942799a4d450fd0691097ba5a0779a22aea6b7
 ```
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu1`
@@ -1173,12 +1173,12 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.debian.tar.xz' shadow_4.5-1ubuntu1.debian.tar.xz 470524 SHA256:51e534983f0500229b51b3f3ccbee3b041e48d3ea6e5f64c914351a0e996dc05
 ```
 
-### `dpkg` source package: `systemd=239-7ubuntu10.3`
+### `dpkg` source package: `systemd=239-7ubuntu10.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=239-7ubuntu10.3`
-- `libudev1:amd64=239-7ubuntu10.3`
+- `libsystemd0:amd64=239-7ubuntu10.4`
+- `libudev1:amd64=239-7ubuntu10.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1190,9 +1190,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=239-7ubuntu10.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.dsc' systemd_239-7ubuntu10.4.dsc 4666 SHA256:52b5e0aa8a07936cdbabb4528366a2eb6ff5c503fca9b79d8052a1ef1a3437ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.debian.tar.xz' systemd_239-7ubuntu10.4.debian.tar.xz 193104 SHA256:8a444f137e9430144bc096d5c32326679ab15faae874bcbdb775aee7810fdd0f
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
