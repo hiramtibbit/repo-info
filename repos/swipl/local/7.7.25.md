@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f65f6a0c4420676af20412d2d768583a4a5e258925145015b9f0f2e9ee4ccd13`
-- Created: `2018-12-20T00:49:28.250954331Z`
-- Virtual Size: ~ 154.23 Mb  
+- Image ID: `sha256:f3484e82c373d84fdba06a605ef938b322544d757dcf09779c7a44b3076faa46`
+- Created: `2018-12-29T08:59:45.214316661Z`
+- Virtual Size: ~ 145.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -1030,11 +1030,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.15-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.15-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libarchive=3.2.2-2`
+### `dpkg` source package: `libarchive=3.2.2-2+deb9u1`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.2.2-2`
+- `libarchive13:amd64=3.2.2-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -1050,17 +1050,17 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libarchive=3.2.2-2
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2-2.dsc' libarchive_3.2.2-2.dsc 2482 SHA256:9b99d67a8c48e3b806c3e7cccbc7c65d9c638057e836427d2f287c1f882de826
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.2.2-2.debian.tar.xz' libarchive_3.2.2-2.debian.tar.xz 15220 SHA256:92e91195aabea4dfce3d26a38ff385922fe79051f3a7196ce350b44c592a967d
+$ apt-get source -qq --print-uris libarchive=3.2.2-2+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2-2+deb9u1.dsc' libarchive_3.2.2-2+deb9u1.dsc 2636 SHA256:aca78d3d03fd5ef9ab4ec3e42a701ec8f767ab7757c459c168c56229165bb5a5
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
+'http://security.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.2.2-2+deb9u1.debian.tar.xz' libarchive_3.2.2-2+deb9u1.debian.tar.xz 18624 SHA256:0e22308dbacd841ab4c2a0f04ad343afa24d398e69c31064df84c70f4589307c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libarchive/3.2.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libarchive/3.2.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libarchive/3.2.2-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libarchive/3.2.2-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libarchive/3.2.2-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libarchive/3.2.2-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
@@ -1643,11 +1643,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lzo2/2.08-1.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lzo2/2.08-1.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.1=10.1.26-0+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.37-0+deb9u1`
 
 Binary Packages:
 
-- `libmariadbclient18:amd64=10.1.26-0+deb9u1`
+- `libmariadbclient18:amd64=10.1.37-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -1674,17 +1674,18 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.37-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37-0+deb9u1.dsc' mariadb-10.1_10.1.37-0+deb9u1.dsc 4530 SHA256:6f8aa1d177ff530c1de727e5bbbc7b3545457147900eef641e01075808b0ec15
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37.orig.tar.gz' mariadb-10.1_10.1.37.orig.tar.gz 63492946 SHA256:8cd516b0a7f7aa36a7c1d6e687dbbad8c0b08c92d5fd60c6e691b19a6cab4d46
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37.orig.tar.gz.asc' mariadb-10.1_10.1.37.orig.tar.gz.asc 181 SHA256:d671adf786ff5ce80d6c28a9701a602d6f7728cc79c0604db28bc51c4ef8ab68
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.37-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.37-0+deb9u1.debian.tar.xz 227848 SHA256:cae259581b60d952967dca0bb23808edd10150f9ae5595325f8dcea62397a1a0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.1/10.1.26-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mariadb-10.1/10.1.37-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/mariadb-10.1/10.1.37-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mariadb-10.1/10.1.37-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -1858,36 +1859,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3+deb9u2`
-
-Binary Packages:
-
-- `openssl=1.1.0f-3+deb9u2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.dsc' openssl_1.1.0f-3+deb9u2.dsc 2397 SHA256:bace0bac1e074c8f681a4bd47648dd020dc4dc2c352105b0e893e12a3d9f8f5f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u2.debian.tar.xz' openssl_1.1.0f-3+deb9u2.debian.tar.xz 59296 SHA256:f78dea9f4607d55cabd6ebe05a2c2243ede1e0f7d71296a665a6566c8875fdfe
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
 
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.0j-1~deb9u1`
+- `openssl=1.1.0j-1~deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
