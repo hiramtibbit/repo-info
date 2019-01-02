@@ -2526,20 +2526,13 @@ Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 - `CC0`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris publicsuffix=20181108.2228-1
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20181108.2228-1.dsc' publicsuffix_20181108.2228-1.dsc 1401 SHA256:cfd9df91ecc5dc71429e9b81deccd342c2e0ac71cc8d17248bc5f129f79e6adb
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20181108.2228.orig.tar.gz' publicsuffix_20181108.2228.orig.tar.gz 86411 SHA256:663e9b40d4b151b4c2ab6e622291557bda061a130b78d00ea8be35a31cf6f022
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20181108.2228-1.debian.tar.xz' publicsuffix_20181108.2228-1.debian.tar.xz 15784 SHA256:db01108148e3a111ea7e776321f07ec580f68084038b635026dee7492ea7370d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/publicsuffix/20181108.2228-1/
 
-- https://sources.debian.net/src/publicsuffix/20181108.2228-1/ (for browsing the source)
-- https://sources.debian.net/src/publicsuffix/20181108.2228-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/publicsuffix/20181108.2228-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
@@ -2746,21 +2739,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-1.dsc' tzdata_2018g-1.dsc 2232 SHA256:e1e3229f7a2778c6df59ebb55f3a4cb0685ac0d22b26a53c949d30ba5ddeba82
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz.asc' tzdata_2018g.orig.tar.gz.asc 833 SHA256:217e2e114b68ae54a14b23280a50922b3983d7e8819eb62dfe29cd7136a1c848
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-1.debian.tar.xz' tzdata_2018g-1.debian.tar.xz 104244 SHA256:0e7f27a3533c21864e91da4c70c20ca6a4d4755c51ffd077cdfeae71bc60d181
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018g-1/
 
-- https://sources.debian.net/src/tzdata/2018g-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018g-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018g-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038`
 
@@ -2864,21 +2849,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.20-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.20-1.dsc' wget_1.20-1.dsc 2150 SHA256:61a7bc41d68ad243dd878b2dbf55c4c0a209b4c4b7ade8e3f97f6512b5f41a15
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.20.orig.tar.gz' wget_1.20.orig.tar.gz 4474641 SHA256:8a057925c74c059d9e37de63a63b450da66c5c1c8cef869a6df420b3bb45a0cf
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.20.orig.tar.gz.asc' wget_1.20.orig.tar.gz.asc 1241 SHA256:8a2f52d72d7f140f4f28ba6388a7b9d2929caa1035249aa8ca4524b2b4e61091
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.20-1.debian.tar.xz' wget_1.20-1.debian.tar.xz 60312 SHA256:a8e9ee1db5c0f2939120b3bdde5c1b14b8676cc2a9bd5be490ab1ba440d97b9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.20-1/
 
-- https://sources.debian.net/src/wget/1.20-1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.20-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.20-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg=1:7.7+19`
 
