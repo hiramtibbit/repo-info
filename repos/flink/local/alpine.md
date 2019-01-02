@@ -1,10 +1,10 @@
-# `flink:1.7.0-scala_2.12-alpine`
+# `flink:1.7.1-scala_2.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:50a736c719b31b0ce76a7c67e941fae28e83b374c1507087d03918372bac7aa9`
-- Created: `2018-12-21T05:24:28.295536183Z`
-- Virtual Size: ~ 354.72 Mb  
+- Image ID: `sha256:b9e24ad43d7f1e71ef61e91a58798bb0997961d984a94f8880dd27208c56054f`
+- Created: `2019-01-01T00:36:15.71462789Z`
+- Virtual Size: ~ 364.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u181`
   - `JAVA_ALPINE_VERSION=8.181.13-r0`
-  - `FLINK_VERSION=1.7.0`
+  - `FLINK_VERSION=1.7.1`
   - `HADOOP_SCALA_VARIANT=scala_2.12`
   - `FLINK_HOME=/opt/flink`
-  - `FLINK_URL_FILE_PATH=flink/flink-1.7.0/flink-1.7.0-bin-scala_2.12.tgz`
-  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.7.0/flink-1.7.0-bin-scala_2.12.tgz`
-  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.7.0/flink-1.7.0-bin-scala_2.12.tgz.asc`
+  - `FLINK_URL_FILE_PATH=flink/flink-1.7.1/flink-1.7.1-bin-scala_2.12.tgz`
+  - `FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.7.1/flink-1.7.1-bin-scala_2.12.tgz`
+  - `FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.12.tgz.asc`
