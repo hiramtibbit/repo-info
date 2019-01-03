@@ -40,7 +40,7 @@ sub ua_req {
 			--$tries;
 			if (
 				$tries <= 0
-				|| $tx->success
+				|| !$tx->error
 				|| (
 					# if "$tx->res->code" is undefined, that usually is indicative of some kind of timeout (connect/inactivity)
 					$tx->res->code
@@ -125,7 +125,9 @@ sub registry_req {
 				$authUrl = $authUrl->to_abs;
 				return ua_req(get => $authUrl => sub {
 					my $tokenTx = shift;
-					die "failed to fetch token for $repo" unless $tokenTx->success;
+					if (my $error = $tokenTx->error) {
+						die "failed to fetch token for $repo: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
+					}
 					$tokens{$repo} = $tokenTx->res->json->{token};
 					return $do_work->();
 				});
@@ -156,7 +158,9 @@ sub get_manifest {
 		) => sub {
 			my $manifestTx = shift;
 			return $callback->(undef, undef) if $manifestTx->res->code == 404; # tag doesn't exist
-			die "failed to get manifest for $image" unless $manifestTx->success;
+			if (my $error = $manifestTx->error) {
+				die "failed to get manifest for $image: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
+			}
 			return $callback->(
 				$digests{$image} = $manifestTx->res->headers->header('Docker-Content-Digest'),
 				$manifests{$image} = $manifestTx->res->json,
@@ -182,7 +186,9 @@ sub get_blob_json {
 
 	return blob_req(get => ($repo, $blob) => () => sub {
 		my $tx = shift;
-		die "failed to get blob data for $key" unless $tx->success;
+		if (my $error = $tx->error) {
+			die "failed to get blob data for $key: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
+		}
 		return $callback->($blobs{$key} = $tx->res->json);
 	});
 }
@@ -196,7 +202,9 @@ sub get_blob_headers {
 
 	return blob_req(head => ($repo, $blob) => () => sub {
 		my $headersTx = shift;
-		die "failed to get headers for $key" unless $headersTx->success;
+		if (my $error = $headersTx->error) {
+			die "failed to get headers for $key: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
+		}
 		return $callback->($headers{$key} = $headersTx->res->headers);
 	});
 }
@@ -210,7 +218,9 @@ sub get_foreign_headers {
 
 	return ua_req(head => $url => {} => sub {
 		my $headersTx = shift;
-		die "failed to get headers for $url" unless $headersTx->success;
+		if (my $error = $headersTx->error) {
+			die "failed to get headers for $url: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
+		}
 		return $callback->($headers{$url} = $headersTx->res->headers);
 	});
 }

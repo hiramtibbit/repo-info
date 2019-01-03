@@ -15,7 +15,7 @@ RUN cpanm IO::Socket::IP
 RUN cpanm --notest IO::Socket::SSL
 # the tests for IO::Socket::SSL like to hang... :(
 
-RUN cpanm Mojolicious@6.66
+RUN cpanm Mojolicious@7.94
 
 # http://mojolicious.org/perldoc/Mojolicious/Guides/FAQ#What-does-Inactivity-timeout-mean
 ENV MOJO_INACTIVITY_TIMEOUT 120
