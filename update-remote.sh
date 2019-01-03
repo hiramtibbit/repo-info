@@ -35,7 +35,7 @@ done
 echo -n 'pre-filling cache ... '
 bashbrew list --repos "${repos[@]}" 2>/dev/null \
 	| sed 's!^!'"$repoInfoDaemon"'/markdown/!' \
-	| xargs -n 1 -P 4 "${curl[@]}" -o /dev/null
+	| xargs -n 1 -P 2 "${curl[@]}" -o /dev/null
 echo 'done'
 
 for repo in "${repos[@]}"; do
