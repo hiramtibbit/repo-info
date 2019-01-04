@@ -2376,14 +2376,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mono=5.18.0.225-0xamarin1+debian9b1
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225-0xamarin1+debian9b1.dsc' mono_5.18.0.225-0xamarin1+debian9b1.dsc 19119 SHA256:4c373d353e6ea436e83c920be75b4054eda5c8b4fef1f0a187273f3c38c18300
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225.orig.tar.bz2' mono_5.18.0.225.orig.tar.bz2 276603472 SHA256:91aa3e8a12aaf94760a092866abc5c5f1f437ecd0a97bedfff857c439aa7a87f
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225-0xamarin1+debian9b1.debian.tar.xz' mono_5.18.0.225-0xamarin1+debian9b1.debian.tar.xz 155848 SHA256:5369de4f6df62faf27cd6b1f537066885ddaf047d9fdacdfff5272eb7fc4bf41
-```
 
 ### `dpkg` source package: `msbuild=1:16.0+xamarinxplat.2018.09.26.17.53-0xamarin3+debian9b1`
 
