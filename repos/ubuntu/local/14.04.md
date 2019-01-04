@@ -2346,14 +2346,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018g-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.dsc' tzdata_2018g-0ubuntu0.14.04.dsc 2080 SHA256:b0cebc355c6e60033ae471b76ca50962a92c20aaf1044f6f4fd21e894055e783
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018g-0ubuntu0.14.04.debian.tar.xz' tzdata_2018g-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:71b1d88ca95860408140367ed60e3d2918deea06ff8b03c065784e00803e9180
-```
 
 ### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
 
