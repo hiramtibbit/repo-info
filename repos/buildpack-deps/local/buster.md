@@ -1297,20 +1297,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.19.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.2-1.dsc' git_2.19.2-1.dsc 2888 SHA256:2d11af1961af3d67459d2f1aea73d9250a941c72a17b19f4cd4255b9b5e90a8e
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.2.orig.tar.xz' git_2.19.2.orig.tar.xz 5235608 SHA256:fce9a3a3297db5f3756c4553a2fc1fec209ee08178f8491e76ff4ff8fe7b8be9
-'http://deb.debian.org/debian/pool/main/g/git/git_2.19.2-1.debian.tar.xz' git_2.19.2-1.debian.tar.xz 589304 SHA256:0532be17ae083310b0d1798a32d466ab93e8ebd581f6e25d0e13260f442670fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.19.2-1/
 
-- https://sources.debian.net/src/git/1:2.19.2-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.19.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.19.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.1-2`
 
@@ -1967,20 +1960,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.16.1-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1-1.dsc' krb5_1.16.1-1.dsc 3318 SHA256:1f8cc61d7b29ba4887de0c17504aa64206207da6e46af50eecaef6d0e50a3dfd
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1.orig.tar.gz' krb5_1.16.1.orig.tar.gz 9477480 SHA256:214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1-1.debian.tar.xz' krb5_1.16.1-1.debian.tar.xz 97608 SHA256:3881aefff33f5bfb54c96b1ccd5b20ded07d9890d8dc253acfc260e48d985236
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.16.1-1/
 
-- https://sources.debian.net/src/krb5/1.16.1-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.16.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.16.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.9-3`
 
@@ -2153,20 +2139,13 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcroco=0.6.12-2
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12-2.dsc' libcroco_0.6.12-2.dsc 2204 SHA256:46e81715670968edd1d71cd878a5426ea2b28513bc4975f0b1975185adb69c9e
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12.orig.tar.xz' libcroco_0.6.12.orig.tar.xz 482028 SHA256:ddc4b5546c9fb4280a5017e2707fbd4839034ed1aba5b7d4372212f34f84f860
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12-2.debian.tar.xz' libcroco_0.6.12-2.debian.tar.xz 8076 SHA256:038c42873794d314fb40c9d0a78c49b841b9ac8f3a947f3fee5f7928e7d155b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcroco/0.6.12-2/
 
-- https://sources.debian.net/src/libcroco/0.6.12-2/ (for browsing the source)
-- https://sources.debian.net/src/libcroco/0.6.12-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcroco/0.6.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.12-1`
 
@@ -4887,21 +4866,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2018g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-1.dsc' tzdata_2018g-1.dsc 2232 SHA256:e1e3229f7a2778c6df59ebb55f3a4cb0685ac0d22b26a53c949d30ba5ddeba82
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz.asc' tzdata_2018g.orig.tar.gz.asc 833 SHA256:217e2e114b68ae54a14b23280a50922b3983d7e8819eb62dfe29cd7136a1c848
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-1.debian.tar.xz' tzdata_2018g-1.debian.tar.xz 104244 SHA256:0e7f27a3533c21864e91da4c70c20ca6a4d4755c51ffd077cdfeae71bc60d181
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2018g-1/
 
-- https://sources.debian.net/src/tzdata/2018g-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018g-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018g-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 

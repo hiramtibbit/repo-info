@@ -851,13 +851,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.56
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.56.dsc' init-system-helpers_1.56.dsc 1896 SHA256:00e2357205e451aee0786c55db478a0214c6bdc51624a9fe98f19a69fd83eec0
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.56.tar.xz' init-system-helpers_1.56.tar.xz 40360 SHA256:f1942a692c8debcb2aa918a7c1c47a4545781134a4de9c6f7e6d5ec3f06906c1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/init-system-helpers/1.56/
+
 
 ### `dpkg` source package: `keyutils=1.5.9-9.3`
 
