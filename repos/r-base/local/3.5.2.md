@@ -789,16 +789,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.170-0.5
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.5.dsc' elfutils_0.170-0.5.dsc 2326 SHA256:cbf2af3a3d8c15152082137c3a7c624358d8a8fc0309075ca35509d7da276158
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.5.debian.tar.xz' elfutils_0.170-0.5.debian.tar.xz 45260 SHA256:5e4a997475d568c5bd8bd128d71a277de07e9600fa7437fe2b511ee012e31767
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170-0.5.dsc' elfutils_0.170-0.5.dsc 2326 SHA256:cbf2af3a3d8c15152082137c3a7c624358d8a8fc0309075ca35509d7da276158
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170-0.5.debian.tar.xz' elfutils_0.170-0.5.debian.tar.xz 45260 SHA256:5e4a997475d568c5bd8bd128d71a277de07e9600fa7437fe2b511ee012e31767
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/elfutils/0.170-0.5/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.170-0.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.170-0.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.6-1`
 
@@ -1669,16 +1663,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.16.1-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1-1.dsc' krb5_1.16.1-1.dsc 3318 SHA256:1f8cc61d7b29ba4887de0c17504aa64206207da6e46af50eecaef6d0e50a3dfd
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1.orig.tar.gz' krb5_1.16.1.orig.tar.gz 9477480 SHA256:214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.16.1-1.debian.tar.xz' krb5_1.16.1-1.debian.tar.xz 97608 SHA256:3881aefff33f5bfb54c96b1ccd5b20ded07d9890d8dc253acfc260e48d985236
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1-1.dsc' krb5_1.16.1-1.dsc 3318 SHA256:1f8cc61d7b29ba4887de0c17504aa64206207da6e46af50eecaef6d0e50a3dfd
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1.orig.tar.gz' krb5_1.16.1.orig.tar.gz 9477480 SHA256:214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1-1.debian.tar.xz' krb5_1.16.1-1.debian.tar.xz 97608 SHA256:3881aefff33f5bfb54c96b1ccd5b20ded07d9890d8dc253acfc260e48d985236
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/krb5/1.16.1-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.16.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.16.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.8.0-2`
 
@@ -2126,10 +2114,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.36-2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.dsc' libpng1.6_1.6.36-2.dsc 2197 SHA256:914cac423b0527aaaee7ab124326c019db1506afaf6194fdbb4a22f5afb5beb2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.debian.tar.xz' libpng1.6_1.6.36-2.debian.tar.xz 36908 SHA256:c5c5aaf71183ea898c3ed8acb591653766c49c653ae9c31844258d0e06ed7dc4
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.dsc' libpng1.6_1.6.36-2.dsc 2197 SHA256:914cac423b0527aaaee7ab124326c019db1506afaf6194fdbb4a22f5afb5beb2
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.debian.tar.xz' libpng1.6_1.6.36-2.debian.tar.xz 36908 SHA256:c5c5aaf71183ea898c3ed8acb591653766c49c653ae9c31844258d0e06ed7dc4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.36-2/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.36-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.36-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.20.2-2`
 
