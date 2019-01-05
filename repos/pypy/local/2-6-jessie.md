@@ -2002,20 +2002,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u4
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.dsc' jasper_1.900.1-debian1-2.4+deb8u4.dsc 2120 SHA256:d10770e6fbffd6a63f554af5c1f49e7fe8415e43a618f80b2a8bcf713ba72c47
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u4.debian.tar.xz 39040 SHA256:1edc8a12d963e129cadd43dc15010595eebf60af2cc1c30866508b891764f47b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
