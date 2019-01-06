@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bf0058d58527bfa617825dbf8c23835af7b65c0675414b3e943b485f14d43c9`
-- Created: `2018-12-29T10:26:29.402764298Z`
+- Image ID: `sha256:f19d81b25db670c332fbd531436145217a2ff19bd38bcb3d11f10cd9045a0ad8`
+- Created: `2019-01-03T23:20:36.051370938Z`
 - Virtual Size: ~ 867.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=11.0.1`
   - `JAVA_DEBIAN_VERSION=11.0.1+13-2~bpo9+1`
-  - `CLOJURE_VERSION=1.10.0.403`
+  - `CLOJURE_VERSION=1.10.0.408`
 
 ## `dpkg` (`.deb`-based packages)
 
