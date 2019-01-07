@@ -1,4 +1,4 @@
-# `mediawiki:lts`
+# `mediawiki:1.31.1`
 
 ## Docker Metadata
 

@@ -1,4 +1,4 @@
-# `mediawiki:legacy`
+# `mediawiki:1.30.1`
 
 ## Docker Metadata
 
