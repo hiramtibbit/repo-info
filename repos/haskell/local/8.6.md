@@ -1,15 +1,15 @@
-# `haskell:8.6.2`
+# `haskell:8.6.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:14ca52fda9f7d2dee8f4e58d0717db7aff0e4609d8f4c88f743d5bf3be56152d`
-- Created: `2018-12-29T01:46:05.019389328Z`
-- Virtual Size: ~ 1.25 Gb  
+- Image ID: `sha256:452ae7d0c5d2475ff2ef67b231b759131cb1d12554d1b24d7aa793ed4b4213aa`
+- Created: `2019-01-07T21:22:34.663257133Z`
+- Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -367,9 +367,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `curl=7.52.1-5+deb9u8`
+- `libcurl3:amd64=7.52.1-5+deb9u8`
 - `libcurl3-gnutls:amd64=7.52.1-5+deb9u8`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -804,23 +806,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghc-8.6.2=8.6.2-9~deb9`
+### `dpkg` source package: `ghc-8.6.3=8.6.3-9~deb9`
 
 Binary Packages:
 
-- `ghc-8.6.2=8.6.2-9~deb9`
+- `ghc-8.6.3=8.6.3-9~deb9`
 
-Licenses: (parsed from: `/usr/share/doc/ghc-8.6.2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ghc-8.6.3/copyright`)
 
 - `BSD-3-Clause`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghc-8.6.2=8.6.2-9~deb9
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.2/ghc-8.6.2_8.6.2-9~deb9.dsc' ghc-8.6.2_8.6.2-9~deb9.dsc 2084 SHA256:34656e266ccab4b55544e5c1ab2790956aee878a10a0f1c1b00ad9cc64a16b5b
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.2/ghc-8.6.2_8.6.2.orig.tar.xz' ghc-8.6.2_8.6.2.orig.tar.xz 18946012 SHA256:170d9d4754fceb7115564a15f0ef489e53cf4518d913138f6bee2681ea60660a
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.2/ghc-8.6.2_8.6.2-9~deb9.debian.tar.xz' ghc-8.6.2_8.6.2-9~deb9.debian.tar.xz 6084 SHA256:1c01b9277d7544a28ebaa36d1d17d7e134240784314f5ca393618d58137f36a2
+$ apt-get source -qq --print-uris ghc-8.6.3=8.6.3-9~deb9
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3-9~deb9.dsc' ghc-8.6.3_8.6.3-9~deb9.dsc 2084 SHA256:c02824af39a3463684f458afbf1e824249d45552c8525b84e5bdc97b07f8bd44
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3.orig.tar.xz' ghc-8.6.3_8.6.3.orig.tar.xz 19138116 SHA256:9f9e37b7971935d88ba80426c36af14b1e0b3ec1d9c860f44a4391771bc07f23
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.6.3/ghc-8.6.3_8.6.3-9~deb9.debian.tar.xz' ghc-8.6.3_8.6.3-9~deb9.debian.tar.xz 6096 SHA256:7131a6667fe7f88fc3720cf7fa3b429e4bf3673b6ac3751fd76bff5c42675b30
 ```
 
 ### `dpkg` source package: `git=1:2.11.0-3+deb9u4`
@@ -2118,6 +2120,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u2/ (for browsing the source)
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl1.0=1.0.2q-1~deb9u1`
+
+Binary Packages:
+
+- `libssl1.0.2:amd64=1.0.2q-1~deb9u1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2q-1~deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2q-1~deb9u1.dsc' openssl1.0_1.0.2q-1~deb9u1.dsc 2557 SHA256:059237c5aff241f8e71183985746fb748c7024ef77ebb31a9265a377370ab7f9
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2q.orig.tar.gz' openssl1.0_1.0.2q.orig.tar.gz 5345604 SHA256:5744cfcbcec2b1b48629f7354203bc1e5e9b5466998bbccc5b5fcde3b18eb684
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2q.orig.tar.gz.asc' openssl1.0_1.0.2q.orig.tar.gz.asc 488 SHA256:d8a8e611cb1c46e167594a19aac7b9b56e070b7ec762659462ffa23183064cf0
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2q-1~deb9u1.debian.tar.xz' openssl1.0_1.0.2q-1~deb9u1.debian.tar.xz 94536 SHA256:6e1f69c8283ded702dc1f8410baaafa5d5408d73b4999ae7e0422a7e58753465
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl1.0/1.0.2q-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2q-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2q-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0j-1~deb9u1`
 
