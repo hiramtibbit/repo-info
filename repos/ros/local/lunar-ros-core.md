@@ -488,8 +488,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ca-certificates=20170717~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.dsc' ca-certificates_20170717~16.04.1.dsc 1862 SHA256:5f7a908b265052c882ee7e2584673de5c0ab90ab3284a05c287c48f3117bda09
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
+'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.dsc' ca-certificates_20170717~16.04.1.dsc 1862 SHA256:5f7a908b265052c882ee7e2584673de5c0ab90ab3284a05c287c48f3117bda09
+'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
