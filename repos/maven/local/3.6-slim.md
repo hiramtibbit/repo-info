@@ -1,10 +1,10 @@
-# `maven:3.6.0-jdk-8-slim`
+# `maven:3.6.0-jdk-11-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fead3378a3b348c4fa860e75a4cce2319bf086e9a07b69b739021e8406b08f90`
-- Created: `2018-12-29T09:14:14.898577561Z`
-- Virtual Size: ~ 264.19 Mb  
+- Image ID: `sha256:09934cdf1dc63e9421834e3d0bff6435fd9745b0e014fbb2f2768c9260941c85`
+- Created: `2018-12-29T09:11:38.99888085Z`
+- Virtual Size: ~ 495.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=8u181`
-  - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
+  - `JAVA_VERSION=11.0.1`
+  - `JAVA_DEBIAN_VERSION=11.0.1+13-2~bpo9+1`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -69,6 +69,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/ (for browsing the source)
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `alsa-lib=1.1.3-5`
+
+Binary Packages:
+
+- `libasound2:amd64=1.1.3-5`
+- `libasound2-data=1.1.3-5`
+
+Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/libasound2-data/copyright`)
+
+- `LGPL-2.1`
+- `LPGL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris alsa-lib=1.1.3-5
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.3-5.dsc' alsa-lib_1.1.3-5.dsc 2497 SHA256:6d08434ad6ff6bd9e766462d88a0967f9a1628f47e507b208817499696ed1f52
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.3.orig.tar.bz2' alsa-lib_1.1.3.orig.tar.bz2 962001 SHA256:71282502184c592c1a008e256c22ed0ba5728ca65e05273ceb480c70f515969c
+'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.1.3-5.debian.tar.xz' alsa-lib_1.1.3-5.debian.tar.xz 134356 SHA256:9be3fd176b3f846c11af15c0a2a93a4c3f1b75796287807fe5ccf700f0b0a1d6
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/alsa-lib/1.1.3-5/ (for browsing the source)
+- https://sources.debian.net/src/alsa-lib/1.1.3-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/alsa-lib/1.1.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.4.8`
 
@@ -2115,14 +2142,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u181-b13-2~deb9u1`
+### `dpkg` source package: `openjdk-11=11.0.1+13-2~bpo9+1`
 
 Binary Packages:
 
-- `openjdk-8-jdk-headless:amd64=8u181-b13-2~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u181-b13-2~deb9u1`
+- `openjdk-11-jdk-headless:amd64=11.0.1+13-2~bpo9+1`
+- `openjdk-11-jre-headless:amd64=11.0.1+13-2~bpo9+1`
 
-Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
 - `Apache-2.0`
 - `GPL-2`
@@ -2132,17 +2159,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u181-b13-2~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.dsc' openjdk-8_8u181-b13-2~deb9u1.dsc 4499 SHA256:e8f04a2104632b525686a180d67a57618337c18e291912797cb9c58eb888d0bc
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13.orig.tar.gz' openjdk-8_8u181-b13.orig.tar.gz 70305240 SHA256:1c75f1e91777bbeb322365686702f7fdf3e25040de5051301f3243313544f11a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz' openjdk-8_8u181-b13-2~deb9u1.debian.tar.xz 255716 SHA256:363df60e16c303da497bf88dd77d818df6b9cec2f5598296a4b8b27508344be9
+$ apt-get source -qq --print-uris openjdk-11=11.0.1+13-2~bpo9+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2~bpo9+1.dsc' openjdk-11_11.0.1+13-2~bpo9+1.dsc 4564 SHA256:246107407844cf57c68cc5816d14f494b638735e3408de2dfff9b3050872d221
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13.orig.tar.xz' openjdk-11_11.0.1+13.orig.tar.xz 75285988 SHA256:9cb9fa9e1b89013acd2ea73391123f99ccb1c9fdec34438d05d865b135ab8215
+'http://deb.debian.org/debian/pool/main/o/openjdk-11/openjdk-11_11.0.1+13-2~bpo9+1.debian.tar.xz' openjdk-11_11.0.1+13-2~bpo9+1.debian.tar.xz 163256 SHA256:a3fab81eb84261e1bd3c08b06ccea2777592be8a88ee8d391fe28a67ddbd04e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u181-b13-2~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u181-b13-2~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2~bpo9+1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-11/11.0.1+13-2~bpo9+1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-11/11.0.1+13-2~bpo9+1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
