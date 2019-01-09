@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5caedad67b6a91a814d3ffb69f6dc1242e50a0c864b07ecbccf3352358e62b68`
-- Created: `2018-12-29T03:42:41.566474166Z`
-- Virtual Size: ~ 881.89 Mb  
+- Image ID: `sha256:13f9ef525ab490c51c4fd5382786dacb6e9fec655ea45e8a45c554b9e5b73b06`
+- Created: `2019-01-09T02:03:09.826912046Z`
+- Virtual Size: ~ 882.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -5473,6 +5473,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0036/ (for browsing the source)
 - https://sources.debian.net/src/ucf/3.0036/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0036/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `unzip=6.0-21`
+
+Binary Packages:
+
+- `unzip=6.0-21`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-21
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-21.dsc' unzip_6.0-21.dsc 1344 SHA256:c51fca0f9d8af19ead119addf4b56ea25443b64951b85eceb873f0ca76b378d4
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-21.debian.tar.xz' unzip_6.0-21.debian.tar.xz 17740 SHA256:8accd9d214630a366476437a3ec1842f2e057fdce16042a7b19ee569c33490a3
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-21/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
