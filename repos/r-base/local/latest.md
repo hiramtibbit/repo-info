@@ -758,20 +758,13 @@ Licenses: (parsed from: `/usr/share/doc/ed/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ed=1.14.2-2
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.14.2-2.dsc' ed_1.14.2-2.dsc 1855 SHA256:f9c6081c15b59aa9aa9d487abe201b222e3e932628fe753df974fd46b8be2cd5
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.14.2.orig.tar.gz' ed_1.14.2.orig.tar.gz 89197 SHA256:9a5a57df771af683785b39c0bdabaec5edc057ce36105e742f0d15bc68797a71
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.14.2-2.debian.tar.xz' ed_1.14.2-2.debian.tar.xz 8296 SHA256:bdcd47f105803481070a620eed174c524ae593d5771bd34ece037e2baccef566
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ed/1.14.2-2/
 
-- https://sources.debian.net/src/ed/1.14.2-2/ (for browsing the source)
-- https://sources.debian.net/src/ed/1.14.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ed/1.14.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.5`
 
@@ -1659,14 +1652,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.16.1-1
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1-1.dsc' krb5_1.16.1-1.dsc 3318 SHA256:1f8cc61d7b29ba4887de0c17504aa64206207da6e46af50eecaef6d0e50a3dfd
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1.orig.tar.gz' krb5_1.16.1.orig.tar.gz 9477480 SHA256:214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.16.1-1.debian.tar.xz' krb5_1.16.1-1.debian.tar.xz 97608 SHA256:3881aefff33f5bfb54c96b1ccd5b20ded07d9890d8dc253acfc260e48d985236
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/krb5/1.16.1-1/
+
 
 ### `dpkg` source package: `lapack=3.8.0-2`
 
@@ -3411,20 +3403,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-class/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-class=7.3-14-2
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.dsc' r-cran-class_7.3-14-2.dsc 1749 SHA256:e04edb272ae74bc725f2f9a0af79464de731be7f5e885366e1173a436ae4db4f
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14.orig.tar.gz' r-cran-class_7.3-14.orig.tar.gz 19726 SHA256:18b876dbc18bebe6a00890eab7d04ef72b903ba0049d5ce50731406a82426b9c
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.diff.gz' r-cran-class_7.3-14-2.diff.gz 2753 SHA256:06d2771ff4a84e396990873861666f26618ac24363683ad0421eef202a51e18d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-class/7.3-14-2/
 
-- https://sources.debian.net/src/r-cran-class/7.3-14-2/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-class/7.3-14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-class/7.3-14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-mass=7.3-51.1-1`
 
@@ -4038,16 +4023,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:8.1.0549-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0549-1.dsc' vim_8.1.0549-1.dsc 2969 SHA256:66c741e820fcfd7fcf842b27b1a0165d1dba72f9b10e89cb14499e3ab0064d84
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0549.orig.tar.gz' vim_8.1.0549.orig.tar.gz 13883696 SHA256:1a0b38faf41838290db4a6ef1f85a47ac9568e345149d3c60d2ad0f014625db7
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.1.0549-1.debian.tar.xz' vim_8.1.0549-1.debian.tar.xz 166208 SHA256:a7a28b3f38b2be4232a8e545045ffe6758dc71d465739d74676017ee073df29c
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0549-1.dsc' vim_8.1.0549-1.dsc 2969 SHA256:66c741e820fcfd7fcf842b27b1a0165d1dba72f9b10e89cb14499e3ab0064d84
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0549.orig.tar.gz' vim_8.1.0549.orig.tar.gz 13883696 SHA256:1a0b38faf41838290db4a6ef1f85a47ac9568e345149d3c60d2ad0f014625db7
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.1.0549-1.debian.tar.xz' vim_8.1.0549-1.debian.tar.xz 166208 SHA256:a7a28b3f38b2be4232a8e545045ffe6758dc71d465739d74676017ee073df29c
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/vim/2:8.1.0549-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.1.0549-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.1.0549-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.20-1`
 
