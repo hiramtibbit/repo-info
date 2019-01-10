@@ -1,9 +1,9 @@
-# `irssi:1.1.1-alpine`
+# `irssi:1.1.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:848a44dc7deb9d4400bab8065a04f8a4d993ea3ff3cfffa67845d6054aac6979`
-- Created: `2018-12-21T04:26:37.842019563Z`
+- Image ID: `sha256:b6065c8a45b2f70cc459d53fa5b4d119502a297bcacaa9edcb552a09bf526c37`
+- Created: `2019-01-09T21:21:42.730541366Z`
 - Virtual Size: ~ 60.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,4 +12,4 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.1.1`
+  - `IRSSI_VERSION=1.1.2`
