@@ -1,10 +1,10 @@
-# `mariadb:10.3.11-bionic`
+# `mariadb:10.3.12-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f2e75647d2ae080f6922a91b288f2f3c5d8e9d391a2b5e689a94f2584b19753`
-- Created: `2018-12-29T01:02:16.771211671Z`
-- Virtual Size: ~ 366.24 Mb  
+- Image ID: `sha256:2bdd97ca79d9136caa452f749df1d43811954edfe8288186de634633da07a05d`
+- Created: `2019-01-08T23:48:05.920444827Z`
+- Virtual Size: ~ 366.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.3`
-  - `MARIADB_VERSION=1:10.3.11+maria~bionic`
+  - `MARIADB_VERSION=1:10.3.12+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -456,11 +456,11 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `galera-3=25.3.24-bionic`
+### `dpkg` source package: `galera-3=25.3.25-bionic`
 
 Binary Packages:
 
-- `galera-3=25.3.24-bionic`
+- `galera-3=25.3.25-bionic`
 
 Licenses: (parsed from: `/usr/share/doc/galera-3/copyright`)
 
@@ -1606,18 +1606,18 @@ $ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu3.debian.tar.xz' lz4_0.0~r131-2ubuntu3.debian.tar.xz 5340 SHA256:94834bac922397529ffc185f9c4c7e7a6eb1ef3bc527f3fcd26e36fc9430afa7
 ```
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.11+maria~bionic`
+### `dpkg` source package: `mariadb-10.3=1:10.3.12+maria~bionic`
 
 Binary Packages:
 
-- `mariadb-backup=1:10.3.11+maria~bionic`
-- `mariadb-client-10.3=1:10.3.11+maria~bionic`
-- `mariadb-client-core-10.3=1:10.3.11+maria~bionic`
-- `mariadb-common=1:10.3.11+maria~bionic`
-- `mariadb-server=1:10.3.11+maria~bionic`
-- `mariadb-server-10.3=1:10.3.11+maria~bionic`
-- `mariadb-server-core-10.3=1:10.3.11+maria~bionic`
-- `mysql-common=1:10.3.11+maria~bionic`
+- `mariadb-backup=1:10.3.12+maria~bionic`
+- `mariadb-client-10.3=1:10.3.12+maria~bionic`
+- `mariadb-client-core-10.3=1:10.3.12+maria~bionic`
+- `mariadb-common=1:10.3.12+maria~bionic`
+- `mariadb-server=1:10.3.12+maria~bionic`
+- `mariadb-server-10.3=1:10.3.12+maria~bionic`
+- `mariadb-server-core-10.3=1:10.3.12+maria~bionic`
+- `mysql-common=1:10.3.12+maria~bionic`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1626,9 +1626,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.11+maria~bionic
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.11+maria~bionic.dsc' mariadb-10.3_10.3.11+maria~bionic.dsc 3616 SHA256:93562cadce76c1795681e6f8f96d5c998685a6790c82315a480bd3112070fb68
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.11+maria~bionic.tar.xz' mariadb-10.3_10.3.11+maria~bionic.tar.xz 44118356 SHA256:83e10229156382c55487ce304474e6b8316eada9f870477f609663ec8ecc8b33
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.12+maria~bionic
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.12+maria~bionic.dsc' mariadb-10.3_10.3.12+maria~bionic.dsc 3616 SHA256:787623c80aa5667dae2bba5c97ca43544b1ed49b4fee3e916bf53cc9b6d64f40
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.12+maria~bionic.tar.xz' mariadb-10.3_10.3.12+maria~bionic.tar.xz 44131152 SHA256:ae7508b5c86b9e10380fa5af4890c7b7766c072a55847f9dc86e8028a099a5f1
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
@@ -2039,11 +2039,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.12-3ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-3ubuntu1.1.debian.tar.xz' procps_3.3.12-3ubuntu1.1.debian.tar.xz 37388 SHA256:58f388522d4def486730a00107a64b7f0948ee9a6fa6b058c555718d5f339151
 ```
 
-### `dpkg` source package: `psmisc=23.1-1`
+### `dpkg` source package: `psmisc=23.1-1ubuntu0.1`
 
 Binary Packages:
 
-- `psmisc=23.1-1`
+- `psmisc=23.1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
 
@@ -2053,10 +2053,10 @@ Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris psmisc=23.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/psmisc/psmisc_23.1-1.dsc' psmisc_23.1-1.dsc 1693 SHA256:1a69dc469a783320ce74f7365cb4c7655f038e31d54771e8ffba623e5a735bcc
+$ apt-get source -qq --print-uris psmisc=23.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/psmisc/psmisc_23.1-1ubuntu0.1.dsc' psmisc_23.1-1ubuntu0.1.dsc 1729 SHA256:dce5c0d32c200d643f1ad3690563f444ab03b758a1fbb9ddebc3547f8f758ab6
 'http://archive.ubuntu.com/ubuntu/pool/main/p/psmisc/psmisc_23.1.orig.tar.xz' psmisc_23.1.orig.tar.xz 291480 SHA256:561c6a87c4d8eadd5b5338aed7be8620c5634f6cb6730c11383cf75c712255c0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/psmisc/psmisc_23.1-1.debian.tar.xz' psmisc_23.1-1.debian.tar.xz 6668 SHA256:b6d8f0bd163c5b1f020e44cbd04d7f0b57858667915a271876a351deb923825e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/psmisc/psmisc_23.1-1ubuntu0.1.debian.tar.xz' psmisc_23.1-1ubuntu0.1.debian.tar.xz 8296 SHA256:f253835d8821f679372e112f7288097a13b64693717fa7dd11dce5ace4b9425f
 ```
 
 ### `dpkg` source package: `pwgen=2.08-1`
