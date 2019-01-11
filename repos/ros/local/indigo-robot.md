@@ -2279,14 +2279,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.dsc' krb5_1.12+dfsg-2ubuntu5.3.dsc 3506 SHA256:bc6026c5c2f207f6212cb2361738ca657bed39fa228fe90ac494658f7c5d1a48
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz' krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz 113208 SHA256:b1448e6b85d1388fa78278bd0e50d780f0c3da6fbcffb026bf7364c3282e5faa
-```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`
 
@@ -4821,14 +4816,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.9-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.debian.tar.xz' python-catkin-pkg-modules_0.4.9-1.debian.tar.xz 1948 SHA512:b627d5cb48923a61d5dfa0577f7068358f8b41f4168ed95cecb1ddff4e4c2c844206e83692ebedc4efa41674cdd5720e61316720ac73ef5ecaf9c6a805b96d35
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.dsc' python-catkin-pkg-modules_0.4.9-1.dsc 991 SHA512:d3764d831fff27cb84771fa02e0d002c0c223cbb217f898f8106f5d5f588de23be26e7d79b63d76590721efd592b34bcccdf060f538590e5f6d1b243f550260c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9.orig.tar.gz' python-catkin-pkg-modules_0.4.9.orig.tar.gz 57952 SHA512:56597225ec23707219b1591a1eba765e7dc2e7007b0f84817413fa21b4f8571834faf328b5802050052fc6ef19c8c2065e549b5e2c9e221537e40b16f869e726
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
 
@@ -4840,14 +4830,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.9-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.debian.tar.xz' python-catkin-pkg_0.4.9-100.debian.tar.xz 1932 SHA512:ce0923aebcb2ee92a0729fcfba79617cfe80a77a1b11fdfd0c587aa80446fb898771065565c3ba6951eb7613af146bbc63c890d6e3a55686c7455c3019f66364
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.dsc' python-catkin-pkg_0.4.9-100.dsc 931 SHA512:7a24f17dd339794388a8efa8d2729e519686c7e895993a5a7ab87457b31ef843df593acb791ae6ba54b7ae310bd913b78671fd861c265a73c2280e36f6d3be16
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9.orig.tar.gz' python-catkin-pkg_0.4.9.orig.tar.gz 12805 SHA512:c6feb8d894b0eb9fa69840c80c43fdd2b932cb75b4fda6268ebe78b00de52d1a420bcff06a099f7dbbf0c6c4be740e4aeaac4d655e7900cd3e57d83af17791aa
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.3`
 

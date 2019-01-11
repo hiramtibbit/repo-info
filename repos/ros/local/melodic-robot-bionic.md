@@ -1782,15 +1782,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.1.dsc' gnupg2_2.2.4-1ubuntu1.1.dsc 3816 SHA256:46c737d2b5e2720c0b531d88e11cfc725386302de00960da57a1843c3b39a7e8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA256:30dd26e12b451e8f6799ba3a81449ed18db3d3e747820b237a39745ab264c899
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.1.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.1.debian.tar.bz2 77511 SHA256:1ba2d8ad61e99caf309288990f265269fe3363a7a1e4c79b672c0eae43b0f67a
-```
 
 ### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1`
 
@@ -5255,14 +5249,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.9-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.debian.tar.xz' python-catkin-pkg-modules_0.4.9-1.debian.tar.xz 1948 SHA512:b627d5cb48923a61d5dfa0577f7068358f8b41f4168ed95cecb1ddff4e4c2c844206e83692ebedc4efa41674cdd5720e61316720ac73ef5ecaf9c6a805b96d35
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9-1.dsc' python-catkin-pkg-modules_0.4.9-1.dsc 991 SHA512:d3764d831fff27cb84771fa02e0d002c0c223cbb217f898f8106f5d5f588de23be26e7d79b63d76590721efd592b34bcccdf060f538590e5f6d1b243f550260c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.9.orig.tar.gz' python-catkin-pkg-modules_0.4.9.orig.tar.gz 57952 SHA512:56597225ec23707219b1591a1eba765e7dc2e7007b0f84817413fa21b4f8571834faf328b5802050052fc6ef19c8c2065e549b5e2c9e221537e40b16f869e726
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
 
@@ -5274,14 +5263,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.9-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.debian.tar.xz' python-catkin-pkg_0.4.9-100.debian.tar.xz 1932 SHA512:ce0923aebcb2ee92a0729fcfba79617cfe80a77a1b11fdfd0c587aa80446fb898771065565c3ba6951eb7613af146bbc63c890d6e3a55686c7455c3019f66364
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9-100.dsc' python-catkin-pkg_0.4.9-100.dsc 931 SHA512:7a24f17dd339794388a8efa8d2729e519686c7e895993a5a7ab87457b31ef843df593acb791ae6ba54b7ae310bd913b78671fd861c265a73c2280e36f6d3be16
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.9.orig.tar.gz' python-catkin-pkg_0.4.9.orig.tar.gz 12805 SHA512:c6feb8d894b0eb9fa69840c80c43fdd2b932cb75b4fda6268ebe78b00de52d1a420bcff06a099f7dbbf0c6c4be740e4aeaac4d655e7900cd3e57d83af17791aa
-```
 
 ### `dpkg` source package: `python-cffi=1.11.5-1`
 
@@ -7926,14 +7910,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.9.dsc' systemd_237-3ubuntu10.9.dsc 4652 SHA256:6a071d7ffe095d6b47c3078bc21bf6773ab578138611f2ac85f5c523d9178070
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.9.debian.tar.xz' systemd_237-3ubuntu10.9.debian.tar.xz 195632 SHA256:a15744c8a2ae796f2ab4b616d27c52f766d5502ee370b61d7649564b40c97c82
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
