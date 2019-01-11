@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8f3688969f411b902e1a698be4fa963089b94ccae07eececd146d2e6decec07`
-- Created: `2018-12-29T00:02:06.149858863Z`
-- Virtual Size: ~ 611.36 Mb  
+- Image ID: `sha256:9ba09eb8f9e1367aba406d54ea8b3295ea3aacd495ee17a207956d2d769c9dc8`
+- Created: `2019-01-08T23:31:09.83261429Z`
+- Virtual Size: ~ 611.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1988,24 +1988,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/isl/0.12.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/isl/0.12.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u4`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u5`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-debian1-2.4+deb8u4`
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u4`
+- `libjasper-dev=1.900.1-debian1-2.4+deb8u5`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.dsc' jasper_1.900.1-debian1-2.4+deb8u5.dsc 2120 SHA256:5977b748da5ced64de8abcf0b31efc015ed4fdb626266c98207873a634397ebc
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz 40220 SHA256:56f624ee083d13ae8a779266458023f82356a8cc114ce713d668755a3069438a
+```
 
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -4638,21 +4645,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u3
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.dsc' sqlite3_3.8.7.1-1+deb8u3.dsc 2583 SHA256:a9724e31807793c02b9ef8d828cd83bafd6f3efe00973ffe70ff17ef666e1887
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz 22544 SHA256:5e5d51718d4dbfb7027ef82dc9eafdf86e17f78a20f8233e267aae6c0b2040a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/
 
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
@@ -4863,6 +4862,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0030/ (for browsing the source)
 - https://sources.debian.net/src/ucf/3.0030/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0030/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `unzip=6.0-16+deb8u3`
+
+Binary Packages:
+
+- `unzip=6.0-16+deb8u3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-16+deb8u3
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.dsc' unzip_6.0-16+deb8u3.dsc 1339 SHA256:b1a3191a99f7c245d8e29ee0866d5c2b8e9deb191095ae8312dd59a95e616b79
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.debian.tar.xz' unzip_6.0-16+deb8u3.debian.tar.xz 16120 SHA256:8e50ca0ac7d8e00d595a329c91dec7a7e1a1b998857f54062cd26b88c2e3d3b8
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-16+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-16+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-16+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 

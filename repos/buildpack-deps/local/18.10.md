@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2f8b23223c2e435a017a12545a84e09ac3a3fbe4b0f6486c48de66e4381ca14`
-- Created: `2018-12-28T23:52:04.923344991Z`
-- Virtual Size: ~ 644.51 Mb  
+- Image ID: `sha256:08df768e0d9aaad2a76b40b57f33768c39bd2fda780fc54d3285d3bf1fd21cf2`
+- Created: `2019-01-08T23:26:04.760252672Z`
+- Virtual Size: ~ 644.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -3198,13 +3198,13 @@ $ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.tar.gz' pam_1.1.8-3.6ubuntu2.tar.gz 1989104 SHA256:3244f99b6bd0a3501c692102d897c013a6736ab8f9656fe2411cacffcaaba20e
 ```
 
-### `dpkg` source package: `pango1.0=1.42.4-3`
+### `dpkg` source package: `pango1.0=1.42.4-3ubuntu1`
 
 Binary Packages:
 
-- `libpango-1.0-0:amd64=1.42.4-3`
-- `libpangocairo-1.0-0:amd64=1.42.4-3`
-- `libpangoft2-1.0-0:amd64=1.42.4-3`
+- `libpango-1.0-0:amd64=1.42.4-3ubuntu1`
+- `libpangocairo-1.0-0:amd64=1.42.4-3ubuntu1`
+- `libpangoft2-1.0-0:amd64=1.42.4-3ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/doc/libpangocairo-1.0-0/copyright`, `/usr/share/doc/libpangoft2-1.0-0/copyright`)
 
@@ -3218,10 +3218,10 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pango1.0=1.42.4-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-3.dsc' pango1.0_1.42.4-3.dsc 3253 SHA256:b78be9f1e8c6bd3e1f5d1955a51af8b3867abba863b0534bd6a9594c3faf4a87
+$ apt-get source -qq --print-uris pango1.0=1.42.4-3ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-3ubuntu1.dsc' pango1.0_1.42.4-3ubuntu1.dsc 3579 SHA256:a28183120e7b1ab38b36dd4d1edb27938eb23d1c8ee7f918dbb5ba193cb915d1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4.orig.tar.xz' pango1.0_1.42.4.orig.tar.xz 833876 SHA256:1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-3.debian.tar.xz' pango1.0_1.42.4-3.debian.tar.xz 29748 SHA256:886833ac2f266d4384f02319cb517500739119842d59cbfbfd63f9ee1b3430ff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.42.4-3ubuntu1.debian.tar.xz' pango1.0_1.42.4-3ubuntu1.debian.tar.xz 49896 SHA256:31106fdee1305820b44f0b04be13edb3b7d2de7336a7d8b9c3a646cd282e31ae
 ```
 
 ### `dpkg` source package: `patch=2.7.6-3`
@@ -3800,14 +3800,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=239-7ubuntu10.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.dsc' systemd_239-7ubuntu10.4.dsc 4666 SHA256:52b5e0aa8a07936cdbabb4528366a2eb6ff5c503fca9b79d8052a1ef1a3437ad
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.4.debian.tar.xz' systemd_239-7ubuntu10.4.debian.tar.xz 193104 SHA256:8a444f137e9430144bc096d5c32326679ab15faae874bcbdb775aee7810fdd0f
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
 
@@ -3904,6 +3899,25 @@ Source:
 $ apt-get source -qq --print-uris ucf=3.0038
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038.dsc' ucf_3.0038.dsc 1445 SHA256:5fab6d0af664eac92b3404c6bb62d0a3ceb88cd21a1462b9a262d1292c77328f
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038.tar.xz' ucf_3.0038.tar.xz 65416 SHA256:262ccd52637c869ac851838a176d76e90db8d3f12373e3b62eb89e217f93fe7e
+```
+
+### `dpkg` source package: `unzip=6.0-21ubuntu1`
+
+Binary Packages:
+
+- `unzip=6.0-21ubuntu1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-21ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.dsc' unzip_6.0-21ubuntu1.dsc 1800 SHA256:76f9c291eae4039e31fda029426c96a332d3ce905a2306998ff55798d03ea44d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.debian.tar.xz' unzip_6.0-21ubuntu1.debian.tar.xz 21080 SHA256:8db974c22a5ef50029eb9a7e5429ff099e1cf7cfd36d3951fa4e00e4fd47843f
 ```
 
 ### `dpkg` source package: `utf8proc=2.2.0-1`

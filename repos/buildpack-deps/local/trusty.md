@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72cc8a7b20aea5d63094eb0910a65c656aff39d8a063808f22c58fb5794f62db`
-- Created: `2018-12-29T00:09:44.129689349Z`
-- Virtual Size: ~ 553.52 Mb  
+- Image ID: `sha256:19b1cb23f62514646e23f3ab5123054f851fb5dfe60b0653f38143aeb616c471`
+- Created: `2019-01-08T23:36:26.708117279Z`
+- Virtual Size: ~ 553.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1999,14 +1999,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.dsc' krb5_1.12+dfsg-2ubuntu5.3.dsc 3506 SHA256:bc6026c5c2f207f6212cb2361738ca657bed39fa228fe90ac494658f7c5d1a48
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz' krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz 113208 SHA256:b1448e6b85d1388fa78278bd0e50d780f0c3da6fbcffb026bf7364c3282e5faa
-```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`
 
@@ -4801,6 +4796,25 @@ Source:
 $ apt-get source -qq --print-uris ucf=3.0027+nmu1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0027+nmu1.dsc' ucf_3.0027+nmu1.dsc 1555 SHA256:cffece92dae3ad8cd40017b9bb591c48ed1f08119a6406ea2b6f135fe96e45ca
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0027+nmu1.tar.gz' ucf_3.0027+nmu1.tar.gz 75904 SHA256:eb76483d4fac5250b21d702f4314e1e206e9461b56d228a805aca9e617ddb95f
+```
+
+### `dpkg` source package: `unzip=6.0-9ubuntu1.5`
+
+Binary Packages:
+
+- `unzip=6.0-9ubuntu1.5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-9ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-9ubuntu1.5.dsc' unzip_6.0-9ubuntu1.5.dsc 1763 SHA256:bd1cfb283d4b34053e8a4a55326afbca35b825223ca3888f5cf2130a1abab2fc
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-9ubuntu1.5.debian.tar.gz' unzip_6.0-9ubuntu1.5.debian.tar.gz 20158 SHA256:d08c3e16bba2ab1907630e0167b26c0b1a51c51943d467a8a5ea85e6f07b580c
 ```
 
 ### `dpkg` source package: `upstart=1.12.1-0ubuntu4.2`
