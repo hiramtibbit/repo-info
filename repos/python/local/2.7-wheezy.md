@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3c238127f443d24bbd28431968f5074068168dc75ec0ab07a15115f7d36d7f1`
-- Created: `2018-12-29T08:45:17.186802631Z`
-- Virtual Size: ~ 543.48 Mb  
+- Image ID: `sha256:7d20a9db797e82d0b4bf3203233df6579ed1081a4de39a3f01c67adcb0b9fe18`
+- Created: `2019-01-09T04:56:09.075474814Z`
+- Virtual Size: ~ 543.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -4375,6 +4375,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0025+nmu3/ (for browsing the source)
 - https://sources.debian.net/src/ucf/3.0025+nmu3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0025+nmu3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `unzip=6.0-8+deb7u6`
+
+Binary Packages:
+
+- `unzip=6.0-8+deb7u6`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-8+deb7u6
+'http://security.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-8+deb7u6.dsc' unzip_6.0-8+deb7u6.dsc 1380 SHA256:a190ad8241805e36d44fd825ba20965fe8ad78e49e0dcb1a7b75be6c75a5ddb6
+'http://security.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://security.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-8+deb7u6.debian.tar.gz' unzip_6.0-8+deb7u6.debian.tar.gz 17302 SHA256:7a8e82b40c67caa27636e05b1c47c5c89bd5de3d4544707b02feea00fb811335
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-8+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-8+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-8+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 

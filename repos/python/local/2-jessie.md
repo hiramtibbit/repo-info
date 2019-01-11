@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9aa770f02904d037dcad557993a2ace7ab09a031e3d4cded6a07ab34348f2c0`
-- Created: `2018-12-29T08:32:17.131254506Z`
-- Virtual Size: ~ 685.40 Mb  
+- Image ID: `sha256:65b70fb25428b6991cc2d45f97269264a8bbf9805e9a5b1cce53209a534bb1e2`
+- Created: `2019-01-09T04:52:45.815677869Z`
+- Virtual Size: ~ 685.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -1993,24 +1993,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/isl/0.12.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/isl/0.12.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u4`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u5`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-debian1-2.4+deb8u4`
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u4`
+- `libjasper-dev=1.900.1-debian1-2.4+deb8u5`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.dsc' jasper_1.900.1-debian1-2.4+deb8u5.dsc 2120 SHA256:5977b748da5ced64de8abcf0b31efc015ed4fdb626266c98207873a634397ebc
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/debian-security/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u5.debian.tar.xz 40220 SHA256:56f624ee083d13ae8a779266458023f82356a8cc114ce713d668755a3069438a
+```
 
-- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-debian1-2.4+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -4975,6 +4982,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0030/ (for browsing the source)
 - https://sources.debian.net/src/ucf/3.0030/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0030/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `unzip=6.0-16+deb8u3`
+
+Binary Packages:
+
+- `unzip=6.0-16+deb8u3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris unzip=6.0-16+deb8u3
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.dsc' unzip_6.0-16+deb8u3.dsc 1339 SHA256:b1a3191a99f7c245d8e29ee0866d5c2b8e9deb191095ae8312dd59a95e616b79
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3.debian.tar.xz' unzip_6.0-16+deb8u3.debian.tar.xz 16120 SHA256:8e50ca0ac7d8e00d595a329c91dec7a7e1a1b998857f54062cd26b88c2e3d3b8
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-16+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-16+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-16+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
