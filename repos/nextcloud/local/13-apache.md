@@ -1,10 +1,10 @@
-# `nextcloud:13.0.8-apache`
+# `nextcloud:13.0.10-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05a71a2bd8eb4df08002d76c821dd9e552c846563e17aeacec6f6d5719fdd439`
-- Created: `2018-12-29T16:31:20.748788221Z`
-- Virtual Size: ~ 577.17 Mb  
+- Image ID: `sha256:fdc01e22bab571c9b5ade367151d90e5bc21a473fe3615ad9d8e5b3ce0e2b8cc`
+- Created: `2019-01-12T00:20:55.6033276Z`
+- Virtual Size: ~ 554.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,12 +21,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.13`
-  - `PHP_URL=https://secure.php.net/get/php-7.2.13.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.13.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=14b0429abdb46b65c843e5882c9a8c46b31dfbf279c747293b8ab950c2644a4b`
+  - `PHP_VERSION=7.2.14`
+  - `PHP_URL=https://secure.php.net/get/php-7.2.14.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.14.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=ee3f1cc102b073578a3c53ba4420a76da3d9f0c981c02b1664ae741ca65af84f`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=13.0.8`
+  - `NEXTCLOUD_VERSION=13.0.10`
 
 ## `dpkg` (`.deb`-based packages)
 
