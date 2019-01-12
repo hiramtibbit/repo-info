@@ -12,8 +12,15 @@ RUN cpanm App::cpanminus
 
 RUN cpanm EV
 RUN cpanm IO::Socket::IP
-RUN cpanm --notest IO::Socket::SSL
+RUN cpanm IO::Socket::Socks
+RUN cpanm Net::DNS::Native
+
 # the tests for IO::Socket::SSL like to hang... :(
+RUN cpanm --notest IO::Socket::SSL
+
+# https://metacpan.org/pod/release/SRI/Mojolicious-7.94/lib/Mojo/IOLoop.pm#DESCRIPTION
+ENV LIBEV_FLAGS 4
+# epoll (Linux)
 
 RUN cpanm Mojolicious@7.94
 
