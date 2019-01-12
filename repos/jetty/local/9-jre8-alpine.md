@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a3e4893f8c3e96fffba95daedc7a255c70ebcb22ae094a57533d9738d07ce7d`
-- Created: `2018-12-21T05:19:57.686660992Z`
-- Virtual Size: ~ 92.95 Mb  
+- Image ID: `sha256:1a41ee3980187dbf94ed1ac312d8f39c5fd7fffba1860a2fe03ff289ccc93cf5`
+- Created: `2019-01-11T01:56:15.179658016Z`
+- Virtual Size: ~ 93.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u181`
-  - `JAVA_ALPINE_VERSION=8.181.13-r0`
+  - `JAVA_VERSION=8u191`
+  - `JAVA_ALPINE_VERSION=8.191.12-r0`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_VERSION=9.4.12.v20180830`
   - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.12.v20180830/jetty-home-9.4.12.v20180830.tar.gz`
