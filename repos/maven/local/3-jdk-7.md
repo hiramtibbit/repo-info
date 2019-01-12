@@ -2502,20 +2502,13 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb8u2
-'http://security.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb8u2.dsc' libsndfile_1.0.25-9.1+deb8u2.dsc 1808 SHA256:be6bf183d4b0d075ab5fddf5a329b3e25c0cd4e21fb238eda8f2d2f9bd1a869f
-'http://security.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
-'http://security.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb8u2.debian.tar.xz' libsndfile_1.0.25-9.1+deb8u2.debian.tar.xz 14836 SHA256:2f11059b00e62ab2e4ee850e3bd9fe511fb89353902d8ddf2a4e3e8e9ac6bb16
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsndfile/1.0.25-9.1+deb8u2/
 
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsndfile/1.0.25-9.1+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.4.3-4.1+deb8u1`
 
@@ -4160,21 +4153,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u3
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.dsc' sqlite3_3.8.7.1-1+deb8u3.dsc 2583 SHA256:a9724e31807793c02b9ef8d828cd83bafd6f3efe00973ffe70ff17ef666e1887
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u3.debian.tar.xz 22544 SHA256:5e5d51718d4dbfb7027ef82dc9eafdf86e17f78a20f8233e267aae6c0b2040a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/
 
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
