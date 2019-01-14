@@ -1,5 +1,5 @@
-#!/bin/bash
-set -eo pipefail
+#!/usr/bin/env bash
+set -Eeuo pipefail
 
 trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 
@@ -17,6 +17,8 @@ repos=( "${repos[@]%/}" )
 docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
 trap 'docker rm -f repo-info-remote > /dev/null' EXIT
 docker run -d --name repo-info-remote repo-info:remote daemon > /dev/null
+
+trap 'err="$?"; echo >&2 "ERROR: exit code $err"; ( set -x && docker logs repo-info-remote ); exit "$err"' ERR
 
 repoInfoDaemon='http://localhost:3000' # since we're using "docker exec", we can just hit localhost
 curl=( docker exec -i repo-info-remote curl -fsSL )
