@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aef7b15ca596173529bf9592f14865637cb833b1f921e6b485e5cceb79ff7df6`
-- Created: `2019-01-08T23:49:57.408125645Z`
-- Virtual Size: ~ 747.08 Mb  
+- Image ID: `sha256:65d4b2d3206187c1d90b66a00080682d9817e91f86f555e676f654ffec6a8649`
+- Created: `2019-01-11T02:33:43.69501478Z`
+- Virtual Size: ~ 644.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1599,56 +1599,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.48/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.48/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `iproute2=4.9.0-1+deb9u1`
-
-Binary Packages:
-
-- `iproute2=4.9.0-1+deb9u1`
-
-Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-1+deb9u1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1+deb9u1.dsc' iproute2_4.9.0-1+deb9u1.dsc 2425 SHA256:ad3365cc61f116f8dc8cc2a615549ffc9ed0217223393078b68e1d96649b2ce7
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1+deb9u1.debian.tar.xz' iproute2_4.9.0-1+deb9u1.debian.tar.xz 28316 SHA256:c5056293c85daf0a96550c0bfa6ae2851c78cec4ed5932909c976607caa1e561
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/iproute2/4.9.0-1+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-1+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `iputils=3:20161105-1`
-
-Binary Packages:
-
-- `iputils-ping=3:20161105-1`
-
-Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris iputils=3:20161105-1
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.dsc' iputils_20161105-1.dsc 2086 SHA256:7e810cf28c14f1e5fb7b51620dd4af748a97202967ee4fb5d4ee3111eb66f4ae
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105.orig.tar.bz2' iputils_20161105.orig.tar.bz2 159944 SHA256:fc193249341d240b227ce4246d7b0ceb30c1186608c7deff7261c8a2607ad02e
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20161105-1.debian.tar.xz' iputils_20161105-1.debian.tar.xz 10976 SHA256:1216eb9d51a85004524fea30320bad3ea45adaf5a17ec5a9ea3bafad697fd612
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/iputils/3:20161105-1/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20161105-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20161105-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
 Binary Packages:
@@ -1852,33 +1802,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/ (for browsing the source)
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.7-3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `libcap2=1:2.25-1`
-
-Binary Packages:
-
-- `libcap2:amd64=1:2.25-1`
-
-Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
-
-- `BSD-3-clause`
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.25-1
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.25-1.dsc' libcap2_2.25-1.dsc 2140 SHA256:85f73e9d273cbad49a67ceefa152df9b230c81f05c8d8dd1da0122c1574bc728
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.25.orig.tar.xz' libcap2_2.25.orig.tar.xz 63672 SHA256:693c8ac51e983ee678205571ef272439d83afe62dd8e424ea14ad9790bc35162
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.25-1.debian.tar.xz' libcap2_2.25-1.debian.tar.xz 20688 SHA256:0ff39428e7e531791db4450ee6dbaabf6bdc9f30e6e3be6c25bad18c333842ff
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libcap2/1:2.25-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.25-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.25-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcroco=0.6.11-3`
 
@@ -2212,33 +2135,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/liblqr/0.4.2-2/ (for browsing the source)
 - https://sources.debian.net/src/liblqr/0.4.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/liblqr/0.4.2-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `libmnl=1.0.4-2`
-
-Binary Packages:
-
-- `libmnl0:amd64=1.0.4-2`
-
-Licenses: (parsed from: `/usr/share/doc/libmnl0/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libmnl=1.0.4-2
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-2.dsc' libmnl_1.0.4-2.dsc 1994 SHA256:131106bb7eb4a94fa8e8c135f92c38068d0b42681f166eb159137f171c568630
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4.orig.tar.bz2' libmnl_1.0.4.orig.tar.bz2 301270 SHA256:171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-2.debian.tar.xz' libmnl_1.0.4-2.debian.tar.xz 7512 SHA256:208d62777081ffe6d7dffde0d7370cefb03fe0a6a0486a1b50f6b7b8e9a5b068
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libmnl/1.0.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libmnl/1.0.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmnl/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpng1.6=1.6.28-1`
 
