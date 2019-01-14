@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8419251b4b9ee75356c08f27189dc24b3724a10112ab2bba8b590b8c90ec3aac`
-- Created: `2018-12-21T05:32:27.325742641Z`
-- Virtual Size: ~ 146.14 Mb  
+- Image ID: `sha256:225b8de5881259113fe1aa868059963d854ed63976e77565ca7ae3088a39f409`
+- Created: `2019-01-11T01:42:00.552082184Z`
+- Virtual Size: ~ 146.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
-  - `JAVA_VERSION=8u181`
-  - `JAVA_ALPINE_VERSION=8.181.13-r0`
+  - `JAVA_VERSION=8u191`
+  - `JAVA_ALPINE_VERSION=8.191.12-r0`
   - `JRUBY_VERSION=9.2.5.0`
   - `JRUBY_SHA256=f4ad088082eca73561df983f6cb0a937b966cba3a36454e88f63930ed2bdf349`
   - `GEM_HOME=/usr/local/bundle`
