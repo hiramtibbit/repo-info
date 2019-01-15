@@ -92,6 +92,8 @@ sub registry_req {
 
 	my $do_work;
 	$do_work = sub {
+		my $lastResCode = shift // 0;
+
 		my %headers = (
 			%extHeaders,
 		);
@@ -102,6 +104,11 @@ sub registry_req {
 
 		return ua_req($method => $url => \%headers => sub {
 			my $tx = shift;
+
+			# the registry seems to have a transitory issue where every now and then it'll give back a 404 for something that really exists, so let's give those at most one more attempt before we give up
+			if ($tx->res->code == 404 && $lastResCode != 404) {
+				return $do_work->($tx->res->code);
+			}
 
 			if ($tx->res->code == 401) {
 				my $auth = $tx->res->headers->www_authenticate;
@@ -129,7 +136,7 @@ sub registry_req {
 						die "failed to fetch token for $repo: " . ($error->{code} ? $error->{code} . ' -- ' : '') . $error->{message};
 					}
 					$tokens{$repo} = $tokenTx->res->json->{token};
-					return $do_work->();
+					return $do_work->($tx->res->code);
 				});
 			}
 
