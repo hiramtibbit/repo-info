@@ -1181,14 +1181,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.dsc' krb5_1.13.2+dfsg-5ubuntu2.dsc 3498 SHA256:d165078db6908d38fad615acdc8e1b94e71daad83667a93f5f26deba05274f6f
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.debian.tar.xz 103168 SHA256:8be99019ff85c67452d1dd7c6e9eaa45b73ed09fd55993d4a6c9bcb6e6a96c6c
-```
 
 ### `dpkg` source package: `lcms2=2.6-3ubuntu2.1`
 
