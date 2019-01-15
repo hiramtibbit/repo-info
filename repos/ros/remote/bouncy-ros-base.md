@@ -1,7 +1,7 @@
 ## `ros:bouncy-ros-base`
 
 ```console
-$ docker pull ros@sha256:ca7a5860186a81df482297dc21812d57259d7a61b63522fb35cfdcedfade2268
+$ docker pull ros@sha256:6554da7494a951f54a42fe980c657e8804fbf230ee33bc32be15c46bca4c0474
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:ca7a5860186a81df482297dc21812d57259d7a61b63522fb35cfdce
 ### `ros:bouncy-ros-base` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:4ce210fdb75b4ebe528d1dfe39fb27f54fbbed09b5c3adf1c9e53273f8819f12
+$ docker pull ros@sha256:29ba1acecc66d8c6e10b9307207cb234b78e01ddec5dc398ddbd198c090c2b7a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.9 MB (273879935 bytes)**  
+-	Total Size: **274.6 MB (274581308 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:213f3f29d27568787635795f7d8781dea8f8f0712e8efb4e87024e124a6a2f3e`
+-	Image ID: `sha256:743b16865451dad4140df93dda43ccb0e56e49dbe3347106de569b770bf8883b`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -48,23 +48,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     python3-ros
 ENV LANG=C.UTF-8
 # Tue, 08 Jan 2019 23:58:11 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 08 Jan 2019 23:58:11 GMT
-ENV ROSDISTRO_INDEX_URL=https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml
-# Tue, 08 Jan 2019 23:58:15 GMT
+# Fri, 11 Jan 2019 23:23:43 GMT
 RUN rosdep init     && rosdep update
-# Tue, 08 Jan 2019 23:58:17 GMT
+# Fri, 11 Jan 2019 23:23:45 GMT
 RUN pip3 install -U     argcomplete
-# Tue, 08 Jan 2019 23:58:17 GMT
+# Fri, 11 Jan 2019 23:23:45 GMT
 ENV ROS_DISTRO=bouncy
-# Tue, 08 Jan 2019 23:59:06 GMT
+# Fri, 11 Jan 2019 23:24:42 GMT
 RUN apt-get update && apt-get install -y     ros-bouncy-ros-core=0.5.1-0*     && rm -rf /var/lib/apt/lists/*
-# Tue, 08 Jan 2019 23:59:07 GMT
+# Fri, 11 Jan 2019 23:24:42 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Tue, 08 Jan 2019 23:59:07 GMT
+# Fri, 11 Jan 2019 23:24:42 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 08 Jan 2019 23:59:07 GMT
+# Fri, 11 Jan 2019 23:24:42 GMT
 CMD ["bash"]
-# Tue, 08 Jan 2019 23:59:22 GMT
+# Fri, 11 Jan 2019 23:25:06 GMT
 RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
@@ -105,38 +103,38 @@ RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     &&
 		Last Modified: Wed, 09 Jan 2019 00:01:34 GMT  
 		Size: 38.2 MB (38227560 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c5eb84f884f914596c7fe3024c54c6b08b947bc2dd5c1c6ae9243cb7d37d600`  
-		Last Modified: Wed, 09 Jan 2019 00:01:24 GMT  
-		Size: 165.8 KB (165759 bytes)  
+	-	`sha256:5595aca13034ec883f2e7645a69e4703a2f1358da4931dc701ac16c2b5ae0786`  
+		Last Modified: Fri, 11 Jan 2019 23:26:57 GMT  
+		Size: 867.5 KB (867497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f8f47af107aed0955ac17aa1fb8f4dd31d37de9e3efa3b20ea5377a35a36d1`  
-		Last Modified: Wed, 09 Jan 2019 00:01:24 GMT  
-		Size: 93.9 KB (93860 bytes)  
+	-	`sha256:ae104ddd638de4319fdd0a1639b937eac0c397ee586f2cb4d60c504091e592ae`  
+		Last Modified: Fri, 11 Jan 2019 23:26:57 GMT  
+		Size: 93.9 KB (93856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67883f08092cced233679201faf26eeefb5fd01699b89d136c94cf466530a316`  
-		Last Modified: Wed, 09 Jan 2019 00:01:38 GMT  
-		Size: 47.6 MB (47647696 bytes)  
+	-	`sha256:0e3883fcf0b8b75fe9f9d6267fd54474b20a0bfd1f50078f25703ab102f01c46`  
+		Last Modified: Fri, 11 Jan 2019 23:27:08 GMT  
+		Size: 47.6 MB (47647329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f11292c36a4bd0bd4c47acbd9fdbdfc1cfdb8f9106a09d9c3cb224878ed42360`  
-		Last Modified: Wed, 09 Jan 2019 00:01:24 GMT  
+	-	`sha256:e0606ed595866df8003ea81de5e0a4bf779fe8ef9d55bbf354914c2089dcec5d`  
+		Last Modified: Fri, 11 Jan 2019 23:26:57 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bdedc4699cdd25420a598d1df4acfc3fe2d98bb724b9226d59447d30b7f8b36`  
-		Last Modified: Wed, 09 Jan 2019 00:01:59 GMT  
-		Size: 3.1 MB (3134183 bytes)  
+	-	`sha256:23dc0ea3a6bde07ca5ce785f998716dbb5635f26e48b9c04059e135ba3a4a436`  
+		Last Modified: Fri, 11 Jan 2019 23:27:14 GMT  
+		Size: 3.1 MB (3134189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:bouncy-ros-base` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:b1ac4de9f9e660a15d5fb1032c47d4398edd83925dd8ff4b0aa4e79ecc9d7636
+$ docker pull ros@sha256:9cd849617ebac198b325c33022a38f5dc5e40e1df9ee63966bb2801eb05021c8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.2 MB (204195701 bytes)**  
+-	Total Size: **204.9 MB (204896648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a988331af55e312f81f3124265e44465cd9eab06f503c86d45294e092fa224c1`
+-	Image ID: `sha256:0831ac1043b42a093b793b114f9b525cead5a3bcbf8cdb4dfa89742717939761`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -165,23 +163,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     python3-ros
 ENV LANG=C.UTF-8
 # Wed, 09 Jan 2019 12:05:07 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 09 Jan 2019 12:05:08 GMT
-ENV ROSDISTRO_INDEX_URL=https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml
-# Wed, 09 Jan 2019 12:05:25 GMT
+# Sat, 12 Jan 2019 10:35:18 GMT
 RUN rosdep init     && rosdep update
-# Wed, 09 Jan 2019 12:05:31 GMT
+# Sat, 12 Jan 2019 10:35:29 GMT
 RUN pip3 install -U     argcomplete
-# Wed, 09 Jan 2019 12:05:32 GMT
+# Sat, 12 Jan 2019 10:35:30 GMT
 ENV ROS_DISTRO=bouncy
-# Wed, 09 Jan 2019 12:09:26 GMT
+# Sat, 12 Jan 2019 10:38:06 GMT
 RUN apt-get update && apt-get install -y     ros-bouncy-ros-core=0.5.1-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 12:09:27 GMT
+# Sat, 12 Jan 2019 10:38:07 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Wed, 09 Jan 2019 12:09:28 GMT
+# Sat, 12 Jan 2019 10:38:08 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 09 Jan 2019 12:09:29 GMT
+# Sat, 12 Jan 2019 10:38:09 GMT
 CMD ["bash"]
-# Wed, 09 Jan 2019 12:10:19 GMT
+# Sat, 12 Jan 2019 10:38:52 GMT
 RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
@@ -222,23 +218,23 @@ RUN apt-get update && apt-get install -y     ros-bouncy-ros-base=0.5.1-0*     &&
 		Last Modified: Wed, 09 Jan 2019 12:19:48 GMT  
 		Size: 36.6 MB (36604915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947e771958e08cb3ad983c79a249e12b1ae18909fdb58388738eb985d545aabd`  
-		Last Modified: Wed, 09 Jan 2019 12:19:31 GMT  
-		Size: 165.8 KB (165784 bytes)  
+	-	`sha256:845dec30f89ce0c45001dbe6974b8fee8197c0834014fbb423495c2ffe95db04`  
+		Last Modified: Sat, 12 Jan 2019 10:46:32 GMT  
+		Size: 867.5 KB (867515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74219f549025f5bf8ca570c0489f29e1f81f047e34336f55530415ddcf3d5810`  
-		Last Modified: Wed, 09 Jan 2019 12:19:31 GMT  
-		Size: 93.9 KB (93871 bytes)  
+	-	`sha256:7086ebaa781a21d21052ab938b8aa532a9483e31a5ba114aa7d74cd949516844`  
+		Last Modified: Sat, 12 Jan 2019 10:46:32 GMT  
+		Size: 93.9 KB (93868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3b348f42e4f376d6a9678af2145217d76dd57363474150e83348437c5927a6`  
-		Last Modified: Wed, 09 Jan 2019 12:19:52 GMT  
-		Size: 37.6 MB (37647405 bytes)  
+	-	`sha256:23a799cdab62a26dc454a0f862a05a7ba15e39d71580a8f96f9b508fdbe473a8`  
+		Last Modified: Sat, 12 Jan 2019 10:46:50 GMT  
+		Size: 37.6 MB (37647055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069add936b53ac9286179f62c0a64737df35f98c0cba498c0034408b40a85d81`  
-		Last Modified: Wed, 09 Jan 2019 12:19:31 GMT  
+	-	`sha256:a448866c8b5ceded10a0dad09c5296eaf3795af720d950f87b92397d3dcf2e67`  
+		Last Modified: Sat, 12 Jan 2019 10:46:31 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6184aebaf5f11306ad778ef8c4bc7332ac97af1985a9dff2b385e2fd30cdc83a`  
-		Last Modified: Wed, 09 Jan 2019 12:20:25 GMT  
-		Size: 2.9 MB (2891726 bytes)  
+	-	`sha256:530f858780458633dbdb4056c142bc4c4b4ecaba3afc9d73e54e7df7bada1e74`  
+		Last Modified: Sat, 12 Jan 2019 10:47:01 GMT  
+		Size: 2.9 MB (2891295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
