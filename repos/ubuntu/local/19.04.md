@@ -63,13 +63,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.0~alpha2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.8.0~alpha2ubuntu1.dsc' apt_1.8.0~alpha2ubuntu1.dsc 2902 SHA256:ff493c34b1678fdfd92619c6a793732cc672e26e818bab75844343605dc98492
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.8.0~alpha2ubuntu1.tar.xz' apt_1.8.0~alpha2ubuntu1.tar.xz 2160232 SHA256:161e89861a13fcfbf1ae3610d3baffba7990b5235acbdbdbe569a3afb0adab87
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -238,14 +234,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2-3ubuntu1.dsc' dash_0.5.10.2-3ubuntu1.dsc 1770 SHA256:f9774c0c2cbcdf8b2a2187698502fc4357bed52e5c3cd61e045ce4ee52a2a514
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.10.2-3ubuntu1.debian.tar.xz' dash_0.5.10.2-3ubuntu1.debian.tar.xz 42000 SHA256:fbc74a28b57b356d653f711f49c550d3a07c37e1b26f3672253b4c90b994718c
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.2`
 
