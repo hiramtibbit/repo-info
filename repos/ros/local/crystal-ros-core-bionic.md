@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf2b548bf72566a040312c416032552c8a25ada2d248f8f46c4db354c6bb2ee4`
-- Created: `2019-01-08T23:59:59.478719661Z`
-- Virtual Size: ~ 783.50 Mb  
+- Image ID: `sha256:37f611bca3a124adf6bc2e3157930d5d3b756458cf76a5521720f5f0e0227067`
+- Created: `2019-01-11T23:25:42.570969499Z`
+- Virtual Size: ~ 785.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -13,7 +13,6 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `LC_ALL=C.UTF-8`
-  - `ROSDISTRO_INDEX_URL=https://raw.githubusercontent.com/ros2/rosdistro/ros2/index.yaml`
   - `ROS_DISTRO=crystal`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3390,14 +3389,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdep=0.13.0-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.13.0-1.debian.tar.xz' python3-rosdep_0.13.0-1.debian.tar.xz 2000 SHA512:b89a591adb8ae5a7985434afe600c2e286ab50bd94af0ff36d2f4536bbc7c8a9b5598b87162b916f806d362f7d4720463c6da5452f692dccad74cdea1901290e
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.13.0-1.dsc' python3-rosdep_0.13.0-1.dsc 892 SHA512:dd82b18519b142d4a356d6112bb287f93e860f30c041e6ba8357776704371b43b2b967db50232963c108f0424955c07ce2a92584d95533f5411f6e0f2ed8161c
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.13.0.orig.tar.gz' python3-rosdep_0.13.0.orig.tar.gz 80165 SHA512:970272dcf284ecfe96fbff28fb50c62b9c3a74f051eafc41c074d98fa52bab48062fbb843d8f3d5eb30d8d1cc1219c0d20044e05a22070a0645643470cb9c420
-```
 
 ### `dpkg` source package: `python3-rosdistro-modules=0.7.0-1`
 
