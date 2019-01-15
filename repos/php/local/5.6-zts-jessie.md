@@ -1,30 +1,27 @@
-# `php:7.1.26-apache-jessie`
+# `php:5.6.40-zts-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fa1749785dd222a2090337330f1ae91e92c5879e9cb3360060866b57d4dbd08`
-- Created: `2019-01-11T03:15:44.366724722Z`
-- Virtual Size: ~ 388.24 Mb  
+- Image ID: `sha256:033383869ae901d81f4ec4117829385ad53ae13d35f647c30c0eceb1f95f1ef6`
+- Created: `2019-01-14T22:11:37.3025506Z`
+- Virtual Size: ~ 352.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
-- Command: `["apache2-foreground"]`
+- Command: `["php","-a"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `APACHE_CONFDIR=/etc/apache2`
-  - `APACHE_ENVVARS=/etc/apache2/envvars`
-  - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi`
+  - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
-  - `PHP_VERSION=7.1.26`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.26.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.26.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=10b7ae634c12852fae52a22dc2262e5f12418ad59fd20da2d00d71a212235d31`
+  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
+  - `PHP_VERSION=5.6.40`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.40.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.40.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -79,100 +76,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.113+nmu3/ (for browsing the source)
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.113+nmu3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `apache2=2.4.10-10+deb8u12`
-
-Binary Packages:
-
-- `apache2=2.4.10-10+deb8u12`
-- `apache2-bin=2.4.10-10+deb8u12`
-- `apache2-data=2.4.10-10+deb8u12`
-- `apache2-utils=2.4.10-10+deb8u12`
-
-Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
-
-- `Apache-2.0`
-- `BSD-2-clause-Darwin`
-- `BSD-3-clause-Cambridge`
-- `BSD-3-clause-Smrgrav`
-- `Cisco`
-- `Custom`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `Haines`
-- `MD5`
-- `MIT`
-- `PCRE`
-- `Zeus`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u12
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u12.dsc' apache2_2.4.10-10+deb8u12.dsc 3281 SHA256:0b9a1f7b5e6172b5466ae787bc338bb6668d74d39440b1af90d86894dac7a44b
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u12.debian.tar.xz' apache2_2.4.10-10+deb8u12.debian.tar.xz 566364 SHA256:bf3800808974abdf5feabb799bf138370711c05c5344d4f9c3638b63fd9229a7
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u12/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.10-10+deb8u12/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `apr-util=1.5.4-1`
-
-Binary Packages:
-
-- `libaprutil1:amd64=1.5.4-1`
-- `libaprutil1-dbd-sqlite3:amd64=1.5.4-1`
-- `libaprutil1-ldap:amd64=1.5.4-1`
-
-Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`, `/usr/share/doc/libaprutil1-dbd-sqlite3/copyright`, `/usr/share/doc/libaprutil1-ldap/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr-util=1.5.4-1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-1.dsc' apr-util_1.5.4-1.dsc 2610 SHA256:4bef658a072d22814a7548b90d114f5ca85a053594789fb2af97fec5993afa5a
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4.orig.tar.bz2' apr-util_1.5.4.orig.tar.bz2 694427 SHA256:a6cf327189ca0df2fb9d5633d7326c460fe2b61684745fd7963e79a6dd0dc82e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-1.debian.tar.xz' apr-util_1.5.4-1.debian.tar.xz 16452 SHA256:83b625e3c3b7093562e31413c858ff586a245cc4c99e348844dd891d40112741
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/apr-util/1.5.4-1/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.5.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.5.4-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `apr=1.5.1-3`
-
-Binary Packages:
-
-- `libapr1:amd64=1.5.1-3`
-
-Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr=1.5.1-3
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1-3.dsc' apr_1.5.1-3.dsc 2090 SHA256:f3f78ab76365a17a233220357eb2b7f3102d7e9d21c59b3f82d9f0300c554433
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1.orig.tar.bz2' apr_1.5.1.orig.tar.bz2 817569 SHA256:e94abe431d4da48425fcccdb27b469bd0f8151488f82e5630a56f26590e198ac
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1-3.debian.tar.xz' apr_1.5.1-3.debian.tar.xz 17844 SHA256:c7f270ab445e2646bd7dfdfaf9ea44b2642a43c48012689c6f3bf52fe8c9e9c5
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/apr/1.5.1-3/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.5.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.5.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.0.9.8.4`
 
@@ -816,31 +719,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/ (for browsing the source)
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.42.12-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `expat=2.1.0-6+deb8u4`
-
-Binary Packages:
-
-- `libexpat1:amd64=2.1.0-6+deb8u4`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.1.0-6+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.22+15-2+deb8u4`
 
@@ -2034,31 +1912,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lsb/4.1+Debian13+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lua5.1=5.1.5-7.1`
-
-Binary Packages:
-
-- `liblua5.1-0:amd64=5.1.5-7.1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris lua5.1=5.1.5-7.1
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-7.1.dsc' lua5.1_5.1.5-7.1.dsc 1492 SHA256:26056d599a8e6d5886ca120dff642399a40e1d5ff8ea4d00c5e2b1843c9d55cb
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5.orig.tar.gz' lua5.1_5.1.5.orig.tar.gz 221213 SHA256:2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-7.1.debian.tar.xz' lua5.1_5.1.5-7.1.debian.tar.xz 13628 SHA256:2336fc576339ff40a8d7c4b4469a2b2da41eb7cba6e0d10c3444fd27093c2083
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/lua5.1/5.1.5-7.1/ (for browsing the source)
-- https://sources.debian.net/src/lua5.1/5.1.5-7.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lua5.1/5.1.5-7.1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `lvm2=2.02.111-2.2+deb8u1`
 
 Binary Packages:
@@ -2161,31 +2014,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.3-17/ (for browsing the source)
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `mime-support=3.58`
-
-Binary Packages:
-
-- `mime-support=3.58`
-
-Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
-
-- `Bellcore`
-- `ad-hoc`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mime-support=3.58
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.dsc' mime-support_3.58.dsc 1604 SHA256:3279480870a7bd6c7e2a85f7f1e5deba50c3cb5edcbd6ce69a3cfc7fe0266284
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.tar.gz' mime-support_3.58.tar.gz 34995 SHA256:3d9ca5115e93edb3ada3fb120cde88ac3d866903e18a41ca124428d77dd1721e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mime-support/3.58/ (for browsing the source)
-- https://sources.debian.net/src/mime-support/3.58/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mime-support/3.58/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.0.2-1`
 
@@ -2737,26 +2565,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/slang2/2.3.0-2/ (for browsing the source)
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/slang2/2.3.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u3`
-
-Binary Packages:
-
-- `libsqlite3-0:amd64=3.8.7.1-1+deb8u3`
-
-Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/
-
 
 ### `dpkg` source package: `startpar=0.59-3`
 

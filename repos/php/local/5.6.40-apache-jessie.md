@@ -1,10 +1,10 @@
-# `php:7.1.26-apache-jessie`
+# `php:5.6.40-apache-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fa1749785dd222a2090337330f1ae91e92c5879e9cb3360060866b57d4dbd08`
-- Created: `2019-01-11T03:15:44.366724722Z`
-- Virtual Size: ~ 388.24 Mb  
+- Image ID: `sha256:ae20e82fca483f4173ae1a706cb276408720841a1fa6e0233bed2be648528b1c`
+- Created: `2019-01-14T21:54:00.898768559Z`
+- Virtual Size: ~ 374.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -20,11 +20,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
-  - `PHP_VERSION=7.1.26`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.26.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.26.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=10b7ae634c12852fae52a22dc2262e5f12418ad59fd20da2d00d71a212235d31`
+  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
+  - `PHP_VERSION=5.6.40`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.40.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.40.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2738,11 +2738,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/slang2/2.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u3`
+### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.8.7.1-1+deb8u3`
+- `libsqlite3-0:amd64=3.8.7.1-1+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2750,13 +2750,21 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u4.dsc' sqlite3_3.8.7.1-1+deb8u4.dsc 2705 SHA256:e4b52b1144ea546f92e1f7e7239b1f45a6ff83732bd03d5b549ab953274ee293
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u4.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u4.debian.tar.xz 24436 SHA256:8d9be049e9abe6221b39f84d564ff310ecbbd328bd5876b672f8294e55ba1953
+```
 
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
