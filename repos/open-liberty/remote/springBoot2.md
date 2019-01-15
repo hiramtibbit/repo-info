@@ -1,7 +1,7 @@
 ## `open-liberty:springBoot2`
 
 ```console
-$ docker pull open-liberty@sha256:f6d8301b26b0690516b95931e8e67a9c38fc78d794a272410806b9d9d0d59a6f
+$ docker pull open-liberty@sha256:351875779e3964e9d1c05385ceda6942baa9d62e40d8410147cec6e1fa024c3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -248,14 +248,14 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ### `open-liberty:springBoot2` - linux; ppc64le
 
 ```console
-$ docker pull open-liberty@sha256:c80d368c9aacc120a7a6a88d0463d115f1e5d9a91ed6610cc0f37f99e92dc73b
+$ docker pull open-liberty@sha256:0357c5a99a74c5e4dfc1561dea59e275ce884fb4ff3789a8b73ef378d89fc721
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.8 MB (325787665 bytes)**  
+-	Total Size: **325.8 MB (325793179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:475c44c6352e7492ef4a2bf3e610a9e939ac1476765e7b5520af6f1bce7164c8`
+-	Image ID: `sha256:b31ba9ca425e5d9d8589dc3546e71e4bdcdd0902e857c55b53096849b887ed36`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -274,37 +274,37 @@ CMD ["/bin/bash"]
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 # Sat, 29 Dec 2018 09:50:56 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 09:50:58 GMT
-ENV JAVA_VERSION=1.8.0_sr5fp26
-# Sat, 29 Dec 2018 09:52:58 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='962cff44b493645d789411cc0a3d23796c41159f5c45c2fc297a161e45e39836';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='ddba881ac7431c352a559c546ee704ad902b83573da417a10bf6e968222e450c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='b906de7cff34affb1371e2c29b9cc80e1d62ca2c32d1088f0167e422b702ef9a';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='c0568460ef383e6e3f56b93cfc296601d3e5aae4aba167b69cb9949ffa932c82';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='81acd84a1365a631ceb3d848838e3978d23b99dec362adc112ad3a159739ecf1';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Sat, 29 Dec 2018 09:53:03 GMT
+# Tue, 15 Jan 2019 09:37:20 GMT
+ENV JAVA_VERSION=1.8.0_sr5fp27
+# Tue, 15 Jan 2019 09:39:26 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b702bd21f70fbb2981bf4259d068cfa8a82a4eb9bc8a3dfef17e1c1a995399c4';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='1f2e55282129b4006d7ecb5876a92c5c2f9c1c2f12e71663e47bbaa72e4ed4f5';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='40533ee60330deb7fbb2bcf77db1daacee7727e5d03d6fac4f5f4440ee4ab995';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='8edc2722bfbf84eeca4855642c7ff912d240bd973836f4fa2f73fa7c5abeef7c';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='55bb6582adbc1a1cc598680e77d8e08e78565514317e949120099af11c73926e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
+# Tue, 15 Jan 2019 09:39:29 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
-# Sat, 29 Dec 2018 15:38:30 GMT
+# Tue, 15 Jan 2019 10:00:58 GMT
 LABEL maintainer=Alasdair Nottingham vendor=Open Liberty url=https://openliberty.io/ github=https://github.com/OpenLiberty/ci.docker
-# Sat, 29 Dec 2018 15:38:31 GMT
+# Tue, 15 Jan 2019 10:01:02 GMT
 COPY file:d40f5469dac9bc207bd04ab8a1419b4876bf27e17ee1020b08e88bc6d933312f in /opt/ol/docker/ 
-# Sat, 29 Dec 2018 15:41:02 GMT
+# Tue, 15 Jan 2019 10:04:29 GMT
 ENV LIBERTY_VERSION=18.0.0.4 LIBERTY_SHA=0773f5e9e933b272e426ef86b90e13ee1ed5a1ee
-# Sat, 29 Dec 2018 15:41:27 GMT
+# Tue, 15 Jan 2019 10:05:01 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*     && wget https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/$LIBERTY_VERSION/openliberty-runtime-$LIBERTY_VERSION.zip -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && apt-get remove -y unzip     && rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 15:41:32 GMT
+# Tue, 15 Jan 2019 10:05:06 GMT
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true
-# Sat, 29 Dec 2018 15:41:36 GMT
+# Tue, 15 Jan 2019 10:05:13 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs     && ln -s /liberty /opt/ol/wlp
-# Sat, 29 Dec 2018 15:41:41 GMT
+# Tue, 15 Jan 2019 10:05:22 GMT
 RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Sat, 29 Dec 2018 15:41:42 GMT
+# Tue, 15 Jan 2019 10:05:24 GMT
 EXPOSE 9080 9443
-# Sat, 29 Dec 2018 15:41:44 GMT
+# Tue, 15 Jan 2019 10:05:28 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Sat, 29 Dec 2018 15:41:45 GMT
+# Tue, 15 Jan 2019 10:05:31 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
-# Sat, 29 Dec 2018 15:43:00 GMT
+# Tue, 15 Jan 2019 10:06:58 GMT
 RUN mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache   && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache
-# Sat, 29 Dec 2018 15:44:30 GMT
+# Tue, 15 Jan 2019 10:09:02 GMT
 RUN cp /opt/ol/wlp/templates/servers/springBoot2/server.xml /config/server.xml
-# Sat, 29 Dec 2018 15:44:44 GMT
+# Tue, 15 Jan 2019 10:09:16 GMT
 RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/
 ```
 
@@ -329,37 +329,37 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Sat, 29 Dec 2018 09:57:38 GMT  
 		Size: 2.9 MB (2881550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24a44eeb94b37fd31e789e4e1707cf25778d3de9724f7a009ac6ff5480b14028`  
-		Last Modified: Sat, 29 Dec 2018 09:57:54 GMT  
-		Size: 141.9 MB (141880017 bytes)  
+	-	`sha256:18c0cff2ce6565aa943a9f827ac06936c3272a705852b8ca696fb70da2437c8c`  
+		Last Modified: Tue, 15 Jan 2019 09:44:15 GMT  
+		Size: 141.9 MB (141909538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91e7052a228842aaa46ba252202d8fd21191f16bdce084895aa842b11cd6b1d6`  
-		Last Modified: Sat, 29 Dec 2018 15:45:07 GMT  
-		Size: 438.0 B  
+	-	`sha256:92dc6cafc26d7336fb7f2fe2b481fca1c2e6282c836c1272b29cf421c999737d`  
+		Last Modified: Tue, 15 Jan 2019 10:09:39 GMT  
+		Size: 436.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c7c604c5405ac04445c16eb57eaa033b758100af13b198934208d31ae7d4703`  
-		Last Modified: Sat, 29 Dec 2018 15:46:08 GMT  
-		Size: 126.7 MB (126746708 bytes)  
+	-	`sha256:1ebd94dfb344c35f38ca70e6f6ed76a22178aca825f835b6e0fbeb9b56abc697`  
+		Last Modified: Tue, 15 Jan 2019 10:11:53 GMT  
+		Size: 126.7 MB (126746788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9edddc69659c83d7ab75197145b000e95bc3a843565bad994ee9d6a3d38d4c3b`  
-		Last Modified: Sat, 29 Dec 2018 15:45:56 GMT  
+	-	`sha256:d772feed9f9fe9290ee5c9fed0f627ff19ad1bb118b1bcd4185110039a742bb3`  
+		Last Modified: Tue, 15 Jan 2019 10:11:40 GMT  
 		Size: 348.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0e20823fdc5ddd9916a6272d86b4f62314140cf45ec3941c904314ec4c7291a`  
-		Last Modified: Sat, 29 Dec 2018 15:45:56 GMT  
+	-	`sha256:39c112ed47faa95ce8439dc07f01cabae0cf109c2e5407258c3de3bc1f87091a`  
+		Last Modified: Tue, 15 Jan 2019 10:11:40 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7d7e176941878ffbb677eef837005f689c4c713acd79eb79be304db9ba3df7`  
-		Last Modified: Sat, 29 Dec 2018 15:46:47 GMT  
-		Size: 284.0 B  
+	-	`sha256:07d431da0199ca7cb985ee2445bd6c2d3a15a0fe5303038243eed12c0379b3af`  
+		Last Modified: Tue, 15 Jan 2019 10:12:34 GMT  
+		Size: 285.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddca4c49154777aed1290059babde4b1af16e4fc3dae5f06df8ef479325cc4e4`  
-		Last Modified: Sat, 29 Dec 2018 15:47:37 GMT  
+	-	`sha256:fb64fdf8283709c5b7f37254a9460155f034d26092b7ad0f3e643bb0a97fd021`  
+		Last Modified: Tue, 15 Jan 2019 10:13:16 GMT  
 		Size: 534.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8774fc445e0a75e66d42ad69236e8a3e1dc0ec177bc356cee69bf0e264bb5a3a`  
-		Last Modified: Sat, 29 Dec 2018 15:47:40 GMT  
-		Size: 8.6 MB (8555893 bytes)  
+	-	`sha256:a8df09c79a0678c70c08c05ab2ea446b5e02dbea73925cff1516072f2e02630f`  
+		Last Modified: Tue, 15 Jan 2019 10:13:20 GMT  
+		Size: 8.5 MB (8531807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:springBoot2` - linux; s390x

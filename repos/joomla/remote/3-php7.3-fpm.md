@@ -1,7 +1,7 @@
 ## `joomla:3-php7.3-fpm`
 
 ```console
-$ docker pull joomla@sha256:81515ef7bd1b51a2d4381cc5d24d61f06b5667e5cc3c629ca95d2999bf7e9bc5
+$ docker pull joomla@sha256:76643c9b0fa7575e195389eebf87fe5030c61fbfdd848168fdafa09e8dfb9a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -167,14 +167,14 @@ CMD ["php-fpm"]
 ### `joomla:3-php7.3-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull joomla@sha256:2ef22111d5cd71a8ff303c28187af17663d3ab0a90c5943831524e70add08b67
+$ docker pull joomla@sha256:d235abc663fc54c93955f9e9f9116734e8dde0b01af6121b54cb9739cd1aaa11
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131112367 bytes)**  
+-	Total Size: **131.1 MB (131112500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a81b83a1b50b6fcc197a42639a6376425315f15466540e2d7d4266a2bc41c265`
+-	Image ID: `sha256:3f92e57be6cae19a2a2f20f1c8ab7ddbe42ea98104d792827efaa643d1d5e0f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -239,17 +239,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 VOLUME [/var/www/html]
 # Wed, 09 Jan 2019 10:15:19 GMT
 ENV JOOMLA_VERSION=3.9.1
-# Wed, 09 Jan 2019 10:15:19 GMT
-ENV JOOMLA_SHA1=aec0f602f93064d55cc06917329abdeef2e0f820
-# Wed, 09 Jan 2019 10:15:27 GMT
-RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA1 *joomla.tar.bz2" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
-# Wed, 09 Jan 2019 10:15:28 GMT
+# Tue, 15 Jan 2019 09:50:14 GMT
+ENV JOOMLA_SHA512=1a3b8d9788f657a97dc107bdea909792ba117c17587aaf05ce0f416bc1fddaf80c108431d6b9b1f1a212d10817cfe8f06c6178c474a4be1d73d232f98eb685e9
+# Tue, 15 Jan 2019 09:50:23 GMT
+RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
+# Tue, 15 Jan 2019 09:50:25 GMT
 COPY file:fcc18c5b9c2d514cfb965bab84e10b4f924a39a5f202055df75d7990da099d8f in /entrypoint.sh 
-# Wed, 09 Jan 2019 10:15:29 GMT
+# Tue, 15 Jan 2019 09:50:25 GMT
 COPY file:5a85d779aaae74cfa3ab6228df0f24236d4d5ad9097e2a1b277e3daea0d6d3dc in /makedb.php 
-# Wed, 09 Jan 2019 10:15:29 GMT
+# Tue, 15 Jan 2019 09:50:26 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 09 Jan 2019 10:15:29 GMT
+# Tue, 15 Jan 2019 09:50:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -302,16 +302,16 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Jan 2019 10:18:26 GMT  
 		Size: 2.8 MB (2843884 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f410139e5e4b57f50ee46d0fe25b20b5431c1b4d508d439d19e39010eb7c62`  
-		Last Modified: Wed, 09 Jan 2019 10:18:31 GMT  
-		Size: 9.6 MB (9568698 bytes)  
+	-	`sha256:d886fe3d0950baedfa1e2f3efcaf863d676b8335b595e7d5114b9b1e2378178d`  
+		Last Modified: Tue, 15 Jan 2019 09:53:37 GMT  
+		Size: 9.6 MB (9568830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2d52faee358502fdf3c94efd37622f19abd8ad441f14f4bda1cf4355432b4e3`  
-		Last Modified: Wed, 09 Jan 2019 10:18:26 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:57751fdbafc94e70bf9decd20d4298d70bcc6cd5da5d4863ad1d5a072ab6c857`  
+		Last Modified: Tue, 15 Jan 2019 09:53:31 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7931501c279b0a3a0ecce0de2f88635b029e525397098e09308ed05d475c4f1`  
-		Last Modified: Wed, 09 Jan 2019 10:18:26 GMT  
+	-	`sha256:1c1a926b3f15540eaa0810b98d8c07840e322f51ec58c66d590795d96e141071`  
+		Last Modified: Tue, 15 Jan 2019 09:53:31 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -469,14 +469,14 @@ CMD ["php-fpm"]
 ### `joomla:3-php7.3-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull joomla@sha256:b5b168bf69907ab7edb44d953f8ec0cbe72cb7282ba346b36941de6d1826c99a
+$ docker pull joomla@sha256:e7fadd23ba4f29dcae2f93051fb399bd7625d4d5bb4ea89d0264cae986f1a1ff
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.4 MB (130383152 bytes)**  
+-	Total Size: **130.4 MB (130382902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1b0ed466ba41fb075422dfc97716f317538903ed12232c0a6fac2b6fb0ccb16`
+-	Image ID: `sha256:1134a69fc6c69eaf724857bc711bccb3414cf7b908f08c39f233195a4137533f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -541,17 +541,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 VOLUME [/var/www/html]
 # Wed, 09 Jan 2019 11:14:25 GMT
 ENV JOOMLA_VERSION=3.9.1
-# Wed, 09 Jan 2019 11:14:26 GMT
-ENV JOOMLA_SHA1=aec0f602f93064d55cc06917329abdeef2e0f820
-# Wed, 09 Jan 2019 11:14:37 GMT
-RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA1 *joomla.tar.bz2" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
-# Wed, 09 Jan 2019 11:14:38 GMT
+# Tue, 15 Jan 2019 10:03:45 GMT
+ENV JOOMLA_SHA512=1a3b8d9788f657a97dc107bdea909792ba117c17587aaf05ce0f416bc1fddaf80c108431d6b9b1f1a212d10817cfe8f06c6178c474a4be1d73d232f98eb685e9
+# Tue, 15 Jan 2019 10:03:56 GMT
+RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
+# Tue, 15 Jan 2019 10:03:57 GMT
 COPY file:fcc18c5b9c2d514cfb965bab84e10b4f924a39a5f202055df75d7990da099d8f in /entrypoint.sh 
-# Wed, 09 Jan 2019 11:14:40 GMT
+# Tue, 15 Jan 2019 10:03:58 GMT
 COPY file:5a85d779aaae74cfa3ab6228df0f24236d4d5ad9097e2a1b277e3daea0d6d3dc in /makedb.php 
-# Wed, 09 Jan 2019 11:14:43 GMT
+# Tue, 15 Jan 2019 10:03:59 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 09 Jan 2019 11:14:46 GMT
+# Tue, 15 Jan 2019 10:03:59 GMT
 CMD ["php-fpm"]
 ```
 
@@ -604,17 +604,17 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Jan 2019 11:24:48 GMT  
 		Size: 2.9 MB (2850635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a46db88a3e2d5aaee4d259eda2bd3d8f303f652da233adf32664881284d7e2cc`  
-		Last Modified: Wed, 09 Jan 2019 11:24:52 GMT  
-		Size: 9.6 MB (9568949 bytes)  
+	-	`sha256:2d6aeb7fa865d1b358b52a71c671df425114908d181f53c00e66c74dd3a0ff0d`  
+		Last Modified: Tue, 15 Jan 2019 10:09:52 GMT  
+		Size: 9.6 MB (9568708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27dfed1e915fad0108b8730e2e3509f3ea0463f0a132ecdb30cfce830c4a1c9`  
-		Last Modified: Wed, 09 Jan 2019 11:24:47 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:6f8c862b17ecbc952c3ed9666719bbf7dc80efa34e5e49acc39536d03490748d`  
+		Last Modified: Tue, 15 Jan 2019 10:09:43 GMT  
+		Size: 1.2 KB (1169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4588c47f0c3e6128d7bfc28a634510a5b302dfdeb68468344e34180ceecfe12`  
-		Last Modified: Wed, 09 Jan 2019 11:24:47 GMT  
-		Size: 614.0 B  
+	-	`sha256:16e9af5d9548bcb7540f83184ab5462b52a3e92258f9b94a885ddca969d7d1e3`  
+		Last Modified: Tue, 15 Jan 2019 10:09:43 GMT  
+		Size: 609.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `joomla:3-php7.3-fpm` - linux; 386
@@ -771,14 +771,14 @@ CMD ["php-fpm"]
 ### `joomla:3-php7.3-fpm` - linux; ppc64le
 
 ```console
-$ docker pull joomla@sha256:d48187b8aa50edecbde43cf421568baaa78146e252bb8a9174d8b17cfa51bdf2
+$ docker pull joomla@sha256:1b5dd771e69225b5720f62cee957b3027d71a187ed2c7c87f8173c7ac36e84d4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138240314 bytes)**  
+-	Total Size: **138.2 MB (138240481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:050068b70102977d932275fdb7dab3f37a5b3454dfc4eb3147f37d357ca825e1`
+-	Image ID: `sha256:23814b7022035b941dc27eb4a3679a0ffc67a09d69c9ba65f2158592e3fcba6c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -843,17 +843,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 VOLUME [/var/www/html]
 # Wed, 09 Jan 2019 10:16:54 GMT
 ENV JOOMLA_VERSION=3.9.1
-# Wed, 09 Jan 2019 10:16:59 GMT
-ENV JOOMLA_SHA1=aec0f602f93064d55cc06917329abdeef2e0f820
-# Wed, 09 Jan 2019 10:17:12 GMT
-RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA1 *joomla.tar.bz2" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
-# Wed, 09 Jan 2019 10:17:15 GMT
+# Tue, 15 Jan 2019 09:42:24 GMT
+ENV JOOMLA_SHA512=1a3b8d9788f657a97dc107bdea909792ba117c17587aaf05ce0f416bc1fddaf80c108431d6b9b1f1a212d10817cfe8f06c6178c474a4be1d73d232f98eb685e9
+# Tue, 15 Jan 2019 09:42:33 GMT
+RUN curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2 	&& echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c - 	&& mkdir /usr/src/joomla 	&& tar -xf joomla.tar.bz2 -C /usr/src/joomla 	&& rm joomla.tar.bz2 	&& chown -R www-data:www-data /usr/src/joomla
+# Tue, 15 Jan 2019 09:42:35 GMT
 COPY file:fcc18c5b9c2d514cfb965bab84e10b4f924a39a5f202055df75d7990da099d8f in /entrypoint.sh 
-# Wed, 09 Jan 2019 10:17:16 GMT
+# Tue, 15 Jan 2019 09:42:36 GMT
 COPY file:5a85d779aaae74cfa3ab6228df0f24236d4d5ad9097e2a1b277e3daea0d6d3dc in /makedb.php 
-# Wed, 09 Jan 2019 10:17:18 GMT
+# Tue, 15 Jan 2019 09:42:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 09 Jan 2019 10:17:23 GMT
+# Tue, 15 Jan 2019 09:42:39 GMT
 CMD ["php-fpm"]
 ```
 
@@ -906,15 +906,15 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Jan 2019 10:27:34 GMT  
 		Size: 3.0 MB (2969234 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad6476791abf697808fdf1a93b173ce26801273b5ef106732c8b5605ad116f9`  
-		Last Modified: Wed, 09 Jan 2019 10:27:43 GMT  
-		Size: 9.6 MB (9568394 bytes)  
+	-	`sha256:a9631d0c1a564ad4f1434d7109dd2ae8bfaa6f837416ddac710266cab3a1e3b5`  
+		Last Modified: Tue, 15 Jan 2019 09:48:57 GMT  
+		Size: 9.6 MB (9568561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b12c943299e0a58e9cae2675b0343a47de6da4275ab9aeb26520ce3f30f23d7a`  
-		Last Modified: Wed, 09 Jan 2019 10:27:32 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:ff163d2f39e8a0f7550374d3f68fd8a88d78f8bfcd52fb9f6076987403856d3f`  
+		Last Modified: Tue, 15 Jan 2019 09:48:53 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:351b42a177272e9804ead8c19c27a1b2c36b1acdeea1fa76963ec01fdcc948c2`  
-		Last Modified: Wed, 09 Jan 2019 10:27:32 GMT  
-		Size: 615.0 B  
+	-	`sha256:aae84d8ba9e08eb11744f313db5ec161e391a666e304488615da0f53cdf3f1cd`  
+		Last Modified: Tue, 15 Jan 2019 09:48:53 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
