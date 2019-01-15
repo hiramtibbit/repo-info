@@ -535,20 +535,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-12
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-12.dsc' gcc-8_8.2.0-12.dsc 32414 SHA256:35949c1940c4bc2871a5d49a7d7ca1f245137e59e4940aa1b002bff048977219
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 73307233 SHA256:45daff604ad10d15ba59665351c3be169c2ef3f4de93b11d65f646cb2c1ce7e2
-'http://deb.debian.org/debian/pool/main/g/gcc-8/gcc-8_8.2.0-12.diff.gz' gcc-8_8.2.0-12.diff.gz 4603752 SHA256:86816954cbc54540e84ef08efa45a6774f217702728adc1f5892b44a95b5057b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-8/8.2.0-12/
 
-- https://sources.debian.net/src/gcc-8/8.2.0-12/ (for browsing the source)
-- https://sources.debian.net/src/gcc-8/8.2.0-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-8/8.2.0-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.28-2`
 
@@ -679,20 +672,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.1-3
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1-3.dsc' grep_3.1-3.dsc 2038 SHA256:6595e7c7a09e762480c9fc6e7f45534de903396f17f71862e939154ec51afbd0
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1.orig.tar.xz' grep_3.1.orig.tar.xz 1370880 SHA256:db625c7ab3bb3ee757b3926a5cfa8d9e1c3991ad24707a83dde8a5ef2bf7a07e
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1-3.debian.tar.xz' grep_3.1-3.debian.tar.xz 105700 SHA256:0e549e73f47d007eee51cd49a28eeaee74d9698703b958a5fe0bdab291ddfbaa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/grep/3.1-3/
 
-- https://sources.debian.net/src/grep/3.1-3/ (for browsing the source)
-- https://sources.debian.net/src/grep/3.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/grep/3.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
@@ -1248,20 +1234,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.8
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.8.dsc' pam_1.1.8-3.8.dsc 2572 SHA256:1c53c38c71bdba71a5d1e5767cbae505e176b9220e0c07e078309493055c753f
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.8.diff.gz' pam_1.1.8-3.8.diff.gz 138822 SHA256:10e5623f5433460ea05da9cdcb604494a847b4b759102b83dc11e4cf43d59e48
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.1.8-3.8/
 
-- https://sources.debian.net/src/pam/1.1.8-3.8/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.1.8-3.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.1.8-3.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-11`
 
@@ -1506,20 +1485,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.33-0.2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33-0.2.dsc' util-linux_2.33-0.2.dsc 3974 SHA256:7497067a25187d8bd266ddf57e8cc555e48b34a74ce6313279d33ba2c3b90a28
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.orig.tar.xz' util-linux_2.33.orig.tar.xz 4663072 SHA256:f261b9d73c35bfeeea04d26941ac47ee1df937bd3b0583e748217c1ea423658a
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33-0.2.debian.tar.xz' util-linux_2.33-0.2.debian.tar.xz 83560 SHA256:4d64aabc45d2a3f3f8df53e5e4f768a04ebd604835716a19dbf7574d472043ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.33-0.2/
 
-- https://sources.debian.net/src/util-linux/2.33-0.2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.33-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.33-0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
