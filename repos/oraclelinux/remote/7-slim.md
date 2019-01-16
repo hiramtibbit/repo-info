@@ -1,7 +1,7 @@
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:2ed2820810409491b0d8fced14b5f6b3fd8206eb8fbf5f9138d825c5a98db020
+$ docker pull oraclelinux@sha256:2169b08130d752ea83a663ec24e9b64f21ed372d0ce27aeb237c3efd646bd416
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,29 +12,29 @@ $ docker pull oraclelinux@sha256:2ed2820810409491b0d8fced14b5f6b3fd8206eb8fbf5f9
 ### `oraclelinux:7-slim` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:50ad4bebb443da56ec7af6e5e53a7316ca518e58c0d1c9ab0cccdc9aa2d14a0d
+$ docker pull oraclelinux@sha256:e74e4c9e4b6d83feec6244307cd92f5162c5b05c7f9d1d2095f52b6a3b55b182
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.4 MB (42400712 bytes)**  
+-	Total Size: **42.4 MB (42397948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b19454a5f17a65be9a9e32ea73a4857a1925d74d79b152737578cc58d31e48eb`
+-	Image ID: `sha256:c3d86938818363c15eb4de0f21deb9e5ec82cacc34daf0b083febb9bbb4a787a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 30 Aug 2018 21:49:27 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Thu, 08 Nov 2018 02:20:54 GMT
-ADD file:455ccf156d2b27cef51d5bb1a11a3b0771a13a2378aa24f1879b3e5d90482f3d in / 
-# Thu, 08 Nov 2018 02:20:54 GMT
+# Wed, 16 Jan 2019 01:23:19 GMT
+ADD file:8263c738e5e034b2f379bc7bde495939a86be9239bee8c0252694ff03fa6e638 in / 
+# Wed, 16 Jan 2019 01:23:19 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f25d826091945ac486aa0c52fdcf1b0981e32cef0f95c4dd5e229aeaaa73fe4a`  
-		Last Modified: Thu, 08 Nov 2018 02:23:03 GMT  
-		Size: 42.4 MB (42400712 bytes)  
+	-	`sha256:a8d84c1f755a3ae79bb49ba9bbfd59edd9d8b324fea86f0728a67eab1db70635`  
+		Last Modified: Wed, 16 Jan 2019 01:26:18 GMT  
+		Size: 42.4 MB (42397948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `oraclelinux:7-slim` - linux; arm64 variant v8
