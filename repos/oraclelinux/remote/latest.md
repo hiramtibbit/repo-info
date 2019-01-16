@@ -1,7 +1,7 @@
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull oraclelinux@sha256:e9d310506edb8759351267dd43fb35da08fdda954919a47dfd84ccb5f7b32ec1
+$ docker pull oraclelinux@sha256:91c0db0ba7295d7a07fcb566422b198050231b94be016a17a2c46e5e7234319d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40,27 +40,27 @@ CMD ["/bin/bash"]
 ### `oraclelinux:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:41241b4f0655748af98f3df78796f90131d23b92135e18d4ab93a094bb2fbb14
+$ docker pull oraclelinux@sha256:39c5aef880e7ffe9a8abf2b5e07aea479d1adbf297a200993ae801ef688f6b4c
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87897435 bytes)**  
+-	Total Size: **87.9 MB (87923709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d4de41aab8bf26dcb3a647a63da85aa15c4ceb8dc3da87aaeb939d8945f3aa`
+-	Image ID: `sha256:3013b65bf1ed317f2841245a7839b021b946604bc5e5e91a0d71e1f15a31ec26`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 21 Mar 2018 16:42:26 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Thu, 08 Nov 2018 09:41:25 GMT
-ADD file:b8e41b18feeb0eceedc82eae1dfab8b3b02016b29cbfc6d0d0ea3e267d4c7234 in / 
-# Thu, 08 Nov 2018 09:41:27 GMT
+# Wed, 16 Jan 2019 10:29:51 GMT
+ADD file:d7cf89c739b6a74f10ab7d8c7f57b2d9af7bff74aa90b9aeed30e06ca47f03fe in / 
+# Wed, 16 Jan 2019 10:29:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9248c51b8b14eb0bb32b8c680c171a87c042c29dc1f06e149429fefd613e7249`  
-		Last Modified: Thu, 08 Nov 2018 09:43:51 GMT  
-		Size: 87.9 MB (87897435 bytes)  
+	-	`sha256:fdae85dbbc2c40a328f05a1a7636db7711696c60c99f30038ecffa41e1bca1d8`  
+		Last Modified: Wed, 16 Jan 2019 10:31:36 GMT  
+		Size: 87.9 MB (87923709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
