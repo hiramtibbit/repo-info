@@ -1300,20 +1300,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.12-1
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.12-1.dsc' graphite2_1.3.12-1.dsc 2367 SHA256:21e9c60b5a4ff8b7d345bea778ab16d62a639a86e189093b59d7ff321ac6683e
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.12.orig.tar.gz' graphite2_1.3.12.orig.tar.gz 6667278 SHA256:2b90cff3e64a37dd4f6fa4ac46c7634f8707601a8b4478f8501c74d3be774366
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.12-1.debian.tar.xz' graphite2_1.3.12-1.debian.tar.xz 11172 SHA256:9eac98c6f2176580a1779a2463c8650d14e796ee55613f6fdf2a34f45f505a86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.12-1/
 
-- https://sources.debian.net/src/graphite2/1.3.12-1/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.1-3`
 
@@ -1326,20 +1319,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.1-3
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1-3.dsc' grep_3.1-3.dsc 2038 SHA256:6595e7c7a09e762480c9fc6e7f45534de903396f17f71862e939154ec51afbd0
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1.orig.tar.xz' grep_3.1.orig.tar.xz 1370880 SHA256:db625c7ab3bb3ee757b3926a5cfa8d9e1c3991ad24707a83dde8a5ef2bf7a07e
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.1-3.debian.tar.xz' grep_3.1-3.debian.tar.xz 105700 SHA256:0e549e73f47d007eee51cd49a28eeaee74d9698703b958a5fe0bdab291ddfbaa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/grep/3.1-3/
 
-- https://sources.debian.net/src/grep/3.1-3/ (for browsing the source)
-- https://sources.debian.net/src/grep/3.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/grep/3.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.9-2.1`
 
@@ -2879,16 +2865,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mpfr4=4.0.1-2
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.dsc' mpfr4_4.0.1-2.dsc 1972 SHA256:7a53d19bc8d2e2694f879770ccda1b18948c34a35a1704431fb557381c89eb4f
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1.orig.tar.xz' mpfr4_4.0.1.orig.tar.xz 1412692 SHA256:67874a60826303ee2fb6affc6dc0ddd3e749e9bfcb4c8655e3953d0458a6e16e
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.debian.tar.xz' mpfr4_4.0.1-2.debian.tar.xz 10500 SHA256:cf9737b5e570e69d8fd09afafdc06ebc990d24e65c3e207e3b7d58a60317eb95
+'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.dsc' mpfr4_4.0.1-2.dsc 1972 SHA256:7a53d19bc8d2e2694f879770ccda1b18948c34a35a1704431fb557381c89eb4f
+'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.0.1.orig.tar.xz' mpfr4_4.0.1.orig.tar.xz 1412692 SHA256:67874a60826303ee2fb6affc6dc0ddd3e749e9bfcb4c8655e3953d0458a6e16e
+'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.debian.tar.xz' mpfr4_4.0.1-2.debian.tar.xz 10500 SHA256:cf9737b5e570e69d8fd09afafdc06ebc990d24e65c3e207e3b7d58a60317eb95
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mpfr4/4.0.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mpfr4/4.0.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpfr4/4.0.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.1+20181013-1`
 
@@ -3112,20 +3092,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.8
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.8.dsc' pam_1.1.8-3.8.dsc 2572 SHA256:1c53c38c71bdba71a5d1e5767cbae505e176b9220e0c07e078309493055c753f
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.8.diff.gz' pam_1.1.8-3.8.diff.gz 138822 SHA256:10e5623f5433460ea05da9cdcb604494a847b4b759102b83dc11e4cf43d59e48
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.1.8-3.8/
 
-- https://sources.debian.net/src/pam/1.1.8-3.8/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.1.8-3.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.1.8-3.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.42.4-6`
 
