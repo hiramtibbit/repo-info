@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:05761229f807fdda90d7be6d4140511409e7bff9d2531b1719fc9f8a499555b7`
-- Created: `2018-12-29T09:14:49.894805892Z`
-- Virtual Size: ~ 406.37 Mb  
+- Image ID: `sha256:d00f13d994a9dfb1b7ac56388bc7ef276a25f8faaae0addf231a9d24d6ddfc2f`
+- Created: `2019-01-15T00:52:32.956065319Z`
+- Virtual Size: ~ 406.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp26`
+  - `JAVA_VERSION=1.8.0_sr5fp27`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -811,15 +811,15 @@ $ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
 ```
 
-### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
+### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.1`
 
 Binary Packages:
 
-- `krb5-locales=1.13.2+dfsg-5ubuntu2`
-- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2`
-- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2`
-- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2`
-- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2`
+- `krb5-locales=1.13.2+dfsg-5ubuntu2.1`
+- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -828,10 +828,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.dsc' krb5_1.13.2+dfsg-5ubuntu2.dsc 3498 SHA256:d165078db6908d38fad615acdc8e1b94e71daad83667a93f5f26deba05274f6f
+$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.dsc' krb5_1.13.2+dfsg-5ubuntu2.1.dsc 3520 SHA256:d32e3a18bd00e7446c67d28c4c70bb96ec80da9b0e9215d4d8531100e1f91952
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.debian.tar.xz 103168 SHA256:8be99019ff85c67452d1dd7c6e9eaa45b73ed09fd55993d4a6c9bcb6e6a96c6c
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz 113600 SHA256:2536a14f7a186c9076d8fb8053be04842300ab000046b4d53c8fa8c9959f1efd
 ```
 
 ### `dpkg` source package: `libcap2=1:2.24-12`
