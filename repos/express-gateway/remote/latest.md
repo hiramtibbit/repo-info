@@ -1,7 +1,7 @@
 ## `express-gateway:latest`
 
 ```console
-$ docker pull express-gateway@sha256:e081a2bf7b2f8b72630e79be657929ad722c42c8148f1a489c651ed85e046553
+$ docker pull express-gateway@sha256:99cb5f1d83c465bcca5e6e304de4c5c26f4b109b4a25b320268885d44302b0c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -177,14 +177,14 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 ### `express-gateway:latest` - linux; 386
 
 ```console
-$ docker pull express-gateway@sha256:f9fd85db3628ad09a9bf1c85f79c0420e456f9392a169cd7f71f3af0ebedcac2
+$ docker pull express-gateway@sha256:a606af7e95b1acae5b5c8fdc4b38c0bea19c8d9262de734947ecefc043144b72
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33161225 bytes)**  
+-	Total Size: **33.2 MB (33161217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:519283eaeadc703eb016daf4d6fd5ec70ccff7be1d93ee4385e6f99ca9822f2b`
+-	Image ID: `sha256:55fb0957a1f0ad0de057307a4ffc04ea55e15e42b317c84f824758343b6c49ce`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","-e","require('express-gateway')().run();"]`
 
@@ -224,11 +224,11 @@ ENV CHOKIDAR_USEPOLLING=true
 VOLUME [/var/lib/eg]
 # Sat, 12 Jan 2019 12:11:22 GMT
 EXPOSE 8080 9876
-# Sat, 12 Jan 2019 12:11:22 GMT
-COPY file:4d2db412cc13154fc9f72e4ff7fe06336faae86dc73605dfff63caa1fc73efad in /usr/local/bin/ 
-# Sat, 12 Jan 2019 12:11:23 GMT
+# Wed, 16 Jan 2019 11:38:21 GMT
+COPY file:9481e65ab3ccc3b910b8af90d3df04d9f70030b8f8a0cfcc390840936290aaab in /usr/local/bin/ 
+# Wed, 16 Jan 2019 11:38:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 12 Jan 2019 12:11:23 GMT
+# Wed, 16 Jan 2019 11:38:22 GMT
 CMD ["node" "-e" "require('express-gateway')().run();"]
 ```
 
@@ -253,9 +253,9 @@ CMD ["node" "-e" "require('express-gateway')().run();"]
 		Last Modified: Sat, 12 Jan 2019 12:11:35 GMT  
 		Size: 9.3 MB (9250614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52cc0c5924e6515aecdd1f5b0cfef28030465b51137da2895e51c88b4a6b81c4`  
-		Last Modified: Sat, 12 Jan 2019 12:11:31 GMT  
-		Size: 501.0 B  
+	-	`sha256:957722e8b9b7e62e88c0636d1fde615a372a43bf68d574f69cb71198b7c63e47`  
+		Last Modified: Wed, 16 Jan 2019 11:38:28 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `express-gateway:latest` - linux; ppc64le
