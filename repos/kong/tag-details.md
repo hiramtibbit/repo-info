@@ -34,6 +34,9 @@
 -	[`kong:1.0.0`](#kong100)
 -	[`kong:1.0.0-alpine`](#kong100-alpine)
 -	[`kong:1.0.0-centos`](#kong100-centos)
+-	[`kong:1.0.1`](#kong101)
+-	[`kong:1.0.1-alpine`](#kong101-alpine)
+-	[`kong:1.0.1-centos`](#kong101-centos)
 -	[`kong:1.0-centos`](#kong10-centos)
 -	[`kong:latest`](#konglatest)
 
@@ -2052,6 +2055,18 @@ CMD ["kong" "docker-start"]
 		Last Modified: Tue, 08 Jan 2019 00:21:36 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kong:1.0.1`
+
+**does not exist** (yet?)
+
+## `kong:1.0.1-alpine`
+
+**does not exist** (yet?)
+
+## `kong:1.0.1-centos`
+
+**does not exist** (yet?)
 
 ## `kong:1.0-centos`
 
