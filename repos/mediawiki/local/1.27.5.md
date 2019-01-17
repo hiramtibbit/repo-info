@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22b132f6629b01b117447536dcda5444f2408fcece47986177529100b2c665e7`
-- Created: `2018-12-29T17:15:18.92858226Z`
-- Virtual Size: ~ 654.49 Mb  
+- Image ID: `sha256:1cdc3c75f135b0a63f78d2b62b8240b6a1045a529800a778a98b32cd521cc3b9`
+- Created: `2019-01-14T22:50:07.210974463Z`
+- Virtual Size: ~ 656.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -20,11 +20,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.33`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.33.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.33.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=ab8c5be6e32b1f8d032909dedaaaa4bbb1a209e519abb01a52ce3914f9a13d96`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.26`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.26.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.26.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=10b7ae634c12852fae52a22dc2262e5f12418ad59fd20da2d00d71a212235d31`
   - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.27`
   - `MEDIAWIKI_BRANCH=REL1_27`
