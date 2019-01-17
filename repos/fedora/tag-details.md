@@ -255,7 +255,7 @@ ADD file:02bac05aecaa0e1c9f4258744de3c784c950f6162e995bbfb90ffcb2373e8e07 in /
 ## `fedora:28`
 
 ```console
-$ docker pull fedora@sha256:7be5b577b561a538ee04b390511e94730daeb3d9d605818e196804c5cb221891
+$ docker pull fedora@sha256:f743a397f8729270e564950b9e6f458026375d3b7d2a8c98f016ae97a8850da6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -326,28 +326,31 @@ ADD file:6ca93a01189eb9e99ba45e94ba4521e77ba353cfc189134792ceb4475f39a142 in /
 ### `fedora:28` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:e488079e4ada0b9dfff4b8a6b50b0b709510bdc7bba8d14045f8a598c8657b92
+$ docker pull fedora@sha256:ea570e0e8005173d7084e8e02f41d1bd4e6fdf4984d89722fa2d37778087b8dc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88858733 bytes)**  
+-	Total Size: **88.9 MB (88883085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b0e1cd87bfee968412173ed0699862214a9300d13d508225da01fdbee81f907`
+-	Image ID: `sha256:776e68106840ac2f2453be4a12ce11521dc56161222034fb2271f4755a8c0180`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Jul 2017 05:00:22 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Fri, 15 Sep 2017 23:26:49 GMT
+# Thu, 17 Jan 2019 09:42:52 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Thu, 17 Jan 2019 09:43:54 GMT
 ENV DISTTAG=f28container FGC=f28 FBR=f28
-# Tue, 18 Dec 2018 09:50:01 GMT
-ADD file:823e3b547d3dc7fcf95a917d5c71c808b108c34ac16fccf8259a94dfc4cdd06a in / 
+# Thu, 17 Jan 2019 09:44:14 GMT
+ADD file:30d8ea5cb75532323df5cc604b0c079e373541086445ac48c1cad3ffd30929f6 in / 
+# Thu, 17 Jan 2019 09:44:16 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:6c5e8e0faeaa71342b411acb78f2c0df9fb1bba9bac034c6d7b54ee4e3dbb03e`  
-		Last Modified: Tue, 18 Dec 2018 09:53:49 GMT  
-		Size: 88.9 MB (88858733 bytes)  
+	-	`sha256:c4a218912c373bd27b3a8119edad3513643a05070961aca102e5d4b8566a6ce5`  
+		Last Modified: Thu, 17 Jan 2019 09:46:09 GMT  
+		Size: 88.9 MB (88883085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:28` - linux; ppc64le
@@ -410,7 +413,7 @@ ADD file:3bf5bfaa49f49f284ec9a4319d3275a7b4b1a458b9cc65262fe195caf4e28de0 in /
 ## `fedora:29`
 
 ```console
-$ docker pull fedora@sha256:7285c63e6edb4119d2b83a74d83316093ff343d217564983570e14c21ba258ae
+$ docker pull fedora@sha256:1e57463a7abc6d6e44024f4dd1a5eb62a62ba9dd6427c124b40577a2f56a03b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -481,28 +484,31 @@ ADD file:06b3ee3612f2cca49698cb7eaa4ffa4f11a39ff4b2d102e7795c462a3a669133 in /
 ### `fedora:29` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:a9c286cf2cc0bb7e9d84bc1f0f3842d6d58b0ab5a4faba3f6a87273e28b84815
+$ docker pull fedora@sha256:1f5208e0de03b210bc003a3ae24c0b7678f16a4b0aaa069c7b24f877be62f17e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88864208 bytes)**  
+-	Total Size: **88.9 MB (88850541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78f25aa8d19dcdc47efc0126469a48bc5f012b26ebb15d594afaef6158e9bdbe`
+-	Image ID: `sha256:8b38e3af72374ce4472013699bb4ba8a49123b22cf29ecc10054b5f08418d9ac`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Jul 2017 05:00:22 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Wed, 22 Aug 2018 08:48:10 GMT
+# Thu, 17 Jan 2019 09:42:52 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Thu, 17 Jan 2019 09:44:47 GMT
 ENV DISTTAG=f29container FGC=f29 FBR=f29
-# Thu, 10 Jan 2019 10:08:15 GMT
-ADD file:0b5b9f777f491369d18671cc31ddde3c6e7ad5599737aba17ada18576623ee08 in / 
+# Thu, 17 Jan 2019 09:45:07 GMT
+ADD file:d4638b4d92c8dd2e313d462618d9b9321d3c2074137c0d8314ee0cd43f9f426d in / 
+# Thu, 17 Jan 2019 09:45:08 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:ccfd00ff8b53c3f7ec14074c84c368ce40723b6bbcb462e5f933b87258b51efb`  
-		Last Modified: Thu, 10 Jan 2019 10:09:52 GMT  
-		Size: 88.9 MB (88864208 bytes)  
+	-	`sha256:c4c54f236fdaadeeb217fea5b44fb2a49adc38c1b83f0df1533270a2d1a909f5`  
+		Last Modified: Thu, 17 Jan 2019 09:46:52 GMT  
+		Size: 88.9 MB (88850541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:29` - linux; ppc64le
@@ -565,7 +571,7 @@ ADD file:ee8e102989d74d0fcafa5722c1bb2697ef619227a245fb7e27fd362ea818aa7c in /
 ## `fedora:30`
 
 ```console
-$ docker pull fedora@sha256:5b0d45489c1d3073aa2a68e2f61caffa06e3bf0032ce40b0f86a9c33f377518b
+$ docker pull fedora@sha256:95024b6443ea436e5c01e3ee11170d5352d092faac0b83b5559fdb28fa428c7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -606,22 +612,25 @@ CMD ["/bin/bash"]
 ### `fedora:30` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:5ea92c6bc2ba259d6dffba59ea6d185409662c85e1ddafd0a374f694322e98f7
+$ docker pull fedora@sha256:631eb36450a6c463c59608354f1cb30a26df8e5e78587394f903867047ace593
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **89.0 MB (88993299 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c897211a423a9090dd302c124bfa58268602a74903bb9d4211de87e49c68a3c`
+-	Image ID: `sha256:61d5c01995405591ec5a07b2f47cc062e219c1e16df1ef617506e07f99f8f784`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Jul 2017 05:00:22 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Sat, 08 Sep 2018 08:58:46 GMT
+# Thu, 17 Jan 2019 09:42:52 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Thu, 17 Jan 2019 09:42:53 GMT
 ENV DISTTAG=f30container FGC=f30 FBR=f30
-# Thu, 10 Jan 2019 10:07:15 GMT
+# Thu, 17 Jan 2019 09:43:15 GMT
 ADD file:5e5cc37e2b9fbf0f6dd71c546d6741b4e63ac6a1b350b06ae5bab9aade32f0d5 in / 
+# Thu, 17 Jan 2019 09:43:16 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
@@ -633,7 +642,7 @@ ADD file:5e5cc37e2b9fbf0f6dd71c546d6741b4e63ac6a1b350b06ae5bab9aade32f0d5 in /
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:7285c63e6edb4119d2b83a74d83316093ff343d217564983570e14c21ba258ae
+$ docker pull fedora@sha256:1e57463a7abc6d6e44024f4dd1a5eb62a62ba9dd6427c124b40577a2f56a03b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -704,28 +713,31 @@ ADD file:06b3ee3612f2cca49698cb7eaa4ffa4f11a39ff4b2d102e7795c462a3a669133 in /
 ### `fedora:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:a9c286cf2cc0bb7e9d84bc1f0f3842d6d58b0ab5a4faba3f6a87273e28b84815
+$ docker pull fedora@sha256:1f5208e0de03b210bc003a3ae24c0b7678f16a4b0aaa069c7b24f877be62f17e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88864208 bytes)**  
+-	Total Size: **88.9 MB (88850541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78f25aa8d19dcdc47efc0126469a48bc5f012b26ebb15d594afaef6158e9bdbe`
+-	Image ID: `sha256:8b38e3af72374ce4472013699bb4ba8a49123b22cf29ecc10054b5f08418d9ac`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Jul 2017 05:00:22 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Wed, 22 Aug 2018 08:48:10 GMT
+# Thu, 17 Jan 2019 09:42:52 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Thu, 17 Jan 2019 09:44:47 GMT
 ENV DISTTAG=f29container FGC=f29 FBR=f29
-# Thu, 10 Jan 2019 10:08:15 GMT
-ADD file:0b5b9f777f491369d18671cc31ddde3c6e7ad5599737aba17ada18576623ee08 in / 
+# Thu, 17 Jan 2019 09:45:07 GMT
+ADD file:d4638b4d92c8dd2e313d462618d9b9321d3c2074137c0d8314ee0cd43f9f426d in / 
+# Thu, 17 Jan 2019 09:45:08 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:ccfd00ff8b53c3f7ec14074c84c368ce40723b6bbcb462e5f933b87258b51efb`  
-		Last Modified: Thu, 10 Jan 2019 10:09:52 GMT  
-		Size: 88.9 MB (88864208 bytes)  
+	-	`sha256:c4c54f236fdaadeeb217fea5b44fb2a49adc38c1b83f0df1533270a2d1a909f5`  
+		Last Modified: Thu, 17 Jan 2019 09:46:52 GMT  
+		Size: 88.9 MB (88850541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; ppc64le
@@ -788,7 +800,7 @@ ADD file:ee8e102989d74d0fcafa5722c1bb2697ef619227a245fb7e27fd362ea818aa7c in /
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:5b0d45489c1d3073aa2a68e2f61caffa06e3bf0032ce40b0f86a9c33f377518b
+$ docker pull fedora@sha256:95024b6443ea436e5c01e3ee11170d5352d092faac0b83b5559fdb28fa428c7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -829,22 +841,25 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:5ea92c6bc2ba259d6dffba59ea6d185409662c85e1ddafd0a374f694322e98f7
+$ docker pull fedora@sha256:631eb36450a6c463c59608354f1cb30a26df8e5e78587394f903867047ace593
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **89.0 MB (88993299 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c897211a423a9090dd302c124bfa58268602a74903bb9d4211de87e49c68a3c`
+-	Image ID: `sha256:61d5c01995405591ec5a07b2f47cc062e219c1e16df1ef617506e07f99f8f784`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Jul 2017 05:00:22 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Sat, 08 Sep 2018 08:58:46 GMT
+# Thu, 17 Jan 2019 09:42:52 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Thu, 17 Jan 2019 09:42:53 GMT
 ENV DISTTAG=f30container FGC=f30 FBR=f30
-# Thu, 10 Jan 2019 10:07:15 GMT
+# Thu, 17 Jan 2019 09:43:15 GMT
 ADD file:5e5cc37e2b9fbf0f6dd71c546d6741b4e63ac6a1b350b06ae5bab9aade32f0d5 in / 
+# Thu, 17 Jan 2019 09:43:16 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
