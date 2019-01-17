@@ -1,7 +1,7 @@
 ## `flink:hadoop26`
 
 ```console
-$ docker pull flink@sha256:862ac26be27204fdaa15565e086f62b05055d87f3212b02c81d0b521f6aa3e8b
+$ docker pull flink@sha256:f9eb0786dc1a2902610cfd8eef7e43b7417e398f68a637148e55ff79ee9c2429
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull flink@sha256:862ac26be27204fdaa15565e086f62b05055d87f3212b02c81d0b
 ### `flink:hadoop26` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:52d2ec5f36909a2bb6c5c63170412e7edeead1ddf999f6b098804f3d06271211
+$ docker pull flink@sha256:9f841553044f18094f133a121ed05d09073e02180d01aee0726937bdbba5c0fe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **464.9 MB (464898167 bytes)**  
+-	Total Size: **464.9 MB (464898208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98bfa8b84f0155b2835911fe1f18f561d4fdad755b906afd45eea5c5df2b10ec`
+-	Image ID: `sha256:63d3339210bcef0958ac203991b9de0d88239d60173c2c9a04bffe20582276e2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -76,13 +76,13 @@ ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename
 COPY file:48bb6014c3e97895005a1862074377ac24cf0d91f0034129ec7f3c4dd3e96a38 in /KEYS 
 # Tue, 01 Jan 2019 00:28:13 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --batch --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   gpgconf --kill all;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Tue, 01 Jan 2019 00:28:13 GMT
-COPY file:32c6488d6beeaf64fa93d8e2829a44e98f034c72595380c30670d97807b6f9b0 in / 
-# Tue, 01 Jan 2019 00:28:13 GMT
+# Wed, 16 Jan 2019 23:20:27 GMT
+COPY file:82b73e728dc4710cf6b0b2a4c3b0e39f061e57bb5a799dfaca9133014e5d2c63 in / 
+# Wed, 16 Jan 2019 23:20:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 01 Jan 2019 00:28:13 GMT
+# Wed, 16 Jan 2019 23:20:27 GMT
 EXPOSE 6123 8081
-# Tue, 01 Jan 2019 00:28:13 GMT
+# Wed, 16 Jan 2019 23:20:27 GMT
 CMD ["help"]
 ```
 
@@ -139,9 +139,9 @@ CMD ["help"]
 		Last Modified: Tue, 01 Jan 2019 00:42:11 GMT  
 		Size: 280.1 MB (280126518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403c26f9b3a10c6f1236a68f77992141aaeaa5c7e4a7a0dcaba0be5b85d1609e`  
-		Last Modified: Tue, 01 Jan 2019 00:41:55 GMT  
-		Size: 1.1 KB (1100 bytes)  
+	-	`sha256:b54da25e6a11bf3fa96ac4104909cf66211fc712bfbceeae2627069146586787`  
+		Last Modified: Wed, 16 Jan 2019 23:22:49 GMT  
+		Size: 1.1 KB (1141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:hadoop26` - linux; arm variant v5
