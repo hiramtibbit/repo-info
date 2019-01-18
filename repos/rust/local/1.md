@@ -1,9 +1,9 @@
-# `rust:1.31.1-stretch`
+# `rust:1.32.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f61eb35ad91067deeaf65056337775eb57cfc3ec02fdf45c667526750b61a30`
-- Created: `2019-01-09T05:04:57.638574149Z`
+- Image ID: `sha256:c338f2d87cbdd6d2d804995ba66c9145bc783c08897243db71e7281d5d2c4c7b`
+- Created: `2019-01-17T23:25:30.273079698Z`
 - Virtual Size: ~ 1.64 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.31.1`
+  - `RUST_VERSION=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 
