@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4249900f2d51a11ed17c098d26c8ca67d3b005c90e8aff889ac496cf662cec0e`
-- Created: `2018-12-28T23:51:07.398241404Z`
-- Virtual Size: ~ 360.28 Mb  
+- Image ID: `sha256:2d76c0697061734385f650481ae7df0fc71294ccd5f37cf11ed037833ec92baa`
+- Created: `2019-01-15T00:23:40.555029098Z`
+- Virtual Size: ~ 360.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp26`
+  - `JAVA_VERSION=1.8.0_sr5fp27`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
 
