@@ -912,9 +912,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.dsc' cups_2.1.3-4ubuntu0.6.dsc 3751 SHA256:eebc7c5247c51130068f62ddb04c1ffd0e11b719bf3129ec1ebfacd8d87d1882
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.debian.tar.xz' cups_2.1.3-4ubuntu0.6.debian.tar.xz 352564 SHA256:f8b67a29997902041a6b831e48e16d30225707dd68f3717592ced8ccb1487d12
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.dsc' cups_2.1.3-4ubuntu0.6.dsc 3751 SHA256:eebc7c5247c51130068f62ddb04c1ffd0e11b719bf3129ec1ebfacd8d87d1882
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.6.debian.tar.xz' cups_2.1.3-4ubuntu0.6.debian.tar.xz 352564 SHA256:f8b67a29997902041a6b831e48e16d30225707dd68f3717592ced8ccb1487d12
 ```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
@@ -2606,14 +2606,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-11ubuntu0.16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.4.dsc' libarchive_3.1.2-11ubuntu0.16.04.4.dsc 2422 SHA256:cdc82d1bcd2d033eb201ffade384244ab78a0feb67e7c8333894a2113247172b
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.4.debian.tar.xz' libarchive_3.1.2-11ubuntu0.16.04.4.debian.tar.xz 41728 SHA256:e0ac2edc61208f547fdd525843884e4ee721e0cfc985f9be1871ecc68faaadf0
-```
 
 ### `dpkg` source package: `libassuan=2.4.2-2`
 
@@ -5431,14 +5426,9 @@ Licenses: (parsed from: `/usr/share/doc/libpolkit-agent-1-0/copyright`, `/usr/sh
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris policykit-1=0.105-14.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/policykit-1/policykit-1_0.105-14.1ubuntu0.1.dsc' policykit-1_0.105-14.1ubuntu0.1.dsc 3024 SHA256:696ed26c81ee4df8e9b22c997906dbb14847ad69cb35702563e2464e852a0957
-'http://archive.ubuntu.com/ubuntu/pool/main/p/policykit-1/policykit-1_0.105.orig.tar.gz' policykit-1_0.105.orig.tar.gz 1431080 SHA256:8fdc7cc8ba4750fcce1a4db9daa759c12afebc7901237e1c993c38f08985e1df
-'http://archive.ubuntu.com/ubuntu/pool/main/p/policykit-1/policykit-1_0.105-14.1ubuntu0.1.debian.tar.xz' policykit-1_0.105-14.1ubuntu0.1.debian.tar.xz 45428 SHA256:4dcf37d215ac0216eaa573651881d3d1c40861d8e1b21478434afd552ed9de14
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
 

@@ -1687,14 +1687,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-11ubuntu0.16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.4.dsc' libarchive_3.1.2-11ubuntu0.16.04.4.dsc 2422 SHA256:cdc82d1bcd2d033eb201ffade384244ab78a0feb67e7c8333894a2113247172b
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.4.debian.tar.xz' libarchive_3.1.2-11ubuntu0.16.04.4.debian.tar.xz 41728 SHA256:e0ac2edc61208f547fdd525843884e4ee721e0cfc985f9be1871ecc68faaadf0
-```
 
 ### `dpkg` source package: `libassuan=2.4.2-2`
 

@@ -888,10 +888,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.dsc' cups_2.2.7-1ubuntu2.2.dsc 3647 SHA256:d95deaac3ea59deece22aeba7e1ab8abb8e91fd77852b226d27e0aee723eaa9f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.debian.tar.xz' cups_2.2.7-1ubuntu2.2.debian.tar.xz 358768 SHA256:d14f8476df1dfc3552637dc1be7e37bbed4ee9dd1da6b4d03f6cd1b379c00a5f
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.dsc' cups_2.2.7-1ubuntu2.2.dsc 3647 SHA256:d95deaac3ea59deece22aeba7e1ab8abb8e91fd77852b226d27e0aee723eaa9f
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
+'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.2.debian.tar.xz' cups_2.2.7-1ubuntu2.2.debian.tar.xz 358768 SHA256:d14f8476df1dfc3552637dc1be7e37bbed4ee9dd1da6b4d03f6cd1b379c00a5f
 ```
 
 ### `dpkg` source package: `curl=7.58.0-2ubuntu3.5`
@@ -2544,14 +2544,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.2.2-3.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.1.dsc' libarchive_3.2.2-3.1ubuntu0.1.dsc 2457 SHA256:39c8364fbdb41c6e029457167daeac3e7e8a35412404dc9feefdf21ed191d1f8
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.1.debian.tar.xz' libarchive_3.2.2-3.1ubuntu0.1.debian.tar.xz 18020 SHA256:779d3b235fe5cb42dd5c7cb49bba59ed8d9b3857ac020bcf9b567fcb35e2569d
-```
 
 ### `dpkg` source package: `libassuan=2.5.1-2`
 
@@ -8167,14 +8162,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.2.dsc' util-linux_2.31.1-0.4ubuntu3.2.dsc 4152 SHA256:a311d5b5c9b5c85f11ba1ff86512607f4615a1950ef835219e8765654cb6174a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.2.debian.tar.xz 98512 SHA256:e026d029578f200c4f8cefbdba65184f12adbd856ed873673e09cdaaf7486288
-```
 
 ### `dpkg` source package: `wayland=1.14.0-2`
 
