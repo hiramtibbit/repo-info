@@ -929,20 +929,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.34-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34-2.dsc' file_5.34-2.dsc 1952 SHA256:b42335616c2aee92f9fb4d57dbb7ad3e14ab7a1d7202991865b804d20f714927
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34.orig.tar.xz' file_5.34.orig.tar.xz 645236 SHA256:b83618b2b1e269d65a28b068460add53a690e53fa11c53174df293bb04d231b2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34-2.debian.tar.xz' file_5.34-2.debian.tar.xz 34204 SHA256:6e5df002611521ee541ea62acbfafa7e53384ae5702156205549f98aca8a8df7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.34-2/
 
-- https://sources.debian.net/src/file/1:5.34-2/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.34-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.34-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20181018-1`
 

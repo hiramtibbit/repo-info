@@ -350,20 +350,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=4.4.18-3.1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-3.1.dsc' bash_4.4.18-3.1.dsc 2309 SHA256:67fc85e76d8901fa44342aa0c61722dbf0667eea8de240ba6067636ab07236f8
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18.orig.tar.xz' bash_4.4.18.orig.tar.xz 5036272 SHA256:704143a7170041ac9f1025455d6d23ff0f353711a3dc557b47d6e6322f24cd02
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.18-3.1.debian.tar.xz' bash_4.4.18-3.1.debian.tar.xz 60632 SHA256:68a6aaaa16c0b975176d421f38e7c5fb746f7a3a262cb699bf5a92e4fbcfba39
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/4.4.18-3.1/
 
-- https://sources.debian.net/src/bash/4.4.18-3.1/ (for browsing the source)
-- https://sources.debian.net/src/bash/4.4.18-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/4.4.18-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.31.1-11`
 
@@ -544,20 +537,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.62.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0-1.dsc' curl_7.62.0-1.dsc 2687 SHA256:9a95b882b900fa8c0f25b03befd8af3a2c6d4cdfe0ea72e3accfe9b1153f2aec
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0.orig.tar.gz' curl_7.62.0.orig.tar.gz 4045208 SHA256:55ccd5b5209f8cc53d4250e2a9fd87e6f67dd323ae8bd7d06b072cfcbb7836cb
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.62.0-1.debian.tar.xz' curl_7.62.0-1.debian.tar.xz 28764 SHA256:6c3574ad00b4d5811339d02275a75420263698b03d5d5bc39bfc7eece1c219bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.62.0-1/
 
-- https://sources.debian.net/src/curl/7.62.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.62.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.62.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~rc8-1`
 
@@ -597,20 +583,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-4
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-4.dsc' dash_0.5.10.2-4.dsc 1756 SHA256:b1936dc22283488866219d71593973e7c85997205d44262c8c5a286c30c7f5fa
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-4.debian.tar.xz' dash_0.5.10.2-4.debian.tar.xz 41808 SHA256:e3875cf8817a60fe794041aa4f19e180cda6a02197c05cfd3c8a4340ea966c41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-4/
 
-- https://sources.debian.net/src/dash/0.5.10.2-4/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.1`
 
@@ -672,19 +651,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.69
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.69.dsc' debconf_1.5.69.dsc 2047 SHA256:d1d83db20bac5c611fa9c74091d193f8d0e30cdf6afec9395354e6cc8ff8aac4
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.69.tar.xz' debconf_1.5.69.tar.xz 570688 SHA256:728b0df9ba36ee2e090b5be9a79ebb9ff55605e38bd6780b26462a8c8bd0f646
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.69/
 
-- https://sources.debian.net/src/debconf/1.5.69/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.69/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.69/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2018.1`
 
@@ -935,20 +908,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.34-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34-2.dsc' file_5.34-2.dsc 1952 SHA256:b42335616c2aee92f9fb4d57dbb7ad3e14ab7a1d7202991865b804d20f714927
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34.orig.tar.xz' file_5.34.orig.tar.xz 645236 SHA256:b83618b2b1e269d65a28b068460add53a690e53fa11c53174df293bb04d231b2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.34-2.debian.tar.xz' file_5.34-2.debian.tar.xz 34204 SHA256:6e5df002611521ee541ea62acbfafa7e53384ae5702156205549f98aca8a8df7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.34-2/
 
-- https://sources.debian.net/src/file/1:5.34-2/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.34-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.34-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20181018-1`
 
@@ -1591,20 +1557,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.9-2.1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9-2.1.dsc' gzip_1.9-2.1.dsc 1912 SHA256:ace3096bd2c9d47dc347dc08f9089f55389bf830587db7a21278d6a7c474f50b
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9.orig.tar.gz' gzip_1.9.orig.tar.gz 1181937 SHA256:5d2d3a3432ef32f24cdb060d278834507b481a75adeca18850c73592f778f6ad
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.9-2.1.debian.tar.xz' gzip_1.9-2.1.debian.tar.xz 11920 SHA256:29993b7057b60729cf3fa929815a3483d63ae4ccfff01554e74099a6d0bec28c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.9-2.1/
 
-- https://sources.debian.net/src/gzip/1.9-2.1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.9-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.9-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `harfbuzz=2.3.0-1`
 
@@ -2656,20 +2615,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.36-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.dsc' libpng1.6_1.6.36-2.dsc 2197 SHA256:914cac423b0527aaaee7ab124326c019db1506afaf6194fdbb4a22f5afb5beb2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36.orig.tar.xz' libpng1.6_1.6.36.orig.tar.xz 1012544 SHA256:eceb924c1fa6b79172fdfd008d335f0e59172a86a66481e09d4089df872aa319
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.36-2.debian.tar.xz' libpng1.6_1.6.36-2.debian.tar.xz 36908 SHA256:c5c5aaf71183ea898c3ed8acb591653766c49c653ae9c31844258d0e06ed7dc4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.36-2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.36-2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.36-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.36-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.20.2-2`
 
@@ -3010,21 +2962,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-6
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-6.dsc' libtool_2.4.6-6.dsc 2360 SHA256:874d7ae1c2e86b1ed9f535bf5c2bb0b1182f9b00cb954777437b878b29960888
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-6.debian.tar.xz' libtool_2.4.6-6.debian.tar.xz 48108 SHA256:082850884a93f7cd84d253eac097164f7bd0e93e10522e5e8e006ddf37af53c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.6-6/
 
-- https://sources.debian.net/src/libtool/2.4.6-6/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.6-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.6-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=0.9.10-1`
 
@@ -3742,20 +3686,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.0.1-2
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.dsc' mpfr4_4.0.1-2.dsc 1972 SHA256:7a53d19bc8d2e2694f879770ccda1b18948c34a35a1704431fb557381c89eb4f
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1.orig.tar.xz' mpfr4_4.0.1.orig.tar.xz 1412692 SHA256:67874a60826303ee2fb6affc6dc0ddd3e749e9bfcb4c8655e3953d0458a6e16e
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.0.1-2.debian.tar.xz' mpfr4_4.0.1-2.debian.tar.xz 10500 SHA256:cf9737b5e570e69d8fd09afafdc06ebc990d24e65c3e207e3b7d58a60317eb95
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpfr4/4.0.1-2/
 
-- https://sources.debian.net/src/mpfr4/4.0.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mpfr4/4.0.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpfr4/4.0.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mysql-defaults=1.0.5`
 
