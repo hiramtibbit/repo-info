@@ -1,17 +1,17 @@
-# `node:11.6.0-stretch`
+# `node:11.7.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:72ff1a4450d95dfd454a2f11606390860e60b9346fc9e06bb3ff7ed333c92fdf`
-- Created: `2019-01-09T02:03:39.87092848Z`
-- Virtual Size: ~ 898.12 Mb  
+- Image ID: `sha256:3223c9cf205b61165109b06fb5d358810b3fb25d7ea0ed816b8cd8520d4aae88`
+- Created: `2019-01-19T00:49:33.270364318Z`
+- Virtual Size: ~ 898.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=11.6.0`
-  - `YARN_VERSION=1.12.3`
+  - `NODE_VERSION=11.7.0`
+  - `YARN_VERSION=1.13.0`
 
 ## `dpkg` (`.deb`-based packages)
 
