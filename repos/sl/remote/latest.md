@@ -1,7 +1,7 @@
 ## `sl:latest`
 
 ```console
-$ docker pull sl@sha256:66daa4f688520e0e597e6d187e21141b26dd9ab9c4b4983e92e9754d147c84b0
+$ docker pull sl@sha256:a45a41cf3b8f73cff2028d5b4f3d62dc62198836b2608fedf5a68c4effba562d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull sl@sha256:66daa4f688520e0e597e6d187e21141b26dd9ab9c4b4983e92e9754d
 ### `sl:latest` - linux; amd64
 
 ```console
-$ docker pull sl@sha256:cec8fc9e9a81fd6bcc9c62106ab029f6777322654491a6c8926d1b1fb5e27e67
+$ docker pull sl@sha256:f7fe097c46970fb22bed9a6b9fb13ed7a47b7bf79d8f215f8db04615f8214510
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.9 MB (63895358 bytes)**  
+-	Total Size: **63.9 MB (63898146 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a75220116145672087beffacf0fe70a8e7892d731b96d64e2822792e5309de6`
+-	Image ID: `sha256:9b50a39b236adfe8b67cac1d80de8ac62ca5e6721ece7e4187ebdffa6b9c9e5c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 04 Dec 2018 01:15:16 GMT
-ADD file:ff029f841bbdb314620c1e457486671a9383b106469af9331e68f0d9cc35ce2b in / 
-# Tue, 04 Dec 2018 01:15:16 GMT
-LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20181203
-# Tue, 04 Dec 2018 01:15:16 GMT
+# Sat, 19 Jan 2019 00:22:17 GMT
+ADD file:746b291b424ed3c70e710c2e9deaee3b911173f3c0cdb4108c644723046fbf11 in / 
+# Sat, 19 Jan 2019 00:22:17 GMT
+LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20190118
+# Sat, 19 Jan 2019 00:22:17 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e9429c74b7fbcf7a68cc2cb70a4b5b5066825fde0ed37daac14bc02d56df4d3a`  
-		Last Modified: Tue, 04 Dec 2018 01:16:05 GMT  
-		Size: 63.9 MB (63895358 bytes)  
+	-	`sha256:a472bbc9ec23ae10d19c45fad432fd7ba91e26eb7df118f516e3d023242f46a5`  
+		Last Modified: Fri, 18 Jan 2019 20:16:08 GMT  
+		Size: 63.9 MB (63898146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
