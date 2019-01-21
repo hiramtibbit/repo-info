@@ -1,7 +1,7 @@
 ## `nextcloud:stable`
 
 ```console
-$ docker pull nextcloud@sha256:e9e32c70fc62e1bdda1d5c0d2f26c42ad434eb209df5790026b2648c78a2c4bc
+$ docker pull nextcloud@sha256:e3df2c4579316f749467481bee8f402865c9927b62a1cf334a713b72ed929126
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull nextcloud@sha256:e9e32c70fc62e1bdda1d5c0d2f26c42ad434eb209df579002
 ### `nextcloud:stable` - linux; amd64
 
 ```console
-$ docker pull nextcloud@sha256:4a61fbfbb9ae6622fe4463224cdef8b63579ebc157cdc37a2a86123be6407721
+$ docker pull nextcloud@sha256:2cd8497734edef2f27f34ade97417fb6ab05a50232db5852488d07dd2209e8fd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.7 MB (188702421 bytes)**  
+-	Total Size: **190.3 MB (190257657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7faa0527cc5594a127a181191f0ca12f52e0d19a9c08323f198066c29e4a291f`
+-	Image ID: `sha256:f13dc9c4905c59afe3d19d268608cb00d18dd8b55e4adc34e3a724d547a754cb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -102,17 +102,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 01:24:48 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 01:35:04 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 01:35:28 GMT
+# Thu, 17 Jan 2019 23:21:14 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Thu, 17 Jan 2019 23:21:46 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 01:35:28 GMT
+# Thu, 17 Jan 2019 23:21:46 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 01:35:29 GMT
+# Thu, 17 Jan 2019 23:21:47 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 01:35:29 GMT
+# Thu, 17 Jan 2019 23:21:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 01:35:29 GMT
+# Thu, 17 Jan 2019 23:21:47 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -189,30 +189,30 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 01:47:27 GMT  
 		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770f54e87f76c6d1a5c8883de6e1946662a6e057ea89366ec0056c12b24c4d98`  
-		Last Modified: Wed, 16 Jan 2019 01:48:48 GMT  
-		Size: 40.0 MB (40015053 bytes)  
+	-	`sha256:04a22b6c52078df0a888a57e9a9fcaa8135ef36b56ea4bfa6f938c3e2cf4279a`  
+		Last Modified: Thu, 17 Jan 2019 23:23:17 GMT  
+		Size: 41.6 MB (41570294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c7e656276a5b50aa17bd906e87476074b839f92dbfd143341eb923ed2a89a0`  
-		Last Modified: Wed, 16 Jan 2019 01:48:34 GMT  
-		Size: 1.9 KB (1908 bytes)  
+	-	`sha256:c6249cfe27ddd82d6e7982d28bcd8860675f1fc949f57bf176b793ca4c596ad4`  
+		Last Modified: Thu, 17 Jan 2019 23:23:08 GMT  
+		Size: 1.9 KB (1906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e67a90ac4024d21374d35b4843f21fd133c5e25179cbe25ce5f11eecba1cade6`  
-		Last Modified: Wed, 16 Jan 2019 01:48:34 GMT  
-		Size: 807.0 B  
+	-	`sha256:37343a4385c0a96f1a71b68f1b99a4b5a5d4ecb0fb7aa3eae2dcee7cd944eabf`  
+		Last Modified: Thu, 17 Jan 2019 23:23:07 GMT  
+		Size: 804.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:stable` - linux; arm variant v5
 
 ```console
-$ docker pull nextcloud@sha256:c97bd1eb64a62550b3557572cd9ebe03d290e723f1ce27d42cabf246b2e0d746
+$ docker pull nextcloud@sha256:db9edfcec9108047a04d07dc5cacf47b184ac891e7c69077982abc8a01270e4c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.8 MB (175771695 bytes)**  
+-	Total Size: **177.3 MB (177327309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27d83f4f1a2edc32e71469397c642ef6dea6e1f684d53589103cd2720f0160a5`
+-	Image ID: `sha256:c34883950c9ddfd76ab243174ba558b3608a2a2f90ab08d0e9cfe9ad9c5fd26b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -291,17 +291,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 09:55:35 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 10:05:52 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 10:06:54 GMT
+# Fri, 18 Jan 2019 09:54:24 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Fri, 18 Jan 2019 09:55:30 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 10:06:56 GMT
+# Fri, 18 Jan 2019 09:55:32 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 10:06:57 GMT
+# Fri, 18 Jan 2019 09:55:33 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 10:06:57 GMT
+# Fri, 18 Jan 2019 09:55:34 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 10:06:58 GMT
+# Fri, 18 Jan 2019 09:55:34 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -378,30 +378,30 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 10:24:18 GMT  
 		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a02e536772b8acf4d7d8d8cc75c15999134754be6f12ab9719b600acd7abd5`  
-		Last Modified: Wed, 16 Jan 2019 10:25:38 GMT  
-		Size: 40.0 MB (40013282 bytes)  
+	-	`sha256:2addbafe79d6df0f1af03f0aa2b21aec283f8653e4c0952e514b770f1737138e`  
+		Last Modified: Fri, 18 Jan 2019 09:57:35 GMT  
+		Size: 41.6 MB (41568895 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b6fb82676194193a2ab258bad92c7379d44c22379f77d182935622c1f60651`  
-		Last Modified: Wed, 16 Jan 2019 10:25:20 GMT  
-		Size: 1.9 KB (1905 bytes)  
+	-	`sha256:4570311391d44c5c60c4654f27e6af835e2b08776d68de4200c7de65c89d72e0`  
+		Last Modified: Fri, 18 Jan 2019 09:57:17 GMT  
+		Size: 1.9 KB (1908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5efda1f81fcadc46d4cdf544095272580b9c37cbf4f6356835227d877ba7b512`  
-		Last Modified: Wed, 16 Jan 2019 10:25:20 GMT  
-		Size: 802.0 B  
+	-	`sha256:2b5d2b488d3854bed78fbe6cc15fb172ada3d28c5fa930ee40cffef3b89024b2`  
+		Last Modified: Fri, 18 Jan 2019 09:57:17 GMT  
+		Size: 800.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:stable` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:1d1400d3bae443898eebd6ff82a70af2e5fc49e0038b0d3e175551ac461a6e21
+$ docker pull nextcloud@sha256:f7c87ebe1c1ee5cdc61d1fbfc84c2a16f487bdf4ec926afb47c2b1c2830a3232
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.7 MB (167727456 bytes)**  
+-	Total Size: **169.3 MB (169283068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e5dd5323fa1807388fd2d05635b2345af4b5c9af2290d5002b17b1552fd9067`
+-	Image ID: `sha256:d0bc119b736e8bbddfcafe05ca42aa7595b7bf2f263977b92ba5dff6d18959f9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -480,17 +480,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 13:03:59 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 13:12:11 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 13:13:06 GMT
+# Fri, 18 Jan 2019 13:08:18 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Fri, 18 Jan 2019 13:09:17 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 13:13:09 GMT
+# Fri, 18 Jan 2019 13:09:19 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 13:13:09 GMT
+# Fri, 18 Jan 2019 13:09:20 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 13:13:10 GMT
+# Fri, 18 Jan 2019 13:09:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 13:13:10 GMT
+# Fri, 18 Jan 2019 13:09:21 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -567,30 +567,30 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 13:28:29 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d63debda55c16d9238c9478f3b23ce9e1c6de19411149d2decefe305c9a5b23`  
-		Last Modified: Wed, 16 Jan 2019 13:29:45 GMT  
-		Size: 40.0 MB (40013405 bytes)  
+	-	`sha256:fda22d0912f8f2a972e8e4aa7779b4a1e47ff211c26106ee43fae243224b1555`  
+		Last Modified: Fri, 18 Jan 2019 13:11:32 GMT  
+		Size: 41.6 MB (41569017 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec270536c78c7822da223d8b04d0871b456376684a08146af83418654e3df4c9`  
-		Last Modified: Wed, 16 Jan 2019 13:29:27 GMT  
-		Size: 1.9 KB (1909 bytes)  
+	-	`sha256:acbf0c38c847ff2e7898ce487fe4a74b94bbf6b5511010260290797af35b5a1b`  
+		Last Modified: Fri, 18 Jan 2019 13:11:13 GMT  
+		Size: 1.9 KB (1908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6afe4d987ae62b2b6b85fb21863b48366d4ebb7ab14af246bb45e4a7b28c7ee1`  
-		Last Modified: Wed, 16 Jan 2019 13:29:27 GMT  
-		Size: 800.0 B  
+	-	`sha256:a41ccffd5afdfe784b17352f0710ddd3dcb0bec0ee66e11ef88e851c49a4ad5e`  
+		Last Modified: Fri, 18 Jan 2019 13:11:13 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:487b2b3dd72bb08f813f8c04484030b5443f5c4828fc6e4c94b0b260ac012377
+$ docker pull nextcloud@sha256:e597e2077c97622cf0f98bd01f5b95c1b1a2f334bbcaff6638f43cad1c0ce006
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.1 MB (174142342 bytes)**  
+-	Total Size: **175.7 MB (175697929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ea98d12e4b4b8651f1f5f6fe905a55edd8c65ae090a6356daf2993f0042733d`
+-	Image ID: `sha256:b28a5b34a3d59bd94caa42883d96ad0e7786f022df1a2f220d9ba6fdc144e92a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -669,17 +669,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 10:12:51 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 10:39:56 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 10:41:02 GMT
+# Fri, 18 Jan 2019 10:19:06 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Fri, 18 Jan 2019 10:20:13 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 10:41:03 GMT
+# Fri, 18 Jan 2019 10:20:16 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 10:41:04 GMT
+# Fri, 18 Jan 2019 10:20:18 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 10:41:05 GMT
+# Fri, 18 Jan 2019 10:20:19 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 10:41:06 GMT
+# Fri, 18 Jan 2019 10:20:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -756,30 +756,30 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 11:18:03 GMT  
 		Size: 546.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfb6c3d9027e974a45d4b9b620f04a5106f5010ab84c2d6daefd5f2865d783e3`  
-		Last Modified: Wed, 16 Jan 2019 11:20:51 GMT  
-		Size: 40.0 MB (40016662 bytes)  
+	-	`sha256:1931de411b5acdec30a25dca364a8cc8710491753d3a33d4504ac05fbfc66551`  
+		Last Modified: Fri, 18 Jan 2019 10:24:41 GMT  
+		Size: 41.6 MB (41572248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7dbb17f31129807d2f21908cefe709f069e963df38840d6634a959d6f82649`  
-		Last Modified: Wed, 16 Jan 2019 11:20:29 GMT  
-		Size: 1.9 KB (1909 bytes)  
+	-	`sha256:cf9384d72a0b013bfc7b2257808e2fd294c7aad6518d543b9e198931860b7dba`  
+		Last Modified: Fri, 18 Jan 2019 10:24:18 GMT  
+		Size: 1.9 KB (1907 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a055a4f327567a90da8da82def99b377dff90cce524337c58ef876e68883427`  
-		Last Modified: Wed, 16 Jan 2019 11:20:29 GMT  
-		Size: 804.0 B  
+	-	`sha256:160e2d6460f4b6737000faefdb80e4fc36e317d43f7736806c9f2352a025926f`  
+		Last Modified: Fri, 18 Jan 2019 10:24:18 GMT  
+		Size: 807.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:stable` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:841f8d1a01ee3da5b749fbfb81a2c9ed3eee86fceb37979d34af53d8a599994d
+$ docker pull nextcloud@sha256:ca1413ed09ff8880b4e692354b6f53d43493e27e16c466ef0a42107f3bb0ceef
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.3 MB (194276789 bytes)**  
+-	Total Size: **195.8 MB (195832273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8372416a8c9cfc0ada27a5ad8ddfed3fe1df0e56cbe255249ef1402694f5d2`
+-	Image ID: `sha256:ffd156d9c09c389e16ab6972e23926525298b27ad553b770812fc094d4061846`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -858,17 +858,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 11:43:03 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 11:57:20 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 11:57:48 GMT
+# Fri, 18 Jan 2019 12:34:07 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Fri, 18 Jan 2019 12:34:36 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 11:57:49 GMT
+# Fri, 18 Jan 2019 12:34:37 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 11:57:49 GMT
+# Fri, 18 Jan 2019 12:34:37 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 11:57:49 GMT
+# Fri, 18 Jan 2019 12:34:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 11:57:49 GMT
+# Fri, 18 Jan 2019 12:34:38 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -945,30 +945,30 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 12:10:33 GMT  
 		Size: 539.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4baeebc4007e2ee97949b0d236f3a7f401621239e44e44e9a1fb6ef2403ec35c`  
-		Last Modified: Wed, 16 Jan 2019 12:11:44 GMT  
-		Size: 40.0 MB (40014492 bytes)  
+	-	`sha256:03fb7c8ed437ff7fe7989c47acabb99c20d54742b837e463a1436059e26e7aeb`  
+		Last Modified: Fri, 18 Jan 2019 12:36:19 GMT  
+		Size: 41.6 MB (41569978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e9f9ddc00b6ace0670cf757e75f0dea534308b46df780e8b08839ff88369e72`  
-		Last Modified: Wed, 16 Jan 2019 12:11:29 GMT  
+	-	`sha256:197cd01a59a007d950a89b4a88e99048eec116aceb87293b0fcf1d1f49107c33`  
+		Last Modified: Fri, 18 Jan 2019 12:36:06 GMT  
 		Size: 1.9 KB (1908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb827d335fafc4397826355c5c0fcef31aa854daa3d1ae4659a33e37fe1b1df9`  
-		Last Modified: Wed, 16 Jan 2019 12:11:28 GMT  
-		Size: 803.0 B  
+	-	`sha256:b987cb14e983e08c6f240583d56f0385a74512e14fa179122e0594f4d7b36a09`  
+		Last Modified: Fri, 18 Jan 2019 12:36:06 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:stable` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:2bb39eaba50d692ea65b9bf3e282d2ae775f9db59f534c87ffba7000312bcf8a
+$ docker pull nextcloud@sha256:76b4af3ce0ebfb51c7d7380543b6b31310deea41584a78917f15322ad9f039f4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.1 MB (183068822 bytes)**  
+-	Total Size: **184.6 MB (184624324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb021a64397674d0b7048c2a7525ba50ef7b97051f4f8e4954535015bcaa6ae`
+-	Image ID: `sha256:3370eda3143f6f88062ea28102134ec030b3596103f28595b679ec5c037b8340`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1047,17 +1047,17 @@ RUN {         echo 'opcache.enable=1';         echo 'opcache.enable_cli=1';     
 VOLUME [/var/www/html]
 # Wed, 16 Jan 2019 09:30:52 GMT
 RUN a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Wed, 16 Jan 2019 09:47:14 GMT
-ENV NEXTCLOUD_VERSION=14.0.6
-# Wed, 16 Jan 2019 09:48:19 GMT
+# Fri, 18 Jan 2019 09:50:09 GMT
+ENV NEXTCLOUD_VERSION=15.0.2
+# Fri, 18 Jan 2019 09:51:31 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Jan 2019 09:48:22 GMT
+# Fri, 18 Jan 2019 09:51:35 GMT
 COPY multi:e3ee4b7af51dcf3ed52441ed3dff61bf962f6e147370b5b9bbbc163fc54eb8f6 in / 
-# Wed, 16 Jan 2019 09:48:23 GMT
+# Fri, 18 Jan 2019 09:51:36 GMT
 COPY multi:6b210c85ba9305e765f252ca0686bfb5f13c5e5d85f2e13a809167f29acaf2ea in /usr/src/nextcloud/config/ 
-# Wed, 16 Jan 2019 09:48:25 GMT
+# Fri, 18 Jan 2019 09:51:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 16 Jan 2019 09:48:27 GMT
+# Fri, 18 Jan 2019 09:51:42 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1134,15 +1134,15 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 16 Jan 2019 10:13:21 GMT  
 		Size: 544.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18bcde1303bac5ba0008ab3f8e481d9226c1f829e671f73be6d607ee87a24dff`  
-		Last Modified: Wed, 16 Jan 2019 10:16:14 GMT  
-		Size: 40.0 MB (40015800 bytes)  
+	-	`sha256:7f598e1725131e05345e116ff39d32e97ea28dee5a419d03ffe67b63958eb145`  
+		Last Modified: Fri, 18 Jan 2019 09:55:14 GMT  
+		Size: 41.6 MB (41571296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:961670097c6842e36e842335b2971557381e9a98ab49c9d7b4e739b8d6dd9a1f`  
-		Last Modified: Wed, 16 Jan 2019 10:15:45 GMT  
-		Size: 1.9 KB (1909 bytes)  
+	-	`sha256:b3f3c622f89c102ef3b7b214b575a26d2601f6a73ea83474e41e7627efeacc87`  
+		Last Modified: Fri, 18 Jan 2019 09:55:02 GMT  
+		Size: 1.9 KB (1908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f1dc34c97143c28ce877ee0b768c3bbd092865b171b5ae59c343f329324c321`  
-		Last Modified: Wed, 16 Jan 2019 10:15:45 GMT  
-		Size: 801.0 B  
+	-	`sha256:c160e4bf684d67062f25748407517f3e8e8f8e0423f9da338f45fc2d4bd66498`  
+		Last Modified: Fri, 18 Jan 2019 09:55:02 GMT  
+		Size: 808.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
