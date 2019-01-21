@@ -1,10 +1,10 @@
-# `redmine:3.4.7-passenger`
+# `redmine:3.4.8-passenger`
 
 ## Docker Metadata
 
-- Image ID: `sha256:65d4b2d3206187c1d90b66a00080682d9817e91f86f555e676f654ffec6a8649`
-- Created: `2019-01-11T02:33:43.69501478Z`
-- Virtual Size: ~ 644.58 Mb  
+- Image ID: `sha256:49995a26dbb725a144ba3228c62aaccd5cb67d0383d72976750cb916493908ef`
+- Created: `2019-01-21T21:34:27.431648948Z`
+- Virtual Size: ~ 644.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=3.4.7`
-  - `REDMINE_DOWNLOAD_MD5=06db1556593192856dfe155b794e8037`
+  - `REDMINE_VERSION=3.4.8`
+  - `REDMINE_DOWNLOAD_MD5=ecab6c73b13f4cf5f5b000d672ecc03b`
   - `PASSENGER_VERSION=6.0.1`
   - `PASSENGER_PID_FILE=tmp/pids/server.pid`
 
