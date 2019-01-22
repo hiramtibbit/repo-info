@@ -103,13 +103,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.18.dsc' apt_1.0.1ubuntu2.18.dsc 2754 SHA256:7f1051957e65a3dcc60dad614249b3af0166618e4b35b553d8ba08bb24332c40
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.18.tar.xz' apt_1.0.1ubuntu2.18.tar.xz 1776384 SHA256:55237dba9195327f9eb410cdf9f8a81754d7f324d7b02a3da646ec03fb91af8b
-```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
 
@@ -4702,14 +4698,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.9.dsc' tiff_4.0.3-7ubuntu0.9.dsc 2278 SHA256:ab3a36fd876df9933ac15bd0977821998f9916a0edb1766c52ff3aec58563e11
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.9.debian.tar.gz' tiff_4.0.3-7ubuntu0.9.debian.tar.gz 87723 SHA256:ef2110514da52940e92c41934b3764c8c3663755db213d87604796684ec6fb87
-```
 
 ### `dpkg` source package: `tzdata=2018g-0ubuntu0.14.04`
 
