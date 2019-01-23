@@ -1,7 +1,7 @@
 ## `tomee:8-jre-1.7.5-plume`
 
 ```console
-$ docker pull tomee@sha256:ec8151ececbe83f16495139757098c7ee9ed42fa8e0eb5b241f90d2d3fb4fc6d
+$ docker pull tomee@sha256:73e156ae322aaf4cb8d9be27d6bd3a9402022010a10348d5798f4e3f509eaf90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-1.7.5-plume` - linux; arm variant v7
 
 ```console
-$ docker pull tomee@sha256:5d27a171b248d87ae7dce55ca576975fa42c8f014e8e18ecc27eed59afe35589
+$ docker pull tomee@sha256:6e2627f84651a7e040dc7d8b631bf58b198ced790ccfac56b1b6c6a58ec62579
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **248.0 MB (248005036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bbaf2a2c1c58cd21aca81da551ebecf809a3e351509625d45e86dd4f46523e2`
+-	Image ID: `sha256:8c7036785779d69b3df48ee3ceb1e5df2786e17f14eac06b4af6229d19cd7da3`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -280,9 +280,9 @@ ENV GPG_KEYS=BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF 	223D3A74B068ECA354DC385CE
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Sat, 05 May 2018 15:32:05 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-1.7.5/apache-tomee-1.7.5-plume.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL http://apache.rediris.es/tomee/tomee-1.7.5/apache-tomee-1.7.5-plume.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plume-1.7.5/* /usr/local/tomee 	&& rm -Rf apache-tomee-plume-1.7.5 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Sat, 05 May 2018 15:32:06 GMT
-EXPOSE 8080/tcp
-# Sat, 05 May 2018 15:32:06 GMT
+# Wed, 23 Jan 2019 19:10:12 GMT
+EXPOSE 8080
+# Wed, 23 Jan 2019 19:10:13 GMT
 CMD ["catalina.sh" "run"]
 ```
 

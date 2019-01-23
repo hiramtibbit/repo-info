@@ -1,7 +1,7 @@
 ## `clojure:openjdk-11-boot`
 
 ```console
-$ docker pull clojure@sha256:7be6f557c0f4c59ab6ac3747e7778a70607a7925d72dca90b0e8887037cc39f5
+$ docker pull clojure@sha256:c6d0834fc5982194f76138a6f1bfdef5b4d8392f031cf7fe023d806a1ee9a510
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -567,111 +567,111 @@ CMD ["boot" "repl"]
 ### `clojure:openjdk-11-boot` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:57451b107f3fba83f1bc7765adb99c068a6b1bfe67cd8980b452faf35eed6892
+$ docker pull clojure@sha256:1a7a02006fa0d18af555e520ffd9759990cd51a921c9550efbe834b2074483a0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **443.0 MB (443029417 bytes)**  
+-	Total Size: **443.0 MB (443041576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b01c6b7c0154ae46b8a6604d13601fb6eae49c0855490f1a9bf07cd6134daab`
+-	Image ID: `sha256:642384ea4b3140acd810f63140cb1a15e20866f1602605945acbb490839591e4`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 09:21:57 GMT
-ADD file:d174fba88f1996d3c06a5efcf4fd36f16f7582239ab75871cdb55db060778359 in / 
-# Sat, 29 Dec 2018 09:22:07 GMT
+# Wed, 23 Jan 2019 09:26:55 GMT
+ADD file:607fec07098dd44504d39967b200ef4c80d3c31eb3524c99a522d779f8a48785 in / 
+# Wed, 23 Jan 2019 09:26:58 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 10:40:09 GMT
+# Wed, 23 Jan 2019 11:01:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 10:40:38 GMT
+# Wed, 23 Jan 2019 11:02:25 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 10:42:17 GMT
+# Wed, 23 Jan 2019 11:04:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 12:19:15 GMT
+# Wed, 23 Jan 2019 12:14:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 12:19:20 GMT
+# Wed, 23 Jan 2019 12:14:23 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
-# Sat, 29 Dec 2018 12:19:22 GMT
+# Wed, 23 Jan 2019 12:14:25 GMT
 ENV LANG=C.UTF-8
-# Sat, 29 Dec 2018 12:19:26 GMT
+# Wed, 23 Jan 2019 12:14:30 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 29 Dec 2018 12:19:30 GMT
+# Wed, 23 Jan 2019 12:14:33 GMT
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 29 Dec 2018 12:19:32 GMT
+# Wed, 23 Jan 2019 12:14:35 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 29 Dec 2018 12:19:33 GMT
+# Wed, 23 Jan 2019 12:14:37 GMT
 ENV JAVA_VERSION=11.0.1
-# Sat, 29 Dec 2018 12:19:35 GMT
+# Wed, 23 Jan 2019 12:14:39 GMT
 ENV JAVA_DEBIAN_VERSION=11.0.1+13-2~bpo9+1
-# Sat, 29 Dec 2018 12:23:44 GMT
+# Wed, 23 Jan 2019 12:18:56 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		ln -svT /docker-java-home/bin/java /usr/local/bin/java; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-11-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		rm -v /usr/local/bin/java; 		keytool -importkeystore -srckeystore /etc/ssl/certs/java/cacerts -destkeystore /etc/ssl/certs/java/cacerts.jks -deststoretype JKS -srcstorepass changeit -deststorepass changeit -noprompt; 	mv /etc/ssl/certs/java/cacerts.jks /etc/ssl/certs/java/cacerts; 	/var/lib/dpkg/info/ca-certificates-java.postinst configure; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Sat, 29 Dec 2018 12:23:48 GMT
+# Wed, 23 Jan 2019 12:19:04 GMT
 CMD ["jshell"]
-# Sat, 29 Dec 2018 17:51:04 GMT
+# Wed, 23 Jan 2019 18:34:13 GMT
 LABEL maintainer=Wes Morgan <wesmorgan@icloud.com>
-# Sat, 29 Dec 2018 17:51:05 GMT
+# Wed, 23 Jan 2019 18:34:15 GMT
 ENV BOOT_VERSION=2.8.2
-# Sat, 29 Dec 2018 17:51:07 GMT
+# Wed, 23 Jan 2019 18:34:17 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Sat, 29 Dec 2018 17:51:08 GMT
+# Wed, 23 Jan 2019 18:34:20 GMT
 WORKDIR /tmp
-# Sat, 29 Dec 2018 17:51:13 GMT
+# Wed, 23 Jan 2019 18:34:26 GMT
 RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Sat, 29 Dec 2018 17:51:15 GMT
+# Wed, 23 Jan 2019 18:34:27 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 29 Dec 2018 17:51:17 GMT
+# Wed, 23 Jan 2019 18:34:29 GMT
 ENV BOOT_AS_ROOT=yes
-# Sat, 29 Dec 2018 17:53:33 GMT
+# Wed, 23 Jan 2019 18:36:14 GMT
 RUN boot
-# Sat, 29 Dec 2018 17:53:36 GMT
+# Wed, 23 Jan 2019 18:36:16 GMT
 CMD ["boot" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:56fd7f7cdb66a358d0b43ecb7a9cd41b96a5a490a47b12264c86878b531081c5`  
-		Last Modified: Sat, 29 Dec 2018 09:28:03 GMT  
-		Size: 45.6 MB (45605695 bytes)  
+	-	`sha256:ce16bf3279cca6ab2d1b46a272b57d4c1e11cbe13e3a52148fceb9cc07eb0b37`  
+		Last Modified: Wed, 23 Jan 2019 09:33:00 GMT  
+		Size: 45.6 MB (45616894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f635fa148b382c93885cce85133b6f1ba33b1a391347329805ce973d3061d42`  
-		Last Modified: Sat, 29 Dec 2018 11:18:00 GMT  
-		Size: 10.0 MB (9986429 bytes)  
+	-	`sha256:46b9074895469b770a2456cb2377047c95c405f79e3b04ceca45935caf814e40`  
+		Last Modified: Wed, 23 Jan 2019 11:48:50 GMT  
+		Size: 10.0 MB (9986574 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8c0099cf676e2655012d38610077379647258d6af103b65ff34d91637631fc6`  
-		Last Modified: Sat, 29 Dec 2018 11:17:59 GMT  
-		Size: 4.3 MB (4295725 bytes)  
+	-	`sha256:5fc9d854b31c2198e3a6cc80e64e62531a2e63cf2b43ff8b40f03224abe9ee36`  
+		Last Modified: Wed, 23 Jan 2019 11:48:48 GMT  
+		Size: 4.3 MB (4295774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac453cf9be4657ff3c6bbb021d7e64057957b45d1f84550e3655ba5cdcd0f58b`  
-		Last Modified: Sat, 29 Dec 2018 11:18:38 GMT  
-		Size: 50.1 MB (50064531 bytes)  
+	-	`sha256:e48ba7f7793013080ce168066b3989515bc218c081a99c9626e919fab4089b85`  
+		Last Modified: Wed, 23 Jan 2019 11:49:34 GMT  
+		Size: 50.1 MB (50065120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b146ea60af943e531634711eeb85e5f21bb365e1fac66849b36e4090cdf178a4`  
-		Last Modified: Sat, 29 Dec 2018 12:53:14 GMT  
-		Size: 886.0 KB (885979 bytes)  
+	-	`sha256:6531482d2ad7e5231b5486c26ef61212d3a395ee72ba0a526c33e3c5597b10f6`  
+		Last Modified: Wed, 23 Jan 2019 12:41:06 GMT  
+		Size: 886.1 KB (886101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e0952f871e943a4dcb2b1515a9cf479bd8288d4c0cadfb1338971dffac37dd`  
-		Last Modified: Sat, 29 Dec 2018 12:53:14 GMT  
-		Size: 226.0 B  
+	-	`sha256:aa5a217a0ba7e6c5b73e96fee56542079906298f0bcdda05ecdaccad7b4e6a10`  
+		Last Modified: Wed, 23 Jan 2019 12:41:05 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24f54b7d72ab1b0cfb125ffd4ac7ba8de89a2f64badae2d5b2f314e0cce7332a`  
-		Last Modified: Sat, 29 Dec 2018 12:53:16 GMT  
-		Size: 248.0 B  
+	-	`sha256:bb482ebe62ffdc34a0e70a1e801d45575214a42dac89cedadd321d3412248231`  
+		Last Modified: Wed, 23 Jan 2019 12:41:04 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ecc628a4f6cf02bb7ad06a85ec0f579d879f67652f46c0723dc5fb778041c78`  
-		Last Modified: Sat, 29 Dec 2018 12:53:13 GMT  
+	-	`sha256:3b2e2657236e1b1802d8ad2ea76c1baf7ca6fa1b5e06b9f4cf184d80361bbb9a`  
+		Last Modified: Wed, 23 Jan 2019 12:41:05 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b51c6d05ca8653b1911091d8e5f87c649fda5625a35d1742ac716f54636c518b`  
-		Last Modified: Sat, 29 Dec 2018 12:54:10 GMT  
-		Size: 292.8 MB (292839051 bytes)  
+	-	`sha256:a6e6e785dfefaab8286dbd5ba4923ad1103c9bb553514fa59febb809048998b3`  
+		Last Modified: Wed, 23 Jan 2019 12:41:54 GMT  
+		Size: 292.8 MB (292838862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f11a48184e247a952fd977c82df6b30f77e2f195f1403cc5a4d3cd861bde96e8`  
-		Last Modified: Sat, 29 Dec 2018 17:55:54 GMT  
-		Size: 6.9 KB (6898 bytes)  
+	-	`sha256:5a686b7f3609fb24a03ca13a7e6ef304a1f736e7a71ade9ce51f6bd7be7655a8`  
+		Last Modified: Wed, 23 Jan 2019 18:38:38 GMT  
+		Size: 6.9 KB (6897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2a96e230f84fc052ea675c9eeec5a50caab18f2a60e0a14947f29a7caf4e6e`  
-		Last Modified: Sat, 29 Dec 2018 17:55:58 GMT  
-		Size: 39.3 MB (39344503 bytes)  
+	-	`sha256:98d729dcd5a7e4b32aa5180bc14ed33dd6a03a43a5f8b8ebf6c4310ad52797a6`  
+		Last Modified: Wed, 23 Jan 2019 18:38:43 GMT  
+		Size: 39.3 MB (39344752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:openjdk-11-boot` - linux; s390x
