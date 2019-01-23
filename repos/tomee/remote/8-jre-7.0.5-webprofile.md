@@ -1,7 +1,7 @@
 ## `tomee:8-jre-7.0.5-webprofile`
 
 ```console
-$ docker pull tomee@sha256:99896125a5f0b7731b427cfc8442add40969c5fe27204cef6d35ce4e1199dd2a
+$ docker pull tomee@sha256:05e76d4afd006b0cf6e7f6aa94176b8f916b8eb890ae8f3b1438fb279448c531
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-7.0.5-webprofile` - linux; arm variant v7
 
 ```console
-$ docker pull tomee@sha256:3b354fa98f78efea5ee9d54b105d84de1462b74992c967b1de4be1c9ea291d38
+$ docker pull tomee@sha256:e08ddfb7ef3131768b82b3916c981b727de736f8cb1511dd09b595aa17f9645f
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **236.6 MB (236607722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:635c633c2e1eff309199da7df9b4a2e4f54803e6fb93ec29ab9edffd04a37241`
+-	Image ID: `sha256:20ef8f2d2a35b79bd2f601e332921b25b22cc171c29558f1f351984569e22d93`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -280,9 +280,9 @@ ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     678F2D98F1FD9643811639
 RUN set -xe     && for key in $GPG_KEYS; do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";     done
 # Wed, 25 Jul 2018 12:18:22 GMT
 RUN set -x 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.0.5/apache-tomee-7.0.5-webprofile.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.0.5/apache-tomee-7.0.5-webprofile.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-webprofile-7.0.5/* /usr/local/tomee 	&& rm -Rf apache-tomee-webprofile-7.0.5 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 25 Jul 2018 12:18:23 GMT
-EXPOSE 8080/tcp
-# Wed, 25 Jul 2018 12:18:23 GMT
+# Wed, 23 Jan 2019 19:11:03 GMT
+EXPOSE 8080
+# Wed, 23 Jan 2019 19:11:04 GMT
 CMD ["catalina.sh" "run"]
 ```
 

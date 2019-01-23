@@ -1,7 +1,7 @@
 ## `tomee:8-jre-8.0.0-M1-plus`
 
 ```console
-$ docker pull tomee@sha256:bd5d3eec92075c17fbd903be3a10aa8ac34edf199039962e0317022b9782ec67
+$ docker pull tomee@sha256:7d3054085b3153c5b87d6542ba9101cfb622ee1f3e0855e4f2449b84c7909e8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-8.0.0-M1-plus` - linux; arm variant v7
 
 ```console
-$ docker pull tomee@sha256:b222728f7435000f67e243f50ee6d27675c525451a5d678559ce898d35d2cd7b
+$ docker pull tomee@sha256:7582e545d00290b2576874015f322421f4d83775190914fa3c087082d38e9258
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **254.9 MB (254886684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:676b22996d5c2129f0128cdf66b49d7ffda4630c0549b148485ee8665da218d2`
+-	Image ID: `sha256:25147f79df6cff337e9cf6886446b6a738e1afd43c3f155508fa4831b162f0ec`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -280,9 +280,9 @@ ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     7A2744A8A9AAF063C23EB7
 RUN set -xe     && for key in $GPG_KEYS; do 		gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||         gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done
 # Wed, 17 Oct 2018 12:01:31 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/dev/tomee/tomee-8.0.0-M1/apache-tomee-8.0.0-M1-plus.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://dist.apache.org/repos/dist/dev/tomee/tomee-8.0.0-M1/apache-tomee-8.0.0-M1-plus.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plus-8.0.0-M1/* /usr/local/tomee 	&& rm -Rf apache-tomee-plus-8.0.0-M1 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 17 Oct 2018 12:01:32 GMT
-EXPOSE 8080/tcp
-# Wed, 17 Oct 2018 12:01:32 GMT
+# Wed, 23 Jan 2019 19:11:43 GMT
+EXPOSE 8080
+# Wed, 23 Jan 2019 19:11:43 GMT
 CMD ["catalina.sh" "run"]
 ```
 

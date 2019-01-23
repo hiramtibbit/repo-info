@@ -1,7 +1,7 @@
 ## `tomee:8-jre-7.1.0-microprofile`
 
 ```console
-$ docker pull tomee@sha256:29eb8afb1b40f17fd4721875c95ef81d4a79bf09f9eec80d45106cf79bc45d50
+$ docker pull tomee@sha256:5d599e04dc2e6a0ebc6ca56e889ac6cf4c83c9d8293a77b7f49671e5f8d158ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-7.1.0-microprofile` - linux; arm variant v7
 
 ```console
-$ docker pull tomee@sha256:11946836ef77d4014daad4f585cceb8eff0579c4b529ab63fc5594b7b49d9b8d
+$ docker pull tomee@sha256:26617de8cf5f586b98e7cb4857848054d42f130be26a9bd82629ec85a51af65a
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **237.2 MB (237180687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77e888e372f140412fa5f540e9f11819e6fef3c4e564f17d264a3c723d6bbc0d`
+-	Image ID: `sha256:841c5fdb0b754cfcd3dd2b5a8f177595c1b8af24e123743e2613c2b7e1de1ae9`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -280,9 +280,9 @@ ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     678F2D98F1FD9643811639
 RUN set -xe     && for key in $GPG_KEYS; do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";     done
 # Wed, 17 Oct 2018 11:59:30 GMT
 RUN set -x 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.1.0/apache-tomee-7.1.0-microprofile.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.1.0/apache-tomee-7.1.0-microprofile.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-microprofile-7.1.0/* /usr/local/tomee 	&& rm -Rf apache-tomee-microprofile-7.1.0 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 17 Oct 2018 11:59:31 GMT
-EXPOSE 8080/tcp
-# Wed, 17 Oct 2018 11:59:32 GMT
+# Wed, 23 Jan 2019 19:11:21 GMT
+EXPOSE 8080
+# Wed, 23 Jan 2019 19:11:22 GMT
 CMD ["catalina.sh" "run"]
 ```
 

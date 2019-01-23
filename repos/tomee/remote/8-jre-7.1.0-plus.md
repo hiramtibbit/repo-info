@@ -1,7 +1,7 @@
 ## `tomee:8-jre-7.1.0-plus`
 
 ```console
-$ docker pull tomee@sha256:2268b7269e00f822b5dd7d7b2b328be2ac9c358e04e09456346f62223c028128
+$ docker pull tomee@sha256:d13023e408e354c00d77875d5c2c589436aa58d22cf1c5c04fa094f532dc1d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre-7.1.0-plus` - linux; arm variant v7
 
 ```console
-$ docker pull tomee@sha256:b86c7cb208c21e916a6d01d08af05062645ee939b66fa75a21210a5d29416a35
+$ docker pull tomee@sha256:ba3b29e451173bc870d3fe1119b444652eadcf039bb018874d54318f8821ab3c
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **253.7 MB (253736796 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e57c9d4fea0264668f4b45e282d80fa9179eb280dcd2b80369047d6385a5fdd`
+-	Image ID: `sha256:0b6574b260f3033c055cb443224f2e0a17350e359ffe25c588b8103b645627d4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -280,9 +280,9 @@ ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     678F2D98F1FD9643811639
 RUN set -xe     && for key in $GPG_KEYS; do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";     done
 # Sat, 08 Sep 2018 12:20:24 GMT
 RUN set -x 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.1.0/apache-tomee-7.1.0-plus.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://repo.maven.apache.org/maven2/org/apache/tomee/apache-tomee/7.1.0/apache-tomee-7.1.0-plus.tar.gz -o tomee.tar.gz     && gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plus-7.1.0/* /usr/local/tomee 	&& rm -Rf apache-tomee-plus-7.1.0 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Sat, 08 Sep 2018 12:20:25 GMT
-EXPOSE 8080/tcp
-# Sat, 08 Sep 2018 12:20:25 GMT
+# Wed, 23 Jan 2019 19:11:15 GMT
+EXPOSE 8080
+# Wed, 23 Jan 2019 19:11:16 GMT
 CMD ["catalina.sh" "run"]
 ```
 
