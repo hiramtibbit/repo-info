@@ -46,7 +46,7 @@
 ## `erlang:18`
 
 ```console
-$ docker pull erlang@sha256:79bff6bec21f0005f2a77af081a3560e937243e68f58d9462c9677a168b8d486
+$ docker pull erlang@sha256:6c1933743d82aaeeca5fde25451f7138079e06f11a55e39283e11650dd69116f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -136,77 +136,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:20cf372963048c29e68bdd93a48689a7ca964f3bc75c2bfec4ded4fc7458f9c9
+$ docker pull erlang@sha256:48253aaac661055b7c2dc195718c7e615810488d2c8550996037a568b81bf7ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.1 MB (433091312 bytes)**  
+-	Total Size: **433.1 MB (433105331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be90910cb903992e40eb6a90c4e3400d6dbe2b8671ef940d1a831db7803f3bbe`
+-	Image ID: `sha256:6c1185af472f2d8b3162ecb1f6f7f06d4ca7ad21b68fa2d7255164f07796e613`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:16:20 GMT
+# Wed, 23 Jan 2019 15:12:04 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 14:26:17 GMT
+# Wed, 23 Jan 2019 15:23:08 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:09 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:10 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:17 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:18 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 14:28:06 GMT
+# Wed, 23 Jan 2019 15:25:00 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07966550195df0fdba277eb2ad3acc26526ac91fe98ecfe7d0562f7450c6e079`  
-		Last Modified: Wed, 09 Jan 2019 14:30:50 GMT  
-		Size: 135.0 MB (135043688 bytes)  
+	-	`sha256:2cc8fcd6cd06f041a2136f7ba3ee866d6a73192ceb7c840bee591788bc74cef3`  
+		Last Modified: Wed, 23 Jan 2019 15:37:18 GMT  
+		Size: 135.0 MB (135043774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669a22109518336d434259e155bc50c5a31762d3c9c62236600d343dea3db6e2`  
-		Last Modified: Wed, 09 Jan 2019 14:30:22 GMT  
-		Size: 200.4 KB (200408 bytes)  
+	-	`sha256:a5374e77c3167a6929d6eb5688ef6f1b72578b76ebe0e4ac144c4fb38631cbba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 200.3 KB (200340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07e6e3e8d74f903442e1082f074fb2fc758f2b7b80ef8c6187b309ad89b0121`  
-		Last Modified: Wed, 09 Jan 2019 14:30:23 GMT  
-		Size: 951.9 KB (951923 bytes)  
+	-	`sha256:19d876149bcda3270cab200900e60beb66532a557b22f62d340675f45ecae5ba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 952.0 KB (951953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18` - linux; arm64 variant v8
@@ -288,77 +288,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:3bed0bf36f5483fc2411b8bd025165c8009e13476a9de9ca5df728b59ea7b3c7
+$ docker pull erlang@sha256:f664d0a8d68234c4ce037dcf38c6561920a16dd35cd1824052aa3a7394d802e1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.9 MB (472857470 bytes)**  
+-	Total Size: **472.9 MB (472869524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f858e285580abd105250765d9871ae36b46dee4f29a10e248e69d18808a6258`
+-	Image ID: `sha256:3c1a2b8ecb3a83c4189298c0506010e4e4d628c7203f497f09d3b2db5f4ca60e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:30:11 GMT
+# Wed, 23 Jan 2019 15:22:46 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 13:39:20 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:59 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 13:40:40 GMT
+# Wed, 23 Jan 2019 15:33:18 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f70721d3b28cc7a15ee52843b24d57621e1ac1d3ee0221c3fa55d55198becc7`  
-		Last Modified: Wed, 09 Jan 2019 13:42:38 GMT  
-		Size: 139.4 MB (139366183 bytes)  
+	-	`sha256:5eac7a5edcd7a5f29371031ba21239f09df102cbd148146c98e65c0e2b89bc7b`  
+		Last Modified: Wed, 23 Jan 2019 15:44:34 GMT  
+		Size: 139.4 MB (139365980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3c83ec0cc3388bed0e120f42a97d3aa9ece90f3042044b599ddc5978df27b57`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 200.4 KB (200379 bytes)  
+	-	`sha256:d8154115f2ac5554eadeab1bd7180754b9e81461abea05cbfc32870bc60ccc19`  
+		Last Modified: Wed, 23 Jan 2019 15:44:15 GMT  
+		Size: 200.4 KB (200376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcb7fc7b1f74cd8558830b78ca8ca2a0d9da43766c591b5afef18f7e3f0bc3fc`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 951.9 KB (951944 bytes)  
+	-	`sha256:b6c8f04f92c13923ea1f26537f1b7e8f8684eb061668ac5519f96d60249afed0`  
+		Last Modified: Wed, 23 Jan 2019 15:44:16 GMT  
+		Size: 951.9 KB (951929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18` - linux; s390x
@@ -440,7 +440,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:18.3`
 
 ```console
-$ docker pull erlang@sha256:79bff6bec21f0005f2a77af081a3560e937243e68f58d9462c9677a168b8d486
+$ docker pull erlang@sha256:6c1933743d82aaeeca5fde25451f7138079e06f11a55e39283e11650dd69116f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -530,77 +530,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:20cf372963048c29e68bdd93a48689a7ca964f3bc75c2bfec4ded4fc7458f9c9
+$ docker pull erlang@sha256:48253aaac661055b7c2dc195718c7e615810488d2c8550996037a568b81bf7ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.1 MB (433091312 bytes)**  
+-	Total Size: **433.1 MB (433105331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be90910cb903992e40eb6a90c4e3400d6dbe2b8671ef940d1a831db7803f3bbe`
+-	Image ID: `sha256:6c1185af472f2d8b3162ecb1f6f7f06d4ca7ad21b68fa2d7255164f07796e613`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:16:20 GMT
+# Wed, 23 Jan 2019 15:12:04 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 14:26:17 GMT
+# Wed, 23 Jan 2019 15:23:08 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:09 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:10 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:17 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:18 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 14:28:06 GMT
+# Wed, 23 Jan 2019 15:25:00 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07966550195df0fdba277eb2ad3acc26526ac91fe98ecfe7d0562f7450c6e079`  
-		Last Modified: Wed, 09 Jan 2019 14:30:50 GMT  
-		Size: 135.0 MB (135043688 bytes)  
+	-	`sha256:2cc8fcd6cd06f041a2136f7ba3ee866d6a73192ceb7c840bee591788bc74cef3`  
+		Last Modified: Wed, 23 Jan 2019 15:37:18 GMT  
+		Size: 135.0 MB (135043774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669a22109518336d434259e155bc50c5a31762d3c9c62236600d343dea3db6e2`  
-		Last Modified: Wed, 09 Jan 2019 14:30:22 GMT  
-		Size: 200.4 KB (200408 bytes)  
+	-	`sha256:a5374e77c3167a6929d6eb5688ef6f1b72578b76ebe0e4ac144c4fb38631cbba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 200.3 KB (200340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07e6e3e8d74f903442e1082f074fb2fc758f2b7b80ef8c6187b309ad89b0121`  
-		Last Modified: Wed, 09 Jan 2019 14:30:23 GMT  
-		Size: 951.9 KB (951923 bytes)  
+	-	`sha256:19d876149bcda3270cab200900e60beb66532a557b22f62d340675f45ecae5ba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 952.0 KB (951953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3` - linux; arm64 variant v8
@@ -682,77 +682,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:3bed0bf36f5483fc2411b8bd025165c8009e13476a9de9ca5df728b59ea7b3c7
+$ docker pull erlang@sha256:f664d0a8d68234c4ce037dcf38c6561920a16dd35cd1824052aa3a7394d802e1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.9 MB (472857470 bytes)**  
+-	Total Size: **472.9 MB (472869524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f858e285580abd105250765d9871ae36b46dee4f29a10e248e69d18808a6258`
+-	Image ID: `sha256:3c1a2b8ecb3a83c4189298c0506010e4e4d628c7203f497f09d3b2db5f4ca60e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:30:11 GMT
+# Wed, 23 Jan 2019 15:22:46 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 13:39:20 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:59 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 13:40:40 GMT
+# Wed, 23 Jan 2019 15:33:18 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f70721d3b28cc7a15ee52843b24d57621e1ac1d3ee0221c3fa55d55198becc7`  
-		Last Modified: Wed, 09 Jan 2019 13:42:38 GMT  
-		Size: 139.4 MB (139366183 bytes)  
+	-	`sha256:5eac7a5edcd7a5f29371031ba21239f09df102cbd148146c98e65c0e2b89bc7b`  
+		Last Modified: Wed, 23 Jan 2019 15:44:34 GMT  
+		Size: 139.4 MB (139365980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3c83ec0cc3388bed0e120f42a97d3aa9ece90f3042044b599ddc5978df27b57`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 200.4 KB (200379 bytes)  
+	-	`sha256:d8154115f2ac5554eadeab1bd7180754b9e81461abea05cbfc32870bc60ccc19`  
+		Last Modified: Wed, 23 Jan 2019 15:44:15 GMT  
+		Size: 200.4 KB (200376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcb7fc7b1f74cd8558830b78ca8ca2a0d9da43766c591b5afef18f7e3f0bc3fc`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 951.9 KB (951944 bytes)  
+	-	`sha256:b6c8f04f92c13923ea1f26537f1b7e8f8684eb061668ac5519f96d60249afed0`  
+		Last Modified: Wed, 23 Jan 2019 15:44:16 GMT  
+		Size: 951.9 KB (951929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3` - linux; s390x
@@ -834,7 +834,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:18.3.4`
 
 ```console
-$ docker pull erlang@sha256:79bff6bec21f0005f2a77af081a3560e937243e68f58d9462c9677a168b8d486
+$ docker pull erlang@sha256:6c1933743d82aaeeca5fde25451f7138079e06f11a55e39283e11650dd69116f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -924,77 +924,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3.4` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:20cf372963048c29e68bdd93a48689a7ca964f3bc75c2bfec4ded4fc7458f9c9
+$ docker pull erlang@sha256:48253aaac661055b7c2dc195718c7e615810488d2c8550996037a568b81bf7ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.1 MB (433091312 bytes)**  
+-	Total Size: **433.1 MB (433105331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be90910cb903992e40eb6a90c4e3400d6dbe2b8671ef940d1a831db7803f3bbe`
+-	Image ID: `sha256:6c1185af472f2d8b3162ecb1f6f7f06d4ca7ad21b68fa2d7255164f07796e613`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:16:20 GMT
+# Wed, 23 Jan 2019 15:12:04 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 14:26:17 GMT
+# Wed, 23 Jan 2019 15:23:08 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:09 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:10 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:17 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:18 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 14:28:06 GMT
+# Wed, 23 Jan 2019 15:25:00 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07966550195df0fdba277eb2ad3acc26526ac91fe98ecfe7d0562f7450c6e079`  
-		Last Modified: Wed, 09 Jan 2019 14:30:50 GMT  
-		Size: 135.0 MB (135043688 bytes)  
+	-	`sha256:2cc8fcd6cd06f041a2136f7ba3ee866d6a73192ceb7c840bee591788bc74cef3`  
+		Last Modified: Wed, 23 Jan 2019 15:37:18 GMT  
+		Size: 135.0 MB (135043774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669a22109518336d434259e155bc50c5a31762d3c9c62236600d343dea3db6e2`  
-		Last Modified: Wed, 09 Jan 2019 14:30:22 GMT  
-		Size: 200.4 KB (200408 bytes)  
+	-	`sha256:a5374e77c3167a6929d6eb5688ef6f1b72578b76ebe0e4ac144c4fb38631cbba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 200.3 KB (200340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07e6e3e8d74f903442e1082f074fb2fc758f2b7b80ef8c6187b309ad89b0121`  
-		Last Modified: Wed, 09 Jan 2019 14:30:23 GMT  
-		Size: 951.9 KB (951923 bytes)  
+	-	`sha256:19d876149bcda3270cab200900e60beb66532a557b22f62d340675f45ecae5ba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 952.0 KB (951953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4` - linux; arm64 variant v8
@@ -1076,77 +1076,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3.4` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:3bed0bf36f5483fc2411b8bd025165c8009e13476a9de9ca5df728b59ea7b3c7
+$ docker pull erlang@sha256:f664d0a8d68234c4ce037dcf38c6561920a16dd35cd1824052aa3a7394d802e1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.9 MB (472857470 bytes)**  
+-	Total Size: **472.9 MB (472869524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f858e285580abd105250765d9871ae36b46dee4f29a10e248e69d18808a6258`
+-	Image ID: `sha256:3c1a2b8ecb3a83c4189298c0506010e4e4d628c7203f497f09d3b2db5f4ca60e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:30:11 GMT
+# Wed, 23 Jan 2019 15:22:46 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 13:39:20 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:59 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 13:40:40 GMT
+# Wed, 23 Jan 2019 15:33:18 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f70721d3b28cc7a15ee52843b24d57621e1ac1d3ee0221c3fa55d55198becc7`  
-		Last Modified: Wed, 09 Jan 2019 13:42:38 GMT  
-		Size: 139.4 MB (139366183 bytes)  
+	-	`sha256:5eac7a5edcd7a5f29371031ba21239f09df102cbd148146c98e65c0e2b89bc7b`  
+		Last Modified: Wed, 23 Jan 2019 15:44:34 GMT  
+		Size: 139.4 MB (139365980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3c83ec0cc3388bed0e120f42a97d3aa9ece90f3042044b599ddc5978df27b57`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 200.4 KB (200379 bytes)  
+	-	`sha256:d8154115f2ac5554eadeab1bd7180754b9e81461abea05cbfc32870bc60ccc19`  
+		Last Modified: Wed, 23 Jan 2019 15:44:15 GMT  
+		Size: 200.4 KB (200376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcb7fc7b1f74cd8558830b78ca8ca2a0d9da43766c591b5afef18f7e3f0bc3fc`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 951.9 KB (951944 bytes)  
+	-	`sha256:b6c8f04f92c13923ea1f26537f1b7e8f8684eb061668ac5519f96d60249afed0`  
+		Last Modified: Wed, 23 Jan 2019 15:44:16 GMT  
+		Size: 951.9 KB (951929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4` - linux; s390x
@@ -1228,7 +1228,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:18.3.4.11`
 
 ```console
-$ docker pull erlang@sha256:79bff6bec21f0005f2a77af081a3560e937243e68f58d9462c9677a168b8d486
+$ docker pull erlang@sha256:6c1933743d82aaeeca5fde25451f7138079e06f11a55e39283e11650dd69116f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1318,77 +1318,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3.4.11` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:20cf372963048c29e68bdd93a48689a7ca964f3bc75c2bfec4ded4fc7458f9c9
+$ docker pull erlang@sha256:48253aaac661055b7c2dc195718c7e615810488d2c8550996037a568b81bf7ba
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.1 MB (433091312 bytes)**  
+-	Total Size: **433.1 MB (433105331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be90910cb903992e40eb6a90c4e3400d6dbe2b8671ef940d1a831db7803f3bbe`
+-	Image ID: `sha256:6c1185af472f2d8b3162ecb1f6f7f06d4ca7ad21b68fa2d7255164f07796e613`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:16:20 GMT
+# Wed, 23 Jan 2019 15:12:04 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 14:26:17 GMT
+# Wed, 23 Jan 2019 15:23:08 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:09 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 14:26:19 GMT
+# Wed, 23 Jan 2019 15:23:10 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:17 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 14:26:27 GMT
+# Wed, 23 Jan 2019 15:23:18 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 14:28:06 GMT
+# Wed, 23 Jan 2019 15:25:00 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07966550195df0fdba277eb2ad3acc26526ac91fe98ecfe7d0562f7450c6e079`  
-		Last Modified: Wed, 09 Jan 2019 14:30:50 GMT  
-		Size: 135.0 MB (135043688 bytes)  
+	-	`sha256:2cc8fcd6cd06f041a2136f7ba3ee866d6a73192ceb7c840bee591788bc74cef3`  
+		Last Modified: Wed, 23 Jan 2019 15:37:18 GMT  
+		Size: 135.0 MB (135043774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669a22109518336d434259e155bc50c5a31762d3c9c62236600d343dea3db6e2`  
-		Last Modified: Wed, 09 Jan 2019 14:30:22 GMT  
-		Size: 200.4 KB (200408 bytes)  
+	-	`sha256:a5374e77c3167a6929d6eb5688ef6f1b72578b76ebe0e4ac144c4fb38631cbba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 200.3 KB (200340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07e6e3e8d74f903442e1082f074fb2fc758f2b7b80ef8c6187b309ad89b0121`  
-		Last Modified: Wed, 09 Jan 2019 14:30:23 GMT  
-		Size: 951.9 KB (951923 bytes)  
+	-	`sha256:19d876149bcda3270cab200900e60beb66532a557b22f62d340675f45ecae5ba`  
+		Last Modified: Wed, 23 Jan 2019 15:36:50 GMT  
+		Size: 952.0 KB (951953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4.11` - linux; arm64 variant v8
@@ -1470,77 +1470,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:18.3.4.11` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:3bed0bf36f5483fc2411b8bd025165c8009e13476a9de9ca5df728b59ea7b3c7
+$ docker pull erlang@sha256:f664d0a8d68234c4ce037dcf38c6561920a16dd35cd1824052aa3a7394d802e1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.9 MB (472857470 bytes)**  
+-	Total Size: **472.9 MB (472869524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f858e285580abd105250765d9871ae36b46dee4f29a10e248e69d18808a6258`
+-	Image ID: `sha256:3c1a2b8ecb3a83c4189298c0506010e4e4d628c7203f497f09d3b2db5f4ca60e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:30:11 GMT
+# Wed, 23 Jan 2019 15:22:46 GMT
 ENV OTP_VERSION=18.3.4.11
-# Wed, 09 Jan 2019 13:39:20 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:58 GMT
 CMD ["erl"]
-# Wed, 09 Jan 2019 13:39:21 GMT
+# Wed, 23 Jan 2019 15:31:59 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 09 Jan 2019 13:39:26 GMT
+# Wed, 23 Jan 2019 15:32:03 GMT
 ENV REBAR3_VERSION=3.7.4
-# Wed, 09 Jan 2019 13:40:40 GMT
+# Wed, 23 Jan 2019 15:33:18 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="3747ef351999caec65304839ecd9324ac8eec8c38210fb43dc598e3caed0a2c0" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f70721d3b28cc7a15ee52843b24d57621e1ac1d3ee0221c3fa55d55198becc7`  
-		Last Modified: Wed, 09 Jan 2019 13:42:38 GMT  
-		Size: 139.4 MB (139366183 bytes)  
+	-	`sha256:5eac7a5edcd7a5f29371031ba21239f09df102cbd148146c98e65c0e2b89bc7b`  
+		Last Modified: Wed, 23 Jan 2019 15:44:34 GMT  
+		Size: 139.4 MB (139365980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3c83ec0cc3388bed0e120f42a97d3aa9ece90f3042044b599ddc5978df27b57`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 200.4 KB (200379 bytes)  
+	-	`sha256:d8154115f2ac5554eadeab1bd7180754b9e81461abea05cbfc32870bc60ccc19`  
+		Last Modified: Wed, 23 Jan 2019 15:44:15 GMT  
+		Size: 200.4 KB (200376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcb7fc7b1f74cd8558830b78ca8ca2a0d9da43766c591b5afef18f7e3f0bc3fc`  
-		Last Modified: Wed, 09 Jan 2019 13:42:17 GMT  
-		Size: 951.9 KB (951944 bytes)  
+	-	`sha256:b6c8f04f92c13923ea1f26537f1b7e8f8684eb061668ac5519f96d60249afed0`  
+		Last Modified: Wed, 23 Jan 2019 15:44:16 GMT  
+		Size: 951.9 KB (951929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4.11` - linux; s390x
@@ -1622,7 +1622,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:18.3.4.11-slim`
 
 ```console
-$ docker pull erlang@sha256:387a452ee56d5507b00404bbc029c6d74365b52c13422116a9249b513df5e5a1
+$ docker pull erlang@sha256:afb525bea0c7ea9432d71d709a2aa341be9c03f1766bc638db689848862b4949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1672,37 +1672,37 @@ CMD ["erl"]
 ### `erlang:18.3.4.11-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:64e38d7291ae41b676d627d41fbbd5a9ab56476898982652a22fdf25535d745b
+$ docker pull erlang@sha256:1e73bcbd915ae4a691d7936a1c8932686ed6aedc8cda809b79ab15d0c8103111
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.4 MB (105419071 bytes)**  
+-	Total Size: **105.4 MB (105432012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b47a9c9a2c83cb8fef7f9c92ad9a4178f4ae2bcd442f42daa181b04755e5999b`
+-	Image ID: `sha256:8cd2a7f50e9955ded911b6fcf2480fe33e22b83c26f5ac59a26ff4b43336991b`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 14:28:16 GMT
+# Wed, 23 Jan 2019 15:25:13 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 14:34:50 GMT
+# Wed, 23 Jan 2019 15:32:41 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 14:34:51 GMT
+# Wed, 23 Jan 2019 15:32:42 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dd2088f98095fc9c43a761b07bd5bfa69f566d5635beb3162d26bfa784a9b3a`  
-		Last Modified: Sat, 29 Dec 2018 14:39:27 GMT  
-		Size: 63.3 MB (63344488 bytes)  
+	-	`sha256:1a7880486aa5462f12b267e236ce5d59924d1c219d0895da402bec5f37664275`  
+		Last Modified: Wed, 23 Jan 2019 15:37:46 GMT  
+		Size: 63.3 MB (63344281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4.11-slim` - linux; arm64 variant v8
@@ -1744,37 +1744,37 @@ CMD ["erl"]
 ### `erlang:18.3.4.11-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:770f290145280d07c0b04b8cb8346208037514c9f0d0f8d8cce9e1cff9ed3bc5
+$ docker pull erlang@sha256:40071943126632a9b88662d45a7b898ccd28afbddbabfc7b257cc131b5a5e30e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117558578 bytes)**  
+-	Total Size: **117.6 MB (117570307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e75839ae07138c6acb4e6b1997c617ca5a749ed31d134a329f285cf21969bb`
+-	Image ID: `sha256:a1af7df93bdabc2f10d43c7133eb1b279d6498037d6d6c7f0d6ebc0462dff441`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 17:06:10 GMT
+# Wed, 23 Jan 2019 15:33:21 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:464f59dfe44a1d49f882bea7e5299d72db01dbc81ad507fec3fee09e47075373`  
-		Last Modified: Sat, 29 Dec 2018 17:27:09 GMT  
-		Size: 71.5 MB (71501288 bytes)  
+	-	`sha256:493bbb86502eea8225025105bcbf818c3038d2adb4e17cf9ab8b9cb6430da8eb`  
+		Last Modified: Wed, 23 Jan 2019 15:44:53 GMT  
+		Size: 71.5 MB (71500852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4.11-slim` - linux; s390x
@@ -1816,7 +1816,7 @@ CMD ["erl"]
 ## `erlang:18.3.4-slim`
 
 ```console
-$ docker pull erlang@sha256:387a452ee56d5507b00404bbc029c6d74365b52c13422116a9249b513df5e5a1
+$ docker pull erlang@sha256:afb525bea0c7ea9432d71d709a2aa341be9c03f1766bc638db689848862b4949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1866,37 +1866,37 @@ CMD ["erl"]
 ### `erlang:18.3.4-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:64e38d7291ae41b676d627d41fbbd5a9ab56476898982652a22fdf25535d745b
+$ docker pull erlang@sha256:1e73bcbd915ae4a691d7936a1c8932686ed6aedc8cda809b79ab15d0c8103111
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.4 MB (105419071 bytes)**  
+-	Total Size: **105.4 MB (105432012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b47a9c9a2c83cb8fef7f9c92ad9a4178f4ae2bcd442f42daa181b04755e5999b`
+-	Image ID: `sha256:8cd2a7f50e9955ded911b6fcf2480fe33e22b83c26f5ac59a26ff4b43336991b`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 14:28:16 GMT
+# Wed, 23 Jan 2019 15:25:13 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 14:34:50 GMT
+# Wed, 23 Jan 2019 15:32:41 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 14:34:51 GMT
+# Wed, 23 Jan 2019 15:32:42 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dd2088f98095fc9c43a761b07bd5bfa69f566d5635beb3162d26bfa784a9b3a`  
-		Last Modified: Sat, 29 Dec 2018 14:39:27 GMT  
-		Size: 63.3 MB (63344488 bytes)  
+	-	`sha256:1a7880486aa5462f12b267e236ce5d59924d1c219d0895da402bec5f37664275`  
+		Last Modified: Wed, 23 Jan 2019 15:37:46 GMT  
+		Size: 63.3 MB (63344281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4-slim` - linux; arm64 variant v8
@@ -1938,37 +1938,37 @@ CMD ["erl"]
 ### `erlang:18.3.4-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:770f290145280d07c0b04b8cb8346208037514c9f0d0f8d8cce9e1cff9ed3bc5
+$ docker pull erlang@sha256:40071943126632a9b88662d45a7b898ccd28afbddbabfc7b257cc131b5a5e30e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117558578 bytes)**  
+-	Total Size: **117.6 MB (117570307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e75839ae07138c6acb4e6b1997c617ca5a749ed31d134a329f285cf21969bb`
+-	Image ID: `sha256:a1af7df93bdabc2f10d43c7133eb1b279d6498037d6d6c7f0d6ebc0462dff441`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 17:06:10 GMT
+# Wed, 23 Jan 2019 15:33:21 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:464f59dfe44a1d49f882bea7e5299d72db01dbc81ad507fec3fee09e47075373`  
-		Last Modified: Sat, 29 Dec 2018 17:27:09 GMT  
-		Size: 71.5 MB (71501288 bytes)  
+	-	`sha256:493bbb86502eea8225025105bcbf818c3038d2adb4e17cf9ab8b9cb6430da8eb`  
+		Last Modified: Wed, 23 Jan 2019 15:44:53 GMT  
+		Size: 71.5 MB (71500852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3.4-slim` - linux; s390x
@@ -2010,7 +2010,7 @@ CMD ["erl"]
 ## `erlang:18.3-slim`
 
 ```console
-$ docker pull erlang@sha256:387a452ee56d5507b00404bbc029c6d74365b52c13422116a9249b513df5e5a1
+$ docker pull erlang@sha256:afb525bea0c7ea9432d71d709a2aa341be9c03f1766bc638db689848862b4949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2060,37 +2060,37 @@ CMD ["erl"]
 ### `erlang:18.3-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:64e38d7291ae41b676d627d41fbbd5a9ab56476898982652a22fdf25535d745b
+$ docker pull erlang@sha256:1e73bcbd915ae4a691d7936a1c8932686ed6aedc8cda809b79ab15d0c8103111
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.4 MB (105419071 bytes)**  
+-	Total Size: **105.4 MB (105432012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b47a9c9a2c83cb8fef7f9c92ad9a4178f4ae2bcd442f42daa181b04755e5999b`
+-	Image ID: `sha256:8cd2a7f50e9955ded911b6fcf2480fe33e22b83c26f5ac59a26ff4b43336991b`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 14:28:16 GMT
+# Wed, 23 Jan 2019 15:25:13 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 14:34:50 GMT
+# Wed, 23 Jan 2019 15:32:41 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 14:34:51 GMT
+# Wed, 23 Jan 2019 15:32:42 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dd2088f98095fc9c43a761b07bd5bfa69f566d5635beb3162d26bfa784a9b3a`  
-		Last Modified: Sat, 29 Dec 2018 14:39:27 GMT  
-		Size: 63.3 MB (63344488 bytes)  
+	-	`sha256:1a7880486aa5462f12b267e236ce5d59924d1c219d0895da402bec5f37664275`  
+		Last Modified: Wed, 23 Jan 2019 15:37:46 GMT  
+		Size: 63.3 MB (63344281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3-slim` - linux; arm64 variant v8
@@ -2132,37 +2132,37 @@ CMD ["erl"]
 ### `erlang:18.3-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:770f290145280d07c0b04b8cb8346208037514c9f0d0f8d8cce9e1cff9ed3bc5
+$ docker pull erlang@sha256:40071943126632a9b88662d45a7b898ccd28afbddbabfc7b257cc131b5a5e30e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117558578 bytes)**  
+-	Total Size: **117.6 MB (117570307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e75839ae07138c6acb4e6b1997c617ca5a749ed31d134a329f285cf21969bb`
+-	Image ID: `sha256:a1af7df93bdabc2f10d43c7133eb1b279d6498037d6d6c7f0d6ebc0462dff441`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 17:06:10 GMT
+# Wed, 23 Jan 2019 15:33:21 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:464f59dfe44a1d49f882bea7e5299d72db01dbc81ad507fec3fee09e47075373`  
-		Last Modified: Sat, 29 Dec 2018 17:27:09 GMT  
-		Size: 71.5 MB (71501288 bytes)  
+	-	`sha256:493bbb86502eea8225025105bcbf818c3038d2adb4e17cf9ab8b9cb6430da8eb`  
+		Last Modified: Wed, 23 Jan 2019 15:44:53 GMT  
+		Size: 71.5 MB (71500852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18.3-slim` - linux; s390x
@@ -2204,7 +2204,7 @@ CMD ["erl"]
 ## `erlang:18-slim`
 
 ```console
-$ docker pull erlang@sha256:387a452ee56d5507b00404bbc029c6d74365b52c13422116a9249b513df5e5a1
+$ docker pull erlang@sha256:afb525bea0c7ea9432d71d709a2aa341be9c03f1766bc638db689848862b4949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2254,37 +2254,37 @@ CMD ["erl"]
 ### `erlang:18-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:64e38d7291ae41b676d627d41fbbd5a9ab56476898982652a22fdf25535d745b
+$ docker pull erlang@sha256:1e73bcbd915ae4a691d7936a1c8932686ed6aedc8cda809b79ab15d0c8103111
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.4 MB (105419071 bytes)**  
+-	Total Size: **105.4 MB (105432012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b47a9c9a2c83cb8fef7f9c92ad9a4178f4ae2bcd442f42daa181b04755e5999b`
+-	Image ID: `sha256:8cd2a7f50e9955ded911b6fcf2480fe33e22b83c26f5ac59a26ff4b43336991b`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 14:28:16 GMT
+# Wed, 23 Jan 2019 15:25:13 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 14:34:50 GMT
+# Wed, 23 Jan 2019 15:32:41 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 14:34:51 GMT
+# Wed, 23 Jan 2019 15:32:42 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dd2088f98095fc9c43a761b07bd5bfa69f566d5635beb3162d26bfa784a9b3a`  
-		Last Modified: Sat, 29 Dec 2018 14:39:27 GMT  
-		Size: 63.3 MB (63344488 bytes)  
+	-	`sha256:1a7880486aa5462f12b267e236ce5d59924d1c219d0895da402bec5f37664275`  
+		Last Modified: Wed, 23 Jan 2019 15:37:46 GMT  
+		Size: 63.3 MB (63344281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18-slim` - linux; arm64 variant v8
@@ -2326,37 +2326,37 @@ CMD ["erl"]
 ### `erlang:18-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:770f290145280d07c0b04b8cb8346208037514c9f0d0f8d8cce9e1cff9ed3bc5
+$ docker pull erlang@sha256:40071943126632a9b88662d45a7b898ccd28afbddbabfc7b257cc131b5a5e30e
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.6 MB (117558578 bytes)**  
+-	Total Size: **117.6 MB (117570307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e75839ae07138c6acb4e6b1997c617ca5a749ed31d134a329f285cf21969bb`
+-	Image ID: `sha256:a1af7df93bdabc2f10d43c7133eb1b279d6498037d6d6c7f0d6ebc0462dff441`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 17:06:10 GMT
+# Wed, 23 Jan 2019 15:33:21 GMT
 ENV OTP_VERSION=18.3.4.11
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="94f84e8ca0db0dcadd3411fa7a05dd937142b6ae830255dc341c30b45261b01a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" --enable-sctp 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 17:20:08 GMT
+# Wed, 23 Jan 2019 15:41:07 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:464f59dfe44a1d49f882bea7e5299d72db01dbc81ad507fec3fee09e47075373`  
-		Last Modified: Sat, 29 Dec 2018 17:27:09 GMT  
-		Size: 71.5 MB (71501288 bytes)  
+	-	`sha256:493bbb86502eea8225025105bcbf818c3038d2adb4e17cf9ab8b9cb6430da8eb`  
+		Last Modified: Wed, 23 Jan 2019 15:44:53 GMT  
+		Size: 71.5 MB (71500852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:18-slim` - linux; s390x
@@ -2398,7 +2398,7 @@ CMD ["erl"]
 ## `erlang:19`
 
 ```console
-$ docker pull erlang@sha256:b180abc532f44e3b39eed1b49f62c1f4594233f8b880b8ba898e61172f6d7c39
+$ docker pull erlang@sha256:b618cb34ba8d722460b11fbbbd636cb69148ed60cac2c1e126e002c7ce72dfcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2488,77 +2488,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:7808df6c4298961994cd7376f59d1b4edc4e8e800dff7ddfbdde67d803260901
+$ docker pull erlang@sha256:4a39f61ac7c802ee4f372bd1fe29c0e351fbbe7c5dabd1ad27972df96e25915f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.7 MB (433669611 bytes)**  
+-	Total Size: **433.7 MB (433683866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e8d16891cd5a3d81a5917d9fe950a0afdc139aecc3863af966bc251ec9b0c8d`
+-	Image ID: `sha256:a0d6529e848060d905fb71f222948339cdfe87df7bbbf9923269f4297d7a4bb5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:57:36 GMT
+# Wed, 23 Jan 2019 14:47:29 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:08:03 GMT
+# Wed, 23 Jan 2019 14:58:45 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:08:04 GMT
+# Wed, 23 Jan 2019 14:58:46 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 13:08:05 GMT
+# Wed, 23 Jan 2019 14:58:47 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 13:08:53 GMT
+# Wed, 23 Jan 2019 14:59:57 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8485a13e322901bbd79a1841a7e0242c6ed3eacc863f1bace9091c6d3623e95b`  
-		Last Modified: Sat, 12 Jan 2019 13:21:31 GMT  
-		Size: 135.6 MB (135615656 bytes)  
+	-	`sha256:327590ebdecb3423093d846cee41e2518260e922c1cd9c3517a7c30bfab2a285`  
+		Last Modified: Wed, 23 Jan 2019 15:35:44 GMT  
+		Size: 135.6 MB (135615928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef4830a9beb61192f59185ef543290810a59afb02a7f90def31dcb1a1d70072`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 199.2 KB (199228 bytes)  
+	-	`sha256:812c5c46fb1d2873ce3664fbdd2719eda78c9601c66c29ebcdbb5b9244d0e3de`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 199.2 KB (199212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478d2206529fb2d81aee34b4837dc6ac4b3075ad3bb47333eed7c0c49d5dc252`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 959.4 KB (959434 bytes)  
+	-	`sha256:795be74df660de662058b1fcbac9cdff5f98d351bab7e7d2cb84ec2cc4a1dfa6`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 959.5 KB (959462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19` - linux; arm64 variant v8
@@ -2640,77 +2640,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:065682e903dedc65bab77d7c7f3998a9f5f8a12131b8b705724bf628328d6ef8
+$ docker pull erlang@sha256:a283281a9404f70b522f61afd23ec4c655a3c263894b58cda5dae4d4e0804852
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.6 MB (473561185 bytes)**  
+-	Total Size: **473.6 MB (473573171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:591a0ecc04aad23f7a9db71f7fc68e370291fe3e80b10ab6f5c1ae987c92b00f`
+-	Image ID: `sha256:7fa47b47e9a26bb19a6fe5027a436788d5cd4848e49edbf57c7163a3b7640d3a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:38:41 GMT
+# Wed, 23 Jan 2019 14:52:45 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 11:53:34 GMT
+# Wed, 23 Jan 2019 15:07:34 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1bb88ec99396ccf9e99972d6cf133afaed05f7e1a4eee5a6021ef71740b129d`  
-		Last Modified: Sat, 12 Jan 2019 12:09:54 GMT  
-		Size: 140.1 MB (140063576 bytes)  
+	-	`sha256:b9ea45158620a82ed15335d3153e7c84f6197f1787fbe3b9b350cb535c2ca42d`  
+		Last Modified: Wed, 23 Jan 2019 15:43:31 GMT  
+		Size: 140.1 MB (140063291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1d54347eb0724fe6c0dbbfbf48a2d946743dfe0a0ea0adccba2c027f2ebabf`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 199.2 KB (199208 bytes)  
+	-	`sha256:41891f57900c9184346190ee5cee7145838ec37863f746948e44401ca2ae2b8f`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 199.2 KB (199211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23f2b6a2d4c994151dabb85a5844b47b636b80062b868363a13024f2f47dafa3`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 959.4 KB (959437 bytes)  
+	-	`sha256:e07b0cde7dfcac4da10e4daee249961bfab1e0d26b315ad8d535ffed4d5b9836`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 959.4 KB (959430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19` - linux; s390x
@@ -2792,7 +2792,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:19.3`
 
 ```console
-$ docker pull erlang@sha256:b180abc532f44e3b39eed1b49f62c1f4594233f8b880b8ba898e61172f6d7c39
+$ docker pull erlang@sha256:b618cb34ba8d722460b11fbbbd636cb69148ed60cac2c1e126e002c7ce72dfcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2882,77 +2882,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:7808df6c4298961994cd7376f59d1b4edc4e8e800dff7ddfbdde67d803260901
+$ docker pull erlang@sha256:4a39f61ac7c802ee4f372bd1fe29c0e351fbbe7c5dabd1ad27972df96e25915f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.7 MB (433669611 bytes)**  
+-	Total Size: **433.7 MB (433683866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e8d16891cd5a3d81a5917d9fe950a0afdc139aecc3863af966bc251ec9b0c8d`
+-	Image ID: `sha256:a0d6529e848060d905fb71f222948339cdfe87df7bbbf9923269f4297d7a4bb5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:57:36 GMT
+# Wed, 23 Jan 2019 14:47:29 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:08:03 GMT
+# Wed, 23 Jan 2019 14:58:45 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:08:04 GMT
+# Wed, 23 Jan 2019 14:58:46 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 13:08:05 GMT
+# Wed, 23 Jan 2019 14:58:47 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 13:08:53 GMT
+# Wed, 23 Jan 2019 14:59:57 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8485a13e322901bbd79a1841a7e0242c6ed3eacc863f1bace9091c6d3623e95b`  
-		Last Modified: Sat, 12 Jan 2019 13:21:31 GMT  
-		Size: 135.6 MB (135615656 bytes)  
+	-	`sha256:327590ebdecb3423093d846cee41e2518260e922c1cd9c3517a7c30bfab2a285`  
+		Last Modified: Wed, 23 Jan 2019 15:35:44 GMT  
+		Size: 135.6 MB (135615928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef4830a9beb61192f59185ef543290810a59afb02a7f90def31dcb1a1d70072`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 199.2 KB (199228 bytes)  
+	-	`sha256:812c5c46fb1d2873ce3664fbdd2719eda78c9601c66c29ebcdbb5b9244d0e3de`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 199.2 KB (199212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478d2206529fb2d81aee34b4837dc6ac4b3075ad3bb47333eed7c0c49d5dc252`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 959.4 KB (959434 bytes)  
+	-	`sha256:795be74df660de662058b1fcbac9cdff5f98d351bab7e7d2cb84ec2cc4a1dfa6`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 959.5 KB (959462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3` - linux; arm64 variant v8
@@ -3034,77 +3034,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:065682e903dedc65bab77d7c7f3998a9f5f8a12131b8b705724bf628328d6ef8
+$ docker pull erlang@sha256:a283281a9404f70b522f61afd23ec4c655a3c263894b58cda5dae4d4e0804852
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.6 MB (473561185 bytes)**  
+-	Total Size: **473.6 MB (473573171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:591a0ecc04aad23f7a9db71f7fc68e370291fe3e80b10ab6f5c1ae987c92b00f`
+-	Image ID: `sha256:7fa47b47e9a26bb19a6fe5027a436788d5cd4848e49edbf57c7163a3b7640d3a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:38:41 GMT
+# Wed, 23 Jan 2019 14:52:45 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 11:53:34 GMT
+# Wed, 23 Jan 2019 15:07:34 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1bb88ec99396ccf9e99972d6cf133afaed05f7e1a4eee5a6021ef71740b129d`  
-		Last Modified: Sat, 12 Jan 2019 12:09:54 GMT  
-		Size: 140.1 MB (140063576 bytes)  
+	-	`sha256:b9ea45158620a82ed15335d3153e7c84f6197f1787fbe3b9b350cb535c2ca42d`  
+		Last Modified: Wed, 23 Jan 2019 15:43:31 GMT  
+		Size: 140.1 MB (140063291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1d54347eb0724fe6c0dbbfbf48a2d946743dfe0a0ea0adccba2c027f2ebabf`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 199.2 KB (199208 bytes)  
+	-	`sha256:41891f57900c9184346190ee5cee7145838ec37863f746948e44401ca2ae2b8f`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 199.2 KB (199211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23f2b6a2d4c994151dabb85a5844b47b636b80062b868363a13024f2f47dafa3`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 959.4 KB (959437 bytes)  
+	-	`sha256:e07b0cde7dfcac4da10e4daee249961bfab1e0d26b315ad8d535ffed4d5b9836`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 959.4 KB (959430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3` - linux; s390x
@@ -3186,7 +3186,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:19.3.6`
 
 ```console
-$ docker pull erlang@sha256:b180abc532f44e3b39eed1b49f62c1f4594233f8b880b8ba898e61172f6d7c39
+$ docker pull erlang@sha256:b618cb34ba8d722460b11fbbbd636cb69148ed60cac2c1e126e002c7ce72dfcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3276,77 +3276,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3.6` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:7808df6c4298961994cd7376f59d1b4edc4e8e800dff7ddfbdde67d803260901
+$ docker pull erlang@sha256:4a39f61ac7c802ee4f372bd1fe29c0e351fbbe7c5dabd1ad27972df96e25915f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.7 MB (433669611 bytes)**  
+-	Total Size: **433.7 MB (433683866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e8d16891cd5a3d81a5917d9fe950a0afdc139aecc3863af966bc251ec9b0c8d`
+-	Image ID: `sha256:a0d6529e848060d905fb71f222948339cdfe87df7bbbf9923269f4297d7a4bb5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:57:36 GMT
+# Wed, 23 Jan 2019 14:47:29 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:08:03 GMT
+# Wed, 23 Jan 2019 14:58:45 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:08:04 GMT
+# Wed, 23 Jan 2019 14:58:46 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 13:08:05 GMT
+# Wed, 23 Jan 2019 14:58:47 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 13:08:53 GMT
+# Wed, 23 Jan 2019 14:59:57 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8485a13e322901bbd79a1841a7e0242c6ed3eacc863f1bace9091c6d3623e95b`  
-		Last Modified: Sat, 12 Jan 2019 13:21:31 GMT  
-		Size: 135.6 MB (135615656 bytes)  
+	-	`sha256:327590ebdecb3423093d846cee41e2518260e922c1cd9c3517a7c30bfab2a285`  
+		Last Modified: Wed, 23 Jan 2019 15:35:44 GMT  
+		Size: 135.6 MB (135615928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef4830a9beb61192f59185ef543290810a59afb02a7f90def31dcb1a1d70072`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 199.2 KB (199228 bytes)  
+	-	`sha256:812c5c46fb1d2873ce3664fbdd2719eda78c9601c66c29ebcdbb5b9244d0e3de`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 199.2 KB (199212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478d2206529fb2d81aee34b4837dc6ac4b3075ad3bb47333eed7c0c49d5dc252`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 959.4 KB (959434 bytes)  
+	-	`sha256:795be74df660de662058b1fcbac9cdff5f98d351bab7e7d2cb84ec2cc4a1dfa6`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 959.5 KB (959462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6` - linux; arm64 variant v8
@@ -3428,77 +3428,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3.6` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:065682e903dedc65bab77d7c7f3998a9f5f8a12131b8b705724bf628328d6ef8
+$ docker pull erlang@sha256:a283281a9404f70b522f61afd23ec4c655a3c263894b58cda5dae4d4e0804852
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.6 MB (473561185 bytes)**  
+-	Total Size: **473.6 MB (473573171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:591a0ecc04aad23f7a9db71f7fc68e370291fe3e80b10ab6f5c1ae987c92b00f`
+-	Image ID: `sha256:7fa47b47e9a26bb19a6fe5027a436788d5cd4848e49edbf57c7163a3b7640d3a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:38:41 GMT
+# Wed, 23 Jan 2019 14:52:45 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 11:53:34 GMT
+# Wed, 23 Jan 2019 15:07:34 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1bb88ec99396ccf9e99972d6cf133afaed05f7e1a4eee5a6021ef71740b129d`  
-		Last Modified: Sat, 12 Jan 2019 12:09:54 GMT  
-		Size: 140.1 MB (140063576 bytes)  
+	-	`sha256:b9ea45158620a82ed15335d3153e7c84f6197f1787fbe3b9b350cb535c2ca42d`  
+		Last Modified: Wed, 23 Jan 2019 15:43:31 GMT  
+		Size: 140.1 MB (140063291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1d54347eb0724fe6c0dbbfbf48a2d946743dfe0a0ea0adccba2c027f2ebabf`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 199.2 KB (199208 bytes)  
+	-	`sha256:41891f57900c9184346190ee5cee7145838ec37863f746948e44401ca2ae2b8f`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 199.2 KB (199211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23f2b6a2d4c994151dabb85a5844b47b636b80062b868363a13024f2f47dafa3`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 959.4 KB (959437 bytes)  
+	-	`sha256:e07b0cde7dfcac4da10e4daee249961bfab1e0d26b315ad8d535ffed4d5b9836`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 959.4 KB (959430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6` - linux; s390x
@@ -3580,7 +3580,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:19.3.6.13`
 
 ```console
-$ docker pull erlang@sha256:b180abc532f44e3b39eed1b49f62c1f4594233f8b880b8ba898e61172f6d7c39
+$ docker pull erlang@sha256:b618cb34ba8d722460b11fbbbd636cb69148ed60cac2c1e126e002c7ce72dfcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3670,77 +3670,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3.6.13` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:7808df6c4298961994cd7376f59d1b4edc4e8e800dff7ddfbdde67d803260901
+$ docker pull erlang@sha256:4a39f61ac7c802ee4f372bd1fe29c0e351fbbe7c5dabd1ad27972df96e25915f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.7 MB (433669611 bytes)**  
+-	Total Size: **433.7 MB (433683866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e8d16891cd5a3d81a5917d9fe950a0afdc139aecc3863af966bc251ec9b0c8d`
+-	Image ID: `sha256:a0d6529e848060d905fb71f222948339cdfe87df7bbbf9923269f4297d7a4bb5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:57:36 GMT
+# Wed, 23 Jan 2019 14:47:29 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:08:03 GMT
+# Wed, 23 Jan 2019 14:58:45 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:08:04 GMT
+# Wed, 23 Jan 2019 14:58:46 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 13:08:05 GMT
+# Wed, 23 Jan 2019 14:58:47 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:58:53 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 13:08:53 GMT
+# Wed, 23 Jan 2019 14:59:57 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8485a13e322901bbd79a1841a7e0242c6ed3eacc863f1bace9091c6d3623e95b`  
-		Last Modified: Sat, 12 Jan 2019 13:21:31 GMT  
-		Size: 135.6 MB (135615656 bytes)  
+	-	`sha256:327590ebdecb3423093d846cee41e2518260e922c1cd9c3517a7c30bfab2a285`  
+		Last Modified: Wed, 23 Jan 2019 15:35:44 GMT  
+		Size: 135.6 MB (135615928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef4830a9beb61192f59185ef543290810a59afb02a7f90def31dcb1a1d70072`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 199.2 KB (199228 bytes)  
+	-	`sha256:812c5c46fb1d2873ce3664fbdd2719eda78c9601c66c29ebcdbb5b9244d0e3de`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 199.2 KB (199212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478d2206529fb2d81aee34b4837dc6ac4b3075ad3bb47333eed7c0c49d5dc252`  
-		Last Modified: Sat, 12 Jan 2019 13:21:04 GMT  
-		Size: 959.4 KB (959434 bytes)  
+	-	`sha256:795be74df660de662058b1fcbac9cdff5f98d351bab7e7d2cb84ec2cc4a1dfa6`  
+		Last Modified: Wed, 23 Jan 2019 15:35:16 GMT  
+		Size: 959.5 KB (959462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6.13` - linux; arm64 variant v8
@@ -3822,77 +3822,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:19.3.6.13` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:065682e903dedc65bab77d7c7f3998a9f5f8a12131b8b705724bf628328d6ef8
+$ docker pull erlang@sha256:a283281a9404f70b522f61afd23ec4c655a3c263894b58cda5dae4d4e0804852
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.6 MB (473561185 bytes)**  
+-	Total Size: **473.6 MB (473573171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:591a0ecc04aad23f7a9db71f7fc68e370291fe3e80b10ab6f5c1ae987c92b00f`
+-	Image ID: `sha256:7fa47b47e9a26bb19a6fe5027a436788d5cd4848e49edbf57c7163a3b7640d3a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:38:41 GMT
+# Wed, 23 Jan 2019 14:52:45 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps='libodbc1 			libsctp1 			libssl1.0-dev 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 CMD ["erl"]
-# Sat, 12 Jan 2019 11:52:58 GMT
+# Wed, 23 Jan 2019 15:06:58 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 12 Jan 2019 11:53:02 GMT
+# Wed, 23 Jan 2019 15:07:02 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 12 Jan 2019 11:53:34 GMT
+# Wed, 23 Jan 2019 15:07:34 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1bb88ec99396ccf9e99972d6cf133afaed05f7e1a4eee5a6021ef71740b129d`  
-		Last Modified: Sat, 12 Jan 2019 12:09:54 GMT  
-		Size: 140.1 MB (140063576 bytes)  
+	-	`sha256:b9ea45158620a82ed15335d3153e7c84f6197f1787fbe3b9b350cb535c2ca42d`  
+		Last Modified: Wed, 23 Jan 2019 15:43:31 GMT  
+		Size: 140.1 MB (140063291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa1d54347eb0724fe6c0dbbfbf48a2d946743dfe0a0ea0adccba2c027f2ebabf`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 199.2 KB (199208 bytes)  
+	-	`sha256:41891f57900c9184346190ee5cee7145838ec37863f746948e44401ca2ae2b8f`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 199.2 KB (199211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23f2b6a2d4c994151dabb85a5844b47b636b80062b868363a13024f2f47dafa3`  
-		Last Modified: Sat, 12 Jan 2019 12:09:32 GMT  
-		Size: 959.4 KB (959437 bytes)  
+	-	`sha256:e07b0cde7dfcac4da10e4daee249961bfab1e0d26b315ad8d535ffed4d5b9836`  
+		Last Modified: Wed, 23 Jan 2019 15:43:05 GMT  
+		Size: 959.4 KB (959430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6.13` - linux; s390x
@@ -3974,7 +3974,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:19.3.6.13-slim`
 
 ```console
-$ docker pull erlang@sha256:b15ba0269ff7b87549ee844db338aaabc26584f21d286c2d84c1764c7f6049ed
+$ docker pull erlang@sha256:fab604e5dfefb4a3a0456ae20a2acb7c4e24862a55ddc38cddac4520e75a1868
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4024,37 +4024,37 @@ CMD ["erl"]
 ### `erlang:19.3.6.13-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:e87fdd1f7c3a547b9e6999df5f8a44919cd177d510565fbf59f283576298a66f
+$ docker pull erlang@sha256:f4671effb3f5a8247d781c03782ee0a40efc5338f127dc26e6f161be1f7abaaf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.7 MB (242723155 bytes)**  
+-	Total Size: **242.7 MB (242736358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52630b455dc5dac831621f5538f964cc038888ca95e2d1ffbc04cace453857e6`
+-	Image ID: `sha256:f0494210bd7c5138b9794d943f09f1114d5812c395015398b744868bb198cbc7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 13:08:59 GMT
+# Wed, 23 Jan 2019 15:00:08 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:20:28 GMT
+# Wed, 23 Jan 2019 15:11:53 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:20:30 GMT
+# Wed, 23 Jan 2019 15:11:56 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe84d8f8c5e5d682d91d781d49076c93a01323f84e579e0fd7cb1e9f6123619`  
-		Last Modified: Sat, 12 Jan 2019 13:22:27 GMT  
-		Size: 200.6 MB (200648572 bytes)  
+	-	`sha256:58bd9f1ef4f2e5402294c6bab6d4d6672c0739202e28473add701682cd17b877`  
+		Last Modified: Wed, 23 Jan 2019 15:36:41 GMT  
+		Size: 200.6 MB (200648627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6.13-slim` - linux; arm64 variant v8
@@ -4096,37 +4096,37 @@ CMD ["erl"]
 ### `erlang:19.3.6.13-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:95336a837cd9572fe41de6d22162437c25911c2b1b372b98c994235b70ad88d7
+$ docker pull erlang@sha256:3313cd03275e629f15fcce1e87e8186f6caf4254128f33cb02125d053eef8424
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.4 MB (259418173 bytes)**  
+-	Total Size: **259.4 MB (259429688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68ef518f86360a2e3ec57e0af5e6898cec8389310d046599591109305551b759`
+-	Image ID: `sha256:f0a5565f74bcf1506733f997ce9aa4c88d0f623cbbaef5c1b2411f3bc0cbba7e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 11:53:51 GMT
+# Wed, 23 Jan 2019 15:07:38 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:42 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:43 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4e24571d33b46f6f5dd9ba0d9ff7a1bcef973a982d002cac441d09f2aa0be7f`  
-		Last Modified: Sat, 12 Jan 2019 12:10:40 GMT  
-		Size: 213.4 MB (213360883 bytes)  
+	-	`sha256:fec60243c4f48e06e9e5ad6fce737b6376288d6182f703aca19bf9fc3aed50fd`  
+		Last Modified: Wed, 23 Jan 2019 15:44:09 GMT  
+		Size: 213.4 MB (213360233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6.13-slim` - linux; s390x
@@ -4168,7 +4168,7 @@ CMD ["erl"]
 ## `erlang:19.3.6-slim`
 
 ```console
-$ docker pull erlang@sha256:b15ba0269ff7b87549ee844db338aaabc26584f21d286c2d84c1764c7f6049ed
+$ docker pull erlang@sha256:fab604e5dfefb4a3a0456ae20a2acb7c4e24862a55ddc38cddac4520e75a1868
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4218,37 +4218,37 @@ CMD ["erl"]
 ### `erlang:19.3.6-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:e87fdd1f7c3a547b9e6999df5f8a44919cd177d510565fbf59f283576298a66f
+$ docker pull erlang@sha256:f4671effb3f5a8247d781c03782ee0a40efc5338f127dc26e6f161be1f7abaaf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.7 MB (242723155 bytes)**  
+-	Total Size: **242.7 MB (242736358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52630b455dc5dac831621f5538f964cc038888ca95e2d1ffbc04cace453857e6`
+-	Image ID: `sha256:f0494210bd7c5138b9794d943f09f1114d5812c395015398b744868bb198cbc7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 13:08:59 GMT
+# Wed, 23 Jan 2019 15:00:08 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:20:28 GMT
+# Wed, 23 Jan 2019 15:11:53 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:20:30 GMT
+# Wed, 23 Jan 2019 15:11:56 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe84d8f8c5e5d682d91d781d49076c93a01323f84e579e0fd7cb1e9f6123619`  
-		Last Modified: Sat, 12 Jan 2019 13:22:27 GMT  
-		Size: 200.6 MB (200648572 bytes)  
+	-	`sha256:58bd9f1ef4f2e5402294c6bab6d4d6672c0739202e28473add701682cd17b877`  
+		Last Modified: Wed, 23 Jan 2019 15:36:41 GMT  
+		Size: 200.6 MB (200648627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6-slim` - linux; arm64 variant v8
@@ -4290,37 +4290,37 @@ CMD ["erl"]
 ### `erlang:19.3.6-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:95336a837cd9572fe41de6d22162437c25911c2b1b372b98c994235b70ad88d7
+$ docker pull erlang@sha256:3313cd03275e629f15fcce1e87e8186f6caf4254128f33cb02125d053eef8424
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.4 MB (259418173 bytes)**  
+-	Total Size: **259.4 MB (259429688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68ef518f86360a2e3ec57e0af5e6898cec8389310d046599591109305551b759`
+-	Image ID: `sha256:f0a5565f74bcf1506733f997ce9aa4c88d0f623cbbaef5c1b2411f3bc0cbba7e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 11:53:51 GMT
+# Wed, 23 Jan 2019 15:07:38 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:42 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:43 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4e24571d33b46f6f5dd9ba0d9ff7a1bcef973a982d002cac441d09f2aa0be7f`  
-		Last Modified: Sat, 12 Jan 2019 12:10:40 GMT  
-		Size: 213.4 MB (213360883 bytes)  
+	-	`sha256:fec60243c4f48e06e9e5ad6fce737b6376288d6182f703aca19bf9fc3aed50fd`  
+		Last Modified: Wed, 23 Jan 2019 15:44:09 GMT  
+		Size: 213.4 MB (213360233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3.6-slim` - linux; s390x
@@ -4362,7 +4362,7 @@ CMD ["erl"]
 ## `erlang:19.3-slim`
 
 ```console
-$ docker pull erlang@sha256:b15ba0269ff7b87549ee844db338aaabc26584f21d286c2d84c1764c7f6049ed
+$ docker pull erlang@sha256:fab604e5dfefb4a3a0456ae20a2acb7c4e24862a55ddc38cddac4520e75a1868
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4412,37 +4412,37 @@ CMD ["erl"]
 ### `erlang:19.3-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:e87fdd1f7c3a547b9e6999df5f8a44919cd177d510565fbf59f283576298a66f
+$ docker pull erlang@sha256:f4671effb3f5a8247d781c03782ee0a40efc5338f127dc26e6f161be1f7abaaf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.7 MB (242723155 bytes)**  
+-	Total Size: **242.7 MB (242736358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52630b455dc5dac831621f5538f964cc038888ca95e2d1ffbc04cace453857e6`
+-	Image ID: `sha256:f0494210bd7c5138b9794d943f09f1114d5812c395015398b744868bb198cbc7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 13:08:59 GMT
+# Wed, 23 Jan 2019 15:00:08 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:20:28 GMT
+# Wed, 23 Jan 2019 15:11:53 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:20:30 GMT
+# Wed, 23 Jan 2019 15:11:56 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe84d8f8c5e5d682d91d781d49076c93a01323f84e579e0fd7cb1e9f6123619`  
-		Last Modified: Sat, 12 Jan 2019 13:22:27 GMT  
-		Size: 200.6 MB (200648572 bytes)  
+	-	`sha256:58bd9f1ef4f2e5402294c6bab6d4d6672c0739202e28473add701682cd17b877`  
+		Last Modified: Wed, 23 Jan 2019 15:36:41 GMT  
+		Size: 200.6 MB (200648627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3-slim` - linux; arm64 variant v8
@@ -4484,37 +4484,37 @@ CMD ["erl"]
 ### `erlang:19.3-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:95336a837cd9572fe41de6d22162437c25911c2b1b372b98c994235b70ad88d7
+$ docker pull erlang@sha256:3313cd03275e629f15fcce1e87e8186f6caf4254128f33cb02125d053eef8424
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.4 MB (259418173 bytes)**  
+-	Total Size: **259.4 MB (259429688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68ef518f86360a2e3ec57e0af5e6898cec8389310d046599591109305551b759`
+-	Image ID: `sha256:f0a5565f74bcf1506733f997ce9aa4c88d0f623cbbaef5c1b2411f3bc0cbba7e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 11:53:51 GMT
+# Wed, 23 Jan 2019 15:07:38 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:42 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:43 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4e24571d33b46f6f5dd9ba0d9ff7a1bcef973a982d002cac441d09f2aa0be7f`  
-		Last Modified: Sat, 12 Jan 2019 12:10:40 GMT  
-		Size: 213.4 MB (213360883 bytes)  
+	-	`sha256:fec60243c4f48e06e9e5ad6fce737b6376288d6182f703aca19bf9fc3aed50fd`  
+		Last Modified: Wed, 23 Jan 2019 15:44:09 GMT  
+		Size: 213.4 MB (213360233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19.3-slim` - linux; s390x
@@ -4556,7 +4556,7 @@ CMD ["erl"]
 ## `erlang:19-slim`
 
 ```console
-$ docker pull erlang@sha256:b15ba0269ff7b87549ee844db338aaabc26584f21d286c2d84c1764c7f6049ed
+$ docker pull erlang@sha256:fab604e5dfefb4a3a0456ae20a2acb7c4e24862a55ddc38cddac4520e75a1868
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4606,37 +4606,37 @@ CMD ["erl"]
 ### `erlang:19-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:e87fdd1f7c3a547b9e6999df5f8a44919cd177d510565fbf59f283576298a66f
+$ docker pull erlang@sha256:f4671effb3f5a8247d781c03782ee0a40efc5338f127dc26e6f161be1f7abaaf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.7 MB (242723155 bytes)**  
+-	Total Size: **242.7 MB (242736358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52630b455dc5dac831621f5538f964cc038888ca95e2d1ffbc04cace453857e6`
+-	Image ID: `sha256:f0494210bd7c5138b9794d943f09f1114d5812c395015398b744868bb198cbc7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 13:08:59 GMT
+# Wed, 23 Jan 2019 15:00:08 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 13:20:28 GMT
+# Wed, 23 Jan 2019 15:11:53 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 13:20:30 GMT
+# Wed, 23 Jan 2019 15:11:56 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe84d8f8c5e5d682d91d781d49076c93a01323f84e579e0fd7cb1e9f6123619`  
-		Last Modified: Sat, 12 Jan 2019 13:22:27 GMT  
-		Size: 200.6 MB (200648572 bytes)  
+	-	`sha256:58bd9f1ef4f2e5402294c6bab6d4d6672c0739202e28473add701682cd17b877`  
+		Last Modified: Wed, 23 Jan 2019 15:36:41 GMT  
+		Size: 200.6 MB (200648627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19-slim` - linux; arm64 variant v8
@@ -4678,37 +4678,37 @@ CMD ["erl"]
 ### `erlang:19-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:95336a837cd9572fe41de6d22162437c25911c2b1b372b98c994235b70ad88d7
+$ docker pull erlang@sha256:3313cd03275e629f15fcce1e87e8186f6caf4254128f33cb02125d053eef8424
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.4 MB (259418173 bytes)**  
+-	Total Size: **259.4 MB (259429688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68ef518f86360a2e3ec57e0af5e6898cec8389310d046599591109305551b759`
+-	Image ID: `sha256:f0a5565f74bcf1506733f997ce9aa4c88d0f623cbbaef5c1b2411f3bc0cbba7e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 12 Jan 2019 11:53:51 GMT
+# Wed, 23 Jan 2019 15:07:38 GMT
 ENV OTP_VERSION=19.3.6.13
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:42 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="11a914176a33068226644f4e999ecc6e965ab1c60a324d90020f164641631fae" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.2 		libsctp1 		libwxgtk3.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl1.0-dev 		libsctp-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Sat, 12 Jan 2019 12:09:01 GMT
+# Wed, 23 Jan 2019 15:22:43 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4e24571d33b46f6f5dd9ba0d9ff7a1bcef973a982d002cac441d09f2aa0be7f`  
-		Last Modified: Sat, 12 Jan 2019 12:10:40 GMT  
-		Size: 213.4 MB (213360883 bytes)  
+	-	`sha256:fec60243c4f48e06e9e5ad6fce737b6376288d6182f703aca19bf9fc3aed50fd`  
+		Last Modified: Wed, 23 Jan 2019 15:44:09 GMT  
+		Size: 213.4 MB (213360233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:19-slim` - linux; s390x
@@ -4750,7 +4750,7 @@ CMD ["erl"]
 ## `erlang:20`
 
 ```console
-$ docker pull erlang@sha256:bc896b21b35d65e4886bfada3e4616dd2eabed4cc40da793a6a48e2b660c2823
+$ docker pull erlang@sha256:3348465203f39832e65075bde20712453a8ef2a8514c1d06a43111e7bfe87e9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4841,77 +4841,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:c2c8539a510ec1cebfd6651535046c20a23fb0855533f939b2dbf1d75cf79e9d
+$ docker pull erlang@sha256:1dae12691e1122b85e4a730407d47aac58fb617de7aee88ea1e4a481e1719bbd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.0 MB (427975110 bytes)**  
+-	Total Size: **428.0 MB (427989154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f47e9e5fa88cc37a5f70b0757501f79155d1a409a74666312b04b2db60ec3977`
+-	Image ID: `sha256:838722b1d9ca38c5f17dc9475757d2780fab53776633dbd9871608a4004b5708`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:29:46 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:07:07 GMT
+# Wed, 23 Jan 2019 14:39:49 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 13:07:58 GMT
+# Wed, 23 Jan 2019 14:40:41 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f1a51d8e91634b3d22e02d7f7a71ee2494618b14d3afc0cf91636bdeb72ed4`  
-		Last Modified: Sat, 19 Jan 2019 13:15:00 GMT  
-		Size: 129.9 MB (129895190 bytes)  
+	-	`sha256:c36ea0fd6549b83c367122042a65c95c229994d37e5032d29fd684cb8a00cc04`  
+		Last Modified: Wed, 23 Jan 2019 15:34:36 GMT  
+		Size: 129.9 MB (129895256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:194eb79a45d5f63df49eaa760b553f238362a473104f89ec678941bee72a4549`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 202.0 KB (201967 bytes)  
+	-	`sha256:1a92c7b69daf2111a97768b5e0ef3362202e8e36e193a4811e050906240ad879`  
+		Last Modified: Wed, 23 Jan 2019 15:34:09 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eea6c2b1416752be4422561b0c4ff9b0739f50af6849d0e9d0d44e0dde2b46c0`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 982.7 KB (982660 bytes)  
+	-	`sha256:4fb224dc69f71dd7870a1d37545d32ada190e817ed27cadb896839b3f387cb6a`  
+		Last Modified: Wed, 23 Jan 2019 15:34:10 GMT  
+		Size: 982.7 KB (982658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20` - linux; arm64 variant v8
@@ -4993,77 +4993,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:e9a1af8af48f824b44da7935c2d6bfd057872c959c8cd5c7fc0ee8b4ff60845c
+$ docker pull erlang@sha256:4364fd6fe7592a0cdab50ccfaec0d9ffcd561191a65b8fc7c9498db19f069aa3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.5 MB (467453122 bytes)**  
+-	Total Size: **467.5 MB (467465089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a1343bc272a4c2a40aa734df0b7857f7907a2063a4fbf76e7d2ee8457c3d9c`
+-	Image ID: `sha256:b6470a98ecdbf03eaa9f00d1288f72d44f8216f30beef58446f016e04c9344e5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:38:31 GMT
+# Wed, 23 Jan 2019 14:26:59 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 11:51:54 GMT
+# Wed, 23 Jan 2019 14:40:06 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:09 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:10 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 11:52:30 GMT
+# Wed, 23 Jan 2019 14:40:42 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c98cfd163b2c662c66e229c3794be92ee546c8e8fb395352151d1e07863bfa`  
-		Last Modified: Sat, 19 Jan 2019 12:19:35 GMT  
-		Size: 133.9 MB (133929524 bytes)  
+	-	`sha256:3eb9207e0bd4a8f4f891f5b8b327952eb88765c095b754f7fcf3d9c2d5f7476b`  
+		Last Modified: Wed, 23 Jan 2019 15:42:39 GMT  
+		Size: 133.9 MB (133929215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cad9777f80c864e57e892b43d842fa90dccabf754c6ee84a3ea0c32f987897`  
-		Last Modified: Sat, 19 Jan 2019 12:19:17 GMT  
-		Size: 202.0 KB (201972 bytes)  
+	-	`sha256:49d79c1cce67fd75d67b062fd7d99d70e7afa32aef6b83a517f8c6b4f2fe5182`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5175cbd0c2d62fd819e74e916ae7e838114f8c75488c1f2ea341a004e672dcd`  
-		Last Modified: Sat, 19 Jan 2019 12:19:18 GMT  
-		Size: 982.7 KB (982662 bytes)  
+	-	`sha256:51fab39ae8384467d210bda361cbd6f6db3ff3dd58807f83e5f4ccfe514281b8`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 982.7 KB (982659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20` - linux; ppc64le
@@ -5221,7 +5221,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:20.3`
 
 ```console
-$ docker pull erlang@sha256:bc896b21b35d65e4886bfada3e4616dd2eabed4cc40da793a6a48e2b660c2823
+$ docker pull erlang@sha256:3348465203f39832e65075bde20712453a8ef2a8514c1d06a43111e7bfe87e9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5312,77 +5312,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:c2c8539a510ec1cebfd6651535046c20a23fb0855533f939b2dbf1d75cf79e9d
+$ docker pull erlang@sha256:1dae12691e1122b85e4a730407d47aac58fb617de7aee88ea1e4a481e1719bbd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.0 MB (427975110 bytes)**  
+-	Total Size: **428.0 MB (427989154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f47e9e5fa88cc37a5f70b0757501f79155d1a409a74666312b04b2db60ec3977`
+-	Image ID: `sha256:838722b1d9ca38c5f17dc9475757d2780fab53776633dbd9871608a4004b5708`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:29:46 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:07:07 GMT
+# Wed, 23 Jan 2019 14:39:49 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 13:07:58 GMT
+# Wed, 23 Jan 2019 14:40:41 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f1a51d8e91634b3d22e02d7f7a71ee2494618b14d3afc0cf91636bdeb72ed4`  
-		Last Modified: Sat, 19 Jan 2019 13:15:00 GMT  
-		Size: 129.9 MB (129895190 bytes)  
+	-	`sha256:c36ea0fd6549b83c367122042a65c95c229994d37e5032d29fd684cb8a00cc04`  
+		Last Modified: Wed, 23 Jan 2019 15:34:36 GMT  
+		Size: 129.9 MB (129895256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:194eb79a45d5f63df49eaa760b553f238362a473104f89ec678941bee72a4549`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 202.0 KB (201967 bytes)  
+	-	`sha256:1a92c7b69daf2111a97768b5e0ef3362202e8e36e193a4811e050906240ad879`  
+		Last Modified: Wed, 23 Jan 2019 15:34:09 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eea6c2b1416752be4422561b0c4ff9b0739f50af6849d0e9d0d44e0dde2b46c0`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 982.7 KB (982660 bytes)  
+	-	`sha256:4fb224dc69f71dd7870a1d37545d32ada190e817ed27cadb896839b3f387cb6a`  
+		Last Modified: Wed, 23 Jan 2019 15:34:10 GMT  
+		Size: 982.7 KB (982658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3` - linux; arm64 variant v8
@@ -5464,77 +5464,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:e9a1af8af48f824b44da7935c2d6bfd057872c959c8cd5c7fc0ee8b4ff60845c
+$ docker pull erlang@sha256:4364fd6fe7592a0cdab50ccfaec0d9ffcd561191a65b8fc7c9498db19f069aa3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.5 MB (467453122 bytes)**  
+-	Total Size: **467.5 MB (467465089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a1343bc272a4c2a40aa734df0b7857f7907a2063a4fbf76e7d2ee8457c3d9c`
+-	Image ID: `sha256:b6470a98ecdbf03eaa9f00d1288f72d44f8216f30beef58446f016e04c9344e5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:38:31 GMT
+# Wed, 23 Jan 2019 14:26:59 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 11:51:54 GMT
+# Wed, 23 Jan 2019 14:40:06 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:09 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:10 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 11:52:30 GMT
+# Wed, 23 Jan 2019 14:40:42 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c98cfd163b2c662c66e229c3794be92ee546c8e8fb395352151d1e07863bfa`  
-		Last Modified: Sat, 19 Jan 2019 12:19:35 GMT  
-		Size: 133.9 MB (133929524 bytes)  
+	-	`sha256:3eb9207e0bd4a8f4f891f5b8b327952eb88765c095b754f7fcf3d9c2d5f7476b`  
+		Last Modified: Wed, 23 Jan 2019 15:42:39 GMT  
+		Size: 133.9 MB (133929215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cad9777f80c864e57e892b43d842fa90dccabf754c6ee84a3ea0c32f987897`  
-		Last Modified: Sat, 19 Jan 2019 12:19:17 GMT  
-		Size: 202.0 KB (201972 bytes)  
+	-	`sha256:49d79c1cce67fd75d67b062fd7d99d70e7afa32aef6b83a517f8c6b4f2fe5182`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5175cbd0c2d62fd819e74e916ae7e838114f8c75488c1f2ea341a004e672dcd`  
-		Last Modified: Sat, 19 Jan 2019 12:19:18 GMT  
-		Size: 982.7 KB (982662 bytes)  
+	-	`sha256:51fab39ae8384467d210bda361cbd6f6db3ff3dd58807f83e5f4ccfe514281b8`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 982.7 KB (982659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3` - linux; ppc64le
@@ -5692,7 +5692,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:20.3.8`
 
 ```console
-$ docker pull erlang@sha256:bc896b21b35d65e4886bfada3e4616dd2eabed4cc40da793a6a48e2b660c2823
+$ docker pull erlang@sha256:3348465203f39832e65075bde20712453a8ef2a8514c1d06a43111e7bfe87e9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5783,77 +5783,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3.8` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:c2c8539a510ec1cebfd6651535046c20a23fb0855533f939b2dbf1d75cf79e9d
+$ docker pull erlang@sha256:1dae12691e1122b85e4a730407d47aac58fb617de7aee88ea1e4a481e1719bbd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.0 MB (427975110 bytes)**  
+-	Total Size: **428.0 MB (427989154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f47e9e5fa88cc37a5f70b0757501f79155d1a409a74666312b04b2db60ec3977`
+-	Image ID: `sha256:838722b1d9ca38c5f17dc9475757d2780fab53776633dbd9871608a4004b5708`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:29:46 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:07:07 GMT
+# Wed, 23 Jan 2019 14:39:49 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 13:07:58 GMT
+# Wed, 23 Jan 2019 14:40:41 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f1a51d8e91634b3d22e02d7f7a71ee2494618b14d3afc0cf91636bdeb72ed4`  
-		Last Modified: Sat, 19 Jan 2019 13:15:00 GMT  
-		Size: 129.9 MB (129895190 bytes)  
+	-	`sha256:c36ea0fd6549b83c367122042a65c95c229994d37e5032d29fd684cb8a00cc04`  
+		Last Modified: Wed, 23 Jan 2019 15:34:36 GMT  
+		Size: 129.9 MB (129895256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:194eb79a45d5f63df49eaa760b553f238362a473104f89ec678941bee72a4549`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 202.0 KB (201967 bytes)  
+	-	`sha256:1a92c7b69daf2111a97768b5e0ef3362202e8e36e193a4811e050906240ad879`  
+		Last Modified: Wed, 23 Jan 2019 15:34:09 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eea6c2b1416752be4422561b0c4ff9b0739f50af6849d0e9d0d44e0dde2b46c0`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 982.7 KB (982660 bytes)  
+	-	`sha256:4fb224dc69f71dd7870a1d37545d32ada190e817ed27cadb896839b3f387cb6a`  
+		Last Modified: Wed, 23 Jan 2019 15:34:10 GMT  
+		Size: 982.7 KB (982658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8` - linux; arm64 variant v8
@@ -5935,77 +5935,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3.8` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:e9a1af8af48f824b44da7935c2d6bfd057872c959c8cd5c7fc0ee8b4ff60845c
+$ docker pull erlang@sha256:4364fd6fe7592a0cdab50ccfaec0d9ffcd561191a65b8fc7c9498db19f069aa3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.5 MB (467453122 bytes)**  
+-	Total Size: **467.5 MB (467465089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a1343bc272a4c2a40aa734df0b7857f7907a2063a4fbf76e7d2ee8457c3d9c`
+-	Image ID: `sha256:b6470a98ecdbf03eaa9f00d1288f72d44f8216f30beef58446f016e04c9344e5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:38:31 GMT
+# Wed, 23 Jan 2019 14:26:59 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 11:51:54 GMT
+# Wed, 23 Jan 2019 14:40:06 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:09 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:10 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 11:52:30 GMT
+# Wed, 23 Jan 2019 14:40:42 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c98cfd163b2c662c66e229c3794be92ee546c8e8fb395352151d1e07863bfa`  
-		Last Modified: Sat, 19 Jan 2019 12:19:35 GMT  
-		Size: 133.9 MB (133929524 bytes)  
+	-	`sha256:3eb9207e0bd4a8f4f891f5b8b327952eb88765c095b754f7fcf3d9c2d5f7476b`  
+		Last Modified: Wed, 23 Jan 2019 15:42:39 GMT  
+		Size: 133.9 MB (133929215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cad9777f80c864e57e892b43d842fa90dccabf754c6ee84a3ea0c32f987897`  
-		Last Modified: Sat, 19 Jan 2019 12:19:17 GMT  
-		Size: 202.0 KB (201972 bytes)  
+	-	`sha256:49d79c1cce67fd75d67b062fd7d99d70e7afa32aef6b83a517f8c6b4f2fe5182`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5175cbd0c2d62fd819e74e916ae7e838114f8c75488c1f2ea341a004e672dcd`  
-		Last Modified: Sat, 19 Jan 2019 12:19:18 GMT  
-		Size: 982.7 KB (982662 bytes)  
+	-	`sha256:51fab39ae8384467d210bda361cbd6f6db3ff3dd58807f83e5f4ccfe514281b8`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 982.7 KB (982659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8` - linux; ppc64le
@@ -6163,7 +6163,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:20.3.8.18`
 
 ```console
-$ docker pull erlang@sha256:bc896b21b35d65e4886bfada3e4616dd2eabed4cc40da793a6a48e2b660c2823
+$ docker pull erlang@sha256:3348465203f39832e65075bde20712453a8ef2a8514c1d06a43111e7bfe87e9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6254,77 +6254,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3.8.18` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:c2c8539a510ec1cebfd6651535046c20a23fb0855533f939b2dbf1d75cf79e9d
+$ docker pull erlang@sha256:1dae12691e1122b85e4a730407d47aac58fb617de7aee88ea1e4a481e1719bbd
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.0 MB (427975110 bytes)**  
+-	Total Size: **428.0 MB (427989154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f47e9e5fa88cc37a5f70b0757501f79155d1a409a74666312b04b2db60ec3977`
+-	Image ID: `sha256:838722b1d9ca38c5f17dc9475757d2780fab53776633dbd9871608a4004b5708`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:29:46 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:07:07 GMT
+# Wed, 23 Jan 2019 14:39:49 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 13:07:09 GMT
+# Wed, 23 Jan 2019 14:39:50 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 13:07:14 GMT
+# Wed, 23 Jan 2019 14:39:56 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 13:07:58 GMT
+# Wed, 23 Jan 2019 14:40:41 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f1a51d8e91634b3d22e02d7f7a71ee2494618b14d3afc0cf91636bdeb72ed4`  
-		Last Modified: Sat, 19 Jan 2019 13:15:00 GMT  
-		Size: 129.9 MB (129895190 bytes)  
+	-	`sha256:c36ea0fd6549b83c367122042a65c95c229994d37e5032d29fd684cb8a00cc04`  
+		Last Modified: Wed, 23 Jan 2019 15:34:36 GMT  
+		Size: 129.9 MB (129895256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:194eb79a45d5f63df49eaa760b553f238362a473104f89ec678941bee72a4549`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 202.0 KB (201967 bytes)  
+	-	`sha256:1a92c7b69daf2111a97768b5e0ef3362202e8e36e193a4811e050906240ad879`  
+		Last Modified: Wed, 23 Jan 2019 15:34:09 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eea6c2b1416752be4422561b0c4ff9b0739f50af6849d0e9d0d44e0dde2b46c0`  
-		Last Modified: Sat, 19 Jan 2019 13:14:34 GMT  
-		Size: 982.7 KB (982660 bytes)  
+	-	`sha256:4fb224dc69f71dd7870a1d37545d32ada190e817ed27cadb896839b3f387cb6a`  
+		Last Modified: Wed, 23 Jan 2019 15:34:10 GMT  
+		Size: 982.7 KB (982658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8.18` - linux; arm64 variant v8
@@ -6406,77 +6406,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:20.3.8.18` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:e9a1af8af48f824b44da7935c2d6bfd057872c959c8cd5c7fc0ee8b4ff60845c
+$ docker pull erlang@sha256:4364fd6fe7592a0cdab50ccfaec0d9ffcd561191a65b8fc7c9498db19f069aa3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.5 MB (467453122 bytes)**  
+-	Total Size: **467.5 MB (467465089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a1343bc272a4c2a40aa734df0b7857f7907a2063a4fbf76e7d2ee8457c3d9c`
+-	Image ID: `sha256:b6470a98ecdbf03eaa9f00d1288f72d44f8216f30beef58446f016e04c9344e5`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:38:31 GMT
+# Wed, 23 Jan 2019 14:26:59 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 11:51:53 GMT
+# Wed, 23 Jan 2019 14:40:05 GMT
 CMD ["erl"]
-# Sat, 19 Jan 2019 11:51:54 GMT
+# Wed, 23 Jan 2019 14:40:06 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:09 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Sat, 19 Jan 2019 11:51:57 GMT
+# Wed, 23 Jan 2019 14:40:10 GMT
 ENV REBAR3_VERSION=3.8.0
-# Sat, 19 Jan 2019 11:52:30 GMT
+# Wed, 23 Jan 2019 14:40:42 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c98cfd163b2c662c66e229c3794be92ee546c8e8fb395352151d1e07863bfa`  
-		Last Modified: Sat, 19 Jan 2019 12:19:35 GMT  
-		Size: 133.9 MB (133929524 bytes)  
+	-	`sha256:3eb9207e0bd4a8f4f891f5b8b327952eb88765c095b754f7fcf3d9c2d5f7476b`  
+		Last Modified: Wed, 23 Jan 2019 15:42:39 GMT  
+		Size: 133.9 MB (133929215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71cad9777f80c864e57e892b43d842fa90dccabf754c6ee84a3ea0c32f987897`  
-		Last Modified: Sat, 19 Jan 2019 12:19:17 GMT  
-		Size: 202.0 KB (201972 bytes)  
+	-	`sha256:49d79c1cce67fd75d67b062fd7d99d70e7afa32aef6b83a517f8c6b4f2fe5182`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 202.0 KB (201976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5175cbd0c2d62fd819e74e916ae7e838114f8c75488c1f2ea341a004e672dcd`  
-		Last Modified: Sat, 19 Jan 2019 12:19:18 GMT  
-		Size: 982.7 KB (982662 bytes)  
+	-	`sha256:51fab39ae8384467d210bda361cbd6f6db3ff3dd58807f83e5f4ccfe514281b8`  
+		Last Modified: Wed, 23 Jan 2019 15:42:22 GMT  
+		Size: 982.7 KB (982659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8.18` - linux; ppc64le
@@ -6852,7 +6852,7 @@ CMD ["erl"]
 ## `erlang:20.3.8.18-slim`
 
 ```console
-$ docker pull erlang@sha256:0c3163c894794f6e68652490f28963b060a8573e52f2699d9294f1578ecfc226
+$ docker pull erlang@sha256:2912a2c3d59bd4ea641bd0cc2ab431011f3450f2466b43cfdff0dc010be08ef6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6903,37 +6903,37 @@ CMD ["erl"]
 ### `erlang:20.3.8.18-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:30a685cfcb521a1faf2dc95fb4675e40650067459c0aeab6e8c1f8b16d5e5c17
+$ docker pull erlang@sha256:2a7dc00dd451833e1b64755cd9c30b77594249a48d2f7918ce047827aa7f2d32
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.2 MB (102175810 bytes)**  
+-	Total Size: **102.2 MB (102188987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19a0c9d52b87c9c6fe71213b24af02a143975e04549bf7e4f56bc225777872a1`
+-	Image ID: `sha256:a676d4dbf447aeeb2cb5df09d9032ec705a48cd2e8c6e9cf8120d404619c1484`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:40:54 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:13:50 GMT
+# Wed, 23 Jan 2019 14:47:10 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:13:51 GMT
+# Wed, 23 Jan 2019 14:47:12 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce9b229c46f9bbb2f658976f4129ecde73c263e1bc3584c73209a5ab81bcbce`  
-		Last Modified: Sat, 19 Jan 2019 13:15:39 GMT  
-		Size: 60.1 MB (60101227 bytes)  
+	-	`sha256:1b2be8868d59a6c85443d4b9509f32e72e9a314261283950dacd453e5a5d45b9`  
+		Last Modified: Wed, 23 Jan 2019 15:35:06 GMT  
+		Size: 60.1 MB (60101256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8.18-slim` - linux; arm64 variant v8
@@ -6975,37 +6975,37 @@ CMD ["erl"]
 ### `erlang:20.3.8.18-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:39d159d31faa6767a18b474e4632ea9e42d18f8a5f84323ec6bf4d1756a851c0
+$ docker pull erlang@sha256:54c03afa21a492caa4df417de226782f6630de09ac3824abc073d5de497fde3a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.3 MB (114260820 bytes)**  
+-	Total Size: **114.3 MB (114274854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f39ee01d81cee1f384489954fbd11a50832e9e67aec38abfc0feafe7ccf46253`
+-	Image ID: `sha256:55437859b97e35ec8194aeb0887af56a39e15cb58751c3122c2a062055c62899`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 11:52:38 GMT
+# Wed, 23 Jan 2019 14:40:52 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdfb98db19d6dacc7a1f893ffe174c7e54e86283d9c4224136a8774f1d13738`  
-		Last Modified: Sat, 19 Jan 2019 12:19:54 GMT  
-		Size: 68.2 MB (68203530 bytes)  
+	-	`sha256:19ac79ce3181a65d7cebe1dde7287770e1a81a9c014823468342ba5a1650f5f0`  
+		Last Modified: Wed, 23 Jan 2019 15:42:59 GMT  
+		Size: 68.2 MB (68205399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8.18-slim` - linux; ppc64le
@@ -7301,7 +7301,7 @@ CMD ["erl"]
 ## `erlang:20.3.8-slim`
 
 ```console
-$ docker pull erlang@sha256:0c3163c894794f6e68652490f28963b060a8573e52f2699d9294f1578ecfc226
+$ docker pull erlang@sha256:2912a2c3d59bd4ea641bd0cc2ab431011f3450f2466b43cfdff0dc010be08ef6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7352,37 +7352,37 @@ CMD ["erl"]
 ### `erlang:20.3.8-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:30a685cfcb521a1faf2dc95fb4675e40650067459c0aeab6e8c1f8b16d5e5c17
+$ docker pull erlang@sha256:2a7dc00dd451833e1b64755cd9c30b77594249a48d2f7918ce047827aa7f2d32
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.2 MB (102175810 bytes)**  
+-	Total Size: **102.2 MB (102188987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19a0c9d52b87c9c6fe71213b24af02a143975e04549bf7e4f56bc225777872a1`
+-	Image ID: `sha256:a676d4dbf447aeeb2cb5df09d9032ec705a48cd2e8c6e9cf8120d404619c1484`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:40:54 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:13:50 GMT
+# Wed, 23 Jan 2019 14:47:10 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:13:51 GMT
+# Wed, 23 Jan 2019 14:47:12 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce9b229c46f9bbb2f658976f4129ecde73c263e1bc3584c73209a5ab81bcbce`  
-		Last Modified: Sat, 19 Jan 2019 13:15:39 GMT  
-		Size: 60.1 MB (60101227 bytes)  
+	-	`sha256:1b2be8868d59a6c85443d4b9509f32e72e9a314261283950dacd453e5a5d45b9`  
+		Last Modified: Wed, 23 Jan 2019 15:35:06 GMT  
+		Size: 60.1 MB (60101256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8-slim` - linux; arm64 variant v8
@@ -7424,37 +7424,37 @@ CMD ["erl"]
 ### `erlang:20.3.8-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:39d159d31faa6767a18b474e4632ea9e42d18f8a5f84323ec6bf4d1756a851c0
+$ docker pull erlang@sha256:54c03afa21a492caa4df417de226782f6630de09ac3824abc073d5de497fde3a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.3 MB (114260820 bytes)**  
+-	Total Size: **114.3 MB (114274854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f39ee01d81cee1f384489954fbd11a50832e9e67aec38abfc0feafe7ccf46253`
+-	Image ID: `sha256:55437859b97e35ec8194aeb0887af56a39e15cb58751c3122c2a062055c62899`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 11:52:38 GMT
+# Wed, 23 Jan 2019 14:40:52 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdfb98db19d6dacc7a1f893ffe174c7e54e86283d9c4224136a8774f1d13738`  
-		Last Modified: Sat, 19 Jan 2019 12:19:54 GMT  
-		Size: 68.2 MB (68203530 bytes)  
+	-	`sha256:19ac79ce3181a65d7cebe1dde7287770e1a81a9c014823468342ba5a1650f5f0`  
+		Last Modified: Wed, 23 Jan 2019 15:42:59 GMT  
+		Size: 68.2 MB (68205399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3.8-slim` - linux; ppc64le
@@ -7750,7 +7750,7 @@ CMD ["erl"]
 ## `erlang:20.3-slim`
 
 ```console
-$ docker pull erlang@sha256:0c3163c894794f6e68652490f28963b060a8573e52f2699d9294f1578ecfc226
+$ docker pull erlang@sha256:2912a2c3d59bd4ea641bd0cc2ab431011f3450f2466b43cfdff0dc010be08ef6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7801,37 +7801,37 @@ CMD ["erl"]
 ### `erlang:20.3-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:30a685cfcb521a1faf2dc95fb4675e40650067459c0aeab6e8c1f8b16d5e5c17
+$ docker pull erlang@sha256:2a7dc00dd451833e1b64755cd9c30b77594249a48d2f7918ce047827aa7f2d32
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.2 MB (102175810 bytes)**  
+-	Total Size: **102.2 MB (102188987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19a0c9d52b87c9c6fe71213b24af02a143975e04549bf7e4f56bc225777872a1`
+-	Image ID: `sha256:a676d4dbf447aeeb2cb5df09d9032ec705a48cd2e8c6e9cf8120d404619c1484`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:40:54 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:13:50 GMT
+# Wed, 23 Jan 2019 14:47:10 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:13:51 GMT
+# Wed, 23 Jan 2019 14:47:12 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce9b229c46f9bbb2f658976f4129ecde73c263e1bc3584c73209a5ab81bcbce`  
-		Last Modified: Sat, 19 Jan 2019 13:15:39 GMT  
-		Size: 60.1 MB (60101227 bytes)  
+	-	`sha256:1b2be8868d59a6c85443d4b9509f32e72e9a314261283950dacd453e5a5d45b9`  
+		Last Modified: Wed, 23 Jan 2019 15:35:06 GMT  
+		Size: 60.1 MB (60101256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3-slim` - linux; arm64 variant v8
@@ -7873,37 +7873,37 @@ CMD ["erl"]
 ### `erlang:20.3-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:39d159d31faa6767a18b474e4632ea9e42d18f8a5f84323ec6bf4d1756a851c0
+$ docker pull erlang@sha256:54c03afa21a492caa4df417de226782f6630de09ac3824abc073d5de497fde3a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.3 MB (114260820 bytes)**  
+-	Total Size: **114.3 MB (114274854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f39ee01d81cee1f384489954fbd11a50832e9e67aec38abfc0feafe7ccf46253`
+-	Image ID: `sha256:55437859b97e35ec8194aeb0887af56a39e15cb58751c3122c2a062055c62899`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 11:52:38 GMT
+# Wed, 23 Jan 2019 14:40:52 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdfb98db19d6dacc7a1f893ffe174c7e54e86283d9c4224136a8774f1d13738`  
-		Last Modified: Sat, 19 Jan 2019 12:19:54 GMT  
-		Size: 68.2 MB (68203530 bytes)  
+	-	`sha256:19ac79ce3181a65d7cebe1dde7287770e1a81a9c014823468342ba5a1650f5f0`  
+		Last Modified: Wed, 23 Jan 2019 15:42:59 GMT  
+		Size: 68.2 MB (68205399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20.3-slim` - linux; ppc64le
@@ -8199,7 +8199,7 @@ CMD ["erl"]
 ## `erlang:20-slim`
 
 ```console
-$ docker pull erlang@sha256:0c3163c894794f6e68652490f28963b060a8573e52f2699d9294f1578ecfc226
+$ docker pull erlang@sha256:2912a2c3d59bd4ea641bd0cc2ab431011f3450f2466b43cfdff0dc010be08ef6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8250,37 +8250,37 @@ CMD ["erl"]
 ### `erlang:20-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:30a685cfcb521a1faf2dc95fb4675e40650067459c0aeab6e8c1f8b16d5e5c17
+$ docker pull erlang@sha256:2a7dc00dd451833e1b64755cd9c30b77594249a48d2f7918ce047827aa7f2d32
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.2 MB (102175810 bytes)**  
+-	Total Size: **102.2 MB (102188987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19a0c9d52b87c9c6fe71213b24af02a143975e04549bf7e4f56bc225777872a1`
+-	Image ID: `sha256:a676d4dbf447aeeb2cb5df09d9032ec705a48cd2e8c6e9cf8120d404619c1484`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 13:08:10 GMT
+# Wed, 23 Jan 2019 14:40:54 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 13:13:50 GMT
+# Wed, 23 Jan 2019 14:47:10 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 13:13:51 GMT
+# Wed, 23 Jan 2019 14:47:12 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce9b229c46f9bbb2f658976f4129ecde73c263e1bc3584c73209a5ab81bcbce`  
-		Last Modified: Sat, 19 Jan 2019 13:15:39 GMT  
-		Size: 60.1 MB (60101227 bytes)  
+	-	`sha256:1b2be8868d59a6c85443d4b9509f32e72e9a314261283950dacd453e5a5d45b9`  
+		Last Modified: Wed, 23 Jan 2019 15:35:06 GMT  
+		Size: 60.1 MB (60101256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20-slim` - linux; arm64 variant v8
@@ -8322,37 +8322,37 @@ CMD ["erl"]
 ### `erlang:20-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:39d159d31faa6767a18b474e4632ea9e42d18f8a5f84323ec6bf4d1756a851c0
+$ docker pull erlang@sha256:54c03afa21a492caa4df417de226782f6630de09ac3824abc073d5de497fde3a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.3 MB (114260820 bytes)**  
+-	Total Size: **114.3 MB (114274854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f39ee01d81cee1f384489954fbd11a50832e9e67aec38abfc0feafe7ccf46253`
+-	Image ID: `sha256:55437859b97e35ec8194aeb0887af56a39e15cb58751c3122c2a062055c62899`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 19 Jan 2019 11:52:38 GMT
+# Wed, 23 Jan 2019 14:40:52 GMT
 ENV OTP_VERSION=20.3.8.18
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b3f4a353b633d4267a23a9b3d77c74b19b100545207e6b6bd065cde265395024" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Sat, 19 Jan 2019 12:04:25 GMT
+# Wed, 23 Jan 2019 14:52:26 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdfb98db19d6dacc7a1f893ffe174c7e54e86283d9c4224136a8774f1d13738`  
-		Last Modified: Sat, 19 Jan 2019 12:19:54 GMT  
-		Size: 68.2 MB (68203530 bytes)  
+	-	`sha256:19ac79ce3181a65d7cebe1dde7287770e1a81a9c014823468342ba5a1650f5f0`  
+		Last Modified: Wed, 23 Jan 2019 15:42:59 GMT  
+		Size: 68.2 MB (68205399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20-slim` - linux; ppc64le
@@ -8430,7 +8430,7 @@ CMD ["erl"]
 ## `erlang:21`
 
 ```console
-$ docker pull erlang@sha256:4bb1411a50e4f29aab603505e83d0db2c0422bbe20bacecb6b42811f5e24c703
+$ docker pull erlang@sha256:326567cd6bcd98d6b12ffb55ee103ed29f9e261f41b46d9762be1a7a1a99fd43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8521,77 +8521,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:a20f5c67d8d6b42c2ff8093e2d0c3a9359110a777d8a505f3ff563f902324459
+$ docker pull erlang@sha256:c1cc6641400b91dd643d0085b9b38a140a6f1ebbb5a650ed02792e29b38deb0c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **424.5 MB (424484362 bytes)**  
+-	Total Size: **424.5 MB (424499877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c7406be79706c3ceff9066bdb2958f664b3eec876c520d947a0d2561027440d`
+-	Image ID: `sha256:a751459bce402e731fbb31be284dd6025e7688f65fd92ed674c09f6a46f9970f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:10:46 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:07:31 GMT
+# Wed, 23 Jan 2019 14:22:01 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:07:32 GMT
+# Wed, 23 Jan 2019 14:22:02 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 13:07:33 GMT
+# Wed, 23 Jan 2019 14:22:03 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 13:07:38 GMT
+# Wed, 23 Jan 2019 14:22:08 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 13:07:39 GMT
+# Wed, 23 Jan 2019 14:22:09 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 13:08:20 GMT
+# Wed, 23 Jan 2019 14:22:52 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26ec917611d63c22e4401547b7321017a73d6096985968bd6aeecdb6c2d7b7f`  
-		Last Modified: Fri, 18 Jan 2019 13:15:29 GMT  
-		Size: 126.4 MB (126408349 bytes)  
+	-	`sha256:c56828676bcdae61c8feaedd8aae8c216465faa13fcea6eaa839f0e01a512312`  
+		Last Modified: Wed, 23 Jan 2019 15:33:34 GMT  
+		Size: 126.4 MB (126409852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:468b06fe3a3f3a7185064103f12060f0af4b00e41b299187adf8822fe60030af`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 201.4 KB (201437 bytes)  
+	-	`sha256:e874654b321f6e27b497c62692370fb742c9e639db086a82ee60cc127181c1c1`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 201.4 KB (201440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:615fc312e989e8a6fcba639a81b734d0cb9d8ebe249003de6e68d48adf6c8832`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 979.3 KB (979283 bytes)  
+	-	`sha256:d84d375953e87a3a2fd89a1f16c82298256c4d2e88ebc3c2e2baef4277f8ce50`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 979.3 KB (979321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21` - linux; arm64 variant v8
@@ -8673,77 +8673,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:cc5ec904037eb3dc8a2f1bc6044d8c9394202526bcb84f5e85809474e90d6f37
+$ docker pull erlang@sha256:7c3cf0c6ffb878fa7fac60d87441bf16a973591f26992bf61cf1621302bbed25
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **464.0 MB (464001826 bytes)**  
+-	Total Size: **464.0 MB (464015498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d84ad244afac07bc469fa35190a8767ec991ef261bef09a0dfa44483c4a58a1c`
+-	Image ID: `sha256:6a4ee28f29c7165ae904c259fa70ab5971258924b4ae5739ffe689bcf768a73e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:41:46 GMT
+# Wed, 23 Jan 2019 14:01:59 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:51 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 11:54:57 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 11:54:58 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 11:55:24 GMT
+# Wed, 23 Jan 2019 14:15:20 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:210b66135597075563d7cefa8512002dcb10d2d5a9ac5ddb0ea425d935c71eb0`  
-		Last Modified: Fri, 18 Jan 2019 12:22:02 GMT  
-		Size: 130.5 MB (130482110 bytes)  
+	-	`sha256:4c44932eafb1e77a614af874ab5e4b47c9ff10ade8eff65a7dcdd77cea098e5e`  
+		Last Modified: Wed, 23 Jan 2019 15:41:57 GMT  
+		Size: 130.5 MB (130483533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9496217595134328d25c66adcbc193054889a744c46435903073db3fd979993`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 201.5 KB (201471 bytes)  
+	-	`sha256:225fc766e6f61875cad6c5da1ac3000bbaf551f84310ac712e7d66c7f38ebe09`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 201.4 KB (201448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34c9f6dd5592bf7f1cc5b24d3d9cebd0a51159f5f8e4414d7501c13756809313`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 979.3 KB (979281 bytes)  
+	-	`sha256:4426491c25d4aff1f44b3e74ed41ab84349bbf40c36890130e6ec7bc92e33658`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 979.3 KB (979278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21` - linux; ppc64le
@@ -8901,7 +8901,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:21.2`
 
 ```console
-$ docker pull erlang@sha256:4bb1411a50e4f29aab603505e83d0db2c0422bbe20bacecb6b42811f5e24c703
+$ docker pull erlang@sha256:326567cd6bcd98d6b12ffb55ee103ed29f9e261f41b46d9762be1a7a1a99fd43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8992,77 +8992,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21.2` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:a20f5c67d8d6b42c2ff8093e2d0c3a9359110a777d8a505f3ff563f902324459
+$ docker pull erlang@sha256:c1cc6641400b91dd643d0085b9b38a140a6f1ebbb5a650ed02792e29b38deb0c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **424.5 MB (424484362 bytes)**  
+-	Total Size: **424.5 MB (424499877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c7406be79706c3ceff9066bdb2958f664b3eec876c520d947a0d2561027440d`
+-	Image ID: `sha256:a751459bce402e731fbb31be284dd6025e7688f65fd92ed674c09f6a46f9970f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:10:46 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:07:31 GMT
+# Wed, 23 Jan 2019 14:22:01 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:07:32 GMT
+# Wed, 23 Jan 2019 14:22:02 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 13:07:33 GMT
+# Wed, 23 Jan 2019 14:22:03 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 13:07:38 GMT
+# Wed, 23 Jan 2019 14:22:08 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 13:07:39 GMT
+# Wed, 23 Jan 2019 14:22:09 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 13:08:20 GMT
+# Wed, 23 Jan 2019 14:22:52 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26ec917611d63c22e4401547b7321017a73d6096985968bd6aeecdb6c2d7b7f`  
-		Last Modified: Fri, 18 Jan 2019 13:15:29 GMT  
-		Size: 126.4 MB (126408349 bytes)  
+	-	`sha256:c56828676bcdae61c8feaedd8aae8c216465faa13fcea6eaa839f0e01a512312`  
+		Last Modified: Wed, 23 Jan 2019 15:33:34 GMT  
+		Size: 126.4 MB (126409852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:468b06fe3a3f3a7185064103f12060f0af4b00e41b299187adf8822fe60030af`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 201.4 KB (201437 bytes)  
+	-	`sha256:e874654b321f6e27b497c62692370fb742c9e639db086a82ee60cc127181c1c1`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 201.4 KB (201440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:615fc312e989e8a6fcba639a81b734d0cb9d8ebe249003de6e68d48adf6c8832`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 979.3 KB (979283 bytes)  
+	-	`sha256:d84d375953e87a3a2fd89a1f16c82298256c4d2e88ebc3c2e2baef4277f8ce50`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 979.3 KB (979321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2` - linux; arm64 variant v8
@@ -9144,77 +9144,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21.2` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:cc5ec904037eb3dc8a2f1bc6044d8c9394202526bcb84f5e85809474e90d6f37
+$ docker pull erlang@sha256:7c3cf0c6ffb878fa7fac60d87441bf16a973591f26992bf61cf1621302bbed25
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **464.0 MB (464001826 bytes)**  
+-	Total Size: **464.0 MB (464015498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d84ad244afac07bc469fa35190a8767ec991ef261bef09a0dfa44483c4a58a1c`
+-	Image ID: `sha256:6a4ee28f29c7165ae904c259fa70ab5971258924b4ae5739ffe689bcf768a73e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:41:46 GMT
+# Wed, 23 Jan 2019 14:01:59 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:51 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 11:54:57 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 11:54:58 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 11:55:24 GMT
+# Wed, 23 Jan 2019 14:15:20 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:210b66135597075563d7cefa8512002dcb10d2d5a9ac5ddb0ea425d935c71eb0`  
-		Last Modified: Fri, 18 Jan 2019 12:22:02 GMT  
-		Size: 130.5 MB (130482110 bytes)  
+	-	`sha256:4c44932eafb1e77a614af874ab5e4b47c9ff10ade8eff65a7dcdd77cea098e5e`  
+		Last Modified: Wed, 23 Jan 2019 15:41:57 GMT  
+		Size: 130.5 MB (130483533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9496217595134328d25c66adcbc193054889a744c46435903073db3fd979993`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 201.5 KB (201471 bytes)  
+	-	`sha256:225fc766e6f61875cad6c5da1ac3000bbaf551f84310ac712e7d66c7f38ebe09`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 201.4 KB (201448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34c9f6dd5592bf7f1cc5b24d3d9cebd0a51159f5f8e4414d7501c13756809313`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 979.3 KB (979281 bytes)  
+	-	`sha256:4426491c25d4aff1f44b3e74ed41ab84349bbf40c36890130e6ec7bc92e33658`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 979.3 KB (979278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2` - linux; ppc64le
@@ -9372,7 +9372,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:21.2.3`
 
 ```console
-$ docker pull erlang@sha256:4bb1411a50e4f29aab603505e83d0db2c0422bbe20bacecb6b42811f5e24c703
+$ docker pull erlang@sha256:326567cd6bcd98d6b12ffb55ee103ed29f9e261f41b46d9762be1a7a1a99fd43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9463,77 +9463,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21.2.3` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:a20f5c67d8d6b42c2ff8093e2d0c3a9359110a777d8a505f3ff563f902324459
+$ docker pull erlang@sha256:c1cc6641400b91dd643d0085b9b38a140a6f1ebbb5a650ed02792e29b38deb0c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **424.5 MB (424484362 bytes)**  
+-	Total Size: **424.5 MB (424499877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c7406be79706c3ceff9066bdb2958f664b3eec876c520d947a0d2561027440d`
+-	Image ID: `sha256:a751459bce402e731fbb31be284dd6025e7688f65fd92ed674c09f6a46f9970f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:10:46 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:07:31 GMT
+# Wed, 23 Jan 2019 14:22:01 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:07:32 GMT
+# Wed, 23 Jan 2019 14:22:02 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 13:07:33 GMT
+# Wed, 23 Jan 2019 14:22:03 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 13:07:38 GMT
+# Wed, 23 Jan 2019 14:22:08 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 13:07:39 GMT
+# Wed, 23 Jan 2019 14:22:09 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 13:08:20 GMT
+# Wed, 23 Jan 2019 14:22:52 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26ec917611d63c22e4401547b7321017a73d6096985968bd6aeecdb6c2d7b7f`  
-		Last Modified: Fri, 18 Jan 2019 13:15:29 GMT  
-		Size: 126.4 MB (126408349 bytes)  
+	-	`sha256:c56828676bcdae61c8feaedd8aae8c216465faa13fcea6eaa839f0e01a512312`  
+		Last Modified: Wed, 23 Jan 2019 15:33:34 GMT  
+		Size: 126.4 MB (126409852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:468b06fe3a3f3a7185064103f12060f0af4b00e41b299187adf8822fe60030af`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 201.4 KB (201437 bytes)  
+	-	`sha256:e874654b321f6e27b497c62692370fb742c9e639db086a82ee60cc127181c1c1`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 201.4 KB (201440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:615fc312e989e8a6fcba639a81b734d0cb9d8ebe249003de6e68d48adf6c8832`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 979.3 KB (979283 bytes)  
+	-	`sha256:d84d375953e87a3a2fd89a1f16c82298256c4d2e88ebc3c2e2baef4277f8ce50`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 979.3 KB (979321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2.3` - linux; arm64 variant v8
@@ -9615,77 +9615,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:21.2.3` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:cc5ec904037eb3dc8a2f1bc6044d8c9394202526bcb84f5e85809474e90d6f37
+$ docker pull erlang@sha256:7c3cf0c6ffb878fa7fac60d87441bf16a973591f26992bf61cf1621302bbed25
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **464.0 MB (464001826 bytes)**  
+-	Total Size: **464.0 MB (464015498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d84ad244afac07bc469fa35190a8767ec991ef261bef09a0dfa44483c4a58a1c`
+-	Image ID: `sha256:6a4ee28f29c7165ae904c259fa70ab5971258924b4ae5739ffe689bcf768a73e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:41:46 GMT
+# Wed, 23 Jan 2019 14:01:59 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:51 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 11:54:57 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 11:54:58 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 11:55:24 GMT
+# Wed, 23 Jan 2019 14:15:20 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:210b66135597075563d7cefa8512002dcb10d2d5a9ac5ddb0ea425d935c71eb0`  
-		Last Modified: Fri, 18 Jan 2019 12:22:02 GMT  
-		Size: 130.5 MB (130482110 bytes)  
+	-	`sha256:4c44932eafb1e77a614af874ab5e4b47c9ff10ade8eff65a7dcdd77cea098e5e`  
+		Last Modified: Wed, 23 Jan 2019 15:41:57 GMT  
+		Size: 130.5 MB (130483533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9496217595134328d25c66adcbc193054889a744c46435903073db3fd979993`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 201.5 KB (201471 bytes)  
+	-	`sha256:225fc766e6f61875cad6c5da1ac3000bbaf551f84310ac712e7d66c7f38ebe09`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 201.4 KB (201448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34c9f6dd5592bf7f1cc5b24d3d9cebd0a51159f5f8e4414d7501c13756809313`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 979.3 KB (979281 bytes)  
+	-	`sha256:4426491c25d4aff1f44b3e74ed41ab84349bbf40c36890130e6ec7bc92e33658`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 979.3 KB (979278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2.3` - linux; ppc64le
@@ -10061,7 +10061,7 @@ CMD ["erl"]
 ## `erlang:21.2.3-slim`
 
 ```console
-$ docker pull erlang@sha256:f5ec38c51a204a7d00518d34c6e6fe9cef894555ba574bef3da92703ec2e24d2
+$ docker pull erlang@sha256:78a7b25fda9f41b232256d2461881f9533adc5968d23885b2032d1cb269e1ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10112,37 +10112,37 @@ CMD ["erl"]
 ### `erlang:21.2.3-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:18a43dd499ad60c21d5c25ffc24983cdf247e56a4368ab4305725d801679288e
+$ docker pull erlang@sha256:032acf33ca38786a8590cdf881e8e2a5a74708fbdf3de97f896e3799acf01b26
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98695700 bytes)**  
+-	Total Size: **98.7 MB (98708650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebcaca395e38b50e71f34b1c580fae59851e975f4f4b9b0b5d6559e8ee8a04cf`
+-	Image ID: `sha256:77604c897e1694836b9a8b34ef28767a1e63f7392174576f173daacd21a75334`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 13:08:25 GMT
+# Wed, 23 Jan 2019 14:23:10 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:14:17 GMT
+# Wed, 23 Jan 2019 14:29:36 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:14:18 GMT
+# Wed, 23 Jan 2019 14:29:37 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b0c633d31ddebd9f2972db5b5c8cf8fbc68b0c2579bd16b8690b45c90c055c`  
-		Last Modified: Fri, 18 Jan 2019 13:15:55 GMT  
-		Size: 56.6 MB (56621117 bytes)  
+	-	`sha256:ad075bd0d3b989058016f45210dedba7c6651750db0bbd30ce9b3c121aff279d`  
+		Last Modified: Wed, 23 Jan 2019 15:33:58 GMT  
+		Size: 56.6 MB (56620919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2.3-slim` - linux; arm64 variant v8
@@ -10184,37 +10184,37 @@ CMD ["erl"]
 ### `erlang:21.2.3-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:baf95943519b45996ced2a4068f31228fcf0086e0bdfe9f5631c961fd63fb179
+$ docker pull erlang@sha256:f83031fb3f342c312e9e15839c9d014b91c801498d0224233b12d75015fbdef8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.8 MB (110816732 bytes)**  
+-	Total Size: **110.8 MB (110830928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43d9f4dcb1f57476a70cabb2287f2df3a16bcd82b5a00af673cbe35988becb0`
+-	Image ID: `sha256:995af53eede8c131e61e860d10aa38895e57f205a37dbab4c719dcedb1e1101f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 11:55:40 GMT
+# Wed, 23 Jan 2019 14:15:36 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358035d8ded69c222f589d04c803b10d7ccb172e6dda36ef16dfff60522286b7`  
-		Last Modified: Fri, 18 Jan 2019 12:22:20 GMT  
-		Size: 64.8 MB (64759442 bytes)  
+	-	`sha256:ba0051b260bc822bbbefd15e770d3a4d1d91e800d794b615d37c9a3a144ceb12`  
+		Last Modified: Wed, 23 Jan 2019 15:42:16 GMT  
+		Size: 64.8 MB (64761473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2.3-slim` - linux; ppc64le
@@ -10510,7 +10510,7 @@ CMD ["erl"]
 ## `erlang:21.2-slim`
 
 ```console
-$ docker pull erlang@sha256:f5ec38c51a204a7d00518d34c6e6fe9cef894555ba574bef3da92703ec2e24d2
+$ docker pull erlang@sha256:78a7b25fda9f41b232256d2461881f9533adc5968d23885b2032d1cb269e1ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10561,37 +10561,37 @@ CMD ["erl"]
 ### `erlang:21.2-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:18a43dd499ad60c21d5c25ffc24983cdf247e56a4368ab4305725d801679288e
+$ docker pull erlang@sha256:032acf33ca38786a8590cdf881e8e2a5a74708fbdf3de97f896e3799acf01b26
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98695700 bytes)**  
+-	Total Size: **98.7 MB (98708650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebcaca395e38b50e71f34b1c580fae59851e975f4f4b9b0b5d6559e8ee8a04cf`
+-	Image ID: `sha256:77604c897e1694836b9a8b34ef28767a1e63f7392174576f173daacd21a75334`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 13:08:25 GMT
+# Wed, 23 Jan 2019 14:23:10 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:14:17 GMT
+# Wed, 23 Jan 2019 14:29:36 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:14:18 GMT
+# Wed, 23 Jan 2019 14:29:37 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b0c633d31ddebd9f2972db5b5c8cf8fbc68b0c2579bd16b8690b45c90c055c`  
-		Last Modified: Fri, 18 Jan 2019 13:15:55 GMT  
-		Size: 56.6 MB (56621117 bytes)  
+	-	`sha256:ad075bd0d3b989058016f45210dedba7c6651750db0bbd30ce9b3c121aff279d`  
+		Last Modified: Wed, 23 Jan 2019 15:33:58 GMT  
+		Size: 56.6 MB (56620919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2-slim` - linux; arm64 variant v8
@@ -10633,37 +10633,37 @@ CMD ["erl"]
 ### `erlang:21.2-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:baf95943519b45996ced2a4068f31228fcf0086e0bdfe9f5631c961fd63fb179
+$ docker pull erlang@sha256:f83031fb3f342c312e9e15839c9d014b91c801498d0224233b12d75015fbdef8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.8 MB (110816732 bytes)**  
+-	Total Size: **110.8 MB (110830928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43d9f4dcb1f57476a70cabb2287f2df3a16bcd82b5a00af673cbe35988becb0`
+-	Image ID: `sha256:995af53eede8c131e61e860d10aa38895e57f205a37dbab4c719dcedb1e1101f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 11:55:40 GMT
+# Wed, 23 Jan 2019 14:15:36 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358035d8ded69c222f589d04c803b10d7ccb172e6dda36ef16dfff60522286b7`  
-		Last Modified: Fri, 18 Jan 2019 12:22:20 GMT  
-		Size: 64.8 MB (64759442 bytes)  
+	-	`sha256:ba0051b260bc822bbbefd15e770d3a4d1d91e800d794b615d37c9a3a144ceb12`  
+		Last Modified: Wed, 23 Jan 2019 15:42:16 GMT  
+		Size: 64.8 MB (64761473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21.2-slim` - linux; ppc64le
@@ -10959,7 +10959,7 @@ CMD ["erl"]
 ## `erlang:21-slim`
 
 ```console
-$ docker pull erlang@sha256:f5ec38c51a204a7d00518d34c6e6fe9cef894555ba574bef3da92703ec2e24d2
+$ docker pull erlang@sha256:78a7b25fda9f41b232256d2461881f9533adc5968d23885b2032d1cb269e1ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11010,37 +11010,37 @@ CMD ["erl"]
 ### `erlang:21-slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:18a43dd499ad60c21d5c25ffc24983cdf247e56a4368ab4305725d801679288e
+$ docker pull erlang@sha256:032acf33ca38786a8590cdf881e8e2a5a74708fbdf3de97f896e3799acf01b26
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98695700 bytes)**  
+-	Total Size: **98.7 MB (98708650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebcaca395e38b50e71f34b1c580fae59851e975f4f4b9b0b5d6559e8ee8a04cf`
+-	Image ID: `sha256:77604c897e1694836b9a8b34ef28767a1e63f7392174576f173daacd21a75334`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 13:08:25 GMT
+# Wed, 23 Jan 2019 14:23:10 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:14:17 GMT
+# Wed, 23 Jan 2019 14:29:36 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:14:18 GMT
+# Wed, 23 Jan 2019 14:29:37 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b0c633d31ddebd9f2972db5b5c8cf8fbc68b0c2579bd16b8690b45c90c055c`  
-		Last Modified: Fri, 18 Jan 2019 13:15:55 GMT  
-		Size: 56.6 MB (56621117 bytes)  
+	-	`sha256:ad075bd0d3b989058016f45210dedba7c6651750db0bbd30ce9b3c121aff279d`  
+		Last Modified: Wed, 23 Jan 2019 15:33:58 GMT  
+		Size: 56.6 MB (56620919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21-slim` - linux; arm64 variant v8
@@ -11082,37 +11082,37 @@ CMD ["erl"]
 ### `erlang:21-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:baf95943519b45996ced2a4068f31228fcf0086e0bdfe9f5631c961fd63fb179
+$ docker pull erlang@sha256:f83031fb3f342c312e9e15839c9d014b91c801498d0224233b12d75015fbdef8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.8 MB (110816732 bytes)**  
+-	Total Size: **110.8 MB (110830928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43d9f4dcb1f57476a70cabb2287f2df3a16bcd82b5a00af673cbe35988becb0`
+-	Image ID: `sha256:995af53eede8c131e61e860d10aa38895e57f205a37dbab4c719dcedb1e1101f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 11:55:40 GMT
+# Wed, 23 Jan 2019 14:15:36 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358035d8ded69c222f589d04c803b10d7ccb172e6dda36ef16dfff60522286b7`  
-		Last Modified: Fri, 18 Jan 2019 12:22:20 GMT  
-		Size: 64.8 MB (64759442 bytes)  
+	-	`sha256:ba0051b260bc822bbbefd15e770d3a4d1d91e800d794b615d37c9a3a144ceb12`  
+		Last Modified: Wed, 23 Jan 2019 15:42:16 GMT  
+		Size: 64.8 MB (64761473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:21-slim` - linux; ppc64le
@@ -11408,7 +11408,7 @@ CMD ["erl"]
 ## `erlang:latest`
 
 ```console
-$ docker pull erlang@sha256:4bb1411a50e4f29aab603505e83d0db2c0422bbe20bacecb6b42811f5e24c703
+$ docker pull erlang@sha256:326567cd6bcd98d6b12ffb55ee103ed29f9e261f41b46d9762be1a7a1a99fd43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11499,77 +11499,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:latest` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:a20f5c67d8d6b42c2ff8093e2d0c3a9359110a777d8a505f3ff563f902324459
+$ docker pull erlang@sha256:c1cc6641400b91dd643d0085b9b38a140a6f1ebbb5a650ed02792e29b38deb0c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **424.5 MB (424484362 bytes)**  
+-	Total Size: **424.5 MB (424499877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c7406be79706c3ceff9066bdb2958f664b3eec876c520d947a0d2561027440d`
+-	Image ID: `sha256:a751459bce402e731fbb31be284dd6025e7688f65fd92ed674c09f6a46f9970f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:43:30 GMT
+# Wed, 23 Jan 2019 13:44:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:43:42 GMT
+# Wed, 23 Jan 2019 13:44:26 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:44:25 GMT
+# Wed, 23 Jan 2019 13:45:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 13:13:24 GMT
+# Wed, 23 Jan 2019 13:47:02 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:57:32 GMT
+# Wed, 23 Jan 2019 14:10:46 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:07:31 GMT
+# Wed, 23 Jan 2019 14:22:01 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:07:32 GMT
+# Wed, 23 Jan 2019 14:22:02 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 13:07:33 GMT
+# Wed, 23 Jan 2019 14:22:03 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 13:07:38 GMT
+# Wed, 23 Jan 2019 14:22:08 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 13:07:39 GMT
+# Wed, 23 Jan 2019 14:22:09 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 13:08:20 GMT
+# Wed, 23 Jan 2019 14:22:52 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f48ddd91eb6c0651e04903412a7878a0c6b983485404d539b5770c2df6c462`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 9.5 MB (9480290 bytes)  
+	-	`sha256:aaa7b6903fc66574eed3dd94d25c8ee0c27a478c84ff3219c4ce223b0233aeba`  
+		Last Modified: Wed, 23 Jan 2019 14:05:44 GMT  
+		Size: 9.5 MB (9480423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307946877196cb875cf9ce23e16058fc9525d372e0e3c6652d6f805675257c98`  
-		Last Modified: Sat, 29 Dec 2018 14:04:30 GMT  
-		Size: 3.9 MB (3918483 bytes)  
+	-	`sha256:2011a5c4d9cbe6e42446717e9f145d3264c681a9a7be23834c6d1989afab2dfc`  
+		Last Modified: Wed, 23 Jan 2019 14:05:42 GMT  
+		Size: 3.9 MB (3918464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbde47943bce292ffb840fa20b0cfc39c7aeccdb423a1be8455c59d7828fe717`  
-		Last Modified: Sat, 29 Dec 2018 14:04:53 GMT  
-		Size: 46.4 MB (46384426 bytes)  
+	-	`sha256:c86082f3b932fde1cbab5c105aaf51102e5f988ccb1efae3a9798b8cc65d8138`  
+		Last Modified: Wed, 23 Jan 2019 14:06:12 GMT  
+		Size: 46.4 MB (46384664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4311d79fa61188a44289d92038290bf96737e0716688cda664166e36f3047159`  
-		Last Modified: Wed, 09 Jan 2019 13:25:33 GMT  
-		Size: 195.0 MB (195037511 bytes)  
+	-	`sha256:707e6dddd4d8778170a6840d9de2952b30ea37f1b1099242a14e8d0002b1f6d3`  
+		Last Modified: Wed, 23 Jan 2019 14:07:14 GMT  
+		Size: 195.0 MB (195037982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26ec917611d63c22e4401547b7321017a73d6096985968bd6aeecdb6c2d7b7f`  
-		Last Modified: Fri, 18 Jan 2019 13:15:29 GMT  
-		Size: 126.4 MB (126408349 bytes)  
+	-	`sha256:c56828676bcdae61c8feaedd8aae8c216465faa13fcea6eaa839f0e01a512312`  
+		Last Modified: Wed, 23 Jan 2019 15:33:34 GMT  
+		Size: 126.4 MB (126409852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:468b06fe3a3f3a7185064103f12060f0af4b00e41b299187adf8822fe60030af`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 201.4 KB (201437 bytes)  
+	-	`sha256:e874654b321f6e27b497c62692370fb742c9e639db086a82ee60cc127181c1c1`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 201.4 KB (201440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:615fc312e989e8a6fcba639a81b734d0cb9d8ebe249003de6e68d48adf6c8832`  
-		Last Modified: Fri, 18 Jan 2019 13:15:03 GMT  
-		Size: 979.3 KB (979283 bytes)  
+	-	`sha256:d84d375953e87a3a2fd89a1f16c82298256c4d2e88ebc3c2e2baef4277f8ce50`  
+		Last Modified: Wed, 23 Jan 2019 15:33:07 GMT  
+		Size: 979.3 KB (979321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; arm64 variant v8
@@ -11651,77 +11651,77 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:latest` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:cc5ec904037eb3dc8a2f1bc6044d8c9394202526bcb84f5e85809474e90d6f37
+$ docker pull erlang@sha256:7c3cf0c6ffb878fa7fac60d87441bf16a973591f26992bf61cf1621302bbed25
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **464.0 MB (464001826 bytes)**  
+-	Total Size: **464.0 MB (464015498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d84ad244afac07bc469fa35190a8767ec991ef261bef09a0dfa44483c4a58a1c`
+-	Image ID: `sha256:6a4ee28f29c7165ae904c259fa70ab5971258924b4ae5739ffe689bcf768a73e`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Sat, 29 Dec 2018 13:00:57 GMT
+# Wed, 23 Jan 2019 12:48:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 13:01:08 GMT
+# Wed, 23 Jan 2019 12:48:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 13:01:52 GMT
+# Wed, 23 Jan 2019 12:49:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 09 Jan 2019 11:54:41 GMT
+# Wed, 23 Jan 2019 12:51:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:41:46 GMT
+# Wed, 23 Jan 2019 14:01:59 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.0' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk3.0-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:50 GMT
 CMD ["erl"]
-# Fri, 18 Jan 2019 11:54:54 GMT
+# Wed, 23 Jan 2019 14:14:51 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 18 Jan 2019 11:54:57 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Fri, 18 Jan 2019 11:54:58 GMT
+# Wed, 23 Jan 2019 14:14:54 GMT
 ENV REBAR3_VERSION=3.8.0
-# Fri, 18 Jan 2019 11:55:24 GMT
+# Wed, 23 Jan 2019 14:15:20 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fc4d08037d39bcc651a4a749f8a5b1a10b2205527df834c2aee8f60725c3f431" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f85ebddf711af5a5d00c3ec70830e1b0e199d81dcfa089912a1a93e7d75c7b91`  
-		Last Modified: Sat, 29 Dec 2018 13:28:20 GMT  
-		Size: 10.8 MB (10799001 bytes)  
+	-	`sha256:58ed41bfbb6729be227ae81d1bd145244f740acde515b1f0a83b6a58cbd729d4`  
+		Last Modified: Wed, 23 Jan 2019 13:10:55 GMT  
+		Size: 10.8 MB (10798916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0903d64cc922323fd00f382d7845c5313498fa2eaaa23e5b0508f38f2b4a4a76`  
-		Last Modified: Sat, 29 Dec 2018 13:28:17 GMT  
-		Size: 4.6 MB (4560876 bytes)  
+	-	`sha256:ff3f7c615122a6e85e1207a196f2323f17f2997762bfd6518480dd0d171cdc82`  
+		Last Modified: Wed, 23 Jan 2019 13:10:53 GMT  
+		Size: 4.6 MB (4560785 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99b2ba2c27428f2220acf820364de7c867d7c3a1f30bda626a606427618c2840`  
-		Last Modified: Sat, 29 Dec 2018 13:28:54 GMT  
-		Size: 51.6 MB (51593679 bytes)  
+	-	`sha256:c5f15f2e3f5d8388f4d415390adb509c7dcbc1a05764ea9fe7659f2d185ba1fb`  
+		Last Modified: Wed, 23 Jan 2019 13:11:18 GMT  
+		Size: 51.6 MB (51593507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3936e86fe318ae0bf6f046454952bf35217b2d5112d4b9f650a50ec4260dc4`  
-		Last Modified: Wed, 09 Jan 2019 12:06:39 GMT  
-		Size: 219.3 MB (219328118 bytes)  
+	-	`sha256:dd9b3cd21e45d4a214b7cf296da71cf72ec90b1a04306232020142f7fea0f3b0`  
+		Last Modified: Wed, 23 Jan 2019 13:12:16 GMT  
+		Size: 219.3 MB (219328576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:210b66135597075563d7cefa8512002dcb10d2d5a9ac5ddb0ea425d935c71eb0`  
-		Last Modified: Fri, 18 Jan 2019 12:22:02 GMT  
-		Size: 130.5 MB (130482110 bytes)  
+	-	`sha256:4c44932eafb1e77a614af874ab5e4b47c9ff10ade8eff65a7dcdd77cea098e5e`  
+		Last Modified: Wed, 23 Jan 2019 15:41:57 GMT  
+		Size: 130.5 MB (130483533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9496217595134328d25c66adcbc193054889a744c46435903073db3fd979993`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 201.5 KB (201471 bytes)  
+	-	`sha256:225fc766e6f61875cad6c5da1ac3000bbaf551f84310ac712e7d66c7f38ebe09`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 201.4 KB (201448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34c9f6dd5592bf7f1cc5b24d3d9cebd0a51159f5f8e4414d7501c13756809313`  
-		Last Modified: Fri, 18 Jan 2019 12:21:45 GMT  
-		Size: 979.3 KB (979281 bytes)  
+	-	`sha256:4426491c25d4aff1f44b3e74ed41ab84349bbf40c36890130e6ec7bc92e33658`  
+		Last Modified: Wed, 23 Jan 2019 15:41:40 GMT  
+		Size: 979.3 KB (979278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; ppc64le
@@ -11879,7 +11879,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ## `erlang:slim`
 
 ```console
-$ docker pull erlang@sha256:f5ec38c51a204a7d00518d34c6e6fe9cef894555ba574bef3da92703ec2e24d2
+$ docker pull erlang@sha256:78a7b25fda9f41b232256d2461881f9533adc5968d23885b2032d1cb269e1ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11930,37 +11930,37 @@ CMD ["erl"]
 ### `erlang:slim` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:18a43dd499ad60c21d5c25ffc24983cdf247e56a4368ab4305725d801679288e
+$ docker pull erlang@sha256:032acf33ca38786a8590cdf881e8e2a5a74708fbdf3de97f896e3799acf01b26
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98695700 bytes)**  
+-	Total Size: **98.7 MB (98708650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebcaca395e38b50e71f34b1c580fae59851e975f4f4b9b0b5d6559e8ee8a04cf`
+-	Image ID: `sha256:77604c897e1694836b9a8b34ef28767a1e63f7392174576f173daacd21a75334`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 13:04:28 GMT
-ADD file:3ab1f738bb6fe0b2e0c47963cf773badbd7069848e58eeb671d7f13e357f02d8 in / 
-# Sat, 29 Dec 2018 13:04:30 GMT
+# Wed, 23 Jan 2019 13:04:29 GMT
+ADD file:f58fcfcac4bd31e03fe733b7c850ff7f67728d2532fc54252c02a91c66445c88 in / 
+# Wed, 23 Jan 2019 13:04:29 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 13:08:25 GMT
+# Wed, 23 Jan 2019 14:23:10 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 13:14:17 GMT
+# Wed, 23 Jan 2019 14:29:36 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 13:14:18 GMT
+# Wed, 23 Jan 2019 14:29:37 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:76e424dac3ee85f0c45a60646f8b87f57bf2ed6b48b6e06522628d2d8f7e06cf`  
-		Last Modified: Sat, 29 Dec 2018 13:12:18 GMT  
-		Size: 42.1 MB (42074583 bytes)  
+	-	`sha256:d9d6acb4f2f3e6ab798235f9f094d5e343bad5a702bac8cf38e2569dfec4e284`  
+		Last Modified: Wed, 23 Jan 2019 13:12:06 GMT  
+		Size: 42.1 MB (42087731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b0c633d31ddebd9f2972db5b5c8cf8fbc68b0c2579bd16b8690b45c90c055c`  
-		Last Modified: Fri, 18 Jan 2019 13:15:55 GMT  
-		Size: 56.6 MB (56621117 bytes)  
+	-	`sha256:ad075bd0d3b989058016f45210dedba7c6651750db0bbd30ce9b3c121aff279d`  
+		Last Modified: Wed, 23 Jan 2019 15:33:58 GMT  
+		Size: 56.6 MB (56620919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:slim` - linux; arm64 variant v8
@@ -12002,37 +12002,37 @@ CMD ["erl"]
 ### `erlang:slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:baf95943519b45996ced2a4068f31228fcf0086e0bdfe9f5631c961fd63fb179
+$ docker pull erlang@sha256:f83031fb3f342c312e9e15839c9d014b91c801498d0224233b12d75015fbdef8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.8 MB (110816732 bytes)**  
+-	Total Size: **110.8 MB (110830928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43d9f4dcb1f57476a70cabb2287f2df3a16bcd82b5a00af673cbe35988becb0`
+-	Image ID: `sha256:995af53eede8c131e61e860d10aa38895e57f205a37dbab4c719dcedb1e1101f`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 11:54:44 GMT
-ADD file:a8ddd3477d8cfd5a18fe1d2537e62c16161f296e912e5a65a7bde0331af35639 in / 
-# Sat, 29 Dec 2018 11:54:45 GMT
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
 CMD ["bash"]
-# Fri, 18 Jan 2019 11:55:40 GMT
+# Wed, 23 Jan 2019 14:15:36 GMT
 ENV OTP_VERSION=21.2.3
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="109a5722e398bdcd3aeb4f4833cde90bf441a9c014006439643aab550a770923" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Fri, 18 Jan 2019 12:07:19 GMT
+# Wed, 23 Jan 2019 14:26:48 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:df99e535d2dfef98a9b50153edf9ab40b4355b1e30018358c90bb2ac742ea9c5`  
-		Last Modified: Sat, 29 Dec 2018 12:10:19 GMT  
-		Size: 46.1 MB (46057290 bytes)  
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358035d8ded69c222f589d04c803b10d7ccb172e6dda36ef16dfff60522286b7`  
-		Last Modified: Fri, 18 Jan 2019 12:22:20 GMT  
-		Size: 64.8 MB (64759442 bytes)  
+	-	`sha256:ba0051b260bc822bbbefd15e770d3a4d1d91e800d794b615d37c9a3a144ceb12`  
+		Last Modified: Wed, 23 Jan 2019 15:42:16 GMT  
+		Size: 64.8 MB (64761473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:slim` - linux; ppc64le
