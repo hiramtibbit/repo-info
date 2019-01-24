@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ce680ef7bce6b7ba182c6f48f2644c9ee85fb247245a105281f06fa77b370f4`
-- Created: `2018-12-29T14:19:39.772789072Z`
-- Virtual Size: ~ 606.87 Mb  
+- Image ID: `sha256:6e2c6de1edbd77efa1af78f2464142bca4352661ad9f3429c17b586718690b1d`
+- Created: `2019-01-23T20:55:03.687344251Z`
+- Virtual Size: ~ 608.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -76,12 +76,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.113+nmu3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=1.0.9.8.4`
+### `dpkg` source package: `apt=1.0.9.8.5`
 
 Binary Packages:
 
-- `apt=1.0.9.8.4`
-- `libapt-pkg4.12:amd64=1.0.9.8.4`
+- `apt=1.0.9.8.5`
+- `libapt-pkg4.12:amd64=1.0.9.8.5`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -91,16 +91,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.0.9.8.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.4.dsc' apt_1.0.9.8.4.dsc 2530 SHA256:51fe8ce9490de264e55220e4c5f61a8bbb6d2f824c49c90914b2248db3e28bd3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.4.tar.xz' apt_1.0.9.8.4.tar.xz 1793116 SHA256:ac2a267b9f98685977d421e41b4518eceb66e9b85cd0d4a9f9a03db729190f7a
+$ apt-get source -qq --print-uris apt=1.0.9.8.5
+'http://security.debian.org/debian-security/pool/updates/main/a/apt/apt_1.0.9.8.5.dsc' apt_1.0.9.8.5.dsc 2396 SHA256:57375233b57c22cd93539ce6d9ab26c4f3f5dac604c0a9b1479dc4da7b60fda3
+'http://security.debian.org/debian-security/pool/updates/main/a/apt/apt_1.0.9.8.5.tar.xz' apt_1.0.9.8.5.tar.xz 1783540 SHA256:d4e9dc57b0704e713895aa10de821c804b9a5c367772c36667cddbef96e79bd2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/1.0.9.8.4/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.0.9.8.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.0.9.8.4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/1.0.9.8.5/ (for browsing the source)
+- https://sources.debian.net/src/apt/1.0.9.8.5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/1.0.9.8.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1417,13 +1417,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libidn/1.29-1+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libidn/1.29-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libjpeg-turbo=1:1.3.1-12`
+### `dpkg` source package: `libjpeg-turbo=1:1.3.1-12+deb8u1`
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
-- `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
+- `libjpeg-dev=1:1.3.1-12+deb8u1`
+- `libjpeg62-turbo:amd64=1:1.3.1-12+deb8u1`
+- `libjpeg62-turbo-dev:amd64=1:1.3.1-12+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
 
@@ -1434,17 +1434,17 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.3.1-12
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12.dsc' libjpeg-turbo_1.3.1-12.dsc 2650 SHA256:1606a068d653c40da819e0ac4f9c560cf891d665ad5299c0eb994168830ce95d
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1.orig.tar.gz' libjpeg-turbo_1.3.1.orig.tar.gz 1390282 SHA256:c132907417ddc40ed552fe53d6b91d5fecbb14a356a60ddc7ea50d6be9666fb9
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12.debian.tar.xz' libjpeg-turbo_1.3.1-12.debian.tar.xz 78596 SHA256:046f88108246665a433cc60b0e9cec6c243b0163899c039542dbfb183fef6e71
+$ apt-get source -qq --print-uris libjpeg-turbo=1:1.3.1-12+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12+deb8u1.dsc' libjpeg-turbo_1.3.1-12+deb8u1.dsc 2591 SHA256:1e25b1182557628cc43e271a9703ac91f8029062ef848c58f57a17d20929b336
+'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1.orig.tar.gz' libjpeg-turbo_1.3.1.orig.tar.gz 1390282 SHA256:c132907417ddc40ed552fe53d6b91d5fecbb14a356a60ddc7ea50d6be9666fb9
+'http://security.debian.org/debian-security/pool/updates/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12+deb8u1.debian.tar.xz' libjpeg-turbo_1.3.1-12+deb8u1.debian.tar.xz 81232 SHA256:80db43c97a0c7c7f42794773261061bec5989edce52326ccd235b101edbb825e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12/ (for browsing the source)
-- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libjpeg-turbo/1:1.3.1-12/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/libjpeg-turbo/1:1.3.1-12+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libjpeg-turbo/1:1.3.1-12+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-8`
 
@@ -2419,11 +2419,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/slang2/2.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u3`
+### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.8.7.1-1+deb8u3`
+- `libsqlite3-0:amd64=3.8.7.1-1+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2431,13 +2431,21 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u4
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u4.dsc' sqlite3_3.8.7.1-1+deb8u4.dsc 2705 SHA256:e4b52b1144ea546f92e1f7e7239b1f45a6ff83732bd03d5b549ab953274ee293
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
+'http://security.debian.org/debian-security/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u4.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u4.debian.tar.xz 24436 SHA256:8d9be049e9abe6221b39f84d564ff310ecbbd328bd5876b672f8294e55ba1953
+```
 
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u4/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
@@ -2484,20 +2492,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u8
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u8.dsc' systemd_215-17+deb8u8.dsc 3804 SHA256:6fe49b8073627db9ccf3bce141648900f33675eb002c525e75a919530b45306c
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u8.debian.tar.xz' systemd_215-17+deb8u8.debian.tar.xz 242872 SHA256:afbd7e7b3c1fd2c0f12e478d3e30b18908e272ff1faf2fcde1a16d306f34deb4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/215-17+deb8u8/
 
-- https://sources.debian.net/src/systemd/215-17+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
@@ -2526,11 +2527,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sysvinit/2.88dsf-59/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tar=1.27.1-2+deb8u1`
+### `dpkg` source package: `tar=1.27.1-2+deb8u2`
 
 Binary Packages:
 
-- `tar=1.27.1-2+deb8u1`
+- `tar=1.27.1-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2540,35 +2541,42 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u2
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.27.1-2+deb8u2.dsc' tar_1.27.1-2+deb8u2.dsc 1923 SHA256:bde1870e1a78c8f0967166ab8e0c8f22ca54e789bbc2aaa3a92afe6521304dfa
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
+'http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.27.1-2+deb8u2.debian.tar.xz' tar_1.27.1-2+deb8u2.debian.tar.xz 33736 SHA256:2459839d37230c8677d087eb02d9e5e7efa18bcb147ed81aa33b9c4720763947
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.27.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u2/ (for browsing the source)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tar/1.27.1-2+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018g-0+deb8u1`
+### `dpkg` source package: `tzdata=2018i-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2018g-0+deb8u1`
+- `tzdata=2018i-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2018i-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018i-0+deb8u1.dsc' tzdata_2018i-0+deb8u1.dsc 1985 SHA256:d7c42514c371f2e2eb825316e0bc11f018b9b04607b4df14a2a7bcc49ddcbd10
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2018i-0+deb8u1.debian.tar.xz' tzdata_2018i-0+deb8u1.debian.tar.xz 103000 SHA256:be25a3dffecaacb56e2f419d026380e14d702ddc26e0570d2f74371a93d11912
+```
 
-- http://snapshot.debian.org/package/tzdata/2018g-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2018i-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018i-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
