@@ -1,7 +1,7 @@
 ## `open-liberty:webProfile8-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:5bb00ec990acc3c8c1d82af7fdf0752dad87e778baa9b1ee627e3fac9a6c55ac
+$ docker pull open-liberty@sha256:efab48c491ac35cf23c9a067c374df5ba7940f7bc0abe19e198b950d0bb3d907
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -212,14 +212,14 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ### `open-liberty:webProfile8-java8-ibm` - linux; ppc64le
 
 ```console
-$ docker pull open-liberty@sha256:6a889fb8b0b3a8b9247dadb2d1fc2d7bc2c41c75356038b95cc964388b896df0
+$ docker pull open-liberty@sha256:f3679c7ea69ccecae190f53b47aea0852341d20d688b4e7254d8274f6c8c87fa
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.0 MB (283986584 bytes)**  
+-	Total Size: **283.9 MB (283928481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:987b93f3d720e095bc0b9c72182b46a8f8370d4335320085ae4b6c0fd951edd3`
+-	Image ID: `sha256:ca71c0935d7dd5baadb49dbb4d979847cbba7b16b7adace5b33548841a472c9e`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -256,13 +256,13 @@ RUN apt-get update     && apt-get install -y --no-install-recommends unzip     &
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true
 # Wed, 23 Jan 2019 15:12:37 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs     && ln -s /liberty /opt/ol/wlp
-# Wed, 23 Jan 2019 15:13:05 GMT
-RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml     && /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/
-# Wed, 23 Jan 2019 15:13:09 GMT
+# Thu, 24 Jan 2019 09:23:26 GMT
+RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml     && /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ /logs/*
+# Thu, 24 Jan 2019 09:23:29 GMT
 EXPOSE 9080 9443
-# Wed, 23 Jan 2019 15:13:12 GMT
+# Thu, 24 Jan 2019 09:23:33 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Wed, 23 Jan 2019 15:13:15 GMT
+# Thu, 24 Jan 2019 09:23:34 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -303,9 +303,9 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Wed, 23 Jan 2019 15:23:00 GMT  
 		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b7341d2ed594a18d264f2ff36209234994a9c4de481dad8a50dccd802a26fc5`  
-		Last Modified: Wed, 23 Jan 2019 15:23:03 GMT  
-		Size: 11.5 MB (11521430 bytes)  
+	-	`sha256:9cc44b4c2d74493689082f5a4bc94e4463a13331d3f864385e628ea4d7c80188`  
+		Last Modified: Thu, 24 Jan 2019 09:28:25 GMT  
+		Size: 11.5 MB (11463327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:webProfile8-java8-ibm` - linux; s390x

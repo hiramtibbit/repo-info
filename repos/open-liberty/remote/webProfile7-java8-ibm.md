@@ -1,7 +1,7 @@
 ## `open-liberty:webProfile7-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:715401cac739f880d8b1aef894f5cb63b706609cebefde60abaf2710438ec442
+$ docker pull open-liberty@sha256:3f91f73df5ffad2c6ce6dc6803b0196a0e76425023d607ffc0de64c28c20ff80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -236,14 +236,14 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ### `open-liberty:webProfile7-java8-ibm` - linux; ppc64le
 
 ```console
-$ docker pull open-liberty@sha256:e4cea2cb63df59e13d1ca8d5080b1245d981a3d0c8d9bbf2d7987f46b6c2f95d
+$ docker pull open-liberty@sha256:b2c8190029352da94347956e9f2217f48ee1fbfc53d05d5e7e3f7bbdd0206481
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.7 MB (328655460 bytes)**  
+-	Total Size: **328.6 MB (328602933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f74eddfebfed8b950c4137733bdf0a5f8f15ba1ed222bddbb5e34b645afae131`
+-	Image ID: `sha256:7abf62ea67b3e0bd555d5557abbc4d3dd283b434d30a5f71169a2fa20d6840e9`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -290,8 +290,8 @@ ENTRYPOINT ["/opt/ol/docker/docker-server"]
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 # Wed, 23 Jan 2019 15:16:09 GMT
 RUN cp /opt/ol/wlp/templates/servers/webProfile7/server.xml /config/server.xml
-# Wed, 23 Jan 2019 15:16:35 GMT
-RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/
+# Thu, 24 Jan 2019 09:25:28 GMT
+RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ /logs/*
 ```
 
 -	Layers:
@@ -339,9 +339,9 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Wed, 23 Jan 2019 15:24:38 GMT  
 		Size: 534.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d802de8cfdaba11e7d700732e294c3e561a3e03025137756ef551aca04e43ad9`  
-		Last Modified: Wed, 23 Jan 2019 15:24:41 GMT  
-		Size: 11.4 MB (11358603 bytes)  
+	-	`sha256:ecaafae092e940e7f34a325306c9c147ef90a338e0e38e314cafd5028acbcf61`  
+		Last Modified: Thu, 24 Jan 2019 09:29:02 GMT  
+		Size: 11.3 MB (11306076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:webProfile7-java8-ibm` - linux; s390x
