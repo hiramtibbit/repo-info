@@ -1,7 +1,7 @@
 ## `open-liberty:microProfile1-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:ff9da9236c6becb67e20105d9d1a86f521b8e41a625f4e98fa8734c1938125bf
+$ docker pull open-liberty@sha256:7552452cf45ce4ace849a6cd25207532f954e738ae020a1f4fd16495ffcfcf47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull open-liberty@sha256:ff9da9236c6becb67e20105d9d1a86f521b8e41a625f4e
 ### `open-liberty:microProfile1-java8-ibmsfj` - linux; amd64
 
 ```console
-$ docker pull open-liberty@sha256:262f92a41644149fe141fddd6d4464aca205dba2746fd35e2dc2d64db63c7a76
+$ docker pull open-liberty@sha256:21c6b34d1500c7fbcf14e6214019a464b0520a5a8d0aefc5360c2ea994445be6
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.7 MB (206743953 bytes)**  
+-	Total Size: **207.0 MB (206986652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb4d3cd1059f34218b3004e8d50e2c6d93ca212e58feea2ccaabefc17a8088f`
+-	Image ID: `sha256:34f4727aad0b1199acee03dd5f2eb7bba623b53de582a47f92d9a79acee0c538`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -59,8 +59,8 @@ ENTRYPOINT ["/opt/ol/docker/docker-server"]
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 # Tue, 15 Jan 2019 00:46:55 GMT
 RUN cp /opt/ol/wlp/templates/servers/microProfile1/server.xml /config/server.xml
-# Tue, 15 Jan 2019 00:47:08 GMT
-RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/
+# Wed, 23 Jan 2019 22:46:02 GMT
+RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ /logs/*
 ```
 
 -	Layers:
@@ -96,7 +96,7 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Tue, 15 Jan 2019 00:50:39 GMT  
 		Size: 539.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f11ebb37039a4509cf10c96fb6b4a5ed84134423704ca89a1ea9dcd016c6f527`  
-		Last Modified: Tue, 15 Jan 2019 00:50:42 GMT  
-		Size: 11.3 MB (11252508 bytes)  
+	-	`sha256:578507490bc4bea6bb023bc19240293f1cb59d146d61862b442aaf292022232a`  
+		Last Modified: Wed, 23 Jan 2019 22:49:30 GMT  
+		Size: 11.5 MB (11495207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
