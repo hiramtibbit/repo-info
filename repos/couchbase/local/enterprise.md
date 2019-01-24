@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:21130e980800637a263b92e00faa47e9a6c5563f0047d0de8a5ac6c9db16fa6d`
-- Created: `2018-12-28T23:46:20.843146435Z`
-- Virtual Size: ~ 809.61 Mb  
+- Image ID: `sha256:08c927f8524a28fb8b76f369a89b2570eb6b92ba5b758dc1a87c6cf5256bf0cc`
+- Created: `2019-01-23T09:09:50.407831854Z`
+- Virtual Size: ~ 810.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -75,12 +75,12 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.10.debian.tar.xz' apparmor_2.10.95-0ubuntu2.10.debian.tar.xz 98036 SHA256:7d901aaf5deedb5ca0575994b02e0d9d60d6f0ee93fb974b46699f5ab4c82764
 ```
 
-### `dpkg` source package: `apt=1.2.29`
+### `dpkg` source package: `apt=1.2.29ubuntu0.1`
 
 Binary Packages:
 
-- `apt=1.2.29`
-- `libapt-pkg5.0:amd64=1.2.29`
+- `apt=1.2.29ubuntu0.1`
+- `libapt-pkg5.0:amd64=1.2.29ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -90,9 +90,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.2.29
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.dsc' apt_1.2.29.dsc 2392 SHA256:cd6d3baf99c6f80b9e46c90ee3686de856ef197a978af825c688287e7c9a80ea
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.tar.xz' apt_1.2.29.tar.xz 2055072 SHA256:aefb56c030c8fb909b690ba51d04dbf3dda8f9761803f9f0c4a6ffa78433cd95
+$ apt-get source -qq --print-uris apt=1.2.29ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.dsc' apt_1.2.29ubuntu0.1.dsc 2486 SHA256:be06c9b9be3dfaab177acb25f6e330a9af1f49a631b4be988739625b229ed89f
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.tar.xz' apt_1.2.29ubuntu0.1.tar.xz 2071944 SHA256:0d171fd81c2039f882a96c633240c293f7f7317654b905f93a12ec682b7149cd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -211,11 +211,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
 ```
 
-### `dpkg` source package: `ca-certificates=20170717~16.04.1`
+### `dpkg` source package: `ca-certificates=20170717~16.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20170717~16.04.1`
+- `ca-certificates=20170717~16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -226,9 +226,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20170717~16.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.dsc' ca-certificates_20170717~16.04.1.dsc 1862 SHA256:5f7a908b265052c882ee7e2584673de5c0ab90ab3284a05c287c48f3117bda09
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
+$ apt-get source -qq --print-uris ca-certificates=20170717~16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.2.dsc' ca-certificates_20170717~16.04.2.dsc 1969 SHA256:0b6e1f7a5d2ae31e0c6729df25bfd008286ebcdd53cfd5d3b395b9e80be3d3f1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.2.tar.xz' ca-certificates_20170717~16.04.2.tar.xz 293084 SHA256:57f7083062f4318a4d1cb6a020df5ef0b245aa0755b9e6468aa44500e5798567
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
@@ -1623,14 +1623,14 @@ $ apt-get source -qq --print-uris sysstat=11.2.0-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.2.0-1ubuntu0.2.debian.tar.xz' sysstat_11.2.0-1ubuntu0.2.debian.tar.xz 35900 SHA256:ebb790cdf019a73edc84aa881529a01e8bcc0e5eda9cc86eb885414703566e3a
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.10`
+### `dpkg` source package: `systemd=229-4ubuntu21.15`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.10`
-- `libudev1:amd64=229-4ubuntu21.10`
-- `systemd=229-4ubuntu21.10`
-- `systemd-sysv=229-4ubuntu21.10`
+- `libsystemd0:amd64=229-4ubuntu21.15`
+- `libudev1:amd64=229-4ubuntu21.15`
+- `systemd=229-4ubuntu21.15`
+- `systemd-sysv=229-4ubuntu21.15`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1642,9 +1642,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.15
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.15.dsc' systemd_229-4ubuntu21.15.dsc 4145 SHA256:8d055a1654cb38efa164276d171018af7df4e7a8dd90f295e5972154a00e796d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.15.debian.tar.xz' systemd_229-4ubuntu21.15.debian.tar.xz 288192 SHA256:ccc5ecc1e7d79bdfaa3a340a59c94e654eebd45c1748c77b21f4346ef2363ffc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -1687,19 +1692,24 @@ $ apt-get source -qq --print-uris tar=1.28-2.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1ubuntu0.1.debian.tar.xz' tar_1.28-2.1ubuntu0.1.debian.tar.xz 36868 SHA256:1933bd564d70d3d0cf085291969af36b2461265270be25f3819cc033f72c1ac6
 ```
 
-### `dpkg` source package: `tzdata=2018g-0ubuntu0.16.04`
+### `dpkg` source package: `tzdata=2018i-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `tzdata=2018g-0ubuntu0.16.04`
+- `tzdata=2018i-0ubuntu0.16.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018i-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.16.04.dsc' tzdata_2018i-0ubuntu0.16.04.dsc 2136 SHA256:1116fa840729b82df88a3833ee6101b30f32fbaf59c12700e02dbcaf88a290d0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.16.04.debian.tar.xz' tzdata_2018i-0ubuntu0.16.04.debian.tar.xz 100076 SHA256:de8049b1ab50bb35f5bd0257b5695d1c8f4dbbfbe4671387bb27b8e6e53cb253
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
