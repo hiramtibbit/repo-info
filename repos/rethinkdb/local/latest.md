@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89488df570370bf502404ceb033ae9bcf49957f447ab59a864cfe8894ee1bc58`
-- Created: `2018-12-29T01:37:30.69879815Z`
-- Virtual Size: ~ 182.37 Mb  
+- Image ID: `sha256:a30fe3da043631dbb57b1b16cf4967b81696921a116a251d947372b3cee49c3d`
+- Created: `2019-01-22T23:26:25.558417573Z`
+- Virtual Size: ~ 182.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["rethinkdb","--bind","all"]`
