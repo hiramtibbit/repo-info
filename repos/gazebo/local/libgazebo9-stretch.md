@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e086a669e3c28f61b29a517d20d39f122ef73f68afd24c14458a9f6604fdd67e`
-- Created: `2018-12-29T00:14:18.830687054Z`
+- Image ID: `sha256:0b886dd8c9d85b379b474a36eab3475583227ab82d42bf1628b43024eddacac2`
+- Created: `2019-01-23T01:54:55.411521112Z`
 - Virtual Size: ~ 1.74 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -155,12 +155,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apparmor/2.11.0-3+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apparmor/2.11.0-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=1.4.8`
+### `dpkg` source package: `apt=1.4.9`
 
 Binary Packages:
 
-- `apt=1.4.8`
-- `libapt-pkg5.0:amd64=1.4.8`
+- `apt=1.4.9`
+- `libapt-pkg5.0:amd64=1.4.9`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -170,16 +170,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.4.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.dsc' apt_1.4.8.dsc 2549 SHA256:4c247df8efebd550fca6991abd6ed26cc814d4924e2760ab0b9abc947a164511
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.tar.xz' apt_1.4.8.tar.xz 2079096 SHA256:767ad7d6efb64cde52faececb7d3c0bf49800b9fe06f3a5b0132ab4c01a5b8f8
+$ apt-get source -qq --print-uris apt=1.4.9
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.dsc' apt_1.4.9.dsc 2549 SHA256:986d98b00caac809341f65acb3d14321d645ce8e87e411c26c66bf149a10dfea
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.tar.xz' apt_1.4.9.tar.xz 2079572 SHA256:d4d65e7c84da86f3e6dcc933bba46a08db429c9d933b667c864f5c0e880bac0d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/1.4.9/ (for browsing the source)
+- https://sources.debian.net/src/apt/1.4.9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/1.4.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `armadillo=1:7.600.2+dfsg-2`
 
@@ -433,19 +433,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.dsc' base-files_9.9+deb9u6.dsc 1095 SHA256:8b794419e3930e0f1b038b553aa1d7f617ff0d912275164d32a080b420f29d64
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.tar.xz' base-files_9.9+deb9u6.tar.xz 63044 SHA256:80c8361e861d3d667d0ee4ac223a31bd05e84ccaed5ddd6bb337663f388a3212
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -8799,13 +8793,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/s2tc/1.0+git20151227-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/s2tc/1.0+git20151227-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sdformat6=6.0.0-1~stretch`
+### `dpkg` source package: `sdformat6=6.2.0-1~stretch`
 
 Binary Packages:
 
-- `libsdformat6:amd64=6.0.0-1~stretch`
-- `libsdformat6-dev:amd64=6.0.0-1~stretch`
-- `sdformat-sdf=6.0.0-1~stretch`
+- `libsdformat6:amd64=6.2.0-1~stretch`
+- `libsdformat6-dev:amd64=6.2.0-1~stretch`
+- `sdformat-sdf=6.2.0-1~stretch`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat6/copyright`, `/usr/share/doc/libsdformat6-dev/copyright`, `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -8813,14 +8807,9 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat6/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat6=6.0.0-1~stretch
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~stretch.dsc' sdformat6_6.0.0-1~stretch.dsc 1379 SHA256:ca33fb391013441de73a168a71b1ba72156b6106d52cc2239d1a03621e4e3f85
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/s/sdformat6/sdformat6_6.0.0.orig.tar.bz2' sdformat6_6.0.0.orig.tar.bz2 473765 SHA256:93ea8007e9d92c87f99240e378231977fb1de2072fd752449f65917cb430bc4d
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/s/sdformat6/sdformat6_6.0.0-1~stretch.debian.tar.xz' sdformat6_6.0.0-1~stretch.debian.tar.xz 3152 SHA256:4f366b696e7e8c22543859ece6bb79e702e4e37d2602212941d867fee7c643b2
-```
 
 ### `dpkg` source package: `sed=4.4-1`
 
@@ -9201,12 +9190,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/superlu/5.2.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/superlu/5.2.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=232-25+deb9u6`
+### `dpkg` source package: `systemd=232-25+deb9u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-25+deb9u6`
-- `libudev1:amd64=232-25+deb9u6`
+- `libsystemd0:amd64=232-25+deb9u8`
+- `libudev1:amd64=232-25+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -9221,17 +9210,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.dsc' systemd_232-25+deb9u6.dsc 4797 SHA256:7f714e67a8b37c8edfa6a9e10b2d3e860ec5cd392312df7ddf857f6a7284682f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.debian.tar.xz' systemd_232-25+deb9u6.debian.tar.xz 210268 SHA256:8ef9e34c7b928a4a1191257e889a4df8649bf94e1f62d6646d2c21541fd813c2
+$ apt-get source -qq --print-uris systemd=232-25+deb9u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.dsc' systemd_232-25+deb9u8.dsc 4952 SHA256:1b20482f56a91eb2a8f30fa19320eed191e348462d55debf82cd5f28d2273d74
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.debian.tar.xz' systemd_232-25+deb9u8.debian.tar.xz 215064 SHA256:9ed04cb8ed2b581c52f4d5d3a74c20951525610c1cfb059eccffdbfddacbeecb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/232-25+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -9443,11 +9432,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/twolame/0.3.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/twolame/0.3.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018g-0+deb9u1`
+### `dpkg` source package: `tzdata=2018i-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2018g-0+deb9u1`
+- `tzdata=2018i-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9456,18 +9445,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018g-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.dsc' tzdata_2018g-0+deb9u1.dsc 2270 SHA256:52e25b210e602633a007e1db35ad62a75d2936bd5e375f55fdc8ea8e3233ffb1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz.asc' tzdata_2018g.orig.tar.gz.asc 833 SHA256:217e2e114b68ae54a14b23280a50922b3983d7e8819eb62dfe29cd7136a1c848
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.debian.tar.xz' tzdata_2018g-0+deb9u1.debian.tar.xz 101436 SHA256:0f2333999606b3e8127ead6c13f09a15c07352899368fe1bb13a7b06fc0ea0ef
+$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018g-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
@@ -10358,12 +10347,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.2.2-1.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.2.2-1.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zeromq3=4.2.1-4`
+### `dpkg` source package: `zeromq3=4.2.1-4+deb9u1`
 
 Binary Packages:
 
-- `libzmq3-dev:amd64=4.2.1-4`
-- `libzmq5:amd64=4.2.1-4`
+- `libzmq3-dev:amd64=4.2.1-4+deb9u1`
+- `libzmq5:amd64=4.2.1-4+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libzmq3-dev/copyright`, `/usr/share/doc/libzmq5/copyright`)
 
@@ -10376,17 +10365,17 @@ Licenses: (parsed from: `/usr/share/doc/libzmq3-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zeromq3=4.2.1-4
-'http://deb.debian.org/debian/pool/main/z/zeromq3/zeromq3_4.2.1-4.dsc' zeromq3_4.2.1-4.dsc 2026 SHA256:a2c9e96faa62e1e15480bb5dc72666c5518f6313cd7db2b6f046b6b5405acef6
-'http://deb.debian.org/debian/pool/main/z/zeromq3/zeromq3_4.2.1.orig.tar.gz' zeromq3_4.2.1.orig.tar.gz 586163 SHA256:f68bc45b51297577522aa83d8f05727dba54e567a177330c82918454b656f74f
-'http://deb.debian.org/debian/pool/main/z/zeromq3/zeromq3_4.2.1-4.debian.tar.xz' zeromq3_4.2.1-4.debian.tar.xz 21488 SHA256:66b93f6cdb6a8489349e4ef1d20a12204a2142af201f0738869267482193b3af
+$ apt-get source -qq --print-uris zeromq3=4.2.1-4+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/z/zeromq3/zeromq3_4.2.1-4+deb9u1.dsc' zeromq3_4.2.1-4+deb9u1.dsc 2054 SHA256:4b5180ba0ea712aec308ab23558fce53f0d7c19062c4182be005ac4aed64857e
+'http://security.debian.org/debian-security/pool/updates/main/z/zeromq3/zeromq3_4.2.1.orig.tar.gz' zeromq3_4.2.1.orig.tar.gz 586163 SHA256:f68bc45b51297577522aa83d8f05727dba54e567a177330c82918454b656f74f
+'http://security.debian.org/debian-security/pool/updates/main/z/zeromq3/zeromq3_4.2.1-4+deb9u1.debian.tar.xz' zeromq3_4.2.1-4+deb9u1.debian.tar.xz 21980 SHA256:76c8846dde987dbaa623bdcf6a37acd1bc525fe985cfb2d54a2a451df8100d0a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/zeromq3/4.2.1-4/ (for browsing the source)
-- https://sources.debian.net/src/zeromq3/4.2.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zeromq3/4.2.1-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/zeromq3/4.2.1-4+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/zeromq3/4.2.1-4+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zeromq3/4.2.1-4+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.8.dfsg-5`
 
