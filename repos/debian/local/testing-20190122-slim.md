@@ -75,19 +75,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.0~alpha3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0~alpha3.dsc' apt_1.8.0~alpha3.dsc 2787 SHA256:e18e18ec98d18a781699800c42c8a90a7c5b80cdf837f497b85a5f2e7243604c
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0~alpha3.tar.xz' apt_1.8.0~alpha3.tar.xz 2161776 SHA256:8f8ef052793207a915261edf73d2342eb9b05d7ac0f00f20c0ed8a5ef8e1bd29
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.8.0~alpha3/
 
-- https://sources.debian.net/src/apt/1.8.0~alpha3/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.8.0~alpha3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.8.0~alpha3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1473,21 +1467,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.93-3
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-3.dsc' sysvinit_2.93-3.dsc 2769 SHA256:543ae74847cf20cb49b33e28bf0e98b7cc2a79dc83f3242d28d4e4eabb42767c
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz' sysvinit_2.93.orig.tar.xz 117580 SHA256:472d460e233d981488509a167125a82925c8c9aba6b5608cb22598fdf326a8ff
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz.asc' sysvinit_2.93.orig.tar.xz.asc 1076 SHA256:cf2b374a96276a16e3ef07ad2be596420f0d8d77227aad3144d7ab4ea165a4af
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-3.debian.tar.xz' sysvinit_2.93-3.debian.tar.xz 129992 SHA256:06f07af8bd30f5d157de04134c18ade917b391f36b4051a98bb45f887c0da719
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/2.93-3/
 
-- https://sources.debian.net/src/sysvinit/2.93-3/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.93-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.93-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-4`
 
