@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ed677ed08b373d5deb9bc3fa0a7f7a1b01329231baacb713bea8086fe0e1b08`
-- Created: `2018-12-29T00:06:59.551670256Z`
-- Virtual Size: ~ 199.67 Mb  
+- Image ID: `sha256:f99f67798391f9e51c642d94cba112899ceeb10700342261d078e7228cbefb36`
+- Created: `2019-01-23T08:53:24.159411746Z`
+- Virtual Size: ~ 199.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,23 +51,27 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.18`
+### `dpkg` source package: `apt=1.0.1ubuntu2.19`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.18`
-- `apt-utils=1.0.1ubuntu2.18`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.18`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.18`
+- `apt=1.0.1ubuntu2.19`
+- `apt-utils=1.0.1ubuntu2.19`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.19`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.19`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.19
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.dsc' apt_1.0.1ubuntu2.19.dsc 2407 SHA256:ead36e8634a3ca6da5c0d657de4c06c522e7b3a78b130b75db11ed91e8389413
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.tar.xz' apt_1.0.1ubuntu2.19.tar.xz 1782488 SHA256:9202228f116d2b8be351f901aebff4c0ec6993db20849ecb9e9b5576ae46698f
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
@@ -205,11 +209,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `ca-certificates=20170717~14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20170717~14.04.1`
+- `ca-certificates=20170717~14.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -220,9 +224,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.2.dsc' ca-certificates_20170717~14.04.2.dsc 1974 SHA256:24471f51389401da9dbf1836559054e6e64b168507ba959abcae38cfc86d0dd7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.2.tar.xz' ca-certificates_20170717~14.04.2.tar.xz 290996 SHA256:71218b22737e9ba0c2652b71d676bcb96040130193bbe7580f7906dc5a9d4933
 ```
 
 ### `dpkg` source package: `cdebconf=0.187ubuntu1`
@@ -1119,22 +1123,27 @@ $ apt-get source -qq --print-uris kmod=15-0ubuntu7
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu7.debian.tar.xz' kmod_15-0ubuntu7.debian.tar.xz 13544 SHA256:d040e5e798f58b334f91e68fc183dc469f4d6a1c7bc52d9bc25819795d15c16f
 ```
 
-### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.3`
+### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.4`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.3`
-- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.3`
-- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.3`
-- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.3`
+- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.4`
+- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.4`
+- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.4`
+- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.4.dsc' krb5_1.12+dfsg-2ubuntu5.4.dsc 3299 SHA256:b70e18475e66c10861636b19ffc0a24bb3387b7a0e4f7659ad54d021fad4356d
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.4.debian.tar.gz' krb5_1.12+dfsg-2ubuntu5.4.debian.tar.gz 156013 SHA256:9307f54b2a641e2e1584fc047a06283b7c838fd5f71cdf99ab0d5088b0b9bde8
+```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`
 
@@ -1842,11 +1851,11 @@ $ apt-get source -qq --print-uris mime-support=3.54ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mime-support/mime-support_3.54ubuntu1.1.tar.gz' mime-support_3.54ubuntu1.1.tar.gz 34156 SHA256:f96ddb9278354885cc2332684cdc5e0d82f2718bfe9d3ebfd9ec59e8f046870f
 ```
 
-### `dpkg` source package: `mountall=2.53`
+### `dpkg` source package: `mountall=2.53ubuntu1`
 
 Binary Packages:
 
-- `mountall=2.53`
+- `mountall=2.53ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/mountall/copyright`)
 
@@ -1857,9 +1866,9 @@ Licenses: (parsed from: `/usr/share/doc/mountall/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mountall=2.53
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mountall/mountall_2.53.dsc' mountall_2.53.dsc 1720 SHA256:173a5ca535ba0f57bca72efcfb42d2ef86c53c98a550cbc7b0c30d007fcf71ce
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mountall/mountall_2.53.tar.gz' mountall_2.53.tar.gz 644421 SHA256:021a3c4742b2c289954feaf2e1ba896b59f5890c76211e0c7addf9d00da04b39
+$ apt-get source -qq --print-uris mountall=2.53ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mountall/mountall_2.53ubuntu1.dsc' mountall_2.53ubuntu1.dsc 1846 SHA256:bca926ae15606d5410d24b11ff9b4f4ea3ce45b66c69c090f606d7afc36df9c1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mountall/mountall_2.53ubuntu1.tar.gz' mountall_2.53ubuntu1.tar.gz 631347 SHA256:bd73b8df826f72e7b551c6df59d7a6e447de2e0fe58f2fd1d8afa4a272e0b1ca
 ```
 
 ### `dpkg` source package: `mpdecimal=2.4.0-6`
@@ -2535,19 +2544,24 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `tzdata=2018g-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2018i-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2018g-0ubuntu0.14.04`
+- `tzdata=2018i-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018i-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.14.04.dsc' tzdata_2018i-0ubuntu0.14.04.dsc 2080 SHA256:00e3d00469fe865a5ef2817a718280c5d1d9db35281ece020065ee58233f79a1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.14.04.debian.tar.xz' tzdata_2018i-0ubuntu0.14.04.debian.tar.xz 100552 SHA256:aa7d91d0f56372284defd2d68d44ae7099a8bc0f41147a7e01bedc21fde48bbc
+```
 
 ### `dpkg` source package: `ubuntu-advantage-tools=10ubuntu0.14.04.2`
 
