@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d9c17228a9e80a0a23927f24f3cf17d012cf0bb3eae5e3541a8c6987ab9bd5a`
-- Created: `2018-12-28T23:22:57.930890907Z`
-- Virtual Size: ~ 86.70 Mb  
+- Image ID: `sha256:20bb25d32758db4f91b18a9581794cfaa6a8c5fbad80093e9a9e42211e131a48`
+- Created: `2019-01-22T22:41:28.350121367Z`
+- Virtual Size: ~ 87.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.6`
+### `dpkg` source package: `apt=1.6.6ubuntu0.1`
 
 Binary Packages:
 
-- `apt=1.6.6`
-- `libapt-pkg5.0:amd64=1.6.6`
+- `apt=1.6.6ubuntu0.1`
+- `libapt-pkg5.0:amd64=1.6.6ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.6.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.dsc' apt_1.6.6.dsc 2751 SHA256:4a2a1166a5989a3a8cdfaa37fe8be20eb4385ecb4a73a272970c81ae66551f7a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6.tar.xz' apt_1.6.6.tar.xz 2141060 SHA256:c4d9b6d623ab455b297a551fe1fc20c87f866d2eeb21026131dc8c83e347f641
+$ apt-get source -qq --print-uris apt=1.6.6ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6ubuntu0.1.dsc' apt_1.6.6ubuntu0.1.dsc 2837 SHA256:f16c1138e5ffa3c105ff388d028bc884746f2a2f73766c2e740827d5bf4d37d7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.6ubuntu0.1.tar.xz' apt_1.6.6ubuntu0.1.tar.xz 2141972 SHA256:76527ee62dc2c465a6bf5d0f46325608de75c8d02afc177591b12a25784c65ad
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -343,14 +343,14 @@ $ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.5ubuntu2.1.tar.xz' dpkg_1.19.0.5ubuntu2.1.tar.xz 4570912 SHA256:3e8bd743f1b953095bba765bfb75eaaa68a6aba3bc8de97e3f9d1dff754addaa
 ```
 
-### `dpkg` source package: `e2fsprogs=1.44.1-1`
+### `dpkg` source package: `e2fsprogs=1.44.1-1ubuntu1`
 
 Binary Packages:
 
-- `e2fsprogs=1.44.1-1`
-- `libcom-err2:amd64=1.44.1-1`
-- `libext2fs2:amd64=1.44.1-1`
-- `libss2:amd64=1.44.1-1`
+- `e2fsprogs=1.44.1-1ubuntu1`
+- `libcom-err2:amd64=1.44.1-1ubuntu1`
+- `libext2fs2:amd64=1.44.1-1ubuntu1`
+- `libss2:amd64=1.44.1-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`)
 
@@ -360,11 +360,11 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1.dsc' e2fsprogs_1.44.1-1.dsc 2744 SHA256:7269c93ee3702a3e796967be0cb9f40f45dc089e93bc56e384fa4ed71818729d
+$ apt-get source -qq --print-uris e2fsprogs=1.44.1-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1ubuntu1.dsc' e2fsprogs_1.44.1-1ubuntu1.dsc 3233 SHA256:15d3701762aa0d25563773a952152b239a4dffded7a53d2abbfa8007d154c018
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1.orig.tar.gz' e2fsprogs_1.44.1.orig.tar.gz 7544908 SHA256:a5a8068dfe105050d8c63d67515a0ae5fff3f37232f725e0aa72b389eeb6c1e6
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1.orig.tar.gz.asc' e2fsprogs_1.44.1.orig.tar.gz.asc 488 SHA256:6e8eb8df52f5cd577f5eae489108c6fbe2c5381e01f83c325873e034d5a84e46
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1.debian.tar.xz' e2fsprogs_1.44.1-1.debian.tar.xz 76384 SHA256:4729c32f1d03177d540ef9c0c18a71fcd2907ea8332c0a35929bd1df2825f6bc
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1ubuntu1.debian.tar.xz' e2fsprogs_1.44.1-1ubuntu1.debian.tar.xz 77340 SHA256:2f0121c7cfc3c40d39932cd53faf35fccf0ce33a2e2edf90ea4eb6a594e072ae
 ```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
@@ -456,11 +456,11 @@ $ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.1.2+dfsg-2.debian.tar.xz' gmp_6.1.2+dfsg-2.debian.tar.xz 20744 SHA256:33cf6cc65827c9df744e4e07b216ca2d02eb57327a949f80a7b7dddd0485ee85
 ```
 
-### `dpkg` source package: `gnupg2=2.2.4-1ubuntu1.1`
+### `dpkg` source package: `gnupg2=2.2.4-1ubuntu1.2`
 
 Binary Packages:
 
-- `gpgv=2.2.4-1ubuntu1.1`
+- `gpgv=2.2.4-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -476,9 +476,15 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.2.dsc' gnupg2_2.2.4-1ubuntu1.2.dsc 3816 SHA256:3b5821e3a8c95653140d0bbc791098ab6c08d6fc7206857a21b25e291e79f2bc
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA256:401a3e64780fdfa6d7670de0880aa5c9d589b3db7a7098979d7606cec546f2ec
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA256:30dd26e12b451e8f6799ba3a81449ed18db3d3e747820b237a39745ab264c899
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2 82238 SHA256:ad2e70205e5d5f52c092c58e619ee58e5f5bc2b44f44a2c462296fc34a1960de
+```
 
 ### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1`
 
@@ -1162,12 +1168,12 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu1.debian.tar.xz' shadow_4.5-1ubuntu1.debian.tar.xz 470524 SHA256:51e534983f0500229b51b3f3ccbee3b041e48d3ea6e5f64c914351a0e996dc05
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.9`
+### `dpkg` source package: `systemd=237-3ubuntu10.11`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.9`
-- `libudev1:amd64=237-3ubuntu10.9`
+- `libsystemd0:amd64=237-3ubuntu10.11`
+- `libudev1:amd64=237-3ubuntu10.11`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1179,9 +1185,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.11
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.11.dsc' systemd_237-3ubuntu10.11.dsc 4656 SHA256:fe8e56fc87d480d22da44f0d6c260e233f58a9b29f4e2ac3eda76d37fca24cd0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.11.debian.tar.xz' systemd_237-3ubuntu10.11.debian.tar.xz 199440 SHA256:c94d76a2379bcddb299287b7ff6d132c128af8be6ee912c581bd1a257a6a61f4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -1240,19 +1251,19 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2018.09.18.1~18.04.0
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz' ubuntu-keyring_2018.09.18.1~18.04.0.tar.gz 34238 SHA256:7095b786c02816bb6933b3a73ed6c9e302542e8fc1edb8346f7ddab49e95b3bd
 ```
 
-### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.2`
+### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.3`
 
 Binary Packages:
 
-- `bsdutils=1:2.31.1-0.4ubuntu3.2`
-- `fdisk=2.31.1-0.4ubuntu3.2`
-- `libblkid1:amd64=2.31.1-0.4ubuntu3.2`
-- `libfdisk1:amd64=2.31.1-0.4ubuntu3.2`
-- `libmount1:amd64=2.31.1-0.4ubuntu3.2`
-- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.2`
-- `libuuid1:amd64=2.31.1-0.4ubuntu3.2`
-- `mount=2.31.1-0.4ubuntu3.2`
-- `util-linux=2.31.1-0.4ubuntu3.2`
+- `bsdutils=1:2.31.1-0.4ubuntu3.3`
+- `fdisk=2.31.1-0.4ubuntu3.3`
+- `libblkid1:amd64=2.31.1-0.4ubuntu3.3`
+- `libfdisk1:amd64=2.31.1-0.4ubuntu3.3`
+- `libmount1:amd64=2.31.1-0.4ubuntu3.3`
+- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.3`
+- `libuuid1:amd64=2.31.1-0.4ubuntu3.3`
+- `mount=2.31.1-0.4ubuntu3.3`
+- `util-linux=2.31.1-0.4ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1273,9 +1284,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.3.dsc' util-linux_2.31.1-0.4ubuntu3.3.dsc 4148 SHA256:04812d13b3420078a683d8a068efe31b104eb70de991bf79207ca0ae1de88dd0
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.3.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.3.debian.tar.xz 99496 SHA256:9a57b1680f325060f147db00ecfbe6ced03ee563fe20f0d9dcbd22b34f70020e
+```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
