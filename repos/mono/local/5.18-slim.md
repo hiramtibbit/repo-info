@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bef28f72e30957a59541893d3779169afddb1a0862b20e1d2f2a4a15bcd5f519`
-- Created: `2018-12-31T21:20:25.253392452Z`
-- Virtual Size: ~ 251.39 Mb  
+- Image ID: `sha256:02d4be513cb31ba95002ab00b6153d992bf0e63add5c58b4b34d10704c2c6538`
+- Created: `2019-01-22T20:36:40.955167275Z`
+- Virtual Size: ~ 251.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -64,12 +64,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.115/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.115/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=1.4.8`
+### `dpkg` source package: `apt=1.4.9`
 
 Binary Packages:
 
-- `apt=1.4.8`
-- `libapt-pkg5.0:amd64=1.4.8`
+- `apt=1.4.9`
+- `libapt-pkg5.0:amd64=1.4.9`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -79,16 +79,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.4.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.dsc' apt_1.4.8.dsc 2549 SHA256:4c247df8efebd550fca6991abd6ed26cc814d4924e2760ab0b9abc947a164511
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.tar.xz' apt_1.4.8.tar.xz 2079096 SHA256:767ad7d6efb64cde52faececb7d3c0bf49800b9fe06f3a5b0132ab4c01a5b8f8
+$ apt-get source -qq --print-uris apt=1.4.9
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.dsc' apt_1.4.9.dsc 2549 SHA256:986d98b00caac809341f65acb3d14321d645ce8e87e411c26c66bf149a10dfea
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.tar.xz' apt_1.4.9.tar.xz 2079572 SHA256:d4d65e7c84da86f3e6dcc933bba46a08db429c9d933b667c864f5c0e880bac0d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/1.4.9/ (for browsing the source)
+- https://sources.debian.net/src/apt/1.4.9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/1.4.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -154,19 +154,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.dsc' base-files_9.9+deb9u6.dsc 1095 SHA256:8b794419e3930e0f1b038b553aa1d7f617ff0d912275164d32a080b420f29d64
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.tar.xz' base-files_9.9+deb9u6.tar.xz 63044 SHA256:80c8361e861d3d667d0ee4ac223a31bd05e84ccaed5ddd6bb337663f388a3212
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1133,28 +1127,28 @@ $ apt-get source -qq --print-uris mono-llvm=6.0+mono20180728010642-0xamarin12+de
 'http://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_6.0+mono20180728010642-0xamarin12+debian9b1.debian.tar.xz' mono-llvm_6.0+mono20180728010642-0xamarin12+debian9b1.debian.tar.xz 7112 SHA256:d083845c6bc7a7ee2cba37117169fde75b9ab79f12ab5507bd513f3ff02a8230
 ```
 
-### `dpkg` source package: `mono=5.18.0.225-0xamarin1+debian9b1`
+### `dpkg` source package: `mono=5.18.0.225-0xamarin13+debian9b1`
 
 Binary Packages:
 
-- `ca-certificates-mono=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-btls-interface4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-corlib4.5-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-i18n-west4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-i18n4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-security4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system-configuration4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system-core4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system-numerics4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system-security4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system-xml4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `libmono-system4.0-cil=5.18.0.225-0xamarin1+debian9b1`
-- `mono-4.0-gac=5.18.0.225-0xamarin1+debian9b1`
-- `mono-gac=5.18.0.225-0xamarin1+debian9b1`
-- `mono-llvm-support=5.18.0.225-0xamarin1+debian9b1`
-- `mono-runtime=5.18.0.225-0xamarin1+debian9b1`
-- `mono-runtime-common=5.18.0.225-0xamarin1+debian9b1`
-- `mono-runtime-sgen=5.18.0.225-0xamarin1+debian9b1`
+- `ca-certificates-mono=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-btls-interface4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-corlib4.5-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-i18n-west4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-i18n4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-security4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system-configuration4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system-core4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system-numerics4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system-security4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system-xml4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `libmono-system4.0-cil=5.18.0.225-0xamarin13+debian9b1`
+- `mono-4.0-gac=5.18.0.225-0xamarin13+debian9b1`
+- `mono-gac=5.18.0.225-0xamarin13+debian9b1`
+- `mono-llvm-support=5.18.0.225-0xamarin13+debian9b1`
+- `mono-runtime=5.18.0.225-0xamarin13+debian9b1`
+- `mono-runtime-common=5.18.0.225-0xamarin13+debian9b1`
+- `mono-runtime-sgen=5.18.0.225-0xamarin13+debian9b1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/share/doc/libmono-btls-interface4.0-cil/copyright`, `/usr/share/doc/libmono-corlib4.5-cil/copyright`, `/usr/share/doc/libmono-i18n-west4.0-cil/copyright`, `/usr/share/doc/libmono-i18n4.0-cil/copyright`, `/usr/share/doc/libmono-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-configuration4.0-cil/copyright`, `/usr/share/doc/libmono-system-core4.0-cil/copyright`, `/usr/share/doc/libmono-system-numerics4.0-cil/copyright`, `/usr/share/doc/libmono-system-security4.0-cil/copyright`, `/usr/share/doc/libmono-system-xml4.0-cil/copyright`, `/usr/share/doc/libmono-system4.0-cil/copyright`, `/usr/share/doc/mono-4.0-gac/copyright`, `/usr/share/doc/mono-gac/copyright`, `/usr/share/doc/mono-llvm-support/copyright`, `/usr/share/doc/mono-runtime/copyright`, `/usr/share/doc/mono-runtime-common/copyright`, `/usr/share/doc/mono-runtime-sgen/copyright`)
 
@@ -1175,9 +1169,14 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mono=5.18.0.225-0xamarin13+debian9b1
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225-0xamarin13+debian9b1.dsc' mono_5.18.0.225-0xamarin13+debian9b1.dsc 19123 SHA256:0e8895fa02ef64a305e665a35d4a2b81bae6b8a0188dbc12b285980bfd57f274
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225.orig.tar.bz2' mono_5.18.0.225.orig.tar.bz2 276603472 SHA256:91aa3e8a12aaf94760a092866abc5c5f1f437ecd0a97bedfff857c439aa7a87f
+'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_5.18.0.225-0xamarin13+debian9b1.debian.tar.xz' mono_5.18.0.225-0xamarin13+debian9b1.debian.tar.xz 156232 SHA256:ca4ab00dbb183013b56a29be9699159625596dc0a95131fadbfa8781c4e6ead8
+```
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1+deb9u2`
 
@@ -1467,12 +1466,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=232-25+deb9u6`
+### `dpkg` source package: `systemd=232-25+deb9u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-25+deb9u6`
-- `libudev1:amd64=232-25+deb9u6`
+- `libsystemd0:amd64=232-25+deb9u8`
+- `libudev1:amd64=232-25+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1487,17 +1486,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.dsc' systemd_232-25+deb9u6.dsc 4797 SHA256:7f714e67a8b37c8edfa6a9e10b2d3e860ec5cd392312df7ddf857f6a7284682f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.debian.tar.xz' systemd_232-25+deb9u6.debian.tar.xz 210268 SHA256:8ef9e34c7b928a4a1191257e889a4df8649bf94e1f62d6646d2c21541fd813c2
+$ apt-get source -qq --print-uris systemd=232-25+deb9u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.dsc' systemd_232-25+deb9u8.dsc 4952 SHA256:1b20482f56a91eb2a8f30fa19320eed191e348462d55debf82cd5f28d2273d74
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.debian.tar.xz' systemd_232-25+deb9u8.debian.tar.xz 215064 SHA256:9ed04cb8ed2b581c52f4d5d3a74c20951525610c1cfb059eccffdbfddacbeecb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/232-25+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -1550,11 +1549,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2018g-0+deb9u1`
+### `dpkg` source package: `tzdata=2018i-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2018g-0+deb9u1`
+- `tzdata=2018i-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1563,18 +1562,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018g-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.dsc' tzdata_2018g-0+deb9u1.dsc 2270 SHA256:52e25b210e602633a007e1db35ad62a75d2936bd5e375f55fdc8ea8e3233ffb1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz.asc' tzdata_2018g.orig.tar.gz.asc 833 SHA256:217e2e114b68ae54a14b23280a50922b3983d7e8819eb62dfe29cd7136a1c848
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.debian.tar.xz' tzdata_2018g-0+deb9u1.debian.tar.xz 101436 SHA256:0f2333999606b3e8127ead6c13f09a15c07352899368fe1bb13a7b06fc0ea0ef
+$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018g-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
