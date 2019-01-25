@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9231dd560bb5b55d3bc9a5b24c1464fbf93562a767067501c01e16e5e8b7ea2f`
-- Created: `2018-12-29T00:51:47.962134842Z`
+- Image ID: `sha256:392367754a912bd4a9a57d91efe46e0f1723d8a768fddf9c8c4dc1e7214a8712`
+- Created: `2019-01-23T03:12:57.681784106Z`
 - Virtual Size: ~ 1.37 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -183,12 +183,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apr/1.5.2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apr/1.5.2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=1.4.8`
+### `dpkg` source package: `apt=1.4.9`
 
 Binary Packages:
 
-- `apt=1.4.8`
-- `libapt-pkg5.0:amd64=1.4.8`
+- `apt=1.4.9`
+- `libapt-pkg5.0:amd64=1.4.9`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -198,16 +198,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.4.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.dsc' apt_1.4.8.dsc 2549 SHA256:4c247df8efebd550fca6991abd6ed26cc814d4924e2760ab0b9abc947a164511
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.8.tar.xz' apt_1.4.8.tar.xz 2079096 SHA256:767ad7d6efb64cde52faececb7d3c0bf49800b9fe06f3a5b0132ab4c01a5b8f8
+$ apt-get source -qq --print-uris apt=1.4.9
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.dsc' apt_1.4.9.dsc 2549 SHA256:986d98b00caac809341f65acb3d14321d645ce8e87e411c26c66bf149a10dfea
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.tar.xz' apt_1.4.9.tar.xz 2079572 SHA256:d4d65e7c84da86f3e6dcc933bba46a08db429c9d933b667c864f5c0e880bac0d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/1.4.9/ (for browsing the source)
+- https://sources.debian.net/src/apt/1.4.9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/1.4.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-atk=2.22.0-2`
 
@@ -408,19 +408,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.dsc' base-files_9.9+deb9u6.dsc 1095 SHA256:8b794419e3930e0f1b038b553aa1d7f617ff0d912275164d32a080b420f29d64
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.tar.xz' base-files_9.9+deb9u6.tar.xz 63044 SHA256:80c8361e861d3d667d0ee4ac223a31bd05e84ccaed5ddd6bb337663f388a3212
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -5804,33 +5798,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pyparsing/2.1.10+dfsg1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pyparsing/2.1.10+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.9-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.10-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.9-1`
+- `python-catkin-pkg-modules=0.4.10-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.10-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.debian.tar.xz' python-catkin-pkg-modules_0.4.10-1.debian.tar.xz 1944 SHA512:4c76a2a1d99b6590c42186593a76a2e04bddfab22d5db5a95dff7fc4bdc1aaae04c8bb6575a3ce7b9790bb6165d82d4ff705e60210c7be8145cbf85d66ea60e8
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.dsc' python-catkin-pkg-modules_0.4.10-1.dsc 1050 SHA512:893146573a4523538af43a9de3631fa45720e792ecee9a1bfa42103229b8a5f47f4f150dc0f80a29baf508798a001aa5bf42e04a8dba1f7085a895c33d52d6e9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10.orig.tar.gz' python-catkin-pkg-modules_0.4.10.orig.tar.gz 58599 SHA512:e1d5f3aaea8aad2a74733bb7478c8099f93fcbb6ac0ac5c7ddb52b8534dd0483dff7c53c4c05b011f98c312fd1bd25a098d348430671ed1f8e7787d5bd0ab2f9
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.10-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.9-100`
+- `python-catkin-pkg=0.4.10-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.10-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.debian.tar.xz' python-catkin-pkg_0.4.10-100.debian.tar.xz 1916 SHA512:3ddfe0464dfe5ef275335c15144fe02d6aae20848abc4abf24dbd9b6e92a22a05689407486dc1580c75eda736b7243ffe08b4e7c95c53d02edf74050279a3f36
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.dsc' python-catkin-pkg_0.4.10-100.dsc 986 SHA512:2fa447117806fcf594ebe8d4b59e59184def08fe4cc11933d3ccfc15842623bf25b1841a73a5638de22085aa8b4b989891065b6def99826ce8b5a026685b8c2b
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10.orig.tar.gz' python-catkin-pkg_0.4.10.orig.tar.gz 13169 SHA512:463f25e6bc2c8c7709144fc585113fc65f56b01939c87b56504edcd53e7d3f3288ff1f2b644af6a12cea624ad52f1d2a3c267dd181dcea6ac3be247f3850a951
+```
 
 ### `dpkg` source package: `python-cffi=1.9.1-2`
 
@@ -6074,11 +6078,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-roman/2.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-roman/2.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-rosdep=0.13.0-1`
+### `dpkg` source package: `python-rosdep=0.14.0-1`
 
 Binary Packages:
 
-- `python-rosdep=0.13.0-1`
+- `python-rosdep=0.14.0-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-rosdep=0.14.0-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0-1.debian.tar.xz' python-rosdep_0.14.0-1.debian.tar.xz 1944 SHA512:75aa704cc1b56ab8653339171df8a16712ade5031180b22f1af25b4bfd48a60b60b3d4c892fed9780618d69def6b2298aab904b2cd566bf3d0524f08363b37b1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0-1.dsc' python-rosdep_0.14.0-1.dsc 905 SHA512:e18c73b6efc8a307e726180f418d0a3e38847669957aff568b1d070f257a6f92f068f139119d1ff1a8041445eddf9ad3072adb56e964faaa40e2cba93ece9a06
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0.orig.tar.gz' python-rosdep_0.14.0.orig.tar.gz 80031 SHA512:9efe48135b0310c57ceaa4fc29b4375afd32f5795291eda8cf729c24a89744e2b5e5e7b668123e37762d0ce1fb37d6789051de930b08ebb0cb0fdeb1dddc5936
+```
+
+### `dpkg` source package: `python-rosdistro-modules=0.7.1-1`
+
+Binary Packages:
+
+- `python-rosdistro-modules=0.7.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6088,25 +6111,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python-rosdistro-modules=0.7.0-1`
+### `dpkg` source package: `python-rosdistro=0.7.1-100`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.7.0-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `python-rosdistro=0.7.0-100`
-
-Binary Packages:
-
-- `python-rosdistro=0.7.0-100`
+- `python-rosdistro=0.7.1-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7828,12 +7837,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.9.5-1+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.9.5-1+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=232-25+deb9u6`
+### `dpkg` source package: `systemd=232-25+deb9u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-25+deb9u6`
-- `libudev1:amd64=232-25+deb9u6`
+- `libsystemd0:amd64=232-25+deb9u8`
+- `libudev1:amd64=232-25+deb9u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -7848,17 +7857,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-25+deb9u6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.dsc' systemd_232-25+deb9u6.dsc 4797 SHA256:7f714e67a8b37c8edfa6a9e10b2d3e860ec5cd392312df7ddf857f6a7284682f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u6.debian.tar.xz' systemd_232-25+deb9u6.debian.tar.xz 210268 SHA256:8ef9e34c7b928a4a1191257e889a4df8649bf94e1f62d6646d2c21541fd813c2
+$ apt-get source -qq --print-uris systemd=232-25+deb9u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.dsc' systemd_232-25+deb9u8.dsc 4952 SHA256:1b20482f56a91eb2a8f30fa19320eed191e348462d55debf82cd5f28d2273d74
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.debian.tar.xz' systemd_232-25+deb9u8.debian.tar.xz 215064 SHA256:9ed04cb8ed2b581c52f4d5d3a74c20951525610c1cfb059eccffdbfddacbeecb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/232-25+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/systemd/232-25+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/232-25+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/232-25+deb9u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/232-25+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -7953,11 +7962,11 @@ Licenses: (parsed from: `/usr/share/doc/libtinyxml2-4/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tzdata=2018g-0+deb9u1`
+### `dpkg` source package: `tzdata=2018i-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2018g-0+deb9u1`
+- `tzdata=2018i-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7966,18 +7975,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2018g-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.dsc' tzdata_2018g-0+deb9u1.dsc 2270 SHA256:52e25b210e602633a007e1db35ad62a75d2936bd5e375f55fdc8ea8e3233ffb1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz' tzdata_2018g.orig.tar.gz 366408 SHA256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g.orig.tar.gz.asc' tzdata_2018g.orig.tar.gz.asc 833 SHA256:217e2e114b68ae54a14b23280a50922b3983d7e8819eb62dfe29cd7136a1c848
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018g-0+deb9u1.debian.tar.xz' tzdata_2018g-0+deb9u1.debian.tar.xz 101436 SHA256:0f2333999606b3e8127ead6c13f09a15c07352899368fe1bb13a7b06fc0ea0ef
+$ apt-get source -qq --print-uris tzdata=2018i-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.dsc' tzdata_2018i-0+deb9u1.dsc 2270 SHA256:1ac28ccb98227c943c903778a6f8cf3cb567cf98e5558099236db8a93e9084d6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz.asc' tzdata_2018i.orig.tar.gz.asc 833 SHA256:eeaef7ccf3f1ea35274f480ad439c1ac0d6bb2a266f3dffd34ea6f282d915f2b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2018i-0+deb9u1.debian.tar.xz' tzdata_2018i-0+deb9u1.debian.tar.xz 101576 SHA256:9045fdd19624d963371c0ab769923ba6cda3a107b1a7669e591d3f72dcd93ed3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2018g-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2018g-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2018i-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2018i-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 

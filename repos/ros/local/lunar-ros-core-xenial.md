@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b1f37eade028802774ff4bd90674c6ca181475e2150926c8cc2442d7d745ea8`
-- Created: `2018-12-29T00:44:38.623837837Z`
-- Virtual Size: ~ 933.38 Mb  
+- Image ID: `sha256:e4a89bdfec402d57e2dbcaf95e1c8341731b7eaf30a6898429c3e55eda809346`
+- Created: `2019-01-23T03:05:05.980217711Z`
+- Virtual Size: ~ 933.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -118,12 +118,12 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.29`
+### `dpkg` source package: `apt=1.2.29ubuntu0.1`
 
 Binary Packages:
 
-- `apt=1.2.29`
-- `libapt-pkg5.0:amd64=1.2.29`
+- `apt=1.2.29ubuntu0.1`
+- `libapt-pkg5.0:amd64=1.2.29ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -133,9 +133,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.2.29
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.dsc' apt_1.2.29.dsc 2392 SHA256:cd6d3baf99c6f80b9e46c90ee3686de856ef197a978af825c688287e7c9a80ea
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29.tar.xz' apt_1.2.29.tar.xz 2055072 SHA256:aefb56c030c8fb909b690ba51d04dbf3dda8f9761803f9f0c4a6ffa78433cd95
+$ apt-get source -qq --print-uris apt=1.2.29ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.dsc' apt_1.2.29ubuntu0.1.dsc 2486 SHA256:be06c9b9be3dfaab177acb25f6e330a9af1f49a631b4be988739625b229ed89f
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.29ubuntu0.1.tar.xz' apt_1.2.29ubuntu0.1.tar.xz 2071944 SHA256:0d171fd81c2039f882a96c633240c293f7f7317654b905f93a12ec682b7149cd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -472,11 +472,11 @@ $ apt-get source -qq --print-uris bzr=2.7.0-2ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.1.debian.tar.xz' bzr_2.7.0-2ubuntu3.1.debian.tar.xz 42660 SHA256:7336e2ffc7f1f3a36d76c781f96076df4f81d140904163bb57f64f2a802f965b
 ```
 
-### `dpkg` source package: `ca-certificates=20170717~16.04.1`
+### `dpkg` source package: `ca-certificates=20170717~16.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20170717~16.04.1`
+- `ca-certificates=20170717~16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -487,9 +487,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20170717~16.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.dsc' ca-certificates_20170717~16.04.1.dsc 1862 SHA256:5f7a908b265052c882ee7e2584673de5c0ab90ab3284a05c287c48f3117bda09
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
+$ apt-get source -qq --print-uris ca-certificates=20170717~16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.2.dsc' ca-certificates_20170717~16.04.2.dsc 1969 SHA256:0b6e1f7a5d2ae31e0c6729df25bfd008286ebcdd53cfd5d3b395b9e80be3d3f1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.2.tar.xz' ca-certificates_20170717~16.04.2.tar.xz 293084 SHA256:57f7083062f4318a4d1cb6a020df5ef0b245aa0755b9e6468aa44500e5798567
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
@@ -1575,22 +1575,27 @@ $ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
 ```
 
-### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
+### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.1`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2`
-- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2`
-- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2`
-- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2`
+- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.dsc' krb5_1.13.2+dfsg-5ubuntu2.1.dsc 3520 SHA256:d32e3a18bd00e7446c67d28c4c70bb96ec80da9b0e9215d4d8531100e1f91952
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz 113600 SHA256:2536a14f7a186c9076d8fb8053be04842300ab000046b4d53c8fa8c9959f1efd
+```
 
 ### `dpkg` source package: `lapack=3.6.0-2ubuntu2`
 
@@ -1677,19 +1682,24 @@ $ apt-get source -qq --print-uris libalgorithm-merge-perl=0.08-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libalgorithm-merge-perl/libalgorithm-merge-perl_0.08-3.debian.tar.xz' libalgorithm-merge-perl_0.08-3.debian.tar.xz 2436 SHA256:241e8212e7b8607b7f5c6b7969d7bb1b62361eb013f0e48c28f8ef6390c7bce3
 ```
 
-### `dpkg` source package: `libarchive=3.1.2-11ubuntu0.16.04.4`
+### `dpkg` source package: `libarchive=3.1.2-11ubuntu0.16.04.5`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.1.2-11ubuntu0.16.04.4`
+- `libarchive13:amd64=3.1.2-11ubuntu0.16.04.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.1.2-11ubuntu0.16.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.5.dsc' libarchive_3.1.2-11ubuntu0.16.04.5.dsc 2422 SHA256:d4c428c4a966a3e9dbedcc3185d83fefdcc1fef19663614b61f32c08533af343
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.5.debian.tar.xz' libarchive_3.1.2-11ubuntu0.16.04.5.debian.tar.xz 43416 SHA256:a04783bb19823dcadbfb86abf8a2b0c0bf5f2cce7da458e25bd276c77c5637e4
+```
 
 ### `dpkg` source package: `libassuan=2.4.2-2`
 
@@ -2964,33 +2974,43 @@ $ apt-get source -qq --print-uris pyparsing=2.0.3+dfsg1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pyparsing/pyparsing_2.0.3+dfsg1-1ubuntu0.1.debian.tar.xz' pyparsing_2.0.3+dfsg1-1ubuntu0.1.debian.tar.xz 6552 SHA256:0b20410dc1469f401193ec5e42ca8817b243f3651fe0cd19e1388068d6c60b9c
 ```
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.4.9-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.4.10-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.4.9-1`
+- `python-catkin-pkg-modules=0.4.10-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.10-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.debian.tar.xz' python-catkin-pkg-modules_0.4.10-1.debian.tar.xz 1944 SHA512:4c76a2a1d99b6590c42186593a76a2e04bddfab22d5db5a95dff7fc4bdc1aaae04c8bb6575a3ce7b9790bb6165d82d4ff705e60210c7be8145cbf85d66ea60e8
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10-1.dsc' python-catkin-pkg-modules_0.4.10-1.dsc 1050 SHA512:893146573a4523538af43a9de3631fa45720e792ecee9a1bfa42103229b8a5f47f4f150dc0f80a29baf508798a001aa5bf42e04a8dba1f7085a895c33d52d6e9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.10.orig.tar.gz' python-catkin-pkg-modules_0.4.10.orig.tar.gz 58599 SHA512:e1d5f3aaea8aad2a74733bb7478c8099f93fcbb6ac0ac5c7ddb52b8534dd0483dff7c53c4c05b011f98c312fd1bd25a098d348430671ed1f8e7787d5bd0ab2f9
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.4.9-100`
+### `dpkg` source package: `python-catkin-pkg=0.4.10-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.4.9-100`
+- `python-catkin-pkg=0.4.10-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.4.10-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.debian.tar.xz' python-catkin-pkg_0.4.10-100.debian.tar.xz 1916 SHA512:3ddfe0464dfe5ef275335c15144fe02d6aae20848abc4abf24dbd9b6e92a22a05689407486dc1580c75eda736b7243ffe08b4e7c95c53d02edf74050279a3f36
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10-100.dsc' python-catkin-pkg_0.4.10-100.dsc 986 SHA512:2fa447117806fcf594ebe8d4b59e59184def08fe4cc11933d3ccfc15842623bf25b1841a73a5638de22085aa8b4b989891065b6def99826ce8b5a026685b8c2b
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.10.orig.tar.gz' python-catkin-pkg_0.4.10.orig.tar.gz 13169 SHA512:463f25e6bc2c8c7709144fc585113fc65f56b01939c87b56504edcd53e7d3f3288ff1f2b644af6a12cea624ad52f1d2a3c267dd181dcea6ac3be247f3850a951
+```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.3`
 
@@ -3138,11 +3158,30 @@ $ apt-get source -qq --print-uris python-roman=2.0.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-roman/python-roman_2.0.0-2.debian.tar.xz' python-roman_2.0.0-2.debian.tar.xz 8508 SHA256:fdb23384ad4ab4701214c5776bb2b181e794a347d024fc0483e4ebe5055f4362
 ```
 
-### `dpkg` source package: `python-rosdep=0.13.0-1`
+### `dpkg` source package: `python-rosdep=0.14.0-1`
 
 Binary Packages:
 
-- `python-rosdep=0.13.0-1`
+- `python-rosdep=0.14.0-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-rosdep=0.14.0-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0-1.debian.tar.xz' python-rosdep_0.14.0-1.debian.tar.xz 1944 SHA512:75aa704cc1b56ab8653339171df8a16712ade5031180b22f1af25b4bfd48a60b60b3d4c892fed9780618d69def6b2298aab904b2cd566bf3d0524f08363b37b1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0-1.dsc' python-rosdep_0.14.0-1.dsc 905 SHA512:e18c73b6efc8a307e726180f418d0a3e38847669957aff568b1d070f257a6f92f068f139119d1ff1a8041445eddf9ad3072adb56e964faaa40e2cba93ece9a06
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.14.0.orig.tar.gz' python-rosdep_0.14.0.orig.tar.gz 80031 SHA512:9efe48135b0310c57ceaa4fc29b4375afd32f5795291eda8cf729c24a89744e2b5e5e7b668123e37762d0ce1fb37d6789051de930b08ebb0cb0fdeb1dddc5936
+```
+
+### `dpkg` source package: `python-rosdistro-modules=0.7.1-1`
+
+Binary Packages:
+
+- `python-rosdistro-modules=0.7.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3152,25 +3191,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python-rosdistro-modules=0.7.0-1`
+### `dpkg` source package: `python-rosdistro=0.7.1-100`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.7.0-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `python-rosdistro=0.7.0-100`
-
-Binary Packages:
-
-- `python-rosdistro=0.7.0-100`
+- `python-rosdistro=0.7.1-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4579,14 +4604,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.1.diff.gz' subversion_1.9.3-2ubuntu1.1.diff.gz 2432375 SHA256:43ea0c91f14ddee823b7e661e3dec6eaa4eab55d0c9f69c22df4584e8392bbd6
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.10`
+### `dpkg` source package: `systemd=229-4ubuntu21.15`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.10`
-- `libudev1:amd64=229-4ubuntu21.10`
-- `systemd=229-4ubuntu21.10`
-- `systemd-sysv=229-4ubuntu21.10`
+- `libsystemd0:amd64=229-4ubuntu21.15`
+- `libudev1:amd64=229-4ubuntu21.15`
+- `systemd=229-4ubuntu21.15`
+- `systemd-sysv=229-4ubuntu21.15`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -4598,9 +4623,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.15
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.15.dsc' systemd_229-4ubuntu21.15.dsc 4145 SHA256:8d055a1654cb38efa164276d171018af7df4e7a8dd90f295e5972154a00e796d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.15.debian.tar.xz' systemd_229-4ubuntu21.15.debian.tar.xz 288192 SHA256:ccc5ecc1e7d79bdfaa3a340a59c94e654eebd45c1748c77b21f4346ef2363ffc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -4665,19 +4695,24 @@ $ apt-get source -qq --print-uris tinyxml2=2.2.0-1.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_2.2.0-1.1ubuntu1.debian.tar.xz' tinyxml2_2.2.0-1.1ubuntu1.debian.tar.xz 4896 SHA256:2e2ecb4f405be569a5fb55f2494d625d43e65b2ff620e751ace79fb0f1df6160
 ```
 
-### `dpkg` source package: `tzdata=2018g-0ubuntu0.16.04`
+### `dpkg` source package: `tzdata=2018i-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `tzdata=2018g-0ubuntu0.16.04`
+- `tzdata=2018i-0ubuntu0.16.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2018i-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.16.04.dsc' tzdata_2018i-0ubuntu0.16.04.dsc 2136 SHA256:1116fa840729b82df88a3833ee6101b30f32fbaf59c12700e02dbcaf88a290d0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i.orig.tar.gz' tzdata_2018i.orig.tar.gz 377009 SHA256:82c45ef84ca3bc01d0a4a397ba8adeb8f7f199c6550740587c6ac5a7108c00d9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2018i-0ubuntu0.16.04.debian.tar.xz' tzdata_2018i-0ubuntu0.16.04.debian.tar.xz 100076 SHA256:de8049b1ab50bb35f5bd0257b5695d1c8f4dbbfbe4671387bb27b8e6e53cb253
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
