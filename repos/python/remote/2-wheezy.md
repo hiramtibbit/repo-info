@@ -1,7 +1,7 @@
 ## `python:2-wheezy`
 
 ```console
-$ docker pull python@sha256:41779b9616ef93d14418033d1d5d589686373354033853114076853ef48d1fba
+$ docker pull python@sha256:cd32e4ffa7e84e4358e93f4b5b9f5ae171b2afadcce0c69c03e3bec81fa63a7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull python@sha256:41779b9616ef93d14418033d1d5d589686373354033853114076
 ### `python:2-wheezy` - linux; amd64
 
 ```console
-$ docker pull python@sha256:efd23c174e341a3a4708469d1bba3de9a09d2ee81d8b1d4fb04e77b5ab9f3974
+$ docker pull python@sha256:407ef010972189351cf0df479bc6a3c3075a2de7bc4f67b986f8be6b4586064c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.7 MB (208716479 bytes)**  
+-	Total Size: **208.8 MB (208794868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c89f5f9e11c9c1aea9bef9ce91f572ffd2df9950dfc04541ce9685431b796c7f`
+-	Image ID: `sha256:d92d46058b2f3f22b157d21b4938fe32ba3e70fbd9a0a1868a0c1fb173801ffc`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -51,13 +51,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.15
 # Wed, 23 Jan 2019 04:14:30 GMT
 RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Wed, 23 Jan 2019 04:14:30 GMT
-ENV PYTHON_PIP_VERSION=18.1
-# Wed, 23 Jan 2019 20:23:24 GMT
+# Sat, 26 Jan 2019 01:50:24 GMT
+ENV PYTHON_PIP_VERSION=19.0.1
+# Sat, 26 Jan 2019 01:50:30 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 23 Jan 2019 20:23:26 GMT
+# Sat, 26 Jan 2019 01:50:32 GMT
 RUN pip install --no-cache-dir virtualenv
-# Wed, 23 Jan 2019 20:23:26 GMT
+# Sat, 26 Jan 2019 01:50:33 GMT
 CMD ["python2"]
 ```
 
@@ -86,13 +86,13 @@ CMD ["python2"]
 		Last Modified: Wed, 23 Jan 2019 20:27:07 GMT  
 		Size: 14.8 MB (14838646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:718e44947f1e184535cadc04da0094ac7584f8892c5bcfa98b7785cc3bde2586`  
-		Last Modified: Wed, 23 Jan 2019 20:27:04 GMT  
-		Size: 1.8 MB (1780137 bytes)  
+	-	`sha256:02badbdf7e31513f32207b61d21335cf703f8512d76b13c8e48233042f18f7bb`  
+		Last Modified: Sat, 26 Jan 2019 01:53:58 GMT  
+		Size: 1.8 MB (1808339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5ba352fc00bcd4def974597c03f3f4ed0239ab7157cd6aadb6212dfd8096421`  
-		Last Modified: Wed, 23 Jan 2019 20:27:06 GMT  
-		Size: 3.7 MB (3655072 bytes)  
+	-	`sha256:0723b340d3b5ce5c1c1f84f3407ac0ccc8ee70ee83a8b783bbf7ceba729864f4`  
+		Last Modified: Sat, 26 Jan 2019 01:53:58 GMT  
+		Size: 3.7 MB (3705259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-wheezy` - linux; arm variant v5

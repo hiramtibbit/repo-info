@@ -1,7 +1,7 @@
 ## `python:2-slim-jessie`
 
 ```console
-$ docker pull python@sha256:cb9097f4abde59129065776a7a29a06305763bb95bdabf3fb16b5761cd0313ca
+$ docker pull python@sha256:1f7141989150e551a33444ba72a552b9b1382cd3744c5778e97b49aeb7b285a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull python@sha256:cb9097f4abde59129065776a7a29a06305763bb95bdabf3fb16b
 ### `python:2-slim-jessie` - linux; amd64
 
 ```console
-$ docker pull python@sha256:925216c2dfa08ceac039fa25650b51cc610c7b7fa75d73e30fbbba04191206f6
+$ docker pull python@sha256:e4d40ab8af35374ce549235dd3356e8031d8980df8c4d020d517031a5372e6b9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.0 MB (50023308 bytes)**  
+-	Total Size: **50.1 MB (50051416 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2d2b1402bcd35a8c29f8e1605c4d32cf1c63fde56f061b1b83909c8479d05e4`
+-	Image ID: `sha256:dfe3c27df4720950f19f2a333a2aa16c73673c4a77d54e894b7b20e666e68655`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -43,11 +43,11 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.15
 # Wed, 23 Jan 2019 04:03:58 GMT
 RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		wget 		xz-utils 		zlib1g-dev 		$(command -v gpg > /dev/null || echo 'gnupg dirmngr') 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 	&& rm -rf /var/lib/apt/lists/* 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Wed, 23 Jan 2019 04:03:59 GMT
-ENV PYTHON_PIP_VERSION=18.1
-# Wed, 23 Jan 2019 20:23:15 GMT
+# Sat, 26 Jan 2019 01:47:25 GMT
+ENV PYTHON_PIP_VERSION=19.0.1
+# Sat, 26 Jan 2019 01:50:21 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 23 Jan 2019 20:23:15 GMT
+# Sat, 26 Jan 2019 01:50:21 GMT
 CMD ["python2"]
 ```
 
@@ -64,9 +64,9 @@ CMD ["python2"]
 		Last Modified: Wed, 23 Jan 2019 20:26:58 GMT  
 		Size: 15.6 MB (15571754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35744e086e09da3b807e7eafb940c24ae142dc5d0257bae73d3dde9d306a8861`  
-		Last Modified: Wed, 23 Jan 2019 20:26:55 GMT  
-		Size: 2.1 MB (2084166 bytes)  
+	-	`sha256:be6a318a39953875269a1af4fa0ed6badb1bdf5a4fa733b809c05392d62a92e1`  
+		Last Modified: Sat, 26 Jan 2019 01:53:54 GMT  
+		Size: 2.1 MB (2112274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-slim-jessie` - linux; arm variant v5
