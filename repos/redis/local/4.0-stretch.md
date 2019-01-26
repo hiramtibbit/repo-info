@@ -84,8 +84,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.4.9
-'http://security.debian.org/debian-security/pool/updates/main/a/apt/apt_1.4.9.dsc' apt_1.4.9.dsc 2549 SHA256:986d98b00caac809341f65acb3d14321d645ce8e87e411c26c66bf149a10dfea
-'http://security.debian.org/debian-security/pool/updates/main/a/apt/apt_1.4.9.tar.xz' apt_1.4.9.tar.xz 2079572 SHA256:d4d65e7c84da86f3e6dcc933bba46a08db429c9d933b667c864f5c0e880bac0d
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.dsc' apt_1.4.9.dsc 2549 SHA256:986d98b00caac809341f65acb3d14321d645ce8e87e411c26c66bf149a10dfea
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.9.tar.xz' apt_1.4.9.tar.xz 2079572 SHA256:d4d65e7c84da86f3e6dcc933bba46a08db429c9d933b667c864f5c0e880bac0d
 ```
 
 Other potentially useful URLs:
@@ -158,19 +158,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.dsc' base-files_9.9+deb9u6.dsc 1095 SHA256:8b794419e3930e0f1b038b553aa1d7f617ff0d912275164d32a080b420f29d64
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u6.tar.xz' base-files_9.9+deb9u6.tar.xz 63044 SHA256:80c8361e861d3d667d0ee4ac223a31bd05e84ccaed5ddd6bb337663f388a3212
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
