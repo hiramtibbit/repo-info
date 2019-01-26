@@ -1,7 +1,7 @@
 ## `amazoncorretto:8-al2-full`
 
 ```console
-$ docker pull amazoncorretto@sha256:af4cc11e9c7447c3c7ebbab5b325ed67ea419e22777648061500a767e5a03d8a
+$ docker pull amazoncorretto@sha256:3c148935c874ed35c891995039f816786e0d6efa190f1391e5b562e1c575d7cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull amazoncorretto@sha256:af4cc11e9c7447c3c7ebbab5b325ed67ea419e227776
 ### `amazoncorretto:8-al2-full` - linux; amd64
 
 ```console
-$ docker pull amazoncorretto@sha256:6488060349f21a0a0e5620c094efc2e1c6e7102035b8661d095931bd38721f26
+$ docker pull amazoncorretto@sha256:b4f41fc7b181f4172f1d4f6e8b53e97de332e8dc4aab322329aab00f96cf7799
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.2 MB (200188615 bytes)**  
+-	Total Size: **232.7 MB (232706981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61e521884951c4fadbf3bedb29ce21f2cc00026ba7f5d21e86c09463194ee147`
+-	Image ID: `sha256:3bf1e71f77cd0d37b6743e18e326ea2352eb95be0af1b190cb0aba342c132f8e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -26,8 +26,8 @@ $ docker pull amazoncorretto@sha256:6488060349f21a0a0e5620c094efc2e1c6e7102035b8
 ADD file:d4a81b79ca9de0a2c33b9adb925cd6b676889f3f89203e2cf76d9bf7796e11e0 in / 
 # Mon, 21 Jan 2019 20:20:55 GMT
 CMD ["/bin/bash"]
-# Mon, 21 Jan 2019 20:43:40 GMT
-RUN amazon-linux-extras enable corretto8  && yum -y install java-1.8.0-amazon-corretto-devel-1.8.0_192.b12-1.amzn2  && yum clean all
+# Sat, 26 Jan 2019 00:22:27 GMT
+RUN amazon-linux-extras enable corretto8  && yum -y install java-1.8.0-amazon-corretto-devel-1.8.0_202.b08-1.amzn2  && yum clean all
 ```
 
 -	Layers:
@@ -35,7 +35,7 @@ RUN amazon-linux-extras enable corretto8  && yum -y install java-1.8.0-amazon-co
 		Last Modified: Mon, 21 Jan 2019 20:24:30 GMT  
 		Size: 61.3 MB (61281937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:744524323d30625abea063346a83c3d760c272a27b450cfae85ddc7c2265440e`  
-		Last Modified: Mon, 21 Jan 2019 20:44:06 GMT  
-		Size: 138.9 MB (138906678 bytes)  
+	-	`sha256:5bf9a6e936821b628b7bcb5a3afe5a1190e0142593003ccd5b4ae52fb05ee727`  
+		Last Modified: Sat, 26 Jan 2019 00:23:11 GMT  
+		Size: 171.4 MB (171425044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
