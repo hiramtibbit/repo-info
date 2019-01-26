@@ -1,13 +1,14 @@
 ## `erlang:slim`
 
 ```console
-$ docker pull erlang@sha256:4d33a0cb20d856af70a87177c6049684ec8cb3ccf8ffed41601b046eb5332acf
+$ docker pull erlang@sha256:18f1ac9c93840ca4aef4fe81333316e8c6f12002d1d073a7538a919bc8bc29e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; 386
 	-	linux; ppc64le
 
 ### `erlang:slim` - linux; amd64
@@ -80,6 +81,42 @@ CMD ["erl"]
 	-	`sha256:18bd92c02f816b65ac3bb8b4188e181c84f38277e575e5eac45add6d6e008fd6`  
 		Last Modified: Sat, 26 Jan 2019 10:42:24 GMT  
 		Size: 57.8 MB (57808162 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `erlang:slim` - linux; 386
+
+```console
+$ docker pull erlang@sha256:57dfea118d7eb7b3aeec8c2f9e9652dc619d3897e41bd50ad8d4ae0453e144be
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **110.8 MB (110834135 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5502f4d938e2f2c6814c4106425059b1521e20f39225333cb998f736b30eaa0b`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 23 Jan 2019 11:52:21 GMT
+ADD file:a1b4934a559144838b98b09b06112a85c3f348fe479aa3c06de45ad4d3924f84 in / 
+# Wed, 23 Jan 2019 11:52:22 GMT
+CMD ["bash"]
+# Sat, 26 Jan 2019 11:55:35 GMT
+ENV OTP_VERSION=21.2.4
+# Sat, 26 Jan 2019 12:06:48 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="833d31ac102536b752e474dc6d69be7cc3e37d2d944191317312b30b1ea8ef0d" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Sat, 26 Jan 2019 12:06:48 GMT
+CMD ["erl"]
+```
+
+-	Layers:
+	-	`sha256:e7605ade44a5672398d8a60ec13ddeae3204795d746eafc908b8c1103fa8fa35`  
+		Last Modified: Wed, 23 Jan 2019 12:02:23 GMT  
+		Size: 46.1 MB (46069455 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14f683ed7404efbdba68d572f2221844aa7d984c2bfe8ff74081ccace3a7d4ce`  
+		Last Modified: Sat, 26 Jan 2019 12:21:37 GMT  
+		Size: 64.8 MB (64764680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:slim` - linux; ppc64le
