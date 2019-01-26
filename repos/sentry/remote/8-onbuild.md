@@ -1,7 +1,7 @@
 ## `sentry:8-onbuild`
 
 ```console
-$ docker pull sentry@sha256:2c6a2f0dba51e2241f57d89ed82457aa676a7d4ad63c8f82e2815372778618c6
+$ docker pull sentry@sha256:16c89e9df73f7fcbd9d6b262e63e93fcd3d3233b8855d0d654d097e2a5c50d3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull sentry@sha256:2c6a2f0dba51e2241f57d89ed82457aa676a7d4ad63c8f82e281
 ### `sentry:8-onbuild` - linux; amd64
 
 ```console
-$ docker pull sentry@sha256:bc5a8db4f95636cad963af0bd63a9de274ab7d8f091d9d1daece8d5b56215648
+$ docker pull sentry@sha256:63eddddc0c826ab6db9a304523fbd01cf01e273e3f30402e37386206609e97ff
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.1 MB (174116996 bytes)**  
+-	Total Size: **174.1 MB (174117007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62e3bc79054bc48c8ff80f5ba2f97e8121a809aa4282b34ff1c1bd27301369f8`
+-	Image ID: `sha256:b311b97d279edca8205fd4dbe6162e717da57853cb53089a13414513849323e7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -73,31 +73,31 @@ RUN set -x     && apt-get update && apt-get install -y --no-install-recommends w
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
 # Wed, 05 Sep 2018 17:43:35 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Wed, 05 Sep 2018 17:43:35 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Wed, 05 Sep 2018 17:43:36 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Wed, 05 Sep 2018 17:43:36 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Wed, 05 Sep 2018 17:43:36 GMT
-EXPOSE 9000/tcp
-# Wed, 05 Sep 2018 17:43:36 GMT
+# Sat, 26 Jan 2019 02:09:38 GMT
+COPY file:eb9b8cb898c1cb3d4287bcebccb197a2be8b84d026a7f32333cf07190d07ee20 in /etc/sentry/ 
+# Sat, 26 Jan 2019 02:09:39 GMT
+COPY file:a05c3f29c43e7a3731ee93d86b5ab0824e2180162cfb13847d0289d024049804 in /etc/sentry/ 
+# Sat, 26 Jan 2019 02:09:39 GMT
+COPY file:fc1dccf3c8f2b99f9ce312e695b2fc960e4d1b7cae43a80c164a5aaf0c1f7ff9 in /entrypoint.sh 
+# Sat, 26 Jan 2019 02:09:39 GMT
+EXPOSE 9000
+# Sat, 26 Jan 2019 02:09:39 GMT
 VOLUME [/var/lib/sentry/files]
-# Wed, 05 Sep 2018 17:43:37 GMT
+# Sat, 26 Jan 2019 02:09:39 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 05 Sep 2018 17:43:37 GMT
+# Sat, 26 Jan 2019 02:09:40 GMT
 CMD ["run" "web"]
-# Wed, 05 Sep 2018 17:43:48 GMT
+# Sat, 26 Jan 2019 02:09:42 GMT
 WORKDIR /usr/src/sentry
-# Wed, 05 Sep 2018 17:43:48 GMT
+# Sat, 26 Jan 2019 02:09:43 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Wed, 05 Sep 2018 17:43:48 GMT
+# Sat, 26 Jan 2019 02:09:43 GMT
 ONBUILD COPY . /usr/src/sentry
-# Wed, 05 Sep 2018 17:43:48 GMT
+# Sat, 26 Jan 2019 02:09:43 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Wed, 05 Sep 2018 17:43:49 GMT
+# Sat, 26 Jan 2019 02:09:43 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Wed, 05 Sep 2018 17:43:49 GMT
+# Sat, 26 Jan 2019 02:09:44 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -146,19 +146,19 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Wed, 05 Sep 2018 17:47:38 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2959af7342ffb8cc2f74874de45bae036b36225f1e78fe20e221945a29894692`  
-		Last Modified: Wed, 05 Sep 2018 17:47:38 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:b0ddc1fae972f4287ad69d1bb03f96489c1f89a40991243ac4d4f96a67c2118b`  
+		Last Modified: Sat, 26 Jan 2019 02:22:03 GMT  
+		Size: 3.4 KB (3410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d062432b359d418ba2b24277c0ef5a6f8ad73a639395cc4de8b6b16c6acb62c`  
-		Last Modified: Wed, 05 Sep 2018 17:47:38 GMT  
-		Size: 1.1 KB (1064 bytes)  
+	-	`sha256:291daa21fb7d01190a6abb01ffc953f965e9cd612704c1b1c2140c6cf30dade9`  
+		Last Modified: Sat, 26 Jan 2019 02:22:03 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9221413f19388e1569dae8b8410fbaebc1a6f73b671c236ad5144780bafdedf7`  
-		Last Modified: Wed, 05 Sep 2018 17:47:38 GMT  
+	-	`sha256:0d0063c364fa29b1d46809ab9689b32d5d227afa72239d3292e45ab027b3abf1`  
+		Last Modified: Sat, 26 Jan 2019 02:22:03 GMT  
 		Size: 426.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c44bc3fa5a2905209907d830a4ec81de4a8caf7025a2b13fa3b0aa9622579f2`  
-		Last Modified: Wed, 05 Sep 2018 17:48:08 GMT  
-		Size: 138.0 B  
+	-	`sha256:0b5c8572f4b993964790e1703c58075634e19d98b53cc7f50157cd8965eea7aa`  
+		Last Modified: Sat, 26 Jan 2019 02:22:07 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
