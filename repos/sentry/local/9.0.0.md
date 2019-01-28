@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e2c6de1edbd77efa1af78f2464142bca4352661ad9f3429c17b586718690b1d`
-- Created: `2019-01-23T20:55:03.687344251Z`
-- Virtual Size: ~ 608.35 Mb  
+- Image ID: `sha256:df958299987690811042d99226c5d7ccc9aec0a07be18297717c3ed5a7747e81`
+- Created: `2019-01-26T02:21:42.622652976Z`
+- Virtual Size: ~ 608.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=18.1`
+  - `PYTHON_PIP_VERSION=19.0.1`
   - `PIP_NO_CACHE_DIR=off`
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
   - `GOSU_VERSION=1.10`
@@ -1217,19 +1217,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/kmod/18-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/kmod/18-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.12.1+dfsg-19+deb8u4`
+### `dpkg` source package: `krb5=1.12.1+dfsg-19+deb8u5`
 
 Binary Packages:
 
-- `krb5-multidev=1.12.1+dfsg-19+deb8u4`
-- `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u4`
-- `libgssrpc4:amd64=1.12.1+dfsg-19+deb8u4`
-- `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkadm5clnt-mit9:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkadm5srv-mit9:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkdb5-7:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u4`
+- `krb5-multidev=1.12.1+dfsg-19+deb8u5`
+- `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u5`
+- `libgssrpc4:amd64=1.12.1+dfsg-19+deb8u5`
+- `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkadm5clnt-mit9:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkadm5srv-mit9:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkdb5-7:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1238,17 +1238,17 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u4.dsc' krb5_1.12.1+dfsg-19+deb8u4.dsc 3307 SHA256:619e76a11d4dee12c2bede93c5b9129c8119150ecab79422c3131ea4088acb77
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u4.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u4.debian.tar.xz 125856 SHA256:9a2b93059db021f025eb1e65c9c4974a863cbe872543c6a91a8a11eb568e0a46
+$ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u5.dsc' krb5_1.12.1+dfsg-19+deb8u5.dsc 3541 SHA256:1009a2a8874570750f69f59f80ba9dd2651f58108f3b1f065495c7ed08f0c777
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u5.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u5.debian.tar.xz 129708 SHA256:e4d511b15cf9f812e81ff98076604325f2dfa46e72f713d3c60eaa875e78f380
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.12.1+dfsg-19+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.12.1+dfsg-19+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.24-8`
 
@@ -2212,12 +2212,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.4=9.4.19-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.20-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.19-0+deb8u1`
-- `libpq5:amd64=9.4.19-0+deb8u1`
+- `libpq-dev=9.4.20-0+deb8u1`
+- `libpq5:amd64=9.4.20-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -2227,17 +2227,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.19-0+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.dsc' postgresql-9.4_9.4.19-0+deb8u1.dsc 3546 SHA256:53821a217db0df2ec4fc8e3cb1eb7f92cc992ec605c75df177dd4a5b3bd9d4ec
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19.orig.tar.bz2' postgresql-9.4_9.4.19.orig.tar.bz2 17879273 SHA256:03776b036b2a05371083558e10c21cc4b90bde9eb3aff60299c4ce7c084c168b
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz 26560 SHA256:904e0f0e337c9fd83afa5026cb44c161f846682874b79687d6cbccfcb2a264a7
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.20-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20-0+deb8u1.dsc' postgresql-9.4_9.4.20-0+deb8u1.dsc 3546 SHA256:58647f4722c340b45d18d448a086361fcd8f3c61969a0285dc18a0f8196fe8fd
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20.orig.tar.bz2' postgresql-9.4_9.4.20.orig.tar.bz2 17905682 SHA256:eeb1d8ddb2854c9e4d8b5cbd65665260c0ae8cbcb911003f24c2d82ccb97f87f
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.20-0+deb8u1.debian.tar.xz 26536 SHA256:01643ae293f24e834a096a1649ccb2cbe5fac883d7c4e424273b93a286ec7033
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.19-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.4/9.4.20-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.20-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.20-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 

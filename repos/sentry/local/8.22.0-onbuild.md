@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62e3bc79054bc48c8ff80f5ba2f97e8121a809aa4282b34ff1c1bd27301369f8`
-- Created: `2018-09-05T17:43:49.339193893Z`
+- Image ID: `sha256:b311b97d279edca8205fd4dbe6162e717da57853cb53089a13414513849323e7`
+- Created: `2019-01-26T02:09:44.006574638Z`
 - Virtual Size: ~ 545.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2224,20 +2224,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.19-0+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.dsc' postgresql-9.4_9.4.19-0+deb8u1.dsc 3546 SHA256:53821a217db0df2ec4fc8e3cb1eb7f92cc992ec605c75df177dd4a5b3bd9d4ec
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19.orig.tar.bz2' postgresql-9.4_9.4.19.orig.tar.bz2 17879273 SHA256:03776b036b2a05371083558e10c21cc4b90bde9eb3aff60299c4ce7c084c168b
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.19-0+deb8u1.debian.tar.xz 26560 SHA256:904e0f0e337c9fd83afa5026cb44c161f846682874b79687d6cbccfcb2a264a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.19-0+deb8u1/
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.4/9.4.19-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.19-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
