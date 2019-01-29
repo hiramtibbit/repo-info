@@ -1,7 +1,7 @@
 ## `postfixadmin:3-apache`
 
 ```console
-$ docker pull postfixadmin@sha256:466b24a52227bef6537cd437ab25524b74c76b424ef1bc462f7d9e04645657d5
+$ docker pull postfixadmin@sha256:5bea2774432393a51a6b822b518419892912a13f8112e05314b79a4d06f0a972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull postfixadmin@sha256:466b24a52227bef6537cd437ab25524b74c76b424ef1bc
 ### `postfixadmin:3-apache` - linux; amd64
 
 ```console
-$ docker pull postfixadmin@sha256:f32c323916241b0aa046a5978d091d130232b5c23189afd30b375d3575c9e0fa
+$ docker pull postfixadmin@sha256:3ed2a11058d1d9d2e4ea17c24d3f18037d0541303b02a3bd440551ca03fc5438
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.8 MB (136782614 bytes)**  
+-	Total Size: **136.8 MB (136782618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4da14a1b729c70a690d762f2853193ee65a2029028b30ab8fe6efe77005e4876`
+-	Image ID: `sha256:688e2e24625f75280ef824ad4c2987fb95aff52282aa6c3787ce5cd87072fe56`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -103,13 +103,13 @@ ENV POSTFIXADMIN_SHA512=9e022e3311bce96342e87925159a048f294ed0e2d4558bd43120b5c6
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 # Wed, 23 Jan 2019 11:50:07 GMT
 RUN set -eu; sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf; 	sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-# Wed, 23 Jan 2019 11:50:09 GMT
-RUN set -eu; 	curl -fL -o postfixadmin.tar.gz -SL "https://github.com/postfixadmin/postfixadmin/archive/postfixadmin-${POSTFIXADMIN_VERSION}.tar.gz"; 	echo "$POSTFIXADMIN_SHA512 *postfixadmin.tar.gz" | sha512sum -c -; 	mkdir /usr/src/postfixadmin; 	tar -xf postfixadmin.tar.gz -C /usr/src/postfixadmin --strip-components=1; 	rm postfixadmin.tar.gz; 	mkdir -p /usr/src/postfixadmin/templates_c; 	chown -R www-data:www-data /usr/src/postfixadmin
-# Wed, 23 Jan 2019 11:50:09 GMT
-COPY file:39cb8e5b3b03fccdc3422843a1bd51c4c7cefcf6e355e91f738a9060333fcd3d in /usr/local/bin/ 
-# Wed, 23 Jan 2019 11:50:09 GMT
+# Tue, 29 Jan 2019 00:19:57 GMT
+RUN set -eu; 	curl -fsSL -o postfixadmin.tar.gz "https://github.com/postfixadmin/postfixadmin/archive/postfixadmin-${POSTFIXADMIN_VERSION}.tar.gz"; 	echo "$POSTFIXADMIN_SHA512 *postfixadmin.tar.gz" | sha512sum -c -; 	mkdir /usr/src/postfixadmin; 	tar -xf postfixadmin.tar.gz -C /usr/src/postfixadmin --strip-components=1; 	rm postfixadmin.tar.gz; 	mkdir -p /usr/src/postfixadmin/templates_c; 	chown -R www-data:www-data /usr/src/postfixadmin
+# Tue, 29 Jan 2019 00:19:57 GMT
+COPY file:7b9804d962cc9ab943424976141cd6ab11b4bd5e6f589713aab01e577d18b5e9 in /usr/local/bin/ 
+# Tue, 29 Jan 2019 00:19:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Wed, 23 Jan 2019 11:50:09 GMT
+# Tue, 29 Jan 2019 00:19:58 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -178,11 +178,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 23 Jan 2019 11:51:30 GMT  
 		Size: 8.2 KB (8220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad7051e44602f32ae354b92d2d3364ab4cf92586ef0422d9fe5ed7a88a5306c4`  
-		Last Modified: Wed, 23 Jan 2019 11:51:30 GMT  
+	-	`sha256:571ef8f90d3b25950a8ec03e65000692375cacfb001809f3113e87bfdc91de08`  
+		Last Modified: Tue, 29 Jan 2019 00:20:21 GMT  
 		Size: 1.3 MB (1333481 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54884c2b0367e6a973be4e61109920f97cd3c0a25367c29d9ac2c581a648f12`  
-		Last Modified: Wed, 23 Jan 2019 11:51:30 GMT  
-		Size: 1.1 KB (1142 bytes)  
+	-	`sha256:4338dcec5c541355bbd6d49c22e3b55bb2fce425158a2dd8beb3c8f31eb26263`  
+		Last Modified: Tue, 29 Jan 2019 00:20:21 GMT  
+		Size: 1.1 KB (1146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
