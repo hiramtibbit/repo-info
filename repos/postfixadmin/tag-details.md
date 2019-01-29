@@ -3,7 +3,7 @@
 # Tags of `postfixadmin`
 
 -	[`postfixadmin:3`](#postfixadmin3)
--	[`postfixadmin:3.1`](#postfixadmin31)
+-	[`postfixadmin:3.2`](#postfixadmin32)
 -	[`postfixadmin:3.2-apache`](#postfixadmin32-apache)
 -	[`postfixadmin:3.2-fpm`](#postfixadmin32-fpm)
 -	[`postfixadmin:3.2-fpm-alpine`](#postfixadmin32-fpm-alpine)
@@ -204,7 +204,7 @@ CMD ["apache2-foreground"]
 		Size: 1.1 KB (1142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `postfixadmin:3.1`
+## `postfixadmin:3.2`
 
 ```console
 $ docker pull postfixadmin@sha256:466b24a52227bef6537cd437ab25524b74c76b424ef1bc462f7d9e04645657d5
@@ -214,7 +214,7 @@ $ docker pull postfixadmin@sha256:466b24a52227bef6537cd437ab25524b74c76b424ef1bc
 -	Platforms:
 	-	linux; amd64
 
-### `postfixadmin:3.1` - linux; amd64
+### `postfixadmin:3.2` - linux; amd64
 
 ```console
 $ docker pull postfixadmin@sha256:f32c323916241b0aa046a5978d091d130232b5c23189afd30b375d3575c9e0fa
