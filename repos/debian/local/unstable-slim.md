@@ -202,20 +202,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-1.dsc' bash_5.0-1.dsc 2300 SHA256:4d23114b36f20c3e750e0391fa8d94d59cdae114d2ca8c66390243bcfec4128e
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-1.debian.tar.xz' bash_5.0-1.debian.tar.xz 87768 SHA256:37d941321d741dac1837f275b13a8ec3e9f06bf90e929708a2d7461eac8f6f51
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.0-1/
 
-- https://sources.debian.net/src/bash/5.0-1/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-9`
 
@@ -1467,21 +1460,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.93-5
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-5.dsc' sysvinit_2.93-5.dsc 2657 SHA256:de9e91cd494c86f88f888c8d4ea932f737f27835564065a473cc52746bbce722
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz' sysvinit_2.93.orig.tar.xz 117580 SHA256:472d460e233d981488509a167125a82925c8c9aba6b5608cb22598fdf326a8ff
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz.asc' sysvinit_2.93.orig.tar.xz.asc 1076 SHA256:cf2b374a96276a16e3ef07ad2be596420f0d8d77227aad3144d7ab4ea165a4af
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-5.debian.tar.xz' sysvinit_2.93-5.debian.tar.xz 127164 SHA256:c390b82386abcb9948dcc4e788e079fb82e1f193dd6a6893d40fb8ebdd55eccc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/2.93-5/
 
-- https://sources.debian.net/src/sysvinit/2.93-5/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.93-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.93-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-4`
 
