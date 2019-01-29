@@ -14,6 +14,8 @@
 -	[`crate:3.0.7`](#crate307)
 -	[`crate:3.1`](#crate31)
 -	[`crate:3.1.5`](#crate315)
+-	[`crate:3.2`](#crate32)
+-	[`crate:3.2.2`](#crate322)
 -	[`crate:latest`](#cratelatest)
 
 ## `crate:2.0`
@@ -1375,6 +1377,14 @@ CMD ["crate"]
 		Last Modified: Fri, 25 Jan 2019 09:54:36 GMT  
 		Size: 548.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `crate:3.2`
+
+**does not exist** (yet?)
+
+## `crate:3.2.2`
+
+**does not exist** (yet?)
 
 ## `crate:latest`
 
