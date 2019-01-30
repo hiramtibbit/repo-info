@@ -3,7 +3,7 @@
 # Tags of `teamspeak`
 
 -	[`teamspeak:3.6`](#teamspeak36)
--	[`teamspeak:3.6.0`](#teamspeak360)
+-	[`teamspeak:3.6.1`](#teamspeak361)
 -	[`teamspeak:latest`](#teamspeaklatest)
 
 ## `teamspeak:3.6`
@@ -84,7 +84,7 @@ CMD ["ts3server"]
 		Size: 1.3 KB (1258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `teamspeak:3.6.0`
+## `teamspeak:3.6.1`
 
 ```console
 $ docker pull teamspeak@sha256:6b604263b1e9555192ebe6af3b8004b5e9e701be5e81cbd9f4fca35c34922ca9
@@ -94,7 +94,7 @@ $ docker pull teamspeak@sha256:6b604263b1e9555192ebe6af3b8004b5e9e701be5e81cbd9f
 -	Platforms:
 	-	linux; amd64
 
-### `teamspeak:3.6.0` - linux; amd64
+### `teamspeak:3.6.1` - linux; amd64
 
 ```console
 $ docker pull teamspeak@sha256:4bf57901416a86d1e863a9bb805fab74dfd051d6aad1beaa5d7257e641383dad

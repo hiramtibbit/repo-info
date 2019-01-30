@@ -10,6 +10,7 @@
 -	[`alpine:3.6`](#alpine36)
 -	[`alpine:3.7`](#alpine37)
 -	[`alpine:3.8`](#alpine38)
+-	[`alpine:3.9`](#alpine39)
 -	[`alpine:edge`](#alpineedge)
 -	[`alpine:latest`](#alpinelatest)
 
@@ -795,6 +796,10 @@ CMD ["/bin/sh"]
 		Last Modified: Fri, 21 Dec 2018 12:43:02 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `alpine:3.9`
+
+**does not exist** (yet?)
 
 ## `alpine:edge`
 
