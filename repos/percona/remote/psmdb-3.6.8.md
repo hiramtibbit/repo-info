@@ -1,7 +1,7 @@
 ## `percona:psmdb-3.6.8`
 
 ```console
-$ docker pull percona@sha256:db1ad703c6dde9f3edb362190a1443293c9668bb20bdb8abb36922ac1eecd260
+$ docker pull percona@sha256:a9428af204db5300366ff0a9ce77c1d03fc273814879fce27502b60eada52679
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:db1ad703c6dde9f3edb362190a1443293c9668bb20bdb8abb36
 ### `percona:psmdb-3.6.8` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:798ae0ea24993a2aa2e1acb6d38363c4a1b9d989ce69104916fa49d0ed9eb4a3
+$ docker pull percona@sha256:2aac626e0aaac5a0f1778883a7e0da98ae9d4a26ecdb6a47409543c50ab5a654
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.1 MB (128086047 bytes)**  
+-	Total Size: **128.1 MB (128086045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b232f1ab077cb79c3eec16e0b1ff60e4023ddcc528cf2a2f0f90fb98cdaf1bd`
+-	Image ID: `sha256:8f0130edebec148208d5a3a687cb07bb2929ef8505c5195e015f47020fcc10ff`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -47,15 +47,15 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
 RUN curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator     && curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck     && chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
 # Wed, 12 Dec 2018 03:22:09 GMT
 VOLUME [/data/db]
-# Wed, 12 Dec 2018 03:22:09 GMT
-COPY file:4a1730159942362d00c466838bad0f68fb44987c92291252531b2468b5b7208c in /entrypoint.sh 
-# Wed, 12 Dec 2018 03:22:10 GMT
+# Wed, 30 Jan 2019 02:21:04 GMT
+COPY file:73b257e28d42d38a579e50c8dbd964c054f38728692627d5438a0aa11526970b in /entrypoint.sh 
+# Wed, 30 Jan 2019 02:21:04 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 12 Dec 2018 03:22:10 GMT
-EXPOSE 27017/tcp
-# Wed, 12 Dec 2018 03:22:10 GMT
-USER [1001]
-# Wed, 12 Dec 2018 03:22:11 GMT
+# Wed, 30 Jan 2019 02:21:04 GMT
+EXPOSE 27017
+# Wed, 30 Jan 2019 02:21:05 GMT
+USER 1001
+# Wed, 30 Jan 2019 02:21:05 GMT
 CMD ["mongod"]
 ```
 
@@ -80,7 +80,7 @@ CMD ["mongod"]
 		Last Modified: Wed, 12 Dec 2018 03:22:43 GMT  
 		Size: 6.3 MB (6300362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56887c320cd89bc039b46fafb1338eda24ddbae46f39a28438a7833df5ca8c80`  
-		Last Modified: Wed, 12 Dec 2018 03:22:43 GMT  
-		Size: 3.8 KB (3810 bytes)  
+	-	`sha256:2d57845d18bd6be2b73425f63a7872fbb4962a56ac22a6713a7b7f4aaa787102`  
+		Last Modified: Wed, 30 Jan 2019 02:21:50 GMT  
+		Size: 3.8 KB (3808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

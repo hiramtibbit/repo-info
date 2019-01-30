@@ -1,7 +1,7 @@
 ## `percona:centos`
 
 ```console
-$ docker pull percona@sha256:de153e84a7a18b2b62f94bc02674579f7c7bb439b9913db2197f23f75f43316e
+$ docker pull percona@sha256:b3b7fb177b416563c46fe012298e042ec1607cc0539ce6014146380b0d27b08c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:de153e84a7a18b2b62f94bc02674579f7c7bb439b9913db2197
 ### `percona:centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:39967c3f6779025bea99cc6b22e2e86593b98fc70cb853e75cbfaed6ea635280
+$ docker pull percona@sha256:d9ebc99fc51de8e8197843b04c4ed7148dd538ba8c788833fd808f2d92c1ae30
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **191.4 MB (191373721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e0fd493ab22f91a0cae21f6cbae7ece3bb45363375d717aa990f4c7691a72e2`
+-	Image ID: `sha256:4674429b3faff52a88d3fe97e1ed260b31c8359d26706e4a2cf7c71dcb8dcac2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -45,15 +45,15 @@ RUN yum install -y 		Percona-Server-server-57-${PERCONA_VERSION} 		Percona-Serve
 RUN /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d 	&& find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/' 	&& printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf 	&& /usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql 	&& echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql 	&& echo "THP_SETTING=never" >> /etc/sysconfig/mysql 	&& ln -s /etc/my.cnf.d /etc/mysql 	&& chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d 	&& chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
 # Thu, 06 Dec 2018 00:52:26 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Thu, 06 Dec 2018 00:52:27 GMT
-COPY file:2fd07388582a69bcc2248785f5e72602c338c21c5827d5d1ffa1cb1d64c0d9eb in /docker-entrypoint.sh 
-# Thu, 06 Dec 2018 00:52:27 GMT
+# Wed, 30 Jan 2019 02:20:16 GMT
+COPY file:8da6ca55fbd697af8ce67f582b55e6e21956a9f1a34618fb299f82d13032a67c in /docker-entrypoint.sh 
+# Wed, 30 Jan 2019 02:20:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 06 Dec 2018 00:52:27 GMT
-USER [mysql]
-# Thu, 06 Dec 2018 00:52:27 GMT
-EXPOSE 3306/tcp
-# Thu, 06 Dec 2018 00:52:28 GMT
+# Wed, 30 Jan 2019 02:20:16 GMT
+USER mysql
+# Wed, 30 Jan 2019 02:20:17 GMT
+EXPOSE 3306
+# Wed, 30 Jan 2019 02:20:17 GMT
 CMD ["mysqld"]
 ```
 
@@ -82,7 +82,7 @@ CMD ["mysqld"]
 		Last Modified: Thu, 06 Dec 2018 00:59:21 GMT  
 		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebe085680f914fef758959eaf2e88cab508b588197680c06c3ce3105e83a2005`  
-		Last Modified: Thu, 06 Dec 2018 00:59:20 GMT  
+	-	`sha256:7c84b2e5e4ce6c4622f8090994f71399102cb020bf6b629187e0a48a9f665a5e`  
+		Last Modified: Wed, 30 Jan 2019 02:21:22 GMT  
 		Size: 3.0 KB (2977 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

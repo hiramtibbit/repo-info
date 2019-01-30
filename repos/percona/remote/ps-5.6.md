@@ -1,7 +1,7 @@
 ## `percona:ps-5.6`
 
 ```console
-$ docker pull percona@sha256:7c746bed3a090081f4125ef0dc56ce1343f84176db6506481c6e21da323c15dc
+$ docker pull percona@sha256:9eda09cbc2b4e7877f9bcb4748937c96cd7b8a1ec45401a9b401df7ccbb0a25d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:7c746bed3a090081f4125ef0dc56ce1343f84176db6506481c6
 ### `percona:ps-5.6` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:72399a513c91561a3be275b758bbe436b0d21ffb813cd862f32ecc093aa31233
+$ docker pull percona@sha256:df06040e14599314f412270e548ffafdec505d29ef5245b91c32181f533f9ed5
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.5 MB (138512626 bytes)**  
+-	Total Size: **138.5 MB (138511287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884c1e79b12f82ee5dba36a424ccc1bbbbb348d5df1da35044dabcfb3ed03279`
+-	Image ID: `sha256:ccc5875cb148f5d9057d5d35ca5550955c7d755d4318438c0c9357115e40061e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -35,25 +35,25 @@ MAINTAINER Percona Development <info@percona.com>
 RUN groupdel input && groupadd -g 999 mysql
 # Thu, 06 Dec 2018 00:51:58 GMT
 RUN useradd -u 999 -r -g 999 -s /sbin/nologin 		-c "Default Application User" mysql
-# Thu, 06 Dec 2018 00:52:00 GMT
-RUN export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	&& gpg --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona 	&& rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 	&& curl -L -o /tmp/percona-release.rpm http://www.percona.com/downloads/percona-release/redhat/0.1-6/percona-release-0.1-6.noarch.rpm 	&& rpmkeys --checksig /tmp/percona-release.rpm 	&& yum install -y /tmp/percona-release.rpm 	&& rm -rf "$GNUPGHOME" /tmp/percona-release.rpm
-# Thu, 06 Dec 2018 00:53:06 GMT
-ENV PERCONA_VERSION=5.6.42-rel84.2.el7
-# Thu, 06 Dec 2018 00:53:28 GMT
+# Wed, 30 Jan 2019 02:20:24 GMT
+RUN export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	&& gpg --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona 	&& rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 	&& curl -L -o /tmp/percona-release.rpm https://repo.percona.com/centos/7/RPMS/noarch/percona-release-0.1-8.noarch.rpm 	&& rpmkeys --checksig /tmp/percona-release.rpm 	&& yum install -y /tmp/percona-release.rpm 	&& rm -rf "$GNUPGHOME" /tmp/percona-release.rpm 	&& rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY 	&& percona-release disable all 	&& percona-release enable percona release
+# Wed, 30 Jan 2019 02:20:24 GMT
+ENV PERCONA_VERSION=5.6.43-rel84.3.el7
+# Wed, 30 Jan 2019 02:20:59 GMT
 RUN yum install -y 		Percona-Server-server-56-${PERCONA_VERSION} 		Percona-Server-tokudb-56-${PERCONA_VERSION} 		Percona-Server-rocksdb-56-${PERCONA_VERSION} 		jemalloc 		which 		policycoreutils 	&& yum clean all 	&& rm -rf /var/cache/yum /var/lib/mysql
-# Thu, 06 Dec 2018 00:53:46 GMT
+# Wed, 30 Jan 2019 02:21:00 GMT
 RUN /usr/bin/install -m 0775 -o mysql -g root -d /etc/my.cnf.d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d 	&& find /etc/my.cnf /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user|sql_mode)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user|sql_mode)/#&/' 	&& sed -i '/Make sure only root/,/fi/d' /usr/bin/ps_tokudb_admin 	&& echo "thp-setting=never" >> /etc/my.cnf 	&& echo '!includedir /etc/my.cnf.d' >> /etc/my.cnf 	&& printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf 	&& /usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql 	&& echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql 	&& echo "THP_SETTING=never" >> /etc/sysconfig/mysql 	&& ln -s /etc/my.cnf.d /etc/mysql 	&& chown -R mysql:root /etc/my.cnf /etc/my.cnf.d 	&& chmod -R ug+rwX /etc/my.cnf /etc/my.cnf.d
-# Thu, 06 Dec 2018 00:53:46 GMT
+# Wed, 30 Jan 2019 02:21:00 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Thu, 06 Dec 2018 00:53:47 GMT
-COPY file:fe6b1a8e605281e5ec8baec786785211172b14a252ac4bf8d19e30ace28a2e85 in /docker-entrypoint.sh 
-# Thu, 06 Dec 2018 00:53:47 GMT
+# Wed, 30 Jan 2019 02:21:01 GMT
+COPY file:901ced2ffcf1945c034e123402c75e7363c1cc0a3a037fa1c559cad28013c95e in /docker-entrypoint.sh 
+# Wed, 30 Jan 2019 02:21:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 06 Dec 2018 00:53:47 GMT
-USER [mysql]
-# Thu, 06 Dec 2018 00:53:47 GMT
-EXPOSE 3306/tcp
-# Thu, 06 Dec 2018 00:53:48 GMT
+# Wed, 30 Jan 2019 02:21:01 GMT
+USER mysql
+# Wed, 30 Jan 2019 02:21:01 GMT
+EXPOSE 3306
+# Wed, 30 Jan 2019 02:21:01 GMT
 CMD ["mysqld"]
 ```
 
@@ -70,19 +70,19 @@ CMD ["mysqld"]
 		Last Modified: Thu, 06 Dec 2018 00:59:20 GMT  
 		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e86b5a5d813f50eb00dd692a4a07d9ae5af1aa12cfde7bf185ecbf8621c7e90`  
-		Last Modified: Thu, 06 Dec 2018 00:59:21 GMT  
-		Size: 6.2 MB (6176165 bytes)  
+	-	`sha256:b279da37e09a582fa7b90e289f0b0e5c0e7aa58315a46a996fc408e2e84854dd`  
+		Last Modified: Wed, 30 Jan 2019 02:21:34 GMT  
+		Size: 6.2 MB (6168839 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e55ded571fc8278fba1b5480e21bd1cd48602273f12f435fe40efbb6d2af676f`  
-		Last Modified: Thu, 06 Dec 2018 01:04:00 GMT  
-		Size: 57.2 MB (57161230 bytes)  
+	-	`sha256:f7f2452fdab22ffb7d02262d65e5ba5ce99b7ee3b591935efede40349fba7c49`  
+		Last Modified: Wed, 30 Jan 2019 02:21:43 GMT  
+		Size: 57.2 MB (57167217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891882d5075ea2fbb6e06b37081ae378028d2b3c22af5edcd9266c65b6fe1b5e`  
-		Last Modified: Thu, 06 Dec 2018 01:03:49 GMT  
+	-	`sha256:1401342492813f089438f187e24b3f5344d6dd94a5fc443cd9c6c014f600a7c6`  
+		Last Modified: Wed, 30 Jan 2019 02:21:32 GMT  
 		Size: 4.9 KB (4879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f53e3e79c6ce31c7097d16abcf2c217c21376ff53fbe8307fb3218ae27fb769`  
-		Last Modified: Thu, 06 Dec 2018 01:03:48 GMT  
+	-	`sha256:a69e38fd69beca19fcb5b7950c7e8671fa550962d0af47ca2631826f7b99b49a`  
+		Last Modified: Wed, 30 Jan 2019 02:21:32 GMT  
 		Size: 2.9 KB (2858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
