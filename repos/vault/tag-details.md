@@ -575,7 +575,7 @@ CMD ["server" "-dev"]
 ## `vault:latest`
 
 ```console
-$ docker pull vault@sha256:e43de590131aa6ab3301bc5fbbbe4e75f142416bf0eb77bdf25b3df71a61f637
+$ docker pull vault@sha256:f03b4d13da9030682b72f4b0e74b3d445d019bf0680f88f3064eb132e54ed333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -588,64 +588,64 @@ $ docker pull vault@sha256:e43de590131aa6ab3301bc5fbbbe4e75f142416bf0eb77bdf25b3
 ### `vault:latest` - linux; amd64
 
 ```console
-$ docker pull vault@sha256:a233ac3c7a0866959de7865f3ef382448aa9f814c0e96f6139d5b35589126a24
+$ docker pull vault@sha256:3bd65c9feef94f207fcdfd37c91b9252984e40f38591249f3df71fdc982984d6
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.1 MB (39124471 bytes)**  
+-	Total Size: **39.1 MB (39124474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae4f5e18452b83f330b9e5b805c874818f0f2f3d25ba0776ece42889687f0d13`
+-	Image ID: `sha256:ab6f5f618aba95c7cdc382463d0bb9be9cbe3d4a1927f70103bf14d7b1c45f85`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:29 GMT
-ADD file:2ff00caea4e83dfade726ca47e3c795a1e9acb8ac24e392785c474ecf9a621f2 in / 
-# Fri, 21 Dec 2018 00:21:30 GMT
+# Wed, 30 Jan 2019 22:19:46 GMT
+ADD file:91fb97ea3549e52e7b6e22b93a6736cf915c756f3d13348406d8ad5f1a872680 in / 
+# Wed, 30 Jan 2019 22:19:47 GMT
 CMD ["/bin/sh"]
-# Wed, 16 Jan 2019 21:26:09 GMT
+# Thu, 31 Jan 2019 02:16:53 GMT
 ENV VAULT_VERSION=1.0.2
-# Wed, 16 Jan 2019 21:26:10 GMT
+# Thu, 31 Jan 2019 02:16:54 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Wed, 16 Jan 2019 21:26:18 GMT
+# Thu, 31 Jan 2019 02:17:04 GMT
 RUN set -eux;     apk add --no-cache ca-certificates gnupg openssl libcap su-exec dumb-init tzdata &&     apkArch="$(apk --print-arch)";     case "$apkArch" in         armhf) ARCH='arm' ;;         aarch64) ARCH='arm64' ;;         x86_64) ARCH='amd64' ;;         x86) ARCH='386' ;;         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;;     esac &&     VAULT_GPGKEY=91A6E7F85D05C65630BEF18951852D87348FFC4C;     found='';     for server in         hkp://p80.pool.sks-keyservers.net:80         hkp://keyserver.ubuntu.com:80         hkp://pgp.mit.edu:80     ; do         echo "Fetching GPG key $VAULT_GPGKEY from $server";         gpg --batch --keyserver "$server" --recv-keys "$VAULT_GPGKEY" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $VAULT_GPGKEY" && exit 1;     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_${ARCH}.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     gpgconf --kill dirmngr &&     gpgconf --kill gpg-agent &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Wed, 16 Jan 2019 21:26:19 GMT
+# Thu, 31 Jan 2019 02:17:05 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Wed, 16 Jan 2019 21:26:19 GMT
+# Thu, 31 Jan 2019 02:17:05 GMT
 VOLUME [/vault/logs]
-# Wed, 16 Jan 2019 21:26:19 GMT
+# Thu, 31 Jan 2019 02:17:06 GMT
 VOLUME [/vault/file]
-# Wed, 16 Jan 2019 21:26:19 GMT
+# Thu, 31 Jan 2019 02:17:06 GMT
 EXPOSE 8200
-# Wed, 16 Jan 2019 21:26:20 GMT
+# Thu, 31 Jan 2019 02:17:06 GMT
 COPY file:2cf778f577f27333fdd34a8c9bbb529a6bc3f4b4f6599e38b0af9d428091c36f in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 16 Jan 2019 21:26:20 GMT
+# Thu, 31 Jan 2019 02:17:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Jan 2019 21:26:20 GMT
+# Thu, 31 Jan 2019 02:17:06 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:cd784148e3483c2c86c50a48e535302ab0288bebd587accf40b714fffd0646b3`  
-		Last Modified: Fri, 21 Dec 2018 00:23:44 GMT  
-		Size: 2.2 MB (2207025 bytes)  
+	-	`sha256:169185f82c45a6eb72e0ca4ee66152626e7ace92a0cbc53624fb46d0a553f0bd`  
+		Last Modified: Wed, 30 Jan 2019 22:21:04 GMT  
+		Size: 2.2 MB (2207038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d29997a5d0a6c91f769415b451f94706f80990b220b19db7862bc88d38382c3`  
-		Last Modified: Wed, 16 Jan 2019 21:26:28 GMT  
-		Size: 1.3 KB (1251 bytes)  
+	-	`sha256:909c1450da861d8d3edab264f269fe9a1c2f4e0a561c9701c121d7e7b2330d75`  
+		Last Modified: Thu, 31 Jan 2019 02:17:26 GMT  
+		Size: 1.3 KB (1252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e28f9632beddbb5a6b4b5ce585cc4949a0e27d7a68a0bbbc2d790f8e9ca78`  
-		Last Modified: Wed, 16 Jan 2019 21:26:34 GMT  
-		Size: 36.9 MB (36914252 bytes)  
+	-	`sha256:007588ee36552ee43bfeca3dcea733d4dcf6baabbb732a1bb465b3edf3101af7`  
+		Last Modified: Thu, 31 Jan 2019 02:17:32 GMT  
+		Size: 36.9 MB (36914237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a1c80386687239a266ac3cea28abcf98c9703a1b73e6c5a4604ab91d3d42866`  
-		Last Modified: Wed, 16 Jan 2019 21:26:27 GMT  
+	-	`sha256:0aebb1f614290659976150846bd93cdd597d6743a49fb676a9b7446decc43855`  
+		Last Modified: Thu, 31 Jan 2019 02:17:26 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47627963a892e36b7162802afc15775573889cc4a7c7783d67e0d0f317c0549a`  
-		Last Modified: Wed, 16 Jan 2019 21:26:27 GMT  
-		Size: 1.8 KB (1789 bytes)  
+	-	`sha256:4928c7fdc3836bbb5c2886309552b5e06988a7c105c57e6f49a9b1c24aa80b91`  
+		Last Modified: Thu, 31 Jan 2019 02:17:26 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `vault:latest` - linux; arm variant v6

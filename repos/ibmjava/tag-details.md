@@ -542,7 +542,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-jre-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:42e4b2073fd903e68bd5efce3b8a482e085eb8955b0a7b57bd332f118bacb4d0
+$ docker pull ibmjava@sha256:78bb7c465fe817669c7e22cc616de2605884ab370f536a46b73eb357aa252ef7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -552,45 +552,45 @@ $ docker pull ibmjava@sha256:42e4b2073fd903e68bd5efce3b8a482e085eb8955b0a7b57bd3
 ### `ibmjava:8-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:b44ac32676ecadb27cee268aebcc0370d9f62bcfff65691f598046a4582d9dd5
+$ docker pull ibmjava@sha256:479c6e85b316f629eb1fab8f8420f61386be8e07c6a3d2ca9fb6f06e359cd775
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.7 MB (134672702 bytes)**  
+-	Total Size: **134.7 MB (134672763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8daf2a805180795faf2a499d2553edeb92a66e9cc5cc3e3e0e4f864e6178d94e`
+-	Image ID: `sha256:2869e1580793c0ab86ca4272af1ec7cfd1c99ac65d94a8454a516e1d3a88cd76`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:21:39 GMT
+# Thu, 31 Jan 2019 02:11:39 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b702bd21f70fbb2981bf4259d068cfa8a82a4eb9bc8a3dfef17e1c1a995399c4';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='1f2e55282129b4006d7ecb5876a92c5c2f9c1c2f12e71663e47bbaa72e4ed4f5';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='40533ee60330deb7fbb2bcf77db1daacee7727e5d03d6fac4f5f4440ee4ab995';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='8edc2722bfbf84eeca4855642c7ff912d240bd973836f4fa2f73fa7c5abeef7c';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='55bb6582adbc1a1cc598680e77d8e08e78565514317e949120099af11c73926e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:21:40 GMT
+# Thu, 31 Jan 2019 02:11:39 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef6bfa991125d6f1f8240631f00b5dcce0d4712f7e4ccf3d7c99d0cda9264c1e`  
-		Last Modified: Tue, 15 Jan 2019 00:25:16 GMT  
-		Size: 128.0 MB (128043062 bytes)  
+	-	`sha256:9819242770d9fa01822b4926c65f0b180b7ace47395c16dfbfc77d5f3a855e48`  
+		Last Modified: Thu, 31 Jan 2019 02:14:12 GMT  
+		Size: 128.0 MB (128043116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-sdk`
@@ -857,7 +857,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:8-sdk-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:8e2a98be95526e207c29ac50a1bc8edbfbe2d37b5af16657aef41962ccc947fb
+$ docker pull ibmjava@sha256:119bc9d05e3648944b205fbdbd1b01349d29c04d3d1eb8f00e7eb9c36215769b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -867,45 +867,45 @@ $ docker pull ibmjava@sha256:8e2a98be95526e207c29ac50a1bc8edbfbe2d37b5af16657aef
 ### `ibmjava:8-sdk-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:d4bb8a2bff0284a00a6a9cda042e2d4a0c96bcf8127780070374f63ade381fb7
+$ docker pull ibmjava@sha256:4fc31429814e83c13b274ed2b6f8d344c73243247082b3efdec8a1c5fb6f1e07
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.5 MB (171496330 bytes)**  
+-	Total Size: **171.5 MB (171496460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2ccff8f9b29597d59086abd90034567c7d5eb1166b6ee1361c2619eca23f2e7`
+-	Image ID: `sha256:4fb159fa402faeec837f013295ace181eaa5cd50f7d61f0424b1450bbe91a3c9`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:24:31 GMT
+# Thu, 31 Jan 2019 02:13:30 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c590c9a119f8d3d256c21b7e4c9d679f35bc5dd6cf838b57e1327ac83f7840ad';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='d6052e9c665f0d1e64ceca1c5a14d7c68091671efc123adf9aa5078e275e1ad6';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e965fb605b76baab8bd39e8ab811219484e4bf9e96385322a71804b19f42c56d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='421624235b994b471a0c218426075b9e618c95631ce7e47f3934636c42f2290a';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='493e0294716f5b922ee9e66d6be24d3ceecc4da2b056d729dd707ad67886ee3d';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:24:31 GMT
+# Thu, 31 Jan 2019 02:13:31 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c341c452eb04959945718fc5e1d0ad61afe96f4fcd8aafddd2efa960f00fabe9`  
-		Last Modified: Tue, 15 Jan 2019 00:26:15 GMT  
-		Size: 164.9 MB (164866690 bytes)  
+	-	`sha256:538a9f74b2b229bb310bd15789512d9655df729e91026905952f3e1a1d026ce1`  
+		Last Modified: Thu, 31 Jan 2019 02:14:44 GMT  
+		Size: 164.9 MB (164866813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-sfj`
@@ -1172,7 +1172,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-sfj-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:22a377877963c14bc1296def31e4499129fbd7ffce1f8b06c5a201b2cf5ba51e
+$ docker pull ibmjava@sha256:f6d2cc59ef6adeb3b8bafb1dcbc60ce754a57d14125674cf6f95c08f6243b431
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1182,45 +1182,45 @@ $ docker pull ibmjava@sha256:22a377877963c14bc1296def31e4499129fbd7ffce1f8b06c5a
 ### `ibmjava:8-sfj-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:ef68e59afd26c08f69564e5609131b799e497ed16a41de6b922e6b5122ee5817
+$ docker pull ibmjava@sha256:89b5d57911cc55927a574998b69b098afe76e86597d2f17936f81df1a2f6e58a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.0 MB (68963060 bytes)**  
+-	Total Size: **69.0 MB (68963062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08fd7afaba75a96b152db416c98a2b68a7dd3ea06fdc2dda18b41be709f9ac58`
+-	Image ID: `sha256:a3b5466d1ad791b77f80afdd1bbcc58eec2f74efba413ccfcd52489206025913`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:22:49 GMT
+# Thu, 31 Jan 2019 02:12:25 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='d9cd0948d8b25bacf6e6600ac562dd0082fd71edc67d03adf81ac40e6cf5661f';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='6defa73b9223c22a33a1f419b7aab0b98ac99d6f77065ad69d9738eef3f356ae';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e0b3f373521bc7a2b10aef37721345043fa9d10e0ed6bb7f9f1381bae660f16c';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2cea861e255cf523a24deb02fc150836f7fbbd31a8f95e4e8d796c1abccfa44b';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='038bf72abd9648ac2abd0d59fbd67274392c361368854b3d6e87e7751fb9f38c';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:22:49 GMT
+# Thu, 31 Jan 2019 02:12:25 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7c7ebf102bbfc05f291d8d6b267c9cce825b01fb4a3ea366d587fd3a0f4a56`  
-		Last Modified: Tue, 15 Jan 2019 00:25:40 GMT  
-		Size: 62.3 MB (62333420 bytes)  
+	-	`sha256:71821ea303fb730848591baf95bf1f5427b1ece11c9b6aaacd4c2d499a5c6110`  
+		Last Modified: Thu, 31 Jan 2019 02:14:25 GMT  
+		Size: 62.3 MB (62333415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:jre`
@@ -1487,7 +1487,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:jre-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:42e4b2073fd903e68bd5efce3b8a482e085eb8955b0a7b57bd332f118bacb4d0
+$ docker pull ibmjava@sha256:78bb7c465fe817669c7e22cc616de2605884ab370f536a46b73eb357aa252ef7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1497,45 +1497,45 @@ $ docker pull ibmjava@sha256:42e4b2073fd903e68bd5efce3b8a482e085eb8955b0a7b57bd3
 ### `ibmjava:jre-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:b44ac32676ecadb27cee268aebcc0370d9f62bcfff65691f598046a4582d9dd5
+$ docker pull ibmjava@sha256:479c6e85b316f629eb1fab8f8420f61386be8e07c6a3d2ca9fb6f06e359cd775
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.7 MB (134672702 bytes)**  
+-	Total Size: **134.7 MB (134672763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8daf2a805180795faf2a499d2553edeb92a66e9cc5cc3e3e0e4f864e6178d94e`
+-	Image ID: `sha256:2869e1580793c0ab86ca4272af1ec7cfd1c99ac65d94a8454a516e1d3a88cd76`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:21:39 GMT
+# Thu, 31 Jan 2019 02:11:39 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b702bd21f70fbb2981bf4259d068cfa8a82a4eb9bc8a3dfef17e1c1a995399c4';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='1f2e55282129b4006d7ecb5876a92c5c2f9c1c2f12e71663e47bbaa72e4ed4f5';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='40533ee60330deb7fbb2bcf77db1daacee7727e5d03d6fac4f5f4440ee4ab995';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='8edc2722bfbf84eeca4855642c7ff912d240bd973836f4fa2f73fa7c5abeef7c';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='55bb6582adbc1a1cc598680e77d8e08e78565514317e949120099af11c73926e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:21:40 GMT
+# Thu, 31 Jan 2019 02:11:39 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef6bfa991125d6f1f8240631f00b5dcce0d4712f7e4ccf3d7c99d0cda9264c1e`  
-		Last Modified: Tue, 15 Jan 2019 00:25:16 GMT  
-		Size: 128.0 MB (128043062 bytes)  
+	-	`sha256:9819242770d9fa01822b4926c65f0b180b7ace47395c16dfbfc77d5f3a855e48`  
+		Last Modified: Thu, 31 Jan 2019 02:14:12 GMT  
+		Size: 128.0 MB (128043116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:latest`
@@ -2063,7 +2063,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:sdk-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:8e2a98be95526e207c29ac50a1bc8edbfbe2d37b5af16657aef41962ccc947fb
+$ docker pull ibmjava@sha256:119bc9d05e3648944b205fbdbd1b01349d29c04d3d1eb8f00e7eb9c36215769b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2073,45 +2073,45 @@ $ docker pull ibmjava@sha256:8e2a98be95526e207c29ac50a1bc8edbfbe2d37b5af16657aef
 ### `ibmjava:sdk-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:d4bb8a2bff0284a00a6a9cda042e2d4a0c96bcf8127780070374f63ade381fb7
+$ docker pull ibmjava@sha256:4fc31429814e83c13b274ed2b6f8d344c73243247082b3efdec8a1c5fb6f1e07
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.5 MB (171496330 bytes)**  
+-	Total Size: **171.5 MB (171496460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2ccff8f9b29597d59086abd90034567c7d5eb1166b6ee1361c2619eca23f2e7`
+-	Image ID: `sha256:4fb159fa402faeec837f013295ace181eaa5cd50f7d61f0424b1450bbe91a3c9`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:24:31 GMT
+# Thu, 31 Jan 2019 02:13:30 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c590c9a119f8d3d256c21b7e4c9d679f35bc5dd6cf838b57e1327ac83f7840ad';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='d6052e9c665f0d1e64ceca1c5a14d7c68091671efc123adf9aa5078e275e1ad6';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e965fb605b76baab8bd39e8ab811219484e4bf9e96385322a71804b19f42c56d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='421624235b994b471a0c218426075b9e618c95631ce7e47f3934636c42f2290a';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='493e0294716f5b922ee9e66d6be24d3ceecc4da2b056d729dd707ad67886ee3d';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:24:31 GMT
+# Thu, 31 Jan 2019 02:13:31 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c341c452eb04959945718fc5e1d0ad61afe96f4fcd8aafddd2efa960f00fabe9`  
-		Last Modified: Tue, 15 Jan 2019 00:26:15 GMT  
-		Size: 164.9 MB (164866690 bytes)  
+	-	`sha256:538a9f74b2b229bb310bd15789512d9655df729e91026905952f3e1a1d026ce1`  
+		Last Modified: Thu, 31 Jan 2019 02:14:44 GMT  
+		Size: 164.9 MB (164866813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:sfj`
@@ -2378,7 +2378,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:sfj-alpine`
 
 ```console
-$ docker pull ibmjava@sha256:22a377877963c14bc1296def31e4499129fbd7ffce1f8b06c5a201b2cf5ba51e
+$ docker pull ibmjava@sha256:f6d2cc59ef6adeb3b8bafb1dcbc60ce754a57d14125674cf6f95c08f6243b431
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2388,43 +2388,43 @@ $ docker pull ibmjava@sha256:22a377877963c14bc1296def31e4499129fbd7ffce1f8b06c5a
 ### `ibmjava:sfj-alpine` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:ef68e59afd26c08f69564e5609131b799e497ed16a41de6b922e6b5122ee5817
+$ docker pull ibmjava@sha256:89b5d57911cc55927a574998b69b098afe76e86597d2f17936f81df1a2f6e58a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.0 MB (68963060 bytes)**  
+-	Total Size: **69.0 MB (68963062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08fd7afaba75a96b152db416c98a2b68a7dd3ea06fdc2dda18b41be709f9ac58`
+-	Image ID: `sha256:a3b5466d1ad791b77f80afdd1bbcc58eec2f74efba413ccfcd52489206025913`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:10 GMT
-ADD file:1c654f8c89128c1ac8363b251cb5e1e7d9326e430ae2740963f77cf6726aee0b in / 
-# Fri, 21 Dec 2018 00:21:11 GMT
+# Wed, 30 Jan 2019 22:19:40 GMT
+ADD file:9c13ab388a8e4c772b97ec8f6d2c576bece32cecdcfb6fee5175e1d3f613dd12 in / 
+# Wed, 30 Jan 2019 22:19:40 GMT
 CMD ["/bin/sh"]
-# Fri, 21 Dec 2018 01:13:31 GMT
+# Thu, 31 Jan 2019 02:10:44 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Fri, 21 Dec 2018 01:13:42 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 RUN apk --update add --no-cache binutils ca-certificates openssl wget xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && wget -q -O /tmp/${GLIBC_VER}.apk ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && wget -q -O /tmp/gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /tmp/gcc/usr/lib/libstdc++* /usr/glibc-compat/lib     && strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so*     && apk del binutils wget     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 15 Jan 2019 00:20:58 GMT
+# Thu, 31 Jan 2019 02:10:57 GMT
 ENV JAVA_VERSION=1.8.0_sr5fp27
-# Tue, 15 Jan 2019 00:22:49 GMT
+# Thu, 31 Jan 2019 02:12:25 GMT
 RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='d9cd0948d8b25bacf6e6600ac562dd0082fd71edc67d03adf81ac40e6cf5661f';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='6defa73b9223c22a33a1f419b7aab0b98ac99d6f77065ad69d9738eef3f356ae';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e0b3f373521bc7a2b10aef37721345043fa9d10e0ed6bb7f9f1381bae660f16c';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2cea861e255cf523a24deb02fc150836f7fbbd31a8f95e4e8d796c1abccfa44b';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='038bf72abd9648ac2abd0d59fbd67274392c361368854b3d6e87e7751fb9f38c';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     apk del .build-deps;
-# Tue, 15 Jan 2019 00:22:49 GMT
+# Thu, 31 Jan 2019 02:12:25 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:407ea412d82cbc18a270f0ae17d5e528e620bcf4661229e757446f6e6443768b`  
-		Last Modified: Fri, 21 Dec 2018 00:23:41 GMT  
-		Size: 2.1 MB (2107153 bytes)  
+	-	`sha256:48ecbb6b270eb481cb6df2a5b0332de294ec729e1968e92d725f1329637ce01b`  
+		Last Modified: Wed, 30 Jan 2019 22:21:00 GMT  
+		Size: 2.1 MB (2107173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140346aa6aebc6dec68c5d7ae89afe92e43f91a8c11c029464cffb69954415e`  
-		Last Modified: Fri, 21 Dec 2018 01:16:21 GMT  
-		Size: 4.5 MB (4522487 bytes)  
+	-	`sha256:9d8e0138d079d90699e85840858f45b63ada79f0f89cfd04703f95a6a4e91838`  
+		Last Modified: Thu, 31 Jan 2019 02:13:57 GMT  
+		Size: 4.5 MB (4522474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7c7ebf102bbfc05f291d8d6b267c9cce825b01fb4a3ea366d587fd3a0f4a56`  
-		Last Modified: Tue, 15 Jan 2019 00:25:40 GMT  
-		Size: 62.3 MB (62333420 bytes)  
+	-	`sha256:71821ea303fb730848591baf95bf1f5427b1ece11c9b6aaacd4c2d499a5c6110`  
+		Last Modified: Thu, 31 Jan 2019 02:14:25 GMT  
+		Size: 62.3 MB (62333415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
