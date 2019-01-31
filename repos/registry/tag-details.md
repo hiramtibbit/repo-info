@@ -1157,7 +1157,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:a54bc9be148764891c44676ce8c44f1e53514c43b1bfbab87b896f4b9f0b5d99
+$ docker pull registry@sha256:870474507964d8e7d8c3b53bcfa738e3356d2747a42adad26d0d81ef4479eb1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1169,60 +1169,60 @@ $ docker pull registry@sha256:a54bc9be148764891c44676ce8c44f1e53514c43b1bfbab87b
 ### `registry:latest` - linux; amd64
 
 ```console
-$ docker pull registry@sha256:adf09bd6373590fddf81e194b2ff4a5ee19d2a4e2f7ad34a16b3252460df3a32
+$ docker pull registry@sha256:b3a47e8f41082f4ea57332411ba33abd743a80aced87929ffbb7e5a3098091c0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9658053 bytes)**  
+-	Total Size: **9.7 MB (9658689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:116995fd662403e7ac3fd9dd698f95a7f9c8c3c321aa34cb7090a8721d68573a`
+-	Image ID: `sha256:d0eed8dad114db55d81c870efb8c148026da4a0f61dc7710c053da55f9604849`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Fri, 21 Dec 2018 00:21:29 GMT
-ADD file:2ff00caea4e83dfade726ca47e3c795a1e9acb8ac24e392785c474ecf9a621f2 in / 
-# Fri, 21 Dec 2018 00:21:30 GMT
+# Wed, 30 Jan 2019 22:19:46 GMT
+ADD file:91fb97ea3549e52e7b6e22b93a6736cf915c756f3d13348406d8ad5f1a872680 in / 
+# Wed, 30 Jan 2019 22:19:47 GMT
 CMD ["/bin/sh"]
-# Thu, 03 Jan 2019 23:27:29 GMT
+# Wed, 30 Jan 2019 23:14:35 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Fri, 18 Jan 2019 21:19:58 GMT
+# Wed, 30 Jan 2019 23:14:36 GMT
 COPY file:21256ff7df5369f7ad2e19c6d020a644303aded200bdbec4d46648f38d55df78 in /bin/registry 
-# Fri, 18 Jan 2019 21:19:58 GMT
+# Wed, 30 Jan 2019 23:14:36 GMT
 COPY file:4544cc1555469403b322faecc1cf1ca584667c43a6a60b17300f97840c04196e in /etc/docker/registry/config.yml 
-# Fri, 18 Jan 2019 21:19:58 GMT
+# Wed, 30 Jan 2019 23:14:36 GMT
 VOLUME [/var/lib/registry]
-# Fri, 18 Jan 2019 21:19:58 GMT
+# Wed, 30 Jan 2019 23:14:36 GMT
 EXPOSE 5000
-# Fri, 18 Jan 2019 21:19:59 GMT
+# Wed, 30 Jan 2019 23:14:37 GMT
 COPY file:507caa54f88c1f3862e5876e09a108b2083630ba24c57ad124e356a2de861d62 in /entrypoint.sh 
-# Fri, 18 Jan 2019 21:19:59 GMT
+# Wed, 30 Jan 2019 23:14:37 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 18 Jan 2019 21:19:59 GMT
+# Wed, 30 Jan 2019 23:14:37 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:cd784148e3483c2c86c50a48e535302ab0288bebd587accf40b714fffd0646b3`  
-		Last Modified: Fri, 21 Dec 2018 00:23:44 GMT  
-		Size: 2.2 MB (2207025 bytes)  
+	-	`sha256:169185f82c45a6eb72e0ca4ee66152626e7ace92a0cbc53624fb46d0a553f0bd`  
+		Last Modified: Wed, 30 Jan 2019 22:21:04 GMT  
+		Size: 2.2 MB (2207038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ecb9b11388e6647816c02447f3a63bdec0250928a103cf7bd8420e79f4b6643`  
-		Last Modified: Thu, 03 Jan 2019 23:27:46 GMT  
-		Size: 626.5 KB (626518 bytes)  
+	-	`sha256:046e2d030894bf549c6d587edae9ec017659e4e32d08b82431245b3ae719bd95`  
+		Last Modified: Wed, 30 Jan 2019 23:15:08 GMT  
+		Size: 627.1 KB (627140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45793cf0ff93a088cfdc117193f8f718cda2d1cd701073ae94d21a5431cd82c0`  
-		Last Modified: Fri, 18 Jan 2019 21:20:12 GMT  
+	-	`sha256:188836fddeeb46dc9540ba4571bbac1e20021f31a0d0ed15d954c30edf450464`  
+		Last Modified: Wed, 30 Jan 2019 23:15:09 GMT  
 		Size: 6.8 MB (6823927 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7eadb9e7675b906ca9998f8fb6cf3b110553c2fa60c1a9e25c7cb6efdbbe8d5`  
-		Last Modified: Fri, 18 Jan 2019 21:20:11 GMT  
+	-	`sha256:8327445377470a020be1cda0a9c0c3ee75a66cf28d2db41494db02651ecd50a7`  
+		Last Modified: Wed, 30 Jan 2019 23:15:07 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b2356bbbed3631077dea53b3aa269f62d14e279d24efa1df25da15cb3a281d4`  
-		Last Modified: Fri, 18 Jan 2019 21:20:11 GMT  
-		Size: 213.0 B  
+	-	`sha256:7ceea07e80be4bb4941253cf1c886775de26101d016bd66176c8853bc00a46e1`  
+		Last Modified: Wed, 30 Jan 2019 23:15:07 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `registry:latest` - linux; arm variant v6
