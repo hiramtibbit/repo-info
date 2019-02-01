@@ -1,10 +1,10 @@
-# `plone:5.1.4-alpine`
+# `plone:5.1.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b7ece679e9a591828760b1e6e3adb78d6bfd609d0c42e4fdc2495df972623e6`
-- Created: `2019-01-26T02:25:08.28661727Z`
-- Virtual Size: ~ 420.99 Mb  
+- Image ID: `sha256:22ae98c2ddb01c199499d2d9807d3223f7f290ce47a870950954b603f93e2fe4`
+- Created: `2019-01-31T02:56:55.479679788Z`
+- Virtual Size: ~ 421.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,5 +21,5 @@
   - `SETUPTOOLS=39.1.0`
   - `WHEEL=0.31.1`
   - `PLONE_MAJOR=5.1`
-  - `PLONE_VERSION=5.1.4`
-  - `PLONE_MD5=ce3b87b1cb8ee30e577ae347d9bdd647`
+  - `PLONE_VERSION=5.1.5`
+  - `PLONE_MD5=8ed5ff27fab67b1b510a1ce0ee2dd655`
