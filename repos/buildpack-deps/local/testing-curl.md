@@ -2094,21 +2094,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.26.0+fossilbc891ac6b-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b-1.dsc' sqlite3_3.26.0+fossilbc891ac6b-1.dsc 2557 SHA256:d9e3f805fa8190e6e934b4417f1aa22633a11d7f47c19a1cf574ea6b71b2750c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b.orig-www.tar.xz' sqlite3_3.26.0+fossilbc891ac6b.orig-www.tar.xz 5572636 SHA256:11c2813fafaae6efbb6a6c62fc4c63425c0de626fb0893bfa90431f295da84bd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b.orig.tar.xz' sqlite3_3.26.0+fossilbc891ac6b.orig.tar.xz 8297284 SHA256:3b047b3e4986c5a8889e430153e9f084990671a363e8e8780080f08a2f03c37d
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b-1.debian.tar.xz' sqlite3_3.26.0+fossilbc891ac6b-1.debian.tar.xz 18784 SHA256:6ff53b02700303491f3064c980a3be9c1cd9e01fd42fef2c232b2582ae6fb3d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.26.0+fossilbc891ac6b-1/
 
-- https://sources.debian.net/src/sqlite3/3.26.0+fossilbc891ac6b-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.26.0+fossilbc891ac6b-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.26.0+fossilbc891ac6b-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=240-4`
 
