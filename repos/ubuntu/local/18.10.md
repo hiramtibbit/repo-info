@@ -67,8 +67,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.7.0ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.dsc' apt_1.7.0ubuntu0.1.dsc 2853 SHA256:88b19c0f2652ca2525413f6b35fbd411fe15f5017f901b1210d908379c23c8c5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.tar.xz' apt_1.7.0ubuntu0.1.tar.xz 2152376 SHA256:d2edf8b79f016f36fc05cec6ea11c2adeadb9330051375e924a05e6fc1d2e6f6
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.dsc' apt_1.7.0ubuntu0.1.dsc 2853 SHA256:88b19c0f2652ca2525413f6b35fbd411fe15f5017f901b1210d908379c23c8c5
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.tar.xz' apt_1.7.0ubuntu0.1.tar.xz 2152376 SHA256:d2edf8b79f016f36fc05cec6ea11c2adeadb9330051375e924a05e6fc1d2e6f6
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
