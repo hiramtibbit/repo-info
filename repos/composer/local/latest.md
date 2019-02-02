@@ -1,10 +1,10 @@
-# `composer:1.8.2`
+# `composer:1.8.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:14f69d3369ffdec43e2563b539d4fba571b5721f0d0ed9d5e609ab6fc54b909a`
-- Created: `2019-01-29T22:19:47.394389052Z`
-- Virtual Size: ~ 157.06 Mb  
+- Image ID: `sha256:3e1be8b14d844f7a3d49238e36c63c358d3e862c8eb4ee191d0e3e6e8765eb8f`
+- Created: `2019-01-31T02:40:41.094665714Z`
+- Virtual Size: ~ 157.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/sh","/docker-entrypoint.sh"]`
@@ -24,4 +24,4 @@
   - `PHP_MD5=`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=1.8.2`
+  - `COMPOSER_VERSION=1.8.3`
