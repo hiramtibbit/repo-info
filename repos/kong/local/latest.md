@@ -1,15 +1,15 @@
-# `kong:1.0.2-alpine`
+# `kong:1.0.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa81dce37ec3dd08e64cab6d481594b11839ea86fd1086497599d3bf405e04a7`
-- Created: `2019-01-23T23:21:14.847032252Z`
-- Virtual Size: ~ 93.24 Mb  
+- Image ID: `sha256:e5d28df8a3c54c5896a4a2537127ebf7f37de2d771470af9c93908c7835b84c3`
+- Created: `2019-02-01T22:19:48.494454846Z`
+- Virtual Size: ~ 93.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","docker-start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=1.0.2`
-  - `KONG_SHA256=e15473300f60bee4e59e69115f6adb65356cb67c5b86fb0acc39243d8b4d6613`
+  - `KONG_VERSION=1.0.3`
+  - `KONG_SHA256=b33a9eb920316a09b511a67d91f93e489336a9f81ac14f9040e5fe4d055e9148`
