@@ -1,17 +1,17 @@
-# `node:10.15.0-jessie-slim`
+# `node:10.15.1-jessie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:26e9221e5073c9ea6724648e3af4a51010e950efec0986e46feb2be9e9097473`
-- Created: `2019-01-23T01:47:51.875606343Z`
-- Virtual Size: ~ 185.27 Mb  
+- Image ID: `sha256:ab30574bb7da6617b6cc6e2e90aa911a510ca251f30930cabf7162407f157058`
+- Created: `2019-01-30T23:26:59.494858326Z`
+- Virtual Size: ~ 185.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.15.0`
-  - `YARN_VERSION=1.12.3`
+  - `NODE_VERSION=10.15.1`
+  - `YARN_VERSION=1.13.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1044,14 +1044,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/kmod/18-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/kmod/18-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.12.1+dfsg-19+deb8u4`
+### `dpkg` source package: `krb5=1.12.1+dfsg-19+deb8u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u4`
-- `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u4`
+- `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u5`
+- `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u5`
+- `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1060,17 +1060,17 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u4.dsc' krb5_1.12.1+dfsg-19+deb8u4.dsc 3307 SHA256:619e76a11d4dee12c2bede93c5b9129c8119150ecab79422c3131ea4088acb77
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u4.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u4.debian.tar.xz 125856 SHA256:9a2b93059db021f025eb1e65c9c4974a863cbe872543c6a91a8a11eb568e0a46
+$ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u5
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u5.dsc' krb5_1.12.1+dfsg-19+deb8u5.dsc 3541 SHA256:1009a2a8874570750f69f59f80ba9dd2651f58108f3b1f065495c7ed08f0c777
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u5.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u5.debian.tar.xz 129708 SHA256:e4d511b15cf9f812e81ff98076604325f2dfa46e72f713d3c60eaa875e78f380
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.12.1+dfsg-19+deb8u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.12.1+dfsg-19+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.1.2-2`
 
