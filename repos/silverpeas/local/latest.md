@@ -198,14 +198,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.dsc' avahi_0.6.32~rc+dfsg-1ubuntu2.2.dsc 3790 SHA256:2ef582a9f1fdb02027d869aba97613b5b761d992cb3b14c0f090d5560a3ba193
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg.orig.tar.gz' avahi_0.6.32~rc+dfsg.orig.tar.gz 665175 SHA256:84f609611323613c8635146d1a93be0914f1f7a8027d1d5e71cbbab156741dac
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz 33608 SHA256:eaecf25bbdc695c866ae72926b4c8b9d05c42e5984a767b6e5d581b6f67ff5b2
-```
 
 ### `dpkg` source package: `base-files=9.4ubuntu4.7`
 
@@ -3799,14 +3794,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u191-b12-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12-0ubuntu0.16.04.1.dsc' openjdk-8_8u191-b12-0ubuntu0.16.04.1.dsc 4720 SHA256:9094dccfbdf76cdefd9351bded6dc3c3343e6a1a2ba2077c6ee024f2060a27bf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12.orig.tar.xz' openjdk-8_8u191-b12.orig.tar.xz 70611972 SHA256:48f302bcc59b9b239e23dc9da7518b8d716b2f43bf58212eda48c14e556d3864
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u191-b12-0ubuntu0.16.04.1.debian.tar.xz' openjdk-8_8u191-b12-0ubuntu0.16.04.1.debian.tar.xz 243236 SHA256:59243d2f7f503eef0efca8b4ea2d0563c6ab99450024ca0d0f520579dbb51331
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
