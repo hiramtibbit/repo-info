@@ -1,7 +1,7 @@
 ## `open-liberty:webProfile7-java8-ibm`
 
 ```console
-$ docker pull open-liberty@sha256:5194a2f87709550dc3f15ee1054176ec75b8dc0ea62f48491b6901ab80cce47e
+$ docker pull open-liberty@sha256:90cf8bd849a56f0beb25b8f84c5fabc5415de95e946880ac5930436ab19c9d70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -125,14 +125,14 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 ### `open-liberty:webProfile7-java8-ibm` - linux; 386
 
 ```console
-$ docker pull open-liberty@sha256:89e81150129accc6c73dcd8c7a0b7b8ed585332ff40293ede2bf7032c817c80c
+$ docker pull open-liberty@sha256:f662c6c4bd1745fca43f7b2b37c9182a5a254ac4490dee8f19d11f10b4a09502
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.1 MB (301103880 bytes)**  
+-	Total Size: **301.3 MB (301340386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c044051db328e03fba35b8abf0b07428934a2cb1ec273a8c9ce361ee7aa67129`
+-	Image ID: `sha256:27fe62c3d81dded539f067c9da0662392e8151aa602c8679cabd4be278148829`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -161,25 +161,25 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 LABEL maintainer=Alasdair Nottingham vendor=Open Liberty url=https://openliberty.io/ github=https://github.com/OpenLiberty/ci.docker
 # Thu, 24 Jan 2019 03:56:54 GMT
 COPY file:d40f5469dac9bc207bd04ab8a1419b4876bf27e17ee1020b08e88bc6d933312f in /opt/ol/docker/ 
-# Thu, 24 Jan 2019 03:58:16 GMT
-ENV LIBERTY_VERSION=18.0.0.4 LIBERTY_SHA=0773f5e9e933b272e426ef86b90e13ee1ed5a1ee
-# Thu, 24 Jan 2019 03:58:28 GMT
+# Sat, 02 Feb 2019 11:41:24 GMT
+ENV LIBERTY_VERSION=19.0.0.1 LIBERTY_SHA=c7b741b3a2c1e93d7e1c652377a212d23025a7be
+# Sat, 02 Feb 2019 11:41:35 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*     && wget https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/$LIBERTY_VERSION/openliberty-runtime-$LIBERTY_VERSION.zip -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && apt-get remove -y unzip     && rm -rf /var/lib/apt/lists/*
-# Thu, 24 Jan 2019 03:58:28 GMT
+# Sat, 02 Feb 2019 11:41:36 GMT
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true
-# Thu, 24 Jan 2019 03:58:29 GMT
+# Sat, 02 Feb 2019 11:41:36 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs     && ln -s /liberty /opt/ol/wlp
-# Thu, 24 Jan 2019 03:58:30 GMT
+# Sat, 02 Feb 2019 11:41:38 GMT
 RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Thu, 24 Jan 2019 03:58:30 GMT
+# Sat, 02 Feb 2019 11:41:38 GMT
 EXPOSE 9080 9443
-# Thu, 24 Jan 2019 03:58:31 GMT
+# Sat, 02 Feb 2019 11:41:38 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Thu, 24 Jan 2019 03:58:31 GMT
+# Sat, 02 Feb 2019 11:41:38 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
-# Thu, 24 Jan 2019 03:58:34 GMT
+# Sat, 02 Feb 2019 11:41:41 GMT
 RUN cp /opt/ol/wlp/templates/servers/webProfile7/server.xml /config/server.xml
-# Thu, 24 Jan 2019 03:58:48 GMT
+# Sat, 02 Feb 2019 11:41:55 GMT
 RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ /logs/*
 ```
 
@@ -212,25 +212,25 @@ RUN /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /outpu
 		Last Modified: Thu, 24 Jan 2019 04:00:30 GMT  
 		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2883caae66e2d6fe33be9a665b8fe3c1ccdd06965b2d60702d4b7dd4470dc89`  
-		Last Modified: Thu, 24 Jan 2019 04:01:09 GMT  
-		Size: 126.7 MB (126746645 bytes)  
+	-	`sha256:582d47f0ca20548dd646da4ed31bdbb3fca5ad0c75e2e4de095700299afd7f11`  
+		Last Modified: Sat, 02 Feb 2019 11:44:19 GMT  
+		Size: 126.9 MB (126941307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2647feb3217f954176fa0b371669db27b2a845a04dfd319bde4a57dfb63b11`  
-		Last Modified: Thu, 24 Jan 2019 04:00:59 GMT  
-		Size: 300.0 B  
+	-	`sha256:a54dc8db3d1f8d8fcd71caca8a80257a3edd5e83b3c98501a4b2c44153f85789`  
+		Last Modified: Sat, 02 Feb 2019 11:44:08 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d724afad49fd98a41aadddf1e1e85e4358b352bea77a9007d896f65fb059882e`  
-		Last Modified: Thu, 24 Jan 2019 04:01:00 GMT  
-		Size: 819.0 B  
+	-	`sha256:a01bf18f5b72f33a2b624a2951547c28f96f3122f11c785cf16141e2785f5288`  
+		Last Modified: Sat, 02 Feb 2019 11:44:08 GMT  
+		Size: 820.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972ef5cdce96e9e69f6db329a6d99ab7116478236c33f93e745b5a13ac19cdf9`  
-		Last Modified: Thu, 24 Jan 2019 04:01:14 GMT  
+	-	`sha256:c3bd2a2e8b7975995ff88d114c6c5f9d9b1ff543c5893ebcbc45a5d1b76d7644`  
+		Last Modified: Sat, 02 Feb 2019 11:44:22 GMT  
 		Size: 537.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c207eea6fd789d051bb656fdc6fa563a899b3f62a0dbc82ff365175d16b27ea`  
-		Last Modified: Thu, 24 Jan 2019 04:01:18 GMT  
-		Size: 11.5 MB (11461514 bytes)  
+	-	`sha256:ad63706e4346782cf4e86a809d8077d7dd28caf4fe80b4bca9f84094a038b16e`  
+		Last Modified: Sat, 02 Feb 2019 11:44:26 GMT  
+		Size: 11.5 MB (11503354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:webProfile7-java8-ibm` - linux; ppc64le
