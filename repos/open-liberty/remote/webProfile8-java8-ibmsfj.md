@@ -1,7 +1,7 @@
 ## `open-liberty:webProfile8-java8-ibmsfj`
 
 ```console
-$ docker pull open-liberty@sha256:20f5344d73e59161eb4e9be414514b5e366a8cf04388540e8328f6cfaa8d5b91
+$ docker pull open-liberty@sha256:e722107417fcbb53328e2e50d1ef8d1bec37c2bb41578e4e40aa34c08833ea24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull open-liberty@sha256:20f5344d73e59161eb4e9be414514b5e366a8cf0438854
 ### `open-liberty:webProfile8-java8-ibmsfj` - linux; amd64
 
 ```console
-$ docker pull open-liberty@sha256:fc3ade7e74929d4273d1ffc747426fd77a2bcba5ccfbdd94a764824584374f2c
+$ docker pull open-liberty@sha256:bdfb9fdadfb4a064d01a5ff850e8e67470521973b744dcf2ed732735552effd0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.8 MB (161763722 bytes)**  
+-	Total Size: **161.8 MB (161820002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f0f2d9ca0261b28fbd6041e55142be6274fe2301d9c09b4d938ef35146c1b94`
+-	Image ID: `sha256:ff32df0ec1248c83cd3ce942376631ef8dbf847bc5fecaa7db43e45b5acc87a8`
 -	Entrypoint: `["\/opt\/ol\/docker\/docker-server"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -39,21 +39,21 @@ RUN set -eux;     apk --no-cache add --virtual .build-deps wget;     ARCH="$(apk
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 # Thu, 31 Jan 2019 03:18:46 GMT
 COPY file:d40f5469dac9bc207bd04ab8a1419b4876bf27e17ee1020b08e88bc6d933312f in /opt/ol/docker/ 
-# Thu, 31 Jan 2019 03:18:47 GMT
-ENV LIBERTY_VERSION=18.0.0.4 LIBERTY_SHA=74c2bea67cfe8eff003893228b9afa9324aa9157
-# Thu, 31 Jan 2019 03:18:53 GMT
+# Fri, 01 Feb 2019 23:20:26 GMT
+ENV LIBERTY_VERSION=19.0.0.1 LIBERTY_SHA=fec518cac15255d71415b8a748ad243f871f29d4
+# Fri, 01 Feb 2019 23:20:32 GMT
 RUN wget https://repo1.maven.org/maven2/io/openliberty/openliberty-webProfile8/$LIBERTY_VERSION/openliberty-webProfile8-$LIBERTY_VERSION.zip -U UA-Open-Liberty-Docker -O /tmp/wlp.zip    && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1    && sha1sum -c /tmp/wlp.zip.sha1    && unzip -q /tmp/wlp.zip -d /opt/ol    && rm /tmp/wlp.zip    && rm /tmp/wlp.zip.sha1
-# Thu, 31 Jan 2019 03:18:53 GMT
+# Fri, 01 Feb 2019 23:20:32 GMT
 ENV PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true
-# Thu, 31 Jan 2019 03:18:54 GMT
+# Fri, 01 Feb 2019 23:20:33 GMT
 RUN mkdir /logs     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && ln -s /logs $WLP_OUTPUT_DIR/defaultServer/logs
-# Thu, 31 Jan 2019 03:19:10 GMT
+# Fri, 01 Feb 2019 23:20:51 GMT
 RUN /opt/ol/wlp/bin/server create     && rm /config/server.env     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && mkdir /config/configDropins     && mkdir /config/configDropins/defaults     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml     && /opt/ol/wlp/bin/server start && /opt/ol/wlp/bin/server stop && rm -rf /output/resources/security/ /logs/*
-# Thu, 31 Jan 2019 03:19:11 GMT
+# Fri, 01 Feb 2019 23:20:51 GMT
 EXPOSE 9080 9443
-# Thu, 31 Jan 2019 03:19:11 GMT
+# Fri, 01 Feb 2019 23:20:52 GMT
 ENTRYPOINT ["/opt/ol/docker/docker-server"]
-# Thu, 31 Jan 2019 03:19:11 GMT
+# Fri, 01 Feb 2019 23:20:52 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -74,15 +74,15 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Thu, 31 Jan 2019 03:22:36 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:134b73ceb75d38dfce0c092e8699f212edfc5a66b7777f53cf4a8e9462f52561`  
-		Last Modified: Thu, 31 Jan 2019 03:22:42 GMT  
-		Size: 81.7 MB (81695472 bytes)  
+	-	`sha256:888ebfed2d27f782540aec389ff8e4d9e67bf3a3e89693a12ee9ac32f5ba75bb`  
+		Last Modified: Fri, 01 Feb 2019 23:27:00 GMT  
+		Size: 81.7 MB (81714226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddacdd85385005f932f15362feaf99ddf232e93d920872d66e6ac25a5ecc6cde`  
-		Last Modified: Thu, 31 Jan 2019 03:22:36 GMT  
-		Size: 274.0 B  
+	-	`sha256:44d7e6d9d4af78879ce917f31fd83140380d5b1271d5f52bc66d9d7fc9a9569c`  
+		Last Modified: Fri, 01 Feb 2019 23:26:52 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddb1b3ed14852f2cfd12a0ea761a69be9c860f730a15b1d4624b7bc0752119c9`  
-		Last Modified: Thu, 31 Jan 2019 03:22:39 GMT  
-		Size: 11.1 MB (11104513 bytes)  
+	-	`sha256:6375aa4298f0edcf0e3feef478ce2c58da0b423ec04489d7494fa624ed75813c`  
+		Last Modified: Fri, 01 Feb 2019 23:26:55 GMT  
+		Size: 11.1 MB (11142036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
