@@ -1,10 +1,10 @@
-# `convertigo:7.5.4-alpine`
+# `convertigo:7.5.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c531b9ad2eec720d8878e5e7ea36994f90295682ed13c471e15a1ebd648caf3`
-- Created: `2019-01-11T03:58:56.78741498Z`
-- Virtual Size: ~ 278.09 Mb  
+- Image ID: `sha256:d69d33d1c0491385807f654651d63788e8554b0610dc88d5b5f5b405fce8c813`
+- Created: `2019-02-01T22:20:24.18183325Z`
+- Virtual Size: ~ 278.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -28,7 +28,7 @@
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
   - `TINI_VERSION=0.17.0`
   - `TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5`
-  - `CONVERTIGO_VERSION=7.5.4`
-  - `CONVERTIGO_REVISION=44975`
-  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.5.4/convertigo-7.5.4-v44975-linux32.war`
+  - `CONVERTIGO_VERSION=7.5.5`
+  - `CONVERTIGO_REVISION=45010`
+  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.5.5/convertigo-7.5.5-v45010-linux32.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
