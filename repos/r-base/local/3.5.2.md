@@ -2687,16 +2687,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris littler=0.3.5-1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.5-1.dsc' littler_0.3.5-1.dsc 1889 SHA256:761e621a321511885870c203e427ef3f1c519e877929ef2b2f8f6cbe82188082
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.5.orig.tar.gz' littler_0.3.5.orig.tar.gz 365180 SHA256:dc460c5726a53444b91be7f31335805c20c4b33482371c043f3c723d44f6667f
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.5-1.debian.tar.xz' littler_0.3.5-1.debian.tar.xz 6724 SHA256:3093025220e461f67fb6a4df967e067a47a3a64f52ef75d7ced2d8eada0e4c98
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.5-1.dsc' littler_0.3.5-1.dsc 1889 SHA256:761e621a321511885870c203e427ef3f1c519e877929ef2b2f8f6cbe82188082
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.5.orig.tar.gz' littler_0.3.5.orig.tar.gz 365180 SHA256:dc460c5726a53444b91be7f31335805c20c4b33482371c043f3c723d44f6667f
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.5-1.debian.tar.xz' littler_0.3.5-1.debian.tar.xz 6724 SHA256:3093025220e461f67fb6a4df967e067a47a3a64f52ef75d7ced2d8eada0e4c98
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/littler/0.3.5-1/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=10.2018112800`
 
