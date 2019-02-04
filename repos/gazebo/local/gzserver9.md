@@ -306,14 +306,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.7-3.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.1.dsc' avahi_0.7-3.1ubuntu1.1.dsc 4202 SHA256:11fdad4b4ca493ea1e63c88a7ceb35c8b6c0da5ec8ff90077b6d473651a6180a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7.orig.tar.gz' avahi_0.7.orig.tar.gz 1333400 SHA256:57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.7-3.1ubuntu1.1.debian.tar.xz' avahi_0.7-3.1ubuntu1.1.debian.tar.xz 34408 SHA256:21f22a4d36f2b620bf55c039ed40a62a35ca029fe228959f2baa58c21484b6a4
-```
 
 ### `dpkg` source package: `base-files=10.1ubuntu2.3`
 
@@ -4720,15 +4715,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.0.5-0ubuntu0~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.0.5-0ubuntu0~18.04.1.dsc' mesa_18.0.5-0ubuntu0~18.04.1.dsc 5245 SHA256:a580519bc542fe606111020d3318463e06441ea8ddb77d28d821411cb0383b0a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.0.5.orig.tar.gz' mesa_18.0.5.orig.tar.gz 19123780 SHA256:ea3e00329cea899b1e32db812fd2f426832be37e4baa2e2fd9288a3480f30531
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.0.5.orig.tar.gz.asc' mesa_18.0.5.orig.tar.gz.asc 879 SHA256:a651bd04a5290244cb15c2504be35adfbc02ffa6d2fa1621cf88dccd3fa70b52
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.0.5-0ubuntu0~18.04.1.diff.gz' mesa_18.0.5-0ubuntu0~18.04.1.diff.gz 131339 SHA256:194690ec8d32131bb49f663d4dadd4c6fff27bc3365471b38d898bcb184c4851
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 

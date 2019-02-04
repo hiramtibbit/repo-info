@@ -206,14 +206,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.dsc' avahi_0.6.32~rc+dfsg-1ubuntu2.2.dsc 3790 SHA256:2ef582a9f1fdb02027d869aba97613b5b761d992cb3b14c0f090d5560a3ba193
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg.orig.tar.gz' avahi_0.6.32~rc+dfsg.orig.tar.gz 665175 SHA256:84f609611323613c8635146d1a93be0914f1f7a8027d1d5e71cbbab156741dac
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.2.debian.tar.xz 33608 SHA256:eaecf25bbdc695c866ae72926b4c8b9d05c42e5984a767b6e5d581b6f67ff5b2
-```
 
 ### `dpkg` source package: `base-files=9.4ubuntu4.7`
 
@@ -3881,14 +3876,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-141.167
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.dsc' linux_4.4.0-141.167.dsc 9418 SHA256:1a085a45b35803f398041288cd3c32e03a9354c56f04ae84dd2ae64daa922406
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.diff.gz' linux_4.4.0-141.167.diff.gz 15018277 SHA256:67f5102684cbf455d7233dbc2c48b1db66bfba920ca082d56a358642d1770fd9
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
