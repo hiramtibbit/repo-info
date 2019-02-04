@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee50895c83b1e8cac25bc73d48651a0a286b0c79840182fc1c854f9f4d34b4f5`
-- Created: `2019-01-23T01:20:23.127983774Z`
-- Virtual Size: ~ 916.53 Mb  
+- Image ID: `sha256:019b8604663bfa3d5e39802ba7a1f88d50b257a0223d073d50c25c44df3f304d`
+- Created: `2019-02-01T01:23:14.019908998Z`
+- Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,7 +13,6 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `ODOO_VERSION=12.0`
-  - `ODOO_RELEASE=20181126`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -652,6 +651,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.5-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.5-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `distro-info-data=0.36`
+
+Binary Packages:
+
+- `distro-info-data=0.36`
+
+Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
+
+- `ISC`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris distro-info-data=0.36
+'http://deb.debian.org/debian/pool/main/d/distro-info-data/distro-info-data_0.36.dsc' distro-info-data_0.36.dsc 1326 SHA256:4c36e2480fbaaec733774403048de675eaa7237cbce451a4fbbb1b4b411e67d1
+'http://deb.debian.org/debian/pool/main/d/distro-info-data/distro-info-data_0.36.tar.xz' distro-info-data_0.36.tar.xz 6424 SHA256:a1cb1ff9f13da5d06f0c9049d94f5d431c90b5e08cf8c374a77d3a648f37abb0
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/distro-info-data/0.36/ (for browsing the source)
+- https://sources.debian.net/src/distro-info-data/0.36/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/distro-info-data/0.36/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `dpkg=1.18.25`
 
 Binary Packages:
@@ -868,6 +891,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/fonts-dejavu/2.37-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/fonts-dejavu/2.37-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `fonts-noto-cjk=1:1.004+repack2-2`
+
+Binary Packages:
+
+- `fonts-noto-cjk=1:1.004+repack2-2`
+
+Licenses: (parsed from: `/usr/share/doc/fonts-noto-cjk/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+- `SIL-1.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris fonts-noto-cjk=1:1.004+repack2-2
+'http://deb.debian.org/debian/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_1.004+repack2-2.dsc' fonts-noto-cjk_1.004+repack2-2.dsc 2065 SHA256:8210a842db59d3e42fe69c22885b19f5baf68cb2a20fbab6c8f525f5ebaafc9f
+'http://deb.debian.org/debian/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_1.004+repack2.orig.tar.gz' fonts-noto-cjk_1.004+repack2.orig.tar.gz 102343366 SHA256:5b8a933f19a55db4d3b80c9757cb56962e87b936c7a04c5d403a2792d738ea79
+'http://deb.debian.org/debian/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_1.004+repack2-2.debian.tar.xz' fonts-noto-cjk_1.004+repack2-2.debian.tar.xz 4576 SHA256:a4eff3bf3711f459c5985b4e4675fbcd4c5d81ae105f5a6d259512ac94657099
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fonts-noto-cjk/1:1.004+repack2-2/ (for browsing the source)
+- https://sources.debian.net/src/fonts-noto-cjk/1:1.004+repack2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fonts-noto-cjk/1:1.004+repack2-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `freetype=2.6.3-3.2`
 
 Binary Packages:
@@ -1016,9 +1066,12 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `dirmngr=2.1.18-8~deb9u3`
+- `gnupg=2.1.18-8~deb9u3`
+- `gnupg-agent=2.1.18-8~deb9u3`
 - `gpgv=2.1.18-8~deb9u3`
 
-Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -1080,6 +1133,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u4/ (for browsing the source)
 - https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gpm=1.20.4-6.2`
+
+Binary Packages:
+
+- `libgpm2:amd64=1.20.4-6.2+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libgpm2/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gpm=1.20.4-6.2
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4-6.2.dsc' gpm_1.20.4-6.2.dsc 1812 SHA256:9c81da20a6ec92d139ea758c38cb8fbacc818d1e06082396f69c2e594ab38de5
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4.orig.tar.gz' gpm_1.20.4.orig.tar.gz 1347133 SHA256:d6c87cd0f2c32e2c3435c444728f2ae60324fda60dedda783ea0f24f363e576c
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4-6.2.diff.gz' gpm_1.20.4-6.2.diff.gz 95710 SHA256:05f5303e31e9131cdd64a4c2409ac07f8886eac0d852839d0e464df7528773d2
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gpm/1.20.4-6.2/ (for browsing the source)
+- https://sources.debian.net/src/gpm/1.20.4-6.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gpm/1.20.4-6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-1`
 
@@ -1614,6 +1692,41 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libart-lgpl/2.3.21-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libart-lgpl/2.3.21-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libassuan=2.4.3-2`
+
+Binary Packages:
+
+- `libassuan0:amd64=2.4.3-2`
+
+Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
+
+- `GAP`
+- `GAP~FSF`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-2+ with libtool exception`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libassuan=2.4.3-2
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-2.dsc' libassuan_2.4.3-2.dsc 2412 SHA256:fc057ff6bd548161cd978f7847682928222d31db96bd94d7ec0fc84b176bbcc7
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
+'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-2.debian.tar.xz' libassuan_2.4.3-2.debian.tar.xz 15076 SHA256:16dd66909cf3b79c71d5169f35d94be64d079d882f027577c00c23bff3148012
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libassuan/2.4.3-2/ (for browsing the source)
+- https://sources.debian.net/src/libassuan/2.4.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libassuan/2.4.3-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
 Binary Packages:
@@ -2015,6 +2128,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/ (for browsing the source)
 - https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libjpeg-turbo/1:1.5.1-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libksba=1.3.5-2`
+
+Binary Packages:
+
+- `libksba8:amd64=1.3.5-2`
+
+Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
+
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libksba=1.3.5-2
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.dsc' libksba_1.3.5-2.dsc 2526 SHA256:4fd08fd129f97ab1df86c220b88b7b2c6e4e04aa90bfd3ae364d18022256bef8
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA256:41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA256:a954b03144ee882c838853da24fd7b6868b78df72a18c71079217d968698a76f
+'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.debian.tar.xz' libksba_1.3.5-2.debian.tar.xz 13852 SHA256:98c985bff973be1aecc702fa15887ff1e5b8de481d1dc3e99423a587754eaabd
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libksba/1.3.5-2/ (for browsing the source)
+- https://sources.debian.net/src/libksba/1.3.5-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libksba/1.3.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -2845,8 +2984,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `lsb-base=9.20161125`
+- `lsb-release=9.20161125`
 
-Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`, `/usr/share/doc/lsb-release/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -3168,52 +3308,53 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.18.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.18.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nodejs=4.8.2~dfsg-1`
+### `dpkg` source package: `nodejs=8.15.0-1nodesource1`
 
 Binary Packages:
 
-- `nodejs=4.8.2~dfsg-1`
+- `nodejs=8.15.0-1nodesource1`
 
-Licenses: (parsed from: `/usr/share/doc/nodejs/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `BSD-2-clause~author`
-- `BSD-3-clause~Google`
-- `BSD-3-clause~Intel`
-- `BSD-3-clause~Sun`
-- `BSD-4-clause~author`
-- `Expat`
-- `Expat~Wu`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `npth=1.3-1`
+
+Binary Packages:
+
+- `libnpth0:amd64=1.3-1`
+
+Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
+
 - `GPL-2`
 - `GPL-2+`
-- `GPL-3`
-- `ISC`
-- `ISC-no-disclaim`
-- `MIT/X11`
-- `MIT~Prototype`
-- `MPL-2.0`
-- `curl`
-- `public-domain`
+- `LGPL-3`
+- `LGPL-3+`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nodejs=4.8.2~dfsg-1
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_4.8.2~dfsg-1.dsc' nodejs_4.8.2~dfsg-1.dsc 2524 SHA256:cec224b7e524f49daedeb8b89d3084b8b745c92264bb5550d340dbbe48fd71df
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_4.8.2~dfsg.orig.tar.gz' nodejs_4.8.2~dfsg.orig.tar.gz 9729304 SHA256:356fc3f17370e73520a044fc3e028259d2c95680c3a3ddf5959407f00275765b
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_4.8.2~dfsg-1.debian.tar.xz' nodejs_4.8.2~dfsg-1.debian.tar.xz 348616 SHA256:5725ede2ad19ae778ca9f28e3116bc1c3d3c7e4bdc1f0b10e6f38faa8704619a
+$ apt-get source -qq --print-uris npth=1.3-1
+'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3-1.dsc' npth_1.3-1.dsc 1949 SHA256:63e2598a3aebe21ef7969a601906a719e923673e04a4d157b6dde605566079be
+'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3.orig.tar.bz2' npth_1.3.orig.tar.bz2 295998 SHA256:bca81940436aed0734eb8d0ff8b179e04cc8c087f5625204419f5f45d736a82a
+'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3-1.debian.tar.xz' npth_1.3-1.debian.tar.xz 10324 SHA256:4910e19597aea46841eaffc6df58ecf91d5d059130ecb1442fee9f5f963b229c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nodejs/4.8.2~dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/npth/1.3-1/ (for browsing the source)
+- https://sources.debian.net/src/npth/1.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/npth/1.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=12.0.20181126`
+### `dpkg` source package: `odoo=12.0.20190128`
 
 Binary Packages:
 
-- `odoo=12.0.20181126`
+- `odoo=12.0.20190128`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -3474,6 +3615,24 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.24.1-3+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `pgdg-keyring=2018.2`
+
+Binary Packages:
+
+- `pgdg-keyring=2018.2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pgdg-keyring=2018.2
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2018.2.dsc' pgdg-keyring_2018.2.dsc 1675 SHA256:ae43ea42cacdd73775abcd1e1686917833b102354a31b9bb48c66efbdd9c1fad
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2018.2.tar.xz' pgdg-keyring_2018.2.tar.xz 10192 SHA256:855b111b3881b2f505b5651b94b8dbc71ab3b44046e7c88192eb9855fa2e4878
+```
+
 ### `dpkg` source package: `pillow=4.0.0-4`
 
 Binary Packages:
@@ -3498,6 +3657,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pillow/4.0.0-4/ (for browsing the source)
 - https://sources.debian.net/src/pillow/4.0.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pillow/4.0.0-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `pinentry=1.0.0-2`
+
+Binary Packages:
+
+- `pinentry-curses=1.0.0-2`
+
+Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-3`
+- `LGPL-3+`
+- `X11`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pinentry=1.0.0-2
+'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0-2.dsc' pinentry_1.0.0-2.dsc 2591 SHA256:01349d75a92435037a4f4ad252a42cabe7bef774cb8ac6e8c6e24a4107f06e13
+'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0.orig.tar.bz2' pinentry_1.0.0.orig.tar.bz2 436930 SHA256:1672c2edc1feb036075b187c0773787b2afd0544f55025c645a71b4c2f79275a
+'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0-2.debian.tar.xz' pinentry_1.0.0-2.debian.tar.xz 16672 SHA256:85e0b03d74a64a08b51f6ffac58a1a07a42499615aa993f367675ef12d0b47fb
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pinentry/1.0.0-2/ (for browsing the source)
+- https://sources.debian.net/src/pinentry/1.0.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pinentry/1.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.34.0-1`
 
@@ -3524,14 +3712,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pixman/0.34.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pixman/0.34.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.10-0+deb9u1`
+### `dpkg` source package: `postgresql-11=11.1-3.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.10-0+deb9u1`
-- `postgresql-client-9.6=9.6.10-0+deb9u1`
+- `libpq5:amd64=11.1-3.pgdg90+1`
+- `postgresql-client-11=11.1-3.pgdg90+1`
 
-Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-11/copyright`)
 
 - `Artistic`
 - `BSD-2-clause`
@@ -3551,24 +3739,18 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.10-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
+$ apt-get source -qq --print-uris postgresql-11=11.1-3.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1-3.pgdg90+1.dsc' postgresql-11_11.1-3.pgdg90+1.dsc 2664 SHA256:fc2a0d0a4b5d28671b1e16c6a97d03112bd1ee6bdc427207aef04d456eb9e293
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1.orig.tar.bz2' postgresql-11_11.1.orig.tar.bz2 21263173 SHA256:90815e812874831e9a4bf6e1136bf73bc2c5a0464ef142e2dfea40cda206db08
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1-3.pgdg90+1.debian.tar.xz' postgresql-11_11.1-3.pgdg90+1.debian.tar.xz 21800 SHA256:8ae0efcb64a84ba703a3f371ee6f162123e4570584245eb40ec87fc073594d81
 ```
 
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.10-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `postgresql-common=181+deb9u2`
+### `dpkg` source package: `postgresql-common=199.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client=9.6+181+deb9u2`
-- `postgresql-client-common=181+deb9u2`
+- `postgresql-client=11+199.pgdg90+1`
+- `postgresql-client-common=199.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
@@ -3578,22 +3760,16 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-common=181+deb9u2
-'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181+deb9u2.dsc' postgresql-common_181+deb9u2.dsc 2353 SHA256:8bd5cc6f66b52c0ddd6020b67aa6daf34b9199c530bcded26b835d0cae629f16
-'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181+deb9u2.tar.xz' postgresql-common_181+deb9u2.tar.xz 201916 SHA256:e1afd024176bd8aca24e3f3432bbacc7d0da1ec95e023f06d7b7a5d881155410
+$ apt-get source -qq --print-uris postgresql-common=199.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_199.pgdg90+1.dsc' postgresql-common_199.pgdg90+1.dsc 1462 SHA256:2aa4948b78c7688db9402fb8fde82c5b4af1ca06f5cba6c5d080a3ca2941cb56
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_199.pgdg90+1.tar.xz' postgresql-common_199.pgdg90+1.tar.xz 210368 SHA256:6a1df4e79a2cca6e1bb9dbe329ee53866210ed74771b2c6ac05b4f527e3c9572
 ```
 
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/postgresql-common/181+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-common/181+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-common/181+deb9u2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `psycopg2=2.6.2-1`
+### `dpkg` source package: `psycopg2=2.7.6.1-3.pgdg90+1`
 
 Binary Packages:
 
-- `python3-psycopg2=2.6.2-1`
+- `python3-psycopg2=2.7.6.1-3.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-psycopg2/copyright`)
 
@@ -3602,17 +3778,11 @@ Licenses: (parsed from: `/usr/share/doc/python3-psycopg2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris psycopg2=2.6.2-1
-'http://deb.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.6.2-1.dsc' psycopg2_2.6.2-1.dsc 2486 SHA256:71fa5d4073364ecb2c7fbc13a254a7926bd5736bd6c40b3ae75990bcf6a81eae
-'http://deb.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.6.2.orig.tar.gz' psycopg2_2.6.2.orig.tar.gz 376348 SHA256:70490e12ed9c5c818ecd85d185d363335cc8a8cbf7212e3c185431c79ff8c05c
-'http://deb.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.6.2-1.diff.gz' psycopg2_2.6.2-1.diff.gz 13855 SHA256:eb1515feae568aef6a0bbb38e2efa84010af9e43c381e2c86d8329cde5ca2777
+$ apt-get source -qq --print-uris psycopg2=2.7.6.1-3.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/psycopg2/psycopg2_2.7.6.1-3.pgdg90+1.dsc' psycopg2_2.7.6.1-3.pgdg90+1.dsc 1627 SHA256:580b85b3f6e7a15c9d76547c5e377f7773acf9a11d389b529390ba8ceb41afbc
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/psycopg2/psycopg2_2.7.6.1.orig.tar.gz' psycopg2_2.7.6.1.orig.tar.gz 427374 SHA256:27959abe64ca1fc6d8cd11a71a1f421d8287831a3262bd4cacd43bbf43cc3c82
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/psycopg2/psycopg2_2.7.6.1-3.pgdg90+1.debian.tar.xz' psycopg2_2.7.6.1-3.pgdg90+1.debian.tar.xz 13344 SHA256:c5fb0152d1014c928aefc1569b70ff139503724ff5442aeac3aebef6ef05fc6e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/psycopg2/2.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/psycopg2/2.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/psycopg2/2.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pydot=1.0.28-2`
 
@@ -3824,6 +3994,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-decorator/4.0.11-1/ (for browsing the source)
 - https://sources.debian.net/src/python-decorator/4.0.11-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-decorator/4.0.11-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `python-defaults=2.7.13-2`
+
+Binary Packages:
+
+- `libpython-stdlib:amd64=2.7.13-2`
+- `python=2.7.13-2`
+- `python-minimal=2.7.13-2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-defaults=2.7.13-2
+'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.dsc' python-defaults_2.7.13-2.dsc 2677 SHA256:80d5452cde16052caa5b9c3880ed067c3d4f2e60485a56947531a6650f6e7d94
+'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.tar.gz' python-defaults_2.7.13-2.tar.gz 273915 SHA256:aa376f54a9b2ca59b6f051ce0b4320d95ef60f114f90d98a90e510c3968b416a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python-defaults/2.7.13-2/ (for browsing the source)
+- https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-defaults/2.7.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-docutils=0.13.1+dfsg-2`
 
@@ -4407,6 +4603,49 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-werkzeug/0.11.15+dfsg1-1/ (for browsing the source)
 - https://sources.debian.net/src/python-werkzeug/0.11.15+dfsg1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-werkzeug/0.11.15+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `python2.7=2.7.13-2+deb9u3`
+
+Binary Packages:
+
+- `libpython2.7-minimal:amd64=2.7.13-2+deb9u3`
+- `libpython2.7-stdlib:amd64=2.7.13-2+deb9u3`
+- `python2.7=2.7.13-2+deb9u3`
+- `python2.7-minimal=2.7.13-2+deb9u3`
+
+Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
+
+- `# Licensed to PSF under a Contributor Agreement`
+- `* Permission to use this software in any way is granted without`
+- `Apache`
+- `Apache-2`
+- `Apache-2.0`
+- `Expat`
+- `GPL-2`
+- `ISC`
+- `LGPL-2.1+`
+- `PSF-2`
+- `Permission is hereby granted, free of charge, to any person obtaining`
+- `Python`
+- `This software is provided 'as-is', without any express`
+- `This software is provided as-is, without express`
+- `implied`
+- `see above, some license as Python`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.13-2+deb9u3
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u3.dsc' python2.7_2.7.13-2+deb9u3.dsc 3370 SHA256:07f864cef82aaf3741af4c89aa5bcc595c56c283c3ff61630c36171ce5aac9f3
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2+deb9u3.diff.gz' python2.7_2.7.13-2+deb9u3.diff.gz 284882 SHA256:4e7d5d372cb78eadc0fafa461a579a658ee245fcc1142234561406b45193c087
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/python2.7/2.7.13-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.5.3-1`
 
