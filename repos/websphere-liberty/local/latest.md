@@ -1,10 +1,10 @@
-# `websphere-liberty:18.0.0.4-javaee8`
+# `websphere-liberty:19.0.0.1-javaee8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e680b2fa184cd4717cf23926864215c486fbdb83146387f5d6dcb93682fb4ac6`
-- Created: `2019-01-31T05:31:28.207551024Z`
-- Virtual Size: ~ 584.29 Mb  
+- Image ID: `sha256:a83fa38506a5ed48e6f1a0522161cfa13c02755452c2bb7dabeaae3c9dad8ff1`
+- Created: `2019-02-01T23:31:09.036019084Z`
+- Virtual Size: ~ 584.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `JAVA_VERSION=1.8.0_sr5fp27`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=18.0.0_04`
+  - `LIBERTY_VERSION=19.0.0_01`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `KEYSTORE_REQUIRED=true`
