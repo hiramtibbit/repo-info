@@ -10,17 +10,17 @@
 -	[`redis:4.0.12-32bit`](#redis4012-32bit)
 -	[`redis:4.0.12-32bit-stretch`](#redis4012-32bit-stretch)
 -	[`redis:4.0.12-alpine`](#redis4012-alpine)
--	[`redis:4.0.12-alpine3.8`](#redis4012-alpine38)
+-	[`redis:4.0.12-alpine3.9`](#redis4012-alpine39)
 -	[`redis:4.0.12-stretch`](#redis4012-stretch)
 -	[`redis:4.0-32bit`](#redis40-32bit)
 -	[`redis:4.0-32bit-stretch`](#redis40-32bit-stretch)
 -	[`redis:4.0-alpine`](#redis40-alpine)
--	[`redis:4.0-alpine3.8`](#redis40-alpine38)
+-	[`redis:4.0-alpine3.9`](#redis40-alpine39)
 -	[`redis:4.0-stretch`](#redis40-stretch)
 -	[`redis:4-32bit`](#redis4-32bit)
 -	[`redis:4-32bit-stretch`](#redis4-32bit-stretch)
 -	[`redis:4-alpine`](#redis4-alpine)
--	[`redis:4-alpine3.8`](#redis4-alpine38)
+-	[`redis:4-alpine3.9`](#redis4-alpine39)
 -	[`redis:4-stretch`](#redis4-stretch)
 -	[`redis:5`](#redis5)
 -	[`redis:5.0`](#redis50)
@@ -30,18 +30,18 @@
 -	[`redis:5.0.3-32bit`](#redis503-32bit)
 -	[`redis:5.0.3-32bit-stretch`](#redis503-32bit-stretch)
 -	[`redis:5.0.3-alpine`](#redis503-alpine)
--	[`redis:5.0.3-alpine3.8`](#redis503-alpine38)
+-	[`redis:5.0.3-alpine3.9`](#redis503-alpine39)
 -	[`redis:5.0.3-stretch`](#redis503-stretch)
 -	[`redis:5.0-alpine`](#redis50-alpine)
--	[`redis:5.0-alpine3.8`](#redis50-alpine38)
+-	[`redis:5.0-alpine3.9`](#redis50-alpine39)
 -	[`redis:5.0-stretch`](#redis50-stretch)
 -	[`redis:5-32bit`](#redis5-32bit)
 -	[`redis:5-32bit-stretch`](#redis5-32bit-stretch)
 -	[`redis:5-alpine`](#redis5-alpine)
--	[`redis:5-alpine3.8`](#redis5-alpine38)
+-	[`redis:5-alpine3.9`](#redis5-alpine39)
 -	[`redis:5-stretch`](#redis5-stretch)
 -	[`redis:alpine`](#redisalpine)
--	[`redis:alpine3.8`](#redisalpine38)
+-	[`redis:alpine3.9`](#redisalpine39)
 -	[`redis:latest`](#redislatest)
 -	[`redis:stretch`](#redisstretch)
 
@@ -2515,7 +2515,7 @@ CMD ["redis-server"]
 		Size: 410.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:4.0.12-alpine3.8`
+## `redis:4.0.12-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa947abc016e2
@@ -2530,7 +2530,7 @@ $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:4.0.12-alpine3.8` - linux; amd64
+### `redis:4.0.12-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:56c4390978846e5ed64a1c2ff32820a3c91c0cf1e9a74e4704bf33f837c610e9
@@ -2603,7 +2603,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0.12-alpine3.8` - linux; arm variant v6
+### `redis:4.0.12-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:5a28c0afc62c1ab4301c0ba199804cb0596002a2fdf6fbe1c06cd79d96aa67e6
@@ -2682,7 +2682,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0.12-alpine3.8` - linux; arm64 variant v8
+### `redis:4.0.12-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:c1b4ad18cf69638cc1cd6dda6f139143bf487a99538672e5b3b53786c682ea1a
@@ -2761,7 +2761,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0.12-alpine3.8` - linux; 386
+### `redis:4.0.12-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:29f97fd9f2f44e90f8d0cfa9c3260dbbc4ca3b91c23235cf13a2de1203149ebf
@@ -2840,7 +2840,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0.12-alpine3.8` - linux; ppc64le
+### `redis:4.0.12-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:868d75b49d9bd413a0c51d0d4a99c4777cb24b46ea1fc4f14153778f7a5d7072
@@ -2919,7 +2919,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0.12-alpine3.8` - linux; s390x
+### `redis:4.0.12-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:2b1aa038b2c19de4a17330ec3463ccfc76da2361b7b0a20e126b39579df72356
@@ -4204,7 +4204,7 @@ CMD ["redis-server"]
 		Size: 410.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:4.0-alpine3.8`
+## `redis:4.0-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa947abc016e2
@@ -4219,7 +4219,7 @@ $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:4.0-alpine3.8` - linux; amd64
+### `redis:4.0-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:56c4390978846e5ed64a1c2ff32820a3c91c0cf1e9a74e4704bf33f837c610e9
@@ -4292,7 +4292,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0-alpine3.8` - linux; arm variant v6
+### `redis:4.0-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:5a28c0afc62c1ab4301c0ba199804cb0596002a2fdf6fbe1c06cd79d96aa67e6
@@ -4371,7 +4371,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0-alpine3.8` - linux; arm64 variant v8
+### `redis:4.0-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:c1b4ad18cf69638cc1cd6dda6f139143bf487a99538672e5b3b53786c682ea1a
@@ -4450,7 +4450,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0-alpine3.8` - linux; 386
+### `redis:4.0-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:29f97fd9f2f44e90f8d0cfa9c3260dbbc4ca3b91c23235cf13a2de1203149ebf
@@ -4529,7 +4529,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0-alpine3.8` - linux; ppc64le
+### `redis:4.0-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:868d75b49d9bd413a0c51d0d4a99c4777cb24b46ea1fc4f14153778f7a5d7072
@@ -4608,7 +4608,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4.0-alpine3.8` - linux; s390x
+### `redis:4.0-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:2b1aa038b2c19de4a17330ec3463ccfc76da2361b7b0a20e126b39579df72356
@@ -5893,7 +5893,7 @@ CMD ["redis-server"]
 		Size: 410.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:4-alpine3.8`
+## `redis:4-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa947abc016e2
@@ -5908,7 +5908,7 @@ $ docker pull redis@sha256:b3dbb3d1eba41fe2cd6f3504af34481799fd3807059e73c5e76fa
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:4-alpine3.8` - linux; amd64
+### `redis:4-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:56c4390978846e5ed64a1c2ff32820a3c91c0cf1e9a74e4704bf33f837c610e9
@@ -5981,7 +5981,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4-alpine3.8` - linux; arm variant v6
+### `redis:4-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:5a28c0afc62c1ab4301c0ba199804cb0596002a2fdf6fbe1c06cd79d96aa67e6
@@ -6060,7 +6060,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4-alpine3.8` - linux; arm64 variant v8
+### `redis:4-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:c1b4ad18cf69638cc1cd6dda6f139143bf487a99538672e5b3b53786c682ea1a
@@ -6139,7 +6139,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4-alpine3.8` - linux; 386
+### `redis:4-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:29f97fd9f2f44e90f8d0cfa9c3260dbbc4ca3b91c23235cf13a2de1203149ebf
@@ -6218,7 +6218,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4-alpine3.8` - linux; ppc64le
+### `redis:4-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:868d75b49d9bd413a0c51d0d4a99c4777cb24b46ea1fc4f14153778f7a5d7072
@@ -6297,7 +6297,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:4-alpine3.8` - linux; s390x
+### `redis:4-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:2b1aa038b2c19de4a17330ec3463ccfc76da2361b7b0a20e126b39579df72356
@@ -9387,7 +9387,7 @@ CMD ["redis-server"]
 		Size: 411.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:5.0.3-alpine3.8`
+## `redis:5.0.3-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd79fa5456fe4
@@ -9402,7 +9402,7 @@ $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:5.0.3-alpine3.8` - linux; amd64
+### `redis:5.0.3-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:30b9c268946d71f94016273f7718b5e5ac3627d59d97181c2c99371def995a15
@@ -9475,7 +9475,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0.3-alpine3.8` - linux; arm variant v6
+### `redis:5.0.3-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:4a8cceff87821658eb72eda851ecf3160862cd525d2467ffb024052227ef608d
@@ -9554,7 +9554,7 @@ CMD ["redis-server"]
 		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0.3-alpine3.8` - linux; arm64 variant v8
+### `redis:5.0.3-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:7094598dfbe9bc9c933c0584191a94076071fd7dd72b82355d3ad9872794ed82
@@ -9633,7 +9633,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0.3-alpine3.8` - linux; 386
+### `redis:5.0.3-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:5700245b6141ead4e63534baa834c003ba9fd21c5d1ed56bfc701b41e81efcf3
@@ -9712,7 +9712,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0.3-alpine3.8` - linux; ppc64le
+### `redis:5.0.3-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:00de2517846cf686af9683f6d6e82e18ea5121f7566818eb174b57910ec7dce1
@@ -9791,7 +9791,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0.3-alpine3.8` - linux; s390x
+### `redis:5.0.3-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:7daf6d4353bdc83306d8c4b34000578fd6ef0b3fdec23857572596b81ba6b0e8
@@ -10894,7 +10894,7 @@ CMD ["redis-server"]
 		Size: 411.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:5.0-alpine3.8`
+## `redis:5.0-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd79fa5456fe4
@@ -10909,7 +10909,7 @@ $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:5.0-alpine3.8` - linux; amd64
+### `redis:5.0-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:30b9c268946d71f94016273f7718b5e5ac3627d59d97181c2c99371def995a15
@@ -10982,7 +10982,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0-alpine3.8` - linux; arm variant v6
+### `redis:5.0-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:4a8cceff87821658eb72eda851ecf3160862cd525d2467ffb024052227ef608d
@@ -11061,7 +11061,7 @@ CMD ["redis-server"]
 		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0-alpine3.8` - linux; arm64 variant v8
+### `redis:5.0-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:7094598dfbe9bc9c933c0584191a94076071fd7dd72b82355d3ad9872794ed82
@@ -11140,7 +11140,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0-alpine3.8` - linux; 386
+### `redis:5.0-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:5700245b6141ead4e63534baa834c003ba9fd21c5d1ed56bfc701b41e81efcf3
@@ -11219,7 +11219,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0-alpine3.8` - linux; ppc64le
+### `redis:5.0-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:00de2517846cf686af9683f6d6e82e18ea5121f7566818eb174b57910ec7dce1
@@ -11298,7 +11298,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5.0-alpine3.8` - linux; s390x
+### `redis:5.0-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:7daf6d4353bdc83306d8c4b34000578fd6ef0b3fdec23857572596b81ba6b0e8
@@ -12583,7 +12583,7 @@ CMD ["redis-server"]
 		Size: 411.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:5-alpine3.8`
+## `redis:5-alpine3.9`
 
 ```console
 $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd79fa5456fe4
@@ -12598,7 +12598,7 @@ $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:5-alpine3.8` - linux; amd64
+### `redis:5-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:30b9c268946d71f94016273f7718b5e5ac3627d59d97181c2c99371def995a15
@@ -12671,7 +12671,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5-alpine3.8` - linux; arm variant v6
+### `redis:5-alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:4a8cceff87821658eb72eda851ecf3160862cd525d2467ffb024052227ef608d
@@ -12750,7 +12750,7 @@ CMD ["redis-server"]
 		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5-alpine3.8` - linux; arm64 variant v8
+### `redis:5-alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:7094598dfbe9bc9c933c0584191a94076071fd7dd72b82355d3ad9872794ed82
@@ -12829,7 +12829,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5-alpine3.8` - linux; 386
+### `redis:5-alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:5700245b6141ead4e63534baa834c003ba9fd21c5d1ed56bfc701b41e81efcf3
@@ -12908,7 +12908,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5-alpine3.8` - linux; ppc64le
+### `redis:5-alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:00de2517846cf686af9683f6d6e82e18ea5121f7566818eb174b57910ec7dce1
@@ -12987,7 +12987,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:5-alpine3.8` - linux; s390x
+### `redis:5-alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:7daf6d4353bdc83306d8c4b34000578fd6ef0b3fdec23857572596b81ba6b0e8
@@ -14090,7 +14090,7 @@ CMD ["redis-server"]
 		Size: 411.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `redis:alpine3.8`
+## `redis:alpine3.9`
 
 ```console
 $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd79fa5456fe4
@@ -14105,7 +14105,7 @@ $ docker pull redis@sha256:504a6a2299701b3e11b54f3773bfbf10af5fbc47ba04d14a041fd
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `redis:alpine3.8` - linux; amd64
+### `redis:alpine3.9` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:30b9c268946d71f94016273f7718b5e5ac3627d59d97181c2c99371def995a15
@@ -14178,7 +14178,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:alpine3.8` - linux; arm variant v6
+### `redis:alpine3.9` - linux; arm variant v6
 
 ```console
 $ docker pull redis@sha256:4a8cceff87821658eb72eda851ecf3160862cd525d2467ffb024052227ef608d
@@ -14257,7 +14257,7 @@ CMD ["redis-server"]
 		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:alpine3.8` - linux; arm64 variant v8
+### `redis:alpine3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:7094598dfbe9bc9c933c0584191a94076071fd7dd72b82355d3ad9872794ed82
@@ -14336,7 +14336,7 @@ CMD ["redis-server"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:alpine3.8` - linux; 386
+### `redis:alpine3.9` - linux; 386
 
 ```console
 $ docker pull redis@sha256:5700245b6141ead4e63534baa834c003ba9fd21c5d1ed56bfc701b41e81efcf3
@@ -14415,7 +14415,7 @@ CMD ["redis-server"]
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:alpine3.8` - linux; ppc64le
+### `redis:alpine3.9` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:00de2517846cf686af9683f6d6e82e18ea5121f7566818eb174b57910ec7dce1
@@ -14494,7 +14494,7 @@ CMD ["redis-server"]
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `redis:alpine3.8` - linux; s390x
+### `redis:alpine3.9` - linux; s390x
 
 ```console
 $ docker pull redis@sha256:7daf6d4353bdc83306d8c4b34000578fd6ef0b3fdec23857572596b81ba6b0e8
