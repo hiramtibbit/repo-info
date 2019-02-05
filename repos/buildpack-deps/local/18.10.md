@@ -675,14 +675,9 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.dsc' e2fsprogs_1.44.4-2ubuntu0.1.dsc 2991 SHA256:1051b6e74f58090c9a692e27c1a04ebbc49ec51b925a461802c9faa812ffe0cb
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz' e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz 81492 SHA256:ee2dbd7294b4ffb7d6fa8f6e2da0184d914f14b707c924d204187e1e35e11fbe
-```
 
 ### `dpkg` source package: `elfutils=0.170-0.5.0ubuntu1`
 
@@ -2642,14 +2637,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.18.0-13.14
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-13.14.dsc' linux_4.18.0-13.14.dsc 8025 SHA256:4559a78b33cca4bde9f472b3b4f446a2a39150dc93437305c712cbd0700f3374
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-13.14.diff.gz' linux_4.18.0-13.14.diff.gz 7125506 SHA256:dd1cb7ab9e9b8e33fed0530e01cb82532c3a41c66f348cac77c64d6010232a6b
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 

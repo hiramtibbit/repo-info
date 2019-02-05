@@ -506,14 +506,9 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.dsc' e2fsprogs_1.44.4-2ubuntu0.1.dsc 2991 SHA256:1051b6e74f58090c9a692e27c1a04ebbc49ec51b925a461802c9faa812ffe0cb
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz' e2fsprogs_1.44.4-2ubuntu0.1.debian.tar.xz 81492 SHA256:ee2dbd7294b4ffb7d6fa8f6e2da0184d914f14b707c924d204187e1e35e11fbe
-```
 
 ### `dpkg` source package: `expat=2.2.6-1`
 
