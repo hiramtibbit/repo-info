@@ -643,21 +643,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.5-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.5-2.dsc' gnutls28_3.6.5-2.dsc 3322 SHA256:9aab02a920f032a25f3edc340c6b4472a2405d8a9e7f37bf189cf79f82a49904
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.5.orig.tar.xz' gnutls28_3.6.5.orig.tar.xz 8192888 SHA256:073eced3acef49a3883e69ffd5f0f0b5f46e2760ad86eddc6c0866df4e7abb35
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.5.orig.tar.xz.asc' gnutls28_3.6.5.orig.tar.xz.asc 534 SHA256:b7bcc0c18759d5e09b0792dd9f2d46d797e0898b1bf492e44acd9656a762101d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.5-2.debian.tar.xz' gnutls28_3.6.5-2.debian.tar.xz 66192 SHA256:9af7a623034ee1d63365018b54b8acd712143782ad7a3059f3f1656cd0a5d36a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.5-2/
 
-- https://sources.debian.net/src/gnutls28/3.6.5-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -1337,21 +1329,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.28.1-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-3.dsc' perl_5.28.1-3.dsc 2823 SHA256:f58dbac4eb5cf2bf112dc750a92a8bf4499c2d65ab18df465f068cc5f0e38be3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig-regen-configure.tar.xz' perl_5.28.1.orig-regen-configure.tar.xz 411944 SHA256:5873b81af4514d3910ab1a8267b15ff8c0e2100dbae4edfd10b65ef72cd31ef8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1.orig.tar.xz' perl_5.28.1.orig.tar.xz 12372080 SHA256:fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.28.1-3.debian.tar.xz' perl_5.28.1-3.debian.tar.xz 171304 SHA256:3d002ef47e9d6e5b978e96b109e2f1a25e2133a6ce30e58c33493633e655cf45
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.28.1-3/
 
-- https://sources.debian.net/src/perl/5.28.1-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.28.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.28.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
