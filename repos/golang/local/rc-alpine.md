@@ -1,10 +1,10 @@
-# `golang:1.12beta2-alpine3.8`
+# `golang:1.12beta2-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fd4de743eb96871d2e5d6f3b36df4ace8428e8df838011b35009eac44d0729f`
-- Created: `2019-01-30T22:45:40.531906657Z`
-- Virtual Size: ~ 345.58 Mb  
+- Image ID: `sha256:b2f3c65df432d064047b2f0922c7ea248ab937022002f733f08ab6d76d667eea`
+- Created: `2019-02-05T20:23:14.119664758Z`
+- Virtual Size: ~ 346.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
