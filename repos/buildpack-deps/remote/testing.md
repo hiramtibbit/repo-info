@@ -1,7 +1,7 @@
 ## `buildpack-deps:testing`
 
 ```console
-$ docker pull buildpack-deps@sha256:2efb802a01c5c70416f661cebdcdbedf245def6c5b13bb16fff889166f1ee168
+$ docker pull buildpack-deps@sha256:4bcfa0ca2f3f57b6224b027a6d548ae8c5cbf1f45da395a28b0f3b58f486899f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -317,49 +317,49 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:testing` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:d927d27dd5bf2207dd5270045eded17a1fa973bed9377cf65da5862b55029f9a
+$ docker pull buildpack-deps@sha256:a7147406e6140be1766ba428e7c9f25545310931a1b156dfa91db26932b552c3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285433012 bytes)**  
+-	Total Size: **292.7 MB (292720907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c44c946f993501bfdf899198a0b9c38233948a4676cedf300563fc555217a712`
+-	Image ID: `sha256:d83ade0d72ededda8e80c32dd3966e7cea59fe1588f7e1738681d2942be615d1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 23 Jan 2019 12:42:02 GMT
-ADD file:bdc76b22c07c260353373f1e6e8b3f6dc2a66dad82f632ef7e1280484a2879b2 in / 
-# Wed, 23 Jan 2019 12:42:02 GMT
+# Wed, 06 Feb 2019 12:41:58 GMT
+ADD file:e2a3cb384d018539bcbc5c806ff9335dfd5f0350d306c3ebc34b3b80372e0e90 in / 
+# Wed, 06 Feb 2019 12:41:58 GMT
 CMD ["bash"]
-# Wed, 23 Jan 2019 13:08:08 GMT
+# Wed, 06 Feb 2019 15:21:15 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 23 Jan 2019 13:08:25 GMT
+# Wed, 06 Feb 2019 15:21:22 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 23 Jan 2019 13:08:59 GMT
+# Wed, 06 Feb 2019 15:21:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 23 Jan 2019 13:10:47 GMT
+# Wed, 06 Feb 2019 15:23:10 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:1b09b57cead63b706408d9ab5b5693cc5c709c58b188ab8e5aa2e2bfb9adc7b7`  
-		Last Modified: Wed, 23 Jan 2019 12:47:18 GMT  
-		Size: 48.7 MB (48657839 bytes)  
+	-	`sha256:2c08b1e350860cec8128ec4b0b314d72bfdc79c79a17e6f55aa0c9cc1ec4abb6`  
+		Last Modified: Wed, 06 Feb 2019 12:45:15 GMT  
+		Size: 48.7 MB (48722687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1f391350ffa4c5d74a795d4316246a45e4d610bc5b0181d3eb4de34c55a8384`  
-		Last Modified: Wed, 23 Jan 2019 13:23:03 GMT  
-		Size: 7.4 MB (7384130 bytes)  
+	-	`sha256:7e42845847bfc11dbcc1afc9b8532e40621f4ecd46e80ccedd68d4c5d990ed8c`  
+		Last Modified: Wed, 06 Feb 2019 15:30:49 GMT  
+		Size: 7.3 MB (7342466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:062c2a675fb86c972a8374511aef4567344b13eaaa25a16ec178bb3767fbefd1`  
-		Last Modified: Wed, 23 Jan 2019 13:23:03 GMT  
-		Size: 9.9 MB (9854780 bytes)  
+	-	`sha256:fea60ade3a6734a2fdb20b80850c0c96661cb38d25c56c23ad746a426f795b29`  
+		Last Modified: Wed, 06 Feb 2019 15:30:49 GMT  
+		Size: 9.9 MB (9854550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50d54e29142dbc5f2e295ffb1f6f01c69b6e5cce3ffc08443ba986583e0bb58b`  
-		Last Modified: Wed, 23 Jan 2019 13:23:20 GMT  
-		Size: 51.3 MB (51296903 bytes)  
+	-	`sha256:f23add4d7f5e52883020cc6b30cfd18850b2e2f823fdb9b7b33f20cad00513cb`  
+		Last Modified: Wed, 06 Feb 2019 15:31:09 GMT  
+		Size: 53.5 MB (53469476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc858ea9fc9be38b808be21caacfd0e865a26419f386ab351c2e882d22baca0d`  
-		Last Modified: Wed, 23 Jan 2019 13:23:57 GMT  
-		Size: 168.2 MB (168239360 bytes)  
+	-	`sha256:11cc4767e696cbcc9a4a66d06cbfca1b67424c4d91ea71923650ee4bb8d68127`  
+		Last Modified: Wed, 06 Feb 2019 15:31:39 GMT  
+		Size: 173.3 MB (173331728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -13,7 +13,7 @@
 ## `orientdb:2.0.18`
 
 ```console
-$ docker pull orientdb@sha256:003dae350b9e6bcdff11951f8e6411c8e76960087adf7c05971cafd69b0975a3
+$ docker pull orientdb@sha256:5b3135db525e13b8677a1696a3dac8b0aa35288c61174f1ecb82bc2495d4d85c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,103 +23,103 @@ $ docker pull orientdb@sha256:003dae350b9e6bcdff11951f8e6411c8e76960087adf7c0597
 ### `orientdb:2.0.18` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:fbd3cc78a76ba95e5c79991b0dd2df24d3972347d82de5b0dab912678bbed0c2
+$ docker pull orientdb@sha256:4ccfb4ab8ee3b84768c912660acb6c6f46afc6136fce4d81ddd628914de68df0
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.0 MB (291983791 bytes)**  
+-	Total Size: **292.0 MB (291983139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e93bb88228f4719469b65da3c4a52f181640385ddbc3518407c074edc8fa00f`
+-	Image ID: `sha256:64458462f8aa71be120d1ef67ed29f2c3dbe8fd8079b7793c954eb0867871c57`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Tue, 22 Jan 2019 19:30:03 GMT
-ADD file:feb9fd29475961253e3449db036bbf56bf6f4d02f2df1202209e393a9e7e95f5 in / 
-# Tue, 22 Jan 2019 19:30:04 GMT
+# Wed, 06 Feb 2019 03:30:01 GMT
+ADD file:4fec879fdca802d6920b8981b409b19ded75aff693eaaba1ba4cf5ecb7594fdb in / 
+# Wed, 06 Feb 2019 03:30:02 GMT
 CMD ["bash"]
-# Tue, 22 Jan 2019 20:05:43 GMT
+# Wed, 06 Feb 2019 05:51:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 22 Jan 2019 20:05:48 GMT
+# Wed, 06 Feb 2019 05:51:14 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 22 Jan 2019 20:06:13 GMT
+# Wed, 06 Feb 2019 05:51:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 22 Jan 2019 21:11:42 GMT
+# Wed, 06 Feb 2019 08:24:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 22 Jan 2019 21:16:38 GMT
+# Wed, 06 Feb 2019 08:28:29 GMT
 ENV LANG=C.UTF-8
-# Tue, 22 Jan 2019 21:16:39 GMT
+# Wed, 06 Feb 2019 08:28:30 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 22 Jan 2019 21:16:40 GMT
+# Wed, 06 Feb 2019 08:28:31 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 22 Jan 2019 21:16:40 GMT
+# Wed, 06 Feb 2019 08:28:31 GMT
 ENV JAVA_HOME=/docker-java-home
-# Tue, 22 Jan 2019 21:16:41 GMT
+# Wed, 06 Feb 2019 08:28:31 GMT
 ENV JAVA_VERSION=8u181
-# Tue, 22 Jan 2019 21:16:41 GMT
+# Wed, 06 Feb 2019 08:28:31 GMT
 ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Tue, 22 Jan 2019 21:17:34 GMT
+# Wed, 06 Feb 2019 08:29:10 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 23 Jan 2019 07:07:09 GMT
+# Wed, 06 Feb 2019 16:29:32 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Wed, 23 Jan 2019 07:07:09 GMT
+# Wed, 06 Feb 2019 16:29:32 GMT
 ENV ORIENTDB_VERSION=2.0.18
-# Wed, 23 Jan 2019 07:07:09 GMT
+# Wed, 06 Feb 2019 16:29:32 GMT
 ENV ORIENTDB_DOWNLOAD_MD5=9e7b7e7b6d95795b188adb4e5898a1b8
-# Wed, 23 Jan 2019 07:07:09 GMT
+# Wed, 06 Feb 2019 16:29:33 GMT
 ENV ORIENTDB_DOWNLOAD_SHA1=f562794536bbf8ae2145f96153e58b1e5d9211b3
-# Wed, 23 Jan 2019 07:07:15 GMT
+# Wed, 06 Feb 2019 16:29:43 GMT
 RUN mkdir /orientdb &&   wget  "http://central.maven.org/maven2/com/orientechnologies/orientdb-community/$ORIENTDB_VERSION/orientdb-community-$ORIENTDB_VERSION.tar.gz"   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1  && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Wed, 23 Jan 2019 07:07:16 GMT
+# Wed, 06 Feb 2019 16:29:44 GMT
 ENV PATH=/orientdb/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Jan 2019 07:07:16 GMT
+# Wed, 06 Feb 2019 16:29:44 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Wed, 23 Jan 2019 07:07:16 GMT
+# Wed, 06 Feb 2019 16:29:44 GMT
 WORKDIR /orientdb
-# Wed, 23 Jan 2019 07:07:16 GMT
+# Wed, 06 Feb 2019 16:29:45 GMT
 EXPOSE 2424
-# Wed, 23 Jan 2019 07:07:17 GMT
+# Wed, 06 Feb 2019 16:29:45 GMT
 EXPOSE 2480
-# Wed, 23 Jan 2019 07:07:17 GMT
+# Wed, 06 Feb 2019 16:29:45 GMT
 CMD ["server.sh"]
 ```
 
 -	Layers:
-	-	`sha256:ab1fc7e4bf9195e554669fafa47f69befe22053d7100f5f7002cb9254a36f37c`  
-		Last Modified: Tue, 22 Jan 2019 19:36:49 GMT  
-		Size: 45.3 MB (45344749 bytes)  
+	-	`sha256:741437d97401b83849ccbfe4ed8964049b752081647d7f1ea8aea29d989f8968`  
+		Last Modified: Wed, 06 Feb 2019 03:35:41 GMT  
+		Size: 45.3 MB (45344292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35fba333ff5209042e8925a73f3cbabf00ba725257bdba38ec3b415e5d7e6cc7`  
-		Last Modified: Tue, 22 Jan 2019 20:13:11 GMT  
-		Size: 10.8 MB (10780995 bytes)  
+	-	`sha256:34d8874714d74b636739b8a52204650a664fca8ff9741dd66810f30196f103e2`  
+		Last Modified: Wed, 06 Feb 2019 06:01:57 GMT  
+		Size: 10.8 MB (10781099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0cb1fa13079687d5118e5cd7e3ce3c09dc483fa44f0577eca349de8d76e4e8c`  
-		Last Modified: Tue, 22 Jan 2019 20:13:09 GMT  
-		Size: 4.3 MB (4340040 bytes)  
+	-	`sha256:0a108aa2667933b852b8d003f97b344d014fcd7e06a0c0e6e04f2d6906738388`  
+		Last Modified: Wed, 06 Feb 2019 06:01:56 GMT  
+		Size: 4.3 MB (4340044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1dd648b5ade2bbdfe77fa94424b0314100b58fb5f6a98486538c2126e08e2f`  
-		Last Modified: Tue, 22 Jan 2019 20:13:28 GMT  
-		Size: 50.1 MB (50062800 bytes)  
+	-	`sha256:7f0334c36886bd4619e8d05ccf68003e53b0b6098b2166a216bd009dba678ed8`  
+		Last Modified: Wed, 06 Feb 2019 06:02:14 GMT  
+		Size: 50.1 MB (50063121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9f886e483d6dc67cd1f7c19ed3e45348f3b1af49fe9b5f40fdfca2043281b76`  
-		Last Modified: Tue, 22 Jan 2019 21:38:45 GMT  
-		Size: 892.4 KB (892370 bytes)  
+	-	`sha256:aa29d9cbdbf5eff98907d574c79da86d6123e841a32d7c285b723393b9865a92`  
+		Last Modified: Wed, 06 Feb 2019 08:50:45 GMT  
+		Size: 892.4 KB (892400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4346341d3c496637595bfdaad3837beba171fb2194b1abf1f5d0c898a2d2d477`  
-		Last Modified: Tue, 22 Jan 2019 21:41:18 GMT  
-		Size: 245.0 B  
+	-	`sha256:e54d29f744131db0b44cf31e1c59e6320b17d5127afe41ffc745e6400b2f97c5`  
+		Last Modified: Wed, 06 Feb 2019 08:53:17 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006f2208d67a691a10ab1deab2f6dfbf600f087b0f6df94f8dc6cde9fc3928fe`  
-		Last Modified: Tue, 22 Jan 2019 21:41:18 GMT  
-		Size: 130.0 B  
+	-	`sha256:eb5b24cf4e1f1b9b16619a147fafe74bf61004e00035c6f62c9f02b5a9885662`  
+		Last Modified: Wed, 06 Feb 2019 08:53:17 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb85cf26717dc607155f9ea8b38b0d89ca987fbfd5786b4639afc2062176fd10`  
-		Last Modified: Tue, 22 Jan 2019 21:41:51 GMT  
-		Size: 134.0 MB (133975924 bytes)  
+	-	`sha256:5edfd6c9b4758084121024a24ed4b3721c12387bdfb6a87c6efea3e9a090bd51`  
+		Last Modified: Wed, 06 Feb 2019 08:53:48 GMT  
+		Size: 134.0 MB (133975246 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbf04aa74db8bf4902afb168ab399f409faeca249d8c1dffd76778744d78fda1`  
-		Last Modified: Wed, 23 Jan 2019 07:07:52 GMT  
-		Size: 46.6 MB (46586538 bytes)  
+	-	`sha256:9eb050185599f8a57a6c0908f37c0c377864ffb2871d11773b403764dc84922e`  
+		Last Modified: Wed, 06 Feb 2019 16:30:20 GMT  
+		Size: 46.6 MB (46586558 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:2.1.25`
