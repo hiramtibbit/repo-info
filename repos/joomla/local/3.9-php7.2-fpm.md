@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13ed6c38add865bdf9fbae52db3827325e3f7e89fc571d1227d639bc31cdfc5c`
-- Created: `2019-01-23T11:27:10.926864586Z`
+- Image ID: `sha256:d3633f15fe49c56d64c5483f96d383f9ab3bcc53dcea27023897835cb8706a7f`
+- Created: `2019-02-06T00:14:25.164949624Z`
 - Virtual Size: ~ 412.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -116,20 +116,13 @@ Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
 - `Apache-2.0`
 - `CC0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris argon2=0~20171227-0.1
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/argon2/0~20171227-0.1/
 
-- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
-- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
