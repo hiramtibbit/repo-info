@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab30574bb7da6617b6cc6e2e90aa911a510ca251f30930cabf7162407f157058`
-- Created: `2019-01-30T23:26:59.494858326Z`
+- Image ID: `sha256:426cb80ccd6b5e67f553300fd5583b8d16adcb68ff2e1ae5d442306afef68ec6`
+- Created: `2019-02-06T06:54:31.983814317Z`
 - Virtual Size: ~ 185.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2103,15 +2103,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u8`
+### `dpkg` source package: `systemd=215-17+deb8u9`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u8`
-- `libudev1:amd64=215-17+deb8u8`
-- `systemd=215-17+deb8u8`
-- `systemd-sysv=215-17+deb8u8`
-- `udev=215-17+deb8u8`
+- `libsystemd0:amd64=215-17+deb8u9`
+- `libudev1:amd64=215-17+deb8u9`
+- `systemd=215-17+deb8u9`
+- `systemd-sysv=215-17+deb8u9`
+- `udev=215-17+deb8u9`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2122,13 +2122,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u9
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.dsc' systemd_215-17+deb8u9.dsc 3804 SHA256:2edc973d09ee17f8877e5a7fab4dfde77ce6304abcebcf0ef9d587d30441b452
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.debian.tar.xz' systemd_215-17+deb8u9.debian.tar.xz 244644 SHA256:6416de84422aae598a09f8652dcabe00c484e4ed7babcc8b595c8edf5fbd9fc1
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
