@@ -29,7 +29,15 @@
 -	[`influxdb:1.7`](#influxdb17)
 -	[`influxdb:1.7.3`](#influxdb173)
 -	[`influxdb:1.7.3-alpine`](#influxdb173-alpine)
+-	[`influxdb:1.7.3-data`](#influxdb173-data)
+-	[`influxdb:1.7.3-data-alpine`](#influxdb173-data-alpine)
+-	[`influxdb:1.7.3-meta`](#influxdb173-meta)
+-	[`influxdb:1.7.3-meta-alpine`](#influxdb173-meta-alpine)
 -	[`influxdb:1.7-alpine`](#influxdb17-alpine)
+-	[`influxdb:1.7-data`](#influxdb17-data)
+-	[`influxdb:1.7-data-alpine`](#influxdb17-data-alpine)
+-	[`influxdb:1.7-meta`](#influxdb17-meta)
+-	[`influxdb:1.7-meta-alpine`](#influxdb17-meta-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
 -	[`influxdb:data`](#influxdbdata)
 -	[`influxdb:data-alpine`](#influxdbdata-alpine)
@@ -3274,6 +3282,22 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:1.7.3-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7.3-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7.3-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7.3-meta-alpine`
+
+**does not exist** (yet?)
+
 ## `influxdb:1.7-alpine`
 
 ```console
@@ -3356,6 +3380,22 @@ CMD ["influxd"]
 		Last Modified: Thu, 31 Jan 2019 01:49:10 GMT  
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:1.7-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.7-meta-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:alpine`
 
