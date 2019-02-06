@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:757818d3b612fcafd27376d0804b2db6faf7ce81de58332b8623013528e6731a`
-- Created: `2019-01-23T07:55:43.162844032Z`
+- Image ID: `sha256:4cf3874b174554dcbb7aa0705d2262a5eb60625c0479e3568ea343304b289d78`
+- Created: `2019-02-06T16:58:46.788020089Z`
 - Virtual Size: ~ 223.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -211,23 +211,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
