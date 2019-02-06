@@ -1,7 +1,7 @@
 ## `buildpack-deps:bionic-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:ef776c8b08bcc81b38fcf8d3899d5ec00f703fcf51258b5ebe8f7d3e0b34630a
+$ docker pull buildpack-deps@sha256:8a04b0464e01ae8ee1d9bac487a5781d9543b1cdf64000b0701659f5fa136179
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -140,63 +140,63 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:bionic-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:78397afef40d147d772ed19a5f08ae4e7c523f5c049a6a7b6fae725afc4ed33c
+$ docker pull buildpack-deps@sha256:cd576d6bf054cb9f87736c87888bbec5075dd2124573ec3a14cbe9304357c65b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82841105 bytes)**  
+-	Total Size: **82.9 MB (82930068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f500c617fbfc537df58f67218264e7c8c4fab23a95ac0f1d9ebb52c4a714597`
+-	Image ID: `sha256:d79bbb9c48e8b84e13f88032555ba815d840ed13be00459142fc7a74ae4b4cc0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 29 Dec 2018 10:10:02 GMT
-ADD file:afc5edd7ca04112762b95f27d248d0332cf6a91c59d905995515f35caf9b3d8b in / 
-# Sat, 29 Dec 2018 10:10:05 GMT
+# Wed, 23 Jan 2019 10:05:18 GMT
+ADD file:3c285ba2ad56ad13d4eec8d69ea1acc907eda8e3a1d03ae6ad9ef3b4f56e0141 in / 
+# Wed, 23 Jan 2019 10:05:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 29 Dec 2018 10:10:08 GMT
+# Wed, 23 Jan 2019 10:05:24 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 10:10:26 GMT
+# Wed, 23 Jan 2019 10:05:27 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 29 Dec 2018 10:10:27 GMT
+# Wed, 23 Jan 2019 10:05:27 GMT
 CMD ["/bin/bash"]
-# Sat, 29 Dec 2018 10:56:42 GMT
+# Wed, 06 Feb 2019 09:40:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 29 Dec 2018 10:57:05 GMT
+# Wed, 06 Feb 2019 09:40:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 29 Dec 2018 10:58:13 GMT
+# Wed, 06 Feb 2019 09:41:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:df1ba8568c1c37591ee9da550c96037520aa40640e4d811ea4a9ff448180b921`  
-		Last Modified: Fri, 07 Dec 2018 23:46:22 GMT  
-		Size: 28.9 MB (28942366 bytes)  
+	-	`sha256:df873e76760c0ecfb038476448eddc15dec6cdd21b75b0416a47df2c8aba3236`  
+		Last Modified: Wed, 23 Jan 2019 10:09:46 GMT  
+		Size: 29.0 MB (29029766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f2f986b8a2715a54b27ed07fedc48acb6e87810ca9a1ab7b501b10c0ab4ae6b`  
-		Last Modified: Sat, 29 Dec 2018 10:13:31 GMT  
-		Size: 844.0 B  
+	-	`sha256:3a951c1487b9433013917e417d205310353d7dfab797a297a0c672f6a963cfa1`  
+		Last Modified: Wed, 23 Jan 2019 10:09:35 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ccfecef86fe20c786d8cd1e358bd0ac7e8d3eb5a1e9d8adc5f942376d3f35d`  
-		Last Modified: Sat, 29 Dec 2018 10:13:31 GMT  
-		Size: 495.0 B  
+	-	`sha256:be63a2d103f062f9fc411f29a626a07f76306f9959eee302679732205bbad8f2`  
+		Last Modified: Wed, 23 Jan 2019 10:09:35 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1595dd5aa204fc90df29a0011cd42441562b947a9f99136fb1122d75f67220b`  
-		Last Modified: Sat, 29 Dec 2018 10:13:31 GMT  
-		Size: 162.0 B  
+	-	`sha256:2234c9c6573c2005484152dbd91b419081429a30df062b4da6aa4783895b4f1d`  
+		Last Modified: Wed, 23 Jan 2019 10:09:35 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14430b61a4012b1203508f177ed12654711530a1c4196b0a2f3d03198877f23`  
-		Last Modified: Sat, 29 Dec 2018 12:56:11 GMT  
-		Size: 5.3 MB (5292714 bytes)  
+	-	`sha256:bea1acb8efe601efd5c508571a4fa1e74235cd44203b4f6864f8d9c4da689959`  
+		Last Modified: Wed, 06 Feb 2019 11:01:12 GMT  
+		Size: 5.3 MB (5292686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31d016508e2d6322f8a07b8b38c0c47f8ad7e29fcb814a0a640acd3acb035921`  
-		Last Modified: Sat, 29 Dec 2018 12:56:07 GMT  
-		Size: 2.7 MB (2720317 bytes)  
+	-	`sha256:764c023a9300862ffc8d23a2f73c7b505141d982c0a2d1b77712761532530dc8`  
+		Last Modified: Wed, 06 Feb 2019 11:01:11 GMT  
+		Size: 2.7 MB (2721101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9d4b158b92ee515636e6c1881d54d6a3f7907ed945de59e98fb0197f3a10c5d`  
-		Last Modified: Sat, 29 Dec 2018 12:59:03 GMT  
-		Size: 45.9 MB (45884207 bytes)  
+	-	`sha256:96acea673ef21e193ad1f4ad6258ac0d1dd82bca02a088ce5eee309cf6e97cb9`  
+		Last Modified: Wed, 06 Feb 2019 11:02:11 GMT  
+		Size: 45.9 MB (45885002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-scm` - linux; 386
