@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:acbe8a1aa2b3f6bfa4a34d25ccef40984aa67d988a1513db26fcc439b3b48c6b`
-- Created: `2019-01-23T01:53:05.655053317Z`
-- Virtual Size: ~ 804.38 Mb  
+- Image ID: `sha256:0dd8d8de9c07aeef3f847fdcc147d7e0fee473cf1ec5e01a07bce4b2706e4df3`
+- Created: `2019-02-06T06:38:02.364208823Z`
+- Virtual Size: ~ 804.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -397,23 +397,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -7164,18 +7170,18 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/qhull/2015.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/qhull/2015.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `qtbase-opensource-src=5.7.1+dfsg-3`
+### `dpkg` source package: `qtbase-opensource-src=5.7.1+dfsg-3+deb9u1`
 
 Binary Packages:
 
-- `libqt5core5a:amd64=5.7.1+dfsg-3+b1`
-- `libqt5dbus5:amd64=5.7.1+dfsg-3+b1`
-- `libqt5gui5:amd64=5.7.1+dfsg-3+b1`
-- `libqt5network5:amd64=5.7.1+dfsg-3+b1`
-- `libqt5opengl5:amd64=5.7.1+dfsg-3+b1`
-- `libqt5printsupport5:amd64=5.7.1+dfsg-3+b1`
-- `libqt5widgets5:amd64=5.7.1+dfsg-3+b1`
-- `qt5-gtk-platformtheme:amd64=5.7.1+dfsg-3+b1`
+- `libqt5core5a:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5dbus5:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5gui5:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5network5:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5opengl5:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5printsupport5:amd64=5.7.1+dfsg-3+deb9u1`
+- `libqt5widgets5:amd64=5.7.1+dfsg-3+deb9u1`
+- `qt5-gtk-platformtheme:amd64=5.7.1+dfsg-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libqt5core5a/copyright`, `/usr/share/doc/libqt5dbus5/copyright`, `/usr/share/doc/libqt5gui5/copyright`, `/usr/share/doc/libqt5network5/copyright`, `/usr/share/doc/libqt5opengl5/copyright`, `/usr/share/doc/libqt5printsupport5/copyright`, `/usr/share/doc/libqt5widgets5/copyright`, `/usr/share/doc/qt5-gtk-platformtheme/copyright`)
 
@@ -7207,17 +7213,17 @@ Licenses: (parsed from: `/usr/share/doc/libqt5core5a/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.7.1+dfsg-3
-'http://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg-3.dsc' qtbase-opensource-src_5.7.1+dfsg-3.dsc 4999 SHA256:83d56c48596a9ece418b3fdaedb525c41d57582e24ed286729aa2512bc5140f0
-'http://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.7.1+dfsg.orig.tar.xz 44783468 SHA256:030a28b1e4e769d5ec4ec980a063d596b1a54a019c281805439763819fa3b7f4
-'http://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg-3.debian.tar.xz' qtbase-opensource-src_5.7.1+dfsg-3.debian.tar.xz 216368 SHA256:5f41a2642227b376a51b47c29b11177626737d8ed033399be0f819a8a5421651
+$ apt-get source -qq --print-uris qtbase-opensource-src=5.7.1+dfsg-3+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg-3+deb9u1.dsc' qtbase-opensource-src_5.7.1+dfsg-3+deb9u1.dsc 5027 SHA256:586dd4485c624cec40cee498f25b6c5db2dd73c8f91de7c4092fd889c2dea4bd
+'http://security.debian.org/debian-security/pool/updates/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.7.1+dfsg.orig.tar.xz 44783468 SHA256:030a28b1e4e769d5ec4ec980a063d596b1a54a019c281805439763819fa3b7f4
+'http://security.debian.org/debian-security/pool/updates/main/q/qtbase-opensource-src/qtbase-opensource-src_5.7.1+dfsg-3+deb9u1.debian.tar.xz' qtbase-opensource-src_5.7.1+dfsg-3+deb9u1.debian.tar.xz 218780 SHA256:2ce5743dd534c6bb5323bb2bc69cad15fa5860242a72a130bf8c667f0d79ac13
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/qtbase-opensource-src/5.7.1+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/qtbase-opensource-src/5.7.1+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/qtbase-opensource-src/5.7.1+dfsg-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/qtbase-opensource-src/5.7.1+dfsg-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/qtbase-opensource-src/5.7.1+dfsg-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/qtbase-opensource-src/5.7.1+dfsg-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `qtsvg-opensource-src=5.7.1~20161021-2`
 
