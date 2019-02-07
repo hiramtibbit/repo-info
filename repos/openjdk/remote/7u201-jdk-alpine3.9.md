@@ -1,4 +1,4 @@
-## `openjdk:7-jdk-alpine3.9`
+## `openjdk:7u201-jdk-alpine3.9`
 
 ```console
 $ docker pull openjdk@sha256:b03be3fe6f745a59188a0451d690251e97ea01fadaad808f728926a916b90b9d
@@ -8,7 +8,7 @@ $ docker pull openjdk@sha256:b03be3fe6f745a59188a0451d690251e97ea01fadaad808f728
 -	Platforms:
 	-	linux; amd64
 
-### `openjdk:7-jdk-alpine3.9` - linux; amd64
+### `openjdk:7u201-jdk-alpine3.9` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:fa6354eb7f63578ced1d313a308a503047bcc29bdf57a47505b9bfc5df6c58bc
