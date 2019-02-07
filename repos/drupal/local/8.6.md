@@ -1,10 +1,10 @@
-# `drupal:8.6.7-apache`
+# `drupal:8.6.8-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62bf48d2b516129fce6102d71176230fdde24ddd6c1d27f1e813e7e197a68a01`
-- Created: `2019-01-23T11:53:33.058104702Z`
-- Virtual Size: ~ 445.94 Mb  
+- Image ID: `sha256:e56e0cabe8765d42b659c92a92980a96e580fb93a62ddf67638c4c64f2e6a28d`
+- Created: `2019-02-07T01:19:39.772703071Z`
+- Virtual Size: ~ 446.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -26,8 +26,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.14.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=ee3f1cc102b073578a3c53ba4420a76da3d9f0c981c02b1664ae741ca65af84f`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.6.7`
-  - `DRUPAL_MD5=cd3d0c9ad1d9e976eb589a963e427388`
+  - `DRUPAL_VERSION=8.6.8`
+  - `DRUPAL_MD5=5c8f5107e3831f6e6f55f17486dee5d2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -201,11 +201,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.9/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.9/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `argon2=0~20171227-0.1`
+### `dpkg` source package: `argon2=0~20171227-0.2`
 
 Binary Packages:
 
-- `libargon2-1:amd64=0~20171227-0.1`
+- `libargon2-1:amd64=0~20171227-0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
 
@@ -215,17 +215,17 @@ Licenses: (parsed from: `/usr/share/doc/libargon2-1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris argon2=0~20171227-0.1
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.dsc' argon2_0~20171227-0.1.dsc 2133 SHA256:f8718dbe958f577dcbcd3fffdc60f5681d74a4a5644192ae22301aed818041be
+$ apt-get source -qq --print-uris argon2=0~20171227-0.2
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.2.dsc' argon2_0~20171227-0.2.dsc 2108 SHA256:357d1e93318d7dd3bee401ee9cd92bd0f3ecaab3990013580a12306efda4ebf7
 'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227.orig.tar.gz' argon2_0~20171227.orig.tar.gz 1503745 SHA256:eaea0172c1f4ee4550d1b6c9ce01aab8d1ab66b4207776aa67991eb5872fdcd8
-'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.1.debian.tar.xz' argon2_0~20171227-0.1.debian.tar.xz 6640 SHA256:1dcc0cbc56beebd3db8beb7c9d4ae4680e9157efd5efe35c41ca3738fa51374a
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20171227-0.2.debian.tar.xz' argon2_0~20171227-0.2.debian.tar.xz 6932 SHA256:49e630c0027ebbe0b53e3e692ce99da750e9bdfeddcebf303e595b4af5a2142f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/argon2/0~20171227-0.1/ (for browsing the source)
-- https://sources.debian.net/src/argon2/0~20171227-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/argon2/0~20171227-0.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/argon2/0~20171227-0.2/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20171227-0.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20171227-0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -322,23 +322,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/autoconf/2.69-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/autoconf/2.69-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
