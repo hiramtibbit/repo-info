@@ -1,7 +1,7 @@
 ## `debian:wheezy-backports`
 
 ```console
-$ docker pull debian@sha256:ddeec445468ef31455012a284b81a5680080c316ad33f2c915f21c633dd01b95
+$ docker pull debian@sha256:c7bc84b5eb9ee20b992e37fcb28c4e76014cc9b11484beacee1c8441c62c4878
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,33 +78,33 @@ RUN echo 'deb http://deb.debian.org/debian wheezy-backports main' > /etc/apt/sou
 ### `debian:wheezy-backports` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:07c95e7fc49858519a9c5729fc7263b1f00371da131a4d90fb7fe6ab43a97a3b
+$ docker pull debian@sha256:902f3f00c67ccefa7847d363e698354d9c9cf6890cc76c22b44fd6ad632d13a7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.6 MB (36620228 bytes)**  
+-	Total Size: **36.6 MB (36620217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ba573b8cd2adf6d27c676db9773d6f36fbcd2937d6a5626f0d7163a272b28f7`
+-	Image ID: `sha256:5ea7be0954e4ab15c5e5d0dea5b92148d5ddb09f191795bf5d51ffad699acc6d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 23 Jan 2019 13:07:15 GMT
-ADD file:7d9aad6f799a97cd501266efa4ab42054317783776b828b81c34db3db1e5e1bb in / 
-# Wed, 23 Jan 2019 13:07:16 GMT
+# Thu, 07 Feb 2019 13:05:25 GMT
+ADD file:05857c02422fe7316ce1c897732369dfcd2216d72f38e7d23b05a87c84f00bda in / 
+# Thu, 07 Feb 2019 13:05:26 GMT
 CMD ["bash"]
-# Wed, 23 Jan 2019 13:07:23 GMT
+# Thu, 07 Feb 2019 13:05:31 GMT
 RUN echo 'deb http://deb.debian.org/debian wheezy-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:c65553b75dbe6d4ce3a95ea4c52c0cfe2e8c6ef00067b6527b4efece00329f55`  
-		Last Modified: Wed, 23 Jan 2019 13:13:43 GMT  
-		Size: 36.6 MB (36620004 bytes)  
+	-	`sha256:39aa05e112a663f159c176b484d3cebbd5ddc1396f57063aca1827314ffdabd8`  
+		Last Modified: Thu, 07 Feb 2019 02:15:23 GMT  
+		Size: 36.6 MB (36619990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:210acdf7c5c675af3e31bedc775353365c9a1b5fde9d78d276e054d0dde1de51`  
-		Last Modified: Wed, 23 Jan 2019 13:13:51 GMT  
-		Size: 224.0 B  
+	-	`sha256:1a6265aced5341f3b0fc1759be12a3736ff76c4f5537ca359aa49d690f289cd6`  
+		Last Modified: Thu, 07 Feb 2019 13:12:17 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:wheezy-backports` - linux; 386
