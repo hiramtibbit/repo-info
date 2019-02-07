@@ -1,9 +1,9 @@
-# `swift:4.2.1`
+# `swift:4.2.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:06ae47fb10d4f1103bfe38fbe3c89fb61bb81cd4383f6f092f65d77b4d15a8cc`
-- Created: `2019-01-23T09:58:01.855206813Z`
+- Image ID: `sha256:b1be62457679db3f6ddba3d4b494ba6a158ea1a10c41ae7d30a40f7c10ba347d`
+- Created: `2019-02-06T22:31:21.961195837Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_PLATFORM=ubuntu16.04`
-  - `SWIFT_BRANCH=swift-4.2.1-release`
-  - `SWIFT_VERSION=swift-4.2.1-RELEASE`
+  - `SWIFT_BRANCH=swift-4.2.2-release`
+  - `SWIFT_VERSION=swift-4.2.2-RELEASE`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -370,14 +370,14 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.12`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.11`
-- `libcurl3:amd64=7.47.0-1ubuntu2.11`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.11`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.11`
+- `curl=7.47.0-1ubuntu2.12`
+- `libcurl3:amd64=7.47.0-1ubuntu2.12`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.12`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -391,10 +391,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.11
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.dsc' curl_7.47.0-1ubuntu2.11.dsc 2733 SHA256:2e4e6c43849f942de7a023485e6389a3a2de717f1b116c93262f65549fd1ef3b
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.12.dsc' curl_7.47.0-1ubuntu2.12.dsc 2733 SHA256:b8116f68c766cb9a26c6569d728105257eef413d68b0357e5817ccabc57adaaa
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.debian.tar.xz' curl_7.47.0-1ubuntu2.11.debian.tar.xz 53460 SHA256:4d730a08036b5ed2945f400e313007e7d4cad41c1df10e1a762ab38df87d5964
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.12.debian.tar.xz' curl_7.47.0-1ubuntu2.12.debian.tar.xz 54708 SHA256:cb2eed19893dc48fa320216160b0fceba2488a6052d9c50f532feb3d26544946
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
@@ -1846,11 +1846,11 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-141.167`
+### `dpkg` source package: `linux=4.4.0-142.168`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-141.167`
+- `linux-libc-dev:amd64=4.4.0-142.168`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1860,10 +1860,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.4.0-141.167
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.dsc' linux_4.4.0-141.167.dsc 9418 SHA256:1a085a45b35803f398041288cd3c32e03a9354c56f04ae84dd2ae64daa922406
+$ apt-get source -qq --print-uris linux=4.4.0-142.168
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-142.168.dsc' linux_4.4.0-142.168.dsc 9418 SHA256:81789086c0b909f6bcec861245112695009d088edebeda3ed3b3452cb102dabc
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-141.167.diff.gz' linux_4.4.0-141.167.diff.gz 15018277 SHA256:67f5102684cbf455d7233dbc2c48b1db66bfba920ca082d56a358642d1770fd9
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-142.168.diff.gz' linux_4.4.0-142.168.diff.gz 15146882 SHA256:69748f28e1ffa6f8a43162941df46517dd392e00a75b560a2b0a4580bbc34554
 ```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
