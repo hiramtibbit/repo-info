@@ -1,9 +1,9 @@
-# `mysql:8.0.14`
+# `mysql:8.0.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:71b5c7e10f9b20f4bd37c348872899cac828b1d2edad269fc8b93c9d43682241`
-- Created: `2019-01-23T04:23:32.6027408Z`
+- Image ID: `sha256:81f094a7e4ccc963fde3762e86625af76b6339924bf13f1b7bd3c51dbcfda988`
+- Created: `2019-02-06T07:06:04.898919867Z`
 - Virtual Size: ~ 476.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MYSQL_MAJOR=8.0`
-  - `MYSQL_VERSION=8.0.14-1debian9`
+  - `MYSQL_VERSION=8.0.15-1debian9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -147,23 +147,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:2.6.7-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:2.6.7-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1326,22 +1332,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mecab/0.996-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mecab/0.996-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-community=8.0.14-1debian9`
+### `dpkg` source package: `mysql-community=8.0.15-1debian9`
 
 Binary Packages:
 
-- `mysql-common=8.0.14-1debian9`
-- `mysql-community-client=8.0.14-1debian9`
-- `mysql-community-client-core=8.0.14-1debian9`
-- `mysql-community-server-core=8.0.14-1debian9`
+- `mysql-common=8.0.15-1debian9`
+- `mysql-community-client=8.0.15-1debian9`
+- `mysql-community-client-core=8.0.15-1debian9`
+- `mysql-community-server-core=8.0.15-1debian9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-community=8.0.15-1debian9
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15-1debian9.dsc' mysql-community_8.0.15-1debian9.dsc 2352 SHA256:62fce45b27035ccdda8036c21090047c4289bf503cf7a0ddabd40f176046a6e8
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15.orig.tar.gz' mysql-community_8.0.15.orig.tar.gz 118026335 SHA256:bb1bca2dc2f23ee9dd395cc4db93b64561d4ac20b53be5d1dae563f7be64825e
+'http://repo.mysql.com/apt/debian/pool/mysql-8.0/m/mysql-community/mysql-community_8.0.15-1debian9.debian.tar.xz' mysql-community_8.0.15-1debian9.debian.tar.xz 19920 SHA256:79a2e340829304ab924116e19ed1702f1fb7a531fb4491e9bccf9e4a56c9a6b3
+```
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1+deb9u2`
 
