@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5ae0a6f6fdeee0d7f3b4f83267470dff9accca60fc9c11149ad71d6972db7a8`
-- Created: `2019-01-31T02:15:53.335411586Z`
+- Image ID: `sha256:07140bfde3165ce49ac76e2e0356ef7dffbb46dae44907f07b2dbd721355b96f`
+- Created: `2019-02-05T23:35:01.127443462Z`
 - Virtual Size: ~ 74.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,4 +11,4 @@
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.9.3`
+  - `TELEGRAF_VERSION=1.9.4`
