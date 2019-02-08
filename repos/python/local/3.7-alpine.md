@@ -1,10 +1,10 @@
-# `python:3.7.2-alpine3.8`
+# `python:3.7.2-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94b26fd26587259578a7489334c85e16bf4a9e08440c3286781783015a6c43d0`
-- Created: `2019-01-30T23:43:12.960099963Z`
-- Virtual Size: ~ 78.64 Mb  
+- Image ID: `sha256:6772938ddd9146358932e80d0e3833b9055914060e0102c1288f59553f2b9f46`
+- Created: `2019-02-06T01:49:14.451231183Z`
+- Virtual Size: ~ 86.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
