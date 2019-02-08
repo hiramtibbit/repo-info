@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88fdd57278f55051d262e76bb3b0cf997a4dc2bfaae6f52561f42ba0164e662e`
-- Created: `2019-01-22T22:43:31.731257156Z`
+- Image ID: `sha256:09798120c134df0f94baf1714aee5657c50762660615bff11135ff417e259438`
+- Created: `2019-02-06T03:38:01.87476046Z`
 - Virtual Size: ~ 73.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.117ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.117ubuntu1.tar.xz' adduser_3.117ubuntu1.tar.xz 217032 SHA256:b4843f5a0c29db24b9eae623db49028d00240a842b8d6bda8af13e5fb65f3e4d
 ```
 
-### `dpkg` source package: `apt=1.7.0ubuntu0.1`
+### `dpkg` source package: `apt=1.7.2`
 
 Binary Packages:
 
-- `apt=1.7.0ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.7.0ubuntu0.1`
+- `apt=1.7.2`
+- `libapt-pkg5.0:amd64=1.7.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.7.0ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.dsc' apt_1.7.0ubuntu0.1.dsc 2853 SHA256:88b19c0f2652ca2525413f6b35fbd411fe15f5017f901b1210d908379c23c8c5
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.tar.xz' apt_1.7.0ubuntu0.1.tar.xz 2152376 SHA256:d2edf8b79f016f36fc05cec6ea11c2adeadb9330051375e924a05e6fc1d2e6f6
+$ apt-get source -qq --print-uris apt=1.7.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.2.dsc' apt_1.7.2.dsc 2767 SHA256:7b8d0390509ff79dde83627e1681785ad26b1b8444aa72ac32db26e03545513c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.2.tar.xz' apt_1.7.2.tar.xz 2157440 SHA256:8c6b479f28d309d605bdfd98f111fcf52fe1249cee28f523f163e353f1423cbd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -1189,9 +1189,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=239-7ubuntu10.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.dsc' systemd_239-7ubuntu10.6.dsc 4666 SHA256:4e06257d9eba3d0a32342659d9865337bc625d762e685ddf640986e37de95e33
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.debian.tar.xz' systemd_239-7ubuntu10.6.debian.tar.xz 197064 SHA256:eaac621868bcaea3b8d8b6fad996ea6ea8b6c64d0c5597b52a20ec565245675d
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.dsc' systemd_239-7ubuntu10.6.dsc 4666 SHA256:4e06257d9eba3d0a32342659d9865337bc625d762e685ddf640986e37de95e33
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.debian.tar.xz' systemd_239-7ubuntu10.6.debian.tar.xz 197064 SHA256:eaac621868bcaea3b8d8b6fad996ea6ea8b6c64d0c5597b52a20ec565245675d
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
