@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3364aa924dd476f90f8a900f0e54ca33eb7b91a164bcbb276ac1e0e503ef3722`
-- Created: `2019-01-23T03:51:40.253489356Z`
+- Image ID: `sha256:3f82fa43e85a8d6508457f27412060afe7cc3994622055271c277a93631dbcfa`
+- Created: `2019-02-06T07:36:56.87766069Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -398,23 +398,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -6204,47 +6210,62 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-roman/2.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-roman/2.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-rosdep=0.14.0-1`
+### `dpkg` source package: `python-rosdep=0.15.0-1`
 
 Binary Packages:
 
-- `python-rosdep=0.14.0-1`
+- `python-rosdep=0.15.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdep=0.15.0-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.0-1.debian.tar.xz' python-rosdep_0.15.0-1.debian.tar.xz 1944 SHA512:b0dd950988a094efaef6f96eac70d95d4d2db7169d9c29bc9bbadedb459b73735e33f24e2d774f37d6f47d41d4c2be01157e5d8c1a35ff4232d6902526c2b805
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.0-1.dsc' python-rosdep_0.15.0-1.dsc 905 SHA512:e2dca17d2b6a2b65b32fdff2936973160347afd3ba2664ebf97fa6bc93e95acb030cb3647ab49c1ff09796e3394debe3062ce6576b702320ad6b011084a4fa00
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.15.0.orig.tar.gz' python-rosdep_0.15.0.orig.tar.gz 80112 SHA512:dc7c53a56bf387087125c0e3bede35119f6255d4b47ec641063d9a9b3ebdafbb3ec6395e78a36bf7e69dfca7060c8d7edaaad149d85f41e59788bb68d07cb4ae
+```
 
-### `dpkg` source package: `python-rosdistro-modules=0.7.1-1`
+### `dpkg` source package: `python-rosdistro-modules=0.7.2-1`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.7.1-1`
+- `python-rosdistro-modules=0.7.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro-modules=0.7.2-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.7.2-1.debian.tar.xz' python-rosdistro-modules_0.7.2-1.debian.tar.xz 1904 SHA512:d344da8bc62bf33cad5e5f90b66e99a3ffbd6cfc33cad409dcc06bbd06397ddc2ab9b891b0e221dea9253d1891f233eb211663994b85e951fe4331d017d0b9af
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.7.2-1.dsc' python-rosdistro-modules_0.7.2-1.dsc 1033 SHA512:b11ce32447325f15f608502c917b1ee5e809c44ac86af178cf7d4f3b3de933960c23d1a051a5c7c05e4fd9cc65306591f25835af65549b757e16c6c23066a1e4
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.7.2.orig.tar.gz' python-rosdistro-modules_0.7.2.orig.tar.gz 41564 SHA512:f81626e8cafdd1a42569edb389eb73a8546c022933a01bbce6c582a90afbcaf65ac2d4f7162859b683af13636f59f3fef1a019eec24a33fdf1d165d5b6a3ae87
+```
 
-### `dpkg` source package: `python-rosdistro=0.7.1-100`
+### `dpkg` source package: `python-rosdistro=0.7.2-100`
 
 Binary Packages:
 
-- `python-rosdistro=0.7.1-100`
+- `python-rosdistro=0.7.2-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro=0.7.2-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.7.2-100.debian.tar.xz' python-rosdistro_0.7.2-100.debian.tar.xz 1892 SHA512:596f7ecdbba9b3f2215e81fe93fc85699612e8eeb8341cc069ace336d359f3c47e07a08540125a030176a28a01363737cf94fecf0fb34cd0ba07a6c86e045a92
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.7.2-100.dsc' python-rosdistro_0.7.2-100.dsc 969 SHA512:fbfffab98a40d4b5e9494ab0a4f60657df71d09c2810313d8b29be8269bd3d3937b91ab7ce3d034b2de6c5fd67093a5c003c0c9f27dc2749bc65cd88ad9f4124
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.7.2.orig.tar.gz' python-rosdistro_0.7.2.orig.tar.gz 10043 SHA512:2a4fb9f500a2ed9b987640df3659b439970841a3730daa11a568416e3236c3e43cc69e4b9cd05e13d98126fbf766b88364f36a138ef5d110fe9e44d66569944e
+```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 

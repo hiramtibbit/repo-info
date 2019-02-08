@@ -803,14 +803,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.dsc' curl_7.35.0-1ubuntu2.19.dsc 2755 SHA256:6dd7a0398bf7671ea623fdf08f7723e565bff65266000d06aa1d16d2cff78c6d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.debian.tar.gz' curl_7.35.0-1ubuntu2.19.debian.tar.gz 78629 SHA256:ea501ac4f7b33b1b77a4df806716dbd9e93d28792019bd52c50757c7a9529e92
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -2150,14 +2145,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-7ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.7.dsc' libarchive_3.1.2-7ubuntu2.7.dsc 2396 SHA256:3fa41bc945ebdc4352c704812950c5c9688c44a4b6792502c3adaafe1eb87652
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.7.debian.tar.gz' libarchive_3.1.2-7ubuntu2.7.debian.tar.gz 53201 SHA256:ecff84602ca7303656f0607f280235d628d4e7abaf3feb4c16c528f6e7acf8c7
-```
 
 ### `dpkg` source package: `libassuan=2.1.1-1ubuntu1`
 
