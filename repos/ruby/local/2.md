@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bacc024fb239019c6be6a1cc2f43f3a9ab945db1383836087bb8a937ce85829c`
-- Created: `2019-02-02T00:22:30.006539334Z`
+- Image ID: `sha256:ae96a4ad4f3f96408456cc1785c1614dfbff38b550e2e6ec29f8c27c72540820`
+- Created: `2019-02-06T11:33:53.59967676Z`
 - Virtual Size: ~ 867.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -351,23 +351,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u6`
+### `dpkg` source package: `base-files=9.9+deb9u7`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u6`
+- `base-files=9.9+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=9.9+deb9u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
+```
 
-- http://snapshot.debian.org/package/base-files/9.9+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -2685,11 +2691,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt20/1.7.6-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgd2=2.2.4-2+deb9u3`
+### `dpkg` source package: `libgd2=2.2.4-2+deb9u4`
 
 Binary Packages:
 
-- `libgd3:amd64=2.2.4-2+deb9u3`
+- `libgd3:amd64=2.2.4-2+deb9u4`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2708,17 +2714,17 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u3
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2+deb9u3.dsc' libgd2_2.2.4-2+deb9u3.dsc 2191 SHA256:4ebd725cf172ad2763c4ba941222d52e4964ef01798f63f1c796ac4bbf4a5133
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2+deb9u3.debian.tar.xz' libgd2_2.2.4-2+deb9u3.debian.tar.xz 28228 SHA256:f8b7476962a8f41b3fb837ece03544895dac86a44aae3a8c614ef2948d05528f
+$ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u4.dsc' libgd2_2.2.4-2+deb9u4.dsc 2346 SHA256:10d21c630e27d5984d71ee8c9df57431438f4f9198975d27070f36f4b3bb1351
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u4.debian.tar.xz' libgd2_2.2.4-2+deb9u4.debian.tar.xz 30244 SHA256:99207705ac51c2e6ec915987531feadfbd5ab3fabd6c97998501d866443f88ef
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgd2/2.2.4-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgd2/2.2.4-2+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
