@@ -1,10 +1,10 @@
-# `openjdk:12-ea-29-jdk-alpine3.8`
+# `openjdk:12-ea-29-jdk-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8bd3b215205892a88ff655bf111e5e02343957f2c8a0174eda639030eb27627`
-- Created: `2019-01-31T02:41:48.194858854Z`
-- Virtual Size: ~ 337.74 Mb  
+- Image ID: `sha256:0c68e7c5b7a0cb1612ea7b14c460d1f165ae7250b8aa7a0e5e53ae6cdc846310`
+- Created: `2019-02-05T20:38:42.767744425Z`
+- Virtual Size: ~ 338.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
