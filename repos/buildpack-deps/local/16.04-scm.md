@@ -381,14 +381,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.11
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.dsc' curl_7.47.0-1ubuntu2.11.dsc 2733 SHA256:2e4e6c43849f942de7a023485e6389a3a2de717f1b116c93262f65549fd1ef3b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.11.debian.tar.xz' curl_7.47.0-1ubuntu2.11.debian.tar.xz 53460 SHA256:4d730a08036b5ed2945f400e313007e7d4cad41c1df10e1a762ab38df87d5964
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.1`
 
@@ -1542,14 +1537,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.6.dsc' openssh_7.2p2-4ubuntu2.6.dsc 2894 SHA256:5a897c8da1416b0aa1e5f15c8b020c57ba6594e8b7a206433a62f98dc4a630bd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.6.debian.tar.xz' openssh_7.2p2-4ubuntu2.6.debian.tar.xz 167708 SHA256:afecae5dabeb03c7ed9cbb493f649aab23b64d34f4799a0443c922d4b91f532e
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.14`
 

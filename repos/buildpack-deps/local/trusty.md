@@ -646,14 +646,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.dsc' curl_7.35.0-1ubuntu2.19.dsc 2755 SHA256:6dd7a0398bf7671ea623fdf08f7723e565bff65266000d06aa1d16d2cff78c6d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.19.debian.tar.gz' curl_7.35.0-1ubuntu2.19.debian.tar.gz 78629 SHA256:ea501ac4f7b33b1b77a4df806716dbd9e93d28792019bd52c50757c7a9529e92
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -3942,14 +3937,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.11.dsc' openssh_6.6p1-2ubuntu2.11.dsc 2724 SHA256:de41845fae085e9b769b85f8787aa1a144a1d9cc5892827f6a7b912b93d0f53c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1.orig.tar.gz' openssh_6.6p1.orig.tar.gz 1282502 SHA256:48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.11.debian.tar.gz' openssh_6.6p1-2ubuntu2.11.debian.tar.gz 203270 SHA256:195e111e4580828297c45a537de99d488a45e659899b2040a889c98c4ab3f133
-```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.27`
 

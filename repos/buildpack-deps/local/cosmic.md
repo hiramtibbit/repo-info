@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0faae764f3e46965d8c500ef3a30d7b8e071ab60f58cb620f96de08229040a6c`
-- Created: `2019-01-23T08:48:21.425390072Z`
-- Virtual Size: ~ 644.85 Mb  
+- Image ID: `sha256:b188a85da9c9fad8717562cfda1c6588829f24ae8b2c74e04610b57d1aae3d08`
+- Created: `2019-02-06T05:36:34.794468341Z`
+- Virtual Size: ~ 644.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -91,12 +91,12 @@ $ apt-get source -qq --print-uris apr=1.6.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-3.debian.tar.xz' apr_1.6.3-3.debian.tar.xz 213292 SHA256:0966c89da8e186bafcd15aa65c77e153549025a1efbe1005ca9a54b77a0b7315
 ```
 
-### `dpkg` source package: `apt=1.7.0ubuntu0.1`
+### `dpkg` source package: `apt=1.7.2`
 
 Binary Packages:
 
-- `apt=1.7.0ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.7.0ubuntu0.1`
+- `apt=1.7.2`
+- `libapt-pkg5.0:amd64=1.7.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -106,9 +106,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.7.0ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.dsc' apt_1.7.0ubuntu0.1.dsc 2853 SHA256:88b19c0f2652ca2525413f6b35fbd411fe15f5017f901b1210d908379c23c8c5
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.0ubuntu0.1.tar.xz' apt_1.7.0ubuntu0.1.tar.xz 2152376 SHA256:d2edf8b79f016f36fc05cec6ea11c2adeadb9330051375e924a05e6fc1d2e6f6
+$ apt-get source -qq --print-uris apt=1.7.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.2.dsc' apt_1.7.2.dsc 2767 SHA256:7b8d0390509ff79dde83627e1681785ad26b1b8444aa72ac32db26e03545513c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.7.2.tar.xz' apt_1.7.2.tar.xz 2157440 SHA256:8c6b479f28d309d605bdfd98f111fcf52fe1249cee28f523f163e353f1423cbd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -471,14 +471,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.61.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.2.dsc' curl_7.61.0-1ubuntu2.2.dsc 2777 SHA256:eb92ba5348d28ebee8ae5a5544f1d414e5d92467b314fc0a034eeb6f1dd5e168
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0.orig.tar.gz' curl_7.61.0.orig.tar.gz 3964862 SHA256:64141f0db4945268a21b490d58806b97c615d3d0c75bf8c335bbe0efd13b45b5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.2.debian.tar.xz' curl_7.61.0-1ubuntu2.2.debian.tar.xz 30192 SHA256:5df3a639bae8576f19fe24e5eb6382f7dc0bc827f75b7ba28b4c8dabe51d6707
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -664,13 +659,11 @@ $ apt-get source -qq --print-uris dpkg=1.19.0.5ubuntu5
 
 Binary Packages:
 
-- `comerr-dev:amd64=2.1-1.44.4-2ubuntu0.1`
 - `e2fsprogs=1.44.4-2ubuntu0.1`
-- `libcom-err2:amd64=1.44.4-2ubuntu0.1`
 - `libext2fs2:amd64=1.44.4-2ubuntu0.1`
 - `libss2:amd64=1.44.4-2ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
@@ -678,6 +671,27 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `e2fsprogs=1.44.4-2ubuntu0.2`
+
+Binary Packages:
+
+- `comerr-dev:amd64=2.1-1.44.4-2ubuntu0.2`
+- `libcom-err2:amd64=1.44.4-2ubuntu0.2`
+
+Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/libcom-err2/copyright`)
+
+- `GPL-2`
+- `LGPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris e2fsprogs=1.44.4-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.2.dsc' e2fsprogs_1.44.4-2ubuntu0.2.dsc 2954 SHA256:b14355ba4f9cc6b7b8a37af1c7321772040a15064a30a726136656cd5f7e31c2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4.orig.tar.gz' e2fsprogs_1.44.4.orig.tar.gz 7596925 SHA256:dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.4-2ubuntu0.2.debian.tar.xz' e2fsprogs_1.44.4-2ubuntu0.2.debian.tar.xz 82568 SHA256:2d2f61e20d5ffb373d2b3fe6b589aa046b42bc7bf9f149713668e6ca33a535fd
+```
 
 ### `dpkg` source package: `elfutils=0.170-0.5.0ubuntu1`
 
@@ -2627,11 +2641,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.5+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.5+dfsg-1ubuntu1.debian.tar.xz' libzstd_1.3.5+dfsg-1ubuntu1.debian.tar.xz 10168 SHA256:df4e52b4b4a4eafe2766e1f4c56278f497edd719dc737f68c67f303b12d5711e
 ```
 
-### `dpkg` source package: `linux=4.18.0-13.14`
+### `dpkg` source package: `linux=4.18.0-14.15`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.18.0-13.14`
+- `linux-libc-dev:amd64=4.18.0-14.15`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2862,12 +2876,12 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.24-0ubuntu0.18.10.1`
+### `dpkg` source package: `mysql-5.7=5.7.25-0ubuntu0.18.10.2`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.24-0ubuntu0.18.10.1`
-- `libmysqlclient20:amd64=5.7.24-0ubuntu0.18.10.1`
+- `libmysqlclient-dev=5.7.25-0ubuntu0.18.10.2`
+- `libmysqlclient20:amd64=5.7.25-0ubuntu0.18.10.2`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -2885,9 +2899,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.25-0ubuntu0.18.10.2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25-0ubuntu0.18.10.2.dsc' mysql-5.7_5.7.25-0ubuntu0.18.10.2.dsc 3368 SHA256:3392096c6bed28d92201184093fe9c6b0cc65cf31a09aa3102872a5c42127453
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25.orig.tar.gz' mysql-5.7_5.7.25.orig.tar.gz 49107578 SHA256:354c427c8679c6a4774f60723ea211e54b4383307764d240940f960d110bf5cf
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.25-0ubuntu0.18.10.2.debian.tar.xz' mysql-5.7_5.7.25-0ubuntu0.18.10.2.debian.tar.xz 158388 SHA256:6008085f63f0c9591c08934deb57e887bd1d909f1e62042d8668b3f8fd84f60a
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -3087,14 +3106,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.7p1-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.7p1-4ubuntu0.1.dsc' openssh_7.7p1-4ubuntu0.1.dsc 2913 SHA256:74d8625ccd0c2556bfe0b78b5ce29ef93283d4c841affcb0b4a13fcd47b15a9f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.7p1.orig.tar.gz' openssh_7.7p1.orig.tar.gz 1536900 SHA256:d73be7e684e99efcd024be15a30bffcbe41b012b2f7b3c9084aed621775e6b8f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.7p1-4ubuntu0.1.debian.tar.xz' openssh_7.7p1-4ubuntu0.1.debian.tar.xz 161144 SHA256:c4c34786918d05324d531e86b455b5c0316843358d35c3595241fe0c9a12650a
-```
 
 ### `dpkg` source package: `openssl1.0=1.0.2n-1ubuntu6.1`
 
@@ -3745,12 +3759,12 @@ $ apt-get source -qq --print-uris sqlite3=3.24.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.24.0-1.debian.tar.xz' sqlite3_3.24.0-1.debian.tar.xz 17564 SHA256:7e47447f9e1bfbfd05d63e0e3dbf8b3760a6347d0c50f17c3fb25261207dd9a2
 ```
 
-### `dpkg` source package: `subversion=1.10.0-2ubuntu2`
+### `dpkg` source package: `subversion=1.10.0-2ubuntu2.1`
 
 Binary Packages:
 
-- `libsvn1:amd64=1.10.0-2ubuntu2`
-- `subversion=1.10.0-2ubuntu2`
+- `libsvn1:amd64=1.10.0-2ubuntu2.1`
+- `subversion=1.10.0-2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subversion/copyright`)
 
@@ -3761,11 +3775,11 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 Source:
 
 ```console
-$ apt-get source -qq --print-uris subversion=1.10.0-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0-2ubuntu2.dsc' subversion_1.10.0-2ubuntu2.dsc 3463 SHA256:6edb4c83427d74dbbd3bac9b7d12fe39c1f48ca2abb169fecb6db100e579e0e3
+$ apt-get source -qq --print-uris subversion=1.10.0-2ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0-2ubuntu2.1.dsc' subversion_1.10.0-2ubuntu2.1.dsc 3430 SHA256:612d0d5db42048da3c41999fd3b9c3a5c04abbd23be93526061c607e3a04ee50
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0.orig.tar.gz' subversion_1.10.0.orig.tar.gz 11338093 SHA256:6c736a8187a195020e181fa1a680847db8373d07401ceb766160e6e39437a9e9
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0.orig.tar.gz.asc' subversion_1.10.0.orig.tar.gz.asc 3428 SHA256:687db774e6b93fcee8b6213627b306e2c62b00aee5855feac6e508044cad966f
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0-2ubuntu2.debian.tar.xz' subversion_1.10.0-2ubuntu2.debian.tar.xz 2407232 SHA256:8b5234a49c7446a5a13dd95d12a6a044aa28b53d0753f77a98ee3e8ddf712acc
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0-2ubuntu2.1.debian.tar.xz' subversion_1.10.0-2ubuntu2.1.debian.tar.xz 2407400 SHA256:e8906a9151d6f64fc1c937d60b2a48b9390ae2e7f6d34ea183d88b57f1126b04
 ```
 
 ### `dpkg` source package: `systemd=239-7ubuntu10.6`
@@ -3789,9 +3803,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=239-7ubuntu10.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.dsc' systemd_239-7ubuntu10.6.dsc 4666 SHA256:4e06257d9eba3d0a32342659d9865337bc625d762e685ddf640986e37de95e33
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.debian.tar.xz' systemd_239-7ubuntu10.6.debian.tar.xz 197064 SHA256:eaac621868bcaea3b8d8b6fad996ea6ea8b6c64d0c5597b52a20ec565245675d
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.dsc' systemd_239-7ubuntu10.6.dsc 4666 SHA256:4e06257d9eba3d0a32342659d9865337bc625d762e685ddf640986e37de95e33
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239.orig.tar.gz' systemd_239.orig.tar.gz 7157293 SHA256:8a11b1b07d620f4c06a16e95bba4dd2a97e90efdf2a5ba47ed0a935085787a14
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_239-7ubuntu10.6.debian.tar.xz' systemd_239-7ubuntu10.6.debian.tar.xz 197064 SHA256:eaac621868bcaea3b8d8b6fad996ea6ea8b6c64d0c5597b52a20ec565245675d
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
