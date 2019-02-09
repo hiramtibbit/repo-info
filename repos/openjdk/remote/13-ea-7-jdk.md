@@ -1,4 +1,4 @@
-## `openjdk:13-ea`
+## `openjdk:13-ea-7-jdk`
 
 ```console
 $ docker pull openjdk@sha256:5d3b85699ef9ae18770effa6f3158d7dbbe064adb6d1c2bae4f88465bce29baf
@@ -8,7 +8,7 @@ $ docker pull openjdk@sha256:5d3b85699ef9ae18770effa6f3158d7dbbe064adb6d1c2bae4f
 -	Platforms:
 	-	linux; amd64
 
-### `openjdk:13-ea` - linux; amd64
+### `openjdk:13-ea-7-jdk` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:3f9fc66f18364180856babc05ad6fabc5f864d2c67267d06bc166cfd819e5045
