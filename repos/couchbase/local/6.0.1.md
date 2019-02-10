@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08c927f8524a28fb8b76f369a89b2570eb6b92ba5b758dc1a87c6cf5256bf0cc`
-- Created: `2019-01-23T09:09:50.407831854Z`
-- Virtual Size: ~ 810.13 Mb  
+- Image ID: `sha256:5403ed5c6ef4713b4d84bee3b77506331a3b6adfea543e0a5d15099b4838331a`
+- Created: `2019-02-08T00:20:39.535156804Z`
+- Virtual Size: ~ 939.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -287,11 +287,11 @@ $ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
-### `dpkg` source package: `couchbase-server=6.0.0-1693-1`
+### `dpkg` source package: `couchbase-server=6.0.1-2037-1`
 
 Binary Packages:
 
-- `couchbase-server=6.0.0-1693-1`
+- `couchbase-server=6.0.1-2037-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
