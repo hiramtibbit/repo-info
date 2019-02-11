@@ -2575,14 +2575,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-11ubuntu0.16.04.5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.5.dsc' libarchive_3.1.2-11ubuntu0.16.04.5.dsc 2422 SHA256:d4c428c4a966a3e9dbedcc3185d83fefdcc1fef19663614b61f32c08533af343
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.5.debian.tar.xz' libarchive_3.1.2-11ubuntu0.16.04.5.debian.tar.xz 43416 SHA256:a04783bb19823dcadbfb86abf8a2b0c0bf5f2cce7da458e25bd276c77c5637e4
-```
 
 ### `dpkg` source package: `libass=0.13.1-1`
 
