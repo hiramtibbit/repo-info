@@ -182,13 +182,9 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.45
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.45.dsc' base-passwd_3.5.45.dsc 1651 SHA256:c5702c8c0fd5f2240d0fad07f1c03cdff86ea9370e80129c7258c40fa12015b9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.45.tar.xz' base-passwd_3.5.45.tar.xz 52748 SHA256:8cd6a713c400cf52f437e5cb14fcec59b0c77d4003a9a4f56526ef27f28ce1fe
-```
 
 ### `dpkg` source package: `bash=5.0-2ubuntu1`
 
@@ -571,14 +567,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.2.0-15ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-15ubuntu1.dsc' gcc-8_8.2.0-15ubuntu1.dsc 36385 SHA256:d67bf0999db5f07f5b6ec12c78463a83c0be040a3b51bd82390809c81762d15f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0.orig.tar.gz' gcc-8_8.2.0.orig.tar.gz 75164400 SHA256:e1009caeec1d024f278de02238d3a558bc23b0cd3ae08c885c36fe5a44b3269d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.2.0-15ubuntu1.diff.gz' gcc-8_8.2.0-15ubuntu1.diff.gz 4551002 SHA256:0f54caa077af2f3188796dc8c3704d5c2fe0ea7f8ff670813926f27e3c6127d4
-```
 
 ### `dpkg` source package: `gdbm=1.18.1-2build1`
 
@@ -1027,14 +1018,9 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17027-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17027-1.dsc' liberror-perl_0.17027-1.dsc 2209 SHA256:28bccf9e1439f16406eeb72c77d53664d05759da712614abac8d499c037c9197
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17027.orig.tar.gz' liberror-perl_0.17027.orig.tar.gz 33260 SHA256:07b2ac8275dfa04144745a6c1900a596280f862b97d22bab0c5ce02682ebd3be
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17027-1.debian.tar.xz' liberror-perl_0.17027-1.debian.tar.xz 4788 SHA256:a183e0f2d015ebc97691773f52253786ee085af457a8f96004e59e7c2821982c
-```
 
 ### `dpkg` source package: `libffi=3.2.1-9`
 
@@ -1258,14 +1244,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.8.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-2.dsc' libssh_0.8.6-2.dsc 2426 SHA256:8a2b44e5f0565113ed7ffaa5202016ea39adb3cd2f864486514594c3208864d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6.orig.tar.xz' libssh_0.8.6.orig.tar.xz 433680 SHA256:1046b95632a07fc00b1ea70ee683072d0c8a23f544f4535440b727812002fd01
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-2.debian.tar.xz' libssh_0.8.6-2.debian.tar.xz 27024 SHA256:e1aa70c93ba8dcc07448db2578a1e99eb143c80f4cb100a73e0701bf824a9ca7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libssh/0.8.6-2/
+
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
 
@@ -1600,15 +1585,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.9p1-5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1-5.dsc' openssh_7.9p1-5.dsc 3161 SHA256:44303f4d41790bcc973ef1c5c8b70ed78fbcbfeed9f356e2c1d3b656ffeaf0f6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz' openssh_7.9p1.orig.tar.gz 1565384 SHA256:6b4b3ba2253d84ed3771c8050728d597c91cfce898713beb7b64a305b6f11aad
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1.orig.tar.gz.asc' openssh_7.9p1.orig.tar.gz.asc 683 SHA256:4fd584498595450d68f5514b3d79eb14425a3d6aa9e9021d9e928fdd7b4469eb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.9p1-5.debian.tar.xz' openssh_7.9p1-5.debian.tar.xz 164044 SHA256:f2fb52ee1d4c31d36ff985d1abb297d0640fc3a8919cac7495d4cf9265e63ce6
-```
 
 ### `dpkg` source package: `openssl=1.1.1a-1ubuntu2`
 
