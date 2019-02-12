@@ -1,7 +1,7 @@
 ## `python:2-stretch`
 
 ```console
-$ docker pull python@sha256:da38d345a66855289c2f493e6ff506eee9ab71fb8869d9307830d8f620b6585d
+$ docker pull python@sha256:24072549383bb1d1d92721ffff72f0d6a87c784ea029413a3bdba940d05ba481
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull python@sha256:da38d345a66855289c2f493e6ff506eee9ab71fb8869d9307830
 ### `python:2-stretch` - linux; amd64
 
 ```console
-$ docker pull python@sha256:2bd09c4dfb46eafec64145cf1c54da50bc592df470a3d07c9af08b828f79dd0d
+$ docker pull python@sha256:430e6a803329731938cc3cda8fb84a82a1971afb7e6b7ed559687516e0905266
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.9 MB (351919919 bytes)**  
+-	Total Size: **351.9 MB (351929455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:993072fdd9f890839d47476f8a0aaf379c3e8dc6a224ff8f7eeea5532a417eb5`
+-	Image ID: `sha256:0313c3892dbc11c7052ada5f605a652de1ef5ca7d730baefc29e7d47b9b13ac6`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -54,13 +54,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.15
 # Wed, 06 Feb 2019 12:37:34 GMT
 RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Wed, 06 Feb 2019 12:37:34 GMT
-ENV PYTHON_PIP_VERSION=19.0.1
-# Wed, 06 Feb 2019 12:37:43 GMT
+# Tue, 12 Feb 2019 21:49:50 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Tue, 12 Feb 2019 21:49:55 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 06 Feb 2019 12:37:48 GMT
+# Tue, 12 Feb 2019 21:49:58 GMT
 RUN pip install --no-cache-dir virtualenv
-# Wed, 06 Feb 2019 12:37:48 GMT
+# Tue, 12 Feb 2019 21:49:58 GMT
 CMD ["python2"]
 ```
 
@@ -93,13 +93,13 @@ CMD ["python2"]
 		Last Modified: Wed, 06 Feb 2019 12:50:55 GMT  
 		Size: 15.9 MB (15851395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f0372af5890e01137216e7d614d209ddef28ddaa8f2e5e43ea15f0d3dc99063`  
-		Last Modified: Wed, 06 Feb 2019 12:50:49 GMT  
-		Size: 1.8 MB (1810865 bytes)  
+	-	`sha256:31de6d429cc6c25e0e9c71850faf312614138b6aff5b27aa7500f014bebe6d54`  
+		Last Modified: Tue, 12 Feb 2019 21:56:46 GMT  
+		Size: 1.8 MB (1812483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:558d24d69f5eccb871bd10ff87a6ce0a20089f22d1b10adf52385520ad260193`  
-		Last Modified: Wed, 06 Feb 2019 12:50:50 GMT  
-		Size: 3.7 MB (3705422 bytes)  
+	-	`sha256:4acde8ff08fab542f07ce8bee9b33bf6a9d19621c4fa6d7c3880b9412bc4b82a`  
+		Last Modified: Tue, 12 Feb 2019 21:56:47 GMT  
+		Size: 3.7 MB (3713340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-stretch` - linux; arm variant v5
