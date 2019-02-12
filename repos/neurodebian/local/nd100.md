@@ -1540,19 +1540,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.38.2
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.2.dsc' neurodebian_0.38.2.dsc 2078 SHA256:8150d88ab5c1075d89e6864b1e170b5905df1e6da0adf2acf834112b26b115c3
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.38.2.tar.xz' neurodebian_0.38.2.tar.xz 8325300 SHA256:fcaaec053fe894dd5dd3b4ce8e83737b9dd554471bd51449f73b5f7d7625e90f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/neurodebian/0.38.2/
 
-- https://sources.debian.net/src/neurodebian/0.38.2/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.38.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.38.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -1933,20 +1927,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-4
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-4.dsc' tar_1.30+dfsg-4.dsc 1995 SHA256:f8c3f50eea5038367f8d04e4fe7ec858eb1eb6a1ae3f4665a529c5ef4e1f74d7
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-4.debian.tar.xz' tar_1.30+dfsg-4.debian.tar.xz 21856 SHA256:7a680305fbc1d663058d35097accdc725f112cc37f1562c73b828b6e76d89a79
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.30+dfsg-4/
 
-- https://sources.debian.net/src/tar/1.30+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.30+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.30+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018i-1`
 
