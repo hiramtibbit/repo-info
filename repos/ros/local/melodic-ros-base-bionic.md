@@ -351,13 +351,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.dsc' base-files_10.1ubuntu2.3.dsc 1620 SHA256:09df4de1d368582baec2118933103e533ee584dad99e20e9da4fc14cd3531d6c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.tar.xz' base-files_10.1ubuntu2.3.tar.xz 78140 SHA256:96f33d65b216e1d980d807d979ff8a8230834790627df8afe63dfc758a45be69
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
@@ -3949,15 +3945,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=18.2.2-0ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.1.dsc' mesa_18.2.2-0ubuntu1~18.04.1.dsc 5444 SHA256:d7bb8e93b0fc5d02388c2cbdc3aa502c156c17287e7a42b3fa29ce8f983f48ab
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz' mesa_18.2.2.orig.tar.gz 19618707 SHA256:c51711168971957037cc7e3e19e8abe1ec6eeab9cf236d419a1e7728a41cac8a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2.orig.tar.gz.asc' mesa_18.2.2.orig.tar.gz.asc 879 SHA256:edeb856778e0a62e4f49672c8173127aafa85f988dc396b10c3294a36a102509
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_18.2.2-0ubuntu1~18.04.1.diff.gz' mesa_18.2.2-0ubuntu1~18.04.1.diff.gz 110573 SHA256:134f0b18edc4bc28318c6bfa21e93fbe9551ee29a53ee2907fa234ea54ceea94
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
