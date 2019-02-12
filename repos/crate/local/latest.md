@@ -1,9 +1,9 @@
-# `crate:3.2.2`
+# `crate:3.2.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a73cbf12f75996ed964480436642e2e436686d58a934ba3831b82c8c18e5a8f`
-- Created: `2019-01-29T23:21:07.696571895Z`
+- Image ID: `sha256:8ff7c92c0484e970ca194c2d7388fb66eedeeb4013979f64c2fd2e9b20f49770`
+- Created: `2019-02-08T23:20:40.47919061Z`
 - Virtual Size: ~ 648.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
