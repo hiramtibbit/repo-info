@@ -1,9 +1,9 @@
-# `gradle:5.2.0-jdk8-slim`
+# `gradle:5.2.1-jdk8-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2d0656be0793c96adfa0ab1c41217d63e481802e4df4834289b4e2d355f849ac`
-- Created: `2019-02-06T22:20:43.409075079Z`
+- Image ID: `sha256:9fae85b6ccbc6b68f79000c57babe07ba6da8913c0b49f27b35e19bb7ad6e824`
+- Created: `2019-02-09T01:22:27.905047464Z`
 - Virtual Size: ~ 346.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=5.2`
+  - `GRADLE_VERSION=5.2.1`
 
 ## `dpkg` (`.deb`-based packages)
 
