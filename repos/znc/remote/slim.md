@@ -1,7 +1,7 @@
 ## `znc:slim`
 
 ```console
-$ docker pull znc@sha256:e033c9decdec4e25b323883e76357408e19b4c193b556978ddd90e7f8e81386e
+$ docker pull znc@sha256:fd7bc7e97b098cb9863c7138993bc24c6ad42cacf03cc9d280bfd2e29b2cd381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull znc@sha256:e033c9decdec4e25b323883e76357408e19b4c193b556978ddd90e7
 ### `znc:slim` - linux; amd64
 
 ```console
-$ docker pull znc@sha256:91565b62476a4fc60e2442da3914419dd0670a46995bb0cbccd355a4e85f9d29
+$ docker pull znc@sha256:0889f8b0bc0dd7591961c0b9bf331250931a8c87b9ae02399338990a0c2004f1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30884728 bytes)**  
+-	Total Size: **30.9 MB (30884803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dc763c72b941d6fda776670bbf118aaeee009e6352ae7cf05441a4aedc87868`
+-	Image ID: `sha256:86982024248e5b902d59651a37fce0fb840db828fa3f5bd2a3bac4c8d1977038`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -45,13 +45,13 @@ COPY file:15e47c9cc6835e0818d6896aa6537a8adda40ff814c287685183c73fa9df4713 in /
 COPY file:dfda6761eff5635f2f7a6c1d540b2b14ea67514867578d12226629a780844185 in /startup-sequence/ 
 # Thu, 31 Jan 2019 00:08:22 GMT
 COPY file:809dccdc6a2a9f5e2a058644d9f71b2f167ab0f237913902896fef13b6315814 in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:22 GMT
-COPY file:5e0f569cb97b27c9961c87a9748eb2e2fb3f63b5d43ad5d7079dc7fb8c9ff62f in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:22 GMT
-COPY file:f4f3dd4e08ff4e970f8bceb98bad9970e3424c0b6215921b3e67dd3c3dbd2085 in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:23 GMT
+# Wed, 13 Feb 2019 01:20:16 GMT
+COPY file:84986dd2ebc690804b4c47eb72d1af3a52ba257c76202478879604756431ff5c in /startup-sequence/ 
+# Wed, 13 Feb 2019 01:20:17 GMT
+COPY file:50e035ea8915a4bc88fd57c8f79152224f23e0c4c4b68ea8469294aedbddd039 in /startup-sequence/ 
+# Wed, 13 Feb 2019 01:20:17 GMT
 VOLUME [/znc-data]
-# Thu, 31 Jan 2019 00:08:23 GMT
+# Wed, 13 Feb 2019 01:20:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -76,13 +76,13 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b45d83875d4bd5927f1ae3967abf1a116b10c38330a16c946cb4478444ffe0f`  
-		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
-		Size: 280.0 B  
+	-	`sha256:a55a985d76e5ec2d1858b96e4b0bb27c486dc4d03d6ceeb72515e7837a72ea75`  
+		Last Modified: Wed, 13 Feb 2019 01:20:45 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b4dd478c37921cc06f3ef27859ea2dd5694f504a56780641aa5a6c80505e7c4`  
-		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
-		Size: 351.0 B  
+	-	`sha256:a2b9c8eb8adb384e8b2989134102a015d49fd00f5dd57bcfd10a7d9ef4f1fc6b`  
+		Last Modified: Wed, 13 Feb 2019 01:20:44 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `znc:slim` - linux; arm variant v6
