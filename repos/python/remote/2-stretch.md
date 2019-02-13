@@ -1,7 +1,7 @@
 ## `python:2-stretch`
 
 ```console
-$ docker pull python@sha256:261fdff2721faf169c1816f1992ab31ee68ed3dec4044b53c2b68cc576f152ea
+$ docker pull python@sha256:3f035e075c623624bd3fe683b74fc535d2fc2da676319a5480eecffa2218da8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -193,14 +193,14 @@ CMD ["python2"]
 ### `python:2-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull python@sha256:1abc8cb02920ed8251729f4e4625fe20d59140f043110c73d3d73bef2b31f355
+$ docker pull python@sha256:aa6c5b1e4bb7f2a9ec5f1c217da0ec1190abd4cf93c13067269e796114917e73
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.6 MB (322642215 bytes)**  
+-	Total Size: **322.7 MB (322651744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79e1047bf590b09ab9f4be031856137023c7a197474f4fdd68a0b01ea981e2ab`
+-	Image ID: `sha256:48bd8707c5fe685e4ffe94b7a4a0c423ede93b245fdf7065b7a94dc270c8251f`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -230,13 +230,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.15
 # Thu, 07 Feb 2019 17:03:34 GMT
 RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python2 --version
-# Thu, 07 Feb 2019 17:03:35 GMT
-ENV PYTHON_PIP_VERSION=19.0.1
-# Thu, 07 Feb 2019 17:03:43 GMT
+# Wed, 13 Feb 2019 13:09:42 GMT
+ENV PYTHON_PIP_VERSION=19.0.2
+# Wed, 13 Feb 2019 13:09:51 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 07 Feb 2019 17:03:47 GMT
+# Wed, 13 Feb 2019 13:09:56 GMT
 RUN pip install --no-cache-dir virtualenv
-# Thu, 07 Feb 2019 17:03:48 GMT
+# Wed, 13 Feb 2019 13:09:57 GMT
 CMD ["python2"]
 ```
 
@@ -269,13 +269,13 @@ CMD ["python2"]
 		Last Modified: Thu, 07 Feb 2019 17:13:36 GMT  
 		Size: 15.0 MB (15021909 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fc70033115e3efa7b26ce0d7f9e1d2732954007a34d4d7d5af6ee54aa229b82`  
-		Last Modified: Thu, 07 Feb 2019 17:13:32 GMT  
-		Size: 1.8 MB (1811039 bytes)  
+	-	`sha256:f9430264e330b2b6ba46cc19271bc8d96dfed891618196ea322d1d511c47948c`  
+		Last Modified: Wed, 13 Feb 2019 13:15:36 GMT  
+		Size: 1.8 MB (1812659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fea55a8ddf1e8903056637867e14a05421f2a3b3f7c780a6c448fb264c679f5`  
-		Last Modified: Thu, 07 Feb 2019 17:13:32 GMT  
-		Size: 3.7 MB (3705708 bytes)  
+	-	`sha256:ee217d23361b9eb8d93b91adb0470eda5e0818a58ed076f2abc53b0f1cd6149b`  
+		Last Modified: Wed, 13 Feb 2019 13:15:36 GMT  
+		Size: 3.7 MB (3713617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:2-stretch` - linux; arm64 variant v8
