@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4f44206f871db802561bed3058b7da05c72f52626da72e337c78251913879e6`
-- Created: `2019-02-07T01:49:36.023663838Z`
-- Virtual Size: ~ 182.39 Mb  
+- Image ID: `sha256:74e8de9467b96a2386deaf49bd78d7e1d0d944f199518b0edb88f2f0d74b9825`
+- Created: `2019-02-09T02:04:55.594609655Z`
+- Virtual Size: ~ 182.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -139,13 +139,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.dsc' base-files_10.1ubuntu2.3.dsc 1620 SHA256:09df4de1d368582baec2118933103e533ee584dad99e20e9da4fc14cd3531d6c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.tar.xz' base-files_10.1ubuntu2.3.tar.xz 78140 SHA256:96f33d65b216e1d980d807d979ff8a8230834790627df8afe63dfc758a45be69
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 

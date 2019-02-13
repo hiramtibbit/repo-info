@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdea7ebcb381e4568a50d4e3e67573b7ede9c1fae968a64d3c296140b83c396e`
-- Created: `2019-02-07T01:49:51.748565481Z`
+- Image ID: `sha256:a829a97a04355b10ba49430104216dde7025759ffeca7ef7546aefc33fbc95eb`
+- Created: `2019-02-09T02:05:13.567241096Z`
 - Virtual Size: ~ 211.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -139,13 +139,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.dsc' base-files_10.1ubuntu2.3.dsc 1620 SHA256:09df4de1d368582baec2118933103e533ee584dad99e20e9da4fc14cd3531d6c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.3.tar.xz' base-files_10.1ubuntu2.3.tar.xz 78140 SHA256:96f33d65b216e1d980d807d979ff8a8230834790627df8afe63dfc758a45be69
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
