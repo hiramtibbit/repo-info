@@ -1080,7 +1080,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 ## `znc:latest`
 
 ```console
-$ docker pull znc@sha256:035108a7772070ae74427072bba463bf41fe51ef5f62f585c3bb10f9be04892e
+$ docker pull znc@sha256:cd21364728cc210ebb805941f0202ae9934c7ccb53ecfce9bb6d718709edd83e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1092,14 +1092,14 @@ $ docker pull znc@sha256:035108a7772070ae74427072bba463bf41fe51ef5f62f585c3bb10f
 ### `znc:latest` - linux; amd64
 
 ```console
-$ docker pull znc@sha256:ebabeb8be9418f326936257dcc3eb18c84b4ce6cf2f5bdd10d017a10d9c33e93
+$ docker pull znc@sha256:8ede3dda2685650e87515647dce11ba0e1ba8f8b8e35de177629c1fa45cfab72
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122540162 bytes)**  
+-	Total Size: **122.5 MB (122542202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:074480917a3b96cbe51a32498294420e7e4cfc80e5789b6946c6b46c86aab3cc`
+-	Image ID: `sha256:0d6850e0012b304206c2f18963831eee50128995bc54094dd6ec82e684e5d2dc`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1124,17 +1124,17 @@ COPY file:15e47c9cc6835e0818d6896aa6537a8adda40ff814c287685183c73fa9df4713 in /
 COPY file:dfda6761eff5635f2f7a6c1d540b2b14ea67514867578d12226629a780844185 in /startup-sequence/ 
 # Thu, 31 Jan 2019 00:08:22 GMT
 COPY file:809dccdc6a2a9f5e2a058644d9f71b2f167ab0f237913902896fef13b6315814 in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:22 GMT
-COPY file:5e0f569cb97b27c9961c87a9748eb2e2fb3f63b5d43ad5d7079dc7fb8c9ff62f in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:22 GMT
-COPY file:f4f3dd4e08ff4e970f8bceb98bad9970e3424c0b6215921b3e67dd3c3dbd2085 in /startup-sequence/ 
-# Thu, 31 Jan 2019 00:08:23 GMT
+# Wed, 13 Feb 2019 01:20:16 GMT
+COPY file:84986dd2ebc690804b4c47eb72d1af3a52ba257c76202478879604756431ff5c in /startup-sequence/ 
+# Wed, 13 Feb 2019 01:20:17 GMT
+COPY file:50e035ea8915a4bc88fd57c8f79152224f23e0c4c4b68ea8469294aedbddd039 in /startup-sequence/ 
+# Wed, 13 Feb 2019 01:20:17 GMT
 VOLUME [/znc-data]
-# Thu, 31 Jan 2019 00:08:23 GMT
+# Wed, 13 Feb 2019 01:20:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 31 Jan 2019 00:08:38 GMT
+# Wed, 13 Feb 2019 01:20:29 GMT
 RUN set -x     && apk add --no-cache         build-base         cmake         icu-dev         libressl-dev         perl         python3
-# Thu, 31 Jan 2019 00:08:39 GMT
+# Wed, 13 Feb 2019 01:20:30 GMT
 COPY file:765473e154cb7674cba99ed8ee42b51feda01581be870e3d1e7e4930b82a0f37 in /startup-sequence/ 
 ```
 
@@ -1159,21 +1159,21 @@ COPY file:765473e154cb7674cba99ed8ee42b51feda01581be870e3d1e7e4930b82a0f37 in /s
 		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b45d83875d4bd5927f1ae3967abf1a116b10c38330a16c946cb4478444ffe0f`  
-		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
-		Size: 280.0 B  
+	-	`sha256:a55a985d76e5ec2d1858b96e4b0bb27c486dc4d03d6ceeb72515e7837a72ea75`  
+		Last Modified: Wed, 13 Feb 2019 01:20:45 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b4dd478c37921cc06f3ef27859ea2dd5694f504a56780641aa5a6c80505e7c4`  
-		Last Modified: Thu, 31 Jan 2019 00:08:47 GMT  
-		Size: 351.0 B  
+	-	`sha256:a2b9c8eb8adb384e8b2989134102a015d49fd00f5dd57bcfd10a7d9ef4f1fc6b`  
+		Last Modified: Wed, 13 Feb 2019 01:20:44 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e004f6f65ed830ea7c4e1a638c586429e02cfcb89c382e287e14159a26859b42`  
-		Last Modified: Thu, 31 Jan 2019 00:09:22 GMT  
-		Size: 91.7 MB (91655101 bytes)  
+	-	`sha256:d9b7c711a4738ff3aeb2f16d6f9b9ecf32c680ecf444d1f0f62982c8a2cc2cb0`  
+		Last Modified: Wed, 13 Feb 2019 01:21:08 GMT  
+		Size: 91.7 MB (91657069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d38d325462d2bce08560db96e5eb6103dc8450e4d716ce8d5af89482ac7f01d`  
-		Last Modified: Thu, 31 Jan 2019 00:09:02 GMT  
-		Size: 333.0 B  
+	-	`sha256:a6203e37e63b7c5895afbea2c2b5dcf30b98befccacaf3d576470a2c5a38bbc3`  
+		Last Modified: Wed, 13 Feb 2019 01:20:49 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `znc:latest` - linux; arm variant v6
