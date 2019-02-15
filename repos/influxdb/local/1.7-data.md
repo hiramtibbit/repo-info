@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad6ae29205b5f0fdb103e818b2f0c687442adcba955dbc3c0437f4a6c1b571e5`
-- Created: `2019-02-06T13:31:45.939654237Z`
+- Image ID: `sha256:0f5909d4091535d431659391b2b63efec3127910f6bde1d2ec01767701ef1b24`
+- Created: `2019-02-14T23:20:27.899396969Z`
 - Virtual Size: ~ 258.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=1.7.3-c1.7.3`
+  - `INFLUXDB_VERSION=1.7.4-c1.7.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -871,11 +871,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.18/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.18/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `influxdb-data=1.7.3-c1.7.3-1`
+### `dpkg` source package: `influxdb-data=1.7.4-c1.7.4-1`
 
 Binary Packages:
 
-- `influxdb-data=1.7.3-c1.7.3-1`
+- `influxdb-data=1.7.4-c1.7.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
