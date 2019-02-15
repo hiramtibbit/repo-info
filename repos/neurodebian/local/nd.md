@@ -172,19 +172,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.45
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.45.dsc' base-passwd_3.5.45.dsc 1651 SHA256:c5702c8c0fd5f2240d0fad07f1c03cdff86ea9370e80129c7258c40fa12015b9
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.45.tar.xz' base-passwd_3.5.45.tar.xz 52748 SHA256:8cd6a713c400cf52f437e5cb14fcec59b0c77d4003a9a4f56526ef27f28ce1fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.5.45/
 
-- https://sources.debian.net/src/base-passwd/3.5.45/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.5.45/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.5.45/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.0-2`
 
@@ -1658,20 +1652,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-4
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-4.dsc' pam_1.1.8-4.dsc 2625 SHA256:08b434543ee1c5cd4a8695d73a3216162986b332bfc046dd34ac6849290e9e0a
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-4.diff.gz' pam_1.1.8-4.diff.gz 141986 SHA256:3634b5199674481ed0302de35df9604dc13c76421d5d19eb6a3ab6e85c0402ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.1.8-4/
 
-- https://sources.debian.net/src/pam/1.1.8-4/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.1.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.1.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-11`
 
@@ -1930,21 +1917,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.93-6
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-6.dsc' sysvinit_2.93-6.dsc 2657 SHA256:ccfe5effc19998981e914b42bf483d23f0bba3f48961cb35ba74b2e367ca2a2a
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz' sysvinit_2.93.orig.tar.xz 117580 SHA256:472d460e233d981488509a167125a82925c8c9aba6b5608cb22598fdf326a8ff
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz.asc' sysvinit_2.93.orig.tar.xz.asc 1076 SHA256:cf2b374a96276a16e3ef07ad2be596420f0d8d77227aad3144d7ab4ea165a4af
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-6.debian.tar.xz' sysvinit_2.93-6.debian.tar.xz 127192 SHA256:f62a12ab8f14e82c2d7d55e9c453d1fb21cd5ad7c5ee9ef2764e385205868b94
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/2.93-6/
 
-- https://sources.debian.net/src/sysvinit/2.93-6/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.93-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.93-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-4`
 
