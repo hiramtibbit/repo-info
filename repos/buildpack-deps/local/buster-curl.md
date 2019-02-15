@@ -331,6 +331,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.63.0-1/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -632,6 +636,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8.2.0-15/
 
 
 ### `dpkg` source package: `glibc=2.28-5`
@@ -1661,6 +1669,10 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nettle/3.4.1~rc1-1/
+
 
 ### `dpkg` source package: `nghttp2=1.36.0-2`
 
@@ -1912,6 +1924,10 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.28.1-3/
 
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
@@ -2281,6 +2297,10 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xz-utils/5.2.2-1.3/
 
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-1`

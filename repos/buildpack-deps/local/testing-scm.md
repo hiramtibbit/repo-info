@@ -715,6 +715,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-8/8.2.0-15/
+
 
 ### `dpkg` source package: `gdbm=1.18.1-2`
 
@@ -2526,6 +2530,10 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-7/
 
 
 ### `dpkg` source package: `shadow=1:4.5-1.1`

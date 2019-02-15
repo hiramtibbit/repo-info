@@ -263,6 +263,10 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-passwd/3.5.45/
+
 
 ### `dpkg` source package: `bash=5.0-2ubuntu1`
 
@@ -397,13 +401,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.246ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.246ubuntu1.dsc' cdebconf_0.246ubuntu1.dsc 2931 SHA256:bf79a73c6bdbfaf5efc6e861e946eb8de8d9ac6fc57b416215ea4c1bab11c3b3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.246ubuntu1.tar.xz' cdebconf_0.246ubuntu1.tar.xz 276132 SHA256:78ae4a52db984922472372759c6de4b9f788bfefba4ef05798b5e0e27921cca2
-```
 
 ### `dpkg` source package: `configobj=5.0.6-3`
 
@@ -1771,6 +1771,10 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/liberror-perl/0.17027-1/
+
 
 ### `dpkg` source package: `libevent=2.1.8-stable-4build1`
 
@@ -2070,6 +2074,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpthread-stubs/0.3-4/
 
 
 ### `dpkg` source package: `librsvg=2.44.10-1`
@@ -2633,14 +2641,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.19.0-12.13
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.19.0-12.13.dsc' linux_4.19.0-12.13.dsc 8056 SHA256:5e7bd7efbf13d6a06a64de54437f14719e044b38292150c8f83d23c1a63a6408
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.19.0.orig.tar.gz' linux_4.19.0.orig.tar.gz 159084759 SHA256:90f63525701a8c78389873547b5afd09b217d588f4c0ccbe40071f743ae94f93
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.19.0-12.13.diff.gz' linux_4.19.0-12.13.diff.gz 4608189 SHA256:0e06eb7918cee095ba52ba72e81acb10f4302e77872fe5c2e76b6e3ba0ddf7c6
-```
 
 ### `dpkg` source package: `lsb=10.2018112800ubuntu1`
 
@@ -2932,15 +2935,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1+20180210-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20180210-4ubuntu1.dsc' ncurses_6.1+20180210-4ubuntu1.dsc 4726 SHA256:bd0f5d25466569bf9875373d3f4afd06dace700eeb82dc6ad75ef7391ede15a1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz' ncurses_6.1+20180210.orig.tar.gz 3383097 SHA256:f1e67ce104ddfa1ec83cd58f143398eb52b5911b91740d755c39f51d26aafd0f
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20180210.orig.tar.gz.asc' ncurses_6.1+20180210.orig.tar.gz.asc 251 SHA256:06bf49c91efa54297e8e5cc6df84267adbe22181a3c903cb008c040257af00b2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20180210-4ubuntu1.debian.tar.xz' ncurses_6.1+20180210-4ubuntu1.debian.tar.xz 62924 SHA256:b93fb83a97e2d1b8166a160ba248aa34e392e5e339932cfd8614f4e74e7f7628
-```
 
 ### `dpkg` source package: `netbase=5.5`
 
@@ -3067,14 +3064,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-2ubuntu1.dsc' openldap_2.4.47+dfsg-2ubuntu1.dsc 2963 SHA256:1146e8686cc8f31141556766f360a9cb81eda89214f592dd8b4ba67206b21293
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.47+dfsg-2ubuntu1.debian.tar.xz' openldap_2.4.47+dfsg-2ubuntu1.debian.tar.xz 177564 SHA256:40ed436bc82940d6c78b0c525b05b998ee88598901bbee9e13887627ffb18f02
-```
 
 ### `dpkg` source package: `openssh=1:7.9p1-5`
 
@@ -3095,6 +3087,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssh/1:7.9p1-5/
 
 
 ### `dpkg` source package: `openssl=1.1.1a-1ubuntu2`
@@ -3156,13 +3152,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.dsc' pam_1.1.8-3.6ubuntu2.dsc 2221 SHA256:dd47a8f0d53ccf5cf4e80819cca127c28f7e2bda9312a34c311b0bb90565fc0c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.tar.gz' pam_1.1.8-3.6ubuntu2.tar.gz 1989104 SHA256:3244f99b6bd0a3501c692102d897c013a6736ab8f9656fe2411cacffcaaba20e
-```
 
 ### `dpkg` source package: `pango1.0=1.42.4-6`
 
