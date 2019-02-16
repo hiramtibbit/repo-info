@@ -22,7 +22,7 @@
 -	[`jruby:9.1-jre`](#jruby91-jre)
 -	[`jruby:9.1-jre-alpine`](#jruby91-jre-alpine)
 -	[`jruby:9.2`](#jruby92)
--	[`jruby:9.2.5`](#jruby925)
+-	[`jruby:9.2.6`](#jruby926)
 -	[`jruby:9.2.6.0`](#jruby9260)
 -	[`jruby:9.2.6.0-alpine`](#jruby9260-alpine)
 -	[`jruby:9.2.6.0-jdk`](#jruby9260-jdk)
@@ -8972,7 +8972,7 @@ CMD ["irb"]
 		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `jruby:9.2.5`
+## `jruby:9.2.6`
 
 ```console
 $ docker pull jruby@sha256:bce6036b3be36630053ae7255f9845ad61b5b9610b39c646c2673792e1b545b4
@@ -8986,7 +8986,7 @@ $ docker pull jruby@sha256:bce6036b3be36630053ae7255f9845ad61b5b9610b39c646c2673
 	-	linux; 386
 	-	linux; ppc64le
 
-### `jruby:9.2.5` - linux; amd64
+### `jruby:9.2.6` - linux; amd64
 
 ```console
 $ docker pull jruby@sha256:83308e0d66934894e4eda7af1c44539d0ee1fadeeed9395a78fe65499a9b80ba
@@ -9100,7 +9100,7 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.5` - linux; arm variant v5
+### `jruby:9.2.6` - linux; arm variant v5
 
 ```console
 $ docker pull jruby@sha256:f82f5906057ed684d1b2e735560e8ac305262d281149e12869583106b5343ce9
@@ -9222,7 +9222,7 @@ CMD ["irb"]
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.5` - linux; arm64 variant v8
+### `jruby:9.2.6` - linux; arm64 variant v8
 
 ```console
 $ docker pull jruby@sha256:38d714d54449a702744b3d91296f1a18efa2f1d9876c0318e85a1f0ebb767493
@@ -9336,7 +9336,7 @@ CMD ["irb"]
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.5` - linux; 386
+### `jruby:9.2.6` - linux; 386
 
 ```console
 $ docker pull jruby@sha256:f938b159ec6d6ef61c5d0af42e6fcf883f7eba7af601a3ff19e75ad700df4e41
@@ -9450,7 +9450,7 @@ CMD ["irb"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `jruby:9.2.5` - linux; ppc64le
+### `jruby:9.2.6` - linux; ppc64le
 
 ```console
 $ docker pull jruby@sha256:c0bbf86e7483d3a60a3f5023efb4f318a84cdcab048677b85d72eeca206bc376
