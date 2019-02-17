@@ -1,9 +1,9 @@
-# `ghost:2.14.2-alpine`
+# `ghost:2.14.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76a778d86c7ccc3cae8d4d37dd99cc0cb7df4b7a378e370e6cd366c27b920875`
-- Created: `2019-02-13T21:21:36.987128282Z`
+- Image ID: `sha256:5ad62a44d7700910e1a585f233354ca8ac6be9aa902e5bb682be3bc0f0f30205`
+- Created: `2019-02-15T00:21:28.733804775Z`
 - Virtual Size: ~ 488.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,4 +17,4 @@
   - `GHOST_CLI_VERSION=1.9.9`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=2.14.2`
+  - `GHOST_VERSION=2.14.3`
