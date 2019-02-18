@@ -1,10 +1,10 @@
-# `postgres:11.1`
+# `postgres:11.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a02f920193bc1d2658f673d0c77f93f25e7670078b930232f17856be34d7699`
-- Created: `2019-02-06T08:16:44.722701909Z`
-- Virtual Size: ~ 311.96 Mb  
+- Image ID: `sha256:f97a959a7d9ca63f108b845d6feb6fc6d9dda0914e47899bec625cee855165c0`
+- Created: `2019-02-15T01:20:37.947043606Z`
+- Virtual Size: ~ 312.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.11`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=11`
-  - `PG_VERSION=11.1-3.pgdg90+1`
+  - `PG_VERSION=11.2-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -159,19 +159,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.dsc' base-files_9.9+deb9u7.dsc 1095 SHA256:291f7a31387f53d311a59a4241ba79cfa486fb1e99f7584d0e4dce57161ea62a
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u7.tar.xz' base-files_9.9+deb9u7.tar.xz 63028 SHA256:fdea1d2b0c7a2a4ab0978894051002f684cacbad073a91aef70cebc9405131ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/9.9+deb9u7/
 
-- https://sources.debian.net/src/base-files/9.9+deb9u7/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -858,20 +852,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.18-8~deb9u3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u3.dsc' gnupg2_2.1.18-8~deb9u3.dsc 2537 SHA256:d4665c6bef3eab1a65a94492358529ba62d3976f8b955e3502da057a94d6f126
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-8~deb9u3.debian.tar.bz2' gnupg2_2.1.18-8~deb9u3.debian.tar.bz2 117913 SHA256:d2525b74bf703b5aefc66b9d029f330ec316e0aa35b54710b132e3754144ac67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u3/
 
-- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.1.18-8~deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.1.18-8~deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.8-5+deb9u4`
 
@@ -2263,10 +2250,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.0j-1~deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.dsc' openssl_1.1.0j-1~deb9u1.dsc 2611 SHA256:3c4f9e2af00c7595218d05d09635746f7edfd13b6c08b6266cd386b195c7889b
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz' openssl_1.1.0j.orig.tar.gz 5411919 SHA256:31bec6c203ce1a8e93d5994f4ed304c63ccf07676118b6634edded12ad1b3246
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j.orig.tar.gz.asc' openssl_1.1.0j.orig.tar.gz.asc 488 SHA256:e162322dce0b98f92401a48ba5f088ded64ee308a54580ed9edc3edafd85eebf
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.0j-1~deb9u1.debian.tar.xz' openssl_1.1.0j-1~deb9u1.debian.tar.xz 71944 SHA256:737db70af006b984b914ba63ac8cbf012cb0db43df5e31f7dfa95d0b5890910b
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0j-1~deb9u1.dsc' openssl_1.1.0j-1~deb9u1.dsc 2611 SHA256:3c4f9e2af00c7595218d05d09635746f7edfd13b6c08b6266cd386b195c7889b
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0j.orig.tar.gz' openssl_1.1.0j.orig.tar.gz 5411919 SHA256:31bec6c203ce1a8e93d5994f4ed304c63ccf07676118b6634edded12ad1b3246
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0j.orig.tar.gz.asc' openssl_1.1.0j.orig.tar.gz.asc 488 SHA256:e162322dce0b98f92401a48ba5f088ded64ee308a54580ed9edc3edafd85eebf
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0j-1~deb9u1.debian.tar.xz' openssl_1.1.0j-1~deb9u1.debian.tar.xz 71944 SHA256:737db70af006b984b914ba63ac8cbf012cb0db43df5e31f7dfa95d0b5890910b
 ```
 
 Other potentially useful URLs:
@@ -2398,9 +2385,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.24.1-3+deb9u5
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u5.dsc' perl_5.24.1-3+deb9u5.dsc 2393 SHA256:d30a446b21afb8f3c0da9bc117244646ef34a05c440a18bcd5c114ee87f8293f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/debian-security/pool/updates/main/p/perl/perl_5.24.1-3+deb9u5.debian.tar.xz' perl_5.24.1-3+deb9u5.debian.tar.xz 185316 SHA256:fbb78d029b5a9a94e32feba2e360d3628a8a6de90066f90ff22e78d4918aab69
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u5.dsc' perl_5.24.1-3+deb9u5.dsc 2393 SHA256:d30a446b21afb8f3c0da9bc117244646ef34a05c440a18bcd5c114ee87f8293f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u5.debian.tar.xz' perl_5.24.1-3+deb9u5.debian.tar.xz 185316 SHA256:fbb78d029b5a9a94e32feba2e360d3628a8a6de90066f90ff22e78d4918aab69
 ```
 
 Other potentially useful URLs:
@@ -2483,13 +2470,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-11=11.1-3.pgdg90+1`
+### `dpkg` source package: `postgresql-11=11.2-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=11.1-3.pgdg90+1`
-- `postgresql-11=11.1-3.pgdg90+1`
-- `postgresql-client-11=11.1-3.pgdg90+1`
+- `libpq5:amd64=11.2-1.pgdg90+1`
+- `postgresql-11=11.2-1.pgdg90+1`
+- `postgresql-client-11=11.2-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-11/copyright`, `/usr/share/doc/postgresql-client-11/copyright`)
 
@@ -2501,6 +2488,7 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `Custom-regex`
 - `GPL-1`
 - `PostgreSQL`
+- `Snowball`
 - `Tcl`
 - `blf`
 - `double-metaphone`
@@ -2511,10 +2499,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-11=11.1-3.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1-3.pgdg90+1.dsc' postgresql-11_11.1-3.pgdg90+1.dsc 2664 SHA256:fc2a0d0a4b5d28671b1e16c6a97d03112bd1ee6bdc427207aef04d456eb9e293
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1.orig.tar.bz2' postgresql-11_11.1.orig.tar.bz2 21263173 SHA256:90815e812874831e9a4bf6e1136bf73bc2c5a0464ef142e2dfea40cda206db08
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.1-3.pgdg90+1.debian.tar.xz' postgresql-11_11.1-3.pgdg90+1.debian.tar.xz 21800 SHA256:8ae0efcb64a84ba703a3f371ee6f162123e4570584245eb40ec87fc073594d81
+$ apt-get source -qq --print-uris postgresql-11=11.2-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.2-1.pgdg90+1.dsc' postgresql-11_11.2-1.pgdg90+1.dsc 2653 SHA256:9f8954e8d95d605adebf2f2f7e96b05dd9a2e4d848c98c3a150a7a2c16caaffc
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.2.orig.tar.bz2' postgresql-11_11.2.orig.tar.bz2 19714229 SHA256:2676b9ce09c21978032070b6794696e0aa5a476e3d21d60afc036dc0a9c09405
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-11/postgresql-11_11.2-1.pgdg90+1.debian.tar.xz' postgresql-11_11.2-1.pgdg90+1.debian.tar.xz 23192 SHA256:50e7d19776ae95dac96f1866e5be1331a279b593c2c7dc0c4bac16eb8eba7e64
 ```
 
 ### `dpkg` source package: `postgresql-common=199.pgdg90+1`
@@ -2941,9 +2929,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=232-25+deb9u8
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.dsc' systemd_232-25+deb9u8.dsc 4952 SHA256:1b20482f56a91eb2a8f30fa19320eed191e348462d55debf82cd5f28d2273d74
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_232-25+deb9u8.debian.tar.xz' systemd_232-25+deb9u8.debian.tar.xz 215064 SHA256:9ed04cb8ed2b581c52f4d5d3a74c20951525610c1cfb059eccffdbfddacbeecb
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u8.dsc' systemd_232-25+deb9u8.dsc 4952 SHA256:1b20482f56a91eb2a8f30fa19320eed191e348462d55debf82cd5f28d2273d74
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25+deb9u8.debian.tar.xz' systemd_232-25+deb9u8.debian.tar.xz 215064 SHA256:9ed04cb8ed2b581c52f4d5d3a74c20951525610c1cfb059eccffdbfddacbeecb
 ```
 
 Other potentially useful URLs:
