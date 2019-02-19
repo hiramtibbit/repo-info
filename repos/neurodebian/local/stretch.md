@@ -1588,20 +1588,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u4.dsc' perl_5.24.1-3+deb9u4.dsc 2393 SHA256:439fd400e8f7659679acac82bb6178c33e1c7cea161210c5051f8c78c2df004b
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u4.debian.tar.xz' perl_5.24.1-3+deb9u4.debian.tar.xz 179936 SHA256:96b1e96a4ac72bb937f53079806fe0d6127da8fbf40d113d618a240aa378745c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u4/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
