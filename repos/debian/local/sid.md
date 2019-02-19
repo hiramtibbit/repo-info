@@ -498,21 +498,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.175-2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175-2.dsc' elfutils_0.175-2.dsc 2568 SHA256:d256b8eaf5a3b8390b0a66d215a7bb11375c01a5fe1eb2b32861432249a9d1af
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2' elfutils_0.175.orig.tar.bz2 8786600 SHA256:f7ef925541ee32c6d15ae5cb27da5f119e01a5ccdbe9fe57bf836730d7b7a65b
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2.asc' elfutils_0.175.orig.tar.bz2.asc 488 SHA256:103ae1a12d0b67e2d783f36dc780acd533d5c2a9d6241bcd62cfe1f6fa891a16
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175-2.debian.tar.xz' elfutils_0.175-2.debian.tar.xz 38308 SHA256:e4c0cfd5381387964fbb1ccee085b3b37564b16100eb36588ba72bba7eff062d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.175-2/
 
-- https://sources.debian.net/src/elfutils/0.175-2/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.175-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.175-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190105-2`
 
@@ -1398,21 +1390,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.14-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14-2.dsc' p11-kit_0.23.14-2.dsc 2434 SHA256:2ea1f051714e892ee7a25d90c7f99185a2e33e15e0f7a5dce662eadb7428b66c
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14.orig.tar.gz' p11-kit_0.23.14.orig.tar.gz 1266595 SHA256:1cb9fa6d237539f25f62f4c3d4ec71a1c8e0772957ec45ec5af92134129e0d70
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14.orig.tar.gz.asc' p11-kit_0.23.14.orig.tar.gz.asc 900 SHA256:4ddc9b86cfed20c5456eb19ba3bc229ec9e0292a6b556c5727f94872b6039d97
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14-2.debian.tar.xz' p11-kit_0.23.14-2.debian.tar.xz 22068 SHA256:da76f34e8deb921a4efac16ef2f0ddfcfc8c0faecb1293ef70ea364f28e21fe0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.14-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.14-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-4`
 
@@ -1581,20 +1565,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=240-5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_240-5.dsc' systemd_240-5.dsc 4898 SHA256:dfd3171ad9a140feaff6719abcd7586e3f4d46e5e5f048c3b04aa8504a8c94d8
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_240.orig.tar.gz' systemd_240.orig.tar.gz 7582001 SHA256:8f15aec1ac926e13a21a04d0ca3fe371f7004951448142a6f8952075c5b5f0b5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_240-5.debian.tar.xz' systemd_240-5.debian.tar.xz 165928 SHA256:85022f13fd97467d10760917ac190f5f2960cf03b2349eed02b84dc3128dcb59
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/240-5/
 
-- https://sources.debian.net/src/systemd/240-5/ (for browsing the source)
-- https://sources.debian.net/src/systemd/240-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/240-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-6`
 
