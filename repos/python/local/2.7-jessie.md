@@ -4323,20 +4323,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.20-0+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20-0+deb8u1.dsc' postgresql-9.4_9.4.20-0+deb8u1.dsc 3546 SHA256:58647f4722c340b45d18d448a086361fcd8f3c61969a0285dc18a0f8196fe8fd
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20.orig.tar.bz2' postgresql-9.4_9.4.20.orig.tar.bz2 17905682 SHA256:eeb1d8ddb2854c9e4d8b5cbd65665260c0ae8cbcb911003f24c2d82ccb97f87f
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.20-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.20-0+deb8u1.debian.tar.xz 26536 SHA256:01643ae293f24e834a096a1649ccb2cbe5fac883d7c4e424273b93a286ec7033
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.20-0+deb8u1/
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.20-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.4/9.4.20-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.20-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
@@ -4892,20 +4885,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u7
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.dsc' tiff_4.0.3-12.3+deb8u7.dsc 2399 SHA256:f9d14ebc651fa937088eebd85a46a071bff977b9580a5fe5ce9a35f57f5b1c4c
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.debian.tar.xz' tiff_4.0.3-12.3+deb8u7.debian.tar.xz 67436 SHA256:b3175567626a0ea5a26565120d8474f1fcb4e22fcd5a0a9cbd1734a8b32421cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u7/
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.2-1`
 
