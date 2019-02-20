@@ -127,7 +127,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7`
 
 ```console
-$ docker pull oraclelinux@sha256:ed102b4132c90c1e0efeed715701b7c101aed2ab352398691e709b81ecf91eae
+$ docker pull oraclelinux@sha256:dc75df9e9aa22f13b21ea7251394692b0ecd9ffa3f8a9a1f8fc396bcae5609e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -138,29 +138,29 @@ $ docker pull oraclelinux@sha256:ed102b4132c90c1e0efeed715701b7c101aed2ab3523986
 ### `oraclelinux:7` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:0b0e43173a185c948e8727093de6bbbf5f98a8f25f061c8b3ead2fedbe7eaed4
+$ docker pull oraclelinux@sha256:84704f3c15b27baea3f0d40382ab93e9e5d853fafddf389ebd94557b3c7c58b6
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86898679 bytes)**  
+-	Total Size: **86.9 MB (86907147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d3220871092ca75c8e51962d351a31e01bde219975c0960f1a6945861359cd`
+-	Image ID: `sha256:968ea3e71bea089fc90a8d1b86432f1db5213404eb4498f47671838585acc00d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 30 Aug 2018 21:49:27 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Thu, 31 Jan 2019 23:27:48 GMT
-ADD file:8824dd5c15a62323763650eee091699c3cbfb3573e5be76e2465775d86b42747 in / 
-# Thu, 31 Jan 2019 23:27:49 GMT
+# Wed, 20 Feb 2019 21:20:15 GMT
+ADD file:4689612da90fc798fcdb4d5d48b27ba2a171d95990762c81f7d2b0f5047cefd3 in / 
+# Wed, 20 Feb 2019 21:20:15 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1bcba420063375efd94f43969959ac152609f5f2b40d824cf2b0cb7182b91b9a`  
-		Last Modified: Thu, 31 Jan 2019 23:29:03 GMT  
-		Size: 86.9 MB (86898679 bytes)  
+	-	`sha256:73d3caa7e48da4ac8f41e164356de29ae7be78ea28e72c4057f866a220a3174e`  
+		Last Modified: Wed, 20 Feb 2019 21:20:59 GMT  
+		Size: 86.9 MB (86907147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `oraclelinux:7` - linux; arm64 variant v8
@@ -194,7 +194,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.6`
 
 ```console
-$ docker pull oraclelinux@sha256:ed102b4132c90c1e0efeed715701b7c101aed2ab352398691e709b81ecf91eae
+$ docker pull oraclelinux@sha256:dc75df9e9aa22f13b21ea7251394692b0ecd9ffa3f8a9a1f8fc396bcae5609e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -205,29 +205,29 @@ $ docker pull oraclelinux@sha256:ed102b4132c90c1e0efeed715701b7c101aed2ab3523986
 ### `oraclelinux:7.6` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:0b0e43173a185c948e8727093de6bbbf5f98a8f25f061c8b3ead2fedbe7eaed4
+$ docker pull oraclelinux@sha256:84704f3c15b27baea3f0d40382ab93e9e5d853fafddf389ebd94557b3c7c58b6
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86898679 bytes)**  
+-	Total Size: **86.9 MB (86907147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d3220871092ca75c8e51962d351a31e01bde219975c0960f1a6945861359cd`
+-	Image ID: `sha256:968ea3e71bea089fc90a8d1b86432f1db5213404eb4498f47671838585acc00d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 30 Aug 2018 21:49:27 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Thu, 31 Jan 2019 23:27:48 GMT
-ADD file:8824dd5c15a62323763650eee091699c3cbfb3573e5be76e2465775d86b42747 in / 
-# Thu, 31 Jan 2019 23:27:49 GMT
+# Wed, 20 Feb 2019 21:20:15 GMT
+ADD file:4689612da90fc798fcdb4d5d48b27ba2a171d95990762c81f7d2b0f5047cefd3 in / 
+# Wed, 20 Feb 2019 21:20:15 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1bcba420063375efd94f43969959ac152609f5f2b40d824cf2b0cb7182b91b9a`  
-		Last Modified: Thu, 31 Jan 2019 23:29:03 GMT  
-		Size: 86.9 MB (86898679 bytes)  
+	-	`sha256:73d3caa7e48da4ac8f41e164356de29ae7be78ea28e72c4057f866a220a3174e`  
+		Last Modified: Wed, 20 Feb 2019 21:20:59 GMT  
+		Size: 86.9 MB (86907147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `oraclelinux:7.6` - linux; arm64 variant v8
