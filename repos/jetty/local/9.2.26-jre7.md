@@ -3762,20 +3762,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.dsc' systemd_215-17+deb8u9.dsc 3804 SHA256:2edc973d09ee17f8877e5a7fab4dfde77ce6304abcebcf0ef9d587d30441b452
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.debian.tar.xz' systemd_215-17+deb8u9.debian.tar.xz 244644 SHA256:6416de84422aae598a09f8652dcabe00c484e4ed7babcc8b595c8edf5fbd9fc1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/215-17+deb8u9/
 
-- https://sources.debian.net/src/systemd/215-17+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
@@ -3865,20 +3858,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u7
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.dsc' tiff_4.0.3-12.3+deb8u7.dsc 2399 SHA256:f9d14ebc651fa937088eebd85a46a071bff977b9580a5fe5ce9a35f57f5b1c4c
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u7.debian.tar.xz' tiff_4.0.3-12.3+deb8u7.debian.tar.xz 67436 SHA256:b3175567626a0ea5a26565120d8474f1fcb4e22fcd5a0a9cbd1734a8b32421cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u7/
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.3-12.3+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2018i-0+deb8u1`
 
