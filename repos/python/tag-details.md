@@ -16,6 +16,8 @@
 -	[`python:2.7.15-wheezy`](#python2715-wheezy)
 -	[`python:2.7.15-windowsservercore`](#python2715-windowsservercore)
 -	[`python:2.7.15-windowsservercore-1709`](#python2715-windowsservercore-1709)
+-	[`python:2.7.15-windowsservercore-1803`](#python2715-windowsservercore-1803)
+-	[`python:2.7.15-windowsservercore-1809`](#python2715-windowsservercore-1809)
 -	[`python:2.7.15-windowsservercore-ltsc2016`](#python2715-windowsservercore-ltsc2016)
 -	[`python:2.7-alpine`](#python27-alpine)
 -	[`python:2.7-alpine3.8`](#python27-alpine38)
@@ -28,6 +30,8 @@
 -	[`python:2.7-wheezy`](#python27-wheezy)
 -	[`python:2.7-windowsservercore`](#python27-windowsservercore)
 -	[`python:2.7-windowsservercore-1709`](#python27-windowsservercore-1709)
+-	[`python:2.7-windowsservercore-1803`](#python27-windowsservercore-1803)
+-	[`python:2.7-windowsservercore-1809`](#python27-windowsservercore-1809)
 -	[`python:2.7-windowsservercore-ltsc2016`](#python27-windowsservercore-ltsc2016)
 -	[`python:2-alpine`](#python2-alpine)
 -	[`python:2-alpine3.8`](#python2-alpine38)
@@ -40,6 +44,8 @@
 -	[`python:2-wheezy`](#python2-wheezy)
 -	[`python:2-windowsservercore`](#python2-windowsservercore)
 -	[`python:2-windowsservercore-1709`](#python2-windowsservercore-1709)
+-	[`python:2-windowsservercore-1803`](#python2-windowsservercore-1803)
+-	[`python:2-windowsservercore-1809`](#python2-windowsservercore-1809)
 -	[`python:2-windowsservercore-ltsc2016`](#python2-windowsservercore-ltsc2016)
 -	[`python:3`](#python3)
 -	[`python:3.4`](#python34)
@@ -92,6 +98,8 @@
 -	[`python:3.6.8-stretch`](#python368-stretch)
 -	[`python:3.6.8-windowsservercore`](#python368-windowsservercore)
 -	[`python:3.6.8-windowsservercore-1709`](#python368-windowsservercore-1709)
+-	[`python:3.6.8-windowsservercore-1803`](#python368-windowsservercore-1803)
+-	[`python:3.6.8-windowsservercore-1809`](#python368-windowsservercore-1809)
 -	[`python:3.6.8-windowsservercore-ltsc2016`](#python368-windowsservercore-ltsc2016)
 -	[`python:3.6-alpine`](#python36-alpine)
 -	[`python:3.6-alpine3.8`](#python36-alpine38)
@@ -103,6 +111,8 @@
 -	[`python:3.6-stretch`](#python36-stretch)
 -	[`python:3.6-windowsservercore`](#python36-windowsservercore)
 -	[`python:3.6-windowsservercore-1709`](#python36-windowsservercore-1709)
+-	[`python:3.6-windowsservercore-1803`](#python36-windowsservercore-1803)
+-	[`python:3.6-windowsservercore-1809`](#python36-windowsservercore-1809)
 -	[`python:3.6-windowsservercore-ltsc2016`](#python36-windowsservercore-ltsc2016)
 -	[`python:3.7`](#python37)
 -	[`python:3.7.2`](#python372)
@@ -114,6 +124,8 @@
 -	[`python:3.7.2-stretch`](#python372-stretch)
 -	[`python:3.7.2-windowsservercore`](#python372-windowsservercore)
 -	[`python:3.7.2-windowsservercore-1709`](#python372-windowsservercore-1709)
+-	[`python:3.7.2-windowsservercore-1803`](#python372-windowsservercore-1803)
+-	[`python:3.7.2-windowsservercore-1809`](#python372-windowsservercore-1809)
 -	[`python:3.7.2-windowsservercore-ltsc2016`](#python372-windowsservercore-ltsc2016)
 -	[`python:3.7-alpine`](#python37-alpine)
 -	[`python:3.7-alpine3.8`](#python37-alpine38)
@@ -123,6 +135,8 @@
 -	[`python:3.7-stretch`](#python37-stretch)
 -	[`python:3.7-windowsservercore`](#python37-windowsservercore)
 -	[`python:3.7-windowsservercore-1709`](#python37-windowsservercore-1709)
+-	[`python:3.7-windowsservercore-1803`](#python37-windowsservercore-1803)
+-	[`python:3.7-windowsservercore-1809`](#python37-windowsservercore-1809)
 -	[`python:3.7-windowsservercore-ltsc2016`](#python37-windowsservercore-ltsc2016)
 -	[`python:3-alpine`](#python3-alpine)
 -	[`python:3-alpine3.8`](#python3-alpine38)
@@ -132,6 +146,8 @@
 -	[`python:3-stretch`](#python3-stretch)
 -	[`python:3-windowsservercore`](#python3-windowsservercore)
 -	[`python:3-windowsservercore-1709`](#python3-windowsservercore-1709)
+-	[`python:3-windowsservercore-1803`](#python3-windowsservercore-1803)
+-	[`python:3-windowsservercore-1809`](#python3-windowsservercore-1809)
 -	[`python:3-windowsservercore-ltsc2016`](#python3-windowsservercore-ltsc2016)
 -	[`python:alpine`](#pythonalpine)
 -	[`python:alpine3.8`](#pythonalpine38)
@@ -142,6 +158,8 @@
 -	[`python:stretch`](#pythonstretch)
 -	[`python:windowsservercore`](#pythonwindowsservercore)
 -	[`python:windowsservercore-1709`](#pythonwindowsservercore-1709)
+-	[`python:windowsservercore-1803`](#pythonwindowsservercore-1803)
+-	[`python:windowsservercore-1809`](#pythonwindowsservercore-1809)
 -	[`python:windowsservercore-ltsc2016`](#pythonwindowsservercore-ltsc2016)
 
 ## `python:2`
@@ -6376,6 +6394,14 @@ CMD ["python"]
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `python:2.7.15-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:2.7.15-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `python:2.7.15-windowsservercore-ltsc2016`
 
 ```console
@@ -10321,6 +10347,14 @@ CMD ["python"]
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `python:2.7-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:2.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `python:2.7-windowsservercore-ltsc2016`
 
 ```console
@@ -14265,6 +14299,14 @@ CMD ["python"]
 		Last Modified: Wed, 13 Feb 2019 11:08:01 GMT  
 		Size: 1.2 KB (1200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:2-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:2-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `python:2-windowsservercore-ltsc2016`
 
@@ -36902,6 +36944,14 @@ CMD ["python"]
 		Size: 1.2 KB (1203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `python:3.6.8-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:3.6.8-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `python:3.6.8-windowsservercore-ltsc2016`
 
 ```console
@@ -40595,6 +40645,14 @@ CMD ["python"]
 		Last Modified: Wed, 13 Feb 2019 11:06:45 GMT  
 		Size: 1.2 KB (1203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:3.6-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:3.6-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `python:3.6-windowsservercore-ltsc2016`
 
@@ -45220,6 +45278,14 @@ CMD ["python"]
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `python:3.7.2-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:3.7.2-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `python:3.7.2-windowsservercore-ltsc2016`
 
 ```console
@@ -48312,6 +48378,14 @@ CMD ["python"]
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `python:3.7-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:3.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `python:3.7-windowsservercore-ltsc2016`
 
 ```console
@@ -51403,6 +51477,14 @@ CMD ["python"]
 		Last Modified: Wed, 13 Feb 2019 11:05:26 GMT  
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:3-windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:3-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `python:3-windowsservercore-ltsc2016`
 
@@ -55261,6 +55343,14 @@ CMD ["python"]
 		Last Modified: Wed, 13 Feb 2019 11:05:26 GMT  
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:windowsservercore-1803`
+
+**does not exist** (yet?)
+
+## `python:windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `python:windowsservercore-ltsc2016`
 
