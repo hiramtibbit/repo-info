@@ -4,8 +4,8 @@
 
 -	[`xwiki:10`](#xwiki10)
 -	[`xwiki:10.11`](#xwiki1011)
--	[`xwiki:10.11.2`](#xwiki10112)
--	[`xwiki:10.11.2-postgres-tomcat`](#xwiki10112-postgres-tomcat)
+-	[`xwiki:10.11.3`](#xwiki10113)
+-	[`xwiki:10.11.3-postgres-tomcat`](#xwiki10113-postgres-tomcat)
 -	[`xwiki:10.11-postgres-tomcat`](#xwiki1011-postgres-tomcat)
 -	[`xwiki:10-mysql-tomcat`](#xwiki10-mysql-tomcat)
 -	[`xwiki:10-postgres-tomcat`](#xwiki10-postgres-tomcat)
@@ -414,7 +414,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.11.2`
+## `xwiki:10.11.3`
 
 ```console
 $ docker pull xwiki@sha256:8f58f7e1e64350b2a917911a039dc6787391bfb774e3e45d509fbe3ac5cbd852
@@ -424,7 +424,7 @@ $ docker pull xwiki@sha256:8f58f7e1e64350b2a917911a039dc6787391bfb774e3e45d509fb
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:10.11.2` - linux; amd64
+### `xwiki:10.11.3` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:cf3bf1494bd86e423fa912418e74a282a25e5f35842ff2ca585bd9c7cd400f6f
@@ -605,7 +605,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `xwiki:10.11.2-postgres-tomcat`
+## `xwiki:10.11.3-postgres-tomcat`
 
 ```console
 $ docker pull xwiki@sha256:431430b3f6e06fedfb9b26da43e0e9edc2167607ca2b7f9851c570a525bd476e
@@ -616,7 +616,7 @@ $ docker pull xwiki@sha256:431430b3f6e06fedfb9b26da43e0e9edc2167607ca2b7f9851c57
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `xwiki:10.11.2-postgres-tomcat` - linux; amd64
+### `xwiki:10.11.3-postgres-tomcat` - linux; amd64
 
 ```console
 $ docker pull xwiki@sha256:86679169a87f6e167de896e465b7ee0d945365cb92acb1b0a95900df361e1c73
@@ -797,7 +797,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `xwiki:10.11.2-postgres-tomcat` - linux; arm64 variant v8
+### `xwiki:10.11.3-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
 $ docker pull xwiki@sha256:bad6a12c08046888aa89fcda5afb5707bace43ed7096ceba8fe534c6b47fa977
