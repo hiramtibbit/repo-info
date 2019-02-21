@@ -1,10 +1,10 @@
-# `percona:psmdb-3.6.8`
+# `percona:psmdb-3.6.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f0130edebec148208d5a3a687cb07bb2929ef8505c5195e015f47020fcc10ff`
-- Created: `2019-01-30T02:21:05.31500239Z`
-- Virtual Size: ~ 340.66 Mb  
+- Image ID: `sha256:7fb79d8f4ddaf2143f7f503c67b9960e29140ceacb83509c600a68858fd319cb`
+- Created: `2019-02-19T22:28:17.951222911Z`
+- Virtual Size: ~ 457.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,5 +12,5 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PERCONA_MAJOR=36`
-  - `PERCONA_VERSION=3.6.8-2.0.el7`
+  - `PERCONA_VERSION=3.6.10-3.0.el7`
   - `K8S_TOOLS_VERSION=0.4.1`
