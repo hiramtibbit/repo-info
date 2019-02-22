@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ddd2428de161664d9e6ef7b0634b775a6d8c37d57204bf67c87e8297ff10b5f`
-- Created: `2019-02-12T21:50:25.944216239Z`
-- Virtual Size: ~ 686.00 Mb  
+- Image ID: `sha256:d561c27788aa81a5600aca4e952a5fe166206338c8f1e3faf069c68501ffea46`
+- Created: `2019-02-22T01:01:31.840077205Z`
+- Virtual Size: ~ 685.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -14,7 +14,7 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=19.0.2`
+  - `PYTHON_PIP_VERSION=19.0.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4751,20 +4751,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u9
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.dsc' systemd_215-17+deb8u9.dsc 3804 SHA256:2edc973d09ee17f8877e5a7fab4dfde77ce6304abcebcf0ef9d587d30441b452
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u9.debian.tar.xz' systemd_215-17+deb8u9.debian.tar.xz 244644 SHA256:6416de84422aae598a09f8652dcabe00c484e4ed7babcc8b595c8edf5fbd9fc1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/215-17+deb8u9/
 
-- https://sources.debian.net/src/systemd/215-17+deb8u9/ (for browsing the source)
-- https://sources.debian.net/src/systemd/215-17+deb8u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/215-17+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
