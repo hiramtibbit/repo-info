@@ -1,16 +1,16 @@
-# `erlang:20.3.8.18-slim`
+# `erlang:20.3.8.20-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34e4e57463b59eb81f9310b9d9249db74a15b38d1cba5ef65d4473ba626d4305`
-- Created: `2019-02-06T08:42:12.270985929Z`
-- Virtual Size: ~ 258.25 Mb  
+- Image ID: `sha256:0bcb3d7e0ed4d08e144a2962d18a60fce6551c65e943e4e204bedd6a50da0e44`
+- Created: `2019-02-20T23:17:12.840360899Z`
+- Virtual Size: ~ 268.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.3.8.18`
+  - `OTP_VERSION=20.3.8.20`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -581,12 +581,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.24-11+deb9u3`
-- `libc-dev-bin=2.24-11+deb9u3`
-- `libc6:amd64=2.24-11+deb9u3`
-- `libc6-dev:amd64=2.24-11+deb9u3`
 - `multiarch-support=2.24-11+deb9u3`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -605,6 +602,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.24-11+deb9u3/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.24-11+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.24-11+deb9u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.24-11+deb9u4`
+
+Binary Packages:
+
+- `libc-dev-bin=2.24-11+deb9u4`
+- `libc6:amd64=2.24-11+deb9u4`
+- `libc6-dev:amd64=2.24-11+deb9u4`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.24-11+deb9u4
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11+deb9u4.dsc' glibc_2.24-11+deb9u4.dsc 8386 SHA256:0cfc10b8f713f41c087476a0a9f6687b4ccb22c5652502bfe8e5c0798f8b097f
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11+deb9u4.debian.tar.xz' glibc_2.24-11+deb9u4.debian.tar.xz 1060620 SHA256:bcf78fb5157cd84d26cdc4b3366b1d5e92fc13609a465ac63ff322a5adac3cbc
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.24-11+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.24-11+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.24-11+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.1.18-8~deb9u3`
 
@@ -1060,11 +1085,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtool/2.4.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtool/2.4.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.130-2`
+### `dpkg` source package: `linux=4.9.144-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.130-2`
+- `linux-libc-dev:amd64=4.9.144-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1074,13 +1099,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.144-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144-3.dsc' linux_4.9.144-3.dsc 123200 SHA256:2f93e12b9b7721796d990ee06fe14ebaea9daa7e8b13471890812a7f8358f782
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144.orig.tar.xz' linux_4.9.144.orig.tar.xz 94741144 SHA256:e505a81b9e6e8d995c38f790889c6043cc7e33d158179fbcb0d1947dcb49620f
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.144-3.debian.tar.xz' linux_4.9.144-3.debian.tar.xz 2651380 SHA256:71f8745f10a13f03746afff3247bc3f397fdcd0c64f61ff74831092c9111ffc5
+```
 
-- http://snapshot.debian.org/package/linux/4.9.130-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.144-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.144-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.144-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
