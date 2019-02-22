@@ -392,13 +392,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.2ubuntu2.dsc' dpkg_1.19.2ubuntu2.dsc 2157 SHA256:b054d56e3c04a6008f4dd365e9974752b59e4dcd6976c8da0201857b1b508d32
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.2ubuntu2.tar.xz' dpkg_1.19.2ubuntu2.tar.xz 4622368 SHA256:7ee424727480a3a78f0d447967ff445b26b6e5b33a1e49098a59ad9d5977f627
-```
 
 ### `dpkg` source package: `e2fsprogs=1.44.5-1`
 
