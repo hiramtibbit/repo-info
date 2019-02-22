@@ -207,13 +207,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.dsc' base-files_9.4ubuntu4.7.dsc 1226 SHA256:cc4e66c0cfedf2893bab541316713f28b35f4d0833d0c5f31837db9b1ea686c8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.tar.xz' base-files_9.4ubuntu4.7.tar.xz 63132 SHA256:da2f5f7e2ac681435a3251d969d6d50d8be3716bcee62b024ae59e4cc6c52eb2
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -285,14 +281,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.7.dsc' binutils_2.26.1-1ubuntu1~16.04.7.dsc 3753 SHA256:2dbd2cb29e15b42eec4b8813b05142bb8c388d94d24e18de946551393d813cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.7.diff.gz' binutils_2.26.1-1ubuntu1~16.04.7.diff.gz 235722 SHA256:d39ec93a75e3a9d0930b4fa7cf20efd81a1ad0aad371ae3c5cc27f9c51eb29bf
-```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
 
@@ -1191,9 +1182,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
@@ -1561,14 +1552,9 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.dsc' kmod_22-1ubuntu5.1.dsc 2165 SHA256:b7d1bd8258fa8d3120522a82f4618ab55bbf3ee03ea79c5f0f1209e075968102
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.1.debian.tar.xz' kmod_22-1ubuntu5.1.debian.tar.xz 14388 SHA256:87d7f5e60603184b2c7a4570b6b614da7ca459b838b8f67965581637d33b2211
-```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.1`
 
