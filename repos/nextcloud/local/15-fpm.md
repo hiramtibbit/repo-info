@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f20dd916e4798802ddd0a3bba4bbae9c4e4570379f18a7192f89ae8097215ae0`
-- Created: `2019-02-12T00:35:24.675172722Z`
-- Virtual Size: ~ 578.28 Mb  
+- Image ID: `sha256:672f7ce080b3ae0c6006ceba3c88fa4a76b3cfc5f0503a846fe47adb6efdcb77`
+- Created: `2019-02-22T02:47:18.658947708Z`
+- Virtual Size: ~ 577.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2871,11 +2871,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.10-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.11-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.10-0+deb9u1`
+- `libpq5:amd64=9.6.11-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2897,17 +2897,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.10-0+deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.dsc' postgresql-9.6_9.6.10-0+deb9u1.dsc 3709 SHA256:cefe47cfbf0d58cb55644de47f76ecff57ab9043f057635857941b1f1405d1c5
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10.orig.tar.bz2' postgresql-9.6_9.6.10.orig.tar.bz2 19991204 SHA256:8615acc56646401f0ede97a767dfd27ce07a8ae9c952afdb57163b7234fe8426
-'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.10-0+deb9u1.debian.tar.xz 23812 SHA256:8940b985ebfdcc3d1b09fdd3fa5e79ac55d6f70641baae1759e51b8ed6230d58
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.11-0+deb9u1
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11-0+deb9u1.dsc' postgresql-9.6_9.6.11-0+deb9u1.dsc 3709 SHA256:23911f168aa142cc997742ca6606486174f1e5efb23fc2d33486f70256d7ff3f
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11.orig.tar.bz2' postgresql-9.6_9.6.11.orig.tar.bz2 20009048 SHA256:38250adc69a1e8613fb926c894cda1d01031391a03648894b9a6e13ff354a530
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.11-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.11-0+deb9u1.debian.tar.xz 23968 SHA256:06082c0afa7ce1841dc73c61b503b4aff8235450c48abd389ef881b6312817b3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.10-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.10-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-9.6/9.6.11-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.11-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.11-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=0.16-2`
 
