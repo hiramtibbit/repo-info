@@ -1,10 +1,10 @@
-# `mariadb:10.3.12-bionic`
+# `mariadb:10.3.13-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1571059e8458a8cd7d7d98d65ffb5ed38fe3812a47ce8ac47f830f022af15fe2`
-- Created: `2019-02-06T11:15:12.642736076Z`
-- Virtual Size: ~ 367.65 Mb  
+- Image ID: `sha256:230ef4d856a3ec692e0dd0b013b276f28ec4dd08ff2d0fdea9fb32e3c412a309`
+- Created: `2019-02-22T00:31:07.175934942Z`
+- Virtual Size: ~ 367.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	177F4010FE56CA3336300305F1656F24C74CD1D8 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.3`
-  - `MARIADB_VERSION=1:10.3.12+maria~bionic`
+  - `MARIADB_VERSION=1:10.3.13+maria~bionic`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1602,18 +1602,18 @@ $ apt-get source -qq --print-uris lz4=0.0~r131-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_0.0~r131-2ubuntu3.debian.tar.xz' lz4_0.0~r131-2ubuntu3.debian.tar.xz 5340 SHA256:94834bac922397529ffc185f9c4c7e7a6eb1ef3bc527f3fcd26e36fc9430afa7
 ```
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.12+maria~bionic`
+### `dpkg` source package: `mariadb-10.3=1:10.3.13+maria~bionic`
 
 Binary Packages:
 
-- `mariadb-backup=1:10.3.12+maria~bionic`
-- `mariadb-client-10.3=1:10.3.12+maria~bionic`
-- `mariadb-client-core-10.3=1:10.3.12+maria~bionic`
-- `mariadb-common=1:10.3.12+maria~bionic`
-- `mariadb-server=1:10.3.12+maria~bionic`
-- `mariadb-server-10.3=1:10.3.12+maria~bionic`
-- `mariadb-server-core-10.3=1:10.3.12+maria~bionic`
-- `mysql-common=1:10.3.12+maria~bionic`
+- `mariadb-backup=1:10.3.13+maria~bionic`
+- `mariadb-client-10.3=1:10.3.13+maria~bionic`
+- `mariadb-client-core-10.3=1:10.3.13+maria~bionic`
+- `mariadb-common=1:10.3.13+maria~bionic`
+- `mariadb-server=1:10.3.13+maria~bionic`
+- `mariadb-server-10.3=1:10.3.13+maria~bionic`
+- `mariadb-server-core-10.3=1:10.3.13+maria~bionic`
+- `mysql-common=1:10.3.13+maria~bionic`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1622,9 +1622,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.12+maria~bionic
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.12+maria~bionic.dsc' mariadb-10.3_10.3.12+maria~bionic.dsc 3616 SHA256:787623c80aa5667dae2bba5c97ca43544b1ed49b4fee3e916bf53cc9b6d64f40
-'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.12+maria~bionic.tar.xz' mariadb-10.3_10.3.12+maria~bionic.tar.xz 44131152 SHA256:ae7508b5c86b9e10380fa5af4890c7b7766c072a55847f9dc86e8028a099a5f1
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.13+maria~bionic
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.13+maria~bionic.dsc' mariadb-10.3_10.3.13+maria~bionic.dsc 3432 SHA256:21a7ebcd084937de0fff1d998fab3a437ab25b9ae2b48ce28016fc1cd353bce4
+'http://ftp.osuosl.org/pub/mariadb/repo/10.3/ubuntu/pool/main/m/mariadb-10.3/mariadb-10.3_10.3.13+maria~bionic.tar.xz' mariadb-10.3_10.3.13+maria~bionic.tar.xz 44159600 SHA256:733833fb92d5e7167804985d9370231e98208b9997fbd7fa17c685ff18eb0bac
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu3`
