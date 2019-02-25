@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6bd89b3ffdb7ac46d2624a9286ace22ede5c39aef3322ae1d9783eef2667f94e`
-- Created: `2019-02-12T22:24:49.891735748Z`
+- Image ID: `sha256:3fff890a31756fa6beeb631b8cdf56ec8a5de04dcc4def868ad3290634329d9e`
+- Created: `2019-02-22T02:19:32.28719456Z`
 - Virtual Size: ~ 608.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=19.0.2`
+  - `PYTHON_PIP_VERSION=19.0.3`
   - `PIP_NO_CACHE_DIR=off`
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
   - `GOSU_VERSION=1.10`
@@ -2212,25 +2212,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.20.2-3+deb8u12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.4=9.4.20-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.21-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.20-0+deb8u1`
-- `libpq5:amd64=9.4.20-0+deb8u1`
+- `libpq-dev=9.4.21-0+deb8u1`
+- `libpq5:amd64=9.4.21-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.21-0+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.21-0+deb8u1.dsc' postgresql-9.4_9.4.21-0+deb8u1.dsc 3546 SHA256:16df9a286ca57281751c17bad778c52caf157d666b098083c86d84d94c4ca35e
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.21.orig.tar.bz2' postgresql-9.4_9.4.21.orig.tar.bz2 16871522 SHA256:0049b4d239a00654e792997aff32a0be7a6bdd922b5ca97f1a06797cd4d06006
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.21-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.21-0+deb8u1.debian.tar.xz 29188 SHA256:325829d142e41c2f1a9ca3a72790b3fdf6d67b0d104baf22763c743e9dfdde80
+```
 
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.20-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.4/9.4.21-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.21-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.21-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9+deb8u1`
 
