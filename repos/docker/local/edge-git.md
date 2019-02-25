@@ -1,10 +1,10 @@
-# `docker:18.06.2-ce-git`
+# `docker:18.06.3-ce-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a8a5020ac47e2e6b59b8577cf651a6b342b05d489a95adbadd06f5ae3a4ad23`
-- Created: `2019-02-12T00:19:57.6008833Z`
-- Virtual Size: ~ 169.51 Mb  
+- Image ID: `sha256:12bcbf3461efc5e39a31794b03fe96bf2fec13fde189bc0d147424756371bb01`
+- Created: `2019-02-22T00:20:03.898858286Z`
+- Virtual Size: ~ 169.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,4 +12,4 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=18.06.2-ce`
+  - `DOCKER_VERSION=18.06.3-ce`
