@@ -240,13 +240,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.dsc' base-files_9.4ubuntu4.7.dsc 1226 SHA256:cc4e66c0cfedf2893bab541316713f28b35f4d0833d0c5f31837db9b1ea686c8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.7.tar.xz' base-files_9.4ubuntu4.7.tar.xz 63132 SHA256:da2f5f7e2ac681435a3251d969d6d50d8be3716bcee62b024ae59e4cc6c52eb2
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -297,14 +293,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.11
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.11.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.11.dsc 3870 SHA256:8259171ae42e46d6af8b9b0d7f6240d915fbec0a8fa45f5989d5717d6332441a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.11.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.11.debian.tar.xz 91244 SHA256:aa37992c2f5b82d044edfd0bd89cde5c5fd28aefdf56968f811d0fe355ca2bf3
-```
 
 ### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.7`
 
