@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:b007c12d48c663cf9c7b9674951a0ea8216123481a06fa5a443ce20f7c320e34
+$ docker pull alt@sha256:4e0342116a9d273ef9d30cab139186fbb95ca892eb2642ba235a3a04e8d43223
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,29 +13,29 @@ $ docker pull alt@sha256:b007c12d48c663cf9c7b9674951a0ea8216123481a06fa5a443ce20
 ### `alt:sisyphus` - linux; amd64
 
 ```console
-$ docker pull alt@sha256:b305ffbd6aab8ca75bd173a982b5f9f80da6e8acfe48c29311259486926f8936
+$ docker pull alt@sha256:b3d26aa83f1ab393554e3a677f1592847f4a028e6b5209993d7784c2b95dfbcc
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.6 MB (42625649 bytes)**  
+-	Total Size: **45.9 MB (45857805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8505a3f83aa5d4d5e04768e68527a6f634bf1cc217049fee7306f65f3a3a921a`
+-	Image ID: `sha256:b6bdf0b5d3db1ca20a1e066dcd25fa31a480efee92ac283c1ab7a6bd6be1da10`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 26 Sep 2018 21:19:34 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Wed, 26 Sep 2018 21:19:56 GMT
-ADD file:007c98b375f6b852285928e3d1e6c8c2fc51d8f69a33efa4799a9ec3e2099043 in / 
-# Wed, 26 Sep 2018 21:19:56 GMT
+# Mon, 25 Feb 2019 21:19:46 GMT
+ADD file:96edc369a6316da7aa427152b5b868a0d9d4eeb85afd39bdc4a32175885466e3 in / 
+# Mon, 25 Feb 2019 21:19:46 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:c455b2c304d6b83ad9711abd45ffa8138fcb1a0b980a221b35acd01249c0d005`  
-		Last Modified: Wed, 26 Sep 2018 21:20:39 GMT  
-		Size: 42.6 MB (42625649 bytes)  
+	-	`sha256:d1d09aa6ecfe3992b9847ce889fe7971ed1da15e4c642b1e87dad12d96f70ef1`  
+		Last Modified: Mon, 25 Feb 2019 21:20:16 GMT  
+		Size: 45.9 MB (45857805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:sisyphus` - linux; arm64 variant v8
