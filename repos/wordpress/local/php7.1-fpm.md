@@ -1,10 +1,10 @@
-# `wordpress:5.0.3-php7.1-fpm`
+# `wordpress:5.1.0-php7.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3518b01367f5c8b96931b982366c8e1492162be80928782a4442b24a9108bcd`
-- Created: `2019-02-22T02:24:45.035545142Z`
-- Virtual Size: ~ 400.42 Mb  
+- Image ID: `sha256:926275b0267fe704f580be20ba17bf881807a77065f71d00df2b0c547d18b027`
+- Created: `2019-02-25T21:51:53.53113742Z`
+- Virtual Size: ~ 401.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.26.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=10b7ae634c12852fae52a22dc2262e5f12418ad59fd20da2d00d71a212235d31`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.0.3`
-  - `WORDPRESS_SHA1=f9a4b482288b5be7a71e9f3dc9b5b0c1f881102b`
+  - `WORDPRESS_VERSION=5.1`
+  - `WORDPRESS_SHA1=830eadf0afa15928d7f6856b1b85bf57b8e1f585`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `wordpress:5.0.3-php7.3-fpm-alpine`
+# `wordpress:5.1.0-php7.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:534a5eaec48ee26db9e7d1f5b26fbbb0c1f89001e1576977c156e181c45fc65b`
-- Created: `2019-02-22T02:34:49.603914053Z`
-- Virtual Size: ~ 123.54 Mb  
+- Image ID: `sha256:c327ff55b892e1e47e4108dba6c9aeb5a00666139a42214b6bbfe946825001f5`
+- Created: `2019-02-25T21:53:04.458453156Z`
+- Virtual Size: ~ 124.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,5 +23,5 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.3.2.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=010b868b4456644ae227d05ad236c8b0a1f57dc6320e7e5ad75e86c5baf0a9a8`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.0.3`
-  - `WORDPRESS_SHA1=f9a4b482288b5be7a71e9f3dc9b5b0c1f881102b`
+  - `WORDPRESS_VERSION=5.1`
+  - `WORDPRESS_SHA1=830eadf0afa15928d7f6856b1b85bf57b8e1f585`
