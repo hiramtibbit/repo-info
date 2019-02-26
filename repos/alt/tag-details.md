@@ -143,7 +143,7 @@ CMD ["/bin/bash"]
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:4e0342116a9d273ef9d30cab139186fbb95ca892eb2642ba235a3a04e8d43223
+$ docker pull alt@sha256:9c13c063c1584ca4fbe933440c9e3e51cb04de2c438ac66b7dd195ef7235c4c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -183,29 +183,29 @@ CMD ["/bin/bash"]
 ### `alt:sisyphus` - linux; arm64 variant v8
 
 ```console
-$ docker pull alt@sha256:81cc6f321a7e92a494396c086e6afe9f2e9b1ed3c6a8f2ad34717c4e4569b115
+$ docker pull alt@sha256:e90d208ae1fbabc6fe87843f8614449a5537c4e662c9da642efe28758e3ad54c
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41919124 bytes)**  
+-	Total Size: **44.5 MB (44533950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1579c1e37142d1e097baff2d831cd6d449c23221870fefb63073559e88884d3e`
+-	Image ID: `sha256:1c95c9ced87790dda5cd09d0a1cd72839a86d1688a9062404d046702f019c7ba`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 27 Sep 2018 08:40:47 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Thu, 27 Sep 2018 08:40:54 GMT
-ADD file:377ef252ccf074c451e7a4058acaf3ce2a3a29ebac64eed8926891e5d1343487 in / 
-# Thu, 27 Sep 2018 08:40:59 GMT
+# Tue, 26 Feb 2019 09:46:03 GMT
+ADD file:ae4bd131af2b983c687cb9138ca5cbb0ed253b26f8b896a40788fb62a2bcf5e3 in / 
+# Tue, 26 Feb 2019 09:46:04 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:ba8e36de00aa8897efb5f0206004b5949651357247c1ba558e7afc9a49b5cbbf`  
-		Last Modified: Thu, 27 Sep 2018 08:41:36 GMT  
-		Size: 41.9 MB (41919124 bytes)  
+	-	`sha256:ebef95ef4889e194399093c6b7166eb4df9054d8aa459ebae4ffaf7559cbb05f`  
+		Last Modified: Tue, 26 Feb 2019 09:46:30 GMT  
+		Size: 44.5 MB (44533950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:sisyphus` - linux; 386
