@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f350428b4dd69d5c973119d8ad06b5235082ef4c14a44591f12c52948378714`
-- Created: `2019-02-12T22:20:18.922212064Z`
-- Virtual Size: ~ 549.42 Mb  
+- Image ID: `sha256:dbb73a5ad7f324e743354dfa08eec0248b6c5d1ee401c6dfe951c2b0f465a52b`
+- Created: `2019-02-22T01:59:52.63903402Z`
+- Virtual Size: ~ 559.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.15`
-  - `PYTHON_PIP_VERSION=19.0.2`
+  - `PYTHON_PIP_VERSION=19.0.3`
   - `PIP=9.0.3`
   - `ZC_BUILDOUT=2.11.4`
   - `SETUPTOOLS=39.1.0`
@@ -803,10 +803,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.24-11+deb9u3`
-- `libc6:amd64=2.24-11+deb9u3`
 - `multiarch-support=2.24-11+deb9u3`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -825,6 +824,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.24-11+deb9u3/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.24-11+deb9u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.24-11+deb9u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.24-11+deb9u4`
+
+Binary Packages:
+
+- `libc6:amd64=2.24-11+deb9u4`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.24-11+deb9u4
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11+deb9u4.dsc' glibc_2.24-11+deb9u4.dsc 8386 SHA256:0cfc10b8f713f41c087476a0a9f6687b4ccb22c5652502bfe8e5c0798f8b097f
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11+deb9u4.debian.tar.xz' glibc_2.24-11+deb9u4.debian.tar.xz 1060620 SHA256:bcf78fb5157cd84d26cdc4b3366b1d5e92fc13609a465ac63ff322a5adac3cbc
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.24-11+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.24-11+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.24-11+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
