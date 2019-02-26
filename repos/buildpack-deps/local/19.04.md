@@ -1926,14 +1926,9 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/d
 - `JPEG`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=2.0.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.1-0ubuntu1.dsc' libjpeg-turbo_2.0.1-0ubuntu1.dsc 2330 SHA256:9abc089f4cf27317da551b7b71167661aaa8b380fa94c72c293ae184740de591
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.1.orig.tar.gz' libjpeg-turbo_2.0.1.orig.tar.gz 2159130 SHA256:e5f86cec31df1d39596e0cca619ab1b01f99025a27dafdfc97a30f3a12f866ff
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.1-0ubuntu1.debian.tar.xz' libjpeg-turbo_2.0.1-0ubuntu1.debian.tar.xz 16996 SHA256:9fca06835b3141c3da3461031e8e904693a12bc3e64c322f6e6f29ed8841f7fe
-```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -2928,13 +2923,13 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris netbase=5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.5.dsc' netbase_5.5.dsc 1297 SHA256:eba0f70b861291aadffc990b4fa39cd59d9cdb0a0ed63399eac2af217b9fc0cd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.5.tar.xz' netbase_5.5.tar.xz 31668 SHA256:309bddc69a43b98e5a450992b70cdfc0e3d1afb9107bc631d04b0714be98f88b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/netbase/5.5/
+
 
 ### `dpkg` source package: `nettle=3.4.1-1`
 
