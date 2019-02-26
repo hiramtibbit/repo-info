@@ -113,8 +113,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.0.1ubuntu2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.dsc' apt_1.0.1ubuntu2.19.dsc 2407 SHA256:ead36e8634a3ca6da5c0d657de4c06c522e7b3a78b130b75db11ed91e8389413
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.tar.xz' apt_1.0.1ubuntu2.19.tar.xz 1782488 SHA256:9202228f116d2b8be351f901aebff4c0ec6993db20849ecb9e9b5576ae46698f
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.dsc' apt_1.0.1ubuntu2.19.dsc 2407 SHA256:ead36e8634a3ca6da5c0d657de4c06c522e7b3a78b130b75db11ed91e8389413
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.tar.xz' apt_1.0.1ubuntu2.19.tar.xz 1782488 SHA256:9202228f116d2b8be351f901aebff4c0ec6993db20849ecb9e9b5576ae46698f
 ```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
