@@ -2,6 +2,8 @@
 
 # Tags of `gazebo`
 
+-	[`gazebo:gzserver10`](#gazebogzserver10)
+-	[`gazebo:gzserver10-bionic`](#gazebogzserver10-bionic)
 -	[`gazebo:gzserver7`](#gazebogzserver7)
 -	[`gazebo:gzserver7-xenial`](#gazebogzserver7-xenial)
 -	[`gazebo:gzserver8`](#gazebogzserver8)
@@ -11,6 +13,8 @@
 -	[`gazebo:gzserver9-stretch`](#gazebogzserver9-stretch)
 -	[`gazebo:gzserver9-xenial`](#gazebogzserver9-xenial)
 -	[`gazebo:latest`](#gazebolatest)
+-	[`gazebo:libgazebo10`](#gazebolibgazebo10)
+-	[`gazebo:libgazebo10-bionic`](#gazebolibgazebo10-bionic)
 -	[`gazebo:libgazebo7`](#gazebolibgazebo7)
 -	[`gazebo:libgazebo7-xenial`](#gazebolibgazebo7-xenial)
 -	[`gazebo:libgazebo8`](#gazebolibgazebo8)
@@ -19,6 +23,14 @@
 -	[`gazebo:libgazebo9-bionic`](#gazebolibgazebo9-bionic)
 -	[`gazebo:libgazebo9-stretch`](#gazebolibgazebo9-stretch)
 -	[`gazebo:libgazebo9-xenial`](#gazebolibgazebo9-xenial)
+
+## `gazebo:gzserver10`
+
+**does not exist** (yet?)
+
+## `gazebo:gzserver10-bionic`
+
+**does not exist** (yet?)
 
 ## `gazebo:gzserver7`
 
@@ -1512,6 +1524,14 @@ RUN apt-get update && apt-get install -q -y     libgazebo9-dev=9.6.0-1*     && r
 		Last Modified: Wed, 06 Feb 2019 21:42:53 GMT  
 		Size: 216.0 MB (215966537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `gazebo:libgazebo10`
+
+**does not exist** (yet?)
+
+## `gazebo:libgazebo10-bionic`
+
+**does not exist** (yet?)
 
 ## `gazebo:libgazebo7`
 
