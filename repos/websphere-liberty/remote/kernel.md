@@ -1,7 +1,7 @@
 ## `websphere-liberty:kernel`
 
 ```console
-$ docker pull websphere-liberty@sha256:4883bdfea4af45f15c15bc18e0935d36a4087b97178da2ea1f05b12a12fa26a8
+$ docker pull websphere-liberty@sha256:22f8a8822119fc81fd23bdd3d37dee3ce6cc3d60398ef2ef1f10b571cab85f87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -398,14 +398,14 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ### `websphere-liberty:kernel` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:a5c7ccec4a246bf1336e808772b0e59047160b69777142bf14f1c9acc9ebad37
+$ docker pull websphere-liberty@sha256:a53df2b5b83492d08527c43c9efd59d5098c4ad8fc6a2b67d61f45a93ca1877a
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **198.7 MB (198708092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6676a9f295efa63867d63473b8f12dac73e5f69d435b9d7bf8dcd14753236b4b`
+-	Image ID: `sha256:00ec9bb236840abc2a59121e23bae739c56258d252500d25bfb493ef9f3ea4d7`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -459,15 +459,17 @@ COPY dir:20ba52f70d7ee9a58fbfb2097c8199f90e28f5e5410ef1e0c12c63d2cf799718 in /li
 # Sat, 02 Feb 2019 13:26:20 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && mkdir /etc/wlp     && mkdir /lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm /liberty     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/helpers     && chmod -R g+rwx /opt/ibm/helpers     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /lib.index.cache     && chmod -R g+rw /lib.index.cache     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default
-# Sat, 02 Feb 2019 13:26:21 GMT
+# Wed, 27 Feb 2019 12:45:07 GMT
+ENV RANDFILE=/tmp/.rnd JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/
+# Wed, 27 Feb 2019 12:45:07 GMT
 USER 1001
-# Sat, 02 Feb 2019 13:26:22 GMT
+# Wed, 27 Feb 2019 12:45:07 GMT
 EXPOSE 9080 9443
-# Sat, 02 Feb 2019 13:26:23 GMT
+# Wed, 27 Feb 2019 12:45:07 GMT
 ENV KEYSTORE_REQUIRED=true
-# Sat, 02 Feb 2019 13:26:24 GMT
+# Wed, 27 Feb 2019 12:45:07 GMT
 ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
-# Sat, 02 Feb 2019 13:26:25 GMT
+# Wed, 27 Feb 2019 12:45:07 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ```
 
