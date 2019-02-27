@@ -673,19 +673,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.2
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.2.dsc' dpkg_1.19.2.dsc 2031 SHA256:3fdd8d1030f5e7c3499ebebca7d9effd68110cbc44cf796ea4dfa60ddcdfb2e0
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.2.tar.xz' dpkg_1.19.2.tar.xz 4607868 SHA256:f8f2ae2cf8065b81239db960b3794099ec607c94a125cec61c986f68f9861b71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.19.2/
 
-- https://sources.debian.net/src/dpkg/1.19.2/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.19.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.19.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.19.4`
 
@@ -706,9 +700,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.19.4
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.19.4.dsc' dpkg_1.19.4.dsc 2112 SHA256:659f6d2deeabe88944eecc69710b77bb34d55b7cf6ffe76cdab7dc735ca75f63
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.19.4.tar.xz' dpkg_1.19.4.tar.xz 4645784 SHA256:c15234e98655689586bff2d517a6fdc6135d139c54d52ae9cfa6a90007fee0ae
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.4.dsc' dpkg_1.19.4.dsc 2112 SHA256:659f6d2deeabe88944eecc69710b77bb34d55b7cf6ffe76cdab7dc735ca75f63
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.4.tar.xz' dpkg_1.19.4.tar.xz 4645784 SHA256:c15234e98655689586bff2d517a6fdc6135d139c54d52ae9cfa6a90007fee0ae
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dpkg/1.19.4/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.19.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.19.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.44.5-1`
 
@@ -786,21 +786,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.175-2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175-2.dsc' elfutils_0.175-2.dsc 2568 SHA256:d256b8eaf5a3b8390b0a66d215a7bb11375c01a5fe1eb2b32861432249a9d1af
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2' elfutils_0.175.orig.tar.bz2 8786600 SHA256:f7ef925541ee32c6d15ae5cb27da5f119e01a5ccdbe9fe57bf836730d7b7a65b
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2.asc' elfutils_0.175.orig.tar.bz2.asc 488 SHA256:103ae1a12d0b67e2d783f36dc780acd533d5c2a9d6241bcd62cfe1f6fa891a16
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.175-2.debian.tar.xz' elfutils_0.175-2.debian.tar.xz 38308 SHA256:e4c0cfd5381387964fbb1ccee085b3b37564b16100eb36588ba72bba7eff062d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.175-2/
 
-- https://sources.debian.net/src/elfutils/0.175-2/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.175-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.175-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.6-1`
 
@@ -842,16 +834,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris findutils=4.6.0+git+20190105-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105-2.dsc' findutils_4.6.0+git+20190105-2.dsc 2137 SHA256:d9eb641c25d9350813698e52f8bf090cbdf7f4b41aeedf4eed503c222a75d5dc
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105.orig.tar.xz' findutils_4.6.0+git+20190105.orig.tar.xz 1882544 SHA256:455008c52c32e144abcc27ac36e296d0ce14ce608900f9506b49abe26dfe4663
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105-2.debian.tar.xz' findutils_4.6.0+git+20190105-2.debian.tar.xz 26516 SHA256:f259391f63c8306147d8fbafdf7823605f1ffcd14f484085271603d4abbf1d4f
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105-2.dsc' findutils_4.6.0+git+20190105-2.dsc 2137 SHA256:d9eb641c25d9350813698e52f8bf090cbdf7f4b41aeedf4eed503c222a75d5dc
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105.orig.tar.xz' findutils_4.6.0+git+20190105.orig.tar.xz 1882544 SHA256:455008c52c32e144abcc27ac36e296d0ce14ce608900f9506b49abe26dfe4663
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20190105-2.debian.tar.xz' findutils_4.6.0+git+20190105-2.debian.tar.xz 26516 SHA256:f259391f63c8306147d8fbafdf7823605f1ffcd14f484085271603d4abbf1d4f
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20190105-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20190105-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20190105-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.13.1-2`
 
@@ -1094,21 +1080,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.18.1-2
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-2.dsc' gdbm_1.18.1-2.dsc 2714 SHA256:b90f42975f7f8e1cfc117cd895334c7ea2e044294e9f7095dfdcd956d897b9cf
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz' gdbm_1.18.1.orig.tar.gz 941863 SHA256:86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1.orig.tar.gz.asc' gdbm_1.18.1.orig.tar.gz.asc 412 SHA256:3254738e7689e44ac65e78a766806828b8282e6bb1c0e5bb6156a99e567889a5
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.18.1-2.debian.tar.xz' gdbm_1.18.1-2.debian.tar.xz 28032 SHA256:e208756f7b1c57d51303c1b36cd5bc161b67db20544c6e73401df022d3f74b57
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.18.1-2/
 
-- https://sources.debian.net/src/gdbm/1.18.1-2/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.18.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.18.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.2-4`
 
@@ -3098,21 +3076,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.14-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14-2.dsc' p11-kit_0.23.14-2.dsc 2434 SHA256:2ea1f051714e892ee7a25d90c7f99185a2e33e15e0f7a5dce662eadb7428b66c
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14.orig.tar.gz' p11-kit_0.23.14.orig.tar.gz 1266595 SHA256:1cb9fa6d237539f25f62f4c3d4ec71a1c8e0772957ec45ec5af92134129e0d70
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14.orig.tar.gz.asc' p11-kit_0.23.14.orig.tar.gz.asc 900 SHA256:4ddc9b86cfed20c5456eb19ba3bc229ec9e0292a6b556c5727f94872b6039d97
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.14-2.debian.tar.xz' p11-kit_0.23.14-2.debian.tar.xz 22068 SHA256:da76f34e8deb921a4efac16ef2f0ddfcfc8c0faecb1293ef70ea364f28e21fe0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.14-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.14-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-4`
 
@@ -3127,20 +3097,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-4
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-4.dsc' pam_1.1.8-4.dsc 2625 SHA256:08b434543ee1c5cd4a8695d73a3216162986b332bfc046dd34ac6849290e9e0a
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-4.diff.gz' pam_1.1.8-4.diff.gz 141986 SHA256:3634b5199674481ed0302de35df9604dc13c76421d5d19eb6a3ab6e85c0402ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.1.8-4/
 
-- https://sources.debian.net/src/pam/1.1.8-4/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.1.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.1.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.42.4-6`
 
@@ -3750,21 +3713,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.93-6
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-6.dsc' sysvinit_2.93-6.dsc 2657 SHA256:ccfe5effc19998981e914b42bf483d23f0bba3f48961cb35ba74b2e367ca2a2a
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz' sysvinit_2.93.orig.tar.xz 117580 SHA256:472d460e233d981488509a167125a82925c8c9aba6b5608cb22598fdf326a8ff
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93.orig.tar.xz.asc' sysvinit_2.93.orig.tar.xz.asc 1076 SHA256:cf2b374a96276a16e3ef07ad2be596420f0d8d77227aad3144d7ab4ea165a4af
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.93-6.debian.tar.xz' sysvinit_2.93-6.debian.tar.xz 127192 SHA256:f62a12ab8f14e82c2d7d55e9c453d1fb21cd5ad7c5ee9ef2764e385205868b94
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/2.93-6/
 
-- https://sources.debian.net/src/sysvinit/2.93-6/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.93-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.93-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-4`
 
