@@ -1,7 +1,7 @@
 ## `websphere-liberty:springBoot2`
 
 ```console
-$ docker pull websphere-liberty@sha256:2156e5e8436577ecb262b31dc5c59f4a76b17d6fd13e4fb828dd1ec78889c67e
+$ docker pull websphere-liberty@sha256:c0a1ecab096cd203cf9c318e7dbdfe8d5cefb6f5a48a4eb9f229e0bf6d8693a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -164,14 +164,14 @@ RUN server start && server stop && rm -rf /output/resources/security/ /logs/* &&
 ### `websphere-liberty:springBoot2` - linux; 386
 
 ```console
-$ docker pull websphere-liberty@sha256:ca296b150060cdb33aff0ad49d96d716e89229543dc540d3f9234b242eca452f
+$ docker pull websphere-liberty@sha256:22dcf1d4cea8e41ab75d0b145b8cb0b2638289a9232543e2a1ed2fcc1047f86c
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.6 MB (218580049 bytes)**  
+-	Total Size: **224.6 MB (224574892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a072219b3f03fb9f0534f3e369ac10651ae3e002e9bfc8e8861961856bf85a40`
+-	Image ID: `sha256:eb93f900c1171ede3d77412cc9c9a8c5d5c6d5d6341b6edb192509ca8930e66e`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -225,26 +225,28 @@ COPY dir:20ba52f70d7ee9a58fbfb2097c8199f90e28f5e5410ef1e0c12c63d2cf799718 in /li
 # Sat, 02 Feb 2019 12:22:20 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && mkdir /etc/wlp     && mkdir /lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm /liberty     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/helpers     && chmod -R g+rwx /opt/ibm/helpers     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /lib.index.cache     && chmod -R g+rw /lib.index.cache     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default
-# Sat, 02 Feb 2019 12:22:20 GMT
+# Wed, 27 Feb 2019 12:05:09 GMT
+ENV RANDFILE=/tmp/.rnd JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/
+# Wed, 27 Feb 2019 12:05:09 GMT
 USER 1001
-# Sat, 02 Feb 2019 12:22:21 GMT
+# Wed, 27 Feb 2019 12:05:09 GMT
 EXPOSE 9080 9443
-# Sat, 02 Feb 2019 12:22:21 GMT
+# Wed, 27 Feb 2019 12:05:09 GMT
 ENV KEYSTORE_REQUIRED=true
-# Sat, 02 Feb 2019 12:22:21 GMT
+# Wed, 27 Feb 2019 12:05:09 GMT
 ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
-# Sat, 02 Feb 2019 12:22:21 GMT
+# Wed, 27 Feb 2019 12:05:10 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Sat, 02 Feb 2019 12:22:25 GMT
+# Wed, 27 Feb 2019 12:05:12 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Sat, 02 Feb 2019 12:37:59 GMT
+# Wed, 27 Feb 2019 12:19:44 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     jsp-2.3 servlet-4.0 springBoot-2.0 transportSecurity-1.0 webSocket-1.1   && mkdir /opt/ibm/wlp/usr/shared/resources/lib.index.cache   && ln -s /opt/ibm/wlp/usr/shared/resources/lib.index.cache /lib.index.cache   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Sat, 02 Feb 2019 12:37:59 GMT
+# Wed, 27 Feb 2019 12:19:44 GMT
 COPY file:3dbc7012596d01298b61adec3a50686ea3c8a1d1ac8b3161e2ede589a9f1c2c0 in /config/ 
-# Sat, 02 Feb 2019 12:38:09 GMT
+# Wed, 27 Feb 2019 12:19:51 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN server start && server stop && rm -rf /output/resources/security/ /logs/*
+RUN server start && server stop && rm -rf /output/resources/security/ /logs/* && chmod -R g+rwx /opt/ibm/wlp/output/*
 ```
 
 -	Layers:
@@ -296,17 +298,17 @@ RUN server start && server stop && rm -rf /output/resources/security/ /logs/*
 		Last Modified: Sat, 02 Feb 2019 12:45:19 GMT  
 		Size: 12.9 MB (12880927 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405e809fcebaf948e5520156a3d4dc13d4d2d1a0155754f1acc945fddf3b85d5`  
-		Last Modified: Sat, 02 Feb 2019 12:47:37 GMT  
-		Size: 20.5 MB (20511174 bytes)  
+	-	`sha256:3f493fe89a16c28ffe7c0bb2cb0c5f86c522c32b6a32064460e09aac143e8f2e`  
+		Last Modified: Wed, 27 Feb 2019 12:29:06 GMT  
+		Size: 25.7 MB (25731814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a8a2a628e9975c9baa3ec5a8bad156f4ef1be1b2ae04aee9f2e770de7d6f2ce`  
-		Last Modified: Sat, 02 Feb 2019 12:47:35 GMT  
-		Size: 554.0 B  
+	-	`sha256:f86b6edcefd914c2a3d347306b55c66e8e4705f73d0cbbf1f647358cd3606d74`  
+		Last Modified: Wed, 27 Feb 2019 12:29:02 GMT  
+		Size: 559.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc4c6f47bb3e465d84cb6935aa306476f7a19f20392ad6cbfb24f6e7d8f33d`  
-		Last Modified: Sat, 02 Feb 2019 12:47:39 GMT  
-		Size: 9.0 MB (8950165 bytes)  
+	-	`sha256:3b3af5ae17a941b4905cc0bb245e24236d5cf61a19568885eb9a56e8fab13968`  
+		Last Modified: Wed, 27 Feb 2019 12:29:06 GMT  
+		Size: 9.7 MB (9724363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:springBoot2` - linux; ppc64le
