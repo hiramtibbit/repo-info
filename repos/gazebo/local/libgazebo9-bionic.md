@@ -4798,9 +4798,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.dsc' libx11_1.6.4-3ubuntu0.1.dsc 2496 SHA256:522207baf69f09b8fd8a8a9d75fa7928c7378fe15db62ef2764ee70c880482e8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.diff.gz' libx11_1.6.4-3ubuntu0.1.diff.gz 43542 SHA256:d32eb7b1164342a5571799f89fef0d53f96a59d814f848a19ed637a4b5e57835
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.dsc' libx11_1.6.4-3ubuntu0.1.dsc 2496 SHA256:522207baf69f09b8fd8a8a9d75fa7928c7378fe15db62ef2764ee70c880482e8
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.diff.gz' libx11_1.6.4-3ubuntu0.1.diff.gz 43542 SHA256:d32eb7b1164342a5571799f89fef0d53f96a59d814f848a19ed637a4b5e57835
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -5985,14 +5985,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.1.dsc' nss_3.35-2ubuntu2.1.dsc 2347 SHA256:56a49b9507e5ac27d50b6b4a9e42d41e8450f210fa130740a0c630f60cfcea37
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.1.debian.tar.xz' nss_3.35-2ubuntu2.1.debian.tar.xz 36428 SHA256:f6b7d564c452920d204dd0cb1bae111ec12a814eae6ebe0f3573ec17b5d56c86
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1`
 
