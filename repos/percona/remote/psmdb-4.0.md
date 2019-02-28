@@ -1,7 +1,7 @@
 ## `percona:psmdb-4.0`
 
 ```console
-$ docker pull percona@sha256:4260c7a3ad94b1d4ab1758c6d1f6e893df72bb913b5f0d61c2dd8d5afbff8ff4
+$ docker pull percona@sha256:88b5677dabf5ab938444c9874752edfb6ee736e24f6a45d2c5fe5483d48137e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:4260c7a3ad94b1d4ab1758c6d1f6e893df72bb913b5f0d61c2d
 ### `percona:psmdb-4.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:7e5e2d08f28e8f3181681717daab2a2d86430dce4292ade84e5e75933f0585be
+$ docker pull percona@sha256:e6ebfdf79073d3c23f63c86f842243e59d6ac2a653377e560d276298ce8847d7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.3 MB (178325203 bytes)**  
+-	Total Size: **178.4 MB (178366084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50eec4df2be4a8f5c2e7ba15fddbcd6426d7f6765d2b6d758a291b4dc3dca176`
+-	Image ID: `sha256:95ebc39e64668bce7be47675a725b2a5e9302a7a1edb2131a8dbcf6827326ae7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -37,25 +37,25 @@ RUN export GNUPGHOME="$(mktemp -d)"         && gpg --keyserver hkp://p80.pool.sk
 RUN useradd -u 1001 -r -g 0 -s /sbin/nologin             -c "Default Application User" mongodb
 # Tue, 19 Feb 2019 22:26:26 GMT
 ENV PERCONA_MAJOR=40
-# Tue, 19 Feb 2019 22:26:26 GMT
-ENV PERCONA_VERSION=4.0.5-2.el7
-# Tue, 19 Feb 2019 22:26:26 GMT
+# Thu, 28 Feb 2019 22:19:57 GMT
+ENV PERCONA_VERSION=4.0.6-3.el7
+# Thu, 28 Feb 2019 22:19:57 GMT
 ENV K8S_TOOLS_VERSION=0.4.1
-# Tue, 19 Feb 2019 22:27:08 GMT
+# Thu, 28 Feb 2019 22:20:32 GMT
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm         && yum install -y                 percona-server-mongodb-server-${PERCONA_VERSION}                 percona-server-mongodb-mongos-${PERCONA_VERSION}                 percona-server-mongodb-shell-${PERCONA_VERSION}                 percona-server-mongodb-tools-${PERCONA_VERSION}                 curl                 jq         && yum clean all         && rm -rf /var/cache/yum /data/db  && mkdir -p /data/db         && chown -R 1001:0 /data/db
-# Tue, 19 Feb 2019 22:27:09 GMT
+# Thu, 28 Feb 2019 22:20:34 GMT
 RUN curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator     && curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck     && chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Tue, 19 Feb 2019 22:27:09 GMT
+# Thu, 28 Feb 2019 22:20:34 GMT
 VOLUME [/data/db]
-# Tue, 19 Feb 2019 22:27:10 GMT
+# Thu, 28 Feb 2019 22:20:34 GMT
 COPY file:73b257e28d42d38a579e50c8dbd964c054f38728692627d5438a0aa11526970b in /entrypoint.sh 
-# Tue, 19 Feb 2019 22:27:10 GMT
+# Thu, 28 Feb 2019 22:20:34 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Feb 2019 22:27:10 GMT
+# Thu, 28 Feb 2019 22:20:34 GMT
 EXPOSE 27017
-# Tue, 19 Feb 2019 22:27:10 GMT
+# Thu, 28 Feb 2019 22:20:35 GMT
 USER 1001
-# Tue, 19 Feb 2019 22:27:10 GMT
+# Thu, 28 Feb 2019 22:20:35 GMT
 CMD ["mongod"]
 ```
 
@@ -72,15 +72,15 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Feb 2019 22:29:45 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85f52ad039572485247711d4d7ebd1cc617db9210d6e17651f448e997f78624d`  
-		Last Modified: Tue, 19 Feb 2019 22:30:10 GMT  
-		Size: 90.7 MB (90680686 bytes)  
+	-	`sha256:db8969b9c8d677d12e80860bf6839ee9842d822e9be316ae93f727671a88c926`  
+		Last Modified: Thu, 28 Feb 2019 22:21:18 GMT  
+		Size: 90.7 MB (90721555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ba2c545ed8955569c57045d9957726e61f73b8abe6fc2b0806baed684105cef`  
-		Last Modified: Tue, 19 Feb 2019 22:29:46 GMT  
-		Size: 6.3 MB (6300364 bytes)  
+	-	`sha256:d75bf74e29f26f16ce5c230c43add4734ffb8263181eca5997ca13d491237bcb`  
+		Last Modified: Thu, 28 Feb 2019 22:21:02 GMT  
+		Size: 6.3 MB (6300375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c38adefef0a1547a54f34ada375dea916ac233cd5a1f1a2572b0c4855529046`  
-		Last Modified: Tue, 19 Feb 2019 22:29:45 GMT  
-		Size: 3.8 KB (3808 bytes)  
+	-	`sha256:d2a8b74c6d55691baaa9267d2205c81de061fec701fba4982080e2fb2a154282`  
+		Last Modified: Thu, 28 Feb 2019 22:21:03 GMT  
+		Size: 3.8 KB (3809 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
