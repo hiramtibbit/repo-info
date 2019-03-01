@@ -1543,15 +1543,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2n-1ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu6.1.dsc' openssl1.0_1.0.2n-1ubuntu6.1.dsc 2713 SHA256:6305757165cf052c3285dd5ad4097f8612a9cf05ba250ab522d2d06e41164eeb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz' openssl1.0_1.0.2n.orig.tar.gz 5375802 SHA256:370babb75f278c39e0c50e8c4e7493bc0f18db6867478341a832a982fd15a8fe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz.asc' openssl1.0_1.0.2n.orig.tar.gz.asc 455 SHA256:70ef16ae7776de3e69b28b47754d0a1fbed262e2a028c1fc866ad22201449c0a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu6.1.debian.tar.xz' openssl1.0_1.0.2n-1ubuntu6.1.debian.tar.xz 109436 SHA256:6fe5c0cb3b634a1dd1601661af953127dbfd4df3468a688354086107ca649184
-```
 
 ### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1`
 

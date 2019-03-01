@@ -677,15 +677,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.175-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.175-2.dsc' elfutils_0.175-2.dsc 2568 SHA256:d256b8eaf5a3b8390b0a66d215a7bb11375c01a5fe1eb2b32861432249a9d1af
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2' elfutils_0.175.orig.tar.bz2 8786600 SHA256:f7ef925541ee32c6d15ae5cb27da5f119e01a5ccdbe9fe57bf836730d7b7a65b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.175.orig.tar.bz2.asc' elfutils_0.175.orig.tar.bz2.asc 488 SHA256:103ae1a12d0b67e2d783f36dc780acd533d5c2a9d6241bcd62cfe1f6fa891a16
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.175-2.debian.tar.xz' elfutils_0.175-2.debian.tar.xz 38308 SHA256:e4c0cfd5381387964fbb1ccee085b3b37564b16100eb36588ba72bba7eff062d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/elfutils/0.175-2/
+
 
 ### `dpkg` source package: `expat=2.2.6-1`
 
