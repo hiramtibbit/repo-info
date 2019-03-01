@@ -1,7 +1,7 @@
 ## `photon:latest`
 
 ```console
-$ docker pull photon@sha256:267c3dd5a6fec179f4bcb3c9ab776c78614b68d6eb39116acd07c31a60c6f0e3
+$ docker pull photon@sha256:2e391216ce529a03935da38e2770269548a4928c99aacb324536dffd140945ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull photon@sha256:267c3dd5a6fec179f4bcb3c9ab776c78614b68d6eb39116acd07
 ### `photon:latest` - linux; amd64
 
 ```console
-$ docker pull photon@sha256:7ee57a485d67f481ae04f8f44e2ba9d2ee6bd35f08eb247fe815cfcd664a4c2a
+$ docker pull photon@sha256:9f0d4ac8bf8f601aaf6f2b08c5fe1fb89c15832ac6144bb955eaba84d24852db
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 MB (14161204 bytes)**  
+-	Total Size: **14.2 MB (14164658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d6a9df8b0f4a605ea1300eeb2db979a2d94dc150dd35490c723fb638ef456c4`
+-	Image ID: `sha256:521da0d6e67f7e4db47c09c301100db5dd44509ab41865259a51af4db13a3aac`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 25 Feb 2019 21:30:32 GMT
-ADD file:12a2c15267e46b6918cd2d762e65b135d52ce2eadfd035b274b847ee7ccd5d46 in / 
-# Mon, 25 Feb 2019 21:30:32 GMT
-LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20190225
-# Mon, 25 Feb 2019 21:30:32 GMT
+# Fri, 01 Mar 2019 22:20:35 GMT
+ADD file:d51597a9c26de1f208130faa12edc221439ae88ed8095f0e77cecd2d4ab19e40 in / 
+# Fri, 01 Mar 2019 22:20:36 GMT
+LABEL name=Photon OS 2.0 Base Image vendor=VMware build-date=20190301
+# Fri, 01 Mar 2019 22:20:36 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:92d680bec56aa27b122d7f0284c771d046a321814fccc8201a5aeeb2b0a3f6ea`  
-		Last Modified: Mon, 25 Feb 2019 21:31:21 GMT  
-		Size: 14.2 MB (14161204 bytes)  
+	-	`sha256:692d4dfe2b6b26e07c122ce3f286e707a816b6439f7fb525dc14379327212592`  
+		Last Modified: Fri, 01 Mar 2019 22:21:06 GMT  
+		Size: 14.2 MB (14164658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
