@@ -2882,14 +2882,9 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.5-4ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-4ubuntu0.2.dsc' libgd2_2.2.5-4ubuntu0.2.dsc 2333 SHA256:265d943968ba4b5b0becd5a2e7e14ab579176159d336b2673fda03e0330a9016
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5.orig.tar.gz' libgd2_2.2.5.orig.tar.gz 3326856 SHA256:150e6952af874bbccb33cf0f87288b41a8fd54f0ce4cff914ef90a80ef9d0162
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-4ubuntu0.2.debian.tar.xz' libgd2_2.2.5-4ubuntu0.2.debian.tar.xz 33260 SHA256:b157c646727527e146dd53a374ad4da6293d13c953f30758a2f9f154bb9c6fa1
-```
 
 ### `dpkg` source package: `libglvnd=1.0.0-2ubuntu2.2`
 

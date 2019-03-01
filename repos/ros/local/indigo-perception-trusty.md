@@ -3106,14 +3106,9 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.0-3ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.10.dsc' libgd2_2.1.0-3ubuntu0.10.dsc 2414 SHA256:999318e84137c3c196dfcf6c9885b1714012d3212870620917c8e2c6508dfad4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.10.debian.tar.gz' libgd2_2.1.0-3ubuntu0.10.debian.tar.gz 93868 SHA256:38ceb68d03ceccee55cbd2e824f6184b8a346e87f8fb85f39c779a53a0c72155
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2`
 
@@ -8637,15 +8632,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.dsc' sqlite3_3.8.2-1ubuntu2.1.dsc 2542 SHA256:9647daa58be12d77c0394f29b336f437455106efb89903fd06657f0e97b62fea
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2.orig-www.tar.gz' sqlite3_3.8.2.orig-www.tar.gz 3423593 SHA256:880784f9b2e5f0a1347e6319f1c92f81c368ad070af1d078de501f7d006e320c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2.orig.tar.gz' sqlite3_3.8.2.orig.tar.gz 4793473 SHA256:022de844b00cbd7110da4083c6ed436661ecf4853e1381fa8b4263eaedca1769
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
-```
 
 ### `dpkg` source package: `subversion=1.8.8-1ubuntu3.3`
 
