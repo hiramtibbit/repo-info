@@ -1,16 +1,16 @@
-# `node:8.15.0-jessie`
+# `node:8.15.1-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:035ec95b9e2b791e1e7a2ec0e380708819d00cd85afa535844ec736641284fef`
-- Created: `2019-02-06T06:44:41.695374533Z`
+- Image ID: `sha256:992416f3a1f836d2cb4ab40fed1ee37aa6b2b3d917f607e05eb13d5bfd432592`
+- Created: `2019-02-28T17:19:57.59993231Z`
 - Virtual Size: ~ 671.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.15.0`
+  - `NODE_VERSION=8.15.1`
   - `YARN_VERSION=1.12.3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -4031,20 +4031,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u10
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.dsc' openssl_1.0.1t-1+deb8u10.dsc 2435 SHA256:97749e587e4b1efebb8d1175fc954d47a2b648e9a01f2a71e74717a98dafe035
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u10.debian.tar.xz' openssl_1.0.1t-1+deb8u10.debian.tar.xz 114312 SHA256:0a15e679a90df37152df559ce331f843a26178d4d5550d7306851d28b4fd2d13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
