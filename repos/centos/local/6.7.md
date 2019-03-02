@@ -10,3 +10,6 @@
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `License=GPLv2`
+  - `Vendor=CentOS`

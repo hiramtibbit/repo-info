@@ -10,3 +10,8 @@
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `build-date=2016-06-02`
+  - `license=GPLv2`
+  - `name=CentOS Base Image`
+  - `vendor=CentOS`

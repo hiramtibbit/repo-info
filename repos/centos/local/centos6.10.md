@@ -10,3 +10,9 @@
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `org.label-schema.build-date=20180804`
+  - `org.label-schema.license=GPLv2`
+  - `org.label-schema.name=CentOS Base Image`
+  - `org.label-schema.schema-version=1.0`
+  - `org.label-schema.vendor=CentOS`
