@@ -1,7 +1,7 @@
 ## `buildpack-deps:disco`
 
 ```console
-$ docker pull buildpack-deps@sha256:c3ac5e816a4a8c9a49779b804fcdd4a0a4757ef6b84db704748a3f1a692c72b0
+$ docker pull buildpack-deps@sha256:ce041bdc2dc0e933a4b1cc68043bd348914bfef3fa63e57ce2398a94fb7a0efb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -84,14 +84,14 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:disco` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:c38b0f7a62e8a76e10288015a11fd0ab58fcdd48ecb449ecd396c9e7c6dff76f
+$ docker pull buildpack-deps@sha256:5a46e1dba20e547000e0a340f98903147282e811eead8dfee13fc1a4a9154a1b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.0 MB (203039961 bytes)**  
+-	Total Size: **205.1 MB (205051388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f35686e1b0629e7d207ea0b0c5e4373bffc0fba894b9554c8adbfbc20677f726`
+-	Image ID: `sha256:bfd527791fe4a00ad65c7ed45e8b22997536edb75a040171b7af907409ab13d8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -111,8 +111,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Thu, 07 Feb 2019 15:26:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Feb 2019 15:28:37 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Sat, 02 Mar 2019 13:08:10 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -144,9 +144,9 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Last Modified: Thu, 07 Feb 2019 15:48:32 GMT  
 		Size: 46.5 MB (46487563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:241ee98e4e888a3593df519c85f73686d7e070806f54c7584c9ae5628db270a7`  
-		Last Modified: Thu, 07 Feb 2019 15:49:17 GMT  
-		Size: 122.7 MB (122720776 bytes)  
+	-	`sha256:e1b240264480085bb636266a0ed0023dd31d2d4e03489dca793935e73b358121`  
+		Last Modified: Sat, 02 Mar 2019 13:25:27 GMT  
+		Size: 124.7 MB (124732203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:disco` - linux; arm64 variant v8
@@ -356,14 +356,14 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:disco` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:25a830d29c11151b0229f530a38b13cd45f29428391c642c5b7e1386cab9ecee
+$ docker pull buildpack-deps@sha256:a438b1ef0279d715576ab3931653d7b5ff3e62009d2559d2e311b372f1e8b537
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.8 MB (219770505 bytes)**  
+-	Total Size: **222.2 MB (222202111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f6bea0eb62467b238d3df3bc865692d1a36e42dfe3ed45232e2b8c3606a5ddf`
+-	Image ID: `sha256:9880330093bda43d2cdf456896c9d184098771f07fc30753077ab494d2d4ef57`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -383,8 +383,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Wed, 06 Feb 2019 15:25:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 15:26:12 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Sat, 02 Mar 2019 12:46:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -416,7 +416,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Last Modified: Wed, 06 Feb 2019 15:32:50 GMT  
 		Size: 50.8 MB (50811651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d17299930c2a666a7f8df32f2e94de9257df38637eb5f28ac5b0f1b086c8f4f9`  
-		Last Modified: Wed, 06 Feb 2019 15:33:18 GMT  
-		Size: 131.0 MB (131024452 bytes)  
+	-	`sha256:8ef5e47ce35cee605deb69d0ff980f9bea0e6a3106628e891702d92ac058a059`  
+		Last Modified: Sat, 02 Mar 2019 12:53:26 GMT  
+		Size: 133.5 MB (133456058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
