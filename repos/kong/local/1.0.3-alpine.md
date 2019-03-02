@@ -13,3 +13,5 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `KONG_VERSION=1.0.3`
   - `KONG_SHA256=b33a9eb920316a09b511a67d91f93e489336a9f81ac14f9040e5fe4d055e9148`
+- Labels:
+  - `maintainer=Kong Core Team <team-core@konghq.com>`
