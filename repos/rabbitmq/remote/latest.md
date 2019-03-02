@@ -1,7 +1,7 @@
 ## `rabbitmq:latest`
 
 ```console
-$ docker pull rabbitmq@sha256:8d5611906718a5381521886b369f4ab9129570004f42e1be51612b260ef80eb7
+$ docker pull rabbitmq@sha256:b7c8dbbdeb19e23e3e599cc4359c5f3f142cfe7587a6731b4e0a06f7b60a6759
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -251,14 +251,14 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:latest` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:5790705321b67d795a6496b1c5f39a17f09fcad90419bb52c5d4bc53f77d251d
+$ docker pull rabbitmq@sha256:483b4cfe9af21e3e96af7031c2938e02260c786488f7f34bfae1a291745cd76f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.7 MB (74737811 bytes)**  
+-	Total Size: **74.7 MB (74737813 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:103fef44b95878c679adb05aaeaa7424dab11552c23c8b26f1d585ce0484e42b`
+-	Image ID: `sha256:dfe746e74d6a87ece2162e591a517419d36a92868535afb712af9b6779b28d33`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -315,13 +315,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Thu, 28 Feb 2019 13:17:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Thu, 28 Feb 2019 13:17:16 GMT
-COPY file:88e747e80e68f90e3a2b561b676531c06ceb367761be4af4240a85f91159bc7f in /usr/local/bin/ 
-# Thu, 28 Feb 2019 13:17:16 GMT
+# Sat, 02 Mar 2019 13:03:44 GMT
+COPY file:379f3802e5612ff1c6cb1f6cdd87ed5e08aec1e5356e5d9250bec9d22abc8540 in /usr/local/bin/ 
+# Sat, 02 Mar 2019 13:03:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 28 Feb 2019 13:17:17 GMT
+# Sat, 02 Mar 2019 13:03:44 GMT
 EXPOSE 25672 4369 5671 5672
-# Thu, 28 Feb 2019 13:17:17 GMT
+# Sat, 02 Mar 2019 13:03:44 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -362,7 +362,7 @@ CMD ["rabbitmq-server"]
 		Last Modified: Thu, 28 Feb 2019 13:19:31 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62f18db67a0f208b2a61643136420ff84c379f6782c854baccda7dafbcf59427`  
-		Last Modified: Thu, 28 Feb 2019 13:19:31 GMT  
-		Size: 4.4 KB (4415 bytes)  
+	-	`sha256:c35af7dc10575e61137a169292192f6ca5e61672ee72687d58324977e1d83708`  
+		Last Modified: Sat, 02 Mar 2019 13:05:22 GMT  
+		Size: 4.4 KB (4417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
