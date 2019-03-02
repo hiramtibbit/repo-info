@@ -11,3 +11,10 @@
 - Command: `["traefik"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `org.label-schema.description=A modern reverse-proxy`
+  - `org.label-schema.docker.schema-version=1.0`
+  - `org.label-schema.name=Traefik`
+  - `org.label-schema.url=https://traefik.io`
+  - `org.label-schema.vendor=Containous`
+  - `org.label-schema.version=v1.7.9`
