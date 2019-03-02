@@ -10,3 +10,8 @@
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `build-date=20170928`
+  - `license=GPLv2`
+  - `name=EulerOS-2.2 Base Image`
+  - `vendor=EulerOS`
