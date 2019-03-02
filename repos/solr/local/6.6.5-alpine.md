@@ -25,3 +25,6 @@
   - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
   - `GOSU_VERSION=1.11`
   - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
+- Labels:
+  - `maintainer=Martijn Koster "mak-docker@greenhills.co.uk"`
+  - `repository=https://github.com/docker-solr/docker-solr`

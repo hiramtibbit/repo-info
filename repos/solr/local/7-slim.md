@@ -1,9 +1,9 @@
-# `solr:7.7.0-slim`
+# `solr:7.7.1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:68e5b96b92556ef445b8d474b96de1d6fab45381332ec87c902cf22fcf4d284d`
-- Created: `2019-02-12T21:47:34.976433993Z`
+- Image ID: `sha256:bf8609fdf187bc59337a0220b926312a973fce4389f5761db66cdda48a346797`
+- Created: `2019-03-01T23:23:47.142862643Z`
 - Virtual Size: ~ 480.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,12 +19,15 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=7.7.0`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.7.0/solr-7.7.0.tgz`
-  - `SOLR_SHA256=ad9eaa29449701fcabad497cc5f0506f8a8f76da714dc4a5429a549fcac24dc7`
-  - `SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8`
+  - `SOLR_VERSION=7.7.1`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.7.1/solr-7.7.1.tgz`
+  - `SOLR_SHA256=4fb85f12af045b28f6cb935b2f3739d59ec61ad1288ffe44c7ede64e614f28c4`
+  - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
   - `GOSU_VERSION=1.11`
   - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
+- Labels:
+  - `maintainer=Martijn Koster "mak-docker@greenhills.co.uk"`
+  - `repository=https://github.com/docker-solr/docker-solr`
 
 ## `dpkg` (`.deb`-based packages)
 
