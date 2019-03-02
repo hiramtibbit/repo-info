@@ -1,10 +1,10 @@
-# `amazonlinux:2.0.20190218-with-sources`
+# `amazonlinux:2.0.20190228-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4eeeffad662977c4fd09d80343054dfc1129ce6b972fdd800326e2f0c5296b38`
-- Created: `2019-02-26T00:22:30.250172442Z`
-- Virtual Size: ~ 511.73 Mb  
+- Image ID: `sha256:836b41a02f57a171fce29730161d26909f337672888b6065a97a5a3bcc9413d2`
+- Created: `2019-03-01T22:20:33.051712553Z`
+- Virtual Size: ~ 511.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
