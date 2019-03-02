@@ -49,6 +49,7 @@ docker inspect -f '
 - Arch: `{{ .Os }}`/`{{ .Architecture }}`
 {{ if .Config.Entrypoint }}- Entrypoint: `{{ json .Config.Entrypoint }}`
 {{ end }}{{ if .Config.Cmd }}- Command: `{{ json .Config.Cmd }}`
-{{ end }}- Environment:{{ range .Config.Env }}{{ "\n" }}  - `{{ . }}`{{ end }}' "$image"
+{{ end }}- Environment:{{ range .Config.Env }}{{ "\n" }}  - `{{ . }}`{{ end }}{{ if .Config.Labels }}
+- Labels:{{ range $k, $v := .Config.Labels }}{{ "\n" }}  - `{{ $k }}={{ $v }}`{{ end }}{{ end }}' "$image"
 
 docker logs -f "$name"
