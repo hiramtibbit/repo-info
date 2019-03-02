@@ -167,7 +167,7 @@ CMD ["/bin/bash"]
 ## `photon:3.0`
 
 ```console
-$ docker pull photon@sha256:3782702e2cb3f43d1fe6aee7ed264015aa43f06590a2f7a7031ab44135e0d3d5
+$ docker pull photon@sha256:d9e5f2aab095ccd4d1e7af70bb68baba484bd7f9746609aafc5b84b556ddbd82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -206,35 +206,35 @@ CMD ["/bin/bash"]
 ### `photon:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:6be0fccccaaa61a4512a143e059bd7e8bdc4f83657e1bcaa350062a2b773fb01
+$ docker pull photon@sha256:3b1e2261fc595dd51f4a3968ebff231de3540a1c1f37efc1cfe69bfc7b179ea4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12475300 bytes)**  
+-	Total Size: **12.5 MB (12475400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da7112343df2b86b965d44b219f8e05caa56eb9180e68e1c201f30cf45159a0`
+-	Image ID: `sha256:7197aa2ae8872d4d94475913aa20df3af1e020fe4742599ea88bdd57bef691ac`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 07 Feb 2019 14:08:36 GMT
-ADD file:60a396ed40f205600a4a9bba9e652e0e631b44672f1d66d37ff907855a7f32b4 in / 
-# Thu, 07 Feb 2019 14:08:37 GMT
-LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20190205
-# Thu, 07 Feb 2019 14:08:38 GMT
+# Sat, 02 Mar 2019 10:51:48 GMT
+ADD file:2962b1795f67d3ed45cd35afa85487d7e6c797b1ac602e5afdac192527cc1d8d in / 
+# Sat, 02 Mar 2019 10:51:50 GMT
+LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20190301
+# Sat, 02 Mar 2019 10:51:51 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9c37fe34b40181efef82603708292c67fed01b6b0423f1a1f24cff6274c056c4`  
-		Last Modified: Thu, 07 Feb 2019 14:08:55 GMT  
-		Size: 12.5 MB (12475300 bytes)  
+	-	`sha256:7315b764d8144e459a55a6f77549fc3aa7a4713415dfe19bafaaab2e677f3f52`  
+		Last Modified: Sat, 02 Mar 2019 10:52:13 GMT  
+		Size: 12.5 MB (12475400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `photon:3.0-20190301`
 
 ```console
-$ docker pull photon@sha256:3782702e2cb3f43d1fe6aee7ed264015aa43f06590a2f7a7031ab44135e0d3d5
+$ docker pull photon@sha256:d9e5f2aab095ccd4d1e7af70bb68baba484bd7f9746609aafc5b84b556ddbd82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -273,29 +273,29 @@ CMD ["/bin/bash"]
 ### `photon:3.0-20190301` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:6be0fccccaaa61a4512a143e059bd7e8bdc4f83657e1bcaa350062a2b773fb01
+$ docker pull photon@sha256:3b1e2261fc595dd51f4a3968ebff231de3540a1c1f37efc1cfe69bfc7b179ea4
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12475300 bytes)**  
+-	Total Size: **12.5 MB (12475400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da7112343df2b86b965d44b219f8e05caa56eb9180e68e1c201f30cf45159a0`
+-	Image ID: `sha256:7197aa2ae8872d4d94475913aa20df3af1e020fe4742599ea88bdd57bef691ac`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 07 Feb 2019 14:08:36 GMT
-ADD file:60a396ed40f205600a4a9bba9e652e0e631b44672f1d66d37ff907855a7f32b4 in / 
-# Thu, 07 Feb 2019 14:08:37 GMT
-LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20190205
-# Thu, 07 Feb 2019 14:08:38 GMT
+# Sat, 02 Mar 2019 10:51:48 GMT
+ADD file:2962b1795f67d3ed45cd35afa85487d7e6c797b1ac602e5afdac192527cc1d8d in / 
+# Sat, 02 Mar 2019 10:51:50 GMT
+LABEL name=Photon OS aarch64/3.0 Base Image vendor=VMware build-date=20190301
+# Sat, 02 Mar 2019 10:51:51 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9c37fe34b40181efef82603708292c67fed01b6b0423f1a1f24cff6274c056c4`  
-		Last Modified: Thu, 07 Feb 2019 14:08:55 GMT  
-		Size: 12.5 MB (12475300 bytes)  
+	-	`sha256:7315b764d8144e459a55a6f77549fc3aa7a4713415dfe19bafaaab2e677f3f52`  
+		Last Modified: Sat, 02 Mar 2019 10:52:13 GMT  
+		Size: 12.5 MB (12475400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `photon:dev`
