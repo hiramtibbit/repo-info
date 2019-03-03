@@ -13,3 +13,5 @@
   - `DISTTAG=f30container`
   - `FGC=f30`
   - `FBR=f30`
+- Labels:
+  - `maintainer=Clement Verna <cverna@fedoraproject.org>`
