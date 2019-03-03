@@ -17,3 +17,5 @@
   - `LEIN_VERSION=2.9.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
+- Labels:
+  - `maintainer=Wes Morgan <wesmorgan@icloud.com>`

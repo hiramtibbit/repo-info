@@ -15,3 +15,5 @@
   - `JAVA_VERSION=8u191`
   - `JAVA_ALPINE_VERSION=8.191.12-r0`
   - `CLOJURE_VERSION=1.10.0.414`
+- Labels:
+  - `maintainer=Kirill Chernyshov <delaguardo@gmail.com>`

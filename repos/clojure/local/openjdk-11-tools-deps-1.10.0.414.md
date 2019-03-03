@@ -15,6 +15,8 @@
   - `JAVA_VERSION=11.0.2`
   - `JAVA_DEBIAN_VERSION=11.0.2+9-3~bpo9+1`
   - `CLOJURE_VERSION=1.10.0.414`
+- Labels:
+  - `maintainer=Kirill Chernyshov <delaguardo@gmail.com>`
 
 ## `dpkg` (`.deb`-based packages)
 

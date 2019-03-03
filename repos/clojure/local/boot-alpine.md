@@ -17,3 +17,5 @@
   - `BOOT_VERSION=2.8.2`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
+- Labels:
+  - `maintainer=Wes Morgan <wesmorgan@icloud.com>`

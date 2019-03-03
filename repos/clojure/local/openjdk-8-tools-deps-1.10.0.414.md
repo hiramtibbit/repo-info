@@ -15,6 +15,8 @@
   - `JAVA_VERSION=8u181`
   - `JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1`
   - `CLOJURE_VERSION=1.10.0.414`
+- Labels:
+  - `maintainer=Kirill Chernyshov <delaguardo@gmail.com>`
 
 ## `dpkg` (`.deb`-based packages)
 
