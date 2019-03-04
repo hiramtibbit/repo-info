@@ -10,3 +10,7 @@
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `build-date=20190204`
+  - `name=SL7 Base Image`
+  - `vendor=Scientific Linux`
