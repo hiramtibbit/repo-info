@@ -14,3 +14,9 @@
   - `PERCONA_MAJOR=36`
   - `PERCONA_VERSION=3.6.10-3.0.el7`
   - `K8S_TOOLS_VERSION=0.4.1`
+- Labels:
+  - `org.label-schema.build-date=20181205`
+  - `org.label-schema.license=GPLv2`
+  - `org.label-schema.name=CentOS Base Image`
+  - `org.label-schema.schema-version=1.0`
+  - `org.label-schema.vendor=CentOS`
