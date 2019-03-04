@@ -14,6 +14,8 @@
   - `FrameworkPathOverride=/usr/lib/mono/4.7.1-api/`
   - `NUGET_XMLDOC_MODE=skip`
   - `DOTNET_CLI_TELEMETRY_OPTOUT=1`
+- Labels:
+  - `maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>`
 
 ## `dpkg` (`.deb`-based packages)
 

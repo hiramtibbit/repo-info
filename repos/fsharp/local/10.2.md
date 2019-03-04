@@ -11,6 +11,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `MONO_THREADS_PER_CPU=50`
+- Labels:
+  - `maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>`
 
 ## `dpkg` (`.deb`-based packages)
 
