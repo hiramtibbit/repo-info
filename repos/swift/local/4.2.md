@@ -13,6 +13,9 @@
   - `SWIFT_PLATFORM=ubuntu16.04`
   - `SWIFT_BRANCH=swift-4.2.2-release`
   - `SWIFT_VERSION=swift-4.2.2-RELEASE`
+- Labels:
+  - `Description=Docker Container for the Swift programming language`
+  - `maintainer=Swift Infrastructure <swift-infrastructure@swift.org>`
 
 ## `dpkg` (`.deb`-based packages)
 
