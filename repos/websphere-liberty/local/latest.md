@@ -1,25 +1,30 @@
-# `websphere-liberty:19.0.0.1-javaee8`
+# `websphere-liberty:19.0.0.2-javaee8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:553ddf5d808b89c62b5716e4359ba74dd5fd54b09ecaec3ffedab21c943efd6b`
-- Created: `2019-02-26T21:33:08.675779209Z`
-- Virtual Size: ~ 618.39 Mb  
+- Image ID: `sha256:aa1aa0b551c6803c97cc7b2669d77e6d259cd98d7615f9d3ac170964142ac875`
+- Created: `2019-03-05T00:39:01.139295427Z`
+- Virtual Size: ~ 620.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp27`
+  - `JAVA_VERSION=1.8.0_sr5fp30`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=19.0.0_01`
+  - `LIBERTY_VERSION=19.0.0_02`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `RANDFILE=/tmp/.rnd`
   - `JVM_ARGS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
   - `KEYSTORE_REQUIRED=true`
+- Labels:
+  - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
+  - `ProductName=WebSphere Application Server Liberty`
+  - `ProductVersion=19.0.0.2`
+  - `maintainer=Arthur De Magalhaes <arthurdm@ca.ibm.com> (@arthurdm)`
 
 ## `dpkg` (`.deb`-based packages)
 
