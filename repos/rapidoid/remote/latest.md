@@ -1,7 +1,7 @@
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:86c93aa4c474d30f1699bcd15028eea02cefbaed8d78202c7d0f461c05b46624
+$ docker pull rapidoid@sha256:b029cfcc1a7a7ae63cf380e019129611317a6344e8754ea7ff889f491842ee0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,91 +12,91 @@ $ docker pull rapidoid@sha256:86c93aa4c474d30f1699bcd15028eea02cefbaed8d78202c7d
 ### `rapidoid:latest` - linux; amd64
 
 ```console
-$ docker pull rapidoid@sha256:62614f246afa8604e6239f21e1f6f405f30c9d1d8f8dad651c37242f834a1924
+$ docker pull rapidoid@sha256:f6a5871632c5d76ea0e77376d7ae33a792b38b8f03fbdf6cb2967fa604210e4d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.9 MB (93908197 bytes)**  
+-	Total Size: **93.9 MB (93903974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb04c861776790d8184015e57ae5173981789dab2bed9c6c4d053b9e0fe6ee48`
+-	Image ID: `sha256:77906ca4a4c09d36d9edc33573bc21c64cb238bce12abdfc4e8dda5d8aee2949`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 03:30:19 GMT
-ADD file:5a6d066ba71fb0a4789971d41a896c905e3df4989b15e2079c09ddaad6ca3ccd in / 
-# Wed, 06 Feb 2019 03:30:19 GMT
+# Mon, 04 Mar 2019 23:22:21 GMT
+ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / 
+# Mon, 04 Mar 2019 23:22:22 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 08:25:34 GMT
+# Tue, 05 Mar 2019 04:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 08:29:13 GMT
+# Tue, 05 Mar 2019 04:04:17 GMT
 ENV LANG=C.UTF-8
-# Wed, 06 Feb 2019 08:29:14 GMT
+# Tue, 05 Mar 2019 04:04:17 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 06 Feb 2019 08:29:15 GMT
+# Tue, 05 Mar 2019 04:04:18 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 06 Feb 2019 08:30:47 GMT
+# Tue, 05 Mar 2019 04:05:36 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Wed, 06 Feb 2019 08:30:47 GMT
+# Tue, 05 Mar 2019 04:05:36 GMT
 ENV JAVA_VERSION=8u181
-# Wed, 06 Feb 2019 08:30:47 GMT
+# Tue, 05 Mar 2019 04:05:36 GMT
 ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Wed, 06 Feb 2019 08:31:12 GMT
+# Tue, 05 Mar 2019 04:05:54 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 06 Feb 2019 15:47:54 GMT
+# Tue, 05 Mar 2019 14:28:22 GMT
 MAINTAINER Nikolche Mihajlovski
-# Wed, 06 Feb 2019 15:47:55 GMT
+# Tue, 05 Mar 2019 14:28:22 GMT
 ENV GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C
-# Wed, 06 Feb 2019 15:47:55 GMT
+# Tue, 05 Mar 2019 14:28:23 GMT
 ENV RAPIDOID_JAR=/opt/rapidoid.jar
-# Wed, 06 Feb 2019 15:47:55 GMT
+# Tue, 05 Mar 2019 14:28:23 GMT
 ENV RAPIDOID_TMP=/tmp/rapidoid
-# Wed, 06 Feb 2019 15:47:56 GMT
+# Tue, 05 Mar 2019 14:28:24 GMT
 WORKDIR /opt
-# Wed, 06 Feb 2019 15:47:56 GMT
+# Tue, 05 Mar 2019 14:28:24 GMT
 EXPOSE 8888
-# Wed, 06 Feb 2019 15:47:56 GMT
+# Tue, 05 Mar 2019 14:28:25 GMT
 VOLUME [/data]
-# Wed, 06 Feb 2019 15:47:57 GMT
+# Tue, 05 Mar 2019 14:28:25 GMT
 ENV RAPIDOID_VERSION=5.4.6
-# Wed, 06 Feb 2019 15:47:57 GMT
+# Tue, 05 Mar 2019 14:28:26 GMT
 ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.6/rapidoid-platform-5.4.6.jar
-# Wed, 06 Feb 2019 15:47:57 GMT
+# Tue, 05 Mar 2019 14:28:27 GMT
 COPY file:54eb4a0f21aca6721ebea0745a2cbfeb12c799c7a0902f588f490fc0afa8e8ea in /opt/ 
-# Wed, 06 Feb 2019 15:48:14 GMT
+# Tue, 05 Mar 2019 14:28:38 GMT
 RUN set -xe     && apt-get update     && apt-get install -y --no-install-recommends         ca-certificates curl dirmngr gnupg     && mkdir /platform     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -rf "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc" 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 15:48:14 GMT
+# Tue, 05 Mar 2019 14:28:39 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:6ae821421a7debccb4151f7a50dc8ec0317674429bec0f275402d697047a8e96`  
-		Last Modified: Wed, 06 Feb 2019 03:35:54 GMT  
-		Size: 22.5 MB (22500288 bytes)  
+	-	`sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4`  
+		Last Modified: Mon, 04 Mar 2019 23:26:28 GMT  
+		Size: 22.5 MB (22496034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:187061ad2a2978b8c52f307ede3a915e9134a3bb8f6ea795e67ad31524381cdd`  
-		Last Modified: Wed, 06 Feb 2019 08:51:41 GMT  
-		Size: 454.9 KB (454874 bytes)  
+	-	`sha256:05d40fc3cf34dee2b2a441314fdd5adc73396c783b33d34a1385953d753bb2fb`  
+		Last Modified: Tue, 05 Mar 2019 04:24:41 GMT  
+		Size: 454.9 KB (454887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f37e25a28fcc612aa4d7f14effcc97964c720244c1df67570f6834c8e80fdb7`  
-		Last Modified: Wed, 06 Feb 2019 08:53:55 GMT  
+	-	`sha256:b235bdb95dc99038adcc0ea3e3d78e781356c9a1d133a19da70120af738ccaaa`  
+		Last Modified: Tue, 05 Mar 2019 04:27:08 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:211d5433339d39c37cc2fe7f8cfa195ac8d9f0072c3be0e49b33dca261a56733`  
-		Last Modified: Wed, 06 Feb 2019 08:53:55 GMT  
+	-	`sha256:9a9ecf5ba38f4bf4157f41b104010963118089027eef2062a1faa0b846b2c857`  
+		Last Modified: Tue, 05 Mar 2019 04:27:08 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b60727ce1471afc3de3bc0c8f518e1f79bc5714bc6b80e322f64ff9d75dbf30b`  
-		Last Modified: Wed, 06 Feb 2019 08:55:09 GMT  
-		Size: 55.8 MB (55844124 bytes)  
+	-	`sha256:91327716c4615550687570e0c9f7c9f4825feaab4746346f8f5dab20c57ee1d5`  
+		Last Modified: Tue, 05 Mar 2019 04:28:13 GMT  
+		Size: 55.8 MB (55843755 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:365a78faff12ee566997efe270fa08a251cdc910f7a3cbbff739ea3b395c9f3c`  
-		Last Modified: Wed, 06 Feb 2019 15:48:25 GMT  
-		Size: 364.0 B  
+	-	`sha256:147764cdcf69051b806c1299256e43a687d1687006bc288f6aed405393dcf33d`  
+		Last Modified: Tue, 05 Mar 2019 14:28:48 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d302e205b02df75c11eddb8117ed4c5369d157ca1fc7e5d241df716f81ab1a`  
-		Last Modified: Wed, 06 Feb 2019 15:48:28 GMT  
-		Size: 15.1 MB (15108168 bytes)  
+	-	`sha256:33928485ddf59315e6a55d1ba662e18b51538564bff3006b6e09f93b90aaf9b6`  
+		Last Modified: Tue, 05 Mar 2019 14:28:50 GMT  
+		Size: 15.1 MB (15108551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rapidoid:latest` - linux; arm64 variant v8
