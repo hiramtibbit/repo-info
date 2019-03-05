@@ -10,7 +10,7 @@
 ## `kibana:5`
 
 ```console
-$ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc93afda58576e
+$ docker pull kibana@sha256:ab6ff5f6fa97f8aa059389cc60afeacb267b812df730e8e14076c17c1f01018f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20,96 +20,96 @@ $ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc
 ### `kibana:5` - linux; amd64
 
 ```console
-$ docker pull kibana@sha256:d83bd21568d5108cd66c55ec16cccfdcfea0f241681b1057f51d56fd68bf51bb
+$ docker pull kibana@sha256:b9d6345d39fc6f2fea74cc936d7004d08f88d9064205e501ab3373e9d0adceef
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.0 MB (129962471 bytes)**  
+-	Total Size: **130.0 MB (129961544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2ddac696516cf17bad268851a49b04f2bb5049073d7d190b0e7e0f66e0683d8`
+-	Image ID: `sha256:ac929d40a77485fde4b25c5cbf4281e08693dd08433e5976744b919c53a4257e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 03:27:30 GMT
-ADD file:3a1c24c30fbdad1dd44e5f38c66b10a2ddbeb517b2e441dbcf82c221b45b143b in / 
-# Wed, 06 Feb 2019 03:27:31 GMT
+# Mon, 04 Mar 2019 23:20:17 GMT
+ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
+# Mon, 04 Mar 2019 23:20:18 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 06:04:33 GMT
+# Tue, 05 Mar 2019 03:19:55 GMT
 RUN groupadd -r kibana && useradd -r -m -g kibana kibana
-# Wed, 06 Feb 2019 06:06:30 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 RUN apt-get update && apt-get install -y 		apt-transport-https 		ca-certificates 		wget 		libfontconfig 		libfreetype6 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 06:06:31 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 ENV GOSU_VERSION=1.10
-# Wed, 06 Feb 2019 06:06:33 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Wed, 06 Feb 2019 06:06:34 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 ENV TINI_VERSION=v0.9.0
-# Wed, 06 Feb 2019 06:06:36 GMT
+# Tue, 05 Mar 2019 03:22:14 GMT
 RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -rf "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Wed, 06 Feb 2019 06:07:07 GMT
+# Tue, 05 Mar 2019 03:22:49 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Wed, 06 Feb 2019 06:07:09 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Thu, 21 Feb 2019 22:21:50 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 ENV KIBANA_VERSION=5.6.15
-# Thu, 21 Feb 2019 22:23:50 GMT
+# Tue, 05 Mar 2019 03:24:54 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 COPY file:f6ce7cbdcbcd38cf6fa747d74a0c868682ca02deaf474def026b8dec2a9e66e5 in / 
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 EXPOSE 5601
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:56 GMT
 CMD ["kibana"]
 ```
 
 -	Layers:
-	-	`sha256:ff42297909573059acb8e981efbc12eff68641f8449f04470a4f218e53a1e80e`  
-		Last Modified: Wed, 06 Feb 2019 03:33:25 GMT  
-		Size: 54.4 MB (54384652 bytes)  
+	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
+		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
+		Size: 54.4 MB (54381658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a320c16a86d07af50ef25a101a0265e5a35a99549a6a8700a309266e00909f`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 4.4 KB (4402 bytes)  
+	-	`sha256:c8a5f07f1a641343fb3e1ac7a0afd8409bea49b0d1009c8b24d5f2e19b9d93b7`  
+		Last Modified: Tue, 05 Mar 2019 03:25:16 GMT  
+		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3da6379c48b5963c3e2ccf16b064ed7957617ee64e39ef6a934a969f8d4178f8`  
-		Last Modified: Wed, 06 Feb 2019 06:09:27 GMT  
-		Size: 20.7 MB (20668054 bytes)  
+	-	`sha256:453442e57e1d273a430197bb86647a98e0bba5d57bb40b754c7a7da164a5a22e`  
+		Last Modified: Tue, 05 Mar 2019 03:25:19 GMT  
+		Size: 20.7 MB (20669964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a152d646a157f950071b912b9fc1bc04bd07f68208f6410a2482f6cf000ec6`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 500.7 KB (500663 bytes)  
+	-	`sha256:5b13a6b83be4bf9b98ab896c41a53c3866bb5e36a0a39baad3147b83c31c4641`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 500.7 KB (500666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c25d6ecc6fe3f3a4dfd8db0a301160d0b87e1dc978fd0ebdef0a098a488a910`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 7.3 KB (7295 bytes)  
+	-	`sha256:3b6085d72184e7718cc7636fa69c733992dc468981f11d5d88f8591ba27f48f1`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 7.3 KB (7294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff99301616248cafa2909caaeac9a5a15534e7aa6c89409b31051cd5af3f1abc`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:e5d6ef480121ef21a9976b68d6b138bae4d13e97c25414c0c1ad77af129ee1a6`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 1.4 KB (1449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30747dc13635377c8263af426ae10b4a303abc853effbd6f7e8770221bf2ade4`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 229.0 B  
+	-	`sha256:b41d4bc9b16c701298eef588c687d4e03c578bc3d23082545f02f784832ed3d2`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f66fed7414546b694f167b1c243fb9a4c76c8ac95b48d262011c25f4f96578e`  
-		Last Modified: Thu, 21 Feb 2019 22:24:56 GMT  
-		Size: 54.4 MB (54395384 bytes)  
+	-	`sha256:6919924bdf78c3bc4256d533a43424f5a7632c8b69110b5708d6cbd58f88f095`  
+		Last Modified: Tue, 05 Mar 2019 03:25:32 GMT  
+		Size: 54.4 MB (54395546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1f0d6e4eed6801ff09d00c46a7f0e23894800f3f5e71912b194b992ab11117`  
-		Last Modified: Thu, 21 Feb 2019 22:24:40 GMT  
+	-	`sha256:7f8d62a29b366bb5d7470890635c2011604ac1120de2daf965f26f8789856010`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:5.6`
 
 ```console
-$ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc93afda58576e
+$ docker pull kibana@sha256:ab6ff5f6fa97f8aa059389cc60afeacb267b812df730e8e14076c17c1f01018f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -119,96 +119,96 @@ $ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc
 ### `kibana:5.6` - linux; amd64
 
 ```console
-$ docker pull kibana@sha256:d83bd21568d5108cd66c55ec16cccfdcfea0f241681b1057f51d56fd68bf51bb
+$ docker pull kibana@sha256:b9d6345d39fc6f2fea74cc936d7004d08f88d9064205e501ab3373e9d0adceef
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.0 MB (129962471 bytes)**  
+-	Total Size: **130.0 MB (129961544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2ddac696516cf17bad268851a49b04f2bb5049073d7d190b0e7e0f66e0683d8`
+-	Image ID: `sha256:ac929d40a77485fde4b25c5cbf4281e08693dd08433e5976744b919c53a4257e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 03:27:30 GMT
-ADD file:3a1c24c30fbdad1dd44e5f38c66b10a2ddbeb517b2e441dbcf82c221b45b143b in / 
-# Wed, 06 Feb 2019 03:27:31 GMT
+# Mon, 04 Mar 2019 23:20:17 GMT
+ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
+# Mon, 04 Mar 2019 23:20:18 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 06:04:33 GMT
+# Tue, 05 Mar 2019 03:19:55 GMT
 RUN groupadd -r kibana && useradd -r -m -g kibana kibana
-# Wed, 06 Feb 2019 06:06:30 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 RUN apt-get update && apt-get install -y 		apt-transport-https 		ca-certificates 		wget 		libfontconfig 		libfreetype6 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 06:06:31 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 ENV GOSU_VERSION=1.10
-# Wed, 06 Feb 2019 06:06:33 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Wed, 06 Feb 2019 06:06:34 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 ENV TINI_VERSION=v0.9.0
-# Wed, 06 Feb 2019 06:06:36 GMT
+# Tue, 05 Mar 2019 03:22:14 GMT
 RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -rf "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Wed, 06 Feb 2019 06:07:07 GMT
+# Tue, 05 Mar 2019 03:22:49 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Wed, 06 Feb 2019 06:07:09 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Thu, 21 Feb 2019 22:21:50 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 ENV KIBANA_VERSION=5.6.15
-# Thu, 21 Feb 2019 22:23:50 GMT
+# Tue, 05 Mar 2019 03:24:54 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 COPY file:f6ce7cbdcbcd38cf6fa747d74a0c868682ca02deaf474def026b8dec2a9e66e5 in / 
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 EXPOSE 5601
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:56 GMT
 CMD ["kibana"]
 ```
 
 -	Layers:
-	-	`sha256:ff42297909573059acb8e981efbc12eff68641f8449f04470a4f218e53a1e80e`  
-		Last Modified: Wed, 06 Feb 2019 03:33:25 GMT  
-		Size: 54.4 MB (54384652 bytes)  
+	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
+		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
+		Size: 54.4 MB (54381658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a320c16a86d07af50ef25a101a0265e5a35a99549a6a8700a309266e00909f`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 4.4 KB (4402 bytes)  
+	-	`sha256:c8a5f07f1a641343fb3e1ac7a0afd8409bea49b0d1009c8b24d5f2e19b9d93b7`  
+		Last Modified: Tue, 05 Mar 2019 03:25:16 GMT  
+		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3da6379c48b5963c3e2ccf16b064ed7957617ee64e39ef6a934a969f8d4178f8`  
-		Last Modified: Wed, 06 Feb 2019 06:09:27 GMT  
-		Size: 20.7 MB (20668054 bytes)  
+	-	`sha256:453442e57e1d273a430197bb86647a98e0bba5d57bb40b754c7a7da164a5a22e`  
+		Last Modified: Tue, 05 Mar 2019 03:25:19 GMT  
+		Size: 20.7 MB (20669964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a152d646a157f950071b912b9fc1bc04bd07f68208f6410a2482f6cf000ec6`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 500.7 KB (500663 bytes)  
+	-	`sha256:5b13a6b83be4bf9b98ab896c41a53c3866bb5e36a0a39baad3147b83c31c4641`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 500.7 KB (500666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c25d6ecc6fe3f3a4dfd8db0a301160d0b87e1dc978fd0ebdef0a098a488a910`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 7.3 KB (7295 bytes)  
+	-	`sha256:3b6085d72184e7718cc7636fa69c733992dc468981f11d5d88f8591ba27f48f1`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 7.3 KB (7294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff99301616248cafa2909caaeac9a5a15534e7aa6c89409b31051cd5af3f1abc`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:e5d6ef480121ef21a9976b68d6b138bae4d13e97c25414c0c1ad77af129ee1a6`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 1.4 KB (1449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30747dc13635377c8263af426ae10b4a303abc853effbd6f7e8770221bf2ade4`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 229.0 B  
+	-	`sha256:b41d4bc9b16c701298eef588c687d4e03c578bc3d23082545f02f784832ed3d2`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f66fed7414546b694f167b1c243fb9a4c76c8ac95b48d262011c25f4f96578e`  
-		Last Modified: Thu, 21 Feb 2019 22:24:56 GMT  
-		Size: 54.4 MB (54395384 bytes)  
+	-	`sha256:6919924bdf78c3bc4256d533a43424f5a7632c8b69110b5708d6cbd58f88f095`  
+		Last Modified: Tue, 05 Mar 2019 03:25:32 GMT  
+		Size: 54.4 MB (54395546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1f0d6e4eed6801ff09d00c46a7f0e23894800f3f5e71912b194b992ab11117`  
-		Last Modified: Thu, 21 Feb 2019 22:24:40 GMT  
+	-	`sha256:7f8d62a29b366bb5d7470890635c2011604ac1120de2daf965f26f8789856010`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:5.6.15`
 
 ```console
-$ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc93afda58576e
+$ docker pull kibana@sha256:ab6ff5f6fa97f8aa059389cc60afeacb267b812df730e8e14076c17c1f01018f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -218,89 +218,89 @@ $ docker pull kibana@sha256:e17881be57f8f8646d2eaf422c0c5424bf8b7a2ca80831ef1bbc
 ### `kibana:5.6.15` - linux; amd64
 
 ```console
-$ docker pull kibana@sha256:d83bd21568d5108cd66c55ec16cccfdcfea0f241681b1057f51d56fd68bf51bb
+$ docker pull kibana@sha256:b9d6345d39fc6f2fea74cc936d7004d08f88d9064205e501ab3373e9d0adceef
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.0 MB (129962471 bytes)**  
+-	Total Size: **130.0 MB (129961544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2ddac696516cf17bad268851a49b04f2bb5049073d7d190b0e7e0f66e0683d8`
+-	Image ID: `sha256:ac929d40a77485fde4b25c5cbf4281e08693dd08433e5976744b919c53a4257e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 03:27:30 GMT
-ADD file:3a1c24c30fbdad1dd44e5f38c66b10a2ddbeb517b2e441dbcf82c221b45b143b in / 
-# Wed, 06 Feb 2019 03:27:31 GMT
+# Mon, 04 Mar 2019 23:20:17 GMT
+ADD file:e044496893d9e2cbf5a4b69ccfbb7d2997209962a78a52b6fc091c5b004cc33f in / 
+# Mon, 04 Mar 2019 23:20:18 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 06:04:33 GMT
+# Tue, 05 Mar 2019 03:19:55 GMT
 RUN groupadd -r kibana && useradd -r -m -g kibana kibana
-# Wed, 06 Feb 2019 06:06:30 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 RUN apt-get update && apt-get install -y 		apt-transport-https 		ca-certificates 		wget 		libfontconfig 		libfreetype6 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 06:06:31 GMT
+# Tue, 05 Mar 2019 03:22:10 GMT
 ENV GOSU_VERSION=1.10
-# Wed, 06 Feb 2019 06:06:33 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Wed, 06 Feb 2019 06:06:34 GMT
+# Tue, 05 Mar 2019 03:22:12 GMT
 ENV TINI_VERSION=v0.9.0
-# Wed, 06 Feb 2019 06:06:36 GMT
+# Tue, 05 Mar 2019 03:22:14 GMT
 RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -rf "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Wed, 06 Feb 2019 06:07:07 GMT
+# Tue, 05 Mar 2019 03:22:49 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Wed, 06 Feb 2019 06:07:09 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Thu, 21 Feb 2019 22:21:50 GMT
+# Tue, 05 Mar 2019 03:22:50 GMT
 ENV KIBANA_VERSION=5.6.15
-# Thu, 21 Feb 2019 22:23:50 GMT
+# Tue, 05 Mar 2019 03:24:54 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 COPY file:f6ce7cbdcbcd38cf6fa747d74a0c868682ca02deaf474def026b8dec2a9e66e5 in / 
-# Thu, 21 Feb 2019 22:23:52 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 EXPOSE 5601
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Feb 2019 22:23:53 GMT
+# Tue, 05 Mar 2019 03:24:56 GMT
 CMD ["kibana"]
 ```
 
 -	Layers:
-	-	`sha256:ff42297909573059acb8e981efbc12eff68641f8449f04470a4f218e53a1e80e`  
-		Last Modified: Wed, 06 Feb 2019 03:33:25 GMT  
-		Size: 54.4 MB (54384652 bytes)  
+	-	`sha256:85199fa09ec1510ee053da666286c385d07b8fab9fa61ae73a5b8c454e1b3397`  
+		Last Modified: Mon, 04 Mar 2019 23:24:27 GMT  
+		Size: 54.4 MB (54381658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a320c16a86d07af50ef25a101a0265e5a35a99549a6a8700a309266e00909f`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 4.4 KB (4402 bytes)  
+	-	`sha256:c8a5f07f1a641343fb3e1ac7a0afd8409bea49b0d1009c8b24d5f2e19b9d93b7`  
+		Last Modified: Tue, 05 Mar 2019 03:25:16 GMT  
+		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3da6379c48b5963c3e2ccf16b064ed7957617ee64e39ef6a934a969f8d4178f8`  
-		Last Modified: Wed, 06 Feb 2019 06:09:27 GMT  
-		Size: 20.7 MB (20668054 bytes)  
+	-	`sha256:453442e57e1d273a430197bb86647a98e0bba5d57bb40b754c7a7da164a5a22e`  
+		Last Modified: Tue, 05 Mar 2019 03:25:19 GMT  
+		Size: 20.7 MB (20669964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74a152d646a157f950071b912b9fc1bc04bd07f68208f6410a2482f6cf000ec6`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 500.7 KB (500663 bytes)  
+	-	`sha256:5b13a6b83be4bf9b98ab896c41a53c3866bb5e36a0a39baad3147b83c31c4641`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 500.7 KB (500666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c25d6ecc6fe3f3a4dfd8db0a301160d0b87e1dc978fd0ebdef0a098a488a910`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 7.3 KB (7295 bytes)  
+	-	`sha256:3b6085d72184e7718cc7636fa69c733992dc468981f11d5d88f8591ba27f48f1`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 7.3 KB (7294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff99301616248cafa2909caaeac9a5a15534e7aa6c89409b31051cd5af3f1abc`  
-		Last Modified: Wed, 06 Feb 2019 06:09:21 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:e5d6ef480121ef21a9976b68d6b138bae4d13e97c25414c0c1ad77af129ee1a6`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 1.4 KB (1449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30747dc13635377c8263af426ae10b4a303abc853effbd6f7e8770221bf2ade4`  
-		Last Modified: Wed, 06 Feb 2019 06:09:22 GMT  
-		Size: 229.0 B  
+	-	`sha256:b41d4bc9b16c701298eef588c687d4e03c578bc3d23082545f02f784832ed3d2`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f66fed7414546b694f167b1c243fb9a4c76c8ac95b48d262011c25f4f96578e`  
-		Last Modified: Thu, 21 Feb 2019 22:24:56 GMT  
-		Size: 54.4 MB (54395384 bytes)  
+	-	`sha256:6919924bdf78c3bc4256d533a43424f5a7632c8b69110b5708d6cbd58f88f095`  
+		Last Modified: Tue, 05 Mar 2019 03:25:32 GMT  
+		Size: 54.4 MB (54395546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1f0d6e4eed6801ff09d00c46a7f0e23894800f3f5e71912b194b992ab11117`  
-		Last Modified: Thu, 21 Feb 2019 22:24:40 GMT  
+	-	`sha256:7f8d62a29b366bb5d7470890635c2011604ac1120de2daf965f26f8789856010`  
+		Last Modified: Tue, 05 Mar 2019 03:25:15 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
