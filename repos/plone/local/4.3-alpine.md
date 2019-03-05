@@ -23,3 +23,10 @@
   - `PLONE_MAJOR=4.3`
   - `PLONE_VERSION=4.3.18`
   - `PLONE_MD5=c9932e919254a2799b0e340b2ecbda9b`
+- Labels:
+  - `description=Plone image, based on Unified Installer`
+  - `maintainer=Plone Community`
+  - `name=Plone 4.3`
+  - `os=alpine`
+  - `os.version=3.7`
+  - `plone=4.3.18`

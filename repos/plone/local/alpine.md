@@ -23,3 +23,10 @@
   - `PLONE_MAJOR=5.1`
   - `PLONE_VERSION=5.1.5`
   - `PLONE_MD5=8ed5ff27fab67b1b510a1ce0ee2dd655`
+- Labels:
+  - `description=Plone image, based on Unified Installer`
+  - `maintainer=Plone Community`
+  - `name=Plone 5.1`
+  - `os=alpine`
+  - `os.version=3.7`
+  - `plone=5.1.5`
