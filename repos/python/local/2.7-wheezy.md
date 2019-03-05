@@ -1,10 +1,10 @@
-# `python:2.7.15-wheezy`
+# `python:2.7.16-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f34d154313c46c8b0b2514cb4430c16e46b21c0b81e1fea5eabd6d037e90534`
-- Created: `2019-02-22T01:05:13.196452151Z`
-- Virtual Size: ~ 544.04 Mb  
+- Image ID: `sha256:008e192e2e2110d207a14960c9545c93ba51cbf3e58dceb3d5b6a6e26e09c0a7`
+- Created: `2019-03-05T06:53:12.159665431Z`
+- Virtual Size: ~ 545.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.15`
+  - `PYTHON_VERSION=2.7.16`
   - `PYTHON_PIP_VERSION=19.0.3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1249,9 +1249,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libgmp-dev:amd64=2:5.0.5+dfsg-2`
 - `libgmp10:amd64=2:5.0.5+dfsg-2`
+- `libgmpxx4ldbl:amd64=2:5.0.5+dfsg-2`
 
-Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
 - `GPL`
 - `LGPL-3`

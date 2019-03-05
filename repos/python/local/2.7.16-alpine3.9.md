@@ -1,10 +1,10 @@
-# `python:2.7.15-alpine3.9`
+# `python:2.7.16-alpine3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:028b1c040d1ef3157481e26fccaddeaabd67260717f451b2d6d1ab3523ba1cbf`
-- Created: `2019-02-22T01:05:22.743449239Z`
-- Virtual Size: ~ 61.19 Mb  
+- Image ID: `sha256:53f7c5a5d4a3f441193d94f1b30db2cc392c169dcb28bdce3e5cf81d474f9ddb`
+- Created: `2019-03-05T00:39:25.81121047Z`
+- Virtual Size: ~ 61.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,5 +13,5 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.15`
+  - `PYTHON_VERSION=2.7.16`
   - `PYTHON_PIP_VERSION=19.0.3`
