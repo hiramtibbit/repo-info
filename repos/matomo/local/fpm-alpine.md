@@ -24,3 +24,5 @@
   - `PHP_SHA256=75e90012faef700dffb29311f3d24fa25f1a5e0f70254a9b8d5c794e25e938ce`
   - `PHP_MD5=`
   - `MATOMO_VERSION=3.8.1`
+- Labels:
+  - `maintainer=pierre@piwik.org`
