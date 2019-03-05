@@ -29,6 +29,8 @@
   - `POSTFIXADMIN_VERSION=3.2`
   - `POSTFIXADMIN_SHA512=9e022e3311bce96342e87925159a048f294ed0e2d4558bd43120b5c6eda35a7a2d128987372d310dfe86680c98a4d8cf3d602afcb20d948c9bba58bed1766560`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
+- Labels:
+  - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
 
 ## `dpkg` (`.deb`-based packages)
 
