@@ -16,3 +16,5 @@
   - `JAVA_ALPINE_VERSION=8.191.12-r0`
   - `LIGHTSTREAMER_VERSION=7_0_3_20190107`
   - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz`
+- Labels:
+  - `maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>`
