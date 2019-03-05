@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:21b58b4a4b7ef2d445b4e487ebf22aaf17f88030506a063d6a7ebcba398db614`
-- Created: `2019-02-06T08:07:22.200560133Z`
-- Virtual Size: ~ 128.05 Mb  
+- Image ID: `sha256:df5562cb5dfb2a9a46162bf70ccf359685cd5989c592ea33c5cdfef435e15626`
+- Created: `2019-03-05T03:38:41.178417594Z`
+- Virtual Size: ~ 130.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1437,11 +1437,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/2.7.1-5+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.38.2~nd80+1`
+### `dpkg` source package: `neurodebian=0.38.3~nd80+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.38.2~nd80+1`
+- `neurodebian-freeze=0.38.3~nd80+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1450,9 +1450,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris neurodebian=0.38.3~nd80+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.3~nd80+1.dsc' neurodebian_0.38.3~nd80+1.dsc 1561 SHA256:9a2ab7c48163db732dbd52f66b813a9ebe1bbd140065808e7d02e04eb58fcef2
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.38.3~nd80+1.tar.xz' neurodebian_0.38.3~nd80+1.tar.xz 8322216 SHA256:95104276ef238fa09fd554427ee032c505448a2da65f68b1d12452ccdf518b39
+```
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -1762,15 +1766,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u9`
+### `dpkg` source package: `systemd=215-17+deb8u10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u9`
-- `libudev1:amd64=215-17+deb8u9`
-- `systemd=215-17+deb8u9`
-- `systemd-sysv=215-17+deb8u9`
-- `udev=215-17+deb8u9`
+- `libsystemd0:amd64=215-17+deb8u10`
+- `libudev1:amd64=215-17+deb8u10`
+- `systemd=215-17+deb8u10`
+- `systemd-sysv=215-17+deb8u10`
+- `udev=215-17+deb8u10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -1781,13 +1785,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u10
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.dsc' systemd_215-17+deb8u10.dsc 4153 SHA256:40eb1f418eb1e1c450b83b5edbf39ae8d66e66433925551926e16f993176f850
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.debian.tar.xz' systemd_215-17+deb8u10.debian.tar.xz 246152 SHA256:dca47aceee1f94cfad27f54efe2edcb07abdf6156da3d494f410cb3665da8738
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
