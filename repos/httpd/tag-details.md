@@ -14,7 +14,7 @@
 ## `httpd:2`
 
 ```console
-$ docker pull httpd@sha256:e3f5e8f0adf30b8d6d61e622d879012d893fef3c97d54afa9b42e4b6914cbbd8
+$ docker pull httpd@sha256:e4b88f56420b21e263810ec95f7f9fe236ff9204883e309e064434f0146b2e3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -370,143 +370,143 @@ CMD ["httpd-foreground"]
 ### `httpd:2` - linux; ppc64le
 
 ```console
-$ docker pull httpd@sha256:fd07fdfd75dc4d04de42d9f97635ff630684250df88cf696d8e2f029c5de66eb
+$ docker pull httpd@sha256:424c0ab6ef000917b516ffe814d866e3e20052d2786532d0caf880baea1e78e9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49366377 bytes)**  
+-	Total Size: **49.4 MB (49364000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fa9334d5c74aa6a283a2ef1ce7dfc6a90dca51f94c1e1924bd3815d60a0037`
+-	Image ID: `sha256:36475d0ca1c839b28faab17cb2c0cced590432fe84c3d92202ade67668cb1724`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 09:26:52 GMT
-ADD file:a3fa4dfe4f8ea60454e3698650325be0ad97847e49c257136da78e2f997c2202 in / 
-# Wed, 06 Feb 2019 09:26:54 GMT
+# Tue, 05 Mar 2019 09:25:57 GMT
+ADD file:499a43a96e8ab3c7c8ab9d1c3260d34bb2b955e9751ada2b98194e42f9578be3 in / 
+# Tue, 05 Mar 2019 09:26:02 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 10:33:45 GMT
+# Tue, 05 Mar 2019 13:38:21 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 10:33:47 GMT
+# Tue, 05 Mar 2019 13:38:24 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 10:33:51 GMT
+# Tue, 05 Mar 2019 13:38:30 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 10:33:52 GMT
+# Tue, 05 Mar 2019 13:38:33 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 10:34:26 GMT
+# Tue, 05 Mar 2019 13:39:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 10:34:31 GMT
+# Tue, 05 Mar 2019 13:39:17 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 10:34:34 GMT
+# Tue, 05 Mar 2019 13:39:19 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 10:34:39 GMT
+# Tue, 05 Mar 2019 13:39:21 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 10:34:42 GMT
+# Tue, 05 Mar 2019 13:39:23 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 09:29:39 GMT
+# Tue, 05 Mar 2019 13:43:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 09:29:40 GMT
+# Tue, 05 Mar 2019 13:43:51 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 09:29:42 GMT
+# Tue, 05 Mar 2019 13:43:53 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 09:29:43 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:ce77ebcb1b656de04f8443959fa201b1696ff2136de5be3de628f0c463c727f4`  
-		Last Modified: Wed, 06 Feb 2019 09:31:25 GMT  
-		Size: 22.8 MB (22755392 bytes)  
+	-	`sha256:1a1c20c0e1fe9ea9a7ae86ac61ed89ee8cf01dccfb363d582cb8c910510c06fb`  
+		Last Modified: Tue, 05 Mar 2019 09:32:10 GMT  
+		Size: 22.8 MB (22751497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ed8cf7013bc0664270d7334f6419d7163ec8822f3773ca41984d0585f970ce`  
-		Last Modified: Wed, 06 Feb 2019 10:41:31 GMT  
-		Size: 184.0 B  
+	-	`sha256:4f6b0594148bf9da1e9bcdc5b86a22686e380c238bf3c784454cc74013dd7e9f`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f0b5e6b54898c5cb01924bdeb1730880824a085b38e475e7a4f9a21d778a8c`  
-		Last Modified: Wed, 06 Feb 2019 10:41:37 GMT  
-		Size: 9.9 MB (9869128 bytes)  
+	-	`sha256:f2c1fc32c0a6e3c1b94873836be76ea6f7140ae89d84523ebcb87c55c8e08236`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 9.9 MB (9870268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c5af2f9cee1fdc276514ffe3f44a24f39716f64214499a234364a32d10dd7e3`  
-		Last Modified: Wed, 13 Feb 2019 09:31:55 GMT  
-		Size: 16.7 MB (16741371 bytes)  
+	-	`sha256:d49758c0099372bd2d28a6e841a107d18f278604f7bebfb4d138315c961b208e`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 16.7 MB (16741750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d37e49d9c2c8c9246b75a57c5665f5556a22855456d8b10879d585717a7f4e22`  
-		Last Modified: Wed, 13 Feb 2019 09:31:53 GMT  
-		Size: 302.0 B  
+	-	`sha256:00b8e203a13ee8a79090bef693b7a52553554cbe206a63d584057560add5b028`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:1e86edc94de1b559fff1bdb8e361df9b4a2cb252ed6fffcc38c8fae00f739640
+$ docker pull httpd@sha256:eac40318c385df1419e79438aeb6803c0c1985de2fdbbed80943e37238818379
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50080671 bytes)**  
+-	Total Size: **50.1 MB (50073969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a4e632f9fbf9b253aa8ca71a81a3b031adf8441a04d5d64d673d0d06982997`
+-	Image ID: `sha256:1476d3810b8b26b82ec02f6a05281c928d98d513b8c089b8a818317f860202b6`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 12:43:23 GMT
-ADD file:3a9fa274c8adc237938518b0ab05a8da0888b24eb1291c4c1d10353adf5c2c35 in / 
-# Wed, 06 Feb 2019 12:43:24 GMT
+# Tue, 05 Mar 2019 12:43:10 GMT
+ADD file:977b2abfb4bb6e881775d945b4d82d3f3e492b498a78ce0a9c877d9c8b82e3a9 in / 
+# Tue, 05 Mar 2019 12:43:10 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 13:03:34 GMT
+# Tue, 05 Mar 2019 13:45:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 12:48:16 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:7a7744b459675a4ad2aa884ea8350b1c1ae822c31e0ed60ab392fa7362b5c510`  
-		Last Modified: Wed, 06 Feb 2019 12:46:59 GMT  
-		Size: 22.4 MB (22353334 bytes)  
+	-	`sha256:2c9e1401ee6b0131741b02fed745b7f1d34bf29b0bc59f41e08dc969a710fc58`  
+		Last Modified: Tue, 05 Mar 2019 12:45:42 GMT  
+		Size: 22.3 MB (22345383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97089d8180ebc8c40a475993d64f5c1bcd6c242a31051f0644c6515982e12f2e`  
-		Last Modified: Wed, 06 Feb 2019 13:06:32 GMT  
-		Size: 154.0 B  
+	-	`sha256:e85315e9a137902f6feefdf025bc706dbc4b6dc1c83d35c228476f4aab8031ec`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:077bee67d721a49995b5e776dfc493412bc137435f7cee6141b7ff4bead90885`  
-		Last Modified: Wed, 06 Feb 2019 13:06:40 GMT  
-		Size: 11.0 MB (11005649 bytes)  
+	-	`sha256:55c54aa13b450e6b6b5a16a83e0805f6ec1ed34f573fd30d21b89ff7799a8645`  
+		Last Modified: Tue, 05 Mar 2019 13:46:56 GMT  
+		Size: 11.0 MB (11006937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04377b59a667c1fd9d6b57767cfefbaac742834ce4cf32cd30ba5275f1186a4`  
-		Last Modified: Wed, 13 Feb 2019 12:49:28 GMT  
-		Size: 16.7 MB (16721231 bytes)  
+	-	`sha256:f9daa5637d0e92d20ab2788d85560371b358e23991e9ddae4c5d18b6edd51610`  
+		Last Modified: Tue, 05 Mar 2019 13:46:53 GMT  
+		Size: 16.7 MB (16721192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c36c4a1f8291db94803120fcf7cf7ed3d6d9446ed28d829aa6fc76e8221310c`  
-		Last Modified: Wed, 13 Feb 2019 12:49:25 GMT  
-		Size: 303.0 B  
+	-	`sha256:1feaad6b3892e4ee631d6157b6243d017b42f4175591a6cc5809c316806d4410`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4`
 
 ```console
-$ docker pull httpd@sha256:e3f5e8f0adf30b8d6d61e622d879012d893fef3c97d54afa9b42e4b6914cbbd8
+$ docker pull httpd@sha256:e4b88f56420b21e263810ec95f7f9fe236ff9204883e309e064434f0146b2e3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -862,143 +862,143 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4` - linux; ppc64le
 
 ```console
-$ docker pull httpd@sha256:fd07fdfd75dc4d04de42d9f97635ff630684250df88cf696d8e2f029c5de66eb
+$ docker pull httpd@sha256:424c0ab6ef000917b516ffe814d866e3e20052d2786532d0caf880baea1e78e9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49366377 bytes)**  
+-	Total Size: **49.4 MB (49364000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fa9334d5c74aa6a283a2ef1ce7dfc6a90dca51f94c1e1924bd3815d60a0037`
+-	Image ID: `sha256:36475d0ca1c839b28faab17cb2c0cced590432fe84c3d92202ade67668cb1724`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 09:26:52 GMT
-ADD file:a3fa4dfe4f8ea60454e3698650325be0ad97847e49c257136da78e2f997c2202 in / 
-# Wed, 06 Feb 2019 09:26:54 GMT
+# Tue, 05 Mar 2019 09:25:57 GMT
+ADD file:499a43a96e8ab3c7c8ab9d1c3260d34bb2b955e9751ada2b98194e42f9578be3 in / 
+# Tue, 05 Mar 2019 09:26:02 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 10:33:45 GMT
+# Tue, 05 Mar 2019 13:38:21 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 10:33:47 GMT
+# Tue, 05 Mar 2019 13:38:24 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 10:33:51 GMT
+# Tue, 05 Mar 2019 13:38:30 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 10:33:52 GMT
+# Tue, 05 Mar 2019 13:38:33 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 10:34:26 GMT
+# Tue, 05 Mar 2019 13:39:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 10:34:31 GMT
+# Tue, 05 Mar 2019 13:39:17 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 10:34:34 GMT
+# Tue, 05 Mar 2019 13:39:19 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 10:34:39 GMT
+# Tue, 05 Mar 2019 13:39:21 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 10:34:42 GMT
+# Tue, 05 Mar 2019 13:39:23 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 09:29:39 GMT
+# Tue, 05 Mar 2019 13:43:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 09:29:40 GMT
+# Tue, 05 Mar 2019 13:43:51 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 09:29:42 GMT
+# Tue, 05 Mar 2019 13:43:53 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 09:29:43 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:ce77ebcb1b656de04f8443959fa201b1696ff2136de5be3de628f0c463c727f4`  
-		Last Modified: Wed, 06 Feb 2019 09:31:25 GMT  
-		Size: 22.8 MB (22755392 bytes)  
+	-	`sha256:1a1c20c0e1fe9ea9a7ae86ac61ed89ee8cf01dccfb363d582cb8c910510c06fb`  
+		Last Modified: Tue, 05 Mar 2019 09:32:10 GMT  
+		Size: 22.8 MB (22751497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ed8cf7013bc0664270d7334f6419d7163ec8822f3773ca41984d0585f970ce`  
-		Last Modified: Wed, 06 Feb 2019 10:41:31 GMT  
-		Size: 184.0 B  
+	-	`sha256:4f6b0594148bf9da1e9bcdc5b86a22686e380c238bf3c784454cc74013dd7e9f`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f0b5e6b54898c5cb01924bdeb1730880824a085b38e475e7a4f9a21d778a8c`  
-		Last Modified: Wed, 06 Feb 2019 10:41:37 GMT  
-		Size: 9.9 MB (9869128 bytes)  
+	-	`sha256:f2c1fc32c0a6e3c1b94873836be76ea6f7140ae89d84523ebcb87c55c8e08236`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 9.9 MB (9870268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c5af2f9cee1fdc276514ffe3f44a24f39716f64214499a234364a32d10dd7e3`  
-		Last Modified: Wed, 13 Feb 2019 09:31:55 GMT  
-		Size: 16.7 MB (16741371 bytes)  
+	-	`sha256:d49758c0099372bd2d28a6e841a107d18f278604f7bebfb4d138315c961b208e`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 16.7 MB (16741750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d37e49d9c2c8c9246b75a57c5665f5556a22855456d8b10879d585717a7f4e22`  
-		Last Modified: Wed, 13 Feb 2019 09:31:53 GMT  
-		Size: 302.0 B  
+	-	`sha256:00b8e203a13ee8a79090bef693b7a52553554cbe206a63d584057560add5b028`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:1e86edc94de1b559fff1bdb8e361df9b4a2cb252ed6fffcc38c8fae00f739640
+$ docker pull httpd@sha256:eac40318c385df1419e79438aeb6803c0c1985de2fdbbed80943e37238818379
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50080671 bytes)**  
+-	Total Size: **50.1 MB (50073969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a4e632f9fbf9b253aa8ca71a81a3b031adf8441a04d5d64d673d0d06982997`
+-	Image ID: `sha256:1476d3810b8b26b82ec02f6a05281c928d98d513b8c089b8a818317f860202b6`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 12:43:23 GMT
-ADD file:3a9fa274c8adc237938518b0ab05a8da0888b24eb1291c4c1d10353adf5c2c35 in / 
-# Wed, 06 Feb 2019 12:43:24 GMT
+# Tue, 05 Mar 2019 12:43:10 GMT
+ADD file:977b2abfb4bb6e881775d945b4d82d3f3e492b498a78ce0a9c877d9c8b82e3a9 in / 
+# Tue, 05 Mar 2019 12:43:10 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 13:03:34 GMT
+# Tue, 05 Mar 2019 13:45:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 12:48:16 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:7a7744b459675a4ad2aa884ea8350b1c1ae822c31e0ed60ab392fa7362b5c510`  
-		Last Modified: Wed, 06 Feb 2019 12:46:59 GMT  
-		Size: 22.4 MB (22353334 bytes)  
+	-	`sha256:2c9e1401ee6b0131741b02fed745b7f1d34bf29b0bc59f41e08dc969a710fc58`  
+		Last Modified: Tue, 05 Mar 2019 12:45:42 GMT  
+		Size: 22.3 MB (22345383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97089d8180ebc8c40a475993d64f5c1bcd6c242a31051f0644c6515982e12f2e`  
-		Last Modified: Wed, 06 Feb 2019 13:06:32 GMT  
-		Size: 154.0 B  
+	-	`sha256:e85315e9a137902f6feefdf025bc706dbc4b6dc1c83d35c228476f4aab8031ec`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:077bee67d721a49995b5e776dfc493412bc137435f7cee6141b7ff4bead90885`  
-		Last Modified: Wed, 06 Feb 2019 13:06:40 GMT  
-		Size: 11.0 MB (11005649 bytes)  
+	-	`sha256:55c54aa13b450e6b6b5a16a83e0805f6ec1ed34f573fd30d21b89ff7799a8645`  
+		Last Modified: Tue, 05 Mar 2019 13:46:56 GMT  
+		Size: 11.0 MB (11006937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04377b59a667c1fd9d6b57767cfefbaac742834ce4cf32cd30ba5275f1186a4`  
-		Last Modified: Wed, 13 Feb 2019 12:49:28 GMT  
-		Size: 16.7 MB (16721231 bytes)  
+	-	`sha256:f9daa5637d0e92d20ab2788d85560371b358e23991e9ddae4c5d18b6edd51610`  
+		Last Modified: Tue, 05 Mar 2019 13:46:53 GMT  
+		Size: 16.7 MB (16721192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c36c4a1f8291db94803120fcf7cf7ed3d6d9446ed28d829aa6fc76e8221310c`  
-		Last Modified: Wed, 13 Feb 2019 12:49:25 GMT  
-		Size: 303.0 B  
+	-	`sha256:1feaad6b3892e4ee631d6157b6243d017b42f4175591a6cc5809c316806d4410`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4.38`
 
 ```console
-$ docker pull httpd@sha256:e3f5e8f0adf30b8d6d61e622d879012d893fef3c97d54afa9b42e4b6914cbbd8
+$ docker pull httpd@sha256:e4b88f56420b21e263810ec95f7f9fe236ff9204883e309e064434f0146b2e3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1354,137 +1354,137 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4.38` - linux; ppc64le
 
 ```console
-$ docker pull httpd@sha256:fd07fdfd75dc4d04de42d9f97635ff630684250df88cf696d8e2f029c5de66eb
+$ docker pull httpd@sha256:424c0ab6ef000917b516ffe814d866e3e20052d2786532d0caf880baea1e78e9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49366377 bytes)**  
+-	Total Size: **49.4 MB (49364000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fa9334d5c74aa6a283a2ef1ce7dfc6a90dca51f94c1e1924bd3815d60a0037`
+-	Image ID: `sha256:36475d0ca1c839b28faab17cb2c0cced590432fe84c3d92202ade67668cb1724`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 09:26:52 GMT
-ADD file:a3fa4dfe4f8ea60454e3698650325be0ad97847e49c257136da78e2f997c2202 in / 
-# Wed, 06 Feb 2019 09:26:54 GMT
+# Tue, 05 Mar 2019 09:25:57 GMT
+ADD file:499a43a96e8ab3c7c8ab9d1c3260d34bb2b955e9751ada2b98194e42f9578be3 in / 
+# Tue, 05 Mar 2019 09:26:02 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 10:33:45 GMT
+# Tue, 05 Mar 2019 13:38:21 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 10:33:47 GMT
+# Tue, 05 Mar 2019 13:38:24 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 10:33:51 GMT
+# Tue, 05 Mar 2019 13:38:30 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 10:33:52 GMT
+# Tue, 05 Mar 2019 13:38:33 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 10:34:26 GMT
+# Tue, 05 Mar 2019 13:39:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 10:34:31 GMT
+# Tue, 05 Mar 2019 13:39:17 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 10:34:34 GMT
+# Tue, 05 Mar 2019 13:39:19 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 10:34:39 GMT
+# Tue, 05 Mar 2019 13:39:21 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 10:34:42 GMT
+# Tue, 05 Mar 2019 13:39:23 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 09:29:39 GMT
+# Tue, 05 Mar 2019 13:43:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 09:29:40 GMT
+# Tue, 05 Mar 2019 13:43:51 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 09:29:42 GMT
+# Tue, 05 Mar 2019 13:43:53 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 09:29:43 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:ce77ebcb1b656de04f8443959fa201b1696ff2136de5be3de628f0c463c727f4`  
-		Last Modified: Wed, 06 Feb 2019 09:31:25 GMT  
-		Size: 22.8 MB (22755392 bytes)  
+	-	`sha256:1a1c20c0e1fe9ea9a7ae86ac61ed89ee8cf01dccfb363d582cb8c910510c06fb`  
+		Last Modified: Tue, 05 Mar 2019 09:32:10 GMT  
+		Size: 22.8 MB (22751497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ed8cf7013bc0664270d7334f6419d7163ec8822f3773ca41984d0585f970ce`  
-		Last Modified: Wed, 06 Feb 2019 10:41:31 GMT  
-		Size: 184.0 B  
+	-	`sha256:4f6b0594148bf9da1e9bcdc5b86a22686e380c238bf3c784454cc74013dd7e9f`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f0b5e6b54898c5cb01924bdeb1730880824a085b38e475e7a4f9a21d778a8c`  
-		Last Modified: Wed, 06 Feb 2019 10:41:37 GMT  
-		Size: 9.9 MB (9869128 bytes)  
+	-	`sha256:f2c1fc32c0a6e3c1b94873836be76ea6f7140ae89d84523ebcb87c55c8e08236`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 9.9 MB (9870268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c5af2f9cee1fdc276514ffe3f44a24f39716f64214499a234364a32d10dd7e3`  
-		Last Modified: Wed, 13 Feb 2019 09:31:55 GMT  
-		Size: 16.7 MB (16741371 bytes)  
+	-	`sha256:d49758c0099372bd2d28a6e841a107d18f278604f7bebfb4d138315c961b208e`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 16.7 MB (16741750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d37e49d9c2c8c9246b75a57c5665f5556a22855456d8b10879d585717a7f4e22`  
-		Last Modified: Wed, 13 Feb 2019 09:31:53 GMT  
-		Size: 302.0 B  
+	-	`sha256:00b8e203a13ee8a79090bef693b7a52553554cbe206a63d584057560add5b028`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4.38` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:1e86edc94de1b559fff1bdb8e361df9b4a2cb252ed6fffcc38c8fae00f739640
+$ docker pull httpd@sha256:eac40318c385df1419e79438aeb6803c0c1985de2fdbbed80943e37238818379
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50080671 bytes)**  
+-	Total Size: **50.1 MB (50073969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a4e632f9fbf9b253aa8ca71a81a3b031adf8441a04d5d64d673d0d06982997`
+-	Image ID: `sha256:1476d3810b8b26b82ec02f6a05281c928d98d513b8c089b8a818317f860202b6`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 12:43:23 GMT
-ADD file:3a9fa274c8adc237938518b0ab05a8da0888b24eb1291c4c1d10353adf5c2c35 in / 
-# Wed, 06 Feb 2019 12:43:24 GMT
+# Tue, 05 Mar 2019 12:43:10 GMT
+ADD file:977b2abfb4bb6e881775d945b4d82d3f3e492b498a78ce0a9c877d9c8b82e3a9 in / 
+# Tue, 05 Mar 2019 12:43:10 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 13:03:34 GMT
+# Tue, 05 Mar 2019 13:45:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 12:48:16 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:7a7744b459675a4ad2aa884ea8350b1c1ae822c31e0ed60ab392fa7362b5c510`  
-		Last Modified: Wed, 06 Feb 2019 12:46:59 GMT  
-		Size: 22.4 MB (22353334 bytes)  
+	-	`sha256:2c9e1401ee6b0131741b02fed745b7f1d34bf29b0bc59f41e08dc969a710fc58`  
+		Last Modified: Tue, 05 Mar 2019 12:45:42 GMT  
+		Size: 22.3 MB (22345383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97089d8180ebc8c40a475993d64f5c1bcd6c242a31051f0644c6515982e12f2e`  
-		Last Modified: Wed, 06 Feb 2019 13:06:32 GMT  
-		Size: 154.0 B  
+	-	`sha256:e85315e9a137902f6feefdf025bc706dbc4b6dc1c83d35c228476f4aab8031ec`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:077bee67d721a49995b5e776dfc493412bc137435f7cee6141b7ff4bead90885`  
-		Last Modified: Wed, 06 Feb 2019 13:06:40 GMT  
-		Size: 11.0 MB (11005649 bytes)  
+	-	`sha256:55c54aa13b450e6b6b5a16a83e0805f6ec1ed34f573fd30d21b89ff7799a8645`  
+		Last Modified: Tue, 05 Mar 2019 13:46:56 GMT  
+		Size: 11.0 MB (11006937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04377b59a667c1fd9d6b57767cfefbaac742834ce4cf32cd30ba5275f1186a4`  
-		Last Modified: Wed, 13 Feb 2019 12:49:28 GMT  
-		Size: 16.7 MB (16721231 bytes)  
+	-	`sha256:f9daa5637d0e92d20ab2788d85560371b358e23991e9ddae4c5d18b6edd51610`  
+		Last Modified: Tue, 05 Mar 2019 13:46:53 GMT  
+		Size: 16.7 MB (16721192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c36c4a1f8291db94803120fcf7cf7ed3d6d9446ed28d829aa6fc76e8221310c`  
-		Last Modified: Wed, 13 Feb 2019 12:49:25 GMT  
-		Size: 303.0 B  
+	-	`sha256:1feaad6b3892e4ee631d6157b6243d017b42f4175591a6cc5809c316806d4410`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4.38-alpine`
@@ -3302,7 +3302,7 @@ CMD ["httpd-foreground"]
 ## `httpd:latest`
 
 ```console
-$ docker pull httpd@sha256:e3f5e8f0adf30b8d6d61e622d879012d893fef3c97d54afa9b42e4b6914cbbd8
+$ docker pull httpd@sha256:e4b88f56420b21e263810ec95f7f9fe236ff9204883e309e064434f0146b2e3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3658,135 +3658,135 @@ CMD ["httpd-foreground"]
 ### `httpd:latest` - linux; ppc64le
 
 ```console
-$ docker pull httpd@sha256:fd07fdfd75dc4d04de42d9f97635ff630684250df88cf696d8e2f029c5de66eb
+$ docker pull httpd@sha256:424c0ab6ef000917b516ffe814d866e3e20052d2786532d0caf880baea1e78e9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49366377 bytes)**  
+-	Total Size: **49.4 MB (49364000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fa9334d5c74aa6a283a2ef1ce7dfc6a90dca51f94c1e1924bd3815d60a0037`
+-	Image ID: `sha256:36475d0ca1c839b28faab17cb2c0cced590432fe84c3d92202ade67668cb1724`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 09:26:52 GMT
-ADD file:a3fa4dfe4f8ea60454e3698650325be0ad97847e49c257136da78e2f997c2202 in / 
-# Wed, 06 Feb 2019 09:26:54 GMT
+# Tue, 05 Mar 2019 09:25:57 GMT
+ADD file:499a43a96e8ab3c7c8ab9d1c3260d34bb2b955e9751ada2b98194e42f9578be3 in / 
+# Tue, 05 Mar 2019 09:26:02 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 10:33:45 GMT
+# Tue, 05 Mar 2019 13:38:21 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 10:33:47 GMT
+# Tue, 05 Mar 2019 13:38:24 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 10:33:51 GMT
+# Tue, 05 Mar 2019 13:38:30 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 10:33:52 GMT
+# Tue, 05 Mar 2019 13:38:33 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 10:34:26 GMT
+# Tue, 05 Mar 2019 13:39:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 10:34:31 GMT
+# Tue, 05 Mar 2019 13:39:17 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 10:34:34 GMT
+# Tue, 05 Mar 2019 13:39:19 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 10:34:39 GMT
+# Tue, 05 Mar 2019 13:39:21 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 10:34:42 GMT
+# Tue, 05 Mar 2019 13:39:23 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 09:29:39 GMT
+# Tue, 05 Mar 2019 13:43:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 09:29:40 GMT
+# Tue, 05 Mar 2019 13:43:51 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 09:29:42 GMT
+# Tue, 05 Mar 2019 13:43:53 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 09:29:43 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:ce77ebcb1b656de04f8443959fa201b1696ff2136de5be3de628f0c463c727f4`  
-		Last Modified: Wed, 06 Feb 2019 09:31:25 GMT  
-		Size: 22.8 MB (22755392 bytes)  
+	-	`sha256:1a1c20c0e1fe9ea9a7ae86ac61ed89ee8cf01dccfb363d582cb8c910510c06fb`  
+		Last Modified: Tue, 05 Mar 2019 09:32:10 GMT  
+		Size: 22.8 MB (22751497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ed8cf7013bc0664270d7334f6419d7163ec8822f3773ca41984d0585f970ce`  
-		Last Modified: Wed, 06 Feb 2019 10:41:31 GMT  
-		Size: 184.0 B  
+	-	`sha256:4f6b0594148bf9da1e9bcdc5b86a22686e380c238bf3c784454cc74013dd7e9f`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f0b5e6b54898c5cb01924bdeb1730880824a085b38e475e7a4f9a21d778a8c`  
-		Last Modified: Wed, 06 Feb 2019 10:41:37 GMT  
-		Size: 9.9 MB (9869128 bytes)  
+	-	`sha256:f2c1fc32c0a6e3c1b94873836be76ea6f7140ae89d84523ebcb87c55c8e08236`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 9.9 MB (9870268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c5af2f9cee1fdc276514ffe3f44a24f39716f64214499a234364a32d10dd7e3`  
-		Last Modified: Wed, 13 Feb 2019 09:31:55 GMT  
-		Size: 16.7 MB (16741371 bytes)  
+	-	`sha256:d49758c0099372bd2d28a6e841a107d18f278604f7bebfb4d138315c961b208e`  
+		Last Modified: Tue, 05 Mar 2019 13:44:29 GMT  
+		Size: 16.7 MB (16741750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d37e49d9c2c8c9246b75a57c5665f5556a22855456d8b10879d585717a7f4e22`  
-		Last Modified: Wed, 13 Feb 2019 09:31:53 GMT  
-		Size: 302.0 B  
+	-	`sha256:00b8e203a13ee8a79090bef693b7a52553554cbe206a63d584057560add5b028`  
+		Last Modified: Tue, 05 Mar 2019 13:44:25 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:latest` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:1e86edc94de1b559fff1bdb8e361df9b4a2cb252ed6fffcc38c8fae00f739640
+$ docker pull httpd@sha256:eac40318c385df1419e79438aeb6803c0c1985de2fdbbed80943e37238818379
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50080671 bytes)**  
+-	Total Size: **50.1 MB (50073969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a4e632f9fbf9b253aa8ca71a81a3b031adf8441a04d5d64d673d0d06982997`
+-	Image ID: `sha256:1476d3810b8b26b82ec02f6a05281c928d98d513b8c089b8a818317f860202b6`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 12:43:23 GMT
-ADD file:3a9fa274c8adc237938518b0ab05a8da0888b24eb1291c4c1d10353adf5c2c35 in / 
-# Wed, 06 Feb 2019 12:43:24 GMT
+# Tue, 05 Mar 2019 12:43:10 GMT
+ADD file:977b2abfb4bb6e881775d945b4d82d3f3e492b498a78ce0a9c877d9c8b82e3a9 in / 
+# Tue, 05 Mar 2019 12:43:10 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 06 Feb 2019 13:03:22 GMT
+# Tue, 05 Mar 2019 13:43:55 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Wed, 06 Feb 2019 13:03:23 GMT
+# Tue, 05 Mar 2019 13:43:56 GMT
 WORKDIR /usr/local/apache2
-# Wed, 06 Feb 2019 13:03:34 GMT
+# Tue, 05 Mar 2019 13:45:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libapr1-dev 		libaprutil1-dev 		libaprutil1-ldap 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_VERSION=2.4.38
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_SHA256=7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV HTTPD_PATCHES=
-# Wed, 06 Feb 2019 13:03:35 GMT
+# Tue, 05 Mar 2019 13:45:06 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		dirmngr 		dpkg-dev 		gcc 		gnupg 		liblua5.2-dev 		libnghttp2-dev 		libpcre3-dev 		libssl-dev 		libxml2-dev 		make 		wget 		zlib1g-dev 	; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		httpd -v
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 COPY file:8b68ac010cb13f58ebe31c3015d15c988625d2fde7339dca8a84c3c914493323 in /usr/local/bin/ 
-# Wed, 13 Feb 2019 12:48:15 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 EXPOSE 80
-# Wed, 13 Feb 2019 12:48:16 GMT
+# Tue, 05 Mar 2019 13:46:36 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:7a7744b459675a4ad2aa884ea8350b1c1ae822c31e0ed60ab392fa7362b5c510`  
-		Last Modified: Wed, 06 Feb 2019 12:46:59 GMT  
-		Size: 22.4 MB (22353334 bytes)  
+	-	`sha256:2c9e1401ee6b0131741b02fed745b7f1d34bf29b0bc59f41e08dc969a710fc58`  
+		Last Modified: Tue, 05 Mar 2019 12:45:42 GMT  
+		Size: 22.3 MB (22345383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97089d8180ebc8c40a475993d64f5c1bcd6c242a31051f0644c6515982e12f2e`  
-		Last Modified: Wed, 06 Feb 2019 13:06:32 GMT  
-		Size: 154.0 B  
+	-	`sha256:e85315e9a137902f6feefdf025bc706dbc4b6dc1c83d35c228476f4aab8031ec`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:077bee67d721a49995b5e776dfc493412bc137435f7cee6141b7ff4bead90885`  
-		Last Modified: Wed, 06 Feb 2019 13:06:40 GMT  
-		Size: 11.0 MB (11005649 bytes)  
+	-	`sha256:55c54aa13b450e6b6b5a16a83e0805f6ec1ed34f573fd30d21b89ff7799a8645`  
+		Last Modified: Tue, 05 Mar 2019 13:46:56 GMT  
+		Size: 11.0 MB (11006937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04377b59a667c1fd9d6b57767cfefbaac742834ce4cf32cd30ba5275f1186a4`  
-		Last Modified: Wed, 13 Feb 2019 12:49:28 GMT  
-		Size: 16.7 MB (16721231 bytes)  
+	-	`sha256:f9daa5637d0e92d20ab2788d85560371b358e23991e9ddae4c5d18b6edd51610`  
+		Last Modified: Tue, 05 Mar 2019 13:46:53 GMT  
+		Size: 16.7 MB (16721192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c36c4a1f8291db94803120fcf7cf7ed3d6d9446ed28d829aa6fc76e8221310c`  
-		Last Modified: Wed, 13 Feb 2019 12:49:25 GMT  
-		Size: 303.0 B  
+	-	`sha256:1feaad6b3892e4ee631d6157b6243d017b42f4175591a6cc5809c316806d4410`  
+		Last Modified: Tue, 05 Mar 2019 13:46:50 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
