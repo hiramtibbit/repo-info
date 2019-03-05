@@ -1,7 +1,7 @@
 ## `flink:scala_2.11`
 
 ```console
-$ docker pull flink@sha256:ffe7e63018425838fea23d1a8be685ea22f07c9100e3b06f0fdd8982d826588b
+$ docker pull flink@sha256:def5d1ad697f06a6391d3f5141d837b5b574ae1137427508251c0dca182bbffd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,131 +16,131 @@ $ docker pull flink@sha256:ffe7e63018425838fea23d1a8be685ea22f07c9100e3b06f0fdd8
 ### `flink:scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:36a1d9191f21e78de4489fd4a07ef5b429f5262ac6185eb56ddc8c22cec8cb7d
+$ docker pull flink@sha256:cefb99713417abffeb6ce807d149470a18f20f8fccde414e399d099557714286
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.8 MB (447812151 bytes)**  
+-	Total Size: **447.8 MB (447813311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:164b059fb3eb8be038a0578231dbaa87643d53701543b125893f617ec9f6dd8b`
+-	Image ID: `sha256:2be25c590831c30771e97b3b77e0414c9e1687b0f03e2a3740a1d0034cf1a3fe`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Wed, 06 Feb 2019 03:30:01 GMT
-ADD file:4fec879fdca802d6920b8981b409b19ded75aff693eaaba1ba4cf5ecb7594fdb in / 
-# Wed, 06 Feb 2019 03:30:02 GMT
+# Mon, 04 Mar 2019 23:22:10 GMT
+ADD file:e4bdc12117ee95eaa94b89f258164dd42f9828c7c5c4332a608707187ccb470a in / 
+# Mon, 04 Mar 2019 23:22:10 GMT
 CMD ["bash"]
-# Wed, 06 Feb 2019 05:51:03 GMT
+# Tue, 05 Mar 2019 02:35:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 05:51:14 GMT
+# Tue, 05 Mar 2019 02:35:27 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 06 Feb 2019 08:27:02 GMT
+# Tue, 05 Mar 2019 04:01:49 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 08:29:44 GMT
+# Tue, 05 Mar 2019 04:04:52 GMT
 ENV LANG=C.UTF-8
-# Wed, 06 Feb 2019 08:29:45 GMT
+# Tue, 05 Mar 2019 04:04:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Wed, 06 Feb 2019 08:29:45 GMT
+# Tue, 05 Mar 2019 04:04:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Wed, 06 Feb 2019 08:29:46 GMT
+# Tue, 05 Mar 2019 04:04:53 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Wed, 06 Feb 2019 08:29:46 GMT
+# Tue, 05 Mar 2019 04:04:53 GMT
 ENV JAVA_VERSION=8u181
-# Wed, 06 Feb 2019 08:29:46 GMT
+# Tue, 05 Mar 2019 04:04:54 GMT
 ENV JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
-# Wed, 06 Feb 2019 08:30:38 GMT
+# Tue, 05 Mar 2019 04:05:28 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y --no-install-recommends 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Wed, 06 Feb 2019 14:55:56 GMT
+# Tue, 05 Mar 2019 12:45:41 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5;   rm -rf /var/lib/apt/lists/*
-# Wed, 06 Feb 2019 14:55:56 GMT
+# Tue, 05 Mar 2019 12:45:41 GMT
 ENV GOSU_VERSION=1.7
-# Wed, 06 Feb 2019 14:56:01 GMT
+# Tue, 05 Mar 2019 12:45:45 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in $(shuf -e ha.pool.sks-keyservers.net                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 20 Feb 2019 02:26:22 GMT
+# Tue, 05 Mar 2019 12:56:48 GMT
 ENV FLINK_VERSION=1.7.2 HADOOP_SCALA_VARIANT=scala_2.11
-# Wed, 20 Feb 2019 02:26:22 GMT
+# Tue, 05 Mar 2019 12:56:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 20 Feb 2019 02:26:22 GMT
+# Tue, 05 Mar 2019 12:56:49 GMT
 ENV PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Feb 2019 02:26:23 GMT
+# Tue, 05 Mar 2019 12:56:51 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 20 Feb 2019 02:26:23 GMT
+# Tue, 05 Mar 2019 12:56:51 GMT
 WORKDIR /opt/flink
-# Wed, 20 Feb 2019 02:26:23 GMT
+# Tue, 05 Mar 2019 12:56:52 GMT
 ENV FLINK_URL_FILE_PATH=flink/flink-1.7.2/flink-1.7.2-bin-scala_2.11.tgz
-# Wed, 20 Feb 2019 02:26:23 GMT
+# Tue, 05 Mar 2019 12:56:52 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.7.2/flink-1.7.2-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.7.2/flink-1.7.2-bin-scala_2.11.tgz.asc
-# Wed, 20 Feb 2019 02:26:23 GMT
+# Tue, 05 Mar 2019 12:56:52 GMT
 COPY file:48bb6014c3e97895005a1862074377ac24cf0d91f0034129ec7f3c4dd3e96a38 in /KEYS 
-# Wed, 20 Feb 2019 02:26:36 GMT
+# Tue, 05 Mar 2019 12:57:38 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --batch --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   gpgconf --kill all;   rm -rf "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 20 Feb 2019 02:26:36 GMT
+# Tue, 05 Mar 2019 12:57:39 GMT
 COPY file:82b73e728dc4710cf6b0b2a4c3b0e39f061e57bb5a799dfaca9133014e5d2c63 in / 
-# Wed, 20 Feb 2019 02:26:36 GMT
+# Tue, 05 Mar 2019 12:57:39 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 20 Feb 2019 02:26:36 GMT
+# Tue, 05 Mar 2019 12:57:40 GMT
 EXPOSE 6123 8081
-# Wed, 20 Feb 2019 02:26:36 GMT
+# Tue, 05 Mar 2019 12:57:40 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:741437d97401b83849ccbfe4ed8964049b752081647d7f1ea8aea29d989f8968`  
-		Last Modified: Wed, 06 Feb 2019 03:35:41 GMT  
-		Size: 45.3 MB (45344292 bytes)  
+	-	`sha256:22dbe790f71562dfd3d49406b1dfd1e85e50f3dd7cb2e97b3918376ca39cae4e`  
+		Last Modified: Mon, 04 Mar 2019 23:26:18 GMT  
+		Size: 45.3 MB (45342528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34d8874714d74b636739b8a52204650a664fca8ff9741dd66810f30196f103e2`  
-		Last Modified: Wed, 06 Feb 2019 06:01:57 GMT  
-		Size: 10.8 MB (10781099 bytes)  
+	-	`sha256:0250231711a047a6e54e7107d7a3bfb0afd807f5f408d00be0d407c5b8395219`  
+		Last Modified: Tue, 05 Mar 2019 02:43:42 GMT  
+		Size: 10.8 MB (10781993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a108aa2667933b852b8d003f97b344d014fcd7e06a0c0e6e04f2d6906738388`  
-		Last Modified: Wed, 06 Feb 2019 06:01:56 GMT  
-		Size: 4.3 MB (4340044 bytes)  
+	-	`sha256:6fba9447437b5ee1da9b33b2e2d18add55a33d0b763075202e17cad7efd3ff8f`  
+		Last Modified: Tue, 05 Mar 2019 02:43:41 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eea0f08c7492aa49cb62b7fc7cf5a3b91e5c83c182cecddaba75903f09a1c67e`  
-		Last Modified: Wed, 06 Feb 2019 08:52:24 GMT  
-		Size: 852.9 KB (852911 bytes)  
+	-	`sha256:4afad9c4aba6cc6f5b4e85b14e0a16c4807fdcc8a5e4c43a532d6aa06f5d5664`  
+		Last Modified: Tue, 05 Mar 2019 04:25:25 GMT  
+		Size: 852.9 KB (852890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca74b3d90c15cc3066bb46f8b6cdb617805b39e46ba39b891e4592b601abaee1`  
-		Last Modified: Wed, 06 Feb 2019 08:54:24 GMT  
-		Size: 247.0 B  
+	-	`sha256:12fce9923c9d837e515d3de06b77d97a5a0c4796a35a97cf9a6768641ea25a8c`  
+		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f11a643c4a8511e3f7d00a7f7c01059bf804876833992895eebbbaf108399655`  
-		Last Modified: Wed, 06 Feb 2019 08:54:24 GMT  
+	-	`sha256:0dd81083d77ea06270e287c0fb5be2ab4daf9003518745fbdc4f2e55d2635db0`  
+		Last Modified: Tue, 05 Mar 2019 04:27:32 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05eafed73b65f1719e1ad5446e1f57859feb2f71f0b21d5f0bd25fb7d0d6dbd5`  
-		Last Modified: Wed, 06 Feb 2019 08:54:52 GMT  
-		Size: 122.1 MB (122121101 bytes)  
+	-	`sha256:4c2afc6ff72dd12b78d094cdbc7e04f6285e599f8a03d6cc1e935aee96b176c1`  
+		Last Modified: Tue, 05 Mar 2019 04:27:58 GMT  
+		Size: 122.1 MB (122122910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f59f493664954dfa5f61741219ac7637267819b4b9ef7fc9481841a1e57eb8fe`  
-		Last Modified: Wed, 06 Feb 2019 15:08:23 GMT  
-		Size: 466.4 KB (466359 bytes)  
+	-	`sha256:5734282084e7e44b26068a8d426a27a82f1a3a045d75486e389cdc3a19b0855c`  
+		Last Modified: Tue, 05 Mar 2019 13:00:04 GMT  
+		Size: 466.5 KB (466489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d1ccad5dd0dcfd802a581ee12636efc1f0038b9c7159d4f01cc9e352a9c7b81`  
-		Last Modified: Wed, 06 Feb 2019 15:08:23 GMT  
-		Size: 819.2 KB (819178 bytes)  
+	-	`sha256:c65ad42c6e9a32b9e4a1b32f1cf76ed17c94edbb75b9c878a30c1d4cc7fcacb3`  
+		Last Modified: Tue, 05 Mar 2019 13:00:04 GMT  
+		Size: 819.2 KB (819185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e7855c3edf7d65f0abd6c1034107d71691677ef67a004964ba3e2e19cf2d07f`  
-		Last Modified: Wed, 20 Feb 2019 02:42:20 GMT  
-		Size: 4.6 KB (4613 bytes)  
+	-	`sha256:3a1fd29daa12b85952e8b30c884cb27c6e0478132af6145869422005a2d42256`  
+		Last Modified: Tue, 05 Mar 2019 13:08:00 GMT  
+		Size: 4.6 KB (4612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3354ebcaceb6d4070fb679e918dc8804bf392fa940660cd03033b43b0aa5d96c`  
-		Last Modified: Wed, 20 Feb 2019 02:42:20 GMT  
+	-	`sha256:0087d31e23249277743d8a10f0021f9cde8d76446cdc5fea23bfbafa0c5a777d`  
+		Last Modified: Tue, 05 Mar 2019 13:08:00 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed67c2b38da728d027bee924dffd1d336a51854576a1f060366be51f94595688`  
-		Last Modified: Wed, 20 Feb 2019 02:42:20 GMT  
+	-	`sha256:c758ca1b14fc4aa902377b3f814777bb3779a1914c413f24bf48e996ab6fc64e`  
+		Last Modified: Tue, 05 Mar 2019 13:08:00 GMT  
 		Size: 61.6 KB (61621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73de3508c1969672b8481f3781dd1881db3026688824bfa7853e3cb0dfe0c0d4`  
-		Last Modified: Wed, 20 Feb 2019 02:42:35 GMT  
-		Size: 263.0 MB (263019301 bytes)  
+	-	`sha256:75f11b76ef328fa5c1391fd277ab3442fd1a6d855e8453221e6569d736f868e6`  
+		Last Modified: Tue, 05 Mar 2019 13:08:26 GMT  
+		Size: 263.0 MB (263019337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7c9f3fdfa00dc756e9d459b30da39e9aac2e7cfb2ee4aa9b622b11a5398c5cc`  
-		Last Modified: Wed, 20 Feb 2019 02:42:20 GMT  
+	-	`sha256:b306c6b93e9b38a2fe50e7edb8ef30d8a12f88aaf8e3f237bbbf321e8e31d219`  
+		Last Modified: Tue, 05 Mar 2019 13:08:00 GMT  
 		Size: 1.1 KB (1140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
