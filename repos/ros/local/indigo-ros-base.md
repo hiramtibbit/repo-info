@@ -206,13 +206,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=7.2ubuntu5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.5.dsc' base-files_7.2ubuntu5.5.dsc 1557 SHA256:594a4444d2fcddc11ba05e3c178d8f6eb3dd68ce10567b1f7d39bf13e7c75823
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.5.tar.xz' base-files_7.2ubuntu5.5.tar.xz 60544 SHA256:9b08be5d3fd11ce1536c3ce0ebd887d5041a9388cf1b4937f0dfd00cc372b2d3
-```
 
 ### `dpkg` source package: `base-passwd=3.5.33`
 
