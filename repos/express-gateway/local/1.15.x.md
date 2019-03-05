@@ -17,3 +17,5 @@
   - `NODE_PATH=/usr/local/share/.config/yarn/global/node_modules/`
   - `EG_CONFIG_DIR=/var/lib/eg`
   - `CHOKIDAR_USEPOLLING=true`
+- Labels:
+  - `maintainer=Vincenzo Chianese, vincenzo@express-gateway.io`
