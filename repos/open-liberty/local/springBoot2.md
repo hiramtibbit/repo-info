@@ -2,23 +2,26 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1da856d69facee31b9ce815e1f4601470ff22d60274ad8b5eb09d5c6668634c8`
-- Created: `2019-02-01T23:26:11.762492943Z`
-- Virtual Size: ~ 546.06 Mb  
+- Image ID: `sha256:623543b6bd56b152f0ae41b4e94e9c595358725480d2f442021bdab37c963b1e`
+- Created: `2019-03-05T00:50:34.922997729Z`
+- Virtual Size: ~ 548.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/docker/docker-server"]`
 - Command: `["/opt/ol/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ol/wlp/bin:/opt/ol/docker/:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5fp27`
+  - `JAVA_VERSION=1.8.0_sr5fp30`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=19.0.0.1`
-  - `LIBERTY_SHA=c7b741b3a2c1e93d7e1c652377a212d23025a7be`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
+- Labels:
+  - `github=https://github.com/OpenLiberty/ci.docker`
+  - `maintainer=Alasdair Nottingham`
+  - `url=https://openliberty.io/`
+  - `vendor=Open Liberty`
 
 ## `dpkg` (`.deb`-based packages)
 
