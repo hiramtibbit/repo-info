@@ -11,3 +11,5 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NGINX_VERSION=1.14.2`
+- Labels:
+  - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
