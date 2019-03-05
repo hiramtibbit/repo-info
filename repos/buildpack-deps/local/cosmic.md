@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b188a85da9c9fad8717562cfda1c6588829f24ae8b2c74e04610b57d1aae3d08`
-- Created: `2019-02-06T05:36:34.794468341Z`
-- Virtual Size: ~ 644.89 Mb  
+- Image ID: `sha256:1fe42cbd6ff09b34331b2b436da8025d2c8c3475d4d5fd282877d06e5bbe0e3f`
+- Created: `2019-03-02T01:28:39.641809811Z`
+- Virtual Size: ~ 647.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -457,12 +457,9 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu2
 
 Binary Packages:
 
-- `curl=7.61.0-1ubuntu2.2`
 - `libcurl3-gnutls:amd64=7.61.0-1ubuntu2.2`
-- `libcurl4:amd64=7.61.0-1ubuntu2.2`
-- `libcurl4-openssl-dev:amd64=7.61.0-1ubuntu2.2`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -474,6 +471,32 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.61.0-1ubuntu2.3`
+
+Binary Packages:
+
+- `curl=7.61.0-1ubuntu2.3`
+- `libcurl4:amd64=7.61.0-1ubuntu2.3`
+- `libcurl4-openssl-dev:amd64=7.61.0-1ubuntu2.3`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.61.0-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.3.dsc' curl_7.61.0-1ubuntu2.3.dsc 2777 SHA256:a39bbfe2f34ae48eb39aee9ffd6bc9723aac86f86e689da8489435541fef9d1c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0.orig.tar.gz' curl_7.61.0.orig.tar.gz 3964862 SHA256:64141f0db4945268a21b490d58806b97c615d3d0c75bf8c335bbe0efd13b45b5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.61.0-1ubuntu2.3.debian.tar.xz' curl_7.61.0-1ubuntu2.3.debian.tar.xz 31832 SHA256:9e1371ef93e7d84e69d5c045d81c7ec70fef878108f0f19fbf6adf2699d1f523
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -1112,9 +1135,11 @@ $ apt-get source -qq --print-uris glibc=2.28-0ubuntu1
 
 Binary Packages:
 
+- `libgmp-dev:amd64=2:6.1.2+dfsg-3`
 - `libgmp10:amd64=2:6.1.2+dfsg-3`
+- `libgmpxx4ldbl:amd64=2:6.1.2+dfsg-3`
 
-Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
 - `GPL`
 - `GPL-2`
@@ -2641,19 +2666,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.5+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.5+dfsg-1ubuntu1.debian.tar.xz' libzstd_1.3.5+dfsg-1ubuntu1.debian.tar.xz 10168 SHA256:df4e52b4b4a4eafe2766e1f4c56278f497edd719dc737f68c67f303b12d5711e
 ```
 
-### `dpkg` source package: `linux=4.18.0-14.15`
+### `dpkg` source package: `linux=4.18.0-15.16`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.18.0-14.15`
+- `linux-libc-dev:amd64=4.18.0-15.16`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.18.0-15.16
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-15.16.dsc' linux_4.18.0-15.16.dsc 8333 SHA256:af71846350ea5beea8c0c07d0e8803350fcd7cb43622a846b979fed2e0462080
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0.orig.tar.gz' linux_4.18.0.orig.tar.gz 157099820 SHA256:fd5c4f5ab07d6dccf7ef79317e36c2754438fb3d79d750df1d9868bab0de9573
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.18.0-15.16.diff.gz' linux_4.18.0-15.16.diff.gz 7457621 SHA256:fc79c1c82d5dfcfd3bb70f1e05d18c8cc688120d0e43e68e7505390367a0f1d1
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c35a0eabea471fc5738df4ac0c07f40a3a8e24a51ed335c422d559b00f87c80`
-- Created: `2019-02-06T05:55:41.822928273Z`
-- Virtual Size: ~ 468.96 Mb  
+- Image ID: `sha256:9cca46768e94652d0781693b66643dacb94801a281f6f5710c5269089bc9e574`
+- Created: `2019-03-05T02:40:06.989637045Z`
+- Virtual Size: ~ 470.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1244,9 +1244,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libgmp-dev:amd64=2:5.0.5+dfsg-2`
 - `libgmp10:amd64=2:5.0.5+dfsg-2`
+- `libgmpxx4ldbl:amd64=2:5.0.5+dfsg-2`
 
-Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
 - `GPL`
 - `LGPL-3`

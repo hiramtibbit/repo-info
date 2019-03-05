@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c2d54e8ddb00b3b82ecf03918291c355a46426bd899f4a328f10ede8ee88b23`
-- Created: `2019-02-06T05:29:43.138976568Z`
-- Virtual Size: ~ 645.24 Mb  
+- Image ID: `sha256:5a0b17f040e2b555f557ba1107633583b51f82d0f853c72dad5d7744135473b0`
+- Created: `2019-03-02T01:21:57.11907005Z`
+- Virtual Size: ~ 647.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -452,12 +452,9 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3.5`
 - `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.5`
-- `libcurl4:amd64=7.58.0-2ubuntu3.5`
-- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3.5`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -469,6 +466,32 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.6`
+
+Binary Packages:
+
+- `curl=7.58.0-2ubuntu3.6`
+- `libcurl4:amd64=7.58.0-2ubuntu3.6`
+- `libcurl4-openssl-dev:amd64=7.58.0-2ubuntu3.6`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.dsc' curl_7.58.0-2ubuntu3.6.dsc 2777 SHA256:3d8a674d0cc808754fe21084111f1d3a6e5b7367af1ac28187732d51932b6903
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.debian.tar.xz' curl_7.58.0-2ubuntu3.6.debian.tar.xz 39016 SHA256:2a3f6c3b67ec81beed238db2e20a6a70d0b02987c35d5e51bde43ea1830a243c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -1096,9 +1119,11 @@ $ apt-get source -qq --print-uris glibc=2.27-3ubuntu1
 
 Binary Packages:
 
+- `libgmp-dev:amd64=2:6.1.2+dfsg-2`
 - `libgmp10:amd64=2:6.1.2+dfsg-2`
+- `libgmpxx4ldbl:amd64=2:6.1.2+dfsg-2`
 
-Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
 - `GPL`
 - `GPL-2`
@@ -2386,13 +2411,13 @@ $ apt-get source -qq --print-uris libwmf=0.2.8.4-12
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-12.debian.tar.xz' libwmf_0.2.8.4-12.debian.tar.xz 11952 SHA256:579cc19e9199e30b1097559f031a9814f4990206487cb4c402defb68f55be1cd
 ```
 
-### `dpkg` source package: `libx11=2:1.6.4-3ubuntu0.1`
+### `dpkg` source package: `libx11=2:1.6.4-3ubuntu0.2`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.4-3ubuntu0.1`
-- `libx11-data=2:1.6.4-3ubuntu0.1`
-- `libx11-dev:amd64=2:1.6.4-3ubuntu0.1`
+- `libx11-6:amd64=2:1.6.4-3ubuntu0.2`
+- `libx11-data=2:1.6.4-3ubuntu0.2`
+- `libx11-dev:amd64=2:1.6.4-3ubuntu0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2401,10 +2426,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.dsc' libx11_1.6.4-3ubuntu0.1.dsc 2496 SHA256:522207baf69f09b8fd8a8a9d75fa7928c7378fe15db62ef2764ee70c880482e8
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.1.diff.gz' libx11_1.6.4-3ubuntu0.1.diff.gz 43542 SHA256:d32eb7b1164342a5571799f89fef0d53f96a59d814f848a19ed637a4b5e57835
+$ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.2.dsc' libx11_1.6.4-3ubuntu0.2.dsc 2512 SHA256:d6ce0d49440f8fa2f96b505c3266de17f3642268233963b641d4f794fb0ab779
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA256:5d7fbb9e15c27900ea8963218a59750b674a8d7c94161b66e96fcfbdaa1c6263
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.2.diff.gz' libx11_1.6.4-3ubuntu0.2.diff.gz 44954 SHA256:bd54630d6b58cbb0ffa7757d71ef5b53b35f6ba4c1fb90fa4d4a01cd00d72256
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
@@ -2626,14 +2651,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-45.48
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-45.48.dsc' linux_4.15.0-45.48.dsc 8333 SHA256:2a7cca5be910cacb0ae97f2e4e685d798f643653aa42ebf524f8142ee02644bd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-45.48.diff.gz' linux_4.15.0-45.48.diff.gz 8662323 SHA256:5e7c76bc8e4e86f917023bd1c9b41fc17722355d4a394e1a26994da2ac18b570
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
