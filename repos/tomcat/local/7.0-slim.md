@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff1ca71c7c75b0db924fb493f79f0cfab83361571a0a7ceada406d27b8825743`
-- Created: `2019-02-22T01:37:56.679379162Z`
-- Virtual Size: ~ 221.87 Mb  
+- Image ID: `sha256:49a41b06ea26ba776ab5acb39d29b3f70a988c96fd3bbab5920cc4bd34552bc8`
+- Created: `2019-03-05T13:49:31.391928153Z`
+- Virtual Size: ~ 223.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -2268,11 +2268,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-1+debu8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-1+debu8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26-1+debu8u3`
+### `dpkg` source package: `nss=2:3.26-1+debu8u4`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu8u3`
+- `libnss3:amd64=2:3.26-1+debu8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2281,17 +2281,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u3
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u3.dsc' nss_3.26-1+debu8u3.dsc 2407 SHA256:f74a3c32145effae8bb6f24b5bbe7ca5f8d9c505aba7cb781f44e781a51fa221
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u3.debian.tar.xz' nss_3.26-1+debu8u3.debian.tar.xz 27984 SHA256:b8ba1f94dfcb08de82d3b752a25ba60db7469f16777b5d62289dbc0a73a1acee
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u4
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.26-1+debu8u4.dsc' nss_3.26-1+debu8u4.dsc 2252 SHA256:8219df0d9c4eeda2086cedbbd09dc391bd0f427afe4ef1a2cc8b7895dffc6c7b
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.26-1+debu8u4.debian.tar.xz' nss_3.26-1+debu8u4.debian.tar.xz 36516 SHA256:38df123c4be5903700abcbd34e3f290dc343e0821a2049a86346b359da783667
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u4/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-7=7u181-2.6.14-2~deb8u1`
 
@@ -2742,15 +2742,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u9`
+### `dpkg` source package: `systemd=215-17+deb8u10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u9`
-- `libudev1:amd64=215-17+deb8u9`
-- `systemd=215-17+deb8u9`
-- `systemd-sysv=215-17+deb8u9`
-- `udev=215-17+deb8u9`
+- `libsystemd0:amd64=215-17+deb8u10`
+- `libudev1:amd64=215-17+deb8u10`
+- `systemd=215-17+deb8u10`
+- `systemd-sysv=215-17+deb8u10`
+- `udev=215-17+deb8u10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2761,13 +2761,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u10
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.dsc' systemd_215-17+deb8u10.dsc 4153 SHA256:40eb1f418eb1e1c450b83b5edbf39ae8d66e66433925551926e16f993176f850
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.debian.tar.xz' systemd_215-17+deb8u10.debian.tar.xz 246152 SHA256:dca47aceee1f94cfad27f54efe2edcb07abdf6156da3d494f410cb3665da8738
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
