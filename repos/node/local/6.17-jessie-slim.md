@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8bb010d15edb743561e6e5c10ee62f230ad503011e78d6e80d346de21640751`
-- Created: `2019-02-28T17:44:17.991218944Z`
-- Virtual Size: ~ 170.18 Mb  
+- Image ID: `sha256:9b23f4727d2e74284a3477776467c36fc6e7a5901c8413cd079a0d029ba137e9`
+- Created: `2019-03-05T03:42:26.130441543Z`
+- Virtual Size: ~ 172.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -1717,24 +1717,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.40+dfsg-1+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u10`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u11`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u10`
-- `openssl=1.0.1t-1+deb8u10`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u11`
+- `openssl=1.0.1t-1+deb8u11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u11
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u11.dsc' openssl_1.0.1t-1+deb8u11.dsc 2427 SHA256:1b2ea8314ab20895989a9ca0c1f6a3244baf6e889f9e9563245083ab8525e710
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u11.debian.tar.xz' openssl_1.0.1t-1+deb8u11.debian.tar.xz 116008 SHA256:deaab80273c0a2928a3184576856cbaa37993130a1a938a22dca6d341ffc3deb
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2096,15 +2103,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/startpar/0.59-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=215-17+deb8u9`
+### `dpkg` source package: `systemd=215-17+deb8u10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=215-17+deb8u9`
-- `libudev1:amd64=215-17+deb8u9`
-- `systemd=215-17+deb8u9`
-- `systemd-sysv=215-17+deb8u9`
-- `udev=215-17+deb8u9`
+- `libsystemd0:amd64=215-17+deb8u10`
+- `libudev1:amd64=215-17+deb8u10`
+- `systemd=215-17+deb8u10`
+- `systemd-sysv=215-17+deb8u10`
+- `udev=215-17+deb8u10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2115,13 +2122,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u10
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.dsc' systemd_215-17+deb8u10.dsc 4153 SHA256:40eb1f418eb1e1c450b83b5edbf39ae8d66e66433925551926e16f993176f850
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_215-17+deb8u10.debian.tar.xz' systemd_215-17+deb8u10.debian.tar.xz 246152 SHA256:dca47aceee1f94cfad27f54efe2edcb07abdf6156da3d494f410cb3665da8738
+```
 
-- http://snapshot.debian.org/package/systemd/215-17+deb8u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/215-17+deb8u10/ (for browsing the source)
+- https://sources.debian.net/src/systemd/215-17+deb8u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/215-17+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
