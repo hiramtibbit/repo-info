@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f14394601c31165732324eb9f8625d3cfa16173ab06b0a83cce7f06c4896949c`
-- Created: `2019-02-21T22:54:33.159575688Z`
-- Virtual Size: ~ 95.33 Mb  
+- Image ID: `sha256:c44244ef0a77611d2a8a4a25dcf3a880fbe82f655f44eae888d511aaa13bddde`
+- Created: `2019-03-02T01:35:21.622785571Z`
+- Virtual Size: ~ 95.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["rabbitmq-server"]`
 - Environment:
   - `PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OPENSSL_VERSION=1.1.1a`
-  - `OPENSSL_SOURCE_SHA256=fc20130f8b7cbd2fb918b2f14e2f429e109c31ddd0fb38fc5d71d9ffed3f9f41`
+  - `OPENSSL_VERSION=1.1.1b`
+  - `OPENSSL_SOURCE_SHA256=5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b`
   - `OPENSSL_PGP_KEY_ID=0x8657ABB260F056B1E5190839D9C4D26D0E604491`
   - `OTP_VERSION=21.2.6`
   - `OTP_SOURCE_SHA256=aa0b95031e7c01af8a7042a00974ab16ed8fec305a68d7dbaa4185e5d58ef4d5`
