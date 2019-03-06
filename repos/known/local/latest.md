@@ -24,6 +24,8 @@
   - `PHP_SHA256=1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c`
   - `PHP_MD5=`
   - `KNOWN_VERSION=0.9.9`
+- Labels:
+  - `maintainer=hello@withknown.com`
 
 ## `dpkg` (`.deb`-based packages)
 
