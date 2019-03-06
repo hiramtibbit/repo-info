@@ -1,15 +1,15 @@
-# `consul:1.4.2`
+# `consul:1.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5811022a71cd9f7f5ec4ec9b959c6196f4af658de0b17047c8c8d278beac511`
-- Created: `2019-01-31T00:15:39.29859184Z`
-- Virtual Size: ~ 106.77 Mb  
+- Image ID: `sha256:177eccb279885e0167cd15054bb4b82fb75e6a719641d312d5f883942e1b9619`
+- Created: `2019-03-05T22:20:35.535352713Z`
+- Virtual Size: ~ 106.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["agent","-dev","-client","0.0.0.0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CONSUL_VERSION=1.4.2`
+  - `CONSUL_VERSION=1.4.3`
   - `HASHICORP_RELEASES=https://releases.hashicorp.com`
