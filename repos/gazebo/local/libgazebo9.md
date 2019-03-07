@@ -5350,14 +5350,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-45.48
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-45.48.dsc' linux_4.15.0-45.48.dsc 8333 SHA256:2a7cca5be910cacb0ae97f2e4e685d798f643653aa42ebf524f8142ee02644bd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-45.48.diff.gz' linux_4.15.0-45.48.diff.gz 8662323 SHA256:5e7c76bc8e4e86f917023bd1c9b41fc17722355d4a394e1a26994da2ac18b570
-```
 
 ### `dpkg` source package: `llvm-toolchain-7=1:7-3~ubuntu0.18.04.1`
 
@@ -6669,14 +6664,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:11.1-1ubuntu7.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.1.dsc' pulseaudio_11.1-1ubuntu7.1.dsc 3845 SHA256:2d2c019b3261a3b8176d1bbd4d2afdf323e9baba1f49a19628aa4d1635610238
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1.orig.tar.xz' pulseaudio_11.1.orig.tar.xz 1648924 SHA256:f2521c525a77166189e3cb9169f75c2ee2b82fa3fcf9476024fbc2c3a6c9cd9e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.1.debian.tar.xz' pulseaudio_11.1-1ubuntu7.1.debian.tar.xz 99536 SHA256:3daf97873d6b2a1a0a9878330bd0799ab08eb6c837fd2060a89c923565a3e343
-```
 
 ### `dpkg` source package: `python-defaults=2.7.15~rc1-1`
 

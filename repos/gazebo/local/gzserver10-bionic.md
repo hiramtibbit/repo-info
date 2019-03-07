@@ -5660,14 +5660,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:11.1-1ubuntu7.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.1.dsc' pulseaudio_11.1-1ubuntu7.1.dsc 3845 SHA256:2d2c019b3261a3b8176d1bbd4d2afdf323e9baba1f49a19628aa4d1635610238
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1.orig.tar.xz' pulseaudio_11.1.orig.tar.xz 1648924 SHA256:f2521c525a77166189e3cb9169f75c2ee2b82fa3fcf9476024fbc2c3a6c9cd9e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.1.debian.tar.xz' pulseaudio_11.1-1ubuntu7.1.debian.tar.xz 99536 SHA256:3daf97873d6b2a1a0a9878330bd0799ab08eb6c837fd2060a89c923565a3e343
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
