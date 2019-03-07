@@ -1,9 +1,9 @@
-# `swift:4.2.2`
+# `swift:4.2.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b1be62457679db3f6ddba3d4b494ba6a158ea1a10c41ae7d30a40f7c10ba347d`
-- Created: `2019-02-06T22:31:21.961195837Z`
+- Image ID: `sha256:aace161a39c7c387d1fb49f253be174c518d72e2e4335455b67ca5698e4d62e9`
+- Created: `2019-03-05T22:21:42.99531138Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_PLATFORM=ubuntu16.04`
-  - `SWIFT_BRANCH=swift-4.2.2-release`
-  - `SWIFT_VERSION=swift-4.2.2-RELEASE`
+  - `SWIFT_BRANCH=swift-4.2.3-release`
+  - `SWIFT_VERSION=swift-4.2.3-RELEASE`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
   - `maintainer=Swift Infrastructure <swift-infrastructure@swift.org>`
