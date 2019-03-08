@@ -32,6 +32,8 @@
 -	[`mariadb:5-trusty`](#mariadb5-trusty)
 -	[`mariadb:bionic`](#mariadbbionic)
 -	[`mariadb:latest`](#mariadblatest)
+-	[`mariadb:rc`](#mariadbrc)
+-	[`mariadb:rc-bionic`](#mariadbrc-bionic)
 
 ## `mariadb:10`
 
@@ -11770,3 +11772,11 @@ CMD ["mysqld"]
 		Last Modified: Sat, 02 Mar 2019 09:55:16 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mariadb:rc`
+
+**does not exist** (yet?)
+
+## `mariadb:rc-bionic`
+
+**does not exist** (yet?)
