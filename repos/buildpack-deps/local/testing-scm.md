@@ -129,19 +129,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.0~rc3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0~rc3.dsc' apt_1.8.0~rc3.dsc 2754 SHA256:d76176befffd77dd165180cc7427a43e08b301e05ecc5f406dd5b0357de3d830
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.0~rc3.tar.xz' apt_1.8.0~rc3.tar.xz 2170680 SHA256:ff9d757e2e705815f3c316a10debb425d04494bf7cd645a5da7fdb06f9736df0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.8.0~rc3/
 
-- https://sources.debian.net/src/apt/1.8.0~rc3/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.8.0~rc3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.8.0~rc3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-4`
 
@@ -359,20 +353,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.30-1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30-1.dsc' coreutils_8.30-1.dsc 1886 SHA256:b23403d9382c9e91a9f63947352dfc9c06d3da9bf97173923026f9abb355446d
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30.orig.tar.xz' coreutils_8.30.orig.tar.xz 5359532 SHA256:e831b3a86091496cdba720411f9748de81507798f6130adeaef872d206e1b057
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30-1.debian.tar.xz' coreutils_8.30-1.debian.tar.xz 31436 SHA256:7e397b558de9c9bc49cbabb2707c4902afd0fca97b7eedcb73f94f8421dfe2ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/8.30-1/
 
-- https://sources.debian.net/src/coreutils/8.30-1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.30-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.30-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.64.0-1`
 
@@ -469,20 +456,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.3
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.3.dsc' db5.3_5.3.28+dfsg1-0.3.dsc 2824 SHA256:63ab3072d8321deef4d737288b0f72623bc4d608fa95ea69683efad4fe456b9e
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.3.debian.tar.xz' db5.3_5.3.28+dfsg1-0.3.debian.tar.xz 29124 SHA256:0e02b66c9c83776101207684f91b38cdc676206e7a3cbbcd6086b3623b4c698d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.3/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.3/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.70`
 
@@ -494,19 +474,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.70
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.70.dsc' debconf_1.5.70.dsc 2047 SHA256:f7cccca34346df44b69a7242650bed5a1d941d7bd1f7a89dde38d8d8551a9935
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.70.tar.xz' debconf_1.5.70.tar.xz 571092 SHA256:1981bb2fdd07e2afe32845b09b333265cd65d876787febc48ba5000152c98a59
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.70/
 
-- https://sources.debian.net/src/debconf/1.5.70/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.70/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.70/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2018.1`
 
@@ -1176,20 +1150,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-1.dsc' krb5_1.17-1.dsc 3302 SHA256:8a343ce256e6b80f11566c4e73ade9a221c5025ae3f54bb916c3957128cebb61
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-1.debian.tar.xz' krb5_1.17-1.debian.tar.xz 97940 SHA256:95ca4f93a1fbf98138ee3fa2046a45e3a5a86da2fd987de0178da78c03002af5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.17-1/
 
-- https://sources.debian.net/src/krb5/1.17-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.2-1`
 
@@ -2620,21 +2587,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.26.0+fossilbc891ac6b-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b-2.dsc' sqlite3_3.26.0+fossilbc891ac6b-2.dsc 2558 SHA256:81fe1e0e10e0264d5ef23a5b5a95f8124fd5cf96f4b0fc40272b08c0ebc8dc64
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b.orig-www.tar.xz' sqlite3_3.26.0+fossilbc891ac6b.orig-www.tar.xz 5572636 SHA256:11c2813fafaae6efbb6a6c62fc4c63425c0de626fb0893bfa90431f295da84bd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b.orig.tar.xz' sqlite3_3.26.0+fossilbc891ac6b.orig.tar.xz 8297284 SHA256:3b047b3e4986c5a8889e430153e9f084990671a363e8e8780080f08a2f03c37d
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.26.0+fossilbc891ac6b-2.debian.tar.xz' sqlite3_3.26.0+fossilbc891ac6b-2.debian.tar.xz 19700 SHA256:27dbd3f398f66abf80c236f5ede3ae9c742e82d2dd73164f9f460430c9822174
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.26.0+fossilbc891ac6b-2/
 
-- https://sources.debian.net/src/sqlite3/3.26.0+fossilbc891ac6b-2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.26.0+fossilbc891ac6b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.26.0+fossilbc891ac6b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.10.4-1`
 

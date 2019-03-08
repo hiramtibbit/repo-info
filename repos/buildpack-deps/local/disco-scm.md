@@ -24,14 +24,9 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `GPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.2.52-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.52-3build1.dsc' acl_2.2.52-3build1.dsc 2031 SHA256:864215f3e68d6b169a044bd952e78be9b0b1cf527a2cbf25866cab919e78e64b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.52.orig.tar.bz2' acl_2.2.52.orig.tar.bz2 312128 SHA256:59d05b38af76baf2eddccbf08c7968a17451cc785ffecc657fcb46ce32b2631d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.52-3build1.debian.tar.xz' acl_2.2.52-3build1.debian.tar.xz 8788 SHA256:0729d8c850aa26bc9f1b22ce632efb1616a3f97dc5fca1d9edfda45b582b7f37
-```
 
 ### `dpkg` source package: `adduser=3.118ubuntu1`
 
@@ -395,14 +390,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.3.dsc' db5.3_5.3.28+dfsg1-0.3.dsc 2824 SHA256:63ab3072d8321deef4d737288b0f72623bc4d608fa95ea69683efad4fe456b9e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.3.debian.tar.xz' db5.3_5.3.28+dfsg1-0.3.debian.tar.xz 29124 SHA256:0e02b66c9c83776101207684f91b38cdc676206e7a3cbbcd6086b3623b4c698d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.3/
+
 
 ### `dpkg` source package: `debconf=1.5.70`
 
@@ -628,14 +622,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.28-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.28-0ubuntu1.dsc' glibc_2.28-0ubuntu1.dsc 9340 SHA256:ae17989994ced0ed32cca1d60c523d162dbb6aa0881394ca6f5681f3522f9181
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 16993220 SHA256:5d7c5795a0d52df5a84c94a8e4aaa4c452e845739e1bab6a963f609f6cb75a4b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.28-0ubuntu1.debian.tar.xz' glibc_2.28-0ubuntu1.debian.tar.xz 863416 SHA256:4fa456ccc2ff5f093016fabc418c18c505a0cb2e14dcd71ba4e2467ac465d6e7
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
@@ -938,15 +927,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.9.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.9.1-1.dsc' libbsd_0.9.1-1.dsc 2181 SHA256:3082adfec10879cc623b8f714d16ba4b4533705f015bf96c971134c7896bd558
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.9.1.orig.tar.xz' libbsd_0.9.1.orig.tar.xz 387180 SHA256:56d835742327d69faccd16955a60b6dcf30684a8da518c4eca0ac713b9e0a7a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.9.1.orig.tar.xz.asc' libbsd_0.9.1.orig.tar.xz.asc 833 SHA256:a34a81f40bfef37242943cb1c4c446e75d57f31be3317c887d8a5f2cbfb5577d
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.9.1-1.debian.tar.xz' libbsd_0.9.1-1.debian.tar.xz 16372 SHA256:f71467eada3bca5bd3ba517dc69372ebc76df224b0e7ebc1761a856637c48c44
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libbsd/0.9.1-1/
+
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2`
 
@@ -1574,15 +1561,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1a-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1a-1ubuntu2.dsc' openssl_1.1.1a-1ubuntu2.dsc 2396 SHA256:49be03bfbeacc099aff19973d26dfa10e9371afa6dd48190ae087564ad5ebc24
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1a.orig.tar.gz' openssl_1.1.1a.orig.tar.gz 8350547 SHA256:fc20130f8b7cbd2fb918b2f14e2f429e109c31ddd0fb38fc5d71d9ffed3f9f41
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1a.orig.tar.gz.asc' openssl_1.1.1a.orig.tar.gz.asc 488 SHA256:2e8bbc4766a3d72857538e99074433eae16bf32530b08625d65312bfc569dd7b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1a-1ubuntu2.debian.tar.xz' openssl_1.1.1a-1ubuntu2.debian.tar.xz 84260 SHA256:f6c88a6d638eb64eb643a4d81cfc227fea6842f991a55273d4cdfca0c513e2c8
-```
 
 ### `dpkg` source package: `p11-kit=0.23.14-2`
 
@@ -2142,14 +2123,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.33.1-0.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.33.1-0.1ubuntu1.dsc' util-linux_2.33.1-0.1ubuntu1.dsc 4085 SHA256:ec6c305b276462151f470d7c216a6da8364fe6818965eabd8ec7b777561fa408
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.33.1.orig.tar.xz' util-linux_2.33.1.orig.tar.xz 4650936 SHA256:c14bd9f3b6e1792b90db87696e87ec643f9d63efa0a424f092a5a6b2f2dbef21
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.33.1-0.1ubuntu1.debian.tar.xz' util-linux_2.33.1-0.1ubuntu1.debian.tar.xz 84112 SHA256:29291ceffe9b1b8881b9f61626a2326b039b01b33635bf198cac59bdcbcacb91
-```
 
 ### `dpkg` source package: `wget=1.20.1-1ubuntu3`
 

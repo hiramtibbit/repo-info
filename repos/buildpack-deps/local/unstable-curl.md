@@ -983,20 +983,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6-5
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6-5.dsc' keyutils_1.6-5.dsc 2062 SHA256:558ad163d017d1571b81514594dfc48202316e70a563288df732d55543c36908
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.orig.tar.bz2' keyutils_1.6.orig.tar.bz2 93973 SHA256:d3aef20cec0005c0fa6b4be40079885567473185b1a57b629b030e67942c7115
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6-5.debian.tar.xz' keyutils_1.6-5.debian.tar.xz 12452 SHA256:014a2f188079a66bab5e8f9941485315f850b26cff2e4429c98a0dbba5da21d3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.6-5/
 
-- https://sources.debian.net/src/keyutils/1.6-5/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.6-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.6-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.17-2`
 
