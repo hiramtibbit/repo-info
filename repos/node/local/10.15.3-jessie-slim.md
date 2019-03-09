@@ -1,16 +1,16 @@
-# `node:10.15.2-jessie-slim`
+# `node:10.15.3-jessie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:30c5fbc59dda0311dd271a02dabe2c6b0e92be7523b0ee5c58c6d495760d34af`
-- Created: `2019-03-05T03:46:55.542594508Z`
-- Virtual Size: ~ 187.37 Mb  
+- Image ID: `sha256:b3110add7523933727ba2b7ea1e34f66403925b3005307e762c77e609ff01308`
+- Created: `2019-03-08T02:17:47.375648611Z`
+- Virtual Size: ~ 187.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.15.2`
+  - `NODE_VERSION=10.15.3`
   - `YARN_VERSION=1.13.0`
 
 ## `dpkg` (`.deb`-based packages)
