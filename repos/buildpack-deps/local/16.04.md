@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3730a7778d2bd82fc3489b6887d03c69cc6744d6a6aa3f4c75cffa6399c81640`
-- Created: `2019-03-02T01:47:09.466094461Z`
-- Virtual Size: ~ 656.98 Mb  
+- Image ID: `sha256:7d251c49dc3da84fc46844e01f5cd187f2ddd3354d0be4583bf25261a5ec9b74`
+- Created: `2019-03-12T00:54:18.076607197Z`
+- Virtual Size: ~ 641.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -294,19 +294,23 @@ $ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.3.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.3.debian.tar.xz 34628 SHA256:4bb9ea6de721e4383dd2a4e6b489bf68b11a1516b432481cdb714ea0058919a5
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.7`
+### `dpkg` source package: `base-files=9.4ubuntu4.8`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.7`
+- `base-files=9.4ubuntu4.8`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.8.dsc' base-files_9.4ubuntu4.8.dsc 1226 SHA256:2b0cdc78c2179100eb0004baa3aae274babadae5251e111894c94982e4db5005
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.8.tar.xz' base-files_9.4ubuntu4.8.tar.xz 63140 SHA256:44447e9dfe7000b3d03043fde24b4d37bea4c9e1c9f986b1f3ecc9797c266dd4
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -551,34 +555,16 @@ $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.7
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.7.debian.tar.xz' cups_2.1.3-4ubuntu0.7.debian.tar.xz 351104 SHA256:fa9be8d8a38a0e8235a4d75e547e19e77e60ba8c1e5727a4445a5405f0bac23c
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.11`
-
-Binary Packages:
-
-- `curl=7.47.0-1ubuntu2.11`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.11`
-
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.12`
 
 Binary Packages:
 
+- `curl=7.47.0-1ubuntu2.12`
 - `libcurl3:amd64=7.47.0-1ubuntu2.12`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.12`
 - `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.12`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1230,36 +1216,17 @@ $ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.1.debian.tar.xz 71256 SHA256:280d06a688aef975b08dabb5420662761fe97869ce98afe1c22870cad080e196
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu10`
-
-Binary Packages:
-
-- `libc-bin=2.23-0ubuntu10`
-- `multiarch-support=2.23-0ubuntu10`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
-```
-
 ### `dpkg` source package: `glibc=2.23-0ubuntu11`
 
 Binary Packages:
 
+- `libc-bin=2.23-0ubuntu11`
 - `libc-dev-bin=2.23-0ubuntu11`
 - `libc6:amd64=2.23-0ubuntu11`
 - `libc6-dev:amd64=2.23-0ubuntu11`
+- `multiarch-support=2.23-0ubuntu11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1794,20 +1761,25 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-8ubuntu1.debian.tar.xz' keyutils_1.5.9-8ubuntu1.debian.tar.xz 16716 SHA256:36f69846dfeb1e7abdd39dace57a43f9637e426cf4c5252dd9990af36488249b
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu5.1`
+### `dpkg` source package: `kmod=22-1ubuntu5.2`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu5.1`
+- `libkmod2:amd64=22-1ubuntu5.2`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.2.dsc' kmod_22-1ubuntu5.2.dsc 2165 SHA256:b7e21eda8b57d7bba700afcc9c0cf0f2ea5e3a484e87b6b91b521cd2409b3964
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.2.debian.tar.xz' kmod_22-1ubuntu5.2.debian.tar.xz 14524 SHA256:f8dd1134e6cff72a458e66d2e86ef413be07a29cc66c87d02544bb5c2037bfb7
+```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.1`
 
@@ -3337,33 +3309,24 @@ $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.4.debian.tar.xz 178300 SHA256:2951df1d5e470328e4d619c5f35dbc3577d501d2e65bfcef45db57558aa93929
 ```
 
-### `dpkg` source package: `openssh=1:7.2p2-4ubuntu2.6`
+### `dpkg` source package: `openssh=1:7.2p2-4ubuntu2.8`
 
 Binary Packages:
 
-- `openssh-client=1:7.2p2-4ubuntu2.6`
+- `openssh-client=1:7.2p2-4ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.14`
-
-Binary Packages:
-
-- `openssl=1.0.2g-1ubuntu4.14`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
+```console
+$ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.8.dsc' openssh_7.2p2-4ubuntu2.8.dsc 2910 SHA256:934fb980ef93127c39385f39f6d6fdc0553a07b766745b724e37859ecb3ee402
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.8.debian.tar.xz' openssh_7.2p2-4ubuntu2.8.debian.tar.xz 178696 SHA256:895a7c365b393a687b17db38cecbb032cbb6ae1c15946cda41e2ec53d39236f1
+```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.15`
 
@@ -3371,6 +3334,7 @@ Binary Packages:
 
 - `libssl-dev:amd64=1.0.2g-1ubuntu4.15`
 - `libssl1.0.0:amd64=1.0.2g-1ubuntu4.15`
+- `openssl=1.0.2g-1ubuntu4.15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3887,14 +3851,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.1.diff.gz' subversion_1.9.3-2ubuntu1.1.diff.gz 2432375 SHA256:43ea0c91f14ddee823b7e661e3dec6eaa4eab55d0c9f69c22df4584e8392bbd6
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.15`
+### `dpkg` source package: `systemd=229-4ubuntu21.16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.15`
-- `libudev1:amd64=229-4ubuntu21.15`
-- `systemd=229-4ubuntu21.15`
-- `systemd-sysv=229-4ubuntu21.15`
+- `libsystemd0:amd64=229-4ubuntu21.16`
+- `libudev1:amd64=229-4ubuntu21.16`
+- `systemd=229-4ubuntu21.16`
+- `systemd-sysv=229-4ubuntu21.16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -3906,9 +3870,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.16
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.16.dsc' systemd_229-4ubuntu21.16.dsc 4145 SHA256:4567591f1f052af2a067da310f9e5e0863d3c64e0e94fe2c40a901fff53bd39f
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.16.debian.tar.xz' systemd_229-4ubuntu21.16.debian.tar.xz 290016 SHA256:5dd6e80a348469ed1a7dfad3b3da882b2c82156737ca5f48499bd88124a9edc7
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -3963,14 +3932,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.5.dsc' tiff_4.0.6-1ubuntu0.5.dsc 2399 SHA256:70955fdde28324827f8bf3a10af3531b859bf70a76fd2885a52e7d9b753e5388
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.5.debian.tar.xz' tiff_4.0.6-1ubuntu0.5.debian.tar.xz 58544 SHA256:ae9df02a3d84895215b6d19fc9e22376f490156faca63de46f1e7a8396089d8a
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bd6f2242270cfe517b2fe26023accaff8d94096244b83469bed0227e6860f8a`
-- Created: `2019-01-23T08:54:09.55888288Z`
-- Virtual Size: ~ 279.80 Mb  
+- Image ID: `sha256:4ab7724ad2df81e9c9b9abab853570d369cb1cd59de25976f8ed543c062f36a2`
+- Created: `2019-03-12T00:49:10.072326723Z`
+- Virtual Size: ~ 279.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -89,14 +89,14 @@ $ apt-get source -qq --print-uris apr=1.5.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.0-1.debian.tar.gz' apr_1.5.0-1.debian.tar.gz 27878 SHA256:03c97e6c336f68c8be73f1440362408204fa190808e1ff7655b1bcf134f77f88
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.19`
+### `dpkg` source package: `apt=1.0.1ubuntu2.20`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.19`
-- `apt-utils=1.0.1ubuntu2.19`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.19`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.19`
+- `apt=1.0.1ubuntu2.20`
+- `apt-utils=1.0.1ubuntu2.20`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.20`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.20`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -106,9 +106,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.19
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.dsc' apt_1.0.1ubuntu2.19.dsc 2407 SHA256:ead36e8634a3ca6da5c0d657de4c06c522e7b3a78b130b75db11ed91e8389413
-'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.19.tar.xz' apt_1.0.1ubuntu2.19.tar.xz 1782488 SHA256:9202228f116d2b8be351f901aebff4c0ec6993db20849ecb9e9b5576ae46698f
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.20
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.20.dsc' apt_1.0.1ubuntu2.20.dsc 2428 SHA256:55e8f5fafa3a5b1d182a45c4c94eee07fcdbe1ef6cc186899d4294d43ae6a35f
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.20.tar.xz' apt_1.0.1ubuntu2.20.tar.xz 1753248 SHA256:20746ba5e409beb733c866584ff7b45509ff968ad3c6e8b19e965e38dc9229d1
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
@@ -152,19 +152,23 @@ $ apt-get source -qq --print-uris audit=1:2.3.2-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.3.2-2ubuntu1.debian.tar.gz' audit_2.3.2-2ubuntu1.debian.tar.gz 14702 SHA256:9aa22280f6248f0f750a6aea84624907d796872ecdca17936cd48888a50a4104
 ```
 
-### `dpkg` source package: `base-files=7.2ubuntu5.5`
+### `dpkg` source package: `base-files=7.2ubuntu5.6`
 
 Binary Packages:
 
-- `base-files=7.2ubuntu5.5`
+- `base-files=7.2ubuntu5.6`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=7.2ubuntu5.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.6.dsc' base-files_7.2ubuntu5.6.dsc 1226 SHA256:c1e85f0b0b669a07519cbfbcfa7bc548fe331fc76d8f6cfc2443ddc9a597a23d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.6.tar.xz' base-files_7.2ubuntu5.6.tar.xz 60720 SHA256:ff3537d162d3c03bdd60772b07b74414157dceffbf6d8ba27a09f29772c21050
+```
 
 ### `dpkg` source package: `base-passwd=3.5.33`
 
@@ -422,13 +426,13 @@ $ apt-get source -qq --print-uris cron=3.0pl1-124ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cron/cron_3.0pl1-124ubuntu2.diff.gz' cron_3.0pl1-124ubuntu2.diff.gz 98350 SHA256:282213a327434e44b0f0f6ac23da5f0f4024cf284ca6e008a0b774bb76102dab
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.19`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.20`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.19`
-- `libcurl3:amd64=7.35.0-1ubuntu2.19`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.19`
+- `curl=7.35.0-1ubuntu2.20`
+- `libcurl3:amd64=7.35.0-1ubuntu2.20`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.20`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -437,9 +441,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.20.dsc' curl_7.35.0-1ubuntu2.20.dsc 2755 SHA256:7790715d4fdb1053de4184e050cb2d75761f26a6a51d1b66a7a64f6a60cc1fe2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.20.debian.tar.gz' curl_7.35.0-1ubuntu2.20.debian.tar.gz 79458 SHA256:ee2b71ab43704a548db6ac6d4a3df728b3cd3b281cae84a540aa84c48180ad7b
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -2197,19 +2206,24 @@ $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.5.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.5.diff.gz 176564 SHA256:5e0681bb546aec9621f7e58685b279229a45c3d904eaf450443d492bf94cbd01
 ```
 
-### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.11`
+### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.13`
 
 Binary Packages:
 
-- `openssh-client=1:6.6p1-2ubuntu2.11`
+- `openssh-client=1:6.6p1-2ubuntu2.13`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.13.dsc' openssh_6.6p1-2ubuntu2.13.dsc 2740 SHA256:900b4567117d3c0f48978629b3cf0debc0213f572ab9002b9376d2dfffe8bb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1.orig.tar.gz' openssh_6.6p1.orig.tar.gz 1282502 SHA256:48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.13.debian.tar.gz' openssh_6.6p1-2ubuntu2.13.debian.tar.gz 217056 SHA256:f201c4776a668484eaad7567fbf786bba40d39622286eeb148770d111efd700b
+```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.27`
 
@@ -2686,11 +2700,11 @@ $ apt-get source -qq --print-uris slang2=2.2.4-15ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/slang2/slang2_2.2.4-15ubuntu1.debian.tar.xz' slang2_2.2.4-15ubuntu1.debian.tar.xz 19244 SHA256:3b499dda5efdcb0f0aba1b0d28ac5a15a5831a8d0bcd37a7843d069dc973d63b
 ```
 
-### `dpkg` source package: `sqlite3=3.8.2-1ubuntu2.1`
+### `dpkg` source package: `sqlite3=3.8.2-1ubuntu2.2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.8.2-1ubuntu2.1`
+- `libsqlite3-0:amd64=3.8.2-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2698,9 +2712,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.2.dsc' sqlite3_3.8.2-1ubuntu2.2.dsc 2589 SHA256:3ff51fb56c20649f7ade6a48d7a6a99925ad887c7a6051e87a5fd3c8bf768bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2.orig-www.tar.gz' sqlite3_3.8.2.orig-www.tar.gz 3423593 SHA256:880784f9b2e5f0a1347e6319f1c92f81c368ad070af1d078de501f7d006e320c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2.orig.tar.gz' sqlite3_3.8.2.orig.tar.gz 4793473 SHA256:022de844b00cbd7110da4083c6ed436661ecf4853e1381fa8b4263eaedca1769
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.2.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.2.debian.tar.gz 25662 SHA256:276077603a112df96c40301b164eab72083eb26d3522c13dc23db618177e59db
+```
 
 ### `dpkg` source package: `subversion=1.8.8-1ubuntu3.3`
 
