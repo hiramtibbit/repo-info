@@ -1,7 +1,7 @@
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull buildpack-deps@sha256:61b3c3d834286ddd7bba79e44f88a11fb35a08ab23f3cc7be549441a0bb9c5e0
+$ docker pull buildpack-deps@sha256:a6b3800f9df218d4131e36f0cd9f2619f266735711a89b68205c4ae119c25ab9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -207,65 +207,65 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:trusty` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:1091f6b1788d71ba94f7445d93664583777083146c2b7538e584ea1efc4d0bd5
+$ docker pull buildpack-deps@sha256:7b239ebe6a9cc08d07b996241283ceab1af020e3e3661f5e7b2c6731ce6fbcc7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.0 MB (203975052 bytes)**  
+-	Total Size: **203.2 MB (203246625 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90e43f783f2c10866d091064599a06a538f5b4e7acde3b3254162a763fc87bf7`
+-	Image ID: `sha256:5536e290b843f2a5a542436fb6404fea82aeb1bd1631c3e4f607ec7fe2ba6f5e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 23 Jan 2019 12:09:21 GMT
-ADD file:6cb4d99fdee765f7b0da3922e48e28ca8c8745b6df9d4b7a0666d08603e4d61f in / 
-# Wed, 23 Jan 2019 12:09:23 GMT
+# Tue, 12 Mar 2019 11:35:05 GMT
+ADD file:a545e9a90ba49231efc4376b0b7d7c9504dc139e390febeb4cf5c8f16a20e570 in / 
+# Tue, 12 Mar 2019 11:35:05 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 23 Jan 2019 12:09:24 GMT
+# Tue, 12 Mar 2019 11:35:06 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 23 Jan 2019 12:09:26 GMT
+# Tue, 12 Mar 2019 11:35:07 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 23 Jan 2019 12:09:27 GMT
+# Tue, 12 Mar 2019 11:35:07 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Jan 2019 12:52:03 GMT
+# Tue, 12 Mar 2019 12:03:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 23 Jan 2019 12:52:04 GMT
+# Tue, 12 Mar 2019 12:03:22 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 23 Jan 2019 12:52:38 GMT
+# Tue, 12 Mar 2019 12:03:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 02 Mar 2019 11:57:31 GMT
+# Tue, 12 Mar 2019 12:06:14 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:392ca16edc8b1139b5a1aac4b27954543cb7897d0d7cce8eff0f6af6c822e9d0`  
-		Last Modified: Wed, 23 Jan 2019 09:30:19 GMT  
-		Size: 64.9 MB (64850497 bytes)  
+	-	`sha256:14fc4ff9a1e24eb81d7e2fc1363144eaa79640241bf619b8f19bf4121e753130`  
+		Last Modified: Wed, 06 Mar 2019 09:16:51 GMT  
+		Size: 64.9 MB (64851414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1adc2b4d3f2251efab5c90ab868fda44bbef1e94acde16b3886dd779fee55b96`  
-		Last Modified: Wed, 23 Jan 2019 12:11:28 GMT  
-		Size: 64.9 KB (64855 bytes)  
+	-	`sha256:52401ab23c5253f07e5d13182dbf8d0e754aa9f612879b8cdc2eac767ff8afaf`  
+		Last Modified: Tue, 12 Mar 2019 11:36:06 GMT  
+		Size: 64.9 KB (64859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc7dbd6f59caf4f9a747f2cf0b94e563cd75de15bdf48da25af42c5e464ae3c`  
-		Last Modified: Wed, 23 Jan 2019 12:11:28 GMT  
-		Size: 359.0 B  
+	-	`sha256:4d452e2688d8bfd1c1f660eac1a6cf7f1f7520055735fb8e88554634b9f752d7`  
+		Last Modified: Tue, 12 Mar 2019 11:36:07 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d39f1806580ff5be43843b4b6bc9e7ad1f914dff40fd7af108ac2b9d0854248`  
-		Last Modified: Wed, 23 Jan 2019 12:11:28 GMT  
-		Size: 162.0 B  
+	-	`sha256:e619c64a486303d3e8309b3d0c75144c89ecfa830d53e5bf812ae4ab6c99e44e`  
+		Last Modified: Tue, 12 Mar 2019 11:36:06 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe0e37f8958af12f05c114373e93d6a188276ecdb9cfb0e18dec531b109a2580`  
-		Last Modified: Wed, 23 Jan 2019 13:12:32 GMT  
-		Size: 4.6 MB (4646505 bytes)  
+	-	`sha256:637fbcb0e89ca8944ea6ff256b06b996ae74b60b1df87d40efe42ba6bdb6e8fc`  
+		Last Modified: Tue, 12 Mar 2019 12:13:50 GMT  
+		Size: 4.6 MB (4646432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:919bfb0189010b474d8334645cffc377c671fc8c0226345126defe9f8c53ae76`  
-		Last Modified: Wed, 23 Jan 2019 13:12:47 GMT  
-		Size: 29.2 MB (29221623 bytes)  
+	-	`sha256:5246e51f6285529e7ae3579dd1b2ed73b90f7eeebfedd7265618e0c48c803ca5`  
+		Last Modified: Tue, 12 Mar 2019 12:14:03 GMT  
+		Size: 29.2 MB (29227867 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5049f36d90acc9d97b072a40a61c962f2599f4482c6669a28b06aa6efc83ff5b`  
-		Last Modified: Sat, 02 Mar 2019 12:06:53 GMT  
-		Size: 105.2 MB (105191051 bytes)  
+	-	`sha256:15a35aef8b68ab81789d6f6c385791121aba2cc03eb9358e0836fefa8763edeb`  
+		Last Modified: Tue, 12 Mar 2019 12:14:30 GMT  
+		Size: 104.5 MB (104455532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trusty` - linux; ppc64le
