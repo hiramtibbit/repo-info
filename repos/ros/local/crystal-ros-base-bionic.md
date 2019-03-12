@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5052a20875cec0c6309cf7d5a1a84ccdc4744085ed55a51e601817879d8ebd0f`
-- Created: `2019-02-06T07:45:45.388428686Z`
-- Virtual Size: ~ 802.12 Mb  
+- Image ID: `sha256:01e3637eed09676a9554ac27367ebc9feee9473a7b45151f48c6aece02e55f5c`
+- Created: `2019-03-12T01:26:58.233750264Z`
+- Virtual Size: ~ 803.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -199,19 +199,23 @@ $ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2.3`
+### `dpkg` source package: `base-files=10.1ubuntu2.4`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2.3`
+- `base-files=10.1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.4.dsc' base-files_10.1ubuntu2.4.dsc 1620 SHA256:fce61378a53efa48c497a830f7bea836b984e8462a6f10b033ced440070f5d36
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.4.tar.xz' base-files_10.1ubuntu2.4.tar.xz 78128 SHA256:91ef8e0cfad30cd5408b58301a4a31a360b07f836950256384f02ebb75aa8058
+```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
@@ -484,12 +488,12 @@ $ apt-get source -qq --print-uris cppcheck=1.82-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_1.82-1.debian.tar.xz' cppcheck_1.82-1.debian.tar.xz 368008 SHA256:905c4e2449308660437ade973f1567dcd57381705144a7710a36eabc46024059
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.5`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.6`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.5`
-- `libcurl4:amd64=7.58.0-2ubuntu3.5`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.6`
+- `libcurl4:amd64=7.58.0-2ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -500,9 +504,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.dsc' curl_7.58.0-2ubuntu3.6.dsc 2777 SHA256:3d8a674d0cc808754fe21084111f1d3a6e5b7367af1ac28187732d51932b6903
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA256:cc245bf9a1a42a45df491501d97d5593392a03f7b4f07b952793518d97666115
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.6.debian.tar.xz' curl_7.58.0-2ubuntu3.6.debian.tar.xz 39016 SHA256:2a3f6c3b67ec81beed238db2e20a6a70d0b02987c35d5e51bde43ea1830a243c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2`
 
@@ -1501,11 +1510,11 @@ $ apt-get source -qq --print-uris libalgorithm-merge-perl=0.08-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libalgorithm-merge-perl/libalgorithm-merge-perl_0.08-3.debian.tar.xz' libalgorithm-merge-perl_0.08-3.debian.tar.xz 2436 SHA256:241e8212e7b8607b7f5c6b7969d7bb1b62361eb013f0e48c28f8ef6390c7bce3
 ```
 
-### `dpkg` source package: `libarchive=3.2.2-3.1ubuntu0.2`
+### `dpkg` source package: `libarchive=3.2.2-3.1ubuntu0.3`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.2.2-3.1ubuntu0.2`
+- `libarchive13:amd64=3.2.2-3.1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -1518,9 +1527,14 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.2.2-3.1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.3.dsc' libarchive_3.2.2-3.1ubuntu0.3.dsc 2457 SHA256:56749d6000b824b83f0fc9e28c2956bca48bcaf5f6444d7030d9cd3641c1fec9
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA256:691c194ee132d1f0f7a42541f091db811bc2e56f7107e9121be2bc8c04f1060f
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.3.debian.tar.xz' libarchive_3.2.2-3.1ubuntu0.3.debian.tar.xz 21684 SHA256:4b9d1d8843b5ba4d89e5f6e2ab02fe4828ef78d529fb5ffbede36ecd5f269f15
+```
 
 ### `dpkg` source package: `libassuan=2.5.1-2`
 
@@ -2028,19 +2042,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.debian.tar.xz 11124 SHA256:34a1ce5f77815f20941f962019cef0ad6ed0da77179f05609a5c67274485b477
 ```
 
-### `dpkg` source package: `linux=4.15.0-45.48`
+### `dpkg` source package: `linux=4.15.0-46.49`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-45.48`
+- `linux-libc-dev:amd64=4.15.0-46.49`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-46.49
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-46.49.dsc' linux_4.15.0-46.49.dsc 8025 SHA256:523e9738620c1dc3058f6158ba804eedcb89c3b09b57cd20a78aeab5822f6f41
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-46.49.diff.gz' linux_4.15.0-46.49.diff.gz 8712667 SHA256:3c77cae0773b1130965d7eb715ca995cc2ceaa2fae515db597325e04e82f4e37
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -2508,14 +2527,14 @@ $ apt-get source -qq --print-uris p11-kit=0.23.9-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2.debian.tar.xz' p11-kit_0.23.9-2.debian.tar.xz 21704 SHA256:fa6af69f96f6ccdce95d61e39662a38768b05f8872b2b2008d56cc4fff0ed3fd
 ```
 
-### `dpkg` source package: `pam=1.1.8-3.6ubuntu2`
+### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.1`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.1.8-3.6ubuntu2`
-- `libpam-modules-bin=1.1.8-3.6ubuntu2`
-- `libpam-runtime=1.1.8-3.6ubuntu2`
-- `libpam0g:amd64=1.1.8-3.6ubuntu2`
+- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.1`
+- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.1`
+- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.1`
+- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -2524,9 +2543,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.dsc' pam_1.1.8-3.6ubuntu2.dsc 2221 SHA256:dd47a8f0d53ccf5cf4e80819cca127c28f7e2bda9312a34c311b0bb90565fc0c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.tar.gz' pam_1.1.8-3.6ubuntu2.tar.gz 1989104 SHA256:3244f99b6bd0a3501c692102d897c013a6736ab8f9656fe2411cacffcaaba20e
+$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.1.dsc' pam_1.1.8-3.6ubuntu2.18.04.1.dsc 2212 SHA256:eb895fd520265f4db4eb5c00f06e0f5e903900265093011a61b431a3b6221eff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.1.tar.gz' pam_1.1.8-3.6ubuntu2.18.04.1.tar.gz 1990490 SHA256:a400f8d82fb41afd008a9f8a6f2221cad0cc0f7cc60a41d50f27fc518217f68f
 ```
 
 ### `dpkg` source package: `patch=2.7.6-2ubuntu1`
@@ -2808,11 +2827,11 @@ $ apt-get source -qq --print-uris pygments=2.2.0+dfsg-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.2.0+dfsg-1.debian.tar.xz' pygments_2.2.0+dfsg-1.debian.tar.xz 7368 SHA256:572ab7970d9ea22d49924bdb884e229cdc0d7f558f64d8fc6bd9393a804addc1
 ```
 
-### `dpkg` source package: `pygobject=3.26.1-2`
+### `dpkg` source package: `pygobject=3.26.1-2ubuntu1`
 
 Binary Packages:
 
-- `python3-gi=3.26.1-2`
+- `python3-gi=3.26.1-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-gi/copyright`)
 
@@ -2823,10 +2842,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-gi/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pygobject=3.26.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/pygobject_3.26.1-2.dsc' pygobject_3.26.1-2.dsc 3146 SHA256:da8696e51e8910082ce99ed538a954e47ee6fae8f4b7d3670ca533a080d81f97
+$ apt-get source -qq --print-uris pygobject=3.26.1-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/pygobject_3.26.1-2ubuntu1.dsc' pygobject_3.26.1-2ubuntu1.dsc 3507 SHA256:b77f84885d9b6d2c03422ecb3bf69d50dd0607d3456154943671e5a1f87946aa
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/pygobject_3.26.1.orig.tar.xz' pygobject_3.26.1.orig.tar.xz 775628 SHA256:f5577b9b9c70cabb9a60d81b855d488b767c66f867432e7fb64aa7269b04d1a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/pygobject_3.26.1-2.debian.tar.xz' pygobject_3.26.1-2.debian.tar.xz 19340 SHA256:d00ce5e5d06392c4ac268cdcf6f6399e87585285cee4ec826dfad6dde9eb5e01
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/pygobject_3.26.1-2ubuntu1.debian.tar.xz' pygobject_3.26.1-2ubuntu1.debian.tar.xz 20304 SHA256:a530a433703384837e89332144226c23c9afcfc7d1b6d993ade4ff0a399c79ee
 ```
 
 ### `dpkg` source package: `pyparsing=2.2.0+dfsg1-2`
@@ -3398,19 +3417,24 @@ $ apt-get source -qq --print-uris python3-defaults=3.6.7-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.7-1~18.04.tar.gz' python3-defaults_3.6.7-1~18.04.tar.gz 137600 SHA256:df14f4993ac87537415f1abaa69d80790fb01e51033416bc123038f731286ed4
 ```
 
-### `dpkg` source package: `python3-rosdep=0.15.0-1`
+### `dpkg` source package: `python3-rosdep=0.15.1-1`
 
 Binary Packages:
 
-- `python3-rosdep=0.15.0-1`
+- `python3-rosdep=0.15.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-rosdep=0.15.1-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1-1.debian.tar.xz' python3-rosdep_0.15.1-1.debian.tar.xz 1972 SHA512:def98b060d649a17f4ffbc063efb10d9467c78a2dbe5d83813126265223d98ee05513bfa1fdb9b08398add01188700fad3f3f711407d770d2666076b17c5c08c
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1-1.dsc' python3-rosdep_0.15.1-1.dsc 892 SHA512:d1c2b9a6e27fadfd979288b3443a3c9cc8e682545cf561123695ffc015e85dc4c65df6a53504f91701bd52067d2d20baafdebfc24f8432af93f6691784f191a5
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.15.1.orig.tar.gz' python3-rosdep_0.15.1.orig.tar.gz 80364 SHA512:d6e5611abb80a65b223515612d9796bbd892d6bdc24ad1423be82feb0f08dd40aea341ab846d8fa7ef0355dcedb41c0067aed7a04d8969e7a4d3e0006ecd1a22
+```
 
 ### `dpkg` source package: `python3-rosdistro-modules=0.7.2-1`
 
@@ -3684,11 +3708,11 @@ $ apt-get source -qq --print-uris rhash=1.3.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.6-2.debian.tar.xz' rhash_1.3.6-2.debian.tar.xz 9672 SHA256:fcccfa3d3a5a7ac16395ec54fcfb4217a5ccf5718e762f3670276366061e5638
 ```
 
-### `dpkg` source package: `ros-crystal-actionlib-msgs=0.6.1-0bionic.20190114.200613`
+### `dpkg` source package: `ros-crystal-actionlib-msgs=0.6.1-0bionic.20190208.224431`
 
 Binary Packages:
 
-- `ros-crystal-actionlib-msgs=0.6.1-0bionic.20190114.200613`
+- `ros-crystal-actionlib-msgs=0.6.1-0bionic.20190208.224431`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3698,11 +3722,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-auto=0.6.0-4bionic.20181115.044420`
+### `dpkg` source package: `ros-crystal-ament-cmake-auto=0.6.0-4bionic.20190208.215445`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-auto=0.6.0-4bionic.20181115.044420`
+- `ros-crystal-ament-cmake-auto=0.6.0-4bionic.20190208.215445`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3712,11 +3736,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-copyright=0.6.3-0bionic.20190114.183843`
+### `dpkg` source package: `ros-crystal-ament-cmake-copyright=0.6.3-0bionic.20190208.215739`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-copyright=0.6.3-0bionic.20190114.183843`
+- `ros-crystal-ament-cmake-copyright=0.6.3-0bionic.20190208.215739`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3740,11 +3764,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-cppcheck=0.6.3-0bionic.20190114.183915`
+### `dpkg` source package: `ros-crystal-ament-cmake-cppcheck=0.6.3-0bionic.20190208.215927`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-cppcheck=0.6.3-0bionic.20190114.183915`
+- `ros-crystal-ament-cmake-cppcheck=0.6.3-0bionic.20190208.215927`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3754,11 +3778,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-cpplint=0.6.3-0bionic.20190114.183915`
+### `dpkg` source package: `ros-crystal-ament-cmake-cpplint=0.6.3-0bionic.20190208.215925`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-cpplint=0.6.3-0bionic.20190114.183915`
+- `ros-crystal-ament-cmake-cpplint=0.6.3-0bionic.20190208.215925`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3768,11 +3792,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-definitions=0.6.0-4bionic.20181115.043907`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-definitions=0.6.0-4bionic.20190208.214454`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-definitions=0.6.0-4bionic.20181115.043907`
+- `ros-crystal-ament-cmake-export-definitions=0.6.0-4bionic.20190208.214454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3782,11 +3806,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-dependencies=0.6.0-4bionic.20181115.044224`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-dependencies=0.6.0-4bionic.20190208.215052`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-dependencies=0.6.0-4bionic.20181115.044224`
+- `ros-crystal-ament-cmake-export-dependencies=0.6.0-4bionic.20190208.215052`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3796,11 +3820,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-include-directories=0.6.0-4bionic.20181115.043907`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-include-directories=0.6.0-4bionic.20190208.214457`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-include-directories=0.6.0-4bionic.20181115.043907`
+- `ros-crystal-ament-cmake-export-include-directories=0.6.0-4bionic.20190208.214457`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3810,11 +3834,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-interfaces=0.6.0-4bionic.20181115.044213`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-interfaces=0.6.0-4bionic.20190208.215034`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-interfaces=0.6.0-4bionic.20181115.044213`
+- `ros-crystal-ament-cmake-export-interfaces=0.6.0-4bionic.20190208.215034`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3824,11 +3848,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-libraries=0.6.0-4bionic.20181115.043907`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-libraries=0.6.0-4bionic.20190208.214458`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-libraries=0.6.0-4bionic.20181115.043907`
+- `ros-crystal-ament-cmake-export-libraries=0.6.0-4bionic.20190208.214458`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3838,11 +3862,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-export-link-flags=0.6.0-4bionic.20181115.043906`
+### `dpkg` source package: `ros-crystal-ament-cmake-export-link-flags=0.6.0-4bionic.20190208.214458`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-export-link-flags=0.6.0-4bionic.20181115.043906`
+- `ros-crystal-ament-cmake-export-link-flags=0.6.0-4bionic.20190208.214458`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3852,11 +3876,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-flake8=0.6.3-0bionic.20190114.183920`
+### `dpkg` source package: `ros-crystal-ament-cmake-flake8=0.6.3-0bionic.20190208.215927`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-flake8=0.6.3-0bionic.20190114.183920`
+- `ros-crystal-ament-cmake-flake8=0.6.3-0bionic.20190208.215927`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3866,11 +3890,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-gmock=0.6.0-4bionic.20181115.044352`
+### `dpkg` source package: `ros-crystal-ament-cmake-gmock=0.6.0-4bionic.20190208.215332`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-gmock=0.6.0-4bionic.20181115.044352`
+- `ros-crystal-ament-cmake-gmock=0.6.0-4bionic.20190208.215332`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3880,11 +3904,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-gtest=0.6.0-4bionic.20181115.044317`
+### `dpkg` source package: `ros-crystal-ament-cmake-gtest=0.6.0-4bionic.20190208.215119`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-gtest=0.6.0-4bionic.20181115.044317`
+- `ros-crystal-ament-cmake-gtest=0.6.0-4bionic.20190208.215119`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3894,11 +3918,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-include-directories=0.6.0-4bionic.20181115.044137`
+### `dpkg` source package: `ros-crystal-ament-cmake-include-directories=0.6.0-4bionic.20190208.214744`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-include-directories=0.6.0-4bionic.20181115.044137`
+- `ros-crystal-ament-cmake-include-directories=0.6.0-4bionic.20190208.214744`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3908,11 +3932,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-libraries=0.6.0-4bionic.20181115.044144`
+### `dpkg` source package: `ros-crystal-ament-cmake-libraries=0.6.0-4bionic.20190208.214759`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-libraries=0.6.0-4bionic.20181115.044144`
+- `ros-crystal-ament-cmake-libraries=0.6.0-4bionic.20190208.214759`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3922,11 +3946,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-lint-cmake=0.6.3-0bionic.20190114.183613`
+### `dpkg` source package: `ros-crystal-ament-cmake-lint-cmake=0.6.3-0bionic.20190208.215549`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-lint-cmake=0.6.3-0bionic.20190114.183613`
+- `ros-crystal-ament-cmake-lint-cmake=0.6.3-0bionic.20190208.215549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3936,11 +3960,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-pep257=0.6.3-0bionic.20190114.184157`
+### `dpkg` source package: `ros-crystal-ament-cmake-pep257=0.6.3-0bionic.20190208.215926`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-pep257=0.6.3-0bionic.20190114.184157`
+- `ros-crystal-ament-cmake-pep257=0.6.3-0bionic.20190208.215926`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3950,11 +3974,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-pytest=0.6.0-4bionic.20181115.044254`
+### `dpkg` source package: `ros-crystal-ament-cmake-pytest=0.6.0-4bionic.20190208.215126`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-pytest=0.6.0-4bionic.20181115.044254`
+- `ros-crystal-ament-cmake-pytest=0.6.0-4bionic.20190208.215126`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3964,11 +3988,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-python=0.6.0-4bionic.20181115.044149`
+### `dpkg` source package: `ros-crystal-ament-cmake-python=0.6.0-4bionic.20190208.214759`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-python=0.6.0-4bionic.20181115.044149`
+- `ros-crystal-ament-cmake-python=0.6.0-4bionic.20190208.214759`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3978,11 +4002,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-ros=0.5.0-0bionic.20190114.184737`
+### `dpkg` source package: `ros-crystal-ament-cmake-ros=0.5.0-0bionic.20190208.220251`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-ros=0.5.0-0bionic.20190114.184737`
+- `ros-crystal-ament-cmake-ros=0.5.0-0bionic.20190208.220251`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3992,11 +4016,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-target-dependencies=0.6.0-4bionic.20181115.044230`
+### `dpkg` source package: `ros-crystal-ament-cmake-target-dependencies=0.6.0-4bionic.20190208.215059`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-target-dependencies=0.6.0-4bionic.20181115.044230`
+- `ros-crystal-ament-cmake-target-dependencies=0.6.0-4bionic.20190208.215059`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4006,11 +4030,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-test=0.6.0-4bionic.20181115.044156`
+### `dpkg` source package: `ros-crystal-ament-cmake-test=0.6.0-4bionic.20190208.214759`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-test=0.6.0-4bionic.20181115.044156`
+- `ros-crystal-ament-cmake-test=0.6.0-4bionic.20190208.214759`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4020,11 +4044,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-uncrustify=0.6.3-0bionic.20190114.184210`
+### `dpkg` source package: `ros-crystal-ament-cmake-uncrustify=0.6.3-0bionic.20190208.220020`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-uncrustify=0.6.3-0bionic.20190114.184210`
+- `ros-crystal-ament-cmake-uncrustify=0.6.3-0bionic.20190208.220020`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4034,11 +4058,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake-xmllint=0.6.3-0bionic.20190114.184233`
+### `dpkg` source package: `ros-crystal-ament-cmake-xmllint=0.6.3-0bionic.20190208.215926`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake-xmllint=0.6.3-0bionic.20190114.184233`
+- `ros-crystal-ament-cmake-xmllint=0.6.3-0bionic.20190208.215926`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4048,11 +4072,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cmake=0.6.0-4bionic.20181115.044259`
+### `dpkg` source package: `ros-crystal-ament-cmake=0.6.0-4bionic.20190208.215328`
 
 Binary Packages:
 
-- `ros-crystal-ament-cmake=0.6.0-4bionic.20181115.044259`
+- `ros-crystal-ament-cmake=0.6.0-4bionic.20190208.215328`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4062,11 +4086,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-copyright=0.6.3-0bionic.20190114.183217`
+### `dpkg` source package: `ros-crystal-ament-copyright=0.6.3-0bionic.20190208.215257`
 
 Binary Packages:
 
-- `ros-crystal-ament-copyright=0.6.3-0bionic.20190114.183217`
+- `ros-crystal-ament-copyright=0.6.3-0bionic.20190208.215257`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4076,11 +4100,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cppcheck=0.6.3-0bionic.20190114.182743`
+### `dpkg` source package: `ros-crystal-ament-cppcheck=0.6.3-0bionic.20190208.214804`
 
 Binary Packages:
 
-- `ros-crystal-ament-cppcheck=0.6.3-0bionic.20190114.182743`
+- `ros-crystal-ament-cppcheck=0.6.3-0bionic.20190208.214804`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4090,11 +4114,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-cpplint=0.6.3-0bionic.20190114.183357`
+### `dpkg` source package: `ros-crystal-ament-cpplint=0.6.3-0bionic.20190208.215412`
 
 Binary Packages:
 
-- `ros-crystal-ament-cpplint=0.6.3-0bionic.20190114.183357`
+- `ros-crystal-ament-cpplint=0.6.3-0bionic.20190208.215412`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4104,11 +4128,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-flake8=0.6.3-0bionic.20190114.182745`
+### `dpkg` source package: `ros-crystal-ament-flake8=0.6.3-0bionic.20190208.214804`
 
 Binary Packages:
 
-- `ros-crystal-ament-flake8=0.6.3-0bionic.20190114.182745`
+- `ros-crystal-ament-flake8=0.6.3-0bionic.20190208.214804`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4118,11 +4142,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-index-cpp=0.5.1-0bionic.20190114.184742`
+### `dpkg` source package: `ros-crystal-ament-index-cpp=0.5.1-0bionic.20190208.220252`
 
 Binary Packages:
 
-- `ros-crystal-ament-index-cpp=0.5.1-0bionic.20190114.184742`
+- `ros-crystal-ament-index-cpp=0.5.1-0bionic.20190208.220252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4132,11 +4156,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-index-python=0.5.1-0bionic.20190114.183217`
+### `dpkg` source package: `ros-crystal-ament-index-python=0.5.1-0bionic.20190208.215258`
 
 Binary Packages:
 
-- `ros-crystal-ament-index-python=0.5.1-0bionic.20190114.183217`
+- `ros-crystal-ament-index-python=0.5.1-0bionic.20190208.215258`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4146,11 +4170,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-lint-auto=0.6.3-0bionic.20190114.182743`
+### `dpkg` source package: `ros-crystal-ament-lint-auto=0.6.3-0bionic.20190208.215148`
 
 Binary Packages:
 
-- `ros-crystal-ament-lint-auto=0.6.3-0bionic.20190114.182743`
+- `ros-crystal-ament-lint-auto=0.6.3-0bionic.20190208.215148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4160,11 +4184,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-lint-cmake=0.6.3-0bionic.20190114.183357`
+### `dpkg` source package: `ros-crystal-ament-lint-cmake=0.6.3-0bionic.20190208.215414`
 
 Binary Packages:
 
-- `ros-crystal-ament-lint-cmake=0.6.3-0bionic.20190114.183357`
+- `ros-crystal-ament-lint-cmake=0.6.3-0bionic.20190208.215414`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4174,11 +4198,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-lint-common=0.6.3-0bionic.20190114.184315`
+### `dpkg` source package: `ros-crystal-ament-lint-common=0.6.3-0bionic.20190208.220144`
 
 Binary Packages:
 
-- `ros-crystal-ament-lint-common=0.6.3-0bionic.20190114.184315`
+- `ros-crystal-ament-lint-common=0.6.3-0bionic.20190208.220144`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4202,11 +4226,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-pep257=0.6.3-0bionic.20190114.183035`
+### `dpkg` source package: `ros-crystal-ament-pep257=0.6.3-0bionic.20190208.215046`
 
 Binary Packages:
 
-- `ros-crystal-ament-pep257=0.6.3-0bionic.20190114.183035`
+- `ros-crystal-ament-pep257=0.6.3-0bionic.20190208.215046`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4216,11 +4240,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-uncrustify=0.6.3-0bionic.20190114.183251`
+### `dpkg` source package: `ros-crystal-ament-uncrustify=0.6.3-0bionic.20190208.215905`
 
 Binary Packages:
 
-- `ros-crystal-ament-uncrustify=0.6.3-0bionic.20190114.183251`
+- `ros-crystal-ament-uncrustify=0.6.3-0bionic.20190208.215905`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4230,11 +4254,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ament-xmllint=0.6.3-0bionic.20190114.183605`
+### `dpkg` source package: `ros-crystal-ament-xmllint=0.6.3-0bionic.20190208.215412`
 
 Binary Packages:
 
-- `ros-crystal-ament-xmllint=0.6.3-0bionic.20190114.183605`
+- `ros-crystal-ament-xmllint=0.6.3-0bionic.20190208.215412`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4244,11 +4268,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-builtin-interfaces=0.6.2-0bionic.20190114.194243`
+### `dpkg` source package: `ros-crystal-builtin-interfaces=0.6.2-0bionic.20190208.223042`
 
 Binary Packages:
 
-- `ros-crystal-builtin-interfaces=0.6.2-0bionic.20190114.194243`
+- `ros-crystal-builtin-interfaces=0.6.2-0bionic.20190208.223042`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4258,11 +4282,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-class-loader=1.2.0-0bionic.20190114.184751`
+### `dpkg` source package: `ros-crystal-class-loader=1.2.0-0bionic.20190208.220252`
 
 Binary Packages:
 
-- `ros-crystal-class-loader=1.2.0-0bionic.20190114.184751`
+- `ros-crystal-class-loader=1.2.0-0bionic.20190208.220252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4272,11 +4296,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-common-interfaces=0.6.1-0bionic.20190114.215515`
+### `dpkg` source package: `ros-crystal-common-interfaces=0.6.1-0bionic.20190208.232721`
 
 Binary Packages:
 
-- `ros-crystal-common-interfaces=0.6.1-0bionic.20190114.215515`
+- `ros-crystal-common-interfaces=0.6.1-0bionic.20190208.232721`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4286,11 +4310,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-console-bridge-vendor=1.1.0-0bionic.20181116.203121`
+### `dpkg` source package: `ros-crystal-console-bridge-vendor=1.1.0-0bionic.20190208.215449`
 
 Binary Packages:
 
-- `ros-crystal-console-bridge-vendor=1.1.0-0bionic.20181116.203121`
+- `ros-crystal-console-bridge-vendor=1.1.0-0bionic.20190208.215449`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4300,11 +4324,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-diagnostic-msgs=0.6.1-0bionic.20190114.202711`
+### `dpkg` source package: `ros-crystal-diagnostic-msgs=0.6.1-0bionic.20190208.225540`
 
 Binary Packages:
 
-- `ros-crystal-diagnostic-msgs=0.6.1-0bionic.20190114.202711`
+- `ros-crystal-diagnostic-msgs=0.6.1-0bionic.20190208.225540`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4314,11 +4338,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-fastcdr=1.0.8-0bionic.20181115.204622`
+### `dpkg` source package: `ros-crystal-fastcdr=1.0.8-0bionic.20190208.214800`
 
 Binary Packages:
 
-- `ros-crystal-fastcdr=1.0.8-0bionic.20181115.204622`
+- `ros-crystal-fastcdr=1.0.8-0bionic.20190208.214800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4328,11 +4352,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-fastrtps-cmake-module=0.6.1-0bionic.20190114.190249`
+### `dpkg` source package: `ros-crystal-fastrtps-cmake-module=0.6.1-0bionic.20190208.220252`
 
 Binary Packages:
 
-- `ros-crystal-fastrtps-cmake-module=0.6.1-0bionic.20190114.190249`
+- `ros-crystal-fastrtps-cmake-module=0.6.1-0bionic.20190208.220252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4342,11 +4366,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-fastrtps=1.7.0-0bionic.20181207.051730`
+### `dpkg` source package: `ros-crystal-fastrtps=1.7.0-0bionic.20190208.215105`
 
 Binary Packages:
 
-- `ros-crystal-fastrtps=1.7.0-0bionic.20181207.051730`
+- `ros-crystal-fastrtps=1.7.0-0bionic.20190208.215105`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4356,11 +4380,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-geometry-msgs=0.6.1-0bionic.20190114.200613`
+### `dpkg` source package: `ros-crystal-geometry-msgs=0.6.1-0bionic.20190208.224431`
 
 Binary Packages:
 
-- `ros-crystal-geometry-msgs=0.6.1-0bionic.20190114.200613`
+- `ros-crystal-geometry-msgs=0.6.1-0bionic.20190208.224431`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4370,11 +4394,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-gmock-vendor=1.8.0-0bionic.20181115.044323`
+### `dpkg` source package: `ros-crystal-gmock-vendor=1.8.0-0bionic.20190208.215112`
 
 Binary Packages:
 
-- `ros-crystal-gmock-vendor=1.8.0-0bionic.20181115.044323`
+- `ros-crystal-gmock-vendor=1.8.0-0bionic.20190208.215112`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4384,11 +4408,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-gtest-vendor=1.8.0-0bionic.20181115.044206`
+### `dpkg` source package: `ros-crystal-gtest-vendor=1.8.0-0bionic.20190208.214807`
 
 Binary Packages:
 
-- `ros-crystal-gtest-vendor=1.8.0-0bionic.20181115.044206`
+- `ros-crystal-gtest-vendor=1.8.0-0bionic.20190208.214807`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4398,11 +4422,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-kdl-parser=2.2.0-0bionic.20190114.185730`
+### `dpkg` source package: `ros-crystal-kdl-parser=2.2.0-0bionic.20190208.220743`
 
 Binary Packages:
 
-- `ros-crystal-kdl-parser=2.2.0-0bionic.20190114.185730`
+- `ros-crystal-kdl-parser=2.2.0-0bionic.20190208.220743`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4412,11 +4436,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-launch-ros=0.7.3-0bionic.20190114.201426`
+### `dpkg` source package: `ros-crystal-launch-ros=0.7.3-0bionic.20190208.225917`
 
 Binary Packages:
 
-- `ros-crystal-launch-ros=0.7.3-0bionic.20190114.201426`
+- `ros-crystal-launch-ros=0.7.3-0bionic.20190208.225917`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4426,11 +4450,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-launch=0.7.3-0bionic.20190114.183622`
+### `dpkg` source package: `ros-crystal-launch=0.7.3-0bionic.20190208.215415`
 
 Binary Packages:
 
-- `ros-crystal-launch=0.7.3-0bionic.20190114.183622`
+- `ros-crystal-launch=0.7.3-0bionic.20190208.215415`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4440,11 +4464,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-libyaml-vendor=1.0.0-0bionic.20181115.211607`
+### `dpkg` source package: `ros-crystal-libyaml-vendor=1.0.0-0bionic.20190208.215609`
 
 Binary Packages:
 
-- `ros-crystal-libyaml-vendor=1.0.0-0bionic.20181115.211607`
+- `ros-crystal-libyaml-vendor=1.0.0-0bionic.20190208.215609`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4454,11 +4478,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-lifecycle-msgs=0.6.2-0bionic.20190114.194243`
+### `dpkg` source package: `ros-crystal-lifecycle-msgs=0.6.2-0bionic.20190208.223042`
 
 Binary Packages:
 
-- `ros-crystal-lifecycle-msgs=0.6.2-0bionic.20190114.194243`
+- `ros-crystal-lifecycle-msgs=0.6.2-0bionic.20190208.223042`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4468,11 +4492,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-message-filters=3.0.0-0bionic.20190114.204212`
+### `dpkg` source package: `ros-crystal-message-filters=3.0.0-0bionic.20190208.231150`
 
 Binary Packages:
 
-- `ros-crystal-message-filters=3.0.0-0bionic.20190114.204212`
+- `ros-crystal-message-filters=3.0.0-0bionic.20190208.231150`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4482,11 +4506,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-nav-msgs=0.6.1-0bionic.20190114.202728`
+### `dpkg` source package: `ros-crystal-nav-msgs=0.6.1-0bionic.20190208.225543`
 
 Binary Packages:
 
-- `ros-crystal-nav-msgs=0.6.1-0bionic.20190114.202728`
+- `ros-crystal-nav-msgs=0.6.1-0bionic.20190208.225543`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4496,11 +4520,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-orocos-kdl=3.1.0-0bionic.20181120.163124`
+### `dpkg` source package: `ros-crystal-orocos-kdl=3.1.0-0bionic.20190208.214801`
 
 Binary Packages:
 
-- `ros-crystal-orocos-kdl=3.1.0-0bionic.20181120.163124`
+- `ros-crystal-orocos-kdl=3.1.0-0bionic.20190208.214801`
 
 Licenses: (parsed from: `/usr/share/doc/ros-crystal-orocos-kdl/copyright`)
 
@@ -4510,11 +4534,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-crystal-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-osrf-pycommon=0.1.6-0bionic.20181115.221658`
+### `dpkg` source package: `ros-crystal-osrf-pycommon=0.1.6-0bionic.20190208.214807`
 
 Binary Packages:
 
-- `ros-crystal-osrf-pycommon=0.1.6-0bionic.20181115.221658`
+- `ros-crystal-osrf-pycommon=0.1.6-0bionic.20190208.214807`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4524,11 +4548,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-pluginlib=2.2.1-0bionic.20190115.233236`
+### `dpkg` source package: `ros-crystal-pluginlib=2.2.1-0bionic.20190208.221110`
 
 Binary Packages:
 
-- `ros-crystal-pluginlib=2.2.1-0bionic.20190115.233236`
+- `ros-crystal-pluginlib=2.2.1-0bionic.20190208.221110`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4538,11 +4562,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-poco-vendor=1.1.1-0bionic.20181115.184607`
+### `dpkg` source package: `ros-crystal-poco-vendor=1.1.1-0bionic.20190208.214758`
 
 Binary Packages:
 
-- `ros-crystal-poco-vendor=1.1.1-0bionic.20181115.184607`
+- `ros-crystal-poco-vendor=1.1.1-0bionic.20190208.214758`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4552,11 +4576,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-python-cmake-module=0.6.2-0bionic.20190114.184420`
+### `dpkg` source package: `ros-crystal-python-cmake-module=0.6.2-0bionic.20190208.220254`
 
 Binary Packages:
 
-- `ros-crystal-python-cmake-module=0.6.2-0bionic.20190114.184420`
+- `ros-crystal-python-cmake-module=0.6.2-0bionic.20190208.220254`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4566,11 +4590,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcl-interfaces=0.6.2-0bionic.20190114.195733`
+### `dpkg` source package: `ros-crystal-rcl-interfaces=0.6.2-0bionic.20190208.223409`
 
 Binary Packages:
 
-- `ros-crystal-rcl-interfaces=0.6.2-0bionic.20190114.195733`
+- `ros-crystal-rcl-interfaces=0.6.2-0bionic.20190208.223409`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4580,11 +4604,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcl-lifecycle=0.6.4-0bionic.20190114.200945`
+### `dpkg` source package: `ros-crystal-rcl-lifecycle=0.6.5-0bionic.20190208.225304`
 
 Binary Packages:
 
-- `ros-crystal-rcl-lifecycle=0.6.4-0bionic.20190114.200945`
+- `ros-crystal-rcl-lifecycle=0.6.5-0bionic.20190208.225304`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4594,11 +4618,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcl-logging-noop=0.1.0-0bionic.20190114.185124`
+### `dpkg` source package: `ros-crystal-rcl-logging-noop=0.1.0-0bionic.20190208.220531`
 
 Binary Packages:
 
-- `ros-crystal-rcl-logging-noop=0.1.0-0bionic.20190114.185124`
+- `ros-crystal-rcl-logging-noop=0.1.0-0bionic.20190208.220531`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4608,11 +4632,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcl-yaml-param-parser=0.6.4-0bionic.20190114.200942`
+### `dpkg` source package: `ros-crystal-rcl-yaml-param-parser=0.6.5-0bionic.20190208.225304`
 
 Binary Packages:
 
-- `ros-crystal-rcl-yaml-param-parser=0.6.4-0bionic.20190114.200942`
+- `ros-crystal-rcl-yaml-param-parser=0.6.5-0bionic.20190208.225304`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4622,11 +4646,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcl=0.6.4-0bionic.20190114.200603`
+### `dpkg` source package: `ros-crystal-rcl=0.6.5-0bionic.20190208.224912`
 
 Binary Packages:
 
-- `ros-crystal-rcl=0.6.4-0bionic.20190114.200603`
+- `ros-crystal-rcl=0.6.5-0bionic.20190208.224912`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4636,11 +4660,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rclcpp-lifecycle=0.6.2-0bionic.20190114.202117`
+### `dpkg` source package: `ros-crystal-rclcpp-lifecycle=0.6.3-0bionic.20190208.230549`
 
 Binary Packages:
 
-- `ros-crystal-rclcpp-lifecycle=0.6.2-0bionic.20190114.202117`
+- `ros-crystal-rclcpp-lifecycle=0.6.3-0bionic.20190208.230549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4650,11 +4674,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rclcpp=0.6.2-0bionic.20190114.201128`
+### `dpkg` source package: `ros-crystal-rclcpp=0.6.3-0bionic.20190208.225527`
 
 Binary Packages:
 
-- `ros-crystal-rclcpp=0.6.2-0bionic.20190114.201128`
+- `ros-crystal-rclcpp=0.6.3-0bionic.20190208.225527`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4664,11 +4688,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rclpy=0.6.1-0bionic.20190114.201128`
+### `dpkg` source package: `ros-crystal-rclpy=0.6.2-0bionic.20190208.225527`
 
 Binary Packages:
 
-- `ros-crystal-rclpy=0.6.1-0bionic.20190114.201128`
+- `ros-crystal-rclpy=0.6.2-0bionic.20190208.225527`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4678,11 +4702,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rcutils=0.6.1-0bionic.20190114.185252`
+### `dpkg` source package: `ros-crystal-rcutils=0.6.2-0bionic.20190208.220908`
 
 Binary Packages:
 
-- `ros-crystal-rcutils=0.6.1-0bionic.20190114.185252`
+- `ros-crystal-rcutils=0.6.2-0bionic.20190208.220908`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4692,11 +4716,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rmw-fastrtps-cpp=0.6.1-0bionic.20190114.193214`
+### `dpkg` source package: `ros-crystal-rmw-fastrtps-cpp=0.6.1-0bionic.20190208.222218`
 
 Binary Packages:
 
-- `ros-crystal-rmw-fastrtps-cpp=0.6.1-0bionic.20190114.193214`
+- `ros-crystal-rmw-fastrtps-cpp=0.6.1-0bionic.20190208.222218`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4706,11 +4730,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rmw-fastrtps-shared-cpp=0.6.1-0bionic.20190114.192809`
+### `dpkg` source package: `ros-crystal-rmw-fastrtps-shared-cpp=0.6.1-0bionic.20190208.221705`
 
 Binary Packages:
 
-- `ros-crystal-rmw-fastrtps-shared-cpp=0.6.1-0bionic.20190114.192809`
+- `ros-crystal-rmw-fastrtps-shared-cpp=0.6.1-0bionic.20190208.221705`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4720,11 +4744,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rmw-implementation-cmake=0.6.1-0bionic.20190114.190021`
+### `dpkg` source package: `ros-crystal-rmw-implementation-cmake=0.6.1-0bionic.20190208.220252`
 
 Binary Packages:
 
-- `ros-crystal-rmw-implementation-cmake=0.6.1-0bionic.20190114.190021`
+- `ros-crystal-rmw-implementation-cmake=0.6.1-0bionic.20190208.220252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4734,11 +4758,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rmw-implementation=0.6.1-0bionic.20190114.193442`
+### `dpkg` source package: `ros-crystal-rmw-implementation=0.6.1-0bionic.20190208.222413`
 
 Binary Packages:
 
-- `ros-crystal-rmw-implementation=0.6.1-0bionic.20190114.193442`
+- `ros-crystal-rmw-implementation=0.6.1-0bionic.20190208.222413`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4748,11 +4772,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rmw=0.6.1-0bionic.20190114.191246`
+### `dpkg` source package: `ros-crystal-rmw=0.6.1-0bionic.20190208.221414`
 
 Binary Packages:
 
-- `ros-crystal-rmw=0.6.1-0bionic.20190114.191246`
+- `ros-crystal-rmw=0.6.1-0bionic.20190208.221414`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4762,11 +4786,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-robot-state-publisher=2.1.0-0bionic.20190114.205044`
+### `dpkg` source package: `ros-crystal-robot-state-publisher=2.1.0-0bionic.20190208.232036`
 
 Binary Packages:
 
-- `ros-crystal-robot-state-publisher=2.1.0-0bionic.20190114.205044`
+- `ros-crystal-robot-state-publisher=2.1.0-0bionic.20190208.232036`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4776,11 +4800,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros-base=0.6.1-0bionic.20190115.233540`
+### `dpkg` source package: `ros-crystal-ros-base=0.6.1-0bionic.20190208.232845`
 
 Binary Packages:
 
-- `ros-crystal-ros-base=0.6.1-0bionic.20190115.233540`
+- `ros-crystal-ros-base=0.6.1-0bionic.20190208.232845`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4790,11 +4814,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros-core=0.6.1-0bionic.20190115.233423`
+### `dpkg` source package: `ros-crystal-ros-core=0.6.1-0bionic.20190208.232806`
 
 Binary Packages:
 
-- `ros-crystal-ros-core=0.6.1-0bionic.20190115.233423`
+- `ros-crystal-ros-core=0.6.1-0bionic.20190208.232806`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4804,11 +4828,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros-environment=2.2.0-0bionic.20181121.033127`
+### `dpkg` source package: `ros-crystal-ros-environment=2.2.0-0bionic.20190208.214833`
 
 Binary Packages:
 
-- `ros-crystal-ros-environment=2.2.0-0bionic.20181121.033127`
+- `ros-crystal-ros-environment=2.2.0-0bionic.20190208.214833`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4818,11 +4842,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros-workspace=0.6.0-1bionic.20181115.043529`
+### `dpkg` source package: `ros-crystal-ros-workspace=0.6.1-0bionic.20190208.212300`
 
 Binary Packages:
 
-- `ros-crystal-ros-workspace=0.6.0-1bionic.20181115.043529`
+- `ros-crystal-ros-workspace=0.6.1-0bionic.20190208.212300`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4832,11 +4856,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2cli=0.6.2-0bionic.20190114.201425`
+### `dpkg` source package: `ros-crystal-ros2cli=0.6.3-0bionic.20190208.225914`
 
 Binary Packages:
 
-- `ros-crystal-ros2cli=0.6.2-0bionic.20190114.201425`
+- `ros-crystal-ros2cli=0.6.3-0bionic.20190208.225914`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4846,11 +4870,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2launch=0.7.3-0bionic.20190114.202037`
+### `dpkg` source package: `ros-crystal-ros2launch=0.7.3-0bionic.20190208.230322`
 
 Binary Packages:
 
-- `ros-crystal-ros2launch=0.7.3-0bionic.20190114.202037`
+- `ros-crystal-ros2launch=0.7.3-0bionic.20190208.230322`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4860,11 +4884,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2lifecycle=0.6.2-0bionic.20190114.202526`
+### `dpkg` source package: `ros-crystal-ros2lifecycle=0.6.3-0bionic.20190208.230957`
 
 Binary Packages:
 
-- `ros-crystal-ros2lifecycle=0.6.2-0bionic.20190114.202526`
+- `ros-crystal-ros2lifecycle=0.6.3-0bionic.20190208.230957`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4874,11 +4898,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2msg=0.6.2-0bionic.20190114.201610`
+### `dpkg` source package: `ros-crystal-ros2msg=0.6.3-0bionic.20190208.225958`
 
 Binary Packages:
 
-- `ros-crystal-ros2msg=0.6.2-0bionic.20190114.201610`
+- `ros-crystal-ros2msg=0.6.3-0bionic.20190208.225958`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4888,11 +4912,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2multicast=0.6.2-0bionic.20190114.201618`
+### `dpkg` source package: `ros-crystal-ros2multicast=0.6.3-0bionic.20190208.230004`
 
 Binary Packages:
 
-- `ros-crystal-ros2multicast=0.6.2-0bionic.20190114.201618`
+- `ros-crystal-ros2multicast=0.6.3-0bionic.20190208.230004`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4902,11 +4926,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2node=0.6.2-0bionic.20190114.201633`
+### `dpkg` source package: `ros-crystal-ros2node=0.6.3-0bionic.20190208.230012`
 
 Binary Packages:
 
-- `ros-crystal-ros2node=0.6.2-0bionic.20190114.201633`
+- `ros-crystal-ros2node=0.6.3-0bionic.20190208.230012`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4916,11 +4940,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2param=0.6.2-0bionic.20190114.202031`
+### `dpkg` source package: `ros-crystal-ros2param=0.6.3-0bionic.20190208.230344`
 
 Binary Packages:
 
-- `ros-crystal-ros2param=0.6.2-0bionic.20190114.202031`
+- `ros-crystal-ros2param=0.6.3-0bionic.20190208.230344`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4930,11 +4954,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2pkg=0.6.2-0bionic.20190114.201637`
+### `dpkg` source package: `ros-crystal-ros2pkg=0.6.3-0bionic.20190208.230016`
 
 Binary Packages:
 
-- `ros-crystal-ros2pkg=0.6.2-0bionic.20190114.201637`
+- `ros-crystal-ros2pkg=0.6.3-0bionic.20190208.230016`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4944,11 +4968,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2run=0.6.2-0bionic.20190114.202041`
+### `dpkg` source package: `ros-crystal-ros2run=0.6.3-0bionic.20190208.230308`
 
 Binary Packages:
 
-- `ros-crystal-ros2run=0.6.2-0bionic.20190114.202041`
+- `ros-crystal-ros2run=0.6.3-0bionic.20190208.230308`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4958,11 +4982,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2service=0.6.2-0bionic.20190114.202240`
+### `dpkg` source package: `ros-crystal-ros2service=0.6.3-0bionic.20190208.230610`
 
 Binary Packages:
 
-- `ros-crystal-ros2service=0.6.2-0bionic.20190114.202240`
+- `ros-crystal-ros2service=0.6.3-0bionic.20190208.230610`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4972,11 +4996,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2srv=0.6.2-0bionic.20190114.201744`
+### `dpkg` source package: `ros-crystal-ros2srv=0.6.3-0bionic.20190208.230023`
 
 Binary Packages:
 
-- `ros-crystal-ros2srv=0.6.2-0bionic.20190114.201744`
+- `ros-crystal-ros2srv=0.6.3-0bionic.20190208.230023`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4986,11 +5010,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-ros2topic=0.6.2-0bionic.20190114.202018`
+### `dpkg` source package: `ros-crystal-ros2topic=0.6.3-0bionic.20190208.230346`
 
 Binary Packages:
 
-- `ros-crystal-ros2topic=0.6.2-0bionic.20190114.202018`
+- `ros-crystal-ros2topic=0.6.3-0bionic.20190208.230346`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5000,11 +5024,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosgraph-msgs=0.6.2-0bionic.20190114.194742`
+### `dpkg` source package: `ros-crystal-rosgraph-msgs=0.6.2-0bionic.20190208.223409`
 
 Binary Packages:
 
-- `ros-crystal-rosgraph-msgs=0.6.2-0bionic.20190114.194742`
+- `ros-crystal-rosgraph-msgs=0.6.2-0bionic.20190208.223409`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5014,11 +5038,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-actions=0.6.2-0bionic.20190114.190511`
+### `dpkg` source package: `ros-crystal-rosidl-actions=0.6.3-0bionic.20190208.220759`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-actions=0.6.2-0bionic.20190114.190511`
+- `ros-crystal-rosidl-actions=0.6.3-0bionic.20190208.220759`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5028,11 +5052,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-adapter=0.6.2-0bionic.20190114.190045`
+### `dpkg` source package: `ros-crystal-rosidl-adapter=0.6.3-0bionic.20190208.220251`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-adapter=0.6.2-0bionic.20190114.190045`
+- `ros-crystal-rosidl-adapter=0.6.3-0bionic.20190208.220251`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5042,11 +5066,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-cmake=0.6.2-0bionic.20190114.190755`
+### `dpkg` source package: `ros-crystal-rosidl-cmake=0.6.3-0bionic.20190208.221012`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-cmake=0.6.2-0bionic.20190114.190755`
+- `ros-crystal-rosidl-cmake=0.6.3-0bionic.20190208.221012`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5056,11 +5080,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-default-generators=0.6.0-0bionic.20190114.194104`
+### `dpkg` source package: `ros-crystal-rosidl-default-generators=0.6.0-0bionic.20190208.222958`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-default-generators=0.6.0-0bionic.20190114.194104`
+- `ros-crystal-rosidl-default-generators=0.6.0-0bionic.20190208.222958`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5070,11 +5094,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-default-runtime=0.6.0-0bionic.20190114.194104`
+### `dpkg` source package: `ros-crystal-rosidl-default-runtime=0.6.0-0bionic.20190208.222959`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-default-runtime=0.6.0-0bionic.20190114.194104`
+- `ros-crystal-rosidl-default-runtime=0.6.0-0bionic.20190208.222959`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5084,11 +5108,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-generator-c=0.6.2-0bionic.20190114.190958`
+### `dpkg` source package: `ros-crystal-rosidl-generator-c=0.6.3-0bionic.20190208.221223`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-generator-c=0.6.2-0bionic.20190114.190958`
+- `ros-crystal-rosidl-generator-c=0.6.3-0bionic.20190208.221223`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5098,11 +5122,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-generator-cpp=0.6.2-0bionic.20190114.191437`
+### `dpkg` source package: `ros-crystal-rosidl-generator-cpp=0.6.3-0bionic.20190208.221414`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-generator-cpp=0.6.2-0bionic.20190114.191437`
+- `ros-crystal-rosidl-generator-cpp=0.6.3-0bionic.20190208.221414`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5112,11 +5136,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-generator-py=0.6.2-0bionic.20190114.193855`
+### `dpkg` source package: `ros-crystal-rosidl-generator-py=0.6.2-0bionic.20190208.222745`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-generator-py=0.6.2-0bionic.20190114.193855`
+- `ros-crystal-rosidl-generator-py=0.6.2-0bionic.20190208.222745`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5126,11 +5150,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-parser=0.6.2-0bionic.20190114.190259`
+### `dpkg` source package: `ros-crystal-rosidl-parser=0.6.3-0bionic.20190208.220537`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-parser=0.6.2-0bionic.20190114.190259`
+- `ros-crystal-rosidl-parser=0.6.3-0bionic.20190208.220537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5140,11 +5164,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-c=0.6.2-0bionic.20190114.193626`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-c=0.6.2-0bionic.20190208.222558`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-c=0.6.2-0bionic.20190114.193626`
+- `ros-crystal-rosidl-typesupport-c=0.6.2-0bionic.20190208.222558`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5154,11 +5178,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-cpp=0.6.2-0bionic.20190114.193855`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-cpp=0.6.2-0bionic.20190208.222745`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-cpp=0.6.2-0bionic.20190114.193855`
+- `ros-crystal-rosidl-typesupport-cpp=0.6.2-0bionic.20190208.222745`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5168,11 +5192,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-fastrtps-c=0.6.1-0bionic.20190114.192219`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-fastrtps-c=0.6.1-0bionic.20190208.222050`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-fastrtps-c=0.6.1-0bionic.20190114.192219`
+- `ros-crystal-rosidl-typesupport-fastrtps-c=0.6.1-0bionic.20190208.222050`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5182,11 +5206,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-fastrtps-cpp=0.6.1-0bionic.20190114.191911`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-fastrtps-cpp=0.6.1-0bionic.20190208.221728`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-fastrtps-cpp=0.6.1-0bionic.20190114.191911`
+- `ros-crystal-rosidl-typesupport-fastrtps-cpp=0.6.1-0bionic.20190208.221728`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5196,11 +5220,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-interface=0.6.2-0bionic.20190114.190055`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-interface=0.6.3-0bionic.20190208.220252`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-interface=0.6.2-0bionic.20190114.190055`
+- `ros-crystal-rosidl-typesupport-interface=0.6.3-0bionic.20190208.220252`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5210,11 +5234,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-introspection-c=0.6.2-0bionic.20190114.192812`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-introspection-c=0.6.3-0bionic.20190208.221415`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-introspection-c=0.6.2-0bionic.20190114.192812`
+- `ros-crystal-rosidl-typesupport-introspection-c=0.6.3-0bionic.20190208.221415`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5224,11 +5248,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-rosidl-typesupport-introspection-cpp=0.6.2-0bionic.20190114.193139`
+### `dpkg` source package: `ros-crystal-rosidl-typesupport-introspection-cpp=0.6.3-0bionic.20190208.221729`
 
 Binary Packages:
 
-- `ros-crystal-rosidl-typesupport-introspection-cpp=0.6.2-0bionic.20190114.193139`
+- `ros-crystal-rosidl-typesupport-introspection-cpp=0.6.3-0bionic.20190208.221729`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5238,11 +5262,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-sensor-msgs=0.6.1-0bionic.20190114.203237`
+### `dpkg` source package: `ros-crystal-sensor-msgs=0.6.1-0bionic.20190208.225540`
 
 Binary Packages:
 
-- `ros-crystal-sensor-msgs=0.6.1-0bionic.20190114.203237`
+- `ros-crystal-sensor-msgs=0.6.1-0bionic.20190208.225540`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5252,11 +5276,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-shape-msgs=0.6.1-0bionic.20190114.202758`
+### `dpkg` source package: `ros-crystal-shape-msgs=0.6.1-0bionic.20190208.225539`
 
 Binary Packages:
 
-- `ros-crystal-shape-msgs=0.6.1-0bionic.20190114.202758`
+- `ros-crystal-shape-msgs=0.6.1-0bionic.20190208.225539`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5266,11 +5290,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-std-msgs=0.6.1-0bionic.20190114.195737`
+### `dpkg` source package: `ros-crystal-std-msgs=0.6.1-0bionic.20190208.223409`
 
 Binary Packages:
 
-- `ros-crystal-std-msgs=0.6.1-0bionic.20190114.195737`
+- `ros-crystal-std-msgs=0.6.1-0bionic.20190208.223409`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5280,11 +5304,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-std-srvs=0.6.1-0bionic.20190114.194243`
+### `dpkg` source package: `ros-crystal-std-srvs=0.6.1-0bionic.20190208.225157`
 
 Binary Packages:
 
-- `ros-crystal-std-srvs=0.6.1-0bionic.20190114.194243`
+- `ros-crystal-std-srvs=0.6.1-0bionic.20190208.225157`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5294,11 +5318,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-stereo-msgs=0.6.1-0bionic.20190114.215237`
+### `dpkg` source package: `ros-crystal-stereo-msgs=0.6.1-0bionic.20190208.231820`
 
 Binary Packages:
 
-- `ros-crystal-stereo-msgs=0.6.1-0bionic.20190114.215237`
+- `ros-crystal-stereo-msgs=0.6.1-0bionic.20190208.231820`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5308,11 +5332,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tf2-eigen=0.10.1-0bionic.20190114.205045`
+### `dpkg` source package: `ros-crystal-tf2-eigen=0.10.1-0bionic.20190208.232054`
 
 Binary Packages:
 
-- `ros-crystal-tf2-eigen=0.10.1-0bionic.20190114.205045`
+- `ros-crystal-tf2-eigen=0.10.1-0bionic.20190208.232054`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5322,11 +5346,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tf2-geometry-msgs=0.10.1-0bionic.20190114.205045`
+### `dpkg` source package: `ros-crystal-tf2-geometry-msgs=0.10.1-0bionic.20190208.232050`
 
 Binary Packages:
 
-- `ros-crystal-tf2-geometry-msgs=0.10.1-0bionic.20190114.205045`
+- `ros-crystal-tf2-geometry-msgs=0.10.1-0bionic.20190208.232050`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5336,11 +5360,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tf2-msgs=0.10.1-0bionic.20190114.202429`
+### `dpkg` source package: `ros-crystal-tf2-msgs=0.10.1-0bionic.20190208.225542`
 
 Binary Packages:
 
-- `ros-crystal-tf2-msgs=0.10.1-0bionic.20190114.202429`
+- `ros-crystal-tf2-msgs=0.10.1-0bionic.20190208.225542`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5350,11 +5374,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tf2-ros=0.10.1-0bionic.20190114.204831`
+### `dpkg` source package: `ros-crystal-tf2-ros=0.10.1-0bionic.20190208.231537`
 
 Binary Packages:
 
-- `ros-crystal-tf2-ros=0.10.1-0bionic.20190114.204831`
+- `ros-crystal-tf2-ros=0.10.1-0bionic.20190208.231537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5364,11 +5388,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tf2=0.10.1-0bionic.20190114.202820`
+### `dpkg` source package: `ros-crystal-tf2=0.10.1-0bionic.20190208.225540`
 
 Binary Packages:
 
-- `ros-crystal-tf2=0.10.1-0bionic.20190114.202820`
+- `ros-crystal-tf2=0.10.1-0bionic.20190208.225540`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5378,11 +5402,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tinyxml-vendor=0.5.0-0bionic.20181116.140658`
+### `dpkg` source package: `ros-crystal-tinyxml-vendor=0.5.0-0bionic.20190208.215020`
 
 Binary Packages:
 
-- `ros-crystal-tinyxml-vendor=0.5.0-0bionic.20181116.140658`
+- `ros-crystal-tinyxml-vendor=0.5.0-0bionic.20190208.215020`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5392,11 +5416,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-tinyxml2-vendor=0.6.1-0bionic.20190115.233126`
+### `dpkg` source package: `ros-crystal-tinyxml2-vendor=0.6.1-0bionic.20190208.214957`
 
 Binary Packages:
 
-- `ros-crystal-tinyxml2-vendor=0.6.1-0bionic.20190115.233126`
+- `ros-crystal-tinyxml2-vendor=0.6.1-0bionic.20190208.214957`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5406,11 +5430,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-trajectory-msgs=0.6.1-0bionic.20190114.202826`
+### `dpkg` source package: `ros-crystal-trajectory-msgs=0.6.1-0bionic.20190208.230314`
 
 Binary Packages:
 
-- `ros-crystal-trajectory-msgs=0.6.1-0bionic.20190114.202826`
+- `ros-crystal-trajectory-msgs=0.6.1-0bionic.20190208.230314`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5420,11 +5444,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-uncrustify-vendor=1.1.0-0bionic.20190114.183025`
+### `dpkg` source package: `ros-crystal-uncrustify-vendor=1.1.0-0bionic.20190208.215640`
 
 Binary Packages:
 
-- `ros-crystal-uncrustify-vendor=1.1.0-0bionic.20190114.183025`
+- `ros-crystal-uncrustify-vendor=1.1.0-0bionic.20190208.215640`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5434,11 +5458,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-urdf=2.2.0-0bionic.20190114.185415`
+### `dpkg` source package: `ros-crystal-urdf=2.2.0-0bionic.20190208.220525`
 
 Binary Packages:
 
-- `ros-crystal-urdf=2.2.0-0bionic.20190114.185415`
+- `ros-crystal-urdf=2.2.0-0bionic.20190208.220525`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5448,11 +5472,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-urdfdom-headers=1.0.2-1bionic.20181119.213732`
+### `dpkg` source package: `ros-crystal-urdfdom-headers=1.0.2-1bionic.20190208.215026`
 
 Binary Packages:
 
-- `ros-crystal-urdfdom-headers=1.0.2-1bionic.20181119.213732`
+- `ros-crystal-urdfdom-headers=1.0.2-1bionic.20190208.215026`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5462,11 +5486,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-urdfdom=2.1.0-0bionic.20181119.220634`
+### `dpkg` source package: `ros-crystal-urdfdom=2.1.0-0bionic.20190208.215706`
 
 Binary Packages:
 
-- `ros-crystal-urdfdom=2.1.0-0bionic.20181119.220634`
+- `ros-crystal-urdfdom=2.1.0-0bionic.20190208.215706`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5476,11 +5500,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-crystal-visualization-msgs=0.6.1-0bionic.20190114.201537`
+### `dpkg` source package: `ros-crystal-visualization-msgs=0.6.1-0bionic.20190208.225540`
 
 Binary Packages:
 
-- `ros-crystal-visualization-msgs=0.6.1-0bionic.20190114.201537`
+- `ros-crystal-visualization-msgs=0.6.1-0bionic.20190208.225540`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5694,12 +5718,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.11`
+### `dpkg` source package: `systemd=237-3ubuntu10.13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.11`
-- `libudev1:amd64=237-3ubuntu10.11`
+- `libsystemd0:amd64=237-3ubuntu10.13`
+- `libudev1:amd64=237-3ubuntu10.13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5711,9 +5735,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.13
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.13.dsc' systemd_237-3ubuntu10.13.dsc 4656 SHA256:1dde31905a7f7644cd4ce24f6d5c65accffd48ca89da4885ffdc95509e145dcf
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.13.debian.tar.xz' systemd_237-3ubuntu10.13.debian.tar.xz 202360 SHA256:5a2d4d0ea96dc64f46c03b84b5879b2885bb34abb7697ea930570feeb6e77845
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
