@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:f10a2ed42a346e81368339bf889188850b1d4bbd2de2803b32fb2c51c7046e13
+$ docker pull fedora@sha256:8ee55e140e8751492ab2cfa4513c82093cd2716df9311ea6f442f1f1259cbb3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -75,31 +75,31 @@ CMD ["/bin/bash"]
 ### `fedora:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:2643427aec0edccc0283b03eb905a41fee1819e4a905a300a9f061e977c70e93
+$ docker pull fedora@sha256:c9f1e42af4dbddbc52070242c2f1e0941deb6772a45974af9570e41f68e31d55
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88872915 bytes)**  
+-	Total Size: **89.0 MB (88975883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48b6a119bfcd37b880e85a9b1dc046725555cd8b0815f0374f1441d8edac9104`
+-	Image ID: `sha256:a4d5f11afbf6bce4a5ba170d84e04d5517a73c5e5450de593c729c49e9582857`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 17 Jan 2019 09:42:52 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Thu, 17 Jan 2019 09:44:47 GMT
-ENV DISTTAG=f29container FGC=f29 FBR=f29
-# Wed, 20 Feb 2019 09:44:34 GMT
-ADD file:51a558ba3a45fb11cdbf8abf8fd7f58f00f9eaf389e8544609fca52b38e49995 in / 
-# Wed, 20 Feb 2019 09:44:35 GMT
+# Tue, 12 Mar 2019 08:49:23 GMT
+ENV DISTTAG=fcontainer FGC=f FBR=f
+# Tue, 12 Mar 2019 08:49:42 GMT
+ADD file:d7802b969cf2e1c1d8828f2c3df61cfdfe45f93df6c5a76c27b29f14e067b934 in / 
+# Tue, 12 Mar 2019 08:49:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:93b8ccb144886ba3e13671fbd519e2cc6f6d489ddfd6463e55de8b5fec3bea02`  
-		Last Modified: Wed, 20 Feb 2019 09:46:22 GMT  
-		Size: 88.9 MB (88872915 bytes)  
+	-	`sha256:90792d4aa5f3da5527ef99e5ffa78cb18d8ec7e89176ff8ea083d1ee0dfc5280`  
+		Last Modified: Tue, 12 Mar 2019 08:51:19 GMT  
+		Size: 89.0 MB (88975883 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; ppc64le
