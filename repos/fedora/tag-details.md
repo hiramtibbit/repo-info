@@ -654,7 +654,71 @@ CMD ["/bin/bash"]
 
 ## `fedora:31`
 
-**does not exist** (yet?)
+```console
+$ docker pull fedora@sha256:c05277fe6f25de4f0e0f7789b8a589e85a899a570436e2fe66b437f05e03ab3c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+	-	linux; arm variant v7
+
+### `fedora:31` - linux; amd64
+
+```console
+$ docker pull fedora@sha256:09bcfdcd46c3c5b10d6ae182603189a1b7e20db59676d787dad64046fafd961b
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **90.2 MB (90218575 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1c2065c021750bfa8b1530d2cce08dffda03f0fbe5fba4f21b29fc8e909954a9`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 16 Jan 2019 21:21:55 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Wed, 16 Jan 2019 21:21:55 GMT
+ENV DISTTAG=f30container FGC=f30 FBR=f30
+# Tue, 19 Feb 2019 22:21:26 GMT
+ADD file:43a68ec0ef9a603cb483a9cb4adf18acb34eff0be5649845d548ae1e0f4bb485 in / 
+# Tue, 19 Feb 2019 22:21:27 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:5febb71956a8a1e639ab932cbe6907699c112374a3d62eff9a3704c350974fb2`  
+		Last Modified: Tue, 19 Feb 2019 22:23:42 GMT  
+		Size: 90.2 MB (90218575 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fedora:31` - linux; arm variant v7
+
+```console
+$ docker pull fedora@sha256:b9401f8e79b45fd2850d8f703b053e2aae440a4612cee326dd544f2afc81ad2f
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **77.8 MB (77849074 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d817addb0eaeb3befa5e097267b2c8342c1d0860ac0ebdf8087afab9463ed635`
+
+```dockerfile
+# Wed, 27 Sep 2017 04:18:33 GMT
+MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
+# Wed, 07 Mar 2018 20:53:47 GMT
+ENV DISTTAG=frawhidecontainer FGC=frawhide FBR=frawhide
+# Wed, 07 Mar 2018 20:54:00 GMT
+ADD file:0115aa7f5b9f5d057f4761d533419214dbe96ac857ec3b7e136137a9bda888f3 in / 
+```
+
+-	Layers:
+	-	`sha256:945bb013cd57692127654c74d7d9382297ede42c049fdd5b9144e5bbcba9f0e0`  
+		Last Modified: Wed, 07 Mar 2018 20:56:49 GMT  
+		Size: 77.8 MB (77849074 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:latest`
 
