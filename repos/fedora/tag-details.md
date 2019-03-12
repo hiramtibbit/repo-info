@@ -584,12 +584,13 @@ CMD ["/bin/bash"]
 ## `fedora:30`
 
 ```console
-$ docker pull fedora@sha256:9eba4cc28d43bf15c431434610453ad9a8a6bd70b0abb5ee42715b0ccb200412
+$ docker pull fedora@sha256:4a972da7e195ecee572192e8677052e5dd000724b113b99cdf34bd8639824fe6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
 ### `fedora:30` - linux; amd64
@@ -620,6 +621,36 @@ CMD ["/bin/bash"]
 	-	`sha256:bca0f73293c34b7deadf21a26ab85d8330f720754ce859c6048ebd267f8007d3`  
 		Last Modified: Tue, 12 Mar 2019 00:21:28 GMT  
 		Size: 90.3 MB (90266953 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `fedora:30` - linux; arm variant v7
+
+```console
+$ docker pull fedora@sha256:638d7eef05cfeb82175ca376d4e6217b47f215c43565750c7a60b70a69475d00
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **85.6 MB (85628280 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9f96cc46098e3115c4b9e2aef97ec20d14a6556ec786b396c153a07e6be9753`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 17 Jan 2019 12:59:01 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Tue, 12 Mar 2019 12:09:50 GMT
+ENV DISTTAG=f30container FGC=f30 FBR=f30
+# Tue, 12 Mar 2019 12:10:06 GMT
+ADD file:ee07ec05301c7c5fef5d01bb3c61b35e63cfcdd5984fe946335fc524b0e67bbb in / 
+# Tue, 12 Mar 2019 12:10:07 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:eb64a536420170e45e3cb10ed6afd2f778bd618d4c63e218784492069bf479e0`  
+		Last Modified: Tue, 12 Mar 2019 12:12:12 GMT  
+		Size: 85.6 MB (85628280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:30` - linux; arm64 variant v8
@@ -655,7 +686,7 @@ CMD ["/bin/bash"]
 ## `fedora:31`
 
 ```console
-$ docker pull fedora@sha256:ec29188645222c84b77466ebb452040569b4a0944760ef9c6caede1e3056e63f
+$ docker pull fedora@sha256:e75930379f6c68030519372f02968b5eb1366cc24acffee5015ddef835a94c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -696,28 +727,31 @@ CMD ["/bin/bash"]
 ### `fedora:31` - linux; arm variant v7
 
 ```console
-$ docker pull fedora@sha256:b9401f8e79b45fd2850d8f703b053e2aae440a4612cee326dd544f2afc81ad2f
+$ docker pull fedora@sha256:86f680fc857556835b06c73d58e08cca1f82e4be028d5dbf814a8c19dee97bc9
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.8 MB (77849074 bytes)**  
+-	Total Size: **85.7 MB (85689873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d817addb0eaeb3befa5e097267b2c8342c1d0860ac0ebdf8087afab9463ed635`
+-	Image ID: `sha256:9cbcf8d336015e6c08108ac58d5e8ec04b07135685c4cbf79cb50d2294f3e6f5`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Sep 2017 04:18:33 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Wed, 07 Mar 2018 20:53:47 GMT
-ENV DISTTAG=frawhidecontainer FGC=frawhide FBR=frawhide
-# Wed, 07 Mar 2018 20:54:00 GMT
-ADD file:0115aa7f5b9f5d057f4761d533419214dbe96ac857ec3b7e136137a9bda888f3 in / 
+# Thu, 17 Jan 2019 12:59:01 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Tue, 12 Mar 2019 12:11:07 GMT
+ENV DISTTAG=f31container FGC=f31 FBR=f31
+# Tue, 12 Mar 2019 12:11:23 GMT
+ADD file:3e9ff64137bdba811d1b6ed6ad9f58704e1a9eb02bcbdfe3a8eda2747abed057 in / 
+# Tue, 12 Mar 2019 12:11:24 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:945bb013cd57692127654c74d7d9382297ede42c049fdd5b9144e5bbcba9f0e0`  
-		Last Modified: Wed, 07 Mar 2018 20:56:49 GMT  
-		Size: 77.8 MB (77849074 bytes)  
+	-	`sha256:46ff1aaef215a781e8c62c51fe591a095cdc43059199a669eb0d8b6882fec72c`  
+		Last Modified: Tue, 12 Mar 2019 12:12:49 GMT  
+		Size: 85.7 MB (85689873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:latest`
@@ -887,7 +921,7 @@ CMD ["/bin/bash"]
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:ec29188645222c84b77466ebb452040569b4a0944760ef9c6caede1e3056e63f
+$ docker pull fedora@sha256:e75930379f6c68030519372f02968b5eb1366cc24acffee5015ddef835a94c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -928,26 +962,29 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm variant v7
 
 ```console
-$ docker pull fedora@sha256:b9401f8e79b45fd2850d8f703b053e2aae440a4612cee326dd544f2afc81ad2f
+$ docker pull fedora@sha256:86f680fc857556835b06c73d58e08cca1f82e4be028d5dbf814a8c19dee97bc9
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.8 MB (77849074 bytes)**  
+-	Total Size: **85.7 MB (85689873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d817addb0eaeb3befa5e097267b2c8342c1d0860ac0ebdf8087afab9463ed635`
+-	Image ID: `sha256:9cbcf8d336015e6c08108ac58d5e8ec04b07135685c4cbf79cb50d2294f3e6f5`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Sep 2017 04:18:33 GMT
-MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Wed, 07 Mar 2018 20:53:47 GMT
-ENV DISTTAG=frawhidecontainer FGC=frawhide FBR=frawhide
-# Wed, 07 Mar 2018 20:54:00 GMT
-ADD file:0115aa7f5b9f5d057f4761d533419214dbe96ac857ec3b7e136137a9bda888f3 in / 
+# Thu, 17 Jan 2019 12:59:01 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Tue, 12 Mar 2019 12:11:07 GMT
+ENV DISTTAG=f31container FGC=f31 FBR=f31
+# Tue, 12 Mar 2019 12:11:23 GMT
+ADD file:3e9ff64137bdba811d1b6ed6ad9f58704e1a9eb02bcbdfe3a8eda2747abed057 in / 
+# Tue, 12 Mar 2019 12:11:24 GMT
+CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:945bb013cd57692127654c74d7d9382297ede42c049fdd5b9144e5bbcba9f0e0`  
-		Last Modified: Wed, 07 Mar 2018 20:56:49 GMT  
-		Size: 77.8 MB (77849074 bytes)  
+	-	`sha256:46ff1aaef215a781e8c62c51fe591a095cdc43059199a669eb0d8b6882fec72c`  
+		Last Modified: Tue, 12 Mar 2019 12:12:49 GMT  
+		Size: 85.7 MB (85689873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
