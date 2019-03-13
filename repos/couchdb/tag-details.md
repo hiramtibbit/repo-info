@@ -5,6 +5,7 @@
 -	[`couchdb:2`](#couchdb2)
 -	[`couchdb:2.3`](#couchdb23)
 -	[`couchdb:2.3.0`](#couchdb230)
+-	[`couchdb:2.3.1`](#couchdb231)
 -	[`couchdb:latest`](#couchdblatest)
 
 ## `couchdb:2`
@@ -369,6 +370,10 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Last Modified: Tue, 05 Mar 2019 03:53:15 GMT  
 		Size: 1.2 KB (1163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchdb:2.3.1`
+
+**does not exist** (yet?)
 
 ## `couchdb:latest`
 
