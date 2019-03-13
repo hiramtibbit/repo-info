@@ -1,7 +1,7 @@
 ## `yourls:fpm`
 
 ```console
-$ docker pull yourls@sha256:7f8a9ff74e7838d818d2d1ff8a447490804869cea9b75b586662effd205f07c3
+$ docker pull yourls@sha256:be1f08223ef3b790aa2c785b04a4a41c7a0e177d902c0ca9c6f76bdd8ca4a9e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -314,14 +314,14 @@ CMD ["php-fpm"]
 ### `yourls:fpm` - linux; arm variant v7
 
 ```console
-$ docker pull yourls@sha256:7d321e34dd0f98b9d15b7a56e91bf42a897f96dd3e4bafd22f110088938fd198
+$ docker pull yourls@sha256:1520077e05a3f30724596647cb4af1adac882cf894fa11ddd8e2bb903a72c3f1
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.3 MB (114290553 bytes)**  
+-	Total Size: **114.3 MB (114290557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fd4b8c99d1b5ce8eaa8d1ccc886e43707eac12701202e1d190a70e00f81326a`
+-	Image ID: `sha256:c803b3bb5941e00e707995f16ea4e4ca2f6a18d54b171e23993c643b688092c9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -390,11 +390,11 @@ ENV YOURLS_SHA256=301ed5b0bfd63cfaeeafe40de056661302e786542002f479886fcf601bfb9d
 RUN set -ex;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xzf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls
 # Sat, 09 Mar 2019 15:11:08 GMT
 COPY file:dae29f9c1e1fe04a79abdb2b0965f1a821bebbe26ab1e1e13cae7fe5fbaf788d in /usr/local/bin/ 
-# Sat, 09 Mar 2019 15:11:08 GMT
-COPY file:c78b55f14e7913bc36094c08d49e8e510012293c10e8a2df35871a3294c24ccf in /usr/src/yourls/user/ 
-# Sat, 09 Mar 2019 15:11:09 GMT
+# Wed, 13 Mar 2019 11:58:18 GMT
+COPY file:3f52182221aa0be7c7b12ddf051434d36a6c19e6da6da6b973ace390c4e1ce25 in /usr/src/yourls/user/ 
+# Wed, 13 Mar 2019 11:58:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 09 Mar 2019 15:11:09 GMT
+# Wed, 13 Mar 2019 11:58:19 GMT
 CMD ["php-fpm"]
 ```
 
@@ -455,9 +455,9 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 09 Mar 2019 15:11:24 GMT  
 		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f737ff119f20555e290e20031ae6e5d3a9c636f03a79d6d9d63c66c4592b2076`  
-		Last Modified: Sat, 09 Mar 2019 15:11:24 GMT  
-		Size: 1.8 KB (1796 bytes)  
+	-	`sha256:94c6e689e482a4ff699ba97e4425cf4a05bd1af5facaee54b6bfc32b75a6d8e1`  
+		Last Modified: Wed, 13 Mar 2019 12:00:41 GMT  
+		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `yourls:fpm` - linux; arm64 variant v8
