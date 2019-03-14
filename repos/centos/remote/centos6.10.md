@@ -1,7 +1,7 @@
 ## `centos:centos6.10`
 
 ```console
-$ docker pull centos@sha256:b4c3fe75b135ca1c26ef6feb8153aade8a31c4e3e763376529c1088de7e973f4
+$ docker pull centos@sha256:24d17fa6c174019858b4a90df44443e8fad3cfa0f04c8ef31e4a9e80d776df85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull centos@sha256:b4c3fe75b135ca1c26ef6feb8153aade8a31c4e3e763376529c1
 ### `centos:centos6.10` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:4a5aa874dd522824580b1c803107548042ff846755a4331328f3a12e3744ca0a
+$ docker pull centos@sha256:7e53308393264c34359fbdf6d15d5c8c4985b8c2a58ee0ad4f7d5cc2e3c1577a
 ```
 
--	Docker Version: 17.06.2-ce
+-	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.8 MB (69804062 bytes)**  
+-	Total Size: **69.8 MB (69800401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30e66b619e9f73941f418bb08a081132607433f5b8ccaefd3b7bceb08c770b20`
+-	Image ID: `sha256:48650444e4191276a912ac90816a4ce1e86f76419e004d445a2e42809fec05f7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 09 Oct 2018 18:22:51 GMT
-ADD file:769078df784180af430a478e45561a3a6ef0721cebeae55b5d7cb9a64248823b in / 
-# Tue, 09 Oct 2018 18:22:51 GMT
+# Thu, 14 Mar 2019 21:22:28 GMT
+ADD file:2e9397e387a495d85cde898dd51c1741710b271efc40dd6d1151548b02aeb2ea in / 
+# Thu, 14 Mar 2019 21:22:28 GMT
 LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20180804
-# Tue, 09 Oct 2018 18:22:51 GMT
+# Thu, 14 Mar 2019 21:22:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1c8f9aa56c90ab24207ff5ca6b853bdbffb40b7801055d0b9c934cb16b5b43dd`  
-		Last Modified: Mon, 06 Aug 2018 19:35:25 GMT  
-		Size: 69.8 MB (69804062 bytes)  
+	-	`sha256:06a11a3d840dd2b7c5c6b6b169545ff77a2c1dd63b0f8fa9991709e3ffaee0ba`  
+		Last Modified: Sun, 24 Feb 2019 17:11:23 GMT  
+		Size: 69.8 MB (69800401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
