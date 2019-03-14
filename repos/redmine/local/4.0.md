@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b69f85192f73e06556c98112f5cf81e20eda023b2c5cf4705ad92c67d4e19930`
-- Created: `2019-03-09T02:36:37.771998126Z`
-- Virtual Size: ~ 580.11 Mb  
+- Image ID: `sha256:983780905d9434d80942b82e1ac0a03532386b55326a868a67e1ca7344114d62`
+- Created: `2019-03-14T18:02:39.002971007Z`
+- Virtual Size: ~ 573.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.6`
-  - `RUBY_VERSION=2.6.1`
-  - `RUBY_DOWNLOAD_SHA256=47b629808e9fd44ce1f760cdf3ed14875fc9b19d4f334e82e2cf25cb2898f2f2`
-  - `RUBYGEMS_VERSION=3.0.3`
+  - `RUBY_VERSION=2.6.2`
+  - `RUBY_DOWNLOAD_SHA256=91fcde77eea8e6206d775a48ac58450afe4883af1a42e5b358320beb33a445fa`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
@@ -2998,11 +2997,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.18.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.18.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u2`
+### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u3`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.1.2-1.1+deb9u2`
+- `libopenjp2-7:amd64=2.1.2-1.1+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 
@@ -3019,17 +3018,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.dsc' openjpeg2_2.1.2-1.1+deb9u2.dsc 2822 SHA256:fd31da5b80939520c938deada3826ac99a55bdd0500d73cef4d2072b0a2ea03c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz 23292 SHA256:be99a498bcb48176168f012e014fb8308d7543c2a163ae40830fbe2d78a36359
+$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.dsc' openjpeg2_2.1.2-1.1+deb9u3.dsc 2797 SHA256:dcb5cf6adee12ab0cc23d9a08731df6ee87406a98f623233348580e9f0373f78
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u3.debian.tar.xz 25464 SHA256:c168bec05ef60b78e1d219760d6faf67e58f9055cbde770005bd12123c3b0002
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u2`
 
